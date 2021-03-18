@@ -22,7 +22,7 @@ This type will inherit from [identityProviderBase](../identityproviderbase.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant including the OpenID Connect identity providers.|
+|[List](../api/identityproviderbase-list.md)|[identityProviderBase](../resources/identityproviderbase.md)  collection|Retrieve all identity providers configured in a tenant including the OpenID Connect identity providers.|
 |[Create](../api/identityproviderbase-post-identityproviders.md)|openIdConnectIdentityProvider|Create a new OpenID Connect identity provider.|
 |[Get](../api/identityproviderbase-get.md) |openIdConnectIdentityProvider|Retrieve properties of an OpenID Connect identity provider.|
 |[Update](../api/identityproviderbase-update.md)|None|Update an OpenID Connect identity provider.|

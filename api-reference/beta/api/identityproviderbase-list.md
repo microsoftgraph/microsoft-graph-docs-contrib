@@ -12,11 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [identityProviders](../resources/identityproviderbase.md) objects.
+Retrieve a list of collection of object inherited from  [identityProviderBase](../resources/identityproviderbase.md).
 
-For an Azure AD tenant it can be a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects.
+For an Azure AD tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md) and/or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
 
-For an Azure AD B2C tenant it can be a [socialIdentityProviders](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or [appleIdentityProvider](../resources/appleidentityprovider.md) objects.
+For an Azure AD B2C tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md), [openIdConnectIdentityProviders](../resources/openidconnectidentityprovider.md) and/or [appleIdentityProvider](../resources/appleidentityprovider.md) objects.
 
 ## Permissions
 
@@ -96,16 +96,17 @@ Content-Type: application/json
    "value":[
       {
          "@odata.type": "microsoft.graph.builtInIdentityProvider",
-         "id": "MicrosoftAccount",
+         "id": "MSASignup-OAUTH",
          "identityProviderType": "MicrosoftAccount",
          "displayName": "MicrosoftAccount"
       },
       {
-         "@odata.type": "microsoft.graph.socialIdentityProvider",
-         "identityProviderType": "Google",
-         "displayName": "Google",
-         "clientId": "string",
-         "clientSecret": "string"
+         "@odata.type": "#microsoft.graph.socialIdentityProvider",
+         "id": "Facebook-OAUTH",
+         "displayName": "Facebook",
+         "identityProviderType": "Facebook",
+         "clientId": "test",
+         "clientSecret": "******"
       }
    ]
 }
@@ -122,6 +123,10 @@ The following is an example of the request.
   "name": "get_identityproviderbase_b2c"
 }
 -->
+
+``` http
+GET https://graph.microsoft.com/beta/identity/identityProviders
+```
 
 ### Response
 
@@ -141,13 +146,14 @@ Content-type: application/json
 
 {
    "value":[
-      {
-         "@odata.type": "microsoft.graph.socialIdentityProvider",
-         "identityProviderType": "Google",
-         "displayName": "Google",
-         "clientId": "string",
-         "clientSecret": "string"
-      },
+       {
+         "@odata.type": "#microsoft.graph.socialIdentityProvider",
+         "id": "LinkedIn-OAUTH",
+         "displayName": "linkedin",
+         "identityProviderType": "LinkedIn",
+         "clientId": "866xc0qtyy8vih",
+         "clientSecret": "******"
+      },  
       {
          "@odata.type": "microsoft.graph.openIdConnectIdentityProvider",
          "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
@@ -174,7 +180,7 @@ Content-type: application/json
         "developerId": "ABC1D29956",
         "serviceId": "com.microsoft.test.b2c.tt.client",
         "keyId": "01P657F9C5",
-        "certificateData": null
+        "certificateData": "******"
       }
    ]
 }

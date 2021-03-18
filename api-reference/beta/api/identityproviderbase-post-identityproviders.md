@@ -59,10 +59,10 @@ All the properties listed in the following table are required.
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client identifier for the application obtained when registering the application with the identity provider. Required.|
-|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns "\*\*\*\*". Required.|
+|clientId|String|The client identifier for the application obtained when registering the application with the identity provider.|
+|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns "\*\*\*\*".|
 |displayName|String|The display name of the identity provider.|
-|identityProviderType|String|Required. For a B2B scenario, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`.|
+|identityProviderType|String|For a B2B scenario, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`.|
 
 ### openIdConnectIdentityProvider object
 
@@ -83,16 +83,16 @@ All the properties listed in the following table are required.
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |displayName|String|The display name of the identity provider.|
-|developerId|String|The Apple Developer identifier. Required.|
-|serviceId|String|The Apple Developer identifier. Required.|
-|keyId|String|The Apple Key identifier. Required.|
+|developerId|String|The Apple Developer identifier.|
+|serviceId|String|The Apple Developer identifier.|
+|keyId|String|The Apple Key identifier.|
 |certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in the response body for an Azure AD tenant.
 
-For an Azure AD B2C tenant, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an[appleIdentityProvider](../resources/appleidentityprovider.md) object in the response body.
+For an Azure AD B2C tenant, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) object in the response body.
 
 If unsuccessful, a `4xx` error will be returned with specific details.
 
