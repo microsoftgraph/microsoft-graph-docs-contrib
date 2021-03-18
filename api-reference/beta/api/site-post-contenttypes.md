@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Create contentType"
-description: "Create a Content type in a site."
+description: "Create a Content type for a site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [contentType][] in a [site][].
+Create a new [contentType][] for a [site][].
 
 ## Permissions
 
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
+|Delegated (work or school account) |Sites.Manage.All, Sites.FullControl.All    |
 |Delegated (personal Microsoft account) |Not Supported    |
-|Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application |Sites.Manage.All, Sites.FullControl.All |
 
 
 ## HTTP request
@@ -70,9 +70,9 @@ Content-Type: application/json
 {
     "name": "docSet",
     "description": "custom docset",
-    "parentReference": {
-        name: "Document Set",
-        id: "0x0120D520"
+    "base": {
+        "name": "Document Set",
+        "id": "0x0120D520"
     },
     "group": "Document Set Content Types" 
 }

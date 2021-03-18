@@ -1,18 +1,18 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: "Create columnDefinition in a content type"
-description: "Add column to a content type."
+title: "Create columnDefinition in a site"
+description: "Create a site column."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create columnDefinition for a content type
+# Create columnDefinition for a site
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
+Create a column for a [site][site] by specifying a [columnDefinition][columnDefinition].
 
 ## Permissions
 
@@ -32,8 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /sites/{site-id}/contentTypes/{contentType-id}/columns
-POST /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
+POST /sites/{site-id}/columns
 ```
 
 ## Request body
@@ -42,35 +41,43 @@ In the request body, supply a JSON representation of the [columnDefinition][] re
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [columnDefinition][] object in the response body.
+If successful, this method returns a `201 Created` response code and [columnDefinition][] object in the response body.
 
 ## Example
 
 ### Request
 <!-- { "blockType": "request" } -->
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}/columns
+POST https://graph.microsoft.com/beta/sites/{site-id}/columns
 Content-Type: application/json
 
 {
-	"sourceColumn@odata.bind": "https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103",
+  "description": "test",
+  "enforceUniqueValues": false,
+  "hidden": false,
+  "indexed": false,
+  "name": "Title",
+  "text": {
+    "allowMultipleLines": false,
+    "appendChangesToExistingText": false,
+    "linesForEditing": 0,
+    "maxLength": 255
+  }
 }
 ```
 
 ### Response
 
-The response returns the column added to a content type.
-
-<!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true} -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true } -->
 
   
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "description": "",
+  "description": "test",
   "displayName": "Title",
   "enforceUniqueValues": false,
   "hidden": false,
@@ -90,6 +97,6 @@ Content-type: application/json
   
 
 [columnDefinition]: ../resources/columnDefinition.md
-[contentType]: ../resources/contentType.md
+[site]: ../resources/site.md
   
 
