@@ -21,6 +21,8 @@ A subscription allows a client app to receive change notifications about changes
 - A [list][] under a SharePoint [site][]
 - A [message][], [event][], or [contact][] in Outlook
 - A [user][] or [group][] in Azure Active Directory
+- A [printer][] in Print Service (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing).
+- A [printTaskDefinition][] in Print Service
 
 See [Use the Microsoft Graph API to get change notifications](webhooks.md) for the possible resource path values for each supported resource.
 
@@ -51,8 +53,8 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | encryptionCertificate | string | A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when **includeResourceData** is true. | 
 | encryptionCertificateId | string | A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. 
 | latestSupportedTlsVersion | String | Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by **notificationUrl**, supports. The possible values are: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set [timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. </br></br>For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to `v1_2`. |
-| notificationContentType | string | Desired content-type for MS Graph change notifications for supported resource types. The default content-type is the "application/json" content-type. |
-| notificationQueryOptions | string | OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource `isFetchable` property value becomes true etc. |
+| notificationContentType | string | Desired content-type for MS Graph change notifications for supported resource types. The default content-type is the "application/json" content-type. | [Universal Print Service](../../../concepts/universal-print-webhook-notifications.md) |
+| notificationQueryOptions | string | OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource `isFetchable` property value becomes true etc. | [Universal Print Service](../../../concepts/universal-print-webhook-notifications.md) |
 
 ### Maximum length of subscription per resource type
 

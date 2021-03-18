@@ -136,8 +136,7 @@ Content-length: 586
       "encryptionCertificate": "",
       "encryptionCertificateId": "",
       "includeResourceData": false,
-      "notificationContentType": "application/json",
-      "notificationQueryOptions": "$filter=isFetchable eq true or status eq completed"
+      "notificationContentType": "application/json"
     }
   ]
 }
