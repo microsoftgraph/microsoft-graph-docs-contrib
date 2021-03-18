@@ -147,7 +147,6 @@ Content-Type: application/json
         "WeChat",
         "Twitter",
         "GitHub",
-        "Apple",
         "AppleManaged",
         "OpenIdConnect"
   ]
