@@ -17,7 +17,6 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Cloud printing [printTaskDefinition][] | the scopes | No |
 | Outlook [message][] | Changes to all messages in a user's mailbox: <br>`/users/{id}/messages`<br>Changes to messages in a user's Inbox:<br>`/users/{id}/mailFolders('inbox')/messages` | No |
 | Outlook [event][] | Changes to all events in a user's mailbox:<br>`/users/{id}/events` | No |
 | Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox:<br>`/users/{id}/contacts` | No |
@@ -30,7 +29,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
 | Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | No |
 | Teams [chatmessage][] | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
-
+| Cloud printing [printTaskDefinition][] | the scopes | No |
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
 
 ## Permissions
