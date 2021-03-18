@@ -16,6 +16,8 @@ Represents OpenID Connect identity providers in an Azure Active Directory B2C te
 
 Configuring an OpenID Connect provider in B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
 
+This type will inherit from [identityProviderBase](../identityproviderbase.md).
+
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -32,9 +34,9 @@ Configuring an OpenID Connect provider in B2C tenant enables users to sign up an
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |clientId|String|The client ID for the application obtained when registering the application with the identity provider. Required.|
-|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on **responseType**. <ul><li>When **responseType** is `code`, a secret is required for the auth code exchange.</li><li>When **responseType** is `id_token` the secret is not required because there is no code exchange—the id_token is returned directly from the authorization response.</li></ul> This is write-only. A read operation returns "\*\*\*\*".|
+|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on **responseType**. <ul><li>When **responseType** is `code`, a secret is required for the auth code exchange.</li><li>When **responseType** is `id_token` the secret is not required because there is no code exchange. The id_token is returned directly from the authorization response.</li></ul> This is write-only. A read operation returns "\*\*\*\*".|
 |id|String|The identifier of the identity provider.Required. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
-|displayName|String|The display name of the identity provider.|
+|displayName|String|The display name of the identity provider. |
 |identityProviderType|String|The identity provider type. It must be `OpenIDConnect`. Required.|
 |claimsMapping|[claimsMapping](claimsmapping.md)|After the OIDC provider sends an ID token back to Azure AD, Azure AD needs to be able to map the claims from the received token to the claims that Azure AD recognizes and uses. This complex type captures that mapping. Required.|
 |domainHint|String|The domain hint can be used to skip directly to the sign in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
