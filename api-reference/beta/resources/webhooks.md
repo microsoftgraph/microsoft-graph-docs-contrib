@@ -19,7 +19,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Cloud printing [printTaskDefinition][] | Changes to all events in a print task definition:<br>`/print/printtaskdefinition/{id}/tasks` | No |
+| Cloud printing [printTaskDefinition][] | Changes when there is a valid job in the queue (JobStarted event) :<br>`/print/printtaskdefinition/{id}/tasks` <br>Changes when a print job is ready to be downloaded (JobFetchable event) | No |
 | [driveItem][] on OneDrive for Business | Changes to content within the hierarchy of the _root folder_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | No |
 | [driveItem][] on OneDrive (personal) | Changes to content within the hierarchy of _any folder_:<br>`/users/{id}/drive/root` | No |
 | [group][] | Changes to all groups:<br>`/groups` <br>Changes to a specific group:<br>`/groups/{id}`<br>Changes to owners of a specific group:<br>`/groups/{id}/owners`<br>Changes to members of a specific group:<br>`/groups/{id}/members` | No |
