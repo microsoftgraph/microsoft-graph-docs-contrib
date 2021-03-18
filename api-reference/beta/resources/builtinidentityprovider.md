@@ -20,7 +20,7 @@ For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant including the built-in identity providers.|
+|[List](../api/identityproviderbase-list.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the built-in identity providers.|
 |[Get](../api/identityproviderbase-get.md) |builtInIdentityProvider|Retrieve properties of an built-in identity provider.|
 |[Update](../api/identityproviderbase-update.md) |builtInIdentityProvider|Update properties of an built-in identity provider.|
 |[List available provider types](../api/identityproviderbase-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|

@@ -20,7 +20,7 @@ This type will inherit from [identityProviderBase](../identityproviderbase.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant including the social identity providers.|
+|[List](../api/identityproviderbase-list.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant including the Apple identity providers.|
 |[Create](../api/identityproviderbase-post-identityproviders.md)|appleManagedIdentityProvider |Create a new Apple identity provider configuration.|
 |[Get](../api/identityproviderbase-get.md) |appleManagedIdentityProvider |Retrieve properties of the Apple identity provider configuration.|
 |[Update](../api/identityproviderbase-update.md)|None|Update the Apple identity provider configuration.|
@@ -31,9 +31,9 @@ This type will inherit from [identityProviderBase](../identityproviderbase.md).
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|developerId|String|The Apple Developer identifier. Required.|
-|serviceId|String|The Apple Developer identifier. Required.|
-|keyId|String|The Apple Key identifier. Required.|
+|developerId|String|The Apple developer identifier. Required.|
+|serviceId|String|The Apple service identifier. Required.|
+|keyId|String|The Apple key identifier. Required.|
 |certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
 |id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
 |displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
