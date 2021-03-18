@@ -142,8 +142,10 @@ The following are valid values for the resource property of the subscription:
 |[Groups](../resources/group.md)|`groups`|
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[Users](../resources/user.md)|`users`|
+|[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
+|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+|[Users](../resources/user.md)|`users`|
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 

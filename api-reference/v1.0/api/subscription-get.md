@@ -34,10 +34,10 @@ Depending on the resource and the permission type (delegated or application) req
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
-|[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
-|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
