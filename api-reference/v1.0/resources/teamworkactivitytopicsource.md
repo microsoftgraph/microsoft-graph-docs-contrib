@@ -11,8 +11,6 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Types of [teamworkActivityTopic](teamworkActivityTopic.md).
 
 ## Members
