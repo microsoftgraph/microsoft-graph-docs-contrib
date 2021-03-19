@@ -1,24 +1,24 @@
 ---
 title: "channelIdentity resource type"
-description: "Represents the identity of a channel in MS Teams. Chat message surfaced two new properties ChannelIdentity and Chat identity. Channel identity has channel id and team id."
+description: "Represents the identity of a channel in Microsoft Teams."
 author: "Kanaka"
 doc_type: resourcePageType
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "teamwork"
 ---
 # channelIdentity resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-A channelIdentity contains basic identification information about a channel in Microsoft Teams
+Contains basic identification information about a channel in Microsoft Teams.
 
 ## Properties
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|channel Id|string|  This is the identity of the channel in which the message was posted.|
-|teamId|string|  This is the identity of the team in which the message was posted.|
+|channelId|string|  The identity of the channel in which the message was posted.|
+|teamId|string|  The identity of the team in which the message was posted.|
 
 ## JSON representation
 
