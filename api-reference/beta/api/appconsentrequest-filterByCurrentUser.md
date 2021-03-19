@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='parameterValue')
 ```
 
-## Required function parameters
+## Function parameters
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
@@ -41,7 +41,7 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |on|consentRequestFilterByCurrentUserOptions|Filter to query appConsentRequests for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
-## Required query parameters
+## Optional query parameters
 This function requires the `$filter` OData query parameter to return a collection of [userConsentRequests](../resources/userconsentrequest.md) whose status is `InProgress`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers

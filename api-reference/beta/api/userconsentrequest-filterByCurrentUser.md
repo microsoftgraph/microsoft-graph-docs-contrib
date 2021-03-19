@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/filterByCurrentUser(on='parameterValue')
 ```
 
-## Required function parameters
+## Function parameters
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
