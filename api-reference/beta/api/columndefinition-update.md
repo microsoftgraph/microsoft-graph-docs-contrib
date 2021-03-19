@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Update columnDefinition"
-description: "Update a content type column"
+description: "Update a site, list or content type column"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Update a [content type][contentType] [column][columnDefinition].
+Update a [site][], [list][] or [content type][contentType] [column][columnDefinition].
   
 
 ## Permissions  
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All  |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -36,8 +36,10 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
+PATCH /sites/{site-id}/columns/{column-id}
+PATCH /sites/{site-id}/lists/{list-id}/columns/{column-id}
 PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
-PATCH /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns/{column-id}
+PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
 
 
@@ -50,9 +52,11 @@ PATCH /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns/{c
 
 ## Request body
 
-In the request body, supply a JSON representation of the [columnDefinition][] resource to update.  
+In the request body, supply a JSON representation of those properties of a [columnDefinition][] resource to update. For best performance, don't include existing values that haven't changed.
 
->**Note:** Only required and hidden properties can be updated.
+For columns in **site** or **list**, you can update any property of **columnDefinition** other than the **id** property.
+
+For columns in **contentType**, you can update only the **required** or **hidden** property.
 
 ## Response
 
@@ -134,3 +138,6 @@ Content-type: application/json
 
 [columnDefinition]: ../resources/columnDefinition.md
 [contentType]: ../resources/contentType.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
+
