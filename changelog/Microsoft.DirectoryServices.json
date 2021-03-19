@@ -3,6 +3,40 @@
       {
         "ChangeList": [
             {
+              "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+              "ApiChange": "Resource",
+              "ChangedApiName": "roleManagement",
+              "ChangeType": "Addition",
+              "Description": "Added the **roleManagement** resource type.",
+              "Target": "roleManagement"
+            },
+            {
+              "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+              "ApiChange": "Resource",
+              "ChangedApiName": "unifiedRoleDefinition",
+              "ChangeType": "Addition",
+              "Description": "Added the **unifiedRoleDefinition** resource type.",
+              "Target": "unifiedRoleDefinition"
+            },
+            {
+              "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+              "ApiChange": "Resource",
+              "ChangedApiName": "unifiedRoleAssignment",
+              "ChangeType": "Addition",
+              "Description": "Added the **unifiedRoleAssignment** resource type.",
+              "Target": "unifiedRoleAssignment"
+            }
+        ],
+        "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2020-03-19T00:00:00Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Directory management"
+      },
+      {
+        "ChangeList": [
+            {
                 "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
                 "ApiChange": "Resource",
                 "ChangedApiName": "selfSignedCertificate",
