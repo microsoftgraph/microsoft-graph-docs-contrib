@@ -5,6 +5,7 @@ localization_priority: Normal
 author: "Jumaodhiss"
 doc_type: resourcePageType
 ms.prod: "change-notifications"
+
 ---
 
 # subscription resource type
