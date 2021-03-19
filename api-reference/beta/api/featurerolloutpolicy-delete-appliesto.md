@@ -1,19 +1,21 @@
 ---
-title: "Delete featureRolloutPolicy"
-description: "Delete a featureRolloutPolicy object."
+title: "Remove appliesTo"
+description: "Remove a directoryObject from feature rollout."
 localization_priority: Normal
 author: "madhavpatel6"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Delete featureRolloutPolicy
+# Remove appliesTo
 
 Namespace: microsoft.graph
 
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.
+Remove an appliesTo on a [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object to remove the [directoryObject](../resources/directoryobject.md) from feature rollout.
 
 ## Permissions
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /policies/featureRolloutPolicies/{id}
+DELETE /policies/featureRolloutPolicies/{policyId}/appliesTo/{directoryObjectId}/$ref
 ```
 
 ## Request headers
@@ -38,10 +40,6 @@ DELETE /policies/featureRolloutPolicies/{id}
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required |
-
-## Request body
-
-Do not supply a request body for this method.
 
 ## Response
 
@@ -52,13 +50,14 @@ If successful, this method returns a `204 No Content` response code. It does not
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
-  "name": "delete_featurerolloutpolicy_policies"
+  "name": "delete_directoryobject_from_featurerolloutpolicy_policies"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
+DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c/appliesTo/2441b489-4f12-4882-b039-8f6006bd66da/$ref
 ```
 
 ### Response
@@ -67,7 +66,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
 } -->
 
 ```http
@@ -78,7 +77,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete featureRolloutPolicy",
+  "description": "Remove appliesTo",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
