@@ -29,7 +29,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |alternateSignInName|String|The alternate sign-in identity whenever you use phone number to sign-in.|
 |appDisplayName|String|The application name displayed in the Azure Portal.|
 |appId|String|The application identifier in Azure Active Directory.|
-|appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](conditionalaccesspolicy.md) collection|A list of conditional access policies that are triggered by the corresponding sign-in activity.|
+|appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that are triggered by the corresponding sign-in activity.|
 |authenticationDetails|[authenticationDetail](authenticationdetail.md) collection|The result of the authentication attempt and additional details on the authentication method.|
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|Additional authentication processing details, such as the agent name in case of PTA/PHS or Server/farm name in case of federated authentication.|
