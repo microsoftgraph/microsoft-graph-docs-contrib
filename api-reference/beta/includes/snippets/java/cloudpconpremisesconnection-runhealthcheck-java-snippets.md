@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.deviceManagement().virtualEndpoint().cloudPCs("{id}")
-	.reprovision()
+graphClient.deviceManagement().virtualEndpoint().onPremisesConnections("{id}")
+	.runHealthChecks()
 	.buildRequest()
 	.post();
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConditionalAccessPolicy conditionalAccessPolicy = new ConditionalAccessPolicy();
 conditionalAccessPolicy.displayName = "Require MFA to EXO from non-complaint devices.";
@@ -21,12 +21,12 @@ includeGroupsList.add("ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba");
 users.includeGroups = includeGroupsList;
 conditions.users = users;
 ConditionalAccessDevices devices = new ConditionalAccessDevices();
-LinkedList<String> includeDeviceStatesList = new LinkedList<String>();
-includeDeviceStatesList.add("All");
-devices.includeDeviceStates = includeDeviceStatesList;
-LinkedList<String> excludeDeviceStatesList = new LinkedList<String>();
-excludeDeviceStatesList.add("Compliant");
-devices.excludeDeviceStates = excludeDeviceStatesList;
+LinkedList<String> includeDevicesList = new LinkedList<String>();
+includeDevicesList.add("All");
+devices.includeDevices = includeDevicesList;
+LinkedList<String> excludeDevicesList = new LinkedList<String>();
+excludeDevicesList.add("Compliant");
+devices.excludeDevices = excludeDevicesList;
 conditions.devices = devices;
 conditionalAccessPolicy.conditions = conditions;
 ConditionalAccessGrantControls grantControls = new ConditionalAccessGrantControls();

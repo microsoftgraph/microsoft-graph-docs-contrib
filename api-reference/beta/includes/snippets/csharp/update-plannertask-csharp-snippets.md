@@ -25,7 +25,7 @@ var plannerTask = new PlannerTask
 	}
 };
 
-await graphClient.Planner.Tasks["01gzSlKkIUSUl6DF_EilrmQAKDhh"]
+await graphClient.Planner.Tasks["{plannerTask-id}"]
 	.Request()
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerTask);

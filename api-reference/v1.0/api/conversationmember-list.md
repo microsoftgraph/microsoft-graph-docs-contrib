@@ -35,7 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{id}/members
-GET /users/{id}/chats/{id}/members
 ```
 
 ## Optional query parameters
@@ -66,10 +65,10 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_conversation_members"
+  "name": "list_conversation_members_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/chats/{id}/members
+GET https://graph.microsoft.com/v1.0/chats/{id}/members
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-conversation-members-csharp-snippets.md)]

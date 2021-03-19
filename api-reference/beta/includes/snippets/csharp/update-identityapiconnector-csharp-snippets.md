@@ -17,7 +17,7 @@ var identityApiConnector = new IdentityApiConnector
 	}
 };
 
-await graphClient.Identity.ApiConnectors["{identityApiConnectorId}"]
+await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"]
 	.Request()
 	.UpdateAsync(identityApiConnector);
 

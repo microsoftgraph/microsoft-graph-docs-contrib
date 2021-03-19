@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{teamId}/channels/{channelId}/completeMigration')
+await client.api('/teams/{teamId}/channels/{channelId}/completeMigration')
 	.version('beta')
 	.post();
 

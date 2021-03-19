@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "3a98db4e-7246-4b4c-b97c-feff3f93ce42",
+          "ApiChange": "Method",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added [PATCH](https://docs.microsoft.com/en-us/graph/api/onlinemeeting-update?view=graph-rest-v1.0) method to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "3a98db4e-7246-4b4c-b97c-feff3f93ce42",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-05T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d20c6ccf-5228-475a-b482-b3c2b9a42caf",
           "ApiChange": "Resource",
           "ChangedApiName": "updateMetadata",

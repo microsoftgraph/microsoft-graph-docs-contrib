@@ -15,7 +15,7 @@ var unifiedGroupSource = new Microsoft.Graph.Ediscovery.UnifiedGroupSource
 	}
 };
 
-await graphClient.Compliance.Ediscovery.Cases["{caseId}"].Custodians["{custodianId}"].UnifiedGroupSources
+await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Custodians["{ediscovery.custodian-id}"].UnifiedGroupSources
 	.Request()
 	.AddAsync(unifiedGroupSource);
 
