@@ -67,8 +67,9 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |reactions| [chatMessageReaction](./chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
 |locale|string|Locale of the chat message set by the client.|
 | policyViolation | [chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
-|chatId|string|  When populated, then this is the identity of the chat in which the message was posted.|
-|channelIdentity | [channelIdentity](../resources/channelIdentity.md) |When populated, then this is the identity of the channel in which the message was posted.|
+|chatId|string| The identity of the chat in which the message was posted.|
+|channelIdentity | [channelIdentity](../resources/channelIdentity.md) | The identity of the channel in which the message was posted.|
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
