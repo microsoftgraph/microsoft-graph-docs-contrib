@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------
-|Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All  |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -75,12 +75,10 @@ POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubS
 Content-Type: application/json
 
 {
-  "hubSiteUrls":
-    [
+   "hubSiteUrls":[
       "https://graph.microsoft.com/beta/sites/id"
-      
-    ],
-    "propagateToExistingLists": false
+   ],
+   "propagateToExistingLists":false
 }
 ```
 # [C#](#tab/csharp)
@@ -111,7 +109,6 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
   

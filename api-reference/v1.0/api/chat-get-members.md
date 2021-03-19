@@ -66,7 +66,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_conversation_member"
+  "name": "get_conversation_member_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
@@ -100,7 +100,7 @@ Here is an example of the response.
 {
  "blockType": "response",
   "truncated": true,
-  "name": "get_conversation_member",
+  "name": "get_conversation_member_1",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 

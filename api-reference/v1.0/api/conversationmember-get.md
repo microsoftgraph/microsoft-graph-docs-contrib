@@ -63,7 +63,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_conversation_member"
+  "name": "get_conversation_member_2"
 }-->
 
 ```msgraph-interactive
@@ -97,7 +97,7 @@ Here is an example of the response.
 {
   "blockType": "response",
   "truncated": true,
-  "name": "get_conversation_member",
+  "name": "get_conversation_member_2",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 
