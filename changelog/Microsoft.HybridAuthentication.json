@@ -6,17 +6,17 @@
             "Id": "3c32d90b-76ec-11eb-8d30-85f45032d4a1",
             "ApiChange": "Resource",
             "ChangedApiName": "featureRolloutPolicy",
-            "ChangeType": "Addition",
-            "Description": "Added the [featureRolloutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) resource type.",
+            "ChangeType": "Change",
+            "Description": "Deprecated the URL segment for [featureRolloutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) under /directory.",
             "Target": "featureRolloutPolicy"
           },
           {
-            "Id": "3c378bae-76ec-11eb-8d30-85f45032d4a1",
-            "ApiChange": "Enum type",
-            "ChangedApiName": "stagedFeatureName",
+            "Id": "3c32d90b-76ec-11eb-8d30-85f45032d4a1",
+            "ApiChange": "Resource",
+            "ChangedApiName": "featureRolloutPolicy",
             "ChangeType": "Addition",
-            "Description": "Added the **stagedFeatureName** enumeration type.",
-            "Target": "stagedFeatureName"
+            "Description": "Added the URL segment for [featureRolloutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) under /policies.",
+            "Target": "featureRolloutPolicy"
           }
         ],
         "Id": "3c3063a0-76ec-11eb-8d30-85f45032d4a1",
