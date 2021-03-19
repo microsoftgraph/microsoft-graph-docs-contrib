@@ -31,14 +31,12 @@ GET /policies/mobileDeviceManagementPolicies
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response.For example,
+This method supports some of the OData query parameters to help customize the response.For example - 
 
-To select specific attributes add `$select=id,displayname`
-To retrieve included groups for each policy, use `$expand=includedGroups`
+- To select specific attributes add `$select=id,displayname`
+- To retrieve included groups for each policy, add `$expand=includedGroups`
+- To filter based on an attribute, use
 `$filter=displayName eq 'Microsoft Intune'`
-`$count=true`
-`$top=5`
-`$orderby=displayName`
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
