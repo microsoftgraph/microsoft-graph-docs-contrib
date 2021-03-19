@@ -4065,10 +4065,10 @@ items:
             items:
             - name: List
               href: api/featurerolloutpolicies-list.md
-            - name: Get
-              href: api/featurerolloutpolicy-get.md
             - name: Create
               href: api/featurerolloutpolicies-post.md
+            - name: Get
+              href: api/featurerolloutpolicy-get.md
             - name: Update
               href: api/featurerolloutpolicy-update.md
             - name: Delete
