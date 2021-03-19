@@ -68,12 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_fido2authenticationmethod"
-}
--->
+
 ``` http
 GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods
 ```

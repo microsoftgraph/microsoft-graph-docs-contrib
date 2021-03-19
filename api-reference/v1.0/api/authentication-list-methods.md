@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.
 
+> **Note:** Only methods supported on V1.0 will be returned.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -72,11 +74,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_methods"
-}-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/authentication/methods

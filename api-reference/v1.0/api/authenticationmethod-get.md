@@ -72,11 +72,6 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_authenticationmethod"
-}-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/authentication/methods/{id}
