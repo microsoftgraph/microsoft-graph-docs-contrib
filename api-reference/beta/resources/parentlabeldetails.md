@@ -1,6 +1,6 @@
 ---
 title: "parentLabelDetails resource type"
-description: "Represents the label details of an information protection label."
+description: "Represents the label details of an information protection parent label."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the label details of an information protection label. **parentLabelDetails** provides information about a single information protection label. Can be returned by [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), and [extractLabel](../api/informationprotectionlabel-extractLabel.md)
+Represents the label details of an information protection parent label. **parentLabelDetails** provides information about a single information protection label. Can be returned by [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), and [extractLabel](../api/informationprotectionlabel-extractLabel.md)
 
 ## Properties
 
