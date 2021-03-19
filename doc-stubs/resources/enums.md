@@ -1,20 +1,16 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "ravennMSFT"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "mobility-management"
 doc_type: enumTypes
 ---
 
-### policyScope values 
-
-
+### policyScope values
 
 |Member|
 |:---|
 |none|
 |all|
 |selected|
-|unknownFutureValue|
-
