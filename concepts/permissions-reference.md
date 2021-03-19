@@ -254,7 +254,7 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 * _Application.ReadWrite.OwnedBy_: Create an application (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_: List all applications owned by the calling application (`GET /beta/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_: Add another owner to an owned application (`POST /applications/{id}/owners/$ref`).
-> NOTE: This may require additional permissions.
+    > NOTE: This may require additional permissions.
 
 ---
 
@@ -541,6 +541,22 @@ None.
 None.
 
 ---
+
+## Consent requests permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_ConsentRequest.Read.All_ |Read consent requests |Allows the app to read consent requests and approvals on behalf of the signed-in user. |Yes | No |
+|_ConsentRequest.ReadWrite.All_ |Read and write consent requests |Allows the app to read app consent requests and approvals, and deny or approve those requests on behalf of the signed-in user. |Yes | No |
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_ConsentRequest.Read.All_ |Read consent requests |Allows the app to read app consent requests and approvals without a signed-in user. |Yes |
+|_ConsentRequest.ReadWrite.All_ |Read and write consent requests |Allows the app to read app consent requests and approvals, and deny or approve those requests without a signed-in user. |Yes |
 
 ## Contacts permissions
 
@@ -1480,6 +1496,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Policy.ReadWrite.AuthenticationFlows_ | Read and write your organization's authentication flow policies | Allows the app to read and write the authentication flow policies, on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes | No |
 | _Policy.ReadWrite.ConditionalAccess_ | Read and write your organization's conditional access policies | Allows the app to read and write your organization's conditional access policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write your organization's feature rollout policies | Allows the app to read and write your organization's feature rollout policies on behalf of the signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes | No |
 | _Policy.ReadWrite.PermissionGrant_ | Manage consent and permission grant policies | Allows the app to manage policies related to consent and permission grants for applications, on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies on behalf of the signed-in user. | Yes | No |
@@ -1494,6 +1511,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Policy.Read.ApplicationConfiguration_ | Read your organization's application configuration policies | Allows the app to read all your organization's application configuration policies without a signed in user. | Yes |
 | _Policy.ReadWrite.AuthenticationFlows_ | Read and write your organization's authentication flow policies | Allows the app to read and write the authentication flow policies for the tenant, without a signed in user. | Yes |
 | _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes | No |
+| _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy without a signed-in user. | Yes | No |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write feature rollout policies | Allows the app to read and write feature rollout policies without a signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes |
 | _Policy.ReadWrite.PermissionGrant_ | Manage consent and permission grant policies | Allows the app to manage policies related to consent and permission grants for applications, without a signed-in user. | Yes |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies without a signed in user. | Yes |

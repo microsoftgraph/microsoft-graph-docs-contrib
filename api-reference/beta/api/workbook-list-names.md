@@ -51,25 +51,25 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_names"
+  "name": "get_names_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-names-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-names-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-names-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-names-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-names-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-names-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-names-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-names-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
