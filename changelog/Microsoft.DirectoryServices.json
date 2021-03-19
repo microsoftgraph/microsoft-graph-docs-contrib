@@ -3,6 +3,24 @@
       {
         "ChangeList": [
             {
+                "Id": "3f30920e-41d4-4a40-b4dc-f95070985bfa",
+                "ApiChange": "Property",
+                "ChangedApiName": "isAssignableToRole",
+                "ChangeType": "Addition",
+                "Description": "Added the **isAssignableToRole** property to the Create group API.",
+                "Target": "isAssignableToRole"
+            }
+        ],
+        "Id": "3f30920e-41d4-4a40-b4dc-f95070985bfa",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2020-03-19T00:00:00Z",
+        "WorkloadArea": "Groups",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+            {
                 "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
                 "ApiChange": "Resource",
                 "ChangedApiName": "selfSignedCertificate",
