@@ -27,6 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
+> **Note**: In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported
+using Teamwork.Migrate.All and/or [migration APIs](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
