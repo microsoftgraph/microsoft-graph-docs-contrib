@@ -10161,11 +10161,11 @@ items:
           href: resources/featurerolloutpolicy.md
           items:
           - name: List
-            href: api/directory-list-featurerolloutpolicies.md
+            href: api/list-featurerolloutpolicies.md
           - name: Get
             href: api/featurerolloutpolicy-get.md
           - name: Create
-            href: api/directory-post-featurerolloutpolicies.md
+            href: api/post-featurerolloutpolicies.md
           - name: Update
             href: api/featurerolloutpolicy-update.md
           - name: Delete
@@ -10697,6 +10697,23 @@ items:
               href: api/claimsmappingpolicy-delete.md
             - name: List applied to applications
               href: api/claimsmappingpolicy-list-appliesto.md
+          - name: Feature rollout policy
+            href: resources/featurerolloutpolicy.md
+            items:
+            - name: List
+              href: api/list-featurerolloutpolicies.md
+            - name: Get
+              href: api/featurerolloutpolicy-get.md
+            - name: Create
+              href: api/post-featurerolloutpolicies.md
+            - name: Update
+              href: api/featurerolloutpolicy-update.md
+            - name: Delete
+              href: api/featurerolloutpolicy-delete.md
+            - name: Create appliesTo
+              href: api/featurerolloutpolicy-post-appliesto.md
+            - name: Delete appliesTo
+              href: api/featurerolloutpolicy-delete-appliesto.md
           - name: Home realm discovery policy
             href: resources/homerealmdiscoverypolicy.md
             items:
