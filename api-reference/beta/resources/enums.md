@@ -11,6 +11,12 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### consentRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
 
 ### attributeType values
 
