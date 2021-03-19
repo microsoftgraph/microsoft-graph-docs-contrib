@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /synchronizationProfiles/{id}/profileStatus
+GET /education/synchronizationProfiles/{id}/profileStatus
 ```
 
 ## Request headers

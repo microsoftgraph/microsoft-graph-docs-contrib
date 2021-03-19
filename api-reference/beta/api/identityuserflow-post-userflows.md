@@ -3,7 +3,7 @@ title: "Create userFlow"
 description: "Use this API to create a new userFlow."
 localization_priority: Normal
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 

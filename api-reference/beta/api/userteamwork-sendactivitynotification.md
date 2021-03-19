@@ -93,7 +93,6 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/userteamwork-sendactivitynotification-csharp-snippets.md)]

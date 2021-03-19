@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var tabs = await graphClient.Teams["6903fa93-605b-43ef-920e-77c4729f8258"].Channels["19:33b76eea88574bd1969dca37e2b7a819@thread.skype"].Tabs
+var tabs = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Tabs
 	.Request()
 	.Filter("teamsApp/id eq 'com.microsoft.teamspace.tab.planner'")
 	.Expand("teamsApp")

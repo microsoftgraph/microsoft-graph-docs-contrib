@@ -3,7 +3,7 @@ title: "Get history item of riskyUser"
 description: "Get a history item of a riskyUser object."
 localization_priority: Normal
 author: "cloudhandler"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
