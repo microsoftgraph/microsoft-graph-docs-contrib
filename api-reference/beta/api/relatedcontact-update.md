@@ -76,7 +76,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/educationUser
+PATCH https://graph.microsoft.com/beta/education/users/{educationUserId}
 Content-Type: application/json
 Content-length: 408
 
