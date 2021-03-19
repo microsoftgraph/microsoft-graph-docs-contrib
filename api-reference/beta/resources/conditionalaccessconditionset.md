@@ -30,8 +30,8 @@ Represents the type of conditions that govern when the policy applies.
 |userRiskLevels|riskLevel collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 
 >**Note:**
->* **clientAppType** `modern` will be deprecated and replaced by `mobileAppsAndDesktopClients`. <br>
->* **clientAppType** `easUnsupported` will be deprecated in favor of `exchangeActiveSync` which includes EAS supported and unsupported platforms. <br>
+>* **clientAppType** `modern` is going to be deprecated and replaced by `mobileAppsAndDesktopClients`. <br>
+>* **clientAppType** `easUnsupported` is going to be deprecated in favor of `exchangeActiveSync` which includes EAS supported and unsupported platforms. <br>
 >* We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use **devices** condition.
 
 ## Relationships
