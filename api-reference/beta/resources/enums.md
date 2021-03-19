@@ -48,6 +48,12 @@ Namespace: microsoft.graph
 |exchangeActiveSync|
 |easSupported|
 |other|
+
+### consentRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
 |unknownFutureValue|
 
 ### attributeType values

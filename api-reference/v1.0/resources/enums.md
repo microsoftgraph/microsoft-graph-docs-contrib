@@ -118,10 +118,6 @@ Namespace: microsoft.graph
 |notEnabled|
 |unknown|
 |unknownFutureValue|
-|reportOnlySuccess|
-|reportOnlyFailure|
-|reportOnlyNotApplied|
-|reportOnlyInterrupted|
 
 ### groupType values 
 
