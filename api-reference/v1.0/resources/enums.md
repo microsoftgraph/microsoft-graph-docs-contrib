@@ -11,6 +11,47 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### appliedConditionalAccessPolicyResult values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|notEnabled|
+|unknown|
+|unknownFutureValue|
+|reportOnlySuccess|
+|reportOnlyFailure|
+|reportOnlyNotApplied|
+|reportOnlyInterrupted|
+
+### groupType values 
+
+|Member|
+|:---|
+|unifiedGroups|
+|azureAD|
+|unknownFutureValue|
+
+### conditionalAccessStatus values
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|unknownFutureValue|
+
+### operationResult values
+
+|Member|
+|:---|
+|success|
+|failure|
+|timeout|
+|unknownFutureValue|
+
 
 ### tone values
 

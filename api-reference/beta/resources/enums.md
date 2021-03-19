@@ -377,7 +377,9 @@ Namespace: microsoft.graph
 |success|
 |failure|
 |skipped|
+|warning|
 |unknownFutureValue|
+
 
 ### provisioningStepType values 
 
