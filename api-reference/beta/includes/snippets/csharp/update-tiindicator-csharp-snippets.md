@@ -13,7 +13,7 @@ var tiIndicator = new TiIndicator
 	Description = "description-after-update"
 };
 
-await graphClient.Security.TiIndicators["{id}"]
+await graphClient.Security.TiIndicators["{tiIndicator-id}"]
 	.Request()
 	.Header("Prefer","return=representation")
 	.UpdateAsync(tiIndicator);

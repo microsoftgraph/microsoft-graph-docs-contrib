@@ -3,7 +3,7 @@ title: "appliedConditionalAccessPolicy resource type"
 description: "Indicates the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity."
 localization_priority: Normal
 author: "dhanyahk"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Indicates the attributes related to applied conditional access policy or policie
 |enforcedGrantControls|String collection|Refers to the grant controls enforced by the conditional access policy (example: “Require multi-factor authentication”).|
 |enforcedSessionControls|String collection|Refers to the session controls enforced by the conditional access policy (example: “Require app enforced controls”).|
 |id|String|Unique GUID of the conditional access policy.|
-|result|String| Indicates the result of the CA policy that was triggered. Possible values are:<br/>`success`<br/>`failure`<br/>`notApplied` - Policy isn't applied because policy conditions were not met.<br/>`notEnabled` - This is due to the policy in disabled state.|
+|result|appliedConditionalAccessPolicyResult| Indicates the result of the CA policy that was triggered. Possible values are: `success`, `failure`, `notApplied` (Policy isn't applied because policy conditions were not met),`notEnabled` (This is due to the policy in disabled state), `unknown`, `unknownFutureValue`, `reportOnlySuccess`, `reportOnlyFailure`, `reportOnlyNotApplied`, `reportOnlyInterrupted`|
 
 ## JSON representation
 

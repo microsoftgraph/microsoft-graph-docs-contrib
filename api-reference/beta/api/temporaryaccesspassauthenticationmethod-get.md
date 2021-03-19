@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a temporaryAccessPassAuth
 author: "inbarckMS"
 ms.author: inbarc
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
