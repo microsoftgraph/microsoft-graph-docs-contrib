@@ -8,7 +8,7 @@
              "ApiChange": "Property",
              "ChangedApiName": "chatId",
              "ChangeType": "Addition",
-             "Description": "Added **chatId** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
+             "Description": "Added the **chatId** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
              "Target": "chatMessage"
            },
            {
@@ -16,14 +16,14 @@
              "ApiChange": "Resource",
              "ChangedApiName": "channelIdentity",
              "ChangeType": "Addition",
-             "Description": "Added [channelIdentity](https://docs.microsoft.com/en-us/graph/api/resources/channelIdentity?view=graph-rest-beta) resource type",
+             "Description": "Added the [channelIdentity](https://docs.microsoft.com/en-us/graph/api/resources/channelIdentity?view=graph-rest-beta) resource type.",
              "Target": "channelIdentity"
            }
       ],
         "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2021-01-30T00:00:00",
+        "CreatedDateTime": "2021-03-19T00:00:00",
         "WorkloadArea": "Teamwork",
         "SubArea": ""
     },
