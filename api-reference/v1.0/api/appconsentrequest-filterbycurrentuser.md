@@ -8,12 +8,13 @@ doc_type: apiPageType
 ---
 
 # appConsentRequest: filterByCurrentUser
+
 Namespace: microsoft.graph
 
 Retrieve [appConsentRequests](../resources/appconsentrequest.md) for which the current user is the reviewer and the status of the userConsentRequest is `InProgress`.
 
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -33,6 +34,7 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 ```
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
@@ -40,16 +42,18 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |on|consentRequestFilterByCurrentUserOptions|Filter to query appConsentRequests for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
-## Required query parameters
+## Optional query parameters
+
 This function requires the `$filter` OData query parameter to return a collection of [userConsentRequests](../resources/userconsentrequest.md) whose status is `InProgress`. For general information, see [OData query parameters](/graph/query-parameters).
 
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -59,6 +63,7 @@ If successful, this function returns a `200 OK` response code and a [appConsentR
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "appconsentrequest_filterbycurrentuser"
@@ -68,8 +73,8 @@ If successful, this function returns a `200 OK` response code and a [appConsentR
 GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='reviewer')?$filter=userConsentRequests/any(u:u/status eq 'InProgress')
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -8,11 +8,13 @@ doc_type: apiPageType
 ---
 
 # Update adminConsentRequestPolicy
+
 Namespace: microsoft.graph
 
 Update the properties of an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,12 +36,14 @@ PUT /policies/adminConsentRequestPolicy
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.
 
 The following table shows the properties that are required when you update the [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md).
@@ -52,8 +56,6 @@ The following table shows the properties that are required when you update the [
 |requestDurationInDays|Int32|Specifies the duration the request is active before it automatically expires if no decision is applied.|
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|The list of reviewers for the admin consent.|
 
-
-
 ## Response
 
 If successful, this method returns a `204 No content` response code and an updated [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object in the response body.
@@ -61,6 +63,7 @@ If successful, this method returns a `204 No content` response code and an updat
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "update_adminconsentrequestpolicy"
@@ -88,9 +91,8 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -100,4 +102,3 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 Content-Type: text/plain
 ```
-

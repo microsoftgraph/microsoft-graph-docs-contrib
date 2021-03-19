@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 Specifies decision stages in the approval.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedToMe|Boolean|Indicates whether the stage is assigned to the calling user to review. Read-only.|
@@ -25,11 +26,12 @@ Specifies decision stages in the approval.
 |reviewedDateTime|DateTimeOffset|The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |status|String|The stage status. Possible values: `InProgress`, `Initializing`, `Completed`, `Expired`. Read-only.|
 
-
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -38,6 +40,7 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.approvalStage",
@@ -53,4 +56,3 @@ The following is a JSON representation of the resource.
   "justification": "String"
 }
 ```
-

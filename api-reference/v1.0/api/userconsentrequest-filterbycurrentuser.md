@@ -8,11 +8,13 @@ doc_type: apiPageType
 ---
 
 # userConsentRequest: filterByCurrentUser
+
 Namespace: microsoft.graph
 
 Retrieve the [userConsentRequests](../resources/userconsentrequest.md) for an appConsentRequest for which the current user is the reviewer and the status of the userConsentRequest is `InProgress`.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -32,6 +34,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 ```
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
@@ -39,17 +42,18 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |on|consentRequestFilterByCurrentUserOptions|Filter to query userConsentRequests for an appConsentRequest for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
-
 ## Optional query parameters
+
 This function supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -59,6 +63,7 @@ If successful, this function returns a `200 OK` response code and a [userConsent
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "userconsentrequest_filterbycurrentuser"
@@ -68,8 +73,8 @@ If successful, this function returns a `200 OK` response code and a [userConsent
 GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests/ee245379-e3bb-4944-a997-24115f0b8b5e/userConsentRequests/filterByCurrentUser(on='reviewer')?$filter= (status eq 'Completed')
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

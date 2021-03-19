@@ -8,11 +8,13 @@ doc_type: apiPageType
 ---
 
 # Get userConsentRequest
+
 Namespace: microsoft.graph
 
 Read the properties and relationships of a [userConsentRequest](../resources/userconsentrequest.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -32,14 +34,17 @@ GET /identityGovernance/appConsent/appConsentRequests/{appconsentrequest-id}/use
 ```
 
 ## Optional query parameters
+
 This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -49,6 +54,7 @@ If successful, this method returns a `200 OK` response code and a [userConsentRe
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_userconsentrequest"
@@ -58,8 +64,8 @@ If successful, this method returns a `200 OK` response code and a [userConsentRe
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/ee245379-e3bb-4944-a997-24115f0b8b5e/userConsentRequests/acef2660-d194-4943-b927-4fe4fb5cb7e3
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -112,4 +118,3 @@ Content-Type: application/json
   "customData": null
 }
 ```
-

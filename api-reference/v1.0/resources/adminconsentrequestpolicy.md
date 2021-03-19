@@ -11,19 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Specifies the policy by which consent requests are created and managed for the entire tenant. There is a single **adminConsentRequestPolicy** per tenant. 
+Specifies the policy by which consent requests are created and managed for the entire tenant. There is a single **adminConsentRequestPolicy** per tenant.
 
 The **adminConsentRequestPolicy** provides additional settings when creating a consent request, to control the feature behavior when starting a consent request.
 
-
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get adminConsentRequestPolicy](../api/adminconsentrequestpolicy-get.md)|[adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md)|Read the properties and relationships of an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.|
 |[Update adminConsentRequestPolicy](../api/adminconsentrequestpolicy-update.md)|[adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md)|Update the properties of an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.|
 
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |isEnabled|Boolean|Specifies whether the admin consent request feature is enabled or disabled. Required.|
@@ -34,9 +34,11 @@ The **adminConsentRequestPolicy** provides additional settings when creating a c
 |version|Int32|Specifies the version of this policy. When the policy is updated, this version is updated. Read-only.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

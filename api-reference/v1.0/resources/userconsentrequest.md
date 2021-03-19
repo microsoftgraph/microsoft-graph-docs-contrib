@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 A [userConsentRequest](../resources/userconsentrequest.md) is created by an user when they are requesting access to an application which requires an admin authorization to access. 
 
 ## Methods
+
 Method|Return type|Description|
 |:---|:---|:---|
 |[List userConsentRequests](../api/userconsentrequest-list.md)|[userConsentRequest](../resources/userconsentrequest.md) collection|Get a list of the [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.|
@@ -21,6 +22,7 @@ Method|Return type|Description|
 |[List userConsentRequests: filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[userConsentRequest](../resources/userconsentrequest.md) collection|Get a list of the [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |approvalId|String|The id of the approval. This value is equal to the value of the `id`.|
@@ -33,11 +35,13 @@ Method|Return type|Description|
 |status|String|The status of the user's app consent request. Possible values are: `Initializing`, `InProgress`, and `Completed`. Supports `$filter` (`eq` only) and `$orderby`. |
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |approval|[approval](../resources/approval.md)|Approval decisions associated with a request.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -61,4 +65,3 @@ The following is a JSON representation of the resource.
   "reason": "String"
 }
 ```
-

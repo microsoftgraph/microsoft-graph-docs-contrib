@@ -1,5 +1,5 @@
 ---
-title: "Azure AD Consent Requests API"
+title: "Azure Active Directory consent requests"
 description: "Use Azure AD consent requests to manage the request workflow for users attempting to access apps that require admin consent."
 localization_priority: Normal
 author: "psignoret"
@@ -24,7 +24,6 @@ The consent request resource types include:
 * [appConsentRequest](../resources/appconsentrequest.md): A request that represents an aggregation of **userConsentRequests** for a specific application.
 * [userConsentRequest](../resources/userconsentrequest.md): A request created by a user to use an app that requires admin consent to access.
 * [appConsentRequestScope](../resources/appconsentrequestscope.md): A resource that contains details of the dynamic permission scopes being requested for a given application.  
-
 
 ## Methods
 

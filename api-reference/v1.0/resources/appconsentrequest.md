@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 An aggregation of [userConsentRequests](../resources/userconsentrequest.md) for a specific application.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List appConsentRequests](../api/appconsentrequest-list.md)|[appConsentRequest](../resources/appconsentrequest.md) collection|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.|
@@ -21,6 +22,7 @@ An aggregation of [userConsentRequests](../resources/userconsentrequest.md) for 
 |[appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|A list of the [appConsentRequests](../resources/appconsentrequest.md) for which the current user is the reviewer|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |appDisplayName|String|The display name of the app for which consent is requested. Required. Supports `$filter` (`eq` only) and `$orderby`. |
@@ -29,11 +31,13 @@ An aggregation of [userConsentRequests](../resources/userconsentrequest.md) for 
 |pendingScopes|[appConsentRequestScope](../resources/appconsentrequestscope.md) collection|A list of pending scopes waiting for approval. This is empty if the consentType is `Static`. Required.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |userConsentRequests|[userConsentRequest](../resources/userconsentrequest.md) collection|A list of pending user consent requests.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -55,4 +59,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

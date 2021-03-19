@@ -8,11 +8,13 @@ doc_type: apiPageType
 ---
 
 # Get adminConsentRequestPolicy
+
 Namespace: microsoft.graph
 
 Read the properties and relationships of an [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -38,14 +40,17 @@ GET /policies/adminConsentRequestPolicy
 ```
 
 ## Optional query parameters
+
 This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -55,6 +60,7 @@ If successful, this method returns a `200 OK` response code and an [adminConsent
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_adminconsentrequestpolicy"
@@ -64,8 +70,8 @@ If successful, this method returns a `200 OK` response code and an [adminConsent
 GET https://graph.microsoft.com/v1.0/policies/adminConsentRequestPolicy
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
