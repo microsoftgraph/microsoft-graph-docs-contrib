@@ -285,6 +285,7 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
+
 {
   "description": "Group assignable to a role",
   "displayName": "Role assignable group",
@@ -314,6 +315,7 @@ The following is an example of the response. It includes only default properties
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
   "id": "502df398-d59c-469d-944f-34a50e60db3f",
