@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}
+GET /teams/{team-id}
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_team"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265
 ```
 

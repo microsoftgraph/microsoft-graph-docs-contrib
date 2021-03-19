@@ -30,7 +30,7 @@ The following permission is required to call this API. To learn more, see [Permi
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{teamId}/completeMigration
+POST /teams/{team-id}/completeMigration
 ```
 
 ## Request headers

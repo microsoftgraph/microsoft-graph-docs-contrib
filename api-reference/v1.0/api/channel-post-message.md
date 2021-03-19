@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/channels/{id}/messages
+POST /teams/{team-id}/channels/{channel-id}/messages
 ```
 
 ## Request headers
@@ -406,7 +406,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Import messages (text only)
+### Example 5: Import messages
 
 > **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 

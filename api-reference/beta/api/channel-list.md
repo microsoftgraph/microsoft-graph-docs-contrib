@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels
+GET /teams/{team-id}/channels
 ```
 
 ## Optional query parameters
@@ -65,7 +65,7 @@ The following example shows a request to list all channels.
   "blockType": "request",
   "name": "list_channels"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels
 ```
 ---
@@ -112,7 +112,7 @@ The following example shows a request to list all private channels.
   "blockType": "request",
   "name": "list_private_channels"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels?$filter=membershipType eq 'private'
 ```
 ---
