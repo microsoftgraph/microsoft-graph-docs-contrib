@@ -2,14 +2,16 @@
 title: "Update featureRolloutPolicy"
 description: "Update the properties of featurerolloutpolicy object."
 localization_priority: Normal
-author: "keylimesoda"
-ms.prod: "directory-management"
+author: "madhavpatel6"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
 # Update featurerolloutpolicy
 
 Namespace: microsoft.graph
+
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,18 +32,18 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /directory/featureRolloutPolicies/{id}
+PATCH /policies/featureRolloutPolicies/{id}
 ```
 
 ## Request headers
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant properties that should be updated. Existing properties that are not included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -52,7 +54,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object in the response body.
+If successful, this method returns a `204 No content` response code.
 
 ## Examples
 
@@ -61,11 +63,11 @@ If successful, this method returns a `200 OK` response code and an updated [feat
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_featurerolloutpolicy"
+  "name": "update_featurerolloutpolicy_policies"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
+PATCH https://graph.microsoft.com/beta/policies/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
 Content-type: application/json
 
 {
@@ -80,12 +82,9 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.featureRolloutPolicy"
 } -->
 
 ```http

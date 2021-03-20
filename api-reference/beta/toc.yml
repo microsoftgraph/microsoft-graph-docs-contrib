@@ -10161,11 +10161,11 @@ items:
           href: resources/featurerolloutpolicy.md
           items:
           - name: List
-            href: api/directory-list-featurerolloutpolicies.md
+            href: api/list-featurerolloutpolicies.md
           - name: Get
             href: api/featurerolloutpolicy-get.md
           - name: Create
-            href: api/directory-post-featurerolloutpolicies.md
+            href: api/post-featurerolloutpolicies.md
           - name: Update
             href: api/featurerolloutpolicy-update.md
           - name: Delete
@@ -10697,6 +10697,23 @@ items:
               href: api/claimsmappingpolicy-delete.md
             - name: List applied to applications
               href: api/claimsmappingpolicy-list-appliesto.md
+          - name: Feature rollout policy
+            href: resources/featurerolloutpolicy.md
+            items:
+            - name: List
+              href: api/list-featurerolloutpolicies.md
+            - name: Get
+              href: api/featurerolloutpolicy-get.md
+            - name: Create
+              href: api/post-featurerolloutpolicies.md
+            - name: Update
+              href: api/featurerolloutpolicy-update.md
+            - name: Delete
+              href: api/featurerolloutpolicy-delete.md
+            - name: Create appliesTo
+              href: api/featurerolloutpolicy-post-appliesto.md
+            - name: Delete appliesTo
+              href: api/featurerolloutpolicy-delete-appliesto.md
           - name: Home realm discovery policy
             href: resources/homerealmdiscoverypolicy.md
             items:
@@ -11060,6 +11077,34 @@ items:
             items:
             - name: List
               href: api/programcontroltype-list.md
+        - name: Consent requests
+          href: resources/consentrequests-root.md
+          items:
+          - name: Admin consent request policy
+            href: resources/adminconsentrequestpolicy.md
+            items:
+            - name: Get
+              href: api/adminconsentrequestpolicy-get.md
+            - name: Update
+              href: api/adminconsentrequestpolicy-update.md
+          - name: App consent requests
+            href: resources/appconsentrequest.md
+            items:
+            - name: List
+              href: api/appconsentrequest-list.md
+            - name: Get
+              href: api/appconsentrequest-get.md
+            - name: Filter by current user
+              href: api/appconsentrequest-filterByCurrentUser.md
+          - name: User consent requests
+            href: resources/userconsentrequest.md
+            items:
+            - name: List
+              href: api/userconsentrequest-list.md
+            - name: Get
+              href: api/userconsentrequest-get.md
+            - name: Filter by current user
+              href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
           href: resources/entitlementmanagement-root.md
           items:
