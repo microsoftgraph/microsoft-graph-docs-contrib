@@ -277,6 +277,18 @@ Namespace: microsoft.graph
 |reportOnlyNotApplied|
 |reportOnlyInterrupted|
 
+
+### microsoftAuthenticatorAuthenticationMode values
+
+ 
+
+|Member|
+|:---|
+|any|
+|push|
+|deviceBasedPush|
+
+
 ### authenticationMethodFeature values 
 
 |Member|
@@ -286,6 +298,15 @@ Namespace: microsoft.graph
 |ssprCapable|
 |passwordlessCapable|
 |mfaCapable|
+
+### authenticatorAppFeatureSettings values 
+
+
+
+|Member|
+|:---|
+|requireNumberMatching|
+|unknownFutureValue|
 
 ### authMethodsType values 
 

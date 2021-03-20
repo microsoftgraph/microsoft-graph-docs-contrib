@@ -89,28 +89,46 @@
     {
       "ChangeList": [
         {
-          "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
-          "ApiChange": "Property",
-          "ChangedApiName": "agreementFile",
-          "ChangeType": "Addition",
-          "Description": "Added the **displayName** property to the Terms of Use [agreementfile](https://docs.microsoft.com/en-us/graph/api/resources/agreementfile?view=graph-rest-beta) resource.",
-          "Target": "agreementFile"
+          "Id": "f1ba54fc-500b-4c9a-be59-6cc31c254f55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodTarget",
+          "ChangeType": "Change",
+          "Description": "Changed [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-beta) entity for requiring number matching.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
         },
         {
-          "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
-          "ApiChange": "Property",
-          "ChangedApiName": "agreementFileLocalization",
+          "Id": "199b8d37-1c0b-4db0-8227-290dd289d774",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "authenticatorAppFeatureSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **displayName** property to the Terms of Use [agreementFileLocalization](https://docs.microsoft.com/en-us/graph/api/resources/agreementfilelocalization?view=graph-rest-beta) resource.",
-          "Target": "agreementFileLocalization"
+          "Description": "Added the **authenticatorAppFeatureSettings** enumeration type.",
+          "Target": "authenticatorAppFeatureSettings"
         },
         {
-          "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
-          "ApiChange": "Property",
-          "ChangedApiName": "agreementFileVersion",
+          "Id": "29d0c227-a1da-453f-bff0-cee1bda56ca4",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "authenticationMode",
           "ChangeType": "Addition",
-          "Description": "Added the **displayName** property to Terms of Use [agreementFileVersion](https://docs.microsoft.com/en-us/graph/api/resources/agreementfileversion?view=graph-rest-beta) resource.",
-          "Target": "agreementFileVersion"
+          "Description": "Added the **authenticationMode** enumeration type.",
+          "Target": "microsoftAuthenticatorAuthenticationMode"
+        }
+      ],
+      "Id": "bc6921dd-06a2-4b53-8afb-04a0d090e519",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-18T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+       {
+          "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [temporaryaccesspassauthenticationmethodconfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta) resource and associated methods.",
+          "Target": "temporaryAccessPassAuthenticationMethodConfiguration"
         }
       ],
       "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
