@@ -75,12 +75,10 @@ POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubS
 Content-Type: application/json
 
 {
-  "hubSiteUrls":
-    [
+   "hubSiteUrls":[
       "https://graph.microsoft.com/beta/sites/id"
-      
-    ],
-    "propagateToExistingLists": false
+   ],
+   "propagateToExistingLists":false
 }
 ```
 # [C#](#tab/csharp)
@@ -111,7 +109,6 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
   
