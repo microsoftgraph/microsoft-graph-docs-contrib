@@ -11,6 +11,103 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### allowInvitesFrom values
+
+|Member|
+|:---|
+|none|
+|adminsAndGuestInviters|
+|adminsGuestInvitersAndAllMembers|
+|everyone|
+|unknownFutureValue|
+
+### dataPolicyOperationStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|complete|
+|failed|
+|unknownFutureValue|
+
+### conditionalAccessDevicePlatform values
+
+| Member       |
+|:--------------|
+|android|
+|iOS|
+|windows|
+|windowsPhone|
+|macOS|
+|all|
+|unknownFutureValue|
+
+### signinFrequencyType values
+
+| Member       |
+|:--------------|
+|days|
+|hours|
+
+### persistentBrowserSessionMode values
+
+| Member       |
+|:--------------|
+|always|
+|never|
+
+### cloudAppSecuritySessionControlType values
+
+| Member       |
+|:--------------|
+|mcasConfigured|
+|monitorOnly|
+|blockDownloads|
+|unknownFutureValue|
+
+### conditionalAccessGrantControl values
+
+| Member       |
+|:--------------|
+|block|
+|mfa|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
+|passwordChange|
+|unknownFutureValue|
+
+### conditionalAccessClientApp values
+
+|Member|
+|:---|
+|all|
+|browser|
+|mobileAppsAndDesktopClients|
+|exchangeActiveSync|
+|easSupported|
+|other|
+|unknownFutureValue|
+
+### conditionalAccessPolicyState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|enabledForReportingButNotEnforced|
+
+#### deviceProfileType values
+|Member|
+|:---|
+|RegisteredDevice|
+|SecureVM|
+|Printer|
+|Shared|
+|IoT|
+
 ### appliedConditionalAccessPolicyResult values 
 
 |Member|
@@ -837,17 +934,20 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskDetail values
 
-| Member
-|:-------------------------
-| adminGeneratedTemporaryPassword
-| userPerformedSecuredPasswordChange
-| userPerformedSecuredPasswordReset
-| adminConfirmedSigninSafe
-| aiConfirmedSigninSafe
-| userPassedMFADrivenByRiskBasedPolicy
-| adminDismissedAllRiskForUser
-| adminConfirmedSigninCompromised
-| unknownFutureValue
+|Member|
+|:---|
+|none|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|adminConfirmedUserCompromised|
+|hidden|
+|unknownFutureValue|
 
 ### riskEventTypes values
 

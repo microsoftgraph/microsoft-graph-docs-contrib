@@ -30,7 +30,7 @@ Represents an approval that is requested in Privileged Identity Management for g
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
-|approvalState|string| Possible values are: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalState|approvalState| Possible values are: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
 |approvalType|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|

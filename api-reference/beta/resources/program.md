@@ -31,9 +31,9 @@ Each tenant that has on-boarded Azure AD access reviews has one program, `Defaul
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| `id`                        |`String`                              |  The feature-assigned identifier of the program.                    |
-| `displayName`               |`String`                              |  The name of the program.  Required on create.                  |
-| `description`               |`String`                              |  The description of the program.           |
+| id                        |String                              |  The feature-assigned identifier of the program.                    |
+| displayName               |String                              |  The name of the program.  Required on create.                  |
+| description               |String                              |  The description of the program.           |
 
 ## Relationships
 | Relationship | Type	|Description|
