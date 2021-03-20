@@ -30,7 +30,6 @@ None.
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |directory|[rbacApplication](rbacapplication.md)| Read-only. Nullable.|
-|deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Read-only. Nullable.|
 
 ## JSON representation
 
