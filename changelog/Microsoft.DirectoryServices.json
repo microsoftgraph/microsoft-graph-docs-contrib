@@ -7,15 +7,15 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "isAssignableToRole",
                 "ChangeType": "Addition",
-                "Description": "Added the **isAssignableToRole** property to the Create group API.",
+                "Description": "Added the **isAssignableToRole** property to the groups resource type.",
                 "Target": "isAssignableToRole"
             }
         ],
         "Id": "3f30920e-41d4-4a40-b4dc-f95070985bfa",
         "Cloud": "prd",
         "Version": "v1.0",
-        "CreatedDateTime": "2020-03-19T00:00:00Z",
-        "WorkloadArea": "Groups",
+        "CreatedDateTime": "2021-03-19T00:00:00Z",
+        "WorkloadArea": "Identity and access",
         "SubArea": ""
       },
       {
