@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.
 
-> **Note:** Only methods supported on V1.0 will be returned.
+> **Note:** Only methods supported on v1.0 will be returned.
 
 ## Permissions
 
