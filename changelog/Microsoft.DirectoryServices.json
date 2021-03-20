@@ -403,6 +403,80 @@
     {
       "ChangeList": [
         {
+            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "authenticationMethod",
+            "ChangeType": "Addition",
+            "Description": "Added the [authentication method](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethods-overview?view=graph-rest-1.0) resource and associated methods to v1.0",
+            "Target": "authenticationMethod"
+        },
+        {
+            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "fido2AuthenticationMethod",
+            "ChangeType": "Addition",
+            "Description": "Added the [FIDO2 authentication method](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
+            "Target": "fido2AuthenticationMethod"
+        },
+        {
+            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "microsoftAuthenticatorAuthenticationMethod",
+            "ChangeType": "Addition",
+            "Description": "Added the [Microsoft Authenticator authentication method](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
+            "Target": "microsoftAuthenticatorAuthenticationMethod"
+        },
+        {
+            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "windowsHelloForBusinessAuthenticationMethod",
+            "ChangeType": "Addition",
+            "Description": "Added the [Windows Hello for Business authentication method](https://docs.microsoft.com/en-us/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
+            "Target": "windowsHelloForBusinessAuthenticationMethod"
+        },
+        {
+            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "authenticationMethodsPolicy",
+            "ChangeType": "Addition",
+            "Description": "Added the [authentication methods policy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-1.0) resource and associated methods to v1.0",
+            "Target": "authenticationMethodsPolicy"
+        },
+        {
+            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "fido2AuthenticationMethodConfiguration",
+            "ChangeType": "Addition",
+            "Description": "Added the [FIDO2 authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
+            "Target": "fido2AuthenticationMethodConfiguration"
+        },
+        {
+            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodConfiguration",
+            "ChangeType": "Addition",
+            "Description": "Added the [Microsoft Authenticator authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
+            "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
+        },
+        {
+            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "emailAuthenticationMethodConfiguration",
+            "ChangeType": "Addition",
+            "Description": "Added the [email authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
+            "Target": "emailAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "a179abf1-70d3-435a-889b-ec860ca0aad1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-19T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+         {
           "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
           "ApiChange": "Resource",
           "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
@@ -687,7 +761,7 @@
           "Target": "usageRightState"
         }
       ],
-      "Id": "0a717548-4f88-11eb-ae35-ed470c456b69",
+      "Id": "2ee40354-5534-426f-80f6-038c8194f9ee",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-01-05T18:58:47.428Z",

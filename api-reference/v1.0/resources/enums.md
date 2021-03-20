@@ -11,6 +11,81 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### externalEmailOtpState values
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### authenticatorAppContextType values
+
+|Member|
+|:---|
+|location|
+|app|
+
+### fido2RestrictionEnforcementType values
+
+|Member|
+|:---|
+|allow|
+|block|
+
+### attestationLevel values
+
+|Member|
+|:---|
+|attested|
+|notAttested|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### authenticationMethodState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### microsoftAuthenticatorAuthenticationMode values
+
+|Member|
+|:---|
+|any|
+|push|
+|deviceBasedPush|
+
+### keyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### authenticationMethodKeyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### authenticatorAppFeatureSettings values
+
+|Member|
+|:---|
+|requireNumberMatching|
+|unknownFutureValue|
+
 ### allowInvitesFrom values
 
 |Member|
@@ -145,7 +220,6 @@ Namespace: microsoft.graph
 |timeout|
 |unknownFutureValue|
 
-
 ### tone values
 
 |Member|
@@ -259,7 +333,6 @@ Namespace: microsoft.graph
 |external|
 |externalPartner|
 |externalNonPartner|
-
 
 ### activityType values
 
