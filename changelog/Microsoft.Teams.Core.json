@@ -1,6 +1,33 @@
 {
+
   "changelog": [
     {
+      "ChangeList": [
+           {
+             "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
+             "ApiChange": "Property",
+             "ChangedApiName": "chatId",
+             "ChangeType": "Addition",
+             "Description": "Added the **chatId** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
+             "Target": "chatMessage"
+           },
+           {
+              "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
+             "ApiChange": "Resource",
+             "ChangedApiName": "channelIdentity",
+             "ChangeType": "Addition",
+             "Description": "Added the [channelIdentity](https://docs.microsoft.com/en-us/graph/api/resources/channelIdentity?view=graph-rest-beta) resource type.",
+             "Target": "channelIdentity"
+           }
+      ],
+        "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-03-19T00:00:00",
+        "WorkloadArea": "Teamwork",
+        "SubArea": ""
+    },
+    {      
       "ChangeList": [
         {
           "Id": "df2ac698-353d-11eb-9836-6aeb5ee7dda6",
@@ -202,7 +229,7 @@
       "CreatedDateTime": "2020-12-17T21:46:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
-    },
+    }, 
     {
       "ChangeList": [
         {
@@ -2592,5 +2619,6 @@
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
+
   ]
 }
