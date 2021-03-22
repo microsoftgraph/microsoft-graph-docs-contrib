@@ -26,8 +26,10 @@ Uitlize the features available for partner apps in appropriate manner.
 * Understand that selecting a toast notification leads to the activity feed. To switch to an activity, select a notification in the activity feed.
   > [!NOTE] 
   > The notification selection will not switch to the app.
-* Ensure that you localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
-* Ensure that you provide appropriate titles and descriptions for your **Activity Types**, since the setting titles are read from the app manifest. For example:<br/>![Screenshot of correct Activity Types](../concepts/images/notifications-api-best-practice2.png)<br/>![Screenshot of incorrect Activity Types](../concepts/images/notifications-api-best-practice3.png)
+* Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
+* Provide appropriate titles and descriptions for your **Activity Types**, because the setting titles are read from the app manifest. For example:
+  ![Screenshot of correct Activity Types](../concepts/images/notifications-api-best-practice2.png)
+  ![Screenshot of incorrect Activity Types](../concepts/images/notifications-api-best-practice3.png)
 * Ensure that the notifications are not promotional in nature. They must convey something important that the user must be aware about. For example:<br/>*Try the new feature in the Cycling app!* ❌<br/>*Lynne mentioned you in a message.* ✔
 * Understand that the setting appears for the user  only when the selected app sends a notification.
 * Understand that the app icon for each notification cannot be customized, and is the one that is included in the app manifest.
@@ -38,23 +40,29 @@ Uitlize the features available for partner apps in appropriate manner.
   > [!NOTE]
   > The 30 days storage limit applies to all notifications and is not specific to notifications sent through the activity feed notifications API.
 
-## Minimize noise and build high quality notification experiences
-* Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications. For example:</br> *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.<br/>*Diego assigned a sales ticket to you.* ✔
+## Simplify the notification experience
+Apply best practices that will help you send only the important information through your notifications.
+* Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications. For example: **Don't:** *Joni left the sales team.* ❌ - This notification may be noisy unless this is materially important.
+ **Do:** *Diego assigned a sales ticket to you.* ✔
 * Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [understand activity feed notifications and bot framework notifications](#understand-activity-feed-notifications-and-bot-framework-notifications).
 * Utilize the third line for the preview to give users information that allows them to gauge the importance and take action. Select a toast or mark for follow-up.
 
   ![Notification text preview](../concepts/images/notification-preview.png)
-* Ensure there is no *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
+* Do not add a *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
 
-## Understand activity feed notifications and bot framework notifications
+## Understand the difference between activity feed notifications and bot framework notifications
 The following list provides the key differences in activity feed notifications and bot notifications:
 
-* **Bot messages**: 
+|**Bot messages**|**Activity feed notification API notifications**|
+|------------------------------------------------------------|------------------------------------------------|
+|* These messages are delivered as chat or channel messages. |* These notifications land in the activity feed and can deep link to various locations. |
+|   * They trigger ||
+* : 
     * Bot messages are delivered as chat or channel messages. 
         * Bot messages trigger notifications as chat or channel notifications if the user's notifications for chat or channel is turned on.
         * You must *@mention* the name of the user for the notification to appear in the activity feed. 
         * Bot messages are useful if the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members.
-* **Activity feed notification API notifications**:
+* :
     * The activity feed notification API notifications land in the activity feed and can deep link to various locations.
         * Notifications land in the activity feed, which allows the user to take action or triage the notification.
         * Notifications lead the user to a tab in a chat or channel, a personal app, or a chat or channel message.
