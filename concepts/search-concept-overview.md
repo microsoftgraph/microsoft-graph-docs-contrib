@@ -63,4 +63,4 @@ Looking for the API reference for this service?
 
 ## See also
 
-- Engage with the community on [Microsoft Q&A](https://aka.ms/askgraph)  or on GitHub
+- Engage with the community on [Microsoft Q&A](/answers/search.html?q=microsoft-graph-*&type=question)  or on GitHub
