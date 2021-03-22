@@ -3,7 +3,7 @@ title: "Delete subscription"
 description: "Delete a subscription."
 localization_priority: Normal 
 author: "Jumaodhiss"
-doc_type: resourcePageType
+doc_type: apiPageType
 
 ms.prod: "change-notifications"
 ---

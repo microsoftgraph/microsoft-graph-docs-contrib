@@ -4,7 +4,7 @@ description: " see the scenarios below for details."
 localization_priority: Normal
 author: "Jumaodhiss"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "change-notifications"
 ---
 
 # List subscriptions
