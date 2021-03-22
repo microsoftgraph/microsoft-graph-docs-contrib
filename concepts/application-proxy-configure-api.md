@@ -431,11 +431,11 @@ No Content - 204
 
 - [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy)
 - [application](/graph/api/resources/application?view=graph-rest-1.0)
+- [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
 - [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
 - [connector](/graph/api/resources/connector?view=graph-rest-beta)
 - [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
 - [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
-- [applicationTemplate: instantiate](graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
 - [on-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
 - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 - [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
