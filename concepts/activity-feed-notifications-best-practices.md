@@ -1,36 +1,32 @@
 ---
-title: "Best practices for Activity Feed Notification in Microsoft Graph"
-description: "List best practices and examples for Activity Feed Notification in Microsoft Graph"
-ms.author: "lajanuar"
+title: "Best practices for using Microsoft Teams activity feed notifications"
+description: "This article provides best practices and examples for working with activity feed notifications in Microsoft Graph."
+author: "KirtiPereira"
 localization_priority: Normal
-ms.prod: "notifications"
+ms.prod: "teamwork"
 ---
 
-# Best practices for activity feed notifications
-This document consolidates the best practices that you are expected to adhere to, as you build experiences using the activity feed notifications across visual elements and notification behavior.
+# Best practices for using Microsoft Teams activity feed notifications
+This article covers best practices to help you build experiences using Microsoft Teams activity feed notifications in Microsoft Graph.
 
-At a high-level the best practices are as follows:
-* [Ensure that partner scenarios respect the activity feed guidelines](#activity-feed-notifications-partner-scenarios).
-* [Ensure that expectations in terms of performance are met](#minimize-noise-and-build-high-quality-notification-experiences).
-* [Understand the differences in the activity feed notifications and other bot *notifications*, and use them in appropriate scenarios](#understand-activity-feed-notifications-and-bot-framework-notifications).
+## Best practices for partner apps
+Activity feed notifications enable partner apps to send notifications to users. These notifications are sent as toast items and activity feed items that point users to relevant content that can be consumed within Teams. Apply the following best practices in your partner app:
 
-## Activity feed notifications partner scenarios
-The **Activity Feed Notification** is a platform that enables partner apps to send notifications to users. These notifications are sent as toast items and activity feed items that point users to relevant content that can be consumed within Teams. 
-Following is the list of best practices:
 * Understand the direct relationship between a notification toast or feed, and the content it is deep linked to.
     * The notification must not confuse the user about what they need to address or triage. For example, if an *@mention* notification is received, the panel on the right in the activity feed app must display or reference the corresponding *@mention*.
-    * If the notification pertains to removal or deletion of scenarios, direct users to the content indicating the action, so that they understand the outcome before taking action. For example, remove a user from a group or delete a list.
+    * If the notification pertains to removal or deletion, direct users to the content indicating the action, so that they understand the outcome before taking action. For example, remove a user from a group or delete a list.
 * Ensure that the right pane experience in the feed is self-contained and does not break the feed experience. For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.
 * Ensure that apps are not sending more than 10 notifications per minute, per user.
   > [!NOTE]
   > Notifications are throttled if the per user notification count exceeds the limit.
 * Ensure that the apps are performing. The time taken for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.
 
-### Utilize features in partner scenarios
+### Best practices for utilizing features
+Uitlize the features available for partner apps in appropriate manner.
 * Understand that selecting a toast notification leads to the activity feed. To switch to an activity, select a notification in the activity feed.
   > [!NOTE] 
   > The notification selection will not switch to the app.
-* Ensure that you localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).<br/> ![Screenshot of App level settings](../concepts/images/notifications-api-best-practice1.png)
+* Ensure that you localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
 * Ensure that you provide appropriate titles and descriptions for your **Activity Types**, since the setting titles are read from the app manifest. For example:<br/>![Screenshot of correct Activity Types](../concepts/images/notifications-api-best-practice2.png)<br/>![Screenshot of incorrect Activity Types](../concepts/images/notifications-api-best-practice3.png)
 * Ensure that the notifications are not promotional in nature. They must convey something important that the user must be aware about. For example:<br/>*Try the new feature in the Cycling app!* ❌<br/>*Lynne mentioned you in a message.* ✔
 * Understand that the setting appears for the user  only when the selected app sends a notification.
