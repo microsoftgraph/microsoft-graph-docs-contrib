@@ -30,14 +30,11 @@ In this article, you'll learn how to configure Azure Active Directory (Azure AD)
         ![Accept permissions](./images/application-proxy-configure-api/accept-permissions.png)
 
 > [!NOTE]
-> The response objects shown might also be shortened for readability. 
+> The response objects shown might be shortened for readability. 
 
 ## Step 1: Create a custom application
 
-To configure Application Proxy for an app using the API, you first create a custom application, and then update the application's **onPremisesPublishing** property to configure the App Proxy settings. To create a custom application use the [applicationTemplate: instantiate](graph/api/applicationtemplate-instantiate?view=graph-rest-1.0) to create an instance of a custom application and service principal in your tenant for management. The template ID for a custom application is: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
-
-> [!NOTE]
-> The follow call uses the V1.0 Microsoft Graph endpoint, all other API calls use the beta endpoint.
+To configure Application Proxy for an app using the API, you first create a custom application, and then update the application's **onPremisesPublishing** property to configure the App Proxy settings. In this tutorial, you use an application template to create an instance of a custom application and service principal in your tenant for management. The template ID for a custom application is `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 Record the **id**, **appId**, **servicePrincipalId** of the application to use later in the tutorial.
 
@@ -90,10 +87,11 @@ Content-type: application/json
 ```
 
 ## Step 2: Configure Application Proxy
-Use the **id** that you recorded for the application to start the configuration of Application Proxy by updating the following properties:
 
-- **onPremisesPublishing** - In this example, you're using an app with the internal URL: `https://contosoiwaapp.com` and the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
-- **redirectUri**, **identifierUri**, and **homepageUrl** - Set to the same external UR configured in the **onPremisesPublishing** property. Then - 
+Use the **id** that you recorded for the application to start the configuration of Application Proxy. Update the following properties:
+
+- **onPremisesPublishing** - In this example, you're using an app with the internal URL: `https://contosoiwaapp.com`. You also use the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
+- **redirectUri**, **identifierUri**, and **homepageUrl** - Set to the same external URL configured in the **onPremisesPublishing** property.
 - **implicitGrantSettings** - Set to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
 
 #### Request
@@ -378,6 +376,7 @@ Content-type: application/json
 }
 ```
 ## Step 6: Test access to the application
+
 Test the application by visiting the **External URL** configured for the app on your browser and then sign in with your test user. You should be able to log into the app and access the application.
 
 ## Step 7: Clean up resources
