@@ -56,9 +56,6 @@ For general information, see [OData query parameters](/graph/query_parameters).
 |changeid|eq, contains|
 |cycleid|eq, contains|
 |action|eq, contains|
-|provisioningAction|eq, contains|
-|durationInMilliseconds|eq, gt, lt|
-|provisioningStatusInfo/status|eq, contains|
 |statusInfo/status|eq, contains|
 |sourceSystem/displayName|eq, contains|
 |targetSystem/displayName|eq, contains|
@@ -150,15 +147,10 @@ Content-type: application/json
             "jobId": "aws.74beb1753b704b63b8d56f0b76082b16.10a7a801-7101-4c69-ae00-ce9f75f8460a",
             "cycleId": "b6502552-018d-79bd-8869-j47194dc65c1",
             "changeId": "b6502552-018d-89bd-9969-b49194dc65c1",
-            "action": "Create",
-            "provisioningAction": "create",
+            "action": "EntryExportUpdate",
             "durationInMilliseconds": 3236,
             "statusInfo": {
                 "status": "success"
-            },
-            "provisioningStatusInfo": {
-                "status": "success",
-                "errorInformation" : null
             },
             "provisioningSteps": [
                 {
@@ -224,7 +216,7 @@ Content-type: application/json
                 }
             },
             "initiatedBy": {
-                "initiatingType": "system",
+                "initiatingType": "System",
                 "id": "",
                 "displayName": "Azure AD Provisioning Service"
             },
@@ -349,18 +341,8 @@ Content-type: application/json
                 "errorCode": "ContosoEntryConflict",
                 "reason": "Message: Contoso returned an error response with the HTTP status code 409.  This response indicates that a user or a group already exisits with the same name. This can be avoided by identifying and removing the conflicting user from Contoso via the Contoso administrative user interface, or removing the current user from the scope of provisioning either by removing their assignment to the Contoso application in Azure Active Directory or adding a scoping filter to exclude the user.",
                 "additionalDetails": null,
-                "errorCategory": "nonServiceFailure",
+                "errorCategory": "NonServiceFailure",
                 "recommendedAction": null
-            },
-            "provisioningStatusInfo": {                
-                "status": "failure",
-                "errorInformation" : {
-                    "errorCode": "ContosoEntryConflict",
-                    "reason": "Message: Contoso returned an error response with the HTTP status code 409.  This response indicates that a user or a group already exisits with the same name. This can be avoided by identifying and removing the conflicting user from Contoso via the Contoso administrative user interface, or removing the current user from the scope of provisioning either by removing their assignment to the Contoso application in Azure Active Directory or adding a scoping filter to exclude the user.",
-                    "additionalDetails": null,
-                    "errorCategory": "nonServiceFailure",
-                    "recommendedAction": null
-                }
             },
             "provisioningSteps": [
                 {
