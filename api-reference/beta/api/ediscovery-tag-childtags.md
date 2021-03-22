@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_tag"
+  "name": "list_tag_2"
 }
 -->
 
@@ -70,19 +70,19 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags/e54b3f535b434a9a8743b84e34c00504/childTags
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-tag-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tag-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-tag-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tag-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-tag-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tag-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-tag-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-tag-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

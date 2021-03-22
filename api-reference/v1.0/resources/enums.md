@@ -17,6 +17,178 @@ Namespace: microsoft.graph
 |:---|
 |reviewer|
 |unknownFutureValue|
+### externalEmailOtpState values
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### authenticatorAppContextType values
+
+|Member|
+|:---|
+|location|
+|app|
+
+### fido2RestrictionEnforcementType values
+
+|Member|
+|:---|
+|allow|
+|block|
+
+### attestationLevel values
+
+|Member|
+|:---|
+|attested|
+|notAttested|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### authenticationMethodState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### microsoftAuthenticatorAuthenticationMode values
+
+|Member|
+|:---|
+|any|
+|push|
+|deviceBasedPush|
+
+### keyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### authenticationMethodKeyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### authenticatorAppFeatureSettings values
+
+|Member|
+|:---|
+|requireNumberMatching|
+|unknownFutureValue|
+
+### allowInvitesFrom values
+
+|Member|
+|:---|
+|none|
+|adminsAndGuestInviters|
+|adminsGuestInvitersAndAllMembers|
+|everyone|
+|unknownFutureValue|
+
+### dataPolicyOperationStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|complete|
+|failed|
+|unknownFutureValue|
+
+### conditionalAccessDevicePlatform values
+
+| Member       |
+|:--------------|
+|android|
+|iOS|
+|windows|
+|windowsPhone|
+|macOS|
+|all|
+|unknownFutureValue|
+
+### signinFrequencyType values
+
+| Member       |
+|:--------------|
+|days|
+|hours|
+
+### persistentBrowserSessionMode values
+
+| Member       |
+|:--------------|
+|always|
+|never|
+
+### cloudAppSecuritySessionControlType values
+
+| Member       |
+|:--------------|
+|mcasConfigured|
+|monitorOnly|
+|blockDownloads|
+|unknownFutureValue|
+
+### conditionalAccessGrantControl values
+
+| Member       |
+|:--------------|
+|block|
+|mfa|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
+|passwordChange|
+|unknownFutureValue|
+
+### conditionalAccessClientApp values
+
+|Member|
+|:---|
+|all|
+|browser|
+|mobileAppsAndDesktopClients|
+|exchangeActiveSync|
+|easSupported|
+|other|
+|unknownFutureValue|
+
+### conditionalAccessPolicyState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|enabledForReportingButNotEnforced|
+
+#### deviceProfileType values
+|Member|
+|:---|
+|RegisteredDevice|
+|SecureVM|
+|Printer|
+|Shared|
+|IoT|
+
 ### appliedConditionalAccessPolicyResult values 
 
 |Member|
@@ -27,10 +199,6 @@ Namespace: microsoft.graph
 |notEnabled|
 |unknown|
 |unknownFutureValue|
-|reportOnlySuccess|
-|reportOnlyFailure|
-|reportOnlyNotApplied|
-|reportOnlyInterrupted|
 
 ### groupType values 
 
@@ -57,7 +225,6 @@ Namespace: microsoft.graph
 |failure|
 |timeout|
 |unknownFutureValue|
-
 
 ### tone values
 
@@ -172,7 +339,6 @@ Namespace: microsoft.graph
 |external|
 |externalPartner|
 |externalNonPartner|
-
 
 ### activityType values
 
@@ -847,17 +1013,20 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskDetail values
 
-| Member
-|:-------------------------
-| adminGeneratedTemporaryPassword
-| userPerformedSecuredPasswordChange
-| userPerformedSecuredPasswordReset
-| adminConfirmedSigninSafe
-| aiConfirmedSigninSafe
-| userPassedMFADrivenByRiskBasedPolicy
-| adminDismissedAllRiskForUser
-| adminConfirmedSigninCompromised
-| unknownFutureValue
+|Member|
+|:---|
+|none|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|adminConfirmedUserCompromised|
+|hidden|
+|unknownFutureValue|
 
 ### riskEventTypes values
 

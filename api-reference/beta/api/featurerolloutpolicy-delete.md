@@ -2,14 +2,16 @@
 title: "Delete featureRolloutPolicy"
 description: "Delete a featureRolloutPolicy object."
 localization_priority: Normal
-author: "keylimesoda"
-ms.prod: "directory-management"
+author: "madhavpatel6"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
 # Delete featureRolloutPolicy
 
 Namespace: microsoft.graph
+
+[!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,14 +32,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directory/featureRolloutPolicies/{id}
+DELETE /policies/featureRolloutPolicies/{id}
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required |
 
 ## Request body
 
@@ -54,11 +56,11 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_featurerolloutpolicy"
+  "name": "delete_featurerolloutpolicy_policies"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
+DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
 
 ### Response
