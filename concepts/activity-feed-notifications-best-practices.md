@@ -29,9 +29,9 @@ This section covers feature behavior that you must be aware of when working with
 * Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
 * Provide appropriate titles and descriptions for your **Activity Types**, because the setting titles are read from the app manifest. The following table provides examples of appropriate and inappropriate titles and descriptions:
 
- | **Appropriate** | **Inappropriate** |
- |-----------------|-------------------|
- |Use short titles, such as **@mention** and **Announcements**. | Do not use long titles, such as **User at-mentioned activity** and **Post creation activity**. |
+   | **Appropriate** | **Inappropriate** |
+   |-----------------|-------------------|
+   |Use short titles, such as **@mention** and **Announcements**. | Do not use long titles, such as **User at-mentioned activity** and **Post creation activity**. |
  
 * Ensure that the notifications are not promotional in nature. They must convey something important that the user must be aware about. The following table provides examples of important and promotional messages:
 
@@ -42,7 +42,8 @@ This section covers feature behavior that you must be aware of when working with
 * Inform the user that the notifications are stored in the activity feed for 30 days. 
   > [!NOTE]
   > The 30 days storage limit applies to all notifications and is not specific to notifications sent through the activity feed notifications API.
-When learning about the feature behavior you must be aware of the following:
+
+When using the feature behavior you must be aware of the following:
   * The setting appears for the user only when the selected app sends a notification.
   * The app icon for each notification cannot be customized, and is the one that is included in the app manifest.
   * Currently, notifications can only be sent at a user level and not at a group or a team level.
@@ -68,7 +69,7 @@ Based on the need the user can either use bot framework messages or activity fee
 
 |**Bot messages**|**Activity feed notifications**|
 |------------------------------------------------------------|------------------------------------------------|
-| Bot messages are delivered as chat or channel messages. If the user's notifications for chat or channel is turned on, they trigger notifications as chat or channel notifications.</br> * *@mention* the name of the user for the notification to appear in the activity feed. </br> * It is useful if the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members.| The activity feed notifications land in the activity feed and can deep link to various locations. </br> * They allow the user to take action or triage the notificaiton. </br> * They lead the user to a tab in a chat or channel, a personal app, or a chat or channel message. </br> * They are currently directed at a user level and are not posted broadly in a channel for all channel members to see. However, if the notification is deep linked to a channel message, then it is posted broadly in a channel. |
+| Bot messages are delivered as chat or channel messages. If the user's notifications for chat or channel is turned on, they trigger notifications as chat or channel notifications. </br> * *@mention* the name of the user for the notification to appear in the activity feed. </br> * It is useful if the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members.| The activity feed notifications land in the activity feed and can deep link to various locations. These notifications:</br> * allow the user to take action or triage the notification. </br> * lead the user to a tab in a chat or channel, a personal app, or a chat or channel message. </br> * are currently directed at a user level and are not posted broadly in a channel for all channel members to see. However, if the notification is deep linked to a channel message, then it is posted broadly in a channel. |
 |  |The activity feed notification API allows users to configure notifications for each **Notification type** from the app. The capability to configure a notification allows the user to turn on or turn off specific notifications. |
 | |Users can receive double notifications from the app. The app can send bot notifications to chats or channels and also activity feed notifications API notifications. *Send double notifications only if the scenario requires you to send them.* |
 | | The activity feed notification API can send delegated or application-only calls. In delegated calls, the sender of the notification appears as the user who initiated the notification, for example, *John Doe*, and in application-only the sender appears as the app, for example, *Contoso*. |
