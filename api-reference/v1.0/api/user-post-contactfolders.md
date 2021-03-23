@@ -54,11 +54,10 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/contactFolders
 Content-type: application/json
-Content-length: 84
 
 {
-  "parentFolderId": "parentFolderId-value",
-  "displayName": "displayName-value"
+  "parentFolderId": "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA==",
+  "displayName": "Important contacts"
 }
 ```
 # [C#](#tab/csharp)
@@ -90,12 +89,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 104
 
 {
-  "parentFolderId": "parentFolderId-value",
-  "displayName": "displayName-value",
-  "id": "id-value"
+  "parentFolderId": "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA==",
+  "displayName": "Important contacts",
+  "id": "AAMkADIxYjJiYmIzLTFmNjYtNGNhMy04MDU0LTBkOTFkY2Y5NzE1NAAuAAAAAADESc12GiymT5Zp9IHtHnWZAQA2t6otiDF0TYOkcEEh3vhfAAAGgUC1AAA="
 }
 ```
 
