@@ -61,7 +61,7 @@ For more information about working with groups and members in teams, see [Use th
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
-|createdDateTime|dateTimeOffset|Read only. Timestamp at which the team was created.|
+|createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
 
 ### Instance attributes
 
