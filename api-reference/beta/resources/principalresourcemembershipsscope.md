@@ -27,9 +27,9 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 ## Relationships
 None.
 
-## Supported queries of type principalResourceMembershipsScope
+### Supported queries of type principalResourceMembershipsScope
 
-The following section describe the supported principalResourceMembershipScopes based on the resources being selected.
+The following sections describe the supported principalResourceMembershipScopes based on the resources being selected.
 
 ### ServicePrincipal resource scope 
 
