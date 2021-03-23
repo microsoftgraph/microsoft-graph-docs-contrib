@@ -47,7 +47,6 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 
 
-
 ## Response
 
 If successful, this method returns a `204 No Content` response code and a [group](../resources/group.md) object in the response body.
@@ -62,7 +61,7 @@ Content-Type: application/json
 Content-length: 61
 
 {
-  "@odata.type": "#Microsoft.AAD.MobilityService.group"
+   "@odata.id": "https://graph.microsoft.com/beta/groups/{id}"
 }
 ```
 
@@ -72,10 +71,4 @@ Content-length: 61
 
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.group"
-}
 ```
-

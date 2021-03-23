@@ -31,7 +31,7 @@ GET /policies/mobileDeviceManagementPolicies
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response.For example - 
+This method supports some of the OData query parameters to help customize the response.For example -
 
 - To select specific attributes add `$select=id,displayname`
 - To retrieve included groups for each policy, add `$expand=includedGroups`

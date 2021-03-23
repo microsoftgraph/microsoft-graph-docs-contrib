@@ -92,17 +92,5 @@ Content-length: 237
 **Note:** The response object shown here might be shortened for readability.
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
-  "id": "String (identifier)",
-  "appliesTo": "String",
-  "complianceUrl": "String",
-  "description": "String",
-  "discoveryUrl": "String",
-  "displayName": "String",
-  "termsOfUseUrl": "String"
-}
+HTTP/1.1 204 No Content
 ```

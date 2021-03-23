@@ -19,18 +19,18 @@ In Azure AD, a mobility management policy represents an auto-enrollment configur
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List mobileDeviceManagementPolicies](../api/mobiledevicemanagementpolicies-list.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) collection|Get a list of the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) objects and their properties.|
-|[Get mobileDeviceManagementPolicies](../api/mobiledevicemanagementpolicies-get.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md)|Read the properties and relationships of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.|
-|[Update mobileDeviceManagementPolicies](../api/mobiledevicemanagementpolicies-update.md)|None|Update the properties of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.|
-|[List includedGroups](../api/mobiledevicemanagementpolicies-list-includedgroups.md)|[group](../resources/group.md) collection|Get the group resources from the includedGroups navigation property for mobileDeviceManagementPolicies.|
-|[Add group](../api/mobiledevicemanagementpolicies-post-includedgroups.md)|None|Add includedGroups collection for mobileDeviceManagementPolicies.
-|[Delete group](../api/mobiledevicemanagementpolicies-delete-includedgroups.md)|None|Delete includedGroups collection for mobileDeviceManagementPolicies.|
-|[List mobileAppManagementPolicies](../api/mobileappmanagementpolicies-list.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) collection|Get a list of the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) objects and their properties.|
-|[Get mobileAppManagementPolicies](../api/mobileappmanagementpolicies-get.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md)|Read the properties and relationships of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.|
-|[Update mobileAppManagementPolicies](../api/mobileappmanagementpolicies-update.md)|None|Update the properties of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.|
-|[List includedGroups](../api/mobileappmanagementpolicies-list-includedgroups.md)|[group](../resources/group.md) collection|Get the group resources from the includedGroups navigation property for mobileAppManagementPolicies.|
-|[Add group](../api/mobileappmanagementpolicies-post-includedgroups.md)|None|Add includedGroups collection for mobileAppManagementPolicies.
-|[Delete group](../api/mobileappmanagementpolicies-delete-includedgroups.md)|None|Delete includedGroups collection for mobileAppManagementPolicies.|
+|[List mobileDeviceManagementPolicies](../api/mobiledevicemanagementpolicies-list.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) collection|Get a list of the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) objects and their properties for mobile device management applications.|
+|[Get mobileDeviceManagementPolicy](../api/mobiledevicemanagementpolicies-get.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md)|Read the properties and relationships of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management  application.|
+|[Update mobileDeviceManagementPolicy](../api/mobiledevicemanagementpolicies-update.md)|None|Update the properties of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
+|[List includedGroups of mobileDeviceManagementPolicy](../api/mobiledevicemanagementpolicies-list-includedgroups.md)|[group](../resources/group.md) collection|List included groups for a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
+|[Add group to mobileDeviceManagementPolicy](../api/mobiledevicemanagementpolicies-post-includedgroups.md)|None|Add a group to the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
+|[Delete group from mobileDeviceManagementPolicy](../api/mobiledevicemanagementpolicies-delete-includedgroups.md)|None|Delete a group from the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
+|[List mobileAppManagementPolicies](../api/mobileappmanagementpolicies-list.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) collection|Get a list of the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) objects and their properties for mobile app management applications.|
+|[Get mobileAppManagementPolicy](../api/mobileappmanagementpolicies-get.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md)|Read the properties and relationships of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application..|
+|[Update mobileAppManagementPolicy](../api/mobileappmanagementpolicies-update.md)|None|Update the properties of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.|
+|[List includedGroups of mobileAppManagementPolicy](../api/mobileappmanagementpolicies-list-includedgroups.md)|[group](../resources/group.md) collection|Get the group resources from the includedGroups navigation property for mobileAppManagementPolicies.|
+|[Add group to mobileAppManagementPolicy](../api/mobileappmanagementpolicies-post-includedgroups.md)|None|Add includedGroups collection for mobileAppManagementPolicies.
+|[Delete group from mobileAppManagementPolicy](../api/mobileappmanagementpolicies-delete-includedgroups.md)|None|Delete a group from a for a mobile device management application.|
 
 ## Properties
 

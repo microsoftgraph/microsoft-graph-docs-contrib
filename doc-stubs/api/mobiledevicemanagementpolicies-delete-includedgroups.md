@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /policies/mobileDeviceManagementPolicies/{id}/includedGroups/$ref
+DELETE /policies/mobileDeviceManagementPolicies/{id}/includedGroups/{id}/$ref
 ```
 
 ## Request headers
@@ -39,16 +39,10 @@ POST /policies/mobileDeviceManagementPolicies/{id}/includedGroups/$ref
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply a JSON representation of the [group](../resources/group.md) object.
-
-The following table shows the properties that are required when you create the [group](../resources/group.md).
-
-|Property|Type|Description|
-|:---|:---|:---|
+Do not supply a request body for this method.
 
 ## Response
 
@@ -59,25 +53,13 @@ If successful, this method returns a `204 No Content` response code and a [group
 ### Request
 
 ``` http
-POST https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/{id}/includedGroups/$ref
-Content-Type: application/json
-Content-length: 61
-
-{
-  "@odata.type": "#microsoft.graph.group"
-}
+DELETE https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/{id}/includedGroups/{id}/$ref
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.group"
-}
 ```
-
