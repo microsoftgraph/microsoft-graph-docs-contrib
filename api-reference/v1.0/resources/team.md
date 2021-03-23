@@ -107,7 +107,7 @@ The following is a JSON representation of the resource.
   "isArchived": false,
   "webUrl": "string (URL)",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
-  "createdDateTime": "string (timestamp)"
+  "createdDateTime": "dateTimeOffset"
 }
 ```
 
