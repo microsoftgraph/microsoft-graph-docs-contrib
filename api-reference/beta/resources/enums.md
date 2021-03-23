@@ -11,6 +11,50 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### approvalState values
+
+|Member|
+|:---|
+|pending|
+|approved|
+|denied|
+|aborted|
+|canceled|
+
+### roleSummaryStatus values
+
+|Member|
+|:---|
+|ok|
+|bad|
+
+### dataPolicyOperationStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|complete|
+|failed|
+|unknownFutureValue|
+
+### conditionalAccessClientApp values
+
+|Member|
+|:---|
+|all|
+|browser|
+|mobileAppsAndDesktopClients|
+|exchangeActiveSync|
+|easSupported|
+|other|
+
+### consentRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
 
 ### attributeType values
 
@@ -218,7 +262,6 @@ Namespace: microsoft.graph
 |externalPartner|
 |externalNonPartner|
 
-
 ### appliedConditionalAccessPolicyResult values 
 
 |Member|
@@ -234,6 +277,18 @@ Namespace: microsoft.graph
 |reportOnlyNotApplied|
 |reportOnlyInterrupted|
 
+
+### microsoftAuthenticatorAuthenticationMode values
+
+ 
+
+|Member|
+|:---|
+|any|
+|push|
+|deviceBasedPush|
+
+
 ### authenticationMethodFeature values 
 
 |Member|
@@ -243,6 +298,15 @@ Namespace: microsoft.graph
 |ssprCapable|
 |passwordlessCapable|
 |mfaCapable|
+
+### authenticatorAppFeatureSettings values 
+
+
+
+|Member|
+|:---|
+|requireNumberMatching|
+|unknownFutureValue|
 
 ### authMethodsType values 
 
@@ -380,7 +444,6 @@ Namespace: microsoft.graph
 |warning|
 |unknownFutureValue|
 
-
 ### provisioningStepType values 
 
 |Member|
@@ -425,6 +488,7 @@ Namespace: microsoft.graph
 |MFA|
 |CA|
 |unknownFutureValue|
+
 
 ### riskDetail values 
 
@@ -558,12 +622,12 @@ Namespace: microsoft.graph
 
 ### volumeType values
 
-| Member
-|:--------------
-| operatingSystemVolume
-| fixedDataVolume
-| removableDataVolume
-| unknownFutureValue
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
 
 ### allowedAudiences values
 
@@ -584,6 +648,7 @@ Namespace: microsoft.graph
 |:---|
 |attested|
 |notAttested|
+|unknownFutureValue|
 
 ### emailType values
 
@@ -594,6 +659,28 @@ Namespace: microsoft.graph
 |personal|
 |main|
 |other|
+
+### authenticationMethodSignInState values
+
+|Member|
+|:---|
+|notSupported|
+|notAllowedByPolicy|
+|notEnabled|
+|phoneNumberNotUnique|
+|ready|
+|notConfigured|
+|unknownFutureValue|
+
+### authenticationPhoneType values
+
+|Member|
+|:---|
+|mobile|
+|alternateMobile|
+|office|
+|unknownFutureValue|
+
 
 ### authenticationMethodTargetType values
 
@@ -615,6 +702,7 @@ Namespace: microsoft.graph
 |:---|
 |allow|
 |block|
+|unknownFutureValue|
 
 ### authenticatorAppContextType values
 
@@ -1600,6 +1688,8 @@ Possible values for user account types (group membership), per Windows definitio
 | passthroughAuthentication | Passthrough Authentication    |
 | seamlessSso               | Seamless Single Sign-on       |
 | passwordHashSync          | Password Hash Synchronization |
+| emailAsAlternateId        | Email as an alternate id      |
+| unknownFutureValue        | A sentinel member             |
 
 ### tokenIssuerType values
 
@@ -1732,24 +1822,15 @@ Possible values for user account types (group membership), per Windows definitio
 | horizontal | 0     | Use a horizontal watermark. |
 | diagonal   | 1     | Use a diagonal watermark.   |
 
-### conditionalAccessPolicyState
+### conditionalAccessPolicyState values
 
 |Member|
 |:---|
 |enabled|
 |disabled|
+|enabledForReportingButNotEnforced|
 
-### conditionalAccessClientApp
-
-| Member       |
-|:--------------|
-|browser|
-|modern|
-|easSupported|
-|easUnsupported|
-|other|
-
-### conditionalAccessGrantControl
+### conditionalAccessGrantControl values
 
 | Member       |
 |:--------------|
@@ -1759,8 +1840,24 @@ Possible values for user account types (group membership), per Windows definitio
 |domainJoinedDevice|
 |approvedApplication|
 |compliantApplication|
+|passwordChange|
+|unknownFutureValue|
 
-### cloudAppSecuritySessionControlType
+### signinFrequencyType values
+
+| Member       |
+|:--------------|
+|days|
+|hours|
+
+### persistentBrowserSessionMode values
+
+| Member       |
+|:--------------|
+|always|
+|never|
+
+### cloudAppSecuritySessionControlType values
 
 | Member       |
 |:--------------|
@@ -1768,21 +1865,7 @@ Possible values for user account types (group membership), per Windows definitio
 |monitorOnly|
 |blockDownloads|
 
-### signinFrequencyType
-
-| Member       |
-|:--------------|
-|days|
-|hours|
-
-### persistentBrowserSessionMode
-
-| Member       |
-|:--------------|
-|always|
-|never|
-
-### conditionalAccessDevicePlatform
+### conditionalAccessDevicePlatform values
 
 | Member       |
 |:--------------|
@@ -1792,6 +1875,7 @@ Possible values for user account types (group membership), per Windows definitio
 |windowsPhone|
 |macOS|
 |all|
+|unknownFutureValue|
 
 ### priority values
 
@@ -1876,21 +1960,6 @@ Possible values for user account types (group membership), per Windows definitio
 | threatCategory               | 1     | Aggregate threat assessment request by `threatCategory`.               |
 | mailDestinationRoutingReason | 2     | Aggregate threat assessment request by `mailDestinationRoutingReason`. |
 
-### riskEventTypes values
-
-| Member
-|:-------------------------
-| unlikelyTravel
-| anonymizedIPAddress
-| maliciousIPAddress
-| unfamiliarFeatures
-| malwareInfectedIPAddress
-| suspiciousIPAddress
-| leakedCredentials
-| investigationsThreatIntelligence
-| generic
-| unknownFutureValue
-
 ### userFlowType values
 
 |Member
@@ -1907,19 +1976,9 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member
 |:----------------------
-| none
 | form_post
 | query
 | unknownFutureValue
-
-### openIdConnectResponseTypes values
-
-| Member
-|:----------------------
-| none
-| code
-| id_token
-| token
 
 ### wellknownListName values
 
@@ -1994,7 +2053,8 @@ Possible values for user account types (group membership), per Windows definitio
 | boolean               | 2     | Boolean data type                   |
 | int64                 | 3     | Int data type                       |
 | stringCollection      | 4     | String collection data type         |
-| unknownFutureValue    | 5     | A sentinel member.                  |
+|dateTime|5||
+| unknownFutureValue    | 6     | A sentinel member.                  |
 
 ### identityUserFlowAttributeType values
 
@@ -2002,7 +2062,8 @@ Possible values for user account types (group membership), per Windows definitio
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | This user flow attribute type denotes it was created by the system |
 | custom                | 2     | This user flow attribute type denotes it was created by the user   |
-| unknownFutureValue    | 3     | A sentinel member.                                                 |
+|required|3||
+| unknownFutureValue    | 4     | A sentinel member.                                                 |
 
 ### connectionState values
 

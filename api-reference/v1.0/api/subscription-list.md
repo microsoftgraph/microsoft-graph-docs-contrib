@@ -109,7 +109,7 @@ Here's an example of the response.  Note that it may be truncated for brevity.  
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription",
   "isCollection": true
 } -->
@@ -135,7 +135,8 @@ Content-length: 586
       "latestSupportedTlsVersion": "v1_2",
       "encryptionCertificate": "",
       "encryptionCertificateId": "",
-      "includeResourceData": false
+      "includeResourceData": false,
+      "notificationContentType": "application/json"
     }
   ]
 }
