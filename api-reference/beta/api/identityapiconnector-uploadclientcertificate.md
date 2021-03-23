@@ -87,6 +87,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "@odata.type": "microsoft.graph.identityApiConnector"
 }
 -->
@@ -101,7 +102,6 @@ Content-type: application/json
     "displayName": "My API connector",
     "targetUrl": "https://api.contoso.com/endpoint",
     "authenticationConfiguration": {
-        "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
         "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
         "certificateList": [
             {
