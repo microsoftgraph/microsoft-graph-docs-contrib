@@ -162,7 +162,7 @@ Content-Type: application/json
 
 {
     "displayName":"Test API",
-    "targetUrl":"https://someapi.com/api2",
+    "targetUrl":"https://someotherapi.com/api",
     "authenticationConfiguration": {
         "@odata.type":"#microsoft.graph.pkcs12Certificate",
         "pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
@@ -173,7 +173,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 > Note that authenticationConfiguration in the response is of type [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) as this represents the public information of uploaded certificates.
 
@@ -192,7 +192,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors/$entity",
     "id":"guid",
     "displayName": "Test API",
-    "targetUrl": "https://someapi.com/api",
+    "targetUrl": "https://someotherapi.com/api",
     "authenticationConfiguration": {
         "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
         "certificateList": [

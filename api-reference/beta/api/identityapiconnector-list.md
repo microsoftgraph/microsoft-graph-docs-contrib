@@ -123,7 +123,7 @@ Content-Type: application/json
         {
             "id": "<guid>",
             "displayName": "My API connector",
-            "targetUrl": "https://api.contoso.com/endpoint",
+            "targetUrl": "https://someotherapi.com/api/endpoint",
             "authenticationConfiguration": {
                 "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
                 "certificateList": [
