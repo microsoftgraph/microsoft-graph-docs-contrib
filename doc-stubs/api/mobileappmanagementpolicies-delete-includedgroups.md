@@ -50,7 +50,6 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 
-
 ## Response
 
 If successful, this method returns a `204 No Content` response code and a [group](../resources/group.md) object in the response body.

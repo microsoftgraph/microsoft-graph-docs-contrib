@@ -66,8 +66,8 @@ Content-length: 61
 }
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 
 ``` http

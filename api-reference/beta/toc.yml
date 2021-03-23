@@ -10221,6 +10221,35 @@ items:
               href: api/subscribedsku-list.md
             - name: Get subscribedSku
               href: api/subscribedsku-get.md
+        - Mobility management policy (Preview)
+          href: resources/mobilitymanagementpolicy.md
+          items:
+          - name: List mobile device management policies
+            href: api/mobiledevicemanagementpolicies-list.md
+          - name: Get mobile device management policy
+            href: api/mobiledevicemanagementpolicies-get.md
+          - name: Update mobile device management policy
+            href: api/mobiledevicemanagementpolicies-update.md
+            items:
+            - name: List included groups
+              href: api/mobiledevicemanagementpolicies-list-includedgroups.md
+            - name: Add included groups
+              href: api/mobiledevicemanagementpolicies-post-includedgroups.md
+            - name: Remove included groups
+              href: api/mobiledevicemanagementpolicies-delete-includedgroups.md
+          - name: List mobile app management policies
+            href: api/mobileappmanagementpolicies-list.md
+          - name: Get mobile app management policy
+            href: api/mobileappmanagementpolicies-get.md
+          - name: Update mobile app management policy
+            href: api/mobileappmanagementpolicies-update.md
+            items:
+            - name: List included groups
+              href: api/mobileappmanagementpolicies-list-includedgroups.md
+            - name: Add included groups
+              href: api/mobileappmanagementpolicies-post-includedgroups.md
+            - name: Remove included groups
+              href: api/mobileappmanagementpolicies-delete-includedgroups.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
