@@ -87,7 +87,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.identityapiconnector"
+  "@odata.type": "microsoft.graph.identityApiConnector"
 } -->
 
 ```http
