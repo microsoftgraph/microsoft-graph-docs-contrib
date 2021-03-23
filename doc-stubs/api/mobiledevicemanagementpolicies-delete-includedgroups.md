@@ -1,6 +1,6 @@
 ---
 title: "Delete group"
-description: "Delete includedGroups by posting to the includedGroups collection."
+description: "Delete groups by posting to the includedGroups collection."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "mobility-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete includedGroups by posting to the includedGroups collection.
+Delete groups by posting to the includedGroups collection.
 
 ## Permissions
 
@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 POST /policies/mobileDeviceManagementPolicies/{id}/includedGroups/$ref
 ```

@@ -1,6 +1,6 @@
 ---
 title: "List mobilityAppManagementPolicies"
-description: "Get a list of the mobilityManagementPolicy objects and their properties."
+description: "Get a list of the mobile app management policy objects and their properties."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "mobility-management"
@@ -30,8 +30,15 @@ GET /policies/mobilityAppManagementPolicies
 ```
 
 ## Optional query parameters
-## CHeck the AP1.md
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports some of the OData query parameters to help customize the response.For example - 
+
+- To select specific attributes add `$select=id,displayname`
+- To retrieve included groups for each policy, add `$expand=includedGroups`
+- To filter based on an attribute, use
+`$filter=displayName eq 'Microsoft Intune'`
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

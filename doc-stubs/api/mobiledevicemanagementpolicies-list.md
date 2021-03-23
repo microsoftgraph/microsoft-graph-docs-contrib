@@ -1,6 +1,6 @@
 ---
 title: "List mobileDeviceManagementPolicies"
-description: "Get a list of the mobilityManagementPolicy objects and their properties."
+description: "Get a list of the mobile device management objects and their properties."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "mobility-management"

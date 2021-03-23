@@ -1,6 +1,6 @@
 ---
-title: "List includedGroups"
-description: "Get the group resources from the includedGroups navigation property."
+title: "List included groups"
+description: "Get the groups from the includedGroups navigation property."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "mobility-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the group resources from the includedGroups navigation property.
+Get the groups from the includedGroups navigation property.
 
 ## Permissions
 

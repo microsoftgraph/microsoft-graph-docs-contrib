@@ -1,6 +1,6 @@
 ---
 title: "Get mobileAppManagementPolicies"
-description: "Read the properties and relationships of a mobilityManagementPolicy object."
+description: "Read the properties and relationships of a mobile app management policy."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "mobility-management"

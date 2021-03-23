@@ -1,6 +1,6 @@
 ---
 title: "Update mobilityAppManagementPolicies"
-description: "Update the properties of a mobilityManagementPolicy object."
+description: "Update the properties of a mobile app management policy object."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "mobility-management"
