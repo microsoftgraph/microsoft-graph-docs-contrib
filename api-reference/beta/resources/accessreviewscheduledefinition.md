@@ -34,9 +34,9 @@ An accessReviewScheduleDefinition contains a list of [accessReviewInstance](acce
 | :------------------| :-------------- | :---------- |
 | id | String | The feature-assigned unique identifier of an access review.|
 | displayName | String   | Name of access review series. Required on create. |
-| createdDateTime  |DateTimeOffset  | DateTime when review series was created. |
-| lastModifiedDateTime | DateTimeOffset   | DateTime when review series was last modified.|
-| status  |string   | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
+| createdDateTime  |DateTimeOffset  | Timestamp when review series was created. |
+| lastModifiedDateTime | DateTimeOffset   | Timestamp when review series was last modified.|
+| status  |String   | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
 | descriptionForAdmins  |string  |  Description provided by review creators to provide more context of the review to admins. |
 | descriptionForReviewers |string | Description provided  by review creators to provide more context of the review to reviewers. Reviewers will see this description in the email sent to them requesting their review. |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | User who created this review. |
