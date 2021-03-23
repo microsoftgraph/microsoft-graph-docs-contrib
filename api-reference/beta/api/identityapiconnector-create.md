@@ -149,7 +149,7 @@ Content-Type: application/json
 
 The following is an example of the request.
 
-> Note that authenticationConfiguration in the request is of type [microsoft.graph.pkcs12certificate](../resources/pcks12certificate.md) which represents the configuration of a certificate needed on upload or create.
+> Note that authenticationConfiguration in the request is of type [microsoft.graph.pkcs12certificate](../resources/pkcs12certificate.md) which represents the configuration of a certificate needed on upload or create.
 
 <!-- {
   "blockType": "request",
