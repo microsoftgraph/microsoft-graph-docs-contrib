@@ -33,14 +33,14 @@ GET /groups
 ## Optional query parameters
 To list only Microsoft 365 groups (aka unified groups), apply a filter on **groupTypes**:
 <!-- { "blockType": "ignored" } -->
-```
+```http
 GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
 You can use the OData query option `$orderby` to sort groups in an organization by the **displayName**
 values, as shown in the following example:
 <!-- { "blockType": "ignored" } -->
-```
+```http
 GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ```
 
@@ -216,18 +216,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
-  "@odata.count":2,
-  "value": [
-    {
-      "id": "11111111-2222-3333-4444-555555555555",
-      "displayName": "Contoso Group 1"
-    },
-    {
-      "id": "22222222-3333-4444-5555-666666666666",
-      "displayName": "Contoso Group 2"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
+   "@odata.count":2,
+   "value":[
+      {
+         "id":"11111111-2222-3333-4444-555555555555",
+         "displayName":"Contoso Group 1"
+      },
+      {
+         "id":"22222222-3333-4444-5555-666666666666",
+         "displayName":"Contoso Group 2"
+      }
+   ]
 }
 ```
 
@@ -256,9 +256,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`893`
+893
+```
 
 ### Example 4: Use $filter and $top to get one group with a display name that starts with 'a' including a count of returned objects
 
@@ -292,14 +292,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
-  "@odata.count":1,
-  "value":[
-    {
-      "displayName":"a",
-      "mailNickname":"a241"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "@odata.count":1,
+   "value":[
+      {
+         "displayName":"a",
+         "mailNickname":"a241"
+      }
+   ]
 }
 ```
 
@@ -335,15 +335,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
-  "@odata.count":1396,
-  "value":[
-    {
-      "displayName":"SFA Videos",
-      "mail":"SFAVideos@service.contoso.com",
-      "mailNickname":"SFAVideos"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "@odata.count":1396,
+   "value":[
+      {
+         "displayName":"SFA Videos",
+         "mail":"SFAVideos@service.contoso.com",
+         "mailNickname":"SFAVideos"
+      }
+   ]
 }
 ```
 
@@ -379,21 +379,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
-  "@odata.count":1396,
-  "value":[
-    {
-      "displayName":"SFA Videos",
-      "mail":"SFAVideos@service.contoso.com",
-      "mailNickname":"SFAVideos"
-    },
-    {
-      "description":"Video Production",
-      "displayName":"Video Production",
-      "mail":"videoprod@service.contoso.com",
-      "mailNickname":"VideoProduction"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "@odata.count":1396,
+   "value":[
+      {
+         "displayName":"SFA Videos",
+         "mail":"SFAVideos@service.contoso.com",
+         "mailNickname":"SFAVideos"
+      },
+      {
+         "description":"Video Production",
+         "displayName":"Video Production",
+         "mail":"videoprod@service.contoso.com",
+         "mailNickname":"VideoProduction"
+      }
+   ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
