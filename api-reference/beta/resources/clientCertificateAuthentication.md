@@ -21,8 +21,7 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|pkcs12Value|String| This is the field for sending pfx content. The value should be a base-64 encoded version of the actual certificate content.|
-|password|String| This is the field for sending the password to PFX content.|
+|certificateList| [pkcs12CertificateInformation](../resources/pkcs12CertificateInformation.md) collection| The list of certificates uploaded for this API connector.|
 
 ## JSON representation
 

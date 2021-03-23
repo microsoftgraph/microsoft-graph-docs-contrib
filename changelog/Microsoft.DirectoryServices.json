@@ -25,7 +25,15 @@
               "ChangeType": "Addition",
               "Description": "Added the [clientCertificateAuthentication](https://docs.microsoft.com/graph/api/resources/clientCertificateAuthentication?view=graph-rest-beta&preserve-view=true) complex type that extends apiAuthenticationConfigurationBase which represents a collection of certificates used for HTTP client certificate authentication of API connector API calls.",
               "Target": "clientCertificateAuthentication"
-          }
+          },
+          {
+            "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+            "ApiChange": "Resource",
+            "ChangedApiName": "pkcs12CertificateInformation.md",
+            "ChangeType": "Addition",
+            "Description": "Added the [pkcs12CertificateInformation.md](https://docs.microsoft.com/graph/api/resources/pkcs12CertificateInformation.md?view=graph-rest-beta&preserve-view=true) complex type which represents the public portion of client certificates used for API connector authentication.",
+            "Target": "pkcs12CertificateInformation"
+        }
       ],
       "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
       "Cloud": "prd",
