@@ -20,7 +20,6 @@ Contains information associated with attendance interval in attendanceRecord.
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
 | joinDateTime | DateTime | Time attendee joined in UTC |
-3
 | leaveDateTime | DateTime | Time attendee left in UTC |
 | durationInSeconds | Int32 | Duration of the meeting interval in seconds, i.e. difference between joinDateTime and leaveDateTime |
 
