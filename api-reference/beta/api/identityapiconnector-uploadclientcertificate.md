@@ -102,6 +102,7 @@ Content-type: application/json
     "targetUrl": "https://api.contoso.com/endpoint",
     "authenticationConfiguration": {
         "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
+        "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
         "certificateList": [
             {
                 "thumbprint": "0EB255CC895477798BA418B378255204304897AD",
@@ -119,3 +120,12 @@ Content-type: application/json
     }
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed982019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Upload client certificate for API connector",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
