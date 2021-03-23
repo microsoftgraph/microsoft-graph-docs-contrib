@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IdentityUserFlowAttributeAssignment identityUserFlowAttributeAssignment = new IdentityUserFlowAttributeAssignment();
 identityUserFlowAttributeAssignment.isOptional = false;
@@ -17,7 +17,7 @@ IdentityUserFlowAttribute userAttribute = new IdentityUserFlowAttribute();
 userAttribute.id = "extension_guid_shoeSize";
 identityUserFlowAttributeAssignment.userAttribute = userAttribute;
 
-graphClient.identity().b2xUserFlows("B2X_1_Partner").userAttributeAssignments()
+graphClient.identity().b2cUserFlows("B2C_1_Consumer").userAttributeAssignments()
 	.buildRequest()
 	.post(identityUserFlowAttributeAssignment);
 

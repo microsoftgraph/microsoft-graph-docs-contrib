@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const featureRolloutPolicy = {
-  displayName: "PassthroughAuthentication rollout policy",
-  description: "PassthroughAuthentication rollout policy",
-  feature: "passthroughAuthentication",
+  displayName: 'PassthroughAuthentication rollout policy',
+  description: 'PassthroughAuthentication rollout policy',
+  feature: 'passthroughAuthentication',
   isEnabled: true,
   isAppliedToOrganization: false
 };
 
-let res = await client.api('/directory/featureRolloutPolicies')
+await client.api('/directory/featureRolloutPolicies')
 	.version('beta')
 	.post(featureRolloutPolicy);
 

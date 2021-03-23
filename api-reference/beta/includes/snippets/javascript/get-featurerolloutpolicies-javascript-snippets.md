@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directory/featureRolloutPolicies')
+let featureRolloutPolicies = await client.api('/directory/featureRolloutPolicies')
 	.version('beta')
 	.get();
 

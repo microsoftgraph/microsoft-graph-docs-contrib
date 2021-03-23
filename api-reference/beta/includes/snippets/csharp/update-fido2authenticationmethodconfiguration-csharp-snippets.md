@@ -12,7 +12,7 @@ var authenticationMethodConfiguration = new Fido2AuthenticationMethodConfigurati
 	IsAttestationEnforced = true
 };
 
-await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["fido2"]
+await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]
 	.Request()
 	.UpdateAsync(authenticationMethodConfiguration);
 

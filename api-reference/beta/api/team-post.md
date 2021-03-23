@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: The Teamwork.Migrate.All permission is *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 ## HTTP request
 
@@ -282,6 +283,10 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-full-payload-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-team-post-full-payload-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -588,6 +593,8 @@ Content-Length: 0
 #### Request
 
 The following example shows how to create a team for imported messages.
+
+>**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.|
 
 >**Note:** Teams created in migration mode only support the `standard` template.
 

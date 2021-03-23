@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{teamId}/completeMigration')
+await client.api('/teams/{teamId}/completeMigration')
 	.version('beta')
 	.post();
 

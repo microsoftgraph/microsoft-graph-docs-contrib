@@ -27,8 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 

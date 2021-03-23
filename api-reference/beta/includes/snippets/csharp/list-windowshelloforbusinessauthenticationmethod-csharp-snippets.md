@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var windowsHelloForBusinessMethods = await graphClient.Users["annie@contoso.com"].Authentication.WindowsHelloForBusinessMethods
+var windowsHelloForBusinessMethods = await graphClient.Users["{user-id}"].Authentication.WindowsHelloForBusinessMethods
 	.Request()
 	.GetAsync();
 
