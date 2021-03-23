@@ -113,7 +113,7 @@ The following example shows a request to list all private channels.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels?$filter=membershipType eq 'private'
+GET https://graph.microsoft.com/v1.0/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/channels?$filter=membershipType eq 'private'
 ```
 ---
 
@@ -138,10 +138,10 @@ Content-length: 262
 {
   "value": [
     {
-      "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+      "id": "19:982abbfca323a582f0a6d00ae2deca@thread.tacv2",
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "General",
-      "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+      "description": "test private team",
       "membershipType": "private"
     }
   ]

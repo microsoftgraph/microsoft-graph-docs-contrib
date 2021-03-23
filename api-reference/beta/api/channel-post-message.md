@@ -165,20 +165,10 @@ The following example show how to import back-in-time messages using the `create
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
 {
-   "replyToId":null,
    "messageType":"message",
    "createdDateTime":"2019-02-04T19:58:15.511Z",
-   "lastModifiedDateTime":null,
    "deleted":false,
-   "subject":null,
-   "summary":null,
-   "importance":"normal",
-   "locale":"en-us",
-   "policyViolation":null,
    "from":{
-      "application":null,
-      "device":null,
-      "conversation":null,
       "user":{
          "id":"id-value",
          "displayName":"Joh Doe",
@@ -189,9 +179,6 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
       "contentType":"html",
       "content":"Hello World"
    },
-   "attachments":[ ],
-   "mentions":[ ],
-   "reactions":[ ]
 }
 ```
 

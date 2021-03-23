@@ -28,7 +28,7 @@ The following permission is required to call this API. To learn more, *see* [Per
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{teamId}/channels/{channelId}/completeMigration
+POST /teams/{team-id}/channels/{channel-id}/completeMigration
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
 
 ---
