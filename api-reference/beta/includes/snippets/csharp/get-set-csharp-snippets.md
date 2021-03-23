@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var sets = await graphClient.TermStore.Groups["{groupId}"].Sets
+var sets = await graphClient.TermStore.Groups["{termStore.group-id}"].Sets
 	.Request()
 	.GetAsync();
 

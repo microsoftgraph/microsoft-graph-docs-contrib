@@ -14,7 +14,7 @@ var educationUser = new EducationUser
 	}
 };
 
-await graphClient.Education.Classes["{class-id}"].Members.References
+await graphClient.Education.Classes["{educationClass-id}"].Members.References
 	.Request()
 	.AddAsync(educationUser);
 

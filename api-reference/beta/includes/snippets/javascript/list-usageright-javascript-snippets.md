@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/devices/{objectId}/usageRights')
+let usageRights = await client.api('/users/{userId}/usageRights')
 	.version('beta')
-	.filter('state in ('active', 'suspended') and serviceIdentifier in ('ABCD')')
+	.filter('state in (\'active\', \'suspended\') and serviceIdentifier in (\'ABCD\')')
 	.get();
 
 ```
