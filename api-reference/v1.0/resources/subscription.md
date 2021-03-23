@@ -20,7 +20,7 @@ A subscription allows a client app to receive change notifications about changes
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive.
 - A [list][] under a SharePoint [site][].
 - A [message][], [event][], or [contact][] in Outlook.
-- A [printer][] when a print job for the printer gets to JobFetchable state - ready to be fetched for printing and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](https://docs.microsoft.com/en-us/graph/universal-print-webhook-notifications).
+- A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](https://docs.microsoft.com/en-us/graph/universal-print-webhook-notifications).
 - A [user][] or [group][] in Azure Active Directory.
 
 See [Use the Microsoft Graph API to get change notifications](webhooks.md) for the possible resource path values for each supported resource.
