@@ -98,7 +98,7 @@ Content-type: application/json
       "isDefault": true,
       "userRole":  "Owner",
       "isShared": false,
-      "sectionsUrl": "[sectionsUrl-value](https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/onenote/notebooks/1-10143016-70dc-4449-b92a-3015225f800d/sections)",
+      "sectionsUrl": "https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/onenote/notebooks/1-10143016-70dc-4449-b92a-3015225f800d/sections",
       "sectionGroupsUrl": "https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/onenote/notebooks/1-10143016-70dc-4449-b92a-3015225f800d/sectionGroups",
       "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
       "links": {
