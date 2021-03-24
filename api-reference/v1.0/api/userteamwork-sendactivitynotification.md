@@ -65,7 +65,6 @@ If successful, this action returns a `204 No Content` response code.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userteamwork_sendactivitynotification"
@@ -94,9 +93,6 @@ Content-Type: application/json
 ```
 
 
----
-
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -113,7 +109,6 @@ If you want to link an aspect that is not represented by Microsoft Graph, or you
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification"
@@ -141,9 +136,6 @@ Content-Type: application/json
     ]
 }
 ```
-
-
----
 
 
 #### Response

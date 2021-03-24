@@ -59,7 +59,7 @@ The following resources are supported when setting the `source` value of the **t
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **Note:** The entity url must be same or child resource of the team in the url. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the team.
+> **Note:** The entity URL must be same or child resource of the team in the URL. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the team.
 
 ## Response
 
@@ -73,7 +73,6 @@ This example shows how you can send an activity feed notification for a team. Th
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification"
