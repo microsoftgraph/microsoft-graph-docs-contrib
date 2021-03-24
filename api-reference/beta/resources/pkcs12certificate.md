@@ -22,7 +22,7 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 |Property|Type|Description|
 |:---|:---|:---|
 |pkcs12Value|String| This is the field for sending pfx content. The value should be a base-64 encoded version of the actual certificate content. Required.|
-|password|String| This is the field for sending the password to PFX content.|
+|password|String| This is the password for the pfx file. Required. If no password is used, must still provide a value of `""`.|
 
 ## JSON representation
 
