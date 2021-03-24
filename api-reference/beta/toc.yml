@@ -10221,7 +10221,7 @@ items:
               href: api/subscribedsku-list.md
             - name: Get subscribedSku
               href: api/subscribedsku-get.md
-        - Mobility management policy (Preview)
+        - name: Mobility management policy (Preview)
           href: resources/mobilitymanagementpolicy.md
           items:
           - name: List mobile device management policies
