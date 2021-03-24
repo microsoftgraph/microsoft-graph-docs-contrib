@@ -19,10 +19,10 @@ Contains information associated with attendance record in meeting attendance rep
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
-| identity | microsoft.graph.Identity | Identifier, such as display name, etc |
+| identity | [Identity](identity.md) | Identifier, such as display name, etc |
 | emailAddress | String | Email address |
 | totalAttendanceInSeconds | Int32 | Total duration of the meetings in seconds |
-| attendanceIntervals | [microsoft.graph.attendanceInterval](attendanceInterval.md) collection | List of time periods between joining and leaving |
+| attendanceIntervals | [attendanceInterval](attendanceInterval.md) collection | List of time periods between joining and leaving |
 | role | String | Role of the attendee, such as organizer |
 
 ## JSON representation
@@ -36,6 +36,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.attendanceRecord"
 }-->
+
 ```json
 {
     "emailAddress": "String",

@@ -19,7 +19,7 @@ Contains information associated with meeting attendance report.
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
-| attendanceRecords           | [microsoft.graph.attendanceRecord](attendanceRecord.md) collection  | The list of attendance records |
+| attendanceRecords           | [attendanceRecord](attendanceRecord.md) collection  | The list of attendance records |
 
 ## JSON representation
 
@@ -32,6 +32,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.meetingAttendanceReport"
 }-->
+
 ```json
 {
   "attendanceRecords": [
