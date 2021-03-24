@@ -121,7 +121,7 @@ Content-Type: application/json
                 }
             },
             "contentQuery": "subject:'Quarterly Financials'",
-            "tenantSources": "none",
+            "dataSourceScopes": "allTenantMailboxes",
             "id": "fe5ef84e9c8c45819c056f6eb261718e",
             "displayName": "Quarterly Financials",
             "createdDateTime": "2020-12-11T22:56:14.2329133Z"
