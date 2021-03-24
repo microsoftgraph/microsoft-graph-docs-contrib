@@ -7,7 +7,7 @@ ms.prod: "mobility-management"
 doc_type: apiPageType
 ---
 
-## Delete group
+# Delete group
 
 Namespace: microsoft.graph
 
