@@ -31,11 +31,11 @@ Represents an Azure AD [access review](accessreviewsv2-root.md) decision on an i
 | id | String | The identifier of the decision. |
 | accessReviewId | String | The identifier of the accessReviewInstance parent. |
 | reviewedBy | [userIdentity](useridentity.md) | The identifier of the reviewer. |
-| reviewedDateTime | DateTimeOffset | The DateTime when the review occurred. |
+| reviewedDateTime | DateTimeOffset | The timestamp when the review occurred. |
 | decision | String | Result of the review. Possible values: `Approve`, `Deny`, `NotReviewed`, or `DontKnow`. |
 | justification | String | The review decision justification. |
 | appliedBy | [userIdentity](useridentity.md) | The identifier of the user who applied the decision. |
-| appliedDateTime | DateTimeOffset | The DateTime when the approval decision was applied. |
+| appliedDateTime | DateTimeOffset | The timestamp when the approval decision was applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 | applyResult | String | The result of applying the decision. Possible values: `NotApplied`, `Success`, `Failed`, `NotFound`, or `NotSupported`. |
 | recommendation | String | A system-generated recommendation for the approval decision. Possible values: `Approve`, `Deny`, or `NotAvailable`.  |
 | target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | The target of this specific decision. Decision targets can be of different types – each one with its own specific properties. See [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md). |
