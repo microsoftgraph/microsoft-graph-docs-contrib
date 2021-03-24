@@ -58,7 +58,6 @@ If successful, this method returns a `200 OK` response code and collection of [C
 
 The following example shows a request to list all channels.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_channels"
@@ -67,13 +66,13 @@ The following example shows a request to list all channels.
 ```http
 GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels
 ```
----
+
 
 #### Response
 
 The following is the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -105,7 +104,6 @@ Content-length: 262
 
 The following example shows a request to list all private channels.
 
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -115,13 +113,12 @@ The following example shows a request to list all private channels.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/channels?$filter=membershipType eq 'private'
 ```
----
 
 #### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

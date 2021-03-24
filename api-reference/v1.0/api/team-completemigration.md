@@ -54,7 +54,6 @@ The following is an example of the request.
 <!-- markdownlint-disable MD022 -->
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_team"
@@ -64,7 +63,6 @@ The following is an example of the request.
 POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/completeMigration
 ```
 
----
 
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->

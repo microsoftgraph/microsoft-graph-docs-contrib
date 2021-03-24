@@ -58,7 +58,6 @@ If successful, this method returns a `204 No Content` response code.
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
@@ -67,12 +66,9 @@ Here is an example of the request.
 PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
 
----
-
 #### Response
 
 Here is an example of the response. 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,7 +85,6 @@ HTTP/1.1 204 No Content
 The following example shows a request to update the [moderation settings](../resources/channelmoderationsettings.md) of a channel. This operation can only be performed by a team owner.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel_with_moderationSettings"
@@ -110,7 +105,6 @@ Content-type: application/json
     }
 }
 ```
----
 
 
 

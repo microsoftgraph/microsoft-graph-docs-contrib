@@ -57,7 +57,6 @@ If successful, this method returns a `200 OK` response code and a [channel](../r
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -68,13 +67,12 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
 
----
 
 ### Response
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

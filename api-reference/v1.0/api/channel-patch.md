@@ -55,7 +55,6 @@ If successful, this method returns a `204 No Content` response code.
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
@@ -67,7 +66,6 @@ PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e2026
 ### Response
 
 Here is an example of the response. 
-
 <!-- {
   "blockType": "response",
   "truncated": true,

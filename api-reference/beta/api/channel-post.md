@@ -215,7 +215,6 @@ Content-length: 201
 The following example shows how to create a channel that will be used for importing messages.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_for_migration"
@@ -232,8 +231,6 @@ Content-Type: application/json
   "createdDateTime": "2020-03-14T11:22:17.067Z"
 }
 ```
-
----
 
 
 #### Response

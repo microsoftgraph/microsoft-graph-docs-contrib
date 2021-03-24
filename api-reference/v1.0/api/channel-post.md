@@ -58,7 +58,6 @@ If successful, this method returns a `201 Created` response code and a [channel]
 
 The following example shows a request to create a standard channel.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
@@ -75,13 +74,12 @@ Content-type: application/json
 }
 ```
 
----
 
 #### Response
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -108,7 +106,6 @@ Content-length: 201
 The following example shows a request to create a private channel and add a user as an team owner.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_user"
@@ -133,7 +130,6 @@ Content-type: application/json
 }
 ```
 
----
 
 
 #### Response
@@ -170,7 +166,6 @@ Content-length: 201
 The following example shows how to create a channel that will be used for importing messages.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_for_migration"
@@ -187,8 +182,6 @@ Content-Type: application/json
   "createdDateTime": "2020-03-14T11:22:17.067Z"
 }
 ```
-
----
 
 
 #### Response

@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [channel](../r
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
+[HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -122,7 +122,7 @@ HTTP/1.1 200 OK
 
 Here is an example of the response for a standard channel with channel moderation on.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

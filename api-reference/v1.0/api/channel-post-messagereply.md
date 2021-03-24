@@ -47,9 +47,9 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
-## Example 1: Create a new reply to a chatMessage
+### Example 1: Create a new reply to a chatMessage
 
-### Request
+#### Request
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -72,7 +72,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 <!-- {
