@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-DELETE /policies/mobilityAppManagementPolicies/{id}/includedGroups/$ref
+DELETE /policies/mobilityAppManagementPolicies/{id}/includedGroups/{id}/$ref
 ```
 
 ## Request headers
@@ -39,16 +39,10 @@ DELETE /policies/mobilityAppManagementPolicies/{id}/includedGroups/$ref
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply a JSON representation of the [group](../resources/group.md) object.
-
-The following table shows the properties that are required when you create the [group](../resources/group.md).
-
-|Property|Type|Description|
-|:---|:---|:---|
+Do not supply a request body for this method.
 
 ## Response
 
@@ -64,13 +58,7 @@ If successful, this method returns a `204 No Content` response code and a [group
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/policies/mobilityAppManagementPolicies/{appId}/includedGroups/$ref
-Content-Type: application/json
-Content-length: 61
-
-{
-  "@odata.type": "#microsoft.graph.group"
-}
+DELETE https://graph.microsoft.com/beta/policies/mobilityAppManagementPolicies/{id}/includedGroups/{id}/$ref
 ```
 
 ### Response
@@ -82,12 +70,8 @@ Content-length: 61
   "@odata.type": "Microsoft.AAD.MobilityService.group"
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.group"
-}
 ```
 

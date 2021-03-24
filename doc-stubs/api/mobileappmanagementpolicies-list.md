@@ -7,7 +7,7 @@ ms.prod: "mobility-management"
 doc_type: apiPageType
 ---
 
-## List mobilityManagementPolicies
+## List mobilityAppManagementPolicies
 
 Namespace: microsoft.graph
 

@@ -7,7 +7,8 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo
 doc_type: apiPageType
 ---
 
-# Add group
+## Add group
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -28,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /policies/mobilityAppManagementPolicies/{appId}/includedGroups/$ref
+POST /policies/mobilityAppManagementPolicies/{id}/includedGroups/$ref
 ```
 
 ## Request headers
@@ -60,7 +61,7 @@ If successful, this method returns a `204 No Content` response code and a [group
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/mobilityAppManagementPolicies/{appId}/includedGroups/$ref
+POST https://graph.microsoft.com/beta/policies/mobilityAppManagementPolicies/{id}/includedGroups/$ref
 Content-Type: application/json
 Content-length: 61
 

@@ -1,5 +1,5 @@
 ---
-title: "Get mobileAppManagementPolicies"
+title: "Get mobileAppManagementPolicy"
 description: "Read the properties and relationships of a mobile app management policy."
 author: "ravennMSFT"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "mobility-management"
 doc_type: apiPageType
 ---
 
-## Get mobileAppManagementPolicies
+## Get mobileAppManagementPolicy
 
 Namespace: microsoft.graph
 
@@ -30,8 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
-GET /policies/mobileAppManagementPolicies/{appId}
+GET /policies/mobileAppManagementPolicies/{id}
 ```
 
 ## Optional query parameters
@@ -57,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [mobilityManag
 ### Request
 
 ``` http
-GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/{appId}
+GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/{id}
 ```
 
 ### Response
