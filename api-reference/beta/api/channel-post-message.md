@@ -40,7 +40,7 @@ In the future, Microsoft may require you or your customers to pay additional fee
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/channels/{id}/messages
+POST /teams/{team-id}/channels/{channel-id}/messages
 ```
 
 ## Request headers
@@ -74,7 +74,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -120,7 +120,7 @@ Content-type: application/json
 Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
     "id": "id-value",
     "replyToId": null,
     "etag": "id-value",
@@ -154,7 +154,7 @@ Content-length: 160
 }
 ```
 
-### Example 2: Import messages (text only)
+### Example 2: Import messages
 
 > **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
@@ -163,23 +163,13 @@ Content-length: 160
 The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
 {
-   "replyToId":null,
    "messageType":"message",
    "createdDateTime":"2019-02-04T19:58:15.511Z",
-   "lastModifiedDateTime":null,
    "deleted":false,
-   "subject":null,
-   "summary":null,
-   "importance":"normal",
-   "locale":"en-us",
-   "policyViolation":null,
    "from":{
-      "application":null,
-      "device":null,
-      "conversation":null,
       "user":{
          "id":"id-value",
          "displayName":"Joh Doe",
@@ -190,9 +180,6 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
       "contentType":"html",
       "content":"Hello World"
    },
-   "attachments":[ ],
-   "mentions":[ ],
-   "reactions":[ ]
 }
 ```
 
@@ -210,7 +197,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
    "id":"id-value",
    "replyToId":null,
    "etag":"id-value",
@@ -255,7 +242,7 @@ HTTP/1.1 200 OK
 The following example shows how to import back-in-time messages containing inline images using the `createDateTime` and `from` keys in the request body.
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
 {
    "createdDateTime":"2019-02-04T19:58:15.511Z",
@@ -295,7 +282,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('teamId')/channels('channelId')/messages/$entity",
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
    "id":"id-value",
    "replyToId":null,
    "etag":"id-value",

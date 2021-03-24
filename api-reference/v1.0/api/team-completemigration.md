@@ -1,25 +1,23 @@
 ---
-title: "channel: completeMigration"
-description: "Complete the migration of external messages by removing migration mode from a channel."
+title: "team: completeMigration"
+description: "Complete the migration of external messages by removing migration mode from a team."
 localization_priority: Normal
-author: "laujan"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# channel: completeMigration
+# team: completeMigration
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Complete the message migration process by removing `migration mode` from a [channel](../resources/channel.md) in a team. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+Complete the message migration process by removing `migration mode` from a [team](../resources/team.md). `Migration mode` is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
 
 After a **completeMigration** request is made, you cannot import additional messages into the team. You can add members to the team after the request returns a successful response.
 
 ## Permissions
 
-The following permission is required to call this API. To learn more, *see* [Permissions](/graph/permissions-reference).
+The following permission is required to call this API. To learn more, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permission  |
 |:--------------------|:---------------------------------------------------------|
@@ -30,7 +28,7 @@ The following permission is required to call this API. To learn more, *see* [Per
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{team-id}/channels/{channel-id}/completeMigration
+POST /teams/{team-id}/completeMigration
 ```
 
 ## Request headers
@@ -58,12 +56,13 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "completeMigration_channel"
+  "name": "completeMigration_team"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/completeMigration
 ```
+
 
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->
@@ -79,12 +78,12 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 5793eec6-0e5a-11eb-adc1-0242ac120002
+<!-- uuid: d945a9a4-0e5b-11eb-adc1-0242ac120002
 2020-10-14 20:22:11 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "completeMigration_ channel",
+  "description": "completeMigration_ team",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
