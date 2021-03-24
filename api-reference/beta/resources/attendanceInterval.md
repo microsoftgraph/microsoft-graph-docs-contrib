@@ -38,8 +38,8 @@ The following is a JSON representation of the resource.
 ```json
 
 {
-    "joinDateTime": "DateTime",
-    "leaveDateTime": "DateTime",
+    "joinDateTime": "String (timestamp)",
+    "leaveDateTime": "String (timestamp)",
     "durationInSeconds": "Int32"
 }
     

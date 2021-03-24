@@ -35,49 +35,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "attendanceRecords": [
-        {
-            "emailAddress": "String",
-            "totalAttendanceInSeconds": "Int32",
-            "role": "String",
-            "identity": {
-                "id": "String",
-                "displayName": "String"
-            },
-            "attendanceIntervals": [
-                {
-                    "joinDateTime": "DateTime",
-                    "leaveDateTime": "DateTime",
-                    "durationInSeconds": "Int32"
-                }
-            ]
-        },
-        {
-            "emailAddress": "String",
-            "totalAttendanceInSeconds": "Int32",
-            "role": "String",
-            "identity": {
-                "id": "String",
-                "displayName": "String"
-            },
-            "attendanceIntervals": [
-                {
-                    "joinDateTime": "DateTime",
-                    "leaveDateTime": "DateTime",
-                    "durationInSeconds": "Int32"
-                },
-                {
-                    "joinDateTime": "DateTime",
-                    "leaveDateTime": "DateTime",
-                    "durationInSeconds": "Int32"
-                },
-                {
-                    "joinDateTime": "DateTime",
-                    "leaveDateTime": "DateTime",
-                    "durationInSeconds": "Int32"
-                }
-            ]
-        }
-    ]
+  "attendanceRecords": [{"@odata.type": "#microsoft.graph.attendanceRecord"}]
 }
 ```

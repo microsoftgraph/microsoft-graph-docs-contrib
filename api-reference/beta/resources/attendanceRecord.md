@@ -21,9 +21,9 @@ Contains information associated with attendance record in meeting attendance rep
 |:--------------------|:--------|:-----------|
 | identity | [Identity](identity.md) | Identifier, such as display name, etc |
 | emailAddress | String | Email address |
-| totalAttendanceInSeconds | Int32 | Total duration of the meetings in seconds |
+| totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds |
 | attendanceIntervals | [attendanceInterval](attendanceInterval.md) collection | List of time periods between joining and leaving |
-| role | String | Role of the attendee, such as organizer |
+| role | String | Role of the attendee. Possible values are `None`, `Attendee`, `Presenter`, and `Organizer`  |
 
 ## JSON representation
 
@@ -38,21 +38,13 @@ The following is a JSON representation of the resource.
 }-->
 
 ```json
+
 {
     "emailAddress": "String",
     "totalAttendanceInSeconds": "Int32",
-    "role": "String",
-    "identity": {
-        "id": "String",
-        "displayName": "String"
-    },
-    "attendanceIntervals": [
-        {
-            "joinDateTime": "DateTime",
-            "leaveDateTime": "DateTime",
-            "durationInSeconds": "Int32"
-        }
-    ]
+    "role": "String(None|Attendee|Presenter|Organizer)",
+    "identity": {"@odata.type": "#microsoft.graph.identity"},
+    "attendanceIntervals": [{"@odata.type": "#microsoft.graph.attendanceInterval"}]
 }
 
 ```
