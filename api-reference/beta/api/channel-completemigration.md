@@ -56,7 +56,7 @@ The following is an example of the request.
 <!-- markdownlint-disable MD022 -->
 
 
-# [HTTP](#tab/http)
+[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_channel"
