@@ -47,12 +47,13 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
+## Examples
+
 ### Example 1: Create a new reply to a chatMessage
 
 #### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_reply_message"
@@ -68,9 +69,6 @@ Content-type: application/json
   }
 }
 ```
-
-
----
 
 #### Response
 
@@ -153,7 +151,6 @@ POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 
 ```
 
----
 #### Response
 
 The following is an example of the response.
