@@ -70,7 +70,6 @@ This example shows how you can send an activity feed notification for a new task
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_sendactivitynotification"
@@ -101,10 +100,6 @@ Content-Type: application/json
     ] 
 }
 ```
-
-
----
-
 
 #### Response
 <!-- {
