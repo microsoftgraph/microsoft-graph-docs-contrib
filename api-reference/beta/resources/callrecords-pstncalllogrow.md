@@ -40,6 +40,8 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 |conferenceId|String|ID of the audio conference.|
 |licenseCapability|String|The license used for the call.|
 |inventoryType|String|User's phone number type, such as a service of toll-free number.|
+|operator|String|The telecommunications operator which provided PSTN services for this call. This may be Microsoft, or it may be a third-party operator via the [Operator Connect Program](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398)|
+|callDurationSource|pstnCallDurationSource|The call duration source. When a third-party telecommunications operator is used via the Operator Connect Program, they may provide their own call duration data. In that case, `operator` will be specified. Otherwise `microsoft` will be specified.|
 
 ## Relationships
 
@@ -79,7 +81,9 @@ The following is a JSON representation of the resource.
   "destinationName": "String",
   "conferenceId": "String",
   "licenseCapability": "String",
-  "inventoryType": "String"
+  "inventoryType": "String",
+  "operator": "String",
+  "callDurationSource": "String"
 }
 ```
 

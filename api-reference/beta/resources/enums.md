@@ -2148,3 +2148,9 @@ Possible values for user account types (group membership), per Windows definitio
 |other|
 |unknownFutureValue|
 
+### pstnCallDurationSource values 
+
+|Member|
+|:---|
+|microsoft|
+|operator|
