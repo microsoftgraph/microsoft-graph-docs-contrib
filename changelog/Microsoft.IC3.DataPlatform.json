@@ -19,7 +19,7 @@
                     "ApiChange": "Enum type",
                     "ChangedApiName": "pstnCallDurationSource",
                     "ChangeType": "Addition",
-                    "Description": "Added the **pstnCallDurationSource** enumeration type.",
+                    "Description": "Added the [**pstnCallDurationSource**](https://docs.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#pstncalldurationsource-values) enumeration type, defining the call duration source. When a third-party telecommunications operator is used via the Operator Connect Program, they may provide their own call duration data.",
                     "Target": "pstnCallDurationSource"
                 }
             ],
