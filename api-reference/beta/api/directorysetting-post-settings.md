@@ -173,7 +173,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.groupSetting"
+  "@odata.type": "microsoft.graph.directorySetting"
 } -->
 ```http
 HTTP/1.1 201 Created
