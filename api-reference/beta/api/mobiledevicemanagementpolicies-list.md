@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.graph.mobilityManagementPolicy)"
+  "@odata.type": "Collection(microsoft.graph.mobilityManagementPolicy)"
 }
 -->
 
