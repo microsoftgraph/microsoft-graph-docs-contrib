@@ -165,7 +165,7 @@ Content-type: application/json
 }
 ```
 
-In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.
+In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.
 
 ### Response
 
