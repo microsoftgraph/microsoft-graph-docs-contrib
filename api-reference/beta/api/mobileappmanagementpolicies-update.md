@@ -1,5 +1,5 @@
 ---
-title: "Update mobilityAppManagementPolicy"
+title: "Update mobileAppManagementPolicy"
 description: "Update the properties of a mobile app management policy object."
 author: "ravennMSFT"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "mobility-management"
 doc_type: apiPageType
 ---
 
-## Update mobilityAppManagementPolicy
+## Update mobileAppManagementPolicy
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.all, Policy.ReadWrite.all|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.All|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /policies/mobilityAppManagementPolicies/{appId}
+PATCH /policies/mobileAppManagementPolicies/{id}
 ```
 
 ## Request headers
@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/mobilityAppManagementPolicies/{appId}
+PATCH https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/{id}
 Content-Type: application/json
 Content-length: 237
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
-  "id": "b2c4bc08-bc08-b2c4-08bc-c4b208bcc4b2",
+  "id": "String (identifier)",
   "appliesTo": "String",
   "complianceUrl": "String",
   "description": "String",

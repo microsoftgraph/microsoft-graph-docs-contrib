@@ -1,6 +1,6 @@
 ---
 title: "List included groups"
-description: "Get the groups from the includedGroups navigation property."
+description: "Get the groups from the includedGroups collection of a mobile app management policy."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "mobility-management"
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.all, Policy.ReadWrite.all|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.All|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /policies/mobilityAppManagementPolicies/{id}/includedGroups
+GET /policies/mobileAppManagementPolicies/{id}/includedGroups
 ```
 
 ## Optional query parameters
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/policies/mobilityAppManagementPolicies/{appId}/includedGroups
+GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/{appId}/includedGroups
 ```
 
 

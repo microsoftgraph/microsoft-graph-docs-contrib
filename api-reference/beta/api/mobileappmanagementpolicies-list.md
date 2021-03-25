@@ -1,5 +1,5 @@
 ---
-title: "List mobilityAppManagementPolicies"
+title: "List mobileAppManagementPolicies"
 description: "Get a list of the mobile app management policy objects and their properties."
 author: "ravennMSFT"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "mobility-management"
 doc_type: apiPageType
 ---
 
-## List mobilityAppManagementPolicies
+## List mobileAppManagementPolicies
 
 Namespace: microsoft.graph
 
@@ -21,12 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.all, Policy.ReadWrite.all|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.All|
 
 ## HTTP request
 
 ``` http
-GET /policies/mobilityAppManagementPolicies
+GET /policies/mobileAppManagementPolicies
 ```
 
 ## Optional query parameters
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/policies/mobilityAppManagementPolicies
+GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies
 ```
 
 
@@ -87,7 +87,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#Microsoft.AAD.MobilityService.mobilityManagementPolicy",
-      "id": "b2c4bc08-bc08-b2c4-08bc-c4b208bcc4b2",
+      "id": "String (identifier)",
       "appliesTo": "String",
       "complianceUrl": "String",
       "description": "String",

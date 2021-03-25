@@ -1,6 +1,6 @@
 ---
-title: "Delete included groups"
-description: "Delete groups by posting to the includedGroups collection."
+title: "Delete groups"
+description: "Delete group from the includedGroups collection of a mobile app management policy."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "mobility-management"
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.all, Policy.ReadWrite.all|
+|Delegated (work or school account)|Policy.ReadWrite.All|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-DELETE /policies/mobilityAppManagementPolicies/{id}/includedGroups/{id}/$ref
+DELETE /policies/mobileAppManagementPolicies/{id}/includedGroups/{id}/$ref
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ If successful, this method returns a `204 No Content` response code and a [group
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/policies/mobilityAppManagementPolicies/{id}/includedGroups/{id}/$ref
+DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/{id}/includedGroups/{id}/$ref
 ```
 
 ### Response

@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.all, Policy.ReadWrite.all|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.All|
 
 
 ## HTTP request
@@ -72,7 +72,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#Microsoft.AAD.MobilityService.mobilityManagementPolicy",
-    "id": "b2c4bc08-bc08-b2c4-08bc-c4b208bcc4b2",
+    "id": "String (identifier)",
     "appliesTo": "String",
     "complianceUrl": "String",
     "description": "String",
