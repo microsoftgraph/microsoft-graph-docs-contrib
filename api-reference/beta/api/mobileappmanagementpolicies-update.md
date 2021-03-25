@@ -97,17 +97,5 @@ Content-length: 237
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
-  "id": "String (identifier)",
-  "appliesTo": "String",
-  "complianceUrl": "String",
-  "description": "String",
-  "discoveryUrl": "String",
-  "displayName": "String",
-  "termsOfUseUrl": "String"
-}
+HTTP/1.1 204 No Content
 ```

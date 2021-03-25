@@ -1,5 +1,5 @@
 ---
-title: "List included groups of a mobile app management policy"
+title: "List includedGroups"
 description: "Get the groups from the includedGroups collection of a mobile app management policy."
 author: "ravennMSFT"
 localization_priority: Normal

@@ -1,5 +1,5 @@
 ---
-title: "Delete group from a mobile device management policy"
+title: "Delete includeGroup"
 description: "Delete a group from the includedGroups collection of a mobile device management policy."
 author: "ravennMSFT"
 localization_priority: Normal

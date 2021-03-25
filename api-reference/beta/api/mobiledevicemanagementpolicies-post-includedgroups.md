@@ -1,5 +1,5 @@
 ---
-title: "Add groups to a mobile device management policy"
+title: "Add includedGroups"
 description: "Add groups by posting to the includedGroups collection for a mobile device management policy."
 author: "ravennMSFT"
 localization_priority: Normal
@@ -69,6 +69,7 @@ Content-length: 61
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
+
 
 ``` http
 HTTP/1.1 204 No Content

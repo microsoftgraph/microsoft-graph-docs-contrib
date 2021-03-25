@@ -1,5 +1,5 @@
 ---
-title: "List groupsof a mobile device management policy"
+title: "List includedGroups"
 description: "Get the groups from the includedGroups collection of a mobile device management policy."
 author: "ravennMSFT"
 localization_priority: Normal

@@ -1,6 +1,6 @@
 ---
-title: "Delete group from mobile app management policy"
-description: "Delete group from the includedGroups collection of a mobile app management policy."
+title: "Delete includedGroup"
+description: "Delete a group from the includedGroups collection of a mobile app management policy."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "directory-management"
@@ -67,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.AAD.MobilityService.group"
+  "@odata.type": "Microsoft.graph.group"
 }
 -->
 

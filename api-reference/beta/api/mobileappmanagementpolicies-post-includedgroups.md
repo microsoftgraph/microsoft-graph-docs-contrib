@@ -1,5 +1,5 @@
 ---
-title: "Add group to a mobile app management policy" 
+title: "Add includedGroup" 
 description: "Add groups by posting to the includedGroups collection."
 author: "ravennMSFT"
 localization_priority: Normal
@@ -82,10 +82,4 @@ Content-length: 61
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#Microsoft.AAD.MobilityService.group"
-}
 ```
-
