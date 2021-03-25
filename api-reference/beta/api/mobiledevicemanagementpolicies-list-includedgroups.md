@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.AAD.MobilityService.group)"
+  "@odata.type": "Collection(Microsoft.graph.group)"
 }
 -->
 

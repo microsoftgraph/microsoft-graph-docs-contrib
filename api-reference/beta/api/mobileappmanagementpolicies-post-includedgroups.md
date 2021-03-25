@@ -66,7 +66,7 @@ Content-Type: application/json
 Content-length: 61
 
 {
-  "@odata.type": "#Microsoft.AAD.MobilityService.group"
+  "@odata.type": "#Microsoft.graph.group"
 }
 ```
 
@@ -77,7 +77,7 @@ Content-length: 61
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.AAD.MobilityService.group"
+  "@odata.type": "Microsoft.graph.group"
 }
 -->
 ``` http
