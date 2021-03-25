@@ -106,10 +106,10 @@ In this example, the first `{id}` in the request is the identifier of the group,
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_groupsetting"
+  "name": "update_directorysetting_by_id"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}/settings/{id}
+PATCH https://graph.microsoft.com/beta/groups/055a5d18-a3a9-4338-b9c5-de92559b7ebf/settings/a77ad44e-aa2a-4976-91b5-b947787b9577
 Content-type: application/json
 
 {
