@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Add groups
+# Add includedGroups
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "Add includedGroup" 
+title: "Add includedGroups" 
 description: "Add groups by posting to the includedGroups collection."
 author: "ravennMSFT"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Add group
+# Add includedGroups
 
 Namespace: microsoft.graph
 

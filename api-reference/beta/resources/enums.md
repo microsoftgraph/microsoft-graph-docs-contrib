@@ -104,8 +104,6 @@ Namespace: microsoft.graph
 
 ### featureType values 
 
-
-
 |Member|
 |:---|
 |registration|

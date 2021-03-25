@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Delete group
+# Delete includedGroup
 
 Namespace: microsoft.graph
 
