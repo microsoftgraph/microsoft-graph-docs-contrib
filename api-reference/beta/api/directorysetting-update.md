@@ -49,8 +49,8 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `204 OK` response code.
 
-## Example
-##### Request
+## Example 1: Update a tenant-wide group setting
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -59,15 +59,14 @@ Here is an example of the request.
   "name": "update_directorysetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/settings/{id}
+PATCH https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53cc
 Content-type: application/json
-Content-length: 178
 
 {
   "values": [
     {
-      "name": "name-value",
-      "value": "value-value"
+      "name": "AllowToAddGuests",
+      "value": "false"
     }
   ]
 }
@@ -90,7 +89,7 @@ Content-length: 178
 
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,6 +97,39 @@ Content-length: 178
 } -->
 ```http
 HTTP/1.1 204 OK
+```
+
+## Example 2: Update a specific group setting
+
+In this example, the first `{id}` in the request is the identifier of the group, and the second `{id}` is the identifier of the setting object.
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "update_groupsetting"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/groups/{id}/settings/{id}
+Content-type: application/json
+
+{
+  "values": [
+    {
+      "name": "AllowToAddGuests",
+      "value": "false"
+    }
+  ]
+}
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+```http
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -65,68 +65,14 @@ In this example, `{id}` is the identifier of the tenant-wide groupSetting object
   "name": "update_tenant_setting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
+PATCH https://graph.microsoft.com/v1.0/groupsettings/f0b2d6f5-097d-4177-91af-a24e530b53cc
 Content-type: application/json
 
 {
-  "displayName": "Group.Unified",
-  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
     {
-      "name": "EnableMIPLabels",
-      "value": "false"
-    },
-    {
-      "name": "CustomBlockedWordsList",
-      "value": ""
-    },
-    {
-      "name": "EnableMSStandardBlockedWords",
-      "value": "false"
-    },
-    {
-      "name": "ClassificationDescriptions",
-      "value": ""
-    },
-    {
-      "name": "DefaultClassification",
-      "value": ""
-    },
-    {
-      "name": "PrefixSuffixNamingRequirement",
-      "value": ""
-    },
-    {
-      "name": "AllowGuestsToBeGroupOwner",
-      "value": "false"
-    },
-    {
-      "name": "AllowGuestsToAccessGroups",
-      "value": "true"
-    },
-    {
-      "name": "GuestUsageGuidelinesUrl",
-      "value": ""
-    },
-    {
-      "name": "GroupCreationAllowedGroupId",
-      "value": ""
-    },
-    {
       "name": "AllowToAddGuests",
-      "value": "true"
-    },
-    {
-      "name": "UsageGuidelinesUrl",
-      "value": ""
-    },
-    {
-      "name": "ClassificationList",
-      "value": ""
-    },
-    {
-      "name": "EnableGroupCreation",
-      "value": "true"
+      "value": "false"
     }
   ]
 }
@@ -166,8 +112,6 @@ In this example, the first `{id}` in the request is the identifier of the group,
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
@@ -181,30 +125,12 @@ Content-type: application/json
   "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
   "values": [
     {
-            "name": "AllowToAddGuests",
-            "value": "false"
+      "name": "AllowToAddGuests",
+      "value": "false"
     }
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
