@@ -71,7 +71,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.AAD.MobilityService.mobilityManagementPolicy",
+    "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
     "id": "String (identifier)",
     "appliesTo": "String",
     "complianceUrl": "String",

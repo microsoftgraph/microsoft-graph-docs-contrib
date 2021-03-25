@@ -67,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.graph.group"
+  "@odata.type": "#microsoft.graph.group"
 }
 -->
 
