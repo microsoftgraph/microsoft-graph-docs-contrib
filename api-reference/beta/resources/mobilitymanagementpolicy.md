@@ -73,3 +73,14 @@ The following is a JSON representation of the resource.
   "termsOfUseUrl": "String"
 }
 ```
+
+<!-- uuid: 5c98f801-d1c4-44eb-ac11-f72b6754deda
+2020-03-23T22:34:45.203Z -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "mobilityManagementPolicy resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}
+-->
