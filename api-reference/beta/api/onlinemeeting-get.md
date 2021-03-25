@@ -22,11 +22,10 @@ For example, you can:
 - Use the `/meetingAttendanceReport` path to get the attendance report for a scheduled meeting, as shown in [example 6](#example-6-retrieve-the-attendance-report-of-a-meeting).
 
 >**Notes:**
->- Currently, attendee reports and recordings are available only to live events.
+>- Currently recordings are only available for live events, and are only available when the live event has concluded.
 >- Only the event organizer can access attendee reports and recordings.
->- Attendee report and recordings of a live event are only available when the live event has concluded.
->- Attendance report of a scheduled meeting is only available when the meeting has concluded.
->- The download link in the `302 Found` [response](#example-4-retrieve-the-attendee-report-of-a-live-event) expires in **60** seconds.
+>- Attendance report of a scheduled meeting or live event is only available when the meeting or event has concluded.
+>- The download links for the live event attendee report and recordings expire in **60** seconds.
 
 ## Permissions
 
