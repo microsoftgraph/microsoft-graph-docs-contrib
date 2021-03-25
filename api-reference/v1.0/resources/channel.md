@@ -33,6 +33,7 @@ where files are shared, and where tabs are added.
 |[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of `private`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
+|[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Removes the migration mode from the channel and makes the channel available to users to post and read messages.|
 |[List tabs in channel](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a channel.|
 |[Add tab to channel](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a channel.|
 |[Get tab in channel](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a channel.|
@@ -49,7 +50,7 @@ where files are shared, and where tabs are added.
 |isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
-|membershipType|channelMembershipType|The type of the channel. Can be set during creation and cannot be changed. Possible values are: `standard` - Channel inherits the list of members of the parent team; `private` - Channel can have members that are a subset of all the members on the parent team.
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and cannot be changed. Possible values are: `standard` - Channel inherits the list of members of the parent team; `private` - Channel can have members that are a subset of all the members on the parent team.
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 
 ## Relationships
@@ -83,7 +84,7 @@ The following is a JSON representation of the resource.
   "isFavoriteByDefault": true,
   "email": "string",
   "webUrl": "string",
-  "membershipType": "string",
+  "membershipType": "channelMembershipType",
   "createdDateTime": "string (timestamp)"
 }
 ```

@@ -50,7 +50,7 @@ In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
-|-|-|-|-|
+|-|-|-|
 |listId| String | GUID of the list for which the applicable content types need to be fetched. Required. |
 
 ## Response
