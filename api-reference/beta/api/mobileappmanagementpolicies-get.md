@@ -3,11 +3,11 @@ title: "Get mobileAppManagementPolicy"
 description: "Read the properties and relationships of a mobile app management policy."
 author: "ravennMSFT"
 localization_priority: Normal
-ms.prod: "mobility-management"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-## Get mobileAppManagementPolicy
+# Get mobileAppManagementPolicy
 
 Namespace: microsoft.graph
 

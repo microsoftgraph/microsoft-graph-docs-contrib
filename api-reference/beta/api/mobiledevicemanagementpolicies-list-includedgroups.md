@@ -1,13 +1,13 @@
 ---
-title: "List groups"
+title: "List groupsof a mobile device management policy"
 description: "Get the groups from the includedGroups collection of a mobile device management policy."
 author: "ravennMSFT"
 localization_priority: Normal
-ms.prod: "mobility-management"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-## List includedGroups
+# List includedGroups
 
 Namespace: microsoft.graph
 

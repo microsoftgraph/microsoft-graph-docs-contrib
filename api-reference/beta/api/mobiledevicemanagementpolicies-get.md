@@ -3,11 +3,11 @@ title: "Get mobileDeviceManagementPolicy"
 description: "Read the properties and relationships of a mobile device management policy object."
 author: "ravennMSFT"
 localization_priority: Normal
-ms.prod: "mobility-management"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-## Get mobileDeviceManagementPolicy
+# Get mobileDeviceManagementPolicy
 
 Namespace: microsoft.graph
 

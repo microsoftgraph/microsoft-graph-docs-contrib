@@ -1,9 +1,9 @@
 ---
-title: "Delete group"
+title: "Delete group from a mobile device management policy"
 description: "Delete a group from the includedGroups collection of a mobile device management policy."
 author: "ravennMSFT"
 localization_priority: Normal
-ms.prod: "mobility-management"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

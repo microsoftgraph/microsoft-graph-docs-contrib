@@ -1,13 +1,13 @@
 ---
-title: "Add groups"
+title: "Add groups to a mobile device management policy"
 description: "Add groups by posting to the includedGroups collection for a mobile device management policy."
 author: "ravennMSFT"
 localization_priority: Normal
-ms.prod: "mobility-management"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-## Add groups
+# Add groups
 
 Namespace: microsoft.graph
 

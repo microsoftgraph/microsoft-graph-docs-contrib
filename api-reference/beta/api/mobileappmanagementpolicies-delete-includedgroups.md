@@ -1,13 +1,13 @@
 ---
-title: "Delete groups"
+title: "Delete group from mobile app management policy"
 description: "Delete group from the includedGroups collection of a mobile app management policy."
 author: "ravennMSFT"
 localization_priority: Normal
-ms.prod: "mobility-management"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-## Delete group
+# Delete group
 
 Namespace: microsoft.graph
 

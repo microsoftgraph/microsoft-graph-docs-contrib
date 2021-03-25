@@ -3,11 +3,11 @@ title: "Update mobileDeviceManagementPolicy"
 description: "Update the properties of a mobile device management object."
 author: "ravennMSFT"
 localization_priority: Normal
-ms.prod: "mobility-management"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-## Update mobileDeviceManagementPolicy
+# Update mobileDeviceManagementPolicy
 
 Namespace: microsoft.graph
 

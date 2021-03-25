@@ -3,11 +3,11 @@ title: "List mobileAppManagementPolicies"
 description: "Get a list of the mobile app management policy objects and their properties."
 author: "ravennMSFT"
 localization_priority: Normal
-ms.prod: "mobility-management"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-## List mobileAppManagementPolicies
+# List mobileAppManagementPolicies
 
 Namespace: microsoft.graph
 
