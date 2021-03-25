@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "5a319127-8866-4ef9-93c7-cbd3d9ac84fa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingattendancereport?view=graph-rest-beta) resource type to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "5a319127-8866-4ef9-93c7-cbd3d9ac84fa",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-25T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3a98db4e-7246-4b4c-b97c-feff3f93ce42",
           "ApiChange": "Method",
           "ChangedApiName": "onlineMeeting",
