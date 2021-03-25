@@ -1,9 +1,9 @@
 ---
 title: "Add groups"
 description: "Add groups by posting to the includedGroups collection for a mobile device management policy."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "ravennMSFT"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "mobility-management"
 doc_type: apiPageType
 ---
 
