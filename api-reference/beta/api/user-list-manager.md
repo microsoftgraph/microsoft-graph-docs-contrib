@@ -2,7 +2,7 @@
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -45,16 +45,12 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.  
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.  
 
-If your request includes the `$expand=manager($levels=n)` parameter to get the manager's chain, you must also include the following:
-
-- `$count=true` query string parameter
-- `ConsistencyLevel=eventual` request header
-
->**Note:** the `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
-> When the `$level` parameter is not specified, only the immediate manager is returned.  
-> You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`
+>**Note:** 
+> + The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
+> + When the `$levels` parameter is not specified, only the immediate manager is returned.  
+> + You can specify `$select` inside `$expand` to select the individual manager's properties. The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`
 
 ## Request headers
 
@@ -82,25 +78,25 @@ The following example shows a request to get the manager.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_manager"
+  "name": "get_manager_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
