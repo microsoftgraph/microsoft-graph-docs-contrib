@@ -3,7 +3,7 @@ title: "pkcs12CertificateInformation resource type"
 description: "Represents the public information of a Pkcs12 client certificate."
 author: "nickgmicrosoft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
