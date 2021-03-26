@@ -71,10 +71,9 @@ Content-Type: application/json
 Content-length: 113
 
 {
-  "decision": "String",
-  "justification": "String",
-  "principalId": "String",
-  "resourceId": "String"
+  "decision": "Approve",
+  "justification": "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team",
+  "resourceId": "a5c51e59-3fcd-4a37-87a1-835c0c21488a"
 }
 ```
 
