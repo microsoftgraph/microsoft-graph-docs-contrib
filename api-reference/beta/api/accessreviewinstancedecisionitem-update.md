@@ -60,34 +60,13 @@ This is an example of approving access for a user represented by an `accessRevie
   "name": "update_accessReviewInstanceDecisionItem"
 }-->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
+PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19
 Content-Type: application/json
 Content-length: 730
 
 {
-  "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-  "accessReviewId": "String",
-  "reviewedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "reviewedDateTime": "String (timestamp)",
-  "decision": "String",
-  "justification": "String",
-  "appliedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "appliedDateTime": "String (timestamp)",
-  "applyResult": "String",
-  "recommendation": "String",
-  "target": {
-    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemTarget"
-  },
-  "principal": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "resource": {
-    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
-  }
+  "decision": "Approve",
+  "justification": "This person is still on my team",
 }
 ```
 # [C#](#tab/csharp)
@@ -116,36 +95,8 @@ Content-length: 730
   "truncated": true,
   "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem"
 } -->
-``` http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-  "id": "6125050e-050e-6125-0e05-25610e052561",
-  "accessReviewId": "String",
-  "reviewedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "reviewedDateTime": "String (timestamp)",
-  "decision": "String",
-  "justification": "String",
-  "appliedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "appliedDateTime": "String (timestamp)",
-  "applyResult": "String",
-  "recommendation": "String",
-  "target": {
-    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemTarget"
-  },
-  "principal": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "resource": {
-    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
-  }
-}
+```http
+HTTP/1.1 204 Accepted
 ```
 
 <!--
