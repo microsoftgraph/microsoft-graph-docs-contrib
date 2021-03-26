@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents configuration to **upload** a certificate when using HTTPS client-certificate authentication for calling an API connector endpoint. Client certificate authentication is a mutual certificate-based authentication, where the client provides a client certificate to an API endpoint to prove its identity. The configured certificate of an API connector is sent by Azure AD to the given API endpoint, which then validates the certificate.
+Represents the configuration used to **upload** a certificate when using HTTPS client-certificate authentication for calling an API connector endpoint. Client certificate authentication is a mutual certificate-based authentication, where the client provides a client certificate to an API endpoint to prove its identity. The configured certificate of an API connector is sent by Azure AD to the given API endpoint, which then validates the certificate.
 
 Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md).
 
