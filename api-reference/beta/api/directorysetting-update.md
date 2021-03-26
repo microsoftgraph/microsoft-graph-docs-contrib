@@ -49,29 +49,48 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `204 OK` response code.
 
-## Example 1: Update a tenant-wide group setting
-### Request
+## Example
+##### Request
 Here is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_directorysetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53cc
+PATCH https://graph.microsoft.com/beta/settings/{id}
 Content-type: application/json
+Content-length: 178
 
 {
   "values": [
     {
-      "name": "AllowToAddGuests",
-      "value": "false"
+      "name": "name-value",
+      "value": "value-value"
     }
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-directorysetting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-directorysetting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-directorysetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-directorysetting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,39 +98,6 @@ Content-type: application/json
 } -->
 ```http
 HTTP/1.1 204 OK
-```
-
-## Example 2: Update a specific group setting
-
-In this example, the first `{id}` in the request is the identifier of the group, and the second `{id}` is the identifier of the setting object.
-
-### Request
-<!-- {
-  "blockType": "request",
-  "name": "update_directorysetting_by_id"
-}-->
-```http
-PATCH https://graph.microsoft.com/beta/groups/055a5d18-a3a9-4338-b9c5-de92559b7ebf/settings/a77ad44e-aa2a-4976-91b5-b947787b9577
-Content-type: application/json
-
-{
-  "values": [
-    {
-      "name": "AllowToAddGuests",
-      "value": "false"
-    }
-  ]
-}
-```
-
-### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": false
-} -->
-```http
-HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
