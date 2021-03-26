@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-An accessReviewQueryScope object defines what will be reviewed in an [accessReview](../resources/accessreviewsv2-root.md). It is inherited by [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveuserqueryscope.md)
+An accessReviewQueryScope object defines what will be reviewed in an [accessReview](../resources/accessreviewsv2-root.md). It is inherited by [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md)
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
