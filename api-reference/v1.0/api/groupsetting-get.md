@@ -52,18 +52,36 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [groupSetting](../resources/groupsetting.md) object in the response body.
 
 ## Example
-### Request
+##### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_groupsetting"
 }-->
 
-```http
-GET https://graph.microsoft.com/v1.0/groupSettings/f0b2d6f5-097d-4177-91af-a24e530b53cc
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsetting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsetting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groupsetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsetting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -74,70 +92,18 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 194
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings/$entity",
-  "id": "f0b2d6f5-097d-4177-91af-a24e530b53cc",
-  "displayName": "Group.Unified",
-  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+  "displayName": "displayName-value",
+  "templateId": "templateId-value",
   "values": [
     {
-      "name": "EnableMIPLabels",
-      "value": "true"
-    },
-    {
-      "name": "CustomBlockedWordsList",
-      "value": ""
-    },
-    {
-      "name": "EnableMSStandardBlockedWords",
-      "value": "true"
-    },
-    {
-      "name": "ClassificationDescriptions",
-      "value": ""
-    },
-    {
-      "name": "DefaultClassification",
-      "value": ""
-    },
-    {
-      "name": "PrefixSuffixNamingRequirement",
-      "value": "[Contoso-][GroupName]"
-    },
-    {
-      "name": "AllowGuestsToBeGroupOwner",
-      "value": "false"
-    },
-    {
-      "name": "AllowGuestsToAccessGroups",
-      "value": "true"
-    },
-    {
-      "name": "GuestUsageGuidelinesUrl",
-      "value": "https://privacy.contoso.com/privacystatement"
-    },
-    {
-      "name": "GroupCreationAllowedGroupId",
-      "value": ""
-    },
-    {
-      "name": "AllowToAddGuests",
-      "value": "true"
-    },
-    {
-      "name": "UsageGuidelinesUrl",
-      "value": ""
-    },
-    {
-      "name": "ClassificationList",
-      "value": ""
-    },
-    {
-      "name": "EnableGroupCreation",
-      "value": "true"
+      "name": "name-value",
+      "value": "value-value"
     }
-  ]
+  ],
+  "id": "id-value"
 }
 ```
 
