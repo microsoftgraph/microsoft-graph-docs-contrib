@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.mobilityManagementPolicy)"
+  "@odata.type": "microsoft.graph.mobilityManagementPolicy"
 }
 -->
 
@@ -97,3 +97,13 @@ Content-Type: application/json
   ]
 }
 ```
+
+<!-- uuid: 5c98f801-d1c4-44eb-ac11-f72b6754deda
+2020-03-23T22:34:45.203Z -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List mobileDeviceManagementPolicies",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
