@@ -56,14 +56,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
+  "@odata.type": "microsoft.graph.mobilityManagementPolicy",
   "openType": false
 }
 -->
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
   "id": "String (identifier)",
   "appliesTo": "String",
   "complianceUrl": "String",
