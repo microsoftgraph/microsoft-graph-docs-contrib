@@ -47,12 +47,11 @@ In the request body, supply a JSON representation of [directorySetting](../resou
 
 If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
-## Example 1: Create a new setting for all M365 groups in the tenant
+## Example 1: Create a new setting for all Microsoft 365 groups in the tenant
 
 ### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directorysetting_from_settings"
@@ -84,23 +83,6 @@ Content-type: application/json
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysetting-from-settings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-settings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-directorysetting-from-settings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-directorysetting-from-settings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.
 
@@ -141,7 +123,7 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Create a setting to block guests for a specific M365 group
+## Example 2: Create a setting to block guests for a specific Microsoft 365 group
 
 ### Request
 
@@ -206,5 +188,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

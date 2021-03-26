@@ -45,12 +45,10 @@ In the request body, supply a JSON representation of [groupSetting](../resources
 
 If successful, this method returns `201 Created` response code and [groupSetting](../resources/groupsetting.md) object in the response body.
 
-## Example 1: Create a new setting for all M365 groups in the tenant
+## Example 1: Create a new setting for all Microsoft 365 groups in the tenant
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_groupsetting_from_groupsettings"
@@ -82,23 +80,6 @@ Content-type: application/json
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.
 
@@ -140,7 +121,7 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Create a setting to block guests for a specific M365 group
+## Example 2: Create a setting to block guests for a specific Microsoft 365 group
 
 ### Request
 
