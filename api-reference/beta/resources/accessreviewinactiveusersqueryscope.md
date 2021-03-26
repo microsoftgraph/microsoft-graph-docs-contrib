@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInactiveUsersQueryScope resource type"
-description: "A type of accessReviewQueryScope which allows for selection of only inactive users to be in the scope of an access review."
+description: "A type of accessReviewQueryScope that allows only inactive users to be selected in the scope of an access review."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-A type of [accessReviewQueryScope](../resources/accessreviewqueryscope.md) which allows for selection of only inactive users to be in the scope of an access review.
+A type of [accessReviewQueryScope](../resources/accessreviewqueryscope.md) that allows only inactive users to be selected in the scope of an access review.
 
 Inherits from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 
@@ -22,9 +22,9 @@ Inherits from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |inactiveDuration|Duration|Defines the length of the duration period of inactivity. Inactivity is based on the last sign in date of the user.|
-|query|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md)|
-|queryRoot|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md)|
-|queryType|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md)|
+|query|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|queryRoot|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|queryType|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 
 ### Supported queries for accessReviewInactiveUserQueryScope as scope
 The same queries supported on [accessReviewScope](../resources/accessreviewscope.md) are also supported on accessReviewInactiveUserQueryScope. The following are the queries. They are supported as the `scope` property in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).
