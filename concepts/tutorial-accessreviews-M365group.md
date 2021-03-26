@@ -1,14 +1,14 @@
 ---
-title: "Tutorial: Review access to M365 groups with guest users using Microsoft Graph APIs."
-description: "Use the Access Reviews API to review access to your M365 groups"
-author: "isabelleatmsft"
+title: "Tutorial: Use the access reviews API to review access to all your Microsoft 365 groups with guest users - Microsoft Graph"
+description: "Use the access reviews API to review access to your Microsoft 365 groups"
+author: "FaithOmbongi"
 localization_priority: Normal
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the Access Reviews API to review access to all your M365 groups with guest users
+# Tutorial: Use the access reviews API to review access to all your Microsoft 365 groups with guest users
 
-In this tutorial, you will use Graph Explorer to create and read access reviews that targets all M365 Groups with guest users in the tenant. To achieve this, you'll first use Azure AD B2B to invite and create an guest user, also referred to as an external identity, in your tenant. Then, you'll add this guest user to your M365 group prior to creating and reading the access review.
+In this tutorial, you will use Graph Explorer to create and read access reviews that targets all Microsoft 365 Groups with guest users in the tenant. To achieve this, you'll first use Azure AD B2B to invite and create an guest user, also referred to as an external identity, in your tenant. Then, you'll add this guest user to your Microsoft 365 group prior to creating and reading the access review.
 
 >[!NOTE]
 >The response objects shown in this tutorial might be shortened for readability. All the properties will be returned from an actual call.
@@ -19,10 +19,10 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled. 
 + An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).
-+ Sign in to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)  as a user in a global administrator role. 
-+ Permission - For this tutorial, the following delegated permissions are needed: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
++ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)  as a user in a global administrator role. 
++ Permission - For this tutorial, you need the following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
 
-To consent to the required permissions in Microsoft Graph Explorer:
+To consent to the required permissions in Graph Explorer:
 1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
 2. Select the settings icon to the right of the user account details, and then choose **Select permissions**.
    
@@ -109,10 +109,10 @@ Content-type: application/json
 ```
 Record the **id** of the **invitedUser** from the response to be used later in this tutorial. This is **john.doe@outlook.com**'s user **id** in your tenant.
 
-## Step 3: Create a new M365 group and add the guest user
+## Step 3: Create a new Microsoft 365 group and add the guest user
 
 In this step:
-1. Create a new M365 group named **Feelgood marketing campaign**.
+1. Create a new Microsoft 365 group named **Feelgood marketing campaign**.
 2. Assign yourself as the group owner.
 3. Add john.doe@outlook.com as a group member. Their access to the group is the subject of review by you, the group owner.
 
@@ -159,14 +159,16 @@ Content-type: application/json
 }
 ```
 
-## Step 4: Create an access review for all M365 groups with guest users
+You now have a Microsoft 365 group with a guest user.
 
-You have an M365 group and it has an guest user. You can then create a recurring access review series for all M365 groups with guest users. This means that for all M365 groups with guest users, you will schedule a periodic review of the guests' access to the M365 group.
+## Step 4: Create an access review for all Microsoft 365 groups with guest users
+
+When you create a recurring access review series for all Microsoft 365 groups with guest users, you schedule a periodic review of the guests' access to the Microsoft 365 group. Do this for the **Feelgood Marketing Campaign** group.
 
 The access review series uses following settings:
 + It's a recurring access review and reviewed quarterly.
 + The group owners review the continued access of guest users.
-+ The review scope is limited to M365 groups with **Guest users** only.
++ The review scope is limited to Microsoft 365 groups with **Guest users** only.
 + A backup reviewer. This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned.
 + **autoApplyDecisionsEnabled** is set to `true`. In this case, decisions are applied automatically once the reviewer completes the access review or the access review duration ends. If not enabled, a user must, after the review completes, apply the decisions manually.
 + Apply **removeAccessApplyAction** action to denied guest users. This removes the membership in the group of the denied guest. The guest user can still sign in to your tenant.
@@ -315,7 +317,7 @@ Content-type: application/json
 
 ## Step 5: List instances of the access review
 
-The following query lists all instances of the access review definition. If your test tenant contains other M365 groups with guest users, this request will return 1 instance for every M365 group with guest users in the tenant.
+The following query lists all instances of the access review definition. If your test tenant contains other Microsoft 365 groups with guest users, this request will return one instance for every Microsoft 365 group with guest users in the tenant.
 
 ### Request
 In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition returned in Step 4.
@@ -325,7 +327,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ```
 
 ### Response
-In this response, the scope includes a group with **id** `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` because it has a guest user. This is the **Feelgood marketing campaign** group created in Step 3.
+In this response, the scope includes a group with **id** `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` (the **Feelgood marketing campaign** group created in Step 3) because it has a guest user.
 
 ```http
 HTTP/1.1 200 OK
@@ -347,7 +349,7 @@ Content-type: application/json
     ]
 }
 ```
-In this response, the access review instance is currently `InProgress`. Because this is a quarterly review, every 3 months time, a new review instance is created and you—the reviewer—can apply new decisions.
+In this response, the access review instance is currently `InProgress`. Because this is a quarterly review, every 3 months, a new review instance is created automatically and you—the reviewer—can apply new decisions.
 
 ## Step 6: Get decisions
 
@@ -410,16 +412,16 @@ Content-type: application/json
 }
 ```
 
-Because this is a quarterly review, and as long as the definition is still active, that is, the recurrence **endDate** is not a past date, every 3 months time when a new review instance is created, you as the reviewer can apply new decisions.
+Because this is a quarterly review and as long as the definition is still active, that is, the recurrence **endDate** is not a past date, every 3 months when a new review instance is created, you as the reviewer can apply new decisions.
 
 ## Step 7: Clean up resources
 
 Delete the resources that you created for this tutorial—**Feelgood marketing campaign** group, the access review schedule definition, the guest user, and the test user.
 
-### Delete the M365 group
+### Delete the Microsoft 365 group
 
 #### Request
-In this call, replace `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` with the **id** of your **Feelgood marketing campaign** M365 group.
+In this call, replace `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` with the **id** of your **Feelgood marketing campaign** Microsoft 365 group.
 
 ```http
 DELETE https://graph.microsoft.com/beta/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
@@ -477,8 +479,7 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-
-Congratulations! You have created an access review for all guest users in M365 groups in your tenant, and scheduled quarterly for the evaluation and attestation of the guest users' access. The group owners will review access during these cycles, choosing either to approve or deny access.
+Congratulations! You have created an access review for all guest users in Microsoft 365 groups in your tenant, and scheduled quarterly for the evaluation and attestation of the guest users' access. The group owners will review access during these cycles, choosing either to approve or deny access.
 
 ## See also
 
