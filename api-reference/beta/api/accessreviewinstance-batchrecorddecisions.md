@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstance: batchRecordDecisions"
-description: "Review all accessReviewInstanceDecisionItems in batches."
+description: "Emable reviewers to review all accessReviewInstanceDecisionItems in batches."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables reviewers to review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in batches by using `principalId`, `resourceId`, or neither.
+Enable reviewers to review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in batches by using `principalId`, `resourceId`, or neither.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,9 +47,9 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 | decision  | String | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
-|  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
-|principalId|String|If supplied, all the `accessReviewInstanceDecisionItems` with matching principalId will be reviewed in this batch. If not supplied, all principalIds will be reviewed.|
-|resourceId|String|If supplied, all the `accessReviewInstanceDecisionItems` with matching resourceId will be reviewed in this batch. If not supplied, all resourceIds will be reviewed.|
+|  justification | String | Context of the review provided to admins. Required if **justificationRequiredOnApproval** is `True` on the **accessReviewScheduleDefinition**.  |
+|principalId|String|If supplied, all the **accessReviewInstanceDecisionItems** with matching **principalId** will be reviewed in this batch. If not supplied, all **principalIds** will be reviewed.|
+|resourceId|String|If supplied, all the **accessReviewInstanceDecisionItems** with matching **resourceId** will be reviewed in this batch. If not supplied, all **resourceIds** will be reviewed.|
 
 
 
