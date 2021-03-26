@@ -16,7 +16,7 @@ Activity feed notifications enable partner apps to send notifications to users. 
     * The notification must not confuse the user about what they need to address or triage. For example, if an *@mention* notification is received, the panel on the right in the activity feed app must display or reference the corresponding *@mention*.
     * If the notification pertains to removal or deletion, direct users to the content indicating the action, so that they understand the outcome before taking action. For example, remove a user from a group or delete a list.
 * Ensure that the right pane experience in the feed is self-contained and does not break the feed experience. For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.
-* Check if the apps are sending more than 10 notifications per minute, per user. 
+* Verify that the apps are not sending more than 10 notifications per minute, per user. 
   > [!NOTE]
   > Notifications are throttled if the per user notification count exceeds 10.
 * Ensure that the apps are performing. The time taken for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.
@@ -29,7 +29,7 @@ This section covers feature behavior that you must be aware of when working with
 * Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
 * Provide appropriate titles and descriptions for your **Activity Types**, because the setting titles are read from the app manifest. The following table provides examples of appropriate and inappropriate titles and descriptions:
 
-   | **Appropriate** | **Inappropriate** |
+   | **Do's** | **Don'ts** |
    |-----------------|-------------------|
    |Use short titles, such as **@mention** and **Announcements**. | Do not use long titles, such as **User at-mentioned activity** and **Post creation activity**. |
  
@@ -58,13 +58,13 @@ Apply best practices that will help you send only the important information thro
   |---------------------|-------------------------|
   | Diego assigned a sales ticket to you. | Joni left the sales team. *This notification may be noisy unless this is materially important.* |
   
-* Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [guide to the difference between bot framework messages and activity feed notifications](#guide-to-the-difference-between-bot-framework-messages-and-activity-feed-notifications).
+* Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [difference between bot framework messages and activity feed notifications](#difference-between-bot-framework-messages-and-activity-feed-notifications).
 * Utilize the third line for the preview to give users information that allows them to gauge the importance and take action. Select a toast or mark for follow-up.
 
   ![Notification text preview](../concepts/images/notification-preview.png)
 * Do not add a *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
 
-## Guide to the difference between bot framework messages and activity feed notifications
+## Difference between bot framework messages and activity feed notifications
 Based on the need the user can either use bot framework messages or activity feed notifications to notify the user. The following table provides the key differences between bot framework messages and activity feed notifications:
 
 |**Bot messages**|**Activity feed notifications**|
