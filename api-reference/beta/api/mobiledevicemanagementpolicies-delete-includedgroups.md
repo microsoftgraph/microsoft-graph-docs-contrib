@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete groups by posting to the includedGroups collection.
+Delete a group from the includedGroups collection of a mobile device management policy.
 
 ## Permissions
 

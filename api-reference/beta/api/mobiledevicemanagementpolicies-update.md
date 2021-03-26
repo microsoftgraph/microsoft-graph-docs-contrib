@@ -45,16 +45,13 @@ PATCH /policies/mobileDeviceManagementPolicies/{id}
 
 In the request body, supply a JSON representation of the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.
 
-The following table shows the properties that are required when you update the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).
+In the request body, supply the values for fields listed below that should be updated. **Note:** You cannot use `PATCH` operation for `appliesTo` with the other properties.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for this policy. Equal to the id for the associated application (Inherited)|
-|appliesTo|policyScope|Determines the groups this policy setting applies to. Possible values are: `none`, `all`, `selected`|
+|appliesTo|policyScope|Determines the groups this policy setting applies to. Possible values are: `none`, `all`, `selected` **Important:** `selected` cannot be used when specifying this property. Use [includedGroups](../api/mobiledevicemanagementpolicies-post-includedgroups.md) to add specific groups. Using `all` will remove any existing groups|
 |complianceUrl|String|Compliance URL of the mobility management application|
-|description|String|Description for this policy (Inherited)|
 |discoveryUrl|String|Discovery URL of the mobility management application|
-|displayName|String|Display name for this policy (Inherited)|
 |termsOfUseUrl|String|Terms of Use URL of the mobility management application|
 
 ## Response
@@ -78,11 +75,8 @@ Content-length: 237
 
 {
   "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
-  "appliesTo": "String",
   "complianceUrl": "String",
-  "description": "String",
   "discoveryUrl": "String",
-  "displayName": "String",
   "termsOfUseUrl": "String"
 }
 ```
