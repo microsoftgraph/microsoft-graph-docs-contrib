@@ -36,7 +36,7 @@ In the future, Microsoft may require you or your customers to pay additional fee
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels/{id}/messages/{id}/replies
+POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
 ## Request headers
@@ -51,11 +51,13 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
-## Example 1: Create a new reply to a chatMessage
+## Examples
+
+### Example 1: Create a new reply to a chatMessage
 
 For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).
 
-### Request
+#### Request
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -65,7 +67,7 @@ The following is an example of a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages/1590776551682/replies
 Content-type: application/json
 
 {
@@ -94,7 +96,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 <!-- {
@@ -109,10 +111,10 @@ Content-type: application/json
 Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages('id-value')/replies/$entity",
-    "id": "id-value",
-    "replyToId": null,
-    "etag": "id-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies/$entity",
+    "id": "1591039710682",
+    "replyToId": "1590776551682",
+    "etag": "1591039710682",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
     "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
@@ -128,7 +130,7 @@ Content-length: 160
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
+            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
             "displayName": "Joh Doe",
             "userIdentityType": "aadUser"
         }
@@ -157,36 +159,20 @@ The following example show how to import back-in-time messages using the `create
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages/1590776551682/replies
 
 {
-   "replyToId":null,
-   "messageType":"message",
    "createdDateTime":"2019-02-04T19:58:15.511Z",
-   "lastModifiedDateTime":null,
-   "deleted":false,
-   "subject":null,
-   "summary":null,
-   "importance":"normal",
-   "locale":"en-us",
-   "policyViolation":null,
    "from":{
-      "application":null,
-      "device":null,
-      "conversation":null,
       "user":{
-         "id":"id-value",
-         "displayName":"Joh Doe",
-         "userIdentityType":"aadUser"
+         "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+         "displayName":"Joh Doe"
       }
    },
    "body":{
       "contentType":"html",
       "content":"Hello World"
-   },
-   "attachments":[ ],
-   "mentions":[ ],
-   "reactions":[ ]
+   }
 }
 ```
 
@@ -204,10 +190,10 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams/{teamId}/channels/{channelId}/messages/$entity",
-   "id":"id-value",
-   "replyToId":null,
-   "etag":"id-value",
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies/$entity",
+   "id":"1591039710682",
+   "replyToId":"1590776551682",
+   "etag":"1591039710682",
    "messageType":"message",
    "createdDateTime":"2019-02-04T19:58:15.511Z",
    "lastModifiedDateTime":null,
@@ -222,7 +208,7 @@ HTTP/1.1 200 OK
       "device":null,
       "conversation":null,
       "user":{
-         "id":"id-value",
+         "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
          "displayName":"Joh Doe",
          "userIdentityType":"aadUser"
       }
