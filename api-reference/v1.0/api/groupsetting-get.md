@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and [groupSetting](.
   "name": "get_groupsetting"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/groupSettings/f0b2d6f5-097d-4177-91af-a24e530b53cc
 ```
 
@@ -123,7 +123,7 @@ Content-type: application/json
     },
     {
       "name": "AllowToAddGuests",
-      "value": "false"
+      "value": "true"
     },
     {
       "name": "UsageGuidelinesUrl",
