@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The principalResourceMembershipsScope object allows for the selection of scopes to review access of the selected principals to the selected resources.
+The principalResourceMembershipsScope object allows for the selection of scopes to review access of the selected principals to the selected resources. It is used as the `scope` property of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) to review access to privileged roles.
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
@@ -29,7 +29,7 @@ None.
 
 ### Supported queries of type principalResourceMembershipsScope
 
-The following sections describe the supported principalResourceMembershipScopes based on the resources being selected.
+The following sections describe the supported principalResourceMembershipScopes as `scope` of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) based on the resources being selected.
 
 ### ServicePrincipal resource scope 
 

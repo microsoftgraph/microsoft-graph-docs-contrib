@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-An accessReviewQueryScope object defines what will be reviewed in an [accessReview](../resources/accessreviewsv2-root.md). It is inherited by [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md)
+An accessReviewQueryScope object defines what will be reviewed in an [accessReview](../resources/accessreviewsv2-root.md). To scope an access review to inactive users, see [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md). 
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
@@ -36,7 +36,8 @@ The queries are supported as the `scope` property in an [accessReviewScheduleDef
 | Entitlement Management Access Package Assignment Reviews | /identityGovernance/entitlementManagement/accessPackageAssignments?$filter=(accessPackageId eq '{package id}' and assignmentPolicyId eq '{id}')| Note that only READ is supported for Access Package Assignment Reviews|
 | Review of Service Principals assigned to privileged roles | /beta/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.servicePrincipal') and roleDefinitionId eq '9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3') | |
 
-### Supported queries for "instanceEnumerationScope" property
+### Supported queries for instanceEnumerationScope 
+The queries are supported as the `instanceEnumerationScope` property in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md)
 
 |Scenario| Query | Additional Comments |
 |--|--|--|
