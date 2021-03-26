@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
