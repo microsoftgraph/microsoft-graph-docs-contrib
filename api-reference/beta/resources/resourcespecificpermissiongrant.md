@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resourceSpecificGrant declares the specific permission that has been granted to a specific AzureAD app for a specific instance of a resource in Microsoft Graph..
+A resourceSpecificGrant declares the specific permission that has been granted to a specific AzureAD app for a specific instance of a resource in Microsoft Graph.
 
 
 ## Methods
@@ -27,7 +27,7 @@ A resourceSpecificGrant declares the specific permission that has been granted t
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-| id| String| The chat's unique identifier. Read-only.|
+| id| string| The chat's unique identifier. Read-only.|
 | deletedDateTime| dateTimeOffset|  Not used.|
 | clientId| string|  ID of the AAD app that has been granted access. Read-only.|
 | clientAppId| string| ID of the service principal of the AAD app that has been granted access. Read-only.|

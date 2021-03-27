@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [resource specific permission grants](../resources/resourcespecificpermissiongrant.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a list of [resource specific permission grant](../resources/resourcespecificpermissiongrant.md) objects in the response body.
 
 
 ## Example
@@ -87,7 +87,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
+Content-length: 291
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#permissionGrants",
