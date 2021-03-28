@@ -178,13 +178,13 @@ Content-length: 160
 #### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel_3"
 }-->
+
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -207,19 +207,6 @@ Content-type: application/json
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-3-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -236,33 +223,39 @@ Content-type: application/json
 Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages/$entity",
-    "id": "id-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616965872395",
     "replyToId": null,
-    "etag": "id-value",
+    "etag": "1616965872395",
     "messageType": "message",
-    "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-28T21:11:12.395Z",
+    "lastModifiedDateTime": "2021-03-28T21:11:12.395Z",
     "lastEditedDateTime": null,
-    "deleted": false,
+    "deletedDateTime": null,
     "subject": null,
     "summary": null,
+    "chatId": null,
     "importance": "normal",
     "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616965872395?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616965872395&parentMessageId=1616965872395",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
-            "displayName": "Joh Doe",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Ramjot Singh",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
         "contentType": "html",
         "content": "Hello World <at id=\"0\">Jane Smith</at>"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
     "attachments": [],
     "mentions": [

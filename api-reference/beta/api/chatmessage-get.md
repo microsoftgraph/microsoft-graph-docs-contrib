@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a single [message](chatmessage.md) or it's [reply](chatmessage.md) in a [channel](channel.md) or a [chat](chat.md).
+Retrieve a single [message](../resources/chatmessage.md) or it's [reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/chats/19:8ea0e38b-efb3-4757-924a-5f94061cf8
 ```
 
 #### Response
-Here is an example of the response. `chatId` lists the [chat](chat.md) this message is part of.
+Here is an example of the response. `chatId` lists the [chat](../resources/chat.md) this message is part of.
 
 <!-- {
   "blockType": "response",
@@ -140,7 +140,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 ```
 
 #### Response
-Here is an example of the response. `channelIdentity` lists the [team](team.md) and [channel](channel.md) this message is part of.
+Here is an example of the response. `channelIdentity` lists the [team](../resources/team.md) and [channel](../resources/channel.md) this message is part of.
 
 <!-- {
   "blockType": "response",

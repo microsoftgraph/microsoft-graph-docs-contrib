@@ -13108,7 +13108,7 @@ items:
         - name: Remove member
           href: api/chat-delete-members.md
         - name: List messages in a chat
-          href: api/chat-list-message.md
+          href: api/chat-list-messages.md
         - name: Get message in chat
           href: api/chatmessage-get.md
         - name: Send message in chat
