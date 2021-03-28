@@ -3,7 +3,7 @@ title: "chatMessages: delta"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. By using delta query, you can get new or updated messages in a channel."
 localization_priority: Priority
 doc_type: apiPageType
-author: "clearab"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 ---
 
@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md). By using delta query, you can get new or updated messages in a channel.
 
-> **Note:** Delta will only return messages within the last eight months. You can use [GET /teams/{id}/channels/{id}/messages](channel-list-messages.md) to retrieve older messages.
+> **Note:** Delta will only return messages within the last eight months. You can use [GET /teams/{team-id}/channels/{channel-id}/messages](channel-list-messages.md) to retrieve older messages.
 
 Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that calendar view periodically.
 
-To get the replies for a message, use the [list message replies](channel-get-messagereply.md) or the [get message reply](channel-list-messagereplies.md) operation.
+To get the replies for a message, use the [list message replies](chatmessage-list-replies.md) or the [get message reply](chatmessage-get.md) operation.
 
 A GET request with the delta function returns either:
 
@@ -48,7 +48,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}/messages/delta
+GET /teams/{team-id}/channels/{channel-id}/messages/delta
 ```
 
 ## Query parameters

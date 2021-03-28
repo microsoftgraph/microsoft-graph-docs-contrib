@@ -1,7 +1,7 @@
 ---
 title: "Update chatMessage"
 description: "Update the policyViolation property of a chatMessage."
-author: "clearab"
+author: "RamjotSingh"
 doc_type: apiPageType
 localization_priority: Normal 
 ms.prod: "microsoft-teams"

@@ -1,7 +1,7 @@
 ---
 title: "Get chat"
 description: "Retrieve a single chat."
-author: "bhartono"
+author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

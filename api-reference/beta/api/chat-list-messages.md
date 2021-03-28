@@ -2,7 +2,7 @@
 title: "List chat messages"
 description: "Retrieve the list of messages in a chat. "
 localization_priority: Priority
-author: "nkramer"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
