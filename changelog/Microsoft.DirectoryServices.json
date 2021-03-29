@@ -3,60 +3,60 @@
     {
       "ChangeList": [
         {
-          "Id": "e23b0656-6ac9-45fa-8651-4bee161d2f29",
-          "ApiChange": "Resource",
-          "ChangedApiName": "permissions reference",
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleAssignment.Read.Directory",
           "ChangeType": "Addition",
-          "Description": "Added the RoleAssignment.Read.Directory delegated permission to read all active role assignments for your company\u0027s directory. To learn more, please see the [permissions reference](https://docs.microsoft.com/en-us/graph/permissions-reference).",
-          "Target": "permissions reference"
+          "Description": "Added support for the delegated permission of **RoleAssignment.Read.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
         },
         {
-          "Id": "e23b0656-6ac9-45fa-8651-4bee161d2f29",
-          "ApiChange": "Resource",
-          "ChangedApiName": "permissions reference",
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleEligibility.Read.Directory",
           "ChangeType": "Addition",
-          "Description": "Added the RoleEligibility.Read.Directory delegated permission to read all eligible role assignments for your company\u0027s directory. To learn more, please see [permissions reference](https://docs.microsoft.com/en-us/graph/permissions-reference).",
-          "Target": "permissions reference"
+          "Description": "Added support for the delegated permission of **RoleEligibility.Read.Directory**  to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
         },
         {
-          "Id": "e23b0656-6ac9-45fa-8651-4bee161d2f29",
-          "ApiChange": "Resource",
-          "ChangedApiName": "permissions reference",
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleManagementPolicy.Read.Directory",
           "ChangeType": "Addition",
-          "Description": "Added the RoleManagementPolicy.Read.Directory delegated permission to read all policies for privileged role assignments for your company\u0027s directory. To learn more, please see [permissions reference](https://docs.microsoft.com/en-us/graph/permissions-reference).",
-          "Target": "permissions reference"
+          "Description": "Added support for the delegated permission of **RoleManagementPolicy.Read.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
         },
         {
-          "Id": "e23b0656-6ac9-45fa-8651-4bee161d2f29",
-          "ApiChange": "Resource",
-          "ChangedApiName": "permissions reference",
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleAssignment.ReadWrite.Directory",
           "ChangeType": "Addition",
-          "Description": "Added the RoleAssignment.ReadWrite.Directory delegated permission to read, update, and delete all active role assignments for your company\u0027s directory. To learn more, please see [permissions reference](https://docs.microsoft.com/en-us/graph/permissions-reference).",
-          "Target": "permissions reference"
+          "Description": "Added support for the delegated permission of **RoleAssignment.ReadWrite.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
         },
         {
-          "Id": "e23b0656-6ac9-45fa-8651-4bee161d2f29",
-          "ApiChange": "Resource",
-          "ChangedApiName": "permissions reference",
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleEligibility.ReadWrite.Directory",
           "ChangeType": "Addition",
-          "Description": "Added the RoleEligibility.ReadWrite.Directory delegated permission to read, update, and delete  all eligible role assignments for your company\u0027s directory. To learn more, please see [permissions reference](https://docs.microsoft.com/en-us/graph/permissions-reference).",
-          "Target": "permissions reference"
+          "Description": "Added support for the delegated permission of **RoleEligibility.ReadWrite.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
         },
         {
-          "Id": "e23b0656-6ac9-45fa-8651-4bee161d2f29",
-          "ApiChange": "Resource",
-          "ChangedApiName": "permissions reference",
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleManagementPolicy.ReadWrite.Directory",
           "ChangeType": "Addition",
-          "Description": "Added the RoleManagementPolicy.ReadWrite.Directory delegated permission to read, update, and delete all policies for privileged role assignments for your company\u0027s directory. To learn more, please see [permissions reference](https://docs.microsoft.com/en-us/graph/permissions-reference).",
-          "Target": "permissions reference"
+          "Description": "Added support for the delegated permission of **RoleManagementPolicy.ReadWrite.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
         }
       ],
-      "Id": "e23b0656-6ac9-45fa-8651-4bee161d2f29",
+      "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-03-01T00:00:00",
-      "WorkloadArea": "Identity and access ",
-      "SubArea": " Directory management"
+      "CreatedDateTime": "2021-03-29T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
