@@ -1,5 +1,5 @@
 ---
-title: "channels: getAllMessages"
+title: "List messages across all channels in a team"
 description: "Retrieve all messages across channels in a team."
 author: "RamjotSingh"
 localization_priority: Priority
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# channels: getAllMessages
+# List messages across all channels in a team
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve all [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md) including text, audio, and video conversations.
+Retrieve [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md) including text, audio, and video conversations.
 
 ## Permissions
 
@@ -32,12 +32,13 @@ The following permissions are required to call this API. To learn more, includin
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/getAllMessages
+GET /teams/{team-id}/channels/getAllMessages
 ```
 
 ## Optional query parameters
 
-This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.
+You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.
+The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
 ## Request body
 
@@ -51,8 +52,8 @@ If successful, this method returns a `200 OK` response code and also returns all
 
 ### Request
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/0e05a7e4-a48d-4615-b0b7-c7494da9ce68/channels/getAllMessages
+```http
+GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/getAllMessages
 ```
 
 ### Response
@@ -67,71 +68,83 @@ GET https://graph.microsoft.com/beta/teams/0e05a7e4-a48d-4615-b0b7-c7494da9ce68/
 HTTP/1.1 200 OK
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metdata#Collection(chatMessage)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",
     "@odata.count": 2,
-    "@odata.nextLink": "https://graph.microsoft.com/beta/teams/a5212c6a-a8b1-49cd-bd40-7f83f0a42861/channels/getAllMessages?$top=2&$skip=2",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/getAllMessages?$skip=2",
     "value": [
         {
-            "@odata.id": "https://graph.microsoft.com/beta/teams/ab5332ba-6dd9-46d3-ade5-5c61a2f148b2/channels/19%3A72409da00b014de5ba2d2bef4a44db09%40thread.tacv2/messages/1580173996201",
-            "id": "1580173996201",
+            "@odata.type": "#microsoft.graph.chatMessage",
+            "id": "1616990417393",
             "replyToId": null,
-            "etag": "1580173996201",
+            "etag": "1616990417393",
             "messageType": "message",
-            "createdDateTime": "2020-01-28T01:13:16.201Z",
-            "lastModifiedDateTime": null,
+            "createdDateTime": "2021-03-29T04:00:17.393Z",
+            "lastModifiedDateTime": "2021-03-29T04:00:17.393Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
+            "chatId": null,
             "importance": "normal",
             "locale": "en-us",
-            "webUrl": "https://teams.microsoft.com/l/message/19%3A72409da00b014de5ba2d2bef4a44db09%40thread.tacv2/1580173996201?groupId=ab5332ba-6dd9-46d3-ade5-5c61a2f148b2&tenantId=e0d829d2-c239-4b28-9d08-c096da71be7a&createdTime=1580173996201&parentMessageId=1580173996201",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3Ad5d2708d408c41d98424c1c354c19db3%40thread.tacv2/1616990417393?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990417393&parentMessageId=1616990417393",
             "policyViolation": null,
             "from": {
                 "application": null,
                 "device": null,
                 "conversation": null,
                 "user": {
-                    "id": "a5212c6a-a8b1-49cd-bd40-7f83f0a42861",
-                    "displayName": "spoons test",
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Ramjot Singh",
                     "userIdentityType": "aadUser"
                 }
             },
             "body": {
                 "contentType": "text",
-                "content": "Test"
+                "content": "Test message"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:d5d2708d408c41d98424c1c354c19db3@thread.tacv2"
             },
             "attachments": [],
             "mentions": [],
             "reactions": []
         },
-		{
-            "@odata.id": "https://graph.microsoft.com/beta/teams/ab5332ba-6dd9-46d3-ade5-5c61a2f148b2/channels/19%3A72409da00b014de5ba2d2bef4a44db09%40thread.tacv2/messages/1580768557513",
-            "id": "1580768557513",
-            "replyToId": null,
-            "etag": "1580768557513",
+        {
+            "@odata.type": "#microsoft.graph.chatMessage",
+            "id": "1616990171266",
+            "replyToId": "1616990032035",
+            "etag": "1616990171266",
             "messageType": "message",
-            "createdDateTime": "2020-02-03T22:22:37.513Z",
-            "lastModifiedDateTime": null,
+            "createdDateTime": "2021-03-29T03:56:11.266Z",
+            "lastModifiedDateTime": "2021-03-29T03:56:11.266Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
+            "chatId": null,
             "importance": "normal",
             "locale": "en-us",
-            "webUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616990171266?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990171266&parentMessageId=1616990032035",
             "policyViolation": null,
             "from": {
                 "application": null,
                 "device": null,
                 "conversation": null,
                 "user": {
-                    "id": "a5212c6a-a8b1-49cd-bd40-7f83f0a42861",
-                    "displayName": "spoons test",
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Ramjot Singh",
                     "userIdentityType": "aadUser"
                 }
             },
             "body": {
                 "contentType": "text",
-                "content": "hi user1,user3"
+                "content": "Hello World"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
             "attachments": [],
             "mentions": [],

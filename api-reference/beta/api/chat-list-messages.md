@@ -34,14 +34,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/chats/{id}/messages
-GET /users/{id}/chats/{id}/messages
-GET /chats/{id}/messages
+GET /me/chats/{chat-id}/messages
+GET /users/{user-id}/chats/{chat-id}/messages
+GET /chats/{chat-id}/messages
 ```
 
 ## Optional query parameters
 
-This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.
+You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. Maximum allowed `$top` value is 50.
+The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
 ## Request headers
 
@@ -61,38 +62,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here is an example of the request.
+Here is an example of the request. `$top=2` is passed to retrieve 2 messages.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_chat_messages"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/{id}/messages
+```http
+GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-messages-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-messages-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-messages-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chat-messages-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,165 +80,79 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf%40unq.gbl.spaces')/messages",
-    "@odata.count": 4,
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces/messages?$skiptoken=M2Y1YjAwMDAwMDMxMzkzYTM4NjIzMDM4MzE2NTY2MzYyZDM0MzczOTMyMmQzNDY0NjU2NjJkNjIzMjYzMzkyZDYzMzMzNjMzNjEzMTYyNjYzNDMxNjQzNTVmMzgzNzM3MzEzOTMyNjI2NDJkMzkzMTM4MzMyZDM0Mzc2NDMzMmQ2MTM3MzQ2MzJkMzg2MTYxMzAzNDMyMzYzNzMxMzY2MzY2NDA3NTZlNzEyZTY3NjI2YzJlNzM3MDYxNjM2NTczMDE5N2Y3ZGMzMjZhMDEwMDAwMDg1YjNmNGI2YTAxMDAwMDAwfDE1NTU2MzE3MjIxNDc%3d",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages",
+    "@odata.count": 2,
+    "@odata.nextLink": "https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
     "value": [
         {
-            "id": "1555631722147",
+            "id": "1616964509832",
             "replyToId": null,
-            "etag": "1555631722147",
+            "etag": "1616964509832",
             "messageType": "message",
-            "createdDateTime": "2019-04-18T23:55:22.147Z",
-            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "createdDateTime": "2021-03-28T20:48:29.832Z",
+            "lastModifiedDateTime": "2021-03-28T20:48:29.832Z",
             "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
+            "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
             "importance": "normal",
             "locale": "en-us",
-            "policyViolation": null,
-            "from": {
-                "device": null,
-                "user": null,
-                "conversation": null,
-                "application": {
-                    "id": "877192bd-9183-47d3-a74c-8aa0426716cf",
-                    "displayName": "TestBot",
-                    "applicationIdentityType": "bot"
-                }
-            },
-            "body": {
-                "contentType": "html",
-                "content": "<attachment id=\"a7bda643d32b4541b74ec1f4ace7f391\"></attachment>"
-            },
-            "attachments": [
-                {
-                    "id": "a7bda643d32b4541b74ec1f4ace7f391",
-                    "contentType": "application/vnd.microsoft.card.signin",
-                    "contentUrl": null,
-                    "content": "{\r\n  \"text\": \"Please sign in to sample to proceed.\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"signin\",\r\n      \"title\": \"Sign In\",\r\n      \"value\": \"https://token.botframework.com/api/oauth/signin?signin=921d46120f7695632ce6ca4b0da2e3ae15fea54c47\"\r\n    }\r\n  ]\r\n}",
-                    "name": null,
-                    "thumbnailUrl": null
-                }
-            ],
-            "mentions": [],
-            "reactions": []
-        },
-        {
-            "id": "1555631540287",
-            "replyToId": null,
-            "etag": "1555631540287",
-            "messageType": "message",
-            "createdDateTime": "2019-04-18T23:52:20.287Z",
-            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
-            "lastEditedDateTime": null,
-            "deletedDateTime": null,
-            "subject": "",
-            "summary": null,
-            "importance": "normal",
-            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
             "policyViolation": null,
             "from": {
                 "application": null,
                 "device": null,
                 "conversation": null,
                 "user": {
-                    "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-                    "displayName": "MOD Administrator",
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Ramjot Singh",
                     "userIdentityType": "aadUser"
                 }
             },
             "body": {
                 "contentType": "text",
-                "content": "yo"
+                "content": "Hello world"
             },
             "attachments": [],
             "mentions": [],
             "reactions": []
         },
         {
-            "id": "1555631512068",
+            "id": "1615971548136",
             "replyToId": null,
-            "etag": "1555631512068",
+            "etag": "1615971548136",
             "messageType": "message",
-            "createdDateTime": "2019-04-18T23:51:52.068Z",
-            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "createdDateTime": "2021-03-17T08:59:08.136Z",
+            "lastModifiedDateTime": "2021-03-17T08:59:08.136Z",
             "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
+            "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
             "importance": "normal",
             "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
             "policyViolation": null,
             "from": {
+                "application": null,
                 "device": null,
-                "user": null,
                 "conversation": null,
-                "application": {
-                    "id": "877192bd-9183-47d3-a74c-8aa0426716cf",
-                    "displayName": "TestBot",
-                    "applicationIdentityType": "bot"
+                "user": {
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Ramjot Singh",
+                    "userIdentityType": "aadUser"
                 }
             },
             "body": {
                 "contentType": "html",
-                "content": "<attachment id=\"6309ad5424a04c5899efd130342b165a\"></attachment>"
+                "content": "<div><div><div><span><img height=\"63\" src=\"https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv/$value\" width=\"67\" style=\"vertical-align:bottom; width:67px; height:63px\"></span></div></div></div>"
             },
-            "attachments": [
-                {
-                    "id": "6309ad5424a04c5899efd130342b165a",
-                    "contentType": "application/vnd.microsoft.card.signin",
-                    "contentUrl": null,
-                    "content": "{\r\n  \"text\": \"Please sign in to sample to proceed.\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"signin\",\r\n      \"title\": \"Sign In\",\r\n      \"value\": \"https://token.botframework.com/api/oauth/signin?signin=921d46120f978574f2993640bf9cbc5e438824a645\"\r\n    }\r\n  ]\r\n}",
-                    "name": null,
-                    "thumbnailUrl": null
-                }
-            ],
-            "mentions": [],
-            "reactions": []
-        },
-        {
-            "id": "1555631511115",
-            "replyToId": null,
-            "etag": "1555631511115",
-            "messageType": "message",
-            "createdDateTime": "2019-04-18T23:51:51.115Z",
-            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
-            "lastEditedDateTime": null,
-            "deletedDateTime": null,
-            "subject": null,
-            "summary": null,
-            "importance": "normal",
-            "locale": "en-us",
-            "policyViolation": null,
-            "from": {
-                "device": null,
-                "user": null,
-                "conversation": null,
-                "application": {
-                    "id": "877192bd-9183-47d3-a74c-8aa0426716cf",
-                    "displayName": "TestBot",
-                    "applicationIdentityType": "bot"
-                }
-            },
-            "body": {
-                "contentType": "html",
-                "content": "<attachment id=\"9b6e6d3bde7741bcac561bb15ec2721b\"></attachment>"
-            },
-            "attachments": [
-                {
-                    "id": "9b6e6d3bde7741bcac561bb15ec2721b",
-                    "contentType": "application/vnd.microsoft.card.signin",
-                    "contentUrl": null,
-                    "content": "{\r\n  \"text\": \"Please sign in to sample to proceed.\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"signin\",\r\n      \"title\": \"Sign In\",\r\n      \"value\": \"https://token.botframework.com/api/oauth/signin?signin=921d46120f01039912d88040739e2780ef54656557\"\r\n    }\r\n  ]\r\n}",
-                    "name": null,
-                    "thumbnailUrl": null
-                }
-            ],
+            "attachments": [],
             "mentions": [],
             "reactions": []
         }

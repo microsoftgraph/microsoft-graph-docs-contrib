@@ -1,13 +1,13 @@
 ---
-title: "Send chatMessage in a chat"
-description: "Send a new chatMessage in a chat."
+title: "Send message in a chat"
+description: "Send a new message in a chat."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Send chatMessage in a chat
+# Send message in a chat
 
 Namespace: microsoft.graph
 
@@ -59,12 +59,6 @@ For a more comprehensive list of examples, see [Create chatMessage in a channel 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_chatmessage_from_chat"
-}-->
-
 ```http
 POST https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages
 Content-type: application/json
@@ -92,12 +86,12 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages/$entity",
-    "id": "1616964509832",
+    "id": "1616991463150",
     "replyToId": null,
-    "etag": "1616964509832",
+    "etag": "1616991463150",
     "messageType": "message",
-    "createdDateTime": "2021-03-28T20:48:29.832Z",
-    "lastModifiedDateTime": "2021-03-28T20:48:29.832Z",
+    "createdDateTime": "2021-03-29T04:17:43.15Z",
+    "lastModifiedDateTime": "2021-03-29T04:17:43.15Z",
     "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
@@ -120,7 +114,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "text",
-        "content": "Hello world"
+        "content": "Hello World"
     },
     "attachments": [],
     "mentions": [],

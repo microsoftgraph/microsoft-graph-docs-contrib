@@ -36,12 +36,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}/messages/{id}/replies
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
 ## Optional query parameters
 
-You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. 
+You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. Maximum allowed `$top` value is 50.
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
 ## Request headers
@@ -58,34 +58,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ### Request
-In this example, the specified message has two replies. Each reply has one or more [chatMessageMention](../resources/chatmessagemention.md) objects.
+In this example, the specified message has three replies.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype", "1555375673184"],
-  "name": "get_channel_message_replies"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages/1555375673184/replies
+```http
+GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616989510408/replies
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-message-replies-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-message-replies-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-channel-message-replies-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-channel-message-replies-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 Here is an example of the response. 
@@ -102,115 +79,121 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('303d2c1c-f1c5-40ce-b68e-544343d7f42b')/channels('19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype')/messages('1555375673184')/replies",
-    "@odata.count": 2,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages('1616989510408')/replies",
+    "@odata.count": 3,
     "value": [
         {
-            "id": "1555377090002",
-            "replyToId": "1555375673184",
-            "etag": "1555377090002",
+            "id": "1616989753153",
+            "replyToId": "1616989510408",
+            "etag": "1616989753153",
             "messageType": "message",
-            "createdDateTime": "2019-04-16T01:11:30.002Z",
-            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "createdDateTime": "2021-03-29T03:49:13.153Z",
+            "lastModifiedDateTime": "2021-03-29T03:49:13.153Z",
             "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
+            "chatId": null,
             "importance": "normal",
             "locale": "en-us",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989753153?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989753153&parentMessageId=1616989510408",
             "policyViolation": null,
             "from": {
                 "application": null,
                 "device": null,
                 "conversation": null,
                 "user": {
-                    "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
-                    "displayName": "Adele Vance",
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Ramjot Singh",
                     "userIdentityType": "aadUser"
                 }
             },
             "body": {
-                "contentType": "html",
-                "content": "<div><div>Ah, <at id=\"0\">Megan</at>, <at id=\"1\">Alex</at>, I saw them in a separate folder. Thanks!</div>\n</div>"
+                "contentType": "text",
+                "content": "Reply3"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
             "attachments": [],
-            "mentions": [
-                {
-                    "id": 0,
-                    "mentionText": "Megan",
-                    "mentioned": {
-                        "application": null,
-                        "device": null,
-                        "conversation": null,
-                        "user": {
-                            "id": "5d8d505c-864f-4804-88c7-4583c966cde8",
-                            "displayName": "Megan",
-                            "userIdentityType": "aadUser"
-                        }
-                    }
-                },
-                {
-                    "id": 1,
-                    "mentionText": "Alex",
-                    "mentioned": {
-                        "application": null,
-                        "device": null,
-                        "conversation": null,
-                        "user": {
-                            "id": "be178404-260a-4f80-b7e5-d52c1e6fdc71",
-                            "displayName": "Alex",
-                            "userIdentityType": "aadUser"
-                        }
-                    }
-                }
-            ],
+            "mentions": [],
             "reactions": []
         },
         {
-            "id": "1555375848360",
-            "replyToId": "1555375673184",
-            "etag": "1555375848360",
+            "id": "1616989750004",
+            "replyToId": "1616989510408",
+            "etag": "1616989750004",
             "messageType": "message",
-            "createdDateTime": "2019-04-16T00:50:48.36Z",
-            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "createdDateTime": "2021-03-29T03:49:10.004Z",
+            "lastModifiedDateTime": "2021-03-29T03:49:10.004Z",
             "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
+            "chatId": null,
             "importance": "normal",
             "locale": "en-us",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989750004?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989750004&parentMessageId=1616989510408",
             "policyViolation": null,
             "from": {
                 "application": null,
                 "device": null,
                 "conversation": null,
                 "user": {
-                    "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
-                    "displayName": "Adele Vance",
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Ramjot Singh",
                     "userIdentityType": "aadUser"
                 }
             },
             "body": {
-                "contentType": "html",
-                "content": "<div><div>And, <at id=\"0\">Alex Wilber</at>, can we see the February report as well?</div>\n</div>"
+                "contentType": "text",
+                "content": "Reply2"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
             "attachments": [],
-            "mentions": [
-                {
-                    "id": 0,
-                    "mentionText": "Alex Wilber",
-                    "mentioned": {
-                        "application": null,
-                        "device": null,
-                        "conversation": null,
-                        "user": {
-                            "id": "be178404-260a-4f80-b7e5-d52c1e6fdc71",
-                            "displayName": "Alex Wilber",
-                            "userIdentityType": "aadUser"
-                        }
-                    }
+            "mentions": [],
+            "reactions": []
+        },
+        {
+            "id": "1616989747416",
+            "replyToId": "1616989510408",
+            "etag": "1616989747416",
+            "messageType": "message",
+            "createdDateTime": "2021-03-29T03:49:07.416Z",
+            "lastModifiedDateTime": "2021-03-29T03:49:07.416Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": null,
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989747416?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989747416&parentMessageId=1616989510408",
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Ramjot Singh",
+                    "userIdentityType": "aadUser"
                 }
-            ],
+            },
+            "body": {
+                "contentType": "text",
+                "content": "Reply1"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+            },
+            "attachments": [],
+            "mentions": [],
             "reactions": []
         }
     ]
