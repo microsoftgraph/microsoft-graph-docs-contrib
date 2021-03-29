@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 ### Example 1: Update default branding
-If the branding already exists, PATCH will replace only the specified properties, leaving unspecified properties unchanged. 
+If the branding already exists, `PATCH` will replace only the specified properties, leaving unspecified properties unchanged. 
 #### Request
 
 The following is an example of the request.
@@ -133,24 +133,6 @@ Content-Type: image/jpeg
 
 <Image>
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 The following is an example of the response.
@@ -166,7 +148,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 3: Update localized branding
-If Content-Language header is specified the localization associated with Content-Language is created, if it doesn't already exist, and then updated using the specified values. The default branding is not changed.
+If **Content-Language** header is specified the localization associated with **Content-Language** is created, if it doesn't already exist, and then updated using the specified values. The default branding is not changed.
 #### Request
 
 The following is an example of the request.
@@ -198,7 +180,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-Following this request, the fr localization is updated with the new value of backgroundColor, but no change is made to the default /branding.
+Following this request, the `fr` localization is updated with the new value of **backgroundColor**, but no change is made to the default branding.
 
 ### Example 4: Replace default branding and all localizations
 If the branding already exists, PUT will replace the default branding and any localizations.
@@ -254,7 +236,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-Following this request, the default branding has only the backgroundColor specified and has exactly one localization with the id fr, also with the backgroundColor set.
+Following this request, the default branding has only the **backgroundColor** specified and has exactly one localization with the **id** `fr`, also with the **backgroundColor** set.
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
