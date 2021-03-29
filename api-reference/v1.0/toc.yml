@@ -4157,34 +4157,34 @@ items:
                 href: api/namedlocation-get.md
               - name: Delete
                 href: api/namedlocation-delete.md
-            - name: Country named location
-              items:
               - name: Country named location
-                href: resources/countrynamedlocation.md
-              - name: List
-                href: api/conditionalaccessroot-list-namedlocations.md
-              - name: Create
-                href: api/conditionalaccessroot-post-namedlocations.md
-              - name: Get
-                href: api/countrynamedlocation-get.md
-              - name: Update
-                href: api/countrynamedlocation-update.md
-              - name: Delete
-                href: api/countrynamedlocation-delete.md
-            - name: IP named location
-              items:
+                items:
+                - name: Country named location
+                  href: resources/countrynamedlocation.md
+                - name: List
+                  href: api/conditionalaccessroot-list-namedlocations.md
+                - name: Create
+                  href: api/conditionalaccessroot-post-namedlocations.md
+                - name: Get
+                  href: api/countrynamedlocation-get.md
+                - name: Update
+                  href: api/countrynamedlocation-update.md
+                - name: Delete
+                  href: api/countrynamedlocation-delete.md
               - name: IP named location
-                href: resources/ipnamedlocation.md
-              - name: List
-                href: api/conditionalaccessroot-list-namedlocations.md
-              - name: Create
-                href: api/conditionalaccessroot-post-namedlocations.md
-              - name: Get
-                href: api/ipnamedlocation-get.md
-              - name: Update
-                href: api/ipnamedlocation-update.md
-              - name: Delete
-                href: api/ipnamedlocation-delete.md
+                items:
+                - name: IP named location
+                  href: resources/ipnamedlocation.md
+                - name: List
+                  href: api/conditionalaccessroot-list-namedlocations.md
+                - name: Create
+                  href: api/conditionalaccessroot-post-namedlocations.md
+                - name: Get
+                  href: api/ipnamedlocation-get.md
+                - name: Update
+                  href: api/ipnamedlocation-update.md
+                - name: Delete
+                  href: api/ipnamedlocation-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -5228,6 +5228,8 @@ items:
           href: api/team-get-primarychannel.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/1.0
+        - name: Complete migration for team
+          href: api/team-completemigration.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -5294,6 +5296,8 @@ items:
           href: api/channel-update-members.md   
         - name: Remove member
           href: api/channel-delete-members.md
+        - name: Complete migration for channel
+          href: api/channel-completemigration.md
         - name: Get files folder
           href: api/channel-get-filesfolder.md
         - name: List channel messages
