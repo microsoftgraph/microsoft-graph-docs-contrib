@@ -147,7 +147,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 3: Update localized branding
-If **Content-Language** header is specified the localization associated with **Content-Language** is created, if it doesn't already exist, and then updated using the specified values. The default branding is not changed.
+If **Content-Language** header is specified, the localization associated with **Content-Language** is first created if it doesn't already exist, and then updated using the specified values. The default branding is not changed.
 #### Request
 
 The following is an example of the request.

@@ -51,7 +51,7 @@ In the request body, supply the values for relevant fields that should be update
 |squareLogo|Stream|Square version of your company logo. This appears in Windows 10 out-of-box (OOBE) experiences and when Windows Autopilot is enabled for deployment. .png or .jpg no larger than 240x240px and no more than 10kb in size. We recommend using a transparent image with no padding around the logo.|
 |usernameHintText|String|String that shows as the hint in the username textbox on the sign in screen. This text must be Unicode, without links or code, and can't exceed 64 characters.|
 
-The `id` property is ignored when passed in.
+The **id** property is ignored when passed in.
 
 ## Response
 
@@ -98,7 +98,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 The following is an example of the response.
 
@@ -112,7 +111,7 @@ The following is an example of the response.
 HTTP/1.1 204 OK
 ```
 
-In this case, the values of the default /branding are updated but no values are changed on any localization.
+In this case, the values of the default branding are updated but no values are changed on any localization.
 
 ### Example 2: Update bannerLogo for default branding
 The following request updates the banner logo for the default branding.
@@ -148,7 +147,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 3: Update localized branding
-If **Content-Language** header is specified the localization associated with **Content-Language** is created, if it doesn't already exist, and then updated using the specified values. The default branding is not changed.
+If **Content-Language** header is specified, the localization associated with **Content-Language** is first created if it doesn't already exist, and then updated using the specified values. The default branding is not changed.
 #### Request
 
 The following is an example of the request.
@@ -183,7 +182,7 @@ HTTP/1.1 204 No Content
 Following this request, the `fr` localization is updated with the new value of **backgroundColor**, but no change is made to the default branding.
 
 ### Example 4: Replace default branding and all localizations
-If the branding already exists, PUT will replace the default branding and any localizations.
+If the branding already exists, `PUT` will replace the default branding and any localizations.
 #### Request
 
 The following is an example of the request.
