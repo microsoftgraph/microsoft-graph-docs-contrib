@@ -1,5 +1,31 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "4579a6f4-bb21-42f0-91cb-a69029018a65",
+          "ApiChange": "Resource",
+          "ChangedApiName": "countryNamedLocation",
+          "ChangeType": "Change",
+          "Description": "Changed [countryNamedLocation](https://docs.microsoft.com/en-us/graph/api/resources/countrynamedlocation?view=graph-rest-beta) to add countryLookupMethod property.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        },
+        {
+          "Id": "7115e92d-2aa8-4a9c-924b-d0caf8023529",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "countryLookupMethodType",
+          "ChangeType": "Addition",
+          "Description": "Added the **countryLookupMethodType** enumeration type.",
+          "Target": "countryNamedLocation"
+        }
+      ],
+      "Id": "189230eb-9513-42ee-8035-7125d278da37",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-18T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": "Identity and sign-in"
+    },
       {
         "ChangeList": [
             {
