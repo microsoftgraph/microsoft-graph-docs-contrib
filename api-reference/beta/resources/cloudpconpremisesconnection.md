@@ -44,9 +44,19 @@ Represents a defined collection of Azure resource information that can be used t
 |resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|The ID of the target virtual network. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|The ID of the target subnet. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
-|healthCheckStatus|cloudPcOnPremisesConnectionStatus|The status of the most recent health check done on the on-premises connection. For example, if status is "passed", the on-premises connection has passed all checks run by the service. Read-only. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
-|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the connection's health checks and the corresponding results. Returned only on `$select`. See an [example](../api/cloudpconpremisesconnection-get.md) of getting the healthCheckStatusDetails property.Read-only.|
-|inUse|Boolean|When true, the on-premises connection is in use. When false, the connection is not in use. You cannot delete a connection that’s in use. Read-only.|
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|The status of the most recent health check done on the on-premises connection. For example, if status is "passed", the on-premises connection has passed all checks run by the service. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
+|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the connection's health checks and the corresponding results. Returned only on `$select`.For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
+|inUse|Boolean|When `true`, the on-premises connection is in use. When `false`, the connection is not in use. You cannot delete a connection that’s in use. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
+
+### cloudPcOnPremisesConnectionStatus values
+
+|Member|Description|
+|:---|:---|
+|pending|Created and waiting for health checks.
+|running|Health checks are running.|
+|passed|Health checks passed.|
+|failed|Health checks failed.|
+|unknownFutureValue|Unknown future status (reserved, not used right now).|
 
 ## Relationships
 

@@ -4,7 +4,7 @@ description: "Create a new b2xIdentityUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Create b2xIdentityUserFlow
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /identity/b2xUserFlow
+POST /identity/b2xUserFlows
 ```
 
 ## Request headers

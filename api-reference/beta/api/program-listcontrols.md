@@ -3,7 +3,7 @@ title: "List programControls of a program"
 description: "In the Azure AD access reviews feature, list all the programControl objects, linked to a particular program."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /programs('{programId}')/controls
+GET /programs/{programId}/controls
 ```
 ## Request headers
 | Name         | Type        | Description |

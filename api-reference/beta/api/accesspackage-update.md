@@ -3,7 +3,7 @@ title: "Update accessPackage"
 description: "Update the properties of an accessPackage object."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 <!-- {
@@ -100,7 +100,6 @@ Content-length: 38
 ``` http
 HTTP/1.1 204 No Content
 Content-Type: application/json
-
 ```
 
 <!--

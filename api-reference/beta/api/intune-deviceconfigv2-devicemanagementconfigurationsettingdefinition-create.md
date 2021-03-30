@@ -20,7 +20,7 @@ Create a new [deviceManagementConfigurationSettingDefinition](../resources/intun
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -59,6 +59,8 @@ The following table shows the properties that are required when you create the d
 |rootDefinitionId|String|Root setting definition if the setting is a child setting.|
 |categoryId|String|Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Setting type, for example, configuration and compliance. Possible values are: `none`, `configuration`.|
+|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Setting control type representation in the UX. Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
+|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Setting visibility scope to UX. Possible values are: `none`, `settingsCatalog`, `template`.|
 |id|String|Identifier for item|
 |description|String|Description of the item|
 |helpText|String|Help text of the item|
@@ -78,7 +80,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationSettings
 Content-type: application/json
-Content-length: 977
+Content-length: 1042
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
@@ -106,6 +108,8 @@ Content-length: 977
   "rootDefinitionId": "Root Definition Id value",
   "categoryId": "Category Id value",
   "settingUsage": "configuration",
+  "uxBehavior": "dropdown",
+  "visibility": "settingsCatalog",
   "description": "Description value",
   "helpText": "Help Text value",
   "name": "Name value",
@@ -119,7 +123,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1026
+Content-Length: 1091
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingDefinition",
@@ -147,6 +151,8 @@ Content-Length: 1026
   "rootDefinitionId": "Root Definition Id value",
   "categoryId": "Category Id value",
   "settingUsage": "configuration",
+  "uxBehavior": "dropdown",
+  "visibility": "settingsCatalog",
   "id": "7af649e5-49e5-7af6-e549-f67ae549f67a",
   "description": "Description value",
   "helpText": "Help Text value",

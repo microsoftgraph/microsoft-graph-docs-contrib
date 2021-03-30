@@ -3,7 +3,7 @@ title: "authorizationPolicy resource type"
 description: "Represents a policy that can control authorization settings of Azure Active Directory."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -31,7 +31,16 @@ Represents a policy that can control Azure Active Directory authorization settin
 |allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. | 
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. | 
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. | 
-|allowInvitesFrom|String|Indicates who can invite external users to the organization. Possible values are:<ul><li>`none` - Prevent everyone, including admins, from inviting external users. Default setting for US Government.</li><li>`adminsAndGuestInviters` - Allow members of Global Administrators, User Administrators, and Guest Inviter roles to invite external users.</li><li>`adminsGuestInvitersAndAllMembers` - Allow the above admin roles and all other User role members to invite external users.</li><li>`everyone` - Allow everyone in the organization, including guest users, to invite external users. Default setting for all cloud environments except US Government.</li></ul> |
+|allowInvitesFrom|allowInvitesFrom|Indicates who can invite external users to the organization. Possible values are: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` is the default setting for all cloud environments except US Government. See more in the [table below](#allowinvitesfrom-values). |
+
+### allowInvitesFrom values
+
+|Member|Description|
+|:---|:---|
+|none|Prevent everyone, including admins, from inviting external users. Default setting for US Government.|
+|adminsAndGuestInviters|Allow members of Global Administrators, User Administrators, and Guest Inviter roles to invite external users.|
+|adminsGuestInvitersAndAllMembers|Allow the above admin roles and all other User role members to invite external users.|
+|everyone|Allow everyone in the organization, including guest users, to invite external users. The default setting for all cloud environments except US Government.|
 
 ## Relationships
 
@@ -47,7 +56,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.authorizationPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
