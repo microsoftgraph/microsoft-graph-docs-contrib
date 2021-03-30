@@ -22,7 +22,7 @@ Activity feed notifications enable your apps to send notifications to users. The
 
 ### Guidelines for using activity feed features
 
-This section covers the guidelines for using with activity feed features.
+This section covers the guidelines for using the activity feed features.
 
 * Understand that selecting a toast notification leads to the activity feed. To switch to an activity, select a notification in the activity feed.
   > [!NOTE] 
