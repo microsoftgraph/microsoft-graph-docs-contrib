@@ -15,14 +15,14 @@ Activity feed notifications enable your apps to send notifications to users. The
     * The notification must not confuse the user about what they need to address or triage. For example, if an *@mention* notification is received, the panel on the right in the activity feed app must display or reference the corresponding *@mention*.
     * If the notification pertains to removal or deletion, direct users to the content indicating the action, so that they understand the outcome before taking action. For example, remove a user from a group or delete a list.
 * Ensure that the right pane experience in the feed is self-contained and does not break the feed experience. For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.
-* Verify that you app does not send more than 10 notifications per minute, per user. 
+* Verify that your app does not send more than 10 notifications per minute, per user. 
   > [!NOTE]
   > Notifications are throttled if the per user notification count exceeds 10.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
 
 ### Guidelines for using activity feed features
 
-This section covers the guidelines for working with activity feed features.
+This section covers the guidelines for using with activity feed features.
 
 * Understand that selecting a toast notification leads to the activity feed. To switch to an activity, select a notification in the activity feed.
   > [!NOTE] 
@@ -40,11 +40,11 @@ This section covers the guidelines for working with activity feed features.
   |-----------------------|-------------------------|
   | Lynne mentioned you in a message. | Try the new feature in the Cycling app! |
 
-* Inform the user that the notifications are stored in the activity feed for 30 days. 
+* Notify the user that the notifications are stored in the activity feed for 30 days. 
   > [!NOTE]
   > The 30 days storage limit applies to all notifications and is not specific to notifications sent through the activity feed notifications API.
 
-When using the feature behavior you must be aware of the following:
+When using the activity feed features you must be aware of the following:
   * The setting appears for the user only when the selected app sends a notification.
   * The app icon for each notification cannot be customized, and is the one that is included in the app manifest.
   * Currently, notifications can only be sent at a user level and not at a group or a team level.
@@ -52,7 +52,9 @@ When using the feature behavior you must be aware of the following:
     > Currently, priority notifications are not supported.
 
 ## Simplify the notification experience
-Apply best practices that will help you send only the important information through your notifications.
+
+You can simplify the user's notification experience by applying best practices that will send only the important information through your notifications.
+
 * Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications. The following table provides examples of relevant and irrelevant messages:
 
   |**Relevant message** | **Irrelevant message** |
@@ -66,6 +68,7 @@ Apply best practices that will help you send only the important information thro
 * Do not add a *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
 
 ## Difference between bot framework messages and activity feed notifications
+
 Based on the need the user can either use bot framework messages or activity feed notifications to notify the user. The following table provides the key differences between bot framework messages and activity feed notifications:
 
 |**Bot messages**|**Activity feed notifications**|
