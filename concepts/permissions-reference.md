@@ -93,7 +93,7 @@ The following is the JSON response:
 
 ## Retriving Permission IDs
 
-If you need to set up permissions using the Azure CLI, PowerShell or infrastructure as code frameworks like Terraform etc, you are likely going to need the ID for the permission you want to use instead of the name. This can be retreieved using the Azure CLI by running `az ad sp list`. However, this generates a very long list, and it can be hard to find the specific permission you want. 
+If you need to set permissions using the Azure CLI, PowerShell or infrastructure as code frameworks, you might need the identifier for the permission that you want to use instead of the name. The identifier can be retrieved using the Azure CLI by running `az ad sp list`. However, this generates a very long list, and it can be hard to find the specific permission you want. If you already know the name of the permission you need, you can run the following command using the Azure CLI:
 
 If you already know the name of the permission you need, you can run the following command using the Azure CLI
 
