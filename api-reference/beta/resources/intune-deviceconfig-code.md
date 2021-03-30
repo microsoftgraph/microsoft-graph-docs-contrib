@@ -56,5 +56,3 @@ Error code for rule validation.
 
 
 
-
-

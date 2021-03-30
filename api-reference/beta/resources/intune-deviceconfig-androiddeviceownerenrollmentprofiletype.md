@@ -27,5 +27,3 @@ Android Device Owner Enrollment Profile types.
 
 
 
-
-

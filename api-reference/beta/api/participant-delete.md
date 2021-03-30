@@ -3,7 +3,6 @@ title: "Delete participant"
 description: "Delete a specific participant in a call."
 manager: zhengni
 author: jackry6350
-ms.author: yoren
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -73,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-participant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-participant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

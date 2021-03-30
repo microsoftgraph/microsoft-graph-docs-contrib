@@ -1,7 +1,7 @@
 ---
 title: "pstnCallLogRow resource type"
 description: "Represents a row of data in the Public Switch Telephone Network (PSTN) call log."
-author: "stephenjust"
+author: "williamlooney"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
@@ -52,7 +52,6 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "ignored",
   "@odata.type": "microsoft.graph.callRecords.pstnCallLogRow",
-  "baseType": "",
   "keyProperty": "id"
 }
 -->

@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships a b2cIdentityUserFlow ob
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Get b2cIdentityUserFlow
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-b2cuserflows-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2cuserflows-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -107,7 +111,9 @@ Content-type: application/json
 {
     "id": "B2C_1_CustomerSignUp",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 1
+    "userFlowTypeVersion": 1,
+    "isLanguageCustomizationEnabled": false,
+    "defaultLanguageTag": null
 }
 ```
 

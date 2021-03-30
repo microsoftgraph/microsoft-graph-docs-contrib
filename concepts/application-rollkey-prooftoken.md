@@ -2,7 +2,7 @@
 title: "Generating proof of possession tokens for rolling keys"
 description: "As part of the request validation for the addKey and removeKey methods, a proof of possession token is required. This document provides guidance for generating the proof of possession token."
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "davidmu1"
 ---
 
@@ -17,7 +17,7 @@ As part of the request validation for these methods, a proof of possession of an
 The token should contain the following claims:
 
 - `aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.
-- `iss` - Issuer needs to be the __id__  of the application that is making the call.
+- `iss` - Issuer needs to be the Azure AD __ObjectId__  of the application that is making the call (not the applicationId or clientId).
 - `nbf` - Not before time.
 - `exp` - Expiration time should be "nbf" + 10 mins.
 

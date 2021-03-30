@@ -28,5 +28,3 @@ The type of Windows kiosk app.
 
 
 
-
-
