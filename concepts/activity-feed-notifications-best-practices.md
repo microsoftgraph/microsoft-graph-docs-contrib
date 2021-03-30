@@ -9,20 +9,21 @@ ms.prod: "teamwork"
 # Best practices for using Microsoft Teams activity feed notifications
 This article covers best practices to help you build experiences using Microsoft Teams activity feed notifications in Microsoft Graph.
 
-## Best practices for partner apps
-Activity feed notifications enable partner apps to send notifications to users. These notifications are sent as toast items and activity feed items that point users to relevant content that can be consumed within Teams. Apply the following best practices in your partner app:
+Activity feed notifications enable your apps to send notifications to users. These notifications are sent as toast items and activity feed items that point users to relevant content that can be consumed within Teams. Apply the following best practices in your app:
 
 * Have knowledge of the direct relationship between a notification toast or feed, and the content it is deep linked to.
     * The notification must not confuse the user about what they need to address or triage. For example, if an *@mention* notification is received, the panel on the right in the activity feed app must display or reference the corresponding *@mention*.
     * If the notification pertains to removal or deletion, direct users to the content indicating the action, so that they understand the outcome before taking action. For example, remove a user from a group or delete a list.
 * Ensure that the right pane experience in the feed is self-contained and does not break the feed experience. For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.
-* Verify that the apps are not sending more than 10 notifications per minute, per user. 
+* Verify that you app does not send more than 10 notifications per minute, per user. 
   > [!NOTE]
   > Notifications are throttled if the per user notification count exceeds 10.
-* Ensure that the apps are performing. The time taken for an app to load is measured and can impact the user experience when a user switches between notifications in the activity feed.
+* Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
 
-### Guide on feature behavior
-This section covers feature behavior that you must be aware of when working with partner apps.
+### Guidelines for using activity feed features
+
+This section covers the guidelines for working with activity feed features.
+
 * Understand that selecting a toast notification leads to the activity feed. To switch to an activity, select a notification in the activity feed.
   > [!NOTE] 
   > The notification selection will not switch to the app.
