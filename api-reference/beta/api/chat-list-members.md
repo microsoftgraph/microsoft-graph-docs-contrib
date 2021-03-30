@@ -1,7 +1,7 @@
 ---
 title: "List members of a chat"
 description: "Retrieve members of a chat."
-author: "clearab"
+author: "bhartono"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -59,7 +59,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a list of [conversationMember](../resources/conversationmember.md) objects in the response body.
 
 > [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues.md#missing-tenantid-for-chat-members).
+> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#missing-properties-for-chat-members).
 
 ## Example
 
