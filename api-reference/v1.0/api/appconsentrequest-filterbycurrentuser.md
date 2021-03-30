@@ -44,7 +44,7 @@ The following table shows the parameters that can be used with this function.
 
 ## Optional query parameters
 
-This function requires the `$filter` OData query parameter to return a collection of [userConsentRequests](../resources/userconsentrequest.md) whose status is `InProgress`. For general information, see [OData query parameters](/graph/query-parameters).
+This function requires the `$filter` OData query parameter to return a collection of [userConsentRequests](../resources/userconsentrequest.md) for which the status is `InProgress`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
