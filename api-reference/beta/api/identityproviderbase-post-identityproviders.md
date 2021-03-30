@@ -104,7 +104,6 @@ If unsuccessful, a `4xx` error will be returned with specific details.
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_socialidentityprovider_from_identityproviderbase"
@@ -159,7 +158,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_openidconnectidentityprovider_from_identityproviderbase"
@@ -236,7 +234,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_applemanagedidentityprovider_from_identityproviderbase"

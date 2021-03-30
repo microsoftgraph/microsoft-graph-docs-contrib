@@ -64,7 +64,6 @@ For an Azure AD B2C tenant, this method returns a `200 OK` response code and a J
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_socialidentityprovider_from_identityproviderbase"
@@ -106,7 +105,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_builtinidentityprovider_from_identityproviderbase"
@@ -198,7 +196,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applemanagedidentityprovider_from_identityproviderbase"
