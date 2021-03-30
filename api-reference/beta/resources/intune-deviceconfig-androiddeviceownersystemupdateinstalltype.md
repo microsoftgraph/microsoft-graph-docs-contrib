@@ -28,5 +28,3 @@ System Update Types for Android Device Owner.
 
 
 
-
-

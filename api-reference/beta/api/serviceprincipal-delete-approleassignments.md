@@ -3,7 +3,7 @@ title: "Delete an appRoleAssignment from a service principal"
 description: "Delete an appRoleAssignment from a service principal."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignment
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delete-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

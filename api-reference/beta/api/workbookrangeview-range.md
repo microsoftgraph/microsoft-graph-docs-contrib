@@ -28,7 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/range
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range(address={address})/visibleView/range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address})/visibleView/range
 
 ```
 ## Request headers
@@ -66,6 +67,10 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookrangeview-range-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workbookrangeview-range-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

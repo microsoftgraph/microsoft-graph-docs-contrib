@@ -3,7 +3,7 @@ title: "List owners"
 description: "Retrieve a list of owners (directoryObject objects) for an application."
 author: "sureshja"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/applications/{id}/owners
 [!INCLUDE [sample-code](../includes/snippets/objc/application-get-owners-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/application-get-owners-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -106,3 +110,4 @@ Content-length: 55
   ]
 }
 -->
+

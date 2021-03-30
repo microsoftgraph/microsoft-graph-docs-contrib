@@ -3,7 +3,7 @@ title: "Permanently delete item"
 description: "Permanently delete an item from deleted items."
 author: "keylimesoda"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -28,13 +28,17 @@ For applications:
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
+The requestor needs to have one of the following roles: *Global Administrator* or *Application Administrator*.
+
 For users:
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | User.ReadWrite.All |
+|Application | Not supported. |
+
+The signed-in user needs to have one of the following roles: *Global Administrator* or *User Administrator*.
 
 For groups:
 
@@ -42,7 +46,9 @@ For groups:
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
+
+The requestor needs to have one of the following roles: *Global Administrator* or *Groups Administrator*.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -84,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

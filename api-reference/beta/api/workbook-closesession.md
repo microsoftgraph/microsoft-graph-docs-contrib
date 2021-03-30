@@ -25,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/closeSession
+POST /me/drive/items/{id}/workbook/closeSession
+POST /me/drive/root:/{item-path}:/workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## Request headers
@@ -70,6 +71,10 @@ Content-length: 0
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/close-excel-session-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/close-excel-session-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

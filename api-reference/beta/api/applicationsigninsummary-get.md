@@ -3,7 +3,7 @@ title: "Get applicationSignInSummary"
 description: "Retrieve the properties and relationships of an **applicationSigninSummary** object."
 localization_priority: Normal
 author: "dhanyahk"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationsigninsummary-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationsigninsummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

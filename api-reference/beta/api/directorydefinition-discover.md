@@ -3,7 +3,7 @@ title: "directoryDefinition: discover"
 description: "Discover the latest schema definition for provisioning to an application. "
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -19,11 +19,11 @@ Discover the latest schema definition for provisioning to an application.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application-only                            | None. |
+|Permission type                        | Permissions (from least to most privileged)              |
+|:--------------------------------------|:---------------------------------------------------------|
+|Delegated (work or school account)     |Directory.ReadWrite.All  |
+|Delegated (personal Microsoft account) |Not supported.|
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## HTTP request
 
@@ -70,6 +70,10 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/discover-directorydefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/discover-directorydefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

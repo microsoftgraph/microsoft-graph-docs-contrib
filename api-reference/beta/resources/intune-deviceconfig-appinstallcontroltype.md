@@ -29,5 +29,3 @@ App Install control Setting
 
 
 
-
-

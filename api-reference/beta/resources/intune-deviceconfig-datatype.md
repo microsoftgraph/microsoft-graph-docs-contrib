@@ -39,5 +39,3 @@ Data types for rules.
 
 
 
-
-

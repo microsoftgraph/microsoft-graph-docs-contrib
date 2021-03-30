@@ -2,7 +2,7 @@
 title: "user: invalidateAllRefreshTokens"
 description: "Invalidates all of the user's refresh tokens issued to applications and session cookies in a user's browser."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -64,6 +64,10 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-invalidateallrefreshtokens-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-invalidateallrefreshtokens-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

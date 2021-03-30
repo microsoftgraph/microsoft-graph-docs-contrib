@@ -2,7 +2,7 @@
 title: "message: reply"
 description: "Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. "
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-reply-beta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-reply-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

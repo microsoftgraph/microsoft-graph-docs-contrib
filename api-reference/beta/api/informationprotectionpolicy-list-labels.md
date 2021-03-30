@@ -3,7 +3,7 @@ title: "informationProtectionLabel: listLabels"
 description: "Retrieve a list of information protection labels."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-labels-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-labels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

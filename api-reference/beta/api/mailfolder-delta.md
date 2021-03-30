@@ -2,7 +2,7 @@
 title: "mailFolder: delta"
 description: "Get a set of mail folders that have been added, deleted, or removed from the user's mailbox."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -98,6 +98,10 @@ Prefer: odata.maxpagesize=2
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/mailfolder-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

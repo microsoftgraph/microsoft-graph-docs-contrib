@@ -16,11 +16,13 @@ Namespace: microsoft.graph
 Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties
 in a new or existing instance of a supported resource.
 
+The table in the [Permissions](#permissions) section lists the resources that support open extensions.
+
 > **Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## Permissions
 
-Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
@@ -49,8 +51,8 @@ POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
-POST /users/{id|userPrincipalName}/todo/lists
 POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
+POST /users/{id|userPrincipalName}/todo/lists
 ```
 
 >**Note:** This syntax shows some common ways to create the supported resource instances. All other POST syntaxes

@@ -66,6 +66,10 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -60,15 +60,13 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider"
+  "name": "get_identityprovider_3"
 }
 -->
 
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
-
----
 
 ### Response
 

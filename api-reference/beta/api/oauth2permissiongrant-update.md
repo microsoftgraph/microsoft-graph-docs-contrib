@@ -3,7 +3,7 @@ title: "Update an oAuth2PermissionGrant"
 description: "Update the properties of an oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
@@ -84,6 +84,10 @@ Content-Length: 30
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-oauth2permissiongrant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

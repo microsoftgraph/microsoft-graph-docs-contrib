@@ -67,6 +67,10 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

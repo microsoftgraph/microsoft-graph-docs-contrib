@@ -3,7 +3,7 @@ title: "Get application"
 description: "Get the properties and relationships of an application object."
 author: "sureshja"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/applications/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,5 +155,6 @@ Content-length: 1044
   ]
 }
 -->
+
 
 

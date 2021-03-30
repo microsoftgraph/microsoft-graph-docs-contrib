@@ -3,7 +3,7 @@ title: "Delete trustFrameworkPolicy"
 description: "This operation deletes an existing trustFrameworkPolicy object from an Azure AD B2C tenant."  
 localization_priority: Normal
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 # Delete trustFrameworkPolicy
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAnd
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-trustframeworkpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-trustframeworkpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

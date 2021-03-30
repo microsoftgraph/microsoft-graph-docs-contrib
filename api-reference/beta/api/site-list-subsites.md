@@ -51,6 +51,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 [!INCLUDE [sample-code](../includes/snippets/objc/list-subsites-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-subsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -58,7 +62,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

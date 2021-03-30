@@ -27,5 +27,3 @@ Android profile applicability
 
 
 
-
-

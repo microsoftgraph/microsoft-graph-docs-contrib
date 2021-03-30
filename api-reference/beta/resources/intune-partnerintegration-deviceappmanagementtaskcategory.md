@@ -26,5 +26,3 @@ Device app management task category.
 
 
 
-
-

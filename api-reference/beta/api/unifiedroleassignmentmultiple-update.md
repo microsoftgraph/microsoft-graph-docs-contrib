@@ -3,7 +3,7 @@ title: "Update unifiedRoleAssignmentMultiple"
 description: "Update a new unifiedRoleAssignmentMultiple object."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -79,6 +79,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedroleassignmentmultiple-from-rbacapplication-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroleassignmentmultiple-from-rbacapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -37,9 +37,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
 
-POST /me/calendargroup/calendars/{id}/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/dismissReminder
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 ```
@@ -82,6 +79,10 @@ POST https://graph.microsoft.com/beta/me/events/{id}/dismissReminder
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-dismissreminder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-dismissreminder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -26,5 +26,3 @@ Encryption readiness state
 
 
 
-
-
