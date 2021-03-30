@@ -1,6 +1,6 @@
 ---
 title: "approval resource type"
-description: "The approval object associated with the accessPackageAssignmentRequest."
+description: "The approval object associated with an accessPackageAssignmentRequest or userConsentRequest."
 localization_priority: Normal
 author: "sbounouh"
 ms.prod: "governance"
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approval object for decisions associated with the `accessPackageAssignmentRequest`. A single step request can have one step associated with it which approvers can act on. Similarly, a multi-step request can have multiple steps associated with it which approvers can act on. However, in multi-step approvals both pending and previously completed steps are shown.
+
+In [userConsentRequests](../resources/userconsentrequest.md), the approval object for decisions associated with a request.
 
 ## Methods
 
