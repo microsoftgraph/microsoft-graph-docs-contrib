@@ -16,7 +16,7 @@ Represents built-in identity providers with [External Identities](/azure/active-
 
 For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be an Azure Active Directory(AAD), Microsoft account(MSA) or email one-time passcode (EmailOTP).
 
-This type will inherit from [identityProviderBase](../identityproviderbase.md).
+This type will inherit from [identityProviderBase](../identityproviderbase).
 
 ## Methods
 
