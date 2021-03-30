@@ -83,7 +83,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> Note that authenticationConfiguration in the response is of type [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) as this represents the public information of uploaded certificates.
+> **Note:** `authenticationConfiguration` in the response is of type [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) because this represents the public information of uploaded certificates.
 
 <!-- {
   "blockType": "response",
