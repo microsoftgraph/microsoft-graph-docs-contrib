@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 You can configure Apple as a social identity provider for an Azure AD B2C tenant. Based on the information Apple provides, the API will generate a client secret. Apple needs the secret to be renewed every six months. You will have to maunally rotate the secret.
 
-This type will inherit from [identityProviderBase](../identityproviderbase).
+This type will inherit from [identityProviderBase](../resources/identityproviderbase.md).
 
 ## Methods
 

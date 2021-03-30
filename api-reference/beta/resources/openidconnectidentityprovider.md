@@ -16,7 +16,7 @@ Represents OpenID Connect identity providers in an Azure Active Directory B2C te
 
 Configuring an OpenID Connect provider in a B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
 
-This type will inherit from [identityProviderBase](../identityproviderbase).
+This type will inherit from [identityProviderBase](../resources/identityproviderbase.md).
 
 ## Methods
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Represents social identity providers with [External Identities](/azure/active-directory/external-identities/) for both Azure Active Directory tenant and an Azure AD B2C tenant.
 
-This type will inherit from [identityProviderBase](../identityproviderbase).
+This type will inherit from [identityProviderBase](../resources/identityproviderbase.md).
 
 For Azure AD B2B scenarios in an Azure AD tenant, the identity provider type can be Google or Facebook.
 
