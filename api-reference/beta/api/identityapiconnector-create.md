@@ -117,7 +117,7 @@ Content-Type: application/json
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -149,7 +149,7 @@ Content-Type: application/json
 
 The following is an example of the request.
 
-> Note that authenticationConfiguration in the request is of type [microsoft.graph.pkcs12certificate](../resources/pkcs12certificate.md) which represents the configuration of a certificate needed on upload or create.
+> **Note:** `authenticationConfiguration` in the request is of type [microsoft.graph.pkcs12certificate](../resources/pkcs12certificate.md), which represents the configuration of a certificate needed on upload or create.
 
 <!-- {
   "blockType": "request",
@@ -175,7 +175,7 @@ Content-Type: application/json
 
 The following is an example of the response.
 
-> Note that authenticationConfiguration in the response is of type [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) as this represents the public information of uploaded certificates.
+> **Note:** `authenticationConfiguration` in the response is of type [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) because this represents the public information of uploaded certificates.
 
 <!-- {
   "blockType": "response",
