@@ -25,7 +25,7 @@ The details of a version of a [teamsApp](teamsapp.md).
 | azureADAppId        | string   | The WebApplicationInfo.id from the Teams App manifest. |
 | displayName         | string   | The name of the app provided by the app developer. |
 | version             | string   | The version number of the application. |
-| allowedInstallationScopes | [teamsAppInstallationScope](./enums.md) collection | A collection of scopes where the Teams app can be installed in. Possible values are:</br>`team` — Indicates the Teams app may be installed within a team and data about the team is authorized to be accessed by the app. </br>`groupChat`  — Indicates the Teams app may be installed within a group chat and data about the group chat is authorized to be accessed by the app. </br> `personal` — Indicates the Teams app may be installed for a user personally and data about the user is authorized to be accessed by the app. | 
+| allowedInstallationScopes | [teamsAppInstallationScope](./enums.md) collection | A collection of scopes where the Teams app can be installed in. Possible values are:</br>`team` — Indicates that the Teams app can be installed within a team and is authorized to access that team's data. </br>`groupChat`  — Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data. </br> `personal` — Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data. | 
 
 ## Relationships
 

@@ -2152,6 +2152,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 |Member    |Value    |Description |
 |:---------|:--------|:----------- |
-|team      |0        |Indicates the Teams app may be installed within a team and data about the team is authorized to be accessed by the app.|
-|groupChat |1        |Indicates the Teams app may be installed within a group chat and data about the group chat is authorized to be accessed by the app.|
-|personal  |2        |Indicates the Teams app may be installed for the user personally and data about the user is authorized to be accessed by the app.|
+|team      |0        |Indicates that the Teams app can be installed within a team and is authorized to access that team's data.|
+|groupChat |1        |Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.|
+|personal  |2        |Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data.|
