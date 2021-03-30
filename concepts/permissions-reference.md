@@ -660,13 +660,15 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
 
 - Full read of all directory resources (both declared properties and navigation properties)
 - Create and update users
-- Disable and enable users (but not company administrator)
-- Set user alternative security id (but not administrators)
+- Disable and enable users (but not Company Administrator)
+- Set user alternative security ID (but not administrators)
 - Create and update groups
 - Manage group memberships
 - Update group owner
 - Manage license assignments
 - Define schema extensions on applications
+- Manage directory settings
+- Manage admin consent workflow configuration (but not whether admin consent is required or who is authorized to grant admin consent)
 
 > **Note**:
 > - No rights to reset user passwords.

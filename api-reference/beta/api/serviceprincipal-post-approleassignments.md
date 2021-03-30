@@ -4,7 +4,7 @@ description: "Grant an app role assignment to a service principal."
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "applications"
-author: "sureshja"
+author: "psignoret"
 ---
 
 # Grant an appRoleAssignment to a service principal
@@ -64,11 +64,9 @@ If successful, this method returns a `201 Created` response code and an [appRole
 
 Here is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_create_approleassignment_2"
+  "name": "serviceprincipal_create_approleassignment"
 }-->
 
 ```http
@@ -76,31 +74,13 @@ POST https://graph.microsoft.com/beta/servicePrincipals/9028d19c-26a9-4809-8e3f-
 Content-Type: application/json
 
 {
-  "principalId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
-  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
-  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
+  "principalId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "resourceId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
+  "appRoleId": "498476ce-e0fe-48b0-b801-37ba7e2685c6"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-create-approleassignment-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned client service principal, and `{resourceId}` would be the `id` of the resource service principal (the API).
+In this example, note that the value used as the service principal **id** in the request URL (`9028d19c-26a9-4809-8e3f-20ff73e2d75e`) is the same as the **principalId** property in the body. The **resourceId** value is the **id** of the resource service principal (the API).
 
 ### Response
 
@@ -122,12 +102,12 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments/$entity",
   "id": "2jLOj0YSe0OZzXbR1Gd71fDqFUrPM1xIgUfvWBHJ9n0",
   "creationTimestamp": "2021-02-15T16:39:38.2975029Z",
-  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
-  "principalDisplayName": "Remote living",
-  "principalId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
-  "principalType": "Group",
-  "resourceDisplayName": "Yammer",
-  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
+  "appRoleId": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+  "principalDisplayName": "Fabrikam App",
+  "principalId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "8fce32da-1246-437b-99cd-76d1d4677bd5"
 }
 ```
 
@@ -144,4 +124,3 @@ Content-type: application/json
   ]
 }
 -->
-
