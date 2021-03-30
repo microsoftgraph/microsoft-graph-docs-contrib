@@ -59,6 +59,8 @@ landingContent:
             url: /graph/tutorials/javascript
           - text: React
             url: /graph/tutorials/react
+          - text: Microsoft Graph Toolkit
+            url: /learn/modules/msgraph-toolkit-intro
   - title: Microsoft platforms
     linkLists:
       - linkListType: tutorial
@@ -75,6 +77,8 @@ landingContent:
             url: /graph/tutorials/spfx
           - text: Teams
             url: /graph/tutorials/teams
+          - text: Microsoft Graph Toolkit
+            url: /learn/modules/msgraph-toolkit-intro
   - title: Scenarios
     linkLists:
       - linkListType: tutorial

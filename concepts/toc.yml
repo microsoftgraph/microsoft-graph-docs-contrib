@@ -56,6 +56,8 @@ items:
             href: /graph/tutorials/java
           - name: JavaScript
             href: /graph/tutorials/javascript
+          - name: Microsoft Graph Toolkit
+            href: /learn/modules/ms-graph-toolkit-intro
           - name: Node.js
             href: /graph/tutorials/node
           - name: Office Add-in
