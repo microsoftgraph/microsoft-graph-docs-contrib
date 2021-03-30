@@ -35,7 +35,6 @@ graphClient.chats("{chatId}")
 		.withPreviewText(previewText)
 		.withTemplateParameters(templateParametersList)
 		.withRecipient(recipient)
-		.withTeamsAppId(null)
 		.build())
 	.buildRequest()
 	.post();
