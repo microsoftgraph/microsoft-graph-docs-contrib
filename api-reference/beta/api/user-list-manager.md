@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -117,7 +116,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "<user-id>",
+  "id": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
   "displayName": "Sara Davis",
   "jobTitle": "Finance VP",
   "mail": "SaraD@contoso.onmicrosoft.com",
@@ -156,20 +155,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "<user1-id>",
-    "displayName": "Individual Contributor",
+  "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8",
+  "displayName": "Individual Contributor",
+  "manager": {
+    "id": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
+    "displayName": "Alex Wilber",
     "manager": {
-        "id": "<manager1-id>",
-        "displayName": "Manager 1",
-        "manager": {
-            "id": "<manager2-id>",
-            "displayName": "Manager 2",
-            "manager": {
-                "id": "<manager3-id>",
-                "displayName": "Manager 3"
-            }
-        }
+      "id": "343a3f95-377c-47a9-b697-480487bfcdf7",
+      "displayName": "Bianca Pisani",
+      "manager": {
+        "id": "8e07b731-5ba7-4081-b482-15e6eca35c45",
+        "displayName": "Patti Fernandez"
+      }
     }
+  }
 }
 ```
 
