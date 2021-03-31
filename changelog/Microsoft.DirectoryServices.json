@@ -3,6 +3,7 @@
     {
       "ChangeList": [
         {
+<<<<<<< HEAD
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
           "ChangedApiName": "identityApiConnector",
@@ -45,6 +46,8 @@
     {
       "ChangeList": [
         {
+=======
+>>>>>>> 960b8e12421f67564cf498617b6bc5bb19a46d84
           "Id": "b653a8c7-f00c-4327-a9b3-ffa1e41d4709",
           "ApiChange": "Resource",
           "ChangedApiName": "applicationTemplate",
