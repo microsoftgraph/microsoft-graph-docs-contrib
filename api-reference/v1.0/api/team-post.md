@@ -57,9 +57,6 @@ The following is an example of a minimal request. By omitting other properties, 
 
 #### Request
 
-
-# [HTTP](#tab/http)
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -118,8 +115,6 @@ The following is an example of a minimal request using application permissions. 
 
 #### Request
 
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -187,8 +182,6 @@ Content-Length: 0
 The following is a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
 
 #### Request
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -289,8 +282,6 @@ Content-Type: application/json
 
 ---
 
----
-
 #### Response
 <!-- {
   "blockType": "response",
@@ -316,8 +307,6 @@ A few things to note about this call:
 * If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
 
 #### Request
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -376,8 +365,6 @@ The following is a request that converts an existing group with extended propert
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -466,8 +453,6 @@ To learn more about supported base template types, see [Get started with Teams t
 #### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard"
@@ -527,8 +512,6 @@ Base template types can be extended with additional properties, enabling you to 
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
