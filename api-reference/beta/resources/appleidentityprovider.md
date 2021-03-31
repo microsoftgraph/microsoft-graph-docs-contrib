@@ -59,3 +59,16 @@ The following is a JSON representation of the resource.
     "certificateData": "String"
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2021-03-30 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+ "description": "appleIdentityProvider",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
