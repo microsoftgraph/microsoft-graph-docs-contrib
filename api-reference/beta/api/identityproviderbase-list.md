@@ -32,6 +32,7 @@ The work or school account needs to belong to one of the following roles:
 
 * Global Administrator
 * External Identity Provider Administrator
+* External ID user flow administrator
 
 ## HTTP request
 
