@@ -66,7 +66,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviders_3"
+  "name": "get_identityproviderbase"
 }
 -->
 
@@ -75,7 +75,6 @@ GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
 ### Response
-
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
@@ -83,6 +82,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.identityProviderBase",
   "isCollection": true
 } -->
 
