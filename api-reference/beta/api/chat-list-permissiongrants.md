@@ -81,35 +81,40 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#permissionGrants",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#permissionGrants",
     "value": [
         {
-            "id": "9dg6L58jVyQ0hCE8azOfuU1BeV7i0I_tk0G9dS-yUyY",
-            "deletedDateTime": null,
-            "clientId": "cd963cfe-1272-4873-9089-87dfa732c860",
-            "clientAppId": "865cba6f-98a4-4c51-830a-a9f2fee6462f",
+            "id": "Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNDaGF0U2V0dGluZ3MuUmVhZFdyaXRlLkNoYXQjI0FwcGxpY2F0aW9u",
+            "clientAppId": "fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
             "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "clientId": "771b9da9-2260-41eb-a587-4d936e4aa08c",
             "permissionType": "Application",
-            "permission": "ChatMember.Read.Chat"
+            "permission": "ChatSettings.ReadWrite.Chat"
         },
         {
-            "id": "c7iB1L9bPD5NdAM5qlrF49Gow55_KZlUrUmUpBkruL8",
-            "deletedDateTime": null,
-            "clientId": "cd963cfe-1272-4873-9089-87dfa732c860",
-            "clientAppId": "865cba6f-98a4-4c51-830a-a9f2fee6462f",
+            "id": "Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNUZWFtc0FwcEluc3RhbGxhdGlvbi5SZWFkLkNoYXQjI0FwcGxpY2F0aW9u",
+            "clientAppId": "fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
             "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "clientId": "771b9da9-2260-41eb-a587-4d936e4aa08c",
             "permissionType": "Application",
-            "permission": "TeamsTab.Read.Chat"
+            "permission": "TeamsAppInstallation.Read.Chat"
         },
         {
-            "id": "F-ieiIOPENMTunE3ok2LLDIKRuEIhVGTu19s9x0T7tg",
-            "deletedDateTime": null,
-            "clientId": "c5d99c29-0567-4305-adb8-887470b308f3",
-            "clientAppId": "4623ae0b-ef35-4738-b117-ae06cbcd3e3b",
+            "id": "Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNUZWFtc1RhYi5EZWxldGUuQ2hhdCMjQXBwbGljYXRpb24=",
+            "clientAppId": "fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
             "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "clientId": "771b9da9-2260-41eb-a587-4d936e4aa08c",
             "permissionType": "Application",
-            "permission": "ChatMessage.Read.Chat"
-        }
+            "permission": "TeamsTab.Delete.Chat"
+        },
+        {
+            "id": "ZmNmMGMzNjQtMWY1ZS00MDVjLThiN2QtNjI2YmRmOWQyZjI1IyNDaGF0U2V0dGluZ3MuUmVhZC5DaGF0IyNBcHBsaWNhdGlvbg==",
+            "clientAppId": "69024002-35ae-4574-a219-f261183580b4",
+            "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "clientId": "74c92190-dc0e-485a-81c6-fdffd4aadfd8",
+            "permissionType": "Application",
+            "permission": "ChatSettings.Read.Chat"
+        },
     ]
 }
 ```
