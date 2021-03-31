@@ -59,76 +59,20 @@ For an Azure AD B2C tenant this method returns a `200 OK` response code and a co
 
 ## Example
 
-### Example 1: List all **identityProvider** configured in an Azure AD tenant
+### Example 1: List all **identityProvider** configured in an Azure AD B2C tenant
 
 ### Request
 The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviderbase_2"
+  "name": "get_identityproviders_3"
 }
 -->
 
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
-
----
-
-### Response
-
-The following is an example of the response.
-
-**Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "isCollection": true
-}
--->
-
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-   "value":[
-      {
-         "@odata.type": "microsoft.graph.builtInIdentityProvider",
-         "id": "MSASignup-OAUTH",
-         "identityProviderType": "MicrosoftAccount",
-         "displayName": "MicrosoftAccount"
-      },
-      {
-         "@odata.type": "#microsoft.graph.socialIdentityProvider",
-         "id": "Facebook-OAUTH",
-         "displayName": "Facebook",
-         "identityProviderType": "Facebook",
-         "clientId": "test",
-         "clientSecret": "******"
-      }
-   ]
-}
-```
-
-### Example 2: List all **identityProvider** configured in an Azure AD B2C tenant
-
-### Request
-The following is an example of the request.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_identityproviderbase_3"
-}
--->
-
-``` http
-GET https://graph.microsoft.com/beta/identity/identityProviders
-```
-
----
 
 ### Response
 
@@ -147,44 +91,45 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "value":[
-       {
-         "@odata.type": "#microsoft.graph.socialIdentityProvider",
-         "id": "LinkedIn-OAUTH",
-         "displayName": "linkedin",
-         "identityProviderType": "LinkedIn",
-         "clientId": "866xc0qtyy8vih",
-         "clientSecret": "******"
-      },  
-      {
-         "@odata.type": "microsoft.graph.openIdConnectIdentityProvider",
-         "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
-         "displayName": "Login with the Contoso identity provider",
-         "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-         "clientSecret": "*****",
-         "claimsMapping": {
-            "userId": "myUserId",
-            "givenName": "myGivenName",
-            "surname": "mySurname",
-            "email": "myEmail",
-            "displayName": "myDisplayName"
-         },
-         "domainHint": "contoso",
-         "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
-         "responseMode": "form_post",
-         "responseType": "code",
-         "scope": "openid"
-      },
-      {
-        "@odata.type": "microsoft.graph.appleManagedIdentityProvider",
-        "id": "Apple-Managed-OIDC",
-        "displayName": "Apple",
-        "developerId": "ABC1D29956",
-        "serviceId": "com.microsoft.test.b2c.tt.client",
-        "keyId": "01P657F9C5",
-        "certificateData": "******"
-      }
-   ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/identityProviders",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.socialIdentityProvider",
+            "id": "LinkedIn-OAUTH",
+            "displayName": "linkedin",
+            "identityProviderType": "LinkedIn",
+            "clientId": "866xc0qtyy00ih",
+            "clientSecret": "******"
+        },
+        {
+            "@odata.type": "#microsoft.graph.openIdConnectIdentityProvider",
+            "id": "OIDC-V1-rtt_AD_Test-3e393390-ed2d-4794-97f6-5c1a1ccc61f7",
+            "displayName": "OIDC AD Test",
+            "clientId": "fe1b3476-rdca-4bef-b321-076fde19750b",
+            "clientSecret": "******",
+            "scope": "openid",
+            "metadataUrl": "https://login.microsoftonline.com/sashawho.onmicrosoft.com/.well-known/openid-configuration",
+            "domainHint": "",
+            "responseType": "code",
+            "responseMode": "form_post",
+            "claimsMapping": {
+                "userId": "oid",
+                "displayName": "name",
+                "givenName": "given_name",
+                "surname": "family_name",
+                "email": "unique_email"
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.appleManagedIdentityProvider",
+            "id": "Apple-Managed-OIDC",
+            "displayName": "Sign in with Apple",
+            "developerId": "UBF8T346G9",
+            "serviceId": "com.microsoft.aad.b2c.iuyt.client",
+            "keyId": "99P6DD87C4",
+            "certificateData": "******"
+        }
+    ]
 }
 
 ```
