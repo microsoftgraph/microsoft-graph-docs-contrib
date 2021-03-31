@@ -1,39 +1,38 @@
 ---
-title: "resourcespecificpermissiongrant resource type"
-description: "A resource specific permission grant specifies the permission a specific Azure AD app has"
+title: "resourceSpecificPermissionGrant resource type"
+description: "A resource-specific permission grant specifies the permission a specific Azure AD app has"
 author: "AkJo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-# resourceSpecificGrant resource type
+# resourceSpecificPermissionGrant resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resourceSpecificGrant declares the specific permission that has been granted to a specific AzureAD app for a specific instance of a resource in Microsoft Graph.
-
+A resourceSpecificPermissionGrant declares the specific permission that has been granted to a specific AzureAD app for a specific instance of a resource in Microsoft Graph.
 
 ## Methods
 
-|  Method       |  Return Type  | Description| 
-|:---------------|:--------|:----------|
-|[List permission grants in a chat](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted on a specific chat.|
-
+|  Method                                                                   |  Return Type                                                                     | Description                                                  | 
+| :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |
+|[List permission grants of a chat](../api/chat-list-permissiongrants.md)   | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted in a specific chat.  |
+|[List permission grants of a group](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted in a specific group. |
 
 ## Properties
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-| id| string| The chat's unique identifier. Read-only.|
-| deletedDateTime| dateTimeOffset|  Not used.|
-| clientId| string|  ID of the AAD app that has been granted access. Read-only.|
-| clientAppId| string| ID of the service principal of the AAD app that has been granted access. Read-only.|
-| resourceAppId| string|  ID of the AzureAD app that is hosting the resource. Read-only.|
-| permissionType| string|  The type of permission. Possible values are: `Application`,`Delegated`. Read-only.|
-| permission| string|  The name of the permission. Read-only.|
+| Property        | Type          | Description                                                                           |
+| :-------------- | :------------ | :------------------------------------------------------------------------------------ |
+| id              | string        | The unique identifier of the resource-specific permission grant. Read-only.           |
+| deletedDateTime | dateTimeOffset| Not used.                                                                             |
+| clientId        | string        | ID of the AAD app that has been granted access. Read-only.                            |
+| clientAppId     | string        | ID of the service principal of the AAD app that has been granted access. Read-only.   |
+| resourceAppId   | string        | ID of the AzureAD app that is hosting the resource. Read-only.                        |
+| permissionType  | string        | The type of permission. Possible values are: `Application`,`Delegated`. Read-only. |
+| permission      | string        | The name of the permission. Read-only.                                                |
 
 ## JSON representation
 

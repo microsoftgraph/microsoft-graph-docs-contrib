@@ -13,25 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [resource specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [chat](../resources/chat.md). This is a list of all the Azure AD apps that have access to the chat along with the kind of access of that each of the apps has. 
-
+List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [chat](../resources/chat.md). This is a list of all the Azure AD apps that have access to the chat along with the kind of access of that each of the apps has. 
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| Chat.Manage.Chat*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
-
+| Permission Type                        | Permissions (from least to most privileged)                                                                                                                                                        |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat                                    |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                                                                                     |
+| Application                            | Chat.Manage.Chat*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/permissionGrants
-GET /users/{user-id}/chats/{chat-id}/permissionGrants
 ```
 
 ## Optional query parameters
@@ -40,9 +37,9 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Header           | Value                      |
+| :--------------- | :------------------------- |
+| Authorization    | Bearer {token}. Required.  |
 
 ## Request body
 
@@ -50,12 +47,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [resource specific permission grant](../resources/resourcespecificpermissiongrant.md) objects in the response body.
-
+If successful, this method returns a `200 OK` response code and a list of [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objects in the response body.
 
 ## Example
 
-### Request
+#### Request
 
 Here is an example of the request.
 
@@ -65,16 +61,12 @@ Here is an example of the request.
   "name": "chat_list_permission_grants"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d@unq.gbl.spaces/permissionGrants
+GET https://graph.microsoft.com/beta/chats/19:089ac694c48647c68035aae675cf78ab@thread.v2/permissionGrants
 ```
 
 ---
 
-
----
-
-
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -87,7 +79,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 291
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#permissionGrants",
@@ -122,6 +113,3 @@ Content-length: 291
     ]
 }
 ```
-
-
-
