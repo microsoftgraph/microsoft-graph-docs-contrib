@@ -59,7 +59,59 @@ For an Azure AD B2C tenant this method returns a `200 OK` response code and a co
 
 ## Example
 
-### Example 1: List all **identityProvider** configured in an Azure AD B2C tenant
+### Example 1: List all **identityProvider** configured in an Azure AD tenant
+
+### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_identityproviderbase"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/identity/identityProviders
+```
+
+### Response
+The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityProviderBase",
+  "isCollection": true
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/identityProviders",
+   "value":[
+      {
+         "@odata.type": "microsoft.graph.builtInIdentityProvider",
+         "id": "MSASignup-OAUTH",
+         "identityProviderType": "MicrosoftAccount",
+         "displayName": "MicrosoftAccount"
+      },
+      {
+         "@odata.type": "#microsoft.graph.socialIdentityProvider",
+         "id": "Facebook-OAUTH",
+         "displayName": "Facebook",
+         "identityProviderType": "Facebook",
+         "clientId": "test",
+         "clientSecret": "******"
+      }
+   ]
+}
+```
+
+### Example 2: List all **identityProvider** configured in an Azure AD B2C tenant
 
 ### Request
 The following is an example of the request.
