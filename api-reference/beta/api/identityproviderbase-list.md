@@ -66,7 +66,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviderbase"
+  "name": "get_identityproviderbase_2"
 }
 -->
 
@@ -120,7 +120,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviderbase"
+  "name": "get_identityproviderbase_3"
 }
 -->
 
