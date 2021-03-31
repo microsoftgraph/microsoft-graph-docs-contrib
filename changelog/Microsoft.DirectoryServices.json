@@ -62,7 +62,8 @@
         "WorkloadArea": "Applications",
         "SubArea": ""
     },
-     "ChangeList": [
+    {
+      "ChangeList": [
             {
           "Id": "b653a8c7-f00c-4327-a9b3-ffa1e41d4709",
           "ApiChange": "Resource",
