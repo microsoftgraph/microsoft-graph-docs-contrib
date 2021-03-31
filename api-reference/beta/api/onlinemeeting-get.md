@@ -81,7 +81,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
-To get the attendance report of a meeting:
+To get the attendance report of a meeting with application permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
