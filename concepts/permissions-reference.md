@@ -1855,21 +1855,21 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamSettings.Read.All_ | Read all teams' settings | Read this team's settings, without a signed-in user.	| Yes | No |
 | _TeamSettings.ReadWrite.All_ | Read and change all teams' settings. | Read and change all teams' settings, without a signed-in user.	| Yes | No |
 
-## Teams activity permissions ([private preview](#permissions-availability-status))
+## Teams activity permissions
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read_ (private preview)| Read user's teamwork activity feed | Allows the app to read the signed-in user's teamwork activity feed.	| No | No |
-| _TeamsActivity.Send_ (general availability) | Send a teamwork activity as the user | Allows the app to create new notifications in users' teamwork activity feeds on behalf of the signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | No | No |
+| _TeamsActivity.Read_ ([private preview](#permissions-availability-status)) | Read user's teamwork activity feed | Allows the app to read the signed-in user's teamwork activity feed.	| No | No |
+| _TeamsActivity.Send_ | Send a teamwork activity as the user | Allows the app to create new notifications in users' teamwork activity feeds on behalf of the signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | No | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read.All_ (private preview) | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. | Yes | No |
-| _TeamsActivity.Send_ (general availability) | Send a teamwork activity to any user | Allows the app to create new notifications in users' teamwork activity feeds without a signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | Yes | No |
+| _TeamsActivity.Read.All_ ([private preview](#permissions-availability-status)) | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. | Yes | No |
+| _TeamsActivity.Send_ | Send a teamwork activity to any user | Allows the app to create new notifications in users' teamwork activity feeds without a signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | Yes | No |
 
 ## Teams app permissions (deprecated)
 
