@@ -660,13 +660,15 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
 
 - Full read of all directory resources (both declared properties and navigation properties)
 - Create and update users
-- Disable and enable users (but not company administrator)
-- Set user alternative security id (but not administrators)
+- Disable and enable users (but not Company Administrator)
+- Set user alternative security ID (but not administrators)
 - Create and update groups
 - Manage group memberships
 - Update group owner
 - Manage license assignments
 - Define schema extensions on applications
+- Manage directory settings
+- Manage admin consent workflow configuration (but not whether admin consent is required or who is authorized to grant admin consent)
 
 > **Note**:
 > - No rights to reset user passwords.
@@ -1742,7 +1744,7 @@ Security permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _ShortNotes.Read.All_ | Read all users' short notes | Allows the app to read all the short notes without a signed-in user. | Yes | 
+| _ShortNotes.Read.All_ | Read all users' short notes | Allows the app to read all the short notes without a signed-in user. | Yes |
 | _ShortNotes.ReadWrite.All_ | Read, create, edit, and delete all users' short notes | Allows the app to read, create, edit, and delete all the short notes without a signed-in user. | Yes |
 
 ---
@@ -1873,21 +1875,21 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamSettings.Read.All_ | Read all teams' settings | Read this team's settings, without a signed-in user.	| Yes | No |
 | _TeamSettings.ReadWrite.All_ | Read and change all teams' settings. | Read and change all teams' settings, without a signed-in user.	| Yes | No |
 
-## Teams activity permissions ([private preview](#permissions-availability-status))
+## Teams activity permissions
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read_ (private preview)| Read user's teamwork activity feed | Allows the app to read the signed-in user's teamwork activity feed.	| No | No |
-| _TeamsActivity.Send_ (private preview)| Send a teamwork activity as the user | Allows the app to create new activities in the user's teamwork activity feed, and send new activities to other users' activity feed, on behalf of the signed-in user. | No | No |
+| _TeamsActivity.Read_ ([private preview](#permissions-availability-status)) | Read user's teamwork activity feed | Allows the app to read the signed-in user's teamwork activity feed.	| No | No |
+| _TeamsActivity.Send_ | Send a teamwork activity as the user | Allows the app to create new notifications in users' teamwork activity feeds on behalf of the signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | No | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read.All_ (private preview) | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. | Yes | No |
-| _TeamsActivity.Send_ (private preview)| Send a teamwork activity to any user | Allows the app to send new activities to any users' teamwork activity feed, without a signed-in user. | Yes | No |
+| _TeamsActivity.Read.All_ ([private preview](#permissions-availability-status)) | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. | Yes | No |
+| _TeamsActivity.Send_ | Send a teamwork activity to any user | Allows the app to create new notifications in users' teamwork activity feeds without a signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | Yes | No |
 
 ## Teams app permissions (deprecated)
 
@@ -1921,14 +1923,14 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsAppInstallation.ReadWriteSelfForTeam_ (private preview) | Allow the app to manage itself in teams| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
 
 #### Application permissions
-|   Permission    |  Display String   |  Description | Admin Consent Required | 
+|   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _TeamsAppInstallation.ReadForUser.All_ | Read installed Teams apps for all users| Allows the app to read the Teams apps that are installed for any user, without a signed-in user. Does not give the ability to read application-specific settings.| Yes | 
+| _TeamsAppInstallation.ReadForUser.All_ | Read installed Teams apps for all users| Allows the app to read the Teams apps that are installed for any user, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
 | _TeamsAppInstallation.ReadWriteForUser.All_ | Manage Teams apps for all users| Allows the app to read, install, upgrade, and uninstall Teams apps for any user, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
-| _TeamsAppInstallation.ReadWriteSelfForUser.All_ (private preview) | Allow the app to manage itself for all users| Allows a Teams app to read, install, upgrade, and uninstall itself to any user, without a signed-in user.| Yes | 
-| _TeamsAppInstallation.ReadForTeam.All_ | Read installed Teams apps for all teams| Allows the app to read the Teams apps that are installed in any team, without a signed-in user. Does not give the ability to read application-specific settings.| Yes | 
+| _TeamsAppInstallation.ReadWriteSelfForUser.All_ (private preview) | Allow the app to manage itself for all users| Allows a Teams app to read, install, upgrade, and uninstall itself to any user, without a signed-in user.| Yes |
+| _TeamsAppInstallation.ReadForTeam.All_ | Read installed Teams apps for all teams| Allows the app to read the Teams apps that are installed in any team, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | Manage Teams apps for all teams| Allows the app to read, install, upgrade, and uninstall Teams apps in any team, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
-| _TeamsAppInstallation.ReadWriteSelfForTeam.All_ (private preview) | Allow the Teams app to manage itself for all teams| Allows a Teams app to read, install, upgrade, and uninstall itself in any team, without a signed-in user.| Yes | 
+| _TeamsAppInstallation.ReadWriteSelfForTeam.All_ (private preview) | Allow the Teams app to manage itself for all teams| Allows a Teams app to read, install, upgrade, and uninstall itself in any team, without a signed-in user.| Yes |
 
 ## Team member permissions 
 

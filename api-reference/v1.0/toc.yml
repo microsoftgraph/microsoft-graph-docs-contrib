@@ -4376,6 +4376,34 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
     - name: Governance
       items:
+        - name: Consent requests
+          href: resources/consentrequests-root.md
+          items:
+          - name: Admin consent request policy
+            href: resources/adminconsentrequestpolicy.md
+            items:
+            - name: Get
+              href: api/adminconsentrequestpolicy-get.md
+            - name: Update
+              href: api/adminconsentrequestpolicy-update.md
+          - name: App consent requests
+            href: resources/appconsentrequest.md
+            items:
+            - name: List
+              href: api/appconsentrequest-list.md
+            - name: Get
+              href: api/appconsentrequest-get.md
+            - name: Filter by current user
+              href: api/appconsentrequest-filterByCurrentUser.md
+          - name: User consent requests
+            href: resources/userconsentrequest.md
+            items:
+            - name: List
+              href: api/userconsentrequest-list.md
+            - name: Get
+              href: api/userconsentrequest-get.md
+            - name: Filter by current user
+              href: api/userconsentrequest-filterByCurrentUser.md
         - name: Terms of use
           href: resources/agreement.md
           items:
@@ -5410,6 +5438,14 @@ items:
             href: api/chat-teamsappinstallation-upgrade.md
           - name: Remove app from chat
             href: api/chat-delete-installedapps.md
+      - name: Activity feed
+        items:
+        - name: Send notification to user in chat
+          href: api/chat-sendactivitynotification.md
+        - name: Send notification to user in team
+          href: api/team-sendactivitynotification.md
+        - name: Send notification to user
+          href: api/userteamwork-sendactivitynotification.md
       - name: Tab
         href: resources/teamstab.md
         items:
