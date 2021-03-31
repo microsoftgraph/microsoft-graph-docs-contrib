@@ -1,40 +1,193 @@
 {
   "changelog": [
-      {
-        "ChangeList": [
-            {
-                "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
-                "ApiChange": "Resource",
-                "ChangedApiName": "selfSignedCertificate",
-                "ChangeType": "Addition",
-                "Description": "Added the [selfSignedCertificate](https://docs.microsoft.com/en-us/graph/api/resources/selfSignedCertificate?view=graph-rest-beta) resource type.",
-                "Target": "selfSignedCertificate"
-            }
-        ],
-        "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2021-03-18T09:02:13.750Z",
-        "WorkloadArea": "Identity and access",
-        "SubArea": "Directory management"
+    {
+      "ChangeList": [
+        {
+          "Id": "b653a8c7-f00c-4327-a9b3-ffa1e41d4709",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added app-only permission **Application.ReadWrite.OwnedBy** for the [instantiate](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0) method of [applicationTemplate](https://docs.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-1.0) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "b653a8c7-f00c-4327-a9b3-ffa1e41d4709",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the **signInAudience** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "b653a8c7-f00c-4327-a9b3-ffa1e41d4709",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-30T00:00:00",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     },
     {
-        "ChangeList": [
-            {
-                "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
-                "ApiChange": "Method",
-                "ChangedApiName": "addTokenSigningCertificate",
-                "ChangeType": "Addition",
-                "Description": "Added the [addTokenSigningCertificate](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
-                "Target": "servicePrincipal"
-            }
-        ],
-        "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2021-03-18T09:02:13.750Z",
-        "WorkloadArea": "Applications",
-        "SubArea": ""
+      "ChangeList": [
+        {
+          "Id": "d08eda00-a264-4a24-979d-d13e6da3857f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added app-only permission **Application.ReadWrite.OwnedBy** for the [instantiate](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-instantiate?view=graph-rest-beta) method of [applicationTemplate](https://docs.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "d08eda00-a264-4a24-979d-d13e6da3857f",
+          "ApiChange": "Property",
+          "ChangedApiName": "application",
+          "ChangeType": "Addition",
+          "Description": "Added the **uniqueName** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "d08eda00-a264-4a24-979d-d13e6da3857f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-30T00:00:00",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFile",
+          "Id": "9b6a0290-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approval",
+          "ChangeType": "Addition",
+          "Description": "Added the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource type.",
+          "Target": "approval"
+        },
+        {
+          "Id": "9b6c64cb-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-1.0) resource type.",
+          "Target": "approvalStage"
+        },
+        {
+          "Id": "9b6ec85e-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewReviewerScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewReviewerScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewReviewerScope?view=graph-rest-1.0) resource type.",
+          "Target": "accessReviewReviewerScope"
+        },
+        {
+          "Id": "9b712925-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminConsentRequestPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminConsentRequestPolicy](https://docs.microsoft.com/en-us/graph/api/resources/adminConsentRequestPolicy?view=graph-rest-1.0) resource type.",
+          "Target": "adminConsentRequestPolicy"
+        },
+        {
+          "Id": "9b738c28-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appConsentRequestScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [appConsentRequestScope](https://docs.microsoft.com/en-us/graph/api/resources/appConsentRequestScope?view=graph-rest-1.0) resource type.",
+          "Target": "appConsentRequestScope"
+        },
+        {
+          "Id": "9b75efeb-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appConsentRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [appConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/appConsentRequest?view=graph-rest-1.0) resource type.",
+          "Target": "appConsentRequest"
+        },
+        {
+          "Id": "9b78514d-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userConsentRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [userConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/userConsentRequest?view=graph-rest-1.0) resource type.",
+          "Target": "userConsentRequest"
+        },
+        {
+          "Id": "9b7ab42e-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appConsentApprovalRoute",
+          "ChangeType": "Addition",
+          "Description": "Added the [appConsentApprovalRoute](https://docs.microsoft.com/en-us/graph/api/resources/appConsentApprovalRoute?view=graph-rest-1.0) resource type.",
+          "Target": "appConsentApprovalRoute"
+        },
+        {
+          "Id": "9b7d149a-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "consentRequestFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **consentRequestFilterByCurrentUserOptions** enumeration type.",
+          "Target": "consentRequestFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "9b7f7a21-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/userConsentRequest-filterByCurrentUser?view=graph-rest-1.0) method to the [userConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/userConsentRequest?view=graph-rest-1.0) resource.",
+          "Target": "userConsentRequest"
+        },
+        {
+          "Id": "9b822fc0-80aa-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/appConsentRequest-filterByCurrentUser?view=graph-rest-1.0) method to the [appConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/appConsentRequest?view=graph-rest-1.0) resource.",
+          "Target": "appConsentRequest"
+        }
+      ],
+      "Id": "9b5e1569-80aa-11eb-8a3c-f63608ac46d5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-29T07:39:40.436Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selfSignedCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [selfSignedCertificate](https://docs.microsoft.com/en-us/graph/api/resources/selfSignedCertificate?view=graph-rest-beta) resource type.",
+          "Target": "selfSignedCertificate"
+        }
+      ],
+      "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+          "ApiChange": "Method",
+          "ChangedApiName": "addTokenSigningCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [addTokenSigningCertificate](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     },
     {
       "ChangeList": [

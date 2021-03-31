@@ -61,34 +61,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 Here is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user_oAuth2PermissionGrants"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/oauth2PermissionGrants
+GET https://graph.microsoft.com/beta/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/oauth2PermissionGrants
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-oauth2permissiongrants-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-oauth2permissiongrants-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-user-oauth2permissiongrants-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-user-oauth2permissiongrants-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -106,19 +86,18 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 253
 
 {
   "value": [
     {
-      "id": "id-value",
-      "clientId": "clientId-value",
-      "consentType": "consentType-value",
-      "principalId": "principalId-value",
-      "resourceId": "resourceId-value",
-      "scope": "scope-value",
-      "startTime": "datetime-value",
-      "expiryTime": "datetime-value"
+      "clientId": "85477313-ea43-4c7d-b8a4-54fed35d0b60",
+      "consentType": "Principal",
+      "expiryTime": "2021-09-19T07:06:52.6843299Z",
+      "id": "E3NHhUPqfUy4pFT-010LYFo5-ycA-_5Fhl7nHbaJ7qACy1R9o6oWQJ-cpLSUIt2b",
+      "principalId": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
+      "resourceId": "27fb395a-fb00-45fe-865e-e71db689eea0",
+      "scope": " Contacts.ReadWrite openid profile",
+      "startTime": "0001-01-01T00:00:00Z"
     }
   ]
 }

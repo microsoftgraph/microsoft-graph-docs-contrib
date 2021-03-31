@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels
+GET /teams/{team-id}/channels
 ```
 
 ## Optional query parameters
@@ -58,39 +58,21 @@ If successful, this method returns a `200 OK` response code and collection of [C
 
 The following example shows a request to list all channels.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_channels"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels
+```http
+GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-channels-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-channels-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-channels-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
 The following is the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -106,12 +88,11 @@ Content-length: 262
 {
   "value": [
     {
-      "description": "description-value",
-      "displayName": "display-name-value",
-      "id": "id-value",
-      "isFavoriteByDefault": false,
-      "webUrl": "webUrl-value",
-      "email": "email-value"
+      "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+      "membershipType": "standard"
     }
   ]
 }
@@ -123,7 +104,6 @@ Content-length: 262
 
 The following example shows a request to list all private channels.
 
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -131,31 +111,14 @@ The following example shows a request to list all private channels.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
+GET https://graph.microsoft.com/v1.0/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/channels?$filter=membershipType eq 'private'
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-private-channels-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-private-channels-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-private-channels-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-private-channels-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
----
 
 #### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -172,12 +135,11 @@ Content-length: 262
 {
   "value": [
     {
-      "description": "description-value",
-      "displayName": "display-name-value",
-      "id": "id-value",
-      "isFavoriteByDefault": false,
-      "webUrl": "webUrl-value",
-      "email": "email-value"
+      "id": "19:982abbfca323a582f0a6d00ae2deca@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "test private team",
+      "membershipType": "private"
     }
   ]
 }
