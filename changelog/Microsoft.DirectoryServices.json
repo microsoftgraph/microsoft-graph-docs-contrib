@@ -3,6 +3,68 @@
     {
       "ChangeList": [
         {
+          "Id": "4579a6f4-bb21-42f0-91cb-a69029018a65",
+          "ApiChange": "Resource",
+          "ChangedApiName": "countryNamedLocation",
+          "ChangeType": "Change",
+          "Description": "Added the **countryLookupMethod** property to the [countryNamedLocation](https://docs.microsoft.com/en-us/graph/api/resources/countrynamedlocation?view=graph-rest-beta) resource.",
+          "Target": "countryNamedLocation"
+        },
+        {
+          "Id": "7115e92d-2aa8-4a9c-924b-d0caf8023529",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "countryLookupMethodType",
+          "ChangeType": "Addition",
+          "Description": "Added the **countryLookupMethodType** enumeration type.",
+          "Target": "countryLookupMethodType"
+        }
+      ],
+      "Id": "189230eb-9513-42ee-8035-7125d278da37",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-29T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": "Identity and sign-in"
+    },
+      {
+        "ChangeList": [
+            {
+                "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+                "ApiChange": "Resource",
+                "ChangedApiName": "selfSignedCertificate",
+                "ChangeType": "Addition",
+                "Description": "Added the [selfSignedCertificate](https://docs.microsoft.com/en-us/graph/api/resources/selfSignedCertificate?view=graph-rest-beta) resource type.",
+                "Target": "selfSignedCertificate"
+            }
+        ],
+        "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Directory management"
+    },
+    {
+        "ChangeList": [
+            {
+                "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+                "ApiChange": "Method",
+                "ChangedApiName": "addTokenSigningCertificate",
+                "ChangeType": "Addition",
+                "Description": "Added the [addTokenSigningCertificate](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+                "Target": "servicePrincipal"
+            }
+        ],
+        "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+        "WorkloadArea": "Applications",
+        "SubArea": ""
+    },
+    {
+      "ChangeList": [
+            {
           "Id": "b653a8c7-f00c-4327-a9b3-ffa1e41d4709",
           "ApiChange": "Resource",
           "ChangedApiName": "applicationTemplate",
