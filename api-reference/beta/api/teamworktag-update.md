@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update teamworkTag
 Namespace: microsoft.graph
 
-Update the name or the description or both, of a tag in the team. Update the properties of a [teamworkTag](../resources/teamworktag.md) object.
+Update the name of a tag in the team. Update the properties of a [teamworkTag](../resources/teamworktag.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,6 @@ The following table shows the properties that are required when you update the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the tag. The value can not be more than 40 characters.|
-|description|String|Description of the tag. The value can not be more than 200 characters.|
 
 ## Response
 
@@ -66,7 +65,6 @@ Content-length: 185
 
 {
   "displayName": "Sample tag name",
-  "description": "sample tag name description",
 }
 ```
 
@@ -87,7 +85,6 @@ Content-Type: application/json
   "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==",
   "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
   "displayName": "Sample tag name",
-  "description": "sample tag name description",
   "memberCount": "2",
   "tagType": "standard"
 }

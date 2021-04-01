@@ -45,7 +45,6 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the tag. The value can not be more than 40 characters.|
-|description|String|(Optional) Description of the tag. The value can not be more than 200 characters.|
 |members| [teamworkTagMember](../resources/teamworktagmember.md) |Members of the team to add to the tag. Set the user identifier property of each member. Members count should not be more than 25.|
 
 
@@ -68,7 +67,6 @@ Content-Type: application/json
 
 {
   "displayName": "Sample tag name",
-  "description": "sample tag name description",
   "members":[
 	{
 		"userId":"92f6952f-61ca-4a94-8910-508a240bc167"
@@ -98,7 +96,6 @@ Content-Type: application/json
   "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==",
   "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
   "displayName": "Sample tag name",
-  "description": "sample tag name description",
   "memberCount": "2",
   "tagType": "standard"
 }
