@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [teamwork
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_teamworktag_from_"
+  "name": "create_teamworktag_from"
 }
 -->
 ``` http
