@@ -1,6 +1,6 @@
 ---
 title: "teamsAppIcon resource type"
-description: "Represents and icon associated with an app on Microsoft Teams."
+description: "An icon associated with an app on Microsoft Teams."
 author: "jecha"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,10 +13,36 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The details of a version of a [teamsAppIcon](teamsappicon.md).
+An icon associated with a [teamsApp](teamsapp.md).
 
 ## Properties
 
+| Property      | Type                        | Description                                                                             |
+| :------------ | :-------------------------- | :-------------------------------------------------------------------------------------- |
+| id            | string                      | The unique id of the app icon.                                                          |
+| webUrl        | string                      | The publicly-accessible URL where the app icon can be found.                            |
+
+## Relationships
+
+| Relationship  | Type	                                            | Description                                                                         |
+| :------------ | :------------------------------------------------ | :---------------------------------------------------------------------------------- |
+| hostedContent | [teamworkHostedContent](teamworkhostedcontent.md) | The contents of the app icon if the icon is hosted within the Teams infrastructure. |
+
 ## JSON representation
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.teamsAppIcon",
+  "baseType": "microsoft.graph.entity"
+}-->
+
+```json
+{
+  "id": "string",
+  "webUrl": "string"
+}
+```
+
 ## See also
+- [teamsApp](teamsapp.md)
+- [teamsAppDefinition](teamsappdefinition.md)
