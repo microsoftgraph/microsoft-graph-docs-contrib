@@ -109,7 +109,7 @@ The request specifies the optional request header, odata.top, returning 2 events
   "name": "get_chatmessagedeltachannel_1"
 }-->
 ```http
-https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/delta?$top=2
+GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/delta?$top=2
 ```
 
 #### Initial request response
