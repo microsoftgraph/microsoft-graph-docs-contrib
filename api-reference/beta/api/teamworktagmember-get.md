@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Teams.GraphSvc.teamworkTagMember"
+  "@odata.type": "microsoft.graph.teamworkTagMember"
 }
 -->
 ``` http
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkTagMember",
+    "@odata.type": "#microsoft.graph.teamworkTagMember",
     "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjI2QzYjJiM2ViLWM0N2YtNDViOS05NWYyLWIyZjJlZjYyMTVjZQ==",
     "displayName": "Sample user name",
     "tenantId": "18be64a9-c73a-4862-bccc-76c31ef09b9d",

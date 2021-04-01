@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Teams.GraphSvc.teamworkTag)"
+  "@odata.type": "Collection(microsoft.graph.teamworkTag)"
 }
 -->
 ``` http
@@ -74,7 +74,7 @@ Content-Type: application/json
 {
   "value": [
     {
-        "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkTag",
+        "@odata.type": "#microsoft.graph.teamworkTag",
         "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==",
         "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
         "displayName": "Sample tag name 1",
@@ -83,7 +83,7 @@ Content-Type: application/json
         "tagType": "standard"
     },
     {
-        "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkTag",
+        "@odata.type": "#microsoft.graph.teamworkTag",
         "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjIzk3ZjYyMzQ0LTU3ZGMtNDA5Yy04OGFkLWM0YWYxNDE1OGZmNQ==",
         "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
         "displayName": "Sample tag name 2",
