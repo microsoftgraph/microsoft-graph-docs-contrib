@@ -59,8 +59,6 @@ If successful, this function returns a `200 OK` response code and a String colle
 The following is an example of the request.
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityprovider_availableprovidertypes"
