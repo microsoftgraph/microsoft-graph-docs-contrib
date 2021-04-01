@@ -7,11 +7,11 @@ author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List availableProviderTypes (deprecated)
+# List availableProviderTypes
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieves all identity provider types available in a directory.
 
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityProviders/availableProviderTypes
+GET /identity/identityProviders/availableProviderTypes
 ```
 
 ## Request headers
@@ -53,9 +53,12 @@ If successful, this function returns a `200 OK` response code and a String colle
 
 ## Example
 
+### Example 1: List all **identityProvider** available in an Azure AD directory
+
 ### Request
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityprovider_availableprovidertypes"
@@ -63,12 +66,8 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
+GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -90,18 +89,66 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
+    "value": [
+        "MicrosoftAccount",
+        "EmailOTP",
+        "Facebook",
+        "Google"
+    ]
+}
+```
+
+### Example 2: List all **identityProvider** available in an Azure AD B2C directory
+
+### Request
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "identityprovider_availableprovidertypes_b2c"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
+```
+
+---
+
+### Response
+
+The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(Edm.String)"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+ "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
   "value": [
-      "Amazon",
-      "OpenIDConnect",
-      "Facebook",
-      "GitHub",
-      "Google",
-      "LinkedIn",
-      "Microsoft",
-      "QQ",
-      "Twitter",
-      "WeChat",
-      "Weibo"
+        "Microsoft",
+        "Google",
+        "Facebook",
+        "Amazon",
+        "LinkedIn",
+        "Weibo",
+        "QQ",
+        "WeChat",
+        "Twitter",
+        "GitHub",
+        "AppleManaged",
+        "OpenIdConnect"
   ]
 }
 ```

@@ -41,7 +41,7 @@ var externalItem = new ExternalItem
 	}
 };
 
-await graphClient.Connections["{externalConnection-id}"].Items["{externalItem-id}"]
+await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"]
 	.Request()
 	.PutAsync(externalItem);
 
