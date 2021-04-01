@@ -45,7 +45,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the tag. The value can not be more than 40 characters.|
-|members| [teamworkTagMember](../resources/teamworktagmember.md) |Members of the team to add to the tag. Set the user identifier property of each member. Members count should not be more than 25.|
+|members| [teamworkTagMember](../resources/teamworktagmember.md) collection |Members of the team to add to the tag. Set the user identifier property of each member. Members count should not be more than 25.|
 
 
 
@@ -56,6 +56,7 @@ If successful, this method returns a `201 Created` response code and a [teamwork
 ## Examples
 
 ### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_teamworktag_from"
