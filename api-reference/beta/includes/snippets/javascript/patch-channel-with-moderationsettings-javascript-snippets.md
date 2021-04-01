@@ -21,7 +21,7 @@ const channel = {
     }
 };
 
-await client.api('/teams/{team-id}/channels/{channel-id}')
+await client.api('/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2')
 	.version('beta')
 	.update(channel);
 

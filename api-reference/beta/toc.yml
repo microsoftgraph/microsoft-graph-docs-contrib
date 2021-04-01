@@ -10682,6 +10682,30 @@ items:
               href: api/riskyusers-dismiss.md
         - name: Identity provider
           items:
+          - name: Identity provider base
+            href: resources/identityproviderbase.md
+          - name: Built-in identity provider
+            href: resources/builtinidentityprovider.md
+          - name: Social identity provider
+            href: resources/socialidentityprovider.md
+          - name: Apple identity provider
+            href: resources/appleidentityprovider.md
+          - name: OpenID Connect identity provider
+            href: resources/openidconnectidentityprovider.md
+          - name: List
+            href: api/identityproviderbase-list.md
+          - name: Create
+            href: api/identityproviderbase-post-identityproviders.md
+          - name: Get
+            href: api/identityproviderbase-get.md
+          - name: Update
+            href: api/identityproviderbase-update.md
+          - name: Delete
+            href: api/identityproviderbase-delete.md
+          - name: List available provider types
+            href: api/identityproviderbase-list-availableprovidertypes.md
+        - name: Identity provider (deprecated)
+          items:
           - name: Identity provider type
             href: resources/identityprovider.md
           - name: OpenID Connect identity provider type
