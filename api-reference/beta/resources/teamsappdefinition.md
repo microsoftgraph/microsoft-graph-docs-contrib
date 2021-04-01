@@ -17,20 +17,22 @@ The details of a version of a [teamsApp](teamsapp.md).
 
 ## Properties
 
-| Property            | Type     | Description |
-|:------------------- |:-------- |:----------- |
-| id                  | string   | A unique id (not the teams appid). |
-| teamsAppId          | string   | The id from the Teams App manifest. |
-| publishingState| string|The published status of a specific version of a Teams app. Possible values are:</br>`submitted` — The specific version of the Teams app has been submitted and is under review. </br>`published`  — The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected` — The request to publish the specific version of the Teams app was rejected by the admin. |
+| Property            | Type     | Description                                            |
+|:------------------- |:-------- |:------------------------------------------------------ |
+| id                  | string   | A unique id (not the teams appid).                     |
+| teamsAppId          | string   | The id from the Teams App manifest.                    |
+| publishingState     | string   |The published status of a specific version of a Teams app. Possible values are:</br>`submitted` — The specific version of the Teams app has been submitted and is under review. </br>`published`  — The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected` — The request to publish the specific version of the Teams app was rejected by the admin. |
 | azureADAppId        | string   | The WebApplicationInfo.id from the Teams App manifest. |
-| displayName         | string   | The name of the app provided by the app developer. |
-| version             | string   | The version number of the application. |
+| displayName         | string   | The name of the app provided by the app developer.     |
+| version             | string   | The version number of the application.                 |
 
 ## Relationships
 
-| Relationship | Type	| Description |
-|:---------------|:--------|:----------|
-|bot|[teamworkBot](teamworkbot.md) | The details of the bot specified in the Teams App manifest. |
+| Relationship   | Type	                          | Description                                                 |
+|:-------------- |:------------------------------ |:----------------------------------------------------------- |
+| bot            |[teamworkBot](teamworkbot.md)   | The details of the bot specified in the Teams App manifest. |
+| colorIcon      |[teamsAppIcon](teamsappicon.md) | The URL indicating where the color icon can be found.       |
+| outlineIcon    |[teamsAppIcon](teamsappicon.md) | The URL indicating where the outline icon can be found.     |
 
 ## JSON representation
 
@@ -52,6 +54,7 @@ The details of a version of a [teamsApp](teamsapp.md).
 ## See also
 
 - [teamsApp](teamsapp.md)
+- [teamsAppIcon](teamsappicon.md)
 - [teamsAppInstallation](teamsappinstallation.md)
 - [teamsTab](../resources/teamstab.md)
 
