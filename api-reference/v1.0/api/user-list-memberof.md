@@ -138,6 +138,8 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+17
 ```
 
 ### Example 3: Use OData cast to get only a count of group membership
@@ -165,6 +167,8 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+16
 ```
 
 ### Example 4: Use $search and OData cast to get membership in groups with display names that contain the letters 'tier' including a count of returned objects

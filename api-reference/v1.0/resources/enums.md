@@ -1353,3 +1353,10 @@ Possible values for user account types (group membership), per Windows definitio
 |fit|
 |none|
 |unknownFutureValue|
+
+### teamworkActivityTopicSource values 
+
+| Member    |
+| :-------- |
+| entityUrl |
+| text      |
