@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamworkTagMember",
-  "baseType": "",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->

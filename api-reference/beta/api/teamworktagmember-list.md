@@ -86,6 +86,7 @@ Content-Type: application/json
       "displayName": "Sample user name 2",
       "tenantId": "18be64a9-c73a-4862-bccc-76c31ef09b9d",    
       "userId": "945fe02a-5dc1-4d28-bf5c-30a6147fe842"
+    }
   ]
 }
 ```

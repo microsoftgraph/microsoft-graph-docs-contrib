@@ -79,7 +79,7 @@ Content-Type: application/json
         "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
         "displayName": "Sample tag name 1",
         "description": "sample tag name description 1",
-        "memberCount": "2",
+        "memberCount": 2,
         "tagType": "standard"
     },
     {
@@ -88,7 +88,7 @@ Content-Type: application/json
         "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
         "displayName": "Sample tag name 2",
         "description": "sample tag name description 2",
-        "memberCount": "4",
+        "memberCount": 4,
         "tagType": "standard"
     }
   ]

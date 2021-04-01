@@ -45,7 +45,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamworkTag",
-  "baseType": "",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
@@ -55,7 +55,6 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "teamId": "String",
   "displayName": "String",
-  "description": "String",
   "memberCount": "Integer",
   "tagType": "String"
 }
