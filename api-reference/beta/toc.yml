@@ -11049,7 +11049,7 @@ items:
               href: api/identityapiconnector-delete.md
       - name: Governance
         items:
-        - name: Access reviews for groups
+        - name: Access reviews
           href: resources/accessreviewsv2-root.md
           items:
           - name: Access review schedule definition
@@ -11082,6 +11082,8 @@ items:
               href: api/accessreviewinstance-acceptrecommendations.md
             - name: Apply decisions
               href: api/accessreviewinstance-applydecisions.md
+            - name: Batch record decisions
+              href: api/accessreviewinstance-batchrecorddecisions.md
           - name: Access review instance decision item
             href: resources/accessreviewinstancedecisionitem.md
             items:
@@ -11091,7 +11093,7 @@ items:
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
-        - name: Access reviews
+        - name: Access reviews (legacy)
           href: resources/accessreviews-root.md
           items:
           - name: Access review

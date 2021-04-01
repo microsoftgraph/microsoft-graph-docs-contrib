@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConsentRequest|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.Read.All, Policy.ReadWrite.ConsentRequest|
+|Application|Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All|
 
 When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
 + Global Administrator
