@@ -7,13 +7,14 @@ author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Delete identityProvider (deprecated)
+# Delete identityProvider
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-Delete an [identityProvider](../resources/identityprovider.md).
+Delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
+
+In Azure AD B2C, delete a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) object.
 
 ## Permissions
 
@@ -34,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /identityProviders/{id}
+DELETE /identity/identityProviders/{id}
 ```
 
 ## Request headers
@@ -49,13 +50,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
 
 The following is an example of the request.
+
 
 <!-- {
   "blockType": "request",
@@ -64,14 +66,8 @@ The following is an example of the request.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identityProviders/{id}
+DELETE https://graph.microsoft.com/beta/identity/identityProviders/{id}
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
