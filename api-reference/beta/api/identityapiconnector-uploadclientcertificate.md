@@ -1,5 +1,5 @@
 ---
-title: "Upload client certificate for API connector"
+title: "identityApiConnector: uploadClientCertificate"
 description: "Upload a PKCS 12 format key (PFX) to an API connectors authentication configuration."
 localization_priority: Normal
 author: "nickgmicrosoft"
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Upload client certificate for API connector
+# identityApiConnector: uploadClientCertificate
 
 Namespace: microsoft.graph
 
@@ -124,7 +124,7 @@ Content-type: application/json
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed982019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Upload client certificate for API connector",
+  "description": "identityApiConnector: uploadClientCertificate",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
