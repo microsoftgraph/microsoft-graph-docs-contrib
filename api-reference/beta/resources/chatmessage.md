@@ -22,26 +22,26 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Channel messages**| | |
-|[List messages in a channel](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | List of all root messages in a channel.|
-|[Get messages in a channel delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
+|[List messages in channel](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | List of all root messages in a channel.|
+|[Get delta of messages in channel](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[Create subscription for new channel messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted messages, and reactions to them. |
-|[Get message in a channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single root message in a channel.|
-|[Send message in a channel](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Create a new root message in a channel.|
-|[Update message in a channel](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
+|[Get message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single root message in a channel.|
+|[Send message in channel](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Create a new root message in a channel.|
+|[Update message in channel](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**Channel message replies**| | |
-|[List replies to a message](../api/chatmessage-list-replies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a chat message in channel.|
-|[Get reply message in a channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single reply message in a channel.|
-|[Reply to a message in a channel](../api/chatmessage-post-replies.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
+|[List replies to message](../api/chatmessage-list-replies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a chat message in channel.|
+|[Get reply message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single reply message in a channel.|
+|[Reply to a message in channel](../api/chatmessage-post-replies.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
 |[Update reply message](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**Chat messages**| | |
-|[List messages in a chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a chat. |
+|[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a chat. |
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
 |[Get messages across all chats for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in, including 1:1 chats, group chats, and meeting chats. |
 |[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted chat messages, and reactions to them. |
-|[Send message in a chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
-|[Update message in a chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
+|[Send message in chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
+|[Update message in chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**Hosted content**| | |
-|[List all hosted content](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted contents associated with a message.|
+|[List all hosted content](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted contents associated with a message.|
 |[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content (and it's bytes) for a message.|
 
 
@@ -65,11 +65,11 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Currently supports user, bot, team, channel.|
 |importance|string | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
-|locale|string|Locale of the chat message set by the client. Always set to `en-us`|
+|locale|string|Locale of the chat message set by the client. Always set to `en-us`.|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
-|chatId|string|If the message was sent in a chat, represents the Id of the chat|
+|chatId|string|If the message was sent in a chat, represents the identity of the chat.|
 |channelIdentity|[channelIdentity](channelidentity.md)|If the message was sent in a channel, represents identity of the channel.|
-
+|webUrl|string|Read-only. Link to the message in Microsoft Teams.|
 ## Relationships
 
 | Relationship   | Type    | Description |
@@ -84,14 +84,17 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "deleted",
+    "replyToId",
+    "lastEditedDateTime",
     "deletedDateTime",
-    "attachments",
-    "importance",
-    "reactions",
-    "mentions",
     "subject",
-    "summary"
+    "summary",
+    "attachments",
+    "mentions",
+    "reactions",
+    "policyViolation",
+    "chatId",
+    "channelIdentity"
   ],
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessage"
@@ -107,6 +110,7 @@ The following is a JSON representation of the resource.
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
+  "lastEditedDateTime": "string (timestamp)",
   "deletedDateTime": "string (timestamp)",
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},
@@ -119,7 +123,7 @@ The following is a JSON representation of the resource.
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "chatId": "string",
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
-  "deleted": true
+  "webUrl": "string"
 }
 ```
 

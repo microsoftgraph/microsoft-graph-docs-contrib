@@ -42,13 +42,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+**Get hosted content in a channel message**
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /chats/{chat-id}/messages/{message-id}/hostedContents/{hostedcontent-id}
-GET /users/{user-id}/chats/{chat-id}/messages/{message-id}/hostedContents/{hostedcontent-id}
-GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents/{hostedcontent-id}
-GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/hostedContents/{hostedcontent-id}
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents/{hosted-content-id}
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/hostedContents/{hosted-content-id}
+```
+
+**Get hosted content in a chat message**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /chats/{chat-id}/messages/{message-id}/hostedContents/{hosted-content-id}
+GET /users/{user-id}/chats/{chat-id}/messages/{message-id}/hostedContents/{hosted-content-id}
 ```
 
 ## Optional query parameters
@@ -77,6 +82,10 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_hostedcontentchatmessage_1"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv
 ```
@@ -84,15 +93,13 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 The following is an example of the response.
 
-> [!NOTE]
-> `contentBytes` and `contentType` are always set to null
+> **Note:** `contentBytes` and `contentType` are always set to null.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessageHostedContent"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -109,6 +116,10 @@ Content-type: application/json
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "get_hostedcontentchatmessage_2"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv/$value
 ```

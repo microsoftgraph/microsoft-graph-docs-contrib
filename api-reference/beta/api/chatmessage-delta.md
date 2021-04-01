@@ -1,4 +1,4 @@
----
+c---
 title: "chatMessages: delta"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. By using delta query, you can get new or updated messages in a channel."
 localization_priority: Priority
@@ -7,7 +7,7 @@ author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 ---
 
-# Get incremental messages in a channel using delta
+# chatMessages: delta
 
 Namespace: microsoft.graph
 
@@ -26,7 +26,7 @@ A GET request with the delta function returns either:
 - A `nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or
 - A `deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).
 
-State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the next round.
+State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the to retrieve additional changes (messages changed or posted after acquiring `deltaLink`).
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
@@ -61,7 +61,7 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| `$deltatoken` | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| `$deltatoken` | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next iteration of change tracking for that collection.|
 | `$skiptoken` | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked. |
 
 ### Optional OData query parameters
@@ -75,7 +75,6 @@ The following [OData query parameters](/graph/query-parameters) are supported by
 | Header        | Value                     |
 |---------------|---------------------------|
 | Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json          |
 
 ## Request Body
 
@@ -91,13 +90,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a series of three requests to synchronize the messages in the given channel. There are five messages in the channel.
 
-- Step 1: [sample initial request](#initial-request) and [response](#initial-request-response).
-- Step 2: [sample second request](#second-request) and [response](#second-request-response)
-- Step 3: [sample third request](#third-request) and [final response](#third-request-response).
+- Step 1: [initial request](#initial-request) and [response](#initial-request-response).
+- Step 2: [second request](#second-request) and [response](#second-request-response)
+- Step 3: [third request](#third-request) and [final response](#third-request-response).
 
 For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
-See also what you'll do in the [next round](#example-2-retrieving-additional-changes).
+See also what you'll do [to retrieve additional changes](#example-2-retrieving-additional-changes).
 
 #### Initial request
 
@@ -105,6 +104,10 @@ In this example, the channel messages are being synchronized for the first time,
 
 The request specifies the optional request header, odata.top, returning 2 events at a time.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessagedeltachannel_1"
+}-->
 ```http
 https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/delta?$top=2
 ```
@@ -150,7 +153,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -189,7 +192,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -213,6 +216,10 @@ Content-type: application/json
 
 The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify the same top parameters as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes them.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessagedeltachannel_2"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/delta?$skiptoken=-FG3FPHv7HuyuazNLuy3eXlzQGbEjYLUsW9-pYkmXgn5KGsaOwrCoor2W23dGNNM1KtAX4AyvpFQNVsBgsEwUOX9lw8x9zDumgJy-C-UbjZLlZDQACyC9FyrVelZus9n.--rshdLwy_WBFJd8anPXJPbSUtUD7r3V4neB5tcrG58
 ```
@@ -258,7 +265,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -297,7 +304,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -321,13 +328,17 @@ Content-type: application/json
 
 The third request continues to use the latest `nextLink` returned from the last sync request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessagedeltachannel_3"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/delta?$skiptoken=8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4
 ```
 
 #### Third request response
 
-The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read. Save and use the `deltaLink` URL to query for any new messages starting from this point in the next round.
+The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read. Save and use the `deltaLink` URL to query for any new messages starting from this point onwards.
 
 <!-- {
   "blockType": "response",
@@ -366,7 +377,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -405,7 +416,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -431,6 +442,10 @@ Using the `deltaLink` from the last request in the last round, you will be able 
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessagedeltachannel_4"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/delta?$deltatoken=aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4
 ```
@@ -475,7 +490,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },

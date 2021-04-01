@@ -23,14 +23,14 @@ Create a new [chatMessage](../resources/chatmessage.md) in the specified [channe
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions for Channel
+### Permissions for channel
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-### Permissions for Chat
+### Permissions for chat
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | ChatMessage.Send, Chat.ReadWrite |
@@ -39,23 +39,20 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-### Sending message in a channel
+**Sending message in a channel**
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /teams/{team-id}/channels/{channel-id}/messages
 ```
 
-### Sending replies in a channel
+**Sending replies in a channel**
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
-### Sending message in a chat
+**Sending message in a chat**
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /chats/{chat-id}/messages
 ```
@@ -80,11 +77,15 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-messages.md), [send a message to a channel](channel-post-messages.md), or [send reply to a channel](chatmessage-post-replies.md).
 
-### Example 1: Hello World
+### Example 1: Send a Hello World message in a channel
 
 #### Request
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_1"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
@@ -96,19 +97,15 @@ Content-type: application/json
 }
 ```
 
-
 #### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -136,7 +133,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -154,11 +151,15 @@ Content-type: application/json
 }
 ```
 
-### Example 2: User @mentions
+### Example 2: @mentions a user in a channel message
 
 #### Request
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_2"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
@@ -219,7 +220,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -252,14 +253,17 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Cards
+### Example 3: Send message containing cards
 
 #### Request
 The following is an example of the request.
 
 > **Note:** The attachment's ID must be unique and can be a new randomly generated GUID. However, the attachment's ID must be the same in the _body_ and _attachments_ elements.
 
-
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_3"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
@@ -318,7 +322,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -345,14 +349,17 @@ Content-type: application/json
 }
 ```
 
-### Example 4: File attachments
+### Example 4: Send a message with file attachment in it
 
 #### Request
 The following is an example of the request.
 
 >**Note:** The file must already be in SharePoint. To find the file properties, GET the **driveItem** for the file. For example, /drives/{id}/items/{id}. Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.
 
-
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_4"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
@@ -408,7 +415,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -435,7 +442,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Sending inline images along with the message
+### Example 5: Send inline images along with the message
 
 #### Request
 The following is an example of the request.
@@ -444,6 +451,10 @@ The following is an example of the request.
 
 **contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_5"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages
 Content-type: application/json
@@ -499,7 +510,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -513,7 +524,7 @@ Content-type: application/json
 }
 ```
 
-### Example 6: Card with inline images
+### Example 6: Send a card with inline images
 
 #### Request
 The following is an example of the request.
@@ -522,6 +533,10 @@ The following is an example of the request.
 
 **contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_6"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
@@ -586,7 +601,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },

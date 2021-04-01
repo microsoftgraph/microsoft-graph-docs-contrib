@@ -1,5 +1,5 @@
 ---
-title: "List messages across all channels in a team"
+title: "channel: getAllMessages"
 description: "Retrieve all messages across channels in a team."
 author: "RamjotSingh"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List messages across all channels in a team
+# channel: getAllMessages
 
 Namespace: microsoft.graph
 
@@ -52,17 +52,23 @@ If successful, this method returns a `200 OK` response code and also returns all
 
 ### Request
 
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_allchannelmessages_1"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/getAllMessages
 ```
 
 ### Response
 
->**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
+  "@odata.type": "microsoft.graph.chatMessage",
+  "isCollection": true,
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -95,7 +101,7 @@ HTTP/1.1 200 OK
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -134,7 +140,7 @@ HTTP/1.1 200 OK
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },

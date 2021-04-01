@@ -1,5 +1,5 @@
 ---
-title: "List chat messages"
+title: "List chatMessages in a chat"
 description: "Retrieve the list of messages in a chat. "
 localization_priority: Priority
 author: "RamjotSingh"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List chat messages
+# List chatMessages in a chat
 
 Namespace: microsoft.graph
 
@@ -62,14 +62,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here is an example of the request. `$top=2` is passed to retrieve 2 messages.
+The following is an example of the request. `$top=2` is passed to retrieve two messages.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_allchatmessages_1"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2
 ```
 
 ### Response
-Here is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -109,7 +113,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -144,7 +148,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },

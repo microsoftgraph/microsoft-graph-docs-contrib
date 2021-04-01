@@ -1,5 +1,5 @@
 ---
-title: "Create chatMessage in a channel"
+title: "Send chatMessage in a channel"
 description: "Create new chatMessage in the specified channel."
 localization_priority: Normal
 author: "RamjotSingh"
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create chatMessage in channel
+# Send chatMessage in channel
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
+Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
 
 > **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
@@ -67,6 +67,10 @@ For a more comprehensive list of examples, see [Create chatMessage in a channel 
 ### Request
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_channelmessage_1"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
@@ -115,7 +119,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -138,9 +142,13 @@ Content-type: application/json
 > **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
 #### Request
-<!-- { "blockType": "ignored" } -->
+
 The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_channelmessage_2"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
@@ -193,7 +201,7 @@ HTTP/1.1 200 OK
       "conversation":null,
       "user":{
          "id":"id-value",
-         "displayName":"Joh Doe",
+         "displayName":"John Doe",
          "userIdentityType":"aadUser"
       }
    },
@@ -215,9 +223,13 @@ HTTP/1.1 200 OK
 > **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
 #### Request
-<!-- { "blockType": "ignored" } -->
+
 The following example shows how to import back-in-time messages containing inline images using the `createDateTime` and `from` keys in the request body.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_channelmessage_3"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
@@ -231,9 +243,9 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
       }
    },
    {
-   "body":{
-      "contentType":"html",
-      "content":"<div><div>\n<div><span><img height=\"250\" src=\"../hostedContents/1/$value\" width=\"176.2295081967213\" style=\"vertical-align:bottom; width:176px; height:250px\"></span>\n\n</div>\n\n\n</div>\n</div>"
+      "body":{
+         "contentType":"html",
+         "content":"<div><div>\n<div><span><img height=\"250\" src=\"../hostedContents/1/$value\" width=\"176.2295081967213\" style=\"vertical-align:bottom; width:176px; height:250px\"></span>\n\n</div>\n\n\n</div>\n</div>"
    },
    "hostedContents":[
       {

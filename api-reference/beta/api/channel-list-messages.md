@@ -66,14 +66,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_listchannelmessages_1"
+}-->
 ```
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 ```
 
 ### Response
-Here is an example of the response. `nextLink` in the response can be used to get the next page of messages.
+The following is an example of the request. `nextLink` in the response can be used to get the next page of messages.
 
 <!-- {
   "blockType": "response",
@@ -112,7 +116,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -165,7 +169,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },

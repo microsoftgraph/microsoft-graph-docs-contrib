@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List channel message replies
+# List replies
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the replies of a [message](../resources/chatmessage.md) in a [channel](../resources/channel.md) of a team.
+List all the replies to a [message](../resources/chatmessage.md) in a [channel](../resources/channel.md) of a team.
 
 This method lists only the replies of the specified message, if any. To get the message itself, simply call [get channel message](chatmessage-get.md).
 
@@ -60,14 +60,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 In this example, the specified message has three replies.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_listmessagereplies_1"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616989510408/replies
 ```
 
 ### Response
-Here is an example of the response. 
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +107,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -142,7 +145,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
@@ -180,7 +183,7 @@ Content-type: application/json
                 "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-                    "displayName": "Ramjot Singh",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },

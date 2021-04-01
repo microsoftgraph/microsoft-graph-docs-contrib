@@ -1,5 +1,5 @@
 ---
-title: "Get message in a channel or a chat"
+title: "Get chatMessage in a channel or chat"
 description: "Retrieve a single message (without its replies) in a channel or a chat."
 author: "RamjotSingh"
 localization_priority: Priority
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get message in a channel or a chat
+# Get chatMessage in a channel or chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a single [message](../resources/chatmessage.md) or it's [reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+Retrieve a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -42,14 +42,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-### Get message in a channel
+**Get message in a channel**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
 ```
 
-### Get message in a chat
+**Get message in a chat**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}
 GET /users/{user-id}/chats/{chat-id}/messages/{message-id}
@@ -57,7 +58,7 @@ GET /me/chats/{chat-id}/messages/{message-id}
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -73,23 +74,26 @@ If successful, this method returns a `200 OK` response code and a [chatmessage](
 
 ## Examples
 
-### Example 1 : Get a message in a chat
+### Example 1: Get a message in a chat
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessagechannel_1"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/chats/19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces/messages/1612289992105
 ```
 
 #### Response
-Here is an example of the response. `chatId` lists the [chat](../resources/chat.md) this message is part of.
+The following example shows the response.`chatId` identifies the [chat](../resources/chat.md) that contains this message.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -118,7 +122,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -132,23 +136,26 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : Get a message in a channel
+### Example 2: Get a message in a channel
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessagechannel_2"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1614618259349
 ```
 
 #### Response
-Here is an example of the response. `channelIdentity` lists the [team](../resources/team.md) and [channel](../resources/channel.md) this message is part of.
+The following example shows the response.`channelIdentity` identifies the [team](../resources/team.md) and [channel](../resources/channel.md) that contains this message.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -176,7 +183,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
@@ -194,16 +201,20 @@ Content-type: application/json
 }
 ```
 
-### Example 3 : Get reply to a message in a channel
+### Example 3: Get reply to a message in a channel
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessagechannel_3"
+}-->
 ```http
 https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1612509044972/replies/1613671348387
 ```
 
 #### Response
-Here is an example of the response. `replyToId` tells the `id` of root message.
+The following example shows the response.`replyToId` contains the `id` of the root message.
 
 <!-- {
   "blockType": "response",
@@ -238,7 +249,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },

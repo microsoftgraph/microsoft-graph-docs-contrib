@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# List hostedContents
+# List chatMessageHostedContents
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message. This API only lists the hosted content objects, to get the content bytes refer to [get chatmessage hosted content](chatmessagehostedcontent-get.md)
+Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message. This API only lists the hosted content objects. To get the content bytes, see [get chatmessage hosted content](chatmessagehostedcontent-get.md)
 
 ## Permissions
 
@@ -40,13 +40,18 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 
 ## HTTP request
 
+**Get hostedContents in a channel message**
 <!-- { "blockType": "ignored" } -->
+```http
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/hostedContents
+```
 
+**Get hostedContents in a chat message**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}/hostedContents
 GET /users/{user-id}/chats/{chat-id}/messages/{message-id}/hostedContents
-GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents
-GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/hostedContents
 ```
 
 ## Optional query parameters
@@ -69,12 +74,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1 : List hosted content for a channel message
+### Example 1: List hosted content for a channel message
 
 #### Request
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_hostedcontentschannelmessage_1"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents
 ```
@@ -83,8 +92,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 The following is an example of the response.
 
-> [!NOTE]
-> `contentBytes` and `contentType` are always set to null
+> **Note:** `contentBytes` and `contentType` are always set to null.
 
 <!-- {
   "blockType": "response",
@@ -92,7 +100,6 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.chatMessageHostedContent",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -115,12 +122,16 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : List hosted content for reply to a channel message
+### Example 2: List hosted content for reply to a channel message
 
 #### Request
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_hostedcontentschannelmessage_2"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/replies/1616963389737/hostedContents
 ```
@@ -129,8 +140,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 The following is an example of the response.
 
-> [!NOTE]
-> `contentBytes` and `contentType` are always set to null
+> **Note:** `contentBytes` and `contentType` are always set to null.
 
 <!-- {
   "blockType": "response",
@@ -138,7 +148,6 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.chatMessageHostedContent",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -167,6 +176,10 @@ Content-type: application/json
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_hostedcontentschatmessage_1"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents
 ```
@@ -175,8 +188,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 The following is an example of the response.
 
-> [!NOTE]
-> `contentBytes` and `contentType` are always set to null
+> **Note:** `contentBytes` and `contentType` are always set to null.
 
 <!-- {
   "blockType": "response",
@@ -184,7 +196,6 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.chatMessageHostedContent",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

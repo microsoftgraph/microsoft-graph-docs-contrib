@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before creating a chat message.
+Send a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before creating a chat message.
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
@@ -59,6 +59,10 @@ For a more comprehensive list of examples, see [Create chatMessage in a channel 
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessages_1"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages
 Content-type: application/json
@@ -108,7 +112,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Ramjot Singh",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
