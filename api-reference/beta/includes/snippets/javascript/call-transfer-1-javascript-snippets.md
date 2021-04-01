@@ -22,8 +22,7 @@ const transfer = {
     },
     languageId: 'languageId-value',
     region: 'region-value'
-  },
-  clientContext: '9e90d1c1-f61e-43e7-9f75-d420159aae08'
+  }
 };
 
 await client.api('/communications/calls/{id}/transfer')
