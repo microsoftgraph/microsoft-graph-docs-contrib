@@ -1,7 +1,7 @@
 ---
-title: "Get change notifications delivered in different ways (preview)"
+title: "Get change notifications delivered in different ways"
 description: "Change notifications can be delivered via different technologies, including webhooks and Azure Event Hubs."
-author: "davidmu1"
+author: "Jumaodhiss"
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
 ---
@@ -32,7 +32,7 @@ This section will walk you through the setup of required Azure services.
 
 The [Azure CLI](/cli/azure/what-is-azure-cli) allows you to script and automate adminstrative tasks in Azure. The CLI can be [installed on your local computer](/cli/azure/install-azure-cli) or run directly from the [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
-```shell
+```azurecli
 # --------------
 # TODO: update the following values
 #sets the name of the resource group

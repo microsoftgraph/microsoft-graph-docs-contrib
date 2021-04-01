@@ -1,7 +1,7 @@
 ---
 title: "Get conversationMember in a chat"
 description: "Retrieve a member of a chat."
-author: "clearab"
+author: "bhartono"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -56,7 +56,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
 
 > [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues.md#missing-tenantid-for-chat-members).
+> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#missing-properties-for-chat-members).
 
 ## Example
 
@@ -64,6 +64,8 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 Here is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_conversation_member"
@@ -71,6 +73,24 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

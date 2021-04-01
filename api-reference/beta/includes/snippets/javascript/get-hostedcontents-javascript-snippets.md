@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/chats/{id}/messages/{id}/hostedContents')
+let hostedContents = await client.api('/chats/{id}/messages/{id}/hostedContents')
 	.version('beta')
 	.get();
 

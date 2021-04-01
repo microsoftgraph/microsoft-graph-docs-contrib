@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teamwork/workforceIntegrations
+PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## Request headers
@@ -74,7 +74,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/teamwork/workforceIntegrations
+PATCH https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforceIntegrationId}
 Content-type: application/json
 
 {

@@ -3,7 +3,7 @@ title: "authenticationFlowsPolicy resource type"
 description: "Represents the policy configuration of self-service sign-up experience at a tenant level that lets external users request to sign up for approval. "
 author: "linkhp"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationFlowsPolicy",
-  "baseType": "",
   "openType": false
 }
 -->
