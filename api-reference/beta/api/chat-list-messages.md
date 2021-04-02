@@ -1,5 +1,5 @@
 ---
-title: "List chatMessages in a chat"
+title: "List messages in a chat"
 description: "Retrieve the list of messages in a chat. "
 localization_priority: Priority
 author: "RamjotSingh"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List chatMessages in a chat
+# List messages in a chat
 
 Namespace: microsoft.graph
 
