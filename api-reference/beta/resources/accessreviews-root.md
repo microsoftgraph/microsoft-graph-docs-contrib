@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews (for resources excluding groups)
+# Azure AD access reviews (legacy)
 
 Namespace: microsoft.graph
 

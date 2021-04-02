@@ -3,6 +3,157 @@
     {
       "ChangeList": [
         {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityApiConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [upload a client certificate] method and expanded the methods of [identityApiConnector](https://docs.microsoft.com/graph/api/resources/identityApiConnector?view=graph-rest-beta&preserve-view=true) to manage client certificate authentication for API connectors.",
+          "Target": "identityApiConnector"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pkcs12certificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [pkcs12certificate](https://docs.microsoft.com/graph/api/resources/pkcs12certificate.md?view=graph-rest-beta&preserve-view=true) complex type that extends apiAuthenticationConfigurationBase for HTTP client certificate authentication of API connector API calls. ",
+          "Target": "pkcs12certificate"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "clientCertificateAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [clientCertificateAuthentication](https://docs.microsoft.com/graph/api/resources/clientCertificateAuthentication?view=graph-rest-beta&preserve-view=true) complex type that extends apiAuthenticationConfigurationBase which represents a collection of certificates used for HTTP client certificate authentication of API connector API calls.",
+          "Target": "clientCertificateAuthentication"
+        }
+      ],
+      "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-23T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4579a6f4-bb21-42f0-91cb-a69029018a65",
+          "ApiChange": "Resource",
+          "ChangedApiName": "countryNamedLocation",
+          "ChangeType": "Change",
+          "Description": "Added the **countryLookupMethod** property to the [countryNamedLocation](https://docs.microsoft.com/en-us/graph/api/resources/countrynamedlocation?view=graph-rest-beta) resource.",
+          "Target": "countryNamedLocation"
+        },
+        {
+          "Id": "7115e92d-2aa8-4a9c-924b-d0caf8023529",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "countryLookupMethodType",
+          "ChangeType": "Addition",
+          "Description": "Added the **countryLookupMethodType** enumeration type.",
+          "Target": "countryLookupMethodType"
+        }
+      ],
+      "Id": "189230eb-9513-42ee-8035-7125d278da37",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-29T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selfSignedCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [selfSignedCertificate](https://docs.microsoft.com/en-us/graph/api/resources/selfSignedCertificate?view=graph-rest-beta) resource type.",
+          "Target": "selfSignedCertificate"
+        }
+      ],
+      "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+          "ApiChange": "Method",
+          "ChangedApiName": "addTokenSigningCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [addTokenSigningCertificate](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b653a8c7-f00c-4327-a9b3-ffa1e41d4709",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added app-only permission **Application.ReadWrite.OwnedBy** for the [instantiate](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0) method of [applicationTemplate](https://docs.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-1.0) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "b653a8c7-f00c-4327-a9b3-ffa1e41d4709",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the **signInAudience** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "b653a8c7-f00c-4327-a9b3-ffa1e41d4709",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-30T00:00:00",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d08eda00-a264-4a24-979d-d13e6da3857f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added app-only permission **Application.ReadWrite.OwnedBy** for the [instantiate](https://docs.microsoft.com/en-us/graph/api/applicationtemplate-instantiate?view=graph-rest-beta) method of [applicationTemplate](https://docs.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "d08eda00-a264-4a24-979d-d13e6da3857f",
+          "ApiChange": "Property",
+          "ChangedApiName": "application",
+          "ChangeType": "Addition",
+          "Description": "Added the **uniqueName** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "d08eda00-a264-4a24-979d-d13e6da3857f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-30T00:00:00",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
+          "ApiChange": "Property",
+          "ChangedApiName": "agreementFile",
           "Id": "9b6a0290-80aa-11eb-8a3c-f63608ac46d5",
           "ApiChange": "Resource",
           "ChangedApiName": "approval",
@@ -220,7 +371,7 @@
     },
     {
       "ChangeList": [
-       {
+        {
           "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
           "ApiChange": "Resource",
           "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
@@ -519,68 +670,68 @@
     {
       "ChangeList": [
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "authenticationMethod",
-            "ChangeType": "Addition",
-            "Description": "Added the [authentication method](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethods-overview?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "authenticationMethod"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [authentication method](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethods-overview?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "authenticationMethod"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "fido2AuthenticationMethod",
-            "ChangeType": "Addition",
-            "Description": "Added the [FIDO2 authentication method](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "fido2AuthenticationMethod"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2AuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [FIDO2 authentication method](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "fido2AuthenticationMethod"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "microsoftAuthenticatorAuthenticationMethod",
-            "ChangeType": "Addition",
-            "Description": "Added the [Microsoft Authenticator authentication method](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "microsoftAuthenticatorAuthenticationMethod"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft Authenticator authentication method](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "microsoftAuthenticatorAuthenticationMethod"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "windowsHelloForBusinessAuthenticationMethod",
-            "ChangeType": "Addition",
-            "Description": "Added the [Windows Hello for Business authentication method](https://docs.microsoft.com/en-us/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "windowsHelloForBusinessAuthenticationMethod"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsHelloForBusinessAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [Windows Hello for Business authentication method](https://docs.microsoft.com/en-us/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "windowsHelloForBusinessAuthenticationMethod"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "authenticationMethodsPolicy",
-            "ChangeType": "Addition",
-            "Description": "Added the [authentication methods policy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "authenticationMethodsPolicy"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodsPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authentication methods policy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "authenticationMethodsPolicy"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "fido2AuthenticationMethodConfiguration",
-            "ChangeType": "Addition",
-            "Description": "Added the [FIDO2 authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "fido2AuthenticationMethodConfiguration"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2AuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [FIDO2 authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "fido2AuthenticationMethodConfiguration"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodConfiguration",
-            "ChangeType": "Addition",
-            "Description": "Added the [Microsoft Authenticator authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft Authenticator authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "emailAuthenticationMethodConfiguration",
-            "ChangeType": "Addition",
-            "Description": "Added the [email authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "emailAuthenticationMethodConfiguration"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [email authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "emailAuthenticationMethodConfiguration"
         }
       ],
       "Id": "a179abf1-70d3-435a-889b-ec860ca0aad1",
@@ -592,7 +743,7 @@
     },
     {
       "ChangeList": [
-         {
+        {
           "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
           "ApiChange": "Resource",
           "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
@@ -6520,6 +6671,168 @@
       "Version": "beta",
       "CreatedDateTime": "2021-03-08T07:50:12.353Z",
       "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityProviderBase",
+          "ChangeType": "Addition",
+          "Description": "To support configuring an identity provider in an Azure AD and Azure AD B2C tenant, introduced new resource type [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta) entity.",
+          "Target": "identityProviderBase"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appleIdentityProvider",
+          "ChangeType": "Addition",
+          "Description": "To support configuring an Apple identity provider in Azure AD B2C tenant, introduced new resource type [appleIdentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/appleidentityprovider?view=graph-rest-beta) entity.",
+          "Target": "appleIdentityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "builtInIdentityProvider",
+          "ChangeType": "Addition",
+          "Description": "To support configuring an Built-in identity provider in an Azure AD tenant, introduced new resource type  [builtInIdentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/builtinidentityprovider?view=graph-rest-beta) entity.",
+          "Target": "builtInIdentityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "socialIdentityProvider",
+          "ChangeType": "Addition",
+          "Description": "To support configuring a social identity provider in an Azure AD and Azure AD B2C tenant, introduced new resource type [socialIdentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/socialidentityprovider?view=graph-rest-beta) entity.",
+          "Target": "socialIdentityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "openIdConnectIdentityProvider",
+          "ChangeType": "Addition",
+          "Description": "To support configuring an OpenID Connect identity provider in an Azure AD B2C tenant, introduced new resource type [openIdConnectidentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/openidconnectidentityprovider?view=graph-rest-beta) entity.",
+          "Target": "openIdConnectIdentityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProviderBase",
+          "ChangeType": "Addition",
+          "Description": "To support creating identity providers in an Azure AD and Azure AD B2C tenant, introduced [post](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-post-identityproviders?view=graph-rest-beta) operation.",
+          "Target": "identityProviderBase"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProviderBase",
+          "ChangeType": "Addition",
+          "Description": "To support listing all identity provider configurations in an Azure AD and Azure AD B2C tenant, introduced [list](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-list?view=graph-rest-beta) operation.",
+          "Target": "identityProviderBase"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProviderBase",
+          "ChangeType": "Addition",
+          "Description": "To support getting an identity provider configuration in an Azure AD and Azure AD B2C tenant, introduced [get](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-get?view=graph-rest-beta) operation.",
+          "Target": "identityProviderBase"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProviderBase",
+          "ChangeType": "Addition",
+          "Description": "To support updating an identity provider in an Azure AD and Azure AD B2C tenant, introduced [update](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-update?view=graph-rest-beta) operation.",
+          "Target": "identityProviderBase"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProviderBase",
+          "ChangeType": "Addition",
+          "Description": "To support deleting an identity provider in an Azure AD and Azure AD B2C tenant, introduced [delete](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-delete?view=graph-rest-beta) operation.",
+          "Target": "identityProviderBase"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProviderBase",
+          "ChangeType": "Addition",
+          "Description": "To support listing available provider types of identity provider in an Azure AD and Azure AD B2C tenant, introduced [availableProviderType](https://docs.microsoft.com/en-us/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-beta) operation.",
+          "Target": "identityProviderBase"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Change",
+          "Description": "Deprecated the [identityProvider](https://docs.microsoft.com/en-us/graph/api/resources/identityprovider?view=graph-rest-beta) entity to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta).",
+          "Target": "identityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Resource",
+          "ChangedApiName": "openIdConnectProvider",
+          "ChangeType": "Change",
+          "Description": "Deprecated the [opeIdConnectProvider](https://docs.microsoft.com/en-us/graph/api/resources/openidconnectprovider?view=graph-rest-beta) entity to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta).",
+          "Target": "openIdConnectProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Change",
+          "Description": "Deprecated [post](https://docs.microsoft.com/en-us/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta) operation to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta).",
+          "Target": "identityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Change",
+          "Description": "Deprecated  [list](https://docs.microsoft.com/en-us/graph/api/identityprovider-list?view=graph-rest-beta) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta).",
+          "Target": "identityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Change",
+          "Description": "Deprecated [get](https://docs.microsoft.com/en-us/graph/api/identityprovider-get?view=graph-rest-beta) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta).",
+          "Target": "identityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Change",
+          "Description": "Deprecated [availableProviderType](https://docs.microsoft.com/en-us/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-beta) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta).",
+          "Target": "identityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Change",
+          "Description": "Deprecated [update](https://docs.microsoft.com/en-us/graph/api/identityprovider-update?view=graph-rest-beta) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta).",
+          "Target": "identityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Change",
+          "Description": "Deprecated [delete](https://docs.microsoft.com/en-us/graph/api/identityprovider-delete?view=graph-rest-beta) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta).",
+          "Target": "identityProvider"
+        }
+      ],
+      "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-30T00:00:00",
+      "WorkloadArea": "Identity and access",
       "SubArea": ""
     }
   ]
