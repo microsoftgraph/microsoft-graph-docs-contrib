@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const team = {
    'template@odata.bind':'https://graph.microsoft.com/v1.0/teamsTemplates(\'standard\')',
-   'group@odata.bind':'https://graph.microsoft.com/v1.0/groups(\'groupId\')',
+   'group@odata.bind':'https://graph.microsoft.com/v1.0/groups(\'dbd8de4f-5d47-48da-87f1-594bed003375\')',
    channels: [
       {
          displayName: 'Class Announcements 📢',
