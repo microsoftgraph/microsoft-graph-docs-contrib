@@ -13134,7 +13134,7 @@ items:
           href: api/chatmessage-get.md
         - name: Send message
           href: api/chatmessage-post.md
-        - name: Reply to message
+        - name: Send reply to a message
           href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md

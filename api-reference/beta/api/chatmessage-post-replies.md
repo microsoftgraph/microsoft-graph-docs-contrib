@@ -1,5 +1,5 @@
 ---
-title: "Reply to a message in a channel"
+title: "Send replies to a message in a channel"
 description: "Reply to existing message in a channel."
 author: "RamjotSingh"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Reply to a message in a channel
+# Send replies to a message in a channel
 
 Namespace: microsoft.graph
 
