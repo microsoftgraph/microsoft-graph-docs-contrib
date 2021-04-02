@@ -1,5 +1,5 @@
 ---
-title: "List chatMessageHostedContents"
+title: "List hostedContents"
 description: "Retrieve the list of chatMessageHostedContent objects from a message."
 localization_priority: Normal
 author: "RamjotSingh"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# List chatMessageHostedContents
+# List hostedContents
 
 Namespace: microsoft.graph
 
