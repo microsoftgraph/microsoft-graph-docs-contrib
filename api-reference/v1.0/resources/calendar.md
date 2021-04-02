@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A calendar which is a container for events. It can be a calendar for a [user](user.md), or the default calendar of a Microsoft 365 [group](group.md).
+Represents a container for [event](event.md) resources. It can be a calendar for a [user](user.md), or the default calendar of a Microsoft 365 [group](group.md).
 
 > **Note:** There are a few minor differences in the way you can interact with user calendars and group calendars:
 

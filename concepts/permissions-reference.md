@@ -341,7 +341,6 @@ Administrators can configure [application access policy](auth-limit-mailbox-acce
 * _Calendars.Read_: Find events in a conference room's calendar organized by bob@contoso.com (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
 * _Calendars.Read_: List all events on a user's calendar for the month of May (`GET /users/{id | userPrincipalName}/calendarView?startDateTime=2017-05-01T00:00:00&endDateTime=2017-06-01T00:00:00`)
 * _Calendars.ReadWrite_: Add an event to a user's calendar for approved time off  (`POST /users/{id | userPrincipalName}/events`).
-* _Calendars.Send_: Send a message (`POST /users/{id | userPrincipalName}/sendCalendars`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 

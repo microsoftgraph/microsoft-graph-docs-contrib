@@ -12,9 +12,8 @@ const client = Client.init(options);
 
 const channel = {
   '@microsoft.graph.channelCreationMode': 'migration',
-  displayName: 'Architecture Discussion',
-  description: 'This channel is where we debate all future architecture plans',
-  membershipType: 'standard',
+  displayName: 'Import_150958_99z',
+  description: 'Import_150958_99z',
   createdDateTime: '2020-03-14T11:22:17.067Z'
 };
 

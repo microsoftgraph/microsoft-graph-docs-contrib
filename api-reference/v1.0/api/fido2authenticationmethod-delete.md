@@ -64,8 +64,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 ### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_fido2authenticationmethod"
