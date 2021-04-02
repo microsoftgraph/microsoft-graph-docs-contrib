@@ -20,7 +20,7 @@ An icon associated with a [teamsApp](teamsapp.md).
 | Property      | Type                        | Description                                                                             |
 | :------------ | :-------------------------- | :-------------------------------------------------------------------------------------- |
 | id            | string                      | The unique id of the app icon.                                                          |
-| webUrl        | string                      | The publicly-accessible URL where the app icon can be found.                            |
+| webUrl        | string                      | The web URL that can be used for downloading the image.                                 |
 
 ## Relationships
 
