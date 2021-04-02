@@ -40,7 +40,7 @@ Content-Length: 72797
 
 <bytes 0-72796 of the file>
 
-Here, 0 and 72796 are the start and end indexes of the file segment and 4533322 is the size of document
+Here, 0 and 72796 are the start and end indexes of the file segment and 4533322 is the size of document.
 ```
 ### HTTP response
 
