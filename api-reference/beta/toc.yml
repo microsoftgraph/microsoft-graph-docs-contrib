@@ -11069,6 +11069,8 @@ items:
               href: api/identityapiconnector-get.md
             - name: Update
               href: api/identityapiconnector-update.md
+            - name: Upload a client certificate
+              href: api/identityapiconnector-uploadclientcertificate.md
             - name: Delete
               href: api/identityapiconnector-delete.md
       - name: Governance
