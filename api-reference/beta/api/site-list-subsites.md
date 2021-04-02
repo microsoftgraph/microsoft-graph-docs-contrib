@@ -35,7 +35,7 @@ GET /sites/{site-id}/sites
 
 ## Example
 
-#### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ---
 
 
-#### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
