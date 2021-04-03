@@ -1,19 +1,19 @@
 ---
-title: "Send chatMessage in a chat"
-description: "Send a new chatMessage in a chat."
+title: "Send message in a chat"
+description: "Send a new message in a chat."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Send chatMessage in a chat
+# Send message in a chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before creating a chat message.
+Send a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before creating a chat message.
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
@@ -34,8 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /chats/{id}/messages
-POST /users/{id}/chats/{id}/messages
+POST /chats/{chat-id}/messages
 ```
 
 ## Request headers
@@ -60,14 +59,12 @@ For a more comprehensive list of examples, see [Create chatMessage in a channel 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_chat"
+  "name": "post_chatmessages_1"
 }-->
-
 ```http
-POST https://graph.microsoft.com/beta/chats/{id}/messages
+POST https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages
 Content-type: application/json
 
 {
@@ -76,30 +73,10 @@ Content-type: application/json
   }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-chat-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-chat-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-chat-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-chat-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -112,21 +89,40 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "replyToId": "replyToId-value",
-  "from": {
-    "application": null,
-    "device": null,
-    "user": {
-      "id": "87ea812c-8816-40e9-b770-5c165fa31397",
-      "displayName": "Test User"
-    }
-  },
-  "messageType": "message",
-  "body": {
-     "content": "Hello world",
-	 "contentType": "text"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages/$entity",
+    "id": "1616991463150",
+    "replyToId": null,
+    "etag": "1616991463150",
+    "messageType": "message",
+    "createdDateTime": "2021-03-29T04:17:43.15Z",
+    "lastModifiedDateTime": "2021-03-29T04:17:43.15Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "policyViolation": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "text",
+        "content": "Hello World"
+    },
+    "attachments": [],
+    "mentions": [],
+    "reactions": []
 }
 ```
 
