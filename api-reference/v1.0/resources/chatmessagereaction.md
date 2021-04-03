@@ -11,8 +11,6 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a reaction to a [chatMessage](chatmessage.md) entity. 
 
 An entity of type `chatMessageReaction` is returned as part of the [Get channel message](../api/chatmessage-get.md) API, as a part of the [chatMessage](chatmessage.md) entity.

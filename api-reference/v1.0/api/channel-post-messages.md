@@ -1,5 +1,5 @@
 ---
-title: "Create chatMessage in a channel"
+title: "Send chatMessage in a channel"
 description: "Create new chatMessage in the specified channel."
 localization_priority: Normal
 author: "RamjotSingh"
@@ -7,13 +7,11 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create chatMessage in channel
+# Send chatMessage in channel
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
+Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
 
 > **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
@@ -23,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Delegated (work or school account)     | ChannelMessage.Send |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Teamwork.Migrate.All |
 
@@ -67,14 +65,12 @@ For a more comprehensive list of examples, see [Create chatMessage in a channel 
 ### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel_1"
+  "name": "post_channelmessage_1"
 }-->
-
 ```http
-POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+POST https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
 
 {
@@ -84,69 +80,53 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
-    "id": "id-value",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616990032035",
     "replyToId": null,
-    "etag": "id-value",
+    "etag": "1616990032035",
     "messageType": "message",
-    "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "createdDateTime": "2021-03-29T03:53:52.035Z",
+    "lastModifiedDateTime": "2021-03-29T03:53:52.035Z",
     "lastEditedDateTime": null,
-    "deleted": false,
+    "deletedDateTime": null,
     "subject": null,
     "summary": null,
+    "chatId": null,
     "importance": "normal",
     "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616990032035?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990032035&parentMessageId=1616990032035",
     "policyViolation": null,
     "from": {
         "application": null,
         "device": null,
         "conversation": null,
         "user": {
-            "id": "id-value",
-            "displayName": "Joh Doe",
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
             "userIdentityType": "aadUser"
         }
     },
     "body": {
-        "contentType": "html",
+        "contentType": "text",
         "content": "Hello World"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
     "attachments": [],
     "mentions": [],
@@ -159,16 +139,18 @@ Content-length: 160
 > **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
 #### Request
-<!-- { "blockType": "ignored" } -->
+
 The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_channelmessage_2"
+}-->
 ```http
-POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
 {
-   "messageType":"message",
    "createdDateTime":"2019-02-04T19:58:15.511Z",
-   "deleted":false,
    "from":{
       "user":{
          "id":"id-value",
@@ -179,7 +161,7 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
    "body":{
       "contentType":"html",
       "content":"Hello World"
-   },
+   }
 }
 ```
 
@@ -197,7 +179,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
    "id":"id-value",
    "replyToId":null,
    "etag":"id-value",
@@ -216,7 +198,7 @@ HTTP/1.1 200 OK
       "conversation":null,
       "user":{
          "id":"id-value",
-         "displayName":"Joh Doe",
+         "displayName":"John Doe",
          "userIdentityType":"aadUser"
       }
    },
@@ -238,11 +220,15 @@ HTTP/1.1 200 OK
 > **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
 #### Request
-<!-- { "blockType": "ignored" } -->
+
 The following example shows how to import back-in-time messages containing inline images using the `createDateTime` and `from` keys in the request body.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_channelmessage_3"
+}-->
 ```http
-POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
 
 {
    "createdDateTime":"2019-02-04T19:58:15.511Z",
@@ -253,7 +239,6 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
          "userIdentityType":"aadUser"
       }
    },
-{
    "body":{
       "contentType":"html",
       "content":"<div><div>\n<div><span><img height=\"250\" src=\"../hostedContents/1/$value\" width=\"176.2295081967213\" style=\"vertical-align:bottom; width:176px; height:250px\"></span>\n\n</div>\n\n\n</div>\n</div>"
@@ -282,7 +267,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages/$entity",
    "id":"id-value",
    "replyToId":null,
    "etag":"id-value",
