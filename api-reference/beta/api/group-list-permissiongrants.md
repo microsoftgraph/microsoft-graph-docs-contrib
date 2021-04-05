@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List permission grants of a group
+# List permissionGrants of a group
 
 Namespace: microsoft.graph
 
@@ -55,7 +55,6 @@ If successful, this method returns a `200 OK` response code and a list of [resou
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_list_permission_grants"

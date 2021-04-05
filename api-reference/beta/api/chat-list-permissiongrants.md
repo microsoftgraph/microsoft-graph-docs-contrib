@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List permission grants of a chat
+# List permissionGrants of a chat
 
 Namespace: microsoft.graph
 
