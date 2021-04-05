@@ -1360,3 +1360,57 @@ Possible values for user account types (group membership), per Windows definitio
 | :-------- |
 | entityUrl |
 | text      |
+
+
+### provisioningResult values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|skipped|
+|warning|
+|unknownFutureValue|
+
+### provisioningStepType values 
+
+|Member|
+|:---|
+|import|
+|scoping|
+|matching|
+|processing|
+|referenceResolution|
+|export|
+|unknownFutureValue|
+
+### provisioningStatusErrorCategory values 
+
+|Member|
+|:---|
+|failure|
+|nonServiceFailure|
+|success|
+|unknownFutureValue|
+
+### provisioningAction values 
+
+|Member|
+|:---|
+|other|
+|create|
+|delete|
+|disable|
+|update|
+|stagedDelete|
+|unknownFutureValue|
+
+
+### initiatorType values 
+
+|Member|
+|:---|
+|user|
+|application|
+|system|
+|unknownFutureValue|

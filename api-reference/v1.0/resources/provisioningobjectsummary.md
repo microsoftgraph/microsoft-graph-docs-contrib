@@ -25,7 +25,7 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|provisioningAction|string|Indicates the activity name or the operation name. Possible values are: `create`, `update`, `delete`, `stageddelete`, `disable`, `other` and `unknownFutureValue`. For a list of activities logged, refer to Azure AD activity list.|
+|provisioningAction|[provisioningAction](enums.md#provisioningAction-values) Collection|Indicates the activity name or the operation name. Possible values are: `create`, `update`, `delete`, `stageddelete`, `disable`, `other` and `unknownFutureValue`. For a list of activities logged, refer to Azure AD activity list.|
 |activityDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |changeId|String|Unique ID of this change in this cycle.|
 |cycleId|String|Unique ID per job iteration.|
