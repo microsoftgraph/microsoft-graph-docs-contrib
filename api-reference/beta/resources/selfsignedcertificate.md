@@ -3,7 +3,7 @@ title: "selfSignedCertificate resource type"
 description: "Contains information about the public part of a signing certificate."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "luleonpla"
 ---
 

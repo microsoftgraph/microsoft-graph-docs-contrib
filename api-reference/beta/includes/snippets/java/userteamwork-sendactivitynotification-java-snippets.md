@@ -30,7 +30,6 @@ graphClient.users("{userId}").teamwork()
 		.withChainId(null)
 		.withPreviewText(previewText)
 		.withTemplateParameters(templateParametersList)
-		.withTeamsAppId(null)
 		.build())
 	.buildRequest()
 	.post();

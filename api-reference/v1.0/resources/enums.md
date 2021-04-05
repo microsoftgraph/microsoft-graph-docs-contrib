@@ -11,6 +11,12 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### consentRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
 ### externalEmailOtpState values
 
 |Member|
@@ -1390,3 +1396,9 @@ Possible values for user account types (group membership), per Windows definitio
 | dropdownSingleSelect  |
 | emailBox              |
 | checkboxMultiSelect   |
+### teamworkActivityTopicSource values 
+
+| Member    |
+| :-------- |
+| entityUrl |
+| text      |
