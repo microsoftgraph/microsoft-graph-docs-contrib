@@ -88,12 +88,11 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8"
     }
   ]
 }

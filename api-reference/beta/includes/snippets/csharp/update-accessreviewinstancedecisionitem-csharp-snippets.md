@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var accessReviewInstanceDecisionItem = new AccessReviewInstanceDecisionItem
 {
 	Decision = "Approve",
-	Justification = "I trust this person"
+	Justification = "This person is still on my team"
 };
 
 await graphClient.Me.PendingAccessReviewInstances["{accessReviewInstance-id}"].Decisions["{accessReviewInstanceDecisionItem-id}"]

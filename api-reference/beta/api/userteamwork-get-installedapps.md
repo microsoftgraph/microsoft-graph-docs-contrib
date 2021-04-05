@@ -158,18 +158,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": [
-        {
-          "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('5b649834-7412-4cce-9e69-176e95a394f5')/installedApps(teamsAppDefinition())/$entity",
-          "id": "NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk=",
-          "teamsAppDefinition": {
-                                  "id": "YTZiNjMzNjUtMzFhNC00ZjQzLTkyZWMtNzEwYjcxNTU3YWY5IyMwLjk=",
-                                  "teamsAppId": "a6b63365-31a4-4f43-92ec-710b71557af9",
-                                  "displayName": "Power Apps",
-                                  "version": "0.9"
-                                }
-          }
-         ]
+  "value": [
+    {
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('5b649834-7412-4cce-9e69-176e95a394f5')/installedApps(teamsAppDefinition())/$entity",
+      "id": "NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk=",
+      "teamsAppDefinition": {
+        "id": "YTZiNjMzNjUtMzFhNC00ZjQzLTkyZWMtNzEwYjcxNTU3YWY5IyMwLjk=",
+        "teamsAppId": "a6b63365-31a4-4f43-92ec-710b71557af9",
+        "displayName": "Power Apps",
+        "version": "0.9"
+      }
+    }
+  ]
 }
 ```
 

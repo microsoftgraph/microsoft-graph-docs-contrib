@@ -13,6 +13,7 @@ var plannerBucket = new PlannerBucket
 
 await graphClient.Planner.Buckets["{plannerBucket-id}"]
 	.Request()
+	.Header("Prefer","return=representation")
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerBucket);
 
