@@ -1,6 +1,6 @@
 ---
-title: "List permission grants of a group"
-description: "Retrieve permission grants of a group."
+title: "List permissionGrants of a group"
+description: "Retrieve permissionGrants of a group."
 author: "akjo"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [group](../resources/group.md). This is a list of all the Azure AD apps that have access to the group along with the kind of access of that each of the apps has. 
+List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [group](../resources/group.md). This is a list of Azure AD apps that have access to the chat along with the kind of access that each app has.
 
 ## Permissions
 
@@ -49,11 +49,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a list of [resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) objects in the response body.
 
-## Example
+## Examples
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,9 +68,9 @@ GET https://graph.microsoft.com/beta/groups/14c981a4-dca9-4565-bae6-e13ada8861be
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

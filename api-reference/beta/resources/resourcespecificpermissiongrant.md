@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resourceSpecificPermissionGrant declares the specific permission that has been granted to a specific AzureAD app for a specific instance of a resource in Microsoft Graph.
+A resourceSpecificPermissionGrant declares the permission that has been granted to a specific AzureAD app for an instance of a resource in Microsoft Graph.
 
 ## Methods
 
