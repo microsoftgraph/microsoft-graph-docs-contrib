@@ -3,7 +3,7 @@ title: "Delete fido2AuthenticationMethod"
 description: "Deletes a fido2AuthenticationMethod object."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -62,8 +62,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-GroupCollectionPage groups = graphClient.termStore().groups()
+Group group = graphClient.termStore().groups("{groupId}")
 	.buildRequest()
 	.get();
 

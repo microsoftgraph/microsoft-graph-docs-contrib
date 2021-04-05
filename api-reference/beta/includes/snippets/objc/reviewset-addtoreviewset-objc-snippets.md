@@ -17,7 +17,7 @@ MSGraphEdiscoverySourceCollection *sourceCollection = [[MSGraphEdiscoverySourceC
 [sourceCollection setId:@"1a9b4145d8f84e39bc45a7f68c5c5119"];
 payloadDictionary[@"sourceCollection"] = sourceCollection;
 
-MSGraphEdiscoveryDataCollectionScope *additionalData = [MSGraphEdiscoveryDataCollectionScope linkedFiles];
+MSGraphEdiscoveryAdditionalDataOptions *additionalData = [MSGraphEdiscoveryAdditionalDataOptions linkedFiles];
 payloadDictionary[@"additionalData"] = additionalData;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

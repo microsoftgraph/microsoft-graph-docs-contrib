@@ -24,6 +24,45 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-05T00:00:00",
+    {
+      "ChangeList": [
+        {
+          "Id": "9444ad50-86fd-11eb-9fc2-269673f51d94",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatId",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatId** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "94471014-86fd-11eb-9fc2-269673f51d94",
+          "ApiChange": "Property",
+          "ChangedApiName": "channelIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the **channelIdentity** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "94496fd0-86fd-11eb-9fc2-269673f51d94",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "messages",
+          "ChangeType": "Addition",
+          "Description": "Added the **messages** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "944bd375-86fd-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelIdentity](https://docs.microsoft.com/en-us/graph/api/resources/channelIdentity?view=graph-rest-1.0) resource type.",
+          "Target": "channelIdentity"
+        }
+      ],
+      "Id": "94424c8f-86fd-11eb-9fc2-269673f51d94",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-04-02T08:48:43.715Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
@@ -49,7 +88,7 @@
       "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-03-19T00:00:00",
+      "CreatedDateTime": "2021-04-02T00:00:00",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
@@ -108,6 +147,72 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-24T18:04:41.569Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e38e16e3-d3b6-4c66-a9aa-4bae0c29248z",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamworkActivityTopicSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamworkActivityTopicSource** enumeration type.",
+          "Target": "teamworkActivityTopicSource"
+        },
+        {
+          "Id": "e38e16e3-d3b6-4c66-a9aa-4bae0c29248a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkActivityTopic",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkActivityTopic](https://docs.microsoft.com/en-us/graph/api/resources/teamworkActivityTopic?view=graph-rest-1.0) resource type.",
+          "Target": "teamworkActivityTopic"
+        },
+        {
+          "Id": "e38e16e3-d3b6-4c66-a9aa-4bae0c29248b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkNotificationAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkNotificationAudience](https://docs.microsoft.com/en-us/graph/api/resources/teamworkNotificationAudience?view=graph-rest-1.0) resource type.",
+          "Target": "teamworkNotificationAudience"
+        },
+        {
+          "Id": "e38e16e3-d3b6-4c66-a9aa-4bae0c29248c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aadUserNotificationAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the [aadUserNotificationAudience](https://docs.microsoft.com/en-us/graph/api/resources/aadUserNotificationAudience?view=graph-rest-1.0) resource type.",
+          "Target": "aadUserNotificationAudience"
+        },
+        {
+          "Id": "e38e16e3-d3b6-4c66-a9aa-4bae0c29248d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendActivityNotification** to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource type.",
+          "Target": "chat"
+        },
+        {
+          "Id": "e38e16e3-d3b6-4c66-a9aa-4bae0c29248e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendActivityNotification** to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource type.",
+          "Target": "team"
+        },
+        {
+          "Id": "e38e16e3-d3b6-4c66-a9aa-4bae0c29248f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendActivityNotification** to then [userTeamwork](https://docs.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-1.0) resource type.",
+          "Target": "userTeamwork"
+        }
+      ],
+      "Id": "e38e16e3-d3b6-4c66-a9aa-4bae0c29248g",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-18T23:09:05.727Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
