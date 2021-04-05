@@ -20,7 +20,7 @@ Update the properties of a [userExperienceAnalyticsOverview](../resources/intune
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -52,12 +52,14 @@ The following table shows the properties that are required when you create the [
 |overallScore|Int32|The user experience analytics overall score.|
 |deviceBootPerformanceOverallScore|Int32|The user experience analytics device boot performance overall score.|
 |bestPracticesOverallScore|Int32|The user experience analytics best practices overall score.|
+|workFromAnywhereOverallScore|Int32|The user experience analytics Work From Anywhere overall score.|
 |appHealthOverallScore|Int32|The user experience analytics app health overall score.|
 |resourcePerformanceOverallScore|Int32|The user experience analytics resource performance overall score.|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) collection|The user experience analytics insights.|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics overview. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BootPerformance' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BestPractices' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'WorkFromAnywhere' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BestPractices' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |resourcePerformanceState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'ResourcePerformance' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
@@ -73,13 +75,14 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 906
+Content-length: 999
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
   "overallScore": 12,
   "deviceBootPerformanceOverallScore": 1,
   "bestPracticesOverallScore": 9,
+  "workFromAnywhereOverallScore": 12,
   "appHealthOverallScore": 5,
   "resourcePerformanceOverallScore": 15,
   "insights": [
@@ -99,6 +102,7 @@ Content-length: 906
   "state": "insufficientData",
   "deviceBootPerformanceHealthState": "insufficientData",
   "bestPracticesHealthState": "insufficientData",
+  "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
   "resourcePerformanceState": "insufficientData"
 }
@@ -109,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 955
+Content-Length: 1048
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -117,6 +121,7 @@ Content-Length: 955
   "overallScore": 12,
   "deviceBootPerformanceOverallScore": 1,
   "bestPracticesOverallScore": 9,
+  "workFromAnywhereOverallScore": 12,
   "appHealthOverallScore": 5,
   "resourcePerformanceOverallScore": 15,
   "insights": [
@@ -136,6 +141,7 @@ Content-Length: 955
   "state": "insufficientData",
   "deviceBootPerformanceHealthState": "insufficientData",
   "bestPracticesHealthState": "insufficientData",
+  "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
   "resourcePerformanceState": "insufficientData"
 }
