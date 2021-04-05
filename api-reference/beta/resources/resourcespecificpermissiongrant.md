@@ -1,6 +1,6 @@
 ---
 title: "resourceSpecificPermissionGrant resource type"
-description: "A resource-specific permission grant specifies the permission a specific Azure AD app has"
+description: "Specifies the permission that a specific Azure AD app has."
 author: "AkJo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -28,15 +28,15 @@ A resourceSpecificPermissionGrant declares the permission that has been granted 
 | :-------------- | :------------ | :------------------------------------------------------------------------------------ |
 | id              | string        | The unique identifier of the resource-specific permission grant. Read-only.           |
 | deletedDateTime | dateTimeOffset| Not used.                                                                             |
-| clientId        | string        | ID of the AAD app that has been granted access. Read-only.                            |
-| clientAppId     | string        | ID of the service principal of the AAD app that has been granted access. Read-only.   |
-| resourceAppId   | string        | ID of the AzureAD app that is hosting the resource. Read-only.                        |
+| clientId        | string        | ID of the Azure AD app that has been granted access. Read-only.                            |
+| clientAppId     | string        | ID of the service principal of the Azure AD app that has been granted access. Read-only.   |
+| resourceAppId   | string        | ID of the Azure AD app that is hosting the resource. Read-only.                        |
 | permissionType  | string        | The type of permission. Possible values are: `Application`,`Delegated`. Read-only. |
 | permission      | string        | The name of the permission. Read-only.                                                |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

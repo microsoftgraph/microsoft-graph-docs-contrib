@@ -39,7 +39,6 @@ graphClient.teams("{teamId}")
 		.withPreviewText(previewText)
 		.withTemplateParameters(templateParametersList)
 		.withRecipient(recipient)
-		.withTeamsAppId(null)
 		.build())
 	.buildRequest()
 	.post();
