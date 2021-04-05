@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [group](../resources/group.md) object in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -62,14 +62,6 @@ DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/{id
 ```
 
 ### Response
-
-**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "#microsoft.graph.group"
-}
--->
 
 ``` http
 HTTP/1.1 204 No Content
