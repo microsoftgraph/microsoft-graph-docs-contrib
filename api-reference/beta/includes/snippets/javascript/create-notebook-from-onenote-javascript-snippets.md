@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const notebook = {
-  displayName: 'Notebook name'
+    displayName: 'My Private notebook'
 };
 
 await client.api('/me/onenote/notebooks')

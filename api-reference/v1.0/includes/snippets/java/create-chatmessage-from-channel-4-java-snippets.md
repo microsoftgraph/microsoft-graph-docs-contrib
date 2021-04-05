@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ChatMessage chatMessage = new ChatMessage();
 ItemBody body = new ItemBody();
@@ -20,7 +20,7 @@ attachments.name = "Budget.docx";
 attachmentsList.add(attachments);
 chatMessage.attachments = attachmentsList;
 
-graphClient.teams("{id}").channels("{id}").messages()
+graphClient.teams("57fb72d0-d811-46f4-8947-305e6072eaa5").channels("19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2").messages()
 	.buildRequest()
 	.post(chatMessage);
 
