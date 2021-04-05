@@ -19,7 +19,6 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique call identifier. GUID.|
 |callDurationSource|pstnCallDurationSource|The source of the call duration data. If the call uses a third-party telecommunications operator via the Operator Connect Program, the operator may provide their own call duration data. In this case, the property value is `operator`. Otherwise, the value is `microsoft`.|
 |calleeNumber|String|Number dialed in [E.164](https://en.wikipedia.org/wiki/E.164) format.|
 |callerNumber|String|Number that received the call for inbound calls or the number dialed for outbound calls. E.164 format.|
@@ -33,6 +32,7 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 |destinationName|String|Country or region dialed.|
 |duration|Int32|How long the call was connected, in seconds.|
 |endDateTime|DateTimeOffset|Call end time.|
+|id|String|Unique call identifier. GUID.|
 |inventoryType|String|User's phone number type, such as a service of toll-free number.|
 |licenseCapability|String|The license used for the call.|
 |operator|String|The telecommunications operator which provided PSTN services for this call. This may be Microsoft, or it may be a third-party operator via the [Operator Connect Program](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398).|
