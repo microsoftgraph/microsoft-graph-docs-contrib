@@ -39,7 +39,7 @@ PATCH /print/printers/{id}
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization | Bearer {token}. Required. |
-| Content-type  | `application/json` when using delegated permissions, `application/ipp` when using application permissions. Required.|
+| Content-type  | `application/json` when using delegated permissions, `application/ipp` or `application/json` when using application permissions. Required.|
 
 ## Request body
 
