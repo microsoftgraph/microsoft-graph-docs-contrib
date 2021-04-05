@@ -118,6 +118,7 @@ Content-type: application/json
   "replyUrls": [],
   "servicePrincipalNames": [],
   "servicePrincipalType": null,
+  "signInAudience": "AzureADandPersonalMicrosoftAccount",
   "tags": [],
   "tokenEncryptionKeyId": null
 }
