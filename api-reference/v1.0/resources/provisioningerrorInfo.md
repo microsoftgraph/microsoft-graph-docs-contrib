@@ -19,7 +19,7 @@ Describes the status of the provisioning event and the associated errors.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |additionalDetails|String|Additional details in case of error.|
-|errorCategory|[provisioningStatusErrorCategory](enums.md#provisioningStatusErrorCategory-values) Collection|Categorizes the error code. Possible values are `failure`, `nonServiceFailure`, `success`, `unknownFutureValue`|
+|errorCategory|provisioningStatusErrorCategory|Categorizes the error code. Possible values are `failure`, `nonServiceFailure`, `success`, `unknownFutureValue`|
 |errorCode|String|Unique error code if any occurred. [Learn more](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |reason|String|Summarizes the status and describes why the status happened.|
 |recommendedAction|String|Provides the resolution for the corresponding error.|

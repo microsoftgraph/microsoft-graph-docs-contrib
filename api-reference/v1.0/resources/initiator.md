@@ -19,7 +19,7 @@ Describes who or what initiated the provisioning event.
 |:-------------|:------------|:------------|
 |displayName|String|Name of the person or service that initiated the provisioning event.|
 |id|String|Uniquely identifies the person or service that initiated the provisioning event.|
-|initiatorType|[initiatorType](enums.md#initiatorType-values) Collection| Type of initiator. Possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
+|initiatorType|initiatorType| Type of initiator. Possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
 
 ## JSON representation
 

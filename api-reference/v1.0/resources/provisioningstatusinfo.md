@@ -18,7 +18,7 @@ Describes the status of the provisioning summary event.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|[provisioningResult](enums.md#provisioningResult-values) Collection| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
+|status|provisioningResult| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
 |errorInfo|[provisioningErrorInfo](provisioningErrorInfo.md)| If status is not success/ skipped details for the error are contained in this.|
 
 ## JSON representation
