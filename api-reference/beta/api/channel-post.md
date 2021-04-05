@@ -121,7 +121,7 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "id": "id-value",
+  "id": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
   "displayName": "Architecture Discussion",
   "description": "This channel is where we debate all future architecture plans"
 }
@@ -215,7 +215,6 @@ Content-length: 201
 The following example shows how to create a channel that will be used for importing messages.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_for_migration"
@@ -227,29 +226,11 @@ Content-Type: application/json
 
 {
   "@microsoft.graph.channelCreationMode": "migration",
-  "displayName": "Architecture Discussion",
-  "description": "This channel is where we debate all future architecture plans",
-  "membershipType": "standard",
+  "displayName": "Import_150958_99z",
+  "description": "Import_150958_99z",
   "createdDateTime": "2020-03-14T11:22:17.067Z"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-for-migration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-for-migration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-channel-for-migration-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-channel-for-migration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -264,9 +245,21 @@ Once provisioned, this channel can be used for [importing messages](/microsoftte
 } -->
 
 ```http
-HTTP/1.1 202 Accepted
-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}/operations/{operationId}
-Content-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}
+HTTP/1.1 201 Created
+Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:987c7a9fbe6447ccb3ea31bcded5c75c@thread.tacv2",
+    "createdDateTime": null,
+    "displayName": "Import_150958_99z",
+    "description": "Import_150958_99z",
+    "isFavoriteByDefault": null,
+    "email": null,
+    "webUrl": null,
+    "membershipType": null,
+    "moderationSettings": null
+}
 ```
 
 ### Example 4: Create standard channel with moderation settings
