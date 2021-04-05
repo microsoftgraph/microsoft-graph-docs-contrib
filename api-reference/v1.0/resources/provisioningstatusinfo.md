@@ -1,5 +1,5 @@
 ---
-title: "provisioningStatus resource type"
+title: "provisioningStatusInfo resource type"
 description: "Describes the status of the provisioning summary event."
 localization_priority: Normal
 author: "ArvindHarinder1"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# provisioningStatus resource type
+# provisioningStatusInfo resource type
 
 Namespace: microsoft.graph
 
@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisioningStatus",
+  "@odata.type": "microsoft.graph.provisioningStatusInfo",
   "baseType": null
 }-->
 
@@ -44,7 +44,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "provisioningStatus resource",
+  "description": "provisioningStatusInfo resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -38,7 +38,7 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 |servicePrincipal|[servicePrincipal](provisioningserviceprincipal.md) collection|Represents the service principal used for provisioning.|
 |sourceIdentity|[provisionedIdentity](provisionedidentity.md)|Details of source object being provisioned.|
 |sourceSystem|[provisioningSystem](provisioningsystem.md)|Details of source system of the object being provisioned.|
-|provisioningStatusInfo|[provisioningStatus](provisioningstatusinfo.md)|Details of provisioning status.|
+|provisioningStatusInfo|[provisioningStatusInfo](provisioningstatusinfo.md)|Details of provisioning status.|
 |targetIdentity|[provisionedIdentity](provisionedidentity.md)|Details of target object being provisioned.|
 |targetSystem|[provisioningSystem](provisioningsystem.md)|Details of target system of the object being provisioned.|
 |tenantId|String|Unique Azure AD tenant ID.|
