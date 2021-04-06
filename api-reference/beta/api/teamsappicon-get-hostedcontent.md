@@ -35,7 +35,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/col
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/outlineIcon/hostedContent/
 ```
 
-**Get hosted content bytes in app icon for an image**
+**Get hosted content's raw value (an image) in app icon**
 
 <!-- { "blockType": "ignored" } -->
 ```http
