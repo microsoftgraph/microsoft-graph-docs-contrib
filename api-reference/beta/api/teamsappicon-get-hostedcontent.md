@@ -103,7 +103,7 @@ Content-type: application/json
 
 ---
 
-### Example 2: Get hosted content bytes for an image in outline icon.
+### Example 2: Get hosted content's raw value (an image) in outline icon.
 
 #### Request
 
