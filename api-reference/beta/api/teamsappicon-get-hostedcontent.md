@@ -35,17 +35,9 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/col
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/outlineIcon/hostedContent/
 ```
 
-**Get hosted content's raw value (an image) in app icon**
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/colorIcon/hostedContent/$value
-GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/outlineIcon/hostedContent/$value
-```
-
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This operation supports the `$select` [OData query parameters](/graph/query-parameter) to customize the response.
 
 ## Request headers
 
@@ -108,6 +100,8 @@ Content-type: application/json
 #### Request
 
 The following is an example of the request.
+
+> **Note:** Requests for the raw value does not support [OData query parameters](/graph/query-parameters) to customize the response.
 
 <!-- {
   "blockType": "request",
