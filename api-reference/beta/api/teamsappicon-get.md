@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [teamsAppIcon]
 
 ## Examples
 
-### Example 1: Get Teams app's color icon.
+### Example 1: Get color icon of a custom Teams app.
 
 #### Request
 
@@ -69,7 +69,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_teamsappicon_coloricon"
+  "name": "get_teamsappicon_coloricon_customapp"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/78710bb8-23e1-4dbe-a5d3-3455a60a1012/appDefinitions/Nzg3MTBiYjgtMjNlMS00ZGJlLWE1ZDMtMzQ1NWE2MGExMDEyIyMyLjAuMSMjUHVibGlzaGVk/colorIcon
@@ -99,7 +99,7 @@ Content-type: application/json
 
 ---
 
-### Example 2: Get Teams app's color icon.
+### Example 2: Get outline icon of a custom Teams app.
 
 #### Request
 
@@ -107,7 +107,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_teamsappicon_outlineicon"
+  "name": "get_teamsappicon_outlineicon_customapp"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/outlineIcon
@@ -137,7 +137,7 @@ Content-type: application/json
 
 ---
 
-### Example 3: Get Teams app's outline icon and return the hosted content.
+### Example 3: Get color icon of a public Teams app.
 
 #### Request
 
@@ -145,10 +145,10 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_teamsappicon_outlineicon_with_expand_hostedcontent"
+  "name": "get_teamsappicon_outlineicon_publicapp"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/outlineIcon?expand=hostedContent
+GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b444-a4295d8e9314/appDefinitions/OTVkZTYzM2EtMDgzZS00MmY1LWI0NDQtYTQyOTVkOGU5MzE0IyMxLjAuNSMjUHVibGlzaGVk/colorIcon/
 ```
 
 ---
@@ -167,15 +167,45 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('5a31d4f7-a11d-4052-96eb-1b40786a2a78')/appDefinitions('NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk')/outlineIcon(hostedContent())/$entity",
-    "id": "aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ0LWIxYzU0Mzg0NGE5ZmFjY2Y2YWI4NDdkNWY0NTU0ZGU0L3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==",
-    "webUrl": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/outlineIcon/hostedContent/$value",
-    "hostedContent@odata.context": "https://canary.graph.microsoft.com/testprodbetateamsgraphdev/$metadata#appCatalogs/teamsApps('5a31d4f7-a11d-4052-96eb-1b40786a2a78')/appDefinitions('NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk')/outlineIcon/hostedContent/$entity",
-    "hostedContent": {
-        "id": "aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ0LWIxYzU0Mzg0NGE5ZmFjY2Y2YWI4NDdkNWY0NTU0ZGU0L3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==",
-        "contentBytes": null,
-        "contentType": null
-    }
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetateamsgraphdev/$metadata#appCatalogs/teamsApps('95de633a-083e-42f5-b444-a4295d8e9314')/appDefinitions('OTVkZTYzM2EtMDgzZS00MmY1LWI0NDQtYTQyOTVkOGU5MzE0IyMxLjAuNSMjUHVibGlzaGVk')/colorIcon/$entity",
+    "id": "aHR0cHM6Ly9zdGF0aWNzLnRlYW1zLmNkbi5vZmZpY2UubmV0L2V2ZXJncmVlbi1hc3NldHMvYXBwcy85NWRlNjMzYS0wODNlLTQyZjUtYjQ0NC1hNDI5NWQ4ZTkzMTRfbGFyZ2VJbWFnZS5wbmc/dj0xLjAuNQ==",
+    "webUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/95de633a-083e-42f5-b444-a4295d8e9314_largeImage.png?v=1.0.5"
+}
+```
+
+### Example 4: Get outline icon of a public Teams app.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_teamsappicon_outlineicon_publicapp"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b444-a4295d8e9314/appDefinitions/OTVkZTYzM2EtMDgzZS00MmY1LWI0NDQtYTQyOTVkOGU5MzE0IyMxLjAuNSMjUHVibGlzaGVk/outlineIcon/
+```
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppIcon"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('95de633a-083e-42f5-b444-a4295d8e9314')/appDefinitions('OTVkZTYzM2EtMDgzZS00MmY1LWI0NDQtYTQyOTVkOGU5MzE0IyMxLjAuNSMjUHVibGlzaGVk')/outlineIcon/$entity",
+    "id": "aHR0cHM6Ly9zdGF0aWNzLnRlYW1zLmNkbi5vZmZpY2UubmV0L2V2ZXJncmVlbi1hc3NldHMvYXBwcy85NWRlNjMzYS0wODNlLTQyZjUtYjQ0NC1hNDI5NWQ4ZTkzMTRfc21hbGxJbWFnZS5wbmc/dj0xLjAuNQ==",
+    "webUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/95de633a-083e-42f5-b444-a4295d8e9314_smallImage.png?v=1.0.5"
 }
 ```
 
