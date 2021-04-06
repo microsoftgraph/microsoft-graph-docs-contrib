@@ -27,14 +27,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-**Get icon in color version**
+**Get color icon of a Teams app definition**
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/colorIcon
 ```
 
-**Get icon in outline version**
+**Get outline icon of a Teams app definition**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [teamsAppIcon]
 
 ## Examples
 
-### Example 1: Get Teams app's icon in color version.
+### Example 1: Get Teams app's color icon.
 
 #### Request
 
@@ -99,7 +99,7 @@ Content-type: application/json
 
 ---
 
-### Example 2: Get Teams app's icon in outline version.
+### Example 2: Get Teams app's color icon.
 
 #### Request
 
@@ -137,7 +137,7 @@ Content-type: application/json
 
 ---
 
-### Example 3: Get Teams app's icon in outline version and return the hosted content.
+### Example 3: Get Teams app's outline icon and return the hosted content.
 
 #### Request
 

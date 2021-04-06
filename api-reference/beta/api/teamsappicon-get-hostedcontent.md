@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkHoste
 
 ## Examples
 
-### Example 1: Get hosted content in color version of app icon.
+### Example 1: Get hosted content in color icon.
 
 #### Request
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 ---
 
-### Example 2: Get hosted content bytes in outline version of icon for an image.
+### Example 2: Get hosted content bytes for an image in outline icon.
 
 #### Request
 
