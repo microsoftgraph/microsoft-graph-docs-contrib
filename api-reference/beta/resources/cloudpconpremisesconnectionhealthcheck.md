@@ -45,6 +45,7 @@ The result of a cloud PC on-premises connection health check.
 |adJoinCheckIncorrectCredentials|The active domain join check failed because the domain credentials are incorrect. Please update the username and password.|
 |adJoinCheckOrganizationalUnitNotFound|The active domain join check failed because the specified organizational unit was not found. Please re-enter organization unit.|
 |adJoinCheckOrganizationalUnitIncorrectFormat|The active domain join check failed beccause the format of the specified organizational unit is incorrect. Example format: “OU=OU1,OU=OU2,OU=OU3,DC=DC1”.|
+|adJoinCheckComputerObjectAlreadyExists|The computer object required to check AD domain join is already in another Cloud PC Organizational Unit. Please move the computer object from the old organizational unit to the connection specified organizational unit path.|
 |adJoinCheckUnknownError|The active domain join check failed due to an unknown error. Please contact customer support.|
 |endpointConnectivityCheckUrlNotWhitelisted|The endpoint connectivity check failed because the URLs are not on the allowlist in the network firewall settings. Please add the URLs to the allowlist for the network firewall settings. See [required URL list](/azure/virtual-desktop/safe-url-list) for URL information.|
 |endpointConnectivityCheckUnknownError|The endpoint connectivity check failed due to an unknown error. Please contact customer support.|
