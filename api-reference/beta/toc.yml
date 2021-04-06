@@ -13178,6 +13178,14 @@ items:
           href: api/teamsapp-update.md
         - name: Delete app from catalog
           href: api/teamsapp-delete.md
+        - name: App Icon
+          items:
+          - name: App icon
+            href: resources/teamsappicon.md
+          - name: Get app icon
+            href: api/teamsappicon-get.md
+          - name: Get hosted content in app icon
+            href: api/teamsappicon-get-hostedcontent.md
       - name: App
         items:
         - name: Installed app

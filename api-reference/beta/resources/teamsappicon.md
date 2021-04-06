@@ -15,6 +15,13 @@ Namespace: microsoft.graph
 
 An icon associated with a [teamsApp](teamsapp.md).
 
+## Methods
+
+| Method                                            | Return Type                                       | Description                                                    | 
+| :------------------------------------------------ | :------------------------------------------------ | :------------------------------------------------------------- |
+| [Get icon of app](../api/teamsappicon-get.md)     | [teamsAppIcon](teamsappicon.md)                   | Get an icon associated with a specific version of a Teams app. |
+| [Get hosted content of icon](../api/chat-list.md) | [teamworkHostedContent](teamworkhostedcontent.md) | Get hosted content (and its bytes) for an icon.                |
+
 ## Properties
 
 | Property      | Type                        | Description                                                                             |

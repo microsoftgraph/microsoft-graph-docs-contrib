@@ -31,8 +31,8 @@ The details of a version of a [teamsApp](teamsapp.md).
 | Relationship   | Type	                          | Description                                                 |
 |:-------------- |:------------------------------ |:----------------------------------------------------------- |
 | bot            |[teamworkBot](teamworkbot.md)   | The details of the bot specified in the Teams App manifest. |
-| colorIcon      |[teamsAppIcon](teamsappicon.md) | The color version of the Team's app icon.                   |
-| outlineIcon    |[teamsAppIcon](teamsappicon.md) | The outline version of the Team's app icon.                 |
+| colorIcon      |[teamsAppIcon](teamsappicon.md) | The color version of the Teams app's icon.                   |
+| outlineIcon    |[teamsAppIcon](teamsappicon.md) | The outline version of the Teams app's icon.                 |
 
 ## JSON representation
 
