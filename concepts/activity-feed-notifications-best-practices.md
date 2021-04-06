@@ -7,26 +7,25 @@ ms.prod: "teamwork"
 ---
 
 # Best practices for using Microsoft Teams activity feed notifications
+
 This article covers best practices to help you build experiences using Microsoft Teams activity feed notifications in Microsoft Graph.
 
 Activity feed notifications enable your apps to send notifications to users. These notifications are sent as toast items and activity feed items that point users to relevant content that can be consumed within Teams. Apply the following best practices in your app:
 
-* Have knowledge of the direct relationship between a notification toast or feed, and the content it is deep linked to.
-    * The notification must not confuse the user about what they need to address or triage. For example, if an *@mention* notification is received, the panel on the right in the activity feed app must display or reference the corresponding *@mention*.
-    * If the notification pertains to removal or deletion, direct users to the content indicating the action, so that they understand the outcome before taking action. For example, remove a user from a group or delete a list.
-* Ensure that the right pane experience in the feed is self-contained and does not break the feed experience. For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.
+* Make the relationship between the notification and the content it is linking to clear to the user.
+    * The notification must not confuse the user about what they need to address or triage. For example, when a user receives a notification for approving a leave, then the notification must *@mention* the user, and display the requisite action buttons, such as *Approve* and *Reject*.
+    * If the notification pertains to removal or deletion, direct users to the content indicating the action, so that they understand the outcome before taking action. For example, when removing a member from a group, notify the users that the action will resut in removal of the selected member, and to confirm if they want to proceed with the action.
+* Ensure that the feed experience in the feed is self-contained and does not break the feed experience. For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.
 * Verify that your app does not send more than 10 notifications per minute, per user. 
   > [!NOTE]
   > Notifications are throttled if the per user notification count exceeds 10.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
 
-### Guidelines for using activity feed features
+## Recommendations for using activity feed features
 
-This section covers the guidelines for using the activity feed features.
+This section provides recommendations for using the activity feed features.
 
-* Understand that selecting a toast notification leads to the activity feed. To switch to an activity, select a notification in the activity feed.
-  > [!NOTE] 
-  > The notification selection will not switch to the app.
+* Design your notification such that when the users select a toast notification they access the activity feed and not the app. To switch to another activity, the user must select a notification in the activity feed.
 * Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
 * Provide appropriate titles and descriptions for your **Activity Types**, because the setting titles are read from the app manifest. The following table provides examples of appropriate and inappropriate titles and descriptions:
 
