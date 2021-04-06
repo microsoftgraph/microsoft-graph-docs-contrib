@@ -43,6 +43,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Add tab to chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a chat (and associated meeting).|
 |[Update tab in chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Update the properties of a tab in a chat (and associated meeting).|
 |[Remove tab from chat](../api/chat-delete-tabs.md) | None | Remove (unpin) a tab from a chat (and associated meeting).|
+|[List permission grants](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to the apps in this chat.|
 
 >**Note:** When using application permissions, be sure you know how you're going to get the chat ID. Because listing chats with application permissions is not supported, 
 not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
@@ -73,6 +74,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | A collection of all the apps in the chat. Nullable. |
 | members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
+| permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps for the chat.|
 
 ## JSON representation
 
