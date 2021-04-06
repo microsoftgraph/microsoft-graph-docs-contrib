@@ -13179,9 +13179,8 @@ items:
         - name: Delete app from catalog
           href: api/teamsapp-delete.md
         - name: App Icon
+          href: resources/teamsappicon.md
           items:
-          - name: App icon
-            href: resources/teamsappicon.md
           - name: Get app icon
             href: api/teamsappicon-get.md
           - name: Get hosted content in app icon
