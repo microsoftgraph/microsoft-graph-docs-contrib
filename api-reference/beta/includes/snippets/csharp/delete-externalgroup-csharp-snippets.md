@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.External.Connections["{externalConnection-id}"].Groups["{externalGroup-id}"]
+await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Groups["{externalConnectors.externalGroup-id}"]
 	.Request()
 	.DeleteAsync();
 

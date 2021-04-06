@@ -70,7 +70,7 @@ Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-  "allowExternalIdToUseEmailOtp": "false",
+  "allowExternalIdToUseEmailOtp": "enabled",
 }
 ```
 

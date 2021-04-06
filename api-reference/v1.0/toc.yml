@@ -5333,17 +5333,17 @@ items:
         - name: Get channel messages delta
           href: api/chatmessage-delta.md
         - name: Get channel message
-          href: api/channel-get-message.md
+          href: api/chatmessage-get.md
         - name: List message replies
-          href: api/channel-list-messagereplies.md
+          href: api/chatmessage-list-replies.md
         - name: Get message reply
-          href: api/channel-get-messagereply.md
+          href: api/chatmessage-get.md
+        - name: Send message
+          href: api/channel-post-messages.md
         - name: Reply to message
-          href: api/channel-post-messagereply.md
+          href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md
-        - name: Send message
-          href: api/channel-post-message.md
       - name: Chat
         href: resources/chat.md
         items:
@@ -5361,27 +5361,35 @@ items:
           href: api/chat-get-members.md
         - name: Remove member
           href: api/chat-delete-members.md
-        - name: Get chat between user and app
+        - name: List messages in a chat
+          href: api/chat-list-messages.md
+        - name: Get message in chat
+          href: api/chatmessage-get.md
+        - name: Send message in chat
+          href: api/chat-post-messages.md
+        - name: Get chat between user and app 
           href: api/userscopeteamsappinstallation-get-chat.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
         - name: List channel messages
           href: api/channel-list-messages.md
-        - name: Get channel messages delta
+        - name: List channel messages delta
           href: api/chatmessage-delta.md
-        - name: Get channel message
-          href: api/channel-get-message.md
         - name: List message replies
-          href: api/channel-list-messagereplies.md
+          href: api/chatmessage-list-replies.md
+        - name: Get message in channel or chat
+          href: api/chatmessage-get.md
         - name: Get message reply
-          href: api/channel-get-messagereply.md
-        - name: Reply to message
-          href: api/channel-post-messagereply.md
+          href: api/chatmessage-get.md
+        - name: Send message
+          href: api/chatmessage-post.md
+        - name: Send reply to a message
+          href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md
         - name: List hosted content
-          href: api/chatmessage-list-chatmessagehostedcontents.md
+          href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: App catalog
