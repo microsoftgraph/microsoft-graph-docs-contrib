@@ -5,6 +5,14 @@
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
+          "ChangedApiName": "identityProviders",
+          "ChangeType": "Addition",
+          "Description": "Added the operation [availableProviderTypes](https://docs.microsoft.com/graph/api/resources/identityprovider-list-availableprovidertypes.md?view=graph-rest-1.0&preserve-view=true) to list the available identity providers available for use in an Azure Active Directory tenant.",
+          "Target": "availableProviderTypes"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
           "ChangedApiName": "authenticationFlowsPolicy",
           "ChangeType": "Addition",
           "Description": "Added the [authenticationFlowsPolicy](https://docs.microsoft.com/graph/api/resources/authenticationflowspolicy.md?view=graph-rest-1.0&preserve-view=true) resource type.",
@@ -85,7 +93,7 @@
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
-          "ChangedApiName": "getOrder, setOrder",
+          "ChangedApiName": "identityUserFlowAttributeAssignment",
           "ChangeType": "Addition",
           "Description": "Added the operations [getOrder](https://docs.microsoft.com/graph/api/resources/identityuserflowattributeassignment-getorder.md?view=graph-rest-1.0&preserve-view=true) and [setOrder](https://docs.microsoft.com/graph/api/resources/identityuserflowattributeassignment-setorder.md?view=graph-rest-1.0&preserve-view=true) that get the current order of attributes being collected or to set a new order for attributes to be collected during sign-up.",
           "Target": "getOrder, setOrder"
@@ -141,10 +149,10 @@
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
-          "ChangedApiName": "uploadClientCertificate",
+          "ChangedApiName": "identityApiConnector",
           "ChangeType": "Addition",
-          "Description": "Added the operation [uploadClientCertificate](https://docs.microsoft.com/graph/api/resources/identitypiconnector-uploadclientcertificate.md?view=graph-rest-1.0&preserve-view=true) to upload a client certificate (.pfx) to an API connector authentication configuration.",
-          "Target": "getOrder, setOrder"
+          "Description": "Added the operation [uploadClientCertificate](https://docs.microsoft.com/graph/api/resources/identityapiconnector-uploadclientcertificate.md?view=graph-rest-1.0&preserve-view=true) to upload a client certificate (.pfx) to an API connector configuration.",
+          "Target": "uploadClientCertificate"
         },
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
