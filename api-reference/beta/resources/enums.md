@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### countryLookupMethodType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
+
 ### approvalState values
 
 |Member|

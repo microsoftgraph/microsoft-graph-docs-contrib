@@ -1,7 +1,7 @@
 ---
 title: "Get chat"
 description: "Retrieve a single chat."
-author: "bhartono"
+author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -52,8 +52,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [chat](../resources/chat.md) objects in the response body.
 
 ## Example
-#### Request
-Here is an example of the request.
+##### Request
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -83,9 +83,10 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ---
 
 
+---
 
-#### Response
-Here is an example of the response. 
+##### Response
+The following example shows the response.
 
 >**Note:** The response object shown here is shortened for readability. All the properties will be returned from an actual call.
 <!-- {

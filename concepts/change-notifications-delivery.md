@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
 ---
 
-# Get change notifications delivered in different ways (preview)
+# Get change notifications delivered in different ways
 
 Change notifications can be delivered in different ways to subscribers. If the main delivery mode for change notifications is through webhooks, it can be challenging to take advantage of webhooks for high throughput scenarios or when the receiver cannot expose a publicly available notification URL.  
 
