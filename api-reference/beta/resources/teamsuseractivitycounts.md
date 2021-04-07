@@ -1,6 +1,6 @@
 ---
 title: "teamsUserActivityCounts resource type"
-description: "The following is a JSON representation of the resource."
+description: "Represent numers of activities by type."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

@@ -1,6 +1,6 @@
 ---
 title: "teamsDeviceUsageUserDetail resource type"
-description: "The following is a JSON representation of the resource."
+description: "Represent details about Microsoft Teams device usage by user."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

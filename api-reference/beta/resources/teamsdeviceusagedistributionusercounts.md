@@ -1,6 +1,6 @@
 ---
 title: "teamsDeviceUsageDistributionUserCounts resource type"
-description: "The following is a JSON representation of the resource."
+description: "Represent number of users by device type over the selected time period."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
