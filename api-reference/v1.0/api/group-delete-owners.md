@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to remove an owner from a Microsoft 365 group, a security group, or a mail-enabled security group through the owners navigation property.
+Use this API to remove an owner from a Microsoft 365 group, a security group, or a mail-enabled security group through the owners navigation property. Once owners are assigned to a group, the last owner of the group cannot be removed. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
