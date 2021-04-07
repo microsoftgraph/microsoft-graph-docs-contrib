@@ -452,9 +452,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 6: List the details of apps filtered by app installation scope.
+### Example 6: List the details of apps filtered by app installation scope
 
-The following example lists only those apps which can be installed in the personal scope of a user.
+The following example lists only those apps that can be installed in the personal scope of a user.
 
 #### Request
 
