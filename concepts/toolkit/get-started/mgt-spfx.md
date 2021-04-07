@@ -2,7 +2,7 @@
 title: "SharePoint Framework library for Microsoft Graph Toolkit"
 description: "Use the SharePoint Framework library for Microsoft Graph Toolkit to use Microsoft Graph Toolkit in SharePoint Framework solutions."
 localization_priority: Normal
-author: wmastyka
+author: waldekmastykarz
 ---
 
 # SharePoint Framework library for Microsoft Graph Toolkit
