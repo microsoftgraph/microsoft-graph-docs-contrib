@@ -205,9 +205,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`893`
+893
+```
 
 ### Example 4: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects
 
