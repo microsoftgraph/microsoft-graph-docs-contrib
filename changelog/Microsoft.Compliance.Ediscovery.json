@@ -509,6 +509,14 @@
 					"ChangeType": "Addition",
 					"Description": "Added the [topicModelingSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-topicModelingSettings?view=graph-rest-beta) resource type.",
 					"Target": "topicModelingSettings"
+				},
+				{
+					"Id": "c173e7d6-9611-11eb-a4ee-0754add743a7",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "noncustodialSources",
+					"ChangeType": "Change",
+					"Description": "Changed the **noncustodialSources** relationship data type from the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource from **microsoft.graph.ediscovery.dataSource** to **microsoft.graph.ediscovery.noncustodialDataSource**.",
+					"Target": "sourceCollection"
 				}
 			],
 			"Id": "74276ccf-708f-11eb-8401-e19c685756df",
