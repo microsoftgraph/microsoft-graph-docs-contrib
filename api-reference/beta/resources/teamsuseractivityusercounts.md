@@ -11,18 +11,22 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](https://github.com/microsoftgraph/microsoft-graph-docs/blob/main/api-reference/includes/beta-disclaimer.md)]
+
+Represent numbers of daily users by activity type.
+
 ## Properties
 
-| Property            | Type   |
-| :------------------ | :----- |
-| reportRefreshDate   | Date   |
-| reportDate          | Date   |
-| teamChatMessages    | Int64  |
-| privateChatMessages | Int64  |
-| calls               | Int64  |
-| meetings            | Int64  |
-| otherActions        | Int64  |
-| reportPeriod        | String |
+| Property            | Type   | Description                                                  |
+| :------------------ | :----- | ------------------------------------------------------------ |
+| reportRefreshDate   | Date   | The latest date of the content.                              |
+| reportDate          | Date   | The date on which the users performed the activities.        |
+| teamChatMessages    | Int64  | The number of users who posted message in a team chat.       |
+| privateChatMessages | Int64  | The number of users who posted message in a private chat.    |
+| calls               | Int64  | The number of users who participated in 1:1 calls.           |
+| meetings            | Int64  | The number of users who participated in online meetings.     |
+| otherActions        | Int64  | The number of users who were active but performed other activities than exposed action types offered in the report (sending or replying to channel messages and chat messages, scheduling or participating in 1:1 calls and meetings). Examples actions are when a user changes the Teams status or the Teams status message or opens a Channel Message post but does not reply. |
+| reportPeriod        | String | The number of days the report covers.                        |
 
 ## JSON representation
 

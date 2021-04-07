@@ -11,16 +11,20 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](https://github.com/microsoftgraph/microsoft-graph-docs/blob/main/api-reference/includes/beta-disclaimer.md)]
+
+Represent numbers of users by activity type over the selected time period.
+
 ## Properties
 
-| Property            | Type   |
-| :------------------ | :----- |
-| reportRefreshDate   | Date   |
-| teamChatMessages    | Int64  |
-| privateChatMessages | Int64  |
-| calls               | Int64  |
-| meetings            | Int64  |
-| reportPeriod        | String |
+| Property            | Type   | Description                                                  |
+| :------------------ | :----- | ------------------------------------------------------------ |
+| reportRefreshDate   | Date   | The latest date of the content.                              |
+| teamChatMessages    | Int64  | The number of unique messages that users posted in a team chat. |
+| privateChatMessages | Int64  | The number of unique messages that users posted in a private chat. |
+| calls               | Int64  | The number of unique 1:1 calls that users participated in.   |
+| meetings            | Int64  | The number of unique online meetings that users participated in. |
+| reportPeriod        | String | The number of days the report covers.                        |
 
 ## JSON representation
 

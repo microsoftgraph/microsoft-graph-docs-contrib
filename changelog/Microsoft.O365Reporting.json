@@ -167,7 +167,7 @@
           "ApiChange": "method",
           "ChangedApiName": "getTeamsUserActivityTotalCounts",
           "ChangeType": "Addition",
-          "Description": "Added the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-1.0) method.",
+          "Description": "Added the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta) method.",
           "Target": "getTeamsUserActivityTotalCounts"
         },
         {
@@ -175,7 +175,7 @@
           "ApiChange": "method",
           "ChangedApiName": "getTeamsUserActivityTotalUserCounts",
           "ChangeType": "Addition",
-          "Description": "Added the [getTeamsUserActivityTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalusercounts?view=graph-rest-1.0) method.",
+          "Description": "Added the [getTeamsUserActivityTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalusercounts?view=graph-rest-beta) method.",
           "Target": "getTeamsUserActivityTotalUserCounts"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "method",
           "ChangedApiName": "getTeamsUserActivityDistributionUserCounts",
           "ChangeType": "Addition",
-          "Description": "Added the [getTeamsUserActivityDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributionusercounts?view=graph-rest-1.0) method.",
+          "Description": "Added the [getTeamsUserActivityDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributionusercounts?view=graph-rest-beta) method.",
           "Target": "getTeamsUserActivityDistributionUserCounts"
         },
         {
@@ -191,7 +191,7 @@
           "ApiChange": "method",
           "ChangedApiName": "getTeamsUserActivityDistributionTotalUserCounts",
           "ChangeType": "Addition",
-          "Description": "Added the [getTeamsUserActivityDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributiontotalusercounts?view=graph-rest-1.0) method.",
+          "Description": "Added the [getTeamsUserActivityDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributiontotalusercounts?view=graph-rest-beta) method.",
           "Target": "getTeamsUserActivityDistributionTotalUserCounts"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "method",
           "ChangedApiName": "getTeamsDeviceUsageTotalUserCounts",
           "ChangeType": "Addition",
-          "Description": "Added the [getTeamsDeviceUsageTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagetotalusercounts?view=graph-rest-1.0) method.",
+          "Description": "Added the [getTeamsDeviceUsageTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagetotalusercounts?view=graph-rest-beta) method.",
           "Target": "getTeamsDeviceUsageTotalUserCounts"
         },
         {
@@ -207,7 +207,7 @@
           "ApiChange": "method",
           "ChangedApiName": "getTeamsDeviceUsageDistributionTotalUserCounts",
           "ChangeType": "Addition",
-          "Description": "Added the [getTeamsDeviceUsageDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributiontotalusercounts?view=graph-rest-1.0) method.",
+          "Description": "Added the [getTeamsDeviceUsageDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributiontotalusercounts?view=graph-rest-beta) method.",
           "Target": "getTeamsDeviceUsageDistributionTotalUserCounts"
         }
       ],
