@@ -15,6 +15,8 @@ Represents a self-service sign up user flow within an Azure Active Directory ten
 
 User flows are used to enable a [self-service sign up](/azure/active-directory/external-identities/self-service-sign-up-overview) experience for guest users on an application. User flows define the experience the end user sees while signing up, including which [identity providers](/azure/active-directory/external-identities/identity-providers) they can use to authenticate, along with which attributes are collected as part of the sign up process.
 
+Inherits from base class [identityUserFlow](../resources/identityuserflow.md).
+
 ## Methods
 
 | Method       | Return Type  |Description|
