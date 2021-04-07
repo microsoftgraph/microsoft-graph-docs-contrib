@@ -5,6 +5,30 @@
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
+          "ChangedApiName": "authenticationFlowsPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationFlowsPolicy](https://docs.microsoft.com/graph/api/resources/authenticationflowspolicy.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Target": "authenticationFlowsPolicy"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selfServiceSignUpAuthenticationFlowConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [selfServiceSignUpAuthenticationFlowConfiguration](https://docs.microsoft.com/graph/api/resources/selfservicesignupauthenticationflowconfiguration.md?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Target": "selfServiceSignUpAuthenticationFlowConfiguration"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityUserFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityUserFlow](https://docs.microsoft.com/graph/api/resources/identityuserflow.md?view=graph-rest-1.0&preserve-view=true) base resource type.",
+          "Target": "b2xIdentityUserFlow"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
           "ChangedApiName": "b2xIdentityUserFlow",
           "ChangeType": "Addition",
           "Description": "Added the [b2xIdentityUserFlow](https://docs.microsoft.com/graph/api/resources/b2xidentityuserflow.md?view=graph-rest-1.0&preserve-view=true) resource type.",
@@ -21,6 +45,22 @@
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
+          "ChangedApiName": "identityBuiltInUserFlowAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityBuiltInUserFlowAttribute](https://docs.microsoft.com/graph/api/resources/identitybuiltinuserflowattribute?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Target": "identityBuiltInUserFlowAttribute"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityCustomUserFlowAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityCustomUserFlowAttribute](https://docs.microsoft.com/graph/api/resources/identitycustomuserflowattribute?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Target": "identityCustomUserFlowAttribute"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
           "ChangedApiName": "identityUserFlowAttributeAssignment",
           "ChangeType": "Addition",
           "Description": "Added the [identityUserFlowAttributeAssignment](https://docs.microsoft.com/graph/api/resources/identityuserflowattributeassignment.md?view=graph-rest-1.0&preserve-view=true) resource type.",
@@ -33,6 +73,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [userAttributeValuesItem](https://docs.microsoft.com/graph/api/resources/userattributevaluesitem.md?view=graph-rest-1.0&preserve-view=true) resource type.",
           "Target": "userAttributeValuesItem"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignmentOrder",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignmentorder](https://docs.microsoft.com/graph/api/resources/assignmentorder.md?view=graph-rest-1.0&preserve-view=true) resource type that represents the order that attributes should be collected within a user flow during sign-up.",
+          "Target": "userAttributeValuesItem"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "getOrder, setOrder",
+          "ChangeType": "Addition",
+          "Description": "Added the operations [getOrder](https://docs.microsoft.com/graph/api/resources/identityuserflowattributeassignment-getorder.md?view=graph-rest-1.0&preserve-view=true) and [setOrder](https://docs.microsoft.com/graph/api/resources/identityuserflowattributeassignment-setorder.md?view=graph-rest-1.0&preserve-view=true) that get the current order of attributes being collected or to set a new order for attributes to be collected during sign-up.",
+          "Target": "getOrder, setOrder"
         },
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
@@ -85,6 +141,14 @@
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
+          "ChangedApiName": "uploadClientCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the operation [uploadClientCertificate](https://docs.microsoft.com/graph/api/resources/identitypiconnector-uploadclientcertificate.md?view=graph-rest-1.0&preserve-view=true) to upload a client certificate (.pfx) to an API connector authentication configuration.",
+          "Target": "getOrder, setOrder"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
           "ChangedApiName": "userFlowLanguageConfiguration",
           "ChangeType": "Addition",
           "Description": "Added the [userFlowLanguageConfiguration](https://docs.microsoft.com/graph/api/resources/userflowlanguageconfiguration.md?view=graph-rest-1.0&preserve-view=true) resource type.",
@@ -97,12 +161,70 @@
           "ChangeType": "Addition",
           "Description": "Added the [userFlowLanguagePage](https://docs.microsoft.com/graph/api/resources/userflowlanguagepage?view=graph-rest-beta) resource type that defines the language defaults and customizations within a user flow in an Azure Active Directory tenant.",
           "Target": "userFlowLanguagePage"
+        },
+        {
+          "Id": "7115e92d-2aa8-4a9c-924b-d0caf8023529",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "userFlowType",
+          "ChangeType": "Addition",
+          "Description": "Added the **userFlowType** enumeration type.",
+          "Target": "userFlowType"
+        },
+        {
+          "Id": "7115e92d-2aa8-4a9c-924b-d0caf8023529",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "identityUserFlowAttributeInputType",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityUserFlowAttributeInputType** enumeration type.",
+          "Target": "identityUserFlowAttributeInputType"
+        },
+        {
+          "Id": "7115e92d-2aa8-4a9c-924b-d0caf8023529",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "identityUserFlowAttributeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityUserFlowAttributeType** enumeration type.",
+          "Target": "identityUserFlowAttributeType"
+        },
+        {
+          "Id": "7115e92d-2aa8-4a9c-924b-d0caf8023529",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "identityUserFlowAttributeDataType",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityUserFlowAttributeDataType** enumeration type.",
+          "Target": "identityUserFlowAttributeDataType"
         }
       ],
       "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-04-05T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityBuiltInUserFlowAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityBuiltInUserFlowAttribute](https://docs.microsoft.com/graph/api/resources/identitybuiltinuserflowattribute?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "identityBuiltInUserFlowAttribute"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityCustomUserFlowAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityCustomUserFlowAttribute](https://docs.microsoft.com/graph/api/resources/identitycustomuserflowattribute?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "identityCustomUserFlowAttribute"
+        }
+      ],
+      "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-23T17:53:06Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },

@@ -4054,6 +4054,14 @@ items:
               href: api/subscribedsku-get.md
       - name: Identity and sign-in
         items:
+        - name: Authentication flows policy
+          items:
+          - name: Authentication flows policy
+            href: resources/authenticationflowspolicy.md
+          - name: Get
+            href: api/authenticationflowspolicy-get.md
+          - name: Update
+            href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
           items:
           - name: Overview
