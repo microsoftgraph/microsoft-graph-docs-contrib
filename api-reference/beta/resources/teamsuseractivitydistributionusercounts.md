@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](https://github.com/microsoftgraph/microsoft-graph-docs/blob/main/api-reference/includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represent numbers of users by activity type over the selected time period.
 
