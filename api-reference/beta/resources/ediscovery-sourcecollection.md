@@ -64,7 +64,7 @@ Represents an eDiscovery collection, commonly known as a search. For details, se
 |addToReviewSetOperation|[microsoft.graph.ediscovery.addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md)|Adds the results of the **sourceCollection** to the specified **reviewSet**.|
 |custodianSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|**Custodian** sources that are included in the **sourceCollection**.|
 |lastEstimateStatisticsOperation|[microsoft.graph.ediscovery.estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)|The last estimate operation associated with the **sourceCollection**.|
-|noncustodialSources|[noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) collection|**noncustodialDataSource** sources that are included in the **sourceCollection**|
+|noncustodialSources|[microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) collection|**noncustodialDataSource** sources that are included in the **sourceCollection**|
 
 ## JSON representation
 
