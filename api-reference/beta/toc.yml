@@ -9474,6 +9474,82 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+      - name: Operating system updates (preview)
+        items:
+        - name: Catalog
+          href: resources/windowsupdates-catalog.md
+          items:
+          - name: List catalog entries
+            href: api/windowsupdates-catalog-list-entries.md
+          - name: Feature update catalog entry
+            href: resources/windowsupdates-featureupdatecatalogentry.md
+          - name: Quality update catalog entry
+            href: resources/windowsupdates-qualityupdatecatalogentry.md
+        - name: Deployment
+          href: resources/windowsupdates-deployment.md
+          items:
+          - name: Create deployment
+            href: api/windowsupdates-deployment-create.md
+          - name: Get deployment
+            href: api/windowsupdates-deployment-get.md
+          - name: List deployments
+            href: api/windowsupdates-deployment-list.md
+          - name: Update deployment
+            href: api/windowsupdates-deployment-update.md
+          - name: Delete deployment
+            href: api/windowsupdates-deployment-delete.md
+          - name: Expedited quality update reference
+            href: resources/windowsupdates-expeditedqualityupdatereference.md
+          - name: Feature update reference
+            href: resources/windowsupdates-featureupdatereference.md
+        - name: Deployment audience
+          href: resources/windowsupdates-deploymentaudience.md
+          items:
+          - name: List members
+            href: api/windowsupdates-deploymentaudience-list-members.md
+          - name: List exclusions
+            href: api/windowsupdates-deploymentaudience-list-exclusions.md
+          - name: Update members and exclusions
+            href: api/windowsupdates-deploymentaudience-updateaudience.md
+        - name: Updatable asset
+          href: resources/windowsupdates-updatableasset.md
+          items:
+          - name: Get updatable asset
+            href: api/windowsupdates-updatableasset-get.md
+          - name: List updatable assets
+            href: api/windowsupdates-updatableasset-list.md
+          - name: Delete updatable asset
+            href: api/windowsupdates-updatableasset-delete.md
+          - name: Azure AD device
+            href: resources/windowsupdates-azureaddevice.md
+            items:
+            - name: Get Azure AD device
+              href: api/windowsupdates-azureaddevice-get.md
+            - name: List Azure AD devices
+              href: api/windowsupdates-azureaddevice-list.md
+            - name: Enroll in update management
+              href: api/windowsupdates-updatableasset-enrollassets.md
+            - name: Unenroll from update management
+              href: api/windowsupdates-updatableasset-unenrollassets.md
+            - name: Delete Azure AD device
+              href: api/windowsupdates-azureaddevice-delete.md
+          - name: Updatable asset group
+            href: resources/windowsupdates-updatableassetgroup.md
+            items:
+            - name: Create updatable asset group
+              href: api/windowsupdates-updatableassetgroup-create.md
+            - name: Get updatable asset group
+              href: api/windowsupdates-updatableassetgroup-get.md
+            - name: List updatable asset groups
+              href: api/windowsupdates-updatableassetgroup-list.md
+            - name: Add members
+              href: api/windowsupdates-updatableassetgroup-addmembers.md
+            - name: Remove members
+              href: api/windowsupdates-updatableassetgroup-removemembers.md
+            - name: List members
+              href: api/windowsupdates-updatableassetgroup-list-members.md
+            - name: Delete updatable asset group
+              href: api/windowsupdates-updatableassetgroup-delete.md
     - name: Education
       items:
       - name: Overview
