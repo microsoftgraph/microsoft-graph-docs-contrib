@@ -3,6 +3,74 @@
     {
       "ChangeList": [
         {
+          "Id":"f59950c2-8df0-11eb-8507-815178c7c041",
+          "ApiChange":"Resource",
+          "ChangedApiName":"chromeOSOnboardingSettings",
+          "ChangeType":"Addition",
+          "Description":"Added the [chromeOSOnboardingSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-chromeOSOnboardingSettings?view=graph-rest-beta) resource type.",
+          "Target":"chromeOSOnboardingSettings"
+        },
+        {
+          "Id":"f59bb3a0-8df0-11eb-8507-815178c7c041",
+          "ApiChange":"Enum type",
+          "ChangedApiName":"chromeOSOnboardingStatus",
+          "ChangeType":"Addition",
+          "Description":"Added the **chromeOSOnboardingStatus** enumeration type.",
+          "Target":"chromeOSOnboardingStatus"
+        },
+        {
+          "Id":"f59e163d-8df0-11eb-8507-815178c7c041",
+          "ApiChange":"Enum type",
+          "ChangedApiName":"onboardingStatus",
+          "ChangeType":"Addition",
+          "Description":"Added the **onboardingStatus** enumeration type.",
+          "Target":"onboardingStatus"
+        },
+        {
+          "Id":"f5a0773c-8df0-11eb-8507-815178c7c041",
+          "ApiChange":"Method",
+          "ChangedApiName":"connect",
+          "ChangeType":"Addition",
+          "Description":"Added the [connect](https://docs.microsoft.com/en-us/graph/api/intune-chromeOSOnboardingSettings-connect?view=graph-rest-beta) method to the [chromeOSOnboardingSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-chromeOSOnboardingSettings?view=graph-rest-beta) resource.",
+          "Target":"chromeOSOnboardingSettings"
+        }
+      ],
+      "Id":"f596ed74-8df0-11eb-8507-815178c7c041",
+      "Cloud":"prd",
+      "Version":"beta",
+      "CreatedDateTime":"2021-03-26T05:06:01.690Z",
+      "WorkloadArea":"Devices and apps",
+      "SubArea":"Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id":"84124694-8da4-11eb-a57c-31dcdef91872",
+          "ApiChange":"Property",
+          "ChangedApiName":"chromeOSDeviceInfo",
+          "ChangeType":"Addition",
+          "Description":"Added the **chromeOSDeviceInfo** property to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-managedDevice?view=graph-rest-beta) resource.",
+          "Target":"managedDevice"
+        },
+        {
+          "Id":"8414abee-8da4-11eb-a57c-31dcdef91872",
+          "ApiChange":"Resource",
+          "ChangedApiName":"chromeOSDeviceProperty",
+          "ChangeType":"Addition",
+          "Description":"Added the [chromeOSDeviceProperty](https://docs.microsoft.com/en-us/graph/api/resources/intune-chromeOSDeviceProperty?view=graph-rest-beta) resource type.",
+          "Target":"chromeOSDeviceProperty"
+        }
+      ],
+      "Id":"840fe6b9-8da4-11eb-a57c-31dcdef91872",
+      "Cloud":"prd",
+      "Version":"beta",
+      "CreatedDateTime":"2021-03-25T19:58:49.471Z",
+      "WorkloadArea":"Devices and apps",
+      "SubArea":"Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id":"8a52be34-8123-11eb-8a3c-f63608ac46d5",
           "ApiChange":"Property",
           "ChangedApiName":"assignmentFilterTypeAndEvaluationResults",
