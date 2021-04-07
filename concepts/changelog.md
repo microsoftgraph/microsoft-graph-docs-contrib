@@ -10,6 +10,67 @@ localization_priority: Priority
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
+## March 2021
+
+### Users
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [translationPreferences](/graph/api/resources/translationPreferences?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the [translationLanguageOverride](/graph/api/resources/translationLanguageOverride?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the **translationPreferences** property to the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true) resource.|
+
+## March 2021
+
+### Identity and access
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+| Addition        | v1.0        | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-list.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.
+| Addition | beta, v1.0 | Added support for app-only permission **Application.ReadWrite.OwnedBy** for [applicationTemplate](/graph/api/resources/applicationtemplate.md) [instantiate](/graph/api/applicationtemplate-instantiate.md) method. |
+| Addition | v1.0 | Added the **signInAudience** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0) resource.|
+| Addition | beta | Added the **uniqueName** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.|
+
+
+## February 2021
+
+### Cloud communications
+| **Change type** | **Version**   | **Description**                                                                                              |
+| :-------------- | :------------ | :---------------------------------------                                                                     |
+| Addition        | beta          | Added the **participantCapacity** option to [answer](https://docs.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-beta) operation.|
+| Addition        | beta          | Added the [participantJoiningNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [participantLeftNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [participantJoiningResponse](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta) resource type.|
+| Addition        | beta          | Added the [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta) resource type.|
+
+### Tasks and plans
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the **rosterPlans** relationship to [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource|
+|Addition|beta|Added the **rosters** relationship to [planner](https://docs.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta) resource|
+|Addition|beta|Added the **isCreationContext** property to [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta) resource|
+|Addition|beta|Added the **customLinkText** property to [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource|
+|Addition|beta|Added the **displayLinkType** property to [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource|
+|Addition|beta|Added the [plannerRoster](https://docs.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) resource type|
+|Addition|beta|Added the [plannerRosterMember](https://docs.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta) resource type|
+|Addition|beta|Added the `roster` member to the **plannerContainerType** enumeration|
+|Addition|beta|Added the **plannerPlanContextType** enumeration type|
+
+### Identity and access | Devices
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+| Addition | beta | Added the **deviceCategory** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **deviceOwnership** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **domainName** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **enrollmentProfileName** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **enrollmentType** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **isRooted** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **managementType** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | beta | Added the **registrationDateTime** property to [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
 
 ## January 2021
 
@@ -22,7 +83,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) complex type.|
+|Addition|beta|Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta&preserve-view=true) complex type.|
 |Addition|beta|Added the **outOfOfficeSettings** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type|
 |Addition|beta|Added the **isBroadcast**, **broadcastSettings**, **attendeeReport**, **recording** and **alternativeRecording** properties to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) entity to support creating live events.|
 
@@ -54,6 +115,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta | Added new [Delegated permissions](./permissions-reference.md#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li><li>PrintConnector.Read.All</li><li>PrintConnector.ReadWrite.All</li><li>PrintSettings.Read.All</li><li>PrintSettings.ReadWrite.All</li><li>Reports.Read.All</li></ul> |
+|Addition|beta|Added the **inputBin** property to [printerDefaults](/graph/api/resources/printerDefaults?view=graph-rest-beta) resource|
 
 ### Tasks and plans
 
@@ -118,14 +180,34 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | Changed **roomNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) resource to **roomName** (Edm.String). |
 | Change | beta | Changed type of allowedUsers relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Changed type of allowedGroups relationship on [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Updated enum types in [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource. |
 | Addition | beta | Added the [update configuration](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) action to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource.|
+| Addition | beta | Added the `outputAreaAlmostFull` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `none` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `movingToPaused` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `shutdown` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `connectingToDevice` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `timedOut` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `stopping` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `stoppedPartially` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `tonerLow` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `tonerEmpty` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `spoolAreaFull` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `doorOpen` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `opticalPhotoConductorNearEndOfLife` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `opticalPhotoConductorLifeOver` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `developerLow` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `developerEmpty` member to the **printerProcessingStateDetail** enumeration|
+| Addition | beta | Added the `interpreterResourceUnavailable` member to the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `disconnected` member from the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `queueFull` member from the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `outputAlmostFull` member from the **printerProcessingStateDetail** enumeration|
+| Deletion | beta | Removed the `unknownFutureValue` member from the **printerProcessingStateDetail** enumeration|
 
 ### Education
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the **notificationChannelUrl** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. | 
+| Addition | beta | Added the **notificationChannelUrl** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **addedStudentAction** optional property to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the **educationAddedStudentAction** enumeration type. |
 
@@ -156,6 +238,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | beta | Added methods for listing and creating user attribute assignments to the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) resource.|
 | Addition | v1.0 | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) resource type. |
+| Addition | beta | Added the **includeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
+| Addition | beta | Added the **excludeDevices** property to [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
+| Change | beta | Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
+| Change | beta | Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.|
 | Addition | beta | Added the [authenticationEventsPolicy](/graph/api/resources/authenticationeventspolicy?preserve-view=true&view=graph-rest-beta) resource type. |
 | Addition | beta | Added the [authenticationListener](/graph/api/resources/authenticationlistener?preserve-view=true&view=graph-rest-beta) resource type. |
 | Addition | beta | Added the [invokeUserFlowListener](/graph/api/resources/invokeUserFlowListener?preserve-view=true&view=graph-rest-beta) resource type. |
@@ -207,8 +293,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [channelModerationSettings](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true) resource type. |
 | Addition | beta | Added the **replyRestriction** enumeration type. |
 | Addition | beta | Added the **userNewMessageRestriction** enumeration type. |
-
-
 
 ## November 2020
 
@@ -363,9 +447,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta | Deprecated **feedDirections** property on [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Added **details** property to [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. |
 | Change | beta | Deprecated **processingStateReasons** property on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Renamed properties on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |  
+| Change | beta | Renamed properties on [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li></ul> |
 | Change | beta | Added **details** property to [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource. |
-| Change | beta | Renamed properties on [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
+| Change | beta | Renamed properties on [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true) resource: <br/><ul><li>processingState -> state</li><li>processingStateDescription -> description</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |
 
 ### Devices and apps | Corporate management
 
@@ -407,6 +491,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added support for `$count`, `$search`, and `$filter` query parameters for improving query capabilities to: <br><ul><li>[List applications](/graph/api/application-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List devices](/graph/api/device-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List device groups](/graph/api/device-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List device transitive groups](/graph/api/device-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List groups](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List group transitive members](/graph/api/group-list-transitivemembers?view=graph-rest-1.0&preserve-view=true)</li><li>[List orgContacts](/graph/api/orgcontact-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List users](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li></ul><br>Added examples for using OData cast to: <ul><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-1.0&preserve-view=true)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0&preserve-view=true)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0&preserve-view=true)</li></ul> |
+| Addition | beta | Added the [activateServicePlan](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) method to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource |
 
 ### Identity and access | Identity and sign-in
 

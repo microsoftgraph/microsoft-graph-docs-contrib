@@ -2,8 +2,8 @@
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
 localization_priority: Priority
-author: "elisolMS"
-ms.prod: "microsoft-identity-platform"
+author: "Sammak"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -130,8 +130,6 @@ Content-length: 551
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: create_user_from_users/invitedUser:
-      Property 'invitedUser' is of type Custom but has no custom members."
   ]
 }-->
 

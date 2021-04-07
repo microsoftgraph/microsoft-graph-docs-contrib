@@ -3,7 +3,7 @@ title: "authenticationMethod resource type"
 description: "Represents an authentication method registered to a user."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -42,7 +42,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.authenticationMethod",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

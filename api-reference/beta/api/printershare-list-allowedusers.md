@@ -93,7 +93,7 @@ Content-length: 286
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
       "displayName": "UserName",
-      "userPrincipalName": "username@microsoft.com"
+      "userPrincipalName": "username@contoso.com"
     }
   ]
 }

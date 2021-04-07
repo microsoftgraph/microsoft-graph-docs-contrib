@@ -11,7 +11,8 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("$skiptoken", "c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA=")
 };
 
-var chatMessage = await graphClient.Teams["{id}"].Channels["{id}"].Messages["delta"]
+var delta = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
+	.Delta()
 	.Request()
 	.GetAsync();
 
