@@ -2,7 +2,7 @@
 title: "Update localized organizationalbrandingproperties"
 description: "Update the properties of the organizationalbrandingproperties object for a specific localization."
 localization_priority: Normal
-author: "kexia"
+author: "almars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization/{id}/branding/localizations/{locale}/{property name}
-PUT /organization/{id}/branding/localizations/{locale}/{property name}
+PATCH /organization/{id}/branding/localizations/{locale}
+PUT /organization/{id}/branding/localizations/{locale}
 ```
 
 ## Request headers
@@ -67,9 +67,11 @@ The following request updates the banner logo for the `fr` localization. Using P
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_5"
 }-->
 
 ```http
@@ -78,6 +80,24 @@ Content-Type: image/jpeg
 
 <Image>
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-5-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -101,9 +121,11 @@ The following request updates the banner logo for the fr localization.  Using PA
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_6"
 }-->
 
 ```http
@@ -115,6 +137,24 @@ Content-Type: application/json
     "signInPageText": "fr"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-6-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 The following is an example of the response.
@@ -138,7 +178,7 @@ If the value of a property in a localization is null, the value will be inherite
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_7"
 }-->
 
 ```http
@@ -177,9 +217,11 @@ If the payload contains an id property or a Content-Language header, and they do
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_8"
 }-->
 
 ```http
@@ -191,6 +233,24 @@ Content-Type: application/json
     "signInPageText": "fr"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-8-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-8-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-8-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-8-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 The following is an example of the response.

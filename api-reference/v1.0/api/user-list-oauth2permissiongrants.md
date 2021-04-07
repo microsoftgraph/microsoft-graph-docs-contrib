@@ -3,7 +3,7 @@ title: "List oauth2PermissionGrants"
 description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
@@ -60,6 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 Here is an example of the request.
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -67,7 +68,7 @@ Here is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id}/oauth2PermissionGrants
+GET https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/oauth2PermissionGrants
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-oauth2permissiongrants-csharp-snippets.md)]
@@ -104,17 +105,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 253
 
 {
   "value": [
     {
-      "id": "id-value",
-      "clientId": "clientId-value",
-      "consentType": "consentType-value",
-      "principalId": "principalId-value",
-      "resourceId": "resourceId-value",
-      "scope": "scope-value"
+      "clientId": "85477313-ea43-4c7d-b8a4-54fed35d0b60",
+      "consentType": "Principal",
+      "id": "E3NHhUPqfUy4pFT-010LYFo5-ycA-_5Fhl7nHbaJ7qACy1R9o6oWQJ-cpLSUIt2b",
+      "principalId": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
+      "resourceId": "27fb395a-fb00-45fe-865e-e71db689eea0",
+      "scope": " Contacts.ReadWrite openid profile"
     }
   ]
 }

@@ -20,7 +20,7 @@ var printConnector = new PrintConnector
 	}
 };
 
-await graphClient.Print.Connectors["{id}"]
+await graphClient.Print.Connectors["{printConnector-id}"]
 	.Request()
 	.UpdateAsync(printConnector);
 

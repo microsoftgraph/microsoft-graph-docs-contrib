@@ -30,7 +30,7 @@ var attachment = new ItemAttachment
 	}
 };
 
-await graphClient.Me.Outlook.Tasks["AAMkADAAAANXbdnAAA="].Attachments
+await graphClient.Me.Outlook.Tasks["{outlookTask-id}"].Attachments
 	.Request()
 	.AddAsync(attachment);
 

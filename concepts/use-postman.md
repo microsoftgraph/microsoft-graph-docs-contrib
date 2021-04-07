@@ -54,8 +54,8 @@ To use this collection in your own developer tenant, create an Azure AD applicat
 
 The Azure AD application now has permissions to make requests on behalf of a user to call Mail.Read and as an application for User.Read.All.
 
-## Step 4 - Configuring authentication
-Set up some environment variables used to retrieve an access token.
+## Step 4 - Configuring authentication in Postman
+Go to Postman and make sure you have selected the workspace created in step 1. Set up some environment variables used to retrieve an access token.
 
 1. Click the eye icon in the top right next to the **No environment** drop down.
 2. Click **Add** in the top right of that pop up.

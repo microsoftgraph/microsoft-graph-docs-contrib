@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------
-|Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All  |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -63,6 +63,8 @@ If successful, this action returns a `204 No Content` response code.
 ## Example
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_associatewithhubsites"
@@ -73,14 +75,30 @@ POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubS
 Content-Type: application/json
 
 {
-  "hubSiteUrls":
-    [
+   "hubSiteUrls":[
       "https://graph.microsoft.com/beta/sites/id"
-      
-    ],
-    "propagateToExistingLists": false
+   ],
+   "propagateToExistingLists":false
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-associatewithhubsites-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-associatewithhubsites-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-associatewithhubsites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-associatewithhubsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 
@@ -91,7 +109,6 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
   
