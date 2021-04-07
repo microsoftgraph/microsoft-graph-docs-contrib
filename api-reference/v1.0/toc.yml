@@ -4251,6 +4251,8 @@ items:
             href: api/identityprovider-update.md
           - name: Delete identity provider
             href: api/identityprovider-delete.md
+          - name: List available provider types
+            href: api/identityprovider-list-availableprovidertypes.md
         - name: Invitation manager
           href: resources/invitation.md
           items:
