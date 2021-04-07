@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [userConsentRequests](../resources/userconsentrequest.md) for an appConsentRequest for which the current user is the reviewer and the status of the userConsentRequest is `InProgress`.
+Retrieve a collection of [userConsentRequest](../resources/userconsentrequest.md) resources for accessing a specified app, for which the current user is the reviewer.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,9 +56,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [userConsentRequest](../resources/userconsentrequest.md) objects in the response body.
 
-## Example: List all userConsentRequests for which the current user is the reviewer and the status is Completed
+## Example
 
 ### Request
+
+In this request, you list all **userConsentRequests** for which the current user is the reviewer and the status is `Completed`.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -1,6 +1,6 @@
 ---
 title: "appConsentRequest resource type"
-description: "A request that represents an aggregation of userConsentRequests for a specific application."
+description: "A request that represents an aggregation of userConsentRequest for a specific application."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "governance"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An aggregation of [userConsentRequests](../resources/userconsentrequest.md) for a specific application.
+An aggregation of [userConsentRequest](../resources/userconsentrequest.md) for a specific application.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List appConsentRequests](../api/appconsentrequest-list.md)|[appConsentRequest](../resources/appconsentrequest.md) collection|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.|
+|[List appConsentRequest](../api/appconsentrequest-list.md)|[appConsentRequest](../resources/appconsentrequest.md) collection|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.|
 |[Get appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Read the properties and relationships of an [appConsentRequest](../resources/appconsentrequest.md) object.|
-|[List appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|A list of the [appConsentRequests](../resources/appconsentrequest.md) for which the current user is the reviewer|
+|[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties, for which the current user is the reviewer|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +34,7 @@ An aggregation of [userConsentRequests](../resources/userconsentrequest.md) for 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userConsentRequests|[userConsentRequest](../resources/userconsentrequest.md) collection|A list of pending user consent requests.|
+|userConsentRequest|[userConsentRequest](../resources/userconsentrequest.md) collection|A list of pending user consent requests.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

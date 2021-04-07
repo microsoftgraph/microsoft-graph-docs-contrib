@@ -41,7 +41,7 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |on|consentRequestFilterByCurrentUserOptions|Filter to query appConsentRequests for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
-## Optional query parameters
+## Query parameters
 This function requires the `$filter` OData query parameter to return a collection of [userConsentRequests](../resources/userconsentrequest.md) whose status is `InProgress`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
@@ -56,7 +56,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [appConsentRequest](../resources/appconsentrequest.md) objects in the response body.
 
-## Examples
+## Example
 
 ### Request
 
