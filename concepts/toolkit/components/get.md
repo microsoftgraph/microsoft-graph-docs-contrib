@@ -63,3 +63,9 @@ For more information about permissions, see the Microsoft Graph [permissions ref
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.
+
+## Cache
+
+IndexedDB|Cached data|Remarks
+---------|-----------|-------
+`response`|Complete response retrieved from Microsoft Graph for the query specified in the `resource` property of `mgt-get`|

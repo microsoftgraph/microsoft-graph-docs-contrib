@@ -214,6 +214,14 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.
 
+## Cache
+
+IndexedDB|Cached data|Remarks
+---------|-----------|-------
+`photos`|Person's photo|Used, when `avatarType` is set to `photo` and `fetchImage` is set to `true`
+`presence`|Person's presence|Used, when `showPresence` is set to `true`
+`users`|Person's user information|
+
 ## Extend for more control
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
