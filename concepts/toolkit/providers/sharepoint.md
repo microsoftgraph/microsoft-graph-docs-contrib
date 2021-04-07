@@ -35,7 +35,7 @@ public render(): void {
 }
 ```
 
->**Note:** The Microsoft Graph Toolkit requires Typescript 3.7 or newer. Make sure you're using a supported version of Typescript by [installing the right compiler](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x). If you use SharePoint Framework v1.12 or newer, you already use the correct version of TypeScript in your project.
+>**Note:** The Microsoft Graph Toolkit requires Typescript 3.7 or newer. Make sure you're using a supported version of Typescript by [installing the right compiler](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
 
 ## Sample
 
