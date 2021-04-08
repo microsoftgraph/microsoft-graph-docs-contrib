@@ -38,6 +38,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Remove appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md) | None | Remove an app role assignment for this service principal from a user, group, or service principal.|
 |**Certificates and secrets**| | |
 |[Add password](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to a servicePrincipal.|
+|[Add tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| Add a self signed certificate to the service principal. Mostly use for configuring SAML based SSO applications from the [Azure AD gallery](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list).
 |[Remove password](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from a servicePrincipal.|
 |[Add key](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|Add a key credential to a servicePrincipal.|
 |[Remove key](../api/serviceprincipal-removekey.md)|None|Remove a key credential from a servicePrincipal.|
@@ -114,7 +115,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|The collection for settings related to saml single sign-on.|
 |servicePrincipalNames|String collection|Contains the list of **identifiersUris**, copied over from the associated [application](application.md). Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Azure AD. For example,<ul><li>Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the “aud” claim.</li></ul><br>The any operator is required for filter expressions on multi-valued properties. Not nullable.|
 |servicePrincipalType|String|Identifies if the service principal represents an application or a managed identity. This is set by Azure AD internally. For a service principal that represents an [application](./application.md) this is set as __Application__. For a service principal that represent a [managed identity](/azure/active-directory/managed-identities-azure-resources/overview) this is set as __ManagedIdentity__.|
-|signInAudience|String| Specifies what Microsoft accounts are supported for the associated application. Read-only.|
+| signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. Read-only. <br><br>Supported values are:<ul><li>`AzureADMyOrg`: Users with a Microsoft work or school account in my organization’s Azure AD tenant (single-tenant).</li><li>`AzureADMultipleOrgs`: Users with a Microsoft work or school account in any organization’s Azure AD tenant (multi-tenant).</li><li>`AzureADandPersonalMicrosoftAccount`: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant.</li><li>`PersonalMicrosoftAccount`: Users with a personal Microsoft account only.</li></ul> |
 |tags|String collection| Custom strings that can be used to categorize and identify the service principal. Not nullable. |
 |tokenEncryptionKeyId|String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD issues tokens for this application encrypted using the key specified by this property. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Specifies the verified publisher of the application which this service principal represents.|
@@ -175,6 +176,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "loginUrl": "string",
   "logoutUrl": "string",
+  "notes": "String",
   "notificationEmailAddresses": ["string"],
   "notes": "string",
   "publishedPermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],

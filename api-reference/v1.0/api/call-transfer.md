@@ -44,7 +44,6 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|The participant which is the target of the transfer.|
-|clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code.
@@ -61,7 +60,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-transfer"
+  "name": "call-transfer-1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/transfer
@@ -78,12 +77,11 @@ Content-Length: 430
       }
     },
     "replacesCallId": "replacesCallId-value"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -91,7 +89,7 @@ Content-Length: 430
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -250,7 +248,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer"
+  "@odata.type": "call-transfer-2"
 }-->
 
 ```http
@@ -270,8 +268,7 @@ Content-Type: application/json
       }
     },
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 

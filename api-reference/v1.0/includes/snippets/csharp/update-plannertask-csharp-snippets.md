@@ -27,6 +27,7 @@ var plannerTask = new PlannerTask
 
 await graphClient.Planner.Tasks["{plannerTask-id}"]
 	.Request()
+	.Header("Prefer","return=representation")
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerTask);
 
