@@ -1,6 +1,6 @@
 ---
 title: "userAttributeValuesItem resource type"
-description: "Used to populate the values for a user flow attribute within a user flow when there are multiple selections to choose from."
+description: "Represents user flow attribute values within a user flow."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
