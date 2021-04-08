@@ -87,7 +87,7 @@ Content-Type: application/json
 
 {
   "value": [
-   "value": {
+   {
     "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
     "id": "ab90bacf-55a3-4a3e-839a-aa4b74e4f020",
     "appliesTo": "selected",
@@ -99,7 +99,7 @@ Content-Type: application/json
     "includedGroups": [
       {
         "id": "800c583d-cc3d-4361-8e4a-3fbf668f27f4",
-        "displayName": "Test Group",
+        "displayName": "Test Group"
       }
     ]
   }

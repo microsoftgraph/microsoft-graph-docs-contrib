@@ -75,11 +75,11 @@ Content-Type: application/json
     "description": "Contoso mobilty app is a cloud-based  Endpoint Management solution for managing Windows.",
     "discoveryUrl": "https://enrollment.mam.contoso.com/enrollmentserver/discovery.svc",
     "displayName": "Contoso mobilty app",
-    "termsOfUseUrl": "https://portal.mam.contoso.com/TermsofUse.aspx"
+    "termsOfUseUrl": "https://portal.mam.contoso.com/TermsofUse.aspx",
     "includedGroups": [
       {
         "id": "800c583d-cc3d-4361-8e4a-3fbf668f27f4",
-        "displayName": "Test Group",
+        "displayName": "Test Group"
       }
     ]
   }
