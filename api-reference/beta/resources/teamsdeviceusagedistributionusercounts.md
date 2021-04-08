@@ -1,6 +1,6 @@
 ---
 title: "teamsDeviceUsageDistributionUserCounts resource type"
-description: "Represent number of users by device type over the selected time period."
+description: "Represents number of users by device type over the selected time period."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent number of users by device type over the selected time period.
+Represents number of users by device type over the selected time period.
 
 ## Properties
 
