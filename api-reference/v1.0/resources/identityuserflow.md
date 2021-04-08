@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-User Flows enable you to define predefined, configurable policies for sign in, sign up, combined sign up and sign in, password reset and profile update. This is a base class that other user flows inherit from.
+User Flows enable you to define predefined, configurable policies for sign-in, sign-up, combined sign-up and sign-in, password reset, and profile update. This is a base class that other user flows inherit from.
 
 ## Properties
 
