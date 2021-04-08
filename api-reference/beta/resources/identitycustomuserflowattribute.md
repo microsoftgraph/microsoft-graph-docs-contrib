@@ -1,6 +1,6 @@
 ---
 title: "identityCustomUserFlowAttribute resource type"
-description: "Represents a custom user flow attribute in Azure Active Directory tenants that can be used in your self-service sign up user flows. These attributes cannot be modified and are read-only."
+description: "Represents a custom user flow attribute in Azure Active Directory tenants that can be used in your self-service sign-up user flows."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
@@ -53,4 +53,3 @@ The following is a JSON representation of the resource.
   "dataType": "String"
 }
 ```
-
