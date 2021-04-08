@@ -63,12 +63,12 @@ If successful, this method returns a `204 No Content` response code and a [group
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/{id}/includedGroups/$ref
+POST https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups/$ref
 Content-Type: application/json
-Content-length: 61
 
 {
   "@odata.type": "#microsoft.graph.group"
+  "id": "1a9db3ab-0acf-4808-99ae-e8ed581cb2e0"
 }
 ```
 

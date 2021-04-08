@@ -51,7 +51,7 @@ In the request body, supply the values for fields listed below that should be up
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesTo|policyScope|Determines the groups this policy setting applies to. Possible values are: `none`, `all`, `selected` **Important:** `selected` cannot be used when specifying this property. Use [includedGroups](../api/mobiledevicemanagementpolicies-post-includedgroups.md) to add specific groups. Using `all` will remove any existing groups|
+|appliesTo|policyScope|Determines the groups this policy setting applies to. Possible values are: `none`, `all`, `selected` **Important:** `selected` cannot be used when specifying this property. Use [includedGroups](../api/mobiledevicemanagementpolicies-post-includedgroups.md) to add specific groups. Using `all` will remove any existing groups.|
 |complianceUrl|String|Compliance URL of the mobility management application|
 |discoveryUrl|String|Discovery URL of the mobility management application|
 |termsOfUseUrl|String|Terms of Use URL of the mobility management application|
@@ -71,15 +71,14 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/{id}
+PATCH https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020
 Content-Type: application/json
-Content-length: 237
 
 {
   "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
-  "complianceUrl": "String",
-  "discoveryUrl": "String",
-  "termsOfUseUrl": "String"
+  "complianceUrl": "https://portal.uem.contoso.com/?portalAction=Compliance",
+  "discoveryUrl": "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc",
+  "termsOfUseUrl": "https://portal.uem.contoso.com/TermsofUse.aspx"
 }
 ```
 

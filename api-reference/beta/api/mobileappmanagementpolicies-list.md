@@ -33,7 +33,7 @@ GET /policies/mobileAppManagementPolicies
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response.For example - 
+This method supports some of the OData query parameters to help customize the response.For example -
 
 - To select specific attributes add `$select=id,displayname`
 - To retrieve included groups for each policy, add `$expand=includedGroups`
@@ -87,16 +87,22 @@ Content-Type: application/json
 
 {
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
-      "id": "String (identifier)",
-      "appliesTo": "String",
-      "complianceUrl": "String",
-      "description": "String",
-      "discoveryUrl": "String",
-      "displayName": "String",
-      "termsOfUseUrl": "String"
-    }
+   "value": {
+    "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
+    "id": "ab90bacf-55a3-4a3e-839a-aa4b74e4f020",
+    "appliesTo": "selected",
+    "complianceUrl": "https://portal.manage.contoso.com/?portalAction=Compliance",
+    "description": "Contoso mobilty app is a cloud-based  Endpoint Management solution for managing Windows.",
+    "discoveryUrl": "https://enrollment.manage.contoso.com/enrollmentserver/discovery.svc",
+    "displayName": "Contoso mobilty app",
+    "termsOfUseUrl": "https://portal.manage.contoso.com/TermsofUse.aspx",
+    "includedGroups": [
+      {
+        "id": "800c583d-cc3d-4361-8e4a-3fbf668f27f4",
+        "displayName": "Test Group",
+      }
+    ]
+  }
   ]
 }
 ```

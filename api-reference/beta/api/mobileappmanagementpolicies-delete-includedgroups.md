@@ -60,7 +60,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/{id}/includedGroups/{id}/$ref
+DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups/1a9db3ab-0acf-4808-99ae-e8ed581cb2e0/$ref
 ```
 
 ### Response

@@ -36,10 +36,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /policies/mobileDeviceManagementPolicies/{id}/includedGroups
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -65,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/{id}/includedGroups
+GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups
 ```
 
 
@@ -86,7 +82,8 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.group"
+      "id": "dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef",
+      "displayName": "Test MDM Group"
     }
   ]
 }

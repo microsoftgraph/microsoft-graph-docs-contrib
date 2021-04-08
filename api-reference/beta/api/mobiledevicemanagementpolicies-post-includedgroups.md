@@ -59,19 +59,18 @@ If successful, this method returns a `204 No Content` response code and a [group
 ### Request
 
 ``` http
-POST https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/{id}/includedGroups/$ref
+POST https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef/includedGroups/$ref
 Content-Type: application/json
-Content-length: 61
 
 {
-   "@odata.id": "https://graph.microsoft.com/beta/groups/{id}"
+  "@odata.type": "#microsoft.graph.group"
+  "id": "dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef"
 }
 ```
 
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
-
 
 ``` http
 HTTP/1.1 204 No Content
