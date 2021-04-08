@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 User flows language customization is a feature that allows a given user flow to support customization of multiple languages.
 
-For [Azure Active Directory user flows](https://docs.microsoft.com/azure/active-directory/external-identities/user-flow-customize-language), you can only leverage the built-in languages provided by Microsoft. User flows for Azure Active Directory support customizing the language and strings shown to users as they go through the journeys you configure with your user flows.
+For [Azure Active Directory user flows](https://docs.microsoft.com/azure/active-directory/external-identities/user-flow-customize-language), you can only leverage the built-in languages provided by Microsoft. User flows for Azure Active Directory support defining the language and strings shown to users as they go through the journeys you configure with your user flows.
 
 ## Methods
 
