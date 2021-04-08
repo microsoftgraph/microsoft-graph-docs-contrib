@@ -133,10 +133,18 @@
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
-          "ChangedApiName": "pkcs12certificate",
+          "ChangedApiName": "pkcs12Certificate",
           "ChangeType": "Addition",
           "Description": "Added the [pkcs12Certificate](https://docs.microsoft.com/graph/api/resources/pkcs12certificate.md?view=graph-rest-1.0&preserve-view=true) complex type that extends apiAuthenticationConfigurationBase for HTTP client certificate authentication of API connector API calls. ",
           "Target": "pkcs12certificate"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pkcs12CertificateInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [pkcs12CertificateInformation](https://docs.microsoft.com/graph/api/resources/pkcs12CertificateInformation.md?view=graph-rest-1.0&preserve-view=true) resource type that represents the public information of a PKCS12 (.pfx) certificate.",
+          "Target": "uploadClientCertificate"
         },
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
