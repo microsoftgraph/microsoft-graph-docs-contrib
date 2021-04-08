@@ -72,11 +72,10 @@ Content-type: application/json
 {
    "value": [
     {
-      "id": "c1",
        "displayName": "Contoso trusted locations",
        "description": "Access is only allowed from trusted locations",
        "isAvailable": true
-    }
+    }]
 }
 ```
 
