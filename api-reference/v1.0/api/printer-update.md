@@ -82,6 +82,8 @@ The client MUST supply a set of Printer attributes with one or more values (incl
 supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object. For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.
 
 > **Note:** Do not pass operation attributes in the request body. The request body should only contain printer attributes.
+
+
 > **Note:** For printers to work with a particular platform, it should meet the requirements of that platform. For e.g. On Windows, it is expected that printer specifies all attributes that are considered mandatory as per [MOPRIA](https://mopria.org) specs. Please note MOPRIA specs are available to only the paid members of MOPRIA.
 
 ## Response
