@@ -116,6 +116,6 @@ If you want to contribute your own requests, you will need a Postman license. Yo
 
 ## See also
 
-For details about how to do this, watch the [Getting started with Microsoft Graph Postman workspace](https://youtu.be/3RTHY3jScmA) video.
+For details about how to do this, watch the [Getting started with Microsoft Graph Postman collection](https://youtu.be/3RTHY3jScmA) video.
 
 
