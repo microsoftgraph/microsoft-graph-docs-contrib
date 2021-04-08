@@ -12,7 +12,7 @@ The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls
 > [!TIP]
 > For more information about which entities are cached by each component, see the component's documentation.
 
-The data for each entity is stored in a separate IndexedDB. You can view the cache on the developer panel. On the **Application** tab, in the **Storage** pane, go to the **IndexedDB** tab.
+Databases created by mgt for caching are prefixed with `mgt-`. The data for each entity is stored in a separate object store. To inspect the cache, use the **Application** tab in the developer panel (F12 tools) - under the **Storage** section, click on the **IndexedDB** tab. 
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
