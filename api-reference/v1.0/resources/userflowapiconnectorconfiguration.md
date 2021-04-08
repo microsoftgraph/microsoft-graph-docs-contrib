@@ -1,6 +1,6 @@
 ---
 title: "userFlowApiConnectorConfiguration resource type"
-description: "Represents which API connectors are enabled for a user flow."
+description: "Represents the API connectors that are enabled for a user flow."
 author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
