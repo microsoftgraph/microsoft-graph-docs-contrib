@@ -1,6 +1,6 @@
 ---
 title: "teamsUserActivityUserCounts resource type"
-description: "Represent numbers of daily users by activity type."
+description: "Represents numbers of daily users by activity type."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent numbers of daily users by activity type.
+Represents numbers of daily users by activity type.
 
 ## Properties
 
