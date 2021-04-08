@@ -57,11 +57,7 @@ If successful, this method returns a `204 No Content` response code and a [group
 ## Examples
 
 ### Request
-<!-- {
-  "blockType": "request",
-  "name": "create_group_from_groups"
-}
--->
+
 ``` http
 POST https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups/$ref
 Content-Type: application/json
@@ -72,16 +68,10 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "#microsoft.graph.group"
-}
--->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
