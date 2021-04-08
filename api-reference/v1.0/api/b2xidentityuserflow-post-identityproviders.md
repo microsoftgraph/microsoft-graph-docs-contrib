@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Add identityProvider to a b2xIdentityUserFlow
+# Add identityProvider
 
 Namespace: microsoft.graph
 
