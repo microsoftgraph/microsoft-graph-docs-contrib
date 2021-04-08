@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Deletes an [identityApiConnector](../resources/identityapiconnector.md) object.
+Delete an [identityApiConnector](../resources/identityapiconnector.md) object.
 
 ## Permissions
 
