@@ -1,6 +1,6 @@
 ---
 title: "Delete identityApiConnector"
-description: "Deletes an identityApiConnector object."
+description: "Delete an identityApiConnector object."
 author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
