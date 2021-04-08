@@ -1,6 +1,6 @@
 ---
 title: "pkcs12Certificate resource type"
-description: "Represents configuration for uploading a pkcs12Certificate in an API call."
+description: "Represents the configuration for uploading a pkcs12Certificate."
 author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
