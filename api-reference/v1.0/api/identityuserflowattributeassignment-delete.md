@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
+DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments/City
 ```
 
 ### Response

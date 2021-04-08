@@ -38,9 +38,7 @@ GET /identity/b2xUserFlows
 
 ## Optional query parameters
 
-You can use `$expand` to expand specific user flow properties that are not expanded by default.
-
-For more information, see [OData query parameters](/graph/query-parameters).
+You can use `$expand` to expand specific user flow properties that are not expanded by default. For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

@@ -34,19 +34,23 @@ The work or school account needs to belong to one of the following roles:
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /identity/apiConnectors/
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+You can use `$expand` to expand specific properties that are not expanded by default. For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -88,38 +92,16 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/apiConnectors",
     "value": [
-        {
-            "id": "<guid>",
-            "displayName": "Test API",
-            "targetUrl": "https://someapi.com/api/endpoint",
-            "authenticationConfiguration": {
-              "@odata.type": "#microsoft.graph.basicAuthentication",
-              "username": "<USERNAME>",
-              "password": "******"
-            }
-        },
-        {
-            "id": "<guid>",
-            "displayName": "My API connector",
-            "targetUrl": "https://someotherapi.com/api/endpoint",
-            "authenticationConfiguration": {
-                "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
-                "certificateList": [
-                    {
-                        "thumbprint": "0EB255CC895477798BA418B378255204304897AD",
-                        "notAfter": 1666350522,
-                        "notBefore": 1508670522,
-                        "isActive": true
-                    },
-                    {
-                        "thumbprint": "1AB255CC895477798BA418B378255204304897BC",
-                        "notAfter": 1766350522,
-                        "notBefore": 1608670522,
-                        "isActive": false
-                    }
-                ]
-            }
-        }
-  ]
+      {
+          "id": "be1f769b-9b13-437e-b540-79a905c4932c",
+          "displayName": "Test API",
+          "targetUrl": "https://someapi.com/api/endpoint",
+          "authenticationConfiguration": {
+            "@odata.type": "#microsoft.graph.basicAuthentication",
+            "username": "<USERNAME>",
+            "password": "******"
+          }
+      }
+   ]
 }
 ```

@@ -62,7 +62,7 @@ The following is an example of the request.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/v1.0/identity/userFlowAttributes/{id}
+DELETE https://graph.microsoft.com/v1.0/identity/userFlowAttributes/extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby
 ```
 
 ### Response

@@ -105,7 +105,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Changing API connector to use client certificate authentication
 
-> **Note:** This will overwrite any previous authenticationConfiguration settings. To change from Basic authentication to certificate authentication, use this. To add additional certificates to list of certificates, use the [Upload client certificate](../api/identityapiconnector-uploadclientcertificate.md) method. When using this method, consequent "Get" or "List" operations of API connectors, `authenticationConfiguration` will be of type [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md).
+This will overwrite any previous authenticationConfiguration settings. To change from Basic authentication to certificate authentication, use this. To add additional certificates to list of certificates, use the [Upload client certificate](../api/identityapiconnector-uploadclientcertificate.md) method. When using this method, consequent "Get" or "List" operations of API connectors, `authenticationConfiguration` will be of type [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md).
 
 #### Request
 
@@ -118,7 +118,7 @@ The following is an example of the request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/identity/apiConnectors/{identityApiConnectorId}
+PATCH https://graph.microsoft.com/v1.0/identity/apiConnectors/be1f769b-9b13-437e-b540-79a905c4932c
 Content-Type: application/json
 
 {

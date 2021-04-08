@@ -66,7 +66,7 @@ The following is an example of the request.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/v1.0/identity/apiConnectors/{id}
+DELETE https://graph.microsoft.com/v1.0/identity/apiConnectors/370eeb68-dfd3-4a47-8160-8824c2358321
 ```
 
 ### Response

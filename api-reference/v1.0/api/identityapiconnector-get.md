@@ -40,14 +40,17 @@ GET /identity/apiConnectors/{identityApiConnectorId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+You can use `$expand` to expand specific properties that are not expanded by default. For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -67,7 +70,7 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/apiConnectors/{id}
+GET https://graph.microsoft.com/v1.0/identity/apiConnectors/370eeb68-dfd3-4a47-8160-8824c2358321
 ```
 
 ### Response
@@ -89,7 +92,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/apiConnectors/$entity",
-    "id":"guid",
+    "id":"370eeb68-dfd3-4a47-8160-8824c2358321",
     "displayName": "Test API",
     "targetUrl": "https://someapi.com/api",
     "authenticationConfiguration": {

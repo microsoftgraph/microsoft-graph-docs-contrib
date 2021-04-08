@@ -92,23 +92,23 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/b2xUserFlows('B2X_1_testuserflow')/apiConnectorConfiguration(postFederationSignup(),postAttributeCollection())",
     "postFederationSignup@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows('B2X_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/postFederationSignup/$entity",
     "postFederationSignup": {
-        "id": "<guid1>",
+        "id": "74d13179-2c02-4ae7-bff3-82842d4e2f1f",
         "displayName": "Test API Connector 1",
         "targetUrl": "https://someapi.com/api/endpoint",
         "authenticationConfiguration": {
             "@odata.type": "#microsoft.graph.basicAuthentication",
-            "username": "<USERNAME>",
+            "username": "apiAccount",
             "password": "******"
         }
     },
     "postAttributeCollection@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/b2xUserFlows('B2X_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/postAttributeCollection/$entity",
     "postAttributeCollection": {
-        "id": "<guid2>",
+        "id": "900bc92c-bcbf-4093-af8e-450a4a77635f",
         "displayName": "Test API Connector 2",
         "targetUrl": "https://someotherapi.com/api/endpoint",
         "authenticationConfiguration": {
             "@odata.type": "#microsoft.graph.basicAuthentication",
-            "username": "<USERNAME2>",
+            "username": "apiAccount",
             "password": "******"
         }
     }

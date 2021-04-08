@@ -107,12 +107,6 @@ Content-type: application/json
                 "notAfter": 1666350522,
                 "notBefore": 1508670522,
                 "isActive": true
-            },
-            {
-                "thumbprint": "1AB255CC895477798BA418B378255204304897BC",
-                "notAfter": 1766350522,
-                "notBefore": 1608670522,
-                "isActive": false
             }
         ]
     }

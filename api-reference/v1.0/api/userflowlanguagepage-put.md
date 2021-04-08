@@ -73,15 +73,15 @@ PUT https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/languag
 Content-Type: application/json
 
 {
-  "LocalizedStrings": [
-        {
-            "ElementType": "UxElement",
-            "ElementId": null,
-            "StringId": "alert_message",
-            "Override": true,
-            "Value": "Are you sure that you want to cancel entering your information?"
-        }
-    ]
+"LocalizedStrings": [
+      {
+          "ElementType": "UxElement",
+          "ElementId": null,
+          "StringId": "alert_message",
+          "Override": true,
+          "Value": "Are you sure that you want to cancel entering your information?"
+      }
+  ]
 }
 ```
 

@@ -85,8 +85,8 @@ Content-Type: application/json
     "targetUrl":"https://someapi.com/api",
     "authenticationConfiguration": {
       "@odata.type":"#microsoft.graph.basicAuthentication",
-      "username":"<USERNAME>",
-      "password":"<PASSWORD>"
+      "username": "MyUsername",
+      "password": "MyPassword"
     }
 }
 ```
@@ -115,7 +115,7 @@ Content-Type: application/json
     "targetUrl": "https://someapi.com/api",
     "authenticationConfiguration": {
         "@odata.type": "#microsoft.graph.basicAuthentication",
-        "username": "<USERNAME>",
+        "username": "MyUsername",
         "password": "******"
     }
 }
@@ -134,6 +134,7 @@ The following is an example of the request.
   "name": "create_identityapiconnector"
 }
 -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/identity/apiConnectors
 Content-Type: application/json
@@ -144,7 +145,7 @@ Content-Type: application/json
     "authenticationConfiguration": {
         "@odata.type":"#microsoft.graph.pkcs12Certificate",
         "pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
-        "password": "<password>"
+        "password": "CertificatePassword"
     }
 }
 ```

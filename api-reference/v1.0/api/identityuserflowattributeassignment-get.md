@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an [identityUser
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
+GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments/City
 ```
 
 #### Response

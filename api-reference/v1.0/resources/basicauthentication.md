@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents configuration for using HTTP Basic authentication, which entails a username and password, in an API call. The username and password is sent as the Authorization header as `Basic {value}` where `value` is base 64 encoded version of username:password.
 
 Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md).

@@ -1368,23 +1368,23 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### identityUserFlowAttributeDataType values
 
-| Member                | Value | Description                         |
-|:----------------------|:------|:------------------------------------|
-| string                | 1     | String data type                    |
-| boolean               | 2     | Boolean data type                   |
-| int64                 | 3     | Int data type                       |
-| stringCollection      | 4     | String collection data type         |
-| dateTime              | 5     |                                     |
-| unknownFutureValue    | 6     | A sentinel member.                  |
+| Member                |
+|:----------------------|
+| string                |
+| boolean               |
+| int64                 |
+| stringCollection      |
+| dateTime              |
+| unknownFutureValue    |
 
 ### identityUserFlowAttributeType values
 
-| Member                | Value | Description                                                        |
-|:----------------------|:------|:-------------------------------------------------------------------|
-| builtIn               | 1     | This user flow attribute type denotes it was created by the system |
-| custom                | 2     | This user flow attribute type denotes it was created by the user   |
-| required              | 3     |                                                                    |
-| unknownFutureValue    | 4     | A sentinel member.                                                 |
+| Member                |
+|:----------------------|
+| builtIn               |
+| custom                |
+| required              |
+| unknownFutureValue    |
 
 ### identityUserFlowAttributeInputType values
 
@@ -1396,6 +1396,7 @@ Possible values for user account types (group membership), per Windows definitio
 | dropdownSingleSelect  |
 | emailBox              |
 | checkboxMultiSelect   |
+
 ### teamworkActivityTopicSource values 
 
 | Member    |

@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/{id}/userAttributeAssignments
+GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments
 ```
 
 #### Response
@@ -123,7 +123,7 @@ Content-Type: application/json
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/{id}/userAttributeAssignments?$expand=userAttribute
+GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments?$expand=userAttribute
 ```
 
 #### Response

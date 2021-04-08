@@ -38,9 +38,7 @@ GET /identity/b2xUserFlows/{id}
 
 ## Optional query parameters
 
-You can use `$expand` to expand specific user flow properties that are not expanded by default.
-
-For more information, see [OData query parameters](/graph/query-parameters).
+You can use `$expand` to expand specific user flow properties that are not expanded by default. For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -69,7 +67,7 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/{id}
+GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_PartnerSignUp
 ```
 
 ### Response

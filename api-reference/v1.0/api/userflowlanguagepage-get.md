@@ -96,13 +96,6 @@ Content-Type: application/json
         "StringId": "ServiceThrottled",
         "Override": false,
         "Value": "There are too many requests at this moment. Please wait for some time and try again."
-      },
-      {
-        "ElementType": "ErrorMessage",
-        "ElementId": null,
-        "StringId": "UserMessageIfChallengeExpired",
-        "Override": false,
-        "Value": "That code is expired. Please request a new code."
       }
    ]
 }
