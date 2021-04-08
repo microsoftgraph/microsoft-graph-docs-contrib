@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List all identityProviders in a b2xIdentityUserFlow
+# List identityProviders
 
 Namespace: microsoft.graph
 
