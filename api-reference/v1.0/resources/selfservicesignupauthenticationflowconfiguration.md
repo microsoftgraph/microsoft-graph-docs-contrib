@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the configurations related to self-service sign up.
+Represents the configurations related to self-service sign-up.
 
 ## Properties
 
