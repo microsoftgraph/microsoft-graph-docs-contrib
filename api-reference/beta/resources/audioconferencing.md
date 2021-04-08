@@ -1,7 +1,7 @@
 ---
 title: "audioConferencing resource type"
 description: "Represents phone access information for an online meeting."
-author: "ananmishr"
+author: "jsandoval-msft"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -17,12 +17,19 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 
 ## Properties
 
-| Property            | Type    | Description                                                                    |
-|:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | A URL to the externally-accessible web page that contains dial-in information. |
-| conferenceId        | String  | The conference id of the online meeting.      |
-| tollFreeNumber      | String  | The toll-free number that connects to the Audio Conference Provider.              |
-| tollNumber          | String  | The toll number that connects to the Audio Conference Provider.                   |
+| Property        | Type              | Description                                                                    |
+| :-------------- | :---------------- | :----------------------------------------------------------------------------- |
+| dialinUrl       | String            | A URL to the externally-accessible web page that contains dial-in information. |
+| conferenceId    | String            | The conference id of the online meeting.                                       |
+| tollFreeNumber  | String            | The toll-free number that connects to the Audio Conference Provider.           |
+| tollFreeNumbers | String collection | The toll-free numbers that are configurated in TeamsAudioConferencingPolicy.   |
+| tollNumber      | String            | The toll number that connects to the Audio Conference Provider.                |
+| tollNumbers     | String collection | The toll numbers that are configurated in TeamsAudioConferencingPolicy.        |
+
+> [!NOTE]
+> **tollFreeNumber** and **tollNumber** will be deprecated. Please use **tollFreeNumbers** and **tollNumbers** instead.
+>
+> For backword compatibility, the original **tollFreeNumber** will always be added to the new **tollFreeNumbers** collection and the original **tollNumber** will be added to the new **tollNumbers** collection.
 
 ## JSON representation
 
@@ -40,7 +47,9 @@ The following is a JSON representation of the resource.
   "dialinUrl": "String",
   "conferenceId": "String",
   "tollFreeNumber": "String",
-  "tollNumber": "String"
+  "tollFreeNumbers": ["String"],
+  "tollNumber": "String",
+  "tollNumbers": ["String"]
 }
 ```
 

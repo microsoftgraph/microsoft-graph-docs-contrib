@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+        "ChangeList": [
+          {
+            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+            "ApiChange": "Resource",
+            "ChangedApiName": "audioConferencing",
+            "ChangeType": "Addition",
+            "Description": "Added the **tollNumbers** and **tollFreeNumbers** properties to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+            "Target": "audioConferencing"
+          }
+        ],
+        "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-04-07T00:00:00",
+        "WorkloadArea": "Cloud communications",
+        "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "3a98db4e-7246-4b4c-b97c-feff3f93ce42",
