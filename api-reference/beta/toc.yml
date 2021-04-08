@@ -9474,6 +9474,29 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Cloud PC role management
+          href: resources/cloudpc-rbac-rolemanagement.md
+          items:
+          - name: Role definition
+            href: resources/cloudpc-rbac-unifiedroledefinition.md
+            items:
+            - name: List
+              href: api/cloudpcrbacapplication-list-roledefinitions.md
+            - name: Get
+              href: api/cloudpc-unifiedroledefinition-get.md
+          - name: Role assignment
+            href: resources/cloudpc-rbac-unifiedroleassignment.md
+            items:
+            - name: List
+              href: api/cloudpcrbacapplication-list-roleassignments.md
+            - name: Get
+              href: api/cloudpc-unifiedroleassignmentmultiple-get.md
+            - name: Create
+              href: api/cloudpc-unifiedroleassignmentmultiple-post.md
+            - name: Update
+              href: api/cloudpc-unifiedroleassignmentmultiple-update.md
+            - name: Delete
+              href: api/cloudpc-unifiedroleassignmentmultiple-delete.md
     - name: Education
       items:
       - name: Overview
