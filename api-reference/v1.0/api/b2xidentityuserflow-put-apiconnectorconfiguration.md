@@ -1,5 +1,5 @@
 ---
-title: "Configure an API connector in a user flow"
+title: "Update apiConnectorConfiguration"
 description: "Enable or disable an API connector to a specific step in a user flow by updating the apiConnectorConfiguration property."
 author: "nickgmicrosoft"
 localization_priority: Normal
