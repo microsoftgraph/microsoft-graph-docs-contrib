@@ -39,7 +39,7 @@ Inherits from base class [identityUserFlow](../resources/identityuserflow.md).
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2X_1_` after creation.|
-|userFlowType|userFlowType|The type of user flow. For self-service sign up user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.|
+|userFlowType|userFlowType|The type of user flow. For self-service sign-up user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.|
 |userFlowTypeVersion|Single|The version of the user flow. For self-service sign-up user flows, the version is always `1`.|
 |apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Configuration for enabling an API connector for use as part of the self-service sign-up user flow. You can only obtain the value of this object using [Get userFlowApiConnectorConfiguration](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md).|
 
