@@ -79,6 +79,9 @@ supplied replaces the value(s) of the corresponding Printer attribute on the tar
 
 > **Note:** Do not pass operation attributes in the request body. The request body should only contain printer attributes.
 
+
+> **Note:** For printers to work with a particular platform, it should meet the requirements of that platform. For e.g. On Windows, it is expected that printer specifies all attributes that are considered mandatory as per [MOPRIA](https://mopria.org) specs. Please note MOPRIA specs are available to only the paid members of MOPRIA.
+
 ## Response
 
 ### Delegated permissions and JSON payload
