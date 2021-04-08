@@ -1,6 +1,6 @@
 ---
 title: "teamsDeviceUsageUserCounts resource type"
-description: "Represent number of daily users by device type."
+description: "Represents number of daily users by device type."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent number of daily users by device type.
+Represents number of daily users by device type.
 
 ## Properties
 
