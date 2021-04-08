@@ -1,6 +1,6 @@
 ---
 title: "identityBuiltInUserFlowAttribute resource type"
-description: "Represents a built-in user flow attribute in Azure Active Directory tenants that can be used in your self-service sign up user flows. These attributes cannot be modified and are read-only."
+description: "Represents a built-in user flow attribute in Azure Active Directory tenants that can be used in a self-service sign-up user flow."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
