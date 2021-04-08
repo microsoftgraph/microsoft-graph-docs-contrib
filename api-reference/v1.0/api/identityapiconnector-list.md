@@ -1,6 +1,6 @@
 ---
 title: "List identityApiConnectors"
-description: "Get a list of the identityApiConnector objects and their properties"
+description: "Get a list of the identityApiConnector objects and their properties."
 author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
