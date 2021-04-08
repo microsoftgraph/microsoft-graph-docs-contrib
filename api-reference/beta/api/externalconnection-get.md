@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Get connection
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -108,7 +108,7 @@ Content-type: application/json
   "name": "Contoso HR",
   "description": "Connection to index Contoso HR system",
   "configuration": {
-    "authorizedApps": [
+    "authorizedAppsIds": [
       "d310d35d-72ec-47dd-92f2-fb9c40936555"
     ]
   }
@@ -125,4 +125,5 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-
+> [!NOTE]
+> authorizedApps will be deprecated in August 2021.

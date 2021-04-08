@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Create externalItem
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,7 +57,7 @@ In the request body, supply a JSON representation of an [externalItem](../resour
 
 ### Creating an externalItem
 
-When creating an `externalItem`, the following fields are required: `@odata.type`, `acl`, and `properties`. The `properties` object must contain at least one property.
+When creating an `externalItem`, the following fields are required: `acl`, and `properties`. The `properties` object must contain at least one property.
 
 All `DateTime` type properties must be in ISO 8601 format.
 

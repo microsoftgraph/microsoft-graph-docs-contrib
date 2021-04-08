@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Create externalGroup
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
