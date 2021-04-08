@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-User flow language pages are used determine the strings users will be shown during the user journey you have configured using user flows. These language pages include both the default language translations provided by Microsoft, or custom pages that can be created to customize the language translations.
+Determines the user flow language pages that are shown to users during a user flow. These language pages include both the default language translations provided by Microsoft, or custom pages that can be created to customize the language translations.
 
 ## Methods
 
