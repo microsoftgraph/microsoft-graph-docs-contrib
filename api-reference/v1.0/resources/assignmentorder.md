@@ -17,7 +17,7 @@ Used to define the order of the attributes being collected within a user flow. T
 
 |Property|Type|Description|
 |:---|:---|:---|
-|order|String collection|A list of identityUserFlowAttribute IDs provided to determine the order in which attributes should be collected within a user flow.|
+|order|String collection|A list of identityUserFlowAttribute object identifiers that determine the order in which attributes should be collected within a user flow.|
 
 ## Relationships
 
