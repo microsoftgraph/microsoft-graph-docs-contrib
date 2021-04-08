@@ -64,7 +64,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/beta/policies/mobileAppManagementPoliciesab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups
 ```
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
