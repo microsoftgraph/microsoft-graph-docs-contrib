@@ -1,6 +1,6 @@
 ---
 title: "identityUserFlowAttributeAssignment resource type"
-description: "identityUserFlowAttributeAssignments are used to collect specific identityUserFlowAttributes within a user flow."
+description: "Represents how attributes are collected in an identity user flow."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
