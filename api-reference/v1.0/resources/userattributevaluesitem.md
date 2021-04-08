@@ -18,7 +18,7 @@ Represents user flow attribute values within a user flow when there are multiple
 |Property|Type|Description|
 |:---|:---|:---|
 |isDefault|Boolean|Determines whether the value is set as the default.|
-|name|String|The display name of the property displayed to the end user in the user flow.|
+|name|String|The display name of the property displayed to the user in the user flow.|
 |value|String|The value that is set when this item is selected.|
 
 ## Relationships
