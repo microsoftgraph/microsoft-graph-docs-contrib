@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: "resourcePageType"
 ---
 
-# roleManagement resource type
+# cloudpc roleManagement resource type
 
 Namespace: microsoft.graph
 

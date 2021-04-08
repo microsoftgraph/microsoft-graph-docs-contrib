@@ -9485,7 +9485,7 @@ items:
             - name: Get
               href: api/cloudpc-unifiedroledefinition-get.md
           - name: Role assignment
-            href: resources/cloudpc-rbac-unifiedroleassignment.md
+            href: resources/cloudpc-rbac-unifiedroleassignmentmultiple.md
             items:
             - name: List
               href: api/cloudpcrbacapplication-list-roleassignments.md

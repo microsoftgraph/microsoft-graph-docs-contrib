@@ -1,5 +1,5 @@
 ---
-title: "Update unifiedRoleAssignmentMultiple"
+title: "Update cloudpc unifiedRoleAssignmentMultiple"
 description: "Update a unifiedRoleAssignmentMultiple object."
 localization_priority: Normal
 author: "jiajyang"
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: "apiPageType"
 ---
 
-# Update unifiedRoleAssignmentMultiple
+# Update cloudpc unifiedRoleAssignmentMultiple
 
 Namespace: microsoft.graph
 
@@ -94,8 +94,6 @@ HTTP/1.1 200 OK
     ],
     "appScopeIds": []
 }
-```
-
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

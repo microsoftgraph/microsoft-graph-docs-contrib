@@ -1,13 +1,13 @@
 ---
-title: "List unifiedRoleAssignmentMultiple"
-description: "Retrieve the properties and relationships of unifiedRoleAssignmentMultiple object."
+title: "List cloudpc unifiedRoleAssignmentMultiple"
+description: "Retrieve the properties and relationships of cloudpc unifiedRoleAssignmentMultiple object."
 localization_priority: Normal
 author: "jiajyang"
 ms.prod: "cloud-pc"
 doc_type: "apiPageType"
 ---
 
-# List unifiedRoleAssignmentMultiple
+# List cloudpc unifiedRoleAssignmentMultiple
 
 Namespace: microsoft.graph
 

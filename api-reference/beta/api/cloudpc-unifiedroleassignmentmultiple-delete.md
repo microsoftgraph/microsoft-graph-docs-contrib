@@ -1,13 +1,13 @@
 ---
-title: "Delete unifiedRoleAssignmentMultiple"
-description: "Delete a unifiedRoleAssignmentMultiple object."
+title: "Delete cloudpc unifiedRoleAssignmentMultiple"
+description: "Delete a cloudpc unifiedRoleAssignmentMultiple object."
 localization_priority: Normal
 author: "jiajyang"
 ms.prod: "cloud-pc"
 doc_type: "apiPageType"
 ---
 
-# Delete unifiedRoleAssignmentMultiple
+# Delete cloudpc unifiedRoleAssignmentMultiple
 
 Namespace: microsoft.graph
 

@@ -1,13 +1,13 @@
 ---
 title: "Create cloudpc unifiedRoleAssignmentMultiple"
-description: "Create a new unifiedRoleAssignmentMultiple object."
+description: "Create a new cloudpc unifiedRoleAssignmentMultiple object."
 localization_priority: Normal
 author: "jiajyang"
 ms.prod: "cloud-pc"
 doc_type: "apiPageType"
 ---
 
-# Create unifiedRoleAssignmentMultiple
+# Create cloudpc unifiedRoleAssignmentMultiple
 
 Namespace: microsoft.graph
 

@@ -2,12 +2,12 @@
 title: "cloudpc unifiedRoleDefinition resource type"
 description: "A unified role definition is a collection of cloudpc resource permissions"
 localization_priority: Normal
-author: "jiajayng"
+author: "jiajyang"
 ms.prod: "cloud-pc"
 doc_type: "resourcePageType"
 ---
 
-# unifiedRoleDefinition resource type
+# cloudpc unifiedRoleDefinition resource type
 
 Namespace: microsoft.graph
 

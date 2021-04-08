@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: "apiPageType"
 ---
 
-# Get unifiedRoleDefinition
+# Get cloudpc unifiedRoleDefinition
 
 Namespace: microsoft.graph
 

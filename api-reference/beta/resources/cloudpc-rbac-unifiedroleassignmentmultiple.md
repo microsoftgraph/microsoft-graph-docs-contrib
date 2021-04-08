@@ -1,13 +1,13 @@
 ---
 title: "cloudpc unifiedRoleAssignmentMultiple resource type"
-description: "A role assignment is the link between a role definition and a principal at a particular scope for the purpose of granting access."
+description: "A cloudpc role assignment is the link between a role definition and a principal at a particular scope for the purpose of granting access."
 localization_priority: Normal
 author: "jiajyang"
 ms.prod: "cloud-pc"
 doc_type: "resourcePageType"
 ---
 
-# unifiedRoleAssignmentMultiple resource type
+# cloudpc unifiedRoleAssignmentMultiple resource type
 
 Namespace: microsoft.graph
 
