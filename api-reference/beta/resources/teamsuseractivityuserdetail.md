@@ -1,6 +1,6 @@
 ---
 title: "teamsUserActivityUserDetail resource type"
-description: "Represent details about Microsoft Teams user activity by user."
+description: "Represents details about Microsoft Teams user activity by user."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent details about Microsoft Teams user activity by user.
+Represents details about Microsoft Teams user activity by user.
 
 ## Properties
 
