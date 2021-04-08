@@ -1,6 +1,6 @@
 ---
 title: "teamsUserActivityDistributionUserCounts resource type"
-description: "Represent numbers of users by activity type over the selected time period."
+description: "Represents numbers of users by activity type over the selected time period."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent numbers of users by activity type over the selected time period.
+Represents numbers of users by activity type over the selected time period.
 
 ## Properties
 
