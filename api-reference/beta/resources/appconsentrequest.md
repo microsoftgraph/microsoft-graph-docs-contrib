@@ -20,7 +20,7 @@ An aggregation of [userConsentRequest](../resources/userconsentrequest.md) for a
 |:---|:---|:---|
 |[List appConsentRequest](../api/appconsentrequest-list.md)|[appConsentRequest](../resources/appconsentrequest.md) collection|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.|
 |[Get appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Read the properties and relationships of an [appConsentRequest](../resources/appconsentrequest.md) object.|
-|[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties, for which the current user is the reviewer|
+|[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties, for which the current user is the reviewer.|
 
 ## Properties
 |Property|Type|Description|

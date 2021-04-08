@@ -17,9 +17,9 @@ A [userConsentRequest](../resources/userconsentrequest.md) is created by an user
 
 Method|Return type|Description|
 |:---|:---|:---|
-|[List userConsentRequests](../api/userconsentrequest-list.md)|[userConsentRequest](../resources/userconsentrequest.md) collection|Get a list of the [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.|
+|[List userConsentRequest](../api/userconsentrequest-list.md)|[userConsentRequest](../resources/userconsentrequest.md) collection|Get a list of the [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.|
 |[Get userConsentRequest](../api/userconsentrequest-get.md)|[userConsentRequest](../resources/userconsentrequest.md)|Read the properties and relationships of a [userConsentRequest](../resources/userconsentrequest.md) object.|
-|[List userConsentRequests: filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[userConsentRequest](../resources/userconsentrequest.md) collection|Get a list of the [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.|
+|[filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[userConsentRequest](../resources/userconsentrequest.md) collection|Get a list of the [userConsentRequest](../resources/userconsentrequest.md) objects and their properties, for which the current user is the reviewer.|
 
 ## Properties
 
@@ -28,7 +28,7 @@ Method|Return type|Description|
 |approvalId|String|The id of the approval. This value is equal to the value of the `id`.|
 |completedDateTime|DateTimeOffset|The date and time when the **status** of the request was marked as `Completed`. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the request.|
-|createdDateTime|DateTimeOffset|The date and time when the request was created. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br>Supports `$filter` (`eq` only) and `$orderby`.|
+|createdDateTime|DateTimeOffset|The date and time when the request was created. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$filter` (`eq` only) and `$orderby`.|
 |customData|String|Free text field to define any custom data for the user consent request. Not used.|
 |id|String|Identifier of the request. |
 |reason|String|The user's justification for requiring access to the app. Supports `$filter` (`eq` only) and `$orderby`.  |

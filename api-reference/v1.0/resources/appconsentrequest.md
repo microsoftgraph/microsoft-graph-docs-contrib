@@ -1,6 +1,6 @@
 ---
 title: "appConsentRequest resource type"
-description: "A request that represents an aggregation of userConsentRequests for a specific application."
+description: "A request that represents an aggregation of userConsentRequest for a specific application."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "governance"
@@ -11,15 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An aggregation of [userConsentRequests](../resources/userconsentrequest.md) for a specific application.
+An aggregation of [userConsentRequest](../resources/userconsentrequest.md) for a specific application.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List appConsentRequests](../api/appconsentrequest-list.md)|[appConsentRequest](../resources/appconsentrequest.md) collection|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.|
+|[List appConsentRequest](../api/appconsentrequest-list.md)|[appConsentRequest](../resources/appconsentrequest.md) collection|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.|
 |[Get appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Read the properties and relationships of an [appConsentRequest](../resources/appconsentrequest.md) object.|
-|[appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|A list of the [appConsentRequests](../resources/appconsentrequest.md) for which the current user is the reviewer|
+|[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Get a list of the [appConsentRequest](../resources/appconsentrequest.md) objects and their properties, for which the current user is the reviewer.|
 
 ## Properties
 
@@ -28,13 +28,13 @@ An aggregation of [userConsentRequests](../resources/userconsentrequest.md) for 
 |appDisplayName|String|The display name of the app for which consent is requested. Required. Supports `$filter` (`eq` only) and `$orderby`. |
 |appId|String|The identifier of the application. Required. Supports `$filter` (`eq` only) and `$orderby`. |
 |id|String|The identifier of the app consent request. Required.|
-|pendingScopes|[appConsentRequestScope](../resources/appconsentrequestscope.md) collection|A list of pending scopes waiting for approval. This is empty if the consentType is `Static`. Required.|
+|pendingScopes|[appConsentRequestScope](../resources/appconsentrequestscope.md) collection|A list of pending scopes waiting for approval. Required.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userConsentRequests|[userConsentRequest](../resources/userconsentrequest.md) collection|A list of pending user consent requests.|
+|userConsentRequest|[userConsentRequest](../resources/userconsentrequest.md) collection|A list of pending user consent requests.|
 
 ## JSON representation
 
