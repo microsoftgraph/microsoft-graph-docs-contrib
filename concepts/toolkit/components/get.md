@@ -66,6 +66,10 @@ The control uses the global authentication provider described in the [authentica
 
 ## Cache
 
-IndexedDB|Cached data|Remarks
----------|-----------|-------
-`response`|Complete response retrieved from Microsoft Graph for the query specified in the `resource` property of `mgt-get`|
+To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidationPeriod` properties. By default, the `mgt-get` component does not cache any responses.
+
+|Object store|Cached data|Remarks|
+|-----------|-----------|-------|
+|`response`|Complete response retrieved from Microsoft Graph for the query specified in the `resource` property of `mgt-get`|
+
+See [Caching](../customize-components/cache.md) for more details.
