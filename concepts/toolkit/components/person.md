@@ -216,11 +216,13 @@ The control uses the global authentication provider described in the [authentica
 
 ## Cache
 
-IndexedDB|Cached data|Remarks
----------|-----------|-------
-`photos`|Person's photo|Used, when `avatarType` is set to `photo` and `fetchImage` is set to `true`
-`presence`|Person's presence|Used, when `showPresence` is set to `true`
-`users`|Person's user information|
+|Object store|Cached data|Remarks|
+|---------|-----------|-------|
+|`photos`|Person's photo|Used, when `avatarType` is set to `photo` and `fetchImage` is set to `true`|
+|`presence`|Person's presence|Used, when `showPresence` is set to `true`|
+|`users`|Person's user information|
+
+See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
 
 ## Extend for more control
 
