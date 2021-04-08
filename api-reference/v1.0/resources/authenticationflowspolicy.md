@@ -24,7 +24,7 @@ Represents the [policy configuration of self-service sign-up experience](../reso
 
 |Property|Type|Description|
 |:-------|:---|:----------|
-|id|String| Inherited property. The ID of the authentication flows policy. Optional. Read-only.
+|id|String| Inherited property. The identifier of the authentication flows policy. Optional. Read-only.
 |displayName|String| Inherited property. The human-readable name of the policy. This property is not a key. Optional. Read-only.|
 |description|String|Inherited property. A description of the policy. This property is not a key. Optional. Read-only.|
 |selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md) |Contains [selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md) settings that convey whether self-service sign-up is enabled or disabled. This property is not a key. Optional. Read-only. |
