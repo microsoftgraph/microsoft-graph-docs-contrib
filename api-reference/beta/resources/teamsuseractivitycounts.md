@@ -1,6 +1,6 @@
 ---
 title: "teamsUserActivityCounts resource type"
-description: "Represent numers of activities by type."
+description: "Represents numers of activities by type."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent numers of activities by type.
+Represents numers of activities by type.
 
 ## Properties
 
