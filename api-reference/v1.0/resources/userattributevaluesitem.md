@@ -17,7 +17,7 @@ Used to populate the values for a user flow attribute within a user flow when th
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isDefault|Boolean|Used to set the value as the default.|
+|isDefault|Boolean|Determines whether the value is set as the default.|
 |name|String|The display name of the property displayed to the end user in the user flow.|
 |value|String|The value that is set when this item is selected.|
 
