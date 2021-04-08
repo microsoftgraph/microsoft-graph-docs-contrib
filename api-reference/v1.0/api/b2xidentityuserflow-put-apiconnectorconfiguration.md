@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Configure userFlowApiConnectorConfiguration
+# Update apiConnectorConfiguration
 
 Namespace: microsoft.graph
 
