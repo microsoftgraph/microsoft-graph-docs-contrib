@@ -7,11 +7,11 @@ author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List identityProviders
-
+# List identityProviders (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieve a list of [identityProviders](../resources/identityprovider.md) objects.
 
@@ -26,8 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
-* Global administrator
-* External Identity Provider administrator
+
+* Global Administrator
+* External Identity Provider Administrator
 
 ## HTTP request
 
@@ -138,5 +139,3 @@ Content-type: application/json
     ]
 }
 ```
-
-
