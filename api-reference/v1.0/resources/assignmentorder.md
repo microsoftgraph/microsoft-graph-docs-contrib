@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used to define the order of the attributes being collected within a user flow. THis determines how the attribute collection page is displayed when a user signs up via a user flow.
+Used to define the order of the attributes being collected within a user flow. The order determines how the attribute collection page is displayed when a user signs up using a user flow.
 
 ## Properties
 
