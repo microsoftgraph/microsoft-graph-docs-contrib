@@ -1,6 +1,6 @@
 ---
 title: "clientCertificateAuthentication resource type"
-description: "Represents configuration for fetching a clientCertificateAuthentication in an API call."
+description: "Represents the configuration for retrieving a clientCertificateAuthentication."
 author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
