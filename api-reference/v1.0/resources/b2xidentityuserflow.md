@@ -25,7 +25,7 @@ Inherits from base class [identityUserFlow](../resources/identityuserflow.md).
 |[Get user flow](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Retrieve properties of a self-service sign up user flow.|
 |[Create user flow](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Create a new self-service sign up user flow.|
 |[Delete user flow](../api/b2xidentityuserflow-delete.md)|None|Delete a self-service sign up user flow.|
-|[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a self-service sign up user flow.|
+|[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a self-service sign-up user flow.|
 |[Add identity provider](../api/b2xidentityuserflow-post-identityproviders.md)|None|Add an identity provider to a self-service sign-up user flow.|
 |[Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a self-service sign-up user flow.|
 |[List user attribute assignments](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a self-service sign-up user flow.|
