@@ -4,6 +4,32 @@
     {
       "ChangeList": [
         {
+          "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissionGrants",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrants** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
+          "ApiChange": "Resources",
+          "ChangedApiName": "resourceSpecificPermissionGrant",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceSpecificPermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) resource.",
+          "Target": "resourceSpecificPermissionGrant"
+        }
+      ],
+      "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-05T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9444ad50-86fd-11eb-9fc2-269673f51d94",
           "ApiChange": "Property",
           "ChangedApiName": "chatId",
