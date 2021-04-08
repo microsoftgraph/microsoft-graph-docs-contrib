@@ -55,22 +55,23 @@ To use this collection in your own developer tenant, create an Azure AD applicat
 The Azure AD application now has permissions to make requests on behalf of a user to call Mail.Read and as an application for User.Read.All.
 
 ## Step 4 - Configuring authentication in Postman
-Go to Postman and make sure you have selected the workspace created in step 1. Set up some environment variables used to retrieve an access token.
+In this step, you will set up some environment variables used to retrieve an access token.
 
-1. Click the eye icon in the top right next to the **No environment** drop down.
-2. Click **Add** in the top right of that pop up.
-3. Change **New Environment** to **M365 Environment**.
-4. Create a new variable called `ClientID` and set the **Current value** to the Application (client) ID value from step 3.15.
-5. Create a new variable called `ClientSecret` and  set the **Current value** to the Client Secret value from step 3.17.
-6. Create a new variable called `TenantID` and set the **Current value** to the Directory (tenant) ID value from step 3.15.
-7. Select **Save**/**Update**. 
-8. Close the **Manage Environments** dialog box. 
-9. Double check that **M365 Environment** is selected in the drop down and not **No environment**.
+1. Go to [Fork environment](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/environment/455214-efbc69b2-69bd-402e-9e72-850b3a49bb21/fork).
+2. Fill in a label for your own fork. This can be any text.
+3. Under Workspace, ensure that **My Workspace** is selected in the drop-down list. 
+4. Click **Fork Environment**.
+5. In `ClientID` set the **Current value** to the Application (client) ID value from step 3.15.
+6. In `ClientSecret` set the **Current value** to the Client Secret value from step 3.17.
+6. In `TenantID` set the **Current value** to the Directory (tenant) ID value from step 3.15.
+7. Click **Save** in top right. 
+8. Close the **Manage Environments** tab. 
+9. Double check that **M365 Environment** is selected in the drop down and not **No environment** in the top right next to the eye icon.
 
 ## Step 5 - Get a delegated access token
 Because this is the first time you are running a request as a delegated authentication flow, you need to get an access token.
 
-1. Hover over the **On behalf of a User** folder, click the ellipsis, and select **Edit**
+1. Hover over the **Delegated** folder, click the ellipsis, and select **Edit**
 2. Click the **Authorization** tab.
 3. Scroll down on the right and click **Get New Access Token**.
 4. Sign in with your developer tenant adminstrator account.
@@ -80,9 +81,9 @@ Because this is the first time you are running a request as a delegated authenti
 You now have a valid access token to use for delegated requests.
 
 ## Step 6 - Run your first delegated request
-Inside the **On Behalf of a User** folder are requests for various Microsoft Graph workloads you can call.
+Inside the **Delegated** folder are requests for various Microsoft Graph workloads you can call.
 
-1. Expand the **On behalf of a User** folder and then expand the **Mail** folder.
+1. Expand the **Delegated** folder and then expand the **Mail** folder.
 2. Double-click **Get my messages** to open the request.
 3. On the top right, click **Send**.
 
