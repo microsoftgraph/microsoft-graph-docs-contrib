@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A type derived from apiAuthenticationConfigurationBase which is used to represent Pkcs12 based client certificate authentication. This is used to retrieve the public properties of uploaded certificates.
+A type derived from apiAuthenticationConfigurationBase that is used to represent a Pkcs12-based client certificate authentication. This is used to retrieve the public properties of uploaded certificates.
 
 Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md).
 
