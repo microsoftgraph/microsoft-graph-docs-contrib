@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a built-in user flow attribute in Azure Active Directory tenants that can be used in your self-service sign up user flows. These attributes cannot be modified and are read-only.
+Represents a built-in user flow attribute in Azure Active Directory tenants that can be used in your self-service sign-up user flows. These attributes cannot be modified and are read-only.
 
 Inherits from [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 
