@@ -1,6 +1,6 @@
 ---
 title: "Get userFlowLanguageConfiguration"
-description: "Read the properties and relationships of a [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) object."
+description: "Read the properties and relationships of a userFlowLanguageConfiguration object."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
