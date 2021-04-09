@@ -100,7 +100,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get conditionalAccessPolicy",
+  "description": "Get authenticationContextClassReference",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
