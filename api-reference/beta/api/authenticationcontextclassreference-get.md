@@ -33,10 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identity/conditionalAccess/authenticationContextClassReferences/{id}
 ```
 
-## Optional query parameters
-
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 | Name      |Description|
@@ -57,7 +53,7 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_authenticationcontextclassreference"
@@ -67,7 +63,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationContextClassReferences/{id}
 ```
 
----
 
 
 ### Response
@@ -79,7 +74,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+  "@odata.type": "microsoft.graph.authenticationContextReference"
 } -->
 
 ```http
