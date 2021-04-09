@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Create conditionalAccessPolicy
+# Create authenticationContextClassReference
 
 Namespace: microsoft.graph
 
@@ -111,4 +111,3 @@ The following is an example of the response.
   "section": "documentation",
   "tocPath": ""
 }-->
-
