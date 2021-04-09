@@ -97,7 +97,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update conditionalaccesspolicy",
+  "description": "Update authenticationContextClassReference",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
