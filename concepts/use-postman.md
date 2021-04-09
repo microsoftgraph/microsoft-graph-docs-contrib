@@ -58,15 +58,15 @@ The Azure AD application now has permissions to make requests on behalf of a use
 In this step, you set up the environment variables used to retrieve an access token.
 
 1. Go to [Fork environment](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/environment/455214-efbc69b2-69bd-402e-9e72-850b3a49bb21/fork).
-2. Fill in a label for your own fork. This can be any text.
+2. Add a label for fork. This can be any text.
 3. Under Workspace, ensure that **My Workspace** is selected in the drop-down list. 
 4. Click **Fork Environment**.
-5. In `ClientID` set the **Current value** to the Application (client) ID value from step 3.15.
-6. In `ClientSecret` set the **Current value** to the Client Secret value from step 3.17.
-6. In `TenantID` set the **Current value** to the Directory (tenant) ID value from step 3.15.
-7. Click **Save** in the top right. 
+5. In `ClientID`, set the **Current value** to the application (client) ID value from step 3.15.
+6. In `ClientSecret`, set the **Current value** to the client secret value from step 3.17.
+6. In `TenantID`, set the **Current value** to the directory (tenant) ID value from step 3.15.
+7. On the top right, click **Save**. 
 8. Close the **Manage Environments** tab. 
-9. Double check that **M365 Environment** is selected in the drop down and not **No environment** in the top right, next to the eye icon.
+9. On the top right, next to the eye icon, double check that **M365 Environment** is selected in the drop down and not **No environment**.
 
 ## Step 5 - Get a delegated access token
 Because this is the first time you are running a request as a delegated authentication flow, you need to get an access token.
