@@ -70,7 +70,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "conditionalAccessPolicy resource",
+  "description": "authenticationContextClassReference resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
