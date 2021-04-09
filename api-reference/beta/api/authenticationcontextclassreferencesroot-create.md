@@ -106,10 +106,9 @@ The following is an example of the response.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create conditionalAccessPolicy",
+  "description": "Create authenticationContextClassReference",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
