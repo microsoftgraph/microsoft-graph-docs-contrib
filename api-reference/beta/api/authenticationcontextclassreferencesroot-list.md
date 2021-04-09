@@ -1,5 +1,5 @@
 ---
-title: "List policies"
+title: "List authenticationContextClassReferences"
 description: "Retrieve a list of authenticationContextClassReference objects."
 localization_priority: Normal
 author: "calebb"
