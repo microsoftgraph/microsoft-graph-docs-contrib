@@ -104,7 +104,7 @@ Apply the new model of [access reviews](/graph/api/resources/accessreviewsv2-roo
 - Differentiate column types by the following properties in the **columnDefinition** entity: boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text. These properties are mutually exclusive.
 
 ### Sites and lists | Taxonomy
-- Navigate from a [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) to a [taxonomy term store](/graph/api/resources/termstore-store?view=graph-rest-beta) using the **termStore** relationship.
+- Navigate from a [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) to a [taxonomy term store](/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true) using the **termStore** relationship.
 - In the reverse direction, get the ID of the parent site of a term store using the **parentSiteId** property.
 
 ### Users
