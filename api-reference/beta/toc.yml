@@ -10181,8 +10181,6 @@ items:
               - name: Delete
                 href: api/countrynamedlocation-delete.md
             - name: IP named location
-              items:
-              - name: IP named location
                 href: resources/ipnamedlocation.md
               - name: List
                 href: api/conditionalaccessroot-list-namedlocations.md
