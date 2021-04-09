@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Update conditionalAccessPolicy
+# Update authenticationContextClassReference
 
 Namespace: microsoft.graph
 
@@ -102,4 +102,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
