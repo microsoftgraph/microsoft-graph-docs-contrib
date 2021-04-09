@@ -8,6 +8,7 @@ items:
       href: /graph/auth/index?context=graph/api/beta
     - name: Basics
       href: /graph/auth/auth-concepts?context=graph/api/beta
+    - name: Register your app
       href: /graph/auth-register-app-v2?context=graph/api/beta
     - name: Get access on behalf of a user
       href: /graph/auth-v2-user?context=graph/api/beta
