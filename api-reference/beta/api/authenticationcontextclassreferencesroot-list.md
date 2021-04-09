@@ -107,7 +107,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List policies",
+  "description": "List authenticationContextClassReferences",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
