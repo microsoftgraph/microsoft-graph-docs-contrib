@@ -60,7 +60,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_policies"
+  "name": "get_authenticationcontextclassreference"
 }-->
 
 ```msgraph-interactive
@@ -112,4 +112,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
