@@ -168,7 +168,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 * Accessing a contact contained in a child folder of a **contactFolder**.  The example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
@@ -203,6 +203,10 @@ You must first create the resource instance and then do a `PATCH` to that instan
 ### Limit of 100 schema extension property values allowed per resource instance
 
 Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource instance, to 100.
+
+### Updating a schemaExtension definition using Microsoft Graph Explorer
+
+When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appid` value (which will need to be an `appId` of an application that you own). This is also the case for any client application whose `appId` is not the same as the **owner**.
 
 ### Filtering on schema extension properties not supported on all entity types
 
@@ -332,17 +336,11 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
 [list your teams](/graph/api/user-list-joinedteams).
 
-### POST /teams is only available in beta
-To create teams in v1.0, see [create team](/graph/api/team-put-teams).
+### Unable to filter team members by roles
+The filter query to get members of a team based on their roles `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` might not work. The server might respond with a `BAD REQUEST`.
 
-### Missing teams in list all teams
-
-Some teams that were created in the past but haven't been used recently by a Microsoft Teams user aren't listed by
-[list all teams](teams-list-all-teams.md).
-New teams will be listed.
-Certain old teams don't have a **resourceProvisioningOptions** property that contains "Team",
-which is set on newly created teams and teams that are visited in Microsoft Teams.
-In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
+### Missing properties for chat members
+In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
 
 ## Users
 
@@ -379,7 +377,7 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
 ## Query parameter limitations
 
 * Multiple namespaces are not supported.
-* GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
+* GETs on `$ref` and casting are not supported on users, groups, devices, service principals and applications.
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:

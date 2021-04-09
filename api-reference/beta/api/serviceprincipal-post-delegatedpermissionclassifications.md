@@ -3,7 +3,7 @@ title: "Create delegatedPermissionClassification"
 description: "Classify a permission by adding a delegatedPermissionClassification to the API's service principal."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "psignoret"
 ---
 
@@ -82,6 +82,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-create-delegatedpermissionclassification-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-delegatedpermissionclassification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -97,7 +101,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -107,3 +111,4 @@ Content-type: application/json
   "classification": "low"
 }
 ```
+

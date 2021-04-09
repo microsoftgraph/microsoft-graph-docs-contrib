@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an identityUserFlowAt
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Get identityUserFlowAttribute
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-userflowattributes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-userflowattributes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

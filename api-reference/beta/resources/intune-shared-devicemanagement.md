@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The deviceManagement resource represents a container whose contents vary according to workflow, including:
+The deviceManagement resource represents a container whose contents vary according to workflow, including:  
 
 - Android for Work settings
 - Auditing events
-- Corporate terms and conditions
+- Corporate terms and conditions 
 - Corporate enrollment profiles
 - Device configuration settings
 - Device intent settings
@@ -180,7 +180,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |roleDefinitions|[roleDefinition](../resources/intune-rbac-roledefinition.md) collection|The Role Definitions.|
 |roleScopeTags|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection|The Role Scope Tags.|
 |**Reporting**|
-|reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Reports singleton|
+|reports|[deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)|Reports singleton|
 |**Software Update**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) collection|A collection of windows feature update profiles|
 |**Telecom expense management (TEM)**|
@@ -208,7 +208,6 @@ Here is a JSON representation of the resource.
   "subscriptionState": "String"
 }
 ```
-
 
 
 

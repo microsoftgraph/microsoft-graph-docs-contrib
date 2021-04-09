@@ -3,7 +3,7 @@ title: "List threatAssessmentRequests"
 description: "Retrieve a list of threatassessmentrequest objects."
 localization_priority: Normal
 author: "hafen-ms"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-threatassessmentrequests-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-threatassessmentrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

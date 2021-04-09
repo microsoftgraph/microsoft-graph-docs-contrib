@@ -1,7 +1,7 @@
 ---
 title: "checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those groups of which"
-author: "krbain"
+author: "jpettere"
 localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType
@@ -93,6 +93,10 @@ Content-length: 44
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-checkmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

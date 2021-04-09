@@ -3,7 +3,7 @@ title: "Update application"
 description: "Update the properties of an application object."
 author: "sureshja"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,9 @@ In the request body, supply the values for relevant fields that should be update
 | signInAudience          | String                                                                      | Specifies what Microsoft accounts are supported for the current application. Supported values are:<ul><li>`AzureADMyOrg`: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>`AzureADMultipleOrgs`: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>`AzureADandPersonalMicrosoftAccount`: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul>                           |
 | tags                    | String collection                                                           | Custom strings that can be used to categorize and identify the application. Not nullable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | tokenEncryptionKeyId    | String                                                                      | Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.                                                                                                                                                                                                                               |
+| uniqueName | String | The unique identifier that can be assigned to an application as an alternative identifier. Immutable. Read-only. |
 | web                     | [webApplication](../resources/webapplication.md)                            | Specifies settings for a web application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| spa                     | [spaApplication](../resources/spaapplication.md)                            | Specifies settings for a single-page application, including sign out URLs and redirect URIs for authorization codes and access tokens. |
 
 ## Response
 
@@ -96,6 +98,10 @@ Content-length: 72
 [!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -122,5 +128,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
 
 

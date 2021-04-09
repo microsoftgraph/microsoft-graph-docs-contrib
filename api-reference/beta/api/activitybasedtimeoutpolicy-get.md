@@ -3,7 +3,7 @@ title: "Get activityBasedTimeoutPolicy"
 description: "Get the properties of an activityBasedTimeoutPolicy object."
 localization_priority: Normal
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-activitybasedtimeoutpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-activitybasedtimeoutpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

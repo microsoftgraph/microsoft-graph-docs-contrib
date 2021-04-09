@@ -3,7 +3,7 @@ title: "device: checkMemberObjects"
 description: "Check for membership in a list of groups, directory roles, or administrative units for the specified device object."
 localization_priority: Normal
 author: "spunukol"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -89,6 +89,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/device-checkmemberobjects-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/device-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

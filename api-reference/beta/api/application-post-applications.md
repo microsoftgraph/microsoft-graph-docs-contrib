@@ -4,7 +4,7 @@ description: "Create a new application."
 author: "sureshja"
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Create application
@@ -77,6 +77,10 @@ Content-length: 67
 [!INCLUDE [sample-code](../includes/snippets/objc/create-application-from-applications-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-application-from-applications-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -136,6 +140,7 @@ Content-length: 1145
     },
     "passwordCredentials": [],
     "requiredResourceAccess": [],
+    "uniqueName": null,
     "web": {
         "redirectUris": [],
         "homePageUrl": null,
@@ -161,5 +166,6 @@ Content-length: 1145
   ]
 }
 -->
+
 
 

@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,14 +33,14 @@ GET /groups
 ## Optional query parameters
 To list only Microsoft 365 groups (aka unified groups), apply a filter on **groupTypes**:
 <!-- { "blockType": "ignored" } -->
-```
+```http
 GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
 You can use the OData query option `$orderby` to sort groups in an organization by the **displayName**
 values, as shown in the following example:
 <!-- { "blockType": "ignored" } -->
-```
+```http
 GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ```
 
@@ -114,18 +114,17 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
-  "value": [
-    {
-      "id": "11111111-2222-3333-4444-555555555555",
-      "mail": "group1@contoso.com",
-      "mailEnabled": true,
-      "mailNickname": "ContosoGroup1",
-      "securityEnabled": true
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "value":[
+      {
+         "id":"11111111-2222-3333-4444-555555555555",
+         "mail":"group1@contoso.com",
+         "mailEnabled":true,
+         "mailNickname":"ContosoGroup1",
+         "securityEnabled":true
+      }
+   ]
 }
-
 ```
 
 ### Example 2: Get a filtered list of groups including the count of returned objects
@@ -134,34 +133,14 @@ The following is an example of the request.
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_groups_withlicenseerrors_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups?$count=true&$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-withlicenseerrors-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-withlicenseerrors-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-groups-withlicenseerrors-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-groups-withlicenseerrors-count-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -178,18 +157,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
-  "@odata.count":2,
-  "value": [
-    {
-      "id": "11111111-2222-3333-4444-555555555555",
-      "displayName": "Contoso Group 1"
-    },
-    {
-      "id": "22222222-3333-4444-5555-666666666666",
-      "displayName": "Contoso Group 2"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
+   "@odata.count":2,
+   "value":[
+      {
+         "id":"11111111-2222-3333-4444-555555555555",
+         "displayName":"Contoso Group 1"
+      },
+      {
+         "id":"22222222-3333-4444-5555-666666666666",
+         "displayName":"Contoso Group 2"
+      }
+   ]
 }
 ```
 
@@ -199,34 +178,14 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_count_only"
   }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/$count
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-count-only-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -238,9 +197,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`893`
+893
+```
 
 ### Example 4: Use $filter and $top to get one group with a display name that starts with 'a' including a count of returned objects
 
@@ -248,34 +207,14 @@ Content-type: text/plain
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -294,14 +233,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
-  "@odata.count":1,
-  "value":[
-    {
-      "displayName":"a",
-      "mailNickname":"a241"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "@odata.count":1,
+   "value":[
+      {
+         "displayName":"a",
+         "mailNickname":"a241"
+      }
+   ]
 }
 ```
 
@@ -312,7 +251,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
@@ -337,15 +276,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
-  "@odata.count":1396,
-  "value":[
-    {
-      "displayName":"SFA Videos",
-      "mail":"SFAVideos@service.contoso.com",
-      "mailNickname":"SFAVideos"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "@odata.count":1396,
+   "value":[
+      {
+         "displayName":"SFA Videos",
+         "mail":"SFAVideos@service.contoso.com",
+         "mailNickname":"SFAVideos"
+      }
+   ]
 }
 ```
 
@@ -381,21 +320,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
-  "@odata.count":1396,
-  "value":[
-    {
-      "displayName":"SFA Videos",
-      "mail":"SFAVideos@service.contoso.com",
-      "mailNickname":"SFAVideos"
-    },
-    {
-      "description":"Video Production",
-      "displayName":"Video Production",
-      "mail":"videoprod@service.contoso.com",
-      "mailNickname":"VideoProduction"
-    }
-  ]
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+   "@odata.count":1396,
+   "value":[
+      {
+         "displayName":"SFA Videos",
+         "mail":"SFAVideos@service.contoso.com",
+         "mailNickname":"SFAVideos"
+      },
+      {
+         "description":"Video Production",
+         "displayName":"Video Production",
+         "mail":"videoprod@service.contoso.com",
+         "mailNickname":"VideoProduction"
+      }
+   ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

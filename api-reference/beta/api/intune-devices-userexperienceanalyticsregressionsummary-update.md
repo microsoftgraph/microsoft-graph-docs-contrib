@@ -20,7 +20,7 @@ Update the properties of a [userExperienceAnalyticsRegressionSummary](../resourc
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -81,7 +81,6 @@ Content-Length: 131
   "id": "41683327-3327-4168-2733-684127336841"
 }
 ```
-
 
 
 

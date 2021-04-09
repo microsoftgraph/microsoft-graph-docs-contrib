@@ -3,7 +3,7 @@ title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider"
 localization_priority: Priority
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

@@ -28,7 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
+GET /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/{id}
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -67,6 +68,10 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTa
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-workbookpivottable-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-workbookpivottable-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

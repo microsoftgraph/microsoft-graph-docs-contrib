@@ -3,7 +3,7 @@ title: "Create inferenceClassificationOverride"
 description: "Create a Focused Inbox override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified "
 localization_priority: Normal
 doc_type: apiPageType
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: ""
 ---
 
@@ -81,6 +81,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-inferenceclassificationoverride-from-inferenceclassification-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-inferenceclassificationoverride-from-inferenceclassification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
