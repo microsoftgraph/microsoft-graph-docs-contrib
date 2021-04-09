@@ -8,7 +8,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "UserPrincipalName",
           "ChangeType": "Addition",
-          "Description": "Added support for UPN to the chat resource.UserPrincipalName can be used in the request URL for [looking up chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-beta) of a user.",
+          "Description": "UserPrincipalName can be used in the request URL for [looking up chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-beta) of a user.",
           "Target": "chat"
         },
         {
