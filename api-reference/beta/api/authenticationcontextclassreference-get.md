@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Get conditionalAccessPolicy
+# Get authenticationContextClassReference
 
 Namespace: microsoft.graph
 
@@ -105,4 +105,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
