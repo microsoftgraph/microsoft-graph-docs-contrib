@@ -59,7 +59,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationcontextclassreference"
@@ -70,14 +69,17 @@ PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/authentication
 Content-type: application/json
 
 {
-   "value": [
-    {
-       "displayName": "Contoso trusted locations",
-       "description": "Access is only allowed from trusted locations",
-       "isAvailable": true
-    }]
+   "value": 
+    [
+      {
+         "displayName": "Contoso trusted locations",
+        "description": "Access is only allowed from trusted locations",
+        "isAvailable": true
+      }
+    ]
 }
 ```
+
 
 
 ### Response
@@ -92,6 +94,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
