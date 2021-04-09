@@ -13,8 +13,8 @@ This article covers best practices to help you build experiences using Microsoft
 Activity feed notifications enable your apps to send notifications to users. These notifications are sent as toast items and activity feed items that point users to relevant content that can be consumed within Teams. Apply the following best practices in your app:
 
 * Make the relationship between the notification and the content it is linking to clear to the user.
-    * The notification must not confuse the user about what they need to address or triage. For example, when a user receives a notification for approving a leave, then the notification must *@mention* the user, and display the requisite action buttons, such as *Approve* and *Reject*.
-    * If the notification pertains to removal or deletion, direct users to the content indicating the action, so that they understand the outcome before taking action. For example, when removing a member from a group, notify the users that the action will resut in removal of the selected member, and to confirm if they want to proceed with the action.
+    * The notification must not confuse the user about what they need to address or triage. For example, when a user receives a notification for approving a leave, then the notification must *@mention* the user.
+    * If the notification pertains to removal or deletion, direct users to the content indicating the action, so that they understand the outcome before taking action. For example, when removing a member from a group.
 * Make sure that the feed experience in the feed is self-contained and does not break the feed experience. For example, if the notification leads to a modal or pop-up dialog, the modal must exist only within the app and not over the activity feed experience.
 * Verify that your app does not send more than 10 notifications per minute, per user. 
   > [!NOTE]
@@ -23,19 +23,17 @@ Activity feed notifications enable your apps to send notifications to users. The
 
 ## Recommendations for using activity feed features
 
-This section provides recommendations for using the activity feed features. You can select one or all the recommendations to create an effective notification.
+You can select one or all the recommendations to create an effective notification.
 
 ### Prerequisites
 
 When using the activity feed features you must be aware of the following:
-  * The setting appears for the user only when the selected app sends a notification.
+  * You must be aware when the users select a toast notification they access the activity feed and not the app. To switch to another activity, they must select a notification in the activity feed.
+  * The notifications setting appears for the user only when the selected app sends a notification.
   * The app icon for each notification cannot be customized, and is the one that is included in the app manifest.
-  * Currently, notifications can only be sent at a user level and not at a group or a team level.
+  * Currently, notifications can only be sent at a user level, and not at a group or a team level.
     > [!NOTE]
     > Currently, priority notifications are not supported.
-
-> [!IMPORTANT]
-> Design your notification such that when the users select a toast notification they access the activity feed and not the app. To switch to another activity, the user must select a notification in the activity feed.
 
 ### Recommendations
 
