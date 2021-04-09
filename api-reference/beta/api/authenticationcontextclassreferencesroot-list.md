@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List policies
+# List authenticationContextClassReferences
 
 Namespace: microsoft.graph
 
