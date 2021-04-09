@@ -3,7 +3,41 @@
         {
             "ChangeList": [
                 {
-                    "Id": "2a611d0f-e9d5-4f52-bd55-364c83ad8eef",
+                    "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "Extend rolemanagement",
+                    "ChangeType": "Addition",
+                    "Description": "Extend `rolemanagement` singleton as [cloudpc-rbac-rolemanagement](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc-rbac-rolemanagement?view=graph-rest-beta) singleton to Cloud PC.",
+                    "Target": "cloudpc-rbac-rolemanagement"
+                },
+                {
+                    "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "Extend unifiedroledefinition",
+                    "ChangeType": "Addition",
+                    "Description": "Extedn the `unifiedroledefinition` entity as the [cloud-pc-unifiedroledefinition](https://docs.microsoft.com/en-us/graph/api/resources/cloud-pc-unifiedroledefinition?view=graph-rest-beta) entity.",
+                    "Target": "cloud-pc-unifiedroledefinition"
+                },
+                {
+                    "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "Extend unifiedroleassignmentmultiple",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `unifiedroleassignmentmultiple` entity as the [cloud-pc-unifiedroleassignmentmultiple](https://docs.microsoft.com/en-us/graph/api/resources/cloud-pc-unifiedroleassignmentmultiple?view=graph-rest-beta) entity.",
+                    "Target": "cloud-pc-unifiedroleassignmentmultiple"
+                }
+            ],
+            "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-04-9T15:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "1c0ba039-8ca5-49d6-b72d-6da4ed946ef6s",
                     "ApiChange": "Member",
                     "ChangedApiName": "cloudPcDeviceImageStatusDetails",
                     "ChangeType": "Addition",
@@ -11,7 +45,7 @@
                     "Target": "cloudPcDeviceImageStatusDetails"
                 },
                 {
-                    "Id": "fa87b45b-599b-4cda-9b5f-a155abcec68c",
+                    "Id": "1c0ba039-8ca5-49d6-b72d-6da4ed946ef6s",
                     "ApiChange": "Member",
                     "ChangedApiName": "cloudPcDeviceImageStatusDetails",
                     "ChangeType": "Addition",
