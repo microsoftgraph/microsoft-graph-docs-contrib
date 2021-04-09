@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [teamsAppIcon]
 
 ## Examples
 
-### Example 1: Get color icon of a custom Teams app.
+### Example 1: Get color icon of a Teams app.
 
 #### Request
 
@@ -72,14 +72,14 @@ The following is an example of the request.
   "name": "get_teamsappicon_coloricon_customapp"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/78710bb8-23e1-4dbe-a5d3-3455a60a1012/appDefinitions/Nzg3MTBiYjgtMjNlMS00ZGJlLWE1ZDMtMzQ1NWE2MGExMDEyIyMyLjAuMSMjUHVibGlzaGVk/colorIcon
+GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/colorIcon
 ```
 
 ---
 
 #### Response
 
-The following example shows the response.
+The following example shows the response for an organizational app.
 
 <!-- {
   "blockType": "response",
@@ -91,15 +91,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('78710bb8-23e1-4dbe-a5d3-3455a60a1012')/appDefinitions('Nzg3MTBiYjgtMjNlMS00ZGJlLWE1ZDMtMzQ1NWE2MGExMDEyIyMyLjAuMSMjUHVibGlzaGVk')/colorIcon/$entity",
-    "id": "aHR0cHM6Ly9zdGF0aWNzLnRlYW1zLm1pY3Jvc29mdC5jb20vZXZlcmdyZWVuLWFzc2V0cy9hcHBzL3BsYWNlaG9sZGVyX2xhcmdlaW1hZ2UucG5n",
-    "webUrl": "https://statics.teams.microsoft.com/evergreen-assets/apps/placeholder_largeimage.png"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('5a31d4f7-a11d-4052-96eb-1b40786a2a78')/appDefinitions('NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk')/colorIcon/$entity",
+    "id": "aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ0LWQwOGVkNTQ2MjQ2MTliNTc4OGIwMWUzODNlMWVjYzU3L3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==",
+    "webUrl": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/colorIcon/hostedContent/$value"
 }
 ```
 
 ---
 
-### Example 2: Get outline icon of a custom Teams app.
+### Example 2: Get outline icon of a Teams app.
 
 #### Request
 
@@ -117,7 +117,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 #### Response
 
-The following example shows the response.
+The following example shows the response for an organizational app.
 
 <!-- {
   "blockType": "response",
@@ -137,7 +137,7 @@ Content-type: application/json
 
 ---
 
-### Example 3: Get color icon of a public Teams app.
+### Example 3: Get color icon of a Teams app.
 
 #### Request
 
@@ -155,7 +155,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b4
 
 #### Response
 
-The following example shows the response.
+The following example shows the response for a store app.
 
 <!-- {
   "blockType": "response",
@@ -173,7 +173,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Get outline icon of a public Teams app.
+### Example 4: Get outline icon of a Teams app.
 
 #### Request
 
@@ -191,7 +191,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b4
 
 #### Response
 
-The following example shows the response.
+The following example shows the response for a store app.
 
 <!-- {
   "blockType": "response",
