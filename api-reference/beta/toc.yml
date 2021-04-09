@@ -10194,6 +10194,18 @@ items:
                 href: api/ipnamedlocation-update.md
               - name: Delete
                 href: api/ipnamedlocation-delete.md
+          - name: Authentication context class references
+            items:
+            - name: Authentication context class references
+              href: resources/authenticationcontextclassreference.md
+            - name: List
+              href: api/authenticationcontextclassreferencesroot-list.md
+            - name: Create
+              href: api/authenticationcontextclassreferencesroot-create.md
+            - name: Get
+              href: api/authenticationcontextclassreference-get.md
+            - name: Update
+              href: api/authenticationcontextclassreference-update.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:

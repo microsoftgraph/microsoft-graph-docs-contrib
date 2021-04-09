@@ -23,13 +23,13 @@ Represents an Azure Active Directory authentication context class reference. Aut
 | [Create authenticationContextClassReference](../api/authenticationcontextclassreferencesroot-create.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create a new authenticationContextClassReference object. |
 | [Get authenticationContextClassReference](../api/authenticationcontextclassreference-get.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Read properties and relationships of a authenticationContextClassReference object. |
 | [Update authenticationContextClassReference](../api/authenticationcontextclassreference-update.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Update a authenticationContextClassReference object. |
-| [Delete authenticationContextClassReference](../api/authenticationcontextclassreference-delete.md) | None | Delete a authenticationContextClassReference object. |
+
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| Identifier used to reference the authentication context class. The id is used to trigger step-up authentication for the referenced authentication requirements and is the value that will be issued in the acrs claim. This value in the claim is used to verify the required authentication context has been satisfied. |
+|id|String| Identifier used to reference the authentication context class. The id is used to trigger step-up authentication for the referenced authentication requirements and is the value that will be issued in the acrs claim. This value in the claim is used to verify the required authentication context has been satisfied. The allowed id values are "c1" through "c25". |
 |displayName|String| DisplayName is the friendly name of the authenticationContextClassReference. This value should be used to identify the authentication context class reference when building user facing admin experiences, like selection UX. |
 |description|String| Description is a short explanation the policies that will be enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences, like selection UX.|
 |isAvailable|boolean| IsAvailable is set to true if the authenticationContextClassReference has been published by the security admin and ready for use by apps. When it is set to false it should not be shown in admin UX experiences, because the value is not currently available for selection.|

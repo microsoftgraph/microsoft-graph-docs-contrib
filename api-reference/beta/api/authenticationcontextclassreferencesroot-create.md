@@ -69,7 +69,7 @@ POST https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationC
 Content-type: application/json
 
 {
-    "id": "urn:microsoft:req1",
+    "id": "c1",
     "displayName": "Contoso medium",
     "description": "Medium protection level defined for Contoso policy",
     "isAvailable": true
