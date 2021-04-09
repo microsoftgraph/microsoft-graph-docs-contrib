@@ -3,7 +3,7 @@ title: "List policies"
 description: "Retrieve a list of authenticationContextClassReference objects."
 localization_priority: Normal
 author: "calebb"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -112,5 +112,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
