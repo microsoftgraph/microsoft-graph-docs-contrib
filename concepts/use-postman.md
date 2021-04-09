@@ -55,7 +55,7 @@ To use this collection in your own developer tenant, create an Azure AD applicat
 The Azure AD application now has permissions to make requests on behalf of a user to call Mail.Read and as an application for User.Read.All.
 
 ## Step 4 - Configuring authentication in Postman
-In this step, you will set up some environment variables used to retrieve an access token.
+In this step, you set up the environment variables used to retrieve an access token.
 
 1. Go to [Fork environment](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/environment/455214-efbc69b2-69bd-402e-9e72-850b3a49bb21/fork).
 2. Fill in a label for your own fork. This can be any text.
@@ -64,7 +64,7 @@ In this step, you will set up some environment variables used to retrieve an acc
 5. In `ClientID` set the **Current value** to the Application (client) ID value from step 3.15.
 6. In `ClientSecret` set the **Current value** to the Client Secret value from step 3.17.
 6. In `TenantID` set the **Current value** to the Directory (tenant) ID value from step 3.15.
-7. Click **Save** in top right. 
+7. Click **Save** in the top right. 
 8. Close the **Manage Environments** tab. 
 9. Double check that **M365 Environment** is selected in the drop down and not **No environment** in the top right next to the eye icon.
 
