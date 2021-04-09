@@ -56,13 +56,12 @@ The following is a JSON representation of the resource.
 }-->
 
 ```json
-{
-            "id": "String",
-            "displayName": "String",
-            "description": "String",
-            "isAvailable": "boolean",
-        }
-     }
+    {
+      "id": "String",
+      "displayName": "String",
+      "description": "String",
+      "isAvailable": "boolean",
+    }
 
 ```
 

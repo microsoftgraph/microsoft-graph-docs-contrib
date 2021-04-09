@@ -51,14 +51,13 @@ In the request body, supply a JSON representation of a [authenticationContextCla
 
 If successful, this method returns a `201 Created` response code and a new [authenticationContextClassReference](../resources/authenticationContextClassReference.md) object in the response body.
 
+## Examples
 
-#### Request
+### Request
 The following example shows creating a new authenticationcontextclassreference that is available for apps to use.
 
->**Note:** You must set up your trusted locations before using this operation.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -75,14 +74,13 @@ Content-type: application/json
     "isAvailable": true
 }
 
+```
 
----
 
 
 #### Response
 
 The following is an example of the response.
-
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -91,10 +89,9 @@ The following is an example of the response.
 
 ```http
 
-
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/authenticationContextClassReference/$entity",
-    "id": "urn:microsoft:req1",
+    "id": "c1",
     "displayName": "Contoso medium",
     "description": "Medium protection level defined for Contoso policy",
     "isAvailable": true
