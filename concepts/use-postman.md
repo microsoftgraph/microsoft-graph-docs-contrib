@@ -66,7 +66,7 @@ In this step, you set up the environment variables used to retrieve an access to
 6. In `TenantID` set the **Current value** to the Directory (tenant) ID value from step 3.15.
 7. Click **Save** in the top right. 
 8. Close the **Manage Environments** tab. 
-9. Double check that **M365 Environment** is selected in the drop down and not **No environment** in the top right next to the eye icon.
+9. Double check that **M365 Environment** is selected in the drop down and not **No environment** in the top right, next to the eye icon.
 
 ## Step 5 - Get a delegated access token
 Because this is the first time you are running a request as a delegated authentication flow, you need to get an access token.
