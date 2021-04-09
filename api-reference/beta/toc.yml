@@ -8,6 +8,7 @@ items:
       href: /graph/auth/index?context=graph/api/beta
     - name: Basics
       href: /graph/auth/auth-concepts?context=graph/api/beta
+    - name: Register your app
       href: /graph/auth-register-app-v2?context=graph/api/beta
     - name: Get access on behalf of a user
       href: /graph/auth-v2-user?context=graph/api/beta
@@ -11466,17 +11467,18 @@ items:
               - name: Cancel
                 href: api/governanceroleassignmentrequest-cancel.md
         - name: Terms of use
-          href: resources/agreement.md
           items:
-          - name: Create agreement
+          - name: Agreement
+            href: resources/agreement.md
+          - name: Create
             href: api/agreement-post-agreements.md
-          - name: List agreements
+          - name: List
             href: api/agreement-list.md
-          - name: Get agreement
+          - name: Get
             href: api/agreement-get.md
-          - name: Update agreement
+          - name: Update
             href: api/agreement-update.md
-          - name: Delete agreement
+          - name: Delete
             href: api/agreement-delete.md
           - name: List acceptance status
             href: api/user-list-agreementacceptances.md
