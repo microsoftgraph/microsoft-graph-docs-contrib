@@ -35,7 +35,7 @@ Confirm the following additional prerequisites. Then you can use the [Microsoft 
 > ```powershell
 >    Select-MgProfile beta
 > ```
-To get item insights configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from i.e. the overview page of your Azure Active Directory where it is being shown as Tenant ID.
+To get item insights configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
 ```powershell
    Get-MgOrganizationSettingItemInsight -OrganizationId $TenantId
 ```
