@@ -55,8 +55,8 @@ The following table shows the properties that are required when you update the [
 |description|String|Read-only|
 |userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. Required.|
 |multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired`, `required`, `unknownFutureValue`. Required.|
-|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registered within your organization. Required. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview) about device identities in Azure AD.|
-|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. Required. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview) about device identities in Azure AD.|
+|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registered within your organization. Required. [Learn more](https://docs.microsoft.com/azure/active-directory/devices/overview) about device identities in Azure AD.|
+|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. Required. [Learn more](https://docs.microsoft.com/azure/active-directory/devices/overview) about device identities in Azure AD.|
 
 ## Response
 

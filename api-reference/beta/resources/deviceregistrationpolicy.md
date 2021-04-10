@@ -24,8 +24,8 @@ Represents the policy scope of the Azure Active Directory tenant that control qu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview) about device identities in Azure AD.|
-|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registered within your organization. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview) about device identities in Azure AD.|
+|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. [Learn more](https://docs.microsoft.com/azure/active-directory/devices/overview) about device identities in Azure AD.|
+|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registered within your organization. [Learn more](https://docs.microsoft.com/azure/active-directory/devices/overview) about device identities in Azure AD.|
 |description|String|Description at the time of policy creation. Read-only.|
 |displayName|String|Name at the time of policy creation. Read-only.|
 |id|String| Identifier of the policy at the time of policy creation. Read-only.|
