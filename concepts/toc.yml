@@ -471,7 +471,7 @@ items:
           - name: Throttling
             href: throttling.md
           - name: Change notifications
-            displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+            displayName: Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: webhooks.md
@@ -485,6 +485,8 @@ items:
                 href: change-notifications-delivery.md
               - name: Get change notifications for chat and channel messages
                 href: teams-changenotifications-chatmessage.md
+              - name: Change notifications for cloud printing
+                href: universal-print-webhook-notifications.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
