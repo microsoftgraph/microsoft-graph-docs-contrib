@@ -1,7 +1,7 @@
 ---
 title: "Create user"
 description: "Create a new user."
-author: "krbain"
+author: "jpettere"
 localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType
