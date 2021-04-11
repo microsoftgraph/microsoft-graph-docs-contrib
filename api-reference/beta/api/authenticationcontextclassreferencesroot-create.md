@@ -60,7 +60,7 @@ The following example shows creating a new authenticationcontextclassreference t
 
 <!-- {
   "blockType": "request",
-  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+  "name": "create_authenticationcontextclassreference"
 }-->
 
 ```http
@@ -84,7 +84,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+  "@odata.type": "microsoft.graph.authenticationContextClassReference"
 } -->
 
 ```http

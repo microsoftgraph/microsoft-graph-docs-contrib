@@ -64,7 +64,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationContextClassReferences
 ```
 
----
 
 
 ### Response
@@ -76,7 +75,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.conditionalAccessPolicy",
+  "@odata.type": "microsoft.graph.authenticationContextClassReference",
   "isCollection": true
 } -->
 
@@ -86,15 +85,15 @@ Content-type: application/json
 
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#/conditionalAccess/authenticationContextClassReferences",
-    "value": [
-        {
-            "id": "c1",
-            "displayName": "Contoso trusted locations",
-            "description": "Access is only allowed from trusted locations",
-            "isAvailable": true
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#/conditionalAccess/authenticationContextClassReferences",
+  "value": [
+    {
+      "id": "c1",
+      "displayName": "Contoso trusted locations",
+      "description": "Access is only allowed from trusted locations",
+      "isAvailable": true
+    }
+  ]
 }
 
 
