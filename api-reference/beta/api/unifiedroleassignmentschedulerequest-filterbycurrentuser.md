@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a [unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) collection in the response body.
 
 ## Examples
 
@@ -61,7 +61,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/roleManagement/directory/RoleAssignmentScheduleRequests/filterByCurrentUser(on='parameterValue')
 ```
 
 
@@ -80,7 +80,6 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentScheduleRequest",
       "id": "String (identifier)",
       "action": "String",
       "principalId": "String",
