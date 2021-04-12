@@ -37,6 +37,8 @@ as well as events, contacts, tasks, and group posts, and opens up creative scena
 
 - The rules API takes message organization to the next level. Apps can set up [Inbox rules](/graph/api/resources/messagerule?view=graph-rest-1.0) to promptly handle incoming messages and reduce email clutter. For example, an app can automatically move messages to another folder if their subject lines contain certain keywords, and assign categories and importance to make them easier for later follow-up.
 
+- Email clients can send and receive messages in MIME formats. Even though Outlook does not save messages in MIME format, there are two ways you can [get an Outlook message body in MIME format](outlook-get-mime-message.md). In addition, email clients have the ability to [send emails through Exchange in a MIME message format](outlook-send-mime-message.md), attach S/MIME digital signatures to emails as well as S/MIME encrypted email contents and update message drafts in Exchange with MIME content.
+
 ### Write smarter apps that leverage intelligence
 
 Use Microsoft Graph to suggest contextual data to your app users:
@@ -79,6 +81,7 @@ Looking for the API reference for this service?
   - [Getting shared messages](outlook-share-messages-folders.md)
   - How to [send mail from another user](outlook-send-mail-from-other-user.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
+  - [Sending emails with MIME contents](outlook-send-mime-message.md)
 
 - Find out more about [using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
 
