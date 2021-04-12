@@ -20,11 +20,11 @@ Update the properties of a [deviceHealthScriptAssignment](../resources/intune-de
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device health script assignment entity. This property is read-only.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The Azure Active Directory group we are targeting the script to|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-devices-deviceandappmanagementassignmenttarget.md)|The Azure Active Directory group we are targeting the script to|
 |runRemediationScript|Boolean|Determine whether we want to run detection script only or run both detection script and remediation script|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Script run schedule for the target group|
 

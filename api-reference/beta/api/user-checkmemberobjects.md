@@ -2,7 +2,7 @@
 title: "user: checkMemberObjects"
 description: "Check for membership in a list of group, directory role, or administrative unit objects for the specified user object."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: "apiPageType"
 ---
