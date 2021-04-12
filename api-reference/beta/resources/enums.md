@@ -119,7 +119,7 @@ Namespace: microsoft.graph
 |exchangeOnline|
 |authentication|
 |provisioning|
-|intunePfx||
+|intunePfx|
 |oflineDomainJoin|
 |unknownFutureValue|
 
