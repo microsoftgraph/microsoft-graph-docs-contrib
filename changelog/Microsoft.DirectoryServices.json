@@ -6880,10 +6880,10 @@
         {
           "Id": "d90d309b-58aa-11eb-9aa5-a83ab134eab0",
           "ApiChange": "Resource",
-          "ChangedApiName": "unifiedRoleEligibilityRequest",
+          "ChangedApiName": "unifiedRoleEligibilityScheduleRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleEligibilityRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityRequest?view=graph-rest-beta) resource type",
-          "Target": "unifiedRoleEligibilityRequest"
+          "Description": "Added the [unifiedRoleEligibilityScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleRequest?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleEligibilityScheduleRequest"
         },
         {
           "Id": "d90fa219-58aa-11eb-9aa5-a83ab134eab0",
@@ -7128,10 +7128,10 @@
         {
           "Id": "d958391c-58aa-11eb-9aa5-a83ab134eab0",
           "ApiChange": "Enum type",
-          "ChangedApiName": "roleEligibilityRequestFilterByCurrentUserOptions",
+          "ChangedApiName": "roleEligibilityScheduleRequestFilterByCurrentUserOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **roleEligibilityRequestFilterByCurrentUserOptions** enumeration type",
-          "Target": "roleEligibilityRequestFilterByCurrentUserOptions"
+          "Description": "Added the **roleEligibilityScheduleRequestFilterByCurrentUserOptions** enumeration type",
+          "Target": "roleEligibilityScheduleRequestFilterByCurrentUserOptions"
         },
         {
           "Id": "d95a81c9-58aa-11eb-9aa5-a83ab134eab0",
@@ -7170,8 +7170,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancel",
           "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/unifiedRoleEligibilityRequest-cancel?view=graph-rest-beta) method to the [unifiedRoleEligibilityRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityRequest?view=graph-rest-beta) resource",
-          "Target": "unifiedRoleEligibilityRequest"
+          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/unifiedRoleEligibilityScheduleRequest-cancel?view=graph-rest-beta) method to the [unifiedRoleEligibilityScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleRequest?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleEligibilityScheduleRequest"
         },
         {
           "Id": "d9668d2b-58aa-11eb-9aa5-a83ab134eab0",
@@ -7202,8 +7202,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/unifiedRoleEligibilityRequest-filterByCurrentUser?view=graph-rest-beta) method to the [unifiedRoleEligibilityRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityRequest?view=graph-rest-beta) resource",
-          "Target": "unifiedRoleEligibilityRequest"
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/unifiedRoleEligibilityScheduleRequest-filterByCurrentUser?view=graph-rest-beta) method to the [unifiedRoleEligibilityScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleRequest?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleEligibilityScheduleRequest"
         },
         {
           "Id": "d9702c41-58aa-11eb-9aa5-a83ab134eab0",

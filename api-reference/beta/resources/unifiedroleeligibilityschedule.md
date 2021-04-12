@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the schedule for an eligible role assignment through Azure AD Privileged Identity Management. A `roleEligibilitySchedule` is created by `roleEligibilityRequest` and is used to instantiate a `roleEligibilityInstance`. We support list and get operations to retrieve the schedule for the purpose of viewing current and future eligible assignments.
+Represents the schedule for an eligible role assignment through Azure AD Privileged Identity Management. A `roleEligibilitySchedule` is created by `roleEligibilityScheduleRequest` and is used to instantiate a `roleEligibilityInstance`. We support list and get operations to retrieve the schedule for the purpose of viewing current and future eligible assignments.
 
 Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).
 

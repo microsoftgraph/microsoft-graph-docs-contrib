@@ -2186,7 +2186,7 @@ Possible values for user account types (group membership), per Windows definitio
 |principal|
 |unknownFutureValue|
 
-### roleEligibilityRequestFilterByCurrentUserOptions values 
+### roleEligibilityScheduleRequestFilterByCurrentUserOptions values 
 
 |Member|
 |:---|

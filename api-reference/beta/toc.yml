@@ -10357,20 +10357,20 @@ items:
             - name: Filter by current user
               href: api/unifiedroleassignmentrequest-filterbycurrentuser.md
           - name: Role eligibility request
-            href: resources/unifiedroleeligibilityrequest.md
+            href: resources/unifiedroleeligibilityschedulerequest.md
             items:
             - name: List
-              href: api/unifiedroleeligibilityrequest-list.md
+              href: api/unifiedroleeligibilityschedulerequest-list.md
             - name: Get
-              href: api/unifiedroleeligibilityrequest-get.md
+              href: api/unifiedroleeligibilityschedulerequest-get.md
             - name: Create
-              href: api/unifiedroleeligibilityrequest-post-unifiedroleeligibilityrequests.md
+              href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
             - name: Update
-              href: api/unifiedroleeligibilityrequest-update.md
+              href: api/unifiedroleeligibilityschedulerequest-update.md
             - name: Cancel
-              href: api/unifiedroleeligibilityrequest-cancel.md
+              href: api/unifiedroleeligibilityschedulerequest-cancel.md
             - name: Filter by current user
-              href: api/unifiedroleeligibilityrequest-filterbycurrentuser.md
+              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
           - name: Role assignment schedule
             href: resources/unifiedRoleAssignmentSchedule.md
             items:
