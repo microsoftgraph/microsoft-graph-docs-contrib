@@ -4,7 +4,7 @@ description: "Create a new application."
 author: "sureshja"
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Create application
@@ -140,6 +140,7 @@ Content-length: 1145
     },
     "passwordCredentials": [],
     "requiredResourceAccess": [],
+    "uniqueName": null,
     "web": {
         "redirectUris": [],
         "homePageUrl": null,
@@ -165,5 +166,6 @@ Content-length: 1145
   ]
 }
 -->
+
 
 

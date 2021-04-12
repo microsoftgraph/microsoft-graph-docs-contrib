@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: List bundles
 description: List the bundles in a user's drive
 localization_priority: Normal
@@ -162,7 +161,7 @@ Because all bundles are items, you can use use all the standard item operations 
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
