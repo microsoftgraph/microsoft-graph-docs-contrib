@@ -1,17 +1,17 @@
 ---
-title: "Tutorial: Use the access reviews API to review access to all your Microsoft 365 groups with guest users - Microsoft Graph"
-description: "Use the access reviews API to review access to your Microsoft 365 groups"
+title: "Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups"
+description: "Use the access reviews API to review guest access to your Microsoft 365 groups"
 author: "FaithOmbongi"
 localization_priority: Normal
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the access reviews API to review access to all your Microsoft 365 groups with guest users
+# Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups
 
-In this tutorial, you will use Graph Explorer to create and read access reviews that targets all Microsoft 365 Groups with guest users in the tenant. To achieve this, you'll first use Azure AD B2B to invite and create an guest user, also referred to as an external identity, in your tenant. Then, you'll add this guest user to your Microsoft 365 group prior to creating and reading the access review.
+In this tutorial, you will use Graph Explorer to create and read access reviews that targets all Microsoft 365 groups with guest users in the tenant. To achieve this, you'll first use Azure AD B2B to invite and create a guest user, also referred to as an external identity, in your tenant. Then, you'll add this guest user to your Microsoft 365 group prior to creating and reading the access review.
 
 >[!NOTE]
->The response objects shown in this tutorial might be shortened for readability. All the properties will be returned from an actual call.
+>The response objects shown in this tutorial might be shortened for readability.
 
 ## Prerequisites
 
@@ -19,17 +19,16 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled. 
 + An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)  as a user in a global administrator role. 
-+ Permission - For this tutorial, you need the following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
++ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role. 
++ The following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
 
 To consent to the required permissions in Graph Explorer:
-1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
-2. Select the settings icon to the right of the user account details, and then choose **Select permissions**.
+1. Select the settings icon to the right of the user account details, and then choose **Select permissions**.
    
    ![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
-3. Scroll through the list of permissions to these permissions:
+2. Scroll through the list of permissions to these permissions:
    + AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.
    + Group (2), expand and then select **Group.ReadWrite.All**.
    + User (8), expand and then select **User.Invite.All** and **User.ReadWrite.All**.
@@ -40,8 +39,6 @@ To consent to the required permissions in Graph Explorer:
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
 
 ## Step 1: Create a test user in your tenant
-
-Create a new user and record their **id**. You will assign them a role in the access review later in this tutorial. 
 
 ### Request
 
@@ -78,7 +75,7 @@ Content-type: application/json
 
 ## Step 2: Invite a guest user into your tenant
 
-Invite a guest user with the email address **john.doe@outlook.com** to your tenant.
+Invite a guest user with the email address **john@tailspintoys.com** to your tenant.
 
 ### Request
 
@@ -88,7 +85,7 @@ Content-Type: application/json
 
 {
     "invitedUserDisplayName": "John Doe (Tailspin Toys)",
-    "invitedUserEmailAddress": "john.doe@outlook.com",
+    "invitedUserEmailAddress": "john@tailspintoys.com",
     "sendInvitationMessage": false,
     "inviteRedirectUrl": "https://myapps.microsoft.com"
 }
@@ -107,19 +104,18 @@ Content-type: application/json
     }    
 }
 ```
-Record the **id** of the **invitedUser** from the response to be used later in this tutorial. This is **john.doe@outlook.com**'s user **id** in your tenant.
 
 ## Step 3: Create a new Microsoft 365 group and add the guest user
 
 In this step:
 1. Create a new Microsoft 365 group named **Feelgood marketing campaign**.
 2. Assign yourself as the group owner.
-3. Add john.doe@outlook.com as a group member. Their access to the group is the subject of review by you, the group owner.
+3. Add john@tailspintoys.com as a group member. Their access to the group is the subject of review by you, the group owner.
 
 ### Request
 In this call, replace:
 + `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` with your **id**. To retrieve your **id**, run `GET` on `https://graph.microsoft.com/beta/me`.
-+ `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with **john.doe@outlook.com**'s **id** that you recorded.
++ `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with **john@tailspintoys.com**'s **id** from the response in Step 2.
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -176,7 +172,7 @@ The access review series uses following settings:
 ### Request
 In this call, replace the following:
 
-+ `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of the user you are designating as a backup reviewer. This is the **id** you recorded from Step 1.
++ `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of the user you are designating as a backup reviewer. This is the **id** from the response in Step 1.
 + Value of **startDate** with today's date and value of **endDate** with a date one year from the start date. 
 
 ```http
@@ -399,13 +395,13 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "baf1b0a0-1f9a-4a56-9884-6a30824f8d20",
                 "userDisplayName": "John Doe (Tailspin Toys)",
-                "userPrincipalName": "john.doe@outlook.com"
+                "userPrincipalName": "john@tailspintoys.com"
             },
             "principal": {
                 "@odata.type": "#microsoft.graph.userIdentity",
                 "id": "baf1b0a0-1f9a-4a56-9884-6a30824f8d20",
                 "displayName": "John Doe (Tailspin Toys)",
-                "userPrincipalName": "john.doe@outlook.com"
+                "userPrincipalName": "john@tailspintoys.com"
             }
         }
     ]
@@ -450,7 +446,7 @@ Content-type: text/plain
 ```
 ### Remove the guest user
 
-In this call, replace `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the **id** of the guest user, john.doe@outlook.com.
+In this call, replace `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the **id** of the guest user, john@tailspintoys.com.
 
 #### Request
 ```http

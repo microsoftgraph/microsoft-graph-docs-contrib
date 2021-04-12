@@ -1,6 +1,6 @@
 ---
-title: "Tutorial: Use the access reviews API to review access to your security groups - Microsoft Graph"
-description: "Use the access reviews API to review access to your groups"
+title: "Tutorial: Use the access reviews API to review access to your security groups"
+description: "Use the access reviews API to review access to your security groups"
 author: "FaithOmbongi"
 localization_priority: Normal
 ms.prod: "governance"
@@ -8,12 +8,12 @@ ms.prod: "governance"
 
 # Tutorial: Use the access reviews API to review access to your security groups
 
-In this tutorial, you will use Graph Explorer to create and read access reviews and understand its main building blocks: definitions, instances, and decisions.
+In this tutorial, you will use Graph Explorer to review access to a security group in your tenant.
 
 You can use Graph Explorer or Postman to try out and test your access reviews API calls before you automate them into a script or an app. This saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
 
 >[!NOTE]
->The response objects shown in this tutorial might be shortened for readability. All the properties will be returned from an actual call.
+>The response objects shown in this tutorial might be shortened for readability.
 
 ## Prerequisites
 
@@ -22,16 +22,15 @@ To complete this tutorial, you need the following resources and privileges:
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Log in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
   + [Optional] Start a new **incognito** or **InPrivate browser** session or start a session in an anonymous browser. You will log in later in this tutorial.
-+ Permissions - For this tutorial, you need the following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
++ The following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
 
 To consent to the required permissions in Graph Explorer:
-1. Click **Sign in to Graph Explorer** and sign in using the account that has a global administrator role.
-2. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.
+1. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.
    
    ![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
-3. Scroll through the list of permissions to these permissions:
+2. Scroll through the list of permissions to these permissions:
    + AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.
    + Group (2), expand and then select **Group.ReadWrite.All**.
   

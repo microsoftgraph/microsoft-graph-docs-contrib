@@ -1,6 +1,6 @@
 ---
-title: "Overview of the access reviews API for groups - Microsoft Graph"
-description: "Overview of the access reviews API for groups"
+title: "Overview of access reviews API for groups"
+description: "The access reviews API for groups allows you to programmatically review access to your groups"
 author: "FaithOmbongi"
 localization_priority: Normal
 ms.prod: "governance"
@@ -14,15 +14,14 @@ The [access reviews API for groups](/graph/api/resources/accessreviewsv2-root?vi
 
 ## Scope of use
 
-The access reviews APIs support both delegated and application contexts.
-+ In a user (delegated) context, an application calls the access reviews API on behalf of a user. Typical scenarios include:
-  + An administrator using a script to create, read, or update an access review.
-  + A resource owner using an app or a script to create an access review for a resource they own.
-  + An administrator automatically collecting all decisions for one or more access reviews.
+The access reviews APIs support both delegated and application contexts. In a user (delegated) context, an application calls the access reviews API on behalf of a user. Typical scenarios include:
++ An administrator using a script to create, read, or update an access review.
++ A resource owner using an app or a script to create an access review for a resource they own.
++ An administrator automatically collecting all decisions for one or more access reviews.
   
-    To authorize your app in this context, see [get access on behalf of a user](/graph/auth-v2-user).
+To authorize your app in a user (delegated) context, see [get access on behalf of a user](/graph/auth-v2-user).
 
-+ In an application context, an application calls the access reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews. To authorize your app in this context, see [get access without a user](/graph/auth-v2-service).
+In an application context, an application calls the access reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews. To authorize your app in this context, see [get access without a user](/graph/auth-v2-service).
 
 ## Building blocks of an access review
 
@@ -33,8 +32,10 @@ Access reviews are structured logically and are comprised of these building bloc
 
 ## Next steps
 
-+ [Use the access reviews API for groups to create access and read definitions, instances, and decisions.](tutorial-accessreviews-securitygroup.md)
-+ [Use the access reviews API for groups to review access to all your Microsoft 365 groups with guest users.](tutorial-accessreviews-M365group.md)
+Try out the following tutorials to manage access reviews:
+
++ [Use access reviews API for groups to review access to your security groups](tutorial-accessreviews-securitygroup.md)
++ [Use access reviews API for groups to review access to all your Microsoft 365 groups with guest users](tutorial-accessreviews-M365group.md)
 
 ## See also
 
