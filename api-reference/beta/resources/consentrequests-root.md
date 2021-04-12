@@ -18,7 +18,7 @@ Azure Active Directory (Azure AD) consent requests help you manage the request w
 To allow users to request access or admin consent for applications they're unauthorized to grant consent to themselves, first enable the consent request workflow. 
 
 >[!NOTE]
->The current APIs are limited to configuring the workflow, reading the list of requests, and denying a request. At this time there aren’t any methods available to approve a request programmatically. However, the contents of the request can be used to recreate a URL which can be used to grant admin consent and approve a request.
+>The current APIs are limited to configuring the workflow, reading the list of requests, and denying a request. At this time, there aren’t any methods available to programmatically approve a request. However, the contents of the request can be used to recreate a URL which can be used to grant admin consent and approve a request.
 
 The consent request resource types include:
 
