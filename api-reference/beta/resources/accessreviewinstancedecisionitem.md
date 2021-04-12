@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItem resource type"
 description: "Represents a decision on a user's access on an accessReviewInstance."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 Represents an Azure AD [access review](accessreviewsv2-root.md) decision on an instance of a review. This decision represents the determination of a user or service principal's access for a given [access review instance](accessreviewinstance.md).
 
@@ -53,7 +55,6 @@ Here is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
-  "baseType": "",
   "openType": true
 }
 -->

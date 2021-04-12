@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookTableColumn workbookTableColumn = new WorkbookTableColumn();
-workbookTableColumn.id = 99;
+workbookTableColumn.id = "99";
 workbookTableColumn.name = "name-value";
 workbookTableColumn.index = 99;
 workbookTableColumn.values = JsonParser.parseString("\"values-value\"");

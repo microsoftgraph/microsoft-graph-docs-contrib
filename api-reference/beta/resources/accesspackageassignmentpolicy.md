@@ -3,7 +3,7 @@ title: "accessPackageAssignmentPolicy resource type"
 description: "An access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -65,7 +65,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

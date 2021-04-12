@@ -30,8 +30,11 @@ Make sure you have the corresponding permissions to call the following APIs.
 ### Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use
 
 1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-2. Select **Sign-in with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
+2. Select **Sign-in with Microsoft** and sign in using Azure AD global administrator or App Admin credentials.
 3. Upon successful sign in, you'll see the user account details in the left pane.
+
+> [!NOTE]
+> Sign in using a service principal is not currently supported. 
 
 ### Create an application
 

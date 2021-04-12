@@ -3,7 +3,7 @@ title: "List domainNameReferences"
 description: "Retrieve a list of directoryObject with a reference to the domain."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
