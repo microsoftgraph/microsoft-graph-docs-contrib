@@ -1,16 +1,16 @@
 ---
-title: "unifiedRoleAssignmentRequest: cancel"
-description: "Cancel a unifiedRoleAssignmentRequest."
+title: "unifiedRoleAssignmentScheduleRequest: cancel"
+description: "Cancel a unifiedRoleAssignmentScheduleRequest."
 author: "shauliu"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# unifiedRoleAssignmentRequest: cancel
+# unifiedRoleAssignmentScheduleRequest: cancel
 Namespace: microsoft.graph
 
-Immediately cancel a [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) and have the system automatically delete the cancelled request after 30 days.
+Immediately cancel a [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) and have the system automatically delete the cancelled request after 30 days.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /roleManagement/directory/roleAssignmentRequests/{unifiedRoleAssignmentRequestsId}/cancel
+POST /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestsId}/cancel
 ```
 
 ## Request headers
@@ -48,11 +48,11 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "unifiedroleassignmentrequest_cancel"
+  "name": "unifiedroleassignmentschedulerequest_cancel"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentRequests/{unifiedRoleAssignmentRequestsId}/cancel
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestsId}/cancel
 ```
 
 

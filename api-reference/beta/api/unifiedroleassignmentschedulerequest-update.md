@@ -1,16 +1,16 @@
 ---
-title: "Create unifiedRoleAssignmentRequest"
-description: "Create a new unifiedRoleAssignmentRequest object."
+title: "Update unifiedRoleAssignmentScheduleRequest"
+description: "Update the properties of an unifiedRoleAssignmentScheduleRequest object."
 author: "shauliu"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Create unifiedRoleAssignmentRequest
+# Update unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
 
-Create a new [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) object.
+Update the properties of an [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /roleManagement/directory/roleAssignmentRequests
+PATCH /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestsId}
 ```
 
 ## Request headers
@@ -38,13 +38,13 @@ POST /roleManagement/directory/roleAssignmentRequests
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) object.
+In the request body, supply a JSON representation of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.
 
-The following table shows the properties that are required when you create the [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md).
+The following table shows the properties that are required when you update the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the unifiedRoleAssignmentRequest. Key, not nullable, Read-only.|
+|id|String|The unique identifier for the unifiedRoleAssignmentScheduleRequest. Key, not nullable, Read-only.|
 |action|String|Representing the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Administrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Administrators change existing role assignments</li><li>`AdminRemove`: Administrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
 |principalId|String|Objectid of the principal to which the assignment is being granted to.|
 |roleDefinitionId|String|ID of the unifiedRoleDefinition the assignment is for. Read only.|
@@ -58,23 +58,23 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedroleassignmentrequest_from_unifiedroleassignmentrequests"
+  "name": "update_unifiedroleassignmentschedulerequest"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentRequests/
+PATCH https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestsId}
 Content-Type: application/json
-Content-length: 510
+Content-length: 466
 
 {
-  "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentRequest",
+  "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleRequest",
   "action": "String",
   "principalId": "String",
   "roleDefinitionId": "String",
@@ -98,14 +98,17 @@ Content-length: 510
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignmentRequest"
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleRequest"
 }
 -->
-``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
+```http
+HTTP/1.1 204 OK
 
+```
+
+<!--
 {
+  "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleRequest",
   "id": "c13ee236-e236-c13e-36e2-3ec136e23ec1",
   "action": "String",
   "principalId": "String",
@@ -122,5 +125,5 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.ticketInfo"
   }
 }
-```
+```-->
 

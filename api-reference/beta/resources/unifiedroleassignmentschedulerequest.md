@@ -1,5 +1,5 @@
 ---
-title: "unifiedRoleAssignmentRequest resource type"
+title: "unifiedRoleAssignmentScheduleRequest resource type"
 description: "Represents the request for active role assignment operations through Azure AD Privileged Identity Management."
 author: "shauliu"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
-# unifiedRoleAssignmentRequest resource type
+# unifiedRoleAssignmentScheduleRequest resource type
 
 Namespace: microsoft.graph
 
@@ -15,20 +15,20 @@ Namespace: microsoft.graph
 
 Represents the request for active role assignment operations through Azure AD Privileged Identity Management.
 
-`unifiedRoleAssignmentRequest` is a ticket-modeled entity used to manage the lifecycle of active role assignments in the directory. It represents the intention/decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent scheduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `unifiedRoleAssignmentSchedule` and `unifiedRoleAssignmentInstance`.
+`unifiedRoleAssignmentScheduleRequest` is a ticket-modeled entity used to manage the lifecycle of active role assignments in the directory. It represents the intention/decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent scheduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `unifiedRoleAssignmentSchedule` and `unifiedRoleAssignmentInstance`.
 
-Administrators can use `unifiedRoleAssignmentRequest` to create active role assignments with or without start and end time. While an eligible administrator can use it to create a request to activate an eligible role assignment. 
+Administrators can use `unifiedRoleAssignmentScheduleRequest` to create active role assignments with or without start and end time. While an eligible administrator can use it to create a request to activate an eligible role assignment. 
 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List unifiedRoleAssignmentRequests](../api/unifiedroleassignmentrequest-list.md)|[unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) collection|Get a list of the [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) objects and their properties.|
-|[Create unifiedRoleAssignmentRequest](../api/unifiedroleassignmentrequest-post-unifiedroleassignmentrequests.md)|[unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md)|Create a new [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) object.|
-|[Get unifiedRoleAssignmentRequest](../api/unifiedroleassignmentrequest-get.md)|[unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md)|Read the properties and relationships of an [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) object.|
-|[Update unifiedRoleAssignmentRequest](../api/unifiedroleassignmentrequest-update.md)|[unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md)|Update the properties of an [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) object.|
-|[filterByCurrentUser](../api/unifiedroleassignmentrequest-filterbycurrentuser.md)|[unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) collection|Get a list of the [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) objects and their properties that are related to a particular user.|
-|[cancel](../api/unifiedroleassignmentrequest-cancel.md)|None|Cancels a [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) immediately and marks it for deletion in 30 days|
+|[List unifiedRoleAssignmentScheduleRequests](../api/unifiedroleassignmentschedulerequest-list.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) collection|Get a list of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) objects and their properties.|
+|[Create unifiedRoleAssignmentScheduleRequest](../api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Create a new [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|
+|[Get unifiedRoleAssignmentScheduleRequest](../api/unifiedroleassignmentschedulerequest-get.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Read the properties and relationships of an [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|
+|[Update unifiedRoleAssignmentScheduleRequest](../api/unifiedroleassignmentschedulerequest-update.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Update the properties of an [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|
+|[filterByCurrentUser](../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) collection|Get a list of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) objects and their properties that are related to a particular user.|
+|[cancel](../api/unifiedroleassignmentschedulerequest-cancel.md)|None|Cancels a [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) immediately and marks it for deletion in 30 days|
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +36,7 @@ Administrators can use `unifiedRoleAssignmentRequest` to create active role assi
 |action|String|Representing the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Administrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Administrators change existing role assignments</li><li>`AdminRemove`: Administrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
 |appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.|
 |directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.|
-|id|String|The unique identifier for the unifiedRoleAssignmentRequest. Key, not nullable, Read-only.|
+|id|String|The unique identifier for the unifiedRoleAssignmentScheduleRequest. Key, not nullable, Read-only.|
 |isValidationOnly|Boolean|A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
 |justification|String|A message provided by users and administrators when create the request about why it is needed.|
 |principalId|String| Objectid of the principal to which the assignment is being granted to.|
@@ -59,13 +59,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.unifiedRoleAssignmentRequest",
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleRequest",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleAssignmentRequest",
+  "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleRequest",
   "id": "String (identifier)",
   "action": "String",
   "principalId": "String",

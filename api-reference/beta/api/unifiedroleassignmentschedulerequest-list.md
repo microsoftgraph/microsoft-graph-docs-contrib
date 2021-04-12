@@ -1,17 +1,17 @@
 ---
-title: "List unifiedRoleAssignmentRequests"
-description: "Get a list of the unifiedRoleAssignmentRequest objects and their properties."
+title: "List unifiedRoleAssignmentScheduleRequests"
+description: "Get a list of the unifiedRoleAssignmentScheduleRequest objects and their properties."
 author: "shauliu"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List unifiedRoleAssignmentRequests
+# List unifiedRoleAssignmentScheduleRequests
 
 Namespace: microsoft.graph
 
-Get a list of the [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) objects and their properties.
+Get a list of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) objects and their properties.
 
 ## Permissions
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /roleManagement/directory/roleAssignmentRequests
+GET /roleManagement/directory/roleAssignmentScheduleRequests
 ```
 
 ## Optional query parameters
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignmentRequest](../resources/unifiedroleassignmentrequest.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) objects in the response body.
 
 ## Examples
 
@@ -58,12 +58,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "list_unifiedroleassignmentrequest"
+  "name": "list_unifiedroleassignmentschedulerequest"
 }
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentRequests
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests
 ```
 
 ### Response
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentRequ
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.unifiedRoleAssignmentRequest)"
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleAssignmentScheduleRequest)"
 }
 -->
 

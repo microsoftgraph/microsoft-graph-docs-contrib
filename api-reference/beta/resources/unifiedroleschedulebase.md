@@ -19,7 +19,7 @@ Base property of unified role schedules that combines unified role assignment sc
 | :--------------- | :------------- | :------------------------ |
 | appScopeId       | String         | Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only. |
 | createdDateTime  | DateTimeOffset | Time that the schedule was created. |
-| createdUsing     | String         | ID of the roleAssignmentRequest that created this schedule. |
+| createdUsing     | String         | ID of the roleAssignmentScheduleRequest that created this schedule. |
 | directoryScopeId | String         | Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only. |
 | id               | String         | The unique identifier for the unifiedRoleAssignmentSchedule. Key, not nullable, Read-only. |
 | modifiedDateTime | DateTimeOffset | Last time the schedule was updated. |

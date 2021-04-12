@@ -6872,10 +6872,10 @@
         {
           "Id": "d90ad140-58aa-11eb-9aa5-a83ab134eab0",
           "ApiChange": "Resource",
-          "ChangedApiName": "unifiedRoleAssignmentRequest",
+          "ChangedApiName": "unifiedRoleAssignmentScheduleRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentRequest?view=graph-rest-beta) resource type",
-          "Target": "unifiedRoleAssignmentRequest"
+          "Description": "Added the [unifiedRoleAssignmentScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {
           "Id": "d90d309b-58aa-11eb-9aa5-a83ab134eab0",
@@ -7112,10 +7112,10 @@
         {
           "Id": "d9534f0a-58aa-11eb-9aa5-a83ab134eab0",
           "ApiChange": "Enum type",
-          "ChangedApiName": "roleAssignmentRequestFilterByCurrentUserOptions",
+          "ChangedApiName": "roleAssignmentScheduleRequestFilterByCurrentUserOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **roleAssignmentRequestFilterByCurrentUserOptions** enumeration type",
-          "Target": "roleAssignmentRequestFilterByCurrentUserOptions"
+          "Description": "Added the **roleAssignmentScheduleRequestFilterByCurrentUserOptions** enumeration type",
+          "Target": "roleAssignmentScheduleRequestFilterByCurrentUserOptions"
         },
         {
           "Id": "d955bf43-58aa-11eb-9aa5-a83ab134eab0",
@@ -7162,8 +7162,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancel",
           "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/unifiedRoleAssignmentRequest-cancel?view=graph-rest-beta) method to the [unifiedRoleAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentRequest?view=graph-rest-beta) resource",
-          "Target": "unifiedRoleAssignmentRequest"
+          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/unifiedRoleAssignmentScheduleRequest-cancel?view=graph-rest-beta) method to the [unifiedRoleAssignmentScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {
           "Id": "d9642123-58aa-11eb-9aa5-a83ab134eab0",
@@ -7194,8 +7194,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/unifiedRoleAssignmentRequest-filterByCurrentUser?view=graph-rest-beta) method to the [unifiedRoleAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentRequest?view=graph-rest-beta) resource",
-          "Target": "unifiedRoleAssignmentRequest"
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/unifiedRoleAssignmentScheduleRequest-filterByCurrentUser?view=graph-rest-beta) method to the [unifiedRoleAssignmentScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {
           "Id": "d96dc90c-58aa-11eb-9aa5-a83ab134eab0",
