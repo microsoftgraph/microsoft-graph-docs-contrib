@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
   "isRefinable": true,
   "isRetrievable": true,
   "isSearchable": true,
-  "labels": [ "string" ],
+  "labels": [ "stringCollection" ],
   "name": "string",
   "type": "string"
 }
