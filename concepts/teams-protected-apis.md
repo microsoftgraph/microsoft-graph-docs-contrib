@@ -11,6 +11,7 @@ ms.prod: "microsoft-teams"
 Microsoft Teams APIs in Microsoft Graph that access sensitive data are considered protected APIs. 
 These APIs require that you have additional validation, beyond permissions and consent, before you can use them.
 
+
 The following APIs are currently protected:
 * [List channel messages](/graph/api/channel-list-messages) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Get chatMessages in a channel delta](/graph/api/chatmessage-delta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
