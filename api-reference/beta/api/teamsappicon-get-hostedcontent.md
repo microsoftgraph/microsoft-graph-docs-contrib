@@ -1,5 +1,5 @@
 ---
-title: "Get hostedContent in an app's icon"
+title: "Get hostedContent in a Teams app icon"
 description: "Retrieve the hosted content in a teamsAppIcon."
 localization_priority: Normal
 author: "jecha"
@@ -32,7 +32,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/colorIcon/hostedContent/
+GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/colorIcon/hostedContent/$value
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/outlineIcon/hostedContent/
+GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/outlineIcon/hostedContent/$value
 ```
 
 ## Optional query parameters
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkHoste
 
 ## Examples
 
-### Example 1: Get hosted content in color icon.
+### Example 1: Get the bytes of the hosted content of the color icon of a Teams App.
 
 #### Request
 
@@ -63,7 +65,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "teamsappicon_get_hostedcontent"
+  "name": "teamsappicon_get_hostedcontent_coloricon_value"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/colorIcon/hostedContent/
@@ -95,7 +97,7 @@ Content-type: application/json
 
 ---
 
-### Example 2: Get hosted content's image in outline icon.
+### Example 2: Get the bytes of the hosted content of the outline icon of a Teams App.
 
 #### Request
 
@@ -105,7 +107,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "teamsappicon_get_hostedcontentbytes"
+  "name": "teamsappicon_get_hostedcontentbytes_outlineicon_value"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/outlineIcon/hostedContent/$value
@@ -126,3 +128,8 @@ Response contains bytes for the hosted content in the body. `content-type` heade
 HTTP/1.1 200 OK
 Content-type: image/png
 ```
+
+## See also
+
+- [Get icons of a Teams app](teamsappicon-get.md)
+- [List apps in catalog](appcatalogs-list-teamsapps.md)

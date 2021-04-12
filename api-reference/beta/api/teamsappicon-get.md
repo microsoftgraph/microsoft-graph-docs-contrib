@@ -1,5 +1,5 @@
 ---
-title: "Get teamsAppIcon of an app"
+title: "Get teamsAppIcon of a TeamsApp"
 description: "Retrieve an icon associated with a specific definition of a Teams app."
 localization_priority: Normal
 author: "jecha"
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [teamsAppIcon]
 
 ## Examples
 
-### Example 1: Get color icon of a Teams app.
+### Example 1: Get color icon of a Teams app which is a 'custom' app.
 
 #### Request
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 #### Response
 
-The following example shows the response for an organizational app.
+The following example shows the response for an organizational app. *Note:* Accessing the actual [image of the custom app's icon](teamsappicon-get-hostedcontent.md) requires a Microsoft Graph token to be set on the request.
 
 <!-- {
   "blockType": "response",
@@ -99,7 +99,7 @@ Content-type: application/json
 
 ---
 
-### Example 2: Get outline icon of a Teams app.
+### Example 2: Get outline icon of a Teams app which is a 'custom' app.
 
 #### Request
 
@@ -117,7 +117,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 #### Response
 
-The following example shows the response for an organizational app.
+The following example shows the response for an organizational app. *Note:* Accessing the actual [image of the custom app's icon](teamsappicon-get-hostedcontent.md) requires a Microsoft Graph token to be set on the request.
 
 <!-- {
   "blockType": "response",
@@ -137,7 +137,7 @@ Content-type: application/json
 
 ---
 
-### Example 3: Get color icon of a Teams app.
+### Example 3: Get color icon of a Teams app which is a 'store' app.
 
 #### Request
 
@@ -173,7 +173,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Get outline icon of a Teams app.
+### Example 4: Get outline icon of a Teams app which is a 'store' app.
 
 #### Request
 
@@ -212,3 +212,4 @@ Content-type: application/json
 ## See also
 
 - [Get hosted content in app's icon](teamsappicon-get-hostedcontent.md)
+- [List apps in catalog](appcatalogs-list-teamsapps.md)

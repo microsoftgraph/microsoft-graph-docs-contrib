@@ -46,8 +46,10 @@ The details of a version of a [teamsApp](teamsapp.md).
 {
   "id": "string",
   "teamsAppId": "string",
-  "displayName": "Test App",
-  "version": "1.0.0"
+  "publishingState": "#microsoft.graph.teamsAppPublishingState",
+  "azureADAppId": "string",
+  "displayName": "string",
+  "version": "string"
 }
 ```
 
