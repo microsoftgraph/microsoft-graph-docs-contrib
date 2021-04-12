@@ -37,7 +37,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleAssignmentScheduleRequestFilterByCurrentUserOptions|ID of the principal object|
+|on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|ID of the principal object|
 
 
 ## Request headers
