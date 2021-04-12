@@ -1,16 +1,16 @@
 ---
-title: "unifiedRoleEligibilityRequest: filterByCurrentUser"
-description: "Get a list of the unifiedRoleEligibilityRequest objects and their properties filtered by a particular user principal"
+title: "unifiedRoleEligibilityScheduleRequest: filterByCurrentUser"
+description: "Get a list of the unifiedRoleEligibilityScheduleRequest objects and their properties filtered by a particular user principal"
 author: "shauliu"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# unifiedRoleEligibilityRequest: filterByCurrentUser
+# unifiedRoleEligibilityScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
-Get a list of the [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md) objects and their properties associated with a particular principal object.
+Get a list of the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) objects and their properties associated with a particular principal object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /roleManagement/directory/roleEligibilityRequests/filterByCurrentUser
+GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUser
 ```
 
 ## Function parameters
@@ -37,7 +37,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleEligibilityRequestFilterByCurrentUserOptions|ID of the principal object|
+|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|ID of the principal object|
 
 
 ## Request headers
@@ -50,18 +50,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) collection in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "unifiedroleeligibilityrequest_filterbycurrentuser"
+  "name": "unifiedRoleEligibilityScheduleRequest_filterbycurrentuser"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityRequests/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUser(on='parameterValue')
 ```
 
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityReq
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.unifiedRoleEligibilityRequest)"
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleEligibilityScheduleRequest)"
 }
 -->
 ``` http

@@ -1,16 +1,16 @@
 ---
-title: "Update unifiedRoleEligibilityRequest"
-description: "Update the properties of an unifiedRoleEligibilityRequest object."
+title: "Update unifiedRoleEligibilityScheduleRequest"
+description: "Update the properties of an unifiedRoleEligibilityScheduleRequest object."
 author: "shauliu"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Update unifiedRoleEligibilityRequest
+# Update unifiedRoleEligibilityScheduleRequest
 Namespace: microsoft.graph
 
-Update the properties of an [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md) object.
+Update the properties of an [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /roleManagement/directory/roleEligibilityRequests/{unifiedRoleEligibilityRequestsId}
+PATCH /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}
 ```
 
 ## Request headers
@@ -38,13 +38,13 @@ PATCH /roleManagement/directory/roleEligibilityRequests/{unifiedRoleEligibilityR
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md) object.
+In the request body, supply a JSON representation of the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object.
 
-The following table shows the properties that are required when you update the [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md).
+The following table shows the properties that are required when you update the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the unifiedRoleEligibilityRequest. Key, not nullable, Read-only|
+|id|String|The unique identifier for the unifiedRoleEligibilityScheduleRequest. Key, not nullable, Read-only|
 |action|String|Representing the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Administrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Administrators change existing role assignments</li><li>`AdminRemove`: Administrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
 |principalId|String|Objectid of the principal to which the assignment is being granted to.|
 |roleDefinitionId|String|ID of the unifiedRoleDefinition the assignment is for. Read only.|
@@ -60,23 +60,23 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedroleeligibilityrequest"
+  "name": "update_unifiedroleeligibilityschedulerequest"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityRequests/{unifiedRoleEligibilityRequestsId}
+PATCH https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}
 Content-Type: application/json
 Content-length: 467
 
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleEligibilityRequest",
+  "@odata.type": "#microsoft.graph.unifiedRoleEligibilityScheduleRequest",
   "action": "String",
   "principalId": "String",
   "roleDefinitionId": "String",
@@ -100,7 +100,7 @@ Content-length: 467
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleEligibilityRequest"
+  "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
 }
 -->
 ```http
@@ -109,7 +109,7 @@ HTTP/1.1 204 OK
 ```
 <!--
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleEligibilityRequest",
+  "@odata.type": "#microsoft.graph.unifiedRoleEligibilityScheduleRequest",
   "id": "a2e242a0-42a0-a2e2-a042-e2a2a042e2a2",
   "action": "String",
   "principalId": "String",

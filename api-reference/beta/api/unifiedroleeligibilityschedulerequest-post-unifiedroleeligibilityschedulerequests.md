@@ -1,16 +1,16 @@
 ---
-title: "Create unifiedRoleEligibilityRequest"
-description: "Create a new unifiedRoleEligibilityRequest object."
+title: "Create unifiedRoleEligibilityScheduleRequest"
+description: "Create a new unifiedRoleEligibilityScheduleRequest object."
 author: "shauliu"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Create unifiedRoleEligibilityRequest
+# Create unifiedRoleEligibilityScheduleRequest
 Namespace: microsoft.graph
 
-Create a new [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md) object.
+Create a new [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /roleManagement/directory/roleEligibilityRequests
+POST /roleManagement/directory/roleEligibilityScheduleRequests
 ```
 
 ## Request headers
@@ -38,13 +38,13 @@ POST /roleManagement/directory/roleEligibilityRequests
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md) object.
+In the request body, supply a JSON representation of the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object.
 
-The following table shows the properties that are required when you create the [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md).
+The following table shows the properties that are required when you create the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the unifiedRoleEligibilityRequest. Key, not nullable, Read-only.|
+|id|String|The unique identifier for the unifiedRoleEligibilityScheduleRequest. Key, not nullable, Read-only.|
 |action|String|Representing the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Administrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Administrators change existing role assignments</li><li>`AdminRemove`: Administrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
 |principalId|String|Objectid of the principal to which the assignment is being granted to.|
 |roleDefinitionId|String|ID of the unifiedRoleDefinition the assignment is for. Read only.|
@@ -58,23 +58,23 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedroleeligibilityrequest_from_unifiedroleeligibilityrequests"
+  "name": "create_unifiedroleeligibilityschedulerequest_from_unifiedroleeligibilityschedulerequests"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityRequests
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
 Content-Type: application/json
 Content-length: 511
 
 {
-  "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleEligibilityRequest",
+  "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleEligibilityScheduleRequest",
   "action": "String",
   "principalId": "String",
   "roleDefinitionId": "String",
@@ -98,7 +98,7 @@ Content-length: 511
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleEligibilityRequest"
+  "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
 }
 -->
 ``` http

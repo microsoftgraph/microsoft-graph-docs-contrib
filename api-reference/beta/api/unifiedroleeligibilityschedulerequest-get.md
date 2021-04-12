@@ -1,16 +1,16 @@
 ---
-title: "Get unifiedRoleEligibilityRequest"
-description: "Read the properties and relationships of an unifiedRoleEligibilityRequest object."
+title: "Get unifiedRoleEligibilityScheduleRequest"
+description: "Read the properties and relationships of an unifiedRoleEligibilityScheduleRequest object."
 author: "shauliu"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get unifiedRoleEligibilityRequest
+# Get unifiedRoleEligibilityScheduleRequest
 Namespace: microsoft.graph
 
-Read the properties and relationships of an [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md) object.
+Read the properties and relationships of an [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /roleManagement/directory/roleEligibilityRequests/{unifiedRoleEligibilityRequestsId}
+GET /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}
 ```
 
 ## Optional query parameters
@@ -44,18 +44,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [unifiedRoleEligibilityRequest](../resources/unifiedroleeligibilityrequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleeligibilityrequest"
+  "name": "get_unifiedroleeligibilityschedulerequest"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityRequests/{unifiedRoleEligibilityRequestsId}
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}
 ```
 
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityReq
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleEligibilityRequest"
+  "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
 }
 -->
 ``` http
