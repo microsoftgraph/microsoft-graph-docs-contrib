@@ -1,6 +1,6 @@
 ---
 title: "rbacApplication: roleSchedules"
-description: "Function to retrieve both roleAssignmentShedules and roleEligibilitySchedules in a single call."
+description: "Retrieve both roleAssignmentSchedules and roleEligibilitySchedules."
 author: "shauliu"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # rbacApplication: roleSchedules
 Namespace: microsoft.graph
 
-Function to retrieve both roleAssignmentShedules and roleEligibilitySchedules in a single call.
+Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,14 +33,14 @@ GET /roleManagement/directory/roleSchedules
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+The following table shows the query parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only. |
-|appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only. |
-|principalId|String|Objectid of the principal to which the schedules belong to. |
-|roleDefinitionId|String|ID of the unifiedRoleDefinition the assignment is for. Read only.|
+|directoryScopeId|String|Id of the directory object that represents the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only. |
+|appScopeId|String|Id of the app specific scope. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only. |
+|principalId|String|Objectid of the principal to which the schedules belong. |
+|roleDefinitionId|String|ID of the unifiedRoleDefinition for the assignment. Read only.|
 
 
 ## Request headers
