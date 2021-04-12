@@ -28,7 +28,7 @@ You can select one or all the recommendations to create an effective notificatio
 ### Prerequisites
 
 When using the activity feed notification API you must be aware of the following:
-  * You must be aware when the users select a toast notification they access the activity feed and not the app. To switch to another activity, they must select a notification in the activity feed.
+  * When the users select a toast notification they access the activity feed and not the app. To switch to another activity, they must select a notification in the activity feed.
   * The notifications setting appears for the user only when the selected app sends a notification.
   * The app icon for each notification cannot be customized, and is the one that is included in the app manifest.
   * Currently, notifications can only be sent at a user level, and not at a group or a team level.
