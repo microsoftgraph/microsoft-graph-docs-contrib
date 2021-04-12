@@ -248,7 +248,6 @@ Content-length: 1688
       "displayName": "",
       "contentType": "application/oxps",
       "size": 276604
-      }
     }
   ]
 }

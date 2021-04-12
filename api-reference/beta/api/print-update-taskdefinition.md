@@ -96,8 +96,11 @@ Content-length: 122
 ### Response
 The following is an example of the response.
 <!-- {
-  "blockType": "response"
-} -->
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printTaskDefinition"
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
