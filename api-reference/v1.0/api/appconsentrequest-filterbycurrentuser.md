@@ -1,6 +1,6 @@
 ---
 title: "appConsentRequest: filterByCurrentUser"
-description: "Retrieve appConsentRequest for which the current user is the reviewer."
+description: "Retrieve appConsentRequest objects for which the current user is the reviewer."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a collection of [appConsentRequest](../resources/appconsentrequest.md) resources for which the current user is the reviewer and the status of the userConsentRequest for accessing the specified app is `InProgress`.
+Retrieve a collection of [appConsentRequest](../resources/appconsentrequest.md) objects for which the current user is the reviewer and the status of the userConsentRequest for accessing the specified app is `InProgress`.
 
 ## Permissions
 
@@ -40,11 +40,11 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Filter to query appConsentRequest for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
+|on|consentRequestFilterByCurrentUserOptions|Filter to query appConsentRequest objects for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
 ## Query parameters
 
-This function requires the `$filter` OData query parameter to return a collection of [userConsentRequest](../resources/userconsentrequest.md) for which the status is `InProgress`. For general information, see [OData query parameters](/graph/query-parameters).
+This function requires the `$filter` OData query parameter to return a collection of [userConsentRequest](../resources/userconsentrequest.md) objects for which the status is `InProgress`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -58,7 +58,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [appConsentRequest](../resources/appconsentrequest.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [appConsentRequest](../resources/appconsentrequest.md)  objects in the response body.
 
 ## Example
 

@@ -1,6 +1,6 @@
 ---
 title: "userConsentRequest: filterByCurrentUser"
-description: "Retrieve userConsentRequest for which the current user is the reviewer."
+description: "Retrieve userConsentRequest objects for which the current user is the reviewer."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a collection of [userConsentRequest](../resources/userconsentrequest.md) resources for accessing a specified app, for which the current user is the reviewer.
+Retrieve a collection of [userConsentRequest](../resources/userconsentrequest.md) objects for accessing a specified app, for which the current user is the reviewer.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Filter to query userConsentRequest for an appConsentRequest for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
+|on|consentRequestFilterByCurrentUserOptions|Filter to query userConsentRequest objects for an appConsentRequest object for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
 ## Optional query parameters
 This function supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-In this request, you list all **userConsentRequest** for which the current user is the reviewer and the status is `Completed`.
+In this request, you list all **userConsentRequest** objects for which the current user is the reviewer and the status is `Completed`.
 
 # [HTTP](#tab/http)
 <!-- {

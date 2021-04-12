@@ -1,6 +1,6 @@
 ---
 title: "appConsentRequest: filterByCurrentUser"
-description: "Retrieve appConsentRequest for which the current user is the reviewer."
+description: "Retrieve appConsentRequest objects for which the current user is the reviewer."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a collection of [appConsentRequest](../resources/appconsentrequest.md) resources for which the current user is the reviewer and the status of the userConsentRequest for accessing the specified app is `InProgress`.
+Retrieve a collection of [appConsentRequest](../resources/appconsentrequest.md) objects for which the current user is the reviewer and the status of the userConsentRequest for accessing the specified app is `InProgress`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,10 +39,10 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Filter to query appConsentRequest for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
+|on|consentRequestFilterByCurrentUserOptions|Filter to query appConsentRequest objects for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
 ## Query parameters
-This function requires the `$filter` OData query parameter to return a collection of [userConsentRequest](../resources/userconsentrequest.md) whose status is `InProgress`. For general information, see [OData query parameters](/graph/query-parameters).
+This function requires the `$filter` OData query parameter to return a collection of [userConsentRequest](../resources/userconsentrequest.md) objects for which the status is `InProgress`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
