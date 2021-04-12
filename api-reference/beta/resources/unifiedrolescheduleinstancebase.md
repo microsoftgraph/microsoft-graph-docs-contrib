@@ -27,7 +27,7 @@ Namespace: microsoft.graph
 |:---|:---|:---|
 |appScope|[appScope](../resources/appscope.md)|Read-only property with details of the app specific scope when the assignment scope is app specific. Containment entity. |
 |directoryScope|[directoryObject](../resources/directoryobject.md)|Property referencing the directory object that is the scope of the assignment. Provided so that callers can get the directory object using `$expand` at the same time as getting the role assignment. Read-only.|
-|principal|[directoryObject](../resources/directoryobject.md)|Property referencing the principal that is getting a role assignment through the request. Provided so that callers can get the principal using `$expand` at the same time as getting the role assignment. Read-only.|
+|principal|[directoryObject](../resources/directoryobject.md)|The principal that is getting a role assignment through the request. Enables the retrieval of the principal using `$expand` at the same time as getting the role assignment. Read-only.|
 |roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|The roleDefinition for the assignment. Enables the retrieval of the role definition using `$expand` at the same time as getting the role assignment. The roleDefinition.Id is automatically expanded.|
 
 ## JSON representation
