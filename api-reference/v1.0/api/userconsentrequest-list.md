@@ -1,5 +1,5 @@
 ---
-title: "List userConsentRequest"
+title: "List userConsentRequests"
 description: "Retrieve userConsentRequest objects and their properties."
 author: "psignoret"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List userConsentRequest
+# List userConsentRequests
 
 Namespace: microsoft.graph
 
