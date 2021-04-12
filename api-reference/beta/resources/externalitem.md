@@ -3,13 +3,14 @@ title: "externalItem resource type"
 description: "An item added to a Microsoft Graph connection."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
 # externalItem resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

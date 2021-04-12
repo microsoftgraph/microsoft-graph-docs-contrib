@@ -2,6 +2,7 @@
 title: "Delete externalGroup"
 description: "Deletes an externalGroup object."
 author: "snlraju-msft"
+ms.author: mecampos
 localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
@@ -9,7 +10,7 @@ doc_type: apiPageType
 
 # Delete externalGroup
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

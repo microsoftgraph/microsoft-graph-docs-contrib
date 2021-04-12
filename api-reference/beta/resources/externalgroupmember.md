@@ -2,6 +2,7 @@
 title: "externalGroupMember resource type"
 description: "Represents a member of an externalGroup used to set permissions on external content added to Microsoft Graph."
 author: "snlraju-msft"
+ms.author: mecampos
 localization_priority: Normal
 ms.prod: "search"
 doc_type: resourcePageType
@@ -9,7 +10,7 @@ doc_type: resourcePageType
 
 # externalGroupMember resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
