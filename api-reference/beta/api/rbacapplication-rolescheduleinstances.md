@@ -1,6 +1,6 @@
 ---
 title: "rbacApplication: roleScheduleInstances"
-description: "Function to retrieve both roleAssignmentSheduleInstances and roleEligibilityScheduleInstances in a single call."
+description: "Retrieve both roleAssignmentScheduleInstances and roleEligibilityScheduleInstances."
 author: "shauliu"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -92,4 +92,3 @@ Content-Type: application/json
   ]
 }
 ```
-
