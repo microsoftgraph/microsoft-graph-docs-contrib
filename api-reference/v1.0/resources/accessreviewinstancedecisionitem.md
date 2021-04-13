@@ -31,13 +31,13 @@ Inherits from [entity](../resources/entity.md).
 |accessReviewId|String|The identifier of the accessReviewInstance parent.|
 |appliedBy|[userIdentity](../resources/useridentity.md)|The identifier of the user who applied the decision.|
 |appliedDateTime|DateTimeOffset|The timestamp when the approval decision was applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|applyResult|String|The result of applying the decision. Possible values: `NotApplied`, `Success`, `Failed`, `NotFound`, or `NotSupported`.|
+|applyResult|String|The result of applying the decision. Possible values: `New`, `AppliedSuccessfully`, `AppliedWithUnknownFailure`, `AppliedSuccessfullyButObjectNotFound` and `ApplyNotSupported`.|
 |decision|String|Result of the review. Possible values: `Approve`, `Deny`, `NotReviewed`, or `DontKnow`.|
 |id|String| The identifier of the decision. Inherited from [entity](../resources/entity.md)|
 |justification|String|Justification left by the reviewer when they made the decision.|
 |principal|[identity](../resources/identity.md)|Every decision item in an access review represents a principal's access to a resource. This property represents details of the principal. For example, if a decision item represents access of User "Bob" to Group "Sales" - The principal is "Bob" and the resource is "Sales". Principals can be of two types - userIdentity and servicePrincipalIdentity.|
 |principalLink|String|**TODO: Add Description**|
-|recommendation|String|A system-generated recommendation for the approval decision. Possible values: `Approve`, `Deny`, or `NotAvailable`.|
+|recommendation|String|A system-generated recommendation for the approval decision. Possible values: `Approve`, `Deny`, or `NoInfoAvailable`.|
 |resource|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|Every decision item in an access review represents a principal's access to a resource. This property represents details of the resource. For example, if a decision item represents access of User "Bob" to Group "Sales" - The principal is Bob and the resource is "Sales". Resources can be of multiple types. See [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|
 |resourceLink|String|**TODO: Add Description**|
 |reviewedBy|[userIdentity](../resources/useridentity.md)| The identifier of the reviewer.|
