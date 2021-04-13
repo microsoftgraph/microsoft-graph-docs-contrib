@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.ConsentRequest|
+|Delegated (work or school account)|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.ReadWrite.ConsentRequest|
+|Application|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
 
 When calling on behalf of a user, the user needs to belong to the [Global Administrator](/azure/active-directory/roles/permissions-reference) directory role.
 

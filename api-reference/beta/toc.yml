@@ -8,6 +8,7 @@ items:
       href: /graph/auth/index?context=graph/api/beta
     - name: Basics
       href: /graph/auth/auth-concepts?context=graph/api/beta
+    - name: Register your app
       href: /graph/auth-register-app-v2?context=graph/api/beta
     - name: Get access on behalf of a user
       href: /graph/auth-v2-user?context=graph/api/beta
@@ -10682,6 +10683,30 @@ items:
               href: api/riskyusers-dismiss.md
         - name: Identity provider
           items:
+          - name: Identity provider base
+            href: resources/identityproviderbase.md
+          - name: Built-in identity provider
+            href: resources/builtinidentityprovider.md
+          - name: Social identity provider
+            href: resources/socialidentityprovider.md
+          - name: Apple identity provider
+            href: resources/appleidentityprovider.md
+          - name: OpenID Connect identity provider
+            href: resources/openidconnectidentityprovider.md
+          - name: List
+            href: api/identityproviderbase-list.md
+          - name: Create
+            href: api/identityproviderbase-post-identityproviders.md
+          - name: Get
+            href: api/identityproviderbase-get.md
+          - name: Update
+            href: api/identityproviderbase-update.md
+          - name: Delete
+            href: api/identityproviderbase-delete.md
+          - name: List available provider types
+            href: api/identityproviderbase-list-availableprovidertypes.md
+        - name: Identity provider (deprecated)
+          items:
           - name: Identity provider type
             href: resources/identityprovider.md
           - name: OpenID Connect identity provider type
@@ -11045,11 +11070,13 @@ items:
               href: api/identityapiconnector-get.md
             - name: Update
               href: api/identityapiconnector-update.md
+            - name: Upload a client certificate
+              href: api/identityapiconnector-uploadclientcertificate.md
             - name: Delete
               href: api/identityapiconnector-delete.md
       - name: Governance
         items:
-        - name: Access reviews for groups
+        - name: Access reviews
           href: resources/accessreviewsv2-root.md
           items:
           - name: Access review schedule definition
@@ -11082,6 +11109,8 @@ items:
               href: api/accessreviewinstance-acceptrecommendations.md
             - name: Apply decisions
               href: api/accessreviewinstance-applydecisions.md
+            - name: Batch record decisions
+              href: api/accessreviewinstance-batchrecorddecisions.md
           - name: Access review instance decision item
             href: resources/accessreviewinstancedecisionitem.md
             items:
@@ -11091,7 +11120,7 @@ items:
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
-        - name: Access reviews
+        - name: Access reviews (legacy)
           href: resources/accessreviews-root.md
           items:
           - name: Access review
@@ -11438,17 +11467,18 @@ items:
               - name: Cancel
                 href: api/governanceroleassignmentrequest-cancel.md
         - name: Terms of use
-          href: resources/agreement.md
           items:
-          - name: Create agreement
+          - name: Agreement
+            href: resources/agreement.md
+          - name: Create
             href: api/agreement-post-agreements.md
-          - name: List agreements
+          - name: List
             href: api/agreement-list.md
-          - name: Get agreement
+          - name: Get
             href: api/agreement-get.md
-          - name: Update agreement
+          - name: Update
             href: api/agreement-update.md
-          - name: Delete agreement
+          - name: Delete
             href: api/agreement-delete.md
           - name: List acceptance status
             href: api/user-list-agreementacceptances.md
@@ -13077,17 +13107,17 @@ items:
         - name: Get channel messages delta
           href: api/chatmessage-delta.md
         - name: Get channel message
-          href: api/channel-get-message.md
+          href: api/chatmessage-get.md
         - name: List message replies
-          href: api/channel-list-messagereplies.md
+          href: api/chatmessage-list-replies.md
         - name: Get message reply
-          href: api/channel-get-messagereply.md
+          href: api/chatmessage-get.md
         - name: Send message
-          href: api/channel-post-message.md
+          href: api/channel-post-messages.md
         - name: Reply to message
-          href: api/channel-post-messagereply.md
+          href: api/chatmessage-post-replies.md
         - name: Get messages across all channels
-          href: api/channels-getallmessages.md  
+          href: api/channel-getallmessages.md  
       - name: Chat
         href: resources/chat.md
         items:
@@ -13108,11 +13138,13 @@ items:
         - name: Remove member
           href: api/chat-delete-members.md
         - name: List messages in a chat
-          href: api/chat-list-message.md
+          href: api/chat-list-messages.md
         - name: Get message in chat
-          href: api/chat-get-message.md
+          href: api/chatmessage-get.md
+        - name: Get messages across all chats
+          href: api/chats-getallmessages.md 
         - name: Send message in chat
-          href: api/chat-post-message.md
+          href: api/chat-post-messages.md
         - name: Get chat between user and app 
           href: api/userscopeteamsappinstallation-get-chat.md
       - name: Chat message
@@ -13120,24 +13152,24 @@ items:
         items:
         - name: List channel messages
           href: api/channel-list-messages.md
-        - name: Get channel messages delta
+        - name: List channel messages delta
           href: api/chatmessage-delta.md
-        - name: Get channel message
-          href: api/channel-get-message.md
         - name: List message replies
-          href: api/channel-list-messagereplies.md
+          href: api/chatmessage-list-replies.md
+        - name: Get message in channel or chat
+          href: api/chatmessage-get.md
         - name: Get message reply
-          href: api/channel-get-messagereply.md
+          href: api/chatmessage-get.md
         - name: Send message
           href: api/chatmessage-post.md
-        - name: Reply to message
-          href: api/channel-post-messagereply.md
+        - name: Send reply to a message
+          href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md
-        - name: Get all chat messages
+        - name: Get messages across all chats
           href: api/chats-getallmessages.md  
         - name: List hosted content
-          href: api/chatmessage-list-chatmessagehostedcontents.md
+          href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: App catalog

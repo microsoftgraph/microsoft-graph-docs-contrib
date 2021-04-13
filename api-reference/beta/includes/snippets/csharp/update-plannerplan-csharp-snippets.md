@@ -13,6 +13,7 @@ var plannerPlan = new PlannerPlan
 
 await graphClient.Planner.Plans["{plannerPlan-id}"]
 	.Request()
+	.Header("Prefer","return=representation")
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerPlan);
 

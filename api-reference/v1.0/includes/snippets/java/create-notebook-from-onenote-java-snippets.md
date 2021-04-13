@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Notebook notebook = new Notebook();
-notebook.displayName = "Notebook name";
+notebook.displayName = "My Private notebook";
 
 graphClient.me().onenote().notebooks()
 	.buildRequest()
