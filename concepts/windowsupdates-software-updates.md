@@ -9,13 +9,13 @@ doc_type: conceptualPageType
 
 # Software updates with the Windows Update for Business deployment service
 
-Software updates are the primary type of content deployable by the deployment service. In order to find specific updates available for deployment you will refer to entries in a catalog.
+Software updates are the primary type of content deployable by the deployment service. Look up in a catalog to find specific updates available for deployment.
 
-You may already be familiar with the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/) which lists software updates for Windows. The deployment service provides its own [catalog](/graph/api/resources/windowsupdates-catalog) to simplify decision making and approval workflows by aggregating equivalent updates together under a single [catalogEntry](/graph/api/resources/windowsupdates-catalogentry).
+You may already be familiar with the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/) which lists software updates for Windows. The deployment service provides its own [catalog](/graph/api/resources/windowsupdates-catalog), and aggregates equivalent updates under a single [catalogEntry](/graph/api/resources/windowsupdates-catalogentry) to simplify decision making and approval workflows.
 
 ## Windows update categories
 
-There are two high-level categories of Windows 10 updates: feature updates and quality updates. Quality updates are further classified as security and non-security. The deployment service currently supports deploying feature updates and security quality updates. Driver management is not currently included as part of the deployment service's support for quality updates.
+There are two high-level categories of Windows 10 updates: feature updates and quality updates. Quality updates are further classified as security and non-security. The deployment service currently supports deploying feature updates and security quality updates. Driver management is currently excluded from the quality updates of the deployment service.
 
 To learn more about Windows 10 updates and servicing, see [Quick guide to Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
 
@@ -36,26 +36,26 @@ In the catalog provided by the Windows Update for Business deployment service, t
 |--------------------------------------------------------|----------------------------------------------------------|
 | 03/09/2021 - 2021.03 B Security Updates for Windows 10 | microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry |
 
-This aggregation simplifies the process of approving updates across a diverse installed base. The deployment service also similarly rolls up feature update releases.
+This aggregation simplifies the process of approving updates across a diverse installed base. Similarly, the deployment service rolls up feature update releases.
 
 ### Common properties
 
-All updates in the deployment service's catalog have the following common properties.
+All updates in the deployment service catalog have the following common properties.
 
 | Property                | Description                                                        |
 |-------------------------|--------------------------------------------------------------------|
-| id                      | Unique identifier for the catalog entry                            |
-| displayName             | Title of the software update                                       |
-| releaseDateTime         | Date and time the update was released or refreshed                 |
-| deployableUntilDateTime | Date and time until the update can no longer be deployed, if known |
+| id                      | Unique identifier for the catalog entry.                           |
+| displayName             | Title of the software update.                                      |
+| releaseDateTime         | Date and time the update was released or refreshed.                |
+| deployableUntilDateTime | Date and time until the update can no longer be deployed, if known.|
 
 ### Feature updates
 
-Feature updates in the deployment service's catalog are identified by version. Entries aggregate differences across architecture (e.g. x86 vs. x64) and product (in the Microsoft Update Catalog, all feature updates are for the *Windows 10* product).
+Feature updates in the deployment service catalog are identified by version. Entries aggregate differences across architecture (e.g., x86 vs. x64) and product (in the Microsoft Update Catalog, all feature updates are for the *Windows 10* product).
 
 | Property | Description                                       |
 |----------|---------------------------------------------------|
-| version  | Feature update version for the Windows 10 release |
+| version  | Feature update version for the Windows 10 release.|
 
 Below are some examples of feature updates in the deployment service's catalog.
 
@@ -66,16 +66,16 @@ Below are some examples of feature updates in the deployment service's catalog.
 | Feature Update to Windows 10, version 1903 | 1903    |
 | Feature Update to Windows 10, version 1809 | 1809    |
 
-Once you identify a desired version, you can assign it as content to a deployment using a [featureUpdateReference](/graph/api/resources/windowsupdates-featureupdatereference) and specifying the `version` property.
+Once you identify a desired version, assign it as content to a deployment using a [featureUpdateReference](/graph/api/resources/windowsupdates-featureupdatereference) and specifying the **version** property.
 
 ### Quality updates
 
-Quality updates in the deployment service's catalog are identified by a release date/time and an update classification. Entries aggregate differences across architecture, product (e.g. *Windows 10, version 1903 and later* vs. *Windows 10* vs. *Windows 10 LTSB*), and corresponding feature update version.
+Quality updates in the deployment service catalog are identified by a release date/time and an update classification. Entries aggregate differences across architecture, product (e.g. *Windows 10, version 1903 and later* vs. *Windows 10* vs. *Windows 10 LTSB*), and corresponding feature update version.
 
 | Property | Description |
 |----------|-------------|
-| classification | Classification (security or non-security) of the quality update |
-| releaseDateTime | Date and time the update was released or refreshed |
+| classification | Classification (security or non-security) of the quality update. |
+| releaseDateTime | Date and time the update was released or refreshed. |
 
 The following table shows the classification mapping between the deployment service's catalog and the Microsoft Update Catalog:
 
@@ -93,7 +93,7 @@ The entries from the Microsoft Update Catalog corresponding to a quality update 
 | 2021-03 Cumulative Update for Windows 10 Version 1909 for x86-based Systems (KB5000808) | Windows 10, version 1903 and later | Security Updates |
 | 2021-03 Cumulative Update for Windows 10 Version 1809 for x64-based Systems (KB5000822) | Windows 10, Windows 10 LTSB        | Security Updates |
 
-Once you identify a desired update you can assign it as content to a deployment using a [qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) and specifying the `releaseDateTime` and `classification` properties.
+Once you have identified the desired update, assign it as content to a deployment using a [qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) and specifying the **releaseDateTime** and **classification** properties.
 
 ## Examples
 

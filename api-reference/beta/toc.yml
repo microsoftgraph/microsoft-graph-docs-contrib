@@ -9477,15 +9477,16 @@ items:
             href: api/cloudpcprovisioningpolicy-assign.md
       - name: Operating system updates (preview)
         items:
-        - name: Catalog
-          href: resources/windowsupdates-catalog.md
+        - name: Catalog     
           items:
-          - name: List catalog entries
-            href: api/windowsupdates-catalog-list-entries.md
+          - name: Catalog
+            href: resources/windowsupdates-catalog.md
           - name: Feature update catalog entry
             href: resources/windowsupdates-featureupdatecatalogentry.md
           - name: Quality update catalog entry
             href: resources/windowsupdates-qualityupdatecatalogentry.md
+          - name: List catalog entries
+            href: api/windowsupdates-catalog-list-entries.md
         - name: Deployment
           href: resources/windowsupdates-deployment.md
           items:
