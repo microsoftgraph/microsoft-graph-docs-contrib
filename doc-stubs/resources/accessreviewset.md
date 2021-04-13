@@ -1,5 +1,5 @@
 ---
-title: "accessReviewSet resource type"
+title: "accessReviewSet resource types"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
