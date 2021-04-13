@@ -104,6 +104,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions/$entity",
   "id": "fab143fd-ee61-4358-8558-2c7dee953982",
