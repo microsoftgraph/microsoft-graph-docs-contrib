@@ -15,7 +15,7 @@ The Windows Update for Business deployment service gives organizations control o
 
 As a cloud service, the deployment service keeps devices up to date and compliant according to your organization's policies.  It also safeguards against updates that cause device-specific issues or unnecessary reboots.
 
-The combination of cloud intelligence and greater control leads to a best-in-class management experience for network administrators, and streamlined update experience for Windows users.
+The combination of cloud intelligence and greater control creates a best-in-class management experience for network administrators, and streamlines update experiences for Windows users.
 
 ![WUfB: ds overview](images/windowsupdates-wufbds.png)
 
@@ -34,7 +34,7 @@ To start using the deployment service, [enroll devices in update management](win
 
 ## Approve and schedule Windows content delivered from Windows Update
 
-The deployment service simplifies reviewing, approving, scheduling, and deploying content for a diverse device ecosystem. The updates catalog provides a view tailored for approvals, helping you focus on approval decisions that matter, saving you time sorting through deep lists of related updates.
+The deployment service simplifies reviewing, approving, scheduling, and deploying content for a diverse device ecosystem. The updates catalog provides a view tailored for approvals, helping you focus on approval decisions that matter, saving you time from sorting through deep lists of related updates.
 
 Once you have chosen the desired updates, schedule deployments to start at a future time, or deploy over a period of time.
 
