@@ -316,7 +316,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the **filterByCurrentUser** method to [userConsentRequests](Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/userConsentRequest-filterByCurrentUser?view=graph-rest-beta) method to the [userConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/userConsentRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/userConsentRequest-filterByCurrentUser?view=graph-rest-beta) method to the [userConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/userConsentRequest?view=graph-rest-beta) resource.",
           "Target": "userConsentRequests"
         },
         {
