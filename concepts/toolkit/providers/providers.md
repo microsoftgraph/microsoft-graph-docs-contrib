@@ -125,7 +125,7 @@ import { Providers, ProviderState } from "@microsoft/mgt";
 //assuming a provider has already been initialized
 
 if (Providers.globalProvider.state === ProviderState.SignedIn) {
-  const token = Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
+  const token = await Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
 }
 ```
 
