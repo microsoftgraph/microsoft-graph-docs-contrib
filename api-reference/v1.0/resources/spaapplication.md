@@ -11,8 +11,6 @@ author: "sureshja"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Specifies settings for a single-page application.
 
 ## Properties
