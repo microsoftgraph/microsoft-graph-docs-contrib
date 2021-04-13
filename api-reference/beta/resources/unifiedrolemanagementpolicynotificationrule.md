@@ -23,6 +23,7 @@ Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanageme
 |notificationRecipients|String collection|The list of notification recepients like email.|
 |notificationType|String|The type of notification. One of Email.|
 |recipientType|String|The type of recipient. One of Requestor, Approver, Admin.|
+|isDefaultRecipientsEnabled|Boolean|Whether default recipient is receiving the email or not.|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|The target for the rule. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
 ## Relationships
@@ -48,6 +49,7 @@ The following is a JSON representation of the resource.
   "notificationType": "String",
   "recipientType": "String",
   "notificationLevel": "String",
+  "isDefaultRecipientsEnabled": true,
   "notificationRecipients": [
     "String"
   ]

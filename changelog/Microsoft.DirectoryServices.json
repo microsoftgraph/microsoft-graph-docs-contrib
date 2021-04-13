@@ -7262,6 +7262,24 @@
       "CreatedDateTime": "2021-01-17T10:00:37.303Z",
       "WorkloadArea": "Calendar",
       "SubArea": "Identity governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a45bff3c-e579-4b5b-92d1-a46d14d85a92",
+          "ApiChange": "Property",
+          "ChangedApiName": "unifiedRoleManagementPolicyNotificationRule",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDefaultRecipientsEnabled** property to the [unifiedRoleManagementPolicyNotificationRule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyNotificationRule?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementPolicyNotificationRule"
+        }
+      ],
+      "Id": "a45bff3c-e579-4b5b-92d1-a46d14d85a92",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-13T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
     }
   ]
 }
