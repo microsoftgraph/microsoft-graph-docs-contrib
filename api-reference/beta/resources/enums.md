@@ -2163,7 +2163,7 @@ Possible values for user account types (group membership), per Windows definitio
 |groupChat |1        |Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.|
 |personal  |2        |Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data.|
 
-### roleAssignmentRequestFilterByCurrentUserOptions values 
+### roleAssignmentScheduleRequestFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
