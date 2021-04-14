@@ -53,48 +53,16 @@ For updating a message with MIME content, we send a PUT request to the `/$value`
 For sending in MIME content for our message-related actions, we are adding an optional parameter of type `Edm.String` called `mimeContent`. This `mimeContent` string contains the Base64Binary-enconded format of the MIME content text.
 
 ## Actions
-sendMail:
-
-| Parameter       | Type           | Description     | Required  |
-| -------------- | -------------- | --------------- | --------- |
-| `message` | `graph.Message` | Message object of the message being sent | No |
-| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being sent | No |
-
-reply:
-
-| Parameter       | Type           | Description     | Required  |
-| -------------- | -------------- | --------------- | --------- |
-| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being sent | No |
-
-createReply:
-
-| Parameter       | Type           | Description     | Required  |
-| -------------- | -------------- | --------------- | --------- |
-| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message draft | No |
-
-replyAll:
-
-| Parameter       | Type           | Description     | Required  |
-| -------------- | -------------- | --------------- | --------- |
-| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being sent | No |
-
-createReplyAll:
-
-| Parameter       | Type           | Description     | Required  |
-| -------------- | -------------- | --------------- | --------- |
-| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message draft | No |
-
-forward:
-
-| Parameter       | Type           | Description     | Required  |
-| -------------- | -------------- | --------------- | --------- |
-| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being forwarded | No |
-
-createForward:
-
-| Parameter       | Type           | Description     | Required  |
-| -------------- | -------------- | --------------- | --------- |
-| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message draft | No |
+| Action | Parameter       | Type           | Description     | Required  |
+| -------------- | -------------- | -------------- | --------------- | --------- |
+| sendMail | `message` | `graph.Message` | Message object of the message being sent | No |
+| sendMail | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being sent | No |
+| reply | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being sent | No |
+| createReply | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message draft | No |
+| replyAll | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being sent | No |
+| craeteReplyAll | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message draft | No |
+| forward | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being forwarded | No |
+| createForward | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message draft | No |
 
 ## CSDL
 SendMail
