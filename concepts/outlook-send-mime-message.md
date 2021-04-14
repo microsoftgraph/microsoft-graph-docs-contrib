@@ -18,8 +18,9 @@ Supported MIME features:
 - Attach S/MIME signatures to emails.
 - S/MIME encrypted email contents.
 
-> [!Note:]
-> S/MIME provides two key features: digital signatures for verification of sender and email contents, and message encryption for preventing third parties from viewing email contents. S/MIME digital signatures and encrypted contents can only be added to email in their MIME message format.
+> [!IMPORTANT]
+> * S/MIME provides two key features: digital signatures for verification of sender and email contents, and message encryption for preventing third parties from viewing email contents.
+> * S/MIME digital signatures and encrypted contents can only be added to email in their MIME message format.
 
 Visit the documentation about [getting MIME content of a message](../concepts/outlook-get-mime-message.md) for more information about MIME.
 
@@ -53,40 +54,47 @@ For sending in MIME content for our message-related actions, we are adding an op
 
 ## Actions
 sendMail:
-| Parameter | Type | Description | Required |
-|:--------|:---------|:-----------------------------------------------------|:-----|
+
+| Parameter       | Type           | Description     | Required  |
+| -------------- | -------------- | --------------- | --------- |
 | `message` | `graph.Message` | Message object of the message being sent | No |
 | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being sent | No |
 
 reply:
-| Parameter | Type | Description | Required |
-|:--------|:---------|:-----------------------------------------------------|:-----|
+
+| Parameter       | Type           | Description     | Required  |
+| -------------- | -------------- | --------------- | --------- |
 | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being sent | No |
 
 createReply:
-| Parameter | Type | Description | Required |
-|:--------|:---------|:-----------------------------------------------------|:-----|
+
+| Parameter       | Type           | Description     | Required  |
+| -------------- | -------------- | --------------- | --------- |
 | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message draft | No |
 
 replyAll:
-| Parameter | Type | Description | Required |
-|:--------|:---------|:-----------------------------------------------------|:-----|
+
+| Parameter       | Type           | Description     | Required  |
+| -------------- | -------------- | --------------- | --------- |
 | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being sent | No |
 
 createReplyAll:
-| Parameter | Type | Description | Required |
-|:--------|:---------|:-----------------------------------------------------|:-----|
-| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being draft | No |
+
+| Parameter       | Type           | Description     | Required  |
+| -------------- | -------------- | --------------- | --------- |
+| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message draft | No |
 
 forward:
-| Parameter | Type | Description | Required |
-|:--------|:---------|:-----------------------------------------------------|:-----|
+
+| Parameter       | Type           | Description     | Required  |
+| -------------- | -------------- | --------------- | --------- |
 | `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being forwarded | No |
 
 createForward:
-| Parameter | Type | Description | Required |
-|:--------|:---------|:-----------------------------------------------------|:-----|
-| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message being draft | No |
+
+| Parameter       | Type           | Description     | Required  |
+| -------------- | -------------- | --------------- | --------- |
+| `mimeContent` | `Edm.String` | Base64Binary-encoded MIME content of the message draft | No |
 
 ## CSDL
 SendMail
