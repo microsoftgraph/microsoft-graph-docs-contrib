@@ -1,13 +1,14 @@
 ---
 title: "Create accessReviewHistoryDefinition"
-description: "Create a new accessReviewHistoryDefinition object with the specified properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Create a new accessReviewHistoryDefinition object."
+author: "leherpel"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
 # Create accessReviewHistoryDefinition
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,16 @@ Namespace: microsoft.graph
 Create a new [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|AccessReview.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|AccessReview.ReadWrite.All|
+
+The signed-in user must also be in a directory role that permits them to read an access review to retrieve any data.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).
 
 ## HTTP request
 
@@ -34,37 +38,34 @@ POST /identityGovernance/accessReviews/historyDefinitions
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object.
 
-The following table shows the properties that are required when you create the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md).
+The following table shows the properties accepted to create an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|displayName|String|**TODO: Add Description**|
-|status|accessReviewHistoryStatus|**TODO: Add Description**. Possible values are: `done`, `inprogress`, `error`, `requested`.|
-|decisions|accessReviewHistoryDecisionFilter collection|**TODO: Add Description**. Possible values are: `approve`, `deny`, `notReviewed`, `dontKnow`, `notNotified`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|fulfilledDateTime|DateTimeOffset|**TODO: Add Description**|
-|reviewHistoryPeriodStartDateTime|DateTimeOffset|**TODO: Add Description**|
-|reviewHistoryPeriodEndDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdBy|[userIdentity](../resources/useridentity.md)|**TODO: Add Description**|
-|scopes|[accessReviewScope](../resources/accessreviewscope.md) collection|**TODO: Add Description**|
-|downloadUri|String|**TODO: Add Description**|
-
-
+| id  | String  | Optional unique identifier. |
+| displayName | String  | Name for the access review history data file. Required. |
+| reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, reviews starting on or after this date will be included in the fetched history data. Required.  |
+| reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, reviews starting on or before this date will be included in the fetched history data. Required.  |
+| decisions  | [accessReviewHistoryDecisionFilter](../resources/accessReviewHistoryDecisionFilter.md)  | Determines which review decisions will be included in the fetched review history data if specified. Optional.  |
+| scopes  | Collection of [accessReviewScope](../resources/accessreviewscope.md)  | Used to filter what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.  |
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object in the response body.
 
 ## Examples
+
+This is an example of creating an access review history definition which is scoped to access package and group reviews starting and ending on or between 01/01/2021 and 04/05/2021.
 
 ### Request
 <!-- {
@@ -75,27 +76,28 @@ If successful, this method returns a `201 Created` response code and an [accessR
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
 Content-Type: application/json
-Content-length: 522
 
 {
-  "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-  "displayName": "String",
-  "status": "String",
+  "displayName": "Last quarter's group reviews April 2021",
   "decisions": [
-    "String"
+    "approve",
+    "deny",
+    "dontKnow",
+    "notReviewed",
+    "notNotified"
   ],
-  "fulfilledDateTime": "String (timestamp)",
-  "reviewHistoryPeriodStartDateTime": "String (timestamp)",
-  "reviewHistoryPeriodEndDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
+  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+  "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
   "scopes": [
     {
-      "@odata.type": "microsoft.graph.accessReviewScope"
+      "queryType": "MicrosoftGraph",     
+      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
+    },  
+    {
+      "queryType": "MicrosoftGraph",     
+      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
     }
-  ],
-  "downloadUri": "String"
+  ]
 }
 ```
 
@@ -114,25 +116,41 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-  "id": "2189cb4d-cb4d-2189-4dcb-89214dcb8921",
-  "displayName": "String",
-  "status": "String",
+  "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
+  "displayName": "Last quarter's group reviews April 2021",
+  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+  "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
   "decisions": [
-    "String"
+    "approve",
+    "deny",
+    "dontKnow",
+    "notReviewed",
+    "notNotified"
   ],
-  "createdDateTime": "String (timestamp)",
-  "fulfilledDateTime": "String (timestamp)",
-  "reviewHistoryPeriodStartDateTime": "String (timestamp)",
-  "reviewHistoryPeriodEndDateTime": "String (timestamp)",
+  "status": "requested",
+  "createdDateTime": "2021-04-14T00:22:48.9392594Z",
+  "fulfilledDateTime": null,
+  "downloadUri": null,
   "createdBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
+    "id": "673ad0d8-7b0e-4201-aaeb-74cdcbf22af9",
+    "displayName": "Chris Green",
+    "userPrincipalName": "ChrisGreen@shubhamermtest2.ccsctp.net"
   },
+  "downloadUri": null,
   "scopes": [
     {
-      "@odata.type": "microsoft.graph.accessReviewScope"
+      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+      "queryType": "MicrosoftGraph",     
+      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+      "queryRoot": null
+    },  
+    {
+      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+      "queryType": "MicrosoftGraph",     
+      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
+      "queryRoot": null
     }
-  ],
-  "downloadUri": "String"
+  ]
 }
 ```
 
