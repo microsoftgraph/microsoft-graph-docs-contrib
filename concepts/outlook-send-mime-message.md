@@ -25,9 +25,9 @@ Supported MIME features:
 Visit the documentation about [getting MIME content of a message](../concepts/outlook-get-mime-message.md) for more information about MIME.
 
 ## Details and schema changes
-We are making the `Message` entity streamable so that we can send MIME content as a media stream payload. This follow the OData V4.0 specification, [Section 11.4.7.1](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html#_Toc372793727) for creating media entities.
+We are making the [Message](../api-reference/v1.0/resources/message.md) entity streamable so that MIME content can be sent as a media stream payload. This follows the OData V4.0 specification, [Section 11.4.7.1](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html#_Toc372793727) for creating media entities.
 
-Adding `HasStream=True` to Message
+Adding `HasStream=True` to **Message**
 
 ```xml
 <EntityType Name="message" BaseType="graph.outlookItem" OpenType="true" HasStream="true">
@@ -39,7 +39,7 @@ Adding `HasStream=True` to Message
 </EntityType>
 ```
 
-For distinguishing the two ways of creating a Message: (1) JSON metadata (2) MIME content, we are using the `Content-Type` header in the request headers.
+For distinguishing the two ways of creating a **Message**: (1) JSON metadata (2) MIME content, we are using the `Content-Type` header in the request headers.
 
 1. If `Content-Type: application/json`, JSON metadata is being sent in the request body.
 2. If `Content-Type: text/plain`, MIME content is being sent in the request body.
@@ -153,6 +153,10 @@ CreateForward
 |--------|------|----|-------|
 |Both `message` and `mimeContent` specified (actions only) | POST | 400 | Both message object and MIME content cannot be specified because they contain duplicate properties. Specify either 'MimeContent' or 'Message' in request body. |
 | MIME content malformed, missing | POST, PUT | 400 | MIME content does not contain all required information, malformed formatting, or empty. |
+
+### Error handling
+
+If both the `message` parameter and `mimeContent` parameter is specified for any of the actions, we throw a HTTP 400 Bad Request error since the request contains duplicate properties that represent the Message being sent.
 
 ## Example REST operations
 
@@ -301,8 +305,5 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 ```
 
-### Error handling
-
-If both the `message` parameter and `mimeContent` parameter is specified for any of the actions, we throw a HTTP 400 Bad Request error since the request contains duplicate properties that represent the Message being sent.
 
 
