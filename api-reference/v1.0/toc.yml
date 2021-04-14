@@ -5825,6 +5825,8 @@ items:
           href: api/table-list-rows.md
         - name: Create row
           href: api/table-post-rows.md
+        - name: Delete row
+          href: api/tablerow-delete.md
         - name: List columns
           href: api/table-list-columns.md
         - name: Create column
