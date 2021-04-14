@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityApiConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [upload a client certificate] method and expanded the methods of [identityApiConnector](https://docs.microsoft.com/graph/api/resources/identityApiConnector?view=graph-rest-beta&preserve-view=true) to manage client certificate authentication for API connectors.",
+          "Target": "identityApiConnector"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pkcs12certificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [pkcs12certificate](https://docs.microsoft.com/graph/api/resources/pkcs12certificate.md?view=graph-rest-beta&preserve-view=true) complex type that extends apiAuthenticationConfigurationBase for HTTP client certificate authentication of API connector API calls. ",
+          "Target": "pkcs12certificate"
+        },
+        {
+          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "clientCertificateAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [clientCertificateAuthentication](https://docs.microsoft.com/graph/api/resources/clientCertificateAuthentication?view=graph-rest-beta&preserve-view=true) complex type that extends apiAuthenticationConfigurationBase which represents a collection of certificates used for HTTP client certificate authentication of API connector API calls.",
+          "Target": "clientCertificateAuthentication"
+        }
+      ],
+      "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-23T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4579a6f4-bb21-42f0-91cb-a69029018a65",
           "ApiChange": "Resource",
           "ChangedApiName": "countryNamedLocation",
@@ -26,45 +60,45 @@
       "WorkloadArea": "Identity and access ",
       "SubArea": "Identity and sign-in"
     },
-      {
-        "ChangeList": [
-            {
-                "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
-                "ApiChange": "Resource",
-                "ChangedApiName": "selfSignedCertificate",
-                "ChangeType": "Addition",
-                "Description": "Added the [selfSignedCertificate](https://docs.microsoft.com/en-us/graph/api/resources/selfSignedCertificate?view=graph-rest-beta) resource type.",
-                "Target": "selfSignedCertificate"
-            }
-        ],
-        "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2021-03-18T09:02:13.750Z",
-        "WorkloadArea": "Identity and access",
-        "SubArea": "Directory management"
-    },
     {
-        "ChangeList": [
-            {
-                "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
-                "ApiChange": "Method",
-                "ChangedApiName": "addTokenSigningCertificate",
-                "ChangeType": "Addition",
-                "Description": "Added the [addTokenSigningCertificate](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
-                "Target": "servicePrincipal"
-            }
-        ],
-        "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2021-03-18T09:02:13.750Z",
-        "WorkloadArea": "Applications",
-        "SubArea": ""
+      "ChangeList": [
+        {
+          "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selfSignedCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [selfSignedCertificate](https://docs.microsoft.com/en-us/graph/api/resources/selfSignedCertificate?view=graph-rest-beta) resource type.",
+          "Target": "selfSignedCertificate"
+        }
+      ],
+      "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
-            {
+        {
+          "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+          "ApiChange": "Method",
+          "ChangedApiName": "addTokenSigningCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [addTokenSigningCertificate](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b653a8c7-f00c-4327-a9b3-ffa1e41d4709",
           "ApiChange": "Resource",
           "ChangedApiName": "applicationTemplate",
@@ -282,7 +316,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "filterByCurrentUser",
           "ChangeType": "Addition",
-          "Description": "Added the **filterByCurrentUser** method to [userConsentRequests](Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/userConsentRequest-filterByCurrentUser?view=graph-rest-beta) method to the [userConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/userConsentRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/userConsentRequest-filterByCurrentUser?view=graph-rest-beta) method to the [userConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/userConsentRequest?view=graph-rest-beta) resource.",
           "Target": "userConsentRequests"
         },
         {
@@ -337,7 +371,7 @@
     },
     {
       "ChangeList": [
-       {
+        {
           "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
           "ApiChange": "Resource",
           "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
@@ -636,68 +670,68 @@
     {
       "ChangeList": [
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "authenticationMethod",
-            "ChangeType": "Addition",
-            "Description": "Added the [authentication method](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethods-overview?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "authenticationMethod"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [authentication method](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethods-overview?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "authenticationMethod"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "fido2AuthenticationMethod",
-            "ChangeType": "Addition",
-            "Description": "Added the [FIDO2 authentication method](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "fido2AuthenticationMethod"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2AuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [FIDO2 authentication method](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "fido2AuthenticationMethod"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "microsoftAuthenticatorAuthenticationMethod",
-            "ChangeType": "Addition",
-            "Description": "Added the [Microsoft Authenticator authentication method](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "microsoftAuthenticatorAuthenticationMethod"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft Authenticator authentication method](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "microsoftAuthenticatorAuthenticationMethod"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "windowsHelloForBusinessAuthenticationMethod",
-            "ChangeType": "Addition",
-            "Description": "Added the [Windows Hello for Business authentication method](https://docs.microsoft.com/en-us/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "windowsHelloForBusinessAuthenticationMethod"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsHelloForBusinessAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [Windows Hello for Business authentication method](https://docs.microsoft.com/en-us/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "windowsHelloForBusinessAuthenticationMethod"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "authenticationMethodsPolicy",
-            "ChangeType": "Addition",
-            "Description": "Added the [authentication methods policy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "authenticationMethodsPolicy"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodsPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authentication methods policy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "authenticationMethodsPolicy"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "fido2AuthenticationMethodConfiguration",
-            "ChangeType": "Addition",
-            "Description": "Added the [FIDO2 authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "fido2AuthenticationMethodConfiguration"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2AuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [FIDO2 authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/fido2authenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "fido2AuthenticationMethodConfiguration"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodConfiguration",
-            "ChangeType": "Addition",
-            "Description": "Added the [Microsoft Authenticator authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft Authenticator authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "microsoftAuthenticatorAuthenticationMethodConfiguration"
         },
         {
-            "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
-            "ApiChange": "Resource",
-            "ChangedApiName": "emailAuthenticationMethodConfiguration",
-            "ChangeType": "Addition",
-            "Description": "Added the [email authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
-            "Target": "emailAuthenticationMethodConfiguration"
+          "Id": "813a1087-06e7-4281-a897-6b7a4d60e1d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [email authentication method policy](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-1.0) resource and associated methods to v1.0",
+          "Target": "emailAuthenticationMethodConfiguration"
         }
       ],
       "Id": "a179abf1-70d3-435a-889b-ec860ca0aad1",
@@ -709,7 +743,7 @@
     },
     {
       "ChangeList": [
-         {
+        {
           "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
           "ApiChange": "Resource",
           "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",

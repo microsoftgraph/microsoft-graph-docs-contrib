@@ -39,7 +39,7 @@ PATCH /print/printers/{id}
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization | Bearer {token}. Required. |
-| Content-type  | `application/json` when using delegated permissions, `application/ipp` when using application permissions. Required.|
+| Content-type  | `application/json` when using delegated permissions, `application/ipp` or `application/json` when using application permissions. Required.|
 
 ## Request body
 
@@ -76,6 +76,11 @@ With application permissions, a printer can also be updated using an Internet Pr
 
 The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) Printer Description Attributes, and any attribute extensions supported by the Printer. The value(s) of each Printer attribute
 supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object. For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.
+
+> **Note:** Do not pass operation attributes in the request body. The request body should only contain printer attributes.
+
+
+> **Note:** For printers to work with a particular platform, it should meet the requirements of that platform. For example, on windows client, it is expected that printer specifies all attributes that are considered mandatory as per [MOPRIA](https://mopria.org) specs. Please note MOPRIA specs are available to only the paid members of MOPRIA.
 
 ## Response
 
@@ -115,21 +120,6 @@ Content-length: 124
   }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-printer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -149,20 +139,20 @@ Content-length: 1313
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "name": "PrinterName",
+  "displayName": "PrinterName",
   "manufacturer": "PrinterManufacturer",
   "model": "PrinterModel",
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-  "acceptingJobs": true,
+  "isAcceptingJobs": true,
   "status": {
-    "processingState": "idle",
-    "processingStateReasons": [],
-    "processingStateDescription": ""
+    "state": "idle",
+    "details": [],
+    "description": ""
   },
   "defaults": {
     "copiesPerJob":1,
-    "documentMimeType": "application/oxps",
+    "contentType": "application/oxps",
     "finishings": ["none"],
     "mediaType": "stationery"
   },
@@ -180,9 +170,9 @@ Content-length: 1313
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",
