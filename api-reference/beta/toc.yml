@@ -13202,7 +13202,7 @@ items:
           - name: Get icon
             href: api/teamsappicon-get.md
           - name: Get hosted content
-            href: api/teamsappicon-get-hostedcontent.md
+            href: api/teamworkhostedcontent-get.md
       - name: App installation
         items:
         - name: Installed app

@@ -1,5 +1,5 @@
 ---
-title: "Get hostedContent in a Teams app icon"
+title: "Get teamworkHostedContent"
 description: "Retrieve the hosted content in a teamsAppIcon."
 localization_priority: Normal
 author: "jecha"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Get hostedContent in an app's icon
+# Get teamworkHostedContent
 
 Namespace: microsoft.graph
 
@@ -19,6 +19,7 @@ Retrieve the [hosted content](../resources/teamworkhostedcontent.md) in an [app'
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### Permissions for app icon in app catalog
 | Permission Type                        | Permissions (from least to most privileged)                      |
 | :------------------------------------- | :--------------------------------------------------------------- |
 | Delegated (work or school account)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
@@ -27,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-**Get hosted content in app icon**
+**Get hosted content in app icon in app catalog**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -57,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkHoste
 
 ## Examples
 
-### Example 1: Get the bytes of the hosted content of the color icon of a Teams app
+### Example 1: Get the bytes of the hosted content of the color icon of a Teams app in the catalog
 
 #### Request
 
@@ -96,7 +97,7 @@ Content-type: application/json
 
 ---
 
-### Example 2: Get the bytes of the hosted content of the outline icon of a Teams app
+### Example 2: Get the bytes of the hosted content of the outline icon of a Teams app in the catalog
 
 #### Request
 

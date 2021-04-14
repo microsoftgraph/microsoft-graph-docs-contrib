@@ -20,7 +20,7 @@ An icon associated with a [teamsApp](teamsapp.md).
 | Method                                            | Return Type                                       | Description                                                    | 
 | :------------------------------------------------ | :------------------------------------------------ | :------------------------------------------------------------- |
 | [Get icon](../api/teamsappicon-get.md)     | [teamsAppIcon](teamsappicon.md)                   | Get an icon associated with a specific version of a Teams app. |
-| [Get hosted content](../api/teamsappicon-get-hostedcontent.md) | [teamworkHostedContent](teamworkhostedcontent.md) | Get hosted content (and its bytes) for an icon.                |
+| [Get hosted content](../api/teamworkhostedcontent-get.md) | [teamworkHostedContent](teamworkhostedcontent.md) | Get hosted content (and its bytes) for an icon.                |
 
 ## Properties
 

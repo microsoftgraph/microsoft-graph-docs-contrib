@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 #### Response
 
 The following example shows the response for an organizational app. 
-> **Note**: Accessing the actual [image of the custom app's icon](teamsappicon-get-hostedcontent.md) requires a Microsoft Graph token to be set on the request.
+> **Note**: Accessing the actual [image of the custom app's icon](teamworkhostedcontent-get.md) requires a Microsoft Graph token to be set on the request.
 
 <!-- {
   "blockType": "response",
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 #### Response
 
 The following example shows the response for an organizational app. 
-> **Note**:  Accessing the actual [image of the custom app's icon](teamsappicon-get-hostedcontent.md) requires a Microsoft Graph token to be set on the request.
+> **Note**:  Accessing the actual [image of the custom app's icon](teamworkhostedcontent-get.md) requires a Microsoft Graph token to be set on the request.
 
 
 <!-- {
@@ -214,5 +214,5 @@ Content-type: application/json
 
 ## See also
 
-- [Get hosted content in app's icon](teamsappicon-get-hostedcontent.md)
+- [Get hosted content in app's icon](teamworkhostedcontent-get.md)
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
