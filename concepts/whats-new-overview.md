@@ -15,8 +15,8 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## April 2021: New and generally available
 
 ### Teamwork
-- Identify the channel by the **channelIdentity** property, if a [chatMessage](/graph/api/resources/chatmessage) is within a channel.
-- Identify the chat by the **chatId** property, if the **chatMessage** is in a chat.
+- Identify the channel by the **channelIdentity** property, if a [chatMessage](/graph/api/resources/chatmessage) is within a [channel](/graph/api/resources/channel).
+- Identify the chat by the **chatId** property, if the **[chatMessage](/graph/api/resources/chatmessage)** is in a [chat](/graph/api/resources/chat).
 - Use the **messages** relationship to get all the [chatMessage](/graph/api/resources/chatmessage) resources in a [chat](/graph/api/resources/chat).
 
 ## April 2021: New in preview only
