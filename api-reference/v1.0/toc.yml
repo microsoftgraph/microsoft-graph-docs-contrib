@@ -5831,6 +5831,8 @@ items:
           href: api/table-list-columns.md
         - name: Create column
           href: api/table-post-columns.md
+        - name: Delete column
+          href: api/tablecolumn-delete.md
         - name: Get range
           href: api/table-range.md
       - name: Chart
