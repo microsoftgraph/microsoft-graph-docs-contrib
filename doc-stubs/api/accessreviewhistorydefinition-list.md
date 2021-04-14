@@ -1,9 +1,9 @@
 ---
 title: "List accessReviewHistoryDefinitions"
-description: "Get a list of the accessReviewHistoryDefinition objects and their associated properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Get a list of the accessReviewHistoryDefinition objects."
+author: "leherpel"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) objects and their properties.
+Retrieve the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) objects which have been created in the last 30 days. A list of zero or more accessReviewHistoryDefinitions objects are returned, including all of their nested properties.
+
+>[!NOTE]
+>If many **accessReviewHistoryDefinitions** are returned, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the $top query parameter with a page size of at most 100, and the $skip=0 query parameter in the request. When a result set spans multiple pages, Microsoft Graph returns that page with an @odata.nextLink property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.
+>
+>If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|AccessReview.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|AccessReview.ReadWrite.All|
+
+If the signed-in user is not a Global Admin directory role member or a Global Reader directory role member then only the definitions which the signed-in user has created will be returned.
 
 ## HTTP request
 
@@ -57,16 +65,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions?$top=100&$skip=0
 ```
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.accessReviewHistoryDefinition)"
+  "@odata.type": "microsoft.graph.accessReviewHistoryDefinition",
+  "isCollection": "true"
 }
 -->
 ``` http
@@ -74,28 +83,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.count": 1,
   "value": [
     {
       "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-      "id": "2189cb4d-cb4d-2189-4dcb-89214dcb8921",
-      "displayName": "String",
-      "status": "String",
+      "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
+      "displayName": "Last quarter's group reviews April 2021",
+      "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+      "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
       "decisions": [
-        "String"
+        "approve",
+        "deny",
+        "dontKnow",
+        "notReviewed",
+        "notNotified"
       ],
-      "createdDateTime": "String (timestamp)",
-      "fulfilledDateTime": "String (timestamp)",
-      "reviewHistoryPeriodStartDateTime": "String (timestamp)",
-      "reviewHistoryPeriodEndDateTime": "String (timestamp)",
+      "status": "done",
+      "createdDateTime": "2021-04-14T00:22:48.9392594Z",
+      "fulfilledDateTime": 2021-04-14T00:22:58.5276552Z,
+      "downloadUri": "https://dfermconsolreportusc.blob.core.windows.net/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
       "createdBy": {
-        "@odata.type": "microsoft.graph.userIdentity"
+        "id": "673ad0d8-7b0e-4201-aaeb-74cdcbf22af9",
+        "displayName": "Chris Green",
+        "userPrincipalName": "ChrisGreen@shubhamermtest2.ccsctp.net"
       },
       "scopes": [
         {
-          "@odata.type": "microsoft.graph.accessReviewScope"
+          "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+          "queryType": "MicrosoftGraph",     
+          "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+          "queryRoot": null
+        },  
+        {
+          "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+          "queryType": "MicrosoftGraph",     
+          "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
+          "queryRoot": null
         }
-      ],
-      "downloadUri": "String"
+      ]
     }
   ]
 }
