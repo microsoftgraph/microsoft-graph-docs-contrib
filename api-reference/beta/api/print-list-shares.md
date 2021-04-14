@@ -98,7 +98,7 @@ Content-length: 269
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "name": "PrinterShareName",
+      "displayName": "PrinterShareName",
       "createdDateTime": "2020-02-04T00:00:00.0000000Z"
     }
   ]

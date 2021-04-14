@@ -13,6 +13,7 @@ var plannerProgressTaskBoardTaskFormat = new PlannerProgressTaskBoardTaskFormat
 
 await graphClient.Planner.Tasks["{plannerTask-id}"].ProgressTaskBoardFormat
 	.Request()
+	.Header("Prefer","return=representation")
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerProgressTaskBoardTaskFormat);
 

@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 * This method supports filtering print jobs by the user who created them. Use `$filter=createdBy/userPrincipalName eq '{upn}'`, where **{upn}** is the [user principal name](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the associated user.
 
 ### Exceptions
-Some operators are not supported: `$count`, `$search`, `$filter`.
+Some operators are not supported: `$count`, `$search`.
 
 ## Request headers
 | Name      |Description|

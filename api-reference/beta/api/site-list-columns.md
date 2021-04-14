@@ -39,7 +39,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-
 GET /sites/{site-id}/columns
 ```
 
@@ -65,12 +64,32 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_columns_from_site" } -->
  
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/columns
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-columns-from-site-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-columns-from-site-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-columns-from-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -86,39 +105,39 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "description": "",
-      "displayName": "Title",
-      "hidden": false,
-      "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
-      "indexed": false,
-      "name": "Title",
-      "readOnly": false,
-      "required": false,
-      "text": {
-        "allowMultipleLines": false,
-        "appendChangesToExistingText": false,
-        "linesForEditing": 0,
-        "maxLength": 255
+   "value":[
+      {
+         "description":"",
+         "displayName":"Title",
+         "hidden":false,
+         "id":"99ddcf45-e2f7-4f17-82b0-6fba34445103",
+         "indexed":false,
+         "name":"Title",
+         "readOnly":false,
+         "required":false,
+         "text":{
+            "allowMultipleLines":false,
+            "appendChangesToExistingText":false,
+            "linesForEditing":0,
+            "maxLength":255
+         }
+      },
+      {
+         "description":"",
+         "displayName":"Address",
+         "id":"11dfef35-e2f7-4f17-82b0-6fba34445103",
+         "indexed":false,
+         "name":"Address",
+         "readOnly":false,
+         "required":false,
+         "text":{
+            "allowMultipleLines":false,
+            "appendChangesToExistingText":false,
+            "linesForEditing":0,
+            "maxLength":255
+         }
       }
-    },
-    {
-      "description": "",
-      "displayName": "Address",
-      "id": "11dfef35-e2f7-4f17-82b0-6fba34445103",
-      "indexed": false,
-      "name": "Address",
-      "readOnly": false,
-      "required": false,
-      "text": {
-        "allowMultipleLines": false,
-        "appendChangesToExistingText": false,
-        "linesForEditing": 0,
-        "maxLength": 255
-      }
-    }
-  ]
+   ]
 }
 ```
 

@@ -3,7 +3,7 @@ title: "Update emailAuthenticationMethodConfiguration"
 description: "Update the properties of an emailAuthenticationMethodConfiguration object."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -70,7 +70,7 @@ Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-  "allowExternalIdToUseEmailOtp": "false",
+  "allowExternalIdToUseEmailOtp": "enabled",
 }
 ```
 
