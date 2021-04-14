@@ -25,7 +25,7 @@ Supported MIME features:
 Visit the documentation about [getting MIME content of a message](../concepts/outlook-get-mime-message.md) for more information about MIME.
 
 ## Details and schema changes
-We are making the [message](/graph/api/resources/message?view=graph-rest-1.0) entity streamable so that MIME content can be sent as a media stream payload. This follows the OData V4.0 specification, [Section 11.4.7.1](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html#_Toc372793727) for creating media entities.
+We are making the [message](/graph/api/resources/message.md) entity streamable so that MIME content can be sent as a media stream payload. This follows the OData V4.0 specification, [Section 11.4.7.1](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html#_Toc372793727) for creating media entities.
 
 Adding `HasStream=True` to **Message**
 

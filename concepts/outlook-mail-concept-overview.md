@@ -30,7 +30,7 @@ Customers like how Outlook helps them stay organized. Microsoft Graph brings the
 
 - Customers organize their messages in different ways - some leave all messages in the Inbox and simply search for them, others file their messages in folders. They like Outlook's flexible and intuitive approach that supports both flat and folder-based organizations. Apps can conveniently [filter, search, or sort](query-parameters.md) messages in specific folders or the user's entire mailbox.
 
-- Outlook categories are differentiated by name and color. Categories allow customers to tag messages to enhance organization and discovery. Apps can access and [define a user's master list of categories](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0). More, that list is shared across Outlook messages,
+- Outlook categories are differentiated by name and color. Categories allow customers to tag messages to enhance organization and discovery. Apps can access and [define a user's master list of categories](/graph/api/outlookuser-post-mastercategories). More, that list is shared across Outlook messages,
 as well as events, contacts, tasks, and group posts, and opens up creative scenarios for app developers. For example, an online training provider can color-code the emails, course events, and follow-up assignments for each course a user has enrolled in.
 
 - Additionally, app users can change the importance of a message (or event or task), or flag a message for follow-up. (Flagging is currently [in preview](versioning-and-support.md#beta-version) in Microsoft Graph.)
