@@ -53,7 +53,7 @@ The following table shows the properties accepted to create an [accessReviewHist
 |Property|Type|Description|
 |:---|:---|:---|
 | id  | String  | Optional unique identifier. |
-| displayName | String  | Name for the access review history data file. Required. |
+| displayName | String  | Name for the access review history data collection. Required. |
 | reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, reviews starting on or after this date will be included in the fetched history data. Required.  |
 | reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, reviews starting on or before this date will be included in the fetched history data. Required.  |
 | decisions  | [accessReviewHistoryDecisionFilter](../resources/accessReviewHistoryDecisionFilter.md)  | Determines which review decisions will be included in the fetched review history data if specified. Optional.  |
