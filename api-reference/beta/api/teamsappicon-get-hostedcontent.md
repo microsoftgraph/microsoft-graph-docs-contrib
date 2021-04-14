@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkHoste
 
 ## Examples
 
-### Example 1: Get the bytes of the hosted content of the color icon of a Teams App.
+### Example 1: Get the bytes of the hosted content of the color icon of a Teams app
 
 #### Request
 
@@ -71,7 +71,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/colorIcon/hostedContent/
 ```
 
----
 
 #### Response
 
@@ -97,7 +96,7 @@ Content-type: application/json
 
 ---
 
-### Example 2: Get the bytes of the hosted content of the outline icon of a Teams App.
+### Example 2: Get the bytes of the hosted content of the outline icon of a Teams app
 
 #### Request
 

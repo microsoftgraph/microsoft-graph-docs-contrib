@@ -13166,7 +13166,7 @@ items:
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
-      - name: App catalog
+      - name: App
         items:
         - name: App in catalog
           href: resources/teamsapp.md        
@@ -13178,14 +13178,14 @@ items:
           href: api/teamsapp-update.md
         - name: Delete app from catalog
           href: api/teamsapp-delete.md
-        - name: App Icon
+        - name: App icon
           href: resources/teamsappicon.md
           items:
-          - name: Get app icon
+          - name: Get icon
             href: api/teamsappicon-get.md
-          - name: Get hosted content in app icon
+          - name: Get hosted content
             href: api/teamsappicon-get-hostedcontent.md
-      - name: App
+      - name: App installation
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md

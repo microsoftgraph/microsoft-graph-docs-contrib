@@ -1,5 +1,5 @@
 ---
-title: "Get teamsAppIcon of a TeamsApp"
+title: "Get teamsAppIcon"
 description: "Retrieve an icon associated with a specific definition of a Teams app."
 localization_priority: Normal
 author: "jecha"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Get teamsAppIcon of an app
+# Get teamsAppIcon
 
 Namespace: microsoft.graph
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [teamsAppIcon]
 
 ## Examples
 
-### Example 1: Get color icon of a Teams app which is a 'custom' app.
+### Example 1: Get color icon of a *custom* Teams app
 
 #### Request
 
@@ -79,7 +79,8 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 #### Response
 
-The following example shows the response for an organizational app. *Note:* Accessing the actual [image of the custom app's icon](teamsappicon-get-hostedcontent.md) requires a Microsoft Graph token to be set on the request.
+The following example shows the response for an organizational app. 
+> **Note**: Accessing the actual [image of the custom app's icon](teamsappicon-get-hostedcontent.md) requires a Microsoft Graph token to be set on the request.
 
 <!-- {
   "blockType": "response",
@@ -99,7 +100,7 @@ Content-type: application/json
 
 ---
 
-### Example 2: Get outline icon of a Teams app which is a 'custom' app.
+### Example 2: Get outline icon of a *custom* Teams app
 
 #### Request
 
@@ -117,7 +118,9 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 #### Response
 
-The following example shows the response for an organizational app. *Note:* Accessing the actual [image of the custom app's icon](teamsappicon-get-hostedcontent.md) requires a Microsoft Graph token to be set on the request.
+The following example shows the response for an organizational app. 
+> **Note**:  Accessing the actual [image of the custom app's icon](teamsappicon-get-hostedcontent.md) requires a Microsoft Graph token to be set on the request.
+
 
 <!-- {
   "blockType": "response",
@@ -137,7 +140,7 @@ Content-type: application/json
 
 ---
 
-### Example 3: Get color icon of a Teams app which is a 'store' app.
+### Example 3: Get color icon of a *store* Teams app
 
 #### Request
 
@@ -173,7 +176,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Get outline icon of a Teams app which is a 'store' app.
+### Example 4: Get outline icon of a *store* Teams app
 
 #### Request
 
