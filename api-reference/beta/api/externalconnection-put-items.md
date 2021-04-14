@@ -16,7 +16,7 @@ Namespace: microsoft.graph.externalConnectors
 
 Create a new [externalItem](../resources/externalitem.md).
 
-This API can be used to create a custom item. Specify the type you are creating by including the `@odata.type` property in the JSON body. The containing [externalConnection](../resources/externalconnection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.
+This API can be used to create a custom item. The containing [externalConnection](../resources/externalconnection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
