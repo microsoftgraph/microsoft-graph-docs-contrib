@@ -1,6 +1,6 @@
 ---
 title: "Enum values"
-description: "Microsoft Graph enumeration values for review history definition"
+description: "Microsoft Graph enumeration values"
 author: "leherpel"
 localization_priority: Normal
 ms.prod: "governance"
