@@ -1,27 +1,31 @@
 ---
 title: "Get accessReviewHistoryDefinition"
-description: "Read the properties and relationships of the specified accessReviewHistoryDefinition object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Retrieve an accessReviewHistoryDefinition object."
+author: "leherpel"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
 # Get accessReviewHistoryDefinition
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object.
+Retrieve an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object by ID. This returns all properties of the access review history definition object. If the download link is still valid that will be return along with the definition.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|AccessReview.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|AccessReview.ReadWrite.All|
+
+The signed-in user must also be in a Global Admin directory role, Global Reader directory role, or the creator of the review history definition to retrieve the definition.
 
 ## HTTP request
 
@@ -30,11 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDefinitionId}
+GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [accessReview
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDefinitionId}
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38
 ```
 
 
@@ -74,28 +75,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-    "id": "2189cb4d-cb4d-2189-4dcb-89214dcb8921",
-    "displayName": "String",
-    "status": "String",
-    "decisions": [
-      "String"
-    ],
-    "createdDateTime": "String (timestamp)",
-    "fulfilledDateTime": "String (timestamp)",
-    "reviewHistoryPeriodStartDateTime": "String (timestamp)",
-    "reviewHistoryPeriodEndDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.userIdentity"
-    },
-    "scopes": [
-      {
-        "@odata.type": "microsoft.graph.accessReviewScope"
-      }
-    ],
-    "downloadUri": "String"
-  }
+  "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
+  "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
+  "displayName": "Last quarter's group reviews April 2021",
+  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+  "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
+  "decisions": [
+    "approve",
+    "deny",
+    "dontKnow",
+    "notReviewed",
+    "notNotified"
+  ],
+  "status": "done",
+  "createdDateTime": "2021-04-14T00:22:48.9392594Z",
+  "fulfilledDateTime": 2021-04-14T00:22:58.5276552Z,
+  "downloadUri": "https://dfermconsolreportusc.blob.core.windows.net/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
+  "createdBy": {
+    "id": "673ad0d8-7b0e-4201-aaeb-74cdcbf22af9",
+    "displayName": "Chris Green",
+    "userPrincipalName": "ChrisGreen@shubhamermtest2.ccsctp.net"
+  },
+  "scopes": [
+    {
+      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+      "queryType": "MicrosoftGraph",     
+      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+      "queryRoot": null
+    },  
+    {
+      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+      "queryType": "MicrosoftGraph",     
+      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
+      "queryRoot": null
+    }
+  ]
 }
 ```
 
