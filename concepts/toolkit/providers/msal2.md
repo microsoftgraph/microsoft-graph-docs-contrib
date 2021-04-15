@@ -11,11 +11,10 @@ The MSAL 2.0 provider uses [msal-browser](https://github.com/AzureAD/microsoft-a
 To learn more, see [providers](./providers.md).
 
 ## Differences between MsalProvider and Msal2Provider
-Also the usage is very similar, there are some key differences between MsalProvider and Msal2Provider. They are:
+Although the user and developer experience is very similar, there are some key differences between MsalProvider and Msal2Provider. 
 * MsalProvider is built on top of MSAL.js, which implements the OAuth2.0 [Implicit Grant Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
-For many security reasons, Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications. Learn more about the disadvantages of implicit auth flow [here](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
-* Msal2Provider provides support for multipe accounts to be signed in to an application, and also switch between views for each of the accounts, while MsalProvider provides support for single account logins. This is due to the difference in capabilities of the underlying msal libraries (msal-brow.
-
+For many security reasons, Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications. Learn more about security issues related to implicit grant flow [here](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+* Msal2Provider provides support for multiple accounts to be signed in to an application, while MsalProvider provides support for single account logins.
 
 ## Get started
 
