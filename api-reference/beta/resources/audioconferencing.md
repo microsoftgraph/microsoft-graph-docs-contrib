@@ -29,7 +29,7 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 > [!CAUTION]
 >
 >- **tollFreeNumber** and **tollNumber** are deprecated. Please use **tollFreeNumbers** and **tollNumbers** instead.
->- For backword compatibility, the original **tollFreeNumber** will be added to the new **tollFreeNumbers** collection and the original **tollNumber** will be added to the new **tollNumbers** collection.
+>- For backword compatibility, the original **tollFreeNumber** is added to the new **tollFreeNumbers** collection and the original **tollNumber** is added to the new **tollNumbers** collection.
 
 ## JSON representation
 
