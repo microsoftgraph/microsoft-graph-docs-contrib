@@ -38,7 +38,7 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
 | redirect-uri | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
 | depends-on   | Element selector string of another higher priority provider component. Optional. 
 | domain-hint  | Query string of domain location for forwarding sign in experience. Optional.              
-| prompt | Selection for type of user interaction requited to login. Valid options include: `login` forces the user to enter credentials on request. `none` for no interactive prompt. `select_account` to send the user to an account picker. `consent` to send the user to a OAuth consent dialog. Optional.                                                                                                                                                                            |
+| prompt | Selection for type of user interaction requited to login. Valid options include: `login` forces the user to enter credentials on request. `none` for no interactive prompt. `select_account` to send the user to an account picker. `consent` to send the user to a OAuth consent dialog. For more prompt information, see the [docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-js-prompt-behavior). Optional.                                                                                                                                                                            |
 
 To learn more about the MSAL specification and optional 
 
@@ -88,7 +88,7 @@ interface MsalConfig {
 }
 ```
 
-To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow#send-the-sign-in-request).
+To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](/azure/active-directory/develop/msal-js-initializing-client-applications).
 
 ## Creating an app/client ID
 
