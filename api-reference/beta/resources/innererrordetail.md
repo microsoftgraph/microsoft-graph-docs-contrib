@@ -3,13 +3,14 @@ title: "innerErrorDetail resource type"
 description: "An inner error contained in an errorDetail object."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
 # innerErrorDetail resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,8 +22,8 @@ An inner error contained in an [errorDetail](errordetail.md) object.
 
 | Property | Type   | Description                                  |
 |:---------|:-------|:---------------------------------------------|
-| message  | String | The human-readable error message. Read-only. |
-| source   | String | The source of the error. Read-only.          |
+| message  | string | The human-readable error message. Read-only. |
+| source   | string | The source of the error. Read-only.          |
 
 ## JSON representation
 
@@ -39,8 +40,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "message": "String",
-  "source": "String"
+  "message": "string",
+  "source": "string"
 }
 ```
 

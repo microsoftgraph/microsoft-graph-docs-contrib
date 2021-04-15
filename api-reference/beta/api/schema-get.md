@@ -109,7 +109,7 @@ Content-type: application/json
   "properties": [
     {
       "name": "ticketTitle",
-      "type": "String",
+      "type": "string",
       "isSearchable": true,
       "isRetrievable": true,
       "labels": [
@@ -118,7 +118,7 @@ Content-type: application/json
     },
     {
       "name": "priority",
-      "type": "String",
+      "type": "string",
       "isQueryable": true,
       "isRetrievable": true,
       "isRefinable": true,
@@ -126,7 +126,7 @@ Content-type: application/json
     },
     {
       "name": "assignee",
-      "type": "String",
+      "type": "string",
       "isRetrievable": true
     }
   ]

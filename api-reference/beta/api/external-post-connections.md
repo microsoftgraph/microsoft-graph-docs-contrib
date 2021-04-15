@@ -3,13 +3,14 @@ title: "Create connection"
 description: "Use this API to create a new externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
 # Create connection
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

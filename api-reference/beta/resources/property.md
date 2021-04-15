@@ -3,13 +3,14 @@ title: "property resource type"
 description: "A schema property definition for a Microsoft Search connection."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
 # property resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

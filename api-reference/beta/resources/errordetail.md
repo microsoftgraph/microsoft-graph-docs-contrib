@@ -3,13 +3,14 @@ title: "errorDetail resource type"
 description: "Describes an error for a failed request to create a Microsoft Search connection schema asynchronously."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
 # errorDetail resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +23,8 @@ Describes an error for a failed request to create a Microsoft Search connection 
 | Property  | Type                                               | Description |
 |:----------|:---------------------------------------------------|:------------|
 | details   | [innerErrorDetail](innererrordetail.md) collection | A collection of inner errors, if any. Read-only, nullable. |
-| errorCode | String                                             | The error code associated with the error, if any. Read-only, nullable. |
-| message   | String                                             | The human-readable error message. Read-only. |
+| errorCode | string                                             | The error code associated with the error, if any. Read-only, nullable. |
+| message   | string                                             | The human-readable error message. Read-only. |
 
 ## JSON representation
 
@@ -42,8 +43,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "details": [{"@odata.type": "microsoft.graph.innerErrorDetail"}],
-  "errorCode": "String",
-  "message": "String"
+  "errorCode": "string",
+  "message": "string"
 }
 ```
 
@@ -56,5 +57,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

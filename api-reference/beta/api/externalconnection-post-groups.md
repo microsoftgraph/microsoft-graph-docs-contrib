@@ -2,6 +2,7 @@
 title: "Create externalGroup"
 description: "Create a new externalGroup object."
 author: "snlraju-msft"
+ms.author: mecampos
 localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
@@ -51,9 +52,9 @@ The following table shows the properties that are required when you create the [
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
-| displayName | String | The friendly name of the external group. Optional.                                                                      |
-| description | String | The description of the external group. Optional.                                                                         |
+| id          | string | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
+| displayName | string | The friendly name of the external group. Optional.                                                                      |
+| description | string | The description of the external group. Optional.                                                                         |
 
 ## Response
 

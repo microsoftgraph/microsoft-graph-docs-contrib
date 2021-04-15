@@ -3,13 +3,14 @@ title: "Get connectionOperation"
 description: "Retrieve the properties of a connectionOperation."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
 # Get connectionOperation
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -118,5 +119,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

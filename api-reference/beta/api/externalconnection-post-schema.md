@@ -83,7 +83,7 @@ Prefer: respond-async
   "properties": [
     {
       "name": "ticketTitle",
-      "type": "String",
+      "type": "string",
       "isSearchable": "true",
       "isRetrievable": "true",
       "labels": [
@@ -92,14 +92,14 @@ Prefer: respond-async
     },
     {
       "name": "priority",
-      "type": "String",
+      "type": "string",
       "isQueryable": "true",
       "isRetrievable": "true",
       "isSearchable": "false"
     },
     {
       "name": "assignee",
-      "type": "String",
+      "type": "string",
       "isRetrievable": "true"
     }
   ]
@@ -148,5 +148,3 @@ Location: https://graph.microsoft.com/beta/external/connections/contosohr/operat
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

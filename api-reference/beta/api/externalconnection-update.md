@@ -3,6 +3,7 @@ title: "Update externalConnection"
 description: "Update the properties of an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
@@ -49,8 +50,8 @@ In the request body, supply the values for relevant fields that should be update
 | Property      | Type                                           | Description |
 |:--------------|:-----------------------------------------------|:------------|
 | configuration | [configuration](../resources/configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. |
-| description   | String                                         | Description of the connection displayed in the Microsoft 365 admin center. |
-| name          | String                                         | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. |
+| description   | string                                         | Description of the connection displayed in the Microsoft 365 admin center. |
+| name          | string                                         | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. |
 
 ## Response
 
@@ -120,5 +121,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -3,13 +3,14 @@ title: "externalItemContent resource type"
 description: "The content of an item indexed via a Microsoft Search connection."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
 # externalItemContent resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,8 +22,8 @@ The content of an [externalItem](externalitem.md) indexed via a Microsoft Search
 
 | Property | Type   | Description                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
-| value    | String | The content for the externalItem. Required.                                                 |
-| type     | String | The type of content in the value property. Possible values are `text` and `html`. Required. |
+| value    | string | The content for the externalItem. Required.                                                 |
+| type     | string | The type of content in the value property. Possible values are `text` and `html`. Required. |
 
 ## Relationships
 
@@ -42,8 +43,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "value": "String",
-  "type": "String"
+  "value": "string",
+  "type": "string"
 }
 ```
 

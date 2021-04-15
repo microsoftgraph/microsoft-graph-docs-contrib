@@ -3,13 +3,14 @@ title: "configuration resource type"
 description: "Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
+ms.author: mecampos
 ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
 # configuration resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +22,7 @@ Specifies additional application IDs that are allowed to manage the externalConn
 
 | Property       | Type              | Description |
 |:---------------|:------------------|:------------|
-| authorizedApps | String collection | A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection. |
+| authorizedApps | string collection | A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection. |
 
 ## JSON representation
 
@@ -38,7 +39,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "authorizedApps": ["String"]
+  "authorizedApps": ["string"]
 }
 ```
 
@@ -51,5 +52,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
