@@ -66,6 +66,8 @@ interface MsalConfig {
   loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
   loginHint?: string
   options?: Configuration; // msal js Configuration object
+  domainHint?: string;
+  prompt?: string;
 }
 ```
 
