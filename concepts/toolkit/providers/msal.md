@@ -69,7 +69,7 @@ interface MsalConfig {
   loginHint?: string
   options?: Configuration; // msal js Configuration object
   domainHint?: string;
-  prompt?: string;
+  prompt?: string; // "login", "none", "select_account", "consent"
 }
 ```
 
