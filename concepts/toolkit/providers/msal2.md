@@ -90,4 +90,4 @@ This section will go through the steps to add SID as an optional claim so that i
 2. Click on ```Add optional claim```.
 3. On the ```Add optional claim``` sidebar opens up, select ```ID``` under ```Token Type```.
 4. In the list of claims, select ```sid```
-5. Click on ```Add```
+5. Click on ```Add```.
