@@ -40,6 +40,8 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
 | domain-hint  | Query string of domain location for forwarding sign in experience. Optional.              
 | prompt | Selection for type of user interaction requited to login. Valid options include: `login` forces the user to enter credentials on request. `none` for no interactive prompt. `select_account` to send the user to an account picker. `consent` to send the user to a OAuth consent dialog. Optional.                                                                                                                                                                            |
 
+To learn more about the MSAL specification and optional 
+
 ### Initialize in JavaScript
 
 You can provide more options by initializing the provider in JavaScript.
@@ -86,7 +88,7 @@ interface MsalConfig {
 }
 ```
 
-To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](/azure/active-directory/develop/msal-js-initializing-client-applications).
+To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow#send-the-sign-in-request).
 
 ## Creating an app/client ID
 
