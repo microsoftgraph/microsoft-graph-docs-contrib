@@ -53,7 +53,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                                                                                                                                                   |
 
 > [!CAUTION]
->- The **autoAdmittedUsers** property is deprecated. Use **scope** property of [lobbyBypassSettings]((lobbyBypassSettings.md)) instead.
+>- The **autoAdmittedUsers** property is deprecated. Use **scope** property of [lobbyBypassSettings](lobbyBypassSettings.md) instead.
 >- \* Creating live events with the **broadcastSettings** property is in Beta, with important limitations. Please refer to
 > [broadcastSettings](broadcastMeetingSettings.md) for more details.
 
