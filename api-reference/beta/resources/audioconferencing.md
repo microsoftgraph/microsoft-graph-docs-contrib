@@ -17,18 +17,18 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 
 ## Properties
 
-| Property        | Type              | Description                                                                    |
-| :-------------- | :---------------- | :----------------------------------------------------------------------------- |
-| dialinUrl       | String            | A URL to the externally-accessible web page that contains dial-in information. |
-| conferenceId    | String            | The conference id of the online meeting.                                       |
-| tollFreeNumber  | String            | The toll-free number that connects to the Audio Conference Provider.           |
-| tollFreeNumbers | String collection | List of toll-free numbers that are displayed in the meeting invite.            |
-| tollNumber      | String            | The toll number that connects to the Audio Conference Provider.                |
-| tollNumbers     | String collection | List of toll numbers that are displayed in the meeting invite.                 |
+| Property                    | Type              | Description                                                                    |
+| :-------------------------- | :---------------- | :----------------------------------------------------------------------------- |
+| dialinUrl                   | String            | A URL to the externally-accessible web page that contains dial-in information. |
+| conferenceId                | String            | The conference id of the online meeting.                                       |
+| tollFreeNumber (deprecated) | String            | The toll-free number that connects to the Audio Conference Provider.           |
+| tollFreeNumbers             | String collection | List of toll-free numbers that are displayed in the meeting invite.            |
+| tollNumber (deprecated)     | String            | The toll number that connects to the Audio Conference Provider.                |
+| tollNumbers                 | String collection | List of toll numbers that are displayed in the meeting invite.                 |
 
-> [!NOTE]
+> [!CAUTION]
 >
->- **tollFreeNumber** and **tollNumber** will be deprecated. Please use **tollFreeNumbers** and **tollNumbers** instead.
+>- **tollFreeNumber** and **tollNumber** are deprecated. Please use **tollFreeNumbers** and **tollNumbers** instead.
 >- For backword compatibility, the original **tollFreeNumber** will be added to the new **tollFreeNumbers** collection and the original **tollNumber** will be added to the new **tollNumbers** collection.
 
 ## JSON representation
