@@ -55,6 +55,8 @@ If successful, this method returns a `204 No Content` response code.
 
 Here is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
@@ -62,6 +64,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

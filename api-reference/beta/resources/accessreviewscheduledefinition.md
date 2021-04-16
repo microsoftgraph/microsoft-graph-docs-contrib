@@ -53,14 +53,18 @@ An accessReviewScheduleDefinition contains a list of [accessReviewInstance](acce
 |:---------------|:--------|:----------|
 | `instances`               |[accessReviewInstance](accessreviewinstance.md) collection         | If the `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique resource under review in the `accessReviewScheduleDefinition`. If a review has multiple resources and multiple instances, each resource will have a unique instance for each recurrence. |
 
-### Supported queries for accessReviewScheduleDefinition
+### Supported search queries for accessReviewScheduleDefinition
 The following are queries supported on an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) based on the [accessReviewScope](accessreviewscope.md).
 
 |Scenario| Query |
 |--|--|
-| List every `accessReviewScheduleDefinition` on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups') |
-| List every `accessReviewScheduleDefinition` on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups/{group id}') |
-| List every `accessReviewScheduleDefinition` scoped to all Microsoft 365 groups with guest users | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, './members') |
+| List every `accessReviewScheduleDefinition` on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups') |
+| List every `accessReviewScheduleDefinition` on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users) | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups/{group id}') |
+| List every `accessReviewScheduleDefinition` scoped to all Microsoft 365 groups with guest users | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members') |
+| List every `accessReviewScheduleDefinition` on an access package | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'accessPackageAssignments') |
+| List every `accessReviewScheduleDefinition` for service principals assigned to privileged role | /beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'roleAssignmentScheduleInstances') |
+
+
 
 ## JSON representation
 The following is a JSON representation of the resource.
