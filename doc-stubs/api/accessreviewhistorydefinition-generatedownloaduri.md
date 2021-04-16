@@ -58,7 +58,7 @@ If successful, this action returns a `200 OK` response code and a [accessReviewH
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/{definition-id}/generateDownloadUri()
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38/generateDownloadUri()
 ```
 
 
