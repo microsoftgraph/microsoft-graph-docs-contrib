@@ -4503,8 +4503,9 @@ items:
               - name: Filter by current user
                 href: api/userconsentrequest-filterByCurrentUser.md
           - name: Terms of use
-            href: resources/agreement.md
             items:
+            - name: Agreement
+              href: resources/agreement.md
             - name: List
               href: api/agreement-list.md          
             - name: Create
