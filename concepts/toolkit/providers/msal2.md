@@ -70,26 +70,7 @@ You can provide more options by initializing the provider in JavaScript.
 
 ## Creating an app/client ID
 
-To create an application in Azure Active Directory, you need to add a new application registration, and then configure an app name and URL location.
-
-To create the app in Azure Active Directory:
-
-1. Go to the Azure portal at https://portal.azure.com.
-2. From the menu, select Azure Active Directory.
-3. From the Azure Active Directory menu, select App registrations.
-4. From the top menu, select the New registration button.
-5. Enter the name for your app; for example, My M365 app.
-6. For the type of supported account types, select Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox).
-7. In the Redirect URI field, in the dropdown, select Single Page Application (SPA), and in the URL field, enter http://localhost:3000.
-Confirm changes by selecting the Register button.
-
-## Enabling SID (Session ID) as an ID token claim
-This section will go through the steps to add SID as an optional claim so that it is returned in the ID tokens. Having an SID in the ID token will enable features like Single Sign On to work more seamlessly, so we highly recommend you to add this claim.
-1. Once your app registration is done, navigate to ```Token Configuration``` under ```Manage```.
-2. Click on ```Add optional claim```.
-3. Once the ```Add optional claim``` sidebar opens up, select ```ID``` under ```Token Type```.
-4. In the list of claims, select ```sid```
-5. Click on ```Add```.
+For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
 
 ## Migrating from MSAL Provider to MSAL 2.0 Provider
 If you would like to migrate to MSAL 2.0 Provider and already have an application that is using MSAL Provider, follow these steps:
