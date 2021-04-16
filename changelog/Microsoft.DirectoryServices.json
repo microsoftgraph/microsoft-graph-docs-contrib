@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the guestUserRoleId property to [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) to specify the role granted to guest users.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-04-16T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
           "ChangedApiName": "identityApiConnector",
