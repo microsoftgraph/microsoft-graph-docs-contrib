@@ -5,7 +5,7 @@ localization_priority: Normal
 author: amrutha95
 ---
 
-# MSAL2.0  provider
+# MSAL 2.0  provider
 
 The MSAL 2.0 provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
 To learn more, see [providers](./providers.md).
