@@ -22,7 +22,7 @@ Deployments have the following key aspects:
 
 Because content and audience are key to the definition of a deployment, both are required to be assigned at the time of creation. Content and audience assignments cannot be changed later, however, device membership within an audience can.
 
-To learn more about creating a deployment, see [Deploy an update using the Windows Update for Business deployment service](windowsupdates-deploy-update.md) and [Deploy and expedited update using the Windows Update for Business deployment service](windowsupdates-deploy-expedited-update.md).
+To learn more about creating a deployment, see [Deploy an update using the Windows Update for Business deployment service](windowsupdates-deploy-update.md) and [Deploy an expedited update using the Windows Update for Business deployment service](windowsupdates-deploy-expedited-update.md).
 
 ## Configure settings
 
@@ -61,8 +61,8 @@ Deployments move through the following lifecycle states:
 
 | Transition                     | Condition                                |
 |--------------------------------|------------------------------------------|
-| scheduled → offering           | Scheduling condition is met               |
-| offering → scheduled           | Scheduling condition is not met           |
+| scheduled → offering           | Scheduling condition is met.             |
+| offering → scheduled           | Scheduling condition is not met.         |
 | scheduled or offering → paused | There is a request or automatic action to pause. |
 | paused → scheduled or offering | There is no longer a request or automatic action to pause. |
 
@@ -74,8 +74,8 @@ The service will determine the effective `value` of the deployment state as a ne
 
 ## Multiple deployments
 
-A device can be assigned to multiple deployments at one time. These deployments can be for content of different update categories, as well as for content of the same update category.
+A device can be assigned to multiple deployments at one time. These deployments can be for content of the same update category (for example, all deployments are feature updates), or for content of different update categories.
 
 When a device is assigned to two deployments for content of different update categories (for example, a feature update and an expedited quality update), the deployment service will offer content in a sequence according to Microsoft’s recommendation.
 
-When a device is assigned to two deployments for content of the same update category (for example, feature update versions 20H1 and 20H2, or quality updates from March 2021 and April 2021), the deployment service will offer the content that is highest ranked by Microsoft. For feature updates and quality updates, an update that was released more recently is higher ranked. This behavior does not apply if one of the deployments is still scheduled for the device and is not ready to offer content. In that case, the other deployment’s content will be delivered to the device.
+When a device is assigned to two deployments for content of the same update category (for example, feature update versions 20H1 and 20H2, or quality updates from March 2021 and April 2021), the deployment service offers the content that is higher ranked by Microsoft. For feature updates and quality updates, an update that is released more recently is higher ranked. This behavior does not apply if one of the deployments is still scheduled for the device and is not ready to offer content. In that case, content from the other deployment is delivered to the device.

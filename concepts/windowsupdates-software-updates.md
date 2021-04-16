@@ -17,7 +17,7 @@ You may already be familiar with the [Microsoft Update Catalog](https://www.cata
 
 There are two high-level categories of Windows 10 updates: feature updates and quality updates. Quality updates are further classified as security and non-security. The deployment service currently supports deploying feature updates and security quality updates. Driver management is currently excluded from the quality updates of the deployment service.
 
-To learn more about Windows 10 updates and servicing, see [Quick guide to Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
+To learn more about Windows 10 updates and servicing, see [Quick guide to Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-quick-start).
 
 ## Identifying updates for deployment
 
@@ -97,4 +97,4 @@ Once you have identified the desired update, assign it as content to a deploymen
 
 ## Examples
 
-To see examples of [listing catalog entries](/graph/api/windowsupdates-catalog-list-entries), see [Deploy an update](windowsupdates-deploy-update.md) and [Deploy an expedited update](windowsupdates-deploy-expedited-update.md)
+To see examples of [listing catalog entries](/graph/api/windowsupdates-catalog-list-entries), see [Deploy an update](windowsupdates-deploy-update.md) and [Deploy an expedited update](windowsupdates-deploy-expedited-update.md).
