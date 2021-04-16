@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
 
 ## Permissions
@@ -58,6 +60,8 @@ If successful, this method returns a `200 OK` response code and collection of [t
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_apps_in_team"
@@ -66,6 +70,24 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-apps-in-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-installed-apps-in-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -84,19 +106,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('6903fa93-605b-43ef-920e-77c4729f8258')/installedApps",
-    "@odata.count": 3,
-    "value": [
-        {
-            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc="
-        },
-        {
-            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwYWUzNWIzNi0wZmQ3LTQyMmUtODA1Yi1kNTNhZjE1NzkwOTM="
-        },
-        {
-            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg="
-        }
-  ]
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('6903fa93-605b-43ef-920e-77c4729f8258')/installedApps",
+   "@odata.count":3,
+   "value":[
+      {
+         "id":"NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc="
+      },
+      {
+         "id":"NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwYWUzNWIzNi0wZmQ3LTQyMmUtODA1Yi1kNTNhZjE1NzkwOTM="
+      },
+      {
+         "id":"NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg="
+      }
+   ]
 }
 ```
 
@@ -104,7 +126,8 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+In the following example, if an instance of an installed app has a [bot](../resources/teamworkbot.md) associated with it, then the details of the bot are returned as well.
+
 
 <!-- {
   "blockType": "request",
@@ -112,7 +135,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 
 #### Response
@@ -133,58 +156,67 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('6903fa93-605b-43ef-920e-77c4729f8258')/installedApps(teamsAppDefinition())",
-    "@odata.count": 3,
-    "value": [
-        {
-            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc=",
-            "teamsAppDefinition": {
-                "id": "MDAwMDEwMTYtZGUwNS00OTJlLTkxMDYtNDgyOGZjOGE4Njg3IyMxLjAuMg==",
-                "teamsAppId": "00001016-de05-492e-9106-4828fc8a8687",
-                "azureADAppId": "7df0a125-d3be-4c96-aa54-591f83ff541c",
-                "displayName": "Power Automate Actions",
-                "version": "1.0.2",
-                "requiredResourceSpecificApplicationPermissions": [],
-                "publishingState": "published",
-                "shortdescription": "Be more productive with Microsoft Flow",
-                "description": "Automate time-consuming and repetitive tasks by integrating your favorite apps and services with Microsoft Power Automate.",
-                "lastModifiedDateTime": null,
-                "createdBy": null
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('6903fa93-605b-43ef-920e-77c4729f8258')/installedApps(teamsAppDefinition())",
+   "@odata.count":3,
+   "value":[
+      {
+         "id":"NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc=",
+         "teamsAppDefinition":{
+            "id":"MDAwMDEwMTYtZGUwNS00OTJlLTkxMDYtNDgyOGZjOGE4Njg3IyMxLjAuMg==",
+            "teamsAppId":"00001016-de05-492e-9106-4828fc8a8687",
+            "azureADAppId":"7df0a125-d3be-4c96-aa54-591f83ff541c",
+            "displayName":"Power Automate Actions",
+            "version":"1.0.2",
+            "requiredResourceSpecificApplicationPermissions":[
+               
+            ],
+            "publishingState":"published",
+            "shortdescription":"Be more productive with Microsoft Flow",
+            "description":"Automate time-consuming and repetitive tasks by integrating your favorite apps and services with Microsoft Power Automate.",
+            "lastModifiedDateTime":null,
+            "createdBy":null,
+            "bot":{
+               "id":"9a58a3ec-6b68-4818-ac11-844f1c326784"
             }
-        },
-        {
-            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwYWUzNWIzNi0wZmQ3LTQyMmUtODA1Yi1kNTNhZjE1NzkwOTM=",
-            "teamsAppDefinition": {
-                "id": "MGFlMzViMzYtMGZkNy00MjJlLTgwNWItZDUzYWYxNTc5MDkzIyMxLjI=",
-                "teamsAppId": "0ae35b36-0fd7-422e-805b-d53af1579093",
-                "azureADAppId": "00000003-0000-0ff1-ce00-000000000000",
-                "displayName": "SharePoint Pages",
-                "version": "1.2",
-                "requiredResourceSpecificApplicationPermissions": [],
-                "publishingState": "published",
-                "shortdescription": "Add a tab for a SharePoint news article or page.",
-                "description": "This app allows you to tab intranet pages from any SharePoint site so that they can be viewed by your team inside Teams channels.",
-                "lastModifiedDateTime": null,
-                "createdBy": null
-            }
-        },
-        {
-            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=",
-            "teamsAppDefinition": {
-                "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
-                "teamsAppId": "0d820ecd-def2-4297-adad-78056cde7c78",
-                "azureADAppId": "2d4d3d8e-2be3-4bef-9f87-7875a61c29de",
-                "displayName": "OneNote",
-                "version": "1.0.0",
-                "requiredResourceSpecificApplicationPermissions": [],
-                "publishingState": "published",
-                "shortdescription": "Capture and share ideas, to-do lists and other notes with your team.",
-                "description": "Capture and share ideas, to-do lists and other thoughts with your team. You can also co-author anytime.",
-                "lastModifiedDateTime": null,
-                "createdBy": null
-            }
-        }
-  ]
+         }
+      },
+      {
+         "id":"NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwYWUzNWIzNi0wZmQ3LTQyMmUtODA1Yi1kNTNhZjE1NzkwOTM=",
+         "teamsAppDefinition":{
+            "id":"MGFlMzViMzYtMGZkNy00MjJlLTgwNWItZDUzYWYxNTc5MDkzIyMxLjI=",
+            "teamsAppId":"0ae35b36-0fd7-422e-805b-d53af1579093",
+            "azureADAppId":"00000003-0000-0ff1-ce00-000000000000",
+            "displayName":"SharePoint Pages",
+            "version":"1.2",
+            "requiredResourceSpecificApplicationPermissions":[
+               
+            ],
+            "publishingState":"published",
+            "shortdescription":"Add a tab for a SharePoint news article or page.",
+            "description":"This app allows you to tab intranet pages from any SharePoint site so that they can be viewed by your team inside Teams channels.",
+            "lastModifiedDateTime":null,
+            "createdBy":null
+         }
+      },
+      {
+         "id":"NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=",
+         "teamsAppDefinition":{
+            "id":"MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
+            "teamsAppId":"0d820ecd-def2-4297-adad-78056cde7c78",
+            "azureADAppId":"2d4d3d8e-2be3-4bef-9f87-7875a61c29de",
+            "displayName":"OneNote",
+            "version":"1.0.0",
+            "requiredResourceSpecificApplicationPermissions":[
+               
+            ],
+            "publishingState":"published",
+            "shortdescription":"Capture and share ideas, to-do lists and other notes with your team.",
+            "description":"Capture and share ideas, to-do lists and other thoughts with your team. You can also co-author anytime.",
+            "lastModifiedDateTime":null,
+            "createdBy":null
+         }
+      }
+   ]
 }
 ```
 
@@ -193,13 +225,33 @@ Content-type: application/json
 #### Request
 
 The following is an example of the request. In the example, the manifest ID of the Teams app is `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee`.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_apps_in_team_expand_filter_externalid"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/acda442c-78d2-491b-8204-4ef5019c0193/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-team-expand-filter-externalid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-apps-in-team-expand-filter-externalid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-installed-apps-in-team-expand-filter-externalid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-team-expand-filter-externalid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -219,32 +271,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.count": 1,
-    "value": [
-        {
-            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMjQwYTM2OC0yNWUwLTQ1NjktOGViZS0xMzYwMWNiNTVhMTg=",
-            "teamsApp": {
-                "id": "0240a368-25e0-4569-8ebe-13601cb55a18",
-                "externalId": "cf1ba4c7-f94e-4d80-ba90-5594b641a8ee",
-                "displayName": "YPA",
-                "distributionMethod": "sideloaded"
-            },
-            "teamsAppDefinition": {
-                "id": "MDI0MGEzNjgtMjVlMC00NTY5LThlYmUtMTM2MDFjYjU1YTE4IyM2LjAuMA==",
-                "teamsAppId": "0240a368-25e0-4569-8ebe-13601cb55a18",
-                "azureADAppId": "9fc97ea2-c417-4c76-a2db-197612067b28",
-                "displayName": "YPA",
-                "version": "6.0.0",
-                "requiredResourceSpecificApplicationPermissions": [
-                ],
-                "publishingState": "published",
-                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
-                "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
-                "lastModifiedDateTime": null,
-                "createdBy": null
-            }
-        }
-    ]
+   "@odata.count":1,
+   "value":[
+      {
+         "id":"NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMjQwYTM2OC0yNWUwLTQ1NjktOGViZS0xMzYwMWNiNTVhMTg=",
+         "teamsApp":{
+            "id":"0240a368-25e0-4569-8ebe-13601cb55a18",
+            "externalId":"cf1ba4c7-f94e-4d80-ba90-5594b641a8ee",
+            "displayName":"YPA",
+            "distributionMethod":"sideloaded"
+         },
+         "teamsAppDefinition":{
+            "id":"MDI0MGEzNjgtMjVlMC00NTY5LThlYmUtMTM2MDFjYjU1YTE4IyM2LjAuMA==",
+            "teamsAppId":"0240a368-25e0-4569-8ebe-13601cb55a18",
+            "azureADAppId":"9fc97ea2-c417-4c76-a2db-197612067b28",
+            "displayName":"YPA",
+            "version":"6.0.0",
+            "requiredResourceSpecificApplicationPermissions":[
+               
+            ],
+            "publishingState":"published",
+            "shortdescription":"A conversational smart assistant from MSX that surfaces real-time insights.",
+            "description":"For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
+            "lastModifiedDateTime":null,
+            "createdBy":null
+         }
+      }
+   ]
 }
 ```
 

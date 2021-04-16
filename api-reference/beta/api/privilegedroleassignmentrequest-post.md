@@ -3,7 +3,7 @@ title: "Create privilegedRoleAssignmentRequest"
 description: "Create a privilegedroleassignmentrequest object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -91,7 +91,6 @@ Content-type: application/json
     "schedule": {
         "startDateTime": "2018-02-08T02:35:17.903Z"
     },
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
@@ -137,7 +136,6 @@ Content-length: 304
         "duration" : null
     },
     "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "2018-02-08T02:35:42.9137335Z",

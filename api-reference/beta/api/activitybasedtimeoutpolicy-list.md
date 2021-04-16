@@ -3,7 +3,7 @@ title: "List activityBasedTimeoutPolicies"
 description: "Get a list of activityBasedTimeoutPolicy objects."
 localization_priority: Normal
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Update tab in chat"
 description: "Update the properties of the specified tab in a chat."
-author: "nkramer"
+author: "subray"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -30,6 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 ## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 PATCH /chats/{chat-id}/tabs/{tab-id}
 ```
@@ -52,6 +57,8 @@ If successful, this method returns a `200 OK` response code and the updated **te
 
 #### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tabs_in_chat"
@@ -65,6 +72,24 @@ Content-length: 211
   "displayName": "My Contoso Tab - updated again"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-tabs-in-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tabs-in-chat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-tabs-in-chat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tabs-in-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {

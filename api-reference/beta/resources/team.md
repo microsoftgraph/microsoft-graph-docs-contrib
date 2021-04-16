@@ -27,9 +27,9 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](../api/group-delete.md) | None |Delete the team and its associated group. |
 |[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of members in the team.|
-|[Get member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
 |[Add member](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member to the team.|
 |[Add members in bulk](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) collection|Add multiple members to the team in a single request.|
+|[Get member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
 |[Update member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Remove member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
 |[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
@@ -39,8 +39,8 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
 |[Complete migration](../api/team-completemigration.md)|[team](team.md)| Removes migration mode from the team and makes the team available to users to post and read messages.|
 |[List apps installed in team](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a team.|
-|[Get app installed in team](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get the specified app installed in a team.|
 |[Add app to team](../api/team-post-installedapps.md) |None | Add (install) an app to a team.|
+|[Get app installed in team](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get the specified app installed in a team.|
 |[Upgrade app installed in team](../api/team-teamsappinstallation-upgrade.md) | None | Upgrade the app installed in a team to the latest version.|
 |[Remove app from team](../api/team-delete-installedapps.md) | None | Remove (uninstall) an app from a team.|
 
@@ -63,7 +63,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
-|createdDateTime|dateTimeOffset|Read only. Timestamp at which the team was created.|
+|createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
 
 ### Instance attributes
 
@@ -71,7 +71,7 @@ Instance attributes are properties with special behaviors. These properties are 
 
 | Property name| Type   | Description
 |:-----------------------|:-------|:-------------------------|
-|@microsoft.graph.teamCreationMode|string|Indicates that the team is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
+|@microsoft.graph.teamCreationMode|string|Indicates that the team is in migration state and is currently being used for migration purposes. It accepts one value: `migration`. **Note**: In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.|
 
 For a POST request example, see [Request (create team in migration state)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
@@ -118,7 +118,7 @@ The following is a JSON representation of the resource.
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
   "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "string (timestamp)"
+  "createdDateTime": "dateTimeOffset"
 }
 ```
 

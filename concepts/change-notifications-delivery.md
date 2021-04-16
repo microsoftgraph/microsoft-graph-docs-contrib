@@ -1,12 +1,12 @@
 ---
-title: "Get change notifications delivered in different ways (preview)"
+title: "Get change notifications delivered in different ways"
 description: "Change notifications can be delivered via different technologies, including webhooks and Azure Event Hubs."
-author: "davidmu1"
+author: "Jumaodhiss"
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
 ---
 
-# Get change notifications delivered in different ways (preview)
+# Get change notifications delivered in different ways
 
 Change notifications can be delivered in different ways to subscribers. If the main delivery mode for change notifications is through webhooks, it can be challenging to take advantage of webhooks for high throughput scenarios or when the receiver cannot expose a publicly available notification URL.  
 
@@ -32,7 +32,7 @@ This section will walk you through the setup of required Azure services.
 
 The [Azure CLI](/cli/azure/what-is-azure-cli) allows you to script and automate adminstrative tasks in Azure. The CLI can be [installed on your local computer](/cli/azure/install-azure-cli) or run directly from the [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
-```shell
+```azurecli
 # --------------
 # TODO: update the following values
 #sets the name of the resource group

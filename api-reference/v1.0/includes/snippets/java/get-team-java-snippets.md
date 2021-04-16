@@ -4,13 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-TeamsAppInstallation teamsAppInstallation = new TeamsAppInstallation();
-teamsAppInstallation.additionalDataManager().put("teamsApp@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"));
-
-graphClient.teams("{id}").installedApps()
+Team team = graphClient.teams("893075dd-2487-4122-925f-022c42e20265")
 	.buildRequest()
-	.post(teamsAppInstallation);
+	.get();
 
 ```

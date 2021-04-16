@@ -48,9 +48,6 @@ Attachments for an [event](../resources/event.md) in a [calendar](../resources/c
 ```http
 GET /me/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
 

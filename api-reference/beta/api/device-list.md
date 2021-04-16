@@ -3,7 +3,7 @@ title: "List devices"
 description: "Retrieve a list of devices registered in the directory. "
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -189,7 +189,18 @@ Content-type: application/json
       "displayName":"a_device_1",
       "Manufacturer":"Google",
       "Model":"Pixel 3a",
-      "operatingSystemVersion":"10.0"
+      "operatingSystemVersion":"10.0",
+      "hostNames":[]
+    },
+    {
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000001",
+      "deviceVersion":1,
+      "displayName":"a_device_1",
+      "Manufacturer":"Microsoft",
+      "Model":"Surface",
+      "operatingSystemVersion":"windows10EnterpriseN",
+      "hostNames":["device_1.contoso.onmicrosoft.com", "device_1"]
     }
   ]
 }
@@ -236,7 +247,8 @@ Content-type: application/json
       "displayName":"contoso_Android",
       "Manufacturer":"Google",
       "Model":"Pixel 3a",
-      "operatingSystemVersion":"10.0"
+      "operatingSystemVersion":"10.0",
+      "hostNames":[]
     }
   ]
 }
