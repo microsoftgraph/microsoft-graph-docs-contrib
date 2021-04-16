@@ -21,7 +21,7 @@ For example, you can:
 - Use the `/recording` and `/alternativeRecording` paths to get the recordings of a live event, as shown in [example 5](#example-5-retrieve-the-recording-of-a-live-event).
 - Use the `/meetingAttendanceReport` path to get the attendance report for a scheduled meeting, as shown in [example 6](#example-6-retrieve-the-attendance-report-of-a-meeting).
 
->**Notes:**
+> [!NOTE]
 >- Meeting attendance reports are available for meetings other than Live Events, and are only available when the meeting has concluded.
 >- Only the meeting organizer can access meeting attendance reports.
 >- Recordings and attendee reports are only available for Live Events, and are only available when the Live Event has concluded.
@@ -87,7 +87,7 @@ To get the attendance report of a meeting with delegated permission:
 GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
->**Notes:**
+> [!NOTE]
 >- The `/app` path is deprecated. Going forward, use the `/communications` path.
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
@@ -460,7 +460,7 @@ The following example shows a request to get a meeting attendance report.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
 ```
 
 ---
