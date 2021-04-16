@@ -10,7 +10,7 @@ author: amrutha95
 The MSAL 2.0 provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
 To learn more, see [providers](./providers.md).
 
-## Differences between MsalProvider and Msal2Provider
+## Differences between Msal2Provider and MsalProvider
 Although the usage is very similar, there are some key differences between MsalProvider and Msal2Provider. 
 * MsalProvider is built on top of MSAL.js, which implements the OAuth2.0 [Implicit Grant Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
 For many reasons, Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications. Learn more about security issues related to implicit grant flow [here](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
@@ -54,7 +54,7 @@ You can provide more options by initializing the provider in JavaScript.
 
     // initialize the auth provider globally
     Providers.globalProvider = new Msal2Provider({
-      clientId: 'clientId',
+      clientId: 'REPLACE_WITH_CLIENTID',
       isMultiAccountDisabled?: Boolean, //Set this to true to disable multi account functionality
       scopes?: string[],
       authority?: string,
@@ -90,3 +90,36 @@ This section will go through the steps to add SID as an optional claim so that i
 3. Once the ```Add optional claim``` sidebar opens up, select ```ID``` under ```Token Type```.
 4. In the list of claims, select ```sid```
 5. Click on ```Add```.
+
+## Migrating from MSAL Provider to MSAL 2.0 Provider
+If you would like to migrate to MSAL 2.0 Provider and already have an application that is using MSAL Provider, follow these steps:
+1. Go to the Azure portal at https://portal.azure.com.
+1. From the menu, select Azure Active Directory.
+1. From the Azure Active Directory menu, select App registrations.
+1. Select the app registration of the app that you are currently using. 
+1. Go to ```Authentication``` on the left menu.
+1. Under ```Platform configurations```, click on ```Add a platform``` and select ```Single-page Application```.
+1. Remove all the redirect URIs that you have currently registered under ```Web```, and instead add them under ```Single-page application```.
+1. Follow the steps [here]../get-started/add-aad-app-registration.md#enabling-sid-session-id-as-an-id-token-claim-only-for-msal-20-provider) to add SID as an ID token claim.
+1. In your code, and replace MSALProvider with MSAL2Provider.
+    If you are initializing your provider in the JS/TS code, follow these steps:
+    1. Replace the import statement for ```mgt-msal-provider``` with 
+    ```ts 
+    import {Msal2Provider, PromptType} from '@microsoft/mgt-msal2-provider';
+    ```
+    2. Replace the initialization of MsalProvider with
+    ```ts
+    Providers.globalProvider = new Msal2Provider({ 
+    clientId: 'REPLACE_WITH_CLIENTID'
+    ...
+    })
+    ```
+    If you are initializing the provider in the code, replace 
+    ```html
+    <mgt-msal-provider client-id="" ... ></mgt-msal-provider>
+    ``` 
+    with 
+    ```html
+    <mgt-msal2-provider  client-id="" ... ></mgt-msal2-provider>
+     ```
+    Refer to the earlier sections to check out how you can configure the Msal 2.0 Provider
