@@ -75,6 +75,7 @@ The following Graph resources are shared between Intune workflows:
 - [Mobile app install time settings](intune-shared-mobileappinstalltimesettings.md)
 - [Mobile app troubleshooting event](intune-shared-mobileapptroubleshootingevent.md)
 - [Owner type](intune-shared-ownertype.md)
+- [Policy platform type](intune-shared-policyplatformtype.md)
 - [Proxied domain](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [Report root](intune-shared-reportroot.md)

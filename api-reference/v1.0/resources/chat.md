@@ -1,7 +1,7 @@
 ---
 title: "chat resource type"
 description: "A chat is a collection of chatMessages between one or more participants."
-author: "clearab"
+author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -17,7 +17,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 ## Methods
 
-|  Method       |  Return Type  | Description|
+|  Method       |  Return Type  | Description| 
 |:---------------|:--------|:----------|
 |[Create chat](../api/chat-post.md) | [chat](chat.md) | Create a new chat.| 
 |[Get chat](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.| 
@@ -26,6 +26,8 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Add chat member](../api/chat-post-members.md) | Location header | Add a user to the chat.| 
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.| 
 |[Remove chat member](../api/chat-delete-members.md)|None|Remove a user from the chat.|
+|[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. | 
+|[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. | 
 |[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Get one-on-one chat between user and the app |
 |[List apps in chat](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a chat (and associated meeting).|
 |[Get app in chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get a specific app installed in a chat (and associated meeting).|
