@@ -21,12 +21,12 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approva
 |:-------------|:------------|:------------|
 |[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object. |
 
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The identifier of the approval object.|
 |steps|[approvalStep](../resources/approvalstep.md) collection|Used to represent the decision associated with a single step in the approval process configured in [approvalStage](../resources/approvalstage.md).|
-
 
 ## Relationships
 |Relationship|Type|Description|

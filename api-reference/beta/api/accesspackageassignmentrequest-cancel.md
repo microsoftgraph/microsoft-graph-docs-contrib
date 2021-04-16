@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 
 {
   "id":"request-id",
-  "requestStatus","cancelled"
+  "requestStatus":"cancelled"
 }
 ```
 
