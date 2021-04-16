@@ -18,7 +18,7 @@ Settings controlling the user's update experience on a device.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|daysUntilForcedReboot|Int32|Specifies number of days after the update is installed during which the user of the device can control when the device restarts.|
+|daysUntilForcedReboot|Int32|Specifies the number of days after an update is installed, during which the user of the device can control when the device restarts.|
 
 ## Relationships
 None.

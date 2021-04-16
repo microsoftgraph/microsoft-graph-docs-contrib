@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the members and exclusions collections of a deployment audience with updatable assets of the same type.
+Update the members and exclusions collections of a [deploymentAudience](../resources/deploymentaudience.md) with [updatableAsset](../resources/windowsupdates-updatableasset.md) resources of the same type.
 
 Adding an [azureADdevice](../resources/windowsupdates-azureaddevice.md) to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object if it does not already exist.
 
@@ -58,7 +58,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code.
+If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
 

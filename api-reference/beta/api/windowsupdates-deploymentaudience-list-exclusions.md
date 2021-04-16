@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the updatable assets that are excluded from a deployment audience.
+List the [updatableAsset](../resources/windowsupdates-updatableasset.md) resources that are excluded from a [deploymentAudience](../resources/windowsupdates-deploymentaudience).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

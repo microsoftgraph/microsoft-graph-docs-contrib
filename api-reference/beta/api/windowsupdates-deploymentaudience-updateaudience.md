@@ -12,9 +12,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the members and exclusions collections of a deployment audience.
+Update the members and exclusions collections of a [deploymentAudience](../resources/deploymentaudience.md).
 
-Adding an [azureADdevice](../resources/windowsupdates-azureaddevice.md) to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object if it does not already exist.
+Adding an [azureADdevice](../resources/windowsupdates-azureaddevice.md) to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object, if it does not already exist.
 
 If all assets are the same type, you can also use the method [updateAudienceById](windowsupdates-deploymentaudience-updateaudiencebyid.md).
 
@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|addMembers|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add as members of the deployment audience.|
+|addMembers|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of [updatableAsset](../resources/windowsupdates-updatableasset.md) resources to add as members of the deployment audience.|
 |removeMembers|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove as members of the deployment audience.|
 |addExclusions|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add as exclusions from the deployment audience.|
 |removeExclusions|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove as exclusions from the deployment audience.|
@@ -59,7 +59,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code.
+If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -105,7 +105,7 @@ Content-length: 599
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

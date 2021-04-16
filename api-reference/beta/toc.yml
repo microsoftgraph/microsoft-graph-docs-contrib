@@ -9505,6 +9505,8 @@ items:
             href: api/windowsupdates-deploymentaudience-list-exclusions.md
           - name: Update members and exclusions
             href: api/windowsupdates-deploymentaudience-updateaudience.md
+          - name: Update by ID
+            href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
         - name: Updatable asset
           href: resources/windowsupdates-updatableasset.md
           items:
