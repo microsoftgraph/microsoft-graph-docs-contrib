@@ -21,10 +21,18 @@ To create the app in Azure Active Directory:
 1. From the top menu, select the **New registration** button.
 1. Enter the name for your app; for example, `My M365 app`.
 1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
-1. In the **Redirect URI** field, in the dropdown, select **Web**, and in the URL field, enter `http://localhost:3000`.
+1. In the **Redirect URI** field, in the dropdown, select **Single Page Application (SPA)**, and in the URL field, enter `http://localhost:3000`. Note: if you are using MSAL Provider and not MSAL 2.0 Provider, you will need to select **Web** instead of **SPA**.
 1. Confirm changes by selecting the **Register** button.
 
-## Enable OAuth implicit flow
+## Enabling SID (Session ID) as an ID token claim (Only for MSAL 2.0 Provider)
+This section will go through the steps to add SID as an optional claim so that it is returned in the ID tokens. Having an SID in the ID token will enable features like Single Sign On to work more seamlessly, so we highly recommend you to add this claim.
+1. Once your app registration is done, navigate to ```Token Configuration``` under ```Manage```.
+2. Click on ```Add optional claim```.
+3. Once the ```Add optional claim``` sidebar opens up, select ```ID``` under ```Token Type```.
+4. In the list of claims, select ```sid```
+5. Click on ```Add```.
+
+## Enable OAuth implicit flow (Only for MSAL PRovider)
 
 In most cases, you will use Microsoft Graph Toolkit in client-side applications that consist only of client-side code. Because client-side apps can't store secrets securely, you need to use [OAuth implicit flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow?WT.mc_id=m365-10340-wmastyka), which assumes an app's identity based on its ID and URL.
 
