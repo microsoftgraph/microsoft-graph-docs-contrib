@@ -87,6 +87,6 @@ Confirm changes by selecting the Register button.
 This section will go through the steps to add SID as an optional claim so that it is returned in the ID tokens. Having an SID in the ID token will enable features like Single Sign On to work more seamlessly, so we highly recommend you to add this claim.
 1. Once your app registration is done, navigate to ```Token Configuration``` under ```Manage```.
 2. Click on ```Add optional claim```.
-3. On the ```Add optional claim``` sidebar opens up, select ```ID``` under ```Token Type```.
+3. Once the ```Add optional claim``` sidebar opens up, select ```ID``` under ```Token Type```.
 4. In the list of claims, select ```sid```
 5. Click on ```Add```.
