@@ -175,7 +175,7 @@ Before you can load data from Microsoft 365, you need to specify the list of per
 
     ```tsx
     Providers.globalProvider = new Msal2Provider({
-      clientId: 'd7cb93c9-9097-4e38-8f06-7c0088ac3318',
+      clientId: 'REPLACE_WITH_CLIENTID',
       scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
     });
     ```
