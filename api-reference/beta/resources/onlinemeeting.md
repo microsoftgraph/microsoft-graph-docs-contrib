@@ -1,7 +1,7 @@
 ---
 title: "onlineMeeting resource type"
 description: "Contains information about a meeting."
-author: "ananmishr"
+author: "jsandoval-msft"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
@@ -32,7 +32,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                    |
 | alternativeRecording  | Stream                                        | The content stream of the alternative recording of a live event. Read-only.                                                                                                                                                                                 |
 | attendeeReport        | Stream                                        | The content stream of the attendee report of a live event. Read-only.                                                                                                                                                                                       |
-| autoAdmittedUsers     | String                                        | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only. |
+| autoAdmittedUsers (deprecated)    | String                                        | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only.                                                                                                                                                                                    |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event*                                                                                                                                                                                                                    |
 | chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting.                                                                                                                                                                                                   |
@@ -52,10 +52,9 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | subject               | String                                        | The subject of the online meeting.                                                                                                                                                                                                                          |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                                                                                                                                                   |
 
-> [!IMPORTANT]
-> The **autoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
-> 
-> *\Creating live events with the **broadcastSettings** property is in Beta, with important limitations. Please refer to
+> [!CAUTION]
+>- The **autoAdmittedUsers** property is deprecated. Use **scope** property of [lobbyBypassSettings](lobbyBypassSettings.md) instead.
+>- \* Creating live events with the **broadcastSettings** property is in Beta, with important limitations. Please refer to
 > [broadcastSettings](broadcastMeetingSettings.md) for more details.
 
 ### onlineMeetingPresenters values
@@ -68,7 +67,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Unknown future value.                                         |
 
-**Note**: If the value of **allowedPresenters** is set to `roleIsPresenter`, please specify each meeting participant's meeting role using **role** property in [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
+> [!NOTE]
+> If the value of **allowedPresenters** is set to `roleIsPresenter`, please specify each meeting participant's meeting role using **role** property in [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
 
 ## JSON representation
 
