@@ -15,7 +15,7 @@ var printerShare = new PrinterShare
 	}
 };
 
-await graphClient.Print.Shares["{id}"]
+await graphClient.Print.Shares["{printerShare-id}"]
 	.Request()
 	.UpdateAsync(printerShare);
 

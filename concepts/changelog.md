@@ -26,10 +26,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
-| Addition        | v1.0        | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.
+| Addition        | v1.0        | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-list.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.
+| Addition | beta, v1.0 | Added support for app-only permission **Application.ReadWrite.OwnedBy** for [applicationTemplate](/graph/api/resources/applicationtemplate.md) [instantiate](/graph/api/applicationtemplate-instantiate.md) method. |
+| Addition | v1.0 | Added the **signInAudience** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0) resource.|
+| Addition | beta | Added the **uniqueName** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.|
+
 
 ## February 2021
-
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                                                                                              |
@@ -41,7 +44,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | beta          | Added the [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-beta) resource type.|
 | Addition        | beta          | Added the [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-beta) resource type.|
 | Addition        | beta          | Added the [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-beta) resource type.|
-
 
 ### Tasks and plans
 

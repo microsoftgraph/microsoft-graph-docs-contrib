@@ -14,7 +14,7 @@ var identityProviders = new IdentityProvider
 	}
 };
 
-await graphClient.Identity.B2xUserFlows["{id}"].IdentityProviders.References
+await graphClient.Identity.B2xUserFlows["{b2xIdentityUserFlow-id}"].IdentityProviders.References
 	.Request()
 	.UpdateAsync(identityProviders);
 
