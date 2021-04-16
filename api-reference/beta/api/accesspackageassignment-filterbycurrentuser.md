@@ -1,5 +1,5 @@
 ---
-title: "accessPackageAssignment: s"
+title: "accessPackageAssignment: filterByCurrentUser"
 description: "Retrieve a list of accesspackageassignment objects filtered on the signed-in user."
 localization_priority: Normal
 author: "sbounouh"
@@ -33,17 +33,16 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByCurrentUser
 ```
 
-## Query parameters
-The following table shows the parameters that can be used with this method.
+## Function parameters
+The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |on|[accessPackageAssignmentFilterByCurrentUserOptions](../resources/accesspackageassignment-accesspackageassignmentfilterbycurrentuseroptions.md)|The list of current user options that can be used to filter on the access package assignments list.|
 
-- `target` is used to get the `accessPackageAssignment` objects where the signed-in user is the target. The resulting list includes all of the assignments, current and expired, that the caller has across all catalogs and access packages.
+- `target` is used to get the `accessPackageAssignment` objects where the signed-in user is the target. The resulting list includes all of the assignments, current and expired, for the caller across all catalogs and access packages.
 
-- `createdBy` is used to get the `accessPackageAssignment` objects created by the signed-in user. The resulting list includes all of the assignments that the caller has created for themselves or on behalf of others (such as in case of admin direct assignment), across all catalogs and access packages.
-
+- `createdBy` is used to get the `accessPackageAssignment` objects created by the signed-in user. The resulting list includes all of the assignments that the caller created for themselves or on behalf of others, such as in case of admin direct assignment, across all catalogs and access packages.
 
 ## Request headers
 |Name|Description|
@@ -57,7 +56,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [accessPackageAssignment](../resources/accesspackageassignment.md) collection in the response body.
 
-When a result set spans multiple pages, Microsoft Graph returns that page with an `@odata.nextLink` property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the `@odata.nextLink` URL in each response, until all the results are returned. Refer to [paging Microsoft Graph data in your app](/graph/paging.md) for more details.
+When a result set spans multiple pages, Microsoft Graph returns that page with an `@odata.nextLink` property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the `@odata.nextLink` URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging.md).
 
 ## Examples
 

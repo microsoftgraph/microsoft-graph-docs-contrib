@@ -33,8 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
 ```
 
-## Query parameters
-The following table shows the parameters that can be used with this method.
+## Function parameters
+The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

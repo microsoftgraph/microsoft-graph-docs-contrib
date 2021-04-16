@@ -41,7 +41,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{
 ## Request body
 In the request body, supply a JSON representation of an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-For a non-administrator user to cancel their own request, the body must contain the request `id` and `requestStatus`. The value of the **requestStatus** property is `cancelled`. The `id` is the identifier of the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
+For a non-administrator user to cancel their own request, the request must contain the **id** of the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) and a **requestStatus** with a value of `cancelled`.
 
 ## Response
 
@@ -57,6 +57,11 @@ If successful, this method returns a `200 OK` response code.  It does not return
 -->
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}/cancel
+
+{
+  "id":"request-id",
+  "requestStatus","cancelled"
+}
 ```
 
 
