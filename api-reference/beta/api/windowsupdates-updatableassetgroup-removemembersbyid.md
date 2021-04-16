@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove members of the same type from an updatable asset group.
+Remove members of the same type from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,14 +46,14 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ids|String collection|List of identifiers corresponding to the updatable assets to remove as members of the updatable asset group.|
-|memberEntityType|String|The full type of the updatable assets. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
+|ids|String collection|List of identifiers corresponding to the [updatableAsset](../resources/windowsupdates-updatableasset.md) resources to remove as members of the **updatableAssetGroup**.|
+|memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 
 
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code.
+If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -80,7 +80,7 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

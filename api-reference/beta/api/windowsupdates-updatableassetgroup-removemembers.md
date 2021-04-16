@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove members from an updatable asset group.
+Remove members from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
 You can also use the method [removeMembersById](windowsupdates-updatableassetgroup-removemembersbyid.md).
 
@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code.
+If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -82,7 +82,7 @@ Content-length: 145
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

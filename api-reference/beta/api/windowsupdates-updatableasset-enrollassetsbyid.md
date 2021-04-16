@@ -12,7 +12,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enroll updatable assets of the same type in update management by the deployment service.
+Enroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources of the same type in update management by the deployment service.
+
+You can also use the method [enrollAssets](windowsupdates-updatableasset-enrollassets.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,14 +49,14 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |updateCategory|updateCategory|The category of updates for the service to manage. Possible values are: `feature`.|
-|memberEntityType|String|The full type of the updatable assets. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
+|memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 |ids|String collection|List of identifiers corresponding to the updatable assets to enroll in update management by the service for the given `updateCategory`.|
 
 
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code.
+If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -82,7 +84,7 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

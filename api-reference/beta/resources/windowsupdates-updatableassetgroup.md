@@ -13,9 +13,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A group of updatable assets.
+A group of devices that can receive updates.
 
-An [azureADDevice](../resources/windowsupdates-azureADDevice.md) can be a member; an updatableAssetGroup cannot be a member.
+Members are of the [azureADDevice](../resources/windowsupdates-azureADDevice.md) resource type. An **updatableAssetGroup** resource cannot be a member of another **updatableAssetGroup**.
 
 
 Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).

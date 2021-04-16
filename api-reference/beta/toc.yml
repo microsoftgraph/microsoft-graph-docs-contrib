@@ -9516,42 +9516,50 @@ items:
         - name: Updatable asset
           href: resources/windowsupdates-updatableasset.md
           items:
-          - name: Get updatable asset
-            href: api/windowsupdates-updatableasset-get.md
           - name: List updatable assets
             href: api/windowsupdates-updatableasset-list.md
+          - name: Get updatable asset
+            href: api/windowsupdates-updatableasset-get.md
           - name: Delete updatable asset
             href: api/windowsupdates-updatableasset-delete.md
           - name: Azure AD device
             href: resources/windowsupdates-azureaddevice.md
             items:
-            - name: Get Azure AD device
-              href: api/windowsupdates-azureaddevice-get.md
             - name: List Azure AD devices
               href: api/windowsupdates-azureaddevice-list.md
-            - name: Enroll in update management
-              href: api/windowsupdates-updatableasset-enrollassets.md
-            - name: Unenroll from update management
-              href: api/windowsupdates-updatableasset-unenrollassets.md
+            - name: Get Azure AD device
+              href: api/windowsupdates-azureaddevice-get.md
             - name: Delete Azure AD device
               href: api/windowsupdates-azureaddevice-delete.md
+            - name: Enroll in update management
+              href: api/windowsupdates-updatableasset-enrollassets.md
+            - name: Enroll by ID
+              href: api/windowsupdates-updatableasset-enrollassetsbyid.md
+            - name: Unenroll from update management
+              href: api/windowsupdates-updatableasset-unenrollassets.md
+            - name: Unenroll by ID
+              href: api/windowsupdates-updatableasset-unenrollassetsbyid.md
           - name: Updatable asset group
             href: resources/windowsupdates-updatableassetgroup.md
             items:
+            - name: List updatable asset groups
+              href: api/windowsupdates-updatableassetgroup-list.md
             - name: Create updatable asset group
               href: api/windowsupdates-updatableassetgroup-create.md
             - name: Get updatable asset group
               href: api/windowsupdates-updatableassetgroup-get.md
-            - name: List updatable asset groups
-              href: api/windowsupdates-updatableassetgroup-list.md
-            - name: Add members
-              href: api/windowsupdates-updatableassetgroup-addmembers.md
-            - name: Remove members
-              href: api/windowsupdates-updatableassetgroup-removemembers.md
-            - name: List members
-              href: api/windowsupdates-updatableassetgroup-list-members.md
             - name: Delete updatable asset group
               href: api/windowsupdates-updatableassetgroup-delete.md
+            - name: List members
+              href: api/windowsupdates-updatableassetgroup-list-members.md
+            - name: Add members
+              href: api/windowsupdates-updatableassetgroup-addmembers.md
+            - name: Add members by ID
+              href: api/windowsupdates-updatableassetgroup-addmembersbyid.md
+            - name: Remove members
+              href: api/windowsupdates-updatableassetgroup-removemembers.md
+            - name: Remove members by ID
+              href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
     - name: Education
       items:
       - name: Overview

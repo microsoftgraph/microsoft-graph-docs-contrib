@@ -12,11 +12,11 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enroll updatable assets in update management by the deployment service.
+Enroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources in update management by the deployment service.
 
-An [azureADDevice](../resources/windowsupdates-azureaddevice.md) can be enrolled in update management; an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) cannot be enrolled in update management.
+You can enroll an [azureADDevice](../resources/windowsupdates-azureaddevice.md) resource in update management, but may not enroll an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) in update management.
 
-Enrolling an Azure AD device in update management automatically creates an Azure AD device object if it does not already exist.
+Enrolling an Azure AD device in update management automatically creates an **azureADDevice** object if it does not already exist.
 
 You can also use the method [enrollAssetsById](windowsupdates-updatableasset-enrollassetsbyid.md).
 
@@ -59,7 +59,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code.
+If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -88,7 +88,7 @@ Content-length: 176
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

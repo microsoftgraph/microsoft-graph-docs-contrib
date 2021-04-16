@@ -12,13 +12,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add members to an updatable asset group.
+Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
-An [azureADDevice](../resources/windowsupdates-azureaddevice.md) can be added as a member; an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) cannot be added as a member.
+You can add [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources as members, but may not add **updatableAssetGroup** resources as members.
 
-Adding an Azure AD device as a member of an updatable asset group automatically creates an Azure AD device object if it does not already exist.
+Adding an Azure AD device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
 
-You can also use the method [addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md).
+You can also use the method [addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md) to add members.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +58,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code.
+If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -86,7 +86,7 @@ Content-length: 145
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

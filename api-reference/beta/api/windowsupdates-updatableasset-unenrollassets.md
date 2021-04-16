@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unenroll updatable assets from update management by the deployment service.
+Unenroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources from update management by the deployment service.
 
 You can also use the method [unenrollAssetsById](windowsupdates-updatableasset-unenrollassetsbyid.md).
 
@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code.
+If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -84,7 +84,7 @@ Content-length: 176
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
