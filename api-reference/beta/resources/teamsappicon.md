@@ -26,7 +26,7 @@ An icon associated with a [teamsApp](teamsapp.md).
 
 | Property      | Type                        | Description                                                                             |
 | :------------ | :-------------------------- | :-------------------------------------------------------------------------------------- |
-| id            | string                      | The unique id of the app icon.                                                          |
+| id            | string                      | The unique ID of the app icon.                                                          |
 | webUrl        | string                      | The web URL that can be used for downloading the image.                                 |
 
 ## Relationships
@@ -51,5 +51,6 @@ An icon associated with a [teamsApp](teamsapp.md).
 ```
 
 ## See also
+
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)
