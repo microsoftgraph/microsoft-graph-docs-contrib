@@ -223,4 +223,4 @@ You can explore this scenario further with the following resources:
 
 ## See also
 
-For an example of a web app hosted on Azure App Service calling Microsoft Graph as the app (using managed identities), see [this tutorial](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app).  Learn how to create a system-assigned managed identity on a web app, add Microsoft Graph API permissions to a managed identity, and call Microsoft Graph.
+For an example of a web app hosted on Azure App Service calling Microsoft Graph as the app (using managed identities), see [Tutorial: Access Microsoft Graph from a secured app as the app](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app). This tutorial shows you how to create a system-assigned managed identity on a web app, add Microsoft Graph API permissions to a managed identity, and call Microsoft Graph.
