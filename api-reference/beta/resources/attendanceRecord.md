@@ -19,11 +19,11 @@ Contains information associated with attendance record in meeting attendance rep
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
-| identity | [Identity](identity.md) | Identifier, such as display name, etc |
-| emailAddress | String | Email address |
-| totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds |
-| attendanceIntervals | [attendanceInterval](attendanceInterval.md) collection | List of time periods between joining and leaving |
-| role | String | Role of the attendee. Possible values are `None`, `Attendee`, `Presenter`, and `Organizer`  |
+| identity | [Identity](identity.md) | Identifier, such as display name. |
+| emailAddress | String | Email address. |
+| totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds. |
+| attendanceIntervals | [attendanceInterval](attendanceInterval.md) collection | List of time periods between joining and leaving. |
+| role | String | Role of the attendee. Possible values are `None`, `Attendee`, `Presenter`, and `Organizer`.  |
 
 ## JSON representation
 
