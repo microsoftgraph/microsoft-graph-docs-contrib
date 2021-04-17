@@ -5491,7 +5491,7 @@ items:
           href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
-      - name: App catalog
+      - name: App
         items:
         - name: App in catalog
           href: resources/teamsapp.md
@@ -5503,7 +5503,7 @@ items:
           href: api/teamsapp-update.md
         - name: Delete app from catalog
           href: api/teamsapp-delete.md
-      - name: App
+      - name: App installation
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
