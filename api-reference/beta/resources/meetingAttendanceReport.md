@@ -19,7 +19,7 @@ Contains information associated with meeting attendance report.
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
-| attendanceRecords           | [attendanceRecord](attendanceRecord.md) collection  | The list of attendance records |
+| attendanceRecords           | [attendanceRecord](attendanceRecord.md) collection  | The list of attendance records. |
 
 ## JSON representation
 
