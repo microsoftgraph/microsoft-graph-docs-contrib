@@ -95,8 +95,6 @@ Content-type: application/json
 }
 ```
 
----
-
 ### Example 2: Get the bytes of the hosted content of the outline icon of a Teams app in the catalog
 
 #### Request
@@ -112,8 +110,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/outlineIcon/hostedContent/$value
 ```
-
----
 
 #### Response
 
