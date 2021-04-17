@@ -25,7 +25,7 @@ Participants in a meeting.
 | contributors (deprecated) | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
 
 > [!CAUTION]
-> **producers** and **contributors** are deprecated. All meeting participants are returned in the
+> The **producers** and **contributors** properties are deprecated. All meeting participants are returned in the
 > **attendees** collection. Use the **role** property of [meetingParticipantInfo](meetingparticipantinfo.md)
 > to identify the meeting role of the attendee.
 
