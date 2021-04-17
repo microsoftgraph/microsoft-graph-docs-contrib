@@ -4432,29 +4432,29 @@ items:
             items:
              - name: User flow attribute assignment
                href: resources/identityuserflowattributeassignment.md
-             - name: Get user flow attribute assignment
+             - name: Get
                href: api/identityuserflowattributeassignment-get.md
-             - name: Update user flow attribute assignment
+             - name: Update
                href: api/identityuserflowattributeassignment-update.md
-             - name: Delete user flow attribute assignment
+             - name: Delete
                href: api/identityuserflowattributeassignment-delete.md
           - name: User flow language configuration
             items:
              - name: User flow language configuration
                href: resources/userflowlanguageconfiguration.md
-             - name: Get userFlowLanguageConfiguration
+             - name: Get
                href: api/userflowlanguageconfiguration-get.md
-             - name: List defaultPages
+             - name: List default pages
                href: api/userflowlanguageconfiguration-list-defaultpages.md
-             - name: List overridesPages
+             - name: List overrides pages
                href: api/userflowlanguageconfiguration-list-overridespages.md
              - name: User flow language page
                href: resources/userflowlanguagepage.md
-             - name: Get userFlowLanguagePage
+             - name: Get 
                href: api/userflowlanguagepage-get.md
-             - name: Update userFlowLanguagePage
+             - name: Update 
                href: api/userflowlanguagepage-put.md
-             - name: Delete userFlowLanguagePage
+             - name: Delete 
                href: api/userflowlanguagepage-delete.md
           - name: API connectors
             items:
