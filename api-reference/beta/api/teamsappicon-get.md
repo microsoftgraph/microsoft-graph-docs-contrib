@@ -75,8 +75,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/colorIcon
 ```
 
----
-
 #### Response
 
 The following example shows the response for an organizational app. 
@@ -98,8 +96,6 @@ Content-type: application/json
 }
 ```
 
----
-
 ### Example 2: Get outline icon of a *custom* Teams app
 
 #### Request
@@ -113,8 +109,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96eb-1b40786a2a78/appDefinitions/NWEzMWQ0ZjctYTExZC00MDUyLTk2ZWItMWI0MDc4NmEyYTc4IyM2LjAuNSMjUHVibGlzaGVk/outlineIcon
 ```
-
----
 
 #### Response
 
@@ -138,7 +132,6 @@ Content-type: application/json
 }
 ```
 
----
 
 ### Example 3: Get color icon of a *store* Teams app
 
@@ -154,7 +147,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b444-a4295d8e9314/appDefinitions/OTVkZTYzM2EtMDgzZS00MmY1LWI0NDQtYTQyOTVkOGU5MzE0IyMxLjAuNSMjUHVibGlzaGVk/colorIcon/
 ```
 
----
 
 #### Response
 
@@ -190,7 +182,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b444-a4295d8e9314/appDefinitions/OTVkZTYzM2EtMDgzZS00MmY1LWI0NDQtYTQyOTVkOGU5MzE0IyMxLjAuNSMjUHVibGlzaGVk/outlineIcon/
 ```
 
----
 
 #### Response
 
