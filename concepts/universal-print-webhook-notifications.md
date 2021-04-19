@@ -51,7 +51,7 @@ Applications must [generate and use the Azure AD security token](/graph/auth-v2-
 
 ## Create subscription: printTask triggered (JobStarted) event 
 
-Some applications monitor print queues for incoming jobs and want to be notified as soon as there is a valid job in the queue. After theyt're notified, they can collect the relevant job metadata or even perform modifications in the print job – including aborting the job or redirecting the job from the current print queue to another queue after modifying the job attributes accordingly. 
+Some applications monitor print queues for incoming jobs and want to be notified as soon as there is a valid job in the queue. After they're notified, they can collect the relevant job metadata or even perform modifications in the print job – including aborting the job or redirecting the job from the current print queue to another queue after modifying the job attributes accordingly. 
 
 Before creating a notification for a **printTask**-triggered event, ensure that application has created the following: 
 
