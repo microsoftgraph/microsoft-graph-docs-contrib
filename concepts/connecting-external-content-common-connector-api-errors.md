@@ -1,9 +1,9 @@
 ---
 title: "Common Microsoft Graph connector API errors"
 description: "Common Microsoft Graph connector API errors"
-author: "mecampos"
+author: mecampos
 localization_priority: Priority
-ms.author: "mecampos"
+ms.author: mecampos
 
 ---
 

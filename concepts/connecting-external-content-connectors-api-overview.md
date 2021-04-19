@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Graph connectors API overview"
 description: "Microsoft Graph connectors API overview"
-author: "mecampos"
+author: mecampos
 localization_priority: Priority
-ms.author: "mecampos"
+ms.author: mecampos
 
 ---
 

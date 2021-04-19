@@ -1,9 +1,9 @@
 ---
 title: "Play with connectors API on Postman"
 description: "Try connectors APIs using Postman"
-author: "mecampos"
+author: mecampos
 localization_priority: Priority
-ms.author: "mecampos"
+ms.author: mecampos
 
 ---
 <!---
