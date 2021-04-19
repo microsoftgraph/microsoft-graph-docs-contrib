@@ -4,7 +4,7 @@ description: "Microsoft Graph connectors overview"
 author: "mecampos"
 localization_priority: Priority
 ms.author: "mecampos"
-ms.prod: "data-inflow"
+
 ---
 
 

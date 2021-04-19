@@ -4,7 +4,7 @@ description: "Graph Connector API limits"
 author: "mecampos"
 localization_priority: Priority
 ms.author: "mecampos"
-ms.prod: "data-inflow"
+
 ---
 
 # API limits

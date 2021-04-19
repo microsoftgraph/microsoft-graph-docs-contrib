@@ -4,7 +4,7 @@ description: "Microsoft Graph connectors API overview"
 author: "mecampos"
 localization_priority: Priority
 ms.author: "mecampos"
-ms.prod: "data-inflow"
+
 ---
 
 # Microsoft Graph connectors API overview

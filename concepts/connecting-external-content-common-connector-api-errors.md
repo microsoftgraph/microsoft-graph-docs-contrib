@@ -4,7 +4,7 @@ description: "Common Microsoft Graph connector API errors"
 author: "mecampos"
 localization_priority: Priority
 ms.author: "mecampos"
-ms.prod: "data-inflow"
+
 ---
 
 # Common Microsoft Graph connector API errors

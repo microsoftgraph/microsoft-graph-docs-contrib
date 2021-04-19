@@ -3,7 +3,7 @@ title: "Create, update, and delete items added by your application in the Micros
 description: "Learn how to use Microsoft Graph to manage items added by your application to the Microsoft Search service"
 localization_priority: Priority
 author: "rsamai"
-ms.prod: "search"
+ms.author: mecampos
 doc_type: conceptualPageType
 ---
 
