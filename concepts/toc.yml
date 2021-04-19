@@ -361,14 +361,6 @@ items:
                 href: search-concept-sort.md
               - name: Refine search results (preview)
                 href: search-concept-aggregation.md
-          - name: Index (preview)
-            items:
-              - name: Manage connections
-                href: search-index-manage-connections.md
-              - name: Manage schema
-                href: search-index-manage-schema.md
-              - name: Manage items
-                href: search-index-manage-items.md
       - name: Security
         items:
           - name: Overview
