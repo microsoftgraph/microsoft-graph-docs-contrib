@@ -7070,6 +7070,14 @@
           "ChangeType": "Change",
           "Description": "Deprecated [delete](https://docs.microsoft.com/en-us/graph/api/identityprovider-delete?view=graph-rest-beta) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta).",
           "Target": "identityProvider"
+        },
+        {
+          "Id":"f72f8abc-a10b-11eb-8cb0-33bc249d550e",
+          "ApiChange":"Method",
+          "ChangedApiName":"activateService",
+          "ChangeType":"Addition",
+          "Description":"Added the [activateService](https://docs.microsoft.com/en-us/graph/api/organization-activateService?view=graph-rest-beta) method to the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Target":"organization"
         }
       ],
       "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",

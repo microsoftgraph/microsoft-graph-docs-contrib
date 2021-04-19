@@ -31,6 +31,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Add schema extension values](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Create a schema extension definition and then use it to add custom typed data to a resource.|
 |[Create organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Create a new organizationalBrandingProperties by posting to the branding collection. |
 |[Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get a organizationalBrandingProperties object collection. |
+| [activateService](../api/organization-activateservice.md) | None |  Activates a given service for an organization and will require admin privileges to run |
 
 ## Properties 
 | Property | Type	| Description |
