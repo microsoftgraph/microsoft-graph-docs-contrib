@@ -1,7 +1,7 @@
 ---
 title: "teamworkTagMember resource type"
 description: "Represents a user in the team who has a tag applied to them."
-author: "rasikadhumal"
+author: ""
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # teamworkTagMember resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a user in the team who has a tag applied to them.
 

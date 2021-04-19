@@ -1,7 +1,7 @@
 ---
 title: "Get teamworkTag"
 description: "Read the properties and relationships of a teamworkTag object."
-author: "rasikadhumal"
+author: ""
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get teamworkTag
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a standard tag in a team. Read the properties and relationships of a [teamworkTag](../resources/teamworktag.md) object.
 

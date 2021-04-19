@@ -361,7 +361,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkTag",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkTag](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTag?view=graph-rest-beta) resource type",
+          "Description": "Added the [teamworkTag](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTag?view=graph-rest-beta) resource type and associated methods.",
           "Target": "teamworkTag"
         },
         {
@@ -369,7 +369,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkTagMember",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagMember?view=graph-rest-beta) resource type",
+          "Description": "Added the [teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagMember?view=graph-rest-beta) resource type and associated methods.",
           "Target": "teamworkTagMember"
         },
         {

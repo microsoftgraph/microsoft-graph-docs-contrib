@@ -1,7 +1,7 @@
 ---
 title: "teamworkTag resource type"
 description: "Tags provide a flexible way for customers to classify users or groups based on a common attribute"
-author: "rasikadhumal"
+author: ""
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -11,9 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Tags provide a flexible way for customers to classify users or groups based on a common attribute within a team. For example, a "Nurse" or "Manager" or Designer" tag will enable users to reach groups of people in Teams without having to type every single name.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Once a tag is added, users can @mention it in a channel. Everyone who has been assigned that tag will receive a notification just as they would if they were @mentioned individually. Users can also use a tag is to start a new chat with the members of that tag.
+Represents a tag associated with a team.
+
+Tags provide a flexible way for customers to classify users or groups based on a common attribute within a team. For example, a Nurse or Manager or Designer tag will enable users to reach groups of people in Teams without having to type every single name.
+
+When a tag is added, users can @mention it in a channel. Everyone who has been assigned that tag will receive a notification just as they would if they were @mentioned individually. Users can also use a tag is to start a new chat with the members of that tag.
 
 ## Methods
 |Method|Return type|Description|
@@ -32,7 +36,7 @@ Once a tag is added, users can @mention it in a channel. Everyone who has been a
 |id|String|Id of the tag.|
 |memberCount|Int32|The number of users assigned to the tag.|
 |tagType|teamworkTagType|The type of tag. Default is standard.|
-|teamId|String|Id of the team in which the tag is defined.|
+|teamId|String|ID of the team in which the tag is defined.|
 
 ## Relationships
 |Relationship|Type|Description|

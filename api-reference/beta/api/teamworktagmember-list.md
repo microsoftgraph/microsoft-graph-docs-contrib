@@ -1,7 +1,7 @@
 ---
 title: "List teamworkTagMembers"
 description: "Get a list of the teamworkTagMember objects and their properties."
-author: "rasikadhumal"
+author: ""
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List teamworkTagMembers
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the members of a standard tag in the team. Get a list of the [teamworkTagMember](../resources/teamworktagmember.md) objects and their properties.
 

@@ -1,7 +1,7 @@
 ---
 title: "Delete teamworkTagMember"
 description: "Deletes a teamworkTagMember object."
-author: "rasikadhumal"
+author: ""
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete teamworkTagMember
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a member from a standard tag in the team. Deletes a [teamworkTagMember](../resources/teamworktagmember.md) object.
 
@@ -57,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1ae
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

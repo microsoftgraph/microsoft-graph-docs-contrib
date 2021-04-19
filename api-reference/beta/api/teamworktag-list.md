@@ -1,7 +1,7 @@
 ---
 title: "List teamworkTags"
 description: "Get a list of the teamworkTag objects and their properties."
-author: "rasikadhumal"
+author: ""
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List teamworkTags
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the standard tags in the team. Get a list of the [teamworkTag](../resources/teamworktag.md) objects and their properties.
 

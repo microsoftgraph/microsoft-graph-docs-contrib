@@ -1,7 +1,7 @@
 ---
 title: "Update teamworkTag"
 description: "Update the properties of a teamworkTag object."
-author: "rasikadhumal"
+author: ""
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update teamworkTag
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the name of a tag in the team. Update the properties of a [teamworkTag](../resources/teamworktag.md) object.
 
