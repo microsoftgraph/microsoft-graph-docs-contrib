@@ -3,7 +3,7 @@ title: "Stop accessReviewInstance"
 description: "Stop a currently active accessReviewInstance."
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

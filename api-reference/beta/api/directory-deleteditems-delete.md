@@ -3,7 +3,7 @@ title: "Permanently delete item"
 description: "Permanently delete an item from deleted items."
 author: "keylimesoda"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -28,6 +28,8 @@ For applications:
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
+The requestor needs to have one of the following roles: *Global Administrator* or *Application Administrator*.
+
 For users:
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -36,6 +38,8 @@ For users:
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Not supported. |
 
+The signed-in user needs to have one of the following roles: *Global Administrator* or *User Administrator*.
+
 For groups:
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -43,6 +47,8 @@ For groups:
 |Delegated (work or school account) | Group.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
+
+The requestor needs to have one of the following roles: *Global Administrator* or *Groups Administrator*.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

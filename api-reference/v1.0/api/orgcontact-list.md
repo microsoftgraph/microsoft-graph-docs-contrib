@@ -3,7 +3,7 @@ title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
