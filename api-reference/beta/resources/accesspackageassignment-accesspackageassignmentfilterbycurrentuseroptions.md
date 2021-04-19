@@ -18,5 +18,5 @@ The list of current user options that can be used to filter on the access packag
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|target|1|The user the assignment is targetted for.|
+|target|1|The user the assignment is targeted for.|
 |createdBy|2|The user that created the assignment.|

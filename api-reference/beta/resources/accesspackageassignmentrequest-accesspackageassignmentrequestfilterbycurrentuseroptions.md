@@ -18,6 +18,6 @@ The list of current user options that can be used to filter on the access packag
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|target|1|The user the assignment request is targetted for.|
+|target|1|The user the assignment request is targeted for.|
 |createdBy|2|The user that created the assignment request.|
 |approver|3|The approver of the assignment request.|
