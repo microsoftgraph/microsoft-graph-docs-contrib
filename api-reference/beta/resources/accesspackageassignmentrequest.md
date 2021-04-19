@@ -46,7 +46,6 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](../resources/accesspackage.md)|The access package associated with the accessPackageAssignmentRequest. An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources. Read-only. Nullable.|
-|approval|[approval](../resources/approval.md)|The approval object associated with the accessPackageAssignmentRequest. Read-only. Nullable.|
 |requestor|[accessPackageSubject](accesspackagesubject.md)| The subject who requested or, if a direct assignment, was assigned. Read-only. Nullable.|
 
 
