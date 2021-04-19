@@ -179,8 +179,6 @@ items:
             href: connecting-external-content-manage-schema.md            
           - name: Manage items
             href: connecting-external-content-manage-items.md
-          - name: External groups
-            href: connecting-external-content-external-groups.md
           - name: API limits
             href: connecting-external-content-api-limits.md                 
       - name: Data access
