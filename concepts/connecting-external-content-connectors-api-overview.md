@@ -110,7 +110,7 @@ The following table represents an example of a possible schema for a work ticket
 
 #### Searchable
 
-If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](https://docs.microsoft.com/graph/search-index-manage-items#content).
+If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](https://docs.microsoft.com/graph/connecting-external-content-manage-items#content).
 
 \<Diagram\>
 
@@ -236,7 +236,7 @@ External groups can consist of another external group, Azure Active Directory us
 
 ### Properties
 
-The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](https://docs.microsoft.com/graph/search-index-manage-schema) for the connection before adding items into it and convert datatypes into [supported datatypes](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta&amp;preserve-view=true).
+The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](https://docs.microsoft.com/graph/connecting-external-content-manage-schema) for the connection before adding items into it and convert datatypes into [supported datatypes](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta&amp;preserve-view=true).
 
 ![API Properties](./images/connectors-images/api-properties.png)
 
@@ -244,7 +244,7 @@ The properties component is used to add item metadata that is useful in Microsof
 
 The content component is used to add the bulk of the item that needs to be full text indexed. Examples include ticket description, parsed text from a file body, or a wiki page body.
 
-Content is one of the key fields influencing [relevance](https://docs.microsoft.com/graph/search-index-manage-schema#relevance) across Microsoft experiences. <!--We support content of the type text and HTML.--> If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
+Content is one of the key fields influencing [relevance](https://docs.microsoft.com/graph/connecting-external-content-manage-schema#relevance) across Microsoft experiences. <!--We support content of the type text and HTML.--> If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
 
 ![API Content](./images/connectors-images/api-content.png)
 
