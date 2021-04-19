@@ -56,7 +56,6 @@ If successful, this method returns a `200 OK` response code and an [accessReview
 -->
 ``` http
 GET https://graph.microsoft.com/beta/policies/accessReviewPolicy
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/policy
 ```
 
 
@@ -82,3 +81,35 @@ Content-Type: application/json
 }
 ```
 
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_accessreviewpolicy"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/policy
+```
+
+
+### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewPolicy"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.accessReviewPolicy",
+    "displayName": "Access Review Policy",
+    "description": "Policy contains directory-level access review settings.",
+    "isGroupOwnerManagementEnabled": false
+  }
+}
+```
