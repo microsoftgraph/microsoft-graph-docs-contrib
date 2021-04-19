@@ -1,6 +1,6 @@
 ---
 title: "List includedGroups"
-description: "Get the groups from the includedGroups collection of a mobile device management policy."
+description: "Get the list of groups that are included in a mobile device management policy."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the groups from the includedGroups navigation property.
+Get the list of groups that are included in a mobile device management policy.
 
 ## Permissions
 
@@ -63,7 +63,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups
 ```
-
 
 ### Response
 

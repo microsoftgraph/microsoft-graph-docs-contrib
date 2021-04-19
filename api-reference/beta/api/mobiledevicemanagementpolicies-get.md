@@ -27,6 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
 ``` http
 GET /policies/mobileDeviceManagementPolicies/{id}
 ```
@@ -48,6 +53,12 @@ If successful, this method returns a `200 OK` response code and a [mobilityManag
 ## Examples
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_mobilitymanagementpolicy"
+}
+-->
 
 ``` http
 GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020

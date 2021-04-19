@@ -1,6 +1,6 @@
 ---
 title: "Delete includeGroup"
-description: "Delete a group from the includedGroups collection of a mobile device management policy."
+description: "Delete a group from the list of groups included in a mobile device management policy."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a group from the includedGroups collection of a mobile device management policy.
+Delete a group from the list of groups included in a mobile device management policy.
 
 ## Permissions
 
@@ -54,11 +54,23 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "delete_group"
+}
+-->
+
 ``` http
 DELETE https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups/dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef/$ref
 ```
 
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 
 ``` http
 HTTP/1.1 204 No Content

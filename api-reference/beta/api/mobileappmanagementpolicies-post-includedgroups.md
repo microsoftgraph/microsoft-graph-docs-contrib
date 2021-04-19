@@ -1,6 +1,6 @@
 ---
 title: "Add includedGroups" 
-description: "Add groups by posting to the includedGroups collection."
+description: "Add groups to be included in a mobile app management policy."
 author: "ravennMSFT"
 localization_priority: Normal
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add groups by posting to the includedGroups collection.
+Add groups to be included in a mobile app management policy.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +49,6 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The unique identifier for the group.|
 
-
 ## Response
 
 If successful, this method returns a `204 No Content` response code and a [group](../resources/group.md) object in the response body.
@@ -57,6 +56,12 @@ If successful, this method returns a `204 No Content` response code and a [group
 ## Examples
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "add_group"
+}
+-->
 
 ``` http
 POST https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups/$ref
@@ -70,7 +75,11 @@ Content-Type: application/json
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 
 ``` http
 HTTP/1.1 204 No Content

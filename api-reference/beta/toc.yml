@@ -10305,27 +10305,27 @@ items:
           items:
           - name: List mobile device management policies
             href: api/mobiledevicemanagementpolicies-list.md
-          - name: Get mobile device management policy
+          - name: Get
             href: api/mobiledevicemanagementpolicies-get.md
-          - name: Update mobile device management policy
+          - name: Update
             href: api/mobiledevicemanagementpolicies-update.md
-          - name: List included groups for mobile device management policy
+          - name: List included groups
             href: api/mobiledevicemanagementpolicies-list-includedgroups.md
-          - name: Add included groups for mobile device management policy
+          - name: Add included groups
             href: api/mobiledevicemanagementpolicies-post-includedgroups.md
-          - name: Remove included groups for mobile device management policy
+          - name: Remove included groups
             href: api/mobiledevicemanagementpolicies-delete-includedgroups.md
           - name: List mobile app management policies
             href: api/mobileappmanagementpolicies-list.md
-          - name: Get mobile app management policy
+          - name: Get
             href: api/mobileappmanagementpolicies-get.md
-          - name: Update mobile app management policy
+          - name: Update
             href: api/mobileappmanagementpolicies-update.md
-          - name: List included groups for mobile app management policy
+          - name: List included groups
             href: api/mobileappmanagementpolicies-list-includedgroups.md
-          - name: Add included groups for mobile app management policy
+          - name: Add included groups
             href: api/mobileappmanagementpolicies-post-includedgroups.md
-          - name: Remove included groups for mobile app management policy
+          - name: Remove included groups
             href: api/mobileappmanagementpolicies-delete-includedgroups.md
         - name: Role management
           href: resources/rolemanagement.md

@@ -27,18 +27,22 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
 ``` http
 GET /policies/mobileAppManagementPolicies
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response.For example -
+This method supports some of the OData query parameters to help customize the response. For example:
 
-- To select specific attributes add `$select=id,displayname`
-- To retrieve included groups for each policy, add `$expand=includedGroups`
-- To filter based on an attribute, use
-`$filter=displayName eq 'Microsoft Intune'`
+- To select specific attributes add `$select=id,displayname`.
+- To retrieve included groups for each policy, add `$expand=includedGroups`.
+- To filter based on an attribute, use `$filter=displayName eq 'Microsoft Intune'`.
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -69,7 +73,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies
 ```
-
 
 ### Response
 

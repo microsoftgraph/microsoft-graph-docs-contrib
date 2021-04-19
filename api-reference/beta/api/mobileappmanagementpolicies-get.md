@@ -54,6 +54,12 @@ If successful, this method returns a `200 OK` response code and a [mobilityManag
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "get_mobilitymanagementpolicy"
+}
+-->
+
 ``` http
 GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020
 ```
@@ -61,6 +67,12 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90ba
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "#microsoft.graph.mobilityManagementPolicy"
+}
+-->
 
 ``` http
 HTTP/1.1 200 OK
