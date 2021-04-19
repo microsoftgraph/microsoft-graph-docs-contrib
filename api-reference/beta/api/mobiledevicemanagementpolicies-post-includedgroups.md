@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code and a [group
 
 <!-- {
   "blockType": "request",
-  "name": "add_group"
+  "name": "create_group_from_groups"
 }
 -->
 
@@ -70,7 +70,6 @@ POST https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/dc
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.group"
   "id": "dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef"
 }
 ```

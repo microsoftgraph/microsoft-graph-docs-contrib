@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90ba
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.mobilityManagementPolicy"
+  "@odata.type": "microsoft.graph.mobilityManagementPolicy"
 }
 -->
 
@@ -80,7 +80,6 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
     "id": "ab90bacf-55a3-4a3e-839a-aa4b74e4f020",
     "appliesTo": "selected",
     "complianceUrl": "https://portal.mam.contoso.com/?portalAction=Compliance",

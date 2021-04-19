@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 POST /policies/mobileAppManagementPolicies/{id}/includedGroups/$ref
 ```
@@ -59,7 +60,7 @@ If successful, this method returns a `204 No Content` response code and a [group
 
 <!-- {
   "blockType": "request",
-  "name": "add_group"
+  "name": "create_group_from_groups"
 }
 -->
 
@@ -68,7 +69,6 @@ POST https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90b
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.group"
   "id": "1a9db3ab-0acf-4808-99ae-e8ed581cb2e0"
 }
 ```
