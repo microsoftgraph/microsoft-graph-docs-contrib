@@ -17,12 +17,12 @@ Participants in a meeting.
 
 ## Properties
 
-| Property                  | Type                                                           | Description                 |
-| :------------------------ | :------------------------------------------------------------- | :-------------------------- |
-| attendees                 | [meetingParticipantInfo](meetingparticipantinfo.md) collection |                             |
-| organizer                 | [meetingParticipantInfo](meetingparticipantinfo.md)            |                             |
-| producers (deprecated)    | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
-| contributors (deprecated) | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
+| Property                  | Type                                                           | Description                           |
+| :------------------------ | :------------------------------------------------------------- | :------------------------------------ |
+| attendees                 | [meetingParticipantInfo](meetingparticipantinfo.md) collection | Information of the meeting attendees. |
+| organizer                 | [meetingParticipantInfo](meetingparticipantinfo.md)            | Information of the meeting organizer. |
+| producers (deprecated)    | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only.           |
+| contributors (deprecated) | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only.           |
 
 > [!CAUTION]
 > The **producers** and **contributors** properties are deprecated. All meeting participants are returned in the

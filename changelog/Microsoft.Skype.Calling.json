@@ -1,6 +1,32 @@
 {
   "changelog": [
     {
+        "ChangeList": [
+          {
+            "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "onlineMeeting",
+            "ChangeType": "Removal",
+            "Description": "Deprecated the **capabilities** property of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+            "Target": "onlineMeeting"
+          },
+          {
+            "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "meetingParticipants",
+            "ChangeType": "Removal",
+            "Description": "Deprecated the **producers** and **contributors** properties of the [meetingParticipants](https://docs.microsoft.com/en-us/graph/api/resources/meetingParticipants?view=graph-rest-beta) resource.",
+            "Target": "onlineMeeting"
+          }
+        ],
+        "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-04-19T00:00:00",
+        "WorkloadArea": "Cloud communications",
+        "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "3a98db4e-7246-4b4c-b97c-feff3f93ce42",
