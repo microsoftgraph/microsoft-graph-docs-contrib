@@ -11,6 +11,7 @@ ms.prod: "data-inflow"
 
 This topic describes implementation and operational limits for Microsoft Graph connectors. Keep these limits in mind when designing connectors.
 
+
 ## Connection limits
 
 | **Limit** | **Description** |
@@ -24,13 +25,13 @@ This topic describes implementation and operational limits for Microsoft Graph c
 | **Limit** | **Description** |
 | --- | --- |
 | **128 properties** | The maximum number of properties that can be defined in a [schema](../api-reference/beta/resources/schema.md), characterizing the data ingested through a connection. |
-|
 
 ## Group limits
 
 | **Limit** | **Description** |
 | --- | --- |
 | **128 chracters** | The maximum length of the ID string of an [external group](../api-reference/beta/resources/externalgroup.md). Must be unique within a connection. Only alpha-numeric characters are supported. |
+
 | **1000 requests/sec** | The maximum number of requests allowed per second in the group administration [throttling](#throttling) threshold. |
 
 ## Item ingestion

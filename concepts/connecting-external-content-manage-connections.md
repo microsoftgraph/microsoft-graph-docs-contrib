@@ -3,7 +3,6 @@ title: "Create, update, and delete connections in the Microsoft Graph"
 description: "Learn how to use Microsoft Graph to create and manage connections"
 localization_priority: Priority
 author: "rsamai"
-ms.author: "rsamai"
 ms.prod: "search"
 doc_type: conceptualPageType
 ---
@@ -19,11 +18,11 @@ The Microsoft Graph connectors platform offers a simple way to add your external
 Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections you created or were explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
 
 <!-- markdownlint-disable MD036 -->
-![Sample custom helpdesk system Tickets Connector Structure](./images/search-index-manage-connections-connector-structure.png)
+![Sample custom helpdesk system Tickets Connector Structure](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
 
 *Sample custom helpdesk system Tickets Connector Structure*
 
-![Admin View of Connections including the custom Tickets Connector](./images/search-index-manage-connections-admin-view.svg)
+![Admin View of Connections including the custom Tickets Connector](./images/connectors-images/connecting-external-content-manage-connections-admin-view.svg)
 
 *Admin View of Connections including the custom Tickets Connector*
 
@@ -81,7 +80,7 @@ You can [delete a connection](/graph/api/externalconnection-delete?view=graph-re
 
 ## Next steps
 
-- [Register the connection schema](./search-index-manage-schema.md)
+- [Register the connection schema](./connecting-external-content-manage-schema.md)
 - [Review the Graph Connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Overview for Microsoft Graph Connectors](/microsoftsearch/connectors-overview)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub

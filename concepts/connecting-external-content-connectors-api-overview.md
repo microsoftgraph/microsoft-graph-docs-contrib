@@ -30,7 +30,7 @@ Once you create a connection to an external data source such as an on-premises c
 
 You can model a connection anyway you want. For example, you can [set up multiple connections using the Microsoft Windows file share connector](https://docs.microsoft.com/microsoftsearch/configure-connector) to connect to different file shares. You can also create a single connection to add all items from your data source. For example, you can create a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
 
-[Creating a connection](./connecting-external-content-manage-connections#create-a-connection) is the first step for an application to add items to Microsoft Graph. A connection allows your registered application to [define a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) for items that will be ingested, and allows your service to add, update, or delete items from the external data source.
+[Creating a connection](./data-inflow-manage-connections.md#create-a-connection) is the first step for an application to add items to Microsoft Graph. A connection allows your registered application to [define a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) for items that will be ingested, and allows your service to add, update, or delete items from the external data source.
 
 ### Create a connection
 
@@ -120,7 +120,8 @@ _A search for &quot;design&quot; displaying results for hits against properties 
 
 If a property is queryable, you can query against it using knowledge query language (KQL). KQL consists of 1 or more free text keywords (words or phrases) or property restrictions. The property name must be included in the query, either specified in the query itself or included in the query programmatically. You can use prefix matching with the wildcard operator(\*).
 
->[!NOTE] Suffix matching is not supported.
+>[!NOTE]
+>Suffix matching is not supported.
 
 \<Diagram\>
 
@@ -243,7 +244,7 @@ The properties component is used to add item metadata that is useful in Microsof
 
 The content component is used to add the bulk of the item that needs to be full text indexed. Examples include ticket description, parsed text from a file body, or a wiki page body.
 
-Content is one of the key fields influencing [relevance](https://docs.microsoft.com/graph/search-index-manage-schema#relevance) across Microsoft experiences. We support content of the type text and HTML. If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
+Content is one of the key fields influencing [relevance](https://docs.microsoft.com/graph/search-index-manage-schema#relevance) across Microsoft experiences. <!--We support content of the type text and HTML.--> If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
 
 ![API Content](./images/connectors-images/api-content.png)
 
@@ -259,47 +260,40 @@ You can add an item to the index by [creating an externalItem](https://docs.micr
 
 For example, your application may index helpdesk tickets using the ticket number. If a ticket has the ticket number SR00145, the request may look like the following.
 
-HTTPCopy
-
+```http
 PUT /external/connections/contosohelpdesk/items/SR00145
-
 Content-Type: application/json
 
 {
-
 &quot;title&quot;: &quot;WiFi outage in Conference Room A&quot;,
-
 &quot;status&quot;: &quot;New&quot;,
-
 &quot;assignee&quot;: &quot;meganb@contoso.com&quot;
-
 }
+```
 
->[!NOTE] Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](https://docs.microsoft.com/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
+>[!NOTE]
+>Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](https://docs.microsoft.com/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
 
 ### Update an item
 
 When an item is updated in the external service (helpdesk ticket is reassigned, or a product description is updated), you can update its entry in Microsoft Graph by [updating the externalItem](https://docs.microsoft.com/graph/api/externalitem-update?view=graph-rest-beta&amp;preserve-view=true), using the unique identifier assigned to the item when you created it.
 
-HTTPCopy
-
+```http
 PATCH /external/connections/contosohelpdesk/items/SR00145
-
 Content-Type: application/json
 
 {
-
 &quot;assignee&quot;: &quot;alexw@contoso.com&quot;
-
 }
+```
 
 ### Delete an item
 
 You can remove items from the index by [deleting the externalItem](https://docs.microsoft.com/graph/api/externalitem-delete?view=graph-rest-beta&amp;preserve-view=true), using the unique identifier assigned to the item when you created it.
 
-HTTPCopy
-
+```http
 DELETE /external/connections/contosohelpdesk/items/SR00145
+```
 
 ## External groups API
 

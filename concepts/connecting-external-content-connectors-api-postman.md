@@ -1,172 +1,333 @@
 ---
-title: "Try Graph Connector APIs using Postman"
-description: "Try Graph Connector APIs using Postman"
+title: "Play with connectors API on Postman"
+description: "Try connectors APIs using Postman"
 author: "mecampos"
 localization_priority: Priority
 ms.author: "mecampos"
 ms.prod: "data-inflow"
 ---
+<!---
+```http
+```
+--->
+# Play with Microsoft Graph connectors API on Postman
 
-# Try Graph Connector APIs using Postman
-
-In this topic, learn to play with the Graph Connector APIs using Postman.
+In this topic, learn to use the Microsoft Graph connector APIs with Postman.
 
 ## Prerequisites
 
-Either a Microsoft account or work or school account.
+* Either a Microsoft account or work or school account.
 
-[Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). (Microsoft 365 developer subscription)
-
-Register application on the [App Registration](#_Step_3_-) Portal.
+* Microsoft 365 developer subscription from the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## Step 1 - Import the Microsoft Graph Postman collection
 
-To use the Postman collection, you need to import it into your Postman workspace. Do this from the web browser.
+To use the Postman collection, you need to import it into your Postman workspace. Do this from a web browser.
 
 1. Go to [Postman](https://identity.getpostman.com/signup) and sign up. If you already have a Postman account, you can [sign in](https://identity.getpostman.com/login).
 
-2. Once you sign in, go to the &quot;My workspace&quot;.
+2. Once you sign in, go to &quot;My workspace&quot;.
 
 ![My Workspace](./images/connectors-images/02-postman-my-workspace.png)
 
-3. Once you go into &quot;My workspace&quot;, click the &quot;Import&quot; button.
+3. Once you go into &quot;My workspace&quot;, select the &quot;Import&quot; button.
 
-![Import](./images/connectors-images/03-postman-import.png)
+![Select Import 1](./images/connectors-images/03-postman-import.png)
 
-4. In the dialog that opens, select &quot;Link&quot; tab and enter the following URL - [https://www.postman.com/collections/61bfc772fe030514b062](https://www.postman.com/collections/61bfc772fe030514b062) in the textbox.
+4. In the dialog that opens, select &quot;Link&quot; tab and enter the following URL - in the textbox:  `https://www.postman.com/collections/61bfc772fe030514b062`.
 
-![](./images/connectors-images/04-postman-link.png)
+![Select continue](./images/connectors-images/04-postman-link.png)
 
-5. Click Continue.
+5. Select Continue.
+6. Select Import.
 
-![](./images/connectors-images/ .png)
-
-6. Click Import.
+![Select import 2](./images/connectors-images/05-postman-link-continue.png)
 
 You should now see the Microsoft graph Connectors API collection inside Postman.
 
-![](./images/connectors-images/ .png)
+![Connection in Postman](./images/connectors-images/06-postman-collection-tab.png)
 
 ## Step 2 - (Optional - Postman Web browser only) Download the Postman Agent
 
-To use this Postman collection in your web browser, download the [Postman Desktop Agent](https://www.postman.com/downloads). You can&#39;t use Postman for the web without this due to CORS restrictions in the web browser.
+To use this Postman collection in your web browser, download the [Postman Desktop Agent](https://www.postman.com/downloads). You can't use Postman for the web without this due to CORS restrictions in the web browser.
 
-Note: You don&#39;t need the agent if you&#39;re using the Postman for Windows app. If you open Postman for Windows, you will see this collection in your workspace.
+Note: You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you will see this collection in your workspace.
 
 ## Step 3 - Create an Azure AD application
 
-To use this collection in your own developer tenant, create an Azure AD application and give it the appropriate permissions for the requests you want to call. If you don&#39;t have a developer tenant, you can sign up for one through the Microsoft 365 Developer Program.
+To use this collection in your own developer tenant, create an Azure AD application and give it the appropriate permissions for the requests you want to call. If you don't have a developer tenant, you can sign up for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
 
 1. Go to [portal.azure.com](https://portal.azure.com/) and sign in with your developer tenant administrator account.
-2. Under Azure Services, click Azure Active Directory.
-3. On the left menu, click App registrations.
-4. On the horizontal menu, click New registration.
+2. Under Azure Services, select Azure Active Directory.
+3. On the left menu, select App registrations.
+4. On the horizontal menu, select New registration.
 5. Set the Application name to **Parts Inventory**.
 6. Set the Redirect URI to https://oauth.pstmn.io/v1/browser-callback.
-7. Click Register.
-8. On the left menu, click API Permissions.
-9. In the horizontal menu, click Add a permission, select Microsoft Graph, and then select Delegated Permissions.
-10. Type ExternalItem.ReadWrite.All and check ExternalItem.ReadWrite.All.
-11. Click Application permissions and type User., and check Application Permissions.
-12. Expand the User options and check User.Read.All.
-13. Click Add permissions.
-14. In the horizontal menu, click Grant admin consent for, and click Yes.
-15. In the left menu, click Overview. From here, you can get the Application (client) ID and Directory (tenant) ID. You will need these in step 4.
-16. In the left menu, click Certificates &amp; secrets.
-17. Click New client secret, enter a description, and click Add. Hover over the new client secret Value and copy it. You will need this in step 4.
+7. Select Register.
+8. On the left menu, select API Permissions.
+9. In the horizontal menu, select Add a permission, Microsoft Graph, and then Delegated Permissions.
+10. Start typing `ExternalItem.ReadWrite.All` and check `ExternalItem.ReadWrite.All`.
+11. Select Application permissions and type User., and check Application Permissions.
+12. Expand the User options and check `ExternalItem.ReadWrite.All`.
+13. Select Add permissions.
+14. In the horizontal menu, select "Grant admin consent for", and select Yes.
+15. In the left menu, select Overview. From here, you can get the Application (client) ID and Directory (tenant) ID. You will need these in step 4.
+16. In the left menu, select Certificates &amp; secrets.
+17. Select New client secret, enter a description, and select Add. Copy the new client secret value, you will need this in step 4.
 
-The Azure AD application now has permissions to make requests on behalf of a user to call ExternalItem.ReadWrite.All and as an application for User.Read.All.
+The Azure AD application now has permissions to make requests on behalf of a user to call ``ExternalItem.ReadWrite.All``, and as an application for ``ExternalItem.ReadWrite.All``.
 
 ## Step 4 – Configure authentication
 
 Set up the variables in Postman. This information is used to generate the access token.
 
-1. Click the &quot;Microsoft Graph Connectors API&quot; tab and go to the &quot;Variables&quot; section.
+1. Select the &quot;Microsoft Graph Connectors API&quot; tab and go to the &quot;Variables&quot; section.
 
-![](./images/connectors-images/ .png)
+![Configure authentication](./images/connectors-images/07-postman.png)
 
-1. In the Variables section, provide the required information using the information from step 3.
-
-![](./images/connectors-images/ .png)
+2. In the Variables section, provide the required information using the information from step 3.
 
 - Set the  **Current value**  of **client\_id** to the Application (client) ID value from step 3.15.
 - Set the  **Current value** of **client\_secret** to the Client Secret value from step 3.17.
 - Set the  **Current value**  of **tenant** to the Directory (tenant) ID value from step 3.15.
-- Set the  **Current value**  of **username** to [admin@xxxxxxx.onmicrosoft.com](mailto:admin@xxxxxxx.onmicrosoft.com) (tenant admin username)
+- Set the  **Current value**  of **username** to `admin@xxxxxxx.onmicrosoft.com`
 - Set the  **Current value**  of **password** to tenant admin password.
-- Select  **Save** / **Update**.
-## Step 7 - Get an auth token
 
+![Configure authentication](./images/connectors-images/08-postman.png)
 
-Because this is the first time you are running a request as an application authentication flow, you need to get an access token. Get the app access token by making the following POST request. 
+3. Select  **Save** / **Update**.
 
-![](./images/connectors-images/ .png)
+## Step 5 - Get an authentication token
 
-**Access token request with a shared secret** POST /{{tenant}}/oauth2/v2.0/token HTTP/1.1 //Line breaks for clarityHost: login.microsoftonline.comContent-Type: application/x-www-form-urlencoded
-client\_id={{client\_id}}&amp;scope=https%3A%2F%2Fgraph.microsoft.com%2F.default&amp;client\_secret={{client\_secret}}&amp;grant\_type=client\_credentials
-**Successful response example** {    &quot;token\_type&quot;: &quot;Bearer&quot;,    &quot;expires\_in&quot;: 3599,    &quot;ext\_expires\_in&quot;: 3599,    &quot;access\_token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJu… &quot;}
+You need to get an access token because this is the first time you are running a request as an application authentication flow. Get the app access token by making the following POST request:
+
+![Get auth token](./images/connectors-images/09-postman.png)
+
+Access token request with a shared secret:
+```http
+POST /{{tenant}}/oauth2/v2.0/token HTTP/1.1 //Line breaks for clarity
+Host: login.microsoftonline.com
+Content-Type: application/x-www-form-urlencoded
+
+client_id={{client_id}} 
+&scope=https%3A%2F%2Fgraph.microsoft.com%2F.default 
+&client_secret={{client_secret}} 
+&grant_type=client_credentials 
+
+Successful response example 
+{ 
+    "token_type": "Bearer", 
+    "expires_in": 3599, 
+    "ext_expires_in": 3599, 
+    "access_token": "eyJ0eXAiOiJKV1QiLCJu… " 
+} 
+```
 
 Note that we are using the [client credential flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) here. Be sure to get app access token and not get user access token.
 
+## Step 6 – Create a new connection
 
-## Step 8 – Create a new connection
+A [connection](/concepts/data-inflow-manage-connections.md) is a logical container for your external data that you can manage as a single unit. Choose a connection name, id, and description. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](https://docs.microsoft.com/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
 
-A [connection](https://docs.microsoft.com/graph/search-index-manage-connections) is a logical container for your external data that you can manage as a single unit. Choose a connection name, id, and description.Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use [the Microsoft Graph SDK](https://docs.microsoft.com/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
-
+```http
 POST /external/connections
 
-**Request** POST https://graph.microsoft.com/beta/external/connectionsContent-type: application/json
-{&quot;id&quot;: &quot;contosotasks&quot;,&quot;name&quot;: &quot;Contoso Tasks&quot;,&quot;description&quot;: &quot;Connection to index Contoso task management system&quot;}
-**Response** HTTP/1.1 201 CreatedContent-type: application/json
-{    &quot;@odata.context&quot;: &quot;https://graph.microsoft.com/beta/$metadata#connections/$entity&quot;,    &quot;id&quot;: &quot;contosotasks&quot;,    &quot;name&quot;: &quot;Contoso Tasks&quot;,    &quot;description&quot;: &quot;Connection to index Contoso task management system&quot;,    &quot;state&quot;:  **null** ,    &quot;configuration&quot;: {        &quot;authorizedApps&quot;: [            &quot;a47b35b7-6271-4e6d-9e27-2450a8b9c6b6&quot;        ]    }}
- ![](RackMultipart20210304-4-yn4o4x_html_dbe310ad8b0496df.png)
+Request 
+POST https://graph.microsoft.com/beta/external/connections 
+Content-type: application/json 
 
+{ 
+  "id": "contosotasks", 
+  "name": "Contoso Tasks", 
+  "description": "Connection to index Contoso task management system" 
+} 
 
-## Step 9 - Register connection schema
+Response 
+HTTP/1.1 201 Created 
+Content-type: application/json 
+ 
+{ 
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#connections/$entity", 
+    "id": "contosotasks", 
+    "name": "Contoso Tasks", 
+    "description": "Connection to index Contoso task management system", 
+    "state": null, 
+    "configuration": { 
+        "authorizedApps": [ 
+            "a47b35b7-6271-4e6d-9e27-2450a8b9c6b6" 
+        ] 
+    } 
+} 
+```
 
+ ![Create a new connection](./images/connectors-images/10-postman.png)
 
-The [connection schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;tabs=http) determines how your content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.POST /external/connections/{id}/schema
-**Request** POST https://graph.microsoft.com/beta/external/connections/contosotasks/schemaContent-type: application/jsonPrefer: respond-async
-{&quot;baseType&quot;: &quot;microsoft.graph.externalItem&quot;,&quot;properties&quot;: [{&quot;name&quot;: &quot;title&quot;,&quot;type&quot;: &quot;String&quot;,&quot;isSearchable&quot;: &quot;true&quot;,&quot;isQueryable&quot;: &quot;true&quot;,&quot;isRetrievable&quot;: &quot;true&quot;,&quot;labels&quot;: [&quot;title&quot;]},{&quot;aliases&quot;: &quot;creator&quot;,&quot;name&quot;: &quot;createdBy&quot;,&quot;type&quot;: &quot;String&quot;,&quot;isSearchable&quot;: &quot;true&quot;,&quot;isQueryable&quot;: &quot;true&quot;,&quot;isRetrievable&quot;: &quot;false&quot;,&quot;isRefinable&quot;: &quot;false&quot;,&quot;labels&quot;: [&quot;createdBy&quot;]},{&quot;aliases&quot;: &quot;editedDate&quot;,&quot;name&quot;: &quot;lastEditedDate&quot;,&quot;type&quot;: &quot;DateTime&quot;,&quot;isSearchable&quot;: &quot;false&quot;,&quot;isQueryable&quot;: &quot;true&quot;,&quot;isRetrievable&quot;: &quot;true&quot;,&quot;isRefinable&quot;: &quot;true&quot;,&quot;labels&quot;: [&quot;lastModifiedDateTime&quot;]}]}
-**Response**
-HTTP/1.1 202 AcceptedLocation: [https://graph.microsoft.com/beta/external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc](https://graph.microsoft.com/beta/external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc)
+## Step 7 - Register connection schema
 
-**Note:** Registering connection schema is an asynchronous operation, so do not ingest items into the connection until the connection schema is in the Completed state. To check connection schema status, execute the following request.GET /external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
+The connection schema determines how your content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 
-**Request** GET https://graph.microsoft.com/beta/external/connections/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
-**Response** HTTP/1.1 200 OKContent-type: application/json
-{    @odata.context&quot;:&quot;https://graph.microsoft.com/beta/$metadata#external/connections(&#39;coursecatalog&#39;)/operations/$entity&quot;,    &quot;id&quot;: &quot;aa9186d2-893c-4361-ca51-431d88fa45d8&quot;,    &quot;name&quot;: &quot;Contoso Tasks&quot;,    &quot;status&quot;: &quot;inprogress&quot;,    &quot;error&quot;: null }
+```http
+POST /external/connections/{id}/schema 
 
-![](./images/connectors-images/ .png)
-Once the connection schema operation status changes from I **nProgress** to **Completed,** you can ingest items for the connection.
+Request 
+POST https://graph.microsoft.com/beta/external/connections/contosotasks/schema 
+Content-type: application/json 
+Prefer: respond-async 
 
- ![](./images/connectors-images/ .png)
- ![](./images/connectors-images/ .png)
-Once the connection state changes from **draft** to **ready** , you can ingest items into current connection. 
-![](./images/connectors-images/ .png)
+{ 
+  "baseType": "microsoft.graph.externalItem", 
+  "properties": [ 
+    { 
+"name": "title", 
+      "type": "String", 
+      "isSearchable": "true", 
+"isQueryable": "true", 
+      "isRetrievable": "true", 
+      "labels": [ 
+        "title" 
+      ] 
+    }, 
+    { 
+"aliases": "creator", 
+      "name": "createdBy", 
+      "type": "String", 
+      "isSearchable": "true", 
+"isQueryable": "true", 
+      "isRetrievable": "false", 
+"isRefinable": "false", 
+      "labels": [ 
+        "createdBy" 
+      ] 
+    }, 
+    { 
+"aliases": "editedDate", 
+      "name": "lastEditedDate", 
+      "type": "DateTime", 
+      "isSearchable": "false", 
+"isQueryable": "true", 
+      "isRetrievable": "true", 
+"isRefinable": "true", 
+      "labels": [ 
+   "lastModifiedDateTime" 
+] 
+    } 
+  ] 
+} 
 
+Response 
 
-## Step 10 - Add external group member (Optional)
+HTTP/1.1 202 Accepted 
+Location: https://graph.microsoft.com/beta/external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
 
+Note: Registering connection schema is an asynchronous operation, so do not ingest items into the connection until the connection schema is in the Completed state. To check connection schema status, execute the following request:
 
-This step is optional. If your external service uses non-Azure AD ACLs, sync those permissions. External groups (along with Azure Active Directory users and groups) are used to set permissions on externalItems added to a Microsoft Graph connection. Use externalGroups to represent non-Azure Active Directory groups or group-like constructs (such as Business units, Teams, and so on) that determine permission over the content in your external data source. See [external group](https://docs.microsoft.com/graph/api/externalgroup-post-members?view=graph-rest-beta&amp;tabs=http)s.
-**Request** POST https://graph.microsoft.com/beta/external/connections/contosotasks/groups/31bea3d537902000/membersContent-Type: application/json
-{&quot;@odata.type&quot;: &quot;#microsoft.graph.externalGroupMember&quot;,&quot;id&quot;: &quot;1431b9c38ee647f6a&quot;,&quot;type&quot;: &quot;group&quot;,&quot;identitySource&quot;: &quot;external&quot;} **Response** HTTP/1.1 201 CreatedContent-Type: application/json
-{&quot;@odata.type&quot;: &quot;#microsoft.graph.externalGroupMember&quot;,&quot;id&quot;: &quot;14m1b9c38qe647f6a&quot;,&quot;type&quot;: &quot;group&quot;,&quot;identitySource&quot;: &quot;external&quot;}
+GET /external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
 
-![](./images/connectors-images/ .png)
+Request 
+GET https://graph.microsoft.com/beta/external/connections/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
 
+Response 
+HTTP/1.1 200 OK 
+Content-type: application/json 
 
-## Step 11 - Ingest Items
+{
+    @odata.context":"https://graph.microsoft.com/beta/$metadata#external/connections('coursecatalog')/operations/$entity", 
+    "id": "aa9186d2-893c-4361-ca51-431d88fa45d8", 
+    "name": "Contoso Tasks", 
+    "status": "inprogress", 
+    "error": null  
+}
+```
 
+![Register connection schema](./images/connectors-images/11-postman.png)
 
-Once you have created a connection, you can add your content. Each item from your data source must be represented as an [externalItem](https://docs.microsoft.com/graph/api/externalconnection-put-items?view=graph-rest-beta&amp;preserve-view=true&amp;tabs=http) in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields. An externalItem has three key components: access control list, properties, and content.If you have binary files, you must parse to get the metadata and a text version of the content. If you have non text content such as a pdf or bmp file, you must use object character recognition to convert content to text. You are responsible for converting your source permissions to grant or deny. Deny takes higher precedence over grant. **Request** PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938Content-type: application/json
-{&quot;@odata.type&quot;: &quot;microsoft.graph.externalItem&quot;,&quot;acl&quot;: [{&quot;type&quot;: &quot;user&quot;,&quot;value&quot;: &quot;e811976d-83df-4cbd-8b9b-5215b18aa874&quot;,&quot;accessType&quot;: &quot;grant&quot;,&quot;identitySource&quot;: &quot;azureActiveDirectory&quot;},{&quot;type&quot;: &quot;group&quot;,&quot;value&quot;: &quot;14m1b9c38qe647f6a&quot;,&quot;accessType&quot;: &quot;deny&quot;,&quot;identitySource&quot;: &quot;external&quot;}],&quot;properties&quot;: {&quot;ticketID&quot;: &quot;1158&quot;,&quot;priority&quot;: 1,&quot;title&quot;: &quot;Filter design&quot;,},&quot;content&quot;: {&quot;value&quot;: &quot;Build filtering capability by...&quot;,&quot;type&quot;: &quot;text&quot;}}
+Once the connection schema operation status changes from **InProgress** to **Completed,** you can ingest items for the connection.
 
-**Response** If successful, this method returns 200 OK response code.
-##
+ ![Connection status 1](./images/connectors-images/12-postman.png)
+ ![Connection status 2](./images/connectors-images/13-postman.png)
+
+Once the connection state changes from **draft** to **ready** , you can ingest items into current connection.
+
+![Connection state from draft to ready](./images/connectors-images/14-postman.png)
+
+## Step 8 - Add external group member (Optional)
+
+This step is optional. If your external service uses non-Azure AD ACLs, sync those permissions.  
+
+External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. Use `externalGroups` to represent non-Azure Active Directory groups or group-like constructs (such as Business units, Teams, and so on) that determine permission over the content in your external data source. See external groups.
+
+```http
+Request 
+POST https://graph.microsoft.com/beta/external/connections/contosotasks/groups/31bea3d537902000/members 
+Content-Type: application/json 
+ 
+{ 
+  "@odata.type": "#microsoft.graph.externalGroupMember", 
+  "id": "1431b9c38ee647f6a", 
+  "type": "group", 
+  "identitySource": "external" 
+} 
+
+Response 
+HTTP/1.1 201 Created 
+Content-Type: application/json 
+
+{ 
+  "@odata.type": "#microsoft.graph.externalGroupMember", 
+  "id": "14m1b9c38qe647f6a", 
+  "type": "group", 
+  "identitySource": "external" 
+} 
+```
+
+![Add external group](./images/connectors-images/15-postman.png)
+
+## Step 9 - Ingest Items
+
+Once you have created a connection, you can add your content. Each item from your data source must be represented as an `externalItem` in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the `itemId` or derive it from one or more fields. An `externalItem` has three key components: access control list, properties, and content.
+
+If you have binary files, you must parse to get the metadata and a text version of the content. If you have non text content such as a pdf or bmp file, you must use object character recognition to convert content to text.  
+
+You are responsible for converting your source permissions to grant or deny. Deny takes higher precedence over grant.
+
+```http
+Request 
+
+PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938 
+Content-type: application/json 
+
+{ 
+  "@odata.type": "microsoft.graph.externalItem", 
+  "acl": [ 
+    { 
+      "type": "user", 
+      "value": "e811976d-83df-4cbd-8b9b-5215b18aa874", 
+      "accessType": "grant", 
+      "identitySource": "azureActiveDirectory" 
+    }, 
+    { 
+      "type": "group", 
+      "value": "14m1b9c38qe647f6a", 
+      "accessType": "deny", 
+      "identitySource": "external" 
+    } 
+  ], 
+  "properties": { 
+    "ticketID": "1158", 
+    "priority": 1, 
+    "title": "Filter design", 
+  }, 
+  "content": { 
+    "value": "Build filtering capability by...", 
+    "type": "text" 
+  } 
+} 
+
+Response
+HTTP/1.1 200 OK
+
+```
 
 ## Error Handing
-
 
 Resolve [Microsoft Graph authorization errors](https://docs.microsoft.com/graph/resolve-auth-errors).
