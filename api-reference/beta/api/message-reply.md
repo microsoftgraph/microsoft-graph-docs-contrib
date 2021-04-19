@@ -44,18 +44,21 @@ POST /me/mailFolders/{id}/messages/{id}/reply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+| Name       | Type | Description| Required |
+|:---------------|:--------|:----------|:--------|
+| Authorization  | string  | Bearer {token}.| Yes |
+| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object| Yes |
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
+To send a json object provide the following parameters:
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
-|message <br/> mimeContent|[message](../resources/message.md) <br/> Edm.String | Any writeable properties to update in the reply message. <br/> Base64Binary-encoded MIME content of the message being sent.|
+|message|[message](../resources/message.md) | Any writeable properties to update in the reply message.|
+
+ [!IMPORTANT]
+> * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
 
 ## Response
 
@@ -148,11 +151,9 @@ HTTP/1.1 202 Accepted
 }-->
 ```json
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
-Content-Type: application/json
+Content-Type: text/plain
 
-{
-  "mimeContent": "Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np..."
-}
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
 
 ```
 ##### Response
