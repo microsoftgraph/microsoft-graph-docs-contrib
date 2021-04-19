@@ -9,39 +9,36 @@ ms.prod: "data-inflow"
 
 # API limits
 
-To ensure consistent availability and performance for everyone, we apply some limits to how the Connector APIs are used. Please refer to the tables below for the current limits.
+This topic describes implementation and operational limits for Microsoft Graph connectors. Keep these limits in mind when designing connectors.
 
 ## Connection limits
 
 | **Limit** | **Description** |
 | --- | --- |
-| **10 connections** | The maximum number of connections per Microsoft 365 tenant. |
-| --- | --- |
-| **700,000 items** | The maximum number of items per connection. |
+| **10 connections** | The maximum number of [connections](../api-reference/beta/api/externalconnection-put-items.md) per Microsoft 365 tenant. |
+| **700,000 items** | The maximum number of [items](../api-reference/beta/resources/externalitem.md) per connection. |
 | **70 GB** | The maximum byte size of a connection. |
 
 ## Schema limits
 
 | **Limit** | **Description** |
 | --- | --- |
-| **128 properties** | The maximum number of properties that can be defined in a schema, characterizing the data ingested through a connection. |
-| --- | --- |
+| **128 properties** | The maximum number of properties that can be defined in a [schema](../api-reference/beta/resources/schema.md), characterizing the data ingested through a connection. |
+|
 
 ## Group limits
 
 | **Limit** | **Description** |
 | --- | --- |
-| **128 chracters** | The maximum length of the ID string of an external group. Must be unique within a connection. Only alpha-numeric characters are supported. |
-| --- | --- |
-| **1000 requests/sec** | Group administration APIs throttling. |
+| **128 chracters** | The maximum length of the ID string of an [external group](../api-reference/beta/resources/externalgroup.md). Must be unique within a connection. Only alpha-numeric characters are supported. |
+| **1000 requests/sec** | The maximum number of requests allowed per second in the group administration [throttling](#throttling) threshold. |
 
 ## Item ingestion
 
 | **Limit** | **Description** |
 | --- | --- |
 | **4 items/sec (250 MB/hour)** | The throughput limit to ingest items through a connection. |
-| --- | --- |
-| **4 MB** | The maximum size of an item; this limit applies to the request body when ingesting and indexing an item. |
+| **4 MB** | The maximum size of an item; this limit applies to the request body when [ingesting and indexing an item](../api-reference/beta/api/externalconnection-put-items). |
 | **N/A** | The maximum size of a property. |
 
 ## Throttling

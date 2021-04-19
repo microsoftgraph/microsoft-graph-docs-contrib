@@ -164,25 +164,25 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Data inflow (preview)
+      - name: Connecting external content (preview)
         displayName: connectors
         items:
-          - name: Connectors overview
-            href: data-inflow-connectors-overview.md
+          - name: Overview of Microsoft Graph connectors
+            href: connecting-external-content-connectors-overview.md
           - name: Connectors API overview
-            href: data-inflow-connectors-api-overview.md
-          - name: Explore Graph connector APIs on Postman
-            href: data-inflow-connectors-api-postman.md
+            href: connecting-external-content-connectors-api-overview.md
+          - name: Play with connectors API on Postman
+            href: connecting-external-content-connectors-api-postman.md
           - name: Manage connections
-            href: data-inflow-manage-connections.md
+            href: connecting-external-content-manage-connections.md
           - name: Manage schema
-            href: data-inflow-manage-schema.md            
+            href: connecting-external-content-manage-schema.md            
           - name: Manage items
-            href: data-inflow-manage-items.md
+            href: connecting-external-content-manage-items.md
           - name: External groups
-            href: data-inflow-external-groups.md
+            href: connecting-external-content-external-groups.md
           - name: API limits
-            href: data-inflow-api-limits.md                 
+            href: connecting-external-content-api-limits.md                 
       - name: Data access
         displayName: Microsoft Graph data connect
         items:

@@ -9,7 +9,7 @@ ms.prod: "data-inflow"
 
 # Common Connector API errors
 
-Below is the list of different errors that can appear against any connection.
+This topic shows a list of errors that can be returned from a connection, and the recommendations on how to solve the problem.
 
 | **Error code** | **Error message** | **Solution** |
 | --- | --- | --- |
