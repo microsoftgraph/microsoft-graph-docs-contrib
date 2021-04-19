@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create an online meeting on behalf of a user by using the object ID (OID) in the user token (delegated permission) or request path (application permission).
 
-> [!NOTE]
+> [!TIP]
 > The meeting does not show up on the user's calendar.
 
 ## Permissions
