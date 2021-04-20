@@ -54,8 +54,8 @@ To send a json object provide the following parameters:
 |toRecipients|[recipient](../resources/recipient.md) collection|The list of recipients.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
- [!IMPORTANT]
-> * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
+> [!IMPORTANT]
+> To send MIME content no parameters are required, just paste the MIME string in the body of the request.
 
 ## Response
 

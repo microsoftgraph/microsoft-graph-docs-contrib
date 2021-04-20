@@ -36,9 +36,6 @@ We use `text/plain` because there is no designated MIME type for the generic MIM
 
 For updating a message with MIME content, we send a PUT request to the `/$value` endpoint on a Message entity endpoint with our MIME content in the request body, with same `Content-Type: text/plain` in the request headers.
 
-## Properties
-For sending in MIME content for our message-related actions, we are adding an optional parameter of type `Edm.String` called `mimeContent`. This `mimeContent` string contains the Base64Binary-enconded format of the MIME content text.
-
 ## Use cases
 | Use cases | Resources |
 | --------- | --------- |

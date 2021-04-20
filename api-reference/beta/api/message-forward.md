@@ -43,10 +43,10 @@ POST /me/mailFolders/{id}/messages/{id}/forward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+| Name       | Type | Description| Required |
+|:---------------|:--------|:----------|:--------|
+| Authorization  | string  | Bearer {token}.| Yes |
+| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object| Yes |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -57,11 +57,15 @@ In the request body, provide a JSON object with the following parameters.
 |toRecipients|[recipient](../resources/recipient.md) collection|The list of recipients.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
+>[!IMPORTANT]
+>For sending MIME content no parameters are required, just paste the MIME string in the body of the request.
+
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
-## Example
+## Examples
+### Example 1: Forward a message
 The following example sets the **isDeliveryReceiptRequested** property to true, adds a comment and forwards the message.
 ##### Request
 Here is an example of the request.
@@ -109,6 +113,22 @@ Content-Type: application/json
 ---
 
 
+##### Response
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+### Example 2: Forward a message with MIME content
+```http
+POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/forward
+Content-Type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+```
 ##### Response
 Here is an example of the response.
 <!-- {
