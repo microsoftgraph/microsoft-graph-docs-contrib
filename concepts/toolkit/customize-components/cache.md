@@ -41,6 +41,18 @@ let config = {
     invalidationPeriod: number,
     isEnabled: boolean
   },
+  response: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  },
+  files: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  },
+  fileLists: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  }
 };
 ```
 
