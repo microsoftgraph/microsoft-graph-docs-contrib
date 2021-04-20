@@ -1,6 +1,6 @@
 ---
-title: "Deploy an expedited update"
-description: "With the Windows Update for Business deployment service, you can deploy expedited Windows security updates to sets of devices in an Azure AD tenant in case an emergency arises and you need to immediately deploy a security update."
+title: "Deploy an expedited security update using the Windows Update for Business deployment service"
+description: "With the Windows Update for Business deployment service, you can deploy expedited Windows security updates to devices in an Azure AD tenant in case an emergency arises and you need to immediately deploy a security update."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -9,9 +9,11 @@ doc_type: conceptualPageType
 
 # Deploy an expedited security update using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy expedited Windows security updates to devices in an Azure AD tenant. Expediting a security update overrides Windows Update for Business deferral policies to deploy an update immediately. This can be useful when critical security events arise and you need to deploy the latest updates more rapidly than normal. This can help to achieve compliance targets against a specific security update, but is not designed to be used every month (to deploy Windows 10 feature updates, see [Deploy an update](windowsupdates-deploy-update.md)).
+With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports deployments of Windows 10 feature updates and expedited security updates. This topic focuses on deployments of expedited security updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).
 
-Deploying an expedited Windows 10 update allows the update to be installed as quickly as possible. Expedited updates have the following characteristics:
+Expediting a security update overrides Windows Update for Business deferral policies so that the update is installed as quickly as possible. It can be useful when critical security events arise and you need to deploy the latest updates more rapidly than normal. However, while it can help to achieve compliance targets against a specific security update, it is not designed to be used every month.
+
+Expedited security updates have the following characteristics:
 
 * The update starts right away rather than waiting for the next regular update scan, which occurs once every 22 hours by default.
 * The update downloads and installs as quickly as possible.
@@ -26,9 +28,9 @@ Deploying an expedited Windows 10 update allows the update to be installed as qu
 
 You can query the deployment service catalog to get a list of updates that can be expedited to devices as content in a deployment.
 
-All Windows cumulative updates that are classified as security updates can be expedited and are tagged with the `isExpeditable` property set to `true` to identify them.
+Security updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type, with a **qualityUpdateClassification** of `security`. All Windows 10 quality updates that are classified as security updates can be expedited and are tagged with the **isExpeditable** property set to `true` to identify them.
 
-Below is an example of querying for all Windows 10 quality updates that can be deployed as expedited updates by the deployment service. It is recommended to only show the three most current updates, so the example includes `$top=3`.
+Below is an example of querying for all Windows 10 security updates that can be deployed as expedited updates by the deployment service. Microsoft recommends to only show the three most current updates, so the example includes `$top=3`.
 
 ### Request
 
