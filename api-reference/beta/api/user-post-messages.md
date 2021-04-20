@@ -416,6 +416,7 @@ Content-type: application/json
 ```
 
 ### Example 2: Create a message draft with MIME content
+##### Request
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages
 Content-type: text/plain

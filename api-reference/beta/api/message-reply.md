@@ -57,7 +57,7 @@ To send a json object provide the following parameters:
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md) | Any writeable properties to update in the reply message.|
 
- [!IMPORTANT]
+> [!IMPORTANT]
 > * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
 
 ## Response

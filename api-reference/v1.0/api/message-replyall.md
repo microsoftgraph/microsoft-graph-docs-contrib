@@ -31,10 +31,10 @@ POST /me/mailFolders/{id}/messages/{id}/replyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+| Name       | Type | Description| Required |
+|:---------------|:--------|:----------|:--------|
+| Authorization  | string  | Bearer {token}.| Yes |
+| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object| Yes |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -43,11 +43,15 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
 
+> [!IMPORTANT]
+> * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
+
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
-## Example
+## Examples
+### Example 1: Reply-all to a message
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
@@ -94,6 +98,33 @@ Here is an example of the response.
 } -->
 ```http
 HTTP/1.1 200 OK
+```
+### Example 2: Reply-all to a message with MIME content
+##### Request
+```json
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/replyall
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
+```
+##### Response
+```json
+HTTP/1.1 201 Accepted
+Content-type: application/json
+{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",
+    "id":"AAMkADNlNYjSAAA=",
+    "createdDateTime":"2017-07-22T01:53:56Z",
+    "lastModifiedDateTime":"2017-07-22T01:53:57Z",
+    "changeKey":"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti",
+    "receivedDateTime":"2017-07-22T01:53:57Z",
+    "sentDateTime":"2017-07-22T01:53:57Z",
+    "hasAttachments":false,
+    "internetMessageId":"<MWHPR1301MB@MWHPR1301MB.namprd13.prod.outlook.com>",
+    "subject":"Did you see last night's game?",
+    "bodyPreview":"They were awesome!",
+...
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

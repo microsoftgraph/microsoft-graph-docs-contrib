@@ -33,21 +33,26 @@ POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Name       | Type | Description| Required |
+|:---------------|:--------|:----------|:----------|
+| Authorization  | string  | Bearer {token}.| Yes |
+| Content-Length | number | 0. | Yes |
+| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object| Only if sending a new MIME message |
 
 ## Request body
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
+> [!IMPORTANT]
+> * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
+
 ## Response
 
 If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
 
-## Example
+## Examples
+### Example 1: Create a new message draft
 ##### Request 1
 Here is an example of the request.
 
@@ -274,6 +279,41 @@ Content-type: application/json
     "flag":{
         "flagStatus":"notFlagged"
     }
+}
+```
+
+### Example 2: Create a new message draft with MIME content
+##### Request
+```http
+POST https://graph.microsoft.com/v1.0/me/messages
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+```
+
+##### Response
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",
+    "id":"AAMkADNlNYjSAAA=",
+    "createdDateTime":"2017-07-22T01:53:56Z",
+    "lastModifiedDateTime":"2017-07-22T01:53:57Z",
+    "changeKey":"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti",
+    "receivedDateTime":"2017-07-22T01:53:57Z",
+    "sentDateTime":"2017-07-22T01:53:57Z",
+    "hasAttachments":false,
+    "internetMessageId":"<MWHPR1301MB@MWHPR1301MB.namprd13.prod.outlook.com>",
+    "subject":"Did you see last night's game?",
+    "bodyPreview":"They were awesome!",
 }
 ```
 
