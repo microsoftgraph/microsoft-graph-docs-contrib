@@ -41,16 +41,16 @@ For sending in MIME content for our message-related actions, we are adding an op
 
 ## Use cases
 | Use cases | Resources |
-| -------------- | -------------- |
-| Create a message draft | sendMail |
-| Update a message draft| sendMail |
-| Send an email | sendMail |
-| Reply to a message | reply |
-| Create a draft of a reply to a message | createReply 
-| ReplyAll to a message | replyAll | 
-| Create a draft of a replyAll to a message | craeteReplyAll |
-| Forward a message | forward |
-| Create a draft of a forward to a message | createForward | 
+| --------- | --------- |
+| Create a message draft | [createMessage](../api-referece/api/user-post-messages) |
+| Update a message draft| [updateMessage](../api-reference/api/message-update) |
+| Send an email | [sendMail](../api-reference/api/message-send) |
+| Reply to a message | [reply](../api-reference/api/message-reply) |
+| Create a draft of a reply to a message | [createReply](../api-reference/api/message-createreply) |
+| ReplyAll to a message | [replyAll](../api-reference/api/message-replyall) | 
+| Create a draft of a replyAll to a message | [createReplyAll](../api-reference/api/message-createreplyall) |
+| Forward a message | [forward](../api-reference/api/message-forward) |
+| Create a draft of a forward to a message | [createForward](../api-reference/api/message-createforward) | 
 
 ## Error conditions and messages
 

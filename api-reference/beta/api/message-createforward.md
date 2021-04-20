@@ -40,13 +40,13 @@ POST /me/mailFolders/{id}/messages/{id}/createForward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForward
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+| Name       | Type | Description| Required |
+|:---------------|:--------|:----------|:--------|
+| Authorization  | string  | Bearer {token}.| Yes |
+| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object| Yes |
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
+To send a json object provide the following parameters:
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -54,11 +54,16 @@ In the request body, provide a JSON object with the following parameters.
 |toRecipients|[recipient](../resources/recipient.md) collection|The list of recipients.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
+ [!IMPORTANT]
+> * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
+
 ## Response
 
 If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
 
-## Example
+## Examples
+
+### Example 1: Create a draft forward message
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
@@ -145,6 +150,27 @@ Content-length: 272
   ]
 }
 ```
+
+
+### Example 2: Create a draft forward message with MIME content
+
+##### Request
+```http
+POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/createForward
+Content-Type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+```
+##### Response
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
