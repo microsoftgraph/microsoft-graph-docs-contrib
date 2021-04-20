@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generates a uri which can be used to retrieve review history data for the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md). This URI has a TTL of 1 day and can be retrieved by fetching the downloadUri property from the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md) object.
+Generates a uri which can be used to retrieve review history data for the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md). This URI is valid for 1 day and can be retrieved by fetching the downloadUri property from the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md) object.
 
 ## Permissions
 
@@ -112,4 +112,3 @@ Content-Type: application/json
   ]
 }
 ```
-
