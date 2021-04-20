@@ -1,6 +1,6 @@
 ---
 title: "List assignments"
-description: "Retrieve a list of assignment objects. A teacher is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them."
+description: "Retrieve a list of assignment objects. A teacher or an application executing with application permissions is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of assignment objects. A teacher is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them.
+Retrieve a list of assignment objects. A teacher or an application executing with application permissions is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them.
 
 ## Permissions
 

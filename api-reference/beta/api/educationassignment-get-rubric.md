@@ -1,6 +1,6 @@
 ---
 title: "Get educationRubric attached to educationAssignment"
-description: "Get the educaitonRubric attached to an educationAssignment, if one exists."
+description: "Get the educationRubric attached to an educationAssignment, if one exists."
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
