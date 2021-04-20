@@ -4,7 +4,7 @@
         "ChangeList": [
           {
             "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
-            "ApiChange": "Resource",
+            "ApiChange": "Property",
             "ChangedApiName": "tollNumbers",
             "ChangeType": "Addition",
             "Description": "Added the **tollNumbers** property to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
@@ -12,7 +12,7 @@
           },
           {
             "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
-            "ApiChange": "Resource",
+            "ApiChange": "Property",
             "ChangedApiName": "tollFreeNumbers",
             "ChangeType": "Addition",
             "Description": "Added the **tollFreeNumbers** property to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
@@ -20,7 +20,7 @@
           },
           {
             "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
-            "ApiChange": "Resource",
+            "ApiChange": "Property",
             "ChangedApiName": "audioConferencing",
             "ChangeType": "Removal",
             "Description": "Deprecated the **tollNumber** property of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
@@ -28,7 +28,7 @@
           },
           {
             "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
-            "ApiChange": "Resource",
+            "ApiChange": "Property",
             "ChangedApiName": "tollFreeNumber",
             "ChangeType": "Removal",
             "Description": "Deprecated the **tollFreeNumber** property of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
