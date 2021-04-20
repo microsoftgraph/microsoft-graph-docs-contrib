@@ -21,6 +21,7 @@ Represents devices in the policy scope.
 |:-------------|:------------|:------------|
 | includeDevices | String collection | States in the scope of the policy. `All` is the only allowed value. |
 | excludeDevices | String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
+| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filter defining the dynamic-device-syntax rule to include/exclude devices. A filter can use device properties (e.g. extension attributes) to include/exclude them. |
 | includeDeviceStates (deprecated)| String collection | States in the scope of the policy. `All` is the only allowed value. |
 | excludeDeviceStates (deprecated)| String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
 
@@ -36,7 +37,8 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "optionalProperties": [
     "includeDevices",
-    "excludeDevices"
+    "excludeDevices",
+    "deviceFilter"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessDevices",
   "baseType": null
@@ -45,7 +47,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "includeDevices": [ "String" ],
-  "excludeDevices": [ "String" ]
+  "excludeDevices": [ "String" ],
+  "deviceFilter": {"@odata.type": "microsoft.graph.conditionalAccessFilter"}
 }
 ```
 
