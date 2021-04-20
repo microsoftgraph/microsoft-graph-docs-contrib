@@ -5,9 +5,17 @@
           {
             "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
             "ApiChange": "Resource",
-            "ChangedApiName": "audioConferencing",
+            "ChangedApiName": "tollNumbers",
             "ChangeType": "Addition",
-            "Description": "Added the **tollNumbers** and **tollFreeNumbers** properties to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+            "Description": "Added the **tollNumbers** property to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+            "Target": "audioConferencing"
+          },
+          {
+            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+            "ApiChange": "Resource",
+            "ChangedApiName": "tollFreeNumbers",
+            "ChangeType": "Addition",
+            "Description": "Added the **tollFreeNumbers** property to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
             "Target": "audioConferencing"
           },
           {
@@ -15,14 +23,22 @@
             "ApiChange": "Resource",
             "ChangedApiName": "audioConferencing",
             "ChangeType": "Removal",
-            "Description": "Deprecated the **tollNumber** and **tollFreeNumber** properties of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+            "Description": "Deprecated the **tollNumber** property of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+            "Target": "audioConferencing"
+          },
+          {
+            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+            "ApiChange": "Resource",
+            "ChangedApiName": "tollFreeNumber",
+            "ChangeType": "Removal",
+            "Description": "Deprecated the **tollFreeNumber** property of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
             "Target": "audioConferencing"
           }
         ],
         "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2021-04-07T00:00:00",
+        "CreatedDateTime": "2021-04-19T00:00:00",
         "WorkloadArea": "Cloud communications",
         "SubArea": ""
     },
