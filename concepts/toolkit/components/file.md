@@ -104,25 +104,25 @@ To learn more, see [styling components](../customize-components/style.md).
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| API | Configuration | Permission Scopes |
-| --- | ------------- | ----------------- |
-| `GET /drives/{drive-id}/items/{item-id}` | Developer provides `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All |
-| `GET /drives/{drive-id}/root:/{item-path}` | Developer provides `{drive-id}` AND `{item-path}` | " |
-| `GET /groups/{group-id}/drive/items/{item-id}` | Developer provides `{group-id}` AND `{item-id}` | " |
-| `GET /groups/{group-id}/drive/root:/{item-path}` | Developer provides `{group-id}` AND `{item-path}` | " |
-| `GET /me/drive/items/{item-id}` | Developer provides ONLY `{item-id}` | " |
-| `GET /me/drive/root:/{item-path}` | Developer provides ONLY `{item-path}` | " |
-| `GET /sites/{site-id}/drive/items/{item-id}` | Developer provides `{site-id}` AND `{item-id}` | " |
-| `GET /sites/{site-id}/drive/root:/{item-path}` | Developer provides `{site-id}` AND `{item-path}` | " |
-| `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem` | Developer provides `{site-id}` AND `{list-id}` AND `{item-id}` | " |
-| `GET /users/{user-id}/drive/items/{item-id}` | Developer provides `{user-id}` AND `{item-id}` | " |
-| `GET /users/{user-id}/drive/root:/{item-path}` | Developer provides `{user-id}` AND `{item-path}` | " |
-| `GET /me/insights/trending/{insight-id}/resource` | `insight-type` is set to `trending` AND developer provides `{insight-id}` | Sites.Read.All |
-| `GET /users/{id or userPrincipalName}/insights/trending/{insight-id}/resource` | Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `trending` | " |
-| `GET /me/insights/used/{id}/resource` | `insight-type` is set to `used` AND developer provides `{insight-id}` | " |
-| `GET /users/{id or userPrincipalName}/insights/used/{id}/resource` | Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `used` | " |
-| `GET /me/insights/shared/{id}/resource` | `insight-type` is `shared` AND developer provides `{insight-id}` | " |
-| `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource` | Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `shared` | " |
+| Configuration | Permission Scopes | API |
+| ------------- | ----------------- | --- |
+| Developer provides `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}` |
+| Developer provides `{drive-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}` |
+| Developer provides `{group-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}` |
+| Developer provides `{group-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/root:/{item-path}` |
+| Developer provides ONLY `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}` |
+| Developer provides ONLY `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}` |
+| Developer provides `{site-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}` |
+| Developer provides `{site-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/root:/{item-path}` |
+| Developer provides `{site-id}` AND `{list-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem` |
+| Developer provides `{user-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}` |
+| Developer provides `{user-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/root:/{item-path}` |
+| `insight-type` is set to `trending` AND developer provides `{insight-id}` | Sites.Read.All | `GET /me/insights/trending/{insight-id}/resource` |
+| Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending/{insight-id}/resource` |
+| `insight-type` is set to `used` AND developer provides `{insight-id}` | Sites.Read.All | `GET /me/insights/used/{id}/resource` |
+| Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used/{id}/resource` |
+| `insight-type` is `shared` AND developer provides `{insight-id}` | Sites.Read.All | `GET /me/insights/shared/{id}/resource` |
+| Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource` |
 
 ## Templates
 

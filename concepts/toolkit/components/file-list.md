@@ -100,25 +100,25 @@ To learn more, see [styling components](../customize-components/style.md).
 
 ## Microsoft Graph APIs and permissions
 
-| API | Configuration | Permission Scopes |
-| --- | ------------- | ----------------- |
-| `GET /me/drive/root/children`	| Default (no identifiers or query provided) | Files.Read, Files.Read.All, Sites.Read.All |
-| `GET /drives/{drive-id}/items/{item-id}/children` | Developer provides `{drive-id}` AND `{item-id}` | " |
-| `GET /groups/{group-id}/drive/items/{item-id}/children` | Developer provides `{group-id}` AND `{item-id}` | " |
-| `GET /me/drive/items/{item-id}/children` | Developer provides ONLY `{item-id}` | " | 
-| `GET /sites/{site-id}/drive/items/{item-id}/children` | Developer provides `{site-id}` AND `{item-id}` | " |
-| `GET /users/{user-id}/drive/items/{item-id}/children` | Developer provides `{user-id}` AND `{item-id}` | " |
-| `GET /drives/{drive-id}/root:/{item-path}:/children` | Developer provides `{drive-id}` AND `{item-path}` | " |
-| `GET /groups/{group-id}/root:/{item-path}:/children` | Developer provides `{group-id}` AND `{item-path}` | " |
-| `GET /sites/{site-id}/root:/{item-path}:/children` | Developer provides `{site-id}` AND `{item-path}` | " |
-| `GET /users/{user-id}/root:/{item-path}:/children` | Developer provides `{user-id}` AND `{item-path}` | " |
-| `GET /me/drive/root:/{item-path}:/children` | Developer provides only `{item-path}` | " |
-| `GET /me/insights/trending` | `insight-type` is set to trending | Sites.Read.All |
-| `GET /users/{id or userPrincipalName}/insights/trending` | Developer provides `{user-id or upn}` AND `insight-type` is set to `trending` | " | 
-| `GET /me/insights/used` | `insight-type` is set to `used` | " |
-| `GET /users/{id or userPrincipalName}/insights/used`  | Developer provides `{user-id or upn}` AND `insight-type` is set to `used` | " |
-| `GET /me/insights/shared` | `insight-type` is set to shared | " |
-| `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))` | Developer provides `{user-id or upn}` AND `insight-type` is set to `shared` | " |
+| Configuration | Permission Scopes | API |
+| ------------- | ----------------- | --- |
+| Default (no identifiers or query provided) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children`	|
+| Developer provides `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
+| Developer provides `{group-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}/children` |
+| Developer provides ONLY `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}/children` | 
+| Developer provides `{site-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}/children` |
+| Developer provides `{user-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
+| Developer provides `{drive-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}:/children` |
+| Developer provides `{group-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/root:/{item-path}:/children` |
+| Developer provides `{site-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/root:/{item-path}:/children` |
+| Developer provides `{user-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/root:/{item-path}:/children` |
+| Developer provides only `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
+| `insight-type` is set to trending | Sites.Read.All | `GET /me/insights/trending` |
+| Developer provides `{user-id or upn}` AND `insight-type` is set to `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` | 
+| `insight-type` is set to `used` | Sites.Read.All | `GET /me/insights/used` |
+| Developer provides `{user-id or upn}` AND `insight-type` is set to `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
+| `insight-type` is set to shared | Sites.Read.All | `GET /me/insights/shared` |
+| Developer provides `{user-id or upn}` AND `insight-type` is set to `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))` |
 
 ## Events
 
