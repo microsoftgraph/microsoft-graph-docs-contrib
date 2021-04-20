@@ -18,6 +18,7 @@ Metadata for a Windows 10 feature update that can be approved for deployment.
 
 Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
+Windows 10 feature updates are released bi-annually and contain new features for Windows 10. Installing these updates increases the Windows 10 build number and will typically result in a new servicing lifecycle and end of service date. Microsoft recommends organizations regularly deploy new feature updates as part of adopting Windows as a service.
 
 ## Properties
 |Property|Type|Description|
