@@ -1,7 +1,7 @@
 ---
 title: "Software updates with the Windows Update for Business deployment service"
 description: "Software updates are the primary type of content deployable by the deployment service. In order to find specific updates available for deployment you will refer to entries in a catalog."
-author: "aarononeal"
+author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
 doc_type: conceptualPageType
