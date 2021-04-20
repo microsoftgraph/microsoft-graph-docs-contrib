@@ -1,23 +1,21 @@
 ---
-title: "Deploy an expedited update using the Windows Update for Business deployment service"
-description: "With the Windows Update for Business deployment service, you can deploy expedited Windows updates to sets of devices in an Azure AD tenant in case an emergency arises and you need to immediately deploy an update."
+title: "Deploy an expedited update"
+description: "With the Windows Update for Business deployment service, you can deploy expedited Windows security updates to sets of devices in an Azure AD tenant in case an emergency arises and you need to immediately deploy a security update."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
 doc_type: conceptualPageType
 ---
 
-# Deploy an expedited update using the Windows Update for Business deployment service
+# Deploy an expedited security update using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy expedited Windows updates to sets of devices in an Azure AD tenant in case an emergency arises and you need to immediately deploy an update.
+With the Windows Update for Business deployment service, you can deploy expedited Windows security updates to devices in an Azure AD tenant. Expediting a security update overrides Windows Update for Business deferral policies to deploy an update immediately. This can be useful when critical security events arise and you need to deploy the latest updates more rapidly than normal. This can help to achieve compliance targets against a specific security update, but is not designed to be used every month (to deploy Windows 10 feature updates, see [Deploy an update](windowsupdates-deploy-update.md)).
 
 Deploying an expedited Windows 10 update allows the update to be installed as quickly as possible. Expedited updates have the following characteristics:
 
 * The update starts right away rather than waiting for the next regular update scan, which occurs once every 22 hours by default.
 * The update downloads and installs as quickly as possible.
 * The update process overrides configured device policy settings, such as days until the device is forced to restart. After the expedited update is installed, the device returns to the current policy settings.
-
-Today, the deployment service supports expedited deployments of Windows 10 quality updates. Deploying an expedited quality update helps achieve compliance against a specific security update, as specified by date. (See also: [Deploy an update](windowsupdates-deploy-update.md))
 
 ## Prerequisites
 
@@ -30,7 +28,7 @@ You can query the deployment service catalog to get a list of updates that can b
 
 All Windows cumulative updates that are classified as security updates can be expedited and are tagged with the `isExpeditable` property set to `true` to identify them.
 
-Below is an example of querying for all Windows 10 quality updates that can be deployed as expedited updates by the deployment service.It is recommended to only show the three most current updates, so the example includes `$top=3`.
+Below is an example of querying for all Windows 10 quality updates that can be deployed as expedited updates by the deployment service. It is recommended to only show the three most current updates, so the example includes `$top=3`.
 
 ### Request
 
@@ -81,7 +79,7 @@ Content-Type: application/json
 
 A deployment specifies content to deploy, how and when to deploy the content, and the targeted devices. For quality updates, the content is specified using a target compliance date. When a deployment is created, a deployment audience is automatically created as a relationship.
 
-When you deploy an expedited quality update to a device, Windows Update will offer an update that brings the device above the minimum compliance level specified. Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices will meet the specified security update compliance standard. This behavior of offering the latest available, indicated by the property `equivalentContent` being set to the default value `latestSecurity`, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
+When you deploy an expedited security update to a device, Windows Update will offer an update that brings the device above the minimum compliance level specified. Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices will meet the specified security update compliance standard. This behavior of offering the latest available, indicated by the property `equivalentContent` being set to the default value `latestSecurity`, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
 
 You can configure the device restart grace period using the property `daysUntilForcedReboot` in the deployment's user experience settings. The grace period sets the amount of time after installation that the user can control the timing of when the device restarts. If the device has not restarted by the time the grace period expires, it restarts automatically.
 

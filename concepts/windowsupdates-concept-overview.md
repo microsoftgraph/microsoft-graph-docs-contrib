@@ -11,22 +11,30 @@ doc_type: conceptualPageType
 
 ## Why use the Windows Update for Business deployment service?
 
-The Windows Update for Business deployment service gives organizations control over device updates.
+The Windows Update for Business deployment service provides control over device updates through the ability to approve, schedule and safguard content delivered by Windows Update. It enables IT Professionals and management tool vendors alike to:
+* Schedule update deployments to begin on a specific date
+* Stage deployments over a period of days or weeks using rich expressions
+* Bypass pre-configured Windows Update for Business policies to immediately deploy a security update
+* Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s)
 
-As a cloud service, the deployment service keeps devices up to date and compliant according to your organization's policies.  It also safeguards against updates that cause device-specific issues or unnecessary reboots.
+Today, the deployment service supports management of Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service, please see [Overview of the deployment service]().
 
-The combination of cloud intelligence and greater control creates a best-in-class management experience for network administrators, and streamlines update experiences for Windows users.
+## Prerequisites
 
-![WUfB: ds overview](images/windowsupdates-wufbds.png)
+To use the deployment service, your organization must have one of the following subscriptions:
+* Windows 10 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
+* Windows 10 Education A3 or A5 (included in Microsoft 365 A3 or A5)
+* Windows Virtual Desktop Access E3 or E5
+* Microsoft 365 Business Premium
 
-## License requirements
+Additionally, devices managed by the deployment service must:
+* Be Azure AD joined or Hybrid AD joined
+* Run one of the following Windows 10 editions: Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Pro Education
+* Have installed Windows 10 version 1709 or later
 
-Before using the deployment service, make sure devices meet the following requirements:
-
-* **Subscription**
-  * Microsoft 365 E3/E5, A3/A5, F3, Business Premium
-* **Operating System**
-  * Windows 10 Enterprise E3/E5, A3/A5
+To fully benefit from the capabilities of the deployment service, we also recommend that:
+* Telemetry be turned on with a minimum setting of Required
+* Set the AllowWUfBCloudProcessing policy to 1
 
 ## Enroll devices to be managed
 
@@ -34,9 +42,9 @@ To start using the deployment service, [enroll devices in update management](win
 
 ## Approve and schedule Windows content delivered from Windows Update
 
-The deployment service simplifies reviewing, approving, scheduling, and deploying content for a diverse device ecosystem. The updates catalog provides a view tailored for approvals, helping you focus on approval decisions that matter, saving you time from sorting through deep lists of related updates.
+The deployment service simplifies reviewing, approving, scheduling, and deploying content for a diverse device ecosystem. The updates catalog provides a view tailored for approvals, helping you focus on approval decisions that matter and avoids the need to sort through deep lists of related updates.
 
-Once you have chosen the desired updates, schedule deployments to start at a future time, or deploy over a period of time.
+Once you have chosen an update to deploy, you can schedule deployments to start at a future time, or deploy over a period of time. If you choose to deploy an update over a period of time, the deployment service will automatically optimize the order in which devices are offered updates. Ordering is chosen to ensure a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue. 
 
 Learn more about the deployment service:
 * [Software updates](windowsupdates-software-updates.md)
@@ -45,7 +53,7 @@ Learn more about the deployment service:
 
 ## Immediately deploy an update when critical needs arise
 
-In the case of a critical security or compatibility issue, you can use the deployment service to bypass a standard update policy and expedite deployment.
+In the case of a critical security issue, you can use the deployment service to bypass a standard update policy and expedite deployment of a security update.
 
 To learn more, see [Deploy an expedited update](windowsupdates-deploy-expedited-update.md).
 
@@ -53,6 +61,6 @@ To learn more, see [Deploy an expedited update](windowsupdates-deploy-expedited-
 
 Enjoy the benefit of [safeguard holds](https://docs.microsoft.com/en-us/windows/deployment/update/safeguard-holds) which prevent devices with a quality or compatibility issue from installing an update, resulting in failure or roll-back otherwise.
 
-Additionally, you can configure rules to monitor deployments, which can alert or pause based on device signals such as rollbacks.
+Additionally, you can configure monitoring rules that are unique to your organization. These rules can alert or pause a deployment based on device signals such as rollbacks.
 
 To learn more, see [Manage monitoring rules for a deployment](windowsupdates-manage-monitoring-rules.md).
