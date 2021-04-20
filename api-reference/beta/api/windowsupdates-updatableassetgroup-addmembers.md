@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add as members of the updatable asset group.|
+|assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add as members of the updatable asset group.|
 
 
 
@@ -70,9 +70,7 @@ If successful, this action returns a `202 Accepted` response code. It does not r
 -->
 ``` http
 POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/addMembers
-
 Content-Type: application/json
-Content-length: 145
 
 {
   "assets": [

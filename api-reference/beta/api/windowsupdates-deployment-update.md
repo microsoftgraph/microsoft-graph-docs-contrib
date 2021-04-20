@@ -42,12 +42,12 @@ PATCH /admin/windows/updates/deployments/{deploymentId}
 ## Request body
 In the request body, supply a JSON representation of the [deployment](../resources/windowsupdates-deployment.md) object.
 
-The following table shows the properties that are required when you update the [deployment](../resources/windowsupdates-deployment.md).
+The following table shows the properties that can be set when you update the [deployment](../resources/windowsupdates-deployment.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|[deploymentState](../resources/windowsupdates-deploymentstate.md)|Execution status of the deployment.|
-|settings|[deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings specified on the specific deployment governing how to deploy deployment `content`.|
+|state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|Execution status of the deployment.|
+|settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings specified on the specific deployment governing how to deploy deployment `content`.|
 
 
 ## Response
@@ -61,7 +61,8 @@ In this example, the deployment is paused by updating the `requestedValue` of th
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_deployment"
+  "name": "update_deployment",
+  "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
 ``` http
@@ -82,7 +83,8 @@ Content-Type: application/json
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
 ``` http
@@ -99,7 +101,7 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
         "value": "pausedByRequest"
       }
-    ]
+    ],
     "requestedValue": "paused",
     "value": "paused"
   },
@@ -118,7 +120,8 @@ In this example, the deployment's `settings` are updated to add a monitoring rul
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_deployment"
+  "name": "update_deployment",
+  "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
 ``` http
@@ -147,7 +150,8 @@ Content-Type: application/json
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
 ``` http

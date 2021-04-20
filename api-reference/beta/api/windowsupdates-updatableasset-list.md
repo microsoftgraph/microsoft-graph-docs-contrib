@@ -85,15 +85,15 @@ Content-Type: application/json
     },
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-      "id": "983f03cd-03cd-983f-cd03-3f98cd033f98"
-    },
-    "errors": [],
-    "enrollments": [
-      {
-        "@odata.type": "microsoft.graph.windowsUpdates.updateManagementEnrollment",
-        "updateCategory": "feature"
-      }
-    ]
+      "id": "983f03cd-03cd-983f-cd03-3f98cd033f98",
+      "errors": [],
+      "enrollments": [
+        {
+          "@odata.type": "microsoft.graph.windowsUpdates.updateManagementEnrollment",
+          "updateCategory": "feature"
+        }
+      ]
+    }
   ]
 }
 ```

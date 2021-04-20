@@ -18,8 +18,8 @@ The set of assets to which a deployment can apply.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List members](../api/windowsupdates-deploymentaudience-list-members.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List members of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).|
-|[List exclusions](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List exclusions of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).|
+|[List members](../api/windowsupdates-deploymentaudience-list-members.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List members of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).|
+|[List exclusions](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List exclusions of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).|
 |[Update members and exclusions](../api/windowsupdates-deploymentaudience-updateaudience.md)|None|Add or remove members and exclusions.|
 |[Update members and exclusions (by ID)](../api/windowsupdates-deploymentaudience-updateaudiencebyid.md)|None|Add or remove members and exclusions of the same type.|
 
@@ -31,8 +31,8 @@ The set of assets to which a deployment can apply.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|exclusions|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to exclude from the audience. Takes precedence over members.|
-|members|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to include in the audience.|
+|exclusions|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to exclude from the audience. Takes precedence over members.|
+|members|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to include in the audience.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -22,8 +22,8 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureADDevices](../api/windowsupdates-azureaddevice-list.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.|
-|[Get azureADDevice](../api/windowsupdates-azureaddevice-get.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md)|Read the properties and relationships of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
+|[List azureADDevices](../api/windowsupdates-azureaddevice-list.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.|
+|[Get azureADDevice](../api/windowsupdates-azureaddevice-get.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md)|Read the properties and relationships of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Delete azureADDevice](../api/windowsupdates-azureaddevice-delete.md)|None|Delete an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Enroll azureADDevice in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll devices in update management by the deployment service.|
 |[Enroll azureADDevice in management (by ID)](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll devices in update management by the deployment service.|
@@ -34,8 +34,8 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|enrollments|[updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md) collection|Specifies areas of the service in which the device is enrolled. Read-only. Returned by default.|
-|errors|[updatableAssetError](../resources/windowsupdates-updatableasseterror.md) collection|Specifies any errors that prevent the device from being enrolled in update management or receving deployed content. Read-only. Returned by default.|
+|enrollments|[microsoft.graph.windowsUpdates.updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md) collection|Specifies areas of the service in which the device is enrolled. Read-only. Returned by default.|
+|errors|[microsoft.graph.windowsUpdates.updatableAssetError](../resources/windowsupdates-updatableasseterror.md) collection|Specifies any errors that prevent the device from being enrolled in update management or receving deployed content. Read-only. Returned by default.|
 |id|String|An identifier for the device. Key. Not nullable. Read-only. Returned by default. Inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md)|
 
 ## Relationships

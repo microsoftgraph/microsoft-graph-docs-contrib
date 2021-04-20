@@ -68,7 +68,6 @@ If successful, this action returns a `202 Accepted` response code. It does not r
 -->
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/unenrollAssetsById
-
 Content-Type: application/json
 
 {

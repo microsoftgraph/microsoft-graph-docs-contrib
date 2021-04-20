@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |updateCategory|updateCategory|The category of updates for the service to stop managing. Possible values are: `feature`.|
-|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to unenroll from update management by the service for the given `updateCategory`.|
+|assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to unenroll from update management by the service for the given `updateCategory`.|
 
 
 
@@ -67,15 +67,13 @@ If successful, this action returns a `202 Accepted` response code. It does not r
 -->
 ``` http
 POST https://graph.microsoft.com/beta/updatableAssetGroup/members/unenrollAssets
-
 Content-Type: application/json
-Content-length: 176
 
 {
   "updateCategory": "String",
   "assets": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "String (identifier)"
     }
   ]

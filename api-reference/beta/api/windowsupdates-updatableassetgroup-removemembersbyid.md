@@ -65,7 +65,6 @@ If successful, this action returns a `202 Accepted` response code. It does not r
 -->
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMembersById
-
 Content-Type: application/json
 
 {

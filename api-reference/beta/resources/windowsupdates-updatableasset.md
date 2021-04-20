@@ -20,9 +20,9 @@ All updatable assets exist as one of the following derived types: [azureADDevice
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List updatableAssets](../api/windowsupdates-updatableasset-list.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get a list of the [updatableAsset](../resources/windowsupdates-updatableasset.md) objects and their properties.|
-|[Create updatableAssetGroup](../api/windowsupdates-updatableassetgroup-create.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
-|[Get updatableAsset](../api/windowsupdates-updatableasset-get.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md)|Read the properties and relationships of an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
+|[List updatableAssets](../api/windowsupdates-updatableasset-list.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get a list of the [updatableAsset](../resources/windowsupdates-updatableasset.md) objects and their properties.|
+|[Create updatableAssetGroup](../api/windowsupdates-updatableassetgroup-create.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
+|[Get updatableAsset](../api/windowsupdates-updatableasset-get.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Read the properties and relationships of an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
 |[Delete updatableAsset](../api/windowsupdates-updatableasset-delete.md)|None|Delete an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
 |[Enroll asset in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll assets in update management by the deployment service.|
 |[Enroll asset in management (by ID)](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll assets of the same type in update management by the deployment service.|
