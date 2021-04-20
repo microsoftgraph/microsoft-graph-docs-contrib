@@ -138,6 +138,42 @@ Content-Type: application/json
   ]
 }
 ```
+## Code examples: create upload session and upload documents.
+ 
+# [C#](#tab/csharp)
+
+# [JavaScript](#tab/javascript)
+
+```javascript
+
+    const options = {
+      authProvider,
+    };
+    const client = Client.init(options);
+   
+   const fileName = "test.txt";
+    const file = fs.readFileSync(`./${fileName}`);
+    const stats = fs.statSync(`./${fileName}`);
+    const requestUrl ="https://graph.microsoft.com/v1.0/print/shares/{id}/jobs/{id}/documents/{id}/createuploadsession"
+    const payload = {
+        "properties": {
+            "documentName": fileName,
+            "contentType": "application/pdf",
+            "size": stats.size
+        }
+    }
+    const uploadSession = await LargeFileUploadTask.createUploadSession(client, requestUrl, payload);
+
+    const fileObject = {
+        content: file,
+        name: fileName,
+        size: stats.size
+    };
+
+    const task = new LargeFileUploadTask(client, fileObject, uploadSession);
+
+    const uploadResponse = await task.upload();
+```
 
 ## Cancel the upload session
 
