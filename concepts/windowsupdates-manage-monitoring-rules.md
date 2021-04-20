@@ -15,7 +15,7 @@ Monitoring rules are compatible with deployments of Windows 10 feature updates.
 
 ## Step 1: Create a monitoring rule
 
-You can create a monitoring rule for a deployment in its monitoring settings. Each deployment can have one active monitoring rule at a time.
+You can create a monitoring rule for a deployment in its monitoring settings. Each [deployment](windowsupdates-deployments.md) can have one active monitoring rule at a time.
 
 Below is an example of creating a monitoring rule for a deployment at the same time as creating the deployment.
 
