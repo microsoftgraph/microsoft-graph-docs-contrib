@@ -11,9 +11,9 @@ doc_type: conceptualPageType
 
 With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports deployments of Windows 10 feature updates and expedited quality updates. This topic focuses on deployments of feature updates. For information about deploying expedited quality updates, see [Deploy an expedited update](windowsupdates-deploy-expedited-update.md).
 
-When you deploy a feature update to a device, Windows Update offers the specified update to the device if it has not yet taken the update. For example, if you deploy Windows 10 feature update version 20H2, the device will move to the specified version if it is enrolled in feature update management and currently on an older version of Windows 10. If the device is already at or above the specified version, it will stay on its current version. If the device is not enrolled in feature update management, the device will be unaffected by this operation.
+When you deploy a feature update to a device, Windows Update offers the specified update to the device if it has not yet received the update. For example, if you deploy Windows 10 feature update version 20H2 to a device that is enrolled in feature update management and is currently on an older version of Windows 10, the device updates to version 20H2. If the device is already at or above version 20H2, it stays on its current version. If the device is not enrolled in feature update management, the device will be unaffected by this operation.
 
-As long as a device remains enrolled in feature update management, the device will not receive any other feature updates from Windows Update unless explicitly deployed using the deployment service.
+As long as a device remains enrolled in feature update management, the device does not receive any other feature updates from Windows Update unless explicitly deployed using the deployment service.
 
 ## Prerequisites
 
