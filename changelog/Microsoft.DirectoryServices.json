@@ -5,7 +5,7 @@
         {
           "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
           "ApiChange": "Permissions",
-          "ChangedApiName": "RoleAssignment.Read.Directory",
+          "ChangedApiName": "RoleAssignmentSchedule.Read.Directory",
           "ChangeType": "Addition",
           "Description": "Added support for the delegated permission of **RoleAssignment.Read.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
           "Target": "roleManagement"
@@ -13,7 +13,7 @@
         {
           "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
           "ApiChange": "Permissions",
-          "ChangedApiName": "RoleEligibility.Read.Directory",
+          "ChangedApiName": "RoleEligibilitySchedule.Read.Directory",
           "ChangeType": "Addition",
           "Description": "Added support for the delegated permission of **RoleEligibility.Read.Directory**  to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
           "Target": "roleManagement"
@@ -29,7 +29,7 @@
         {
           "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
           "ApiChange": "Permissions",
-          "ChangedApiName": "RoleAssignment.ReadWrite.Directory",
+          "ChangedApiName": "RoleAssignmentSchedule.ReadWrite.Directory",
           "ChangeType": "Addition",
           "Description": "Added support for the delegated permission of **RoleAssignment.ReadWrite.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
           "Target": "roleManagement"
@@ -37,7 +37,7 @@
         {
           "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
           "ApiChange": "Permissions",
-          "ChangedApiName": "RoleEligibility.ReadWrite.Directory",
+          "ChangedApiName": "RoleEligibilitySchedule.ReadWrite.Directory",
           "ChangeType": "Addition",
           "Description": "Added support for the delegated permission of **RoleEligibility.ReadWrite.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
           "Target": "roleManagement"
