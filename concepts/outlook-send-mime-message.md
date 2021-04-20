@@ -25,8 +25,6 @@ Supported MIME features:
 Visit the documentation about [getting MIME content of a message](../concepts/outlook-get-mime-message.md) for more information about MIME.
 
 ## Details and schema changes
-We are making the [message](/graph/api/resources/message.md) entity streamable so that MIME content can be sent as a media stream payload. This follows the OData V4.0 specification, [Section 11.4.7.1](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html#_Toc372793727) for creating media entities. 
-
 For distinguishing the two ways of creating a **Message**: (1) JSON metadata (2) MIME content, we are using the `Content-Type` header in the request headers.
 
 1. If `Content-Type: application/json`, JSON metadata is being sent in the request body.
@@ -40,7 +38,6 @@ For updating a message with MIME content, we send a PUT request to the `/$value`
 | Use cases | Resources |
 | --------- | --------- |
 | Create a message draft | [createMessage](/graph/api/user-post-messages.md) |
-| Update a message draft| [updateMessage](/graph/api/message-update.md) |
 | Send an email | [sendMail](/graph/api/message-send.md) |
 | Reply to a message | [reply](/graph/api/message-reply.md) |
 | Create a draft of a reply to a message | [createReply](/graph/api/message-createreply.md) |

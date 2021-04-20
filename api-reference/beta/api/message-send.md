@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or
+Send a message in the draft folder or a new MIME message. The draft message can be a new message draft, reply draft, reply-all draft, or
 a forward draft. The message is then saved in the Sent Items folder.
 
 ## Permissions
@@ -33,22 +33,26 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /me/messages/{id}/send
 POST /users/{id | userPrincipalName}/messages/{id}/send
+POST https://graph.microsoft.com/v1.0/me/sendMail
 ```
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Length | number | 0. Required. |
+| Name       | Type | Description| Required |
+|:---------------|:--------|:----------|:----------|
+| Authorization  | string  | Bearer {token}.| Yes |
+| Content-Length | number | 0. | Yes |
+| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object| Only if sending a new MIME message |
 
 ## Request body
+For sending MIME content no parameters are required, just paste the MIME string in the body of the request.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
-## Example
+## Examples
+### Example 1: Send a draft message
 
 Here is an example of how to call this API.
 ##### Request
@@ -93,6 +97,35 @@ Here is an example of the response.
 
 ```http
 HTTP/1.1 202 Accepted
+```
+
+### Example 2: Send a new message with MIME content
+##### Request
+```json
+POST https://graph.microsoft.com/v1.0/me/sendMail
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
+```
+##### Response
+```http
+HTTP/1.1 201 Accepted
+Content-type: application/json
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",
+    "id":"AAMkADNlNYjSAAA=",
+    "createdDateTime":"2017-07-22T01:53:56Z",
+    "lastModifiedDateTime":"2017-07-22T01:53:57Z",
+    "changeKey":"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti",
+    "receivedDateTime":"2017-07-22T01:53:57Z",
+    "sentDateTime":"2017-07-22T01:53:57Z",
+    "hasAttachments":false,
+    "internetMessageId":"<MWHPR1301MB@MWHPR1301MB.namprd13.prod.outlook.com>",
+    "subject":"Did you see last night's game?",
+    "bodyPreview":"They were awesome!",
+...
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

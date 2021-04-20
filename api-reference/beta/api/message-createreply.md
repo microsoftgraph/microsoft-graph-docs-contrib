@@ -174,7 +174,11 @@ Here is an example of the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 201 Accepted
+Content-type: application/json
+{
+  
+}
 ```
 
 
