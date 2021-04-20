@@ -7,7 +7,7 @@ author: beth-panx
 
 # File list component in the Microsoft Graph Toolkit
 
-The File List component displays a list of multiple folders and files by using the file/folder name, an icon, and other properties specicified by the developer. This component uses the [mgt-file](./file.md) component. The developer is able to specify a specific drive or or site, display a list of files based on insight type (trending, used, or shared), or provide queries render to a custom list of files.
+The File List component displays [a list of multiple folders and files](https://docs.microsoft.com/en-us/graph/api/resources/onedrive?view=graph-rest-1.0) by using the file/folder name, an icon, and other properties specicified by the developer. This component uses the [mgt-file](./file.md) component. The developer is able to specify a specific drive or or site, display a list of files based on insight type (trending, used, or shared), or provide queries render to a custom list of files.
 
 ## Example
 
@@ -36,6 +36,35 @@ You can use several properties to customize the component.
 | `file-extensions` | `fileExtensions` | An array of file extensions used to filter files to show. |
 | `hide-more-files-button` | `hideMoreFilesButton` | A boolean to indicate whether to show a button to render more files. |
 
+The following example changes the behavior of the component to fetch file list from a specific query.
+
+```html
+<mgt-file-list file-list-query="/me/drive/items/01BYE5RZYJ43UXGBP23BBIFPISHHMCDTOY/children"></mgt-file-list>
+```
+
+The following example changes the behavior of the component to fetch file list from a folder by providing the folder id.
+
+```html
+<mgt-file-list item-id="01BYE5RZYJ43UXGBP23BBIFPISHHMCDTOY"></mgt-file-list>
+```
+
+The following example changes the behavior of the component to fetch file list from a group by providing the group id and folder path.
+
+```html
+<mgt-file-list group-id="8090c93e-ba7c-433e-9f39-08c7ba07c0b3" item-path="/Design"></mgt-file-list>
+```
+
+The following example changes the behavior of the component to fetch file list from a user by providing the user id and folder id.
+
+```html
+<mgt-file-list user-id="48d31887-5fad-4d73-a9f5-3c356e68a038" item-id="01BYE5RZYFPM65IDVARFELFLNTXR4ZKABD"></mgt-file-list>
+```
+
+The following example changes the behavior of the component to fetch file list by providing the insight type.
+
+```html
+<mgt-file-list insight-type="shared"></mgt-file-list>
+```
 
 ## CSS custom properties
 
@@ -71,25 +100,25 @@ To learn more, see [styling components](../customize-components/style.md).
 
 ## Microsoft Graph APIs and permissions
 
-| Query | Use if | Permission Scopes |
-| ----- | ------ | ----------------- |
+| API | Configuration | Permission Scopes |
+| --- | ------------- | ----------------- |
 | `GET /me/drive/root/children`	| Default (no identifiers or query provided) | Files.Read, Files.Read.All, Sites.Read.All |
-| `GET /drives/{drive-id}/items/{item-id}/children` | `{drive-id}` AND `{item-id}` | " |
-| `GET /groups/{group-id}/drive/items/{item-id}/children` | `{group-id}` AND `{item-id}` | " |
-| `GET /me/drive/items/{item-id}/children` | ONLY `{item-id}` | " | 
-| `GET /sites/{site-id}/drive/items/{item-id}/children` | `{site-id}` AND `{item-id}` | " |
-| `GET /users/{user-id}/drive/items/{item-id}/children` | `{user-id}` AND `{item-id}` | " |
-| `GET /drives/{drive-id}/root:/{item-path}:/children` | `{drive-id}` AND `{item-path}` | " |
-| `GET /groups/{group-id}/root:/{item-path}:/children` | `{group-id}` AND `{item-path}` | " |
-| `GET /sites/{site-id}/root:/{item-path}:/children` | `{site-id}` AND `{item-path}` | " |
-| `GET /users/{user-id}/root:/{item-path}:/children` | `{user-id}` AND `{item-path}` | " |
-| `GET /me/drive/root:/{item-path}:/children` | only `{item-path}` | " |
-| `GET /me/insights/trending` | `insight-type` is trending | Sites.Read.All |
-| `GET /users/{id or userPrincipalName}/insights/trending` | {user-id or upn} AND `insight-type` is `trending` | " | 
-| `GET /me/insights/used` | `insight-type` is `used` | " |
-| `GET /users/{id or userPrincipalName}/insights/used`  | {user-id or upn} AND `insight-type` is `used` | " |
-| `GET /me/insights/shared` | `insight-type` is shared | " |
-| `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))` | `{user-id or upn}` AND `insight-type` is `shared` | " |
+| `GET /drives/{drive-id}/items/{item-id}/children` | Developer provides `{drive-id}` AND `{item-id}` | " |
+| `GET /groups/{group-id}/drive/items/{item-id}/children` | Developer provides `{group-id}` AND `{item-id}` | " |
+| `GET /me/drive/items/{item-id}/children` | Developer provides ONLY `{item-id}` | " | 
+| `GET /sites/{site-id}/drive/items/{item-id}/children` | Developer provides `{site-id}` AND `{item-id}` | " |
+| `GET /users/{user-id}/drive/items/{item-id}/children` | Developer provides `{user-id}` AND `{item-id}` | " |
+| `GET /drives/{drive-id}/root:/{item-path}:/children` | Developer provides `{drive-id}` AND `{item-path}` | " |
+| `GET /groups/{group-id}/root:/{item-path}:/children` | Developer provides `{group-id}` AND `{item-path}` | " |
+| `GET /sites/{site-id}/root:/{item-path}:/children` | Developer provides `{site-id}` AND `{item-path}` | " |
+| `GET /users/{user-id}/root:/{item-path}:/children` | Developer provides `{user-id}` AND `{item-path}` | " |
+| `GET /me/drive/root:/{item-path}:/children` | Developer provides only `{item-path}` | " |
+| `GET /me/insights/trending` | `insight-type` is set to trending | Sites.Read.All |
+| `GET /users/{id or userPrincipalName}/insights/trending` | Developer provides `{user-id or upn}` AND `insight-type` is set to `trending` | " | 
+| `GET /me/insights/used` | `insight-type` is set to `used` | " |
+| `GET /users/{id or userPrincipalName}/insights/used`  | Developer provides `{user-id or upn}` AND `insight-type` is set to `used` | " |
+| `GET /me/insights/shared` | `insight-type` is set to shared | " |
+| `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))` | Developer provides `{user-id or upn}` AND `insight-type` is set to `shared` | " |
 
 ## Events
 

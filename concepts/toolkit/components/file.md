@@ -7,7 +7,7 @@ author: beth-panx
 
 # File component in the Microsoft Graph Toolkit
 
-The File component is used to represent an individual file/folder from OneDrive or SharePoint by displaying information such as the file/folder name, an icon indicating the file type, and other properties such as the author, last modified date, or other details selected by the developer. The developer or application provides the identifiers for a file and the component will generate the query to retreive the file based on the identifiers provided. This component can be used on it's own or as part of the [mgt-file-list](./file-list.md) components.
+The File component is used to represent an individual [file/folder from OneDrive or SharePoint](https://docs.microsoft.com/en-us/graph/onedrive-concept-overview) by displaying information such as the file/folder name, an icon indicating the file type, and other properties such as the author, last modified date, or other details selected by the developer. The developer or application provides the identifiers for a file and the component will generate the query to retreive the file based on the identifiers provided. This component can be used on it's own or as part of the [mgt-file-list](./file-list.md) components.
 
 ## Example
 
@@ -38,6 +38,36 @@ You can use several properties to customize the component.
 | `line1-property` | `line1Property` | Sets the property of `fileDetails` to use for the first line of text. Default is `name` of the file. |
 | `line2-property` | `line2Property` | Sets the property of `fileDetails` to use for the second line of text. Default is `lastModifiedDateTime`. |
 | `line3-property` | `line3Property` | Sets the property of `fileDetails` to use for the third line of text. Default is `size` of the file. |
+
+The following example changes the behavior of the component to fetch data from a specific query.
+
+```html
+<mgt-file file-query="/me/drive/items/01BYE5RZZFWGWWVNHHKVHYXE3OUJHGWCT2"></mgt-file>
+```
+
+The following example changes the behavior of the component to fetch data from a specific query, show three lines of information: file name, file last modified date time, and file size by default, and set file icon.
+
+```html
+<mgt-file file-query="/me/drive/items/01BYE5RZZFWGWWVNHHKVHYXE3OUJHGWCT2" view="threeLines" file-icon="ICON_PATH"></mgt-file>
+```
+
+The following example changes the behavior of the component to fetch data from a specific drive.
+
+```html
+<mgt-file drive-id="b!-RIj2DuyvEyV1T4NlOaMHk8XkS_I8MdFlUCq1BlcjgmhRfAj3-Z8RY2VpuvV_tpd" item-id="01BYE5RZ5MYLM2SMX75ZBIPQZIHT6OAYPB"></mgt-file>
+```
+
+The following example changes the behabior of the component to fetch data from a SharePoint site and path.
+
+```html
+  <mgt-file site-id="m365x214355.sharepoint.com,5a58bb09-1fba-41c1-8125-69da264370a0,9f2ec1da-0be4-4a74-9254-973f0add78fd" item-Path="/DemoDocs/AdminDemo"></mgt-file>
+```
+
+The following example changes the behavior of the component to fetch data by insight type.
+
+```html
+<mgt-file insight-type="shared" insight-id="AW1GxMvkOztMkJX-SCppUSRPF5EvyPDHRZVAqtQZXI4JoUXwI9_mfEWNlabr1f7aXRBWDMt2C2FDop4fP1vsUw9tRsTL5Ds7TJCV_kgqaVEkBA"></mgt-file>
+```
 
 ## CSS custom properties
 
@@ -74,25 +104,25 @@ To learn more, see [styling components](../customize-components/style.md).
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| Query | Use if | Permission Scopes |
-| ----- | ------ | ----------------- |
-| `GET /drives/{drive-id}/items/{item-id}` | `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All |
-| `GET /drives/{drive-id}/root:/{item-path}` | `{drive-id}` AND `{item-path}` | " |
-| `GET /groups/{group-id}/drive/items/{item-id}` | `{group-id}` AND `{item-id}` | " |
-| `GET /groups/{group-id}/drive/root:/{item-path}` | `{group-id}` AND `{item-path}` | " |
-| `GET /me/drive/items/{item-id}` | ONLY `{item-id}` | " |
-| `GET /me/drive/root:/{item-path}` | ONLY `{item-path}` | " |
-| `GET /sites/{site-id}/drive/items/{item-id}` | `{site-id}` AND `{item-id}` | " |
-| `GET /sites/{site-id}/drive/root:/{item-path}` | `{site-id}` AND `{item-path}` | " |
-| `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem` | `{site-id}` AND `{list-id}` AND `{item-id}` | " |
-| `GET /users/{user-id}/drive/items/{item-id}` | `{user-id}` AND `{item-id}` | " |
-| `GET /users/{user-id}/drive/root:/{item-path}` | `{user-id}` AND `{item-path}` | " |
-| `GET /me/insights/trending/{id}/resource` | `insight-type` is `trending` AND `{id}` | Sites.Read.All |
-| `GET /users/{id or userPrincipalName}/insights/trending/{id}/resource` | `{user-id or upn}` AND `insight-type` is `trending` AND `{id}` | " |
-| `GET /me/insights/used/{id}/resource` | `insight-type` is `used` AND `{id}` | " |
-| `GET /users/{id or userPrincipalName}/insights/used/{id}/resource` | `{user-id or upn}` AND `insight-type` is `used` AND `{id}` | " |
-| `GET /me/insights/shared/{id}/resource` | `insight-type` is `shared` AND `{id}` | " |
-| `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource` | `{user-id or upn}` AND `insight-type` is `shared` AND `{id}` | " |
+| API | Configuration | Permission Scopes |
+| --- | ------------- | ----------------- |
+| `GET /drives/{drive-id}/items/{item-id}` | Developer provides `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All |
+| `GET /drives/{drive-id}/root:/{item-path}` | Developer provides `{drive-id}` AND `{item-path}` | " |
+| `GET /groups/{group-id}/drive/items/{item-id}` | Developer provides `{group-id}` AND `{item-id}` | " |
+| `GET /groups/{group-id}/drive/root:/{item-path}` | Developer provides `{group-id}` AND `{item-path}` | " |
+| `GET /me/drive/items/{item-id}` | Developer provides ONLY `{item-id}` | " |
+| `GET /me/drive/root:/{item-path}` | Developer provides ONLY `{item-path}` | " |
+| `GET /sites/{site-id}/drive/items/{item-id}` | Developer provides `{site-id}` AND `{item-id}` | " |
+| `GET /sites/{site-id}/drive/root:/{item-path}` | Developer provides `{site-id}` AND `{item-path}` | " |
+| `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem` | Developer provides `{site-id}` AND `{list-id}` AND `{item-id}` | " |
+| `GET /users/{user-id}/drive/items/{item-id}` | Developer provides `{user-id}` AND `{item-id}` | " |
+| `GET /users/{user-id}/drive/root:/{item-path}` | Developer provides `{user-id}` AND `{item-path}` | " |
+| `GET /me/insights/trending/{insight-id}/resource` | `insight-type` is set to `trending` AND developer provides `{insight-id}` | Sites.Read.All |
+| `GET /users/{id or userPrincipalName}/insights/trending/{insight-id}/resource` | Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `trending` | " |
+| `GET /me/insights/used/{id}/resource` | `insight-type` is set to `used` AND developer provides `{insight-id}` | " |
+| `GET /users/{id or userPrincipalName}/insights/used/{id}/resource` | Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `used` | " |
+| `GET /me/insights/shared/{id}/resource` | `insight-type` is `shared` AND developer provides `{insight-id}` | " |
+| `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource` | Developer provides `{user-id or upn}` AND `{insight-id}` AND `insight-type` is set to `shared` | " |
 
 ## Templates
 
