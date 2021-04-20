@@ -109,9 +109,9 @@ Content-length: 1097
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",

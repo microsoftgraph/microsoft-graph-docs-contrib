@@ -121,7 +121,7 @@ Content-type: application/json
   "id": "pNl5diMjzUS1wmc-yI2LEkGgWqFFrFdLhG2Ly2CysL4",
   "deletedDateTime": null,
   "appRoleId": "00000000-0000-0000-0000-000000000000",
-  "createdDateTime": "2021-02-19T17:55:08.3369542Z",
+  "creationTimestamp": "2021-02-19T17:55:08.3369542Z",
   "principalDisplayName": "Young techmakers",
   "principalId": "7679d9a4-2323-44cd-b5c2-673ec88d8b12",
   "principalType": "Group",
@@ -129,6 +129,8 @@ Content-type: application/json
   "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
 }
 ```
+
+In this example, note that the value used as the user **id** in the request URL (`cde330e5-2150-4c11-9c5b-14bfdc948c79`) is the same as the **principalId** property in the body.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

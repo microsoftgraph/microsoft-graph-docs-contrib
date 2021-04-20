@@ -65,7 +65,7 @@ Content-type: application/json
 Content-length: 300
 
 {
-  "name": "ConnectorName",
+  "displayName": "ConnectorName",
   "fullyQualifiedDomainName": "CONNECTOR-MACHINE",
   "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
   "appVersion": "0.19.7338.23496",
@@ -76,21 +76,6 @@ Content-length: 300
   }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-connector-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-connector-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-connector-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-connector-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -110,7 +95,7 @@ Content-length: 406
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/connectors/$entity",
   "id": "9953d245-3f6e-418c-a438-67f50e69a430",
-  "name": "ConnectorName",
+  "displayName": "ConnectorName",
   "fullyQualifiedDomainName": "CONNECTOR-MACHINE",
   "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
   "appVersion": "0.19.7338.23496",
@@ -129,9 +114,9 @@ Content-length: 406
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",

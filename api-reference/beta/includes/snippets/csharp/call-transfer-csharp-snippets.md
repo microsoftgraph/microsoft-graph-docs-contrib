@@ -11,21 +11,19 @@ var transferTarget = new InvitationParticipantInfo
 	EndpointType = EndpointType.Default,
 	Identity = new IdentitySet
 	{
-		User = new Identity
+		AdditionalData = new Dictionary<string, object>()
 		{
-			Id = "550fae72-d251-43ec-868c-373732c2704f",
-			TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47",
-			DisplayName = "Heidi Steen"
+			{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
 		}
 	},
-	LanguageId = "languageId-value",
-	Region = "region-value",
-	ReplacesCallId = "replacesCallId-value"
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"languageId", "languageId-value"},
+		{"region", "region-value"}
+	}
 };
 
-var clientContext = "9e90d1c1-f61e-43e7-9f75-d420159aae08";
-
-await graphClient.Communications.Calls["{id}"]
+await graphClient.Communications.Calls["{call-id}"]
 	.Transfer(transferTarget)
 	.Request()
 	.PostAsync();
