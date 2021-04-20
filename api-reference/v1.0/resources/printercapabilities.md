@@ -50,7 +50,7 @@ None.
 
 ## Media Size values
 
-|Member|
+|Value|
 |:---|
 |A3|
 |A4|
