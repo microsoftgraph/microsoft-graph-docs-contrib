@@ -46,9 +46,7 @@ The following is a JSON representation of the resource.
 {
   "dialinUrl": "String",
   "conferenceId": "String",
-  "tollFreeNumber": "String",
   "tollFreeNumbers": ["String"],
-  "tollNumber": "String",
   "tollNumbers": ["String"]
 }
 ```

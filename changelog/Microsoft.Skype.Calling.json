@@ -9,6 +9,14 @@
             "ChangeType": "Addition",
             "Description": "Added the **tollNumbers** and **tollFreeNumbers** properties to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
             "Target": "audioConferencing"
+          },
+          {
+            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+            "ApiChange": "Resource",
+            "ChangedApiName": "audioConferencing",
+            "ChangeType": "Removal",
+            "Description": "Deprecated the **tollNumber** and **tollFreeNumber** properties of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+            "Target": "audioConferencing"
           }
         ],
         "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
