@@ -42,15 +42,15 @@ For sending in MIME content for our message-related actions, we are adding an op
 ## Use cases
 | Use cases | Resources |
 | --------- | --------- |
-| Create a message draft | [createMessage](../api/user-post-messages.md) |
-| Update a message draft| [updateMessage](../api/message-update.md) |
-| Send an email | [sendMail](../api/message-send.md) |
-| Reply to a message | [reply](../api/message-reply.md) |
-| Create a draft of a reply to a message | [createReply](../api/message-createreply.md) |
-| ReplyAll to a message | [replyAll](../api/message-replyall.md) | 
-| Create a draft of a replyAll to a message | [createReplyAll](../api-reference/api/message-createreplyall.md) |
-| Forward a message | [forward](../api-reference/api/message-forward.md) |
-| Create a draft of a forward to a message | [createForward](../api-reference/api/message-createforward.md) | 
+| Create a message draft | [createMessage](/graph/api/user-post-messages.md) |
+| Update a message draft| [updateMessage](/graph/api/message-update.md) |
+| Send an email | [sendMail](/graph/api/message-send.md) |
+| Reply to a message | [reply](/graph/api/message-reply.md) |
+| Create a draft of a reply to a message | [createReply](/graph/api/message-createreply.md) |
+| ReplyAll to a message | [replyAll](/graph/api/message-replyall.md) | 
+| Create a draft of a replyAll to a message | [createReplyAll](/graph/api-reference/api/message-createreplyall.md) |
+| Forward a message | [forward](/graph/api-reference/api/message-forward.md) |
+| Create a draft of a forward to a message | [createForward](/graph/api-reference/api/message-createforward.md) | 
 
 ## Error conditions and messages
 
