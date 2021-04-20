@@ -136,7 +136,6 @@ Content-Type: application/json
     "displayName": "Chris Green",
     "userPrincipalName": "ChrisGreen@shubhamermtest2.ccsctp.net"
   },
-  "downloadUri": null,
   "scopes": [
     {
       "@odata.type": "#microsoft.graph.accessReviewQueryScope",
