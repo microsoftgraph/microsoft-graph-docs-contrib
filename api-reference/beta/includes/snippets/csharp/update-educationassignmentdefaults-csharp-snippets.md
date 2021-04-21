@@ -12,7 +12,7 @@ var educationAssignmentDefaults = new EducationAssignmentDefaults
 	NotificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 };
 
-await graphClient.Education.Classes["{id}"].AssignmentDefaults
+await graphClient.Education.Classes["{educationClass-id}"].AssignmentDefaults
 	.Request()
 	.UpdateAsync(educationAssignmentDefaults);
 
