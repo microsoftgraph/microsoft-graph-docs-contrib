@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const identityProviders = {
-  @odata.id: "https://graph.microsoft.com/beta/identityProviders/{id}"
+  '@odata.id': 'https://graph.microsoft.com/beta/identityProviders/{id}'
 };
 
-let res = await client.api('/identity/b2cUserFlows/{id}/identityProviders/$ref')
+await client.api('/identity/b2cUserFlows/{id}/identityProviders/$ref')
 	.version('beta')
 	.update(identityProviders);
 

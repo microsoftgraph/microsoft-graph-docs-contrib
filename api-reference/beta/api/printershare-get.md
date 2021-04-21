@@ -29,8 +29,8 @@ In addition to the following permissions, the user or app's tenant must have an 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/shares/{id}
-GET /print/printers/{id}/share
+GET /print/shares/{printerShareId}
+GET /print/printers/{printerId}/shares/{printerShareId}
 ```
 
 ## Optional query parameters

@@ -3,7 +3,7 @@ title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of serviceprincipal object."
 author: "sureshja"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -118,6 +118,7 @@ Content-type: application/json
   "replyUrls": [],
   "servicePrincipalNames": [],
   "servicePrincipalType": null,
+  "signInAudience": "AzureADandPersonalMicrosoftAccount",
   "tags": [],
   "tokenEncryptionKeyId": null
 }
