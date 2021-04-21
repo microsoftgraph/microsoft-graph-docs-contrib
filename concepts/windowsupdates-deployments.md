@@ -22,7 +22,7 @@ Deployments have the following key aspects:
 
 Because content and audience are key to the definition of a deployment, both are required to be assigned at the time of creation. Content and audience assignments cannot be changed later, however, device membership within an audience can.
 
-To learn more about creating a deployment, see [Deploy an update using the Windows Update for Business deployment service](windowsupdates-deploy-update.md) and [Deploy an expedited update using the Windows Update for Business deployment service](windowsupdates-deploy-expedited-update.md).
+To learn more about creating a deployment, see [Deploy a feature update using the Windows Update for Business deployment service](windowsupdates-deploy-update.md) and [Deploy an expedited update using the Windows Update for Business deployment service](windowsupdates-deploy-expedited-update.md).
 
 ## Configure settings
 
