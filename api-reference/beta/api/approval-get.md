@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of an [approval](../resources/approval.md) object.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieves the properties of an [approval](../resources/approval.md) object.  This call can be made by an approver, providing the identifier of the [access package assignment request](accesspackageassignmentrequest.md).
 
 ## Permissions
 
