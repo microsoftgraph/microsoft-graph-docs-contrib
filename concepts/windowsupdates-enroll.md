@@ -15,7 +15,7 @@ Today, the deployment service supports enrollment in management of Windows 10 fe
 
 ## Enroll the device in update management
 
-When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, device will not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a deployment. Devices are automatically registered with the service when enrolled in management by the service (i.e. an Azure AD Device object is automatically created if it does not already exist).
+When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, device will not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a [deployment](windowsupdates-deployments.md). Devices are automatically registered with the service when enrolled in management by the service (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice.md) object is automatically created if it does not already exist).
 
 ### Request
 
@@ -75,7 +75,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-You can unregister a device from the service completely by deleting the device object. When a device is unregistered, it is automatically unenrolled from management by the service for all update categories and removed from all deployment audiences and updatable asset groups.
+You can unregister a device from the service completely by deleting the device object. When a device is unregistered, it is automatically unenrolled from management by the service for all update categories and removed from all deployment audiences and [updatableAsset]((/graph/api/resources/windowsupdates-updatableasset.md)) groups.
 
 ### Request
 

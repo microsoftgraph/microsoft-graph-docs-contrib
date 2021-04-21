@@ -1,7 +1,7 @@
 ---
 title: "Windows updates API overview"
 description: "The Windows Update for Business deployment service gives control to your organization over the updates offered to your devices."
-author: "aarononeal"
+author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
 doc_type: conceptualPageType
@@ -19,7 +19,7 @@ The Windows Update for Business deployment service provides control over device 
 
 Today, the deployment service supports management of Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service, please see [Overview of the deployment service]().
 
-## Prerequisites
+## Prerequisites    
 
 To use the deployment service, your organization must have one of the following subscriptions:
 * Windows 10 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)

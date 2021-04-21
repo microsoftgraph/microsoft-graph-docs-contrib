@@ -36,7 +36,7 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|An identifier for the group. Key. Not nullable. Read-only. Returned by default. Inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md)|
+|id|String|An identifier for the group. Key. Not nullable. Read-only. Returned by default. Inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md).|
 
 ## Relationships
 |Relationship|Type|Description|

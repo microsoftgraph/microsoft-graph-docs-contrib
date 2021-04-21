@@ -36,7 +36,7 @@ GET /admin/windows/updates/catalog/entries
 ## Optional query parameters
 This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
 
-To use a query parameter on a property that is not inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md), include the full resource type for the property. For example, to filter on [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) `version`, use `$filter=microsoft.graph.windowsUpdates.featureUpdateCatalogEntry/version...`.
+To use a query parameter on a property that is not inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md), include the full resource type for the property. For example, to filter on [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) `version`, use `$filter=microsoft.graph.windowsUpdates.featureUpdateCatalogEntry/version`.
 
 ## Request headers
 |Name|Description|
