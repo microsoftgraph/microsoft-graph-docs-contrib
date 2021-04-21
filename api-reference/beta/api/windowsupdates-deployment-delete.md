@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code.
+If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -59,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deplo
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

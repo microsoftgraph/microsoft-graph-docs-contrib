@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
