@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.window
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

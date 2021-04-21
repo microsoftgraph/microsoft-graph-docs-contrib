@@ -18,7 +18,7 @@ A reason for a particular deployment state.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|value|deploymentStateReasonValue|Specifies a reason for the deployment state. Read-only. Possible values are: `scheduledByOfferWindow`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`.|
+|value|deploymentStateReasonValue|Specifies a reason for the deployment state. Possible values are: `scheduledByOfferWindow`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`. Read-only.|
 
 ## Relationships
 None.
