@@ -19,7 +19,7 @@ In a deployment, the same **softwareUpdateReference** could result in devices re
 
 All software update references exist as one of the following derived types: [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md),  [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md), [expeditedQualityUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md).
 
-Inherits from [deployableContent](../resources/windowsupdates-deployablecontent.md).
+Inherits from [deployableContent](../resources/windowsupdates-deployablecontent.md). Base type for [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).
 
 ## Properties
 None.

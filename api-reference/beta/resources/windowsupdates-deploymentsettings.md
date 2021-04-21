@@ -15,6 +15,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 Settings controlling when and how to deploy an update.
 
+Base type of [windowsDeploymentSettings](../resources/windowsupdates-windowsdeploymentsettings.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

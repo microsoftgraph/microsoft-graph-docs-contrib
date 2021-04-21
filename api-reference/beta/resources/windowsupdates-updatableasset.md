@@ -17,6 +17,8 @@ Represents an asset that can receive updates.
 
 All updatable assets exist as one of the following derived types: [azureADDevice](../resources/windowsupdates-azureaddevice.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
+Base type of [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) and [azureADDevice](../resources/windowsupdates-azureaddevice.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

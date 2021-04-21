@@ -19,7 +19,7 @@ In a deployment, the same Windows update reference could result in devices recei
 
 All Windows update references exist as one of the following derived types: [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md),  [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md), [expeditedQualityUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md).
 
-Inherits from [softwareUpdateReference](../resources/windowsupdates-softwareupdatereference.md).
+Inherits from [softwareUpdateReference](../resources/windowsupdates-softwareupdatereference.md). Base type for [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md),  [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md), and [expeditedQualityUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md).
 
 ## Properties
 None.

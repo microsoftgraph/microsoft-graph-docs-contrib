@@ -15,6 +15,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents an enrollment into an area of the service.
 
+Base type of [updateManagementEnrollment](../resources/windowsupdates-updatemanagementenrollment.md).
+
 ## Properties
 None.
 

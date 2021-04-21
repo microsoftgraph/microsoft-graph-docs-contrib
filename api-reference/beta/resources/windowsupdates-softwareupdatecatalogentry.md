@@ -15,9 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Metadata for a software update that can be approved for deployment.
 
-All software update catalog entries exist as one of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) and [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).
-
-Inherits from [catalogEntry](../resources/windowsupdates-catalogentry.md).
+Inherits from [catalogEntry](../resources/windowsupdates-catalogentry.md). Base type for [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) and [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).
 
 <!-- ## Methods
 |Method|Return type|Description|

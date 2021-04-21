@@ -15,7 +15,6 @@ Namespace: microsoft.graph.windowsUpdates
 
 Settings controlling when and how to deploy a Windows 10 update.
 
-
 Inherits from [deploymentSettings](../resources/windowsupdates-deploymentsettings.md).
 
 ## Properties
