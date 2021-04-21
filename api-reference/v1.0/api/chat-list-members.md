@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |---------|-------------|
 |Delegated (work or school account)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| Not supported. |
+|Application| ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -56,15 +56,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a list of [conversationMember](../resources/conversationmember.md) objects in the response body.
 
-> [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#missing-properties-for-chat-members).
-
 ## Example
 
 ### Request
 
 Here is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,24 +71,22 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d@unq.gbl.spaces/members
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-conversation-members-1-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-conversation-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-conversation-members-1-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-conversation-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-conversation-members-1-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-conversation-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-conversation-members-1-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-conversation-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 
@@ -107,7 +101,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
@@ -116,7 +109,7 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "roles": [ "owner" ],
+            "roles": [],
             "displayName": "John Doe",
             "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
             "email": null,
@@ -126,7 +119,7 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
-            "roles": [ "owner" ],
+            "roles": [],
             "displayName": "Bart Hogan",
             "userId": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
             "email": null,
@@ -136,7 +129,7 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-            "roles": [ "owner" ],
+            "roles": [],
             "displayName": "Minna Pham",
             "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
             "email": null,
