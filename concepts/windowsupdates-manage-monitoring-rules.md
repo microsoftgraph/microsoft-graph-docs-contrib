@@ -7,15 +7,22 @@ ms.prod: "w10"
 doc_type: conceptualPageType
 ---
 
-# Manage monitoring rules for a deployment using the Windows Update for Business deployment service
+# Manage monitoring rules for a feature update deployment using the Windows Update for Business deployment service
 
-For deployments initiated by the deployment service, you can use monitoring rules configure alerts and automated actions based on deployment signals.
+For deployments initiated by the deployment service, you can use a monitoring rule to configure alerts and automated actions based on deployment signals.
 
 Monitoring rules are compatible with deployments of Windows 10 feature updates.
 
 ## Step 1: Create a monitoring rule
 
-You can create a monitoring rule for a deployment in its monitoring settings. Each deployment can have one active monitoring rule at a time.
+You can create a monitoring rule for a deployment by configuring the monitoring settings. Each deployment can have one active monitoring rule at a time.
+
+Monitoring rules consist of three components:
+* Signal: the type of update issue to be monitored by the deployment service.
+* Threshold: when this percentage of devices emit the specified Signal, the monitoring rule is triggered.
+* Action: the action to take when the monitoring rule is triggered.
+
+See [monitoringRule resource type](windowsupdates-monitoringrule.md) for more information.
 
 Below is an example of creating a monitoring rule for a deployment at the same time as creating the deployment.
 
@@ -93,12 +100,14 @@ Content-Type: application/json
 ```
 
 ## Step 2: Unpause a deployment that was paused by a monitoring rule
+When a monitoring rule is triggered, it provides the opportunity to investigate update issues that may have lead to the monitoring rule being applied. After investigation, you may wish to resume the deployment. There are two ways to do so: removing the monitoring rule or updating the monitoring rule threshold.
 
+### Example: Resume deployment by removing a monitoring rule
 When a monitoring rule that pauses the deployment is triggered, one way to resume the deployment is to remove the rule.
 
 Below is an example of resuming the deployment by removing the rule.
 
-### Request
+#### Request
 
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
@@ -115,7 +124,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 ``` http
 HTTP/1.1 202 Accepted
@@ -153,11 +162,12 @@ Content-Type: application/json
 }
 ```
 
+### Example: Resume deployment by updating a monitoring rule threshold
 Another way to resume the deployment is to change the threshold of the relevant monitoring rule. When the new threshold is reached, the action (in this case, `pauseDeployment`) will be triggered again. 
 
 Below is an example of resuming the deployment by changing the monitoring rule threshold. This example also illustrates how to edit any existing monitoring rule, even if its threshold has not yet been met, as well as how to create a monitoring rule on a deployment that does not have one.
 
-### Request
+#### Request
 
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
@@ -181,7 +191,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 ``` http
 HTTP/1.1 202 Accepted
