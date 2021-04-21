@@ -33,8 +33,8 @@ Additionally, devices managed by the deployment service must:
 * Have installed Windows 10 version 1709 or later
 
 To fully benefit from the capabilities of the deployment service, we also recommend that:
-* Telemetry be turned on with a minimum setting of Required
-* Set the AllowWUfBCloudProcessing policy to 1
+* Telemetry is turned on with a minimum setting of Required
+* The AllowWUfBCloudProcessing policy is set to 1
 
 ## Enroll devices to be managed
 
@@ -42,9 +42,9 @@ To start using the deployment service, [enroll devices in update management](win
 
 ## Approve and schedule Windows content delivered from Windows Update
 
-The deployment service simplifies reviewing, approving, scheduling, and deploying content for a diverse device ecosystem. The updates catalog provides a view tailored for approvals, helping you focus on approval decisions that matter and avoids the need to sort through deep lists of related updates.
+The deployment service simplifies reviewing, approving, scheduling, and deploying content for a diverse device ecosystem. The updates catalog provides a view tailored for approvals, helping you focus on approval decisions that matter and avoiding the need to sort through deep lists of related updates.
 
-Once you have chosen an update to deploy, you can schedule deployments to start at a future time, or deploy over a period of time. If you choose to deploy an update over a period of time, the deployment service will automatically optimize the order in which devices are offered updates. Ordering is chosen to ensure a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue. 
+Once you have chosen an update to deploy, you can schedule deployments to start at a future time, or deploy over a period of time. If you choose to deploy an update over a period of time, the deployment service will automatically optimize the order in which devices are offered updates. When possible, the service orders devices to ensure that a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue. 
 
 Learn more about the deployment service:
 * [Software updates](windowsupdates-software-updates.md)
@@ -59,8 +59,8 @@ To learn more, see [Deploy an expedited update](windowsupdates-deploy-expedited-
 
 ## Protect devices by default
 
-Enjoy the benefit of [safeguard holds](https://docs.microsoft.com/en-us/windows/deployment/update/safeguard-holds) which prevent devices with a quality or compatibility issue from installing an update, resulting in failure or roll-back otherwise.
+Enjoy the benefit of [safeguard holds](https://docs.microsoft.com/windows/deployment/update/safeguard-holds) which prevent devices with a quality or compatibility issue from installing an update, resulting in failure or rollback otherwise.
 
-Additionally, you can configure monitoring rules that are unique to your organization. These rules can alert or pause a deployment based on device signals such as rollbacks.
+Additionally, you can configure monitoring rules that are unique to your organization. These rules can send an alert or pause a deployment based on device signals such as rollbacks.
 
 To learn more, see [Manage monitoring rules for a deployment](windowsupdates-manage-monitoring-rules.md).
