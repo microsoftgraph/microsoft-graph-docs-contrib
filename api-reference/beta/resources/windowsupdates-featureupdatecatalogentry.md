@@ -23,10 +23,10 @@ Windows 10 feature updates are released bi-annually and contain new features for
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deployableUntilDateTime|DateTimeOffset|The date on which the content was or will no longer be available to deploy using the service. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment using the service. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |displayName|String|	The display name of the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |id|String|The unique identifier for the catalog entry. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
-|releaseDateTime|DateTimeOffset|The date on which the content was or will be released. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|releaseDateTime|DateTimeOffset|The release date for the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |version|String|The version of the feature update. Read-only.|
 
 ## Relationships
