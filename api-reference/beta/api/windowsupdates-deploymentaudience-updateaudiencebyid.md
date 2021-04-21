@@ -63,6 +63,7 @@ If successful, this action returns a `202 Accepted` response code. It does not r
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "deploymentaudience_updateaudiencebyid"
@@ -92,7 +93,7 @@ Content-length: 204
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
