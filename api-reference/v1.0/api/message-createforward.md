@@ -36,10 +36,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 
 ## Request headers
 
-| Name       | Type | Description| Required |
-|:---------------|:--------|:----------|:----------|
-| Authorization  | string  | Bearer {token}.| Yes |
-| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object| No |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {token}. Required |
+| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object. |
 
 ## Request body
 This method does not require a request body. However, for creating a forward draft with MIME content, the content should be provided in the body of the request. 

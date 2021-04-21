@@ -1,5 +1,5 @@
 ---
-title: "Create Message"
+title: "Create message"
 description: "Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut."
 localization_priority: Priority
 author: "abheek-das"
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create Message
+# Create message
 
 Namespace: microsoft.graph
 
@@ -33,11 +33,11 @@ POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 ## Request headers
-| Name       | Type | Description| Required |
-|:---------------|:--------|:----------|:----------|
-| Authorization  | string  | Bearer {token}.| Yes |
-| Content-Length | number | 0. | Yes |
-| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object| Only if sending a new MIME message |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
+| Content-Length | number | 0. Required. |
+| Content-Type | string  | Nature of the data in the body of an entity. Required for new MIME messages. <br/> Use text/plain for MIME content and application/json for a json object|
 
 ## Request body
 In the request body, supply a JSON representation of [message](../resources/message.md) object.

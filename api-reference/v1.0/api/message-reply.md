@@ -42,10 +42,10 @@ POST /me/mailFolders/{id}/messages/{id}/reply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ```
 ## Request headers
-| Name       | Type | Description| Required |
-|:---------------|:--------|:----------|:--------|
-| Authorization  | string  | Bearer {token}.| Yes |
-| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object| Yes |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {token}. Required |
+| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a json object|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
