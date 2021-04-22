@@ -13,7 +13,7 @@ With the Windows Update for Business deployment service, you can deploy Windows 
 
 Expediting a security update overrides Windows Update for Business deferral policies so that the update is installed as quickly as possible. It can be useful when critical security events arise and you need to deploy the latest updates more rapidly than normal. However, while it can help to achieve compliance targets against a specific security update, it is not designed to be used every month. Instead, consider using [compliance deadlines for updates](https://docs.microsoft.com/windows/deployment/update/wufb-compliancedeadlines).
 
-When you deploy an expedited security update to a device, Windows Update offers the specified update to the device if it has not yet received the update. For example, if you deploy the Windows 10 security update released on April 13, 2021 to a device that does not currently have the update, the device receives the expedited update. If the device already has the update, it does not receive the expedited update.
+When you deploy an expedited security update to a device, Windows Update offers the latest applicable update to the device if it has not yet received the update with the specified release date. For example, if you deploy the Windows 10 security update released on April 13, 2021 to a device that does not currently have the update, the device receives an expedited update. If the device already has the specified update or newer, it does not receive an expedited update.
 
 Expedited security updates also have the following characteristics:
 

@@ -199,6 +199,7 @@ items:
             href: intune-concept-overview.md
             displayName: Intune
           - name: Operating system updates (preview)
+            displayName: Windows updates
             items:
               - name: Overview
                 href: windowsupdates-concept-overview.md
