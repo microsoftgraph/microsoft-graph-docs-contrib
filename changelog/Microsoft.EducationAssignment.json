@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "55c6e37b-93d5-4684-9145-5d36f338faf3",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadBasic,EduAssignments.ReadWriteBasic,EduAssignments.Read,EduAssignments.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for the *EduAssignments.ReadBasic*, *EduAssignments.ReadWriteBasic*, *EduAssignments.Read*, *EduAssignments.ReadWrite* application permissions to get [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta), [educationCategory](https://docs.microsoft.com/en-us/graph/api/resources/educationcategory?view=graph-rest-beta), [educationAssignmentResource](https://docs.microsoft.com/en-us/graph/api/resources/educationassignmentresource?view=graph-rest-beta), [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta), [educationSubmissionResource](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmissionresource?view=graph-rest-beta), [educationRubric](https://docs.microsoft.com/en-us/graph/api/resources/educationrubric?view=graph-rest-beta), [educationAssignmentDefaults](https://docs.microsoft.com/en-us/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta), [educationAssignmentSettings](https://docs.microsoft.com/en-us/graph/api/resources/educationassignmentsettings?view=graph-rest-beta), [educationOutcome](https://docs.microsoft.com/en-us/graph/api/resources/educationoutcome?view=graph-rest-beta) resources.",
+          "Target": "educationAssignment,educationCategory,educationAssignmentResource,educationSubmission,educationSubmissionResource,educationRubric,educationAssignmentDefaults,educationAssignmentSettings,educationOutcome"
+        }
+      ],
+      "Id": "55c6e37b-93d5-4684-9145-5d36f338faf3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-22T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b3c8d772-6774-11eb-bfcb-fe6ee26532c0",
           "ApiChange": "Relationship",
           "ChangedApiName": "assignmentDefaults",
