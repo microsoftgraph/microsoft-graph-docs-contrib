@@ -13,17 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Forward a message, add a comment or modify any updateable properties  
-all in one **forward** call. The message is saved in the Sent Items folder.
+Forward a message in either JSON or MIME format. Add a comment or modify any updateable properties all in one **forward** call. The message is saved in the Sent Items folder.
 
-Alternatively, you can first [create a draft forward message](../api/message-createforward.md) to include a comment or update any message properties, 
-and then [send](../api/message-send.md) the draft message.
+Alternatively, you can first [create a draft forward message](../api/message-createforward.md) to include a comment or update any message properties, and then [send](../api/message-send.md) the draft message.
 
-**Note**
-
-- You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying 
-neither will return an HTTP 400 Bad Request error.
+>[!NOTE]
+> * You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+> * You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,10 +42,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use text/plain for MIME content and application/json for a json object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
+When using JSON format, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -57,15 +53,14 @@ In the request body, provide a JSON object with the following parameters.
 |toRecipients|[recipient](../resources/recipient.md) collection|The list of recipients.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
->[!IMPORTANT]
->For sending MIME content no parameters are required, just paste the MIME string in the body of the request.
+When using MIME content no parameters are required, just paste the MIME string in the body of the request.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-### Example 1: Forward a message
+### Example 1: Forward a message using JSON format
 The following example sets the **isDeliveryReceiptRequested** property to true, adds a comment and forwards the message.
 ##### Request
 Here is an example of the request.
@@ -122,7 +117,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 202 Accepted
 ```
-### Example 2: Forward a message with MIME content
+### Example 2: Forward a message using MIME format
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/forward
 Content-Type: text/plain

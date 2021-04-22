@@ -11,8 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Send a message in the draft folder or a new message with MIME content. The draft message can be a new message draft, reply draft, reply-all draft, or
-a forward draft. The message is then saved in the Sent Items folder.
+Send a [message](../resources/message.md) in the draft folder or a new **message** with MIME content. The draft **message** can be a new message draft, reply draft, reply-all draft, or a forward draft. The message is then saved in the Sent Items folder.
 
 ## Permissions
 
@@ -40,7 +39,7 @@ POST https://graph.microsoft.com/v1.0/me/sendMail
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Length | number | 0. | Yes |
-| Content-Type | string  | Nature of the data in the body of an entity. Required for new MIME messages. <br/> Use text/plain for MIME content and application/json for a json object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required for new MIME messages. <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
 For sending MIME content no parameters are required, just paste the MIME string in the body of the request.
@@ -51,7 +50,7 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 
 ## Examples
 
-### Example 1: Send a draft message
+### Example 1: Send an existing draft message
 
 The following example shows how to call this API.
 
@@ -99,7 +98,7 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-### Example 2: Send a new message with MIME content
+### Example 2: Send a new message using MIME format
 ##### Request
 ```json
 POST https://graph.microsoft.com/v1.0/me/sendMail

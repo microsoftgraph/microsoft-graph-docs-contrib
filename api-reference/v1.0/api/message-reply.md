@@ -11,18 +11,18 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. 
+Reply to the sender of a [message](../resources/message.md) in either JSON or MIME format. Add a comment or modify any updateable properties all in one **reply** call. 
 The message is then saved in the Sent Items folder.
 
 Alternatively, you can first [create a draft reply message](../api/message-createreply.md) to include a comment or update any message properties, 
 and then [send](../api/message-send.md) the reply.
 
-**Note**
-
-- You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), 
+> [!NOTE]
+> * You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+> * If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), 
 you should send the reply to the recipients in **replyTo** and not the recipient in the **from** property. 
 
+When specifying the body in MIME format, include only the MIME content in the request body.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,25 +45,23 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required |
-| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a json object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
-
+When using JSON format, provide a JSON object in the request body with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-> [!IMPORTANT]
-> * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
+When using MIME content no parameters are required, just paste the MIME string in the body of the request.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-### Example 1: Reply to a message
+### Example 1: Reply in JSON format to a message
 The following example includes a comment and adds a recipient to the reply message.
 ##### Request
 Here is an example of the request.
@@ -127,7 +125,7 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-### Exaxmple 2: Reply to a message with MIME content
+### Exaxmple 2: Reply in MIME format to a message
 ##### Request
 ```json
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/reply

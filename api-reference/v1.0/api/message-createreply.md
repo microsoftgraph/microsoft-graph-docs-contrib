@@ -11,7 +11,13 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a draft of the reply to the specified [message](../resources/message.md). You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
+Create a draft to reply to a [message](../resources/message.md) in either JSON or MIME format. You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
+
+> [!NOTE]
+> * You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+> * You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
+
+When specifying the body in MIME format, include only the MIME content in the request body. You must specify the recipients, and any updates to **message** properties in a subsequent **send** operation to forward the draft message.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,20 +40,17 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Name       | Type | Description| 
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required|
-| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object|
+| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-This method does not require a request body. However, for creating a forward draft with MIME content, the content should be provided in the body of the request. 
-
->[!IMPORTANT]
->For sending MIME content no parameters are required, just paste the MIME string in the body of the request.
+This method does not require a request body. However, for creating a reply draft with MIME content, the MIME string should be provided in the body of the request. No parameters are required, just paste the MIME string in the body of the request.
 
 ## Response
 
 If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
 
 ## Examples
-### Example 1: Create a reply draft.
+### Example 1: Create a draft message in JSON format to reply to an existing message.
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
@@ -103,7 +106,7 @@ Content-length: 248
   "bodyPreview": "bodyPreview-value"
 }
 ```
-### Example 2: Create a reply draft with MIME content
+### Example 2: Create a draft message in MIME format to reply to an existing message
 ##### Request
 ```json
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/createreply

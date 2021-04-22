@@ -11,7 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a draft to forward the specified [message](../resources/message.md). You can then [update](../api/message-update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
+Create a draft [message](../resources/message.md) for forwarding an existing one, in either JSON or MIME format. You can then [update](../api/message-update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
+
+When specifying the body in JSON format, you can include a comment, specify recipients, and update any message properties all in one **createForward** call. You can then **send** the draft message.
+
+When specifying the body in MIME format, include only the MIME content in the request body. You can specify the recipients, and any updates to **message** properties in a subsequent **send** operation to forward the draft message.
 
 ## Permissions
 
@@ -39,13 +43,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required |
-| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a json object. |
+| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a JSON object. |
 
 ## Request body
-This method does not require a request body. However, for creating a forward draft with MIME content, the content should be provided in the body of the request. 
-
->[!IMPORTANT]
->For sending MIME content no parameters are required, just paste the MIME string in the body of the request.
+This method does not require a request body. However, for creating a forward draft with MIME content, the MIME string should be provided in the body of the request. No parameters are required.
 
 ## Response
 
@@ -53,7 +54,7 @@ If successful, this method returns `201 Created` response code and [Message](../
 
 ## Examples
 
-### Example 1: Create a forward draft
+### Example 1: Create a draft message in JSON format to forward an existing message
 Here is an example of how to call this API.
 
 ##### Request
@@ -115,7 +116,7 @@ Content-length: 248
 }
 ```
 
-### Example 2 Create a forward draft with MIME content
+### Example 2 Create a draft message in MIME format to forward an existing message
 ##### Request
 ```json
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/createForward

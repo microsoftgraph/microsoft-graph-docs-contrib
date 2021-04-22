@@ -13,12 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
+Use this API to create a draft of a new message in either JSON or MIME format. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 
 While creating the draft in the same **POST** call, you can:
 
 - Include an [attachment](../resources/attachment.md) 
 - Use a [mention](../resources/mention.md) to call out another user in the new message
+
+When specifying the body in MIME format, include only the MIME content in the request body. You must specify the recipients and any updates to **message** properties in a subsequent [send](/graph/api-reference/beta/api/message-send.md) operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,10 +43,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}.|
-| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a json object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-In the request body, supply a JSON representation of the [message](../resources/message.md) object.
+When using JSON format, provide a JSON representation of the [message](../resources/message.md) object.
 
 If you want to use **mention** to call out another user in the new message:
 
@@ -53,12 +55,14 @@ If you want to use **mention** to call out another user in the new message:
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
+When specifying the body in MIME format, include only the MIME content in the request body.
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [message](../resources/message.md) object in the response body.
 
 ## Examples
-### Example 1: Create a message draft
+### Example 1: Create a message draft in JSON format
 ##### Request 1
 Here is an example of the request to create a draft of a new message.
 
@@ -415,7 +419,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a message draft with MIME content
+### Example 2: Create a message draft in MIME format
 ##### Request
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages

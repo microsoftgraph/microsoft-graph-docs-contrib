@@ -9,22 +9,17 @@ doc_type: apiPageType
 
 # message: reply
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. 
-The message is then saved in the Sent Items folder.
+Reply to the sender of a message in either JSON or MIME format. Add a comment or modify any updateable properties all in one **reply** call. The message is then saved in the Sent Items folder.
 
-Alternatively, you can first [create a draft reply message](../api/message-createreply.md) to include a comment or update any message properties, 
-and then [send](../api/message-send.md) the reply.
+Alternatively, you can first [create a draft reply message](../api/message-createreply.md) to include a comment or update any message properties, and then [send](../api/message-send.md) the reply.
 
-**Note**
-
-- You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), 
-you should send the reply to the recipients in **replyTo** and not the recipient in the **from** property. 
-
+>[!NOTE]
+> * You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+> * If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in **replyTo** and not the recipient in the **from** property. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,25 +42,24 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required |
-| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a json object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-To send a json object provide the following parameters:
+When using JSON format, include a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md) | Any writeable properties to update in the reply message.|
 
-> [!IMPORTANT]
-> * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
+When using MIME content no parameters are required, include only the MIME string in the request body.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-### Example 1: Reply to a message
+### Example 1: Reply to a message in JSON format
 The following example includes a comment and adds a recipient to the reply message.
 ##### Request
 Here is an example of the request.
@@ -162,7 +156,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true
 } -->
-```http
+```json
 HTTP/1.1 201 Accepted
 Content-type: application/json
 {

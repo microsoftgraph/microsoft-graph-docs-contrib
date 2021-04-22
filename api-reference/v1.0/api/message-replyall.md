@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Reply to all recipients of a message. The message is then saved in the Sent Items folder.
+Reply to all recipients of a [message](../resources/message.md) in either JSON or MIME format. The message is then saved in the Sent Items folder.
+
+When specifying the body in MIME format, include only the MIME content in the request body.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,21 +39,20 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use text/plain for MIME content and application/json for a json object|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
+When using JSON format, provide a JSON object in the request body with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
 
-> [!IMPORTANT]
-> * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
+When using MIME content no parameters are required, just paste the MIME string in the body of the request.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-### Example 1: Reply-all to a message
+### Example 1: Reply-all in JSON format to a message
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
@@ -99,7 +100,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 ```
-### Example 2: Reply-all to a message with MIME content
+### Example 2: Reply-all in MIME format to a message
 ##### Request
 ```json
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/replyall

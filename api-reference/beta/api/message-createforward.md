@@ -13,14 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a draft forward message to include a comment or update any message properties  
-all in one **createForward** call. You can then [send](../api/message-send.md) the draft message.
+Create a draft [message](/graph/api-reference/beta/resources/message.md) for forwarding an existing one. You can specify the request body in JSON or MIME format. 
 
-**Note**
+When specifying the body in JSON format, you can include a comment, specify recipients and update any message properties all in one **createForward** call. You can then [send](../api/message-send.md) the draft message.
 
-- You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying 
-neither will return an HTTP 400 Bad Request error.
+> [!NOTE]
+> * You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+> * You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
+
+When specifying the body in MIME format, include only the MIME content in the request body. You can specify the recipients, and any updates to **message** properties in a subsequent **send** operation to forward the draft message.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,10 +44,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required|
-| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a json object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-To send a json object provide the following parameters:
+To send a JSON object provide the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -54,8 +55,7 @@ To send a json object provide the following parameters:
 |toRecipients|[recipient](../resources/recipient.md) collection|The list of recipients.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-> [!IMPORTANT]
-> To send MIME content no parameters are required, just paste the MIME string in the body of the request.
+When specifying the body in MIME format, include only the MIME content in the request body.
 
 ## Response
 
@@ -63,7 +63,7 @@ If successful, this method returns `201 Created` response code and [message](../
 
 ## Examples
 
-### Example 1: Create a draft forward message
+### Example 1: Create a draft message in JSON format to forward an existing message
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
@@ -152,7 +152,7 @@ Content-length: 272
 ```
 
 
-### Example 2: Create a draft forward message with MIME content
+### Example 2: Create a draft message in MIME format to forward an existing message
 
 ##### Request
 ```http

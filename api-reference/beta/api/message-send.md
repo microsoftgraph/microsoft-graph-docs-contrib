@@ -1,6 +1,6 @@
 ---
 title: "message: send"
-description: "Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or"
+description: "Send a message in the draft folder or a new MIME message."
 localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send a message in the draft folder or a new MIME message. The draft message can be a new message draft, reply draft, reply-all draft, or
-a forward draft. The message is then saved in the Sent Items folder.
+Send a message in the draft folder or a new MIME message. The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft. The message is then saved in the Sent Items folder.
+
+When sending a new message in MIME format, include only the MIME content in the request body.
 
 ## Permissions
 
@@ -38,21 +39,21 @@ POST https://graph.microsoft.com/v1.0/me/sendMail
 
 ## Request headers
 
-| Name       | Type | Description|
+| Name | Type | Description |
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required |
-| Content-Length | number | 0. | Yes |
-| Content-Type | string  | Nature of the data in the body of an entity. Required for new MIME messages <br/> Use text/plain for MIME content and application/json for a json object.|
+| Content-Length | number | 0. Required |
+| Content-Type | string  | Nature of the data in the body of an entity. Required for new MIME messages <br/> Use text/plain for MIME content and application/json for a JSON object.|
 
 ## Request body
-For sending MIME content no parameters are required, just paste the MIME string in the body of the request.
+For sending an existing draft do not specify a body in the request. For sending a new MIME content no parameters are required, just paste the MIME string in the body of the request.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-### Example 1: Send a draft message
+### Example 1: Send an existing draft message
 
 Here is an example of how to call this API.
 ##### Request

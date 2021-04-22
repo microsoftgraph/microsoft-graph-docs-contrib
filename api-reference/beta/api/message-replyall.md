@@ -13,19 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reply to all recipients of a message by specifying a comment and modifying any updateable properties 
-for the reply, all by using the **replyAll** method. The message is then saved in the Sent Items folder.
+Reply to all recipients of a message in either JSON or MIME format. You can specify a comment and modify any updateable properties of the [message](/graph/api-reference/beta/resources/message.md) in a single **replyAll** call. The message is then saved in the Sent Items folder.
 
-Alternatively, you can first [create a draft reply-all message](../api/message-createreplyall.md) to include a comment or 
-update any message properties, and then [send](../api/message-send.md) the reply.
+Alternatively, you can first [create a draft reply-all message](../api/message-createreplyall.md) to include a comment or update any message properties, and then [send](../api/message-send.md) the reply.
 
-**Note**
-
-- You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- If the **replyTo** property is specified in the original message, per Internet Message Format 
-([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the  
-**replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties. 
-
+>[!NOTE]
+> * You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+> * If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,25 +42,24 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required|
-| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a json object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
+When using JSON format, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
->[!IMPORTANT]
->For sending MIME content no parameters are required, just paste the MIME string in the body of the request.
+When specifying the body in MIME format, include only the MIME content in the request body.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-### Example 1: Reply-all to a message
+### Example 1: Reply-all to a message in JSON format
 The following example includes a comment and adds an attachment to the reply-all message.
 ##### Request
 Here is an example of the request.
@@ -121,7 +114,7 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-### Example 2: Reply-all to a message with MIME content
+### Example 2: Reply-all to a message in MIME format
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/replyall
 Content-Type: text/plain

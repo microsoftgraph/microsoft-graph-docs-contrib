@@ -11,9 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
+Create a draft of a new [message](../resources/message.md) in either JSON or MIME format. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 
 While creating the draft in the same **POST** call, you can include an [attachment](../resources/attachment.md).
+
+When specifying the body in MIME format, include only the MIME content in the request body. You must specify the recipients, and any updates to **message** properties in a subsequent **send** operation to send the draft message.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,22 +39,21 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Length | number | 0. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required for new MIME messages. <br/> Use text/plain for MIME content and application/json for a json object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required for new MIME messages. <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-In the request body, supply a JSON representation of [message](../resources/message.md) object.
+When using JSON format, provide a JSON representation of [message](../resources/message.md) object.
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-> [!IMPORTANT]
-> * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
+When using MIME content no parameters are required, just paste the MIME string in the body of the request.
 
 ## Response
 
 If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
 
 ## Examples
-### Example 1: Create a new message draft
+### Example 1: Create a new message draft using JSON format
 ##### Request 1
 Here is an example of the request.
 
@@ -282,7 +283,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a new message draft with MIME content
+### Example 2: Create a new message draft using MIME format
 ##### Request
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Forward a message. The message is saved in the Sent Items folder.
+Forward a [message](../resources/message.md) in either JSON or MIME format. The **message** is saved in the Sent Items folder.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,25 +34,24 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 | Name       | Type | Description| 
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required |
-| Content-Type | string  | Nature of the data in the body of an entity.  Required. <br/> Use text/plain for MIME content and application/json for a json object|
+| Content-Type | string  | Nature of the data in the body of an entity.  Required. <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
+When using JSON format, provide a JSON object in the request body with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
 |toRecipients|[Recipient](../resources/recipient.md) collection|The list of recipients.|
 
-> [!IMPORTANT]
-> * To send MIME content no parameters are required, just paste the MIME string in the body of the request.
+When using MIME format no parameters are required, just paste the MIME string in the body of the request.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-### Example 1: Forward a message
+### Example 1: Forward a message using JSON format
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
@@ -108,7 +107,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-### Example 2: FOrward a message with MIME content
+### Example 2: Forward a message using MIME content
 ##### Request
 ```json
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/forward
