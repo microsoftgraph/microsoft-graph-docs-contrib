@@ -28,8 +28,8 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 
 > [!CAUTION]
 >
->- **tollFreeNumber** and **tollNumber** are deprecated. Please use **tollFreeNumbers** and **tollNumbers** instead.
->- For backword compatibility, the original **tollFreeNumber** is added to the new **tollFreeNumbers** collection and the original **tollNumber** is added to the new **tollNumbers** collection.
+>- The **tollFreeNumber** and **tollNumber** properties are deprecated. Use the **tollFreeNumbers** and **tollNumbers** properties instead.
+>- For backward compatibility, the original **tollFreeNumber** is added to the new **tollFreeNumbers** collection and the original **tollNumber** is added to the new **tollNumbers** collection.
 
 ## JSON representation
 
