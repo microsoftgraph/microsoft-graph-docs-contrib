@@ -55,7 +55,7 @@ Learn more about the deployment service:
 
 In the case of a critical security issue, you can use the deployment service to bypass a standard update policy and expedite deployment of a security update.
 
-To learn more, see [Deploy an expedited update](windowsupdates-deploy-expedited-update.md).
+To learn more, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).
 
 ## Protect devices by default
 
