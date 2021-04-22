@@ -52,7 +52,7 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
             "id": "bd9554dc-2737-4e3c-b794-fa2b8b3f4a30",
             "displayName": "MM/DD/YYYY - YYYY.MM B Security Updates for Windows 10",
-            "releaseDate": "String (timestamp)",
+            "releaseDateTime": "String (timestamp)",
             "deployableUntilDateTime": null,
             "isExpeditable": true,
             "qualityUpdateClassification": "security"
@@ -61,7 +61,7 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
             "id": "68860630-c2d0-4dd2-8c4b-9b9737ee5081",
             "displayName": "MM/DD/YYYY - YYYY.MM B Security Updates for Windows 10",
-            "releaseDate": "String (timestamp)",
+            "releaseDateTime": "String (timestamp)",
             "deployableUntilDateTime": null,
             "isExpeditable": true,
             "qualityUpdateClassification": "security"
@@ -70,7 +70,7 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
             "id": "aa336b13-db33-4d94-89ea-90e43e4ad30b",
             "displayName": "MM/DD/YYYY - YYYY.MM B Security Updates for Windows 10",
-            "releaseDate": "String (timestamp)",
+            "releaseDateTime": "String (timestamp)",
             "deployableUntilDateTime": null,
             "isExpeditable": true,
             "qualityUpdateClassification": "security"
