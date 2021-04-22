@@ -37,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 |justification|String|Justification left by the reviewer when they made the decision.|
 |principal|[identity](../resources/identity.md)|Every decision item in an access review represents a principal's access to a resource. This property represents details of the principal. For example, if a decision item represents access of User "Bob" to Group "Sales" - The principal is "Bob" and the resource is "Sales". Principals can be of two types - userIdentity and servicePrincipalIdentity.|
 |principalLink|String|**TODO: Add Description**|
-|recommendation|String|A system-generated recommendation for the approval decision. Possible values: `Approve`, `Deny`, or `NoInfoAvailable`.|
+|recommendation|String|A system-generated recommendation for the approval decision based off last interactive sign-in to tenant. Recommend approve if sign-in is within thirty days of start of review. Recommend deny if sign-in is greater than thirty days of start of review. Recommendation not available otherwise. Possible values: `Approve`, `Deny`, or `NoInfoAvailable`.|
 |resource|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|Every decision item in an access review represents a principal's access to a resource. This property represents details of the resource. For example, if a decision item represents access of User "Bob" to Group "Sales" - The principal is Bob and the resource is "Sales". Resources can be of multiple types. See [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|
 |resourceLink|String|**TODO: Add Description**|
 |reviewedBy|[userIdentity](../resources/useridentity.md)| The identifier of the reviewer.|
