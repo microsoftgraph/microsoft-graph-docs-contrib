@@ -22,40 +22,24 @@
           "Id": "9a655490-a232-11eb-8cb0-33bc249d550e",
           "ApiChange": "Resource",
           "ChangedApiName": "educationMakeCodeResource",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **educationMakeCodeResource** resource type.",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **educationMakeCodeResource** resource type and will stop supporting it from May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
           "Target": "educationMakeCodeResource"
-        },
-        {
-          "Id": "9a655490-a232-11eb-8cb0-33bc249d550e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "educationOneNoteResource",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **educationOneNoteResource** resource type.",
-          "Target": "educationOneNoteResource"
-        },
-        {
-          "Id": "9a655490-a232-11eb-8cb0-33bc249d550e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "educationFormResource",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **educationFormResource** resource type.",
-          "Target": "educationFormResource"
         },
         {
           "Id": "9a68f4d9-a232-11eb-8cb0-33bc249d550e",
           "ApiChange": "Property",
           "ChangedApiName": "releasedBy",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **releasedBy** property from the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **releasedBy** property from the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource and will stop returning data on May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
           "Target": "educationSubmission"
         },
         {
           "Id": "9a6b5885-a232-11eb-8cb0-33bc249d550e",
           "ApiChange": "Property",
           "ChangedApiName": "releasedDateTime",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **releasedDateTime** property from the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **releasedDateTime** property from the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource and and will stop returning data on May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
           "Target": "educationSubmission"
         },
         {
