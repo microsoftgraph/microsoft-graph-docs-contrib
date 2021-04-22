@@ -17,7 +17,6 @@ A group of devices that can receive updates.
 
 Members are of the [azureADDevice](../resources/windowsupdates-azureADDevice.md) resource type. An **updatableAssetGroup** resource cannot be a member of another **updatableAssetGroup**.
 
-
 Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 
 ## Methods
@@ -36,7 +35,7 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|An identifier for the group. Key. Not nullable. Read-only. Returned by default. Inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md)|
+|id|String|An identifier for the group. Key. Not nullable. Read-only. Returned by default. Inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md).|
 
 ## Relationships
 |Relationship|Type|Description|

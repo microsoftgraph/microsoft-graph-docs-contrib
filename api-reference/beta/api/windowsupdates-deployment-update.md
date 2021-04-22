@@ -80,7 +80,7 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -147,7 +147,7 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -168,7 +168,7 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
         "value": "offeringByRequest"
       }
-    ]
+    ],
     "requestedValue": "none",
     "value": "offering"
   },

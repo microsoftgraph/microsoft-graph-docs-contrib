@@ -15,22 +15,15 @@ Namespace: microsoft.graph.windowsUpdates
 
 Metadata for a software update that can be approved for deployment.
 
-All software update catalog entries exist as one of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) and [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).
-
-Inherits from [catalogEntry](../resources/windowsupdates-catalogentry.md).
-
-<!-- ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List softwareUpdateCatalogEntries](../api/softwareupdatecatalogentry-list.md)|[softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md) collection|Get a list of the [softwareUpdateCatalogEntry](../resources/softwareupdatecatalogentry.md) objects and their properties.| -->
+Inherits from [catalogEntry](../resources/windowsupdates-catalogentry.md). Base type for [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) and [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deployableUntilDateTime|DateTimeOffset|The date on which the content was or will no longer be available to deploy using the service. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
-|displayName|String|The display name of the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
-|id|String|The unique identifier for the catalog entry. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
-|releaseDateTime|DateTimeOffset|The date on which the content was or will be released. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment using the service. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|displayName|String|The display name of the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|id|String|The unique identifier for the catalog entry. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
+|releaseDateTime|DateTimeOffset|The release date for the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 
 ## Relationships
 None.

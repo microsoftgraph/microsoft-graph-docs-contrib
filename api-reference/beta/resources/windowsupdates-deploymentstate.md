@@ -19,8 +19,8 @@ Describes and controls the current state of a deployment.
 |Property|Type|Description|
 |:---|:---|:---|
 |reasons|[microsoft.graph.windowsUpdates.deploymentStateReason](../resources/windowsupdates-deploymentstatereason.md) collection|Specifies the reasons the deployment has its state value. Read-only.|
-|requestedValue|requestedDeploymentStateValue|Specifies the requested state of the deployment. Possible values are: `none`, `paused`.|
-|value|deploymentStateValue|Specifies the state of the deployment. Read-only. Possible values are: `scheduled`, `offering`, `paused`.|
+|requestedValue|microsoft.graph.windowsUpdates.requestedDeploymentStateValue|Specifies the requested state of the deployment. Supports a subset of the values for **requestedDeploymentStateValue**. Possible values are: `none`, `paused`.|
+|value|microsoft.graph.windowsUpdates.deploymentStateValue|Specifies the state of the deployment. Supports a subset of the values for **deploymentStateValue**. Possible values are: `scheduled`, `offering`, `paused`. Read-only.|
 
 ## Relationships
 None.

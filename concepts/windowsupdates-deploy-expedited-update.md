@@ -11,9 +11,11 @@ doc_type: conceptualPageType
 
 With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports deployments of Windows 10 feature updates and expedited security updates. This topic focuses on deployments of expedited security updates. For information about deploying feature updates, see [Deploy a feature update](windowsupdates-deploy-update.md).
 
-Expediting a security update overrides Windows Update for Business deferral policies so that the update is installed as quickly as possible. It can be useful when critical security events arise and you need to deploy the latest updates more rapidly than normal. However, while it can help to achieve compliance targets against a specific security update, it is not designed to be used every month.
+Expediting a security update overrides Windows Update for Business deferral policies so that the update is installed as quickly as possible. It can be useful when critical security events arise and you need to deploy the latest updates more rapidly than normal. However, while it can help to achieve compliance targets against a specific security update, it is not designed to be used every month. Instead, consider using [compliance deadlines for updates](https://docs.microsoft.com/windows/deployment/update/wufb-compliancedeadlines).
 
-Expedited security updates have the following characteristics:
+When you deploy an expedited security update to a device, Windows Update offers the specified update to the device if it has not yet received the update. For example, if you deploy the Windows 10 security update released on April 13, 2021 to a device that does not currently have the update, the device receives the expedited update. If the device already has the update, it does not receive the expedited update.
+
+Expedited security updates also have the following characteristics:
 
 * The update starts right away rather than waiting for the next regular update scan, which occurs once every 22 hours by default.
 * The update downloads and installs as quickly as possible.
@@ -53,7 +55,7 @@ Content-Type: application/json
             "releaseDate": "String (timestamp)",
             "deployableUntilDateTime": null,
             "isExpeditable": true,
-            "classification": "security"
+            "qualityUpdateClassification": "security"
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
@@ -62,7 +64,7 @@ Content-Type: application/json
             "releaseDate": "String (timestamp)",
             "deployableUntilDateTime": null,
             "isExpeditable": true,
-            "classification": "security"
+            "qualityUpdateClassification": "security"
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
@@ -71,7 +73,7 @@ Content-Type: application/json
             "releaseDate": "String (timestamp)",
             "deployableUntilDateTime": null,
             "isExpeditable": true,
-            "classification": "security"
+            "qualityUpdateClassification": "security"
         }
     ]
 }
@@ -81,7 +83,7 @@ Content-Type: application/json
 
 A deployment specifies content to deploy, how and when to deploy the content, and the targeted devices. For quality updates, the content is specified using a target compliance date. When a deployment is created, a deployment audience is automatically created as a relationship.
 
-When you deploy an expedited security update to a device, Windows Update will offer an update that brings the device above the minimum compliance level specified. Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices will meet the specified security update compliance standard. This behavior of offering the latest available, indicated by the property `equivalentContent` being set to the default value `latestSecurity`, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
+When you deploy an expedited security update to a device, Windows Update will offer an update that brings the device above the minimum compliance level specified. Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices will meet the specified security update compliance standard. This behavior of offering the latest applicable update, indicated by the property `equivalentContent` being set to the default value `latestSecurity`, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
 
 You can configure the device restart grace period using the property `daysUntilForcedReboot` in the deployment's user experience settings. The grace period sets the amount of time after installation that the user can control the timing of when the device restarts. If the device has not restarted by the time the grace period expires, it restarts automatically.
 
@@ -152,7 +154,7 @@ Content-Type: application/json
 
 After a deployment is created, you can assign devices to the deployment audience. Devices can be assigned directly, or via updatable asset groups. Once the deployment audience is successfully updated, Windows Update will start offering the update to the relevant devices according to the deployment's settings.
 
-Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (i.e. an azureADDevice object is automatically created if it does not already exist).
+Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice.md) object is automatically created if it does not already exist).
 
 Below is an example of adding updatable asset groups and Azure AD devices as members of the deployment audience, while also excluding a specific Azure AD device.
 

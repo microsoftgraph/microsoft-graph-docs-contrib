@@ -17,13 +17,12 @@ Represents Windows 10 quality update content.
 
 In a deployment, the same quality update reference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
 
-
-Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).
+Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md). Base type of [expeditedQualityUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|classification|qualityUpdateClassification|Specifies the classification of the referenced content. Possible values are: `security`.|
+|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Specifies the classification of the referenced content. Supports a subset of the values for **qualityUpdateClassification**. Possible values are: `security`.|
 |releaseDateTime|DateTimeOffset|Specifies a quality update in the given servicingChannel with the given classification by date (i.e. the last update published on the specified date). Default value is security.|
 
 ## Relationships

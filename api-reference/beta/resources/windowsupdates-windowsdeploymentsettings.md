@@ -15,14 +15,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 Settings controlling when and how to deploy a Windows 10 update.
 
-
 Inherits from [deploymentSettings](../resources/windowsupdates-deploymentsettings.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|monitoring|[microsoft.graph.windowsUpdates.monitoringSettings](../resources/windowsupdates-monitoringsettings.md)|Settings governing conditions to monitor and automated actions to take. Inherited from [deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|
-|rollout|[microsoft.graph.windowsUpdates.rolloutSettings](../resources/windowsupdates-rolloutsettings.md)|Settings governing how the content is rolled out. Inherited from [deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|
+|monitoring|[microsoft.graph.windowsUpdates.monitoringSettings](../resources/windowsupdates-monitoringsettings.md)|Settings governing conditions to monitor and automated actions to take. Inherited from [deploymentSettings](../resources/windowsupdates-deploymentsettings.md).|
+|rollout|[microsoft.graph.windowsUpdates.rolloutSettings](../resources/windowsupdates-rolloutsettings.md)|Settings governing how the content is rolled out. Inherited from [deploymentSettings](../resources/windowsupdates-deploymentsettings.md).|
 |userExperience|[microsoft.graph.windowsUpdates.userExperienceSettings](../resources/windowsupdates-userexperiencesettings.md)|Settings governing the user's update experience on a device.|
 
 ## Relationships

@@ -17,13 +17,15 @@ Metadata for a piece of content that can be approved for deployment.
 
 All catalog entries exist as one of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) and [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).
 
+Base type for [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deployableUntilDateTime|DateTimeOffset|The date on which the content was or will no longer be available to deploy using the service. Read-only.|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available to deploy using the service. Read-only.|
 |displayName|String|The display name of the content. Read-only.|
 |id|String|The unique identifier for the catalog entry. Read-only.|
-|releaseDateTime|DateTimeOffset|The date on which the content was or will be released. Read-only.|
+|releaseDateTime|DateTimeOffset|The release date for the content. Read-only.|
 
 ## Relationships
 None.

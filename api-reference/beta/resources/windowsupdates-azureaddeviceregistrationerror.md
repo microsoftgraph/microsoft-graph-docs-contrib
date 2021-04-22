@@ -21,7 +21,7 @@ Inherits from [updatableAssetError](../resources/windowsupdates-updatableasseter
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|reason|azureADDeviceRegistrationErrorReason|The reason why the registration encountered an error. Possible values are: `invalidGlobalDeviceId`, `invalidAzureADDeviceId`, `missingTrustType`, `invalidAzureADJoin`.|
+|reason|microsoft.graph.windowsUpdates.azureADDeviceRegistrationErrorReason|The reason why the registration encountered an error. Possible values are: `invalidGlobalDeviceId`, `invalidAzureADDeviceId`, `missingTrustType`, `invalidAzureADJoin`.|
 
 ## Relationships
 None.

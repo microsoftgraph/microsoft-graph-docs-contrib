@@ -15,12 +15,12 @@ Monitoring rules are compatible with deployments of Windows 10 feature updates.
 
 ## Step 1: Create a monitoring rule
 
-You can create a monitoring rule for a deployment by configuring the monitoring settings. Each deployment can have one active monitoring rule at a time.
+You can create a monitoring rule for a deployment by configuring the monitoring settings. Each [deployment](windowsupdates-deployments.md) can have one active monitoring rule at a time.
 
 Monitoring rules consist of three components:
-* Signal: the type of update issue to be monitored by the deployment service.
-* Threshold: when this percentage of devices emit the specified Signal, the monitoring rule is triggered.
-* Action: the action to take when the monitoring rule is triggered.
+* **signal**: The type of update issue to be monitored by the deployment service.
+* **threshold**: When this percentage of devices emit the specified signal, the monitoring rule is triggered.
+* **action**: The action to take when the monitoring rule is triggered.
 
 See [monitoringRule resource type](windowsupdates-monitoringrule.md) for more information.
 
