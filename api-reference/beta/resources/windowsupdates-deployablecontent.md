@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents content that is deployable by the service.
+Represents content that is deployable by the service. This is an abstract type. 
 
 ## Properties
 None.

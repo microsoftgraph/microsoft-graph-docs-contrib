@@ -30,7 +30,7 @@ Expedited security updates also have the following characteristics:
 
 You can query the deployment service catalog to get a list of updates that can be expedited to devices as content in a deployment.
 
-Security updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type, with a **qualityUpdateClassification** of `security`. All Windows 10 quality updates that are classified as security updates can be expedited and are tagged with the **isExpeditable** property set to `true` to identify them.
+Security updates are represented by the [qualityUpdateCatalogEntry](/graph/api/resources/windowsupdates-qualityupdatecatalogentry) type, with a **qualityUpdateClassification** of **security**. All Windows 10 quality updates that are classified as security updates can be expedited and are tagged with the **isExpeditable** property set to **true** to identify them.
 
 Below is an example of querying for all Windows 10 security updates that can be deployed as expedited updates by the deployment service. Microsoft recommends to only show the three most current updates, so the example includes `$top=3`.
 
@@ -83,11 +83,11 @@ Content-Type: application/json
 
 A deployment specifies content to deploy, how and when to deploy the content, and the targeted devices. For quality updates, the content is specified using a target compliance date. When a deployment is created, a deployment audience is automatically created as a relationship.
 
-When you deploy an expedited security update to a device, Windows Update will offer an update that brings the device above the minimum compliance level specified. Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices will meet the specified security update compliance standard. This behavior of offering the latest applicable update, indicated by the property `equivalentContent` being set to the default value `latestSecurity`, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
+When you deploy an expedited security update to a device, Windows Update offers an update that brings the device above the minimum compliance level specified. Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices meet the specified security update compliance standard. This behavior of offering the latest applicable update, indicated by the property **equivalentContent** being set to the default value **latestSecurity**, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
 
-You can configure the device restart grace period using the property `daysUntilForcedReboot` in the deployment's user experience settings. The grace period sets the amount of time after installation that the user can control the timing of when the device restarts. If the device has not restarted by the time the grace period expires, it restarts automatically.
+You can configure the device restart grace period using the property **daysUntilForcedReboot** in the deployment's user experience settings. The grace period sets the amount of time after installation that the user can control the timing of when the device restarts. If the device has not restarted by the time the grace period expires, it restarts automatically.
 
-Below is an example of creating a deployment for an expedited quality update. The targeted devices will be specified in the next step.
+Below is an example of creating a deployment for an expedited quality update. The targeted devices are specified in the next step.
 
 ### Request
 
@@ -152,7 +152,7 @@ Content-Type: application/json
 
 ## Step 3: Assign devices to the deployment audience
 
-After a deployment is created, you can assign devices to the deployment audience. Devices can be assigned directly, or via updatable asset groups. Once the deployment audience is successfully updated, Windows Update will start offering the update to the relevant devices according to the deployment's settings.
+After a deployment is created, you can assign devices to the deployment audience. Devices can be assigned directly, or via updatable asset groups. Once the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment's settings.
 
 Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice.md) object is automatically created if it does not already exist).
 
@@ -200,4 +200,4 @@ While a deployment is in progress, you can pause the deployment by updating its 
 
 ## After a deployment
 
-After all devices assigned to a deployment's audience have been initially offered the update, it is possible that not all devices have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, it will continue to make sure that Windows Update is offering the update to the assigned devices whenever they reconnect.
+After all devices assigned to a deployment's audience have been initially offered the update, it is possible that not all devices have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, it continues to make sure that Windows Update is offering the update to the assigned devices whenever they reconnect.

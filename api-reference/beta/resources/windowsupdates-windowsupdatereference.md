@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents specific Windows 10 update content.
+Represents specific Windows 10 update content. This is an abstract type. 
 
 In a deployment, the same Windows update reference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
 

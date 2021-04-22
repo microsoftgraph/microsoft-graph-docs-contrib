@@ -11,13 +11,13 @@ doc_type: conceptualPageType
 
 ## Why use the Windows Update for Business deployment service?
 
-The Windows Update for Business deployment service provides control over device updates through the ability to approve, schedule and safeguard content delivered by Windows Update. It enables IT Professionals and management tool vendors alike to:
+The Windows Update for Business deployment service provides control over device updates through the ability to approve, schedule and safeguard content delivered by Windows Update. IT Professionals and management tool vendors alike can use the deployment service to:
 * Schedule update deployments to begin on a specific date
 * Stage deployments over a period of days or weeks using rich expressions
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update
 * Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s)
 
-Today, the deployment service supports management of Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service, please see [Overview of the deployment service]().
+Today, the deployment service supports managing Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service, please see [Overview of the deployment service]().
 
 ## Prerequisites    
 
@@ -44,7 +44,7 @@ To start using the deployment service, [enroll devices in update management](win
 
 The deployment service simplifies reviewing, approving, scheduling, and deploying content for a diverse device ecosystem. The updates catalog provides a view tailored for approvals, helping you focus on approval decisions that matter and avoiding the need to sort through deep lists of related updates.
 
-Once you have chosen an update to deploy, you can schedule deployments to start at a future time, or deploy over a period of time. If you choose to deploy an update over a period of time, the deployment service will automatically optimize the order in which devices are offered updates. When possible, the service orders devices to ensure that a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue. 
+Once you choose an update to deploy, you can schedule deployments to start at a future time, or deploy over a period of time. If you choose to deploy an update over a period of time, the deployment service automatically optimizes the order in which devices are offered updates. When possible, the service orders devices to ensure that a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue. 
 
 Learn more about the deployment service:
 * [Software updates](windowsupdates-software-updates.md)

@@ -1,6 +1,6 @@
 ---
 title: "Software updates with the Windows Update for Business deployment service"
-description: "Software updates are the primary type of content deployable by the deployment service. In order to find specific updates available for deployment you will refer to entries in a catalog."
+description: "Software updates are the primary type of content deployable by the deployment service. In order to find specific updates available for deployment you can refer to entries in a catalog."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Software updates with the Windows Update for Business deployment service
 
-Software updates are the primary type of content deployable by the deployment service. Look up in a catalog to find specific updates available for [deployment](windowsupdates-deployments.md).
+Software updates are the primary type of content the deployment service deploys. Look up in a catalog to find specific updates available for [deployment](windowsupdates-deployments.md).
 
 You may already be familiar with the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/) which lists software updates for Windows. The deployment service provides its own [catalog](/graph/api/resources/windowsupdates-catalog), and aggregates equivalent updates under a single [catalogEntry](/graph/api/resources/windowsupdates-catalogentry) to simplify decision making and approval workflows.
 
@@ -57,7 +57,7 @@ Feature updates in the deployment service catalog are identified by version. Ent
 |----------|---------------------------------------------------|
 | version  | Feature update version for the Windows 10 release.|
 
-Below are some examples of feature updates in the deployment service's catalog.
+Below are some examples of feature updates in the deployment service catalog.
 
 | Display name                               | Version |
 |--------------------------------------------|---------|
@@ -77,14 +77,14 @@ Quality updates in the deployment service catalog are identified by a release da
 | classification | Classification (security or non-security) of the quality update. |
 | releaseDateTime | Date and time the update was released or refreshed. |
 
-The following table shows the classification mapping between the deployment service's catalog and the Microsoft Update Catalog:
+The following table shows the classification mapping between the deployment service catalog and the Microsoft Update Catalog.
 
 | Deployment service catalog | Microsoft Update Catalog                                                                                                               |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | Security         | Security Update<br>Critical Update<br>Update (if needed as a dependency)<br>Servicing Stack Update (if needed as a dependency) |
 | Non-security     | Update<br>Servicing Stack Update                                                                                               |
 
-The entries from the Microsoft Update Catalog corresponding to a quality update in the deployment service's catalog with `classification = security` and `releaseDateTime = 2021-03-09` might include the following:
+The entries from the Microsoft Update Catalog corresponding to a quality update in the deployment service catalog with `classification = security` and `releaseDateTime = 2021-03-09` might include the following.
 
 | Title                                                                                   | Products                           | Classification   |
 |-----------------------------------------------------------------------------------------|------------------------------------|------------------|

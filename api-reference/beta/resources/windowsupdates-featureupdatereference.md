@@ -17,7 +17,7 @@ Represents Windows 10 feature update content.
 
 In a deployment, the same feature update reference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
 
-Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).
+Inherits from [softwareUpdateReference](../resources/windowsupdates-softwareupdatereference.md).
 
 ## Properties
 |Property|Type|Description|
