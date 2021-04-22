@@ -45,10 +45,7 @@ Represents the capabilities reported by a printer/printerShare.
 |collation|Boolean|True if the printer supports collating when printing muliple copies of a multi-page document; false otherwise.|
 |scalings|[printScaling](enums.md#printscaling-values) collection|Supported print scalings.|
 
-## Relationships
-None.
-
-## Media Size values
+### mediaSizes values
 
 |Value|
 |:---|
@@ -72,6 +69,9 @@ None.
 |Photo l 3.5x5in|
 |Business Card|
 |Photo|
+
+## Relationships
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
