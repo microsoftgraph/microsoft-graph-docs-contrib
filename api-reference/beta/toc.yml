@@ -556,6 +556,8 @@ items:
           href: api/group-list-owners.md
         - name: List photos
           href: api/group-list-photos.md
+        - name: List permission grants
+          href: api/group-list-permissiongrants.md
         - name: Permanently delete group
           href: api/directory-deleteditems-delete.md
         - name: Remove favorite
