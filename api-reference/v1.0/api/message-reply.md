@@ -43,13 +43,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ```
 ## Request headers
 | Name       | Type | Description|
-|:---------------|:--------|:----------|
+|--------------|------|-------|
 | Authorization  | string  | Bearer {token}. Required |
-| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a JSON object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
 When using JSON format, provide a JSON object in the request body with the following parameters.
-| Parameter	   | Type	|Description|
+
+| Parameter | Type | Description |
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
