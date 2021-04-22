@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
-|Delegated (personal Microsoft account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for the service to manage. Supports a subset of the values for **updateCategory**. Possible values are: `feature`.|
 |memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
-|ids|String collection|List of identifiers corresponding to the updatable assets to enroll in update management by the service for the given `updateCategory`.|
+|ids|String collection|List of identifiers corresponding to the **updatableAsset** resources to enroll in update management by the service for the given **updateCategory**.|
 
 
 

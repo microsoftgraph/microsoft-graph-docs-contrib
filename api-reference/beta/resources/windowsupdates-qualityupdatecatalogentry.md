@@ -19,7 +19,6 @@ Windows 10 quality updates are released one or more times per month. These updat
 
 Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -30,6 +29,8 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 |qualityUpdateClassification|microsoft.graph.windowsUpdates.qualityUpdateClassification|The classification on the quality update. Supports a subset of the values for **qualityUpdateClassification**. Possible values are: `all`, `security`, `nonSecurity`. Read-only.|
 |releaseDateTime|DateTimeOffset|The release date of the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 
+## Relationships
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -2300,6 +2300,30 @@ With these permissions, all authentication methods can be read and managed on a 
 * Second factor of multi-factor authentication/MFA (phone numbers)
 * Self-Service Password Reset/SSPR (email address)
 
+## Windows updates permissions
+
+#### Delegated permissions
+
+|Permission|Display String|Description|Admin Consent Required|Microsoft Account Supported|
+|:---|:---|:---|:---|:---|
+|_WindowsUpdates.ReadWrite.All_|Read and write all Windows update deployment settings|Allows the app to read and write all Windows update deployment settings for the organization on behalf of the signed-in user.|Yes|No|
+
+#### Application permissions
+
+|Permission|Display String|Description|Admin Consent Required|
+|:---|:---|:---|:---|
+|_WindowsUpdates.ReadWrite.All_|Read and write all Windows update deployment settings|Allows the app to read and write all Windows update deployment settings for the organization without a signed-in user.|Yes|
+
+### Example usage
+
+#### Delegated
+
+* _WindowsUpdates.ReadWrite.All_: Create a deployment (`POST /beta/admin/windows/updates/deployments`).
+
+#### Application
+
+* _WindowsUpdates.ReadWrite.All_: Create a deployment (`POST /beta/admin/windows/updates/deployments`).
+
 ## Authentication methods policy permissions ([preview](#permissions-availability-status))
 
 #### Delegated permissions

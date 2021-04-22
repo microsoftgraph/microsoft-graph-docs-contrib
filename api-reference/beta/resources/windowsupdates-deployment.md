@@ -27,8 +27,6 @@ Represents the deployment of content to a set of devices.
 |[List audience exclusions](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List exclusions from the deployment audience.|
 |[Update audience members and exclusions](../api/windowsupdates-deploymentaudience-updateaudience.md)|None|Add or remove members and exclusions of the deployment audience.|
 
-
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

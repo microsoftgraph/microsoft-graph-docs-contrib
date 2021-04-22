@@ -36,7 +36,6 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 |[Unenroll azureADDevice from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll devices from update management by the deployment service.|
 |[Unenroll azureADDevice from management (by ID)](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll devices from update management by the deployment service.|
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

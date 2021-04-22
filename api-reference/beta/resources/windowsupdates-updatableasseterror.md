@@ -13,9 +13,14 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An error that prevents the device from being enrolled in update management or receving deployed content.
+An error that prevents the service from enrolling an [azureADDevice](../resources/windowsupdates-azureaddevice.md) in update management or deploying content to the device.
 
 All updatable asset errors exist as one of the following derived types: [azureADDeviceRegistrationError](../resources/windowsupdates-azureaddeviceregistrationerror.md).
+
+This is an abstract type.
+
+## Properties
+None.
 
 ## Relationships
 None.
