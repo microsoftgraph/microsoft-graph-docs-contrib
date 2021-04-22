@@ -97,4 +97,4 @@ Once you have identified the desired update, assign it as content to a deploymen
 
 ## Examples
 
-To see examples of [listing catalog entries](/graph/api/windowsupdates-catalog-list-entries), see [Deploy an update](windowsupdates-deploy-update.md) and [Deploy an expedited update](windowsupdates-deploy-expedited-update.md).
+To see examples of [listing catalog entries](/graph/api/windowsupdates-catalog-list-entries), see [Deploy a feature update](windowsupdates-deploy-update.md) and [Deploy an expedited update](windowsupdates-deploy-expedited-update.md).

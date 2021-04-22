@@ -208,7 +208,7 @@ items:
                 href: windowsupdates-deployments.md
               - name: Enroll in management
                 href: windowsupdates-enroll.md
-              - name: Deploy an update
+              - name: Deploy a feature update
                 href: windowsupdates-deploy-update.md
               - name: Deploy an expedited update
                 href: windowsupdates-deploy-expedited-update.md
