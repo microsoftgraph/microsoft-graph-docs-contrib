@@ -2314,6 +2314,12 @@ With these permissions, all authentication methods can be read and managed on a 
 |:---|:---|:---|:---|
 |_WindowsUpdates.ReadWrite.All_|Read and write all Windows update deployment settings|Allows the app to read and write all Windows update deployment settings for the organization without a signed-in user.|Yes|
 
+### Remarks
+
+All the permissions above are valid only for work or school accounts.
+
+For an app to read or write all Windows update deployment settings with delegated permissions, the signed-in user must be assigned the Global Administrator or Intune Administrator role. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+
 ### Example usage
 
 #### Delegated
