@@ -168,7 +168,7 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
         "value": "offeringByRequest"
       }
-    ]
+    ],
     "requestedValue": "none",
     "value": "offering"
   },

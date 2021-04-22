@@ -17,11 +17,6 @@ Metadata for a software update that can be approved for deployment.
 
 Inherits from [catalogEntry](../resources/windowsupdates-catalogentry.md). Base type for [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) and [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).
 
-<!-- ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List softwareUpdateCatalogEntries](../api/softwareupdatecatalogentry-list.md)|[softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md) collection|Get a list of the [softwareUpdateCatalogEntry](../resources/softwareupdatecatalogentry.md) objects and their properties.| -->
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

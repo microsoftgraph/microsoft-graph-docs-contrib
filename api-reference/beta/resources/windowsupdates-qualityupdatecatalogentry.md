@@ -27,7 +27,7 @@ Windows 10 quality updates are released one or more times per month. These updat
 |displayName|String|The display name of the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |id|String|The unique identifier for the catalog entry. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 |isExpeditable|Boolean|Indicates whether the content can be deployed as an expedited quality update. Read-only.|
-|qualityUpdateClassification|qualityUpdateClassification|The classification on the quality update. Possible values are: `all`, `security`, `nonSecurity`. Read-only.|
+|qualityUpdateClassification|microsoft.graph.windowsUpdates.qualityUpdateClassification|The classification on the quality update. Supports a subset of the values for **qualityUpdateClassification**. Possible values are: `all`, `security`, `nonSecurity`. Read-only.|
 |releaseDateTime|DateTimeOffset|The release date of the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md).|
 
 

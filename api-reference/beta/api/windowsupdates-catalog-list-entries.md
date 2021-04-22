@@ -89,7 +89,7 @@ Content-Type: application/json
     },
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-      "id": "c1dec151-c151-c1de-51c1-dec151c1dec1",
+      "id": "d0c03fbb-43b9-4dff-840b-974ef227384d",
       "displayName": "String",
       "releaseDateTime": "String (timestamp)",
       "deployableUntilDateTime": "String (timestamp)",

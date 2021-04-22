@@ -9468,6 +9468,7 @@ items:
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
       - name: Operating system updates (preview)
+        displayName: Windows updates
         items:
         - name: Catalog     
           items:

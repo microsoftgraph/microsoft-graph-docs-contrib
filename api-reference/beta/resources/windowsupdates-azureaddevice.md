@@ -15,7 +15,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents a device in Azure Active Directory (Azure AD) that is registered with the deployment service.
 
-An Azure AD device is automatically created through one of the following methods: [enrollAssets](../api/windowsupdates-updatableasset-enrollassets.md), [updateAudience](../api/windowsupdates-deploymentaudience-updateaudience.md).
+An Azure AD device is automatically created through one of the following methods:
+* [updatableAsset: enrollAssets](../api/windowsupdates-updatableasset-enrollassets.md)
+* [updatableAsset: enrollAssetsById](../api/windowsupdates-updatableasset-enrollassetsbyid.md)
+* [deploymentAudience: updateAudience](../api/windowsupdates-deploymentaudience-updateaudience.md)
+* [deploymentAudience: updateAudienceById](../api/windowsupdates-deploymentaudience-updateaudiencebyid.md)
+* [updatableAssetGroup: addMembers](../api/windowsupdates-updatableassetgroup-addmembers.md)
+* [updatableAssetGroup: addMembersById](../api/windowsupdates-updatableassetgroup-addmembersbyid.md)
 
 Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 
