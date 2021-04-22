@@ -81,3 +81,10 @@ Namespace: microsoft.graph.windowsUpdates
 |:---|
 |feature|
 |quality|
+
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.windowsUpdates"
+}
+-->
