@@ -15,7 +15,7 @@ Scheduling features are compatible with [deployments](windowsupdates-deployments
 
 ## Schedule a deployment to start at a future date
 
-You can schedule a deployment to start at a future date by configuring its rollout settings. In the example below, all devices assigned the deployment will be offered the update on July 1, 2021.
+You can schedule a deployment to start at a future date by configuring its [rollout settings](/graph/api/resources/windowsupdates-rolloutsettings). In the example below, all devices assigned the deployment will be offered the update on July 1, 2021.
 
 ### Request
 
@@ -81,13 +81,14 @@ Content-Type: application/json
 
 ## Stage a deployment over a period of time
 
-You can also schedule a deployment so that assigned devices are offered the update in a gradual rollout that is staged over time. The update will be offered to subsets of devices assigned to the deployment at regular intervals, with the total duration of the rollout determined by either an end date or offering rate. You can think of a gradual rollout as similar to a recurring calendar event series.
+You can also schedule a deployment so that assigned devices are offered the update in a gradual rollout that is staged over time. The update is offered to subsets of devices assigned to the deployment at regular intervals, with the total duration of the rollout determined by either an end date or offering rate. You can think of a gradual rollout as similar to a recurring calendar event series.
 
 ### Example: Stage a deployment at regular intervals between start and end dates
 
-One way to stage a deployment over time is to set the `endDateTime` of the deployment. All devices assigned to the deployment will be offered the update within the window between the `startDateTime` and `endDateTime`. If the `startDateTime` is not specified, then the deployment will begin as soon as devices are assigned.
+One way to stage a deployment over time is to set the **endDateTime** of the deployment. All devices assigned to the deployment will be offered the update within the window between the **startDateTime** and **endDateTime**. If the **startDateTime** is not specified, then the deployment will begin as soon as devices are assigned.
 
-In this example, a new deployment is configured so that a new set of devices is offered the update every week (`durationBetweenOffers` set to seven days), starting on July 1, 2021. All devices will be offered the update before August 1, 2021.
+
+In this example, you configure a new deployment so that a new set of devices is offered the update every week (**durationBetweenOffers** set to seven days), starting on July 1, 2021. All devices are offered the update before August 1, 2021.
 
 #### Request
 
@@ -153,11 +154,12 @@ Content-Type: application/json
 }
 ```
 
+
 ### Example: Stage a deployment at regular intervals with a specified number of devices at each offer
 
 Another way to stage a deployment over time is to configure the offering rate using `devicesPerOffer`. Devices assigned to the deployment will be offered the update according to the specified rate until all devices have been offered the update.
 
-In this example, a new deployment is configured so that a new set of devices is offered the update every week (`durationBetweenOffers` set to seven days), starting on July 1, 2021. 100 devices will be offered the update at a time until all devices have been offered the update.
+In this example, you configure a new deployment so that a new set of devices is offered the update every week (**durationBetweenOffers** set to seven days), starting on July 1, 2021. 100 devices are offered the update at a time until all devices have been offered the update.
 
 #### Request
 

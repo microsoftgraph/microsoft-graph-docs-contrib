@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings controlling when and how to deploy an update.
+Settings controlling when and how an update deploys.
 
 Base type of [windowsDeploymentSettings](../resources/windowsupdates-windowsdeploymentsettings.md).
 

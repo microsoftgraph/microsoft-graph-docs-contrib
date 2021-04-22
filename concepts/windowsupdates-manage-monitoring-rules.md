@@ -15,14 +15,12 @@ Monitoring rules are compatible with deployments of Windows 10 feature updates.
 
 ## Step 1: Create a monitoring rule
 
-You can create a monitoring rule for a deployment by configuring the monitoring settings. Each [deployment](/graph/api/resources/windowsupdates-deployments) can have one active monitoring rule at a time.
+You can create a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) for a deployment by configuring the [monitoring settings](/graph/api/resources/windowsupdates-monitoringsettings). Each [deployment](/graph/api/resources/windowsupdates-deployments) can have one active monitoring rule at a time.
 
 Monitoring rules consist of three components:
 * **signal**: The type of update issue to be monitored by the deployment service.
 * **threshold**: When this percentage of devices emit the specified signal, the monitoring rule is triggered.
 * **action**: The action to take when the monitoring rule is triggered.
-
-See [monitoringRule resource type](/graph/api/resources/windowsupdates-monitoringrule) for more information.
 
 Below is an example of creating a monitoring rule for a deployment at the same time as creating the deployment.
 
@@ -100,7 +98,7 @@ Content-Type: application/json
 ```
 
 ## Step 2: Unpause a deployment that was paused by a monitoring rule
-When a monitoring rule is triggered, it provides the opportunity to investigate update issues that may have lead to the monitoring rule being applied. After investigation, you may wish to resume the deployment. There are two ways to do so: removing the monitoring rule or updating the monitoring rule threshold.
+When a monitoring rule triggers, it provides the opportunity to investigate update issues that may have lead to it being applied. After investigation, you may wish to resume the deployment. There are two ways to do so: removing the monitoring rule or updating the monitoring rule threshold.
 
 ### Example: Resume deployment by removing a monitoring rule
 When a monitoring rule that pauses the deployment is triggered, one way to resume the deployment is to remove the rule.

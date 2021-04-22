@@ -21,6 +21,8 @@ All software update references exist as one of the following derived types: [fea
 
 Inherits from [deployableContent](../resources/windowsupdates-deployablecontent.md). Base type for [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).
 
+This is an abstract type.
+
 ## Properties
 None.
 

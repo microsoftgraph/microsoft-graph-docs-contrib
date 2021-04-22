@@ -21,6 +21,8 @@ All Windows update references exist as one of the following derived types: [feat
 
 Inherits from [softwareUpdateReference](../resources/windowsupdates-softwareupdatereference.md). Base type for [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md) and [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md).
 
+This is an abstract type.
+
 ## Properties
 None.
 
