@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 * This method supports filtering print jobs by the user who created them. Use `$filter=createdBy/userPrincipalName eq '{upn}'`, where **{upn}** is the [user principal name](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the associated user.
 
 ### Exceptions
-Some operators are not supported: `$count`, `$search`, `$filter`.
+Some operators are not supported: `$count`, `$search`.
 
 ## Request headers
 | Name      |Description|
@@ -106,8 +106,10 @@ Content-length: 461
       "createdDateTime": "2020-02-04T00:00:00.0000000Z",
       "createdBy": {},
       "status": {
-        "processingState": "completed",
-        "processingStateDescription": "The print job has completed successfully and no further processing will take place."
+        "state": "completed",
+        "description": "The print job has completed successfully and no further processing will take place.",
+        "details" : [],
+        "isAcquiredByPrinter": true
       }
     }
   ]
