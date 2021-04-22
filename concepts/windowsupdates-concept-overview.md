@@ -64,3 +64,9 @@ Enjoy the benefit of [safeguard holds](https://docs.microsoft.com/windows/deploy
 Additionally, you can configure monitoring rules that are unique to your organization. These rules can send an alert or pause a deployment based on device signals such as rollbacks.
 
 To learn more, see [Manage monitoring rules for a deployment](windowsupdates-manage-monitoring-rules.md).
+
+## API reference
+
+Looking for the API reference for this service?
+
+See [Windows updates API in Microsoft Graph beta](/graph/api/resources/windowsupdates-updates?view=graph-rest-beta).
