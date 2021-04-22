@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.windowsUpdates.windows",
+  "@odata.type": "microsoft.graph.windowsUpdates.updates",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }

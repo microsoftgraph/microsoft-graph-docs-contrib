@@ -15,10 +15,10 @@ Namespace: microsoft.graph.windowsUpdates
 
 Metadata for a Windows 10 quality update that can be approved for deployment.
 
+Windows 10 quality updates are released one or more times per month. These updates contain both security and quality fixes and are typically released on the second Tuesday of every month, though they may be released at any time. These updates are cumulative, so later versions will always contain all previous fixes. Microsoft strongly recommends keeping devices current by installing the most recent quality updates as soon as they are available. 
 
 Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
-Windows 10 quality updates are released one or more times per month. These updates contain both security and quality fixes and are typically released on the second Tuesday of every month, though they may be released at any time. These updates are cumulative, so later versions will always contain all previous fixes. Microsoft strongly recommends keeping devices current by installing the most recent quality updates as soon as they are available. 
 
 ## Properties
 |Property|Type|Description|
