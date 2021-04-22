@@ -11,13 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-removeAccessApplyAction is a kind of [accessReviewApplyAction](../resources/accessreviewapplyaction.md) that indicates removing access of the not-reviewed decisions from the entity being reviewed. This is the default option chosen if an option is not passed in.
+removeAccessApplyAction is a kind of [accessReviewApplyAction](../resources/accessreviewapplyaction.md) that indicates removing access to a resource of those denied in an access review of that resource. This is the default option chosen for [accessReviewApplyAction](../resources/accessreviewapplyaction.md) if an option is not passed in.
 
 Inherits from [accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
@@ -34,4 +33,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.removeAccessApplyAction"
 }
 ```
-

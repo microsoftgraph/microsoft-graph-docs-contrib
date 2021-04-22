@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstance: acceptRecommendations"
-description: "Allows the acceptance of recommendations on all not reviewed decisions on an access review instance` that they are the reviewer on. "
+description: "Allows the acceptance of recommendations on all not-reviewed decisions on an access review instance that the calling user is a reviewer for. "
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows the acceptance of recommendations on all not reviewed [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) on an [accessReviewInstance](../resources/accessreviewinstance.md) that they are the reviewer on.
+Allows the acceptance of recommendations on all not-reviewed [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on an [accessReviewInstance](../resources/accessreviewinstance.md) object that the calling user is a reviewer for.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
