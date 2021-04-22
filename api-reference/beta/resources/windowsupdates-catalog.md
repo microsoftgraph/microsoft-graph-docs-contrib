@@ -13,12 +13,12 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the catalog of content that can be approved for deployment.
+Singleton entity representing the catalog of content that you can approve for deployment.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List entries](../api/windowsupdates-catalog-list-entries.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Get the catalog entry resources from the entries navigation property. Returns catalog entry resources of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md), [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).|
+|[List entries](../api/windowsupdates-catalog-list-entries.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Get the [catalogEntry](../resources/windowsupdates-catalogentry.md) resources from the entries navigation property. Returns **catalogEntry** resources of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md), [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -28,7 +28,7 @@ Represents the catalog of content that can be approved for deployment.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|entries|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Lists the content that can be approved for deployment. Read-only.|
+|entries|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Lists the content that you can approve for deployment. Read-only.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
