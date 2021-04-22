@@ -100,7 +100,12 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Send a new message using MIME format
 ##### Request
-```json
+<!-- {
+  "blockType": "request",
+  "name": "message_send_mime_v1"
+}-->
+
+```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: text/plain
 
@@ -110,6 +115,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 ```json
 HTTP/1.1 201 Accepted
 Content-type: application/json
+
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
     "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",

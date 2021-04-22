@@ -285,6 +285,11 @@ Content-type: application/json
 
 ### Example 2: Create a new message draft using MIME format
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "message_createdraft_mime_v1"
+}-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages
 Content-type: text/plain
@@ -302,6 +307,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
     "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",

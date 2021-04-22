@@ -155,6 +155,11 @@ Content-length: 272
 ### Example 2: Create a draft message in MIME format to forward an existing message
 
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "message_createForward_mime_beta"
+}-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/createForward
 Content-Type: text/plain
@@ -167,9 +172,10 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true
 } -->
-```http
+```json
 HTTP/1.1 201 Accepted
 Content-type: application/json
+
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
     "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",

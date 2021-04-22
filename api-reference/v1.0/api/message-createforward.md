@@ -118,16 +118,23 @@ Content-length: 248
 
 ### Example 2 Create a draft message in MIME format to forward an existing message
 ##### Request
-```json
+<!-- {
+  "blockType": "request",
+  "name": "message_createForward_mime_v1"
+}-->
+
+```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/createForward
 Content-type: text/plain
 
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
 ```
+
 ##### Response
 ```json
 HTTP/1.1 201 Accepted
 Content-type: application/json
+
 {"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
     "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",
     "id":"AAMkADNlNYjSAAA=",

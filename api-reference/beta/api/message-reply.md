@@ -123,27 +123,15 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "message: reply",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
 ### Example 2: Reply to a message in MIME format
 ##### Request
+
 <!-- {
   "blockType": "request",
   "name": "message_reply_mime_beta"
 }-->
-```json
+
+```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
 Content-Type: text/plain
 
@@ -159,6 +147,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 201 Accepted
 Content-type: application/json
+
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
     "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",
@@ -175,3 +164,16 @@ Content-type: application/json
 ...
 }
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "message: reply",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

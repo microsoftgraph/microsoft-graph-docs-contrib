@@ -106,15 +106,23 @@ Content-Type: application/json
 
 ##### Response
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
 
 ### Example 2: Reply-all to a message in MIME format
+##### Request
+<!-- {
+  "blockType": "request",
+  "name": "message_replyAll_mime_beta"
+}-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/replyall
 Content-Type: text/plain
@@ -127,9 +135,11 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true
 } -->
-```http
+
+```json
 HTTP/1.1 201 Accepted
 Content-type: application/json
+
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
     "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",
