@@ -34,11 +34,12 @@ POST https://graph.microsoft.com/v1.0/me/sendMail
 ```
 
 ## Request headers
+
 | Name       | Type | Description| 
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Length | number | 0. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required for new MIME messages. <br/> Use text/plain for MIME content and application/json for a JSON object|
+| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
 For sending MIME content no parameters are required, just paste the MIME string in the body of the request.

@@ -43,17 +43,17 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ```
 ## Request headers
 | Name       | Type | Description|
-|--------------|------|-------|
+|:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use text/plain for MIME content and application/json for a JSON object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
 When using JSON format, provide a JSON object in the request body with the following parameters.
 
-| Parameter | Type | Description |
-|:---------------|:--------|:----------|
-|comment|String|A comment to include. Can be an empty string.|
-|message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
+| Parameter	   | Type	| Description |
+|---------------|-------|---------|
+| comment | String | A comment to include. Can be an empty string. |
+| message | [message](../resources/message.md) | Any writeable properties to update in the reply message. |
 
 When using MIME content no parameters are required, just paste the MIME string in the body of the request.
 
@@ -62,7 +62,7 @@ When using MIME content no parameters are required, just paste the MIME string i
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-### Example 1: Reply in JSON format to a message
+### Example 1: Reply in JSON format to an existing message
 The following example includes a comment and adds a recipient to the reply message.
 ##### Request
 Here is an example of the request.
@@ -126,7 +126,7 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-### Exaxmple 2: Reply in MIME format to a message
+### Exaxmple 2: Reply in MIME format to an existing message
 ##### Request
 ```json
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
