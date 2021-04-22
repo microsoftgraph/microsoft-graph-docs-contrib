@@ -62,7 +62,7 @@ Content-Type: application/json
 
 ## Step 2: Create a deployment
 
-A deployment specifies content to deploy, how and when to deploy the content, and the targeted devices. When a deployment is created, a deployment audience is automatically created as a relationship.
+A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. When a deployment is created, a deployment audience is automatically created as a relationship.
 
 Below is an example of creating a deployment of a feature update, with optional settings configuring the [deployment schedule](windowsupdates-schedule-deployment.md) and [monitoring rules](windowsupdates-manage-monitoring-rules.md). The targeted devices are specified in the next step.
 
@@ -150,9 +150,9 @@ Content-Type: application/json
 
 ## Step 3: Assign devices to the deployment audience
 
-After a deployment is created, you can assign devices to the deployment audience. Devices can be assigned directly, or via updatable asset groups. Once the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment settings.
+After a deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). Devices can be assigned directly, or via [updatable asset groups](/graph/api/resources/windowsupdates-updatableassetgroup). Once the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment settings.
 
-Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice.md) object is automatically created if it does not already exist).
+Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
 
 Below is an example of adding updatable asset groups and Azure AD devices as members of the deployment audience, while also excluding a specific Azure AD device.
 
@@ -194,9 +194,9 @@ HTTP/1.1 202 Accepted
 
 ## During a deployment
 
-While a deployment is in progress, you can pause the deployment by updating its state, as well as update its audience members and exclusions.
+While a deployment is in progress, you can pause the deployment by updating its **state**, as well as update its audience members and exclusions.
 
 ## After a deployment
 
-After all devices assigned to a deployment's audience have been initially offered the update, it is possible that not all devices have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, Windows Update continues to offer the update to the assigned devices whenever they reconnect.
+After all devices assigned to a deployment audience have been initially offered the update, it is possible that not all devices have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, Windows Update continues to offer the update to the assigned devices whenever they reconnect.
 

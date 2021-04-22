@@ -13,7 +13,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents content that is deployable by the service. This is an abstract type. 
+Represents content that is deployable by the service.
+
+This is an abstract type. 
 
 Base type for [softwareUpdateReference](../resources/windowsupdates-softwareupdatereference.md).
 

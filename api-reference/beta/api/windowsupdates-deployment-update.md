@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
-|Not supported (personal Microsoft account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
@@ -56,9 +56,11 @@ If successful, this method returns a `202 Accepted` response code and an updated
 
 ## Examples
 
+### Example: Pause a deployment
+
 In this example, the deployment is paused by updating the `requestedValue` of the deployment `state`.
 
-### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "update_deployment",
@@ -79,7 +81,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -115,9 +117,11 @@ Content-Type: application/json
 }
 ```
 
-In this example, the deployment's `settings` are updated to add a monitoring rule.
+### Example: Update deployment settings to add a monitoring rule
 
-### Request
+In this example, the `settings` property of the deployment is updated to add a monitoring rule.
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "update_deployment",
@@ -146,7 +150,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",

@@ -34,7 +34,7 @@ Represents the deployment of content to a set of devices.
 |createdDateTime|DateTimeOffset|The date and time the deployment was created. Returned by default. Read-only.|
 |id|String|The unique identifier for the deployment. Returned by default. Key. Not nullable. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the deployment was last modified. Returned by default. Read-only.|
-|settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings specified on the specific deployment governing how to deploy `content`. Returned by default.|
+|settings|[microsoft.graph.windowsUpdates.deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings specified on the specific deployment governing how to deploy **content**. Returned by default.|
 |state|[microsoft.graph.windowsUpdates.deploymentState](../resources/windowsupdates-deploymentstate.md)|Execution status of the deployment. Returned by default.|
 
 ## Relationships
