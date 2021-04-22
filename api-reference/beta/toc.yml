@@ -9581,7 +9581,7 @@ items:
           href: api/educationassignment-publish.md
         - name: List submissions for assignment
           href: api/educationassignment-list-submissions.md
-        - name: Get resource folder URL
+        - name: Get resource folder URL (deprecated)
           href: api/educationassignment-getresourcesfolderurl.md
         - name: Get rubric attached to assignment
           href: api/educationassignment-get-rubric.md
