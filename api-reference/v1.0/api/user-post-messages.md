@@ -285,9 +285,10 @@ Content-type: application/json
 
 ### Example 2: Create a new message draft using MIME format
 ##### Request
+
 <!-- {
   "blockType": "request",
-  "name": "message_createdraft_mime_v1"
+  "name": "message_create_draft_mime_v1"
 }-->
 
 ```http
@@ -295,6 +296,7 @@ POST https://graph.microsoft.com/v1.0/me/messages
 Content-type: text/plain
 
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+
 ```
 
 ##### Response
