@@ -137,7 +137,7 @@ Represents the capabilities reported by a printer.
 |none|4|The printer does not scale the document to fit the requested media size. If the document is larger than the requested media, the printer centers and clips the resulting output. If the document is smaller than the requested media, printer centers the resulting output.|
 |unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
 
-### Media Size values
+### mediaSizes values
 
 |Value|
 |:---|
