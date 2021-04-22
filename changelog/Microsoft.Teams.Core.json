@@ -10,7 +10,7 @@
           "ChangeType": "Change",
           "Description": "Added support for application permissions to the [Get chat](https://docs.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-v1.0&preserve-view=true), [List chat members](https://docs.microsoft.com/en-us/graph/api/chat-list-members?view=graph-rest-v1.0&preserve-view=true) and [Get chat member](https://docs.microsoft.com/en-us/graph/api/chat-get-members?view=graph-rest-v1.0&preserve-view=true) methods in v1.0.",
           "Target": "chat"
-        },
+        }
       ],
       "Id": "21dfc156-d5cf-4f5c-bdb0-84a982e9d54e",
       "Cloud": "prd",
