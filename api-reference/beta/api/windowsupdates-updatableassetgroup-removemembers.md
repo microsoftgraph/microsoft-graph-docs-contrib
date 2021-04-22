@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Remove members from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
-You can also use the method [removeMembersById](windowsupdates-updatableassetgroup-removemembersbyid.md).
+You can also use the method [removeMembersById](windowsupdates-updatableassetgroup-removemembersbyid.md) to remove members.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
-|Delegated (personal Microsoft account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
@@ -48,9 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove as members of the updatable asset group.|
-
-
+|assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of **updatableAsset** resources to remove as members of the **updatableAssetGroup**.|
 
 ## Response
 
@@ -77,7 +75,6 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 ### Response
 

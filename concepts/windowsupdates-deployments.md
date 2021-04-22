@@ -13,12 +13,13 @@ Deployments are the foundation of the Windows Update for Business deployment ser
 
 Deployments have the following key aspects:
 
-1. Content: The update available to deploy from the catalog.
-2. Audience: The devices to receive content.
-3. Settings: The settings governing how and when content should be delivered to devices.
-4. State: The current state of the deployment within its lifecycle.
+1. Content: The update available to deploy from the catalog. This is represented by the **content** property of the [deployableContent](/graph/api/resources/windowsupdates-deployablecontent) type.
+2. Audience: The devices to receive content. This is an **audience** relationship of the [deploymentAudience](/graph/api/resources/windowsupdates-deploymentaudience) type.
+3. Settings: The settings governing how and when content should be delivered to devices. This is represented by the **settings** property of the [deploymentSettings](/graph/api/resources/windowsupdates-deploymentsettings) type.
+4. State: The current state of the deployment within its lifecycle. This is represented by the **state** property of the [deploymentState](/graph/api/resources/windowsupdates-deploymentstate) type.
 
 ## Create a deployment with content and an audience
+
 
 Because content and audience are key to the definition of a deployment, you are required to assign both at the time of creation. While content and audience assignments cannot be changed later, device membership within an audience can.
 
@@ -28,21 +29,20 @@ To learn more about creating a deployment, see [Deploy a feature update using th
 
 ### Rollout
 
-Rollout settings govern how the content is deployed over time to devices in the deployment audience. You can configure rollout settings for deployments of feature update.
+[Rollout settings](windowsupdates-schedule-deployment.md govern how the content is deployed over time to devices in the deployment audience. You can configure rollout settings for deployments of feature update.
 
-To learn more about rollout settings, see [rollout settings](windowsupdates-schedule-deployment.md).
 
 ### Monitoring
 
-You can use monitoring settings to configure alerts and automated actions to take based on update signals from devices. You can configure monitoring settings for deployments of feature updates.
+You can use [monitoring settings](/graph/api/resources/windowsupdates-monitoringsettings) to configure alerts and automated actions to take based on update signals from devices. Monitoring settings can be configured for deployments of feature updates.
+
 
 To learn more about monitoring settings, see [monitoring settings](windowsupdates-manage-monitoring-rules.md).
 
 ### User experience
 
-For deployments of expedited quality updates, user experience settings temporarily override existing policies on the device for update experience.
+For deployments of expedited quality updates, [user experience settings](/graph/api/resources/windowsupdates-userexperiencesettings) temporarily override existing policies on the device for update experience.
 
-To learn more about user experience settings, see [user experience settings](windowsupdates-deploy-expedited-update.md).
 
 ## Get or set lifecycle state
 

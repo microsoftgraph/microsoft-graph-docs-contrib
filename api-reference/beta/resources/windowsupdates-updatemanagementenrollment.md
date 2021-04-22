@@ -15,7 +15,6 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents enrollment into management by the service of a certain update category.
 
-
 Inherits from [updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md).
 
 ## Properties

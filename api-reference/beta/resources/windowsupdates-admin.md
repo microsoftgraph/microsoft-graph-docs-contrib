@@ -15,6 +15,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 Singleton entity that acts as a container for administrator functionality.
 
+## Properties
+None.
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|

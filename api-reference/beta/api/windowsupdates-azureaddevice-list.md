@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
-|Delegated (personal Microsoft account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
@@ -38,7 +38,7 @@ GET /admin/windows/updates/updatableAssets/?$filter=isof('microsoft.graph.window
 ## Optional query parameters
 This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
 
-To use a query parameter on a property that is not inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md), include the full resource type. For example, to select `errors`, use `$select=microsoft.graph.windowsUpdates.azureADDevice/errors`.
+To use a query parameter on a property that is not inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md), include the full resource type. For example, to select the **errors** property, use `$select=microsoft.graph.windowsUpdates.azureADDevice/errors`.
 
 ## Request headers
 |Name|Description|
@@ -63,7 +63,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/?$filter=isof('microsoft.graph.windowsUpdates.azureADDevice')
 ```
-
 
 ### Response
 

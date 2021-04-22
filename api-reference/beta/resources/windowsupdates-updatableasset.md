@@ -19,6 +19,8 @@ All updatable assets exist as one of the following derived types: [azureADDevice
 
 Base type of [azureADDevice](../resources/windowsupdates-azureaddevice.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
+This is an abstract type.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -26,14 +28,14 @@ Base type of [azureADDevice](../resources/windowsupdates-azureaddevice.md) and [
 |[Create updatableAssetGroup](../api/windowsupdates-updatableassetgroup-create.md)|[microsoft.graph.windowsUpdates.updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
 |[Get updatableAsset](../api/windowsupdates-updatableasset-get.md)|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Read the properties and relationships of an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
 |[Delete updatableAsset](../api/windowsupdates-updatableasset-delete.md)|None|Delete an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
-|[Enroll asset in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll assets in update management by the deployment service.|
-|[Enroll asset in management (by ID)](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll assets of the same type in update management by the deployment service.|
-|[Unenroll asset from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll assets from update management by the deployment service.|
-|[Unenroll asset from management (by ID)](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll assets of the same type from update management by the deployment service.|
-|[Add members to group](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to an updatable asset group.|
-|[Add members to group (by ID)](../api/windowsupdates-updatableassetgroup-addmembersbyid.md)|None|Add members of the same type to an updatable asset group.|
-|[Remove members from group](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|Remove members from an updatable asset group.|
-|[Remove members from group (by ID)](../api/windowsupdates-updatableassetgroup-removemembersbyid.md)|None|Remove members of the same type from an updatable asset group.|
+|[Enroll asset in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll [updatableAssets](../resources/windowsupdates-updatableasset.md) in update management by the deployment service.|
+|[Enroll asset in management (by ID)](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll [updatableAssets](../resources/windowsupdates-updatableasset.md) of the same type in update management by the deployment service.|
+|[Unenroll asset from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll [updatableAssets](../resources/windowsupdates-updatableasset.md) from update management by the deployment service.|
+|[Unenroll asset from management (by ID)](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll [updatableAssets](../resources/windowsupdates-updatableasset.md) of the same type from update management by the deployment service.|
+|[Add members to group](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[Add members to group (by ID)](../api/windowsupdates-updatableassetgroup-addmembersbyid.md)|None|Add members of the same type to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[Remove members from group](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|Remove members from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
+|[Remove members from group (by ID)](../api/windowsupdates-updatableassetgroup-removemembersbyid.md)|None|Remove members of the same type from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).|
 
 ## Properties
 |Property|Type|Description|

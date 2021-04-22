@@ -83,11 +83,14 @@ Content-Type: application/json
 
 You can also schedule a deployment so that assigned devices are offered the update in a gradual rollout that is staged over time. The update is offered to subsets of devices assigned to the deployment at regular intervals, with the total duration of the rollout determined by either an end date or offering rate. You can think of a gradual rollout as similar to a recurring calendar event series.
 
-One way to stage a deployment over time is to set the **endDateTime** of the deployment. All devices assigned to the deployment are offered the update within the window between the **startDateTime** and **endDateTime**. If the **startDateTime** is not specified, then the deployment begins as soon as devices are assigned.
+### Example: Stage a deployment at regular intervals between start and end dates
+
+One way to stage a deployment over time is to set the `endDateTime` of the deployment. All devices assigned to the deployment will be offered the update within the window between the `startDateTime` and `endDateTime`. If the `startDateTime` is not specified, then the deployment will begin as soon as devices are assigned.
+
 
 In this example, you configure a new deployment so that a new set of devices is offered the update every week (**durationBetweenOffers** set to seven days), starting on July 1, 2021. All devices are offered the update before August 1, 2021.
 
-### Request
+#### Request
 
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
@@ -110,7 +113,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 ```http
 HTTP/1.1 201 Created
@@ -151,11 +154,14 @@ Content-Type: application/json
 }
 ```
 
-Another way to stage a deployment over time is to configure the offering rate using **devicesPerOffer**. Devices assigned to the deployment are offered the update according to the specified rate until all devices have been offered the update.
+
+### Example: Stage a deployment at regular intervals with a specified number of devices at each offer
+
+Another way to stage a deployment over time is to configure the offering rate using `devicesPerOffer`. Devices assigned to the deployment will be offered the update according to the specified rate until all devices have been offered the update.
 
 In this example, you configure a new deployment so that a new set of devices is offered the update every week (**durationBetweenOffers** set to seven days), starting on July 1, 2021. 100 devices are offered the update at a time until all devices have been offered the update.
 
-### Request
+#### Request
 
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
@@ -178,7 +184,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 ```http
 HTTP/1.1 201 Created

@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
-|Delegated (personal Microsoft account)|WindowsUpdates.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|WindowsUpdates.ReadWrite.All|
 
 ## HTTP request
@@ -56,9 +56,8 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta//admin/windows/updates/updatableAssets/{azureADDeviceId}
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{azureADDeviceId}
 ```
-
 
 ### Response
 

@@ -17,6 +17,8 @@ Represents an enrollment into an area of the service.
 
 Base type of [updateManagementEnrollment](../resources/windowsupdates-updatemanagementenrollment.md).
 
+This is an abstract type.
+
 ## Properties
 None.
 
