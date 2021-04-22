@@ -55,8 +55,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1 : Get a group chat
-##### Request
+### Example 1: Get a group chat
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -67,7 +67,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
 ```
 
-##### Response
+#### Response
 The following example shows the response.
 
 <!-- {
@@ -89,8 +89,8 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : Get a user's one on one chat
-##### Request
+### Example 2: Get a user's one on one chat
+#### Request
 The following is an example of the request.
 
 
@@ -121,9 +121,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ---
 
 
----
-
-##### Response
+#### Response
 The following example shows the response.
 
 <!-- {
@@ -145,8 +143,8 @@ Content-type: application/json
 }
 ```
 
-### Example 3 : Get a chat and all it's members
-##### Request
+### Example 3: Get a chat and all its members
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -157,7 +155,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2?$expand=members
 ```
 
-##### Response
+#### Response
 The following example shows the response.
 
 <!-- {

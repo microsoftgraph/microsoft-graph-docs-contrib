@@ -6,6 +6,22 @@
         {
           "Id": "72ed8673-9327-11eb-8507-815178c7c041",
           "ApiChange": "Method",
+          "ChangedApiName": "chat",
+          "ChangeType": "Change",
+          "Description": "[Get chat](https://docs.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-v1.0&preserve-view=true), [List chat members](https://docs.microsoft.com/en-us/graph/api/chat-list-members?view=graph-rest-v1.0&preserve-view=true) and [Get chat member](https://docs.microsoft.com/en-us/graph/api/chat-get-members?view=graph-rest-v1.0&preserve-view=true) now supports application permissions in /v1.0.",
+          "Target": "chat"
+        },
+        {
+          "Id": "72ed8673-9327-11eb-8507-815178c7c041",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat",
+          "ChangeType": "Change",
+          "Description": "[Get chat](https://docs.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-beta&preserve-view=true), [List chat members](https://docs.microsoft.com/en-us/graph/api/chat-list-members?view=graph-rest-beta&preserve-view=true) and [Get chat member](https://docs.microsoft.com/en-us/graph/api/chat-get-members?view=graph-rest-beta&preserve-view=true) now supports application permissions in /beta.",
+          "Target": "chat"
+        },
+        {
+          "Id": "72ed8673-9327-11eb-8507-815178c7c041",
+          "ApiChange": "Method",
           "ChangedApiName": "teamsAppIcon",
           "ChangeType": "Addition",
           "Description": "Added the [Get teamsAppIcon](https://docs.microsoft.com/en-us/graph/api/teamsappicon-get?view=graph-rest-beta&preserve-view=true) method to fetch icons of a Teams app.",
