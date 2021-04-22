@@ -18,7 +18,7 @@ You can enroll an [azureADDevice](../resources/windowsupdates-azureaddevice.md) 
 
 Enrolling an Azure AD device in update management automatically creates an **azureADDevice** object if it does not already exist.
 
-You can also use the method [enrollAssetsById](windowsupdates-updatableasset-enrollassetsbyid.md).
+You can also use the method [enrollAssetsById](windowsupdates-updatableasset-enrollassetsbyid.md) to enroll assets.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

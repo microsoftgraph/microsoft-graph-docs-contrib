@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Unenroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources of the same type from update management by the deployment service.
 
-You can also use the method [unenrollAssets](windowsupdates-updatableasset-unenrollassets.md).
+You can also use the method [unenrollAssets](windowsupdates-updatableasset-unenrollassets.md) to unenroll assets.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,8 +52,6 @@ The following table shows the parameters that can be used with this action.
 |memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 |ids|String collection|List of identifiers corresponding to the **updatableAsset** resources to unenroll from update management by the service for the given **updateCategory**.|
 
-
-
 ## Response
 
 If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
@@ -80,7 +78,6 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 ### Response
 

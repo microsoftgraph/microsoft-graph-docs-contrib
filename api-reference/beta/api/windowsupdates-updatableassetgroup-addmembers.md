@@ -54,8 +54,6 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of **updatableAsset** resources to add as members of the **updatableAssetGroup**.|
 
-
-
 ## Response
 
 If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
@@ -81,7 +79,6 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 ### Response
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 Remove members of the same type from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
+You can also use the method [removeMembers](windowsupdates-updatableassetgroup-removemembers.md) to remove members.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -49,8 +51,6 @@ The following table shows the parameters that can be used with this action.
 |ids|String collection|List of identifiers corresponding to the [updatableAsset](../resources/windowsupdates-updatableasset.md) resources to remove as members of the **updatableAssetGroup**.|
 |memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 
-
-
 ## Response
 
 If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
@@ -76,7 +76,6 @@ Content-Type: application/json
   "memberEntityType": "#microsoft.graph.windowsUpdates.azureADDevice"
 }
 ```
-
 
 ### Response
 

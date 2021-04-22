@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Enroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources of the same type in update management by the deployment service.
 
-You can also use the method [enrollAssets](windowsupdates-updatableasset-enrollassets.md).
+You can also use the method [enrollAssets](windowsupdates-updatableasset-enrollassets.md) to enroll assets.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,8 +51,6 @@ The following table shows the parameters that can be used with this action.
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for the service to manage. Supports a subset of the values for **updateCategory**. Possible values are: `feature`.|
 |memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 |ids|String collection|List of identifiers corresponding to the **updatableAsset** resources to enroll in update management by the service for the given **updateCategory**.|
-
-
 
 ## Response
 

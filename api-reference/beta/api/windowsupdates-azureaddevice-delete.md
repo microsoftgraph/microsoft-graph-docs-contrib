@@ -56,7 +56,7 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta//admin/windows/updates/updatableAssets/{azureADDeviceId}
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{azureADDeviceId}
 ```
 
 ### Response
