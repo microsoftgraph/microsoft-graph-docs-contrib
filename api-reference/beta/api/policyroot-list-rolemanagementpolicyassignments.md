@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List roleManagementPolicyAssignments
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get the unifiedRoleManagementPolicyAssignment resources from the roleManagementPolicyAssignments navigation property.
 
 ## Permissions
@@ -32,7 +34,7 @@ GET /policies/roleManagementPolicyAssignments
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -75,10 +77,10 @@ Content-Type: application/json
   "value": [
     {
       "id": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "policyId": "String",
-      "scopeId": "String",
-      "scopeType": "String",
-      "roleDefinitionId": "String"
+      "policyId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
+      "scopeId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
+      "scopeType": "subscription",
+      "roleDefinitionId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6"
     }
   ]
 }

@@ -10,6 +10,8 @@ doc_type: apiPageType
 # rbacApplication: roleSchedules
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
 
 ## Permissions
@@ -32,7 +34,6 @@ GET /roleManagement/directory/roleSchedules
 ```
 
 ## Function parameters
-In the request URL, provide the following query parameters with values.
 The following table shows the query parameters that can be used with this method.
 
 |Parameter|Type|Description|
@@ -64,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [unifiedRoleSc
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleSchedules(directoryScopeId='parameterValue',appScopeId='parameterValue',principalId='parameterValue',roleDefinitionId='parameterValue')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleSchedules(directoryScopeId='a3bb8764-cb92-4276-9d2a-ca1e895e55ea',appScopeId='a3bb8764-cb92-4276-9d2a-ca1e895e55ea',principalId='a3bb8764-cb92-4276-9d2a-ca1e895e55ea',roleDefinitionId='a3bb8764-cb92-4276-9d2a-ca1e895e55ea')
 ```
 
 
@@ -85,14 +86,14 @@ Content-Type: application/json
     {
       "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleScheduleBase",
       "id": "String (identifier)",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "createdUsing": "String",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "status": "String"
+      "principalId": "a3bb8764-cb92-4276-9d2a-ca1e895e55ea",
+      "roleDefinitionId": "a3bb8764-cb92-4276-9d2a-ca1e895e55ea",
+      "directoryScopeId": "a3bb8764-cb92-4276-9d2a-ca1e895e55ea",
+      "appScopeId": "a3bb8764-cb92-4276-9d2a-ca1e895e55ea",
+      "createdUsing": "a3bb8764-cb92-4276-9d2a-ca1e895e55ea",
+      "createdDateTime": "2020-09-09T21:32:27.91Z",
+      "modifiedDateTime": "2020-09-09T21:32:27.91Z",
+      "status": "Provisioned"
     }
   ]
 }

@@ -10,7 +10,11 @@ doc_type: apiPageType
 # List roleManagementPolicies
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+
 Get the unifiedRoleManagementPolicy resources from the roleManagementPolicies navigation property.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +36,7 @@ GET /policies/roleManagementPolicies
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -75,12 +79,12 @@ Content-Type: application/json
   "value": [
     {
       "id": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "displayName": "String",
-      "description": "String",
-      "isOrganizationDefault": "Boolean",
-      "scopeId": "String",
-      "scopeType": "String",
-      "lastModifiedDateTime": "String (timestamp)",
+      "displayName": "Policy1",
+      "description": "A policy for all privileged administrators",
+      "isOrganizationDefault": true,
+      "scopeId": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
+      "scopeType": "subscriptions",
+      "lastModifiedDateTime": "2021-03-17T02:54:27.167+00:00",
       "lastModifiedBy": {
         "@odata.type": "microsoft.graph.identity"
       }

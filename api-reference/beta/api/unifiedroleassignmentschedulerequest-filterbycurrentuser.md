@@ -10,6 +10,9 @@ doc_type: apiPageType
 # unifiedRoleAssignmentScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+
 Get a list of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) objects and their properties associated with a particular principal object.
 
 ## Permissions
@@ -31,13 +34,12 @@ One of the following permissions is required to call this API. To learn more, in
 GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
 ```
 
-## Function parameters
-In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+## Query parameters
+The following table shows the query parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|ID of the principal object|
+|on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|Id of the principal object.|
 
 
 ## Request headers
@@ -50,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a [unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) collection in the response body.
 
 ## Examples
 
@@ -61,7 +63,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/RoleAssignmentScheduleRequests/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/roleManagement/directory/RoleAssignmentScheduleRequests/filterByCurrentUser(on='d6e4112f-112f-d6e4-2f11-e4d62f11e4d6')
 ```
 
 
@@ -80,15 +82,15 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "String (identifier)",
-      "action": "String",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "isValidationOnly": "Boolean",
-      "targetScheduleId": "String",
-      "justification": "String",
+      "id": "b1477448-2cc6-4ceb-93b4-54a202a89413",
+      "action": "AdminAssign",
+      "principalId": "b1477448-2cc6-4ceb-93b4-54a202a89413",
+      "roleDefinitionId": "b1477448-2cc6-4ceb-93b4-54a202a89413",
+      "directoryScopeId": "b1477448-2cc6-4ceb-93b4-54a202a89413",
+      "appScopeId": "b1477448-2cc6-4ceb-93b4-54a202a89413",
+      "isValidationOnly": false,
+      "targetScheduleId": "b1477448-2cc6-4ceb-93b4-54a202a89413",
+      "justification": "this is a justification",
       "scheduleInfo": {
         "@odata.type": "microsoft.graph.requestSchedule"
       },

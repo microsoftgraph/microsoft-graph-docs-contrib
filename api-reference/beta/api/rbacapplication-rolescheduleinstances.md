@@ -10,6 +10,8 @@ doc_type: apiPageType
 # rbacApplication: roleScheduleInstances
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve both roleAssignmentScheduleInstances and roleEligibilityScheduleInstances.
 
 ## Permissions
@@ -83,11 +85,11 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleScheduleInstanceBase",
-      "id": "String (identifier)",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String"
+      "id": "a3bb8764-cb92-4276-9d2a-ca1e895e55ea",
+      "principalId": "a3bb8764-cb92-4276-9d2a-ca1e895e55ea",
+      "roleDefinitionId": "a3bb8764-cb92-4276-9d2a-ca1e895e55ea",
+      "directoryScopeId": "a3bb8764-cb92-4276-9d2a-ca1e895e55ea",
+      "appScopeId": "a3bb8764-cb92-4276-9d2a-ca1e895e55ea"
     }
   ]
 }

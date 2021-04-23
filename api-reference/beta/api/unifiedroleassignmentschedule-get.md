@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get unifiedRoleAssignmentSchedule
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Read the properties and relationships of an [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) object.
 
 ## Permissions
@@ -32,7 +34,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSchedulesId}
+GET https://graph.microsoft.com/beta/directory/roleAssignmentSchedules/b1477448-2cc6-4ceb-93b4-54a202a89413
 ```
 
 
@@ -74,19 +76,19 @@ Content-Type: application/json
 {
   "value": {
     "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "principalId": "String",
-    "roleDefinitionId": "String",
-    "directoryScopeId": "String",
-    "appScopeId": "String",
-    "createdUsing": "String",
-    "createdDateTime": "String (timestamp)",
-    "modifiedDateTime": "String (timestamp)",
-    "status": "String",
+    "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+    "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+    "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+    "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+    "createdUsing": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+    "createdDateTime": "2020-09-09T21:35:27.91Z",
+    "modifiedDateTime": "2020-09-09T21:35:27.91Z",
+    "status": "Provisioned",
     "scheduleInfo": {
       "@odata.type": "microsoft.graph.requestSchedule"
     },
-    "assignmentType": "String",
-    "memberType": "String"
+    "assignmentType": "Eligible",
+    "memberType": "direct"
   }
 }
 ```
