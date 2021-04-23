@@ -819,8 +819,9 @@
       "CreatedDateTime": "2017-03-01T00:00:00",
       "WorkloadArea": "Reports",
       "SubArea": ""
-    }
-    "ChangeList": [
+    },
+    {
+      "ChangeList": [
       {
           "Id": "916ccaa0-a3d8-11eb-a835-c815efda831b",
           "ApiChange": "Property",
@@ -916,8 +917,8 @@
   "CreatedDateTime": "2021-04-23T02:06:51.286Z",
   "WorkloadArea": "Reports and audit",
   "SubArea": "Identity and access reports"
-}
-"ChangeList":[
+},
+{"ChangeList":[
   {
      "Id":"15975b51-5c44-11eb-8de9-f7f8b8b7f046",
      "ApiChange":"Property",
@@ -1173,6 +1174,6 @@
 "CreatedDateTime":"2021-01-21T23:55:05.454Z",
 "WorkloadArea":"Reports and audit",
 "SubArea":"Identity and access reports"
-},
+}
   ]
 }
