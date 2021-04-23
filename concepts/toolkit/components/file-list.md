@@ -140,3 +140,15 @@ The `mgt-file-list` component supports several [templates](../customize-componen
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.
+
+## Cache
+
+|Object store|Cached data|Remarks|
+|---------|-----------|-------|
+|`fileLists`|List of file lists|Default cache list to store file lists|
+|`insightfileLists`|List of insight file lists|Used when `insightType` is provided|
+
+> [!NOTE]
+> The `mgt-file-list` component also uses the `fileQueries` object store in `mgt-file` IndexedDB to cache files when `fileQueries` is provided.
+
+See [Caching](../customize-components/cache.md) for more details on how to configure the cache.

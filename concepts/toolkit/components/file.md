@@ -137,3 +137,16 @@ The `mgt-file` component supports several [templates](../customize-components/te
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.
+
+## Cache
+
+|Object store|Cached data|Remarks|
+|---------|-----------|-------|
+|`driveFiles`|List of files by drive id|Used when `driveId` is provided|
+|`groupFiles`|List of files by group id|Used when `groupId` is provided|
+|`siteFiles`|List of files by site id|Used when `siteId` is provided|
+|`userFiles`|List of files by user id|Used when `userId` is provided|
+|`insightFiles`|List of files by insights|Used when `insightType` and `insightId` are provided|
+|`fileQueries`|List of files by queries|Used when `fileQuery` is provided|
+
+See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
