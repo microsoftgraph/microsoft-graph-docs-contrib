@@ -1,7 +1,7 @@
 ---
-author: MarcMroz
+author: Elmaz Khussainov
 description: "The mediaSource resource contains metadata about source of the media (audio or video) drive item."
-ms.author: brcrowne
+ms.author: elkhussa
 ms.date: 07/15/2020
 title: MediaSource
 localization_priority: Normal
@@ -13,6 +13,12 @@ doc_type: "resourcePageType"
 The **MediaSource** resource contains metadata about the source of media (audio or video) drive item.
 
 It is available on the media property of [driveItem][item-resource] resources.
+
+## Properties
+
+| Property                 | Type                       | Description                                                                                      |
+| :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
+| **contentCategory**      | mediaSourceContentCategory | Enumeration value that indicates the media content category.                                     |
 
 ## JSON representation
 
@@ -30,20 +36,14 @@ It is available on the media property of [driveItem][item-resource] resources.
 }
 ```
 
-## Properties
-
-| Property                 | Type                       | Description                                                                                      |
-| :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
-| **contentCategory**      | mediaSourceContentCategory | Enumeration value that indicates the media content category.                                     |
-
-### mediaSourceContentCategory enumeration
+### mediaSourceContentCategory values
 
 | Value               | Description                                         |
 |:------------------- |:----------------------------------------------------|
-| meeting             | The media is a Meeting.                             |
-| liveStream          | The media is a Live Stream.                         |
-| presentation        | The media is a Presentation.                        |
-| screenRecording     | The media is a Screen Recording.                    |
+| meeting             | The media is a meeting.                             |
+| liveStream          | The media is a live stream.                         |
+| presentation        | The media is a presentation.                        |
+| screenRecording     | The media is a screen recording.                    |
 | unknownFutureValue  | Marker value for future compatibility.              |
 
 ## Remarks

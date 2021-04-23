@@ -1,12 +1,12 @@
 ---
 author: JeremyKelley
 description: "The SpecialFolder resource groups special folder-related data items into a single structure."
-ms.date: 09/10/2017
+ms.date: 04/22/2021
 title: SpecialFolder
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
-ms.author: brcrowne
+ms.author: elkhussa
 ---
 # SpecialFolder resource type
 
@@ -25,7 +25,25 @@ If a special folder is renamed or moved to another location within the drive, th
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
 
+The following special folder names are available in OneDrive and OneDrive for Business.
+
+| Name        | Folder id    | Description                                                              |
+|:------------|:-------------|:-------------------------------------------------------------------------|
+| Documents   | `documents`  | The Documents folder.                                                    |
+| Photos      | `photos`     | The Photos folder.                                                       |
+| Camera Roll | `cameraroll` | The Camera Roll Backup folder.                                           |
+| App Root    | `approot`    | The application's personal folder. Usually in `/Apps/{Application Name}`. |
+| Music       | `music`      | The Music folder.                                                        |
+| Recordings  | `recordings` | The Recordings folder. This option is only available in OneDrive for Business and SharePoint Online. |
+
 **Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.
+
+## Properties
+
+| Property  | Type   | Description                                                            |
+|:----------|:-------|:-----------------------------------------------------------------------|
+| name      | string | The unique identifier for this item in the `/drive/special` collection |
+
 
 ## JSON representation
 
@@ -41,18 +59,6 @@ If a user deletes one, it is recreated when written to again.
   "name": "string"
 }
 ```
-
-## Properties
-
-| Property  | Type   | Description                                                            |
-|:----------|:-------|:-----------------------------------------------------------------------|
-| name      | string | The unique identifier for this item in the `/drive/special` collection |
-
-## Special folders
-
-[!INCLUDE [files-special-folder-list](../includes/files-special-folder-list.md)]
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Remarks 
 
