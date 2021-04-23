@@ -12,9 +12,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the members of an updatable asset group.
+List the members of an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) resource. Members are of the [azureADDevice](../resources/windowsupdates-azureaddevice.md) type.
 
-This operation references the **members** navigation property of an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) resource. To reference a property of a type derived from [updatableAsset](../resources/windowsupdates-updatableasset.md), include the full derived resource type in the query URL, i.e., `.../microsoft.graph.windowsUpdates.updatableAssetGroup/members`.
+This operation references the **members** navigation property of an **updatableAssetGroup** resource. To reference a property of a type derived from [updatableAsset](../resources/windowsupdates-updatableasset.md), include the full derived resource type in the query URL, i.e., `.../microsoft.graph.windowsUpdates.updatableAssetGroup/members`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

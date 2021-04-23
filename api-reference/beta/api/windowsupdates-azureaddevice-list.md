@@ -7,14 +7,14 @@ ms.prod: "w10"
 doc_type: apiPageType
 ---
 
-# List azureADDevices
+# List azureADDevice resources
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.
 
-This operation filters on the full resource type, `microsoft.graph.windowsUpdates.azureADDevice`, which inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
+This operation filters on the fully qualified resource type, `microsoft.graph.windowsUpdates.azureADDevice`, which inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

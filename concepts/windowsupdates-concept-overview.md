@@ -28,12 +28,12 @@ To use the deployment service, your organization must have one of the following 
 * Microsoft 365 Business Premium
 
 Additionally, devices managed by the deployment service must:
-* Be Azure AD joined or Hybrid AD joined
+* Be joined to Azure AD or Hybrid AD
 * Run one of the following Windows 10 editions: Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Pro Education
 * Have installed Windows 10 version 1709 or later
 
 To fully benefit from the capabilities of the deployment service, we also recommend that:
-* Telemetry is turned on with a minimum setting of Required
+* Telemetry is turned on with a minimum setting of `Required`
 * The AllowWUfBCloudProcessing policy is set to 1
 
 ## Enroll devices to be managed
@@ -42,7 +42,7 @@ To start using the deployment service, [enroll devices in update management](win
 
 ## Approve and schedule Windows content delivered from Windows Update
 
-The deployment service simplifies reviewing, approving, scheduling, and deploying content for a diverse device ecosystem. The updates catalog provides a view tailored for approvals, helping you focus on approval decisions that matter and avoiding the need to sort through deep lists of related updates.
+The deployment service simplifies reviewing, approving, scheduling, and deploying content for a diverse device ecosystem. An updates catalog exists to provide a view tailored for approvals, helping you focus on approval decisions that matter and avoiding the need to sort through deep lists of related updates.
 
 Once you choose an update to deploy, you can schedule deployments to start at a future time, or deploy over a period of time. If you choose to deploy an update over a period of time, the deployment service automatically optimizes the order in which devices are offered updates. When possible, the service orders devices to ensure that a diversity of hardware and software assets are represented early in the deployment to minimize the number of devices that may encounter an unexpected update issue. 
 

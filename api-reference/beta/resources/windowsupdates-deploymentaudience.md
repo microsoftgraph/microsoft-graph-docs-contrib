@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The set of assets to which a deployment can apply.
+The set of [updatableAsset](../resources/windowsupdates-updatableasset.md) resources to which a deployment can apply.
 
 ## Methods
 |Method|Return type|Description|

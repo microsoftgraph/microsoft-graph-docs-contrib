@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rule defining a signal and threshold to monitor and the action to perform when met.
+Rule defining a signal and threshold to monitor, and the action to perform when met.
 
 ## Properties
 |Property|Type|Description|

@@ -23,7 +23,7 @@ Singleton entity that acts as a container for Windows functionality.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|updates|[microsoft.graph.windowsUpdates.updates](../resources/windowsupdates-updates.md)|Singleton entity that acts as a container for Windows Update for Business deployment service functionality. Read-only.|
+|updates|[microsoft.graph.windowsUpdates.updates](../resources/windowsupdates-updates.md)|Singleton entity that acts as a container for the functionality of the Windows Update for Business deployment service. Read-only.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

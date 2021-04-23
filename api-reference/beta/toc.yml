@@ -9485,23 +9485,26 @@ items:
         - name: Deployment
           href: resources/windowsupdates-deployment.md
           items:
+          - name: List deployments
+            href: api/windowsupdates-deployment-list.md
           - name: Create deployment
             href: api/windowsupdates-deployment-create.md
           - name: Get deployment
             href: api/windowsupdates-deployment-get.md
-          - name: List deployments
-            href: api/windowsupdates-deployment-list.md
           - name: Update deployment
             href: api/windowsupdates-deployment-update.md
           - name: Delete deployment
             href: api/windowsupdates-deployment-delete.md
-          - name: Expedited quality update reference
-            href: resources/windowsupdates-expeditedqualityupdatereference.md
-          - name: Feature update reference
-            href: resources/windowsupdates-featureupdatereference.md
-          - name: Deployment audience
-            href: resources/windowsupdates-deploymentaudience.md
+          - name: Deployable content
             items:
+            - name: Expedited quality update reference
+              href: resources/windowsupdates-expeditedqualityupdatereference.md
+            - name: Feature update reference
+              href: resources/windowsupdates-featureupdatereference.md
+          - name: Deployment audience
+            items:
+            - name: Deployment audience
+              href: resources/windowsupdates-deploymentaudience.md
             - name: List members
               href: api/windowsupdates-deploymentaudience-list-members.md
             - name: List exclusions

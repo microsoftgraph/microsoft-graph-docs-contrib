@@ -14,6 +14,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.
 
+The **updatableAssetGroup** resource inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
