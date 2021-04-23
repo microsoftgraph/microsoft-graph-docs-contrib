@@ -1167,7 +1167,7 @@
      "Description":"Removed the `unknownFutureValue` member from the **requirementProvider** enumeration",
      "Target":"requirementProvider"
   }
-],
+  ],
 "Id":"1594f40e-5c44-11eb-8de9-f7f8b8b7f046",
 "Cloud":"prd",
 "Version":"beta",
@@ -1175,5 +1175,6 @@
 "WorkloadArea":"Reports and audit",
 "SubArea":"Identity and access reports"
 }
-  ]
+]
 }
+
