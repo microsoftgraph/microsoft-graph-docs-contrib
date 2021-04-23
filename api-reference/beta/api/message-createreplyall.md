@@ -162,10 +162,13 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 ```
 ##### Response
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json

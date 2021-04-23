@@ -119,6 +119,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 
 <!-- {
   "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
   "truncated": true
 } -->
 

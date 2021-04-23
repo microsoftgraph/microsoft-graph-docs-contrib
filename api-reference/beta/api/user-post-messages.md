@@ -436,8 +436,10 @@ RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQE0zNjV4NzY1MTQwLk9uTWljcm9zb2Z0LmNvbT4KVG86IE1l
 
 ##### Response
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
   "truncated": true
 } -->
 

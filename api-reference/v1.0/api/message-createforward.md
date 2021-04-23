@@ -119,9 +119,10 @@ Content-length: 248
 ### Example 2 Create a draft message in MIME format to forward an existing message
 ##### Request
 <!-- {
-  "blockType": "request",
-  "name": "message_createForward_mime_v1"
-}-->
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
+  "truncated": true
+} -->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/createForward

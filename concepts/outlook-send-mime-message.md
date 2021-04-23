@@ -25,7 +25,7 @@ Supported MIME features:
 Visit the documentation about [getting MIME content of a message](../concepts/outlook-get-mime-message.md) for more information about MIME.
 
 ## Details
-There are two supported formarts for creating a [message](../resources/message.md): (1) JSON metadata (2) MIME content. The selected format should be specified in the request header.
+There are two supported formarts for creating a [message](/graph/api-reference/v1.0/resources/message.md): (1) JSON metadata (2) MIME content. The selected format should be specified in the request header.
 
 1. If `Content-Type: application/json` is specified in the header, JSON metadata should be specified in the request body.
 2. If `Content-Type: text/plain` is specified in the header, MIME content should be specified in the request body.

@@ -123,6 +123,7 @@ RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQE0zNjV4NzY1MTQwLk9uTWljcm9zb2Z0LmNvbT4KVG86IE1l
 
 <!-- {
   "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
   "truncated": true
 } -->
 

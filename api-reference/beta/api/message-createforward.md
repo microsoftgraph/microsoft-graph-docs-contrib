@@ -171,6 +171,7 @@ Here is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
   "truncated": true
 } -->
 

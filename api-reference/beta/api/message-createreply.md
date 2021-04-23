@@ -158,10 +158,12 @@ Content-type: application/json
 
 ### Example 2: Create a draft using MIME format to reply to an existing message
 ##### Request
+
 <!-- {
-  "blockType": "request",
-  "name": "message_createReply_mime_beta"
-}-->
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
+  "truncated": true
+} -->
 
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/createreply
