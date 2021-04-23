@@ -1,7 +1,7 @@
 ---
 title: "Provision channel email"
 description: "Provision a channel's email."
-author: "shsi"
+author: "shantanu1singh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

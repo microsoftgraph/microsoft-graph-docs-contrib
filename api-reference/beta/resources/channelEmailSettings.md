@@ -1,7 +1,7 @@
 ---
 title: "channelEmailSettings resource type"
 description: "Represents a channel's email settings."
-author: "shsi"
+author: "shantanu1singh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType

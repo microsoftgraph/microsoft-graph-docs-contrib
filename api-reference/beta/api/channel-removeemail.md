@@ -1,7 +1,7 @@
 ---
 title: "Remove channel email"
 description: "Remove a channel's provisioned email."
-author: "shsi"
+author: "shantanu1singh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

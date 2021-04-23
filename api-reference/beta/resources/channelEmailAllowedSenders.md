@@ -1,7 +1,7 @@
 ---
 title: "channelAllowedSenders resource type"
 description: "Represents a channel's allowed senders."
-author: "shsi"
+author: "shantanu1singh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 Represents the settings that can be used to control access to sending messages to a channel via the provisioned channel email address.
 
-The [senderType](../resources/enums.md#channelEmailAllowedSenderType-values) property can be used to specify the type of senders that are allowed to send messages to the channel via the email address.
+The [senderType](../resources/enums.md#channelemailallowedsendertype-values) property can be used to specify the type of senders that are allowed to send messages to the channel via the email address.
 
 > **Note**: The `domains` property can only be used when the `senderType` property is set to `domains`.
 
 ## Properties
 | Property   | Type                                                                                        | Description                                                                                                                                        |
 | :--------- | :------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-| senderType | [channelEmailAllowedSenderType](../resources/enums.md#channelEmailAllowedSenderType-values) | Represents the type of senders allowed to send messages to the channel. Possible values are: `public`, `domains`, `members`, `unknownFutureValue`. |
+| senderType | [channelEmailAllowedSenderType](../resources/enums.md#channelemailallowedsendertype-values) | Represents the type of senders allowed to send messages to the channel. Possible values are: `public`, `domains`, `members`, `unknownFutureValue`. |
 | domains    | String collection                                                                           | Represents the source email address domains that are allowed to send messages to the channel.                                                      |
 
 ## Relationships
