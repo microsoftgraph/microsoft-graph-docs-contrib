@@ -7,7 +7,7 @@ author: beth-panx
 
 # File list component in the Microsoft Graph Toolkit
 
-The File List component displays [a list of multiple folders and files](/graph/api/resources/onedrive) by using the file/folder name, an icon, and other properties specicified by the developer. This component uses the [mgt-file](./file.md) component. The developer is able to specify a specific drive or or site, display a list of files based on insight type (trending, used, or shared), or provide queries to a custom list of files.
+The File List component displays [a list of multiple folders and files](/graph/api/resources/onedrive) by using the file/folder name, an icon, and other properties specicified by the developer. This component uses the [mgt-file](./file.md) component. The developer is able to specify a specific drive or site, display a list of files based on insight type (trending, used, or shared), or provide queries to a custom list of files.
 
 ## Example
 
