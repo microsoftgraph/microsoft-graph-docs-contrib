@@ -1,16 +1,16 @@
 ---
-title: "accessReviewInstance: resetDecisions"
-description: "**TODO: Add Description**"
+title: "accessReviewInstance: sendReminder"
+description: "Sends a reminder to the reviewers of a currently active accessReviewInstance."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# accessReviewInstance: resetDecisions
+# accessReviewInstance: sendReminder
 Namespace: microsoft.graph
 
-Resets all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on an [accessReviewInstance](../resources/accessreviewinstance.md) to not reviewed.
+Send a reminder to the reviewers of an active [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/resetDecisions
+POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/sendReminder
 ```
 
 ## Request headers
@@ -48,11 +48,11 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "accessreviewinstance_resetdecisions"
+  "name": "accessreviewinstance_sendreminder"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/resetDecisions
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/sendReminder
 ```
 
 
