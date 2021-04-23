@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 ---
 # Media resouce type
 
-The **Media** resource contains metadata about the media (audio or video) drive item.
+Contains metadata about the media (audio or video) drive item.
 
 It is available on the media property of [driveItem][item-resource] resources.
 
