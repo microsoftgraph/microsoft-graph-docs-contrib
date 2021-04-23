@@ -43,8 +43,8 @@ where files are shared, and where tabs are added.
 |[Get tab in channel](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a channel.|
 |[Update tab in channel](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Updates the properties of a tab in a channel.|
 |[Remove tab from channel](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
-|[Provision channel email](../api/channel-email-provision.md) | None | Provision a channel's email.|
-|[Remove channel email](../api/channel-email-removal.md) | None | Remove a channel's provisioned email.|
+|[Provision channel email](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provision a channel's email.|
+|[Remove channel email](../api/channel-removeemail.md) | None | Remove a channel's provisioned email.|
 
 ## Properties
 
@@ -55,6 +55,7 @@ where files are shared, and where tabs are added.
 |id|String|The channel's unique identifier. Read-only.|
 |isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
+|emailSettings|[channelEmailSettings](../resources/channelemailsettings.md)|The channel's email settings|
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and cannot be changed. Default: standard.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
@@ -102,10 +103,15 @@ The following is a JSON representation of the resource.
   "id": "string (identifier)",
   "isFavoriteByDefault": true,
   "email": "string",
+  "emailSettings": {
+    "@odata.type": "microsoft.graph.channelEmailSettings"
+  },
   "webUrl": "string",
   "membershipType": "channelMembershipType",
   "createdDateTime": "string (timestamp)",
-  "moderationSettings": "channelModerationSettings"
+  "moderationSettings": {
+    "@odata.type": "microsoft.graph.channelModerationSettings"
+  }
 }
 ```
 

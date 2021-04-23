@@ -18,7 +18,7 @@ In Microsoft Teams, users can set up a *system generated* email address for a Ch
 
 By default, an email address is not provisioned for a Channel.
 
-To remove a channel's provisioned email address, use the API to [remove channel email](channel-email-removal.md).
+To remove a channel's provisioned email address, use the API to [remove channel email](channel-removeemail.md).
 
 > **Note**: This API is currently not supported for shared channels.
 
@@ -69,23 +69,43 @@ If the channel's email is provisioned successfully, this method returns a `200 O
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "provision_channel_email"
-}-->
+  "name": "channel_provisionemail"
+}
+-->
 ```http
 POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/provisionEmail
+
+
+Content-Type: application/json
+Content-length: 90
+{
+  "emailSettings": {
+    "allowedSenders": {
+      "senderType": "domains",
+      "domains": [
+        "microsoft.com",
+        "hotmail.com"
+      ]
+    }
+  }
+}
 ```
 
 #### Response
 The following is an example of a response.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "provision_channel_email"
-}-->
+  "truncated": true,
+  "@odata.type": "microsoft.graph.provisionChannelEmailResult"
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.provisionChannelEmailResult"
     "email": "1df8f174.teamsgraph.onmicrosoft.com@amer.teams.ms"
 }
 ```

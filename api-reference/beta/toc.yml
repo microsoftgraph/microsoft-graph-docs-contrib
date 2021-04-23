@@ -13352,9 +13352,9 @@ items:
         - name: Get messages across all channels
           href: api/channel-getallmessages.md
         - name: Provision a channel's email.
-          href: api/channel-email-provision.md  
+          href: api/channel-provisionemail.md  
         - name: Remove a channel's provisioned email
-          href: api/channel-email-removal.md  
+          href: api/channel-removeemail.md  
       - name: Chat
         href: resources/chat.md
         items:

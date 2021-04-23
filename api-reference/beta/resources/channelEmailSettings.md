@@ -17,12 +17,15 @@ In Microsoft Teams, users can set up a *system generated* email address for a Ch
 
 By default, a channel does not have an email address provisioned. Once an email address has been provisioned, it can be used to post messages to the channel by sending an email to the generated address.
 
-The [allowedSenders](channelEmailAllowedSenders.md) property of channel email settings can be used to control access to sending messages to a channel via the provisioned email address.
+The [allowedSenders](channelemailallowedsenders.md) property of channel email settings can be used to control access to sending messages to a channel via the provisioned email address.
 
 ## Properties
 | Property       | Type                                                        | Description                                                                                |
 | :------------- | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------- |
-| allowedSenders | [channelEmailAllowedSenders](channelEmailAllowedSenders.md) | Used to control access to sending messages to a channel via the provisioned email address. |
+| allowedSenders | [channelEmailAllowedSenders](channelemailallowedsenders.md) | Used to control access to sending messages to a channel via the provisioned email address. |
+
+## Relationships
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -34,10 +37,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.channelEmailSettings",
-  "allowedSenders": "channelEmailAllowedSenders",
+  "allowedSenders": {
+    "@odata.type": "microsoft.graph.channelEmailAllowedSenders"
+  }
 }
 ```
 
 ## See also
 
-- To provision a channel's email address, see [Provision channel email](..\api\channel-email-provision.md).
+- To provision a channel's email address, see [Provision channel email](..\api\channel-provisionemail.md).

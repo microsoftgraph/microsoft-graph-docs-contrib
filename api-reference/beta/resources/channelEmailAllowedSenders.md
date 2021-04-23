@@ -20,10 +20,13 @@ The [senderType](../resources/enums.md#channelEmailAllowedSenderType-values) pro
 > **Note**: The `domains` property can only be used when the `senderType` property is set to `domains`.
 
 ## Properties
-| Property   | Type                                                                                        | Description                                                                                   |
-| :--------- | :------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------- |
-| senderType | [channelEmailAllowedSenderType](../resources/enums.md#channelEmailAllowedSenderType-values) | Represents the type of senders allowed to send messages to the channel.                       |
-| domains    | String collection                                                                           | Represents the source email address domains that are allowed to send messages to the channel. |
+| Property   | Type                                                                                        | Description                                                                                                                                        |
+| :--------- | :------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| senderType | [channelEmailAllowedSenderType](../resources/enums.md#channelEmailAllowedSenderType-values) | Represents the type of senders allowed to send messages to the channel. Possible values are: `public`, `domains`, `members`, `unknownFutureValue`. |
+| domains    | String collection                                                                           | Represents the source email address domains that are allowed to send messages to the channel.                                                      |
+
+## Relationships
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -44,4 +47,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-- To provision a channel's email address, see [Provision channel email](..\api\channel-email-provision.md).
+- To provision a channel's email address, see [Provision channel email](..\api\channel-provisionemail.md).
