@@ -175,7 +175,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true
 } -->
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

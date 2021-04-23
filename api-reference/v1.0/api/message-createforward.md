@@ -136,7 +136,7 @@ RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQE0zNjV4NzY1MTQwLk9uTWljcm9zb2Z0LmNvbT4KVG86IE1l
   "truncated": true
 } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
