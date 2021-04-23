@@ -13,13 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects. A list of zero or more accessReviewScheduleDefinition objects are returned, including all of their nested properties, for each access review series created. This does not include associated accessReviewInstances.
+Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects. A list of zero or more accessReviewScheduleDefinition objects are returned, including all of their nested properties, for each access review series created. This does not include the associated accessReviewInstance objects.
 
 >[!NOTE]
->If many **accessReviewScheduleDefinitions** are returned, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the $top query parameter with a page size of at most 100, and the $skip=0 query parameter in the request. When a result set spans multiple pages, Microsoft Graph returns that page with an @odata.nextLink property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.
->
->If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.
-
+>The default page size for this API is 100 accessReviewScheduleDefinition objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,13 +27,47 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- The signed-in user must also be in a directory role that permits them to read an access review.
+ The signed-in user must also be in a directory role that permits them to read an access review. See access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks)
 
 ## HTTP request
+
+To list all your accessReviewScheduleDefinitions:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/accessReviews/definitions
 ```
+
+## Optional query parameters
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+|Parameter|Description|Example|
+|:---     |:---       |:---   |
+|$select  |Returns only specified properties for an object.|identityGovernance/accessReviews/definitions?$select=scope,instanceEnumerationScope,reviewers|
+|$top  |Sets the page size of results. Use together with $skip to paginate your results.|/identityGovernance/accessReviews/definitions?$top=100&$skip=0|
+|$skip  |Specify the number of results to skip at the start of the collection.|/identityGovernance/accessReviews/definitions?$top=100&$skip=100|
+|$filter  |Retrieve only a subset of the collection.|/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'groups'|
+
+### Use of the $filter query parameter
+The `$filter` query parameter with the `contains` operator is supported on the **scope** and **instanceEnumerationScope** properties of the accessReviewScheduleDefinition. The request statement will take on the following format:
+
+```http
+GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}'
+```
+
+where the value of `{object}` can be one of the following:
+
+|Value of {object}|Scenario|Example|
+|:---     |:---       |:---   |
+|`/groups`  |List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).|Example|
+|`/groups/{group-id}`  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|Example|
+|`./members`  |List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.|Example|
+|`accessPackageAssignments`  |List every accessReviewScheduleDefinition on an access package.|Example|
+|`roleAssignmentScheduleInstances`  |List every accessReviewScheduleDefinition for service principals assigned to privileged role.|Example|
+
+Note that `$filter` is currently not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.
+
+
 ## Request headers
 None.
 

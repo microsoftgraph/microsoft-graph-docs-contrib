@@ -55,11 +55,15 @@ The following table shows the properties accepted to create an accessReview.
 
 
 ## Response
-If successful, this method returns a `201, Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
 
-## Examples
+## Example 1: Create an access review
 
-This is an example of creating an access review series with a specific user, whose user object id is 7eae4444-d425-48b2-adf2-3c777f6256f3, as the reviewer. The review reviews all members of a specific group, whose group object id is b7a059cb-038a-4802-8fc9-b9d1ed0c4444. It recurs weekly.
+This is an example of creating an access review with the following settings:
++ The review reviews all members of a specific group, whose group **id** is `b7a059cb-038a-4802-8fc9-b9d1ed0c4444`.
++ A specific user, whose user **id** is `7eae4444-d425-48b2-adf2-3c777f6256f3` is the reviewer.
++ It recurs weekly and continues indefinitely.
++ **autoApplyDecisionsEnabled** is set to `false`. In this case, once the reviewer completes the access review, a user must apply the decisions manually.
 
 ### Request
 In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
@@ -131,7 +135,7 @@ Content-type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -197,6 +201,68 @@ Content-type: application/json
     }
 }
 ```
+
+## Example 2: Create an access review on all teams with inactive guest users
+
+This is an example of creating an access review with the following settings:
++ The review reviews all members of a specific group, whose group **id** is `0fbf2921-5d17-4c2b-bae4-cc581de72c13`.
++ The group owners are the reviewers.
++ It recurs every 3 days and continues indefinitely.
++ **autoApplyDecisionsEnabled** is set to `true`. In this case, decisions are applied automatically once the reviewer completes the access review.
+
+### Request
+In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
+<!-- {
+  "blockType": "request",
+  "name": "create_accessReviewScheduleDefinition_inactiveguests_M365"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+
+
+```
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+
+
+```
+
+## Example 3: Create an access review of all users to one M365 group and one Azure AD role
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
+}-->
+```http
+
+```
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+
+
+```
+
 
 <!--
 {
