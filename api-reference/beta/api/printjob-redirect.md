@@ -56,6 +56,8 @@ The following is an example of the request.
 
 
 # [HTTP](#tab/http)
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-redirect"
@@ -64,7 +66,38 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353/redirect
 
 {
-  "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
+  "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",
+  "configuration": {
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -82,6 +115,9 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -109,8 +145,40 @@ Content-length: 437
     "userPrincipalName": ""
   },
   "status": {
-    "processingState": "processing",
-    "processingStateDescription": "The print job is currently being processed by the printer."
+    "state": "processing",
+    "description": "The print job is currently being processed by the printer.",
+    "details": ["interpreting"]
+  },
+  "configuration": {
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
   }
 }
 ```

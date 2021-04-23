@@ -2,7 +2,7 @@
 title: "List user memberOf"
 description: "Get groups, directory roles and administrative units that the user is a direct member of. This operation is not transitive."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get groups, directory roles and administrative units that the user is a direct member of. This operation is not transitive.
+Get [groups](../resources/group.md), [directory roles](../resources/directoryrole.md), and [administrative units](../resources/administrativeunit.md) that the user is a direct member of. This operation is not transitive.
 
 ## Permissions
 
@@ -128,6 +128,8 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/memberOf/$count
 ConsistencyLevel: eventual
+
+17
 ```
 
 #### Response
@@ -174,6 +176,8 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+16
 ```
 
 ### Example 4: Use $search and OData cast to get membership in groups with display names that contain the letters 'tier' including a count of returned objects
