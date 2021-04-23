@@ -168,10 +168,12 @@ RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQE0zNjV4NzY1MTQwLk9uTWljcm9zb2Z0LmNvbT4KVG86IE1l
 ```
 ##### Response
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -231,6 +233,7 @@ Content-type: application/json
         "flagStatus": "notFlagged"
     }
 }
+
 ```
 
 
