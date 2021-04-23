@@ -104,7 +104,6 @@ Content-type: application/json
     {
       "accountEnabled":true,
       "displayName":"amasf",
-      "publisherName":"Contoso",
       "servicePrincipalType":"Application",
       "signInAudience":"AzureADMyOrg"
     }
@@ -179,7 +178,6 @@ Content-type: application/json
     {
       "accountEnabled":true,
       "displayName":"a",
-      "publisherName":"Contoso",
       "servicePrincipalType":"Application",
       "signInAudience":"AzureADMyOrg"
     }
@@ -225,7 +223,6 @@ Content-type: application/json
     {
       "accountEnabled":true,
       "displayName":"myContosoTeam",
-      "publisherName":"Contoso",
       "servicePrincipalType":"Application",
       "signInAudience":"AzureADMyOrg"
     }
