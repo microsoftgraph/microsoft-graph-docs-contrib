@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List unifiedRoleAssignmentSchedules
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) objects and their properties.
 
 ## Permissions
@@ -32,7 +34,7 @@ GET /roleManagement/directory/roleAssignmentSchedules
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -75,19 +77,19 @@ Content-Type: application/json
   "value": [
     {
       "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "createdUsing": "String",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "status": "String",
+      "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "createdUsing": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "createdDateTime": "2020-09-09T21:35:27.91Z",
+      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
+      "status": "Provsioned",
       "scheduleInfo": {
         "@odata.type": "microsoft.graph.requestSchedule"
       },
-      "assignmentType": "String",
-      "memberType": "String"
+      "assignmentType": "eligible",
+      "memberType": "direct"
     }
   ]
 }

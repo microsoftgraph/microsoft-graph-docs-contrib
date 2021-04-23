@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Update unifiedRoleEligibilityScheduleRequest
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of an [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object.
 
 ## Permissions

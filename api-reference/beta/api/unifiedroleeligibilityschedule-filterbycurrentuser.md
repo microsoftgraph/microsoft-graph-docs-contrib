@@ -10,6 +10,8 @@ doc_type: apiPageType
 # unifiedRoleEligibilitySchedule: filterByCurrentUser
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [unifiedRoleEligibilitySchedule](../resources/unifiedRoleEligibilitySchedule.md) objects and their properties associated with a particular principal object.
 
 ## Permissions
@@ -31,13 +33,12 @@ One of the following permissions is required to call this API. To learn more, in
 GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser
 ```
 
-## Function parameters
-In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+## Query parameters
+The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleEligibilityScheduleFilterByCurrentUserOptions|ID of the current user|
+|on|roleEligibilityScheduleFilterByCurrentUserOptions|Id of the current user.|
 
 
 ## Request headers
@@ -50,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection in the response body.
 
 ## Examples
 
@@ -61,7 +62,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='eb18c026-c026-eb18-26c0-18eb26c018eb')
 ```
 
 
@@ -80,19 +81,19 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "String (identifier)",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "createdUsing": "String",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "status": "String",
+      "id": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+      "principalId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+      "roleDefinitionId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+      "directoryScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+      "appScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+      "createdUsing": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+      "createdDateTime": "2020-09-09T21:35:27.91Z",
+      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
+      "status": "Provisioned",
       "scheduleInfo": {
         "@odata.type": "microsoft.graph.requestSchedule"
       },
-      "memberType": "String"
+      "memberType": "direct"
     }
   ]
 }

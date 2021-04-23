@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get unifiedRoleManagementPolicyAssignment
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Read the properties and relationships of an [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) object.
 
 ## Permissions
@@ -32,7 +34,7 @@ GET /policies/roleManagementPolicyAssignments/{unifiedRoleManagementPolicyAssign
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/{unifiedRoleManagementPolicyAssignmentId}
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/d6e4112f-112f-d6e4-2f11-e4d62f11e4d6
 ```
 
 
@@ -74,10 +76,10 @@ Content-Type: application/json
 {
   "value": {
     "id": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-    "policyId": "String",
-    "scopeId": "String",
-    "scopeType": "String",
-    "roleDefinitionId": "String"
+    "policyId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
+    "scopeId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
+    "scopeType": "subscription",
+    "roleDefinitionId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6"
   }
 }
 ```

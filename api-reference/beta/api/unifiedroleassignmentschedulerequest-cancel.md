@@ -10,6 +10,8 @@ doc_type: apiPageType
 # unifiedRoleAssignmentScheduleRequest: cancel
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Immediately cancel a [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) and have the system automatically delete the cancelled request after 30 days.
 
 ## Permissions

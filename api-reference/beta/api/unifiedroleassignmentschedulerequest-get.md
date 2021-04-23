@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Read the properties and relationships of an [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.
 
 ## Permissions

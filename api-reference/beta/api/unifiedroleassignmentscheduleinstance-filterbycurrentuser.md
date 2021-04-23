@@ -10,6 +10,8 @@ doc_type: apiPageType
 # unifiedRoleAssignmentScheduleInstance: filterByCurrentUser
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [unifiedRoleAssignmentScheduleInstance](../resources/unifiedRoleAssignmentScheduleInstance.md) objects and their properties associated with a particular principal object.
 
 ## Permissions
@@ -31,13 +33,12 @@ One of the following permissions is required to call this API. To learn more, in
 GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUser
 ```
 
-## Function parameters
-In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+## Query parameters
+The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|ID of the current user|
+|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|Id of the current user.|
 
 
 ## Request headers
@@ -50,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) collection in the response body.
 
 ## Examples
 
@@ -61,7 +62,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleInstances/unifiedRoleAssignmentScheduleInstances/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleInstances/unifiedRoleAssignmentScheduleInstances/filterByCurrentUser(on='dce468b2-68b2-dce4-b268-e4dcb268e4dc')
 ```
 
 
@@ -80,17 +81,17 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "String (identifier)",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "assignmentType": "String",
-      "memberType": "String",
-      "roleAssignmentOriginId": "String",
-      "roleAssignmentScheduleId": "String"
+      "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "startDateTime": "2020-09-09T21:35:27.91Z",
+      "endDateTime": "2020-09-09T21:35:27.91Z",
+      "assignmentType": "eligible",
+      "memberType": "direct",
+      "roleAssignmentOriginId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "roleAssignmentScheduleId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc"
     }
   ]
 }

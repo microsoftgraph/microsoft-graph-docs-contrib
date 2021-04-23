@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List unifiedRoleEligibilityScheduleRequests
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) objects and their properties.
 
 ## Permissions

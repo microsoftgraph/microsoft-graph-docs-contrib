@@ -10,6 +10,8 @@ doc_type: apiPageType
 # unifiedRoleEligibilityScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) objects and their properties associated with a particular principal object.
 
 ## Permissions

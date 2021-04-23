@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get unifiedRoleAssignmentScheduleInstance
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Read the properties and relationships of an [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) object.
 
 ## Permissions
@@ -32,7 +34,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/{unifiedRoleAssign
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/unifiedRoleAssignmentScheduleInstances/{unifiedRoleAssignmentScheduleInstancesId}
+GET https://graph.microsoft.com/beta/roleManagement/directory/unifiedRoleAssignmentScheduleInstances/eb18c026-c026-eb18-26c0-18eb26c018eb
 ```
 
 
@@ -74,16 +76,16 @@ Content-Type: application/json
 {
   "value": {
     "id": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-    "principalId": "String",
-    "roleDefinitionId": "String",
-    "directoryScopeId": "String",
-    "appScopeId": "String",
-    "startDateTime": "String (timestamp)",
-    "endDateTime": "String (timestamp)",
-    "assignmentType": "String",
-    "memberType": "String",
-    "roleAssignmentOriginId": "String",
-    "roleAssignmentScheduleId": "String"
+    "principalId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+    "roleDefinitionId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+    "directoryScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+    "appScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+    "startDateTime": "2020-09-09T21:35:27.91Z",
+    "endDateTime": "2020-09-09T21:35:27.91Z",
+    "assignmentType": "eligible",
+    "memberType": "direct",
+    "roleAssignmentOriginId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
+    "roleAssignmentScheduleId": "eb18c026-c026-eb18-26c0-18eb26c018eb"
   }
 }
 ```

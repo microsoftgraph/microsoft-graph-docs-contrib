@@ -10,6 +10,8 @@ doc_type: apiPageType
 # unifiedRoleEligibilityScheduleInstance: filterByCurrentUser
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [unifiedRoleEligibilityScheduleInstance](../resources/unifiedRoleEligibilityScheduleInstance.md) objects and their properties associated with a particular principal object.
 
 ## Permissions
@@ -31,13 +33,12 @@ One of the following permissions is required to call this API. To learn more, in
 GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser
 ```
 
-## Function parameters
-In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+## Query parameters
+The following table shows the query parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|ID of the current user|
+|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|Id of the current user.|
 
 
 ## Request headers
@@ -50,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) collection in the response body.
 
 ## Examples
 
@@ -61,7 +62,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='5cfd7709-7709-5cfd-0977-fd5c0977fd5c')
 ```
 
 
@@ -80,15 +81,15 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "String (identifier)",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "memberType": "String",
-      "roleEligibilityScheduleId": "String"
+      "id": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+      "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+      "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+      "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+      "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+      "startDateTime": "2020-09-09T21:35:27.91Z",
+      "endDateTime": "2020-09-09T21:35:27.91Z",
+      "memberType": "direct",
+      "roleEligibilityScheduleId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c"
     }
   ]
 }

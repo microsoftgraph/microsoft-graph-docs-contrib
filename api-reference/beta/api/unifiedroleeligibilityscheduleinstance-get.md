@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get unifiedRoleEligibilityScheduleInstance
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Read the properties and relationships of an [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) object.
 
 ## Permissions
@@ -32,7 +34,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/{unifiedRoleEligi
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/{unifiedRoleEligibilityScheduleInstancesId}
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/5cfd7709-7709-5cfd-0977-fd5c0977fd5c
 ```
 
 
@@ -74,14 +76,14 @@ Content-Type: application/json
 {
   "value": {
     "id": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
-    "principalId": "String",
-    "roleDefinitionId": "String",
-    "directoryScopeId": "String",
-    "appScopeId": "String",
-    "startDateTime": "String (timestamp)",
-    "endDateTime": "String (timestamp)",
-    "memberType": "String",
-    "roleEligibilityScheduleId": "String"
+    "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+    "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+    "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+    "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+    "startDateTime": "2020-09-09T21:35:27.91Z",
+    "endDateTime": "2020-09-09T21:35:27.91Z",
+    "memberType": "direct",
+    "roleEligibilityScheduleId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c"
   }
 }
 ```

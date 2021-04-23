@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Create unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.
 
 ## Permissions

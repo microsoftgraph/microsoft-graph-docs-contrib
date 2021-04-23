@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List unifiedRoleEligibilityScheduleInstances
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) objects and their properties.
 
 ## Permissions
@@ -32,7 +34,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -75,14 +77,14 @@ Content-Type: application/json
   "value": [
     {
       "id": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "memberType": "String",
-      "roleEligibilityScheduleId": "String"
+      "principalId": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
+      "roleDefinitionId": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
+      "directoryScopeId": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
+      "appScopeId": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
+      "startDateTime": "2020-09-09T21:35:27.91Z",
+      "endDateTime": "2020-09-09T21:35:27.91Z",
+      "memberType": "direct",
+      "roleEligibilityScheduleId": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1"
     }
   ]
 }
