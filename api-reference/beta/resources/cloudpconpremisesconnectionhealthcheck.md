@@ -46,7 +46,9 @@ The result of a cloud PC on-premises connection health check.
 |adJoinCheckOrganizationalUnitNotFound|The active domain join check failed because the specified organizational unit was not found. Please re-enter organization unit.|
 |adJoinCheckOrganizationalUnitIncorrectFormat|The active domain join check failed beccause the format of the specified organizational unit is incorrect. Example format: “OU=OU1,OU=OU2,OU=OU3,DC=DC1”.|
 |adJoinCheckUnknownError|The active domain join check failed due to an unknown error. Please contact customer support.|
-|endpointConnectivityCheckUrlNotWhitelisted|The endpoint connectivity check failed because the URLs are not on the allowlist in the network firewall settings. Please add the URLs to the allowlist for the network firewall settings. See [required URL list](/azure/virtual-desktop/safe-url-list) for URL information.|
+|endpointConnectivityCheckCloudPcUrlNotAllowListed|The endpoint connectivity check failed because the CPC provision script storage URL isn’t on the allow list in the network firewall settings. Please add URLs to whitelisted network firewall settings. The URLs can be found in additional information.|
+|endpointConnectivityCheckWVDUrlNotAllowListed|The endpoint connectivity check failed because the WVD URL isn’t on the allow list in the network firewall settings. Please add URLs to whitelisted network firewall settings.|
+|endpointConnectivityCheckIntuneUrlNotAllowListed|The endpoint connectivity check failed because the Intune URL isn’t on the allow list in the network firewall settings. Please add URLs to whitelisted network firewall settings.|
 |endpointConnectivityCheckUnknownError|The endpoint connectivity check failed due to an unknown error. Please contact customer support.|
 |aadConnectivityCheckUnknownError|The Azure Active Directory connectivity check failed due to an unknown error. Please contact customer support.|
 |resourceAvailabilityCheckNoSubnetIP|The resource availability check failed because there were no available IP addresses in the subnet. Please free up some or change to another subnet and retry.|

@@ -3,6 +3,56 @@
         {
             "ChangeList": [
                 {
+                    "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcOnPremisesConnectionStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `warning` member to the **cloudPcOnPremisesConnectionStatus** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionStatus"
+                },
+                {
+                    "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcOnPremisesConnectionHealthCheckErrorType",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the `endpointConnectivityCheckUrlNotWhitelisted` member from the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcOnPremisesConnectionHealthCheckErrorType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `endpointConnectivityCheckCloudPcUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcOnPremisesConnectionHealthCheckErrorType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `endpointConnectivityCheckWVDUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcOnPremisesConnectionHealthCheckErrorType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `endpointConnectivityCheckIntuneUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-04-24T00:43:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "2a611d0f-e9d5-4f52-bd55-364c83ad8eef",
                     "ApiChange": "Member",
                     "ChangedApiName": "cloudPcDeviceImageStatusDetails",
