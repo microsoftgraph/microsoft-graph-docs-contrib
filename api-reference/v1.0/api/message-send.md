@@ -119,23 +119,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 } -->
 
 ```json
-HTTP/1.1 201 Accepted
-Content-type: application/json
-
-{
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
-    "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",
-    "id":"AAMkADNlNYjSAAA=",
-    "createdDateTime":"2017-07-22T01:53:56Z",
-    "lastModifiedDateTime":"2017-07-22T01:53:57Z",
-    "changeKey":"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti",
-    "receivedDateTime":"2017-07-22T01:53:57Z",
-    "sentDateTime":"2017-07-22T01:53:57Z",
-    "hasAttachments":false,
-    "internetMessageId":"<MWHPR1301MB@MWHPR1301MB.namprd13.prod.outlook.com>",
-    "subject":"Did you see last night's game?",
-    "bodyPreview":"They were awesome!"
-}
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
