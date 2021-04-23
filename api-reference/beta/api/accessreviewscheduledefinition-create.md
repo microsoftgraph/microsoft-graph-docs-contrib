@@ -48,8 +48,8 @@ The following table shows the properties accepted to create an accessReview.
 | displayName | String | Name of access review series. Required.|
 | descriptionForAdmins | string | Context of the review provided to admins. Required. |
   descriptionForReviewers | string | Context of the review provided to reviewers. Required. |
-| scope | [accessReviewScope](../resources/accessreviewscope.md) | Defines the scope of users reviewed in a group. See  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Required.| 
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
+| scope | [accessReviewScope](../resources/accessreviewscope.md) | Defines the scope of users reviewed in a group. See  [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept.md). Required.| 
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept.md).| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Defines who the reviewers are. If none are specified, the review is a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
 
@@ -57,10 +57,10 @@ The following table shows the properties accepted to create an accessReview.
 ## Response
 If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
 
-## Example 1: Create an access review
+## Example 1: Create an access review on a security group
 
 This is an example of creating an access review with the following settings:
-+ The review reviews all members of a specific group, whose group **id** is `b7a059cb-038a-4802-8fc9-b9d1ed0c4444`.
++ The review reviews all members of a security group, whose group **id** is `b7a059cb-038a-4802-8fc9-b9d1ed0c4444`.
 + A specific user, whose user **id** is `7eae4444-d425-48b2-adf2-3c777f6256f3` is the reviewer.
 + It recurs weekly and continues indefinitely.
 + **autoApplyDecisionsEnabled** is set to `false`. In this case, once the reviewer completes the access review, a user must apply the decisions manually.
@@ -205,7 +205,7 @@ Content-type: application/json
 ## Example 2: Create an access review on all teams with inactive guest users
 
 This is an example of creating an access review with the following settings:
-+ The review reviews all members of a specific group, whose group **id** is `0fbf2921-5d17-4c2b-bae4-cc581de72c13`.
++ The review reviews all teams with inactive guest users.
 + The group owners are the reviewers.
 + It recurs every 3 days and continues indefinitely.
 + **autoApplyDecisionsEnabled** is set to `true`. In this case, decisions are applied automatically once the reviewer completes the access review.

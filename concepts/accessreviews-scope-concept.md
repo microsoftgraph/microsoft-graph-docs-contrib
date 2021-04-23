@@ -7,11 +7,12 @@ localization_priority: Normal
 
 # Configure the scope of your access review definition
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Azure AD [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allow you to programmatically review access to your Azure AD resources. This can be all users, a set of users (for example, guest users only), groups, access packages, and service principals.
 
-Azure AD access reviews APIs allow you to programmatically review access to your Azure AD resources. This can be all users, a set of users (for example, guest users only), groups, access packages, and service principals. 
+> [!NOTE]
+> The [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
 
-These resources to review are configured in the **scope** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true) resource.
+The resources to review are configured in the **scope** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true) resource.
 
 The **scope** property is of type [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true). This is an abstract type inherited by the following resources that can be used to configure resources or groups of resources that access will be reviewed against.
 

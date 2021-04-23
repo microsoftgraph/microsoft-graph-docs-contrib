@@ -7,9 +7,8 @@ localization_priority: Normal
 
 # Assign reviewers to your access review definition
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-
+> [!NOTE]
+> The [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
 
 ## See also
 
