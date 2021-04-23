@@ -23,11 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite |
+|Delegated (work or school account) | User.Read.All, User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
-
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
