@@ -556,6 +556,8 @@ items:
           href: api/group-list-owners.md
         - name: List photos
           href: api/group-list-photos.md
+        - name: List permission grants
+          href: api/group-list-permissiongrants.md
         - name: Permanently delete group
           href: api/directory-deleteditems-delete.md
         - name: Remove favorite
@@ -11318,6 +11320,19 @@ items:
             items:
             - name: List
               href: api/accesspackageassignment-list.md
+          - name: Access package assignment approval
+            href: resources/approval.md
+            items:
+            - name: Approval step
+              href: resources/approvalstep.md
+            - name: Get approval
+              href: api/approval-get.md
+            - name: List approval steps
+              href: api/approval-list-steps.md
+            - name: Get approval step
+              href: api/approvalstep-get.md
+            - name: Update approval step
+              href: api/approvalstep-update.md
           - name: Access package assignment policy
             href: resources/accesspackageassignmentpolicy.md
             items:
@@ -11410,20 +11425,6 @@ items:
               href: api/connectedorganization-delete-externalsponsors.md
             - name: Remove internal sponsors
               href: api/connectedorganization-delete-internalsponsors.md
-          - name: Approval
-            href: resources/approval.md
-            items:
-            - name: Get
-              href: api/approval-get.md
-          - name: Approval step
-            href: resources/approvalstep.md
-            items:
-            - name: List
-              href: api/approval-list-steps.md
-            - name: Get 
-              href: api/approvalstep-get.md
-            - name: Update 
-              href: api/approvalstep-update.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
             items:
@@ -13269,7 +13270,7 @@ items:
           href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
-      - name: App catalog
+      - name: App
         items:
         - name: App in catalog
           href: resources/teamsapp.md        
@@ -13281,7 +13282,14 @@ items:
           href: api/teamsapp-update.md
         - name: Delete app from catalog
           href: api/teamsapp-delete.md
-      - name: App
+        - name: App icon
+          href: resources/teamsappicon.md
+          items:
+          - name: Get icon
+            href: api/teamsappicon-get.md
+          - name: Get hosted content
+            href: api/teamworkhostedcontent-get.md
+      - name: App installation
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md

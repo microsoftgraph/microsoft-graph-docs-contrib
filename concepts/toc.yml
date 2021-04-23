@@ -244,6 +244,14 @@ items:
             items:
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
+              - name: Review access to your groups
+                items:
+                  - name: Overview of the access reviews API
+                    href: accessreviews-overview.md
+                  - name: Review access to a security group
+                    href: tutorial-accessreviews-securitygroup.md
+                  - name: Review access to a Microsoft 365 group
+                    href: tutorial-accessreviews-M365group.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
