@@ -121,7 +121,7 @@ RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQE0zNjV4NzY1MTQwLk9uTWljcm9zb2Z0LmNvbT4KVG86IE1l
 } -->
 
 ```json
-HTTP/1.1 201 Accepted
+HTTP/1.1 202 Accepted
 Content-type: application/json
 
 {
