@@ -1,6 +1,6 @@
 ---
 title: "Get educationRubric attached to educationAssignment"
-description: "Get the educaitonRubric attached to an educationAssignment, if one exists."
+description: "Get the educationRubric attached to an educationAssignment, if one exists."
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## HTTP request
 
