@@ -53,8 +53,6 @@ If the channel's provisioned email is removed successfully, this method returns 
 ## Example
 #### Request
 The following is an example of a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_channel_email"
@@ -62,23 +60,6 @@ The following is an example of a request.
 ```http
 POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/removeEmail
 ```
-<!-- # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/archive-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/archive-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/archive-team-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/archive-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
---- -->
 
 #### Response
 The following is an example of a response.

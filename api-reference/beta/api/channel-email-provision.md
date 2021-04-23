@@ -48,15 +48,15 @@ POST /teams/{id}/channels/{id}/provisionEmail
 In the request body, supply a JSON representation of [channelEmailSettings](../resources/channelemailsettings.md) object.
 ```JSON
 {
-    "emailSettings": {
-        "allowedSenders": {
-            "senderType": "domains",
-            "domains": [
-                "microsoft.com",
-                "hotmail.com"
-            ]
-        }
+  "emailSettings": {
+    "allowedSenders": {
+      "senderType": "domains",
+      "domains": [
+        "microsoft.com",
+        "hotmail.com"
+      ]
     }
+  }
 }
 ```
 
@@ -67,8 +67,6 @@ If the channel's email is provisioned successfully, this method returns a `200 O
 ## Example
 #### Request
 The following is an example of a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "provision_channel_email"
@@ -76,23 +74,6 @@ The following is an example of a request.
 ```http
 POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/provisionEmail
 ```
-<!-- # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/archive-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/archive-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/archive-team-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/archive-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
---- -->
 
 #### Response
 The following is an example of a response.

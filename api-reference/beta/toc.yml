@@ -13350,7 +13350,11 @@ items:
         - name: Reply to message
           href: api/chatmessage-post-replies.md
         - name: Get messages across all channels
-          href: api/channel-getallmessages.md  
+          href: api/channel-getallmessages.md
+        - name: Provision a channel's email.
+          href: api/channel-email-provision.md  
+        - name: Remove a channel's provisioned email
+          href: api/channel-email-removal.md  
       - name: Chat
         href: resources/chat.md
         items:

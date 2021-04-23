@@ -154,7 +154,6 @@ A channel's email must have been provisioned using the API to [provision channel
 
 > **Note**: This API currently does not support admin or application-only permissions.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel_with_emailSettings"
