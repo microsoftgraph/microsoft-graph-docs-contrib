@@ -135,8 +135,7 @@ Content-type: application/json
     "hasAttachments":false,
     "internetMessageId":"<MWHPR1301MB@MWHPR1301MB.namprd13.prod.outlook.com>",
     "subject":"Did you see last night's game?",
-    "bodyPreview":"They were awesome!",
-...
+    "bodyPreview":"They were awesome!"
 }
 ```
 
