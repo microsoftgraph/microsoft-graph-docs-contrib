@@ -639,6 +639,10 @@ items:
                 href: toolkit/components/tasks.md
               - name: To-do tasks
                 href: toolkit/components/todo.md
+              - name: File
+                href: toolkit/components/file.md
+              - name: File list
+                href: toolkit/components/file-list.md
           - name: Customize components
             items:
               - name: Styling components
