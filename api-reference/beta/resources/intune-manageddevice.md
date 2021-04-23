@@ -1,7 +1,7 @@
 ---
 title: "managedDevice resource type"
 description: "Cloud PCs are enrolled into Intune allowing IT admin to manage these devices through the MEM portal and APIs.  This API enables IT admin to reprovision a cloud PC extending the managedDevice entity."
-author: "Rui Hou"
+author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
@@ -20,7 +20,7 @@ Inherits from entity.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[reprovisionCloudPc of managedDevice](../api/intune-manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id in [managedDevice](../resource/intune-manageddevice.md).|
+|[reprovisionCloudPc of managedDevice](../api/intune-manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id in [managedDevice](../resources/intune-manageddevice.md).|
 |[getCloudPcRemoteActionResults](../api/intune-manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the results of reprovisioning a Cloud PC.|
 
 ## Properties
