@@ -56,6 +56,33 @@ Namespace: microsoft.graph
 |easSupported|
 |other|
 
+### conditionalAccessRule values 
+
+|Member|
+|:---|
+|allApps|
+|firstPartyApps|
+|office365|
+|appId|
+|acr|
+|appFilter|
+|allUsers|
+|guest|
+|groupId|
+|roleId|
+|userId|
+|allDevicePlatforms|
+|devicePlatform|
+|allLocations|
+|insideCorpnet|
+|allTrustedLocations|
+|locationId|
+|allDevices|
+|deviceFilter|
+|deviceState|
+|unknownFutureValue|
+
+
 ### consentRequestFilterByCurrentUserOptions values 
 
 |Member|
@@ -119,7 +146,7 @@ Namespace: microsoft.graph
 |exchangeOnline|
 |authentication|
 |provisioning|
-|intunePfx||
+|intunePfx|
 |oflineDomainJoin|
 |unknownFutureValue|
 
@@ -359,6 +386,9 @@ Namespace: microsoft.graph
 |time|
 |deviceState|
 |client|
+|ipAddressSeenByAzureAD|
+|ipAddressSeenByResourceProvider|
+|unknownFutureValue|
 
 ### conditionalAccessStatus values 
 
@@ -367,6 +397,18 @@ Namespace: microsoft.graph
 |success|
 |failure|
 |notApplied|
+|unknownFutureValue|
+
+### expirationRequirement values 
+
+|Member|
+|:---|
+|rememberMultifactorAuthenticationOnTrustedDevices|
+|tenantTokenLifetimePolicy|
+|audienceTokenLifetimePolicy|
+|signInFrequencyPeriodicReauthentication|
+|ngcMfa|
+|signInFrequencyEveryTime|
 |unknownFutureValue|
 
 ### featureType values 
@@ -430,6 +472,7 @@ Namespace: microsoft.graph
 |extranet|
 |namedNetwork|
 |trusted|
+|trustedNamedLocation|
 |unknownFutureValue|
 
 ### operationResult values 
@@ -492,10 +535,46 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|MFA|
-|CA|
+|user|
+|request|
+|servicePrincipal|
+|v1ConditionalAccess|
+|multiConditionalAccess|
+|tenantSessionRiskPolicy|
+|accountCompromisePolicies|
+|v1ConditionalAccessDependency|
+|v1ConditionalAccessPolicyIdRequested|
+|mfaRegistrationRequiredByIdentityProtectionPolicy|
+|baselineProtection|
+|mfaRegistrationRequiredByBaselineProtection|
+|mfaRegistrationRequiredByMultiConditionalAccess|
+|enforcedForCspAdmins|
+|securityDefaults|
+|mfaRegistrationRequiredBySecurityDefaults|
+|proofUpCodeRequest|
+|crossTenantOutboundRule|
+|gpsLocationCondition|
+|riskBasedPolicy|
 |unknownFutureValue|
 
+### signInIdentifierType values 
+
+|Member|
+|:---|
+|userPrincipalName|
+|phoneNumber|
+|proxyAddress|
+|qrCode|
+|onPremisesUserPrincipalName|
+|unknownFutureValue|
+
+### signInUserType values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
 
 ### riskDetail values 
 
