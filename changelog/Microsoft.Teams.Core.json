@@ -18,6 +18,14 @@
           "ChangeType": "Addition",
           "Description": "UserPrincipalName can be used in the request URL for [looking up joined](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?view=graph-rest-beta) teams of a user.",
           "Target": "team"
+        },
+        {
+          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "UserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "UserPrincipalName can be used in the request URL for [managing apps in teams & chats] (https://docs.microsoft.com/en-us/graph/api/resources/teamsappinstallation?view=graph-rest-beta) of a user.",
+          "Target": "teamsAppInstallation ="
         }
       ],
       "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
