@@ -12,7 +12,7 @@
           "Target": "chat"
         },
         {
-          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "Id": "cb094b5b-a324-41e3-84ff-2ba4b5c9a889",
           "ApiChange": "Parameter",
           "ChangedApiName": "UserPrincipalName",
           "ChangeType": "Addition",
@@ -20,7 +20,7 @@
           "Target": "team"
         },
         {
-          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "Id": "3b5dfbe9-d4e8-41c6-8a9a-66bdb68b7a8b",
           "ApiChange": "Parameter",
           "ChangedApiName": "UserPrincipalName",
           "ChangeType": "Addition",
