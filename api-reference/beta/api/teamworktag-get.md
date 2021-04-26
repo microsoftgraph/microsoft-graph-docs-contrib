@@ -1,7 +1,7 @@
 ---
 title: "Get teamworkTag"
 description: "Read the properties and relationships of a teamworkTag object."
-author: ""
+author: "anniecolonna"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
