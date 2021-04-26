@@ -119,6 +119,42 @@ In order to test your app, MSAL requires the page to be hosted in a web server f
 If you're just getting started and want to play around, you can use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code or any similar lightweight development server. Download the extension and open your HTML file using live server. 
 > **Note:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
 
+## Track user's sign in state
+
+You might want to display some components only when a user is successfully logged in. In such a case, you need to detect when the user login is successful so that you can have the implementation of a logged in user set.
+
+Using the ES6 modules, the `Providers`, `ProviderState`, the MSAL provider initialized in HTML, the Login, and the Agenda component, we can display the agenda component only if the user is logged in. Otherwise, we display the Login component:
+
+```html
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+<div id="main"><mgt-login></mgt-login></div>
+```
+
+# [js](#tab/JavaScript)
+
+```js
+import {Providers, ProviderState} from '@microsoft/mgt'
+
+function isLoggedIn(){
+    const provider = Providers.globalProvider;
+    return provider && provider.state === ProviderState.SignedIn;
+}
+
+function loadAgenda(){
+    const main = document.getElementById("main");
+    if(isLoggedIn()){
+        // the user is logged in, load their agenda
+        main.innerHTML = `<mgt-agenda></mgt-agenda>`
+    } else {
+        // the user is not logged in, show them the login component
+        main.innerHTML = `<mgt-login></mgt-login>
+    }
+}
+
+loadAgenda();
+```
+
 ## Next Steps
 - Check out the [Get started with Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) step-by-step tutorial.
 - Try out the components in the [playground](https://mgt.dev).
