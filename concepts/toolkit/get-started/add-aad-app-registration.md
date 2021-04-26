@@ -24,7 +24,7 @@ To create the app in Azure Active Directory:
 1. In the **Redirect URI** field, in the dropdown, select **Single Page Application (SPA)**, and in the URL field, enter `http://localhost:3000`. Note: if you are using MSAL Provider and not MSAL 2.0 Provider, you will need to select **Web** instead of **SPA**.
 1. Confirm changes by selecting the **Register** button.
 
-## Enable OAuth implicit flow (Only for MSAL PRovider)
+## Enable OAuth implicit flow (Only for MSAL 1.0 Provider)
 
 In most cases, you will use Microsoft Graph Toolkit in client-side applications that consist only of client-side code. Because client-side apps can't store secrets securely, you need to use [OAuth implicit flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow?WT.mc_id=m365-10340-wmastyka), which assumes an app's identity based on its ID and URL.
 
