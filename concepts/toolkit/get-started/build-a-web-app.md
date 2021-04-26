@@ -125,6 +125,8 @@ You might want to display some components only when a user is successfully logge
 
 Using the ES6 modules, the `Providers`, `ProviderState`, the MSAL provider initialized in HTML, the Login, and the Agenda component, we can display the agenda component only if the user is logged in. Otherwise, we display the Login component:
 
+# [html](#tab/HTML)
+
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
