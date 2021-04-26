@@ -14,7 +14,6 @@ To learn more, see [providers](./providers.md).
 Although the usage is very similar, there are some key differences between MsalProvider and Msal2Provider. 
 * MsalProvider is built on top of MSAL.js, which implements the OAuth2.0 [Implicit Grant Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
 For many reasons, Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications. Learn more about security issues related to implicit grant flow [here](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
-* Msal2Provider provides support for multiple accounts to be signed in to an application, while MsalProvider provides support for single account logins.
 
 ## Get started
 
@@ -29,7 +28,6 @@ Initializing the MSAL 2.0 provider in HTML is the simplest way to create a new p
                         login-type="redirect/popup" 
                         scopes="user.read,people.read" 
                         redirect-uri="https://my.redirect/uri" 
-                        multi-account-disabled
                         authority=""> 
     </mgt-msal2-provider> 
 ```
@@ -41,7 +39,6 @@ Initializing the MSAL 2.0 provider in HTML is the simplest way to create a new p
 | scopes       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
 | authority    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | redirect-uri | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
-| multi-account-disabled | If present, disabled multiple account functionality.|
 | prompt       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
 
 ### Initialize in JavaScript
@@ -55,7 +52,6 @@ You can provide more options by initializing the provider in JavaScript.
     // initialize the auth provider globally
     Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID',
-      isMultiAccountDisabled?: Boolean, //Set this to true to disable multi account functionality
       scopes?: string[],
       authority?: string,
       redirectUri?: string,
