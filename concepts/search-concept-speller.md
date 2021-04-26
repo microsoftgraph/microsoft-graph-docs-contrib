@@ -198,6 +198,10 @@ Content-type: application/json
 }
 ```
 
+## Known limitations
+
+- Spelling correction is only supported for **message**, **event**, **site**, **drive**, **driveItem**, **list**, **listItem** and **externalItem**.
+
 ## Next steps
 
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
