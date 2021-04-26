@@ -68,7 +68,6 @@ The client ID is the only property required to initialize the provider, but you 
 
 ### Creating an app/client ID
 In order to get a client ID, you need to [register your application](./add-aad-app-registration.md) in Azure AD. 
->**Note**: MSAL Provider only supports the Implicit Flow for OAuth. If you are using MSAL Provider and not MSAL 2.0 Provider, make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
 
 ## Add components
 After you initialize the MSAL 2.0 provider, you can start using any of the Toolkit components.
