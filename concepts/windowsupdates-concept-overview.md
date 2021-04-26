@@ -32,10 +32,6 @@ Additionally, devices managed by the deployment service must:
 * Run one of the following Windows 10 editions: Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Pro Education
 * Have installed Windows 10 version 1709 or later
 
-To fully benefit from the capabilities of the deployment service, we also recommend that:
-* Telemetry is turned on with a minimum setting of `Required`
-* The AllowWUfBCloudProcessing policy is set to 1
-
 ## Enroll devices to be managed
 
 To start using the deployment service, [enroll devices in update management](windowsupdates-enroll.md).
