@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The set of [updatableAsset](../resources/windowsupdates-updatableasset.md) resources to which a deployment can apply.
+The set of [updatableAsset](../resources/windowsupdates-updatableasset.md) resources to which a [deployment](../resources/windowsupdates-deployment.md) can apply.
 
 ## Methods
 |Method|Return type|Description|
@@ -31,7 +31,7 @@ The set of [updatableAsset](../resources/windowsupdates-updatableasset.md) resou
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|exclusions|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to exclude from the audience. Takes precedence over members.|
+|exclusions|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to exclude from the audience. If an **updatableAsset** belongs to both **members** and **exclusions**, a deployment will not apply to it.|
 |members|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to include in the audience.|
 
 ## JSON representation

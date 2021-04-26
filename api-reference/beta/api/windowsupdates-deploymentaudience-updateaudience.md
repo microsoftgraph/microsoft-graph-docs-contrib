@@ -16,7 +16,9 @@ Update the members and exclusions collections of a [deploymentAudience](../resou
 
 Adding an [azureADDevice](../resources/windowsupdates-azureaddevice.md) to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object, if it does not already exist.
 
-If all [updatableAsset](../resources/windowsupdates-updatableasset.md) objects are the same type, you can also use the method [updateAudienceById](windowsupdates-deploymentaudience-updateaudiencebyid.md) to update the **deploymentAudience**.
+An [updatableAsset](../resources/windowsupdates-updatableasset.md) can be included in both the members and exclusions collections.
+
+If all **updatableAsset** objects are the same type, you can also use the method [updateAudienceById](windowsupdates-deploymentaudience-updateaudiencebyid.md) to update the **deploymentAudience**.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
