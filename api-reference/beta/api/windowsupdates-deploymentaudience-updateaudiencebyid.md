@@ -1,6 +1,6 @@
 ---
 title: "deploymentAudience: updateAudienceById"
-description: "Update the members and exclusions collections of a deployment audience with updatable assets of the same type."
+description: "Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

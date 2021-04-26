@@ -1,6 +1,6 @@
 ---
 title: "List updatable asset group members"
-description: "List the members of an updatable asset group."
+description: "List the members of an updatableAssetGroup resource. Members are of the azureADDevice type."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

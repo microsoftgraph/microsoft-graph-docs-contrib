@@ -21,7 +21,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|windows|[microsoft.graph.windowsUpdates.windows](../resources/windowsupdates-windows.md)|Singleton entity that acts as a container for functionality. Read-only.|
+|windows|[microsoft.graph.windowsUpdates.windows](../resources/windowsupdates-windows.md)|Entity that acts as a container for functionality. Read-only.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

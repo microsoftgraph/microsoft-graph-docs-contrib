@@ -1,6 +1,6 @@
 ---
 title: "updatableAssetGroup: removeMembers"
-description: "Remove members from an updatable asset group."
+description: "Remove members from an updatableAssetGroup."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

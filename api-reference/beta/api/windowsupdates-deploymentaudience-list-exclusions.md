@@ -1,6 +1,6 @@
 ---
 title: "List deployment audience exclusions"
-description: "List the updatable assets that are excluded from a deployment audience."
+description: "List the updatableAsset resources that are excluded from a deploymentAudience."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

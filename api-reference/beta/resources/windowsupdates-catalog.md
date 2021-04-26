@@ -1,6 +1,6 @@
 ---
 title: "catalog resource type"
-description: "Represents the catalog of content that can be approved for deployment."
+description: "Entity representing the catalog of content that you can approve for deployment."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Singleton entity representing the catalog of content that you can approve for deployment.
+Entity representing the catalog of content that you can approve for deployment.
 
 ## Methods
 |Method|Return type|Description|

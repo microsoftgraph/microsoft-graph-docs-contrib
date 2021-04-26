@@ -1,6 +1,6 @@
 ---
 title: "deploymentAudience resource type"
-description: "The set of assets to which a deployment can apply."
+description: "The set of updatableAsset resources to which a deployment can apply."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

@@ -31,10 +31,10 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 |[List azureADDevice resources](../api/windowsupdates-azureaddevice-list.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.|
 |[Get azureADDevice](../api/windowsupdates-azureaddevice-get.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md)|Read the properties and relationships of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Delete azureADDevice](../api/windowsupdates-azureaddevice-delete.md)|None|Delete an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
-|[Enroll azureADDevices in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll [azureADDevices](../resources/windowsupdates-azureaddevice.md) in update management by the deployment service.|
-|[Enroll azureADDevices in management (by ID)](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll [azureADDevices](../resources/windowsupdates-azureaddevice.md) in update management by the deployment service.|
-|[Unenroll azureADDevices from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll [azureADDevices](../resources/windowsupdates-azureaddevice.md) from update management by the deployment service.|
-|[Unenroll azureADDevices from management (by ID)](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll [azureADDevices](../resources/windowsupdates-azureaddevice.md) from update management by the deployment service.|
+|[Enroll azureADDevice resources in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources in update management by the deployment service.|
+|[Enroll azureADDevice resources in management (by ID)](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|None|Enroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources in update management by the deployment service.|
+|[Unenroll azureADDevice resources from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources from update management by the deployment service.|
+|[Unenroll azureADDevice resources from management (by ID)](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources from update management by the deployment service.|
 
 ## Properties
 |Property|Type|Description|

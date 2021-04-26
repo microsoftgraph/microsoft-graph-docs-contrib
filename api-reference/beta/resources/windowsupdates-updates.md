@@ -1,6 +1,6 @@
 ---
 title: "updates resource type"
-description: "Singleton entity that acts as a container for all Windows Update for Business deployment service functionality."
+description: "Entity that acts as a container for all Windows Update for Business deployment service functionality."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Singleton entity that acts as a container for all Windows Update for Business deployment service functionality.
+Entity that acts as a container for all Windows Update for Business deployment service functionality.
 
 ## Properties
 |Property|Type|Description|

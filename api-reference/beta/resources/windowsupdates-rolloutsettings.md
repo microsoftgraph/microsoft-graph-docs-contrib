@@ -1,6 +1,6 @@
 ---
 title: "rolloutSettings resource type"
-description: "Settings controlling how an update is deployed over time."
+description: "Settings controlling how the service deploys an update over time."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings controlling how an update is deployed over time.
+Settings controlling how the service deploys an update over time.
 
 ## Properties
 |Property|Type|Description|

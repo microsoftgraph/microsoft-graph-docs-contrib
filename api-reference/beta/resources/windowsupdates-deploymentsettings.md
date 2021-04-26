@@ -1,6 +1,6 @@
 ---
 title: "deploymentSettings resource type"
-description: "Settings controlling when and how to deploy an update."
+description: "Settings controlling when and how the service deploys an update."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings controlling when and how an update deploys.
+Settings controlling when and how the service deploys an update.
 
 Base type of [windowsDeploymentSettings](../resources/windowsupdates-windowsdeploymentsettings.md).
 

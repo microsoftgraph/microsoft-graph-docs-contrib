@@ -1,6 +1,6 @@
 ---
 title: "softwareUpdateCatalogEntry resource type"
-description: "Metadata for a software update that can be approved for deployment."
+description: "Metadata for a software update that you can approve for deployment."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

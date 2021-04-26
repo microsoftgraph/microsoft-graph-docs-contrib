@@ -1,6 +1,6 @@
 ---
 title: "monitoringRule resource type"
-description: "Rule defining a signal and threshold to monitor and the action to perform when met."
+description: "Rule defining a signal and threshold to monitor, and the action to perform when met."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

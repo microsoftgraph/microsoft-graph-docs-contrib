@@ -1,5 +1,5 @@
 ---
-title: "List azureADDevices"
+title: "List azureADDevice resources"
 description: "Get a list of azureADDevice objects and their properties."
 author: "Alice-at-Microsoft"
 localization_priority: Normal

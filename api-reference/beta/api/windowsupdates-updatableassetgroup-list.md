@@ -1,5 +1,5 @@
 ---
-title: "List updatableAssetGroups"
+title: "List updatableAssetGroup resources"
 description: "Get a list of updatableAssetGroup objects and their properties."
 author: "Alice-at-Microsoft"
 localization_priority: Normal

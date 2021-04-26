@@ -17,7 +17,7 @@ The Windows Update for Business deployment service provides control over device 
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update
 * Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s)
 
-Today, the deployment service supports managing Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service, please see [Overview of the deployment service]().
+Today, the deployment service supports managing Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service in the context of Windows Update for Business, please see [Overview of the deployment service](https://docs.microsoft.com/windows/deployment/update/deployment-service-overview).
 
 ## Prerequisites    
 
@@ -28,7 +28,7 @@ To use the deployment service, your organization must have one of the following 
 * Microsoft 365 Business Premium
 
 Additionally, devices managed by the deployment service must:
-* Be joined to Azure AD or Hybrid AD
+* Be Azure AD joined or Hybrid AD joined
 * Run one of the following Windows 10 editions: Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Pro Education
 * Have installed Windows 10 version 1709 or later
 

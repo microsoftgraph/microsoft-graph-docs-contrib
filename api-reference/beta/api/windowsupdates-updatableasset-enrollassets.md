@@ -1,6 +1,6 @@
 ---
 title: "updatableAsset: enrollAssets"
-description: "Enroll an updatable asset in update management by the deployment service."
+description: "Enroll updatableAsset resources in update management by the deployment service."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

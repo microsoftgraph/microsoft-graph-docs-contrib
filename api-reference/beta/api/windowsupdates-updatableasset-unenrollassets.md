@@ -1,6 +1,6 @@
 ---
 title: "updatableAsset: unenrollAssets"
-description: "Unenroll updatable assets from update management by the deployment service."
+description: "Unenroll updatableAsset resources from update management by the deployment service."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

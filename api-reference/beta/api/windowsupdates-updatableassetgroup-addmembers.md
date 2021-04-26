@@ -1,6 +1,6 @@
 ---
 title: "updatableAssetGroup: addMembers"
-description: "Add members to an updatable asset group."
+description: "Add members to an updatableAssetGroup."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

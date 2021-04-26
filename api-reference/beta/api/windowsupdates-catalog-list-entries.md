@@ -1,6 +1,6 @@
 ---
 title: "List entries"
-description: "Get the list of entries from a catalog."
+description: "Get a list of catalogEntry resources from the catalog."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

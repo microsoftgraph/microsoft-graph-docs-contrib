@@ -1,6 +1,6 @@
 ---
 title: "updatableAssetError resource type"
-description: "An error that prevent the device from being enrolled in update management or receving deployed content."
+description: "An abstract type that represents an error which prevents the deployment service from enrolling an azureADDevice in update management, or deploying content to the device"
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

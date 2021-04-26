@@ -1,6 +1,6 @@
 ---
 title: "updatableAssetGroup: addMembersById"
-description: "Add members of the same type to an updatable asset group."
+description: "Add members of the same type to an updatableAssetGroup."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

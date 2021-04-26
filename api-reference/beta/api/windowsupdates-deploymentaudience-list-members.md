@@ -1,6 +1,6 @@
 ---
 title: "List deployment audience members"
-description: "List the updatable assets that are members of a deployment audience."
+description: "List the updatableAsset resources that are members of a deploymentAudience."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
