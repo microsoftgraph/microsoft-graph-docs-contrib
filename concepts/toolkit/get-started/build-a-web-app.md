@@ -150,7 +150,7 @@ function loadAgenda(){
         main.innerHTML = `<mgt-agenda></mgt-agenda>`
     } else {
         // the user is not logged in, show them the login component
-        main.innerHTML = `<mgt-login></mgt-login>
+        main.innerHTML = `<mgt-login></mgt-login>`
     }
 }
 
