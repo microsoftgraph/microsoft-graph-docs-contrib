@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the dataSource resources from the dataSource navigation property.
+Get the list of dataSources associated with a non-custodial data source.
 
 ## Permissions
 

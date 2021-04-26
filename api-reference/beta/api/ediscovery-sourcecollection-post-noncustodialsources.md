@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.id|String|String that defines the custodial object. See the example that follows.  The @odata.id can be retrieved from the [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)|
+|@odata.id|String|String that defines the custodial object. See the example that follows.  The @odata.id can be retrieved from the [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
 
 ## Response
 
@@ -79,7 +79,6 @@ Content-length: 206
 
 ### Response
 
-> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

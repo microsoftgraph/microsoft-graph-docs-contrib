@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resets the case settings to the default values.
+Reset the case settings to the default values.
 
 ## Permissions
 

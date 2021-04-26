@@ -13,16 +13,16 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Topic modeling (Themes) settings for an eDiscovery case.  See [Configure search and analytics settings in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery) to learn more.
+Topic modeling (Themes) settings for an eDiscovery case. To learn more, see [Configure search and analytics settings in Advanced eDiscovery](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|dynamicallyAdjustTopicCount|Boolean|See [Adjust maximum number of themes dynamically](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#themes) to learn more.|
-|ignoreNumbers|Boolean|See [Include numbers in themes](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#themes) to learn more.|
+|dynamicallyAdjustTopicCount|Boolean|To learn more, see [Adjust maximum number of themes dynamically](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#themes).|
+|ignoreNumbers|Boolean|To learn more, see [Include numbers in themes](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#themes).|
 |isEnabled|Boolean|Indicates whether themes is enabled for the case.|
-|topicCount|Int32|See [Maximum number of themes](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#themes) to learn more.|
+|topicCount|Int32|To learn more, see [Maximum number of themes](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#themes).|
 
 ## Relationships
 

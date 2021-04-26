@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# noncustodialDataSource: Release
+# noncustodialDataSource: release
 
 Namespace: microsoft.graph.ediscovery
 

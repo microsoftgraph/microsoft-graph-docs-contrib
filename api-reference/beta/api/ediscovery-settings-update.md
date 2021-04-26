@@ -47,13 +47,9 @@ PATCH /compliance/ediscovery/cases/{caseId}/settings
 
 In the request body, supply a JSON representation of the [settings](../resources/ediscovery-settings.md) object.
 
-The following table shows the properties that are required when you update the [settings](../resources/ediscovery-settings.md).
-
-None
-
 ## Response
 
-If successful, this method returns a `204 OK` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
