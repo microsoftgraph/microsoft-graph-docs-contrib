@@ -20,8 +20,6 @@ By default, an email address is not provisioned for a Channel.
 
 To remove a channel's provisioned email address, use the API to [remove channel email](channel-removeemail.md).
 
-> **Note**: This API is currently not supported for shared channels.
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -148,9 +148,7 @@ HTTP/1.1 204 No Content
 
 The following example shows a request to update the [email settings](../resources/channelemailsettings.md) of a channel.
 
-A channel's email must have been provisioned using the API to [provision channel email](channel-provisionemail.md) before an attempt to update the email settings can be made.
-
-> **Note**: Channel email settings currently cannot be updated for shared channels.
+A channel's email must have been provisioned, either using the API to [provision channel email](channel-provisionemail.md) or through the Microsoft Teams client, before an attempt to update the email settings can be made.
 
 > **Note**: This API currently does not support admin or application-only permissions.
 
