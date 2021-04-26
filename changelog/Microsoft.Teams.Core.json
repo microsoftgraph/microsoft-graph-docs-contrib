@@ -16,7 +16,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "UserPrincipalName",
           "ChangeType": "Addition",
-          "Description": "UserPrincipalName can be used in the request URL for [looking up joined](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?view=graph-rest-beta) teams of a user.",
+          "Description": "UserPrincipalName can be used in the request URL for [looking up joined teams of a user](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?view=graph-rest-beta).",
           "Target": "team"
         }
       ],
