@@ -19,7 +19,7 @@ Represents the response from a search query.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|queryAlterationResponse|[alterationResponse](alterationResponse.md)|Provides related information of spelling correction.|
+|queryAlterationResponse|[alterationResponse](alterationResponse.md)|Provides details of query alteration response for spelling correction.|
 |value|[searchResultSet](searchResultSet.md) collection|Represents results from a search query, and the terms used for the query.|
 
 ## JSON representation

@@ -35,7 +35,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Sort search results](#sort-search-results)| **sort** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
-|[Request spelling correction](#request-spelling-correction)| **QueryAlterationOptions** |
+|[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
 
 ## Scope search based on entity types
 

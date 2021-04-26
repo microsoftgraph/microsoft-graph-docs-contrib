@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Search API in Microsoft Graph to request spelling correction"
-description: "You can use the Microsoft Search API to get the spelling suggestion or spelling modification"
+description: "You can use the Microsoft Search API to get the spelling suggestion or spelling modification for search query"
 author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
@@ -12,9 +12,9 @@ Use the Microsoft Search API to request spelling correction to handle mismatch b
 
 - The **enableSuggestion** property to enable/disable spelling suggestion for user query. You can pass true to get the suggesting spelling correction information for typos in user query.
 
-- The **enableModification** property to enable/disable spelling modification for user query. You can pass true to get the search results for corrected query **when there are no results** for the original query with typos and get the correction information.
+- The **enableModification** property to enable/disable spelling modification for user query. You can pass true to get the search results for corrected query **when there are no results** for the original query with typos and get the corresponding correction information.
 
-The priority of spelling modification is higher than suggestion.
+The priority of spelling modification is higher than suggestion if they are both enabled.
 
 All the user query strings should be the same to enable speling correction for multiple entities search.
 

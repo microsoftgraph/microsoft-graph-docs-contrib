@@ -1,6 +1,6 @@
 ---
 title: "alteredQueryToken resource type"
-description: "Represents changed segments with respect to original query."
+description: "Represents changed segments with respect to original user query."
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents changed segments with respect to original query.
+Represents changed segments with respect to original user query.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|offset|Int32| Defines the offset of a changed segment in original query|
-|length|Int32| Defines the length of a changed segment in original query|
+|offset|Int32| Defines the offset of a changed segment.|
+|length|Int32| Defines the length of a changed segment.|
 |suggestion|String| Represents the corrected segment string.|
 
 ## JSON representation

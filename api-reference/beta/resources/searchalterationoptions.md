@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the types of search alteration for spelling correction to be applied to the query
+Provides the search alteration options for spelling correction.
 
 ## Properties
 
