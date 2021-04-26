@@ -1,7 +1,7 @@
 ---
 title: "List teamworkTagMembers"
 description: "Get a list of the teamworkTagMember objects and their properties."
-author: ""
+author: "anniecolonna"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
