@@ -2,7 +2,6 @@
 author: isabelleatmsft
 ms.topic: include
 ms.date: 02/17/2021
-ms.author: isabelleatmsft
 ---
 
 <!-- markdownlint-disable MD041-->
