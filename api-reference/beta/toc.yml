@@ -9488,9 +9488,9 @@ items:
           href: resources/windowsupdates-deployment.md
           items:
           - name: List deployments
-            href: api/windowsupdates-deployment-list.md
+            href: api/windowsupdates-updates-list-deployments.md
           - name: Create deployment
-            href: api/windowsupdates-deployment-create.md
+            href: api/windowsupdates-updates-post-deployments.md
           - name: Get deployment
             href: api/windowsupdates-deployment-get.md
           - name: Update deployment
@@ -9519,7 +9519,7 @@ items:
           href: resources/windowsupdates-updatableasset.md
           items:
           - name: List updatable assets
-            href: api/windowsupdates-updatableasset-list.md
+            href: api/windowsupdates-updates-list-updatableassets.md
           - name: Get updatable asset
             href: api/windowsupdates-updatableasset-get.md
           - name: Delete updatable asset
@@ -9528,7 +9528,7 @@ items:
             href: resources/windowsupdates-azureaddevice.md
             items:
             - name: List Azure AD devices
-              href: api/windowsupdates-azureaddevice-list.md
+              href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
             - name: Get Azure AD device
               href: api/windowsupdates-azureaddevice-get.md
             - name: Delete Azure AD device
@@ -9545,9 +9545,9 @@ items:
             href: resources/windowsupdates-updatableassetgroup.md
             items:
             - name: List updatable asset groups
-              href: api/windowsupdates-updatableassetgroup-list.md
+              href: api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md
             - name: Create updatable asset group
-              href: api/windowsupdates-updatableassetgroup-create.md
+              href: api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md
             - name: Get updatable asset group
               href: api/windowsupdates-updatableassetgroup-get.md
             - name: Delete updatable asset group
