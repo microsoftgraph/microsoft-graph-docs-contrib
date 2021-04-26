@@ -526,7 +526,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Application permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_CloudPC.Read.All_ | Read Cloud PCs | Allows the app to read Cloud PC objects such as provisioning policies, without a signed-in user. | No | No |
+|_CloudPC.ReadWrite.All_ | Read and write Cloud PCs | Allows the app to create, read, update, and delete Cloud PC objects such as on-premises connections, provisioning policies, and device images, without a signed-in user. | Yes | No |
 
 ### Example usage
 
@@ -537,7 +540,8 @@ None.
 
 #### Application
 
-None.
+* _CloudPC.Read.All_: View the properties of all Cloud PCs (`GET /deviceManagement/virtualEndpoint/cloudPCs`).
+* _CloudPC.ReadWrite.All_: Edit the Cloud PC provisioning policy (`PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}`).
 
 ---
 
@@ -1510,6 +1514,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Policy.Read.All_ | Read your organization's policies | Allows the app to read all your organization's policies without a signed in user. | Yes |
 | _Policy.Read.PermissionGrant_ | Read consent and permission grant policies | Allows the app to read policies related to consent and permission grants for applications, without a signed-in user. | Yes |
 | _Policy.Read.ApplicationConfiguration_ | Read your organization's application configuration policies | Allows the app to read all your organization's application configuration policies without a signed in user. | Yes |
+| _Policy.ReadWrite.ApplicationConfiguration_ | Read and write your organization's application configuration policies | Allows the app to read and write your organization's application configuration policies, without a signed-in user. | Yes | No |
 | _Policy.ReadWrite.AuthenticationFlows_ | Read and write your organization's authentication flow policies | Allows the app to read and write the authentication flow policies for the tenant, without a signed in user. | Yes |
 | _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes | No |
 | _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy without a signed-in user. | Yes | No |
@@ -1702,9 +1707,9 @@ Access to data via search requires the read permission to the item. Ex : _Files.
 | _SecurityEvents.Read.All_        |  Read your organization’s security events | Allows the app to read your organization’s security events on behalf of the signed-in user. | Yes  | No |
 | _SecurityEvents.ReadWrite.All_   | Read and update your organization’s security events | Allows the app to read your organization’s security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. | Yes  | No |
 | _SecurityActions.Read.All_        |  Read your organization's security actions | Allows the app to read your organization’s security actions on behalf of the signed-in user. | Yes  | No |
-| _SecurityActions.ReadWrite.All_   | Read and update your organization's security actions | Allows the app to read your organization’s security actions on behalf of the signed-in user.  | Yes  | No |
+| _SecurityActions.ReadWrite.All_   | Read and update your organization's security actions | Allows the app to read or update your organization’s security actions on behalf of the signed-in user.  | Yes  | No |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | Manage threat indicators this app creates or owns |Allows the app to create threat indicators, and fully manage those threat indicators (read, update and delete) on behalf of the signed-in user.  | Yes  | No |
-| _ThreatIndicators.Read.All_   | Read your organization's threat indicators | Allows the app to read your organization’s security actions on behalf of the signed-in user.  | Yes  | No |
+| _ThreatIndicators.Read.All_   | Read your organization's threat indicators | Allows the app to read all the threat indicators for your organization, on behalf of the signed-in user.  | Yes  | No |
 
 #### Application permissions
 
@@ -1715,7 +1720,7 @@ Access to data via search requires the read permission to the item. Ex : _Files.
 | _SecurityActions.Read.All_        |  Read your organization’s security events | Allows the app to read your organization’s security actions. | Yes  |
 | _SecurityActions.ReadWrite.All_   | Create and read your organization's security actions | Allows the app to read or create security actions, without a signed-in user. | Yes  |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | Manage threat indicators this app creates or owns | Allows the app to create threat indicators, and fully manage those threat indicators (read, update and delete), without a signed-in user.  It cannot update any threat indicators it does not own. | Yes  |
-| _ThreatIndicators.Read.All_   | Manage threat indicators this app creates or owns | Allows the app to read all the indicators for your organization, without a signed-in user. | Yes  |
+| _ThreatIndicators.Read.All_   | Manage threat indicators this app creates or owns | Allows the app to read all the threat indicators for your organization, without a signed-in user. | Yes  |
 
 ### Remarks
 
@@ -1767,7 +1772,7 @@ Security permissions are valid only on work or school accounts.
 | _Sites.ReadWrite.All_   | Read and write items in all site collections | Allows the app to create, read, update, and delete documents and list items in all site collections without a signed in user. | Yes |
 | _Sites.Manage.All_      | Create, edit, and delete items and lists in all site collections | Allows the app to manage and create lists, documents, and list items in all site collections without a signed-in user.  | Yes  |
 | _Sites.FullControl.All_ | Have full control of all site collections | Allows the app to have full control to SharePoint sites in all site collections without a signed-in user.  | Yes  |
-| _Sites.Selected_ | Access selected site collections (preview) | Allow the application to access a subset of site collections without a signed in user.  The specific site collections and the permissions granted will be configured in SharePoint Online. | Yes  |
+| _Sites.Selected_ | Access selected site collections | Allow the application to access a subset of site collections without a signed in user.  The specific site collections and the permissions granted will be configured in SharePoint Online. | Yes  |
 
 
 ### Remarks
