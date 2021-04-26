@@ -18,14 +18,14 @@ A subscription allows a client app to receive change notifications about changes
 
 - An [alert][] from the Microsoft Graph Security API.
 - A [callRecord][] produced after a call or meeting in Microsoft Teams.
-- A [channel][https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta] in Microsoft Teams.
+- A [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) in Microsoft Teams.
 - A [chatMessage][] sent via teams or channels in Microsoft Teams.
 - A [conversation][] in a Microsoft 365 group.
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive.
 - A [list][] under a SharePoint [site][].
 - A [message][], [event][], or [contact][] in Outlook.
 - The [presence][] of a user in Microsoft Teams.
-- A [team][https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta] in Microsoft Teams.
+- A [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) in Microsoft Teams.
 - A [user][] or [group][] in Azure Active Directory.
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](https://docs.microsoft.com/en-us/graph/universal-print-webhook-notifications).
 - A [todoTask][] of a user in Microsoft To Do.
