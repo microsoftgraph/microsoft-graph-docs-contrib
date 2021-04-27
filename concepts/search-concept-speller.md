@@ -1,26 +1,26 @@
 ---
-title: "Use the Microsoft Search API in Microsoft Graph to request spelling correction"
-description: "You can use the Microsoft Search API to get the spelling suggestion or spelling modification for search query"
+title: "Use the Microsoft Search API in Microsoft Graph to request spelling corrections"
+description: "You can use the Microsoft Search API to get the spelling suggestion or spelling modification for search query."
 author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to request spelling correction (preview)
+# Use the Microsoft Search API in Microsoft Graph to request spelling correction (preview)
 
-Use the Microsoft Search API to request spelling correction to handle mismatch between typos in user query and correct words in matched contents. To request spelling correction, you can specify the following properties in the **QueryAlterationOptions** property of request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method.
+You can use the Microsoft Search API to request spelling corrections to handle mismatches between typos in user queries and correct words in matched contents. To request spelling corrections, specify the following properties in the **queryAlterationOptions** property of request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:
 
-- The **enableSuggestion** property to enable/disable spelling suggestion for user query. You can pass true to get the suggesting spelling correction information for typos in user query.
+- **enableSuggestion** to enable/disable spelling suggestions for the user query. You can pass `true` to get the suggested spelling correction information for typos in the user query.
 
-- The **enableModification** property to enable/disable spelling modification for user query. You can pass true to get the search results for corrected query **when there are no results** for the original query with typos and get the corresponding correction information.
+- **enableModification** to enable/disable spelling modifications for the user query. You can pass `true` to get the search results for the corrected query *when there are no results* for the original query with typos, and get the corresponding correction information.
 
-The priority of spelling modification is higher than suggestion if they are both enabled.
+The priority of spelling modification is higher than spelling suggestion if they are both enabled.
 
-All the user query strings should be the same to enable speling correction for multiple entities search.
+All the user query strings should be the same to enable spelling corrections for searches of multiple entities.
 
 ## Example 1: Request spelling suggestion
 
-The following example queries **listItem** resources which contains the string "accountt" and request spelling suggestion for the query.
+The following example queries **listItem** resources that contain the string "accountt" and requests a spelling suggestion for the query.
 
 The response contains [alterationResponse](/graph/api/resources/alterationResponse?view=graph-rest-beta&preserve-view=true) objects for the spelling suggestion.
 
@@ -93,9 +93,9 @@ Content-type: application/json
 
 ## Example 2: Request spelling modification
 
-The following example queries **listItem** resources which contains the string "accountt" and request spelling modification for the query.
+The following example queries **listItem** resources that contain the string "accountt" and requests a spelling modification for the query.
 
-In this example, there are no results for original query with typo "accountt". So the response contains results related to corrected string "account" and [alterationResponse](/graph/api/resources/alterationResponse?view=graph-rest-beta&preserve-view=true) objects for the spelling modification.
+In this example, there are no results for original query with typo "accountt". The response contains results related to corrected string "account" and [alterationResponse](/graph/api/resources/alterationResponse?view=graph-rest-beta&preserve-view=true) objects for the spelling modification.
 
 ### Request
 
@@ -200,7 +200,7 @@ Content-type: application/json
 
 ## Known limitations
 
-- Spelling correction is only supported for **message**, **event**, **site**, **drive**, **driveItem**, **list**, **listItem** and **externalItem**.
+- Spelling correction is only supported for the following resources: **message**, **event**, **site**, **drive**, **driveItem**, **list**, **listItem** and **externalItem**.
 
 ## Next steps
 
