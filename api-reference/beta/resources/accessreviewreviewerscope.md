@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The accessReviewReviewerScope defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). This is expressed as an OData query, which allows reviewers to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager). To create a self-review (where users review their own access), do not provide reviewers on [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) creation.
+The accessReviewReviewerScope defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). This is expressed as an OData query, which allows reviewers to be specified both as a static list of users (that is, specific users, group owners, group members) or dynamically (that is, the case where every user is reviewed by their manager). To create a self-review (where users review their own access), do not provide reviewers on [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) creation.
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
@@ -26,14 +26,7 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 | queryType | String | The type of query. Examples include `MicrosoftGraph` and `ARM`. |
 | queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (i.e., ./manager) is specified. |
 
-### Supported queries for accessReviewReviewerScope
-
-|Scenario| query | queryType | queryRoot |
-|--|--|--|--|
-| Group owner as reviewer | /groups/{group id}/owners |MicrosoftGraph||
-| Specific user as reviewer | /users/{user id} |MicrosoftGraph||
-| Manager of user being reviewed as reviewer | ./manager | MicrosoftGraph |decisions|
-| Self Review | Empty list(No reviewers) | MicrosoftGraph  |
+For more information on configuration options for reviewers, see [assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept).
 
 
 ## Relationships

@@ -49,7 +49,7 @@ This method supports the following OData query parameters to help customize the 
 |$filter  |Retrieve only a subset of the collection.|/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'groups'|
 
 ### Use of the $filter query parameter
-The `$filter` query parameter with the `contains` operator is supported on the **scope** and **instanceEnumerationScope** properties of the accessReviewScheduleDefinition. The request statement will take on the following format:
+The `$filter` query parameter with the `contains` operator is supported on the **scope** property of the accessReviewScheduleDefinition. The request statement will take on the following format:
 
 ```http
 GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}'
@@ -60,7 +60,7 @@ where the value of `{object}` can be one of the following:
 |Value of {object}|Scenario|Example|
 |:---     |:---       |:---   |
 |`/groups`  |List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).|Example|
-|`/groups/{group-id}`  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|Example|
+|`/groups/{group id}`  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|Example|
 |`./members`  |List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.|Example|
 |`accessPackageAssignments`  |List every accessReviewScheduleDefinition on an access package.|Example|
 |`roleAssignmentScheduleInstances`  |List every accessReviewScheduleDefinition for service principals assigned to privileged role.|Example|
@@ -77,10 +77,8 @@ Do not supply a request body.
 ## Response
 If successful, this method returns a `200 OK` response code and an array of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects in the response body.
 
-## Examples
+## Example 1: List the first one hundred access review definitions
 ### Request
-The following example shows a request to retrieve all the access review series in a tenant.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,10 +106,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ---
 
----
-
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -185,6 +181,104 @@ Content-type: application/json
     ]
 }
 ```
+
+
+## Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in the tenant
+### Request
+The following example shows a request to retrieve all the access review series in a tenant.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_accessReviewScheduleDefinition_allgroups"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com//beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
+```
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition",
+  "isCollection": "true"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions",
+    "value": [
+        {
+            "id": "cc701697-762c-439a-81f5-f58d680fde76",
+            "displayName": "Review guest access across Microsoft 365 groups",
+            "createdDateTime": "2021-04-27T15:37:16.6224103Z",
+            "lastModifiedDateTime": "2021-04-27T15:37:37.1173507Z",
+            "status": "InProgress",
+            "createdBy": {
+                "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+                "displayName": "MOD Administrator",
+                "userPrincipalName": "admin@contoso.com"
+            },
+            "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph"
+            },
+            "instanceEnumerationScope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and id ne '02f3bafb-448c-487c-88c2-5fd65ce49a41' and id ne '072ac5f4-3f13-4088-ab30-0a276f3e6322' and id ne '0fbf2921-5d17-4c2b-bae4-cc581de72c13' and id ne '19d30368-b67e-41e8-9cc1-b372bd494e15')&$count=true",
+                "queryType": "MicrosoftGraph"
+            },
+            "reviewers": [
+                {
+                    "query": "./manager",
+                    "queryType": "MicrosoftGraph",
+                    "queryRoot": "decisions"
+                }
+            ],
+            "settings": {
+                "mailNotificationsEnabled": true,
+                "reminderNotificationsEnabled": true,
+                "justificationRequiredOnApproval": true,
+                "defaultDecisionEnabled": true,
+                "defaultDecision": "Recommendation",
+                "instanceDurationInDays": 25,
+                "autoApplyDecisionsEnabled": true,
+                "recommendationsEnabled": true,
+                "recurrence": {
+                    "pattern": {
+                        "type": "absoluteMonthly",
+                        "interval": 3,
+                        "month": 0,
+                        "dayOfMonth": 0,
+                        "daysOfWeek": [],
+                        "firstDayOfWeek": "sunday",
+                        "index": "first"
+                    },
+                    "range": {
+                        "type": "numbered",
+                        "numberOfOccurrences": 0,
+                        "recurrenceTimeZone": null,
+                        "startDate": "2021-04-27",
+                        "endDate": "9999-12-31"
+                    }
+                },
+                "applyActions": [
+                    {
+                        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
+                    }
+                ]
+            },
+            "instances@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
+            "instances": []
+        }
+    ]
+}
+
+```
+
 
 ## See also
 

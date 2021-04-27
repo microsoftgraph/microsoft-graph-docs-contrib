@@ -26,7 +26,7 @@ Inherits from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 |queryRoot|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 |queryType|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 
-For more information on configuration options using accessReviewInactiveUsersQueryScope, see [configure the scope of your access review definition](/graph/accessreviews-scope-concept.md).
+For more information on configuration options using accessReviewInactiveUsersQueryScope, see [configure the scope of your access review definition](/graph/accessreviews-scope-concept).
 
 ## Relationships
 None.

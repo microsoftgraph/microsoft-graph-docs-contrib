@@ -20,14 +20,14 @@ The **accessReviewScheduleSettings** defines the settings of an [accessReviewSch
 ## Properties
 | Property    | Type   | Description |
 | :---------------| :---------- | :---------- |
-| mailNotificationsEnabled|Boolean | Flag to indicate whether emails are enabled/disabled.                |
-| reminderNotificationsEnabled|Boolean  | Flag to indicate whether reminders are enabled/disabled.   |
-| justificationRequiredOnApproval|Boolean | Flag to indicate whether reviewers are required to provide justification with their decision. |
-| defaultDecisionEnabled|Boolean | Flag to indicate whether default decision is enabled/disabled when reviewers do not respond. |
+| mailNotificationsEnabled|Boolean | Flag to indicate whether emails are enabled/disabled. Default value is `false`.               |
+| reminderNotificationsEnabled|Boolean  | Flag to indicate whether reminders are enabled/disabled. Default value is `false`.  |
+| justificationRequiredOnApproval|Boolean | Flag to indicate whether reviewers are required to provide justification with their decision. Default value is `false`. |
+| defaultDecisionEnabled|Boolean | Flag to indicate whether default decision is enabled/disabled when reviewers do not respond. Default value is `false`. |
 | defaultDecision|String | Decision chosen if `defaultDecisionEnabled` is enabled. Can be one of "Approve", "Deny", or "Recommendation". |
 | instanceDurationInDays|Int32 | Duration of each recurrence of review (`accessReviewInstance`) in number of days. |
 | recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Detailed settings for recurrence. Using standard Outlook recurrence object. Note that dayOfMonth is not supported - use property startDate on recurrenceRange to determine the day the review will start on. |
-| autoApplyDecisionsEnabled|Boolean | Flag to indicate whether auto-apply feature is enabled. |
+| autoApplyDecisionsEnabled|Boolean | Flag to indicate whether auto-apply feature is enabled. When set to `false`, a user must apply the decisions manually once the reviewer completes the access review. When set to `true`, decisions are applied automatically once the reviewer completes the access review. Default value is `false`. |
 | applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. See [accessReviewApplyAction](accessreviewapplyaction.md). |
 | recommendationsEnabled|Boolean | Flag to indicate whether decision recommendations are enabled/disabled. |
 

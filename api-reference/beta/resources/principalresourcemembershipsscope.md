@@ -24,7 +24,7 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 |principalScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the principals to be included in an access review.|
 |resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the resources for which access will be reviewed.|
 
-For more information on configuration options using principalResourceMembershipsScope, see [configure the scope of your access review definition](/graph/accessreviews-scope-concept.md).
+For more information on configuration options using principalResourceMembershipsScope, see [configure the scope of your access review definition](/graph/accessreviews-scope-concept).
 
 ## Relationships
 None.
