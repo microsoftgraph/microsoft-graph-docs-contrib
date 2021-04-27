@@ -141,11 +141,11 @@ See [refine search results](/graph/search-concept-aggregation) for examples that
 
 ## Request spelling correction
 
-Spelling correction is a very popular way to handle mismatch between typos in user query and correct words in matched contents. When typos are detected in the original user query, you can get the search result either for original user query or corrected alterate query and you can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchresponse](searchresponse.md). 
+Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchresponse](searchresponse.md). 
 
-In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the queryAlterationOptions that should be applied to the query for spelling correction. The description of queryAlterationOptions is defined in the [searchAlterationOptions](./searchalterationoptions.md).
+In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the **queryAlterationOptions** that should be applied to the query for spelling corrections. The description of **queryAlterationOptions** is defined in the [searchAlterationOptions](./searchalterationoptions.md).
 
-See [Request spelling correction](/graph/search-concept-speller) for a few examples how to use spell corrections.
+For examples that show how to use spelling corrections, see [Request spelling correction](/graph/search-concept-speller).
 
 ## Error handling
 

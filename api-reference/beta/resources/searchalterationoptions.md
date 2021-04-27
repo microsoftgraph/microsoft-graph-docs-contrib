@@ -1,6 +1,6 @@
 ---
 title: "searchAlterationOptions resource type"
-description: "Specifies the searchAlterationOptions entity"
+description: "Provides the search alteration options for spelling correction."
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
