@@ -48,16 +48,26 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 In the request body, supply a JSON representation of the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object.
 
-The following table shows the required and optional properties used to create an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md).
+The following table shows the required properties used to create an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| id  | String  | Optional unique identifier. |
 | displayName | String  | Name for the access review history data collection. Required. |
 | reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, reviews starting on or after this date will be included in the fetched history data. Required.  |
 | reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, reviews starting on or before this date will be included in the fetched history data. Required.  |
-| decisions  | String collection  | Determines which review decisions will be included in the fetched review history data if specified. Optional. All decisions will be included by default if no decisions are provided on create. Possible values are: `approve`, `deny`, `dontKnow`, `notReviewed`, and `notNotified`. |
 | scopes  | Collection of [accessReviewScope](../resources/accessreviewscope.md)  | Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.  |
+
+### Supported scope queries for accessReviewHistoryDefinition
+
+The following are queries supported on an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) based on the [accessReviewScope](accessreviewscope.md). This dictates which type of review history data is included.
+
+|Scenario| Query |
+|--|--|
+| Include every `accessReviewScheduleDefinition` review result on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users) | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')" |
+| Include every `accessReviewScheduleDefinition` review result on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users) | /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups/{group id}') |
+| Include every `accessReviewScheduleDefinition` review result scoped to all Microsoft 365 groups with guest users | /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members') |
+| Include every `accessReviewScheduleDefinition` review result on an access package | /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'accessPackageAssignments') |
+| Include every `accessReviewScheduleDefinition` review result for service principals assigned to privileged role | /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'roleAssignmentScheduleInstances') |
 
 ## Response
 
