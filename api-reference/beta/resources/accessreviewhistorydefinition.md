@@ -26,7 +26,7 @@ An accessReviewHistoryDefinition represents a collection of access review histor
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[userIdentity](../resources/useridentity.md)| User who created this review history definition. |
+|createdBy|[userIdentity](useridentity.md)| User who created this review history definition. |
 |createdDateTime|DateTimeOffset|Timestamp when the access review definition was created.|
 |decisions|String collection|Determines which review decisions will be included in the fetched review history data if specified. Optional on create. All decisions will be included by default if no decisions are provided on create. Possible values are: `approve`, `deny`, `dontKnow`, `notReviewed`, and `notNotified`.|
 |displayName|String|Name for the access review history data collection. Required on create.|
@@ -35,7 +35,7 @@ An accessReviewHistoryDefinition represents a collection of access review histor
 |id|String|The assigned unique identifier of an access review history definition. Optional on create.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews starting on or after this date will be included in the fetched history data. Required on create.|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|	Timestamp, reviews starting on or before this date will be included in the fetched history data. Required on create.|
-|scopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. See [accessReviewScope](accessreviewscope.md). Required on create.|
+|scopes| Collection of [accessreviewqueryscope](accessreviewqueryscope.md)  |Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. See [accessreviewqueryscope](accessreviewqueryscope.md). Required on create.|
 |status|String collection|Represents the status of the review history data collection. Possible values are: `done`, `inprogress`, `error`, `requested`.|
 
 ## JSON representation
