@@ -101,7 +101,8 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. 
+
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -146,7 +147,8 @@ Content-Type: application/json
   "subject": "User Token Meeting"
 }
 ```
->**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
+> [!NOTE]
+> If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
 
 ```json
     "joinInformation": {
