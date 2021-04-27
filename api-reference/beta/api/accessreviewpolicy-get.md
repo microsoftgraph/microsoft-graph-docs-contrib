@@ -84,7 +84,7 @@ Content-Type: application/json
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_accessreviewpolicy"
+  "name": "get_accessreviewpolicy_2"
 }
 -->
 ``` http

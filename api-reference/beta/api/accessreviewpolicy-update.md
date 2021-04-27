@@ -66,7 +66,6 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/accessReviewPolicy
 Content-Type: application/json
-Content-length: 163
 
 {
   "isGroupOwnerManagementEnabled": true
@@ -86,13 +85,12 @@ HTTP/1.1 204 No Content
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_accessreviewpolicy"
+  "name": "update_accessreviewpolicy_2"
 }
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/policy
 Content-Type: application/json
-Content-length: 163
 
 {
   "isGroupOwnerManagementEnabled": true

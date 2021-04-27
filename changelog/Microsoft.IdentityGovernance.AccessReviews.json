@@ -81,23 +81,17 @@
             "ChangeType": "Addition",
             "Description": "Added the [batchRecordDecisions](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-batchRecordDecisions?view=graph-rest-beta) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
             "Target": "accessReviewInstance"
-          },
-          {
-            "Id":"06728161-a14f-11eb-8cb0-33bc249d550e",
-            "ApiChange":"Relationship",
-            "ChangedApiName":"accessReviewPolicy",
-            "ChangeType":"Addition",
-            "Description":"Added the **accessReviewPolicy** relationship to the [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
-            "Target":"policyRoot"
-          },
-          {
-            "Id":"0674e1f3-a14f-11eb-8cb0-33bc249d550e",
-            "ApiChange":"Relationship",
-            "ChangedApiName":"policy",
-            "ChangeType":"Addition",
-            "Description":"Added the **policy** relationship to the [accessReviewSet](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewSet?view=graph-rest-beta) resource.",
-            "Target":"accessReviewSet"
-          },
+          }
+        ],
+        "Id": "d8d2da25-7b8d-11eb-8d30-85f45032d4a1",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-03-02T19:31:12.323Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Governance"
+      },
+      {
+        "ChangeList": [
           {
             "Id":"067741e8-a14f-11eb-8cb0-33bc249d550e",
             "ApiChange":"Resource",
@@ -107,12 +101,12 @@
             "Target":"accessReviewPolicy"
           }
         ],
-        "Id": "d8d2da25-7b8d-11eb-8d30-85f45032d4a1",
+        "Id": "71941e3b-b555-4bc6-8348-7cf2ddf44350",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2021-03-02T19:31:12.323Z",
+        "CreatedDateTime": "2021-04-27T18:46:20.323Z",
         "WorkloadArea": "Identity and access",
-        "SubArea": "Identity governance"
-      }
-    ]
-  }
+        "SubArea": "Governance"
+    }
+  ]
+}
