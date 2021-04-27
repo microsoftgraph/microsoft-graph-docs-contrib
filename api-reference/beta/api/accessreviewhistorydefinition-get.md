@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object by ID. This returns all properties of the access review history definition object. If the download link is still valid that will be returned along with the definition. If the definition is 30 days or older a 404 will be returned.
+Retrieve an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object by its identifier. All of the properties of the access review history definition object are returned. If the download link is still valid it is returned along with the definition. If the definition is 30 days or older a 404 is returned.
 
 ## Permissions
 
@@ -112,4 +112,3 @@ Content-Type: application/json
   ]
 }
 ```
-
