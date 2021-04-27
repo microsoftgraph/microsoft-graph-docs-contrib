@@ -29,7 +29,7 @@ Authentication providers implement the code required to acquire a token using th
 | [Mobile app that calls web APIs](/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
 | | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
 
-> Note: Java and android developers need to add the [azure-identity](https://docs.microsoft.com/java/api/overview/azure/identity-readme?view=azure-java-stable) library in order to get access to the different credentials types.
+> Note: Java and android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme?view=azure-java-stable) library in order to get access to the different credentials types.
 
 ## <a name="AuthCodeProvider" ></a>Authorization code provider
 
