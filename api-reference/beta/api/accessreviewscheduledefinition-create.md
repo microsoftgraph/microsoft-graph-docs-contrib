@@ -57,11 +57,11 @@ The following table shows the properties accepted to create an accessReview.
 ## Response
 If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
 
-## Example 1: Create an access review on a security group
+## Example 1: Create an access review on a group
 
 This is an example of creating an access review with the following settings:
-+ The review reviews all members of a security group, whose group **id** is `b7a059cb-038a-4802-8fc9-b9d1ed0c4444`.
-+ A specific user, whose user **id** is `7eae4444-d425-48b2-adf2-3c777f6256f3` is the reviewer.
++ The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.
 + It recurs weekly and continues indefinitely.
 
 ### Request
@@ -82,12 +82,12 @@ Content-type: application/json
   "descriptionForAdmins": "New scheduled access review",
   "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
   "scope": {
-    "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0c4444/transitiveMembers",
+    "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },
   "reviewers": [
     {
-      "query": "/users/7eae4444-d425-48b2-adf2-3c777f6256f3",
+      "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
       "queryType": "MicrosoftGraph",
       "queryRoot": "decisions"
     }
@@ -158,12 +158,12 @@ Content-type: application/json
         "userPrincipalName": "admin@contoso.com"
     },
     "scope": {
-        "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
+        "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
         "queryType": "MicrosoftGraph"
     },
     "reviewers": [
         {
-            "query": "/users/7eae986b-d425-48b2-adf2-3c777f4444f3",
+            "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
             "queryType": "MicrosoftGraph",
             "queryRoot": "decisions"
         }
