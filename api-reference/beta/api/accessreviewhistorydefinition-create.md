@@ -55,11 +55,11 @@ The following table shows the required properties used to create an [accessRevie
 | displayName | String  | Name for the access review history data collection. Required. |
 | reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, reviews starting on or after this date will be included in the fetched history data. Required.  |
 | reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, reviews starting on or before this date will be included in the fetched history data. Required.  |
-| scopes  | Collection of [accessReviewScope](../resources/accessreviewscope.md)  | Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.  |
+| scopes  | Collection of [accessreviewqueryscope](../resources/accessreviewqueryscope.md)  | Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.  |
 
 ### Supported scope queries for accessReviewHistoryDefinition
 
-The following are queries supported on an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) based on the [accessReviewScope](accessreviewscope.md). This dictates which type of review history data is included.
+The following are queries supported on an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) based on the [accessreviewqueryscope](../resources/accessreviewqueryscope.md). This dictates which type of review history data is included.
 
 |Scenario| Query |
 |--|--|

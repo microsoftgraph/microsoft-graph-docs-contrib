@@ -57,7 +57,7 @@ The following is a JSON representation of the resource.
   "reviewHistoryPeriodEndDateTime": "String (timestamp)",
   "decisions": [
     {
-      "@odata.type": "microsoft.graph.accessReviewDecision"
+      "@odata.type": "String"
     }
   ],
   "status": "String",
