@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An accessReviewHistoryDefinition represents a collection of access review history data and the filters used to collect that data. A accessReviewHistoryDefinition's reviewHistoryPeriodStartDateTime, reviewHistoryPeriodEndDateTime, decisions, and scopes properties are used when selecting review history data and all can be modified. Each accessReviewHistoryDefinition object is only available for 30 days.
+An accessReviewHistoryDefinition represents a collection of access review history data and the scopes used to collect that data. A accessReviewHistoryDefinition's reviewHistoryPeriodStartDateTime, reviewHistoryPeriodEndDateTime, decisions, and scopes properties are used when selecting review history data and all can be modified. Each accessReviewHistoryDefinition object is only available for 30 days.
 
 ## Methods
 |Method|Return type|Description|
@@ -35,7 +35,7 @@ An accessReviewHistoryDefinition represents a collection of access review histor
 |id|String|The assigned unique identifier of an access review history definition. Optional on create.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews starting on or after this date will be included in the fetched history data. Required on create.|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|	Timestamp, reviews starting on or before this date will be included in the fetched history data. Required on create.|
-|scopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Used to filter what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. See [accessReviewScope](accessreviewscope.md). Required on create.|
+|scopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. See [accessReviewScope](accessreviewscope.md). Required on create.|
 |status|String collection|Represents the status of the review history data collection. Possible values are: `done`, `inprogress`, `error`, `requested`.|
 
 ### Supported scope queries for accessReviewHistoryDefinition
