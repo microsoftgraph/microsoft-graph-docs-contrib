@@ -78,7 +78,7 @@ To review *only inactive users* assigned to the group, specify as follows:
 }
 ```
 
-Because this review is applied on all Microsoft 365 groups, configure the instanceEnumerationScope object to specify the Microsoft groups to review. If the instanceEnumerationScope object is not specified, this configuration is similar to [Example 3](accessreviews-scope-concept#example-3-review-guest-users-assigned-to-all-Microsoft-365-groups).
+Because this review is applied on all Microsoft 365 groups, configure the instanceEnumerationScope object to specify the Microsoft groups to review. If the instanceEnumerationScope object is not specified, this configuration is similar to [Example 3](/graph/accessreviews-scope-concept#example-3-review-guest-users-assigned-to-all-groups).
 
 ### Example 5: Review access of all inactive guest users to all groups
 
@@ -182,7 +182,7 @@ Example configurations of the **scope** property using the principalResourceMemb
 }
 ```
 
-In this example, the principals are all inactive guest users while the resource is an Azure AD application with service principal **id** `7a06f670-2d24-4805-836c-1f4a4d47d567`. The period of inactivity of the guest users is 30 days from the start date of the accessReviewScheduleDefinition.
+In this example, the principals are all inactive guest users with the period of their inactivity calculated as 30 days from the start date of the accessReviewScheduleDefinition.
 
 ### Example 3: Review access of all guest users and a specific user, to all Microsoft 365 groups
 
@@ -245,8 +245,6 @@ In this example, the principals are all inactive guest users while the resource 
     ]
 }
 ```
-
-In this example, the principals are all inactive users while the resource is the Azure AD directory role with **id** `6125d321-9b1f-4f4a-a826-a0483c18c646`. The period of inactivity is 30 days from the start date of the accessReviewScheduleDefinition.
 
 ## See also
 
