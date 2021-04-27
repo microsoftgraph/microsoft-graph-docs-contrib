@@ -65,11 +65,11 @@ The following is a JSON representation of the resource.
   "fulfilledDateTime": "String (timestamp)",
   "downloadUri": "String",
   "createdBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
+    "@odata.type": "#microsoft.graph.userIdentity"
   },
   "scopes": [
     {
-      "@odata.type": "microsoft.graph.accessReviewScope"
+      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     }
   ]
 }
