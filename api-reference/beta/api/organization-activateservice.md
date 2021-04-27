@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 ## Description
 
-`activateService` is used to activate a given service for an organization and will require admin privileges to run.
+The **activateService** object  is used to activate a service for an organization. This operation requires administrator privileges to run.
 
 
 ## Permissions
