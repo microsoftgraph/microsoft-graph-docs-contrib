@@ -1,14 +1,14 @@
 ---
-title: "Overview of access reviews API for groups"
-description: "The access reviews API for groups allows you to programmatically review access to your groups"
+title: "Overview of access reviews API"
+description: "The access reviews API allows you to programmatically review access to your groups"
 author: "FaithOmbongi"
 localization_priority: Normal
 ms.prod: "governance"
 ---
 
-# Overview of the access reviews API for groups
+# Overview of the access reviews API
 
-The [access reviews API for groups](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) in Microsoft Graph allows you to programmatically review access to your groups. This includes:
+The [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) in Microsoft Graph allows you to programmatically review access to Azure AD resources. This includes:
 + Creating, reading, updating, and deleting access reviews, access review settings, and schedules.
 + Investigating past access reviews and the decisions taken by reviewers, including the steps Azure AD took automatically.
 
