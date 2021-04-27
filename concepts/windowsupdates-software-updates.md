@@ -15,7 +15,7 @@ You may already be familiar with the [Microsoft Update Catalog](https://www.cata
 
 ## Windows update categories
 
-There are two high-level categories of Windows 10 updates: feature updates and quality updates. Quality updates are further classified as security and non-security. The service currently deploys only feature updates and _security_ quality updates. The service currently does not deploy driver updates.
+There are two high-level categories of Windows 10 updates: feature updates and quality updates. In the deployment service catalog, quality updates are further classified as security and non-security, and driver updates are excluded from the definition of quality updates. The service currently deploys only feature updates and _security_ quality updates. The service currently does not deploy non-security quality updates or driver updates.
 
 To learn more about Windows 10 updates and servicing, see [Quick guide to Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-quick-start).
 
