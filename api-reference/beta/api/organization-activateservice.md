@@ -52,7 +52,7 @@ At least one parameter must be defined for this action to be valid. There are tw
 ### Parameters
 
 | Parameter         | Type         | Description                           |
-| ----------------- | ------------ | --------- | ------------------------------------- |
+| ----------------- | ------------ | ------------------------------------- |
 | `service` | `Edm.String` | False     | Name of the service to activate       |
 | `servicePlanId`   | `Edm.Guid`   | False     | PlanId of the ServicePlan to activate |
 | `skuId`           | `Guid`       | False     | SkuId of SKU the service plan is on   |
