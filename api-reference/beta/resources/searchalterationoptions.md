@@ -19,8 +19,8 @@ Provides the search alteration options for spelling correction.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|enableSuggestion|Boolean|This gets the search results for original user query and suggesting spelling correction in **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true) for typos in query. Optional.|
-|enableModification|Boolean|This gets the search results for corrected query **when there are no results** for the original query with typos and get the spelling modification information in **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true). Optional.|
+|enableSuggestion|Boolean|Indicates whether spelling suggestions are enabled. If enabled, user will get the search results for original search query and suggesting spelling correction in **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true) for typos in query. Optional.|
+|enableModification|Boolean|Indicates whether spelling modifications are enabled. If enabled, user will get the search results for corrected query **when there are no results** for the original query with typos and get the spelling modification information in **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true). Optional.|
 
 ## JSON representation
 

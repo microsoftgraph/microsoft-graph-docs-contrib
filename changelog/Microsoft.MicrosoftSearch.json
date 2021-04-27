@@ -77,7 +77,7 @@
         {
             "ChangeList": [
                 {
-                    "Id": "263a96d9-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "90839e99-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Property",
                     "ChangedApiName": "queryAlterationResponse",
                     "ChangeType": "Addition",
@@ -85,7 +85,7 @@
                     "Target": "searchResponse"
                 },
                 {
-                    "Id": "263cfa79-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "908600f4-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Property",
                     "ChangedApiName": "value",
                     "ChangeType": "Addition",
@@ -93,7 +93,7 @@
                     "Target": "searchResponse"
                 },
                 {
-                    "Id": "263f5b54-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "9088645a-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Resource",
                     "ChangedApiName": "searchAlterationOptions",
                     "ChangeType": "Addition",
@@ -101,7 +101,7 @@
                     "Target": "searchAlterationOptions"
                 },
                 {
-                    "Id": "2641bd9e-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "908ac5ba-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Resource",
                     "ChangedApiName": "searchResultSet",
                     "ChangeType": "Addition",
@@ -109,7 +109,7 @@
                     "Target": "searchResultSet"
                 },
                 {
-                    "Id": "26442b5a-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "908d291d-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Resource",
                     "ChangedApiName": "alterationResponse",
                     "ChangeType": "Addition",
@@ -117,7 +117,7 @@
                     "Target": "alterationResponse"
                 },
                 {
-                    "Id": "2646c81b-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "908f8b1b-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Resource",
                     "ChangedApiName": "searchAlteration",
                     "ChangeType": "Addition",
@@ -125,7 +125,7 @@
                     "Target": "searchAlteration"
                 },
                 {
-                    "Id": "26492cf6-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "9091ee4e-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Resource",
                     "ChangedApiName": "alteredQueryToken",
                     "ChangeType": "Addition",
@@ -133,7 +133,7 @@
                     "Target": "alteredQueryToken"
                 },
                 {
-                    "Id": "264b9187-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "9094536b-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "searchAlterationType",
                     "ChangeType": "Addition",
@@ -141,7 +141,7 @@
                     "Target": "searchAlterationType"
                 },
                 {
-                    "Id": "264df26d-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "9096b4de-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Parameter",
                     "ChangedApiName": "queryAlterationOptions",
                     "ChangeType": "Addition",
@@ -149,7 +149,7 @@
                     "Target": "query"
                 },
                 {
-                    "Id": "26505622-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "909915c1-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Property",
                     "ChangedApiName": "searchTerms",
                     "ChangeType": "Deletion",
@@ -157,7 +157,7 @@
                     "Target": "searchResponse"
                 },
                 {
-                    "Id": "2652b881-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "909b77d1-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Property",
                     "ChangedApiName": "hitsContainers",
                     "ChangeType": "Deletion",
@@ -165,7 +165,7 @@
                     "Target": "searchResponse"
                 },
                 {
-                    "Id": "26551a9e-7d90-11eb-8d30-85f45032d4a1",
+                    "Id": "909ddbf4-a779-11eb-a835-c815efda831b",
                     "ApiChange": "Method",
                     "ChangedApiName": "query",
                     "ChangeType": "Change",
@@ -173,10 +173,10 @@
                     "Target": "query"
                 }
             ],
-            "Id": "263835c4-7d90-11eb-8d30-85f45032d4a1",
+            "Id": "90813f52-a779-11eb-a835-c815efda831b",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2021-03-05T08:52:43.491Z",
+            "CreatedDateTime": "2021-04-27T16:56:52.220Z",
             "WorkloadArea": "Search",
             "SubArea": ""
         }

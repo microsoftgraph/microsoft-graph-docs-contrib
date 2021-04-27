@@ -21,7 +21,7 @@ Provides related information of spelling correction in the alteration response.
 |:-------------|:------------|:------------|
 |originalQueryString|String| Defines the original user query string.|
 |queryAlteration|[searchAlteration](searchalteration.md)| Defines the details of alteration information for spelling correction.|
-|queryAlterationType|[searchAlterationType](searchalterationtype.md)| Defines the enum type of [searchAlteration](searchalteration.md) for spelling correction.|
+|queryAlterationType|[searchAlterationType](enums.md#searchAlterationType)| Defines enum type of [searchAlteration](searchalteration.md) that is applied to query for spelling correction.|
 
 ## JSON representation
 
