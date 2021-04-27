@@ -100,10 +100,12 @@ Content-Type: application/json
   "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
   "scopes": [
     {
+      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
       "queryType": "MicrosoftGraph",     
       "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
     },  
     {
+      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
       "queryType": "MicrosoftGraph",     
       "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
     }
