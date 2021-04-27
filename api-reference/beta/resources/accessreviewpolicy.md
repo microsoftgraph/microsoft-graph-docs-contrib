@@ -1,6 +1,6 @@
 ---
 title: "accessReviewPolicy resource type"
-description: "Access reviews Policy is a singleton that enable organizations to manage access review directory level policy."
+description: "Access reviews policy is a singleton that enables organizations to manage directory-level access review policy."
 author: "kafen"
 localization_priority: Normal
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Access review policy is a singleton that enables administrators to manage directory-level access review policies. For example, administrators can use the access review policy to enable and disable the ability of group owners to create access reviews on group that they own.
+Access review policy is a singleton that enables administrators to manage directory-level access review policies. For example, administrators can use the access review policy to enable and disable the ability of group owners to create access reviews on groups that they own.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |description|String|Description for this policy. Read-only.|
 |displayName|String|Display name for this policy. Read-only.|
-|isGroupOwnerManagementEnabled|Boolean|If true, group owners can create and manage access reviews on groups they own|
+|isGroupOwnerManagementEnabled|Boolean|If `true`, group owners can create and manage access reviews on groups they own.|
 
 ## Relationships
 None.
@@ -52,4 +52,3 @@ The following is a JSON representation of the resource.
   "isGroupOwnerManagementEnabled": false
 }
 ```
-
