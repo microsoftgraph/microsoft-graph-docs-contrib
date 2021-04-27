@@ -1,7 +1,7 @@
 ---
 title: "List accessReviewHistoryDefinitions"
 description: "Get a list of the accessReviewHistoryDefinition objects."
-author: "leherpel"
+author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
