@@ -1,6 +1,6 @@
 ---
 title: "organization: activateService"
-description: "`activateService` is used to activate a given service for an organization and will require admin privileges to run."
+description: "Activates a service for an organization."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "directory-management"
@@ -91,4 +91,3 @@ Content-length: 150
 ``` http
 HTTP/1.1 204 No Content
 ```
-
