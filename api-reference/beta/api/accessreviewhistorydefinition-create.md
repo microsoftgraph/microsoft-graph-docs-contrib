@@ -56,7 +56,7 @@ The following table shows the properties accepted to create an [accessReviewHist
 | displayName | String  | Name for the access review history data collection. Required. |
 | reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, reviews starting on or after this date will be included in the fetched history data. Required.  |
 | reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, reviews starting on or before this date will be included in the fetched history data. Required.  |
-| decisions  | Collection of String  | Determines which review decisions will be included in the fetched review history data if specified. Optional. All decisions will be included by default if no decisions are provided on create. Possible values are: `approve`, `deny`, `dontKnow`, `notReviewed`, and `notNotified`. |
+| decisions  | String collection  | Determines which review decisions will be included in the fetched review history data if specified. Optional. All decisions will be included by default if no decisions are provided on create. Possible values are: `approve`, `deny`, `dontKnow`, `notReviewed`, and `notNotified`. |
 | scopes  | Collection of [accessReviewScope](../resources/accessreviewscope.md)  | Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.  |
 
 ## Response
