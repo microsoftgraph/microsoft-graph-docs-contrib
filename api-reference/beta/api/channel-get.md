@@ -181,35 +181,6 @@ Content-type: application/json
 }
 ```
 
-Here is an example of the response for a standard channel with email settings.
-
->**Note:** The response object shown here might be shortened for readability.
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels/$entity",
-    "id": "19:d468258bc90f4a358361b5d73b89d39b@thread.skype",
-    "displayName": "TestChannelEmailSettings",
-    "description": "Test channel email settings.",
-    "isFavoriteByDefault": null,
-    "email": "9f100774.microsoft.com@amer.teams.ms",
-    "emailSettings": {
-        "allowedSenders": {
-            "senderType": "domains",
-            "domains": [
-                "microsoft.com",
-                "hotmail.com"
-            ]
-        }
-    },
-    "webUrl": "https://teams.microsoft.com/l/channel/19%3Ad468258bc90f4a358361b5d73b89d39b%40thread.skype/General?groupId=8bb12236-b929-42e0-94a0-1c417466ebf8&tenantId=139d16b4-7223-43ad-b9a8-674ba63c7924",
-    "membershipType": "standard"
-}
-```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -223,3 +194,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

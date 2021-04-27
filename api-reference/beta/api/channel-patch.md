@@ -142,53 +142,6 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Update channel with email settings
-
-#### Request
-
-The following example shows a request to update the [email settings](../resources/channelemailsettings.md) of a channel.
-
-A channel's email must have been provisioned, either using the API to [provision channel email](channel-provisionemail.md) or through the Microsoft Teams client, before an attempt to update the email settings can be made.
-
-> **Note**: This API currently does not support admin or application-only permissions.
-
-<!-- {
-  "blockType": "request",
-  "name": "patch_channel_with_emailSettings"
-}-->
-
-```http
-PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
-Content-type: application/json
-
-{
-    "displayName": "UpdateChannelEmailSettings",
-    "description": "Update channel email settings.",
-    "emailSettings": {
-        "allowedSenders": {
-            "senderType": "domains",
-            "domains": [
-                "microsoft.com",
-                "hotmail.com"
-            ]
-        }
-    }
-}
-```
-
-#### Response
-
-Here is an example of the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
