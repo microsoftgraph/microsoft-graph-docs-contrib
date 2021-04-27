@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. Delegated permiss
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All |
+|Delegated (work or school account)     | AccessReviews.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
 
 ## HTTP request

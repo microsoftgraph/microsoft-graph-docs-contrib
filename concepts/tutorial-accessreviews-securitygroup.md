@@ -22,7 +22,7 @@ To complete this tutorial, you need the following resources and privileges:
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Log in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
   + [Optional] Start a new **incognito** or **InPrivate browser** session or start a session in an anonymous browser. You will log in later in this tutorial.
-+ The following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
++ The following delegated permissions: `AccessReviews.ReadWrite.All`, `Group.ReadWrite.All`.
 
 To consent to the required permissions in Graph Explorer:
 1. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.

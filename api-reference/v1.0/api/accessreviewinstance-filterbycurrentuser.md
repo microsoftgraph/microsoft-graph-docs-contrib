@@ -10,16 +10,16 @@ doc_type: apiPageType
 # accessReviewInstance: filterByCurrentUser
 Namespace: microsoft.graph
 
-Returns all [accessReviewInstance](../resources/accessreviewinstance.md) objects for a given reviewer.
+Returns all [accessReviewInstance](../resources/accessreviewinstance.md) objects where the calling user is a reviewer.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|AccessReviews.Read.All|
+|Delegated (work or school account)|AccessReviews.Read.All, AccessReviews.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|AccessReviews.Read.All|
+|Application|AccessReviews.Read.All, AccessReviews.ReadWrite.All|
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|accessReviewInstanceFilterByCurrentUserOptions|Filter used to query access review instances by reviewer.|
+|on|accessReviewInstanceFilterByCurrentUserOptions|Filter used to query access review instances where the calling user is the reviewer. Use filterByCurrentUser(on='reviewer').|
 
 
 ## Request headers
@@ -61,7 +61,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/filterByCurrentUser(on='reviewer')
 ```
 
 
@@ -78,18 +78,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.accessReviewInstance",
-      "id": "String (identifier)",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "status": "String",
-      "scope": {
-        "@odata.type": "microsoft.graph.accessReviewScope"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(accessReviewInstance)",
+    "@odata.count": 2,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewInstance",
+            "id": "7ca879f0-77ea-4386-b110-776dec898935",
+            "startDateTime": "2021-04-20T00:45:51.627Z",
+            "endDateTime": "2021-04-23T00:45:51.627Z",
+            "status": "Applied",
+            "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/v1.0/groups/6b7b9930-38a0-4f93-a107-3bc9904c83d7/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph",
+                "queryRoot": null
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessReviewInstance",
+            "id": "00ef5dba-4a32-48b3-b18a-57b244c0c4ba",
+            "startDateTime": "2021-04-13T00:45:51.627Z",
+            "endDateTime": "2021-04-16T00:45:51.627Z",
+            "status": "Applied",
+            "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/v1.0/groups/6b7b9930-38a0-4f93-a107-3bc9904c83d7/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph",
+                "queryRoot": null
+            }
+        }
+    ]
 }
 ```
-

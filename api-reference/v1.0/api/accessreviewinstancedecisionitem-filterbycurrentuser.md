@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|AccessReviews.Read.All, AccessReviews.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|AccessReviews.Read.All, AccessReviews.ReadWrite.All|
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|**TODO: Add Description**|
+|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Retrieves all decision items for which the calling user is the reviewer. Use filterByCurrentUser(on='reviewer').|
 
 
 ## Request headers
@@ -61,7 +61,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
 

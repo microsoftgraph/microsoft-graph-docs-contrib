@@ -20,7 +20,7 @@ To complete this tutorial, you need the following resources and privileges:
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled. 
 + An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).
 + Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role. 
-+ The following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
++ The following delegated permissions: `User.Invite.All`, `AccessReviews.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
 
 To consent to the required permissions in Graph Explorer:
 1. Select the settings icon to the right of the user account details, and then choose **Select permissions**.

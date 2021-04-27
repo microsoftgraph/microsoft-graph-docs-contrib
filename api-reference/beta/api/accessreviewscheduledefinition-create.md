@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All  |
+|Delegated (work or school account)     | AccessReviews.ReadWrite.All  |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReviews.ReadWrite.All |
 
 The signed-in user must also be in a directory role that permits them to create an access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).
 
@@ -48,7 +48,7 @@ The following table shows the properties accepted to create an accessReview.
 | displayName | String | Name of access review series. Required.|
 | descriptionForAdmins | string | Context of the review provided to admins. Required. |
   descriptionForReviewers | string | Context of the review provided to reviewers. Required. |
-| scope | [accessReviewScope](../resources/accessreviewscope.md) | Defines the scope of users reviewed in a group. See  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Required.| 
+| scope | [accessReviewScope](../resources/accessreviewscope.md) | Defines the scope of users reviewed. See  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Required.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Defines who the reviewers are. If none are specified, the review is a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |

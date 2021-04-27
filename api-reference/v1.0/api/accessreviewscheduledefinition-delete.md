@@ -1,25 +1,25 @@
 ---
-title: "accessReviewInstance: resetDecisions"
-description: "**TODO: Add Description**"
+title: "Delete accessReviewScheduleDefinition"
+description: "Deletes an accessReviewScheduleDefinition object."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# accessReviewInstance: resetDecisions
+# Delete accessReviewScheduleDefinition
 Namespace: microsoft.graph
 
-Resets all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on an [accessReviewInstance](../resources/accessreviewinstance.md) to not reviewed.
+Deletes an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|AccessReviews.ReadWrite.All|
+|Delegated (work or school account)| AccessReviews.ReadWrite.All  |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|AccessReviews.ReadWrite.All|
+|Application| AccessReviews.ReadWrite.All |
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/resetDecisions
+DELETE /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}
 ```
 
 ## Request headers
@@ -41,18 +41,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "accessreviewinstance_resetdecisions"
+  "name": "delete_accessreviewscheduledefinition"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/resetDecisions
+DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}
 ```
 
 
@@ -66,3 +66,4 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 ``` http
 HTTP/1.1 204 No Content
 ```
+

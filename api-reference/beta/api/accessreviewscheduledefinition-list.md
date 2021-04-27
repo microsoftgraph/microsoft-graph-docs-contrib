@@ -26,9 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegated (work or school account)     | AccessReviews.Read.All, AccessReviews.ReadWrite.All  |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Application                            | AccessReviews.Read.All, AccessReviews.ReadWrite.All |
 
  The signed-in user must also be in a directory role that permits them to read an access review.
 

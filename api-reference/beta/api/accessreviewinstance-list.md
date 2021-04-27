@@ -25,8 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Delegated (work or school account)     | AccessReviews.Read.All, AccessReviews.ReadWrite.All  |
+|Application                            | AccessReviews.Read.All, AccessReviews.ReadWrite.All |
 
 The signed-in user must also be in a directory role that permits them to read an access review. To view just the instances that the signed-in user is assigned the reviewer on, see [List pending access review instances](accessreviewinstance-pendingaccessreviewinstances.md)
 
