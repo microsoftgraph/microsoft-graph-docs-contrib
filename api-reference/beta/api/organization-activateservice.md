@@ -46,7 +46,7 @@ POST /organization/{organizationId}/activateService
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the [activateService](../resources/activateService) object.
 At least one parameter must be defined for this action to be valid. There are two possible cases: You could have `service` or (`servicePlanId` and `skuId`). If all three parameters are defined, then the `servicePlanId` and `skuId` takes precedence.
 
 ### Parameters
