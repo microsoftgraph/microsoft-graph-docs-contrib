@@ -1,6 +1,6 @@
 ---
 title: "Overview of access reviews API"
-description: "The access reviews API allows you to programmatically review access to your groups"
+description: "The access reviews API allows you to programmatically review access to your Azure AD resources."
 author: "FaithOmbongi"
 localization_priority: Normal
 ms.prod: "governance"
