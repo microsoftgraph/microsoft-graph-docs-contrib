@@ -15,6 +15,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 The set of [updatableAsset](../resources/windowsupdates-updatableasset.md) resources to which a [deployment](../resources/windowsupdates-deployment.md) can apply.
 
+If the same **updatableAsset** resource is included in the **exclusions** and **members** relationships, deployment will not apply to it.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -31,7 +33,7 @@ The set of [updatableAsset](../resources/windowsupdates-updatableasset.md) resou
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|exclusions|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to exclude from the audience. If an **updatableAsset** belongs to both **members** and **exclusions**, a deployment will not apply to it.|
+|exclusions|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to exclude from the audience.|
 |members|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Specifies the assets to include in the audience.|
 
 ## JSON representation
