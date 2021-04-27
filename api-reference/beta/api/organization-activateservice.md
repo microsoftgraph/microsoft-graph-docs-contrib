@@ -70,7 +70,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/organization/{organizationId}/activateService
+POST https://graph.microsoft.com/beta/organization/72f988bf-86f1-41af-91ab-2d7cd011db47/activateService
 
 Content-Type: application/json
 Content-length: 150
