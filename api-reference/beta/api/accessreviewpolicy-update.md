@@ -47,13 +47,13 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isGroupOwnerManagementEnabled|Boolean|If true, group owners can create and manage access reviews on groups they own|
+|isGroupOwnerManagementEnabled|Boolean|If `true`, group owners can create and manage access reviews on groups they own.|
 
 
 
 ## Response
 
-If successful, this method returns a `204 NoContent` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -80,7 +80,7 @@ Content-length: 163
 }
 -->
 ``` http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 ### Request
@@ -106,6 +106,5 @@ Content-length: 163
 }
 -->
 ``` http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
-
