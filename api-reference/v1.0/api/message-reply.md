@@ -55,7 +55,7 @@ When using JSON format, provide a JSON object in the request body with the follo
 | comment | String | A comment to include. Can be an empty string. |
 | message | [message](../resources/message.md) | Any writeable properties to update in the reply message. |
 
-When using MIME content no parameters are required, just paste the MIME string in the body of the request.
+When using MIME content no parameters are required, just paste the MIME string in the request body.
 
 ## Response
 

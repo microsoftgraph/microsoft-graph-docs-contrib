@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Send a [message](../resources/message.md) in the draft folder or a new **message** with MIME content. The draft **message** can be a new message draft, reply draft, reply-all draft, or a forward draft. The message is then saved in the Sent Items folder.
+Send an existing draft message. 
+
+The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft. The message is then saved in the Sent Items folder.
 
 ## Permissions
 
@@ -30,19 +32,17 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /me/messages/{id}/send
 POST /users/{id | userPrincipalName}/messages/{id}/send
-POST https://graph.microsoft.com/v1.0/me/sendMail
 ```
 
 ## Request headers
 
-| Name       | Type | Description| 
+| Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Length | number | 0. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-For sending MIME content no parameters are required, just paste the MIME string in the body of the request.
+Since this method sends an already existing draft message, specifying a request body is not necessary.
 
 ## Response
 
@@ -89,30 +89,6 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ##### Response
 
 Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 202 Accepted
-```
-
-### Example 2: Send a new message using MIME format
-##### Request
-<!-- {
-  "blockType": "request",
-  "name": "message_send_mime_v1"
-}-->
-
-```http
-POST https://graph.microsoft.com/v1.0/me/sendMail
-Content-type: text/plain
-
-Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
-```
-##### Response
-
 <!-- {
   "blockType": "response",
   "truncated": true

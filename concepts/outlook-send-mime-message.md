@@ -36,7 +36,7 @@ When specifying the body in MIME format no parameters are required, include only
 | Use cases | Resources |
 | ------| ----- |
 | Create a message draft | [createMessage](/graph/api/user-post-messages.md) |
-| Send an email | [sendMail](/graph/api/message-send.md) |
+| Send an email | [sendMail](/graph/api/user-sendmail.md) |
 | Reply to a message | [reply](/graph/api/message-reply.md) |
 | Create a draft to reply to a message | [createReply](/graph/api/message-createreply.md) |
 | ReplyAll to a message | [replyAll](/graph/api/message-replyall.md) | 
