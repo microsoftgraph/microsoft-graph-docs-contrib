@@ -1,7 +1,7 @@
 ---
 title: "accessReviewHistoryDefinition: generateDownloadUri"
 description: "Generates a uri which can be used to retrieve review history data.
-author: "leherpel"
+author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generates a uri which can be used to retrieve review history data for the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md). This URI has a TTL of 1 day and can be retrieved by fetching the downloadUri property from the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md) object.
+Generates a uri which can be used to retrieve review history data for the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md). This URI is valid for 1 day and can be retrieved by fetching the downloadUri property from the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md) object.
 
 ## Permissions
 
@@ -89,7 +89,7 @@ Content-Type: application/json
   ],
   "status": "done",
   "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-  "fulfilledDateTime": 2021-04-14T00:22:58.5276552Z,
+  "fulfilledDateTime": "2021-04-14T00:22:58.5276552Z",
   "downloadUri": "https://dfermconsolreportusc.blob.core.windows.net/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
   "createdBy": {
     "id": "673ad0d8-7b0e-4201-aaeb-74cdcbf22af9",
@@ -112,4 +112,3 @@ Content-Type: application/json
   ]
 }
 ```
-
