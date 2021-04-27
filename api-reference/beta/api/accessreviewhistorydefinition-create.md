@@ -48,7 +48,7 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 In the request body, supply a JSON representation of the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object.
 
-The following table shows the properties accepted to create an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md).
+The following table shows the required and optional properties used to create an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
