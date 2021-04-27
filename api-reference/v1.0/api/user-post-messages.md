@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Length | number | 0. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required for new MIME messages. <br/> Use text/plain for MIME content and application/json for a JSON object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `text/plain` for MIME content and `application/json` for a JSON object|
 
 ## Request body
 When using JSON format, provide a JSON representation of [message](../resources/message.md) object.
