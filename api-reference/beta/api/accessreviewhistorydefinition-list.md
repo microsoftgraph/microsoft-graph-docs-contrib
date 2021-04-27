@@ -42,7 +42,7 @@ GET /identityGovernance/accessReviews/historyDefinitions
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. Supported OData query parameters include `$top`, `$filter`, and `$skip`. For general information, see [OData query parameters](/graph/query-parameters). 
 
 ## Request headers
 |Name|Description|
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions?$top=100&$skip=0
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
 ```
 
 
