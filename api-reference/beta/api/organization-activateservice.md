@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 | :--- | :--- |
-| Delegated (work or school account) | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
+| Delegated (work or school account) | Directory.ReadWriteAdvanced.All, Directory.ReadWrite.All|
 | Delegated (personal Microsoft account) | Not Supported. |
 | Application | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
 
