@@ -32,7 +32,7 @@ An accessReviewHistoryDefinition represents a collection of access review histor
 |displayName|String|Name for the access review history data collection. Required on create.|
 |downloadUri|String|Uri which can be used to retrieve review history data.|
 |fulfilledDateTime|DateTimeOffset|Timestamp when all of the available data for this definition was collected. This will be set once this defintion's status is set to `done`.|
-|id|String|The assigned unique identifier of an access review history definition. Optional on create.|
+|id|String|The assigned unique identifier of an access review history definition.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews starting on or after this date will be included in the fetched history data. Required on create.|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|	Timestamp, reviews starting on or before this date will be included in the fetched history data. Required on create.|
 |scopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. See [accessReviewScope](accessreviewscope.md). Required on create.|
