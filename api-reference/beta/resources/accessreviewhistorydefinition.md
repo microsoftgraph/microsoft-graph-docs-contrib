@@ -1,6 +1,6 @@
 ---
 title: "accessReviewHistoryDefinition resource types"
-description: "Represents a collection of access review history data"
+description: "Represents a collection of access review history data."
 author: "leherpel"
 localization_priority: Normal
 ms.prod: "governance"
@@ -98,4 +98,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-
