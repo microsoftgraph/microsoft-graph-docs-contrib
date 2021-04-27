@@ -25,13 +25,12 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 | providerName       | String                                       | The OneRoster Service Provider name as defined by the [OneRoster specification][oneroster].           |
 | schoolsIds         | String collection                            | The list of [School/Org][orgs] `sourcedId` to sync.                                                   |
 | termIds            | String collection                            | The list of [academic sessions][terms] to sync.                                                       |
-| connectionSettings | [educationSynchronizationConnectionSettings] | The [OAuth 1.0][onerosteroauth1] or [OAuth 2.0][onerosteroauth2] settings for the OneRoster instance. |
+| connectionSettings | educationSynchronizationConnectionSettings | The [OAuth 1.0][onerosteroauth1] or [OAuth 2.0][onerosteroauth2] settings for the OneRoster instance. |
 | customizations     | [educationSynchronizationCustomizations]    | Optional customization to be applied to the synchronization profile.                                  |
 
 > [!IMPORTANT]
 > OneRoster uses academic sessions rather than a single school year to segment their data. This segmentation is abstracted away within School Data Sync UI but not this API. You will need to call the OneRoster `/terms` endpoint to get the collection of academic session IDs in order to populate the `termIds` collection.
 
-[educationsynchronizationconnectionsettings]: educationsynchronizationconnectionsettings.md
 [educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
 [oneroster]: https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA
 [onerosteroauth2]: educationsynchronizationoauth2clientcredentialsconnectionsettings.md
