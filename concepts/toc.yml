@@ -225,7 +225,7 @@ items:
             items:
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
-              - name: Review access to your groups
+              - name: Review access to your resources
                 items:
                   - name: Overview of the access reviews API
                     href: accessreviews-overview.md
