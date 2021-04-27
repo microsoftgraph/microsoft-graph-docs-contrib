@@ -1,31 +1,27 @@
 ---
-title: "Update accessReviewScheduleDefinition"
-description: "Update the properties of an accessReviewScheduleDefinition object."
-author: "isabelleatmsft"
+title: "Create accessReviewScheduleDefinition"
+description: "Create a new accessReviewScheduleDefinition object."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
-ms.prod: "governance"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Update accessReviewScheduleDefinition
+# Create accessReviewScheduleDefinition
 Namespace: microsoft.graph
 
-Update the properties of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
-**this does not seem to exist on graph explorer**
 
->[!NOTE]
->Any updates made to an accessReviewScheduleDefinition only apply to future instances. Currently running instances cannot be updated.
->Additionally, this API is not intended to update properties, including decisions, on the accessReviewInstance level. See [accessReviewInstance](../resources/accessreviewinstance.md) for more information on instances.
+Create a new accessReviewScheduleDefinition object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|AccessReviews.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|AccessReviews.ReadWrite.All|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
 
 ## HTTP request
 
@@ -34,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}
+POST /identityGovernance/accessReviews/definitions
 ```
 
 ## Request headers
@@ -46,33 +42,40 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 ## Request body
 In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
-The following table shows the properties that are accepted when you update the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
+The following table shows the properties that are required when you create the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of access review series.|
-|descriptionForAdmins|String|Context of the review provided to the administrators.|
-|descriptionForReviewers|String|Context of the review provided to the reviewers.|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
+|displayName|String|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|status|String|**TODO: Add Description**|
+|descriptionForAdmins|String|**TODO: Add Description**|
+|descriptionForReviewers|String|**TODO: Add Description**|
+|createdBy|[userIdentity](../resources/useridentity.md)|**TODO: Add Description**|
 |scope|[accessReviewScope](../resources/accessreviewscope.md)|**TODO: Add Description**|
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|**TODO: Add Description**|
 |fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|**TODO: Add Description**|
 |instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)|**TODO: Add Description**|
 |settings|[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)|**TODO: Add Description**|
 
+
+
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_accessreviewscheduledefinition"
+  "name": "create_accessreviewscheduledefinition_from_"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions
 Content-Type: application/json
 Content-length: 752
 
@@ -112,11 +115,12 @@ Content-length: 752
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
