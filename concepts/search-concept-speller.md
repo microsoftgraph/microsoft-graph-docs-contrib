@@ -18,7 +18,7 @@ The priority of spelling modification is higher than spelling suggestion if they
 
 All the user query strings should be the same to enable spelling corrections for searches of multiple entities.
 
-## Example 1: Request spelling suggestion
+## Example 1: Request spelling suggestions
 
 The following example queries **listItem** resources that contain the string "accountt" and requests a spelling suggestion for the query.
 
@@ -91,7 +91,7 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Request spelling modification
+## Example 2: Request spelling modifications
 
 The following example queries **listItem** resources that contain the string "accountt" and requests a spelling modification for the query.
 
@@ -200,7 +200,7 @@ Content-type: application/json
 
 ## Known limitations
 
-- Spelling correction is only supported for the following resources: **message**, **event**, **site**, **drive**, **driveItem**, **list**, **listItem** and **externalItem**.
+Spelling correction is only supported for the following resources: **message**, **event**, **site**, **drive**, **driveItem**, **list**, **listItem** and **externalItem**.
 
 ## Next steps
 
