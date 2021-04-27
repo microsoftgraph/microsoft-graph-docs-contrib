@@ -43,20 +43,8 @@ POST /teams/{id}/channels/{id}/provisionEmail
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [channelEmailSettings](../resources/channelemailsettings.md) object.
-```JSON
-{
-  "emailSettings": {
-    "allowedSenders": {
-      "senderType": "domains",
-      "domains": [
-        "microsoft.com",
-        "hotmail.com"
-      ]
-    }
-  }
-}
-```
+
+Do not supply a request body for this method.
 
 ## Response
 
@@ -72,21 +60,6 @@ The following is an example of a request.
 -->
 ```http
 POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/provisionEmail
-
-
-Content-Type: application/json
-Content-length: 90
-{
-  "emailSettings": {
-    "allowedSenders": {
-      "senderType": "domains",
-      "domains": [
-        "microsoft.com",
-        "hotmail.com"
-      ]
-    }
-  }
-}
 ```
 
 #### Response
