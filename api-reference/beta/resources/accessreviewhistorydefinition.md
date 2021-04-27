@@ -51,39 +51,25 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-  "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
-  "displayName": "Last quarter's group reviews April 2021",
-  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
-  "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "reviewHistoryPeriodStartDateTime": "String (timestamp)",
+  "reviewHistoryPeriodEndDateTime": "String (timestamp)",
   "decisions": [
-    "approve",
-    "deny",
-    "dontKnow",
-    "notReviewed",
-    "notNotified"
+    {
+      "@odata.type": "microsoft.graph.accessReviewDecision"
+    }
   ],
-  "status": "requested",
-  "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-  "fulfilledDateTime": null,
-  "downloadUri": null,
+  "status": "String",
+  "createdDateTime": "String (timestamp)",
+  "fulfilledDateTime": "String (timestamp)",
+  "downloadUri": "String",
   "createdBy": {
-    "id": "673ad0d8-7b0e-4201-aaeb-74cdcbf22af9",
-    "displayName": "Chris Green",
-    "userPrincipalName": "ChrisGreen@shubhamermtest2.ccsctp.net"
+    "@odata.type": "microsoft.graph.userIdentity"
   },
-  "downloadUri": null,
   "scopes": [
     {
-      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-      "queryType": "MicrosoftGraph",     
-      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-      "queryRoot": null
-    },  
-    {
-      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-      "queryType": "MicrosoftGraph",     
-      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-      "queryRoot": null
+      "@odata.type": "microsoft.graph.accessReviewScope"
     }
   ]
 }
