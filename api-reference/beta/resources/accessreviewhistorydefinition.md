@@ -34,8 +34,8 @@ An accessReviewHistoryDefinition represents a collection of access review histor
 |fulfilledDateTime|DateTimeOffset|Timestamp when all of the available data for this definition was collected. This will be set once this defintion's status is set to `done`.|
 |id|String|The assigned unique identifier of an access review history definition. Optional on create.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews starting on or after this date will be included in the fetched history data. Required on create.|
-|reviewHistoryPeriodStartDateTime|DateTimeOffset|	Timestamp, reviews starting on or before this date will be included in the fetched history data. Required on create.|
-|scopes| Collection of [accessreviewqueryscope](accessreviewqueryscope.md)  |Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. See [accessreviewqueryscope](accessreviewqueryscope.md). Required on create.|
+|reviewHistoryPeriodStartDateTime|DateTimeOffset|Timestamp, reviews starting on or before this date will be included in the fetched history data. Required on create.|
+|scopes|Collection([accessreviewqueryscope](accessreviewqueryscope.md))|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. See [accessreviewqueryscope](accessreviewqueryscope.md). Required on create.|
 |status|String collection|Represents the status of the review history data collection. Possible values are: `done`, `inprogress`, `error`, `requested`.|
 
 ## JSON representation

@@ -52,10 +52,10 @@ The following table shows the required properties used to create an [accessRevie
 
 |Property|Type|Description|
 |:---|:---|:---|
-| displayName | String  | Name for the access review history data collection. Required. |
-| reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, reviews starting on or after this date will be included in the fetched history data. Required.  |
-| reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, reviews starting on or before this date will be included in the fetched history data. Required.  |
-| scopes  | Collection of [accessreviewqueryscope](../resources/accessreviewqueryscope.md)  | Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.  |
+|displayName | String  | Name for the access review history data collection. Required. |
+|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, reviews starting on or after this date will be included in the fetched history data. Required.  |
+|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, reviews starting on or before this date will be included in the fetched history data. Required.  |
+|scopes|Collection([accessreviewqueryscope](../resources/accessreviewqueryscope.md))| Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.  |
 
 ### Supported scope queries for accessReviewHistoryDefinition
 
@@ -100,12 +100,16 @@ Content-Type: application/json
   "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
   "scopes": [
     {
+      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
       "queryType": "MicrosoftGraph",     
-      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
+      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+      "queryRoot": null
     },  
     {
+      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
       "queryType": "MicrosoftGraph",     
-      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
+      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
+      "queryRoot": null
     }
   ]
 }
