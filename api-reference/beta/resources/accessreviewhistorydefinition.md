@@ -18,10 +18,10 @@ An accessReviewHistoryDefinition represents a collection of access review histor
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessReviewHistoryDefinitions](../api/accessreviewhistorydefinition-list.md)|[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) collection|Get a list of the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) objects and their properties.|
-|[Create accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-create.md)|[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md)|Create a new [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object.|
-|[Get accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md)|Read the properties and relationships of an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object.|
-|[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md)|Generates a uri which can be used to retrieve review history data.|
+|[List accessReviewHistoryDefinitions](../api/accessreviewhistorydefinition-list.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) collection|Get a list of the [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) objects and their properties.|
+|[Create accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-create.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Create a new [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
+|[Get accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Read the properties and relationships of an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
+|[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generates a uri which can be used to retrieve review history data.|
 
 ## Properties
 |Property|Type|Description|
