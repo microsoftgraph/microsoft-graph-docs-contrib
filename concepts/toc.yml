@@ -198,7 +198,7 @@ items:
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
-          - name: Operating system updates (preview)
+          - name: Device updates (preview)
             displayName: Windows updates
             items:
               - name: Overview

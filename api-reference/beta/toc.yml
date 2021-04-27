@@ -9469,7 +9469,7 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
-      - name: Operating system updates (preview)
+      - name: Device updates (preview)
         displayName: Windows updates
         items:
         - name: Updates
