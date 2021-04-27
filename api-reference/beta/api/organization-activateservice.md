@@ -1,6 +1,6 @@
 ---
 title: "organization: activateService"
-description: "`activateService` is used to activate a given service for an organization and will require admin privileges to run."
+description: "Activates a service for an organization."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "directory-management"
@@ -15,18 +15,18 @@ Namespace: microsoft.graph
 
 ## Description
 
-`activateService` is used to activate a given service for an organization and will require admin privileges to run.
+The **activateService** object  is used to activate a service for an organization. This operation requires administrator privileges to run.
 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 | :--- | :--- |
-| Delegated (work or school account) | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
+| Delegated (work or school account) | Directory.ReadWriteAdvanced.All, Directory.ReadWrite.All|
 | Delegated (personal Microsoft account) | Not Supported. |
-| Application | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
+| Application | Directory.ReadWriteAdvanced.All, Directory.ReadWrite.All|
 
 
 ## HTTP request
@@ -46,16 +46,16 @@ POST /organization/{organizationId}/activateService
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
-At least one parameter must be defined for this action to be valid. There are two possible cases: You could have `service` or (`servicePlanId` and `skuId`). If all three parameters are defined, then the `servicePlanId` and `skuId` takes precedence.
+In the request body, supply a JSON representation of the [activateService](../resources/activateService) object.
+At least one parameter must be defined for this action to be valid. There are three possible cases: You could have `service` or (`servicePlanId` and `skuId`). If all three parameters are defined, then the `servicePlanId` and `skuId` takes precedence.
 
 ### Parameters
 
-| Parameter         | Type         | Required? | Description                           |
-| ----------------- | ------------ | --------- | ------------------------------------- |
-| `service` | `Edm.String` | False     | Name of the service to activate       |
-| `servicePlanId`   | `Edm.Guid`   | False     | PlanId of the ServicePlan to activate |
-| `skuId`           | `Guid`       | False     | SkuId of SKU the service plan is on   |
+| Parameter         | Type         | Description                           |
+| ----------------- | ------------ | ------------------------------------- |
+| service| Edm.String | The name of the service to activate. |
+| servicePlanId | Edm.Guid | The plan identifier of the service plan to activate. |
+| skuId | Guid | The SKU identifier of the service plan. |
 
 ## Response
 
@@ -73,7 +73,6 @@ If successful, this action returns a `204 No Content` response code.
 POST https://graph.microsoft.com/beta/organization/72f988bf-86f1-41af-91ab-2d7cd011db47/activateService
 
 Content-Type: application/json
-Content-length: 150
 {
     "skuId": "6fd2c87f-b296-42f0-b197-1e91e994b900",
     "servicePlanId": "a23b959c-7ce8-4e57-9140-b90eb88a9e97"
@@ -91,4 +90,3 @@ Content-length: 150
 ``` http
 HTTP/1.1 204 No Content
 ```
-
