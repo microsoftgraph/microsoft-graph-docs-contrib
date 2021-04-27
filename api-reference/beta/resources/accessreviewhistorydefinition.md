@@ -1,7 +1,7 @@
 ---
 title: "accessReviewHistoryDefinition resource types"
 description: "Represents a collection of access review history data."
-author: "leherpel"
+author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An accessReviewHistoryDefinition represents a collection of access review history data and the filters used to collect that data. A accessReviewHistoryDefinition's reviewHistoryPeriodStartDateTime, reviewHistoryPeriodEndDateTime, decisions, and scopes properties are used when selecting review history data and all can be modified.
+An accessReviewHistoryDefinition represents a collection of access review history data and the filters used to collect that data. A accessReviewHistoryDefinition's reviewHistoryPeriodStartDateTime, reviewHistoryPeriodEndDateTime, decisions, and scopes properties are used when selecting review history data and all can be modified. Each accessReviewHistoryDefinition object is only available for 30 days.
 
 ## Methods
 |Method|Return type|Description|
