@@ -103,7 +103,9 @@ In the request body, supply a JSON representation of the [Contact](../resources/
 
 ### Response
 
-Here is an example of the response. **Note:** The response object shown here might be shortened for readability.
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
