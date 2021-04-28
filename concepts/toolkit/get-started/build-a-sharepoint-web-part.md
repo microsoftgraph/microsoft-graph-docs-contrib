@@ -10,18 +10,35 @@ author: elisenyang
 This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Getting started involves the following steps:
 
 1. Set up your development environment and create a web part.
-1. Add the Microsoft Graph Toolkit.
-1. Add the Microsoft Graph Toolkit SharePoint Framework package.
-1. Add the SharePoint Provider.
-1. Add components.
-1. Configure permissions.
-1. Deploy the Microsoft Graph Toolkit SharePoint Framework package.
-1. Build and deploy your web part.
-1. Test your web part.
+2. Update TypeScript in your project.
+3. Add the Microsoft Graph Toolkit.
+4. Add the SharePoint Provider.
+5. Add components.
+6. Configure permissions.
+7. Build and deploy your web part.
+8. Test your web part.
 
 ## Set up your SharePoint Framework development environment and create a new web part
 
 Follow the steps to [Set up your SharePoint Framework development environment](/sharepoint/dev/spfx/set-up-your-development-environment) and then [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
+
+## Update TypeScript in your project
+
+The Microsoft Graph Toolkit requires Typescript 3.x. Before adding the Toolkit to your project, make sure you're using a [supported version of Typescript](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x). For example, to add Typescript 3.7, use the following command:
+
+```bash
+npm install @microsoft/rush-stack-compiler-3.7 --save-dev
+```
+Then, locate the `tsconfig.json` file in your project folder, open the file, and look for this line:
+
+```json
+"extends": "./node_modules/@microsoft/rush-stack-compiler-3.3/includes/tsconfig-web.json",
+```
+Replace the line with:
+
+```json
+"extends": "./node_modules/@microsoft/rush-stack-compiler-3.7/includes/tsconfig-web.json",
+```
 
 ## Add the Microsoft Graph Toolkit
 
@@ -77,18 +94,6 @@ import 'core-js/es/regexp';
 import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
 ```
 
-## Add the Microsoft Graph Toolkit SharePoint Framework package
-
-To prevent multiple SharePoint Framework components from registering their own set of Microsoft Graph Toolkit components on the page, you should deploy the Microsoft Graph Toolkit SharePoint Framework package to your tenant and reference Microsoft Graph Toolkit components that you use in your solution from this package.
-
-The Microsoft Graph Toolkit SharePoint Framework package contains a SharePoint Framework library that registers a single instance of Microsoft Graph Toolkit components in SharePoint.
-
-Install the Microsoft Graph Toolkit SharePoint Framework npm package using the following command:
-
-```bash
-npm install @microsoft/mgt-spfx
-```
-
 ## Add the SharePoint Provider
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). SharePoint web parts always exist in an authenticated context because the user has already had to sign in in order to get to the page that hosts your web part. Use this context to initialize the [SharePoint provider](../providers/sharepoint.md).
@@ -96,16 +101,14 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 First, add the provider to your web part. Locate the `src\webparts\<your-project>\<your-web-part>.ts` file in your project folder, and add the following line to the top of your file, right below the existing `import` statements:
 
 ```ts
-import { Providers, SharePointProvider } from '@microsoft/mgt-spfx';
+import { Providers, SharePointProvider } from '@microsoft/mgt';
 ```
 
 Next, you need to initialize the provider with the authenticated context inside the `onInit()` method of your web part. In the same file, add the following code right before the `public render(): void {` line:
 
 ```ts
 protected async onInit() {
-  if (!Providers.globalProvider) {
-    Providers.globalProvider = new SharePointProvider(this.context);
-  }
+    Providers.globalProvider = new SharePointProvider(this.context)
 }
 ```
 
@@ -151,15 +154,6 @@ Determine which Microsoft Graph API permissions you need depending on the compon
   }
 ]
 ```
-
-## Deploy the Microsoft Graph Toolkit SharePoint Framework package
-
-Before deploying your SharePoint Framework package to your tenant, you will need to deploy the Microsoft Graph Toolkit SharePoint Framework package to your tenant. You can download the package corresponding to the version of Microsoft Graph Toolkit that you used in your project, from the [Releases](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) section on GitHub.
-
-**Important:** Since there can be only one version of the SharePoint Framework library for Microsoft Graph Toolkit installed in the tenant, before using MGT in your solution, consult with your organization/customer if they already have a version of SharePoint Framework library for Microsoft Graph Toolkit deployed in their tenant and use the same version to avoid issues.
-
-After downloading the Microsoft Graph Toolkit SharePoint Framework .sppkg package, upload it to your SharePoint Online App Catalog. Go to the [More features page of your SharePoint admin center](https://admin.microsoft.com/sharepoint?page=classicfeatures&modern=true). Select **Open** under **Apps**, then click **App Catalog**, and **Distribute apps for SharePoint**. Upload your `.sppkg` file, and click **Deploy**.
-
 ## Build and deploy your web part
 
 Now, you will build your application and deploy it to SharePoint. Build your application by running the following commands:
