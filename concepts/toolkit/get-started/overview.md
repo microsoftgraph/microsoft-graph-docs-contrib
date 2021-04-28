@@ -96,10 +96,6 @@ The `@microsoft/mgt` is the main package that includes all above packages and re
 
 The [`@microsoft/mgt-react`](./mgt-react.md) package contains all auto-generated React components and takes dependency on the `@microsoft/mgt` package.
 
-<b>@microsoft/mgt-spfx</b>
-
-The [`@microsoft/mgt-spfx`](./mgt-spfx.md) package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
-
 ## Polyfills
 
 If you're using the ES6 modules from the npm package and you're [targeting a browser such as IE11](https://caniuse.com/#search=components) that does not support web components natively, you will need to include polyfills in your project, as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. For instructions and to learn more, see [polyfills documentation](https://www.webcomponents.org/polyfills). 
