@@ -11114,6 +11114,13 @@ items:
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
+          - name: Access review policy
+            href: resources/accessreviewpolicy.md
+            items:
+            - name: Get
+              href: api/accessreviewpolicy-get.md
+            - name: Update
+              href: api/accessreviewpolicy-update.md
         - name: Access reviews (legacy)
           href: resources/accessreviews-root.md
           items:
