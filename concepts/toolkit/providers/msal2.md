@@ -92,7 +92,7 @@ If you would like to migrate to MSAL 2.0 Provider and already have an applicatio
       ...
     })
     ```
-    If you are initializing the provider in the code, replace 
+    If you are initializing the provider in HTML, replace 
     ```html
     <mgt-msal-provider client-id="" ... ></mgt-msal-provider>
     ``` 
