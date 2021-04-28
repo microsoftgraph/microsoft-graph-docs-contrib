@@ -9,9 +9,11 @@ doc_type: conceptualPageType
 
 # Windows updates API overview
 
+The Windows Update for Business deployment service provides control over device updates through the ability to approve, schedule and safeguard content delivered by Windows Update. 
+
 ## Why use the Windows Update for Business deployment service?
 
-The Windows Update for Business deployment service provides control over device updates through the ability to approve, schedule and safeguard content delivered by Windows Update. IT Professionals and management tool vendors alike can use the deployment service to:
+IT Professionals and management tool vendors alike can use the deployment service to:
 * Schedule update deployments to begin on a specific date
 * Stage deployments over a period of days or weeks using rich expressions
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update
