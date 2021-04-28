@@ -81,7 +81,8 @@ The following example shows how to create an upload session that you can use in 
 
 ### Request
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "printdocument_createuploadsession"
 }
 -->
 ``` http
