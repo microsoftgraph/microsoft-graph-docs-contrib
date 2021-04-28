@@ -77,16 +77,19 @@ If you would like to migrate to MSAL 2.0 Provider and already have an applicatio
 1. Under ```Platform configurations```, click on ```Add a platform``` and select ```Single-page Application```.
 1. Remove all the redirect URIs that you have currently registered under ```Web```, and instead add them under ```Single-page application```.
 1. In your code, and replace MSALProvider with MSAL2Provider.
+
     If you are initializing your provider in the JS/TS code, follow these steps:
-    1. Replace the import statement for ```mgt-msal-provider``` with 
+    
+    Replace the import statement for ```mgt-msal-provider``` with 
     ```ts 
     import {Msal2Provider, PromptType} from '@microsoft/mgt-msal2-provider';
     ```
-    2. Replace the initialization of MsalProvider with
+
+    Replace the initialization of MsalProvider with
     ```ts
     Providers.globalProvider = new Msal2Provider({ 
-    clientId: 'REPLACE_WITH_CLIENTID'
-    ...
+      clientId: 'REPLACE_WITH_CLIENTID'
+      ...
     })
     ```
     If you are initializing the provider in the code, replace 
