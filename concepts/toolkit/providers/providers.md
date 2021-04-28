@@ -18,6 +18,7 @@ The Toolkit includes the following providers.
 |Providers|Description|
 |---------|-----------|
 |[Msal](./msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph in a web application.|
+|[Msal 2.0](./msal2.md)| Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph in a web application. | 
 |[Electron](./electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps.|
 |[SharePoint](./sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
 |[Teams](./teams.md)|Authenticates and provides Microsoft Graph access to components inside  Microsoft Teams tabs.|
