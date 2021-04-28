@@ -4202,7 +4202,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "new application permission,access reviews API",
           "ChangeType": "Addition",
-          "Description": "Added [new application permission](https://docs.microsoft.com/en-us/graph/permissions-reference?#accessreviews-permissions) _AccessReviews.ReadWrite.Membership_ to get, create, update and delete in the [access reviews API](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta).",
+          "Description": "Added [new application permission](https://docs.microsoft.com/en-us/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_ to get, create, update and delete in the [access reviews API](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta).",
           "Target": "new application permission,access reviews API"
         },
         {
@@ -4392,7 +4392,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "access reviews",
           "ChangeType": "Addition",
-          "Description": "Added new application permissions for **access reviews** APIs: AccessReviews.Read.All, ProgramControl.Read.All and ProgramControl.ReadWrite.All. For details, see the [access reviews API reference](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta).",
+          "Description": "Added new application permissions for **access reviews** APIs: AccessReview.Read.All, ProgramControl.Read.All and ProgramControl.ReadWrite.All. For details, see the [access reviews API reference](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta).",
           "Target": "access reviews API reference"
         },
         {

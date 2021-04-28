@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReviews.Read.All, AccessReviews.ReadWrite.Membership, AccessReviews.ReadWrite.All   |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 

@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReviews.Read.All, AccessReviews.ReadWrite.All  |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 
  The signed-in user only sees instances of which they are assigned reviewer in the accessReviewScheduleDefinition of the instance.
 
