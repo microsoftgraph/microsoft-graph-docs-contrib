@@ -54,13 +54,13 @@ You can check the enrollment state of a device by [getting the device](/graph/ap
 
 The following example shows a device that is successfully enrolled in management of feature updates by the service.
 
-## Request
+### Request
 
 ```http
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/983f03cd-03cd-983f-cd03-3f98cd033f98
 ```
 
-## Response
+### Response
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
