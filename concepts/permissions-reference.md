@@ -605,6 +605,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Device.Read_ |Read user devices |Allows the app to read a user's list of devices on behalf of the signed-in user. |No | Yes |
+|_Device.Read.All_ |Read all devices |Allows the app to read your organization's devices' configuration information on behalf of the signed-in user.|Yes | Yes |
 |_Device.Command_ |Communicate with user devices |Allows the app to launch another app or communicate with another app on a user's device on behalf of the signed-in user. |No | Yes |
 
 
@@ -612,6 +613,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_Device.Read.All_ |Read all devices |Allows the app to read your organization's devices' configuration information without a signed-in user. |Yes |
 |_Device.ReadWrite.All_ |Read and write devices |Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion, or update of device alternative security identifiers. |Yes |
 
 > [!NOTE]
