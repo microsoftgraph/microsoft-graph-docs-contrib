@@ -55,7 +55,7 @@ The following table shows the required properties used to create an [accessRevie
 |displayName | String  | Name for the access review history data collection. Required. |
 |reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, reviews starting on or after this date will be included in the fetched history data. Required.  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, reviews starting on or before this date will be included in the fetched history data. Required.  |
-|scopes|Collection(microsoft.graph.accessReviewQueryScope)| Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.  |
+|scopes|microsoft.graph.accessReviewQueryScope collection| Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.  |
 
 ### Supported scope queries for accessReviewHistoryDefinition
 
