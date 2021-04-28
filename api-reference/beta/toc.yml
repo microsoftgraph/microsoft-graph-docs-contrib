@@ -9469,6 +9469,99 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+      - name: Device updates (preview)
+        displayName: Windows updates
+        items:
+        - name: Updates
+          href: resources/windowsupdates-updates.md
+        - name: Catalog
+          items:
+          - name: Catalog
+            href: resources/windowsupdates-catalog.md
+          - name: Feature update catalog entry
+            href: resources/windowsupdates-featureupdatecatalogentry.md
+          - name: Quality update catalog entry
+            href: resources/windowsupdates-qualityupdatecatalogentry.md
+          - name: List catalog entries
+            href: api/windowsupdates-catalog-list-entries.md
+        - name: Deployment
+          href: resources/windowsupdates-deployment.md
+          items:
+          - name: List deployments
+            href: api/windowsupdates-updates-list-deployments.md
+          - name: Create deployment
+            href: api/windowsupdates-updates-post-deployments.md
+          - name: Get deployment
+            href: api/windowsupdates-deployment-get.md
+          - name: Update deployment
+            href: api/windowsupdates-deployment-update.md
+          - name: Delete deployment
+            href: api/windowsupdates-deployment-delete.md
+          - name: Deployable content
+            items:
+            - name: Expedited quality update reference
+              href: resources/windowsupdates-expeditedqualityupdatereference.md
+            - name: Feature update reference
+              href: resources/windowsupdates-featureupdatereference.md
+          - name: Deployment audience
+            items:
+            - name: Deployment audience
+              href: resources/windowsupdates-deploymentaudience.md
+            - name: List members
+              href: api/windowsupdates-deploymentaudience-list-members.md
+            - name: List exclusions
+              href: api/windowsupdates-deploymentaudience-list-exclusions.md
+            - name: Update members and exclusions
+              href: api/windowsupdates-deploymentaudience-updateaudience.md
+            - name: Update by ID
+              href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+        - name: Updatable asset
+          href: resources/windowsupdates-updatableasset.md
+          items:
+          - name: List updatable assets
+            href: api/windowsupdates-updates-list-updatableassets.md
+          - name: Get updatable asset
+            href: api/windowsupdates-updatableasset-get.md
+          - name: Delete updatable asset
+            href: api/windowsupdates-updatableasset-delete.md
+          - name: Azure AD device
+            href: resources/windowsupdates-azureaddevice.md
+            items:
+            - name: List Azure AD devices
+              href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
+            - name: Get Azure AD device
+              href: api/windowsupdates-azureaddevice-get.md
+            - name: Delete Azure AD device
+              href: api/windowsupdates-azureaddevice-delete.md
+            - name: Enroll in update management
+              href: api/windowsupdates-updatableasset-enrollassets.md
+            - name: Enroll by ID
+              href: api/windowsupdates-updatableasset-enrollassetsbyid.md
+            - name: Unenroll from update management
+              href: api/windowsupdates-updatableasset-unenrollassets.md
+            - name: Unenroll by ID
+              href: api/windowsupdates-updatableasset-unenrollassetsbyid.md
+          - name: Updatable asset group
+            href: resources/windowsupdates-updatableassetgroup.md
+            items:
+            - name: List updatable asset groups
+              href: api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md
+            - name: Create updatable asset group
+              href: api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md
+            - name: Get updatable asset group
+              href: api/windowsupdates-updatableassetgroup-get.md
+            - name: Delete updatable asset group
+              href: api/windowsupdates-updatableassetgroup-delete.md
+            - name: List members
+              href: api/windowsupdates-updatableassetgroup-list-members.md
+            - name: Add members
+              href: api/windowsupdates-updatableassetgroup-addmembers.md
+            - name: Add members by ID
+              href: api/windowsupdates-updatableassetgroup-addmembersbyid.md
+            - name: Remove members
+              href: api/windowsupdates-updatableassetgroup-removemembers.md
+            - name: Remove members by ID
+              href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
     - name: Education
       items:
       - name: Overview
@@ -11114,6 +11207,13 @@ items:
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
+          - name: Access review policy
+            href: resources/accessreviewpolicy.md
+            items:
+            - name: Get
+              href: api/accessreviewpolicy-get.md
+            - name: Update
+              href: api/accessreviewpolicy-update.md
         - name: Access reviews (legacy)
           href: resources/accessreviews-root.md
           items:
@@ -13722,10 +13822,14 @@ items:
           href: api/table-list-rows.md
         - name: Create row
           href: api/table-post-rows.md
+        - name: Delete row
+          href: api/tablerow-delete.md
         - name: List columns
           href: api/table-list-columns.md
         - name: Create column
           href: api/table-post-columns.md
+        - name: Delete column
+          href: api/tablecolumn-delete.md
         - name: Get range
           href: api/table-range.md
       - name: Chart
