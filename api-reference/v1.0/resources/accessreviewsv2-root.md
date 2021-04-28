@@ -44,6 +44,8 @@ The following directory roles are required for a calling user to manage access r
 | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
 | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or User Administrator |
 
+**to do add policy.readwrite.all permission??**
+
 In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
 
 ## See also
