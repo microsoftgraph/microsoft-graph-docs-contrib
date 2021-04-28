@@ -111,7 +111,7 @@ The following is the JSON response:
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   Read all access reviews | Allows the app to read access reviews without a signed-in user. | Yes |
 | _AccessReview.ReadWrite.Membership_ | Manage access reviews for group and app memberships | Allows the app to manage access reviews of groups and apps without a signed-in user. | Yes |
-| _Policy.ReadWrite.AccessReviews_ |   Manage all access review policies  | Allows the app to read and write access review policies on behalf of the signed-in user. | Yes |
+| _Policy.ReadWrite.AccessReviews_ |   Manage all access review policies  | Allows the app to read and write access review policies without a signed-in user. | Yes |
 
 
 ### Remarks
