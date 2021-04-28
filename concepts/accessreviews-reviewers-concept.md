@@ -81,17 +81,6 @@ To specify only a specific group's owners from a specific country as the reviewe
 ]
 ```
 
-### Example 5: Administrators in a specific Azure AD role as reviewers
-
-```http
-"reviewers": [
-    {
-        "query": "/directoryRoles/{role id}/members",
-        "queryType": "MicrosoftGraph"
-    }
-]
-```
-
 ## See also
 
 + [Configure the scope of your access review definition](/graph/accessreviews-scope-concept)

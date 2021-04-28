@@ -78,7 +78,7 @@ To review *only inactive users* assigned to the group, specify as follows:
 }
 ```
 
-Because this review is applied on all Microsoft 365 groups, configure the instanceEnumerationScope object to specify the Microsoft groups to review. If the instanceEnumerationScope object is not specified, this configuration is similar to [Example 3](/graph/accessreviews-scope-concept#example-3-review-guest-users-assigned-to-all-groups).
+Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** object to specify the Microsoft 365 groups to review. If the **instanceEnumerationScope** object is not specified, this configuration is similar to [Example 3](/graph/accessreviews-scope-concept#example-3-review-guest-users-assigned-to-all-groups).
 
 ### Example 5: Review access of all inactive guest users to all groups
 
@@ -90,7 +90,7 @@ Because this review is applied on all Microsoft 365 groups, configure the instan
 }
 ```
 
-Because this review is applied on inactive users, use the accessReviewInactiveUsersQueryScope resource, which inherits from the accessReviewQueryScope.
+Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource, which inherits from the **accessReviewQueryScope**.
 
 ### Example 6: Review of all guest users assigned to all teams, excluding specific Microsoft 365 groups
 
@@ -117,7 +117,7 @@ Because this review is applied on inactive users, use the accessReviewInactiveUs
 }
 ```
 
-Because this review is applied on all Microsoft 365 groups, configure the instanceEnumerationScope object to specify the Microsoft groups to review. This example also excluded 4 Microsoft 365 groups.
+Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** object to specify the Microsoft 365 groups to review. This example also excludes 4 Microsoft 365 groups.
 
 ### Example 7: Review of Entitlement Management access package assignment
 
