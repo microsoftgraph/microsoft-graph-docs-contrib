@@ -35,7 +35,7 @@ An accessReviewHistoryDefinition represents a collection of access review histor
 |id|String|The assigned unique identifier of an access review history definition. Optional on create.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews starting on or after this date will be included in the fetched history data. Required on create.|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|Timestamp, reviews starting on or before this date will be included in the fetched history data. Required on create.|
-|scopes|Collection(microsoft.graph.accessReviewQueryScope)|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. See [accessreviewqueryscope](accessreviewqueryscope.md). Required on create.|
+|scopes|microsoft.graph.accessReviewQueryScope collection|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. See [accessreviewqueryscope](accessreviewqueryscope.md). Required on create.|
 |status|String collection|Represents the status of the review history data collection. Possible values are: `done`, `inprogress`, `error`, `requested`.|
 
 ## JSON representation
