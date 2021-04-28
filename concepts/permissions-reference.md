@@ -605,6 +605,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Device.Read_ |Read user devices |Allows the app to read a user's list of devices on behalf of the signed-in user. |No | Yes |
+|_Device.Read.All_ |Read all devices |Allows the app to read your organization's devices' configuration information on behalf of the signed-in user.|Yes | Yes |
 |_Device.Command_ |Communicate with user devices |Allows the app to launch another app or communicate with another app on a user's device on behalf of the signed-in user. |No | Yes |
 
 
@@ -612,6 +613,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_Device.Read.All_ |Read all devices |Allows the app to read your organization's devices' configuration information without a signed-in user. |Yes |
 |_Device.ReadWrite.All_ |Read and write devices |Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion, or update of device alternative security identifiers. |Yes |
 
 > [!NOTE]
@@ -2300,6 +2302,36 @@ With these permissions, all authentication methods can be read and managed on a 
 * Primary authentication (password)
 * Second factor of multi-factor authentication/MFA (phone numbers)
 * Self-Service Password Reset/SSPR (email address)
+
+## Windows updates permissions
+
+#### Delegated permissions
+
+|Permission|Display String|Description|Admin Consent Required|Microsoft Account Supported|
+|:---|:---|:---|:---|:---|
+|_WindowsUpdates.ReadWrite.All_|Read and write all Windows update deployment settings|Allows the app to read and write all Windows update deployment settings for the organization on behalf of the signed-in user.|Yes|No|
+
+#### Application permissions
+
+|Permission|Display String|Description|Admin Consent Required|
+|:---|:---|:---|:---|
+|_WindowsUpdates.ReadWrite.All_|Read and write all Windows update deployment settings|Allows the app to read and write all Windows update deployment settings for the organization without a signed-in user.|Yes|
+
+### Remarks
+
+All the permissions above are valid only for work or school accounts.
+
+For an app to read or write all Windows update deployment settings with delegated permissions, the signed-in user must be assigned the Global Administrator or Intune Administrator role. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+
+### Example usage
+
+#### Delegated
+
+* _WindowsUpdates.ReadWrite.All_: Create a deployment (`POST /beta/admin/windows/updates/deployments`).
+
+#### Application
+
+* _WindowsUpdates.ReadWrite.All_: Create a deployment (`POST /beta/admin/windows/updates/deployments`).
 
 ## Authentication methods policy permissions ([preview](#permissions-availability-status))
 
