@@ -43,7 +43,7 @@ To create an upload session using **printer**:
 POST /print/printers/{id}/jobs/{id}/documents/{id}/createUploadSession
 ```
 
-To create an upload session using **printerShare**: 
+To create an upload session using **printerShare** (supported with delegated permissions only): 
 
 <!-- { "blockType": "ignored" } -->
 ```http
