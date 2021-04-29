@@ -3,6 +3,48 @@
     {
         "ChangeList": [
           {
+            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+            "ApiChange": "Property",
+            "ChangedApiName": "tollNumbers",
+            "ChangeType": "Addition",
+            "Description": "Added the **tollNumbers** property to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+            "Target": "audioConferencing"
+          },
+          {
+            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+            "ApiChange": "Property",
+            "ChangedApiName": "tollFreeNumbers",
+            "ChangeType": "Addition",
+            "Description": "Added the **tollFreeNumbers** property to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+            "Target": "audioConferencing"
+          },
+          {
+            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+            "ApiChange": "Property",
+            "ChangedApiName": "tollNumber",
+            "ChangeType": "Change",
+            "Description": "Deprecated the **tollNumber** property of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+            "Target": "audioConferencing"
+          },
+          {
+            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+            "ApiChange": "Property",
+            "ChangedApiName": "tollFreeNumber",
+            "ChangeType": "Change",
+            "Description": "Deprecated the **tollFreeNumber** property of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+            "Target": "audioConferencing"
+          }
+        ],
+        "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-04-19T00:00:00",
+        "WorkloadArea": "Cloud communications",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
             "ApiChange": "Property",
             "ChangedApiName": "capabilities",
