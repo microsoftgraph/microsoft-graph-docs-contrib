@@ -189,7 +189,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### Making a request for the first time
 
-When you make a call to the Windows updates API for the first time, you may receive a `401 Unauthorized` response. The error occurs in cases when application's service principal does not yet exist in your tenant and requires time to complete provisioning. Please try again after around 24 hours.
+When you make a call to the Windows updates API for the first time, you might receive a `401 Unauthorized` response. The error occurs in cases when an application's service principal does not yet exist in your tenant and requires time to complete provisioning. Please try again after about 24 hours.
 
 ## Extensions
 
