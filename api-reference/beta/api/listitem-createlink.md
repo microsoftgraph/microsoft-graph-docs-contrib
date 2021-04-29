@@ -129,6 +129,7 @@ Content-length: 212
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "id": "123ABC",
   "roles": ["write"],
