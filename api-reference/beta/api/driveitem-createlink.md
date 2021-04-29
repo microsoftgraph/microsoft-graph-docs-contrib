@@ -147,7 +147,7 @@ Content-length: 212
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "oneDrive.permission"
+  "@odata.type": "microsoft.graph.permission"
 }
 -->
 
