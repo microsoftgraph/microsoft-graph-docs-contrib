@@ -240,6 +240,19 @@ Content-type: application/json
 
 ```
 
+If the MIME content in the request body is malformed, this method returns the following error message.
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

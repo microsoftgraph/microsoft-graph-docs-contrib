@@ -118,7 +118,7 @@ Content-type: text/plain
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
 ```
 ##### Response
-
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -126,6 +126,20 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 
 ```http
 HTTP/1.1 202 Accepted
+```
+
+If the MIME content in the request body is malformed, this method returns the following error message.
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
