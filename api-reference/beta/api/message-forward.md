@@ -58,7 +58,7 @@ When using JSON format, provide a JSON object with the following parameters.
 |toRecipients|[recipient](../resources/recipient.md) collection|The list of recipients.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
+When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-encoded string** in the request body.
 
 ## Response
 

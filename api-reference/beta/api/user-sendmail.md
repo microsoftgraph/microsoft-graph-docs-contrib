@@ -60,7 +60,7 @@ If you want to use **mention** to call out another user in the new message:
 - Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
 - For each mention in the **mentions** property, you must specify the **mentioned** property.
 
-When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
+When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-encoded string** in the request body.
 
 ## Response
 

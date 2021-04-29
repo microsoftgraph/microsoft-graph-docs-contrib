@@ -60,7 +60,7 @@ If you want to use **mention** to call out another user in the new message:
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-When specifying the body in MIME format, include only the MIME content as **a Base64-enconded string** in the request body.
+When specifying the body in MIME format, include only the MIME content as **a Base64-encoded string** in the request body.
 
 ## Response
 

@@ -52,7 +52,7 @@ When using JSON format, provide a JSON object with the following parameters.
 |message|[Message](../resources/message.md)|The message to send. Required.|
 |saveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional. |
 
-When using MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
+When using MIME format no parameters are required, include only the MIME content as **a Base64-encoded string** in the request body.
 
 ## Response
 

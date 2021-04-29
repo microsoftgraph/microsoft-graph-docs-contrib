@@ -53,7 +53,7 @@ When using JSON format, provide a JSON representation of [message](../resources/
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
+When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-encoded string** in the request body.
 
 ## Response
 

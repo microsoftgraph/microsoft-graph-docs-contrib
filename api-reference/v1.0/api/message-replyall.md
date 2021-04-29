@@ -49,7 +49,7 @@ When using JSON format, provide a JSON object in the request body with the follo
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
 
-When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
+When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-encoded string** in the request body.
 
 ## Response
 

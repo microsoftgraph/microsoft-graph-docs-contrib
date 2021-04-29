@@ -50,7 +50,7 @@ When using JSON format, provide a JSON object in the request body with the follo
 |comment|String|A comment to include. Can be an empty string.|
 |toRecipients|[Recipient](../resources/recipient.md) collection|The list of recipients.|
 
-When using MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
+When using MIME format no parameters are required, include only the MIME content as **a Base64-encoded string** in the request body.
 
 ## Response
 

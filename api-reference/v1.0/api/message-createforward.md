@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a JSON object. |
 
 ## Request body
-This method does not require a request body. However, for creating a forward draft using MIME format, include only the MIME content as **a Base64-enconded string** in the request body. 
+This method does not require a request body. However, for creating a forward draft using MIME format, include only the MIME content as **a Base64-encoded string** in the request body. 
 
 ## Response
 
