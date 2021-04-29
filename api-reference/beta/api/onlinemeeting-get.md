@@ -217,7 +217,9 @@ Content-Length: 1574
     "isDialInBypassEnabled": true
   },
   "isEntryExitAnnounced": true,
-  "allowedPresenters": "everyone"
+  "allowedPresenters": "everyone",
+  "allowMeetingChat": "enabled",
+  "allowTeamworkReactions": true
 }
 ```
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
@@ -263,6 +265,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     "autoAdmittedUsers": "EveryoneInCompany",
     "isEntryExitAnnounced": true,
     "allowedPresenters": "everyone",
+    "allowMeetingChat": "enabled",
+    "allowTeamworkReactions": true,
     "videoTeleconferenceId": "(redacted)",
     "participants": {
         "organizer": {
@@ -322,6 +326,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "autoAdmittedUsers": "EveryoneInCompany",
             "isEntryExitAnnounced": true,
             "allowedPresenters": "everyone",
+            "allowMeetingChat": "enabled",
+            "allowTeamworkReactions": true,
             "videoTeleconferenceId": "(redacted)",
             "participants": {
                 "organizer": {

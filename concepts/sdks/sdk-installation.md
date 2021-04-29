@@ -40,7 +40,7 @@ Add the repository and a compile dependency for microsoft-graph to your project'
 
 ```Gradle
 repository {
-    jcenter()
+    mavenCentral()
 }
 
 dependency {
@@ -51,32 +51,13 @@ dependency {
 
 ### Install the Microsoft Graph Java SDK via Maven
 
-Add the repositories in the `profiles` element in pom.xml:
-
-```xml
-<profiles>
-    <profile>
-        <repositories>
-            <repository>
-                <snapshots>
-                    <enabled>false</enabled>
-                </snapshots>
-                <id>bintray-microsoftgraph-Maven</id>
-                <name>bintray</name>
-                <url>https://dl.bintray.com/microsoftgraph/Maven</url>
-            </repository>
-        </repositories>
-    </profile>
-</profiles>
-```
-
 Add the dependency in the `dependencies` element in pom.xml:
 
 ```xml
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>[3.0,)</version>
+    <version>[3.3,)</version>
 </dependency>
 ```
 
