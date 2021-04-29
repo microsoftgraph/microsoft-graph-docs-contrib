@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Send an existing draft message. 
 
-The draft message can be a new message [draft](../api/user-post-messages.md), [reply draft](../api/message-createreply), [reply-all draft](../api/message-createreplyall), or a [forward draft](../api/message-createforward). The message is then saved in the Sent Items folder.
+The draft message can be a new message [draft](../api/user-post-messages.md), [reply draft](../api/message-createreply.md), [reply-all draft](../api/message-createreplyall.md), or a [forward draft](../api/message-createforward.md). The message is then saved in the Sent Items folder.
 
 Alternatively, [send a new message](../api/user-sendmail.md) in a single operation.
 

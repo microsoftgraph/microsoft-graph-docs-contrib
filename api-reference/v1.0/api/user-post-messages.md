@@ -15,7 +15,7 @@ Create a draft of a new [message](../resources/message.md) in either JSON or MIM
 
 Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 
-Alternatively, [send a new message](../api/user-sendmail.md) in a single operation, or create a draft to [forward](../api/message-createforward), [reply](../api/message-createreply) and [reply-all](../api/message-createreplyall) to an existing message.
+Alternatively, [send a new message](../api/user-sendmail.md) in a single operation, or create a draft to [forward](../api/message-createforward.md), [reply](../api/message-createreply.md) and [reply-all](../api/message-createreplyall.md) to an existing message.
 
 When using JSON format:
 - Include an [attachment](../resources/attachment.md).
