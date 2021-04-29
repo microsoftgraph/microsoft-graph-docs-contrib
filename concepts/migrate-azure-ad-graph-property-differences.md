@@ -14,7 +14,7 @@ In general, the best way to compare the Azure AD Graph API to Microsoft Graph is
 
 - [Azure AD Graph metadata](https://graph.windows.net/microsoft.com/$metadata?api-version=1.6)
 - [Microsoft Graph beta metadata](https://graph.microsoft.com/beta/$metadata)
-- [Microsoft Graph v1.0 metadata](https://graph.microsoft.comv/1.0/$metadata)
+- [Microsoft Graph v1.0 metadata](https://graph.microsoft.com/v1.0/$metadata)
 
 Here, property differences between resources are highlighted. If a property is not shown in this list, it is already available in the [v1.0 version](/graph/api/overview?view=graph-rest-1.0) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
 
