@@ -127,10 +127,31 @@ Using the ES6 modules, the `Providers`, `ProviderState`, the MSAL provider initi
 
 # [html](#tab/HTML)
 
+Using the mgt-loader library, you have access to the `mgt` object which allows you to get the `Providers` and the `ProviderState` that you can use to determine if a user is logged in.
+
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+
 <div id="main"><mgt-login></mgt-login></div>
+
+<script>
+    const provider = mgt.Providers.globalProvider;
+    const isLoggedIn = provider && provider.state === mgt.ProviderState.SignedIn
+
+    // Change the component to mgt-agenda ONLY if the user is logged in
+    function loadAgenda(){
+        if(isLoggedIn){
+            const main = document.getElementById("main");
+            main.innerHTML = `<mgt-agenda></mgt-agenda>`;
+        } else {
+            main.innerHTML = `<mgt-login></mgt-login>`;
+        }
+    }
+
+    loadAgenda();
+</script>
 ```
 
 # [js](#tab/JavaScript)
@@ -138,24 +159,32 @@ Using the ES6 modules, the `Providers`, `ProviderState`, the MSAL provider initi
 ```js
 import {Providers, ProviderState} from '@microsoft/mgt'
 
+Providers.globalProvider = new MsalProvider({
+    clientId: "<YOUR_CLIENT_ID>"
+})
+
 function isLoggedIn(){
     const provider = Providers.globalProvider;
     return provider && provider.state === ProviderState.SignedIn;
 }
 
 function loadAgenda(){
-    const main = document.getElementById("main");
+    const agenda = document.createElement("mgt-agenda");
+    const loginComponent = document.createElement("mgt-login");
     if(isLoggedIn()){
         // the user is logged in, load their agenda
-        main.innerHTML = `<mgt-agenda></mgt-agenda>`
+        document.body.innerHTML = `<mgt-agenda></mgt-agenda>`;
     } else {
         // the user is not logged in, show them the login component
-        main.innerHTML = `<mgt-login></mgt-login>`
+        document.body.innerHTML = `<mgt-login></mgt-login>`
     }
 }
 
 loadAgenda();
 ```
+
+---
+
 
 ## Next Steps
 - Check out the [Get started with Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) step-by-step tutorial.
