@@ -20,7 +20,7 @@ Update the properties of a [managedDeviceOverview](../resources/intune-devices-m
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -69,7 +69,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1245
+Content-length: 1271
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -119,7 +119,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1358
+Content-Length: 1384
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",

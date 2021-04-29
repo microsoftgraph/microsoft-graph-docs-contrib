@@ -33,7 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application*                           | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+
+*Application permissions are currently available to private preview customers only.
 
 ## HTTP request
 
@@ -95,7 +97,7 @@ GET https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

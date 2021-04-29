@@ -102,8 +102,8 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
-| [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | Team.ReadBasic.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Channel.ReadBasic.All        |
 
 ## Authentication
 

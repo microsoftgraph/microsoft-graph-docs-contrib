@@ -22,7 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+|Application* | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
+
+*Application permissions are currently available to private preview customers only.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -48,25 +50,25 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_resources"
+  "name": "get_resources_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/resources
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-resources-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-resources-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-resources-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-resources-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-resources-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-resources-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -74,7 +76,7 @@ GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/r
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -13,6 +13,8 @@ You can watch this short video to see how quick and easy it is to get started wi
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
+For a step-by-step tutorial, see the [Get started with Microsot Graph Toolkit module](/learn/modules/msgraph-toolkit-intro/). 
+
 ## Set up your Microsoft 365 tenant
 In order to develop with the Toolkit, you need access to a Microsoft 365 tenant. If you don't have one, you can get a free Microsoft 365 developer subscription by [joining the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). For details about how to configure your subscription, see [Set up a Microsoft 365 developer subscription](/office/developer-program/microsoft-365-developer-program-get-started).
 
@@ -28,7 +30,7 @@ To use the Toolkit via mgt-loader, add the reference in a script to your code:
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 
-<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
 # [npm](#tab/npm)
@@ -69,6 +71,10 @@ Providers are available via a single package and can be installed as needed. The
 - <b>@micosoft/mgt-msal-provider</b>
 
     [`@micosoft/mgt-msal-provider`](../providers/msal.md) contains the `MsalProvider` and `mgt-msal-provider` component. The msal provider leverages msal.js for authenticating in web apps and PWAs.
+
+- <b>@micosoft/mgt-msal2-provider</b>
+
+    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) contains the `Msal2Provider` and `mgt-msal2-provider` component. The msal provider leverages msal-browser for authenticating in web apps and PWAs.
 
 -  <b>@microsoft/mgt-teams-provider</b>
 

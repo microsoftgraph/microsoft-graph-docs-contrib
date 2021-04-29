@@ -57,15 +57,35 @@ If successful, this method returns a `200 OK` response code and an [emailAuthent
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_emailauthenticationmethodconfiguration"
 }
 -->
 
-```http
+```msgraph-interactive
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-emailauthenticationmethodconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-emailauthenticationmethodconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-emailauthenticationmethodconfiguration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-emailauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -83,19 +103,19 @@ Content-Type: application/json
 Content-length: 491
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-    "id": "Email",
-    "state": "enabled",
-    "allowExternalIdToUseEmailOtp": "True",
-    "includeTargets":[
-        {
-          "targetType":"group",
-          "id":"all_users",
-          "isRegistrationRequired":false,
-        }
-    ]
-  }
+   "value":{
+      "@odata.type":"#microsoft.graph.emailAuthenticationMethodConfiguration",
+      "id":"Email",
+      "state":"enabled",
+      "allowExternalIdToUseEmailOtp":"True",
+      "includeTargets":[
+         {
+            "targetType":"group",
+            "id":"all_users",
+            "isRegistrationRequired":false
+         }
+      ]
+   }
 }
 ```
 

@@ -48,7 +48,6 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|The participant which is the target of the transfer.|
-|clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code.
@@ -65,7 +64,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-transfer"
+  "name": "call-transfer-1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/{id}/transfer
@@ -84,20 +83,19 @@ Content-Length: 430
     },
     "languageId": "languageId-value",
     "region": "region-value"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -105,7 +103,7 @@ Content-Length: 430
 
 #### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -249,9 +247,11 @@ Content-Type: application/json
 #### Request
 The following example shows the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer"
+  "name": "call-transfer-2"
 }-->
 
 ```http
@@ -274,14 +274,27 @@ Content-Type: application/json
     "languageId": "en-us",
     "region": "amer",
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -423,9 +436,11 @@ This call requires an application instance with a PSTN number assigned. For deta
 #### Request
 The following example shows the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-transfer"
+  "name": "call-transfer-3"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/{id}/transfer
@@ -443,14 +458,23 @@ Content-Length: 430
     },
     "languageId": "languageId-value",
     "region": "region-value"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -595,9 +619,11 @@ This call requires an application instance with a PSTN number assigned. For deta
 #### Request
 The following example shows the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer"
+  "name": "call-transfer-4"
 }-->
 
 ```http
@@ -618,14 +644,23 @@ Content-Type: application/json
     "languageId": "en-us",
     "region": "amer",
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

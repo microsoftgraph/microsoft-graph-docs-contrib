@@ -1,10 +1,10 @@
 ---
-title: "Grant an appRoleAssignment to a service principal"
-description: "Grant an app role assignment to a service principal."
+title: "Grant an appRoleAssignment for a service principal"
+description: "Grant an app role assignment for a service principal."
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "applications"
-author: "sureshja"
+author: "psignoret"
 ---
 
 # Grant an appRoleAssignment for a service principal
@@ -103,7 +103,7 @@ In this example, `{id}` and `{resourceId-value}` would both be the `id` of the r
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -120,11 +120,11 @@ Content-type: application/json
   "id": "-WmtM5na7Uus0D8kI1yylpU9Mdo0Pb9OoBJvd3T5eKc",
   "deletedDateTime": null,
   "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
-  "createdDateTime": "2021-02-15T16:14:59.8643039Z",
+  "creationTimestamp": "2021-02-15T16:14:59.8643039Z",
   "principalDisplayName": "Parents of Contoso",
   "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
   "principalType": "Group",
-  "resourceDisplayName": "Yammer",
+  "resourceDisplayName": "Fabrikam App",
   "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```
@@ -142,4 +142,3 @@ Content-type: application/json
   ]
 }
 -->
-
