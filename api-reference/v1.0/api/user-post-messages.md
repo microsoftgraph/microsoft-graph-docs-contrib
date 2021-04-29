@@ -11,11 +11,18 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a draft of a new [message](../resources/message.md) in either JSON or MIME format. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
+Create a draft of a new [message](../resources/message.md) in either JSON or MIME format.
 
-While creating the draft in the same **POST** call, you can include an [attachment](../resources/attachment.md).
+Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 
-When specifying the body in MIME format, include only the MIME content in the request body. You must specify the recipients, and any updates to **message** properties in a subsequent **send** operation to send the draft message.
+Alternatively, [send a new message](../api/user-sendmail.md) in a single operation, or create a draft to [forward](../api/message-createforward), [reply](../api/message-createreply) and [reply-all](../api/message-createreplyall) to an existing message.
+
+When using JSON format:
+- Include an [attachment](../resources/attachment.md).
+
+When using MIME format:
+- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties must be previously included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +53,7 @@ When using JSON format, provide a JSON representation of [message](../resources/
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-When using MIME content no parameters are required, just paste the MIME string in the body of the request.
+When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
 
 ## Response
 

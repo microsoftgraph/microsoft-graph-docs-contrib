@@ -13,13 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Forward a message in either JSON or MIME format. Add a comment or modify any updateable properties all in one **forward** call. The message is saved in the Sent Items folder.
+Forward a message in either JSON or MIME format. The message is saved in the Sent Items folder.
 
-Alternatively, you can first [create a draft forward message](../api/message-createforward.md) to include a comment or update any message properties, and then [send](../api/message-send.md) the draft message.
+Alternatively, [create a draft to forward a message](../api/message-createforward.md), and [send](../api/message-send.md) it later.
 
->[!NOTE]
-> * You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-> * You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
+When using JSON format:
+- Add a comment or modify any updateable properties all in one **forward** call.
+- Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
+
+When using MIME format:
+- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties must be previously included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +58,7 @@ When using JSON format, provide a JSON object with the following parameters.
 |toRecipients|[recipient](../resources/recipient.md) collection|The list of recipients.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-When using MIME content no parameters are required, just paste the MIME string in the body of the request.
+When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
 
 ## Response
 

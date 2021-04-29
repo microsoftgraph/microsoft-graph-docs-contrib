@@ -13,14 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a draft of a new message in either JSON or MIME format. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
+Create a draft of a new message in either JSON or MIME format to [send](/graph/api-reference/beta/api/message-send.md) later.
 
-While creating the draft in the same **POST** call, you can:
+Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.
 
-- Include an [attachment](../resources/attachment.md) 
-- Use a [mention](../resources/mention.md) to call out another user in the new message
+Alternatively, [send a new message](../api/user-sendmail.md) in a single operation or create a draft to [forward](../api/message-createforward), [reply]((../api/message-createreply)) and [reply-all](../api/message-createreplyall) to an existing message.
 
-When specifying the body in MIME format, include only the MIME content in the request body. You must specify the recipients and any updates to **message** properties in a subsequent [send](/graph/api-reference/beta/api/message-send.md) operation.
+When using JSON format:
+- Include an [attachment](../resources/attachment.md) and use a [mention](../resources/mention.md) to call out another user in the new message.
+- Specify the recipients and any updates to **message** properties in a subsequent **send** operation.
+
+When using MIME format:
+- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties must be previously included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,7 +60,7 @@ If you want to use **mention** to call out another user in the new message:
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-When specifying the body in MIME format, include only the MIME content in the request body.
+When specifying the body in MIME format, include only the MIME content as **a Base64-enconded string** in the request body.
 
 ## Response
 

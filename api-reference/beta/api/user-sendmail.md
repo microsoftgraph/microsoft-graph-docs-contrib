@@ -13,14 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send the message specified in the request body, in either JSON or MIME format.
+Send the message specified in the request body, in either JSON or MIME format. The message is saved in the Sent Items folder by default.
 
-The message is saved in the Sent Items folder by default.
+Alternatively, [create a draft message](../api/user-post-messages.md) to send later.
 
-In the same **sendMail** action call, you can:
+When using JSON format:
+- Include an [attachment](../resources/attachment.md). 
+- Use a [mention](../resources/mention.md) to call out another user in the new message.
 
-- Include an [attachment](../resources/attachment.md)
-- Use a [mention](../resources/mention.md) to call out another user in the new message
+When using MIME format:
+- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties must be previously included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,7 +60,7 @@ If you want to use **mention** to call out another user in the new message:
 - Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
 - For each mention in the **mentions** property, you must specify the **mentioned** property.
 
-When using MIME format no parameters are required, just paste the MIME string in the body of the request.
+When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
 
 ## Response
 

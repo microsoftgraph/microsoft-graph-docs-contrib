@@ -11,13 +11,20 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a draft to reply to a [message](../resources/message.md) in either JSON or MIME format. You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
+Create a draft to reply to a [message](../resources/message.md) in either JSON or MIME format. 
 
-> [!NOTE]
-> * You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-> * You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
+When ready, [send](../api/message-send.md) the draft message.
 
-When specifying the body in MIME format, include only the MIME content in the request body. You must specify the recipients, and any updates to **message** properties in a subsequent **send** operation to forward the draft message.
+Alternatively, [reply to a message](../api/message-reply.md) in a single operation.
+
+When using JSON format:
+- You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties.
+- You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+- You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
+
+When using MIME format:
+- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties must be previously included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-This method does not require a request body. However, for creating a reply draft with MIME content, the MIME string should be provided in the body of the request. No parameters are required, just paste the MIME string in the body of the request.
+This method does not require a request body. However, for creating a reply draft using MIME format, include only the MIME content as **a Base64-enconded string** in the request body. No parameters are required.
 
 ## Response
 

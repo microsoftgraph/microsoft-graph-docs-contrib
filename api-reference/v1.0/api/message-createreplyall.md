@@ -11,9 +11,18 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a draft to reply to the sender and all the recipients of the specified [message](../resources/message.md) in either JSON or MIME format. You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
+Create a draft to reply to the sender and all the recipients of the specified [message](../resources/message.md) in either JSON or MIME format. 
 
-When specifying the body in MIME format, include only the MIME content in the request body.
+When ready, [send](../api/message-send.md) the draft message.
+
+Alternatively, [reply-all to a message](../api/message-replyall.md) in a single operation.
+
+When using JSON format:
+- You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties.
+
+When using MIME format:
+- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties must be previously included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +48,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a JSON object|
 
 ## Request body
-This method does not require a request body. However, for creating a replyAll draft with MIME content, the content should be provided in the body of the request. No parameters are required, just paste the MIME string in the body of the request.
+This method does not require a request body. However, for creating a replyAll draft using MIME format, include only the MIME content as **a Base64-enconded string** in the request body. No parameters are required.
 
 ## Response
 

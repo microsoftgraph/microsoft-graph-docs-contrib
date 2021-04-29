@@ -13,15 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a draft [message](/graph/api-reference/beta/resources/message.md) for forwarding an existing one. You can specify the request body in JSON or MIME format. 
+Create a draft to forward an existing [message](/graph/api-reference/beta/resources/message.md). Specify the request body in either JSON or MIME format and [send](../api/message-send.md) the draft message when ready.
 
-When specifying the body in JSON format, you can include a comment, specify recipients and update any message properties all in one **createForward** call. You can then [send](../api/message-send.md) the draft message.
+Alternatively, [forward a message](../api/message-forward.md) in a single operation.
 
-> [!NOTE]
-> * You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-> * You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
+When using JSON format: 
+- You can include a comment, specify recipients and update any message properties all in one **createForward** call. 
+- You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+- You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
 
-When specifying the body in MIME format, include only the MIME content in the request body. You can specify the recipients, and any updates to **message** properties in a subsequent **send** operation to forward the draft message.
+When using MIME format:
+- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties must be previously included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,7 +58,7 @@ To send a JSON object provide the following parameters.
 |toRecipients|[recipient](../resources/recipient.md) collection|The list of recipients.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-When specifying the body in MIME format, include only the MIME content in the request body.
+When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
 
 ## Response
 

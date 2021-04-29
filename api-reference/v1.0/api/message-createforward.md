@@ -11,11 +11,19 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a draft [message](../resources/message.md) for forwarding an existing one, in either JSON or MIME format. You can then [update](../api/message-update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
+Create a draft to forward an existing [message](../resources/message.md), in either JSON or MIME format. 
 
-When specifying the body in JSON format, you can include a comment, specify recipients, and update any message properties all in one **createForward** call. You can then **send** the draft message.
+When ready, [send](../api/message-send.md) the draft message.
 
-When specifying the body in MIME format, include only the MIME content in the request body. You can specify the recipients, and any updates to **message** properties in a subsequent **send** operation to forward the draft message.
+Alternatively, [forward a message](../api/message-forward.md) in a single operation.
+
+When using JSON format:
+- You can include a comment, specify recipients, and update any message properties all in one **createForward** call.
+- You can [update](../api/message-update.md) the draft to add content to the **body** or change other message properties.
+
+When using MIME format:
+- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties must be previously included in the base64-encoded string.
 
 ## Permissions
 
@@ -46,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use text/plain for MIME content and application/json for a JSON object. |
 
 ## Request body
-This method does not require a request body. However, for creating a forward draft with MIME content, the MIME string should be provided in the body of the request. No parameters are required.
+This method does not require a request body. However, for creating a forward draft using MIME format, include only the MIME content as **a Base64-enconded string** in the request body. 
 
 ## Response
 

@@ -30,7 +30,7 @@ There are two supported formarts for creating a [message](/graph/api-reference/v
 1. If `Content-Type: application/json` is specified in the header, JSON metadata should be specified in the request body.
 2. If `Content-Type: text/plain` is specified in the header, MIME content should be specified in the request body.
 
-When specifying the body in MIME format no parameters are required, include only the MIME string in the request body.
+When specifying the body in MIME format no parameters are required, provide the MIME content as **a Base64-encoded string** in the request body.
 
 ## Use cases
 | Use cases | Resources |

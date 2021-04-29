@@ -13,13 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reply to all recipients of a message in either JSON or MIME format. You can specify a comment and modify any updateable properties of the [message](/graph/api-reference/beta/resources/message.md) in a single **replyAll** call. The message is then saved in the Sent Items folder.
+Reply to all recipients of a message in either JSON or MIME format. The message is then saved in the Sent Items folder.
 
-Alternatively, you can first [create a draft reply-all message](../api/message-createreplyall.md) to include a comment or update any message properties, and then [send](../api/message-send.md) the reply.
+Alternatively, [create a draft to reply-all to a message](../api/message-createreplyall.md), and [send](../api/message-send.md) it later.
 
->[!NOTE]
-> * You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-> * If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties. 
+When using JSON format:
+- Add a comment or modify any updateable properties of the [message](/graph/api-reference/beta/resources/message.md) in a single **replyAll** call 
+- Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+- If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+
+When using MIME format:
+- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties must be previously included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +57,7 @@ When using JSON format, provide a JSON object with the following parameters.
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-When specifying the body in MIME format, include only the MIME content in the request body.
+When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
 
 ## Response
 
