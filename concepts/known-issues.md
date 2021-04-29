@@ -185,6 +185,12 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * Schema extensions (legacy) are not returned with $select statement, but are returned without $select.
 * Clients cannot track changes to open extensions or registered schema extensions.
 
+## Devices and apps | Device updates (Windows updates)
+
+### Making a request for the first time
+
+When you make a call to the Windows updates API for the first time, you may receive a `401 Unauthorized` response. The error occurs in cases when application's service principal does not yet exist in your tenant and requires time to complete provisioning. Please try again after around 24 hours.
+
 ## Extensions
 
 ### Change tracking is not supported
