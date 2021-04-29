@@ -37,6 +37,32 @@
     {
       "ChangeList": [
         {
+          "Id": "4a915d72-a737-421a-b5a5-5b38491c48af",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowMeetingChat",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowMeetingChat** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "4a915d72-a737-421a-b5a5-5b38491c48af",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowTeamworkReactions",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowTeamworkReactions** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "4a915d72-a737-421a-b5a5-5b38491c48af",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-28T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5a319127-8866-4ef9-93c7-cbd3d9ac84fa",
           "ApiChange": "Resource",
           "ChangedApiName": "onlineMeeting",
