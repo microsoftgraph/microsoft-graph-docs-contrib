@@ -5,7 +5,7 @@
         {
           "Id": "dfddb103-d5a3-4ed3-b27f-b0d95945c7d2",
           "ApiChange": "Permission",
-          "ChangedApiName": "",
+          "ChangedApiName": "accessReviews",
           "ChangeType": "Addition",
           "Description": "Added Policy.ReadWrite.All permission.",
           "Target": "accessReviews"
@@ -15,8 +15,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-28T09:02:13.750Z",
-      "WorkloadArea": "governance",
-      "SubArea": ""
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
