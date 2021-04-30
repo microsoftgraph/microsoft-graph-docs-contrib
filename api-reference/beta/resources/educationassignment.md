@@ -60,7 +60,7 @@ The assignment APIs are exposed in the class namespace.
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the assignment publish notification. If not specified or null, defaults to the `General` channel. This field only applies to assignments where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** is not allowed after the assignment has been published.|
 |status|string| Status of the **Assignment**.  You can not PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`.|
 |webUrl|string| The deep link URL for the given assignment.|
-|resourcesFolderUrl|string| URL to Folder where all the file resources for this assignment are stored.|
+|resourcesFolderUrl|string| URL to folder where all the file resources for this assignment are stored.|
 
 ## Relationships
 | Relationship | Type	|Description|
