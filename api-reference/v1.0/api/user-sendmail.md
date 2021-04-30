@@ -19,8 +19,8 @@ When using JSON format:
 - Include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
 When using MIME format:
-- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
-- S/MIME properties must be previously included in the base64-encoded string.
+- Microsoft Graph does not support editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties can be included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

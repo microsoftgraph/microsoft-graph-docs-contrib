@@ -23,8 +23,8 @@ When using JSON format:
 - If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 
 When using MIME format:
-- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
-- S/MIME properties must be previously included in the base64-encoded string.
+- Microsoft Graph does not support editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties can be included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

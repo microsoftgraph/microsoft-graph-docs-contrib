@@ -16,8 +16,8 @@ Reply to all recipients of a [message](../resources/message.md) in either JSON o
 Alternatively, [create a draft to reply-all to an existing message](../api/message-createreplyall.md) and send it later.
 
 When using MIME format:
-- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
-- S/MIME properties must be previously included in the base64-encoded string.
+- Microsoft Graph does not support editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties can be included in the base64-encoded string.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

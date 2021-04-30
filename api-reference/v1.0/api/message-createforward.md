@@ -22,8 +22,8 @@ When using JSON format:
 - You can [update](../api/message-update.md) the draft to add content to the **body** or change other message properties.
 
 When using MIME format:
-- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
-- S/MIME properties must be previously included in the base64-encoded string.
+- Microsoft Graph does not support editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
+- S/MIME properties can be included in the base64-encoded string.
 
 ## Permissions
 
