@@ -42,7 +42,7 @@ GET /identityGovernance/accessReviews/historyDefinitions
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. Supported OData query parameters include `$top`, `$filter`, and `$skip`. For general information, see [OData query parameters](/graph/query-parameters). 
+This method supports the `$top`, `$filter`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
 
 ## Request headers
 |Name|Description|
