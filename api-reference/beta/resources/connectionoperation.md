@@ -28,7 +28,7 @@ Describes status of an asynchronous request to create a Microsoft Search connect
 
 | Property | Type                          | Description                       |
 |:---------|:------------------------------|:----------------------------------|
-| error    | [publicError](error.md)       | If `status` is `failed`, provides more information about the error that caused the failure. |
+| error    | [errorDetail](errordetail.md) | If `status` is `failed`, provides more information about the error that caused the failure. |
 | id       | String                        | Unique identifier for the connectionOperation. Read-only. |
 | status   | String                        | Indicates the status of the asynchronous operation. Possible values are: `unspecified`, `inprogress`, `completed`, `failed`. |
 
@@ -51,6 +51,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "error": {"microsoft.graph.errorDetail"},
   "id": "string (identifier)",
   "status": "string"
 }

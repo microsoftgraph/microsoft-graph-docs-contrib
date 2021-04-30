@@ -53,7 +53,6 @@ The following is a JSON representation of the resource.
 {
   "baseType": "string",
   "id": "string (identifier)",
-  "properties": [{"microsoft.graph.property"}]
 }
 ```
 
