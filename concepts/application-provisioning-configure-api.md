@@ -325,9 +325,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ```
 #### Response
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

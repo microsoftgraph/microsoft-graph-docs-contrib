@@ -141,9 +141,7 @@ Content-type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -195,9 +193,7 @@ Content-type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

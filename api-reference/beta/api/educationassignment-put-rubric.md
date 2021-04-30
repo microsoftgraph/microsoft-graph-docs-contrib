@@ -93,9 +93,7 @@ The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationRubric"
+  "blockType": "response"
 } -->
 
 ```http

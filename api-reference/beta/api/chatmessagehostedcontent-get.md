@@ -159,6 +159,10 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id
 HTTP/1.1 200 OK
 Content-type: image/jpeg
 Content-length: 201
+
+{
+  "id": "id-value"
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

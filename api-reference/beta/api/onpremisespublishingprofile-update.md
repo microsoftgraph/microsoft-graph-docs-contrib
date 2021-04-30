@@ -101,9 +101,7 @@ Content-Type: application/json
 #### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
+  "blockType": "response"
 } -->
 
 ```http
@@ -134,9 +132,7 @@ Content-Type: application/json
 #### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
+  "blockType": "response"
 } -->
 
 ```http
@@ -167,9 +163,7 @@ Content-Type: application/json
 #### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
+  "blockType": "response"
 } -->
 
 ```http

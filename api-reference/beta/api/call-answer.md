@@ -107,9 +107,7 @@ This blob is the serialized configuration for media sessions which is generated 
 Here is an example of the response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -217,9 +215,7 @@ Content-Type: application/json
 
 ##### Response
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -386,9 +382,7 @@ Content-Type: application/json
 ##### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

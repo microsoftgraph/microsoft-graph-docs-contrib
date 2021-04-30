@@ -256,8 +256,7 @@ Once provisioned, this channel can be used for [importing messages](/microsoftte
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "create_channel_for_migration",
-  "@odata.type": "microsoft.graph.channel"
+  "name": "create_channel_for_migration"
 } -->
 
 ```http

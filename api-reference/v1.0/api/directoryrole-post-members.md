@@ -85,9 +85,7 @@ Content-type: application/json
 ##### Response
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -135,9 +133,7 @@ Content-type: application/json
 ##### Response
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

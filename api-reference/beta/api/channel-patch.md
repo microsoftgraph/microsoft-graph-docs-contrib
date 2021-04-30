@@ -77,9 +77,7 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 Here is an example of the response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -138,9 +136,7 @@ Content-type: application/json
 Here is an example of the response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

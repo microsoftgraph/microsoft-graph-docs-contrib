@@ -103,9 +103,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -156,9 +154,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -211,9 +207,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -264,9 +258,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -319,9 +311,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -376,9 +366,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationpolicy"
+  "blockType": "response"
 } -->
 
 ```http

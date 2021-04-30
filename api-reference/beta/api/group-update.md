@@ -117,9 +117,7 @@ Content-length: 211
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http
@@ -154,9 +152,7 @@ Content-length: 211
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http

@@ -128,8 +128,6 @@ Content-type: application/json
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "put_regionalAndLanguageSettings"
 } -->
 ```http
@@ -189,8 +187,6 @@ Content-type: application/json
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "patch_regionalAndLanguageSettings"
 } -->
 ```http

@@ -93,9 +93,7 @@ Content-length: 244
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http

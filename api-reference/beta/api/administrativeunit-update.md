@@ -96,9 +96,7 @@ Content-length: 114
 ##### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
