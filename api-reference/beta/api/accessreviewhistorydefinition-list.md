@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AccessReview.ReadWrite.All|
 
-If the signed-in user is not a Global Admin directory role member or a Global Reader directory role member then only the definitions which the signed-in user has created will be returned.
+If the signed-in user is not a Global Admin directory role member or a Global Reader directory role member, then only the definitions which the signed-in user has created will be returned.
 
 ## HTTP request
 
