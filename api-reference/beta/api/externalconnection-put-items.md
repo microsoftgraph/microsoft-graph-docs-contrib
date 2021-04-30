@@ -42,8 +42,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it is overwritten by the object sent in the body. |
+| connection-id | String | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
+| item-id       | String | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it is overwritten by the object sent in the body. |
 
 ## Request headers
 
@@ -107,7 +107,6 @@ PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.externalItem",
   "acl": [
     {
       "type": "user",

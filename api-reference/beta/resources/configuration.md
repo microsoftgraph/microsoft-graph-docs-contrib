@@ -22,7 +22,7 @@ Specifies additional application IDs that are allowed to manage the externalConn
 
 | Property       | Type              | Description |
 |:---------------|:------------------|:------------|
-| authorizedApps | string collection | A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection. |
+| authorizedApps | String collection | A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection. |
 
 ## JSON representation
 
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "authorizedApps": ["string"]
+  "authorizedApps": ["String"]
 }
 ```
 

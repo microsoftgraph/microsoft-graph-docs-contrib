@@ -22,8 +22,8 @@ The content of an [externalItem](externalitem.md) indexed via a Microsoft Search
 
 | Property | Type   | Description                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
-| value    | string | The content for the externalItem. Required.                                                 |
-| type     | string | The type of content in the value property. Possible values are `text` and `html`. Required. |
+| value    | String | The content for the externalItem. Required.                                                 |
+| type     | String | The type of content in the value property. Possible values are `text` and `html`. Required. |
 
 ## Relationships
 

@@ -28,9 +28,9 @@ Represents an external group. External groups (along with Azure Active Directory
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | string | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
-| displayName | string | The friendly name of the external group. Optional.                                                                       |
-| description | string | The description of the external group. Optional.                                                                         
+| id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
+| displayName | String | The friendly name of the external group. Optional.                                                                       |
+| description | String | The description of the external group. Optional.                                                                         
 
 ## Relationships
 
@@ -52,7 +52,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "id": "string (identifier)",
-  "displayName": "string",
-  "description": "string"
+  "displayName": "String",
+  "description": "String"
 }
 ```

@@ -33,8 +33,8 @@ An item added to a Microsoft Graph [connection](externalconnection.md).
 |:-----------|:-------------------------|:-------------------------------------|
 | acl        | [acl](acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. Required. |
 | content    | [externalItemContent](externalitemcontent.md) | A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional. |
-| id         | string                   | Developer-provided unique ID of the item within the containing [externalConnection](externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required. |
-| properties | object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [externalConnection](externalconnection.md). Required. |
+| id         | String                   | Developer-provided unique ID of the item within the containing [externalConnection](externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required. |
+| properties | Object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [externalConnection](externalconnection.md). Required. |
 
 ## Relationships
 
@@ -55,9 +55,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "acl": [{"@odata.type": "microsoft.graph.acl"}],
-  "content": {"@odata.type": "microsoft.graph.externalItemContent"},
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "properties": "object"
 }
 ```

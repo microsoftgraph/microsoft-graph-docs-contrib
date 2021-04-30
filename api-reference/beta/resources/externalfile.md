@@ -34,17 +34,17 @@ An item indexed via a Microsoft Search [connection](externalconnection.md). This
 | Property         | Type                     | Description                    |
 |:-----------------|:-------------------------|:-------------------------------|
 | acl              | [acl](acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. Required. |
-| content          | string                   | A plain-text representation of the contents of the item. The text in this property is full-text indexed. Optional. |
-| id               | string                   | Developer-provided unique ID of the item within the containing [externalConnection](externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required. |
-| createdBy        | string                   | The name of the user that created the file. |
+| content          | String                   | A plain-text representation of the contents of the item. The text in this property is full-text indexed. Optional. |
+| id               | String                   | Developer-provided unique ID of the item within the containing [externalConnection](externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required. |
+| createdBy        | String                   | The name of the user that created the file. |
 | createdDateTime  | dateTimeOffset           | The date and time that the file was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` |
-| extension        | string                   | The file extension.            |
-| lastModifiedBy   | string                   | The name of the user that last modified the file. |
+| extension        | String                   | The file extension.            |
+| lastModifiedBy   | String                   | The name of the user that last modified the file. |
 | modifiedDateTime | dateTimeOffset           | The date and time that the file was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` |
-| name             | string                   | The file name. Required.       |
+| name             | String                   | The file name. Required.       |
 | size             | int64                    | The size of the file in bytes. |
-| title            | string                   | The title of the file.         |
-| url              | string                   | The URL to access the file. Required. |
+| title            | String                   | The title of the file.         |
+| url              | String                   | The URL to access the file. Required. |
 
 ## Relationships
 
@@ -65,7 +65,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "acl": [{"@odata.type": "microsoft.graph.acl"}],
   "content": "String",
   "id": "String (identifier)",
   "createdBy": "String",

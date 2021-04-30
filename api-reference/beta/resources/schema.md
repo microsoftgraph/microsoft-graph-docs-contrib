@@ -29,7 +29,7 @@ The [connection](externalconnection.md) schema determines how your external cont
 
 | Property   | Type                               | Description                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | string                             | Must be set to `microsoft.graph.externalItem`. Required. |
+| baseType   | String                             | Must be set to `microsoft.graph.externalItem`. Required. |
 | properties | [property](property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128. |
 
 ## Relationships
@@ -53,7 +53,7 @@ The following is a JSON representation of the resource.
 {
   "baseType": "string",
   "id": "string (identifier)",
-  "properties": [{"@odata.type": "microsoft.graph.property"}]
+  "properties": [{"microsoft.graph.property"}]
 }
 ```
 

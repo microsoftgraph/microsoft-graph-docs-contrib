@@ -8,6 +8,7 @@ ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
+
 # innerErrorDetail resource type
 
 Namespace: microsoft.graph.externalConnectors
@@ -22,8 +23,8 @@ An inner error contained in an [errorDetail](errordetail.md) object.
 
 | Property | Type   | Description                                  |
 |:---------|:-------|:---------------------------------------------|
-| message  | string | The human-readable error message. Read-only. |
-| source   | string | The source of the error. Read-only.          |
+| message  | String | The human-readable error message. Read-only. |
+| source   | String | The source of the error. Read-only.          |
 
 ## JSON representation
 
@@ -54,5 +55,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -36,9 +36,9 @@ A logical container to add content from an external source into Microsoft Graph.
 | Property      | Type                              | Description |
 |:--------------|:----------------------------------|:------------|
 | configuration | [configuration](configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. Optional. |
-| description   | string                            | Description of the connection displayed in the Microsoft 365 admin center. Optional. |
-| id            | string                            | Developer-provided unique ID of the connection within the Azure Active Directory tenant. Maximum length of 32 characters. Must only contain alphanumeric characters. Cannot begin with `Microsoft` or be one of the following values: `None`, `Directory`, `Exchange`, `ExchangeArchive`, `LinkedIn`, `Mailbox`, `MicrosoftSearch`, `OneDriveBusiness`, `SharePoint`, `Teams`, `Yammer`, `Connectors`. Required. |
-| name          | string                            | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. Required. |
+| description   | String                            | Description of the connection displayed in the Microsoft 365 admin center. Optional. |
+| id            | String                            | Developer-provided unique ID of the connection within the Azure Active Directory tenant. Maximum length of 32 characters. Must only contain alphanumeric characters. Cannot begin with `Microsoft` or be one of the following values: `None`, `Directory`, `Exchange`, `ExchangeArchive`, `LinkedIn`, `Mailbox`, `MicrosoftSearch`, `OneDriveBusiness`, `SharePoint`, `Teams`, `Yammer`, `Connectors`. Required. |
+| name          | String                            | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. Required. |
 | state         | connectionState                   | Indicates the current state of the connection. Possible values are `draft`, `ready`, `obsolete`, and `limitExceeded`. Required. |
 
 ## Relationships
@@ -64,7 +64,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "configuration": {"@odata.type": "microsoft.graph.configuration"},
   "description": "String",
   "id": "String (identifier)",
   "name": "String",
