@@ -31,7 +31,7 @@ An accessReviewHistoryDefinition represents a collection of access review histor
 |decisions|String collection|Determines which review decisions will be included in the fetched review history data if specified. Optional on create. All decisions will be included by default if no decisions are provided on create. Possible values are: `approve`, `deny`, `dontKnow`, `notReviewed`, and `notNotified`.|
 |displayName|String|Name for the access review history data collection. Required on create.|
 |downloadUri|String|Uri which can be used to retrieve review history data. This URI will be active for 24 hours after being generated.|
-|fulfilledDateTime|DateTimeOffset|Timestamp when all of the available data for this definition was collected. This will be set once this defintion's status is set to `done`.|
+|fulfilledDateTime|DateTimeOffset|Timestamp when all of the available data for this definition was collected. This will be set once this definition's status is set to `done`.|
 |id|String|The assigned unique identifier of an access review history definition. Optional on create.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews starting on or after this date will be included in the fetched history data. Required on create.|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|Timestamp, reviews starting on or before this date will be included in the fetched history data. Required on create.|
