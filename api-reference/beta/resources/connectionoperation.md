@@ -51,7 +51,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "error": {"microsoft.graph.errorDetail"},
   "id": "string (identifier)",
   "status": "string"
 }
