@@ -72,31 +72,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-    "id": "8b7ea194-a194-8b7e-94a1-7e8b94a17e8b",
-    "accessReviewId": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('abadf3b6-8ea4-4dea-90a5-9eac8fe93fbd')/instances('7070ea1c-8d12-457b-bd35-a37dc59e54e0')/decisions/$entity",
+    "id": "9550e25b-f315-4454-9d87-16b885c35de4",
+    "accessReviewId": "7070ea1c-8d12-457b-bd35-a37dc59e54e0",
+    "reviewedDateTime": null,
+    "decision": "NotReviewed",
+    "justification": "",
+    "appliedDateTime": null,
+    "applyResult": "New",
+    "recommendation": "Deny",
+    "principalLink": "https://graph.microsoft.com/v1.0/users/1800bb2c-955d-4205-8471-3a6c3116435d",
+    "resourceLink": null,
+    "resource": null,
     "reviewedBy": {
-      "@odata.type": "microsoft.graph.userIdentity"
+        "id": "00000000-0000-0000-0000-000000000000",
+        "displayName": "",
+        "userPrincipalName": ""
     },
-    "reviewedDateTime": "String (timestamp)",
-    "decision": "String",
-    "justification": "String",
     "appliedBy": {
-      "@odata.type": "microsoft.graph.userIdentity"
+        "id": "00000000-0000-0000-0000-000000000000",
+        "displayName": "",
+        "userPrincipalName": ""
     },
-    "appliedDateTime": "String (timestamp)",
-    "applyResult": "String",
-    "recommendation": "String",
+    "target": {
+        "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
+        "userId": "1800bb2c-955d-4205-8471-3a6c3116435d",
+        "userDisplayName": "guest example",
+        "userPrincipalName": "guest@guest.com"
+    },
     "principal": {
-      "@odata.type": "microsoft.graph.identity"
-    },
-    "principalLink": "String",
-    "resource": {
-      "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
-    },
-    "resourceLink": "String"
-  }
+        "@odata.type": "#microsoft.graph.userIdentity",
+        "id": "1800bb2c-955d-4205-8471-3a6c3116435d",
+        "displayName": "guest example",
+        "userPrincipalName": "guest@guest.com"
+    }
 }
 ```
 

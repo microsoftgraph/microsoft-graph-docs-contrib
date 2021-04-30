@@ -1,6 +1,6 @@
 ---
 title: "removeAccessApplyAction resource type"
-description: "**TODO: Add Description**"
+description: "Type of accessReviewApplyAction that indicates removing access to a resource of those denied in an access review of that resource."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"

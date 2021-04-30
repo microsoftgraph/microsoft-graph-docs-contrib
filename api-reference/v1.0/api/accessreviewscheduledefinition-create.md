@@ -49,11 +49,11 @@ The following table shows the properties that are accepted when you create the [
 |displayName|String|Name of access review series. Required.|
 |descriptionForAdmins|String|Context of the review provided to admins.|
 |descriptionForReviewers|String|Context of the review provided to reviewers in email notifications.|
-|scope|[accessReviewScope](../resources/accessreviewscope.md)|Defines the scope of users reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md). Required.|
-|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Defines who the reviewers are. If none are specified, the review is a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md).|
+|scope|[accessReviewScope](../resources/accessreviewscope.md)|Defines the scope of users reviewed. See [accessReviewScope](../resources/accessreviewscope.md). Required.|
+|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Defines who the reviewers are. If none are specified, the review is a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md).|
 |fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|If provided, the fallback reviewers will be asked to complete a review if the primary reviewers do not exist. For example, if managers are selected as `reviewers` and a principal under review does not have a manager in Azure AD, the fallback reviewers will be asked to review that principal.|
-|instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)|In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md).|
-|settings|[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)|The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). Required.|
+|instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)|In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscope.md).|
+|settings|[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)|The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). Required.|
 
 ## Response
 
@@ -70,36 +70,52 @@ If successful, this method returns a `201 Created` response code and an [accessR
 ``` http
 POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions
 Content-Type: application/json
-Content-length: 752
 
 {
-  "@odata.type": "#microsoft.graph.accessReviewScheduleDefinition",
-  "displayName": "String",
-  "status": "String",
-  "descriptionForAdmins": "String",
-  "descriptionForReviewers": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "scope": {
-    "@odata.type": "microsoft.graph.accessReviewScope"
-  },
-  "reviewers": [
-    {
-      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    "displayName": "Example review",
+    "descriptionForAdmins": "",
+    "descriptionForReviewers": "",
+    "scope": {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/v1.0/groups/0914d821-ca3b-45cc-98ee-54c00a04deef/transitiveMembers",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
+    },
+    "reviewers": [
+        {
+            "query": "/v1.0/users/36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        }
+    ],
+    "settings": {
+        "mailNotificationsEnabled": true,
+        "reminderNotificationsEnabled": true,
+        "justificationRequiredOnApproval": true,
+        "defaultDecisionEnabled": false,
+        "defaultDecision": "None",
+        "instanceDurationInDays": 14,
+        "autoApplyDecisionsEnabled": true,
+        "recommendationsEnabled": true,
+        "recurrence": {
+            "pattern": {
+                "type": "absoluteMonthly",
+                "interval": 1,
+                "month": 0,
+                "dayOfMonth": 0,
+                "daysOfWeek": [],
+                "firstDayOfWeek": "sunday",
+                "index": "first"
+            },
+            "range": {
+                "type": "numbered",
+                "numberOfOccurrences": 0,
+                "recurrenceTimeZone": null,
+                "startDate": "2021-05-01",
+                "endDate": "9999-12-31"
+            }
+        }
     }
-  ],
-  "fallbackReviewers": [
-    {
-      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
-    }
-  ],
-  "instanceEnumerationScope": {
-    "@odata.type": "microsoft.graph.accessReviewScope"
-  },
-  "settings": {
-    "@odata.type": "microsoft.graph.accessReviewScheduleSettings"
-  }
 }
 ```
 
@@ -117,36 +133,63 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.accessReviewScheduleDefinition",
-  "id": "d6bf2f6c-2f6c-d6bf-6c2f-bfd66c2fbfd6",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "status": "String",
-  "descriptionForAdmins": "String",
-  "descriptionForReviewers": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "scope": {
-    "@odata.type": "microsoft.graph.accessReviewScope"
-  },
-  "reviewers": [
-    {
-      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions/$entity",
+    "id": "2dca8959-b716-4b4c-a93d-a535c01eb6e0",
+    "displayName": "Example review",
+    "createdDateTime": null,
+    "lastModifiedDateTime": null,
+    "status": "NotStarted",
+    "descriptionForAdmins": "",
+    "descriptionForReviewers": "",
+    "instanceEnumerationScope": null,
+    "createdBy": {
+        "id": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
+        "displayName": "MOD Administrator",
+        "userPrincipalName": "admin@contoso.com"
+    },
+    "scope": {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/groups/0914d821-ca3b-45cc-98ee-54c00a04deef/transitiveMembers",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
+    },
+    "reviewers": [
+        {
+            "query": "/v1.0/users/36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        }
+    ],
+    "fallbackReviewers": [],
+    "settings": {
+        "mailNotificationsEnabled": true,
+        "reminderNotificationsEnabled": true,
+        "justificationRequiredOnApproval": true,
+        "defaultDecisionEnabled": false,
+        "defaultDecision": "None",
+        "instanceDurationInDays": 14,
+        "autoApplyDecisionsEnabled": true,
+        "recommendationsEnabled": true,
+        "recurrence": {
+            "pattern": {
+                "type": "absoluteMonthly",
+                "interval": 1,
+                "month": 0,
+                "dayOfMonth": 0,
+                "daysOfWeek": [],
+                "firstDayOfWeek": "sunday",
+                "index": "first"
+            },
+            "range": {
+                "type": "numbered",
+                "numberOfOccurrences": 0,
+                "recurrenceTimeZone": null,
+                "startDate": "2021-05-01",
+                "endDate": "9999-12-31"
+            }
+        },
+        "applyActions": []
     }
-  ],
-  "fallbackReviewers": [
-    {
-      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
-    }
-  ],
-  "instanceEnumerationScope": {
-    "@odata.type": "microsoft.graph.accessReviewScope"
-  },
-  "settings": {
-    "@odata.type": "microsoft.graph.accessReviewScheduleSettings"
-  }
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "accessReviewScheduleDefinition: filterByCurrentUser"
-description: "**TODO: Add Description**"
+description: "Function used to return accessReviewScheduleDefinition objects where the calling user is the reviewer."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"

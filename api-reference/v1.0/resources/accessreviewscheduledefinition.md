@@ -1,9 +1,9 @@
 ---
 title: "accessReviewScheduleDefinition resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents the scheduling of an Azure AD access review."
+author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -25,8 +25,8 @@ Inherits from [entity](../resources/entity.md).
 |[Get accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Read the properties and relationships of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.|
 |[Update accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Update the properties of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.|
 |[Delete accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md)|None|Deletes an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.|
-|[stop](../api/accessreviewscheduledefinition-stop.md)|None|**TODO: Add Description**|
-|[filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) collection|**TODO: Add Description**|
+|[stop](../api/accessreviewscheduledefinition-stop.md)|None|Stops an access review schedule definition from creating future instances.|
+|[filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) collection|Returns all definitions where the calling user is the reviewer of any instances.|
 |[List instances](../api/accessreviewscheduledefinition-list-instances.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Get the accessReviewInstance resources from the instances navigation property.|
 |[Create accessReviewInstance](../api/accessreviewscheduledefinition-post-instances.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Create a new accessReviewInstance object.|
 
@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|Timestamp when review series was last modified.|
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of access review scopes is used to define who are the reviewers. See [accessReviewReviewerScope](accessreviewreviewerscope.md) for supported queries. Required on create.|
 |scope|[accessReviewScope](../resources/accessreviewscope.md)| Defines scope of whose access to what will be reviewed. For supported scopes, see [accessReviewScope](accessreviewscope.md). Required on create.|
-|settings|[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series.|
+|settings|[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Required on create.|
 |status|String|This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`.|
 
 ## Relationships

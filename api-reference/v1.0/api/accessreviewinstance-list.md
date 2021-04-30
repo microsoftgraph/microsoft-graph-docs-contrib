@@ -3,7 +3,7 @@ title: "List accessReviewInstances"
 description: "Get a list of the accessReviewInstance objects and their properties."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstance: resetDecisions"
-description: "**TODO: Add Description**"
+description: "Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # accessReviewInstance: resetDecisions
 Namespace: microsoft.graph
 
-Resets all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on an [accessReviewInstance](../resources/accessreviewinstance.md) to not reviewed.
+Resets all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on an [accessReviewInstance](../resources/accessreviewinstance.md) to `notReviewed`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
