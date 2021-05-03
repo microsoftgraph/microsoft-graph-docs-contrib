@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List all identityProviders in a b2cIdentityUserFlow
+# List all identityProviders in a b2cIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 

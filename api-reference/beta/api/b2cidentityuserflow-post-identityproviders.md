@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Add identityProvider to a b2cIdentityUserFlow
+# Add identityProvider to a b2cIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 

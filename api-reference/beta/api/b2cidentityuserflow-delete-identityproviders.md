@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete an identityProvider from a b2cIdentityUserFlow
+# Delete an identityProvider from a b2cIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
