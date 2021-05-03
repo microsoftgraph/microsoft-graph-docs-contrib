@@ -43,7 +43,7 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 ## Request body
 In the request body, supply a JSON representation of the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) object.
 
-The following table shows the properties that are required when you update the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md).
+The following table shows the properties that are accepted when you update the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
