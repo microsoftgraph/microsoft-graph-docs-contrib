@@ -35,9 +35,9 @@ To help you set up the most common identity tasks for your applications, Azure A
 |[List identity providers](../api/b2cidentityuserflow-list-userflowidentityproviders.md)|[identityProvider](../resources/identityProviderbase.md) collection|Retrieve all identity providers in a B2C user flow.|
 |[Add identity provider](../api/b2cidentityuserflow-post-userflowidentityproviders.md)|None|Add an identity provider to a B2C user flow.|
 |[Remove identity provider](../api/b2cidentityuserflow-delete-userflowidentityproviders.md)|None|Remove an identity provider from a B2C user flow|
-|[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md)(deprecated)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2C user flow.|
-|[Add identity provider](../api/b2cidentityuserflow-post-identityproviders.md)(deprecated)|None|Add an identity provider to a B2C user flow.|
-|[Remove identity provider](../api/b2cidentityuserflow-delete-identityproviders.md)(deprecated)|None|Remove an identity provider from a B2C user flow|
+|[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md) (deprecated)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2C user flow.|
+|[Add identity provider](../api/b2cidentityuserflow-post-identityproviders.md) (deprecated)|None|Add an identity provider to a B2C user flow.|
+|[Remove identity provider](../api/b2cidentityuserflow-delete-identityproviders.md) (deprecated)|None|Remove an identity provider from a B2C user flow|
 |[List user attribute assignments](../api/b2cidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2C user flow.|
 |[Create user attribute assignment](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2C user flow.|
 |[List languages](../api/b2cidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a B2C user flow.|
@@ -61,7 +61,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
 |identityProviders|[identityProvider](../resources/identityproviderbase.md) collection|The identity providers included in the user flow.|
-|identityProviders|[identityProvider](../resources/identityprovider.md)(deprecated) collection|The identity providers included in the user flow.|
+|identityProviders (deprecated)|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 |languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.|
 
