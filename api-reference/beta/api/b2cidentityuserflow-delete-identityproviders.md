@@ -1,6 +1,6 @@
 ---
-title: "Delete identityProvider from a b2cIdentityUserFlow"
-description: "Delete an identityProvider from a b2cIdentityUserFlow."
+title: "Delete identityProvider from a b2cIdentityUserFlow (deprecated)"
+description: "Delete an identityProvider from a b2cIdentityUserFlow. (deprecated)"
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"

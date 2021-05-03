@@ -1,6 +1,6 @@
 ---
-title: "List all identityProviders in a b2cIdentityUserFlow"
-description: "List all identityProviders in a b2cIdentityUserFlow."
+title: "List all identityProviders in a b2cIdentityUserFlow (deprecated)"
+description: "List all identityProviders in a b2cIdentityUserFlow. (deprecated)"
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"

@@ -1,6 +1,6 @@
 ---
-title: "Add identityProvider to a b2cIdentityUserFlow"
-description: "Add identityProvider to a b2cIdentityUserFlow."
+title: "Add identityProvider to a b2cIdentityUserFlow (deprecated)"
+description: "Add identityProvider to a b2cIdentityUserFlow. (deprecated)"
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
