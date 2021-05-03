@@ -55,9 +55,11 @@ For general information, see [OData query parameters](/graph/query_parameters).
 |jobid|eq, contains|
 |changeid|eq, contains|
 |cycleid|eq, contains|
+|action|eq, contains|
 |provisioningAction|eq, contains|
 |durationInMilliseconds|eq, gt, lt|
 |provisioningStatusInfo/status|eq, contains|
+|statusInfo/status|eq, contains|
 |sourceSystem/displayName|eq, contains|
 |targetSystem/displayName|eq, contains|
 |sourceIdentity/identityType|eq, contains|

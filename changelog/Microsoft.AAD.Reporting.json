@@ -23,7 +23,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "provisioningSystem",
                 "ChangeType": "Addition",
-                "Description": "Added the [provisioningSystem](https://docs.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-beta) resource type. Replaces the provisioningSystemDetails type. No schema change.",
+                "Description": "Added the [provisioningSystem](https://docs.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-beta) resource type.",
                 "Target": "provisioningSystem"
             },
             {
@@ -47,7 +47,7 @@
                 "ApiChange": "Member",
                 "ChangedApiName": "application",
                 "ChangeType": "Addition",
-                "Description": "Replaced the `app` member to `application` member to the **initiatorType** enumeration.",
+                "Description": "Added the `application` member to the **initiatorType** enumeration.",
                 "Target": "initiatorType"
             },
             {
