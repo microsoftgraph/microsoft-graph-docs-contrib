@@ -61,7 +61,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_b2cUserFlow_list_identityProviders"
+  "name": "get_b2cUserFlow_list_userflowidentityProviders"
 }
 -->
 
