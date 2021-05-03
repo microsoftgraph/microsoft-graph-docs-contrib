@@ -88,7 +88,25 @@
         "Version": "beta",
         "CreatedDateTime": "2021-03-02T19:31:12.323Z",
         "WorkloadArea": "Identity and access",
-        "SubArea": "Identity governance"
-      }
-    ]
-  }
+        "SubArea": "Governance"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id":"067741e8-a14f-11eb-8cb0-33bc249d550e",
+            "ApiChange":"Resource",
+            "ChangedApiName":"accessReviewPolicy",
+            "ChangeType":"Addition",
+            "Description":"Added the [accessReviewPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewPolicy?view=graph-rest-beta) resource type.",
+            "Target":"accessReviewPolicy"
+          }
+        ],
+        "Id": "71941e3b-b555-4bc6-8348-7cf2ddf44350",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-04-27T18:46:20.323Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Governance"
+    }
+  ]
+}
