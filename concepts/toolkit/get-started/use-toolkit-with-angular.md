@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
 }
 ```
 ### Create an app/client ID
-In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD. Make sure you follow all the steps for Msal 2.0 Provider, including adding SID as a token claim.
+In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD. 
 
 ## Add components
 
