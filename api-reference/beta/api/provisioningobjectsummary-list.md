@@ -123,7 +123,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 The following is an example of the response for a successful event.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -275,7 +275,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 The following is an example of the response for a failed provisioning event.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
