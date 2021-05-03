@@ -34,6 +34,8 @@ For a specific user:
 GET /users/{id | userPrincipalName}
 ```
 
+Note that when the **userPrincipalName** begins with a `$` character, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes. For details, see the [known issues](/graph/known-issues#users) list.
+
 For the signed-in user:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -95,7 +97,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+Here is an example of the response. Note: The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
