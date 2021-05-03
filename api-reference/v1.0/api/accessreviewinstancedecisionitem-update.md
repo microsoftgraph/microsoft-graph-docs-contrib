@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 Update the properties of an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) object.
 
->[!NOTE]
->Any updates made to an **accessReviewInstanceDecisionItem** can only be made by calling users who are listed as reviewer for the parent [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|AccessReview.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|**TODO: Provide applicable permissions.**|
+
+Any updates made to an **accessReviewInstanceDecisionItem** can only be made by calling users who are listed as reviewer for the parent [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## HTTP request
 
@@ -47,26 +47,12 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|accessReviewId|String|**TODO: Add Description**|
-|reviewedBy|[userIdentity](../resources/useridentity.md)|**TODO: Add Description**|
-|reviewedDateTime|DateTimeOffset|**TODO: Add Description**|
-|decision|String|**TODO: Add Description**|
-|justification|String|**TODO: Add Description**|
-|appliedBy|[userIdentity](../resources/useridentity.md)|**TODO: Add Description**|
-|appliedDateTime|DateTimeOffset|**TODO: Add Description**|
-|applyResult|String|**TODO: Add Description**|
-|recommendation|String|**TODO: Add Description**|
-|principal|[identity](../resources/identity.md)|**TODO: Add Description**|
-|principalLink|String|**TODO: Add Description**|
-|resource|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|**TODO: Add Description**|
-|resourceLink|String|**TODO: Add Description**|
-
-
+|decision|String|Reviewer's vote on whether the principal should have access to the resource under review. Possible values: `Approve`, `Deny`, or `DontKnow`. Required.|
+|justification|String|Reviewer's reason for decision. Required if `justificationRequiredOnApproval` is true on the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) object in the response body.
+If successful, this method returns a `204 OK` response code.
 
 ## Examples
 
@@ -82,28 +68,8 @@ Content-Type: application/json
 Content-length: 691
 
 {
-  "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-  "accessReviewId": "String",
-  "reviewedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "reviewedDateTime": "String (timestamp)",
-  "decision": "String",
-  "justification": "String",
-  "appliedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "appliedDateTime": "String (timestamp)",
-  "applyResult": "String",
-  "recommendation": "String",
-  "principal": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "principalLink": "String",
-  "resource": {
-    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
-  },
-  "resourceLink": "String"
+  "decision": "Approve",
+  "justification": "Kathleen still needs access to the Marketing group as she works in the Marketing organization."
 }
 ```
 
@@ -116,33 +82,5 @@ Content-length: 691
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-  "id": "8b7ea194-a194-8b7e-94a1-7e8b94a17e8b",
-  "accessReviewId": "String",
-  "reviewedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "reviewedDateTime": "String (timestamp)",
-  "decision": "String",
-  "justification": "String",
-  "appliedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "appliedDateTime": "String (timestamp)",
-  "applyResult": "String",
-  "recommendation": "String",
-  "principal": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "principalLink": "String",
-  "resource": {
-    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
-  },
-  "resourceLink": "String"
-}
+HTTP/1.1 204 No Content
 ```
-
