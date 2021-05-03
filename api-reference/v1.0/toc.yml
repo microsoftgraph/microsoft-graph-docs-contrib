@@ -4476,6 +4476,60 @@ items:
               href: api/identityapiconnector-delete.md    
       - name: Governance
         items:
+        - name: Access reviews
+          href: resources/accessreviewsv2-root.md
+          items:
+          - name: Access review schedule definition
+            href: resources/accessreviewscheduledefinition.md
+            items:
+            - name: List
+              href: api/accessreviewscheduledefinition-list.md
+            - name: Get
+              href: api/accessreviewscheduledefinition-get.md
+            - name: Create
+              href: api/accessreviewscheduledefinition-create.md
+            - name: Delete
+              href: api/accessreviewscheduledefinition-delete.md 
+            - name: Update
+              href: api/accessreviewscheduledefinition-update.md
+            - name: List instances
+              href: api/accessreviewscheduledefinition-list-instances.md
+            - name: Filter by current user
+              href: api/accessreviewscheduledefinition-filterbycurrentuser.md
+          - name: Access review instance
+            href: resources/accessreviewinstance.md
+            items:
+            - name: List
+              href: api/accessreviewinstance-list.md
+            - name: Get
+              href: api/accessreviewinstance-get.md
+            - name: Send reminder
+              href: api/accessreviewinstance-sendreminder.md
+            - name: Stop
+              href: api/accessreviewinstance-stop.md
+            - name: Accept recommendations
+              href: api/accessreviewinstance-acceptrecommendations.md
+            - name: Apply decisions
+              href: api/accessreviewinstance-applydecisions.md
+            - name: Batch record decisions
+              href: api/accessreviewinstance-batchrecorddecisions.md
+            - name: Reset decisions
+              href: api/accessreviewinstance-resetdecisions.md
+            - name: List decisions
+              href: api/accessreviewinstance-list-decisions.md
+            - name: Filter by current user
+              href: api/accessreviewinstance-filterbycurrentuser.md
+          - name: Access review instance decision item
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: List
+              href: api/accessreviewinstancedecisionitem-list.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+            - name: Filter by current user
+              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
           - name: Consent requests
             href: resources/consentrequests-root.md
             items:
