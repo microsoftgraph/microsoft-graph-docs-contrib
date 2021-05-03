@@ -1354,6 +1354,49 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |unknownFutureValue|
 
+### userFlowType values
+
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwner
+| unknownFutureValue
+
+### identityUserFlowAttributeDataType values
+
+| Member                |
+|:----------------------|
+| string                |
+| boolean               |
+| int64                 |
+| stringCollection      |
+| dateTime              |
+| unknownFutureValue    |
+
+### identityUserFlowAttributeType values
+
+| Member                |
+|:----------------------|
+| builtIn               |
+| custom                |
+| required              |
+| unknownFutureValue    |
+
+### identityUserFlowAttributeInputType values
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
+
 ### teamworkActivityTopicSource values 
 
 | Member    |

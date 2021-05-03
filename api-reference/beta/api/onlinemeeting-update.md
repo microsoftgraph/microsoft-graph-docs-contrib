@@ -41,7 +41,7 @@ To update the specified onlineMeeting by meeting ID with application token:
 PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-> **Notes:**
+> [!NOTE]
 > - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
@@ -116,7 +116,7 @@ Content-Type: application/json
 
 #### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
