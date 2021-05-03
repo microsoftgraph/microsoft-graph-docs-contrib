@@ -25,9 +25,12 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 |[Get user flow](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Retrieve properties of a B2X user flow.|
 |[Create user flow](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Create a new B2X user flow.|
 |[Delete user flow](../api/b2xidentityuserflow-delete.md)|None|Delete a B2X user flow.|
-|[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2X user flow.|
-|[Add identity provider](../api/b2xidentityuserflow-post-identityproviders.md)|None|Add an identity provider to a B2X user flow.|
-|[Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a B2X user flow.|
+|[List identity providers](../api/b2xidentityuserflow-list-userflowidentityproviders.md)|[identityProvider](../resources/identityproviderbase.md) collection|Retrieve all identity providers in a B2X user flow.|
+|[Add identity provider](../api/b2xidentityuserflow-post-userflowidentityproviders.md)|None|Add an identity provider to a B2X user flow.|
+|[Remove identity provider](../api/b2xidentityuserflow-delete-userflowidentityproviders.md)|None|Remove an identity provider from a B2X user flow.|
+|[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md) (deprecated)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2X user flow.|
+|[Add identity provider](../api/b2xidentityuserflow-post-identityproviders.md) (deprecated)|None|Add an identity provider to a B2X user flow.|
+|[Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md) (deprecated)|None|Remove an identity provider from a B2X user flow.|
 |[List user attribute assignments](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2X user flow.|
 |[Create user attribute assignment](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2X user flow.|
 |[List languages](../api/b2xidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a B2X user flow.|
@@ -47,7 +50,8 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
-|identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
+|identityProviders|[identityProvider](../resources/identityproviderbase.md) collection|The identity providers included in the user flow.|
+|identityProviders (deprecated)|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 |languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|The languages supported for customization within the user flow. Language customization is enabled by default in B2X user flow. You cannot create custom languages in B2X user flows.|
 
@@ -67,6 +71,7 @@ The following is a JSON representation of the resource.
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
+    "userflowIdentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
     "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],
