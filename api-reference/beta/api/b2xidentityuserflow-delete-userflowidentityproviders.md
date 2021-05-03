@@ -1,13 +1,13 @@
 ---
-title: "Delete identityProvider from b2xIdentityUserFlow (deprecated)"
-description: "Delete an identityProvider from a b2xIdentityUserFlow. (deprecated)"
+title: "Delete identityProvider from b2xIdentityUserFlow"
+description: "Delete an identityProvider from a b2xIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jkdouglas"
+author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete identityProvider from b2xIdentityUserFlow (deprecated)
+# Delete identityProvider from b2xIdentityUserFlow
 
 Namespace: microsoft.graph
 
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /b2xUserFlows/{id}/identityProviders/{id}/$ref
+DELETE /b2xUserFlows/{id}/userflowIdentityProviders/{id}/$ref
 ```
 
 ## Request headers
@@ -58,35 +58,16 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_b2xUserFlows_identityProviders"
+  "name": "delete_b2xUserFlows_userflowIdentityProviders"
 }
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignUp/identityProviders/Facebook-OAUTH/$ref
+DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{userflow-id}/userflowIdentityProviders/{identityProvider-id}/$ref
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2xuserflows-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-b2xuserflows-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-b2xuserflows-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-b2xuserflows-identityproviders-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -100,5 +81,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

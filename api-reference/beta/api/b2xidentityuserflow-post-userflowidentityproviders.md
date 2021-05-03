@@ -1,13 +1,13 @@
 ---
-title: "Add identityProvider to a b2xIdentityUserFlow (deprecated)"
-description: "Add identityProvider in a b2xIdentityUserFlow (deprecated)."
+title: "Add identityProvider to a b2xIdentityUserFlow"
+description: "Add identityProvider in a b2xIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jkdouglas"
+author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Add identityProvider to a b2xIdentityUserFlow (deprecated)
+# Add identityProvider to a b2xIdentityUserFlow
 
 Namespace: microsoft.graph
 
@@ -47,7 +47,7 @@ PATCH /b2xUserFlows/{id}/identityProviders/$ref
 
 ## Request body
 
-In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) you want to add. For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
+In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityproviderbase.md) you want to add. For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
 
 ## Response
 
@@ -59,41 +59,22 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_b2xuserflows_identityprovider"
+  "name": "update_b2xuserflows_userflowidentityprovider"
 }
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders/$ref
+PATCH https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userflowIdentityProviders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-b2xuserflows-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-b2xuserflows-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-b2xuserflows-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-identityprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -107,5 +88,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-
