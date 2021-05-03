@@ -10769,10 +10769,16 @@ items:
              - name: Delete
                href: api/b2cidentityuserflow-delete.md
              - name: List identity providers
-               href: api/b2cidentityuserflow-list-identityproviders.md
+               href: api/b2cidentityuserflow-list-userflowidentityproviders.md
              - name: Add identity provider
-               href: api/b2cidentityuserflow-post-identityproviders.md
+               href: api/b2cidentityuserflow-post-userflowidentityproviders.md
              - name: Remove identity provider
+               href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
+             - name: List identity providers (deprecated)
+               href: api/b2cidentityuserflow-list-identityproviders.md
+             - name: Add identity provider (deprecated)
+               href: api/b2cidentityuserflow-post-identityproviders.md
+             - name: Remove identity provider (deprecated)
                href: api/b2cidentityuserflow-delete-identityproviders.md
              - name: List user attribute assignments
                href: api/b2cidentityuserflow-list-userattributeassignments.md
