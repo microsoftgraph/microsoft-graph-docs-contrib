@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /b2cUserFlows/{id}/userflowIdentityProviders/{id}/$ref
+DELETE /b2cUserFlows/{userflow-id}/userflowIdentityProviders/{identityProvider-id}/$ref
 ```
 
 ## Request headers
@@ -66,7 +66,7 @@ The following is an example of the request.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userflowIdentityProviders/Facebook-OAUTH/$ref
+DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{userflow-id}/userflowIdentityProviders/{identityProvider-id}/$ref
 ```
 
 ### Response
