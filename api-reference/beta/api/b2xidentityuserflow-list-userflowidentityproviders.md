@@ -112,8 +112,9 @@ Content-type: application/json
             "identityProviderType": "Facebook",
             "clientId": "clientIdFromFacebook",
             "clientSecret": "******"
-        }
+        },
         {
+            "@odata.type": "#microsoft.graph.socialIdentityProvider",
             "id": "Google-OAuth",
             "type": "Google",
             "name": "Google",
