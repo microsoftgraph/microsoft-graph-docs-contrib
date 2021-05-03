@@ -1,6 +1,6 @@
 ---
-title: "List all userflow identityProviders in a b2cIdentityUserFlow"
-description: "List all userflow identityProviders in a b2cIdentityUserFlow."
+title: "List all identityProviders in a b2cIdentityUserFlow"
+description: "List all identityProviders in a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
@@ -66,7 +66,7 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders
+GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userflowIdentityProviders
 ```
 
 ### Response
@@ -76,7 +76,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identityProvider"
+  "@odata.type": "microsoft.graph.identityProviderBase"
 } -->
 
 ```http
