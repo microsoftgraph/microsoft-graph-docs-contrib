@@ -117,7 +117,7 @@ Content-length: 800
 
 ### Response
 
-**Note:** Here is an example of the response. The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+**Note:** Here is an example of the response. The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -142,7 +142,6 @@ Content-length: 897
   "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
   "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
   "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
-  "healthCheckStatus": "pending",
-  "inUse": false
+  "healthCheckStatus": "pending"
 }
 ```
