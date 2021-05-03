@@ -117,7 +117,9 @@ Content-length: 244
 If successful, this method returns a `201 Created` response code and the key/value pair `publishingState`: `submitted` in the response body. *See* [teamsappdefinition](../resources/teamsappdefinition.md).
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true
 } -->
 
 ```http
