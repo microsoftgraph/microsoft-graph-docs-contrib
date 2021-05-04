@@ -183,24 +183,6 @@
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "2bfcc8d6-25a0-4a1f-b135-b71a4462c8d4",
-          "ApiChange": "Resource",
-          "ChangedApiName": "externalItem",
-          "ChangeType": "Addition",
-          "Description": "Adding the [externalItem]() resource *@\u0026*.",
-          "Target": "externalItem"
-        }
-      ],
-      "Id": "2bfcc8d6-25a0-4a1f-b135-b71a4462c8d4",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2021-05-01T00:00:00",
-      "WorkloadArea": "Search",
-      "SubArea": ""
     }
   ]
 }
