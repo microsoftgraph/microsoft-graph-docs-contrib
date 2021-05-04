@@ -21,12 +21,12 @@ Inherits from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|inactiveDuration|Duration|Defines the duration of inactivity. Inactivity is based on the last sign in date of the user compared to the access review definition start date.|
+|inactiveDuration|Duration|Defines the duration of inactivity. Inactivity is based on the last sign in date of the user compared to the access review definition start date. If this property is not specified, it's assigned the default value `PT0S`.|
 |query|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 |queryRoot|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 |queryType|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 
-For more information on configuration options using accessReviewInactiveUsersQueryScope, see [configure the scope of your access review definition](/graph/accessreviews-scope-concept).
+You must also specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`. For more information on configuration options using accessReviewInactiveUsersQueryScope, see [configure the scope of your access review definition](/graph/accessreviews-scope-concept).
 
 ## Relationships
 None.

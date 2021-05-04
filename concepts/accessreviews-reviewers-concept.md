@@ -12,7 +12,7 @@ Azure AD [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=gr
 > [!NOTE]
 > The [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
 
-The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true) resource, a property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true).  In addition, you can specificy fallback reviewers using **backupReviewers**, another property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true)
+The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource, a property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true).  In addition, you can specificy fallback reviewers using **backupReviewers**, another property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true)
 
 Note that this property is not required when creating a self-review (where users review their own access).
 
@@ -28,8 +28,7 @@ Example configurations of the **reviewers** or **backupReviewers** property usin
 "reviewers": [
     {
         "query": "/users/{user id}",
-        "queryType": "MicrosoftGraph",
-        "queryRoot": null
+        "queryType": "MicrosoftGraph"
     }
 ]
 ```
@@ -40,8 +39,7 @@ Example configurations of the **reviewers** or **backupReviewers** property usin
 "reviewers": [
     {
         "query": "/groups/{group id}}/transitiveMembers",
-        "queryType": "MicrosoftGraph",
-        "queryRoot": null
+        "queryType": "MicrosoftGraph"
     }
 ]
 ```
@@ -57,7 +55,7 @@ Example configurations of the **reviewers** or **backupReviewers** property usin
 ]
 ```
 
-To specify only a specific group's owners from a specific country as the reviewers, specify as follows:
+To specify only a specific non-guest group's owners from a specific country as the reviewers, specify as follows:
 
 ```http
 "reviewers": [

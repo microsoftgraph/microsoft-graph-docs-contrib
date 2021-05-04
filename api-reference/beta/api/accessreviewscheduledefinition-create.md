@@ -145,18 +145,8 @@ Content-type: application/json
 
 {
     "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
-    "displayName": "Test create",
-    "createdDateTime": "0001-01-01T00:00:00Z",
-    "lastModifiedDateTime": "0001-01-01T00:00:00Z",
     "status": "NotStarted",
-    "descriptionForAdmins": "Test create",
-    "descriptionForReviewers": "Test create",
     "instanceEnumerationScope": null,
-    "createdBy": {
-        "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
-        "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@contoso.com"
-    },
     "scope": {
         "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
         "queryType": "MicrosoftGraph"
@@ -169,14 +159,8 @@ Content-type: application/json
         }
     ],
     "settings": {
-        "mailNotificationsEnabled": true,
-        "reminderNotificationsEnabled": true,
-        "justificationRequiredOnApproval": true,
-        "defaultDecisionEnabled": false,
-        "defaultDecision": "None",
         "instanceDurationInDays": 1,
         "autoApplyDecisionsEnabled": false,
-        "recommendationsEnabled": true,
         "recurrence": {
             "pattern": {
                 "type": "weekly",
@@ -205,8 +189,8 @@ Content-type: application/json
 This is an example of creating an access review with the following settings:
 + The review reviews all teams with inactive guest users. The period of inactivity is 30 days from the start date of the access review.
 + The group owners are the reviewers and backup reviewers are assigned.
-+ It recurs on the first Tuesday and last Thursday of every month and continues indefinitely.
-+ **autoApplyDecisionsEnabled** is set to `true`.
++ It recurs on the third day of every quarter and continues indefinitely.
++ **autoApplyDecisionsEnabled** is set to `true` with the **defaultDecision** set to `Deny`.
 
 ### Request
 In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
@@ -216,8 +200,57 @@ In the request body, supply a JSON representation of the [accessReviewScheduleDe
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+Content-type: application/json
 
-
+{
+  "displayName": "Review inactive guests on teams",
+  "descriptionForAdmins": "Control guest user access to our teams.",
+  "descriptionForReviewers": "Information security is everyone's responsibility. Review our access policy for more.",
+  "instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "queryType": "MicrosoftGraph"
+  },
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph",
+    "inactiveDuration": "P30D"
+    },
+  "reviewers": [
+    {
+      "query": "./owners",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": "decisions"
+    }
+  ],
+  "backupReviewers": [
+    {
+      "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "queryType": "MicrosoftGraph"
+    }
+  ],
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "recommendationsEnabled": true,
+    "instanceDurationInDays": 3,
+    "recurrence": {
+      "pattern": {
+        "type": "absoluteMonthly",
+        "dayOfMonth": "5",
+        "interval": 3
+      },
+      "range": {
+        "type": "noEnd",
+        "startDate": "2020-05-04T00:00:00.000Z"
+      }
+    },
+    "defaultDecisionEnabled": true,
+    "defaultDecision": "Deny",
+    "autoApplyDecisionsEnabled": true
+  }
+}
 ```
 
 ### Response
@@ -231,16 +264,62 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 HTTP/1.1 201 Created
 Content-type: application/json
 
-
-
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
+  "id": "b0966e21-a01e-43c9-8f8b-9ba30ed5710a",
+  "status": "Active",
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph",
+    "queryRoot": null,
+    "inactiveDuration": "P30D"
+  },
+  "instanceEnumerationScope": {},
+  "reviewers": [
+    {
+      "query": "./owners",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": "decisions"
+    }
+  ],
+  "backupReviewers": [
+    {
+      "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": null
+    }
+  ],
+  "fallbackReviewers": [],
+  "settings": {
+    "recurrence": {
+      "pattern": {
+        "type": "absoluteMonthly",
+        "interval": 3,
+        "month": 0,
+        "dayOfMonth": 5,
+        "daysOfWeek": [],
+        "firstDayOfWeek": "sunday",
+        "index": "first"
+      },
+      "range": {
+        "type": "noEnd",
+        "numberOfOccurrences": 0,
+        "recurrenceTimeZone": null,
+        "startDate": "2020-05-04",
+        "endDate": null
+      }
+    }
+  }
+}
 ```
 
-## Example 3: Create an access review of all users to one M365 group and one Azure AD role
+## Example 3: Create an access review of all users to a service principal
 
 This is an example of creating an access review with the following settings:
-+ The review reviews user access to a specific application.
-+ The people managers are the reviewers and backup reviewers are all users with the role of Application Administrator.
-+ It recurs on the first Tuesday and last Thursday of every month and continues indefinitely.
++ The review reviews user access to a service principal.
++ The people managers are the reviewers and backup reviewers are the members of a group.
++ It recurs semi-annually and ends 1 year from the startDate.
 
 ### Request
 <!-- {
@@ -248,7 +327,71 @@ This is an example of creating an access review with the following settings:
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
 }-->
 ```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+Content-type: application/json
 
+{
+  "displayName": "Review employee access to LinkedIn",
+  "descriptionForAdmins": "Review employee access to LinkedIn",
+  "scope": {
+    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/users",
+        "queryType": "MicrosoftGraph"
+      }
+    ],
+    "resourceScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
+        "queryType": "MicrosoftGraph"
+      }
+    ]
+  },
+  "reviewers": [
+    {
+      "query": "./manager",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": "decisions"
+    }
+  ],
+  "backupReviewers": [
+    {
+      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+      "queryType": "MicrosoftGraph"
+    }
+  ],
+  "fallbackReviewers": [
+    {
+      "query": "/v1.0/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+      "queryType": "MicrosoftGraph"
+    }
+  ],
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": true,
+    "defaultDecision": "Recommendation",
+    "instanceDurationInDays": 180,
+    "autoApplyDecisionsEnabled": true,
+    "recommendationsEnabled": true,
+    "recurrence": {
+      "pattern": {
+        "type": "absoluteMonthly",
+        "interval": 6,
+        "dayOfMonth": 0
+      },
+      "range": {
+        "type": "numbered",
+        "startDate": "2021-05-05",
+        "endDate": "2022-05-05"
+      }
+    }
+  }
+}
 ```
 
 ### Response
@@ -262,8 +405,71 @@ This is an example of creating an access review with the following settings:
 HTTP/1.1 201 Created
 Content-type: application/json
 
-
-
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
+  "id": "1f79f34b-8667-40d9-875c-893b630b3dec",
+  "scope": {
+    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/users",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
+      }
+    ],
+    "resourceScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
+      }
+    ]
+  },
+  "reviewers": [
+    {
+      "query": "./manager",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": "decisions"
+    }
+  ],
+  "backupReviewers": [
+    {
+      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": null
+    }
+  ],
+  "fallbackReviewers": [
+    {
+      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": null
+    }
+  ],
+  "settings": {
+    "instanceDurationInDays": 180,
+    "recurrence": {
+      "pattern": {
+        "type": "absoluteMonthly",
+        "interval": 6,
+        "month": 0,
+        "dayOfMonth": 0,
+        "daysOfWeek": [],
+        "firstDayOfWeek": "sunday",
+        "index": "first"
+      },
+      "range": {
+        "type": "numbered",
+        "numberOfOccurrences": 0,
+        "recurrenceTimeZone": null,
+        "startDate": "2021-05-05",
+        "endDate": "2022-05-05"
+      }
+    }
+  }
+}
 ```
 
 
