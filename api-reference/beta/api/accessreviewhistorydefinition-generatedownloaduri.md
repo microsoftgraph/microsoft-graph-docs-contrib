@@ -1,6 +1,6 @@
 ---
 title: "accessReviewHistoryDefinition: generateDownloadUri"
-description: "Generates a uri which can be used to retrieve review history data."
+description: "Generate a URI that can be used to retrieve review history data."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generates a uri which can be used to retrieve review history data for the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md). This URI is valid for 1 day and can be retrieved by fetching the downloadUri property from the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md) object.
+Generate a URI that can be used to retrieve review history data for the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md). This URI is valid for one day and can be retrieved by fetching the **downloadUri** property from the associated [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md) object.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) in the response body.
+If successful, this action returns a `200 OK` response code and an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) in the response body.
 
 ## Examples
 
@@ -63,7 +63,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDe
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
