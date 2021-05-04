@@ -137,7 +137,7 @@
                 "ChangeType": "Change",
                 "Description": "Deprecated the [statusBase](https://docs.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta). This is to be replaced by the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
                 "Target": "statusBase"
-            },
+            }
         ],
         "Id": "f4ed8281-9779-11eb-8cb0-33bc249d550e",
         "Cloud": "prd",
