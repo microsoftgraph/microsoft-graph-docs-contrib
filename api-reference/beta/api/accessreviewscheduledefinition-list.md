@@ -52,7 +52,7 @@ This method supports the following OData query parameters to help customize the 
 The `$filter` query parameter with the `contains` operator is supported on the **scope** property of the accessReviewScheduleDefinition. The request statement will take on the following format:
 
 ```http
-GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}'
+GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
 ```
 
 where the value of `{object}` can be one of the following:
@@ -228,7 +228,7 @@ Content-type: application/json
             },
             "instanceEnumerationScope": {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and id ne '02f3bafb-448c-487c-88c2-5fd65ce49a41' and id ne '072ac5f4-3f13-4088-ab30-0a276f3e6322' and id ne '0fbf2921-5d17-4c2b-bae4-cc581de72c13' and id ne '19d30368-b67e-41e8-9cc1-b372bd494e15')&$count=true",
+                "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true",
                 "queryType": "MicrosoftGraph"
             },
             "reviewers": [
