@@ -3,7 +3,7 @@ title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on the Microsoft Graph changes."
 localization_priority: Priority
 author: "Jumaodhiss"
-ms.prod: ""change-notifications"
+ms.prod: "change-notifications"
 doc_type: apiPageType
 ---
 
@@ -151,7 +151,7 @@ The following are valid values for the resource property of the subscription:
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
