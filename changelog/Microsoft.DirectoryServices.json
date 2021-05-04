@@ -3,11 +3,29 @@
     {
       "ChangeList": [
         {
+          "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the guestUserRoleId property to [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) to specify the role granted to guest users.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-05-03T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "dfddb103-d5a3-4ed3-b27f-b0d95945c7d2",
           "ApiChange": "Permission",
           "ChangedApiName": "accessReviews",
           "ChangeType": "Addition",
-          "Description": "Added Policy.ReadWrite.All permission.",
+          "Description": "Added Policy.ReadWrite.AccessReviews permission.",
           "Target": "accessReviews"
         }
       ],
