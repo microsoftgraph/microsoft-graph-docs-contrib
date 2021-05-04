@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# Student resource type
+# educationStudent resource type
 
 Namespace: microsoft.graph
 
