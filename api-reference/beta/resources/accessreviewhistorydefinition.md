@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An accessReviewHistoryDefinition represents a collection of access review history data and the scopes used to collect that data. A accessReviewHistoryDefinition's reviewHistoryPeriodStartDateTime, reviewHistoryPeriodEndDateTime, decisions, and scopes properties are used when selecting review history data and all can be modified. Each accessReviewHistoryDefinition object is only available for 30 days.
+An accessReviewHistoryDefinition represents a collection of access review history data and the scopes used to collect that data. A accessReviewHistoryDefinition's reviewHistoryPeriodStartDateTime, reviewHistoryPeriodEndDateTime, decisions, and scopes properties are used when selecting review history data and all can be modified. Each accessReviewHistoryDefinition object is only available for 30 days. Once a history definition's status has moved to `done` a link can be generated to retrieve the definition's data by calling [generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md).
 
 ## Methods
 |Method|Return type|Description|

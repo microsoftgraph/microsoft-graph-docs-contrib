@@ -67,7 +67,7 @@
                     "Target": "accessReviewScope"
                 },
                 {
-                    "Id": "d8e85d06-7b8d-11eb-8d30-85f45032d4a1",
+                    "Id": "d8d2da25-7b8d-11eb-8d30-85f45032d4a1",
                     "ApiChange": "Property",
                     "ChangedApiName": "queryType",
                     "ChangeType": "Deletion",
@@ -75,7 +75,7 @@
                     "Target": "accessReviewScope"
                 },
                 {
-                    "Id": "384cf6be-81f0-11eb-9fc2-269673f51d94",
+                    "Id": "d8d2da25-7b8d-11eb-8d30-85f45032d4a1",
                     "ApiChange": "Method",
                     "ChangedApiName": "batchRecordDecisions",
                     "ChangeType": "Addition",
@@ -99,19 +99,9 @@
                     "ChangeType": "Addition",
                     "Description": "Added the [accessReviewPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewPolicy?view=graph-rest-beta) resource type.",
                     "Target": "accessReviewPolicy"
-                }
-            ],
-            "Id": "71941e3b-b555-4bc6-8348-7cf2ddf44350",
-            "Cloud": "prd",
-            "Version": "beta",
-            "CreatedDateTime": "2021-04-27T18:46:20.323Z",
-            "WorkloadArea": "Identity and access",
-            "SubArea": "Governance"
-        },
-        {
-            "ChangeList": [
+                },
                 {
-                    "Id": "067741e8-a14f-11eb-8cb0-33bc249d550e",
+                    "Id": "71941e3b-b555-4bc6-8348-7cf2ddf44350",
                     "ApiChange": "Resource",
                     "ChangedApiName": "accessReviewPolicy",
                     "ChangeType": "Addition",
@@ -129,7 +119,7 @@
         {
             "ChangeList": [
                 {
-                    "Id": "854b8211-8d9a-11eb-a57c-31dcdef91872",
+                    "Id": "8549217c-8d9a-11eb-a57c-31dcdef91872",
                     "ApiChange": "Relationship",
                     "ChangedApiName": "historyDefinitions",
                     "ChangeType": "Addition",
@@ -137,7 +127,7 @@
                     "Target": "accessReviewSet"
                 },
                 {
-                    "Id": "854dea27-8d9a-11eb-a57c-31dcdef91872",
+                    "Id": "8549217c-8d9a-11eb-a57c-31dcdef91872",
                     "ApiChange": "Resource",
                     "ChangedApiName": "accessReviewHistoryDefinition",
                     "ChangeType": "Addition",
@@ -145,7 +135,7 @@
                     "Target": "accessReviewHistoryDefinition"
                 },
                 {
-                    "Id": "8555fe07-8d9a-11eb-a57c-31dcdef91872",
+                    "Id": "8549217c-8d9a-11eb-a57c-31dcdef91872",
                     "ApiChange": "Method",
                     "ChangedApiName": "generateDownloadUri",
                     "ChangeType": "Addition",

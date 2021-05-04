@@ -59,7 +59,7 @@ The following table shows the required properties used to create an [accessRevie
 
 ### Supported scope queries for accessReviewHistoryDefinition
 
-The following are queries supported on an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) based on the [accessreviewqueryscope](../resources/accessreviewqueryscope.md). This dictates which type of review history data is included.
+The following are queries supported on an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) based on the [accessreviewqueryscope](../resources/accessreviewqueryscope.md). These scopes dictate which type of review history data is included in the downloadable CSV file which is generated when the definition is created.
 
 |Scenario| Query |
 |--|--|
