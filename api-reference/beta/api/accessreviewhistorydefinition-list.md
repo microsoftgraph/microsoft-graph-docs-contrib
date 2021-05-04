@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Retrieve the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) objects created in the last 30 days, including all nested properties.
 
 >[!NOTE]
->The default page size for this API is 100 accessReviewHistoryDefinitions objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+>The default page size for this API is 100 **accessReviewHistoryDefinitions** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 >
 >If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AccessReview.ReadWrite.All|
 
-If the signed-in user is not a Global Admin directory role member or a Global Reader directory role member, then only the definitions which the signed-in user has created will be returned.
+If the signed-in user is not a Global Admin directory role member or a Global Reader directory role member, only the definitions that the signed-in user created will be returned.
 
 ## HTTP request
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
