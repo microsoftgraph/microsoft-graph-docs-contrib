@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object by its identifier. All of the properties of the access review history definition object are returned. If the download link is still valid it is returned along with the definition. If the definition is 30 days or older a 404 is returned.
+Retrieve an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object by its identifier. All of the properties of the access review history definition object are returned. If the download link is still valid, it is returned along with the definition. If the definition is 30 days or older, a 404 error is returned.
 
 ## Permissions
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +90,7 @@ Content-Type: application/json
   "status": "done",
   "createdDateTime": "2021-04-14T00:22:48.9392594Z",
   "fulfilledDateTime": "2021-04-14T00:22:58.5276552Z",
-  "downloadUri": "https://dfermconsolreportusc.blob.core.windows.net/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
+  "downloadUri": "https://contoso.com/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
   "createdBy": {
     "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
     "displayName": "MOD Administrator",

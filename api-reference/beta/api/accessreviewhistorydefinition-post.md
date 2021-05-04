@@ -64,10 +64,11 @@ The following are queries supported on an [accessReviewHistoryDefinition](../res
 |Scenario| Query |
 |--|--|
 | Include every `accessReviewScheduleDefinition` review result on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users) | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')" |
-| Include every `accessReviewScheduleDefinition` review result on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users) | /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups/{group id}') |
-| Include every `accessReviewScheduleDefinition` review result scoped to all Microsoft 365 groups with guest users | /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members') |
-| Include every `accessReviewScheduleDefinition` review result on an access package | /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'accessPackageAssignments') |
-| Include every `accessReviewScheduleDefinition` review result for service principals assigned to privileged role | /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'roleAssignmentScheduleInstances') |
+| Include every `accessReviewScheduleDefinition` review result on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users) | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups/{group id}') |
+| Include every `accessReviewScheduleDefinition` review result scoped to all Microsoft 365 groups with guest users | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, './members') |
+| Include every `accessReviewScheduleDefinition` review result on an access package | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments') |
+| Include every `accessReviewScheduleDefinition` review result for service principals assigned to privileged role | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'roleAssignmentScheduleInstances') |
+| Include every `accessReviewScheduleDefinition` review result for reivews of a specific group | /identityGovernance/accessReviews/definitions?$filter=scope/query eq '/groups/a1382a9b-8320-4e9c-8f73-dfead37d7723/members' |
 
 ## Response
 
@@ -75,7 +76,7 @@ If successful, this method returns a `201 Created` response code and an [accessR
 
 ## Examples
 
-This is an example of creating an access review history definition which is scoped to access package and group reviews starting and ending on or between 01/01/2021 and 04/05/2021.
+The following example shows how to create an access review history definition scoped to access reviews on access packages and groups, running between the start date of 01/01/2021 and end date of 04/05/2021.
 
 ### Request
 <!-- {
@@ -117,7 +118,7 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -166,4 +167,3 @@ Content-Type: application/json
   ]
 }
 ```
-

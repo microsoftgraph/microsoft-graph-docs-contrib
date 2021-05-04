@@ -12,10 +12,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) objects which have been created in the last 30 days. A list of zero or more accessReviewHistoryDefinitions objects are returned, including all of their nested properties.
+Retrieve the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) objects created in the last 30 days, including all nested properties.
 
 >[!NOTE]
->If many **accessReviewHistoryDefinitions** are returned, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the $top query parameter with a page size of at most 100, and the $skip=0 query parameter in the request. When a result set spans multiple pages, Microsoft Graph returns that page with an @odata.nextLink property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.
+>The default page size for this API is 100 **accessReviewHistoryDefinitions** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 >
 >If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AccessReview.ReadWrite.All|
 
-If the signed-in user is not a Global Admin directory role member or a Global Reader directory role member then only the definitions which the signed-in user has created will be returned.
+If the signed-in user is not a Global Admin directory role member or a Global Reader directory role member, only the definitions that the signed-in user created will be returned.
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ GET /identityGovernance/accessReviews/historyDefinitions
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. Supported OData query parameters include `$top`, `$filter`, and `$skip`. For general information, see [OData query parameters](/graph/query-parameters). 
+This method supports the `$top`, `$filter`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
 
 ## Request headers
 |Name|Description|
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +101,7 @@ Content-Type: application/json
       "status": "done",
       "createdDateTime": "2021-04-14T00:22:48.9392594Z",
       "fulfilledDateTime": "2021-04-14T00:22:58.5276552Z",
-      "downloadUri": "https://dfermconsolreportusc.blob.core.windows.net/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
+      "downloadUri": "https://contoso.com/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
       "createdBy": {
         "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
         "displayName": "MOD Administrator",
@@ -125,4 +125,3 @@ Content-Type: application/json
   ]
 }
 ```
-
