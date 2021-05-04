@@ -7096,6 +7096,129 @@
       "CreatedDateTime": "2021-03-30T00:00:00",
       "WorkloadArea": "Identity and access",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2cIdentityUserFlow",
+          "ChangeType": "change",
+          "Description": "Add support to the new identityProvider relationship in the b2c identity userflow.",
+          "Target": "b2cIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2xIdentityUserFlow",
+          "ChangeType": "change",
+          "Description": "Add support to the new identityProvider relationship in the b2x identity userflow.",
+          "Target": "b2xIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "change",
+          "Description": "Deprecate the list identityProviders in a b2cIdentityUserFlow based on the old API.",
+          "Target": "b2cIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "Add",
+          "ChangeType": "change",
+          "Description": "Deprecate the add identityProviders in a b2cIdentityUserFlow based on the old API.",
+          "Target": "b2cIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "change",
+          "Description": "Deprecate the delete identityProviders in a b2cIdentityUserFlow based on the old API.",
+          "Target": "b2cIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "add",
+          "ChangeType": "Addition",
+          "Description": "Add support to add identityProviders in b2cIdentityUserFlow based on the new [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta) API.",
+          "Target": "b2cIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "list",
+          "ChangeType": "Addition",
+          "Description": "Add support to list identityProviders in b2cIdentityUserFlow based on the new [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta) API.",
+          "Target": "b2cIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Add support to delete identityProviders in b2cIdentityUserFlow based on the new [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta) API.",
+          "Target": "b2cIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "list",
+          "ChangeType": "change",
+          "Description": "Deprecate the list identityProviders in a b2cIdentityUserFlow based on the old API.",
+          "Target": "b2xIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "add",
+          "ChangeType": "change",
+          "Description": "Deprecate the add identityProviders in a b2cIdentityUserFlow based on the old API.",
+          "Target": "b2xIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "change",
+          "Description": "Deprecate the delete identityProviders in a b2cIdentityUserFlow based on the old API.",
+          "Target": "b2xIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "add",
+          "ChangeType": "Addition",
+          "Description": "Add support to add identityProviders in b2xIdentityUserFlow based on the new [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta) API.",
+          "Target": "b2xIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "list",
+          "ChangeType": "Addition",
+          "Description": "Add support to list identityProviders in b2xIdentityUserFlow based on the new [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta) API.",
+          "Target": "b2xIdentityUserFlow"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Add support to delete identityProviders in b2xIdentityUserFlow based on the new [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta) API.",
+          "Target": "b2xIdentityUserFlow"
+        }
+      ],
+      "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-03T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
     }
+
   ]
 }
