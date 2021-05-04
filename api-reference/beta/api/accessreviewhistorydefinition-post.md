@@ -76,7 +76,7 @@ If successful, this method returns a `201 Created` response code and an [accessR
 
 ## Examples
 
-This is an example of creating an access review history definition scoped to access reviews on access packages and groups, running between the start date of 01/01/2021 and end date of 04/05/2021.
+The following example shows how to create an access review history definition scoped to access reviews on access packages and groups, running between the start date of 01/01/2021 and end date of 04/05/2021.
 
 ### Request
 <!-- {
@@ -118,7 +118,7 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
