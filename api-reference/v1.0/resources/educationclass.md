@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# Class resource type
+# educationClass resource type
 
 Namespace: microsoft.graph
 
@@ -23,14 +23,14 @@ Inherits from [entity](../resources/entity.md).
 | [Create educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | Create a new [educationClass](../resources/educationclass.md) object.                                |
 | [Get educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Read the properties and relationships of an [educationClass](../resources/educationclass.md) object. |
 | [Update educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Update the properties of an [educationClass](../resources/educationclass.md) object.                 |
-| [Delete educationClass](../api/educationclass-delete.md) | None                                                        | Deletes an [educationClass](../resources/educationclass.md) object.                                  |
+| [Delete educationClass](../api/educationclass-delete.md) | None                                                        | Delete an [educationClass](../resources/educationclass.md) object.                                  |
 | [delta](../api/educationclass-delta.md)                  | [educationClass](../resources/educationclass.md) collection | Get incremental changes to the resource collection.                                                  |
 
 ## Properties
 
 | Property             | Type                                           | Description                                                        |
 | :------------------- | :--------------------------------------------- | :----------------------------------------------------------------- |
-| id                   | String                                         | Object identifier. Inherited from [entity](../resources/entity.md) |
+| id                   | String                                         | Object identifier. Inherited from [entity](../resources/entity.md). |
 | displayName          | String                                         | Name of the class.                                                 |
 | mailNickname         | String                                         | Mail name for sending email to all members, if this is enabled.    |
 | description          | String                                         | Description of the class.                                          |
@@ -47,7 +47,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Relationship | Type                                                          | Description                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
-| group        | [group](../resources/group.md)                                | The underlying Microsoft 365 Group object.                |
+| group        | [group](../resources/group.md)                                | The underlying Microsoft 365 group object.                |
 | members      | [educationUser](../resources/educationuser.md) collection     | All users in the class. Nullable.                         |
 | schools      | [educationSchool](../resources/educationschool.md) collection | All schools that this class is associated with. Nullable. |
 | teachers     | [educationUser](../resources/educationuser.md) collection     | All teachers in the class. Nullable.                      |
