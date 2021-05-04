@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An accessReviewHistoryDefinition represents a collection of access review history data and the scopes used to collect that data. A accessReviewHistoryDefinition's reviewHistoryPeriodStartDateTime, reviewHistoryPeriodEndDateTime, decisions, and scopes properties are used when selecting review history data and all can be modified. Each accessReviewHistoryDefinition object is only available for 30 days.
+Represents a collection of access review history data and the scopes used to collect that data. The **reviewHistoryPeriodStartDateTime**, **reviewHistoryPeriodEndDateTime**, **decisions**, and **scopes** properties of an **accessReviewHistoryDefinition** are used when selecting review history data, and can be modified. Each **accessReviewHistoryDefinition** object is only available for 30 days.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List accessReviewHistoryDefinitions](../api/accessreviewhistorydefinition-list.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) collection|Get a list of the [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) objects and their properties.|
-|[Create accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-create.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Create a new [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
+|[Create accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-post.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Create a new [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
 |[Get accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Read the properties and relationships of an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
-|[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generates a uri which can be used to retrieve review history data.|
+|[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generate a URI that can be used to retrieve review history data.|
 
 ## Properties
 |Property|Type|Description|
@@ -31,7 +31,7 @@ An accessReviewHistoryDefinition represents a collection of access review histor
 |decisions|String collection|Determines which review decisions will be included in the fetched review history data if specified. Optional on create. All decisions will be included by default if no decisions are provided on create. Possible values are: `approve`, `deny`, `dontKnow`, `notReviewed`, and `notNotified`.|
 |displayName|String|Name for the access review history data collection. Required.|
 |downloadUri|String|Uri which can be used to retrieve review history data. This URI will be active for 24 hours after being generated.|
-|fulfilledDateTime|DateTimeOffset|Timestamp when all of the available data for this definition was collected. This will be set once this definition's status is set to `done`.|
+|fulfilledDateTime|DateTimeOffset|Timestamp when all of the available data for this definition was collected. This will be set after this definition's status is set to `done`.|
 |id|String|The assigned unique identifier of an access review history definition.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews starting on or after this date will be included in the fetched history data. Required.|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|Timestamp, reviews starting on or before this date will be included in the fetched history data. Required.|
