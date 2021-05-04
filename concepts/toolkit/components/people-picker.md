@@ -7,7 +7,7 @@ author: elisenyang
 
 # People-Picker component in the Microsoft Graph Toolkit
 
-You can use the `mgt-people-picker` web component to search for people and/or groups. By default, the component will search for all people and users in the organization, but you can change the behavior to also search for groups, or only groups. You can also filter the search to a specific group.
+You can use the `mgt-people-picker` web component to search for people and/or groups. By default, the component will search for all people and users in the organization, but you can change the behavior to also search for groups, or only groups. You can also filter the search to a specific group. Additionally, you can include email addresses of people that are not in your contact list.
 
 ## Example
 
@@ -34,6 +34,7 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | default-selected-user-ids | defaultSelectedUserIds | When provided a string of comma-separated Microsoft Graph user IDs, the component renders the respective users as selected upon initialization.
 | selection-mode | selectionMode | Used to indicate whether to allow selecting multiple items (users or groups) or just a single item. Available options are: `single`, `multiple`. Default value is `multiple`.
 | disabled | disabled | Sets whether the people picker is disabled. When disabled, the user is not able to search or select people.
+| allow-any-email | allowAnyEmail | Indicates whether the people picker can accept email addresses that are not in your contact list. Default value is `false`.
 
 The following is a `show-max` example.
 
