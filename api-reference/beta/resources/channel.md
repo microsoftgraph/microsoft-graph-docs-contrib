@@ -105,9 +105,7 @@ The following is a JSON representation of the resource.
   "webUrl": "string",
   "membershipType": "channelMembershipType",
   "createdDateTime": "string (timestamp)",
-  "moderationSettings": {
-    "@odata.type": "microsoft.graph.channelModerationSettings"
-  }
+  "moderationSettings": { "@odata.type": "microsoft.graph.channelModerationSettings" }
 }
 ```
 

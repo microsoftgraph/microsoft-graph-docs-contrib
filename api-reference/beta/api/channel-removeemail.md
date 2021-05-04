@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove the provisioned email of a [channel](../resources/channel.md).
-In Microsoft Teams, users can set up a *system generated* email address for a Channel that can be used to send messages to a Channel via the email address.
+In Microsoft Teams, users can set up a *system generated* email address for a channel that can be used to send messages to a channel via the email address.
 
 To remove a channel's provisioned email address, it must have first been provisioned using the API to [provision channel email](channel-provisionemail.md) or through the Microsoft Teams client.
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels/{id}/removeEmail
+POST /teams/{team-id}/channels/{channel-id}/removeEmail
 ```
 ## Request headers
 | Header        | Value                     |
