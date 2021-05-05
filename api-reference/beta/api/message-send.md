@@ -20,8 +20,7 @@ The draft message can be a new message [draft](../api/user-post-messages.md), [r
 Alternatively, [send a new message](../api/user-sendmail.md) in a single operation.
 
 ## Permissions
-
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+This API requires one of the following permissions. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

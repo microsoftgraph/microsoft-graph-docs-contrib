@@ -1,6 +1,6 @@
 ---
 title: "message: forward"
-description: "Forward a message. The message is saved in the Sent Items folder."
+description: "Forward a message using either JSON or MIME format."
 author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
@@ -11,16 +11,18 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Forward a [message](../resources/message.md) in either JSON or MIME format. The **message** is saved in the Sent Items folder.
+Forward a [message](../resources/message.md) using either JSON or MIME format.
 
 Alternatively, [create a draft to forward a message](../api/message-createforward.md) and send it later.
 
 When using MIME format:
-- Microsoft Graph does not support editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
-- S/MIME properties can be included in the base64-encoded string.
+- Provide the complete MIME content in a **base64-encoded string** in the request body. Microsoft Graph does not support editing MIME properties individually.
+- Include S/MIME properties as part of the **base64-encoded string**.
+
+This method saves the **message** in the **Sent Items** folder.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+This API requires one of the following permissions. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -40,7 +42,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 | Name       | Type | Description| 
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required |
-| Content-Type | string  | Nature of the data in the body of an entity.  Required. <br/> Use text/plain for MIME content and application/json for a JSON object|
+| Content-Type | string  | Nature of the data in the body of an entity.  Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
 
 ## Request body
 When using JSON format, provide a JSON object in the request body with the following parameters.
@@ -50,11 +52,12 @@ When using JSON format, provide a JSON object in the request body with the follo
 |comment|String|A comment to include. Can be an empty string.|
 |toRecipients|[Recipient](../resources/recipient.md) collection|The list of recipients.|
 
-When using MIME format no parameters are required, include only the MIME content as **a Base64-encoded string** in the request body.
+When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body. Do not include parameters.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
 
 ## Examples
 ### Example 1: Forward a message using JSON format
@@ -137,7 +140,9 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-If the MIME content in the request body is malformed, this method returns the following error message.
+If the request body includes malformed MIME content, this method returns the following error message.
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 400 Bad Request

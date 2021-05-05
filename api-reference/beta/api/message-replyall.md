@@ -1,6 +1,6 @@
 ---
 title: "message: replyAll"
-description: "Reply to all recipients of a message by specifying a comment and modifying any updateable properties "
+description: "Reply to all recipients of a message using either JSON or MIME format."
 author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
@@ -13,21 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reply to all recipients of a message in either JSON or MIME format. The message is then saved in the Sent Items folder.
-
-Alternatively, [create a draft to reply-all to a message](../api/message-createreplyall.md), and [send](../api/message-send.md) it later.
+Reply to all recipients of a message using either JSON or MIME format.
 
 When using JSON format:
 - Add a comment or modify any updateable properties of the [message](/graph/api-reference/beta/resources/message.md) in a single **replyAll** call 
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 
 When using MIME format:
-- Microsoft Graph does not support editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
-- S/MIME properties can be included in the base64-encoded string.
+- Provide the complete MIME content in a **base64-encoded string** in the request body. Microsoft Graph does not support editing MIME properties individually.
+- Include S/MIME properties as part of the **base64-encoded string**.
+
+This method saves the message in the **Sent Items** folder.
+
+Alternatively, [create a draft to reply-all to a message](../api/message-createreplyall.md), and [send](../api/message-send.md) it later.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+This API requires one of the following permissions. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -47,7 +49,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required|
-| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use text/plain for MIME content and application/json for a JSON object|
+| Content-Type | string  | Nature of the data in the body of an entity. Required <br/> Use `application/json` for a JSON object and `text/plain` for MIME content |
 
 ## Request body
 When using JSON format, provide a JSON object with the following parameters.
@@ -57,11 +59,12 @@ When using JSON format, provide a JSON object with the following parameters.
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-encoded string** in the request body.
+When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body. Do not include parameters.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
 
 ## Examples
 ### Example 1: Reply-all to a message in JSON format
@@ -132,7 +135,22 @@ HTTP/1.1 202 Accepted
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/replyAll
 Content-Type: text/plain
 
-RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQE0zNjV4NzY1MTQwLk9uTWljcm9zb2Z0LmNvbT4KVG86IE1lZ2FuIEJvd2VuIDxNZWdhbkJATTM2NXg3NjUxNDAuT25NaWNyb3NvZnQuY29tPgpTdWJqZWN0OiBJbnRlcm5hbCBSZXN1bWUgU3VibWlzc2lvbjogU2FsZXMgQXNzb2NpYXRlClRocmVhZC1Ub3BpYzogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNhbGVzIEFzc29jaWF0ZQpUaHJlYWQtSW5kZXg6IEFRSFhEdCtMcHRGck4rcUg3VUdCUTliRlNyMWtjdz09CkRhdGU6IFN1biwgMjggRmViIDIwMjEgMDc6MTU6MDAgKzAwMDAKTWVzc2FnZS1JRDoKCTxNV0hQUjEzMDFNQjIxOTExMDIxNEQ3NkQ5QzI4MjI2MjI3OUFEOUE5QE1XSFBSMTMwMU1CMjE5MS5uYW1wcmQxMy5wcm9kLm91dGxvb2suY29tPgpDb250ZW50LUxhbmd1YWdlOiBlbi1VUwpYLU1TLUhhcy1BdHRhY2g6ClgtTVMtVE5FRi1Db3JyZWxhdG9yOgpYLU1TLUV4Y2hhbmdlLU9yZ2FuaXphdGlvbi1SZWNvcmRSZXZpZXdDZm1UeXBlOiAwCkNvbnRlbnQtVHlwZTogdGV4dC9wbGFpbjsgY2hhcnNldD0iaXNvLTg4NTktMSIKQ29udGVudC1UcmFuc2Zlci1FbmNvZGluZzogcXVvdGVkLXByaW50YWJsZQpNSU1FLVZlcnNpb246IDEuMAoKSGksIE1lZ2FuLgoKSSBoYXZlIGFuIGludGVyZXN0IGluIHRoZSBTYWxlcyBBc3NvY2lhdGUgcG9zaXRpb24uIFBsZWFzZSBjb25zaWRlciBteSByZXN1PQptZSwgd2hpY2ggeW91IGNhbj0yMAphY2Nlc3MgaGVyZS4uLgoKaHR0cHM6Ly9teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9hbGV4d19vbm1pY3Jvc29mdF9jb20vX2xheW91dHMvMTUvZ3Vlc3RhPQpjY2Vzcy5hc3B4P2d1ZXN0YWNjZXNzdG9rZW49M0RFamEwejglMmZnJTJmJTJiMW5LVjg0anc4b0V1c2Nkd0xHM1AxOHViWk5COXM9CjBEMmMlM2QmZG9jaWQ9M0QxMzUwMTQwMTczOGFiNDgxYmFmOTQ4NTNjNGFjOTM2NWYmcmV2PTNEMQoKQmVzdCBSZWdhcmRzLApBbGV4
+RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQGNvbnRvc28uY29tPgpUbzogTWVnYW4gQm93ZW4gPE1l
+Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
+bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM6IEludGVybmFsIFJlc3VtZSBTdWJtaXNzaW9uOiBT
+YWxlcyBBc3NvY2lhdGUKVGhyZWFkLUluZGV4OiBjb2RlY29kZWNvZGVoZXJlaGVyZWhlcmUKRGF0
+ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCArMDAwMApNZXNzYWdlLUlEOgoJPE1XSFBSMTMw
+MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
+cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
+OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1FeGNoYW5nZS1Pcmdhbml6YXRpb24tUmVjb3Jk
+UmV2aWV3Q2ZtVHlwZTogMApDb250ZW50LVR5cGU6IHRleHQvcGxhaW47IGNoYXJzZXQ9Imlzby04
+ODU5LTEiCkNvbnRlbnQtVHJhbnNmZXItRW5jb2Rpbmc6IHF1b3RlZC1wcmludGFibGUKTUlNRS1W
+ZXJzaW9uOiAxLjAKCkhpLCBNZWdhbi4KCkkgaGF2ZSBhbiBpbnRlcmVzdCBpbiB0aGUgU2FsZXMg
+QXNzb2NpYXRlIHBvc2l0aW9uLiBQbGVhc2UgY29uc2lkZXIgbXkgcmVzdT0KbWUsIHdoaWNoIHlv
+dSBjYW49MjAKYWNjZXNzIGhlcmUuLi4KCmh0dHBzOi8vbXkuc2hhcmVwb2ludC5jb20vcGVyc29u
+YWwvYWxleHdfb25taWNyb3NvZnRfY29tL19sYXlvdXRzLzE1L2d1ZXN0YT0KY2Nlc3MuYXNweD9n
+dWVzdGFjY2Vzc3Rva2VuPTAwMDAwMDAwMDAwMDAwMDAwMDAKCkJlc3QgUmVnYXJkcywKQWxleA==
+
 
 ```
 ##### Response
@@ -146,7 +164,9 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-If the MIME content in the request body is malformed, this method returns the following error message.
+If the request body includes malformed MIME content, this method returns the following error message.
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 400 Bad Request

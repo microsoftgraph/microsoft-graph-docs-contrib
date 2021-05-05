@@ -1,6 +1,6 @@
 ---
 title: "message: send"
-description: "Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or"
+description: "Send an existing draft message."
 localization_priority: Priority
 author: "abheek-das"
 ms.prod: "outlook"
@@ -13,13 +13,14 @@ Namespace: microsoft.graph
 
 Send an existing draft message. 
 
-The draft message can be a new message [draft](../api/user-post-messages.md), [reply draft](../api/message-createreply.md), [reply-all draft](../api/message-createreplyall.md), or a [forward draft](../api/message-createforward.md). The message is then saved in the Sent Items folder.
+The draft message can be a new message [draft](../api/user-post-messages.md), [reply draft](../api/message-createreply.md), [reply-all draft](../api/message-createreplyall.md), or a [forward draft](../api/message-createforward.md).
+
+This method saves the message in the **Sent Items** folder.
 
 Alternatively, [send a new message](../api/user-sendmail.md) in a single operation.
 
 ## Permissions
-
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+This API requires one of the following permissions. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -20,17 +20,17 @@ Supported MIME features:
 
 > [!IMPORTANT]
 > * S/MIME provides two key features: digital signatures for verification of sender and email contents, and message encryption for preventing third parties from viewing email contents.
-> * S/MIME digital signatures and encrypted contents can only be added to email in their MIME message format.
+> * Add S/MIME digital signatures and encrypted contents to emails only in their MIME message format.
 
 Visit the documentation about [getting MIME content of a message](../concepts/outlook-get-mime-message.md) for more information about MIME.
 
 ## Details
-There are two supported formarts for creating a [message](/graph/api-reference/v1.0/resources/message.md): (1) JSON metadata (2) MIME content. The selected format should be specified in the request header.
+There are two supported formarts for creating a [message](/graph/api-reference/v1.0/resources/message.md): (1) JSON metadata (2) MIME content. Specify the selected format in the request header.
 
-1. If `Content-Type: application/json` is specified in the header, JSON metadata should be specified in the request body.
-2. If `Content-Type: text/plain` is specified in the header, MIME content should be specified in the request body.
+1. Specify `Content-Type: application/json` to use JSON format in the request body.
+2. Specify `Content-Type: text/plain` to use MIME format in the request body.
 
-When specifying the body in MIME format no parameters are required, provide the MIME content as **a Base64-encoded string** in the request body.
+When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body. Do not include parameters.
 
 ## Use cases
 | Use cases | Resources |
