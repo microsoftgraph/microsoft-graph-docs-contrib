@@ -561,6 +561,88 @@
             "CreatedDateTime": "2021-04-05T19:40:43.984Z",
             "WorkloadArea": "Calendar",
             "SubArea": ""
+          },
+          {
+            "ChangeList": [
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Method",
+                "ChangedApiName": "filterByCurrentUser",
+                "ChangeType": "Addition",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-filterByCurrentUser?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "c50f5d69-8d09-4912-9e9f-c3c12a045509",
+                "ApiChange": "Method",
+                "ChangedApiName": "resetDecisions",
+                "ChangeType": "Addition",
+                "Description": "Added the [resetDecisions](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-resetDecisions?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "ba5b2d2e-be5b-4286-8c74-9ae7e8eb8598",
+                "ApiChange": "Method",
+                "ChangedApiName": "filterByCurrentUser",
+                "ChangeType": "Addition",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewInstanceDecisionItem-filterByCurrentUser?view=graph-rest-1.0) method to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "b224bb00-2560-45cb-9a46-ccd5fe45f540",
+                "ApiChange": "Method",
+                "ChangedApiName": "Get",
+                "ChangeType": "Addition",
+                "Description": "Added the [Get](https://docs.microsoft.com/en-us/graph/api/accessReviewInstanceDecisionItem-get?view=graph-rest-1.0) method to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "42b0b108-359f-4fd2-b413-e8f04625a912",
+                "ApiChange": "Method",
+                "ChangedApiName": "filterByCurrentUser",
+                "ChangeType": "Addition",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewScheduleDefinition-filterByCurrentUser?view=graph-rest-1.0) method to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewScheduleDefinition"
+              },
+              {
+                "Id": "f675e983-a73a-4636-a347-43b304e232fe",
+                "ApiChange": "Property",
+                "ChangedApiName": "principalLink",
+                "ChangeType": "Addition",
+                "Description": "Added the **principalLink** property to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "22468fbc-8578-4e00-bcdc-3651627a0574",
+                "ApiChange": "Property",
+                "ChangedApiName": "resourceLink",
+                "ChangeType": "Addition",
+                "Description": "Added the **resourceLink** property to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "55fabf4b-a3c7-4422-b0fc-6bcbf744f571",
+                "ApiChange": "Property",
+                "ChangedApiName": "displayName",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **displayName** property from the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "d4a214f6-79f8-4c43-9417-1b1a6d2d257f",
+                "ApiChange": "Property",
+                "ChangedApiName": "fallbackReviewers",
+                "ChangeType": "Addition",
+                "Description": "Added the **fallbackReviewers** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              }
+            ],
+            "Id": "49ebf6ed-e100-40e8-812f-781f58b264ce",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-04-05T19:40:43.984Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Identity governance"
           }
     ]
 }
