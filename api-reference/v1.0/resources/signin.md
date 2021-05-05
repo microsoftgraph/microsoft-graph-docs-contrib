@@ -29,7 +29,7 @@ Details user and application sign-in activity for a tenant (directory). You must
 |clientAppUsed|String|Identifies the legacy client used for sign-in activity.  Includes `Browser`, `Exchange Active Sync`, `modern clients`, `IMAP`, `MAPI`, `SMTP`, and `POP`. Supports `$filter` (`eq` operator only).|
 |conditionalAccessStatus|conditionalAccessStatus| Reports status of an activated conditional access policy. Possible values are: `success`, `failure`, `notApplied`, and `unknownFutureValue`. Supports `$filter` (`eq` operator only).|
 |correlationId|String|The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity. Supports `$filter` (`eq` operator only).|
-|createdDateTime|DateTimeOffset|Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as `2014-01-01T00:00:00Z`. Supports `$filter` (`eq`, `le`, and `ge` operators only).|
+|createdDateTime|DateTimeOffset|Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as `2014-01-01T00:00:00Z`. Supports `$orderby` and `$filter` (`eq`, `le`, and `ge` operators only).|
 |deviceDetail|[deviceDetail](devicedetail.md)|Device information from where the sign-in occurred; includes device ID, operating system, and browser. Supports `$filter` (`eq` and `startsWith` operators only) on **browser** and **operatingSytem** properties. |
 |id|String|Unique ID representing the sign-in activity. Supports `$filter` (`eq` operator only).|
 |ipAddress|String|IP address of the client used to sign in. Supports `$filter` (`eq` and `startsWith` operators only).|
