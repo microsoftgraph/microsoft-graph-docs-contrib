@@ -38,7 +38,10 @@ The authentication method APIs are used to manage a user's authentication method
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|An email address can be user by a user as part of the Self-Service Password Reset (SSPR) process.|See a user's authentication email address. Add, update, or remove an email address to a user.|
 |[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business is a passwordless sign-in method on Windows devices.|See devices where a user has enabled Windows Hello for Business sign-in. Delete a Windows Hello for Business credential.|
 |[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials. | Set a new Temporary Access Pass on a user.|
-
+|Hardware Token (Not yet supported) | Hardware Tokens allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a Hardware Token assigned to a user.|
+|Software Token (Not yet supported) | Software Tokens allow users to perform multifactor authentication using an application that supporters the OATH specification and provides a one-time code. | Get and delete a Software Token assigned to a user.|
+|Security Questions and Answers (Not yet supported) | Security Questions and Answers allow users to validate their identity when performing a Self-service Password Reset. |Delete a Security Qustion a user registered.|
+|Default Method (Not yet supported) | Represents the method the user has selected as defaul for performing Multi-factor Authentication.| Change a user's default MFA method|
 
 ## Next steps
 
