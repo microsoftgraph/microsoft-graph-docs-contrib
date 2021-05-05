@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.provisionChannelEmailResult"
+    "@odata.type": "#microsoft.graph.provisionChannelEmailResult",
     "email": "1df8f174.teamsgraph.onmicrosoft.com@amer.teams.ms"
 }
 ```
