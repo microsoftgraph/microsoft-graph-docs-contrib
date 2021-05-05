@@ -1,41 +1,51 @@
 ---
-title: "Update educationUser"
-description: "Update the properties of an educationUser object."
+title: "Create educationUser"
+description: "Create a new educationUser object."
 author: "mlafleur"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Update educationUser
+# Create educationUser
 
 Namespace: microsoft.graph
 
-Update the properties of an [educationUser](../resources/educationuser.md) object.
+Create a new [educationUser](../resources/educationuser.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Not supported.  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | EduRoster.ReadWrite.All                     |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
 ```http
-PATCH /education/me
-PATCH /education/users/{id}
+POST /education/users
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+
+In the request body, supply a JSON representation of the [educationUser](../resources/educationuser.md) object.
+
+The following table shows the properties that are required when you create the [educationUser](../resources/educationuser.md).
 
 | Property             | Type                                                               | Description                                                                                                                                                                                                                                                                                                                                                 |
 | :------------------- | :----------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -58,7 +68,7 @@ In the request body, supply the values for relevant fields that should be update
 | passwordPolicies     | String                                                             | Specifies password policies for the user. This value is an enumeration with one possible value being "DisableStrongPassword", which allows weaker passwords than the default policy to be specified. "DisablePasswordExpiration" can also be specified. The two can be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword". |
 | passwordProfile      | [passwordProfile](../resources/passwordprofile.md)                 | Specifies the password profile for the user. The profile contains the user's password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.                                                        |
 | preferredLanguage    | String                                                             | The preferred language for the user. Should follow ISO 639-1 Code; for example, "en-US".                                                                                                                                                                                                                                                                    |
-| primaryRole          | educationUserRole                                                  | Default role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `none`, `unknownFutureValue`.                                                                                                                                                                                                |
+| primaryRole          | educationUserRole                                                  | Default role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `none`.                                                                                                                                                                                                                      |
 | provisionedPlans     | [provisionedPlan](../resources/provisionedplan.md) collection      | The plans that are provisioned for the user. Read-only. Not nullable.                                                                                                                                                                                                                                                                                       |
 | residenceAddress     | [physicalAddress](../resources/physicaladdress.md)                 | Address where user lives.                                                                                                                                                                                                                                                                                                                                   |
 | student              | [educationStudent](../resources/educationstudent.md)               | If the primary role is student, this block will contain student specific data.                                                                                                                                                                                                                                                                              |
@@ -69,104 +79,164 @@ In the request body, supply the values for relevant fields that should be update
 | userType             | String                                                             | A string value that can be used to classify user types in your directory, such as "Member" and "Guest". Supports $filter.                                                                                                                                                                                                                                   |
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated [educationUser](../resources/educationuser.md) object in the response body.
-## Example
-##### Request
-Here is an example of the request.
 
-# [HTTP](#tab/http)
+If successful, this method returns a `201 Created` response code and an [educationUser](../resources/educationuser.md) object in the response body.
+
+## Examples
+
+### Request
+
 <!-- {
   "blockType": "request",
-  "name": "update_educationuser"
-}-->
+  "name": "create_educationuser_from_"
+}
+-->
+
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
-Content-type: application/json
-Content-length: 508
+POST https://graph.microsoft.com/v1.0/education/users
+Content-Type: application/json
+Content-length: 1585
 
 {
-  "displayName": "Rogelio Cazares",
-  "givenName": "Rogelio",
-  "middleName": "Fernando",
-  "surname": "Cazares",
+  "@odata.type": "#microsoft.graph.educationUser",
+  "primaryRole": "String",
+  "middleName": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
+  "residenceAddress": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
+  "mailingAddress": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
+  "student": {
+    "@odata.type": "microsoft.graph.educationStudent"
+  },
+  "teacher": {
+    "@odata.type": "microsoft.graph.educationTeacher"
+  },
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "accountEnabled": "Boolean",
+  "assignedLicenses": [
+    {
+      "@odata.type": "microsoft.graph.assignedLicense"
+    }
+  ],
+  "assignedPlans": [
+    {
+      "@odata.type": "microsoft.graph.assignedPlan"
+    }
+  ],
+  "businessPhones": [
+    "String"
+  ],
+  "department": "String",
+  "displayName": "String",
+  "givenName": "String",
+  "mail": "String",
+  "mailNickname": "String",
+  "mobilePhone": "String",
+  "passwordPolicies": "String",
+  "passwordProfile": {
+    "@odata.type": "microsoft.graph.passwordProfile"
+  },
+  "officeLocation": "String",
+  "preferredLanguage": "String",
+  "provisionedPlans": [
+    {
+      "@odata.type": "microsoft.graph.provisionedPlan"
+    }
+  ],
+  "refreshTokensValidFromDateTime": "String (timestamp)",
+  "showInAddressList": "Boolean",
+  "surname": "String",
+  "usageLocation": "String",
+  "userPrincipalName": "String",
+  "userType": "String",
+  "onPremisesInfo": {
+    "@odata.type": "microsoft.graph.educationOnPremisesInfo"
+  }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Response
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+> **Note:** The response object shown here might be shortened for readability.
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationUser"
-} -->
+}
+-->
+
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 508
+HTTP/1.1 201 Created
+Content-Type: application/json
 
 {
-  "id": "13020",
-  "displayName": "Rogelio Cazares",
-  "givenName": "Rogelio",
-  "middleName": "Fernando",
-  "surname": "Cazares",
-  "mail": "rogelioC@contoso.com",
-  "mobilePhone": "+1 (253) 555-0101",
-  "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-  },
-  "externalSource": "sis",
-  "mailingAddress": {
-        "city": "Los Angeles",
-        "countryOrRegion": "United States",
-        "postalCode": "98055",
-        "state": "CA",
-        "street": "12345 Main St."
-      },
-  "primaryRole": "string",
+  "@odata.type": "#microsoft.graph.educationUser",
+  "id": "90eedea1-dea1-90ee-a1de-ee90a1deee90",
+  "primaryRole": "String",
+  "middleName": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
   "residenceAddress": {
-        "city": "Los Angeles",
-        "countryOrRegion": "United States",
-        "postalCode": "98055",
-        "state": "CA",
-        "street": "12345 Main St."
-      },
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
+  "mailingAddress": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
   "student": {
-      "primaryRole": "student",
-      "externalId": "13005",
-      "birthDate": "2001-01-01T00:00:00Z"
+    "@odata.type": "microsoft.graph.educationStudent"
+  },
+  "teacher": {
+    "@odata.type": "microsoft.graph.educationTeacher"
+  },
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "accountEnabled": "Boolean",
+  "assignedLicenses": [
+    {
+      "@odata.type": "microsoft.graph.assignedLicense"
     }
+  ],
+  "assignedPlans": [
+    {
+      "@odata.type": "microsoft.graph.assignedPlan"
+    }
+  ],
+  "businessPhones": [
+    "String"
+  ],
+  "department": "String",
+  "displayName": "String",
+  "givenName": "String",
+  "mail": "String",
+  "mailNickname": "String",
+  "mobilePhone": "String",
+  "passwordPolicies": "String",
+  "passwordProfile": {
+    "@odata.type": "microsoft.graph.passwordProfile"
+  },
+  "officeLocation": "String",
+  "preferredLanguage": "String",
+  "provisionedPlans": [
+    {
+      "@odata.type": "microsoft.graph.provisionedPlan"
+    }
+  ],
+  "refreshTokensValidFromDateTime": "String (timestamp)",
+  "showInAddressList": "Boolean",
+  "surname": "String",
+  "usageLocation": "String",
+  "userPrincipalName": "String",
+  "userType": "String",
+  "onPremisesInfo": {
+    "@odata.type": "microsoft.graph.educationOnPremisesInfo"
+  }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update educationuser",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->
