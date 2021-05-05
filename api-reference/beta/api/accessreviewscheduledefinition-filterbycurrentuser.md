@@ -68,7 +68,7 @@ Returns all review definitions where the calling user is a reviewer.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/filterByCurrentUser(on='reviewer')
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/filterByCurrentUser(on='reviewer')
 ```
 
 
