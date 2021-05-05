@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleAssignmentMultiple resource type"
-description: "A role assignment is the link between a role definition and a principal at a particular scope for the purpose of granting access."
+description: "A role definition assigned to an array of principals (typically a user) over an array of scope."
 localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "directory-management"
@@ -39,9 +39,6 @@ Providing either **directoryScopeIds** or **appScopeIds** is required.
 | principalIds | String collection | Identifiers of the principals to which the assignment is granted.  Supports `$filter` (`any` operator only). |
 | directoryScopeIds | String collection | Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only. |
 | appScopeIds | String collection | Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. App scopes are scopes that are defined and understood by this application only. |
-
-
-## Relationships
 
 ## Relationships
 
