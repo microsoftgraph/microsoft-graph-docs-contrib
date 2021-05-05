@@ -115,7 +115,7 @@ Content-type: application/json
   "mfaDetail": null,
   "status": {
     "errorCode": 0,
-    "failureReason": null
+    "failureReason": null,
     "additionalDetails": null
   },
   "deviceDetail": {
