@@ -1,29 +1,26 @@
 ---
-title: "statusDetails resource type"
+title: "provisioningErrorInfo resource type"
 description: "Describes the status of the provisioning event and the associated errors."
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# statusDetails resource type (deprecated)
+# provisioningErrorInfo resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
->[!CAUTION] 
-> The statusDetails API is deprecated and will stop returning data om December 31, 2021. Please use the new [provisioningStatusInfo](provisioningstatusinfo.md) type.
 
-Describes the status of the provisioning event and the associated errors. It is inherited from [statusBase](/graph/api/resources/statusbase) and only used when status is set to `failure`.  
+Describes the status of the provisioning event and the associated errors. 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|statusBase|Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`. Inherited from statusBase.|
 |additionalDetails|String|Additional details in case of error.|
-|errorCategory|String|Categorizes the error code. Possible values are `Failure`, `NonServiceFailure`, `Success`.|
+|errorCategory|String|Categorizes the error code. Possible values are `failure`, `nonServiceFailure`, `success`, `unknownFutureValue`|
 |errorCode|String|Unique error code if any occurred. [Learn more](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |reason|String|Summarizes the status and describes why the status happened.|
 |recommendedAction|String|Provides the resolution for the corresponding error.|
@@ -37,13 +34,12 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.statusDetails",
-  "baseType": "microsoft.graph.statusBase"
+  "@odata.type": "microsoft.graph.provisioningErrorInfo",
+  "baseType": null
 }-->
 
 ```json
 {
-  "status": "failure",
   "additionalDetails": "String",
   "errorCategory": "String",
   "errorCode": "String",
@@ -56,7 +52,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "statusDetails resource",
+  "description": "provisioningErrorInfo resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

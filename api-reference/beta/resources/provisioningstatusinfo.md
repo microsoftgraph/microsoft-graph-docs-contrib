@@ -1,19 +1,17 @@
 ---
-title: "statusBase resource type"
+title: "provisioningStatusInfo resource type"
 description: "Describes the status of the provisioning summary event."
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# statusBase resource type (deprecated)
+# provisioningStatusInfo resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
->[!CAUTION] 
-> The statusBase API is deprecated and will stop returning data om December 31, 2021. Please use the new [provisioningStatusInfo](provisioningstatusinfo.md) type.
 
 Describes the status of the provisioning summary event. 
 
@@ -21,7 +19,8 @@ Describes the status of the provisioning summary event.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|provisioningResult| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
+|status|String| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
+|errorInfo|[provisioningErrorInfo](provisioningerrorinfo.md)| If status is not success/ skipped details for the error are contained in this.|
 
 ## JSON representation
 
@@ -32,21 +31,21 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.statusBase",
+  "@odata.type": "microsoft.graph.provisioningStatusInfo",
   "baseType": null
 }-->
 
 ```json
 {
-  "status": "String"
-}
+  "status": "String",
+  "errorinfo": {"@odata.type": "microsoft.graph.provisioningErrorInfo"},}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "statusBase resource",
+  "description": "provisioningStatusInfo resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
