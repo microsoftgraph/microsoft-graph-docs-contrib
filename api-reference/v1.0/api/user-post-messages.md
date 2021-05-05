@@ -325,7 +325,7 @@ Content-type: application/json
     "id": "AAMkADA1MTAAAAqldOAAA=",
     "createdDateTime": "2021-04-23T18:13:44Z",
     "lastModifiedDateTime": "2021-04-23T18:13:44Z",
-    "changeKey": "AAAAAAAAAAAA00aaaa000aaA,
+    "changeKey": "AAAAAAAAAAAA00aaaa000aaA",
     "categories": [],
     "receivedDateTime": "2021-04-23T18:13:44Z",
     "sentDateTime": "2021-02-28T07:15:00Z",
