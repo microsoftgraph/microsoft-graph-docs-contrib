@@ -39,17 +39,10 @@ GET /identityGovernance/accessReviews/definitions
 ```
 
 ## Optional query parameters
-This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$top`, `$skip`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-|Parameter|Description|Example|
-|:---     |:---       |:---   |
-|$select  |Returns only specified properties for an object.|identityGovernance/accessReviews/definitions?$select=scope,instanceEnumerationScope,reviewers|
-|$top  |Sets the page size of results. Use together with $skip to paginate your results.|/identityGovernance/accessReviews/definitions?$top=100&$skip=0|
-|$skip  |Specify the number of results to skip at the start of the collection.|/identityGovernance/accessReviews/definitions?$top=100&$skip=100|
-|$filter  |Retrieve only a subset of the collection.|/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'groups'|
-
-### Use of the $filter query parameter
-The `$filter` query parameter with the `contains` operator is supported on the **scope** property of the accessReviewScheduleDefinition. The request statement will take on the following format:
+### Use the $filter query parameter
+The `$filter` query parameter with the `contains` operator is supported on the **scope** property of accessReviewScheduleDefinition. The request statement will take on the following format:
 
 ```http
 GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
@@ -57,13 +50,13 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 where the value of `{object}` can be one of the following:
 
-|Value of {object}|Scenario|Example|
-|:---     |:---       |:---   |
-|`/groups`  |List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).|Example|
-|`/groups/{group id}`  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|Example|
-|`./members`  |List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.|Example|
-|`accessPackageAssignments`  |List every accessReviewScheduleDefinition on an access package.|Example|
-|`roleAssignmentScheduleInstances`  |List every accessReviewScheduleDefinition for service principals assigned to privileged role.|Example|
+|Value of {object}|Description|
+|:---     |:---       |
+|`/groups`  |List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).|
+|`/groups/{group id}`  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|
+|`./members`  |List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.|
+|`accessPackageAssignments`  |List every accessReviewScheduleDefinition on an access package.|
+|`roleAssignmentScheduleInstances`  |List every accessReviewScheduleDefinition for service principals assigned to privileged role.|
 
 Note that `$filter` is currently not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.
 
@@ -124,16 +117,6 @@ Content-type: application/json
         {
             "id": "98dcebed-c7f6-46f4-bcf3-4a3fccdb3e2a",
             "displayName": "Access Review",
-            "createdDateTime": "2020-09-09T14:27:59Z",
-            "lastModifiedDateTime": "2020-09-11T12:02:50Z",
-            "status": "InProgress",
-            "descriptionForAdmins": "",
-            "descriptionForReviewers": "",
-            "createdBy": {
-                "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@contoso.com"
-            },
             "scope": {
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
                 "queryType": "MicrosoftGraph"
@@ -213,14 +196,7 @@ Content-type: application/json
         {
             "id": "cc701697-762c-439a-81f5-f58d680fde76",
             "displayName": "Review guest access across Microsoft 365 groups",
-            "createdDateTime": "2021-04-27T15:37:16.6224103Z",
-            "lastModifiedDateTime": "2021-04-27T15:37:37.1173507Z",
             "status": "InProgress",
-            "createdBy": {
-                "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@contoso.com"
-            },
             "scope": {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
                 "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",

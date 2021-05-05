@@ -23,13 +23,13 @@ The resources to review are configured in the **scope** property of the access r
 In this article, you will use these types of accessReviewScope to configure a wide range of Azure AD resources as the scope of your access review. This can help you to automate proactive review and keep control over access to resources in your organization.  
 
 
-## Use accessReviewQueryScope to configure scope
+### Use accessReviewQueryScope to configure scope
 
 To configure the scope using the accessReviewQueryScope type, set the values of its **query**, **queryRoot**, and **queryType** properties. [See the accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true) resource for descriptions of these properties.
 
 Example configurations of the **scope** property using the accessReviewQueryScope include the following:
 
-### Example 1: Review all users assigned to a group
+#### Example 1: Review all users assigned to a group
 
 ```http
 "scope": {
@@ -49,7 +49,7 @@ To review *only inactive users* assigned to the group, specify as follows:
 }
 ````
 
-### Example 2: Review guest users assigned to a group
+#### Example 2: Review guest users assigned to a group
 
 ```http
 "scope": {
@@ -59,7 +59,7 @@ To review *only inactive users* assigned to the group, specify as follows:
 }
 ```
 
-### Example 3: Review guest users assigned to all groups
+#### Example 3: Review guest users assigned to all groups
 
 ```http
 "scope": {
@@ -69,7 +69,7 @@ To review *only inactive users* assigned to the group, specify as follows:
 }
 ```
 
-### Example 4: Review guest users assigned to all Microsoft 365 groups
+#### Example 4: Review guest users assigned to all Microsoft 365 groups
 
 ```http
 "instanceEnumerationScope": {
@@ -83,9 +83,9 @@ To review *only inactive users* assigned to the group, specify as follows:
 }
 ```
 
-Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** object to specify the Microsoft 365 groups to review. If the **instanceEnumerationScope** object is not specified, this configuration is similar to [Example 3](/graph/accessreviews-scope-concept#example-3-review-guest-users-assigned-to-all-groups).
+Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review. If this property is not specified, this configuration is similar to [Example 3](/graph/accessreviews-scope-concept#example-3-review-guest-users-assigned-to-all-groups).
 
-### Example 5: Review access of all inactive guest users to all groups
+#### Example 5: Review access of all inactive guest users to all groups
 
 ```http
 "scope": {
@@ -96,9 +96,9 @@ Because this review is applied on all Microsoft 365 groups, configure the **inst
 }
 ```
 
-Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource, which inherits from the **accessReviewQueryScope**. You must specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`.
+Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`.
 
-### Example 6: Review of all inactive guest users assigned to all teams
+#### Example 6: Review of all inactive guest users assigned to all teams
 
 ```http
 "instanceEnumerationScope": {
@@ -113,9 +113,9 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 }
 ```
 
-Because this review is applied on all teams, configure the **instanceEnumerationScope** object to specify all teams.
+Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams.
 
-### Example 7: Review of Entitlement Management access package assignment
+#### Example 7: Review of Entitlement Management access package assignment
 
 ```http
 "scope": {
@@ -125,7 +125,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-### Example 8: Review of service principals assigned to privileged roles 
+#### Example 8: Review of service principals assigned to privileged roles 
 
 ```http
 "scope": {
@@ -135,13 +135,13 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-## Use principalResourceMembershipsScope to configure scope
+### Use principalResourceMembershipsScope to configure scope
 
-The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the accessReviewScheduleDefinition. This includes reviewing access for multiple principals or groups of principals to multiple resources.
+The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition**. This includes reviewing access for multiple principals or groups of principals to multiple resources.
 
-Example configurations of the **scope** property using the principalResourceMembershipsScope include the following:
+Example configurations of the **scope** property using **principalResourceMembershipsScope** include the following:
 
-### Example 1: Review access of all inactive guest users to a service principal
+#### Example 1: Review access of all inactive guest users to a service principal
 
 ```http
 "scope": {
@@ -166,7 +166,7 @@ Example configurations of the **scope** property using the principalResourceMemb
 
 In this example, the principals are all inactive guest users with the period of their inactivity calculated as 30 days from the start date of the **accessReviewScheduleDefinition**.
 
-### Example 2: Review access of all guest users to a directory role
+#### Example 2: Review access of all guest users to a directory role
 
 ```http
 "scope": {
