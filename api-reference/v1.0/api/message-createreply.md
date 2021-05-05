@@ -95,7 +95,6 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,6 +118,7 @@ Content-length: 248
   "bodyPreview": "bodyPreview-value"
 }
 ```
+
 ### Example 2: Create a draft message in MIME format to reply to an existing message
 ##### Request
 <!-- {
@@ -136,6 +136,7 @@ bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM6IEludGVybmFsIFJlc3VtZSBTdWJtaXNzaW9uOiBT
 YWxlcyBBc3NvY2lhdGUKVGhyZWFkLUluZGV4OiBjb2RlY29kZWNvZGVoZXJlaGVyZWhlcmUKRGF0
 ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCA
 ```
+
 ##### Response
 Here is an example of the response.
 <!-- {
