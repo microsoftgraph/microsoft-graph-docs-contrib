@@ -3,6 +3,144 @@
       {
         "ChangeList": [
             {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Relationship",
+                "ChangedApiName": "provisioning",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioning** relationship to the [auditLogRoot](https://docs.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-1.0) resource.",
+                "Target": "auditLogRoot"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningObjectSummary",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningServicePrincipal",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/provisioningServicePrincipal?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningServicePrincipal"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "initiator",
+                "ChangeType": "Addition",
+                "Description": "Added the [initiator](https://docs.microsoft.com/en-us/graph/api/resources/initiator?view=graph-rest-1.0) resource type.",
+                "Target": "initiator"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningSystem",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningSystem](https://docs.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningSystem"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "detailsInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [detailsInfo](https://docs.microsoft.com/en-us/graph/api/resources/detailsInfo?view=graph-rest-1.0) resource type.",
+                "Target": "detailsInfo"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisionedIdentity",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisionedIdentity](https://docs.microsoft.com/en-us/graph/api/resources/provisionedIdentity?view=graph-rest-1.0) resource type.",
+                "Target": "provisionedIdentity"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningStatusInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningStatusInfo"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningErrorInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningErrorInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningErrorInfo?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningErrorInfo"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningStep",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningStep](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStep?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningStep"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "identity",
+                "ChangeType": "Addition",
+                "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource type.",
+                "Target": "identity"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "initiatorType",
+                "ChangeType": "Addition",
+                "Description": "Added the **initiatorType** enumeration type.",
+                "Target": "initiatorType"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningResult",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningResult** enumeration type.",
+                "Target": "provisioningResult"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningStatusErrorCategory",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningStatusErrorCategory** enumeration type.",
+                "Target": "provisioningStatusErrorCategory"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningAction",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningAction** enumeration type.",
+                "Target": "provisioningAction"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningStepType",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningStepType** enumeration type.",
+                "Target": "provisioningStepType"
+            }
+        ],
+        "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-05-05T17:42:41.613Z",
+        "WorkloadArea": "Reports and audit",
+        "SubArea": "Identity and access reports"
+      },
+      {
+        "ChangeList": [
+            {
                 "Id": "f4efe15e-9779-11eb-8cb0-33bc249d550e",
                 "ApiChange": "Property",
                 "ChangedApiName": "provisioningAction",
@@ -143,144 +281,6 @@
         "Cloud": "prd",
         "Version": "beta",
         "CreatedDateTime": "2021-05-04T08:19:22.097Z",
-        "WorkloadArea": "Reports and audit",
-        "SubArea": "Identity and access reports"
-    },
-    {
-        "ChangeList": [
-            {
-                "Id": "3b9d595d-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Relationship",
-                "ChangedApiName": "provisioning",
-                "ChangeType": "Addition",
-                "Description": "Added the **provisioning** relationship to the [auditLogRoot](https://docs.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-1.0) resource.",
-                "Target": "auditLogRoot"
-            },
-            {
-                "Id": "3b9fbff4-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Resource",
-                "ChangedApiName": "provisioningObjectSummary",
-                "ChangeType": "Addition",
-                "Description": "Added the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-1.0) resource type.",
-                "Target": "provisioningObjectSummary"
-            },
-            {
-                "Id": "3ba229db-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Resource",
-                "ChangedApiName": "provisioningServicePrincipal",
-                "ChangeType": "Addition",
-                "Description": "Added the [provisioningServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/provisioningServicePrincipal?view=graph-rest-1.0) resource type.",
-                "Target": "provisioningServicePrincipal"
-            },
-            {
-                "Id": "3ba48e96-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Resource",
-                "ChangedApiName": "initiator",
-                "ChangeType": "Addition",
-                "Description": "Added the [initiator](https://docs.microsoft.com/en-us/graph/api/resources/initiator?view=graph-rest-1.0) resource type.",
-                "Target": "initiator"
-            },
-            {
-                "Id": "3ba6d5d3-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Resource",
-                "ChangedApiName": "provisioningSystem",
-                "ChangeType": "Addition",
-                "Description": "Added the [provisioningSystem](https://docs.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-1.0) resource type.",
-                "Target": "provisioningSystem"
-            },
-            {
-                "Id": "3ba937d2-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Resource",
-                "ChangedApiName": "detailsInfo",
-                "ChangeType": "Addition",
-                "Description": "Added the [detailsInfo](https://docs.microsoft.com/en-us/graph/api/resources/detailsInfo?view=graph-rest-1.0) resource type.",
-                "Target": "detailsInfo"
-            },
-            {
-                "Id": "3bab96c6-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Resource",
-                "ChangedApiName": "provisionedIdentity",
-                "ChangeType": "Addition",
-                "Description": "Added the [provisionedIdentity](https://docs.microsoft.com/en-us/graph/api/resources/provisionedIdentity?view=graph-rest-1.0) resource type.",
-                "Target": "provisionedIdentity"
-            },
-            {
-                "Id": "3bae0024-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Resource",
-                "ChangedApiName": "provisioningStatusInfo",
-                "ChangeType": "Addition",
-                "Description": "Added the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-1.0) resource type.",
-                "Target": "provisioningStatusInfo"
-            },
-            {
-                "Id": "3bb068e8-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Resource",
-                "ChangedApiName": "provisioningErrorInfo",
-                "ChangeType": "Addition",
-                "Description": "Added the [provisioningErrorInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningErrorInfo?view=graph-rest-1.0) resource type.",
-                "Target": "provisioningErrorInfo"
-            },
-            {
-                "Id": "3bb2daa5-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Resource",
-                "ChangedApiName": "provisioningStep",
-                "ChangeType": "Addition",
-                "Description": "Added the [provisioningStep](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStep?view=graph-rest-1.0) resource type.",
-                "Target": "provisioningStep"
-            },
-            {
-                "Id": "3bb52188-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Resource",
-                "ChangedApiName": "identity",
-                "ChangeType": "Addition",
-                "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource type.",
-                "Target": "identity"
-            },
-            {
-                "Id": "3bb76904-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "initiatorType",
-                "ChangeType": "Addition",
-                "Description": "Added the **initiatorType** enumeration type.",
-                "Target": "initiatorType"
-            },
-            {
-                "Id": "3bb9b394-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "provisioningResult",
-                "ChangeType": "Addition",
-                "Description": "Added the **provisioningResult** enumeration type.",
-                "Target": "provisioningResult"
-            },
-            {
-                "Id": "3bbbf6bf-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "provisioningStatusErrorCategory",
-                "ChangeType": "Addition",
-                "Description": "Added the **provisioningStatusErrorCategory** enumeration type.",
-                "Target": "provisioningStatusErrorCategory"
-            },
-            {
-                "Id": "3bbe6213-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "provisioningAction",
-                "ChangeType": "Addition",
-                "Description": "Added the **provisioningAction** enumeration type.",
-                "Target": "provisioningAction"
-            },
-            {
-                "Id": "3bc0cd2d-90b6-11eb-874f-059ec3b2db4c",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "provisioningStepType",
-                "ChangeType": "Addition",
-                "Description": "Added the **provisioningStepType** enumeration type.",
-                "Target": "provisioningStepType"
-            }
-        ],
-        "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
-        "Cloud": "prd",
-        "Version": "v1.0",
-        "CreatedDateTime": "2021-03-29T17:42:41.613Z",
         "WorkloadArea": "Reports and audit",
         "SubArea": "Identity and access reports"
     },
