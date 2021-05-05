@@ -36,13 +36,16 @@ This API requires one of the following permissions. To learn more, including how
 |Application | Mail.ReadWrite |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/messages/{id}/createReply
 POST /me/mailFolders/{id}/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
+
 ## Request headers
 | Name       | Type | Description| 
 |:---------------|:--------|:----------|
@@ -92,11 +95,13 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -129,17 +134,7 @@ RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQGNvbnRvc28uY29tPgpUbzogTWVnYW4gQm93ZW4gPE1l
 Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
 bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM6IEludGVybmFsIFJlc3VtZSBTdWJtaXNzaW9uOiBT
 YWxlcyBBc3NvY2lhdGUKVGhyZWFkLUluZGV4OiBjb2RlY29kZWNvZGVoZXJlaGVyZWhlcmUKRGF0
-ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCArMDAwMApNZXNzYWdlLUlEOgoJPE1XSFBSMTMw
-MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
-cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
-OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1FeGNoYW5nZS1Pcmdhbml6YXRpb24tUmVjb3Jk
-UmV2aWV3Q2ZtVHlwZTogMApDb250ZW50LVR5cGU6IHRleHQvcGxhaW47IGNoYXJzZXQ9Imlzby04
-ODU5LTEiCkNvbnRlbnQtVHJhbnNmZXItRW5jb2Rpbmc6IHF1b3RlZC1wcmludGFibGUKTUlNRS1W
-ZXJzaW9uOiAxLjAKCkhpLCBNZWdhbi4KCkkgaGF2ZSBhbiBpbnRlcmVzdCBpbiB0aGUgU2FsZXMg
-QXNzb2NpYXRlIHBvc2l0aW9uLiBQbGVhc2UgY29uc2lkZXIgbXkgcmVzdT0KbWUsIHdoaWNoIHlv
-dSBjYW49MjAKYWNjZXNzIGhlcmUuLi4KCmh0dHBzOi8vbXkuc2hhcmVwb2ludC5jb20vcGVyc29u
-YWwvYWxleHdfb25taWNyb3NvZnRfY29tL19sYXlvdXRzLzE1L2d1ZXN0YT0KY2Nlc3MuYXNweD9n
-dWVzdGFjY2Vzc3Rva2VuPTAwMDAwMDAwMDAwMDAwMDAwMDAKCkJlc3QgUmVnYXJkcywKQWxleA==
+ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCA
 ```
 ##### Response
 Here is an example of the response.
@@ -156,26 +151,26 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('0aaa0aa0-0000-0a00-a00a-0000009000a0')/messages/$entity",
     "@odata.etag": "W/\"AAAAAAAAAAAa00AAAa0aAaAa0a0AAAaAAAAaAa0a\"",
-    "id": "AAMkADA1MTAAAH5JaLAAA=",
+    "id": "AAMkADA1MTAAAAqldOAAA=",
     "createdDateTime": "2021-04-23T18:13:44Z",
     "lastModifiedDateTime": "2021-04-23T18:13:44Z",
-    "changeKey": "AAAKJSDSKJFS54sdsd545fsA,
+    "changeKey": "AAAAAAAAAAAA00aaaa000aaA,
     "categories": [],
     "receivedDateTime": "2021-04-23T18:13:44Z",
     "sentDateTime": "2021-02-28T07:15:00Z",
     "hasAttachments": false,
-    "internetMessageId": "<SDSFSFHSGA@DSSDSFG1301FG0000.codcod00.prod.outlook.com>",
+    "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
     "subject": "Internal Resume Submission: Sales Associate",
     "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resu=e, which you can access here...",
     "importance": "normal",
-    "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDKJ_bcjhdsbJHBSDJHBS==",
-    "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsdfqh_1Bgsdfsf=",
+    "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
+    "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
     "conversationIndex": "Adfsdfsdfsdfw==",
     "isDeliveryReceiptRequested": null,
     "isReadReceiptRequested": false,
     "isRead": true,
     "isDraft": true,
-    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWVmNmEjnPAvsurl=1&viewmodel=ReadMessageItem",
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWAvsurl=1&viewmodel=ReadMessageItem",
     "inferenceClassification": "focused",
     "body": {
         "contentType": "text",
