@@ -10,6 +10,8 @@ doc_type: apiPageType
 # accessReviewInstanceDecisionItem: filterByCurrentUser
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieves all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) for which the calling user is the reviewer.
 
 >[!NOTE]
@@ -66,7 +68,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
 
@@ -88,21 +90,21 @@ Content-Type: application/json
     "value": [
         {
             "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-            "id": "9550e25b-f315-4454-9d87-16b885c35de4",
-            "accessReviewId": "7070ea1c-8d12-457b-bd35-a37dc59e54e0",
-            "reviewedDateTime": null,
-            "decision": "NotReviewed",
-            "justification": "",
+            "id": "139166ec-d214-4835-95aa-3c1d89581e51",
+            "accessReviewId": "8d035c9d-798d-47fa-beb4-f986a4b8126f",
+            "reviewedDateTime": "2021-05-03T19:28:25.02Z",
+            "decision": "Approve",
+            "justification": "Kathleen still needs access to the Marketing group as she works in the Marketing organization.",
             "appliedDateTime": null,
             "applyResult": "New",
             "recommendation": "Deny",
-            "principalLink": "https://graph.microsoft.com/v1.0/users/55555b2c-955d-4205-8471-3a6c3116435d",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/1800bb2c-955d-4205-8471-3a6c3116435d",
             "resourceLink": null,
             "resource": null,
             "reviewedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
+                "id": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
+                "displayName": "MOD Administrator",
+                "userPrincipalName": "MOD Administrator"
             },
             "appliedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
@@ -124,8 +126,8 @@ Content-Type: application/json
         },
         {
             "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-            "id": "1f0f6f8a-15af-4a45-a58d-9a959037e0e7",
-            "accessReviewId": "7070ea1c-8d12-457b-bd35-a37dc59e54e0",
+            "id": "a4ff9392-e3b3-43a1-a46a-b1a092df0f56",
+            "accessReviewId": "8d035c9d-798d-47fa-beb4-f986a4b8126f",
             "reviewedDateTime": null,
             "decision": "NotReviewed",
             "justification": "",
@@ -148,7 +150,7 @@ Content-Type: application/json
             "target": {
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
-                "userDisplayName": "Administrator",
+                "userDisplayName": "MOD Administrator",
                 "userPrincipalName": "admin@contoso.com"
             },
             "principal": {

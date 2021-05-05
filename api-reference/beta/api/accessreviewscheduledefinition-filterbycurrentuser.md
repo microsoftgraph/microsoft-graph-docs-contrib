@@ -10,6 +10,8 @@ doc_type: apiPageType
 # accessReviewScheduleDefinition: filterByCurrentUser
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Function used to return [accessReviewScheduleDefinition](../resource/accessreviewscheduledefinition.md) objects where the calling user is a reviewer on one or more [accessReviewInstance](../resources/accessreviewinstance.md) objects.
 
 >[!NOTE]

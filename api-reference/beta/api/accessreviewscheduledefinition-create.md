@@ -52,7 +52,8 @@ The following table shows the properties accepted to create an accessReview.
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Defines who the reviewers are. If none are specified, the review is a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
-
+|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|If provided, the fallback reviewers will be asked to complete a review if the primary reviewers do not exist. For example, if managers are selected as `reviewers` and a principal under review does not have a manager in Azure AD, the fallback reviewers will be asked to review that principal.|
+|backupReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This property is being replaced by `fallbackReviewers` and will be deprecated.|
 
 ## Response
 If successful, this method returns a `201, Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
@@ -79,6 +80,7 @@ Content-type: application/json
   "descriptionForAdmins": "New scheduled access review",
   "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
   "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0c4444/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },
@@ -142,30 +144,35 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
+    "id": "4b560f77-9a63-4ddf-8ea4-3e93828e0128",
     "displayName": "Test create",
-    "createdDateTime": "0001-01-01T00:00:00Z",
-    "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+    "createdDateTime": null,
+    "lastModifiedDateTime": null,
     "status": "NotStarted",
-    "descriptionForAdmins": "Test create",
-    "descriptionForReviewers": "Test create",
+    "descriptionForAdmins": "New scheduled access review",
+    "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
     "instanceEnumerationScope": null,
     "createdBy": {
-        "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+        "id": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
         "displayName": "MOD Administrator",
         "userPrincipalName": "admin@contoso.com"
     },
     "scope": {
-        "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
-        "queryType": "MicrosoftGraph"
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0c4444/transitiveMembers",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
     },
     "reviewers": [
         {
-            "query": "/users/7eae986b-d425-48b2-adf2-3c777f4444f3",
+            "query": "/users/7eae4444-d425-48b2-adf2-3c777f6256f3",
             "queryType": "MicrosoftGraph",
             "queryRoot": "decisions"
         }
     ],
+    "backupReviewers": [],
+    "fallbackReviewers": [],
     "settings": {
         "mailNotificationsEnabled": true,
         "reminderNotificationsEnabled": true,

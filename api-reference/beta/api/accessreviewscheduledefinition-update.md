@@ -50,7 +50,9 @@ The following table shows the properties accepted to update an accessReviewSched
 | descriptionForAdmins | String | Context of the review provided to admins. |
 | descriptionForReviewers | String | Context of the review provided to reviewers. |
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | The settings for an access review series. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
-| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Defines who the reviewers are. If none are specified, the review is a self-review (users reviewed review their own access). The Reviewers property is only updatable if individual users assigned are as reviewers. See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). | 
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Defines who the reviewers are. If none are specified, the review is a self-review (users reviewed review their own access). The Reviewers property is only updatable if individual users assigned are as reviewers. See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
+|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of reviewer scopes is used to define the list of fallback reviewers who will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.|
+|backupReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This property is being replaced by `fallbackReviewers` and will be deprecated.|
 
 Note that a PUT request expects the full object to be passed in, in which all writable properties are included, not just the properties being updated.
 

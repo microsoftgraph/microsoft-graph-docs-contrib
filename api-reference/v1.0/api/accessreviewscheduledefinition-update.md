@@ -57,7 +57,7 @@ The entire [accessReviewScheduleDefinition](../resources/accessreviewscheduledef
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
+If successful, this method returns a `204 OK` response code.
 
 ## Examples
 Updating the displayName and descriptionForAdmins properties on an access review.
@@ -146,75 +146,5 @@ Content-Type: application/json
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions/$entity",
-    "id": "abadf3b6-8ea4-4dea-90a5-9eac8fe93fbd",
-    "displayName": "Example review - displayName updated",
-    "createdDateTime": "2021-04-30T21:15:22.6941051Z",
-    "lastModifiedDateTime": "2021-05-03T19:46:33.3868801Z",
-    "status": "InProgress",
-    "descriptionForAdmins": "Description for admins updated",
-    "descriptionForReviewers": "",
-    "createdBy": {
-        "id": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
-        "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@contoso.com"
-    },
-    "scope": {
-        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-        "query": "/v1.0/groups/0914d821-ca3b-45cc-98ee-54c00a04deef/transitiveMembers",
-        "queryType": "MicrosoftGraph",
-        "queryRoot": null
-    },
-    "instanceEnumerationScope": {
-        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-        "query": "/v1.0/groups/0914d821-ca3b-45cc-98ee-54c00a04deef",
-        "queryType": "MicrosoftGraph",
-        "queryRoot": null
-    },
-    "reviewers": [
-        {
-            "query": "/v1.0/users/36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
-            "queryType": "MicrosoftGraph",
-            "queryRoot": null
-        }
-    ],
-    "fallbackReviewers": [],
-    "settings": {
-        "mailNotificationsEnabled": true,
-        "reminderNotificationsEnabled": true,
-        "justificationRequiredOnApproval": true,
-        "defaultDecisionEnabled": false,
-        "defaultDecision": "None",
-        "instanceDurationInDays": 14,
-        "autoApplyDecisionsEnabled": true,
-        "recommendationsEnabled": true,
-        "recurrence": {
-            "pattern": {
-                "type": "absoluteMonthly",
-                "interval": 1,
-                "month": 0,
-                "dayOfMonth": 0,
-                "daysOfWeek": [],
-                "firstDayOfWeek": "sunday",
-                "index": "first"
-            },
-            "range": {
-                "type": "numbered",
-                "numberOfOccurrences": 0,
-                "recurrenceTimeZone": null,
-                "startDate": "2021-05-01",
-                "endDate": "9999-12-31"
-            }
-        },
-        "applyActions": [
-            {
-                "@odata.type": "#microsoft.graph.removeAccessApplyAction"
-            }
-        ]
-    }
-}
+HTTP/1.1 204 Accepted
 ```
