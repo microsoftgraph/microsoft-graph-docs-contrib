@@ -33,7 +33,7 @@
           "ChangedApiName": "UserPrincipalName",
           "ChangeType": "Addition",
           "Description": "UserPrincipalName can be used in the request URL for [sending activity feed notification] (https://docs.microsoft.com/en-us/graph/api/userteamwork-sendactivitynotification?view=graph-rest-1.0&tabs=http) of a user.",
-          "Target": "teamsAppInstallation"
+          "Target": "Teamwork"
         },
         {
           "Id": "f9d6b5b0-2d08-4c4b-bf33-beb18bec1601",
