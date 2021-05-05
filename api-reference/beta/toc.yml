@@ -11223,7 +11223,7 @@ items:
               href: api/accessreviewhistorydefinition-list.md
             - name: Create
               href: api/accessreviewhistorydefinition-create.md
-            - name: Generate a download uri
+            - name: Generate download URI
               href: api/accessreviewhistorydefinition-generatedownloaduri.md
         - name: Access reviews (legacy)
           href: resources/accessreviews-root.md
