@@ -126,6 +126,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Reply-all to a message in MIME format
 ##### Request
+
 <!-- {
   "blockType": "request",
   "name": "message_replyAll_mime_beta"
@@ -145,8 +146,10 @@ cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoK
 
 ```
+
 ##### Response
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -170,6 +173,7 @@ Content-type: application/json
         "message": "Invalid base64 string for MIME content."
     }
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -118,14 +118,18 @@ Content-Type: application/json
 
 ##### Response
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
+
 ### Example 2: Forward a message using MIME format
+
 <!-- {
   "blockType": "request",
   "name": "message_forward_mime_beta"
@@ -136,7 +140,9 @@ POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/forward
 Content-Type: text/plain
 
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+
 ```
+
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -178,5 +184,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

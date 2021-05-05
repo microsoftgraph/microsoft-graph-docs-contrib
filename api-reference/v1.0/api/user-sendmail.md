@@ -34,7 +34,9 @@ This API requires one of the following permissions. To learn more, including how
 |Application | Mail.Send |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
@@ -68,10 +70,12 @@ Here is an example of how to call this API.
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
@@ -122,10 +126,12 @@ Content-type: application/json
 
 ##### Response 1
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -134,10 +140,12 @@ HTTP/1.1 202 Accepted
 The next example creates a message with custom Internet message headers and sends the message.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
@@ -190,18 +198,18 @@ Content-type: application/json
 
 ##### Response 2
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
 
 ##### Request 3
-
 The next example creates a message with a file attachment and sends the message.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -258,8 +266,8 @@ Content-type: application/json
 
 
 ##### Response 3
-
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -270,6 +278,7 @@ HTTP/1.1 202 Accepted
 ```
 ### Example 2: Send a new message using MIME format
 ##### Request
+
 <!-- {
   "blockType": "request",
   "name": "message_send_mime_beta"
@@ -291,6 +300,7 @@ OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
 ```
 ##### Response
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -327,4 +337,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

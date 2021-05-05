@@ -333,6 +333,7 @@ Content-type: application/json
 ##### Response 4
 
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -343,6 +344,7 @@ HTTP/1.1 202 Accepted
 ```
 ### Example 2: Send a new message using MIME format
 ##### Request
+
 <!-- {
   "blockType": "request",
   "name": "message_send_mime_beta"
@@ -363,6 +365,7 @@ OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
 ```
 ##### Response
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -375,7 +378,6 @@ HTTP/1.1 202 Accepted
 If the request body includes malformed MIME content, this method returns the following error message.
 
 <!-- { "blockType": "ignored" } -->
-
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -402,5 +404,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
