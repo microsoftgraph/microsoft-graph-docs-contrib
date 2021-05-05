@@ -85,22 +85,93 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(accessReviewScheduleDefinition)",
-    "@odata.count": 1,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(accessReviewScheduleDefinition)",
+    "@odata.count": 2,
     "value": [
         {
             "@odata.type": "#microsoft.graph.accessReviewScheduleDefinition",
-            "id": "66666337-b075-4a92-9d71-255cc4b5d12a",
-            "displayName": "All groups review",
-            "createdDateTime": "2021-03-09T00:45:51.6272836Z",
-            "lastModifiedDateTime": "2021-03-09T00:46:11.2041753Z",
-            "status": "InProgress",
-            "descriptionForAdmins": "All groups review",
-            "descriptionForReviewers": "",
+            "id": "ad0ec492-c1b6-49f0-9025-ea15ca471ea9",
+            "displayName": "Test",
+            "createdDateTime": "2021-04-29T20:01:18.1084432Z",
+            "lastModifiedDateTime": "2021-04-29T20:01:52.3233462Z",
+            "status": "Completed",
+            "descriptionForAdmins": "Test",
+            "descriptionForReviewers": "Test",
             "createdBy": {
-                "id": "cae33dff-88e8-4e02-8a52-de021295997e",
-                "displayName": "Shubham Gupta",
-                "userPrincipalName": "exampleuser@microsoft.com"
+                "id": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
+                "displayName": "MOD Administrator",
+                "userPrincipalName": "admin@contoso.com"
+            },
+            "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+                "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph",
+                "queryRoot": null,
+                "inactiveDuration": "P30D"
+            },
+            "instanceEnumerationScope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/v1.0/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true",
+                "queryType": "MicrosoftGraph",
+                "queryRoot": null
+            },
+            "reviewers": [
+                {
+                    "query": "./owners",
+                    "queryType": "MicrosoftGraph",
+                    "queryRoot": null
+                }
+            ],
+            "backupReviewers": [],
+            "fallbackReviewers": [],
+            "settings": {
+                "mailNotificationsEnabled": true,
+                "reminderNotificationsEnabled": true,
+                "justificationRequiredOnApproval": true,
+                "defaultDecisionEnabled": true,
+                "defaultDecision": "Approve",
+                "instanceDurationInDays": 3,
+                "autoApplyDecisionsEnabled": true,
+                "recommendationsEnabled": true,
+                "recurrence": {
+                    "pattern": {
+                        "type": "weekly",
+                        "interval": 1,
+                        "month": 0,
+                        "dayOfMonth": 0,
+                        "daysOfWeek": [],
+                        "firstDayOfWeek": "sunday",
+                        "index": "first"
+                    },
+                    "range": {
+                        "type": "numbered",
+                        "numberOfOccurrences": 0,
+                        "recurrenceTimeZone": null,
+                        "startDate": "2021-04-30",
+                        "endDate": "2021-04-30"
+                    }
+                },
+                "applyActions": [
+                    {
+                        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
+                    }
+                ]
+            },
+            "instances": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessReviewScheduleDefinition",
+            "id": "fd8fcf8a-3c95-4d4f-b6f5-a3397ee6183e",
+            "displayName": "Test",
+            "createdDateTime": "2021-04-28T21:08:54.8204768Z",
+            "lastModifiedDateTime": "2021-04-29T07:00:42.0315581Z",
+            "status": "Completed",
+            "descriptionForAdmins": "Test",
+            "descriptionForReviewers": "Test",
+            "createdBy": {
+                "id": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
+                "displayName": "MOD Administrator",
+                "userPrincipalName": "admin@contoso.com"
             },
             "scope": {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
@@ -121,13 +192,14 @@ Content-Type: application/json
                     "queryRoot": null
                 }
             ],
+            "backupReviewers": [],
             "fallbackReviewers": [],
             "settings": {
                 "mailNotificationsEnabled": true,
                 "reminderNotificationsEnabled": true,
                 "justificationRequiredOnApproval": true,
-                "defaultDecisionEnabled": false,
-                "defaultDecision": "None",
+                "defaultDecisionEnabled": true,
+                "defaultDecision": "Approve",
                 "instanceDurationInDays": 3,
                 "autoApplyDecisionsEnabled": true,
                 "recommendationsEnabled": true,
@@ -145,8 +217,8 @@ Content-Type: application/json
                         "type": "numbered",
                         "numberOfOccurrences": 0,
                         "recurrenceTimeZone": null,
-                        "startDate": "2021-03-09",
-                        "endDate": "9999-12-31"
+                        "startDate": "2021-04-29",
+                        "endDate": "2021-04-29"
                     }
                 },
                 "applyActions": [
