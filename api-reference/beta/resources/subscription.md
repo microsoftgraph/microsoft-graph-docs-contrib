@@ -69,6 +69,8 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | Security **alert**     | 43200 minutes (under 30 days)  |
 | Teams **callRecord**    | 4230 minutes (under 3 days)  |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
+| Teams **channel**    | 60 minutes (1 hour)  |
+| Teams **team**    | 60 minutes (1 hour)  |
 | Group **conversation** | 4230 minutes (under 3 days)    |
 | OneDrive **driveItem**    | 4230 minutes (under 3 days)    |
 | SharePoint **list**    | 4230 minutes (under 3 days)    |
