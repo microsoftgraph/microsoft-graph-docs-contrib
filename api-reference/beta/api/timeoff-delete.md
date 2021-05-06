@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOf
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response. 
 
