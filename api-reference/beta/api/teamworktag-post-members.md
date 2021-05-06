@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create teamworkTagMember
+# Add member to an existing teamworkTag
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
