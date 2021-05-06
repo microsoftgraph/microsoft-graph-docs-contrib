@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get teamworkTagMember
+# Get member of a teamworkTag
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -83,4 +83,3 @@ Content-Type: application/json
   }
 }
 ```
-
