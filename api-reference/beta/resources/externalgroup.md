@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "displayName": "String",
   "description": "String"
 }

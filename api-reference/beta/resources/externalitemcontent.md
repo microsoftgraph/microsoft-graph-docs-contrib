@@ -43,8 +43,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "value": "string",
-  "type": "string"
+  "value": "String",
+  "type": "String"
 }
 ```
 
@@ -58,5 +58,3 @@ The following is a JSON representation of the resource.
   "tocPath": "",
   "suppressions": []
 }-->
-
-

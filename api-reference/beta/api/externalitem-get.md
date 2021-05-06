@@ -89,7 +89,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.externalItem",
   "acl": [
     {
       "type": "user",

@@ -119,7 +119,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.externalGroupMember",
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
   "identitySource": "azureActiveDirectory"

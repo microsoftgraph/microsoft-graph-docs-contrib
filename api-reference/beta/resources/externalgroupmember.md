@@ -48,8 +48,8 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "id": "string (identifier)",
-  "type": "string",
-  "identitySource": "string"
+  "id": "String (identifier)",
+  "type": "String",
+  "identitySource": "String"
 }
 ```

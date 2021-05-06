@@ -55,8 +55,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "acl": [],
+  "content": {},
   "id": "String (identifier)",
-  "properties": "object"
+  "properties": "Object"
 }
 ```
 

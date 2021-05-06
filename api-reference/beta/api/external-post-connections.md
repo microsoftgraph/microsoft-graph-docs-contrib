@@ -113,7 +113,7 @@ Content-type: application/json
   "name": "Contoso HR",
   "description": "Connection to index Contoso HR system",
   "configuration": {
-    "authorizedApps": [
+    "authorizedAppIds": [
       "d310d35d-72ec-47dd-92f2-fb9c40936555"
     ]
   }
