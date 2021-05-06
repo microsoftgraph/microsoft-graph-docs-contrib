@@ -77,6 +77,7 @@ mgt-person {
   --avatar-size: 48px;
   --avatar-border: 0;
   --avatar-border-radius: 50%;
+  --avatar-cursor: default;
   
   --initials-color: white;
   --initials-background-color: magenta;
