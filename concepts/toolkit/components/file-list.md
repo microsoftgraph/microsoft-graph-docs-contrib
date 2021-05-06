@@ -85,6 +85,10 @@ mgt-file-list {
   --file-item-background-color--active: rgba(0, 0, 0, 0.05);
   --file-item-border-radius: 2px;
   --file-item-margin: 0 4px;
+
+  --file-item-border-top: none;
+  --file-item-border-left: none;
+  --file-item-border-right: none;
   --file-item-border-bottom: none;
 
   --show-more-button-background-color: #f3f2f1;
