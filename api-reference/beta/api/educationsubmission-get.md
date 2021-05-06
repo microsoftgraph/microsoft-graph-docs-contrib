@@ -24,9 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application* | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
-
-*Application permissions are currently available to private preview customers only.
+|Application | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -95,13 +93,6 @@ Content-length: 712
       "recipient": {
         "userId": "13015"
       },
-      "releasedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "releasedDateTime": "2014-01-01T00:00:00Z",
       "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
       "status": "working",
       "submittedBy": {
