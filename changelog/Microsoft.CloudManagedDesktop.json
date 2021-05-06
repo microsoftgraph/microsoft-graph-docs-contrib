@@ -3,50 +3,18 @@
         {
             "ChangeList": [
                 {
-                    "Id": "bec52bbc-41a0-429e-a7d1-ed9697ef35f3",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "managedDevice",
+                    "Id": "354f1cbe-9671-4608-8027-eb7dce79a0b7",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "adJoinCheckAccessDenied",
                     "ChangeType": "Addition",
-                    "Description": "Added the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource type",
-                    "Target": "managedDevice"
-                },
-                {
-                    "Id": "bec52bbc-41a0-429e-a7d1-ed9697ef35f3",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcRemoteActionResult",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcRemoteActionResult](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcRemoteActionResult?view=graph-rest-beta) resource type",
-                    "Target": "cloudPcRemoteActionResult"
-                },
-                {
-                    "Id": "bec52bbc-41a0-429e-a7d1-ed9697ef35f3",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "actionState",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [actionState](https://docs.microsoft.com/en-us/graph/api/resources/actionState?view=graph-rest-beta) resource type",
-                    "Target": "actionState"
-                },
-                {
-                    "Id": "bec52bbc-41a0-429e-a7d1-ed9697ef35f3",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "reprovisionCloudPc",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [reprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-manageddevice-reprovisioncloudpc?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource",
-                    "Target": "managedDevice"
-                },
-                {
-                    "Id": "bec52bbc-41a0-429e-a7d1-ed9697ef35f3",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "getCloudPcRemoteActionResults",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [getCloudPcRemoteActionResults](https://docs.microsoft.com/en-us/graph/api/intune-manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource",
-                    "Target": "managedDevice"   
+                    "Description": "Added the `adJoinCheckAccessDenied` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
                 }
             ],
-            "Id": "bec52bbc-41a0-429e-a7d1-ed9697ef35f3",
+            "Id": "354f1cbe-9671-4608-8027-eb7dce79a0b7",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2021-04-22T22:35:07.177Z",
+            "CreatedDateTime": "2021-05-05T14:13:07.177Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
