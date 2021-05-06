@@ -47,6 +47,12 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-04-24T00:43:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "354f1cbe-9671-4608-8027-eb7dce79a0b7",
                     "ApiChange": "Member",
                     "ChangedApiName": "adJoinCheckAccessDenied",
