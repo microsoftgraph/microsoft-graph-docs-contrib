@@ -3,29 +3,183 @@
   "changelog": [
     {
       "ChangeList": [
-           {
-             "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
-             "ApiChange": "Property",
-             "ChangedApiName": "chatMessage",
-             "ChangeType": "Addition",
-             "Description": "Added the **chatId** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
-             "Target": "chatMessage"
-           },
-           {
-              "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
-             "ApiChange": "Resource",
-             "ChangedApiName": "channelIdentity",
-             "ChangeType": "Addition",
-             "Description": "Added the [channelIdentity](https://docs.microsoft.com/en-us/graph/api/resources/channelIdentity?view=graph-rest-beta) resource type.",
-             "Target": "channelIdentity"
-           }
+        {
+          "Id": "21dfc156-d5cf-4f5c-bdb0-84a982e9d54e",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat",
+          "ChangeType": "Change",
+          "Description": "Added support for application permissions to the [Get chat](https://docs.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-v1.0&preserve-view=true), [List chat members](https://docs.microsoft.com/en-us/graph/api/chat-list-members?view=graph-rest-v1.0&preserve-view=true) and [Get chat member](https://docs.microsoft.com/en-us/graph/api/chat-get-members?view=graph-rest-v1.0&preserve-view=true) methods in v1.0.",
+          "Target": "chat"
+        }
       ],
-        "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2021-03-19T00:00:00",
-        "WorkloadArea": "Teamwork",
-        "SubArea": ""
+      "Id": "21dfc156-d5cf-4f5c-bdb0-84a982e9d54e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-04-22T20:18:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "85351d8b-0bbd-4312-ab96-1bc715fec1cf",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat",
+          "ChangeType": "Change",
+          "Description": "Added support for application permissions to the [Get chat](https://docs.microsoft.com/en-us/graph/api/chat-get?view=graph-rest-beta&preserve-view=true), [List chat members](https://docs.microsoft.com/en-us/graph/api/chat-list-members?view=graph-rest-beta&preserve-view=true) and [Get chat member](https://docs.microsoft.com/en-us/graph/api/chat-get-members?view=graph-rest-beta&preserve-view=true) methods in beta.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "85351d8b-0bbd-4312-ab96-1bc715fec1cf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-16T20:18:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "72ed8673-9327-11eb-8507-815178c7c041",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsAppIcon",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get teamsAppIcon](https://docs.microsoft.com/en-us/graph/api/teamsappicon-get?view=graph-rest-beta&preserve-view=true) method to fetch icons of a Teams app.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "72ed8673-9327-11eb-8507-815178c7c041",
+          "ApiChange": "Method",
+          "ChangedApiName": "hostedContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get teamworkHostedContent](https://docs.microsoft.com/en-us/graph/api/teamworkhostedcontent-get?view=graph-rest-beta&preserve-view=true) method to fetch images of Teams app icons.",
+          "Target": "teamsAppIcon"
+        },
+        {
+          "Id": "72ed8673-9327-11eb-8507-815178c7c041",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "colorIcon",
+          "ChangeType": "Addition",
+          "Description": "Added the **colorIcon** relationship to the [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "72efe767-9327-11eb-8507-815178c7c041",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "outlineIcon",
+          "ChangeType": "Addition",
+          "Description": "Added the **outlineIcon** relationship to the [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "72f24887-9327-11eb-8507-815178c7c041",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppIcon",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppIcon](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppIcon?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppIcon"
+        }
+      ],
+      "Id": "72eb21d4-9327-11eb-8507-815178c7c041",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-16T20:18:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissionGrants",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrants** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
+          "ApiChange": "Resources",
+          "ChangedApiName": "resourceSpecificPermissionGrant",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceSpecificPermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) resource.",
+          "Target": "resourceSpecificPermissionGrant"
+        }
+      ],
+      "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-05T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9444ad50-86fd-11eb-9fc2-269673f51d94",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatId",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatId** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "94471014-86fd-11eb-9fc2-269673f51d94",
+          "ApiChange": "Property",
+          "ChangedApiName": "channelIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the **channelIdentity** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "94496fd0-86fd-11eb-9fc2-269673f51d94",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "messages",
+          "ChangeType": "Addition",
+          "Description": "Added the **messages** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "944bd375-86fd-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelIdentity](https://docs.microsoft.com/en-us/graph/api/resources/channelIdentity?view=graph-rest-1.0) resource type.",
+          "Target": "channelIdentity"
+        }
+      ],
+      "Id": "94424c8f-86fd-11eb-9fc2-269673f51d94",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-04-02T08:48:43.715Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatId** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelIdentity](https://docs.microsoft.com/en-us/graph/api/resources/channelIdentity?view=graph-rest-beta) resource type.",
+          "Target": "channelIdentity"
+        }
+      ],
+      "Id": "8018F283-A3C1-4C6E-B0B5-B2A0965272DF",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-02T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -249,7 +403,7 @@
           "Description": "Added the [List apps in chat](https://docs.microsoft.com/en-us/graph/api/chat-list-installedapps?view=graph-rest-1.0&preserve-view=true), [Get app in chat](https://docs.microsoft.com/en-us/graph/api/chat-get-installedapps?view=graph-rest-1.0&preserve-view=true), [Add app in chat](https://docs.microsoft.com/en-us/graph/api/chat-post-installedapps?view=graph-rest-1.0&preserve-view=true), and [Upgrade app in chat](https://docs.microsoft.com/en-us/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-1.0&preserve-view=true) methods.",
           "Target": "teamsAppInstallation"
         },
-   
+
         {
           "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
           "ApiChange": "Method",
@@ -353,7 +507,7 @@
       "CreatedDateTime": "2020-12-17T21:46:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
-    }, 
+    },
     {
       "ChangeList": [
         {
