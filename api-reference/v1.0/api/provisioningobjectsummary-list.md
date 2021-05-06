@@ -90,7 +90,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary"
@@ -100,12 +99,11 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 ```
 
-
 ### Response
 
 The following is an example of the response for a successful event.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
