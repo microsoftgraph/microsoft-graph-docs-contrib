@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,7 +129,7 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -208,7 +208,7 @@ GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
