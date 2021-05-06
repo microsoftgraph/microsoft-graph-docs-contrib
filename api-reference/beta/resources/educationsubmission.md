@@ -34,8 +34,8 @@ Submissions are automatically created when an assignment is published. The submi
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who this submission is assigned to.|
-|releasedBy|[identitySet](identityset.md)|User who moved the status of this submission to released.|
-|releasedDateTime|DateTimeOffset|Moment in time when the submission was released. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|releasedBy (deprecated)|[identitySet](identityset.md)|User who moved the status of this submission to released.|
+|releasedDateTime (deprecated)|DateTimeOffset|Moment in time when the submission was released. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |returnedBy|[identitySet](identityset.md)|User who moved the status of this submission to returned.|
 |returnedDateTime|DateTimeOffset|Moment in time when the submission was returned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |resourcesFolderUrl|String|Folder where all file resources for this submission need to be stored.|
@@ -76,9 +76,7 @@ The following is a JSON representation of the resource.
     "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
     "submittedDateTime":"String (timestamp)",
     "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "unsubmittedDateTime":"String (timestamp)",
-    "releasedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "releasedDateTime":"String (timestamp)"
+    "unsubmittedDateTime":"String (timestamp)"
 }
 ```
 
