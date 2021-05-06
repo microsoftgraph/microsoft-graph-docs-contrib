@@ -604,6 +604,8 @@ items:
                 href: toolkit/get-started/overview.md
               - name: Toolkit for React
                 href: toolkit/get-started/mgt-react.md
+              - name: Toolkit for SPFx
+                href: toolkit/get-started/mgt-spfx.md
           - name: Build your first app
             items:
               - name: Register an Azure Active Directory app
