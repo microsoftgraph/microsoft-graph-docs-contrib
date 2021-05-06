@@ -1,5 +1,5 @@
 ---
-title: "Get teamworkTag"
+title: "Get teamworkTag in a team"
 description: "Read the properties and relationships of a teamworkTag object."
 author: "anniecolonna"
 localization_priority: Normal
