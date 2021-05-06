@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [managedDevice](../resources/intune-shared-manageddevice.md) object.
+Update the properties of a [managedDevice](../resources/intune-devices-manageddevice.md) object.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,9 +48,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [managedDevice](../resources/intune-shared-manageddevice.md) object.
+In the request body, supply a JSON representation for the [managedDevice](../resources/intune-devices-manageddevice.md) object.
 
-The following table shows the properties that are required when you create the [managedDevice](../resources/intune-shared-manageddevice.md).
+The following table shows the properties that are required when you create the [managedDevice](../resources/intune-devices-manageddevice.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -69,7 +69,7 @@ The following table shows the properties that are required when you create the [
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. This property is read-only.|
-|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`.|
 |osVersion|String|Operating system version of the device. This property is read-only.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. This property is read-only.|
 |easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only.|
@@ -135,7 +135,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [managedDevice](../resources/intune-shared-manageddevice.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [managedDevice](../resources/intune-devices-manageddevice.md) object in the response body.
 
 ## Example
 
@@ -144,7 +144,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 8108
+Content-length: 8557
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -188,7 +188,11 @@ Content-length: 8108
     "osBuildNumber": "Os Build Number value",
     "operatingSystemProductType": 10,
     "ipAddressV4": "Ip Address V4 value",
-    "subnetAddress": "Subnet Address value"
+    "subnetAddress": "Subnet Address value",
+    "esimIdentifier": "Esim Identifier value",
+    "systemManagementBIOSVersion": "System Management BIOSVersion value",
+    "tpmManufacturer": "Tpm Manufacturer value",
+    "tpmVersion": "Tpm Version value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -340,7 +344,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8157
+Content-Length: 8606
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -385,7 +389,11 @@ Content-Length: 8157
     "osBuildNumber": "Os Build Number value",
     "operatingSystemProductType": 10,
     "ipAddressV4": "Ip Address V4 value",
-    "subnetAddress": "Subnet Address value"
+    "subnetAddress": "Subnet Address value",
+    "esimIdentifier": "Esim Identifier value",
+    "systemManagementBIOSVersion": "System Management BIOSVersion value",
+    "tpmManufacturer": "Tpm Manufacturer value",
+    "tpmVersion": "Tpm Version value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",

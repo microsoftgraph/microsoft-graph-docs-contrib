@@ -19,6 +19,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "354f1cbe-9671-4608-8027-eb7dce79a0b7",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "adJoinCheckAccessDenied",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `adJoinCheckAccessDenied` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "354f1cbe-9671-4608-8027-eb7dce79a0b7",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-05T14:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "2a611d0f-e9d5-4f52-bd55-364c83ad8eef",
                     "ApiChange": "Member",
                     "ChangedApiName": "cloudPcDeviceImageStatusDetails",
