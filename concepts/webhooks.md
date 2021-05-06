@@ -39,6 +39,9 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Security [alert][]
 - SharePoint [list][]
 - Teams [callRecord][]
+- Teams [channel][]
+- Teams [conversationMemeber][]
+- Teams [team][]
 - Teams [chatMessage][]
 - Teams [presence][] (preview)
 - [todoTask][] (preview)
@@ -335,3 +338,6 @@ The following table lists the latency to expect between an event happening in th
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
+[channel]: /graph/api/resources/channel
+[conversationMemeber]: /graph/api/resources/conversationmember
+[team]: /graph/api/resources/team
