@@ -33,7 +33,7 @@
                     "ChangeType": "Addition",
                     "Description": "Added supported app only permissions for [cloudPcProvisionPolicy-get](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-get?view=graph-rest-beta), [cloudPcProvisionPolicy-list](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-provisioningpolicies?view=graph-rest-beta), [cloudPcProvisionPolicy-post](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-post-provisioningpolicies?view=graph-rest-beta), [cloudPcProvisionPolicy-delete](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-delete?view=graph-rest-beta), [cloudPcProvisionPolicy-update](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-update?view=graph-rest-beta) and [cloudPcProvisionPolicy-assign](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta).",
                     "Target": "cloudPcProvisionPolicy"
-                },
+                }
             ],
             "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
             "Cloud": "prd",
