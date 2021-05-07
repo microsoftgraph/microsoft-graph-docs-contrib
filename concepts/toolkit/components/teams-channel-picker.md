@@ -98,12 +98,29 @@ The following example shows how to use the `error` template.
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions.
+This component uses the following Microsoft Graph APIs and permissions by default.
+
+| API                                                                                                              | Permission  |
+| ---------------------------------------------------------------------------------------------------------------- | ----------- |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
+
+In 2.2, we updated the required permissions to the new less restricting Teams based permissions. However, to avoid a breaking change, a developer will need to opt in to the new scopes via a global config:
+
+```ts
+import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
+
+MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
+```
+
+With `useTeamsBasedScopes` set to `true`, the Teams Channel Picker will use the following scopes. 
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | Team.ReadBasic.All        |
 | [/teams/${id}/channels](/graph/api/channel-list) | Channel.ReadBasic.All        |
+
+These scopes will be default in the next major update.
 
 ## Authentication
 
