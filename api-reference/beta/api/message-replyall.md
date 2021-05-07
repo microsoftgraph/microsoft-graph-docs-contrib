@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 Reply to all recipients of a [message](../resources/message.md) using either JSON or MIME format.
 
 When using JSON format, you can:
-- Add a comment or modify any updateable properties of the [message](/graph/api-reference/beta/resources/message.md) in a single **replyAll** call 
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
 - If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 
@@ -59,11 +58,12 @@ When using JSON format, provide a JSON object with the following parameters.
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body. Do not include parameters.
+When specifying the body in MIME format, provide the MIME content with the applicable Internet Message Headers, all encoded in **base64** format in the request body. This method loads the sender and all recipients of the original message as recipients of the new message.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+
 If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
 
 ## Examples

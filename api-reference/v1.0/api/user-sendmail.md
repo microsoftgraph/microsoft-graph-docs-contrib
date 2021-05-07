@@ -55,11 +55,12 @@ When using JSON format, provide a JSON object with the following parameters.
 |message|[Message](../resources/message.md)|The message to send. Required.|
 |saveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional. |
 
-When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body. Do not include parameters.
+When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+
 If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
 
 ## Examples

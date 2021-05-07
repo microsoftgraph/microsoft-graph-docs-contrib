@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 Forward a message using either JSON or MIME format.
 
-When using JSON format:
-- Add a comment or modify any updateable properties all in one **forward** call.
+When using JSON format, you can:
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
 - Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
 
@@ -57,11 +56,12 @@ When using JSON format, provide a JSON object in the request body with the follo
 |comment|String|A comment to include. Can be an empty string.|
 |toRecipients|[Recipient](../resources/recipient.md) collection|The list of recipients.|
 
-When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body. Do not include parameters.
+When specifying the body in MIME format, provide the MIME content with the applicable Internet Message Headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+
 If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
 
 ## Examples

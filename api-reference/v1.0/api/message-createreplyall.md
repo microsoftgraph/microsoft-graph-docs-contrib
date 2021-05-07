@@ -51,11 +51,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
 
 ## Request body
-This method does not require a request body. However, for creating a replyAll draft using MIME format, include only the MIME content as **a base64-encoded string** in the request body. Do not include parameters.
+This method does not require a request body. 
+
+However, for creating a replyAll draft using MIME format, provide the MIME content with the applicable Internet Message Headers, all encoded in **base64** format in the request body.
 
 ## Response
 
 If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
+
 If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
 
 ## Examples

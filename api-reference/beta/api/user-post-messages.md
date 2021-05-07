@@ -23,11 +23,11 @@ When using MIME format:
 - Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
 - Add any attachments and S/MIME properties into the MIME content.
 
-Save the draft in any folder and optionally update it before sending. To save to the Drafts folder, use the /messages shortcut.
+You can save the draft in any folder. To save it in the Drafts folder, use the /messages shortcut.
 
 [Send](/graph/api-reference/beta/api/message-send.md) the draft message in a subsequent operation.
 
-Alternatively, [send a new message](../api/user-sendmail.md) in a single action, or create a draft to [forward](../api/message-createforward.md), [reply](../api/message-createreply.md) or [reply-all](../api/message-createreplyall.md) to an existing message.
+Alternatively, [send a new message](../api/user-sendmail.md) in a single action, or create a draft [to forward](../api/message-createforward.md), [to reply](../api/message-createreply.md) or [to reply-all](../api/message-createreplyall.md) to an existing message.
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,18 +55,18 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## Request body
 When using JSON format, provide a JSON representation of the [message](../resources/message.md) object.
 
-If you want to use **mention** to call out another user in the new message:
-
+To use **mention** to call out another user in the new message:
 - Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
 - For each mention in the **mentions** property, you must specify the **mentioned** property.
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body. Do not include parameters.
+When specifying the body in MIME format, provide the MIME content with the applicable Internet Message Headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [message](../resources/message.md) object in the response body.
+
 If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
 
 ## Examples

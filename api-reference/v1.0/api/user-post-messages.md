@@ -21,7 +21,7 @@ When using MIME format:
 - Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
 - Add any attachments and S/MIME properties into the MIME content.
 
-Save the draft in any folder and optionally update it before sending. To save to the Drafts folder, use the /messages shortcut.
+You can save the draft in any folder. To save it in the Drafts folder, use the /messages shortcut.
 
 [Send](/graph/api-reference/beta/api/message-send.md) the draft message in a subsequent operation.
 
@@ -56,11 +56,12 @@ When using JSON format, provide a JSON representation of [message](../resources/
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body. Do not include parameters.
+When specifying the body in MIME format, provide the MIME content with the applicable Internet Message Headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.
 
 ## Response
 
 If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
+
 If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
 
 ## Examples

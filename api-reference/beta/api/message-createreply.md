@@ -59,10 +59,12 @@ When using JSON format, provide a JSON object with the following parameters.
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
 
-When specifying the body in MIME format no parameters are required, include only the MIME content as **a Base64-enconded string** in the request body.
+When specifying the body in MIME format, provide the MIME content with the applicable Internet Message Headers, all encoded in **base64** format in the request body.
 
 ## Response
 If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
+
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
 
 ## Examples
 ### Example 1: Create a draft in JSON format to reply to an existing message

@@ -55,8 +55,7 @@ When using JSON format, provide a JSON object with the following parameters.
 |Message|[Message](../resources/message.md)|The message to send. Required.|
 |SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.|
 
-If you want to use **mention** to call out another user in the new message:
-
+To use **mention** to call out another user in the new message:
 - Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
 - For each mention in the **mentions** property, you must specify the **mentioned** property.
 
@@ -65,6 +64,7 @@ When specifying the body in MIME format, provide the MIME content as **a base64-
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+
 If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
 
 ## Examples
