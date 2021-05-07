@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Represents the scheduling of an Azure AD [access review](accessreviewsv2-root.md). 
 
-An accessReviewScheduleDefinition contains a list of [accessReviewInstance](accessreviewinstance.md) objects. Each recurrence of the schedule definition will create an instance. Instances also represent each unique resource being reviewed. If a schedule definition reviews multiple resources (including multiple groups), each resource will have a unique instance per each recurrence. In the case of a one-time review, only one instance will be created per resource.
+An accessReviewScheduleDefinition contains a list of [accessReviewInstance](accessreviewinstance.md) objects. Each recurrence of the schedule definition creates an instance. Instances also represent each unique resource being reviewed. If a schedule definition reviews multiple resources (including multiple groups), each resource has a unique instance per each recurrence. In the case of a one-time review, only one instance is created per resource.
 
 ## Methods
 
@@ -46,7 +46,7 @@ An accessReviewScheduleDefinition contains a list of [accessReviewInstance](acce
 | reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of access review scopes is used to define who are the reviewers. See [accessReviewReviewerScope](accessreviewreviewerscope.md). Required on create. Supports `$select`.|
 | backupReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See [accessReviewReviewerScope](accessreviewreviewerscope.md). Supports `$select`. <br>**Note:** This property has been replaced by **fallbackReviewers**. However, specifying either **backupReviewers** or **fallbackReviewers** will automatically populate the same values to the other property.|
 | fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See [accessReviewReviewerScope](accessreviewreviewerscope.md). Supports `$select`.|
-| instances |[accessReviewInstance](../resources/accessreviewinstance.md) collection|  Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there will be an instance for each recurrence. |
+| instances |[accessReviewInstance](../resources/accessreviewinstance.md) collection|  Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence. |
 
 ## Relationships
 

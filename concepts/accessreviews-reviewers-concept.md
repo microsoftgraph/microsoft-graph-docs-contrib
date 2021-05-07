@@ -3,6 +3,8 @@ title: "Assign reviewers to your access review definition"
 description: "Use the reviewers property of accessReviewsScheduleDefinition to assign reviewers of your access review."
 author: "isabelleatmsft"
 localization_priority: Normal
+ms.prod: "governance"
+doc_type: resourcePageType
 ---
 
 # Assign reviewers to your access review definition
@@ -14,13 +16,15 @@ Azure AD [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=gr
 
 The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource, a property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true).  In addition, you can specificy fallback reviewers using **backupReviewers** or **fallbackReviewers**, another property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true)
 
-Note that this property is not required when creating a self-review (where users review their own access).
+This property is not required when a self-review (where users review their own access) is created.
 
-### Use accessReviewReviewerScope to configure reviewers
+## Configure reviewers
 
-To configure the reviewers and/or fallback reviewers, set the values of **query**, **queryRoot**, and **queryType** properties of accessReviewReviewerScope. [See the accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true) resource for descriptions of these properties.
+To configure the reviewers and fallback reviewers, set the values of **query**, **queryRoot**, and **queryType** properties of an accessReviewReviewerScope. [See the accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true) resource for descriptions of these properties.
 
 Example configurations of the **reviewers** or **backupReviewers** property using the accessReviewReviewerScope include the following:
+
+### Examples
 
 #### Example 1: A specific user as the reviewer
 

@@ -57,14 +57,16 @@ The following table shows the properties accepted to create an accessReview.
 ## Response
 If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
 
-## Example 1: Create an access review on a group
+## Examples
+
+### Example 1: Create an access review on a group
 
 This is an example of creating an access review with the following settings:
 + The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
 + A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.
 + It recurs weekly and continues indefinitely.
 
-### Request
+#### Request
 In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 
@@ -132,7 +134,7 @@ Content-type: application/json
 ---
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -184,7 +186,7 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Create an access review on all teams with inactive guest users
+### Example 2: Create an access review on all teams with inactive guest users
 
 This is an example of creating an access review with the following settings:
 + The review reviews all teams with inactive guest users. The period of inactivity is 30 days from the start date of the access review.
@@ -192,7 +194,7 @@ This is an example of creating an access review with the following settings:
 + It recurs on the third day of every quarter and continues indefinitely.
 + **autoApplyDecisionsEnabled** is set to `true` with the **defaultDecision** set to `Deny`.
 
-### Request
+#### Request
 In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 <!-- {
   "blockType": "request",
@@ -253,7 +255,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -314,14 +316,14 @@ Content-type: application/json
 }
 ```
 
-## Example 3: Create an access review of all users to a service principal
+### Example 3: Create an access review of all users to a service principal
 
 This is an example of creating an access review with the following settings:
 + The review reviews user access to a service principal.
 + The people managers are the reviewers and backup reviewers are the members of a group.
 + It recurs semi-annually and ends 1 year from the startDate.
 
-### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -394,7 +396,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

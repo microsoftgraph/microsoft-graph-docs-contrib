@@ -21,7 +21,7 @@ For **scope** property on an [accessReviewScheduleDefinition](accessreviewschedu
 
 For **reviewers** property on an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) see [accessReviewReviewerScope](accessreviewreviewerscope.md). See also how to [assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept.md).
 
-Note that specifying the OData type in the **scope** is highly recommended for all types but required for [principalResourceMembershipsScope](principalresourcemembershipsscope.md) and [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md).
+Specifying the OData type in the **scope** is highly recommended for all types but required for [principalResourceMembershipsScope](principalresourcemembershipsscope.md) and [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md).
 
 ## Properties
 None.

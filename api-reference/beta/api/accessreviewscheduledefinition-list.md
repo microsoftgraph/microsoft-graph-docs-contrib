@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- The signed-in user must also be in a directory role that permits them to read an access review. See access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks)
+ The signed-in user must also be in a directory role that permits them to read an access review. See access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).
 
 ## HTTP request
 
@@ -42,15 +42,15 @@ GET /identityGovernance/accessReviews/definitions
 This method supports the `$select`, `$top`, `$skip`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Use the $filter query parameter
-The `$filter` query parameter with the `contains` operator is supported on the **scope** property of accessReviewScheduleDefinition. The request statement will take on the following format:
+The `$filter` query parameter with the `contains` operator is supported on the **scope** property of accessReviewScheduleDefinition. Use the following format for the request:
 
 ```http
 GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
 ```
 
-where the value of `{object}` can be one of the following:
+The value of `{object}` can be one of the following:
 
-|Value of {object}|Description|
+|Value|Description|
 |:---     |:---       |
 |`/groups`  |List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).|
 |`/groups/{group id}`  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|
@@ -58,7 +58,7 @@ where the value of `{object}` can be one of the following:
 |`accessPackageAssignments`  |List every accessReviewScheduleDefinition on an access package.|
 |`roleAssignmentScheduleInstances`  |List every accessReviewScheduleDefinition for service principals assigned to privileged role.|
 
-Note that `$filter` is currently not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.
+The `$filter` query parameter is not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.
 
 
 ## Request headers
@@ -70,8 +70,11 @@ Do not supply a request body.
 ## Response
 If successful, this method returns a `200 OK` response code and an array of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects in the response body.
 
-## Example 1: List the first one hundred access review definitions
-### Request
+## Examples
+
+### Example 1: List the first one hundred access review definitions
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +102,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ---
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -166,8 +169,9 @@ Content-type: application/json
 ```
 
 
-## Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in the tenant
-### Request
+### Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in the tenant
+
+#### Request
 The following example shows a request to retrieve all the access review series in a tenant.
 
 <!-- {
@@ -178,7 +182,7 @@ The following example shows a request to retrieve all the access review series i
 GET https://graph.microsoft.com//beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
 ```
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

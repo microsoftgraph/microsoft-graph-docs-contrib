@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The accessReviewReviewerScope defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). This is expressed as an OData query, which allows reviewers to be specified both as a static list of users (that is, specific users, group owners, group members) or dynamically (that is, the case where every user is reviewed by their manager). To create a self-review (where users review their own access), do not provide reviewers on [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) creation.
+The accessReviewReviewerScope defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). It is an OData query that allows reviewers to be specified both as a static list of users (that is, specific users, group owners, and group members) or dynamically in which every user is reviewed by their manager or by group owners. To create a self-review (where users review their own access), do not provide reviewers on [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) creation.
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
@@ -24,9 +24,9 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 | :-------------------------| :---------- | :---------- |
 | query | String | The query specifying who will be the reviewer. See table for examples. |
 | queryType | String | The type of query. Examples include `MicrosoftGraph` and `ARM`. |
-| queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (that is, `./manager` or `./owners`) is specified. Allowed value: `decisions`. |
+| queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, `./manager` or `./owners`, is specified. Possible value: `decisions`. |
 
-For more information on configuration options for reviewers, see [assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept).
+For more about configuration options for **reviewers**, see [assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept).
 
 
 ## Relationships

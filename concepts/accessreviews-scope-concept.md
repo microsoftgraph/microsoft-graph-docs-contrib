@@ -10,7 +10,7 @@ localization_priority: Normal
 Azure AD [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allow you to programmatically review access to your Azure AD resources. This can be all users, a set of users (for example, guest users only), as well as service principals and groups with access to Azure AD resources.
 
 > [!NOTE]
-> The [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
+> The [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
 
 The resources to review are configured in the **scope** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource. This property is of the type [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true), an abstract type inherited by the following resources that can be used to configure resources or groups of resources that access will be reviewed against.
 
@@ -22,12 +22,13 @@ The resources to review are configured in the **scope** property of the access r
 
 In this article, you will use these types of accessReviewScope to configure a wide range of Azure AD resources as the scope of your access review. This can help you to automate proactive review and keep control over access to resources in your organization.  
 
-
-### Use accessReviewQueryScope to configure scope
+## Use accessReviewQueryScope to configure scope
 
 To configure the scope using the accessReviewQueryScope type, set the values of its **query**, **queryRoot**, and **queryType** properties. [See the accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true) resource for descriptions of these properties.
 
 Example configurations of the **scope** property using the accessReviewQueryScope include the following:
+
+### Examples
 
 #### Example 1: Review all users assigned to a group
 
@@ -135,11 +136,13 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-### Use principalResourceMembershipsScope to configure scope
+## Use principalResourceMembershipsScope to configure scope
 
 The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition**. This includes reviewing access for multiple principals or groups of principals to multiple resources.
 
 Example configurations of the **scope** property using **principalResourceMembershipsScope** include the following:
+
+### Examples
 
 #### Example 1: Review access of all inactive guest users to a service principal
 
