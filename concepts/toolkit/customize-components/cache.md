@@ -7,7 +7,7 @@ author: adchau
 
 # Microsoft Graph Toolkit caching
 
-The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls. Calls are being cached per entity, eg. people, contact, photo. This allows one component to retrieve the data and other components to reuse it without calling Microsoft Graph.
+The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls. Calls are being cached per entity, such as people, contact, photo. This allows one component to retrieve the data and other components to reuse it without calling Microsoft Graph.
 
 > [!TIP]
 > For more information about which entities are cached by each component, see the component's documentation.
