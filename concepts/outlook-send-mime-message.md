@@ -12,9 +12,9 @@ ms.prod: "outlook"
 Email clients have the ability to send emails through Exchange in a MIME message format and communicate across multiple email platforms.
 
 Supported MIME features:
-- Send emails in MIME format: message body contents, attachments and sender/recipient information (CC and BCC).
+- Send emails with MIME content.
 - Send replies, reply-alls and forwarding emails.
-- Create drafts in Exchange with MIME content: message body, attachments and recipient information.
+- Create drafts in Exchange with MIME content.
 - Attach S/MIME signatures to emails.
 - S/MIME encrypted email contents.
 
