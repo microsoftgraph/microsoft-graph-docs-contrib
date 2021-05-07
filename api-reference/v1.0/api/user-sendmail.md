@@ -13,19 +13,18 @@ Namespace: microsoft.graph
 
 Send the message specified in the request body using either JSON or MIME format.
 
-When using JSON format:
-- Optionally, include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
+When using JSON format you can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
 When using MIME format:
-- Provide the complete MIME content in a **base64-encoded string** in the request body. Microsoft Graph does not support editing MIME properties individually.
-- Include S/MIME properties as part of the **base64-encoded string**.
+- Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- Add any attachments and S/MIME properties into the MIME content.
 
 This method saves the message in the **Sent Items** folder.
 
 Alternatively, [create a draft message](../api/user-post-messages.md) to send later.
 
 ## Permissions
-This API requires one of the following permissions. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

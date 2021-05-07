@@ -1,6 +1,6 @@
 ---
 title: "message: createReply"
-description: "Create a draft of a reply message to include a comment or update any message properties "
+description: "Create a draft to reply to the sender of a message in either JSON or MIME format."
 author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
@@ -15,17 +15,18 @@ Namespace: microsoft.graph
 
 Create a draft to reply to the sender of a [message](../resources/message.md) in either JSON or MIME format.
 
-You can then [send](../api/message-send.md) the draft message.
-
-When using JSON format:
-- You can include a comment or update any message properties all in one **createReply** call.
-- You can then [update](../api/message-update.md) the draft message.
-- You can specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- If **replyTo** is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in **replyTo**, and not the recipients in **from**. 
+When using JSON format, you can:
+- Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
+- If **replyTo** is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in **replyTo**, and not the recipients in **from**.
+- [Update](../api/message-update.md) the draft later to add reply content to the **body** or change other message properties.
 
 When using MIME format:
-- Microsoft Graph does not suppport editing MIME properties individually, the complete MIME content must be provided in a base64-encoded string.
-- S/MIME properties must be previously included in the base64-encoded string.
+- Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- Add any attachments and S/MIME properties into the MIME content.
+
+[Send](../api/message-send.md) the draft message in a subsequent operation.
+
+Alternatively, [reply to a message](../api/message-reply.md) in a single operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -162,8 +163,26 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a draft using MIME format to reply to an existing message
+### Example 2: Create a draft message in MIME format to reply to an existing message
 ##### Request
+<!-- {
+  "blockType": "request",
+  "name": "message_createReply_mime_v1"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/createReply
+Content-type: text/plain
+
+RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQGNvbnRvc28uY29tPgpUbzogTWVnYW4gQm93ZW4gPE1l
+Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
+bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM6IEludGVybmFsIFJlc3VtZSBTdWJtaXNzaW9uOiBT
+YWxlcyBBc3NvY2lhdGUKVGhyZWFkLUluZGV4OiBjb2RlY29kZWNvZGVoZXJlaGVyZWhlcmUKRGF0
+ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCA
+```
+
+##### Response
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -172,68 +191,54 @@ Content-type: application/json
 } -->
 
 ```http
-POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/createReply
-Content-Type: text/plain
-
-Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
-```
-##### Response
-Here is an example of the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#messages/$entity",
-    "@odata.etag": "W/\"CQAAABYAAADt09JRVj4bRqYt7q6MVBpAAAAiQc5k\"",
-    "id": "AAMkAGNhOWVmNmEyLTgwNjItNDI0NC05ZGI5LWZhYjc4MzcxZWE3YQBGAAAAAADW_NNy5NNRT51Qs4RFfm_PBwDt09JRVj4bRqYt7q6MVBpAAAAAAAEPAADt09JRVj4bRqYt7q6MVBpAAAAiTjnQAAA=",
-    "createdDateTime": "2021-04-23T18:15:43Z",
-    "lastModifiedDateTime": "2021-04-23T18:15:43Z",
-    "changeKey": "CQAAABYAAADt09JRVj4bRqYt7q6MVBpAAAAiQc5k",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('0aaa0aa0-0000-0a00-a00a-0000009000a0')/messages/$entity",
+    "@odata.etag": "W/\"AAAAAAAAAAAa00AAAa0aAaAa0a0AAAaAAAAaAa0a\"",
+    "id": "AAMkADA1MTAAAAqldOAAA=",
+    "createdDateTime": "2021-04-23T18:13:44Z",
+    "lastModifiedDateTime": "2021-04-23T18:13:44Z",
+    "changeKey": "AAAAAAAAAAAA00aaaa000aaA",
     "categories": [],
-    "receivedDateTime": "2021-04-23T18:15:43Z",
+    "receivedDateTime": "2021-04-23T18:13:44Z",
     "sentDateTime": "2021-02-28T07:15:00Z",
     "hasAttachments": false,
-    "internetMessageId": "<MWHPR1301MB219110214D76D9C282262279AD9A9@MWHPR1301MB2191.namprd13.prod.outlook.com>",
+    "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
     "subject": "Internal Resume Submission: Sales Associate",
-    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resu=e, which you can access here...https://my.sharepoint.com/personal/alexw_onmicrosoft_com/_layouts/15/guesta=cess.aspx?guestaccesstoken=Eja0z8%2fg%2f%2b1nKV84jw8oEusc",
+    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resu=e, which you can access here...",
     "importance": "normal",
-    "parentFolderId": "AQMkAGNhOWVmNmEyLTgwNjItNDI0NAAtOWRiOS1mYWI3ODM3MWVhN2EALgAAA9b403Lk01FPnVCzhEV_b48BAO3T0lFWPhtGpi3uroxUGkAAAAIBDwAAAA==",
-    "conversationId": "AAQkAGNhOWVmNmEyLTgwNjItNDI0NC05ZGI5LWZhYjc4MzcxZWE3YQAQAKbRazfqh_1BgUPWxUq9ZHM=",
-    "conversationIndex": "AQHXDt+LptFrN+qH7UGBQ9bFSr1kcw==",
+    "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
+    "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
+    "conversationIndex": "Adfsdfsdfsdfw==",
     "isDeliveryReceiptRequested": null,
     "isReadReceiptRequested": false,
     "isRead": true,
     "isDraft": true,
-    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWVmNmEyLTgwNjItNDI0NC05ZGI5LWZhYjc4MzcxZWE3YQBGAAAAAADW%2BNNy5NNRT51Qs4RFfm%2BPBwDt09JRVj4bRqYt7q6MVBpAAAAAAAEPAADt09JRVj4bRqYt7q6MVBpAAAAiTjnQAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWAvsurl=1&viewmodel=ReadMessageItem",
     "inferenceClassification": "focused",
     "body": {
         "contentType": "text",
-        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resu=e, which you can access here...https://my.sharepoint.com/personal/alexw_onmicrosoft_com/_layouts/15/guesta=cess.aspx?guestaccesstoken=Eja0z8%2fg%2f%2b1nKV84jw8oEuscdwLG3P18ubZNB9s=D2c%3d&docid=13501401738ab481baf94853c4ac9365f&rev=1Best Regards,Alex"
+        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resu=e, which you can access here... Regards,Alex"
     },
     "sender": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "AlexW@M365x765140.OnMicrosoft.com"
+            "address": "AlexW@contoso.com"
         }
     },
     "from": {
         "emailAddress": {
             "name": "Alex Wilber",
-            "address": "AlexW@M365x765140.OnMicrosoft.com"
+            "address": "AlexW@contoso.com"
         }
     },
     "toRecipients": [
         {
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "MeganB@M365x765140.OnMicrosoft.com"
+                "address": "MeganB@contoso.com"
             }
         }
     ],
@@ -247,6 +252,21 @@ Content-type: application/json
 
 ```
 
+If the request body includes malformed MIME content, this method returns the following error message.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

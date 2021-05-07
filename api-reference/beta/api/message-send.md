@@ -15,12 +15,14 @@ Namespace: microsoft.graph
 
 Send an existing draft message. 
 
-The draft message can be a new message [draft](../api/user-post-messages.md), [reply draft](../api/message-createreply.md), [reply-all draft](../api/message-createreplyall.md), or a [forward draft](../api/message-createforward.md). The message is then saved in the Sent Items folder.
+The draft message can be a new message [draft](../api/user-post-messages.md), [reply draft](../api/message-createreply.md), [reply-all draft](../api/message-createreplyall.md), or a [forward draft](../api/message-createforward.md). 
+
+This method saves the message in the **Sent Items** folder.
 
 Alternatively, [send a new message](../api/user-sendmail.md) in a single operation.
 
 ## Permissions
-This API requires one of the following permissions. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

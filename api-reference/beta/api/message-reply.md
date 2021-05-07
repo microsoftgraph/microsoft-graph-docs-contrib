@@ -13,23 +13,23 @@ Namespace: microsoft.graph.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reply to the sender of a message using either JSON or MIME format.
+Reply to the sender of a [message](../resources/message.md) using either JSON or MIME format.
 
-When using JSON format:
+When using JSON format, you can:
 - Add a comment or modify any updateable properties all in one **reply** call. 
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
 - If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 
 When using MIME format:
-- Provide the complete MIME content in a **base64-encoded string** in the request body. Microsoft Graph does not support editing MIME properties individually.
-- Include S/MIME properties as part of the **base64-encoded string**.
+- Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- Add any attachments and S/MIME properties into the MIME content.
 
 This method saves the message in the **Sent Items** folder.
 
 Alternatively, [create a draft to reply to a message](../api/message-createreply.md), and [send](../api/message-send.md) it later.
 
 ## Permissions
-This API requires one of the following permissions. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -152,7 +152,7 @@ HTTP/1.1 202 Accepted
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
 Content-Type: text/plain
 
-RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQE0zNjV4NzY1MTQwLk9uTWljcm9zb2Z0LmNvbT4KVG86IE1lZ2FuIEJvd2VuIDxNZWdhbkJATTM2NXg3NjUxNDAuT25NaWNyb3NvZnQuY29tPgpTdWJqZWN0OiBJbnRlcm5hbCBSZXN1bWUgU3VibWlzc2lvbjogU2FsZXMgQXNzb2NpYXRlClRocmVhZC1Ub3BpYzogSW50ZX...
+UmVjZWl2ZWQ6IGZyb20gY29udG9zby5jb20gKDEwLjE5NC4yNDEuMTk3KSBieSAKY29udG9zby5jb20gKDEwLjE5NC4yNDEuMTk3KSB3aXRoIE1pY3Jvc29mdCAKU01UUCBTZXJ2ZXIgKHZlcnNpb249VExTMV8yLCAKY2lwaGVyPVRMU19FQ0RIRV9SU0FfV0lUSF9BRVNfMjU2X0NCQ19TSEEzODRfUDI1NikgaWQgMTUuMS4xMzc0LjAgdmlhIE1haWxib3ggClRyYW5zcG9ydDsgTW9uLCA0IFNlcCAyMDE3IDAzOjAwOjA4IC0wNzAwIApSZWNlaXZlZDogZnJvbSBjb250b3NvLmNvbSAoMTAuMTk0LjI0MS4xOTcpIGJ5IApjb250b3NvLmNvbSAoMTAuMTk0LjI0MS4xOTcpIHdpdGggTWljcm9zb2Z0IApTTVRQIFNlcnZlciAodmVyc2lvbj1UTFMxXzIsIApjaXBoZXI9VExTX0VDREhFX1JTQV9XSVRIX0FFU18yNTZfQ0JDX1NIQTM4NF9QMjU2KSBpZCAxNS4xLjEzNzQuMDsgTW9uLCA0IFNlcCAKMjAxNyAwMzowMDowNyAtMDcwMCAKUmVjZWl2ZWQ6IGZyb20gY29udG9zby5jb20gCihmZTgwOjo1YmY6NTA1OTo0Y2EwOjUwMTcpIGJ5IGNvbnRvc28uY29tIAooZmU4MDo6NWJmOjUwNTk6NGNhMDo1MDE3JTEyKSB3aXRoIG1hcGkgaWQgMTUuMDEuMTM3NC4wMDA7IE1vbiwgNCBTZXAgMjAxNyAKMDM6MDA6MDEgLTA3MDAgCkZyb206IEFkbWluaXN0cmF0b3IgPGFkbWluQGNvbnRvc28uY29tPiAKVG86IEFkbWluaXN0cmF0b3IgPGFkbWluQGNvbnRvc28uY29tPiAKU3ViamVjdDogVGhpcyBlbWFpbCBoYXMgYXR0YWNobWVudC4gClRocmVhZC1Ub3BpYzogVGhpcyBlbWFpbCBoYXMgYXR0YWNobWVudC4gClRocmVhZC1JbmRleDogQVFIVEpXU0hTeXdNelN6OG8wT0p1ZDQ4bkc1MEdRPT0gCkRhdGU6IE1vbiwgNCBTZXAgMjAxNyAxMDowMDowMCArMDAwMCAKTWVzc2FnZS1JRDogCuKAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAryA8NGFhZGUyNTQ3Nzk4NDQxZWFiNTE4OGE3YTI0MzZiYzFAY29udG9zby5jb20+IApBY2NlcHQtTGFuZ3VhZ2U6IGVuLVVTIApDb250ZW50LUxhbmd1YWdlOiBlbi1VUyAKWC1NUy1FeGNoYW5nZS1Pcmdhbml6YXRpb24tQXV0aEFzOiBJbnRlcm5hbCAKWC1NUy1FeGNoYW5nZS1Pcmdhbml6YXRpb24tQXV0aE1lY2hhbmlzbTogMDQgClgtTVMtRXhjaGFuZ2UtT3JnYW5pemF0aW9uLUF1dGhTb3VyY2U6IArigK/igK/igK/igK/igK/igK/igK/igK/igK/igK/igK/igK/igK/igK/igK8gY29udG9zby5jb20gClgtTVMtSGFzLUF0dGFjaDogeWVzIApYLU1TLUV4Y2hhbmdlLU9yZ2FuaXphdGlvbi1OZXR3b3JrLU1lc3NhZ2UtSWQ6IArigK/igK/igK/igK/igK/igK/igK/igK/igK/igK/igK/igK/igK/igK/igK8gMGZmZGI0MDItZWMwMy00MmM4LTVkMzItMDhkNGYzN2JiNTE3IApYLU1TLUV4Y2hhbmdlLU9yZ2FuaXphdGlvbi1TQ0w6IC0xIApYLU1TLVRORUYtQ29ycmVsYXRvcjogClgtTVMtRXhjaGFuZ2UtT3JnYW5pemF0aW9uLVJlY29yZFJldmlld0NmbVR5cGU6IDAgCngtbXMtcHVibGljdHJhZmZpY3R5cGU6IEVtYWkKCmBgYGh0dHAKTUlNRS1WZXJzaW9uOiAxLjAgCkNvbnRlbnQtVHlwZTogbXVsdGlwYXJ0L21peGVkOyAK4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCvIGJvdW5kYXJ5PSJfMDA0XzRhYWRlMjU0Nzc5ODQ0MWVhYjUxODhhN2EyNDM2YmMxY29udG9zb18iIAogCi0tXzAwNF80YWFkZTI1NDc3OTg0NDFlYWI1MTg4YTdhMjQzNmJjMWNvbnRvc29fIApDb250ZW50LVR5cGU6IG11bHRpcGFydC9hbHRlcm5hdGl2ZTsgCuKAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAryBib3VuZGFyeT0iXzAwMF80YWFkZTI1NDc3OTg0NDFlYWI1MTg4YTdhMjQzNmJjMWNvbnRvc29fIiAKIAotLV8wMDBfNGFhZGUyNTQ3Nzk4NDQxZWFiNTE4OGE3YTI0MzZiYzFjb250b3NvXyAKQ29udGVudC1UeXBlOiB0ZXh0L3BsYWluOyBjaGFyc2V0PSJpc28tODg1OS0xIiAKQ29udGVudC1UcmFuc2Zlci1FbmNvZGluZzogcXVvdGVkLXByaW50YWJsZSAKIApUaGUgYXR0YWNobWVudCBpcyBhbiBlbWFpbC4gCiAKLS1fMDAwXzRhYWRlMjU0Nzc5ODQ0MWVhYjUxODhhN2EyNDM2YmMxY29udG9zb18gCkNvbnRlbnQtVHlwZTogdGV4dC9odG1sOyBjaGFyc2V0PSJpc28tODg1OS0xIiAKQ29udGVudC1UcmFuc2Zlci1FbmNvZGluZzogcXVvdGVkLXByaW50YWJsZSAKIAo8aHRtbD4gCjxoZWFkPiAKPG1ldGEgaHR0cC1lcXVpdj0zRCJDb250ZW50LVR5cGUiIGNvbnRlbnQ9M0QidGV4dC9odG1sOyBjaGFyc2V0PTNEaXNvLTg4NTktPSAKMSI+IAo8c3R5bGUgdHlwZT0zRCJ0ZXh0L2NzcyIgc3R5bGU9M0QiZGlzcGxheTpub25lOyI+PCEtLSBQIHttYXJnaW4tdG9wOjA7bWFyZ2k9IApuLWJvdHRvbTowO30gLS0+PC9zdHlsZT4gCjwvaGVhZD4gCjxib2R5IGRpcj0zRCJsdHIiPiAKPGRpdiBpZD0zRCJkaXZ0YWdkZWZhdWx0d3JhcHBlciIgc3R5bGU9M0QiZm9udC1zaXplOjEycHQ7Y29sb3I6IzAwMDAwMDtmb250PSAKLWZhbWlseTpDYWxpYnJpLEhlbHZldGljYSxzYW5zLXNlcmlmOyIgZGlyPTNEImx0ciI+IAo8cD5UaGUgYXR0YWNobWVudCBpcyBhbiBlbWFpbC48L3A+IAo8L2Rpdj4gCjwvYm9keT4gCjwvaHRtbD4gCiAKLS1fMDAwXzRhYWRlMjU0Nzc5ODQ0MWVhYjUxODhhN2EyNDM2YmMxY29udG9zb18tLSAKIAotLV8wMDRfNGFhZGUyNTQ3Nzk4NDQxZWFiNTE4OGE3YTI0MzZiYzFjb250b3NvXyAKQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW07IG5hbWU9IkF0dGFjaG1lbnQgZW1haWwuZW1sIiAKQ29udGVudC1EZXNjcmlwdGlvbjogQXR0YWNobWVudCBlbWFpbC5lbWwgCkNvbnRlbnQtRGlzcG9zaXRpb246IGF0dGFjaG1lbnQ7IGZpbGVuYW1lPSJBdHRhY2htZW50IGVtYWlsLmVtbCI7IHNpemU9NDA4OyAK4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCv4oCvIGNyZWF0aW9uLWRhdGU9Ik1vbiwgMDQgU2VwIDIwMTcgMDk6NTk6NDMgR01UIjsgCuKAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAr+KAryBtb2RpZmljYXRpb24tZGF0ZT0iTW9uLCAwNCBTZXAgMjAxNyAwOTo1OTo0MyBHTVQiIApDb250ZW50LVRyYW5zZmVyLUVuY29kaW5nOiBiYXNlNjQgCiAKUm5KdmJUb0pRV1J0YVc1cGMzUnlZWFJ2Y2lBOFlXUnRhVzVBZEdWdVlXNTBMVVZZU0VJdE1UUTNNUzVqYjIwK0RRcFRaVzUwT2dsTiAKYjI1a1lYa3NJRk5sY0hSbGJXSmxjaUEwTENBeU1ERTNJRE02TWpZZ1VFME5DbFJ2T2dsVGNtbDJZWEprYUdGdUlFaGxZbUpoY2cwSyAKVTNWaWFtVmpkRG9KUVhSMFlXTm9iV1Z1ZENCbGJXRnBiQTBLRFFwSklIZHBiR3dnWVhSMFlXTm9JSFJvYVhNZ1pXMWhhV3dnZEc4ZyAKWVc1dmRHaGxjaUJ0WVdsc0xnMEsgCiAKLS1fMDA0XzRhYWRlMjU0Nzc5ODQ0MWVhYjUxODhhN2EyNDM2YmMxY29udG9zb18tLSA=
 
 ```
 

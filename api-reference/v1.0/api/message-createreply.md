@@ -11,23 +11,23 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a draft to reply to a [message](../resources/message.md) in either JSON or MIME format. 
+Create a draft to reply to the sender of a [message](../resources/message.md) in either JSON or MIME format.
 
-When using JSON format:
+When using JSON format, you can:
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-- Optionally, [update](../api/message-update.md) the draft later to add reply content to the **body** or change other message properties.
+- If **replyTo** is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in **replyTo**, and not the recipients in **from**.
+- [Update](../api/message-update.md) the draft later to add reply content to the **body** or change other message properties.
 
 When using MIME format:
-- Provide the complete MIME content in a **base64-encoded string** in the request body. Microsoft Graph does not support editing MIME properties individually.
-- Include S/MIME properties as part of the **base64-encoded string**.
+- Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- Add any attachments and S/MIME properties into the MIME content.
 
 [Send](../api/message-send.md) the draft message in a subsequent operation.
 
-Alternatively, [reply to a message](../api/message-reply.md) in a single action.
+Alternatively, [reply to a message](../api/message-reply.md) in a single operation.
 
 ## Permissions
-This API requires one of the following permissions. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
