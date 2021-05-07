@@ -609,6 +609,8 @@ items:
           href: api/conversation-list-threads.md
         - name: Create conversation thread
           href: api/conversation-post-threads.md
+        - name: Update conversation thread
+          href: api/conversationthread-update.md
         - name: List accepted senders
           href: api/group-list-acceptedsenders.md
         - name: Create accepted sender
