@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [timeCard](../resources/timeCard.md) instance in the [schedule](../resources/schedule.md).
+Create a [timeCard](../resources/timeCard.md) instance in a [schedule](../resources/schedule.md).
 
 ## Permissions
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [timeCard](../resources/timecard.md) entries in the [schedule](../resources/schedule.md).
+Retrieve a list of [timeCard](../resources/timecard.md) entries in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
