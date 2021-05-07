@@ -813,6 +813,13 @@ Namespace: microsoft.graph
 |listItem|
 |drive|
 
+### searchAlterationType values
+
+| Member | Description |
+|:---------------|:----------|
+|suggestion|Get search results for original user query and the suggested spelling correction information for typos in the query.|
+|modification|Get search results for corrected alterate query and the spelling correction information for typos.|
+
 ### bucketAggregationSortProperty values
 
 |Member|
