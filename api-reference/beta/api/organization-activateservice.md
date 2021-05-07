@@ -15,12 +15,12 @@ Namespace: microsoft.graph
 
 ## Description
 
-The **activateService** object  is used to activate a service for an organization. This operation requires administrator privileges to run.
-
+The **activateService** action is used to activate a service for an organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+In order to activate a service for an organization the requestor needs to have the _Company Administrator_ role with the following permissions.
 
 |Permission type|Permissions (from least to most privileged)|
 | :--- | :--- |
@@ -47,14 +47,12 @@ POST /organization/{organizationId}/activateService
 
 ## Request body
 In the request body, supply a JSON representation of the [activateService](../resources/activateService.md) object.
-At least one parameter must be defined for this action to be valid. There are three possible cases: You could have `service` or (`servicePlanId` and `skuId`). If all three parameters are defined, then the `servicePlanId` and `skuId` takes precedence.
+At least one property must be defined for this action to be valid. There are three possible cases: You could have `service` or (`servicePlanId` and `skuId`). If all three properties are defined, then the `servicePlanId` and `skuId` takes precedence.
 
-### Parameters
-
-| Parameter         | Type         | Description                           |
+| Property         | Type         | Description                           |
 | ----------------- | ------------ | ------------------------------------- |
-| service| Edm.String | The name of the service to activate. |
-| servicePlanId | Edm.Guid | The plan identifier of the service plan to activate. |
+| service| String | The name of the service to activate. |
+| servicePlanId | Guid | The plan identifier of the service plan to activate. |
 | skuId | Guid | The SKU identifier of the service plan. |
 
 ## Response
@@ -70,7 +68,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/organization/72f988bf-86f1-41af-91ab-2d7cd011db47/activateService
+POST https://graph.microsoft.com/beta/organization/{:organizationId}/activateService
 
 Content-Type: application/json
 {
@@ -81,7 +79,6 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

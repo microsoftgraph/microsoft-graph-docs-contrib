@@ -1,6 +1,6 @@
 ---
 title: "activateService resource type"
-description: "Payload that activates a service for an organization."
+description: "Activates a service for an organization."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **activateService** object  is used to activate a service for an organization.
+The **activateService** action is used to activate a service for an organization.
 
 ## Properties
 
