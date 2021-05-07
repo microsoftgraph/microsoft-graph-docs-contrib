@@ -12,9 +12,10 @@ Thank you for your interest in Microsoft Graph documentation!
 
 You can contribute to [Microsoft Graph documentation](https://developer.microsoft.com/graph/docs) in these ways:
 
-- Contribute to articles via the [public Microsoft Graph developer docs repository](https://github.com/microsoftgraph/microsoft-graph-docs)
-- Report documentation bugs via [GitHub Issues](https://github.com/microsoftgraph/microsoft-graph-docs/issues)
-- Add documentation requests to the [Office Developer Platform UserVoice](https://officespdev.uservoice.com)
+- Contribute to articles via the [public Microsoft Graph developer docs repository](https://github.com/microsoftgraph/microsoft-graph-docs).
+- Report documentation bugs via [GitHub Issues](https://github.com/microsoftgraph/microsoft-graph-docs/issues).
+- Add or vote for documentation requests at [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
+
 
 ## Before we can accept your pull request
 
@@ -37,7 +38,9 @@ You can download or digitally sign the Contribution License Agreement (CLA) [her
 
 ## Use GitHub, Git, and this repository
 
-**Note:** Most of the information in this section can be found in [GitHub Help][] articles.  If you're familiar with Git and GitHub, skip to the **Contribute and edit content** section for the particulars of the code/content flow of this repository.
+**Note:** 
+- Most of the information in this section can be found in [GitHub Help][] articles.  If you're familiar with Git and GitHub, skip to the **Contribute and edit content** section for the particulars of the code/content flow of this repository.
+- Before contributing for the first time to Microsoft Graph docs, employees of Microsoft should please complete configuring their GitHub accounts. See the **Document** section of the internal Microsoft Graph Partners onboarding documentation for details.
 
 ### Setting up your fork of the repository
 
