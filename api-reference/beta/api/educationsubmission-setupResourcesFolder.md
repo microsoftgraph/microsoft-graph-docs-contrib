@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# educationSubmission: setupResourcesFolder
+# educationSubmission: setUpResourcesFolder
 
 Namespace: microsoft.graph
 
