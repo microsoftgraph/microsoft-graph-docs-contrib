@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [unifiedRoleAssignmentMultiple](../resources/cloudpc-rbac-unifiedroleassignmentmultiple.md) object. Use this object to create role assignments.
+Create a new [unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta) object. Use this object to create role assignments.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 

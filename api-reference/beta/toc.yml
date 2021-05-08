@@ -9483,10 +9483,10 @@ items:
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
         - name: Cloud PC role management
-          href: resources/cloudpc-rbac-rolemanagement.md
+          href: resources/rolemanagement.md
           items:
           - name: Role definition
-            href: resources/cloudpc-rbac-unifiedroledefinition.md
+            href: resources/unifiedroledefinition.md
             items:
             - name: List
               href: api/cloudpcrbacapplication-list-roledefinitions.md

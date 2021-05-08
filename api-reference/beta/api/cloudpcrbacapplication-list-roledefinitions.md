@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [unifiedRoleDefinition](../resources/cloudpc-rbac-unifiedroledefinition.md) objects for the cloud pc provider.
+Get a list of [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) objects for the cloud pc provider.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
