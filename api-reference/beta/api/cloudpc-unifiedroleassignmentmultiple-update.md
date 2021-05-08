@@ -63,7 +63,7 @@ Content-type: application/json
 
 { 
     "displayName": "NewName",
-    "description": ""
+    "description": "A new roleAssignment"
 }
 ```
 
@@ -83,8 +83,8 @@ HTTP/1.1 200 OK
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleAssignments/$entity",
     "id": "dbe9d288-fd87-41f4-b33d-b498ed207096",
-    "description": null,
-    "displayName": "My test role assignment 1",
+    "description": "A new roleAssignment",
+    "displayName": "NewName",
     "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
     "principalIds": [
         "0aeec2c1-fee7-4e02-b534-6f920d25b300",
