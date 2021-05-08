@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [unif
 PATCH https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096
 Content-type: application/json
 
-{ 
+{
     "displayName": "NewName",
     "description": "A new roleAssignment"
 }
@@ -80,6 +80,8 @@ Content-type: application/json
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleAssignments/$entity",
     "id": "dbe9d288-fd87-41f4-b33d-b498ed207096",
