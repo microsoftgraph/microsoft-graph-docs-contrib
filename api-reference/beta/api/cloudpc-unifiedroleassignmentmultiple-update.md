@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an existing [unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta) object.
+Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object.
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Permissions
 
@@ -46,7 +46,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [unifiedAssignmentMultiple](../resources/cloudpc-rbac-unifiedroleassignmentMultiple.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [unifiedAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object in the response body.
 
 ## Example
 
@@ -62,7 +62,8 @@ PATCH https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssig
 Content-type: application/json
 
 { 
-    "principalIds": ["0aeec2c1-fee7-4e02-b534-6f920d25b300", "2d5386a7-732f-44db-9cf8-f82dd2a1c0e0"]
+    "displayName": "NewName",
+    "description": ""
 }
 ```
 
