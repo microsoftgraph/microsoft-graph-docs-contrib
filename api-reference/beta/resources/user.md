@@ -186,7 +186,7 @@ This resource supports:
 | infoCatalogs | String collection | Identifies the info segments assigned to the user. Returned by default. |
 | interests | String collection | A list for the user to describe their interests. <br><br>Returned only on `$select`. |
 | isResourceAccount | Boolean | Do not use – reserved for future use. |
-| jobTitle | String | The user's job title. Maximum length is 128 characters. <br><br>Returned by default. Supports `$filter`.|
+| jobTitle | String | The user's job title. Maximum length is 128 characters. <br><br>Returned by default. Supports `$filter` (`eq` and `startsWith` operators).|
 | lastPasswordChangeDateTime | DateTimeOffset | The time when this Azure AD user last changed their password. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` <br><br>Returned only on `$select`. Read-only. |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on `$select`. |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) collection | State of license assignments for this user. <br><br>Returned only on `$select`. Read-only. |
