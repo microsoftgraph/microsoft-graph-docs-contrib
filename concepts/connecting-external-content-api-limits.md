@@ -1,13 +1,13 @@
 ---
-title: "Graph Connector API limits"
-description: "Graph Connector API limits"
+title: "Microsoft Graph connector API limits"
+description: "Microsoft Graph connector API limits"
 author: mecampos
 localization_priority: Priority
 ms.author: mecampos
 
 ---
 
-# API limits
+# Microsoft Graph connector API limits
 
 This topic describes implementation and operational limits for Microsoft Graph connectors. Keep these limits in mind when designing connectors.
 
@@ -30,8 +30,7 @@ This topic describes implementation and operational limits for Microsoft Graph c
 
 | **Limit** | **Description** |
 | --- | --- |
-| **128 chracters** | The maximum length of the ID string of an [external group](../api-reference/beta/resources/externalgroup.md). Must be unique within a connection. Only alpha-numeric characters are supported. |
-
+| **128 characters** | The maximum length of the ID string of an [external group](../api-reference/beta/resources/externalgroup.md). Must be unique within a connection. Only alpha-numeric characters are supported. |
 | **1000 requests/sec** | The maximum number of requests allowed per second in the group administration [throttling](#throttling) threshold. |
 
 ## Item ingestion
