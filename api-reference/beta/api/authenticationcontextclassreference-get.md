@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationContextClassReferences/{id}
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationContextClassReferences/c1
 ```
 
 

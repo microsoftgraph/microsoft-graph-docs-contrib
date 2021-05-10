@@ -65,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationContextClassReferences/{id}
+PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationContextClassReferences/c1
 Content-type: application/json
 
 {
