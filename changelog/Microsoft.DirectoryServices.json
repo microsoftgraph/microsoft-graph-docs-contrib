@@ -11,7 +11,7 @@
           "Target": "application"
         },
         {
-          "Id": "655b09e2-5050-4131-9721-cc32f62f3969",
+          "Id": "1f04a81e-3460-4d61-8be8-f2fe1571ed2d",
           "ApiChange": "Property",
           "ChangedApiName": "servicePrincipal",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "servicePrincipal"
         }
       ],
-      "Id": "655b09e2-5050-4131-9721-cc32f62f3969",
+      "Id": "1f04a81e-3460-4d61-8be8-f2fe1571ed2d",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-05-10T00:00:00",
