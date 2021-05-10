@@ -7,7 +7,7 @@
                     "ApiChange": "Permissions",
                     "ChangedApiName": "cloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added supported app only permissions for [cloudPc-get](https://docs.microsoft.com/en-us/graph/api/cloudPc-get?view=graph-rest-beta), [cloudPc-list](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-beta), and [cloudPc-reprovisoin](https://docs.microsoft.com/en-us/graph/api/cloudPc-reprovison?view=graph-rest-beta).",
+                    "Description": "Added supported app only permissions for [get cloudPC](https://docs.microsoft.com/en-us/graph/api/cloudPc-get?view=graph-rest-beta), [list cloudPCs](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-beta), and [reprovisoin CloudPc](https://docs.microsoft.com/en-us/graph/api/cloudPc-reprovison?view=graph-rest-beta).",
                     "Target": "cloudPc"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Permissions",
                     "ChangedApiName": "cloudPcDeviceImage",
                     "ChangeType": "Addition",
-                    "Description": "Added supported app only permissions for [cloudPcdeviceImage-get](https://docs.microsoft.com/en-us/graph/api/cloudPcdeviceimage-get?view=graph-rest-beta), [cloudPcdeviceImage-list](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-deviceimages?view=graph-rest-beta), [cloudPcdeviceImage-post](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-beta), [cloudPcdeviceImage-delete](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-delete?view=graph-rest-beta) and [cloudPcdeviceImage-getSourceImages](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta).",
+                    "Description": "Added supported app only permissions for [get cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/cloudPcdeviceimage-get?view=graph-rest-beta), [list cloudPcdeviceImages](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-deviceimages?view=graph-rest-beta), [create cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-beta), [delete cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-delete?view=graph-rest-beta) and [get sourceImages](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta).",
                     "Target": "cloudPcDeviceImage"
                 },
                 {
@@ -23,7 +23,7 @@
                     "ApiChange": "Permissions",
                     "ChangedApiName": "cloudPcOnpremisesConnection",
                     "ChangeType": "Addition",
-                    "Description": "Added supported app only permissions for [cloudPcOnpremisesConnection-get](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-get?view=graph-rest-beta), [cloudPcOnpremisesConnection-list](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta) and [cloudPcOnpremisesConnection-update](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta).",
+                    "Description": "Added supported app only permissions for [get cloudPcOnpremisesConnection](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-get?view=graph-rest-beta), [list cloudPcOnpremisesConnections](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta) and [update cloudPcOnpremisesConnection](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta).",
                     "Target": "cloudPcOnpremisesConnection"
                 },
                 {
@@ -31,7 +31,7 @@
                     "ApiChange": "Permissions",
                     "ChangedApiName": "cloudPcProvisionPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added supported app only permissions for [cloudPcProvisionPolicy-get](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-get?view=graph-rest-beta), [cloudPcProvisionPolicy-list](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-provisioningpolicies?view=graph-rest-beta), [cloudPcProvisionPolicy-post](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-post-provisioningpolicies?view=graph-rest-beta), [cloudPcProvisionPolicy-delete](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-delete?view=graph-rest-beta), [cloudPcProvisionPolicy-update](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-update?view=graph-rest-beta) and [cloudPcProvisionPolicy-assign](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta).",
+                    "Description": "Added supported app only permissions for [get cloudPcProvisionPolicy](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-get?view=graph-rest-beta), [list cloudPcProvisionPolicies](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-provisioningpolicies?view=graph-rest-beta), [create cloudPcProvisionPolicy](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-post-provisioningpolicies?view=graph-rest-beta), [delete cloudPcProvisionPolicy](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-delete?view=graph-rest-beta), [update cloudPcProvisionPolicy](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-update?view=graph-rest-beta) and [assign cloudPcProvisionPolicy](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta).",
                     "Target": "cloudPcProvisionPolicy"
                 }
             ],
