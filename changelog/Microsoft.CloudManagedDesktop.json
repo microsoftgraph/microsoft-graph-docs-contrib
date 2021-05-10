@@ -19,6 +19,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "98da5315-2d5c-457c-a761-28df4b737c2b",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckUnsupportedVNetRegion",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckUnsupportedVNetRegion` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "98da5315-2d5c-457c-a761-28df4b737c2b",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-05T15:52:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {  
+            "ChangeList": [
+                {
                     "Id": "354f1cbe-9671-4608-8027-eb7dce79a0b7",
                     "ApiChange": "Member",
                     "ChangedApiName": "adJoinCheckAccessDenied",
