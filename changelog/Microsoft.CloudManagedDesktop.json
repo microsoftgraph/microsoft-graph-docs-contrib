@@ -15,7 +15,7 @@
                     "ApiChange": "Permissions",
                     "ChangedApiName": "cloudPcDeviceImage",
                     "ChangeType": "Addition",
-                    "Description": "Added support for app-only permissions to the [Gett cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/cloudPcdeviceimage-get?view=graph-rest-beta), [List cloudPcdeviceImages](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-deviceimages?view=graph-rest-beta), [Create cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-beta), [Delete cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-delete?view=graph-rest-beta) and [Get sourceImages](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta) methods.",
+                    "Description": "Added support for app-only permissions to the [Get cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/cloudPcdeviceimage-get?view=graph-rest-beta), [List cloudPcdeviceImages](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-deviceimages?view=graph-rest-beta), [Create cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-beta), [Delete cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-delete?view=graph-rest-beta) and [Get sourceImages](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta) methods.",
                     "Target": "cloudPcDeviceImage"
                 },
                 {
