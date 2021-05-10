@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "655b09e2-5050-4131-9721-cc32f62f3969",
+          "ApiChange": "Resource",
+          "ChangedApiName": "application",
+          "ChangeType": "Addition",
+          "Description": "Added app-only permission **Application.ReadWrite.OwnedBy** for the [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        },
+        {
+          "Id": "655b09e2-5050-4131-9721-cc32f62f3969",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the **disabledByMicrosoftStatus** for the [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "655b09e2-5050-4131-9721-cc32f62f3969",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-05-10T00:00:00",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    }, 
+    {
+      "ChangeList": [
+        {
           "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",
