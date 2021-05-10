@@ -7,8 +7,6 @@ ms.author: mecampos
 
 ---
 
-
-
 # Microsoft Graph connectors overview
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) is a complete, intelligent solution that empowers users and organizations with innovative productivity experiences and rich insights to increase efficiency and drive business growth. Microsoft Graph is the data fabric that powers these intelligent experiences, and the Graph API provides access to this data and intelligence.
@@ -27,11 +25,11 @@ The following diagram provides a high-level overview of Microsoft Graph connecto
 ### Build your own custom connector
 We have 100+ connectors built by Microsoft and partners that enable you to connect to popular Microsoft and non-Microsoft services. Examples of existing connectors include Azure services, Box, ServiceNow, SalesForce, Google services, MediaWiki, and more.
 
-While these connectors help connect to popular services, you may want to integrate with services that aren't available in the existing [connectors gallery](https://docs.microsoft.com/microsoftsearch/connectors-gallery). In such situations, you can build a custom connector using the Microsoft Graph Connector APIs to bring the external data you need into Microsoft 365 experiences such as Microsoft Search (and many more coming soon) in your organization.
+While these connectors help connect to popular services, you may want to integrate with services that aren't available in the existing [connectors gallery](https://docs.microsoft.com/microsoftsearch/connectors-gallery). In such situations, you can build a custom connector using the Microsoft Graph connector APIs to bring the external data you need into Microsoft 365 experiences such as Microsoft Search (and many more coming soon) in your organization.
 
 ### Get started with custom Graph connectors:
-* [Graph Connector API overview](connecting-external-content-connectors-api-overview.md)
-* [Try Graph Connector APIs using Postman](connecting-external-content-connectors-api-postman.md)
+* [Microsoft Graph connectors API overview](connecting-external-content-connectors-api-overview.md)
+* [Try Microsoft Graph connectors APIs using Postman](connecting-external-content-connectors-api-postman.md)
 <!---**(Articles coming next)**
 * [Build your first custom connector with Microsoft Graph]()
 --->
