@@ -556,6 +556,8 @@ items:
           href: api/group-list-owners.md
         - name: List photos
           href: api/group-list-photos.md
+        - name: List permission grants
+          href: api/group-list-permissiongrants.md
         - name: Permanently delete group
           href: api/directory-deleteditems-delete.md
         - name: Remove favorite
@@ -1500,6 +1502,19 @@ items:
             href: api/ediscovery-legalhold-update.md
           - name: Delete
             href: api/ediscovery-legalhold-delete.md
+        - name: Non-custodial data sources
+          href: resources/ediscovery-noncustodialdatasource.md
+          items:
+          - name: List
+            href: api/ediscovery-noncustodialdatasource-list.md
+          - name: Create
+            href: api/ediscovery-noncustodialdatasource-post.md
+          - name: Get
+            href: api/ediscovery-noncustodialdatasource-get.md
+          - name: List datasource
+            href: api/ediscovery-noncustodialdatasource-list-datasource.md
+          - name: Release
+            href: api/ediscovery-noncustodialdatasource-release.md
         - name: Review set
           href: resources/ediscovery-reviewset.md
           items:
@@ -9467,6 +9482,99 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+      - name: Device updates (preview)
+        displayName: Windows updates
+        items:
+        - name: Updates
+          href: resources/windowsupdates-updates.md
+        - name: Catalog
+          items:
+          - name: Catalog
+            href: resources/windowsupdates-catalog.md
+          - name: Feature update catalog entry
+            href: resources/windowsupdates-featureupdatecatalogentry.md
+          - name: Quality update catalog entry
+            href: resources/windowsupdates-qualityupdatecatalogentry.md
+          - name: List catalog entries
+            href: api/windowsupdates-catalog-list-entries.md
+        - name: Deployment
+          href: resources/windowsupdates-deployment.md
+          items:
+          - name: List deployments
+            href: api/windowsupdates-updates-list-deployments.md
+          - name: Create deployment
+            href: api/windowsupdates-updates-post-deployments.md
+          - name: Get deployment
+            href: api/windowsupdates-deployment-get.md
+          - name: Update deployment
+            href: api/windowsupdates-deployment-update.md
+          - name: Delete deployment
+            href: api/windowsupdates-deployment-delete.md
+          - name: Deployable content
+            items:
+            - name: Expedited quality update reference
+              href: resources/windowsupdates-expeditedqualityupdatereference.md
+            - name: Feature update reference
+              href: resources/windowsupdates-featureupdatereference.md
+          - name: Deployment audience
+            items:
+            - name: Deployment audience
+              href: resources/windowsupdates-deploymentaudience.md
+            - name: List members
+              href: api/windowsupdates-deploymentaudience-list-members.md
+            - name: List exclusions
+              href: api/windowsupdates-deploymentaudience-list-exclusions.md
+            - name: Update members and exclusions
+              href: api/windowsupdates-deploymentaudience-updateaudience.md
+            - name: Update by ID
+              href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+        - name: Updatable asset
+          href: resources/windowsupdates-updatableasset.md
+          items:
+          - name: List updatable assets
+            href: api/windowsupdates-updates-list-updatableassets.md
+          - name: Get updatable asset
+            href: api/windowsupdates-updatableasset-get.md
+          - name: Delete updatable asset
+            href: api/windowsupdates-updatableasset-delete.md
+          - name: Azure AD device
+            href: resources/windowsupdates-azureaddevice.md
+            items:
+            - name: List Azure AD devices
+              href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
+            - name: Get Azure AD device
+              href: api/windowsupdates-azureaddevice-get.md
+            - name: Delete Azure AD device
+              href: api/windowsupdates-azureaddevice-delete.md
+            - name: Enroll in update management
+              href: api/windowsupdates-updatableasset-enrollassets.md
+            - name: Enroll by ID
+              href: api/windowsupdates-updatableasset-enrollassetsbyid.md
+            - name: Unenroll from update management
+              href: api/windowsupdates-updatableasset-unenrollassets.md
+            - name: Unenroll by ID
+              href: api/windowsupdates-updatableasset-unenrollassetsbyid.md
+          - name: Updatable asset group
+            href: resources/windowsupdates-updatableassetgroup.md
+            items:
+            - name: List updatable asset groups
+              href: api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md
+            - name: Create updatable asset group
+              href: api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md
+            - name: Get updatable asset group
+              href: api/windowsupdates-updatableassetgroup-get.md
+            - name: Delete updatable asset group
+              href: api/windowsupdates-updatableassetgroup-delete.md
+            - name: List members
+              href: api/windowsupdates-updatableassetgroup-list-members.md
+            - name: Add members
+              href: api/windowsupdates-updatableassetgroup-addmembers.md
+            - name: Add members by ID
+              href: api/windowsupdates-updatableassetgroup-addmembersbyid.md
+            - name: Remove members
+              href: api/windowsupdates-updatableassetgroup-removemembers.md
+            - name: Remove members by ID
+              href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
     - name: Education
       items:
       - name: Overview
@@ -9581,7 +9689,7 @@ items:
           href: api/educationassignment-publish.md
         - name: List submissions for assignment
           href: api/educationassignment-list-submissions.md
-        - name: Get resource folder URL
+        - name: Get resource folder URL (deprecated)
           href: api/educationassignment-getresourcesfolderurl.md
         - name: Get rubric attached to assignment
           href: api/educationassignment-get-rubric.md
@@ -10333,6 +10441,72 @@ items:
               href: api/unifiedroleassignmentmultiple-update.md
             - name: Delete
               href: api/unifiedroleassignmentmultiple-delete.md
+          - name: Role assignment request
+            href: resources/unifiedroleassignmentschedulerequest.md
+            items:
+            - name: List
+              href: api/unifiedroleassignmentschedulerequest-list.md
+            - name: Get
+              href: api/unifiedroleassignmentschedulerequest-get.md
+            - name: Create
+              href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+            - name: Update
+              href: api/unifiedroleassignmentschedulerequest-update.md
+            - name: Cancel
+              href: api/unifiedroleassignmentschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+          - name: Role eligibility request
+            href: resources/unifiedroleeligibilityschedulerequest.md
+            items:
+            - name: List
+              href: api/unifiedroleeligibilityschedulerequest-list.md
+            - name: Get
+              href: api/unifiedroleeligibilityschedulerequest-get.md
+            - name: Create
+              href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+            - name: Update
+              href: api/unifiedroleeligibilityschedulerequest-update.md
+            - name: Cancel
+              href: api/unifiedroleeligibilityschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+          - name: Role assignment schedule
+            href: resources/unifiedRoleAssignmentSchedule.md
+            items:
+            - name: List
+              href: api/unifiedroleassignmentschedule-list.md
+            - name: Get
+              href: api/unifiedroleassignmentschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+          - name: Role eligibility schedule
+            href: resources/unifiedRoleEligibilitySchedule.md
+            items:
+            - name: List
+              href: api/unifiedRoleEligibilitySchedule-list.md
+            - name: Get
+              href: api/unifiedRoleEligibilitySchedule-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
+          - name: Role assignment instance
+            href: resources/unifiedRoleAssignmentScheduleInstance.md
+            items:
+            - name: List
+              href: api/unifiedRoleAssignmentScheduleInstance-list.md
+            - name: Get
+              href: api/unifiedRoleAssignmentScheduleInstance-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
+          - name: Role eligibility instance
+            href: resources/unifiedRoleEligibilityScheduleInstance.md
+            items:
+            - name: List
+              href: api/unifiedRoleEligibilityScheduleInstance-list.md
+            - name: Get
+              href: api/unifiedRoleEligibilityScheduleInstance-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
         - name: Authentication events policy
@@ -10852,6 +11026,33 @@ items:
                   href: api/permissiongrantpolicy-post-excludes.md
                 - name: Delete from excludes
                   href: api/permissiongrantpolicy-delete-excludes.md
+          - name: Role management policy
+            href: resources/unifiedRoleManagementPolicy.md
+            items:
+            - name: List
+              href: api/unifiedrolemanagementpolicy-list.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List effective rules
+              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+          - name: Role management policy assignment
+            href: resources/unifiedRoleManagementPolicyAssignment.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyAssignment-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyAssignment-get.md
+          - name: Role management policy rule
+            href: resources/unifiedRoleManagementPolicyRule.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyRule-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyRule-get.md
+            - name: Update
+              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -11112,6 +11313,24 @@ items:
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
+          - name: Access review policy
+            href: resources/accessreviewpolicy.md
+            items:
+            - name: Get
+              href: api/accessreviewpolicy-get.md
+            - name: Update
+              href: api/accessreviewpolicy-update.md
+          - name: Access review history definition
+            href: resources/accessreviewhistorydefinition.md
+            items:
+            - name: Get
+              href: api/accessreviewhistorydefinition-get.md
+            - name: List
+              href: api/accessreviewhistorydefinition-list.md
+            - name: Create
+              href: api/accessreviewhistorydefinition-post.md
+            - name: Generate download URI
+              href: api/accessreviewhistorydefinition-generatedownloaduri.md
         - name: Access reviews (legacy)
           href: resources/accessreviews-root.md
           items:
@@ -11220,11 +11439,28 @@ items:
               href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackage-delete.md
+            - name: Filter by current user
+              href: api/accesspackage-filterbycurrentuser.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
             - name: List
               href: api/accesspackageassignment-list.md
+            - name: Filter by current user
+              href: api/accesspackageassignment-filterbycurrentuser.md
+          - name: Access package assignment approval
+            href: resources/approval.md
+            items:
+            - name: Approval step
+              href: resources/approvalstep.md
+            - name: Get approval
+              href: api/approval-get.md
+            - name: List approval steps
+              href: api/approval-list-steps.md
+            - name: Get approval step
+              href: api/approvalstep-get.md
+            - name: Update approval step
+              href: api/approvalstep-update.md
           - name: Access package assignment policy
             href: resources/accesspackageassignmentpolicy.md
             items:
@@ -11247,6 +11483,10 @@ items:
               href: api/accesspackageassignmentrequest-post.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
+            - name: Filter by current user
+              href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+            - name: Cancel
+              href: api/accesspackageassignmentrequest-cancel.md
           - name: Access package assignment resource role
             href: resources/accesspackageassignmentresourcerole.md
             items:
@@ -11317,20 +11557,6 @@ items:
               href: api/connectedorganization-delete-externalsponsors.md
             - name: Remove internal sponsors
               href: api/connectedorganization-delete-internalsponsors.md
-          - name: Approval
-            href: resources/approval.md
-            items:
-            - name: Get
-              href: api/approval-get.md
-          - name: Approval step
-            href: resources/approvalstep.md
-            items:
-            - name: List
-              href: api/approval-list-steps.md
-            - name: Get 
-              href: api/approvalstep-get.md
-            - name: Update 
-              href: api/approvalstep-update.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
             items:
@@ -13721,10 +13947,14 @@ items:
           href: api/table-list-rows.md
         - name: Create row
           href: api/table-post-rows.md
+        - name: Delete row
+          href: api/tablerow-delete.md
         - name: List columns
           href: api/table-list-columns.md
         - name: Create column
           href: api/table-post-columns.md
+        - name: Delete column
+          href: api/tablecolumn-delete.md
         - name: Get range
           href: api/table-range.md
       - name: Chart
