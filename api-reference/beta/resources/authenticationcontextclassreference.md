@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
     "grantControls"
   ],
   "@odata.type": "microsoft.graph.authenticationContextClassReference",
-  "baseType": "",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id"
 }-->
 

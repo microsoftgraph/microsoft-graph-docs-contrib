@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
     "grantControls"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessPolicy",
-  "baseType":"",
+  "baseType":"microsoft.graph.entity",
   "keyProperty": "id"
 }-->
 
