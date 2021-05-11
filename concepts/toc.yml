@@ -478,7 +478,7 @@ items:
                 name: Get change notifications for team and channel
                 href: teams-changenotifications-team-and-channels.md
                 name: Get change notifications for team membership
-                href: teams-changenotifications-teamMembership
+                href: teams-changenotifications-teamMembership.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
           - name: Change tracking
