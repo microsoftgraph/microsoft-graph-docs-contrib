@@ -33,8 +33,7 @@
                     "ChangeType": "Addition",
                     "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the [Reprovision](https://docs.microsoft.com/en-us/graph/api/cloudPc-reprovison?view=graph-rest-beta) method of [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta), [update active directory domain password](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta) method of [Cloud PC on-premises connection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) and [assign](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta) method of [Cloud PC provisioning policy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta)",
                     "Target": "cloudPcDeviceImage"
-                },
-
+                }
             ],
             "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
             "Cloud": "prd",
