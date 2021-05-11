@@ -4,6 +4,42 @@
     {
       "ChangeList": [
         {
+          "Id": "88b84275-63bb-48ef-97a2-5ce98b984bf1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/en-us/graph/api/resources/subscription) for change notifications to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel).",
+          "Target": "channel"
+        },
+			
+			 {
+          "Id": "300c4e34-43fd-435a-a3fd-ef744302cd65",
+          "ApiChange": "Resource",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/en-us/graph/api/resources/subscription) for change notifications to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team).",
+          "Target": "team"
+        },
+			
+			 {
+          "Id": "55906116-5e73-4252-a6e9-49ced6556d7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/en-us/graph/api/resources/subscription) for change notifications to the [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationMember).",
+          "Target": "team"
+        }   
+      ],
+      "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-11T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "21dfc156-d5cf-4f5c-bdb0-84a982e9d54e",
           "ApiChange": "Method",
           "ChangedApiName": "chat",
