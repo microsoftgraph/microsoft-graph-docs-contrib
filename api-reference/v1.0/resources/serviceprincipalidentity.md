@@ -1,6 +1,6 @@
 ---
 title: "servicePrincipalIdentity resource type"
-description: "Models a service principal identity"
+description: "Models a service principal identity."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"

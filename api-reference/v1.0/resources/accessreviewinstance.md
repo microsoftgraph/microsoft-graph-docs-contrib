@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|Unique identifier of the instance. Inherited from [entity](../resources/entity.md).|
 |startDateTime|DateTimeOffset|DateTime when review instance is scheduled to start. May be in the future. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |endDateTime|DateTimeOffset|DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|status|String|Specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`.|
+|status|String|Specifies the status of an accessReview. Possible values:`Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`.|
 |scope|[accessReviewScope](../resources/accessreviewscope.md)|Created based on **scope** and **instanceEnumerationScope** at the `accessReviewScheduleDefinition` level. Defines the scope of whose access to what is reviewed.|
 
 ## Relationships

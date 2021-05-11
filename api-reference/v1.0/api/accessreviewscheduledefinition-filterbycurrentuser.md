@@ -1,6 +1,6 @@
 ---
 title: "accessReviewScheduleDefinition: filterByCurrentUser"
-description: "Function used to return accessReviewScheduleDefinition objects where the calling user is the reviewer."
+description: "Returns accessReviewScheduleDefinition objects where the calling user is the reviewer."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # accessReviewScheduleDefinition: filterByCurrentUser
 Namespace: microsoft.graph
 
-Function used to return [accessReviewScheduleDefinition](../resource/accessreviewscheduledefinition.md) objects where the calling user is a reviewer on one or more [accessReviewInstance](../resources/accessreviewinstance.md) objects.
+Returns [accessReviewScheduleDefinition](../resource/accessreviewscheduledefinition.md) objects where the calling user is a reviewer on one or more [accessReviewInstance](../resources/accessreviewinstance.md) objects.
 
 >[!NOTE]
 >If many **accessReviewScheduleDefinition** objects are returned, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the $top query parameter with a page size of at most 100, and the $skip=0 query parameter in the request. When a result set spans multiple pages, Microsoft Graph returns that page with an @odata.nextLink property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.
@@ -37,7 +37,7 @@ GET /identityGovernance/accessReviews/definitions/filterByCurrentUser
 ```
 
 ## Function parameters
-In the request URL, provide the following query parameters with values.
+In the request URL, provide the function parameters in the following table with values.
 The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|

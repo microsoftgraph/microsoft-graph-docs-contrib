@@ -21,8 +21,8 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|principalScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the principals whose access to resources will be reviewed in the access review.|
-|resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the resources for which access will be reviewed to.|
+|principalScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the principals whose access to resources are reviewed in the access review.|
+|resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the resources for which access is reviewed.|
 
 ## Relationships
 None.

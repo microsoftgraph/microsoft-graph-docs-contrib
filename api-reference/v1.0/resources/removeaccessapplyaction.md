@@ -1,6 +1,6 @@
 ---
 title: "removeAccessApplyAction resource type"
-description: "Type of accessReviewApplyAction that indicates removing access to a resource of those denied in an access review of that resource."
+description: "Removes access to a resource for those denied in an access review."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-removeAccessApplyAction is a kind of [accessReviewApplyAction](../resources/accessreviewapplyaction.md) that indicates removing access to a resource of those denied in an access review of that resource. This is the default option chosen for [accessReviewApplyAction](../resources/accessreviewapplyaction.md) if an option is not passed in.
+Removes access to a resource for those denied in an access review of that resource. This is the default option chosen for [accessReviewApplyAction](../resources/accessreviewapplyaction.md) if an option is not passed in.
 
 Inherits from [accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 
