@@ -50,7 +50,7 @@ The following is a JSON representation of the resource.
     "sessionControls",
     "grantControls"
   ],
-  "@odata.type": "microsoft.graph.conditionalAccessPolicy",
+  "@odata.type": "microsoft.graph.authenticationContextClassReference",
   "baseType": "",
   "keyProperty": "id"
 }-->
