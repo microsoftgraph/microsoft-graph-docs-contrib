@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "3dc87842-0acd-4b98-89b3-a798f6bbc044",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ConditionalAccessPolicy",
+          "ChangeType": "Change",
+          "Description": "Added [includeAuthenticationContextClassReferences] property to the [conditionalAccessApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-beta) property, to manage configured authentication context in policy."
+          "Target": ""
+        },
+        {
+          "Id": "c153ae2e-7f59-4078-8c89-378bc70927d2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "AuthenticationContextClassReference",
+          "ChangeType": "Addition",
+          "Description": "Added API reference for AuthenticationContextClassReference. Include AuthenticationContextClassReference, create, update, list, and get API operations",
+          "Target": ""
+        }
+      ],
+      "Id": "7832364a-9b39-450b-a008-480d22918c54",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-10T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",
