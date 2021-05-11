@@ -96,6 +96,7 @@ This resource supports:
 | **Other group resources** |||
 | [List photos](../api/group-list-photos.md) | [profilePhoto](photo.md) collection | Get a collection of profile photos for the group. |
 | [List plannerPlans](../api/plannergroup-list-plans.md) | [plannerPlan](plannerplan.md) collection | Get Planner plans owned by the group. |
+| [List permissionGrants](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to the apps in this group. |
 | **User settings** |||
 | [addFavorite](../api/group-addfavorite.md) | None | Add the group to the list of the signed-in user's favorite groups. Supported for only Microsoft 365 groups. |
 | [removeFavorite](../api/group-removefavorite.md) | None | Remove the group from the list of the signed-in user's favorite groups. Supported for Microsoft 365 groups only. |
