@@ -78,7 +78,73 @@
       "Id": "55c6e37b-93d5-4684-9145-5d36f338faf3",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-04-22T00:00:00",
+      "CreatedDateTime": "2021-04-30T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9a62efc0-a232-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "webUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **webUrl** property to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "9a62efc0-a232-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourcesFolderUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourcesFolderUrl** property to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "9a655490-a232-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationMakeCodeResource",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **educationMakeCodeResource** resource type and will stop supporting it from May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationMakeCodeResource"
+        },
+        {
+          "Id": "9a68f4d9-a232-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "releasedBy",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **releasedBy** property from the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource and will stop returning data on May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "9a6b5885-a232-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "releasedDateTime",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **releasedDateTime** property from the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource and and will stop returning data on May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "9a62efc0-a232-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "meAssignments",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **me/assignments** endpoint. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "9a62efc0-a232-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getResourcesFolderUrl",
+          "ChangeType": "Change",
+          "Description": "Deprecated the [getResourcesFolderUrl](https://docs.microsoft.com/en-us/graph/api/educationassignment-getresourcesfolderurl?view=graph-rest-beta) method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "getResourcesFolderUrl"
+        }
+      ],
+      "Id": "9a6090e4-a232-11eb-8cb0-33bc249d550e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-30T23:46:18.701Z",
       "WorkloadArea": "Education",
       "SubArea": ""
     },
