@@ -147,7 +147,7 @@ This resource supports:
 | employeeHireDate | DateTimeOffset | The date and time when the user was hired or will start work in case of a future hire. <br><br>Returned only on `$select`. Supports `$filter`.|
 | employeeId | String | The employee identifier assigned to the user by the organization. <br><br>Returned only on `$select`. Supports `$filter`.|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Represents organization data (e.g. division and costCenter) associated with a user. <br><br>Returned only on `$select`.|
-| employeeType | String | Captures enterprise worker type: Employee, Contractor, Consultant, Vendor, etc. <br><br>Returned only on `$select`. Supports `$filter`.|
+| employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Returned only on `$select`. Supports `$filter` with the `eq` operator.|
 |externalUserState|String|For an external user invited to the tenant using the [invitation API](../api/invitation-post.md), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users. <br><br>Returned only on `$select`. Supports `$filter` with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`.|
 |externalUserStateChangeDateTime|DateTimeOffset|Shows the timestamp for the latest change to the **externalUserState** property. <br><br>Returned only on `$select`.|
 |faxNumber|String|The fax number of the user.|
@@ -158,7 +158,7 @@ This resource supports:
 |imAddresses|String collection|The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
 |interests|String collection|A list for the user to describe their interests.|
 |isResourceAccount|Boolean| Do not use – reserved for future use.|
-|jobTitle|String|The user's job title. Maximum length is 128 characters. Returned by default. Supports `$filter`.|
+|jobTitle|String|The user's job title. Maximum length is 128 characters. Returned by default. Supports `$filter` (`eq` and `startsWith` operators).|
 |lastPasswordChangeDateTime| DateTimeOffset | The time when this Azure AD user last changed their password. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Read-only.|
