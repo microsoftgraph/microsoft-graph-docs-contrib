@@ -887,6 +887,14 @@ Namespace: microsoft.graph
 |sunny|
 |unknownFutureValue|
 
+### timeCardState values
+
+|Member|
+|:---|
+|clockedIn|
+|onBreak|
+|clockedOut|
+
 ### scheduleChangeState values
 
 | Member
