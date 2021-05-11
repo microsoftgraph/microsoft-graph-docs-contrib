@@ -74,7 +74,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authenticationContextReference"
+  "@odata.type": "microsoft.graph.authenticationContextClassReference"
 } -->
 
 ```http
