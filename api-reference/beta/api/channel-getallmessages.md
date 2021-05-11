@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md) including text, audio, and video conversations.
+Retrieve [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md) including text, audio, and video conversations. To learn more about exporting content with Microsoft Teams export APIs, see [Export content with the Microsoft Teams Export APIs](/microsoftteams/export-teams-content).
 
 ## Permissions
 
@@ -38,7 +38,7 @@ GET /teams/{team-id}/channels/getAllMessages
 ## Optional query parameters
 
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.
-The other [OData query parameters](/graph/query-parameters) are not currently supported.
+Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with datetime range query on lastModifiedDateTime. The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
 ## Request body
 
