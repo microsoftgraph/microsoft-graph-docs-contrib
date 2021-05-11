@@ -4,36 +4,37 @@
             "ChangeList": [
                 {
                     "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
-                    "ApiChange": "Permissions",
-                    "ChangedApiName": "cloudPc",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.Read.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for app-only permissions to the [Get cloudPC](https://docs.microsoft.com/en-us/graph/api/cloudPc-get?view=graph-rest-beta), [List cloudPCs](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-beta), and [Reprovision CloudPc](https://docs.microsoft.com/en-us/graph/api/cloudPc-reprovison?view=graph-rest-beta) methods.",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta), [Cloud PC device image](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta), [Cloud PC on-premises connection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) and [Cloud PC provisioning policy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resources.",
                     "Target": "cloudPc"
                 },
                 {
                     "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
-                    "ApiChange": "Permissions",
-                    "ChangedApiName": "cloudPcDeviceImage",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.Read.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for app-only permissions to the [Get cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/cloudPcdeviceimage-get?view=graph-rest-beta), [List cloudPcdeviceImages](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-deviceimages?view=graph-rest-beta), [Create cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-beta), [Delete cloudPcdeviceImage](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-delete?view=graph-rest-beta) and [Get sourceImages](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta) methods.",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the [Get sourceImages](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta) method of [Cloud PC device image](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta), ",
+                    "Target": "cloudPc"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta), [Cloud PC device image](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta), part of [Cloud PC on-premises connection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) and [Cloud PC provisioning policy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resources.",
                     "Target": "cloudPcDeviceImage"
                 },
                 {
                     "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
-                    "ApiChange": "Permissions",
-                    "ChangedApiName": "cloudPcOnpremisesConnection",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for app-only permissions to the [Get cloudPcOnpremisesConnection](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-get?view=graph-rest-beta), [List cloudPcOnpremisesConnections](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta), and [Update cloudPcOnpremisesConnection](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta) methods.",
-                    "Target": "cloudPcOnpremisesConnection"
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the [Reprovision](https://docs.microsoft.com/en-us/graph/api/cloudPc-reprovison?view=graph-rest-beta) method of [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta), [update active directory domain password](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta) method of [Cloud PC on-premises connection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) and [assign](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta) method of [Cloud PC provisioning policy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta)",
+                    "Target": "cloudPcDeviceImage"
                 },
-                {
-                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
-                    "ApiChange": "Permissions",
-                    "ChangedApiName": "cloudPcProvisionPolicy",
-                    "ChangeType": "Addition",
-                    "Description": "Added support for app-only permissions to the [Get cloudPcProvisionPolicy](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-get?view=graph-rest-beta), [List cloudPcProvisionPolicies](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-list-provisioningpolicies?view=graph-rest-beta), [Create cloudPcProvisionPolicy](https://docs.microsoft.com/en-us/graph/api/virtualendpoint-post-provisioningpolicies?view=graph-rest-beta), [Delete cloudPcProvisionPolicy](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-delete?view=graph-rest-beta), [Update cloudPcProvisionPolicy](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-update?view=graph-rest-beta), and [Assign cloudPcProvisionPolicy](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta) methods.",
-                    "Target": "cloudPcProvisionPolicy"
-                }
+
             ],
             "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
             "Cloud": "prd",
