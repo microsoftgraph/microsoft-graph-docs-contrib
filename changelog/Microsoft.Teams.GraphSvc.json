@@ -109,21 +109,21 @@
           "Description": "Added the [provisionChannelEmailResult](https://docs.microsoft.com/en-us/graph/api/resources/provisionChannelEmailResult?view=graph-rest-beta) resource type.",
           "Target": "provisionChannelEmailResult"
       }, {
-          "Id": "430e0918-a423-11eb-a835-c815efda831b",
+          "Id": "42a6d795-a423-11eb-a835-c815efda831b",
           "ApiChange": "Method",
           "ChangedApiName": "provisionEmail",
           "ChangeType": "Addition",
           "Description": "Added the [provisionEmail](https://docs.microsoft.com/en-us/graph/api/channel-provisionEmail?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
       }, {
-          "Id": "431069fc-a423-11eb-a835-c815efda831b",
+          "Id": "42a6d795-a423-11eb-a835-c815efda831b",
           "ApiChange": "Method",
           "ChangedApiName": "removeEmail",
           "ChangeType": "Addition",
           "Description": "Added the [removeEmail](https://docs.microsoft.com/en-us/graph/api/channel-removeEmail?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
       }],
-      "Id": "4247468e-a423-11eb-a835-c815efda831b",
+      "Id": "42a6d795-a423-11eb-a835-c815efda831b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-23T11:01:30.771Z",

@@ -1,5 +1,5 @@
 ---
-title: "Provision channel email"
+title: "channel: provisionEmail"
 description: "Provision a channel's email."
 author: "shantanu1singh"
 localization_priority: Normal
@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provision email for a [channel](../resources/channel.md).
+
 In Microsoft Teams, users can set up a *system generated* email address for a channel that can be used to send messages to a channel via the email address.
 
 By default, an email address is not provisioned for a channel.
@@ -29,8 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | ChannelSettings.ReadWrite.All               |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
-
-> **Note**: This API currently does not support admin permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -55,6 +54,7 @@ If the channel's email is provisioned successfully, this method returns a `200 O
 The following is an example of a request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"],
   "name": "channel_provisionemail"
 }
 -->
