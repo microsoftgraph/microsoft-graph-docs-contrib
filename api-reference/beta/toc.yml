@@ -10441,6 +10441,72 @@ items:
               href: api/unifiedroleassignmentmultiple-update.md
             - name: Delete
               href: api/unifiedroleassignmentmultiple-delete.md
+          - name: Role assignment request
+            href: resources/unifiedroleassignmentschedulerequest.md
+            items:
+            - name: List
+              href: api/unifiedroleassignmentschedulerequest-list.md
+            - name: Get
+              href: api/unifiedroleassignmentschedulerequest-get.md
+            - name: Create
+              href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+            - name: Update
+              href: api/unifiedroleassignmentschedulerequest-update.md
+            - name: Cancel
+              href: api/unifiedroleassignmentschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+          - name: Role eligibility request
+            href: resources/unifiedroleeligibilityschedulerequest.md
+            items:
+            - name: List
+              href: api/unifiedroleeligibilityschedulerequest-list.md
+            - name: Get
+              href: api/unifiedroleeligibilityschedulerequest-get.md
+            - name: Create
+              href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+            - name: Update
+              href: api/unifiedroleeligibilityschedulerequest-update.md
+            - name: Cancel
+              href: api/unifiedroleeligibilityschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+          - name: Role assignment schedule
+            href: resources/unifiedRoleAssignmentSchedule.md
+            items:
+            - name: List
+              href: api/unifiedroleassignmentschedule-list.md
+            - name: Get
+              href: api/unifiedroleassignmentschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+          - name: Role eligibility schedule
+            href: resources/unifiedRoleEligibilitySchedule.md
+            items:
+            - name: List
+              href: api/unifiedRoleEligibilitySchedule-list.md
+            - name: Get
+              href: api/unifiedRoleEligibilitySchedule-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
+          - name: Role assignment instance
+            href: resources/unifiedRoleAssignmentScheduleInstance.md
+            items:
+            - name: List
+              href: api/unifiedRoleAssignmentScheduleInstance-list.md
+            - name: Get
+              href: api/unifiedRoleAssignmentScheduleInstance-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
+          - name: Role eligibility instance
+            href: resources/unifiedRoleEligibilityScheduleInstance.md
+            items:
+            - name: List
+              href: api/unifiedRoleEligibilityScheduleInstance-list.md
+            - name: Get
+              href: api/unifiedRoleEligibilityScheduleInstance-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
         - name: Authentication events policy
@@ -10475,8 +10541,11 @@ items:
             - name: Update
               href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
-          href: resources/authenticationmethods-overview.md
           items:
+          - name: Overview
+            href: resources/authenticationmethods-overview.md
+          - name: List all methods
+            href: api/authentication-list-methods.md
           - name: FIDO2 security keys
             href: resources/fido2authenticationmethod.md
             items:
@@ -10960,6 +11029,33 @@ items:
                   href: api/permissiongrantpolicy-post-excludes.md
                 - name: Delete from excludes
                   href: api/permissiongrantpolicy-delete-excludes.md
+          - name: Role management policy
+            href: resources/unifiedRoleManagementPolicy.md
+            items:
+            - name: List
+              href: api/unifiedrolemanagementpolicy-list.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List effective rules
+              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+          - name: Role management policy assignment
+            href: resources/unifiedRoleManagementPolicyAssignment.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyAssignment-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyAssignment-get.md
+          - name: Role management policy rule
+            href: resources/unifiedRoleManagementPolicyRule.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyRule-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyRule-get.md
+            - name: Update
+              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -11235,7 +11331,7 @@ items:
             - name: List
               href: api/accessreviewhistorydefinition-list.md
             - name: Create
-              href: api/accessreviewhistorydefinition-create.md
+              href: api/accessreviewhistorydefinition-post.md
             - name: Generate download URI
               href: api/accessreviewhistorydefinition-generatedownloaduri.md
         - name: Access reviews (legacy)
@@ -11346,11 +11442,15 @@ items:
               href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackage-delete.md
+            - name: Filter by current user
+              href: api/accesspackage-filterbycurrentuser.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
             - name: List
               href: api/accesspackageassignment-list.md
+            - name: Filter by current user
+              href: api/accesspackageassignment-filterbycurrentuser.md
           - name: Access package assignment approval
             href: resources/approval.md
             items:
@@ -11386,6 +11486,10 @@ items:
               href: api/accesspackageassignmentrequest-post.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
+            - name: Filter by current user
+              href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+            - name: Cancel
+              href: api/accesspackageassignmentrequest-cancel.md
           - name: Access package assignment resource role
             href: resources/accesspackageassignmentresourcerole.md
             items:
