@@ -3,7 +3,7 @@ title: "teamworkTagMember resource type"
 description: "Represents a user in the team who has a tag applied to them."
 author: "anniecolonna"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "teamwork"
 doc_type: resourcePageType
 ---
 
