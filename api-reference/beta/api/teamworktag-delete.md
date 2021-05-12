@@ -3,7 +3,7 @@ title: "Delete teamworkTag"
 description: "Deletes a teamworkTag object."
 author: "anniecolonna"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "teamwork"
 doc_type: apiPageType
 ---
 
