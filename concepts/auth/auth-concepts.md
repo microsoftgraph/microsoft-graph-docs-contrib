@@ -102,6 +102,7 @@ You do not need to use an authentication library to get an access token. To lear
 
 ## Next steps
 
+- To learn the authentication providers suitable for different application types, see [Choose a Microsoft Graph authentication provider based on scenario](../sdks/choose-authentication-providers.md).
 - For quick steps for getting an access token for apps that call Microsoft Graph, choose the type of app that matches your scenario:
   - [Desktop app](/azure/active-directory/develop/scenario-desktop-overview)
   - [Mobile app](/azure/active-directory/develop/scenario-mobile-overview)
@@ -126,6 +127,7 @@ To help you get started quickly, we've created a series of training modules and 
 The Microsoft identity platform documentation contains articles and samples that specifically focus on authentication and authorization with the Microsoft identity platform.
 
 - The easiest place to start is in the [Microsoft identity platform endpoint documentation](/azure/active-directory/develop/active-directory-appmodel-v2-overview). This article contains links to overviews, protocol documentation and getting started articles for different platforms all organized by the type of app you're developing.
+- For samples using the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
 - For samples listed by client or server authentication library, see [Microsoft identity platform authentication libraries](/azure/active-directory/develop/active-directory-v2-libraries).
 - Explore the Microsoft identity platform samples by platform in the [Azure Code gallery](https://azure.microsoft.com/resources/samples/?service=active-directory).
 
