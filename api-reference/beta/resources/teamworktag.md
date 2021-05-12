@@ -3,7 +3,7 @@ title: "teamworkTag resource type"
 description: "Tags provide a flexible way for customers to classify users or groups based on a common attribute"
 author: "anniecolonna"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "teamwork"
 doc_type: resourcePageType
 ---
 
