@@ -167,7 +167,7 @@ Example configurations of the **scope** property using **principalResourceMember
 }
 ```
 
-In this example, the principals are all inactive guest users with the period of their inactivity calculated as 30 days from the start date of the **accessReviewScheduleDefinition**.
+In this example, the principals are all inactive guest users with the period of their inactivity calculated as 30 days from the start date of the access review instance.
 
 #### Example 2: Review access of all guest users to a directory role
 

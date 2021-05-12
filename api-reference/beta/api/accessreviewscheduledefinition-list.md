@@ -56,7 +56,7 @@ The value of `{object}` can be one of the following:
 |`/groups/{group id}`  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|
 |`./members`  |List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.|
 |`accessPackageAssignments`  |List every accessReviewScheduleDefinition on an access package.|
-|`roleAssignmentScheduleInstances`  |List every accessReviewScheduleDefinition for service principals assigned to privileged role.|
+|`roleAssignmentScheduleInstances`  |List every accessReviewScheduleDefinition for service principals assigned to a privileged role.|
 
 The `$filter` query parameter is not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.
 
@@ -115,6 +115,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions",
     "@odata.count": 1,
     "value": [
         {
@@ -169,10 +170,11 @@ Content-type: application/json
 ```
 
 
-### Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in the tenant
+### Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in a tenant
 
 #### Request
-The following example shows a request to retrieve all the access review series in a tenant.
+The following example shows a request to retrieve all the access review series scoped to all Microsoft 365 groups in a
+tenant.
 
 <!-- {
   "blockType": "request",
@@ -196,6 +198,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions",
+    "@odata.count": 1,
     "value": [
         {
             "id": "cc701697-762c-439a-81f5-f58d680fde76",
