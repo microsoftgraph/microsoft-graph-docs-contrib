@@ -56,18 +56,18 @@ Depending on your subscription, you can either get the notification with resourc
 For notifications with resource data, the payload looks like the following. This payload is for a membership change in a team.
 
 ```json
-TBD-- JSON is wrong.
+
 {
     "value": [{
         "subscriptionId": "10493aa0-4d29-4df5-bc0c-ef742cc6cd7f",
         "changeType": "created",
         "clientState": "<<--SpecifiedClientState-->>",
         "subscriptionExpirationDateTime": "2021-02-02T10:30:34.9097561-08:00",
-        "resource": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')",
+        "resource": "teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members('ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=')",
         "resourceData": {
-            "id": "1612289765949",
-            "@odata.type": "#Microsoft.Graph.chatMessage",
-            "@odata.id": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')"
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+            "@odata.type": "#Microsoft.Graph.aadUserConversationMember",
+            "@odata.id": "teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members('ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=')"
         },
         "encryptedContent": {
             "data": "<<--EncryptedContent-->",
@@ -104,18 +104,18 @@ Notifications without resource data give you enough information to make GET call
 For notifications without resource data, the payload  for any change in team's membership looks like the following.
 
 ```json
-TBD-- this json is wrong
+
  {
   "subscriptionId": "9f9d1ed0-c9cc-42e7-8d80-a7fc4b0cda3c",
   "changeType": "created",
   "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
   "clientState": "<<--SpecifiedClientState-->>",
   "subscriptionExpirationDateTime": "2021-02-02T11:26:41.0537895-08:00",
-  "resource": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')",
+  "resource": "teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members('ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=')",
   "resourceData": {
-    "id": "1612293113399",
-    "@odata.type": "#Microsoft.Graph.chatMessage",
-    "@odata.id": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')"
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk",
+    "@odata.type": "#Microsoft.Graph.aadUserConversationMember",
+    "@odata.id": "teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members('ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=')"
   }
 }
 ```

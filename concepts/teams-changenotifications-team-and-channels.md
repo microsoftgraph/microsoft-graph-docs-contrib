@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for team and channel using Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create, update, and delete) to a [channel](/graph/api/resources/channel?preserve-view=true) across a team or tenant. Change notifications provide a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications enables you to subscribe to changes in a resource. For more details about creating and managing subscription see [Use the Microsoft Graph API to get change notifications](https://docs.microsoft.com/en-us/graph/api/resources/webhooks?view=preserve-view=true)
 
 >**Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
@@ -23,13 +23,14 @@ To get change notifications for any change in team's property across tenant, sub
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic.All,TeamSettings.Read.All   | beta, v1.0 |
+|Application | Team.ReadBasic.All,TeamSettings.Read.All   | beta|
 
 #### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -53,13 +54,14 @@ To get change notifications for any change in teams' property of a specific team
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic ,TeamSettings.Read    | beta, v1.0 |
+|Application | Team.ReadBasic ,TeamSettings.Read    | beta |
 
 #### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -83,13 +85,14 @@ To get change notifications for any change in channel's property in any channel 
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Channel.ReadBasic.All ,ChannelSettings.Read.All | beta, v1.0 |
+|Application | Channel.ReadBasic.All ,ChannelSettings.Read.All | beta |
 
 #### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -113,13 +116,14 @@ To get change notifications for any change in channel's property across any chan
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Channel.ReadBasic  ,ChannelSettings.Read   | beta, v1.0 |
+|Application | Channel.ReadBasic  ,ChannelSettings.Read   | beta |
 
 #### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -213,6 +217,7 @@ The decrypted notification payload looks like the following. The payload conform
 For notifications with resource data, the payload looks for any change in channel's property looks like the following.
 
 ```json
+
 {
     "value": [{
         "subscriptionId": "10493aa0-4d29-4df5-bc0c-ef742cc6cd7f",
@@ -221,9 +226,9 @@ For notifications with resource data, the payload looks for any change in channe
         "subscriptionExpirationDateTime": "2021-02-02T10:30:34.9097561-08:00",
         "resource": "teams('fb82c19a-0f6d-41ed-90f0-cbb29a476ede')/channels('19:01f39f5ac52f45fb9a7ce01cedd57b1f@thread.tacv2')",
         "resourceData": {
-            "id": "1612289765949",
+            "id": "19:01f39f5ac52f45fb9a7ce01cedd57b1f@thread.tacv2",
             "@odata.type": "#Microsoft.Graph.Channel",
-            "@odata.id": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')"
+            "@odata.id": "teams('fb82c19a-0f6d-41ed-90f0-cbb29a476ede')/channels('19:01f39f5ac52f45fb9a7ce01cedd57b1f@thread.tacv2')"
         },
         "encryptedContent": {
             "data": "<<--EncryptedContent-->",
