@@ -142,6 +142,38 @@ Content-Type: application/json
  
 # [C#](#tab/csharp)
 
+```csharp
+
+            GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+            var properties = new PrintDocumentUploadProperties
+            {
+	            DocumentName = "TestFile.pdf",
+	            ContentType = "application/pdf",
+	            Size = 4533322
+            };
+
+            var uploadSession = await graphClient.Print.Printers["{printer-id}"].Jobs["{printJob-id}"].Documents["{printDocument-id}"]
+            	.CreateUploadSession(properties)
+	            .Request()
+	            .PostAsync()
+
+            // if using Graph SDK, maxSliceSize should in multiples of 320 KiB
+            int maxSliceSize = 320 * 1024;
+            var fileUploadTask =
+                new LargeFileUploadTask<PrintDocument>(uploadSession, fileStream, maxSliceSize);
+
+            // Create a callback that is invoked after each slice is uploaded
+            IProgress<long> progress = new Progress<long>(prog =>
+            {
+                Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
+            });
+
+            // Upload the file
+
+            var uploadResult = await fileUploadTask.UploadAsync(progress);
+```
+
 # [JavaScript](#tab/javascript)
 
 ```javascript
