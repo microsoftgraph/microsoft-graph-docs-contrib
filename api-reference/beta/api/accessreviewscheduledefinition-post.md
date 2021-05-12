@@ -145,42 +145,59 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
-    "status": "NotStarted",
-    "instanceEnumerationScope": null,
-    "scope": {
-        "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
-        "queryType": "MicrosoftGraph"
-    },
-    "reviewers": [
-        {
-            "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
-            "queryType": "MicrosoftGraph"
-        }
-    ],
-    "settings": {
-        "instanceDurationInDays": 1,
-        "autoApplyDecisionsEnabled": false,
-        "recurrence": {
-            "pattern": {
-                "type": "weekly",
-                "interval": 1,
-                "month": 0,
-                "dayOfMonth": 0,
-                "daysOfWeek": [],
-                "firstDayOfWeek": "sunday",
-                "index": "first"
-            },
-            "range": {
-                "type": "noEnd",
-                "numberOfOccurrences": 0,
-                "recurrenceTimeZone": null,
-                "startDate": "2020-09-08",
-                "endDate": null
-            }
-        },
-        "applyActions": []
+  "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
+  "displayName": "Test create",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+  "status": "NotStarted",
+  "descriptionForAdmins": "Test create",
+  "descriptionForReviewers": "Test create",
+  "instanceEnumerationScope": null,
+  "createdBy": {
+    "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+    "displayName": "MOD Administrator",
+    "userPrincipalName": "admin@contoso.com"
+  },
+  "scope": {
+    "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
+    "queryType": "MicrosoftGraph"
+  },
+  "reviewers": [
+    {
+      "query": "/users/7eae986b-d425-48b2-adf2-3c777f4444f3",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": "decisions"
     }
+  ],
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 1,
+    "autoApplyDecisionsEnabled": false,
+    "recommendationsEnabled": true,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1,
+        "month": 0,
+        "dayOfMonth": 0,
+        "daysOfWeek": [],
+        "firstDayOfWeek": "sunday",
+        "index": "first"
+      },
+      "range": {
+        "type": "noEnd",
+        "numberOfOccurrences": 0,
+        "recurrenceTimeZone": null,
+        "startDate": "2020-09-08",
+        "endDate": null
+      }
+    },
+  "applyActions": []
+  }
 }
 ```
 
@@ -207,6 +224,7 @@ Content-type: application/json
   "descriptionForAdmins": "Control guest user access to our teams.",
   "descriptionForReviewers": "Information security is everyone's responsibility. Review our access policy for more.",
   "instanceEnumerationScope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
     "queryType": "MicrosoftGraph"
   },
@@ -266,19 +284,42 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
   "id": "b0966e21-a01e-43c9-8f8b-9ba30ed5710a",
-  "status": "Active",
+  "displayName": "Review inactive guests on teams",
+  "createdDateTime": "2021-05-04T18:27:02.6719849Z",
+  "lastModifiedDateTime": "2021-05-04T18:27:24.0889623Z",
+  "status": "InProgress",
+  "descriptionForAdmins": "Control guest user access to our teams.",
+  "descriptionForReviewers": "Information security is everyone's responsibility. Review our access policy for more.",
+  "createdBy": {
+    "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+    "displayName": "MOD Administrator",
+    "userPrincipalName": "admin@contoso.com"
+  },
   "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
-    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
     "queryType": "MicrosoftGraph",
     "queryRoot": null,
     "inactiveDuration": "P30D"
   },
-  "instanceEnumerationScope": {},
+  "instanceEnumerationScope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team'))&$count=true",
+    "queryType": "MicrosoftGraph",
+    "queryRoot": null
+  },
   "reviewers": [
     {
       "query": "./owners",
-      "queryType": "MicrosoftGraph"
+      "queryType": "MicrosoftGraph",
+      "queryRoot": null
+    }
+  ],
+  "backupReviewers": [
+    {
+      "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": null
     }
   ],
   "fallbackReviewers": [
@@ -289,32 +330,45 @@ Content-type: application/json
     }
   ],
   "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": true,
+    "defaultDecision": "Deny",
+    "instanceDurationInDays": 3,
+    "autoApplyDecisionsEnabled": true,
+    "recommendationsEnabled": true,
     "recurrence": {
       "pattern": {
         "type": "absoluteMonthly",
         "interval": 3,
         "month": 0,
-        "dayOfMonth": 5,
+        "dayOfMonth": 0,
         "daysOfWeek": [],
         "firstDayOfWeek": "sunday",
         "index": "first"
       },
       "range": {
-        "type": "noEnd",
+        "type": "numbered",
         "numberOfOccurrences": 0,
         "recurrenceTimeZone": null,
-        "startDate": "2020-05-04",
-        "endDate": null
+        "startDate": "2021-05-05",
+        "endDate": "9999-12-31"
       }
-    }
+    },
+    "applyActions": [
+      {
+        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
+      }
+    ]
   }
 }
 ```
 
-### Example 3: Create an access review of all users to a service principal
+### Example 3: Create an access review of all users to an application
 
 This is an example of creating an access review with the following settings:
-+ The review reviews user access to a service principal.
++ The review reviews user access to an application.
 + The people managers are the reviewers and fallback reviewers are the members of a group.
 + It recurs semi-annually and ends 1 year from the startDate.
 
