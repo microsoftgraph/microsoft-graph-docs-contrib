@@ -171,7 +171,7 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 6,
   "totalItemCount": 6,
-  "isHidden": false
+  "isHidden": false,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [
