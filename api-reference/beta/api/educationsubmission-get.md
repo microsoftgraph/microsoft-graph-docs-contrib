@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/s
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability. The `resourcesFolderUrl` property will be `null` if [educationSubmission:setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) has not been called on this [educationSubmission](../resources/educationsubmission.md) resource yet
 
 <!-- {
   "blockType": "response",

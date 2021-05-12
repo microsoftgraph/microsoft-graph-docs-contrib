@@ -9750,7 +9750,7 @@ items:
           href: api/educationsubmissionresource-delete.md
         - name: Get submission
           href: api/educationsubmission-get.md
-        - name: Setup assignment resource folder
+        - name: Set up submission resource folder
           href: api/educationsubmission-setupresourcesfolder.md
         - name: Submit submission
           href: api/educationsubmission-submit.md

@@ -11,8 +11,10 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-This function triggers the SharePoint resource folder creation where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission. 
-Note that files must be located in this folder in order to be added as resources. Only a student in the class can determine what files to upload in a given submission level resource folder. 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission.
+Note that files must be located in this folder in order to be added as resources. Only a student in the class can determine what files to upload in a given submission-level resource folder. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,47 +39,30 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 Ok` response code. The body will contain the assignment model.
+If successful, this method returns a `200 Ok` response code. The body will contain the submission model.
 
 ## Example
 The following example shows how to call this API.
-##### Request
+### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "educationassignment_publish_1"
+  "name": "educationsubmission_setupresourcesfolder_1"
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/submissions/20302/setUpResourcesFolder
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-publish-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-##### Response
+### Response
 The following is an example of a response. 
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -127,12 +112,12 @@ Content-length: 279
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-d4113fc72dc1
+2021-05-12 12:00:00 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "educationAssignment: publish",
+  "description": "educationSubmission: setUpResourcesFolder",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
