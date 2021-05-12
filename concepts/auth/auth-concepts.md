@@ -133,4 +133,5 @@ The Microsoft identity platform documentation contains articles and samples that
 
 ## See also
 
+- [Choose a Microsoft Graph authentication provider based on scenario](../sdks/choose-authentication-providers.md).
 - [Microsoft identity platform endpoint documentation](/azure/active-directory/develop/active-directory-appmodel-v2-overview)
