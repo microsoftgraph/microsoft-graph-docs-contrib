@@ -35,12 +35,15 @@ Represents a cloud-managed virtual desktop.
 |managedDeviceId|String|The cloud PC’s Intune device ID.|
 |managedDeviceName|String|The cloud PC’s Intune device name.|
 |provisioningPolicyId|String|The cloud PC's provisioning policy ID.|
+|provisioningPolicyName|String|The provisioning policy that applied during provisioning of cloud PCs.|
+|onPremisesConnectionName|String|The on-Premises connection that applied during provisioning of cloud PCs.|
 |servicePlanId|String|The cloud PC's service plan ID.|
 |servicePlanName|String|The cloud PC's service plan name.|
 |status|[cloudPcStatus](#cloudpcstatus-values)|Status of the cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the cloud PC status.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the cloud PC.|
 |lastModifiedDateTime|DateTimeOffset|The cloud PC's last modified date and time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovision/deprovision happens. Required only if status is “inGracePeriod“. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ### cloudPcStatus values
 
