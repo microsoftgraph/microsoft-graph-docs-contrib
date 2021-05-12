@@ -79,6 +79,8 @@ Content-Type: application/json
 
 To get change notifications for any change in channel's property in any channel or any channel creation or deletion across tenant, subscribe to `teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
+>**Note:** Private channel is not supported.
+
 #### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
@@ -172,6 +174,8 @@ For notifications with resource data, the payload looks for any change in team's
 
 
 The decrypted notification payload looks like the following. The payload conforms to the [teams](/graph/api/resources/teams?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+
+>**Note:** [discoverySettings](https://docs.microsoft.com/en-us/graph/api/resources/teamdiscoverysettings?view=graph-rest-beta)  and [classSettings](https://docs.microsoft.com/en-us/graph/api/resources/teamclasssettings?view=graph-rest-beta) are not exposed in payload data.
 
 ```json
 {
