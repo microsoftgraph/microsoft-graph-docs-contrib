@@ -102,7 +102,6 @@ You do not need to use an authentication library to get an access token. To lear
 
 ## Next steps
 
-- To learn the authentication providers suitable for different application types, see [Choose a Microsoft Graph authentication provider based on scenario](../sdks/choose-authentication-providers.md).
 - For quick steps for getting an access token for apps that call Microsoft Graph, choose the type of app that matches your scenario:
   - [Desktop app](/azure/active-directory/develop/scenario-desktop-overview)
   - [Mobile app](/azure/active-directory/develop/scenario-mobile-overview)
