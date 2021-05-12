@@ -149,7 +149,7 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 
 #### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -217,7 +217,9 @@ Content-Length: 1574
     "isDialInBypassEnabled": true
   },
   "isEntryExitAnnounced": true,
-  "allowedPresenters": "everyone"
+  "allowedPresenters": "everyone",
+  "allowMeetingChat": "enabled",
+  "allowTeamworkReactions": true
 }
 ```
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
@@ -263,6 +265,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     "autoAdmittedUsers": "EveryoneInCompany",
     "isEntryExitAnnounced": true,
     "allowedPresenters": "everyone",
+    "allowMeetingChat": "enabled",
+    "allowTeamworkReactions": true,
     "videoTeleconferenceId": "(redacted)",
     "participants": {
         "organizer": {
@@ -322,6 +326,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "autoAdmittedUsers": "EveryoneInCompany",
             "isEntryExitAnnounced": true,
             "allowedPresenters": "everyone",
+            "allowMeetingChat": "enabled",
+            "allowTeamworkReactions": true,
             "videoTeleconferenceId": "(redacted)",
             "participants": {
                 "organizer": {
@@ -453,6 +459,8 @@ The following example shows a request to get a meeting attendance report.
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
@@ -462,6 +470,24 @@ The following example shows a request to get a meeting attendance report.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-meetingattendancereport-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-meetingattendancereport-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-meetingattendancereport-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-meetingattendancereport-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
