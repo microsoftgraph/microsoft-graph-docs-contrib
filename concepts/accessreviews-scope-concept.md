@@ -144,7 +144,7 @@ Example configurations of the **scope** property using **principalResourceMember
 
 ### Examples
 
-#### Example 1: Review access of all inactive guest users to a service principal
+#### Example 1: Review access of all inactive guest users to an application
 
 ```http
 "scope": {

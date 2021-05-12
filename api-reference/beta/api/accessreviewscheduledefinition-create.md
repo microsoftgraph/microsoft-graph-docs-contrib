@@ -90,8 +90,7 @@ Content-type: application/json
   "reviewers": [
     {
       "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
-      "queryType": "MicrosoftGraph",
-      "queryRoot": "decisions"
+      "queryType": "MicrosoftGraph"
     }
   ],
   "settings": {
@@ -156,8 +155,7 @@ Content-type: application/json
     "reviewers": [
         {
             "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
-            "queryType": "MicrosoftGraph",
-            "queryRoot": "decisions"
+            "queryType": "MicrosoftGraph"
         }
     ],
     "settings": {
@@ -190,7 +188,7 @@ Content-type: application/json
 
 This is an example of creating an access review with the following settings:
 + The review reviews all teams with inactive guest users. The period of inactivity is 30 days from the start date of the access review.
-+ The group owners are the reviewers and backup reviewers are assigned.
++ The group owners are the reviewers and fallback reviewers are assigned.
 + It recurs on the third day of every quarter and continues indefinitely.
 + **autoApplyDecisionsEnabled** is set to `true` with the **defaultDecision** set to `Deny`.
 
@@ -221,11 +219,10 @@ Content-type: application/json
   "reviewers": [
     {
       "query": "./owners",
-      "queryType": "MicrosoftGraph",
-      "queryRoot": "decisions"
+      "queryType": "MicrosoftGraph"
     }
   ],
-  "backupReviewers": [
+  "fallbackReviewers": [
     {
       "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
       "queryType": "MicrosoftGraph"
@@ -281,18 +278,16 @@ Content-type: application/json
   "reviewers": [
     {
       "query": "./owners",
-      "queryType": "MicrosoftGraph",
-      "queryRoot": "decisions"
+      "queryType": "MicrosoftGraph"
     }
   ],
-  "backupReviewers": [
+  "fallbackReviewers": [
     {
       "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
       "queryType": "MicrosoftGraph",
       "queryRoot": null
     }
   ],
-  "fallbackReviewers": [],
   "settings": {
     "recurrence": {
       "pattern": {
@@ -320,7 +315,7 @@ Content-type: application/json
 
 This is an example of creating an access review with the following settings:
 + The review reviews user access to a service principal.
-+ The people managers are the reviewers and backup reviewers are the members of a group.
++ The people managers are the reviewers and fallback reviewers are the members of a group.
 + It recurs semi-annually and ends 1 year from the startDate.
 
 #### Request
@@ -367,7 +362,7 @@ Content-type: application/json
   ],
   "fallbackReviewers": [
     {
-      "query": "/v1.0/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
       "queryType": "MicrosoftGraph"
     }
   ],

@@ -14,7 +14,7 @@ Azure AD [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=gr
 > [!NOTE]
 > The [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
 
-The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource, a property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true).  In addition, you can specificy fallback reviewers using **backupReviewers** or **fallbackReviewers**, another property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true)
+The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource, a property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true).  In addition, you can specify fallback reviewers using **fallbackReviewers**, another property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true).
 
 This property is not required when a self-review (where users review their own access) is created.
 
@@ -22,7 +22,7 @@ This property is not required when a self-review (where users review their own a
 
 To configure the reviewers and fallback reviewers, set the values of **query**, **queryRoot**, and **queryType** properties of an accessReviewReviewerScope. [See the accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true) resource for descriptions of these properties.
 
-Example configurations of the **reviewers** or **backupReviewers** property using the accessReviewReviewerScope include the following:
+Example configurations of the **reviewers** or **fallbackReviewers** property using the accessReviewReviewerScope include the following:
 
 ### Examples
 
@@ -53,8 +53,7 @@ Example configurations of the **reviewers** or **backupReviewers** property usin
 "reviewers": [
     {
         "query": "./owners",
-        "queryType": "MicrosoftGraph",
-        "queryRoot": "decisions"
+        "queryType": "MicrosoftGraph"
     }
 ]
 ```
@@ -64,8 +63,7 @@ To specify only a specific non-guest groups owners from a specific country as th
 ```http
 "reviewers": [
     {
-        "query": "/groups/{group id}/owners?$filter=microsoft.graph.user/userType eq 'Member' and microsoft.graph.user/country eq 
-        'USA'",
+        "query": "/groups/{group id}/owners?$filter=microsoft.graph.user/userType eq 'Member' and microsoft.graph.user/country eq 'USA'",
         "type": "MicrosoftGraph”
     }
 ]
@@ -82,6 +80,7 @@ To specify only a specific non-guest groups owners from a specific country as th
     }
 ]
 ```
+Because `./manager` is a relative query, specify the **queryRoot** property with the value `decisions`.
 
 ## See also
 
