@@ -1,6 +1,6 @@
 ---
 title: "educationSubmission: setUpResourcesFolder"
-description: "This function triggers the SharePoint resource folder creation, where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission."
+description: "Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission."
 localization_priority: Normal
 author: "sharmas"
 ms.prod: "education"
