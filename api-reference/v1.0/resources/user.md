@@ -139,7 +139,7 @@ This resource supports:
 |companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.<br><br>Returned only on `$select`.|
 |consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
 |country|String|The country/region in which the user is located; for example, "US" or "UK". Maximum length is 128 characters. Supports `$filter`.|
-|createdDateTime | DateTimeOffset |The created date of the user object. Supports `$filter` with the `eq`, `lt`, and `ge` operators.|
+|createdDateTime | DateTimeOffset |The created date of the user object. Supports `$filter` with the `eq`, `ne`, `le`, and `ge` operators.|
 |creationType|String|Indicates whether the user account was created as a regular school or work account (`null`), an external account (`Invitation`), a local account for an Azure Active Directory B2C tenant (`LocalAccount`) or self-service sign-up using email verification (`EmailVerified`). Read-only.|
 |deletedDateTime| DateTimeOffset | The date and time the user was deleted. <br><br>Returned only on `$select`. |
 |department|String|The name for the department in which the user works. Maximum length is 64 characters. Supports `$filter`.|
