@@ -82,10 +82,13 @@ The following is a JSON representation of the resource.
   "managedDeviceId": "String",
   "managedDeviceName": "String",
   "provisioningPolicyId": "String",
+  "provisioningPolicyName": "String",
+  "onPremisesConnectionName": "String",
   "servicePlanId": "String",
   "servicePlanName": "String",
   "status": "String",
   "userPrincipalName": "String",
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "String (timestamp)",
+  "gracePeriodEndDateTime": "String (timestamp)"
 }
 ```
