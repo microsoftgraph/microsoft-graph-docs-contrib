@@ -60,17 +60,7 @@ To review *only inactive users* assigned to the group, specify as follows:
 }
 ```
 
-#### Example 3: Review guest users assigned to all groups
-
-```http
-"scope": {
-    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest') ",
-    "queryType": "MicrosoftGraph"
-}
-```
-
-#### Example 4: Review guest users assigned to all Microsoft 365 groups
+#### Example 3: Review guest users assigned to all Microsoft 365 groups
 
 ```http
 "instanceEnumerationScope": {
@@ -84,9 +74,9 @@ To review *only inactive users* assigned to the group, specify as follows:
 }
 ```
 
-Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review. If this property is not specified, this configuration is similar to [Example 3](/graph/accessreviews-scope-concept#example-3-review-guest-users-assigned-to-all-groups).
+Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review.
 
-#### Example 5: Review access of all inactive guest users to all groups
+#### Example 4: Review access of all inactive guest users to all groups
 
 ```http
 "scope": {
@@ -99,7 +89,7 @@ Because this review is applied on all Microsoft 365 groups, configure the **inst
 
 Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`.
 
-#### Example 6: Review of all inactive guest users assigned to all teams
+#### Example 5: Review of all inactive guest users assigned to all teams
 
 ```http
 "instanceEnumerationScope": {
@@ -116,7 +106,7 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 
 Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams.
 
-#### Example 7: Review of Entitlement Management access package assignment
+#### Example 6: Review of Entitlement Management access package assignment
 
 ```http
 "scope": {
@@ -126,7 +116,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-#### Example 8: Review of service principals assigned to privileged roles 
+#### Example 7: Review of service principals assigned to privileged roles 
 
 ```http
 "scope": {
