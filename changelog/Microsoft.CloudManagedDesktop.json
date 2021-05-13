@@ -7,7 +7,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.Read.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudPc"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.Read.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [Cloud PC device image](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [cloudPCDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
                     "Target": "cloudpcdeviceimage"
                 },
                 {
@@ -23,7 +23,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.Read.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [Cloud PC on-premises connection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
                     "Target": "cloudpconpremisesconnection"
                 },
                 {
@@ -31,7 +31,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.Read.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [Cloud PC provisioning policy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resources.",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
                     "Target": "cloudpcprovisioningpolicy"
                 },
                 {
@@ -39,7 +39,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.Read.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the [Get sourceImages](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta) method of [Cloud PC device image](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta), ",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the [getSourceImages](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta) method of [cloudPCDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta). ",
                     "Target": "cloudpcdeviceimage-getsourceimages"
                 },
                 {
@@ -47,7 +47,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.ReadWrite.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudpc"
                 },
                 {
@@ -55,7 +55,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.ReadWrite.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [Cloud PC device image](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resources.",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [cloudPCDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
                     "Target": "cloudPcDeviceImage"
                 },
                 {
@@ -63,7 +63,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.ReadWrite.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [Cloud PC on-premises connection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
                     "Target": "cloudpconpremisesconnection"
                 },
                 {
@@ -71,7 +71,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.ReadWrite.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [Cloud PC provisioning policy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
                     "Target": "cloudpcprovisioningpolicy"
                 },
                 {
@@ -79,7 +79,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.ReadWrite.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the [Reprovision](https://docs.microsoft.com/en-us/graph/api/cloudPc-reprovison?view=graph-rest-beta) method of [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta)",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the [reprovison](https://docs.microsoft.com/en-us/graph/api/cloudPc-reprovison?view=graph-rest-beta) method of [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta)",
                     "Target": "cloudPc-reprovison"
                 },
                 {
@@ -87,7 +87,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.ReadWrite.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the [update active directory domain password](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta) method of [Cloud PC on-premises connection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta)",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the [updateAdDomainPassword](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta) method of [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta)",
                     "Target": "cloudpconpremisesconnection-updateaddomainpassword"
                 },
                 {
@@ -95,7 +95,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.ReadWrite.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the method of [assign](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta) method of [Cloud PC provisioning policy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta)",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the method of [assign](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta) method of [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta)",
                     "Target": "cloudpcprovisioningpolicy-assign"
                 }
             ],
