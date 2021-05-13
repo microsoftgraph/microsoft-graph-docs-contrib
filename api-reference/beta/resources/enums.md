@@ -2216,3 +2216,69 @@ Possible values for user account types (group membership), per Windows definitio
 |principal|
 |unknownFutureValue|
 
+### postType values 
+
+|Member|
+|:---|
+|regular|
+|quick|
+|strategic|
+|unknownFutureValue|
+
+### serviceHealthClassificationType values 
+
+|Member|
+|:---|
+|Advisory|
+|Incident|
+|unknownFutureValue|
+
+### serviceHealthOrigin values 
+
+|Member|
+|:---|
+|Microsoft|
+|ThirdParty|
+|Customer|
+|unknownFutureValue|
+
+### serviceHealthStatus values 
+
+|Member|
+|:---|
+|ServiceOperational|
+|Investigating|
+|RestoringService|
+|VerifyingService|
+|ServiceRestored|
+|PostIncidentReviewPublished|
+|ServiceDegradation|
+|ServiceInterruption|
+|ExtendedRecovery|
+|FalsePositive|
+|InvestigationSuspended|
+|Resolved|
+|MitigatedExternal|
+|Mitigated|
+|ResolvedExternal|
+|Confirmed|
+|Reported|
+|UnknownFutureValue|
+
+### serviceUpdateCategory values 
+
+|Member|
+|:---|
+|PreventOrFixIssue|
+|PlanForChange|
+|StayInformed|
+|unknownFutureValue|
+
+### serviceUpdateSeverity values 
+
+|Member|
+|:---|
+|Normal|
+|High|
+|Critical|
+|unknownFutureValue|

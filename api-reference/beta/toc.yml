@@ -13994,3 +13994,39 @@ items:
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
+        - name: admin
+        items:
+        - name: serviceAnnouncement (preview)
+          items:
+          - name: serviceHealth
+           items:
+           - name: Get service health overview of a service for tenant
+             href: api/servicehealth-get.md
+           - name: List service health overview of all tenant's services
+             href: api/servicehealth-list.md
+          - name: issues
+            items:
+            - name: Get information of a specified service issue for tenant
+              href: api/servicehealthissue-get.md
+            - name: List all service issues for tenant
+              href: api/servicehealthissue-list.md
+            - name: Get incident report of an issue for tenant
+              href: api/servicehealthissue-incidentreport.md
+          - name: messages
+            items:
+            - name: Get information of a specified service message for tenant
+              href: api/serviceupdatemessage-get.md
+            - name: List all service messages for tenant
+              href: api/serviceupdatemessage-list.md
+            - name: Mark read status on messages for login user
+              href: api/serviceupdatemessage-markread.md
+            - name: Mark unread status on messages for login user
+              href: api/serviceupdatemessage-markunread.md
+            - name: Mark archived status on messages for login user
+              href: api/serviceupdatemessage-archive.md
+            - name: Mark unarchived status on messages for login user
+              href: api/serviceupdatemessage-unarchive.md
+            - name: Mark favorited status on messages for login user
+              href: api/serviceupdatemessage-favorite.md
+            - name: Mark unfavorited status on messages for login user
+              href: api/serviceupdatemessage-unfavorite.md
