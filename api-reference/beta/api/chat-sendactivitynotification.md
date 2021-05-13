@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
 |previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. Only Azure AD users are supported. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) and [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityURL`:
 
@@ -252,6 +252,54 @@ Content-Type: application/json
 
 ---
 
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Notify the members of a chat about a task created in a chat
+
+This example shows how you can send an activity feed notification to all of the members of a chat. This example is the same as Example 1, except that the recipient is now a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Note that the `chatId` specified in the `recipient` must match the `chatId` specified in the request URL.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification_4"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+    },
+    "activityType": "taskCreated",
+    "previewText": {
+        "content": "New Task Created"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.chatMembersNotificationRecipient",
+        "chatId": "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+    },
+    "templateParameters": [
+        {
+            "name": "taskId",
+            "value": "Task 12322"
+        }
+    ] 
+}
+```
 
 #### Response
 <!-- {

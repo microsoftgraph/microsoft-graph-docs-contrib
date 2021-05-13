@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
 |previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. Only Azure AD users are supported. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. See also [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md), [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md), and [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
 
@@ -259,6 +259,101 @@ Content-Type: application/json
 
 ---
 
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Notify the members of a team about pending finance approval requests
+
+This example shows how you can send an activity feed notification to all of the members of a team. This example is the same as Example 1, except that the recipient is now a [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_4"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "activityType": "pendingFinanceApprovalRequests",
+    "previewText": {
+        "content": "Internal spending team has a pending finance approval requests"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.teamMembersNotificationRecipient",
+        "teamId": "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "templateParameters": [
+        {
+            "name": "pendingRequestCount",
+            "value": "5"
+        }
+    ] 
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 5: Notify the members of a channel about pending finance approval requests
+
+This example shows how you can send an activity feed notification to all of the members of a channel. This example is the same as Example 1, except that the recipient is now a [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_5"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "activityType": "pendingFinanceApprovalRequests",
+    "previewText": {
+        "content": "Internal spending team has a pending finance approval requests"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.channelMembersNotificationRecipient",
+        "teamId": "e8bece96-d393-4b9b-b8da-69cedef1a7e7",
+        "channelId": "19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2"
+    },
+    "templateParameters": [
+        {
+            "name": "pendingRequestCount",
+            "value": "5"
+        }
+    ] 
+}
+```
 
 #### Response
 <!-- {
