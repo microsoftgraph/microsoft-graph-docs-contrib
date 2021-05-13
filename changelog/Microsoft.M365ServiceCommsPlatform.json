@@ -1,0 +1,22 @@
+{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "",
+                    "ApiChange": "",
+                    "ChangedApiName": "",
+                    "ChangeType": "",
+                    "Description": "",
+                    "Target": ""
+                }
+            ],
+            "Id": "",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-13T04:46:50.585Z",
+            "WorkloadArea": "M365 ServiceComms",
+            "SubArea": ""
+        }
+    ]
+}
