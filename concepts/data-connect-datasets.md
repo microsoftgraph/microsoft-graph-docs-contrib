@@ -10,7 +10,7 @@ ms.prod: "data-connect"
 
 Microsoft Graph data connect supports a variety of datasets, data regions, and storage locations in Microsoft Azure. This topic describes the supported datasets and how to access the dataset schemas, the Microsoft 365 and Microsoft Azure regions that are supported, and the storage locations that data connect utilizes through Azure Data Factory.
 
-If you would like to request support for additional datasets, regions, or sinks, let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581).
+If you would like to request support for additional datasets, regions, or sinks, let us know on [UserVoice](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## Datasets
 
