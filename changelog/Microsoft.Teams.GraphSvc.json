@@ -3,6 +3,30 @@
     {
       "ChangeList": [
         {
+          "Id": "48f75989-6c06-11eb-83a5-b441f1c9dab6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publishingState",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatMembersNotificationRecipient](https://docs.microsoft.com/en-us/graph/api/resources/chatMembersNotificationRecipient?view=graph-rest-beta) resource type.",
+          "Target": "chatMembersNotificationRecipient"
+        },
+        {
+          "Id": "48f75989-6c06-11eb-83a5-b441f1c9dab5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publishingState",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelMembersNotificationRecipient](https://docs.microsoft.com/en-us/graph/api/resources/channelMembersNotificationRecipient?view=graph-rest-beta) resource type.",
+          "Target": "channelMembersNotificationRecipient"
+        },
+        {
+          "Id": "48f75989-6c06-11eb-83a5-b441f1c9dab4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publishingState",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamMembersNotificationRecipient](https://docs.microsoft.com/en-us/graph/api/resources/teammembersnotificationrecipient?view=graph-rest-beta) resource type.",
+          "Target": "teamMembersNotificationRecipient"
+        },
+        {
           "Id": "48f75989-6c06-11eb-83a5-b441f1c9dab3",
           "ApiChange": "Property",
           "ChangedApiName": "publishingState",
