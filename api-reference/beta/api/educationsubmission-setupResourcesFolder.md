@@ -48,7 +48,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "educationsubmission_setupresourcesfolder_1"
+  "name": "educationsubmission_setupresourcesfolder"
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/submissions/20302/setUpResourcesFolder
