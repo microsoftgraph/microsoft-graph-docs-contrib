@@ -475,7 +475,7 @@ items:
                 href: change-notifications-delivery.md
               - name: Get change notifications for chat and channel messages
                 href: teams-changenotifications-chatmessage.md
-                name: Get change notifications for team and channel
+                name: Get change notifications for team and channel events
                 href: teams-changenotifications-team-and-channels.md
                 name: Get change notifications for team membership
                 href: teams-changenotifications-teamMembership.md

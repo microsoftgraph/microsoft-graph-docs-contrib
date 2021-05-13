@@ -77,7 +77,7 @@ Content-Type: application/json
 
 ### Subscribe to changes in any channel at tenant level
 
-To get change notifications for any change in channel's property in any channel or any channel creation or deletion across tenant, subscribe to `teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for creation, updation or deletion of any channel across tenant, subscribe to `teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 >**Note:** Private channel is not supported.
 
@@ -156,7 +156,7 @@ For notifications with resource data, the payload looks for any change in team's
         "resource": "teams('fb82c19a-0f6d-41ed-90f0-cbb29a476ede')",
         "resourceData": {
             "id": "1612289765949",
-            "@odata.type": "#Microsoft.Graph.Teams",
+            "@odata.type": "#Microsoft.Graph.Team",
             "@odata.id": "teams('fb82c19a-0f6d-41ed-90f0-cbb29a476ede')"
         },
         "encryptedContent": {

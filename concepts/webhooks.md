@@ -297,7 +297,7 @@ The following table lists the latency to expect between an event happening in th
 |:-----|:-----|:-----|
 |[alert][] | Less than 3 minutes | 5 minutes |
 |[callRecord][] | Less than 15 minutes | 60 minutes |
-|[channel][] | Less than 15 minutes | 60 minutes |
+|[channel][] | 10-20 seconds | 60 minutes |
 |[chatMessage][] | Less than 10 seconds | 1 minute |
 |[contact][] | Unknown | Unknown |
 |[conversation][] | Unknown | Unknown |
