@@ -23,7 +23,7 @@ Data connect supports the following datasets today. To view the schemas for each
 |BasicDataSet_v0.Message_v0|Contains the message in each user's mailbox. The schema for these entities resembles the [Microsoft Graph messages schema](/graph/api/resources/message).| 
 |BasicDataSet_v0.SentItem_v0|Contains the messages sent from each user's mailbox. The schema for these entities resembles the [Microsoft Graph messages schema](/graph/api/resources/message).| 
 |BasicDataSet_v0.User_v0|Contains user information (DisplayName, UserPrincipalName, and so on).| 
-|BasicDataSet_v0.MailboxSettings_v0|Contains the mailbox settings of each user. The schema for these entities corresponds to the [Microsoft Graph mailbox settings schema](/graph/api/resources/mailboxsettings?view=graph-rest-1.0).| 
+|BasicDataSet_v0.MailboxSettings_v0|Contains the mailbox settings of each user. The schema for these entities corresponds to the [Microsoft Graph mailbox settings schema](/graph/api/resources/mailboxsettings).| 
 |BasicDataSet_v0.MailFolder_v0|Contains the mail folders from each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph mail folders schema](/graph/api/resources/mailfolder).|
 |BasicDataSet_v0.Manager_v0|Contains user information for the manager of each user. The schema for these entities corresponds to [Microsoft Graph user schema](/graph/api/resources/user).|
 |BasicDataSet_v0.DirectReport_v0|Contains user information about the employees that directly report to each user. The schema for these entities corresponds to the [Microsoft Graph user schema](/graph/api/resources/user).|
