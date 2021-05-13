@@ -16,6 +16,7 @@ content meets their needs. Should NOT begin with a verb.
 Required. Lead with a light intro that describes what the article covers. Answer the 
 fundamental "why would I want to know this?" question. Keep it short.
 -->
+External groups (along with Azure Active Directory users and groups) are used to set permissions on externalItems added to a Microsoft Graph connection. Use externalGroups to represent non-Azure Active Directory groups or group-like constructs (such as Business units, Teams, and son on) that determine permission over the content in your external data source.
 
 [add your introductory paragraph]
 
