@@ -12,8 +12,7 @@ author: "finsharp"
 Namespace: microsoft.graph
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None
 
 ## Relationships
 None
