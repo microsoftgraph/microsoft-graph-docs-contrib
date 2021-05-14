@@ -2,7 +2,6 @@
 title: External groups
 description: Concept page for external groups
 author: mecampos
-ms.author: mecampos
 ms.topic: conceptual #Required; leave this attribute/value as-is.
 ---
 <!-- 1. H1
@@ -12,10 +11,8 @@ content meets their needs. Should NOT begin with a verb.
 
 # External groups
 
-<!-- 2. Introductory paragraph 
-Required. Lead with a light intro that describes what the article covers. Answer the 
-fundamental "why would I want to know this?" question. Keep it short.
--->
+You can use Microsoft Graph connectors to bring your external data into Microsoft Graph. A Microsoft Graph connection allows you to handle your data as a single unit, and you can view and work with the connections you create or are explicitly authorized to manage.  
+
 External groups (along with Azure Active Directory users and groups) are used to set permissions on externalItems added to a Microsoft Graph connection. Use externalGroups to represent non-Azure Active Directory groups or group-like constructs (such as Business units, Teams, and son on) that determine permission over the content in your external data source.
 
 [add your introductory paragraph]

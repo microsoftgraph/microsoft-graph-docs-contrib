@@ -2,7 +2,6 @@
 title: Quickstart – Create your first custom Microsoft Graph Connector
 description: Quickstart guide to create a custom connector 
 author: mecampos
-ms.author: mecampos
 ms.topic: quickstart
 ms.date: 04/26/2021
 ms.custom: template-quickstart
