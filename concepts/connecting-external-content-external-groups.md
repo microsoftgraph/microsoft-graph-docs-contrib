@@ -11,37 +11,34 @@ content meets their needs. Should NOT begin with a verb.
 
 # External groups
 
-You can use Microsoft Graph connectors to bring your external data into Microsoft Graph. A Microsoft Graph connection allows you to handle your data as a single unit, and you can view and work with the connections you create or are explicitly authorized to manage.  
+You can use Microsoft Graph connectors to bring your external data into Microsoft Graph. A Microsoft Graph connection allows you to handle your data as a single unit, and you can view and work with the connections you create or are explicitly authorized to manage.
 
-External groups (along with Azure Active Directory users and groups) are used to set permissions on externalItems added to a Microsoft Graph connection. Use externalGroups to represent non-Azure Active Directory groups or group-like constructs (such as Business units, Teams, and son on) that determine permission over the content in your external data source.
+External items added via a Microsoft Graph connection can be governed by Azure Active Directory (AAD) users and groups, or by non-AAD groups and other group-like constructs (such as Business units, Teams, etc.).
 
-[add your introductory paragraph]
+You can use external groups to set permissions on external items. External groups can contain both AAD users and groups as well as non-AAD groups. See externalGroups and externalGroupMembers for detailed API information.
 
-<!-- 3. H2s
-Required. Give each H2 a heading that sets expectations for the content that follows. 
-Follow the H2 headings with a sentence about how the section contributes to the whole.
--->
+## Create an external group
 
-## [Section 1 heading]
-<!-- add your content here -->
+To create an externalGroup (link to create externalGroup), you&#39;ll need a unique ID, a display name, and a description.
 
-## [Section 2 heading]
-<!-- add your content here -->
+## Delete an external group
 
-## [Section n heading]
-<!-- add your content here -->
+To delete an externalGroup (link to delete externalGroup), you will only need to know its unique ID.
 
-<!-- 4. Next steps
-Required. Provide at least one next step and no more than three. Include some 
-context so the customer can determine why they would click the link.
--->
+## Create external group members
 
-## Next steps
-<!-- Add a context sentence for the following links -->
-- [Write concepts](contribute-how-to-write-concept.md)
-- [Links](links-how-to.md)
+To create an externalGroupMember (link to create externalGroupMember), you&#39;ll need a unique ID, the type of member added to the external group, and the identity source to which the member belongs.
 
-<!--
-Remove all the comments in this template before you sign-off or merge to the 
-main branch.
--->
+Creating an external group member enables the following scenarios:
+
+- Add an Azure Active Directory user as a member.
+- Add an Azure Active Directory group as a member.
+- Add another external group as a member.
+
+## Delete external group members
+
+To delete an externalGroupMember (link to delete externalGroupMember), you will only need to know its unique ID.
+
+## Related
+
+Microsoft Graph Connectors API overview (link to doc)

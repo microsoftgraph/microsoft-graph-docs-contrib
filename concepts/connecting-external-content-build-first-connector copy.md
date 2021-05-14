@@ -11,65 +11,20 @@ ms.custom: template-quickstart
 #
 # Quickstart – Create your first custom Microsoft Graph Connector
 
-[1 Introduction](#_Toc66907338)
 
-[2 How does the sample work?](#_Toc66907339)
 
-[3 Prerequisites](#_Toc66907340)
-
-[4 Register the app in the portal](#_Toc66907341)
-
-[5 Build the app](#_Toc66907342)
-
-[5.1 Create a .NET Core console app](#_Toc66907343)
-
-[5.2 Add nuget packages](#_Toc66907344)
-
-[5.3 Add azure AD authentication](#_Toc66907345)
-
-[5.4 Add user experience](#_Toc66907346)
-
-[5.5 Set up data model](#_Toc66907347)
-
-[5.6 Write the graph helper service](#_Toc66907348)
-
-[5.7 Initialize graph helper service](#_Toc66907349)
-
-[5.8 Create the connection](#_Toc66907350)
-
-[5.9 Register schema](#_Toc66907351)
-
-[5.10 Sync items](#_Toc66907352)
-
-[6 Configure the app](#_Toc66907353)
-
-[7 Create the database from CSV](#_Toc66907354)
-
-[8 Run the app](#_Toc66907355)
-
-[9 Surface the data in search](#_Toc66907356)
-
-[9.1 Create a vertical](#_Toc66907357)
-
-[9.2 Create a result type](#_Toc66907358)
-
-[10 Search for results](#_Toc66907359)
-
-[11 Summary](#_Toc66907360)
-
-1.
 # Introduction
 
 With Microsoft Graph Connectors, you can add your own data into Microsoft Graph and have it power various Microsoft 365 experiences.
 
 This .NET Core application shows you how to use the Microsoft Graph Connector API to create a customer connector and use it to power Microsoft Search. The sample uses fictitious data - appliance parts inventory for the Contoso Appliance Repair.
 
-1.
+
 # How does the sample work?
 
 ![](RackMultipart20210428-4-jkha36_html_370455c4c42cf106.png)
 
-1.
+
 # Prerequisites
 
 1. Visual studio 2019 with [.NET Core 3.1 SDK](https://www.microsoft.com/net/download/core) installed on your development computer.
@@ -121,7 +76,7 @@ After the previous steps are completed, you will then be able to register an app
 1.
 # Build the app
 
-  1.
+  
 ## Create a .NET Core console app
 
 1. Launch Visual Studio 2019 and navigate to File à New à Project.

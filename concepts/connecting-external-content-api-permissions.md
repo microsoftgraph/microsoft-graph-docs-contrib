@@ -9,7 +9,7 @@ ms.topic: conceptual
 
 This topic provides the list of permissions that are required to authorize access to Graph Connector's data through Microsoft Graph APIs.
 
-!Note ([!INCLUDE auth-use-least-privileged])
+[!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
 
 ## Permission's names
 

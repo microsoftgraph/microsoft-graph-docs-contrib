@@ -6,57 +6,345 @@ ms.author: mecampos
 ms.topic: conceptual #Required; leave this attribute/value as-is.
 ---
 
-<!--Remove all the comments in this template before you sign-off or merge to the 
-main branch.
--->
+[!INCLUDE [beta-disclaimer](../api-reference/includes/beta-disclaimer.md)]
 
-<!--
-This template provides the basic structure of a concept article.
-See the [concept guidance](contribute-how-write-concept.md) in the contributor guide.
+# Connection Settings API
 
-To provide feedback on this template contact 
-[the templates workgroup](mailto:templateswg@microsoft.com).
--->
+This topic describes settings and management updates for the v1.0 Connection API.
 
-<!-- 1. H1
-Required. Set expectations for what the content covers, so customers know the 
-content meets their needs. Should NOT begin with a verb.
--->
+A connection is a logical container that adds content from an external source into Microsoft Graph. A connection is also a unit of administration in the Microsoft Graph connectors platform. Once you&#39;ve created the connection, you will be able to add items.
 
-# Connection API
+Items that are added to the connection must adhere to the Microsoft Graph external item structure, and each item in the connection should have a unique item ID. You use this ID to create, update, or delete the item in Microsoft Graph. A connection allows your registered application to define a schema for items that will be ingested, and also allows your service to add, update, or delete items from the external data source.
 
-<!-- 2. Introductory paragraph 
-Required. Lead with a light intro that describes what the article covers. Answer the 
-fundamental "why would I want to know this?" question. Keep it short.
--->
+##
 
-[add your introductory paragraph]
+##
 
-<!-- 3. H2s
-Required. Give each H2 a heading that sets expectations for the content that follows. 
-Follow the H2 headings with a sentence about how the section contributes to the whole.
--->
+## Managing connections
 
-## [Section 1 heading]
-<!-- add your content here -->
+You can create, update and delete connections in Microsoft Graph. For more details on how to do this, see [Create, update, and delete connections in the Microsoft Graph]( [Create, update, and delete connections in the Microsoft Graph](https://review.docs.microsoft.com/en-us/graph/connecting-external-content-manage-connections?branch=pr-en-us-12368)).
 
-## [Section 2 heading]
-<!-- add your content here -->
+## Connection schema before the v1.0 API
 
-## [Section n heading]
-<!-- add your content here -->
+{
 
-<!-- 4. Next steps
-Required. Provide at least one next step and no more than three. Include some 
-context so the customer can determine why they would click the link.
--->
+    &quot;id&quot;: &quot;servicenowhr&quot;,
 
-## Next steps
-<!-- Add a context sentence for the following links -->
-- [Write concepts](contribute-how-to-write-concept.md)
-- [Links](links-how-to.md)
+    &quot;name&quot;: &quot;Contoso ServiceNow connection&quot;,
 
-<!--
-Remove all the comments in this template before you sign-off or merge to the 
-main branch.
--->
+    &quot;description&quot;: &quot;ServiceNow KB for Contoso Corp&quot;,
+
+    &quot;connectorId&quot;: &quot;\&lt;scd config ID\&gt;&quot;,
+
+    &quot;appInfo&quot;: {
+
+        &quot;name&quot;: &quot;ServiceNow&quot;,
+
+        &quot;icon&quot;: &quot;https://cdn.microsoft.com/appicons/serviceNow.svg&quot;
+
+    },
+
+    &quot;searchSettings&quot;: {
+
+        &quot;resultTypes&quot;: []
+
+    },
+
+    &quot;feedSettings&quot;: {
+
+        &quot;urlToItemResolvers&quot;: []
+
+    },
+
+    &quot;complianceSettings&quot;: {
+
+        &quot;resultTypes&quot;: []
+
+    }
+
+}
+
+## Connection schema on the v1.0 API
+
+{
+
+    &quot;id&quot;: &quot;servicenowhr&quot;,
+
+    &quot;name&quot;: &quot;Contoso ServiceNow connection&quot;,
+
+    &quot;description&quot;: &quot;ServiceNow KB for Contoso Corp&quot;,
+
+    &quot;connectorId&quot;: &quot;\&lt;scd config ID\&gt;&quot;,
+
+    &quot;appInfo&quot;: {
+
+        &quot;name&quot;: &quot;ServiceNow&quot;,
+
+        &quot;icon&quot;: &quot;https://cdn.microsoft.com/appicons/serviceNow.svg&quot;
+
+    },
+
+    &quot;authorizedAppIds&quot;: [],
+
+    &quot;notifications&quot;: [],
+
+    &quot;schema&quot;: {},
+
+    &quot;searchSettings&quot;: {
+
+        &quot;resultTypes&quot;: []
+
+    },
+
+    &quot;feedSettings&quot;: {
+
+        &quot;urlToItemResolvers&quot;: []
+
+    },
+
+    &quot;complianceSettings&quot;: {
+
+        &quot;resultTypes&quot;: []
+
+    }
+
+}
+
+## Types for new fields
+
+| Properties in Setting | Description | Type |
+| --- | --- | --- |
+| **AppInfo** | App information used while displaying the connection. | MGE.applicationInfo |
+| **AuthorizedAppIds** | Applications with permission on this connection. | StringCollection |
+| **Notifications** | List of notification info objects. | MGE.notificationInfo |
+| **Schema** | The connection schema. | MGE.schema |
+| **SearchSettings** | Search settings. | MGE.searchSettings |
+| **FeedSettings** | Feed settings. | MGE.feedSettings |
+| **ComplianceSettin** | Compliance settings. | MGE.complianceSettings |
+
+_\*MGE = microsoft.graph.externalConnectors_
+
+## Example settings object
+
+{
+
+&quot;id&quot;: &quot;servicenowhr&quot;,
+
+    &quot;name&quot;: &quot;Contoso ServiceNow connection&quot;,
+
+    &quot;description&quot;: &quot;ServiceNow KB for Contoso Corp&quot;,
+
+    &quot;connectorId&quot;: &quot;52a39169-2645-449f-85b3-fb55c439e7a8&quot;,
+
+    &quot;appInfo&quot;: {
+
+        &quot;name&quot;: &quot;Contoso connector&quot;,
+
+        &quot;icon&quot;: &quot;https://cdn.contoso.com/images/logo&quot;
+
+    },
+
+    &quot;authorizedAppIds&quot;: [
+
+        &quot;d310d35d-72ec-47dd-92f2-fb9c40936555&quot;
+
+    ],
+
+    &quot;notifications&quot;: [
+
+        {
+
+            &quot;clientId&quot;: &quot;0b2fefc7-0e9e-4072-8803-8022e42d072c&quot;,
+
+            &quot;endpoint&quot;: &quot;https://northwind.com/notification&quot;
+
+        }
+
+    ],
+
+    &quot;schema&quot;: {},
+
+    &quot;searchSettings&quot;: {
+
+        &quot;resultTypes&quot;: [
+
+            {
+
+                &quot;id&quot;: &quot;contosoTickets&quot;,
+
+                &quot;condition&quot;: &quot;severity lt 2&quot;,
+
+                &quot;displayTemplate&quot;: &quot;{\&quot;type\&quot;:\&quot;AdaptiveCard……}&quot;,
+
+                &quot;priority&quot;: 1
+
+            }
+
+        ]
+
+    },
+
+    &quot;feedSettings&quot;: {
+
+        &quot;urlToItemResolvers&quot;: [
+
+            {
+
+                &quot;priority&quot;: 1,
+
+                &quot;lookupUrl&quot;: {
+
+                    &quot;urlPrefixes&quot;: [
+
+                        &quot;https://www.contoso.com&quot;
+
+                    ],
+
+                    &quot;urlPattern&quot;: &quot;^/teams/(?\&lt;teamId\&gt;[^/]+)/tickets/(?\&lt;ticketId\&gt;[^/]+)))(/.+)?)?/?$&quot;
+
+                },
+
+                &quot;itemId&quot;: &quot;lookupUrl.ticketId&quot;
+
+            },
+
+            {
+
+                &quot;priority&quot;: 2,
+
+                &quot;lookupUrl&quot;: {
+
+                    &quot;urlPrefixes&quot;: [
+
+                        &quot;https://www.contoso.com&quot;
+
+                    ],
+
+                    &quot;urlPattern&quot;: &quot;^/teams/(?\&lt;teamId\&gt;[^/]+)/tickets/(?\&lt;ticketId\&gt;[^/]+)))(/.+)?)?/?$&quot;
+
+                },
+
+                &quot;itemId&quot;: &quot;sha512(item.properties.url)&quot;
+
+            }
+
+        ]
+
+    },
+
+    &quot;complianceSettings&quot;: {
+
+        &quot;resultTypes &quot;: [
+
+            {
+
+                &quot;id&quot;: &quot;contosoTicketPreview&quot;,
+
+                &quot;displayTemplate&quot;: &quot;{\&quot;type\&quot;:\&quot;AdaptiveCard……}&quot;,
+
+                &quot;priority&quot;: 1
+
+            },
+
+        ]
+
+    }
+
+}
+
+##
+
+## API
+
+These additional properties can be updated by appliying a PATCH call on /Connections entity.
+
+Eg: PATCH [https://graph.microsoft.com/beta/external/connections(&#39;{connectionId}&#39;)](https://graph.microsoft.com/beta/external/connections(&#39;%7BconnectionId%7D&#39;)/)
+
+PATCH https://graph.microsoft.com/beta/external/connections(&#39;{connectionId}&#39;)
+
+{
+
+    &quot;appInfo&quot;: {
+
+        &quot;name&quot;: &quot;Contoso connector&quot;,
+
+        &quot;icon&quot;: &quot;https://cdn.contoso.com/images/logo&quot;
+
+    },
+
+    &quot;searchSettings&quot;: {
+
+        &quot;resultTypes&quot;: [
+
+            {
+
+                &quot;id&quot;: &quot;contosoTickets&quot;,
+
+                &quot;condition&quot;: &quot;severity lt 2&quot;,
+
+                &quot;displayTemplate&quot;: &quot;{\&quot;type\&quot;:\&quot;AdaptiveCard……}&quot;,
+
+                &quot;priority&quot;: 1
+
+            }
+
+        ]
+
+    }
+
+}
+
+The call will update appInfo and searchSettings while keeping the other properties as is.
+
+The API add support for a deeper level of property access and update.
+
+PATCH/PUT/GET/DELETE [https://graph.microsoft.com/beta/external/connections(&#39;{connectionId}&#39;)/appInfo](https://graph.microsoft.com/beta/external/connections(&#39;%7BconnectionId%7D&#39;)/appInfo)
+
+PATCH/PUT/GET/DELETE [https://graph.microsoft.com/beta/external/connections(&#39;{connectionId}&#39;)/searchSettings](https://graph.microsoft.com/beta/external/connections(&#39;%7BconnectionId%7D&#39;)/searchSettings)
+
+## Sequence flow
+
+### Before the v1.0 API
+
+Some of the setting elements have a dependency on schema, and the settings cannot be provided if a schema is not available. For example, searchSettings.resultTypes has an adaptive card template needed to render item content. This payload cannot be validated if the schema is not available. Before v10., the sequence of operations will be as follows:
+
+1. Create the schema.
+2. Update the connection to add settings or make similar changes.
+
+### On the v1.0 API
+
+Inline POST of settings in Connection object will be supported. A single POST /external/Connections call would create connection, setup schema and populate settings. Since the schema creation is time consuming, connection creation will become an async operation. It will return an operationID in this case that can be used to get the status.
+
+## Get connections for a given connector
+
+GET
+
+https://graph.microsoft.com/beta/external/connections?$filter = tolower(connectorId) eq &#39;cc29e42b-5273-4c34-a5f8-a25edcec077d&#39;
+
+Note: Publisher field is STRING, and comparison will be case sensitive. To ignore case, use tolower/toupper for comparison.title Build – Connection
+
+participant Teams&#39; admin portal
+
+participant ISV
+
+participant Graph Connectors
+
+opt metaOS onboard an app
+
+ISV -\&gt;Teams&#39; admin portal: Create app, provide manifest
+
+Teams&#39; admin portal -\&gt;Teams&#39; admin portal: approve app
+
+end
+
+Teams&#39; admin portal -\&gt; Graph Connectors: POST external/Connectors
+
+opt app is enabled by admin
+
+Teams&#39; admin portal -\&gt; ISV : POST https://northwind.com/notificationUrl
+
+end
+
+ISV -\&gt;Graph Connectors : POST /external/Connections
+
+note over Graph Connectors:{\n &quot;id&quot;: &quot;servicenowhr&quot;,\n &quot;name&quot;: &quot;Contoso&quot;,\n &quot;description&quot;: &quot;ServiceNow KB&quot;,\n &quot;connectorId&quot;: &quot;\&lt;scd config ID\&gt;&quot;,\n &quot;appInfo&quot;: {\n &quot;name&quot;: &quot;ServiceNow&quot;,\n &quot;icon&quot;: &quot;https://cdn.microsoft.com/1.svg&quot;\n },\n &quot;authorizedAppIds&quot;: [],\n &quot;notifications&quot;: [],\n &quot;schema&quot;: {},\n &quot;searchSettings&quot;: {\n &quot;resultTypes&quot;: []\n },\n &quot;feedSettings&quot;: {\n &quot;urlToItemResolvers&quot;: []\n },\n &quot;complianceSettings&quot;: {\n &quot;resultTypes&quot;: []\n }\n}\n
