@@ -173,7 +173,7 @@ items:
             href: connecting-external-content-connectors-api-overview.md
           - name: Play with connectors API on Postman
             href: connecting-external-content-connectors-api-postman.md
-          - name: Quickstart: Build your first custom connector
+          - name: Quickstart Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
