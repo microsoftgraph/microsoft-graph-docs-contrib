@@ -2,7 +2,6 @@
 title: "temporaryAccessPassAuthenticationMethod resource type"
 description: "Represents a Temporary Access Pass registered to a user."
 author: "inbarckms"
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

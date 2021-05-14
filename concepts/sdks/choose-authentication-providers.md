@@ -29,7 +29,7 @@ Authentication providers implement the code required to acquire a token using th
 | [Mobile app that calls web APIs](/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
 | | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
 
-> Note: Java and android developers need to add the [azure-identity](https://docs.microsoft.com/java/api/overview/azure/identity-readme?view=azure-java-stable) library in order to get access to the different credentials types.
+> Note: Java and android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme?view=azure-java-stable) library in order to get access to the different credentials types.
 
 ## <a name="AuthCodeProvider" ></a>Authorization code provider
 
@@ -486,5 +486,6 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 ## Next steps
 
+* For code samples that show you how to use the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
 * Authentication providers require an client ID. You'll want to [register your application](https://portal.azure.com/) after you set up your authentication provider.
-* Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+* Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).

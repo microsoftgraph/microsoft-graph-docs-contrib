@@ -30,6 +30,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | Property              | Type                                          | Description                                                                                                                                                                                                                                                 |
 | :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                    |
+| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
+| allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
 | alternativeRecording  | Stream                                        | The content stream of the alternative recording of a live event. Read-only.                                                                                                                                                                                 |
 | attendeeReport        | Stream                                        | The content stream of the attendee report of a live event. Read-only.                                                                                                                                                                                       |
 | autoAdmittedUsers (deprecated)    | String                                        | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only. |
@@ -37,7 +39,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event*                                                                                                                                                                                                                    |
 | chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting.                                                                                                                                                                                                   |
 | creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                                                                                                                                                                |
-| capabilities          | meetingCapabilities collection                             | The list of meeting capabilities. Possible values are: `questionAndAnswer`,`unknownFutureValue`.                                                                                                                                                                                 |
+| capabilities (deprecated)         | meetingCapabilities collection                             | The list of meeting capabilities. Possible values are: `questionAndAnswer`,`unknownFutureValue`.                                                                                                                                                                                 |
 | endDateTime           | DateTime                                      | The meeting end time in UTC.                                                                                                                                                                                                                                |
 | externalId            | String                                        | The external ID. A custom ID. Optional.                                                                                                                                                                                                                     |
 | id                    | String                                        | The default ID associated with the online meeting. Read-only.                                                                                                                                                                                               |
@@ -47,14 +49,16 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only                                                                                                                                       |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                                                                                                                                                                                                  |
 |meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of a scheduled meeting. Read-only. |
-| participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                                                                                                                                                        |
+| participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting. This includes the organizer and the attendees.                                                                                                                                                        |
 | recording             | Stream                                        | The content stream of the recording of a live event. Read-only.                                                                                                                                                                                             |
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                                                                                                                                                              |
 | subject               | String                                        | The subject of the online meeting.                                                                                                                                                                                                                          |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                                                                                                                                                   |
 
 > [!CAUTION]
+>
 >- The **autoAdmittedUsers** property is deprecated. Use **scope** property of [lobbyBypassSettings](lobbyBypassSettings.md) instead.
+>- The **capabilities** property is deprecated. Use **isQuestionAndAnswerEnabled** property of [broadcastMeetingSettings](broadcastMeetingSettings.md) instead.
 >- \* Creating live events with the **broadcastSettings** property is in Beta, with important limitations. Please refer to
 > [broadcastSettings](broadcastMeetingSettings.md) for more details.
 
@@ -68,8 +72,17 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Unknown future value.                                         |
 
-> [!NOTE]
+> [!TIP]
 > If the value of **allowedPresenters** is set to `roleIsPresenter`, please specify each meeting participant's meeting role using **role** property in [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
+
+### meetingChatMode values
+
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| enabled            | Meeting chat is enabled.                                               |
+| disabled           | Meeting chat is disabled.                                              |
+| limited            | Meeting chat is enabled but only for the duration of the meeting call. |
+| unknownFutureValue | Unknown future value.                                                  |
 
 ## JSON representation
 
@@ -91,13 +104,14 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
-  "capabilities": [ "questionAndAnswer" ],
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "allowedPresenters": "String",
   "isBroadcast": "Boolean",
-  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"}
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowTeamworkReactions": "Boolean"
 }
 ```
 
