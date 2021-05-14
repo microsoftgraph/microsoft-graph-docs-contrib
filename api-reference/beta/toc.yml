@@ -9482,6 +9482,21 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Cloud PC user setting
+          href: resources/cloudpcusersetting.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-usersettings.md
+          - name: Get
+            href: api/cloudpcusersetting-get.md
+          - name: Create
+            href: api/virtualendpoint-post-usersettings.md
+          - name: Update
+            href: api/cloudpcusersetting-update.md
+          - name: Delete
+            href: api/cloudpcusersettings-delete.md
+          - name: Assign
+            href: api/cloudpcusersettings-assign.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:

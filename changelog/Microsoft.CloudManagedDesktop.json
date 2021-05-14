@@ -1,6 +1,43 @@
 {
     "changelog": [
         {
+            "ChangeList": [{
+                "Id": "27414a0a-b486-11eb-bc4f-918d3a03a3b9",
+                "ApiChange": "Relationship",
+                "ChangedApiName": "userSettings",
+                "ChangeType": "Addition",
+                "Description": "Added the **userSettings** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                "Target": "virtualEndpoint"
+            }, {
+                "Id": "2743abc2-b486-11eb-bc4f-918d3a03a3b9",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcUserSetting",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcUserSetting](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcUserSetting?view=graph-rest-beta) resource type.",
+                "Target": "cloudPcUserSetting"
+            }, {
+                "Id": "27460f51-b486-11eb-bc4f-918d3a03a3b9",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcUserSettingAssignment",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcUserSettingAssignment](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcUserSettingAssignment?view=graph-rest-beta) resource type.",
+                "Target": "cloudPcUserSettingAssignment"
+            }, {
+                "Id": "27487070-b486-11eb-bc4f-918d3a03a3b9",
+                "ApiChange": "Method",
+                "ChangedApiName": "assign",
+                "ChangeType": "Addition",
+                "Description": "Added the [assign](https://docs.microsoft.com/en-us/graph/api/cloudPcUserSetting-assign?view=graph-rest-beta) method to the [cloudPcUserSetting](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcUserSetting?view=graph-rest-beta) resource.",
+                "Target": "cloudPcUserSetting"
+            }],
+            "Id": "273c8509-b486-11eb-bc4f-918d3a03a3b9",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-14T07:29:44.182Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",

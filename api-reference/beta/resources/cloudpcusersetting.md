@@ -1,0 +1,62 @@
+---
+title: "cloudPcUserSetting resource type"
+description: "Represent a cloud Pc user setting"
+author: "AshleyYangSZ"
+localization_priority: Normal
+ms.prod: "cloud-pc"
+doc_type: resourcePageType
+---
+
+# cloudPcUserSetting resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a cloud PC user setting.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List cloudPcUserSettings](../api/virtualendpoint-list-cloudpcusersettings.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md) collection|Get a list of the [cloudPcUserSetting](../resources/cloudpcusersetting.md) objects and their properties.|
+|[Get cloudPcUserSetting](../api/cloudpcusersetting-get.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|Read the properties and relationships of a [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.|
+|[Create cloudPcUserSetting](../api/virtualendpoint-post-usersettings.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|Create a new [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.|
+|[Update cloudPcUserSetting](../api/cloudpcusersetting-update.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|Update the properties of a [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.|
+|[Delete cloudPcUserSetting](../api/cloudpcusersetting-delete.md)|None|Deletes a [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.|
+|[assign](../api/cloudpcusersetting-assign.md)|None|Assign a [cloudPcUserSetting](../resources/cloudpcusersetting.md) to user groups.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Unique identifier for the cloud PC user setting. Read-only.|
+|displayName|String|The setting name as it appears in the user interface. |
+|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to True.  |
+|selfServiceEnabled|Boolean|To turn on the self service option, change this setting to True. |
+|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection|The user settings will be applied to the Azure AD user groups identified in this collection. Only security groups and Office 365 groups are supported.|
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.cloudPcUserSetting",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.cloudPcUserSetting",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "selfServiceEnabled": "Boolean",
+  "localAdminEnabled": "Boolean",
+  "lastModifiedDateTime": "String (timestamp)"
+}
+```
