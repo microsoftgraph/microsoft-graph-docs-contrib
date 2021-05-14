@@ -10,7 +10,6 @@ author: elisenyang
 This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Getting started involves the following steps:
 
 1. Set up your development environment and create a web part.
-1. Add the Microsoft Graph Toolkit.
 1. Add the Microsoft Graph Toolkit SharePoint Framework package.
 1. Add the SharePoint Provider.
 1. Add components.
@@ -22,60 +21,6 @@ This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint
 ## Set up your SharePoint Framework development environment and create a new web part
 
 Follow the steps to [Set up your SharePoint Framework development environment](/sharepoint/dev/spfx/set-up-your-development-environment) and then [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
-
-## Add the Microsoft Graph Toolkit
-
-Install the Microsoft Graph Toolkit npm package and polyfills with the following command:
-
-```bash
-npm install @microsoft/mgt
-```
-If you plan to support IE11 in your web parts, you'll need to follow additional steps to ensure cross-browser compatibility:
-
-1. Install the following packages:
-```bash
-npm install -D babel-loader @babel/core @babel/preset-env webpack
-npm install -D @webcomponents/webcomponentsjs regenerator-runtime core-js
-```
-
-2. Add the following code to `gulpfile.js`, right above `build.initialize(gulp)`:
-```ts
-build.configureWebpack.mergeConfig({
-  additionalConfiguration: (generatedConfiguration) => {
-    generatedConfiguration.module.rules.push(
-      {
-        test: /\.m?js$/, use:
-        {
-          loader: "babel-loader",
-          options:
-          {
-            presets: [["@babel/preset-env",
-              {
-                targets: {
-                  "ie": "11"
-                }
-              }]]
-          }
-        }
-      }
-    );
-
-    return generatedConfiguration;
-  }
-});
-```
-3. In your `src\webparts\<your-project>\<your-web-part>.ts` file, import the following polyfills before the SharePoint provider in the next step.
-
-```ts
-import 'regenerator-runtime/runtime';
-import 'core-js/es/number';
-import 'core-js/es/math';
-import 'core-js/es/string';
-import 'core-js/es/date';
-import 'core-js/es/array';
-import 'core-js/es/regexp';
-import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
-```
 
 ## Add the Microsoft Graph Toolkit SharePoint Framework package
 
@@ -116,7 +61,7 @@ Now, you can start adding components to your web part. Simply add the components
 ```ts
 public render(): void {
     this.domElement.innerHTML = `
-      <mgt-person person-query="me" view="twolines"><mgt-person>
+      <mgt-person person-query="me" view="twolines"></mgt-person>
     `;
 }
 ```
