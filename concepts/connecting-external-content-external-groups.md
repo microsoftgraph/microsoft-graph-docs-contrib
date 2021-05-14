@@ -4,11 +4,6 @@ description: Concept page for external groups
 author: mecampos
 ms.topic: conceptual #Required; leave this attribute/value as-is.
 ---
-<!-- 1. H1
-Required. Set expectations for what the content covers, so customers know the 
-content meets their needs. Should NOT begin with a verb.
--->
-
 # External groups
 
 You can use Microsoft Graph connectors to bring your external data into Microsoft Graph. A Microsoft Graph connection allows you to handle your data as a single unit, and you can view and work with the connections you create or are explicitly authorized to manage.

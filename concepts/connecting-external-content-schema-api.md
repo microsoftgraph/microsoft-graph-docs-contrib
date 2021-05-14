@@ -6,6 +6,7 @@ ms.author: mecampos
 ms.topic: conceptual #Required; leave this attribute/value as-is.
 ---
 [!INCLUDE [beta-disclaimer](../api-reference/includes/beta-disclaimer.md)]
+
 # Schema API
 
 This topic includes the updates for the v1.0 Schema API.
@@ -22,9 +23,9 @@ You can set the search schema attributes to control the search functionality of 
 | --- | --- | --- |
 | **SEARCH** | Makes the text content of a property searchable. Property contents are included in the full-text index. | If the property is  **title** , a query for  **Enterprise**  returns answers that contain the word  **Enterprise**  in any text or title. |
 | **QUERY** | Searches by query for a match for a particular property. The property name can then be specified in the query, either programmatically or verbatim. | If the  **Title**  property can be queried, then the query  **Title: Enterprise**  is supported. |
-| **RETRIEVE** | Only retrievable properties can be used in the result type and displayed in the search result. |
- |
+| **RETRIEVE** | Only retrievable properties can be used in the result type and displayed in the search result. | |
 | **REFINE** | The Refine option can be used in the same way that it is in the Microsoft Search results page. | Users in your organization can [filter](https://docs.microsoft.com/en-us/microsoftsearch/custom-filters) by  **URL**  in the search results page if the refine property was marked when the connection was set up. |
+|
 
 ## Labels
 
@@ -42,8 +43,6 @@ A label is a well-known tag published by Microsoft that you can add against a pr
 | **fileName** | In the case of a file, the name of the file in the data source. |
 | **fileExtension** | In the case of a file, the extension of the file in the data source. |
 |
- |
- |
 
 Add as many labels as you can, but ensure that they are correctly mapped to properties. Do not add a label to a property if it does not make sense to do so. Incorrect mappings will deteriorate the experience.
 
