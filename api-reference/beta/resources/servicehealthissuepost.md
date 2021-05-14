@@ -1,9 +1,9 @@
 ---
 title: "serviceHealthIssuePost complex type"
 description: "This complex type represents the history posts which involving new post type for the service issue."
-author: "payi (GitHub name payiAzure)"
+author: "payiAzure"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "M365ServiceCommsPlatform"
 doc_type: resourcePageType
 ---
 

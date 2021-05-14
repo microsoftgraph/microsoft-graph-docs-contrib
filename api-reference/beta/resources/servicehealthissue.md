@@ -1,9 +1,9 @@
 ---
 title: "serviceHealthIssue resource type"
-description: "**TODO: Add Description**"
-author: "payi (GitHub name payiAzure)"
+description: "An entity resource type inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md), to represent an issue happened for a service. The service health issue could be a service incident or service advisory. e.g. "Exchange mailbox service is down" is a service incident; "User may have seen a delay while receiving emails" is a service advisory."
+author: "payiAzure"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "M365ServiceCommsPlatform"
 doc_type: resourcePageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "serviceUpdateMessage resource type"
 description: "An entity resource type inherited from base type [serviceAnnouncementBase](../resources/serviceannouncementbase.md) to represent announcement, such as major update, for a service. e.g. Windows service has a new feature published."
-author: "payi (GitHub name payiAzure)"
+author: "payiAzure"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "M365ServiceCommsPlatform"
 doc_type: resourcePageType
 ---
 

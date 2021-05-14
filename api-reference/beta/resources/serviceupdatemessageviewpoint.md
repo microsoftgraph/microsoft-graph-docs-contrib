@@ -1,9 +1,9 @@
 ---
 title: "serviceUpdateMessageViewpoint complex type"
 description: "A complex type to represent user view points data for a service update message."
-author: "payi (GitHub name payiAzure)"
+author: "payiAzure"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "M365ServiceCommsPlatform"
 doc_type: resourcePageType
 ---
 

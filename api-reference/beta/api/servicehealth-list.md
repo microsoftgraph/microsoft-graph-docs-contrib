@@ -1,9 +1,9 @@
 ---
 title: "List serviceHealths"
 description: "Get service health overviews of tenant's all services. Returns a list of the serviceHealth objects and their properties."
-author: "payi (GitHub name payiAzure)"
+author: "payiAzure"
 localization_priority: Normal
-ms.prod: "MS prod*"
+ms.prod: "M365ServiceCommsPlatform"
 doc_type: apiPageType
 ---
 

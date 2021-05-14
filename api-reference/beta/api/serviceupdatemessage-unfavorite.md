@@ -1,9 +1,9 @@
 ---
 title: "serviceUpdateMessage: unfavorite"
 description: "This POST action is to mark the status of a list of service update messages as unfavorited for the login user."
-author: "payi (GitHub name payiAzure)"
+author: "payiAzure"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "M365ServiceCommsPlatform"
 doc_type: apiPageType
 ---
 

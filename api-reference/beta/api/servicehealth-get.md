@@ -1,9 +1,9 @@
 ---
 title: "Get serviceHealth"
 description: "Read service health overview of a specified service for tenant. The operation returns a [serviceHealth](../resources/servicehealth.md) object."
-author: "payi (GitHub name payiAzure)"
+author: "payiAzure"
 localization_priority: Normal
-ms.prod: "MS prod"
+ms.prod: "M365ServiceCommsPlatform"
 doc_type: apiPageType
 ---
 

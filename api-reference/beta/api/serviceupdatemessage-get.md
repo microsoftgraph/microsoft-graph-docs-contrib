@@ -1,9 +1,9 @@
 ---
 title: "Get serviceUpdateMessage"
 description: "Gets a specified SHD service message for the tenant.The operation returns a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object."
-author: "payi (GitHub name payiAzure)"
+author: "payiAzure"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "M365ServiceCommsPlatform"
 doc_type: apiPageType
 ---
 

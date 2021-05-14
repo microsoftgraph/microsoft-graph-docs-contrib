@@ -1,9 +1,9 @@
 ---
 title: "serviceHealth resource type"
 description: "A resource type for service health, to represent the health information of a service."
-author: "payi (GitHub name payiAzure)"
+author: "payiAzure"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: ""M365ServiceCommsPlatform
 doc_type: resourcePageType
 ---
 
