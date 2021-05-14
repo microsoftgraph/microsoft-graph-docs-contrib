@@ -1,6 +1,6 @@
 ---
 title: "accessReviewNotificationRecipientItem resource type"
-description: "Define notification event for accessReviewInstance."
+description: "Defines users or groups who will receive notifications on access review."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
