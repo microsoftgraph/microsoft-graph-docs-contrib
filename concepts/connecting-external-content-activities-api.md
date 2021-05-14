@@ -11,9 +11,10 @@ content meets their needs. Should NOT begin with a verb.
 -->
 
 
-[!INCLUDE [beta-disclaimer](../api-reference/includes/beta-disclaimer.md)]
 
 # Activities API
+
+[!INCLUDE [beta-disclaimer](../api-reference/includes/beta-disclaimer.md)]
 
 Microsoft Graph connectors enable you to connect your external data to Microsoft Graph. Once you&#39;ve created a connection, your interactions with your data will help build a foundation for intelligent apps and services to benefit M365 end users.
 
