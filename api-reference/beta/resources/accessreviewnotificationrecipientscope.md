@@ -1,7 +1,7 @@
 ---
 title: "accessreviewnotificationrecipientscope resource type"
-description: "Represents who will get notification."
-author: "jingyangatmsft"
+description: "Represents who will receive notification for access reviews."
+author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -15,17 +15,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The accessreviewnotificationrecipientscope represents a base class of notification recipient for review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Supported derived 
+The `accessReviewNotificationRecipientScope` represents a base class for defining who will receive notifications on instances of [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) objects. Supported derived 
 types:
-- **accessReviewNotificationRecipientQueryScope** is a derived type of accessreviewnotificationrecipientscope that expressed as an OData query, which allows notification recipient to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager). 
-defines who will get special notification
+- **accessReviewNotificationRecipientQueryScope** is a derived type of `accessReviewNotificationRecipientScope` that is expressed as an OData query. It allows notification recipients to be specified as a static list of users (i.e., specific users, group owners, group members).
 
 ## accessReviewNotificationRecipientQueryScope resource type
 ### Properties
 | Property | Type | Description |
 | :-------------------------| :---------- | :---------- |
 | query | String | This represents the query for what the recipients are. See table for examples. |
-| queryType | String | The type of query. Examples  `MicrosoftGraph`. |
+| queryType | String | The type of query. Example,  `MicrosoftGraph`. |
 | queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (i.e., ./manager) is specified. |
 
 ### Supported queries for accessReviewNotificationRecipientQueryScope
@@ -54,13 +53,3 @@ The following is a JSON representation of the resource.
 
 ## Relationships
 None.
-<!--
-{
-  "type": "#page.annotation",
-  "description": "accessreviewnotificationrecipientscope resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
