@@ -78,8 +78,8 @@ Content-length: 159
 {
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "displayName": "Example",
-  "selfServiceEnabled": false,
-  "localAdminEnabled": true
+  "selfServiceEnabled": "false",
+  "localAdminEnabled": "true"
 }
 ```
 

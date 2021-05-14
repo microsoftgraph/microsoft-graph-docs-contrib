@@ -89,7 +89,7 @@ Content-Type: application/json
     "id": "556092f8-92f8-5560-f892-6055f8926055",
     "displayName": "String",
     "selfServiceEnabled": true,
-    "localAdminEnabled": "false,
+    "localAdminEnabled": false,
     "lastModifiedDateTime": "2021-02-01T10:29:57Z"
   }
 }
@@ -129,7 +129,7 @@ Content-Type: application/json
     "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
     "displayName": "Display Name value",
     "selfServiceEnabled": true,
-    "localAdminEnabled": "false,
+    "localAdminEnabled": false,
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "assignments": [
       {

@@ -87,8 +87,8 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcUserSetting",
       "id": "556092f8-92f8-5560-f892-6055f8926055",
       "displayName": "Test1",
-      "selfServiceEnabled": True,
-      "localAdminEnabled": False,
+      "selfServiceEnabled": true,
+      "localAdminEnabled": false,
       "lastModifiedDateTime": "2021-02-01T10:29:57Z"
     }
   ]
