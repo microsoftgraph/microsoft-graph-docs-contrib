@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2dca8959-b716-4b4c-a93d-a535c01eb6e0/instances/8d035c9d-798d-47fa-beb4-f986a4b8126f/decisions
 ```
 
 
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('2dca8959-b716-4b4c-a93d-a535c01eb6e0')/instances('8d035c9d-798d-47fa-beb4-f986a4b8126f')/decisions",
-    "@odata.count": 2,
+    "@odata.count": 1,
     "value": [
         {
             "id": "139166ec-d214-4835-95aa-3c1d89581e51",
@@ -102,35 +102,6 @@ Content-Type: application/json
                 "id": "1800bb2c-955d-4205-8471-3a6c3116435d",
                 "displayName": "guest example",
                 "userPrincipalName": "guest@guest.com"
-            }
-        },
-        {
-            "id": "a4ff9392-e3b3-43a1-a46a-b1a092df0f56",
-            "accessReviewId": "8d035c9d-798d-47fa-beb4-f986a4b8126f",
-            "reviewedDateTime": null,
-            "decision": "NotReviewed",
-            "justification": "",
-            "appliedDateTime": null,
-            "applyResult": "New",
-            "recommendation": "Approve",
-            "principalLink": "https://graph.microsoft.com/v1.0/users/36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
-            "resourceLink": null,
-            "resource": null,
-            "reviewedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
-            },
-            "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
-            },
-            "principal": {
-                "@odata.type": "#microsoft.graph.userIdentity",
-                "id": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
-                "displayName": "Administrator",
-                "userPrincipalName": "admin@contoso.com"
             }
         }
     ]

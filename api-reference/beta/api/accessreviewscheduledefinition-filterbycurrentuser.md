@@ -40,7 +40,6 @@ GET /identityGovernance/accessReviews/definitions/filterByCurrentUser
 
 ## Function parameters
 In the request URL, provide the function parameters in the following table with values.
-The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -86,7 +85,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(accessReviewScheduleDefinition)",
-    "@odata.count": 2,
+    "@odata.count": 1,
     "value": [
         {
             "@odata.type": "#microsoft.graph.accessReviewScheduleDefinition",
@@ -149,76 +148,6 @@ Content-Type: application/json
                         "recurrenceTimeZone": null,
                         "startDate": "2021-04-30",
                         "endDate": "2021-04-30"
-                    }
-                },
-                "applyActions": [
-                    {
-                        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
-                    }
-                ]
-            },
-            "instances": []
-        },
-        {
-            "@odata.type": "#microsoft.graph.accessReviewScheduleDefinition",
-            "id": "fd8fcf8a-3c95-4d4f-b6f5-a3397ee6183e",
-            "displayName": "Test",
-            "createdDateTime": "2021-04-28T21:08:54.8204768Z",
-            "lastModifiedDateTime": "2021-04-29T07:00:42.0315581Z",
-            "status": "Completed",
-            "descriptionForAdmins": "Test",
-            "descriptionForReviewers": "Test",
-            "createdBy": {
-                "id": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@contoso.com"
-            },
-            "scope": {
-                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
-                "queryType": "MicrosoftGraph",
-                "queryRoot": null
-            },
-            "instanceEnumerationScope": {
-                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/v1.0/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true",
-                "queryType": "MicrosoftGraph",
-                "queryRoot": null
-            },
-            "reviewers": [
-                {
-                    "query": "./owners",
-                    "queryType": "MicrosoftGraph",
-                    "queryRoot": null
-                }
-            ],
-            "backupReviewers": [],
-            "fallbackReviewers": [],
-            "settings": {
-                "mailNotificationsEnabled": true,
-                "reminderNotificationsEnabled": true,
-                "justificationRequiredOnApproval": true,
-                "defaultDecisionEnabled": true,
-                "defaultDecision": "Approve",
-                "instanceDurationInDays": 3,
-                "autoApplyDecisionsEnabled": true,
-                "recommendationsEnabled": true,
-                "recurrence": {
-                    "pattern": {
-                        "type": "weekly",
-                        "interval": 1,
-                        "month": 0,
-                        "dayOfMonth": 0,
-                        "daysOfWeek": [],
-                        "firstDayOfWeek": "sunday",
-                        "index": "first"
-                    },
-                    "range": {
-                        "type": "numbered",
-                        "numberOfOccurrences": 0,
-                        "recurrenceTimeZone": null,
-                        "startDate": "2021-04-29",
-                        "endDate": "2021-04-29"
                     }
                 },
                 "applyActions": [

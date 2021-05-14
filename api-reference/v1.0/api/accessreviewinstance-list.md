@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/8564a649-4f67-4e09-88e7-55def6530e88/instances
 ```
 
 
@@ -88,18 +88,6 @@ Content-Type: application/json
             "scope": {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
                 "query": "/v1.0/groups/f661fdd0-f0f7-42c0-8281-e89c6527ac63/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
-                "queryType": "MicrosoftGraph",
-                "queryRoot": null
-            }
-        },
-        {
-            "id": "f1f35945-3f42-4941-9f7b-465e545f6f99",
-            "startDateTime": "2021-03-09T23:10:28.83Z",
-            "endDateTime": "2021-03-09T23:10:28.83Z",
-            "status": "Applied",
-            "scope": {
-                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/v1.0/groups/f4ac55b3-3b3c-417e-85bd-183bbda3ccf2/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
                 "queryType": "MicrosoftGraph",
                 "queryRoot": null
             }

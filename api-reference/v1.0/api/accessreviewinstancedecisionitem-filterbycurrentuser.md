@@ -38,7 +38,6 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## Function parameters
 In the request URL, provide the function parameters in the following table with values.
-The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -66,7 +65,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/1234ea1c-8d12-457b-1234-a37dc59e54e0/instances/7070ea1c-8d12-457b-bd35-a37dc59e54e0/decisions/filterByCurrentUser(on='reviewer')
 ```
 
 
@@ -84,7 +83,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(accessReviewInstanceDecisionItem)",
-    "@odata.count": 2,
+    "@odata.count": 1,
     "value": [
         {
             "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
@@ -120,42 +119,6 @@ Content-Type: application/json
                 "id": "1800bb2c-955d-4205-8471-3a6c3116435d",
                 "displayName": "guest example",
                 "userPrincipalName": "guest@guest.com"
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-            "id": "1f0f6f8a-15af-4a45-a58d-9a959037e0e7",
-            "accessReviewId": "7070ea1c-8d12-457b-bd35-a37dc59e54e0",
-            "reviewedDateTime": null,
-            "decision": "NotReviewed",
-            "justification": "",
-            "appliedDateTime": null,
-            "applyResult": "New",
-            "recommendation": "Approve",
-            "principalLink": "https://graph.microsoft.com/v1.0/users/36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
-            "resourceLink": null,
-            "resource": null,
-            "reviewedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
-            },
-            "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
-            },
-            "target": {
-                "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
-                "userDisplayName": "Administrator",
-                "userPrincipalName": "admin@contoso.com"
-            },
-            "principal": {
-                "@odata.type": "#microsoft.graph.userIdentity",
-                "id": "36c4c56e-fce3-4e2d-b28e-4ac0c7d2fa10",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@contoso.com"
             }
         }
     ]

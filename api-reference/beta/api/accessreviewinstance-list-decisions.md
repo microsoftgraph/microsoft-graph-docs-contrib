@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/16d424f6-0100-4bf1-9ebc-fe009c5e5006/instances/bb14c722-51b8-4962-9bd2-1d96ba773d80/decisions
 ```
 
 
@@ -80,7 +80,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('16d424f6-0100-4bf1-9ebc-fe009c5e5006')/instances('bb14c722-51b8-4962-9bd2-1d96ba773d80')/decisions",
-    "@odata.count": 2,
+    "@odata.count": 1,
     "value": [
         {
             "id": "bfbd4d74-275c-4368-aaa1-06c93838d0d5",
@@ -115,41 +115,6 @@ Content-Type: application/json
                 "id": "540da31b-4d25-4934-b7f7-98bc230eb15a",
                 "displayName": "Alex Wilber",
                 "userPrincipalName": "AlexW@contoso.com"
-            }
-        },
-        {
-            "id": "ef59e864-12f9-4a56-8425-cb7f489bcb45",
-            "accessReviewId": "bb14c722-51b8-4962-9bd2-1d96ba773d80",
-            "reviewedDateTime": "2021-05-05T16:48:14.503Z",
-            "decision": "Approve",
-            "justification": "on my team",
-            "appliedDateTime": null,
-            "applyResult": "New",
-            "recommendation": "Approve",
-            "principalLink": "https://graph.microsoft.com/v1.0/users/e5d796c5-24e9-4ce8-8309-945b77e11612",
-            "resourceLink": null,
-            "resource": null,
-            "reviewedBy": {
-                "id": "ff15bedb-22de-49ad-b2d7-59656607484d",
-                "displayName": "group owner",
-                "userPrincipalName": "group owner"
-            },
-            "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
-            },
-            "target": {
-                "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "e5d796c5-24e9-4ce8-8309-945b77e11612",
-                "userDisplayName": "Adele Vance",
-                "userPrincipalName": "AdeleV@contoso.com"
-            },
-            "principal": {
-                "@odata.type": "#microsoft.graph.userIdentity",
-                "id": "e5d796c5-24e9-4ce8-8309-945b77e11612",
-                "displayName": "Adele Vance",
-                "userPrincipalName": "AdeleV@contoso.com"
             }
         }
     ]

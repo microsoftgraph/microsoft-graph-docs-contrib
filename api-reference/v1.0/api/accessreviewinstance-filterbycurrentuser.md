@@ -38,7 +38,6 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## Function parameters
 In the request URL, provide the function parameters in the following table with values.
-The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -66,7 +65,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/filterByCurrentUser(on='reviewer')
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/e6cafba0-cbf0-4748-8868-0810c7f4cc06/instances/filterByCurrentUser(on='reviewer')
 ```
 
 
@@ -84,26 +83,13 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(accessReviewInstance)",
-    "@odata.count": 2,
+    "@odata.count": 1,
     "value": [
         {
             "@odata.type": "#microsoft.graph.accessReviewInstance",
             "id": "7ca879f0-77ea-4386-b110-776dec898935",
             "startDateTime": "2021-04-20T00:45:51.627Z",
             "endDateTime": "2021-04-23T00:45:51.627Z",
-            "status": "Applied",
-            "scope": {
-                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/v1.0/groups/6b7b9930-38a0-4f93-a107-3bc9904c83d7/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
-                "queryType": "MicrosoftGraph",
-                "queryRoot": null
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.accessReviewInstance",
-            "id": "00ef5dba-4a32-48b3-b18a-57b244c0c4ba",
-            "startDateTime": "2021-04-13T00:45:51.627Z",
-            "endDateTime": "2021-04-16T00:45:51.627Z",
             "status": "Applied",
             "scope": {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
