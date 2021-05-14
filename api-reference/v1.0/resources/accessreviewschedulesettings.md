@@ -1,6 +1,6 @@
 ---
 title: "accessReviewScheduleSettings resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewScheduleSettings` represents the settings associated with an access review series."
+description: "Represents the settings associated with an access review series."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -17,15 +17,15 @@ The **accessReviewScheduleSettings** defines the settings of an [accessReviewSch
 |Property|Type|Description|
 |:---|:---|:---|
 |applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection|Describes the  actions to take once a review is complete. There are two types supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. |
-|autoApplyDecisionsEnabled|Boolean|If true, decisions will be auto-applied to the reviewed resource after the review ends.|
-|defaultDecision|String|Decision chosen if `defaultDecisionEnabled` is enabled. Can be one of "Approve", "Deny", or "Recommendation".|
-|defaultDecisionEnabled|Boolean| If true, defaultDecision will be taken on decisions items where reviewers did not respond.|
+|autoApplyDecisionsEnabled|Boolean|If true, decisions are automatically applied to the reviewed resource after the review ends.|
+|defaultDecision|String|Decision chosen if `defaultDecisionEnabled` is enabled. Possible values: "Approve", "Deny", or "Recommendation".|
+|defaultDecisionEnabled|Boolean| If true, defaultDecision is taken on decisions items where reviewers did not respond.|
 |instanceDurationInDays|Int32|Duration of each [accessReviewInstance](accessreviewinstance.md) in number of days.|
 |justificationRequiredOnApproval|Boolean| If true, reviewers are required to provide justification with decisions.|
-|mailNotificationsEnabled|Boolean|If true, email notifications will be sent to reviewers.|
-|recommendationsEnabled|Boolean|If true, reviewers will see recommendations based on last interactive sign-in.|
-|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Detailed settings for recurrence. Using standard Outlook recurrence object. Note that `dayOfMonth` is not supported - use property startDate on recurrenceRange to determine the day the review will start on.|
-|reminderNotificationsEnabled|Boolean|If true, reviewers will receive reminder emails halfway through the review period.|
+|mailNotificationsEnabled|Boolean|If true, email notifications are sent to reviewers.|
+|recommendationsEnabled|Boolean|If true, reviewers see recommendations based on last interactive sign-in.|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Detailed settings for recurrence. Using standard Outlook recurrence object. The `dayOfMonth`  value is not supported. Use the property startDate on recurrenceRange to determine the day the review starts.|
+|reminderNotificationsEnabled|Boolean|If true, reviewers receive reminder emails halfway through the review period.|
 
 ## Relationships
 None.

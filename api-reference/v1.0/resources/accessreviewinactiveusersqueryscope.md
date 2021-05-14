@@ -18,7 +18,7 @@ Inherits from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|inactiveDuration|Duration|Duration|Defines the length of the duration period of inactivity. Inactivity is based on the last sign in date of the user.|
+|inactiveDuration|Duration|Duration|Defines the length of the duration period of inactivity. Inactivity is based on the last sign-in date of the user.|
 |query|String| Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md)|
 |queryRoot|String| Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md)|
 |queryType|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md)|

@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Disable and delete is a complex type of [accessReviewApplyAction](accessreviewapplyaction.md) that indicates disabling any B2B guest user who is denied in an access review for 30 days, then subsequently deleting their account. This option does not contain any configuration options.
+The [accessReviewApplyAction](accessreviewapplyaction.md) object disables a B2B guest user who is denied in an access review for 30 days, and then deletes their account.
 
 Inherits from [accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 
@@ -33,4 +33,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.disableAndDeleteUserApplyAction"
 }
 ```
-

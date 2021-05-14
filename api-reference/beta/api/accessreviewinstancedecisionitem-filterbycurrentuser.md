@@ -39,7 +39,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## Function parameters
-In the request URL, provide the following query parameters with values.
+In the request URL, provide the function parameters in the following table with values.
 The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
@@ -163,4 +163,3 @@ Content-Type: application/json
     ]
 }
 ```
-

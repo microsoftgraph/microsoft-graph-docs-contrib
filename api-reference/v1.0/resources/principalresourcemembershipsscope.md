@@ -11,21 +11,21 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The principalResourceMembershipsScope is a type of [accessReviewScope](accessreviewscope.md) which allows you to select a collection of principal scopes and a collection of resource scopes and review access of selected principals to selected resources. See the supported queries to see what can be selected. It is used as the `scope` property of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).
+The principalResourceMembershipsScope is a type of [accessReviewScope](accessreviewscope.md) that allows you to select a collection of principal scopes and a collection of resource scopes and review access of selected principals to selected resources. See the supported queries to see what can be selected. It is used as the `scope` property of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|principalScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the principals whose access to resources will be reviewed in the access review.|
-|resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the resources for which access will be reviewed to.|
+|principalScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the principals whose access to resources is reviewed in the access review.|
+|resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the resources for which access is reviewed.|
 
 ## Relationships
 None.
 
 ### Supported queries for resourceScope
-The queries are supported as the `resourceScope` property. They determine the set of resources access is being reviewed to. 
+The queries are supported as the `resourceScope` property and they determine the set of resources for which access is being reviewed. 
 
 |Scenario| resourceScope Query | 
 |--|--|
@@ -34,7 +34,7 @@ The queries are supported as the `resourceScope` property. They determine the se
 | Reviewing access of principalScopes to all Azure AD directory roles | /roleManagement/directory/roleDefinitions |
 
 ### Supported queries for principalScope
-The queries are supported as the `principalScope` property. They determine the set of principals whose access to the associated resourceScope will be reviewed. The associated principalScope Type lists the odata query types accepted as the principalScope.
+The queries are supported as the `principalScope` property. They determine the set of principals whose access to the associated resourceScope is reviewed. The associated principalScope lists the OData query types accepted as the principalScope.
 
 |Scenario| principalScope Query | OData Query Type | Additional Comments |
 |--|--|-- | --|
