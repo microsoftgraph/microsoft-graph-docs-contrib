@@ -3,13 +3,15 @@ title: "userFlowLanguageConfiguration resource type"
 description: "The userFlowsLanguageConfiguration object allows a user flow to support customization of multiple languages."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
 # userFlowLanguageConfiguration resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 User flows language customization is a feature that allows a given user flow to support customization of multiple languages, from all the built-in languages to a custom language.
 
