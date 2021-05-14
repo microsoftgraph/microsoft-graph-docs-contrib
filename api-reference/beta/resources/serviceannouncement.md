@@ -3,7 +3,7 @@ title: "serviceAnnouncement resource container"
 description: "serviceAnnouncement is a top level container for ServiceCommsPlatform resources"
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "M365ServiceCommsPlatform"
+ms.prod: "m365-servicecommsplatform"
 doc_type: resourcePageType
 ---
 

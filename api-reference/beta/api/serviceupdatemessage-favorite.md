@@ -3,7 +3,7 @@ title: "serviceUpdateMessage: favorite"
 description: "This POST action is to mark the status of a list of service update messages as favorited for the login user."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "M365ServiceCommsPlatform"
+ms.prod: "m365-servicecommsplatform"
 doc_type: apiPageType
 ---
 

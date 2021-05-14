@@ -3,7 +3,7 @@ title: "List serviceUpdateMessages"
 description: "Gets all SHD service messages for the tenant. The operation returns a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "M365ServiceCommsPlatform"
+ms.prod: "m365-servicecommsplatform"
 doc_type: apiPageType
 ---
 

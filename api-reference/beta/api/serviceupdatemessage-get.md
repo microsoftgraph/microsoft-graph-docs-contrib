@@ -3,7 +3,7 @@ title: "Get serviceUpdateMessage"
 description: "Gets a specified SHD service message for the tenant.The operation returns a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "M365ServiceCommsPlatform"
+ms.prod: "m365-servicecommsplatform"
 doc_type: apiPageType
 ---
 

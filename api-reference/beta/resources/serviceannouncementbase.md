@@ -3,7 +3,7 @@ title: "serviceAnnouncementBase resource type"
 description: "A base type for serviceHealthIssue and serviceUpdateMessage."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "M365ServiceCommsPlatform"
+ms.prod: "m365-servicecommsplatform"
 doc_type: resourcePageType
 ---
 

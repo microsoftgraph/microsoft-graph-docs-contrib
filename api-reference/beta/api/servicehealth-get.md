@@ -3,7 +3,7 @@ title: "Get serviceHealth"
 description: "Read service health overview of a specified service for tenant. The operation returns a [serviceHealth](../resources/servicehealth.md) object."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "M365ServiceCommsPlatform"
+ms.prod: "m365-servicecommsplatform"
 doc_type: apiPageType
 ---
 

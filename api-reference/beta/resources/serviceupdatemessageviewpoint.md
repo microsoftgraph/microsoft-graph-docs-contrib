@@ -3,7 +3,7 @@ title: "serviceUpdateMessageViewpoint complex type"
 description: "A complex type to represent user view points data for a service update message."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "M365ServiceCommsPlatform"
+ms.prod: "m365-servicecommsplatform"
 doc_type: resourcePageType
 ---
 

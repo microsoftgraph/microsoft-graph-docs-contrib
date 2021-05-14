@@ -3,7 +3,7 @@ title: "serviceHealth resource type"
 description: "A resource type for service health, to represent the health information of a service."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: ""M365ServiceCommsPlatform
+ms.prod: "m365-servicecommsplatform"
 doc_type: resourcePageType
 ---
 
