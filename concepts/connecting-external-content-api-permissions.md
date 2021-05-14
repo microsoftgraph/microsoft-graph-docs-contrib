@@ -101,4 +101,4 @@ SI = System Integrators
 
 ## Related resources
 
-To learn more about the permissions of each major set of Microsoft Graph APIs, visit the Microsoft Graph permissions reference in the following link: Microsoft Graph permissions reference - Microsoft Graph | Microsoft Docs.
+To learn more about the permissions of each major set of Microsoft Graph APIs, visit the Microsoft Graph permissions reference in the following link: [Microsoft Graph permissions reference](permissions-reference.md).
