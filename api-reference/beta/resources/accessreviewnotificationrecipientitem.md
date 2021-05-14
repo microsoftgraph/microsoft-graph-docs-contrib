@@ -1,7 +1,7 @@
 ---
 title: "accessReviewNotificationRecipientItem resource type"
 description: "Define notification event for accessReviewInstance."
-author: "ingyangatmsft"
+author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -22,8 +22,8 @@ Represents an Azure AD [access review](accessreviewsv2-root.md) notification eve
 
 | Property                     | Type     | Description                          |
 | :--------------------------- | :------  | :----------                          |
-| `notificationTemplateType`          |`String`  | This is used to indicate what type of access review email should be sent. Currently supported templateType:CompletedAdditionalRecipients - Send email when review completes noticeing review ends and result available.|
-| `notificationRecipientScope`          |[accessReviewNotificationRecipientScope] (accessreviewnotificationrecipientscope.md)  | This contain notificationRecipient information|
+| notificationTemplateType  |String  | Indicates what type of access review email should be sent. Supported template type is `CompletedAdditionalRecipients` which sends a notification to recipient of review completion.|
+| notificationRecipientScope |[accessReviewNotificationRecipientScope] (accessreviewnotificationrecipientscope.md)  | Determines who the notification email will be sent to.|
 
 ## Relationships
 None.
@@ -36,7 +36,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "@odata.type": "microsoft.graph.accessReviewNotificationRecipientItem",
   "openType": true
 }
 -->
@@ -51,14 +51,3 @@ Here is a JSON representation of the resource.
   "notificationTemplateType": "CompletedAdditionalRecipients"
 }
 ```
-
-<!--
-{
-  "type": "#page.annotation",
-  "description": "accessReviewInstanceDecisionItem resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
