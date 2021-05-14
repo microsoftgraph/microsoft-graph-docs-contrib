@@ -10644,7 +10644,7 @@ items:
         - name: Conditional Access
           items:
           - name: Conditional Access
-            href: resources/privilegedidentitymanagement-root.md
+            href: resources/conditionalaccess-root.md
           - name: Policies
             items:
             - name: Conditional Access policy
@@ -10704,7 +10704,7 @@ items:
             - name: Authentication context class references
               href: resources/authenticationcontextclassreference.md
             - name: List
-              href: api/authenticationcontextclassreferencesroot-list.md
+              href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
             - name: Create
               href: api/authenticationcontextclassreferencesroot-create.md
             - name: Get

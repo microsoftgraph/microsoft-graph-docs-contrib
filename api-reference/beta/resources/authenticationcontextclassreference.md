@@ -19,7 +19,7 @@ Represents an Azure Active Directory authentication context class reference. Aut
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List authenticationContextClassReference](../api/authenticationcontextclassreferencesroot-list.md) | [authenticationContextClassReference](authenticationContextClassReference.md) collection | Get all of the authenticationContextClassReference objects in the organization. |
+| [List authenticationContextClassReference](../api/conditionalaccessroot-list-authenticationcontextclassreferences.md) | [authenticationContextClassReference](authenticationContextClassReference.md) collection | Get all of the authenticationContextClassReference objects in the organization. |
 | [Create authenticationContextClassReference](../api/authenticationcontextclassreferencesroot-post.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Create a new authenticationContextClassReference object. |
 | [Get authenticationContextClassReference](../api/authenticationcontextclassreference-get.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Read properties and relationships of a authenticationContextClassReference object. |
 | [Update authenticationContextClassReference](../api/authenticationcontextclassreference-update.md) | [authenticationContextClassReference](authenticationContextClassReference.md) | Update a authenticationContextClassReference object. |
