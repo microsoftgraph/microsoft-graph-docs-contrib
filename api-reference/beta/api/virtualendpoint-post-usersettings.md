@@ -78,8 +78,8 @@ Content-length: 159
 {
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "displayName": "Example",
-  "selfServiceEnabled": "false",
-  "localAdminEnabled": "true"
+  "selfServiceEnabled": false,
+  "localAdminEnabled": true
 }
 ```
 
@@ -100,8 +100,8 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "id": "556092f8-92f8-5560-f892-6055f8926055",
   "displayName": "Example",
-  "selfServiceEnabled": "false",
-  "localAdminEnabled": "true",
+  "selfServiceEnabled": false,
+  "localAdminEnabled": true,
   "lastModifiedDateTime": "2021-02-01T10:29:57Z"  
 }
 ```
