@@ -6364,14 +6364,6 @@
     {
 
     "ChangeList": [
-      {
-      "Id":"f32565c5-5076-11eb-ae35-ed470c456b69",
-      "ApiChange":"Relationship",
-      "ChangedApiName":"approval",
-      "ChangeType":"Addition",
-      "Description":"Added the **approval** relationship to [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource",
-      "Target":"accessPackageAssignmentRequest"
-    },
       {"Id":"f327cb08-5076-11eb-ae35-ed470c456b69",
         "ApiChange":"Method",
         "ChangedApiName":"FilterByCurrentUser",
