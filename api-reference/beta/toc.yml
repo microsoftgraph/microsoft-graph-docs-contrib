@@ -9740,7 +9740,7 @@ items:
       - name: Submission
         href: resources/educationsubmission.md
         items:
-        - name: List submission resource
+        - name: List submission resources
           href: api/educationsubmission-list-resources.md
         - name: Add submission resource
           href: api/educationsubmission-post-resources.md
