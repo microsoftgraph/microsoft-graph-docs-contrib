@@ -6,7 +6,7 @@ author: mecampos
 doc_type: conceptualPageType
 ---
 
-# Build the app
+<!---# Build the app--->
 
 ## Create a .NET Core console app
 
