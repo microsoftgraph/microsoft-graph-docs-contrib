@@ -28,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
 
+## HTTP request
+
 For a specific user:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -97,7 +99,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+Here is an example of the response. Note: The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
