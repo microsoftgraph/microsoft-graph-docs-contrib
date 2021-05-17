@@ -3,32 +3,31 @@ title: "Microsoft Graph connectors API overview"
 description: "Microsoft Graph connectors API overview"
 author: mecampos
 localization_priority: Priority
-ms.author: mecampos
-
+doc_type: conceptualPageType
 ---
 
 # Microsoft Graph connectors API overview
 
-Microsoft Graph connectors offer a simple way to bring external data into the Microsoft Graph and enhance Microsoft 365 intelligent experiences. You may want to build a custom connector to integrate with services that aren't available as connectors built by Microsoft. To build custom connectors, you use the Microsoft Graph Connector REST APIs.
+Microsoft Graph connectors offer a simple way to bring external data into Microsoft Graph and enhance Microsoft 365 intelligent experiences. You might want to build a custom connector to integrate with services that aren't available as connectors built by Microsoft. To build custom connectors, you use the Microsoft Graph connector REST APIs.
 
-![API overview](./images/connectors-images/api-overview.png)
+![Image showing external data coming trough different types of connectors](./images/connectors-images/api-overview.png)
 
-Graph Connector APIs help:
+Microsoft Graph connector APIs help:
 
 1. Create and manage external data connections.
 2. Define and register the schema of the external data type(s).
 3. Ingest external data items into Microsoft Graph.
 4. Sync external groups.
 
-In this topic, let's look at these APIs in detail.
+This topic provides details about these APIs.
 
 ## Connections API
 
-Connections from external services are represented by the [externalConnection](https://docs.microsoft.com/graph/api/resources/externalconnection?view=graph-rest-beta&amp;preserve-view=true) resource in Microsoft Graph. A connection is a logical container for your external data that you can manage as a single unit.
+Connections from external services are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&amp;preserve-view=true) resource in Microsoft Graph. A connection is a logical container for your external data that you can manage as a single unit.
 
-Once you create a connection to an external data source such as an on-premises content source or an external SaaS service, you must register the schema and ingest the external content into Microsoft Graph. You can only view and manage connections you have created or are explicitly [authorized](https://docs.microsoft.com/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) to manage. Note that a search admin can view and manage all the connections in the tenant from the Microsoft 365 admin center.
+After you create a connection to an external data source such as an on-premises content source or an external SaaS service, you must register the schema and ingest the external content into Microsoft Graph. You can only view and manage connections you have created or are explicitly [authorized](https://docs.microsoft.com/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) to manage. Note that a search admin can view and manage all the connections in the tenant from the Microsoft 365 admin center.
 
-You can model a connection anyway you want. For example, you can [set up multiple connections using the Microsoft Windows file share connector](https://docs.microsoft.com/microsoftsearch/configure-connector) to connect to different file shares. You can also create a single connection to add all items from your data source. For example, you can create a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
+You can model a connection any way you want. For example, you can [set up multiple connections using the Microsoft Windows file share connector](https://docs.microsoft.com/microsoftsearch/configure-connector) to connect to different file shares. You can also create a single connection to add all items from your data source. For example, you can create a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
 
 [Creating a connection](./connecting-external-content-manage-connections.md#create-a-connection) is the first step for an application to add items to Microsoft Graph. A connection allows your registered application to [define a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) for items that will be ingested, and allows your service to add, update, or delete items from the external data source.
 
@@ -39,9 +38,8 @@ You must create and configure a connection before an application can ingest exte
 - [Create a connection](https://docs.microsoft.com/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) with a unique ID, display name, and description.
 - [Register a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) to define the fields that will be included in the index.
 
-  **Important**
-
-After a schema has been registered, it cannot be changed for an existing connection.
+> [!IMPORTANT]
+> After a schema has been registered, it cannot be changed for an existing connection.
 
 ### Update a connection
 
@@ -49,7 +47,7 @@ You can change the display name or description of an existing connection by [upd
 
 ### Delete a connection
 
-You can [delete a connection](https://docs.microsoft.com/graph/api/externalconnection-delete?view=graph-rest-beta&amp;preserve-view=true). Deleting a connection removes all items that were indexed via that connection.<!--check this wording --->
+You can [delete a connection](https://docs.microsoft.com/graph/api/externalconnection-delete?view=graph-rest-beta&amp;preserve-view=true). Deleting a connection removes all items that were indexed via that connection.
 
 ### States and operations
 
@@ -112,9 +110,9 @@ The following table represents an example of a possible schema for a work ticket
 
 If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](https://docs.microsoft.com/graph/connecting-external-content-manage-items#content).
 
-\<Diagram\>
+![A search for "design" displaying results for hits against properties and content](./images/connectors-images/connecting-external-content-manage-items-schema-1.svg)
 
-_A search for &quot;design&quot; displaying results for hits against properties ( __title__ ,  __tags__ ) and content_
+*A search for "design" displaying results for hits against properties (`title`, `tags`) and content.*
 
 #### Queryable
 
@@ -123,27 +121,29 @@ If a property is queryable, you can query against it using knowledge query langu
 >[!NOTE]
 >Suffix matching is not supported.
 
-\<Diagram\>
+![A search for "search ba*" displaying results that match this prefix](./images/connectors-images/connecting-external-content-manage-items-schema-2.svg)
 
-_A search for &quot;search ba_&quot; displaying results that match this prefix\*
+*A search for "search ba" displaying results that match this prefix.*
 
-\<Diagram\>
+![A search for "tags:design" scoping down results to items with "design" in the tags property](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
 
-_A search for &quot;tags:design&quot; scoping down results to items with &quot;design&quot; in the tags property_
+*A search for "tags:design" scoping down results to items with "design" in the tags property.*
 
 #### Retrievable
 
 If a property is retrievable, its value can be returned in search results. Any property that you want to be returned from the query and be relevant in search results must be retrievable. Marking large properties, such as editHistory, or too many properties as retrievable will increase search latency. Be selective and choose relevant properties.
 
-_A set of retrievable properties ( __title__ ,  __lastEditedBy__  etc.) rendered as a result_
+![A set of retrievable properties rendered as a result](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
+
+*A set of retrievable properties (`title`, `lastEditedBy` etc.) rendered as a result.*
 
 #### Refinable
 
 If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page.
 
-\<Diagram\>
+![Refine results by tags, a refinable property](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
 
-_Refine results by  __tags__ , a refinable property_
+*Refine results by `tags`, a refinable property.*
 
 ### Labels
 
@@ -191,9 +191,9 @@ For discovery, i.e. search scenarios, please note:
 
 Labels also affect how default result types are generated. Adding the title and content labels at a minimum will ensure that a result type is created for your connection.
 
-\<Diagram\>
+![A default result type with title and a result snippet](./images/connectors-images/connecting-external-content-manage-schema-6.svg)
 
-_A default result type with  __title__  and a result snippet_
+*A default result type with `title` and a result snippet.*
 
 Your default result type will provide a better experience when you define these labels, when applicable, listed by ascending order:
 

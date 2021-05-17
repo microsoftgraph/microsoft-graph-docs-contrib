@@ -2,10 +2,10 @@
 title: "Create, update, and delete connections in the Microsoft Graph"
 description: "Learn how to use Microsoft Graph to create and manage connections"
 localization_priority: Priority
-author: rsamai
-ms.author: mecampos
+author: mecampos
 doc_type: conceptualPageType
 ---
+<!---<author of this doc: rsamai>--->
 
 # Create, update, and delete connections in the Microsoft Graph
 

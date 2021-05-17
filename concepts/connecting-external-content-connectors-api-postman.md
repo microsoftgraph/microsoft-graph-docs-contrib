@@ -3,8 +3,7 @@ title: "Play with Microsoft Graph connectors API on Postman"
 description: "Try connectors APIs using Postman"
 author: mecampos
 localization_priority: Priority
-ms.author: mecampos
-
+doc_type: conceptualPageType
 ---
 <!---
 ```http

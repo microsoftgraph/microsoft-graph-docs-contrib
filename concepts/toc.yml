@@ -176,11 +176,13 @@ items:
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
-            href: connecting-external-content-manage-schema.md            
+            href: connecting-external-content-manage-schema.md
           - name: Manage items
             href: connecting-external-content-manage-items.md
           - name: API limits
-            href: connecting-external-content-api-limits.md                 
+            href: connecting-external-content-api-limits.md
+          - name: Common API errors
+            href: connecting-external-content-common-connector-api-errors.md
       - name: Data access
         displayName: Microsoft Graph data connect
         items:

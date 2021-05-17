@@ -3,8 +3,7 @@ title: "Common Microsoft Graph connector API errors"
 description: "Common Microsoft Graph connector API errors"
 author: mecampos
 localization_priority: Priority
-ms.author: mecampos
-
+doc_type: conceptualPageType
 ---
 
 # Common Microsoft Graph connector API errors
