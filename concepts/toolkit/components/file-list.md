@@ -27,10 +27,10 @@ You can use several properties to customize the component.
 | file-queries | fileQueries | An array of file queries to be rendered by the component. |
 | none | files | An array of files to get or set the list of files rendered by the component. Use this to access the files loaded by the component. Set this value to load your own files. |
 | insight-type | insightType | Set to show the user’s trending, used, or shared files. |
-| drive-id | driveId | Id of the drive the folder belongs to. Must also provide either `item-id` or `item-path`. |
-| group-id | groupId | Id of the group the folder belongs to. Must also provide either `item-id` or `item-path`. |
-| site-id | siteId | Id of the site the folder belongs to. Must also provide either `{item-id}` or `{item-path}`. Provide `{list-id}` if you’re referencing a file from a specific list. |
-| item-id | itemId | Id of the folder. Default query is `/me/drive/items`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
+| drive-id | driveId | ID of the drive the folder belongs to. Must also provide either `item-id` or `item-path`. |
+| group-id | groupId | ID of the group the folder belongs to. Must also provide either `item-id` or `item-path`. |
+| site-id | siteId | ID of the site the folder belongs to. Must also provide either `{item-id}` or `{item-path}`. Provide `{list-id}` if you’re referencing a file from a specific list. |
+| item-id | itemId | ID of the folder. Default query is `/me/drive/items`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
 | item-path | itemPath | Item path of the folder (relative to the root). Default query is `/me/drive/root`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
 | page-size | pageSize | A number value to indicate the maximum number of files to render on each page. |
 | file-extensions | fileExtensions | An array of file extensions used to filter files to show. |

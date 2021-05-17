@@ -7,7 +7,7 @@ author: beth-panx
 
 # File component in the Microsoft Graph Toolkit
 
-The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview) by displaying information such as the file/folder name, an icon indicating the file type, and other properties such as the author, last modified date, or other details selected by the developer. The developer or application provides the identifiers for a file and the component will generate the query to retrieve the file based on the identifiers provided. This component can be used on it's own or as part of the [mgt-file-list](./file-list.md) components.
+The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview) by displaying information such as the file/folder name, an icon indicating the file type, and other properties such as the author, last modified date, or other details. You can provide the identifiers for a file and the component will generate the query to retrieve the file based on the identifiers provided. This component can be used on its own or as part of the [mgt-file-list](./file-list.md) components.
 
 ## Example
 
@@ -23,21 +23,21 @@ You can use several properties to customize the component.
 
 | Attribute | Property | Description |
 | --------- | -------- | ----------- |
-| `file-query` | `fileQuery` | The full query or path to the file to be retrieved. |
-| `drive-id` | `driveId` | The Id of the drive the file belongs to. Must also provide either `item-id` or `item-path`. |
-| `group-id` | `groupId` | Id of the group the file belongs to. Must also provide either `item-id` or `item-path`. |
-| `site-id` | `siteId` | Id of the site the file belongs to. Must also provide either `{item-id}` or `{item-path}`. Provide the `{list-id}` too if you’re referencing a file from a specific list. |
-| `list-id` | `listId` | Id of the list the file belongs to. Must also provide `{site-id}` and `{item-id}`. |
-| `item-id` | `itemId` | Id of the file. Default query is `/me/drive/items`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
-| `item-path` | `itemPath` | Item path of the file. Default query is `/me/drive/root`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
-| `insight-type` | `insightType` | Type of insight the file is retrieved from. Can be `trending`, `used`, or `shared`. |
-| `insight-id` | `insightId` | Id of the insight resource. |
-| `file-details` | `fileDetails` | Set to an object representing a file |
-| `file-icon` | `fileIcon` | Set to an icon to show for the file |
-| `view` | `view` | Set to control how the file is rendered. The default is `oneline`. <br>`image` - show only the icon <br>`oneline` - show the icon and one line of text (default is file `name`) <br>`twolines` - show the icon and two lines of text (`name` and `lastModifiedDateTime` by default)<br> `threelines` - show the icon and three lines of text (`name`, `lastModifiedDateTime`, and `displayName` of the author by default) |
-| `line1-property` | `line1Property` | Sets the property of `fileDetails` to use for the first line of text. Default is `name` of the file. |
-| `line2-property` | `line2Property` | Sets the property of `fileDetails` to use for the second line of text. Default is `lastModifiedDateTime`. |
-| `line3-property` | `line3Property` | Sets the property of `fileDetails` to use for the third line of text. Default is `size` of the file. |
+| file-query | fileQuery | The full query or path to the file to be retrieved. |
+| drive-id | driveId | The ID of the drive the file belongs to. Must also provide either `item-id` or `item-path`. |
+| group-id | groupId | ID of the group the file belongs to. Must also provide either `item-id` or `item-path`. |
+| site-id | siteId | ID of the site the file belongs to. Must also provide either `{item-id}` or `{item-path}`. Provide the `{list-id}` too if you’re referencing a file from a specific list. |
+| list-id | listId | ID of the list the file belongs to. Must also provide `{site-id}` and `{item-id}`. |
+| item-id | itemId | ID of the file. Default query is `/me/drive/items`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
+| item-path | itemPath | Item path of the file. Default query is `/me/drive/root`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
+| insight-type | insightType | Type of insight the file is retrieved from. Can be `trending`, `used`, or `shared`. |
+| insight-id | insightId | ID of the insight resource. |
+| file-details | fileDetails | Set to an object representing a file |
+| file-icon | fileIcon | Set to an icon to show for the file |
+| view | view | Set to control how the file is rendered. The default is `oneline`. <br>`image` - show only the icon <br>`oneline` - show the icon and one line of text (default is file `name`) <br>`twolines` - show the icon and two lines of text (`name` and `lastModifiedDateTime` by default)<br> `threelines` - show the icon and three lines of text (`name`, `lastModifiedDateTime`, and `displayName` of the author by default) |
+| line1-property | line1Property | Sets the property of `fileDetails` to use for the first line of text. Default is `name` of the file. |
+| line2-property | line2Property | Sets the property of `fileDetails` to use for the second line of text. Default is `lastModifiedDateTime`. |
+| line3-property | line3Property | Sets the property of `fileDetails` to use for the third line of text. Default is `size` of the file. |
 
 The following example changes the behavior of the component to fetch data from a specific query.
 
@@ -45,7 +45,7 @@ The following example changes the behavior of the component to fetch data from a
 <mgt-file file-query="/me/drive/items/01BYE5RZZFWGWWVNHHKVHYXE3OUJHGWCT2"></mgt-file>
 ```
 
-The following example changes the behavior of the component to fetch data from a specific query, show three lines of information: file name, file last modified date time, and file size by default, and set file icon.
+The following example changes the behavior of the component to fetch data from a specific query, show three lines of information - file name, last modified date time, and file size by default - and set the file icon.
 
 ```html
 <mgt-file file-query="/me/drive/items/01BYE5RZZFWGWWVNHHKVHYXE3OUJHGWCT2" view="threeLines" file-icon="ICON_PATH"></mgt-file>
@@ -149,4 +149,4 @@ The control uses the global authentication provider described in the [authentica
 |`insightFiles`|List of files by insights|Used when `insightType` and `insightId` are provided|
 |`fileQueries`|List of files by queries|Used when `fileQuery` is provided|
 
-See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
+For details about how to configure the cache, see [Caching](../customize-components/cache.md).
