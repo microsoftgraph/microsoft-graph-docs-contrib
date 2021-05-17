@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Remove channel email
+# channel: removeEmail
 
 Namespace: microsoft.graph
 

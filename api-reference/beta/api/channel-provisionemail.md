@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Provision channel email
+# channel: provisionEmail
 
 Namespace: microsoft.graph
 

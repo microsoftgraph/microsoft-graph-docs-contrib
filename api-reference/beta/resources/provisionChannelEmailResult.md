@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the result of the provision channel email operation and includes the email address provisioned for the channel.
-
-To provision a channel's email address, see [provision channel email](..\api\channel-provisionemail.md).
+Includes the email address provisioned for a [channel](../resources/channel.md) by using the [provision channel email](..\api\channel-provisionemail.md) operation.
 
 ## Properties
 | Property | Type   | Description                               |
