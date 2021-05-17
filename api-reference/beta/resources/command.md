@@ -1,10 +1,10 @@
 ---
 title: "command resource type"
-description: ""
+description: "Set of commands sent to a device."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: "finsharp"
+ms.prod: "directory-management"
+author: "spunukol"
 ---
 
 # command resource type
