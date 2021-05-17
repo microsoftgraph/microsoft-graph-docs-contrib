@@ -699,6 +699,6 @@ No Content - 204
 - [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)
 - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 - [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0)
+- [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0)
 - [keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0)
 - [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta)
