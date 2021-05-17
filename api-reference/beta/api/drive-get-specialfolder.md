@@ -1,11 +1,9 @@
 ---
 author: JeremyKelley
 description: "Use the special collection to access a special folder by name."
-ms.date: 07/15/2020
 title: Get Special Folders
 localization_priority: Normal
-ms.prod: "sharepoint"
-ms.author: brcrowne
+ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 # Get a special folder by name

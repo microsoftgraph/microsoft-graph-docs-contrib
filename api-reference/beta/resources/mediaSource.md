@@ -1,16 +1,14 @@
 ---
 author: Elmaz Khussainov
 description: "The mediaSource resource contains metadata about source of the media (audio or video) drive item."
-ms.author: elkhussa
-ms.date: 07/15/2020
-title: MediaSource
+title: mediaSource resource type
 localization_priority: Normal
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 doc_type: "resourcePageType"
 ---
-# MediaSource facet
+# mediaSource resouce type
 
-The **MediaSource** resource contains metadata about the source of media (audio or video) drive item.
+The **mediaSource** resource contains metadata about the source of media (audio or video) drive item.
 
 It is available on the media property of [driveItem][item-resource] resources.
 
@@ -46,9 +44,9 @@ It is available on the media property of [driveItem][item-resource] resources.
 | screenRecording     | The media is a screen recording.                    |
 | unknownFutureValue  | Marker value for future compatibility.              |
 
-## Remarks
+## See also
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 
 [item-resource]: ../resources/driveitem.md
 

@@ -1,22 +1,20 @@
 ---
 author: JeremyKelley
-description: "The SpecialFolder resource groups special folder-related data items into a single structure."
-ms.date: 04/22/2021
-title: SpecialFolder
+description: "The specialFolder resource groups special folder-related data items into a single structure."
+title: specialFolder resource type
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "sharepoint"
-ms.author: elkhussa
+ms.prod: "sites-and-lists"
 ---
-# SpecialFolder resource type
+# specialFolder resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **SpecialFolder** resource groups special folder-related data items into a single structure.
+The **specialFolder** resource groups special folder-related data items into a single structure.
 
-If a **DriveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.
+If a **driveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.
 Special folders can be accessed directly via the [special folders collection](../api/drive-get-specialfolder.md).
 
 Special folders provide simple aliases to access well-known folders without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
@@ -60,9 +58,9 @@ The following special folder names are available in OneDrive and OneDrive for Bu
 }
 ```
 
-## Remarks 
+## See also 
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,18 +1,23 @@
 ---
 author: MarcMroz
 description: "The driveItemSource contains metadata about the source application that the drive item was created in."
-ms.author: brcrowne
-ms.date: 07/15/2020
-title: DriveItemSource
+title: driveItemSource resource type
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 ---
-# DriveItemSource facet
+# driveItemSource resource type
 
-The **DriveItemSource** resource contains metadata about the source of the drive item.
+Contains metadata about the source of the drive item.
 
 It is available on the source property of [driveItem][item-resource] resources.
+
+## Properties
+
+| Property                 | Type                       | Description                                                                                      |
+| :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
+| **application**          | driveItemSourceApplication | Enumeration value that indicates the source application where the file was created.              |
+| **externalId**           | string                     | The external identifier for the drive item from the source.                                      |
 
 ## JSON representation
 
@@ -32,14 +37,7 @@ It is available on the source property of [driveItem][item-resource] resources.
 }
 ```
 
-## Properties
-
-| Property                 | Type                       | Description                                                                                      |
-| :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
-| **application**          | driveItemSourceApplication | Enumeration value that indicates the source application where the file was created.              |
-| **externalId**           | string                     | The external identifier for the drive item from the source.                                      |
-
-### driveItemSourceApplication enumeration
+### driveItemSourceApplication values
 
 | Value               | Description                                       |
 |:--------------------|:--------------------------------------------------|
@@ -52,9 +50,9 @@ It is available on the source property of [driveItem][item-resource] resources.
 | office              | The application is Office                         |
 | unknownFutureValue  | Marker value for future compatibility.            |
 
-## Remarks
+## See also
 
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+For more information about the facets on a driveItem, see [driveItem](driveitem.md).
 
 [item-resource]: ../resources/driveitem.md
 
