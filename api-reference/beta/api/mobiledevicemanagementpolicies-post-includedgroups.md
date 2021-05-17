@@ -45,7 +45,7 @@ POST /policies/mobileDeviceManagementPolicies/{id}/includedGroups/$ref
 ## Request body
 In the request body, supply a JSON representation of the [group](../resources/group.md) object.
 
-The following table shows the properties that are required when you create the [group](../resources/group.md).
+The following table shows the properties that are required when you add the [group](../resources/group.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -70,7 +70,7 @@ POST https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/dc
 Content-Type: application/json
 
 {
-  "id": "dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef"
+  "@odata.id": "https://graph.microsoft.com/odata/groups('dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef')"
 }
 ```
 
