@@ -6,7 +6,7 @@ author: mecampos
 doc_type: conceptualPageType
 ---
 
-# Search for results
+<!---# Search for results--->
 
 In this step, you will search for parts in SharePoint.
 

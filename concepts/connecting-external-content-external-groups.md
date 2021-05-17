@@ -37,3 +37,4 @@ To delete an externalGroupMember (link to delete externalGroupMember), you will 
 ## Related
 
 Microsoft Graph Connectors API overview (link to doc)
+<!---<related docs are part of PR#12368--->
