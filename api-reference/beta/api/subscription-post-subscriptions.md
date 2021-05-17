@@ -26,11 +26,14 @@ Depending on the resource and the permission type (delegated or application) req
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
+|[channels](../resources/channel.md) (/teams/getAllChannels – all channels in an organization) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[channels](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic, ChannelSettings.Read  | Not supported | Channel.ReadBasic, ChannelSettings.Read  |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Not supported | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Not supported | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read | Not supported | TeamMember.Read |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
@@ -42,6 +45,8 @@ Depending on the resource and the permission type (delegated or application) req
 |[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
+|[teams](../resources/team.md) (/teams – all teams in an organization) | Team.ReadBasic.All,TeamSettings.Read.All | Not supported | Team.ReadBasic.All,TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic,TeamSettings.Read | Not supported | Team.ReadBasic,TeamSettings.Read |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -146,8 +151,10 @@ The following are valid values for the resource property.
 |:------ |:----- |
 |[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
 |[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
+|[Channels](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[Contacts](../resources/contact.md)|`me/contacts`|
 |[Conversations](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[ConversationMember](../resources/conversationmember.md)|`/teams/{id}/members`|
 |[Drives](../resources/driveitem.md)|`me/drive/root`|
 |[Events](../resources/event.md)|`me/events`|
 |[Groups](../resources/group.md)|`groups`|
@@ -156,6 +163,7 @@ The following are valid values for the resource property.
 |[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ({id},{id}…)` (multiple users)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
+|[Teams](../resources/team.md)|`/teams`,`/teams/{id}`|
 |[Users](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
