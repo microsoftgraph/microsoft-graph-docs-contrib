@@ -23,7 +23,7 @@ This topic provides details about these APIs.
 
 ## Connections API
 
-Connections from external services are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&amp;preserve-view=true) resource in Microsoft Graph. A connection is a logical container for your external data that you can manage as a single unit.
+Connections from external services are represented by the [externalConnection](../api-reference/beta/resources/externalconnection.md) resource in Microsoft Graph. A connection is a logical container for your external data that you can manage as a single unit.
 
 After you create a connection to an external data source such as an on-premises content source or an external SaaS service, you must register the schema and ingest the external content into Microsoft Graph. You can only view and manage connections you have created or are explicitly [authorized](https://docs.microsoft.com/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) to manage. Note that a search admin can view and manage all the connections in the tenant from the Microsoft 365 admin center.
 
