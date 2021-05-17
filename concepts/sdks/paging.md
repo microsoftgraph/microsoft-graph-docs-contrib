@@ -95,7 +95,7 @@ await pageIterator.iterate();
 ### [Java](#tab/java)
 
 ```java
-IMessageCollectionPage messagesPage = graphClient.me().messages()
+final MessageCollectionPage messagesPage = graphClient.me().messages()
     .buildRequest(new HeaderOption("Prefer", "outlook.body-content-type=\"text\""))
     .select("Sender,Subject","Body")
     .top(10)
@@ -103,8 +103,8 @@ IMessageCollectionPage messagesPage = graphClient.me().messages()
 
 
 while(messagesPage != null) {
-  final List<Message> messages = messagesPage.GetCurrentPage();
-  final IMessageCollectionRequestBuilder nextPage = messagesPage.GetNextPage();
+  final List<Message> messages = messagesPage.getCurrentPage();
+  final MessageCollectionRequestBuilder nextPage = messagesPage.getNextPage();
   if(nextPage == null) {
     break;
   } else {
