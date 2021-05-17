@@ -15,7 +15,7 @@ Change notifications enables you to subscribe to changes in a resource. For more
 
 ### Subscribe to changes in any team at tenant level
 
-To get change notifications for any change in team's property across tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for any change in team's property across tenant or creation and deletion of a team in tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
