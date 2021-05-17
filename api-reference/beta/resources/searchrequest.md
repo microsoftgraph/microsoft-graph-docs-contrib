@@ -38,6 +38,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |size|Int32|The size of the page to be retrieved. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 |stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
+|resultTemplateOptions|[resultTemplateOption](api-reference\beta\resources\searchresulttemplateoptions.md) colletction|Provides the search result templates options for render connectors search results.|
 
 
 ## JSON representation
@@ -72,9 +73,10 @@ The following is a JSON representation of the resource.
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
-- Search [custom types imported using connectors)](/graph/search-concept-custom-types) data
+- Search [custom types imported using connectors](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregations) to refine search results
+- Use [display layout](/graph/search-concept-display-layout.md)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

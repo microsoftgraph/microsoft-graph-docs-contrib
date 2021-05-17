@@ -36,7 +36,8 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
 |[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
-
+|[Search Display Layout](search-concept-display-layout.md) (preview)| **resultTemplateOptions**
+#
 ## Scope search based on entity types
 
 Define the scope of the search request using the **entityTypes** property in the **query** request payload.
@@ -146,6 +147,13 @@ Spelling correction is a popular way to handle mismatches between typos in a use
 In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the **queryAlterationOptions** that should be applied to the query for spelling corrections. The description of **queryAlterationOptions** is defined in the [searchAlterationOptions](./searchalterationoptions.md).
 
 For examples that show how to use spelling corrections, see [Request spelling correction](/graph/search-concept-speller).
+
+## Search Display Layout
+The search API allows you to render search results from [connectors](/microsoftsearch/connectors-overview), by using the display layout or result template configured by the IT admin to each connector. The result templates are [Adaptive Cards](https://adaptivecards.io/), which are a semantically meaningful combination of Layout and Data.
+
+For getting the result template in the [searchresponse](searchresponse.md), you have to set **true** the **enableResultTemplate** property, defined in the [resultTemplateOptions](./searchresulttemplateoptions.md), in the [searchRequest](./searchrequest.md). Once the response is returned, for every [searchit](./searchhit.md) will be provided a **resultTemplateId**, which maps to one of the display layouts included in the **resultTemplates** dictionary, returned as well in the response.
+
+See [Use the Microsoft Search API in Microsoft Graph to render display layout](./search-concept-display-layout.md) for examples.
 
 ## Error handling
 

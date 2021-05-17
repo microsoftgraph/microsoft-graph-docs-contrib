@@ -57,6 +57,8 @@ Looking for the API reference for this service?
   - [Search external content](search-concept-custom-types.md) (preview)
   - [Sort search results](search-concept-sort.md) (preview)
   - [Refine search results](search-concept-aggregation.md) (preview)
+  - [Request spelling correction](#request-spelling-correction) (preview)
+  - [Search Display Layout](search-concept-display-layout.md) (preview)
   
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
