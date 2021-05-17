@@ -1,32 +1,26 @@
 ---
 title: "Assign reviewers to your access review definition"
-description: "Use the reviewers property of accessReviewsScheduleDefinition to assign reviewers of your access review."
+description: "Learn how to use the access reviews API in Microsoft Graph to assign access reviewers."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# Assign reviewers to your access review definition
+# Assign reviewers to your access review definition using the Microsoft Graph API
 
-Azure AD [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allow you to programmatically review access to your Azure AD resources. This can be all users, a set of users (for example, guest users only), as well as service principals and groups with access to Azure AD resources.
+The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allow you to programmatically review access—of all users, a set of users (for example, guest users only), as well as service principals and groups—to your Azure AD resources.
 
 > [!NOTE]
-> The [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
+> The [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
 
-The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource, a property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true).  In addition, you can specify fallback reviewers using **fallbackReviewers**, another property of the type [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true).
-
-This property is not required when a self-review (where users review their own access) is created.
+The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource.  In addition, you can specify fallback reviewers using **fallbackReviewers** property. These properties are not required when you create a self-review (where users review their own access).
 
 ## Configure reviewers
 
-To configure the reviewers and fallback reviewers, set the values of **query**, **queryRoot**, and **queryType** properties of an accessReviewReviewerScope. [See the accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true) resource for descriptions of these properties.
+To configure the reviewers and fallback reviewers, set the values of **query**, **queryRoot**, and **queryType** properties of **accessReviewReviewerScope**. [See the accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope?view=graph-rest-beta&preserve-view=true) resource for descriptions of these properties.
 
-Example configurations of the **reviewers** or **fallbackReviewers** property using the accessReviewReviewerScope include the following:
-
-### Examples
-
-#### Example 1: A specific user as the reviewer
+### Example 1: A specific user as the reviewer
 
 ```http
 "reviewers": [
@@ -37,7 +31,7 @@ Example configurations of the **reviewers** or **fallbackReviewers** property us
 ]
 ```
 
-#### Example 2: Members of a group as reviewers
+### Example 2: Members of a group as reviewers
 
 ```http
 "reviewers": [
@@ -48,7 +42,7 @@ Example configurations of the **reviewers** or **fallbackReviewers** property us
 ]
 ```
 
-#### Example 3: Group owners as reviewers
+### Example 3: Group owners as reviewers
 ```http
 "reviewers": [
     {
@@ -69,7 +63,7 @@ To specify only a specific non-guest groups owners from a specific country as th
 ]
 ```
 
-#### Example 4: People managers as the reviewers
+### Example 4: People managers as reviewers
 
 ```http
 "reviewers": [

@@ -5,12 +5,12 @@ author: "isabelleatmsft"
 localization_priority: Normal
 ---
 
-# Configure the scope of your access review definition
+# Configure the scope of your access review definition using the Microsoft Graph API
 
-Azure AD [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allow you to programmatically review access to your Azure AD resources. This can be all users, a set of users (for example, guest users only), as well as service principals and groups with access to Azure AD resources.
+The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allow you to programmatically review access—of all users, a set of users (for example, guest users only), as well as service principals and groups—to your Azure AD resources.
 
 > [!NOTE]
-> The [access reviews APIs](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
+> The [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
 
 The resources to review are configured in the **scope** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource. This property is of the type [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true), an abstract type inherited by the following resources that can be used to configure resources or groups of resources that access will be reviewed against.
 
@@ -24,13 +24,9 @@ In this article, you will use these types of accessReviewScope to configure a wi
 
 ## Use accessReviewQueryScope to configure scope
 
-To configure the scope using the accessReviewQueryScope type, set the values of its **query**, **queryRoot**, and **queryType** properties. [See the accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true) resource for descriptions of these properties.
+To configure the scope using the **accessReviewQueryScope** type, set the values of its **query**, **queryRoot**, and **queryType** properties. [See the accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true) resource for descriptions of these properties.
 
-Example configurations of the **scope** property using the accessReviewQueryScope include the following:
-
-### Examples
-
-#### Example 1: Review all users assigned to a group
+### Example 1: Review all users assigned to a group
 
 ```http
 "scope": {
@@ -50,7 +46,7 @@ To review *only inactive users* assigned to the group, specify as follows:
 }
 ````
 
-#### Example 2: Review guest users assigned to a group
+### Example 2: Review guest users assigned to a group
 
 ```http
 "scope": {
@@ -60,7 +56,7 @@ To review *only inactive users* assigned to the group, specify as follows:
 }
 ```
 
-#### Example 3: Review guest users assigned to all Microsoft 365 groups
+### Example 3: Review guest users assigned to all Microsoft 365 groups
 
 ```http
 "instanceEnumerationScope": {
@@ -76,7 +72,7 @@ To review *only inactive users* assigned to the group, specify as follows:
 
 Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review.
 
-#### Example 4: Review access of all inactive guest users to all groups
+### Example 4: Review access of all inactive guest users to all groups
 
 ```http
 "scope": {
@@ -89,7 +85,7 @@ Because this review is applied on all Microsoft 365 groups, configure the **inst
 
 Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`.
 
-#### Example 5: Review of all inactive guest users assigned to all teams
+### Example 5: Review of all inactive guest users assigned to all teams
 
 ```http
 "instanceEnumerationScope": {
@@ -106,7 +102,7 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 
 Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams.
 
-#### Example 6: Review of Entitlement Management access package assignment
+### Example 6: Review of Entitlement Management access package assignment
 
 ```http
 "scope": {
@@ -116,7 +112,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-#### Example 7: Review of service principals assigned to privileged roles 
+### Example 7: Review of service principals assigned to privileged roles 
 
 ```http
 "scope": {
@@ -130,11 +126,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 
 The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition**. This includes reviewing access for multiple principals or groups of principals to multiple resources.
 
-Example configurations of the **scope** property using **principalResourceMembershipsScope** include the following:
-
-### Examples
-
-#### Example 1: Review access of all inactive guest users to an application
+### Example 1: Review access of all inactive guest users to an application
 
 ```http
 "scope": {
@@ -159,7 +151,7 @@ Example configurations of the **scope** property using **principalResourceMember
 
 In this example, the principals are all inactive guest users with the period of their inactivity calculated as 30 days from the start date of the access review instance.
 
-#### Example 2: Review access of all guest users to a directory role
+### Example 2: Review access of all guest users to a directory role
 
 ```http
 "scope": {
