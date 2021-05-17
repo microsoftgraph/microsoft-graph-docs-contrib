@@ -151,13 +151,13 @@ A label is a well-known tag published by Microsoft that you can add against a pr
 
 | **Label** | **Description** |
 | --- | --- |
-| title | The title of the item that you want shown in search &amp; other experiences |
+| title | The title of the item that you want shown in search and other experiences |
 | url | The target URL of the item in the data source |
 | createdBy | Name of the person who created the item in the data source |
 | lastModifiedBy | Name of the person who most recently edited the item in the data source |
 | authors | Name of all the people who participated/collaborated on the item in the data source |
-| createdDateTime | Date &amp; time that the item was created in the data source |
-| lastModifiedDateTime | Date &amp; time the item was last modified in the data source |
+| createdDateTime | Date and time that the item was created in the data source |
+| lastModifiedDateTime | Date and time the item was last modified in the data source |
 | fileName | In case of a file, the name of the file in the data source |
 | fileExtension | In case of a file, the extension of the file in the data source |
 | | |
@@ -166,13 +166,12 @@ For example, the connection property _lastEditedBy_ has the same meaning as the 
 
 Add as many labels as you can, but ensure that they are accurately mapped to properties. Do not add a label to a property if it doesn't make sense. Incorrect mappings will deteriorate the experience.
 
-  **Important**
-
-All properties that you map to labels must be retrievable.
+> [!IMPORTANT]
+> All properties that you map to labels must be retrievable.
 
 #### Relevance
 
-By applying as many accurately mapped labels as possible, you can also improve the discovery of your content through search. We highly recommend defining as many of the below labels as possible, listed by potential impact on discovery in descending order:
+By applying as many accurately mapped labels as possible, you can also improve the discovery of your content through search. We highly recommend defining as many of the following labels as possible, listed by potential impact on discovery in descending order:
 
 - title
 - lastModifiedDateTime
@@ -181,7 +180,7 @@ By applying as many accurately mapped labels as possible, you can also improve t
 - filename
 - fileExtension
 
-For discovery, i.e. search scenarios, please note:
+For discovery, that is, search scenarios, please note:
 
 - Ensure that your mappings are accurate.
 - When you use a property as label that contains large content, you might increase search latency and have to wait longer for search to return results.
@@ -252,7 +251,7 @@ Content cannot be directly added into a search result template, but you can use 
 
 When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components.
 
-Once your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [verticals and result types](https://docs.microsoft.com/MicrosoftSearch/customize-search-page) or using the [Microsoft Graph Search API](https://docs.microsoft.com/graph/api/resources/search-api-overview?view=graph-rest-beta&amp;preserve-view=true). Integration with many other Microsoft 365 experiences is coming soon.
+After your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [verticals and result types](https://docs.microsoft.com/MicrosoftSearch/customize-search-page) or using the [Microsoft Graph Search API](https://docs.microsoft.com/graph/api/resources/search-api-overview?view=graph-rest-beta&amp;preserve-view=true). Integration with many other Microsoft 365 experiences is coming soon.
 
 ### Add an item
 
@@ -297,6 +296,6 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 
 ## External groups API
 
-Items in the external service can be granted or denied access via ACL to different types of non- Azure Active Directory groups. For example, Salesforce items might have permission sets and profiles. ServiceNow items might have local groups. When we ingest these items into Microsoft Graph, we need to honor these ACLs.
+Items in the external service can be granted or denied access via ACL to different types of non-Azure Active Directory groups. For example, Salesforce items might have permission sets and profiles. ServiceNow items might have local groups. When you ingest these items into Microsoft Graph, you need to honor these ACLs.
 
 You can use the External groups API to set permissions on external items ingested into Microsoft Graph. An [externalGroup](https://docs.microsoft.com/graph/api/externalgroup-post-members?view=graph-rest-beta&amp;tabs=http) represents a non-Azure Active Directory group or group-like construct (such as Business units, Teams, and so on) and determines permissions on the content in your external data source.

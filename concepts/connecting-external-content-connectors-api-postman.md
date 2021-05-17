@@ -5,19 +5,16 @@ author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
 ---
-<!---
-```http
-```
---->
+
 # Play with Microsoft Graph connectors API on Postman
 
-In this topic, learn to use the Microsoft Graph connector APIs with Postman.
+This topic describes how you can use the Microsoft Graph connector APIs with Postman.
 
 ## Prerequisites
 
 * Either a Microsoft account or work or school account.
 
-* Microsoft 365 developer subscription from the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
+* Access to a Microsoft 365 developer tenant. If you don't have one, you can sign up for the [Microsoft 365 Developer Program] to get a free developer subscription.
 
 ## Step 1 - Import the Microsoft Graph Postman collection
 
@@ -25,20 +22,20 @@ To use the Postman collection, you need to import it into your Postman workspace
 
 1. Go to [Postman](https://identity.getpostman.com/signup) and sign up. If you already have a Postman account, you can [sign in](https://identity.getpostman.com/login).
 
-2. Once you sign in, go to &quot;My workspace&quot;.
+2. After you sign in, go to **My workspace**.
 
 ![My Workspace](./images/connectors-images/02-postman-my-workspace.png)
 
-3. Once you go into &quot;My workspace&quot;, select the &quot;Import&quot; button.
+3. After you go into **My workspace**, select the **Import** button.
 
-![Select Import 1](./images/connectors-images/03-postman-import.png)
+![Screenshot of the My Workspace section in Postman](./images/connectors-images/03-postman-import.png)
 
-4. In the dialog that opens, select &quot;Link&quot; tab and enter the following URL - in the textbox:  `https://www.postman.com/collections/61bfc772fe030514b062`.
+4. In the dialog that opens, select **Link** tab and enter the following URL - in the textbox:  `https://www.postman.com/collections/61bfc772fe030514b062`.
 
 ![Select continue](./images/connectors-images/04-postman-link.png)
 
-5. Select Continue.
-6. Select Import.
+5. Select **Continue**.
+6. Select **Import**.
 
 ![Select import 2](./images/connectors-images/05-postman-link-continue.png)
 
@@ -49,6 +46,7 @@ You should now see the Microsoft graph Connectors API collection inside Postman.
 ## Step 2 - (Optional - Postman Web browser only) Download the Postman Agent
 
 To use this Postman collection in your web browser, download the [Postman Desktop Agent](https://www.postman.com/downloads). You can't use Postman for the web without this due to CORS restrictions in the web browser.
+"The maximum number of [connection](/graph/api-reference/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resources per Microsoft 365 tenant."
 
 Note: You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you will see this collection in your workspace.
 
@@ -80,7 +78,7 @@ The Azure AD application now has permissions to make requests on behalf of a use
 
 Set up the variables in Postman. This information is used to generate the access token.
 
-1. Select the &quot;Microsoft Graph Connectors API&quot; tab and go to the &quot;Variables&quot; section.
+1. Select the **Microsoft Graph Connectors API** tab and go to the **Variables** section.
 
 ![Configure authentication](./images/connectors-images/07-postman.png)
 
@@ -240,12 +238,12 @@ Content-type: application/json
 
 ![Register connection schema](./images/connectors-images/11-postman.png)
 
-Once the connection schema operation status changes from **InProgress** to **Completed,** you can ingest items for the connection.
+After the connection schema operation status changes from **InProgress** to **Completed,** you can ingest items for the connection.
 
  ![Connection status 1](./images/connectors-images/12-postman.png)
  ![Connection status 2](./images/connectors-images/13-postman.png)
 
-Once the connection state changes from **draft** to **ready** , you can ingest items into current connection.
+After the connection state changes from **draft** to **ready** , you can ingest items into current connection.
 
 ![Connection state from draft to ready](./images/connectors-images/14-postman.png)
 
@@ -283,7 +281,7 @@ Content-Type: application/json
 
 ## Step 9 - Ingest Items
 
-Once you have created a connection, you can add your content. Each item from your data source must be represented as an `externalItem` in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the `itemId` or derive it from one or more fields. An `externalItem` has three key components: access control list, properties, and content.
+After you created a connection, you can add your content. Each item from your data source must be represented as an `externalItem` in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the `itemId` or derive it from one or more fields. An `externalItem` has three key components: access control list, properties, and content.
 
 If you have binary files, you must parse to get the metadata and a text version of the content. If you have non text content such as a pdf or bmp file, you must use object character recognition to convert content to text.  
 
