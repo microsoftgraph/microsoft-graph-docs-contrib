@@ -1,6 +1,56 @@
 {
 
   "changelog": [
+        {
+      "ChangeList": [
+        {
+          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "UserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "UserPrincipalName can be used in the request URL for [looking up chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-beta) of a user.",
+          "Target": "chat"
+        },
+        {
+          "Id": "cb094b5b-a324-41e3-84ff-2ba4b5c9a889",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "UserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "UserPrincipalName can be used in the request URL for [looking up joined teams](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?graph-rest-1.0&tabs=http) of a user.",
+          "Target": "team"
+        },
+        {
+          "Id": "3b5dfbe9-d4e8-41c6-8a9a-66bdb68b7a8b",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "UserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "UserPrincipalName can be used in the request URL for [managing apps in teams & chats] (https://docs.microsoft.com/en-us/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&tabs=http) of a user.",
+          "Target": "teamsAppInstallation"
+        },
+        {
+          "Id": "14eb5400-1936-4d25-81ea-7d2714029d02",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "UserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "UserPrincipalName can be used in the request URL for [sending activity feed notification] (https://docs.microsoft.com/en-us/graph/api/userteamwork-sendactivitynotification?view=graph-rest-1.0&tabs=http) of a user.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "f9d6b5b0-2d08-4c4b-bf33-beb18bec1601",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "UserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "UserPrincipalName can be used in the request URL for [fetching hosted content] (https://docs.microsoft.com/en-us/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0&tabs=http) of a user.",
+          "Target": "chatMessageHostedContent"
+        }   
+      ],
+      "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-24T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
