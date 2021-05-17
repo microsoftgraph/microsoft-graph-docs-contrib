@@ -24,9 +24,9 @@ In order to activate a service for an organization the requestor needs to have t
 
 |Permission type|Permissions (from least to most privileged)|
 | :--- | :--- |
-| Delegated (work or school account) | Directory.ReadWriteAdvanced.All, Directory.ReadWrite.All|
+| Delegated (work or school account) | Directory.ReadWrite.All|
 | Delegated (personal Microsoft account) | Not Supported. |
-| Application | Directory.ReadWriteAdvanced.All, Directory.ReadWrite.All|
+| Application | Directory.ReadWrite.All|
 
 
 ## HTTP request
