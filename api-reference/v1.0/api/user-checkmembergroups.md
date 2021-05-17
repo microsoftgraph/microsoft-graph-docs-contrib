@@ -3,7 +3,7 @@ title: "checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those groups of which"
 author: "jpettere"
 localization_priority: Priority
-ms.prod: "users"
+ms.prod: "yyuank"
 doc_type: apiPageType
 ---
 
