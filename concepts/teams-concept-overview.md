@@ -101,7 +101,7 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 
 ### Get notified about changes
 
-Microsoft Teams supports subscribing to changes (create, update, and delete) to messages in [channels](/graph/api/resources/channel?preserve-view=true) and [chats](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) to allow apps to get near-instant updates. For details about how to subscribe to changes, see [Get change notifications for messages in channels and chats](teams-changenotifications-chatmessage).
+Microsoft Teams supports subscribing to changes (create, update, and delete) to messages in [channels](/graph/api/resources/channel?preserve-view=true) and [chats](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) to allow apps to get near-instant updates. For details about how to subscribe to changes, see [Get change notifications for messages in channels and chats](teams-changenotifications-chatmessage.md).
 
 ## API reference
 
