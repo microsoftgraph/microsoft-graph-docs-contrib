@@ -3,7 +3,7 @@ title: "serviceUpdateMessage: markUnread"
 description: "This POST action is to mark the status of a list of service update messages as unread for the login user."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "m365-servicecommsplatform"
+ms.prod: "service communications"
 doc_type: apiPageType
 ---
 

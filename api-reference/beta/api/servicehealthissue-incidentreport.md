@@ -3,7 +3,7 @@ title: "serviceHealthIssue: incidentReport"
 description: "Gets the post incident report (PIR) document of a specified service issue for tenant. This operation returns Edm.Stream. The PIR won't be returned to tenant if the specified issue is not visible to tenant."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "m365-servicecommsplatform"
+ms.prod: "service communications"
 doc_type: apiPageType
 ---
 

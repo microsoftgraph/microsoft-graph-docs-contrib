@@ -3,7 +3,7 @@ title: "List serviceHealthIssues"
 description: "Gets all service health issues information for the tenant. The operation returns a list of the [serviceHealthIssue](../resources/servicehealthissue.md) objects and their properties."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "m365-servicecommsplatform"
+ms.prod: "service communications"
 doc_type: apiPageType
 ---
 

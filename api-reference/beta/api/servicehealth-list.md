@@ -3,7 +3,7 @@ title: "List serviceHealths"
 description: "Get service health overviews of tenant's all services. Returns a list of the serviceHealth objects and their properties."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "m365-servicecommsplatform"
+ms.prod: "service communications"
 doc_type: apiPageType
 ---
 

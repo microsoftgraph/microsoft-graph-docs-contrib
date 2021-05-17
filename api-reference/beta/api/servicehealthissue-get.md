@@ -3,7 +3,7 @@ title: "Get serviceHealthIssue"
 description: "Get a specified service health issue for tenant. Returns the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object for the specified issue."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "m365-servicecommsplatform"
+ms.prod: "service communications"
 doc_type: apiPageType
 ---
 

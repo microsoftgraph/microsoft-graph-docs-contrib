@@ -1,9 +1,9 @@
 ---
 title: "serviceHealthIssue resource type"
-description: "An entity resource type inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md), to represent an issue happened for a service. The service health issue could be a service incident or service advisory. e.g. "Exchange mailbox service is down" is a service incident; "User may have seen a delay while receiving emails" is a service advisory."
+description: "An entity resource type inherited from serviceAnnouncementBase, to represent an issue happened for a service. The service health issue could be a service incident or service advisory. e.g. "Exchange mailbox service is down" is a service incident; "User may have seen a delay while receiving emails" is a service advisory."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "m365-servicecommsplatform"
+ms.prod: "service communications"
 doc_type: resourcePageType
 ---
 
