@@ -1,8 +1,8 @@
 ---
-title: "conditional access resource type"
+title: "conditionalAccess resource type"
 description: "The **conditionalaccess** resource is the entry point for the Conditinal Access object model. It doesn't contain any usable properties."
 localization_priority: Normal
-author: "CalebBaker"
+author: "calebb"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **planner** resource is the entry point for the Planner object model. It returns a singleton **planner** resource.  It doesn't contain any usable properties.
+The **conditionalAccess** resource is the entry point for the Conditional Access object model. It doesn't contain any usable properties.
 
 
 ## Methods
@@ -22,7 +22,7 @@ The **planner** resource is the entry point for the Planner object model. It ret
 |:---------------|:--------|:----------|
 |[Create conditionalAccessPolicy](../api/conditionalaccessroot-post-policies.md) |[conditionalAccessPolicy](conditionalaccesspolicy.md)| Create a new **conditionalAccessPolicy** by posting to the conditionalAccessPolicy collection.|
 |[Create namedLocations](../api/conditionalaccessroot-post-namedlocations.md) |[namedLocations](namedlocations.md)| Create a new **namedLocations** by posting to the namedLocations collection.|
-|[Create authenticationContextClassReferences](../api/conditionalaccess-post-authenticationcontextclassreferences.md)|[authenticationContextClassReferences](authenticationcontextclassreference.md)|Create a new **authenticationContextClassReferences** by posting to authenticationContextClassReferences collection.|
+|[Create authenticationContextClassReferences](../api/conditionalaccessroot-post-authenticationcontextclassreferences.md)|[authenticationContextClassReferences](authenticationcontextclassreference.md)|Create a new **authenticationContextClassReferences** by posting to authenticationContextClassReferences collection.|
 
 
 ## Properties

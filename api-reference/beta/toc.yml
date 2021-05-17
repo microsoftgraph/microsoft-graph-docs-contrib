@@ -10706,7 +10706,7 @@ items:
             - name: List
               href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
             - name: Create
-              href: api/conditionalaccessroot-post-authenticationcontextclassreferencesroot.md
+              href: api/conditionalaccessroot-post-authenticationcontextclassreferences.md
             - name: Get
               href: api/authenticationcontextclassreference-get.md
             - name: Update
