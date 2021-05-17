@@ -7,7 +7,7 @@ author: beth-panx
 
 # File list component in the Microsoft Graph Toolkit
 
-The File List component displays [a list of multiple folders and files](/graph/api/resources/onedrive) by using the file/folder name, an icon, and other properties specicified by the developer. This component uses the [mgt-file](./file.md) component. The developer is able to specify a specific drive or site, display a list of files based on insight type (trending, used, or shared), or provide queries to a custom list of files.
+The File List component displays [a list of multiple folders and files](/graph/api/resources/onedrive) by using the file/folder name, an icon, and other properties that you specify. This component uses the [mgt-file](./file.md) component. You can specify a specific drive or site, display a list of files based on insight type (trending, used, or shared), or provide queries to a custom list of files.
 
 ## Example
 
@@ -23,26 +23,26 @@ You can use several properties to customize the component.
 
 | Attribute | Property | Description |
 | --------- | -------- | ----------- |
-| `file-list-query` | `fileListQuery` | The full query or path to the drive or site that contains the list of files to render. |
-| `file-queries` | `fileQueries` | An array of file queries to be rendered by the component. |
-| none | `files` | An array of files to get or set the list of files rendered by the component. Use this to access the files loaded by the component. Set this value to load your own files. |
-| `insight-type` | `insightType` | Set to show the user’s trending, used, or shared files. |
-| `drive-id` | `driveId` | Id of the drive the folder belongs to. Must also provide either `item-id` or `item-path`. |
-| `group-id` | `groupId` | Id of the group the folder belongs to. Must also provide either `item-id` or `item-path`. |
-| `site-id` | `siteId` | Id of the site the folder belongs to. Must also provide either `{item-id}` or `{item-path}`. Provide `{list-id}` if you’re referencing a file from a specific list. |
-| `item-id` | `itemId` | Id of the folder. Default query is `/me/drive/items`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
-| `item-path` | `itemPath` | Item path of the folder (relative to the root). Default query is `/me/drive/root`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
-| `page-size` | `pageSize` | A number value to indicate the maximum number of files to render on each page. |
-| `file-extensions` | `fileExtensions` | An array of file extensions used to filter files to show. |
-| `hide-more-files-button` | `hideMoreFilesButton` | A boolean to indicate whether to show a button to render more files. |
+| file-list-query | fileListQuery | The full query or path to the drive or site that contains the list of files to render. |
+| file-queries | fileQueries | An array of file queries to be rendered by the component. |
+| none | files | An array of files to get or set the list of files rendered by the component. Use this to access the files loaded by the component. Set this value to load your own files. |
+| insight-type | insightType | Set to show the user’s trending, used, or shared files. |
+| drive-id | driveId | Id of the drive the folder belongs to. Must also provide either `item-id` or `item-path`. |
+| group-id | groupId | Id of the group the folder belongs to. Must also provide either `item-id` or `item-path`. |
+| site-id | siteId | Id of the site the folder belongs to. Must also provide either `{item-id}` or `{item-path}`. Provide `{list-id}` if you’re referencing a file from a specific list. |
+| item-id | itemId | Id of the folder. Default query is `/me/drive/items`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
+| item-path | itemPath | Item path of the folder (relative to the root). Default query is `/me/drive/root`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
+| page-size | pageSize | A number value to indicate the maximum number of files to render on each page. |
+| file-extensions | fileExtensions | An array of file extensions used to filter files to show. |
+| hide-more-files-button | hideMoreFilesButton | A boolean to indicate whether to show a button to render more files. |
 
-The following example changes the behavior of the component to fetch file list from a specific query.
+The following example changes the behavior of the component to fetch a file list from a specific query.
 
 ```html
 <mgt-file-list file-list-query="/me/drive/items/01BYE5RZYJ43UXGBP23BBIFPISHHMCDTOY/children"></mgt-file-list>
 ```
 
-The following example changes the behavior of the component to fetch file list from a folder by providing the folder id.
+The following example changes the behavior of the component to fetch a file list from a folder by providing the folder id.
 
 ```html
 <mgt-file-list item-id="01BYE5RZYJ43UXGBP23BBIFPISHHMCDTOY"></mgt-file-list>
@@ -104,25 +104,25 @@ To learn more, see [styling components](../customize-components/style.md).
 
 ## Microsoft Graph APIs and permissions
 
-| Configuration | Permission Scopes | API |
+| Configuration | Permissions | API |
 | ------------- | ----------------- | --- |
 | Default (no identifiers or query provided) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children`	|
-| Developer provides `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
-| Developer provides `{group-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}/children` |
-| Developer provides ONLY `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}/children` | 
-| Developer provides `{site-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}/children` |
-| Developer provides `{user-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
-| Developer provides `{drive-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}:/children` |
-| Developer provides `{group-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/root:/{item-path}:/children` |
-| Developer provides `{site-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/root:/{item-path}:/children` |
-| Developer provides `{user-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/root:/{item-path}:/children` |
-| Developer provides only `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
+| Provide `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
+| Provide `{group-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}/children` |
+| Provide ONLY `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}/children` | 
+| Provide `{site-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}/children` |
+| Pprovide `{user-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
+| Provide `{drive-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}:/children` |
+| Provide `{group-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/root:/{item-path}:/children` |
+| Provide `{site-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/root:/{item-path}:/children` |
+| Provide `{user-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/root:/{item-path}:/children` |
+| Provide only `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
 | `insight-type` is set to trending | Sites.Read.All | `GET /me/insights/trending` |
-| Developer provides `{user-id or upn}` AND `insight-type` is set to `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` | 
+| Provide `{user-id or upn}` AND `insight-type` is set to `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` | 
 | `insight-type` is set to `used` | Sites.Read.All | `GET /me/insights/used` |
-| Developer provides `{user-id or upn}` AND `insight-type` is set to `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
+| Provide `{user-id or upn}` AND `insight-type` is set to `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
 | `insight-type` is set to shared | Sites.Read.All | `GET /me/insights/shared` |
-| Developer provides `{user-id or upn}` AND `insight-type` is set to `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))` |
+| Provide `{user-id or upn}` AND `insight-type` is set to `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))` |
 
 ## Events
 
@@ -132,7 +132,7 @@ To learn more, see [styling components](../customize-components/style.md).
 
 ## Templates
 
-The `mgt-file-list` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+The `mgt-file-list` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the data types listed in the following table.
 
 | Data type | Data context | Description |
 | ----------- | -------------- | ------------ |
@@ -149,10 +149,10 @@ The control uses the global authentication provider described in the [authentica
 
 |Object store|Cached data|Remarks|
 |---------|-----------|-------|
-|`fileLists`|List of file lists|Default cache list to store file lists|
-|`insightfileLists`|List of insight file lists|Used when `insightType` is provided|
+|`fileLists`|List of file lists|Default cache list to store file lists.|
+|`insightfileLists`|List of insight file lists|Used when `insightType` is provided.|
 
 > [!NOTE]
 > The `mgt-file-list` component also uses the `fileQueries` object store in `mgt-file` IndexedDB to cache files when `fileQueries` is provided.
 
-See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
+For details about how to configure the cache, see [Caching](../customize-components/cache.md).
