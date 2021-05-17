@@ -1,9 +1,9 @@
 ---
 title: "checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those groups of which"
-author: "jpettere"
+author: "yyuank"
 localization_priority: Priority
-ms.prod: "yyuank"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
