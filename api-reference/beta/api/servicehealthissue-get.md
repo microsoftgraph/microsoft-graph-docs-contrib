@@ -89,7 +89,7 @@ Content-Type: application/json
     "feature": "Access",
     "featureGroup": "Portal",
     "isResolved": true,
-    "highImpact": false,
+    "highImpact": null,
     "details": [],
     "posts": [
       {

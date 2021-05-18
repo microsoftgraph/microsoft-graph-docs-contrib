@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [serviceHealth
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews('Microsoft 365 suite'))
+GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews('Microsoft 365 suite')
 ```
 
 ### Response
@@ -88,7 +88,7 @@ Content-Type: application/json
 ### Including navigation property issues in the [serviceHealth](../resources/servicehealth.md) object
 
 ``` http
-GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews('Microsoft 365 suite'))?$expand=issues
+GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews('Microsoft 365 suite')?$expand=issues
 ```
 
 ### Response

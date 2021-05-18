@@ -48,7 +48,6 @@ The following table shows the parameters that can be used with this action.
 |messageIds|String collection|Tell which messages for the user will be marked wtih **unfavorited** status|
 
 
-
 ## Response
 
 If successful, this action returns a `200 OK` response code and a Boolean value True in the response body. Otherwise, will return False in the response body.

@@ -13994,12 +13994,11 @@ items:
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
-        - name: admin
-        items:
-        - name: serviceAnnouncement (preview)
+        - name: Service communications (preview)
+          href: resource/serviceannouncement.md
           items:
-          - name: serviceHealth
-           items:
+          - name: healthOverviews
+            items:
            - name: Get service health overview of a service for tenant
              href: api/servicehealth-get.md
            - name: List service health overview of all tenant's services

@@ -1,25 +1,25 @@
 ---
-title: "serviceUpdateMessageViewpoint complex type"
-description: "A complex type to represent user view points data for a service update message."
+title: "serviceUpdateMessageViewpoint resource type"
+description: "A complex type to represent user view points data for a service update message. For example, indicating whether a message is marked as read/archived/favorited for the user."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
 doc_type: resourcePageType
 ---
 
-# serviceUpdateMessageViewpoint complex type
+# serviceUpdateMessageViewpoint resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A complex type to represent user view points data for a service update message.
+A complex type to represent user view points data for a service update message. For example, indicating whether a message is marked as read/archived/favorited for the user.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |isArchived|Boolean|The value indicating whether the message is read already by the user|
-|isFavorited|Boolean|The value indicating whether the message is dismissed by the user|
+|isFavorited|Boolean|The value indicating whether the message is archived by the user|
 |isRead|Boolean|The value indicating whether the message is favorited by the user|
 
 ## Relationships

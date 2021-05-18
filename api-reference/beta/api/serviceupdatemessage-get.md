@@ -93,7 +93,7 @@ Content-Type: application/json
       "SharePoint Online",
       "OneDrive for Business"
     ],
-    "expiryDateTime": "2019-06-01T08:00:00Z",
+    "expiryDateTime": "null",
     "hasAttachments": false,
     "details": [
       {

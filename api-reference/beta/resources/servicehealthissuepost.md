@@ -1,5 +1,5 @@
 ---
-title: "serviceHealthIssuePost complex type"
+title: "serviceHealthIssuePost resource type"
 description: "This complex type represents the history posts which involving new post type for the service issue."
 author: "payiAzure"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "service communications"
 doc_type: resourcePageType
 ---
 
-# serviceHealthIssuePost complex type
+# serviceHealthIssuePost resource type
 
 Namespace: microsoft.graph
 

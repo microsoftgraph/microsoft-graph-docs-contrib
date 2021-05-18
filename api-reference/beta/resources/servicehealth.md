@@ -16,7 +16,10 @@ Namespace: microsoft.graph
 A resource type for service health, to represent the health information of a service.
 
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List serviceHealths](../api/servicehealth-list.md)|[serviceHealth](../resources/servicehealth.md) collection|List the service health information on all services of the tenant|
+|[Get serviceHealth](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|Get the service health information of a specified service for the tenant|
 
 ## Properties
 |Property|Type|Description|

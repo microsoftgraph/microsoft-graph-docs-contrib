@@ -1,19 +1,19 @@
 ---
-title: "serviceAnnouncement resource container"
-description: "serviceAnnouncement is a top level container for ServiceCommsPlatform resources"
+title: "serviceAnnouncement resource type"
+description: "serviceAnnouncement is a top level container for service communications resources"
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
 doc_type: resourcePageType
 ---
 
-# serviceAnnouncement resource container
+# serviceAnnouncement resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-serviceAnnouncement is a top level container for ServiceCommsPlatform resources.
+serviceAnnouncement is a top level container for service communications resources.
 
 ## Methods
 None.
