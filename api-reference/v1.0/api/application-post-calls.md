@@ -901,7 +901,7 @@ Content-Type: application/json
 This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### Request
-The following example shows the request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted by the service. The values of authorization token, callback URL, application instance ID, application instance display name and phone ID must be replaced with actual values to make the example work.
+The following example shows the request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted by the service. The values of authorization token, callback URL, application instance ID, application instance display name, phone ID and tenant ID must be replaced with actual values to make the example work.
 > **Note:** Application instance ID is the object ID of application instance. The application ID that application instance links to should match the one in authorization token. Phone ID is the phone number in E.164 format.
 
 <!-- {
@@ -948,7 +948,8 @@ Content-Type: application/json
   ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
-  }
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
 
@@ -1047,7 +1048,7 @@ Content-Type: application/json
 This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### Request
-The following example shows a request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted locally by the application. The values of authorization token, callback URL, application instance ID, application instance display name and phone ID must be replaced with actual values to make the example work.
+The following example shows a request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted locally by the application. The values of authorization token, callback URL, application instance ID, application instance display name, phone ID and tenant ID must be replaced with actual values to make the example work.
 > **Note:** Application instance ID is the object ID of application instance. The application ID that application instance links to should match the one in authorization token. Phone ID is the phone number in E.164 format.
 
 <!-- {
@@ -1095,7 +1096,8 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
     "blob": "<Media Session Configuration>"
-  }
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
 
