@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # Assign reviewers to your access review definition using the Microsoft Graph API
 
-The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allow you to programmatically review access—of all users, a set of users (for example, guest users only), as well as service principals and groups—to your Azure AD resources.
+The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allows you to programmatically review access—of all users, a set of users (for example, guest users only), as well as service principals and groups—to your Azure AD resources.
 
 > [!NOTE]
 > The [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
