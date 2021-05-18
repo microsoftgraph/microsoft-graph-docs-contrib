@@ -207,6 +207,7 @@ For backward compatibility, the original properties and types are accessible and
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
   - [Request spelling correction](/graph/search-concept-speller)
+  - [Use search display layout](/graph/search-concept-display-layout)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

@@ -9,7 +9,7 @@ ms.prod: "search"
 
 # Use Display Layout provided in Microsoft Graph Search API to render search results (preview)
 
-A search result type is a rule that causes distinct kinds of search results to be displayed in different ways in Search Result Pages. It consists of the following: 
+A search display layout or result type is a rule that causes distinct kinds of search results to be displayed in different ways in Search Result Pages. It consists of the following: 
 
 - One or more characteristics or conditions to compare each search result against, such as the result source or content type of the search result.
 - A display template to use for search results that meet the conditions. The display template controls the way in which all results that meet the conditions appear and behave on a search results page. 

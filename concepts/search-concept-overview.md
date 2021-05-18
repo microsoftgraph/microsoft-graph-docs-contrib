@@ -57,7 +57,7 @@ Looking for the API reference for this service?
   - [Search external content](search-concept-custom-types.md) (preview)
   - [Sort search results](search-concept-sort.md) (preview)
   - [Refine search results](search-concept-aggregation.md) (preview)
-  - [Request spelling correction](#request-spelling-correction) (preview)
+  - [Request spelling correction](search-concept-speller.md) (preview)
   - [Search Display Layout](search-concept-display-layout.md) (preview)
   
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
