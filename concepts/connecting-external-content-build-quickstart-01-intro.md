@@ -22,7 +22,7 @@ This .NET Core application shows you how to use the Microsoft Graph Connector AP
 
 1. Install Visual studio 2019 with [.NET Core 3.1 SDK](https://www.microsoft.com/net/download/core) on your development computer.
 2. You need a [personal Microsoft account](https://signup.live.com/), or a work or school account.
-3. You need the application ID and key, from the application that you registered on the [App Registration Portal](#RegisterAnAppInAzurePortal).
-4. Install the [Entity Framework Core Tools](https://docs.microsoft.com/ef/core/miscellaneous/cli/dotnet) (dotnet tool install --global dotnet-ef)
-5. Install a tool to update a SQLite database. For example, the [DB Browser for SQLite](https://sqlitebrowser.org/).
-6. Download **ApplianceParts.csv** file from [https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv) and add it to the PartsInventoryConnector.csproj
+3. Install the [Entity Framework Core Tools](/ef/core/miscellaneous/cli/dotnet) (dotnet tool install --global dotnet-ef)
+4. Install a tool to update a SQLite database. For example, the [DB Browser for SQLite](https://sqlitebrowser.org/).
+5. Download **ApplianceParts.csv** file from [https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv) and add it to the PartsInventoryConnector.csproj
+
