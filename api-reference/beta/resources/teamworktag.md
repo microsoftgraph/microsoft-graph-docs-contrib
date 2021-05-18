@@ -23,7 +23,7 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List teamworkTags](../api/teamworktag-list.md)|[teamworkTag](../resources/teamworktag.md) collection|Get a list of the [teamworkTag](../resources/teamworktag.md) objects and their properties.|
-|[Create teamworkTag](../api/teamworktag-create.md)|[teamworkTag](../resources/teamworktag.md)|Create a new [teamworkTag](../resources/teamworktag.md) object.|
+|[Create teamworkTag](../api/teamworktag-post.md)|[teamworkTag](../resources/teamworktag.md)|Create a new [teamworkTag](../resources/teamworktag.md) object.|
 |[Get teamworkTag](../api/teamworktag-get.md)|[teamworkTag](../resources/teamworktag.md)|Read the properties and relationships of a [teamworkTag](../resources/teamworktag.md) object.|
 |[Update teamworkTag](../api/teamworktag-update.md)|[teamworkTag](../resources/teamworktag.md)|Update the properties of a [teamworkTag](../resources/teamworktag.md) object.|
 |[Delete teamworkTag](../api/teamworktag-delete.md)|None|Deletes a [teamworkTag](../resources/teamworktag.md) object.|
