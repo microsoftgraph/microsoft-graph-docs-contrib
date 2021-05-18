@@ -27,7 +27,7 @@ the [parentLabelDetails](parentlabeldetails.md). Can be returned by [evaluateRem
 | name        | String                                       | The plaintext name of the label.                                                                             |
 | sensitivity | Int32                                        | The sensitivity value of the label, where lower is less sensitive.                                           |
 | tooltip     | String                                       | The tooltip that should be displayed for the label in a user interface.                                      |
-| parent      | microsoft.informationProtection.parentLabelDetails | The parent label associated with a child label.                                                              |
+| parent      | parentLabelDetails | The parent label associated with a child label.                                                              |
 
 ## JSON representation
 
