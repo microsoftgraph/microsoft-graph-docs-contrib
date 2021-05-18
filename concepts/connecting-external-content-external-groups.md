@@ -2,7 +2,7 @@
 title: External groups
 description: Concept page for external groups
 author: mecampos
-ms.topic: conceptual #Required; leave this attribute/value as-is.
+doc_type: conceptualPageType
 ---
 # External groups
 

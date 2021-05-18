@@ -2,7 +2,7 @@
 title: Microsoft Graph connectors API permissions
 description: Microsoft Graph connectors API permissions
 author: mecampos
-ms.topic: conceptual
+doc_type: conceptualPageType
 ---
 
 # Microsoft Graph connectors API permissions
