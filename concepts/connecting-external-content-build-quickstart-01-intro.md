@@ -1,4 +1,15 @@
+---
+title: "Quickstart: Create your first custom Microsoft Graph connector"
+description: "Quickstart guide to create your first custom Microsoft Graph connector"
+localization_priority: Priority
+author: mecampos
+doc_type: conceptualPageType
+---
 <!-- markdownlint-disable MD002 MD041 -->
+
+# Quickstart – Create your first custom Microsoft Graph connector
+
+<!--- # Introduction --->
 
 With Microsoft Graph connectors, you can add your own data into Microsoft Graph and have it power various Microsoft 365 experiences.
 
