@@ -22,6 +22,7 @@ Inherits from entity.
 |:---|:---|:---|
 |[reprovisionCloudPc of managedDevice](../api/intune-manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id in [managedDevice](../resources/intune-manageddevice.md).|
 |[getCloudPcRemoteActionResults](../api/intune-manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the results of reprovisioning a Cloud PC.|
+|[bulkReprovisionCloudPc of managedDevice](../api/intune-manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs in [managedDevice](../resources/intune-manageddevice.md).|
 
 ## Properties
 |Property|Type|Description|
