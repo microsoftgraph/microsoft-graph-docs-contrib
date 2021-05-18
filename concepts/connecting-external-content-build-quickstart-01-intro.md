@@ -1,12 +1,12 @@
 ---
-title: "Quickstart: Create your first custom Microsoft Graph connector"
+##title: "Quickstart: Create your first custom Microsoft Graph connector"
 description: "Quickstart guide to create your first custom Microsoft Graph connector"
 localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
 
-<!--- # Quickstart – Create your first custom Microsoft Graph connector --->
+# Quickstart – Create your first custom Microsoft Graph connector
 
 <!--- # Introduction --->
 
