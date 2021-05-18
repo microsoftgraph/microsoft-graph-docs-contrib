@@ -249,6 +249,137 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
+### Example 4: Notify the members of a team about an event
+
+This example shows how you can send an activity feed notification to all of the members of a team. This example notifies the team members about a new event. 
+
+> **Note:** The ability to send notifications to all of the members of a team is currently only available in beta.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": <Teams webUrl>
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.teamMembersNotificationRecipient",
+        "teamId": "7155e3c8-175e-4311-97ef-572edc3aa3db"
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 5: Notify the members of a channel about an event
+
+This example shows how you can send an activity feed notification to all of the members of a channel. This example notifies the channel members about a new event. 
+
+> **Note:** The ability to send notifications to all of the members of a channel is currently only available in beta.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": <Teams webUrl>
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.channelMembersNotificationRecipient",
+        "teamId": "7155e3c8-175e-4311-97ef-572edc3aa3db",
+        "channelId": "19:0ea5de04de4743bcb4cd20cb99235d99@thread.tacv2"
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 6: Notify the members of a chat about an event
+
+This example shows how you can send an activity feed notification to all of the members of a chat. This example notifies the chat members about a new event. 
+
+> **Note:** The ability to send notifications to all of the members of a chat is currently only available in beta.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": <Teams webUrl>
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.chatMembersNotificationRecipient",
+        "chatId": "19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
 ## Customizing how the notifications alert you
 
 Microsoft Teams users can customize the notifications they see in their feed, as a banner, and so on. Notifications generated through activity feed APIs can also be customized. Users can choose how they are notified via settings in Microsoft Teams. Teams apps will appear in the list for the user to choose from, as shown in the following screenshot.
