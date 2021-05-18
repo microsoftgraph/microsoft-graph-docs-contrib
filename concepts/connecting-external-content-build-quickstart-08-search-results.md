@@ -1,12 +1,12 @@
 ---
-title: "Search for results"
+##title: "Search for results"
 description: "Search for results"
 localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
 
-<!---# Search for results--->
+# Search for results
 
 In this step, you will search for parts in SharePoint.
 

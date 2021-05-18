@@ -1,12 +1,12 @@
 ---
-title: "Build the app"
+##title: "Build the app"
 description: "Build the app"
 localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
 
-<!---# Build the app--->
+# Build the app
 
 ## Create a .NET Core console app
 

@@ -1,12 +1,12 @@
 ---
-title: "Surface the data in search"
+##title: "Surface the data in search"
 description: "Surface the data in search"
 localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
 
-<!---# Surface the data in search--->
+# Surface the data in search
 
 Create search verticals and result types to customize the search results in Microsoft **SharePoint** , **Microsoft Office** , and Microsoft Search in **Bing**, to make it easier for users to find the information that they have permission to see.
 

@@ -1,12 +1,12 @@
 ---
-title: "Summary"
+##title: "Summary"
 description: "Summary"
 localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
 
-<!---# Summary--->
+# Summary
 
 You have successfully completed the .NET Core Microsoft Graph connector tutorial. Now you have created a custom connector and used it to power Microsoft Search.
 
