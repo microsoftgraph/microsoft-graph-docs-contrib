@@ -14040,33 +14040,33 @@ items:
           items:
           - name: healthOverviews
             items:
-           - name: Get service health overview of a service for tenant
+           - name: Get service health
              href: api/servicehealth-get.md
-           - name: List service health overview of all tenant's services
+           - name: List services health
              href: api/servicehealth-list.md
           - name: issues
             items:
-            - name: Get information of a specified service issue for tenant
+            - name: Get issue
               href: api/servicehealthissue-get.md
-            - name: List all service issues for tenant
+            - name: List issues
               href: api/servicehealthissue-list.md
-            - name: Get incident report of an issue for tenant
+            - name: Get incident report
               href: api/servicehealthissue-incidentreport.md
           - name: messages
             items:
-            - name: Get information of a specified service message for tenant
+            - name: Get message
               href: api/serviceupdatemessage-get.md
-            - name: List all service messages for tenant
+            - name: List messages
               href: api/serviceupdatemessage-list.md
-            - name: Mark read status on messages for login user
+            - name: Mark read status
               href: api/serviceupdatemessage-markread.md
-            - name: Mark unread status on messages for login user
+            - name: Mark unread status
               href: api/serviceupdatemessage-markunread.md
-            - name: Mark archived status on messages for login user
+            - name: Mark archived status
               href: api/serviceupdatemessage-archive.md
-            - name: Mark unarchived status on messages for login user
+            - name: Mark unarchived status
               href: api/serviceupdatemessage-unarchive.md
-            - name: Mark favorited status on messages for login user
+            - name: Mark favorited status
               href: api/serviceupdatemessage-favorite.md
-            - name: Mark unfavorited status on messages for login user
+            - name: Mark unfavorited status
               href: api/serviceupdatemessage-unfavorite.md
