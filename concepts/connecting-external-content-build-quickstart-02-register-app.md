@@ -1,12 +1,12 @@
 ---
-title: "Register the app in the portal"
-description: "Register the app in the portal"
+title: "Register the application in the portal"
+description: "Register the application in the portal"
 localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
 
-# Register the app in the portal
+# Register the application in the portal
 
 Once all the prerequisites are in place, you will be able to register an application in the Azure AD admin center. The registration is necessary in order to authenticate the application and use it to make calls to the Microsoft Graph indexing API.
 

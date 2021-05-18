@@ -1,12 +1,12 @@
 ---
-title: "Run the app"
-description: "Run the app"
+title: "Run the application"
+description: "Run the application"
 localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
 
-# Run the app
+# Run the application
 
 In this step, you will build and run the sample. This code sample will create a new connection, register the schema, then push items from the [ApplianceParts.csv](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/ApplianceParts.csv) file into that connection.
 

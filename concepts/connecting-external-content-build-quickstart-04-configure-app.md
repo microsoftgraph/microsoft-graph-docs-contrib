@@ -1,12 +1,12 @@
 ---
-title: "Configure the app"
-description: "Configure the app"
+title: "Configure the application"
+description: "Configure the application"
 localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
 
-# Configure the app
+# Configure the application
 
 1. Open your command line interface (CLI) in the directory where PartsInventoryConnector.csproj is located.
 2. Run the following command to initialize the user secrets for the project.
