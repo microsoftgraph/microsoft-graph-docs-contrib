@@ -9430,6 +9430,7 @@ items:
             href: api/virtualendpoint-geteffectivepermissions.md
         - name: Cloud PC
           href: resources/cloudpc.md
+          items:
           - name: managed Device
             href: resources/intune-manageddevice.md
           items:

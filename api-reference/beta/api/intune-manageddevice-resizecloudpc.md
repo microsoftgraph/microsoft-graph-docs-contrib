@@ -1,5 +1,5 @@
 ---
-title: "managedDevice: bulkReprovisionCloudPc"
+title: "managedDevice: resizeCloudPc"
 description: "Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size."
 author: "RuiHou105"
 localization_priority: Normal
