@@ -69,7 +69,7 @@ This method returns `202 Accepted` when the request has been processed successfu
 By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). This example illustrates the default request and response. 
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
   "name": "get_user_1"
 } -->
 ```http
@@ -170,7 +170,7 @@ If you need a different property set, you can use the OData `$select` query para
 
 ##### Request
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
   "name": "get_user_2"
 } -->
 ```http
