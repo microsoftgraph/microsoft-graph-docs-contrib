@@ -8,7 +8,7 @@ doc_type: conceptualPageType
 
 # Register the application in the portal
 
-Once all the prerequisites are in place, you will be able to register an application in the Azure AD admin center. The registration is necessary in order to authenticate the application and use it to make calls to the Microsoft Graph indexing API.
+After all the prerequisites are in place, you will be able to register an application in the Azure AD admin center. The registration is necessary in order to authenticate the application and use it to make calls to the Microsoft Graph indexing API.
 
 1. Go to the [Azure Active Directory admin center](https://aad.portal.azure.com/) and sign in with an administrator account.
 2. Select **Azure Active Directory** in the left-hand pane, then select **App registrations** under Manage.
