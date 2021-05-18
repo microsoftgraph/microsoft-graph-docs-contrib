@@ -171,7 +171,7 @@ If you need a different property set, you can use the OData `$select` query para
 ##### Request
 <!-- {
   "blockType": "request"
-  "name" "get_user_2"
+  "name": "get_user_2"
 } -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
