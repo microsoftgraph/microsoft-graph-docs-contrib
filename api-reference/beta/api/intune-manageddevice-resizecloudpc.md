@@ -1,19 +1,19 @@
 ---
 title: "managedDevice: bulkReprovisionCloudPc"
-description: "Bulk reprovision a set of Cloud PC devices with Intune managed device IDs."
+description: "Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size."
 author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: bulkReprovisionCloudPc
+# managedDevice: resizeCloudPc
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Bulk reprovision a set of Cloud PC devices with Intune managed device IDs in [managedDevice](../resources/intune-manageddevice.md).
+Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /deviceManagement/managedDevices/bulkReprovisionCloudPc
+POST /deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ POST /deviceManagement/managedDevices/bulkReprovisionCloudPc
 
 ## Request body
 
-In the request body, supply a JSON representation of the IDs of the Intune managed devices.
+Do not supply a request body for this method.
 
 ## Response
 
@@ -60,16 +60,12 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "managedDevice_bulkReprovisionCloudPc"
+  "name": "managedDevice_resizeCloudPc"
 }
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/bulkReprovisionCloudPc
-Content-Type: application/json
-{
-  managedDeviceIds: ["30d0e128-de93-41dc-89ec-33d84bb662a0", "7c82a3e3-9459-44e4-94d9-b92f93bf78dd"] 
-}
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
 ```
 
 ### Response

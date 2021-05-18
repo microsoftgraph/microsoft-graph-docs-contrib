@@ -3,6 +3,56 @@
         {
             "ChangeList": [
                 {
+                    "Id": "b65c9f82-4efa-48c6-b2b0-e84e343351d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "upgrading",
+                    "ChangeType": "Deletion",
+                    "Description": "Deleted the `upgrading` member in the **cloudPcStatus** enumeration.",
+                    "Target": "cloudPcStatus"
+                },
+                {
+                    "Id": "b65c9f82-4efa-48c6-b2b0-e84e343351d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resizing",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resizing` member to the **cloudPcStatus** enumeration.",
+                    "Target": "cloudPcStatus"
+                },
+                {
+                    "Id": "b65c9f82-4efa-48c6-b2b0-e84e343351d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "provisionedWithWarnings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `provisionedWithWarnings` member to the **cloudPcStatus** enumeration.",
+                    "Target": "cloudPcStatus"
+                },
+                {
+                    "Id": "b65c9f82-4efa-48c6-b2b0-e84e343351d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "unknownFutureValue",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `unknownFutureValue` member to the **cloudPcStatus** enumeration.",
+                    "Target": "cloudPcStatus"
+                },
+                {
+                    "Id": "b65c9f82-4efa-48c6-b2b0-e84e343351d0",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "resizeCloudPc",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [resizeCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-manageddevice-reprovisioncloudpc?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource",
+                    "Target": "managedDevice"
+                }
+            ],
+            "Id": "b65c9f82-4efa-48c6-b2b0-e84e343351d0",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-13T10:52:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "bec52bbc-41a0-429e-a7d1-ed9697ef35f3",
                     "ApiChange": "Resource",
                     "ChangedApiName": "managedDevice",
@@ -40,6 +90,14 @@
                     "ChangedApiName": "getCloudPcRemoteActionResults",
                     "ChangeType": "Addition",
                     "Description": "Added the [getCloudPcRemoteActionResults](https://docs.microsoft.com/en-us/graph/api/intune-manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource",
+                    "Target": "managedDevice"   
+                },
+                {
+                    "Id": "bec52bbc-41a0-429e-a7d1-ed9697ef35f3",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "bulkReprovisionCloudPc",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bulkReprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-manageddevice-bulkreprovisioncloudpc.md?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource",
                     "Target": "managedDevice"   
                 }
             ],

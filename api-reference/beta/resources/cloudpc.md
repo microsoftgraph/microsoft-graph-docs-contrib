@@ -49,10 +49,12 @@ Represents a cloud-managed virtual desktop.
 |notProvisioned|The Cloud PC hasn’t been provisioned.|
 |provisioning|Cloud PC provisioning is in progress.|
 |provisioned|The Cloud PC is provisioned and can be accessed by end users.|
-|upgrading|Cloud PC resize is in progress.|
 |inGracePeriod|The Cloud PC is in the one week grace period before it’s deprovisioned.|
 |deprovisioning|The Cloud PC is deprovisioning.|
 |failed|The operation on Cloud PC has failed.|
+|provisionedWithWarnings|The Cloud PC is provisioned and can be accessed by end users but with some warnings. User may continue to use this cloud PC.|
+|resizing|The Cloud PC is resizing.|
+|unknownFutureValue|Unknown future status (Reserved, not used right now).|
 
 ## Relationships
 

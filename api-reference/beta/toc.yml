@@ -9430,6 +9430,8 @@ items:
             href: api/virtualendpoint-geteffectivepermissions.md
         - name: Cloud PC
           href: resources/cloudpc.md
+          - name: managed Device
+            href: resources/intune-manageddevice.md
           items:
           - name: List
             href: api/virtualendpoint-list-cloudpcs.md
@@ -9437,6 +9439,14 @@ items:
             href: api/cloudpc-get.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
+          - name: Reprovision Cloud PC remote action
+            href: api/intune-manageddevice-reprovisioncloudpc.md
+          - name: Bulk reprovision Cloud PCs remote action
+            href: api/intune-manageddevice-bulkreprovisioncloudpc.md
+          - name: Resize Cloud PC remote action
+            href: api/intune-manageddevice-resizecloudpc.md
+          - name: Get Cloud PC remote action results
+            href: api/intune-manageddevice-getcloudpcremoteactionresults.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
