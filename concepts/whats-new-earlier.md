@@ -364,8 +364,8 @@ Organizations can [get](/graph/api/continuousaccessevaluationpolicy-get?view=gra
 - Query external data ingested by Microsoft Graph connectors across [more than one connection](./search-concept-custom-types.md).
 - Take advantage of enhanced content for Microsoft Graph connectors to learn about:
  <!---> - [Managing connections](connecting-external-content-manage-connections.md)
-  - [Managing schema](connecting-external-content-manage-schema.md)
-  - [Managing items](connecting-external-content-manage-items.md)--->
+  ##- [Managing schema](connecting-external-content-manage-schema.md)
+ ## - [Managing items](connecting-external-content-manage-items.md)--->
 - Track the state of a Microsoft Graph [connection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true).
 - Define an [external group](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) to set permissions on [external item](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) objects added to a Microsoft Graph [connection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true). External groups can represent non-Azure Active Directory groups or group-like constructs, such as business units, that determine permissions over the content in the external data source.
 

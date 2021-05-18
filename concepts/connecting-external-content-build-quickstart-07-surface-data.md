@@ -1,5 +1,5 @@
 ---
-##title: "Surface the data in search"
+title: "Surface the data in search"
 description: "Surface the data in search"
 localization_priority: Priority
 author: mecampos

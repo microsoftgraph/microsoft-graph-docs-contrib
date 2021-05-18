@@ -1,5 +1,5 @@
 ---
-##title: "Run the app"
+title: "Run the app"
 description: "Run the app"
 localization_priority: Priority
 author: mecampos

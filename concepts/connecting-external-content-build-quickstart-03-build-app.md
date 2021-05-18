@@ -1,5 +1,5 @@
 ---
-##title: "Build the app"
+title: "Build the app"
 description: "Build the app"
 localization_priority: Priority
 author: mecampos

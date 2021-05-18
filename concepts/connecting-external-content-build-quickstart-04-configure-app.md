@@ -1,5 +1,5 @@
 ---
-##title: "Configure the app"
+title: "Configure the app"
 description: "Configure the app"
 localization_priority: Priority
 author: mecampos

@@ -1,5 +1,5 @@
 ---
-##title: "Summary"
+title: "Summary"
 description: "Summary"
 localization_priority: Priority
 author: mecampos

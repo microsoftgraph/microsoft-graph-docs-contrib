@@ -1,5 +1,5 @@
 ---
-##title: "Search for results"
+title: "Search for results"
 description: "Search for results"
 localization_priority: Priority
 author: mecampos

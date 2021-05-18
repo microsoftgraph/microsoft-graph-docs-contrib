@@ -1,5 +1,5 @@
 ---
-##title: "Register the app in the portal"
+title: "Register the app in the portal"
 description: "Register the app in the portal"
 localization_priority: Priority
 author: mecampos

@@ -1,5 +1,5 @@
 ---
-##title: "Create the database from CSV"
+title: "Create the database from CSV"
 description: "Create the database from CSV"
 localization_priority: Priority
 author: mecampos
