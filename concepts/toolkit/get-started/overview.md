@@ -70,11 +70,11 @@ Providers are available via a single package and can be installed as needed. The
 
 - <b>@micosoft/mgt-msal-provider</b>
 
-    [`@micosoft/mgt-msal-provider`](../providers/msal.md) contains the `MsalProvider` and `mgt-msal-provider` component. The msal provider leverages msal.js for authenticating in web apps and PWAs.
+    [`@micosoft/mgt-msal-provider`](../providers/msal.md) contains the `MsalProvider` and `mgt-msal-provider` component. The msal provider leverages msal.js for authenticating in web apps and Progressive Web Apps (PWAs).
 
 - <b>@micosoft/mgt-msal2-provider</b>
 
-    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) contains the `Msal2Provider` and `mgt-msal2-provider` component. The msal provider leverages msal-browser for authenticating in web apps and PWAs.
+    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL provider uses msal-browser for authenticating in web apps and Progressive Web Apps (PWAs).
 
 -  <b>@microsoft/mgt-teams-provider</b>
 

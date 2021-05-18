@@ -66,7 +66,9 @@ Now that you have registered your application with Azure Active Directory (Azure
 ### Configure the Microsoft Graph Toolkit authentication provider
 
 Next, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, you'll use MSAL, which is a good default for building standalone applications. If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers/providers.md).
-Note: If you are currently using MSAL Provider and would like to update to MSAL 2.0 Provider, follow the steps listed [here](../providers/msal2.md#migrating-from-msal-provider-to-msal-20-provider).
+
+>[!NOTE] 
+>If you are currently using MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-20-provider) article.
 
 1. In the code editor, open the **src/index.** file, and to the list of imports, add:
 

@@ -27,11 +27,12 @@ yarn add @microsoft/mgt-spfx
 
 Before deploying your SharePoint Framework package to your tenant, you will need to deploy the `@microsoft/mgt-spfx` SharePoint Framework package to your tenant. You can download the package corresponding to the version of `@microsoft/mgt-spfx` that you used in your project, from the [Releases](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) section on GitHub.
 
-**Important:** Since there can be only one version of the SharePoint Framework library for Microsoft Graph Toolkit installed in the tenant, before using MGT in your solution, consult with your organization/customer if they already have a version of SharePoint Framework library for Microsoft Graph Toolkit deployed in their tenant and use the same version to avoid issues.
+>[!IMPORTANT]
+>Because only one version of the SharePoint Framework library for Microsoft Graph Toolkit can be installed in the tenant, before you use the Microsoft Graph Toolkit in your solution, determine whether your organization or customer already has a version of the SharePoint Framework library deployed and use the same version.
 
 ## Usage
 
-When building SharePoint Framework web parts and extensions, reference the Microsoft Graph Toolkit `Provider` and `SharePointProvider` from the `@microsoft/mgt-spfx` package. This will ensure, that your solution will use MGT components that are already registered on the page, rather than instantiating its own. The instantiation process is the same for all web parts no matter which JavaScript framework they use:
+When building SharePoint Framework web parts and extensions, reference the Microsoft Graph Toolkit `Provider` and `SharePointProvider` from the `@microsoft/mgt-spfx` package. This will ensure that your solution will use Microsoft Graph Toolkit components that are already registered on the page, rather than instantiating its own. The instantiation process is the same for all web parts no matter which JavaScript framework they use.
 
 ```ts
 import { Providers, SharePointProvider } from '@microsoft/mgt-spfx';
@@ -49,7 +50,7 @@ export default class MgtWebPart extends BaseClientSideWebPart<IMgtWebPartProps> 
 }
 ```
 
-When building web parts using framework other than React, you can load components directly in your web part:
+When building web parts using a framework other than React, you can load components directly in your web part:
 
 ```ts
 export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoFrameworkWebPartProps> {
@@ -77,7 +78,7 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 }
 ```
 
-If you build web part using React, load components from the `@microsoft/mgt-react` package:
+If you build a web part using React, load components from the `@microsoft/mgt-react` package:
 
 ```tsx
 import { Person } from '@microsoft/mgt-react';
