@@ -54,7 +54,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/c
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "ignored",
