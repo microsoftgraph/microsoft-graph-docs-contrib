@@ -43,8 +43,8 @@ where files are shared, and where tabs are added.
 |[Get tab in channel](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a channel.|
 |[Update tab in channel](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Updates the properties of a tab in a channel.|
 |[Remove tab from channel](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
-|[Provision channel email address](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provision a channel's email address.|
-|[Remove channel email address](../api/channel-removeemail.md) | None | Remove a channel's provisioned email address.|
+|[Provision channel email address](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provision email address.|
+|[Remove channel email address](../api/channel-removeemail.md) | None | Remove email address.|
 
 ## Properties
 
