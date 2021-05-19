@@ -23,6 +23,7 @@ Represents the audit event entity.
 |:---|:---|:---|
 |[List cloudPcAuditEvents](../api/virtualendpoint-list-auditevents.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|List properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects.|
 |[Get cloudPcAuditEvent](../api/cloudpcauditevent-get.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Read the properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.|
+|[getAuditActivityTypes function](../api/cloudpcauditevent-getauditactivitytypes.md)|String collection|Get audit activity types.|
 
 ## Properties
 

@@ -2223,3 +2223,38 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |principal|
 |unknownFutureValue|
+
+### cloudPcAuditActivityOperationType values 
+
+|Member|
+|:---|
+|create|
+|delete|
+|patch|
+|other|
+
+### cloudPcAuditActivityResult values 
+
+|Member|
+|:---|
+|success|
+|clientError|
+|failure|
+|timeout|
+|other|
+
+### cloudPcAuditActorType values 
+
+|Member|
+|:---|
+|itPro|
+|application|
+|partner|
+|unknown|
+
+### cloudPcAuditCategory values 
+
+|Member|
+|:---|
+|cloudPC|
+|other|

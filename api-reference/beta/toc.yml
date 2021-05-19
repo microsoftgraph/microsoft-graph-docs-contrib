@@ -9482,6 +9482,15 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Cloud PC audit event
+          href: resources/cloudpcauditevent.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-auditevents.md
+          - name: Get
+            href: api/cloudpcauditevent-get.md
+          - name: Get audit activity types
+            href: api/cloudpcauditevent-getauditactivitytypes.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
