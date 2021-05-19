@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Provision an email address for a [channel](../resources/channel.md).
 
-Microsoft Teams does not automatically provision an email address for a channel by default. Upon a first attempt in the user interface to get the email address, Teams generates one to enable emailing the channel. 
+Microsoft Teams does not automatically provision an email address for a channel by default. To have Teams provision an email address, you can call **provisionEmail**, or through the Teams user interface, select **Get email address**, which triggers Teams to generate an email address if it has not already provisioned one.
 
 To remove a channel's provisioned email address, use the [removeEmail](channel-removeemail.md) method.
 
