@@ -23,31 +23,31 @@ This topic provides details about these APIs.
 
 ## Connections API
 
-Connections from external services are represented by the [externalConnection](../api-reference/beta/resources/externalconnection.md) resource in Microsoft Graph. A connection is a logical container for your external data that you can manage as a single unit.
+Connections from external services are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) resource in Microsoft Graph. A connection is a logical container for your external data that you can manage as a single unit.
 
-After you create a connection to an external data source such as an on-premises content source or an external SaaS service, you must register the schema and ingest the external content into Microsoft Graph. You can only view and manage connections you have created or are explicitly [authorized](https://docs.microsoft.com/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) to manage. Note that a search admin can view and manage all the connections in the tenant from the Microsoft 365 admin center.
+After you create a connection to an external data source such as an on-premises content source or an external SaaS service, you must register the schema and ingest the external content into Microsoft Graph. You can only view and manage connections you have created or are explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) to manage. Note that a search admin can view and manage all the connections in the tenant from the Microsoft 365 admin center.
 
-You can model a connection any way you want. For example, you can [set up multiple connections using the Microsoft Windows file share connector](https://docs.microsoft.com/microsoftsearch/configure-connector) to connect to different file shares. You can also create a single connection to add all items from your data source. For example, you can create a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
+You can model a connection any way you want. For example, you can [set up multiple connections using the Microsoft Windows file share connector](/microsoftsearch/configure-connector) to connect to different file shares. You can also create a single connection to add all items from your data source. For example, you can create a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
 
-[Creating a connection](./connecting-external-content-manage-connections.md#create-a-connection) is the first step for an application to add items to Microsoft Graph. A connection allows your registered application to [define a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) for items that will be ingested, and allows your service to add, update, or delete items from the external data source.
+[Creating a connection](./connecting-external-content-manage-connections.md#create-a-connection) is the first step for an application to add items to Microsoft Graph. A connection allows your registered application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) for items that will be ingested, and allows your service to add, update, or delete items from the external data source.
 
 ### Create a connection
 
 You must create and configure a connection before an application can ingest external items into Microsoft Graph, using the following steps:
 
-- [Create a connection](https://docs.microsoft.com/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) with a unique ID, display name, and description.
-- [Register a schema](https://docs.microsoft.com/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) to define the fields that will be included in the index.
+- [Create a connection](/graph/api/external-post-connections?view=graph-rest-beta&amp;preserve-view=true) with a unique ID, display name, and description.
+- [Register a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&amp;preserve-view=true) to define the fields that will be included in the index.
 
 > [!IMPORTANT]
 > After a schema has been registered, it cannot be changed for an existing connection.
 
 ### Update a connection
 
-You can change the display name or description of an existing connection by [updating the connection](https://docs.microsoft.com/graph/api/externalconnection-update?view=graph-rest-beta&amp;preserve-view=true).
+You can change the display name or description of an existing connection by [updating the connection](/graph/api/externalconnection-update?view=graph-rest-beta&amp;preserve-view=true).
 
 ### Delete a connection
 
-You can [delete a connection](https://docs.microsoft.com/graph/api/externalconnection-delete?view=graph-rest-beta&amp;preserve-view=true). Deleting a connection removes all items that were indexed via that connection.
+You can [delete a connection](/graph/api/externalconnection-delete?view=graph-rest-beta&amp;preserve-view=true). Deleting a connection removes all items that were indexed via that connection.
 
 ### States and operations
 
@@ -82,7 +82,7 @@ The following table specifies which operations are available in each state.
 
 ## Schema API
 
-The connection [schema](https://docs.microsoft.com/graph/api/resources/schema?view=graph-rest-beta&amp;preserve-view=true) determines how your content will be used in various Microsoft 365 experiences. Schema is a flat list of all the properties you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before ingesting items into Microsoft Graph.
+The connection [schema](/graph/api/resources/schema?view=graph-rest-beta&amp;preserve-view=true) determines how your content will be used in various Microsoft 365 experiences. Schema is a flat list of all the properties you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before ingesting items into Microsoft Graph.
 
 ### Example schema
 
@@ -108,7 +108,7 @@ The following table represents an example of a possible schema for a work ticket
 
 #### Searchable
 
-If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](https://docs.microsoft.com/graph/connecting-external-content-manage-items#content).
+If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](/graph/connecting-external-content-manage-items#content).
 
 ![A search for "design" displaying results for hits against properties and content](./images/connectors-images/connecting-external-content-manage-items-schema-1.svg)
 
@@ -215,11 +215,11 @@ Aliases are friendly names for properties that you assign. These will be used in
 
 ### External item API
 
-External items added by your application to Microsoft Graph are represented by the [externalItem](https://docs.microsoft.com/graph/api/resources/externalitem?view=graph-rest-beta&amp;preserve-view=true) resource.
+External items added by your application to Microsoft Graph are represented by the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&amp;preserve-view=true) resource.
 
-Once you have created a connection, you can add your content. Each item from your data source must be represented as an [externalItem](https://docs.microsoft.com/graph/api/resources/externalitem?view=graph-rest-beta&amp;preserve-view=true) in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields.
+Once you have created a connection, you can add your content. Each item from your data source must be represented as an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&amp;preserve-view=true) in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields.
 
-An [externalItem](https://docs.microsoft.com/graph/api/resources/externalitem?view=graph-rest-beta&amp;preserve-view=true) has three key components: access control list, properties, and content.
+An [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&amp;preserve-view=true) has three key components: access control list, properties, and content.
 
 ### Access control list
 
@@ -235,7 +235,7 @@ External groups can consist of another external group, Azure Active Directory us
 
 ### Properties
 
-The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](https://docs.microsoft.com/graph/connecting-external-content-manage-schema) for the connection before adding items into it and convert datatypes into [supported datatypes](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta&amp;preserve-view=true).
+The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](/graph/connecting-external-content-manage-schema) for the connection before adding items into it and convert datatypes into [supported datatypes](/graph/api/resources/property?view=graph-rest-beta&amp;preserve-view=true).
 
 ![Example of the structure of an item highlighting the Properties section](./images/connectors-images/api-properties.png)
 
@@ -243,7 +243,7 @@ The properties component is used to add item metadata that is useful in Microsof
 
 The content component is used to add the bulk of the item that needs to be full text indexed. Examples include ticket description, parsed text from a file body, or a wiki page body.
 
-Content is one of the key fields influencing [relevance](https://docs.microsoft.com/graph/connecting-external-content-manage-schema#relevance) across Microsoft experiences. <!--We support content of the type text and HTML.--> If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
+Content is one of the key fields influencing [relevance](/graph/connecting-external-content-manage-schema#relevance) across Microsoft experiences. <!--We support content of the type text and HTML.--> If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
 
 ![Example of the structure of an item highlighting the Content section](./images/connectors-images/api-content.png)
 
@@ -251,11 +251,11 @@ Content cannot be directly added into a search result template, but you can use 
 
 When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components.
 
-After your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [verticals and result types](https://docs.microsoft.com/MicrosoftSearch/customize-search-page) or using the [Microsoft Graph Search API](https://docs.microsoft.com/graph/api/resources/search-api-overview?view=graph-rest-beta&amp;preserve-view=true). Integration with many other Microsoft 365 experiences is coming soon.
+After your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [verticals and result types](/MicrosoftSearch/customize-search-page) or using the [Microsoft Graph Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta&amp;preserve-view=true). Integration with many other Microsoft 365 experiences is coming soon.
 
 ### Add an item
 
-You can add an item to the index by [creating an externalItem](https://docs.microsoft.com/graph/api/externalconnection-put-items?view=graph-rest-beta&amp;preserve-view=true). When you create an item, you assign a unique identifier in the URL.
+You can add an item to the index by [creating an externalItem](/graph/api/externalconnection-put-items?view=graph-rest-beta&amp;preserve-view=true). When you create an item, you assign a unique identifier in the URL.
 
 For example, your application may index helpdesk tickets using the ticket number. If a ticket has the ticket number SR00145, the request may look like the following.
 
@@ -271,11 +271,11 @@ Content-Type: application/json
 ```
 
 >[!NOTE]
->Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](https://docs.microsoft.com/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
+>Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
 
 ### Update an item
 
-When an item is updated in the external service (helpdesk ticket is reassigned, or a product description is updated), you can update its entry in Microsoft Graph by [updating the externalItem](https://docs.microsoft.com/graph/api/externalitem-update?view=graph-rest-beta&amp;preserve-view=true), using the unique identifier assigned to the item when you created it.
+When an item is updated in the external service (helpdesk ticket is reassigned, or a product description is updated), you can update its entry in Microsoft Graph by [updating the externalItem](/graph/api/externalitem-update?view=graph-rest-beta&amp;preserve-view=true), using the unique identifier assigned to the item when you created it.
 
 ```http
 PATCH /external/connections/contosohelpdesk/items/SR00145
@@ -288,7 +288,7 @@ Content-Type: application/json
 
 ### Delete an item
 
-You can remove items from the index by [deleting the externalItem](https://docs.microsoft.com/graph/api/externalitem-delete?view=graph-rest-beta&amp;preserve-view=true), using the unique identifier assigned to the item when you created it.
+You can remove items from the index by [deleting the externalItem](/graph/api/externalitem-delete?view=graph-rest-beta&amp;preserve-view=true), using the unique identifier assigned to the item when you created it.
 
 ```http
 DELETE /external/connections/contosohelpdesk/items/SR00145
@@ -298,4 +298,4 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 
 Items in the external service can be granted or denied access via ACL to different types of non-Azure Active Directory groups. For example, Salesforce items might have permission sets and profiles. ServiceNow items might have local groups. When you ingest these items into Microsoft Graph, you need to honor these ACLs.
 
-You can use the External groups API to set permissions on external items ingested into Microsoft Graph. An [externalGroup](https://docs.microsoft.com/graph/api/externalgroup-post-members?view=graph-rest-beta&amp;tabs=http) represents a non-Azure Active Directory group or group-like construct (such as Business units, Teams, and so on) and determines permissions on the content in your external data source.
+You can use the External groups API to set permissions on external items ingested into Microsoft Graph. An [externalGroup](/graph/api/externalgroup-post-members?view=graph-rest-beta&amp;tabs=http) represents a non-Azure Active Directory group or group-like construct (such as Business units, Teams, and so on) and determines permissions on the content in your external data source.
