@@ -635,6 +635,14 @@
                 "ChangeType": "Addition",
                 "Description": "Added the **fallbackReviewers** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource.",
                 "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "d4a214f6-79f8-4c43-9417-1b1a6d2d257f",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessreview",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecation of [accessreview](https://docs.microsoft.com/en-us/graph/api/resources/accessreview-root?view=graph-rest-beta) resource. Replaced with [accessreview](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewv2-root?view=graph-rest-beta)",
+                "Target": "accessReview"
               }
             ],
             "Id": "49ebf6ed-e100-40e8-812f-781f58b264ce",
