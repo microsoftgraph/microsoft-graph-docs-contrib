@@ -97,7 +97,7 @@ await pageIterator.iterate();
 ```java
 final MessageCollectionPage messagesPage = graphClient.me().messages()
     .buildRequest(new HeaderOption("Prefer", "outlook.body-content-type=\"text\""))
-    .select("Sender,Subject","Body")
+    .select("Sender,Subject,Body")
     .top(10)
     .get();
 
