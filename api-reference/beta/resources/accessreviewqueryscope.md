@@ -25,7 +25,7 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 |queryRoot|String|In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query is specified. For example, `./manager`.|
 |queryType|String|Indicates the type of query. Types include `MicrosoftGraph` and `ARM`.|
 
-Specifying the **@odata.type** type property with the value `#microsoft.graph.accessReviewQueryScope` is highly recommended. For more about configuration options for **scope** using **accessReviewQueryScope**, see [configure the scope of your access review definition](/graph/accessreviews-scope-concept).
+Specifying the **@odata.type** type property with the value `#microsoft.graph.accessReviewQueryScope` is highly recommended. For more about configuration options for **scope** using **accessReviewQueryScope**, see [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).
 
 ## Relationships
 None.

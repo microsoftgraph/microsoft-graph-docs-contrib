@@ -26,7 +26,7 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 | queryType | String | The type of query. Examples include `MicrosoftGraph` and `ARM`. |
 | queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, `./manager`, is specified. Possible value: `decisions`. |
 
-For more about configuration options for **reviewers**, see [assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept).
+For more about configuration options for **reviewers**, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept).
 
 
 ## Relationships

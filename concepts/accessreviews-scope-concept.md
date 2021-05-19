@@ -1,16 +1,18 @@
 ---
-title: "Configure the scope of your access review definition"
-description: "Use the scope property of accessReviewsScheduleDefinition to configure resources to review."
+title: "Configure the scope of your access review definition using the Microsoft Graph API"
+description: "Learn how to use the access reviews API in Microsoft Graph to review access to Azure AD resources."
 author: "isabelleatmsft"
 localization_priority: Normal
+ms.prod: "governance"
+doc_type: conceptualPageType
 ---
 
 # Configure the scope of your access review definition using the Microsoft Graph API
 
-The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allow you to programmatically review access—of all users, a set of users (for example, guest users only), as well as service principals and groups—to your Azure AD resources.
+The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allows you to programmatically review the access that users, service principals, or groups have to your Azure AD resources.
 
 > [!NOTE]
-> The [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) are available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
+> The [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) is available in only the Microsoft Graph beta endpoint. Do not use it in production apps, as it is subject to change without notice.
 
 The resources to review are configured in the **scope** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true) resource. This property is of the type [accessReviewScope](/graph/api/resources/accessreviewscope?view=graph-rest-beta&preserve-view=true), an abstract type inherited by the following resources that can be used to configure resources or groups of resources that access will be reviewed against.
 
@@ -24,7 +26,7 @@ In this article, you will use these types of accessReviewScope to configure a wi
 
 ## Use accessReviewQueryScope to configure scope
 
-To configure the scope using the **accessReviewQueryScope** type, set the values of its **query**, **queryRoot**, and **queryType** properties. [See the accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true) resource for descriptions of these properties.
+To configure the scope by using the **accessReviewQueryScope** type, set the values of its **query**, **queryRoot**, and **queryType** properties. For descriptions of these properties, see [accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope?view=graph-rest-beta&preserve-view=true) resource type.
 
 ### Example 1: Review all users assigned to a group
 
@@ -35,7 +37,7 @@ To configure the scope using the **accessReviewQueryScope** type, set the values
     "queryType": "MicrosoftGraph"
 }
 ```
-To review *only inactive users* assigned to the group, specify as follows:
+To review *only inactive users* assigned to the group:
 
 ```http
 "scope": {

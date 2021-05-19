@@ -26,7 +26,7 @@ Inherits from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 |queryRoot|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 |queryType|String|Inherited from [accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 
-You must also specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`. For more about configuration options for **scope** using **accessReviewInactiveUsersQueryScope**, see [configure the scope of your access review definition](/graph/accessreviews-scope-concept).
+You must also specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`. For more about configuration options for **scope** using **accessReviewInactiveUsersQueryScope**, see [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).
 
 ## Relationships
 None.

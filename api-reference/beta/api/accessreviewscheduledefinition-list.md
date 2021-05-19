@@ -173,8 +173,7 @@ Content-type: application/json
 ### Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in a tenant
 
 #### Request
-The following example shows a request to retrieve all the access review series scoped to all Microsoft 365 groups in a
-tenant.
+The following example shows a request to retrieve all the access review series scoped to all Microsoft 365 groups in a tenant.
 
 <!-- {
   "blockType": "request",
