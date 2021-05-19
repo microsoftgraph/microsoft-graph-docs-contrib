@@ -11389,7 +11389,7 @@ items:
               href: api/accessreviewhistorydefinition-post.md
             - name: Generate download URI
               href: api/accessreviewhistorydefinition-generatedownloaduri.md
-        - name: Access reviews (legacy)
+        - name: Access reviews (deprecated)
           href: resources/accessreviews-root.md
           items:
           - name: Access review
