@@ -1,9 +1,9 @@
 ---
 title: "entity resource type"
-description: ""
+description: "Represents an entity."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "keylimesoda"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
@@ -49,3 +49,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,7 +3,7 @@ title: "domainIdentitySource resource type"
 description: "The domainIdentitySource type identifies a non-tenant domain as an identity source for a connected organization."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -55,3 +55,5 @@ The following is a JSON representation of the type.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

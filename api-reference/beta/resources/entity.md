@@ -1,10 +1,10 @@
 ---
 title: "entity resource type"
-description: ""
+description: "Represents an entity."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "applications"
+author: "keylimesoda"
 ---
 
 # entity resource type
@@ -52,3 +52,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

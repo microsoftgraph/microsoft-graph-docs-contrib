@@ -13,7 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a term used in a term [store]. A term can be used to represent an object which can then be used as a metadata to tag conent. Multiple terms can be organized in a hierarchical manner within a [set].
+Represents a term used in a term [store]. A term can be used to represent an object which can then be used as a metadata to tag content. Multiple terms can be organized in a hierarchical manner within a [set].
 
 Inherits from [entity](../resources/entity.md).
 
@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|Date and time of term creation. Read-only|
 |descriptions|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection|Description about term that is dependent on the languageTag|
 |id|String|Unique identifier of term. Read-Only|
-|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection||Label metadata for a term|
+|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|Label metadata for a term|
 |lastModifiedDateTime|DateTimeOffset|Last date and time of term modification. Read-only|
 |properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|Collection of properties on the term|
 
@@ -97,3 +97,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

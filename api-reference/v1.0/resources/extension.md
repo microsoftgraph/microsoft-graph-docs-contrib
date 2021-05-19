@@ -2,8 +2,8 @@
 title: "extension resource type"
 description: "An abstract type to support the OData v4 open type openTypeExtension."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "keylimesoda"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -57,3 +57,4 @@ See the methods of the derived type [openTypeExtension](opentypeextension.md) fo
   "section": "documentation",
   "tocPath": ""
 }-->
+

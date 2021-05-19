@@ -3,7 +3,7 @@ title: "Delete registeredUsers"
 description: "Remove a user as a registered user of the device."
 localization_priority: Normal
 author: "michaelrm97"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -69,6 +69,10 @@ DELETE https://graph.microsoft.com/beta/devices/{id}/registeredUsers/{id}/$ref
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-registeredusers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-registeredusers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -97,3 +101,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

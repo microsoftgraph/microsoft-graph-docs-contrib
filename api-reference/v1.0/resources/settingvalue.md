@@ -2,8 +2,8 @@
 title: "settingValue resource type"
 description: "A setting represented by a name/value pair."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dkershaw10"
+ms.prod: "groups"
 doc_type: resourcePageType
 ---
 
@@ -50,3 +50,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

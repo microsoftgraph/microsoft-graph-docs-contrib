@@ -3,7 +3,7 @@ title: "riskyUser: dismiss"
 description: "Dismiss a risky user"
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,6 @@ If successful, this action returns a `204 No Content` response code.
 -->
 ``` http
 POST https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss
-
 Content-Type: application/json
 Content-length: 39
 
@@ -87,4 +86,5 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 

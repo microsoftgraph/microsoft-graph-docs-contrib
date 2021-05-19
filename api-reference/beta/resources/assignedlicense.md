@@ -3,8 +3,8 @@ title: "assignedLicense resource type"
 description: "Represents a license assigned to a user. The **assignedLicenses** property of the user entity is a collection of **assignedLicense**."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "users"
+author: "jpettere"
 ---
 
 # assignedLicense resource type
@@ -54,3 +54,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

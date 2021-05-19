@@ -7,22 +7,24 @@ ms.prod: "Sharepoint"
 author: mohitpcad
 ---
 
+# Microsoft Graph termstore enumeration values
+
 Namespace: microsoft.graph.termstore
 
-### relationType values 
+### relationType values
 
 Specifies the value types relations can take in a termstore
 
-|Members|
+|Member|
 |:---|
 |pin|
 |reuse|
 
-### termGroupScope values 
+### termGroupScope values
 
 Specifies the values different group types can take within the termstore
 
-|Members|
+|Member|
 |:---|
 |global|
 |system|
@@ -34,3 +36,5 @@ Specifies the values different group types can take within the termstore
   "namespace": "microsoft.graph.termstore"
 }
 -->
+
+

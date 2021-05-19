@@ -2,8 +2,8 @@
 title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "harini84"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -48,3 +48,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

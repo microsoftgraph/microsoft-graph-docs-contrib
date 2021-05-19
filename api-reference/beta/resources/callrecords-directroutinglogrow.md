@@ -1,7 +1,7 @@
 ---
 title: "directRoutingLogRow resource type"
 description: "Represents a row of data in the direct routing call log."
-author: "stephenjust"
+author: "williamlooney"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
@@ -51,7 +51,6 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "ignored",
   "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
-  "baseType": "",
   "keyProperty": "id"
 }
 -->
@@ -81,3 +80,5 @@ The following is a JSON representation of the resource.
   "mediaBypassEnabled": "Boolean"
 }
 ```
+
+
