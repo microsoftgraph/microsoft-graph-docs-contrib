@@ -211,7 +211,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
   "truncated": true,
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
-```http request
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
