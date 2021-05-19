@@ -29,7 +29,7 @@ Represents the audit actor. The actor is AAD user and application that are a
 |servicePrincipalName|String|Service Principal Name (SPN).|
 |ipAddress|String|IP Address.|
 |userId|String|AAD User id.|
-|userRoleScopeTags|[cloudPcRoleScopeTagInfo](../resources/cloudpcrolescopetaginfo.md) collection|List of role scope tags.|
+|userRoleScopeTags|[cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md) collection|List of role scope tags.|
 |remoteTenantId|String|The delegated partner tenant id.|
 |remoteUserId|String|The delegated partner user id.|
 
@@ -70,7 +70,7 @@ Here is a JSON representation of the resource.
   "userId": "String",
   "userRoleScopeTags": [
     {
-      "@odata.type": "microsoft.graph.cloudPcRoleScopeTagInfo",
+      "@odata.type": "microsoft.graph.cloudPcUserRoleScopeTagInfo",
       "displayName": "String",
       "roleScopeTagId": "String"
     }

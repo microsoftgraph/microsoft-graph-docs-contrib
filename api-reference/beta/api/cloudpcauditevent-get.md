@@ -1,19 +1,19 @@
 ---
-title: "Get cloudPcAudit"
-description: "Read the properties and relationships of the cloudPcAudit object."
+title: "Get cloudPcAuditEvent"
+description: "Read the properties and relationships of the cloudPcAuditEvent object."
 author: "ecmadao"
 localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Get cloudPcAudit
+# Get cloudPcAuditEvent
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of the [cloudPcAudit](../resources/cloudpcaudit.md) object.
+Read the properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /deviceManagement/virtualEndpoint/auditEvents/{id}
+GET /deviceManagement/virtualEndpoint/auditEvents/{cloudPcAuditEventId}
 ```
 
 ## Request headers
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloudPcAudit](../resources/cloudpcaudit.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object in the response body.
 
 ## Examples
 
@@ -59,12 +59,12 @@ If successful, this method returns a `200 OK` response code and a [cloudPcAudit]
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcaudit"
+  "name": "get_cloudpcauditevent"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvents/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvents/{cloudPcAuditEventId}
 ```
 
 #### Response
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvent
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcAudit"
+  "@odata.type": "microsoft.graph.cloudPcAuditEvent"
 }
 -->
 
@@ -83,7 +83,7 @@ Content-Type: application/json
 
 {
   "value": {
-      "@odata.type": "#microsoft.graph.cloudPcAudit",
+      "@odata.type": "#microsoft.graph.cloudPcAuditEvent",
       "id": "250473f5-029f-4037-813d-ba4768201d61",
       "displayName": "Display Name value",
       "componentName": "Component Name value",  
@@ -108,7 +108,7 @@ Content-Type: application/json
           "userId": "User Id value",
           "userRoleScopeTags": [
               {
-                  "@odata.type": "microsoft.graph.cloudPcRoleScopeTagInfo",
+                  "@odata.type": "microsoft.graph.cloudPcUserRoleScopeTagInfo",
                   "displayName": "Display Name value",
                   "roleScopeTagId": "Role Scope Tag Id value"
               }

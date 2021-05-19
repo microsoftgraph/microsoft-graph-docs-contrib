@@ -1,5 +1,5 @@
 ---
-title: "cloudPcRoleScopeTagInfo resource type"
+title: "cloudPcUserRoleScopeTagInfo resource type"
 description: "Represents the scope tag info with display name and identity."
 author: "ecmadao"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcRoleScopeTagInfo resource type
+# cloudPcUserRoleScopeTagInfo resource type
 
 Namespace: microsoft.graph
 
@@ -31,12 +31,12 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.cloudPcRoleScopeTagInfo"
+  "@odata.type": "microsoft.graph.cloudPcUserRoleScopeTagInfo"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcRoleScopeTagInfo",
+  "@odata.type": "#microsoft.graph.cloudPcUserRoleScopeTagInfo",
   "displayName": "String",
   "roleScopeTagId": "String"
 }

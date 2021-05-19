@@ -1,6 +1,6 @@
 ---
-title: "List cloudPcAudit"
-description: "Get a list of the cloudPcAudit objects and their properties."
+title: "List auditEvents"
+description: "Get a list of the cloudPcAuditEvent objects and their properties."
 author: "ecmadao"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List properties and relationships of the [cloudPcAudit](../resources/cloudpcaudit.md) objects.
+List properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [cloudPcAudit](../resources/cloudpcaudit.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects in the response body.
 
 ## Examples
 
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_cloudpcaudits"
+  "name": "list_cloudpcauditevent"
 }
 -->
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvent
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcAudit)"
+  "@odata.type": "Collection(microsoft.graph.cloudPcAuditEvent)"
 }
 -->
 
@@ -104,7 +104,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.cloudPcAudit",
+      "@odata.type": "#microsoft.graph.cloudPcAuditEvent",
       "id": "250473f5-029f-4037-813d-ba4768201d61",
       "displayName": "Display Name value",
       "componentName": "Component Name value",  
@@ -129,7 +129,7 @@ Content-Type: application/json
           "userId": "User Id value",
           "userRoleScopeTags": [
               {
-                  "@odata.type": "microsoft.graph.cloudPcRoleScopeTagInfo",
+                  "@odata.type": "microsoft.graph.cloudPcUserRoleScopeTagInfo",
                   "displayName": "Display Name value",
                   "roleScopeTagId": "Role Scope Tag Id value"
               }

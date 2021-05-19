@@ -1,5 +1,5 @@
 ---
-title: "getAuditActivityTypes function"
+title: "cloudPcAuditEvent: getAuditActivityTypes"
 description: "Get audit activity types by tenant id."
 author: "ecmadao"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Get cloudPcAudit
+# cloudPcAuditEvent: getAuditActivityTypes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of the [cloudPcAudit](../resources/cloudpcaudit.md) object.
+Get audit activity types by tenant id.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a String collect
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcaudit"
+  "name": "cloudpcauditevent_getauditactivitytypes"
 }
 -->
 
@@ -72,7 +72,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvent
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "Collection(Edm.String)"
 }
 -->
 

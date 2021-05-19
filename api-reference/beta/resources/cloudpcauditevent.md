@@ -1,5 +1,5 @@
 ---
-title: "cloudPcAudit resource type"
+title: "cloudPcAuditEvent resource type"
 description: "Represents the audit event entity."
 author: "ecmadao"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcAudit resource type
+# cloudPcAuditEvent resource type
 
 Namespace: microsoft.graph
 
@@ -21,8 +21,8 @@ Represents the audit event entity.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcAudits](../api/virtualendpoint-list-cloudpcaudits.md)|[cloudPcAudit](../resources/cloudpcaudit.md) collection|List properties and relationships of the [cloudPcAudit](../resources/cloudpcaudit.md) objects.|
-|[Get cloudPcAudit](../api/cloudpcaudit-get.md)|[cloudPcAudit](../resources/cloudpcaudit.md)|Read the properties and relationships of the [cloudPcAudit](../resources/cloudpcaudit.md) object.|
+|[List cloudPcAuditEvents](../api/virtualendpoint-list-auditevents.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|List properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects.|
+|[Get cloudPcAuditEvent](../api/cloudpcauditevent-get.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Read the properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.|
 
 ## Properties
 
@@ -77,7 +77,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.cloudPcAudit",
+  "@odata.type": "microsoft.graph.cloudPcAuditEvent",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
@@ -85,7 +85,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcAudit",
+  "@odata.type": "#microsoft.graph.cloudPcAuditEvent",
   "id": "String (identifier)",
   "displayName": "String",
   "componentName": "String",
@@ -103,7 +103,7 @@ The following is a JSON representation of the resource.
     "userId": "String",
     "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.cloudPcRoleScopeTagInfo",
+        "@odata.type": "microsoft.graph.cloudPcUserRoleScopeTagInfo",
         "displayName": "String",
         "roleScopeTagId": "String"
       }
