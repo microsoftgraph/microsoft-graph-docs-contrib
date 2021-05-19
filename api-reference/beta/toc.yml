@@ -13398,6 +13398,8 @@ items:
           href: api/channel-post-messages.md
         - name: Update member role
           href: api/channel-update-members.md
+        - name: Update message
+          href: api/chatmessage-update.md
       - name: Chat
         href: resources/chat.md
         items:
