@@ -37,7 +37,7 @@ Represents the audit event entity.
 |activityDateTime|DateTimeOffset|The date time in UTC when the activity was performed. Read-only.|
 |activityType|String|The type of activity that was being performed. Read-only.|
 |activityOperationType|[cloudPcAuditActivityOperationType](#cloudpcauditactivityoperationtype-values)|The HTTP operation type of the activity. Possible values include `create`, `delete`, `patch` and `other`. Read-only.|
-|activityResult|[cloudPcAuditActivityResult](#cloudccauditactivityresult-values)|The result of the activity. Read-only.|
+|activityResult|[cloudPcAuditActivityResult](#cloudpcauditactivityresult-values)|The result of the activity. Read-only.|
 |correlationId|String|The client request Id that is used to correlate activity within the system. Read-only.|
 |resources|[cloudPcAuditResource](../resources/cloudpcauditresource.md) collection|List of cloudPcAuditResource. Read-only.|
 |category|[cloudPcAuditCategory](#cloudpcauditcategory-values)|Audit category. Read-only.|

@@ -1,5 +1,5 @@
 ---
-title: "List auditEvents"
+title: "List cloudPcAuditEvents"
 description: "Get a list of the cloudPcAuditEvent objects and their properties."
 author: "ecmadao"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List cloudPcAudit
+# List cloudPcAuditEvents
 
 Namespace: microsoft.graph
 
