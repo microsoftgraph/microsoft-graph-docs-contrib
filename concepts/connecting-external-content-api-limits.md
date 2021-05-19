@@ -10,7 +10,6 @@ doc_type: conceptualPageType
 
 This topic describes implementation and operational limits for Microsoft Graph connectors. Keep these limits in mind when designing connectors.
 
-
 ## Connection limits
 
 | **Limit** | **Description** |

@@ -10,7 +10,7 @@ doc_type: conceptualPageType
 
 Microsoft Graph connectors offer a simple way to bring external data into Microsoft Graph and enhance Microsoft 365 intelligent experiences. You might want to build a custom connector to integrate with services that aren't available as connectors built by Microsoft. To build custom connectors, you use the Microsoft Graph connector REST APIs.
 
-![Image showing external data coming trough different types of connectors](./images/connectors-images/api-overview.png)
+![Image showing the external data coming trough different types of connectors to Microsoft Graph](./images/connectors-images/api-overview.png)
 
 Microsoft Graph connector APIs help:
 
@@ -225,7 +225,7 @@ An [externalItem](https://docs.microsoft.com/graph/api/resources/externalitem?vi
 
 The access control list (ACL) is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. It is an array of access control entries, each representing an Azure Active Directory user or group. There is a third access control entry type Everyone that represents all the users in the tenant.
 
-![API ACL](./images/connectors-images/api-acl.png)
+![Example of the structure of an item highlighting the ACL section](./images/connectors-images/api-acl.png)
 
 The accessType value deny takes precedence over grant. For example, in the item shown above, while Everyone is granted access and a specific user is denied access, the effective permission for this user is deny.
 
@@ -237,7 +237,7 @@ External groups can consist of another external group, Azure Active Directory us
 
 The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](https://docs.microsoft.com/graph/connecting-external-content-manage-schema) for the connection before adding items into it and convert datatypes into [supported datatypes](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta&amp;preserve-view=true).
 
-![API Properties](./images/connectors-images/api-properties.png)
+![Example of the structure of an item highlighting the Properties section](./images/connectors-images/api-properties.png)
 
 ### Content
 
@@ -245,7 +245,7 @@ The content component is used to add the bulk of the item that needs to be full 
 
 Content is one of the key fields influencing [relevance](https://docs.microsoft.com/graph/connecting-external-content-manage-schema#relevance) across Microsoft experiences. <!--We support content of the type text and HTML.--> If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
 
-![API Content](./images/connectors-images/api-content.png)
+![Example of the structure of an item highlighting the Content section](./images/connectors-images/api-content.png)
 
 Content cannot be directly added into a search result template, but you can use a generated result snippet which is a dynamically generated preview of the relevant sections within content.
 
