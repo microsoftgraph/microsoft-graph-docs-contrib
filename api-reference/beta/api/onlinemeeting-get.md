@@ -356,10 +356,7 @@ The following example shows a request to download an attendee report.
 
 #### Request
 The following request uses a user token.
-<!-- { 
-  "blockType": "request",
-  "name": "get-attendeeReport-user-token"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
 ```
@@ -407,10 +404,7 @@ The following example shows a request to download a recording.
 
 #### Request
 The following request uses a user token.
-<!-- { 
-  "blockType": "request",
-  "name": "get-recording-user-token"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
 ```
