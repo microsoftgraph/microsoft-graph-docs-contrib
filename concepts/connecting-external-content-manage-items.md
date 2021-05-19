@@ -7,11 +7,11 @@ doc_type: conceptualPageType
 ---
 <!---<author of this doc: rsamai>--->
 
-# Create, update, and delete items added by your application in the Microsoft Graph connection
+# Create, update, and delete items added by your application via Microsoft Graph connectors
 
-Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.
+Microsoft Graph connectors offer a simple way to bring external data into Microsoft Graph. Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.
 
-Once you have created a connection, you can add your content. Each item from your data source must be represented as an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields. An [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) has three key components: access control list, properties, and content.
+After you have [created a connection](../api-reference/beta/api/external-post-connections.md), you can add your content. Each item from your data source must be represented as an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in Microsoft Graph with a unique item ID. This ID is used to create, update, or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields. An **externalItem** has three key components: access control list, properties, and content.
 
 ## Access control list
 
@@ -19,15 +19,15 @@ The access control list is used to specify whether the given roles are granted o
 
 ![An example access control list](./images/connectors-images/connecting-external-content-manage-items-acl.png)
 
-The accessType value `deny` takes precedence over `grant`. For example, in the item shown above, while `Everyone` is granted access and a specific user is denied access, the effective permission for this user is `deny`.
+The **accessType** value `deny` takes precedence over `grant`. For example, in the item shown earlier, while `Everyone` is granted access and a specific user is denied access, the effective permission for this user is `deny`.
 
-If your data source has non Azure Active Directory groups, such as teams within your helpdesk system, used to set permissions for the item, you can create external groups in Microsoft Graph using the group sync APIs to replicate the `allow` or `deny` permissions. Avoid expanding the membership of your external groups directly into the access control lists of individual items since each group membership update could lead to a storm of item updates.
+If your data source has non-Azure Active Directory groups, such as teams within your helpdesk system, used to set permissions for the item, you can create external groups in Microsoft Graph using the group sync APIs to replicate the `allow` or `deny` permissions. Avoid expanding the membership of your external groups directly into the access control lists of individual items, because each group membership can lead to a high volume of item updates.
 
 External groups can consist of another external group, Azure Active Directory users, and Azure Active Directory groups. If you have non-Azure Active Directory users, you must translate them to Azure Active Directory users in your access control list.
 
 ## Properties
 
-The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](./connecting-external-content-manage-schema.md) for the connection before adding items into it and convert datatypes into [supported datatypes](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
+The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](./connecting-external-content-manage-schema.md) for the connection before adding items into it and convert **datatypes** into [supported datatypes](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
 
 ![An example property component](./images/connectors-images/connecting-external-content-manage-items-1.png)
 
@@ -35,11 +35,11 @@ The properties component is used to add item metadata that is useful in Microsof
 
 The content component is used to add the bulk of the item that needs to be full text indexed. Examples include ticket description, parsed text from a file body, or a wiki page body.
 
-Content is one of the key fields influencing [relevance](./connecting-external-content-manage-schema.md#relevance) across Microsoft experiences. We support content of the type `text` and `HTML`. If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
+Content is one of the key fields influencing [relevance](./connecting-external-content-manage-schema.md#relevance) across Microsoft experiences. The content types `text` and `HTML` are supported. If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
 
 ![An example content component](./images/connectors-images/connecting-external-content-manage-items-2.png)
 
-Content cannot be directly added into a search result template, but you can use a generated result snippet which is a dynamically generated preview of the relevant sections within content.
+Content cannot be directly added into a search result template, but you can use a generated result snippet, which is a dynamically generated preview of the relevant sections within content.
 
 ![A screenshot of a search result template](./images/connectors-images/connecting-external-content-manage-items-3.svg)
 
@@ -86,7 +86,7 @@ You can remove items from the index by [deleting the externalItem](/graph/api/ex
 DELETE /external/connections/contosohelpdesk/items/SR00145
 ```
 
-## Next steps
+## See also
 
 - [Query using the Microsoft Search API](search-concept-overview.md#why-use-the-microsoft-search-api)
 - [Review the Indexing API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
