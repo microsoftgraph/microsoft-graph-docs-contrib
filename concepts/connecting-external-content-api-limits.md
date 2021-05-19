@@ -14,21 +14,21 @@ This topic describes implementation and operational limits for Microsoft Graph c
 
 | **Limit** | **Description** |
 | --- | --- |
-| **10 connections** | The maximum number of [connections](../api-reference/beta/api/externalconnection-put-items.md) per Microsoft 365 tenant. |
-| **700,000 items** | The maximum number of [items](../api-reference/beta/resources/externalitem.md) per connection. |
+| **10 connections** | The maximum number of [connections](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) per Microsoft 365 tenant. |
+| **700,000 items** | The maximum number of [items](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) per connection. |
 | **70 GB** | The maximum byte size of a connection. |
 
 ## Schema limits
 
 | **Limit** | **Description** |
 | --- | --- |
-| **128 properties** | The maximum number of properties that can be defined in a [schema](../api-reference/beta/resources/schema.md), characterizing the data ingested through a connection. |
+| **128 properties** | The maximum number of properties that can be defined in a [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true), characterizing the data ingested through a connection. |
 
 ## Group limits
 
 | **Limit** | **Description** |
 | --- | --- |
-| **128 characters** | The maximum length of the ID string of an [external group](../api-reference/beta/resources/externalgroup.md). Must be unique within a connection. Only alpha-numeric characters are supported. |
+| **128 characters** | The maximum length of the ID string of an [external group](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true). Must be unique within a connection. Only alpha-numeric characters are supported. |
 | **1000 requests/sec** | The maximum number of requests allowed per second in the group administration [throttling](#throttling) threshold. |
 
 ## Item ingestion
@@ -36,7 +36,7 @@ This topic describes implementation and operational limits for Microsoft Graph c
 | **Limit** | **Description** |
 | --- | --- |
 | **4 items/sec (250 MB/hour)** | The throughput limit to ingest items through a connection. |
-| **4 MB** | The maximum size of an item; this limit applies to the request body when [ingesting and indexing an item](../api-reference/beta/api/externalconnection-put-items). |
+| **4 MB** | The maximum size of an item; this limit applies to the request body when [ingesting and indexing an item](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true). |
 | **N/A** | The maximum size of a property. |
 
 ## Throttling
