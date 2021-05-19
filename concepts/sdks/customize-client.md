@@ -117,4 +117,70 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
                 .buildClient();
 ```
 
+# Configuring the HTTP proxy for the client
+
+Some environments require client applications to use a HTTP proxy before they can access the public internet. This section demonstrates how to configure the proxy for the Microsoft Graph SDKs.
+
+## [C#](#tab/csharp)
+
+```CSharp
+
+//TODO
+```
+
+## [TypeScript](#tab/typeScript)
+
+```TS
+//TODO
+```
+
+## [Java](#tab/java)
+
+```Java
+final int proxyPort = 8080;
+final InetSocketAddress proxyInetAddress = new InetSocketAddress("proxy.ip.or.hostname", proxyPort);
+
+// The section below configures the proxy for the Azure Identity client and is only needed if you rely on Azure Identity for authentication
+final ProxyOptions pOptions = new ProxyOptions(ProxyOptions.Type.HTTP, proxyInetAddress);
+final HttpClientOptions clientOptions = new HttpClientOptions();
+clientOptions.setProxyOptions(pOptions);    
+final HttpClient azHttpClient = HttpClient.createDefault(clientOptions);
+final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder() // Or any other credential the application is using
+                                                .clientId(CLIENT_ID)
+                                                .clientSecret(CLIENT_SECRET)
+                                                .tenantId(TENANT_GUID)
+                                                .httpClient(azHttpClient) // don't forget that addition to use the configured client
+                                                .build();
+final TokenCredentialAuthProvider authenticationProvider = new TokenCredentialAuthProvider(
+                                  Arrays.asList(SCOPES), clientSecretCredential);
+
+// The section below configures the proxy for the Microsoft Graph SDK client
+final Proxy proxy = new Proxy(Proxy.Type.HTTP, proxyInetAddress);
+
+// This block is only needed if the proxy requires authentication
+final Authenticator proxyAuthenticator = new Authenticator() {
+  @Override
+  public Request authenticate(Route route, Response response) throws IOException {
+    String credential = Credentials.basic("username", "password");
+    return response.request().newBuilder()
+        .header("Proxy-Authorization", credential)
+        .build();
+  }
+};
+
+final OkHttpClient graphHttpClient = HttpClients.createDefault(authenticationProvider)
+                                .newBuilder()
+                                .proxy(proxy)
+                                .proxyAuthenticator(proxyAuthenticator)
+                                .build();
+
+final GraphServiceClient graphServiceClient = GraphServiceClient
+                .builder()
+                .httpClient(graphHttpClient)
+                .buildClient();
+
+```
+
+> Note: Please refer to [ProxyOptions](https://docs.microsoft.com/en-us/java/api/com.azure.core.http.proxyoptions.proxyoptions?view=azure-java-stable) for more information on Azure Identity proxy configuration.
+
 ---
