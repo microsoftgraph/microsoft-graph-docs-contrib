@@ -124,6 +124,14 @@ For example, you can use a template to customize the component attached to the `
 
 ```
 
+## Events
+
+The following events are fired from the component.
+
+| Event | Description |
+| --- | --- |
+| `expanded` | The user has opened the expanded details section of the card. |
+
 ## CSS custom properties
 
 The `mgt-person-card` component defines the following CSS custom properties. 
