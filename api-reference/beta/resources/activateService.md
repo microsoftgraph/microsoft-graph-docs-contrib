@@ -19,8 +19,8 @@ The **activateService** action is used to activate a service for an organization
 
 | Property         | Type         | Description                           |
 | ----------------- | ------------ | ------------------------------------- |
-| service| Edm.String | The name of the service to activate. |
-| servicePlanId | Edm.Guid | The plan identifier of the service plan to activate. |
+| service| String | The name of the service to activate. |
+| servicePlanId | Guid | The plan identifier of the service plan to activate. |
 | skuId | Guid | The SKU identifier of the service plan. |
 
 ## JSON representation
