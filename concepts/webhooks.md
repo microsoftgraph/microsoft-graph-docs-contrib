@@ -301,7 +301,7 @@ The following table lists the latency to expect between an event happening in th
 |[chatMessage][] | Less than 10 seconds | 1 minute |
 |[contact][] | Unknown | Unknown |
 |[conversation][] | Unknown | Unknown |
-|[conversationMemeber][] | Less than 15 minutes | 60 minutes |
+|[conversationMember][] | Less than 15 minutes | 60 minutes |
 |[driveItem][] | Less than 1 minute | 5 minutes |
 |[event][] | Unknown | Unknown |
 |[group][] | Less than 2 minutes | 15 minutes |
@@ -342,5 +342,5 @@ The following table lists the latency to expect between an event happening in th
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
-[conversationMemeber]: /graph/api/resources/conversationmember
+[conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
