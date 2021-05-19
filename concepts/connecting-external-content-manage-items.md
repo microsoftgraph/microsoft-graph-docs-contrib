@@ -15,7 +15,7 @@ Once you have created a connection, you can add your content. Each item from you
 
 ## Access control list
 
-The access control list is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. It is an array of access control entries, each representing an Azure Active Directory user or group. There is a third access control entry type `Everyone` that represents all the users in the tenant.
+The access control list is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. It is an array of access control entries, each representing an Azure Active Directory user or group. A third access control entry type `Everyone` that represents all the users in the tenant.
 
 ![An example access control list](./images/connectors-images/connecting-external-content-manage-items-acl.png)
 
