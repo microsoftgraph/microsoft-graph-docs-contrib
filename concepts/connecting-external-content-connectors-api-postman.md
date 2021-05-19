@@ -13,7 +13,6 @@ This topic describes how you can use the Microsoft Graph connector APIs with Pos
 ## Prerequisites
 
 * Either a Microsoft account or work or school account.
-
 * Access to a Microsoft 365 developer tenant. If you don't have one, you can sign up for the [Microsoft 365 Developer Program] to get a free developer subscription.
 
 ## Step 1 - Import the Microsoft Graph Postman collection
@@ -43,44 +42,45 @@ You should now see the Microsoft Graph connectors API collection inside Postman.
 
 ![Screenshot showing the Microsoft Graph Connector API in Postman](./images/connectors-images/06-postman-collection-tab.png)
 
-## Step 2 - (Optional - Postman Web browser only) Download the Postman Agent
+## Step 2 - Download the Postman Agent (Optional - Postman Web browser only)
 
 To use this Postman collection in your web browser, download the [Postman Desktop Agent](https://www.postman.com/downloads). You can't use Postman for the web without this due to CORS restrictions in the web browser.
 "The maximum number of [connection](/graph/api-reference/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resources per Microsoft 365 tenant."
 
-Note: You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you will see this collection in your workspace.
+> [!NOTE]
+> You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you will see this collection in your workspace.
 
 ## Step 3 - Create an Azure AD application
 
-To use this collection in your own developer tenant, create an Azure AD application and give it the appropriate permissions for the requests you want to call. If you don't have a developer tenant, you can sign up for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
+To use this collection in your own developer tenant, create an Azure AD application and give it the appropriate permissions for the requests you want to call.
 
-1. Go to [portal.azure.com](https://portal.azure.com/) and sign in with your developer tenant administrator account.
-2. Under Azure Services, select Azure Active Directory.
-3. On the left menu, select App registrations.
-4. On the horizontal menu, select New registration.
-5. Set the Application name to **Parts Inventory**.
+1. Go to [portal.azure.com](https://portal.azure.com/) and **Sign in** with your developer tenant administrator account.
+2. Under Azure Services, select **Azure Active Directory**.
+3. On the left menu, select **App registrations**.
+4. On the horizontal menu, select **New registration**.
+5. Set the Application name to "Parts Inventory".
 6. Set the Redirect URI to https://oauth.pstmn.io/v1/browser-callback.
-7. Select Register.
-8. On the left menu, select API Permissions.
-9. In the horizontal menu, select Add a permission, Microsoft Graph, and then Delegated Permissions.
+7. Select **Register**.
+8. On the left menu, select **API Permissions**.
+9. In the horizontal menu, select **Add a permission** > **Microsoft Graph** > **Delegated Permissions**.
 10. Start typing `ExternalItem.ReadWrite.All` and check `ExternalItem.ReadWrite.All`.
-11. Select Application permissions and type User., and check Application Permissions.
-12. Expand the User options and check `ExternalItem.ReadWrite.All`.
-13. Select Add permissions.
-14. In the horizontal menu, select "Grant admin consent for", and select Yes.
-15. In the left menu, select Overview. From here, you can get the Application (client) ID and Directory (tenant) ID. You will need these in step 4.
-16. In the left menu, select Certificates &amp; secrets.
-17. Select New client secret, enter a description, and select Add. Copy the new client secret value, you will need this in step 4.
+11. Select **Application permissions**, type "User"., and check **Application Permissions**.
+12. Expand the **User options** and check **`ExternalItem.ReadWrite.All`**.
+13. Select **Add permissions**.
+14. In the horizontal menu, select **Grant admin consent for**, and select **Yes**.
+15. In the left menu, select **Overview**. From here, you can get the Application (client) ID and Directory (tenant) ID. You will need these in step 4.
+16. In the left menu, select **Certificates and secrets**.
+17. Select **New client secret**, enter a description, and select **Add**. Copy the new client secret value, you will need this in step 4.
 
-The Azure AD application now has permissions to make requests on behalf of a user to call ``ExternalItem.ReadWrite.All``, and as an application for ``ExternalItem.ReadWrite.All``.
+The Azure AD application now has permissions to make requests on behalf of a user to call `ExternalItem.ReadWrite.All`, and as an application for `ExternalItem.ReadWrite.All`.
 
 ## Step 4 – Configure authentication
 
 Set up the variables in Postman. This information is used to generate the access token.
 
-1. Select the **Microsoft Graph Connectors API** tab and go to the **Variables** section.
+1. Select the **Microsoft Graph connectors API** tab and go to the **Variables** section.
 
-![Screenshot of the Microsoft Graph Connectors API tab and the Variables section](./images/connectors-images/07-postman.png)
+![Screenshot of the Microsoft Graph connectors API tab and the Variables section](./images/connectors-images/07-postman.png)
 
 2. In the Variables section, provide the required information using the information from step 3.
 
@@ -100,8 +100,9 @@ You need to get an access token because this is the first time you are running a
 
 ![Screenshot of the Get app access token section](./images/connectors-images/09-postman.png)
 
-Access token request with a shared secret:
-```http
+
+The following example shows how to get an access token with a shared secret:
+```html
 POST /{{tenant}}/oauth2/v2.0/token HTTP/1.1 //Line breaks for clarity
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
@@ -110,8 +111,9 @@ client_id={{client_id}}
 &scope=https%3A%2F%2Fgraph.microsoft.com%2F.default 
 &client_secret={{client_secret}} 
 &grant_type=client_credentials 
-
-Successful response example 
+```
+The following example shows a successful response:
+```html
 { 
     "token_type": "Bearer", 
     "expires_in": 3599, 
@@ -120,7 +122,7 @@ Successful response example
 } 
 ```
 
-Note that we are using the [client credential flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) here. Be sure to get app access token and not get user access token.
+Note that you are using the [client credential flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) here. Be sure to get an app access token and not a user access token.
 
 ## Step 6 – Create a new connection
 

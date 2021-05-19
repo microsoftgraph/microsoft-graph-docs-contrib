@@ -150,20 +150,6 @@ items:
             href: cloud-communications-phone-number.md
       - name: Compliance (preview)
         href: compliance-concept-overview.md
-      - name: Cross-device experiences
-        displayName: Project Rome
-        items:
-          - name: Overview
-            href: cross-device-concept-overview.md
-          - name: Activity feed
-            href: activity-feed-concept-overview.md
-          - name: Device relay (preview)
-            href: device-relay-concept-overview.md
-          - name: Build cross-device apps
-            href: cross-device-app-configuration.md
-      - name: Customer booking (preview)
-        href: booking-concept-overview.md
-        displayName: Bookings, Microsoft Bookings
       - name: Connecting external content (preview)
         displayName: connectors
         items:
@@ -183,6 +169,20 @@ items:
             href: connecting-external-content-api-limits.md
           - name: Common API errors
             href: connecting-external-content-common-connector-api-errors.md
+      - name: Cross-device experiences
+        displayName: Project Rome
+        items:
+          - name: Overview
+            href: cross-device-concept-overview.md
+          - name: Activity feed
+            href: activity-feed-concept-overview.md
+          - name: Device relay (preview)
+            href: device-relay-concept-overview.md
+          - name: Build cross-device apps
+            href: cross-device-app-configuration.md
+      - name: Customer booking (preview)
+        href: booking-concept-overview.md
+        displayName: Bookings, Microsoft Bookings
       - name: Data access
         displayName: Microsoft Graph data connect
         items:

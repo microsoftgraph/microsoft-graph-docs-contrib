@@ -151,15 +151,15 @@ A label is a well-known tag published by Microsoft that you can add against a pr
 
 | **Label** | **Description** |
 | --- | --- |
-| title | The title of the item that you want shown in search and other experiences |
-| url | The target URL of the item in the data source |
-| createdBy | Name of the person who created the item in the data source |
-| lastModifiedBy | Name of the person who most recently edited the item in the data source |
-| authors | Name of all the people who participated/collaborated on the item in the data source |
-| createdDateTime | Date and time that the item was created in the data source |
-| lastModifiedDateTime | Date and time the item was last modified in the data source |
-| fileName | In case of a file, the name of the file in the data source |
-| fileExtension | In case of a file, the extension of the file in the data source |
+| title | The title of the item that you want shown in search and other experiences. |
+| url | The target URL of the item in the data source. |
+| createdBy | Name of the person who created the item in the data source. |
+| lastModifiedBy | Name of the person who most recently edited the item in the data source. |
+| authors | Name of all the people who participated/collaborated on the item in the data source. |
+| createdDateTime | Date and time that the item was created in the data source. |
+| lastModifiedDateTime | Date and time the item was last modified in the data source. |
+| fileName | In case of a file, the name of the file in the data source. |
+| fileExtension | In case of a file, the extension of the file in the data source. |
 | | |
 
 For example, the connection property _lastEditedBy_ has the same meaning as the Microsoft label _lastModifiedBy_.
