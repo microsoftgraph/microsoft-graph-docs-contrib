@@ -1,6 +1,6 @@
 ---
 title: "activateService resource type"
-description: "Activates a service for an organization."
+description: "Activates a service for an  organization."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "directory-management"
