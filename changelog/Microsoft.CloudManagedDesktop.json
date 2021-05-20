@@ -3,6 +3,48 @@
         {
             "ChangeList": [
                 {
+                    "Id": "a401e87c-98c3-497d-8412-1689f3697027",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckAzurePolicyViolation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckAzurePolicyViolation` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "a401e87c-98c3-497d-8412-1689f3697027",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "internalServerErrorDeploymentCanceled",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `internalServerErrorDeploymentCanceled` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "a401e87c-98c3-497d-8412-1689f3697027",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "internalServerErrorAllocateResourceFailed",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `internalServerErrorAllocateResourceFailed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "a401e87c-98c3-497d-8412-1689f3697027",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "internalServerErrorVMDeploymentTimeout",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `internalServerErrorVMDeploymentTimeout` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "a401e87c-98c3-497d-8412-1689f3697027",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-20T14:43:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.Read.All",
