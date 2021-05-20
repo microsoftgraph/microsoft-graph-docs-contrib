@@ -5,6 +5,7 @@ localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
+<!-- markdownlint-disable MD002 MD041 -->
 
 # Register the application in the portal
 

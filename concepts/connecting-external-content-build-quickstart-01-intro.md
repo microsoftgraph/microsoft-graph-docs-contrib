@@ -7,7 +7,7 @@ doc_type: conceptualPageType
 ---
 <!-- markdownlint-disable MD002 MD041 -->
 
-# Quickstart – Create your first custom Microsoft Graph connector
+# Quickstart: Create your first custom Microsoft Graph connector
 
 <!--- # Introduction --->
 
