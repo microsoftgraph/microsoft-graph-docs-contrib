@@ -132,7 +132,7 @@ Content-Type: application/json
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
-    "createdDateTime": "2021-02-01T10:29:57Z"
+    "createdDateTime": "2021-02-01T10:29:57Z",
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcUserSettingAssignment",
