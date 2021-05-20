@@ -67,7 +67,7 @@ public render(): void {
 ```
 
 >[!NOTE]
-> If you are building a web part using React, checkout the [@microsoft/mgt-spfx docs](./mgt-spfx.md#React) for how to leverage `@microsoft/mgt-react`.
+> If you are building a web part using React, checkout the [@microsoft/mgt-spfx docs](./mgt-spfx.md#react) for how to leverage `@microsoft/mgt-react`.
 
 ## Configure permissions
 
