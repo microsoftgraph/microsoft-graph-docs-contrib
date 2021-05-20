@@ -167,8 +167,8 @@ items:
         items:
           - name: Data Connect overview
             href: data-connect-concept-overview.md
-          - name: Build your first Data Connect application
-            href: data-connect-quickstart.yml
+          #- name: Build your first Data Connect application
+           # href: data-connect-quickstart.yml
           - name: Datasets, regions, and sinks
             href: data-connect-datasets.md
           - name: Policies and billing
