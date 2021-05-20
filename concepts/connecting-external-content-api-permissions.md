@@ -13,8 +13,8 @@ This topic provides the list of permissions that are required to authorize acces
 
 ## Permission's names
 
-API permissions are named using a three-part string: Resource.Action.Constraint. 
-For example, ExternalItem.ReadWrite.All, grants permission to all resources in the tenant, such as, to reading and writinge an external item.
+API permissions are named using a three-part string: Resource.Action.Constraint.
+For example, ExternalItem.ReadWrite.All, grants permission to all resources in the tenant, such as, to reading and writing an external item.
 
 ### Resources
 
