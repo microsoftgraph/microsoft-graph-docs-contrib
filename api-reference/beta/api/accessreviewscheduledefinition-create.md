@@ -95,9 +95,9 @@ Content-type: application/json
           "notificationRecipientScope": {
               "@odata.type":"#microsoft.graph.accessReviewNotificationRecipientQueryScope",                
               "query": "/users/46d30af1-e626-4928-83f5-e9bfa400289e",
-              "queryType": "MicrosoftGraph”
+              "queryType": "MicrosoftGraph"
           },
-          "notificationTemplateType": "CompletedAdditionalRecipients",
+          "notificationTemplateType": "CompletedAdditionalRecipients"
       }
   ], 
   "settings": {
@@ -182,9 +182,9 @@ Content-type: application/json
             "notificationRecipientScope": {
                 "@odata.type":"#microsoft.graph.accessReviewNotificationRecipientQueryScope",                
                 "query": "/users/46d30af1-e626-4928-83f5-e9bfa400289e",
-                "queryType": "MicrosoftGraph”
+                "queryType": "MicrosoftGraph"
             },
-            "notificationTemplateType": "CompletedAdditionalRecipients",
+            "notificationTemplateType": "CompletedAdditionalRecipients"
         }
     ],   
     "settings": {
