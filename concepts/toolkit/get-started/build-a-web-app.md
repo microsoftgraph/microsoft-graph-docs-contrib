@@ -44,16 +44,16 @@ If you would like to use your own backend authentication, use the [Proxy Provide
 
 You can choose to initialize the provider in either your HTML or your JavaScript code. 
 
-# [html](#tab/HTML)
+# [HTML](#tab/HTML)
 Add the `mgt-msal2-provider` component to your HTML page and set the `client-id` to your application client-id.
 
 ```html
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID"></mgt-msal2-provider>
 ```
-# [js](#tab/JavaScript)
+# [JavaScript](#tab/JavaScript)
 To initialize the MSAL provider in your JavaScript, add the following code to your application:
 
-```js
+```javascript
 import {Providers, Msal2Provider} from '@microsoft/mgt'
 
 Providers.globalProvider = new Msal2Provider({
@@ -72,7 +72,7 @@ In order to get a client ID, you need to [register your application](./add-aad-a
 ## Add components
 After you initialize the MSAL 2.0 provider, you can start using any of the Toolkit components.
 
-# [html](#tab/HTML)
+# [HTML](#tab/HTML)
 The following is a full working example using mgt-loader, the MSAL Provider initialized in HTML, and the Login component:
 
 ```html
@@ -90,10 +90,10 @@ This is an example using the ES6 modules, the MSAL 2.0 Provider initialized in H
 
 <mgt-login></mgt-login>
 ```
-# [js](#tab/JavaScript)
+# [JavaScript](#tab/JavaScript)
 This is an example using the ES6 modules, the MSAL 2.0 Provider initialized in JavaScript, and the Login component:
 
-```js
+```javascript
 import {Providers, Msal2Provider} from '@microsoft/mgt'
 
 Providers.globalProvider = new Msal2Provider({
@@ -121,13 +121,13 @@ If you're just getting started and want to play around, you can use [Live Server
 
 ## Track user's sign in state
 
-You might want to display some components only when a user is successfully logged in. In such a case, you need to detect when the user login is successful so that you can have the implementation of a logged in user set.
+You can detect when a user has successfully logged in and display specific components accordingly. For example, display the agenda component if the user has logged in. Otherwise, display the login interface.
 
-Using the ES6 modules, the `Providers`, `ProviderState`, the MSAL provider initialized in HTML, the Login, and the Agenda component, we can display the agenda component only if the user is logged in. Otherwise, we display the Login component:
+You determine if a user is logged in by evaluating the globalProvider and providerState.
 
-# [html](#tab/HTML)
+# [HTML](#tab/HTML)
 
-Using the mgt-loader library, you have access to the `mgt` object which allows you to get the `Providers` and the `ProviderState` that you can use to determine if a user is logged in.
+You access the provider and providerState from `mgt` property by using the `mgt-loader` library.
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -154,9 +154,10 @@ Using the mgt-loader library, you have access to the `mgt` object which allows y
 </script>
 ```
 
-# [js](#tab/JavaScript)
+# [JavaScript](#tab/JavaScript)
+You import the provider and providerState from `@microsoft/mgt`.
 
-```js
+```javascript
 import {Providers, ProviderState} from '@microsoft/mgt'
 
 Providers.globalProvider = new MsalProvider({
@@ -182,8 +183,6 @@ function loadAgenda(){
 
 loadAgenda();
 ```
-
----
 
 ---
 
