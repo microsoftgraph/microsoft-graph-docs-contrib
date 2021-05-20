@@ -68,7 +68,7 @@ You can populate selected people data by doing one of the following:
 - Using the `selectGroupsById()` method, which accepts an array of Microsoft graph [group ids](/graph/api/resources/group) to find the group(s) with associated users.
 
     ```javascript
-    // id = Microsoft graph User "id"
+    // groupid = Microsoft graph group "id"
     document.querySelector('mgt-people-picker').selectGroupsById(["groupid","groupid"])
     ```
 
