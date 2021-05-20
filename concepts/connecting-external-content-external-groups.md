@@ -163,7 +163,7 @@ You will need to ensure that external group memberships are up to date in Micros
 
 ### Manage external groups and membership
 
-You can use the Groups API to manage your external groups and group membership. See [externalGroup](graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) and [externalGroupMember](https://docs.microsoft.com/graph/api/resources/externalgroupmember?view=graph-rest-beta&preserve-view=true) for detailed API information.
+You can use the Groups API to manage your external groups and group membership. See [externalGroup](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) and [externalGroupMember](/graph/api/resources/externalgroupmember?view=graph-rest-beta&preserve-view=true) for detailed API information.
 
 ## Related
 

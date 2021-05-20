@@ -1,4 +1,6 @@
-<!-- markdownlint-disable MD002 MD041 -->
+<!-- markdownlint-disable MD002 MD025 MD041 -->
+
+In this step you will build the application.
 
 ## Create a .NET Core console app
 

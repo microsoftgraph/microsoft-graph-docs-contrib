@@ -5,7 +5,7 @@ localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
-<!-- markdownlint-disable MD002 MD041 -->
+<!-- markdownlint-disable MD002 MD025 MD041 -->
 
 # Quickstart: Create your first custom Microsoft Graph connector
 
