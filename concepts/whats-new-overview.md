@@ -25,6 +25,10 @@ GA of the reporting API to [list](/graph/api/provisioningobjectsummary-list) act
 
 ## May 2021: New in preview only
 
+### Education
+- Graph user (Teacher) can now trigger the assignment level resources folder creation before uploading assignment resources on OneDrive, teachers can trigger the assignment resources folder creation by using the **SetUpResourcesFolder** function on the [educationAssignment](/graph/api/resources/educationAssignment-SetupResourcesFolder?view=graph-rest-beta&preserve-view=true) resource. The save is made available on educationAssignment through the property **resourcesFolderUrl**
+- Graph user (Student) can now trigger the submission level resources folder creation before uploading a OneDrive resource for a given submission, student can trigger the submission resources folder creation by using the **SetUpResourcesFolder** function on the [educationSubmission](/graph/api/resources/educationSubmission-SetupResourcesFolder?view=graph-rest-beta&preserve-view=true) resource. The save is made available on educationAssignment through the property **resourcesFolderUrl**
+
 ### Devices and apps | Cloud PC
 Request the least privileged application permissions, `CloudPC.Read.All` or `CloudPC.ReadWrite.All`, to access methods of the following resources:
   - Read and write operations, and [reprovision](/graph/api/cloudpc-reprovision?view=graph-rest-beta&preserve-view=true) method of [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
