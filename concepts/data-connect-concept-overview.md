@@ -38,6 +38,6 @@ Microsoft is facilitating rich, connected communication between Microsoft Graph 
 
 ## See also
 
-- [Build your first Microsoft Graph Data Connect application tutorial](data-connect-quickstart.yml).
+<!-- - [Build your first Microsoft Graph Data Connect application tutorial](data-connect-quickstart.yml). -->
 - [Data Connect frequently asked questions](data-connect-faq.md)
 - [Datasets, regions, and sinks](data-connect-datasets.md)
