@@ -3,7 +3,7 @@ title: "authenticationMethodsRoot: usersRegisteredByFeature"
 description: "Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication."
 author: "danielwood95"
 localization_priority: Normal
-ms.prod: "reports"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ The following permissions are required to call this API. To learn more, includin
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Reports.Read.All|
+|Delegated (work or school account)|AuditLogs.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -78,6 +78,8 @@ If successful, this function returns a `200 OK` response code and a [userRegistr
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "authenticationmethodsroot_usersregisteredbyfeature"
@@ -86,6 +88,24 @@ If successful, this function returns a `200 OK` response code and a [userRegistr
 ``` http
 GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/authenticationmethodsroot-usersregisteredbyfeature-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/authenticationmethodsroot-usersregisteredbyfeature-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/authenticationmethodsroot-usersregisteredbyfeature-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/authenticationmethodsroot-usersregisteredbyfeature-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
@@ -117,7 +137,7 @@ Content-Type: application/json
 			"feature": "ssprCapable",
 			"userCount": 4234
 		}, {
-			"feature": "passwordlessRegistered",
+			"feature": "passwordlessCapable",
 			"userCount": 323
 		},
 		{

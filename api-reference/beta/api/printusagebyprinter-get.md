@@ -31,7 +31,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /reports/dailyPrintUsageByPrinter/{id}
-GET /reports/monhtlyPrintUsageByPrinter/{id}
+GET /reports/monthlyPrintUsageByPrinter/{id}
 GET /print/reports/dailyPrintUsageByPrinter/{id}
 GET /print/reports/monthlyPrintUsageByPrinter/{id}
 ```
@@ -51,6 +51,8 @@ If successful, this method returns a `200 OK` response code and a [printUsageByP
 ## Example
 ##### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printUsageByPrinter"
@@ -58,9 +60,27 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByPrinter/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printusagesummarybyprinter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printusagesummarybyprinter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printusagesummarybyprinter-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printusagesummarybyprinter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
