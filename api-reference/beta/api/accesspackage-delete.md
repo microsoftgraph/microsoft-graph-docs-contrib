@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Delete an [accessPackage](../resources/accesspackage.md) object.
 
+Note that an access package cannot be removed if there are still assignments to that access package.  In order to remove assignments, [query the assignments](accesspackageassignment-list.md) with a filter to indicate the specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`, and then [create a new accessPackageAssignmentRequest](accesspackageassignmentrequest-post.md) in which the value of the **requestType** property is `AdminRemove`, to remove each assignment that is still delivered.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
