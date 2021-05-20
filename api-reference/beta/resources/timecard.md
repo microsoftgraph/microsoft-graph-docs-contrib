@@ -20,7 +20,7 @@ Represents a timecard entry in the schedule.
 | Method       | Return type  |Description|
 |:---------------|:--------|:----------|
 |[List](../api/timecard-list.md) | [timeCard](timecard.md) collection | Get the list of **timecard** objects in this schedule.|
-|[Create](../api/timecard-create.md) | [timeCard](timecard.md) | Create a new **timecard** object.|
+|[Create](../api/timecard-post.md) | [timeCard](timecard.md) | Create a new **timecard** object.|
 |[Get](../api/timecard-get.md) | [timeCard](timecard.md) | Get a **timecard** object by ID.|
 |[Put](../api/timecard-put.md) | [timeCard](timecard.md) | Replace a **timecard** object.|
 |[Patch](../api/timecard-patch.md) | [timeCard](timecard.md) | Update a **timecard** object.|

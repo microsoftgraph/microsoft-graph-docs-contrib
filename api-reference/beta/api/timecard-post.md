@@ -35,9 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST /teams/{teamId}/schedule/timecards
 ```
 
-## Optional query parameters
-This method does not support OData query parameters to customize the response.
-
 ## Request headers
 
 | Header       | Value |
@@ -94,13 +91,12 @@ POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50
   ]
 }
 ```
----
 
 ### Response
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,6 +105,8 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 201 Created
+Content-type: application/json
+
 {
    "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
    "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",

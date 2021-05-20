@@ -1,5 +1,5 @@
 ---
-title: "Confirm timecard"
+title: "timeCard: confirm"
 description: "Confirm a specific timecard."
 author: "akumar39"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Confirm timecard
+# timeCard: confirm
 
 Namespace: microsoft.graph
 
@@ -35,9 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST /teams/{teamId}/schedule/timecards/{timeCardID}/confirm
 ```
 
-## Optional query parameters
-This method does not support OData query parameters to customize the response.
-
 ## Request headers
 
 | Header       | Value |
@@ -60,13 +57,12 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards/3895809b-a618-4c0d-86a0-d42b25b7d74f/confirm
 ```
----
 
 ### Response
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,6 +71,8 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
    "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
    "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",

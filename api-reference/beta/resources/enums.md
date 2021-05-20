@@ -923,14 +923,20 @@ Namespace: microsoft.graph
 
 ### workforceIntegrationSupportedEntities values
 
-| Member
-|:----------------------------
-|none
-|shift
-|swapRequest
-|openShift
-|openShiftRequest
-|userShiftPreferences
+|Member|
+|:---|
+|none|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+|timeCard|
+|timeOffReason|
+|timeOff|
+|timeOffRequest|
 
 ### timeZoneStandard values
 

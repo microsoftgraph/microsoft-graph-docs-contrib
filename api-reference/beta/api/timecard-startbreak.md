@@ -1,5 +1,5 @@
 ---
-title: "Start Break"
+title: "timeCard: startBreak"
 description: "Start break in a specific timecard."
 author: "akumar39"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Start Break
+# timeCard: startBreak
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start break in a specific [timeCard](../resources/timeCard.md).
+Start a break in a specific [timeCard](../resources/timeCard.md).
 
 ## Permissions
 
@@ -34,9 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /teams/{teamId}/schedule/timecards/{timeCardID}/startBreak
 ```
-
-## Optional query parameters
-This method does not support OData query parameters to customize the response.
 
 ## Request headers
 
@@ -69,13 +66,12 @@ POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50
       }
 } 
 ```
----
 
 ### Response
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,6 +80,8 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
    "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
    "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
