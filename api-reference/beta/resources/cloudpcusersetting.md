@@ -35,6 +35,7 @@ Represents a cloud PC user setting.
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to True.  |
 |selfServiceEnabled|Boolean|To turn on the self service option, change this setting to True. |
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
+|createdDateTime|DateTimeOffset|The date and time the setting was created. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -57,6 +58,7 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "selfServiceEnabled": "Boolean",
   "localAdminEnabled": "Boolean",
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)"
 }
 ```

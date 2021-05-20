@@ -2,6 +2,29 @@
     "changelog": [
         {
             "ChangeList": [{
+                "Id": "3467da3f-b955-11eb-b432-abd44c4c47a3",
+                "ApiChange": "Property",
+                "ChangedApiName": "createdDateTime",
+                "ChangeType": "Addition",
+                "Description": "Added the **createdDateTime** property to the [cloudPcUserSetting](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcUserSetting?view=graph-rest-beta) resource.",
+                "Target": "cloudPcUserSetting"
+            }, {
+                "Id": "346a3bf5-b955-11eb-b432-abd44c4c47a3",
+                "ApiChange": "Property",
+                "ChangedApiName": "createdDateTime",
+                "ChangeType": "Addition",
+                "Description": "Added the **createdDateTime** property to the [cloudPcUserSettingAssignment](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcUserSettingAssignment?view=graph-rest-beta) resource.",
+                "Target": "cloudPcUserSettingAssignment"
+            }],
+            "Id": "34657785-b955-11eb-b432-abd44c4c47a3",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-20T10:21:56.735Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [{
                 "Id": "27414a0a-b486-11eb-bc4f-918d3a03a3b9",
                 "ApiChange": "Relationship",
                 "ChangedApiName": "userSettings",

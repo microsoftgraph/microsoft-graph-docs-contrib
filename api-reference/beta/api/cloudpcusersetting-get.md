@@ -90,7 +90,8 @@ Content-Type: application/json
     "displayName": "String",
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
-    "lastModifiedDateTime": "2021-02-01T10:29:57Z"
+    "lastModifiedDateTime": "2021-02-01T10:29:57Z",
+    "createdDateTime": "2021-02-01T10:29:57Z"
   }
 }
 ```
@@ -131,10 +132,12 @@ Content-Type: application/json
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
+    "createdDateTime": "2021-02-01T10:29:57Z"
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcUserSettingAssignment",
         "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
+        "createdDateTime": "2021-02-01T10:29:57Z",
         "target": {
           "@odata.type":"microsoft.graph.cloudPCManagementGroupAssignmentTarget",
           "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"

@@ -89,7 +89,8 @@ Content-Type: application/json
       "displayName": "Test1",
       "selfServiceEnabled": true,
       "localAdminEnabled": false,
-      "lastModifiedDateTime": "2021-02-01T10:29:57Z"
+      "lastModifiedDateTime": "2021-02-01T10:29:57Z",
+      "createdDateTime": "2021-02-01T10:29:57Z"
     }
   ]
 }

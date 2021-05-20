@@ -23,6 +23,7 @@ Represents a defined collection of user setting assignments.
 |:---|:---|:---|
 |id|String|Unique Identifier for the user setting assignment. Read-only. If `target` is a user group, then the ID is shown as {policyId}_{groupId}.|
 |target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the user setting. Currently, the only target supported for user setting is a user group.|
+|createdDateTime|DateTimeOffset|he date and time this assignment was created. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.  |
 
 ## Relationships
 
@@ -41,6 +42,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcUserSettingAssignment",
   "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
   "target": {
     "@odata.type": "microsoft.graph.cloudPcManagementAssignmentTarget"
   }
