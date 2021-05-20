@@ -1,7 +1,7 @@
 ---
 title: "checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those groups of which"
-author: "jpettere"
+author: "yyuank"
 localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType
@@ -102,7 +102,7 @@ Content-length: 44
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

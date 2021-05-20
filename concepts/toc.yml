@@ -198,6 +198,25 @@ items:
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
+          - name: Device updates (preview)
+            displayName: Windows updates
+            items:
+              - name: Overview
+                href: windowsupdates-concept-overview.md
+              - name: Software updates
+                href: windowsupdates-software-updates.md
+              - name: Deployments
+                href: windowsupdates-deployments.md
+              - name: Enroll in management
+                href: windowsupdates-enroll.md
+              - name: Deploy a feature update
+                href: windowsupdates-deploy-update.md
+              - name: Deploy an expedited update
+                href: windowsupdates-deploy-expedited-update.md
+              - name: Schedule a deployment
+                href: windowsupdates-schedule-deployment.md
+              - name: Manage monitoring rules
+                href: windowsupdates-manage-monitoring-rules.md
       - name: Education
         items:
           - name: Overview
@@ -225,7 +244,7 @@ items:
             items:
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
-              - name: Review access to your groups
+              - name: Review access to your resources
                 items:
                   - name: Overview of the access reviews API
                     href: accessreviews-overview.md
@@ -349,6 +368,8 @@ items:
                 href: search-concept-sort.md
               - name: Refine search results (preview)
                 href: search-concept-aggregation.md
+              - name: Request spelling correction (preview)
+                href: search-concept-speller.md
           - name: Index (preview)
             items:
               - name: Manage connections
@@ -513,6 +534,8 @@ items:
           - name: Azure AD Graph
             displayName: Migration, Azure AD Graph
             items:
+              - name: Overview
+                href: migrate-azure-ad-graph-overview.md
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
@@ -583,6 +606,8 @@ items:
                 href: toolkit/get-started/overview.md
               - name: Toolkit for React
                 href: toolkit/get-started/mgt-react.md
+              - name: Toolkit for SPFx
+                href: toolkit/get-started/mgt-spfx.md
           - name: Build your first app
             items:
               - name: Register an Azure Active Directory app
@@ -605,6 +630,8 @@ items:
                 href: toolkit/providers/providers.md
               - name: MSAL provider
                 href: toolkit/providers/msal.md
+              - name: MSAL 2 provider
+                href: toolkit/providers/msal2.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
@@ -637,6 +664,10 @@ items:
                 href: toolkit/components/tasks.md
               - name: To-do tasks
                 href: toolkit/components/todo.md
+              - name: File
+                href: toolkit/components/file.md
+              - name: File list
+                href: toolkit/components/file-list.md
           - name: Customize components
             items:
               - name: Styling components
