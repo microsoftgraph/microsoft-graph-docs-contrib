@@ -62,15 +62,8 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 
   public render(): void {
     this.domElement.innerHTML = `
-      <div class="${styles.mgtNoFramework}">
-        <div class="${styles.container}">
-          <div class="${styles.row}">
-            <div class="${styles.column}">
-              <span class="${styles.title}">No framework webpart</span>
-              <mgt-person person-query="me" show-name show-email></mgt-person>
-            </div>
-          </div>
-        </div>
+      <div>
+        <mgt-person person-query="me"></mgt-person>
       </div>`;
   }
 
