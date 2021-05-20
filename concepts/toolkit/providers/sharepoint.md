@@ -53,9 +53,3 @@ In short, it's important to add the right permission to your `package-solution.j
 >The [Build a SharePoint web part](../get-started/build-a-sharepoint-web-part.md#configure-permissions) getting started guide provides step-by-step instructions for configuring and approving permissions.
 
 >**Note:** if you're not sure what permissions to add, the documentation for each component includes all the permissions it needs.
-
-## Polyfills
-
-If you plan to support IE11 in your SPFx webparts, you must use polyfills.
-
-To learn more, see [Getting started with Microsoft Graph Toolkit](../get-started/overview.md#polyfills).
