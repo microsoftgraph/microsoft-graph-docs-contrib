@@ -117,7 +117,6 @@ POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers 
 
 You can use external groups when defining ACLs for external items. In addition to AAD users and AAD groups, an external item can have external groups in its ACEs, as shown below.
 
-
 ```json
 PUT https://graph.microsoft.com/beta/external/connections/{id}/items/{id}  
 Content-type: application/json  

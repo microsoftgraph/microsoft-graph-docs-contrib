@@ -1,6 +1,12 @@
-<!-- markdownlint-disable MD002 MD025 MD041 -->
+---
+title: "Build the application"
+description: "Build the application"
+localization_priority: Priority
+author: mecampos
+doc_type: conceptualPageType
+---
 
-In this step you will build the application.
+# Build the application
 
 ## Create a .NET Core console app
 
