@@ -89,6 +89,3 @@ For billing purposes, Microsoft Graph Data Connect rounds up to the extracted ob
 ## My Microsoft 365 copy data activity is always failing when initialized via Azure Synapse. Why is this happening?
 
 Today, we do not support Microsoft 365 copy data activity to be initialized via Azure Synapse. We are working toward adding the integration for Azure Synapse initialized activity and will update our documentation when this is completed.
-
-## Next steps
-<!-- Need to find a link to this next step -->

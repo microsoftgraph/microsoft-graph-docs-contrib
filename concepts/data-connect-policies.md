@@ -40,4 +40,5 @@ Directory objects that will not be charged are:
 - [Azure Storage policies](/azure/storage/common/policy-reference)
 - [Microsoft Graph Data Connect billing](https://azure.microsoft.com/pricing/details/graph-data-connect/)
 - [Azure managed applications](/azure/managed-applications/overview)
-- [Data Connect FAQ](data-connect-faq.md)
+- [User selection and filtering](data-connect-filtering.md)
+- [Data Connect frequently asked questions](data-connect-faq.md)

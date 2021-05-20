@@ -59,6 +59,7 @@ The following characteristics apply to sinks:
 - Service Principal authentication is the only supported authentication mechanism for all sink types in a copy activity with Microsoft 365 as the source.
 - When using Azure Storage Blob as the sink, you must ensure that your application has Storage Blob Data Contributor access to the Azure Storage Blob location.
 
-## Next Steps
+## See also
 
-For more information about how to create data connect pipelines as a part of an Azure Data Factory, see the [Azure Data Factory Office 365 connector documentation](/azure/data-factory/connector-office-365).
+- [Azure Data Factory connector for Microsoft 365 data](https://docs.microsoft.com/azure/data-factory/connector-office-365)
+- [Policies and billing](data-connect-policies.md)
