@@ -44,7 +44,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.accessReviewNotificationRecipientScope",
   "query": "String",
   "queryType": "String",
   "queryRoot": "String"
