@@ -54,10 +54,10 @@ The following table shows the properties accepted to update an accessReviewSched
 |fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|A collection of reviewer scopes used to define the list of fallback reviewers who are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.|
 |backupReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This property is being replaced by `fallbackReviewers` and will be deprecated.|
 
-Note that a PUT request expects the full object to be passed in, in which all writable properties are included, not just the properties being updated.
+A **PUT** request expects the full object to be passed in, which includes all writable properties, not just the properties being updated.
 
 ## Response
-If successful, this method returns a `204, Accepted` response code and no response body.
+If successful, this method returns a `204 No Content` response code and no response body.
 
 ## Examples
 
@@ -135,13 +135,12 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 204 No Content
 ```
 
 <!--
