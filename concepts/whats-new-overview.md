@@ -25,6 +25,10 @@ GA of the reporting API to [list](/graph/api/provisioningobjectsummary-list) act
 
 ## May 2021: New in preview only
 
+### Education
+- Teacher can now select to add assignment on teachers and students calendars when publishing the assignment, teachers can control the assignment calendar behavior by using the **addToCalendarAction** property of the [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource.
+- Teacher can now also select a default calendars behavior when publishing assignments in the future, teachers can control the assignment default calendar behavior by using the **addToCalendarAction** property of the [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) resource.
+
 ### Devices and apps | Cloud PC
 Request the least privileged application permissions, `CloudPC.Read.All` or `CloudPC.ReadWrite.All`, to access methods of the following resources:
   - Read and write operations, and [reprovision](/graph/api/cloudpc-reprovision?view=graph-rest-beta&preserve-view=true) method of [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).

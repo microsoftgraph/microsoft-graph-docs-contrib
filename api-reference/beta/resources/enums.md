@@ -601,6 +601,14 @@ Namespace: microsoft.graph
 |assignIfOpen|
 |unknownFutureValue|
 
+### educationAddToCalendarOptions values
+|Member|
+|:---|
+|none|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
