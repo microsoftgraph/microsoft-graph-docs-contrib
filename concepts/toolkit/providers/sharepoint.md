@@ -13,7 +13,7 @@ To learn more about authentication providers, see [Providers](./providers.md).
 
 ## Get started
 
-Initialize the provider inside the `onInit()` method of your web part.
+Initialize the provider inside the `onInit()` method of your web part. This example uses the [`@microsoft/mgt-spfx` package](../get-started/mgt-spfx.md).
 
 ```ts
 // import the providers at the top of the page
@@ -40,8 +40,6 @@ public render(): void {
 ## Sample
 
 For details about how to initialize the SharePoint provider, see the [Build a SharePoint web part](../get-started/build-a-sharepoint-web-part.md) getting started guide.
-
-For a pre-built example that shows you how to use the various components in your SharePoint web parts, see the [SharePoint web part sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) in the Microsoft Graph Toolkit repository.
 
 ## Test in the workbench
 
