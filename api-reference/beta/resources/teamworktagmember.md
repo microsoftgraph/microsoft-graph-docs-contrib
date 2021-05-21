@@ -1,6 +1,6 @@
 ---
 title: "teamworkTagMember resource type"
-description: "Represents a user in the team who has a tag applied to them."
+description: "Represents a user in a team who has a tag applied to them."
 author: "anniecolonna"
 localization_priority: Normal
 ms.prod: "teamwork"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user in the team who has a tag applied to them.
+Represents a user in a team to whom a tag is applied.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List teamworkTagMembers](../api/teamworktagmember-list.md)|[teamworkTagMember](../resources/teamworktagmember.md) collection|Get a list of the [teamworkTagMember](../resources/teamworktagmember.md) objects and their properties.|
 |[Get teamworkTagMember](../api/teamworktagmember-get.md)|[teamworkTagMember](../resources/teamworktagmember.md)|Read the properties and relationships of a [teamworkTagMember](../resources/teamworktagmember.md) object.|
-|[Delete teamworkTagMember](../api/teamworktagmember-delete.md)|None|Deletes a [teamworkTagMember](../resources/teamworktagmember.md) object.|
+|[Delete teamworkTagMember](../api/teamworktagmember-delete.md)|None|Delete a [teamworkTagMember](../resources/teamworktagmember.md) object.|
 
 ## Properties
 |Property|Type|Description|
