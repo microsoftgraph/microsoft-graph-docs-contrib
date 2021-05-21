@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Use this API to create a new child [mailFolder](../resources/mailfolder.md).
 
+If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,7 @@ Specify the parent folder in the query URL as a folder ID, or a well-known folde
 
 ## Request body
 
-In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a
+In the request body, provide a JSON object with the following parameters. **displayName** and **isHidden** are the only writable property for a
 [MailFolder](../resources/mailfolder.md) object.
 
 | Parameter | Type | Description |
@@ -75,6 +77,7 @@ Content-length: 159
 
 {
   "displayName": "displayName-value",
+  "isHidden": true
 }
 ```
 # [C#](#tab/csharp)
@@ -118,7 +121,8 @@ Content-length: 179
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "isHidden": true
 }
 ```
 
