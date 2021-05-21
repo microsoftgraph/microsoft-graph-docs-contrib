@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: setUpResourcesFolder"
-description: "This function triggers the SharePoint resource folder creation, where all file-based resources (Word, Excel, and so on) should be uploaded for a given assignment."
+description: "This function triggers the SharePoint resource folder creation, where all file-based resources (of type Word, Excel, PowerPoint, or other accepted file format) should be uploaded for a given [educationAssignment](../resources/educationassignment.md)."
 localization_priority: Normal
 author: "sharmas"
 ms.prod: "education"
