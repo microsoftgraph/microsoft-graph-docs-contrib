@@ -73,7 +73,7 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 
 ### React
 
-If you are building a web part using React, you can leverage the `@microsoft/mgt-react` package. However, make sure to import all React components from the `@microsoft/mgt-react/dist/es6/spfx` path. This will ensure that your solution will only use Microsoft Graph Toolkit components that are already registered on the page, rather than instantiating its own.
+If you're building a web part using React, you can use the `@microsoft/mgt-react` package. However, make sure to import all React components from the `@microsoft/mgt-react/dist/es6/spfx` path. This will ensure that your solution will only use Microsoft Graph Toolkit components that are already registered on the page, rather than instantiating its own.
 
 ```tsx
 import { Person } from '@microsoft/mgt-react/dist/es6/spfx';
