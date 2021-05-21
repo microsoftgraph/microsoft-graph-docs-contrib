@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: setUpResourcesFolder"
-description: "This function triggers the SharePoint resource folder creation, where all file-based resources (of type Word, Excel, PowerPoint, or other accepted file format) should be uploaded for a given educationAssignment."
+description: "Create a SharePoint resource folder for all file-based resources (of type Word, Excel, PowerPoint, or other accepted file format) for a given educationAssignment."
 localization_priority: Normal
 author: "sharmas"
 ms.prod: "education"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-This function triggers the SharePoint resource folder creation where all file-based resources (of type Word, Excel, PowerPoint, or other accepted file format) should be uploaded for a given [educationAssignment](../resources/educationassignment.md). Please note that files must be located in this folder in order to be added as resources. Only a teacher in the class can determine what files to upload in the assignment level resource folder. 
+Create a SharePoint resource folder for all file-based resources (of type Word, Excel, PowerPoint, or other accepted file format) for a given [educationAssignment](../resources/educationassignment.md). Only a teacher in the class can determine what resources to upload in the assignment level resources folder. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
