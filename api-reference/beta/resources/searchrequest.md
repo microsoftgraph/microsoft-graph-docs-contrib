@@ -25,8 +25,8 @@ The JSON blob contains the types of resources expected in the response, the unde
 
 ## Properties
 
-| Property     | Type        | Description |             |
-|:-------------|:------------|:------------|:------------|
+| Property     | Type        | Description             
+|:-------------|:------------|:------------
 |aggregations|[aggregationOption](aggregationOption.md) collection|Specifies aggregations (also known as refiners) to be returned alongside search results. Optional.|
 |aggregationFilters|String collection|Contains one or more filters to obtain search results aggregated and filtered to a specific value of a field. Optional.<br>Build this filter based on a prior search that aggregates by the same field. From the response of the prior search, identify the [searchBucket](searchBucket.md) that filters results to the specific value of the field, use the string in its **aggregationFilterToken** property, and build an aggregation filter string in the format **"{field}:\\"{aggregationFilterToken}\\""**. <br>If multiple values for the same field need to be provided, use the strings in its **aggregationFilterToken** property and build an aggregation filter string in the format **"{field}:or(\\"{aggregationFilterToken1}\\",\\"{aggregationFilterToken2}\\")"**. <br>For example, searching and aggregating drive items by file type returns a **searchBucket** for the file type `docx` in the response. You can conveniently use the **aggregationFilterToken** returned for this **searchBucket** in a subsequent search query and filter matches down to drive items of the `docx` file type. [Example 1](/graph/search-concept-aggregation#example-1-request-aggregations-by-string-fields) and [example 2](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request) show the actual requests and responses.|
 |contentSources|String collection|Contains the connection to be targeted. <br>Respects the following format : `/external/connections/connectionid` where `connectionid` is the ConnectionId defined in the Connectors Administration. <br> Note: contentSource is only applicable when entityType=`externalItem`. Optional.|
@@ -38,7 +38,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |size|Int32|The size of the page to be retrieved. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 |stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
-|resultTemplateOptions|[resultTemplateOption](api-reference\beta\resources\searchresulttemplateoptions.md) colletction|Provides the search result templates options for render connectors search results.|
+|resultTemplateOptions|[resultTemplateOption](searchresulttemplateoptions.md) colletction|Provides the search result templates options for render connectors search results.|
 
 
 ## JSON representation
