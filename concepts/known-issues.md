@@ -391,15 +391,22 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:
-  * No support for `nextLink`
-  * No support for more than 1 level of expand
-  * No support with extra parameters (`$filter`, `$select`)
+  * Returns a maximum of 20 objects.
+  * No support for `@odata.nextLink`.
+  * No support for more than 1 level of expand.
+  * No support with extra parameters (`$filter`, `$select`).
 * `$filter`:
   * `/attachments` endpoint does not support filters. If present, the `$filter` parameter is ignored.
   * Cross-workload filtering is not supported.
 * `$search`:
   * Full-text search is only available for a subset of entities such as messages.
   * Cross-workload searching is not supported.
+  * Searching is not supported on Azure AD B2C tenants.
+* `$count`:
+  * Not supported on Azure AD B2C tenants.
+  * If you're using OData Count (adding `$count=true` in the query string), the `@odata.count` property will be present only in the first page of the paged data.
+* In paging, any additional request headers such as the **ConsistencyLevel** header, are not included by default in subsequent page requests. If those headers need to be sent on subsequent requests, you must set them explicitly.
+* Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs

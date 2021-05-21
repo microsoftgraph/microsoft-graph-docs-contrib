@@ -37,6 +37,8 @@ Paging behavior varies across different Microsoft Graph APIs. Consider the follo
 - Different APIs might have different default and maximum page sizes.
 - Different APIs might behave differently if you specify a page size (via the `$top` query parameter) that exceeds the maximum page size for that API. Depending on the API, the requested page size might be ignored, it might default to the maximum page size for that API, or Microsoft Graph might return an error. 
 - Not all resources or relationships support paging. For example, queries against [directoryRoles](/graph/api/resources/directoryrole?view=graph-rest-1.0) do not support paging. This includes reading role objects themselves as well as role members.
+- Any additional request headers, such as the **ConsistencyLevel** header for eventual consistency, are not included by default in subsequent page requests. If those headers need to be sent on subsequent requests, you must set them explicitly.
+- If you're using OData Count (adding `$count=true` in the query string), the `@odata.count` property will be present only in the first page.
 
 ## Learn more about paging
 The following video introduces you to paging in Microsoft Graph.

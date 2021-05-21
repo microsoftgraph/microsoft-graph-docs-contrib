@@ -474,8 +474,13 @@ items:
             href: traverse-the-graph.md
           - name: Paging
             href: paging.md
-          - name: Use query parameters
-            href: query-parameters.md
+          - name: Query parameters
+            displayName: OData query parameters
+            items:
+              - name: Use query parameters
+                href: query-parameters.md
+              - name: Use the $search query parameter
+                href: search-query-parameter.md
           - name: Batching
             displayName: Batch requests
             href: json-batching.md
