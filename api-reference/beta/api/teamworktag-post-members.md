@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a member to a standard tag in the team. This operation creates a new [teamworkTagMember](../resources/teamworktagmember.md) object.
+Create a new [teamworkTagMember](../resources/teamworktagmember.md) object in a team.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
