@@ -2,7 +2,9 @@
 
 A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 Admin Center or programmatically via PowerShell.
 
-## Approve consent requests via the Microsoft 365 Admin Center
+## Approve consent requests
+
+# [Microsoft 365 Admin Center](#tab/Microsoft365)
 
 > [!NOTE]
 > You can alternatively approve consent requests using Windows PowerShell, as demonstrated in the next section.
@@ -17,7 +19,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
     ![A screenshot showing a data access request pending consent approval in the Microsoft 365 admin center.](images/data-connect-m365-approve.png)
 
-## Approve Microsoft 365 consent requests via PowerShell
+# [PowerShell](#tab/PowerShell)
 
 > [!NOTE]
 > If you approved the request using the Microsoft 365 Admin Center, you can skip this section.
@@ -46,10 +48,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
         ```
 
         > [!IMPORTANT]
-        > After you are finished with this session, be sure you you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks.
-
-        > [!NOTE]
-        > If you simply close the PowerShell window, it will leave the connection open.
+        > After you are finished with this session, be sure you you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks. If you simply close the PowerShell window, it will leave the connection open.
 
 1. Get a list of all pending data requests from Microsoft Graph data connect by executing the following PowerShell.
 

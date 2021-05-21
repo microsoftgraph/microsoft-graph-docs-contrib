@@ -65,8 +65,6 @@ In this section we will be building your first ASP.NET project application for t
 
 1. Right-click the **Controllers** folder and select **Add > Controller**.
 
-    ![A screenshot of the Visual Studio interface showing how you can add a new controller by right-clicking in the controllers folder.](images/data-connect-vs-add-new-controller.png)
-
 1. In the **Add Scaffold** dialog, select **MVC 5 Controller - Empty** and select **Add**.
 
 1. When prompted, name the controller **EmailMetricsController** and select **OK**.
@@ -184,8 +182,6 @@ In this section we will be building your first ASP.NET project application for t
 ## Create a new view for the EmailMetrics index action
 
 1. In the  **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder and select **Add > View**.
-
-    ![A screenshot of the Visual Studio interface showing how to add a new view in the EmailMetrics folder within the Views folder.](images/data-connect-vs-add-view.png)
 
 1. In the **Add New Scaffolded Item** dialog box, select **MVC 5 View**, then select **Add**.
 
