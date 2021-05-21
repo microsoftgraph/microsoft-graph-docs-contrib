@@ -6,9 +6,6 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 # [Microsoft 365 Admin Center](#tab/Microsoft365)
 
-> [!NOTE]
-> You can alternatively approve consent requests using Windows PowerShell, as demonstrated in the next section.
-
 1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com).
 
 1. To approve or deny consent requests, go to [Privileged Access](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
