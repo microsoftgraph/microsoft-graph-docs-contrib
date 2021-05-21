@@ -8,7 +8,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 # Use the $search query parameter to match a search criterion
 
-In addition to [other OData query parameters](query-parameters), Microsoft Graph supports the `$search` query parameter to restrict the results of a request to match a search criterion.
+In addition to [other OData query parameters](/graph/query-parameters), Microsoft Graph supports the `$search` query parameter to restrict the results of a request to match a search criterion.
 
 The support for the `$search` query parameter varies by entity, with some, such as Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), supporting `$search` only on eventual consistency.
 
@@ -166,4 +166,4 @@ Both the string inputs you provide in `$search`, as well as the searchable prope
 
 ## See also
 
-- [Use query parameters to customize responses](query-parameters)
+- [Use query parameters to customize responses](/graph/query-parameters)

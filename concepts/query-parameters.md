@@ -257,7 +257,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 ## search parameter
 
-Use the `$search` query parameter to restrict the results of a request to match a search criterion. It's support, use, and behavior varies from one API operation to another. To learn more about `$search`, see [Use the $search query parameter to match a search criterion](search-query-parameter).
+Use the `$search` query parameter to restrict the results of a request to match a search criterion. It's support, use, and behavior varies from one API operation to another. To learn more about `$search`, see [Use the $search query parameter to match a search criterion](/graph/search-query-parameter).
 
 ## select parameter
 
