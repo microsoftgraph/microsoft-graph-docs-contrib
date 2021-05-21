@@ -150,6 +150,13 @@ items:
             href: cloud-communications-phone-number.md
       - name: Compliance (preview)
         href: compliance-concept-overview.md
+      - name: Connecting external content (preview)
+        displayName: connectors
+        items:
+          - name: Quickstart - Build your first custom connector
+            href: connecting-external-content-build-quickstart.yml
+          - name: External groups
+            href: connecting-external-content-external-groups.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -164,15 +171,6 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Connecting external content (preview)
-        displayName: connectors
-        items:
-          - name: Quickstart Build your first custom connector
-            href: connecting-external-content-build-quickstart.yml
-          - name: External groups
-            href: connecting-external-content-external-groups.md
-          - name: API permissions
-            href: connecting-external-content-api-permissions.md
       - name: Data access
         displayName: Microsoft Graph data connect
         items:
