@@ -7,14 +7,14 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List accessReviewInstanceDecisionItems pending approval
+# List accessReviewInstanceDecisionItems pending approval (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->This method will be deprecated and replaced by [filterByCurrentUser](accessreviewinstancedecisionitem-filterbycurrentuser.md).
+>This method will be deprecated and will stop returning data on May 19, 2023. It has been replaced by [filterByCurrentUser](accessreviewinstancedecisionitem-filterbycurrentuser.md).
 
 Retrieve the [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) objects for a specific [accessReviewInstance](../resources/accessreviewscheduledefinition.md) pending approval by the calling user. A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 

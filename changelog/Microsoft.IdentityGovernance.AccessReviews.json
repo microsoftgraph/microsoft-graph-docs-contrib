@@ -637,12 +637,28 @@
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
-                "Id": "d4a214f6-79f8-4c43-9417-1b1a6d2d257f",
+                "Id": "557dee29-f6b9-43a8-8d97-82b79d45fb1c",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessreview",
                 "ChangeType": "Deprecation",
                 "Description": "Deprecation of [accessreview](https://docs.microsoft.com/en-us/graph/api/resources/accessreview-root?view=graph-rest-beta) resource. Replaced with [accessreview](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewv2-root?view=graph-rest-beta)",
                 "Target": "accessReview"
+              },
+              {
+                "Id": "cf39258c-7902-420c-80b2-7390dff32705",
+                "ApiChange": "Method",
+                "ChangedApiName": "accessreviewinstance-pendingaccessreviewinstances",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecation of [List pending access review instances](https://docs.microsoft.com/en-us/graph/api//accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-beta) method. Replaced with [Filter by current user](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta)",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "f975504c-79c1-41ec-8b15-8b98c3f0a9f0",
+                "ApiChange": "Method",
+                "ChangedApiName": "accessreviewinstancedecisionitem-listpendingapproval",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecation of [List pending access review instance decision items](https://docs.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-beta) method. Replaced with [Filter by current user](https://docs.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-filterbycurrentuser?view=graph-rest-beta)",
+                "Target": "accessReviewInstanceDecisionItem"
               }
             ],
             "Id": "49ebf6ed-e100-40e8-812f-781f58b264ce",
