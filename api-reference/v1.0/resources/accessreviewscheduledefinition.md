@@ -20,46 +20,36 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) collection|Get a list of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects and their properties.|
-|[Create accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.|
-|[Get accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Read the properties and relationships of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.|
-|[Update accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Update the properties of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.|
-|[Delete accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md)|None|Deletes an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.|
-|[filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) collection|Returns all definitions where the calling user is the reviewer of any instances.|
+|[List accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every accessReviewScheduleDefinition. Does not include associated accessReviewInstance objects in the results. |
+|[Get accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Get an accessReviewScheduleDefinition with a specified **id**. Does not include associated accessReviewInstance objects in the results. |
+|[Create accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-post.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Create a new accessReviewScheduleDefinition. |
+|[Delete accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | None. | Delete an accessReviewScheduleDefinition with a specified **id**. |
+|[Update accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | None. | Update properties of an accessReviewScheduleDefinition with a specified **id**. |
+|[filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) collection|Retrieves all definitions for which the calling user is a reviewer on one or more instance.|
 |[List instances](../api/accessreviewscheduledefinition-list-instances.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Get the accessReviewInstance resources from the instances navigation property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[userIdentity](../resources/useridentity.md)|User who created this review.|
-|createdDateTime|DateTimeOffset| Timestamp when review series was created.|
-|descriptionForAdmins|String|Description provided by review creators to provide more context of the review to admins. |
-|descriptionForReviewers|String| Description provided  by review creators to provide more context of the review to reviewers. Reviewers see this description in the email sent to them that requests their review.|
-|displayName|String|Name of access review series. Required on create.|
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|A collection of reviewer scopes used to define the list of fallback reviewers who are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. Formerly named backupReviewers.|
-|id|String|The feature-assigned unique identifier of an access review. Inherited from [entity](../resources/entity.md)|
-|instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)|In the case of a review of guest users across all Microsoft 365 groups, this determines the scope of which groups are reviewed. Each group becomes a unique accessReviewInstance of the access review series.  For supported scopes, see [accessReviewQueryScope](accessreviewqueryscope.md).|
-|lastModifiedDateTime|DateTimeOffset|Timestamp when review series was last modified.|
-|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of access review scopes is used to define who are the reviewers. See [accessReviewReviewerScope](accessreviewreviewerscope.md) for supported queries. Required on create.|
-|scope|[accessReviewScope](../resources/accessreviewscope.md)| Defines scope of access to what needs to be reviewed. For supported scopes, see [accessReviewScope](accessreviewscope.md). Required on create.|
-|settings|[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Required on create.|
-|status|String|This read-only field specifies the status of an accessReview. Possible values: `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`.|
+| id | String | The feature-assigned unique identifier of an access review. Supports `$select`. Read-only.|
+| displayName | String   | Name of the access review series. Supports `$select`. Required on create. |
+| createdDateTime  |DateTimeOffset  | Timestamp when the access review series was created. Supports `$select`. Read-only. |
+| lastModifiedDateTime | DateTimeOffset   | Timestamp when the access review series was last modified. Supports `$select`. Read-only.|
+| status  |String   | This read-only field specifies the status of an access review. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`.  <br>Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only. |
+| descriptionForAdmins  |string  |  Description provided by review creators to provide more context of the review to admins. Supports `$select`. |
+| descriptionForReviewers |string | Description provided  by review creators to provide more context of the review to reviewers. Reviewers will see this description in the email sent to them requesting their review. Supports `$select`. |
+| createdBy  |[userIdentity](../resources/useridentity.md)  | User who created this review. Read-only. |
+| scope  |[accessReviewScope](../resources/accessreviewscope.md)  | Defines scope of resources to review. For supported scopes, see [accessReviewScope](accessreviewscope.md). Required on create. Supports `$select` and `$filter` (`contains` only). For examples of options for configuring scope, see [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept). |
+| instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | This property is required when scoping a review to guest users' access across all Microsoft 365 groups and determines which Microsoft 365 groups are reviewed. Each group will become a unique **accessReviewInstance** of the access review series.  For supported scopes, see [accessReviewScope](accessreviewscope.md). Supports `$select`. For examples of options for configuring instanceEnumerationScope, see [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept). | 
+| settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series, see type definition below. Supports `$select`. Required on create. |
+| reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of access review scopes is used to define who are the reviewers. Required on create. Supports `$select`. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept). |
+| fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See [accessReviewReviewerScope](accessreviewreviewerscope.md). Replaces backupReviewers. Supports `$select`. |
+| instances |[accessReviewInstance](../resources/accessreviewinstance.md) collection|  Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|instances|[accessReviewInstance](../resources/accessreviewinstance.md) collection|If the `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur has exactly one instance. Instances also represent each unique resource under review in the `accessReviewScheduleDefinition`. If a review has multiple resources and multiple instances, each resource has a unique instance for each recurrence.|
-
-### Supported search queries for accessReviewScheduleDefinition
-The following are queries supported on an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) based on the [accessReviewScope](accessreviewscope.md).
-
-|Scenario| Query |
-|--|--|
-| List every `accessReviewScheduleDefinition` on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users) | /v1.0/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups') |
-| List every `accessReviewScheduleDefinition` on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users) | /v1.0/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '/groups/{group id}') |
-| List every `accessReviewScheduleDefinition` scoped to all Microsoft 365 groups with guest users | /v1.0/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members') |
-| List every `accessReviewScheduleDefinition` on an access package | /v1.0/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'accessPackageAssignments') |
-| List every `accessReviewScheduleDefinition` for service principals assigned to privileged role | /v1.0/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, 'roleAssignmentScheduleInstances') |
+| `instances`|[accessReviewInstance](accessreviewinstance.md) collection | If the `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique resource under review in the `accessReviewScheduleDefinition`. If a review has multiple resources and multiple instances, each resource will have a unique instance for each recurrence. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

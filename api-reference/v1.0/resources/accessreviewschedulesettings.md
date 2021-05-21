@@ -16,16 +16,16 @@ The **accessReviewScheduleSettings** defines the settings of an [accessReviewSch
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection|Describes the  actions to take once a review is complete. There are two types supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. |
-|autoApplyDecisionsEnabled|Boolean|If true, decisions are automatically applied to the reviewed resource after the review ends.|
-|defaultDecision|String|Decision chosen if `defaultDecisionEnabled` is enabled. Possible values: "Approve", "Deny", or "Recommendation".|
-|defaultDecisionEnabled|Boolean| If true, defaultDecision is taken on decisions items where reviewers did not respond.|
-|instanceDurationInDays|Int32|Duration of each [accessReviewInstance](accessreviewinstance.md) in number of days.|
-|justificationRequiredOnApproval|Boolean| If true, reviewers are required to provide justification with decisions.|
-|mailNotificationsEnabled|Boolean|If true, email notifications are sent to reviewers.|
-|recommendationsEnabled|Boolean|If true, reviewers see recommendations based on last interactive sign-in.|
-|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Detailed settings for recurrence. Using standard Outlook recurrence object. The `dayOfMonth`  value is not supported. Use the property startDate on recurrenceRange to determine the day the review starts.|
-|reminderNotificationsEnabled|Boolean|If true, reviewers receive reminder emails halfway through the review period.|
+| mailNotificationsEnabled|Boolean | Indicates whether emails are enabled or disabled. Default value is `false`.               |
+| reminderNotificationsEnabled|Boolean  | Indicates whether reminders are enabled or disabled. Default value is `false`.  |
+| justificationRequiredOnApproval|Boolean | Indicates whether reviewers are required to provide justification with their decision. Default value is `false`. |
+| defaultDecisionEnabled|Boolean | Indicates whether the default decision is enabled or disabled when reviewers do not respond. Default value is `false`. |
+| defaultDecision|String | Decision chosen if `defaultDecisionEnabled` is enabled. Can be one of `Approve`, `Deny`, or `Recommendation`. |
+| instanceDurationInDays|Int32 | Duration of each recurrence of review (`accessReviewInstance`) in number of days. |
+| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Detailed settings for recurrence using the standard Outlook recurrence object. Only `weekly` and `absoluteMonthly` on **recurrencePattern** are supported. Use the property **startDate** on **recurrenceRange** to determine the day the review starts. |
+| autoApplyDecisionsEnabled|Boolean | Indicates whether decisions are automatically applied. When set to `false`, a user must apply the decisions manually once the reviewer completes the access review. When set to `true`, decisions are applied automatically after the access review instance duration ends, whether or not the reviewers have responded. Default value is `false`. |
+| applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. See [accessReviewApplyAction](accessreviewapplyaction.md). |
+| recommendationsEnabled|Boolean | Indicates whether decision recommendations are enabled/disabled. |
 
 ## Relationships
 None.

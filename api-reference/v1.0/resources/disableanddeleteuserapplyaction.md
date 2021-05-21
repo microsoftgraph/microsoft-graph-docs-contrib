@@ -1,6 +1,6 @@
 ---
 title: "disableAndDeleteUserApplyAction resource type"
-description: "Disable and delete is a complex type of accessReviewApplyAction that indicates disabling any B2B guest user who is denied in an access review for 30 days, then subsequently deleting their account."
+description: "Disable and delete any B2B guest user who is denied in an access review."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The [accessReviewApplyAction](accessreviewapplyaction.md) object disables a B2B guest user who is denied in an access review for 30 days, and then deletes their account.
+Disable any B2B guest user who is denied in an access review for 30 days, and then subsequently delete their account. This option does not contain any configuration options.
 
 Inherits from [accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 

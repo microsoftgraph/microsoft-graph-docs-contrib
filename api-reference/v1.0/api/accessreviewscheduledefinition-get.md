@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
+To retrieve the instances of the access review series, use the [list accessReviewInstance](accessreviewinstance-list.md) API.	
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -75,19 +77,9 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.accessReviewScheduleDefinition",
     "id": "d6bf2f6c-2f6c-d6bf-6c2f-bfd66c2fbfd6",
     "displayName": "Review example",
-    "createdDateTime": "2021-04-27T17:13:13.3388935Z",
-    "lastModifiedDateTime": "2021-04-27T17:13:13.3388935Z",
     "status": "Applying",
-    "descriptionForAdmins": "Review of guests in a microsoft 365 group",
-    "descriptionForReviewers": "Please review the B2B guest accounts in this group",
-    "createdBy": {
-        "id": "5555556e-fce3-4e2d-b28e-4ac0c7d2fa10",
-        "displayName": "Administrator",
-        "userPrincipalName": "admin@microsoft.com"
-    },
     "scope": {
         "@odata.type": "#microsoft.graph.accessReviewQueryScope",
         "query": "/v1.0/groups/4444d821-ca3b-45cc-98ee-54c00a04deef/transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
@@ -136,3 +128,9 @@ Content-Type: application/json
   }
 }
 ```
+
+## See also
+
+- [Create accessReviewScheduleDefinition](accessreviewscheduledefinition-post.md)
+- [List accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
+- [List accessReviewInstance](accessreviewinstance-list.md)
