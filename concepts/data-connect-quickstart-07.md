@@ -8,16 +8,22 @@ In this section we will be building your first ASP.NET project application for t
 
 1. In the **New Project** dialog, do the following.
 
-   1. Select **Templates > Visual C# > Web**.
-   1. Select **ASP.NET Web Application (.NET Framework)**.
-   1. Enter **EmailMetrics** for the name of the project.
+    1. Search **ASP.NET Web Application** in the search box and select the **ASP.NET Web Application (.NET Framework)** option.
+    1. Click on **Next**.
 
-        ![Visual-Studio-Create-ASP.NET-App](images/data-connect-vs-create-app.png)
+        ![A screenshot of the Visual Studio user interface showing the options to create a new project using ASP.NET Web Application.](images/data-connect-vs-create-app.png)
 
-   1. Select **OK**. In the **New ASP.NET Web Application Project** dialog, select **MVC** and select **OK**.
+    1. Enter **EmailMetrics** for the name of the project.
+    1. Select **.NET Framework 4.7.2** for the framework option.
+    1. Select **Create**.
 
     > [!IMPORTANT]
-    > Ensure that you enter the exact same name for the Visual Studio Project that is specified in these tutorial instructions. The Visual Studio Project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio Project name specified in these instructions. If you use a different project name the code will not compile unless you adjust all the namespaces to match the Visual Studio Project name you enter when you create the project.
+    > Ensure that you enter the exact same name for the Visual Studio Project that is specified in this quick start instructions. The Visual Studio Project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio Project name specified in these instructions. If you use a different project name the code will not compile unless you adjust all the namespaces to match the Visual Studio Project name you enter when you create the project.
+
+    1. In the new **ASP.NET Web Application** project dialog, select MVC.
+    1. Select **Create**.
+
+    ![A screenshot of the Visual Studio interface showing the options to choose an Model-View-Controller (MVC) ASP.NET Web application.](images/data-connect-vs-create-app-mvc.png)
 
 ## Add and configure your Azure Storage as a Connected Service
 
@@ -25,17 +31,28 @@ In this section we will be building your first ASP.NET project application for t
 
     ![Visual-Studio-Add-Connected-Service](images/data-connect-vs-add-connected-service-sa.png)
 
-1. On the **Connected Services** dialog, select **Cloud Storage with Azure Storage**.
+1. On the **Connected Services** dialog, select the green **+** sign which is located in the upper-right corner of the dialog.
 
-1. On the **Azure Storage** dialog, select the storage account where you exported the data to in the previous exercise and select **Add**.
+1. In the **Add dependency** dialog, select **Azure Storage** and select **Next**.
 
-1. This will install the necessary NuGet packages for the project.
+    ![A screenshot of the Visual Studio interface showing the add dependecy dialog for the Azure Storage option.](images/data-connect-vs-add-dependency-azsa.png)
+
+1. In the **Azure Storage** dialog, select the subscription and storage account where you exported the data in the previous exercise, select **Next**.
+
+    ![A screenshot of the Visual Studio interface showing the Configure Azure Storage, where you select the subscription and storage account.](images/data-connect-vs-configure-az-storage.png)
+
+1. Provide the **Azure Storage connection** a name of **AzureStorageConnectionString** and select **Next**.
+1. Select **Finish**.
+
+    ![A screenshot of the Visual Studio interface showing the Configure Azure Storage summary.](images/data-connect-vs-configure-sa-summary.png)
 
 ## Create a new model class that will be used to store the email metrics
 
-1. In the  **Solution Explorer** tool window, right-click the Models folder and select Add > Class.
+1. In the  **Solution Explorer** tool window, right-click the **Models** folder and select **Add > Class**.
 
-1. In the Add New Item dialog, select Class, set the name of the file to EmailMetric.cs and select Add.
+    ![A screenshot of the Visual Studio interface showing how you can add a new class by right-clicking in the models folder.](images/data-connect-vs-add-new-model-class.png)
+
+1. In the **Add New Item** dialog, select **Class**, set the name of the file to _EmailMetric.cs_ and select **Add**.
 
 1. Add the following code to the class EmailMetric you just created.
 
@@ -47,6 +64,8 @@ In this section we will be building your first ASP.NET project application for t
 ## Create a new controller that will calculate and display the results
 
 1. Right-click the **Controllers** folder and select **Add > Controller**.
+
+    ![A screenshot of the Visual Studio interface showing how you can add a new controller by right-clicking in the controllers folder.](images/data-connect-vs-add-new-controller.png)
 
 1. In the **Add Scaffold** dialog, select **MVC 5 Controller - Empty** and select **Add**.
 
@@ -66,80 +85,82 @@ In this section we will be building your first ASP.NET project application for t
     using Newtonsoft.Json.Linq;
     ```
 
-1. Add the following code to the **EmailMetricsController** class. These will be used to connect to the Azure Storage Account that contain the exported data.
+1. Add the following code to the **EmailMetricsController** class. These will be used to connect to the **Azure Storage Account** that contains the exported data.
 
     ```csharp
-    CloudStorageAccount _storageAccount;
-    CloudBlobClient _storageClient;
-    CloudBlobContainer _storageContainer;
+    private const string connectionStringName = "AzureStorageConnectionString";
+    private const string emailBlobName = "maildump";
+
     ```
 
-1. Add the following method to the **EmailMetricsController** class. This will process an Azure blob and update a collection representing the email accounts and how many recipients there were combined across all emails found for the extracted accounts.
+1. Add the following method to the **EmailMetricsController** class. This will process an **Azure Blob** and update a collection representing the email accounts and how many recipients there were combined across all emails found for the extracted accounts.
 
     ```csharp
-    private void ProcessBlobEmails(List<Models.EmailMetric> emailMetrics, CloudBlob emailBlob)
+    private async Task ProcessBlobEmails(List<Models.EmailMetric> emailMetrics, BlobClient emailBlob)
     {
-        using (var reader = new StreamReader(emailBlob.OpenRead()))
+        using (var stream = new MemoryStream())
         {
-            string line;
-            while ((line = reader.ReadLine()) != null)
+            var response = await emailBlob.DownloadToAsync(stream);
+            var pos = stream.Seek(0, SeekOrigin.Begin);
+
+            using (var reader = new StreamReader(stream))
             {
-                var jsonObj = JObject.Parse(line);
 
-                // extract sender
-                var sender = jsonObj.SelectToken("Sender.EmailAddress.Address")?.ToString();
-
-                // extract and count up recipients
-                var totalRecipients = 0;
-                totalRecipients += jsonObj.SelectToken("ToRecipients").Children().Count();
-                totalRecipients += jsonObj.SelectToken("CcRecipients").Children().Count();
-                totalRecipients += jsonObj.SelectToken("BccRecipients").Children().Count();
-
-                var emailMetric = new Models.EmailMetric();
-                emailMetric.Email = sender;
-                emailMetric.RecipientsToEmail = totalRecipients;
-
-                // if already have this sender...
-                var existingMetric = emailMetrics.FirstOrDefault(metric => metric.Email == emailMetric.Email);
-                if (existingMetric != null)
+                string line;
+                while ((line = reader.ReadLine()) != null)
                 {
-                    existingMetric.RecipientsToEmail += emailMetric.RecipientsToEmail;
-                }
-                else
-                {
-                    emailMetrics.Add(emailMetric);
+                    var jsonObj = JObject.Parse(line);
+
+                    // extract sender
+                    var sender = jsonObj.SelectToken("Sender.EmailAddress.Address")?.ToString();
+                    // No sender - skip this one
+                    if (string.IsNullOrEmpty(sender)) continue;
+
+                    // extract and count up recipients
+                    var totalRecipients = 0;
+                    totalRecipients += jsonObj.SelectToken("ToRecipients")?.Children().Count() ?? 0;
+                    totalRecipients += jsonObj.SelectToken("CcRecipients")?.Children().Count() ?? 0;
+                    totalRecipients += jsonObj.SelectToken("BccRecipients")?.Children().Count() ?? 0;
+
+                    var emailMetric = new Models.EmailMetric();
+                    emailMetric.Email = sender;
+                    emailMetric.RecipientsToEmail = totalRecipients;
+
+                    // if already have this sender...
+                    var existingMetric = emailMetrics.FirstOrDefault(metric => metric.Email == emailMetric.Email);
+                    if (existingMetric != null)
+                    {
+                        existingMetric.RecipientsToEmail += emailMetric.RecipientsToEmail;
+                    }
+                    else
+                    {
+                        emailMetrics.Add(emailMetric);
+                    }
                 }
             }
         }
     }
     ```
 
-1. Add the following method to the **EmailMetricsController** class. This will enumerate through all blobs in the specified Azure Storage account's specified container and send each one to `ProcessBlobEmails()` method added in the last step.
+1. Add the following method to the **EmailMetricsController** class. This will enumerate through all blobs in the specified **Azure Storage** account's specified container and send each one to `ProcessBlobEmails()` method added in the last step.
 
     ```csharp
-    private List<Models.EmailMetric> ProcessBlobFiles()
+    private async Task<List<Models.EmailMetric>> ProcessBlobFiles()
     {
         var emailMetrics = new List<Models.EmailMetric>();
+        var connectionString = ConfigurationManager.ConnectionStrings[connectionStringName];
 
-        // connect to the storage account
-        _storageAccount = CloudStorageAccount.Parse(ConfigurationManager.AppSettings["AzureStorageConnectionString-1"]);
-        _storageClient = _storageAccount.CreateCloudBlobClient();
+        // Connect to the storage account
+        var containerClient = new BlobContainerClient(connectionString.ConnectionString, emailBlobName);
 
-        // connect to the container
-        _storageContainer = _storageClient.GetContainerReference("maildump");
-
-        // get a list of all emails
-        var blobResults = _storageContainer.ListBlobs();
-
-        // process each email
-        foreach (IListBlobItem blob in blobResults)
+        foreach (var blob in containerClient.GetBlobs())
         {
-            if (blob.GetType() == typeof(CloudBlockBlob))
+            if (blob.Properties.BlobType == BlobType.Block &&
+                // Don't process blobs in the metadata folder
+                !blob.Name.StartsWith("metadata/"))
             {
-                var cloudBlob = (CloudBlockBlob)blob;
-                var blockBlob = _storageContainer.GetBlobReference(cloudBlob.Name);
-
-                ProcessBlobEmails(emailMetrics, blockBlob);
+                var blobClient = containerClient.GetBlobClient(blob.Name);
+                await ProcessBlobEmails(emailMetrics, blobClient);
             }
         }
 
@@ -152,9 +173,9 @@ In this section we will be building your first ASP.NET project application for t
     ```csharp
     [HttpPost, ActionName("ShowMetrics")]
     [ValidateAntiForgeryToken]
-    public ActionResult ShowMetrics()
+    public async Task<ActionResult> ShowMetrics()
     {
-        var emailMetrics = ProcessBlobFiles();
+        var emailMetrics = await ProcessBlobFiles();
 
         return View(emailMetrics);
     }
@@ -164,13 +185,15 @@ In this section we will be building your first ASP.NET project application for t
 
 1. In the  **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder and select **Add > View**.
 
-    ![Visual-Studio-Add-View-Index-1](images/data-connect-vs-add-view.png)
+    ![A screenshot of the Visual Studio interface showing how to add a new view in the EmailMetrics folder within the Views folder.](images/data-connect-vs-add-view.png)
 
-1. In the **Add View** dialog, set the View name to **Index**, leave the remaining input controls to their default values, and select **Add**.
+1. In the **Add New Scaffolded Item** dialog box, select **MVC 5 View**, then select **Add**.
 
-    ![Visual-Studio-Add-View-Index-2](images/data-connect-vs-add-view-index.png)
+1. In the **Add View** dialog, set the **View** name to **Index**, leave the remaining input controls to their default values, and select **Add**.
 
-1. Update the markup in the new Views/EmailMetrics/Index.cshtml to the following. This will add a form with a single button that will submit an HTTP POST to the custom controller action added in the last step.
+    ![A screenshot of the Visual Studio interface showing how to add an new view called index.](images/data-connect-vs-add-view-index.png)
+
+1. Update the markup in the new **Views > EmailMetrics > _Index.cshtml_** to the following. This will add a form with a single button that will submit an HTTP POST to the custom controller action added in the last step.
 
     ```html
     @{
@@ -180,7 +203,7 @@ In this section we will be building your first ASP.NET project application for t
     <h2>Email Metrics</h2>
     ```
 
-1. This application will look at the email data for emails extracted to the Azure Blob Storage account and display the total number of recipients from each sender.
+1. This application will look at the email data for emails extracted to the **Azure Blob Storage** account and display the total number of recipients from each sender.
 
     ```html
     @using (Html.BeginForm("ShowMetrics", "EmailMetrics", FormMethod.Post))
@@ -206,9 +229,12 @@ In this section we will be building your first ASP.NET project application for t
     - **Template**: List
     - **Model class**: EmailMetric (EmailMetric.Models)
 
-        ![Visual-Studio-Add-View-ShowMetrics](images/data-connect-vs-add-view-showmetrics.png)
+        ![A screenshot of the Visual Studio interface showing how to add an new view called ShowMetrics.](images/data-connect-vs-add-view-showmetrics.png)
 
-1. Update the markup in the new _Views/EmailMetrics/ShowMetrics.cshtml_ to the following. This will display the results of the calculations.
+    >[!TIP]
+    > In case you can't see the **EmailMetric** model in the dropdown box, please build the solution.
+
+1. Update the markup in the new **Views > EmailMetrics > _ShowMetrics.cshtml_** to the following. This will display the results of the calculations.
 
     ```html
     @model IEnumerable<EmailMetrics.Models.EmailMetric>
@@ -238,14 +264,11 @@ In this section we will be building your first ASP.NET project application for t
 
 ## Update the navigation to have a way to get to the new controller
 
-1. In the **Solution Explorer** tool window, locate and open the file _Views/Shared/_Layout.cshtml_.
-1. Replace the following line...
+1. In the **Solution Explorer** tool window, locate and open the file **Views > Shared > _Layout.cshtml_**.
+1. Replace the contents with the following code.
 
     ```html
-    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-
-    ... with the following line to update the menu item.
-
+    <!-- new code -->
     <li>@Html.ActionLink("Email Metrics", "Index", "EmailMetrics")</li>
     ```
 
@@ -257,8 +280,8 @@ In this section we will be building your first ASP.NET project application for t
 
 1. On the **Email Metrics** page, select the **View email metrics** button.
 
-    ![Visual-Studio-Select-view-email-metrics-button](images/data-connect-vs-select-view-metrics.png)
+    ![A screenshot of the built ASP.NET Web application interface showing the view email metrics button.](images/data-connect-vs-select-view-metrics.png)
 
 1. When the page loads, you will see a list of emails addresses that were found among all emails with a sum of all the recipients sent between them, as shown from a small sample set in a test email extract in the following figure.
 
-    ![Visual-Studio-View-Email-Metrics](images/data-connect-vs-show-email-metrics.png)
+    ![A screenshot of the built ASP.NET Web application interface showing the view email metrics results.](images/data-connect-vs-show-email-metrics.png)
