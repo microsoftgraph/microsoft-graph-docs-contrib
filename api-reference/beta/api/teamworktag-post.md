@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a standard tag for members in the team. Create a new [teamworkTag](../resources/teamworktag.md) object.
+Create a standard [tag](../resources/teamworktag.md) for members in the team. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the tag. The value can not be more than 40 characters.|
+|displayName|String|Name of the tag. The value cannot be more than 40 characters.|
 |members| [teamworkTagMember](../resources/teamworktagmember.md) collection |Members of the team to add to the tag. Set the user identifier property of each member. Members count should not be more than 25.|
 
 
@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [teamwork
 ## Examples
 
 ### Request
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_teamworktag_from"
