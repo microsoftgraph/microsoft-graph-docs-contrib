@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# removeAccessApplyAction resource type
+# accessReviewnotificationrecipientqueryscope resource type
 
 Namespace: microsoft.graph
 

@@ -23,7 +23,7 @@ Represents an Azure AD [access review](accessreviewsv2-root.md) notification eve
 | Property                     | Type     | Description                          |
 | :--------------------------- | :------  | :----------                          |
 | notificationTemplateType  |String  | Indicates what type of access review email should be sent. Supported template type is `CompletedAdditionalRecipients` which sends a notification to recipient of review completion.|
-| notificationRecipientScope |[accessreviewnotificationrecipientscope"](../resources/accessreviewnotificationrecipientscope.md)  | Determines who the notification email will be sent to.|
+| notificationRecipientScope |[accessreviewnotificationrecipientscope](../resources/accessreviewnotificationrecipientscope.md)  | Determines who the notification email will be sent to.|
 
 ## Relationships
 None.
