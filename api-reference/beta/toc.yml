@@ -9482,7 +9482,7 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
-        - name: Cloud PC role management
+        - name: Role management
           href: resources/rolemanagement.md
           items:
           - name: Role definition
