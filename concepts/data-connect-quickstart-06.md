@@ -75,6 +75,8 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
+---
+
 ## Verify extracted data from Microsoft 365 to Azure Storage Blob
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
