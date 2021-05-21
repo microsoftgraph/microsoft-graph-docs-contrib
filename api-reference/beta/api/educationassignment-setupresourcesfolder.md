@@ -12,6 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a SharePoint folder to upload files for a given [educationAssignment](../resources/educationassignment.md). 
+
 The teacher determines the resources to upload in the assignment's folder. 
 
 ## Permissions

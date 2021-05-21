@@ -1,6 +1,6 @@
 ---
 title: "Get educationAssignment"
-description: " teachers and applications can see all assignments in a class."
+description: "Get the properties and relationships of an assignment."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of an assignment. Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
+Get the properties and relationships of an assignment. 
+
+Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
