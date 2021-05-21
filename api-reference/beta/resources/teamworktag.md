@@ -1,6 +1,6 @@
 ---
 title: "teamworkTag resource type"
-description: "Tags provide a flexible way for customers to classify users or groups based on a common attribute"
+description: "Represents a tag associated with a team."
 author: "anniecolonna"
 localization_priority: Normal
 ms.prod: "teamwork"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a tag associated with a team.
+Represents a tag associated with a team. 
 
 Tags provide a flexible way for customers to classify users or groups based on a common attribute within a team. For example, a Nurse or Manager or Designer tag will enable users to reach groups of people in Teams without having to type every single name.
 
@@ -26,7 +26,7 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |[Create teamworkTag](../api/teamworktag-post.md)|[teamworkTag](../resources/teamworktag.md)|Create a new [teamworkTag](../resources/teamworktag.md) object.|
 |[Get teamworkTag](../api/teamworktag-get.md)|[teamworkTag](../resources/teamworktag.md)|Read the properties and relationships of a [teamworkTag](../resources/teamworktag.md) object.|
 |[Update teamworkTag](../api/teamworktag-update.md)|[teamworkTag](../resources/teamworktag.md)|Update the properties of a [teamworkTag](../resources/teamworktag.md) object.|
-|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Deletes a [teamworkTag](../resources/teamworktag.md) object.|
+|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a [teamworkTag](../resources/teamworktag.md) object.|
 
 ## Properties
 |Property|Type|Description|
