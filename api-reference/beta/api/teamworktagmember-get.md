@@ -77,7 +77,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.teamworkTagMember",
     "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjI2QzYjJiM2ViLWM0N2YtNDViOS05NWYyLWIyZjJlZjYyMTVjZQ==",
-    "displayName": "Sample user name",
+    "displayName": "Alex Wilbur",
     "tenantId": "18be64a9-c73a-4862-bccc-76c31ef09b9d",
     "userId": "92f6952f-61ca-4a94-8910-508a240bc167"
   }
