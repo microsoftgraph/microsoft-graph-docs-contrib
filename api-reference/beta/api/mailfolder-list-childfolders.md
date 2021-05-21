@@ -249,13 +249,12 @@ The next example uses the `includeHiddenFolders` query parameter to get a list o
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailfolder_get_hiddenchildfolders"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders?includeHiddenFolders=true
 ```
 
