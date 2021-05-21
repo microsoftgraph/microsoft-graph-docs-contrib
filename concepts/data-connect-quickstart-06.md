@@ -18,10 +18,6 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 # [PowerShell](#tab/PowerShell)
 
-> [!NOTE]
-> If you approved the request using the Microsoft 365 Admin Center, you can skip this section.
-> In this step you will use Exchange Online PowerShell to find data requests that are pending consent and approve them so the Azure Data Factory pipeline(s) can continue.
-
 1. Open Windows PowerShell.
 1. Ensure that your PowerShell session has enabled remotely signed scripts.
 
