@@ -66,7 +66,7 @@ Use the following steps to interact with a request using the Exchange Online Pow
    >**Note:** The context field of the data access request describes the parameters and properties of the copy activity.
 
    ```powershell
-   (Get-ElevatedAccessRequest -RequestId $requestId).Context | ConvertFrom-Json
+   Get-ElevatedAccessRequest -RequestId $requestId).Context | ConvertFrom-Json
    ```
 
    You'll get a response that looks like the following.
@@ -135,9 +135,9 @@ Use the following steps to interact with a request using the PAM web experience:
 
 1. Sign in to the Microsoft 365 admin portal using admin credentials and go to the [Privileged Access Managment approval user experience](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess) page. This will show you all the access requests (pending/approved/expired/denied).
 
-On the resulting page, select the request that you are interested in. To select deny list for privacy scrubbing, click the **DenyList** dropdown, select the group that needs to be scrubbed, and then select **Approve**.
+2. On the resulting page, select the request that you're interested in. To select a deny list for privacy scrubbing, click the **DenyList** dropdown, select the group that needs to be scrubbed, and then select **Approve**.
 
-To revoke a previously approved request, select the approved request that needs to be revoked, and choose **Revoke**. The next attempt to move data using that approval will fail.
+3. To revoke a previously approved request, select the approved request that needs to be revoked, and choose **Revoke**. The next attempt to move data using that approval will fail.
 
 ### Approval behavior
 
