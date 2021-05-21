@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. An actual call will return all the properties.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -30,7 +30,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |[List submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
 |[List outcomes](../api/educationsubmission-list-outcomes.md) |[educationOutcome](educationoutcome.md) collection| Get an **educationOutcome** object collection.|
 |[return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|A teacher uses return to indicate that the grades/feedback can be shown to the student.|
-|[Set up submission specific resources folder](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission. |
+|[Set up submission specific resources folder](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Create a SharePoint folder (under pre-defined location) to upload files as submission resources. |
 |[submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the assignment. This will copy the resources into the **submittedResources** folder for grading and updates the status.|
 |[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This will copy the resources into the **workingResources** folder for grading and updates the status.|
 

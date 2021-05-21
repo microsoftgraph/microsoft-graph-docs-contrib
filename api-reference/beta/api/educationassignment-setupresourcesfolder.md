@@ -36,7 +36,7 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 Ok` response code. The body will contain the assignment model.
+If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) object in the request body.
 
 ## Example
 The following example shows how to call this API.
@@ -44,10 +44,7 @@ The following example shows how to call this API.
 The following is an example of a request.
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "educationassignment_publish_1"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/setUpResourcesFolder
 ```
@@ -74,10 +71,9 @@ POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/
 The following is an example of a response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
-} -->
+  "blockType": "request",
+  "name": "educationassignment_setupresourcesfolder"
+}-->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
