@@ -1,5 +1,5 @@
 ---
-title: "Get teamworkTag in a team"
+title: "Get teamworkTag"
 description: "Read the properties and relationships of a teamworkTag object."
 author: "anniecolonna"
 localization_priority: Normal
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a standard tag in a team. Read the properties and relationships of a [teamworkTag](../resources/teamworktag.md) object.
+Get a standard tag in a team. This operation reads the properties and relationships of a [teamworkTag](../resources/teamworktag.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
