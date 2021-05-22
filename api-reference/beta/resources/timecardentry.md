@@ -20,7 +20,7 @@ Represents a specific [timeCard](timecard.md) entry.
 |-----------------------|---------------|---------------------------------------------------------------------------|
 | clockInEvent       |[timeCard](timecard.md)    | The clock-in event of the **timeCard**.|
 | clockOutEvent			        |[timeCard](timecard.md)  |The clock-out event of the **timeCard**. |
-| breaks 	|`Collection(self.timeCardBreak)`    |The list of breaks associated with the **timeCard**.|
+| breaks 	|`Collection(timeCardBreak)`    |The list of breaks associated with the **timeCard**.|
 
 
 ## JSON representation

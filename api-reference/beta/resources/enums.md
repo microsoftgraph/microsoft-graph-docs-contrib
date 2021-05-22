@@ -938,6 +938,15 @@ Namespace: microsoft.graph
 |timeOff|
 |timeOffRequest|
 
+### confirmedBy values
+
+| Member
+|:-----------------
+| none|
+| user|
+| manager|
+| unknownFutureValue|
+
 ### timeZoneStandard values
 
 | Member

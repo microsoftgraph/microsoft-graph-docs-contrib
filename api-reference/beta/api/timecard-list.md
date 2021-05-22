@@ -58,6 +58,12 @@ If successful, this method returns a `200 OK` response code and a list of [timeC
 ### Request
 The following is an example of the request. 
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "timecard-list"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards?$top=100&$filter=state eq 'onBreak'&$orderBy=clockIn/dateTime desc
 ```

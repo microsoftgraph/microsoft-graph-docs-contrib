@@ -18,7 +18,7 @@ Represents timeclock settings for a [schedule](schedule.md).
 ## Properties
 |Property               |Type           |Description                                                                |
 |-----------------------|---------------|---------------------------------------------------------------------------|
-| approvedLocation |`self.GeoCoordinates`  |The aprroved location of timeClock, captured by existing GeoCoordinates entity. |
+| approvedLocation | `microsoft.graph.geoCoordinates`  |The aprroved location of timeClock, captured by existing geoCoordinates entity. |
 
 
 ## JSON representation

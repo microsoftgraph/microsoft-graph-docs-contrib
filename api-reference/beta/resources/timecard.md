@@ -22,8 +22,8 @@ Represents a timecard entry in the schedule.
 |[List](../api/timecard-list.md) | [timeCard](timecard.md) collection | Get the list of **timecard** objects in this schedule.|
 |[Create](../api/timecard-post.md) | [timeCard](timecard.md) | Create a new **timecard** object.|
 |[Get](../api/timecard-get.md) | [timeCard](timecard.md) | Get a **timecard** object by ID.|
-|[Put](../api/timecard-put.md) | [timeCard](timecard.md) | Replace a **timecard** object.|
-|[Patch](../api/timecard-patch.md) | [timeCard](timecard.md) | Update a **timecard** object.|
+|[Replace](../api/timecard-replace.md) | [timeCard](timecard.md) | Replace a **timecard** object.|
+|[Update](../api/timecard-update.md) | [timeCard](timecard.md) | Update a **timecard** object.|
 |[Delete](../api/timecard-delete.md) | None | Delete a **timecard** object from the schedule.|
 |[clockIn](../api/timecard-clockin.md) | [timeCard](timecard.md) | Clock in to start a **timecard**.|
 |[clockOut](../api/timecard-clockout.md) | [timeCard](timecard.md) | Clock out to end an open **timecard**.|
@@ -42,7 +42,7 @@ Represents a timecard entry in the schedule.
 | notes			        |`microsoft.graph.itemBody`  |Notes about the **timeCard**. |
 | breaks 	|`Collection(timeCardBreak)`    |The list of breaks associated with the **timeCard**.|
 | originalEntry| [timeCardEntry](../resources/timecardentry.md) | The original **timeCardEntry** of the **timeCard**, before user edits. |
-| confirmedBy |`confirmedBy`    | Indicate if this **timeCard** entry is confirmed. |
+| confirmedBy |`confirmedBy`    | Indicate if this **timeCard** entry is confirmed. Possible values are `none`, `user`, `manager`, `unknownFutureValue`.|
 |createdDateTime|`Edm.dateTimeOffset`| The timestamp in which the **timeCard** was created. |
 |createdBy|`IdentitySet`| Identity of the person who created the entity. |
 |lastModifiedDateTime|`dateTimeOffset`| The timestamp in which the **timeCard** was last modified.|
@@ -55,7 +55,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.timecard",
+  "@odata.type": "microsoft.graph.timeCard",
    "baseType":"microsoft.graph.changeTrackedEntity"
 }-->
 
@@ -78,7 +78,7 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "timecard resource",
+  "description": "timeCard resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

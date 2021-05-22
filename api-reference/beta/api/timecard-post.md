@@ -56,8 +56,16 @@ If successful, this method returns a `201 Created` response code and a [timeCard
 ### Request
 The following is an example of the request. 
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "timecard-post"
+}-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards
+Content-type: application/json
+
 {
   "onBehalfOfUserId":"a3601044-a1b5-438e-b742-f78d01d68a67",
   "clockInEvent":{
