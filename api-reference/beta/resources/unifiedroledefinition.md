@@ -13,7 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A unifiedRoleDefinition is a collection of permissions listing the operations that can be performed, such as read, write, and delete.
+A unifiedRoleDefinition is a collection of permissions listing the operations, such as read, write, and delete, that can be performed by an RBAC provider, as part of Microsoft 365 RBAC [role management](rolemanagement.md).
+
+The following RBAC providers are currently supported:
+- cloud PC 
+- directory (Azure AD) 
+
+The cloud PC RBAC provider currently supports only the [list](../api/rbacapplication-list-roledefinitions.md) and [get](../api/unifiedroledefinition-get.md) operations.
 
 ## Methods
 

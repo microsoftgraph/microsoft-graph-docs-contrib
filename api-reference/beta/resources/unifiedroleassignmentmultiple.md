@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A unifiedRoleAssignmentMultiple is used to grant access to resources. It represents a role definition assigned to an array of principals (typically a user) over an array of scope. An example of such an RBAC provider is Microsoft Intune. In Microsoft Intune, you can create a role assignment with multiple principals and multiple scopes.
+A unifiedRoleAssignmentMultiple is used to grant access to resources, as part of Microsoft 365 RBAC [role management](rolemanagement.md). It represents a role definition assigned to an array of principals (typically a user) over an array of scopes. 
+
+Examples of such RBAC providers are Microsoft Intune and cloud PC. You can create a role assignment with multiple principals and multiple scopes.
 
 Providing either **directoryScopeIds** or **appScopeIds** is required.
 
@@ -21,9 +23,9 @@ Providing either **directoryScopeIds** or **appScopeIds** is required.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-list.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Read a list of unifiedRoleAssignmentMultiple objects and their properties. |
+| [List roleAssignments](../api/rbacapplicationmultiple-list-roleassignments.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) collection | Read a list of unifiedRoleAssignmentMultiple objects and their properties. |
 | [Get unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-get.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Read properties and relationships of unifiedRoleAssignmentMultiple object. |
-| [Create unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-post.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Create a new unifiedRoleAssignmentMultiple by posting to the roleAssignment collection. |
+| [Create unifiedRoleAssignmentMultiple](../api/rbacapplicationmultiple-post-roleassignments.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Create a new unifiedRoleAssignmentMultiple by posting to the roleAssignment collection. |
 | [Update unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-update.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Update an existing unifiedRoleAssignmentMultiple object. |
 | [Delete unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-delete.md) | None | Delete unifiedRoleAssignmentMultiple object. |
 
