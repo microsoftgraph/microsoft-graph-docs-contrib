@@ -1,5 +1,5 @@
 ---
-title: "Create MailFolder"
+title: "Create child folder"
 description: "Use this API to create a new child mailfolder."
 author: "abheek-das"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create MailFolder
+# Create child folder
 
 Namespace: microsoft.graph
 
-Use this API to create a new child mailfolder.
+Use this API to create a new child [mailFolder](../resources/mailfolder.md).
 
 If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
 
@@ -51,6 +51,7 @@ In the request body, provide a JSON object with the following parameters. **disp
 | Parameter | Type | Description |
 |:----------|:-----|:------------|
 |displayName|String|The display name of the new folder.|
+|isHidden|Boolean|Indicates whether the new folder is hidden. The default value is `false`. Setting the property is optional. Once set, you cannot update this property. See more information in [Hidden mail folders](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## Response
 

@@ -4633,7 +4633,7 @@ items:
           href: api/mailfolder-delete.md
         - name: Copy mail folder
           href: api/mailfolder-copy.md
-        - name: Create mail child folder
+        - name: Create child folder
           href: api/mailfolder-post-childfolders.md
         - name: Create message in folder
           href: api/mailfolder-post-messages.md          
