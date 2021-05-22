@@ -131,7 +131,7 @@ Content-type: application/json
             "notes":{
                "content": "Starting break late to make up for late clockin",
                "contentType": "text"
-            },
+            }
          },
          "end":null
       }
@@ -159,7 +159,7 @@ Content-type: application/json
                "notes":{
                    "content": "Starting break late to make up for late clockin",
                    "contentType": "text"
-               },
+               }
             },
             "end":null
          }
