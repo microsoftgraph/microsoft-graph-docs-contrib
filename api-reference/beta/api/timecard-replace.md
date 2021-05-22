@@ -156,7 +156,7 @@ Content-type: application/json
                "notes":{
                    "content": "Starting break late to make up for late clockin",
                    "contentType": "text"
-                },
+                }
             },
             "end":null
          }
@@ -168,7 +168,7 @@ Content-type: application/json
       "notes":{
                "content": "Started late due to traffic in CA 237",
                 "contentType": "text"
-         },
+         }
    },
    "clockOutEvent":null,
    "notes":{
@@ -188,7 +188,7 @@ Content-type: application/json
             "notes":{
                 "content": "Starting break 15 mins late to make up for late clockin",
                 "contentType": "text"
-            },
+            }
          },
          "end":null
       }
