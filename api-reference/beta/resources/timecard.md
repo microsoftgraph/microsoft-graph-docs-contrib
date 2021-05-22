@@ -36,11 +36,11 @@ Represents a timecard entry in the schedule.
 |-----------------------|---------------|---------------------------------------------------------------------------|
 | id			        |`string`  |ID of the **timeCard**.|
 | userId			        |`string` |User ID to which  the **timeCard** belongs. |
-| state 		        |`timeCardState`  | The current state of the **timeCard** during its life cycle.|
+| state 		        |`timeCardState`  | The current state of the **timeCard** during its life cycle.Possible values are: `clockedIn`, `onBreak`, `clockedOut`, `unknownFutureValue`.|
 | clockIn       |[timeCardEvent](../resources/timecardevent.md)    | The clock-in event of the **timeCard**. |
 | clockOut			        |[timeCardEvent](../resources/timecardevent.md)  |The clock-out event of the **timeCard**. |
 | notes			        | [itemBody](itembody.md)  |Notes about the **timeCard**. |
-| breaks 	|`Collection(timeCardBreak)`    |The list of breaks associated with the **timeCard**.|
+| breaks 	|[timeCardBreak](timecardbreak.md) collection  |The list of breaks associated with the **timeCard**.|
 | originalEntry| [timeCardEntry](../resources/timecardentry.md) | The original **timeCardEntry** of the **timeCard**, before user edits. |
 | confirmedBy |`confirmedBy`    | Indicate if this **timeCard** entry is confirmed. Possible values are `none`, `user`, `manager`, `unknownFutureValue`.|
 |createdDateTime|`Edm.dateTimeOffset`| The timestamp in which the **timeCard** was created. |
