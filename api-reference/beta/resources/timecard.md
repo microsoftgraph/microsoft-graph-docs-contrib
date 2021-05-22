@@ -39,7 +39,7 @@ Represents a timecard entry in the schedule.
 | state 		        |`timeCardState`  | The current state of the **timeCard** during its life cycle.|
 | clockIn       |[timeCardEvent](../resources/timecardevent.md)    | The clock-in event of the **timeCard**. |
 | clockOut			        |[timeCardEvent](../resources/timecardevent.md)  |The clock-out event of the **timeCard**. |
-| notes			        |`microsoft.graph.itemBody`  |Notes about the **timeCard**. |
+| notes			        | [itemBody](itembody.md)  |Notes about the **timeCard**. |
 | breaks 	|`Collection(timeCardBreak)`    |The list of breaks associated with the **timeCard**.|
 | originalEntry| [timeCardEntry](../resources/timecardentry.md) | The original **timeCardEntry** of the **timeCard**, before user edits. |
 | confirmedBy |`confirmedBy`    | Indicate if this **timeCard** entry is confirmed. Possible values are `none`, `user`, `manager`, `unknownFutureValue`.|
