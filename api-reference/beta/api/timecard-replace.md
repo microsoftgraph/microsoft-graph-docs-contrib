@@ -107,7 +107,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeCard"
+  "@odata.type": "microsoft.graph.timeCard",
   "name": "timecard_replace"
 } -->
 
@@ -253,7 +253,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeCard"
+  "@odata.type": "microsoft.graph.timeCard",
   "name": "timecard_replace_2"
 } -->
 
