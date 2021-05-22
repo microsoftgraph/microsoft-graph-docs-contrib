@@ -43,7 +43,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "@odata.type":"#microsoft.graph.accessReviewNotificationRecipientItem"  
+  "@odata.type":"#microsoft.graph.accessReviewNotificationRecipientItem",
   "notificationRecipientScope": {
       "@odata.type":"#microsoft.graph.accessReviewNotificationRecipientQueryScope"                
     },
