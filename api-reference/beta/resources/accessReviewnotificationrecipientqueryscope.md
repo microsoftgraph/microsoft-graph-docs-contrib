@@ -15,16 +15,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-- **accessReviewNotificationRecipientQueryScope** is a derived type of `accessReviewNotificationRecipientScope` that is expressed as an OData query. It allows notification recipients to be specified as a static list of users (i.e., specific users, group owners, group members).
+An **accessReviewNotificationRecipientQueryScope** object specifies a static list of recipients (for example, specific users, group owners, group members) to receive access review notifications.
 
-Inherits from [accessreviewnotificationrecipientscope](../resources/accessreviewnotificationrecipientscope.md).
+Inherits from [accessReviewNotificationRecipientScope](../resources/accessreviewnotificationrecipientscope.md).
 
 ## Properties
 | Property | Type | Description |
 | :-------------------------| :---------- | :---------- |
-| query | String | This represents the query for what the recipients are. See table for examples. |
-| queryType | String | The type of query. Example,  `MicrosoftGraph`. |
-| queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (i.e., ./manager) is specified. |
+| query | String | This represents the query for who the recipients are. For example, /groups/{group id}/members for group members and /users/{user id} for a specific user. |
+| queryType | String | Indicates the type of query. Allowed value is `MicrosoftGraph`. |
+| queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query that is, `./manager`) is specified. |
+
+
+### Supported queries for accessReviewNotificationRecipientQueryScope
+
+|Scenario| query | queryType | queryRoot |
+|--|--|--|--|
+| Group member as notification recipient | /groups/{group id}/members |MicrosoftGraph||
+| Specific user as notification recipient | /users/{user id} |MicrosoftGraph||
 
 ## Relationships
 None.
