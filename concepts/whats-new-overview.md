@@ -25,6 +25,10 @@ GA of the reporting API to [list](/graph/api/provisioningobjectsummary-list) act
 
 ## May 2021: New in preview only
 
+### Education
+- [Create an assignment resources folder](/graph/api/resources/educationAssignment-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true) to upload files as [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resources. The property **resourcesFolderUrl** on [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) points to the same folder location.
+- [Create a submission resources folder](/graph/api/resources/educationSubmission-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true) to upload files as [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true) resources. The property **resourcesFolderUrl** on [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true) points to the same folder location.
+
 ### Devices and apps | Cloud PC
 Request the least privileged application permissions, `CloudPC.Read.All` or `CloudPC.ReadWrite.All`, to access methods of the following resources:
   - Read and write operations, and [reprovision](/graph/api/cloudpc-reprovision?view=graph-rest-beta&preserve-view=true) method of [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
