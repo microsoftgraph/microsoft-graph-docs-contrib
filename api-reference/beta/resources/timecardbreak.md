@@ -19,9 +19,9 @@ Represents a specific [timeCard](timecard.md) break.
 |Property               |Type           |Description                                                                |
 |-----------------------|---------------|---------------------------------------------------------------------------|
 | breakId			        |`Edm.string`  |ID of the **timeCardBreak**.|
-| start			        |[timeCard](timecardEvent.md)    | The start event of the **timeCardBreak**.|
-| end			        |[timeCard](timecard.md)    | The start event of the **timeCardBreak**.|
-| notes			        |`microsoft.graph.itemBody`  | Notes about the **timeCardBreak**.|
+| start			        |[timeCardEvent](timecardevent.md)    | The start event of the **timeCardBreak**.|
+| end			        |[timeCardEvent](timecardevent.md)    | The start event of the **timeCardBreak**.|
+| notes			        |[itemBody](itembody.md)  | Notes about the **timeCardBreak**.|
 
 
 ## JSON representation
