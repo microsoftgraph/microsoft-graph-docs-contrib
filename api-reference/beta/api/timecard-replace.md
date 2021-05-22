@@ -108,7 +108,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type": "microsoft.graph.timeCard"
 } -->
 
 ```http
