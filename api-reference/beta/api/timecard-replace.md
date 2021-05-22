@@ -53,8 +53,7 @@ If successful, this method returns a `200 OK` response code and a [timeCard](../
 
 ## Examples
 
-### Example 1: Update a timeCard
-#### Request
+### Request
 
 The following is an example of the request.
 <!-- {
@@ -99,7 +98,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 
 The following is an example of the response. 
 
@@ -197,105 +196,6 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Enable timeclock for the schedule along with location detection
-
-#### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request"
-  "name": "timecard_replace_2"
-}-->
-
-```http
-PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
-Content-type: application/json
-
-{     
-    "enabled": true,  
-
-    "timeZone": "America/Chicago",  
-
-    "provisionStatus": "Completed",  
-
-    "provisionStatusCode": null,  
-
-    "openShiftsEnabled": true,  
-
-    "swapShiftsRequestsEnabled": true,  
-
-    "offerShiftRequestsEnabled": true,  
-
-    "timeOffRequestsEnabled": true,  
-
-    "timeClockEnabled": true,
-
-    "timeClockSettings": {
-
-        "approvedLocation": {
-
-           "altitude": 1024.13,
-
-           "latitude": 26.13246,
-
-           "longitude": 24.34616
-
-        }
-     }
-
- }
- ```
-
-#### Response
-
-The following is an example of the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.timeCard",
-  "name": "timecard_replace_2"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{     
-
-    "enabled": true,  
-
-    "timeZone": "America/Chicago",  
-
-    "provisionStatus": "Completed",  
-
-    "provisionStatusCode": null,  
-
-    "openShiftsEnabled": true,  
-
-    "swapShiftsRequestsEnabled": true,  
-
-    "offerShiftRequestsEnabled": true,  
-
-    "timeOffRequestsEnabled": true,  
-
-    "timeClockEnabled": true,  
-
-    "timeClockSettings": {
-
-        "approvedLocation": {
-
-           "altitude": 1024.13,
-
-           "latitude": 26.13246,
-
-           "longitude": 24.34616
-
-        }
-     }
-
- }
- ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
