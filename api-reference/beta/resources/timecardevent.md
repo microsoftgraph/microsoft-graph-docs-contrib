@@ -20,7 +20,7 @@ Represents a specific [timeCard](timecard.md) event.
 |-----------------------|---------------|---------------------------------------------------------------------------|
 | dateTime 			        |`Edm.dateTimeOffset`  |The time the entry is recorded. |
 | atApprovedLocation |`Edm.boolean `  |Indicates whether the entry was recorded at the approved location. |
-| notes			        |[itemBody(itembody.md)  | Notes about the **timeCardEvent**.|
+| notes			        |[itemBody](itembody.md)  | Notes about the **timeCardEvent**.|
 
 
 ## JSON representation
