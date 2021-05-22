@@ -51,9 +51,10 @@ In the request body, supply a JSON representation of a [timeCardEntry](../resour
 
 If successful, this method returns a `200 OK` response code and a [timeCard](../resources/timecard.md) object in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Update a timeCard
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -97,10 +98,8 @@ Content-type: application/json
    ]
 }
 ```
----
 
-
-### Response
+#### Response
 
 The following is an example of the response. 
 
@@ -109,6 +108,7 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.timeCard"
+  "name": "timecard_replace"
 } -->
 
 ```http
@@ -197,13 +197,14 @@ Content-type: application/json
 }
 ```
 
-## Example to enable timeclock for the schedule along with location detection
+### Example 2: Enable timeclock for the schedule along with location detection
 
-### Request
+#### Request
 
 The following is an example of the request.
 <!-- {
   "blockType": "request"
+  "name": "timecard_replace_2"
 }-->
 
 ```http
@@ -245,12 +246,20 @@ Content-type: application/json
  }
  ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.timeCard"
+  "name": "timecard_replace_2"
+} -->
+
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
 
 {     
 
