@@ -19,8 +19,8 @@ Represents a specific [timeCard](timecard.md) event.
 |Property               |Type           |Description                                                                |
 |-----------------------|---------------|---------------------------------------------------------------------------|
 | dateTime 			        |`Edm.dateTimeOffset`  |The time the entry is recorded. |
-| atApprovedLocation |`Edm.boolean `  |If the entry was recorded at the approved location. |
-| notes			        |`microsoft.graph.itemBody`  | Notes about the **timeCardEvent**.|
+| atApprovedLocation |`Edm.boolean `  |Indicates whether the entry was recorded at the approved location. |
+| notes			        |[itemBody](itembody.md)  | Notes about the **timeCardEvent**.|
 
 
 ## JSON representation

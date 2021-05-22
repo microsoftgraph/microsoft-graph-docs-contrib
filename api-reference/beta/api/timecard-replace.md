@@ -51,11 +51,15 @@ In the request body, supply a JSON representation of a [timeCardEntry](../resour
 
 If successful, this method returns a `200 OK` response code and a [timeCard](../resources/timecard.md) object in the response body.
 
-## Example
+## Examples
 
 ### Request
 
 The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "timecard_replace"
+}-->
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,7 +112,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type": "microsoft.graph.timeCard",
+  "name": "timecard_replace"
 } -->
 
 ```http
@@ -157,7 +162,7 @@ Content-type: application/json
                "notes":{
                    "content": "Starting break late to make up for late clockin",
                    "contentType": "text"
-                },
+                }
             },
             "end":null
          }
@@ -169,7 +174,7 @@ Content-type: application/json
       "notes":{
                "content": "Started late due to traffic in CA 237",
                 "contentType": "text"
-         },
+         }
    },
    "clockOutEvent":null,
    "notes":{
@@ -189,7 +194,7 @@ Content-type: application/json
             "notes":{
                 "content": "Starting break 15 mins late to make up for late clockin",
                 "contentType": "text"
-            },
+            }
          },
          "end":null
       }
@@ -197,96 +202,6 @@ Content-type: application/json
 }
 ```
 
-## Example to enable timeclock for the schedule along with location detection
-
-### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request"
-}-->
-
-```http
-PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
-Content-type: application/json
-
-{     
-    "enabled": true,  
-
-    "timeZone": "America/Chicago",  
-
-    "provisionStatus": "Completed",  
-
-    "provisionStatusCode": null,  
-
-    "openShiftsEnabled": true,  
-
-    "swapShiftsRequestsEnabled": true,  
-
-    "offerShiftRequestsEnabled": true,  
-
-    "timeOffRequestsEnabled": true,  
-
-    "timeClockEnabled": true,
-
-    "timeClockSettings": {
-
-        "approvedLocation": {
-
-           "altitude": 1024.13,
-
-           "latitude": 26.13246,
-
-           "longitude": 24.34616
-
-        }
-     }
-
- }
- ```
-
-### Response
-
-The following is an example of the response.
-
-```http
-HTTP/1.1 200 OK
-
-{     
-
-    "enabled": true,  
-
-    "timeZone": "America/Chicago",  
-
-    "provisionStatus": "Completed",  
-
-    "provisionStatusCode": null,  
-
-    "openShiftsEnabled": true,  
-
-    "swapShiftsRequestsEnabled": true,  
-
-    "offerShiftRequestsEnabled": true,  
-
-    "timeOffRequestsEnabled": true,  
-
-    "timeClockEnabled": true,  
-
-    "timeClockSettings": {
-
-        "approvedLocation": {
-
-           "altitude": 1024.13,
-
-           "latitude": 26.13246,
-
-           "longitude": 24.34616
-
-        }
-     }
-
- }
- ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
