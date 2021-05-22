@@ -9712,8 +9712,8 @@ items:
           href: api/educationassignment-publish.md
         - name: List submissions for assignment
           href: api/educationassignment-list-submissions.md
-        - name: Get resource folder URL (deprecated)
-          href: api/educationassignment-getresourcesfolderurl.md
+        - name: Set up assignment resources folder
+          href: api/educationassignment-setupresourcesfolder.md
         - name: Get rubric attached to assignment
           href: api/educationassignment-get-rubric.md
         - name: List categories
@@ -9773,7 +9773,7 @@ items:
           href: api/educationsubmissionresource-delete.md
         - name: Get submission
           href: api/educationsubmission-get.md
-        - name: Set up submission resource folder
+        - name: Set up submission resources folder
           href: api/educationsubmission-setupresourcesfolder.md
         - name: Submit submission
           href: api/educationsubmission-submit.md
