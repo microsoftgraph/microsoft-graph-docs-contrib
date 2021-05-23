@@ -18,8 +18,8 @@ Send the message specified in the request body using either JSON or MIME format.
 When using JSON format you can include an [attachment](../resources/attachment.md) and use a [mention](../resources/mention.md) to call out another user in the new message.
 
 When using MIME format:
-- Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
-- Add any attachments and S/MIME properties into the MIME content.
+- Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- Add any attachments and S/MIME properties to the MIME content.
 
 This method saves the message in the **Sent Items** folder.
 
@@ -42,10 +42,10 @@ POST /users/{id | userPrincipalName}/sendMail
 ```
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | JSON: `application/json` <br/> MIME: `text/plain` |
+| Name       | Type | Description| 
+|:---------------|:--------|:----------
+| Authorization  | string  | Bearer {token}. Required.|
+| Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content.|
 
 ## Request body
 When using JSON format, provide a JSON object with the following parameters.
@@ -65,12 +65,12 @@ When specifying the body in MIME format, provide the MIME content as **a base64-
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
-If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".
 
 ## Examples
 ### Example 1: Send a new email using JSON format
 Here is an example of how to call this API.
-##### Request 1
+#### Request
 Here is an example of the request to create and send a message on the fly.
 
 # [HTTP](#tab/http)
@@ -126,7 +126,7 @@ Content-length: 512
 
 ---
 
-##### Response 1
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -136,7 +136,8 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-##### Request 2
+### Example 2: Send a message that includes an @-mention
+#### Request
 The next example shows a message by the signed-in user to Samantha Booth. The message also includes a mention of another user, Dana Swope.
 
 # [HTTP](#tab/http)
@@ -190,7 +191,7 @@ Content-length: 344
 
 ---
 
-##### Response 2
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -200,8 +201,8 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-##### Request 3
-The next example creates a message with custom Internet message headers and sends the message.
+### Example 3: Send a message that includes custom Internet message headers 
+#### Request
 
 # [HTTP](#tab/http)
 
@@ -260,7 +261,7 @@ Content-type: application/json
 
 ---
 
-##### Response 3
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -270,10 +271,8 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-##### Request 4
-
-The next example creates a message with a file attachment and sends the message.
-
+### Example 4: Sends a message with a file attachment
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -329,7 +328,7 @@ Content-type: application/json
 ---
 
 
-##### Response 4
+#### Response
 
 Here is an example of the response.
 
@@ -341,8 +340,8 @@ Here is an example of the response.
 ```http
 HTTP/1.1 202 Accepted
 ```
-### Example 2: Send a new message using MIME format
-##### Request
+### Example 5: Send a new message using MIME format
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -362,7 +361,7 @@ MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
 cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
 ```
-##### Response
+#### Response
 Here is an example of the response.
 
 <!-- {

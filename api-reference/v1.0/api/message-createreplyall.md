@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 Create a draft to reply to the sender and all recipients of a [message](../resources/message.md) in either JSON or MIME format. 
 
-When using JSON format, you can:
+When using JSON format:
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
 - If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties. 
-- [Update](../api/message-update.md) the draft later to add reply content to the **body** or change other message properties.
+- You can [update](../api/message-update.md) the draft later to add reply content to the **body** or change other message properties.
 
 When using MIME format:
-- Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
-- Add any attachments and S/MIME properties into the MIME content.
+- Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- Add any attachments and S/MIME properties to the MIME content.
 
 [Send](../api/message-send.md) the draft message in a subsequent operation.
 
@@ -53,13 +53,13 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 ## Request body
 This method does not require a request body. 
 
-However, for creating a replyAll draft using MIME format, provide the MIME content with the applicable Internet Message Headers, all encoded in **base64** format in the request body.
+However, for creating a replyAll draft using MIME format, provide the MIME content with the applicable Internet message headers, all encoded in **base64** format in the request body.
 
 ## Response
 
 If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
 
-If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".
 
 ## Examples
 ### Example 1: Create a message draft in JSON format to reply-all to an existing message
@@ -156,7 +156,7 @@ Content-type: application/json
     "hasAttachments": false,
     "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
     "subject": "Internal Resume Submission: Sales Associate",
-    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resu=e, which you can access here...",
+    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here...",
     "importance": "normal",
     "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
     "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
@@ -169,7 +169,7 @@ Content-type: application/json
     "inferenceClassification": "focused",
     "body": {
         "contentType": "text",
-        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resu=e, which you can access here... Regards,Alex"
+        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here... Regards,Alex"
     },
     "sender": {
         "emailAddress": {

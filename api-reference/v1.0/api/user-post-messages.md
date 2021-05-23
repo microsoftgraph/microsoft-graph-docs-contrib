@@ -18,10 +18,10 @@ When using JSON format, you can:
 - [Update](../api/message-update.md) the draft later to add content to the **body** or change other message properties.
 
 When using MIME format:
-- Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
-- Add any attachments and S/MIME properties into the MIME content.
+- Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- Add any attachments and S/MIME properties to the MIME content.
 
-You can save the draft in any folder. To save it in the Drafts folder, use the /messages shortcut.
+By default, this operation saves the draft in the Drafts folder.
 
 [Send](/graph/api-reference/beta/api/message-send.md) the draft message in a subsequent operation.
 
@@ -56,17 +56,17 @@ When using JSON format, provide a JSON representation of [message](../resources/
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-When specifying the body in MIME format, provide the MIME content with the applicable Internet Message Headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.
+When specifying the body in MIME format, provide the MIME content with the applicable Internet message headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.
 
 ## Response
 
 If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
 
-If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".
 
 ## Examples
 ### Example 1: Create a new message draft using JSON format
-##### Request 1
+#### Request 
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -113,7 +113,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
-##### Response 1
+#### Response 
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -175,8 +175,9 @@ Content-type: application/json
 }
 ```
 
-##### Request 2
-The next example adds a couple of customer Internet message headers when creating the message draft.
+### Example 2: Create message draft that includes custom message headers
+#### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -231,7 +232,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
-##### Response 2
+#### Response
 Here is an example of the response. Note: Internet message headers are not returned by default in a POST response. The response object shown here may also be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -295,8 +296,8 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a new message draft using MIME format
-##### Request
+### Example 3: Create a new message draft using MIME format
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -311,7 +312,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 
 ```
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -336,7 +337,7 @@ Content-type: application/json
     "hasAttachments": false,
     "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
     "subject": "Internal Resume Submission: Sales Associate",
-    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resu=e, which you can access here...",
+    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here...",
     "importance": "normal",
     "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
     "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
@@ -349,7 +350,7 @@ Content-type: application/json
     "inferenceClassification": "focused",
     "body": {
         "contentType": "text",
-        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resu=e, which you can access here... Regards,Alex"
+        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here... Regards,Alex"
     },
     "sender": {
         "emailAddress": {

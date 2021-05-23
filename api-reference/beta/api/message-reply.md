@@ -15,13 +15,13 @@ Namespace: microsoft.graph.
 
 Reply to the sender of a [message](../resources/message.md) using either JSON or MIME format.
 
-When using JSON format, you can:
+When using JSON format:
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
 - If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 
 When using MIME format:
-- Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
-- Add any attachments and S/MIME properties into the MIME content.
+- Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- Add any attachments and S/MIME properties to the MIME content.
 
 This method saves the message in the **Sent Items** folder.
 
@@ -61,13 +61,13 @@ When using JSON format, include a JSON object with the following parameters.
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md) | Any writeable properties to update in the reply message.|
 
-When specifying the body in MIME format, provide the MIME content with the applicable Internet Message Headers, all encoded in **base64** format in the request body. This method uses the sender of the original message as recipient.
+When specifying the body in MIME format, provide the MIME content with the applicable Internet message headers, all encoded in **base64** format in the request body. This method uses the sender of the original message as recipient.
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
-If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".
 
 ## Examples
 ### Example 1: Reply to a message in JSON format

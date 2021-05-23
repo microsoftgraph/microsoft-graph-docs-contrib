@@ -6,33 +6,47 @@ localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Send emails with MIME content
+# Send messages with MIME content
 
-## Overview
-Email clients have the ability to send emails through Exchange in a MIME message format and communicate across multiple email platforms.
+Many email clients can send messages through Exchange in a MIME message format and communicate across multiple email platforms.
 
-Supported MIME features:
-- Send emails with MIME content.
-- Send replies, reply-alls and forwarding emails.
-- Create drafts in Exchange with MIME content.
-- Attach S/MIME signatures to emails.
-- S/MIME encrypted email contents.
+The Outlook mail API supports the following actions on messages with MIME content:
+- Send messages.
+- Send reply or reply-all messages.
+- Forward messages.
+- Create draft messages.
+- Attach S/MIME signatures to a messages.
+- Encrypt message content using S/MIME.
 
 > [!IMPORTANT]
-> * S/MIME provides two key features: digital signatures for verification of sender and email contents, and message encryption for preventing third parties from viewing email contents.
-> * Add S/MIME digital signatures and encrypted contents to emails only in their MIME message format.
+> * S/MIME provides two key features: digital signatures to verify sender and email contents, and message encryption to prevent third parties from viewing email contents.
+> * Add S/MIME digital signatures and encrypted content to emails only in their MIME message format.
 
-Visit the documentation about [getting MIME content of a message](../concepts/outlook-get-mime-message.md) for more information about MIME.
+For more information on MIME format, see [getting MIME content of a message](outlook-get-mime-message.md).
 
-## Details
-There are two supported formarts for creating a [message](/graph/api-reference/v1.0/resources/message.md): (1) JSON metadata (2) MIME content. Specify the selected format in the request header.
+## Use cases
+| Use cases | API method |
+| ------| ----- |
+| Create a message draft | [createMessage](/graph/api/user-post-messages) |
+| Send an email | [sendMail](/graph/api/user-sendmail) |
+| Reply to a message | [reply](/graph/api/message-reply) |
+| Create a draft to reply to a message | [createReply](/graph/api/message-createreply) |
+| ReplyAll to a message | [replyAll](/graph/api/message-replyall) | 
+| Create a draft to replyAll to a message | [createReplyAll](/graph/api-reference/api/message-createreplyall) |
+| Forward a message | [forward](/graph/api-reference/api/message-forward) |
+| Create a draft to forward a message | [createForward](/graph/api-reference/api/message-createforward) | 
 
-1. Specify `Content-Type: application/json` to use JSON format in the request body.
-2. Specify `Content-Type: text/plain` to use MIME format in the request body.
 
-When specifying the body in MIME format, provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body. Microsoft Graph does not support editing or updating MIME properties individually.
+## Specify request header and MIME message body
+You can create a [message](/graph/api-reference/v1.0/resources/message) in JSON or MIME format. Specify the intended format in the request header:
 
-MIME content with Internet Message Headers (before encoding):
+- `Content-Type: application/json` to use JSON format in the request body.
+- `Content-Type: text/plain` to use MIME format in the request body.
+
+When specifying the body in MIME format, provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), and encode them in **base64** format in the request body. Microsoft Graph does not support editing or updating MIME properties individually.
+
+## Example
+The following is an example of MIME content with Internet message headers (before encoding):
 
 <!-- { "blockType": "ignored" } -->
 
@@ -135,7 +149,7 @@ Adele</div>
 
 ```
 
-Base64-Encoded string for Graph:
+The following is the corresponding base64-encoded string:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -144,7 +158,7 @@ UmVjZWl2ZWQ6IGZyb20gY29udG9zby5jb20gKDEwLjE5NC4yNDEuMTk3KSBieSAKY29udG9zby5jb20g
 
 ```
 
-When including attachments, append the file information and add the Content-Transfer-Encoding in base64 to the MIME content:
+To include a file attachment, append the file metadata and `Content-Transfer-Encoding` header in base64 to the MIME content:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -170,21 +184,9 @@ CgAAAA==
 
 ```
 
-## Use cases
-| Use cases | Resources |
-| ------| ----- |
-| Create a message draft | [createMessage](/graph/api/user-post-messages.md) |
-| Send an email | [sendMail](/graph/api/user-sendmail.md) |
-| Reply to a message | [reply](/graph/api/message-reply.md) |
-| Create a draft to reply to a message | [createReply](/graph/api/message-createreply.md) |
-| ReplyAll to a message | [replyAll](/graph/api/message-replyall.md) | 
-| Create a draft to replyAll to a message | [createReplyAll](/graph/api-reference/api/message-createreplyall.md) |
-| Forward a message | [forward](/graph/api-reference/api/message-forward.md) |
-| Create a draft to forward a message | [createForward](/graph/api-reference/api/message-createforward.md) | 
-
 ## Error conditions and messages
 
-|Scenario|Method|Code|Message|
+|Scenario|Operation|Error code|Error message|
 |--------|------|----|-------|
 | MIME content malformed, missing | POST, PUT | 400 | Invalid base64 string for MIME content. |
 

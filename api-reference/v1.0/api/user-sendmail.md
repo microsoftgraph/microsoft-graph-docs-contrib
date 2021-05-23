@@ -16,8 +16,8 @@ Send the message specified in the request body using either JSON or MIME format.
 When using JSON format you can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
 When using MIME format:
-- Provide the applicable [Internet Message Headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
-- Add any attachments and S/MIME properties into the MIME content.
+- Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
+- Add any attachments and S/MIME properties to the MIME content.
 
 This method saves the message in the **Sent Items** folder.
 
@@ -42,10 +42,10 @@ POST /users/{id | userPrincipalName}/sendMail
 ```
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | JSON: `application/json` <br/> MIME: `text/plain` |
+| Name       | Type | Description| 
+|:---------------|:--------|:----------
+| Authorization  | string  | Bearer {token}. Required.|
+| Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content.|
 
 ## Request body
 When using JSON format, provide a JSON object with the following parameters.
@@ -61,12 +61,12 @@ When specifying the body in MIME format, provide the MIME content as **a base64-
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
-If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: `Invalid base64 string for MIME content`.
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".
 
 ## Examples
 ### Example 1: Send a new email using JSON format
 Here is an example of how to call this API.
-##### Request 1
+##### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -124,7 +124,7 @@ Content-type: application/json
 ---
 
 
-##### Response 1
+#### Response
 Here is an example of the response.
 
 <!-- {
@@ -136,8 +136,9 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-##### Request 2
-The next example creates a message with custom Internet message headers and sends the message.
+### Example 2: Create a message with custom Internet message headers and send the message
+#### Request
+
 
 # [HTTP](#tab/http)
 
@@ -196,7 +197,7 @@ Content-type: application/json
 ---
 
 
-##### Response 2
+#### Response
 Here is an example of the response.
 
 <!-- {
@@ -208,8 +209,9 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-##### Request 3
-The next example creates a message with a file attachment and sends the message.
+### Example 3:  Create a message with a file attachment and send the message
+#### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -265,7 +267,7 @@ Content-type: application/json
 ---
 
 
-##### Response 3
+#### Response
 Here is an example of the response.
 
 <!-- {
@@ -276,8 +278,9 @@ Here is an example of the response.
 ```http
 HTTP/1.1 202 Accepted
 ```
-### Example 2: Send a new message using MIME format
-##### Request
+
+### Example 4: Send a new message using MIME format
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -298,7 +301,7 @@ cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
 
 ```
-##### Response
+#### Response
 Here is an example of the response.
 
 <!-- {
