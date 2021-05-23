@@ -494,12 +494,17 @@ items:
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways
                 href: change-notifications-delivery.md
-              - name: Get change notifications for chat and channel messages
-                href: teams-changenotifications-chatmessage.md
-                name: Get change notifications for team and channel events
-                href: teams-changenotifications-team-and-channels.md
-                name: Get change notifications for team membership
-                href: teams-changenotifications-teamMembership.md
+                name: Change notification in Microsoft Teams
+                displayName: Change notification in Microsoft Teams
+                items:
+                  - name: Overview
+                    href: change-notification-in-Microsoft-Teams-overview.md
+                  - name: Get change notifications for chat and channel messages
+                    href: teams-changenotifications-chatmessage.md
+                  - name: Get change notifications for team and channel events
+                    href: teams-changenotifications-team-and-channels.md
+                  - name: Get change notifications for team membership
+                    href: teams-changenotifications-teamMembership.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
           - name: Change tracking
