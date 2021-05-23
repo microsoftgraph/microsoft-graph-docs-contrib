@@ -1,9 +1,9 @@
 ---
 title: "authenticationMethodsRegistrationCampaign resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Settings to run campaigns to push users to setup targeted authentication methods."
+author: "mjsantani"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The Authentication Methods Registration Campaign provides a tool to admins to push users to setup targeted authentication methods. Users are nudged to setup the authentication method after they successfully complete a MFA challenge. This is currently scoped only to the Microsoft Authenticator app for MFA.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|**TODO: Add Description**|
-|includeTargets|[authenticationMethodsRegistrationCampaignIncludeTarget](../resources/authenticationmethodsregistrationcampaignincludetarget.md) collection|**TODO: Add Description**|
-|snoozeDurationInDays|Int32|**TODO: Add Description**|
-|state|advancedConfigState|**TODO: Add Description**. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`.|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Users and groups of users that are excluded from being nudged to setup the authentication method.|
+|includeTargets|[authenticationMethodsRegistrationCampaignIncludeTarget](../resources/authenticationmethodsregistrationcampaignincludetarget.md) collection|Users and groups of users that will be nudged to setup the authentication method.|
+|snoozeDurationInDays|Int32|Defines after how many days the user will see the nudge again if the user taps on "Not now" and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If value is “0” – User is nudged during every MFA attempt.|
+|state|advancedConfigState|Setting used to enable/disable the feature. The "default" value currently maps to "disabled". Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.

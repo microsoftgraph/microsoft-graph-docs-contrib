@@ -1,9 +1,9 @@
 ---
 title: "authenticationMethodsRegistrationCampaignIncludeTarget resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Allow users and groups of users to be nudged to set up targeted authentication methods."
+author: "mjsantani"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Users and groups targeted for authentication method registration campaigns. Please note: Of the users in this include target, only users and groups that are enabled by policy to setup the authentication method will be targeted.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
-|targetedAuthenticationMethod|String|**TODO: Add Description**|
-|targetType|authenticationMethodTargetType|**TODO: Add Description**. Possible values are: `user`, `group`, `unknownFutureValue`.|
+|id|String|Object ID of an Azure AD user or group.|
+|targetedAuthenticationMethod|String|The authentication method user is prompted to register. The only accepted value is currently 'microsoftAuthenticator'.|
+|targetType|authenticationMethodTargetType|Possible values are: `user`, `group`, `unknownFutureValue`.|
 
 ## Relationships
 None.
