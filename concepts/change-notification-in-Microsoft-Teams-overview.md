@@ -15,8 +15,8 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 ## Change notificaiton types
 In general every teams resource supports two type of change notification
-- **Change notification to track all changes related to a resource in a tenant** e.g. one can subscribe to change in messages in [channels(/chats/getAllMessages](link) acros teanant and get notified when ever a message is created in any channel in tenant
-- **Change notification to track all changes for a specific respource**  e.g. one can subscribe to change in messages in a particular channel [/teams/{id}/channels/{id}/messages](link) and get notified when ever a message is created in that channel
+- **Change notification to track all changes related to a resource in a tenant** e.g. one can subscribe to change in messages `channels(/chats/getAllMessages` across teanant and get notified when ever a message is created in any channel in tenant
+- **Change notification to track all changes for a specific respource**  e.g. one can subscribe to change in messages in a particular channel `/teams/{id}/channels/{id}/messages` and get notified when ever a message is created in that channel
 
 Check [Microsoft Graph change notifications](webhooks.md) to see what resources support what type of change notification.
  
