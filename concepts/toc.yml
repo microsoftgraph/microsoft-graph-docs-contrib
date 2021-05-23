@@ -162,10 +162,10 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Data access at scale
+      - name: Access data at scale
         displayName: Microsoft Graph Data Connect
         items:
-          - name: Data Connect overview
+          - name: Overview of Data Connect
             href: data-connect-concept-overview.md
           #- name: Build your first Data Connect application
            # href: data-connect-quickstart.yml
