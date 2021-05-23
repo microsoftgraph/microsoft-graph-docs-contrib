@@ -14,28 +14,20 @@ Change notifications enable you to subscribe to changes (create, update, and del
 > **Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
 ## Change notificaiton types
-In general every teams respurce supports two type of change notification
-- Change notification to track all changes related to a resource in a tenant, e.g. one can subscribe to change in messages in [channels(/chats/getAllMessages](link) acros teanant and get notified when ever a message is created in any channel in tenant
-- Change notification to track all changes for a specific respource - e.g. one can subscribe to change in messages in a particular channel [/teams/{id}/channels/{id}/messages](link) and get notified when ever a message is created in that channel
+In general every teams resource supports two type of change notification
+- **Change notification to track all changes related to a resource in a tenant** e.g. one can subscribe to change in messages in [channels(/chats/getAllMessages](link) acros teanant and get notified when ever a message is created in any channel in tenant
+- **Change notification to track all changes for a specific respource**  e.g. one can subscribe to change in messages in a particular channel [/teams/{id}/channels/{id}/messages](link) and get notified when ever a message is created in that channel
 
-check [page](link) to see what resources support what type of change notiificatoin.
-e.g. one can subscribe to change in messages in channels across team or subscribe to change in messages in a particular channel.
-To track all changes related to a resource in a tenant, you can use subscriptions at a tenant level. 
-
-
-
-## TO DO-----
-
-Teams change notification support bot [notification with resource data](Link ) and notification without resource data.
-
+Check [Microsoft Graph change notifications](webhooks.md) to see what resources support what type of change notification.
+ 
 
 ## Notification payloads
 
-Depending on your subscription, you can either get the notification with resource data, or notification without resource data. Subscribing with resource data allows you to get the message payload along with the notification, removing the need to call back and get the content.
+Depending on your subscription, you can either get the notification with resource data, or notification without resource data. Subscribing with resource data allows you to get the message payload along with the notification removing the need to call back and get the content.
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following. Below example shows notification corresponding to chat message resource, in actual notification **resource** and **resourceData** fied will represent the resource which has trigerred the notification.
+For notifications with resource data, the payload looks like the following. This payload is for notification corresponding to chat message resource, in actual notification **resource** and **resourceData** filed will represent the resource which has trigerred the notification.
 
 ```json
 {
@@ -127,7 +119,7 @@ The payload looks like the following. This payload is for a message sent in a ch
   }
 }
 ```
-Above example shows notification corresponding to chat message resource, in actual notification resource and resource data fied will represent the resource which has trigerred the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resurce. 
+Above example shows notification corresponding to chat message resource, in actual notification resource and resource data filed will represent the resource which has trigerred the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resurce. 
 
 > **Note** GET calls will always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation will return the updated resource.
 

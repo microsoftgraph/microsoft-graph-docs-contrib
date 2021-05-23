@@ -9,9 +9,6 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for team and channel using Microsoft Graph
 
-Change notifications enables you to subscribe to changes in a resource. For more details about creating and managing subscription see [Use the Microsoft Graph API to get change notifications](https://docs.microsoft.com/en-us/graph/api/resources/webhooks?view=preserve-view=true)
-
->**Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
 ### Subscribe to changes in any team at tenant level
 
