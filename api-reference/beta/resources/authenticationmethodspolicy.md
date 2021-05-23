@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodsPolicy resource type"
 description: "Authentication methods policies."
-author: "michmcla"
+author: "mmcla","mjsantani"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType

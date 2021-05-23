@@ -10468,6 +10468,13 @@ items:
           items:
           - name: Overview
             href: resources/authenticationmethodspolicies-overview.md
+          - name: Authentication method policy
+            href: resources/authenticationmethodspolicy.md
+            items:
+            - name: Get
+              href: api/authenticationmethodspolicy-get.md
+            - name: Update
+              href: api/authenticationmethodspolicy-update.md
           - name: FIDO2 policy
             href: resources/fido2authenticationmethodconfiguration.md
             items:

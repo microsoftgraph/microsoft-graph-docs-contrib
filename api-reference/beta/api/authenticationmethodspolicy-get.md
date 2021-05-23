@@ -1,7 +1,7 @@
 ---
 title: "Get authenticationMethodsPolicy"
 description: "Read the properties and relationships of an authenticationMethodsPolicy object."
-author: "michmcla"
+author: "mmcla","mjsantani"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
