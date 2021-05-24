@@ -113,9 +113,9 @@ To get change notifications for any change in channel's property across any chan
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
+|Delegated (work or school account) | Channel.ReadBasic, ChannelSettings.Read | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Channel.ReadBasic  ,ChannelSettings.Read   | beta |
+|Application | Channel.ReadBasic, ChannelSettings.Read   | beta |
 
 #### Example
 
