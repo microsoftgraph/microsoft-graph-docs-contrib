@@ -20,13 +20,13 @@ This article uses an AWS Azure AD application template as an example, but you ca
 
 This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
 
-1. Go to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
 3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
     ![Select the Microsoft Graph permissions](./images/application-saml-sso-configure-api/set-permissions.png)
         
-4. Scroll through the list of permissions to the `AppRoleAssignment` permissions, expand **AppRoleAssignment (1)**, and select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down the list of permissions to the `Application` permissions, expand **Application (2)**, and select the **Application.ReadWrite.All** permission. Continue to the `Policy` permissions, expand **Policy (13)**, and select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to the `User` permissions, expand **Users (8)**, and then select **User.ReadWrite.All**. 
+4. In the list of permissions, scroll to and expand **AppRoleAssignment (1)**, and then select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down and expand **Application (2)**, and then select the **Application.ReadWrite.All** permission. Continue to and expand **Policy (13)**, and then select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to and expand **Users (8)**, and then select **User.ReadWrite.All**.  
 
     ![Scroll to and select the approleassignment, application, and policy permissions](./images/application-saml-sso-configure-api/select-permissions.png)
 
