@@ -135,8 +135,11 @@ A [connection](/concepts/connecting-external-content-manage-connections.md) is a
 
 ```http
 POST /external/connections
+```
 
-Request 
+The following is an example of the request.
+
+```http
 POST https://graph.microsoft.com/beta/external/connections 
 Content-type: application/json 
 
@@ -145,8 +148,11 @@ Content-type: application/json
   "name": "Contoso Tasks", 
   "description": "Connection to index Contoso task management system" 
 } 
+```
 
-Response 
+The following is an example of the response.
+
+```http
 HTTP/1.1 201 Created 
 Content-type: application/json 
  
@@ -164,6 +170,8 @@ Content-type: application/json
 } 
 ```
 
+The following is a screenshot of the **Create connection** section.
+
  ![Screenshot of the Create connection section](./images/connectors-images/10-postman.png)
 
 ## Step 7 - Register connection schema
@@ -172,8 +180,11 @@ The connection schema determines how your content will be used in various Micros
 
 ```http
 POST /external/connections/{id}/schema 
+```
 
-Request 
+The following is an example of the request.
+
+```http
 POST https://graph.microsoft.com/beta/external/connections/contosotasks/schema 
 Content-type: application/json 
 Prefer: respond-async 
@@ -217,20 +228,31 @@ Prefer: respond-async
     } 
   ] 
 } 
+```
 
-Response 
+The following is an example of the response.
 
+```http
 HTTP/1.1 202 Accepted 
 Location: https://graph.microsoft.com/beta/external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
+```
 
-Note: Registering connection schema is an asynchronous operation, so do not ingest items into the connection until the connection schema is in the Completed state. To check connection schema status, execute the following request:
+> [!NOTE]
+> Registering connection schema is an asynchronous operation, so do not ingest items into the connection until the connection schema is in the Completed state. 
+>To check connection schema status, execute the following request:
+> ```http
+> GET /external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
+> ```
 
-GET /external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
-
+The following is another example of request.
+```http
 Request 
 GET https://graph.microsoft.com/beta/external/connections/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
+```
 
-Response 
+And next the respective example of response.
+
+```http
 HTTP/1.1 200 OK 
 Content-type: application/json 
 
@@ -243,25 +265,33 @@ Content-type: application/json
 }
 ```
 
+The following is a screenshot of the **Get operation status** section.
+
 ![Screenshot of the Get operation status section showing status in progress](./images/connectors-images/11-postman.png)
 
 After the connection schema operation status changes from **InProgress** to **Completed,** you can ingest items for the connection.
 
+The following screenshot shows the status as "completed".
+
  ![Screenshot of the Get operation status section showing status completed](./images/connectors-images/12-postman.png)
+
+The following screenshot shows the state as "draft".
+
  ![Screenshot of the Get operation status section showing state draft](./images/connectors-images/13-postman.png)
 
-After the connection state changes from **draft** to **ready** , you can ingest items into current connection.
+After the connection state changes from **draft** to **ready**, as showed in the next screenshot, you can ingest items into current connection.
 
 ![Screenshot of the Get operation status section showing state ready](./images/connectors-images/14-postman.png)
 
-## Step 8 - Add external group member (Optional)
+## Step 8 - Add external group member (optional)
 
-This step is optional. If your external service uses non-Azure AD ACLs, sync those permissions.  
+If your external service uses non-Azure AD ACLs, sync those permissions.  
 
-External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. Use `externalGroups` to represent non-Azure Active Directory groups or group-like constructs (such as Business units, Teams, and so on) that determine permission over the content in your external data source. See external groups.
+External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details see [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta).
+
+This is an example of a request.
 
 ```http
-Request 
 POST https://graph.microsoft.com/beta/external/connections/contosotasks/groups/31bea3d537902000/members 
 Content-Type: application/json 
  
@@ -271,8 +301,11 @@ Content-Type: application/json
   "type": "group", 
   "identitySource": "external" 
 } 
+```
 
-Response 
+And next is an example of the response.
+
+```http
 HTTP/1.1 201 Created 
 Content-Type: application/json 
 
@@ -284,6 +317,8 @@ Content-Type: application/json
 } 
 ```
 
+The following screenshot shows the **Create external group** section.
+
 ![Screenshot of the Create external group section](./images/connectors-images/15-postman.png)
 
 ## Step 9 - Ingest Items
@@ -294,9 +329,9 @@ If you have binary files, you must parse to get the metadata and a text version 
 
 You are responsible for converting your source permissions to grant or deny. Deny takes higher precedence over grant.
 
-```http
-Request 
+The following is an example of request.
 
+```http
 PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938 
 Content-type: application/json 
 
@@ -326,10 +361,12 @@ Content-type: application/json
     "type": "text" 
   } 
 } 
+```
 
-Response
+The following is an example of a successful response.
+
+```http
 HTTP/1.1 200 OK
-
 ```
 
 ## Error Handing
