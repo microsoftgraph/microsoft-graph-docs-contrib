@@ -4,6 +4,7 @@ description: "Learn how to use Microsoft Graph to manage items added by your app
 localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
+ms.prod: search
 ---
 <!---<author of this doc: rsamai>--->
 

@@ -4,6 +4,7 @@ description: "Microsoft Graph connector API limits"
 author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
+ms.prod: search
 ---
 
 # Microsoft Graph connector API limits

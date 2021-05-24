@@ -4,6 +4,7 @@ description: "Try connectors APIs using Postman"
 author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
+ms.prod: search
 ---
 
 # Use Postman with the Microsoft Graph connectors API

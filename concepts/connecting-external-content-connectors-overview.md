@@ -4,6 +4,7 @@ description: "Microsoft Graph connectors overview"
 author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
+ms.prod: search
 ---
 
 # Microsoft Graph connectors overview

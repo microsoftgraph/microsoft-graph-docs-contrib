@@ -4,6 +4,7 @@ description: "Microsoft Graph connectors API overview"
 author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
+ms.prod: search
 ---
 
 # Working with the connectors API
