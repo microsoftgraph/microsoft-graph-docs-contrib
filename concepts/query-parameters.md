@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 Use the `$count` query parameter to include a count of the total number of items in a collection alongside the page of data values returned from Microsoft Graph.
 
-> **Note:** `$count` can also be used as a [URL segment](#other-odata-url-capabilities) to retrieve the integer total of the collection. When it is used on resources that derive from [directoryObject](/graph/api/resources/directoryobject), it's supported only on [eventual consistency](#consistency-levels-and-query-parameters).
+> **Note:** `$count` can also be used as a [URL segment](#other-odata-url-capabilities) to retrieve the integer total of the collection. When it is used on resources that derive from [directoryObject](/graph/api/resources/directoryobject), it's supported only on [eventual consistency](#consistency-levels-and-querying-on-azure-ad-directory-objects).
 >
 > Use of `$count` is currently not supported in Azure AD B2C tenants.
 
@@ -126,7 +126,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
-The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only on [eventual consistency](#consistency-levels-and-query-parameters):
+The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only on [eventual consistency](#consistency-levels-and-querying-on-azure-ad-directory-objects):
 - [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [device](/graph/api/resources/device)
@@ -183,10 +183,10 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 - lambda operator any `any`
 - lambda operator all `all`
 - Starts with `startsWith`
-- Ends with `endsWith` (Supported on [eventual consistency](#consistency-levels-and-query-parameters) only and requires the `$count=true` query string)
+- Ends with `endsWith` (Supported on [eventual consistency](#consistency-levels-and-querying-on-azure-ad-directory-objects) only and requires the `$count=true` query string)
 - Contains `contains`
 
-> **Note:** Support for these operators varies by entity and some properties support `$filter` only on [eventual consistency](#consistency-levels-and-query-parameters). See the specific entity documentation for details.
+> **Note:** Support for these operators varies by entity and some properties support `$filter` only on [eventual consistency](#consistency-levels-and-querying-on-azure-ad-directory-objects). See the specific entity documentation for details.
 
 For some usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
 The following table shows some examples that use the `$filter` query parameter.
