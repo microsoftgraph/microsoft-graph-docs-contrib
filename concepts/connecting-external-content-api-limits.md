@@ -15,7 +15,7 @@ This topic describes implementation and operational limits for Microsoft Graph c
 
 | **Limit** | **Description** |
 | --- | --- |
-| **10 connections** | The maximum number of [connections](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) per Microsoft 365 tenant. |
+| **10 connections** | The maximum number of [connection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resources per Microsoft 365 tenant. |
 | **700,000 items** | The maximum number of [items](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) per connection. |
 | **70 GB** | The maximum byte size of a connection. |
 
