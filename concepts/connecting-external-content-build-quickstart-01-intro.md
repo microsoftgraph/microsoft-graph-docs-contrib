@@ -5,19 +5,20 @@ localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
-<!-- markdownlint-disable MD002 MD025 MD041 -->
+
 
 # Quickstart: Create your first custom Microsoft Graph connector
 
+<!-- markdownlint-disable MD002 MD025 MD041 -->
 <!--- # Introduction --->
 
-With Microsoft Graph connectors, you can add your own data into Microsoft Graph and have it power various Microsoft 365 experiences.
+Microsoft Graph connectors allow you to add your own data into Microsoft Graph and have it power various Microsoft 365 experiences.
 
-This .NET Core application shows you how to use the Microsoft Graph Connector API to create a customer connector and use it to power Microsoft Search. The sample uses a fictitious data appliance parts inventory for the Contoso Appliance Repair.
+This .NET Core application shows you how to use the Microsoft Graph Connector API to create a customer connector and use it to power Microsoft Search. The sample uses a mock-up data appliance parts inventory for the Contoso Appliance Repair.
 
 ## How does the sample work?
 
-:::image type="content" source="images/connectors-images/build1.png" alt-text="How does the sample work":::
+![Diagram showing how does the sample work](images/connectors-images/build1.png)
 
 ## Prerequisites
 
@@ -26,4 +27,3 @@ This .NET Core application shows you how to use the Microsoft Graph Connector AP
 3. Install the [Entity Framework Core Tools](/ef/core/miscellaneous/cli/dotnet) (dotnet tool install --global dotnet-ef)
 4. Install a tool to update a SQLite database. For example, the [DB Browser for SQLite](https://sqlitebrowser.org/).
 5. Download **ApplianceParts.csv** file from [https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv) and add it to the PartsInventoryConnector.csproj
-

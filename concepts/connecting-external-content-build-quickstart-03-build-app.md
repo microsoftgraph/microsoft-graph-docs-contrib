@@ -8,19 +8,23 @@ doc_type: conceptualPageType
 
 # Build the application
 
+<!-- markdownlint-disable MD002 MD025 MD041 -->
+
 ## Create a .NET Core console app
 
-1. Launch Visual Studio 2019 and navigate to File > New > Project.
-2. Select the Console App (.Net Core) template, and select Next.
-3. Enter the Project name **PartsInventoryConnector** and select the checkbox for "**Place solution and project in the same directory**".
+1. Launch Visual Studio 2019 and navigate to **File** > **New** > **Project**.
+2. Select the **Console App (.Net Core)** template, and select **Next**.
+3. Type the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.
 
-:::image type="content" source="images/connectors-images/build7.png" alt-text="Configure your new project":::
+![Screenshot of the "Configure your new project" section](images/connectors-images/build7.png)
 
 ## Add nuget packages
 
-:::image type="content" source="images/connectors-images/build8.png" alt-text="Add nuget packages":::
+To add nuget packages first do a right click on **Project Solution** and **Open in Terminal**, as shown below.
 
-Right click on Solution and Open in Terminal window (Right Click on Project solution > Open in Terminal), and run the below CLI commands in the developer command prompt.
+![Screenshot showing the Open terminal option](images/connectors-images/build8.png)
+
+Then run the below CLI commands in the developer command prompt.
 
 ```dotnetcli
 dotnet add package CsvHelper --version 12.1.2

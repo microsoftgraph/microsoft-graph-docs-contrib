@@ -8,9 +8,9 @@ doc_type: conceptualPageType
 
 The access control list is used to specify who has permissions to view [external items](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in a Microsoft Graph connection, in Microsoft 365 experiences such as Search and Intelligent Discovery. For data sources that rely on Azure Active Directory users and groups, setting permissions on external items is as simple as associating the ACLs with an AAD user and group ID when creating or updating the external item as shown below.
 
-```json
+```html
 PUT https://graph.microsoft.com/beta/exernal/connections/{id}/items/{id}  
-Content-type: application/json  
+Content-type: application/html  
 {  
   "@odata.type": "microsoft.graph.externalItem",  
   "acl": [  
@@ -45,12 +45,16 @@ Here are two common non-AAD application-specific group examples.
 
 1. Microsoft Dynamics 365 allows customers to structure their CRMs with Business Units and Teams. The membership information for these Business Units and Teams is not stored in AAD.
 
-:::image type="content" source="images/connectors-images/bu-teams-D365.png" alt-text="Example of Business Units and Teams in Dynamics 365":::
+<!---Using html to adjust the size of the image --->
+<br><img src="images/connectors-images/bu-teams-D365.png" alt="Example of Business Units and Teams in Dynamics 365" style="width:400px;"/>
+
 *Figure 1. Business Units & Teams in Dynamics 365*
 
 2. Salesforce uses profiles, roles, and permission sets for authorization. These are specific to Salesforce, and the membership information is not available in AAD.
 
-:::image type="content" source="images/connectors-images/roles-salesforce.png" alt-text="Example of Roles in Salesforce":::
+<!---Using html to adjust the size of the image --->
+<br><img src="images/connectors-images/roles-salesforce.png" alt="Example of Roles in Salesforce" style="width:400px;"/>
+
 *Figure 2. Roles in Salesforce*
 
 ## Using external groups
@@ -69,7 +73,7 @@ External groups are scoped to a connection. For each application-specific, non-A
 > * The id field has a 128-character maximum limit.
 > * URL and  FileName Safe Base 64 Character Set are allowed.
 
-```json
+```html
 POST /connections/{id}/externalGroups   
 {  
 "id": "contosoEscalations",  
@@ -86,7 +90,7 @@ An external group can contain one or more of the following:
 After you create the group, you can add members to the group as shown below.
 
 
-```json
+```html
 POST /connections/{id}/externalgroups/{id}/externalGroupMembers  
 {  
     "id": "contosoSupport",  
@@ -95,7 +99,7 @@ POST /connections/{id}/externalgroups/{id}/externalGroupMembers 
 }
 ```
 
-```json
+```html
 POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers  
 {  
     "id": "25f143de-be82-4afb-8a57-e032b9315752",  
@@ -104,7 +108,7 @@ POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers 
 }
 ```
 
-```json
+```html
 POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers  
 {  
     "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b",  
@@ -117,9 +121,9 @@ POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers 
 
 You can use external groups when defining ACLs for external items. In addition to AAD users and AAD groups, an external item can have external groups in its ACEs, as shown below.
 
-```json
+```html
 PUT https://graph.microsoft.com/beta/external/connections/{id}/items/{id}  
-Content-type: application/json  
+Content-type: application/html  
 {  
   "@odata.type": "microsoft.graph.externalItem",  
   "acl": [  
@@ -153,17 +157,18 @@ Content-type: application/json 
   }  
 }
 ```
+
 > [!NOTE]
 > You can use external groups in the ACLs even before the groups are created.
 
 ### Keep external group memberships in sync
 
-You will need to ensure that external group memberships are up to date in Microsoft Graph. When memberships change in your custom group, make sure that the change is reflected in the external group at a time that works for your needs.
+You need to ensure that external group memberships are up to date in Microsoft Graph. When memberships change in your custom group, make sure that the change is reflected in the external group at a time that works for your needs.
 
 ### Manage external groups and membership
 
 You can use the Groups API to manage your external groups and group membership. See [externalGroup](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) and [externalGroupMember](/graph/api/resources/externalgroupmember?view=graph-rest-beta&preserve-view=true) for detailed API information.
 
-## Related
+<!---## Related
 
-Microsoft Graph connectors API overview (link to doc)
+Microsoft Graph connectors API overview (link to doc)--->

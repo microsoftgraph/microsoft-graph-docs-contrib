@@ -5,9 +5,10 @@ localization_priority: Priority
 author: mecampos
 doc_type: conceptualPageType
 ---
-<!-- markdownlint-disable MD002 MD041 -->
 
 # Register the application in the portal
+
+<!-- markdownlint-disable MD002 MD041 -->
 
 After all the prerequisites are in place, you will be able to register an application in the Azure AD admin center. The registration is necessary in order to authenticate the application and use it to make calls to the Microsoft Graph indexing API.
 
@@ -15,32 +16,32 @@ After all the prerequisites are in place, you will be able to register an applic
 2. Select **Azure Active Directory** in the left-hand pane, then select **App registrations** under Manage.
 3. Select **New registration**.
 
-:::image type="content" source="images/connectors-images/build2.png" alt-text="Contoso app registrations":::
+![Screenshot showing the "app registrations" section](images/connectors-images/build2.png)
 
 4. Complete the **Register an application** form with the following values, then select **Register**.
   a. **Name** : Parts Inventory Connector
   b. **Supported account types** : Accounts in this organizational directory only (Microsoft only - Single tenant)
   c. **Redirect URI** : Leave blank
 
-:::image type="content" source="images/connectors-images/build3-contoso-register-app.png" alt-text="Register an application":::
+![Screenshot showing the "register an application" section](images/connectors-images/build3-contoso-register-app.png)
 
 5. On the Parts Inventory Connector overview page, copy the values of **Application (client) ID and Directory (tenant) ID**. You will need both in the following section.
 
-:::image type="content" source="images/connectors-images/build3-contoso-partsinv.png" alt-text="Parts inventory connector":::
+![Screenshot showing the "parts inventory connector" section](images/connectors-images/build3-contoso-partsinv.png)
 
 6. Select **API Permissions** under **Manage**.
 7. Select **Add a permission** , then select **Microsoft Graph**.
 8. Select **Application permissions** , then select the **ExternalItem.ReadWrite.All** permission. Select **Add permissions**.
 
-:::image type="content" source="images/connectors-images/build4.png" alt-text="Request API permissions":::
+![Screenshot showing the "request API permissions" section](images/connectors-images/build4.png)
 
 9. Select **Grant admin consent for {TENANT},** then select **Yes** when prompted.
 
-:::image type="content" source="images/connectors-images/build5.png" alt-text="Parts inventory connector api permissions":::
+![Screenshot showing the "parts inventory connector api permissions" section](images/connectors-images/build5.png)
 
 10. Select **Certificates &amp; secrets** under **Manage** , then select **New client secret**.
 11. Enter a description and choose an expiration time for the secret, then select **Add**.
 
-:::image type="content" source="images/connectors-images/build6.png" alt-text="Parts inventory connector certs and secrets":::
+![Screenshot showing the "parts inventory connector certs and secrets" section](images/connectors-images/build6.png)
 
 12. Copy and save the new secret, you will need it in the following section.

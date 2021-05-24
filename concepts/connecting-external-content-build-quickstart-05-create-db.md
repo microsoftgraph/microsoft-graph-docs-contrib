@@ -8,6 +8,8 @@ doc_type: conceptualPageType
 
 # Create the database from CSV
 
+<!-- markdownlint-disable MD002 MD025 MD041 -->
+
 1. Open your command line interface (CLI) in the directory where PartsInventoryConnector.csproj is located.
 2. Run the following commands:
 
