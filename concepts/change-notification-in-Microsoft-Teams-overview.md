@@ -9,11 +9,11 @@ ms.custom: scenarios:getting-started
 
 # Change notifications for resources in Microsoft Teams using Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create, update, and delete) to a resource, change notifications provide a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications enable you to subscribe to changes (create, update, and delete) to a resource, it provides a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). One can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
 > **Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
-## Change notificaiton types
+## Change notification types
 In general every teams resource supports two type of change notification
 - **Change notification to track all changes related to a resource in a tenant** e.g. one can subscribe to change in messages `channels(/chats/getAllMessages` across teanant and get notified when ever a message is created in any channel in tenant
 - **Change notification to track all changes for a specific respource**  e.g. one can subscribe to change in messages in a particular channel `/teams/{id}/channels/{id}/messages` and get notified when ever a message is created in that channel
@@ -100,7 +100,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data do not require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the message. Subscriptions for notifications without resource data do not require an encryption certificate (because actual resource data is not sent over).
 
 The payload looks like the following. This payload is for a message sent in a channel.
 
@@ -119,7 +119,7 @@ The payload looks like the following. This payload is for a message sent in a ch
   }
 }
 ```
-Above example shows notification corresponding to chat message resource, in actual notification resource and resource data filed will represent the resource which has trigerred the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resurce. 
+Above example shows notification corresponding to chat message resource, in actual notification resource and resource data filed will represent the resource which has trigerred the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource. 
 
 > **Note** GET calls will always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation will return the updated resource.
 
