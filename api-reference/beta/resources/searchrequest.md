@@ -65,7 +65,7 @@ The following is a JSON representation of the resource.
   "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}],
   "aggregationFilters": ["String"],
   "enableTopResults": true,
-  "resutlTempalteOptions": [{"@odata.type": "microsoft.substrateSearch.resultTemplateOption"}]  
+  "resultTemplateOptions": [{"@odata.type": "microsoft.graph.resultTemplateOption"}]  
 }
 ```
 

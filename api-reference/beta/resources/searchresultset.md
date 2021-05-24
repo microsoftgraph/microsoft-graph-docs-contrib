@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
 {
   "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
   "searchTerms": ["String"],
-  "resultTemplates": [{"@odata.type":"microsoft.substrateSearch.resultTemplateDictionary"}]
+  "resultTemplates": [{"@odata.type":"microsoft.graph.resultTemplateDictionary"}]
 }
 ```
 
