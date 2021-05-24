@@ -1777,34 +1777,16 @@
           "ApiChange": "Resources",
           "ChangedApiName": "",
           "ChangeType": "Addition",
-          "Description": "Adding the capability to send a [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) in MIME format.",
+          "Description": "Adding the capability to [send a message in MIME format](https://docs.microsoft.com/en-us/graph/outlook-send-mime-message).",
           "Target": "message"
         }
       ],
       "Id": "d9464d8d-7f78-4719-8841-9bf28318f4b1",
       "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-04-12T00:00:00",
-      "WorkloadArea": "Mail",
-      "SubArea": "Message"
-    }, 
-    {
-      "ChangeList": [
-        {
-          "Id": "c4328f32-75bd-4bca-98f6-120c3da104c7",
-          "ApiChange": "Resources",
-          "ChangedApiName": "",
-          "ChangeType": "Addition",
-          "Description": "Adding the capability to send a [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) in MIME format.",
-          "Target": "message"
-        }
-      ],
-      "Id": "c4328f32-75bd-4bca-98f6-120c3da104c7",
-      "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-04-12T00:00:00",
       "WorkloadArea": "Mail",
       "SubArea": "Message"
-    }
+    } 
   ]
 }
