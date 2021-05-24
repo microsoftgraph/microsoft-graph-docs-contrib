@@ -323,9 +323,9 @@ The following screenshot shows the **Create external group** section.
 
 ## Step 9 - Ingest Items
 
-After you created a connection, you can add your content. Each item from your data source must be represented as an `externalItem` in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the `itemId` or derive it from one or more fields. An `externalItem` has three key components: access control list, properties, and content.
+After you created a connection, you can add your content. Each item from your data source must be represented as an `externalItem` in Microsoft Graph with a unique item id. This ID is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the `itemId` or derive it from one or more fields. An `externalItem` has three key components: access control list, properties, and content.
 
-If you have binary files, you must parse to get the metadata and a text version of the content. If you have non text content such as a pdf or bmp file, you must use object character recognition to convert content to text.  
+If you have binary files, you must parse to get the metadata and a text version of the content. If you have non-text content such as a PDF or BMP file, you must use object character recognition to convert content to text.  
 
 You are responsible for converting your source permissions to grant or deny. Deny takes higher precedence over grant.
 
