@@ -1,13 +1,3 @@
----
-title: "Build the application"
-description: "Build the application"
-localization_priority: Priority
-author: mecampos
-doc_type: conceptualPageType
----
-
-# Build the application
-
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 ## Create a .NET Core console app

@@ -1,13 +1,3 @@
----
-title: "Create the database from CSV"
-description: "Create the database from CSV"
-localization_priority: Priority
-author: mecampos
-doc_type: conceptualPageType
----
-
-# Create the database from CSV
-
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 1. Open your command line interface (CLI) in the directory where PartsInventoryConnector.csproj is located.

@@ -1,13 +1,3 @@
----
-title: "Configure the application"
-description: "Configure the application"
-localization_priority: Priority
-author: mecampos
-doc_type: conceptualPageType
----
-
-# Configure the application
-
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 1. Open your command line interface (CLI) in the directory where PartsInventoryConnector.csproj is located.

@@ -1,13 +1,3 @@
----
-title: "Search for results"
-description: "Search for results"
-localization_priority: Priority
-author: mecampos
-doc_type: conceptualPageType
----
-
-# Search for results
-
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 In this step, you will search for parts in SharePoint.
