@@ -261,6 +261,8 @@ items:
             href: outlook-organize-messages.md
           - name: Get MIME content
             href: outlook-get-mime-message.md
+          - name: Send MIME message
+            href: outlook-send-mime-message.md
           - name: Attach large files
             href: outlook-large-attachments.md
           - name: Get shared messages
