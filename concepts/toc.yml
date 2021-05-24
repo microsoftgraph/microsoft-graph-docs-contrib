@@ -155,9 +155,9 @@ items:
         items:
           - name: Overview of Microsoft Graph connectors
             href: connecting-external-content-connectors-overview.md
-          - name: Connectors API overview
+          - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
-          - name: Play with connectors API on Postman
+          - name: Use Postman
             href: connecting-external-content-connectors-api-postman.md
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
@@ -167,8 +167,6 @@ items:
             href: connecting-external-content-manage-items.md
           - name: API limits
             href: connecting-external-content-api-limits.md
-          - name: Common API errors
-            href: connecting-external-content-common-connector-api-errors.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:

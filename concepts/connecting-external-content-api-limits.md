@@ -28,7 +28,7 @@ This topic describes implementation and operational limits for Microsoft Graph c
 
 | **Limit** | **Description** |
 | --- | --- |
-| **128 characters** | The maximum length of the ID string of an [external group](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true). Must be unique within a connection. Only alpha-numeric characters are supported. |
+| 100,000 | The maximum number of [external groups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) per Microsoft 365 tenant. |
 | **1000 requests/sec** | The maximum number of requests allowed per second in the group administration [throttling](#throttling) threshold. |
 
 ## Item ingestion

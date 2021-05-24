@@ -1,12 +1,12 @@
 ---
-title: "Play with Microsoft Graph connectors API on Postman"
+title: "Use Postman with the Microsoft Graph connectors API"
 description: "Try connectors APIs using Postman"
 author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
 ---
 
-# Play with Microsoft Graph connectors API on Postman
+# Use Postman with the Microsoft Graph connectors API
 
 This topic describes how you can use the Microsoft Graph connector APIs with Postman.
 
@@ -41,6 +41,10 @@ To use the Postman collection, you need to import it into your Postman workspace
 You should now see the Microsoft Graph connectors API collection inside Postman.
 
 ![Screenshot showing the Microsoft Graph Connector API in Postman](./images/connectors-images/06-postman-collection-tab.png)
+
+> [!NOTE]
+> The Microsoft Graph connector API was recently added into the [Microsoft Graph postman collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/overview).
+This document will be edited soon to use that collection instead.
 
 ## Step 2 - Download the Postman Agent (Optional - Postman Web browser only)
 
