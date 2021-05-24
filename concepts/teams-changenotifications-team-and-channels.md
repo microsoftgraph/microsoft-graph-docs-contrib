@@ -49,9 +49,9 @@ To get change notifications for any change in teams' property of a specific team
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Team.ReadBasic ,TeamSettings.Read | Not supported. |
+|Delegated (work or school account) | Team.ReadBasic, TeamSettings.Read | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic.All ,TeamSettings.Read.All    | beta |
+|Application | Team.ReadBasic, TeamSettings.Read    | beta |
 
 #### Example
 
@@ -84,7 +84,7 @@ To get change notifications for creation, updation or deletion of any channel ac
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Channel.ReadBasic.All ,ChannelSettings.Read.All | beta |
+|Application | Channel.ReadBasic.All, ChannelSettings.Read.All | beta |
 
 #### Example
 

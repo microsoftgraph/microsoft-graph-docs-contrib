@@ -14,16 +14,16 @@ Change notifications enable you to subscribe to changes (create, update, and del
 > **Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
 ## Change notification types
-In general every teams resource supports two type of change notification
-- **Change notification to track all changes related to a resource in a tenant** e.g. one can subscribe to change in messages `channels(/chats/getAllMessages` across teanant and get notified when ever a message is created in any channel in tenant
-- **Change notification to track all changes for a specific respource**  e.g. one can subscribe to change in messages in a particular channel `/teams/{id}/channels/{id}/messages` and get notified when ever a message is created in that channel
+Teams' resource supports two type of change notification
+- **Change notification to track all changes related to a resource across tenant** e.g. one can subscribe to change in messages in any channel across tenant and get notified whenever a message is created in any channel in tenant.
+- **Change notification to track all changes for a specific respource**  e.g. one can subscribe to change in messages in a particular channel and get notified when ever a message is created in that channel.
 
 Check [Microsoft Graph change notifications](webhooks.md) to see what resources support what type of change notification.
  
 
 ## Notification payloads
 
-Depending on your subscription, you can either get the notification with resource data, or notification without resource data. Subscribing with resource data allows you to get the message payload along with the notification removing the need to call back and get the content.
+Depending on your subscription, you can either get the notification with resource data, or without resource data. Subscribing with resource data allows you to get the message payload along with the notification removing the need to call back and get the content.
 
 ### Notifications with resource data
 

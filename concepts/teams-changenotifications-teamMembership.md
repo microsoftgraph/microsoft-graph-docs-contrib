@@ -12,7 +12,7 @@ ms.custom: scenarios:getting-started
 
 ### Subscribe to changes in membership of a particular team
 
-To get change notifications for membership change in any team across tenant, subscribe to `teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership change in a particular team, subscribe to `teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
