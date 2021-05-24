@@ -54,22 +54,37 @@ The following OData 4.0 capabilities are URL segments, not query parameters.
 | [$ref](/graph/api/group-post-members) | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` |
 | [$value](/graph/api/profilephoto-get) | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` |
 
-## Consistency levels and query parameters
+## Consistency levels and querying on Azure AD directory objects
 
-Azure AD runs on a highly replicated database for high availability and better read performance. This replication requires that the change is eventually applied to all copies of the data to achieve mutual consistency. As a result, Microsoft Graph query options support 2 consistency levels to ensure that Azure AD returns the most up-to-date data: **session consistency** (default) and **eventual consistency**.
+Azure AD stores data in a highly replicated database for high availability and better read performance. For all replicas to be accurate, that is, mutually consistent, any change must eventually be applied to all replicas of the data.
 
-Some query parameters, or a combination of query parameters and properties, are fully supported on session consistency while others require eventual consistency. This support varies from one API operation to another.
->**Note:** Microsoft Graph allows you to specify eventual consistency even when not required. All queries that are supported on session consistency are also supported on eventual consistency.
+At a minimum, an update request involves 2 distinct operations—making the change in the current database replica and updating an index that Microsoft Graph uses to fulfill query requests. This change is then propagated across other replicas. In a single authenticated session, an update followed immediately by a `GET` query will reflect the change because the replica to which the change was written is the same server that subsequent requests are queried against. This implementation is referred to as a **session consistency** model. Unfortunately, because the index might not yet be updated in another database replica, a query from another authenticated session might not reflect the change.
 
-While Microsoft Graph infers session consistency by default, eventual consistency must be explicitly set. This requires the **ConsistencyLevel** header with the value `eventual` *and* the `$count=true` query string. If eventual consistency is not set when expected, the query may fail. See [Error handling for query parameters](#error-handling-for-query-parameters).
+The **eventual consistency** model helps to avoid instances of stale data being returned. In this model, Azure AD relies on separate servers to maintain the indexes, and the current state of a globally consistent database is always returned. This implementation is supported only for queries against Azure AD objects, that is, queries on the following resources that derive from [directoryObject](/graph/api/resources/directoryobject):
+- [application](/graph/api/resources/application)
+- [orgContact](/graph/api/resources/orgcontact)
+- [device](/graph/api/resources/device)
+- [group](/graph/api/resources/group)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [users](/graph/api/resources/user)
 
-For Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), general query scenarios that require eventual consistency include the following:
-* Use of `$filter` with the `endsWith` operator.
+While Microsoft Graph infers session consistency by default, you must explicitly opt-in for eventual consistency. This requires the **ConsistencyLevel** header with the value `eventual` *and* the `$count` query parameter. The specific query scenarios on directory objects that require you to opt-in for eventual consistency include:
 * Use of `$count` as a URL segment.
 * Use of `$count` as a query parameter, that is, the `$count=true` query string.
-* Properties that support `$filter` on eventual consistency only.
-* Use of `$filter` and `$orderby` in the same query.
 * Use of `$search`.
+* Use of `$filter` with the `endsWith` operator.
+* Use of `$filter` and `$orderby` in the same query.
+* Properties that support `$filter` on eventual consistency only.
+
+>**Note:** Eventual consistency is only for Azure AD directory objects. Microsoft Graph allows you to opt-in for eventual consistency even when not required. All queries that are supported on session consistency are also supported on eventual consistency.
+
+As an example, use of `$count` as a URL segment on the `/users` resource retrieves only the count of all users in your tenant. You must specify the `ConsistencyLevel: eventual` header for Microsoft Graph to fulfill the request.
+
+```http
+GET https://graph.microsoft.com/v1.0/users/$count
+ConsistencyLevel: eventual
+```
+
 
 ## Encoding query parameters
 
@@ -101,7 +116,7 @@ Use the `$count` query parameter to include a count of the total number of items
 
 > **Note:** `$count` can also be used as a [URL segment](#other-odata-url-capabilities) to retrieve the integer total of the collection. When it is used on resources that derive from [directoryObject](/graph/api/resources/directoryobject), it's supported only on [eventual consistency](#consistency-levels-and-query-parameters).
 >
-> The `$count` query parameter is currently not available in Azure AD B2C tenants.
+> Use of `$count` is currently not supported in Azure AD B2C tenants.
 
 For example, the following request returns both the **contact** collection of the current user, and the number of items in the **contact** collection in the `@odata.count` property.
 
