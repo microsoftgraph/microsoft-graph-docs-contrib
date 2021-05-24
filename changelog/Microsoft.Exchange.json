@@ -1,5 +1,23 @@
 {
-  "changelog": [    
+  "changelog": [  
+    {
+      "ChangeList": [
+        {
+          "Id": "d9464d8d-7f78-4719-8841-9bf28318f4b1",
+          "ApiChange": "Resources",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Adding the capability to [send a message in MIME format](https://docs.microsoft.com/en-us/graph/outlook-send-mime-message).",
+          "Target": "message"
+        }
+      ],
+      "Id": "d9464d8d-7f78-4719-8841-9bf28318f4b1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-05-24T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": "Message"
+    },  
     {
       "ChangeList": [
         {
@@ -1769,24 +1787,6 @@
       "CreatedDateTime": "2015-12-01T00:00:00",
       "WorkloadArea": "Calendar",
       "SubArea": ""
-    }, 
-    {
-      "ChangeList": [
-        {
-          "Id": "d9464d8d-7f78-4719-8841-9bf28318f4b1",
-          "ApiChange": "Resources",
-          "ChangedApiName": "",
-          "ChangeType": "Addition",
-          "Description": "Adding the capability to [send a message in MIME format](https://docs.microsoft.com/en-us/graph/outlook-send-mime-message).",
-          "Target": "message"
-        }
-      ],
-      "Id": "d9464d8d-7f78-4719-8841-9bf28318f4b1",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2021-04-12T00:00:00",
-      "WorkloadArea": "Mail",
-      "SubArea": "Message"
-    } 
+    }
   ]
 }

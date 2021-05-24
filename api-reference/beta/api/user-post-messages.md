@@ -56,13 +56,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## Request body
 When using JSON format, provide a JSON representation of the [message](../resources/message.md) object.
 
+When specifying the body in MIME format, provide the MIME content with the applicable Internet message headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.
+
 To use **mention** to call out another user in the new message:
 - Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
 - For each mention in the **mentions** property, you must specify the **mentioned** property.
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
 
-When specifying the body in MIME format, provide the MIME content with the applicable Internet message headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.
 
 ## Response
 
