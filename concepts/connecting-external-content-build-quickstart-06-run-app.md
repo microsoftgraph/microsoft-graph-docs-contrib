@@ -10,7 +10,7 @@ In this step, you will build and run the sample. This code sample will create a 
 The following screenshot shows the option to create a connection.
 
 <!---Using html to adjust the size of the image --->
-<br><img src="images/connectors-images/build9.png" alt="Screenshot showing the option to create a connectionwing" style="width:400px;"/>
+<br><img src="images/connectors-images/build9.png" alt="Screenshot showing the option to create a connectionwing" style="width:200px;"/>
 
 5. Select "**2. Register schema for the current connection option**" Then, wait for the operation to complete.
 
@@ -20,4 +20,4 @@ The following screenshot shows the option to create a connection.
 The following screenshot shows the option to push all items.
 
 <!---Using html to adjust the size of the image --->
-<br><img src="images/connectors-images/build10.png" alt="Screenshot showing the option to push all items in the menu" style="width:400px;"/>
+<br><img src="images/connectors-images/build10.png" alt="Screenshot showing the option to push all items in the menu" style="width:200px;"/>
