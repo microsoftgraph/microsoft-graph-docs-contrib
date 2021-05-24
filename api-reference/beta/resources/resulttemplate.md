@@ -1,13 +1,13 @@
 ---
-title: "resultTemplateDictionary resource type"
-description: "Represent the result templates to render the search results."
+title: "resultTemplate resource type"
+description: "A dictionary that represents the result templates to render the search results."
 localization_priority: Normal
 author: "cristianv-ms"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# resultTemplateDictionary resource type
+# resultTemplate resource type
 
 Namespace: microsoft.graph
 
@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.searchHitsContainer",
+  "@odata.type": "microsoft.graph.resultTemplate",
   "baseType": null
 }-->
 
@@ -96,7 +96,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchHitsContainer resource",
+  "description": "resultTemplate resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

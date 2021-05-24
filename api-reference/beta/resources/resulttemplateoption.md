@@ -1,5 +1,5 @@
 ---
-title: "resultTemplateOptions resource type"
+title: "resultTemplateOption resource type"
 description: "Provides the search display layouts options for render connectors search results."
 localization_priority: Normal
 author: "cristianv-ms"
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# resultTemplateOptions resource type
+# resultTemplateOption resource type
 
 Namespace: microsoft.graph
 
@@ -31,7 +31,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.searchAlterationOptions",
+  "@odata.type": "microsoft.graph.resultTemplateOption",
   "baseType": null
 }-->
 
@@ -45,7 +45,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchAlterationOptions resource",
+  "description": "resultTemplateOption resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
