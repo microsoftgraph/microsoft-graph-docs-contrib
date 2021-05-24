@@ -26,7 +26,7 @@ This tutorial assumes that you are using Microsoft Graph Explorer, but you can u
 
     ![Select the Microsoft Graph permissions](./images/application-saml-sso-configure-api/set-permissions.png)
         
-4. In the list of permissions, scroll to and expand **AppRoleAssignment (1)**, and then select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down and expand **Application (2)**, and then select the **Application.ReadWrite.All** permission. Continue to and expand **Policy (13)**, and then select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to and expand **Users (8)**, and then select **User.ReadWrite.All**.  
+4. In the list of permissions, scroll to and expand **AppRoleAssignment (1)**, and then select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down and expand **Application (2)**, and then select the **Application.ReadWrite.All** permission. Continue to and expand **Policy (13)**, and then select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to and expand **Users (8)**, and then select **User.ReadWrite.All**.
 
     ![Scroll to and select the approleassignment, application, and policy permissions](./images/application-saml-sso-configure-api/select-permissions.png)
 
