@@ -21,7 +21,7 @@ Represents results from a search query, and the terms used for the query.
 |:-------------|:------------|:------------|
 |hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|A collection of search results.|
 |searchTerms|String collection|Contains the search terms sent in the initial search query.|
-|resultTemplates|[resultTemplateDictionary](resulttemplatedictionary.md)|A dictionary which key is a **resultTemplateId** and it's value is the name and json schema of the result template.
+|resultTemplates|[resultTemplateDictionary](resulttemplatedictionary.md) collection|A dictionary which key is a **resultTemplateId** and it's value is the name and json schema of the result template.
 
 ## JSON representation
 

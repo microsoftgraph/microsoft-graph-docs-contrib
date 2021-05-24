@@ -22,7 +22,6 @@ The JSON blob contains the types of resources expected in the response, the unde
 > [!NOTE]
 > Be aware of [known limitations](search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results.
 
-
 ## Properties
 
 | Property     | Type        | Description             
@@ -38,7 +37,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |size|Int32|The size of the page to be retrieved. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 |stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
-|resultTemplateOptions|[resultTemplateOption](searchresulttemplateoptions.md) colletction|Provides the search result templates options for render connectors search results.|
+|resultTemplateOptions|[resultTemplateOption](searchresulttemplateoptions.md) collection|Provides the search result templates options for render connectors search results.|
 
 
 ## JSON representation
