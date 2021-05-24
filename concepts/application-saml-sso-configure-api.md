@@ -13,9 +13,6 @@ In this article, you'll learn how to create and configure a SAML-based single si
 
 This article uses an AWS Azure AD application template as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.
 
->[!NOTE]
->The response objects and keys shown in this article might be shortened for readability.
-
 ## Prerequisites
 
 This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
