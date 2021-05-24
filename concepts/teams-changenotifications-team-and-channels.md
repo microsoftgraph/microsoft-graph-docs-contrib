@@ -49,9 +49,9 @@ To get change notifications for any change in teams' property of a specific team
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
+|Delegated (work or school account) | Team.ReadBasic ,TeamSettings.Read | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic ,TeamSettings.Read    | beta |
+|Application | Team.ReadBasic.All ,TeamSettings.Read.All    | beta |
 
 #### Example
 
@@ -135,12 +135,9 @@ Content-Type: application/json
 }
 ```
 
-## Notification payloads
-
-Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the channel payload along with the notification, removing the need to call back and get the content.
 
 ### Notifications with resource data
-Notifications with resource data are encrypted, for details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+
 For notifications with resource data, the payload looks for any change in team's property looks like the following.
 
 ```json

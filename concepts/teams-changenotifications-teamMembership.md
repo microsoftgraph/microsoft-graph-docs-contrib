@@ -12,15 +12,15 @@ ms.custom: scenarios:getting-started
 
 ### Subscribe to changes in membership of a particular team
 
-To get change notifications for membership change in any team in tenant, subscribe to `teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership change in any team across tenant, subscribe to `teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
+|Delegated (work or school account) | TeamMember.Read. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | TeamMember.Read   | beta, v1.0 |
+|Application | TeamMember.Read   | beta |
 
 #### Example
 
@@ -41,9 +41,6 @@ Content-Type: application/json
 ```
 
 
-## Notification payloads
-
-Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the membership payload along with the notification, removing the need to call back and get the content.
 
 ### Notifications with resource data
 
