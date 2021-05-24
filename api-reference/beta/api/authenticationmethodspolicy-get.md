@@ -75,18 +75,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.authenticationMethodsPolicy",
-    "id": "098351ca-51ca-0983-ca51-8309ca518309",
-    "displayName": "String",
-    "description": "String",
-    "lastModifiedDateTime": "String (timestamp)",
-    "policyVersion": "String",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
+    "id": "authenticationMethodsPolicy",
+    "displayName": "Authentication Methods Policy",
+    "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
+    "lastModifiedDateTime": "2021-05-24T18:02:30.5288302Z",
+    "policyVersion": "1.4",
     "registrationEnforcement": {
-      "@odata.type": "microsoft.graph.registrationEnforcement"
-    },
-    "reconfirmationInDays": "Integer"
-  }
+        "authenticationMethodsRegistrationCampaign": {
+            "snoozeDurationInDays": 2,
+            "state": "enabled",
+            "excludeTargets": [],
+            "includeTargets": [
+                {
+                    "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                    "targetType": "group",
+                    "targetedAuthenticationMethod": "microsoftAuthenticator"
+                }
+            ]
+        }
+    }
 }
 ```
 

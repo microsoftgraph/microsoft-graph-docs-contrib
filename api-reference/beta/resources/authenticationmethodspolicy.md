@@ -32,7 +32,6 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The ID of the policy. Inherited from [entity](../resources/entity.md)|
 |lastModifiedDateTime|DateTimeOffset|The datetime of the last update to the policy.|
 |policyVersion|String|The version of the policy in use.|
-|reconfirmationInDays|Int32|Users will be asked to confirm their authentication methods every so many days as set by this setting.|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Settings for enforcing registration at sign-in time. Can currently be used to nudge users to setup targeted authentication methods.|
 
 ## Relationships
@@ -60,8 +59,7 @@ The following is a JSON representation of the resource.
   "policyVersion": "String",
   "registrationEnforcement": {
     "@odata.type": "microsoft.graph.registrationEnforcement"
-  },
-  "reconfirmationInDays": "Integer"
+  } 
 }
 ```
 

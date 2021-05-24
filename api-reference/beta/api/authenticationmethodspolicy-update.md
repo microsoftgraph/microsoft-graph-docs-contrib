@@ -41,23 +41,14 @@ PATCH /policies/authenticationMethodsPolicy
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object.
-
-The following table shows the properties that are required when you update the [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md).
+In the request body, supply a JSON representation of the [registrationEnforcement](../resources/registrationenforcement.md) object to nudge users to setup targeted authentication methods. 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of the policy. Inherited from [entity](../resources/entity.md)|
-|displayName|String|The name of the policy.|
-|description|String|A description of the policy|
-|lastModifiedDateTime|DateTimeOffset|The datetime of the last update to the policy.|
-|policyVersion|String|The version of the policy in use.|
-|reconfirmationInDays|Int32|Users will be asked to confirm their authentication methods every so many days as set by this setting.|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Settings for enforcing registration at sign-in time. Can currently be used to nudge users to setup targeted authentication methods.|
 
 ## Response
-
-If successful, this method returns a `200 OK` response code and an updated [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
@@ -73,14 +64,20 @@ Content-Type: application/json
 Content-length: 293
 
 {
-  "@odata.type": "#microsoft.graph.authenticationMethodsPolicy",
-  "displayName": "String",
-  "description": "String",
-  "policyVersion": "String",
   "registrationEnforcement": {
-    "@odata.type": "microsoft.graph.registrationEnforcement"
-  },
-  "reconfirmationInDays": "Integer"
+    "authenticationMethodsRegistrationCampaign": {
+        "snoozeDurationInDays": 1,
+        "state": "enabled",
+        "excludeTargets": [],
+        "includeTargets": [
+            {
+                "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                "targetType": "group",
+                "targetedAuthenticationMethod": "microsoftAuthenticator"
+            }
+        ]
+    }
+  }
 }
 ```
 
@@ -96,17 +93,6 @@ Content-length: 293
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.authenticationMethodsPolicy",
-  "id": "098351ca-51ca-0983-ca51-8309ca518309",
-  "displayName": "String",
-  "description": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "policyVersion": "String",
-  "registrationEnforcement": {
-    "@odata.type": "microsoft.graph.registrationEnforcement"
-  },
-  "reconfirmationInDays": "Integer"
-}
+
 ```
 
