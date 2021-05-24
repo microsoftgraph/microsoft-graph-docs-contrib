@@ -13,20 +13,30 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. Currently "directory" is the only RBAC application supported.
+Retrieve the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. 
+
+The following RBAC providers are currently supported:
+- cloud PC 
+- directory (Azure AD) 
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| cloud PC | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
+| directory | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Not supported.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
 
+Retrieve the properties and relationships of a role definition for a cloud PC provider:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/cloudPC/roleDefinitions/{ids}
+```
+
+Retrieve the properties and relationships of a role definition for a directory provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -53,7 +63,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 ## Examples
 
-### Example 1: Get the definition of a custom role
+### Example 1: Get the definition of a custom role for directory provider
 
 #### Request
 
@@ -127,7 +137,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the definition of a built-in role
+### Example 2: Get the definition of a built-in role for directory provider
 
 #### Request
 
@@ -388,6 +398,61 @@ Content-type: application/json
                     "condition": null
                 }
             ]
+        }
+    ]
+}
+```
+
+### Example4: Get the definition of a cloud PC built-in role
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_built-in_cloudpc_role_unifiedroledefinition"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/d40368cb-fbf4-4965-bbc1-f17b3a78e510
+```
+
+
+#### Response
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleDefinitions/$entity",
+    "id": "d40368cb-fbf4-4965-bbc1-f17b3a78e510",
+    "description": "Have read-only access all Cloud PC features.",
+    "displayName": "Cloud PC Reader",
+    "isBuiltIn": true,
+    "isEnabled": true,
+    "resourceScopes": [
+        "/"
+    ],
+    "templateId": "d40368cb-fbf4-4965-bbc1-f17b3a78e510",
+    "version": null,
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "Microsoft.CloudPC/CloudPCs/Read",
+                "Microsoft.CloudPC/DeviceImages/Read",
+                "Microsoft.CloudPC/OnPremisesConnections/Read",
+                "Microsoft.CloudPC/ProvisioningPolicies/Read",
+                "Microsoft.CloudPC/Roles/Read",
+                "Microsoft.CloudPC/SelfServiceSettings/Read"
+            ],
+            "condition": null
         }
     ]
 }

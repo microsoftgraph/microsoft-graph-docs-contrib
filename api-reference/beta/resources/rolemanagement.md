@@ -37,7 +37,7 @@ None.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Read-only. Nullable.|
+|cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Read-only. Nullable. Cloud PC unified RBAC enable IT admins to interact with not only Cloud PC RBAC but all M365 RBACs including AAD with a single set of APIs.|
 |deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Read-only. Nullable.|
 |directory|[rbacApplication](rbacapplication.md)| Read-only. Nullable.|
 

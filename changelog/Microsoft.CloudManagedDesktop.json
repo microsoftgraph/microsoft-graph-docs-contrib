@@ -4,27 +4,27 @@
             "ChangeList": [
                 {
                     "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "Extend rolemanagement",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "rolemanagement",
                     "ChangeType": "Addition",
-                    "Description": "Extend `rolemanagement` singleton as [cloudpc-rbac-rolemanagement](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc-rbac-rolemanagement?view=graph-rest-beta) singleton to Cloud PC.",
-                    "Target": "cloudpc-rbac-rolemanagement"
+                    "Description": "Added the **cloudpc** rbacApplicationMultiple navigation property to the [rolemanagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+                    "Target": "rolemanagement"
                 },
                 {
                     "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "Extend unifiedroledefinition",
+                    "ChangedApiName": "unifiedroledefinition",
                     "ChangeType": "Addition",
-                    "Description": "Extedn the `unifiedroledefinition` entity as the [cloud-pc-unifiedroledefinition](https://docs.microsoft.com/en-us/graph/api/resources/cloud-pc-unifiedroledefinition?view=graph-rest-beta) entity.",
-                    "Target": "cloud-pc-unifiedroledefinition"
+                    "Description": "Cloud PC provider supports get and list operation for [unifiedroledefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "Target": "unifiedroledefinition"
                 },
                 {
                     "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "Extend unifiedroleassignmentmultiple",
+                    "ChangedApiName": "unifiedroleassignmentmultiple",
                     "ChangeType": "Addition",
-                    "Description": "Added the `unifiedroleassignmentmultiple` entity as the [cloud-pc-unifiedroleassignmentmultiple](https://docs.microsoft.com/en-us/graph/api/resources/cloud-pc-unifiedroleassignmentmultiple?view=graph-rest-beta) entity.",
-                    "Target": "cloud-pc-unifiedroleassignmentmultiple"
+                    "Description": "Cloud PC provider supports get, list, create, update and delelte operation for [unifiedroleassignmentmultiple](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta).",
+                    "Target": "unifiedroleassignmentmultiple"
                 }
             ],
             "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",

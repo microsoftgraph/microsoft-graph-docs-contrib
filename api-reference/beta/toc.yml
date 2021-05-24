@@ -9491,7 +9491,7 @@ items:
             - name: List
               href: api/rbacapplication-list-roledefinitions.md
             - name: Get
-              href: api/cloudpc-unifiedroledefinition-get.md
+              href: api/unifiedroledefinition-get.md
           - name: Role assignment multiple
             href: resources/unifiedroleassignmentmultiple.md
             items:
@@ -9500,11 +9500,11 @@ items:
             - name: Create
               href: api/rbacapplicationmultiple-post-roleassignments.md
             - name: Get
-              href: api/cloudpc-unifiedroleassignmentmultiple-get.md
+              href: api/unifiedroleassignmentmultiple-get.md
             - name: Update
-              href: api/cloudpc-unifiedroleassignmentmultiple-update.md
+              href: api//unifiedroleassignmentmultiple-update.md
             - name: Delete
-              href: api/cloudpc-unifiedroleassignmentmultiple-delete.md
+              href: api/unifiedroleassignmentmultiple-delete.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
