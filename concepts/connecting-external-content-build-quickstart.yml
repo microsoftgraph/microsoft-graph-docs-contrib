@@ -10,6 +10,7 @@ metadata:
   author: mecampos
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:.NET Core, C 
+  ms.prod: search
 items:
   - title: Build your first custom Microsoft Graph Connector
     durationInMinutes: 10
