@@ -21,7 +21,7 @@ items:
     content: |
       [!INCLUDE [](data-connect-quickstart-02.md)]
 
-  - title: Set up your Azure Active Directory App registration
+  - title: Set up your Azure Active Directory app registration
     durationInMinutes: 10
     content: |
       [!INCLUDE [](data-connect-quickstart-03.md)]
@@ -41,7 +41,7 @@ items:
     content: |
       [!INCLUDE [](data-connect-quickstart-06.md)]
 
-  - title: Create your ASP.NET Web Application to process the exported data
+  - title: Create your ASP.NET web application to process the exported data
     durationInMinutes: 25
     content: |
       [!INCLUDE [](data-connect-quickstart-07.md)]
