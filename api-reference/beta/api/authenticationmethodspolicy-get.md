@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /authenticationMethodsPolicy
 GET /policies/authenticationMethodsPolicy
 ```
 
@@ -58,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/authenticationMethodsPolicy
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 ```
 
 
