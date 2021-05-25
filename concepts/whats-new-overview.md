@@ -37,7 +37,7 @@ GA of the reporting API to [list](/graph/api/provisioningobjectsummary-list) act
 
 ### Connecting external content
 - Be aware of [implementation and operational limits](connecting-external-content-api-limits.md) when designing connectors.
-- Try the [connectors API with Postman](connecting-external-content-connectors-api-postman.md)
+- Try the [connectors API with Postman](connecting-external-content-connectors-api-postman.md).
 
 ### Devices and apps | Cloud PC
 Request the least privileged application permissions, `CloudPC.Read.All` or `CloudPC.ReadWrite.All`, to access methods of the following resources:
