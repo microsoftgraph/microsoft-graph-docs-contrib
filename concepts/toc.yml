@@ -182,6 +182,8 @@ items:
             href: connecting-external-content-manage-items.md
           - name: API limits
             href: connecting-external-content-api-limits.md
+          - name: External groups
+            href: connecting-external-content-external-groups.md           
       - name: Cross-device experiences
         displayName: Project Rome
         items:
