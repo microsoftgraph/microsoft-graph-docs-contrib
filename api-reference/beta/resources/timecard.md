@@ -23,7 +23,6 @@ Represents a timecard entry in the schedule.
 |[Create](../api/timecard-post.md) | [timeCard](timecard.md) | Create a new **timecard** object.|
 |[Get](../api/timecard-get.md) | [timeCard](timecard.md) | Get a **timecard** object by ID.|
 |[Replace](../api/timecard-replace.md) | [timeCard](timecard.md) | Replace a **timecard** object.|
-|[Update](../api/timecard-update.md) | [timeCard](timecard.md) | Update a **timecard** object.|
 |[Delete](../api/timecard-delete.md) | None | Delete a **timecard** object from the schedule.|
 |[clockIn](../api/timecard-clockin.md) | [timeCard](timecard.md) | Clock in to start a **timecard**.|
 |[clockOut](../api/timecard-clockout.md) | [timeCard](timecard.md) | Clock out to end an open **timecard**.|

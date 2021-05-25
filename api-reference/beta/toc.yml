@@ -13676,8 +13676,6 @@ items:
             href: api/timecard-get.md
           - name: Replace
             href: api/timecard-replace.md
-          - name: Update
-            href: api/timecard-update.md
           - name: Delete
             href: api/timecard-delete.md
           - name: Clock in

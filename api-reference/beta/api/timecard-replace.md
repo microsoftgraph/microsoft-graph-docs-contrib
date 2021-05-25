@@ -45,7 +45,7 @@ PUT /teams/{teamId}/schedule/timecards/{timeCardID}
 
 ## Request body
 
-In the request body, supply a JSON representation of a [timeCardEntry](../resources/timeCardEntry.md) object.
+In the request body, supply a JSON representation of a [timeCard](../resources/timecard.md) object.
 
 ## Response
 
