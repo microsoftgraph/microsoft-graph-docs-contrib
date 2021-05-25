@@ -306,14 +306,6 @@ Namespace: microsoft.graph
 |passwordlessCapable|
 |mfaCapable|
 
-### authenticatorAppFeatureSettings values 
-
-
-
-|Member|
-|:---|
-|requireNumberMatching|
-|unknownFutureValue|
 
 ### authMethodsType values 
 

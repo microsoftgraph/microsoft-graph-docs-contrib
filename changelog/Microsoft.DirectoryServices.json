@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+    "ChangeList": [
+      {
+        "Id": "e1be4f32-9422-46b6-9ad7-ee71bb0e206a",
+        "ApiChange": "Resource",
+        "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodTarget",
+        "ChangeType": "Change",
+        "Description": "Changed [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-beta).",
+        "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+      }
+    ],
+    "Id": "d7ea2a03-b7ed-415c-84d5-cbf05fac2fc5",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2021-05-10T00:00:00",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Identity and sign-in"
+  },
+    {
       "ChangeList": [
         {
           "Id": "3dc87842-0acd-4b98-89b3-a798f6bbc044",
