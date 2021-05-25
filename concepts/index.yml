@@ -64,7 +64,7 @@ conceptualContent:
         - url: ./outlook-mail-concept-overview.md
           itemType: overview
           text: Access and manage messages and mail data.
-    - title: Excel workbook and charts
+    - title: Excel workbooks and charts
       links:
         - url: ./excel-concept-overview.md
           itemType: overview
