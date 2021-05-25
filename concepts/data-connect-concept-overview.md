@@ -19,7 +19,7 @@ You can use Data Connect to enable machine learning scenarios for your organizat
 
 <!--<iframe class="video-iframe" style="width: 960px; height: 540px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false"> </iframe>-->
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false]
 
 You can take advantage of Microsoft Graph Data Connect if you agree to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=123161) and are:
 
