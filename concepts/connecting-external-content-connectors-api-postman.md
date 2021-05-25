@@ -369,6 +369,6 @@ The following is an example of a successful response.
 HTTP/1.1 200 OK
 ```
 
-## Error Handing
+## Error handling
 
-Resolve [Microsoft Graph authorization errors](/graph/resolve-auth-errors).
+For details about how to resolve errors, see [Microsoft Graph authorization errors](/graph/resolve-auth-errors).
