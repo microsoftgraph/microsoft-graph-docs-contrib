@@ -1,7 +1,7 @@
 ---
 title: "Update authenticationMethodsPolicy"
 description: "Update the properties of an authenticationMethodsPolicy object."
-author: "mmcla","mjsantani"
+author: "mmcla"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
