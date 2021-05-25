@@ -15,9 +15,6 @@ Namespace: microsoft.graph
 
 Authentication methods policies define authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
-
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
