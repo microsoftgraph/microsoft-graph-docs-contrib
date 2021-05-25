@@ -87,7 +87,7 @@ In this section we will be building your first ASP.NET project application for t
 
     ```csharp
     private const string connectionStringName = "AzureStorageConnectionString";
-    private const string emailBlobName = "maildump";
+    private const string emailBlobName = "m365mails";
 
     ```
 
