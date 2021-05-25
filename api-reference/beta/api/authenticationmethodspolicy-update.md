@@ -93,6 +93,27 @@ Content-length: 293
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
+  "id": "authenticationMethodsPolicy",
+  "displayName": "Authentication Methods Policy",
+  "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
+  "lastModifiedDateTime": "2021-05-25T01:08:08.6712279Z",
+  "policyVersion": "1.4",
+  "registrationEnforcement": {
+    "authenticationMethodsRegistrationCampaign": {
+        "snoozeDurationInDays": 1,
+        "state": "enabled",
+        "excludeTargets": [],
+        "includeTargets": [
+            {
+                "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                "targetType": "group",
+                "targetedAuthenticationMethod": "microsoftAuthenticator"
+            }
+        ]
+    }
+  }
+}
 ```
 
