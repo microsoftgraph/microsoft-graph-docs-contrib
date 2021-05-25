@@ -13,7 +13,7 @@ In this step, you will ensure that two users in your Microsoft 365 tenant have t
 
 In this step, you will setup your Microsoft 365 tenant to enable usage of Microsoft Graph Data Connect.
 
-1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com/)
+1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com/).
 
 1. On the sidebar navigation, select **Active Groups**.
   
