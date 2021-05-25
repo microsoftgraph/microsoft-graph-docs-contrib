@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Application.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Application.ReadWrite.All, Directory.ReadWrite.All |
+| Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -111,51 +111,51 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-   "servicePrincipal": {
-	  "accountEnabled": true,
-	  "addIns": [
-	    {
-	      "id": "id-value",
-	      "type": "type-value",
-	      "properties": [
-		{
-		  "key": "key-value",
-		  "value": "value-value"
-		}
-	      ]
-	    }
-	  ],
-	  "appDisplayName": "appDisplayName-value",
-	  "appId": "appId-value",
-	  "appOwnerOrganizationId": "appOwnerOrganizationId-value",
-	  "appRoleAssignmentRequired": true
+   "servicePrincipal":{
+      "accountEnabled":true,
+      "addIns":[
+         {
+            "id":"id-value",
+            "type":"type-value",
+            "properties":[
+               {
+                  "key":"key-value",
+                  "value":"value-value"
+               }
+            ]
+         }
+      ],
+      "appDisplayName":"appDisplayName-value",
+      "appId":"appId-value",
+      "appOwnerOrganizationId":"appOwnerOrganizationId-value",
+      "appRoleAssignmentRequired":true
    },
-   "application": {
-	  "api": {
-	    "acceptedAccessTokenVersion": 1,
-	    "publishedPermissionScopes": [
-	      {
-		"adminConsentDescription": "adminConsentDescription-value",
-		"adminConsentDisplayName": "adminConsentDisplayName-value",
-		"id": "id-value",
-		"isEnabled": true,
-		"type": "type-value",
-		"userConsentDescription": "userConsentDescription-value",
-		"userConsentDisplayName": "userConsentDisplayName-value",
-		"value": "value-value"
-	      }
-	    ]
-	  },
-	  "allowPublicClient": true,
-	  "applicationAliases": [
-	    "applicationAliases-value"
-	  ],
-	  "createdDateTime": "datetime-value",
-	  "installedClients": {
-	    "redirectUrls": [
-	      "redirectUrls-value"
-	    ]
-	  }
+   "application":{
+      "api":{
+         "acceptedAccessTokenVersion":1,
+         "publishedPermissionScopes":[
+            {
+               "adminConsentDescription":"adminConsentDescription-value",
+               "adminConsentDisplayName":"adminConsentDisplayName-value",
+               "id":"id-value",
+               "isEnabled":true,
+               "type":"type-value",
+               "userConsentDescription":"userConsentDescription-value",
+               "userConsentDisplayName":"userConsentDisplayName-value",
+               "value":"value-value"
+            }
+         ]
+      },
+      "allowPublicClient":true,
+      "applicationAliases":[
+         "applicationAliases-value"
+      ],
+      "createdDateTime":"datetime-value",
+      "installedClients":{
+         "redirectUrls":[
+            "redirectUrls-value"
+         ]
+      }
    }
 }
 ```

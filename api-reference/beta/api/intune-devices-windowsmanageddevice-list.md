@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8941
+Content-Length: 9442
 
 {
   "value": [
@@ -110,7 +110,11 @@ Content-Length: 8941
         "osBuildNumber": "Os Build Number value",
         "operatingSystemProductType": 10,
         "ipAddressV4": "Ip Address V4 value",
-        "subnetAddress": "Subnet Address value"
+        "subnetAddress": "Subnet Address value",
+        "esimIdentifier": "Esim Identifier value",
+        "systemManagementBIOSVersion": "System Management BIOSVersion value",
+        "tpmManufacturer": "Tpm Manufacturer value",
+        "tpmVersion": "Tpm Version value"
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",

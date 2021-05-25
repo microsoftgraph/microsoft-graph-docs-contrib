@@ -11,6 +11,12 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### consentRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
 ### externalEmailOtpState values
 
 |Member|
@@ -490,15 +496,13 @@ Namespace: microsoft.graph
 | lightRed   | 8
 | maxColor   | 9
 
-
 ### educationExternalSource values
 
-| Member
-|:-------------------------
-| sis
-| manual
-| unknownFutureValue
-
+| Member             |
+| :----------------- |
+| sis                |
+| manual             |
+| unknownFutureValue |
 
 ### educationGender values
 
@@ -538,12 +542,14 @@ Namespace: microsoft.graph
 | normal
 | high
 
-
 ### educationUserRole values
-| Member
-|:---------------------
-| student
-| teacher
+
+| Member             |
+| :----------------- |
+| student            |
+| teacher            |
+| none               |
+| unknownFutureValue |
 
 ### meetingMessageType values
 
@@ -1346,4 +1352,108 @@ Possible values for user account types (group membership), per Windows definitio
 |fill|
 |fit|
 |none|
+|unknownFutureValue|
+
+### userFlowType values
+
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwner
+| unknownFutureValue
+
+### identityUserFlowAttributeDataType values
+
+| Member                |
+|:----------------------|
+| string                |
+| boolean               |
+| int64                 |
+| stringCollection      |
+| dateTime              |
+| unknownFutureValue    |
+
+### identityUserFlowAttributeType values
+
+| Member                |
+|:----------------------|
+| builtIn               |
+| custom                |
+| required              |
+| unknownFutureValue    |
+
+### identityUserFlowAttributeInputType values
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
+
+### teamworkActivityTopicSource values 
+
+| Member    |
+| :-------- |
+| entityUrl |
+| text      |
+
+
+### provisioningResult values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|skipped|
+|warning|
+|unknownFutureValue|
+
+### provisioningStepType values 
+
+|Member|
+|:---|
+|import|
+|scoping|
+|matching|
+|processing|
+|referenceResolution|
+|export|
+|unknownFutureValue|
+
+### provisioningStatusErrorCategory values 
+
+|Member|
+|:---|
+|failure|
+|nonServiceFailure|
+|success|
+|unknownFutureValue|
+
+### provisioningAction values 
+
+|Member|
+|:---|
+|other|
+|create|
+|delete|
+|disable|
+|update|
+|stagedDelete|
+|unknownFutureValue|
+
+
+### initiatorType values 
+
+|Member|
+|:---|
+|user|
+|application|
+|system|
 |unknownFutureValue|

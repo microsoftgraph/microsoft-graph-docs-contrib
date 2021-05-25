@@ -11,8 +11,6 @@ author: "sureshja"
 
 Namespace: microsoft.graph
 
-Namespace: microsoft.graph
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a service principal.
@@ -93,7 +91,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-e
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -136,4 +134,3 @@ Content-type: application/json
   ]
 }
 -->
-

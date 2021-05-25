@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -110,7 +110,7 @@ Content-type: application/json
       "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
       "deletedDateTime": null,
       "appRoleId": "00000000-0000-0000-0000-000000000000",
-      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
       "principalDisplayName": "Alex Wilber",
       "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
       "principalType": "User",
@@ -203,5 +203,4 @@ Content-type: application/json
   ]
 }
 -->
-
 
