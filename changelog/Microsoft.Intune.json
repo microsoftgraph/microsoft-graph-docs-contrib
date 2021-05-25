@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deletedWindowsAutopilotDeviceState",
           "ChangeType": "Deletion",
-          "Description": "Removed the **deletedWindowsAutopilotDeviceState**  resource type.",
+          "Description": "Removed the **deletedWindowsAutopilotDeviceState** resource type.",
           "Target": "deletedWindowsAutopilotDeviceState"
         },
         {
