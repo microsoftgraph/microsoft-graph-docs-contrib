@@ -42,9 +42,9 @@ conceptualContent:
         - url: ./users-you-can-reach.md
           itemType: concept
           text: Users you can reach
-        - url: ./data-connect-overview.md
+        - url: ./data-connect-concept-overview.md
           itemType: concept
-          text: Microsoft Graph data connect
+          text: Microsoft Graph Data Connect
         - url: https://developer.microsoft.com/graph/quick-start
           itemType: quickstart
           text: Quickstarts
