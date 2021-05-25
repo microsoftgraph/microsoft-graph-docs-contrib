@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a user's usage summary for a particular time period. See the [printUsageByUser](../resources/printUsageByUser.md) documentation for descriptions of each of the endpoints.
+Retrieve a user's usage summary for a particular time period. 
+
+See the [printUsageByUser](../resources/printUsageByUser.md) documentation for descriptions of each of the endpoints.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +50,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printUsageByUser](../resources/printUsageByUser.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -77,7 +79,7 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser/{id}
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
