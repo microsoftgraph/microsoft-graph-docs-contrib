@@ -35,7 +35,7 @@ The authentication method policies APIs are used to manage policy settings. For 
 ## Policies available to push users to set up particular authentication methods:
 |Policy       | Description |
 |:---------------------------|:------------|
-|[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Define users who can be nudged to set up a particular authentication method (currently on the Microsoft Authenticator is supported).|
+|[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Define users who can be nudged to set up a particular authentication method (currently only supported for the Microsoft Authenticator).|
 
 ## Next steps
 

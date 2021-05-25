@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Authentication Methods Registration Campaign provides a tool to admins to push users to setup targeted authentication methods. Users are nudged to setup the authentication method after they successfully complete a MFA challenge. This is currently scoped only to the Microsoft Authenticator app for MFA.
+The Authentication Methods Registration Campaign provides a tool to admins to offer users to setup targeted authentication methods. Users are nudged to setup the authentication method after they successfully complete a MFA challenge. This is currently scoped only to the Microsoft Authenticator app for MFA.
 
 ## Properties
 |Property|Type|Description|
@@ -21,7 +21,7 @@ The Authentication Methods Registration Campaign provides a tool to admins to pu
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Users and groups of users that are excluded from being nudged to setup the authentication method.|
 |includeTargets|[authenticationMethodsRegistrationCampaignIncludeTarget](../resources/authenticationmethodsregistrationcampaignincludetarget.md) collection|Users and groups of users that will be nudged to setup the authentication method.|
 |snoozeDurationInDays|Int32|Defines after how many days the user will see the nudge again if the user taps on "Not now" and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If value is “0” – User is nudged during every MFA attempt.|
-|state|advancedConfigState|Setting used to enable/disable the feature. The "default" value currently maps to "disabled". Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`.|
+|state|advancedConfigState|Setting used to enable/disable the feature. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The "default" value is used when the cnofiguration hasn't been explicitly set and will use Azure AD's default behavior for the setting. The "default" value currently maps to 'disabled'.|
 
 ## Relationships
 None.
