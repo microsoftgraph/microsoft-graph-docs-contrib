@@ -44,7 +44,7 @@ conceptualContent:
         - url: ./office365-groups-concept-overview.md
           itemType: overview
           text: Enable user collaboration and integration across services.
-    - title: Teams
+    - title: Microsoft Teams teamwork
       links:
         - url: ./teams-concept-overview.md
           itemType: overview
