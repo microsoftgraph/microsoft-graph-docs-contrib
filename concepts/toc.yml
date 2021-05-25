@@ -500,7 +500,7 @@ items:
                 displayName: Change notification in Microsoft Teams
                 items:
                   - name: Overview
-                    href: change-notification-in-Microsoft-Teams-overview.md
+                    href: change-notification-in-microsoft-teams-overview.md
                   - name: Change notifications for chat and channel messages
                     href: teams-changenotifications-chatmessage.md
                   - name: Change notifications for team and channel events

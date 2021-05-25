@@ -173,41 +173,41 @@ The decrypted notification payload looks like the following. The payload conform
 
 ```json
 {
-"id": "4c533ad3-e1dd-4277-a672-92ab64ed225c",
-"createdDateTime": "2021-03-18T10:31:14.597Z",
-"displayName": "Sample name",
-"description": "Sample description",
-"internalId": "19:2077546f765a42c1ba71236f4df70aa2@thread.tacv2",
-"specialization": "none",
-"visibility": "public",
-"webUrl": "https://teams.microsoft.com/l/team/19:2077546f724a42c1ba71236f4df79aa2%40thread.tacv2/conversations?groupId=4c533ad3-e1dd-4277-a672-92ab64ed225c&tenantId=0f2e8f59-862a-483b-9ca8-82a10665e17d",
-"isArchived": false,
-"isMembershipLimitedToOwners": false,
-"memberSettings": {
-"allowCreateUpdateChannels": true,
-"allowCreatePrivateChannels": true,
-"allowDeleteChannels": true,
-"allowAddRemoveApps": true,
-"allowCreateUpdateRemoveTabs": true,
-"allowCreateUpdateRemoveConnectors": true
-},
-"guestSettings": {
-"allowCreateUpdateChannels": false,
-"allowDeleteChannels": false
-},
-"messagingSettings": {
-"allowUserEditMessages": true,
-"allowUserDeleteMessages": true,
-"allowOwnerDeleteMessages": true,
-"allowTeamMentions": true,
-"allowChannelMentions": true
-},
-"funSettings": {
-"allowGiphy": true,
-"giphyContentRating": "moderate",
-"allowStickersAndMemes": true,
-"allowCustomMemes": true
-}
+  "id": "4c533ad3-e1dd-4277-a672-92ab64ed225c",
+  "createdDateTime": "2021-03-18T10:31:14.597Z",
+  "displayName": "Sample name",
+  "description": "Sample description",
+  "internalId": "19:2077546f765a42c1ba71236f4df70aa2@thread.tacv2",
+  "specialization": "none",
+  "visibility": "public",
+  "webUrl": "https://teams.microsoft.com/l/team/19:2077546f724a42c1ba71236f4df79aa2%40thread.tacv2/conversations?groupId=4c533ad3-e1dd-4277-a672-92ab64ed225c&tenantId=0f2e8f59-862a-483b-9ca8-82a10665e17d",
+  "isArchived": false,
+  "isMembershipLimitedToOwners": false,
+  "memberSettings": {
+    "allowCreateUpdateChannels": true,
+    "allowCreatePrivateChannels": true,
+    "allowDeleteChannels": true,
+    "allowAddRemoveApps": true,
+    "allowCreateUpdateRemoveTabs": true,
+    "allowCreateUpdateRemoveConnectors": true
+  },
+  "guestSettings": {
+    "allowCreateUpdateChannels": false,
+    "allowDeleteChannels": false
+  },
+  "messagingSettings": {
+    "allowUserEditMessages": true,
+    "allowUserDeleteMessages": true,
+    "allowOwnerDeleteMessages": true,
+    "allowTeamMentions": true,
+    "allowChannelMentions": true
+  },
+  "funSettings": {
+    "allowGiphy": true,
+    "giphyContentRating": "moderate",
+    "allowStickersAndMemes": true,
+    "allowCustomMemes": true
+  }
 }
 ```
 
@@ -245,15 +245,15 @@ The decrypted notification payload looks like the following. The payload conform
 
 ```json
 {
-"id": "19:a3f841d969cd4ae0a7cbe847fc10b371@thread.tacv2",
-"createdDateTime": "2020-02-14T01:10:03.592Z",
-"displayName": "General",
-"description": "Sample Channel description",
-"isFavoriteByDefault": true,
-"email": "",
-"webUrl": "https://teams.microsoft.com/l/channel/19%3Aa3f841d969cd4ae0a7cbe847fc10b371%40thread.tacv2/General?groupId=7ed9bdab-9c7d-4c10-a25d-3f4ff0e34577&tenantId=0f2d8f49-862a-493b-9ca8-82a10637e17d",
-"membershipType": "standard",
-"moderationSettings": null
+  "id": "19:a3f841d969cd4ae0a7cbe847fc10b371@thread.tacv2",
+  "createdDateTime": "2020-02-14T01:10:03.592Z",
+  "displayName": "General",
+  "description": "Sample Channel description",
+  "isFavoriteByDefault": true,
+  "email": "",
+  "webUrl": "https://teams.microsoft.com/l/channel/19%3Aa3f841d969cd4ae0a7cbe847fc10b371%40thread.tacv2/General?groupId=7ed9bdab-9c7d-4c10-a25d-3f4ff0e34577&tenantId=0f2d8f49-862a-493b-9ca8-82a10637e17d",
+  "membershipType": "standard",
+  "moderationSettings": null
 }
 ```
 
@@ -289,15 +289,15 @@ For notifications with resource data, the payload  for any change in teams's pro
 
 ```json
 {
-"id": "19:a3f841d969cd4ae0a7cbe847fc10b371@thread.tacv2",
-"createdDateTime": "2020-02-14T01:10:03.592Z",
-"displayName": "General",
-"description": "Sample Channel description",
-"isFavoriteByDefault": true,
-"email": "",
-"webUrl": "https://teams.microsoft.com/l/channel/19%3Aa3f841d969cd4ae0a7cbe847fc10b371%40thread.tacv2/General?groupId=7ed9bdab-9c7d-4c10-a25d-3f4ff0e34577&tenantId=0f2d8f49-862a-493b-9ca8-82a10637e17d",
-"membershipType": "standard",
-"moderationSettings": null
+  "id": "19:a3f841d969cd4ae0a7cbe847fc10b371@thread.tacv2",
+  "createdDateTime": "2020-02-14T01:10:03.592Z",
+  "displayName": "General",
+  "description": "Sample Channel description",
+  "isFavoriteByDefault": true,
+  "email": "",
+  "webUrl": "https://teams.microsoft.com/l/channel/19%3Aa3f841d969cd4ae0a7cbe847fc10b371%40thread.tacv2/General?groupId=7ed9bdab-9c7d-4c10-a25d-3f4ff0e34577&tenantId=0f2d8f49-862a-493b-9ca8-82a10637e17d",
+  "membershipType": "standard",
+  "moderationSettings": null
 }
 ```
 

@@ -56,7 +56,7 @@ For notifications with resource data, the payload looks like the following. This
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. For above example decrypted payload conforms to the [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
@@ -100,7 +100,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the message. Subscriptions for notifications without resource data do not require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the resource. Subscriptions for notifications without resource data do not require an encryption certificate (because actual resource data is not sent over).
 
 The payload looks like the following. This payload is for a message sent in a channel.
 
