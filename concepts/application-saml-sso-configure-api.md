@@ -17,7 +17,7 @@ This article uses an AWS Azure AD application template as an example, but you ca
 
 This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
 
-1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+1. Go to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
 3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
