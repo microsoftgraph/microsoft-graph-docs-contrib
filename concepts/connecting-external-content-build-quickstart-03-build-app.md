@@ -10,11 +10,11 @@
 
 ## Add nuget packages
 
-To add nuget packages first do a right click on **Project Solution** and **Open in Terminal**, as shown below.
+To add nuget packages, first right-click on **Project Solution** and select **Open in Terminal**.
 
 ![Screenshot showing the Open terminal option](images/connectors-images/build8.png)
 
-Then run the below CLI commands in the developer command prompt.
+Next, run the following CLI commands in the developer command prompt.
 
 ```dotnetcli
 dotnet add package CsvHelper --version 12.1.2
@@ -25,9 +25,9 @@ dotnet add package Microsoft.Graph.Beta --version 0.17.0-preview
 dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
 
-## Add azure AD authentication
+## Add Azure AD authentication
 
-This authentication is required to obtain the necessary OAuth access token to call the Microsoft Graph indexing API.
+This authentication is required to get the necessary OAuth access token to call the Microsoft Graph indexing API.
 
 1. Create a new directory named **Authentication** in the **PartsInventoryConnector** directory **.**
 2. Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs and place the following code in that file:
