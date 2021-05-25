@@ -13308,6 +13308,8 @@ items:
           href: api/profilephoto-update.md
         - name: Complete migration for team
           href: api/team-completemigration.md
+        - name: List permission grants of team
+          href: api/team-list-permissiongrants.md
       - name: Group (team)
         href: resources/group.md
         items:
