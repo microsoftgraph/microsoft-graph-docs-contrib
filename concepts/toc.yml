@@ -182,8 +182,6 @@ items:
             href: connecting-external-content-manage-items.md
           - name: API limits
             href: connecting-external-content-api-limits.md
-          - name: External groups
-            href: connecting-external-content-external-groups.md
           - name: Quickstart - Build your first custom connector
             href: connecting-external-content-build-quickstart.yml            
       - name: Cross-device experiences
