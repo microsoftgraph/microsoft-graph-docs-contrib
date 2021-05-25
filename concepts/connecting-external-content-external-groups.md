@@ -10,9 +10,9 @@ ms.prod: search
 
 The access control list is used to specify who has permissions to view [external items](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in a Microsoft Graph connection, in Microsoft 365 experiences such as Search and Intelligent Discovery. For data sources that rely on Azure Active Directory users and groups, setting permissions on external items is as simple as associating the ACLs with an AAD user and group ID when creating or updating the external item as shown below.
 
-```html
+```json
 PUT https://graph.microsoft.com/beta/exernal/connections/{id}/items/{id} 
-Content-type: application/html 
+Content-type: application/json 
 { 
  "@odata.type": "microsoft.graph.externalItem", 
  "acl": [ 
@@ -36,7 +36,7 @@ Content-type: application/html
  }, 
  "content": { 
  "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
- "type": "html" 
+ "type": "json" 
  } 
 }
 ```
@@ -47,14 +47,14 @@ Here are two common non-AAD application-specific group examples.
 
 1. Microsoft Dynamics 365 allows customers to structure their CRMs with Business Units and Teams. The membership information for these Business Units and Teams is not stored in AAD.
 
-<!---Using html to adjust the size of the image --->
+<!---Using json to adjust the size of the image --->
 <br><img src="images/connectors-images/bu-teams-D365.png" alt="Example of Business Units and Teams in Dynamics 365" style="width:400px;"/>
 
 *Figure 1. Business Units & Teams in Dynamics 365*
 
 2. Salesforce uses profiles, roles, and permission sets for authorization. These are specific to Salesforce, and the membership information is not available in AAD.
 
-<!---Using html to adjust the size of the image --->
+<!---Using json to adjust the size of the image --->
 <br><img src="images/connectors-images/roles-salesforce.png" alt="Example of Roles in Salesforce" style="width:400px;"/>
 
 *Figure 2. Roles in Salesforce*
@@ -70,7 +70,7 @@ To use external groups for your connections that use application-specific, non-A
 
 External groups are scoped to a connection. For each application-specific, non-AAD group associated with your connection, create an external group using the Groups API in Microsoft Graph as shown below. For the [id](/graph/api/resources/externalitem?view=graph-rest-beta#properties&preserve-view=true) field, you can provide an identifier or the external group that is unique within the connection. The [displayName](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) and description are optional fields.
 
-```html
+```json
 POST /connections/{id}/externalGroups  
 { 
 "id": "contosoEscalations", 
@@ -87,9 +87,9 @@ An external group can contain one or more of the following:
 * An AAD user
 * An AAD group
 * Another external group (external groups support nested external groups)
-After you create the group, you can add members to the group as shown below.
+After you create the group, you can add members to the group as in the examples shown below.
 
-```html
+```json
 POST /connections/{id}/externalgroups/{id}/externalGroupMembers 
 { 
 "id": "contosoSupport", 
@@ -97,7 +97,7 @@ POST /connections/{id}/externalgroups/{id}/externalGroupMembers
 "identitySource": "external" 
 }
 ```
-```html
+```json
 POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers 
 { 
  "id": "25f143de-be82-4afb-8a57-e032b9315752", 
@@ -105,7 +105,7 @@ POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers
 "identitySource": "Azure Active Directory" 
 }
 ```
-```html
+```json
 POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers 
 { 
  "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b", 
@@ -116,11 +116,10 @@ POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers
 
 ### Use external groups in the ACLs
 
-You can use external groups when defining ACLs for external items. In addition to AAD users and AAD groups, an external item can have external groups in its ACEs, as shown below.
-
-```html
+You can use external groups when defining ACLs for external items. In addition to AAD users and AAD groups, an external item can have external groups in its ACEs, as shown next.
+```json
 PUT https://graph.microsoft.com/beta/external/connections/{id}/items/{id} 
-Content-type: application/html 
+Content-type: application/json 
 { 
  "@odata.type": "microsoft.graph.externalItem", 
  "acl": [ 
@@ -150,7 +149,7 @@ Content-type: application/html
  }, 
  "content": { 
  "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
- "type": "html" 
+ "type": "json" 
  } 
 }
 ```
