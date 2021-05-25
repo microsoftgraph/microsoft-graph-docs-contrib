@@ -26,8 +26,6 @@ items:
             href: deployments.md
           - name: Hybrid deployments (preview)
             href: hybrid-rest-support.md
-      - name: Microsoft Graph data connect
-        href: data-connect-overview.md
       - name: Tutorials
         items:
           - name: Overview
@@ -164,23 +162,23 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Data access
-        displayName: Microsoft Graph data connect
+      - name: Data access at scale
+        displayName: Microsoft Graph Data Connect
         items:
-          - name: Data connect overview
+          - name: Data Connect overview
             href: data-connect-concept-overview.md
-          - name: Get started
-            href: data-connect-get-started.md
+          #- name: Build your first Data Connect application
+           # href: data-connect-quickstart.yml
           - name: Datasets, regions, and sinks
             href: data-connect-datasets.md
-          - name: Policies and licensing
+          - name: Policies and billing
             href: data-connect-policies.md
           - name: User selection and filtering
             href: data-connect-filtering.md
           - name: Integrate with PAM
             href: data-connect-pam.md
-          - name: Tips
-            href: data-connect-tips.md
+          - name: Frequently asked questions
+            href: data-connect-faq.md
       - name: Devices and apps
         expanded: true
         items:
@@ -263,6 +261,8 @@ items:
             href: outlook-organize-messages.md
           - name: Get MIME content
             href: outlook-get-mime-message.md
+          - name: Send MIME message
+            href: outlook-send-mime-message.md
           - name: Attach large files
             href: outlook-large-attachments.md
           - name: Get shared messages
