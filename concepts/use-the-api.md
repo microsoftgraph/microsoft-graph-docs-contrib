@@ -14,7 +14,7 @@ Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud 
 
 ## OData namespace
 
-The Microsoft Graph API defines most of its resources, methods, and enumerations in the OData namespace, `microsoft.graph`, in the [Microsoft Graph metadata](traverse-the-graph.md#microsoft-graph-api-metadata). A small number of API sets are defined in their sub-namespaces, such as the [call records API](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta) which defines resources like [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) in `microsoft.graph.callRecords`. 
+The Microsoft Graph API defines most of its resources, methods, and enumerations in the OData namespace, `microsoft.graph`, in the [Microsoft Graph metadata](traverse-the-graph.md#microsoft-graph-api-metadata). A small number of API sets are defined in their sub-namespaces, such as the [call records API](/graph/api/resources/callrecords-api-overview) which defines resources like [callRecord](/graph/api/resources/callrecords-callrecord) in `microsoft.graph.callRecords`. 
 
 Unless explicitly specified in the corresponding topic, assume types, methods, and enumerations are part of the `microsoft.graph` namespace.
 
@@ -129,7 +129,7 @@ A status code and message are displayed after a request is sent and the response
 
 Postman is a tool that you can use to build and test requests using the Microsoft Graph APIs. You can download Postman at: `https://www.getpostman.com/`. To interact with Microsoft Graph in Postman, you use the Microsoft Graph collection.
 
-For more information, see [Use Postman with the Microsoft Graph API](./use-postman.md?context=graph%252fapi%252fbeta&view=graph-rest-beta).
+For more information, see [Use Postman with the Microsoft Graph API](./use-postman.md).
 
 ## Next steps
 
