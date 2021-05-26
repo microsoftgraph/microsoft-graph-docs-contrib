@@ -1,13 +1,13 @@
 ---
-title: "iQueryable_1OfDeviceManagementResourceAccessProfileBase resource type"
-description: "Not yet documented"
-author: "dougeby"
+title: "officeUserCheckinSummary resource type"
+description: "Entity that describes  tenant check-in stats."
 localization_priority: Normal
+author: "dougeby"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
-# iQueryable_1OfDeviceManagementResourceAccessProfileBase resource type
+# officeUserCheckinSummary resource type
 
 Namespace: microsoft.graph
 
@@ -15,11 +15,13 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Entity that describes  tenant check-in stats.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|succeededUserCount|Int32|Total successful user check ins for the last 3 months.|
+|failedUserCount|Int32|Total failed user check ins for the last 3 months.|
 
 ## Relationships
 None
@@ -28,12 +30,15 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.iQueryable_1OfDeviceManagementResourceAccessProfileBase"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.officeUserCheckinSummary"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.iQueryable_1OfDeviceManagementResourceAccessProfileBase"
+  "@odata.type": "#microsoft.graph.officeUserCheckinSummary",
+  "succeededUserCount": 1024,
+  "failedUserCount": 1024
 }
 ```
 
