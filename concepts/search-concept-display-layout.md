@@ -9,15 +9,19 @@ ms.prod: "search"
 
 # Use Display Layout provided in Microsoft Graph Search API to render search results (preview)
 
-A search display layout or result type is a rule that causes distinct kinds of search results to be displayed in different ways in Search Result Pages. It consists of the following: 
+A search display layout or result type is a rule that causes distinct kinds of search results to be displayed in different ways in search result pages. It consists of the following: 
 
 - One or more characteristics or conditions to compare each search result against, such as the result source or content type of the search result.
 - A display template to use for search results that meet the conditions. The display template controls the way in which all results that meet the conditions appear and behave on a search results page. 
 
-Microsoft Graph Search API provided a renderable response based on [Adaptive Card](https://adaptivecards.io/). By using [Adaptive Card Template](https://adaptivecards.io/designer), Clients can render different search result in different kinds of platform.
-Clients can custominize their search result type in [Microsoft Office365 Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
+The Microsoft Graph Search API provides a renderable response based on [Adaptive Cards].(https://adaptivecards.io/). By using the [Adaptive Card template](https://adaptivecards.io/designer), Clients can render different search result in different canvases.
+Customers can customize their search result type in [Microsoft Office 365 Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
 
 ## Example 1: Sample Request
+
+The following example shows how to get the display layouts or result templates, for rendering the search results, by setting **true** the **enableResultTemplate** property in the request contract.
+
+The reponse shows 3 search hits, two of them related with the **resultTemplateId** 1603900360618_5XCBK2OXG, and the other one with the **resultTemplateId** 1603900360618_5XCBK2OXP. These IDs matches with one of the keys of the two display layouts contained in the **resultTemplates** dictionary, included within the response contract. Using the result template IDs you can know which display layout must to use for rendering each search result.
 
 ### Request
 
@@ -47,7 +51,6 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response, which contains one message that matches the search criterion.
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -208,34 +211,25 @@ Content-type: application/json
 
 ```
 
-## Example 2: Using ACT rendering pages
+## Example 2: Using Adaptive Card templates for rendering pages
 
-Using AdaptiveCardTemplating for the result rendering.
-
-We're excited to share a preview of new tools that will help you **create**, **reuse**, and **share** Adaptive Cards. 
+The follwing example shows how to use **AdaptiveCardTemplating** for rendering search results.
 
 > [!IMPORTANT] 
 > 
-> **Breaking changes** in the **May 2020 Release Candidate**
+> The version used in Microsoft Graph Search API is based on the AdaptiveCardTemplating version before **May 2020 Release**.
 >
-> The templating release candidate includes some minor breaking changes that you should be aware of if you've been using the older packages. See below for details.
-
-
-### Breaking changes as of May 2020
-
-1. The binding syntax changed from `{...}` to `${...}`. 
-    * For Example: `"text": "Hello {name}"` becomes `"text": "Hello ${name}"`
-2. The JavaScript API no longer contains an `EvaluationContext` object. Simply pass your data to the `expand` function. Please see the [SDK page](https://docs.microsoft.com/adaptive-cards/templating/sdk) for full details.
-3. The .NET API was redesigned to more closely match the JavaScript API. Please see the [SDK page](https://docs.microsoft.com/adaptive-cards/templating/sdk) for full details.
-
-### Rendering for web component
-> [!IMPORTANT] 
+> Check this links to now more about **AdaptiveCardTemplating**:
+>
+> https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk
+>
+> https://docs.microsoft.com/en-us/adaptive-cards/templating/
 > 
-> The version used in Microsoft Graph Search API based on the ACT version before **May 2020 Release**
+
 
 
 <!-- markdownlint-disable MD024 -->
-### Sample WebComponent
+Sample WebComponent:
 
 ```HTML
 <!DOCTYPE html>
