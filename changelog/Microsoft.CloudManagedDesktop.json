@@ -14,7 +14,7 @@
                     "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
                     "ApiChange": "Resource",
                     "ChangedApiName": "unifiedroledefinition",
-                    "ChangeType": "Addition",
+                    "ChangeType": "Change",
                     "Description": "Cloud PC provider supports get and list operation for [unifiedroledefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
                     "Target": "unifiedroledefinition"
                 },
@@ -22,7 +22,7 @@
                     "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
                     "ApiChange": "Resource",
                     "ChangedApiName": "unifiedroleassignmentmultiple",
-                    "ChangeType": "Addition",
+                    "ChangeType": "Change",
                     "Description": "Cloud PC provider supports get, list, create, update and delelte operation for [unifiedroleassignmentmultiple](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta).",
                     "Target": "unifiedroleassignmentmultiple"
                 }
@@ -30,7 +30,7 @@
             "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2021-04-9T15:13:07.177Z",
+            "CreatedDateTime": "2021-05-26T15:13:07.177Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
