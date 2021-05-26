@@ -9,7 +9,7 @@ dotnet ef database update
 ```
 
 > [!NOTE]
-> Only run the below CLI commands when any schema changes in the CSV file and reflects those changes into the SQLite database.
+> Run the following commands if a schema changes in the CSV file, and reflect those changes into the SQLite database.
 
 ```dotnetcli
 dotnet ef database drop

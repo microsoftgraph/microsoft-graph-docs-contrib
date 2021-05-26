@@ -1,16 +1,18 @@
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
+In this step, you'll create a .NET Core console app. After that you will create a new connection, register the schema, and sync the items.
+
 ## Create a .NET Core console app
 
-1. Launch Visual Studio 2019 and navigate to **File** > **New** > **Project**.
-2. Select the **Console App (.Net Core)** template, and select **Next**.
-3. Type the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.
+1. Launch Visual Studio 2019 and go to **File** > **New** > **Project**.
+2. Select the **Console App (.NET Core)** template, and select **Next**.
+3. Enter the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.
 
 ![Screenshot of the "Configure your new project" section](images/connectors-images/build7.png)
 
-## Add nuget packages
+## Add NuGet packages
 
-To add nuget packages, first right-click on **Project Solution** and select **Open in Terminal**.
+To add NuGet packages, first right-click **Project Solution** and select **Open in Terminal**.
 
 ![Screenshot showing the Open terminal option](images/connectors-images/build8.png)
 
@@ -27,9 +29,9 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 
 ## Add Azure AD authentication
 
-This authentication is required to get the necessary OAuth access token to call the Microsoft Graph indexing API.
+This authentication is required to get the necessary OAuth access token to call the connectors API.
 
-1. Create a new directory named **Authentication** in the **PartsInventoryConnector** directory **.**
+1. Create a new directory named **Authentication** in the **PartsInventoryConnector** directory.
 2. Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs and place the following code in that file:
 
 ```c
@@ -306,10 +308,10 @@ namespace PartsInventoryConnector.Data
 }
 ```
 
-## Write the graph helper service
+## Write the Microsoft Graph helper service
 
-1. Create a new directory named **Graph** in the **PartsInventoryConnector** directory.
-2. Create a new file in the **Graph** directory named CustomSerializer.cs and place the following code in that file:
+1. Create a new directory named **MicrosoftGraph** in the **PartsInventoryConnector** directory.
+2. Create a new file in the **MicrosoftGraph** directory named CustomSerializer.cs and place the following code in that file:
 
 ```c
 using Microsoft.Graph;
@@ -321,11 +323,11 @@ using System.IO;
 
 namespace PartsInventoryConnector.Graph
 {
-    // The Graph SDK serializes enumerations in camelCase.
-    // The Graph service currently requires the PropertyType enum
-    // to be PascalCase. This will override the Graph serialization
-    // If the Graphs service changes to accept camelCase this will no
-    // longer be necessary
+    // The Microsoft Graph SDK serializes enumerations in camelCase.
+    // The Microsoft Graph service currently requires the PropertyType enum
+    // to be PascalCase. This will override the Microsoft Graph serialization
+    // If the Microsoft Graph service changes to accept camelCase this will no
+    // longer be necessary.
     class CustomContractResolver : DefaultContractResolver
     {
         protected override JsonConverter ResolveContractConverter(Type objectType)
@@ -341,16 +343,16 @@ namespace PartsInventoryConnector.Graph
 
     // In order to hook up the custom contract resolver for
     // PropertyType, we need to implement a custom serializer to
-    // pass to the GraphServiceClient.
+    // pass to the MicrosoftGraphServiceClient.
     public class CustomSerializer : ISerializer
     {
 
-        private Serializer _graphSerializer;
+        private Serializer _microsoftGraphSerializer;
         private JsonSerializerSettings _jsonSerializerSettings;
 
         public CustomSerializer()
         {
-            _graphSerializer = new Serializer();
+            _microsoftGraphSerializer = new Serializer();
 
             _jsonSerializerSettings = new JsonSerializerSettings
             {
@@ -359,17 +361,17 @@ namespace PartsInventoryConnector.Graph
         }
 
         // For deserialize, just pass through to the default
-        // Graph SDK serializer
+        // Microsoft Graph SDK serializer
         public T DeserializeObject<T>(Stream stream)
         {
-            return _graphSerializer.DeserializeObject<T>(stream);
+            return _microsoftGraphSerializer.DeserializeObject<T>(stream);
         }
 
         // For deserialize, just pass through to the default
-        // Graph SDK serializer
+        // Microsoft Graph SDK serializer
         public T DeserializeObject<T>(string inputString)
         {
-            return _graphSerializer.DeserializeObject<T>(inputString);
+            return _microsoftGraphSerializer.DeserializeObject<T>(inputString);
         }
 
         public string SerializeObject(object serializeableObject)
@@ -382,16 +384,16 @@ namespace PartsInventoryConnector.Graph
                 return foo;
             }
 
-            // Otherwise, just pass through to the default Graph SDK serializer
-            return _graphSerializer.SerializeObject(serializeableObject);
+            // Otherwise, just pass through to the default Microsoft Graph SDK serializer
+            return _microsoftGraphSerializer.SerializeObject(serializeableObject);
         }
     }
 }
 ```
 
-3. Create a new file in the **Graph** directory named GraphHelper.cs and place the code below in that file.
+3. Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs and place the code below in that file.
 
-The following code contains methods that use the **GraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.
+The following code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -403,25 +405,25 @@ using System.Threading.Tasks;
 
 namespace PartsInventoryConnector.Graph
 {
-    public class GraphHelper
+    public class MicrosoftGraphHelper
     {
-        private GraphServiceClient _graphClient;
+        private MicrosoftGraphServiceClient _microsoftGraphClient;
 
-        public GraphHelper(IAuthenticationProvider authProvider)
+        public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
             // Configure a default HttpProvider with our
             // custom serializer to handle the PropertyType serialization
             var serializer = new CustomSerializer();
             var httpProvider = new HttpProvider(serializer);
 
-            // Initialize the Graph client
-            _graphClient = new GraphServiceClient(authProvider, httpProvider);
+            // Initialize the Microsoft Graph client
+            _microsoftGraphClient = new MicrosoftGraphServiceClient(authProvider, httpProvider);
         }
     }
 }
 ```
 
-## Initialize graph helper service
+## Initialize the Microsoft Graph helper service
 
 1. Open Program.cs and replace the entire content with the following code:
 
@@ -443,7 +445,7 @@ namespace PartsInventoryConnector
 {
     class Program
     {
-        private static GraphHelper _graphHelper;
+        private static MicrosoftGraphHelper _microsoftGraphHelper;
 
         private static ExternalConnection _currentConnection;
 
@@ -479,7 +481,7 @@ namespace PartsInventoryConnector
                     }
                 }
 
-                _graphHelper = new GraphHelper(authProvider);
+                _microsoftGraphHelper = new MicrosoftGraphHelper(authProvider);
 
                 do
                 {
@@ -578,7 +580,7 @@ namespace PartsInventoryConnector
 
 ## Create the connection
 
-1. Under **Graph** , Open GraphHelper.cs file and add the following code after the **constructor** method.
+1. Under **Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
 
 ```c
 #region Connections
@@ -595,7 +597,7 @@ namespace PartsInventoryConnector
                 Description = description
             };
 
-            return await _graphClient.External.Connections.Request().AddAsync(newConnection);
+            return await _microsoftGraphClient.External.Connections.Request().AddAsync(newConnection);
         }
 
 #endregion
@@ -614,7 +616,7 @@ private static async Task CreateConnectionAsync()
             try
             {
                 // Create the connection
-                _currentConnection = await _graphHelper.CreateConnectionAsync(connectionId, connectionName, connectionDescription);
+                _currentConnection = await _microsoftGraphHelper.CreateConnectionAsync(connectionId, connectionName, connectionDescription);
           System.Console.WriteLine("New connection created");
                 System.Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(_currentConnection, Newtonsoft.Json.Formatting.Indented));
             }
@@ -628,7 +630,7 @@ private static async Task CreateConnectionAsync()
 
 ## Register schema
 
-1. Under **Graph** , Open the GraphHelper.cs file and add the following code after the **constructor** method.
+1. Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
 
 ```c
 #region Schema
@@ -638,15 +640,15 @@ private static async Task CreateConnectionAsync()
             // Need access to the HTTP response here since we are doing an
             // async request. The new schema object isn't returned, we need
             // the Location header from the response
-            var asyncNewSchemaRequest = _graphClient.External.Connections[connectionId].Schema
+            var asyncNewSchemaRequest = _microsoftGraphClient.External.Connections[connectionId].Schema
                 .Request()
                 .Header("Prefer", "respond-async")
                 .GetHttpRequestMessage();
 
             asyncNewSchemaRequest.Method = HttpMethod.Post;
-            asyncNewSchemaRequest.Content = _graphClient.HttpProvider.Serializer.SerializeAsJsonContent(schema);
+            asyncNewSchemaRequest.Content = _microsoftGraphClient.HttpProvider.Serializer.SerializeAsJsonContent(schema);
 
-            var response = await _graphClient.HttpProvider.SendAsync(asyncNewSchemaRequest);
+            var response = await _microsoftGraphClient.HttpProvider.SendAsync(asyncNewSchemaRequest);
 
             if (response.IsSuccessStatusCode)
             {
@@ -676,7 +678,7 @@ private static async Task CreateConnectionAsync()
         {
             do
             {
-                var operation = await _graphClient.External.Connections[connectionId]
+                var operation = await _microsoftGraphClient.External.Connections[connectionId]
                     .Operations[operationId]
                     .Request()
                     .GetAsync();
@@ -703,7 +705,7 @@ private static async Task CreateConnectionAsync()
 #endregion
 ```
 
-2. Open the Program.cs file and add the below code after the **Main** method.
+2. Open the Program.cs file and add the following code after the **Main** method.
 
 ```c
 private static async Task RegisterSchemaAsync()
@@ -736,7 +738,7 @@ private static async Task RegisterSchemaAsync()
                     }
                 };
 
-                await _graphHelper.RegisterSchemaAsync(_currentConnection.Id, schema);
+                await _microsoftGraphHelper.RegisterSchemaAsync(_currentConnection.Id, schema);
                 System.Console.WriteLine("Schema registered");
             }
             catch (ServiceException serviceException)
@@ -750,7 +752,7 @@ private static async Task RegisterSchemaAsync()
 
 ## Sync items
 
-1. Under **Graph** , Open the GraphHelper.cs file and add the following code after the **Constructor** method.
+1. Under **Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method.
 
 ```c
 #region PushData   
@@ -760,13 +762,13 @@ private static async Task RegisterSchemaAsync()
             // The SDK's auto-generated request builder uses POST here,
             // which isn't correct. For now, get the HTTP request and change it
             // to PUT manually.
-            var putItemRequest = _graphClient.External.Connections[connectionId]
+            var putItemRequest = _microsoftGraphClient.External.Connections[connectionId]
                 .Items[item.Id].Request().GetHttpRequestMessage();
 
             putItemRequest.Method = HttpMethod.Put;
-            putItemRequest.Content = _graphClient.HttpProvider.Serializer.SerializeAsJsonContent(item);
+            putItemRequest.Content = _microsoftGraphClient.HttpProvider.Serializer.SerializeAsJsonContent(item);
 
-            var response = await _graphClient.HttpProvider.SendAsync(putItemRequest);
+            var response = await _microsoftGraphClient.HttpProvider.SendAsync(putItemRequest);
             if (!response.IsSuccessStatusCode)
             {
                 throw new ServiceException(
@@ -782,7 +784,7 @@ private static async Task RegisterSchemaAsync()
         #endregion
 ```
 
-2. Open the Program.cs file and add the below code after the **Main** method.
+2. Open the Program.cs file and add the following code after the **Main** method.
 
 ```c
 private static async Task UpdateItemsFromDatabase()
@@ -831,7 +833,7 @@ private static async Task UpdateItemsFromDatabase()
                 try
                 {
                     System.Console.Write($"Uploading part number {part.PartNumber}...");
-                    await _graphHelper.AddOrUpdateItem(_currentConnection.Id, newItem);
+                    await _microsoftGraphHelper.AddOrUpdateItem(_currentConnection.Id, newItem);
                     System.Console.WriteLine("DONE");
                 }
                 catch (ServiceException serviceException)

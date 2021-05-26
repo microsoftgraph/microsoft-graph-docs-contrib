@@ -1,10 +1,10 @@
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
-Create search verticals and result types to customize the search results in Microsoft **SharePoint** , **Microsoft Office** , and Microsoft Search in **Bing**, to make it easier for users to find the information that they have permission to see.
+Create search verticals and result types to customize the search results in Microsoft SharePoint, Microsoft Office, and Microsoft Search in Bing, to make it easier for users to find the information that they have permission to see.
 
 ## Create a vertical
 
-Create and enable a search vertical at the organization level following the instructions in the Customize the Microsoft Search page. Sign in into [Microsoft 365 Admin center](https://admin.microsoft.com/) using the global administrator role.
+To create and enable a search vertical at the organization level sign in into [Microsoft 365 Admin center](https://admin.microsoft.com/) using the global administrator role, and follow the next steps:
 
 1. Go to **Settings** > **Search & intelligence** > **Customizations**.
 2. Go to **Vertical** and click on the **Add** button.
@@ -13,35 +13,35 @@ Create and enable a search vertical at the organization level following the inst
 
 ![Screenshot of the "Name the vertical" section](images/connectors-images/build11.png)
 
-  * **Content source** : the connector created with the app. (Parts Inventory)
+  * **Content source**: the connector created with the app. (Parts Inventory)
 
 ![Screenshot of the "Content source" section](images/connectors-images/build12.png)
 
-  * **Add a query** : leave blank.
+  * **Add a query**: leave blank.
 
 ![Screenshot of the "Add a query" section](images/connectors-images/build13.png)
 
-  * **Filters** : leave blank.
+  * **Filters**: leave blank.
 
 ![Screenshot of the "Filters" section](images/connectors-images/build14.png)
 
 ## Create a result type
 
-Create a result type at the organization level by following the instructions in Customize the Microsoft Search page.
+To create a result type follow the next steps:
 
-1. Go to Settings à Search &amp; intelligence à **Customizations** tab.
-2. Go to the **result type** tab and click on the **"+ Add"** button.
+1. Go to **Settings** > **Search & intelligence** > **Customizations**.
+2. Go to the **result type** tab and click the **Add** button.
 3. Provide the following details:
 
-* **Name** : Appliance Part
+* **Name**: Appliance Part
 
 ![Screenshot of the "Name the result type" section](images/connectors-images/build15.png)
 
-* **Content source** : the connector created in the app.
+* **Content source**: the connector created in the app.
 
 ![Screenshot of the "Select a content source" section](images/connectors-images/build16.png)
 
-* **Rules** : None
+* **Rules**: None
 
 ![Screenshot of the "Set rules" section](images/connectors-images/build17.png)
 
