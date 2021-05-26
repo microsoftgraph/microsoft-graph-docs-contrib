@@ -21,7 +21,7 @@ Represent the list of search results.
 |:-------------|:------------|:------------|
 |key|String|ID of a result template. It must map to a **resultTemplateId** in the [searchHit](searchhit.md).|
 |displayName|String|Name of the result template.|
-|body|Json|Json schema of the result template.|
+|body|Json|JSON schema of the result template.|
 
 ## JSON representation
 

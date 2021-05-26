@@ -37,7 +37,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |size|Int32|The size of the page to be retrieved. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 |stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
-|resultTemplateOptions|[resultTemplateOption](resultTemplateOption.md) collection|Provides the search result templates options for render connectors search results.|
+|resultTemplateOptions|[resultTemplateOption](resultTemplateOption.md) collection|Provides the search result templates options for rendering connectors search results.|
 
 
 ## JSON representation
