@@ -1,9 +1,9 @@
 ---
 title: "authenticationMethodsRegistrationCampaign resource type"
-description: "Settings to run campaigns to push users to setup targeted authentication methods."
+description: "Represents the settings used to run campaigns to push users to set up targeted authentication methods."
 author: "mjsantani"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ The Authentication Methods Registration Campaign provides a tool to admins to of
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Users and groups of users that are excluded from being nudged to setup the authentication method.|
 |includeTargets|[authenticationMethodsRegistrationCampaignIncludeTarget](../resources/authenticationmethodsregistrationcampaignincludetarget.md) collection|Users and groups of users that will be nudged to setup the authentication method.|
 |snoozeDurationInDays|Int32|Defines after how many days the user will see the nudge again if the user taps on "Not now" and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If value is “0” – User is nudged during every MFA attempt.|
-|state|advancedConfigState|Setting used to enable/disable the feature. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The "default" value is used when the cnofiguration hasn't been explicitly set and will use Azure AD's default behavior for the setting. The "default" value currently maps to 'disabled'.|
+|state|advancedConfigState|Enable or disable the feature. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The "default" value is used when the configuration hasn't been explicitly set and uses Azure AD's default behavior for the setting. The default value is 'disabled'.|
 
 ## Relationships
 None.
@@ -50,4 +50,3 @@ The following is a JSON representation of the resource.
   "state": "String"
 }
 ```
-

@@ -32,7 +32,7 @@ The authentication method policies APIs are used to manage policy settings. For 
 |[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) (deprecated)|Define users who can use Passwordless Phone Sign-in to sign in to Azure AD.|
 |[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Define users who can use Temporary Access Pass to sign in to Azure AD.|
 
-## Policies available to push users to set up particular authentication methods:
+## Policies available to push users to set up authentication methods:
 |Policy       | Description |
 |:---------------------------|:------------|
 |[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Define users who can be nudged to set up a particular authentication method (currently only supported for the Microsoft Authenticator).|

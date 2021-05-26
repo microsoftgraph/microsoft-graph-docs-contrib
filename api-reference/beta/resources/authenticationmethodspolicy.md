@@ -1,9 +1,9 @@
 ---
 title: "authenticationMethodsPolicy resource type"
-description: "Authentication methods policies."
+description: "Define authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA)."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Authentication methods policies define authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
+Define authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
 ## Methods
 |Method|Return type|Description|
@@ -24,17 +24,17 @@ Authentication methods policies define authentication methods and the users that
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|A description of the policy|
+|description|String|A description of the policy.|
 |displayName|String|The name of the policy.|
-|id|String|The ID of the policy. Inherited from [entity](../resources/entity.md)|
-|lastModifiedDateTime|DateTimeOffset|The datetime of the last update to the policy.|
+|id|String|The identifier of the policy. Inherited from [entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time of the last update to the policy.|
 |policyVersion|String|The version of the policy in use.|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Settings for enforcing registration at sign-in time. Can currently be used to nudge users to setup targeted authentication methods.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authenticationMethodConfigurations|[authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md) collection|Settings for each authentication method.|
+|authenticationMethodConfigurations|[authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md) collection|Represents the settings for each authentication method.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -59,4 +59,3 @@ The following is a JSON representation of the resource.
   } 
 }
 ```
-
