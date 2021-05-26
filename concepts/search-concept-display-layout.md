@@ -1,7 +1,7 @@
 ---
 ms.author: "yiwenwang"
 title: "Use the Microsoft Search API in Microsoft Graph to render display layout"
-description: "We provide display layout in Microsoft Graph Search API, which help our clients rendering the different search results"
+description: "Use the Microsoft Search API in Microsoft Graph, for rendering the different search results"
 author: "yiwenwang"
 localization_priority: Normal
 ms.prod: "search"
