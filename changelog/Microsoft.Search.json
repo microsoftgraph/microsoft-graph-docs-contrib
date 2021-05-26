@@ -210,7 +210,7 @@
           "ChangedApiName": "resultTemplateOptions",
           "ChangeType": "Addition",
           "Description": "Adding the [resultTemplateOptions](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta) resource, to enable search display layouts.",
-          "Target": "externalItem"
+          "Target": "searchRequest"
         },
         {
           "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
@@ -218,7 +218,7 @@
           "ChangedApiName": "resultTemplates",
           "ChangeType": "Addition",
           "Description": "Adding the [resultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/searchresultset?view=graph-rest-beta) resource, with the search display layouts schema.",
-          "Target": "externalItem"
+          "Target": "searchResultSet"
         },
         {
           "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
@@ -226,7 +226,7 @@
           "ChangedApiName": "resultTemplateId",
           "ChangeType": "Addition",
           "Description": "Adding the [resultTemplateId](https://docs.microsoft.com/en-us/graph/api/resources/searchhit?view=graph-rest-beta) property.",
-          "Target": "externalItem"
+          "Target": "searchHit"
         }
       ],
       "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
