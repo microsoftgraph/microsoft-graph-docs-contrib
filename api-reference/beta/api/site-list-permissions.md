@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List permissions
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get the [permission](../resources/permission.md) resources from the permissions navigation property on a site.
 
 ## Permissions
@@ -49,6 +51,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_permission"
@@ -57,6 +61,24 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-permission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
@@ -72,28 +94,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "1",
-      "roles": ["read"],
-      "grantedToIdentities": [{
-        "application": {
-          "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-          "displayName": "Foo App"
-        }
-      }]
-    },
-    {
-      "id": "2",
-      "roles": ["write"],
-      "grantedToIdentities": [{
-        "application": {
-          "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-          "displayName": "Bar App"
-        }
-      }]
-    }
-  ]
+   "value":[
+      {
+         "id":"1",
+         "roles":[
+            "read"
+         ],
+         "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+                  "displayName":"Contoso Time Manager App"
+               }
+            }
+         ]
+      },
+      {
+         "id":"2",
+         "roles":[
+            "write"
+         ],
+         "grantedToIdentities":[
+            {
+               "application":{
+                  "id":"22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
+                  "displayName":"Fabrikam Dashboard App"
+               }
+            }
+         ]
+      }
+   ]
 }
 ```
 
