@@ -61,10 +61,9 @@ The following is an example of the request.
   "name": "timecard_replace"
 }-->
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "timecard-replace"
+  "name": "timecard_replace"
 }-->
 
 ```http
