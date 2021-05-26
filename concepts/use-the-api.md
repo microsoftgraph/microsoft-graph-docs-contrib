@@ -64,7 +64,7 @@ Microsoft Graph currently supports two versions: `v1.0` and `beta`.
 * `v1.0` includes generally available APIs. Use the v1.0 version for all production apps.
 * `beta` includes APIs that are currently in preview. Because we might introduce breaking changes to our beta APIs, we recommend that you use the beta version only to test apps that are in development; do not use beta APIs in your production apps.
 
-We are always looking for feedback on our beta APIs. To provide feedback or request features, see our [UserVoice](https://officespdev.uservoice.com/) page.
+We are always looking for feedback on our beta APIs. To provide feedback or request features, see our [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 For more information about API versions, see [Versioning and support](versioning-and-support.md).
 
