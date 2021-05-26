@@ -17,6 +17,7 @@ Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obj
 
 The following RBAC providers are currently supported:
 - cloud PC 
+- device management (Intune)
 - directory (Azure AD) 
 
 ## Permissions
@@ -26,6 +27,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
 | Cloud PC | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
+| Device management | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Directory | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Not supported.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 
@@ -35,6 +37,12 @@ To list role definitions for a cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleDefinitions
+```
+
+To list role definitions for a device management provider:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/deviceManagement/roleDefinitions
 ```
 
 To list role definitions for a directory provider:

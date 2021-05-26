@@ -17,6 +17,7 @@ Get the properties and relationships of a [unifiedRoleDefinition](../resources/u
 
 The following RBAC providers are currently supported:
 - cloud PC 
+- device management (Intune)
 - directory (Azure AD) 
 
 ## Permissions
@@ -26,17 +27,24 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
 | Cloud PC | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
+| Device management | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Directory | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Not supported.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
 
-Retrieve the properties and relationships of a role definition for a cloud PC provider:
+Get a role definition for a cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleDefinitions/{id}
 ```
 
-Retrieve the properties and relationships of a role definition for a directory provider:
+Get a role definition for a device management provider:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/deviceManagement/roleDefinitions/{id}
+```
+
+Get a role definition for a directory provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -63,7 +71,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 ## Examples
 
-### Example 1: Get the definition of a custom role for directory provider
+### Example 1: Get the definition of a custom role for a directory provider
 
 #### Request
 
@@ -137,7 +145,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the definition of a built-in role for directory provider
+### Example 2: Get the definition of a built-in role for a directory provider
 
 #### Request
 
@@ -403,7 +411,7 @@ Content-type: application/json
 }
 ```
 
-### Example4: Get the definition of a cloud PC built-in role
+### Example 4: Get the definition of a built-in role for a cloud PC provider
 
 #### Request
 

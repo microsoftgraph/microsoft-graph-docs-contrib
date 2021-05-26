@@ -17,9 +17,11 @@ Represents a collection of permissions listing the operations, such as read, wri
 
 The following RBAC providers are currently supported:
 - cloud PC 
+- device management (Intune)
 - directory (Azure AD) 
 
-The cloud PC RBAC provider currently supports only the [list](../api/rbacapplication-list-roledefinitions.md) and [get](../api/unifiedroledefinition-get.md) operations.
+> [!NOTE]
+> The cloud PC RBAC provider currently supports only the [list](../api/rbacapplication-list-roledefinitions.md) and [get](../api/unifiedroledefinition-get.md) operations.
 
 ## Methods
 
