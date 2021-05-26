@@ -39,55 +39,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "<resultTemplateId>": {
-                    "displayName": "<Result-Template-Name>",
-                    "body": {
-                        "type": "AdaptiveCard",
-                        "version": "1.0",
-                        "body": [
-                            {
-                                "type": "ColumnSet",
-                                "columns": [
-                                    {
-                                        "type": "Column",
-                                        "width": "auto",
-                                        "items": [
-                                            {
-                                                "type": "Image",
-                                                "url": "https://searchuxcdn.azureedge.net/designerapp/images/LiquidLogo.png",
-                                                "horizontalAlignment": "Center",
-                                                "size": "Small"
-                                            }
-                                        ],
-                                        "horizontalAlignment": "Center"
-                                    },
-                                    {
-                                        "type": "Column",
-                                        "width": 10,
-                                        "items": [
-                                            {
-                                                "type": "TextBlock",
-                                                "text": "[{Title}]({URL})",
-                                                "weight": "Bolder",
-                                                "color": "Accent",
-                                                "size": "Medium",
-                                                "maxLines": 3
-                                            },
-                                            {
-                                                "type": "TextBlock",
-                                                "text": "{ResultSnippet}",
-                                                "maxLines": 3,
-                                                "wrap": true
-                                            }
-                                        ],
-                                        "spacing": "Medium"
-                                    }
-                                ]
-                            }
-                        ],
-                        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
-                    }
-                }
+  "resultTemplateId": {
+                    "displayName": "String",
+                    "body": "Json schema"
+                      }
 }
 ```
 
