@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodsRegistrationCampaignIncludeTarget resource type"
-description: "Allow users and groups of users to be nudged to set up targeted authentication methods."
+description: "Allow users and groups of users to be reminded to set up targeted authentication methods."
 author: "mjsantani"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"

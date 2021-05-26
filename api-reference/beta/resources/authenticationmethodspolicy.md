@@ -29,7 +29,7 @@ Define authentication methods and the users that are allowed to use them to sign
 |id|String|The identifier of the policy. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time of the last update to the policy.|
 |policyVersion|String|The version of the policy in use.|
-|registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Settings for enforcing registration at sign-in time. Can currently be used to nudge users to setup targeted authentication methods.|
+|registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to remind users to set up targeted authentication methods.|
 
 ## Relationships
 |Relationship|Type|Description|
