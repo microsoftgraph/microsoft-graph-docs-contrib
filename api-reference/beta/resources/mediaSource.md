@@ -1,5 +1,5 @@
 ---
-author: ElmazKhussainov
+author: MarcMroz
 description: "The mediaSource resource contains metadata about source of the media (audio or video) drive item."
 title: mediaSource resource type
 localization_priority: Normal
