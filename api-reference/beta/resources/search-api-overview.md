@@ -152,7 +152,7 @@ For examples that show how to use spelling corrections, see [Request spelling co
 
 The search API allows you to render search results from [connectors](/microsoftsearch/connectors-overview), by using the display layout or result template configured by the IT admin for each connector. The result templates are [Adaptive Cards](https://adaptivecards.io/), which are a semantically meaningful combination of layout and data.
 
-To get the result template in the [searchresponse](searchresponse.md), you have to set **true** the **enableResultTemplate** property, defined in the [resultTemplateOptions](./resulttemplateoption.md), in the [searchRequest](./searchrequest.md). Once the response is returned, for every [searchit](./searchhit.md) will be provided a **resultTemplateId**, which maps to one of the display layouts included in the **resultTemplates** dictionary, returned as well in the response.
+To get the result template in the [searchresponse](searchresponse.md), you have to set **true** the **enableResultTemplate** property, defined in the [resultTemplateOptions](./resulttemplateoption.md), in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [search hit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is included in the response.
 
 See [Use search display layout](/graph/search-concept-display-layout) for examples. 
 
