@@ -4,7 +4,7 @@ description: "Endpoints represent URLs for resources associated with an entity."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: "yyuank"
+author: "Jordanndahl"
 ---
 
 # Endpoint resource type
