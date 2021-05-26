@@ -1,13 +1,13 @@
 ---
 ms.author: "yiwenwang"
-title: "Use the Microsoft Search API in Microsoft Graph to render display layout"
+title: "Use the Microsoft Search API in Microsoft Graph for rendering display layout"
 description: "Use the Microsoft Search API in Microsoft Graph, for rendering the different search results"
 author: "yiwenwang"
 localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph to render display layout (preview)
+# Use the Microsoft Search API in Microsoft Graph for rendering display layout (preview)
 
 A search display layout or result type is a rule that causes distinct kinds of search results to be displayed in different ways in search result pages. It consists of the following: 
 
@@ -221,9 +221,9 @@ The follwing example shows how to use **AdaptiveCardTemplating** for rendering s
 >
 > Check this links to now more about **AdaptiveCardTemplating**:
 >
-> https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk
+> https://docs.microsoft.com/adaptive-cards/templating/sdk
 >
-> https://docs.microsoft.com/en-us/adaptive-cards/templating/
+> https://docs.microsoft.com/adaptive-cards/templating/
 > 
 
 
