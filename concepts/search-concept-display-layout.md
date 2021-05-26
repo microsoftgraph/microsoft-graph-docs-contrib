@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use Display Layout provided in Microsoft Graph Search API to render search results (preview)
+# Use the Microsoft Search API in Microsoft Graph to render display layout (preview)
 
 A search display layout or result type is a rule that causes distinct kinds of search results to be displayed in different ways in Search Result Pages. It consists of the following: 
 
