@@ -13,20 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. Use this object to create role assignments in Microsoft Intune or cloud PC. For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+Create a new [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object for an RBAC provider. 
+
+The following RBAC providers are currently supported:
+- cloud PC 
+- device management (Intune)
+
+For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
 
 |Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| cloud PC | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
-| intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
+| Cloud PC | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
 
 ## HTTP request
 
-To create role assignment for cloud PC provider.
+To create role assignment for a cloud PC provider:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,7 +40,7 @@ To create role assignment for cloud PC provider.
 POST /roleManagement/cloudPC/roleAssignments
 ```
 
-To create role assignment for Intune provider.
+To create role assignment for an Intune provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -202,7 +208,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a role assignment in cloud PC.
+### Example 3: Create a role assignment for a cloud PC provider
 
 #### Request
 

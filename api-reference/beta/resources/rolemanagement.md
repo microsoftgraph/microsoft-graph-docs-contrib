@@ -37,9 +37,9 @@ None.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Read-only. Nullable. Cloud PC unified RBAC enable IT admins to interact with not only Cloud PC RBAC but all M365 RBACs including AAD with a single set of APIs.|
-|deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Read-only. Nullable.|
-|directory|[rbacApplication](rbacapplication.md)| Read-only. Nullable.|
+|cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)|Provides access to role definitions and role assignments of a cloud PC RBAC provider. Read-only. Nullable.|
+|deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Provides access to role definitions and role assignments of an Intune RBAC provider. Read-only. Nullable.|
+|directory|[rbacApplication](rbacapplication.md)|Provides access to role definitions and role assignments of a Azure AD RBAC provider. Read-only. Nullable.|
 
 
 ## JSON representation

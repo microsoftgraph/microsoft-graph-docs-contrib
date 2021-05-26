@@ -13,16 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. Use this to get a list of role assignments in Microsoft Intune and cloud PC. For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+Get a list of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) objects for an RBAC provider.
+
+The following RBAC providers are currently supported:
+- cloud PC 
+- device management (Intune)
+
+For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
 
 |Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| cloud PC | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
-| intune | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+| Cloud PC | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ## HTTP request
 
@@ -34,7 +40,7 @@ To list role assignments for a cloud PC provider:
 GET /roleManagement/cloudPc/roleAssignments
 ```
 
-To list role assignments for an intune provider:
+To list role assignments for an Intune provider:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -61,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-### Example 1: List the role assignments for a specific principal for intune provider
+### Example 1: List the role assignments for a specific principal for an Intune provider
 
 ### Request
 
@@ -111,7 +117,7 @@ Content-type: application/json
     ]
 }
 ```
-### Example 2: List role assignments for cloud PC provider
+### Example 2: List role assignments for a cloud PC provider
 
 ### Request
 
@@ -172,7 +178,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: List role assignments for specific role for cloud PC provider
+### Example 3: List role assignments for specific role of a cloud PC provider
 
 ### Request
 

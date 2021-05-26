@@ -13,26 +13,32 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. Use this object for get role assignments in Microsoft Intune and cloud PC. For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+Get the properties and relationships of a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider. 
+
+The following RBAC providers are currently supported:
+- cloud PC 
+- device management (Intune)
+
+For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
 
 |Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| cloud PC | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
-| intune | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+| Cloud PC | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ## HTTP request
 
-To get the properties and relationships of a unifiedRoleAssignmentMultiple for cloud PC provider.
+To get the properties and relationships of a unifiedRoleAssignmentMultiple for a cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleAssignments/{id}
 ```
 
-To get the properties and relationships of a unifiedRoleAssignmentMultiple for Intune provider.
+To get the properties and relationships of a unifiedRoleAssignmentMultiple for an Intune provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/deviceManagement/roleAssignments/{id}
@@ -58,7 +64,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 ## Examples
 
-### Example 1: Get a directory-scoped roleAssignmentMultiple in Intune
+### Example 1: Get a directory-scoped roleAssignmentMultiple in an Intune provider
 
 #### Request
 
@@ -118,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a roleAssignmentMultiple in Intune assigned to a group
+### Example 2: Get a roleAssignmentMultiple assigned to a group in an Intune provider
 
 #### Request
 
@@ -191,7 +197,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get a directory-scoped roleAssignmentMultiple with `$expand`
+### Example 3: Get a directory-scoped roleAssignmentMultiple in an Intune provider with `$expand`
 
 #### Request
 
@@ -286,7 +292,7 @@ Content-type: application/json
   ]
 }
 ```
-### Example 4: Get a roleAssignmentMultiple in cloud PC 
+### Example 4: Get a roleAssignmentMultiple in a cloud PC provider
 
 #### Request
 <!-- {
@@ -328,7 +334,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Get a roleAssignmentMultiple in cloud PC with `$expand`
+### Example 5: Get a roleAssignmentMultiple in a cloud PC provider with `$expand`
 
 #### Request
 

@@ -15,9 +15,13 @@ Namespace: microsoft.graph
 
 A unifiedRoleAssignmentMultiple is used to grant access to resources, as part of Microsoft 365 RBAC [role management](rolemanagement.md). It represents a role definition assigned to an array of principals (typically a user) over an array of scopes. 
 
-Examples of such RBAC providers are Microsoft Intune and cloud PC. You can create a role assignment with multiple principals and multiple scopes.
+The following RBAC providers are currently supported:
+- cloud PC 
+- Microsoft Intune
 
-Providing either **directoryScopeIds** or **appScopeIds** is required.
+You can create a role assignment with multiple principals and multiple scopes.
+
+You must provide either **directoryScopeIds** or **appScopeIds**.
 
 ## Methods
 
@@ -33,14 +37,14 @@ Providing either **directoryScopeIds** or **appScopeIds** is required.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| id | String | The unique identifier for the unifiedRoleAssignmentMultiple. Key, not nullable, Read-only. |
-| displayName | String | Name of the role assignment. Required. |
-| description | String | Description of the role assignment. |
-| roleDefinitionId | String | Identifier of the unifiedRoleDefinition the assignment is for. |
-| roleDefinition | [unifiedRoleDefinition](unifiedroledefinition.md) |Property indicating the roleDefinition the assignment is for. Provided so that callers can get the role definition using `$expand` at the same time as getting the role assignment. Read-only. Supports `$filter` (`eq` operator on **id**, **isBuiltIn**, and **displayName**, and `startsWith` operator on **displayName**)  and `$expand`.  |
-| principalIds | String collection | Identifiers of the principals to which the assignment is granted.  Supports `$filter` (`any` operator only). |
-| directoryScopeIds | String collection | Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only. |
 | appScopeIds | String collection | Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. App scopes are scopes that are defined and understood by this application only. |
+| description | String | Description of the role assignment. |
+| directoryScopeIds | String collection | Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only. |
+| displayName | String | Name of the role assignment. Required. |
+| id | String | The unique identifier for the unifiedRoleAssignmentMultiple. Key, not nullable, Read-only. |
+| roleDefinitionId | String | Identifier of the unifiedRoleDefinition the assignment is for. |
+| principalIds | String collection | Identifiers of the principals to which the assignment is granted.  Supports `$filter` (`any` operator only). |
+
 
 ## Relationships
 
@@ -49,7 +53,8 @@ Providing either **directoryScopeIds** or **appScopeIds** is required.
 | appScopes | [appScope](appscope.md) collection |Read-only collection with details of the app specific scopes when the assignment scopes are app specific. Containment entity. Read-only.  |
 | directoryScopes | [directoryObject](directoryobject.md) collection | Read-only collection referencing the directory objects that are scope of the assignment. Provided so that callers can get the directory objects using `$expand` at the same time as getting the role assignment. Read-only.  Supports `$expand`.|
 | principals| [directoryObject](directoryobject.md) collection | Read-only collection referencing the assigned principals. Provided so that callers can get the principals using `$expand` at the same time as getting the role assignment. Read-only.  Supports `$expand`.|
-|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|The roleDefinition the assignment is for. Provided so that callers can get the role definition using `$expand` at the same time as getting the role assignment. **roleDefinition.id** will be auto expanded. Supports `$expand`. |
+| roleDefinition | [unifiedRoleDefinition](unifiedroledefinition.md) |Specifies the roleDefinition that the assignment is for. Provided so that callers can get the role definition using `$expand` at the same time as getting the role assignment.  Supports `$filter` (`eq` operator on **id**, **isBuiltIn**, and **displayName**, and `startsWith` operator on **displayName**)  and `$expand`. |
+
 
 ## JSON representation
 

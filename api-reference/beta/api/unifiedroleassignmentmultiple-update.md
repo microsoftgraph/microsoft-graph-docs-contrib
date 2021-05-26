@@ -13,27 +13,33 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. Use this to update role assignments in Microsoft Intune and cloud PC. Note that [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does not support update.
+Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider. 
+
+The following RBAC providers are currently supported:
+- cloud PC 
+- device management (Intune)
+
+Note that [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does not support update.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
 
 |Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| cloud PC | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
-| intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
+| Cloud PC | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
 
 ## HTTP request
 
-To update an existing unfiedRoleAssignmentMultiple for cloud PC provider
+To update an existing unfiedRoleAssignmentMultiple for a cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 PATCH /roleManagement/cloudPC/roleAssignments
 ```
 
-To update an existing unfiedRoleAssignmentMultiple for Intune provider
+To update an existing unfiedRoleAssignmentMultiple for an Intune provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -57,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [unif
 
 ## Example
 
-### Example 1: update an existing unfiedRoleAssignmentMultiple in Intune.
+### Example 1: Update an existing unfiedRoleAssignmentMultiple in an Intune provider
 ### Request
 
 The following is an example of the request.
@@ -112,7 +118,7 @@ HTTP/1.1 204 OK
 
 ```
 
-## Example 2: update an existing unfiedRoleAssignmentMultiple in cloud PC.
+## Example 2: update an existing unfiedRoleAssignmentMultiple in a cloud PC provider
 
 ### Request
 

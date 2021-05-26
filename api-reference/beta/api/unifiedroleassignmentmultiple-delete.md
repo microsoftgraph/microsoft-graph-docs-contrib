@@ -13,27 +13,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. This is applicable for a RBAC application that supports multiple principals and scopes. Microsoft Intune and cloud PC are such application.
+Delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider. 
+
+This is applicable for a RBAC application that supports multiple principals and scopes. The following RBAC providers are currently supported:
+- cloud PC 
+- device management (Intune)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
 
 |Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| cloud PC | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
-| intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
+| Cloud PC | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
 
 ## HTTP request
 
-To delete a unifiedRoleAssignmentMultiple for cloud PC provider
+To delete a unifiedRoleAssignmentMultiple for a cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /roleManagement/cloudPC/roleAssignments/{id}
 ```
 
-To delete a unifiedRoleAssignmentMultiple for Intune provider
+To delete a unifiedRoleAssignmentMultiple for an Intune provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -56,7 +60,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ## Example
 
-### Example 1: Delete a unifiedRoleAssignmentMultiple in Intune
+### Example 1: Delete a unifiedRoleAssignmentMultiple in an Intune provider
 
 ### Request
 
@@ -104,7 +108,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Delete a unifiedRoleAssignmentMultiple in cloud PC
+### Example 2: Delete a unifiedRoleAssignmentMultiple in a cloud PC provider
 
 ### Request
 
