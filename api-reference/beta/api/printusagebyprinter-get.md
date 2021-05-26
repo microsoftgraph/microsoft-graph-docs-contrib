@@ -58,7 +58,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_printUsageByPrinter",
-  "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"],
+  "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
 ```http
 GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByPrinter/016b5565-3bbf-4067-b9ff-4d68167eb1a6
