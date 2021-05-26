@@ -60,7 +60,9 @@ Azure AD stores data in a highly replicated database for high availability and b
 
 At a minimum, an update request involves 2 distinct operations—making the change in the current database replica and updating an index that Microsoft Graph uses to fulfill query requests. This change is then propagated across other replicas. In a single authenticated session, an update followed immediately by a `GET` query will reflect the change because the replica to which the change was written is the same server that subsequent requests are queried against. This implementation is referred to as a **session consistency** model. Unfortunately, because the index might not yet be updated in another database replica, a query from another authenticated session might not reflect the change.
 
-The **eventual consistency** model helps to avoid instances of stale data being returned. In this model, Azure AD relies on separate servers to maintain the indexes, and the current state of a globally consistent database is always returned. This implementation is supported only for queries against Azure AD objects, that is, queries on the following resources that derive from [directoryObject](/graph/api/resources/directoryobject):
+The **eventual consistency** model helps to avoid instances of stale data being returned. In this model, Azure AD relies on separate servers to maintain the indexes, and the current state of a globally consistent database is always returned.
+
+This implementation is supported only for queries against Azure AD objects, that is, queries on the following resources that derive from [directoryObject](/graph/api/resources/directoryobject):
 - [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [device](/graph/api/resources/device)
@@ -85,6 +87,41 @@ GET https://graph.microsoft.com/v1.0/users/$count
 ConsistencyLevel: eventual
 ```
 
+## Advanced query capabilities on Azure AD directory objects
+
+As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One such way is through Microsoft Graph's additional support for query parameters across various resources and properties. For example, the addition of the **Not equals** (`ne`) and **Ends with** (`endsWith`) operators on the `$filter` query parameter in October, 2020.
+
+The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for query capabilities for some of these properties, these properties are now indexed in a separate server. To query these properties using these query parameters, the requestor must explicitly opt-in for eventual consistency. That is, setting a **ConsistencyLevel** header with the value `eventual` *and* using the `$count` query parameter. 
+
+This implementation is supported only for queries against Azure AD objects, that is, queries on the following resources that derive from [directoryObject](/graph/api/resources/directoryobject):
+- [application](/graph/api/resources/application)
+- [orgContact](/graph/api/resources/orgcontact)
+- [device](/graph/api/resources/device)
+- [group](/graph/api/resources/group)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [users](/graph/api/resources/user)
+
+The specific query scenarios on directory objects that require you to opt-in for eventual consistency include:
+* Use of `$count` as a URL segment.
+* Use of `$count` as a query parameter, that is, the `$count=true` query string.
+* Use of `$search`.
+* Use of `$filter` with the `endsWith` operator.
+* Use of `$filter` and `$orderby` in the same query.
+* Properties that support `$filter` on eventual consistency only.
+
+As an example, support for `$count` was added to the `/users` resource to retrieve only the count of all users in your tenant. Therefore, to use `$count` on `/users`, you must specify the `ConsistencyLevel: eventual` header for Microsoft Graph to fulfill the request.
+
+```http
+GET https://graph.microsoft.com/v1.0/users/$count
+ConsistencyLevel: eventual
+```
+
+Support for the `endsWith` operator was also added to the **mail** property of the users resource. To retrieve all mails that end with `@hotmail.com`, you must also specify the `ConsistencyLevel: eventual` header and add the `$count=true` query string for Microsoft Graph to fulfill the request.
+
+```http
+GET https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail, '@hotmail.com')
+ConsistencyLevel: eventual
+```
 
 ## Encoding query parameters
 
@@ -201,6 +238,7 @@ The following table shows some examples that use the `$filter` query parameter.
 | Get all emails from a specific address received by the signed-in user. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
 | Get all emails received by the signed-in user in April 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | Get all unread mail in the signed-in user's Inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
+| Get all users in the Retail department. | https://graph.microsoft.com/v1.0/users?$filter=department in ('Retail')| 
 | List all Microsoft 365 groups in an organization. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 | Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0). This request is supported on eventual consistency only. |
 
