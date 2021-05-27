@@ -19,7 +19,7 @@ Represents the users and groups that are targeted for authentication method regi
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The object identifier of an Azure AD user or group.|
-|targetedAuthenticationMethod|String|The authentication method that the user is prompted to register. The value must be 'microsoftAuthenticator'.|
+|targetedAuthenticationMethod|String|The authentication method that the user is prompted to register. The value must be `microsoftAuthenticator`.|
 |targetType|authenticationMethodTargetType|The type of the authentication method target. Possible values are: `user`, `group`, `unknownFutureValue`.|
 
 ## Relationships
