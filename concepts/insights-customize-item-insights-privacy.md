@@ -15,8 +15,6 @@ Item insights can help users quickly find files that matter to them, such as in 
 
 These item insights reflect only content to which users have access. No user gets recommendations to content that they can't access.
 
-Learn more about the safe computation and usefulness of item insights, and the various experiences they power [TODO link]
-
 > **Note** This article does not address other insight-based experiences in Microsoft 365, such as Viva Insights, the Insights add-in for Outlook, WorkWith feature, MyAnalytics, and Insights dashboard.
 
 
