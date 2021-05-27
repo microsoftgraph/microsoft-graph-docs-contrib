@@ -425,7 +425,7 @@ namespace PartsInventoryConnector.Graph
 
 ## Initialize the Microsoft Graph helper service
 
-1. Open Program.cs and replace the entire content with the following code:
+Open Program.cs and replace the entire content with the following code:
 
 ```c
 using Microsoft.EntityFrameworkCore;
@@ -580,7 +580,7 @@ namespace PartsInventoryConnector
 
 ## Create the connection
 
-1. Under **Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
+1. Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
 
 ```c
 #region Connections
@@ -752,7 +752,7 @@ private static async Task RegisterSchemaAsync()
 
 ## Sync items
 
-1. Under **Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method.
+1. Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method.
 
 ```c
 #region PushData   
