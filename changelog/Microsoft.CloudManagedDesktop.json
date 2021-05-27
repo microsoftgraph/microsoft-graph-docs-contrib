@@ -205,7 +205,6 @@
                     "ChangeType": "Addition",
                     "Description": "Added the `resourceAvailabilityCheckUnsupportedVNetRegion` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
                     "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
-
                 }
             ],
             "Id": "98da5315-2d5c-457c-a761-28df4b737c2b",
