@@ -10,7 +10,7 @@ ms.custom: graphiamtop20
 
 As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for more query capabilities on various Azure AD objects and their properties. For example, the addition of the **Not equals** (`ne`) and **Ends with** (`endsWith`) operators on the `$filter` query parameter in October, 2020.
 
-The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate server. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must set the **ConsistencyLevel** header with the value `eventual` *and*, with the exception of `$search`, use the `$count` query parameter (either as a [URL segment](#other-odata-url-capabilities) or `$count=true` query string).
+The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate server. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must set the **ConsistencyLevel** header with the value `eventual` *and*, with the exception of `$search`, use the `$count` query parameter (either as a [URL segment](query-parameters#other-odata-url-capabilities) or `$count=true` query string).
 
 For example, if you wish to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
@@ -29,7 +29,7 @@ ConsistencyLevel: eventual
 ```
 [Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DaccountEnabled%20ne%20true%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)
 
-These advanced query capabilities are supported only for queries against Azure AD objects, that is, queries on the following resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject):
+These advanced query capabilities are supported only on Azure AD objects, that is, the following resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject):
 - [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [device](/graph/api/resources/device)
@@ -52,9 +52,11 @@ The following table lists query scenarios on directory objects that are supporte
 
 Properties of directory objects support `$filter` differently. However, the following is common across all directory objects:
 + The `endsWith` operator is only supported on **mail** and **userPrincipalName** properties.
-+ The `ne` operator is only available in advanced queries.
++ The `ne` operator is supported only in advanced queries.
 
-The following table summarizes parameter support for other operators of `$filter`. 
+## Support for the filter query parameter on properties of Azure AD directory objects
+
+Properties of directory objects support `$filter` differently. The following table summarizes parameter support for operators of `$filter`. 
 * ⚪ indicates the property supports `$filter` with the operator by default. 
 * ⚫ indicates that the use of `$filter` and the operator require the **ConsistencyLevel** header with the value `eventual` *and* the `$count` query parameter.
 * Blank cells indicate that the property does not support the use of `$filter` with the operator.
@@ -64,46 +66,43 @@ Refer to the specific entity documentation for details.
 
 > **Note:** Queries that are supported by default will also work in advanced queries.
 
-
-## Support for the filter query parameter on properties of Azure AD directory objects
-
-| Property                      | Directory objects                                                                                                                                                                                                                         | eq | ge | in | le | ne | startsWith | null values |
-|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---|:---|:---|:---|:---|:-----------|:------------|
-| accountEnabled                | user, device, servicePrincipal                                                                                                                                                                                                            | ⚪ | ⚫  | ⚪ | ⚫  | ⚫ | ⚪          | ⚫          |  |
-| ageGroup                      | user                                                                                                                                                                                                                                      | ⚪ |    | ⚪  |    | ⚫ |            |             |
-| city                          | organization, user                                                                                                                                                                                                                        | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| companyName                   | orgContact, user                                                                                                                                                                                                                          | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ | ⚫          | ⚫          |
-| consentProvidedForMinor       | user                                                                                                                                                                                                                                      | ⚪ |    | ⚪  |    | ⚫ |            |             |
-| country                       | organization, user                                                                                                                                                                                                                        | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| createdDateTime               | application, group, organization, user                                                                                                                                                                                                    | ⚪ | ⚪  | ⚫ | ⚪  | ⚫ |            |             |
-| creationType                  | user                                                                                                                                                                                                                                      | ⚪ |    | ⚪  |    | ⚫ |            |             |
-| department                    | orgContact, user                                                                                                                                                                                                                          | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| displayName                   | administrativeUnit, application, contract, device, directoryObjectPartnerReference, directoryRole, directoryRoleTemplate, directorySettingTemplate, group, mipLabel, organization, orgContact, policy, policyBase, servicePrincipal, user | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| employeeHireDate              | user                                                                                                                                                                                                                                      | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ |            |             |
-| employeeId                    | user                                                                                                                                                                                                                                      | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| givenName                     | orgContact, user                                                                                                                                                                                                                          | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| infoCatalogs                  | group, user                                                                                                                                                                                                                               | ⚪ | ⚪  |    |    | ⚫ | ⚪          |             |
-| jobTitle                      | orgContact, user                                                                                                                                                                                                                          | ⚪ | ⚪  | ⚪ |    | ⚫  | ⚪         | ⚪           |
-| mail                          | group, orgContact, user                                                                                                                                                                                                                   | ⚪ | ⚪  | ⚪ |    | ⚫  | ⚪         | ⚪           |
-| mailNickname                  | group, orgContact, user                                                                                                                                                                                                                   | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| onPremisesExtensionAttributes | user                                                                                                                                                                                                                                      | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ |            |             |
-| onPremisesSamAccountName      | group, user                                                                                                                                                                                                                               | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ | ⚫          |             |
-| onPremisesUserPrincipalName   | user                                                                                                                                                                                                                                      | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          |             |
-| postalCode                    | organization, user                                                                                                                                                                                                                        | ⚫ | ⚫  |    | ⚫ | ⚫  | ⚫         | ⚫           |
-| preferredLanguage             | group, organization, user                                                                                                                                                                                                                 | ⚫ | ⚫  |    | ⚫ | ⚫  | ⚫         | ⚫           |
-| proxyAddresses                | group, orgContact, user                                                                                                                                                                                                                   | ⚪ | ⚪  |    | ⚪ | ⚫  | ⚪         | ⚪           |
-| state                         | organization, user                                                                                                                                                                                                                        | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| streetAddress                 | user                                                                                                                                                                                                                                      | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ | ⚫          | ⚫          |
-| surname                       | orgContact                                                                                                                                                                                                                                | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| usageLocation                 | user                                                                                                                                                                                                                                      | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| userPrincipalName             | user                                                                                                                                                                                                                                      | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          |             |
-| userType                      | user                                                                                                                                                                                                                                      | ⚪ |    | ⚪  |    | ⚫ |            | ⚪           |
+| Property | Directory objects | eq | ge | in | le | ne | startsWith | null values |
+|:-|:-|:-|:-|:-|:-|:-|:-|:-|
+| accountEnabled | user, device, servicePrincipal | ⚪ | ⚫ | ⚪ | ⚫ | ⚫ |  |  |
+| ageGroup | user | ⚪ |  | ⚪ |  | ⚫ |  |  |
+| city | organization, user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ | ⚪ |
+| companyName | orgContact, user | ⚫ | ⚫ | ⚫ | ⚫ | ⚫ | ⚫ | ⚫ |
+| consentProvidedForMinor | user | ⚪ |  | ⚪ |  | ⚫ |  |  |
+| country | organization, user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ | ⚪ |
+| createdDateTime | application, group, organization, user | ⚪ | ⚪ | ⚫ | ⚪ | ⚫ |  |  |
+| creationType | user | ⚪ |  | ⚪ |  | ⚫ |  |  |
+| department | orgContact, user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ | ⚪ |
+| displayName | administrativeUnit, application, contract, device, directoryObjectPartnerReference, directoryRole, directoryRoleTemplate, directorySettingTemplate, group, mipLabel, organization, orgContact, policy, policyBase, servicePrincipal, user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ | ⚪ |
+| employeeHireDate | user | ⚫ | ⚫ | ⚫ | ⚫ | ⚫ |  |  |
+| employeeId | user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ | ⚪ |
+| givenName | orgContact, user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ | ⚪ |
+| infoCatalogs | group, user | ⚪ | ⚪ |  |  | ⚫ | ⚪ |  |
+| jobTitle | orgContact, user | ⚪ | ⚪ | ⚪ |  | ⚫ | ⚪ | ⚪ |
+| mail | group, orgContact, user | ⚪ | ⚪ | ⚪ |  | ⚫ | ⚪ | ⚪ |
+| mailNickname | group, orgContact, user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ | ⚪ |
+| onPremisesExtensionAttributes | user | ⚫ | ⚫ | ⚫ | ⚫ | ⚫ |  |  |
+| onPremisesSamAccountName | group, user | ⚫ | ⚫ | ⚫ | ⚫ | ⚫ | ⚫ |  |
+| onPremisesUserPrincipalName | user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ |  |
+| postalCode | organization, user | ⚫ | ⚫ |  | ⚫ | ⚫ | ⚫ | ⚫ |
+| preferredLanguage | group, organization, user | ⚫ | ⚫ |  | ⚫ | ⚫ | ⚫ | ⚫ |
+| proxyAddresses | group, orgContact, user | ⚪ | ⚪ |  | ⚪ | ⚫ | ⚪ | ⚪ |
+| state | organization, user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ | ⚪ |
+| streetAddress | user | ⚫ | ⚫ | ⚫ | ⚫ | ⚫ | ⚫ | ⚫ |
+| surname | orgContact | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ | ⚪ |
+| usageLocation | user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ | ⚪ |
+| userPrincipalName | user | ⚪ | ⚪ | ⚪ | ⚪ | ⚫ | ⚪ |  |
+| userType | user | ⚪ |  | ⚪ |  | ⚫ |  | ⚪ |
 
 
 
 ## Error handling for advanced queries on directory objects
 
-If a property or query parameter is only supported on advanced queries but the **ConsistencyLevel** header with the value `eventual` is not specified, the request returns an error.
+If a property or query parameter is only supported only in advanced queries but the **ConsistencyLevel** header with the value `eventual` is not specified, the request returns an error.
 
 ```http
 https://graph.microsoft.com/v1.0/users/$count
@@ -123,7 +122,7 @@ https://graph.microsoft.com/v1.0/users/$count
 }
 ```
 
-`$search` on Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject) works only as an advancced query. If the **ConsistencyLevel** header is not specified, the request returns an error.
+`$search` on Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject) works only in advanced queries. If the **ConsistencyLevel** header is not specified, the request returns an error.
 
 ```http
 https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
@@ -143,7 +142,7 @@ https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 }
 ```
 
-If a property or query parameter in the URL is supported is supported only as an advanced query but either the **ConsistencyLevel** header or the `$count=true` query string is missing, the request returns an error.
+If a property or query parameter in the URL is supported only in advanced queries but either the **ConsistencyLevel** header or the `$count=true` query string is missing, the request returns an error.
 
 ```http
 https://graph.microsoft.com/beta/users?$filter=endswith(mail,'@hotmail.com')
@@ -168,3 +167,4 @@ https://graph.microsoft.com/beta/users?$filter=endswith(mail,'@hotmail.com')
 
 - [Use query parameters to customize responses](/graph/query-parameters)
 - [Query parameter limitations](known-issues.md#query-parameter-limitations)
+- [Use the $search query parameter to match a search criterion](/graph/aad-advanced-queries)

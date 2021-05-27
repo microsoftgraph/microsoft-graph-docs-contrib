@@ -10,7 +10,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 In addition to [other OData query parameters](/graph/query-parameters), Microsoft Graph supports the `$search` query parameter to restrict the results of a request to match a search criterion.
 
-The support for the `$search` query parameter varies by entity, with some, such as Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), supporting `$search` only on eventual consistency.
+The support for the `$search` query parameter varies by entity, with some, such as Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), supporting `$search` only in [advanced queries](/graph/aad-advanced-queries).
 
 > **Note:** The `$search` query parameter is currently not available in Azure AD B2C tenants.
 
@@ -121,7 +121,7 @@ To learn more about the People API, see [Get information about relevant people](
 
 ## Using $search on directory object collections
 
-Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter on eventual consistency only. The search uses a tokenization approach which works by extracting words from your input and output string, using spaces, numbers, different casing, and symbols to separate the words, as follows:
+Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in advanced queries. The search uses a tokenization approach which works by extracting words from your input and output string, using spaces, numbers, different casing, and symbols to separate the words, as follows:
 
 * **Spaces**: `hello world` => `hello`, `world`
 * **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
@@ -167,3 +167,5 @@ Both the string inputs you provide in `$search`, as well as the searchable prope
 ## See also
 
 - [Use query parameters to customize responses](/graph/query-parameters)
+- [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
+- [Query parameter limitations](known-issues.md#query-parameter-limitations)
