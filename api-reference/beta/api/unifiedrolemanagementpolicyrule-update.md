@@ -3,7 +3,7 @@ title: "Update unifiedRoleManagementPolicyRule"
 description: "Update the properties of an unifiedRoleManagementPolicyRule object."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

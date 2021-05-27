@@ -97,8 +97,6 @@ items:
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
-          - name: Configure provisioning
-            href: application-provisioning-configure-api.md
       - name: Accessing data at scale
         displayName: Microsoft Graph Data Connect
         items:
@@ -184,6 +182,8 @@ items:
             href: connecting-external-content-api-limits.md
           - name: External groups
             href: connecting-external-content-external-groups.md           
+          - name: Build your first custom connector
+            href: connecting-external-content-build-quickstart.yml            
       - name: Cross-device experiences
         displayName: Project Rome
         items:
