@@ -8,7 +8,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "UserPrincipalName",
           "ChangeType": "Addition",
-          "Description": "UserPrincipalName can be used in the request URL for [looking up chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-beta) of a user.",
+          "Description": "Added support for using user principal names in request URLs for [looking up chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-beta) of a user.",
           "Target": "chat"
         },
         {
@@ -16,7 +16,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "UserPrincipalName",
           "ChangeType": "Addition",
-          "Description": "UserPrincipalName can be used in the request URL for [looking up joined teams](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?graph-rest-1.0&tabs=http) of a user.",
+          "Description": "Added support for using user principal names in request URLs for [looking up joined teams](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?graph-rest-1.0&tabs=http) of a user.",
           "Target": "team"
         },
         {
@@ -24,7 +24,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "UserPrincipalName",
           "ChangeType": "Addition",
-          "Description": "UserPrincipalName can be used in the request URL for [managing apps in teams & chats] (https://docs.microsoft.com/en-us/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&tabs=http) of a user.",
+          "Description": "Added support for using user principal names in request URLs for [managing apps in teams & chats](https://docs.microsoft.com/en-us/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&tabs=http) of a user.",
           "Target": "teamsAppInstallation"
         },
         {
@@ -32,7 +32,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "UserPrincipalName",
           "ChangeType": "Addition",
-          "Description": "UserPrincipalName can be used in the request URL for [sending activity feed notification] (https://docs.microsoft.com/en-us/graph/api/userteamwork-sendactivitynotification?view=graph-rest-1.0&tabs=http) of a user.",
+          "Description": "Added support for using user principal names in request URLs for [sending activity feed notification](https://docs.microsoft.com/en-us/graph/api/userteamwork-sendactivitynotification?view=graph-rest-1.0&tabs=http) of a user.",
           "Target": "userTeamwork"
         },
         {
@@ -40,7 +40,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "UserPrincipalName",
           "ChangeType": "Addition",
-          "Description": "UserPrincipalName can be used in the request URL for [fetching hosted content] (https://docs.microsoft.com/en-us/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0&tabs=http) of a user.",
+          "Description": "Added support for using user principal names in request URLs for [fetching hosted content](https://docs.microsoft.com/en-us/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0&tabs=http) of a user.",
           "Target": "chatMessageHostedContent"
         }   
       ],
