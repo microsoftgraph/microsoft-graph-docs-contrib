@@ -13262,7 +13262,7 @@ items:
           href: api/profilephoto-update.md
         - name: Complete migration for team
           href: api/team-completemigration.md
-        - name: List permission grants of team
+        - name: List permission grants
           href: api/team-list-permissiongrants.md
       - name: Group (team)
         href: resources/group.md
@@ -13379,6 +13379,8 @@ items:
           href: api/chat-post-messages.md
         - name: Get chat between user and app 
           href: api/userscopeteamsappinstallation-get-chat.md
+        - name: List permission grants
+          href: api/chat-list-permissiongrants.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -13690,6 +13692,8 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+      - name: Resource-specific Permission Grants
+        href: resources/resourcespecificpermissiongrant.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:

@@ -56,8 +56,6 @@ If successful, this method returns a `200 OK` response code and a list of [resou
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_list_permission_grants"
@@ -112,4 +110,5 @@ Content-type: application/json
 ```
 
 ## See also
-- [List permissionGrants of a group](group-list-permissionGrants.md)
+- [List permission grants of a group](group-list-permissionGrants.md)
+- [List permission grants of a chat](chat-list-permissionGrants.md)
