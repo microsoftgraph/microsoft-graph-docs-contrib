@@ -57,7 +57,7 @@ The following is an example of the request.
   "name": "reports-getprinterarchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',startDateTime={timestamp},endDateTime={timestamp})
+GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='016b5565-3bbf-4067-b9ff-4d68167eb1a6',startDateTime=2021-05-24,endDateTime=2021-05-25)
 ```
 
 ##### Response
