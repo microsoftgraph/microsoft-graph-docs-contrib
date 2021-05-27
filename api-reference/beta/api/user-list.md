@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [user](../resources/user.md) objects.
 
-This operation returns by default only a subset of the more commonly used properties for each user. Properties that are not returned by default are noted in the [Properties](../resources/user.md#properties) section. To retrieve them, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option.
+This operation returns by default only a subset of the more commonly used properties for each user. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option.
 
 ## Permissions
 

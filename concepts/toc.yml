@@ -490,6 +490,8 @@ items:
                 href: query-parameters.md
               - name: Use the $search query parameter
                 href: search-query-parameter.md
+              - name: Advanced query capabilities
+                href: aad-advanced-queries.md
           - name: Batching
             displayName: Batch requests
             href: json-batching.md

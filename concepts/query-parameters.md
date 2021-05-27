@@ -171,7 +171,7 @@ The following table shows some examples that use the `$filter` query parameter.
 | Get all unread mail in the signed-in user's Inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
 | Get all users in the Retail department. | [https://graph.microsoft.com/v1.0/users?$filter=department in ('Retail')](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3Ddepartment%20in%20('Retail')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)| 
 | List all Microsoft 365 groups in an organization. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
-| Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0). This is an [advanced query](/graph/aad-advanced-queries). |
+| Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d). This is an [advanced query](/graph/aad-advanced-queries). |
 
 ## format parameter
 
@@ -358,4 +358,4 @@ However, it is important to note that query parameters specified in a request mi
 
 - [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
 - [Query parameter limitations](known-issues.md#query-parameter-limitations)
-- [Use the $search query parameter to match a search criterion](/graph/aad-advanced-queries)
+- [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
