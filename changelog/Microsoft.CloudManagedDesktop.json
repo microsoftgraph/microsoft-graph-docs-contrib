@@ -3,6 +3,40 @@
         {
             "ChangeList": [
                 {
+                    "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "aadConnectivityCheckUnknownError",
+                    "ChangeType": "Change",
+                    "Description": "Changed the `aadConnectivityCheckUnknownError` member to `azureAdDeviceSyncCheckUnknownError` in the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckDeviceNotFound",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckDeviceNotFound` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckLongSyncCircle",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckLongSyncCircle` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-27T13:43:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.Read.All",
