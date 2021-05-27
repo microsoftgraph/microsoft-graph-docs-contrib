@@ -83,11 +83,6 @@ Content-Type: application/json
       "roles": ["owner"],
       "user@odata.bind": "https://graph.microsoft.com/v1.0/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
     }
-  ],
-  "installedApps": [
-    {
-      "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/05F59CEC-A742-4A50-A62E-202A57E478A4"
-    }
   ]
 }
 ```
@@ -148,11 +143,6 @@ Content-Type: application/json
       "roles": ["owner"],
       "user@odata.bind": "https://graph.microsoft.com/v1.0/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"
     }
-  ],
-  "installedApps": [
-    {
-      "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
-    }
   ]
 }
 ```
@@ -181,3 +171,64 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Create a group chat with installed apps
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_group_with_installed_apps"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/chats
+Content-Type: application/json
+
+{
+  "chatType": "group",
+  "topic": "Group chat title",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"
+    }
+  ],
+  "installedApps": [
+    {
+      "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+    }
+  ]
+}
+```
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response"
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+```
+
+The request has been accepted for processing, but the processing has not been completed. The response headers will include a Location URL that can be used to track the status of the operation.
+
+The following is the Location URL from the response header:
+<!-- {
+  "blockType": "response"
+}
+-->
+``` http
+/chats('19:f79ae95d62fc4f95a24ba8211703e783@thread.v2')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-034e6f8d-f3f3-45ed-9329-790bff57e80d-8512424d-e601-4152-ad6c-c14fc5de7162')
+```
