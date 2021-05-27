@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: getCloudPcRemoteActionResults"
-description: "Check the status of a specific remote action."
+description: "Check the all cloud PC specificed reomote action status for a cloud PC device."
 author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check the results [cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) of reprovision remote action for a Cloud PC.
+Check the cloud PC specificed remote action results [cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) for a cloud PC device.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /deviceManagement/managedDevices/{managedDeviceId}/getCloudPcRemoteActionResults
+GET /deviceManagement/managedDevices/{id}/getCloudPcRemoteActionResults
 ```
 
 ## Request headers
@@ -83,10 +83,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-    "@odata.type": "#microsoft.graph.cloudPcRemoteActionResult",
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcRemoteActionResult)",
+    "value": [{
+        "actionName": "Reprovision",
+        "actionState": "pending",
+        "startDateTime": "2021-04-25T02:04:53.4722004Z",
+        "lastUpdatedDateTime": "2021-04-25T02:04:53.4722016Z",
+        "cloudPcId": "96b3203b-9dc2-48cb-b1e3-a80822ffffff",
+        "managedDeviceId": "8e1a54a7-33f6-4659-86b7-dde7c2ffffff",
+        "statusDetails": null
+    }]
 }
 ```
