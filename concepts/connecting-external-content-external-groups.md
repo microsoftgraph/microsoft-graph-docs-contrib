@@ -10,7 +10,7 @@ ms.prod: search
 
 The access control list is used to specify who has permissions to view [external items](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in a Microsoft Graph connection, in Microsoft 365 experiences such as Search and Intelligent Discovery. For data sources that rely on Azure Active Directory users and groups, setting permissions on external items is as simple as associating the ACLs with an AAD user and group ID when creating or updating the external item as shown below.
 
-```json
+```http
 PUT https://graph.microsoft.com/beta/exernal/connections/{id}/items/{id} 
 Content-type: application/json 
 { 
@@ -70,7 +70,7 @@ To use external groups for your connections that use application-specific, non-A
 
 External groups are scoped to a connection. For each application-specific, non-AAD group associated with your connection, create an external group using the Groups API in Microsoft Graph as shown below. For the [id](/graph/api/resources/externalitem?view=graph-rest-beta#properties&preserve-view=true) field, you can provide an identifier or the external group that is unique within the connection. The [displayName](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) and description are optional fields.
 
-```json
+```http
 POST /connections/{id}/externalGroups  
 { 
 "id": "contosoEscalations", 
@@ -89,7 +89,7 @@ An external group can contain one or more of the following:
 * Another external group (external groups support nested external groups)
 After you create the group, you can add members to the group as in the examples shown below.
 
-```json
+```http
 POST /connections/{id}/externalgroups/{id}/externalGroupMembers 
 { 
 "id": "contosoSupport", 
@@ -97,7 +97,7 @@ POST /connections/{id}/externalgroups/{id}/externalGroupMembers
 "identitySource": "external" 
 }
 ```
-```json
+```http
 POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers 
 { 
  "id": "25f143de-be82-4afb-8a57-e032b9315752", 
@@ -105,7 +105,7 @@ POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers
 "identitySource": "Azure Active Directory" 
 }
 ```
-```json
+```http
 POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers 
 { 
  "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b", 
@@ -117,7 +117,7 @@ POST /connections/{id}/ externalgroups/{id}/ externalGroupMembers
 ### Use external groups in the ACLs
 
 You can use external groups when defining ACLs for external items. In addition to AAD users and AAD groups, an external item can have external groups in its ACEs, as shown next.
-```json
+```http
 PUT https://graph.microsoft.com/beta/external/connections/{id}/items/{id} 
 Content-type: application/json 
 { 
