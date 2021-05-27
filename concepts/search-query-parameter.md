@@ -12,7 +12,7 @@ In addition to [other OData query parameters](/graph/query-parameters), Microsof
 
 The support for the `$search` query parameter varies by entity, with some, such as Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), supporting `$search` only in [advanced queries](/graph/aad-advanced-queries).
 
-> **Note:** The `$search` query parameter is currently not available in Azure AD B2C tenants.
+> [!NOTE] The `$search` query parameter is currently not available in Azure AD B2C tenants.
 
 ## Using $search on message collections
 

@@ -47,10 +47,10 @@ The following table lists query scenarios on directory objects that are supporte
 | Use of `$orderby` on select properties                                        | [https://graph.microsoft.com/v1.0/applications?$orderby=displayName&$count=true](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)                                                                                                               |
 | Use of `$filter` with the `endsWith` operator                                 | [https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@hotmail.com')](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)                                                                                       |
 | Use of `$filter` and `$orderby` in the same query                             | [https://graph.microsoft.com/v1.0/applications?$orderby=displayName&$filter=startsWith(displayName, 'Box')&$count=true](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24filter%3DstartsWith(displayName%2C%20'Box')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)                       |
-| Use of select operators of `$filter` on specific properties. See [more](#).   | [https://graph.microsoft.com/v1.0/users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+| Use of select operators of `$filter` on specific properties. See [more](#support-for-the-filter-query-parameter-on-properties-of-azure-ad-directory-objects).   | [https://graph.microsoft.com/v1.0/users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
 | Use of OData cast | [https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
 
-> **Note:** These advanced query capabilities are not available in Azure AD B2C tenants.
+> [!NOTE] These advanced query capabilities are not available in Azure AD B2C tenants.
 
 Properties of directory objects support `$filter` differently. However, the following is common across all directory objects:
 + The `endsWith` operator is only supported on **mail** and **userPrincipalName** properties.
@@ -64,7 +64,7 @@ Properties of directory objects support `$filter` differently. The following tab
 * Blank cells indicate that the property does not support the use of `$filter` with the operator.
 * Properties that are not listed here do not support `$filter`.
 
-> **Note:** 
+> [!NOTE]
 > 1. Properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in` and `startsWith` operators only in advanced queries.
 > 2. Queries that are supported by default will also work in advanced queries.
 

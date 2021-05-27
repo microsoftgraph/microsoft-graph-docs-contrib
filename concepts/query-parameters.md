@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 Use the `$count` query parameter to include a count of the total number of items in a collection alongside the page of data values returned from Microsoft Graph.
 
-> **Note:** `$count` can also be used as a [URL segment](#other-odata-url-capabilities) to retrieve the integer total of the collection. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), is it only supported in an [advanced query](/graph/aad-advanced-queries). See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
+> [!NOTE] `$count` can also be used as a [URL segment](#other-odata-url-capabilities) to retrieve the integer total of the collection. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), is it only supported in an [advanced query](/graph/aad-advanced-queries). See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
 >
 > Use of `$count` is currently not supported in Azure AD B2C tenants.
 
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [Try in Graph Explorer][expand-example]
 
-> **Note:** Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
+> [!NOTE] Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
 > 
 > With Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 20 items for the expanded relationship and has no [@odata.nextLink](./paging.md). See more [known issues](known-issues.md#query-parameter-limitations).
 
@@ -228,16 +228,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
-> **Note:** Combining `$orderby` and `$filter` query parameters is supported for the following Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject ). This is also only on in [advanced queries](/graph/aad-advanced-queries):
->
->- [application](/graph/api/resources/application)
->- [orgContact](/graph/api/resources/orgcontact)
->- [device](/graph/api/resources/device)
->- [group](/graph/api/resources/group)
->- [servicePrincipal](/graph/api/resources/serviceprincipal)
->- [user](/graph/api/resources/user)
->
-> See [optional user query parameters](/graph/api/user-list?view=graph-rest-beta&preserve-view=true#optional-query-parameters) for more information.
+> [!NOTE] Combining `$orderby` and `$filter` query parameters is supported for directory objects. See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
 
 ## search parameter
 
