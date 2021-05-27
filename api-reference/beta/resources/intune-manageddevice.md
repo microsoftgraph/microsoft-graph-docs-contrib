@@ -19,7 +19,6 @@ Cloud PCs are enrolled into Intune allowing IT admin to manage these devices thr
 |Method|Return Type|Description|
 |:---|:---|:---|
 |[reprovisionCloudPc of managedDevice](../api/intune-manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id in [managedDevice](../resources/intune-manageddevice.md).|
-|[getCloudPcRemoteActionResults](../api/intune-manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the cloud PC specified remote action results. Now cloud PC supports reprovision and resize remote actions.|
 |[bulkReprovisionCloudPc of managedDevice](../api/intune-manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs in [managedDevice](../resources/intune-manageddevice.md).|
 |[resizeCloudPc of managedDevice](../api/intune-manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device id in [managedDevice](../resources/intune-manageddevice.md).|
 

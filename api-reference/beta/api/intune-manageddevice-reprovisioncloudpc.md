@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /deviceManagement/managedDevices/{managedDeviceId}/reprovisionCloudPc
+POST /deviceManagement/managedDevices/{id}/reprovisionCloudPc
 ```
 
 ## Request headers
