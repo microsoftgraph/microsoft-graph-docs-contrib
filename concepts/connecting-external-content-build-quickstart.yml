@@ -1,7 +1,7 @@
 ### YamlMime:Tutorial
 title: Build your first custom Microsoft Graph Connector
 metadata:
-  title: Build your first Microsoft Graph Data Connect application
+  title: Build your first custom Microsoft Graph Connector
   description: In this tutorial, you'll build your first custom Microsoft Graph Connector.
   audience: Developer
   level: Beginner
