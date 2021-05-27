@@ -15,6 +15,7 @@ A search display layout or result type is a rule that causes distinct kinds of s
 - A display template to use for search results that meet the conditions. The display template controls the way in which all results that meet the conditions appear and behave on a search results page. 
 
 The Microsoft Graph Search API provides a renderable response based on [Adaptive Cards].(https://adaptivecards.io/). By using the [Adaptive Card template](https://adaptivecards.io/designer), Clients can render different search result in different canvases.
+
 Customers can customize their search result type in [Microsoft Office 365 Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
 
 ## Example 1: Sample Request
