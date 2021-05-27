@@ -7,20 +7,20 @@ ms.prod: "insights"
 ms.custom: scenarios:getting-started
 ---
 
-# Item insights
-
-Item insights are one of the types of Microsoft Graph calculated relationships. Computed, using advanced machine learning techniques, item insights provide user-centric content recommendations for users within your organization. While users in your organization collaboratively work on documents, Lists in SharePoint, Teams chats and channels, SharePoint sites etc., Microsoft aggregates and assembles into graph users’ activities such as modifying, commenting and sharing, analyzes and uses these activities to make suggestions on the top of those signals.
-
-Item insights can help users quickly find files that matter the most for them in experiences like Recommended files in Office.com and Delve. Or users can discover potential useful content to which they have access but may have never seen before in Outlook Mobile in the Discover area. By showing personalized insights in card-based interface such as Files in persona card within M365 apps and in Bing users can easily discover recent files of that user.
-
-These item insights are tightened strictly to the content to which users have access, meaning that no one can get content recommendations without access to that content.
-
-Learn more about safe computation, usefulness, powering different experience of item insights here [TODO link]
-
-> [!NOTE]: Other insight-based experiences exist in Microsoft 365, such as Viva Insights, Outlook Insights, WorkWith feature, MyAnalytics, Insights Dashboard etc. but > > they are not the subject of this article.
-
-
 # Customizing item insights privacy in Microsoft Graph (preview)
+
+Item insights are relationships that Microsoft calculates using advanced machine learning techniques. When users collaborate over documents, SharePoint sites and lists, Teams chats and channels, Microsoft aggregates these activities as signals. From the signals Microsoft derives insights to make user-centric content recommendations for users in an organization.
+
+Item insights can help users quickly find files that matter to them, such as in the **Recommended** experience in Office.com and Delve. Users can discover in the **Discover** area in Outlook Mobile potentially useful content to which they have access but may not have seen before. From personalized insights such as **Recent files** in a persona card in Bing and **Recent** in Microsoft 365 apps, users can easily discover their recent files.
+
+These item insights reflect only content to which users have access. No user gets recommendations to content that they can't access.
+
+Learn more about the safe computation and usefulness of item insights, and the various experiences they power [TODO link]
+
+> **Note** This article does not address other insight-based experiences in Microsoft 365, such as Viva Insights, the Insights add-in for Outlook, WorkWith feature, MyAnalytics, and Insights dashboard.
+
+
+## Item insights privacy 
 
 Item insights privacy settings provide the ability to configure the visibility of insights derived from Microsoft Graph, between users and other items (such as documents or sites) in Microsoft 365. You can disable the Delve app via the pre-existing controls, but allow other insights-based experiences to continue to provide assistance.
 
@@ -36,7 +36,7 @@ Item insights settings provide flexibility for administrators to use Azure AD to
 The next section describes using PowerShell cmdlets to configure insights settings. If you're using the REST API, skip the next section and continue with [Configure item insights using REST API](#configure-item-insights-using-rest-api). Then refer to the [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
 
 ### How to configure item insights settings via Microsoft Admin Center?
-Administrator with _global administrator role_ can tune item insights privacy settings via toggles in Micrsofot Admin Center "Search & intelligence" page 
+An administrator with the _global administrator role_ can tune item insights privacy settings via toggles. To do so, in the Micrsofot 365 admin center, expand **Settings**, select **Search & intelligence**, and under **Item insights**, choose **Change settings**.
 ![image](https://user-images.githubusercontent.com/54312959/117024482-b39eca00-ad02-11eb-9a11-e6a01039822e.png)
 
 
