@@ -54,75 +54,6 @@ The following OData 4.0 capabilities are URL segments, not query parameters.
 | [$ref](/graph/api/group-post-members) | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` |
 | [$value](/graph/api/profilephoto-get) | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` |
 
-## Consistency levels and querying on Azure AD directory objects
-
-Azure AD stores data in a highly replicated database for high availability and better read performance. For all replicas to be accurate, that is, mutually consistent, any change must eventually be applied to all replicas of the data.
-
-At a minimum, an update request involves 2 distinct operations—making the change in the current database replica and updating an index that Microsoft Graph uses to fulfill query requests. This change is then propagated across other replicas. In a single authenticated session, an update followed immediately by a `GET` query will reflect the change because the replica to which the change was written is the same server that subsequent requests are queried against. This implementation is referred to as a **session consistency** model. Unfortunately, because the index might not yet be updated in another database replica, a query from another authenticated session might not reflect the change.
-
-The **eventual consistency** model helps to avoid instances of stale data being returned. In this model, Azure AD relies on separate servers to maintain the indexes, and the current state of a globally consistent database is always returned.
-
-This implementation is supported only for queries against Azure AD objects, that is, queries on the following resources that derive from [directoryObject](/graph/api/resources/directoryobject):
-- [application](/graph/api/resources/application)
-- [orgContact](/graph/api/resources/orgcontact)
-- [device](/graph/api/resources/device)
-- [group](/graph/api/resources/group)
-- [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [users](/graph/api/resources/user)
-
-While Microsoft Graph infers session consistency by default, you must explicitly opt-in for eventual consistency. This requires the **ConsistencyLevel** header with the value `eventual` *and* the `$count` query parameter. The specific query scenarios on directory objects that require you to opt-in for eventual consistency include:
-* Use of `$count` as a URL segment.
-* Use of `$count` as a query parameter, that is, the `$count=true` query string.
-* Use of `$search`.
-* Use of `$filter` with the `endsWith` operator.
-* Use of `$filter` and `$orderby` in the same query.
-* Properties that support `$filter` on eventual consistency only.
-
->**Note:** Eventual consistency is only for Azure AD directory objects. Microsoft Graph allows you to opt-in for eventual consistency even when not required. All queries that are supported on session consistency are also supported on eventual consistency.
-
-As an example, use of `$count` as a URL segment on the `/users` resource retrieves only the count of all users in your tenant. You must specify the `ConsistencyLevel: eventual` header for Microsoft Graph to fulfill the request.
-
-```http
-GET https://graph.microsoft.com/v1.0/users/$count
-ConsistencyLevel: eventual
-```
-
-## Advanced query capabilities on Azure AD directory objects
-
-As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One such way is through Microsoft Graph's additional support for query parameters across various resources and properties. For example, the addition of the **Not equals** (`ne`) and **Ends with** (`endsWith`) operators on the `$filter` query parameter in October, 2020.
-
-The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for query capabilities for some of these properties, these properties are now indexed in a separate server. To query these properties using these query parameters, the requestor must explicitly opt-in for eventual consistency. That is, setting a **ConsistencyLevel** header with the value `eventual` *and* using the `$count` query parameter. 
-
-This implementation is supported only for queries against Azure AD objects, that is, queries on the following resources that derive from [directoryObject](/graph/api/resources/directoryobject):
-- [application](/graph/api/resources/application)
-- [orgContact](/graph/api/resources/orgcontact)
-- [device](/graph/api/resources/device)
-- [group](/graph/api/resources/group)
-- [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [users](/graph/api/resources/user)
-
-The specific query scenarios on directory objects that require you to opt-in for eventual consistency include:
-* Use of `$count` as a URL segment.
-* Use of `$count` as a query parameter, that is, the `$count=true` query string.
-* Use of `$search`.
-* Use of `$filter` with the `endsWith` operator.
-* Use of `$filter` and `$orderby` in the same query.
-* Properties that support `$filter` on eventual consistency only.
-
-As an example, support for `$count` was added to the `/users` resource to retrieve only the count of all users in your tenant. Therefore, to use `$count` on `/users`, you must specify the `ConsistencyLevel: eventual` header for Microsoft Graph to fulfill the request.
-
-```http
-GET https://graph.microsoft.com/v1.0/users/$count
-ConsistencyLevel: eventual
-```
-
-Support for the `endsWith` operator was also added to the **mail** property of the users resource. To retrieve all mails that end with `@hotmail.com`, you must also specify the `ConsistencyLevel: eventual` header and add the `$count=true` query string for Microsoft Graph to fulfill the request.
-
-```http
-GET https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail, '@hotmail.com')
-ConsistencyLevel: eventual
-```
-
 ## Encoding query parameters
 
 The values of query parameters should be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) will help you with this. If a query is failing, one possible cause is failure to encode the query parameter values appropriately.
@@ -151,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 Use the `$count` query parameter to include a count of the total number of items in a collection alongside the page of data values returned from Microsoft Graph.
 
-> **Note:** `$count` can also be used as a [URL segment](#other-odata-url-capabilities) to retrieve the integer total of the collection. When it is used on resources that derive from [directoryObject](/graph/api/resources/directoryobject), it's supported only on [eventual consistency](#consistency-levels-and-querying-on-azure-ad-directory-objects).
+> **Note:** `$count` can also be used as a [URL segment](#other-odata-url-capabilities) to retrieve the integer total of the collection. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), is it only supported in an [advanced query](/graph/aad-advanced-queries). See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
 >
 > Use of `$count` is currently not supported in Azure AD B2C tenants.
 
@@ -163,7 +94,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
-The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only on [eventual consistency](#consistency-levels-and-querying-on-azure-ad-directory-objects):
+The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only in [advanced queries](/graph/filter-directory-objects):
 - [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [device](/graph/api/resources/device)
@@ -220,10 +151,10 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 - lambda operator any `any`
 - lambda operator all `all`
 - Starts with `startsWith`
-- Ends with `endsWith` (Supported on [eventual consistency](#consistency-levels-and-querying-on-azure-ad-directory-objects) only and requires the `$count=true` query string)
+- Ends with `endsWith` (Only in [advanced queries](/graph/aad-advanced-queries))
 - Contains `contains`
 
-> **Note:** Support for these operators varies by entity and some properties support `$filter` only on [eventual consistency](#consistency-levels-and-querying-on-azure-ad-directory-objects). See the specific entity documentation for details.
+> **Note:** Support for these operators varies by entity and some properties support `$filter` only in [advanced queries](/graph/aad-advanced-queries). See the specific entity documentation for details.
 
 For some usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
 The following table shows some examples that use the `$filter` query parameter.
@@ -233,14 +164,14 @@ The following table shows some examples that use the `$filter` query parameter.
 | Description | Example
 |:------------|:--------|
 | Get all users with the name Mary across multiple properties. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
-| Get all users with mail domain equal to 'hotmail.com' | [`https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@hotmail.com')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d). This request is supported on eventual consistency only. |
+| Get all users with mail domain equal to 'hotmail.com' | [`https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@hotmail.com')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d). This request is an [advanced query](/graph/aad-advanced-queries). |
 | Get all the signed-in user's events that start after 7/1/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
 | Get all emails from a specific address received by the signed-in user. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
 | Get all emails received by the signed-in user in April 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | Get all unread mail in the signed-in user's Inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
 | Get all users in the Retail department. | https://graph.microsoft.com/v1.0/users?$filter=department in ('Retail')| 
 | List all Microsoft 365 groups in an organization. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
-| Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0). This request is supported on eventual consistency only. |
+| Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0). This request is an [advanced query](/graph/aad-advanced-queries). |
 
 ## format parameter
 
@@ -297,7 +228,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
-> **Note:** Combining `$orderby` and `$filter` query parameters is supported for the following Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject ). This is also only on eventual consistency and requires the `$count` query parameter:
+> **Note:** Combining `$orderby` and `$filter` query parameters is supported for the following Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject ). This is also only on in [advanced queries](/graph/aad-advanced-queries):
 >
 >- [application](/graph/api/resources/application)
 >- [orgContact](/graph/api/resources/orgcontact)
@@ -340,15 +271,15 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 > **Note:** Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
 >
-> The **ConsistencyLevel** header for eventual consistency is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
+> The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
 
 ## skipToken parameter
 
 Some requests return multiple pages of data, either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result.  
 The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
-> **Note:** If you're using OData Count (adding `$count=true` in the query string), the `@odata.count` property will be present only in the first page.
+> **Note:** If you're using OData Count (adding `$count=true` in the query string) for queries against directory objects, the `@odata.count` property will be present only in the first page.
 >
-> The **ConsistencyLevel** header for eventual consistency is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
+> The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
 
 ## top parameter
 
@@ -366,7 +297,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 [Try in Graph Explorer][top-example]
 
-> **Note:** The **ConsistencyLevel** header for eventual consistency is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
+> The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
 
 ## Error handling for query parameters
 
@@ -384,62 +315,6 @@ https://graph.microsoft.com/beta/me?$expand=photo
         "innerError":{
             "request-id":"1653fefd-bc31-484b-bb10-8dc33cb853ec",
             "date":"2017-07-31T20:55:01"
-        }
-    }
-}
-```
-
-If a property or query parameter in the URL is supported on eventual consistency only, but the **ConsistencyLevel** header is not specified, the request returns an error.
-
-```http
-https://graph.microsoft.com/v1.0/users/$count
-```
-
-```json
-{
-    "error": {
-        "code": "Request_BadRequest",
-        "message": "$count is not currently supported.",
-        "innerError": {
-            "date": "2021-05-18T19:03:10",
-            "request-id": "d9bbd4d8-bb2d-44e6-99a1-71a9516da744",
-            "client-request-id": "539da3bd-942f-25db-636b-27f6f6e8eae4"
-        }
-    }
-}
-```
-
-If a property or query parameter in the URL is supported on eventual consistency only and requires the `$count` query parameter, but either the **ConsistencyLevel** header or the `$count=true` query string is missing, the request returns an error.
-
-```http
-https://graph.microsoft.com/beta/users?$filter=endswith(mail,'@hotmail.com')
-```
-
-```json
-{
-    "error": {
-        "code": "Request_UnsupportedQuery",
-        "message": "Unsupported Query.",
-        "innerError": {
-            "date": "2021-05-18T19:12:36",
-            "request-id": "63f2093c-399c-4350-9609-3ce9b62abe3c",
-            "client-request-id": "e60ed0ba-df5d-e190-f056-f9c0318456d7"
-        }
-    }
-}
-```
-
-`$search` on Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject) works on eventual consistency only. If the **ConsistencyLevel** header is not specified, the request returns an error.
-
-```json
-{
-    "error": {
-        "code": "Request_UnsupportedQuery",
-        "message": "Request with $search query parameter only works through MSGraph with a special request header: 'ConsistencyLevel: eventual'",
-        "innerError": {
-            "date": "2021-05-19T18:43:19",
-            "request-id": "ecc1b56d-1068-4062-bd88-d91f1913d3ab",
-            "client-request-id": "c30e17ff-3b47-82c7-34f8-4498df834f4e"
         }
     }
 }
@@ -481,6 +356,5 @@ However, it is important to note that query parameters specified in a request mi
 
 
 
-## See also
-
+- [Use query parameters to customize responses](/graph/aad-advanced-queries)
 - [Query parameter limitations](known-issues.md#query-parameter-limitations)

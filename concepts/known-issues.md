@@ -404,8 +404,7 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
   * Searching is not supported on Azure AD B2C tenants.
 * `$count`:
   * Not supported on Azure AD B2C tenants.
-  * If you're using OData Count (adding `$count=true` in the query string), the `@odata.count` property will be present only in the first page of the paged data.
-* When paging directory resources, any additional request headers such as the **ConsistencyLevel** header are not included by default in subsequent page requests. If those headers need to be sent on subsequent requests, you must set them explicitly.
+  * When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only in the first page of the paged data.
 * Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
 
