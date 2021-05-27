@@ -3,7 +3,7 @@
 
 Microsoft Graph connectors allow you to add your own data into Microsoft Graph and have it power various Microsoft 365 experiences.
 
-This .NET Core application shows you how to use the Microsoft Graph connector API to create a customer connector and use it to power Microsoft Search. The quick start uses a sample data appliance parts inventory for the Contoso Appliance Repair organization.
+This .NET Core application shows you how to use the Microsoft Graph connectors API to create a customer connector and use it to power Microsoft Search. This tutorial uses a sample data appliance parts inventory for the Contoso Appliance Repair organization.
 
 ## How does the sample work?
 
@@ -14,12 +14,12 @@ The sample creates a Windows desktop app that acquires a token from the Microsof
 ## Prerequisites
 
 * Install Visual Studio 2019 with [.NET Core 3.1 SDK](https://www.microsoft.com/net/download/core) on your development computer.
-* You need a [personal Microsoft account](https://signup.live.com/), or a work or school account.
+* Make sure that you have a [personal Microsoft account](https://signup.live.com/), or a work or school account.
 * Install the [Entity Framework Core Tools](/ef/core/miscellaneous/cli/dotnet) as a global tool using the following command:
 
-```dotnetcli
-dotnet tool install --global dotnet-ef
-```
+    ```dotnetcli
+    dotnet tool install --global dotnet-ef
+    ```
 
 * Install a tool to update a SQLite database. For example, the [DB Browser for SQLite](https://sqlitebrowser.org/).
-* Download the **ApplianceParts.csv** file from [https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv) and add it to the PartsInventoryConnector.csproj.
+* Download the **ApplianceParts.csv** file from the [Search connector sample repo](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv) and add it to the PartsInventoryConnector.csproj.
