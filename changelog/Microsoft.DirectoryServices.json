@@ -9,6 +9,46 @@
         "ChangeType": "Change",
         "Description": "Changed [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-beta).",
         "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+      },
+      {
+        "Id": "90f5543f-9964-430c-bfdd-684e6fcd802e",
+        "ApiChange": "Enum",
+        "ChangedApiName": "authenticatorAppFeatureSettings",
+        "ChangeType": "Deletion",
+        "Description": "Removed the **authenticatorAppFeatureSettings** enumeration type.",
+        "Target": "authenticatorAppFeatureSettings"
+      },
+      {
+        "Id": "e7cd95d2-b206-433e-a03b-05a87b5414f4",
+        "ApiChange": "Property",
+        "ChangedApiName": "shownContext",
+        "ChangeType": "Deletion",
+        "Description": "Removed the shownContext property from [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-beta).",
+        "Target": "shownContext"
+      },
+      {
+        "Id": "6aeb4677-5e27-4859-84ab-bd3ba99e8eb2",
+        "ApiChange": "Property",
+        "ChangedApiName": "numberMatchingRequiredState",
+        "ChangeType": "Addition",
+        "Description": "Added the numberMatchingRequiredState property to [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-beta).",
+        "Target": "numberMatchingRequiredState"
+      },
+      {
+        "Id": "0e712b1f-20c4-40f9-a05c-6790ccc0a59e",
+        "ApiChange": "Property",
+        "ChangedApiName": "displayLocationInformationRequiredState",
+        "ChangeType": "Addition",
+        "Description": "Added the displayLocationInformationRequiredState property to [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-beta).",
+        "Target": "displayLocationInformationRequiredState"
+      },
+      {
+        "Id": "9d2892de-2530-4c9d-85ae-b203861a72db",
+        "ApiChange": "Property",
+        "ChangedApiName": "displayAppInformationRequiredState",
+        "ChangeType": "Addition",
+        "Description": "Added the displayAppInformationRequiredState property to [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-beta).",
+        "Target": "displayAppInformationRequiredState"
       }
     ],
     "Id": "d7ea2a03-b7ed-415c-84d5-cbf05fac2fc5",
