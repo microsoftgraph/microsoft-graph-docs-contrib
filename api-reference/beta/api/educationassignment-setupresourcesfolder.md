@@ -33,10 +33,10 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Authorization  | Bearer `{token}`. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+You need to provide an empty json `{}` as request body for this method.
 ## Response
 If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) object in the request body.
 
@@ -53,6 +53,13 @@ The following is an example of a request.
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/setUpResourcesFolder
 ```
 ---
+### Request Body
+<!-- {
+  "blockType": "requestBody",
+} -->
+```http
+{}
+```
 
 ### Response
 The following is an example of a response. 
