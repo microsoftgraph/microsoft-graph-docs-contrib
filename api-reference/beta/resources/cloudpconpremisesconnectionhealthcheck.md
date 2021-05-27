@@ -49,7 +49,9 @@ The result of a cloud PC on-premises connection health check.
 |adJoinCheckUnknownError|The active domain join check failed due to an unknown error. Please contact customer support.|
 |endpointConnectivityCheckUrlNotWhitelisted|The endpoint connectivity check failed because the URLs are not on the allowlist in the network firewall settings. Please add the URLs to the allowlist for the network firewall settings. See [required URL list](/azure/virtual-desktop/safe-url-list) for URL information.|
 |endpointConnectivityCheckUnknownError|The endpoint connectivity check failed due to an unknown error. Please contact customer support.|
-|aadConnectivityCheckUnknownError|The Azure Active Directory connectivity check failed due to an unknown error. Please contact customer support.|
+|azureAdDeviceSyncCheckDeviceNotFound|The Azure AD device sync check failed because the device that on-premises network connection created in Active Directory hasn’t been synced via AAD connect and cannot be found in Customer’s Azure AD device list. Please wait for the next AAD sync circle.|
+|azureAdDeviceSyncCheckLongSyncCircle|The Azure AD device sync check failed because the device that on-premises network connection created has been synced into Active Directory via AAD connect, but AAD Connect sync circle is too long, which may block provisioning. Please shorten your AAD sync circle for smoother experience.|
+|azureAdDeviceSyncCheckUnknownError|The Azure AD device sync check failed due to an unknown error. Please contact customer support.|
 |resourceAvailabilityCheckNoSubnetIP|The resource availability check failed because there were no available IP addresses in the subnet. Please free up some or change to another subnet and retry.|
 |resourceAvailabilityCheckSubscriptionDisabled|The resource availability check failed due to a disabled Azure subscription. Please re-enable the subscription.|
 |resourceAvailabilityCheckUnsupportedVNetRegion|Selected vNet is not in a supported Azure region.|
