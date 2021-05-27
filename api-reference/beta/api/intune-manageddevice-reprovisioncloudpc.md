@@ -65,7 +65,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/reprovisionCloudPc
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{id}/reprovisionCloudPc
 ```
 
 ### Response

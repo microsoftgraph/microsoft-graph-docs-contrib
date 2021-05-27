@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check the cloud PC specificed remote action results [cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) for a cloud PC device.
+Check the cloud PC specificed remote action results [cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) for a cloud PC device. Now cloud PC supports reprovision and resize remote actions.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 

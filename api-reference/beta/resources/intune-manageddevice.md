@@ -1,6 +1,6 @@
 ---
 title: "managedDevice resource type"
-description: "Cloud PCs are enrolled into Intune allowing IT admin to manage these devices through the MEM portal and APIs.  This API enables IT admin to reprovision a cloud PC extending the managedDevice entity."
+description: "Cloud PCs are enrolled into Intune allowing IT admin to manage these devices through the MEM portal and APIs. So cloud PC extends managedDevice resource from Intune to allow some operations on it."
 author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,15 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cloud PCs are enrolled into Intune allowing IT admin to manage these devices through the MEM portal and APIs.  This API enables IT admin to reprovision a cloud PC extending the managedDevice entity.
-
-Inherits from entity.
+Cloud PCs are enrolled into Intune allowing IT admin to manage these devices through the MEM portal and APIs. So cloud PC extends managedDevice resource from Intune to allow some operations on it.
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
 |[reprovisionCloudPc of managedDevice](../api/intune-manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id in [managedDevice](../resources/intune-manageddevice.md).|
-|[getCloudPcRemoteActionResults](../api/intune-manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the results of reprovisioning a Cloud PC.|
+|[getCloudPcRemoteActionResults](../api/intune-manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the cloud PC specified remote action results. Now cloud PC supports reprovision and resize remote actions.|
 |[bulkReprovisionCloudPc of managedDevice](../api/intune-manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs in [managedDevice](../resources/intune-manageddevice.md).|
 |[resizeCloudPc of managedDevice](../api/intune-manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device id in [managedDevice](../resources/intune-manageddevice.md).|
 
