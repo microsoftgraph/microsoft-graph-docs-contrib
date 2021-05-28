@@ -49,13 +49,15 @@ The following table lists the properties that are required to create a chat obje
 |topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
 |members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every single user, including the user initiating the create request, who will participate in the chat must be specified in this list.|
-|installedApps|(Optional)[teamsApp](../resources/teamsapp.md) collection|List of apps that should be installed in the chat.|
+|installedApps|(Optional) [teamsApp](../resources/teamsapp.md) collection|List of apps that should be installed in the chat.|
 
 > **Note:** Currently, only one app installation is supported. If multiple app installations are listed in the request, the response will be a `Bad Request` error.
 
 ## Response
 
-If successful, this method returns a 201 Created response code and the newly created **chat** resource in the response body.
+If the request does not include apps to install and the request is successful, this method returns a `201 Created` response code and the newly created [chat](../resources/chat.md) resource in the response body.
+
+If the request includes apps to install and the request is successful, this method returns a `202 Accepted` response code containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md) in the response headers.
 
 ## Examples
 
@@ -210,20 +212,16 @@ Content-Type: application/json
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
 ```
 
-The request has been accepted for processing, but the processing has not been completed. The response headers will include a Location URL that can be used to track the status of the operation.
-
-The following is the Location URL from the response headers:
-<!-- {
-  "blockType": "response"
-}
--->
-``` http
-/chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
-```
+## See also
+- [Get operation of a chat](chat-get-operation.md)

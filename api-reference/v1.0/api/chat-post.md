@@ -54,7 +54,9 @@ The following table lists the properties that are required to create a chat obje
 
 ## Response
 
-If successful, this method returns a 201 Created response code and the newly created **chat** resource in the response body.
+If the request does not include apps to install and the request is successful, this method returns a `201 Created` response code and the newly created [chat](../resources/chat.md) resource in the response body.
+
+If the request includes apps to install and the request is successful, this method returns a `202 Accepted` response code containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md) in the response headers.
 
 ## Examples
 
@@ -215,20 +217,16 @@ Content-Type: application/json
 
 #### Response
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /chats('19:f79ae95d62fc4f95a24ba8211703e783@thread.v2')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-034e6f8d-f3f3-45ed-9329-790bff57e80d-8512424d-e601-4152-ad6c-c14fc5de7162')
 ```
 
-The request has been accepted for processing, but the processing has not been completed. The response headers will include a Location URL that can be used to track the status of the operation.
-
-The following is the Location URL from the response header:
-<!-- {
-  "blockType": "response"
-}
--->
-``` http
-/chats('19:f79ae95d62fc4f95a24ba8211703e783@thread.v2')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-034e6f8d-f3f3-45ed-9329-790bff57e80d-8512424d-e601-4152-ad6c-c14fc5de7162')
-```
+## See also
+- [Get operation of a chat](chat-get-operation.md)

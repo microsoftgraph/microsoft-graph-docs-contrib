@@ -13423,6 +13423,10 @@ items:
           href: api/chat-post-messages.md
         - name: Get chat between user and app 
           href: api/userscopeteamsappinstallation-get-chat.md
+        - name: List operations
+          href: api/chat-list-operations.md
+        - name: Get operation
+          href: api/chat-get-operation.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
