@@ -8,7 +8,7 @@ ms.custom: graphiamtop20
 
 # Advanced query capabilities on Azure AD directory objects
 
-As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for more query capabilities on various Azure AD objects and their properties. For example, the addition of the **Not equals** (`ne`) and **Ends with** (`endsWith`) operators on the `$filter` query parameter in October, 2020.
+As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects and their properties. For example, the addition of **Not** (`NOT`), **Not equals** (`ne`), and **Ends with** (`endsWith`) operators on the `$filter` query parameter in October 2020.
 
 The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate server. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must set the **ConsistencyLevel** header with the value `eventual` *and*, with the exception of `$search`, use the `$count` query parameter (either as a [URL segment](/graph/query-parameters#other-odata-url-capabilities) or `$count=true` query string).
 
@@ -16,20 +16,27 @@ For example, if you wish to retrieve only inactive user accounts, you can run ei
 
 1. Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require any additional parameters or headers.
 
-```http
-https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
+<!-- {
+  "blockType": "ignored",
+  "name": "get_users_enabled"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 ```
-[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DaccountEnabled%20eq%20false&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)
 
 2. Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header with the value `eventual` *and* use the `$count=true` query string.
 
-```http
+<!-- {
+  "blockType": "ignored",
+  "name": "get_users_not_enabled"
+} -->
+```msgraph-interactive
 https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
 ```
-[Try in Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DaccountEnabled%20ne%20true%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)
 
 These advanced query capabilities are supported only on Azure AD objects, that is, the following resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject):
+
 - [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [device](/graph/api/resources/device)
@@ -39,72 +46,76 @@ These advanced query capabilities are supported only on Azure AD objects, that i
 
 The following table lists query scenarios on directory objects that are supported only in advanced queries.
 
-| Description                                                                   | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|:------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Use of `$count` as a URL segment                                              | [https://graph.microsoft.com/v1.0/groups/$count](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%2F%24count&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)                                                                                                                                                                                       |
-| Use of `$count` as a query parameter, that is, the `$count=true` query string | [https://graph.microsoft.com/v1.0/servicePrincipals?$count=true](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)                                                                                                                                                     |
-| Use of `$search`                                                              | [https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applications%3F%24search%3D%22displayName%3ABrowser%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)                                                                                                                     |
-| Use of `$orderby` on select properties                                        | [https://graph.microsoft.com/v1.0/applications?$orderby=displayName&$count=true](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)                                                                                                               |
-| Use of `$filter` with the `endsWith` operator                                 | [https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@hotmail.com')](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)                                                                                       |
-| Use of `$filter` and `$orderby` in the same query                             | [https://graph.microsoft.com/v1.0/applications?$orderby=displayName&$filter=startsWith(displayName, 'Box')&$count=true](https://developer.microsoft.com/en-us/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24filter%3DstartsWith(displayName%2C%20'Box')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)                       |
-| Use of select operators of `$filter` on specific properties. See [more](#support-for-the-filter-query-parameter-on-properties-of-azure-ad-directory-objects).   | [https://graph.microsoft.com/v1.0/users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
-| Use of OData cast | [https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+| Description                                                                                                                                                    | Example                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use of `$count` as a URL segment                                                                                                                               | [GET](https://developer.microsoft.com/graph/graph-explorer?request=groups%2F%24count&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups/$count`                                                                                                                                                                                       |
+| Use of `$count` as a query string parameter                                                                                                                    | [GET](https://developer.microsoft.com/graph/graph-explorer?request=servicePrincipals%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../servicePrincipals?$count=true`                                                                                                                                                     |
+| Use of `$search`                                                                                                                                               | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24search%3D%22displayName%3ABrowser%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$search="displayName:Browser"`                                                                                                                     |
+| Use of `$orderby` on select properties                                                                                                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$count=true`                                                                                                               |
+| Use of `$filter` with the `endsWith` operator                                                                                                                  | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40outlook.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@outlook.com')`                                                                                       |
+| Use of `$filter` and `$orderby` in the same query                                                                                                              | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24filter%3DstartsWith(displayName%2C%20'Box')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$filter=startsWith(displayName, 'Box')&$count=true`                       |
+| Use of `$filter` startsWith operators on specific properties. See [more](#support-for-the-filter-query-parameter-on-properties-of-azure-ad-directory-objects). | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true` |
+| Use of OData cast                                                                                                                                              | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true`                                                                                             |
+| Use of `$filter` with `NOT` operator                                                                                                                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Luca')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Luca')&$count=true`                                                                         |
 
 > [!NOTE] These advanced query capabilities are not available in Azure AD B2C tenants.
 
-Properties of directory objects support `$filter` differently. However, the following is common across all directory objects:
-+ The `endsWith` operator is only supported on **mail** and **userPrincipalName** properties.
-+ The `ne` operator is supported only in advanced queries.
+## Support for the $filter query parameter on properties of Azure AD directory objects
 
-## Support for the filter query parameter on properties of Azure AD directory objects
+The following table summarizes the `$filter` operators support, as properties of directory objects behave differently.
 
-Properties of directory objects support `$filter` differently. The following table summarizes parameter support for operators of `$filter`. 
-* ⚪ indicates the property supports `$filter` with the operator by default. 
-* ⚫ indicates that the use of `$filter` and the operator require the **ConsistencyLevel** header with the value `eventual` *and* the `$count` query parameter.
-* Blank cells indicate that the property does not support the use of `$filter` with the operator.
-* Properties that are not listed here do not support `$filter`.
+- ⚪ indicates that the property supports `$filter` with the operator by default.
+- ⚫ indicates that the specific `$filter` operator requires the *Advanced Queries Parameters*:
+  - `ConsistencyLevel=eventual` header
+  - `$count=true` query string
+- Blank cells indicate that the property does not support the use of `$filter` with the operator.
+- Null value column indicates that the property is filterable using `null`
+- Properties that are not listed here do not support `$filter`.
 
 > [!NOTE]
+>
 > 1. Properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in` and `startsWith` operators only in advanced queries.
 > 2. Queries that are supported by default will also work in advanced queries.
+> 3. `NOT` and `ne` operators are only supported in advanced queries.
+>>
 
-| Property                      | eq | ge | in | le | ne | startsWith | null values |
-|:------------------------------|:---|:---|:---|:---|:---|:-----------|:------------|
-| accountEnabled                | ⚪ | ⚫  | ⚪ | ⚫  | ⚫ |            |             |
-| ageGroup                      | ⚪ |    | ⚪  |    | ⚫ |            |             |
-| city                          | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚫          |
-| companyName                   | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ | ⚫          | ⚫          |
-| consentProvidedForMinor       | ⚪ |    | ⚪  |    | ⚫ |            |             |
-| country                       | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| createdDateTime               | ⚪ | ⚪  | ⚫ | ⚪  | ⚫ |            |             |
-| creationType                  | ⚪ |    | ⚪  |    | ⚫ |            |             |
-| department                    | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| displayName                   | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| employeeHireDate              | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ |            |             |
-| employeeId                    | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| employeeType                  | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ | ⚫          | ⚪          |
-| givenName                     | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| infoCatalogs                  | ⚪ | ⚪  |    |    | ⚫ | ⚪          |             |
-| jobTitle                      | ⚪ | ⚪  | ⚪ |    | ⚫  | ⚪         | ⚪           |
-| mail                          | ⚪ | ⚪  | ⚪ |    | ⚫  | ⚪         | ⚪           |
-| mailNickname                  | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| onPremisesExtensionAttributes | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ |            |             |
-| onPremisesSamAccountName      | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ | ⚫          |             |
-| onPremisesUserPrincipalName   | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          |             |
-| postalCode                    | ⚫ | ⚫  |    | ⚫ | ⚫  | ⚫         | ⚫           |
-| preferredLanguage             | ⚫ | ⚫  |    | ⚫ | ⚫  | ⚫         | ⚫           |
-| proxyAddresses                | ⚪ | ⚪  |    | ⚪ | ⚫  | ⚪         | ⚪           |
-| state                         | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| streetAddress                 | ⚫ | ⚫  | ⚫ | ⚫  | ⚫ | ⚫          | ⚫          |
-| surname                       | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| usageLocation                 | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          | ⚪          |
-| userPrincipalName             | ⚪ | ⚪  | ⚪ | ⚪  | ⚫ | ⚪          |             |
-| userType                      | ⚪ |    | ⚪  |    | ⚫ |            | ⚪           |
-
+| Property                      |  eq   |  ne   |  ge   |  le   |  in   | startsWith | endsWith | null value |
+| :---------------------------- | :---: | :---: | :---: | :---: | :---: | :--------: | :------: | :--------: |
+| accountEnabled                |   ⚪   |   ⚫   |   ⚫   |   ⚫   |   ⚪   |            |          |            |
+| ageGroup                      |   ⚪   |   ⚫   |       |       |   ⚪   |            |          |            |
+| city                          |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚫      |
+| companyName                   |   ⚫   |   ⚫   |   ⚫   |   ⚫   |   ⚫   |     ⚫      |          |     ⚫      |
+| consentProvidedForMinor       |   ⚪   |   ⚫   |       |       |   ⚪   |            |          |            |
+| country                       |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
+| createdDateTime               |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚫   |            |          |            |
+| creationType                  |   ⚪   |   ⚫   |       |       |   ⚪   |            |          |            |
+| department                    |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
+| displayName                   |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
+| employeeHireDate              |   ⚫   |   ⚫   |   ⚫   |   ⚫   |   ⚫   |            |          |            |
+| employeeId                    |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
+| employeeType                  |   ⚫   |   ⚫   |   ⚫   |   ⚫   |   ⚫   |     ⚫      |          |     ⚪      |
+| givenName                     |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
+| infoCatalogs                  |   ⚪   |   ⚫   |   ⚪   |       |       |     ⚪      |          |            |
+| jobTitle                      |   ⚪   |   ⚫   |   ⚪   |       |   ⚪   |     ⚪      |          |     ⚪      |
+| mail                          |   ⚪   |   ⚫   |   ⚪   |       |   ⚪   |     ⚪      |    ⚪     |     ⚪      |
+| mailNickname                  |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
+| onPremisesExtensionAttributes |   ⚫   |   ⚫   |   ⚫   |   ⚫   |   ⚫   |            |          |            |
+| onPremisesSamAccountName      |   ⚫   |   ⚫   |   ⚫   |   ⚫   |   ⚫   |     ⚫      |          |            |
+| onPremisesUserPrincipalName   |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |            |
+| postalCode                    |   ⚫   |   ⚫   |   ⚫   |   ⚫   |       |     ⚫      |          |     ⚫      |
+| preferredLanguage             |   ⚫   |   ⚫   |   ⚫   |   ⚫   |       |     ⚫      |          |     ⚫      |
+| proxyAddresses                |   ⚪   |   ⚫   |   ⚪   |   ⚪   |       |     ⚪      |          |     ⚪      |
+| state                         |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
+| streetAddress                 |   ⚫   |   ⚫   |   ⚫   |   ⚫   |   ⚫   |     ⚫      |          |     ⚫      |
+| surname                       |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
+| usageLocation                 |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
+| userPrincipalName             |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |    ⚪     |            |
+| userType                      |   ⚪   |   ⚫   |       |       |   ⚪   |            |          |     ⚪      |
 
 ## Error handling for advanced queries on directory objects
 
-If a property or query parameter is only supported only in advanced queries but the **ConsistencyLevel** header with the value `eventual` is not specified, the request returns an error.
+Counting Directory Objects is only supported using the advanced queries parameters.  
+If the `ConsistencyLevel=eventual` header is not specified, the request will return an error in case raw count is used (`/$count` query segment) or silently ignoring the count parameter in case inline count is used (`$count=true` query parameter).
 
 ```http
 https://graph.microsoft.com/v1.0/users/$count
@@ -121,6 +132,35 @@ https://graph.microsoft.com/v1.0/users/$count
             "client-request-id": "539da3bd-942f-25db-636b-27f6f6e8eae4"
         }
     }
+}
+```
+
+```http
+https://graph.microsoft.com/v1.0/users?$count=true
+```
+
+**Note:** `@odata.count` parameter is missing even if the query is successful.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "value":[
+    {
+      "displayName":"Oscar Ward",
+      "mail":"oscarward@contoso.com",
+      "userPrincipalName":"oscarward@contoso.com"
+    },
+  ]
 }
 ```
 
@@ -147,7 +187,7 @@ https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 If a property or query parameter in the URL is supported only in advanced queries but either the **ConsistencyLevel** header or the `$count=true` query string is missing, the request returns an error.
 
 ```http
-https://graph.microsoft.com/beta/users?$filter=endswith(mail,'@hotmail.com')
+https://graph.microsoft.com/beta/users?$filter=endsWith(mail,'@outlook.com')
 ```
 
 ```json
@@ -163,7 +203,6 @@ https://graph.microsoft.com/beta/users?$filter=endswith(mail,'@hotmail.com')
     }
 }
 ```
-
 
 ## See also
 
