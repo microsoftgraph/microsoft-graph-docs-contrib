@@ -275,4 +275,5 @@ For more information about getting access to Microsoft Graph on behalf of a user
 
 ## See also
 
-For an example of a web app hosted on Azure App Service calling Microsoft Graph as the user, see [Tutorial: Access Microsoft Graph from a secured app as the user](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user). Learn how to grant delegated permissions to a web app, configure App Service to get an access token, and call Microsoft Graph from a web app for a signed-in user.
+- For an example of a web app hosted on Azure App Service calling Microsoft Graph as the user, see [Tutorial: Access Microsoft Graph from a secured app as the user](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user). Learn how to grant delegated permissions to a web app, configure App Service to get an access token, and call Microsoft Graph from a web app for a signed-in user.
+- For samples using the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
