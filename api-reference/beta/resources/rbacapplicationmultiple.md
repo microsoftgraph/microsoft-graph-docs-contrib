@@ -21,6 +21,8 @@ Cloud PC and Microsoft Intune are examples of such RBAC providers. A role assign
 
 For role definitions, the cloud PC provider currently supports the [list](../api/rbacapplication-list-roledefinitions.md) operation but not the [create](../api/rbacapplication-post-roledefinitions.md).
 
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
 ## Methods
 
 | Method       | Return Type | Description |

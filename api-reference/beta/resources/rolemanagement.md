@@ -25,6 +25,8 @@ For more information, see:
 * [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 * [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
 
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
 ## Methods
 
 None.

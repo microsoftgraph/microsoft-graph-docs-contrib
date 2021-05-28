@@ -15,13 +15,15 @@ Namespace: microsoft.graph
 
 A unifiedRoleAssignmentMultiple is used to grant access to resources, as part of Microsoft 365 RBAC [role management](rolemanagement.md). It represents a role definition assigned to an array of principals (typically a user) over an array of scopes. 
 
+You can create a role assignment with multiple principals and multiple scopes.
+
+You must provide either **directoryScopeIds** or **appScopeIds**.
+
 The following RBAC providers are currently supported:
 - cloud PC 
 - Microsoft Intune
 
-You can create a role assignment with multiple principals and multiple scopes.
-
-You must provide either **directoryScopeIds** or **appScopeIds**.
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Methods
 
