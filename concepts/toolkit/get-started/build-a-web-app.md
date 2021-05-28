@@ -116,15 +116,15 @@ In order to test your app, MSAL requires the page to be hosted in a web server f
 If you're just getting started and want to play around, you can use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code or any similar lightweight development server. Download the extension and open your HTML file using live server. 
 > **Note:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
 
-## Track user's sign in state
+## Track a user's sign in state
 
 You can detect when a user has successfully logged in and display specific components accordingly. For example, display the agenda component if the user has logged in. Otherwise, display the login interface.
 
-You determine if a user is logged in by evaluating the globalProvider and providerState.
+You can determine if a user is logged in by evaluating the `globalProvider` and `providerState`.
 
 # [HTML](#tab/HTML)
 
-You access the provider and providerState from `mgt` property by using the `mgt-loader` library.
+If you're using the `mgt-loader` library, you can access the `provider` and `providerState` from the `mgt` property.
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -137,7 +137,7 @@ You access the provider and providerState from `mgt` property by using the `mgt-
     const provider = mgt.Providers.globalProvider;
     const isLoggedIn = provider && provider.state === mgt.ProviderState.SignedIn
 
-    // Change the component to mgt-agenda ONLY if the user is logged in
+    // Show the mgt-agenda component ONLY if the user is logged in, show the mgt-login component if not
     function loadAgenda(){
         if(isLoggedIn){
             const main = document.getElementById("main");
@@ -152,7 +152,7 @@ You access the provider and providerState from `mgt` property by using the `mgt-
 ```
 
 # [JavaScript](#tab/JavaScript)
-You import the provider and providerState from `@microsoft/mgt`.
+If you're using the Toolkit via the npm packages, you can import the `provider` and `providerState` from `@microsoft/mgt`.
 
 ```javascript
 import {Providers, ProviderState} from '@microsoft/mgt'
