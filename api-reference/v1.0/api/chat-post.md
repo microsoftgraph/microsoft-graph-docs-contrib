@@ -47,22 +47,19 @@ The following table lists the properties that are required to create a chat obje
 |topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
 |members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every single user, including the user initiating the create request, who will participate in the chat must be specified in this list.|
-|installedApps|(Optional)[teamsApp](../resources/teamsapp.md) collection|List of apps that to install in the chat.|
-
-> **Note:** Currently, only one app installation is supported. If multiple app installations are listed in the request, the response will be a `Bad Request` error.
-
 
 ## Response
 
-If the request does not include apps to install and the request is successful, this method returns a `201 Created` response code and the newly created [chat](../resources/chat.md) resource in the response body.
-
-If the request includes apps to install and the request is successful, this method returns a `202 Accepted` response code containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md) in the response headers.
+If successful, this method returns a 201 Created response code and the newly created **chat** resource in the response body.
 
 ## Examples
 
 ### Example 1: Create a one-on-one chat
 
 #### Request
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_oneOnOne"
@@ -88,8 +85,24 @@ Content-Type: application/json
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-oneonone-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-oneonone-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 #### Response
@@ -117,6 +130,9 @@ Content-Type: application/json
 ### Example 2: Create a group chat
 
 #### Request
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_group"
@@ -148,8 +164,25 @@ Content-Type: application/json
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -173,60 +206,3 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a group chat with installed apps
-
-#### Request
-<!-- {
-  "blockType": "request",
-  "name": "create_chat_group_with_installed_apps"
-}
--->
-``` http
-POST https://graph.microsoft.com/v1.0/chats
-Content-Type: application/json
-
-{
-  "chatType": "group",
-  "topic": "Group chat title",
-  "members": [
-    {
-      "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "roles": ["owner"],
-      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
-    },
-    {
-      "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "roles": ["owner"],
-      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
-    },
-    {
-      "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "roles": ["owner"],
-      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"
-    }
-  ],
-  "installedApps": [
-    {
-      "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
-    }
-  ]
-}
-```
-
----
-
-#### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.chat"
-}
--->
-``` http
-HTTP/1.1 202 Accepted
-Content-Type: application/json
-Location: /chats('19:f79ae95d62fc4f95a24ba8211703e783@thread.v2')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-034e6f8d-f3f3-45ed-9329-790bff57e80d-8512424d-e601-4152-ad6c-c14fc5de7162')
-```
-
-## See also
-- [Get operation of a chat](chat-get-operation.md)
