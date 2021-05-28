@@ -92,6 +92,3 @@ Content-Type: application/json
     "error": null
 }
 ```
-
-## See also
-- [List operations on a chat](chat-list-operations.md)

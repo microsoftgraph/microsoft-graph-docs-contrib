@@ -97,6 +97,3 @@ Content-Type: application/json
     ]
 }
 ```
-
-## See also
-- [Get operation on a chat](chat-get-operation.md)
