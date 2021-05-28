@@ -56,6 +56,7 @@ The following is an example of a request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/submissions/20302/setUpResourcesFolder
 Content-type: application/json
+
 {
 }
 ```
