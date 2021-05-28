@@ -75,13 +75,3 @@ Content-Type: application/json
     "skuId": "6fd2c87f-b296-42f0-b197-1e91e994b900",
     "servicePlanId": "a23b959c-7ce8-4e57-9140-b90eb88a9e97"
 }
-
-### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 204 No Content
-```
