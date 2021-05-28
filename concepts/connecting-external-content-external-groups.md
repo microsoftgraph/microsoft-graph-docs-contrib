@@ -6,7 +6,7 @@ doc_type: conceptualPageType
 ms.prod: search
 ---
 
-# External groups overview 
+# External groups
 
 The access control list is used to specify who has permissions to view [external items](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in a Microsoft Graph connection, in Microsoft 365 experiences such as Search and Intelligent Discovery. For data sources that rely on Azure Active Directory users and groups, setting permissions on external items is as simple as associating the ACLs with an AAD user and group ID when creating or updating the external item as shown below.
 
