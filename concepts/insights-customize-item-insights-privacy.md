@@ -29,11 +29,11 @@ While existing apps could continue to use **officeGraphInsights**, these apps sh
 
 ## How to customize item insights?
 
-Item insights settings provide flexibility for administrators to use Azure AD tools. Administrators can disable item insights for an entire organization, or for only members of a specified Azure AD group. Configure item insights by using the PowerShell SDK or Microsoft Graph REST API with due permissions. Keep in mind that the _global administrator role_ is required. 
+Item insights settings provide flexibility for administrators to use Azure AD tools. Administrators can disable item insights for an entire organization, or for only members of a specified Azure AD group. They can configure item insights in the Microsoft 365 admin center, or by using the PowerShell SDK or Microsoft Graph REST API with due permissions. Keep in mind that the _global administrator role_ is required. 
 
-The next section describes using PowerShell cmdlets to configure insights settings. If you're using the REST API, skip the next section and continue with [Configure item insights using REST API](#configure-item-insights-using-rest-api). Then refer to the [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
+The next section describes using the admin center, followed by a section about PowerShell cmdlets. If you're using the REST API, skip the next two sections and continue with [Configure item insights using REST API](#configure-item-insights-using-rest-api). Then refer to the [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
 
-### How to configure item insights settings via Microsoft Admin Center?
+### How to configure item insights settings via Microsoft admin center?
 An administrator with the _global administrator role_ can tune item insights privacy settings via toggles. To do so, in the Micrsofot 365 admin center, expand **Settings**, select **Search & intelligence**, and under **Item insights**, choose **Change settings**.
 ![image](https://user-images.githubusercontent.com/54312959/117024482-b39eca00-ad02-11eb-9a11-e6a01039822e.png)
 
