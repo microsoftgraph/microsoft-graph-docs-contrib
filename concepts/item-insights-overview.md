@@ -52,11 +52,11 @@ By default, item insights are allowed. Administrators use specific settings to c
 Updating settings can take up to 24 hours to apply within the user’s organization across Microsoft 365 experiences.
 
 After disabling item insights, the following happens: 
-1. Microsoft stops using your signals when computing recommendations for others. Your colleagues stop receiving item insights based on activities that you perform in shared workspaces, and your colleagues’ insights-based experience becomes less rich in places such as the Recommended files in Office.com and Delve.
+*  Microsoft stops using your signals when computing recommendations for others. Your colleagues stop receiving item insights based on activities that you perform in shared workspaces, and your colleagues’ insights-based experience becomes less rich in places such as the Recommended files in Office.com and Delve.
 ![disabled item insights in recommended in office](images/disabled-item-insights-in-office.PNG)
-2. Your colleagues can no longer see insights such as recent files that you have shared with them from OneDrive for Business and SharePoint, in experiences such as Delve, the persona card in M365 and the Bing results. The content is still accessible via Microsoft Search or other experience as appropriate, but it is harder to discover and your colleagues would have to spend more time to find it.  
+*  Your colleagues can no longer see insights such as recent files that you have shared with them from OneDrive for Business and SharePoint, in experiences such as Delve, the persona card in M365 and the Bing results. The content is still accessible via Microsoft Search or other experience as appropriate, but it is harder to discover and your colleagues would have to spend more time to find it.  
 ![disabled item insights in persona card](images/disabled-item-insights-in-persona-card.PNG)
-3. Experiences that show content trending around you is blocked for you and inaccessible for others, in places such as Delve and Outlook mobile’s **discover** section. The lack of the trending-insights also affects your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
+*  Experiences that show content trending around you is blocked for you and inaccessible for others, in places such as Delve and Outlook mobile’s **discover** section. The lack of the trending-insights also affects your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
 ![disabled item insights in Delve](images/disabled-item-insights-in-delve.PNG)
 
 The full list of experiences affected when disabling item insights can be found [here](insights-customize-item-insights-privacy.md). 
