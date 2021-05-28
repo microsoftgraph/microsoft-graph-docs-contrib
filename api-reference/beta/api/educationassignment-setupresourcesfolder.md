@@ -42,6 +42,7 @@ If successful, this method returns a 200 Ok response code and [educationAssignme
 
 ## Example
 The following example shows how to call this API.
+
 ### Request
 The following is an example of a request.
 
@@ -51,16 +52,11 @@ The following is an example of a request.
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/setUpResourcesFolder
+Content-type: application/json
+{
+}
 ```
 ---
-### Request Body
-<!-- {
-  "blockType": "requestBody",
-} -->
-```http
-{}
-```
-
 ### Response
 The following is an example of a response. 
 
