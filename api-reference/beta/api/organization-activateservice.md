@@ -76,7 +76,6 @@ Content-Type: application/json
     "servicePlanId": "a23b959c-7ce8-4e57-9140-b90eb88a9e97"
 }
 
-
 ### Response
 <!-- {
   "blockType": "response",
