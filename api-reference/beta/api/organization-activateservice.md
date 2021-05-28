@@ -47,7 +47,7 @@ POST /organization/{organizationId}/activateService
 
 ## Request body
 In the request body, supply a JSON representation of the [activateService](../resources/activateService.md) object.
-At least one property must be defined for this action to be valid. There are three possible cases: You could have `service` or (`servicePlanId` and `skuId`). If all three properties are defined, then the `servicePlanId` and `skuId` takes precedence.
+You must define **service** or (**servicePlanId** _and_ **skuId**) for this action to be valid.
 
 | Property         | Type         | Description                           |
 | ----------------- | ------------ | ------------------------------------- |
