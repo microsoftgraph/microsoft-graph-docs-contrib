@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of a [timeCard](../resources/t
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [timeCard](../resources/timecard.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -67,47 +67,58 @@ The following is an example of the request.
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards/3895809b-a618-4c0d-86a0-d42b25b7d74f
+PUT https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/TCK_3cd7413f-0337-433b-9a49-da0923185b3f
 Content-type: application/json
 
 {
-   "clockInEvent":{
-         "dateTime":"2019-03-18T00:00:00.000Z",
-         "atApprovedLocation":true,
-         "notes":{
-               "content": "Started late due to traffic in CA 237",
-                "contentType": "text"
-         },
-   },
-   "clockOutEvent":null,
-   "notes":{
-        "content": "8 To 5 Inventory management",
-        "contentType": "text"
-   },
-   "breaks":[
-      {
-         "notes":{
-             "content": "Lunch break",
-             "contentType": "text"
-         },
-         "start":{
-            "dateTime":"2019-03-18T04:00:00.000Z",
-            "atApprovedLocation":true,
-            "notes":{
-                "content": "Starting break 15 mins late to make up for late clockin",
-                "contentType": "text"
+    "userId": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
+    "state": "clockedOut",
+    "confirmedBy": "None",
+    "notes": null,
+    "clockInEvent": {
+        "dateTime": "2021-05-21T21:58:41.327Z",
+        "atApprovedLocation": null,
+        "notes": {
+            "contentType": "text",
+            "content": "update sample notes"
+        }
+    },
+    "clockOutEvent": {
+        "dateTime": "2021-05-21T22:01:46.205Z",
+        "atApprovedLocation": null,
+        "notes": {
+            "contentType": "text",
+            "content": "update sample notes"
+        }
+    },
+    "breaks": [
+        {
+            "breakId": "BRK_138f4751-68b1-44c1-aca2-2b26cba9e73f",
+            "notes": null,
+            "start": {
+                "dateTime": "2021-05-21T21:59:59.328Z",
+                "atApprovedLocation": null,
+                "notes": {
+                    "contentType": "text",
+                    "content": "update sample notes"
+                }
             },
-         }
-      }
-   ]
+            "end": {
+                "dateTime": "2021-05-21T22:01:10.205Z",
+                "atApprovedLocation": null,
+                "notes": {
+                    "contentType": "text",
+                    "content": "update sample notes"
+                }
+            }
+        }
+    ]
 }
 ```
 
 ### Response
 
 The following is an example of the response. 
-
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -116,89 +127,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-   "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
-   "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
-   "createdDateTime":"2019-03-18T00:00:00.000Z",
-   "createdBy":{
-      "user":{
-         "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "displayName":"Dwight Schrute"
-      }
-   },
-   "lastModifiedDateTime":"2019-03-18T00:00:00.000Z",
-   "lastModifiedBy":{
-      "user":{
-         "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "displayName":"Dwight Schrute"
-      }
-   },
-   "state":"onBreak",
-   "confirmationStatus":"notConfirmed",
-   "originalEntry":{
-      "clockInEvent":{
-         "dateTime":"2019-03-18T00:00:00.000Z",
-         "atApprovedLocation":true,
-         "notes":{
-               "content": "Started late due to traffic in CA 237",
-                "contentType": "text"
-         },
-      },
-      "clockOutEvent":null,
-      "breaks":[
-         {
-            "breakId":"string",
-            "notes":{
-                "content": "Lunch break",
-                "contentType": "text"
-            },
-            "start":{
-               "dateTime":"2019-03-18T02:00:00.000Z",
-               "atApprovedLocation":true,
-               "notes":{
-                   "content": "Starting break late to make up for late clockin",
-                   "contentType": "text"
-                }
-            },
-            "end":null
-         }
-      ]
-   },
-   "clockInEvent":{
-      "dateTime":"2019-03-18T00:00:00.000Z",
-      "atApprovedLocation":true,
-      "notes":{
-               "content": "Started late due to traffic in CA 237",
-                "contentType": "text"
-         }
-   },
-   "clockOutEvent":null,
-   "notes":{
-        "content": "8 To 5 Inventory management",
-        "contentType": "text"
-   },
-   "breaks":[
-      {
-         "breakId":"string",
-         "notes":{
-             "content": "Lunch break",
-             "contentType": "text"
-         },
-         "start":{
-            "dateTime":"2019-03-18T04:00:00.000Z",
-            "atApprovedLocation":true,
-            "notes":{
-                "content": "Starting break 15 mins late to make up for late clockin",
-                "contentType": "text"
-            }
-         },
-         "end":null
-      }
-   ]
-}
+HTTP/1.1 204 No Content
 ```
 
 

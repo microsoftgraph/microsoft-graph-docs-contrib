@@ -894,6 +894,7 @@ Namespace: microsoft.graph
 |clockedIn|
 |onBreak|
 |clockedOut|
+|unknownFutureValue|
 
 ### scheduleChangeState values
 

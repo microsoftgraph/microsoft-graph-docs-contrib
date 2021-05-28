@@ -65,7 +65,8 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards?$top=100&$filter=state eq 'onBreak'&$orderBy=clockIn/dateTime desc
+GET https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards?$top=2&$filter=state eq 'clockedOut'
+
 ```
 
 ### Response
@@ -84,78 +85,136 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "value":[
-      {
-         "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
-         "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "createdDateTime":"2019-03-18T00:00:00.000Z",
-         "createdBy":{
-            "user":{
-               "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-               "displayName":"Dwight Schrute"
-            }
-         },
-         "lastModifiedDateTime":"2019-03-18T00:00:00.000Z",
-         "lastModifiedBy":{
-            "user":{
-               "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-               "displayName":"Dwight Schrute"
-            }
-         },
-         "state":"onBreak",
-         "clockInEvent":{
-               "dateTime":"2019-03-18T00:00:00.000Z",
-               "atApprovedLocation":true,
-               "notes":null,
+    "value": [
+        {
+            "@odata.etag": "\"3400c313-0000-0d00-0000-60afe1940000\"",
+            "id": "TCK_d1e0f245-9996-4125-b128-d3eb5c4b0164",
+            "createdDateTime": "2020-09-21T18:01:29.302Z",
+            "lastModifiedDateTime": "2021-05-27T18:14:44.503Z",
+            "userId": "66b4f2a4-425d-4dec-8172-7e889950885e",
+            "state": "clockedOut",
+            "confirmedBy": "none",
+            "notes": null,
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
+                    "displayName": "Jing Jing GuTwo"
+                }
             },
-          "clockOutEvent":null,
-          "breaks":[
-             {
-                "breakId":"string",
-                "notes":{
-                     "content": "Lunch break",
-                     "contentType": "text"
-                  },
-                "start":{
-                   "dateTime":"2019-03-18T00:00:00.000Z",
-                   "atApprovedLocation":true,
-                   "notes": {
-                       "content": "Started my break 5 minutes early",
-                       "contentType": "text"
-                    },
+            "clockInEvent": {
+                "dateTime": "2020-09-21T18:01:29.302Z",
+                "atApprovedLocation": null,
+                "notes": {
+                    "contentType": "text",
+                    "content": "ClockIn-OBO Shorbani"
+                }
+            },
+            "clockOutEvent": {
+                "dateTime": "2021-05-27T18:14:44.503Z",
+                "atApprovedLocation": null,
+                "notes": {
+                    "contentType": "text",
+                    "content": "clock out notes"
+                }
+            },
+            "breaks": [],
+            "originalEntry": {
+                "clockInEvent": {
+                    "dateTime": "2020-09-21T18:01:29.302Z",
+                    "atApprovedLocation": null,
+                    "notes": {
+                        "contentType": "text",
+                        "content": "ClockIn-OBO Shorbani"
+                    }
                 },
-                "end":null
-             }
-          ],
-          "notes":null,
-          "originalEntry":{
-            "clockInEvent":{
-               "dateTime":"2019-03-18T00:00:00.000Z",
-               "atApprovedLocation":true,
-               "notes":null,
+                "clockOutEvent": {
+                    "dateTime": "2021-05-27T18:14:44.503Z",
+                    "atApprovedLocation": null,
+                    "notes": {
+                        "contentType": "text",
+                        "content": "clock out notes"
+                    }
+                },
+                "breaks": []
             },
-            "clockOutEvent":null,
-            "breaks":[
-               {
-                  "breakId":"4591109b-a618-3e0d-e6a0-d42b25b7231f",
-                  "notes":{
-                     "content": "Lunch break",
-                     "contentType": "text"
-                  },
-                  "start":{
-                     "dateTime":"2019-03-18T00:00:00.000Z",
-                     "atApprovedLocation":true,
-                     "notes": {
-                         "content": "Started my break 5 minutes early",
-                         "contentType": "text"
-                      },
-                  },
-                  "end":null
-               }
-            ]
-         }
-      }
-   ]
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "66b4f2a4-425d-4dec-8172-7e889950885e",
+                    "displayName": "Janani Varadharajan"
+                }
+            }
+        },
+        {
+            "@odata.etag": "\"3400d914-0000-0d00-0000-60afe1ee0000\"",
+            "id": "TCK_aa73c610-dd75-4021-bb5c-6b071c7aa835",
+            "createdDateTime": "2020-09-21T18:02:48.688Z",
+            "lastModifiedDateTime": "2021-05-27T18:16:14.766Z",
+            "userId": "3041ccde-7544-4ae0-b44f-3618b08ba1ce",
+            "state": "clockedOut",
+            "confirmedBy": "none",
+            "notes": null,
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
+                    "displayName": "Jing Jing GuTwo"
+                }
+            },
+            "clockInEvent": {
+                "dateTime": "2020-09-21T18:02:48.688Z",
+                "atApprovedLocation": null,
+                "notes": {
+                    "contentType": "text",
+                    "content": "ClockIn-OBO Shorbani"
+                }
+            },
+            "clockOutEvent": {
+                "dateTime": "2021-05-27T18:16:14.766Z",
+                "atApprovedLocation": null,
+                "notes": {
+                    "contentType": "text",
+                    "content": "clock out notes"
+                }
+            },
+            "breaks": [],
+            "originalEntry": {
+                "clockInEvent": {
+                    "dateTime": "2020-09-21T18:02:48.688Z",
+                    "atApprovedLocation": null,
+                    "notes": {
+                        "contentType": "text",
+                        "content": "ClockIn-OBO Shorbani"
+                    }
+                },
+                "clockOutEvent": {
+                    "dateTime": "2021-05-27T18:16:14.766Z",
+                    "atApprovedLocation": null,
+                    "notes": {
+                        "contentType": "text",
+                        "content": "clock out notes"
+                    }
+                },
+                "breaks": []
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "66b4f2a4-425d-4dec-8172-7e889950885e",
+                    "displayName": "Janani Varadharajan"
+                }
+            }
+        }
+    ]
 }
 ```
 

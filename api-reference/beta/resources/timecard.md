@@ -22,13 +22,13 @@ Represents a timecard entry in the schedule.
 |[List](../api/timecard-list.md) | [timeCard](timecard.md) collection | Get the list of **timecard** objects in this schedule.|
 |[Create](../api/timecard-post.md) | [timeCard](timecard.md) | Create a new **timecard** object.|
 |[Get](../api/timecard-get.md) | [timeCard](timecard.md) | Get a **timecard** object by ID.|
-|[Replace](../api/timecard-replace.md) | [timeCard](timecard.md) | Replace a **timecard** object.|
+|[Replace](../api/timecard-replace.md) | None | Replace a **timecard** object.|
 |[Delete](../api/timecard-delete.md) | None | Delete a **timecard** object from the schedule.|
 |[clockIn](../api/timecard-clockin.md) | [timeCard](timecard.md) | Clock in to start a **timecard**.|
-|[clockOut](../api/timecard-clockout.md) | [timeCard](timecard.md) | Clock out to end an open **timecard**.|
-|[startBreak](../api/timecard-startbreak.md) | [timeCard](timecard.md) | Start a **timeCardBreak** in a specific **timecard**.|
-|[endBreak](../api/timecard-endbreak.md) | [timeCard](timecard.md) | End the open **timeCardBreak** in a specific **timecard**.|
-|[confirmTimeCard](../api/timecard-confirm.md) | [timeCard](timecard.md) | Confirm a **timecard** record.|
+|[clockOut](../api/timecard-clockout.md) | None | Clock out to end an open **timecard**.|
+|[startBreak](../api/timecard-startbreak.md) | None | Start a **timeCardBreak** in a specific **timecard**.|
+|[endBreak](../api/timecard-endbreak.md) | None | End the open **timeCardBreak** in a specific **timecard**.|
+|[confirmTimeCard](../api/timecard-confirm.md) | None | Confirm a **timecard** record.|
 
 ## Properties
 |Property               |Type           |Description                                                                |
@@ -36,8 +36,8 @@ Represents a timecard entry in the schedule.
 | id			        |`string`  |ID of the **timeCard**.|
 | userId			        |`string` |User ID to which  the **timeCard** belongs. |
 | state 		        |`timeCardState`  | The current state of the **timeCard** during its life cycle.Possible values are: `clockedIn`, `onBreak`, `clockedOut`, `unknownFutureValue`.|
-| clockIn       |[timeCardEvent](../resources/timecardevent.md)    | The clock-in event of the **timeCard**. |
-| clockOut			        |[timeCardEvent](../resources/timecardevent.md)  |The clock-out event of the **timeCard**. |
+| clockInEvent       |[timeCardEvent](../resources/timecardevent.md)    | The clock-in event of the **timeCard**. |
+| clockOutEvent			        |[timeCardEvent](../resources/timecardevent.md)  |The clock-out event of the **timeCard**. |
 | notes			        | [itemBody](itembody.md)  |Notes about the **timeCard**. |
 | breaks 	|[timeCardBreak](timecardbreak.md) collection  |The list of breaks associated with the **timeCard**.|
 | originalEntry| [timeCardEntry](../resources/timecardentry.md) | The original **timeCardEntry** of the **timeCard**, before user edits. |
@@ -64,8 +64,8 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {"@odata.type":"microsoft.graph.identitySet"},
-  "clockIn" : {"@odata.type":"microsoft.graph.timeCardEvent"},
-  "clockOut" : {"@odata.type":"microsoft.graph.timeCardEvent"},
+  "clockInEvent" : {"@odata.type":"microsoft.graph.timeCardEvent"},
+  "clockOutEvent" : {"@odata.type":"microsoft.graph.timeCardEvent"},
   "notes" : {"@odata.type":"microsoft.graph.itemBody"},
   "breaks" : [{"@odata.type":"microsoft.graph.timeCardEvent"}],
   "originalEntry" : {"@odata.type":"microsoft.graph.timeCardEntry"}

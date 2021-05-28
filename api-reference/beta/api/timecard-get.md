@@ -65,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards/3895809b-a618-4c0d-86a0-d42b25b7d74f
+GET https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/TCK_cc09588d-d9d2-4fa0-85dc-2aa5ef983972
 ```
 
 ### Response
@@ -84,74 +84,109 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
-   "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
-   "createdDateTime":"2019-03-18T00:00:00.000Z",
-   "createdBy":{
-      "user":{
-         "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "displayName":"Dwight Schrute"
-      }
-   },
-   "lastModifiedDateTime":"2019-03-18T00:00:00.000Z",
-   "lastModifiedBy":{
-      "user":{
-         "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "displayName":"Dwight Schrute"
-      }
-   },
-   "state":"onBreak",
-   "clockInEvent":{
-      "dateTime":"2019-03-18T00:00:00.000Z",
-      "atApprovedLocation":true,
-      "notes":null
-   },
-   "clockOutEvent":null,
-   "breaks":[
-      {
-         "breakId":"string",
-         "notes":{
-             "content": "Lunch break",
-             "contentType": "text"
-          },
-         "start":{
-            "dateTime":"2019-03-18T00:00:00.000Z",
-            "atApprovedLocation":true,
-            "notes":{
-                 "content": "Started my break 5 minutes early",
-                 "contentType": "text"
+    "id": "TCK_cc09588d-d9d2-4fa0-85dc-2aa5ef983972",
+    "createdDateTime": "2021-05-27T22:58:41.327Z",
+    "lastModifiedDateTime": "2021-05-27T23:02:04.187Z",
+    "userId": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
+    "state": "clockedOut",
+    "confirmedBy": "user,manager",
+    "notes": null,
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
+            "displayName": "Jing Jing GuTwo"
+        }
+    },
+    "clockInEvent": {
+        "dateTime": "2021-05-27T22:58:41.327Z",
+        "atApprovedLocation": null,
+        "notes": {
+            "contentType": "text",
+            "content": "clock in notes"
+        }
+    },
+    "clockOutEvent": {
+        "dateTime": "2021-05-27T23:01:46.205Z",
+        "atApprovedLocation": null,
+        "notes": {
+            "contentType": "text",
+            "content": "clock out smaple notes"
+        }
+    },
+    "breaks": [
+        {
+            "breakId": "BRK_138f4751-68b1-44c1-aca2-2b26cba9e73f",
+            "notes": null,
+            "start": {
+                "dateTime": "2021-05-27T22:59:59.328Z",
+                "atApprovedLocation": null,
+                "notes": {
+                    "contentType": "text",
+                    "content": "start break smaple notes"
+                }
             },
-         },
-         "end":null
-      }
-   ],
-   "notes":null,
-   "originalEntry":{
-      "clockInEvent":{
-         "dateTime":"2019-03-18T00:00:00.000Z",
-         "atApprovedLocation":true,
-         "notes":null
-      },
-      "clockOutEvent":null,
-      "breaks":[
-         {
-            "breakId":"4591109b-a618-3e0d-e6a0-d42b25b7231f",
-            "notes":{
-             "content": "Lunch break",
-             "contentType": "text"
-             },
-            "start":{
-               "dateTime":"2019-03-18T00:00:00.000Z",
-               "atApprovedLocation":true,
-               "notes":{
-                    "content": "Started my break 5 minutes early",
-                    "contentType": "text"
-               },
-            },
-            "end":null
-         }
-      ]
-   }
+            "end": {
+                "dateTime": "2021-05-27T23:01:10.205Z",
+                "atApprovedLocation": null,
+                "notes": {
+                    "contentType": "text",
+                    "content": "end break smaple notes"
+                }
+            }
+        }
+    ],
+    "originalEntry": {
+        "clockInEvent": {
+            "dateTime": "2021-05-27T22:58:41.327Z",
+            "atApprovedLocation": null,
+            "notes": {
+                "contentType": "text",
+                "content": "clock in notes"
+            }
+        },
+        "clockOutEvent": {
+            "dateTime": "2021-05-27T23:01:46.205Z",
+            "atApprovedLocation": null,
+            "notes": {
+                "contentType": "text",
+                "content": "clock out smaple notes"
+            }
+        },
+        "breaks": [
+            {
+                "breakId": "BRK_138f4751-68b1-44c1-aca2-2b26cba9e73f",
+                "notes": null,
+                "start": {
+                    "dateTime": "2021-05-27T22:59:59.328Z",
+                    "atApprovedLocation": null,
+                    "notes": {
+                        "contentType": "text",
+                        "content": "start break smaple notes"
+                    }
+                },
+                "end": {
+                    "dateTime": "2021-05-27T23:01:10.205Z",
+                    "atApprovedLocation": null,
+                    "notes": {
+                        "contentType": "text",
+                        "content": "end break smaple notes"
+                    }
+                }
+            }
+        ]
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
+            "displayName": "Jing Jing GuTwo"
+        }
+    }
 }
 ```
 

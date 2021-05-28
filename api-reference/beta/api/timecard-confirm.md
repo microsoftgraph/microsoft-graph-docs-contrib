@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [timeCard](../resources/timeCard.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
@@ -61,14 +61,13 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards/3895809b-a618-4c0d-86a0-d42b25b7d74f/confirm
+POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/TCK_cc09588d-d9d2-4fa0-85dc-2aa5ef983972/confirm
 ```
 
 ### Response
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,69 +75,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-   "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
-   "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
-    "createdDateTime":"2019-03-18T00:00:00.000Z",
-    "createdBy":{
-       "user":{
-          "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-          "displayName":"Dwight Schrute"
-       }
-    },
-    "lastModifiedDateTime":"2019-03-18T00:00:00.000Z",
-    "lastModifiedBy": {
-        "user":{
-        "id": "a3601044-a1b5-438e-b742-f78d01d68a67",
-        "displayName": "Dwight Schrute"
-      }    
-   },
-   "state":"clockedOut",
-   "clockInEvent":{
-        "dateTime":"2019-03-18T00:00:00.000Z",
-        "atApprovedLocation":true,
-        "notes":{
-               "content": "Started late due to traffic in CA 237",
-                "contentType": "text"
-         },
-   },
-   "clockOutEvent":{
-       "dateTime":"2019-03-18T01:00:00.000Z",
-       "atApprovedLocation":true,
-       "notes":{
-            "content": "Leaving early for my son's piano recital",
-            "contentType": "text"
-       },
-   },
-   "notes":{
-        "content": "8 To 5 Inventory management",
-        "contentType": "text"
-   },
-   "breaks":null,
-   "confirmationStatus":"confirmedByUser",
-   "originalEntry":{
-       "clockInEvent":{
-            "dateTime":"2019-03-18T00:00:00.000Z",
-            "atApprovedLocation":true,
-            "notes":{
-               "content": "Started late due to traffic in CA 237",
-                "contentType": "text"
-         },
-       },
-       "clockOutEvent":{
-          "dateTime":"2019-03-18T01:00:00.000Z",
-          "atApprovedLocation":true,
-          "notes":{
-            "content": "Leaving early for my son's piano recital",
-            "contentType": "text"
-         }
-       },
-       "breaks":null
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

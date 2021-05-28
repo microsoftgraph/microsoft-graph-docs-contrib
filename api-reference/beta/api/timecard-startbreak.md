@@ -45,11 +45,16 @@ POST /teams/{teamId}/schedule/timecards/{timeCardID}/startBreak
 
 ## Request body
 
-Provide a new [timeCardEvent](../resources/timecardevent.md) object in the request body for this method.
+In the request body, provide a JSON object with the following parameters.
+
+| Parameter    | Type        | Description |
+|:-------------|:------------|:------------|
+|atApprovedLocation| `Edm.boolean ` | Indicate if this action happens at an approved location.|
+|notes| [itemBody](itembody.md)  |Notes during start of break.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [timeCard](../resources/timeCard.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
@@ -63,23 +68,22 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards/3895809b-a618-4c0d-86a0-d42b25b7d74f/startbreak
+POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/TCK_cc09588d-d9d2-4fa0-85dc-2aa5ef983972/startbreak
 Content-type: application/json
 
-{ 
-   "atApprovedLocation": true,
-   "notes":{
-            "content": "Starting break late to make up for late clockin",
-            "contentType": "text"
-      }
-} 
+{
+    "atAprovedLocation": true,
+    "notes": {
+        "contentType": "text",
+        "content": "start break smaple notes"
+    }
+}
 ```
 
 ### Response
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,86 +91,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-   "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
-   "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
-   "createdDateTime":"2019-03-18T00:00:00.000Z",
-   "createdBy":{
-      "user":{
-         "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "displayName":"Dwight Schrute"
-      }
-   },
-   "lastModifiedDateTime":"2019-03-18T00:00:00.000Z",
-   "lastModifiedBy":{
-      "user":{
-         "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "displayName":"Dwight Schrute"
-      }
-   },
-   "state":"onBreak",
-   "clockInEvent":{
-       "dateTime":"2019-03-18T00:00:00.000Z",
-       "atApprovedLocation":true,
-       "notes":{
-            "content": "Started late due to traffic in CA 237",
-            "contentType": "text"
-      }
-   },
-   "clockOutEvent":null,
-   "notes":null,
-   "breaks":[
-      {
-         "breakId":"string",
-         "notes":{
-            "content": "Lunch break",
-            "contentType": "text"
-         },
-         "start":{
-            "dateTime":"2019-03-18T00:00:00.000Z",
-            "atApprovedLocation":true,
-            "notes":{
-               "content": "Starting break late to make up for late clockin",
-               "contentType": "text"
-            }
-         },
-         "end":null
-      }
-   ]
-   "originalEntry":{
-      "clockInEvent":{
-         "dateTime":"2019-03-18T00:00:00.000Z",
-         "atApprovedLocation":true,
-         "notes":{
-               "content": "Started late due to traffic in CA 237",
-               "contentType": "text"
-         },
-      },
-      "clockOutEvent":null,
-      "breaks":[
-         {
-            "breakId":"string",
-            "notes":{
-               "content": "Lunch break",
-               "contentType": "text"
-            },
-            "start":{
-               "dateTime":"2019-03-18T00:00:00.000Z",
-               "atApprovedLocation":true,
-               "notes":{
-                   "content": "Starting break late to make up for late clockin",
-                   "contentType": "text"
-               }
-            },
-            "end":null
-         }
-      ]
-   },
-   "confirmationStatus":"notConfirmed"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

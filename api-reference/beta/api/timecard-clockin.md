@@ -45,11 +45,17 @@ POST /teams/{teamId}/schedule/timecards/clockIn
 
 ## Request body
 
-Provide a new [timeCardEvent](../resources/timecardevent.md) object in the request body for this method.
+In the request body, provide a JSON object with the following parameters.
+
+| Parameter    | Type        | Description |
+|:-------------|:------------|:------------|
+|atApprovedLocation| `Edm.boolean ` | Indicate if this action happens at an approved location.|
+|onBehalfOfUserId| String | Optional parameter used by the manager to clock in on behalf of a user.|
+|notes| [itemBody](itembody.md)  |Notes for the clock in. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [timeCard](../resources/timeCard.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [timeCard](../resources/timeCard.md) object in the response body.
 
 ## Example
 
@@ -63,15 +69,15 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards/clockIn
+POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/clockin
 Content-type: application/json
 
-{ 
-   "atApprovedLocation": true,
-   "notes":{
-        "content": "Started late due to traffic in CA 237",
-        "contentType": "text"
-     }
+{
+    "atAprovedLocation": true,
+    "notes": {
+        "contentType": "text",
+        "content": "clock in notes"
+    }
 }
 ```
 
@@ -87,51 +93,57 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-   "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
-   "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
-   "createdDateTime":"2019-03-18T00:00:00.000Z",
-   "createdBy":{
-      "user":{
-         "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "displayName":"Dwight Schrute"
-      }
-   },
-   "lastModifiedDateTime":"2019-03-18T00:00:00.000Z",
-   "lastModifiedBy":{
-      "user":{
-         "id":"a3601044-a1b5-438e-b742-f78d01d68a67",
-         "displayName":"Dwight Schrute"
-      }
-   },
-   "state":"clockedIn",
-   "confirmationStatus":"notConfirmed",
-   "originalEntry":{
-      "clockInEvent":{
-         "dateTime":"2019-03-18T00:00:00.000Z",
-         "atApprovedLocation":true,
-         "notes":{
-            "content": "Started late due to traffic in CA 237",
-            "contentType": "text"
-         },
-      },
-      "clockOutEvent":null,
-      "breaks":null
-   },
-   "clockInEvent":{
-      "dateTime":"2019-03-18T00:00:00.000Z",
-      "atApprovedLocation":true,
-      "notes":{
-            "content": "Started late due to traffic in CA 237",
-            "contentType": "text"
-      },
-   },
-   "clockOutEvent":null,
-   "notes":null,
-   "breaks":null,
+    "id": "TCK_cc09588d-d9d2-4fa0-85dc-2aa5ef983972",
+    "createdDateTime": "2021-05-27T22:58:41.327Z",
+    "lastModifiedDateTime": "2021-05-27T22:58:41.327Z",
+    "userId": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
+    "state": "clockedIn",
+    "confirmedBy": "none",
+    "clockOutEvent": null,
+    "notes": null,
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
+            "displayName": "Jing Jing GuTwo"
+        }
+    },
+    "clockInEvent": {
+        "dateTime": "2021-05-27T22:58:41.327Z",
+        "atApprovedLocation": null,
+        "notes": {
+            "contentType": "text",
+            "content": "clock in notes"
+        }
+    },
+    "breaks": [],
+    "originalEntry": {
+        "clockOutEvent": null,
+        "clockInEvent": {
+            "dateTime": "2021-05-27T22:58:41.327Z",
+            "atApprovedLocation": null,
+            "notes": {
+                "contentType": "text",
+                "content": "clock in notes"
+            }
+        },
+        "breaks": []
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
+            "displayName": "Jing Jing GuTwo"
+        }
+    }
 }
 ```
 
