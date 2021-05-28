@@ -97,7 +97,7 @@ The following table summarizes the `$filter` operators support, as properties of
 | givenName                     |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
 | infoCatalogs                  |   ⚪   |   ⚫   |   ⚪   |       |       |     ⚪      |          |            |
 | jobTitle                      |   ⚪   |   ⚫   |   ⚪   |       |   ⚪   |     ⚪      |          |     ⚪      |
-| mail                          |   ⚪   |   ⚫   |   ⚪   |       |   ⚪   |     ⚪      |    ⚪     |     ⚪      |
+| mail                          |   ⚪   |   ⚫   |   ⚪   |       |   ⚪   |     ⚪      |    ⚫     |     ⚪      |
 | mailNickname                  |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
 | onPremisesExtensionAttributes |   ⚫   |   ⚫   |   ⚫   |   ⚫   |   ⚫   |            |          |            |
 | onPremisesSamAccountName      |   ⚫   |   ⚫   |   ⚫   |   ⚫   |   ⚫   |     ⚫      |          |            |
@@ -109,7 +109,7 @@ The following table summarizes the `$filter` operators support, as properties of
 | streetAddress                 |   ⚫   |   ⚫   |   ⚫   |   ⚫   |   ⚫   |     ⚫      |          |     ⚫      |
 | surname                       |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
 | usageLocation                 |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |          |     ⚪      |
-| userPrincipalName             |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |    ⚪     |            |
+| userPrincipalName             |   ⚪   |   ⚫   |   ⚪   |   ⚪   |   ⚪   |     ⚪      |    ⚫     |            |
 | userType                      |   ⚪   |   ⚫   |       |       |   ⚪   |            |          |     ⚪      |
 
 ## Error handling for advanced queries on directory objects
