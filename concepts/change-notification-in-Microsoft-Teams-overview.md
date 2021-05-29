@@ -15,8 +15,8 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 ## Change notification types
 Teams' resource supports two type of change notification
-- **Change notification to track all changes related to a resource across tenant** e.g. one can subscribe to change in messages in any channel across tenant and get notified whenever a message is created in any channel in tenant.
-- **Change notification to track all changes for a specific respource**  e.g. one can subscribe to change in messages in a particular channel and get notified when ever a message is created in that channel.
+- **Change notification to track all changes related to a resource across tenant** for example one can subscribe to change in messages in any channel across tenant and get notified whenever a message is created in any channel in tenant.
+- **Change notification to track all changes for a specific respource**  for example one can subscribe to change in messages in a particular channel and get notified when ever a message is created in that channel.
 
 Check [Microsoft Graph change notifications](webhooks.md) to see what resources support what type of change notification.
  
@@ -100,7 +100,7 @@ The decrypted notification payload looks like the following. For above example d
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the resource. Subscriptions for notifications without resource data do not require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data gives you enough information to make GET calls to get the resource. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
 
 The payload looks like the following. This payload is for a message sent in a channel.
 
@@ -119,7 +119,7 @@ The payload looks like the following. This payload is for a message sent in a ch
   }
 }
 ```
-Above example shows notification corresponding to chat message resource, in actual notification resource and resource data filed will represent the resource which has trigerred the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource. 
+Above example shows notification corresponding to chat message resource, in actual notification resource and resourceData filed will represent the resource which has trigerred the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource. 
 
 > **Note** GET calls will always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation will return the updated resource.
 

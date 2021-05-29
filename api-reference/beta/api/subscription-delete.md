@@ -44,8 +44,8 @@ Depending on the resource and the permission type (delegated or application) req
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-|[teams](../resources/team.md) (/teams – all teams in an organization) | Team.ReadBasic.All,TeamSettings.Read.All | Not supported | Team.ReadBasic.All,TeamSettings.Read.All |
-|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic,TeamSettings.Read | Not supported | Team.ReadBasic.All,TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams – all teams in an organization) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic, TeamSettings.Read | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).

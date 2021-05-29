@@ -4,29 +4,29 @@
     {
       "ChangeList": [
         {
-          "Id": "88b84275-63bb-48ef-97a2-5ce98b984bf1",
+          "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
           "ApiChange": "Resource",
           "ChangedApiName": "channel",
           "ChangeType": "Addition",
-          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/en-us/graph/api/resources/subscription) for change notifications to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel).",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel).",
           "Target": "channel"
         },
 			
 			 {
-          "Id": "300c4e34-43fd-435a-a3fd-ef744302cd65",
+          "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
           "ApiChange": "Resource",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
-          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/en-us/graph/api/resources/subscription) for change notifications to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team).",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team).",
           "Target": "team"
         },
 			
 			 {
-          "Id": "55906116-5e73-4252-a6e9-49ced6556d7b",
+          "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
           "ApiChange": "Resource",
           "ChangedApiName": "conversationMember",
           "ChangeType": "Addition",
-          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/en-us/graph/api/resources/subscription) for change notifications to the [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationMember).",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationMember).",
           "Target": "team"
         }   
       ],
