@@ -14,21 +14,23 @@ For data sources that rely on Azure Active Directory users and groups, you set p
 
 However, for data sources that use non-Azure Active Directory groups (non-Azure AD groups), or group-like constructs, like Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, Confluence local groups etc., we recommended that you use **external groups**, a new feature of Microsoft Graph connectors.
 
-The following are common non-Azure Active Directory application-specific group examples.
+## Common scenarios
 
 1. Microsoft Dynamics 365 allows customers to structure their CRMs with business units and teams. The membership information for these business units and teams is not stored in Azure Active Directory.
+
+    The following is an example of business units and teams in Dynamics 365:
 
 <!---Using json to adjust the size of the image --->
 <br><img src="images/connectors-images/bu-teams-D365.png" alt="Example of Business Units and Teams in Dynamics 365" style="width:400px;"/>
 
-*Business Units & Teams in Dynamics 365*
+
 
 2. Salesforce uses profiles, roles, and permission sets for authorization. These are specific to Salesforce, and the membership information is not available in Azure Active Directory.
 
+    The following is an example of roles in Salesforce:
+
 <!---Using json to adjust the size of the image --->
 <br><img src="images/connectors-images/roles-salesforce.png" alt="Example of Roles in Salesforce" style="width:400px;"/>
-
-*Roles in Salesforce*
 
 ## Using external groups
 
