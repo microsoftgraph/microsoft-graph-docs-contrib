@@ -20,7 +20,7 @@ To get change notifications for any change in team's property across tenant or c
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic.All,TeamSettings.Read.All   | beta|
+|Application | Team.ReadBasic.All, TeamSettings.Read.All   | beta|
 
 #### Example
 
