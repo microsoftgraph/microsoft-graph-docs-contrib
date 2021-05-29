@@ -13,7 +13,7 @@ The sample creates a Windows desktop app that acquires a token from the Microsof
 
 ## Prerequisites
 
-* Install Visual Studio 2019 with [.NET Core 3.1 SDK](https://www.microsoft.com/net/download/core) on your development computer.
+* Install [Visual Studio 2019](https://visualstudio.microsoft.com/) with [.NET Core 3.1 SDK](https://www.microsoft.com/net/download/core) on your development computer.
 * Make sure that you have a [personal Microsoft account](https://signup.live.com/), or a work or school account.
 * Install the [Entity Framework Core Tools](/ef/core/miscellaneous/cli/dotnet) as a global tool using the following command:
 
@@ -22,4 +22,7 @@ The sample creates a Windows desktop app that acquires a token from the Microsof
     ```
 
 * Install a tool to update a SQLite database. For example, the [DB Browser for SQLite](https://sqlitebrowser.org/).
-* Download the **ApplianceParts.csv** file from the [Search connector sample repo](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv) and add it to the PartsInventoryConnector.csproj.
+* Download the **ApplianceParts.csv** file from the [Search connector sample repo](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv).
+
+> [!TIP]
+> The best way to download from GitHub is to navigate to the top level of the project. A green **Code** download button will be visible on the right, choose the **Download ZIP** option from the Code pull-down menu. That ZIP file will contain the entire repository content, including the area you wanted.
