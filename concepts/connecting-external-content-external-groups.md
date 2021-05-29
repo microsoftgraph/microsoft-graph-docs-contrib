@@ -10,7 +10,7 @@ ms.prod: search
 
 [External groups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) allow you to manage permissions to view [external items](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in a Microsoft Graph connection, and connect to data sources outside Azure Active Directory groups.
 
-For data sources that rely on Azure Active Directory users and groups, you set permissions on external items by associating the access control list (ACL) with an Azure Active Directory user and group ID, when creating or updating the external items. For example see: [Create a custom item](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true).
+For data sources that rely on Azure Active Directory users and groups, you set permissions on external items by associating an access control list (ACL) with an Azure Active Directory user and group ID, when creating or updating the external items. For example see: [Create a custom item](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true).
 
 However, for data sources that use non-Azure Active Directory groups (non-Azure AD groups), or group-like constructs, like Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, Confluence local groups etc., we recommended that you use **external groups**, a new feature of Microsoft Graph connectors.
 
@@ -27,7 +27,7 @@ However, for data sources that use non-Azure Active Directory groups (non-Azure 
 
 2. Salesforce uses profiles, roles, and permission sets for authorization. These are specific to Salesforce, and the membership information is not available in Azure Active Directory.
 
-    The following is an example of profiles and roles in Salesforce:
+    The following is an example of roles in Salesforce:
 
 <!---Using html to adjust the size of the image --->
 <br><p align="center"><img src="images/connectors-images/roles-salesforce.png" alt="Diagram of an structure of roles in Salesforce. The role of vicepresident of sales is at the top level of the hierarchy, it has three subordinates, namely, the head of sales operations, the head of sales, and the head of account managament. The head of sales at the same time has a sales operations manager as subordinate. And the head of sales has a sales development manager as subordinate." style="width:400px;"/></p>
@@ -43,7 +43,7 @@ To use external groups in your connections:
 ### Create external groups
 
 External groups belong to a connection. To create external groups in your connections:
-* For each non-Azure AD group, that is specific to an application, create an external group using the Group API in Microsoft Graph as shown below.
+* Use the Group API in Microsoft Graph as shown in the code below.
 
 * Provide either an identifier or a name in the [ID](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) field. Use this value to call the external group in subsequent requests.
 
@@ -58,7 +58,7 @@ POST /connections/{connectionId}/groups
 {  
   "id": "contosoEscalations",  
   "displayName": "Contoso Escalations",  
-  "description": "Tier-1 escalations within Contoso"  
+  "description": "Tier-1 escalations within Contoso"
 }  
 ```
 
@@ -137,7 +137,7 @@ Content-type: application/json 
 ```
 
 > [!NOTE]
-> You can use external groups in the ACL even before the groups are created.
+> You can use external groups in ACL even before the groups are created.
 
 ### Keep external group memberships in sync
 
