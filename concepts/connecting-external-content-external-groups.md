@@ -34,7 +34,7 @@ The following are common non-Azure Active Directory application-specific group e
 
 To use external groups in your connections:
 
-1. For each non-Azure AD group, create an external group in Microsoft Graph using the [Group API](/en-us/graph/api/resources/group?view=graph-rest-beta).
+1. For each non-Azure AD group, create an external group in Microsoft Graph using the [Group API](/en-us/graph/api/resources/group?view=graph-rest-beta&preserve-view=true).
 2. Use the external group when defining the ACL for your external items as necessary.  
 3. Keep the membership of the external groups up to date and in sync.
 
@@ -43,7 +43,7 @@ To use external groups in your connections:
 External groups belong to a connection. To create external groups in your connections:
 * For each non-Azure AD group, that is specific to an application, create an external group using the Group API in Microsoft Graph as shown below.
 
-* Provide either an identifier or a name in the [ID](/graph/api/resources/externalgroup?view=graph-rest-beta#properties) field. Use this value to call the external group in subsequent requests.
+* Provide either an identifier or a name in the [ID](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) field. Use this value to call the external group in subsequent requests.
 
     > [!NOTE]
     > The ID field allows to use URL and FileName Safe Base 64 Character Set, and it has a limit of 128-character.
