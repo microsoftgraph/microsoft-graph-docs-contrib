@@ -2896,7 +2896,24 @@
       "CreatedDateTime": "2017-10-01T00:00:00",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "befcbd7b-e07d-400f-96dd-f5323cbc2135",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "permissionGrants",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrants** relationship to [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "befcbd7b-e07d-400f-96dd-f5323cbc2135",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-25T18:06:46.246897Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
-
   ]
 }
