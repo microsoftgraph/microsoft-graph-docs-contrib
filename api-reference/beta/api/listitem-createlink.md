@@ -52,9 +52,9 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|type|String|Optional.The password of the sharing link that is set by the creator.|
+|type|String|Optional.Optional.The type of sharing link to create. |
 |scope|String|Optional. The scope of link to create. Either anonymous, organization or users.|
-|expirationDateTime|DateTimeOffset|A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.|
+|expirationDateTime|DateTimeOffset|Optional. A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.|
 |password|String|Optional.The password of the sharing link that is set by the creator.|
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
 
@@ -71,7 +71,7 @@ The following values are allowed for the **type** parameter.
 | blocksDownload | Creates a read-only link that blocks download to the Item. This option is only available for files in OneDrive for Business and SharePoint.  |
 | createOnly     | Creates an upload-only link to the Item. This option is only available for folders in OneDrive for Business and SharePoint.             |
 | addressBar     | Gets the admin-allowed address bar link to the Item. Only available in OneDrive for Business and SharePoint. The organization admin configures whether this link type is supported, and what features are supported by this link type. |
-| adminDefault   | Creates the admin-allowed default link to the ListItem. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
+| adminDefault   | Creates the default link to the listItem as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
 
 ### Scope types
 
@@ -91,10 +91,11 @@ The response will be `201 Created` if a new sharing link is created for the item
 
 ## Examples
 
+### Create a link to share a drive item
 The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.
 The sharing link is configured to be read-only and usable by anyone with the link.
 
-### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "listitem_createlink"
@@ -118,7 +119,7 @@ Content-length: 212
 }
 ```
 
-### Response
+#### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -146,13 +147,13 @@ Content-Type: application/json
 }
 ```
 
-## Creating company sharable links
+### Creating company sharable links
 
 OneDrive for Business and SharePoint support company sharable links.
 These are similar to anonymous links, except they only work for members of the owning organization.
 To create a company sharable link, use the **scope** parameter with a value of `organization`.
 
-### Request
+#### Request
 
 ```http
 POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
@@ -164,7 +165,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -187,14 +188,14 @@ Content-Type: application/json
 }
 ```
 
-## Creating embeddable links
+### Creating embeddable links
 
 When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
 When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
 
 **Note:** Embed links are only supported for OneDrive personal.
 
-### Request
+#### Request
 
 ```http
 POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
@@ -205,7 +206,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
