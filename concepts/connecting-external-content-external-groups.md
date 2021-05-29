@@ -21,7 +21,7 @@ However, for data sources that use non-Azure Active Directory groups (non-Azure 
     The following is an example of business units and teams in Dynamics 365:
 
 <!---Using html to adjust the size of the image --->
-<br><img src="images/connectors-images/bu-teams-D365.png" alt=" Diagram of an structure in Dynamics 365. A business unit has a team and a manager under it. This manager has other users." style="width:400px;"/>
+<br><p align="center"><img src="images/connectors-images/bu-teams-D365.png" alt=" Diagram of an structure in Dynamics 365. A business unit has a team and a manager under it. This manager has other users." style="width:400px;"/></p>
 
 
 
@@ -30,7 +30,7 @@ However, for data sources that use non-Azure Active Directory groups (non-Azure 
     The following is an example of roles in Salesforce:
 
 <!---Using html to adjust the size of the image --->
-<br><img src="images/connectors-images/roles-salesforce.png" alt="Example of Roles in Salesforce" style="width:400px;"/>
+<br><p align="center"><img src="images/connectors-images/roles-salesforce.png" alt="Example of Roles in Salesforce" style="width:400px;"/></p>
 
 ## Using external groups
 
