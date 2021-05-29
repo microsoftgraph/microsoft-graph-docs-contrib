@@ -10,7 +10,7 @@ ms.prod: search
 
 [External groups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) allow you to manage permissions to view [external items](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in a Microsoft Graph connection, and connect to data sources outside Azure Active Directory groups.
 
-For data sources that rely on Azure Active Directory users and groups, you set permissions on external items by associating the access control list (ACL) with an Azure Active Directory user and group ID when creating or updating the external items, for example see: [Create a custom item](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true).
+For data sources that rely on Azure Active Directory users and groups, you set permissions on external items by associating the access control list (ACL) with an Azure Active Directory user and group ID, when creating or updating the external items. For example see: [Create a custom item](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true).
 
 However, for data sources that use non-Azure Active Directory groups (non-Azure AD groups), or group-like constructs, like Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, Confluence local groups etc., we recommended that you use **external groups**, a new feature of Microsoft Graph connectors.
 
@@ -63,8 +63,8 @@ POST /connections/{connectionId}/groups
 ```
 
 An external group can contain one or more of the following:
-* An Azure Active Directory user
-* An Azure Active Directory group
+* An Azure Active Directory user.
+* An Azure Active Directory group.
 * Another external group, including nested external groups.
 
 After you create the group, you can add members to the group as in the examples shown below.
@@ -94,7 +94,7 @@ POST /connections/{connectionId}/groups/{groupId}/members
 }
 ```
 
-### Use external groups in the ACL
+### Use external groups in ACL
 
 You can use external groups when defining [ACL](connecting-external-content-manage-items.md#access-control-list) for external items. In addition to Azure Active Directory users and groups, an external item can have external groups in its access control entries.
 
