@@ -21,16 +21,16 @@ However, for data sources that use non-Azure Active Directory groups (non-Azure 
     The following is an example of business units and teams in Dynamics 365:
 
 <!---Using html to adjust the size of the image --->
-<br><p align="center"><img src="images/connectors-images/bu-teams-D365.png" alt=" Diagram of an structure in Dynamics 365. A business unit has a team and a manager under it. This manager has other users." style="width:400px;"/></p>
+<br><p align="center"><img src="images/connectors-images/bu-teams-D365.png" alt="Diagram of an structure in Dynamics 365. A business unit has a team and a manager under it. This manager has other users." style="width:400px;"/></p>
 
 
 
 2. Salesforce uses profiles, roles, and permission sets for authorization. These are specific to Salesforce, and the membership information is not available in Azure Active Directory.
 
-    The following is an example of roles in Salesforce:
+    The following is an example of profiles and roles in Salesforce:
 
 <!---Using html to adjust the size of the image --->
-<br><p align="center"><img src="images/connectors-images/roles-salesforce.png" alt="Example of Roles in Salesforce" style="width:400px;"/></p>
+<br><p align="center"><img src="images/connectors-images/roles-salesforce.png" alt="Diagram of an structure of roles in Salesforce. The role of vicepresident of sales is at the top level of the hierarchy, it has three subordinates, namely, the head of sales operations, the head of sales, and the head of account managament. The head of sales at the same time has a sales operations manager as subordinate. And the head of sales has a sales development manager as subordinate." style="width:400px;"/></p>
 
 ## Using external groups
 
