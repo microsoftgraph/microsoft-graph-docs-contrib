@@ -28,7 +28,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 |Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Cloud PC | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
+| Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Not supported. | CloudPC.Read.All, CloudPC.ReadWrite.All |
 | Device management | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Directory | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Not supported.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 

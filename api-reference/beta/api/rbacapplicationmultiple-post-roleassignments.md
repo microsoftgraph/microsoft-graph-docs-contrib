@@ -29,7 +29,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 |Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Cloud PC | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All | Not supported. | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All |
+| Cloud PC | CloudPC.ReadWrite.All | Not supported. | CloudPC.ReadWrite.All |
 | Intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
 
 ## HTTP request
