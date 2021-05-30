@@ -416,7 +416,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {
-        private MicrosoftGraphServiceClient _microsoftGraphClient;
+        private class MicrosoftGraphServiceClient _microsoftGraphClient;
 
         public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
@@ -589,7 +589,7 @@ namespace PartsInventoryConnector
 
 ## Create the connection
 
-1. Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
+1. Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
 
 ```c
 #region Connections
@@ -639,7 +639,7 @@ private static async Task CreateConnectionAsync()
 
 ## Register schema
 
-1. Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
+1. Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
 
 ```c
 #region Schema
