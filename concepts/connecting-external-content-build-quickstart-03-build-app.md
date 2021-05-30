@@ -10,6 +10,9 @@ In this step, you'll create a .NET Core console app. After that you will create 
 
 ![Screenshot of the "Configure your new project" section](images/connectors-images/build7.png)
 
+> [!IMPORTANT]
+> Before moving to the next step, copy the ApplianceParts.csv file to the root folder of the project.
+
 ## Add NuGet packages
 
 To add NuGet packages, first right-click **Project Solution** and select **Open in Terminal**.
@@ -28,11 +31,12 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
 
 > [!TIP]
-> If the `add package` command fails, check the **Package Source** of your project.
+> If the `add package` command fails, check the **Package Source** of your project, as suggested here:
 > 1. Select the project in the Solution Explorer
 > 2. Go to Tools > Nuget Package Manager > Package Manager Settings
 > 3. Check the Package Sources, and make sure nuget.&#65279;org is installed as package source, as shown next:
->     * Name: nuget.&#65279;org ( or as you wish) Source: https&#65279;://api.nuget.org/v3/index.json
+>     * Name: nuget.&#65279;org
+>     *  Source: https&#65279;://api.nuget.org/v3/index.json
 
 <!---Used "&#65279;" to prevent auto-generated links --->
 
