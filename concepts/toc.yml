@@ -350,8 +350,10 @@ items:
             href: people-example.md
           - name: Customize the profile card (preview)
             href: add-properties-profilecard.md
-          - name: Customize insights privacy (preview)
+          - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
+          - name: Item insights overview
+            href: item-insights-overview.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
         items:
