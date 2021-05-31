@@ -1,9 +1,9 @@
 ---
 title: "List softwareOathAuthenticationMethods"
-description: "Get a list of the softwareOathAuthenticationMethod objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Retrieve a list of a user's softwareOathAuthenticationMethods objects and their properties."
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) objects and their properties.
+Retrieve a list of a user's [Software OATH authentication method](../resources/softwareoathauthenticationmethod.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type|Permissions acting on self (from least to most privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application                            | Not applicable. | UserAuthenticationMethod.ReadWrite.All |
+
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -30,7 +36,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/authentication/softwareOathMethods
+GET /me/authentication/softwareOathAuthenticationMethods
+GET /users/{id | userPrincipalName}/authentication/softwareOathAuthenticationMethods
 ```
 
 ## Optional query parameters
@@ -57,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/authentication/softwareOathMethods
+GET https://graph.microsoft.com/beta/me/authentication/softwareOathMethods
 ```
 
 
@@ -66,7 +73,7 @@ GET https://graph.microsoft.com/beta/user/authentication/softwareOathMethods
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.strongAuthentication.softwareOathAuthenticationMethod)"
+  "@odata.type": "Collection(microsoft.graph.softwareOathAuthenticationMethod)"
 }
 -->
 ``` http
@@ -76,7 +83,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.strongAuthentication.softwareOathAuthenticationMethod",
+      "@odata.type": "#microsoft.graph.softwareOathAuthenticationMethod",
       "id": "b172893e-893e-b172-3e89-72b13e8972b1",
       "secretKey": "String"
     }

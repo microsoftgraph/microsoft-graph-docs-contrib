@@ -1,9 +1,9 @@
 ---
 title: "softwareOathAuthenticationMethod resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A representation of a Software OATH token registered to a user. Software OATH is a multi-factor authentication method."
+author: "mmcla"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,28 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
-Inherits from [authenticationMethod](../resources/authenticationmethod.md).
+A representation of a Software OATH token registered to a user. Software OATH is a multi-factor authentication method.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List softwareOathAuthenticationMethods](../api/softwareoathauthenticationmethod-list.md)|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) collection|Get a list of the [softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) objects and their properties.|
-|[Create softwareOathAuthenticationMethod](../api/softwareoathauthenticationmethod-create.md)|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md)|Create a new [softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) object.|
-|[Get softwareOathAuthenticationMethod](../api/softwareoathauthenticationmethod-get.md)|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md)|Read the properties and relationships of a [softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) object.|
-|[Update softwareOathAuthenticationMethod](../api/softwareoathauthenticationmethod-update.md)|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md)|Update the properties of a [softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) object.|
-|[Delete softwareOathAuthenticationMethod](../api/softwareoathauthenticationmethod-delete.md)|None|Deletes a [softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) object.|
-|[enableSmsSignIn](../api/softwareoathauthenticationmethod-enablesmssignin.md)|None|**TODO: Add Description**|
-|[disableSmsSignIn](../api/softwareoathauthenticationmethod-disablesmssignin.md)|None|**TODO: Add Description**|
-|[resetPassword](../api/softwareoathauthenticationmethod-resetpassword.md)|[passwordResetResponse](../resources/passwordresetresponse.md)|**TODO: Add Description**|
+|[List](../api/softwareoathauthenticationmethod-list.md)|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) collection|Retrieve a list of a user's softwareOathAuthenticationMethod objects and their properties.|
+|[Get](../api/softwareoathauthenticationmethod-get.md)|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md)|Read the properties of a user's softwareOathAuthenticationMethod object.|
+|[Delete](../api/softwareoathauthenticationmethod-delete.md)|None|Delete a user's softwareOathAuthenticationMethod object.|
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
-|secretKey|String|**TODO: Add Description**|
+|id|String|The authentication method identifier.|
+|secretKey|String|The secret key of the method. Always returns null.|
 
 ## Relationships
 None.
@@ -45,7 +38,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.softwareOathAuthenticationMethod",
-  "baseType": "microsoft.strongAuthentication.authenticationMethod",
+  "baseType": "microsoft.graph.authenticationMethod",
   "openType": false
 }
 -->
