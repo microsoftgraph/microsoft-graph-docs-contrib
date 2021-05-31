@@ -747,12 +747,15 @@ items:
             href: api/application-removekey.md
         - name: Extensions
           items:
-          - name: List
-            href: api/application-list-extensionproperty.md
-          - name: Create
-            href: api/application-post-extensionproperty.md
-          - name: Delete
-            href: api/application-delete-extensionproperty.md
+          - name: Extension property
+            href: resources/extensionproperty.md
+            items:
+            - name: List
+              href: api/application-list-extensionproperty.md
+            - name: Create
+              href: api/application-post-extensionproperty.md
+            - name: Delete
+              href: api/application-delete-extensionproperty.md
         - name: Owners
           items:
           - name: List
