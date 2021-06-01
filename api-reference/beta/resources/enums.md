@@ -1587,6 +1587,15 @@ Possible values for user account types (group membership), per Windows definitio
 |hidden|
 |unknownFutureValue|
 
+### advancedConfigState values 
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### referenceAttachmentPermission values
 
 |Member|
@@ -2162,6 +2171,14 @@ Possible values for user account types (group membership), per Windows definitio
 |other|
 |unknownFutureValue|
 
+### policyScope values
+
+|Member|
+|:---|
+|none|
+|all|
+|selected|
+
 ### teamsAppInstallationScope values
 
 |Member    |Value    |Description |
@@ -2215,4 +2232,3 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |principal|
 |unknownFutureValue|
-
