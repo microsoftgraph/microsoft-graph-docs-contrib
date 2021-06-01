@@ -1595,6 +1595,15 @@ Possible values for user account types (group membership), per Windows definitio
 |hidden|
 |unknownFutureValue|
 
+### advancedConfigState values 
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### referenceAttachmentPermission values
 
 |Member|
