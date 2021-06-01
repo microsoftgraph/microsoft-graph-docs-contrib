@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission.
+
 Note that files must be located in this folder in order to be added as resources. Only a student in the class can determine what files to upload in a given submission-level resource folder. 
 
 ## Permissions
@@ -29,20 +30,22 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFolder
-
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Authorization  | Bearer `{token}`. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Provide an empty json `{}` as request body for this method.
+
 ## Response
 If successful, this method returns a `200 Ok` response code. The body will contain the submission model.
 
 ## Example
 The following example shows how to call this API.
+
 ### Request
 The following is an example of a request.
 
@@ -52,9 +55,12 @@ The following is an example of a request.
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/submissions/20302/setUpResourcesFolder
+Content-type: application/json
+
+{
+}
 ```
 ---
-
 
 ### Response
 The following is an example of a response. 
