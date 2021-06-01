@@ -169,7 +169,7 @@ For notifications with resource data, the payload looks for any change in team's
 
 The decrypted notification payload looks like the following. The payload conforms to the [teams](/graph/api/resources/teams?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
->**Note:** [discoverySettings](https://docs.microsoft.com/en-us/graph/api/resources/teamdiscoverysettings?view=graph-rest-beta)  and [classSettings](https://docs.microsoft.com/en-us/graph/api/resources/teamclasssettings?view=graph-rest-beta) are not exposed in payload data.
+>**Note:** [discoverySettings](/graph/api/resources/teamdiscoverysettings)  and [classSettings](/graph/api/resources/teamclasssettings) are not exposed in payload data.
 
 ```json
 {
@@ -215,7 +215,6 @@ The decrypted notification payload looks like the following. The payload conform
 For notifications with resource data, the payload looks for any change in channel's property looks like the following.
 
 ```json
-
 {
     "value": [{
         "subscriptionId": "10493aa0-4d29-4df5-bc0c-ef742cc6cd7f",
@@ -260,7 +259,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Notifications without resource data gives you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
 
 For notifications with resource data, the payload  for any change in teams's property looks like the following.
 

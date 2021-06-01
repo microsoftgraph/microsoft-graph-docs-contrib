@@ -18,7 +18,7 @@ To get change notifications for membership change in a particular team, subscrib
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | TeamMember.Read. | Not supported. |
+|Delegated (work or school account) | TeamMember.Read | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | TeamMember.Read   | beta |
 
@@ -47,7 +47,6 @@ Content-Type: application/json
 For notifications with resource data, the payload looks like the following. This payload is for a membership change in a team.
 
 ```json
-
 {
     "value": [{
         "subscriptionId": "10493aa0-4d29-4df5-bc0c-ef742cc6cd7f",
@@ -90,12 +89,11 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Notifications without resource data gives you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
 
 For notifications without resource data, the payload  for any change in team's membership looks like the following.
 
 ```json
-
  {
   "subscriptionId": "9f9d1ed0-c9cc-42e7-8d80-a7fc4b0cda3c",
   "changeType": "created",

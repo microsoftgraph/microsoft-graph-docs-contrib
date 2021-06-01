@@ -16,7 +16,7 @@ Change notifications enable you to subscribe to changes (create, update, and del
 ## Change notification types
 Teams' resource supports two types of change notification
 - **Change notification to track all changes related to a resource across tenant**, for example one can subscribe to change in messages in any channel across tenant and get notified whenever a message is created in any channel in tenant.
-- **Change notification to track all changes for a specific resource**,  for example one can subscribe to change in messages in a particular channel and get notified when ever a message is created in that channel.
+- **Change notification to track all changes for a specific resource**,  for example one can subscribe to change in messages in a particular channel and get notified whenever a message is created in that channel.
 
 Check [Microsoft Graph change notifications](webhooks.md) to see what resources support what type of change notification.
  
@@ -100,7 +100,7 @@ The decrypted notification payload looks like the following. For above example d
 
 ### Notifications without resource data
 
-Notifications without resource data gives you enough information to make GET calls to get the resource. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the resource. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
 
 The payload looks like the following. This payload is for a message sent in a channel.
 
