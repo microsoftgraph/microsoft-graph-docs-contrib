@@ -509,6 +509,24 @@
             "CreatedDateTime": "2021-06-18T19:40:43.984Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Governance"
-          }
+          },
+          {
+            "ChangeList": [
+                {
+                    "Id": "48e9d736-c31d-11eb-995f-5903f88189f5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "recommendationLookBackDuration",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **recommendationLookBackDuration** property to the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewScheduleSettings"
+                }
+            ],
+            "Id": "48e7726c-c31d-11eb-995f-5903f88189f5",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-01T21:06:50.952Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Identity governance"
+        }
     ]
 }
