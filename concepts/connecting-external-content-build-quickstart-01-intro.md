@@ -25,4 +25,4 @@ The sample creates a Windows desktop app that acquires a token from the Microsof
 * Download the **ApplianceParts.csv** file from the [Search connector sample repo](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv).
 
 > [!TIP]
-> The best way to download from GitHub is to navigate to the top level of the project. A green **Code** download button will be visible on the right, choose the **Download ZIP** option from the Code pull-down menu. That ZIP file will contain the entire repository content, including the area you wanted.
+> The best way to download files from GitHub is to go to the top level of the project. From the green **Code** download button on the right, choose **Download ZIP**. The ZIP file will contain the contents of the repository.
