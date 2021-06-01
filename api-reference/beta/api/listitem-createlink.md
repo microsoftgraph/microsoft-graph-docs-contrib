@@ -70,7 +70,7 @@ The following values are allowed for the **type** parameter.
 | embed          | Creates an embeddable link to the Item.                                                                      |
 | blocksDownload | Creates a read-only link that blocks download to the Item. This option is only available for files in OneDrive for Business and SharePoint.  |
 | createOnly     | Creates an upload-only link to the Item. This option is only available for folders in OneDrive for Business and SharePoint.             |
-| addressBar     | Gets the admin-allowed address bar link to the Item. Only available in OneDrive for Business and SharePoint. The organization admin configures whether this link type is supported, and what features are supported by this link type. |
+| addressBar     | Creates the default link that is shown in the browser address bars for newly created files. Only available in OneDrive for Business and SharePoint. The organization admin configures whether this link type is supported, and what features are supported by this link type. |
 | adminDefault   | Creates the default link to the listItem as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
 
 ### Scope types
