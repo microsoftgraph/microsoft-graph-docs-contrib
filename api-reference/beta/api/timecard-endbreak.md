@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |atApprovedLocation| `Edm.boolean ` | Indicate if this action happens at an approved location.|
-|notes| [itemBody](itembody.md)  |Notes during end of break.|
+|notes| [itemBody](../resources/itembody.md)  |Notes during end of break.|
 
 ## Response
 
