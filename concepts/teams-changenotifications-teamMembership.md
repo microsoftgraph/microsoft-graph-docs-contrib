@@ -18,9 +18,9 @@ To get change notifications for membership change in a particular team, subscrib
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | TeamMember.Read | Not supported. |
+|Delegated (work or school account) | TeamMember.Read.All | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | TeamMember.Read   | beta |
+|Application | TeamMember.Read.All   | beta |
 
 #### Example
 

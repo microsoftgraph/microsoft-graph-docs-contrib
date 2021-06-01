@@ -49,9 +49,9 @@ To get change notifications for any change in teams' property of a specific team
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Team.ReadBasic, TeamSettings.Read | Not supported. |
+|Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic, TeamSettings.Read    | beta |
+|Application | Team.ReadBasic.All, TeamSettings.Read.All    | beta |
 
 #### Example
 
@@ -113,7 +113,7 @@ To get change notifications for any change in channel's property across any chan
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Channel.ReadBasic, ChannelSettings.Read | Not supported. |
+|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | Channel.ReadBasic, ChannelSettings.Read   | beta |
 
@@ -167,9 +167,9 @@ For notifications with resource data, the payload looks for any change in team's
 
 
 
-The decrypted notification payload looks like the following. The payload conforms to the [teams](/graph/api/resources/teams?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [teams](/graph/api/resources/team?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
->**Note:** [discoverySettings](/graph/api/resources/teamdiscoverysettings)  and [classSettings](/graph/api/resources/teamclasssettings) are not exposed in payload data.
+>**Note:** [discoverySettings](/graph/api/resources/teamdiscoverysettings?preserve-view=true)  and [classSettings](/graph/api/resources/teamclasssettings?preserve-view=true) are not exposed in payload data.
 
 ```json
 {

@@ -504,7 +504,7 @@ items:
                   - name: Change notifications for chat and channel messages
                     href: teams-changenotifications-chatmessage.md
                   - name: Change notifications for team and channel
-                    href: teams-changenotifications-team-and-channels.md
+                    href: teams-changenotifications-team-and-channel.md
                   - name: Change notifications for team membership
                     href: teams-changenotifications-teamMembership.md
           - name: Change tracking
