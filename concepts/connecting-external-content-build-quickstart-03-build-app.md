@@ -31,10 +31,10 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
 
 > [!TIP]
-> If the `add package` command fails, check the **Package Source** of your project, as suggested here:
-> 1. Select the project in the Solution Explorer
-> 2. Go to Tools > Nuget Package Manager > Package Manager Settings
-> 3. Check the Package Sources, and make sure nuget.&#65279;org is installed as package source, as shown next:
+> If the `add package` command fails, check the **Package Source** of your project:
+> 1. Select the project in the Solution Explorer.
+> 2. Go to Tools > Nuget Package Manager > Package Manager Settings.
+> 3. Check the Package Sources, and make sure nuget.&#65279;org is installed as package source.
 >     * Name: nuget.&#65279;org
 >     *  Source: https&#65279;://api.nuget.org/v3/index.json
 
