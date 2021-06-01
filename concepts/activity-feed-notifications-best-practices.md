@@ -8,7 +8,7 @@ ms.prod: "teamwork"
 
 # Best practices for using Microsoft Teams activity feed notifications
 
-This article covers best practices to help you build experiences using Microsoft Teams activity feed notifications in Microsoft Graph. These best practices help you to create notifications as per the scenario, such as notifications for first run experience, request for response or action, or external event notifications. You can also [Send activity feed notifications](teams-send-activityfeednotifications.md) to users in Microsoft Teams and [Designing your Microsoft Teams app](/platform/concepts/design/design-teams-app-overview)
+This article covers best practices to help you build experiences using Microsoft Teams activity feed notifications in Microsoft Graph. These best practices help you to create notifications as per the scenario, such as notifications for first run experience, request for response or action, or external event notifications. You can also [Send activity feed notifications](teams-send-activityfeednotifications.md) to users in Microsoft Teams and [Designing your Microsoft Teams app](/platform/concepts/design/design-teams-app-overview).
 
 ## General best practices
 
@@ -42,8 +42,8 @@ The following list provides the recomended actions:
   * Use short titles, such as **@mention** and **Announcements**.
   * Do not use long titles, such as **User at-mentioned activity** and **Post creation activity**
 * Avoid sending notifications that are promotional in nature unless required. The notification must convey something important that the user must be aware about. The following list provides an example of important and promotional messages:
- * Important message: Lynne mentioned you in a conversation.
- * Promotional message: Try the new feature in the Cycling app!
+  * Important message: Lynne mentioned you in a conversation.
+  * Promotional message: Try the new feature in the Cycling app!
 
 * Notify the user that the notifications are stored in the activity feed for 30 days. 
 
@@ -56,8 +56,8 @@ Simplify the user's notification experience by sending only important informatio
 
 * Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications. The following list provides examples of relevant and irrelevant messages:
 
- * Relevant message: Diego assigned a sales ticket to you.
- * Irrelevant message: Joni left the sales team. *This notification may be noisy unless this is materially important.*
+  * Relevant message: Diego assigned a sales ticket to you.
+  * Irrelevant message: Joni left the sales team. *This notification may be noisy unless this is materially important.*
 * Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [characteristics of activity feed notifications and bot framework messages](#characteristics-of-activity-feed-notifications-and-bot-framework-messages).
 * Use the third-lines in previews and provide information to determine importance and take action. Use the **Text Preview section** in notifications. Provide information to determine importance and take action.
 * Do not add a *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
@@ -81,6 +81,6 @@ You can update an existing activity feed notification instead of creating a new 
 # [Bot framework messages ](#tab/botframeworkmessages)
 
  Bot messages are delivered as chat or channel messages. If the users' notifications for chat or channel are turned on, they trigger notifications as chat or channel notifications.
- 
+
 * *@mention* the name of the user for the notification to appear in the activity feed.
 * It is useful if the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members.
