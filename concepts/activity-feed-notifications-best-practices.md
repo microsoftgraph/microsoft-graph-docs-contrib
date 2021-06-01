@@ -57,9 +57,9 @@ Simplify the user's notification experience by sending only important informatio
 * Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications. The following list provides examples of relevant and irrelevant messages:
 
  * Relevant message: Diego assigned a sales ticket to you.
- * Irrelevant message: Joni left the sales team. *This notification may be noisy unless this is materially important.
-* Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [difference between bot framework messages and activity feed notifications](#difference-between-bot-framework-messages-and-activity-feed-notifications).
-* Use the third-lines in previews and provide information to determine importance and take action.Use the **Text Preview section** in notifications. Provide information to determine importance and take action.
+ * Irrelevant message: Joni left the sales team. *This notification may be noisy unless this is materially important.*
+* Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [characteristics of activity feed notifications and bot framework messages](#characteristics-of-activity-feed-notifications-and-bot-framework-messages).
+* Use the third-lines in previews and provide information to determine importance and take action. Use the **Text Preview section** in notifications. Provide information to determine importance and take action.
 * Do not add a *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
 
 ## Characteristics of activity feed notifications and bot framework messages
@@ -72,12 +72,15 @@ The activity feed notifications land in the activity feed and can deep link to v
 * allow the user to take action or triage the notification.
 * lead the user to a tab in a chat or channel, a personal app, or a chat or channel message. 
 * are currently directed at a user level and are not posted broadly in a channel for all channel members to see. However, if the notification is deep linked to a channel message, then it is posted broadly in a channel.
+
 The activity feed notification API allows users to configure notifications for each **Notification type** from the app. The capability to configure a notification allows the user to customize. The users can receive double notifications from the app. The app can send bot notifications to chats or channels and also activity feed notifications API notifications. *Send double notifications only if the scenario requires you to send them.* 
+
 The activity feed notification API can send delegated or application-only calls. In delegated calls, the sender of the notification appears as the user who initiated the notification, for example, *John Doe*, and in application-only the sender appears as the app, for example, *Contoso*.
 You can update an existing activity feed notification instead of creating a new notification by using the `chainId` parameter.
 
 # [Bot framework messages ](#tab/botframeworkmessages)
 
- Bot messages are delivered as chat or channel messages. If the user's notifications for chat or channel is turned on, they trigger notifications as chat or channel notifications.
+ Bot messages are delivered as chat or channel messages. If the users' notifications for chat or channel are turned on, they trigger notifications as chat or channel notifications.
+ 
 * *@mention* the name of the user for the notification to appear in the activity feed.
-* It is useful if the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members
+* It is useful if the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members.
