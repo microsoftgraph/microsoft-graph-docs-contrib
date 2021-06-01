@@ -56,6 +56,8 @@ In the request body, supply a JSON representation of a [schedule](../resources/s
 
 If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
 
+## Examples
+
 ### Example 1: Update a schedule
 
 #### Request
@@ -123,7 +125,7 @@ Content-length: 401
 }
 ```
 
-### Example 2: Enable location detection for time clock.
+### Example 2: Enable location detection for time clock
 
 #### Request
 
