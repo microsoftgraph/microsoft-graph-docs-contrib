@@ -33,12 +33,12 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.timeCardEvent"
 }-->
 ```json
-{ 
-   "atApprovedLocation": true,
+{
+   "atApprovedLocation":true,
    "notes":{
-        "content": "string",
-        "contentType": "text"
-     }
+      "content":"string",
+      "contentType":"text"
+   }
 }
 ```
 
