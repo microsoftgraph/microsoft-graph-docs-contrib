@@ -129,13 +129,13 @@ Content-length: 401
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team-put-schedule"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
+
 {
    "enabled":true,
    "timeZone":"America/Chicago",
