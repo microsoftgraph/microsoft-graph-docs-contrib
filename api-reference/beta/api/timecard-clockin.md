@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 |:-------------|:------------|:------------|
 |atApprovedLocation| `Edm.boolean ` | Indicate if this action happens at an approved location.|
 |onBehalfOfUserId| String | Optional parameter used by the manager to clock in on behalf of a user.|
-|notes| [itemBody](itembody.md)  |Notes for the clock in. |
+|notes| [itemBody](../resources/itembody.md)  |Notes for the clock in. |
 
 ## Response
 
