@@ -38,21 +38,21 @@ You can select one or all the recommendations to create an effective notificatio
 
 ### Prerequisites
 
-The requirements to use the activity feed notification API, are as follows:
-  * The toast notifications re-direct users to the activity feed and not to the app. To see another activity, users must select the proper notification in the activity feed.
-  * The users can manage notification settings only after the selected app sends a notification.
+Note the following requirements to use activity feed notifications API:
+  * Toast notifications re-direct users to the activity feed, not to the app. To see another activity, users must select the proper notification in the activity feed.
+  * Users can manage notification settings only after the selected app sends a notification.
   * The icon for each notification is included in the app manifest. Graph does not support customizing it.
   * Apps can only send notifications to users. Do not include Groups or teams as recipients.
-  * At present, the priority notifications are not supported.
+  * Priority notifications are not supported.
 
 ### Recommendations
 
 The following list provides the recomended actions:
 * Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
-* Provide appropriate titles and descriptions for your **Activity Types** as the API reads the setting titles from the app manifest. The following list provides examples of appropriate and inappropriate titles and descriptions:
+* Provide appropriate titles and descriptions for your **Activity Types** as the API reads the setting titles from the app manifest: 
   * Use short titles, such as **@mention** and **Announcements**.
-  * Do not use long titles, such as **User at-mentioned activity** and **Post creation activity**
-* Avoid sending notifications that are promotional in nature unless required. The notification must convey something important that the user must be aware about. The following list provides an example of important and promotional messages:
+  * Don't use long titles, such as **User at-mentioned activity** and **Post creation activity**
+* Avoid sending notifications that are promotional in nature, unless required. Notifications must convey important information for the user. For example:
   * Important message: Lynne mentioned you in a conversation.
   * Promotional message: Try the new feature in the Cycling app!
 
