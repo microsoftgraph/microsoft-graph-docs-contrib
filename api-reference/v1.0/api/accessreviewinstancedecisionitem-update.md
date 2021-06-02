@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|**TODO: Provide applicable permissions.**|
 
-Any updates made to an **accessReviewInstanceDecisionItem** can only be made by calling users who are listed as reviewer for the parent [accessReviewInstance](../resources/accessreviewinstance.md).
+Only a calling user who is listed as reviewer for the parent [accessReviewInstance](../resources/accessreviewinstance.md) can update the **accessReviewInstanceDecisionItem**.
 
 ## HTTP request
 
@@ -47,8 +47,8 @@ The following table shows the properties that are accepted when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|decision|String|Reviewer's vote on whether the principal should have access to the resource under review. Possible values: `Approve`, `Deny`, or `DontKnow`. Required.|
-|justification|String|Reviewer's reason for decision. Required if `justificationRequiredOnApproval` is true on the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).|
+|decision|String|The reviewer's vote on whether the principal should have access to the resource under review. Possible values: `Approve`, `Deny`, or `DontKnow`. Required.|
+|justification|String|The reviewer's reason for decision. Required if the **justificationRequiredOnApproval** of the settings property of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) is `true`.|
 
 ## Response
 
@@ -75,7 +75,6 @@ Content-length: 691
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

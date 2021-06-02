@@ -57,7 +57,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -66,4 +65,3 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 ``` http
 HTTP/1.1 204 No Content
 ```
-

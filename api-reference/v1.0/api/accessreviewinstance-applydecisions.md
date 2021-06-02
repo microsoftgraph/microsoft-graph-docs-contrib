@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Apply review decisions to the resource reviewed in an [accessReviewInstance](../resources/accessreviewinstance.md).
 
-Decisions are applied automatically if the `autoApplyDecisionsEnabled` parameter is `true` in [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) of the review.
+Decisions are applied automatically if the **autoApplyDecisionsEnabled** of the **settings** parameter of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) is `true`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -59,7 +59,6 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstance: acceptRecommendations"
-description: "Allows the acceptance of recommendations on all decisions that have not been reviewed on an access review instance for which the calling user is a reviewer."
+description: "Allows the acceptance of recommendations on decisions for an access review instance that has not been reviewed by the calling user who is a reviewer."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -57,7 +57,6 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 ---
 title: "Azure AD access reviews"
-description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights."
+description: "Use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights to Azure AD resources."
 localization_priority: Normal
 author: "isabelleatmsft"
 ms.prod: "governance"
@@ -12,7 +12,7 @@ doc_type: conceptualPageType
 Namespace: microsoft.graph
 
 
-You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
+Use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights to Azure AD resources.
 
 Typical customer scenarios for access reviews of group memberships and application access are:
 
@@ -24,7 +24,7 @@ Typical customer scenarios for access reviews of group memberships and applicati
 
 There is also a related capability for customers to review and certify the role assignments of administrative users who are assigned to Azure AD roles such as Global Administrator or Azure subscription roles.  This capability is included in [Azure AD Privileged Identity Management](privilegedidentitymanagement-root.md).
 
-Note that the access reviews feature, including the API, is included in Azure AD Premium P2.  The tenant where an access review is being created must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription.
+The access reviews feature, including the API, is available only with a valid purchase or trial license of Azure AD Premium P2 or EMS E5 subscription.
 
 
 ## Methods
@@ -69,5 +69,4 @@ In addition, a user who is an assigned reviewer of an access review can manage t
 
 - [How an administrator can manage user access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [How an administrator can manage guest access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
-
 

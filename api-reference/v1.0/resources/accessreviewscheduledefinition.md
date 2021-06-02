@@ -32,8 +32,8 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 | id | String | The feature-assigned unique identifier of an access review. Supports `$select`. Read-only.|
-| displayName | String   | Name of the access review series. Supports `$select`. Required on create. |
-| createdDateTime  |DateTimeOffset  | Timestamp when the access review series was created. Supports `$select`. Read-only. |
+| displayName | String   | Name of the access review series. Supports `$select` and `$orderBy`. Required on create. |
+| createdDateTime  |DateTimeOffset  | Timestamp when the access review series was created. Supports `$select` and `$orderBy`. Read-only. |
 | lastModifiedDateTime | DateTimeOffset   | Timestamp when the access review series was last modified. Supports `$select`. Read-only.|
 | status  |String   | This read-only field specifies the status of an access review. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`.  <br>Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only. |
 | descriptionForAdmins  |string  |  Description provided by review creators to provide more context of the review to admins. Supports `$select`. |

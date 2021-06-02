@@ -38,16 +38,16 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md).
 
-The following table shows the parameters that can be used with this action.
+The following table lists the properties that you can use to review [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |decision|String|Access decision for the entity being reviewed. Possible values are: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Required.|
-|justification|String|Context of the review provided to admins. Required if **justificationRequiredOnApproval** is `True` on the **accessReviewScheduleDefinition**.|
-|principalId|String|If supplied, all the **accessReviewInstanceDecisionItems** with matching **principalId** will be reviewed in this batch. If not supplied, all **principalIds** will be reviewed.|
-|resourceId|String|If supplied, all the **accessReviewInstanceDecisionItems** with matching **resourceId** will be reviewed in this batch. If not supplied, all **resourceIds** will be reviewed.|
+|justification|String|Context of the review provided to admins. Required if **justificationRequiredOnApproval** of the settings property of the **accessReviewScheduleDefinition** is `true` .|
+|principalId|String|If supplied, all the **accessReviewInstanceDecisionItems** with matching **principalId** values will be reviewed in this batch. If not supplied, all **accessReviewInstanceDecisionItems** will be reviewed.|
+|resourceId|String|If supplied, all the **accessReviewInstanceDecisionItems** with matching **resourceId** will be reviewed in this batch. If not supplied, all **accessReviewInstanceDecisionItems** will be reviewed.|
 
 ## Response
 
@@ -75,7 +75,6 @@ Content-length: 113
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
