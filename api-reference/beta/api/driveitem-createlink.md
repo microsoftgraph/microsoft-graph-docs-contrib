@@ -92,7 +92,7 @@ The response will be `201 Created` if a new sharing link is created for the item
 
 ## Examples
 
-### Create a link to share a drive item
+### Example 1: Create an anonymous sharing link
 The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.
 The sharing link is configured to be read-only and usable by anyone with the link.
 
@@ -109,9 +109,8 @@ Content-Type: application/json
 Content-length: 212
 
 {
-  "type": "String",
-  "scope": "String",
-  "expirationDateTime": "String (timestamp)",
+  "type": "view",
+  "scope": "anonymous",
   "password": "String",
   "recipients": [
     {
@@ -169,7 +168,7 @@ Content-Type: application/json
 }
 ```
 
-### Creating company sharable links
+### Exmaple 2: Creating company sharable links
 
 OneDrive for Business and SharePoint support company sharable links.
 These are similar to anonymous links, except they only work for members of the owning organization.
@@ -232,7 +231,7 @@ Content-Type: application/json
 }
 ```
 
-### Creating embeddable links
+### Example 3: Creating embeddable links
 
 When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
 When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
@@ -297,7 +296,7 @@ Content-Type: application/json
 
 ## Remarks
 
-* If both scope and type are not provided, a readily available link is provided based on the callers ability on the item and policy is enforced for the organization.
+* If both scope and type are not provided, the link created will be determined based on the callers ability on the item and policy enforced for the organization that is determined by the administrator of the organization.
 * Links created using this action do not expire unless a default expiration policy is enforced for the organization.
 * Links are visible in the sharing permissions for the item and can be removed by an owner of the item.
 * Links always point to the current version of a item unless the item is checked out (SharePoint only).
