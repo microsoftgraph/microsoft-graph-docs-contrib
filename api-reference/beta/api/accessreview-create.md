@@ -56,14 +56,14 @@ The following table shows the properties that are required when you create an ac
 | description             |String                                                        | The description, to show to the reviewers. |
 | businessFlowTemplateId  |String                                                        | The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).  |
 | reviewerType            |String                                                        | The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`. | 
-| reviewedEntity          |[identity](../resources/identity)                                     | The object for which an access review is created, such as the membership of a group or the assignments of users to an application. | 
+| reviewedEntity          |[identity](../resources/identity.md)                                     | The object for which an access review is created, such as the membership of a group or the assignments of users to an application. | 
 
 
 If the **reviewerType** has the value `delegated`, then the caller must also include the **reviewers** property, with a collection of [userIdentity](../resources/useridentity.md) objects representing the reviewers.
 
 If your app is calling this API without a signed-in user, then the caller must also include the **createdBy** property, the value for which is a [userIdentity](../resources/useridentity.md) of the user who will be identified as the creator of the review.
 
-In addition, the caller can include **settings**, to create a recurring review series or to change from the default review behavior. In particular, to create a recurring review, the caller must include the [accessReviewRecurrenceSettings](../resources/accessreviewrecurrencesettings) within the access review settings,
+In addition, the caller can include **settings**, to create a recurring review series or to change from the default review behavior. In particular, to create a recurring review, the caller must include the [accessReviewRecurrenceSettings](../resources/accessreviewrecurrencesettings.md) within the access review settings,
 
 
 ## Response
