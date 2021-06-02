@@ -3,6 +3,40 @@
         {
             "ChangeList": [
                 {
+                    "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckSubscriptionNotFound",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckSubscriptionNotFound` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckSubscriptionTransferred",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckSubscriptionTransferred` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckGeneralSubscriptionError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckGeneralSubscriptionError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-02T14:55:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "354f1cbe-9671-4608-8027-eb7dce79a0b7",
                     "ApiChange": "Member",
                     "ChangedApiName": "adJoinCheckAccessDenied",

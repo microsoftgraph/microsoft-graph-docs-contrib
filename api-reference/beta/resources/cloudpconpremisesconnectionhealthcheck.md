@@ -52,6 +52,9 @@ The result of a cloud PC on-premises connection health check.
 |aadConnectivityCheckUnknownError|The Azure Active Directory connectivity check failed due to an unknown error. Please contact customer support.|
 |resourceAvailabilityCheckNoSubnetIP|The resource availability check failed because there were no available IP addresses in the subnet. Please free up some or change to another subnet and retry.|
 |resourceAvailabilityCheckSubscriptionDisabled|The resource availability check failed due to a disabled Azure subscription. Please re-enable the subscription.|
+|resourceAvailabilityCheckSubscriptionNotFound|The Azure subscription provided cannot be found.|
+|resourceAvailabilityCheckSubscriptionTransferred|The Azure subscription has been transferred to another tenant.|
+|resourceAvailabilityCheckGeneralSubscriptionError|The Azure subscription provided cannot be accessed.|
 |resourceAvailabilityCheckUnknownError|The resource availability check failed due to an unknown error. Please contact customer support.|
 |permissionCheckNoSubscriptionReaderRole|Cloud PC service principal does not have reader permissions on the specified Azure subscription. Please work with subscription owner to add reader role assignment on the Azure subscription for the Cloud PC service principal.|
 |permissionCheckNoResourceGroupOwnerRole|Cloud PC service principal does not have owner permissions on the specified resource group. Please work with the subscription owner to add owner role assignment on the resource group for the Cloud PC service principal.|
