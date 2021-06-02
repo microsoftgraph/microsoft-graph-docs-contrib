@@ -10,8 +10,6 @@ localization_priority: Priority
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
-
-
 ## March 2021
 
 ### Users
