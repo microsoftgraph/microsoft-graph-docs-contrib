@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier GUID of the access review set. Inherited from [entity](../resources/entity.md)|
+|id|String|Identifier of the access review set. Inherited from [entity](../resources/entity.md)|
 
 ## Relationships
 |Relationship|Type|Description|

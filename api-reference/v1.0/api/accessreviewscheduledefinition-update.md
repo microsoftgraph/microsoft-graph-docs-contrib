@@ -12,9 +12,7 @@ Namespace: microsoft.graph
 
 Update the properties of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
->[!NOTE]
->Any updates made to an accessReviewScheduleDefinition only apply to future instances. Currently running instances cannot be updated.
->Additionally, this API is not intended to update properties, including decisions, on the accessReviewInstance level. See [accessReviewInstance](../resources/accessreviewinstance.md) for more information on instances.
+Any updates to an accessReviewScheduleDefinition only apply to future instances. Currently running instances cannot be updated. Additionally, this API is not intended to update properties, including decisions, on the accessReviewInstance level. See [accessReviewInstance](../resources/accessreviewinstance.md) for more information on instances.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
