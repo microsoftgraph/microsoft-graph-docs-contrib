@@ -69,7 +69,7 @@ POST https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd
 Content-Type: application/json
 
 {
-  "displayName": "Sample tag name",
+  "displayName": "Finance",
   "members":[
 	{
 		"userId":"92f6952f-61ca-4a94-8910-508a240bc167"
