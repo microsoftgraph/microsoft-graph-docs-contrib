@@ -27,7 +27,7 @@ Represents a user in a team to whom a tag is applied.
 |:---|:---|:---|
 |displayName|String|The member's display name.|
 |ID|String|ID of the member.|
-|tenantID|String|The tenantID that the member of the tag is a part of.|
+|tenantID|String|The ID of the tenant that the tag member is a part of.|
 |userID|String|The user ID of the member.|
 
 ## Relationships
