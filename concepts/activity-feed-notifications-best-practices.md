@@ -55,11 +55,10 @@ The following list provides the recomended actions:
 * Avoid sending notifications that are promotional in nature, unless required. Notifications must convey important information for the user. For example:
   * Important message: Lynne mentioned you in a conversation.
   * Promotional message: Try the new feature in the Cycling app!
-
-* Notify the user that the notifications are stored in the activity feed for 30 days. 
+* Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
 
   > [!NOTE]
-  > The 30 days storage limit applies to all notifications and is not specific to notifications sent through the activity feed notifications API.
+  > The 30 days storage limit applies to all notifications and it's not specific to notifications sent through the activity feed notifications API.
 
 ## Simplify the notification experience
 
