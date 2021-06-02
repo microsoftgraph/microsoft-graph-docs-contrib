@@ -58,9 +58,9 @@ To get item insights configuration for an organization, use the Microsoft Graph 
 
 By default, item insights are enabled for the entire organization. You can use the Microsoft Graph PowerShell module to change that and disable item insights for everyone in the organization. 
 > [!NOTE]
-> The update method requires additional `User.ReadWrite` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The update method requires additional `User.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 > ```powershell
->    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
+>    Connect-MgGraph -Scopes "User.Read.All","User.ReadWrite.All"
 > ```
 
 Use the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID and specify `-IsEnabledInOrganization` as `false`.
