@@ -788,12 +788,15 @@ items:
             href: api/application-removekey.md
         - name: Extensions
           items:
-          - name: List extensions
-            href: api/application-list-extensionproperty.md
-          - name: Create extension
-            href: api/application-post-extensionproperty.md
-          - name: Delete extension
-            href: api/application-delete-extensionproperty.md
+          - name: Extension property
+            href: resources/extensionproperty.md
+            items:
+            - name: List
+              href: api/application-list-extensionproperty.md
+            - name: Create
+              href: api/application-post-extensionproperty.md
+            - name: Delete
+              href: api/application-delete-extensionproperty.md
         - name: Owners
           items:
           - name: List owners
@@ -9569,6 +9572,29 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Role management
+          href: resources/rolemanagement.md
+          items:
+          - name: Role definition
+            href: resources/unifiedroledefinition.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roledefinitions.md
+            - name: Get
+              href: api/unifiedroledefinition-get.md
+          - name: Role assignment multiple
+            href: resources/unifiedroleassignmentmultiple.md
+            items:
+            - name: List
+              href: api/rbacapplicationmultiple-list-roleassignments.md
+            - name: Create
+              href: api/rbacapplicationmultiple-post-roleassignments.md
+            - name: Get
+              href: api/unifiedroleassignmentmultiple-get.md
+            - name: Update
+              href: api//unifiedroleassignmentmultiple-update.md
+            - name: Delete
+              href: api/unifiedroleassignmentmultiple-delete.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -10548,9 +10574,9 @@ items:
             href: resources/unifiedroleassignmentmultiple.md
             items:
             - name: List
-              href: api/unifiedroleassignmentmultiple-list.md
+              href: api/rbacapplicationmultiple-list-roleassignments.md
             - name: Create
-              href: api/unifiedroleassignmentmultiple-post.md
+              href: api/rbacapplicationmultiple-post-roleassignments.md
             - name: Get
               href: api/unifiedroleassignmentmultiple-get.md
             - name: Update
