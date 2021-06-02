@@ -2,7 +2,7 @@
 title: "Update organizationalBrandingProperties"
 description: "Update the properties of an organizationalBrandingProperties object."
 localization_priority: Normal
-author: "almars"
+author: "AlexanderMars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
