@@ -180,7 +180,7 @@ The following example shows a request to retrieve all the access review series s
   "name": "list_accessReviewScheduleDefinition_allgroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com//beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
 ```
 
 #### Response
