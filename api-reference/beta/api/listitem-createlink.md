@@ -99,11 +99,11 @@ The sharing link is configured to be read-only and usable by anyone with the lin
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "driveItem_createlink"
+  "name": "listItem_createlink"
 }-->
 
 ```http
-POST /me/drive/items/{itemId}/createLink
+POST sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
 Content-length: 212
 
