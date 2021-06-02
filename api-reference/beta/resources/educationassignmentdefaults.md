@@ -25,7 +25,7 @@ Specifies class-level defaults respected by new assignments created in the class
 |Property|Type|Description|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Class-level default behavior for handling students who are added after the assignment is published. Possible values are: `none`, `assignIfOpen`.|
-|addToCalendarAction| microsoft.graph.educationAddToCalendarOptions|Optional field to control the assignment behavior for adding assignment to students and teacher(s) calendar when the assignment is published. If not specified, defaults to `none` value. Currently supports only these values: `none` or `studentsAndPublisher`, and `studentsAndTeamOwners`.|
+|addToCalendarAction| educationAddToCalendarOptions|Optional field to control the asfor adding assignments to students' and teachers' calendars when the assignment is published. If not specified, defaults to `none` value.|
 |dueTime|TimeOfDay|Class-level default value for due time field. Default value is `23:59:00`.|
 |notificationChannelUrl|String|Default Teams channel to which notifications will be sent. Default value is `null`.|
 
