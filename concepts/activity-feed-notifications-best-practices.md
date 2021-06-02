@@ -64,13 +64,12 @@ The following list provides the recomended actions:
 
 Simplify the user's notification experience by sending only important information through notifications.
 
-* Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications. The following list provides examples of relevant and irrelevant messages:
-
+* Improve chances of users acting on your notifications by sending relevant notifications directly. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, do not send large volume of non-directed notifications:
   * Relevant message: Diego assigned a sales ticket to you.
   * Irrelevant message: Joni left the sales team. *This notification may be noisy unless this is materially important.*
 * Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [characteristics of activity feed notifications and bot framework messages](#characteristics-of-activity-feed-notifications-and-bot-framework-messages).
 * Use the third-lines in previews and provide information to determine importance and take action. Use the **Text Preview section** in notifications. Provide information to determine importance and take action.
-* Do not add a *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
+* Don't add a *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
 
 ## Characteristics of activity feed notifications and bot framework messages
 
