@@ -8,18 +8,29 @@ ms.prod: "teamwork"
 
 # Best practices for using Microsoft Teams activity feed notifications
 
-This article covers best practices to help you build experiences using Microsoft Teams activity feed notifications in Microsoft Graph. These best practices help you to create notifications as per the scenario, such as notifications for first run experience, request for response or action, or external event notifications. You can also [Send activity feed notifications](teams-send-activityfeednotifications.md) to users in Microsoft Teams and [Designing your Microsoft Teams app](/platform/concepts/design/design-teams-app-overview).
+This article covers best practices to use Microsoft Teams activity feed notifications in Microsoft Graph.
+
+Use the following recommendations to:
+
+* Create call-to action notifications.
+* Request for a response.
+* Create notifications about an external event.
+
+You can also [Send activity feed notifications](teams-send-activityfeednotifications.md) to users in Microsoft Teams and [Designing your Microsoft Teams app](/platform/concepts/design/design-teams-app-overview).
 
 ## General best practices
 
-Activity feed notifications enable your apps to send notifications to users. These notifications are sent as toast items and activity feed items that point users to relevant content that can be consumed within Teams. Apply the following best practices in your app:
+Use Microsoft Teams activity feed to send notification to users and apply the following best practices:
 
 * Make the relationship between the notification and its content clear to the user.
     * For example, when a user receives a notification for approving a leave, selecting the notification must take them to the corresponding section of the app.
     * If the notification pertains to removal or deletion of users, tasks, and so on, direct users to the content indicating the action, so that they understand why they have been notified.
-* Make sure that the feed experience in the feed is self-contained and does not break the feed experience. For instance any pop-ups and modals must remain in the app and never take the user to the **Activity** feed.
-* Verify that your app does not send more than 10 notifications per minute, per user. Notifications are throttled if the per user notification count exceeds 10.
+* Make sure that the feed experience in the feed is self-contained. For example, any pop-ups and modals must remain in the app and not take the user to the **Activity** feed.
+* Verify that your app does not send more than 10 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 10.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
+
+> [!NOTE]
+> Microsoft Teams displays notifications in both activity feed and toast formats.
 
 ## Recommendations for using activity feed notification API
 
