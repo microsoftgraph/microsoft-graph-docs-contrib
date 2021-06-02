@@ -74,7 +74,7 @@ Content-Type: application/json
 
 ### Subscribe to changes in any channel at tenant level
 
-To get change notifications for creation, updation or deletion of any channel across tenant, subscribe to `teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for creation, updation or deletion of any channel across tenant, subscribe to `/teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 >**Note:** Private channel is not supported.
 
@@ -95,7 +95,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "teams/getAllChannels",
+  "resource": "/teams/getAllChannels",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -107,7 +107,7 @@ Content-Type: application/json
 ### Subscribe to changes in any channel of a particular team
 
 
-To get change notifications for any change in channel's property across any channel in a team, subscribe to `teams/{id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for any change in channel's property across any channel in a team, subscribe to `/teams/{id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -115,7 +115,7 @@ To get change notifications for any change in channel's property across any chan
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Channel.ReadBasic, ChannelSettings.Read   | beta |
+|Application | Channel.ReadBasic.All, ChannelSettings.Read.All   | beta |
 
 #### Example
 
@@ -138,7 +138,7 @@ Content-Type: application/json
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks for any change in team's property looks like the following.
+For notifications with resource data, the payload looks like the following. This payload is for a property change in a team.
 
 ```json
 {
@@ -212,7 +212,7 @@ The decrypted notification payload looks like the following. The payload conform
 ```
 
 
-For notifications with resource data, the payload looks for any change in channel's property looks like the following.
+For notifications with resource data, the payload looks like the following. This payload is for a property change in a channel.
 
 ```json
 {
@@ -261,7 +261,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
 
-For notifications with resource data, the payload  for any change in teams's property looks like the following.
+For notifications without resource data, the payload looks like the following. This payload is for a property change in a team
 
 ```json
  {
@@ -284,7 +284,7 @@ The **resource** and **@odata.id** properties can be used to make calls to Micro
 
 >**Note:** Channel email address is not returned in payload.
 
-For notifications with resource data, the payload  for any change in teams's property looks like the following.
+For notifications without resource data, the payload looks like the following. This payload is for a property change in a team.
 
 ```json
 {

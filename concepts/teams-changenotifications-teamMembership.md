@@ -12,7 +12,7 @@ ms.custom: scenarios:getting-started
 
 ### Subscribe to changes in membership of a particular team
 
-To get change notifications for membership change in a particular team, subscribe to `teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership change in a particular team, subscribe to `/teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -91,7 +91,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
 
-For notifications without resource data, the payload  for any change in team's membership looks like the following.
+For notifications without resource data, the payload looks like the following. This payload is for a membership change in a team.
 
 ```json
  {
