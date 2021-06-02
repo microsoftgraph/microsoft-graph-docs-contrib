@@ -3,6 +3,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "3b8493a8-d1b4-4e9f-a6a8-7109fbe17e19",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "bitlockerRecoveryKey-get",
+                    "ChangeType": "Change",
+                    "Description": "Changed the previously required header to now be optional in [bitlockerRecoveryKey](/graph/api/bitlockerrecoverykey-get.md).",
+                    "Target": "bitlockerRecoveryKey"
+                },
+                {
+                    "Id": "3b8493a8-d1b4-4e9f-a6a8-7109fbe17e19",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "bitlocker-list-recoverykeys",
+                    "ChangeType": "Change",
+                    "Description": "Changed the previously required header to now be optional in [bitlockerRecoveryKey](/graph/api/bitlocker-list-recoverykeys.md).",
+                    "Target": "bitlockerRecoveryKey"
+                }
+            ],
+            "Id": "3b8493a8-d1b4-4e9f-a6a8-7109fbe17e19",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-02T12:41:45.203Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea" : "Directory management"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "f015f292-af31-448d-8dc1-72ab3936e63a",
                     "ApiChange": "Method",
                     "ChangedApiName": "bitlockerRecoveryKey-get",
