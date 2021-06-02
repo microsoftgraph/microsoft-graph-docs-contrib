@@ -4,10 +4,10 @@
       "ChangeList": [
         {
           "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
-          "ApiChange": "Method",
+          "ApiChange": "Resource",
           "ChangedApiName": "allowAttendeeToEnableMic",
           "ChangeType": "Addition",
-          "Description": "Added **allowAttendeeToEnableMic** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowAttendeeToEnableMic** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -15,14 +15,14 @@
           "ApiChange": "Method",
           "ChangedApiName": "allowAttendeeToEnableCamera",
           "ChangeType": "Addition",
-          "Description": "Added **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],
       "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-05-26T00:00:00",
+      "CreatedDateTime": "2021-06-01T00:00:00",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
