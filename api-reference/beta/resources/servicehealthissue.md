@@ -1,6 +1,6 @@
 ---
 title: "serviceHealthIssue resource type"
-description: "An entity resource type inherited from serviceAnnouncementBase, to represent an issue happened for a service. The service health issue could be a service incident or service advisory. e.g. "Exchange mailbox service is down" is a service incident; "User may have seen a delay while receiving emails" is a service advisory."
+description: "An entity resource type inherited from serviceAnnouncementBase, to represent an issue happened for a service. The service health issue could be a service incident or service advisory. e.g. Exchange mailbox service is down" is a service incident; User may have seen a delay while receiving emails" is a service advisory."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -32,7 +32,6 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |endDateTime|DateTimeOffset|The end time of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
 |feature|String|The name of feature for the service issue|
 |featureGroup|String|The name of feature group for the service issue|
-|highImpact|Boolean|The value to tell whether service issue has high impact or not|
 |id|String|The id of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
 |impactDescription|String|The description of the service issue impact.|
 |isResolved|Boolean|Boolean value to tell if the issue is resolved. Used by filter.|

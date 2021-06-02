@@ -14156,7 +14156,7 @@ items:
         - name: List range
           href: api/nameditem-range.md
         - name: Service communications (preview)
-          href: resource/serviceannouncement.md
+          href: resources/serviceannouncement.md
           items:
           - name: healthOverviews
             items:

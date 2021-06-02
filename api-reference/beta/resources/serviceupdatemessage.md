@@ -37,7 +37,6 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |category|serviceUpdateCategory|The service message category. Possible values are: `PreventOrFixIssue`, `PlanForChange`, `StayInformed`, `unknownFutureValue`.|
 |details|[keyValuePair](../resources/keyvaluepair.md) collection|More details about service message that don't need to be filter based properties are put in this key value pair collection. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
 |endDateTime|DateTimeOffset|The end time of the service message Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
-|expiryDateTime|DateTimeOffset|The expiry time of service message|
 |id|String|The id of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
 |isMajorChange|Boolean|The value indicating whether the message describes a major update for the service|
 |lastModifiedDateTime|DateTimeOffset|The last modified time of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
