@@ -14160,10 +14160,10 @@ items:
           items:
           - name: healthOverviews
             items:
-           - name: Get service health
-             href: api/servicehealth-get.md
-           - name: List services health
-             href: api/servicehealth-list.md
+            - name: Get service health
+              href: api/servicehealth-get.md
+            - name: List services health
+              href: api/servicehealth-list.md
           - name: issues
             items:
             - name: Get issue
