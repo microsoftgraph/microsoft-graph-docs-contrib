@@ -1,6 +1,6 @@
 ---
 title: "listItem: createLink"
-description: "You can use createLink action to share a ListItem via a sharing link."
+description: "Create a link to share a listItem"
 author: "learafa"
 localization_priority: Normal
 ms.prod: "sharepoint"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use **createLink** action to share a [ListItem](../resources/listitem.md) via a sharing link.
+The **createLink** action can be used to create a sharing link for a [listItem](../resources/listitem.md).
 
-The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
-If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.
+If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 
-ListItem resources inherit sharing permissions from their ancestors.
+**listItem** resources inherit sharing permissions from the [list](../resources/list.md) the item resides in.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -87,29 +87,29 @@ The following values are allowed for the **scope** parameter.
 
 If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
 
-The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.
+The response will be `201 Created` if a new sharing link is created for the listItem or `200 OK` if an existing link is returned.
 
 ## Examples
 
-### Create a link to share a drive item
-The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.
+### Example 1: Create an anonymous sharing link
+The following example requests a sharing link to be created for the listItem specified by {itemId} in the list specified {listId}.
 The sharing link is configured to be read-only and usable by anyone with the link.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "listitem_createlink"
-}
--->
-``` http
-POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
+  "name": "driveItem_createlink"
+}-->
+
+```http
+POST /me/drive/items/{itemId}/createLink
 Content-Type: application/json
 Content-length: 212
 
 {
-  "type": "String",
-  "scope": "String",
-  "expirationDateTime": "String (timestamp)",
+  "type": "view",
+  "scope": "anonymous",
   "password": "String",
   "recipients": [
     {
@@ -147,7 +147,7 @@ Content-Type: application/json
 }
 ```
 
-### Creating company sharable links
+### Example 2: Creating company sharable links
 
 OneDrive for Business and SharePoint support company sharable links.
 These are similar to anonymous links, except they only work for members of the owning organization.
@@ -188,7 +188,7 @@ Content-Type: application/json
 }
 ```
 
-### Creating embeddable links
+### Exmaple 3: Creating embeddable links
 
 When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
 When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
@@ -231,10 +231,10 @@ Content-Type: application/json
 
 ## Remarks
 
-* If both scope and type are not provided, a readily available link is provided based on the callers ability on the item and policy is enforced for the organization.
+* If both scope and type are not provided, the link created will be determined based on the callers ability on the listItem and policy enforced for the organization that is determined by the administrator of the organization.
 * Links created using this action do not expire unless a default expiration policy is enforced for the organization.
-* Links are visible in the sharing permissions for the item and can be removed by an owner of the item.
-* Links always point to the current version of a item unless the item is checked out (SharePoint only).
+* Links are visible in the sharing permissions for the listItem and can be removed by an owner of the listItem.
+* Links always point to the current version of a item unless the listItem is checked out (SharePoint only).
 
 <!--
 {
