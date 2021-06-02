@@ -20,8 +20,8 @@
     },  
     {
       "ChangeList": [
-	    {
-		  "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
           "ApiChange": "Method",
           "ChangedApiName": "setUpResourcesFolder",
           "ChangeType": "Addition",
