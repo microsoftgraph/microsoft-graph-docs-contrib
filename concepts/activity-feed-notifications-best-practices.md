@@ -75,7 +75,7 @@ Simplify the user's notification experience by sending only important informatio
 
 Based on the need, you can use either activity feed notifications or bot framework messages to notify users. The following tabs provide the key characteristics of activity feed notifications and bot framework messages:
 
- # [Activity feed notifications](#tab/activityfeednotifications)
+### Activity feed notifications
 
 The activity feed notifications land in the activity feed and can deep link to various locations. These notifications help you with the following: 
 * Allow the user to take action or triage the notification.
@@ -87,9 +87,9 @@ The activity feed notification API allows users to configure notifications for e
 The activity feed notification API can send delegated or application-only calls. In delegated calls, the sender of the notification appears as the user who initiated the notification, for example, *John Doe*, and in application-only the sender appears as the app, for example, *Contoso*.
 You can update an existing activity feed notification instead of creating a new notification by using the `chainId` parameter.
 
-# [Bot framework messages ](#tab/botframeworkmessages)
+### Bot framework messages
 
- Bot messages are delivered as chat or channel messages. If the users' notifications for chat or channel are turned on, they trigger notifications as chat or channel notifications.
+Bot messages are delivered as chat or channel messages. If the users' notifications for chat or channel are turned on, they trigger notifications as chat or channel notifications:
 
 * *@mention* the name of the user for the notification to appear in the activity feed.
 * It is useful if the alert is consumed as a chat or channel message or is consumed broadly. For example, message is consumed by all channel members.
