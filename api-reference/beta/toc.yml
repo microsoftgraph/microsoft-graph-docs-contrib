@@ -216,6 +216,8 @@ items:
           href: api/user-delete.md
         - name: Get delta
           href: api/user-delta.md
+        - name: Invalidate refresh tokens
+          href: api/user-invalidateallrefreshtokens.md
       - name: App role assignments
         href: resources/approleassignment.md
         items:
@@ -9794,8 +9796,6 @@ items:
           href: api/educationassignment-post-resources.md
         - name: Get assignment resource
           href: api/educationassignmentresource-get.md
-        - name: Update assignment resource
-          href: api/educationassignmentresource-update.md
         - name: Delete resource from assignment
           href: api/educationassignmentresource-delete.md
         - name: Publish assignment
