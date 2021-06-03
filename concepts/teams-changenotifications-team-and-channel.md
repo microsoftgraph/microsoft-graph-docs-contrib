@@ -1,6 +1,6 @@
 ---
-title: "Get change notifications for creation, updation or deletion of team and channels using Microsoft Graph"
-description: "Get change notifications for change in creation, updation or deletion of team and channels using Microsoft Graph"
+title: "Get change notifications for changes (create, update, and delete) in team and channels using Microsoft Graph"
+description: "Get change notifications for changes (create, update, and delete) in team and channels using Microsoft Graph"
 author: "anandab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -12,7 +12,7 @@ ms.custom: scenarios:getting-started
 
 ### Subscribe to changes in any team at tenant level
 
-To get change notifications for any change in team's property across tenant or creation and deletion of a team in tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to any team (create, update, and delete) in a tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -43,7 +43,7 @@ Content-Type: application/json
 ### Subscribe to changes in a particular team
 
 
-To get change notifications for any change in teams' property of a specific team, subscribe to `/teams/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to a particular team in a tenant, subscribe to `/teams/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -74,7 +74,7 @@ Content-Type: application/json
 
 ### Subscribe to changes in any channel at tenant level
 
-To get change notifications for creation, updation or deletion of any channel across tenant, subscribe to `/teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to any channel (create, update, and delete) in a tenant, subscribe to `/teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 >**Note:** Private channel is not supported.
 
@@ -107,7 +107,7 @@ Content-Type: application/json
 ### Subscribe to changes in any channel of a particular team
 
 
-To get change notifications for any change in channel's property across any channel in a team, subscribe to `/teams/{id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -126,7 +126,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels ",
+  "resource": "/teams/{id}/channels",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -261,10 +261,10 @@ The decrypted notification payload looks like the following. The payload conform
 
 Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
 
-For notifications without resource data, the payload looks like the following. This payload is for a property change in a team
+For notifications without resource data, the payload looks like the following. This payload is for a property change in a team.
 
 ```json
- {
+{
   "subscriptionId": "9f9d1ed0-c9cc-42e7-8d80-a7fc4b0cda3c",
   "changeType": "created",
   "tenantId": "<<--TenantForWhichNotificationWasSent-->>",

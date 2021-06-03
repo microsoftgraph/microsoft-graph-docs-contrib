@@ -31,7 +31,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/members ",
+  "resource": "/teams/{id}/members",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -94,7 +94,7 @@ Notifications without resource data give you enough information to make GET call
 For notifications without resource data, the payload looks like the following. This payload is for a membership change in a team.
 
 ```json
- {
+{
   "subscriptionId": "9f9d1ed0-c9cc-42e7-8d80-a7fc4b0cda3c",
   "changeType": "created",
   "tenantId": "<<--TenantForWhichNotificationWasSent-->>",

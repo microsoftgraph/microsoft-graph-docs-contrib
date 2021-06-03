@@ -9,14 +9,14 @@ ms.custom: scenarios:getting-started
 
 # Change notifications for resources in Microsoft Teams using Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create, update, and delete) to a resource, it provides a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). One can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications enable you to subscribe to changes (create, update, and delete) to a resource. It provides a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). One can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
 > **Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
 ## Change notification types
-Teams' resource supports two types of change notification
-- **Change notification to track all changes related to a resource across tenant**- for example, one can subscribe to change in messages in any channel across tenant and get notified whenever a message is created in any channel in tenant.
-- **Change notification to track all changes for a specific resource**- for example, one can subscribe to change in messages in a particular channel and get notified whenever a message is created in that channel.
+Microsoft Teams supports two types of change notifications:
+- **Change notification to track all changes related to a resource across tenant** - for example, one can subscribe to change in messages in any channel across tenant and get notified whenever a message is created in any channel in tenant.
+- **Change notification to track all changes for a specific resource** - for example, one can subscribe to change in messages in a particular channel and get notified whenever a message is created in that channel.
 
 Check [Microsoft Graph change notifications](webhooks.md) to see what resources support what type of change notification.
  
@@ -105,10 +105,10 @@ Notifications without resource data give you enough information to make GET call
 The payload looks like the following. This payload is for a message sent in a channel.
 
 ```json
- {
+{
   "subscriptionId": "9f9d1ed0-c9cc-42e7-8d80-a7fc4b0cda3c",
   "changeType": "created",
-  "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
+  "tenantId": "<<--TenantForWhichNotificationWasSent-->>",  
   "clientState": "<<--SpecifiedClientState-->>",
   "subscriptionExpirationDateTime": "2021-02-02T11:26:41.0537895-08:00",
   "resource": "teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2')/messages('1612293113399')",
@@ -119,7 +119,7 @@ The payload looks like the following. This payload is for a message sent in a ch
   }
 }
 ```
-Above example shows notification corresponding to chat message resource, in actual notification resource and resourceData properties will represent the resource which has triggered the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource.
+The example above shows a notification corresponding to a chat message resource. The actual notification includes the resource and resourceData properties, which represents the resource that has triggered the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource.
 
 > **Note** GET calls will always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation will return the updated resource.
 
