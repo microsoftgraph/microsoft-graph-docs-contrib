@@ -42,7 +42,7 @@ The assignment APIs are exposed in the class namespace.
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 |addedStudentAction|String|Optional field to control the assignment behavior for students who are added after the assignment is published. If not specified, defaults to `none` value. Currently supports only two values: `none` or `assignIfOpen`.|
-|addToCalendarAction| educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. If not specified, defaults to `none` value.|
+|addToCalendarAction| educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `studentsAndPublisher`, `studentsAndTeamOwners`, `none`. Default value is `none`.|
 |allowLateSubmissions|Boolean| Identifies whether students can submit after the due date. If this property is not specified during create, it defaults to true. |
 |allowStudentsToAddResourcesToSubmission|Boolean| Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher. |
 |assignDateTime|DateTimeOffset|The date when the assignment should become active.  If in the future, the assignment is not shown to the student until this date.  The **Timestamp** type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
