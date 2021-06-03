@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets all SHD service messages for the tenant. The operation returns a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties.
+Get a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties.
+
+This operation is to get all SHD service messages that are visible to the tenant and impact the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +50,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects in the response body.
 
-## Examples
+## Example
 
 ### Request
 <!-- {
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(m365ServiceHealth.readServices.commercialWebService.models.serviceUpdateMessage)"
+  "@odata.type": "Collection(microsoft.grpah.serviceUpdateMessage)"
 }
 -->
 ``` http
@@ -74,9 +76,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/messages",
   "value": [
     {
-      "@odata.type": "#m365ServiceHealth.readServices.commercialWebService.models.serviceUpdateMessage",
       "startDateTime": "2019-02-01T18:51:00Z",
       "endDateTime": "2019-06-01T08:00:00Z",
       "lastModifiedDateTime": "2021-01-08T01:10:06.843Z",

@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets all service health issues information for the tenant. The operation returns a list of the [serviceHealthIssue](../resources/servicehealthissue.md) objects and their properties.
+Get a list of the [serviceHealthIssue](../resources/servicehealthissue.md) objects and their properties.
+
+This operation is to get information of all service health issues that are visible to the tenant and impact the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +50,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [serviceHealthIssue](../resources/servicehealthissue.md) objects in the response body.
 
-## Examples
+## Example
 
 ### Request
 <!-- {
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(m365ServiceHealth.readServices.commercialWebService.models.serviceHealthIssue)"
+  "@odata.type": "Collection(microsoft.graph.serviceHealthIssue)"
 }
 -->
 ``` http
@@ -74,9 +76,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/issues",
   "value": [
     {
-      "@odata.type": "#m365ServiceHealth.readServices.commercialWebService.models.serviceHealthIssue",
       "startDateTime": "2020-11-13T21:00:00Z",
       "endDateTime": "2020-11-14T17:15:00Z",
       "lastModifiedDateTime": "2020-11-14T18:20:24.767Z",

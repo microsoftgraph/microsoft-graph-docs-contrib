@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets a specified SHD service message for the tenant. The operation returns a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.
+Read the properties and relationships of a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.
+
+This operation is to get a specified SHD service message for the tenant. If the message is not visible to tenant or the message does not impact the tenant, it won't be returned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +50,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 <!-- {
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages('MC17285
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "m365ServiceHealth.readServices.commercialWebService.models.serviceUpdateMessage"
+  "@odata.type": "microsoft.graph.serviceUpdateMessage"
 }
 -->
 
@@ -75,8 +77,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#m365ServiceHealth.readServices.commercialWebService.models.serviceUpdateMessage",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/messages/$entity",
     "startDateTime": "2019-02-01T18:51:00Z",
     "endDateTime": "2019-06-01T08:00:00Z",
     "lastModifiedDateTime": "2021-01-08T01:10:06.843Z",
@@ -106,7 +107,6 @@ Content-Type: application/json
       "content": "Updated January 07, 2021: Based on learnings from our early rings, we have made the decision to make additional changes to the code before we proceed with the rollout. We will update the Message center post once we re-start the rollout.  Thank you for your patience........"
     },
     "viewPoint": null
-  }
 }
 ```
 

@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This POST action is to mark the status of a list of service update messages as favorited for the login user.
+This POST action is to mark the status of a list of [service update messages](../resources/serviceupdatemessage.md) as favorited for the login user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a `200 OK` response code and a Boolean value True in the response body. Otherwise, will return False in the response body.
 
-## Examples
+## Example
 
 ### Request
 <!-- {

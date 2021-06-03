@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a specified service health issue for tenant. Returns the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object for the specified issue.
+Read the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object.
+
+This operation is to get a specified service health issue for tenant. If the specified issue does not impact tenant or the issue is not visible to tenant due to permission, it won't be returned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/serviceAnnouncement/issues('{issueId}'))
+GET /admin/serviceAnnouncement/issues('{issueId}')
 ```
 
 ## Optional query parameters
@@ -48,7 +50,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [serviceHealthIssue](../resources/servicehealthissue.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 <!-- {
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues('MO226784'
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "m365ServiceHealth.readServices.commercialWebService.models.serviceHealthIssue"
+  "@odata.type": "microsoft.graph.serviceHealthIssue"
 }
 -->
 ``` http
@@ -74,31 +76,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#m365ServiceHealth.readServices.commercialWebService.models.serviceHealthIssue",
-    "startDateTime": "2020-11-14T08:15:00Z",
-    "endDateTime": "2020-11-14T09:45:00Z",
-   "lastModifiedDateTime": "2020-11-14T11:06:53.353Z",
-    "title": "Intermittently unable to access some Microsoft 365 services",
-    "id": "MO226784",
-    "impactDescription": "Users may have been intermittently unable to access some Microsoft 365 services.",
-    "classification": "Advisory",
-    "origin": "Microsoft",
-    "status": "ServiceRestored",
-    "service": "Microsoft 365 suite",
-    "feature": "Access",
-    "featureGroup": "Portal",
-    "isResolved": true,
-    "highImpact": null,
-    "details": [],
-    "posts": [
-      {
-        "contentType": "Text",
-        "content": "Title: Intermittently unable to invite partners to meetings using some Microsoft 365 services\n\nUser Impact: Users may have been intermittently unable to invite partners to meetings using some Microsoft 365 services....",
-        "createdDateTime": "2020-11-14T10:12:25.377Z"
-      }
-    ]
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/issues/$entity",
+  "startDateTime": "2020-11-14T08:15:00Z",
+  "endDateTime": "2020-11-14T09:45:00Z",
+  "lastModifiedDateTime": "2020-11-14T11:06:53.353Z",
+  "title": "Intermittently unable to access some Microsoft 365 services",
+  "id": "MO226784",
+  "impactDescription": "Users may have been intermittently unable to access some Microsoft 365 services.",
+  "classification": "Advisory",
+  "origin": "Microsoft",
+  "status": "ServiceRestored",
+  "service": "Microsoft 365 suite",
+  "feature": "Access",
+  "featureGroup": "Portal",
+  "isResolved": true,
+  "highImpact": null,
+  "details": [],
+  "posts": [
+    {
+      "contentType": "Text",
+      "content": "Title: Intermittently unable to invite partners to meetings using some Microsoft 365 services\n\nUser Impact: Users may have been intermittently unable to invite partners to meetings using some Microsoft 365 services....",
+      "createdDateTime": "2020-11-14T10:12:25.377Z"
+    }
+  ]
 }
 ```
 
