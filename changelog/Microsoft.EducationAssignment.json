@@ -1,9 +1,27 @@
 {
-  "changelog": [    
-     {
+  "changelog": [
+    {
       "ChangeList": [
-	{
-	  "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+        {
+          "Id": "f0bdabdb-62f0-497b-bd30-078719cfb0ff",
+          "ApiChange": "Method",
+          "ChangedApiName": "educationAssignmentResource",
+          "ChangeType": "Removal",
+          "Description": "Removed the support for PATCH operations on the **educationAssignmentResource** resource.",
+          "Target": "educationAssignmentResource"
+        }
+      ],
+      "Id": "f0bdabdb-62f0-497b-bd30-078719cfb0ff",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-02T18:46:18.701Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },  
+    {
+      "ChangeList": [
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
           "ApiChange": "Method",
           "ChangedApiName": "setUpResourcesFolder",
           "ChangeType": "Addition",
