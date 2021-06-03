@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.
+Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.
 
-This operation is to get health overviews of a specified service for tenant.
+This operation is to retrieve health overviews of a specified service for tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

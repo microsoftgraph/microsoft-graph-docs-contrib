@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.
+Retrieve the properties and relationships of a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.
 
-This operation is to get a specified SHD service message for the tenant. If the message is not visible to tenant or the message does not impact the tenant, it won't be returned.
+This operation is to retrieve a specified SHD service message for the tenant. If the message is not visible to tenant or the message does not impact the tenant, it won't be returned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

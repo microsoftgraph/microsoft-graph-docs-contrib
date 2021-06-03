@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get incident report in Edm.Steam.
+Retrieve incident report in Edm.Steam.
 
-This operation is to get the post incident report (PIR) document of a specified service issue for tenant. The PIR won't be returned to tenant if the specified issue is not visible to tenant.
+This operation is to retrieve the post incident report (PIR) document of a specified service issue for tenant. The PIR won't be returned to tenant if the specified issue is not visible to tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

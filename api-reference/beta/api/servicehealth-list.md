@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [serviceHealth](../resources/servicehealth.md) objects and their properties.
+Retrieve a list of the [serviceHealth](../resources/servicehealth.md) objects and their properties.
 
 This operation is to retrieve health overviews of tenant's all subscribed services.
 

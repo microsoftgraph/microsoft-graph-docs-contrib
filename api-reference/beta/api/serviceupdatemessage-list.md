@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties.
+Retrieve a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties.
 
-This operation is to get all SHD service messages that are visible to the tenant and impact the tenant.
+This operation is to retrieve all SHD service messages that are visible to the tenant and impact the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
