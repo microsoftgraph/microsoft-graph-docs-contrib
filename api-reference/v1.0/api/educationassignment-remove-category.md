@@ -43,6 +43,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
+
 ##### Request
 The following is an example of the request.
 <!-- {
