@@ -5,16 +5,16 @@
         {
           "Id": "f0bdabdb-62f0-497b-bd30-078719cfb0ff",
           "ApiChange": "Method",
-          "ChangedApiName": "Patch",
+          "ChangedApiName": "educationAssignmentResource",
           "ChangeType": "Removal",
-          "Description": "Removed the support for the Patch for the educationAssignmentResource resource.",
+          "Description": "Removed the support for PATCH operations on the **educationAssignmentResource** resource.",
           "Target": "educationAssignmentResource"
         }
       ],
       "Id": "f0bdabdb-62f0-497b-bd30-078719cfb0ff",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-05-31T18:46:18.701Z",
+      "CreatedDateTime": "2021-06-02T18:46:18.701Z",
       "WorkloadArea": "Education",
       "SubArea": ""
     },  
