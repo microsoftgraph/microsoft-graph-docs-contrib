@@ -97,7 +97,6 @@ The following example requests a sharing link to be created for the DriveItem sp
 The sharing link is configured to be read-only and usable by anyone with the link.
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveItem_createlink"
@@ -140,7 +139,7 @@ Content-length: 212
 
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -168,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-### Exmaple 2: Creating company sharable links
+### Example 2: Creating company sharable links
 
 OneDrive for Business and SharePoint support company sharable links.
 These are similar to anonymous links, except they only work for members of the owning organization.
@@ -176,8 +175,6 @@ To create a company sharable link, use the **scope** parameter with a value of `
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
 
 ```http
@@ -236,12 +233,10 @@ Content-Type: application/json
 When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
 When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
 
-**Note:** Embed links are only supported for OneDrive personal.
+>**Note:** Embed links are only supported for OneDrive personal.
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
 
 ```http
