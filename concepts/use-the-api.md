@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:0
 
 ### Graph Explorer
 
-Graph Explorer is a web-based tool that you can use to build and test requests using Microsoft Graph APIs. You can access Graph Explorer at: `https://developer.microsoft.com/graph/graph-explorer`.
+Graph Explorer is a web-based tool that you can use to build and test requests using Microsoft Graph APIs. You can access Graph Explorer at: [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 You can either access demo data without signing in, or you can sign in to a tenant of your own. Use the following steps to build the request:
 
@@ -127,7 +127,7 @@ A status code and message are displayed after a request is sent and the response
 
 ### Postman
 
-Postman is a tool that you can use to build and test requests using the Microsoft Graph APIs. You can download Postman at: `https://www.getpostman.com/`. To interact with Microsoft Graph in Postman, you use the Microsoft Graph collection.
+Postman is a tool that you can use to build and test requests using the Microsoft Graph APIs. You can download Postman at: [https://www.getpostman.com/](https://www.getpostman.com/). To interact with Microsoft Graph in Postman, you use the Microsoft Graph collection.
 
 For more information, see [Use Postman with the Microsoft Graph API](./use-postman.md).
 
