@@ -291,7 +291,7 @@ Content-Type: application/json
 
 ## Remarks
 
-* If both scope and type are not provided, the link created will be determined based on the callers ability on the item and policy enforced for the organization that is determined by the administrator of the organization.
+* To create a link based on the organization's default policy and the caller's permissions on the listItem, omit the scope and type parameters
 * Links created using this action do not expire unless a default expiration policy is enforced for the organization.
 * Links are visible in the sharing permissions for the item and can be removed by an owner of the item.
 * Links always point to the current version of a item unless the item is checked out (SharePoint only).
