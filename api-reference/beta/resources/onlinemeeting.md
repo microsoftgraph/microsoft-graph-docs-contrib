@@ -30,8 +30,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | Property              | Type                                          | Description                                                                                                                                                                                                                                                 |
 | :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                    |
-| allowAttendeeToEnableCamera | Boolean | Indicates if attendees can turn on camera. |
-| allowAttendeeToEnableMic | Boolean | Indicates if attendees can turn on microphone. |
+| allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. |
+| allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
 | alternativeRecording  | Stream                                        | The content stream of the alternative recording of a live event. Read-only.                                                                                                                                                                                 |
