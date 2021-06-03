@@ -55,7 +55,6 @@ If successful, this method returns `201 Created` response code and a new [educat
 
 The following is an example of the request to post a credit rubric (a rubric with no points).
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationrubric_from_educationuser_1"

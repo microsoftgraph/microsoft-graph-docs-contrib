@@ -59,7 +59,6 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 The following is an example of the request for updating a feedback outcome.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationfeedbackoutcome"
@@ -125,7 +124,6 @@ Content-type: application/json
 
 The following is an example of the request for updating a points outcome.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationpointsoutcome"
@@ -186,7 +184,6 @@ Content-type: application/json
 
 The following is an example of the request for updating a rubric outcome.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationoutcome"
@@ -275,8 +272,6 @@ Content-type: application/json
     ]
 }
 ```
-
-
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
