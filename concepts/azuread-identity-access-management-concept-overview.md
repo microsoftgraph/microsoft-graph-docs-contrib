@@ -80,7 +80,7 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-- Find out how to [Use the Azure AD REST APIs](/graph/api/resources/azure-ad-overview.
+- Find out how to [Use the Azure AD REST APIs](/graph/api/resources/azure-ad-overview).
 - Use Azure AD to [authenticate](./auth/index.yml) to Microsoft Graph.
 - Integrate [Azure AD sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.
 - See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.
