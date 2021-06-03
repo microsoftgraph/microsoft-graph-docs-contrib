@@ -206,14 +206,14 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Configuration | Permission | API |
 | ------------- | ---------- | --- |
-| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo`, retrieved person is a contact and `useContactApis` set to `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts&tabs=cs) |
-| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and person is not a contact or `useContactApis` is set to `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/user-list-people) |
-| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and user specified via email | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/user-list-people) |
-| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and contact specified via email | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts&tabs=cs) |
-| `userId` set | User.ReadBasic.All | | [/users/{id}](/graph/api/user-list-people) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo`, retrieved person is a contact and `useContactApis` set to `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and person is not a contact or `useContactApis` is set to `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and user specified via email | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and contact specified via email | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `userId` set | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people) |
 | `personQuery` set to `me` and `avatarType` set to `photo` | User.Read | [/me/photo/$value](/graph/api/profilephoto-get) |
 | `personQuery` set to `me` and `avatarType` set to something else than `photo` | User.Read | [/me](/graph/api/user-get) |
-| `personQuery` set to a value other than `me` and `useContactApis` set to `true` | People.Read, User.ReadBasic.All, Contacts.Read | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people), [/me/contacts/\*](/graph/api/user-list-contacts&tabs=cs) |
+| `personQuery` set to a value other than `me` and `useContactApis` set to `true` | People.Read, User.ReadBasic.All, Contacts.Read | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people), [/me/contacts/\*](/graph/api/user-list-contacts) |
 | `personQuery` set to a value other than `me` and `useContactApis` set to `false` | People.Read, User.ReadBasic.All | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people) |
 | `showPresence` set to `true` and `personQuery` set to `me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
 | `showPresence` set to `true` and `personQuery` set to a value other than `me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |

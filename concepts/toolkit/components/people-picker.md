@@ -136,7 +136,7 @@ This component uses the following Microsoft Graph APIs and permissions.
 | --- | ---------- | ------- |
 | `group-id` set | People.Read, User.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
 | `type` set to `Person` or `any` | People.Read | [/me/people](/graph/api/user-list-people) |
-| `type` set to `Group` or searching for users and `type` set to `Group` or `any` | Group.Read.All | [/groups](/group-list) |
+| `type` set to `Group` or searching for users and `type` set to `Group` or `any` | Group.Read.All | [/groups](/graph/api/group-list) |
 | `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |
 | searching for users and `type` set to `Person` or `any` | People.Read, User.ReadBasic.All | [/me/people](/graph/api/user-list-people), [/users](/graph/api/user-list) |
 

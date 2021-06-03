@@ -96,11 +96,7 @@ This component uses the following Microsoft Graph APIs and permissions:
 | default configuration | People.Read | [/me/people](/graph/api/user-list-people) |
 | `showPresence` set | Presence.Read.All | [/communications/getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) |
 
-When using the default templates, additional APIs and permissions are required. The default template for this component uses a [mgt-person](person.md) component, which requires the following.
-
-| Resource | Permission |
-| - | - |
-| [/users](/graph/api/user-list) | User.ReadBasic.All |
+When using the default templates, additional APIs and permissions are required. The default template for this component uses a [mgt-person](person.md) component. See its documentation for the list of required permissions.
 
 ## Authentication
 
