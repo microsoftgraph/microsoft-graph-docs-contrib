@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List assignments
+# List all assignments
 
 Namespace: microsoft.graph
 
@@ -58,7 +58,7 @@ The following is an example of the request.
   "name": "get_assignments"
 }-->
 ```http 
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
+GET https://graph.microsoft.com/beta/education/me/assignments
 ```
 
 ##### Response

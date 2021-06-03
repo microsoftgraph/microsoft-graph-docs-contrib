@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List assignments
+# List class assignments
 
 Namespace: microsoft.graph
 

@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# Create educationRubric
+# Attach educationRubric to an Assignment
 
 Namespace: microsoft.graph
 
