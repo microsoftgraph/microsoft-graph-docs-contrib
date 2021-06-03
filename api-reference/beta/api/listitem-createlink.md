@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **createLink** action can be used to create a sharing link for a [listItem](../resources/listitem.md).
+Create a sharing link for a [listItem](../resources/listitem.md).
 
 The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
@@ -21,7 +21,7 @@ If a sharing link of the specified type already exists for the app, this action 
 **listItem** resources inherit sharing permissions from the [list](../resources/list.md) the item resides in.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -46,17 +46,17 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, provide a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-|Parameter|Type|Description|
-|:---|:---|:---|
-|type|String|Optional.Optional.The type of sharing link to create. |
-|scope|String|Optional. The scope of link to create. Either anonymous, organization or users.|
-|expirationDateTime|DateTimeOffset|Optional. A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.|
-|password|String|Optional.The password of the sharing link that is set by the creator.|
-|recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
+|   Property             |  Type  |           Description                        |
+| :----------------------| :----- | :--------------------------------------------|
+|type|String|The type of sharing link to create. Optional. |
+|scope|String|The scope of link to create. Either `anonymous`, `organization` or `users`. Optional. |
+|expirationDateTime|DateTimeOffset|A string with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. Optional. |
+|password|String|The password of the sharing link that is set by the creator. Optional. |
+|recipients|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will receive access to the sharing link. Optional. |
 
 ### Link types
 
@@ -64,14 +64,14 @@ The following values are allowed for the **type** parameter.
 
 | Type value | Description                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| view           | Creates a read-only link to the Item.                                                                        |
-| review         | Creates a review link to the Item. This option is only available for files in OneDrive for Business and SharePoint.                   |
-| edit           | Creates an read-write link to the Item.                                                                       |
-| embed          | Creates an embeddable link to the Item.                                                                      |
-| blocksDownload | Creates a read-only link that blocks download to the Item. This option is only available for files in OneDrive for Business and SharePoint.  |
-| createOnly     | Creates an upload-only link to the Item. This option is only available for folders in OneDrive for Business and SharePoint.             |
+| view           | Creates a read-only link to the item.                                                                        |
+| review         | Creates a review link to the item. This option is only available for files in OneDrive for Business and SharePoint.                   |
+| edit           | Creates an read-write link to the item.                                                                       |
+| embed          | Creates an embeddable link to the item.                                                                      |
+| blocksDownload | Creates a read-only link that blocks download to the item. This option is only available for files in OneDrive for Business and SharePoint.  |
+| createOnly     | Creates an upload-only link to the item. This option is only available for folders in OneDrive for Business and SharePoint.             |
 | addressBar     | Creates the default link that is shown in the browser address bars for newly created files. Only available in OneDrive for Business and SharePoint. The organization admin configures whether this link type is supported, and what features are supported by this link type. |
-| adminDefault   | Creates the default link to the listItem as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
+| adminDefault   | Creates the default link to the item as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
 
 ### Scope types
 
@@ -85,7 +85,7 @@ The following values are allowed for the **scope** parameter.
 
 ## Response
 
-If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
+If successful, this method returns a single [permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
 
 The response will be `201 Created` if a new sharing link is created for the listItem or `200 OK` if an existing link is returned.
 
@@ -96,7 +96,7 @@ The following example requests a sharing link to be created for the listItem spe
 The sharing link is configured to be read-only and usable by anyone with the link.
 
 #### Request
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "listItem_createlink"
@@ -120,7 +120,7 @@ Content-length: 212
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -188,12 +188,12 @@ Content-Type: application/json
 }
 ```
 
-### Exmaple 3: Creating embeddable links
+### Example 3: Creating embeddable links
 
 When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
 When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
 
-**Note:** Embed links are only supported for OneDrive personal.
+>**Note:** Embed links are only supported for OneDrive personal.
 
 #### Request
 
