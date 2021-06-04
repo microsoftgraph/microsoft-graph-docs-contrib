@@ -61,11 +61,6 @@ The following is an example of the request.
   "name": "timecard_replace"
 }-->
 
-<!-- {
-  "blockType": "request",
-  "name": "timecard_replace"
-}-->
-
 ```http
 PUT https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/TCK_3cd7413f-0337-433b-9a49-da0923185b3f
 Content-type: application/json
@@ -121,8 +116,6 @@ Content-type: application/json
 The following is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.timeCard",
   "name": "timecard_replace"
 } -->
 
