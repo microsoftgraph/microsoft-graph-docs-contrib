@@ -40,10 +40,10 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - SharePoint [list][]
 - Teams [callRecord][]
 - Teams [channel][]
-- Teams [conversationMember][]
-- Teams [team][]
 - Teams [chatMessage][]
+- Teams [conversationMember][]
 - Teams [presence][] (preview)
+- Teams [team][]
 - [todoTask][] (preview)
 - [user][]
 

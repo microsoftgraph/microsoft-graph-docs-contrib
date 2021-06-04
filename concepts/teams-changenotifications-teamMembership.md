@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for change in teams membership using Microsoft Graph
+# Get change notifications for change in team membership using Microsoft Graph
 
 
 ### Subscribe to changes in membership of a particular team

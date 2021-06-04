@@ -31,11 +31,11 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox:<br>`/users/{id}/contacts` | No |
 | Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
 | Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | No |
-| Teams [chatmessage][] | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
 | Teams [channel][] | Changes to channels in all teams:<br>`/teams/getAllChannels` <br>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
+| Teams [chatmessage][] | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
 | Teams [conversationMember][] | Changes to membership in a specific team:<br>`/teams/{id}/members` | Yes |
-| Teams [team][] | Changes to any team in the tenant:<br>`/teams` <br>Changes to specific team:<br>`/teams/{id}` | Yes |
 | Teams [presence][] | Changes to a single user's presence: `/communications/presences/{id}` <br> Changes to multiple user presences:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Yes |
+| Teams [team][] | Changes to any team in the tenant:<br>`/teams` <br>Changes to specific team:<br>`/teams/{id}` | Yes |
 | [todoTask][] | Changes to all task in a specific task list:<br>`/me/todo/lists/{todoTaskListId}/tasks` | No |
 | [user][] | Changes to all users:<br>`/users` <br>Changes to a specific user:<br>`/users/{id}`| No |
 

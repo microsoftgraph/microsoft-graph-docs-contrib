@@ -150,11 +150,11 @@ The following are valid values for the resource property.
 | Resource type | Examples |
 |:------ |:----- |
 |[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Channels](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
+|[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Contacts](../resources/contact.md)|`me/contacts`|
-|[Conversations](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[ConversationMember](../resources/conversationmember.md)|`/teams/{id}/members`|
+|[Conversations](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[Drives](../resources/driveitem.md)|`me/drive/root`|
 |[Events](../resources/event.md)|`me/events`|
 |[Groups](../resources/group.md)|`groups`|
@@ -163,7 +163,7 @@ The following are valid values for the resource property.
 |[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ({id},{id}…)` (multiple users)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
-|[Teams](../resources/team.md)|`/teams`,`/teams/{id}`|
+|[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
 |[Users](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|

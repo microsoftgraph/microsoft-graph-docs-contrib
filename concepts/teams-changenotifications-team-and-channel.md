@@ -76,7 +76,7 @@ Content-Type: application/json
 
 To get change notifications for all changes related to any channel (create, update, and delete) in a tenant, subscribe to `/teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
->**Note:** Private channel is not supported.
+>**Note:** Private channels aren't supported.
 
 #### Permissions
 
@@ -169,7 +169,7 @@ For notifications with resource data, the payload looks like the following. This
 
 The decrypted notification payload looks like the following. The payload conforms to the [teams](/graph/api/resources/team?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
->**Note:** [discoverySettings](/graph/api/resources/teamdiscoverysettings?preserve-view=true)  and [classSettings](/graph/api/resources/teamclasssettings?preserve-view=true) are not exposed in payload data.
+>**Note:** [discoverySettings](/graph/api/resources/teamdiscoverysettings?preserve-view=true) and [classSettings](/graph/api/resources/teamclasssettings?preserve-view=true) aren't exposed in payload data.
 
 ```json
 {
@@ -282,7 +282,7 @@ For notifications without resource data, the payload looks like the following. T
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message. GET calls will always return the current state of the message. If the message is changed between when the notification is sent and when the message is retrieved, the operation will return the updated message.
 
 
->**Note:** Channel email address is not returned in payload.
+>**Note:** Channel email address isn't returned in the payload.
 
 For notifications without resource data, the payload looks like the following. This payload is for a property change in a team.
 
