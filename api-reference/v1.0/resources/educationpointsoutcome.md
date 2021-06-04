@@ -2,7 +2,7 @@
 title: "educationPointsOutcome resource type"
 description: "An educationOutcome that gives a numerical grade"
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "resourcePageType"
 ---

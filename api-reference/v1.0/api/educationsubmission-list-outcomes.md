@@ -2,7 +2,7 @@
 title: "List outcomes"
 description: "Retrieve a list of educationoutcome objects."
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---

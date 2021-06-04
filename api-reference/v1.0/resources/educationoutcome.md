@@ -2,7 +2,7 @@
 title: "educationOutcome resource type"
 description: "The result of grading an assignment"
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "resourcePageType"
 ---

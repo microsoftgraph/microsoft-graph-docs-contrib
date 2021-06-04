@@ -2,7 +2,7 @@
 title: "Add educationCategories"
 description: "Add an existing educationCategory to this educationAssignment"
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---

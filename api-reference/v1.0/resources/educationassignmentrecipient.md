@@ -2,7 +2,7 @@
 title: "educationAssignmentRecipient resource type"
 description: "Used within the **assignments.assignTo** property. This superclass is abstract and you cannot"
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: resourcePageType
 ---

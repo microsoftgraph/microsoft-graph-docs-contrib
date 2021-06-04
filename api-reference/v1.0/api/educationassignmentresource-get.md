@@ -1,7 +1,7 @@
 ---
 title: "Get educationAssignmentResource"
 description: "Get the properties of a specific resource on an assignment.  "
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType

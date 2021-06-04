@@ -2,7 +2,7 @@
 title: "rubricCriterion resource type"
 description: "A criterion of a rubric"
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "resourcePageType"
 ---

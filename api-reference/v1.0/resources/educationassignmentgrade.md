@@ -2,7 +2,7 @@
 title: "educationAssignmentGrade resource type"
 description: " however, all types of grading (points, pass/fail, and so on) are subclasses of this"
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: resourcePageType
 ---

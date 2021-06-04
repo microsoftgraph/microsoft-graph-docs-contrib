@@ -1,7 +1,7 @@
 ---
 title: "List submissions"
 description: "List all the submissions associated with this assignment. A teacher or an application with application permissions can get all the submissions while a student can only get submissions that they are associated with."
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType

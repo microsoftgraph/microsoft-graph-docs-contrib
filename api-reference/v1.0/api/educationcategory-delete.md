@@ -1,7 +1,7 @@
 ---
 title: "Delete educationCategory"
 description: "Delete an existing category."
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType

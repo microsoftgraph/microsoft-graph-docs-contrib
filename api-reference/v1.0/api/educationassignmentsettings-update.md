@@ -1,7 +1,7 @@
 ---
 title: "Update educationAssignmentSettings"
 description: "Update the properties of an educationAssignmentSettings object."
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "educationAssignmentClassRecipient resource type"
 description: "Used inside the assignment.assignTo property. When set to class recipient, every student in the class will "
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: resourcePageType
 ---

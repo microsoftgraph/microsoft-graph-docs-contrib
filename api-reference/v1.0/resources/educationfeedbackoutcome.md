@@ -2,7 +2,7 @@
 title: "educationFeedbackOutcome resource type"
 description: "An educationOutcome that gives feedback in the form of text."
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "resourcePageType"
 ---

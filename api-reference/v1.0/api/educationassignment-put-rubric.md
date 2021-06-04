@@ -2,7 +2,7 @@
 title: "Attach educationRubric to educationAssignment"
 description: "Attach an existing educationRubric object to an educationAssignment."
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List educationAssignmentResources"
 description: "Get all the resources associated with this assignment."
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType

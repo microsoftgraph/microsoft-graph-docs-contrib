@@ -2,7 +2,7 @@
 title: "Update educationRubric"
 description: "Update the properties of educationRubric object."
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---

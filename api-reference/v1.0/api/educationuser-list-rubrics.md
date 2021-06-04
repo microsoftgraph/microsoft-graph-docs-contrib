@@ -2,7 +2,7 @@
 title: "List rubrics"
 description: "Retrieve a list of educationrubric objects."
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---

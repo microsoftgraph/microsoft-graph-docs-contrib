@@ -2,7 +2,7 @@
 title: "Remove educationRubric from educationAssignment"
 description: "Remove an educationRubric from an educationAssignment"
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---

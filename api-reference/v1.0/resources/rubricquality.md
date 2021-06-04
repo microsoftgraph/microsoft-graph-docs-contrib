@@ -2,7 +2,7 @@
 title: "rubricQuality resource type"
 description: "A quality of a rubric"
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "resourcePageType"
 ---

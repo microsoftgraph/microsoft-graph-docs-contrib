@@ -1,7 +1,7 @@
 ---
 title: "educationSubmissionIndividualRecipient resource type"
 description: "A subclass of educationSubmissionRecipient that indicates that a submission is assigned to an individual in the class.  "
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType
