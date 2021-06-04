@@ -1,6 +1,48 @@
 {
   "changelog": [
-        {
+      {
+          "ChangeList": [
+              {
+                  "Id": "ac09e214-414c-43f1-a407-651f69f2cef3",
+                  "ApiChange": "Method",
+                  "ChangedApiName": "user",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [Get transitiveReports](https://docs.microsoft.com/en-us/graph/api/user-get-transitivereports?view=graph-rest-beta) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+                  "Target": "user"
+              },
+              {
+                  "Id": "ac09e214-414c-43f1-a407-651f69f2cef3",
+                  "ApiChange": "Property",
+                  "ChangedApiName": "user",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **transitiveReports** navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+                  "Target": "user"
+              },
+              {
+                  "Id": "ac09e214-414c-43f1-a407-651f69f2cef3",
+                  "ApiChange": "Method",
+                  "ChangedApiName": "orgContact",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [Get transitiveReports](https://docs.microsoft.com/en-us/graph/api/orgcontact-get-transitivereports?view=graph-rest-beta) method to the [orgContact](https://docs.microsoft.com/en-us/graph/api/resources/orgcontact?view=graph-rest-beta) resource.",
+                  "Target": "orgContact"
+              },
+              {
+                  "Id": "ac09e214-414c-43f1-a407-651f69f2cef3",
+                  "ApiChange": "Property",
+                  "ChangedApiName": "orgContact",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **transitiveReports** navigation property to the [orgContact](https://docs.microsoft.com/en-us/graph/api/resources/orgcontact?view=graph-rest-beta) resource.",
+                  "Target": "orgContact"
+              }
+          ],
+          "Id": "ac09e214-414c-43f1-a407-651f69f2cef3",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2021-06-04T09:02:13.750Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Directory management"
+      },
+      {
           "ChangeList": [
               {
                   "Id": "1542fba3-8dbc-11eb-a57c-31dcdef91872",

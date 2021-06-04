@@ -67,6 +67,7 @@ This resource supports:
 | [getByIds](../api/directoryobject-getbyids.md) | String collection | Returns the directory objects specified in a list of ids. |
 | [getMemberGroups](../api/user-getmembergroups.md) | String collection | Return all the groups that the user is a member of. The check is transitive. |
 | [getMemberObjects](../api/user-getmemberobjects.md) | String collection | Return all the groups, directory roles, and administrative units that the user is a member of. The check is transitive. |
+| [Get transitiveReports](../api/user-get-transitivereports.md) | Integer | Get the count of transitive reports for a user from the transitiveReports navigation property. |
 | [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects created by the user from the createdObjects navigation property. |
 | [List licenseDetails](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) collection | Get a licenseDetails object collection. |
 | [List ownedDevices](../api/user-list-owneddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that are owned by the user from the ownedDevices navigation property. |
@@ -313,6 +314,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
+|transitiveReports|[directoryObject](directoryobject.md) collection | The transitive reports for a user. Read-only.|
 |usageRight|[usageRight](usageright.md) collection|Represents the usage rights a user has been granted. |
 
 ### User preferences for languages and regional formats
