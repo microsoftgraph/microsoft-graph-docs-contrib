@@ -601,6 +601,14 @@ Namespace: microsoft.graph
 |assignIfOpen|
 |unknownFutureValue|
 
+### educationAddToCalendarOptions values
+|Member|
+|:---|
+|none|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -1585,6 +1593,15 @@ Possible values for user account types (group membership), per Windows definitio
 |adminConfirmedSigninCompromised|
 |adminConfirmedUserCompromised|
 |hidden|
+|unknownFutureValue|
+
+### advancedConfigState values 
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
 |unknownFutureValue|
 
 ### referenceAttachmentPermission values
