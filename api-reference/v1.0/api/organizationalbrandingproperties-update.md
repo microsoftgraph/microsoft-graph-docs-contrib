@@ -2,7 +2,7 @@
 title: "Update organizationalBrandingProperties"
 description: "Update the properties of an organizationalBrandingProperties object."
 localization_priority: Normal
-author: "almars"
+author: "AlexanderMars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -120,7 +120,6 @@ The following request updates the banner logo for the default branding.
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties_2"
