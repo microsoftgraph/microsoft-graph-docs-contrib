@@ -1,19 +1,21 @@
 ---
-title: Get printUsageSummaryByUser
+title: Get printUsageByUser
 description: Retrieve a user's usage summary for a particular time period.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
-# Get printUsageSummaryByUser
+# Get printUsageByUser
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a user's usage summary for a particular time period. See the [printUsageSummaryByUser](../resources/printUsageSummaryByUser.md) documentation for descriptions of each of the endpoints.
+Retrieve a user's usage summary for a particular time period. 
+
+See the [printUsageByUser](../resources/printUsageByUser.md) documentation for descriptions of each of the endpoints.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,10 +31,10 @@ To use the Universal Print service, the user or app's tenant must have an active
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /reports/dailyPrintUsageSummariesByUser/{id}
-GET /reports/monthlyPrintUsageSummariesByUser/{id}
-GET /print/reports/dailyPrintUsageSummariesByUser/{id}
-GET /print/reports/monthlyPrintUsageSummariesByUser/{id}
+GET /reports/dailyPrintUsageByUser/{id}
+GET /reports/monthlyPrintUsageByUser/{id}
+GET /print/reports/dailyPrintUsageByUser/{id}
+GET /print/reports/monthlyPrintUsageByUser/{id}
 ```
 
 ## Optional query parameters
@@ -46,18 +48,19 @@ This method supports some of the OData query parameters to help customize the re
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [printUsageByUser](../resources/printUsageByUser.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_printUsageSummaryByUser"
+  "name": "get_printUsageByUser",
+  "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByUser/{id}
+```http
+GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser/016b5565-3bbf-4067-b9ff-4d68167eb1a6
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printusagesummarybyuser-csharp-snippets.md)]
@@ -77,13 +80,13 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByUse
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printUsageSummaryByUser"
+  "@odata.type": "microsoft.graph.printUsageByUser"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -104,7 +107,7 @@ Content-length: 251
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get printUsageSummaryByUser",
+  "description": "Get printUsageByUser",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

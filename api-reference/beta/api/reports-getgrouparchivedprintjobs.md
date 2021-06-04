@@ -3,7 +3,7 @@ title: "reports: getGroupArchivedPrintJobs"
 description: Get a list of archived print jobs for a particular group.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -54,10 +54,11 @@ The following example shows how to call this API.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "reports-getgrouparchivedprintjobs"
+  "name": "reports-getgrouparchivedprintjobs",
+  "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(groupId='{id}',startDateTime={timestamp},endDateTime={timestamp})
+GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(groupId='016b5565-3bbf-4067-b9ff-4d68167eb1a6',startDateTime=2021-05-24,endDateTime=2021-05-25)
 ```
 
 ##### Response
