@@ -8,7 +8,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "channel",
           "ChangeType": "Addition",
-          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [channel](https://docs.microsoft.com/graph/api/resources/channel).",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for change notifications to the [channel](https://docs.microsoft.com/graph/api/resources/channel) resource.",
           "Target": "channel"
         },
 			
@@ -17,7 +17,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
-          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [team](https://docs.microsoft.com/graph/api/resources/team).",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for change notifications to the [team](https://docs.microsoft.com/graph/api/resources/team) resource.",
           "Target": "team"
         },
 			
@@ -26,7 +26,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conversationMember",
           "ChangeType": "Addition",
-          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [conversationMember](https://docs.microsoft.com/graph/api/resources/conversationMember).",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for change notifications to the [conversationMember](https://docs.microsoft.com/graph/api/resources/conversationMember) resource.",
           "Target": "team"
         }   
       ],
