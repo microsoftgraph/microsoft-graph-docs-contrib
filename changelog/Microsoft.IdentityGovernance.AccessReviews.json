@@ -527,6 +527,24 @@
             "CreatedDateTime": "2021-06-01T21:06:50.952Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Identity governance"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "fe3acf08-6328-46d0-86ba-71a396b5f827",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewInstanceDecisionItemResource",
+                    "ChangeType": "Update",
+                    "Description": "Updated the [accessReviewInstanceDecisionItemResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemResource?view=graph-rest-beta) resource type to be open type.",
+                    "Target": "accessReviewInstanceDecisionItemResource"
+                }
+            ],
+            "Id": "fe3acf08-6328-46d0-86ba-71a396b5f827",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-03T21:06:50.952Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Identity governance"
         }
     ]
 }
