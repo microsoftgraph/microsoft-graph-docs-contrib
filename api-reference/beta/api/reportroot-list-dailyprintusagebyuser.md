@@ -1,19 +1,19 @@
 ---
-title: List dailyPrintUsageSummariesByPrinter
-description: Retrieve a list of daily print usage summaries, grouped by printer.
+title: List dailyPrintUsageByUser
+description: Retrieve a list of daily print usage summaries, grouped by user.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
-# List dailyPrintUsageSummariesByPrinter
+# List dailyPrintUsageByUser
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of daily print usage summaries, grouped by [printer](../resources/printer.md).
+Retrieve a list of daily print usage summaries, grouped by user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,9 +29,12 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /reports/dailyPrintUsageSummariesByPrinter
-GET /print/reports/dailyPrintUsageSummariesByPrinter
+GET /reports/dailyPrintUsageByUser
+GET /print/reports/dailyPrintUsageByUser
 ```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Name      |Description|
@@ -41,56 +44,56 @@ GET /print/reports/dailyPrintUsageSummariesByPrinter
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [printUsageSummaryByPrinter](../resources/printusagesummarybyprinter.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [printUsageByUser](../resources/printUsageByUser.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_endpoints_3"
+  "name": "get_endpoints_4"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByPrinter
+GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-3-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-3-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-3-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-3-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printUsageSummaryByPrinter",
+  "@odata.type": "microsoft.graph.printUsageByUser",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 314
+Content-length: 268
 
 {
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+      "userPrincipalName": "username@contoso.com",
       "usageDate": "2020-02-04T00:00:00.0000000Z",
       "completedBlackAndWhiteJobCount": 42,
       "completedColorJobCount": 0,
@@ -104,7 +107,7 @@ Content-length: 314
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List dailyPrintUsageSummariesByPrinter",
+  "description": "List dailyPrintUsageByUser",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

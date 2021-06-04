@@ -257,7 +257,7 @@ Content-type: application/json
     "recurrence": {
       "pattern": {
         "type": "absoluteMonthly",
-        "dayOfMonth": "5",
+        "dayOfMonth": 5,
         "interval": 3
       },
       "range": {
@@ -335,13 +335,7 @@ Content-type: application/json
       "queryRoot": null
     }
   ],
-  "backupReviewers": [
-    {
-      "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-      "queryType": "MicrosoftGraph",
-      "queryRoot": null
-    }
-  ],
+  "backupReviewers": [],
   "fallbackReviewers": [
     {
       "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
@@ -363,24 +357,20 @@ Content-type: application/json
         "type": "absoluteMonthly",
         "interval": 3,
         "month": 0,
-        "dayOfMonth": 0,
+        "dayOfMonth": 5,
         "daysOfWeek": [],
         "firstDayOfWeek": "sunday",
         "index": "first"
       },
       "range": {
-        "type": "numbered",
+        "type": "noEnd",
         "numberOfOccurrences": 0,
         "recurrenceTimeZone": null,
         "startDate": "2021-05-05",
-        "endDate": "9999-12-31"
+        "endDate": null
       }
     },
-    "applyActions": [
-      {
-        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
-      }
-    ]
+    "applyActions": []
   }
 }
 ```
