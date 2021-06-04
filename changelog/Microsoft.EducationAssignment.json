@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "fb71f6be-0125-43c3-b7e1-b3ca14c2f17d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "General availability of assignments service APIs",
+          "Target": ""
+        }
+      ],
+      "Id": "fb71f6be-0125-43c3-b7e1-b3ca14c2f17d",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-06-04T18:46:18.701Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },  
+    {
+      "ChangeList": [
+        {
           "Id": "f0bdabdb-62f0-497b-bd30-078719cfb0ff",
           "ApiChange": "Method",
           "ChangedApiName": "educationAssignmentResource",
