@@ -1,5 +1,5 @@
 ---
-title: "List assignments"
+title: "List user's all assignments"
 description: "Returns a list of assignments assigned to a user for all classes. This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace."
 localization_priority: Normal
 author: "mmast-msft"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List assignments
+# List user's all assignments
 
 Namespace: microsoft.graph
 
@@ -53,12 +53,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ##### Request
 The following is an example of the request.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_assignments"
 }-->
+
 ```http 
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
+GET https://graph.microsoft.com/beta/education/me/assignments
 ```
 
 ##### Response

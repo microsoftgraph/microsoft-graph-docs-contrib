@@ -1,6 +1,6 @@
 ---
 title: "Delete educationAssignmentResource"
-description: "."
+description: "Delete a specific resource attached to an assignment."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
