@@ -1,5 +1,5 @@
 ---
-title: "Get transitiveReports"
+title: "orgContact: Get transitiveReports"
 description: "Get the count of transitive reports for an organizational contact."
 author: "dkershaw10"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get transitiveReports
+# orgContact: Get transitiveReports
 
 Namespace: microsoft.graph
 

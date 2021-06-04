@@ -1,5 +1,5 @@
 ---
-title: "Get transitiveReports"
+title: "user: Get transitiveReports"
 description: "Get the count of transitive reports for a user."
 author: "dkershaw10"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get transitiveReports
+# user: Get transitiveReports
 
 Namespace: microsoft.graph
 
