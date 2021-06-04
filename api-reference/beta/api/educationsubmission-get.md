@@ -92,20 +92,20 @@ Content-type: application/json
 Content-length: 712
 
 {
-      "id": "33223",
-      "recipient": {
-        "userId": "13015"
-      },
-      "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-      "status": "working",
-      "submittedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "submittedDateTime": "2014-01-01T00:00:00Z"
+  "id": "33223",
+  "recipient": {
+    "userId": "13015"
+  },
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
+  "status": "working",
+  "submittedBy": {
+    "user": {
+      "displayName": "Susana Rocha",
+      "id": "14012"
     }
+  },
+  "submittedDateTime": "2014-01-01T00:00:00Z"
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
