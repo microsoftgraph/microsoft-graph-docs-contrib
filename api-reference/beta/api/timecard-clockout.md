@@ -62,7 +62,6 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following is an example of the request. 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timecard-clockout"
@@ -87,8 +86,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.timeCard"
+  "truncated": true
 } -->
 
 ```http
