@@ -7,7 +7,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "provisioningPolicyName",
                     "ChangeType": "Addition",
-                    "Description": "Added the `provisioningPolicyName` property to the **cloudPC** EntityType.",
+                    "Description": "Added the **provisioningPolicyName** property to the **cloudPC** resource.",
                     "Target": "cloudPC"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "onPremisesConnectionName",
                     "ChangeType": "Addition",
-                    "Description": "Added the `onPremisesConnectionName` property to the **cloudPC** EntityType.",
+                    "Description": "Added the **onPremisesConnectionName** property to the **cloudPC** resource.",
                     "Target": "cloudPC"
                 },
                 {
@@ -23,14 +23,14 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "gracePeriodEndDateTime",
                     "ChangeType": "Addition",
-                    "Description": "Added the `gracePeriodEndDateTime` property to the **cloudPC** EntityType.",
+                    "Description": "Added the **gracePeriodEndDateTime** property to the **cloudPC** resource.",
                     "Target": "cloudPC"
                 }
             ],
             "Id":"2e1f1f29-1f02-4afa-8ab1-5160419eb0cb",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2021-05-012T17:52:07.177Z",
+            "CreatedDateTime": "2021-06-03T17:52:07.177Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
