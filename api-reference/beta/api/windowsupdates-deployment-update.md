@@ -65,7 +65,7 @@ In this example, the deployment is paused by updating the `requestedValue` of th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_deployment",
+  "name": "update_deployment_1",
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
@@ -144,7 +144,7 @@ In this example, the `settings` property of the deployment is updated to add a m
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "update_deployment",
+  "name": "update_deployment_2",
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
