@@ -55,6 +55,7 @@ If successful, this method returns a `200 OK` response code and a [serviceUpdate
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["'MC172851'"],
   "name": "get_serviceupdatemessage"
 }
 -->

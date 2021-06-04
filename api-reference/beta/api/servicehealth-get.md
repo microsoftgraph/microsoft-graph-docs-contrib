@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a [serviceHealth
 #### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["'Microsoft 365 suite'"],
   "name": "get_servicehealth"
 }
 -->
@@ -92,6 +93,7 @@ Content-Type: application/json
 #### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["'Microsoft 365 suite'"],
   "name": "get_servicehealth_with_issues"
 }
 -->
