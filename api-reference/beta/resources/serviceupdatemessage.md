@@ -22,12 +22,12 @@ This resource type serves to important publications such as major updates in a p
 |:---|:---|:---|
 |[List serviceUpdateMessages](../api/serviceupdatemessage-list.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md) collection|Gets all SHD service messages for the tenant. The operation returnsa list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties.|
 |[Get serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Gets a specified SHD service message for the tenant. The operation returns a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.|
-|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|This POST action is to mark the status of a list of service update messages as read for the login user.|
-|[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|This POST action is to mark the status of a list of service update messages as unread for the login user.|
-|[archive](../api/serviceupdatemessage-archive.md)|Boolean|This POST action is to mark the status of a list of service update messages as archived for the login user.|
-|[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|This POST action is to mark the status of a list of service update messages as unarchived for the login user.|
-|[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|This POST action is to mark the status of a list of service update messages as favorited for the login user.|
-|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|This POST action is to mark the status of a list of service update messages as unfavorited for the login user.|
+|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|This POST action is to change the status of a list of service update messages to read for the login user.|
+|[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|This POST action is to change the status of a list of service update messages to unread for the login user.|
+|[archive](../api/serviceupdatemessage-archive.md)|Boolean|This POST action is to archive a list of service update messages for the login user.|
+|[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|This POST action is to unarchive a list of service update messages for the login user.|
+|[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|This POST action is to change the status of a list of service update messages to favorited for the login user.|
+|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|This POST action is to change the status of a list of service update messages to unfavorited for the login user.|
 
 ## Properties
 |Property|Type|Description|
@@ -56,7 +56,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.serviceUpdateMessage",
-  "baseType": "microsoft.graph.serviceAnnouncementBase",
   "openType": false
 }
 -->
@@ -88,8 +87,7 @@ The following is a JSON representation of the resource.
   ],
   "viewPoint": {
     "@odata.type": "microsoft.graph.serviceUpdateMessageViewpoint"
-  },
-  "expiryDateTime": "String (timestamp)"
+  }
 }
 ```
 

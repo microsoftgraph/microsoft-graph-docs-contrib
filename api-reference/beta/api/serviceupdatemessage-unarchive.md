@@ -78,7 +78,7 @@ Content-length: 42
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "boolean"
 }
 -->
 ``` http

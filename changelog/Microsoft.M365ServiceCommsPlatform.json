@@ -3,14 +3,6 @@
        {
           "ChangeList":[
              {
-                "Id":"1a9e1436-b4d6-11eb-986b-33e29fab3358",
-                "ApiChange":"Resource",
-                "ChangedApiName":"serviceAnnouncementBase",
-                "ChangeType":"Addition",
-                "Description":"Added the [serviceAnnouncementBase](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncementBase?view=graph-rest-beta) resource type.",
-                "Target":"serviceAnnouncementBase"
-             },
-             {
                 "Id":"1aa0762b-b4d6-11eb-986b-33e29fab3358",
                 "ApiChange":"Resource",
                 "ChangedApiName":"serviceAnnouncement",

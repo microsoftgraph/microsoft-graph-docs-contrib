@@ -55,7 +55,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.serviceHealthIssue",
-  "baseType": "microsoft.graph.serviceAnnouncementBase",
   "openType": false
 }
 -->
@@ -84,8 +83,7 @@ The following is a JSON representation of the resource.
   "service": "String",
   "feature": "String",
   "featureGroup": "String",
-  "isResolved": "Boolean",
-  "highImpact": "Boolean"
+  "isResolved": "Boolean"
 }
 ```
 
