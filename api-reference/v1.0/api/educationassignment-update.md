@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "update_educationassignment"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/11021/assignments/19002
+PATCH https://graph.microsoft.com/v1.0/education/classes/11021/assignments/19002
 Content-type: application/json
 Content-length: 279
 

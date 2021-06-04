@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http 
-GET https://graph.microsoft.com/beta/education/me/assignments
+GET https://graph.microsoft.com/v1.0/education/me/assignments
 ```
 
 ##### Response

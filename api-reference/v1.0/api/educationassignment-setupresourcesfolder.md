@@ -51,7 +51,7 @@ The following is an example of a request.
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/setUpResourcesFolder
+POST https://graph.microsoft.com/v1.0/education/classes/11012/assignments/19002/setUpResourcesFolder
 Content-type: application/json
 
 {

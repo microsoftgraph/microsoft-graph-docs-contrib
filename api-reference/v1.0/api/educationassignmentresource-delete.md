@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "delete_educationassignmentresource"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources/22002
+DELETE https://graph.microsoft.com/v1.0/education/classes/11021/assignments/19002/resources/22002
 ```
 
 ##### Response

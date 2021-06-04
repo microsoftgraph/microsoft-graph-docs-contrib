@@ -70,7 +70,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
+GET https://graph.microsoft.com/v1.0/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 ```
 
 ### Response

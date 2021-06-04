@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/education/me/rubrics/{id}
+DELETE https://graph.microsoft.com/v1.0/education/me/rubrics/{id}
 ```
 
 ### Response

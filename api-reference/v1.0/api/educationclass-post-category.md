@@ -51,7 +51,7 @@ The following is an example of the request.
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11019/assignmentCategories
+POST https://graph.microsoft.com/v1.0/education/classes/11019/assignmentCategories
 Content-type: application/json
 Content-length: 33
 

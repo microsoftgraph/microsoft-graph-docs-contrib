@@ -61,7 +61,7 @@ The following is an example of the request to post a credit rubric (a rubric wit
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/education/me/rubrics
+POST https://graph.microsoft.com/v1.0/education/me/rubrics
 Content-type: application/json
 
 {
@@ -231,7 +231,7 @@ The following is an example of the request to post a rubric with points.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/education/me/rubrics
+POST https://graph.microsoft.com/v1.0/education/me/rubrics
 Content-type: application/json
 
 {

@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
+PATCH https://graph.microsoft.com/v1.0/education/classes/{id}/assignmentDefaults
 Content-Type: application/json
 Content-length: 181
 

@@ -65,7 +65,7 @@ The following is an example of the request for updating a feedback outcome.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/v1.0/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {
@@ -130,7 +130,7 @@ The following is an example of the request for updating a points outcome.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/v1.0/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {
@@ -190,7 +190,7 @@ The following is an example of the request for updating a rubric outcome.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/v1.0/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {

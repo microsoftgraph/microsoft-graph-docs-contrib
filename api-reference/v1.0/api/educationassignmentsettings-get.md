@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [educationAss
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
+GET https://graph.microsoft.com/v1.0/education/classes/{id}/assignmentSettings
 ```
 
 ### Response

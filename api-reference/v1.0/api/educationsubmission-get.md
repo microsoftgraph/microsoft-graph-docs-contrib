@@ -53,7 +53,7 @@ The following is an example of the request.
   "name": "get_educationsubmission"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/submissions/33223
+GET https://graph.microsoft.com/v1.0/education/classes/11010/assignments/19002/submissions/33223
 ```
 
 ### Response

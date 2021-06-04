@@ -71,7 +71,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/me/rubrics/{id}
+PATCH https://graph.microsoft.com/v1.0/education/me/rubrics/{id}
 Content-type: application/json
 
 {

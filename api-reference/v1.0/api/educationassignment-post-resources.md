@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "create_educationassignmentresource_from_educationassignment"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources
+POST https://graph.microsoft.com/v1.0/education/classes/11021/assignments/19002/resources
 Content-type: application/json
 Content-length: 212
 

@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rubric/$ref
+PUT https://graph.microsoft.com/v1.0/education/classes/{id}/assignments/{id}/rubric/$ref
 Content-type: application/json
 
 {

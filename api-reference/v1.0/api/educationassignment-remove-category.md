@@ -51,7 +51,7 @@ The following is an example of the request.
   "name": "add_educationcategory_to_educationassignment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
+DELETE https://graph.microsoft.com/v1.0/education/classes/11021/assignments/19002/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
 ```
 
 ##### Response

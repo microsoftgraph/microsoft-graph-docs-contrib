@@ -51,7 +51,7 @@ The following is an example of the request.
   "name": "get_resources_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/resources
+GET https://graph.microsoft.com/v1.0/education/classes/11012/assignments/19002/resources
 ```
 
 ##### Response
