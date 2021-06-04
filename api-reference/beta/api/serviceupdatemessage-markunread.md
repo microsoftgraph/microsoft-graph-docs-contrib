@@ -70,7 +70,6 @@ Content-length: 42
 }
 ```
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -84,7 +83,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": "True"
+  "value": true
 }
 ```
-

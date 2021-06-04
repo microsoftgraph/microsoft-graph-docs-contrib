@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A serviceAnnouncement is a top level container for service communications resources.
+A top level container for service communications resources.
 
 ## Methods
 This resource type doesn't have methods.

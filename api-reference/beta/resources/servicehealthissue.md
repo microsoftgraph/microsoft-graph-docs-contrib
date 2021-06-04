@@ -23,9 +23,9 @@ The service health issue could be a service incident or service advisory. For ex
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List serviceHealthIssues](../api/servicehealthissue-list.md)|[serviceHealthIssue](../resources/servicehealthissue.md) collection|Get a list of the service issues that affected the tenant. Returns a list of  [serviceHealthIssue](../resources/servicehealthissue.md) objects and their properties.|
-|[Get serviceHealthIssue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Get the specified service issue for the tenant. Returns a [serviceHealthIssue](../resources/servicehealthissue.md) object.|
-|[Get incidentReport](../api/servicehealthissue-incidentreport.md)|Stream|Get IncidentReport document of a specified service health issue|
+|[List serviceHealthIssues](../api/servicehealthissue-list.md)|[serviceHealthIssue](../resources/servicehealthissue.md) collection|Retrieve a list of the service issues that affected the tenant. Returns a list of  [serviceHealthIssue](../resources/servicehealthissue.md) objects and their properties.|
+|[Get serviceHealthIssue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Retrieve the specified service issue for the tenant. Returns a [serviceHealthIssue](../resources/servicehealthissue.md) object.|
+|[Get incidentReport](../api/servicehealthissue-incidentreport.md)|Stream|Provide IncidentReport document of a specified service health issue|
 
 ## Properties
 |Property|Type|Description|
