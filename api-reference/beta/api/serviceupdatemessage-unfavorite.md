@@ -1,6 +1,6 @@
 ---
 title: "serviceUpdateMessage: unfavorite"
-description: "This POST action is to mark the status of a list of service update messages as unfavorited for the login user."
+description: "Change the status of a list of service update messages to unfavorited for the login user."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This POST action is to mark the status of a list of [service update messages](../resources/serviceupdatemessage.md) as unfavorited for the login user.
+Change the status of a list of service update messages to unfavorited for the login user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,10 +47,9 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |messageIds|String collection|Tell which messages for the user will be marked wtih **unfavorited** status|
 
-
 ## Response
 
-If successful, this action returns a `200 OK` response code and a Boolean value True in the response body. Otherwise, will return False in the response body.
+If successful, this action returns a `200 OK` response code and a boolean value true in the response body. Otherwise, will return false in the response body.
 
 ## Example
 

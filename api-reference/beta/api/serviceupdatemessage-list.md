@@ -1,6 +1,6 @@
 ---
 title: "List serviceUpdateMessages"
-description: "Gets all SHD service messages for the tenant. The operation returns a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties."
+description: "Retrieve a list of the serviceUpdateMessage objects and their properties."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties.
 
-This operation is to retrieve all SHD service messages that are visible to the tenant and impact the tenant.
+This operation retrieves all SHD service messages that are visible to the tenant and impact the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,13 +62,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages
 ```
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.grpah.serviceUpdateMessage)"
+  "@odata.type": "microsoft.graph.serviceUpdateMessage",
+  "isCollection": true
 }
 -->
 ``` http
@@ -108,18 +108,7 @@ Content-Type: application/json
         "content": "Updated January 07, 2021: Based on learnings from our early rings, we have made the decision to make additional changes to the code before we proceed with the rollout. We will update the Message center post once we re-start the rollout......"
       },
       "viewPoint": null
-    },
-    {
-      "startDateTime": "2019-03-05T18:30:00Z",
-      "endDateTime": "2021-01-31T07:00:00Z",
-      "lastModifiedDateTime": "2020-10-27T20:16:33.58Z",
-      "title": "The Lifecycle Dashboards are now available to help you ensure user access to Office 365",
-      "id": "MC175274",
-      "category": "StayInformed",
-      "severity": "Normal",
-        ...
-    },
-    ...
+    }
   ]
 }
 ```

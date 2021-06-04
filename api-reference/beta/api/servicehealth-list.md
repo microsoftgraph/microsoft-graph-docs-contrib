@@ -1,6 +1,6 @@
 ---
 title: "List serviceHealths"
-description: "Get service health overviews of tenant's all services. Returns a list of the serviceHealth objects and their properties."
+description: "Retrieve a list of the serviceHealth objects and their properties."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of the [serviceHealth](../resources/servicehealth.md) objects and their properties.
 
-This operation is to retrieve health overviews of tenant's all subscribed services.
+This operation provides the health report of all subscribed services for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get properties of a list of [serviceHealth](../resources/servicehealth.md) objects
+### Example 1: Get properties of a list of serviceHealth objects
 
 #### Request
 <!-- {
@@ -69,7 +69,8 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.serviceHealth)"
+  "@odata.type": "microsoft.graph.serviceHealth",
+  "isCollection": true
 }
 -->
 ``` http
@@ -93,8 +94,7 @@ Content-Type: application/json
         "service": "Microsoft 365 suite",
         "status": "FalsePositive",
         "id": "OSDPPlatform"
-    },
-    ...
+    }
   ]
 }
 ```
@@ -104,7 +104,7 @@ Content-Type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "list_servicehealth"
+  "name": "list_servicehealth_with_issues"
 }
 -->
 
@@ -117,7 +117,8 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews?$
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.serviceHealth)"
+  "@odata.type": "microsoft.graph.serviceHealth",
+  "isCollection": true
 }
 -->
 ``` http
@@ -157,14 +158,11 @@ Content-Type: application/json
                         "contentType": "Text",
                         "content": "Title: Exchange Online service has login issue. We'll provide an update within 30 minutes."
                     }
-                  },
-                  ...
+                  }
               ]
-          },
-          ...
+          }
         ]
-    },
-    ...
+    }
   ]
 }
 ```

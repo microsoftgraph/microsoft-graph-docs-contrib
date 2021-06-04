@@ -1,6 +1,6 @@
 ---
 title: "serviceHealthIssuePost resource type"
-description: "This complex type represents the history posts which involving new post type for the service issue."
+description: "This complex type represents a historical post in a service health issue."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This complex type represents the history posts which involving new post type for the service issue.
+This complex type represents a historical post in a service health issue.
 
 ## Properties
 |Property|Type|Description|

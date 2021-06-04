@@ -1,6 +1,6 @@
 ---
 title: "Get serviceHealth"
-description: "Read service health overview of a specified service for tenant. The operation returns a [serviceHealth](../resources/servicehealth.md) object."
+description: "Retrieve the properties and relationships of a serviceHealth object."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.
 
-This operation is to retrieve health overviews of a specified service for tenant.
+This operation provides the health report of a specified service for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [serviceHealth
 
 ## Examples
 
-### Example 1: Get the properties of a [serviceHealth](../resources/servicehealth.md) object
+### Example 1: Get the properties of a serviceHealth object
 
 #### Request
 <!-- {
@@ -92,7 +92,7 @@ Content-Type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "get_servicehealth"
+  "name": "get_servicehealth_with_issues"
 }
 -->
 
@@ -144,11 +144,9 @@ Content-Type: application/json
                     "contentType": "Text",
                     "content": "Users may have been intermittently unable to access some Microsoft 365 services. We'll provide an update within 30 minutes."
                   }
-              },
-              ...
+              }
           ]
-        },
-        ...
+        }
     ]
 }
 ```

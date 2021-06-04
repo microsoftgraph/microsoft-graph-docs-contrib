@@ -1,6 +1,6 @@
 ---
 title: "List serviceHealthIssues"
-description: "Gets all service health issues information for the tenant. The operation returns a list of the [serviceHealthIssue](../resources/servicehealthissue.md) objects and their properties."
+description: "Retrieve a list of the serviceHealthIssue objects and their properties."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of the [serviceHealthIssue](../resources/servicehealthissue.md) objects and their properties.
 
-This operation is to retrieve information of all service health issues that are visible to the tenant and impact the tenant.
+This operation retrieves information of all service health issues that are visible to the tenant and impact the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -68,7 +68,8 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.serviceHealthIssue)"
+  "@odata.type": "microsoft.graph.serviceHealthIssue",
+  "isCollection": true
 }
 -->
 ``` http
@@ -103,11 +104,9 @@ Content-Type: application/json
         {
           "contentType": "Text",
           "content": "Title: Limited number of users unable to send or receive email through the Exchange Online service\n\nUser Impact: Users may be unable to send or receive email through the Exchange Online service.\n\n..."
-        },
-        ...
+        }
       ]
-    },
-    ...
+    }
   ]
 }
 ```

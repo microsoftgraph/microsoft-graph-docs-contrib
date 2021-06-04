@@ -1,6 +1,6 @@
 ---
 title: "serviceUpdateMessage resource type"
-description: "An entity resource type inherited from base type [serviceAnnouncementBase](../resources/serviceannouncementbase.md) to represent announcement, such as major update, for a service. e.g. Windows service has a new feature published."
+description: "Represents the announcements of changes in a service."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An entity resource type inherited from base type [serviceAnnouncementBase](../resources/serviceannouncementbase.md) to represent announcement, such as major update, for a service. e.g. Windows service has a new feature published.
+Represents the announcements of changes in a service.
 
-Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).
+This resource type serves to important publications such as major updates in a product. For example, the publication of a new Windows feature.
 
 ## Methods
 |Method|Return type|Description|
@@ -35,16 +35,16 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |actionRequiredByDateTime|DateTimeOffset|The time by when the required action needs to be done for the service message|
 |body|[itemBody](../resources/itembody.md)|The content type and content of the service message body|
 |category|serviceUpdateCategory|The service message category. Possible values are: `PreventOrFixIssue`, `PlanForChange`, `StayInformed`, `unknownFutureValue`.|
-|details|[keyValuePair](../resources/keyvaluepair.md) collection|More details about service message that don't need to be filter based properties are put in this key value pair collection. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
-|endDateTime|DateTimeOffset|The end time of the service message Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
-|id|String|The id of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
+|details|[keyValuePair](../resources/keyvaluepair.md) collection|More details about service message that don't need to be filter based properties are put in this key value pair collection.|
+|endDateTime|DateTimeOffset|The end time of the service message.|
+|id|String|The id of the service message.|
 |isMajorChange|Boolean|The value indicating whether the message describes a major update for the service|
-|lastModifiedDateTime|DateTimeOffset|The last modified time of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
+|lastModifiedDateTime|DateTimeOffset|The last modified time of the service message.|
 |services|String collection|The affected services by the service message|
 |severity|serviceUpdateSeverity|The severity of the service message. Possible values are: `Normal`, `High`, `Critical`, `unknownFutureValue`.|
-|startDateTime|DateTimeOffset|The start time of the service message Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
+|startDateTime|DateTimeOffset|The start time of the service message.|
 |tags|String collection|A collection of tags for the service message|
-|title|String|The title of the service message Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)|
+|title|String|The title of the service message.|
 |viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|The view point to show user metadata of the service message|
 
 ## Relationships
@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.serviceUpdateMessage",
-  "baseType": "m365ServiceHealth.readServices.commercialWebService.models.serviceAnnouncementBase",
+  "baseType": "microsoft.graph.serviceAnnouncementBase",
   "openType": false
 }
 -->
