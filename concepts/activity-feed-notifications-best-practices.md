@@ -16,15 +16,15 @@ Use the following recommendations to:
 * Request for a response.
 * Create notifications about an external event.
 
-You can also [Send activity feed notifications](teams-send-activityfeednotifications.md) to users in Microsoft Teams and [Designing your Microsoft Teams app](/platform/concepts/design/design-teams-app-overview).
+You can also [send activity feed notifications](teams-send-activityfeednotifications.md) to users in Microsoft Teams and [design your Microsoft Teams app](/platform/concepts/design/design-teams-app-overview).
 
 ## General best practices
 
 Use Microsoft Teams activity feed to send notification to users and apply the following best practices:
 
 * Make the relationship between the notification and its content clear to the user.
-    * For example, when a user receives a notification for approving a leave, selecting the notification must take them to the corresponding section of the app.
-    * If the notification pertains to removal or deletion of users, tasks, and so on, direct users to the content indicating the action, so that they understand why they have been notified.
+    * For example, when a user receives a notification for approving a leave, the notification must redirect them to the corresponding section of the app.
+    * If the notification pertains to removal or deletion of entities, such as users and tasks, direct the recipient to the content and indicate the required action.
 * Make sure that the feed experience in the feed is self-contained. For example, any pop-ups and modals must remain in the app and not take the user to the **Activity** feed.
 * Verify that your app does not send more than 10 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 10.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
@@ -49,10 +49,10 @@ Note the following requirements to use activity feed notifications API:
 
 The following list provides the recomended actions:
 * Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
-* Provide appropriate titles and descriptions for your **Activity Types** as the API reads the setting titles from the app manifest: 
+* Provide appropriate titles and descriptions for your **Activity Types**. The API reads the setting titles from the app manifest: 
   * Use short titles, such as **@mention** and **Announcements**.
-  * Don't use long titles, such as **User at-mentioned activity** and **Post creation activity**
-* Avoid sending notifications that are promotional in nature, unless required. Notifications must convey important information for the user. For example:
+  * Don't use long titles, such as **User at-mentioned activity** and **Post creation activity**.
+* Avoid sending notifications that are promotional in nature. Notifications must convey important information for the user. For example:
   * Important message: Lynne mentioned you in a conversation.
   * Promotional message: Try the new feature in the Cycling app!
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
@@ -73,18 +73,22 @@ Simplify the user's notification experience by sending only important informatio
 
 ## Activity feed notifications or bot framework messages
 
-Based on the need, you can use either activity feed notifications or bot framework messages to notify users. The following tabs provide the key characteristics of activity feed notifications and bot framework messages:
+Based on the need, you can use either activity feed notifications or bot framework messages to notify users.
 
 ### Activity feed notifications
 
-The activity feed notifications land in the activity feed and can deep link to various locations. These notifications help you with the following: 
+The activity feed notifications land in the activity feed and can include links to various locations. These notifications help you with the following: 
 * Allow the user to take action or triage the notification.
 * Lead the user to a tab in a chat or channel, a personal app, or a chat or channel message. 
-* Directed at a user level and are not posted broadly in a channel for all channel members to see. However, if any notification is deep linked to a channel message, then it is posted broadly in a channel.
 
-The activity feed notification API allows users to configure notifications for each **Notification type** from the app. The capability to configure, allows the user to customize a notification. The users can receive double notifications from the app. The app can send bot notifications to chats or channels and also to activity feed notifications API. *Send double notifications only if the scenario requires you to send them.* 
+These notifications address users, not channels, unless the nofication includes a mention to a channel. 
 
-The activity feed notification API can send delegated or application-only calls. In delegated calls, the sender of the notification appears as the user who initiated the notification, for example, *John Doe*, and in application-only the sender appears as the app, for example, *Contoso*.
+The activity feed notifications API allows users to configure notifications for each **Notification type** from the app. The capability to configure, allows the user to customize a notification. 
+
+Users could receive double notifications from the app. The app can send bot notifications to chats or channels and also to activity feed notifications API. *Send double notifications only if the scenario requires you to send them.* 
+
+The activity feed notification API can send either delegated or application-only calls. In delegated calls, the sender of the notification appears as the user who initiated the notification, for example, *John Doe*, and in application-only the sender appears as the app, for example, *Contoso*. 
+
 You can update an existing activity feed notification instead of creating a new notification by using the `chainId` parameter.
 
 ### Bot framework messages
