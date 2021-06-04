@@ -34,12 +34,8 @@ Here is a JSON representation of the resource.
 }-->
 ```json
 {
-    "clockInEvent":{
-      "dateTime":"String (timestamp)",
-      "atApprovedLocation":true,
-      "notes":null
-   },
-   "clockOutEvent":null,
+   "clockInEvent": { "@odata.type":"microsoft.graph.timeCardEvent" },
+   "clockOutEvent": { "@odata.type":"microsoft.graph.timeCardEvent" },
    "breaks":[
       {
          "breakId":"string",

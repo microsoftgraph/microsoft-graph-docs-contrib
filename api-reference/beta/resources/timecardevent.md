@@ -35,10 +35,7 @@ Here is a JSON representation of the resource.
 ```json
 {
    "atApprovedLocation":true,
-   "notes":{
-      "content":"string",
-      "contentType":"text"
-   }
+   "notes":{ "@odata.type":"microsoft.graph.itemBody" }
 }
 ```
 
