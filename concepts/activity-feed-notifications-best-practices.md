@@ -8,7 +8,7 @@ ms.prod: "teamwork"
 
 # Best practices for using Microsoft Teams activity feed notifications
 
-This article covers best practices to use Microsoft Teams activity feed notifications in Microsoft Graph.
+This article covers best practices for using Microsoft Teams activity feed notifications in Microsoft Graph.
 
 Use the following recommendations to:
 
@@ -20,11 +20,9 @@ You can also [send activity feed notifications](teams-send-activityfeednotificat
 
 ## General best practices
 
-Use Microsoft Teams activity feed to send notification to users and apply the following best practices:
+The following best practices apply to Microsoft Teams activity feed notifications:
 
-* Make the relationship between the notification and its content clear to the user.
-    * For example, when a user receives a notification for approving a leave, the notification must redirect them to the corresponding section of the app.
-    * If the notification pertains to removal or deletion of entities, such as users and tasks, direct the recipient to the content and indicate the required action.
+* Make the relationship between the notification and its content clear to the user. For example, when a user receives a notification for approving a leave, the notification should redirect them to the corresponding section of the app. If the notification pertains to removal or deletion of entities, such as users and tasks, direct the recipient to the content and indicate the required action.
 * Make sure that the feed experience in the feed is self-contained. For example, any pop-ups and modals must remain in the app and not take the user to the **Activity** feed.
 * Verify that your app does not send more than 10 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 10.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
