@@ -118,7 +118,7 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/healthOverviews(issues())/$entity",
   "service": "Microsoft 365 suite",
-  "status": "FalsePositive",
+  "status": "ServiceRestored",
   "id": "OSDPPlatform",
   "issues": [
         {

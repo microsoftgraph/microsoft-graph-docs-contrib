@@ -31,7 +31,7 @@ Represents the health information of a service.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|issues|[serviceHealthIssue](../resources/servicehealthissue.md) collection|Show a collection is issues happened on the service, with detailed information for each issue.|
+|issues|Collection([serviceHealthIssue](../resources/servicehealthissue.md))|Show a collection is issues happened on the service, with detailed information for each issue.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
