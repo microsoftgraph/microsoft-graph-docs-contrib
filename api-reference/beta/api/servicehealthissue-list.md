@@ -93,7 +93,6 @@ Content-Type: application/json
       "feature": "Mailflow - delayed delivery from Internet",
       "featureGroup": "E-Mail timely delivery",
       "isResolved": true,
-      "highImpact": null,
       "details": [
         {
           "name": "NotifyInApp",

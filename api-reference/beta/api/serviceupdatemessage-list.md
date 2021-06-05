@@ -95,8 +95,6 @@ Content-Type: application/json
         "SharePoint Online",
         "OneDrive for Business"
       ],
-      "expiryDateTime": "null",
-      "hasAttachments": false,
       "details": [
         {
           "name": "ExternalLink",

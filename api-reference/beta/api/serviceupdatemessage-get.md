@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/serviceAnnouncement/messages('{serviceUpdateMessageId}')
+GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}
 ```
 
 ## Optional query parameters
@@ -55,13 +55,13 @@ If successful, this method returns a `200 OK` response code and a [serviceUpdate
 ### Request
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["'MC172851'"],
+  "sampleKeys": ["MC172851"],
   "name": "get_serviceupdatemessage"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages('MC172851')
+GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC172851
 ```
 
 ### Response
@@ -95,8 +95,6 @@ Content-Type: application/json
       "SharePoint Online",
       "OneDrive for Business"
     ],
-    "expiryDateTime": "null",
-    "hasAttachments": false,
     "details": [
       {
         "name": "ExternalLink",

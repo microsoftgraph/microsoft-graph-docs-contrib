@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /admin/serviceAnnouncement/healthOverviews('{Service Name}')
+GET /admin/serviceAnnouncement/healthOverviews/{Service Name}
 ```
 
 ## Optional query parameters
@@ -58,13 +58,13 @@ If successful, this method returns a `200 OK` response code and a [serviceHealth
 #### Request
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["'Microsoft 365 suite'"],
+  "sampleKeys": ["Microsoft 365 suite"],
   "name": "get_servicehealth"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews('Microsoft 365 suite')
+GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/Microsoft 365 suite
 ```
 
 #### Response
@@ -93,13 +93,13 @@ Content-Type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["'Microsoft 365 suite'"],
+  "sampleKeys": ["Microsoft 365 suite"],
   "name": "get_servicehealth_with_issues"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews('Microsoft 365 suite')?$expand=issues
+GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/Microsoft 365 suite?$expand=issues
 ```
 
 #### Response
@@ -120,7 +120,6 @@ Content-Type: application/json
   "service": "Microsoft 365 suite",
   "status": "FalsePositive",
   "id": "OSDPPlatform",
-  "issues@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/healthOverviews('OSDPPlatform')/issues",
   "issues": [
         {
           "startDateTime": "2020-11-04T00:00:00Z",
@@ -136,7 +135,6 @@ Content-Type: application/json
           "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
           "featureGroup": "Management and Provisioning",
           "isResolved": true,
-          "highImpact": null,
           "details": [],
           "posts": [
               {

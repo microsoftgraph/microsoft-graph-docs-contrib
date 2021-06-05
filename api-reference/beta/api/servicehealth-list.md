@@ -132,7 +132,6 @@ Content-Type: application/json
       "service": "Exchange Online",
       "status": "FalsePositive",
       "id": "Exchange",
-      "issues@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/healthOverviews('OrgLiveID')/issues",
       "issues": [
           {
               "startDateTime": "2020-11-04T00:00:00Z",
@@ -148,7 +147,6 @@ Content-Type: application/json
               "feature": "Tenant Administration (Provisioning, Remote PowerShell)",
               "featureGroup": "Management and Provisioning",
               "isResolved": true,
-              "highImpact": null,
               "details": [],
               "posts": [
                   {

@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/serviceAnnouncement/issues('{issueId}')
+GET /admin/serviceAnnouncement/issues/{serviceHealthIssueId}
 ```
 
 ## Optional query parameters
@@ -55,12 +55,12 @@ If successful, this method returns a `200 OK` response code and a [serviceHealth
 ### Request
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["'MO226784'"],
+  "sampleKeys": ["MO226784"],
   "name": "get_servicehealthissue"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues('MO226784')
+GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO226784
 ```
 
 
@@ -91,7 +91,6 @@ Content-Type: application/json
   "feature": "Access",
   "featureGroup": "Portal",
   "isResolved": true,
-  "highImpact": null,
   "details": [],
   "posts": [
     {

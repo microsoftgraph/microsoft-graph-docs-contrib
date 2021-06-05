@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /admin/serviceAnnouncement/issues('{serviceHealthIssueId}')/incidentReport
+GET /admin/serviceAnnouncement/issues/{serviceHealthIssueId}/incidentReport
 ```
 
 ## Request headers
@@ -52,12 +52,12 @@ If successful, this function returns a `200 OK` response code and a Stream in th
 ### Request
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["'MO248163'"],
+  "sampleKeys": ["MO248163"],
   "name": "servicehealthissue_incidentreport"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues('MO248163')/incidentReport
+GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO248163/incidentReport
 ```
 
 
