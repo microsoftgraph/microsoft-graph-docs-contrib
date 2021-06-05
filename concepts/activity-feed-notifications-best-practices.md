@@ -47,16 +47,13 @@ Note the following requirements to use activity feed notifications API:
 
 The following list provides the recomended actions:
 * Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
-* Provide appropriate titles and descriptions for your **Activity Types**. The API reads the setting titles from the app manifest: 
-  * Use short titles, such as **@mention** and **Announcements**.
-  * Don't use long titles, such as **User at-mentioned activity** and **Post creation activity**.
-* Avoid sending notifications that are promotional in nature. Notifications must convey important information for the user. For example:
-  * Important message: Lynne mentioned you in a conversation.
-  * Promotional message: Try the new feature in the Cycling app!
+* Provide appropriate titles and descriptions for your **Activity Types**. Use short titles, such as **@mention** and **Announcements**. Avoid long titles, such as **User at-mentioned activity** and **Post creation activity**.
+* Notifications should convey important information for the user. For example: Lynne mentioned you in a conversation.
+* Avoid sending notifications that are promotional in nature. For example: Try the new feature in the Cycling app!
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
 
   > [!NOTE]
-  > The 30 days storage limit applies to all notifications and it's not specific to notifications sent through the activity feed notifications API.
+  > The 30 day storage limit applies to all notifications. It's not specific to notifications sent through the activity feed notifications API.
 
 ## Simplify the notification experience
 
