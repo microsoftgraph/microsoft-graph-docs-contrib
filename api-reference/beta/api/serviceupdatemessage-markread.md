@@ -62,12 +62,10 @@ If successful, this action returns a `200 OK` response code and a boolean value 
 -->
 ``` http
 POST https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/markRead
-
 Content-Type: application/json
-Content-length: 42
 
 {
-  "messageIds": ["MC46548", "MC46547"]
+  "messageIds": ["messageid-value"]
 }
 ```
 
