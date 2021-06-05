@@ -75,7 +75,7 @@ Content-length: 42
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "string"
 }
 -->
 ``` http
@@ -83,7 +83,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.Boolean",
   "value": true
 }
 ```
