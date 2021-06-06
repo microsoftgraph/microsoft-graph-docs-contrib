@@ -36,6 +36,10 @@ The signed-in user will also only see decisions of which they are assigned revie
 ```http
 GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 ```
+
+## Optional query parameters
+This method supports `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 None.
 

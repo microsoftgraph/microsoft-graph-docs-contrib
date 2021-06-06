@@ -33,6 +33,10 @@ The signed-in user must also be in a directory role that permits them to read an
 ```http
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances
 ```
+
+## Optional query parameters
+This method supports `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 None.
 
