@@ -31,16 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser
+GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
-
-## Function parameters
-In the request URL, provide the function parameters in the following table with values.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Retrieves all decision items for which the calling user is the reviewer. Use filterByCurrentUser(on='reviewer').|
-
 
 ## Request headers
 |Name|Description|

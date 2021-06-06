@@ -31,16 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/accessReviews/definitions/filterByCurrentUser
+GET /identityGovernance/accessReviews/definitions/filterByCurrentUser(on='reviewer')
 ```
-
-## Function parameters
-In the request URL, provide the function parameters in the following table with values.
-The following table shows the parameters that can be used with this function.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|on|accessReviewScheduleDefinitionFilterByCurrentUserOptions|Filter used to query access review definitions for a reviewer. Use filterByCurrentUser(on='reviewer').|
 
 ## Request headers
 |Name|Description|
