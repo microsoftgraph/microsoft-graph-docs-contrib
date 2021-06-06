@@ -129,9 +129,7 @@ DELETE https://graph.microsoft.com/beta/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.subscription"
+  "blockType": "response"
 } -->
 
 ```http
