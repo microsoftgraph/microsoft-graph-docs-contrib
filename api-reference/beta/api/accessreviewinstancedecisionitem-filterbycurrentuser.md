@@ -33,15 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser
-```
-
-## Function parameters
-In the request URL, provide the function parameters in the following table with values.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Retrieves all decision items for which the calling user is the reviewer. Use filterByCurrentUser(on='reviewer').|
+GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 
 
 ## Request headers
@@ -118,7 +110,7 @@ Content-Type: application/json
                 "@odata.type": "#microsoft.graph.userIdentity",
                 "id": "1800bb2c-955d-4205-8471-3a6c3116435d",
                 "displayName": "guest example",
-                "userPrincipalName": "guest@guest.com"
+                "userPrincipalName": "guest@contoso.com"
             }
         }
     ]
