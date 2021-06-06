@@ -35,7 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 
-
 ## Request headers
 |Name|Description|
 |:---|:---|
