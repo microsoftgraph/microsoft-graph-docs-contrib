@@ -442,6 +442,26 @@ Namespace: microsoft.graph
 |sunny|
 |unknownFutureValue|
 
+### workforceIntegrationEncryptionProtocol values
+
+| Member
+|:----------------------------
+|sharedSecret
+|unknownFutureValue
+
+### workforceIntegrationSupportedEntities values
+
+|Member|
+|:---|
+|none|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+
 ### timeZoneStandard values
 
 | Member
