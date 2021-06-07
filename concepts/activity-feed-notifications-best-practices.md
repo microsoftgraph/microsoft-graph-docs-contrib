@@ -55,11 +55,11 @@ Users receive notifications from multiple sources across chats, channels, meetin
 * Use the **Text Preview section** in notifications. Provide information to help the user determine the importance of the notification and take action, if necessary.
 * Don't add a period at the end of the notification title to be consistent with with all other notification settings in Teams.
 
-## Activity feed notifications or bot framework messages
+### Activity feed notifications or bot framework messages
 
 Based on the need, you can use either activity feed notifications or bot framework messages to notify users.
 
-### Activity feed notifications
+#### Activity feed notifications
 
 The activity feed notifications land in the activity feed and can include links to various locations. These notifications help you with the following: 
 * Allow the user to take action or triage the notification.
@@ -75,7 +75,7 @@ The activity feed notification API can send either delegated or application-only
 
 You can update an existing activity feed notification instead of creating a new notification by using the `chainId` parameter.
 
-### Bot framework messages
+#### Bot framework messages
 
 Bot messages are delivered as chat or channel messages. If the users' notifications for chat or channel are turned on, they trigger notifications as chat or channel notifications:
 
