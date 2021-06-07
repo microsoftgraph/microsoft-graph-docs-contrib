@@ -9,14 +9,14 @@ ms.prod: "teamwork"
 # Best practices for using Microsoft Teams activity feed notifications
 
 This article covers best practices for using Microsoft Teams activity feed notifications in Microsoft Graph. These best practices apply to:
-Creating call-to-action notifications.
-Requesting responses to notifications.
-Creating notifications about external events.
+* Creating call-to-action notifications
+* Requesting responses to notifications
+* Creating notifications about external events
 
-For more details about activity feed notifications, see [send activity feed notifications].
+For more details about activity feed notifications, see [send activity feed notifications](#activity-feed-notifications).
 
 When you implement activity feed notifications, keep the following points in mind:
-* Toast notifications re-direct users to the activity feed, not to the app. To see another activity, users must select the proper notification in the activity feed.
+* Toast notifications re-direct users to the activity feed, not to the app. To see another activity, users must select the associated notification in the activity feed.
 * Users can manage notification settings only after the selected app sends a notification.
 * The icon for each notification is included in the app manifest. Microsoft Graph does not support customizing it.
 * Apps can only send notifications to users. Do not include groups or teams as recipients.
