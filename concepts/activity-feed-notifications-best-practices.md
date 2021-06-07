@@ -8,63 +8,52 @@ ms.prod: "teamwork"
 
 # Best practices for using Microsoft Teams activity feed notifications
 
-This article covers best practices for using Microsoft Teams activity feed notifications in Microsoft Graph.
+This article covers best practices for using Microsoft Teams activity feed notifications in Microsoft Graph. These best practices apply to:
+Creating call-to-action notifications.
+Requesting responses to notifications.
+Creating notifications about external events.
 
-Use the following recommendations to:
+For more details about activity feed notifications, see [send activity feed notifications].
 
-* Create call-to action notifications.
-* Request for a response.
-* Create notifications about an external event.
-
-You can also [send activity feed notifications](teams-send-activityfeednotifications.md) to users in Microsoft Teams and [design your Microsoft Teams app](/platform/concepts/design/design-teams-app-overview).
+When you implement activity feed notifications, keep the following points in mind:
+* Toast notifications re-direct users to the activity feed, not to the app. To see another activity, users must select the proper notification in the activity feed.
+* Users can manage notification settings only after the selected app sends a notification.
+* The icon for each notification is included in the app manifest. Microsoft Graph does not support customizing it.
+* Apps can only send notifications to users. Do not include groups or teams as recipients.
+* Priority notifications are not supported.
 
 ## General best practices
 
 The following best practices apply to Microsoft Teams activity feed notifications:
 
 * Make the relationship between the notification and its content clear to the user. For example, when a user receives a notification for approving a leave, the notification should redirect them to the corresponding section of the app. If the notification pertains to removal or deletion of entities, such as users and tasks, direct the recipient to the content and indicate the required action.
-* Make sure that the feed experience in the feed is self-contained. For example, any pop-ups and modals must remain in the app and not take the user to the **Activity** feed.
+* Make sure that the feed experience is self-contained. For example, any pop-ups and modals must remain in the app and not take the user to the **activity feed**.
 * Verify that your app does not send more than 10 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 10.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
 
 > [!NOTE]
 > Microsoft Teams displays notifications in both activity feed and toast formats.
 
-## Recommendations for using activity feed notification API
+## Recommendations
 
-You can select one or all the recommendations to create an effective notification.
-
-### Prerequisites
-
-Note the following requirements to use activity feed notifications API:
-  * Toast notifications re-direct users to the activity feed, not to the app. To see another activity, users must select the proper notification in the activity feed.
-  * Users can manage notification settings only after the selected app sends a notification.
-  * The icon for each notification is included in the app manifest. Graph does not support customizing it.
-  * Apps can only send notifications to users. Do not include Groups or teams as recipients.
-  * Priority notifications are not supported.
-
-### Recommendations
-
-The following list provides the recomended actions:
+To ensure the best activity feed notification experience for your users, apply the following recommendations:
 * Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
 * Provide appropriate titles and descriptions for your **Activity Types**. Use short titles, such as **@mention** and **Announcements**. Avoid long titles, such as **User at-mentioned activity** and **Post creation activity**.
 * Notifications should convey important information for the user. For example: Lynne mentioned you in a conversation.
 * Avoid sending notifications that are promotional in nature. For example: Try the new feature in the Cycling app!
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
 
-  > [!NOTE]
-  > The 30 day storage limit applies to all notifications. It's not specific to notifications sent through the activity feed notifications API.
+> [!NOTE]
+> The 30 day storage limit applies to all notifications. It's not specific to notifications sent through the activity feed notifications API.
 
 ## Simplify the notification experience
 
-Simplify the user's notification experience by sending only important information through notifications.
+Users receive notifications from multiple sources across chats, channels, meetings, or other apps. To simplify the user experience, apply the following recommendations:
 
-* Send directed notifications and avoid noisy messages. Users receive notifications from multiple sources across chats, channels, meetings, or other apps, therefore, don't send large volumes of non-directed notifications:
-  * Relevant message: Diego assigned a sales ticket to you.
-  * Irrelevant message: Joni left the sales team. *This notification may be noisy unless this is materially important.*
+* Send notifications that are directly relevant to the users. For example, "Diego assigned a sales ticket to you" is a relevant message; "Joni left the sales team" is not a relevant message.
 * Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [activity feed notifications or bot framework messages](#activity-feed-notifications-or-bot-framework-messages).
-* Use the **Text Preview section** in notifications. Provide information to determine importance and take action.
-* Don't add a *period* at the end of the notification title to achieve parity with all other notification settings in Teams.
+* Use the **Text Preview section** in notifications. Provide information to help the user determine the importance of the notification and take action, if necessary.
+* Don't add a period at the end of the notification title to be consistent with with all other notification settings in Teams.
 
 ## Activity feed notifications or bot framework messages
 
