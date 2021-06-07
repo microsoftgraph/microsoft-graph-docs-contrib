@@ -43,8 +43,8 @@ To ensure the best activity feed notification experience for your users, apply t
 * Avoid sending notifications that are promotional in nature. For example: Try the new feature in the Cycling app!
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
 
-> [!NOTE]
-> The 30 day storage limit applies to all notifications. It's not specific to notifications sent through the activity feed notifications API.
+    > [!NOTE]
+    > The 30 day storage limit applies to all notifications. It's not specific to notifications sent through the activity feed notifications API.
 
 ## Simplify the notification experience
 
