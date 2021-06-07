@@ -1,5 +1,5 @@
 ---
-title: "List all identityProviders in a b2cIdentityUserFlow"
+title: "List identityProviders"
 description: "List all identityProviders in a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
