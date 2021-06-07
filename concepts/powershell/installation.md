@@ -10,7 +10,7 @@ author: jasonjoh
 The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). You can install the SDK in PowerShell Core or Windows PowerShell using the following command.
 
 ```powershell
-Install-Module Microsoft.Graph
+Install-Module Microsoft.Graph -Scope CurrentUser
 ```
 
 Optionally, you can change the default scope of the installation using the `-Scope` parameter. This requires admin permissions.
