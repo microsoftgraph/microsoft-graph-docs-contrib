@@ -44,12 +44,11 @@ Inherits from [entity](../resources/entity.md).
 | settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series, see type definition below. Supports `$select`. Required on create. |
 | reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of access review scopes is used to define who are the reviewers. The reviewers property is only updatable if individual users are assigned as reviewers. Required on create. Supports `$select`. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept). |
 | fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See [accessReviewReviewerScope](accessreviewreviewerscope.md). Replaces backupReviewers. Supports `$select`. |
-| instances |[accessReviewInstance](../resources/accessreviewinstance.md) collection|  Set of access reviews instances for this access review series. Access reviews that do not recur will only have one instance; otherwise, there is an instance for each recurrence. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| `instances`|[accessReviewInstance](accessreviewinstance.md) collection | If the `accessReviewScheduleDefinition` is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique resource under review in the `accessReviewScheduleDefinition`. If a review has multiple resources and multiple instances, each resource will have a unique instance for each recurrence. |
+| instances|[accessReviewInstance](accessreviewinstance.md) collection | If the **accessReviewScheduleDefinition** is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique resource under review in the **accessReviewScheduleDefinition**. If a review has multiple resources and multiple instances, each resource will have a unique instance for each recurrence. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
