@@ -51,6 +51,7 @@ The following table describes the types available to query and the supported per
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
 |[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
+|[people](externalitem.md)|People.Read|Exchange Online|Personal contacts and people in your organization.|
 
 ## Page search results
 
@@ -85,7 +86,7 @@ When searching the **message** entity, specifying **enableTopResults** as `true`
 
 ## Get selected properties
 
-When searching an entity type, such as **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, you can include in the **fields** property specific entity properties to return in the search results. This is similar to using the [OData system query option, $select](/graph/query-parameters#select-parameter) in REST requests. The search API does not technically support these query options because the behavior is expressed in the POST body.
+When searching an entity type, such as **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, **people** you can include in the **fields** property specific entity properties to return in the search results. This is similar to using the [OData system query option, $select](/graph/query-parameters#select-parameter) in REST requests. The search API does not technically support these query options because the behavior is expressed in the POST body.
 
 For all these entity types, specifying the **fields** property reduces the number of properties returned in the response, optimizing the payload over the wire.
 
@@ -112,7 +113,7 @@ Depending on the entity type, the searchable properties vary. For details, see:
 Search results in the response are sorted in the following default sort order:
 
 - **message** and **event** are sorted by date.
-- All SharePoint, OneDrive and connector types are sorted by relevance.
+- All SharePoint, OneDrive, people and connector types are sorted by relevance.
 
 The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [searchRequest](./searchrequest.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
 
@@ -151,13 +152,13 @@ The search API has the following limitations:
 - The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for SharePoint and OneDrive entityTypes: **driveItem**, **drive**, **site**, **list**, **listItem**.
-Any combinations involving **message**, **event**, SharePoint and OneDrive types , or **externalItem** are currently not supported.  
+Any combinations involving **message**, **event**, **people**, SharePoint and OneDrive types, or **externalItem** are currently not supported.  
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **message**, **event** or  **externalItem**.
+- The search API does not support custom sort for **message**, **event**, **people** or  **externalItem**.
 
-- The search API does not support aggregations for **message**, **event**, **site** or **drive**.
+- The search API does not support aggregations for **message**, **event**, **site**, **people** or **drive**.
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
 
@@ -184,6 +185,7 @@ For backward compatibility, the original properties and types are accessible and
 - Learn more about a few key use cases:
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
+  - [Search people](/graph/search-concept-people)  
   - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
   - [Search custom types imported using connectors](/graph/search-concept-custom-types)
   - [Sort search results](/graph/search-concept-sort)

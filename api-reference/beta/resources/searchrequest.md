@@ -71,6 +71,7 @@ The following is a JSON representation of the resource.
 ## See also
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
+- Search [people](/graph/search-concept-people)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types imported using connectors)](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
