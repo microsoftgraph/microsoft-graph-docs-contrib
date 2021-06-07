@@ -168,8 +168,7 @@ Response contains bytes for the hosted content in the body. `content-type` heade
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessageHostedContent"
+  "truncated": true
 } -->
 
 ```http
