@@ -895,6 +895,15 @@ Namespace: microsoft.graph
 |sunny|
 |unknownFutureValue|
 
+### timeCardState values
+
+|Member|
+|:---|
+|clockedIn|
+|onBreak|
+|clockedOut|
+|unknownFutureValue|
+
 ### scheduleChangeState values
 
 | Member
@@ -923,14 +932,29 @@ Namespace: microsoft.graph
 
 ### workforceIntegrationSupportedEntities values
 
+|Member|
+|:---|
+|none|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+|timeCard|
+|timeOffReason|
+|timeOff|
+|timeOffRequest|
+
+### confirmedBy values
+
 | Member
-|:----------------------------
-|none
-|shift
-|swapRequest
-|openShift
-|openShiftRequest
-|userShiftPreferences
+|:-----------------
+| none|
+| user|
+| manager|
+| unknownFutureValue|
 
 ### timeZoneStandard values
 

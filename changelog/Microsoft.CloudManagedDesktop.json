@@ -1,6 +1,40 @@
 {
     "changelog": [
         {
+            "ChangeList":[
+                {
+                    "Id": "2e1f1f29-1f02-4afa-8ab1-5160419eb0cb",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "provisioningPolicyName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **provisioningPolicyName** property to the **cloudPC** resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "2e1f1f29-1f02-4afa-8ab1-5160419eb0cb",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "onPremisesConnectionName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **onPremisesConnectionName** property to the **cloudPC** resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "2e1f1f29-1f02-4afa-8ab1-5160419eb0cb",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "gracePeriodEndDateTime",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **gracePeriodEndDateTime** property to the **cloudPC** resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id":"2e1f1f29-1f02-4afa-8ab1-5160419eb0cb",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-03T17:52:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
