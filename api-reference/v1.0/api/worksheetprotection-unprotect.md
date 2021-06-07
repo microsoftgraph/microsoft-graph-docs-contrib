@@ -35,11 +35,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/unpro
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|password|string|Optional. sheet protection password.|
+Do not supply a request body for this method.
 
 ## Response
 
@@ -58,10 +54,8 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
 Content-type: application/json
-Content-length: 34
-
+workbook-session-id: {session-id}
 {
-  "password": "password-value"
 }
 ```
 # [C#](#tab/csharp)
