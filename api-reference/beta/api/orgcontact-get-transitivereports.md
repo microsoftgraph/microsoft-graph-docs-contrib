@@ -30,12 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /contacts/{id}/transitiveReports
+GET /contacts/{id}/transitiveReports/$count
 ```
 
 ## Optional query parameters
 
-This method requires the `$count` query parameter. For more information, see [OData Query Parameters](/graph/query-parameters).
+This method does not support the use of query parameters, but does require the `$count` query segment.
 
 ## Request headers
 
@@ -72,10 +72,7 @@ GET https://graph.microsoft.com/beta/contacts/45b7d2e7-b882-4a80-ba97-10b7a63b8f
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.transitivereports",
-  "isCollection": true
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
