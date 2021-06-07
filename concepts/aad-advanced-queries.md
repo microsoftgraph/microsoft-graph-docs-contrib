@@ -54,7 +54,7 @@ The following table lists query scenarios on directory objects that are supporte
 | Use of `$orderby` on select properties                                                                                                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$count=true`                                                                                                               |
 | Use of `$filter` with the `endsWith` operator                                                                                                                  | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40outlook.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@outlook.com')`                                                                                       |
 | Use of `$filter` and `$orderby` in the same query                                                                                                              | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24filter%3DstartsWith(displayName%2C%20'Box')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$filter=startsWith(displayName, 'Box')&$count=true`                       |
-| Use of `$filter` with the `startsWith` operators on specific properties. See [more](#support-for-the-filter-query-parameter-on-properties-of-azure-ad-directory-objects). | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true` |
+| Use of `$filter` with the `startsWith` operators on specific properties. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true` |
 | Use of OData cast with another query parameter                                                                                                                                             | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true`                                                                                             |
 | Use of `$filter` with `NOT` operator                                                                                                                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Luca')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Luca')&$count=true`                                                                         |
 
@@ -75,62 +75,62 @@ Properties of directory objects behave differently in their support for query pa
 
 > [!NOTE]
 >
-> 1. Properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in` and `startsWith` operators only in advanced queries.
+> 1. Properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in` and `ne` operators only in advanced queries.
 > 2. Queries that are supported by default will also work in advanced queries.
 > 3. `NOT` and `ne` operators are supported only in advanced queries.
 >>
 
-| Property                      | eq | ne | ge | not | le | in | startsWith | endsWith | null value |
-|:------------------------------|:--:|:--:|:--:|:---:|:--:|:--:|:----------:|:--------:|:----------:|
-| accountEnabled                | ⚪ | ⚫  |    | ⚫  | ⚫  | ⚪ |            |          |            |
-| ageGroup                      | ⚪ | ⚫  |    |     |    | ⚪ |            |          |            |
-| assignedLicenses              | ⚪ |    | ⚫  |     |    |    |            |          |            |
-| assignedPlans                 | ⚪ |    | ⚫  |     |    |    |            |          |            |
-| businessPhones                | ⚪ |    | ⚫  |     |    |    |            |          |            |
-| city                          | ⚪ | ⚫  |    | ⚪  |    | ⚪  | ⚪         |          | ⚫          |
-| companyName                   | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ | ⚫          |          | ⚫         |
-| consentProvidedForMinor       | ⚪ | ⚫  |    |     |    | ⚪ |            |          |            |
-| country                       | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ | ⚪          |          | ⚫         |
-| createdDateTime               | ⚪ | ⚫  |    | ⚪  | ⚪  |    |            |          |            |
-| creationType                  | ⚪ | ⚫  |    |     |    | ⚪ |            |          |            |
-| deletedDateTime               | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚫ |            |          |            |
-| department                    | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ | ⚪          | ⚪       | ⚫          |
-| displayName                   | ⚪ | ⚫  |    |     |    | ⚪ | ⚪          |          | ⚫         |
-| employeeHireDate              | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ |            |          |            |
-| employeeId                    | ⚪ | ⚪  |    |     | ⚫ |    | ⚪          |          | ⚫         |
-| employeeHireDate              | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ |            |          |            |
-| employeeType                  | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ | ⚫          |          |            |
-| givenName                     | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ | ⚪          |          | ⚫         |
-| id                            | ⚪ | ⚫  |    |     |    |    |            |          |            |
-| identities                    | ⚪ |    |    |     |    |    |            |          |            |
-| imAddresses                   | ⚪ | ⚫  | ⚫ | ⚪   | ⚪ |    | ⚪          |          |            |
-| infoCatalogs                  | ⚪ | ⚫  |    | ⚪  | ⚪  |    | ⚪         |          |            |
-| isResourceAccount             | ⚪ | ⚫  |    |     |    |    |            |          |            |
-| jobTitle                      | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ |            |          | ⚫          |
-| mail                          | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ | ⚪          | ⚫       |            |
-| mailNickname                  | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ | ⚪          |          | ⚫         |
-| mobilePhone                   | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ | ⚫          |          | ⚫         |
-| officeLocation                | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ | ⚫          |          | ⚫         |
-| onPremisesExtensionAttributes | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ |            |          |            |
-| onPremisesImmutableId         | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ |            |          |            |
-| onPremisesLastSyncDateTime    | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ |            |          |            |
-| onPremisesSamAccountName      | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ | ⚫          | ⚫       |            |
-| onPremisesSecurityIdentifier  | ⚪ | ⚫  |    |     |    | ⚪ |            |          | ⚫          |
-| onPremisesSyncEnabled         | ⚪ | ⚫  |    | ⚫  | ⚫  | ⚪ |            | ⚫        |            |
-| onPremisesUserPrincipalName   | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ | ⚪          |          |            |
-| otherMails                    | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ | ⚪          |          |            |
-| passwordPolicies              | ⚫ | ⚫  |    |     |    |    |            |          | ⚫         |
-| postalCode                    | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ | ⚫          |          | ⚫         |
-| preferredLanguage             | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ | ⚫          |          | ⚫         |
-| proxyAddresses                | ⚪ | ⚫  |    | ⚪  | ⚪  |    | ⚪         |          | ⚫          |
-| showInAddressList             | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ |            |          |            |
-| signInActivity                | ⚪ | ⚫  |    | ⚪  | ⚪  |    |            |          |            |
-| state                         | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ | ⚪          |          | ⚫         |
-| streetAddress                 | ⚫ | ⚫  |    | ⚫  | ⚫  | ⚫ | ⚫          |          | ⚫         |
-| surname                       | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ | ⚪          |          | ⚫         |
-| usageLocation                 | ⚪ | ⚫  |    | ⚪  | ⚪  | ⚪ | ⚪          |          |            |
-| userPrincipalName             | ⚪ | ⚪  |    |     | ⚪ | ⚪  | ⚪         | ⚫        |            |
-| userType                      | ⚪ |    |    |     |    | ⚪  |            | ⚫       | ⚫          |
+| Property                      | eq | ne | NOT | ge | le | in | startsWith | endsWith | null values |
+| ----------------------------- | -- | -- | --- | -- | -- | -- | ---------- | -------- | ----------- |
+| accountEnabled                | ⚪  | ⚫  |     | ⚫  | ⚫  | ⚪  |            |          |             |
+| ageGroup                      | ⚪  | ⚫  |     |    |    | ⚪  |            |          |             |
+| assignedLicenses              | ⚪  |    | ⚫   |    |    |    |            |          |             |
+| assignedPlans                 | ⚪  |    | ⚫   |    |    |    |            |          |             |
+| businessPhones                | ⚪  |    | ⚫   |    |    |    |            |          |             |
+| city                          | ⚪  | ⚫  |     | ⚪  |    | ⚪  | ⚪          |          | ⚫           |
+| companyName                   | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
+| consentProvidedForMinor       | ⚪  | ⚫  |     |    |    | ⚪  |            |          |             |
+| country                       | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          | ⚫           |
+| createdDateTime               | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚫  |            |          |             |
+| creationType                  | ⚪  | ⚫  |     |    |    | ⚪  |            |          |             |
+| deletedDateTime               | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚫  |            |          |             |
+| department                    | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          | ⚪        | ⚫           |
+| displayName                   | ⚪  | ⚫  |     |    |    | ⚪  | ⚪          |          | ⚫           |
+| employeeHireDate              | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
+| employeeId                    | ⚪  | ⚫  |     |    | ⚫  |    | ⚪          |          | ⚫           |
+| employeeHireDate              | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
+| employeeType                  | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          |             |
+| givenName                     | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          | ⚫           |
+| id                            | ⚪  | ⚫  |     |    |    |    |            |          |             |
+| identities                    | ⚪  |    |     |    |    |    |            |          |             |
+| imAddresses                   | ⚪  | ⚫  | ⚫   | ⚪  | ⚪  |    | ⚪          |          |             |
+| infoCatalogs                  | ⚪  | ⚫  |     | ⚪  | ⚪  |    | ⚪          |          |             |
+| isResourceAccount             | ⚪  | ⚫  |     |    |    |    |            |          |             |
+| jobTitle                      | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  |            |          | ⚫           |
+| mail                          | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          | ⚫        |             |
+| mailNickname                  | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          | ⚫           |
+| mobilePhone                   | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
+| officeLocation                | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
+| onPremisesExtensionAttributes | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
+| onPremisesImmutableId         | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
+| onPremisesLastSyncDateTime    | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
+| onPremisesSamAccountName      | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          | ⚫        |             |
+| onPremisesSecurityIdentifier  | ⚪  | ⚫  |     |    |    | ⚪  |            |          | ⚫           |
+| onPremisesSyncEnabled         | ⚪  | ⚫  |     | ⚫  | ⚫  | ⚪  |            | ⚫        |             |
+| onPremisesUserPrincipalName   | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          |             |
+| otherMails                    | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          |             |
+| passwordPolicies              | ⚫  | ⚫  |     |    |    |    |            |          | ⚫           |
+| postalCode                    | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
+| preferredLanguage             | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
+| proxyAddresses                | ⚪  | ⚫  |     | ⚪  | ⚪  |    | ⚪          |          | ⚫           |
+| showInAddressList             | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
+| signInActivity                | ⚪  | ⚫  |     | ⚪  | ⚪  |    |            |          |             |
+| state                         | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          | ⚫           |
+| streetAddress                 | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
+| surname                       | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          | ⚫           |
+| usageLocation                 | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          |             |
+| userPrincipalName             | ⚪  | ⚫  |     |    | ⚪  | ⚪  | ⚪          | ⚫        |             |
+| userType                      | ⚪  |    |     |    |    | ⚪  |            | ⚫        | ⚫           |
 
 ## Error handling for advanced queries on directory objects
 
