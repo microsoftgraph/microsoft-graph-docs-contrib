@@ -127,13 +127,75 @@ Some environments require client applications to use a HTTP proxy before they ca
 ## [C#](#tab/csharp)
 
 ```csharp
-//TODO
+// URI to proxy
+var proxyAddress = "http://localhost:8888";
+
+// Create a new System.Net.Http.HttpClientHandler with the proxy
+var handler = new HttpClientHandler
+{
+    // Create a new System.Net.WebProxy
+    // See WebProxy documentation for scenarios requiring
+    // authentication to the proxy
+    Proxy = new WebProxy(new Uri(proxyAddress))
+};
+
+// Create an options object for the credential being used
+// For example, here we're using a ClientSecretCredential so
+// we create a ClientSecretCredentialOptions object
+var options = new ClientSecretCredentialOptions
+{
+    // Create a new Azure.Core.HttpClientTransport
+    Transport = new HttpClientTransport(handler)
+};
+
+var credential = new ClientSecretCredential(
+    "YOUR_TENANT_ID",
+    "YOUR_CLIENT_ID",
+    "YOUR_CLIENT_SECRET",
+    options
+);
+
+// Create a new Microsoft.Graph.HttpProvider using the
+// proxied HttpClientHandler
+var httpProvider = new HttpProvider(handler, true);
+
+var scopes = new[] { "https://graph.microsoft.com/.default" };
+var graphClient = new GraphServiceClient(credential, scopes, httpProvider);
 ```
 
 ## [TypeScript](#tab/typeScript)
 
-```TS
-//TODO
+```typescript
+// Create a credential from @azure/identity package
+const credential = new ClientSecretCredential(
+  'YOUR_TENANT_ID',
+  'YOUR_CLIENT_ID',
+  'YOUR_CLIENT_SECRET',
+  {
+    proxyOptions: {
+      host: 'localhost',
+      port: 8888,
+      // If proxy requires authentication
+      //username: '',
+      //password: ''
+    },
+  }
+);
+
+// Create a Graph token credential provider
+const tokenAuthProvider = new TokenCredentialAuthenticationProvider(
+  credential,
+  {
+    scopes: [ 'https://graph.microsoft.com/.default' ]
+  });
+
+const client = MicrosoftGraph.Client.initWithMiddleware({
+  authProvider: tokenAuthProvider,
+  // Configure proxy in fetchOptions
+  fetchOptions: {
+    agent: new HttpsProxyAgent('http://localhost:8888')
+  }
+});
 ```
 
 ## [Java](#tab/java)
