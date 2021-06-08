@@ -100,6 +100,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **analytics**     | [itemAnalytics][] resource       | Analytics about the view activities that took place in this site.
 | **columns**       | Collection([columnDefinition][]) | The collection of column definitions reusable across lists under this site.
 | **contentTypes**  | Collection([contentType][])      | The collection of content types defined for this site.
+| **externalColumns** | Collection([columnDefinition][]) | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 | **drive**         | [drive][]                        | The default drive (document library) for this site.
 | **drives**        | Collection([drive][])            | The collection of drives (document libraries) under this site.
 | **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
@@ -109,7 +110,6 @@ The `root` identifier always references the root site for a given target, as fol
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
 | **settings**      | [siteSettings]                   | The settings on this site.
 | **termStore**     | [microsoft.graph.termStore.store]  | The termStore under this site.
-| **externalColumns**     | Collection([columnDefinition][])  | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -161,6 +161,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
@@ -169,7 +170,6 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "settings": [ { "@odata.type": "microsoft.graph.siteSettings" }],
   "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
-  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   /* inherited from baseItem */
   "name": "string",
   "createdDateTime": "datetime",
