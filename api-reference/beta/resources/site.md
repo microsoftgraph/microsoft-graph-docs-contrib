@@ -26,7 +26,6 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get analytics][]              | GET /sites/{site-id}/analytics
 | [Get activities by interval][] | GET /sites/{site-id}/getActivitiesByInterval
 | [List pages][]                 | GET /sites/{site-id}/pages
-| [Get site setting][]           | GET /sites/{site-id}/settings
 | [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Search for sites][]           | GET /sites?search={query}
 | [Follow site][]                | POST /users/{user-id}/followedSites/add
@@ -35,12 +34,13 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get permission][]             | GET /sites/{site-id}/permissions/{permission-id}
 | [List permissions][]           | GET /sites/{site-id}/permissions
 | [Create permissions][]         | POST /sites/{site-id}/permissions
-| [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
-| [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
-|[List content types][]          | GET /sites/{site-id}/contentTypes
-|[Create contentType][]        | POST /sites/{site-id}/contentTypes
-|[List columns][]               | GET /sites/{site-id}/columns
-|[Create column][]              | POST /sites/{site-id}/columns
+| [Delete permission][]          | DELETE /sites/{site-id}/permissions/{permission-id}
+| [Update permission][]          | PATCH /sites/{site-id}/permissions/{permission-id}
+| [List content types][]         | GET /sites/{site-id}/contentTypes
+| [Create contentType][]         | POST /sites/{site-id}/contentTypes
+| [List columns][]               | GET /sites/{site-id}/columns
+| [Create column][]              | POST /sites/{site-id}/columns
+| [Get site setting][]           | GET /sites/{site-id}/settings
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -49,7 +49,6 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [List pages]: ../api/sitepage-list.md
-[Get site setting]: ../api/siteSettings-get.md
 [List root sites]: ../api/site-list.md
 [Search for sites]: ../api/site-search.md
 [Follow site]: ../api/site-follow.md
@@ -64,6 +63,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Create contentType]: ../api/site-post-contenttypes.md
 [List columns]: ../api/site-list-columns.md
 [Create column]: ../api/site-post-columns.md
+[Get site setting]: ../api/siteSettings-get.md
 
 
 ## Properties
