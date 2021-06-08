@@ -80,57 +80,9 @@ Properties of directory objects behave differently in their support for query pa
 > 3. `NOT` and `ne` operators are supported only in advanced queries.
 >>
 
-| Property                      | eq | ne | NOT | ge | le | in | startsWith | endsWith | null values |
-| ----------------------------- | -- | -- | --- | -- | -- | -- | ---------- | -------- | ----------- |
-| accountEnabled                | ⚪  | ⚫  |     | ⚫  | ⚫  | ⚪  |            |          |             |
-| ageGroup                      | ⚪  | ⚫  |     |    |    | ⚪  |            |          |             |
-| assignedLicenses              | ⚪  |    | ⚫   |    |    |    |            |          |             |
-| assignedPlans                 | ⚪  |    | ⚫   |    |    |    |            |          |             |
-| businessPhones                | ⚪  |    | ⚫   |    |    |    |            |          |             |
-| city                          | ⚪  | ⚫  |     | ⚪  |    | ⚪  | ⚪          |          | ⚫           |
-| companyName                   | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
-| consentProvidedForMinor       | ⚪  | ⚫  |     |    |    | ⚪  |            |          |             |
-| country                       | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          | ⚫           |
-| createdDateTime               | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚫  |            |          |             |
-| creationType                  | ⚪  | ⚫  |     |    |    | ⚪  |            |          |             |
-| deletedDateTime               | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚫  |            |          |             |
-| department                    | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          | ⚪        | ⚫           |
-| displayName                   | ⚪  | ⚫  |     |    |    | ⚪  | ⚪          |          | ⚫           |
-| employeeHireDate              | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
-| employeeId                    | ⚪  | ⚫  |     |    | ⚫  |    | ⚪          |          | ⚫           |
-| employeeHireDate              | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
-| employeeType                  | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          |             |
-| givenName                     | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          | ⚫           |
-| id                            | ⚪  | ⚫  |     |    |    |    |            |          |             |
-| identities                    | ⚪  |    |     |    |    |    |            |          |             |
-| imAddresses                   | ⚪  | ⚫  | ⚫   | ⚪  | ⚪  |    | ⚪          |          |             |
-| infoCatalogs                  | ⚪  | ⚫  |     | ⚪  | ⚪  |    | ⚪          |          |             |
-| isResourceAccount             | ⚪  | ⚫  |     |    |    |    |            |          |             |
-| jobTitle                      | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  |            |          | ⚫           |
-| mail                          | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          | ⚫        |             |
-| mailNickname                  | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          | ⚫           |
-| mobilePhone                   | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
-| officeLocation                | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
-| onPremisesExtensionAttributes | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
-| onPremisesImmutableId         | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
-| onPremisesLastSyncDateTime    | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
-| onPremisesSamAccountName      | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          | ⚫        |             |
-| onPremisesSecurityIdentifier  | ⚪  | ⚫  |     |    |    | ⚪  |            |          | ⚫           |
-| onPremisesSyncEnabled         | ⚪  | ⚫  |     | ⚫  | ⚫  | ⚪  |            | ⚫        |             |
-| onPremisesUserPrincipalName   | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          |             |
-| otherMails                    | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          |             |
-| passwordPolicies              | ⚫  | ⚫  |     |    |    |    |            |          | ⚫           |
-| postalCode                    | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
-| preferredLanguage             | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
-| proxyAddresses                | ⚪  | ⚫  |     | ⚪  | ⚪  |    | ⚪          |          | ⚫           |
-| showInAddressList             | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  |            |          |             |
-| signInActivity                | ⚪  | ⚫  |     | ⚪  | ⚪  |    |            |          |             |
-| state                         | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          | ⚫           |
-| streetAddress                 | ⚫  | ⚫  |     | ⚫  | ⚫  | ⚫  | ⚫          |          | ⚫           |
-| surname                       | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          | ⚫           |
-| usageLocation                 | ⚪  | ⚫  |     | ⚪  | ⚪  | ⚪  | ⚪          |          |             |
-| userPrincipalName             | ⚪  | ⚫  |     |    | ⚪  | ⚪  | ⚪          | ⚫        |             |
-| userType                      | ⚪  |    |     |    |    | ⚪  |            | ⚫        | ⚫           |
+
+[!INCLUDE [filter-directory-objects](../filter-directory-objects.md)]
+
 
 ## Error handling for advanced queries on directory objects
 
