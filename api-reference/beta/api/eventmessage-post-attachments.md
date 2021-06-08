@@ -1,7 +1,7 @@
 ---
 title: "Add attachment"
 description: "Use this API to create a new Attachment."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -95,11 +95,9 @@ Content-type: application/json
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "blockType": "response"
 } -->
 ```http
 HTTP 201 Created
@@ -123,7 +121,9 @@ Content-type: application/json
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
   "name": "name-value",
-  "item": "message or event entity"
+  "item": {
+    "@odata.type": "microsoft.graph.message"
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -146,11 +146,9 @@ Content-type: application/json
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "blockType": "response"
 } -->
 ```http
 HTTP 201 Created

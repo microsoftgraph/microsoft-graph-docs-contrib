@@ -3,7 +3,7 @@ title: "Get directoryAudit"
 description: "Describes the get method of the directoryAudit resource (entity) from the Microsoft Graph API (beta version)."
 localization_priority: Normal
 author: "SarahBar"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
@@ -99,8 +99,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 218
-```
-```json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
   "value": [{

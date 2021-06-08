@@ -3,7 +3,7 @@ title: "Add directory role member"
 description: "Use this API to create a new directory role member."
 author: "abhijeetsinha"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -85,9 +85,7 @@ Content-type: application/json
 ##### Response
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -135,9 +133,7 @@ Content-type: application/json
 ##### Response
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

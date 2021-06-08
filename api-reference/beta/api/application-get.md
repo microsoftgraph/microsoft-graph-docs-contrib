@@ -3,7 +3,7 @@ title: "Get application"
 description: "Get the properties and relationships of an application object."
 author: "sureshja"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/applications/{id}
 ### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,6 +96,7 @@ Content-length: 1044
     "applicationTemplateId": null,
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
+    "disabledByMicrosoftStatus": null,
     "displayName": "Display name",
     "isDeviceOnlyAuthSupported": null,
     "groupMembershipClaims": null,
@@ -130,6 +131,7 @@ Content-length: 1044
     },
     "passwordCredentials": [],
     "requiredResourceAccess": [],
+    "uniqueName": null,
     "web": {
         "redirectUris": [],
         "homePageUrl": null,
@@ -155,5 +157,6 @@ Content-length: 1044
   ]
 }
 -->
+
 
 
