@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object.
 
-This operation retrieves a specified service health issue for tenant. If the specified issue does not impact tenant or the issue is not visible to tenant due to permission, it won't be returned.
+This operation retrieves a specified service health issue for tenant. The operation returns an error if the issue does not exist for the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

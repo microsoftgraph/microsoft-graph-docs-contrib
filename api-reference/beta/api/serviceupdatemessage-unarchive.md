@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unarchive a list of service update messages for the login user.
+Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the login user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,9 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|messageIds|String collection|Tell which messages for the user will be marked wtih **unarchived** status|
-
-
+|messageIds|String collection|List of message IDs to unarchive.|
 
 ## Response
 
@@ -66,7 +64,7 @@ POST https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/unarchi
 Content-Type: application/json
 
 {
-  "messageIds": ["messageid-value"]
+  "messageIds": ["MC172851", "MC167983"]
 }
 ```
 

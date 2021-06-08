@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Change the status of a list of service update messages to favorited for the login user.
+Change the status of a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s to favorite for the login user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,9 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|messageIds|String collection|Tell which messages for the user will be marked wtih **favorited** status|
-
-
+|messageIds|String collection|List of message IDs to save as favorite.|
 
 ## Response
 
@@ -66,10 +64,9 @@ POST https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/favorit
 Content-Type: application/json
 
 {
-  "messageIds": ["messageid-value"]
+  "messageIds": ["MC172851", "MC167983"]
 }
 ```
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties.
 
-This operation retrieves all SHD service messages that are visible to the tenant and impact the tenant.
+This operation retrieves all service update messages that exist for the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

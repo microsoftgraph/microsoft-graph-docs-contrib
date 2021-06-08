@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of the [serviceHealthIssue](../resources/servicehealthissue.md) objects and their properties.
 
-This operation retrieves information of all service health issues that are visible to the tenant and impact the tenant.
+This operation retrieves information of all service health issues that exist for the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

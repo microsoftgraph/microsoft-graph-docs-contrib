@@ -1,6 +1,6 @@
 ---
 title: "serviceUpdateMessage: unfavorite"
-description: "Change the status of a list of service update messages to unfavorited for the login user."
+description: "Remove the favorite status of serviceUpdateMessage for the login user."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Change the status of a list of service update messages to unfavorited for the login user.
+Remove the favorite status of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the login user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|messageIds|String collection|Tell which messages for the user will be marked wtih **unfavorited** status|
+|messageIds|String collection|List of message IDs to remove from favorite.|
 
 ## Response
 
@@ -64,7 +64,7 @@ POST https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/unfavor
 Content-Type: application/json
 
 {
-  "messageIds": ["messageid-value"]
+  "messageIds": ["MC172851", "MC167983"]
 }
 ```
 

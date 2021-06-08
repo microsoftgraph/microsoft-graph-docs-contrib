@@ -20,35 +20,35 @@ This resource type serves to important publications such as major updates in a p
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List serviceUpdateMessages](../api/serviceupdatemessage-list.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md) collection|Gets all SHD service messages for the tenant. The operation returnsa list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties.|
-|[Get serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Gets a specified SHD service message for the tenant. The operation returns a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.|
-|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|This POST action is to change the status of a list of service update messages to read for the login user.|
-|[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|This POST action is to change the status of a list of service update messages to unread for the login user.|
-|[archive](../api/serviceupdatemessage-archive.md)|Boolean|This POST action is to archive a list of service update messages for the login user.|
-|[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|This POST action is to unarchive a list of service update messages for the login user.|
-|[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|This POST action is to change the status of a list of service update messages to favorited for the login user.|
-|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|This POST action is to change the status of a list of service update messages to unfavorited for the login user.|
+|[List serviceUpdateMessages](../api/serviceupdatemessage-list.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md) collection|Retrieve a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties. This operation retrieves all service update messages that exist for the tenant.|
+|[Get serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Retrieve the properties and relationships of a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object. This operation retrieves a specified service update message for the tenant. The operation returns an error if the message does not exist for the tenant.|
+|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|Mark a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s as **read** for the login user|
+|[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|Mark a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s as **unread** for the login user.|
+|[archive](../api/serviceupdatemessage-archive.md)|Boolean|Archive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the login user.|
+|[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the login user.|
+|[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|Change the status of a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s to favorite for the login user.|
+|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|Remove the favorite status of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the login user.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionRequiredByDateTime|DateTimeOffset|The time by when the required action needs to be done for the service message|
-|body|[itemBody](../resources/itembody.md)|The content type and content of the service message body|
+|actionRequiredByDateTime|DateTimeOffset|The time by when the required action needs to be done for the service message.|
+|body|[itemBody](../resources/itembody.md)|The content type and content of the service message body.|
 |category|serviceUpdateCategory|The service message category. Possible values are: `PreventOrFixIssue`, `PlanForChange`, `StayInformed`, `unknownFutureValue`.|
-|details|Collection([keyValuePair](../resources/keyvaluepair.md)|More details about service message that don't need to be filter based properties are put in this key value pair collection.|
+|details|Collection([keyValuePair](../resources/keyvaluepair.md)|Additional details about service message. This property doesn't support filters.|
 |endDateTime|DateTimeOffset|The end time of the service message.|
 |id|String|The id of the service message.|
-|isMajorChange|Boolean|The value indicating whether the message describes a major update for the service|
+|isMajorChange|Boolean|Indicates whether the message describes a major update for the service.|
 |lastModifiedDateTime|DateTimeOffset|The last modified time of the service message.|
-|services|Collection(string)|The affected services by the service message|
+|services|Collection(string)|The affected services by the service message.|
 |severity|serviceUpdateSeverity|The severity of the service message. Possible values are: `Normal`, `High`, `Critical`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|The start time of the service message.|
-|tags|Collection(string)|A collection of tags for the service message|
+|tags|Collection(string)|A collection of tags for the service message.|
 |title|String|The title of the service message.|
-|viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|The view point to show user metadata of the service message|
+|viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|The view point to show user metadata of the service message.|
 
 ## Relationships
-None.
+This resource type doesn't have relationships.
 
 ## JSON representation
 The following is a JSON representation of the resource.

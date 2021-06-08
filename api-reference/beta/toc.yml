@@ -14158,13 +14158,13 @@ items:
         - name: Service communications (preview)
           href: resources/serviceannouncement.md
           items:
-          - name: healthOverviews
+          - name: Health overviews
             items:
-            - name: Get service health
+            - name: Get serviceHealth
               href: api/servicehealth-get.md
-            - name: List services health
+            - name: List serviceHealth
               href: api/servicehealth-list.md
-          - name: issues
+          - name: Issues
             items:
             - name: Get issue
               href: api/servicehealthissue-get.md
@@ -14172,7 +14172,7 @@ items:
               href: api/servicehealthissue-list.md
             - name: Get incident report
               href: api/servicehealthissue-incidentreport.md
-          - name: messages
+          - name: Messages
             items:
             - name: Get message
               href: api/serviceupdatemessage-get.md

@@ -1,6 +1,6 @@
 ---
 title: "serviceUpdateMessage: markUnread"
-description: "Change the status of a list of service update messages to unread for the login user."
+description: "Mark a list of service update messages as unread for the login user."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Change the status of a list of service update messages to unread for the login user.
+Mark a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s as **unread** for the login user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|messageIds|String collection|Tell which messages for the user will be marked wtih **unread** status|
+|messageIds|String collection|List of message IDs to mark as unread.|
 
 ## Response
 
@@ -64,7 +64,7 @@ POST https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/markUnr
 Content-Type: application/json
 
 {
-  "messageIds": ["messageid-value"]
+  "messageIds": ["MC172851", "MC167983"]
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "serviceHealthIssue: incidentReport"
-description: "Provides incident report."
+description: "Provides the post incident report (PIR) document of a specified service issue for tenant."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides incident report in Edm.Steam.
+Provides the post incident report (PIR) document of a specified service issue for tenant.
 
-This operation provides the post incident report (PIR) document of a specified service issue for tenant. The PIR won't be returned to tenant if the specified issue is not visible to tenant.
+The operation returns an error if the specified issue shouldn't be visible to tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

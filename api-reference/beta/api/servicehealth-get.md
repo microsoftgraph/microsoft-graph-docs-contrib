@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.
 
-This operation provides the health report of a specified service for a tenant.
+This operation provides the health information of a specified service for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

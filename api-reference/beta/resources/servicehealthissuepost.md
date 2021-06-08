@@ -20,10 +20,10 @@ This complex type represents a historical post in a service health issue.
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The published time of the post|
 |description|[itemBody](../resources/itembody.md)|The content of the service issue post|
-|postType|postType|The post type of the service issue history posts. Possible values are: `regular`, `quick`, `strategic`, `unknownFutureValue`.|
+|postType|postType|The post type of the service issue historical post. Possible values are: `regular`, `quick`, `strategic`, `unknownFutureValue`.|
 
 ## Relationships
-None.
+This resource type doesn't have relationships.
 
 ## JSON representation
 The following is a JSON representation of the resource.
