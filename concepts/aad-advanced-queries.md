@@ -66,7 +66,7 @@ The following table lists query scenarios on directory objects that are supporte
 Properties of directory objects behave differently in their support for query parameters. The following table summarizes support for `$filter` operators by properties on the [users](/graph/api/resources/user) directory object. Properties for other directory objects will be added soon.
 
 - ![Requires Advanced Query Parameters.](/graph/images/advanced-query-parameters/AQP.png) The property supports `$filter` with the operator by default.
-- ![Works by default. Does not require Advanced Query Parameters.](/graph/images/advanced-query-parameters/default.png) The specific `$filter` operator requires the *Advanced Query Parameters*:
+- ![Works by default. Does not require Advanced Query Parameters.](/graph/images/advanced-query-parameters/default.png) The specific `$filter` operator requires *Advanced Query Parameters*:
   - `ConsistencyLevel=eventual` header
   - `$count=true` query string
 - Blank cells indicate that the property does not support the use of `$filter` with the operator.
@@ -76,12 +76,13 @@ Properties of directory objects behave differently in their support for query pa
 > [!NOTE]
 >
 > 1. Properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in` and `ne` operators only in advanced queries.
-> 2. Queries that are supported by default will also work in advanced queries.
+> 2. `endsWith` operator is supported only on **mail** and **userPrincipalName** properties.
+> 3. Queries that are supported by default will also work in advanced queries.
 > 3. `NOT` and `ne` operators are supported only in advanced queries.
 >>
 
 
-[!INCLUDE [filter-directory-objects](../filter-directory-objects.md)]
+[!INCLUDE [filter-directory-objects](../includes/filter-directory-objects.md)]
 
 
 ## Error handling for advanced queries on directory objects
