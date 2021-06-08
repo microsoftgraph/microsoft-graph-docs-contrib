@@ -99,7 +99,8 @@ The sharing link is configured to be read-only and usable by anyone with the lin
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "driveItem_createlink"
+  "name": "driveItem_createlink",
+  "sampleKeys": ["01G7ZEPNWQ6DTNTJHHJFBYZD47OAVFOO46"]
 }-->
 
 ```http
@@ -175,7 +176,12 @@ To create a company sharable link, use the **scope** parameter with a value of `
 
 #### Request
 
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create-link-scoped",
+  "scopes": "files.readwrite service.sharepoint",
+  "sampleKeys": ["01G7ZEPNWQ6DTNTJHHJFBYZD47OAVFOO46"]
+ } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -237,7 +243,12 @@ When an embed link is created the `webHtml` property contains the HTML code for 
 
 #### Request
 
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create-embedded-link",
+  "scopes": "files.readwrite service.onedrive",
+  "sampleKeys": ["01G7ZEPNWQ6DTNTJHHJFBYZD47OAVFOO46"]
+} -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
