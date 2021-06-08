@@ -7,27 +7,25 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Get a site resource
+# Get the settings of a site
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-The **siteSettings** resource provides the settings of the [site]. This resource is currently only available on SharePoint and OneDrive for Business.
-
+Provides the settings of the [site]. This resource is currently only available on SharePoint and OneDrive for Business.
 
 [site]: ../resources/site.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+|Permission type                        | Permissions (from least to most privileged) |
+|:--------------------------------------|:--------------------------------------------|
+|Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
+|Delegated (personal Microsoft account) | Not supported.                              |
+|Application                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ## Example
 
@@ -50,14 +48,8 @@ Content-type: application/json
 }
 ```
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "",
-  "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/Get by ID",
-  "suppressions": [
-  ]
-}
--->
+  "tocPath": "Sites/Get site settings"
+} -->
