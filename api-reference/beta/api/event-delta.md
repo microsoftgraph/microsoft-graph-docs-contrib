@@ -81,16 +81,6 @@ Apply the **delta** function on all the events or events starting on or after a 
   GET /users/{id | userPrincipalName}/calendars/{id}/events/delta?startDateTime={start_datetime}
   ```
 
-* To get incremental changes of all the events, or of events starting on or after the specified date/time _in the specified calendar of the default calendar group_:
-  <!-- { "blockType": "ignored" } -->
-  ```http
-  GET /me/calendargroup/calendars/{id}/events/delta 
-  GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/delta 
-
-  GET /me/calendargroup/calendars/{id}/events/delta?startDateTime={start_datetime} 
-  GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/delta?startDateTime={start_datetime}
-  ```
-
 * To get incremental changes all the events, or of events starting on or after the specified date/time _in the specified calendar group and calendar_:
   <!-- { "blockType": "ignored" } -->
   ```http
@@ -265,6 +255,10 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-delta-calendarview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -277,7 +271,7 @@ getting all the changes for that round.
 
 The response below shows a _skipToken_ in an _\@odata.nextLink_ response header.
 
-Note: The response object shown here may be truncated for brevity. 
+Note: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "name": "event_delta_calendarview",
@@ -465,7 +459,7 @@ Content-type: application/json
 }
 ```
 
-### See also
+## See also
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
 - [Get incremental changes to events in a folder](/graph/delta-query-events)

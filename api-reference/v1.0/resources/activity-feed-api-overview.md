@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 You can use the activity feed API in Microsoft Graph to resume a user's activity across devices and platforms. Activity feed API requests are performed on behalf of a user via [delegated permissions](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) and the [user activity permission](/graph/permissions-reference), which can be used with either personal or work and school accounts.
 
-User activities are represented by the [activity](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) resource and are organized in a time-based feed represented by the collection me/activities.
+User activities are represented by the [activity](/graph/api/resources/projectrome-activity) resource and are organized in a time-based feed represented by the collection me/activities.
 <!-- Add missing content.
 Each activity represents a unique...
 -->
@@ -25,12 +25,12 @@ User activities don’t just launch apps — they are deep links into specific c
 
 Because every app is different, it's up to each app developer to understand the best way to map actions within your application to user activities. For example, games might create an activity for each campaign, document authoring apps might create an activity for each unique document, and line-of-business apps might create an activity for each workflow.
 
-Apply the following guidlines as you define activitites in your app:
+Apply the following guidelines as you define activities in your app:
 
 **DO:** Record a single activity for a group of related user actions.
 If your application is used for a sequence of related content, it probably makes sense to record a single activity for the entire engagement session.
 
-*Playlist scenarios:* This is especially relevant for music playlists or TV shows — a single user activity can be updated to show your progress. In this case, you will have a single user activity with multiple [history items](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_historyitem) representing periods of engagement across multiple days or weeks.
+*Playlist scenarios:* This is especially relevant for music playlists or TV shows — a single user activity can be updated to show your progress. In this case, you will have a single user activity with multiple [history items](/graph/api/resources/projectrome-historyitem) representing periods of engagement across multiple days or weeks.
 
 **DO:** Store user data to the cloud.
 If you want to support cross-device activities, you need to make sure the content required to reengage this activity is stored to a cloud location. For example, if you publish an activity each time a user edits a document, the document should be stored in the cloud as opposed to locally on the user's device in order to enable cross-device reengagement.
@@ -64,7 +64,7 @@ The user activities that you create will vary based on the interaction pattern o
 
 ## Next steps
 
-- See the [activity resource](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) and define your app's activities to help users resume important tasks.
+- See the [activity resource](/graph/api/resources/projectrome-activity) and define your app's activities to help users resume important tasks.
 - Explore the [adaptive card samples](https://adaptivecards.io/samples/) samples for ideas to make your activities **pop**.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
@@ -72,4 +72,3 @@ The user activities that you create will vary based on the interaction pattern o
 
 - See [how Microsoft experiences are using activities](https://channel9.msdn.com/events/Build/2017/B8108).
 - Learn about [the activity feed API and pick up where I left off](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
-

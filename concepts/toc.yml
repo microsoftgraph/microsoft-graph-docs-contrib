@@ -17,7 +17,7 @@ items:
           - name: What's new highlights
             href: whats-new-overview.md
           - name: API changelog
-            href: changelog.md
+            href: https://developer.microsoft.com/graph/changelog
       - name: Users you can reach
         items:
           - name: Overview
@@ -44,6 +44,10 @@ items:
             href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Azure Functions
             href: /graph/tutorials/azure-functions
+          - name: Blazor WebAssembly
+            href: /graph/tutorials/blazor
+          - name: Bot Framework
+            href: /graph/tutorials/bot-framework
           - name: iOS Objective-C
             href: /graph/tutorials/ios-objectivec
           - name: iOS Swift
@@ -54,6 +58,8 @@ items:
             href: /graph/tutorials/javascript
           - name: Node.js
             href: /graph/tutorials/node
+          - name: Office Add-in
+            href: /graph/tutorials/office-addin
           - name: PHP
             href: /graph/tutorials/php
           - name: Power Automate
@@ -68,6 +74,8 @@ items:
             href: /graph/tutorials/ruby
           - name: SharePoint Framework
             href: /graph/tutorials/spfx
+          - name: Teams
+            href: /graph/tutorials/teams
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -140,6 +148,8 @@ items:
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md
+      - name: Compliance (preview)
+        href: compliance-concept-overview.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -174,12 +184,39 @@ items:
       - name: Devices and apps
         expanded: true
         items:
-          - name: Cloud printing (preview)
-            href: universal-print-concept-overview.md
-            displayName: Universal Print
+          - name: Cloud printing
+            items:
+              - name: Overview
+                href: universal-print-concept-overview.md
+                displayName: Universal Print
+              - name: Upload data to upload session
+                href: upload-data-to-upload-session.md
+                displayName: Universal Print Job Submission
+              - name: Change notifications
+                href: universal-print-webhook-notifications.md
+                displayName: Universal Print Webhook Notifications
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
+          - name: Device updates (preview)
+            displayName: Windows updates
+            items:
+              - name: Overview
+                href: windowsupdates-concept-overview.md
+              - name: Software updates
+                href: windowsupdates-software-updates.md
+              - name: Deployments
+                href: windowsupdates-deployments.md
+              - name: Enroll in management
+                href: windowsupdates-enroll.md
+              - name: Deploy a feature update
+                href: windowsupdates-deploy-update.md
+              - name: Deploy an expedited update
+                href: windowsupdates-deploy-expedited-update.md
+              - name: Schedule a deployment
+                href: windowsupdates-schedule-deployment.md
+              - name: Manage monitoring rules
+                href: windowsupdates-manage-monitoring-rules.md
       - name: Education
         items:
           - name: Overview
@@ -199,10 +236,22 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Authentication methods
             href: authenticationmethods-get-started.md
+          - name: Identity and sign-in
+            items:
+              - name: Identify and remediate risk
+                href: tutorial-riskdetection-api.md
           - name: Governance
             items:
-              - name: Create an access package
+              - name: Manage access to resources
                 href: tutorial-access-package-api.md
+              - name: Review access to your resources
+                items:
+                  - name: Overview of the access reviews API
+                    href: accessreviews-overview.md
+                  - name: Review access to a security group
+                    href: tutorial-accessreviews-securitygroup.md
+                  - name: Review access to a Microsoft 365 group
+                    href: tutorial-accessreviews-M365group.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -301,7 +350,7 @@ items:
             href: reportroot-concept-overview.md
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
-      - name: Search (preview)
+      - name: Search
         items:
           - name: Overview
             href: search-concept-overview.md
@@ -315,11 +364,13 @@ items:
                 href: search-concept-files.md
               - name: Search connectors
                 href: search-concept-custom-types.md
-              - name: Sort search results
+              - name: Sort search results (preview)
                 href: search-concept-sort.md
-              - name: Refine search results
+              - name: Refine search results (preview)
                 href: search-concept-aggregation.md
-          - name: Index
+              - name: Request spelling correction (preview)
+                href: search-concept-speller.md
+          - name: Index (preview)
             items:
               - name: Manage connections
                 href: search-index-manage-connections.md
@@ -365,8 +416,10 @@ items:
           - name: Licenses for subscribing to chat messages
             href: teams-licenses.md
           - name: Send proactive messages with a bot
-            href: teams-proactive-messaging.md
-      - name: To-do tasks (preview)
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
+          - name: Send activity feed notifications
+            href: teams-send-activityfeednotifications.md
+      - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
       - name: Workbooks and charts
@@ -429,18 +482,22 @@ items:
           - name: Throttling
             href: throttling.md
           - name: Change notifications
-            displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+            displayName: Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: webhooks.md
               - name: Tutorial
                 href: /learn/modules/msgraph-changenotifications-trackchanges
-              - name: Missing Outlook notifications (preview)
-                href: webhooks-outlook-authz.md
+              - name: Missing change notifications
+                href: webhooks-lifecycle.md
               - name: Notifications with resource data
                 href: webhooks-with-resource-data.md
-              - name: Get notifications delivered different ways (preview)
+              - name: Get notifications delivered different ways
                 href: change-notifications-delivery.md
+              - name: Get change notifications for chat and channel messages
+                href: teams-changenotifications-chatmessage.md
+              - name: Change notifications for cloud printing
+                href: universal-print-webhook-notifications.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
@@ -463,6 +520,12 @@ items:
                 href: extensibility-open-users.md
               - name: Use schema extensions (example)
                 href: extensibility-schema-groups.md
+          - name: Use Graph Explorer
+            items:
+            - name: Get started
+              href: graph-explorer/graph-explorer-overview.md
+            - name: Work with Graph Explorer
+              href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
       - name: Migrate
@@ -539,16 +602,40 @@ items:
             items:
               - name: Overview
                 href: toolkit/get-started/overview.md
-              - name: Build a web application (JavaScript)
+              - name: Toolkit for React
+                href: toolkit/get-started/mgt-react.md
+          - name: Build your first app
+            items:
+              - name: Register an Azure Active Directory app
+                href: toolkit/get-started/add-aad-app-registration.md
+              - name: Build a web app (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
+              - name: Build a web app (React)
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: Build a web app (Angular)
+                href: toolkit/get-started/use-toolkit-with-angular.md
               - name: Build a SharePoint web part
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Build a Microsoft Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
-              - name: Use the Toolkit with React
-                href: toolkit/get-started/use-toolkit-with-react.md
-              - name: Use the Toolkit with Angular
-                href: toolkit/get-started/use-toolkit-with-angular.md
+              - name: Build an Electron app
+                href: toolkit/get-started/build-an-electron-app.md
+          - name: Providers
+            items:
+              - name: Using the providers
+                href: toolkit/providers/providers.md
+              - name: MSAL provider
+                href: toolkit/providers/msal.md
+              - name: SharePoint provider
+                href: toolkit/providers/sharepoint.md
+              - name: Microsoft Teams provider
+                href: toolkit/providers/teams.md
+              - name: Electron provider
+                href: toolkit/providers/electron.md
+              - name: Proxy provider
+                href: toolkit/providers/proxy.md
+              - name: Custom provider
+                href: toolkit/providers/custom.md
           - name: Components
             items:
               - name: Login
@@ -559,34 +646,30 @@ items:
                 href: toolkit/components/person.md
               - name: People
                 href: toolkit/components/people.md
-              - name: Person Card
+              - name: Person card
                 href: toolkit/components/person-card.md
-              - name: People Picker
+              - name: People picker
                 href: toolkit/components/people-picker.md
-              - name: Teams Channel Picker
+              - name: Teams channel picker
                 href: toolkit/components/teams-channel-picker.md
               - name: Agenda
                 href: toolkit/components/agenda.md
-              - name: Tasks
+              - name: Planner tasks
                 href: toolkit/components/tasks.md
-          - name: Providers
+              - name: To-do tasks
+                href: toolkit/components/todo.md
+          - name: Customize components
             items:
-              - name: Using the providers
-                href: toolkit/providers.md
-              - name: MSAL provider
-                href: toolkit/providers/msal.md
-              - name: SharePoint provider
-                href: toolkit/providers/sharepoint.md
-              - name: Microsoft Teams provider
-                href: toolkit/providers/teams.md
-              - name: Proxy provider
-                href: toolkit/providers/proxy.md
-              - name: Custom provider
-                href: toolkit/providers/custom.md
-          - name: Styling components
-            href: toolkit/style.md
-          - name: Templating components
-            href: toolkit/templates.md
+              - name: Styling components
+                href: toolkit/customize-components/style.md
+              - name: Templating components
+                href: toolkit/customize-components/templates.md
+              - name: Caching Microsoft Graph calls in components
+                href: toolkit/customize-components/cache.md
+              - name: Localizing components
+                href: toolkit/customize-components/localization.md
+              - name: Right-to-left support
+                href: toolkit/customize-components/right-to-left.md
       - name: Resources
         expanded: true
         items:
@@ -599,6 +682,6 @@ items:
           - name: Errors
             href: errors.md
       - name: v1.0 reference
-        href: /graph/api/overview?view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
       - name: Beta reference
-        href: /graph/api/overview?view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true

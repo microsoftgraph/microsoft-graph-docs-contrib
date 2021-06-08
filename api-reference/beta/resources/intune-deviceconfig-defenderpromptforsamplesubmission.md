@@ -29,5 +29,3 @@ Possible values for prompting user for samples submission.
 
 
 
-
-

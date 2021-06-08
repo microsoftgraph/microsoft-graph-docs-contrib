@@ -1,7 +1,7 @@
 ---
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
-author: "krbain"
+author: "jpettere"
 localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType
@@ -32,6 +32,7 @@ For a specific user:
 ```http
 GET /users/{id | userPrincipalName}
 ```
+Note that when the **userPrincipalName** begins with a `$` character, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes. For details, see the [known issues](/graph/known-issues#users) list.
 
 For the signed-in user:
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +41,7 @@ GET /me
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). 
 
@@ -82,18 +83,18 @@ Content-length: 491
 
 {
   "businessPhones": [
-       "businessPhones-value"
+       "+1 425 555 0109"
    ],
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "jobTitle": "jobTitle-value",
-   "mail": "mail-value",
-   "mobilePhone": "mobilePhone-value",
-   "officeLocation": "officeLocation-value",
-   "preferredLanguage": "preferredLanguage-value",
-   "surname": "surname-value",
-   "userPrincipalName": "userPrincipalName-value",
-   "id": "id-value"
+   "displayName": "Adele Vance",
+   "givenName": "Adele",
+   "jobTitle": "Retail Manager",
+   "mail": "AdeleV@contoso.onmicrosoft.com",
+   "mobilePhone": "+1 425 555 0109",
+   "officeLocation": "18/2111",
+   "preferredLanguage": "en-US",
+   "surname": "Vance",
+   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+   "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
 
@@ -145,18 +146,18 @@ Content-length: 491
 
 {
   "businessPhones": [
-       "businessPhones-value"
+       "+1 425 555 0109"
    ],
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "jobTitle": "jobTitle-value",
-   "mail": "mail-value",
-   "mobilePhone": "mobilePhone-value",
-   "officeLocation": "officeLocation-value",
-   "preferredLanguage": "preferredLanguage-value",
-   "surname": "surname-value",
-   "userPrincipalName": "userPrincipalName-value",
-   "id": "id-value"
+   "displayName": "Adele Vance",
+   "givenName": "Adele",
+   "jobTitle": "Retail Manager",
+   "mail": "AdeleV@contoso.onmicrosoft.com",
+   "mobilePhone": "+1 425 555 0109",
+   "officeLocation": "18/2111",
+   "preferredLanguage": "en-US",
+   "surname": "Vance",
+   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+   "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
 
@@ -177,9 +178,9 @@ Content-type: application/json
 Content-length: 491
 
 {
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "postalCode": "postalCode-value"
+   "displayName": "Adele Vance",
+   "givenName": "Adele",
+   "postalCode": "98004"
 }
 ```
 
@@ -194,4 +195,3 @@ Content-length: 491
   "suppressions": [
   ]
 }-->
-

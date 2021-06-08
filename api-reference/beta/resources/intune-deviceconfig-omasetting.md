@@ -23,6 +23,8 @@ OMA Settings definition.
 |displayName|String|Display Name.|
 |description|String|Description.|
 |omaUri|String|OMA.|
+|secretReferenceValueId|String|ReferenceId for looking up secret for decryption. This property is read-only.|
+|isEncrypted|Boolean|Indicates whether the value field is encrypted. This property is read-only.|
 
 ## Relationships
 None
@@ -39,11 +41,11 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.omaSetting",
   "displayName": "String",
   "description": "String",
-  "omaUri": "String"
+  "omaUri": "String",
+  "secretReferenceValueId": "String",
+  "isEncrypted": true
 }
 ```
-
-
 
 
 

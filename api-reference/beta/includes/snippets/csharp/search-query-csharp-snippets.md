@@ -20,14 +20,11 @@ var requests = new List<SearchRequestObject>()
 		},
 		Query = new SearchQuery
 		{
-			Query_string = new SearchQueryString
-			{
-				Query = "contoso product"
-			}
+			QueryString = "contoso product"
 		},
 		From = 0,
 		Size = 25,
-		Stored_fields = new List<String>()
+		Fields = new List<String>()
 		{
 			"title",
 			"description"
@@ -36,7 +33,7 @@ var requests = new List<SearchRequestObject>()
 };
 
 await graphClient.Search
-	.Query(requests)
+	.Query(requests,null)
 	.Request()
 	.PostAsync();
 

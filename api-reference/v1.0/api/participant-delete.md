@@ -3,7 +3,6 @@ title: "Delete participant"
 description: "Delete a specific participant in the call."
 manager: zhengni
 author: jackry6350
-ms.author: yoren
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -11,7 +10,7 @@ doc_type: apiPageType
 
 # Delete participant
 
-Delete a specific participant in a call. In some situations, it is appropriate for an application to remove a participant from an active call. This action can be done either before or after the participant answers the call. When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+Delete a specific participant in a call. In some situations, it is appropriate for an application to remove a participant from an active call. This action can be done after the participant answers the call. When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -78,7 +77,7 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

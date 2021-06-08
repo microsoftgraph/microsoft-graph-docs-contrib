@@ -3,7 +3,7 @@ title: "Azure AD identity and access management API overview"
 description: "Azure Active Directory (Azure AD) helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure. Organizations can use Azure AD to manage identities and control access in on-premises, hybrid, and cloud environments.  "
 author: "jackson-woods"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-access"
 ms.custom: scenarios:getting-started
 ---
 
@@ -39,7 +39,7 @@ You can assign users to predefined Azure AD administrative [directory roles](/gr
 
 ### Manage devices
 
-[Manage devices](https://docs.microsoft.com/azure/active-directory/device-management-introduction) registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication.
+[Manage devices](/azure/active-directory/device-management-introduction) registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication.
 
 ### Partner tenant management
 
@@ -81,7 +81,7 @@ Looking for the API reference for this service?
 ## Next steps
 
 - Find out how to [Use the Azure AD REST APIs](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Use Azure AD to [authenticate](/graph/auth) to Microsoft Graph.
+- Use Azure AD to [authenticate](./auth/index.yml) to Microsoft Graph.
 - Integrate [Azure AD sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.
 - See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.
 - Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.

@@ -33,7 +33,7 @@ npm install @microsoft/mgt
 ```
 ## Initialize a provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers.md). The provider you use depends on the context in which your solution will be used.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The provider you use depends on the context in which your solution will be used.
 
 The following example shows how to add the [MSAL Provider](../providers/msal.md), but you can follow the same model with any of the providers. Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
 
@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
 }
 ```
 ### Create an app/client ID
-In order to get a client ID, you need to [register your application](https://docs.microsoft.com/graph/auth-register-app-v2) in Azure AD. 
+In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD. 
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**.
 
 ## Add components
@@ -70,7 +70,7 @@ Now, you can use any of the Microsoft Graph Toolkit components as you normally w
 
 ## Customizing components with Angular
 
-All Microsoft Graph Toolkit components support [custom templates](../templates.md), which allow you to modify the content of a component. The default syntax for customizing the components is to use double braces to refer to the property data for each of the returned items, as shown:
+All Microsoft Graph Toolkit components support [custom templates](../customize-components/templates.md), which allow you to modify the content of a component. The default syntax for customizing the components is to use double braces to refer to the property data for each of the returned items, as shown:
 
 ```html
 <!-- Double braces are used for data binding in Angular. This will throw an error. -->
