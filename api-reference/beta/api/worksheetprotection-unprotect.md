@@ -54,11 +54,6 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
-Content-type: application/json
-workbook-session-id: {session-id}
-
-{
-}
 ```
 
 ### Response
