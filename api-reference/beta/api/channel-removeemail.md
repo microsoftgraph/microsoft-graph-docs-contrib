@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 If successful, this action returns a `204 No Content` response code.
 
 ## Example
-#### Request
+### Request
 <!-- {
   "blockType": "request",
   "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"],
