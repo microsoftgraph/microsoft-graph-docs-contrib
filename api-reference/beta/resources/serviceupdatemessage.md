@@ -32,10 +32,10 @@ This resource type serves to important publications such as major updates in a p
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionRequiredByDateTime|DateTimeOffset|The time by when the required action needs to be done for the service message.|
+|actionRequiredByDateTime|DateTimeOffset|The expected deadline of the action for the message.|
 |body|[itemBody](../resources/itembody.md)|The content type and content of the service message body.|
 |category|serviceUpdateCategory|The service message category. Possible values are: `PreventOrFixIssue`, `PlanForChange`, `StayInformed`, `unknownFutureValue`.|
-|details|Collection([keyValuePair](../resources/keyvaluepair.md)|Additional details about service message. This property doesn't support filters.|
+|details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about service message. This property doesn't support filters.|
 |endDateTime|DateTimeOffset|The end time of the service message.|
 |id|String|The id of the service message.|
 |isMajorChange|Boolean|Indicates whether the message describes a major update for the service.|
@@ -45,7 +45,7 @@ This resource type serves to important publications such as major updates in a p
 |startDateTime|DateTimeOffset|The start time of the service message.|
 |tags|Collection(string)|A collection of tags for the service message.|
 |title|String|The title of the service message.|
-|viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|The view point to show user metadata of the service message.|
+|viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Represents user view points data of the service message.|
 
 ## Relationships
 This resource type doesn't have relationships.

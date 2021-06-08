@@ -25,7 +25,7 @@ The service health issue could be a service incident or service advisory. For ex
 |:---|:---|:---|
 |[List serviceHealthIssues](../api/servicehealthissue-list.md)|[serviceHealthIssue](../resources/servicehealthissue.md) collection|Retrieve a list of the [serviceHealthIssue](../resources/servicehealthissue.md) objects and their properties. This operation retrieves information of all service health issues that exist for the tenant.|
 |[Get serviceHealthIssue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Retrieve the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object. This operation retrieves a specified service health issue for tenant. The operation returns an error if the issue does not exist for the tenant.|
-|[Get incidentReport](../api/servicehealthissue-incidentreport.md)|Stream|Provides the post incident report (PIR) document of a specified service issue for tenant. The operation returns an error if the specified issue shouldn't be visible to tenant.|
+|[Get incidentReport](../api/servicehealthissue-incidentreport.md)|Stream|Provides the post incident report (PIR) document of a specified service issue for tenant. The operation returns an error if the specified issue doesn't exist for the tenant.|
 
 ## Properties
 |Property|Type|Description|

@@ -24,9 +24,9 @@ This resource type doesn't have properties.
 ## Relationships
 |Property|Type|Description|Contained Navigation Property|Nullable|ReadOnly|
 |-|-|-|-|-|-|
-|messages|Collection([serviceUpdateMessage](serviceupdatemessage.md))|Show a collection of messages of a service|Yes|Yes|Yes|
-|healthOverviews|Collection([serviceHealth](servicehealth.md))|Show the health overview for a service. The overview will tell what is the service, and its overrall health status, and a collection of issues with details happened in the service if there is any.|Yes|Yes|Yes|
-|issues|Collection([serviceHealthIssue](servicehealthissue.md))|Show issues happened on a service with detailed information on each issue.|Yes|Yes|Yes|
+|messages|Collection([serviceUpdateMessage](serviceupdatemessage.md))|Show a collection of service messages for tenant.|Yes|Yes|Yes|
+|healthOverviews|Collection([serviceHealth](servicehealth.md))|Show a collection of service health information for tenant. |Yes|Yes|Yes|
+|issues|Collection([serviceHealthIssue](servicehealthissue.md))|Show a collection of service issues for tenant.|Yes|Yes|Yes|
 
 ## JSON representation
 The following is a JSON representation of the resource.

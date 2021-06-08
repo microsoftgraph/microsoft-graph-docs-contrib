@@ -14178,38 +14178,38 @@ items:
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
-        - name: Service communications (preview)
-          href: resources/serviceannouncement.md
-          items:
-          - name: Health overviews
-            items:
-            - name: Get serviceHealth
-              href: api/servicehealth-get.md
-            - name: List serviceHealth
-              href: api/servicehealth-list.md
-          - name: Issues
-            items:
-            - name: Get issue
-              href: api/servicehealthissue-get.md
-            - name: List issues
-              href: api/servicehealthissue-list.md
-            - name: Get incident report
-              href: api/servicehealthissue-incidentreport.md
-          - name: Messages
-            items:
-            - name: Get message
-              href: api/serviceupdatemessage-get.md
-            - name: List messages
-              href: api/serviceupdatemessage-list.md
-            - name: Mark read status
-              href: api/serviceupdatemessage-markread.md
-            - name: Mark unread status
-              href: api/serviceupdatemessage-markunread.md
-            - name: Mark archived status
-              href: api/serviceupdatemessage-archive.md
-            - name: Mark unarchived status
-              href: api/serviceupdatemessage-unarchive.md
-            - name: Mark favorited status
-              href: api/serviceupdatemessage-favorite.md
-            - name: Mark unfavorited status
-              href: api/serviceupdatemessage-unfavorite.md
+    - name: Service communications (preview)
+      href: resources/serviceannouncement.md
+      items:
+      - name: Health overviews
+        items:
+        - name: Get serviceHealth
+          href: api/servicehealth-get.md
+        - name: List serviceHealth
+          href: api/servicehealth-list.md
+      - name: Issues
+        items:
+        - name: Get issue
+          href: api/servicehealthissue-get.md
+        - name: List issues
+          href: api/servicehealthissue-list.md
+        - name: Get incident report
+          href: api/servicehealthissue-incidentreport.md
+      - name: Messages
+        items:
+        - name: Get message
+          href: api/serviceupdatemessage-get.md
+        - name: List messages
+          href: api/serviceupdatemessage-list.md
+        - name: Mark read status
+          href: api/serviceupdatemessage-markread.md
+        - name: Mark unread status
+          href: api/serviceupdatemessage-markunread.md
+        - name: Archive status
+          href: api/serviceupdatemessage-archive.md
+        - name: Unarchived status
+          href: api/serviceupdatemessage-unarchive.md
+        - name: Mark favorite status
+          href: api/serviceupdatemessage-favorite.md
+        - name: Remove favorite status
+          href: api/serviceupdatemessage-unfavorite.md

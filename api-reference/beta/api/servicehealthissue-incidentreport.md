@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Provides the post incident report (PIR) document of a specified service issue for tenant.
 
-The operation returns an error if the specified issue shouldn't be visible to tenant.
+The operation returns an error if the specified issue doesn't exist for the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

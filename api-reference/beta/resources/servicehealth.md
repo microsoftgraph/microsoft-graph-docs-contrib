@@ -18,14 +18,14 @@ Represents the health information of a service.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List serviceHealths](../api/servicehealth-list.md)|[serviceHealth](../resources/servicehealth.md) collection|Retrieve a list of the [serviceHealth](../resources/servicehealth.md) objects and their properties. This operation provides the health report of all subscribed services for a tenant.|
+|[List serviceHealths](../api/servicehealth-list.md)|[serviceHealth](../resources/servicehealth.md) collection|Retrieve a list of the [serviceHealth](../resources/servicehealth.md) objects and their properties. This operation provides the health information of all subscribed services for a tenant.|
 |[Get serviceHealth](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object. This operation provides the health information of a specified service for a tenant.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The service id|
-|service|String|The service name|
+|id|String|The service id.|
+|service|String|The service name.|
 |status|serviceHealthStatus|Show the overral service health status. Possible values are: `ServiceOperational`, `Investigating`, `RestoringService`, `VerifyingService`, `ServiceRestored`, `PostIncidentReviewPublished`, `ServiceDegradation`, `ServiceInterruption`, `ExtendedRecovery`, `FalsePositive`, `InvestigationSuspended`, `Resolved`, `MitigatedExternal`, `Mitigated`, `ResolvedExternal`, `Confirmed`, `Reported`, `UnknownFutureValue`.|
 
 ## Relationships
