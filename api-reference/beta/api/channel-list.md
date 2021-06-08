@@ -38,6 +38,10 @@ GET /teams/{team-id}/channels
 ## Optional query parameters
 This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
+### Use $select clause to get better performance
+Populating `email` and `moderationSettings` properties for channel is expensive operation resulting into slow performance of `List Channels` API. Please use `$select` clause with properties excluding `email` and `moderationSettings` to get better preformance of `List Channels` API.
+
+
 ## Request headers
 
 | Header       | Value |
