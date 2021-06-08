@@ -158,8 +158,39 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 
 > **Note:** Support for these operators varies by entity and some properties support `$filter` only in [advanced queries](/graph/aad-advanced-queries). See the specific entity documentation for details.
 
-For some usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
-The following table shows some examples that use the `$filter` query parameter.
+### Filter using lambda operators
+
+OData defines the `any` and `all` operators that evaluate matches on a collection. They can work on either collection properties or collection of entities.
+
+The `any` operator iteratively applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *any member* of the collection, otherwise it returns `false`. The following is the syntax of the `any` operator:
+
+```http
+$filter=param/any(var:var/subparam eq 'value-to-match')
+```
+
+Where
++ *param* is the property that contains a collection of values or a collection of entities.
++ *var:var* is a range variable that holds the current element of the collection during iteration. This variable can be named almost anything, for example, *adele:adele* or *x:x*.
++ *subparam* is required when the query applies to a collection of entities. It represents the property of the complex type whose value we are matching.
++ *value-to-match* represents the member of the collection against which we are matching.
+
+For example the **assignedLicenses** property of the users resource can contain a collection of **assignedLicense** objects, a complex type with two properties, **skuId** and **disabledPlans**. The following query retrieves only users with an assigned license identified by the **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
+```
+
+The **imAddresses** property of the users resource can contain a collection of primitive type **string**. The following query retrieves only users with an imAddress of `admin@contoso.com`.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=imAddresses/any(s:s eq 'admin@contoso.com')
+```
+
+The `all` operator applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *all members* of the collection, otherwise it returns `false`.
+
+### Examples using the filter query operator
+
+The following table shows some examples that use the `$filter` query parameter. For more details about `$filter` syntax, see the [OData protocol][odata-filter].
 
 > **Note:** Click the examples to try them in [Graph Explorer][graph-explorer].
 
@@ -171,40 +202,11 @@ The following table shows some examples that use the `$filter` query parameter.
 | Get all emails from a specific address received by the signed-in user. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) `../me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'` |
 | Get all emails received by the signed-in user in April 2017. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) `../me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01` |
 | Get all unread mail in the signed-in user's Inbox. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) `../me/mailFolders/inbox/messages?$filter=isRead eq false` |
-| Get all users in the Retail department. | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3Ddepartment%20in%20('Retail')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) `../users?$filter=department in ('Retail')`| 
+| Get all users in the Retail and Sales departments. | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3Ddepartment%20in%20('Retail'%2C%20'Sales')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) `../users?$filter=department in ('Retail', 'Sales')`| 
 | List all Microsoft 365 groups in an organization. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) `../groups?$filter=groupTypes/any(c:c eq 'Unified')` |
 | List all non-Microsoft 365 groups in an organization. | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true` |
 | Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`. This is an [advanced query](/graph/aad-advanced-queries). |
 | List all users whose company name is either undefined or Microsoft | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20in%20(null%2C%20'Microsoft')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName in (null, 'Microsoft')&$count=true`. This is an [advanced query](/graph/aad-advanced-queries). |
-
-
-### Filter using lambda operators
-
-OData defines the `any` and `all` operators that evaluate matches on a collection. They can work on either collection properties or collection of entities.
-
-The `any` operator applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *any member* of the collection, otherwise it returns `false`. The syntax of the any operator is as follows:
-
-$filter=param/any(s:s/subparam eq 'value-to-match')
-
-Where
-+ *param* is the property that contains a collection of values or a collection of entities.
-+ *s:s* is a range variable that holds the current element of the collection during iteration. This variable can be named anything, for example, *adele:adele* or *x:x*.
-+ *subparam* is required when the query applies to a collection of entities. It represents the property of the complex type whose value we are matching.
-+ *value-to-match* represents the member of the collection against which we are matching.
-
-For example the **assignedLicenses** property of the users resource can contain a collection of assignedLicense objects. The following query retrieves only users with an assigned license identified by the **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
-
-```http
-GET https://graph.microsoft.com/beta/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
-```
-
-The **imAddresses** property of the users resource can contain a collection of primitive type **string**. The following query retrieves only users with an imAddress of `admin@M365x435773.OnMicrosoft.com`.
-
-```http
-GET https://graph.microsoft.com/beta/users?$filter=imAddresses/any(s:s eq 'admin@M365x435773.OnMicrosoft.com')
-```
-
-The `all` operator applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *all members* of the collection, otherwise it returns `false`.
 
 ## format parameter
 

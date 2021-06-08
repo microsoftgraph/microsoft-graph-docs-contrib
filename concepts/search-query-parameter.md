@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
-# Use the $search query parameter to match a search criterion
+# Use the search query parameter to match a search criterion
 
 In addition to [other OData query parameters](/graph/query-parameters), Microsoft Graph supports the `$search` query parameter to restrict the results of a request to match a search criterion.
 

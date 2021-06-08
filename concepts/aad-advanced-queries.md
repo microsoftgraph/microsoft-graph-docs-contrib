@@ -3,7 +3,7 @@ title: "Advanced query capabilities on Azure AD directory objects"
 description: "Azure AD directory objects support advanced queries based on the OData query parameters."
 author: "FaithOmbongi"
 localization_priority: Priority
-ms.custom: graphiamtop20
+ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
 # Advanced query capabilities on Azure AD directory objects
@@ -65,8 +65,8 @@ The following table lists query scenarios on directory objects that are supporte
 
 Properties of directory objects behave differently in their support for query parameters. The following table summarizes support for `$filter` operators by properties on the [users](/graph/api/resources/user) directory object. Properties for other directory objects will be added soon.
 
-- ⚪ The property supports `$filter` with the operator by default.
-- ⚫ The specific `$filter` operator requires the *Advanced Query Parameters*:
+- ![Requires Advanced Query Parameters.](/graph/images/advanced-query-parameters/AQP.png) The property supports `$filter` with the operator by default.
+- ![Works by default. Does not require Advanced Query Parameters.](/graph/images/advanced-query-parameters/default.png) The specific `$filter` operator requires the *Advanced Query Parameters*:
   - `ConsistencyLevel=eventual` header
   - `$count=true` query string
 - Blank cells indicate that the property does not support the use of `$filter` with the operator.
