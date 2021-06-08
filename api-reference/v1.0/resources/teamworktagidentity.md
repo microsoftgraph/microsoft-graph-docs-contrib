@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a tag in Microsoft Teams. Tags allow users to quickly connect to subset of users in a team. Please refer to [docs](microsoftteams/manage-tags) for more info.
+Represents a tag in Microsoft Teams. Tags allow users to quickly connect to subset of users in a team. Please refer to [docs](/microsoftteams/manage-tags) for more info.
 
 
 Inherits from [identity](../resources/identity.md).
