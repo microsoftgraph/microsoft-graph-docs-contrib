@@ -52,11 +52,11 @@ The value of `{object}` can be one of the following:
 
 |Value|Description|
 |:---     |:---       |
-|`/groups`  |List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).|
-|`/groups/{group id}`  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|
-|`./members`  |List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.|
-|`accessPackageAssignments`  |List every accessReviewScheduleDefinition on an access package.|
-|`roleAssignmentScheduleInstances`  |List every accessReviewScheduleDefinition for service principals assigned to a privileged role.|
+|/groups  |List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).|
+|/groups/{group id}  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|
+|./members  |List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.|
+|accessPackageAssignments  |List every accessReviewScheduleDefinition on an access package.|
+|roleAssignmentScheduleInstances  |List every accessReviewScheduleDefinition for service principals assigned to a privileged role.|
 
 The `$filter` query parameter is not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.
 
