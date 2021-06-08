@@ -1,7 +1,7 @@
 ---
 author: k-tsoi
 description: "This resource represents the settings on a site."
-ms.date: 12/22/2020
+ms.date: 06/08/2020
 title: SiteSettings
 localization_priority: Normal
 ms.prod: "sharepoint"
@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This resource represents the setting of the [site].
-
-It contains the title, layout, and a collection of [webPart][]s.
 
 ## JSON representation
 
@@ -37,7 +35,7 @@ Here is a JSON representation of a **siteSettings** resource.
 
 ## Properties
 
-The **sitePage** resource has the following properties.
+The **siteSettings** resource has the following properties.
 
 | Property name    | Type          | Description
 |:-----------------|:--------------|:---------------------------
@@ -47,22 +45,14 @@ The **sitePage** resource has the following properties.
 
 ## Relationships
 
-The **sitePage** resource does not have relationships to other resources.
+The **siteSettings** resource does not have relationships to other resources.
 
 [site]: site.md
 
 <!--
 {
   "type": "#page.annotation",
-  "description": "",
-  "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/SiteSettings",
-  "tocBookmarks": {
-  },
-  "suppressions": []
 }
 -->
-
-
-
