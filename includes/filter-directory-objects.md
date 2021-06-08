@@ -53,4 +53,4 @@
 
 
 [AQP]: /graph/images/advanced-query-parameters/AQP.png
-[default]: /graph/images/advanced-query-parameters/default.png
+[default]: /graph/images/advanced-query-parameters/AQP.png
