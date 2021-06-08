@@ -117,14 +117,15 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
                 .buildClient();
 ```
 
-# Configuring the HTTP proxy for the client
+---
+
+## Configuring the HTTP proxy for the client
 
 Some environments require client applications to use a HTTP proxy before they can access the public internet. This section demonstrates how to configure the proxy for the Microsoft Graph SDKs.
 
 ## [C#](#tab/csharp)
 
-```CSharp
-
+```csharp
 //TODO
 ```
 
@@ -143,7 +144,7 @@ final InetSocketAddress proxyInetAddress = new InetSocketAddress("proxy.ip.or.ho
 // The section below configures the proxy for the Azure Identity client and is only needed if you rely on Azure Identity for authentication
 final ProxyOptions pOptions = new ProxyOptions(ProxyOptions.Type.HTTP, proxyInetAddress);
 final HttpClientOptions clientOptions = new HttpClientOptions();
-clientOptions.setProxyOptions(pOptions);    
+clientOptions.setProxyOptions(pOptions);
 final HttpClient azHttpClient = HttpClient.createDefault(clientOptions);
 final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder() // Or any other credential the application is using
                                                 .clientId(CLIENT_ID)
@@ -181,6 +182,6 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ```
 
-> Note: Please refer to [ProxyOptions](https://docs.microsoft.com/en-us/java/api/com.azure.core.http.proxyoptions.proxyoptions?view=azure-java-stable) for more information on Azure Identity proxy configuration.
+> Note: Please refer to [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions) for more information on Azure Identity proxy configuration.
 
 ---
