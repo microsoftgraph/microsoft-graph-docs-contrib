@@ -168,7 +168,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
-  "settings": [ { "@odata.type": "microsoft.graph.siteSettings" }],
+  "settings": { "@odata.type": "microsoft.graph.siteSettings" },
   "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
   /* inherited from baseItem */
   "name": "string",
