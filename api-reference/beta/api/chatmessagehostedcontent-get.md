@@ -176,7 +176,12 @@ Response contains bytes for the hosted content in the body. `content-type` heade
 
 ```http
 HTTP/1.1 200 OK
-content-type: image/png
+Content-type: image/jpeg
+Content-length: 201
+
+{
+  "id": "id-value"
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
