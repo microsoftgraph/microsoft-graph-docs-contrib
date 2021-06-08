@@ -29,7 +29,7 @@ Items with this deleted reason or deleted facet property should be removed from 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,7 +42,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites/{siteId}/lists/{listId}/items/{itemId}/delta
+GET /sites/{siteId}/lists/{listId}/items/delta
 ```
 
 ## Query Parameters
@@ -53,7 +53,7 @@ GET /sites/{siteId}/lists/{listId}/items/{itemId}/delta
 
 ## Optional query parameters
 
-This method supports the `$select`, `$expand`, and `$top` [OData query parameters](../concepts/optional-query-parameters.md) to customize the response.
+This method supports the `$select`, `$expand`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request Header
 
@@ -72,12 +72,6 @@ In addition to the collection of ListItems, the response will also include one o
 | **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
 | **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
-### Errors
-
-In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
-
-[error-response]: ../concepts/errors.md
-
 ## Examples
 
 ### Example 1:
@@ -88,11 +82,29 @@ Here is an example of the initial request, how to call this API to establish you
 
 Here is an example of the initial request.
 
-<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get_listItem_delta_first" } -->
 
-```http
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/{itemId}/delta
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/delta
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-listItem-delta-first-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-listItem-delta-first-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-listItem-delta-first-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-listItem-delta-first-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -147,11 +159,29 @@ Here is an example of the last page in a set, how to call this API to update you
 
 Here is an example request after the initial request.
 
-<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get-listItem-delta-last" }-->
 
-```http
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/{itemId}/delta(token='1230919asd190410jlka')
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/delta(token='1230919asd190410jlka')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-listItem-delta-last-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-listItem-delta-last-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-listItem-delta-last-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-listItem-delta-last-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -210,11 +240,33 @@ To retrieve the latest deltaLink, call `delta` with a query string parameter `?t
 
 #### Request
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "sites.read", "tags": "service.graph", "target": "action" } -->
-
 ```http
-GET /sites/{siteId}/lists/{listId}/items/{itemId}/delta?token=latest
+GET /sites/{siteId}/lists/{listId}/items/delta?token=latest
 ```
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "sites.read", "target": "action" } -->
+
+```msgraph-interactive
+GET /sites/{siteId}/lists/{listId}/items/delta?token=latest
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-latest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-latest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-delta-latest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-latest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -235,6 +287,12 @@ Content-type: application/json
 * The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.
 
 * The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
+
+## Error responses
+
+In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
+
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",
