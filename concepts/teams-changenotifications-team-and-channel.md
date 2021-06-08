@@ -1,18 +1,19 @@
 ---
-title: "Get change notifications for changes (create, update, and delete) in team and channels using Microsoft Graph"
-description: "Get change notifications for changes (create, update, and delete) in team and channels using Microsoft Graph"
+title: "Get change notifications for teams and channels using Microsoft Graph"
+description: "Learn how to get notifications for changes (create, update, and delete) for teams and channels using Microsoft Graph APIs"
 author: "anandab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for team and channel using Microsoft Graph
+# Get change notifications for teams and channels using Microsoft Graph
 
+Change notifications enable you to subscribe to changes (create, update, and delete) to teams and channel. You can get notified whenever a team or channel is created, updated or deleted. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
-### Subscribe to changes in any team at tenant level
+## Subscribe to changes in any team at tenant level
 
-To get change notifications for all changes related to any team (create, update, and delete) in a tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes (create, update, and delete) related to any team in a tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -40,7 +41,7 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to changes in a particular team
+## Subscribe to changes in a particular team
 
 
 To get change notifications for all changes related to a particular team in a tenant, subscribe to `/teams/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
@@ -72,9 +73,9 @@ Content-Type: application/json
 ```
 
 
-### Subscribe to changes in any channel at tenant level
+## Subscribe to changes in any channel at tenant level
 
-To get change notifications for all changes related to any channel (create, update, and delete) in a tenant, subscribe to `/teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes (create, update, and delete) related to any channel in a tenant, subscribe to `/teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 >**Note:** Private channels aren't supported.
 
@@ -104,7 +105,7 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to changes in any channel of a particular team
+## Subscribe to changes in any channel of a particular team
 
 
 To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.

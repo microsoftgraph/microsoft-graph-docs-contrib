@@ -1,18 +1,19 @@
 ---
-title: "Get change notifications for any change in Teams membership using Microsoft Graph"
-description: "Get change notifications for any change in Teams membership using Microsoft Graph"
+title: "Get change notifications for any changes in Teams membership using Microsoft Graph"
+description: "Get change notifications for any changes (create, update, and delete) in Teams membership using Microsoft Graph"
 author: "anandab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for change in team membership using Microsoft Graph
+# Get change notifications for changes in Teams membership using Microsoft Graph
 
+Change notifications enable you to subscribe to changes (create, update, and delete) in teams membership. You can get notified whenever member is added, removed or updated in a team. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
-### Subscribe to changes in membership of a particular team
+## Subscribe to changes in membership of a particular team
 
-To get change notifications for membership change in a particular team, subscribe to `/teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in a particular team, subscribe to `/teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
