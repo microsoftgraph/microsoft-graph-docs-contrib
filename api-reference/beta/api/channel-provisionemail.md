@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 If the channel's email is provisioned successfully, this method returns a `200 OK` response code and a [provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) object in the response body. The provisioned email address is in the **email** property.
 
 ## Example
-#### Request
+### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -60,7 +60,7 @@ The following is an example of a request.
 POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/provisionEmail
 ```
 
-#### Response
+### Response
 The following is an example of a response.
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
