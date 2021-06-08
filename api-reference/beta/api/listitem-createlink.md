@@ -32,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "ignored",
+  "sampleKeys": ["contoso.sharepoint.com,2288913C-B09C-46C4-BD1D-AEBB3A6E08EB,133A857A-DC2E-4A41-BCF7-D2B9BBC016AF", "A90E03FB-8446-4E0F-82E7-810FA7595A66", "3"]
 }
 -->
 ``` http
@@ -99,7 +100,8 @@ The sharing link is configured to be read-only and usable by anyone with the lin
 
 <!-- {
   "blockType": "request",
-  "name": "listItem_createlink"
+  "name": "listItem_createlink",
+  "sampleKeys": ["contoso.sharepoint.com,2288913C-B09C-46C4-BD1D-AEBB3A6E08EB,133A857A-DC2E-4A41-BCF7-D2B9BBC016AF", "A90E03FB-8446-4E0F-82E7-810FA7595A66", "3"]
 }-->
 
 ```http
@@ -155,6 +157,12 @@ To create a company sharable link, use the **scope** parameter with a value of `
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "listItem_createlink",
+  "sampleKeys": ["contoso.sharepoint.com,2288913C-B09C-46C4-BD1D-AEBB3A6E08EB,133A857A-DC2E-4A41-BCF7-D2B9BBC016AF", "A90E03FB-8446-4E0F-82E7-810FA7595A66", "3"]
+}-->
+
 ```http
 POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
@@ -196,6 +204,12 @@ When an embed link is created the `webHtml` property contains the HTML code for 
 >**Note:** Embed links are only supported for OneDrive personal.
 
 #### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "listItem_createlink",
+  "sampleKeys": ["contoso.sharepoint.com,2288913C-B09C-46C4-BD1D-AEBB3A6E08EB,133A857A-DC2E-4A41-BCF7-D2B9BBC016AF", "A90E03FB-8446-4E0F-82E7-810FA7595A66", "3"]
+}-->
 
 ```http
 POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
