@@ -182,10 +182,11 @@ final OkHttpClient graphHttpClient =
         .proxyAuthenticator(proxyAuthenticator)
         .build();
 
-final GraphServiceClient graphServiceClient = GraphServiceClient
-                .builder()
-                .httpClient(graphHttpClient)
-                .buildClient();
+final GraphServiceClient graphServiceClient =
+    GraphServiceClient
+        .builder()
+        .httpClient(graphHttpClient)
+        .buildClient();
 
 ```
 
