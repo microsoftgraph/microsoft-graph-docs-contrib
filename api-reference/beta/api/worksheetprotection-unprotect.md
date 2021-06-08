@@ -44,11 +44,10 @@ Do not supply a request body for this method.
 If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
 
-# [HTTP](#tab/http)
+### Request
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "workbookworksheetprotection_unprotect"
@@ -57,26 +56,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
 Content-type: application/json
 workbook-session-id: {session-id}
+
 {
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/workbookworksheetprotection-unprotect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/workbookworksheetprotection-unprotect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/workbookworksheetprotection-unprotect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
-Here is an example of the response. 
+### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response"
 } -->
