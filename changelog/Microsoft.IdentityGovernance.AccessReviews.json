@@ -289,70 +289,6 @@
                 "Target": "accessReviewInstanceDecisionItemResource"
               },
               {
-                "Id": "cfc8414c-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "accessReviewSet",
-                "ChangeType": "Addition",
-                "Description": "Added the [accessReviewSet](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewSet?view=graph-rest-1.0) resource type.",
-                "Target": "accessReviewSet"
-              },
-              {
-                "Id": "cfcaa4ee-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "recurrencePatternType",
-                "ChangeType": "Addition",
-                "Description": "Added the **recurrencePatternType** enumeration type.",
-                "Target": "recurrencePatternType"
-              },
-              {
-                "Id": "cfcd069f-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "recurrenceRangeType",
-                "ChangeType": "Addition",
-                "Description": "Added the **recurrenceRangeType** enumeration type.",
-                "Target": "recurrenceRangeType"
-              },
-              {
-                "Id": "cfcf7199-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "dayOfWeek",
-                "ChangeType": "Addition",
-                "Description": "Added the **dayOfWeek** enumeration type.",
-                "Target": "dayOfWeek"
-              },
-              {
-                "Id": "cfd1cd0f-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "weekIndex",
-                "ChangeType": "Addition",
-                "Description": "Added the **weekIndex** enumeration type.",
-                "Target": "weekIndex"
-              },
-              {
-                "Id": "cfd42dd3-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "accessReviewScheduleDefinitionFilterByCurrentUserOptions",
-                "ChangeType": "Addition",
-                "Description": "Added the **accessReviewScheduleDefinitionFilterByCurrentUserOptions** enumeration type.",
-                "Target": "accessReviewScheduleDefinitionFilterByCurrentUserOptions"
-              },
-              {
-                "Id": "cfd69048-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "accessReviewInstanceFilterByCurrentUserOptions",
-                "ChangeType": "Addition",
-                "Description": "Added the **accessReviewInstanceFilterByCurrentUserOptions** enumeration type.",
-                "Target": "accessReviewInstanceFilterByCurrentUserOptions"
-              },
-              {
-                "Id": "cfd8f103-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "accessReviewInstanceDecisionItemFilterByCurrentUserOptions",
-                "ChangeType": "Addition",
-                "Description": "Added the **accessReviewInstanceDecisionItemFilterByCurrentUserOptions** enumeration type.",
-                "Target": "accessReviewInstanceDecisionItemFilterByCurrentUserOptions"
-              },
-              {
                 "Id": "cfdb547b-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Method",
                 "ChangedApiName": "stop",
@@ -511,14 +447,6 @@
                 "ChangeType": "Deletion",
                 "Description": "Removed the **appConsentApprovalRoute** resource type.",
                 "Target": "appConsentApprovalRoute"
-              },
-              {
-                "Id": "d00bfa51-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "consentRequestFilterByCurrentUserOptions",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **consentRequestFilterByCurrentUserOptions** enumeration type.",
-                "Target": "consentRequestFilterByCurrentUserOptions"
               },
               {
                 "Id": "d00e5da3-9646-11eb-a4ee-0754add743a7",

@@ -90,8 +90,8 @@ Content-Type: application/json
             "descriptionForReviewers": "",
             "createdBy": {
                 "id": "cae33dff-88e8-4e02-8a52-de021295997e",
-                "displayName": "Shubham Gupta",
-                "userPrincipalName": "exampleuser@microsoft.com"
+                "displayName": "Example user",
+                "userPrincipalName": "exampleuser@contoso.com"
             },
             "scope": {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",

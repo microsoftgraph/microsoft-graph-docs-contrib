@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|AccessReview.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|**TODO: Provide applicable permissions.**|
+|Application|AccessReview.ReadWrite.All|
 
 Only a calling user who is listed as reviewer for the parent [accessReviewInstance](../resources/accessreviewinstance.md) can update the **accessReviewInstanceDecisionItem**.
 
@@ -63,7 +63,7 @@ If successful, this method returns a `204 OK` response code.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/abadf3b6-8ea4-4dea-90a5-9eac8fe93fbd/instances/4444f3b6-8ea4-4dea-90a5-9eac8fe95678/decisions/5555f3b6-8ea4-4dea-90a5-9eac8fe95555
 Content-Type: application/json
 Content-length: 691
 
