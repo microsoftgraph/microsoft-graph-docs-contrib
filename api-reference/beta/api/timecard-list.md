@@ -59,8 +59,6 @@ If successful, this method returns a `200 OK` response code and a list of [timeC
 The following is an example of the request. 
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timecard-list"

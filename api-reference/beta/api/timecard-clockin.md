@@ -63,8 +63,6 @@ If successful, this method returns a `201 Created` response code and a [timeCard
 The following is an example of the request. 
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timecard-clockin"
