@@ -54,7 +54,8 @@ GET https://graph.microsoft.com/identitygovernance/entitlementmanagement/accessP
   "@odata.type": "Collection(microsoft.graph.accessPackageAssignmentRequestRequirements)"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -72,3 +73,4 @@ Content-Type: application/json
         }
     ]
 }
+```
