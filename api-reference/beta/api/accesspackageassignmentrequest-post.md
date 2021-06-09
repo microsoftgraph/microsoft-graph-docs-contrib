@@ -334,6 +334,12 @@ Content-type: application/json
 ```
 
 ### Example 4: Remove an assignment
+
+To remove assignments, create a new accessPackageAssignmentRequest object with the following settings:
+
++ The value of the **requestType** property set to `AdminRemove`.
++ In the accessPackageAssignment property, include a list with the identifier of the accessPackageAssignment objects to delete.
+
 #### Request
 
 The following example shows how to remove an assignment.
