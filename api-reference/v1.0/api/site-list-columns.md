@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
  
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{site-id}/columns
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/columns
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-columns-from-site-csharp-snippets.md)]

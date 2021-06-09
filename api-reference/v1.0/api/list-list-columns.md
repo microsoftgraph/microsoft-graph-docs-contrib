@@ -1,17 +1,16 @@
 ---
 author: swapnil1993
-title: "List columnDefinitions in a content type"
-description: "List columns in a content type."
+title: "List columnDefinitions in a list"
+description: "List columns in a list."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# List columns in a content type
+# List columns in a list
 Namespace: microsoft.graph
 
-
-Get the collection of columns, represented as [columnDefinition][columnDefinition] resources, in a [content type][contentType].
+Get the collection of columns, represented as [columnDefinition][columnDefinition] resources, in a [list][list].
 
   
 
@@ -39,8 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET /sites/{site-id}/contentTypes/{contentType-id}/columns
-GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
+GET /sites/{site-id}/lists/{list-id}/columns
 ```
 
   
@@ -65,12 +63,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-<!-- { "blockType": "request", "name": "get_columns_from_contenttype" } -->
+<!-- { "blockType": "request", "name": "get_columns_from_list" } -->
  
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-id}/columns
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/columns
 ```
+
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -86,44 +85,44 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "value":[
-      {
-         "description":"",
-         "displayName":"Title",
-         "hidden":false,
-         "id":"99ddcf45-e2f7-4f17-82b0-6fba34445103",
-         "indexed":false,
-         "name":"Title",
-         "readOnly":false,
-         "required":false,
-         "text":{
-            "allowMultipleLines":false,
-            "appendChangesToExistingText":false,
-            "linesForEditing":0,
-            "maxLength":255
-         }
-      },
-      {
-         "description":"",
-         "displayName":"Address",
-         "id":"11dfef35-e2f7-4f17-82b0-6fba34445103",
-         "indexed":false,
-         "name":"Address",
-         "readOnly":false,
-         "required":false,
-         "text":{
-            "allowMultipleLines":false,
-            "appendChangesToExistingText":false,
-            "linesForEditing":0,
-            "maxLength":255
-         }
+  "value": [
+    {
+      "description": "",
+      "displayName": "Title",
+      "hidden": false,
+      "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
+      "indexed": false,
+      "name": "Title",
+      "readOnly": false,
+      "required": false,
+      "text": {
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "linesForEditing": 0,
+        "maxLength": 255
       }
-   ]
+    },
+    {
+      "description": "",
+      "displayName": "Address",
+      "id": "11dfef35-e2f7-4f17-82b0-6fba34445103",
+      "indexed": false,
+      "name": "Address",
+      "readOnly": false,
+      "required": false,
+      "text": {
+        "allowMultipleLines": false,
+        "appendChangesToExistingText": false,
+        "linesForEditing": 0,
+        "maxLength": 255
+      }
+    }
+  ]
 }
 ```
 
   
 
 [columnDefinition]: ../resources/columnDefinition.md
-[contentType]: ../resources/contentType.md
+[list]: ../resources/list.md
  

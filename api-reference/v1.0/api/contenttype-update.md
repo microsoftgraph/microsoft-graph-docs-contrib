@@ -59,7 +59,6 @@ If successful, this method returns a `200 OK` response code and an updated [cont
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_contenttype"
@@ -67,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [cont
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-id}
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-id}
 Content-Type: application/json
 
 {
@@ -108,15 +107,6 @@ Content-Type: application/json
 }
 
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-contenttype-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-contenttype-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### Response

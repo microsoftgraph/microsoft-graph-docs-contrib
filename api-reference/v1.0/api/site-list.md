@@ -53,7 +53,7 @@ GET /sites?$filter=siteCollection/root ne null
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
+GET https://graph.microsoft.com/v1.0/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-csharp-snippets.md)]
