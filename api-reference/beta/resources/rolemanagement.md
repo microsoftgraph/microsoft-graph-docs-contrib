@@ -41,16 +41,10 @@ None.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-<<<<<<< HEAD
-|directory|[rbacApplication](rbacapplication.md)| Read-only. Nullable.|
-|entitlementManagement|[rbacApplication](rbacapplication.md)| Read-only. Nullable.|
-|deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Read-only. Nullable.|
-=======
 |cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)|Provides access to role definitions and role assignments of a cloud PC RBAC provider. Read-only. Nullable.|
 |deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Provides access to role definitions and role assignments of an Intune RBAC provider. Read-only. Nullable.|
 |directory|[rbacApplication](rbacapplication.md)|Provides access to role definitions and role assignments of an Azure AD RBAC provider. Read-only. Nullable.|
-
->>>>>>> 21fb915aa0c862ceb892dd6c25c45aa67cef6e1e
+|entitlementManagement|[rbacApplication](rbacapplication.md)| Provides access to role definitions and role assignments of an Azure AD entitlement management. Read-only. Nullable.|
 
 ## JSON representation
 
