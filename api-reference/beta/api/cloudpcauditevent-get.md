@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /deviceManagement/virtualEndpoint/auditEvents/{cloudPcAuditEventId}
+GET /deviceManagement/virtualEndpoint/auditEvents/{id}
 ```
 
 ## Request headers
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcAuditE
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvents/{cloudPcAuditEventId}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvents/{id}
 ```
 
 #### Response
