@@ -39,7 +39,7 @@ POST /identityGovernance/accessReviews/definitions
 | Content-type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.
+In the request body, supply a JSON representation of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 The following table shows the properties accepted to create an accessReview.
 
