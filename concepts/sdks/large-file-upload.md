@@ -9,6 +9,8 @@ author: DarrelMiller
 
 A number of entities in Microsoft Graph support [resumable file uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) to make it easier to upload large files. Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice. In order to simplify this process, the Microsoft Graph SDKs implement a large file upload task that manages the uploading of the slices.
 
+## Upload large file to OneDrive
+
 ## [C#](#tab/csharp)
 
 ```csharp
@@ -69,26 +71,38 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
 ## [TypeScript](#tab/typescript)
 
 ```typescript
-const options: any = {
-    // Relative path from root to destination folder
-    path: itemPath,
-    // file is a File object, typically from an <input type="file"/>
-    fileName: file.name,
-    rangeSize: 320 * 1024
+const options: OneDriveLargeFileUploadOptions = {
+  // Relative path from root to destination folder
+  path: itemPath,
+  // file is a File object, typically from an <input type="file"/>
+  fileName: file.name,
+  rangeSize: 1024 * 1024,
+  uploadEventHandlers: {
+    // Called as each "slice" of the file is uploaded
+    progress: (range, e) => {
+      console.log(`Uploaded ${range?.minValue} to ${range?.maxValue}`);
+    }
   }
+}
 
-  try {
-    const uploadTask: MicrosoftGraph.OneDriveLargeFileUploadTask =
-      await MicrosoftGraph.OneDriveLargeFileUploadTask.create(client, file, options);
+try {
+  // Create FileUpload object
+  const fileObject = new FileUpload(file, file.name, file.size);
+  // Create a OneDrive upload task
+  const uploadTask = await OneDriveLargeFileUploadTask
+    .createTaskWithFileObject(client, fileObject, options);
 
-    const uploadedFile: DriveItem = await uploadTask.upload();
+  // Do the upload
+  const uploadResult: UploadResult = await uploadTask.upload();
 
-    console.log(JSON.stringify(`Uploaded file with ID: ${uploadedFile.id}`));
-    return `Uploaded file with ID: ${uploadedFile.id}`;
-  } catch (err) {
-    console.log(`Error uploading file: ${JSON.stringify(err)}`);
-    return `Error uploading file: ${JSON.stringify(err)}`;
-  }
+  // The response body will be of the corresponding type of the
+  // item being uploaded. For OneDrive, this is a DriveItem
+  const driveItem: DriveItem = uploadResult.responseBody as DriveItem;
+  console.log(JSON.stringify(`Uploaded file with ID: ${driveItem.id}`));
+  return `Uploaded file with ID: ${driveItem.id}`;
+} catch (err) {
+  console.log(`Error uploading file: ${JSON.stringify(err)}`);
+  return `Error uploading file: ${JSON.stringify(err)}`;
 }
 ```
 
@@ -151,7 +165,7 @@ fileUploadTask.ResumeAsync(progress);
 ### [TypeScript](#tab/typescript)
 
 ```typescript
-const resumedFile: DriveItem = await uploadTask.resume();
+const resumedFile: DriveItem = await uploadTask.resume() as DriveItem;
 ```
 
 ### [Java](#tab/java)
