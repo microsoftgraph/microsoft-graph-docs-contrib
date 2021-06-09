@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
+          "ApiChange": "api",
+          "ChangedApiName": "getApplicablePolicyRequirements",
+          "ChangeType": "Addition",
+          "Description": "Added the getApplicablePolicyRequirements operation.",
+          "Target": "getApplicablePolicyRequirements"
+        },
+        {
+          "Id": "92e6f7d7-82d3-4ee7-8bcc-74decea5608e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestRequirements",
+          "ChangeType": "Addition",
+          "Description": "Added the accessPackageAssignmentRequestRequirements complex type.",
+          "Target": "accessPackageAssignmentRequestRequirements"
+        }
+      ],
+      "Id": "7f8e9ab9-f2b7-4859-96fd-e4bf3046f00e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-08T18:32:06Z",
+      "WorkloadArea": "Governance",
+      "SubArea": "Entitlement management access packages"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",
