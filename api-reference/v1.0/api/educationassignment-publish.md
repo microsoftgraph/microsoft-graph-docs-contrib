@@ -43,10 +43,10 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ## Example
 The following example shows how to call this API.
+
 ##### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationassignment_publish_2"

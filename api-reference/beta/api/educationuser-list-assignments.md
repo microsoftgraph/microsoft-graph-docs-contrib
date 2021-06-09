@@ -1,5 +1,5 @@
 ---
-title: "List user's all assignments"
+title: "List assignments of a user"
 description: "Returns a list of assignments assigned to a user for all classes. This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace."
 localization_priority: Normal
 author: "mmast-msft"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List user's all assignments
+# List assignments of a user
 
 Namespace: microsoft.graph
 

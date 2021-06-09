@@ -1,6 +1,6 @@
 ---
 title: "Add educationCategories"
-description: "Add an existing educationCategory to this educationAssignment"
+description: "Add an existing educationCategory to an educationAssignment"
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
