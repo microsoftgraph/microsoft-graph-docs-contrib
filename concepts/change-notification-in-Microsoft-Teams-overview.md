@@ -1,13 +1,13 @@
 ---
-title: "Change notifications in Microsoft Teams"
-description: "Get change notifications in Microsoft Teams using Microsoft Graph"
+title: "Change notifications for Microsoft Teams resources using Microsoft Graph"
+description: "Learn how to get notifications for changes (create, update, and delete) for resources in Microsoft Teams using Microsoft Graph APIs"
 author: "anandab-msft"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Change notifications for resources in Microsoft Teams using Microsoft Graph
+# Change notifications for Microsoft Teams resources using Microsoft Graph
 
 Change notifications enable you to subscribe to changes (create, update, and delete) to a resource. Change notifications provide provides a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
