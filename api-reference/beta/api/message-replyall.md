@@ -127,10 +127,8 @@ HTTP/1.1 202 Accepted
 ### Example 2: Reply-all to a message in MIME format
 ##### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_replyAll_mime_beta"
 }-->
 
@@ -143,12 +141,6 @@ Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
 bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM...
 
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/message-replyall-mime-beta-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ##### Response
 Here is an example of the response.
