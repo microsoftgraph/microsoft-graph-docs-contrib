@@ -58,6 +58,7 @@ The result of a cloud PC on-premises connection health check.
 |permissionCheckNoResourceGroupOwnerRole|Cloud PC service principal does not have owner permissions on the specified resource group. Please work with the subscription owner to add owner role assignment on the resource group for the Cloud PC service principal.|
 |permissionCheckNoVNetContributorRole|Cloud PC service principal does not have network contributor permissions on the specified virtual network. Please work with subscription owner to add the network contributor role assignment for the Cloud PC service principal. |
 |permissionCheckUnknownError|The permission check failed due to an unknown error. Please contact customer support.|
+|internalServerErrorUnableToRunDscScript |Unable to run DSC script during the health check. The service needs access to WinRM to successfully provision the cloud PC. Please ensure that no Group Policy or related configuration is blocking the use of PowerShell/DSC.|
 |internalServerUnknownError|The health check failed due to an unknown internal server error. Please contact customer support.|
 
 ## Relationships
