@@ -28,7 +28,7 @@ The following table shows the parameters that can be used with this function.
 
 ## Return value
 
-The following table shows the action that can be used to request an assignment for an access package.
+The following table shows the return value that can be used to request an assignment for an access package.
 
 |Type|Description|
 | :--- | :--- |
