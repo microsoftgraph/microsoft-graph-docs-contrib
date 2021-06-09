@@ -1,9 +1,61 @@
 {
-  "changelog": [    
-     {
+  "changelog": [  
+    {
       "ChangeList": [
-	{
-	  "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+        {
+          "Id": "3fad4d1e-437c-4171-bbed-12a853133314",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "educationAddToCalendarOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationAddToCalendarOptions** enumeration type.",
+          "Target": "educationAddToCalendarOptions"
+        },
+        {
+          "Id": "3fad4d1e-437c-4171-bbed-12a853133314",
+          "ApiChange": "Method",
+          "ChangedApiName": "addToCalendarAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **addToCalendarAction** property to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "3fad4d1e-437c-4171-bbed-12a853133314",
+          "ApiChange": "Method",
+          "ChangedApiName": "addToCalendarAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **addToCalendarAction** property to the [educationAssignmentDefaults](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentDefaults"
+        }
+      ],
+      "Id": "3fad4d1e-437c-4171-bbed-12a853133314",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-03T23:46:18.701Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },  
+    {
+      "ChangeList": [
+        {
+          "Id": "f0bdabdb-62f0-497b-bd30-078719cfb0ff",
+          "ApiChange": "Method",
+          "ChangedApiName": "educationAssignmentResource",
+          "ChangeType": "Removal",
+          "Description": "Removed the support for PATCH operations on the **educationAssignmentResource** resource.",
+          "Target": "educationAssignmentResource"
+        }
+      ],
+      "Id": "f0bdabdb-62f0-497b-bd30-078719cfb0ff",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-02T18:46:18.701Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },  
+    {
+      "ChangeList": [
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
           "ApiChange": "Method",
           "ChangedApiName": "setUpResourcesFolder",
           "ChangeType": "Addition",

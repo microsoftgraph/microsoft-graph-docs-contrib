@@ -93,9 +93,7 @@ Content-Type: application/json
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.teamsAppInstallation"
+  "blockType": "response"
 } -->
 
 ```http
