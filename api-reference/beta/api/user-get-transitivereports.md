@@ -33,7 +33,7 @@ GET /users/{id}/transitiveReports/$count
 ```
 ## Optional query parameters
 
-This method does not support the use of query parameters, but does require the `$count` query segment.
+This method supports the `$filter` query parameter for only the **accountEnabled** property. For more information about using query parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a count of trans
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. The `$count` query segment is required.
 
 <!-- {
   "blockType": "request",
