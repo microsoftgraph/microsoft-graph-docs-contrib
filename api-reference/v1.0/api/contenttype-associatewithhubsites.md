@@ -12,7 +12,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 
-Associate a [content type][contentType] with a list of hub sites.
+Associate a published [content type][contentType] present in content type hub with a list of hub sites.
 
 >**Note:** This feature is limited to tenants that have a SharePoint Syntex license.
   
@@ -39,6 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /sites/id/contentTypes/id/associateWithHubSites
 ```
+>**Note:** The siteId represents a content type hub site.
 
 ## Request headers
 |Name|Description|
