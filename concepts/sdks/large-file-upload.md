@@ -83,7 +83,7 @@ const options: OneDriveLargeFileUploadOptions = {
       console.log(`Uploaded ${range?.minValue} to ${range?.maxValue}`);
     }
   }
-}
+};
 
 try {
   // Create FileUpload object
@@ -97,12 +97,33 @@ try {
 
   // The response body will be of the corresponding type of the
   // item being uploaded. For OneDrive, this is a DriveItem
-  const driveItem: DriveItem = uploadResult.responseBody as DriveItem;
-  console.log(JSON.stringify(`Uploaded file with ID: ${driveItem.id}`));
+  const driveItem = uploadResult.responseBody as DriveItem;
+  console.log(`Uploaded file with ID: ${driveItem.id}`);
   return `Uploaded file with ID: ${driveItem.id}`;
 } catch (err) {
   console.log(`Error uploading file: ${JSON.stringify(err)}`);
   return `Error uploading file: ${JSON.stringify(err)}`;
+}
+```
+
+As alternatives to using a `File` object to create a `FileUpload`, you can use a `ReadStream` object to create a `StreamUpload`.
+
+```typescript
+const fileName = "<FILE_NAME>";
+const stats = fs.statSync(`./test/sample_files/${fileName}`);
+const totalsize = stats.size;
+const readStream = fs.createReadStream(`./test/sample_files/${fileName}`);
+const fileObject = new StreamUpload(readStream, fileName, totalsize);
+```
+
+You can also create a custom implementation of the `FileObject` interface.
+
+```typescript
+interface FileObject<T> {
+  content: T;
+  name: string;
+  size: number;
+  sliceFile(range: Range): Promise<ArrayBuffer | Blob | Buffer>;
 }
 ```
 
@@ -174,4 +195,73 @@ const resumedFile: DriveItem = await uploadTask.resume() as DriveItem;
 > The Java SDK does not currently support resuming in-progress downloads.
 
 ---
+
+## Upload large attachment to Outlook message
+
+### [C#](#tab/csharp)
+
+```csharp
+// TODO
+```
+
+### [TypeScript](#tab/typescript)
+
+```typescript
+// Create an attachment item payload
+// file is a File object
+const payload = {
+  AttachmentItem: {
+    attachmentType: 'file',
+    name: file.name,
+    size: file.size
+  }
+};
+
+const options: LargeFileUploadTaskOptions = {
+  rangeSize: 1024 * 1024,
+  // Called as each "slice" of the file is uploaded
+  uploadEventHandlers: {
+    progress: (range, e) => {
+      console.log(`Uploaded ${range?.minValue} to ${range?.maxValue}`);
+    }
+  }
+};
+
+try {
+  // Create a draft message
+  const draftMsg: Message = await client.api('/me/messages')
+    .post({
+      subject: 'Large file attachment'
+    });
+
+  // Create upload session using draft message's ID
+  const uploadSession = await LargeFileUploadTask
+    .createUploadSession(client,
+      `/me/messages/${draftMsg.id}/attachments/createUploadSession`,
+      payload);
+
+  // Create file upload
+  // Note you can use StreamUpload or custom implementation of FileObject instead
+  const fileObject = new FileUpload(file, file.name, file.size);
+
+  // Create upload task
+  const uploadTask = new LargeFileUploadTask(client, fileObject, uploadSession, options);
+
+  // Upload the file
+  const uploadResult: UploadResult = await uploadTask.upload();
+  return 'Attachment uploaded';
+} catch (err) {
+  console.log(`Error uploading file: ${JSON.stringify(err)}`);
+  return `Error uploading file: ${JSON.stringify(err)}`;
+}
+```
+
+### [Java](#tab/java)
+
+```java
+// TODO
+```
+
+---
+
 <!-- markdownlint-enable MD024 -->
