@@ -270,9 +270,11 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 4: Notify the members of a team about pending finance approval requests
+### Example 4: Notify the team members about pending finance approval requests
 
-This example shows how you can send an activity feed notification to all of the members of a team. This example is the same as Example 1, except that the recipient is now a [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
+This example shows how you can send an activity feed notification to all team members. This example is similar to previous examples. However, in this case, the ``recipient`` is a [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
+
+> **Note:** The ability to send notifications to all of the members of a team is limited to teams with 10,000 members or less. If a request is sent to send notifications to the members of a team with more than 10,000 members none of the members of the team will receive a notification.
 
 #### Request
 <!-- {
@@ -317,9 +319,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 5: Notify the members of a channel about pending finance approval requests
+### Example 5: Notify the channel members about pending finance approval requests
 
-This example shows how you can send an activity feed notification to all of the members of a channel. This example is the same as Example 1, except that the recipient is now a [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
+This example shows how you can send an activity feed notification to all channel members. This example is similar to the previous example. However, in this case, the ``recipient`` is a [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
 
 #### Request
 <!-- {

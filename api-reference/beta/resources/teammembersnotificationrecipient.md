@@ -1,6 +1,6 @@
 ---
 title: "teamMembersNotificationRecipient resource type"
-description:  Represents a recipient of a notification sent in a Microsoft Teams activity feed, where the recipient is made up of the members of a team.
+description:  Represents the recipient of a notification sent in a Microsoft Teams activity feed. The recipient consists of the team members.
 author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
@@ -11,14 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a recipient of a notification sent in a Microsoft Teams activity feed, where the recipient is made up of the members of a team.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the recipient of a notification sent in a Microsoft Teams activity feed. The recipient consists of the team members.
 
 Inherits from [teamworkNotificationRecipient](teamworknotificationrecipient.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|teamId|String|Identifier for the team.|
+|teamId|String|The team's identifier.|
 
 ## Relationships
 None.

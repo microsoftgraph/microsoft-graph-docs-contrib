@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "publishingState",
           "ChangeType": "Addition",
-          "Description": "Added the [chatMembersNotificationRecipient](https://docs.microsoft.com/en-us/graph/api/resources/chatMembersNotificationRecipient?view=graph-rest-beta) resource type.",
+          "Description": "Added the [chatMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/chatMembersNotificationRecipient?view=graph-rest-beta) resource type.",
           "Target": "chatMembersNotificationRecipient"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "publishingState",
           "ChangeType": "Addition",
-          "Description": "Added the [channelMembersNotificationRecipient](https://docs.microsoft.com/en-us/graph/api/resources/channelMembersNotificationRecipient?view=graph-rest-beta) resource type.",
+          "Description": "Added the [channelMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/channelMembersNotificationRecipient?view=graph-rest-beta) resource type.",
           "Target": "channelMembersNotificationRecipient"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "publishingState",
           "ChangeType": "Addition",
-          "Description": "Added the [teamMembersNotificationRecipient](https://docs.microsoft.com/en-us/graph/api/resources/teammembersnotificationrecipient?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/teammembersnotificationrecipient?view=graph-rest-beta) resource type.",
           "Target": "teamMembersNotificationRecipient"
         },
         {

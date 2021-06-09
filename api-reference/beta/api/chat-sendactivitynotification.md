@@ -263,9 +263,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 4: Notify the members of a chat about a task created in a chat
+### Example 4: Notify the chat members about a task created in a chat
 
-This example shows how you can send an activity feed notification to all of the members of a chat. This example is the same as Example 1, except that the recipient is now a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Note that the `chatId` specified in the `recipient` must match the `chatId` specified in the request URL.
+This example shows how you can send an activity feed notification to all chat members. This example is similar to previous examples. However, in this case, the ``recipient`` is a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Note that the `chatId` specified in the `recipient` must match the `chatId` specified in the request URL.
 
 #### Request
 

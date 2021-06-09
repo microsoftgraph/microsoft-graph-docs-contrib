@@ -1,6 +1,6 @@
 ---
 title: "channelMembersNotificationRecipient resource type"
-description:  Represents a recipient of a notification sent in a Microsoft Teams activity feed, where the recipient is made up of the members of a channel.
+description:  Represents the recipient of a notification sent in a Microsoft Teams activity feed. The recipient consists of the channel members.
 author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
@@ -11,15 +11,17 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a recipient of a notification sent in a Microsoft Teams activity feed, where the recipient is made up of the members of a channel.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the recipient of a notification sent in a Microsoft Teams activity feed. The recipient consists of the channel members.
 
 Inherits from [teamworkNotificationRecipient](teamworknotificationrecipient.md).
 
 ## Properties
-| Property  | Type   | Description                                              |
-| :-------- | :----- | :------------------------------------------------------- |
-| teamId    | String | Identifier for the team under which the channel resides. |
-| channelId | String | Identifier for the channel.                              |
+| Property  | Type   | Description                                            |
+| :-------- | :----- | :----------------------------------------------------- |
+| teamId    | String | The team's identifier under which the channel resides. |
+| channelId | String | The channel's identifier.                              |
 
 ## Relationships
 None.

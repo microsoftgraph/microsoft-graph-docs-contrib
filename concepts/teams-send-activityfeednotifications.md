@@ -249,11 +249,11 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 4: Notify the members of a team about an event
+### Example 4: Notify the team members about an event
 
-This example shows how you can send an activity feed notification to all of the members of a team. This example notifies the team members about a new event. 
+This example shows how you can send an activity feed notification to all team members. This example notifies the team members about a new event. 
 
-> **Note:** The ability to send notifications to all of the members of a team is currently only available in beta.
+> **Note:** The ability to send notifications to all team members is currently only available in beta.
 
 #### Request
 <!-- {
@@ -269,7 +269,7 @@ Content-Type: application/json
     "topic": {
         "source": "text",
         "value": "Weekly Virtual Social",
-        "webUrl": <Teams webUrl>
+        "webUrl": "Teams webUrl"
     },
     "previewText": {
         "content": "It will be fun!"
@@ -292,11 +292,11 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 5: Notify the members of a channel about an event
+### Example 5: Notify the channel members about an event
 
-This example shows how you can send an activity feed notification to all of the members of a channel. This example notifies the channel members about a new event. 
+This example shows how you can send an activity feed notification to all channel members. This example notifies the channel members about a new event. 
 
-> **Note:** The ability to send notifications to all of the members of a channel is currently only available in beta.
+> **Note:** The ability to send notifications to all channel members is currently only available in beta.
 
 #### Request
 <!-- {
@@ -312,7 +312,7 @@ Content-Type: application/json
     "topic": {
         "source": "text",
         "value": "Weekly Virtual Social",
-        "webUrl": <Teams webUrl>
+        "webUrl": "Teams webUrl"
     },
     "previewText": {
         "content": "It will be fun!"
@@ -336,11 +336,11 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 6: Notify the members of a chat about an event
+### Example 6: Notify the chat members about an event
 
-This example shows how you can send an activity feed notification to all of the members of a chat. This example notifies the chat members about a new event. 
+This example shows how you can send an activity feed notification to all chat members. This example notifies the chat members about a new event. 
 
-> **Note:** The ability to send notifications to all of the members of a chat is currently only available in beta.
+> **Note:** The ability to send notifications to all chat members is currently only available in beta.
 
 #### Request
 <!-- {
@@ -357,7 +357,7 @@ Content-Type: application/json
     "topic": {
         "source": "text",
         "value": "Weekly Virtual Social",
-        "webUrl": <Teams webUrl>
+        "webUrl": "Teams webUrl"
     },
     "previewText": {
         "content": "It will be fun!"
