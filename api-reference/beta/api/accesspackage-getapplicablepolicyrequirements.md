@@ -39,7 +39,7 @@ The following table shows the action that can be used to request an assignment f
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "accesspackageassignmentrequest_filterByCurrentUser"
+  "name": "accesspackage_getapplicablepolicyrequirements"
 }
 -->
 ``` http
