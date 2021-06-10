@@ -59,7 +59,6 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_b2cuserflows_userflowIdentityProviders"
@@ -67,7 +66,7 @@ The following is an example of the request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userflowIdentityProviders/$ref
+PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders/$ref
 Content-type: application/json
 Content-length: 30
 

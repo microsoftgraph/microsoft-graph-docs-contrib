@@ -7778,7 +7778,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "b2cIdentityUserFlow",
           "ChangeType": "change",
-          "Description": "Add support to the new identityProvider relationship in the b2c identity userflow.",
+          "Description": "Added the identityProvider relationship to the b2c identity userflow",
           "Target": "b2cIdentityUserFlow"
         },
         {
@@ -7786,7 +7786,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "b2xIdentityUserFlow",
           "ChangeType": "change",
-          "Description": "Add support to the new identityProvider relationship in the b2x identity userflow.",
+          "Description": "Added the identityProvider relationship to the b2x identity userflow.",
           "Target": "b2xIdentityUserFlow"
         },
         {

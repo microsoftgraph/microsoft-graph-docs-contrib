@@ -58,7 +58,6 @@ If successful, this method returns a `200 OK` response code and a JSON represent
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_b2cUserFlow_list_userflowidentityProviders"
@@ -66,7 +65,7 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userflowIdentityProviders
+GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders
 ```
 
 ### Response

@@ -3,7 +3,7 @@ title: "Add identityProvider to a b2xIdentityUserFlow (deprecated)"
 description: "Add identityProvider in a b2xIdentityUserFlow (deprecated)."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jkdouglas"
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -60,8 +60,6 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_b2xuserflows_identityprovider"

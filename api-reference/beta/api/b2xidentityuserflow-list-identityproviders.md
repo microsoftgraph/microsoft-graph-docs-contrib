@@ -3,7 +3,7 @@ title: "List all identityProviders in a b2xIdentityUserFlow (deprecated)"
 description: "List all identityProviders in a b2xIdentityUserFlow (deprecated)."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jkdouglas"
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -59,8 +59,6 @@ If successful, this method returns a `200 OK` response code and a JSON represent
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_b2xUserFlow_list_identityProviders"
@@ -104,5 +102,3 @@ Content-type: application/json
     ]
 }
 ```
-
-
