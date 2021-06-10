@@ -30,17 +30,17 @@ The Microsoft Service Communications API provides Service Health and Message Cen
 | Get a post incident report for tenant | GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/{issueId}/incidentReport |
 | List all service messages for tenant | GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages |
 | Get a specific service message for tenant | GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/{messageId} |
-| Update service message status for login user | POST https://graph.microsoft.com/beta/admin/serviceAnnouncement/message/markRead <br> More usage on status update operations can be found [here](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta)|
+| Update service message status for login user | POST https://graph.microsoft.com/beta/admin/serviceAnnouncement/message/markRead <br> More usage on status update operations can be found [here](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true)|
 
 
 ## API reference
 Looking for the API reference for this service?
 
-- [Service Communications API in Microsoft Graph beta](/graph/api/resources/serviceannouncement?view=graph-rest-beta)
+- [Service Communications API in Microsoft Graph beta](/graph/api/resources/serviceannouncement?view=graph-rest-beta&preserve-view=true)
 
 
 ## Next steps
 
 - Select and try service communications sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=admin%2FserviceAnnouncement%2FhealthOverviews&version=beta).
 
-- Get started with Service Communications in Microsoft Graph by learning more about [Service Communications API](/graph/api/resources/serviceannouncement?view=graph-rest-beta).
+- Get started with Service Communications in Microsoft Graph by learning more about [Service Communications API](/graph/api/resources/serviceannouncement?view=graph-rest-beta&preserve-view=true).
