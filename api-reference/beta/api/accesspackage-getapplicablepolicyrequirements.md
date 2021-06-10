@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This operation is a way for callers to find what is required to successfully request an assignment for a specific accessPackage. 
+This operation allows callers to find properties that are required to successfully request an assignment for a specific accessPackage. 
 
 > [!NOTE] 
 > This operation has no side effects, but because it accepts optional parameters in the POST body, it is configured as an action.
