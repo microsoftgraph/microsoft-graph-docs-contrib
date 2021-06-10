@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List all the submissions associated with this assignment. A teacher or an application with application permissions can get all the submissions while a student can only get submissions that they are associated with.
 
 ## Permissions
@@ -27,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/{id}/assignments/{id}/submissions
+GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/submissions
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -50,7 +48,7 @@ The following is an example of the request.
   "name": "get_submissions"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/11021/assignments/19002/submissions
+GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/submissions
 ```
 
 ##### Response
@@ -79,7 +77,7 @@ Content-length: 873
       },
       "releasedBy": {
           "user": {
-            "displayName": "Susana Rocha",
+            "displayName": "Shawn Hughes",
             "id": "14012"
           },
         },
@@ -88,7 +86,7 @@ Content-length: 873
       "status": "working",
       "submittedBy": {
           "user": {
-            "displayName": "Susana Rocha",
+            "displayName": "Shawn Hughes",
             "id": "14012"
           },
         },

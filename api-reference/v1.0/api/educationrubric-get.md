@@ -11,11 +11,9 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object.
 
-Note that when getting the rubric of an assignment (`GET /education/classes/{id}/assignments/{id}/rubric`), what is returned is an immutable copy of the original rubric that exists under `/education/users/{id}/rubrics`. The copy is associated with that specific assignment.
+Note that when getting the rubric of an assignment (`GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric`), what is returned is an immutable copy of the original rubric that exists under `/education/users/{id}/rubrics`. The copy is associated with that specific assignment.
 
 ## Permissions
 

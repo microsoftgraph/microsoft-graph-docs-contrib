@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 A wrapper around a resource for use on a submission. The wrapper adds a pointer to the assignment resource if this was copied from the assignment.  
 
 

@@ -26,9 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-```http
-POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 
+```http
+POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/setUpResourcesFolder
 ```
 ## Request headers
 | Header       | Value |
@@ -48,10 +48,11 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/education/classes/11012/assignments/19002/setUpResourcesFolder
+POST https://graph.microsoft.com/v1.0/education/classes/d38ffdea-da93-46ac-90ba-d568c6073075/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/setUpResourcesFolder
 Content-type: application/json
 
 {

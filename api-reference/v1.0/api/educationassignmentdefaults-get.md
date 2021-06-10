@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get educationAssignmentDefaults
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object. These are the class-level assignment defaults respected by new assignments created in the class. Callers can continue to specify custom values on each assignment creation if they do not want the default behaviors.
 
 ## Permissions
@@ -30,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /education/classes/{id}/assignmentDefaults
+GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 ```
 
 ## Optional query parameters
@@ -58,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an [educationAss
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/education/classes/{id}/assignmentDefaults
+GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 ```
 
 ### Response

@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 A subclass of [educationResource](educationresource.md). This is a PowerPoint resource. The PowerPoint file must be uploaded in the **fileResource** directory associated with the 
 assignment or submission.
 

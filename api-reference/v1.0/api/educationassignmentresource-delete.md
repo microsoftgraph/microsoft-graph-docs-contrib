@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete a specific resource attached to an assignment.
 
 In general, only teachers in the class can remove a resource. However, teachers cannot remove resources marked as "distributeToStudents", after the assignment has been published to students.
@@ -29,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/classes/{id}/assignments/{id}/resources/{id}
+DELETE /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/resources/{id}
 
 ```
 ## Request headers
@@ -53,7 +51,7 @@ The following is an example of the request.
   "name": "delete_educationassignmentresource"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/11021/assignments/19002/resources/22002
+DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/resources/22002
 ```
 
 ##### Response

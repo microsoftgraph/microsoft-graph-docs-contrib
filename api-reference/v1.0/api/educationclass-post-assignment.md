@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Creates a new assignment. Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publish is called.  
 
 ## Permissions
@@ -25,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. | 
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request" } -->
 ```http
-POST /education/classes/{id}/assignments
+POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments
 ```
 ## Request headers
 | Header       | Value |
@@ -46,7 +44,7 @@ If successful, this method returns a `201 Created` response code and an [educati
 ##### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_educationassignment_from_educationclass"
 }-->
 ```http

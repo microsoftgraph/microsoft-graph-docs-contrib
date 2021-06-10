@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve an [educationCategory](../resources/educationcategory.md) object.
 
 ## Permissions
@@ -27,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request" } -->
 ```http
-GET /education/classes/{id}/assignmentCategories/{id}
+GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/{id}
 ```
 
 ## Optional query parameters
@@ -55,12 +53,12 @@ If successful, this method returns a `200 OK` response code and a [educationCate
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_assignments"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{id}/assignmentCategories/{id}
+GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/{id}
 ```
 
 ##### Response
@@ -70,7 +68,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": false

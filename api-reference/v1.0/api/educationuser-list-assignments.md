@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Returns a list of assignments assigned to a user for all classes. 
 
 This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
@@ -95,7 +93,7 @@ Content-length: 344
       "closeDateTime": "2014-01-11T00:00:00Z",
       "createdBy": {
         "user": {
-            "displayName": "Susana Rocha",
+            "displayName": "Shawn Hughes",
             "id": "14012"
           }
       },
@@ -112,7 +110,7 @@ Content-length: 344
       },
       "lastModifiedBy": {
         "user": {
-            "displayName": "Susana Rocha",
+            "displayName": "Shawn Hughes",
             "id": "14012"
           }
       },

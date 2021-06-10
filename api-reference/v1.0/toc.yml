@@ -4051,7 +4051,7 @@ items:
         - name: List class assignments
           href: api/educationclass-list-assignments.md
         - name: Create assignment
-          href: api/educationclass-post-assignments.md
+          href: api/educationclass-post-assignment.md
         - name: Get assignment settings
           href: api/educationassignmentsettings-get.md
         - name: Get assignment defaults
@@ -4095,7 +4095,7 @@ items:
         - name: List assignment resources
           href: api/educationassignment-list-resources.md
         - name: Create assignment resource
-          href: api/educationassignment-post-resources.md
+          href: api/educationassignment-post-resource.md
         - name: Get assignment resource
           href: api/educationassignmentresource-get.md
         - name: Delete resource from assignment

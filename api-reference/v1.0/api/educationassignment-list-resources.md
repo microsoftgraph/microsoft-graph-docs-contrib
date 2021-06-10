@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get all the resources associated with this assignment.
 
 ## Permissions
@@ -27,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/{id}/assignments/{id}/resources
+GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/resources
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -49,10 +47,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
   "name": "get_resources_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/11012/assignments/19002/resources
+GET https://graph.microsoft.com/v1.0/education/classes/d38ffdea-da93-46ac-90ba-d568c6073075/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/resources
 ```
 
 ##### Response

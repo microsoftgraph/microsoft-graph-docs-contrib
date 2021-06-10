@@ -11,8 +11,6 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the [educationRubric](../resources/educationrubric.md) object attached to an [educationAssignment](../resources/educationassignment.md), if one exists.
 
 ## Permissions
@@ -30,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /education/classes/{id}/assignments/{id}/rubric
+GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric
 ```
 
 ## Request headers
@@ -55,11 +53,12 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["cf6005fc-9e13-44a2-a6ac-a53322006454"],
   "name": "get_rubric"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/{id}/assignments/{id}/rubric
+GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric
 ```
 
 ### Response

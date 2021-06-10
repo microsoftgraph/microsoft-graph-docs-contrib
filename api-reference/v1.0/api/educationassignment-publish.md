@@ -1,19 +1,19 @@
 ---
-title: "educationAssignment: publish"
-description: "This action changes the state of an assignment from its original draft status to the published status. Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. When you call this API, submission objects are created and the assignment appears in the student's list."
+title: "Publish an education assignment"
+description: "This action publishes an education assignment."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# educationAssignment: publish
+# Publish an education assignment
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+This action publishes an education assignment.
 
-This action changes the state of an assignment from its original draft status to the published status. Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. When you call this API, submission objects are created and the assignment appears in the student's list.
+ Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. Calling this API creates [educationSubmission] (../resources/educationsubmission.md) objects and displays the assignment in each student's list.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. | 
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request" } -->
 ```http
-POST /education/classes/{id}/assignments/{id}/publish
+POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/publish
 
 ```
 ## Request headers
@@ -49,10 +49,11 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
   "name": "educationassignment_publish_2"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/11021/assignments/19002/publish
+POST https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/publish
 ```
 
 ##### Response

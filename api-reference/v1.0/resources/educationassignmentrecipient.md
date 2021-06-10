@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Used within the **assignments.assignTo** property. This superclass is abstract and you cannot
 set the property in assignments to this value. This superclass represents who the
 assignment should be assigned to when the assignment is published.

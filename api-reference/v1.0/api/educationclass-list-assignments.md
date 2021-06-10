@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a list of assignment objects. A teacher or an application executing with application permissions can see all assignment objects for the class. Students can only see assignments that are assigned to them.
 
 ## Permissions
@@ -29,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/{id}/assignments
+GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments
 ```
 
 ## Optional query parameters
@@ -61,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{id}/assignments
+GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments
 ```
 
 ##### Response

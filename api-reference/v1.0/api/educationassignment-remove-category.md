@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Remove an [educationCategory](../resources/educationcategory.md) from an [educationAssignment](../resources/educationassignment.md).
 
 ## Permissions
@@ -25,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported.  | 
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request" } -->
 ```http
-DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
+DELETE /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/categories/{id}/$ref
 ```
 ## Request headers
 | Header       | Value |
@@ -38,7 +36,6 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
 If successful, this method returns a `204 No Content` response code.
 
@@ -47,11 +44,11 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "add_educationcategory_to_educationassignment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/11021/assignments/19002/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
+DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
 ```
 
 ##### Response
@@ -61,7 +58,7 @@ The following is an example of the response.
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignmentResource"
 } -->

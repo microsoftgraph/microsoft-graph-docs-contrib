@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Feedback related to a specific [quality](rubricquality.md) of an [educationRubric](educationrubric.md).
 
 ## Properties

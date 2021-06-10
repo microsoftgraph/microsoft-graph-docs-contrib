@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a list of [educationCategory](../resources/educationcategory.md) objects.
 
 ## Permissions
@@ -29,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/{id}/assignmentCategories
+GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories
 ```
 
 ## Optional query parameters
@@ -62,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{id}/assignmentCategories
+GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories
 ```
 
 ##### Response

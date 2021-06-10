@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete an existing assignment. 
 
 Only teachers within a class can delete assignments.
@@ -32,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/{id}/assignments/{id}
+DELETE /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454
 ```
 
 ## Request headers
@@ -62,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/11014/assignments/19002
+DELETE https://graph.microsoft.com/v1.0/education/classes/11014/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8
 ```
 
 ### Response

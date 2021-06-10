@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update educationAssignmentSettings
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object. Only Teachers can update these settings.
 
 ## Permissions
@@ -30,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /education/classes/{id}/assignmentSettings
+PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 ```
 
 ## Request headers
@@ -64,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/education/classes/{id}/assignmentSettings
+PATCH https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 Content-Type: application/json
 Content-length: 114
 

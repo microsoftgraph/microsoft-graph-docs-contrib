@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Abstract class that represents the different sets of users to whom a submission can be assigned. Possible values include individuals or groups. This is used within the **submission.recipient** property.
 
 

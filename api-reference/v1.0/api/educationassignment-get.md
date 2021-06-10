@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the properties and relationships of an assignment. 
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
@@ -30,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/{id}/assignments/{id}
+GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -52,10 +50,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["1fdf61ee-c129-4960-9b7c-8df159aa64b0"],
   "name": "get_educationassignment"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/11014/assignments/19002
+GET https://graph.microsoft.com/v1.0/education/classes/5edb6a5f-fc6b-441b-8952-bcbfc33ef0e5/assignments/1fdf61ee-c129-4960-9b7c-8df159aa64b0
 ```
 
 ##### Response
@@ -84,7 +83,7 @@ Content-length: 279
   "classId": "11006",
   "createdBy": {
     "user": {
-      "displayName": "Susana Rocha",
+      "displayName": "Shawn Hughes",
       "id": "14012",
     }
   },
@@ -103,7 +102,7 @@ Content-length: 279
   },
   "lastModifiedBy": {
     "user": {
-      "displayName": "Susana Rocha",
+      "displayName": "Shawn Hughes",
       "id": "14012",
     }
   },

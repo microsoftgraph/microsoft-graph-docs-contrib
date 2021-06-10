@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Creates a new [educationCategory](../resources/educationcategory.md) on an [educationClass](../resources/educationclass.md).
 
 ## Permissions
@@ -25,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. | 
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request" } -->
 ```http
-POST /education/classes/{id}/assignmentCategories
+POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories
 
 ```
 ## Request headers
@@ -47,7 +45,7 @@ If successful, this method returns a `201 Created` response code and an [educati
 ##### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http
@@ -67,7 +65,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory"
 } -->

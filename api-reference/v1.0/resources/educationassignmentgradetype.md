@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents how an assignment will be graded. This is used within the **assignments.grading** property.
 
 This superclass can not be used directly in the assignment property. It exists to allow for multiple different ways to grade assignments.

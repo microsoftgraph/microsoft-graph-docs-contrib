@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 A superclass for all resource objects in the system. A resource is associated with an **Assignment** and/or **Submission**, which represents the learning object that is being
 handed out or handed in. You cannot instantiate a resource directly; you must make a subclass that will represent the type of resource being used.
 
