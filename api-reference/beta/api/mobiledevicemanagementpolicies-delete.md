@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object. Note that this is only supported when the policy is no longer valid, that is, if that 'idValid' property is false. This indicates that the service principal associated with the application for this policy has been deleted.
+Delete a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.
+
+> [!NOTE]
+> Note that this is only supported when the policy is no longer valid, that is, if the 'isValid' property is false. This indicates that the service principal associated with the application for this policy has been deleted.
 
 ## Permissions
 
