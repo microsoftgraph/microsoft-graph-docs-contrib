@@ -16,8 +16,13 @@ Namespace: microsoft.graph
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 The **accessReviewNotificationRecipientScope** represents a base class for defining users who will receive notifications on instances of [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) objects. It is inherited by [accessReviewNotificationRecipientQueryScope](../resources/accessReviewNotificationRecipientQueryScope.md).
+## Properties
+None.
 
-### JSON representation
+## Relationships
+None.
+
+## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
