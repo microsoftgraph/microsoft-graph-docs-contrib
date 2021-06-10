@@ -488,7 +488,7 @@ items:
             items:
               - name: Use query parameters
                 href: query-parameters.md
-              - name: Use the $search query parameter
+              - name: Use the search query parameter
                 href: search-query-parameter.md
               - name: Advanced query capabilities
                 href: aad-advanced-queries.md

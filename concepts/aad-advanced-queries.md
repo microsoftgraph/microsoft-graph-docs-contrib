@@ -66,7 +66,7 @@ The following table lists query scenarios on directory objects that are supporte
 
 Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
 
-+ Properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in` and `ne` operators only in advanced queries.
++ Properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in`, `ne`, and `NOT` operators only in advanced queries.
 + The `endsWith` operator is supported only on **mail** and **userPrincipalName** properties.
 + Queries that are supported by default will also work in advanced queries.
 + The `NOT` and `ne` negation operators are supported only in advanced queries. 
