@@ -1,7 +1,7 @@
 ---
 title: "accessReviewnotificationrecipientqueryscope resource type"
 description: "Represents who will receive notification for access reviews."
-author: "jingyang"
+author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
