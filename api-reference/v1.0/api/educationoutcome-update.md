@@ -45,7 +45,7 @@ Existing properties that are not included in the request body will maintain thei
 
 The educationOutcome object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**. Supply the specific properties relevant to the type of outcome being patched.
 
-All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**. Do not update the "published" property; it is for internal use. For example, to assign points to an **educationPointsOutcome**, update the **points** property, but do not update **publishedPoints**.
+All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**. Don't update the "published" property; it is for internal use. For example, to assign points to an **educationPointsOutcome**, update the **points** property, but Don't update **publishedPoints**.
 
 ## Response
 

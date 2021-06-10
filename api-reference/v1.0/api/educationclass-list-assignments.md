@@ -1,6 +1,6 @@
 ---
 title: "List class assignments"
-description: "Retrieve a list of assignment objects. A teacher or an application executing with application permissions is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them."
+description: "Retrieve a list of assignment objects."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of assignment objects. A teacher or an application executing with application permissions can see all assignment objects for the class. Students can only see assignments that are assigned to them.
+Retrieve a list of assignment objects. 
+
+A teacher or an application executing with application permissions can see all assignment objects for the class. Students can only see assignments that are assigned to them.
 
 ## Permissions
 
@@ -41,7 +43,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
