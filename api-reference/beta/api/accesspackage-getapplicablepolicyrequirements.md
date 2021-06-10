@@ -24,7 +24,6 @@ The following table shows the parameters that can be used with this function.
 |Parameter|Type|Description|
 |:---|:---|:---|
 | Post body | microsoft.graph.accessPackage |The access package. |
-| Post body | microsoft.graph.accessPackageSubject | The user to evaluate for; if not specified, the user from the token is used instead. |
 
 ## Return value
 
