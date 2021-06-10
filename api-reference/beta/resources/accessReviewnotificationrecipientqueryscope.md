@@ -27,13 +27,6 @@ Inherits from [accessReviewNotificationRecipientScope](../resources/accessreview
 | queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query that is, `./manager`) is specified. |
 
 
-### Supported queries for accessReviewNotificationRecipientQueryScope
-
-|Scenario| query | queryType | queryRoot |
-|--|--|--|--|
-| Group member as notification recipient | /groups/{group id}/members |MicrosoftGraph||
-| Specific user as notification recipient | /users/{user id} |MicrosoftGraph||
-
 ## Relationships
 None.
 
