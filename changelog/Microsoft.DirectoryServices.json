@@ -23,8 +23,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-08T18:32:06Z",
-      "WorkloadArea": "Governance",
-      "SubArea": "Entitlement management access packages"
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
