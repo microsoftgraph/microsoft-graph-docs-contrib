@@ -16,28 +16,21 @@ The Microsoft Service Communications API provides access to Service Health and M
 The Microsoft Service Communications API provides Service Health and Message Center posts pertaining to your tenant. For Service Health, this allows you to get the current and historical health of your Microsoft services. If you are experiencing problems with a Microsoft service, you can check service health to determine whether there is a known issue with a resolution in progress before calling support or spending time troubleshooting. For Message Center, this allows you to keep track of upcoming changes, including new and changed features and other important announcements.
 
 ### Integrate Service Communications data into custom workflows
-* Integrate active Service Health issues directly into custom applications where they can be triaged or shared with the impacted audiences
-* Enable custom workflows to review, assign and triage change communication through Message Center
+* Integrate active Service Health issues directly into custom applications, to triager and share with the impacted audiences.
+* Enable custom workflows to review, assign and triage change communication through Message Center.
 
 ## Common Service Communications API operations
 
 |Operation|Request|
 |:--------|:--|
-| List all services health information for tenant | GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews |
-| Get specific service health information for tenant | GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/{serviceName} |
-| List all service issues for tenant | GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues |
-| Get a specific service issue for tenant | GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/{issueId} |
-| Get a post incident report for tenant | GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/{issueId}/incidentReport |
-| List all service messages for tenant | GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages |
-| Get a specific service message for tenant | GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/{messageId} |
-| Update service message status for login user | POST https://graph.microsoft.com/beta/admin/serviceAnnouncement/message/markRead <br> More usage on status update operations can be found [here](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true)|
-
-
-## API reference
-Looking for the API reference for this service?
-
-- [Service Communications API in Microsoft Graph beta](/graph/api/resources/serviceannouncement?view=graph-rest-beta&preserve-view=true)
-
+| List all services health information for tenant | [List healthOverviews](/graph/api/servicehealth-list?view=graph-rest-beta&preserve-view=true) |
+| Get specific service health information for tenant | [Get healthOverview](/graph/api/servicehealth-get?view=graph-rest-beta&preserve-view=true) |
+| List all service issues for tenant | [List issues](/graph/api/servicehealthissue-list?view=graph-rest-beta&preserve-view=true) |
+| Get a specific service issue for tenant | [Get issue](/graph/api/servicehealthissue-get?view=graph-rest-beta&preserve-view=true) |
+| Get a post incident review report for tenant | [Get incident report](/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta&preserve-view=true)|
+| List all service messages for tenant | [List messages](/graph/api/serviceupdatemessage-list?view=graph-rest-beta&preserve-view=true) |
+| Get a specific service message for tenant | [Get message](/graph/api/serviceupdatemessage-get?view=graph-rest-beta&preserve-view=true) |
+| Update service message status for login user | Update status operations can be found [here](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true)|
 
 ## Next steps
 
