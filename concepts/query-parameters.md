@@ -85,7 +85,7 @@ Use the `$count` query parameter to include a count of the total number of items
 > [!NOTE]
 > `$count` can also be used as a [URL segment](#other-odata-url-capabilities) to retrieve the integer total of the collection. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), is it only supported in an [advanced query](/graph/aad-advanced-queries). See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
 >
-> Use of `$count` is currently not supported in Azure AD B2C tenants.
+> Use of `$count` is not supported in Azure AD B2C tenants.
 
 For example, the following request returns both the **contact** collection of the current user, and the number of items in the **contact** collection in the `@odata.count` property.
 
@@ -192,7 +192,7 @@ To negate the result of the expression inside the `any` clause, use the `NOT` op
 GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@m365x435773.onmicrosoft.com')&$count=true
 ```
 
-The `all` operator applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *all members* of the collection, otherwise it returns `false`. It is currently not supported by any property.
+The `all` operator applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *all members* of the collection, otherwise it returns `false`. It is not supported by any property.
 
 ### Examples using the filter query operator
 
@@ -311,7 +311,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 Some requests return multiple pages of data, either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result.  
 The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
-> **Note:** If you're using OData Count (adding `$count=true` in the query string) for queries against directory objects, the `@odata.count` property will be present only in the first page.
+> **Note:** If you're using OData Count (adding `$count=true` in the query string) for queries against directory objects, the `@odata.count` property is present only in the first page.
 >
 > The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
 
