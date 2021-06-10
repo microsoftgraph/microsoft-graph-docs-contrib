@@ -25,6 +25,7 @@ Inherits from [identitySet](../resources/identityset.md).
 |conversation|[teamworkConversationIdentity](../resources/teamworkconversationidentity.md)|If present, represents a conversation (e.g. team, channel) atmentioned in a chatMessage.|
 |device|[identity](../resources/identity.md)|Inherited from [identitySet](../resources/identityset.md). Not used, as atmentioning devices is not supported.|
 |user|[identity](../resources/identity.md)|Inherited from [identitySet](../resources/identityset.md). If present, represents a user atmentioned in a chatMessage.|
+|tag|[teamworkTagIdentity](../resources/teamworktagidentity.md)|If present, represents a tag being atmentioned in a message in a team.|
 
 ## Relationships
 None.
@@ -53,4 +54,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-
