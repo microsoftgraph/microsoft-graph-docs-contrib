@@ -7,7 +7,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "additionalNotificationRecipients",
                     "ChangeType": "Addition",
-                    "Description": "Added additionalNotificationRecipients to [accessreviewscheduledefinition](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&tabs=http) resource type.",
+                    "Description": "Added the **additionalNotificationRecipients** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&tabs=http) resource.",
                     "Target": "accessreviewscheduledefinition"
                 }
             ],
