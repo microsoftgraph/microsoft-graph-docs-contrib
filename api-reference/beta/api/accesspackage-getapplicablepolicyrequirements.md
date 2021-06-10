@@ -42,7 +42,7 @@ The following table shows the return value that can be used to request an assign
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identitygovernance/entitlementmanagement/accessPackages/fb449cf8-3a59-4d86-bdfd-a1b7299681de/getapplicablepolicyrequirements)
+GET https://graph.microsoft.com/identitygovernance/entitlementmanagement/accessPackages/fb449cf8-3a59-4d86-bdfd-a1b7299681de/getapplicablepolicyrequirements
 ```
 
 ### Response
