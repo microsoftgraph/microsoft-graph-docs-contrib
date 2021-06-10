@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # accessPackageAssignmentRequestRequirements complex type
 
-`accessPackageAssignmentRequestRequirements` are requirements that a caller must fulfill in order to successfully create an `accessPackageAssignmentRequest` for the `accessPackage` specified as part of the URL. Requirements are determined by evaluating policies associated with the `accessPackage`. 
+**accessPackageAssignmentRequestRequirements** are requirements that a caller must fulfill in order to successfully create an accessPackageAssignmentRequest for the accessPackage specified as part of the URL. Requirements are determined by evaluating policies associated with the **accessPackage**. 
 
 ## Properties
 
