@@ -108,8 +108,8 @@ Content-Type: application/json
             "displayLocationInformationRequiredState": "default",
             "displayAppInformationRequiredState": "default"
         } 
-
     ] 
+  }
 }
 ```
 
