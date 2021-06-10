@@ -45,7 +45,6 @@ The following example shows how to call this API.
 ##### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_return"
@@ -63,8 +62,10 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignment"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
+Content-type: application/json
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
