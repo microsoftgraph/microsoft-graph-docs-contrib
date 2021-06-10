@@ -177,6 +177,27 @@ https://graph.microsoft.com/beta/users?$filter=endsWith(mail,'@outlook.com')
 }
 ```
 
+If a property has not been indexed to support a query parameter, even if the advanced query parameters are specified, the request returns an error.
+
+```http
+https://graph.microsoft.com/v1.0/users?$filter=id ge '398164b1-5196-49dd-ada2-364b49f99b27'&$count=true
+ConsistencyLevel: eventual
+```
+
+```json
+{
+    "error": {
+        "code": "Request_UnsupportedQuery",
+        "message": "The request uses a filter property that is not indexed",
+        "innerError": {
+            "date": "2021-06-10T19:32:01",
+            "request-id": "5625ba13-0c9f-4fce-a853-4b52f3e0bd09",
+            "client-request-id": "76fe4cd8-df3a-f8c3-659b-594274b6bb31"
+        }
+    }
+}
+```
+
 ## See also
 
 - [Use query parameters to customize responses](/graph/query-parameters)
