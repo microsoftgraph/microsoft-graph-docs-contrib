@@ -21,9 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 |Delegated (personal Microsoft account)| Not supported. |
-|Application*| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-
-*Application permissions are currently available to private preview customers only.
+|Application| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## HTTP request
 
@@ -98,6 +96,7 @@ Content-Type: application/json
 {
   "value": {
     "addedStudentAction": "none",
+    "addToCalendarAction": "studentsAndTeamOwners",
     "dueTime": "23:59:00",
     "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
   }

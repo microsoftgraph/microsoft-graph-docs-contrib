@@ -433,6 +433,26 @@ Namespace: microsoft.graph
 |sunny|
 |unknownFutureValue|
 
+### workforceIntegrationEncryptionProtocol values
+
+| Member
+|:----------------------------
+|sharedSecret
+|unknownFutureValue
+
+### workforceIntegrationSupportedEntities values
+
+|Member|
+|:---|
+|none|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+
 ### timeZoneStandard values
 
 | Member
@@ -496,15 +516,13 @@ Namespace: microsoft.graph
 | lightRed   | 8
 | maxColor   | 9
 
-
 ### educationExternalSource values
 
-| Member
-|:-------------------------
-| sis
-| manual
-| unknownFutureValue
-
+| Member             |
+| :----------------- |
+| sis                |
+| manual             |
+| unknownFutureValue |
 
 ### educationGender values
 
@@ -544,12 +562,14 @@ Namespace: microsoft.graph
 | normal
 | high
 
-
 ### educationUserRole values
-| Member
-|:---------------------
-| student
-| teacher
+
+| Member             |
+| :----------------- |
+| student            |
+| teacher            |
+| none               |
+| unknownFutureValue |
 
 ### meetingMessageType values
 
@@ -1403,3 +1423,57 @@ Possible values for user account types (group membership), per Windows definitio
 | :-------- |
 | entityUrl |
 | text      |
+
+
+### provisioningResult values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|skipped|
+|warning|
+|unknownFutureValue|
+
+### provisioningStepType values 
+
+|Member|
+|:---|
+|import|
+|scoping|
+|matching|
+|processing|
+|referenceResolution|
+|export|
+|unknownFutureValue|
+
+### provisioningStatusErrorCategory values 
+
+|Member|
+|:---|
+|failure|
+|nonServiceFailure|
+|success|
+|unknownFutureValue|
+
+### provisioningAction values 
+
+|Member|
+|:---|
+|other|
+|create|
+|delete|
+|disable|
+|update|
+|stagedDelete|
+|unknownFutureValue|
+
+
+### initiatorType values 
+
+|Member|
+|:---|
+|user|
+|application|
+|system|
+|unknownFutureValue|

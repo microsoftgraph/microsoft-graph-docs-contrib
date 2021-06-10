@@ -58,8 +58,18 @@ The `mgt-get` component supports several [templates](../customize-components/tem
 
 ## Microsoft Graph permissions
 
-For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md). 
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
 
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.
+
+## Cache
+
+To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidationPeriod` properties. By default, the `mgt-get` component does not cache any responses.
+
+|Object store|Cached data|Remarks|
+|-----------|-----------|-------|
+|`response`|Complete response retrieved from Microsoft Graph for the query specified in the `resource` property of `mgt-get`|
+
+See [Caching](../customize-components/cache.md) for more details.
