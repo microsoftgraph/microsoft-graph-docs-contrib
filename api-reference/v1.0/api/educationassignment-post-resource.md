@@ -46,7 +46,7 @@ In the request body, supply a JSON representation of the [educationAssignmentRes
 If successful, this method returns a `201 Created` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -69,7 +69,7 @@ Content-length: 212
 
 ```
 In the request body, supply a JSON representation of the [educationAssignmentResource](../resources/educationassignmentresource.md) object.
-##### Response
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.

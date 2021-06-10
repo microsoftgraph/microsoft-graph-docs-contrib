@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a [educationCate
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 <!-- {
@@ -61,7 +61,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/{id}
 ```
 
-##### Response
+### Response
 
 The following is an example of the response.
 

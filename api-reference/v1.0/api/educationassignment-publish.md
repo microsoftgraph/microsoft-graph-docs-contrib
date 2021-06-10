@@ -44,7 +44,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 ## Example
 The following example shows how to call this API.
 
-##### Request
+### Request
 The following is an example of a request.
 
 <!-- {
@@ -56,7 +56,7 @@ The following is an example of a request.
 POST https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/publish
 ```
 
-##### Response
+### Response
 The following is an example of a response. 
 
 <!-- {

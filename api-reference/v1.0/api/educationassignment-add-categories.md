@@ -41,7 +41,7 @@ In the request body, supply the odata.id of the existing [educationCategory](../
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 <!-- {
@@ -60,7 +60,7 @@ Content-length: 212
 
 ```
 In the request body, supply the odata.id of the existing [educationCategory](../resources/educationcategory.md) object to add to this assignment.
-##### Response
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
