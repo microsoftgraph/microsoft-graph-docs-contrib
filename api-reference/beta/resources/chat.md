@@ -61,7 +61,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are:`group`, `oneOnOne` and `meeting`.|
-| chatViewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller specific information about the chat e.g. last message read date time.|
+| chatViewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller specific information about the chat e.g. last message read date time. This property is populated only when the request is made in delegated context.|
 
 ### chatType values 
 
@@ -80,7 +80,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
 | permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps for the chat.|
-| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Preview of the last message sent in the chat. Nullable if no messages have been sent in the chat. Only supported using expansion during list chat operation.|
+| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Preview of the last message sent in the chat. Nullable if no messages have been sent in the chat. Currently, this is supported only in [list chats](../api/chat-list.md) API.|
 
 ## JSON representation
 
