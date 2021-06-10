@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentRequestRequirements complex type"
-description: "The accessPackageAssignmentRequestRequirements type identifies a collection requirements necessary to request the specified access package"
+description: "The accessPackageAssignmentRequestRequirements type identifies the requirements necessary to request the specified access package."
 localization_priority: Normal
 author: "ajburnle"
 ms.prod: "governance"
