@@ -1,6 +1,6 @@
 ---
 title: "accessReviewnotificationrecipientqueryscope resource type"
-description: "Represents who will receive notification for access reviews."
+description: "Represents users who will receive notifications for access reviews."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
