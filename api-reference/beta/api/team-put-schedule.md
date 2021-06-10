@@ -94,6 +94,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -133,7 +134,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "team-put-schedule"
+  "name": "team-put-schedule-2"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
