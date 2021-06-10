@@ -92,17 +92,7 @@ Content-type: application/json
       "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
       "queryType": "MicrosoftGraph"
     }
-  ],
-  "additionalNotificationRecipients": [
-      {
-          "notificationRecipientScope": {
-              "@odata.type":"#microsoft.graph.accessReviewNotificationRecipientQueryScope",                
-              "query": "/users/46d30af1-e626-4928-83f5-e9bfa400289e",
-              "queryType": "MicrosoftGraph"
-          },
-          "notificationTemplateType": "CompletedAdditionalRecipients"
-      }  
-  ],   
+  ],  
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,
@@ -178,17 +168,7 @@ Content-type: application/json
       "queryType": "MicrosoftGraph",
       "queryRoot": "decisions"
     }
-  ],
-  "additionalNotificationRecipients": [
-      {
-          "notificationRecipientScope": {
-              "@odata.type":"#microsoft.graph.accessReviewNotificationRecipientQueryScope",                
-              "query": "/users/46d30af1-e626-4928-83f5-e9bfa400289e",
-              "queryType": "MicrosoftGraph"
-          },
-          "notificationTemplateType": "CompletedAdditionalRecipients"
-      }  
-  ],   
+  ],  
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,

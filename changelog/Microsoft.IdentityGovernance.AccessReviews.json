@@ -4,11 +4,27 @@
             "ChangeList": [
                 {
                     "Id": "02045A24-F358-47CA-85AE-238118A96121",
-                    "ApiChange": "Resource",
+                    "ApiChange": "Property",
                     "ChangedApiName": "additionalNotificationRecipients",
                     "ChangeType": "Addition",
                     "Description": "Added the **additionalNotificationRecipients** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&tabs=http) resource.",
                     "Target": "accessreviewscheduledefinition"
+                },
+                {
+                    "Id": "02045A24-F358-47CA-85AE-238118A96121",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessreviewnotificationrecipientitem",
+                    "ChangeType": "Addition",
+                    "Description": "Added the accessreviewnotificationrecipientitem resource type.",
+                    "Target": "accessreviewnotificationrecipientitem"
+                },
+                {
+                    "Id": "02045A24-F358-47CA-85AE-238118A96121",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewnotificationrecipientqueryscope",
+                    "ChangeType": "Addition",
+                    "Description": "Added the accessReviewnotificationrecipientqueryscope resource type.",
+                    "Target": "accessReviewnotificationrecipientqueryscope"
                 }
             ],
             "Id": "02045A24-F358-47CA-85AE-238118A96121",
