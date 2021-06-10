@@ -42,6 +42,7 @@ In Azure AD, a mobility management policy represents an auto-enrollment configur
 |discoveryUrl|String|Discovery URL of the mobility management application.|
 |displayName|String|Display name of the mobility management application.|
 |id|String|Object Id of the mobility management application.|
+|isValid|Boolean|Whether policy is valid. Invalid policies may not be updated and should be deleted.|
 |termsOfUseUrl|String|Terms of Use URL of the mobility management application.|
 
 ## Relationships
@@ -69,6 +70,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "discoveryUrl": "String",
   "displayName": "String",
+  "isValid": "Boolean",
   "termsOfUseUrl": "String"
 }
 ```
