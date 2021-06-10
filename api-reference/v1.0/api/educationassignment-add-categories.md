@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add one or more existing [educationCategory](../resources/educationcategory.md) objects to this [educationAssignment](../resources/educationassignment.md).
+Add one or more existing [educationCategory](../resources/educationcategory.md) objects to the specified  [educationAssignment](../resources/educationassignment.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,10 +45,12 @@ If successful, this method returns a `204 No Content` response code.
 ## Example
 ##### Request
 The following is an example of the request.
+
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "add_educationcategory_to_educationassignment"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/11021/assignments/19002/categories/$ref
 Content-type: application/json
@@ -67,7 +69,7 @@ The following is an example of the response.
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignmentResource"
 } -->

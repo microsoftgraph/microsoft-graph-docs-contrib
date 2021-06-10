@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a list of assignments assigned to a user for all classes. This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
+Returns a list of assignments assigned to a user for all classes. 
+
+This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
 
 ## Permissions
 
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_assignments"
 }-->
 
@@ -70,7 +72,7 @@ The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignment",
   "isCollection": true

@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_assignments"
 }-->
 
@@ -72,7 +72,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": true

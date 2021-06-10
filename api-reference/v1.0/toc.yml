@@ -4048,7 +4048,7 @@ items:
           href: api/educationclass-post-members.md
         - name: Remove member
           href: api/educationclass-delete-members.md
-        - name: List assignments
+        - name: List class assignments
           href: api/educationclass-list-assignments.md
         - name: Create assignment
           href: api/educationclass-post-assignments.md

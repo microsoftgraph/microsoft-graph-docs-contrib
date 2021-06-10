@@ -1,5 +1,5 @@
 ---
-title: "List class specific user assignments"
+title: "List class assignments"
 description: "Retrieve a list of assignment objects. A teacher or an application executing with application permissions is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them."
 author: "mmast-msft"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List class specific user assignments
+# List class assignments
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of assignment objects. A teacher or an application executing with application permissions is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them.
+Retrieve a list of assignment objects. A teacher or an application executing with application permissions can see all assignment objects for the class. Students can only see assignments that are assigned to them.
 
 ## Permissions
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_assignments"
 }-->
 
@@ -71,7 +71,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignment",
   "isCollection": true

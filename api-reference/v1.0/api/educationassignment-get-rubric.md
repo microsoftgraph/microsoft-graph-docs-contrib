@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [educationRubric](../resources/educationrubric.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationRubric](../resources/educationrubric.md) object in the response body. Otherwise, it returns a `404 Not Found` response code.
 
 ## Examples
 

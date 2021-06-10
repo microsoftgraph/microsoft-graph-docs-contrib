@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an existing assignment. Only teachers within a class can delete assignments.
+Delete an existing assignment. 
+
+Only teachers within a class can delete assignments.
 
 ## Permissions
 
@@ -55,6 +57,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["1fdf61ee-c129-4960-9b7c-8df159aa64b0"],
   "name": "delete_educationassignment_1"
 }-->
 
