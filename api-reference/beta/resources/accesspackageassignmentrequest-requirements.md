@@ -1,5 +1,5 @@
 ---
-title: "accessPackageAssignmentRequestRequirements complex type"
+title: "accessPackageAssignmentRequestRequirements"
 description: "The accessPackageAssignmentRequestRequirements type identifies the requirements necessary to request the specified access package."
 localization_priority: Normal
 author: "ajburnle"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
-# accessPackageAssignmentRequestRequirements complex type
+# accesspackageassignmentrequestrequirements
 
 **accessPackageAssignmentRequestRequirements** are requirements that a caller must fulfill in order to successfully create an accessPackageAssignmentRequest for the accessPackage specified as part of the URL. Requirements are determined by evaluating policies associated with the **accessPackage**. 
 
@@ -37,30 +37,16 @@ The following is a JSON representation of the type.
 
 ```json
 { 
-
-  
-
     "value": [ 
-
         { 
-
             "policyDisplayName": "string", 
-
             "policyDescription": "string",
-
             "policyId": "Edm.String",  
-
             "isApprovalRequired": false, 
-
             "isApprovalRequiredForExtension": false, 
-
             "isRequestorJustificationRequired": false,
-
             "isCustomAssignmentScheduleAllowed": [],
-
         } 
-
     ] 
-
 } 
 ```
