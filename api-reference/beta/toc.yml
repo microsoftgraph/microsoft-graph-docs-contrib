@@ -10525,6 +10525,8 @@ items:
             href: api/mobiledevicemanagementpolicies-get.md
           - name: Update
             href: api/mobiledevicemanagementpolicies-update.md
+          - name: Delete
+            href: api/mobiledevicemanagementpolicies-delete.md
           - name: List included groups
             href: api/mobiledevicemanagementpolicies-list-includedgroups.md
           - name: Add included groups
@@ -10537,6 +10539,8 @@ items:
             href: api/mobileappmanagementpolicies-get.md
           - name: Update
             href: api/mobileappmanagementpolicies-update.md
+          - name: Delete
+            href: api/mobileappmanagementpolicies-delete.md
           - name: List included groups
             href: api/mobileappmanagementpolicies-list-includedgroups.md
           - name: Add included groups
