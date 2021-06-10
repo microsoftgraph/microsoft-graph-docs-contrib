@@ -274,7 +274,7 @@ HTTP/1.1 204 No Content
 
 This example shows how you can send an activity feed notification to all team members. This example is similar to previous examples. However, in this case, the ``recipient`` is a [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
 
-> **Note:** The ability to send notifications to all of the members of a team is limited to teams with 10,000 members or less. If a request is sent to send notifications to the members of a team with more than 10,000 members none of the members of the team will receive a notification.
+> **Note:** The ability to send notifications to all team members is limited to teams with 10,000 members or less. If the team exceeds 10,000 members, none of the team members will receive a notification.
 
 #### Request
 <!-- {
