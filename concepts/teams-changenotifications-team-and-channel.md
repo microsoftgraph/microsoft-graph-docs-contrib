@@ -1,6 +1,6 @@
 ---
 title: "Get change notifications for teams and channels using Microsoft Graph"
-description: "Learn how to get notifications for changes (create, update, and delete) for teams and channels using Microsoft Graph APIs"
+description: "Learn how to get notifications for changes (create, update, and delete) for teams and channels using Microsoft Graph APIs."
 author: "anandab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -9,13 +9,13 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for teams and channels using Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create, update, and delete) to teams and channel. You can get notified whenever a team or channel is created, updated or deleted. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications enable you to subscribe to changes (create, update, and delete) to teams and channels. You can get notified whenever a team or channel is created, updated, or deleted. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
 ## Subscribe to changes in any team at tenant level
 
 To get change notifications for all changes (create, update, and delete) related to any team in a tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -23,7 +23,7 @@ To get change notifications for all changes (create, update, and delete) related
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | Team.ReadBasic.All, TeamSettings.Read.All   | beta|
 
-#### Example
+### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -46,7 +46,7 @@ Content-Type: application/json
 
 To get change notifications for all changes related to a particular team in a tenant, subscribe to `/teams/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -54,7 +54,7 @@ To get change notifications for all changes related to a particular team in a te
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | Team.ReadBasic.All, TeamSettings.Read.All    | beta |
 
-#### Example
+### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -79,7 +79,7 @@ To get change notifications for all changes (create, update, and delete) related
 
 >**Note:** Private channels aren't supported.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -87,7 +87,7 @@ To get change notifications for all changes (create, update, and delete) related
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | Channel.ReadBasic.All, ChannelSettings.Read.All | beta |
 
-#### Example
+### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -110,7 +110,7 @@ Content-Type: application/json
 
 To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -118,7 +118,7 @@ To get change notifications for all changes related to any channel in a particul
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | Channel.ReadBasic.All, ChannelSettings.Read.All   | beta |
 
-#### Example
+### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
