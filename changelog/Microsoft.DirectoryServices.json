@@ -1,6 +1,24 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
         {
+          "Id": "7242dfc2-28c7-48f1-adc2-d0f2b00824c2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "softwareOathAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [Software OATH authentication method](https://docs.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta) resource and associated methods to beta",
+          "Target": "softwareOathAuthenticationMethod"
+        }
+      ],
+      "Id": "a43059f7-af45-4cb5-a279-bf226c45027b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-10T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
           "ChangeList": [
               {
                   "Id": "1542fba3-8dbc-11eb-a57c-31dcdef91872",
