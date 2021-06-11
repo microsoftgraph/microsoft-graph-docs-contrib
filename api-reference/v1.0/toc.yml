@@ -4071,6 +4071,8 @@ items:
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+        - name: Get directory user
+          href: api/educationuser-get-user.md
         - name: Get changes to users
           href: api/educationuser-delta.md
         - name: List classes
