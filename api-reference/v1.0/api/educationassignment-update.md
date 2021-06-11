@@ -58,12 +58,15 @@ Existing properties that are not included in the request body will maintain thei
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [educationAssignment](../resources/educationassignment.md) object in the response body.
+
 ## Example
+
 ### Request
 The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
   "name": "update_educationassignment"
 }-->
 ```http

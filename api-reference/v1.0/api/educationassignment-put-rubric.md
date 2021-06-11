@@ -53,6 +53,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["cf6005fc-9e13-44a2-a6ac-a53322006454"],
   "name": "create_educationrubric_from_educationassignment"
 }-->
 
