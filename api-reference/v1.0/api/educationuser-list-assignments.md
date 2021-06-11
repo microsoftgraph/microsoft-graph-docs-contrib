@@ -56,7 +56,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_assignments"
+  "name": "get_me_assignments"
 }-->
 
 ```http 

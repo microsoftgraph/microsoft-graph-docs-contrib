@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [educationCate
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "get_assignments"
+  "name": "get_categories"
 }-->
 
 ```http
