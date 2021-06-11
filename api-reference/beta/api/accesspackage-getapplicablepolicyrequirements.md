@@ -14,24 +14,43 @@ Namespace: microsoft.graph
 
 This operation allows callers to find properties that are required to successfully request an assignment for a specific accessPackage. 
 
-> [!NOTE] 
-> This operation has no side effects, but because it accepts optional parameters in the POST body, it is configured as an action.
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identitygovernance/entitlementmanagement/accessPackages/fb449cf8-3a59-4d86-bdfd-a1b7299681de/getapplicablepolicyrequirements
+```
 
 ## Function parameters
 
-The following table shows the parameters that can be used with this function.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-| Post body | microsoft.graph.accessPackage |The access package. |
-
-## Return value
-
 The following table shows the return value that can be used to request an assignment for an access package.
 
-|Type|Description|
-| :--- | :--- |
-| Collection(microsoft.graph.accessPackageAssignmentRequestRequirements) | One for each policy that the user is an `allowedRequestor` for. If there is a policy with no requirements, the `accessPackageAssignmentRequestRequirements` will have false and null values. If there are no policies where the user is an `allowedRequestor`, an empty collection will be returned instead. |
+Parameter|Type|Description|
+| :--- | :--- | :--- |
+| on | Microsoft.IGAELM.EC.FrontEnd.ExternalModel.accessPackage | One for each policy that the user is an `allowedRequestor` for. If there is a policy with no requirements, the `accessPackageAssignmentRequestRequirements` will have false and null values. If there are no policies where the user is an `allowedRequestor`, an empty collection will be returned instead. |
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|||
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+If successful, this method returns a `200 OK` response code and an accessPackageAssignmentRequestRequirements collection in the response body.
 
 ## Examples
 
