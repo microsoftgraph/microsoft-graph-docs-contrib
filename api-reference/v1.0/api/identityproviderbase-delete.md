@@ -1,19 +1,20 @@
 ---
-title: "List availableProviderTypes"
-description: "Retrieve all available identity provider types in the directory."
+title: "Delete identityProvider"
+description: "Delete an identityProvider."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List availableProviderTypes (deprecated)
+# Delete identityProvider
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-Retrieves all identity provider types available in a directory.
+Delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
+
+In Azure AD B2C, delete a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) object.
 
 ## Permissions
 
@@ -21,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Delegated (work or school account)|IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Application|IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
 
@@ -33,9 +34,8 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /identityProviders/availableProviderTypes
+DELETE /identity/identityProviders/{id}
 ```
 
 ## Request headers
@@ -45,44 +45,49 @@ GET /identityProviders/availableProviderTypes
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a String collection in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
+
 The following is an example of the request.
 
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "identityprovider_availableprovidertypes"
+  "name": "delete_identityprovider"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
+DELETE https://graph.microsoft.com/beta/identity/identityProviders/{id}
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/identityprovider-availableprovidertypes-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/identityprovider-availableprovidertypes-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 ### Response
 
@@ -92,28 +97,10 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(Edm.String)"
+  "truncated": true
 }
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-      "Amazon",
-      "OpenIDConnect",
-      "Facebook",
-      "GitHub",
-      "Google",
-      "LinkedIn",
-      "Microsoft",
-      "QQ",
-      "Twitter",
-      "WeChat",
-      "Weibo"
-  ]
-}
+HTTP/1.1 204 No Content
 ```
