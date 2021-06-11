@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 This action publishes an education assignment.
 
- Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. Calling this API creates [educationSubmission] (../resources/educationsubmission.md) objects and displays the assignment in each student's list.
+ Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. Calling this API creates [educationSubmission](../resources/educationsubmission.md) objects and displays the assignment in each student's list.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

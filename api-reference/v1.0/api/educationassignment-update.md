@@ -15,7 +15,7 @@ Update an educationAssigment object.
 
 Only teachers can perform this action. 
 
-Alternatively, request to change the status of an assignment with [publish] (../api/educationassignment-publish.md) action. Don't use a PATCH operation for this purpose.
+Alternatively, request to change the status of an assignment with [publish](../api/educationassignment-publish.md) action. Don't use a PATCH operation for this purpose.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +54,7 @@ Existing properties that are not included in the request body will maintain thei
 |dueDateTime|DateTimeOffset| Date assignment is due. |
 |grading|educationAssignmentGradeType| How the assignment will be graded.|
 |instructions|itemBody| Instructions to be given to the students along with the assignment. |
-|notificationChannelUrl|String| The channel to communicate notifications related to the assignment. To change the URL, set the `assignTo` value to [educationAssignmentClassRecipient] (../resources/educationassignmentclassrecipient.md). The channel URL can't change after the publication of the assignment.|
+|notificationChannelUrl|String| The channel to communicate notifications related to the assignment. To change the URL, set the `assignTo` value to [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). The channel URL can't change after the publication of the assignment.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [educationAssignment](../resources/educationassignment.md) object in the response body.

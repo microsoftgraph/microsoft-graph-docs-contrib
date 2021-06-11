@@ -45,6 +45,7 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["ec98f158-341d-4fea-9f8c-14a250d489ac"],
   "name": "add_educationcategory_to_educationassignment"
 }-->
 ```http
