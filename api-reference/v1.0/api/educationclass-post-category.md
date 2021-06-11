@@ -25,8 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignmentCategories
-
+POST /education/classes/{id}/assignmentCategories/$entity
 ```
 ## Request headers
 | Header       | Value |
@@ -49,7 +48,7 @@ The following is an example of the request.
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/11019/assignmentCategories
+POST https://graph.microsoft.com/v1.0/education/classes/60eaa744-aa87-4276-b985-1633683119f8/assignmentCategories/$entity
 Content-type: application/json
 Content-length: 33
 

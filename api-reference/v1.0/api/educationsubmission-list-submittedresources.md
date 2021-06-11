@@ -60,7 +60,6 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmittedSubmissionResource",
   "isCollection": true
 } -->
 
@@ -72,32 +71,31 @@ Content-length: 1045
 {
   "value": [
     {
-      "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-      "id": "f2387c3b-ec39-4bf2-a399-d7242677f024",
-      "resource": {
-          "@odata.type": "#microsoft.graph.educationLinkResource",
-          "displayName": "Microsoft Homepage",
-          "createdDateTime": "2017-10-21T07:52:45.5675913Z",
-          "createdBy": {
-              "application": null,
-              "device": null,
-              "user": {
-                  "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-                  "displayName": null
-              }
-          },
-          "lastModifiedDateTime": "2017-10-21T07:52:45.5675913Z",
-          "lastModifiedBy": {
-              "application": null,
-              "device": null,
-              "user": {
-                  "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-                  "displayName": null
-              }
-          },
-          "link": "https://www.microsoft.com"
-      },
-      "@odata.type": "microsoft.graph.educationSubmittedSubmissionResource" 
+        "assignmentResourceUrl": null,
+        "id": "0f7dd681-f1b6-4f78-b8fb-a579fc4a36ae",
+        "resource": {
+            "@odata.type": "#microsoft.graph.educationLinkResource",
+            "displayName": "ABC",
+            "createdDateTime": "2021-03-11T20:47:53.0823323Z",
+            "lastModifiedDateTime": "2021-03-11T20:47:53.0823323Z",
+            "link": "https://www.bing.com/",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f8bbb2a4-2cdd-4d49-ac81-d4113fc72dc1",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f8bbb2a4-2cdd-4d49-ac81-d4113fc72dc1",
+                    "displayName": null
+                }
+            }
+        }
     }
   ]
 }
