@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-This action makes the grade and feedback associated with this submission available to the student. This will change the status of the submission from "submitted" to "returned" and indicates that feedback is provided or grading is done. This action can only be done by the teacher.
+Make the grade and feedback associated with this submission available to the student. 
+
+This action changes the status of the submission from "submitted" to "returned" and indicates that feedback is provided or grading is done. This action can only be done by the teacher.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,10 +38,10 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005f
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-The following example shows how to call this API.
+
 ### Request
 The following is an example of the request.
 
