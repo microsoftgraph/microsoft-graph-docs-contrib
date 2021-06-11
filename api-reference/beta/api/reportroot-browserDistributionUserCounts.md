@@ -1,19 +1,19 @@
 ---
-title: "reportRoot: browserUsageUserCounts"
-description: "Get a report that provides the trend in the number of active users for each browser – Edge, Edge Legacy, Internet Explorer - in your organization."
+title: "reportRoot: browserDistributionUserCounts"
+description: "Get the number of users by browser over the selected period. The browser types are Edge, Edge Legacy, Internet Explorer."
 localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
 
-# reportRoot: browserUsageUserCounts
+# reportRoot: browserDistributionUserCounts
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report that provides the trend in the number of active users for each browser – Edge, Edge Legacy, Internet Explorer - in your organization.
+Get the number of users by browser over the selected period. The browser types are Edge, Edge Legacy, Internet Explorer.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } --> 
 
 ```http
-GET /reports/browserUsageUserCounts(period='{period_value}')
+GET /reports/browserDistributionUserCounts(period='{period_value}')
 ```
 
 ## Function parameters
@@ -73,7 +73,6 @@ The CSV file has the following headers for columns:
 
 - Report Refresh Date
 - Report Period
-- Report Date
 - Edge
 - Edge Legacy
 - Internet Explorer
@@ -97,26 +96,26 @@ The following is an example of the request to get the **content** property.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "reportroot_browserUsageUserCounts_csv"
+  "name": "reportroot_browserDistributionUserCounts_csv"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/browserUsageUserCounts(period='D7')/content?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/browserDistributionUserCounts(period='D7')/content?$format=text/csv
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-browserUsageUserCounts-csv-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-browserDistributionUserCounts-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-browserUsageUserCounts-csv-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-browserDistributionUserCounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-browserUsageUserCounts-csv-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-browserDistributionUserCounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-browserUsageUserCounts-csv-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-browserDistributionUserCounts-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -147,7 +146,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Period, Report Date, Edge, Edge Legacy, Internet Explorer
+Report Refresh Date,Report Period,Edge, Edge Legacy, Internet Explorer
 ```
 
 ### Example 2: JSON output
@@ -167,22 +166,22 @@ The following is an example of the request to get the **content** property.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/browserUsageUserCounts(period='D7')/content?$format=application/json
+GET https://graph.microsoft.com/beta/reports/browserDistributionUserCounts(period='D7')/content?$format=application/json
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-browserUsageUserCounts-json-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-browserDistributionUserCounts-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-browserUsageUserCounts-json-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-browserDistributionUserCounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-browserUsageUserCounts-json-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-browserDistributionUserCounts-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-browserUsageUserCounts-json-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-browserDistributionUserCounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -207,19 +206,30 @@ HTTP/1.1 200 OK
    "value":[
       {
          "reportRefreshDate":"2021-04-17",
-         "reportPeriod":7,
          "userCounts":[
             {
-               "reportDate":"2021-04-17",
-               "edge":413,
-               "edgeLegacy":11,
-               "ie":21
+               "reportPeriod":7,
+               "edge":1269,
+               "edgeLegacy":114,
+               "ie":393
             },
             {
-               "reportDate":"2021-04-16",
-               "edge":883,
-               "edgeLegacy":26,
-               "ie":124
+               "reportPeriod":30,
+               "edge":1405,
+               "edgeLegacy":383,
+               "ie":708
+            },
+            {
+               "reportPeriod":90,
+               "edge":1482,
+               "edgeLegacy":687,
+               "ie":988
+            },
+            {
+               "reportPeriod":180,
+               "edge":1526,
+               "edgeLegacy":860,
+               "ie":1137
             }
          ]
       }
