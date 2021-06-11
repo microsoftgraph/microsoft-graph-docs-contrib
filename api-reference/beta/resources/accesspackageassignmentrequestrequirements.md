@@ -2,7 +2,7 @@
 title: "accessPackageAssignmentRequestRequirements"
 description: "The accessPackageAssignmentRequestRequirements type identifies the requirements necessary to request the specified access package."
 localization_priority: Normal
-author: "ajburnle"
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
