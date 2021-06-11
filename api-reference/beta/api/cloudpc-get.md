@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -113,6 +113,8 @@ Content-Type: application/json
     "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d6ffff",  
     "managedDeviceName": "Device Name value",
     "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
+    "provisioningPolicyName": "Provisioning Policy Name value",
+    "onPremisesConnectionName": "On-premises connection Name value",
     "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
     "servicePlanName": "standard",
     "status": "failed",
@@ -129,7 +131,8 @@ Content-Type: application/json
       ]
     },
     "userPrincipalName": "User Principal Name value",
-    "lastModifiedDateTime": "2020-11-03T18:14:34Z"
+    "lastModifiedDateTime": "2020-11-03T18:14:34Z",
+    "gracePeriodEndDateTime": "Grace Period End Date Time value "
   }
 }
 ```

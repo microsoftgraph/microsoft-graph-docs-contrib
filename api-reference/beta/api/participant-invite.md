@@ -110,7 +110,7 @@ Content-Length: 464
 
 #### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -702,6 +702,7 @@ Content-Type: application/json
 ### Example 4: Invite one PSTN participant to an existing group call
 
 This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Note:** Phone ID is the phone number in E.164 format.
 
 #### Request
 
@@ -745,7 +746,7 @@ Content-Length: 464
 
 #### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

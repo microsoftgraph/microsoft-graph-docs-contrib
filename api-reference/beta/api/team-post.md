@@ -99,8 +99,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "name": "create_team_post",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post"
 }-->
 
 ```http
@@ -165,8 +164,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_minimal",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post_minimal"
 }-->
 
 ```http
@@ -294,8 +292,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_full_payload",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post_full_payload"
 }-->
 
 ```http
@@ -355,8 +352,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "create_team_from_group",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_from_group"
 }-->
 
 ```http
@@ -436,8 +432,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_group",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_group"
 }-->
 
 ```http
@@ -496,8 +491,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_non_standard",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_non_standard"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -577,7 +571,6 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard2",
-  "@odata.type": "microsoft.graph.team"
 }-->
 
 ```http
@@ -594,7 +587,7 @@ Content-Length: 0
 
 The following example shows how to create a team for imported messages.
 
->**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.|
+>**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 >**Note:** Teams created in migration mode only support the `standard` template.
 
