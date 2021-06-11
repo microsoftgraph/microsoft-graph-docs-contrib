@@ -9523,9 +9523,9 @@ items:
         - name: Cloud PC
           href: resources/cloudpc.md
           items:
-          - name: List
+          - name: List cloud PCs
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: Get
+          - name: Get cloud PC
             href: api/cloudpc-get.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md

@@ -31,7 +31,7 @@ Represents a cloud PC user setting.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the cloud PC user setting. Read-only.|
-|displayName|String|The setting name as it appears in the user interface. |
+|displayName|String|The setting name displayed in the user interface. |
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to True.  |
 |selfServiceEnabled|Boolean|To turn on the self service option, change this setting to True. |
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
@@ -40,7 +40,7 @@ Represents a cloud PC user setting.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection|The user settings will be applied to the Azure AD user groups identified in this collection. Only security groups and Office 365 groups are supported.|
+|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection|Office 365 and security groups in Azure AD can have a set of user settings assigned.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

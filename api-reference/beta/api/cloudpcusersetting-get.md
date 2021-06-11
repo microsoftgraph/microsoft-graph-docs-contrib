@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcUserSe
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettings/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettings/556092f8-92f8-5560-f892-6055f8926055
 ```
 
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/usersettings/{id}?$expand=assignments
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/usersettings/b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff?$expand=assignments
 ```
 
 
