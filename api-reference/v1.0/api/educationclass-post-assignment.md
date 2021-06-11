@@ -61,7 +61,7 @@ Content-length: 279
       "content": "Read chapters 1 through 3"
     },
       "grading": {
-        "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+        "@odata.type": "educationAssignmentPointsGradeType",
         "maxPoints": 100
       },
       "assignTo": {
