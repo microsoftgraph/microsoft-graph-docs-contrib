@@ -14,8 +14,8 @@ Namespace: microsoft.graph
 Represents a Microsoft 365 RBAC role management entity. Provides access to role definitions and role assignments surfaced from RBAC providers. Currently directory (Azure AD) and  deviceManagement (Intune) providers are supported. 
 
 For more information, see: 
-* [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/roles/custom-overview).
-* [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)
+* [Administrator role permissions in Azure Active Directory](/azure/active-directory/roles/custom-overview).
+* [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
 
 ## Methods
 
