@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List resources
+# List submission resources
 
 Namespace: microsoft.graph
 
