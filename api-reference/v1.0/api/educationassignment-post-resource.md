@@ -28,9 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported.  | 
 
 ## HTTP request
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/resources
+POST /education/classes/{id}/assignments/{id}/resources
 ```
 ## Request headers
 | Header       | Value |
@@ -63,12 +63,13 @@ Content-length: 212
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
-    "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
+    "@odata.type": "educationLinkResource"
   }
 }
 
 ```
 In the request body, supply a JSON representation of the [educationAssignmentResource](../resources/educationassignmentresource.md) object.
+
 ### Response
 The following is an example of the response. 
 

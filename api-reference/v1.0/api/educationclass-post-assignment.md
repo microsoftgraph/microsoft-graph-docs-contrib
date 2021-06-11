@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. | 
 
 ## HTTP request
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments
+POST /education/classes/{id}/assignments
 ```
 ## Request headers
 | Header       | Value |
@@ -65,7 +65,7 @@ Content-length: 279
         "maxPoints": 100
       },
       "assignTo": {
-        "@odata.type": "#microsoft.education.assignments.api.educationAssignmentClassRecipient"
+        "@odata.type": "educationAssignmentClassRecipient"
       },
       "status":"draft",
       "allowStudentsToAddResourcesToSubmission": true

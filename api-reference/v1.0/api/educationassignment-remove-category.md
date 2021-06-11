@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported.  | 
 
 ## HTTP request
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/categories/60eaa744-aa87-4276-b985-1633683119f8/$ref
+DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 ```
 ## Request headers
 | Header       | Value |
@@ -57,7 +57,6 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -65,6 +64,9 @@ The following is an example of the response.
 } -->
 ```http
 HTTP/1.1 204 No Content
+
+{
+}
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
