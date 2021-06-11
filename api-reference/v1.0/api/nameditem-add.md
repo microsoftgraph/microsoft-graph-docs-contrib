@@ -95,7 +95,7 @@ Content-length: 54
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,10 +126,7 @@ Content-length: 109
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Warning: NamedItemcollection_add/value:
-      Schemas type was 'Custom' which is not supported. Add a resource type to the definition of property: value"
-  ],
+  "suppressions": [],
   "tocPath": ""
 }-->
 

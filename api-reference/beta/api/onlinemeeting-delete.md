@@ -1,7 +1,7 @@
 ---
 title: "Delete onlineMeeting"
 description: "Delete an online meeting."
-author: "jsandoval-msft"
+author: "mkhribech"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -40,8 +40,7 @@ Request when using an application token:
 DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 ```
 
-> **Note:**
->
+> [!NOTE]
 > - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
