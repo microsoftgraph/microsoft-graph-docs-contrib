@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in Azure AD.
 
-For Azure AD B2C, it can retrieve properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md).
+For Azure AD B2C, it can retrieve properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an[openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md).
 
 ## Permissions
 
@@ -55,7 +55,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in the response body for an Azure AD tenant.
 
-For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) object in the response body.
+For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object in the response body.
 
 ## Examples
 
@@ -182,46 +182,5 @@ Content-type: application/json
   "responseMode": "form_post",
   "responseType": "code",
   "scope": "openid"
-}
-```
-
-### Example 4: Retrieves Apple identity provider(only for Azure AD B2C)
-
-#### Request
-
-The following is an example of the request.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_applemanagedidentityprovider_from_identityproviderbase"
-}
--->
-
-``` http
-GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
-```
-
-
-#### Response
-
-The following is an example of the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.appleManagedIdentityProvider"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "id": "Apple-Managed-OIDC",
-    "displayName": "Sign in with Apple",
-    "developerId": "UBF8T346G9",
-    "serviceId": "com.microsoft.rts.b2c.test.client",
-    "keyId": "99P6D879C4",
-    "certificateData": "******"
 }
 ```

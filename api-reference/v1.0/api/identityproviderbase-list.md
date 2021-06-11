@@ -16,7 +16,7 @@ Retrieve a list of collection of object inherited from  [identityProviderBase](.
 
 For an Azure AD tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md) and/or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
 
-For an Azure AD B2C tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md), [openIdConnectIdentityProviders](../resources/openidconnectidentityprovider.md) and/or [appleIdentityProvider](../resources/appleidentityprovider.md) objects.
+For an Azure AD B2C tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md) and/or [openIdConnectIdentityProviders](../resources/openidconnectidentityprovider.md) objects.
 
 ## Permissions
 
@@ -56,7 +56,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) and/or [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects in the response body for an Azure AD tenant.
 
-For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) and/or [appleIdentityProvider](../resources/appleidentityprovider.md) objects in the response body.
+For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) and/or [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) objects in the response body.
 
 ## Example
 

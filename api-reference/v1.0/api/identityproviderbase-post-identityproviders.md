@@ -51,7 +51,7 @@ POST /identity/identityProviders
 
 In the request body, provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
-In Azure AD B2C provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) object.
+In Azure AD B2C provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
 
 All the properties listed in the following table are required.
 
@@ -78,21 +78,11 @@ All the properties listed in the following table are required.
 |responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
 |scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
 
-### appleIdentityProvider object
-
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|displayName|String|The display name of the identity provider.|
-|developerId|String|The Apple Developer identifier.|
-|serviceId|String|The Apple Developer identifier.|
-|keyId|String|The Apple Key identifier.|
-|certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in the response body for an Azure AD tenant.
 
-For an Azure AD B2C tenant, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) object in the response body.
+For an Azure AD B2C tenant, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object in the response body.
 
 If unsuccessful, a `4xx` error will be returned with specific details.
 
@@ -221,59 +211,5 @@ Content-type: application/json
   "responseMode": "form_post",
   "responseType": "code",
   "scope": "openid"
-}
-```
-
-### Example 3: Retrieves Apple identity provider (only for Azure AD B2C)
-
-#### Request
-
-The following is an example of the request.
-
-<!-- {
-  "blockType": "request",
-  "name": "create_applemanagedidentityprovider_from_identityproviderbase"
-}
--->
-
-``` http
-POST https://graph.microsoft.com/beta/identity/identityProviders
-Content-type: application/json
-Content-length: 154
-
-{
-  "@odata.type": "microsoft.graph.appleManagedIdentityProvider",
-  "displayName": "Sign in with Apple",
-  "developerId": "UBF8T346G9",
-  "serviceId": "com.microsoft.rts.b2c.test.client",
-  "keyId": "99P6D879C4",
-  "certificateData": "******"
-}
-```
-
-#### Response
-
-The following is an example of the response.
-
-**Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.appleManagedIdentityProvider"
-} -->
-
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-  "@odata.type": "microsoft.graph.appleManagedIdentityProvider",
-  "id": "Apple-Managed-OIDC",
-  "displayName": "Sign in with Apple",
-  "developerId": "UBF8T346G9",
-  "serviceId": "com.microsoft.rts.b2c.test.client",
-  "keyId": "99P6D879C4",
-  "certificateData": "******"
 }
 ```

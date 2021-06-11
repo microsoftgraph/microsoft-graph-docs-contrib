@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
-For Azure AD B2C, update the properties  of a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) object.
+For Azure AD B2C, update the properties  of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
 
 ## Permissions
 
@@ -50,7 +50,7 @@ PATCH /identity/identityProviders/{id}
 
 In the request body, provide a JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD tenant.
 
-In Azure AD B2C, provide a JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) object.
+In Azure AD B2C, provide a JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
 
 ### socialIdentityProvider object
 
@@ -74,15 +74,6 @@ In Azure AD B2C, provide a JSON object with one or more properties that need to 
 |responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
 |scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
 
-### appleManagedIdentityProvider object
-
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|displayName|String|The display name of the identity provider.|
-|developerId|String|The Apple Developer identifier.|
-|serviceId|String|The Apple Developer identifier.|
-|keyId|String|The Apple Key identifier.|
-|certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
 
 ## Response
 
@@ -144,41 +135,6 @@ Content-length: 41
 
 {
   "responseType": "id_token"
-}
-```
-
-#### Response
-
-The following is an example of the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 204 No Content
-```
-
-### Example 3: Update a specific **Apple identity provider** (only for Azure AD B2C)
-
-#### Request
-
-The following is an example of the request.
-
-<!-- {
-  "blockType": "request",
-  "name": "update_appleidentityprovider"
-}
--->
-
-``` http
-PATCH https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
-Content-type: application/json
-Content-length: 41
-
-{
-  "displayName": "Apple"
 }
 ```
 
