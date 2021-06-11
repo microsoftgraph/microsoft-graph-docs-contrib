@@ -56,6 +56,7 @@ If successful, this method returns a `200 OK` response code and a [educationCate
 The following is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["dacbf757-888d-42ae-b701-5e57cec300ae"],
   "name": "get_class_category"
 }-->
 

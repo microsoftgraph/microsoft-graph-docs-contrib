@@ -45,6 +45,7 @@ If successful, this method returns a `201 Created` response code and an [educati
 The following is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["60eaa744-aa87-4276-b985-1633683119f8"],
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http

@@ -56,6 +56,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["acdefc6b-2dc6-4e71-b1e9-6d9810ab1793"],
   "name": "get_class_categories"
 }-->
 
