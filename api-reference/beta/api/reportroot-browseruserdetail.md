@@ -1,19 +1,19 @@
 ---
-title: "reportRoot: browserDistributionUserCounts"
-description: "Get the number of users by browser over the selected period. The browser types are Edge, Edge Legacy, Internet Explorer."
+title: "reportRoot: browserUserDetail"
+description: "Get a report that provides the details about which browser users have used."
 localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
 
-# reportRoot: browserDistributionUserCounts
+# reportRoot: browserUserDetail
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of users by browser over the selected period. The browser types are Edge, Edge Legacy, Internet Explorer.
+Get a report that provides the details about which browser users have used.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
 
@@ -27,27 +27,29 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Reports.Read.All                            |
 
-> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } --> 
 
 ```http
-GET /reports/browserDistributionUserCounts(period='{period_value}')
+GET /reports/browserUserDetail(period='{period_value}')
 ```
 
 ## Function parameters
 
 In the request URL, provide the following parameter with a valid value.
 
-| Parameter | Type   | Description                                                                                                                                                                                                                                                       |
-| :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+| Parameter | Type   | Description                                                                                                                                                                                                                                             |
+| :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+
+> **Note:** You need to set either `period` in the URL.
 
 ## Optional query parameters
 
-This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to text/csv or application/json.
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to text/csv or application/json.
 
 ## Request headers
 
@@ -72,7 +74,7 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns:
 
 - Report Refresh Date
-- Report Period
+- User Id
 - Edge
 - Edge Legacy
 - Internet Explorer
@@ -80,6 +82,8 @@ The CSV file has the following headers for columns:
 ### JSON
 
 If successful, requesting the **content** property returns a `200 OK` response code and a JSON object in response body.
+
+The default page size for this request is 200 items.
 
 ## Examples
 
@@ -96,26 +100,26 @@ The following is an example of the request to get the **content** property.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "reportroot_browserDistributionUserCounts_csv"
+  "name": "reportroot_browserUserDetail"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/browserdistributionusercounts(period='D7')/content?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/browserUserDetail(period='D7')/content?$format=text/csv
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-browserdistributionusercounts-csv-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-browseruserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-browserdistributionuserCounts-csv-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-browseruserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-browserdistributionusercounts-csv-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-browseruserdetail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-browserdistributionusercounts-csv-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-browseruserdetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -125,6 +129,7 @@ GET https://graph.microsoft.com/beta/reports/browserdistributionusercounts(perio
 #### Response
 
 The following is an example of the response.
+
 
 <!-- { "blockType": "response" } --> 
 
@@ -146,7 +151,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Period,Edge, Edge Legacy, Internet Explorer
+Report Refresh Date,User Id, Report Period, Edge, Edge Legacy, Internet Explorer
 ```
 
 ### Example 2: JSON output
@@ -162,26 +167,26 @@ The following is an example of the request to get the **content** property.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "reportroot_browserUsageUserCounts_json"
+  "name": "reportroot_browserUserDetail"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/browserdistributionusercounts(period='D7')/content?$format=application/json
+GET https://graph.microsoft.com/beta/reports/browserUserDetail(period='D7')/content?$format=application/json
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-browserdistributionusercounts-json-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-browseruserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-browserdistributionusercounts-json-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-browseruserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-browserdistributionusercounts-json-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-browseruserdetail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-browserdistributionusercounts-json-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-browseruserdetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -203,33 +208,17 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 {
+  "@odata.nextLink": "https://graph.microsoft.com/beta/reports/browserUserDetail(period='D7')/content?$format=application/json&$skiptoken=D07uj",
    "value":[
       {
          "reportRefreshDate":"2021-04-17",
-         "userCounts":[
+         "userId": "195C9BCCF6704E4CA3A0F5F4A4E6872B",
+         "details":[
             {
                "reportPeriod":7,
-               "edge":1269,
-               "edgeLegacy":114,
-               "ie":393
-            },
-            {
-               "reportPeriod":30,
-               "edge":1405,
-               "edgeLegacy":383,
-               "ie":708
-            },
-            {
-               "reportPeriod":90,
-               "edge":1482,
-               "edgeLegacy":687,
-               "ie":988
-            },
-            {
-               "reportPeriod":180,
-               "edge":1526,
-               "edgeLegacy":860,
-               "ie":1137
+               "edge":true,
+               "edgeLegacy":true,
+               "ie":false
             }
          ]
       }
