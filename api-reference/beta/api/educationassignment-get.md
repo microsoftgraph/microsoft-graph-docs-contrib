@@ -1,6 +1,6 @@
 ---
 title: "Get educationAssignment"
-description: "Get the properties and relationships of an assignment."
+description: "Get the properties and relationships of a given assignment. Note that teachers and applications can see all assignments in a class."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
@@ -93,6 +93,7 @@ Content-length: 279
 {
   "id": "19002",
   "addedStudentAction": "none",
+  "addToCalendarAction": "studentsAndPublisher",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",

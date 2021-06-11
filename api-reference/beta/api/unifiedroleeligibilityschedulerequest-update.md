@@ -121,8 +121,7 @@ Content-length: 467
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
+  "truncated": true
 }
 -->
 ```http
