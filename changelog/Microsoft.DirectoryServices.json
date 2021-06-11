@@ -11,7 +11,7 @@
           "Target": "getApplicablePolicyRequirements"
         },
         {
-          "Id": "92e6f7d7-82d3-4ee7-8bcc-74decea5608e",
+          "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAssignmentRequestRequirements",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "accessPackageAssignmentRequestRequirements"
         }
       ],
-      "Id": "7f8e9ab9-f2b7-4859-96fd-e4bf3046f00e",
+      "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-08T18:32:06Z",
