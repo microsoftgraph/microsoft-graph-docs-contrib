@@ -4087,7 +4087,7 @@ items:
         href: resources/educationassignment.md
         items:
         - name: Create assignment
-          href: api/educationclass-post-assignments.md
+          href: api/educationclass-post-assignment.md
         - name: Get assignment
           href: api/educationassignment-get.md
         - name: Update assignment
@@ -5863,34 +5863,34 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: List members
-          href: api/channel-list-members.md
         - name: Add member 
           href: api/channel-post-members.md
-        - name: Get member
-          href: api/channel-get-members.md
-        - name: Update member role
-          href: api/channel-update-members.md   
-        - name: Remove member
-          href: api/channel-delete-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
-        - name: Get files folder
-          href: api/channel-get-filesfolder.md
-        - name: List channel messages
-          href: api/channel-list-messages.md
-        - name: Get channel messages delta
-          href: api/chatmessage-delta.md
         - name: Get channel message
           href: api/chatmessage-get.md
-        - name: List message replies
-          href: api/chatmessage-list-replies.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get files folder
+          href: api/channel-get-filesfolder.md
+        - name: Get member
+          href: api/channel-get-members.md
         - name: Get message reply
           href: api/chatmessage-get.md
-        - name: Send message
-          href: api/channel-post-messages.md
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: List members
+          href: api/channel-list-members.md        
+        - name: List message replies
+          href: api/chatmessage-list-replies.md
+        - name: Remove member
+          href: api/channel-delete-members.md
         - name: Reply to message
           href: api/chatmessage-post-replies.md
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Update member role
+          href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
       - name: Chat
