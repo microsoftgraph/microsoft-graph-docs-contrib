@@ -11,12 +11,21 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+
+### countryLookupMethodType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
+
 ### consentRequestFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
 |reviewer|
 |unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
