@@ -33,7 +33,7 @@ GET /education/users/{id}/assignments
 
 ## Optional query parameters
 
-This method supports the [OData query pParameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
