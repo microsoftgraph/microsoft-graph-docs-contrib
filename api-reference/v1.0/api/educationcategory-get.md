@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/{id}
+GET /education/classes/{id}/assignmentCategories/{id}
 ```
 
 ## Optional query parameters
@@ -56,7 +56,6 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_assignments"
 }-->
-
 ```http
 GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/{id}
 ```
@@ -73,7 +72,6 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": false
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

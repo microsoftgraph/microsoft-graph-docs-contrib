@@ -38,7 +38,6 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments
 ## Request body
 In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.
 
-
 ## Response
 If successful, this method returns a `201 Created` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.
 
@@ -50,7 +49,7 @@ The following is an example of the request.
   "name": "create_educationassignment_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/11019/assignments
+POST https://graph.microsoft.com/v1.0/education/classes/8ddcac47-0b45-4cdb-b10a-d36a07a3dd62/assignments
 Content-type: application/json
 Content-length: 279
 
