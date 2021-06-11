@@ -1,6 +1,6 @@
 ---
-title: accessPackage: getApplicablePolicyRequirements
-description: "allows callers to find requirements to request an assignment for a specific accessPackage."
+title: "accessPackage: getApplicablePolicyRequirements"
+description: "Allows callers to find requirements to request an assignment for a specific accessPackage."
 localization_priority: Normal
 author: "ajburnle"
 ms.prod: "governance"
