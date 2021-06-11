@@ -35,6 +35,7 @@ This resource supports:
 | [Update user](../api/user-update.md) | [user](user.md) | Update user object. |
 | [Delete user](../api/user-delete.md) | None | Delete user object. |
 | [Get delta](../api/user-delta.md) | user collection | Get incremental changes for users. |
+| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | None | Invalidate all of the user's refresh tokens issued to applications. |
 | **App role assignments**|||
 | [List appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles which this user has been assigned. |
 | [Add appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this user. |
