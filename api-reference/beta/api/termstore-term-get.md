@@ -33,6 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /termStore/groups/{groupId}/sets/{setId}/terms/{termId}
 GET /termStore/sets/{setId}/terms/{termId}
+GET /sites/{site-id}/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
+GET /sites/{site-id}/termStore/sets/{setId}/terms/{termId}
 ```
 
 ## Optional query parameters
@@ -62,6 +64,7 @@ If successful, this method returns a `200 OK` response code and a [term](../reso
 
 ``` http
 GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
+GET https://graph.microsoft.com/beta/sites/{site-id}/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-term-csharp-snippets.md)]
