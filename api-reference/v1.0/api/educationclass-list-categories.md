@@ -58,6 +58,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_class_categories"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories
 ```
@@ -71,8 +72,10 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
