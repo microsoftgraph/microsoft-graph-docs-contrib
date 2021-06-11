@@ -1274,7 +1274,7 @@ items:
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
     - name: Devices and apps
-      expanded: true
+      expanded: false
       items:
       - name: Cloud printing
         items:
