@@ -47,11 +47,11 @@ If successful, this method returns a `201 Created` response code and an [educati
 ##### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11019/assignmentCategories
+POST https://graph.microsoft.com/beta/education/classes/9a5e4047-c1dc-4243-9628-580d3c64b80c/assignmentCategories
 Content-type: application/json
 Content-length: 33
 
@@ -67,7 +67,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory"
 } -->
