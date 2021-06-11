@@ -1,6 +1,6 @@
 ---
 title: "educationAssignmentIndividualRecipient resource type"
-description: "Used inside the assignment.assignTo property. When set to individual recipient list, selected students in the class will "
+description: "Used inside the assignment.assignTo property."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -19,7 +19,7 @@ This resource is a subclass of [educationAssignmentRecipient](educationassignmen
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|recipients|String collection|A collection of ids of the recipients.|
+|recipients|String collection|A collection of IDs of the recipients.|
 
 ## JSON representation
 
