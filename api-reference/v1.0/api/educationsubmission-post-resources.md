@@ -1,6 +1,6 @@
 ---
 title: "Create educationSubmissionResource"
-description: "Adds a resource to the submission resource list."
+description: "Add a resource to the submission resource list."
 author: "sharad-sharma-msft"
 localization_priority: Normal
 ms.prod: "education"
@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Adds a resource to the submission resource list. 
+Add a resource to the submission resource list. 
 
-This action can only be done by the student to whom this submission is assigned. This action will not succeed if the **allowStudentsToAddResources** flag isn't set to true. If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission. If the file does not exist or isn't in that folder, the POST request will fail. 
+This action can only be done by the student to whom this submission is assigned. This action will not succeed if the **allowStudentsToAddResources** flag isn't set to `true`. If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission. If the file does not exist or isn't in that folder, the POST request will fail. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
