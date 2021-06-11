@@ -1,6 +1,6 @@
 ---
 title: "serviceHealth resource type"
-description: "Represents the health information of a service."
+description: "Represent the health information of a service."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the health information of a service.
+Represent the health information of a service.
 
 ## Methods
 |Method|Return type|Description|

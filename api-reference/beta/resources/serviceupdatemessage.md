@@ -1,6 +1,6 @@
 ---
 title: "serviceUpdateMessage resource type"
-description: "Represents the announcements of changes in a service."
+description: "Represent the announcements of changes in a service."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the announcements of changes in a service.
+Represent the announcements of changes in a service.
 
 This resource type serves to important publications such as major updates in a product. For example, the publication of a new Windows feature.
 

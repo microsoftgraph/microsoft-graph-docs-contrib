@@ -1,20 +1,20 @@
 ---
-title: "List serviceHealthIssues"
-description: "Retrieve a list of the serviceHealthIssue objects and their properties."
+title: "List issues"
+description: "Retrieve the serviceHealthIssue resources from the issues navigation property."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
 doc_type: apiPageType
 ---
 
-# List serviceHealthIssues
+# List issues
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of the [serviceHealthIssue](../resources/servicehealthissue.md) objects and their properties.
+Retrieve [serviceHealthIssue](../resources/servicehealthissue.md) resources from the issues navigation property.
 
-This operation retrieves information of all service health issues that exist for the tenant.
+This operation retrieves information about all service health issues that exist for the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /admin/serviceAnnouncement/issues
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

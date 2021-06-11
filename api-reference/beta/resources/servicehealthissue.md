@@ -1,6 +1,6 @@
 ---
 title: "serviceHealthIssue resource type"
-description: "Represents a service health issue in a service."
+description: "Represent a service health issue in a service."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a service health issue in a service.
+Represent a service health issue in a service.
 
 The service health issue could be a service incident or service advisory. For example:
 

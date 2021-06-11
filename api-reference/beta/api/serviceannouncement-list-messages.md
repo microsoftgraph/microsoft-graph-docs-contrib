@@ -1,18 +1,18 @@
 ---
-title: "List serviceUpdateMessages"
-description: "Retrieve a list of the serviceUpdateMessage objects and their properties."
+title: "List messages"
+description: "Retrieve the serviceUpdateMessage resources from the messages navigation property."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
 doc_type: apiPageType
 ---
 
-# List serviceUpdateMessages
+# List messages
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties.
+Retrieve the [serviceUpdateMessage](../resources/serviceupdatemessage.md) resources from the messages navigation property.
 
 This operation retrieves all service update messages that exist for the tenant.
 
@@ -36,7 +36,7 @@ GET /admin/serviceAnnouncement/messages
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

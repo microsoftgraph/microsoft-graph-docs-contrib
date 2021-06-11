@@ -1,6 +1,6 @@
 ---
 title: "serviceUpdateMessage: favorite"
-description: "Change the status of a list of service update messages to favorited for the login user."
+description: "Change the status of a list of service update messages to favorited for the signed in user."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Change the status of a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s to favorite for the login user.
+Change the status of a list of [serviceUpdateMessag](../resources/serviceupdatemessage.md) to favorite for the signed in user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +39,7 @@ POST /admin/serviceAnnouncement/messages/favorite
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a boolean value true in the response body. Otherwise, will return false in the response body.
+If successful, this action returns a `200 OK` response code and a Boolean value `true` in the response body. Otherwise, will return `false` in the response body.
 
 ## Example
 
@@ -69,7 +69,6 @@ Content-Type: application/json
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

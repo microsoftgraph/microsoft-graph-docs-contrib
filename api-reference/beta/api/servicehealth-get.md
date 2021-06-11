@@ -37,7 +37,7 @@ GET /admin/serviceAnnouncement/healthOverviews/{Service Name}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/M
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/M
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

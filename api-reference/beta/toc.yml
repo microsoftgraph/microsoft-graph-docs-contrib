@@ -14191,14 +14191,14 @@ items:
         items:
         - name: Get serviceHealth
           href: api/servicehealth-get.md
-        - name: List serviceHealth
-          href: api/servicehealth-list.md
+        - name: List healthOverviews
+          href: api/serviceannouncement-list-healthoverviews.md
       - name: Issues
         items:
         - name: Get issue
           href: api/servicehealthissue-get.md
         - name: List issues
-          href: api/servicehealthissue-list.md
+          href: api/serviceannouncement-list-issues.md
         - name: Get incident report
           href: api/servicehealthissue-incidentreport.md
       - name: Messages
@@ -14206,7 +14206,7 @@ items:
         - name: Get message
           href: api/serviceupdatemessage-get.md
         - name: List messages
-          href: api/serviceupdatemessage-list.md
+          href: api/serviceannouncement-list-messages.md
         - name: Mark read status
           href: api/serviceupdatemessage-markread.md
         - name: Mark unread status

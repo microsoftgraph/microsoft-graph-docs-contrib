@@ -1,6 +1,6 @@
 ---
 title: "serviceUpdateMessageViewpoint resource type"
-description: Represents user view points data for a serviceUpdateMessage."
+description: Represent user view points data for a serviceUpdateMessage."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents user view points data for a [serviceUpdateMessage](../resources/serviceupdatemessage.md).
+Represent user view points data for a [serviceUpdateMessage](../resources/serviceupdatemessage.md).
 
 ## Properties
 |Property|Type|Description|

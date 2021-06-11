@@ -1,18 +1,18 @@
 ---
-title: "List serviceHealths"
-description: "Retrieve a list of the serviceHealth objects and their properties."
+title: "List healthOverviews"
+description: "Retrieve the serviceHealth resources from the healthOverviews navigation property."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
 doc_type: apiPageType
 ---
 
-# List serviceHealths
+# List healthOverviews
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of the [serviceHealth](../resources/servicehealth.md) objects and their properties.
+Retrieve the [serviceHealth](../resources/servicehealth.md) resources from the healthOverviews navigation property.
 
 This operation provides the health report of all subscribed services for a tenant.
 
@@ -36,7 +36,7 @@ GET /admin/serviceAnnouncement/healthOverviews
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,7 +82,7 @@ Content-Type: application/json
   "value": [
     {
         "service": "Exchange Online",
-        "status": "FalsePositive",
+        "status": "ServicaOperational",
         "id": "Exchange"
     },
     {
@@ -92,7 +92,7 @@ Content-Type: application/json
     },
     {
         "service": "Microsoft 365 suite",
-        "status": "FalsePositive",
+        "status": "ServiceOperational",
         "id": "OSDPPlatform"
     }
   ]
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews?$
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -130,7 +130,7 @@ Content-Type: application/json
   "value": [
     {
       "service": "Exchange Online",
-      "status": "FalsePositive",
+      "status": "ServiceOperational",
       "id": "Exchange",
       "issues": [
           {
