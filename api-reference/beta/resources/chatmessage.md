@@ -8,7 +8,8 @@ ms.prod: "microsoft-teams"
 ---
 
 # chatMessage resource type
-	@@ -13,129 +13,109 @@ Namespace: microsoft.graph
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +53,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |replyToId| string | Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.) |
 |from|[identitySet](identityset.md)| Read only. Details of the sender of the chat message.|
 |etag| string | Read-only. Version number of the chat message. |
-|messageType|string|The type of chat message. Possible values are: `message`, `chatEvent`, `typing`, `unknownFutureValue`, `systemEventMessage`.|
+|messageType|string|The type of chat message. Possible values are: `message`, `chatEvent`, `typing`, `systemEventMessage`.|
 |createdDateTime|dateTimeOffset|Timestamp of when the chat message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed. |
 |lastEditedDateTime|dateTimeOffset|Read only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Teams UI. If no edits are made the value is `null`.|

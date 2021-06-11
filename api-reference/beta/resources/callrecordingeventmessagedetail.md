@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents details for call recording event message.
 
+This message is generated when a call recording is started.
+
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 
@@ -24,7 +26,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |callId|String|Unique identifier of the call.|
 |callRecordingDisplayName|String|Display name for the call recording.|
 |callRecordingDuration|Duration|Duration of the call recording.|
-|callRecordingStatus|callRecordingStatus|Status of the call recording. Possible values are: `success`, `failure`, `initial`, `chunkFinished`, `unknownFutureValue`.|
+|callRecordingStatus|callRecordingStatus|Status of the call recording. Possible values are: `success`, `failure`, `initial`, `chunkFinished`.|
 |callRecordingUrl|String|Call recording URL.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |meetingOrganizer|[identitySet](../resources/identityset.md)|Organizer of the meeting.|

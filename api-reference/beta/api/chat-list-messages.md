@@ -208,7 +208,7 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": [],
-			"eventDetail": {
+            "eventDetail": {
                 "@odata.type": "#microsoft.graph.chatRenamedEventMessageDetail",
                 "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
                 "chatDisplayName": "Graph Members",

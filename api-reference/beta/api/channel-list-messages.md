@@ -236,7 +236,7 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": [],
-			"eventDetail": {
+            "eventDetail": {
                 "@odata.type": "#microsoft.graph.teamDescriptionUpdatedEventMessageDetail",
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "teamDescription": "Team for Microsoft Teams members",
