@@ -1,5 +1,5 @@
 ---
-title: "List identityProviders"
+title: "List userflowidentityproviders"
 description: "List all identityProviders in a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List all identityProviders in a b2cIdentityUserFlow
+# List userflowidentityproviders
 
 Namespace: microsoft.graph
 
