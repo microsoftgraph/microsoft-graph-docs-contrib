@@ -20,14 +20,13 @@ This resource type serves to important publications such as major updates in a p
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List serviceUpdateMessages](../api/serviceupdatemessage-list.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md) collection|Retrieve a list of the [serviceUpdateMessage](../resources/serviceupdatemessage.md) objects and their properties. This operation retrieves all service update messages that exist for the tenant.|
 |[Get serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Retrieve the properties and relationships of a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object. This operation retrieves a specified service update message for the tenant. The operation returns an error if the message does not exist for the tenant.|
-|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|Mark a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s as **read** for the login user|
-|[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|Mark a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s as **unread** for the login user.|
+|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|Mark a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s as **read** for the signed in user|
+|[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|Mark a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s as **unread** for the signed in user.|
 |[archive](../api/serviceupdatemessage-archive.md)|Boolean|Archive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the login user.|
-|[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the login user.|
-|[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|Change the status of a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s to favorite for the login user.|
-|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|Remove the favorite status of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the login user.|
+|[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
+|[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|Change the status of a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s to favorite for the signed in user.|
+|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|Remove the favorite status of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
 
 ## Properties
 |Property|Type|Description|

@@ -14199,7 +14199,7 @@ items:
           href: api/servicehealthissue-get.md
         - name: List issues
           href: api/serviceannouncement-list-issues.md
-        - name: Get incident report
+        - name: Get post-incident review report
           href: api/servicehealthissue-incidentreport.md
       - name: Messages
         items:
@@ -14213,7 +14213,7 @@ items:
           href: api/serviceupdatemessage-markunread.md
         - name: Archive status
           href: api/serviceupdatemessage-archive.md
-        - name: Unarchived status
+        - name: Unarchive status
           href: api/serviceupdatemessage-unarchive.md
         - name: Mark favorite status
           href: api/serviceupdatemessage-favorite.md

@@ -1764,16 +1764,16 @@ Security permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String  | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ServiceHealth.Read.All_ | Read service health | Allows the app to read your tenant's service health information on your behalf.Health information may include service issues or service health overviews. | Yes | Yes |
-| _ServiceMessage.Read.All_ | Read service messages | Allows the app to read your tenant's service announcement messages on your behalf. Messages may include information about new or changed features. | Yes | Yes |
-| _ServiceMessageViewpoint.Write_ | Update your user status on service announcement messages | Allows the app to update service announcement messages' status on your behalf. Your status for messages can be marked as read, archive, or favorite. | Yes | Yes |
+| _ServiceHealth.Read.All_ | Read service health | Allows the app to read your tenant's service health information on behalf of the signed-in user. Health information may include service issues or service health overviews. | Yes | Yes |
+| _ServiceMessage.Read.All_ | Read service messages | Allows the app to read your tenant's service announcement messages on behalf of the signed-in user. Messages may include information about new or changed features. | Yes | Yes |
+| _ServiceMessageViewpoint.Write_ | Update your user status on service announcement messages | Allows the app to update service announcement messages' user status on behalf of the signed-in user. The message status can be marked as read, archive, or favorite. | Yes | Yes |
 
 #### Application permissions
 
-|   Permission    |  Display String  | Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ServiceHealth.Read.All_ | Read service health | Allows the app to read your tenant's service health information on your behalf.Health information may include service issues or service health overviews. | Yes | Yes |
-| _ServiceMessage.Read.All_ | Read service messages | Allows the app to read your tenant's service announcement messages on your behalf. Messages may include information about new or changed features. | Yes | Yes |
+|   Permission    |  Display String  | Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ServiceHealth.Read.All_ | Read service health | Allows the app to read your tenant's service health information, without a signed-in user. Health information may include service issues or service health overviews. | Yes |
+| _ServiceMessage.Read.All_ | Read service messages | Allows the app to read your tenant's service announcement messages, without a signed-in user. Messages may include information about new or changed features. | Yes |
 
 ---
 

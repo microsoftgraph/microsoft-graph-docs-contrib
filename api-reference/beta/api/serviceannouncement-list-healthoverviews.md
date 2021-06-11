@@ -52,12 +52,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get properties of a list of serviceHealth objects
+### Example 1: Get serviceHealth resources
 
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "list_servicehealth"
+  "name": "list_healthoverviews"
 }
 -->
 ``` http
@@ -104,7 +104,7 @@ Content-Type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "list_servicehealth_with_issues"
+  "name": "list_healthoverviews_with_issues"
 }
 -->
 
@@ -157,7 +157,7 @@ Content-Type: application/json
                         "content": "Title: Exchange Online service has login issue. We'll provide an update within 30 minutes."
                     }
                   }
-              ]
+                ]
           }
         ]
     }

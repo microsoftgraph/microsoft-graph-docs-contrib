@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /admin/serviceAnnouncement/healthOverviews/{Service Name}
+GET /admin/serviceAnnouncement/healthOverviews/{ServiceName}
 ```
 
 ## Optional query parameters
@@ -68,7 +68,6 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/M
 ```
 
 #### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,7 +82,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/healthOverviews/$entity",
     "service": "Microsoft 365 suite",
-    "status": "falsePositive",
+    "status": "RestoringService",
     "id": "OSDPPlatform"
 }
 ```
@@ -118,7 +117,7 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/healthOverviews(issues())/$entity",
   "service": "Microsoft 365 suite",
-  "status": "ServiceRestored",
+  "status": "ServiceOperational",
   "id": "OSDPPlatform",
   "issues": [
         {

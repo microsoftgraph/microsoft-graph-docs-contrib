@@ -18,7 +18,6 @@ Represent the health information of a service.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List serviceHealths](../api/servicehealth-list.md)|[serviceHealth](../resources/servicehealth.md) collection|Retrieve a list of the [serviceHealth](../resources/servicehealth.md) objects and their properties. This operation provides the health information of all subscribed services for a tenant.|
 |[Get serviceHealth](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object. This operation provides the health information of a specified service for a tenant.|
 
 ## Properties
