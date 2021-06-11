@@ -43,11 +43,11 @@ In the request body, supply a JSON representation of an [educationRubric](../res
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a new [educationRubric](../resources/educationrubric.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [educationRubric](../resources/educationrubric.md) object in the response body.
 
 ## Examples
 
-### Example 1: Posting a Credit Rubric
+### Example 1: Post a credit rubric
 
 #### Request
 
@@ -218,11 +218,10 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Posting a Points Rubric
+### Example 2: Post a points rubric
 
 The following is an example of the request to post a rubric with points.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationrubric_from_educationuser_2"
