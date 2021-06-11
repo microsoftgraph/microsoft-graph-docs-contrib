@@ -1,6 +1,6 @@
 ---
 title: "Update educationassignment"
-description: "Update the assignment object. Only teachers in the class can do this. Note that you can't use a PATCH request to change the status of an assignment. Use the publish action to change the assignment status."
+description: "Update an educationAssigment object."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -11,7 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the assignment object. Only teachers in the class can do this. Note that you can't use a PATCH request to change the status of an assignment. Use the [publish](../api/educationassignment-publish.md) action to change the assignment status.
+Update an educationAssigment object. 
+
+Only teachers can perform this action. 
+
+Alternatively, request to change the status of an assignment with [publish] (../api/educationassignment-publish.md) action. Don't use a PATCH operation for this purpose.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,21 +38,23 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply only the values of the fields you want to update. 
+
+Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|addedStudentAction|String| Controls the behavior for students who are added after the assignment is published.|
-|allowLateSubmissions|Boolean| Whether submissions can be submitted after the due date.|
-|allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission. Indicated whether the only items on the submission came from the assignment resource list. |
-|assignDateTime|DateTimeOffset| Date the assignment should be published to students. |
+|addedStudentAction|String| Describes if the assignment should be distributed to students who are added after the assignment publication date.|
+|allowLateSubmissions|Boolean| Whether students can send submission after the due date.|
+|allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission or not. Also, indicates whether all resources in the submission correspond to the assignment resource list. |
+|assignDateTime|DateTimeOffset| Indicates the date to publish the assignment to students. |
 |assignTo|educationAssignmentRecipient| Students who get the assignment.|
 |closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
 |displayName|String| Name of assignment. |
 |dueDateTime|DateTimeOffset| Date assignment is due. |
 |grading|educationAssignmentGradeType| How the assignment will be graded.|
 |instructions|itemBody| Instructions to be given to the students along with the assignment. |
-|notificationChannelUrl|String| Channel to post assignment publish notification. Updating the channel URL isn't allowed after the assignment has been published and is only allowed when the **assignTo** value is [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
+|notificationChannelUrl|String| The channel to communicate notifications related to the assignment. To change the URL, set the `assignTo` value to [educationAssignmentClassRecipient] (../resources/educationassignmentclassrecipient.md). The channel URL can't change after the publication of the assignment.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [educationAssignment](../resources/educationassignment.md) object in the response body.
