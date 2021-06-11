@@ -34,7 +34,7 @@ DELETE /education/users/{id}
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Don't supply a request body for this method.
+Do not supply a request body for this method.
 
 
 ## Response
