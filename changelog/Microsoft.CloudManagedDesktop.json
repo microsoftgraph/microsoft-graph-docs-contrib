@@ -3,6 +3,24 @@
         {
             "ChangeList":[
                 {
+                    "Id": "3eb4567b-b9c9-4aaa-ab77-8cf0e22408e1",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "internalServerErrorUnableToRunDscScript",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `internalServerErrorUnableToRunDscScript` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id":"3eb4567b-b9c9-4aaa-ab77-8cf0e22408e1",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-09T15:14:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList":[
+                {
                     "Id": "2e1f1f29-1f02-4afa-8ab1-5160419eb0cb",
                     "ApiChange": "Property",
                     "ChangedApiName": "provisioningPolicyName",
@@ -36,6 +54,56 @@
         },
         {
             "ChangeList": [
+                {
+                    "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "warning",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `warning` member to the **cloudPcOnPremisesConnectionStatus** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionStatus"
+                },
+                {
+                    "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "endpointConnectivityCheckUrlNotWhitelisted",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the `endpointConnectivityCheckUrlNotWhitelisted` member from the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "endpointConnectivityCheckCloudPcUrlNotAllowListed",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `endpointConnectivityCheckCloudPcUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "endpointConnectivityCheckWVDUrlNotAllowListed",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `endpointConnectivityCheckWVDUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "endpointConnectivityCheckIntuneUrlNotAllowListed",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `endpointConnectivityCheckIntuneUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "e80f229d-0926-443c-be63-67dcbf00e7d0",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-09T00:43:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList":[
                 {
                     "Id": "d8dd9712-3e26-42f3-9ddd-e37e68dcba30",
                     "ApiChange": "Relationship",
