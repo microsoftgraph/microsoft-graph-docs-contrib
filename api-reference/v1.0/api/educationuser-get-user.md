@@ -1,5 +1,5 @@
 ---
-title: "Get educationUser"
+title: "Get user from educationUser"
 description: "Retrieve the simple directory **user** that corresponds to this **educationUser**."
 localization_priority: Normal
 author: "mmast-msft"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Get educationUser
+# Get user from educationUser
 
 Namespace: microsoft.graph
 
