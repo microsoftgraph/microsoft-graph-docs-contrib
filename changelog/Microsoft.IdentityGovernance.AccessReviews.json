@@ -7,7 +7,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "additionalNotificationRecipients",
                     "ChangeType": "Addition",
-                    "Description": "Added the **additionalNotificationRecipients** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&tabs=http) resource.",
+                    "Description": "Added the **additionalNotificationRecipients** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition?view=graph-rest-beta&tabs=http) resource.",
                     "Target": "accessreviewscheduledefinition"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "accessreviewnotificationrecipientitem",
                     "ChangeType": "Addition",
-                    "Description": "Added the accessreviewnotificationrecipientitem resource type.",
+                    "Description": "Added the [accessreviewnotificationrecipientitem](https://docs.microsoft.com/en-us/graph/api/accessreviewnotificationrecipientitem?view=graph-rest-beta&tabs=http) resource type.",
                     "Target": "accessreviewnotificationrecipientitem"
                 },
                 {
@@ -23,14 +23,14 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "accessReviewnotificationrecipientqueryscope",
                     "ChangeType": "Addition",
-                    "Description": "Added the accessReviewnotificationrecipientqueryscope resource type.",
+                    "Description": "Added the [accessReviewnotificationrecipientqueryscope](https://docs.microsoft.com/en-us/graph/api/accessReviewnotificationrecipientqueryscope?view=graph-rest-beta&tabs=http) resource type.",
                     "Target": "accessReviewnotificationrecipientqueryscope"
                 }
             ],
             "Id": "02045A24-F358-47CA-85AE-238118A96121",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2021-05-17T18:47:16.557Z",
+            "CreatedDateTime": "2021-06-10T18:47:16.557Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Governance"
         },
