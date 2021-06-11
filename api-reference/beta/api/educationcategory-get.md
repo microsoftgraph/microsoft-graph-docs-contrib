@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and a [educationCate
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "get_class_categories"
+  "name": "get_class_category"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories/{id}
+GET https://graph.microsoft.com/beta/education/classes/dacbf757-888d-42ae-b701-5e57cec300ae/assignmentCategories/7f64924d-4cdb-4e54-8c37-c0f3d46f0747
 ```
 
 ##### Response
