@@ -1,13 +1,13 @@
 ---
-title: "Remove educationRubric from educationAssignment"
-description: "Remove an educationRubric from an educationAssignment"
+title: "Delete educationRubric from educationAssignment"
+description: "Delete an educationRubric from an educationAssignment"
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# Remove educationRubric from educationAssignment
+# Delete educationRubric from educationAssignment
 
 Namespace: microsoft.graph
 
@@ -64,8 +64,6 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

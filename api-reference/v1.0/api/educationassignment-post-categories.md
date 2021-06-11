@@ -1,19 +1,17 @@
 ---
-title: "Add educationCategories"
+title: "Create educationCategories"
 description: "Add an existing educationCategory to an educationAssignment"
 localization_priority: Normal
-author: "dipakboyed"
+author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# Add educationCategories
+# Create educationCategories
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Add one or more existing [educationCategory](../resources/educationcategory.md) objects to this [educationAssignment](../resources/educationassignment.md).
+Add one or more existing [educationCategory](../resources/educationcategory.md) objects to the specified  [educationAssignment](../resources/educationassignment.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,36 +41,39 @@ In the request body, supply the odata.id of the existing [educationCategory](../
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
+
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "add_educationcategory_to_educationassignment"
 }-->
+
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/$ref
+POST https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/categories/$ref
 Content-type: application/json
 Content-length: 212
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/education/classes/11021/assignmentCategories/ec98f158-341d-4fea-9f8c-14a250d489ac"
+  "@odata.id": "https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories/ec98f158-341d-4fea-9f8c-14a250d489ac"
 }
 
 ```
 In the request body, supply the odata.id of the existing [educationCategory](../resources/educationcategory.md) object to add to this assignment.
-##### Response
+
+### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
-
-
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignmentResource"
 } -->
 ```http
 HTTP/1.1 204 No Content
+
+{
+}
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
