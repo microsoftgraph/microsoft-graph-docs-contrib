@@ -160,7 +160,7 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 
 ### Filter using lambda operators
 
-OData defines the `any` and `all` operators that evaluate matches on a collection. They can work on either collection properties or collection of entities.
+OData defines the `any` and `all` operators to evaluate matches on multi-valued properties, that is, either collection of primitive values such as **String** types or collection of entities.
 
 The `any` operator iteratively applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *any member* of the collection, otherwise it returns `false`. The following is the syntax of the `any` operator:
 
