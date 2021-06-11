@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reperesnts details a channel added event message.
+Represents details a channel added event message.
 
 This message is generated when a standard channel is added to a team.
 

@@ -1,6 +1,6 @@
 ---
 title: "channelUnsetAsFavoriteByDefaultEventMessageDetail resource type"
-description: "Reperesents details for channel set as favorite by default event"
+description: "Represents details for channel set as favorite by default event"
 author: "harshnat"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reperesents details for channel unset as favorite by default event.
+Represents details for channel unset as favorite by default event.
 
 This message is generated when a channel is set to no longer automatically show in the channels list for all members.
 
