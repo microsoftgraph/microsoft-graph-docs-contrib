@@ -58,7 +58,6 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_class_categories"
 }-->
-
 ```http
 GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentCategories
 ```
@@ -72,23 +71,25 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 218
 
 {
-    "value": [{
-        "displayName": "Quizzes",
-        "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
-    }, {
-        "displayName": "Homework",
-        "id": "3943e9ea-c69b-4dc9-9674-5f24168cee35"
-    }]
+    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('acdefc6b-2dc6-4e71-b1e9-6d9810ab1793')/assignmentCategories",
+    "value": [
+      {
+          "displayName": "Quizzes",
+          "id": "f997a279-6bcf-429e-b1d0-d2320c4b84ab"
+      },
+      {
+          "displayName": "Homework",
+          "id": "9b8f8f88-ddfc-4aad-9fe9-280513fffc74"
+      }
+    ]
 }
 ```
 

@@ -82,8 +82,9 @@ Content-type: application/json
 Content-length: 85
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes/dacbf757-888d-42ae-b701-5e57cec300ae/assignmentCategories/$entity",
     "displayName": "Quizzes",
-    "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
+    "id": "7f64924d-4cdb-4e54-8c37-c0f3d46f0747"
 }
 ```
 
