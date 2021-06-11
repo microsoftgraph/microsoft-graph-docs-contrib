@@ -39,7 +39,7 @@ The following table shows the return value that can be used to request an assign
 
 Parameter|Type|Description|
 | :--- | :--- | :--- |
-| on | Microsoft.IGAELM.EC.FrontEnd.ExternalModel.accessPackage | One for each policy that the user is an `allowedRequestor` for. If there is a policy with no requirements, the `accessPackageAssignmentRequestRequirements` will have false and null values. If there are no policies where the user is an `allowedRequestor`, an empty collection will be returned instead. |
+| on | Microsoft.IGAELM.EC.FrontEnd.ExternalModel.accessPackage | |
 
 ## Request headers
 |Name|Description|
@@ -51,6 +51,8 @@ Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an accessPackageAssignmentRequestRequirements collection in the response body.
+
+One for each policy that the user is an `allowedRequestor` for. If there is a policy with no requirements, the `accessPackageAssignmentRequestRequirements` will have false and null values. If there are no policies where the user is an `allowedRequestor`, an empty collection will be returned instead.
 
 ## Examples
 
