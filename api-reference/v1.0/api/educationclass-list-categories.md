@@ -56,7 +56,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_categories"
+  "name": "get_class_categories"
 }-->
 
 ```http

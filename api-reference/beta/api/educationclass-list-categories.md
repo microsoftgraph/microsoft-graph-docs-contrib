@@ -58,7 +58,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_categories"
+  "name": "get_class_categories"
 }-->
 
 ```http
