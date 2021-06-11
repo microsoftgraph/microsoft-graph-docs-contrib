@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents details for members added event message.
 
-This message is generated when members are removed to a chat, a channel or a team.
+This message is generated when members are removed from a chat, a channel or a team.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
