@@ -1,9 +1,9 @@
 ---
 title: "membersDeletedEventMessageDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents details for members deleted event message."
+author: "harshnat"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents details for members added event message.
+
+This message is generated when members are removed to a chat, a channel or a team.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -21,11 +23,8 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|initiator|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
-|members|[identity](../resources/identity.md) collection|**TODO: Add Description**|
-
-## Relationships
-None.
+|initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
+|members|[identity](../resources/identity.md) collection|List of members deleted.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

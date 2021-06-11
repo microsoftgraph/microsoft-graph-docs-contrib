@@ -1678,6 +1678,10 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |message|
+|chatEvent|
+|typing|
+|unknownFutureValue|
+|systemEventMessage|
 
 ### chatMessageImportance values
 
@@ -2179,13 +2183,3 @@ Possible values for user account types (group membership), per Windows definitio
 |initial|
 |chunkFinished|
 |unknownFutureValue|
-
-### chatMessageType values 
-
-|Member|
-|:---|
-|message|
-|chatEvent|
-|typing|
-|unknownFutureValue|
-|systemEventMessage|

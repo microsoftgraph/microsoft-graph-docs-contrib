@@ -1,9 +1,9 @@
 ---
 title: "channelDeletedEventMessageDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents details for a channel deleted event"
+author: "harshnat"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents details for a channel deleted event.
+
+This message is generated when a standard channel is deleted from a team.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -21,12 +23,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|channelDisplayName|String|**TODO: Add Description**|
-|channelId|String|**TODO: Add Description**|
-|initiator|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
-
-## Relationships
-None.
+|channelDisplayName|String|Display name of the channel.|
+|channelId|String|Unique identifier of the channel.|
+|initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

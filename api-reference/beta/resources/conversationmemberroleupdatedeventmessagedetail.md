@@ -1,9 +1,9 @@
 ---
 title: "conversationMemberRoleUpdatedEventMessageDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents details for conversation member role updated event."
+author: "harshnat"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents details for conversation member role updated event.
+
+This message is generated when conversation member user's role is updated.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -21,12 +23,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|conversationMemberRoles|String collection|**TODO: Add Description**|
-|converstaionMemberId|String|**TODO: Add Description**|
-|initiator|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
-
-## Relationships
-None.
+|conversationMemberRoles|String collection|Roles for the coversation member user.|
+|conversationMemberUser|[identity](../resources/identity.md)|Identity of the conversation member user.|
+|initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -38,10 +37,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.conversationMemberRoleUpdatedEventMessageDetail",
-  "converstaionMemberId": "String",
   "conversationMemberRoles": [
     "String"
   ],
+  "converstaionMemberUser": {
+    "@odata.type": "microsoft.graph.identity"
+  },
   "initiator": {
     "@odata.type": "microsoft.graph.identitySet"
   }

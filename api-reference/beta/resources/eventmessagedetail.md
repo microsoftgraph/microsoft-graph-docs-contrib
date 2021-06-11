@@ -1,9 +1,9 @@
 ---
 title: "eventMessageDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents base type for event message detail."
+author: "harshnat"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,40 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+This is an abstract type for representing system event message details.
 
-## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+System messages are messages generated for events such as members added to a channel, channel name updated, channel description updated.
 
-## Relationships
-None.
+List of events supported
+
+* [callEndedEventMessageDetail](../resources/callStartedEventMessageDetail.md)
+* [callRecordingEventMessageDetail](../resources/callRecordingEventMessageDetail.md)
+* [callStartedEventMessageDetail](../resources/callStartedEventMessageDetail.md)
+* [callTranscriptEventMessageDetail](../resources/callTranscriptEventMessageDetail.md)
+* [channelAddedEventMessageDetail](../resources/channelAddedEventMessageDetail.md)
+* [channelDeletedEventMessageDetail](../resources/channelDeletedEventMessageDetail.md)
+* [channelDescriptionUpdatedEventMessageDetail](../resources/channelDescriptionUpdatedEventMessageDetail.md)
+* [channelRenamedEventMessageDetail](../resources/channelRenamedEventMessageDetail.md)
+* [channelSetAsFavoriteByDefaultEventMessageDetail](../resources/channelSetAsFavoriteByDefaultEventMessageDetail.md)
+* [channelUnsetAsFavoriteByDefaultEventMessageDetail](../resources/channelUnsetAsFavoriteByDefaultEventMessageDetail.md)
+* [chatRenamedEventMessageDetail](../resources/chatRenamedEventMessageDetail.md)
+* [conversationMemberRoleUpdatedEventMessageDetail](../resources/conversationMemberRoleUpdatedEventMessageDetail.md)
+* [meetingPolicyUpdatedEventMessageDetail](../resources/meetingPolicyUpdatedEventMessageDetail.md)
+* [membersAddedEventMessageDetail](../resources/membersAddedEventMessageDetail.md)
+* [membersDeletedEventMessageDetail](../resources/membersDeletedEventMessageDetail.md)
+* [membersJoinedEventMessageDetail](../resources/membersJoinedEventMessageDetail.md)
+* [membersLeftEventMessageDetail](../resources/membersLeftEventMessageDetail.md)
+* [tabUpdatedEventMessageDetail](../resources/tabUpdatedEventMessageDetail.md)
+* [teamArchivedEventMessageDetail](../resources/teamArchivedEventMessageDetail.md)
+* [teamCreatedEventMessageDetail](../resources/teamCreatedEventMessageDetail.md)
+* [teamDescriptionUpdatedEventMessageDetail](../resources/teamDescriptionUpdatedEventMessageDetail.md)
+* [teamJoiningDisabledEventMessageDetail](../resources/teamJoiningDisabledEventMessageDetail.md)
+* [teamJoiningEnabledEventMessageDetail](../resources/teamJoiningEnabledEventMessageDetail.md)
+* [teamRenamedEventMessageDetail](../resources/teamRenamedEventMessageDetail.md)
+* [teamsAppInstalledEventMessageDetail](../resources/teamsAppInstalledEventMessageDetail.md)
+* [teamsAppRemovedEventMessageDetail](../resources/teamsAppRemovedEventMessageDetail.md)
+* [teamsAppUpgradedEventMessageDetail](../resources/teamsAppUpgradedEventMessageDetail.md)
+* [teamUnarchivedEventMessageDetail](../resources/teamUnarchivedEventMessageDetail.md)
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -1,9 +1,9 @@
 ---
 title: "callTranscriptEventMessageDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents details for call transcript event message"
+author: "harshnat"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents details for call transcript event message.
+
+This message is generated when transcript is available for a call.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -21,12 +23,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|callId|String|**TODO: Add Description**|
-|callTranscriptICalUid|String|**TODO: Add Description**|
-|meetingOrganizer|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
-
-## Relationships
-None.
+|callId|String|Unique identifier of the call.|
+|callTranscriptICalUid|String|Unique identifier for a call transcript.|
+|meetingOrganizer|[identitySet](../resources/identityset.md)|The organizer of the meeting.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
