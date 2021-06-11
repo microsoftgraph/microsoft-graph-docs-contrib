@@ -1,6 +1,6 @@
 ---
 title: "List submissions"
-description: "List all the submissions associated with this assignment. A teacher or an application with application permissions can get all the submissions while a student can only get submissions that they are associated with."
+description: "List all the submissions associated with an assignment."
 author: "sharad-sharma-msft"
 localization_priority: Normal
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List all the submissions associated with this assignment. A teacher or an application with application permissions can get all the submissions while a student can only get submissions that they are associated with.
+List all the submissions associated with an assignment. 
+
+A teacher or an application with application permissions can get all the submissions while a student can only get submissions that they are associated with.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,6 +47,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
   "name": "get_submissions"
 }-->
 ```msgraph-interactive

@@ -61,7 +61,7 @@ PUT https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"
+  "@odata.id": "https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d"
 }
 ```
 

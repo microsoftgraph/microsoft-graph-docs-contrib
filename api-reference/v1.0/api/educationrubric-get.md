@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /education/me/rubrics/{id}
+GET /education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/me/rubrics/{id}
+GET https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
 ```
 
 ### Response

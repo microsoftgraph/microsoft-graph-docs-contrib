@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/me/rubrics/{id}
+DELETE /education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/me/rubrics/{id}
+DELETE https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
 ```
 
 ### Response
