@@ -1,6 +1,6 @@
 ---
 title: "Get educationSubmittedSubmissionResource"
-description: "Returns a submitted resource."
+description: "Retrieve a submitted resource."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Returns a submitted resource. 
+Retrieve a [submitted resource](../resources/educationsubmittedsubmissionresource.md). 
 
 This will be available to a teacher or an application with application permissions after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources.
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -41,10 +41,10 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body. Otherwise, returns `404 Not found` response code.
+If successful, this method returns a `200 OK` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body. Otherwise, returns a `404 Not found` response code.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
@@ -53,7 +53,7 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/education/classes/f973bc68-2adb-4cf7-8b15-a57a1936b60c/assignments/8b890b42-a1df-478b-bff5-6814afb1afc2/submissions/6d71b348-898a-40cd-8e71-35127eed97f5/submittedResources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
-##### Response
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
