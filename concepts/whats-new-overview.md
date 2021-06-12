@@ -15,7 +15,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## June 2021: New and generally available
 
 ### Education
-The APIs for assignments service are now generally available. You can refer to the [documentation](/graph/api/resources/educationassignment?view=graph-rest-1.0&preserve-view=true) for more details.
+The APIs for the education [assignments service](/graph/api/resources/educationassignment?view=graph-rest-1.0&preserve-view=true) are now generally available. 
 
 ## June 2021: New in preview only
 

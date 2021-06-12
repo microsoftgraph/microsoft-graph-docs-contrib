@@ -42,9 +42,9 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "addedStudentAction": "none",
+  "addedStudentAction": "String",
   "dueTime": "String (timestamp)",
-  "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
+  "notificationChannelUrl": "String"
 }
 ```
 
