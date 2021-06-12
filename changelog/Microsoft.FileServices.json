@@ -1588,6 +1588,38 @@
         "CreatedDateTime": "2021-06-11T19:00:00.001Z",
         "WorkloadArea": "Change notifications",
         "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "4f8f9b37-4149-42d5-80af-3b01fff10780",
+            "ApiChange": "Resource",
+            "ChangedApiName": "driveItem",
+            "ChangeType": "change",
+            "Description": "Removed SharePoint and OneDrive for Business driveItem delta limitation regarding calls targeting non-root folders.",
+            "Target": "driveItem"
+        }],
+        "Id": "4f8f9b37-4149-42d5-80af-3b01fff10780",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-06-11T20:00:00.000Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "6f3dd177-b9b4-45c0-8893-c65196a2e502",
+            "ApiChange": "Resource",
+            "ChangedApiName": "driveItem",
+            "ChangeType": "change",
+            "Description": "Removed SharePoint and OneDrive for Business driveItem delta limitation regarding calls targeting non-root folders.",
+            "Target": "driveItem"
+        }],
+        "Id": "6f3dd177-b9b4-45c0-8893-c65196a2e502",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-06-11T20:00:00.001Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
     }
   ]
 }
