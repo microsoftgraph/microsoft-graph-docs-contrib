@@ -29,7 +29,7 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| Chat.Read, Chat.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All|
+|Application| Chat.Read.All, Chat.ReadWrite.All|
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 

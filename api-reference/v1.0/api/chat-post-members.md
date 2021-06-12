@@ -21,9 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |---------|-------------|
 |Delegated (work or school account)| ChatMember.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| Chat.Manage.Chat*, Chat.ReadWrite.All |
-
-> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
+|Application| Chat.ReadWrite.All |
 
 <!-- { "blockType": "ignored"} -->
 ```http
