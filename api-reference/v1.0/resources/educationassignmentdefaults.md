@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "addedStudentAction": "none",
-  "dueTime": "23:59:00",
+  "dueTime": "String (timestamp)",
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```

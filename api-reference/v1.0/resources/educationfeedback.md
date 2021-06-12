@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Feedback from a teacher to a student. This property represents both the text part of the feedback along with the who.
+Feedback from a teacher to a student. This property represents both the text part of the feedback along with who provided the feedback.
 
 
 ## Properties

@@ -4094,6 +4094,10 @@ items:
           href: api/educationassignment-update.md
         - name: Delete assignment
           href: api/educationassignment-delete.md
+        - name: Set up assignment resources folder
+          href: api/educationassignment-setupresourcesfolder.md
+        - name: Publish assignment
+          href: api/educationassignment-publish.md
         - name: List assignment resources
           href: api/educationassignment-list-resources.md
         - name: Create assignment resource
@@ -4102,12 +4106,8 @@ items:
           href: api/educationassignmentresource-get.md
         - name: Delete resource from assignment
           href: api/educationassignmentresource-delete.md
-        - name: Publish assignment
-          href: api/educationassignment-publish.md
         - name: List submissions for assignment
           href: api/educationassignment-list-submissions.md
-        - name: Set up assignment resources folder
-          href: api/educationassignment-setupresourcesfolder.md
         - name: Get rubric attached to assignment
           href: api/educationassignment-get-rubric.md
         - name: List categories
