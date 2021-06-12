@@ -1559,6 +1559,38 @@
     },
     {
         "ChangeList": [{
+            "Id": "27ef62cb-2b26-486e-8c74-fd0ce1e92403",
+            "ApiChange": "Resource",
+            "ChangedApiName": "subscription",
+            "ChangeType": "change",
+            "Description": "Updated the OneDrive and SharePoint maximum subscription expiration length to 30 days.",
+            "Target": "subscription"
+        }],
+        "Id": "27ef62cb-2b26-486e-8c74-fd0ce1e92403",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-06-08T19:00:00.000Z",
+        "WorkloadArea": "Change notifications",
+        "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "c0ff6217-2cfb-47d3-ba44-b31b9f03b234",
+            "ApiChange": "Resource",
+            "ChangedApiName": "subscription",
+            "ChangeType": "change",
+            "Description": "Updated the OneDrive and SharePoint maximum subscription expiration length to 30 days.",
+            "Target": "subscription"
+        }],
+        "Id": "c0ff6217-2cfb-47d3-ba44-b31b9f03b234",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-06-11T19:00:00.001Z",
+        "WorkloadArea": "Change notifications",
+        "SubArea": ""
+    },
+    {
+        "ChangeList": [{
             "Id": "4f8f9b37-4149-42d5-80af-3b01fff10780",
             "ApiChange": "Resource",
             "ChangedApiName": "driveItem",
