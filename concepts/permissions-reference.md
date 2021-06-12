@@ -1994,6 +1994,7 @@ Taxonomy permissions are valid only on work or school accounts.
 |TeamMember.Read.Group | Read this team's members. | Read this team's members, without a signed-in user. |No | No |
 |Member.Read.Group | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
 |Owner.Read.Group| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
+|File.Read.Group| Read this group's files. | Read this group's files, without a signed-in users. | No | No |
 
 ## Teams settings permissions
 

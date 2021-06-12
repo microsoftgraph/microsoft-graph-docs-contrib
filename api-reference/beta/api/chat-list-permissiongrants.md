@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat                                    |
 | Delegated (personal Microsoft account) | Not supported.                                                                                                                                                                                     |
-| Application                            | Chat.Manage.Chat*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+| Application                            | TeamsAppInstallation.Read.Chat*, Chat.Manage.Chat*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

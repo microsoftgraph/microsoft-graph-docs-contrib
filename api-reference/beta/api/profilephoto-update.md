@@ -25,9 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | Profile photo of the signed-in **user**:<br/>User.ReadWrite, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.ReadWrite |
+|Delegated (work or school account)     | Profile photo of the signed-in **user**:<br/>User.ReadWrite, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.ReadWrite<br /><br />For **team** resource:<br />TeamSettings.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | For **user** resource:<br/>User.ReadWrite.All<br /><br />For **group** resource:<br />Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.ReadWrite |
+|Application                            | For **user** resource:<br/>User.ReadWrite.All<br /><br />For **group** resource:<br />Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.ReadWrite<br /><br />For **team** resource:<br />TeamSettings.ReadWrite.Group*<br />TeamSettings.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 > **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Updating the photo of the signed-in user only requires User.ReadWrite permission.
 
@@ -50,6 +52,7 @@ To update the photo for a team:
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /groups/{teamId}/photo/$value
+PUT /teams/{teamId}/photo/$value
 ```
 
 ## Request headers
