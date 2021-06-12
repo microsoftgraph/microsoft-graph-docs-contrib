@@ -118,9 +118,9 @@ If you're just getting started and want to play around, you can use [Live Server
 
 ## Track a user's sign in state
 
-You can detect when a user has successfully logged in and display specific components accordingly. For example, display the agenda component if the user has logged in. Otherwise, display the login interface.
+You can detect when a user has successfully signed in and display specific components accordingly. For example, display the agenda component if the user has signed in. Otherwise, display the sign in interface.
 
-You can determine if a user is logged in by evaluating the `globalProvider` and `providerState`.
+You can determine if a user is signed in by evaluating the `globalProvider` and `providerState`.
 
 # [HTML](#tab/HTML)
 
