@@ -1,6 +1,6 @@
 ---
 title: "rubricQuality resource type"
-description: "A quality of a rubric"
+description: "A quality of a rubric."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-A quality of a rubric. See [educationRubric](educationrubric.md) for a description of the relationship between rubric *qualities*, *levels*, and *criteria*.
+A quality of a rubric. 
+
+See [educationRubric](educationrubric.md) for a description of the relationship between rubric *qualities*, *levels*, and *criteria*.
 
 ## Properties
 

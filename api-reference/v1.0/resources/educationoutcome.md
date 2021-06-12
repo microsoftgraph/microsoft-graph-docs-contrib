@@ -1,6 +1,6 @@
 ---
 title: "educationOutcome resource type"
-description: "The result of grading an assignment"
+description: "The result of grading an assignment."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-The result of grading an assignment. This is a base class; the derived types are [educationFeedbackOutcome](educationfeedbackoutcome.md), [educationPointsOutcome](educationpointsoutcome.md), and [educationRubricOutcome](educationrubricoutcome.md).
+The result of grading an assignment. 
+
+This is a base class; the derived types are [educationFeedbackOutcome](educationfeedbackoutcome.md), [educationPointsOutcome](educationpointsoutcome.md), and [educationRubricOutcome](educationrubricoutcome.md).
 
 ## Methods
 

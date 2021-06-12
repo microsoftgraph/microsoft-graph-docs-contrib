@@ -1,6 +1,6 @@
 ---
 title: "educationSubmission: return"
-description: "This action makes the grade and feedback associated with this submission available to the student."
+description: "Make the grade and feedback associated with this submission available to the student."
 author: "sharad-sharma-msft"
 localization_priority: Normal
 ms.prod: "education"

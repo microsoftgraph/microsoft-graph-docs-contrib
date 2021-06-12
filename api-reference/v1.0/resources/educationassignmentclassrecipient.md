@@ -1,6 +1,6 @@
 ---
 title: "educationAssignmentClassRecipient resource type"
-description: "Used inside the assignment.assignTo property. When set to class recipient, every student in the class will "
+description: "Resource type that is used inside the assignment.assignTo property."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used inside the [assignment.assignTo](educationassignment.md) property. When set to class recipient, every student in the class will 
+Resource type that is used inside the [assignment.assignTo](educationassignment.md) property. 
+
+When set to class recipient, every student in the class will 
 receive a submission object when the assignment is published.
 
 This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).

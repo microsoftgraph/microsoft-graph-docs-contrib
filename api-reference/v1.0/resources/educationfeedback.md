@@ -1,6 +1,6 @@
 ---
 title: "educationFeedback resource type"
-description: "Feedback from a teacher to a student. This property represents both the text part of the feedback along with the who."
+description: "Feedback from a teacher to a student."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Feedback from a teacher to a student. This property represents both the text part of the feedback along with who provided the feedback.
+Feedback from a teacher to a student. 
+
+This property represents both the text part of the feedback along with who provided the feedback.
 
 
 ## Properties
@@ -36,7 +38,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "feedbackBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "feedbackDateTime": "String (timestamp)",
+  "feedbackDateTime": "String",
   "text": {"@odata.type": "microsoft.graph.itemBody"}
 }
 

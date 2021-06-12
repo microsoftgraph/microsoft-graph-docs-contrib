@@ -1,6 +1,6 @@
 ---
 title: "educationLinkResource resource type"
-description: "A subclass of educationResource. This resource is a link and does not have any additional data associated with it."
+description: "A subclass of educationResource."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A subclass of [educationResource](educationresource.md). This resource is a link and does not have any additional data associated with it.
+A subclass of [educationResource](educationresource.md). 
+
+This resource is a link and does not have any additional data associated with it.
 
 
 ## Properties

@@ -1,6 +1,6 @@
 ---
 title: "educationAssignmentPointsGradeType resource type"
-description: "Used with the **assignments.grading** property. This is a subclass of educationAssignmentGradeType."
+description: "Resource type that is used with the **assignments.grading** property. This is a subclass of educationAssignmentGradeType."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used with the **assignments.grading** property. This is a subclass of [educationAssignmentGradeType](educationassignmentgradetype.md).
+Resource type that is used with the **assignments.grading** property. This is a subclass of [educationAssignmentGradeType](educationassignmentgradetype.md).
 
 This indicates that the assignment is graded and stores the maximum number of points each student can achieve on this work item. When this is set on an assignment, each submission will get
 an [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) property associated with it for the storage of each student's points.

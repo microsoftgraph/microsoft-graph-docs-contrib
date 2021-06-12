@@ -1,6 +1,6 @@
 ---
 title: "rubricQualityFeedbackModel resource type"
-description: "Feedback related to a specific quality of an educationRubric"
+description: "Feedback related to a specific quality of an educationRubric."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"

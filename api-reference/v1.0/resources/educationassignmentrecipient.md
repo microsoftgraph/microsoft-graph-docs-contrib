@@ -1,6 +1,6 @@
 ---
 title: "educationAssignmentRecipient resource type"
-description: "Used within the **assignments.assignTo** property. This superclass is abstract and you cannot"
+description: "Resource type that is used within the **assignments.assignTo** property."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used within the **assignments.assignTo** property. This superclass is abstract and you cannot
+Resource type that is used within the **assignments.assignTo** property. 
+
+This superclass is abstract and you cannot
 set the property in assignments to this value. This superclass represents who the
 assignment should be assigned to when the assignment is published.
 

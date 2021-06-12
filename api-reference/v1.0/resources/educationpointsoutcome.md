@@ -1,6 +1,6 @@
 ---
 title: "educationPointsOutcome resource type"
-description: "An educationOutcome that gives a numerical grade"
+description: "An educationOutcome that gives a numerical grade."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"

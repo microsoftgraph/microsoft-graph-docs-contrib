@@ -1,6 +1,6 @@
 ---
 title: "educationRubricOutcome resource type"
-description: "An educationOutcome that provides a graded rubric"
+description: "An educationOutcome that provides a graded rubric."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"

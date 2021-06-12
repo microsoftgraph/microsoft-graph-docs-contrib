@@ -1,6 +1,6 @@
 ---
 title: "educationSubmissionRecipient resource type"
-description: "Abstract class that represents the different sets of users to whom a submission can be assigned. Possible values include individuals or groups. This is used within the **submission.recipient** property."
+description: "Abstract class that represents the different sets of users to whom a submission can be assigned."
 author: "sharad-sharma-msft"
 localization_priority: Normal
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Abstract class that represents the different sets of users to whom a submission can be assigned. Possible values include individuals or groups. This is used within the **submission.recipient** property.
+Abstract class that represents the different sets of users to whom a submission can be assigned. 
+
+Possible values include individuals or groups. This is used within the **submission.recipient** property.
 
 
 ## Properties

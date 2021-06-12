@@ -1,6 +1,6 @@
 ---
 title: "rubricLevel resource type"
-description: "A level of a rubric"
+description: "A level of a rubric."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-A level of a rubric. See [educationRubric](educationrubric.md) for a description of the relationship between rubric *qualities*, *levels*, and *criteria*.
+A level of a rubric. 
+
+See [educationRubric](educationrubric.md) for a description of the relationship between rubric *qualities*, *levels*, and *criteria*.
 
 ## Properties
 

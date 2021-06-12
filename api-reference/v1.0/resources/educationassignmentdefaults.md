@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Specifies class-level defaults respected by new assignments created in the class. Callers can continue to specify custom values on each assignment creation if they Don't want the default behaviors.
+Specifies class-level defaults respected by new assignments created in the class. 
+
+Callers can continue to specify custom values on each assignment creation if they Don't want the default behaviors.
 
 ## Methods
 |Method|Return type|Description|

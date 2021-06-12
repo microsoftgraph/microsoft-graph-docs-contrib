@@ -1,6 +1,6 @@
 ---
 title: "educationWordResource resource type"
-description: "A subclass of educationResource. This is a Word document resource. The Word file must be uploaded in the **fileResource** directory associated with the "
+description: "A subclass of educationResource."
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A subclass of [educationResource](educationresource.md). This is a Word document resource. The Word file must be uploaded in the **fileResource** directory associated with the 
+A subclass of [educationResource](educationresource.md). 
+
+This is a Word document resource. The Word file must be uploaded in the **fileResource** directory associated with the 
 assignment or submission.
 
 
