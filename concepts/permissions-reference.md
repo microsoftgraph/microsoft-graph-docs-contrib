@@ -502,7 +502,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _ChannelSettings.Read.All_ | Read the names, descriptions, and settings of all channels. | Read all channel names, channel descriptions, and channel settings, without a signed-in user.| Yes | No |
 | _ChannelSettings.ReadWrite.All_ | Read and write the names, descriptions, and settings of all channels. | Read and write the names, descriptions, and settings of all channels, without a signed-in user.| Yes | No |
 
-## Chats permissions
+## Chat permissions
 
 #### Delegated permissions
 
@@ -522,7 +522,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 > **Note:** For messages in a channel, see [ChannelMessage permissions](#channel-message-permissions).
 
-## Chats resource-specific consent permissions
+## Chat resource-specific consent permissions
 
 | Permission                     | Display String                                                | Description  | Admin Consent Required | Microsoft Account supported |
 |:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
@@ -532,11 +532,11 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | ChatMember.Read.Chat           | Read this chat's members.                                     | Allows the app to read the members of this chat, without a signed-in user. |No | No |
 | Chat.Manage.Chat               | Manage this chat.                                             | Allows the app to manage the chat, the chat's members and grant access to the chat's data, without a signed-in user.  |No | No |
 | TeamsTab.Read.Chat             | Read this chat's tabs.                                        | Allows the app to read this chat's tabs, without a signed-in user. |No | No |
-| TeamsTab.Create.Chat           | Create tabs in this chat.                                     | Allows the app to  create tabs in this chat, without a signed-in user. |No | No |
+| TeamsTab.Create.Chat           | Create tabs in this chat.                                     | Allows the app to create tabs in this chat, without a signed-in user. |No | No |
 | TeamsTab.Delete.Chat           | Delete this chat's tabs.                                      | Allows the app to delete this chat's tabs, without a signed-in user. |No | No |
 | TeamsTab.ReadWrite.Chat        | Manage this chat's tabs.                                      | Allows the app to manage this chat's tabs, without a signed-in user. |No | No |
-| TeamsAppInstallation.Read.Chat | Read which apps are installed in this chat.                   | Allows the app read the Teams apps that are installed in this chat along with the permissions granted to each app, without a signed-in user.  |No | No |
-| OnlineMeeting.ReadBasic.Chat   | Read basic properties of a meeting associated with this chat. | Allows the app to read basic properties of a meeting associated with this chat, without a signed-in user. |No | No |
+| TeamsAppInstallation.Read.Chat | Read which apps are installed in this chat.                   | Allows the app to read the Teams apps that are installed in this chat along with the permissions granted to each app, without a signed-in user.  |No | No |
+| OnlineMeeting.ReadBasic.Chat   | Read basic properties of a meeting associated with this chat. | Allows the app to read basic properties, such as name, schedule, organizer and join link, of a meeting associated with this chat, without a signed-in user. |No | No |
 
 ## ChatMessage permissions ([private preview](#permissions-availability-status))
 
