@@ -23,11 +23,11 @@ When you implement activity feed notifications, keep the following points in min
 
 The following image depicts appropriate titles:
 
-![appropriate-title-and-description](concepts/images/notificationsapibestpractice2.PNG)	
+![appropriate-title-and-description](/images/notificationsapibestpractice2.PNG)	
 
 The following image shows long titles, which are not suggested to use:
 
-![discard-long-title](concepts/images/notificationsapibestpractice3.PNG)
+![discard-long-title](~/images/notificationsapibestpractice3.PNG)
 
 * Notifications should convey important information for the user. For example: Lynne mentioned you in a conversation.
 * Avoid sending notifications that are promotional in nature. For example: Try the new feature in the Cycling app!
