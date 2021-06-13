@@ -55,12 +55,13 @@ If successful, this method returns a `200 OK` response code and a [educationCate
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_assignments"
+  "blockType": "request",
+  "sampleKeys": ["dacbf757-888d-42ae-b701-5e57cec300ae"],
+  "name": "get_class_category"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories/{id}
+GET https://graph.microsoft.com/beta/education/classes/dacbf757-888d-42ae-b701-5e57cec300ae/assignmentCategories/7f64924d-4cdb-4e54-8c37-c0f3d46f0747
 ```
 
 ##### Response
@@ -70,7 +71,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": false
@@ -82,8 +83,9 @@ Content-type: application/json
 Content-length: 85
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes/dacbf757-888d-42ae-b701-5e57cec300ae/assignmentCategories/$entity",
     "displayName": "Quizzes",
-    "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
+    "id": "7f64924d-4cdb-4e54-8c37-c0f3d46f0747"
 }
 ```
 
