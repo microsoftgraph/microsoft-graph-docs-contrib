@@ -27,7 +27,7 @@ The following image depicts appropriate titles:
 
 The following image shows long titles, which are not suggested to use:
 
-![discard-long-title](~/images/notificationsapibestpractice3.PNG)
+![discard-long-title](/images/notificationsapibestpractice3.PNG)
 
 * Notifications should convey important information for the user. For example: Lynne mentioned you in a conversation.
 * Avoid sending notifications that are promotional in nature. For example: Try the new feature in the Cycling app!
