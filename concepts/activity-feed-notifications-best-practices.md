@@ -23,14 +23,14 @@ When you implement activity feed notifications, keep the following points in min
 
   The following image depicts appropriate titles:
 
-  ![appropriate-title-and-description](../images/notificationsapibestpractice2.PNG)	
+  ![appropriate-title-and-description](/images/notificationsapibestpractice2.PNG)	
 
   The following image shows long titles, which are not suggested to use:
 
-  ![discard-long-title](../images/notificationsapibestpractice3.PNG)
+  ![discard-long-title](/images/notificationsapibestpractice3.PNG)
 
-* Notifications should convey important information for the user. For example: Lynne mentioned you in a conversation.
-* Avoid sending notifications that are promotional in nature. For example: Try the new feature in the Cycling app!
+* Notifications should convey important information for the user. For example, Lynne mentioned you in a conversation.
+* Avoid sending notifications that are promotional in nature. For example, Try the new feature in the Cycling app!
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
 
     > [!NOTE]
@@ -38,9 +38,9 @@ When you implement activity feed notifications, keep the following points in min
 
 ## Enhance the notification experience
 
-Microsoft Teams displays notifications in both activity feed and toast formats. Users receive notifications from multiple sources across chats, channels, meetings, or other apps. To simplify the user experience, apply the following recommendations:
+Microsoft Teams displays notifications in both activity feed and toast formats. Users receive notifications from multiple sources across chats, channels, meetings, or other apps. To enhance the user experience, apply the following recommendations:
 
-* Send notifications that are directly relevant to the users. For example, "Diego assigned a sales ticket to you" is a relevant message; "Joni left the sales team" is not a relevant message.
+* Send notifications that are directly relevant to the users. For example, *Diego assigned a sales ticket to you* is a relevant message, *Joni left the sales team* is not a relevant message.
 * Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [activity feed notifications or bot framework messages](#activity-feed-notifications-or-bot-framework-messages).
 * Use the **Text Preview section** in notifications. Provide information to help the user determine the importance of the notification and take action, if necessary.
 * Don't add a period at the end of the notification title to be consistent with with all other notification settings in Teams.
@@ -49,11 +49,11 @@ Microsoft Teams displays notifications in both activity feed and toast formats. 
 * Verify that your app does not send more than 10 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 10.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
 
-### Activity feed notifications or bot framework messages
+## Activity feed notifications or bot framework messages
 
-Use the type of notifications based on need. The following section helps you to select the required type of notification as per functionality and usage. Don't use both types of notifications, you can either use activity feed notifications or bot framework messages to notify users. 
+Use the type of notifications based on need. The following section helps you to select the required type of notification as per functionality and usage. Don't use both types of notifications, you can either use activity feed notifications or bot framework messages to notify users: 
 
-#### Activity feed notifications
+### Activity feed notifications
 
 The activity feed notifications land in the activity feed and can include links to various locations. These notifications help you with the following: 
 * Allow the user to take action or triage the notification.
@@ -69,7 +69,7 @@ The activity feed notification API can send either delegated or application-only
 
 You can update an existing activity feed notification instead of creating a new notification by using the `chainId` parameter.
 
-#### Bot framework messages
+### Bot framework messages
 
 Bot messages are delivered as chat or channel messages. If the users' notifications for chat or channel are turned on, they trigger notifications as chat or channel notifications:
 
