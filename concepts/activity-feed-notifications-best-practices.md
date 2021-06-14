@@ -23,7 +23,7 @@ When you implement activity feed notifications, keep the following points in min
 
   The following image depicts appropriate titles:
   
-   <img src="~/images/notificationsapibestpractice2.png" alt="appropriate-title-and-description" width="400"/>
+   <img src="/images/notificationsapibestpractice2.png" alt="appropriate-title-and-description" width="400"/>
  
   The following image shows long titles, which are not suggested to use:
 
