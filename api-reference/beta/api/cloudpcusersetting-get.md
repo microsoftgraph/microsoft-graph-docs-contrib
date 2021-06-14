@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPcUserSetting"
-description: "Read the properties and relationships of a cloudPcProvisioningPolicy object."
+description: "Read the properties and relationships of a cloudPcUserSetting object."
 author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: "cloud-pc"

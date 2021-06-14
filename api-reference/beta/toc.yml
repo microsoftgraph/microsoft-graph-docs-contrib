@@ -9586,9 +9586,9 @@ items:
           - name: Update
             href: api/cloudpcusersetting-update.md
           - name: Delete
-            href: api/cloudpcusersettings-delete.md
+            href: api/cloudpcusersetting-delete.md
           - name: Assign
-            href: api/cloudpcusersettings-assign.md
+            href: api/cloudpcusersetting-assign.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
