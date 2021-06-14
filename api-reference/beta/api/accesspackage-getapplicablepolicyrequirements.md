@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an accessPackage
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identitygovernance/entitlementmanagement/accessPackages/fb449cf8-3a59-4d86-bdfd-a1b7299681de/getapplicablepolicyrequirements
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/fb449cf8-3a59-4d86-bdfd-a1b7299681de/getApplicablePolicyRequirements
 ```
 
 ### Response
