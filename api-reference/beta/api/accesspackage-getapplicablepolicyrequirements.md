@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identitygovernance/entitlementmanagement/accessPackages/fb449cf8-3a59-4d86-bdfd-a1b7299681de/getapplicablepolicyrequirements
+POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicablePolicyRequirements
 ```
 
 ## Function parameters
