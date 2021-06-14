@@ -2,6 +2,32 @@
   "changelog": [
         {
           "ChangeList": [
+            {
+              "Id": "4579a6f4-bb21-42f0-91cb-a69029018a65",
+              "ApiChange": "Resource",
+              "ChangedApiName": "countryNamedLocation",
+              "ChangeType": "Change",
+              "Description": "Added the **countryLookupMethod** property to the [countryNamedLocation](https://docs.microsoft.com/en-us/graph/api/resources/namedlocation?view=graph-rest-1.0) resource.",
+              "Target": "countryNamedLocation"
+            },
+            {
+              "Id": "7115e92d-2aa8-4a9c-924b-d0caf8023529",
+              "ApiChange": "Enum type",
+              "ChangedApiName": "countryLookupMethodType",
+              "ChangeType": "Addition",
+              "Description": "Added the **countryLookupMethodType** enumeration type.",
+              "Target": "countryLookupMethodType"
+            }
+          ],
+          "Id": "189230eb-9513-42ee-8035-7125d278da37",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2021-03-29T00:00:00",
+          "WorkloadArea": "Identity and access ",
+          "SubArea": "Identity and sign-in"
+        },
+        {
+          "ChangeList": [
               {
                   "Id": "1542fba3-8dbc-11eb-a57c-31dcdef91872",
                   "ApiChange": "Property",
