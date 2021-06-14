@@ -55,47 +55,47 @@ The following is a JSON representation of the resource.
 } -->
 ```json
 {
-	"id": "1623677858199",
-	"replyToId": null,
-	"etag": "1623677858199",
-	"messageType": "systemEventMessage",
-	"createdDateTime": "2021-06-14T13:37:38.199Z",
-	"lastModifiedDateTime": "2021-06-14T13:37:38.199Z",
-	"lastEditedDateTime": null,
-	"deletedDateTime": null,
-	"subject": null,
-	"summary": null,
-	"chatId": null,
-	"importance": "normal",
-	"locale": "en-us",
-	"webUrl": "https://teams.microsoft.com/l/message/19%3A318c8c65f0794971a1a9b5e3413d77de%40thread.tacv2/1623677858199?groupId=5e91c375-f755-4882-880e-f1b9322faa87&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607&createdTime=1623677858199&parentMessageId=1623677858199",
-	"from": null,
-	"policyViolation": null,
-	"body": {
-		"contentType": "html",
-		"content": "<systemEventMessage/>"
-	},
-	"channelIdentity": {
-		"teamId": "5e91c375-f755-4882-880e-f1b9322faa87",
-		"channelId": "19:318c8c65f0794971a1a9b5e3413d77de@thread.tacv2"
-	},
-	"attachments": [],
-	"mentions": [],
-	"reactions": [],
-	"eventDetail": {
-		"@odata.type": "#microsoft.graph.teamCreatedEventMessageDetail",
-		"teamId": "19:715b7c2ea0894fe3a503f8958df1ef06@thread.tacv2",
-		"teamDisplayName": "Test Team",
-		"teamDescription": "This is a test team.",
-		"initiator": {
-			"application": null,
-			"device": null,
-			"user": {
-				"id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
-				"displayName": null,
-				"userIdentityType": "aadUser"
-			}
-		}
-	}
+  "id": "1623677858199",
+  "replyToId": null,
+  "etag": "1623677858199",
+  "messageType": "systemEventMessage",
+  "createdDateTime": "2021-06-14T13:37:38.199Z",
+  "lastModifiedDateTime": "2021-06-14T13:37:38.199Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": null,
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": "https://teams.microsoft.com/l/message/19%3A318c8c65f0794971a1a9b5e3413d77de%40thread.tacv2/1623677858199?groupId=5e91c375-f755-4882-880e-f1b9322faa87&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607&createdTime=1623677858199&parentMessageId=1623677858199",
+  "from": null,
+  "policyViolation": null,
+  "body": {
+    "contentType": "html",
+    "content": "<systemEventMessage/>"
+  },
+  "channelIdentity": {
+    "teamId": "5e91c375-f755-4882-880e-f1b9322faa87",
+    "channelId": "19:318c8c65f0794971a1a9b5e3413d77de@thread.tacv2"
+  },
+  "attachments": [],
+  "mentions": [],
+  "reactions": [],
+  "eventDetail": {
+    "@odata.type": "#microsoft.graph.teamCreatedEventMessageDetail",
+    "teamId": "19:715b7c2ea0894fe3a503f8958df1ef06@thread.tacv2",
+    "teamDisplayName": "Test Team",
+    "teamDescription": "This is a test team.",
+    "initiator": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
+        "displayName": null,
+        "userIdentityType": "aadUser"
+      }
+    }
+  }
 }
 ```
