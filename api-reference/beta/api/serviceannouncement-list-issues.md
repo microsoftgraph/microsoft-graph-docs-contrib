@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve [serviceHealthIssue](../resources/servicehealthissue.md) resources from the issues navigation property.
+Retrieve [serviceHealthIssue](../resources/servicehealthissue.md) resources from the **issues** navigation property.
 
 This operation retrieves information about all service health issues that exist for the tenant.
 

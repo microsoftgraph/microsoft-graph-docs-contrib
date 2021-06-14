@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a service health issue in a service.
+Represent a [service health issue](../resources/servicehealthissue.md) in a service.
 
 The service health issue could be a service incident or service advisory. For example:
 
