@@ -1,7 +1,7 @@
 ---
 title: "callStartedEventMessageDetail resource type"
 description: "Represents details for call started event message."
-author: "harshnat"
+author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details for call started event message.
-
 This message is generated when a call has started.
 
 
@@ -43,3 +42,52 @@ The following is a JSON representation of the resource.
 }
 ```
 
+## Example response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```json
+{
+	"@odata.type": "#microsoft.graph.chatMessage",
+	"id": "1615943825123",
+	"replyToId": null,
+	"etag": "1615943825123",
+	"messageType": "systemEventMessage",
+	"createdDateTime": "2021-03-1706:47:05.123Z",
+	"lastModifiedDateTime": "2021-03-1706:47:05.123Z",
+	"lastEditedDateTime": null,
+	"deletedDateTime": null,
+	"subject": null,
+	"summary": null,
+	"chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+	"importance": "normal",
+	"locale": "en-us",
+	"webUrl": null,
+	"channelIdentity": null,
+	"policyViolation": null,
+	"from": null,
+	"body": {
+		"contentType": "html",
+		"content": "<systemEventMessage/>"
+	},
+	"attachments": [],
+	"mentions": [],
+	"reactions": [],
+	"eventDetail": {
+		"@odata.type": "#microsoft.graph.callStartedEventMessageDetail",
+		"callId": "9c848c0e-f906-4dfc-b22e-c68a785a587c",
+		"initiator": {
+			"application": null,
+			"device": null,
+			"user": {
+				"id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
+				"displayName": null,
+				"userIdentityType": "aadUser"
+			}
+		}
+	}
+}
+```
