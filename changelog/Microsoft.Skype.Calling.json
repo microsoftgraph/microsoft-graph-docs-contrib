@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
+          "ApiChange": "Action",
+          "ChangedApiName": "setPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the setPresence action.",
+          "Target": "presence"
+        },
+        {
+          "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
+          "ApiChange": "Action",
+          "ChangedApiName": "clearPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the clearPresence action.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-06-14T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
           "ApiChange": "Resource",
           "ChangedApiName": "allowAttendeeToEnableMic",
