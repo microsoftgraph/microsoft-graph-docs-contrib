@@ -9824,7 +9824,7 @@ items:
         - name: List categories
           href: api/educationassignment-list-categories.md
         - name: Add category
-          href: api/educationassignment-add-categories.md
+          href: api/educationassignment-post-categories.md
         - name: Remove category
           href: api/educationassignment-remove-category.md
         - name: Attach rubric to assignment
