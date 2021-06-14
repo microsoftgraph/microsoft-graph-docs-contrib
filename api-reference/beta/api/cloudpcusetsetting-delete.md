@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Delete cloudPcProvisioningPolicy
+# Delete cloudPcUserSetting
 
 Namespace: microsoft.graph
 

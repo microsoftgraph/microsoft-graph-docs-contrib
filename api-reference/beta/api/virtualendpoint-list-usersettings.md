@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List provisioningPolicies
+# List userSettings
 
 Namespace: microsoft.graph
 
