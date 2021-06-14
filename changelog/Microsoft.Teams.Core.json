@@ -2954,7 +2954,7 @@
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "permissionGrants",
           "ChangeType": "Addition",
-          "Description": "Added the **permissionGrants** relationship to [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Description": "Added the **permissionGrants** relationship to [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta) resource.",
           "Target": "team"
         }
       ],
