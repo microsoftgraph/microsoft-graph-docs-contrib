@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "countriesAndRegions": ["String"],
-  "countryLookupMethod": "countryLookedupMethodType",
+  "countryLookupMethod": "String",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
@@ -74,4 +74,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
