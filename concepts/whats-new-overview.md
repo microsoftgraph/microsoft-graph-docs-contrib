@@ -12,6 +12,11 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## June 2021: New and generally available
+
+### Education
+The APIs for the education [assignments service](/graph/api/resources/educationassignment?view=graph-rest-1.0&preserve-view=true) are now generally available. 
+
 ## June 2021: New in preview only
 
 ### Education

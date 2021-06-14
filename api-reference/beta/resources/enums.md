@@ -306,14 +306,6 @@ Namespace: microsoft.graph
 |passwordlessCapable|
 |mfaCapable|
 
-### authenticatorAppFeatureSettings values 
-
-
-
-|Member|
-|:---|
-|requireNumberMatching|
-|unknownFutureValue|
 
 ### authMethodsType values 
 
@@ -820,6 +812,7 @@ Namespace: microsoft.graph
 |list|
 |listItem|
 |drive|
+|unknownFutureValue|
 
 ### searchAlterationType values
 
