@@ -272,7 +272,7 @@ HTTP/1.1 204 No Content
 
 ### Example 4: Notify the team members about pending finance approval requests
 
-This example shows how you can send an activity feed notification to all team members. This example is similar to previous examples. However, in this case, the ``recipient`` is a [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
+This example shows how you can send an activity feed notification to all team members. This example is similar to previous examples. However, in this case, the `recipient` is a [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
 
 > **Note:** The ability to send notifications to all team members is limited to teams with 10,000 members or less. If the team exceeds 10,000 members, none of the team members will receive a notification.
 
