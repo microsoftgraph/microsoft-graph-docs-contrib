@@ -41,7 +41,7 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Details of the certificate associated with the application when a custom domain is in use. `null` when using the default domain. Read-only.|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| The associated key credential for the custom domain used. |
 |verifiedCustomDomainPasswordCredential|[passwordCredential](passwordcredential.md)| The associated password credential for the custom domain used. |
-|isBackendCertificateValidationEnabled|Boolean| Indicates if backend SSL certificate validation is enabled for the application. For all new Application Proxy apps, the property will be set to `true` by default. For all existing apps, the property will be set to `false`. |
+|isBackendCertificateValidationEnabled|Boolean| Indicates whether backend SSL certificate validation is enabled for the application. For all new Application Proxy apps, the property will be set to `true` by default. For all existing apps, the property will be set to `false`. |
 
 
 ## JSON representation
