@@ -2,14 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
-        {
-          "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "identityProviders",
-          "ChangeType": "Addition",
-          "Description": "Added the operation [availableProviderTypes](https://docs.microsoft.com/graph/api/resources/identityprovider-list-availableprovidertypes.md?view=graph-rest-1.0&preserve-view=true) to list the available identity providers available for use in an Azure Active Directory tenant.",
-          "Target": "availableProviderTypes"
-        },
+      { 
+        "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+        "ApiChange": "Resource",
+        "ChangedApiName": "identityProviders",
+        "ChangeType": "Addition",
+        "Description": "Added the operation [availableProviderTypes](https://docs.microsoft.com/graph/api/resources/identityprovider-list-availableprovidertypes.md?view=graph-rest-1.0&preserve-view=true) to list the available identity providers available for use in an Azure Active Directory tenant.",
+        "Target": "availableProviderTypes"
+      }
+    ],
+      "Id": "66d29d1a-7dc5-4ca7-84f2-a33b95ead810",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-6-14T08:55:18.080Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Applications"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
@@ -7070,14 +7080,6 @@
           "ChangeType": "Change",
           "Description": "Deprecated [delete](https://docs.microsoft.com/en-us/graph/api/identityprovider-delete?view=graph-rest-beta) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta).",
           "Target": "identityProvider"
-        },
-        {
-          "Id": "9ac5a947-e867-443d-895c-51913752d50a",
-          "ApiChange": "Property",
-          "ChangedApiName": "isBackendCertificateValidationEnabled",
-          "ChangeType": "Addition",
-          "Description": "Added the **isBackendCertificateValidationEnabled** property to the [onPremisesPublishing](https://docs.microsoft.com/en-us/graph/api/resources/onpremisespublishing?view=graph-rest-beta) resource.",
-          "Target": "onPremisesPublishing"
         }
       ],
       "Id": "224526a5-09a4-4895-9b8b-40e8984a4445",
