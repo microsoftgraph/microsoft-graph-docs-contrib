@@ -155,12 +155,12 @@ var credential = new ClientSecretCredential(
     options
 );
 
-// Create a new Microsoft.Graph.HttpProvider using the
-// proxied HttpClientHandler
-var httpProvider = new HttpProvider(handler, true);
-
 var scopes = new[] { "https://graph.microsoft.com/.default" };
-var graphClient = new GraphServiceClient(credential, scopes, httpProvider);
+
+// This example works with Microsoft.Graph 4+
+var httpClient = GraphClientFactory.Create(new TokenCredentialAuthProvider(credential, scopes), proxy: new WebProxy(new Uri(proxyAddress)));
+
+GraphServiceClient graphClient = new(httpClient);
 ```
 
 ## [TypeScript](#tab/typeScript)
