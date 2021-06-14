@@ -321,7 +321,7 @@ HTTP/1.1 204 No Content
 
 ### Example 5: Notify the channel members about pending finance approval requests
 
-This example shows how you can send an activity feed notification to all channel members. This example is similar to the previous example. However, in this case, the ``recipient`` is a [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
+This example shows how you can send an activity feed notification to all channel members. This example is similar to the previous example. However, in this case, the `recipient` is a [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Note that the `teamId` specified in the `recipient` must match the `teamId` specified in the request URL.
 
 #### Request
 <!-- {
