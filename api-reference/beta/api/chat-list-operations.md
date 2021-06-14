@@ -36,7 +36,7 @@ GET /chats/{chat-id}/operations
 
 ## Optional query parameters
 
-This method supports the `$filter`, `$select`, `$top` and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, `$top`, and `$skip` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -54,9 +54,7 @@ If successful, this returns a `200 OK` response code and a collection of [Teams 
 
 ## Examples
 
-### Example 1: List operations on a chat
-
-#### Request
+### Request
 <!-- {
   "blockType": "request",
   "name": "list_chat_operations"
@@ -68,7 +66,7 @@ GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@t
 
 ---
 
-#### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

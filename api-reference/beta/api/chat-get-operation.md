@@ -54,9 +54,7 @@ If successful, this returns a `200 OK` response code and a [Teams async operatio
 
 ## Examples
 
-### Example 1: Get the specified operation on a chat
-
-#### Request
+### Request
 <!-- {
   "blockType": "request",
   "name": "get_chat_operation"
@@ -68,7 +66,7 @@ GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@t
 
 ---
 
-#### Response
+### Response
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.chat"

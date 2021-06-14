@@ -2980,7 +2980,7 @@
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Description": "Added the **operations** relationship to [chat](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
         }
       ],
