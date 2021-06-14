@@ -22,9 +22,9 @@ When you implement activity feed notifications, keep the following points in min
 * Provide appropriate titles and descriptions for your **Activity Types**. Use short titles, such as **@mention** and **Announcements**. Avoid long titles, such as **User at-mentioned activity** and **Post creation activity**.
 
   The following image depicts appropriate titles:
-
-  ![appropriate-title-and-description](/concepts/images/notificationsapibestpractice2.png)	
-
+  
+   <img src="~/images/notificationsapibestpractice2.png" alt="appropriate-title-and-description" width="400"/>
+ 
   The following image shows long titles, which are not suggested to use:
 
   ![discard-long-title](/concepts/images/notificationsapibestpractice3.PNG)
