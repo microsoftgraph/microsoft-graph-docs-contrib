@@ -4,14 +4,14 @@
       "ChangeList": [
       { 
         "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
-        "ApiChange": "Resource",
-        "ChangedApiName": "identityProviders",
+        "ApiChange": "Property",
+        "ChangedApiName": "isBackendCertificateValidationEnabled",
         "ChangeType": "Addition",
-        "Description": "Added the operation [availableProviderTypes](https://docs.microsoft.com/graph/api/resources/identityprovider-list-availableprovidertypes.md?view=graph-rest-1.0&preserve-view=true) to list the available identity providers available for use in an Azure Active Directory tenant.",
-        "Target": "availableProviderTypes"
+        "Description": "Added the **isBackendCertificateValidationEnabled** property to the [onPremisesPublishing](https://docs.microsoft.com/en-us/graph/api/resources/onpremisespublishing?view=graph-rest-beta) resource.",
+        "Target": "onPremisesPublishing"
       }
     ],
-      "Id": "66d29d1a-7dc5-4ca7-84f2-a33b95ead810",
+      "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-6-14T08:55:18.080Z",
