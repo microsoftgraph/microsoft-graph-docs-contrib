@@ -49,7 +49,7 @@ The following table lists the properties that are required to create a chat obje
 |topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
 |members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every single user, including the user initiating the create request, who will participate in the chat must be specified in this list.|
-|installedApps|(Optional) [teamsApp](../resources/teamsapp.md) collection|List of apps that should be installed in the chat.|
+|installedApps| [teamsApp](../resources/teamsapp.md) collection|List of apps that should be installed in the chat.|
 
 > **Note:** Currently, only one app installation is supported. If multiple app installations are listed in the request, the response will be a `Bad Request` error.
 

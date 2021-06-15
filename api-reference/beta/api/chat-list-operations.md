@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@t
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chat"
+  "@odata.type": "Collection(microsoft.graph.teamsasyncoperation)"
 }
 -->
 ``` http
