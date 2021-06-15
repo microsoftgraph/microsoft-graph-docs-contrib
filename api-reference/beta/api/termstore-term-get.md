@@ -33,6 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /termStore/groups/{groupId}/sets/{setId}/terms/{termId}
 GET /termStore/sets/{setId}/terms/{termId}
+GET /sites/{site-id}/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
+GET /sites/{site-id}/termStore/sets/{setId}/terms/{termId}
 ```
 
 ## Optional query parameters
@@ -52,7 +54,9 @@ If successful, this method returns a `200 OK` response code and a [term](../reso
 
 ## Examples
 
-### Request
+### Example 1: Get a TermStore Term
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,9 +85,46 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets/{setId}/ter
 
 ---
 
+#### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.term"
+} -->
 
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-### Response
+{
+  "id": "81be9856-9856-81be-5698-be815698be81",
+  "createdDateTime": "2019-06-21T20:01:37Z",
+  "labels" : [
+    {
+        "name" : "Copy of myTerm",
+        "languageTag" : "en-US",
+        "isDefault" : true
+    }
+  ],
+  "lastModifiedDateTime": "2019-06-21T20:01:37Z"
+}
+```
+### Example 2 : Get a Site Collection TermStore Term
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_term_1"
+} -->
+
+``` http
+GET https://graph.microsoft.com/beta/sites/{site-id}/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
+```
+
+#### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

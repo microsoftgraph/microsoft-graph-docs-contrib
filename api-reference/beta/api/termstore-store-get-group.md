@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 GET /termStore/groups/{groupId}
+GET /sites/{site-id}/termStore/groups/{groupId}
 ```
 
 ## Request headers
@@ -49,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ## Examples
 
-### Example 1: Get a termStore group
+### Example 1: Get a TermStore Group
 
 #### Request
 
@@ -103,7 +104,7 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
-### Example 2: Get a termStore group and its parent site ID
+### Example 2: Get a TermStore Group and its parent site ID
 
 #### Request
 
@@ -158,6 +159,44 @@ Content-Type: application/json
   "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
   "displayName": "myGroup",
   "parentSiteId": "microsoft.sharepoint.com,05259ba9-25a8-4c93-a9a9-f995ef1fc51f,a785ad58-1d57-4f8a-aa71-77170459bd0d"
+}
+```
+
+### Example 3: Get a Site Collection TermStore Group
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/sites/{site-id}/termStore/groups/{groupId}
+```
+
+#### Response
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.group"
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "createdDateTime": "2019-06-21T20:01:37Z",
+  "description": "My term group",
+  "scope" : "global",
+  "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
+  "displayName": "myGroup",
 }
 ```
 

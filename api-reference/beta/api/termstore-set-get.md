@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ``` http
 GET /termStore/sets/{setId}
+GET /sites/{site-id}/termStore/sets/{setId}
 ```
 
 ## Optional query parameters
@@ -51,7 +52,9 @@ If successful, this method returns a `200 OK` response code and a [set](../resou
 
 ## Examples
 
-### Request
+### Example 1: Get a TermStore Set
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,9 +83,47 @@ GET https://graph.microsoft.com/beta/termStore/sets/{setId}
 
 ---
 
+#### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.set"
+} -->
 
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-### Response
+{
+
+  "createdDateTime": "2019-06-21T20:01:37Z",  
+  "description": "Starting term Set",
+  "id": "8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f",
+  "localizedNames" : [
+    {
+      "languageTag" : "en-US",
+      "name" : "Department"
+    }
+  ]
+}
+```
+
+### Example 2: Get a Site Collection TermStore Set
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_set_2"
+}-->
+
+``` http
+GET https://graph.microsoft.com/beta/sites/{site-id}/termStore/sets/{setId}
+```
+
+#### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
