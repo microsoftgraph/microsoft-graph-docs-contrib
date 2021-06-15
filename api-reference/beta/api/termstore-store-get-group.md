@@ -63,6 +63,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ``` http
 GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
+GET https://graph.microsoft.com/beta/sites/{site-id}/termStore/groups/{groupId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-3-csharp-snippets.md)]

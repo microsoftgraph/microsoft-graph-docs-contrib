@@ -64,6 +64,7 @@ If successful, this method returns a `200 OK` response code and a [set](../resou
 
 ``` http
 GET https://graph.microsoft.com/beta/termStore/sets/{setId}
+GET https://graph.microsoft.com/beta/sites/{site-id}/termStore/sets/{setId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-set-2-csharp-snippets.md)]
