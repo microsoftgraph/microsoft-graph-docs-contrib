@@ -56,7 +56,6 @@ If successful, this method returns a `200 OK` response code and a String collect
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcauditevent_getauditactivitytypes"
