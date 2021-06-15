@@ -66,7 +66,7 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | OneDrive **driveItem**    | 42300 minutes (under 30 days)    |
 | SharePoint **list**    | 42300 minutes (under 30 days)    |
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
-| **user**, **group**, other directory resources   | 4230 minutes (under 3 days)    |
+| **user**, **group**, other directory resources   | 41760 minutes (under 29 days)    |
 | Print **printer** | 4230 minutes (under 3 days)    |
 | Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
 
