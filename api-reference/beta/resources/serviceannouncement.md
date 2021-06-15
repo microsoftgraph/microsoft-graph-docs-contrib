@@ -1,6 +1,6 @@
 ---
 title: "serviceAnnouncement resource type"
-description: "A top level container for service communications resources"
+description: "A top-level container for service communications resources"
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A top level container for service communications resources.
+A top-level container for service communications resources.
 
 ## Methods
 |Method|Return type|Description|
@@ -23,14 +23,14 @@ A top level container for service communications resources.
 |[List messages](../api/serviceannouncement-list-messages.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md) collection|Get the serviceUpdateMessage resources from the **messages** navigation property.|
 
 ## Properties
-This resource type doesn't have properties.
+None.
 
 ## Relationships
-|Property|Type|Description|Contained Navigation Property|Nullable|ReadOnly|
-|-|-|-|-|-|-|
-|messages|Collection([serviceUpdateMessage](serviceupdatemessage.md))|Show a collection of service messages for tenant.|Yes|Yes|Yes|
-|healthOverviews|Collection([serviceHealth](servicehealth.md))|Show a collection of service health information for tenant. |Yes|Yes|Yes|
-|issues|Collection([serviceHealthIssue](servicehealthissue.md))|Show a collection of service issues for tenant.|Yes|Yes|Yes|
+|Property|Type|Description|
+|-|-|-|
+|messages|Collection([serviceUpdateMessage](serviceupdatemessage.md))|A collection of service messages for tenant. This property is a contained navigation property, it is nullable and readonly.|
+|healthOverviews|Collection([serviceHealth](servicehealth.md))|A collection of service health information for tenant. This property is a contained navigation property, it is nullable and readonly.|
+|issues|Collection([serviceHealthIssue](servicehealthissue.md))|A collection of service issues for tenant. This property is a contained navigation property, it is nullable and readonly.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

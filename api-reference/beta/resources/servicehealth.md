@@ -1,6 +1,6 @@
 ---
 title: "serviceHealth resource type"
-description: "Represent the health information of a service."
+description: "Represents the health information of a service."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the health information of a service.
+Represents the health information of a service.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get serviceHealth](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object. This operation provides the health information of a specified service for a tenant.|
+|[Get serviceHealth](../api/servicehealth-get.md)|[serviceHealth](../resources/servicehealth.md)|Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -30,7 +30,7 @@ Represent the health information of a service.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|issues|Collection([serviceHealthIssue](../resources/servicehealthissue.md))|Show a collection is issues happened on the service, with detailed information for each issue.|
+|issues|Collection([serviceHealthIssue](../resources/servicehealthissue.md))|A collection of issues happened on the service, with detailed information for each issue.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

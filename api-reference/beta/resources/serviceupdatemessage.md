@@ -1,6 +1,6 @@
 ---
 title: "serviceUpdateMessage resource type"
-description: "Represent the announcements of changes in a service."
+description: "Represents the announcements of changes in a service."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the announcements of changes in a service.
+Represents the announcements about changes in a service.
 
-This resource type serves to important publications such as major updates in a product. For example, the publication of a new Windows feature.
+This resource type announces important publications such as major updates in a product. For example, the publication of a new Windows feature.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Retrieve the properties and relationships of a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object. This operation retrieves a specified service update message for the tenant. The operation returns an error if the message does not exist for the tenant.|
-|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|Mark a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s as **read** for the signed in user|
+|[Get serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Retrieve the properties and relationships of a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object. |
+|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|Mark a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s as **read** for the signed in user.|
 |[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|Mark a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s as **unread** for the signed in user.|
-|[archive](../api/serviceupdatemessage-archive.md)|Boolean|Archive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the login user.|
+|[archive](../api/serviceupdatemessage-archive.md)|Boolean|Archive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
 |[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
 |[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|Change the status of a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s to favorite for the signed in user.|
 |[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|Remove the favorite status of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
@@ -47,7 +47,7 @@ This resource type serves to important publications such as major updates in a p
 |viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Represents user view points data of the service message.|
 
 ## Relationships
-This resource type doesn't have relationships.
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.

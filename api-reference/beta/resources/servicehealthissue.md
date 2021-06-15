@@ -1,6 +1,6 @@
 ---
 title: "serviceHealthIssue resource type"
-description: "Represent a service health issue in a service."
+description: "Represents a service health issue in a service."
 author: "payiAzure"
 localization_priority: Normal
 ms.prod: "service communications"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a [service health issue](../resources/servicehealthissue.md) in a service.
+Represents a service health issue in a service.
 
-The service health issue could be a service incident or service advisory. For example:
+The service health issue can be a service incident or service advisory. For example:
 
 * Service incident: "Exchange mailbox service is down".
 * Service advisory: "Users may experience delays in emails reception".
@@ -23,8 +23,8 @@ The service health issue could be a service incident or service advisory. For ex
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get serviceHealthIssue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Retrieve the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object. This operation retrieves a specified service health issue for tenant. The operation returns an error if the issue does not exist for the tenant.|
-|[Get post-incident review report](../api/servicehealthissue-incidentreport.md)|Stream|Provides the post incident report (PIR) document of a specified service issue for tenant. The operation returns an error if the specified issue doesn't exist for the tenant.|
+|[Get serviceHealthIssue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Retrieve the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object. |
+|[Get post-incident review report](../api/servicehealthissue-incidentreport.md)|Stream|Provides the post incident report (PIR) document of a specified service issue for tenant. |
 
 ## Properties
 |Property|Type|Description|
@@ -46,7 +46,7 @@ The service health issue could be a service incident or service advisory. For ex
 |title|String|The title of the service issue.|
 
 ## Relationships
-This resource type doesn't have relationships.
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
