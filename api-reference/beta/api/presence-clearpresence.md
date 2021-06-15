@@ -1,5 +1,5 @@
 ---
-title: "Clear presence"
+title: "Presence: clearPresence"
 description: "Clear the presence information for a user's application presence session."
 author: "jsandoval-msft"
 localization_priority: Normal
@@ -7,14 +7,14 @@ doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---
 
-# Clear presence
+# Presence: clearPresence
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]
-> Please refer to [Set presence - concept: presence sessions](presence-set.md#concept-presence-sessions) for the concept of presence sessions.
+> Please refer to [Presence: setPresence - concept: presence sessions](presence-setpresence.md#concept-presence-sessions) for the concept of presence sessions.
 
 The application can clear its presence session. If a user's only presence session (all sessions from Teams clients and applications adding together) gets cleared, the user's presence will change to `Offline/Offline`.
 

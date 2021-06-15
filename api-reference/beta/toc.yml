@@ -1454,9 +1454,9 @@ items:
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
         - name: Set presence
-          href: api/presence-set.md
+          href: api/presence-setpresence.md
         - name: Clear presence
-          href: api/presence-clear.md
+          href: api/presence-clearpresence.md
     - name: Compliance (preview)
       displayName: Compliance API, Microsoft Graph Compliance API
       items:

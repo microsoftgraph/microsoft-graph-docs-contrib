@@ -1,5 +1,5 @@
 ---
-title: "Set presence"
+title: "Presence: setPresence"
 description: "Set the presence information for a user's application presence session."
 author: "jsandoval-msft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---
 
-# Set presence
+# Presence: setPresence
 
 Namespace: microsoft.graph
 
