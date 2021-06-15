@@ -13,6 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+The default behavior of Update event is to send only to modified attendees if the attendee list is the only thing that changed. 
+
+**Note:** This requires clients to send only those parameters in the request that were actually updated, rather than sending all properties each time in the `PATCH`.
+
+**When Distribution List (DL) is part of attendee list**
+
+When a client tries to submit a `PATCH` request to add or remove an attendee from a Distribution List, the service notifies to all attendees.
+
 Update the properties of the [event](../resources/event.md) object.
 
 When updating the time zone of the start or end time of an event, first [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
@@ -64,6 +72,7 @@ In the request body, supply the values for relevant fields that should be update
 | isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 | location|Location|The location of the event.|
 |locations|[Location](../resources/location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
+|onlineMeeting|onlineMeetingInfo| When modifying the meeting body for an online meeting, the client must first fetch the meeting body and then apply the changes. Since the meeting body contains a meeting blob for an online meeting. If the blob is missing during the meeting body update, the service would assume that the meeting is no longer online and then downgrades the meeting to an offline meeting.|
 |onlineMeetingProvider|onlineMeetingProviderType| Represents the online meeting service provider. The possible values are `teamsForBusiness`, `skypeForBusiness`, and `skypeForConsumer`. Optional. |
 | recurrence|PatternedRecurrence|The recurrence pattern for the event.|
 | reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
