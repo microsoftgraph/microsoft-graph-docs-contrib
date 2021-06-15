@@ -22,8 +22,13 @@ doc_type: "resourcePageType"
 | isRequestorJustificationRequired | Boolean | Whether a requestor must supply justification when submitting an assignment request. |
 | isCustomAssignmentScheduleAllowed | Boolean | Whether the requestor is allowed to set a custom schedule. |
 | schedule | [requestSchedule](../resources/requestschedule.md) | Schedule restrictions that are enforced, if any; `null` if none. |
-| questions | accessPackageQuestion collection | Questions that are configured on the policy, required or optional; callers can determine if a question is required or optional based on the **isRequired** property on accessPackageQuestion. `null` if no questions are configured. |
-| existingAnswers | accessPackageQuestion collection | Answers that have already been provided. |
+| questions | [accessPackageQuestion](../resources/accesspackagequestion.md) collection | Questions that are configured on the policy, required or optional; callers can determine if a question is required or optional based on the **isRequired** property on accessPackageQuestion. `null` if no questions are configured. |
+| existingAnswers | [requestSchedule](../resources/requestschedule.md) | Answers that have already been provided. |
+
+## Relationships
+None.
+
+
 
 ## JSON representation
 
