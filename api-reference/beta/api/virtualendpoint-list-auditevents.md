@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects.
+List all the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects for the tenant.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -60,7 +60,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -78,7 +77,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvent
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcAuditEvent)"
+  "@odata.type": "microsoft.graph.cloudPcAuditEvent",
+  "isCollection": true
 }
 -->
 

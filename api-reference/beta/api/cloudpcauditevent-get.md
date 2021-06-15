@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPcAuditEvent"
-description: "Read the properties and relationships of the cloudPcAuditEvent object."
+description: "Read the properties and relationships of a cloudPcAuditEvent object."
 author: "ecmadao"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.
+Read the properties and relationships of a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 

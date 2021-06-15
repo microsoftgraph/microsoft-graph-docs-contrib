@@ -1,6 +1,6 @@
 ---
 title: "cloudPcAuditActor resource type"
-description: "Represents the audit actor. The actor is AAD user and application that are associated with the audit event."
+description: "The audit actor represented by the Azure AD user and application associated with the audit event."
 author: "ecmadao"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the audit actor. The actor is AAD user and application that are associated with the audit event.
+The audit actor represented by the Azure AD user and application associated with the audit event.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -21,14 +21,14 @@ Represents the audit actor. The actor is AAD user and application that are a
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actorType|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include ItPro, Application, Partner and Unknown.|
+|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include ItPro, Application, Partner and Unknown.|
 |userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
-|applicationId|String|AAD Application Id.|
+|applicationId|String|Azure AD Application Id.|
 |applicationDisplayName|String|Name of the Application.|
 |userPrincipalName|String|User Principal Name (UPN).|
 |servicePrincipalName|String|Service Principal Name (SPN).|
 |ipAddress|String|IP Address.|
-|userId|String|AAD User id.|
+|userId|String|Azure AD User id.|
 |userRoleScopeTags|[cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md) collection|List of role scope tags.|
 |remoteTenantId|String|The delegated partner tenant id.|
 |remoteUserId|String|The delegated partner user id.|
