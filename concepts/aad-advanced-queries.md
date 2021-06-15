@@ -10,11 +10,11 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects and their properties. For example, the addition of **Not** (`NOT`), **Not equals** (`ne`), and **Ends with** (`endsWith`) operators on the `$filter` query parameter in October 2020.
 
-The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate server. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must also set the **ConsistencyLevel** header with the value `eventual` *and*, with the exception of `$search`, use the `$count` query parameter (either as a [URL segment](/graph/query-parameters#other-odata-url-capabilities) or `$count=true` query string). The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
+The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate server. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must also set the **ConsistencyLevel** header set to `eventual` *and*, with the exception of `$search`, use the `$count` query parameter (either as a [URL segment](/graph/query-parameters#other-odata-url-capabilities) or `$count=true` query string). The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
 For example, if you wish to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
-1. Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
++ Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
 
 <!-- {
   "blockType": "ignored",
@@ -24,7 +24,7 @@ For example, if you wish to retrieve only inactive user accounts, you can run ei
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 ```
 
-2. Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header with the value `eventual` *and* use the `$count=true` query string.
++ Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
 
 <!-- {
   "blockType": "ignored",
@@ -108,35 +108,6 @@ https://graph.microsoft.com/v1.0/users/$count
 }
 ```
 
-```http
-https://graph.microsoft.com/v1.0/users?$count=true
-```
-
-**Note:** `@odata.count` parameter is missing even if the query is successful.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
-  "value":[
-    {
-      "displayName":"Oscar Ward",
-      "mail":"oscarward@contoso.com",
-      "userPrincipalName":"oscarward@contoso.com"
-    },
-  ]
-}
-```
-
 `$search` on Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject) works only in advanced queries. If the **ConsistencyLevel** header is not specified, the request returns an error.
 
 ```http
@@ -195,6 +166,28 @@ ConsistencyLevel: eventual
             "client-request-id": "76fe4cd8-df3a-f8c3-659b-594274b6bb31"
         }
     }
+}
+```
+
+However, it is important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. For example, in the following example, the `@odata.count` parameter is missing even if the query is successful.
+
+```http
+https://graph.microsoft.com/v1.0/users?$count=true
+```
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "value":[
+    {
+      "displayName":"Oscar Ward",
+      "mail":"oscarward@contoso.com",
+      "userPrincipalName":"oscarward@contoso.com"
+    },
+  ]
 }
 ```
 
