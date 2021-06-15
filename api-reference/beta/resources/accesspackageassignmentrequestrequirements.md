@@ -1,5 +1,5 @@
 ---
-title: "accessPackageAssignmentRequestRequirements"
+title: "accessPackageAssignmentRequestRequirements resource type"
 description: "The accessPackageAssignmentRequestRequirements type identifies the requirements necessary to request the specified access package."
 localization_priority: Normal
 author: "markwahl-msft"
