@@ -59,9 +59,7 @@ The activity feed notifications land in the activity feed and can include links 
 * Allow the user to take action or triage the notification.
 * Lead the user to a tab in a chat or channel, a personal app, or a chat or channel message. 
 
-These notifications address users, not channels, unless the nofication includes a mention to a channel. 
-
-The activity feed notifications API allows users to configure notifications for each **Notification type** from the app. The capability to configure, allows the user to customize a notification. 
+The activity feed notifications API allows users to configure notifications for each **Notification type** from notification settings.
 
 Users could receive double notifications from the app. The app can send bot notifications to chats or channels and also to activity feed notifications API. *Send double notifications only if the scenario requires you to send them.* 
 
