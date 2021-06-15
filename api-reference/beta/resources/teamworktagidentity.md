@@ -1,6 +1,6 @@
 ---
 title: "teamworkTagIdentity resource type"
-description: "Represents a tag in Microsoft Teams"
+description: "Represents a tag in Microsoft Teams."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

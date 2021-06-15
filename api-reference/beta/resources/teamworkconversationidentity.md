@@ -1,6 +1,6 @@
 ---
 title: "teamworkConversationIdentity resource type"
-description: "Represents a conversation in Microsoft Teams"
+description: "Represents a conversation in Microsoft Teams."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -20,8 +20,8 @@ Inherits from [identity](../resources/identity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|conversationIdentityType|teamworkConversationIdentityType|Type of conversation. Possible values are: `team`, `channel`, `chat`.|
-|displayName|String|Inherited from [identity](../resources/identity.md). Optional display name of the conversation.|
+|conversationIdentityType|teamworkConversationIdentityType|Type of conversation. Possible values are: `team`, `channel`, and `chat`.|
+|displayName|String|Inherited from [identity](../resources/identity.md). Display name of the conversation. Optional.|
 |id|String|Inherited from [identity](../resources/identity.md). Id of the user.|
 
 ## Relationships

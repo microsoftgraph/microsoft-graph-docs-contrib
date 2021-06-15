@@ -1,6 +1,6 @@
 ---
 title: "teamworkUserIdentity resource type"
-description: "Represents a user in Microsoft Teams"
+description: "Represents a user in Microsoft Teams."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user in Microsoft Teams. The object contains user's Id, optional name and the type of user it is.
+Represents a user in Microsoft Teams.
 
 
 Inherits from [identity](../resources/identity.md).
@@ -21,9 +21,9 @@ Inherits from [identity](../resources/identity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Inherited from [identity](../resources/identity.md). Optional display name of the user.|
+|displayName|String|Inherited from [identity](../resources/identity.md). Display name of the user. Optional.|
 |id|String|Inherited from [identity](../resources/identity.md). Id of the user. |
-|userIdentityType|teamworkUserIdentityType| Type of user. Possible values are: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`.|
+|userIdentityType|teamworkUserIdentityType| Type of user. Possible values are: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, and `phoneUser`.|
 
 ## Relationships
 None.
