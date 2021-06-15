@@ -1708,7 +1708,7 @@ items:
         - name: Delete
           href: api/bookingstaffmember-delete.md
     - name: Devices and apps
-      expanded: true
+      expanded: false
       items:
       - name: Cloud printing
         items:
