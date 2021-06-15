@@ -1708,7 +1708,7 @@ items:
         - name: Delete
           href: api/bookingstaffmember-delete.md
     - name: Devices and apps
-      expanded: true
+      expanded: false
       items:
       - name: Cloud printing
         items:
@@ -13195,6 +13195,8 @@ items:
           href: api/itemanalytics-get.md
         - name: Get activities by interval
           href: api/itemactivity-getbyinterval.md
+        - name: Create sharing link
+          href: api/listitem-createlink.md
       - name: Pages
         items:
         - name: Site page
