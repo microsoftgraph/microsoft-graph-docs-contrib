@@ -177,24 +177,6 @@
           "CreatedDateTime":"2021-05-14T17:02:02.734Z",
           "WorkloadArea":"",
           "SubArea":""
-       },
-       {
-          "ChangeList":[
-             {
-                "Id":"1aaec391-b4d6-11eb-986b-33e29fab3358",
-                "ApiChange":"Resource",
-                "ChangedApiName":"itemBody",
-                "ChangeType":"Addition",
-                "Description":"Added the [itemBody](https://docs.microsoft.com/en-us/graph/api/resources/itemBody?view=graph-rest-beta) resource type.",
-                "Target":"itemBody"
-             }
-          ],
-          "Id":"1a9bb15a-b4d6-11eb-986b-33e29fab3358",
-          "Cloud":"prd",
-          "Version":"beta",
-          "CreatedDateTime":"2021-05-14T17:02:02.734Z",
-          "WorkloadArea":"Mail",
-          "SubArea":""
        }
     ]
  }

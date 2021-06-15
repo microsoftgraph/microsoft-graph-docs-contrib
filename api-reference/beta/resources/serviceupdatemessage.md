@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the announcements about changes in a service.
 
-This resource type announces important publications such as major updates in a product. For example, the publication of a new Windows feature.
+Represents announcements such as major updates, new features in a product; for example, the publication of a new Windows feature.
 
 ## Methods
 |Method|Return type|Description|
