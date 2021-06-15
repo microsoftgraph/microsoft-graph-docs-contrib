@@ -36,18 +36,27 @@ None.
 
 The following is a JSON representation of the type.
 
-```json
-{ 
-    "value": [ 
-        { 
-            "policyDisplayName": "string", 
-            "policyDescription": "string",
-            "policyId": "Edm.String",  
-            "isApprovalRequired": false, 
-            "isApprovalRequiredForExtension": false, 
-            "isRequestorJustificationRequired": false,
-            "isCustomAssignmentScheduleAllowed": [],
-        } 
-    ] 
-} 
-```
+``` json
+{
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestRequirements",
+  "policyId": "String",
+  "policyDisplayName": "String",
+  "policyDescription": "String",
+  "isApprovalRequired": false,
+  "isApprovalRequiredForExtension": false,
+  "isCustomAssignmentScheduleAllowed": false,
+  "isRequestorJustificationRequired": false,
+  "schedule": {
+    "@odata.type": "microsoft.graph.requestSchedule"
+  },
+  "questions": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageMultipleChoiceQuestion"
+    }
+  ],
+  "existingAnswers": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageAnswerString"
+    }
+  ]
+}
