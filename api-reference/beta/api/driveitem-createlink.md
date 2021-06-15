@@ -65,14 +65,14 @@ The following values are allowed for the **type** parameter.
 
 | Type value | Description                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| view           | Creates a read-only link to the driveItem.                                                                        |
-| review         | Creates a review link to the driveItem. This option is only available for files in OneDrive for Business and SharePoint.                   |
-| edit           | Creates an read-write link to the driveItem.                                                                       |
-| embed          | Creates an embeddable link to the driveItem.                                                                      |
-| blocksDownload | Creates a read-only link that blocks download to the driveItem. This option is only available for files in OneDrive for Business and SharePoint.  |
-| createOnly     | Creates an upload-only link to the driveItem. This option is only available for folders in OneDrive for Business and SharePoint.             |
+| view           | Creates a read-only link to the **driveItem**.                                                                        |
+| review         | Creates a review link to the **driveItem**. This option is only available for files in OneDrive for Business and SharePoint.                   |
+| edit           | Creates an read-write link to the **driveItem**.                                                                       |
+| embed          | Creates an embeddable link to the **driveItem**.                                                                      |
+| blocksDownload | Creates a read-only link that blocks download to the **driveItem**. This option is only available for files in OneDrive for Business and SharePoint.  |
+| createOnly     | Creates an upload-only link to the **driveItem**. This option is only available for folders in OneDrive for Business and SharePoint.             |
 | addressBar     | Creates the default link that is shown in the browser address bars for newly created files. Only available in OneDrive for Business and SharePoint. The organization admin configures whether this link type is supported, and what features are supported by this link type. |
-| adminDefault   | Creates the default link to the driveItem as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
+| adminDefault   | Creates the default link to the **driveItem** as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
 
 ### Scope types
 
@@ -88,12 +88,12 @@ The following values are allowed for the **scope** parameter.
 
 If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
 
-The response will be `201 Created` if a new sharing link is created for the driveItem or `200 OK` if an existing link is returned.
+The response will be `201 Created` if a new sharing link is created for the **driveItem** or `200 OK` if an existing link is returned.
 
 ## Examples
 
 ### Example 1: Create an anonymous sharing link
-The following example requests a sharing link to be created for the driveItem specified by {itemId} in the user's OneDrive.
+The following example requests a sharing link to be created for the **driveItem** specified by {itemId} in the user's OneDrive.
 The sharing link is configured to be read-only and usable by anyone with the link.
 
 #### Request
@@ -302,10 +302,10 @@ Content-Type: application/json
 
 ## Remarks
 
-* To create a link based on the organization's default policy and the caller's permissions on the driveItem, omit the scope and type parameters
+* To create a link based on the organization's default policy and the caller's permissions on the **driveItem**, omit the scope and type parameters
 * Links created using this action do not expire unless a default expiration policy is enforced for the organization.
-* Links are visible in the sharing permissions for the driveItem and can be removed by an owner of the driveItem.
-* Links always point to the current version of a driveItem unless the driveItem is checked out (SharePoint only).
+* Links are visible in the sharing permissions for the **driveItem** and can be removed by an owner of the **driveItem**.
+* Links always point to the current version of a **driveItem** unless the **driveItem** is checked out (SharePoint only).
 
 <!--
 {
