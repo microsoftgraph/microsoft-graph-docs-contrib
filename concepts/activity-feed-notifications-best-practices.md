@@ -15,7 +15,7 @@ This article covers best practices for using Microsoft Teams activity feed notif
 
 The following image depicts the activity feed notification:
 
-    ![activity-feed-notification](/concepts/images/activityfeednotification.PNG)
+   ![activity-feed-notification](/concepts/images/activityfeednotification.PNG)
 
 When you implement activity feed notifications, keep the following points in mind:
 * Toast notifications redirect users to the activity feed, not to the app. To see another activity, users must select the associated notification in the activity feed.
@@ -27,11 +27,11 @@ When you implement activity feed notifications, keep the following points in min
 
   The following image depicts appropriate titles:
   
-      <img src="/images/notificationsapibestpractice2.png" alt="appropriate-title-and-description" width="400"/>
+    <img src="/images/notificationsapibestpractice2.png" alt="appropriate-title-and-description" width="400"/>
  
   The following image depicts long titles, which are not suggested to use:
 
-      ![discard-long-title](/concepts/images/notificationsapibestpractice3.PNG)
+    ![discard-long-title](/concepts/images/notificationsapibestpractice3.PNG)
 
 * Notifications should convey important information for the user. For example, Lynne mentioned you in a conversation.
 * Avoid sending notifications that are promotional in nature. For example, Try the new feature in the Cycling app!
