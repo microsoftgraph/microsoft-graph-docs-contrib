@@ -1,7 +1,7 @@
 ---
 title: "Advanced query capabilities on Azure AD directory objects"
 description: "Azure AD directory objects support advanced query capabilities on $filter and $search OData query parameters."
-author: "FaithOmbongi"
+author: "Licantrop0"
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
