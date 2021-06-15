@@ -7,7 +7,7 @@
           "ApiChange": "api",
           "ChangedApiName": "getApplicablePolicyRequirements",
           "ChangeType": "Addition",
-          "Description": "Added the [getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md) the [accessPackage][../resources/accesspackage.md] resource.",
+          "Description": "Added the [getApplicablePolicyRequirements](https://docs.microsoft.com/en-us/graph/api/accesspackage-getapplicablepolicyrequirements.md) action to the [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-beta) resource.",
           "Target": "accesspackage"
         },
         {
