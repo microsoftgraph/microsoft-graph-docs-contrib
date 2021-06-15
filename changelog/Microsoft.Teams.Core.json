@@ -54,6 +54,42 @@
     {
       "ChangeList": [
         {
+          "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for change notifications to the [channel](https://docs.microsoft.com/graph/api/resources/channel) resource.",
+          "Target": "channel"
+        },
+			
+			 {
+          "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for change notifications to the [team](https://docs.microsoft.com/graph/api/resources/team) resource.",
+          "Target": "team"
+        },
+			
+			 {
+          "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for change notifications to the [conversationMember](https://docs.microsoft.com/graph/api/resources/conversationMember) resource.",
+          "Target": "team"
+        }   
+      ],
+      "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-14T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "21dfc156-d5cf-4f5c-bdb0-84a982e9d54e",
           "ApiChange": "Method",
           "ChangedApiName": "chat",
@@ -2944,6 +2980,24 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-10-01T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c8f40d13-d504-436c-a7ad-ef4b5a70eb3b",
+          "ApiChange": "Property",
+          "ChangedApiName": "webUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **webUrl** property to [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "c8f40d13-d504-436c-a7ad-ef4b5a70eb3b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-10T19:04:47.5265838Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
