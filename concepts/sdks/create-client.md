@@ -28,7 +28,6 @@ GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
 
 /**
 * Create an authProvider to authenticate againt the Microsoft Graph API.
