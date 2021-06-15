@@ -66,7 +66,6 @@ If successful, this method returns a `200 OK` response code and a [term](../reso
 
 ``` http
 GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
-GET https://graph.microsoft.com/beta/sites/{site-id}/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-term-1-csharp-snippets.md)]

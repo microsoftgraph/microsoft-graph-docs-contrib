@@ -58,7 +58,6 @@ If successful, this method returns a `200 OK` response code and a [store](../res
 
 ``` http
 GET https://graph.microsoft.com/beta/termStore
-GET https://graph.microsoft.com/beta/sites/{site-id}/termStore
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-store-csharp-snippets.md)]
