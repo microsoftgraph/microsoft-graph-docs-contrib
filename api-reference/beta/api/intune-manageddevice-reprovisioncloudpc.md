@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reprovision a Cloud PC with Intune managed device id in [managedDevice](../resources/intune-manageddevice.md).
+Reprovision a cloud PC with Intune managed device id in [managedDevice](../resources/intune-manageddevice.md).
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /deviceManagement/managedDevices/{id}/reprovisionCloudPc
+POST /deviceManagement/managedDevices/{managedDeviceId}/reprovisionCloudPc
 ```
 
 ## Request headers
@@ -56,8 +56,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "managedDevice_reprovisionCloudPc"
@@ -65,12 +63,11 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{id}/reprovisionCloudPc
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/reprovisionCloudPc
 ```
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

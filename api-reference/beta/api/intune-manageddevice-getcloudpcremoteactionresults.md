@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: getCloudPcRemoteActionResults"
-description: "Check the all cloud PC specificed reomote action status for a cloud PC device."
+description: "Check the cloud PC-specified remote action status for a cloud PC device."
 author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check the cloud PC specificed remote action results [cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) for a cloud PC device. Now cloud PC supports reprovision and resize remote actions.
+Check the [cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a cloud PC device. Now cloud PC supports reprovision and resize remote actions.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /deviceManagement/managedDevices/{id}/getCloudPcRemoteActionResults
+GET /deviceManagement/managedDevices/{managedDeviceId}/getCloudPcRemoteActionResults
 ```
 
 ## Request headers
@@ -56,8 +56,6 @@ If successful, this method returns a `200 OK` response code and a [cloudPcRemote
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "managedDevice_getCloudPcRemoteActionResults"
@@ -70,7 +68,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

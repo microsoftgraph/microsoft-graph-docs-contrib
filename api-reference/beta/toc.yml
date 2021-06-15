@@ -9523,7 +9523,7 @@ items:
         - name: Cloud PC
           href: resources/cloudpc.md
           items:
-          - name: managed Device
+          - name: Managed device
             href: resources/intune-manageddevice.md
           - name: List
             href: api/virtualendpoint-list-cloudpcs.md

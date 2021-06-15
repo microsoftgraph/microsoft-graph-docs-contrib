@@ -37,7 +37,7 @@ Represents a cloud-managed virtual desktop.
 |provisioningPolicyId|String|The cloud PC's provisioning policy ID.|
 |servicePlanId|String|The cloud PC's service plan ID.|
 |servicePlanName|String|The cloud PC's service plan name.|
-|status|[cloudPcStatus](#cloudpcstatus-values)|Status of the cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
+|status|[cloudPcStatus](#cloudpcstatus-values)|Status of the cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `unknownFutureValue`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the cloud PC status.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the cloud PC.|
 |lastModifiedDateTime|DateTimeOffset|The cloud PC's last modified date and time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
@@ -52,8 +52,8 @@ Represents a cloud-managed virtual desktop.
 |inGracePeriod|The Cloud PC is in the one week grace period before it’s deprovisioned.|
 |deprovisioning|The Cloud PC is deprovisioning.|
 |failed|The operation on Cloud PC has failed.|
-|provisionedWithWarnings|The Cloud PC is provisioned and can be accessed by end users but with some warnings. User may continue to use this cloud PC.|
-|resizing|The Cloud PC is resizing.|
+|provisionedWithWarnings|The cloud PC is provisioned and can be accessed by end users but with some warnings. User may continue to use this cloud PC.|
+|resizing|The cloud PC is resizing.|
 |unknownFutureValue|Unknown future status (Reserved, not used right now).|
 
 ## Relationships

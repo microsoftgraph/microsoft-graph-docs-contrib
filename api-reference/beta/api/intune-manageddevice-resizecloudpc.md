@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: resizeCloudPc"
-description: "Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size."
+description: "Upgrade or downgrade an existing cloud PC to another configuration with a new virtual CPU (vCPU) and storage size."
 author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size.
+Upgrade or downgrade an existing cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /deviceManagement/managedDevices/{id}/resizeCloudPc
+POST /deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
 ```
 
 ## Request headers
@@ -56,8 +56,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "managedDevice_resizeCloudPc"
@@ -65,12 +63,11 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{id}/resizeCloudPc
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
 ```
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
