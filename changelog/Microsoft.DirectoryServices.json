@@ -7,15 +7,15 @@
           "ApiChange": "api",
           "ChangedApiName": "getApplicablePolicyRequirements",
           "ChangeType": "Addition",
-          "Description": "Added the getApplicablePolicyRequirements operation.",
-          "Target": "getApplicablePolicyRequirements"
+          "Description": "Added the [getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md) the [accessPackage][../resources/accesspackage.md] resource.",
+          "Target": "accesspackage"
         },
         {
           "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAssignmentRequestRequirements",
           "ChangeType": "Addition",
-          "Description": "Added the accessPackageAssignmentRequestRequirements complex type.",
+          "Description": "Added the [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) complex type.",
           "Target": "accessPackageAssignmentRequestRequirements"
         }
       ],

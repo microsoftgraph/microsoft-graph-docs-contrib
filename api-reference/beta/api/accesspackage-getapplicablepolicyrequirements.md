@@ -2,7 +2,7 @@
 title: "accessPackage: getApplicablePolicyRequirements"
 description: "Allows callers to find requirements to request an assignment for a specific accessPackage."
 localization_priority: Normal
-author: "ajburnle"
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
@@ -45,9 +45,7 @@ Parameter|Type|Description|
 None
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|||
+None
 
 ## Request body
 Do not supply a request body for this method.
@@ -94,4 +92,4 @@ Content-Type: application/json
         }
     ]
 }
-```
+``` 
