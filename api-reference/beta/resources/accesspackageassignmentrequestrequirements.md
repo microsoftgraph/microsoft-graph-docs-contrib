@@ -12,12 +12,6 @@ doc_type: "resourcePageType"
 **accessPackageAssignmentRequestRequirements** are requirements that a caller must fulfill in order to successfully create an accessPackageAssignmentRequest for the accessPackage specified as part of the URL. Requirements are determined by evaluating policies associated with the **accessPackage**. 
 
 ## Properties
-
-This type has the following properties:
-
-> [!NOTE]
-> All properties are not-required and effectively read-only because we have no API for a caller to create/modify one of these objects.
-
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | policyDisplayName | String | The display name of the policy that the user is trying to request access using. |
