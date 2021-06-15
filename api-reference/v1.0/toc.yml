@@ -4048,6 +4048,18 @@ items:
           href: api/educationclass-post-members.md
         - name: Remove member
           href: api/educationclass-delete-members.md
+        - name: List class assignments
+          href: api/educationclass-list-assignments.md
+        - name: Create assignment
+          href: api/educationclass-post-assignment.md
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
+        - name: Get assignment defaults
+          href: api/educationassignmentdefaults-get.md
+        - name: List categories
+          href: api/educationclass-list-categories.md
+        - name: Create category
+          href: api/educationclass-post-category.md
       - name: Users
         href: resources/educationuser.md
         items:
@@ -4059,12 +4071,128 @@ items:
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+        - name: Get directory user
+          href: api/educationuser-get-user.md
         - name: Get changes to users
           href: api/educationuser-delta.md
         - name: List classes
           href: api/educationuser-list-classes.md
+        - name: List rubrics
+          href: api/educationuser-list-rubrics.md
         - name: List taught classes
           href: api/educationuser-list-taughtclasses.md
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
+      - name: Assignment
+        href: resources/educationassignment.md
+        items:
+        - name: Create assignment
+          href: api/educationclass-post-assignment.md
+        - name: Get assignment
+          href: api/educationassignment-get.md
+        - name: Update assignment
+          href: api/educationassignment-update.md
+        - name: Delete assignment
+          href: api/educationassignment-delete.md
+        - name: Set up assignment resources folder
+          href: api/educationassignment-setupresourcesfolder.md
+        - name: Publish assignment
+          href: api/educationassignment-publish.md
+        - name: List assignment resources
+          href: api/educationassignment-list-resources.md
+        - name: Create assignment resource
+          href: api/educationassignment-post-resource.md
+        - name: Get assignment resource
+          href: api/educationassignmentresource-get.md
+        - name: Delete resource from assignment
+          href: api/educationassignmentresource-delete.md
+        - name: List submissions for assignment
+          href: api/educationassignment-list-submissions.md
+        - name: Get rubric attached to assignment
+          href: api/educationassignment-get-rubric.md
+        - name: List categories
+          href: api/educationassignment-list-categories.md
+        - name: Add category
+          href: api/educationassignment-post-categories.md
+        - name: Remove category
+          href: api/educationassignment-remove-category.md
+        - name: Attach rubric to assignment
+          href: api/educationassignment-put-rubric.md
+        - name: Remove rubric from assignment
+          href: api/educationassignment-delete-rubric.md
+      - name: Assignment settings
+        href: resources/educationassignmentsettings.md
+        items:
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
+        - name: Update assignment settings
+          href: api/educationassignmentsettings-update.md
+      - name: Assignment defaults
+        href: resources/educationassignmentdefaults.md
+        items:
+        - name: Get assignment defaults
+          href: api/educationassignmentdefaults-get.md
+        - name: Update assignment defaults
+          href: api/educationassignmentdefaults-update.md
+      - name: Category
+        href: resources/educationcategory.md
+        items:
+        - name: Create category
+          href: api/educationclass-post-category.md
+        - name: Get category
+          href: api/educationcategory-get.md
+        - name: Delete category
+          href: api/educationcategory-delete.md
+      - name: Rubric
+        href: resources/educationrubric.md
+        items:
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
+        - name: Get rubric
+          href: api/educationrubric-get.md
+        - name: Update rubric
+          href: api/educationrubric-update.md
+        - name: Delete rubric
+          href: api/educationrubric-delete.md
+      - name: Submission
+        href: resources/educationsubmission.md
+        items:
+        - name: List submission resources
+          href: api/educationsubmission-list-resources.md
+        - name: Add submission resource
+          href: api/educationsubmission-post-resources.md
+        - name: Get submission resource
+          href: api/educationsubmissionresource-get.md
+        - name: Delete submission resource
+          href: api/educationsubmissionresource-delete.md
+        - name: Get submission
+          href: api/educationsubmission-get.md
+        - name: Set up submission resources folder
+          href: api/educationsubmission-setupresourcesfolder.md
+        - name: Submit submission
+          href: api/educationsubmission-submit.md
+        - name: Unsubmit submission
+          href: api/educationsubmission-unsubmit.md
+        - name: List submitted resources
+          href: api/educationsubmission-list-submittedresources.md
+        - name: List outcomes
+          href: api/educationsubmission-list-outcomes.md
+        - name: Get submitted resource
+          href: api/educationsubmittedsubmissionresource-get.md
+        - name: Return submission
+          href: api/educationsubmission-return.md
+      - name: Outcome
+        items:
+        - name: Outcome
+          href: resources/educationoutcome.md
+        - name: Feedback outcome type
+          href: resources/educationfeedbackoutcome.md
+        - name: Points outcome type
+          href: resources/educationpointsoutcome.md
+        - name: Rubric outcome type
+          href: resources/educationrubricoutcome.md
+        - name: Update outcome
+          href: api/educationoutcome-update.md
     - name: Extensions
       items:
       - name: Open extensions
@@ -5735,34 +5863,34 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: List members
-          href: api/channel-list-members.md
         - name: Add member 
           href: api/channel-post-members.md
-        - name: Get member
-          href: api/channel-get-members.md
-        - name: Update member role
-          href: api/channel-update-members.md   
-        - name: Remove member
-          href: api/channel-delete-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
-        - name: Get files folder
-          href: api/channel-get-filesfolder.md
-        - name: List channel messages
-          href: api/channel-list-messages.md
-        - name: Get channel messages delta
-          href: api/chatmessage-delta.md
         - name: Get channel message
           href: api/chatmessage-get.md
-        - name: List message replies
-          href: api/chatmessage-list-replies.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get files folder
+          href: api/channel-get-filesfolder.md
+        - name: Get member
+          href: api/channel-get-members.md
         - name: Get message reply
           href: api/chatmessage-get.md
-        - name: Send message
-          href: api/channel-post-messages.md
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: List members
+          href: api/channel-list-members.md        
+        - name: List message replies
+          href: api/chatmessage-list-replies.md
+        - name: Remove member
+          href: api/channel-delete-members.md
         - name: Reply to message
           href: api/chatmessage-post-replies.md
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Update member role
+          href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
       - name: Chat
