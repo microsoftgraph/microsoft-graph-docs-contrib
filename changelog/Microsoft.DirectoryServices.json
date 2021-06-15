@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAssignmentRequestRequirements",
           "ChangeType": "Addition",
-          "Description": "Added the [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) complex type.",
+          "Description": "Added the [accessPackageAssignmentRequestRequirements](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-beta) complex type.",
           "Target": "accessPackageAssignmentRequestRequirements"
         }
       ],
