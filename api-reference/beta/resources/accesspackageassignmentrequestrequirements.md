@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 | :--------------------------- | :------------------------ | :---------- |
 | policyDisplayName | String | The display name of the policy that the user is trying to request access using. |
 | policyDescription | String | The description of the policy that the user is trying to request access using.  |
-| policyId | String | The ID of the policy that these requirements are associated with. This ID can be used when creating a new assignment request. |
+| policyId | String | The identifier of the policy that these requirements are associated with. This identifier can be used when creating a new assignment request. |
 | isApprovalRequired | Boolean | Whether or not a request must be approved by an approver. |
 | isApprovalRequiredForExtension  | Boolean | Whether approval is required when a user tries to extend their access. |
 | isRequestorJustificationRequired | Boolean | Whether a requestor must supply justification when submitting an assignment request. |
