@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcUserSettings"
+title: "List userSettings"
 description: "Retrieve a list of cloudPcUserSetting objects."
 author: "AshleyYangSZ"
 localization_priority: Normal
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [cloudPcuserSettings](../resources/cloudpcusersetting.md) objects.
+Retrieve a list of [cloudPcUserSetting](../resources/cloudpcusersetting.md) objects.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
