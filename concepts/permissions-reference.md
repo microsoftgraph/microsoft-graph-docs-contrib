@@ -1997,19 +1997,20 @@ Taxonomy permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | TeamSettings.Read.Group | Read this team's settings. | Read this team's settings, without a signed-in user. |No | No |
 | TeamSettings.ReadWrite.Group | Update the settings for this team. | Read and write this team's settings, without a signed-in user. |No | No |
-| ChannelSettings.Read.Group | Read the names, descriptions, and settings of this team’s channels. | Read this group's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
-| ChannelSettings.ReadWrite.Group | Update the names, descriptions, and settings of this team’s channels.| Update this group's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
-|Channel.Create.Group | Create channels in this team. | Create channels in this group, without a signed-in user. |No | No |
-|Channel.Delete.Group | Delete this team's channels. | Delete this group's channels, without a signed-in user. |No | No |
-|ChannelMessage.Read.Group | Read the team’s channel messages. | Allows an app to read this group's channel's messages, without a signed-in user. |No | No |
-|TeamsAppInstallation.Read.Group | See which apps are installed in this team. | See which apps are installed in this group, without a signed-in user. |No | No |
-|TeamsTab.Read.Group | Read this team's tabs. | Read this group's tabs, without a signed-in user. |No | No |
-|TeamsTab.Create.Group | Create tabs in this team. | Create tabs in this group, without a signed-in user. |No | No |
-|TeamsTab.ReadWrite.Group | Update this team's tabs. | Update this group's tabs, without a signed-in user. |No | No |
-|TeamsTab.Delete.Group | Delete this team's tabs. | Delete this group's tabs, without a signed-in user. |No | No |
+| ChannelSettings.Read.Group | Read the names, descriptions, and settings of this team’s channels. | Read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+| ChannelSettings.ReadWrite.Group | Update the names, descriptions, and settings of this team’s channels.| Update this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+|Channel.Create.Group | Create channels in this team. | Create channels in this team, without a signed-in user. |No | No |
+|Channel.Delete.Group | Delete this team's channels. | Delete this team's channels, without a signed-in user. |No | No |
+|ChannelMessage.Read.Group | Read the team’s channel messages. | Allows an app to read this team's channel's messages, without a signed-in user. |No | No |
+|TeamsAppInstallation.Read.Group | See which apps are installed in this team. | See which apps are installed in this team, without a signed-in user. |No | No |
+|TeamsTab.Read.Group | Read this team's tabs. | Read this team's tabs, without a signed-in user. |No | No |
+|TeamsTab.Create.Group | Create tabs in this team. | Create tabs in this team, without a signed-in user. |No | No |
+|TeamsTab.ReadWrite.Group | Update this team's tabs. | Update this team's tabs, without a signed-in user. |No | No |
+|TeamsTab.Delete.Group | Delete this team's tabs. | Delete this team's tabs, without a signed-in user. |No | No |
 |TeamMember.Read.Group | Read this team's members. | Read this team's members, without a signed-in user. |No | No |
 |Member.Read.Group | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
 |Owner.Read.Group| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
+|File.Read.Group| Read this team's files and folders. | **Limited support** <br/> (Preview) Read this team's files and folders, without a signed-in users. | No | No |
 
 ## Teams settings permissions
 
