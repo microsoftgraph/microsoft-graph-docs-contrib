@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "9928f572-b9fb-4ac0-9134-358b7c1ca55f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.store",
+          "ChangeType": "Addition",
+          "Description": "Added the example to access [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true) entity for a site collection.",
+          "Target": "termStore.store"
+        },
+        {
+          "Id": "9928f572-b9fb-4ac0-9134-358b7c1ca55f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.group",
+          "ChangeType": "Addition",
+          "Description": "Added the example to access [termStore.group](https://docs.microsoft.com/en-us/graph/api/resources/termstore-group?view=graph-rest-beta&preserve-view=true) entity for a site collection.",
+          "Target": "termStore.group"
+        },
+        {
+          "Id": "9928f572-b9fb-4ac0-9134-358b7c1ca55f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.set",
+          "ChangeType": "Addition",
+          "Description": "Added the example to access [termStore.set](https://docs.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-beta&preserve-view=true) entity for a site collection.",
+          "Target": "termStore.set"
+        },
+        {
+          "Id": "9928f572-b9fb-4ac0-9134-358b7c1ca55f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.term",
+          "ChangeType": "Addition",
+          "Description": "Added the example to access [termStore.term](https://docs.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-beta&preserve-view=true) entity for a site collection.",
+          "Target": "termStore.term"
+        }
+      ],
+      "Id": "9928f572-b9fb-4ac0-9134-358b7c1ca55f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-16T00:00:00",
+      "WorkloadArea": "Sites and lists ",
+      "SubArea": "Taxonomy"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4116e288-18ad-4423-8a95-f1ac63edc3bc",
           "ApiChange": "Resource",
           "ChangedApiName": "site",
