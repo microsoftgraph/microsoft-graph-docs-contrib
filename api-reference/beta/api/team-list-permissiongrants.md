@@ -73,7 +73,9 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "Collection(microsoft.graph.resourceSpecificPermissionGrant)"
+  "truncated": true,
+  "@odata.type": "microsoft.graph.resourceSpecificPermissionGrant",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
