@@ -13069,8 +13069,9 @@ items:
       - name: Errors
         href: resources/security-error-codes.md
     - name: Service health and communications (preview)
-      href: resources/serviceannouncement.md
       items:
+      - name: Service announcement
+        href: resources/serviceannouncement.md
       - name: Service health
         href: resources/servicehealth.md
         items:
@@ -13081,19 +13082,19 @@ items:
       - name: Service health issue
         href: resources/servicehealthissue.md
         items:
-        - name: Get issue
-          href: api/servicehealthissue-get.md
         - name: List issues
           href: api/serviceannouncement-list-issues.md
+        - name: Get issue
+          href: api/servicehealthissue-get.md
         - name: Get post-incident review report
           href: api/servicehealthissue-incidentreport.md
       - name: Service update message
         href: resources/serviceupdatemessage.md
         items:
-        - name: Get message
-          href: api/serviceupdatemessage-get.md
         - name: List messages
           href: api/serviceannouncement-list-messages.md
+        - name: Get message
+          href: api/serviceupdatemessage-get.md
         - name: Mark read status
           href: api/serviceupdatemessage-markread.md
         - name: Mark unread status
