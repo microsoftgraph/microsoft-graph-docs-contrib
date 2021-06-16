@@ -21,7 +21,7 @@ Inherits from [identitySet](../resources/identityset.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|application|[identity](../resources/identity.md)|Inherited from [identitySet](../resources/identityset.md). If present, represents the application (for instance bot) that sent the message.|
+|application|[identity](../resources/identity.md)|Inherited from [identitySet](../resources/identityset.md). If present, represents the application (for instance, bot) that sent the message.|
 |device|[identity](../resources/identity.md)|Inherited from [identitySet](../resources/identityset.md). Not used.|
 |user|[identity](../resources/identity.md)|Inherited from [identitySet](../resources/identityset.md). If present, represents the user that sent the message.|
 

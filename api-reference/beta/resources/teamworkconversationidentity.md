@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a conversation (chat, team, channel) in Microsoft Teams.
+Represents a conversation (chat, team, or channel) in Microsoft Teams.
 
 Inherits from [identity](../resources/identity.md).
 
