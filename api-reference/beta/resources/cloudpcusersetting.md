@@ -32,8 +32,8 @@ Represents a cloud PC user setting.
 |:---|:---|:---|
 |id|String|Unique identifier for the cloud PC user setting. Read-only.|
 |displayName|String|The setting name displayed in the user interface. |
-|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to True.  |
-|selfServiceEnabled|Boolean|To turn on the self service option, change this setting to True. |
+|localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. Default value is `false`. To enable the local admin option, change the setting to `true`. |
+|selfServiceEnabled|Boolean|Indicates whether the self-service option is enabled. Default value is `false`. To enable the self-service option, change the setting to `true`. |
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 |createdDateTime|DateTimeOffset|The date and time the setting was created. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 
