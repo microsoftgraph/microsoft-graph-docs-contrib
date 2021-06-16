@@ -183,6 +183,176 @@
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectionOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectionOperation](https://docs.microsoft.com/en-us/graph/api/resources/connectionOperation?view=graph-rest-1.0) resource type.",
+          "Target": "connectionOperation"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "external",
+          "ChangeType": "Addition",
+          "Description": "Added the [external](https://docs.microsoft.com/en-us/graph/api/resources/external?view=graph-rest-1.0) resource type.",
+          "Target": "external"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalConnection",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-1.0) resource type.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalItem?view=graph-rest-1.0) resource type.",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "schema",
+          "ChangeType": "Addition",
+          "Description": "Added the [schema](https://docs.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-1.0) resource type.",
+          "Target": "schema"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "acl",
+          "ChangeType": "Addition",
+          "Description": "Added the [acl](https://docs.microsoft.com/en-us/graph/api/resources/acl?view=graph-rest-1.0) resource type.",
+          "Target": "acl"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configuration",
+          "ChangeType": "Addition",
+          "Description": "Added the [configuration](https://docs.microsoft.com/en-us/graph/api/resources/configuration?view=graph-rest-1.0) resource type.",
+          "Target": "configuration"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalItemContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalItemContent](https://docs.microsoft.com/en-us/graph/api/resources/externalItemContent?view=graph-rest-1.0) resource type.",
+          "Target": "externalItemContent"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "properties",
+          "ChangeType": "Addition",
+          "Description": "Added the [properties](https://docs.microsoft.com/en-us/graph/api/resources/properties?view=graph-rest-1.0) resource type.",
+          "Target": "properties"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "property",
+          "ChangeType": "Addition",
+          "Description": "Added the [property](https://docs.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-1.0) resource type.",
+          "Target": "property"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicError",
+          "ChangeType": "Addition",
+          "Description": "Added the [publicError](https://docs.microsoft.com/en-us/graph/api/resources/publicError?view=graph-rest-1.0) resource type.",
+          "Target": "publicError"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicInnerError",
+          "ChangeType": "Addition",
+          "Description": "Added the [publicInnerError](https://docs.microsoft.com/en-us/graph/api/resources/publicInnerError?view=graph-rest-1.0) resource type.",
+          "Target": "publicInnerError"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicErrorDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [publicErrorDetail](https://docs.microsoft.com/en-us/graph/api/resources/publicErrorDetail?view=graph-rest-1.0) resource type.",
+          "Target": "publicErrorDetail"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessType** enumeration type.",
+          "Target": "accessType"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "aclType",
+          "ChangeType": "Addition",
+          "Description": "Added the **aclType** enumeration type.",
+          "Target": "aclType"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "connectionOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **connectionOperationStatus** enumeration type.",
+          "Target": "connectionOperationStatus"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "connectionState",
+          "ChangeType": "Addition",
+          "Description": "Added the **connectionState** enumeration type.",
+          "Target": "connectionState"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "externalItemContentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalItemContentType** enumeration type.",
+          "Target": "externalItemContentType"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "label",
+          "ChangeType": "Addition",
+          "Description": "Added the **label** enumeration type.",
+          "Target": "label"
+        },
+        {
+          "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "propertyType",
+          "ChangeType": "Addition",
+          "Description": "Added the **propertyType** enumeration type.",
+          "Target": "propertyType"
+        }
+      ],
+      "Id": "23e7d60a-82b7-11eb-9fc2-269673f51d94",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-07-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }
