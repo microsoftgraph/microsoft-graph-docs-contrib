@@ -3,7 +3,7 @@ title: "Service communications API overview"
 description: "The Service Communications API provides access to Service Health and Message Center posts for your tenant."
 author: "payiAzure"
 localization_priority: Priority
-ms.prod: "service communications"
+ms.prod: "service-health-and-communications"
 ms.custom: scenarios:getting-started
 ---
 
