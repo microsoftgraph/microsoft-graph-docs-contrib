@@ -35,7 +35,7 @@ GET /identityGovernance/accessReviews/definitions/filterByCurrentUser(on='review
 ```
 
 ## Optional query parameters
-This method supports `$select`, `$filter`, `$orderBy`, `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select`, `$filter`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

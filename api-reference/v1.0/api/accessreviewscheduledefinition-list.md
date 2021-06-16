@@ -35,7 +35,7 @@ GET /identityGovernance/accessReviews/definitions
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$top`, `$skip`,`$orderBy` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$top`, `$skip`,`$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Use the $filter query parameter
 The `$filter` query parameter with the `contains` operator is supported on the **scope** property of accessReviewScheduleDefinition. Use the following format for the request:

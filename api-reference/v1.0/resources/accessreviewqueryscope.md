@@ -1,6 +1,6 @@
 ---
 title: "accessReviewQueryScope resource type"
-description: "Defines what will be reviewed in an access review."
+description: "Defines what needs to be reviewed in an access review."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"

@@ -16,11 +16,9 @@ Use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-
 
 Typical customer scenarios for access reviews of group memberships and application and Azure AD role access are:
 
-- Customers can review and certify guest user access by using access reviews of their access to applications, Azure AD roles and memberships of groups. Reviewers can use the insights that are provided to efficiently decide whether guests should have continued access.
+- Customers can review and certify guest user access to applications, Azure AD roles, and memberships of groups. Reviewers can use the insights that are provided to efficiently decide whether guests should have continued access.
 
-- Customers can review and certify employee access to applications, Azure AD roles and group memberships with access reviews.
-
-Note that the access reviews feature, including the API, is included in Azure AD Premium P2.  The tenant where an access review is being created must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription.
+- Customers can review and certify employee access to applications, Azure AD roles, and group memberships with access reviews.
 
 The access reviews feature, including the API, is available only with a valid purchase or trial license of Azure AD Premium P2 or EMS E5 subscription.
 
@@ -67,4 +65,3 @@ In addition, a user who is an assigned reviewer of an access review can manage t
 
 - [How an administrator can manage user access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [How an administrator can manage guest access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
-

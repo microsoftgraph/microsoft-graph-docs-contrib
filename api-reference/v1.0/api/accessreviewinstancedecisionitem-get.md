@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,4 +108,3 @@ Content-Type: application/json
     }
 }
 ```
-

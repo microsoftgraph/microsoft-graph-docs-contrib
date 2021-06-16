@@ -504,7 +504,7 @@
             "Version": "v1.0",
             "CreatedDateTime": "2021-04-05T19:40:43.984Z",
             "WorkloadArea": "Identity and access",
-            "SubArea": "Identity governance"
+            "SubArea": "Governance"
           },
           {
             "ChangeList": [
@@ -531,7 +531,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "filterByCurrentUser",
                 "ChangeType": "Addition",
-                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-filterByCurrentUser?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-filterByCurrentUser?view=graph-rest-beta) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
                 "Target": "accessReviewInstance"
               },
               {
@@ -539,7 +539,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "resetDecisions",
                 "ChangeType": "Addition",
-                "Description": "Added the [resetDecisions](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-resetDecisions?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Description": "Added the [resetDecisions](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-resetDecisions?view=graph-rest-beta) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
                 "Target": "accessReviewInstance"
               },
               {
@@ -547,7 +547,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "filterByCurrentUser",
                 "ChangeType": "Addition",
-                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewInstanceDecisionItem-filterByCurrentUser?view=graph-rest-1.0) method to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-1.0) resource.",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewInstanceDecisionItem-filterByCurrentUser?view=graph-rest-beta) method to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
@@ -555,7 +555,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "Get",
                 "ChangeType": "Addition",
-                "Description": "Added the [Get](https://docs.microsoft.com/en-us/graph/api/accessReviewInstanceDecisionItem-get?view=graph-rest-1.0) method to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-1.0) resource.",
+                "Description": "Added the [Get](https://docs.microsoft.com/en-us/graph/api/accessReviewInstanceDecisionItem-get?view=graph-rest-beta) method to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
@@ -563,7 +563,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "filterByCurrentUser",
                 "ChangeType": "Addition",
-                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewScheduleDefinition-filterByCurrentUser?view=graph-rest-1.0) method to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-1.0) resource.",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewScheduleDefinition-filterByCurrentUser?view=graph-rest-beta) method to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource.",
                 "Target": "accessReviewScheduleDefinition"
               },
               {
