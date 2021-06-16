@@ -1,6 +1,6 @@
 ---
-title: "List cloudPcUserSettings"
-description: "Get the cloudPcUserSetting resources from the userSettings navigation property."
+title: "List userSettings"
+description: "Retrieve a list of cloudPcUserSetting objects."
 author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List properties and relationships of the [cloudPcuserSettings](../resources/cloudpcusersetting.md) objects.
+Retrieve a list of [cloudPcUserSetting](../resources/cloudpcusersetting.md) objects.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -40,7 +40,7 @@ GET /deviceManagement/virtualEndpoint/userSettings
 
 ## Optional query parameters
 
-This method supports `$select`, `$filter` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method the supports `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

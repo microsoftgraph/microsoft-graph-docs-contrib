@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [cloudPcUserSetting ](../resources/cloudpcusersetting.md) object.
+Create a new [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -53,9 +53,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The setting name as it appears in the user interface. |
-|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to True.  |
-|selfServiceEnabled|Boolean|To turn on the self service option, change this setting to True. |
+|displayName|String|The setting name as it appears in the UI. |
+|localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `True`.  |
+|selfServiceEnabled|Boolean|To turn on the self service option, change this setting to `True`. |
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 
 ## Response

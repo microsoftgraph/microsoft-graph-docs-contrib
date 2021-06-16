@@ -63,7 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSet
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
