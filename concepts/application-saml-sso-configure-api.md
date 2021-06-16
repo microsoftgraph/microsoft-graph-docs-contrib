@@ -3,7 +3,7 @@ title: "Use Microsoft Graph APIs to configure SAML-based single sign-on"
 description: "Learn how to save time by using the Microsoft Graph APIs to automate the configuration of SAML-based single sign-on."
 author: "kenwith"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ms.custom: scenarios:getting-started
 ---
 
@@ -728,13 +728,13 @@ No Content - 204
 
 ## See also
 
-- For AWS, you can [enable user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
+- For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 - [Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping).
-- You can use the applicationTemplate API to instantiate [Non-Gallery apps](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+- You can use the applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 - [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps)
 - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)
 - [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)
 - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 - [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)
+- [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)
 - [keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0)

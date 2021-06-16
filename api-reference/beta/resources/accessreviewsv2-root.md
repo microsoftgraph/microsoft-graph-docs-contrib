@@ -1,5 +1,5 @@
 ---
-title: "Azure AD access reviews - group memberships"
+title: "Azure AD access reviews"
 description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights. This documentation serves the 2nd version of the APIs."
 localization_priority: Normal
 author: "isabelleatmsft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews for groups
+# Azure AD access reviews
 
 Namespace: microsoft.graph
 
@@ -55,7 +55,7 @@ The following table lists the methods that you can use to interact with access r
 
 ## Role and application permission authorization checks
 
-The following directory roles are required for a calling user to manage access reviews. Note that only access reviews on groups are supported currently through Microsoft Graph APIs.
+The following directory roles are required for a calling user to manage access reviews. 
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
