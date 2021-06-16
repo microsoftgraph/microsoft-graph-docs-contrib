@@ -75,7 +75,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "reprovisionCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [reprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-manageddevice-reprovisioncloudpc?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
+                    "Description": "Added the [reprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -83,7 +83,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getCloudPcRemoteActionResults",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getCloudPcRemoteActionResults](https://docs.microsoft.com/en-us/graph/api/intune-manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getCloudPcRemoteActionResults](https://docs.microsoft.com/en-us/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -91,7 +91,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "bulkReprovisionCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bulkReprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-manageddevice-bulkreprovisioncloudpc.md?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
+                    "Description": "Added the [bulkReprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-bulkreprovisioncloudpc.md?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"   
                 },
                 {
@@ -131,7 +131,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "resizeCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [resizeCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-manageddevice-reprovisioncloudpc?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
+                    "Description": "Added the [resizeCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 }
             ],

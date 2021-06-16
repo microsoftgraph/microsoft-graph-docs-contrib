@@ -9532,13 +9532,13 @@ items:
           - name: Reprovision
             href: api/cloudpc-reprovision.md
           - name: Reprovision Cloud PC remote action
-            href: api/intune-manageddevice-reprovisioncloudpc.md
+            href: api/manageddevice-reprovisioncloudpc.md
           - name: Bulk reprovision Cloud PCs remote action
-            href: api/intune-manageddevice-bulkreprovisioncloudpc.md
+            href: api/manageddevice-bulkreprovisioncloudpc.md
           - name: Resize Cloud PC remote action
-            href: api/intune-manageddevice-resizecloudpc.md
+            href: api/manageddevice-resizecloudpc.md
           - name: Get Cloud PC remote action results
-            href: api/intune-manageddevice-getcloudpcremoteactionresults.md
+            href: api/manageddevice-getcloudpcremoteactionresults.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
