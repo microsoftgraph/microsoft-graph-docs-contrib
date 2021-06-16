@@ -207,6 +207,9 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 304
+
 {
   "@odata.nextLink": "https://graph.microsoft.com/beta/reports/browserUserDetail(period='D7')/content?$format=application/json&$skiptoken=D07uj",
    "value":[
