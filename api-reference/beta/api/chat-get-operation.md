@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this returns a `200 OK` response code and a [Teams async operation](../resources/teamsasyncoperation.md) object in the response body.
+If successful, this returns a `200 OK` response code and a [teamsAsyncOperation](../resources/teamsasyncoperation.md) object in the response body.
 
 ## Examples
 
@@ -63,8 +63,6 @@ If successful, this returns a `200 OK` response code and a [Teams async operatio
 ``` http
 GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@thread.v2/operations/2432b57b-0abd-43db-aa7b-16eadd115d34-e88ae9aa-887e-4972-ac3e-bd578e38232e-cf58835e-43f0-4fc1-825e-5de55630e7e4
 ```
-
----
 
 ### Response
 <!-- {
