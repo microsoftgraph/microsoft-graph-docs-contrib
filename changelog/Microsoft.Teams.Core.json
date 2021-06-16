@@ -2956,6 +2956,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **permissionGrants** relationship to [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta) resource.",
           "Target": "team"
+        },
+        {
+          "Id": "befcbd7b-e07d-400f-96dd-f5323cbc2135",
+          "ApiChange": "Method",
+          "ChangedApiName": "team-list-permissionGrants",
+          "ChangeType": "Addition",
+          "Description": "Added the [list permission grants API](https://docs.microsoft.com/graph/api/team-list-permissiongrants?view=graph-rest-beta).",
+          "Target": "team-list-permissiongrants"
         }
       ],
       "Id": "befcbd7b-e07d-400f-96dd-f5323cbc2135",
