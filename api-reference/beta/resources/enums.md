@@ -812,6 +812,7 @@ Namespace: microsoft.graph
 |list|
 |listItem|
 |drive|
+|unknownFutureValue|
 
 ### searchAlterationType values
 
