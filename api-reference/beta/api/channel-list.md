@@ -39,7 +39,7 @@ GET /teams/{team-id}/channels
 This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ### Use $select for better performance
-Populating the **email** and **moderationSettings** properties for a channel is an expensive operation that results in slow performance of the operation. Use `$select` to exclude the **email** and **moderationSettings** properties to improve performance.
+Populating the **email** and **moderationSettings** properties for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **moderationSettings** properties to improve performance.
 
 
 ## Request headers
