@@ -4973,16 +4973,16 @@ items:
               href: api/accessreviewinstancedecisionitem-update.md
             - name: Filter by current user
               href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-          - name: Consent requests
-            href: resources/consentrequests-root.md
+        - name: Consent requests
+          href: resources/consentrequests-root.md
+          items:
+          - name: Admin consent request policy
+            href: resources/adminconsentrequestpolicy.md
             items:
-            - name: Admin consent request policy
-              href: resources/adminconsentrequestpolicy.md
-              items:
-              - name: Get
-                href: api/adminconsentrequestpolicy-get.md
-              - name: Update
-                href: api/adminconsentrequestpolicy-update.md
+            - name: Get
+              href: api/adminconsentrequestpolicy-get.md
+            - name: Update
+              href: api/adminconsentrequestpolicy-update.md
             - name: App consent requests
               href: resources/appconsentrequest.md
               items:
@@ -4992,31 +4992,31 @@ items:
                 href: api/appconsentrequest-get.md
               - name: Filter by current user
                 href: api/appconsentrequest-filterByCurrentUser.md
-            - name: User consent requests
-              href: resources/userconsentrequest.md
-              items:
-              - name: List
-                href: api/userconsentrequest-list.md
-              - name: Get
-                href: api/userconsentrequest-get.md
-              - name: Filter by current user
-                href: api/userconsentrequest-filterByCurrentUser.md
-          - name: Terms of use
+          - name: User consent requests
+            href: resources/userconsentrequest.md
             items:
-            - name: Agreement
-              href: resources/agreement.md
             - name: List
-              href: api/agreement-list.md          
-            - name: Create
-              href: api/agreement-post-agreements.md
+              href: api/userconsentrequest-list.md
             - name: Get
-              href: api/agreement-get.md
-            - name: Update
-              href: api/agreement-update.md
-            - name: Delete
-              href: api/agreement-delete.md
-            - name: List acceptance status
-              href: api/user-list-agreementacceptances.md      
+              href: api/userconsentrequest-get.md
+            - name: Filter by current user
+              href: api/userconsentrequest-filterByCurrentUser.md
+        - name: Terms of use
+          items:
+          - name: Agreement
+            href: resources/agreement.md
+          - name: List
+            href: api/agreement-list.md          
+          - name: Create
+            href: api/agreement-post-agreements.md
+          - name: Get
+            href: api/agreement-get.md
+          - name: Update
+            href: api/agreement-update.md
+          - name: Delete
+            href: api/agreement-delete.md
+          - name: List acceptance status
+            href: api/user-list-agreementacceptances.md      
     - name: Mail
       displayName: Outlook, Outlook mail
       items:

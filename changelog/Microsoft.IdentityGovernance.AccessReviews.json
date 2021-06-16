@@ -187,22 +187,6 @@
         {
             "ChangeList": [
               {
-                "Id": "cf9d5562-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Relationship",
-                "ChangedApiName": "accessReviews",
-                "ChangeType": "Addition",
-                "Description": "Added the **accessReviews** relationship to the [identityGovernance](https://docs.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-1.0) resource.",
-                "Target": "identityGovernance"
-              },
-              {
-                "Id": "cf9fbaea-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "userIdentity",
-                "ChangeType": "Addition",
-                "Description": "Added the [userIdentity](https://docs.microsoft.com/en-us/graph/api/resources/userIdentity?view=graph-rest-1.0) resource type.",
-                "Target": "userIdentity"
-              },
-              {
                 "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessReviewScope",
@@ -259,22 +243,6 @@
                 "Target": "disableAndDeleteUserApplyAction"
               },
               {
-                "Id": "cfb52d42-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "recurrencePattern",
-                "ChangeType": "Addition",
-                "Description": "Added the [recurrencePattern](https://docs.microsoft.com/en-us/graph/api/resources/recurrencePattern?view=graph-rest-1.0) resource type.",
-                "Target": "recurrencePattern"
-              },
-              {
-                "Id": "cfb79062-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "recurrenceRange",
-                "ChangeType": "Addition",
-                "Description": "Added the [recurrenceRange](https://docs.microsoft.com/en-us/graph/api/resources/recurrenceRange?view=graph-rest-1.0) resource type.",
-                "Target": "recurrenceRange"
-              },
-              {
                 "Id": "cfb9f426-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessReviewScheduleSettings",
@@ -321,14 +289,6 @@
                 "ChangeType": "Addition",
                 "Description": "Added the [accessReviewInstanceDecisionItemResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemResource?view=graph-rest-1.0) resource type.",
                 "Target": "accessReviewInstanceDecisionItemResource"
-              },
-              {
-                "Id": "cfdb547b-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Method",
-                "ChangedApiName": "stop",
-                "ChangeType": "Addition",
-                "Description": "Added the [stop](https://docs.microsoft.com/en-us/graph/api/accessReviewScheduleDefinition-stop?view=graph-rest-1.0) method to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-1.0) resource.",
-                "Target": "accessReviewScheduleDefinition"
               },
               {
                 "Id": "cfde943d-9646-11eb-a4ee-0754add743a7",
@@ -417,86 +377,6 @@
                 "ChangeType": "Deletion",
                 "Description": "Removed the **request** resource type.",
                 "Target": "request"
-              },
-              {
-                "Id": "cff8e85e-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "approval",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **approval** resource type.",
-                "Target": "approval"
-              },
-              {
-                "Id": "cffb4826-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "approvalStage",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **approvalStage** resource type.",
-                "Target": "approvalStage"
-              },
-              {
-                "Id": "cffdaa06-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "adminConsentRequestPolicy",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **adminConsentRequestPolicy** resource type.",
-                "Target": "adminConsentRequestPolicy"
-              },
-              {
-                "Id": "d0000ddc-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "appConsentRequestScope",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **appConsentRequestScope** resource type.",
-                "Target": "appConsentRequestScope"
-              },
-              {
-                "Id": "d0027018-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "appConsentRequest",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **appConsentRequest** resource type.",
-                "Target": "appConsentRequest"
-              },
-              {
-                "Id": "d004d1eb-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "userConsentRequest",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **userConsentRequest** resource type.",
-                "Target": "userConsentRequest"
-              },
-              {
-                "Id": "d0073751-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Relationship",
-                "ChangedApiName": "appConsent",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **appConsent** relationship from the [identityGovernance](https://docs.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-1.0) resource.",
-                "Target": "identityGovernance"
-              },
-              {
-                "Id": "d009982b-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "appConsentApprovalRoute",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **appConsentApprovalRoute** resource type.",
-                "Target": "appConsentApprovalRoute"
-              },
-              {
-                "Id": "d00e5da3-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Method",
-                "ChangedApiName": "filterByCurrentUser",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **filterByCurrentUser** method from the [userConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/userConsentRequest?view=graph-rest-1.0) resource.",
-                "Target": "userConsentRequest"
-              },
-              {
-                "Id": "d010bdcb-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Method",
-                "ChangedApiName": "filterByCurrentUser",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **filterByCurrentUser** method from the [appConsentRequest](https://docs.microsoft.com/en-us/graph/api/resources/appConsentRequest?view=graph-rest-1.0) resource.",
-                "Target": "appConsentRequest"
               }
             ],
             "Id": "cf9af399-9646-11eb-a4ee-0754add743a7",
@@ -505,24 +385,6 @@
             "CreatedDateTime": "2021-04-05T19:40:43.984Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Governance"
-          },
-          {
-            "ChangeList": [
-              {
-                "Id": "cfb2cd57-9646-11eb-a4ee-0754add743a7",
-                "ApiChange": "Resource",
-                "ChangedApiName": "patternedRecurrence",
-                "ChangeType": "Addition",
-                "Description": "Added the [patternedRecurrence](https://docs.microsoft.com/en-us/graph/api/resources/patternedRecurrence?view=graph-rest-1.0) resource type.",
-                "Target": "patternedRecurrence"
-              }
-            ],
-            "Id": "cf9af399-9646-11eb-a4ee-0754add743a7",
-            "Cloud": "prd",
-            "Version": "v1.0",
-            "CreatedDateTime": "2021-04-05T19:40:43.984Z",
-            "WorkloadArea": "Calendar",
-            "SubArea": ""
           },
           {
             "ChangeList": [
