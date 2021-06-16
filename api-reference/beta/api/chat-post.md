@@ -56,7 +56,7 @@ The following table lists the properties that are required to create a chat obje
 ## Response
 
 ### Response for creating a one-on-one chat without installed apps
-If successful, this method returns a 201 Created response code and the newly created [chat](../resources/chat.md) resource in the response body.
+If successful, this method returns a `201 Created` response code and the newly created [chat](../resources/chat.md) resource in the response body.
 
 ### Response for creating a one-on-one chat with installed apps
 If successful, this method returns a `202 Accepted` response code and Location header that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md). The link can be used to get the operation status and details. See [Get operation on a chat](chat-get-operation.md).

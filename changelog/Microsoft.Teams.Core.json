@@ -2982,6 +2982,30 @@
           "ChangeType": "Addition",
           "Description": "Added the **operations** relationship to [chat](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
+        },
+        {
+          "Id": "2be0f907-b973-4695-8792-380f383d9779",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-list-operations",
+          "ChangeType": "Addition",
+          "Description": "Added [list operations in chat API](https://docs.microsoft.com/en-us/graph/api/chat-list-operations?view=graph-rest-beta).",
+          "Target": "chat-list-operations"
+        },
+        {
+          "Id": "2be0f907-b973-4695-8792-380f383d9779",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-get-operation",
+          "ChangeType": "Addition",
+          "Description": "Added [get operation in chat API](https://docs.microsoft.com/en-us/graph/api/chat-get-operation?view=graph-rest-beta).",
+          "Target": "chat-get-operation"
+        },
+        {
+          "Id": "2be0f907-b973-4695-8792-380f383d9779",
+          "ApiChange": "Property",
+          "ChangedApiName": "chat-post",
+          "ChangeType": "Addition",
+          "Description": "Added the **installedApps** property to [create chat API](https://docs.microsoft.com/graph/api/resources/chat-post?view=graph-rest-beta).",
+          "Target": "chat-post"
         }
       ],
       "Id": "2be0f907-b973-4695-8792-380f383d9779",
@@ -2991,5 +3015,6 @@
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
+
   ]
 }
