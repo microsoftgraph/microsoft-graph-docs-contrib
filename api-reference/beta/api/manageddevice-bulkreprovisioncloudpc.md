@@ -53,7 +53,7 @@ The following table shows the properties that are required when you bulk reprovi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|managedDeviceIds|String|The IDs of the cloud PC devices.|
+|managedDeviceIds|Collection(String)|The IDs of the cloud PC devices.|
 
 ## Response
 
