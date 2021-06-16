@@ -17,6 +17,7 @@ Namespace: microsoft.graph
 |:---|
 |reviewer|
 |unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -24,6 +25,14 @@ Namespace: microsoft.graph
 |default|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### educationAddedStudentAction values
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
 |unknownFutureValue|
 
 ### authenticatorAppContextType values
