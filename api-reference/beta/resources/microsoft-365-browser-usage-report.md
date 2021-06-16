@@ -7,13 +7,13 @@ author: "sarahwxy"
 doc_type: conceptualPageType
 ---
 
-# Microsoft 365 Apps usage reports
+# Microsoft Browser usage reports
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the Microsoft 365 Apps usage reports to get insights into the usage of Microsoft 365 Apps in your organization.
+Use the Microsoft Browser usage reports to get insights into the Browser usage in your organization.
 
 ## Methods
 
