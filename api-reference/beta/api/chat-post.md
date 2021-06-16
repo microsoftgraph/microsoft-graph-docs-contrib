@@ -59,7 +59,7 @@ The following table lists the properties that are required to create a chat obje
 If successful, this method returns a 201 Created response code and the newly created [chat](../resources/chat.md) resource in the response body.
 
 ### Response for creating a one-on-one chat with installed apps
-If successful, this method returns a `202 Accepted` response code and Location header containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md). The link can be used to get the operation status and details. See [Get operation on a chat](chat-get-operation.md).
+If successful, this method returns a `202 Accepted` response code and Location header that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md). The link can be used to get the operation status and details. See [Get operation on a chat](chat-get-operation.md).
 
 ## Examples
 
@@ -225,7 +225,7 @@ Content-Type: application/json
 Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
 ```
 
-The async operation is initiated, and the response contains a Location header, which contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md). The link can be used to get the operation status and details. See [Get operation on a chat](chat-get-operation.md).
+The async operation is initiated, and the response contains a Location header which includes a link to the to the [teamsAsyncOperation](../resources/teamsasyncoperation.md). The link can be used to get the operation status and details. See [Get operation on a chat](chat-get-operation.md).
 
 ## See also
 - [Get operation on a chat](chat-get-operation.md)
