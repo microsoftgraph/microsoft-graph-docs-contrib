@@ -1,19 +1,19 @@
 ---
-title: "Microsoft Graph Service communications API overview"
-description: "The Microsoft Graph Service Communications API provides access to Service Health and Message Center posts for your tenant."
+title: "Service communications API overview"
+description: "The Service Communications API provides access to Service Health and Message Center posts for your tenant."
 author: "payiAzure"
 localization_priority: Priority
 ms.prod: "service communications"
 ms.custom: scenarios:getting-started
 ---
 
-# Microsoft Graph Service Communications API overview
-The Microsoft Graph service communications API provides access to Service Health and Message Center posts for your tenant.
+# Service Communications API overview
+The service communications API provides access to Service Health and Message Center posts for your tenant.
 
-## Why integrate with Office 365 Service Communications?
+## Why integrate with Service Communications?
 
 ### Get Service Health and Message Center posts for your tenant
-The Microsoft Graph Service Communications API provides Service Health and Message Center posts pertaining to your tenant. For Service Health, this allows you to get the current and historical health of your Microsoft services. If you are experiencing problems with a Microsoft service, you can check service health to determine whether there is a known issue with a resolution in progress before calling support or spending time troubleshooting. For Message Center, this allows you to keep track of upcoming changes, including new and changed features and other important announcements.
+The Service Communications API provides Service Health and Message Center posts pertaining to your tenant. For Service Health, this allows you to get the current and historical health of your Microsoft services. If you are experiencing problems with a Microsoft service, you can check service health to determine whether there is a known issue with a resolution in progress before calling support or spending time troubleshooting. For Message Center, this allows you to keep track of upcoming changes, including new and changed features and other important announcements.
 
 ### Integrate Service Communications data into custom workflows
 * Integrate active Service Health issues directly into custom applications, to triager and share with the impacted audiences.

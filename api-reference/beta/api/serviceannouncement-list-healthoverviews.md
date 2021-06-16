@@ -3,7 +3,7 @@ title: "List healthOverviews"
 description: "Retrieve the serviceHealth resources from the healthOverviews navigation property."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "service communications"
+ms.prod: "service-health-and-communications"
 doc_type: apiPageType
 ---
 

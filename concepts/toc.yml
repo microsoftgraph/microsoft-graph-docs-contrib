@@ -403,7 +403,7 @@ items:
             href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
-      - name: Service communications (preview)
+      - name: Service health and communications (preview)
         href: service-communications-concept-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md

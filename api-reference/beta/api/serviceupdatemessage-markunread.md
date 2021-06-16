@@ -3,7 +3,7 @@ title: "serviceUpdateMessage: markUnread"
 description: "Mark a list of service update messages as unread for the signed in user."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "service communications"
+ms.prod: "service-health-and-communications"
 doc_type: apiPageType
 ---
 

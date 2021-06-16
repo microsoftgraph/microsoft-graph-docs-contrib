@@ -13068,16 +13068,18 @@ items:
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md
-    - name: Service communications (preview)
+    - name: Service health and communications (preview)
       href: resources/serviceannouncement.md
       items:
       - name: Service health
+        href: resources/servicehealth.md
         items:
-        - name: Get serviceHealth
+        - name: Get service health
           href: api/servicehealth-get.md
-        - name: List healthOverviews
+        - name: List health overviews
           href: api/serviceannouncement-list-healthoverviews.md
       - name: Service health issue
+        href: resources/servicehealthissue.md
         items:
         - name: Get issue
           href: api/servicehealthissue-get.md
@@ -13086,6 +13088,7 @@ items:
         - name: Get post-incident review report
           href: api/servicehealthissue-incidentreport.md
       - name: Service update message
+        href: resources/serviceupdatemessage.md
         items:
         - name: Get message
           href: api/serviceupdatemessage-get.md
