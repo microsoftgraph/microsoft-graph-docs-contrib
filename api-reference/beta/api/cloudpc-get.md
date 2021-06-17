@@ -1,5 +1,5 @@
 ---
-title: "Get cloudPCs"
+title: "Get cloudPC"
 description: "View the properties and relationships of a cloudPC object."
 author: "AshleyYangSZ"
 localization_priority: Normal
