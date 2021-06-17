@@ -24,11 +24,6 @@ When you implement activity feed notifications, keep the following points in min
 * Priority notifications are not supported.
 * Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
 * Provide appropriate titles and descriptions for your **Activity Types**. Use short titles, such as **@mention** and **Announcements**. Avoid long titles, such as **User at-mentioned activity** and **Post creation activity**.
-
-  The following image depicts appropriate titles:
-  
-     ![best practices](./images/best-practices.png) 
-
 * Notifications should convey important information for the user. For example, Lynne mentioned you in a conversation.
 * Avoid sending notifications that are promotional in nature. For example, Try the new feature in the Cycling app!
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
