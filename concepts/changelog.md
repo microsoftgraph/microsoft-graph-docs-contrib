@@ -808,7 +808,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the `wrapperUnrecoverableFailure` member to the **printerProcessingStateDetail** enumeration|
 | Addition | v1.0 | Added the `wrapperUnrecoverableStorageError` member to the **printerProcessingStateDetail** enumeration|
 | Addition | v1.0 | Added the `wrapperWarmingUp` member to the **printerProcessingStateDetail** enumeration|
-<<<<<<< HEAD
 | Addition | beta | Added the `alertRemovalOfBinaryChangeEntry` member to the **printerProcessingStateDetail** enumeration|
 | Addition | beta | Added the `banderAdded` member to the **printerProcessingStateDetail** enumeration|
 | Addition | beta | Added the `banderAlmostEmpty` member to the **printerProcessingStateDetail** enumeration|
@@ -1600,8 +1599,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the `wrapperUnrecoverableFailure` member to the **printerProcessingStateDetail** enumeration|
 | Addition | beta | Added the `wrapperUnrecoverableStorageError` member to the **printerProcessingStateDetail** enumeration|
 | Addition | beta | Added the `wrapperWarmingUp` member to the **printerProcessingStateDetail** enumeration|
-=======
->>>>>>> 825df56c85... add all ipp values of PrinterProcessingStateDetails
 
 
 ## March 2021
