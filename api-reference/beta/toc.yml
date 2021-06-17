@@ -13558,7 +13558,7 @@ items:
         - name: List operations
           href: api/chat-list-operations.md
         - name: Get operation
-          href: api/chat-get-operation.md
+          href: api/chat-get-operations.md
       - name: Chat message
         href: resources/chatmessage.md
         items:

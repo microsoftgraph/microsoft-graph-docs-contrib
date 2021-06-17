@@ -1,5 +1,5 @@
 ---
-title: "Get operation on a chat"
+title: "Get operation on chat"
 description: "Retrieve an operation on a chat."
 author: "jecha"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get operation on a chat
+# Get operation on chat
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -3058,7 +3058,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Added the [Get operation in chat](https://docs.microsoft.com/en-us/graph/api/chat-get-operation?view=graph-rest-beta) method.",
+          "Description": "Added the [Get operation on chat](https://docs.microsoft.com/en-us/graph/api/chat-get-operations?view=graph-rest-beta) method.",
           "Target": "chat"
         },
         {
