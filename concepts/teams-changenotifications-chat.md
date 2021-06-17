@@ -1,7 +1,7 @@
 ---
 title: "Get change notifications for creation or updation of chats using Microsoft Graph"
 description: "Get change notifications for change in creation or updation of chats using Microsoft Graph"
-author: "mankadnandan"
+author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started

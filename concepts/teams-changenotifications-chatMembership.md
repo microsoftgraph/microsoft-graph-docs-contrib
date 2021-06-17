@@ -1,7 +1,7 @@
 ---
 title: "Get change notifications for any change in Chats membership using Microsoft Graph"
 description: "Get change notifications for any change in Chats membership using Microsoft Graph"
-author: "mankadnandan"
+author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
