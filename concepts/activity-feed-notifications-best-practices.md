@@ -13,14 +13,14 @@ This article covers best practices for using Microsoft Teams activity feed notif
 * Requesting responses to notifications
 * Creating notifications about external events
 
-The following image depicts the activity feed notification:
+The following image shows an example of an activity feed notification in Teams.
 
-![activity feed notification](./images/activity-feed-notification.png)
+![Screenshot of a Teams app showing the activity feed notification view.](./images/activity-feed-notification.png)
 
 When you implement activity feed notifications, keep the following points in mind:
 * Toast notifications redirect users to the activity feed, not to the app. To see another activity, users must select the associated notification in the activity feed.
 * Users can manage notification settings only after the selected app sends a notification.
-* The icon for each notification is included in the app manifest. Microsoft Graph does not support customizing it.
+* The icon for each notification is included in the app manifest. Microsoft Graph does not support customizing the icon.
 * Priority notifications are not supported.
 * Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
 * Provide appropriate titles and descriptions for your **Activity Types**. Use short titles, such as **@mention** and **Announcements**. Avoid long titles, such as **User at-mentioned activity** and **Post creation activity**.
