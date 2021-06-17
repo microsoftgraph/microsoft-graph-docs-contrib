@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
+You can use **createLink** action to share a [driveItem](../resources/driveitem.md) via a sharing link.
 
 The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
@@ -65,14 +65,14 @@ The following values are allowed for the **type** parameter.
 
 | Type value | Description                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| view           | Creates a read-only link to the Item.                                                                        |
-| review         | Creates a review link to the Item. This option is only available for files in OneDrive for Business and SharePoint.                   |
-| edit           | Creates an read-write link to the Item.                                                                       |
-| embed          | Creates an embeddable link to the Item.                                                                      |
-| blocksDownload | Creates a read-only link that blocks download to the Item. This option is only available for files in OneDrive for Business and SharePoint.  |
-| createOnly     | Creates an upload-only link to the Item. This option is only available for folders in OneDrive for Business and SharePoint.             |
+| view           | Creates a read-only link to the **driveItem**.                                                                        |
+| review         | Creates a review link to the **driveItem**. This option is only available for files in OneDrive for Business and SharePoint.                   |
+| edit           | Creates an read-write link to the **driveItem**.                                                                       |
+| embed          | Creates an embeddable link to the **driveItem**.                                                                      |
+| blocksDownload | Creates a read-only link that blocks download to the **driveItem**. This option is only available for files in OneDrive for Business and SharePoint.  |
+| createOnly     | Creates an upload-only link to the **driveItem**. This option is only available for folders in OneDrive for Business and SharePoint.             |
 | addressBar     | Creates the default link that is shown in the browser address bars for newly created files. Only available in OneDrive for Business and SharePoint. The organization admin configures whether this link type is supported, and what features are supported by this link type. |
-| adminDefault   | Creates the default link to the DriveItem as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
+| adminDefault   | Creates the default link to the **driveItem** as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
 
 ### Scope types
 
@@ -88,12 +88,12 @@ The following values are allowed for the **scope** parameter.
 
 If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
 
-The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.
+The response will be `201 Created` if a new sharing link is created for the **driveItem** or `200 OK` if an existing link is returned.
 
 ## Examples
 
 ### Example 1: Create an anonymous sharing link
-The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.
+The following example requests a sharing link to be created for the **driveItem** specified by {itemId} in the user's OneDrive.
 The sharing link is configured to be read-only and usable by anyone with the link.
 
 #### Request
@@ -121,19 +121,19 @@ Content-length: 212
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/item-createlink-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/driveitem-createlink-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/item-createlink-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitem-createlink-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/item-createlink-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/driveitem-createlink-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/item-createlink-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/driveitem-createlink-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -302,15 +302,15 @@ Content-Type: application/json
 
 ## Remarks
 
-* To create a link based on the organization's default policy and the caller's permissions on the listItem, omit the scope and type parameters
+* To create a link based on the organization's default policy and the caller's permissions on the **driveItem**, omit the scope and type parameters
 * Links created using this action do not expire unless a default expiration policy is enforced for the organization.
-* Links are visible in the sharing permissions for the item and can be removed by an owner of the item.
-* Links always point to the current version of a item unless the item is checked out (SharePoint only).
+* Links are visible in the sharing permissions for the **driveItem** and can be removed by an owner of the **driveItem**.
+* Links always point to the current version of a **driveItem** unless the **driveItem** is checked out (SharePoint only).
 
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create a new sharing link for an item.",
+  "description": "Create a new sharing link for a driveItem.",
   "keywords": "create,sharing,sharing link",
   "section": "documentation",
   "tocPath": "Sharing/Create link",

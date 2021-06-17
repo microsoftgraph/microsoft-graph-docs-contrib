@@ -233,7 +233,13 @@ This function does two things. First, using the React `useState` hook, it enable
 
 Now that you track the user's sign in state in your application, you can show their calendar after they signed in.
 
-1. In the code editor, open the **src/App.tsx** file, and inside the **App** function, add:
+1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Agenda** component.
+
+    ```TypeScript
+    import { Agenda, Login } from '@microsoft/mgt-react';
+    ```
+
+1. Next, inside the **App** function, add:
 
     ```TypeScript
     const [isSignedIn] = useIsSignedIn();

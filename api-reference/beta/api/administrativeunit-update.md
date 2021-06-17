@@ -1,7 +1,7 @@
 ---
 title: "Update administrativeunit"
 description: "Update the properties of an administrativeUnit object."
-author: "anandyadavMSFT"
+author: "DougKirschner"
 localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
