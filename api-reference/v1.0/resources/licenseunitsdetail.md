@@ -18,7 +18,7 @@ The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is
 |:-------------|:-----|:----------|
 |enabled|Int32| The number of units that are enabled for the active subscription of the service SKU.  |
 |suspended|Int32| The number of units that are suspended because the subscription of the service SKU has been cancelled. The units can still be reactivated before they are deleted. |
-|warning|Int32| The number of units that are in warning status. When the subscription of the service SKU has expired and not auto-renewable, the customer has a 30 day grace period to renew their subscription before it is cancelled (moved to a **suspended** state).  |
+|warning|Int32| The number of units that are in warning status. When the subscription of the service SKU is not auto-renewable but has expired, the customer has a 30-day grace period to renew their subscription before it is cancelled (moved to a **suspended** state).  |
 
 ## JSON representation
 
