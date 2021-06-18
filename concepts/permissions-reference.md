@@ -539,7 +539,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _OnlineMeeting.ReadBasic.Chat_   | Read basic properties of a meeting associated with this chat. | Allows the app to read basic properties—such as name, schedule, organizer, and join link—of a meeting associated with this chat, without a signed-in user. |No | No |
 
 >[!NOTE]
-> Currently, these permissions are supported only in beta version of Microsoft Graph.
+> Currently, these permissions are supported only in the beta version of Microsoft Graph.
 
 ## ChatMessage permissions ([private preview](#permissions-availability-status))
 
