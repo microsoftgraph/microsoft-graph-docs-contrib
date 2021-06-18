@@ -9523,9 +9523,9 @@ items:
         - name: Cloud PC
           href: resources/cloudpc.md
           items:
-          - name: List
+          - name: List cloud PCs
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: Get
+          - name: Get cloud PC
             href: api/cloudpc-get.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
@@ -9574,6 +9574,21 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Cloud PC user setting
+          href: resources/cloudpcusersetting.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-usersettings.md
+          - name: Get
+            href: api/cloudpcusersetting-get.md
+          - name: Create
+            href: api/virtualendpoint-post-usersettings.md
+          - name: Update
+            href: api/cloudpcusersetting-update.md
+          - name: Delete
+            href: api/cloudpcusersetting-delete.md
+          - name: Assign
+            href: api/cloudpcusersetting-assign.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
@@ -13442,6 +13457,8 @@ items:
           href: api/profilephoto-update.md
         - name: Complete migration for team
           href: api/team-completemigration.md
+        - name: List permission grants
+          href: api/team-list-permissiongrants.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -13563,6 +13580,8 @@ items:
           href: api/chat-post-messages.md
         - name: Get chat between user and app 
           href: api/userscopeteamsappinstallation-get-chat.md
+        - name: List permission grants
+          href: api/chat-list-permissiongrants.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -13897,6 +13916,8 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+      - name: Resource-specific permission grants
+        href: resources/resourcespecificpermissiongrant.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
