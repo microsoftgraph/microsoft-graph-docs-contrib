@@ -53,7 +53,7 @@ You can use either activity feed notifications or bot framework messages, but do
 
 ### Activity feed notifications
 
-Activity feed notifications appear in the activity feed and can include links to various locations. These notifications: 
+Activity feed notifications appear in the Teams activity feed and can include links to various locations. These notifications: 
 * Allow the user to take action or triage the notification.
 * Lead the user to a tab in a chat or channel, a personal app, or a chat or channel message. 
 
