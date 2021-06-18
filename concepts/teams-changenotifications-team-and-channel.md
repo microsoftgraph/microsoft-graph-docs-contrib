@@ -21,7 +21,7 @@ To get change notifications for all changes (create, update, and delete) related
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic.All, TeamSettings.Read.All   | beta|
+|Application | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All   | beta|
 
 ### Example
 
