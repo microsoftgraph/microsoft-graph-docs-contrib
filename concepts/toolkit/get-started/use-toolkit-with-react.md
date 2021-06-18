@@ -14,7 +14,7 @@ If you're building apps with React, you can use the [`@microsoft/mgt-react` pack
 This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
 
 > [!TIP]
-> You can also follow this tutorial as an interactive code tour. Fore more information see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).
+> You can also follow this tutorial as an interactive code tour. Fore details, see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).
 
 ## Prerequisites
 
