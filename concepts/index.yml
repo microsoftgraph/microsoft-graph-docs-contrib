@@ -112,6 +112,8 @@ additionalContent:
               url: https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios
             - text: Develop apps with Microsoft Graph Toolkit
               url: https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit
+            - text: Build your first custom connector
+              url: https://docs.microsoft.com/en-us/graph/connecting-external-content-build-quickstart              
         # Card
         - title: How-to
           links:
