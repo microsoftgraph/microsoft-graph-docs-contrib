@@ -110,16 +110,32 @@ Content-type: application/json
   "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
   "appDisplayName": "Graph explorer",
   "authenticationRequirement": "MultifactorAuthentication",
+  "authenticationRequirementPolicies":
+    {
+      ""
+    },
+  "autonomousSystemNumber": 234567,
   "ipAddress": "131.107.159.37",
   "clientAppUsed": "Browser",
   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
+  "userType": "member"
+  "crossTenantAccessType": "none",
   "correlationId": "d79f5bee-blah-4832-928f-3133e22ae912",
   "conditionalAccessStatus": "notApplied",
   "originalRequestId": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
+  "flaggedForReview": false,
+  "homeTenantId": "16645f6f-ad99-48b4-b1eb-193257b0dfdd",
   "isInteractive": true,
   "tokenIssuerName": "",
   "tokenIssuerType": "AzureAD",
+  "isTenantRestricted": false,
   "processingTimeInMilliseconds": 541,
+  "privateLinkDetails": {
+     "policyId": "20395464-2c68-4eb3-8bb7-204725bf9927",
+     "policyName": "Contoso Corp Private Link",
+     "resourceId": "/subscriptions/429347b1-41f3-491b-97fd-321383d9fda3/resourceGroups/myRG/providers/ContosoCorpPrivateLink",
+     "policyTenantId": "efdc5738-8a8a-47e5-9a98-33b3ae8b73e2"
+    },
   "riskDetail": "none",
   "riskLevelAggregated": "none",
   "riskLevelDuringSignIn": "none",
@@ -128,10 +144,18 @@ Content-type: application/json
   "riskEventTypes_v2": [],
   "resourceDisplayName": "Microsoft Graph",
   "resourceId": "00000003-0000-0000-c000-000000000000",
+  "resourceTenantId": "7918d4b5-0442-4a97-be2d-36f9f9962ece",
   "authenticationMethodsUsed": [],
   "alternateSignInName": "testaccount2@contoso.com",
   "servicePrincipalName": null,
   "servicePrincipalId": "",
+  "servicePrincipalCredentialKeyId": "",
+  "servicePrincipalCredentialThumbprint": "",
+  "signInEventTypes": [
+        "interactiveUser"
+      ],
+  "signInIdentifier": "testaccount1@contoso.com",
+  "signInIdentifierType": "userPrincipalName",
   "mfaDetail": null,
   "status": {
     "errorCode": 0,
