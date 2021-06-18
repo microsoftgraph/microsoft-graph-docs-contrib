@@ -1,27 +1,30 @@
 ---
-title: "Service communications API overview"
-description: "The Service Communications API provides access to Service Health and Message Center posts for your tenant."
+title: "Overview for accessing service health and communications through Microsoft Graph"
+description: "Use the service communications API in Microsoft Graph to access the health status and message center posts about  Microsoft cloud services."
 author: "payiAzure"
 localization_priority: Priority
 ms.prod: "service-health-and-communications"
 ms.custom: scenarios:getting-started
 ---
 
-# Service Communications API overview
-The service communications API provides access to Service Health and Message Center posts for your tenant.
+# Overview for accessing service health and communications in Microsoft Graph
+You can use the service communications API in Microsoft Graph to access the health status and message center posts about  Microsoft cloud services. The actual health status and posts correspond to the Microsoft 365 and Dynamics 365 services that are supported by the API and subscribed by the tenant. Currently, the API supports data for Office client apps in Microsoft 365, Dynamics 365 for CRM, and Microsoft Intune.
 
-## Why integrate with Service Communications?
+## Why integrate with service health and communications data?
 
-### Get Service Health and Message Center posts for your tenant
-The Service Communications API provides Service Health and Message Center posts pertaining to your tenant. For Service Health, this allows you to get the current and historical health of your Microsoft services. If you are experiencing problems with a Microsoft service, you can check service health to determine whether there is a known issue with a resolution in progress before calling support or spending time troubleshooting. For Message Center, this allows you to keep track of upcoming changes, including new and changed features and other important announcements.
+### Get service health and message center posts for a tenant
+Administrators can get current or historical health data of supported Microsoft services. When experiencing problems with a Microsoft service, they can check its health status to verify if an issue has been identified with a resolution in progress, before calling for support or spending time troubleshooting. 
 
-### Integrate Service Communications data into custom workflows
-* Integrate active Service Health issues directly into custom applications, to triager and share with the impacted audiences.
-* Enable custom workflows to review, assign and triage change communication through Message Center.
+Administrators can regularly review message center posts to keep track of upcoming new features and updates, and other important announcements. They can then anticipate how these changes may affect users and plan accordingly.
 
-## Common Service Communications API operations
+### Integrate service communications data into custom workflows
+App developers can integrate active service health issues directly into custom applications, allowing administrators to triage and share status information with impacted audiences.
 
-|Operation|Request|
+Apps can enable custom workflows for administrators to review, assign, and triage change communications from the message center.
+
+## Common service communications API use cases
+
+|Use cases|API requests|
 |:--------|:--|
 | List health overviews for tenant | [List healthOverviews](/graph/api/serviceannouncement-list-healthoverviews?view=graph-rest-beta&preserve-view=true) |
 | Get specific service health information for tenant | [Get serviceHealth](/graph/api/servicehealth-get?view=graph-rest-beta&preserve-view=true) |
@@ -36,4 +39,4 @@ The Service Communications API provides Service Health and Message Center posts 
 
 - Try service communications sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=admin%2FserviceAnnouncement%2FhealthOverviews&version=beta).
 
-- Learn more about [Service Communications API](/graph/api/resources/serviceannouncement?view=graph-rest-beta&preserve-view=true).
+- Learn more about the [service communications API](/graph/api/resources/serviceannouncement?view=graph-rest-beta&preserve-view=true).
