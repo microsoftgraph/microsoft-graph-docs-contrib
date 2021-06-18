@@ -13570,6 +13570,10 @@ items:
           href: api/userscopeteamsappinstallation-get-chat.md
         - name: List permission grants
           href: api/chat-list-permissiongrants.md
+        - name: List operations
+          href: api/chat-list-operations.md
+        - name: Get operation
+          href: api/teamsasyncoperation-get.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
