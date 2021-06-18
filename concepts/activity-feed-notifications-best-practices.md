@@ -22,10 +22,13 @@ When you implement activity feed notifications, keep the following points in min
 * Users can manage notification settings only after the selected app sends a notification.
 * The icon for each notification is included in the app manifest. Microsoft Graph does not support customizing the icon.
 * Priority notifications are not supported.
+
+Apply the following best practices to your activity feed notifications:
+
 * Localize the content in a notification toast or feed. The localization happens only if the app’s content is [localized](/platform/concepts/build-and-test/apps-localization).
 * Provide appropriate titles and descriptions for your **Activity Types**. Use short titles, such as **@mention** and **Announcements**. Avoid long titles, such as **User at-mentioned activity** and **Post creation activity**.
-* Notifications should convey important information for the user. For example, Lynne mentioned you in a conversation.
-* Avoid sending notifications that are promotional in nature. For example, Try the new feature in the Cycling app!
+* Notifications should convey important information for the user. For example: Lynne mentioned you in a conversation.
+* Avoid sending notifications that are promotional in nature. For example: Try the new feature in the Cycling app!
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
 
     > [!NOTE]
@@ -46,11 +49,11 @@ Microsoft Teams displays notifications in both activity feed and toast formats. 
 
 ## Activity feed notifications or bot framework messages
 
-Use the type of notifications based on need. The following section helps you to select the required type of notification as per functionality and usage. Don't use both types of notifications, you can either use activity feed notifications or bot framework messages to notify users: 
+You can use either activity feed notifications or bot framework messages, but don't use both notification types. The following sections describe the notification types and when to use each. 
 
 ### Activity feed notifications
 
-The activity feed notifications land in the activity feed and can include links to various locations. These notifications help you with the following: 
+Activity feed notifications appear in the activity feed and can include links to various locations. These notifications: 
 * Allow the user to take action or triage the notification.
 * Lead the user to a tab in a chat or channel, a personal app, or a chat or channel message. 
 
