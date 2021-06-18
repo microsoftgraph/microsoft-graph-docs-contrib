@@ -3,6 +3,24 @@
         {
           "ChangeList": [
               {
+                  "Id": "19abfcc5-26d8-4b09-a8b7-14b3d575bc0d",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "accesspackage",
+                  "ChangeType": "Addition",
+                  "Description": "Added navigational properties on [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-beta).",
+                  "Target": "accesspackage"
+              }
+          ],
+          "Id": "19abfcc5-26d8-4b09-a8b7-14b3d575bc0d",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2021-06-17T22:00:01Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Governance"
+        },
+        {
+          "ChangeList": [
+              {
                   "Id": "1542fba3-8dbc-11eb-a57c-31dcdef91872",
                   "ApiChange": "Property",
                   "ChangedApiName": "registrationEnforcement",
