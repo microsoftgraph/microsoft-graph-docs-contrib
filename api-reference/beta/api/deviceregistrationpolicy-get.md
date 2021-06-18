@@ -6,8 +6,8 @@ localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
-
 # Get deviceRegistrationPolicy
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -38,15 +38,14 @@ One of the following permissions is required to call this API. To learn more, in
 GET /policies/deviceRegistrationPolicy
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -99,4 +98,3 @@ Content-Type: application/json
     }
 }
 ```
-
