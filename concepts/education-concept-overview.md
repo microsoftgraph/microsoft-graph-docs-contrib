@@ -28,15 +28,13 @@ The following are some of the scenarios that the roster APIs enable:
 
 ### Use Microsoft Teams to create class assignments in an assignments tab
 
-> [!VIDEO https://youtu.be/JePYam-hyUU?t=70]
-
 You can use the assignment-related education APIs to integrate with assignments in Microsoft Teams. Microsoft Teams in Microsoft 365 for Education is based on the same education APIs, and provides a use case for what you can do with the APIs. Your app can use these APIs to interact with assignments throughout the assignment lifecycle.
 
 The assignment APIs provide the following key resources:
+
 •	[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-1.0) - The core object of the assignments API. Represents a task or unit of work assigned to a student or team member in a class as part of their study.
 •	[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-1.0) - Represents the resources that an individual (or group) submits for an assignment and the associated grade and feedback for that assignment.
-•	[educationResource](/graph/api/resources/educationresource?view=graph-rest-1.0) - Represents the learning object that is being assigned or submitted. An #educationResource# is associated with an #educationAssignment# and/or an #educationSubmission#
-
+•	[educationResource](/graph/api/resources/educationresource?view=graph-rest-1.0) - Represents the learning object that is being assigned or submitted. An **educationResource** is associated with an **educationAssignment** and/or an **educationSubmission**.
 
 
 With the assignment API, your app can interact with the assignment service outside of Microsoft Teams. Microsoft Teams will handle distribution, due dates, and grading while your system can provide a rich learning experience to students.
