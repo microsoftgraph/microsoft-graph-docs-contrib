@@ -43,8 +43,6 @@ The following is an example of the response, which contains one message that mat
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
-
-{
 {
     "@odata.context": "https://canary.graph.microsoft.com/testprodbetapersoninsearch/$metadata#microsoft.graph.searchResponse",
     "value": [
