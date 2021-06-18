@@ -128,7 +128,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 
 The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition**. This includes reviewing access for multiple principals or groups of principals to multiple resources.
 
-### Example 1: Review access of all inactive guest users to an application
+### Example 1: Review access of all inactive guest users to groups
 
 ```http
 "scope": {
@@ -144,7 +144,7 @@ The **principalResourceMembershipsScope** exposes the **principalScopes** and **
     "resourceScopes": [
         {
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/servicePrincipals/{serviceprincipal id}",
+            "query": "/groups",
             "queryType": "MicrosoftGraph"
         }
     ]
