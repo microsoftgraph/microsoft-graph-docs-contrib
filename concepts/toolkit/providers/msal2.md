@@ -41,22 +41,53 @@ Initializing the MSAL 2 provider in HTML is the simplest way to create a new pro
 You can provide more options by initializing the provider in JavaScript.
 
 ```ts
-    import {Providers, LoginType} from '@microsoft/mgt-element';
-    import {Msal2Provider, PromptType} from '@microsoft/mgt-msal2-provider';
+    import {Providers} from '@microsoft/mgt-element';
+    import {Msal2Provider, Msal2Config, Msal2PublicClientApplicationConfig} from '@microsoft/mgt-msal2-provider';
 
     // initialize the auth provider globally
-    Providers.globalProvider = new Msal2Provider({
-      clientId: 'REPLACE_WITH_CLIENTID',
-      scopes?: string[],
-      authority?: string,
-      redirectUri?: string,
-      loginType?: LoginType, // LoginType.Popup or LoginType.Redirect (redirect is default)
-      prompt?: PromptType, // PromptType.CONSENT, PromptType.LOGIN or PromptType.SELECT_ACCOUNT
-      sid?: string, // Session ID
-      loginHint?: string,
-      domainHint?: string,
-      options?: Configuration // msal js Configuration object
-    });
+    Providers.globalProvider = new Msal2Provider(config: Msal2Config | Msal2PublicClientApplicationConfig);
+```
+
+You can configure the `Msal2Provider` constructor parameter in two ways, as described in the following sections.
+
+#### Provide a `clientId` to create a new `PublicClientApplication`
+
+This option makes sense when Graph Toolkit is responsible for all authentication in your application.
+
+```ts
+interface Msal2Config {
+  clientId: string;
+  scopes?: string[];
+  authority?: string;
+  redirectUri?: string;
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  prompt?: PromptType; // PromptType.CONSENT, PromptType.LOGIN or PromptType.SELECT_ACCOUNT
+  sid?: string; // Session ID
+  loginHint?: string;
+  domainHint?: string;
+  options?: Configuration // msal-browser Configuration object
+}
+```
+
+#### Pass an existing `PublicClientApplication` in the `publicClientApplication` property.
+
+Use this when your app uses MSAL functionality beyond what's exposed by the `Msal2Provider` and other Microsoft Graph Toolkit features. This is particularly appropriate if a framework automatically instantiates and exposes a `PublicClientApplication` for you; for example, when using [msal-angular](/azure/active-directory/develop/tutorial-v2-angular). See the `angular-app` sample in the Microsoft Graph Toolkit [repo](https://github.com/microsoftgraph/microsoft-graph-toolkit) for further guidance.
+
+Be sure to understand opportunities for collisions when using this option. By its very nature, there is a risk that the `Msal2Provider` can change the state of a session, for example by having the user sign in or consent to additional scopes. Make sure that your app and other frameworks respond gracefully to these changes in state, or consider using a [custom provider](./custom.md) instead.
+
+```ts
+interface Msal2PublicClientApplicationConfig {
+  publicClientApplication: PublicClientApplication;
+  scopes?: string[];
+  authority?: string;
+  redirectUri?: string;
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  prompt?: PromptType; // PromptType.CONSENT, PromptType.LOGIN or PromptType.SELECT_ACCOUNT
+  sid?: string; // Session ID
+  loginHint?: string;
+  domainHint?: string;
+  options?: Configuration // msal-browser Configuration object
+}
 ```
 
 ## Creating an app/client ID
