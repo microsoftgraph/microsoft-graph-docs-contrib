@@ -109,7 +109,7 @@ The decrypted notification payload looks like the following. The payload conform
   "topic": null,
   "createdDateTime": "2021-06-03T14:25:04+05:30",
   "lastUpdatedDateTime": "2021-06-03T14:25:04.387Z",
-  "chatType": "OneOnOne",
+  "chatType": "oneOnOne",
   "members": [
     {
       "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
