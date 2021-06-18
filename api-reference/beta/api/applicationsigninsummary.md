@@ -25,7 +25,7 @@ Represents an application sign-in summary.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |appDisplayName|String|Name of the application that the user signed into.|
-|appId|String|  ID of the application that the user signed into.|
+|appId|String|  ID of the application in which the user signed in.|
 |failedSignInCount|Int64|Count of failed sign-ins made by the application.|
 |successPercentage|Int32|Percentage of successful sign-ins made by the application.|
 |successfulSignInCount|Int64|Count of successful sign-ins made by the application.|
@@ -67,5 +67,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
