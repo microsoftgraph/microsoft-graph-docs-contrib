@@ -3056,10 +3056,10 @@
         {
           "Id": "2be0f907-b973-4695-8792-380f383d9779",
           "ApiChange": "Method",
-          "ChangedApiName": "chat",
+          "ChangedApiName": "teamsAsyncOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [Get operation on chat](https://docs.microsoft.com/en-us/graph/api/chat-get-operations?view=graph-rest-beta) method.",
-          "Target": "chat"
+          "Description": "Added the [Get teamsAsyncOperation](https://docs.microsoft.com/en-us/graph/api/teamsasyncoperation-get?view=graph-rest-beta) method.",
+          "Target": "teamsAsyncOperation"
         },
         {
           "Id": "2be0f907-b973-4695-8792-380f383d9779",

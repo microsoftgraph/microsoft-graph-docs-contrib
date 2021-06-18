@@ -1,21 +1,23 @@
 ---
-title: "Get operation on chat"
-description: "Retrieve an operation on a chat."
+title: "Get teamsAsyncOperation"
+description: "Get the details of a teamsAsyncOperation."
 author: "jecha"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get operation on chat
+# Get teamsAsyncOperation
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the specified [Teams async operation](../resources/teamsasyncoperation.md) that ran or is running on a [chat](../resources/chat.md).
+Get the specified [Teams async operation](../resources/teamsasyncoperation.md) that ran or is running on a specific resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+The following permissions are for getting the operation on a chat:
 
 | Permission type                        | Permissions (from least to most privileged)|
 | :------------------------------------- | :--------------------------------------------------- |
@@ -52,7 +54,7 @@ Do not supply a request body for this method.
 
 If successful, this returns a `200 OK` response code and a [teamsAsyncOperation](../resources/teamsasyncoperation.md) object in the response body.
 
-## Examples
+## Example: Get operation on chat
 
 ### Request
 <!-- {

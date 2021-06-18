@@ -26,7 +26,7 @@ When the request completes successfully, the status will be "succeeded" and the 
 |  Method                                                                   |  Return Type                                                                     | Description                                                       | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
 | [List operations on a chat](../api/chat-list-operations.md)               | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List async operations that ran or are running on a specific chat. |
-| [Get operation on chat](../api/chat-get-operations.md)                   | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | Get an async operation that ran or is running on a specific chat. |
+| [Get operation](../api/teamsasyncoperation-get.md)                   | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | Get an async operation that ran or is running on a specific resource. |
 
 ## Properties
 
