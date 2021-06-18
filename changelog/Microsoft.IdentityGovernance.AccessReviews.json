@@ -195,7 +195,7 @@
                 "Target": "accessReviewScope"
               },
               {
-                "Id": "cfa47c2f-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessReviewQueryScope",
                 "ChangeType": "Addition",
@@ -203,7 +203,7 @@
                 "Target": "accessReviewQueryScope"
               },
               {
-                "Id": "cfa6e0f9-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "principalResourceMembershipsScope",
                 "ChangeType": "Addition",
@@ -211,7 +211,7 @@
                 "Target": "principalResourceMembershipsScope"
               },
               {
-                "Id": "cfa942ae-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessReviewInactiveUsersQueryScope",
                 "ChangeType": "Addition",
@@ -219,7 +219,7 @@
                 "Target": "accessReviewInactiveUsersQueryScope"
               },
               {
-                "Id": "cfaba5e9-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessReviewApplyAction",
                 "ChangeType": "Addition",
@@ -227,7 +227,7 @@
                 "Target": "accessReviewApplyAction"
               },
               {
-                "Id": "cfae08da-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "removeAccessApplyAction",
                 "ChangeType": "Addition",
@@ -235,7 +235,7 @@
                 "Target": "removeAccessApplyAction"
               },
               {
-                "Id": "cfb0685b-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "disableAndDeleteUserApplyAction",
                 "ChangeType": "Addition",
@@ -243,7 +243,7 @@
                 "Target": "disableAndDeleteUserApplyAction"
               },
               {
-                "Id": "cfb9f426-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessReviewScheduleSettings",
                 "ChangeType": "Addition",
@@ -251,7 +251,7 @@
                 "Target": "accessReviewScheduleSettings"
               },
               {
-                "Id": "cfbc54ee-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessReviewScheduleDefinition",
                 "ChangeType": "Addition",
@@ -259,7 +259,7 @@
                 "Target": "accessReviewScheduleDefinition"
               },
               {
-                "Id": "cfbeb986-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessReviewInstance",
                 "ChangeType": "Addition",
@@ -267,7 +267,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "cfc11be2-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessReviewInstanceDecisionItem",
                 "ChangeType": "Addition",
@@ -275,7 +275,7 @@
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
-                "Id": "cfc37ba7-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "servicePrincipalIdentity",
                 "ChangeType": "Addition",
@@ -283,7 +283,7 @@
                 "Target": "servicePrincipalIdentity"
               },
               {
-                "Id": "cfc5e0ba-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessReviewInstanceDecisionItemResource",
                 "ChangeType": "Addition",
@@ -291,7 +291,7 @@
                 "Target": "accessReviewInstanceDecisionItemResource"
               },
               {
-                "Id": "cfde943d-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Method",
                 "ChangedApiName": "stop",
                 "ChangeType": "Addition",
@@ -299,7 +299,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "cfe0fa0c-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Method",
                 "ChangedApiName": "sendReminder",
                 "ChangeType": "Addition",
@@ -307,7 +307,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "cfe35b4a-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Method",
                 "ChangedApiName": "resetDecisions",
                 "ChangeType": "Addition",
@@ -315,7 +315,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "cfe5bd1f-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Method",
                 "ChangedApiName": "applyDecisions",
                 "ChangeType": "Addition",
@@ -323,7 +323,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "cfe82052-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Method",
                 "ChangedApiName": "acceptRecommendations",
                 "ChangeType": "Addition",
@@ -331,7 +331,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "cfea96bc-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Method",
                 "ChangedApiName": "batchRecordDecisions",
                 "ChangeType": "Addition",
@@ -339,7 +339,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "cfecfb44-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Method",
                 "ChangedApiName": "filterByCurrentUser",
                 "ChangeType": "Addition",
@@ -347,7 +347,7 @@
                 "Target": "accessReviewScheduleDefinition"
               },
               {
-                "Id": "cfef5c93-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Method",
                 "ChangedApiName": "filterByCurrentUser",
                 "ChangeType": "Addition",
@@ -355,7 +355,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "cff1bf16-9646-11eb-a4ee-0754add743a7",
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
                 "ApiChange": "Method",
                 "ChangedApiName": "filterByCurrentUser",
                 "ChangeType": "Addition",
@@ -366,7 +366,7 @@
             "Id": "cf9af399-9646-11eb-a4ee-0754add743a7",
             "Cloud": "prd",
             "Version": "v1.0",
-            "CreatedDateTime": "2021-04-05T19:40:43.984Z",
+            "CreatedDateTime": "2021-06-18T19:40:43.984Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Governance"
           },
@@ -381,7 +381,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "c50f5d69-8d09-4912-9e9f-c3c12a045509",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Method",
                 "ChangedApiName": "resetDecisions",
                 "ChangeType": "Addition",
@@ -389,7 +389,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "ba5b2d2e-be5b-4286-8c74-9ae7e8eb8598",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Method",
                 "ChangedApiName": "filterByCurrentUser",
                 "ChangeType": "Addition",
@@ -397,7 +397,7 @@
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
-                "Id": "b224bb00-2560-45cb-9a46-ccd5fe45f540",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Method",
                 "ChangedApiName": "Get",
                 "ChangeType": "Addition",
@@ -405,7 +405,7 @@
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
-                "Id": "42b0b108-359f-4fd2-b413-e8f04625a912",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Method",
                 "ChangedApiName": "filterByCurrentUser",
                 "ChangeType": "Addition",
@@ -413,7 +413,7 @@
                 "Target": "accessReviewScheduleDefinition"
               },
               {
-                "Id": "f675e983-a73a-4636-a347-43b304e232fe",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Property",
                 "ChangedApiName": "principalLink",
                 "ChangeType": "Addition",
@@ -421,7 +421,7 @@
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
-                "Id": "22468fbc-8578-4e00-bcdc-3651627a0574",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Property",
                 "ChangedApiName": "resourceLink",
                 "ChangeType": "Addition",
@@ -429,7 +429,7 @@
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
-                "Id": "55fabf4b-a3c7-4422-b0fc-6bcbf744f571",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Property",
                 "ChangedApiName": "displayName",
                 "ChangeType": "Deletion",
@@ -437,7 +437,7 @@
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
-                "Id": "d4a214f6-79f8-4c43-9417-1b1a6d2d257f",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Property",
                 "ChangedApiName": "fallbackReviewers",
                 "ChangeType": "Addition",
@@ -445,7 +445,7 @@
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
-                "Id": "557dee29-f6b9-43a8-8d97-82b79d45fb1c",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Resource",
                 "ChangedApiName": "accessreview",
                 "ChangeType": "Deprecation",
@@ -453,7 +453,7 @@
                 "Target": "accessReview"
               },
               {
-                "Id": "cf39258c-7902-420c-80b2-7390dff32705",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Method",
                 "ChangedApiName": "accessreviewinstance-pendingaccessreviewinstances",
                 "ChangeType": "Deprecation",
@@ -461,7 +461,7 @@
                 "Target": "accessReviewInstance"
               },
               {
-                "Id": "f975504c-79c1-41ec-8b15-8b98c3f0a9f0",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Method",
                 "ChangedApiName": "accessreviewinstancedecisionitem-listpendingapproval",
                 "ChangeType": "Deprecation",
@@ -469,7 +469,7 @@
                 "Target": "accessReviewInstanceDecisionItem"
               },
               {
-                "Id": "j976234c-79c1-41ec-8b15-8b98c3f0a985",
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
                 "ApiChange": "Property",
                 "ChangedApiName": "backupReviewers",
                 "ChangeType": "Deprecation",
@@ -480,7 +480,7 @@
             "Id": "49ebf6ed-e100-40e8-812f-781f58b264ce",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2021-04-05T19:40:43.984Z",
+            "CreatedDateTime": "2021-06-18T19:40:43.984Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Governance"
           }
