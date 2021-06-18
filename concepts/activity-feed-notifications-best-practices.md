@@ -47,7 +47,7 @@ Microsoft Teams displays notifications in both activity feed and toast formats. 
 * Verify that your app does not send more than 10 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 10.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
 
-## Activity feed notifications or bot framework messages
+## Activity feed notifications vs. bot framework messages
 
 You can use either activity feed notifications or bot framework messages, but don't use both notification types. The following sections describe the notification types and when to use each. 
 
