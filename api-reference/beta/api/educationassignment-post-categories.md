@@ -1,13 +1,13 @@
 ---
-title: "Add educationCategories"
-description: "Add an existing educationCategory to this educationAssignment"
+title: "Create educationCategories"
+description: "Add an existing educationCategory to an educationAssignment"
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# Add educationCategories
+# Create educationCategories
 
 Namespace: microsoft.graph
 
