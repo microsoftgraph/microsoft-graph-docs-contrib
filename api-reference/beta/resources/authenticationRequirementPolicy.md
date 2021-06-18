@@ -10,15 +10,15 @@ doc_type: resourcePageType
 # authenticationRequirementPolicy resource type
 
 Namespace: microsoft.graph
-Source of authentication requirement, such as Conditional Access, per-user MFA, Identity Protection, and Security Defaults. 
+Source of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults. 
 
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|requirementProvider|requirementProvider|Represents the source of authentication|
-|detail|String|Source of authentication requirement, such as Conditional Access, per-user MFA, Identity Protection, and Security Defaults. |
+|requirementProvider|requirementProvider|Represents the source of authentication.|
+|detail|String|Source of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults. |
 
 
 ## JSON representation

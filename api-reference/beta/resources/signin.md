@@ -34,7 +34,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|Additional authentication processing details, such as the agent name in case of PTA/PHS or Server/farm name in case of federated authentication.|
 |authenticationRequirement | String | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed.|
-|authenticationRequirementPolicies|[authenticationRequirementPolicy](authenticationRequirementPolicy.md) collection|Sources of authentication requirement, such as Conditional Access, per-user MFA, Identity Protection, and Security Defaults.|
+|authenticationRequirementPolicies|[authenticationRequirementPolicy](authenticationRequirementPolicy.md) collection|Sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.|
 |clientAppUsed|String|The legacy client used for sign-in activity. For example: `Browser`, `Exchange Active Sync`, `Modern clients`, `IMAP`, `MAPI`, `SMTP`, or `POP`.|
 |conditionalAccessStatus|conditionalAccessStatus| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`.|
 |correlationId|String|The identifier that's sent from the client when sign-in is initiated. This is used for troubleshooting the corresponding sign-in activity when calling for support.|
@@ -140,5 +140,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
