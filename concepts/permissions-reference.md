@@ -538,6 +538,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _TeamsAppInstallation.Read.Chat_ | Read which apps are installed in this chat.                   | Allows the app to read the Teams apps that are installed in this chat along with the permissions granted to each app, without a signed-in user.  |No | No |
 | _OnlineMeeting.ReadBasic.Chat_   | Read basic properties of a meeting associated with this chat. | Allows the app to read basic properties—such as name, schedule, organizer, and join link—of a meeting associated with this chat, without a signed-in user. |No | No |
 
+>[!NOTE]
+> Currently, these permissions are supported only in beta version of Microsoft Graph.
+
 ## ChatMessage permissions ([private preview](#permissions-availability-status))
 
 #### Delegated permissions
@@ -1900,7 +1903,7 @@ Taxonomy permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | Get a list of all teams | Get a list of all teams, without a signed-in user.	| Yes | No |
 | _Team.Create_  | Create teams | Create teams, without a signed-in user. | Yes | No |
-|_Teamwork.Migrate.All_|Manage migration to Microsoft Teams|Creating and managing resources for migration to Microsoft Teams|Yes|Yes|
+| _Teamwork.Migrate.All_|Manage migration to Microsoft Teams|Creating and managing resources for migration to Microsoft Teams|Yes|Yes|
 
 ## Team settings permissions
 
@@ -1991,26 +1994,26 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamMember.Read.All_ | Read the members of all teams. | Read the members of all teams, without a signed-in user.	| Yes | No |
 | _TeamMember.ReadWrite.All_ | Add and remove members from all teams. | Add and remove members from all teams, without a signed-in user. Also allows changing a team member's role, for example from owner to non-owner. | Yes | No |
 
-## Teams resource-specific consent permissions
+## Team resource-specific consent permissions
 
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| TeamSettings.Read.Group | Read this team's settings. | Read this team's settings, without a signed-in user. |No | No |
-| TeamSettings.ReadWrite.Group | Update the settings for this team. | Read and write this team's settings, without a signed-in user. |No | No |
-| ChannelSettings.Read.Group | Read the names, descriptions, and settings of this team’s channels. | Read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
-| ChannelSettings.ReadWrite.Group | Update the names, descriptions, and settings of this team’s channels.| Update this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
-|Channel.Create.Group | Create channels in this team. | Create channels in this team, without a signed-in user. |No | No |
-|Channel.Delete.Group | Delete this team's channels. | Delete this team's channels, without a signed-in user. |No | No |
-|ChannelMessage.Read.Group | Read the team’s channel messages. | Allows an app to read this team's channel's messages, without a signed-in user. |No | No |
-|TeamsAppInstallation.Read.Group | See which apps are installed in this team. | See which apps are installed in this team, without a signed-in user. |No | No |
-|TeamsTab.Read.Group | Read this team's tabs. | Read this team's tabs, without a signed-in user. |No | No |
-|TeamsTab.Create.Group | Create tabs in this team. | Create tabs in this team, without a signed-in user. |No | No |
-|TeamsTab.ReadWrite.Group | Update this team's tabs. | Update this team's tabs, without a signed-in user. |No | No |
-|TeamsTab.Delete.Group | Delete this team's tabs. | Delete this team's tabs, without a signed-in user. |No | No |
-|TeamMember.Read.Group | Read this team's members. | Read this team's members, without a signed-in user. |No | No |
-|Member.Read.Group | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
-|Owner.Read.Group| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
-|File.Read.Group| Read this team's files and folders. | **Limited support** <br/> (Preview) Read this team's files and folders, without a signed-in users. | No | No |
+| _TeamSettings.Read.Group_ | Read this team's settings. | Read this team's settings, without a signed-in user. |No | No |
+| _TeamSettings.ReadWrite.Group_ | Update the settings for this team. | Read and write this team's settings, without a signed-in user. |No | No |
+| _ChannelSettings.Read.Group_ | Read the names, descriptions, and settings of this team’s channels. | Read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+| _ChannelSettings.ReadWrite.Group_ | Update the names, descriptions, and settings of this team’s channels.| Update this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+| _Channel.Create.Group_ | Create channels in this team. | Create channels in this team, without a signed-in user. |No | No |
+| _Channel.Delete.Group_ | Delete this team's channels. | Delete this team's channels, without a signed-in user. |No | No |
+| _ChannelMessage.Read.Group_ | Read the team’s channel messages. | Allows an app to read this team's channel's messages, without a signed-in user. |No | No |
+| _TeamsAppInstallation.Read.Group_ | See which apps are installed in this team. | See which apps are installed in this team, without a signed-in user. |No | No |
+| _TeamsTab.Read.Group_ | Read this team's tabs. | Read this team's tabs, without a signed-in user. |No | No |
+| _TeamsTab.Create.Group_ | Create tabs in this team. | Create tabs in this team, without a signed-in user. |No | No |
+| _TeamsTab.ReadWrite.Group_ | Update this team's tabs. | Update this team's tabs, without a signed-in user. |No | No |
+| _TeamsTab.Delete.Group_ | Delete this team's tabs. | Delete this team's tabs, without a signed-in user. |No | No |
+| _TeamMember.Read.Group_ | Read this team's members. | Read this team's members, without a signed-in user. |No | No |
+| _Member.Read.Group_ | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
+| _Owner.Read.Group_| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
+| _File.Read.Group_| Read this team's files and folders. | **Limited support** <br/> (Preview) Read this team's files and folders, without a signed-in users. | No | No |
 
 ## Teams settings permissions
 
@@ -2018,17 +2021,17 @@ Taxonomy permissions are valid only on work or school accounts.
 
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| Team.ReadBasic.All | Read the names and descriptions of teams| Read the names and  descriptions of teams, on behalf of the signed-in user.|No| No |
-| TeamSettings.Read.All | Read teams' settings| Read all teams' settings, on behalf of the signed-in user.|Yes| No |
-| TeamSettings.ReadWrite.All | Read and change teams' settings.| Read and change all teams' settings, on behalf of the signed-in user.|Yes| No |
+| _Team.ReadBasic.All_ | Read the names and descriptions of teams| Read the names and  descriptions of teams, on behalf of the signed-in user.|No| No |
+| _TeamSettings.Read.All_ | Read teams' settings| Read all teams' settings, on behalf of the signed-in user.|Yes| No |
+| _TeamSettings.ReadWrite.All_ | Read and change teams' settings.| Read and change all teams' settings, on behalf of the signed-in user.|Yes| No |
 
 ### Application permissions
 
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| Team.ReadBasic.All | Get a list of all teams.| Get a list of all teams, without a signed-in user.|Yes| No |
-| TeamSettings.Read.All | Read all teams' settings| Read this team's settings, without a signed-in user.|Yes| No |
-| TeamSettings.ReadWrite.All | Read and change all teams' settings| Read and change all teams' settings, without a signed-in user.|No | No |
+| _Team.ReadBasic.All_ | Get a list of all teams.| Get a list of all teams, without a signed-in user.|Yes| No |
+| _TeamSettings.Read.All_ | Read all teams' settings| Read this team's settings, without a signed-in user.|Yes| No |
+| _TeamSettings.ReadWrite.All_ | Read and change all teams' settings| Read and change all teams' settings, without a signed-in user.|No | No |
 
 ## Teams tab permissions
 
