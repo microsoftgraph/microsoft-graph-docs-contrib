@@ -32,15 +32,15 @@ Represents a cloud PC user setting.
 |:---|:---|:---|
 |id|String|Unique identifier for the cloud PC user setting. Read-only.|
 |displayName|String|The setting name displayed in the user interface. |
-|localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. Default value is `false`. To enable the local admin option, change the setting to `true`. |
-|selfServiceEnabled|Boolean|Indicates whether the self-service option is enabled. Default value is `false`. To enable the self-service option, change the setting to `true`. |
+|localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. Default value is `false`. To enable the local admin option, change the setting to `true`. If the local admin option is enabled, end user can be admin of his cloud PC device. |
+|selfServiceEnabled|Boolean|Indicates whether the self-service option is enabled. Default value is `false`. To enable the self-service option, change the setting to `true`. If the self-service option is enabled, end user is allowed to perform some self-service operations such as upgrade cloud PC through end user portal.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 |createdDateTime|DateTimeOffset|The date and time the setting was created. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection|Office 365 and security groups in Azure AD can have a set of user settings assigned.|
+|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection|Represents the set of Microsoft 365 groups and security groups in Azure AD that have cloudPCUserSetting assigned. Returned only on `$expand`. See an [example](../api/cloudpcusersetting-get.md) of getting the assignments relationship.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
