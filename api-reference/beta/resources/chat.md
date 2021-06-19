@@ -48,6 +48,9 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Add tab to chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a chat (and associated meeting).|
 |[Update tab in chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Update the properties of a tab in a chat (and associated meeting).|
 |[Remove tab from chat](../api/chat-delete-tabs.md) | None | Remove (unpin) a tab from a chat (and associated meeting).|
+| **Operations** |||
+|[List operations on chat](../api/chat-list-operations.md) | [teamsAsyncOperation](teamsAsyncOperation.md) collection | Get the list of async operations that ran or are running on the chat.|
+|[Get operation on chat](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Get a single async operation that ran or is running on the chat.|
 
 >**Note:** When using application permissions, be sure you know how you're going to get the chat ID. Because listing chats with application permissions is not supported, 
 not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
@@ -80,6 +83,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
 | permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps for the chat.|
+| operations | [teamsAsyncOperation](teamsasyncoperation.md) collection | A collection of all the Teams async operations that ran or are running on the chat. Nullable. |
 
 ## JSON representation
 
