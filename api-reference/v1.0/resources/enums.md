@@ -1821,3 +1821,13 @@ Possible values for user account types (group membership), per Windows definitio
 |enabled|
 |disabled|
 |unknownFutureValue|
+
+### approvalFilterByCurrentUserOptions values 
+
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
