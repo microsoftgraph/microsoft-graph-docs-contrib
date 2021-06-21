@@ -23,8 +23,6 @@ from the server every time.
 
 ## Limitations
 
-Delta query on calendar view does not support $orderby, $filter, $select, $expand, $search. As can be observed, the current documentation only calls out $select 
-
 When client call the delta query on calendar view with specified time range, events outside the time range that has been modified since the last delta sync call will also be returned under "@removed" with reason "deleted". This is because from the sync window perspective, these events are not part of it and are considered as removed/deleted from the window.
 
 The client can filter these removed events when doing the sync according to their scenario.
@@ -65,7 +63,7 @@ includes the encoded, desired parameters.
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
 When you do a delta query on a calendar view, expect to get all the properties you'd normally get from 
-a `GET /calendarview` request. `$select` is not supported in this case. 
+a `GET /calendarview` request. `$select`, `$orderby`,`$filter`,`$search`,`$expand`is not supported in this case. 
 
 
 ## Request headers
