@@ -524,6 +524,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ## Chat resource-specific consent permissions
 
+#### Application permissions
+
 | Permission                     | Display String                                                | Description  | Admin Consent Required | Microsoft Account supported |
 |:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
 | _ChatSettings.Read.Chat_         | Read this chat's settings.                                    | Allows the app to read this chat's settings, without a signed-in user. |No | No |
@@ -1995,6 +1997,8 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamMember.ReadWrite.All_ | Add and remove members from all teams. | Add and remove members from all teams, without a signed-in user. Also allows changing a team member's role, for example from owner to non-owner. | Yes | No |
 
 ## Team resource-specific consent permissions
+
+#### Application permissions
 
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
