@@ -17,6 +17,8 @@ Represents the announcements about changes in a service.
 
 Represents announcements such as major updates, new features in a product; for example, the publication of a new Windows feature.
 
+Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -33,17 +35,17 @@ Represents announcements such as major updates, new features in a product; for e
 |:---|:---|:---|
 |actionRequiredByDateTime|DateTimeOffset|The expected deadline of the action for the message.|
 |body|[itemBody](../resources/itembody.md)|The content type and content of the service message body.|
-|category|serviceUpdateCategory|The service message category. Possible values are: `PreventOrFixIssue`, `PlanForChange`, `StayInformed`, `unknownFutureValue`.|
-|details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about service message. This property doesn't support filters.|
-|endDateTime|DateTimeOffset|The end time of the service message.|
-|id|String|The id of the service message.|
+|category|serviceUpdateCategory|The service message category. Possible values are: `preventOrFixIssue`, `planForChange`, `stayInformed`, `unknownFutureValue`.|
+|details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about service message. This property doesn't support filters. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|endDateTime|DateTimeOffset|The end time of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|id|String|The id of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |isMajorChange|Boolean|Indicates whether the message describes a major update for the service.|
-|lastModifiedDateTime|DateTimeOffset|The last modified time of the service message.|
+|lastModifiedDateTime|DateTimeOffset|The last modified time of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |services|Collection(string)|The affected services by the service message.|
-|severity|serviceUpdateSeverity|The severity of the service message. Possible values are: `Normal`, `High`, `Critical`, `unknownFutureValue`.|
-|startDateTime|DateTimeOffset|The start time of the service message.|
+|severity|serviceUpdateSeverity|The severity of the service message. Possible values are: `normal`, `high`, `critical`, `unknownFutureValue`.|
+|startDateTime|DateTimeOffset|The start time of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |tags|Collection(string)|A collection of tags for the service message.|
-|title|String|The title of the service message.|
+|title|String|The title of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Represents user view points data of the service message.|
 
 ## Relationships

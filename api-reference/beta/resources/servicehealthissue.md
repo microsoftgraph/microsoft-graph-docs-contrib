@@ -20,6 +20,8 @@ The service health issue can be a service incident or service advisory. For exam
 * Service incident: "Exchange mailbox service is down".
 * Service advisory: "Users may experience delays in emails reception".
 
+Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -29,21 +31,21 @@ The service health issue can be a service incident or service advisory. For exam
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|classification|serviceHealthClassificationType|The type of service health issue. Possible values are: `Advisory`, `Incident`, `unknownFutureValue`.|
-|details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about service health issue. This property doesn't support filters.|
-|endDateTime|DateTimeOffset|The end time of the service issue.|
+|classification|serviceHealthClassificationType|The type of service health issue. Possible values are: `advisory`, `incident`, `unknownFutureValue`.|
+|details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about service health issue. This property doesn't support filters. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|endDateTime|DateTimeOffset|The end time of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |feature|String|The feature name of the service issue.|
 |featureGroup|String|The feature group name of the service issue.|
-|id|String|The id of the service issue.|
+|id|String|The id of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |impactDescription|String|The description of the service issue impact.|
 |isResolved|Boolean|Indicates whether the issue is resolved.|
-|lastModifiedDateTime|DateTimeOffset|The last modified time of the issue.|
-|origin|serviceHealthOrigin|Indicates the origin of the service issue. Possible values are: `Microsoft`, `ThirdParty`, `Customer`, `unknownFutureValue`.|
+|lastModifiedDateTime|DateTimeOffset|The last modified time of the issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|origin|serviceHealthOrigin|Indicates the origin of the service issue. Possible values are: `microsoft`, `thirdParty`, `customer`, `unknownFutureValue`.|
 |posts|Collection([serviceHealthIssuePost](../resources/servicehealthissuepost.md))|Collection of historical posts for the service issue.|
 |service|String|Indicates the service affected by the issue.|
-|startDateTime|DateTimeOffset|The start time of the service issue.|
-|status|serviceHealthStatus|The status of the service issue. Possible values are: `ServiceOperational`, `Investigating`, `RestoringService`, `VerifyingService`, `ServiceRestored`, `PostIncidentReviewPublished`, `ServiceDegradation`, `ServiceInterruption`, `ExtendedRecovery`, `FalsePositive`, `InvestigationSuspended`, `Resolved`, `MitigatedExternal`, `Mitigated`, `ResolvedExternal`, `Confirmed`, `Reported`, `UnknownFutureValue`.|
-|title|String|The title of the service issue.|
+|startDateTime|DateTimeOffset|The start time of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|status|serviceHealthStatus|The status of the service issue. Possible values are: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceRestored`, `postIncidentReviewPublished`, `serviceDegradation`, `serviceInterruption`, `extendedRecovery`, `falsePositive`, `investigationSuspended`, `resolved`, `mitigatedExternal`, `mitigated`, `resolvedExternal`, `confirmed`, `reported`, `unknownFutureValue`.|
+|title|String|The title of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 
 ## Relationships
 None.

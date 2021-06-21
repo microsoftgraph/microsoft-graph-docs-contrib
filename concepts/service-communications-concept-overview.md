@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 ---
 
 # Overview for accessing service health and communications in Microsoft Graph
-You can use the service communications API in Microsoft Graph to access the health status and message center posts about  Microsoft cloud services. The actual health status and posts correspond to the Microsoft 365 and Dynamics 365 services that are supported by the API and subscribed by the tenant. Currently, the API supports data for Office client apps in Microsoft 365, Dynamics 365 for CRM, and Microsoft Intune.
+You can use the service communications API in Microsoft Graph to access the health status and message center posts about Microsoft cloud services. The actual health status and posts correspond to the Microsoft 365 and Dynamics 365 services that are supported by the API and subscribed by the tenant. Currently, the API supports data for Office client apps in Microsoft 365, Dynamics 365 for CRM, and Microsoft Intune.
 
 ## Why integrate with service health and communications data?
 

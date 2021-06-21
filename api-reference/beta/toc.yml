@@ -13090,10 +13090,10 @@ items:
       - name: Service health
         href: resources/servicehealth.md
         items:
-        - name: Get service health
-          href: api/servicehealth-get.md
         - name: List health overviews
           href: api/serviceannouncement-list-healthoverviews.md
+        - name: Get service health
+          href: api/servicehealth-get.md
       - name: Service health issue
         href: resources/servicehealthissue.md
         items:

@@ -2271,56 +2271,56 @@ Possible values for user account types (group membership), per Windows definitio
 
 |Member|
 |:---|
-|Advisory|
-|Incident|
+|advisory|
+|incident|
 |unknownFutureValue|
 
 ### serviceHealthOrigin values 
 
 |Member|
 |:---|
-|Microsoft|
-|ThirdParty|
-|Customer|
+|microsoft|
+|thirdParty|
+|customer|
 |unknownFutureValue|
 
 ### serviceHealthStatus values 
 
 |Member|
 |:---|
-|ServiceOperational|
-|Investigating|
-|RestoringService|
-|VerifyingService|
-|ServiceRestored|
-|PostIncidentReviewPublished|
-|ServiceDegradation|
-|ServiceInterruption|
-|ExtendedRecovery|
-|FalsePositive|
-|InvestigationSuspended|
-|Resolved|
-|MitigatedExternal|
-|Mitigated|
-|ResolvedExternal|
-|Confirmed|
-|Reported|
-|UnknownFutureValue|
+|serviceOperational|
+|investigating|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|resolved|
+|mitigatedExternal|
+|mitigated|
+|resolvedExternal|
+|confirmed|
+|reported|
+|unknownFutureValue|
 
 ### serviceUpdateCategory values 
 
 |Member|
 |:---|
-|PreventOrFixIssue|
-|PlanForChange|
-|StayInformed|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
 |unknownFutureValue|
 
 ### serviceUpdateSeverity values 
 
 |Member|
 |:---|
-|Normal|
-|High|
-|Critical|
+|normal|
+|high|
+|critical|
 |unknownFutureValue|
