@@ -19,9 +19,9 @@ Represents devices in the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| includeDevices | String collection | States in the scope of the policy. `All` is the only allowed value. |
-| excludeDevices | String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
-| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filter defining the dynamic-device-syntax rule to include/exclude devices. A filter can use device properties (e.g. extension attributes) to include/exclude them. |
+| includeDevices | String collection | States in the scope of the policy. `All` is the only allowed value. Cannot be set if *deviceFIlter* is set. |
+| excludeDevices | String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. Cannot be set if *deviceFIlter* is set. |
+| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filter defining the dynamic-device-syntax rule to include/exclude devices. A filter can use device properties (e.g. extension attributes) to include/exclude them. Cannot be set if *includeDevices* or *excludeDevices* is set. |
 | includeDeviceStates (deprecated)| String collection | States in the scope of the policy. `All` is the only allowed value. |
 | excludeDeviceStates (deprecated)| String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
 
