@@ -1,5 +1,5 @@
 ---
-title: "teamsAppInstallation in chat: upgrade"
+title: "teamsAppInstallation: upgrade"
 description: "Update an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
 author: "subray"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# teamsAppInstallation in chat: upgrade
+# teamsAppInstallation: upgrade
 
 Namespace: microsoft.graph
 
