@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+**Attendee List**
+
 The default behavior of Update event is to send only to modified attendees if the attendee list is the only thing that changed. 
 
-**Note:** This requires clients to send only those parameters in the request that were actually updated, rather than sending all properties each time in the `PATCH`.
+**Note** This requires clients to send only those parameters in the request that were actually updated, rather than sending all properties each time in the `PATCH`.
 
 **When Distribution List (DL) is part of attendee list**
 
