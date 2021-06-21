@@ -20,7 +20,7 @@ To get change notifications for any change in chat's property across tenant or c
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.ReadBasic.All, Chat.Read.All   | beta|
+|Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All   | beta|
 
 #### Example
 
@@ -48,9 +48,11 @@ To get change notifications for any change in chats' property of a specific chat
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Chat.ReadBasic, Chat.Read | Not supported. |
+|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.ReadBasic.All, Chat.Read.All    | beta |
+|Application | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All | beta |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 #### Example
 

@@ -19,7 +19,7 @@ To get change notifications for membership change in a any chat across tenant, s
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChatMember.Read.All, Chat.ReadBasic.All, Chat.Read.All   | beta|
+|Application | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta|
 
 #### Example
 
@@ -46,9 +46,11 @@ To get change notifications for membership change in a particular chat, subscrib
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | ChatMember.Read, Chat.ReadBasic, Chat.Read | beta |
+|Delegated (work or school account) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | beta |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChatMember.Read.All, Chat.ReadBasic.All, Chat.Read.All   | beta |
+|Application | ChatMember.Read.Chat*, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 #### Example
 
