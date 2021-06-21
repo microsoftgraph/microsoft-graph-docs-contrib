@@ -7,7 +7,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "setPresence",
           "ChangeType": "Addition",
-          "Description": "Added the setPresence action.",
+          "Description": "Added the [setPresence](https://docs.microsoft.com/en-us/graph/api/presence-setpresence?view=graph-rest-beta) action.",
           "Target": "presence"
         },
         {
@@ -15,13 +15,13 @@
           "ApiChange": "Action",
           "ChangedApiName": "clearPresence",
           "ChangeType": "Addition",
-          "Description": "Added the clearPresence action.",
+          "Description": "Added the [clearPresence](https://docs.microsoft.com/en-us/graph/api/presence-clearpresence?view=graph-rest-beta) action.",
           "Target": "presence"
         }
       ],
       "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
       "Cloud": "prd",
-      "Version": "v1.0",
+      "Version": "beta",
       "CreatedDateTime": "2021-06-14T00:00:00",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""

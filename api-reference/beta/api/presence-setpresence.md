@@ -32,12 +32,13 @@ The expiration of a presence session is configurable with the `expirationDuratio
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions            |
-| :-------------- | :--------------------- |
-| Application     | Presence.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not Supported.                              |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | Presence.ReadWrite.All                      |
 
 ## HTTP Request
-Request to set a presence session:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/presence/setPresence
@@ -81,7 +82,6 @@ Below example shows the application with ID `22553876-f5ab-4529-bffb-cfe50aa89f8
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "set-presence"

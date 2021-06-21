@@ -14,19 +14,21 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]
-> Please refer to [Presence: setPresence - concept: presence sessions](presence-setpresence.md#concept-presence-sessions) for the concept of presence sessions.
+> 
+> For details about the concept of presence sessions, see [Presence: setPresence - concept: presence sessions](presence-setpresence.md#concept-presence-sessions).
 
-The application can clear its presence session. If a user's only presence session (all sessions from Teams clients and applications adding together) gets cleared, the user's presence will change to `Offline/Offline`.
+The application can clear its presence session. If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions            |
-| :-------------- | :--------------------- |
-| Application     | Presence.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not Supported.                              |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | Presence.ReadWrite.All                      |
 
 ## HTTP Request
-Request to clear a presence session:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/presence/clearPresence
@@ -35,7 +37,7 @@ POST /users/{userId}/presence/clearPresence
 ## Request headers
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -48,7 +50,8 @@ In the request body, provide a JSON object with the following parameters.
 
 
 > [!IMPORTANT]
-> * When calling this API, the ID of the application should be supplied as the `sessionId`.
+> 
+> The ID of the application should be provided as the `sessionId`.
 
 ## Response
 If successful, this method returns a `200 OK` response code.
@@ -62,7 +65,6 @@ Below example shows the application with ID `22553876-f5ab-4529-bffb-cfe50aa89f8
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "clear--presence"
