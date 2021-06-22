@@ -49,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 
 > [!IMPORTANT]
 > 
-> The ID of the application should be provided as the `sessionId`.
+> Provide the ID of the application as `sessionId` in the request.
 
 ## Response
 If successful, this method returns a `200 OK` response code.
