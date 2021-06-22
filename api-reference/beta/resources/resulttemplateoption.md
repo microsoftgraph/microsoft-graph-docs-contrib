@@ -19,7 +19,7 @@ Provides the search result templates options for render connectors search result
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|enableResultTemplate|Boolean|Indicates whether search display layouts are enabled. If enabled, user will get  the result template to render the search results content in **resultTemplates** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true). The result template is based on [Adaptive Cards](https://adaptivecards.io/). This property is optional.|
+|enableResultTemplate|Boolean|Indicates whether search display layouts are enabled. If enabled, the user will get the result template to render the search results content in the **resultTemplates** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true). The result template is based on [Adaptive Cards](https://adaptivecards.io/). This property is optional.|
 
 
 ## JSON representation
