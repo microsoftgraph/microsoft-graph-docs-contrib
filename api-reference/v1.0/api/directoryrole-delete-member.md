@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -86,8 +86,6 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3
 
 
 #### Response
-
-Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -101,7 +99,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-Here is an example of the request. Replace `9f06204d-73c1-4d4c-880a-6edb90606fd8` with the value of your roleTemplateId and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of your user of directory object.
+The following is an example of the request. Replace `9f06204d-73c1-4d4c-880a-6edb90606fd8` with the value of your roleTemplateId and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of your user of directory object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -132,8 +130,6 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-7
 
 
 #### Response
-
-Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

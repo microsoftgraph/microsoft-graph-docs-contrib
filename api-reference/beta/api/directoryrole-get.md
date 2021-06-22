@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and [directoryRole](
 
 ### Example 1: Get the definition of a directory role using role id
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +102,7 @@ Content-type: application/json
 
 ### Example 2: Get the definition of a directory role using roleTemplateId
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 
 
 

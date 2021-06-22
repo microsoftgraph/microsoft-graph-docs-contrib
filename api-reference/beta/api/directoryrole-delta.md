@@ -73,7 +73,7 @@ Do not supply a request body for this method.
 
 ### Response
 
-If successful, this method returns `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
+If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
 
 - If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
 
@@ -84,7 +84,7 @@ See:</br>
 - [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
 
 ### Example
-##### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,8 +113,8 @@ GET https://graph.microsoft.com/beta/directoryRoles/delta
 ---
 
 
-##### Response
-Note: The response object shown here might be shortened for readability.
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- { 
   "blockType": "response",
   "truncated": true,

@@ -113,7 +113,7 @@ Content-type: application/json
 ### Example 2: Get the members of a directory role using roleTemplateId
 
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)

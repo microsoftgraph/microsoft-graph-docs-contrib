@@ -50,7 +50,7 @@ includes the encoded, desired parameters.
 
 ### OData query parameters
 
-This method supports OData query parameters to help customize the response.
+This method supports OData Query Parameters to help customize the response.
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.
 
@@ -71,7 +71,7 @@ Do not supply a request body for this method.
 
 ### Response
 
-If successful, this method returns `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
+If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
 - If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
 
@@ -79,7 +79,7 @@ If successful, this method returns `200 OK` response code and [directoryRole](..
 
 ### Example
 
-##### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -110,9 +110,9 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 ---
 
 
-##### Response
+#### Response
 
-Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- { 
   "blockType": "response",
   "truncated": true,
