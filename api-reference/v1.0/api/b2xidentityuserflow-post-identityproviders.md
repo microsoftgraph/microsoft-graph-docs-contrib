@@ -33,7 +33,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /identity/b2xUserFlows/{id}/identityProviders/$ref
+POST /identity/b2xUserFlows/{id}/identityProviders/$ref
 ```
 
 ## Request headers
@@ -57,6 +57,8 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_b2xuserflows_identityprovider"
@@ -64,7 +66,7 @@ The following is an example of the request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/identityProviders/$ref
+POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/identityProviders/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -72,6 +74,24 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/v1.0/identityProviders/Facebook-OAUTH"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-b2xuserflows-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-b2xuserflows-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-b2xuserflows-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

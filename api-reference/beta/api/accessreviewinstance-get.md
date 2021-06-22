@@ -33,6 +33,10 @@ In order to call this API, the signed in user must also be in a directory role t
 ```http
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}
 ```
+
+## Optional query parameters
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 None.
 
@@ -77,7 +81,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

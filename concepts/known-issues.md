@@ -344,6 +344,10 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 
 ## Users
 
+### Use the dollar ($) symbol in the userPrincipalName
+
+Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL conventions which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes as follows: `/users('$x@y.com')`.
+
 ### No instant access after creation
 
 Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response.
@@ -381,15 +385,21 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:
-  * No support for `nextLink`
-  * No support for more than 1 level of expand
-  * No support with extra parameters (`$filter`, `$select`)
+  * Returns a maximum of 20 objects.
+  * No support for `@odata.nextLink`.
+  * No support for more than 1 level of expand.
+  * No support with extra parameters (`$filter`, `$select`).
 * `$filter`:
   * `/attachments` endpoint does not support filters. If present, the `$filter` parameter is ignored.
   * Cross-workload filtering is not supported.
 * `$search`:
   * Full-text search is only available for a subset of entities such as messages.
   * Cross-workload searching is not supported.
+  * Searching is not supported on Azure AD B2C tenants.
+* `$count`:
+  * Not supported on Azure AD B2C tenants.
+  * When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only in the first page of the paged data.
+* Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs

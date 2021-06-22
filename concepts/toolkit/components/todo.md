@@ -126,12 +126,16 @@ The following example defines a template for the tasks component.
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| Resource | Permission |
-| - | - |
-| [/me/todo/lists/](/graph/api/todo-list-lists) | Tasks.ReadWrite |
-| [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) | Tasks.ReadWrite |
-| [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) | Tasks.ReadWrite |
+| Configuration | Permission | API |
+| ------------- | ---------- | --- |
+| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` not set | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| create, update or delete task | Tasks.ReadWrite | [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) |
 
 ## Authentication
 
 The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
+
+## Cache
+
+The `mgt-todo` component doesn't cache any data.
