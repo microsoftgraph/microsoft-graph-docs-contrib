@@ -54,10 +54,10 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns a `200 OK` response code.
 
-If the presence session does not exist, this method returns a `404 NotFound` response code.
+If the presence session doesn't exist, this method returns a `404 NotFound` response code.
 
-## Example
-The following example shows the application with ID `22553876-f5ab-4529-bffb-cfe50aa89f87` that clears its presence session for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`.
+## Examples
+The following request shows the application with ID `22553876-f5ab-4529-bffb-cfe50aa89f87` that clears its presence session for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`.
 
 ### Request
 
