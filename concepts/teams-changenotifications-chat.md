@@ -48,7 +48,7 @@ To get change notifications for any change in chats' property of a specific chat
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Not supported. |
+|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | beta |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All | beta |
 
@@ -144,9 +144,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the chat content. Subscriptions for notifications without resource data do not require an encryption certificate (because actual resource data is not sent over).
-
-The payload looks like the following. This payload is for a create chat.
+Following payload describes the information sent in the request for notifications without resource data. This particular payload signifies that a new chat has been created.
 
 ```json
 {
@@ -164,7 +162,7 @@ The payload looks like the following. This payload is for a create chat.
 }
 ```
 
-The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat. GET calls will always return the current state of the chat. If the chat is updated between when the notification is sent and when the chat is retrieved, the operation will return the updated chat.
+The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat details. GET calls will always return the current state of the chat details. If the chat details were updated between when the notification is sent and when the chat details were retrieved, the operation will return the updated chat details.
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)

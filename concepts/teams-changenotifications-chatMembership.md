@@ -121,9 +121,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
-
-For notifications without resource data, the payload looks like the following. This payload is for a membership add in a chat.
+Following payload describes the information sent in the request for notifications without resource data. This particular payload signifies that a user has been added to a chat.
 
 ```json
 {
@@ -141,7 +139,7 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat member. GET calls will always return the current state of the chat member. If the chat member has changed between when the notification is sent and when the chat member is retrieved, the operation will return the updated chat member.
+The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat member details. GET calls will always return the current state of the chat member details. If the chat member details has changed between when the notification is sent and when the chat member details were retrieved, the operation will return the updated chat member details.
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
