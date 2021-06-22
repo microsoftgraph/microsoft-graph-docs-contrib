@@ -3,7 +3,7 @@ title: "Working with service communications APIs in Microsoft Graph"
 description: You can use the service communications API in Microsoft Graph to access the health status and message center posts about Microsoft services."
 author: "payiAzure"
 localization_priority: Normal
-ms.prod: "service-health-and-communications"
+ms.prod: "service-communications"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Overview for accessing service health and communications through Microso
 description: "Use the service communications API in Microsoft Graph to access the health status and message center posts about  Microsoft cloud services."
 author: "payiAzure"
 localization_priority: Priority
-ms.prod: "service-health-and-communications"
+ms.prod: "service-communications"
 ms.custom: scenarios:getting-started
 ---
 
