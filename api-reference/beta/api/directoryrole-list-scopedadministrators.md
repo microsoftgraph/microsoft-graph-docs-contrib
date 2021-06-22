@@ -52,7 +52,7 @@ Here is an example of the request.
   "name": "get_scopedmembers_directoryrole"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/{id}/scopedMembers
+GET https://graph.microsoft.com/beta/directoryRoles/*<id>*/scopedMembers
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedmembers-directoryrole-csharp-snippets.md)]
