@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 ---
 
 # Overview for accessing service health and communications in Microsoft Graph
-You can use the service communications API in Microsoft Graph to access the health status and message center posts about Microsoft cloud services. The actual health status and posts correspond to the Microsoft 365 and Dynamics 365 services that are supported by the API and subscribed by the tenant. Currently, the API supports data for Office client apps in Microsoft 365, Dynamics 365 for CRM, and Microsoft Intune.
+You can use the service communications API in Microsoft Graph to access the health status and message center posts about Microsoft cloud services. The actual health status and posts correspond to the Microsoft 365 and Dynamics 365 services that are supported by the API and subscribed by the tenant.
 
 ## Why integrate with service health and communications data?
 
@@ -24,32 +24,32 @@ Apps can enable custom workflows for administrators to review, assign, and triag
 
 ## Leverage service communications API in Microsoft Graph to build customer facing dashboards
 
-Developers could leverage service communications API in Microsoft Graph to build applications with customer facing dashboards to let their customer knows the health of Microsoft services and let their customer keeps track of upcoming changes or other important announcements about the Micorosft services.
+Developers can leverage service communications API in Microsoft Graph to build applications with customer facing dashboards to let their customer knows the health of Microsoft services and let their customer keeps track of upcoming changes or other important announcements about the Micorosft services.
 
 ### Dashboards example on Microsoft 365 admin center
 [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) service integrates with service communications API to build their health dashboards. Sign in to the admin cetner with an admin account, go to <b>Health</b> section, you can see the <b>Service health</b>, <b>Windows release health</b> and <b>Message center</b> dashboards. See figure 1.
 
 **Figure 1. Health dashboards on Microsoft 365 admin center**
 
-![Screenshot of Delve in Microsoft 365 showing popular documents for a user](images/service-communications-concept-overview-admin-center-dashboards.png)
+![Screenshot of Microsoft 365 admin center dashboards](images/service-communications-concept-overview-admin-center-dashboards.png)
 
 From the **Service health** dashboad, you can view the health of your Microsoft services, including Office on the web, Yammer, Microsoft Dynamics CRM, and mobile device management cloud services, see figure 2.
 
 **Figure 2. Service health dashboard on Microsoft 365 admin center**
 
-![Screenshot of Delve in Microsoft 365 showing popular documents for a user](images/service-communications-concept-overview-admin-center-serviceHealth.png)
+![Screenshot of Microsoft 365 admin center service health dashboard for a user](images/service-communications-concept-overview-admin-center-serviceHealth2.png)
 
 From the **Message center** dashboad, you can view upcoming changes, including new and changed features, planned maintenance, or other important announcements, see figure 3.
 
 **Figure 3. Message center dashboard on Microsoft 365 admin center**
 
-![Screenshot of Delve in Microsoft 365 showing popular documents for a user](images/service-communications-concept-overview-admin-center-messagecenter.png)
+![Screenshot of Microsoft 365 admin center message center dashboard for a user](images/service-communications-concept-overview-admin-center-messagecenter2.png)
 
 From the **Windows release health** dashboad, you can view essential information about monthly quality and feature updates, the latest features and enhancements for Windows, see figure 4.
 
 **Figure 4. Windows release health dashboard on Microsoft 365 admin center**
 
-![Screenshot of Delve in Microsoft 365 showing popular documents for a user](images/service-communications-concept-overview-admin-center-windowshealth.png)
+![Screenshot of Microsoft 365 admin center Windows realease health dashboard for a user](images/service-communications-concept-overview-admin-center-windowshealth2.png)
 
 ## Next steps
 
