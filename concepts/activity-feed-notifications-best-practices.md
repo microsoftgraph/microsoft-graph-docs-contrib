@@ -13,7 +13,7 @@ This article covers best practices for using Microsoft Teams activity feed notif
 * Requesting responses to notifications
 * Creating notifications about external events
 
-The following image shows an example of an activity feed notification in Teams.
+The following image shows an example of an activity feed notification in Teams:
 
 ![Screenshot of a Teams app showing the activity feed notification view.](./images/activity-feed-notification.png)
 
