@@ -41,10 +41,10 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
+The following is an example of a request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/directoryRoles/41d12a2f-caa8-4e3e-ba14-05e5
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
