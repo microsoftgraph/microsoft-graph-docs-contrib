@@ -13085,6 +13085,8 @@ items:
         href: resources/security-error-codes.md
     - name: Service health and communications (preview)
       items:
+      - name: Overview
+        href: resources/service-communications-api-overview.md
       - name: Service announcement
         href: resources/serviceannouncement.md
       - name: Service health
