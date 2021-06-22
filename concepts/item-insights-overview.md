@@ -60,6 +60,5 @@ After disabling item insights, the following happens:
 ![disabled item insights in persona card](images/disabled-item-insights-in-persona-card.PNG)
 * Experiences that show content trending around you is blocked for you and inaccessible for others, in places such as Delve and Outlook mobile’s **Discover** section. The lack of the trending-insights also affects your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
 ![disabled item insights in Delve](images/disabled-item-insights-in-delve.PNG)
-
-For a full list of experiences affected when disabling item insights, see [customizing item insights privacy in Microsoft Graph](insights-customize-item-insights-privacy.md#behavior-changes-in-ui-and-apis). 
-
+* Disabling item insights will stop [suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US) from being calculated and shown to the user on their persona card. 
+* For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API returns `HTTP 403 Forbidden`.
