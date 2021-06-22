@@ -96,20 +96,7 @@ Keep the following in mind when updating item insights settings:
 
 
 ## Behavior changes in UI and APIs
-Some [trending](/graph/api/resources/insights-trending) or [used](/graph/api/resources/insights-used) insights may be affected as described below. Over time, the scope and types of these insights will be extended. 
-
-- The profile card of a user who has disabled item insights does not show their **used** documents. The same limitation applies to the profile result of Microsoft Search in Bing, where the **Recent Files** panel becomes empty. Furthermore, the precision of acronym-expansion in search is reduced.
-
-- Disabling item insights will stop [suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US) from being calculated and shown to the user on their profile card. 
-
-- In Delve, a user who has disabled item insights has their documents hidden. 
-
-- Any user who disables item insights has their activity removed from organization-wide analytics. Normally such analytics suggests assistive insights to the user's colleagues across a multitude of experiences, ranging from Outlook to OneDrive and SharePoint. The analytics is always anonymous regardless of settings, but when a user disables insights, the user's activity is excluded from improving the productivity of others.
-
-- For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API return `HTTP 403 Forbidden`.
-
-- Where the **Discover** section is enabled for a user searching in Outlook mobile, disabling item insights for that user would hide documents in the **Discover** section, that are trending around the user. Trending documents are otherwise recommended and displayed based on other activities of the user.
-
+For a full list of experiences affected when disabling item insights, see [Overview of item insights](item-insights-overview.md#Disabling-item-insights). 
 
 ## Transition period
 To accommodate configuring item insights settings, through the end of 2020, Microsoft 365 respects both Delve settings and item insights settings, and enforces the stricter of the two if they differ. This means that a user is considered as opted out of item insights if the user has opted out by either Delve controls or item insights settings.
