@@ -4919,16 +4919,70 @@ items:
               href: api/identityapiconnector-delete.md    
       - name: Governance
         items:
-          - name: Consent requests
-            href: resources/consentrequests-root.md
+        - name: Access reviews
+          href: resources/accessreviewsv2-root.md
+          items:
+          - name: Access review schedule definition
+            href: resources/accessreviewscheduledefinition.md
             items:
-            - name: Admin consent request policy
-              href: resources/adminconsentrequestpolicy.md
-              items:
-              - name: Get
-                href: api/adminconsentrequestpolicy-get.md
-              - name: Update
-                href: api/adminconsentrequestpolicy-update.md
+            - name: List
+              href: api/accessreviewscheduledefinition-list.md
+            - name: List instances
+              href: api/accessreviewscheduledefinition-list-instances.md
+            - name: Get
+              href: api/accessreviewscheduledefinition-get.md
+            - name: Create
+              href: api/accessreviewscheduledefinition-post.md
+            - name: Delete
+              href: api/accessreviewscheduledefinition-delete.md 
+            - name: Update
+              href: api/accessreviewscheduledefinition-update.md
+            - name: Filter by current user
+              href: api/accessreviewscheduledefinition-filterbycurrentuser.md
+          - name: Access review instance
+            href: resources/accessreviewinstance.md
+            items:
+            - name: List
+              href: api/accessreviewinstance-list.md
+            - name: List decisions
+              href: api/accessreviewinstance-list-decisions.md
+            - name: Get
+              href: api/accessreviewinstance-get.md
+            - name: Accept recommendations
+              href: api/accessreviewinstance-acceptrecommendations.md
+            - name: Apply decisions
+              href: api/accessreviewinstance-applydecisions.md
+            - name: Batch record decisions
+              href: api/accessreviewinstance-batchrecorddecisions.md
+            - name: Filter by current user
+              href: api/accessreviewinstance-filterbycurrentuser.md
+            - name: Reset decisions
+              href: api/accessreviewinstance-resetdecisions.md
+            - name: Send reminder
+              href: api/accessreviewinstance-sendreminder.md
+            - name: Stop
+              href: api/accessreviewinstance-stop.md
+          - name: Access review instance decision item
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: List
+              href: api/accessreviewinstancedecisionitem-list.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+            - name: Filter by current user
+              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+        - name: Consent requests
+          href: resources/consentrequests-root.md
+          items:
+          - name: Admin consent request policy
+            href: resources/adminconsentrequestpolicy.md
+            items:
+            - name: Get
+              href: api/adminconsentrequestpolicy-get.md
+            - name: Update
+              href: api/adminconsentrequestpolicy-update.md
             - name: App consent requests
               href: resources/appconsentrequest.md
               items:
@@ -4938,31 +4992,31 @@ items:
                 href: api/appconsentrequest-get.md
               - name: Filter by current user
                 href: api/appconsentrequest-filterByCurrentUser.md
-            - name: User consent requests
-              href: resources/userconsentrequest.md
-              items:
-              - name: List
-                href: api/userconsentrequest-list.md
-              - name: Get
-                href: api/userconsentrequest-get.md
-              - name: Filter by current user
-                href: api/userconsentrequest-filterByCurrentUser.md
-          - name: Terms of use
+          - name: User consent requests
+            href: resources/userconsentrequest.md
             items:
-            - name: Agreement
-              href: resources/agreement.md
             - name: List
-              href: api/agreement-list.md          
-            - name: Create
-              href: api/agreement-post-agreements.md
+              href: api/userconsentrequest-list.md
             - name: Get
-              href: api/agreement-get.md
-            - name: Update
-              href: api/agreement-update.md
-            - name: Delete
-              href: api/agreement-delete.md
-            - name: List acceptance status
-              href: api/user-list-agreementacceptances.md      
+              href: api/userconsentrequest-get.md
+            - name: Filter by current user
+              href: api/userconsentrequest-filterByCurrentUser.md
+        - name: Terms of use
+          items:
+          - name: Agreement
+            href: resources/agreement.md
+          - name: List
+            href: api/agreement-list.md          
+          - name: Create
+            href: api/agreement-post-agreements.md
+          - name: Get
+            href: api/agreement-get.md
+          - name: Update
+            href: api/agreement-update.md
+          - name: Delete
+            href: api/agreement-delete.md
+          - name: List acceptance status
+            href: api/user-list-agreementacceptances.md      
     - name: Mail
       displayName: Outlook, Outlook mail
       items:

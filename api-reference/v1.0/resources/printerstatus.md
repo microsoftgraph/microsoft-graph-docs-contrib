@@ -92,4 +92,3 @@ The following is a JSON representation of the resource.
   "description": "String"
 }
 ```
-
