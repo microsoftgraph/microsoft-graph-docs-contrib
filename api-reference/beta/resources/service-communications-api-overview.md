@@ -12,7 +12,7 @@ Service communications API provides Service Health and Message Center posts pert
 
 ## Access service communications API on behalf of signed in user
 
-Customer facing canvas applications (eg: [Microsoft 365 Admin Center Portal](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage)) call service communications API to get the service health and service announcements data for the signed in user's tenant on behalf of the signed in user (eg: the ServiceHealthDashboard and MessageCenter on [Microsoft 365 Admin Center portal](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) are built with ServiceComms data). The user will know whether the servies that targeted on their tenant are health or have issues, and what are the current service issues that impact their tenants if any. Delegation permissions are needed to access service communications API on behalf of a signed in user.
+Customer facing canvas applications (eg: [Microsoft 365 Admin Center Portal](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage)) call service communications API to get the service health and service announcements data for the signed in user's tenant on behalf of the signed in user. The user will know whether the servies that targeted on their tenant are health or have issues, and what are the current service issues that impact their tenants if any. Delegation permissions are needed to access service communications API on behalf of a signed in user.
 
 ## Access service communications API without user
 
@@ -20,7 +20,7 @@ Applications that running as backend services, such as monitoring/alert services
 
 ## Permissions
 
-The following [permissions](/graph/permissions-reference#service-communications-permissions) is required to access the service communication API. These permissions need to be granted by the administrator.
+The following [permissions](/graph/permissions-reference#service-communications-permissions) are required to access the service communication API. These permissions need to be granted by the administrator.
 
 | Permissions | Scenarios |
 |:------------|:----------|
