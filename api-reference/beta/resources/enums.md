@@ -16,12 +16,17 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |missed|
-|subscriptionRemoved||reauthorizationRequired|### changeType values
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### changeType values
 
 |Member|
 |:---|
 |created|
-|updated||deleted|
+|updated|
+|deleted|
+
 ### countryLookupMethodType values
 
 |Member|

@@ -16,12 +16,17 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |missed|
-|subscriptionRemoved||reauthorizationRequired|### changeType values
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### changeType values
 
 |Member|
 |:---|
 |clientIpAddress|
-|authenticatorAppGps|### consentRequestFilterByCurrentUserOptions values 
+|authenticatorAppGps|
+
+### consentRequestFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
