@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /directoryroles/{id}/scopedMembers
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -39,10 +39,10 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.
 ## Example
-##### Request
-Here is an example of the request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
+### Request
+The following is an example of a request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
 
 <!-- {
   "blockType": "request",
@@ -52,8 +52,9 @@ Here is an example of the request for a directory role **id** `41d12a2f-caa8-4e3
 GET https://graph.microsoft.com/v1.0/directoryRoles/41d12a2f-caa8-4e3e-ba14-05e5102ce085/scopedMembers
 ```
 
-##### Response
-Here is an example of the response. 
+### Response
+The following example shows the response. 
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
