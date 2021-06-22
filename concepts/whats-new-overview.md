@@ -25,6 +25,9 @@ Extended the maximum length of a subscription before expiring for the following 
 ### Education
 The APIs for the education [assignments service](/graph/api/resources/educationassignment) are now generally available. 
 
+### Identity and access | Governance
+GA of the [access review](/graph/api/resources/accessreviewsv2-root) API. Check out the [overview](accessreviews-overview.md) and tutorials to [review access to security groups](tutorial-accessreviews-securitygroup.md) and [access to Microsoft 365 groups](tutorial-accessreviews-m365group.md). Note that the [legacy access review API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) is being deprecated and will stop returning data in May 2023.
+
 ## June 2021: New in preview only
 
 ### Cloud communications | Online meetings
