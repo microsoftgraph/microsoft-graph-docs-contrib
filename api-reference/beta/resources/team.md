@@ -90,6 +90,7 @@ For a POST request example, see [Request (create team in migration state)](https
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](/MicrosoftTeams/get-started-with-teams-templates). |
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps to access the team.|
+|tags|[teamworkTag](../resources/teamworktag.md) collection|The tags associated with the team.|
 
 ## JSON representation
 
