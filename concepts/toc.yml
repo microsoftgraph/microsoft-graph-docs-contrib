@@ -97,8 +97,23 @@ items:
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
-          - name: Configure provisioning
-            href: application-provisioning-configure-api.md
+      - name: Accessing data at scale
+        displayName: Microsoft Graph Data Connect
+        items:
+          - name: Overview of Data Connect
+            href: data-connect-concept-overview.md
+          - name: Build your first Data Connect application
+            href: data-connect-quickstart.yml
+          - name: Datasets, regions, and sinks
+            href: data-connect-datasets.md
+          - name: Policies and billing
+            href: data-connect-policies.md
+          - name: User selection and filtering
+            href: data-connect-filtering.md
+          - name: Integrate with PAM
+            href: data-connect-pam.md
+          - name: Frequently asked questions
+            href: data-connect-faq.md
       - name: Calendar
         displayName: Outlook
         items:
@@ -148,6 +163,27 @@ items:
             href: cloud-communications-phone-number.md
       - name: Compliance (preview)
         href: compliance-concept-overview.md
+      - name: Connecting external content (preview)
+        displayName: connectors
+        items:
+          - name: Overview of Microsoft Graph connectors
+            href: connecting-external-content-connectors-overview.md
+          - name: Connectors API
+            href: connecting-external-content-connectors-api-overview.md
+          - name: Use Postman
+            href: connecting-external-content-connectors-api-postman.md
+          - name: Build your first custom connector
+            href: connecting-external-content-build-quickstart.yml            
+          - name: Manage connections
+            href: connecting-external-content-manage-connections.md
+          - name: Manage schema
+            href: connecting-external-content-manage-schema.md
+          - name: Manage items
+            href: connecting-external-content-manage-items.md
+          - name: External groups
+            href: connecting-external-content-external-groups.md            
+          - name: API limits
+            href: connecting-external-content-api-limits.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -162,23 +198,6 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Data access at scale
-        displayName: Microsoft Graph Data Connect
-        items:
-          - name: Data Connect overview
-            href: data-connect-concept-overview.md
-          #- name: Build your first Data Connect application
-           # href: data-connect-quickstart.yml
-          - name: Datasets, regions, and sinks
-            href: data-connect-datasets.md
-          - name: Policies and billing
-            href: data-connect-policies.md
-          - name: User selection and filtering
-            href: data-connect-filtering.md
-          - name: Integrate with PAM
-            href: data-connect-pam.md
-          - name: Frequently asked questions
-            href: data-connect-faq.md
       - name: Devices and apps
         expanded: true
         items:
@@ -261,6 +280,8 @@ items:
             href: outlook-organize-messages.md
           - name: Get MIME content
             href: outlook-get-mime-message.md
+          - name: Send MIME message
+            href: outlook-send-mime-message.md
           - name: Attach large files
             href: outlook-large-attachments.md
           - name: Get shared messages
@@ -368,14 +389,6 @@ items:
                 href: search-concept-aggregation.md
               - name: Request spelling correction (preview)
                 href: search-concept-speller.md
-          - name: Index (preview)
-            items:
-              - name: Manage connections
-                href: search-index-manage-connections.md
-              - name: Manage schema
-                href: search-index-manage-schema.md
-              - name: Manage items
-                href: search-index-manage-items.md
       - name: Security
         items:
           - name: Overview
@@ -472,8 +485,15 @@ items:
             href: traverse-the-graph.md
           - name: Paging
             href: paging.md
-          - name: Use query parameters
-            href: query-parameters.md
+          - name: Query parameters
+            displayName: OData query parameters
+            items:
+              - name: Use query parameters
+                href: query-parameters.md
+              - name: Use the search query parameter
+                href: search-query-parameter.md
+              - name: Advanced query capabilities
+                href: aad-advanced-queries.md
           - name: Batching
             displayName: Batch requests
             href: json-batching.md
@@ -492,10 +512,19 @@ items:
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways
                 href: change-notifications-delivery.md
-              - name: Get change notifications for chat and channel messages
-                href: teams-changenotifications-chatmessage.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
+              - name: Change notification in Microsoft Teams
+                displayName: Change notifications in Microsoft Teams
+                items:
+                  - name: Overview
+                    href: change-notification-in-microsoft-teams-overview.md
+                  - name: Chat and channel messages
+                    href: teams-changenotifications-chatmessage.md
+                  - name: Teams and channels
+                    href: teams-changenotifications-team-and-channel.md
+                  - name: Team membership
+                    href: teams-changenotifications-teamMembership.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
