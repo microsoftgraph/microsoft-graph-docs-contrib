@@ -13,15 +13,17 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 ## Subscribe to changes in membership of a particular team
 
-To get change notifications for membership changes in a particular team, subscribe to `/teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in a particular team, subscribe to `/teams/{team-id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | TeamMember.Read.All | Not supported. |
+|Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All | beta |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | TeamMember.Read.All   | beta |
+|Application | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | beta |
+
+>**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 #### Example
 
@@ -32,7 +34,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/members",
+  "resource": "/teams/{team-id}/members",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
