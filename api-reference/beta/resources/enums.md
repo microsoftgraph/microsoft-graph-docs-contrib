@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### filterMode
+
+|Member|
+|:---|
+|include|
+|exclude|
+
 ### countryLookupMethodType values
 
 |Member|
