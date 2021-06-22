@@ -13596,21 +13596,18 @@ items:
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: Tags
-      items:
-        - name: Tags
-          href: resources/teamsapp.md        
-        - name: List tags
+        href: resources/teamworktag.md 
+        items:     
+        - name: List
           href: api/teamworktag-list.md
-        - name: Create tag
+        - name: Create
           href: api/teamworktag-post.md
-        - name: Get tag
+        - name: Get 
           href: api/teamworktag-get.md
-        - name: Update tag
+        - name: Update
           href: api/teamworktag-update.md
-        - name: Delete tag
+        - name: Delete
           href: teamworktag-delete.md
-        - name: Update tag
-          href: api/teamworktag-update.md
         - name: List tag members
           href: api/teamworktagmember-list.md
         - name: Get tag member
