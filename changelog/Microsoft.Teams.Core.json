@@ -597,7 +597,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d5c3eb10-400c-11eb-ae35-ed470c456b69",
+          "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkTag",
           "ChangeType": "Addition",
@@ -605,7 +605,7 @@
           "Target": "teamworkTag"
         },
         {
-          "Id": "d5c64f04-400c-11eb-ae35-ed470c456b69",
+          "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkTagMember",
           "ChangeType": "Addition",
@@ -613,7 +613,7 @@
           "Target": "teamworkTagMember"
         },
         {
-          "Id": "d5c8aed6-400c-11eb-ae35-ed470c456b69",
+          "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
           "ApiChange": "Enum type",
           "ChangedApiName": "teamworkTagType",
           "ChangeType": "Addition",
@@ -621,7 +621,7 @@
           "Target": "teamworkTagType"
         },
         {
-          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
+          "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
           "ApiChange": "Property",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
@@ -632,7 +632,7 @@
       "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-06-15T21:46:49.407Z",
+      "CreatedDateTime": "2020-06-21T21:46:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
