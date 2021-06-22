@@ -19,8 +19,8 @@ Represents filter in the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| mode | String | Mode to use for the filter. Values supported are `include` or `exclude`. |
-| rule | String | Rule syntax is similar to the one used for membership rules for groups in Azure AD. To learn more about the syntax, see [rules with multiple expressions](https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-dynamic-membership#rules-with-multiple-expressions) |
+| mode | filterMode | Mode to use for the filter. Possible values are `include` or `exclude`. |
+| rule | String | Rule syntax is similar to that used for membership rules for groups in Azure AD. For details, see [rules with multiple expressions](/azure/active-directory/enterprise-users/groups-dynamic-membership#rules-with-multiple-expressions) |
 
 ## Relationships
 
