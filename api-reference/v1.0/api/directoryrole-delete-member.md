@@ -31,8 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
-DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
+DELETE /directoryRoles/{role-id}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
 
 ## Request headers
@@ -51,7 +51,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Examples
 
-### Example 1: Remove directory role member using role objectId
+### Example 1: Remove directory role member using role id
 
 #### Request
 
@@ -97,7 +97,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Remove directory role member using role templateId
+### Example 2: Remove directory role member using roleTemplateId
 
 #### Request
 

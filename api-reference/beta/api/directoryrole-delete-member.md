@@ -33,8 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
-DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
+DELETE /directoryRoles/{role-id}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
 
 ## Request headers
@@ -97,7 +97,7 @@ DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Remove directory role member using role templateId
+### Example 2: Remove directory role member using roleTemplateId
 
 #### Request
 

@@ -24,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryroles/{id}/scopedMembers
+GET /directoryroles/{role-id}/scopedMembers
+GET /directoryroles/roleTemplateId={roleTemplateId}/scopedMembers
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -40,8 +41,12 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.
-## Example
-### Request
+
+## Examples
+
+### Example 1: Get the members of a directory role using role id
+
+#### Request
 The following is an example of a request for a directory role **id** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
 
 <!-- {
@@ -52,9 +57,52 @@ The following is an example of a request for a directory role **id** `41d12a2f-c
 GET https://graph.microsoft.com/v1.0/directoryRoles/41d12a2f-caa8-4e3e-ba14-05e5102ce085/scopedMembers
 ```
 
-### Response
+#### Response
 The following example shows the response. 
 
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.scopedRoleMembership",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#scopedRoleMemberships",
+    "value": [
+        {
+            "id": "LyrRQajKPk66FAXlECzghXFuYtw3SOtAvkq8KdiKEXiTwZeOU-r8RIHrq2vQ4F1wU",
+            "roleId": "41d12a2f-caa8-4e3e-ba14-05e5102ce085",
+            "administrativeUnitId": "dc626e71-4837-40eb-be4a-bc29d88a1178",
+            "roleMemberInfo": {
+                "id": "8e97c193-ea53-44fc-81eb-ab6bd0e05d70",
+                "displayName": "Adele Vance"
+            }
+        }
+    ]
+}
+```
+
+
+### Example 2:  Get the scoped members of a directory role using roleTemplateId
+
+#### Request
+The following is an example of a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_scopedmembers_directoryrole_templateId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=fdd7a751-b60b-444a-984c-02652fe8fa1c/scopedMembers
+```
+
+#### Response
+The following example shows the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
