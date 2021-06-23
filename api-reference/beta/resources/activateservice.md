@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **activateService** action is used to activate a service for an organization.
+Represents a service to be activated.
 
 ## Properties
 
