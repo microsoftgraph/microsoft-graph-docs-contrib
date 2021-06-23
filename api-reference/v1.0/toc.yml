@@ -4432,7 +4432,7 @@ items:
             href: api/directoryrole-delete-member.md
           - name: List scoped members
             href: api/directoryrole-list-scopedmembers.md
-          - name: delta
+          - name: Get delta
             href: api/directoryrole-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md

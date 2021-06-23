@@ -50,7 +50,7 @@ includes the encoded, desired parameters.
 
 ### OData query parameters
 
-This method supports OData Query Parameters to help customize the response.
+This method supports OData query parameters to help customize the response.
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.
 
