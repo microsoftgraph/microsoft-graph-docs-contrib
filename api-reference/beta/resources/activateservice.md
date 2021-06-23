@@ -1,6 +1,6 @@
 ---
 title: "activateService resource type"
-description: "Activates a service for an  organization."
+description: "Represents a service to be activated."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "directory-management"
@@ -20,8 +20,8 @@ The **activateService** action is used to activate a service for an organization
 | Property         | Type         | Description                           |
 | ----------------- | ------------ | ------------------------------------- |
 | service| String | The name of the service to activate. |
-| servicePlanId | Guid | The plan identifier of the service plan to activate. |
-| skuId | Guid | The SKU identifier of the service plan. |
+| servicePlanId | GUID | The plan identifier of the service plan to activate. |
+| skuId | GUID | The SKU identifier of the service plan. |
 
 ## JSON representation
 
