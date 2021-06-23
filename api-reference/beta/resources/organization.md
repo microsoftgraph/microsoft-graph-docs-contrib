@@ -35,6 +35,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[activateService](../api/organization-activateservice.md) | None |  Activate a service for an organization. |
 
 ## Properties
+
 | Property | Type	| Description |
 |:-------- |:---- |:----------- |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | The collection of service plans associated with the tenant. Not nullable. |

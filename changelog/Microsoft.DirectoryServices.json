@@ -7296,7 +7296,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "ChangeList":[
         {
           "Id": "d8fedf6b-58aa-11eb-9aa5-a83ab134eab0",
           "ApiChange": "Resource",
