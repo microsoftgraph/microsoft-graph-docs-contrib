@@ -1,28 +1,28 @@
 ---
 ms.author: "yiwenwang"
-title: "Use the Microsoft Search API in Microsoft Graph for rendering display layout"
-description: "Use the Microsoft Search API in Microsoft Graph, for rendering the different search results"
+title: "Use the Microsoft Search API in Microsoft Graph to render display layout"
+description: "Use the Microsoft Search API in Microsoft Graph to display search results in different ways."
 author: "yiwenwang"
 localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph for rendering display layout (preview)
+# Use the Microsoft Search API in Microsoft Graph to render display layout (preview)
 
 A search display layout or result type is a rule that causes distinct kinds of search results to be displayed in different ways in search result pages. It consists of the following: 
 
 - One or more characteristics or conditions to compare each search result against, such as the result source or content type of the search result.
 - A display template to use for search results that meet the conditions. The display template controls the way in which all results that meet the conditions appear and behave on a search results page. 
 
-The Microsoft Graph Search API provides a renderable response based on [Adaptive Cards].(https://adaptivecards.io/). By using the [Adaptive Card template](https://adaptivecards.io/designer), Clients can render different search result in different canvases.
+The Microsoft Graph Search API provides a renderable response based on [Adaptive Cards](https://adaptivecards.io/). By using the [Adaptive Card template](https://adaptivecards.io/designer), clients can render different search result in different canvases.
 
-Customers can customize their search result type in [Microsoft Office 365 Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
+Customers can customize their search result type in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
 
-## Example 1: Sample Request
+## Request example
 
-The following example shows how to get the display layouts or result templates, for rendering the search results, by setting **true** the **enableResultTemplate** property in the request contract.
+The following example shows how to get the display layouts or result templates for rendering the search results by setting the **enableResultTemplate** property to `true` in the request contract.
 
-The reponse shows 3 search hits, two of them related with the **resultTemplateId** 1603900360618_5XCBK2OXG, and the other one with the **resultTemplateId** 1603900360618_5XCBK2OXP. These IDs matches with one of the keys of the two display layouts contained in the **resultTemplates** dictionary, included within the response contract. Using the result template IDs you can know which display layout must to use for rendering each search result.
+The reponse shows three search hits, two of them related, with the **resultTemplateId** 1603900360618_5XCBK2OXG, and the other one with the **resultTemplateId** 1603900360618_5XCBK2OXP. These IDs match with one of the keys of the two display layouts contained in the **resultTemplates** dictionary that's included within the response contract. Using the result template IDs, you can determine which display layout to use to render each search result.
 
 ### Request
 
@@ -212,26 +212,18 @@ Content-type: application/json
 
 ```
 
-## Example 2: Using Adaptive Card templates for rendering pages
+## Web component example
 
-The follwing example shows how to use **AdaptiveCardTemplating** for rendering search results.
+The following example shows how to use Adaptive Card templating to render search results.
 
 > [!IMPORTANT] 
 > 
-> The version used in Microsoft Graph Search API is based on the AdaptiveCardTemplating version before **May 2020 Release**.
->
-> Check this links to now more about **AdaptiveCardTemplating**:
->
-> https://docs.microsoft.com/adaptive-cards/templating/sdk
->
-> https://docs.microsoft.com/adaptive-cards/templating/
-> 
-
+> This example uses a version of Adaptive Card templating previous to the **May 2020 Release**. For more details, see:
+> - [Adaptive Card templating](/adaptive-cards/templating/)
+> - [Adaptive Card templating SDK](/adaptive-cards/templating/sdk)
 
 
 <!-- markdownlint-disable MD024 -->
-Sample WebComponent:
-
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
