@@ -1,5 +1,5 @@
 ---
-title: "user: Get transitiveReports"
+title: "Get transitiveReports for a user"
 description: "Get the count of transitive reports for a user."
 author: "dkershaw10"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# user: Get transitiveReports
+# Get transitiveReports for a user
 
 Namespace: microsoft.graph
 
@@ -52,21 +52,19 @@ If successful, this method returns a `200 OK` response code and a count of trans
 
 ## Examples
 
-### Get the count of transitive reports for a user
-
-#### Request
+### Request
 
 The following is an example of the request. The `$count` query segment is required.
 
 <!-- {
   "blockType": "request",
-  "name": "get_transitivereports"
+  "name": "get_transitivereports_user"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/users/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/transitiveReports/$count
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 <!-- {
@@ -84,7 +82,7 @@ Content-type: text/plain
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get transitiveReports",
+  "description": "Get transitiveReports for a user",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

@@ -54,9 +54,7 @@ If successful, this method returns a `200 OK` response code and a count of trans
 
 ## Examples
 
-### Get the count of transitive reports for an organizational contact
-
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -68,7 +66,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/contacts/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/transitiveReports/$count
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 <!-- {
