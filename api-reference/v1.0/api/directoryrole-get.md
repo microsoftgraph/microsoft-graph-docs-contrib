@@ -31,7 +31,7 @@ GET /directoryRoles/{role-id}
 GET /directoryRoles/roleTemplateId={roleTemplateId}
 ```
 ## Optional query parameters
-This method does **not** support any [OData Query Parameters](/graph/query-parameters) to help customize the response (for example, `$filter` is not supported here).
+This method does **not** support any [OData query parameters](/graph/query-parameters) to help customize the response (for example, `$filter` is not supported here).
 
 ## Request headers
 | Name       | Type | Description|
