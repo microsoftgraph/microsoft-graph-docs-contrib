@@ -16,7 +16,7 @@ The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](http
 Install-Module Microsoft.Graph -Scope CurrentUser
 ```
 
-Optionally, you can change the default scope of the installation using the `-Scope` parameter. This requires admin permissions.
+Optionally, you can change the scope of the installation using the `-Scope` parameter. This requires admin permissions.
 
 ```powershell
 Install-Module Microsoft.Graph -Scope AllUsers
