@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of the [cloudPcProvisioningPol
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection | The collection of cloud PC provisioning policy resources each to be assigned to the corresponding target group. Now only Microsoft 365 groups and security groups in Azure AD are supported to assign to. |
+|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection | The collection of cloud PC provisioning policy resources each to be assigned to the corresponding target group. Only Microsoft 365 groups and security groups in Azure AD are currently supported. |
 
 ## Response
 
@@ -100,7 +100,6 @@ Content-Type: application/json
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
