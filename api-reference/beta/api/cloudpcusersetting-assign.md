@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of the [cloudPcUserSettingAssi
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection | The collection of cloud PC user setting resources each to be assigned to the corresponding target group. Now only Microsoft 365 groups and security groups in Azure AD are supported to assign to. |
+|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection | The collection of cloud PC user setting resources each to be assigned to the corresponding target group. Only Microsoft 365 groups and security groups in Azure AD are currently supported. |
 
 ## Response
 
