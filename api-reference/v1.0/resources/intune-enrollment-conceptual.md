@@ -24,4 +24,4 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Imported windows autopilot device identity import status](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
 - [Imported windows autopilot device identity state](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
 - [Imported windows autopilot device identity upload status](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
-- [Windows autopilot device identity](intune-enrollment-windowsautopilotdeviceidentity)
+- [Windows autopilot device identity](intune-enrollment-windowsautopilotdeviceidentity.md)
