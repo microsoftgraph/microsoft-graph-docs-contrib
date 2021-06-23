@@ -225,7 +225,7 @@ HTTP/1.1 204 No Content
 ```
 ## Code sample
 
-|**Sample name**|**Description**|**C#**|**Node.js**|
-|---------------|---------------|------|--------------|
-|Activity feed notification|Send activity feed notification in scope of a chat|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)|Yet to receive|
+|**Sample name**|**Description**|**C#**|
+|---------------|---------------|------|
+|Activity feed notification|Bot framework v4 Activity feed sample using Tab.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)|
 
