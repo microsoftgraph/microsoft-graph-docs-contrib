@@ -62,3 +62,15 @@ After disabling item insights, the following happens:
 ![disabled item insights in Delve](images/disabled-item-insights-in-delve.PNG)
 * Disabling item insights will stop [suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US) from being calculated and shown to the user on their persona card. 
 * For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API returns `HTTP 403 Forbidden`.
+
+## API reference
+Looking for the API reference for this service?
+
+- [Insights API in Microsoft Graph v1.0](/graph/api/resources/officegraphinsights)
+- [Insights API in Microsoft Graph beta](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true)
+
+
+## Next steps
+
+- Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the insights API with your own files. Sign in, expand **Insights** in the column on the left, and try the sample queries.
+- Learn more about [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
