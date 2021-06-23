@@ -76,7 +76,7 @@ _Effective permissions_ are the permissions that your app has when making reques
 - For application permissions, the effective permissions of your app will be the full level of privileges implied by the permission. For example, an app that has the *User.ReadWrite.All* application permission can update the profile of every user in the organization.
 
 
-:::image type="content" source="/images/typesOfPermissions.png" alt-text="Microsoft Graph exposes delegated and application permissions to your app but, also authorizes requests based on the app's effective permissions.":::
+![Microsoft Graph exposes delegated and application permissions to your app but, also authorizes requests based on the app's effective permissions.](/images/typesOfPermissions.png)
 
 
 >**Note** By default, apps that have been granted application permissions to the following data sets can access all the mailboxes in the organization:
