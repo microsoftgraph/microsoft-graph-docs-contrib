@@ -8,7 +8,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkApplicationIdentity",
           "ChangeType": "Addition",
-          "Description": "Added [teamworkApplicationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkApplicationIdentity?view=graph-rest-beta) to represent applications in Microsoft Teams.  This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) and adds additional information to represent type of application (bot, aadApplication etc).",
+          "Description": "Added the resource [teamworkApplicationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkApplicationIdentity?view=graph-rest-beta) to represent applications in Microsoft Teams.  This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) and adds additional information to represent type of application (bot, aadApplication etc).",
           "Target": "teamworkApplicationIdentity"
         },
         {
@@ -16,7 +16,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkUserIdentity",
           "ChangeType": "Addition",
-          "Description": "Added [teamworkUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkUserIdentity?view=graph-rest-beta) to represent users in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) and adds additional information to represent type of user.",
+          "Description": "Added the resource [teamworkUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkUserIdentity?view=graph-rest-beta) to represent users in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) and adds additional information to represent type of user.",
           "Target": "teamworkUserIdentity"
         },
         {
@@ -24,7 +24,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkConversationIdentity",
           "ChangeType": "Addition",
-          "Description": "Added [teamworkConversationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkConversationIdentity?view=graph-rest-beta) to represent conversations (team, channel, chat) in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) and adds additional information to represent type of conversation.",
+          "Description": "Added the resource [teamworkConversationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkConversationIdentity?view=graph-rest-beta) to represent conversations (team, channel, chat) in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) and adds additional information to represent type of conversation.",
           "Target": "teamworkConversationIdentity"
         },
         {
@@ -32,7 +32,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkTagIdentity",
           "ChangeType": "Addition",
-          "Description": "Added [teamworkTagIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagIdentity?view=graph-rest-beta) to present tags in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta).",
+          "Description": "Added the resource [teamworkTagIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagIdentity?view=graph-rest-beta) to represent tags in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta).",
           "Target": "teamworkTagIdentity"
         },
         {
@@ -40,7 +40,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "teamworkApplicationIdentityType",
           "ChangeType": "Addition",
-          "Description": "Added teamworkApplicationIdentityType to represent types of application in Microsoft Teams (bot, aadApplication etc)",
+          "Description": "Added the enumeration teamworkApplicationIdentityType to represent types of application (bot, aadApplication etc) in Microsoft Teams",
           "Target": "teamworkApplicationIdentityType"
         },
         {
@@ -48,7 +48,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "teamworkConversationIdentityType",
           "ChangeType": "Addition",
-          "Description": "Added teamworkConversationIdentityType to represent types of conversations in Microsoft Teams (chat, channel, team etc)",
+          "Description": "Added the enumeration teamworkConversationIdentityType to represent types of conversations (chat, channel, or team) in Microsoft Teams",
           "Target": "teamworkConversationIdentityType"
         },
         {
@@ -56,7 +56,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "teamworkUserIdentityType",
           "ChangeType": "Addition",
-          "Description": "Added teamworkUserIdentityType to represent types of users in Microsoft Teams (aadUser, federatedUser etc)",
+          "Description": "Added the enumeration teamworkUserIdentityType to represent types of users (aadUser, anonymousGuest etc) in Microsoft Teams",
           "Target": "teamworkUserIdentityType"
         },
         {
@@ -64,7 +64,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessageFromIdentitySet",
           "ChangeType": "Addition",
-          "Description": "Added [chatMessageFromIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageFromIdentitySet?view=graph-rest-beta) to represent sender of a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta). No changes have been made to json representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta).",
+          "Description": "Added the resource [chatMessageFromIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageFromIdentitySet?view=graph-rest-beta) to represent sender of a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta). No changes have been made to JSON representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta).",
           "Target": "chatMessage"
         },
         {
@@ -72,7 +72,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessageMentionedIdentitySet",
           "ChangeType": "Addition",
-          "Description": "Added [chatMessageMentionedIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageMentionedIdentitySet?view=graph-rest-beta) to represent user or application being atmentioned in a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta). No changes have been made to json representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta).",
+          "Description": "Added the resource [chatMessageMentionedIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageMentionedIdentitySet?view=graph-rest-beta) to represent user or application that is @mentioned in a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta). No changes have been made to JSON representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta).",
           "Target": "chatMessageMention"
         },
         {
@@ -80,7 +80,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessageReactionIdentitySet",
           "ChangeType": "Addition",
-          "Description": "Added [chatMessageReactionIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageReactionIdentitySet?view=graph-rest-beta) to represent user which reacted to a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta). No changes have been made to json representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta).",
+          "Description": "Added the resource [chatMessageReactionIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageReactionIdentitySet?view=graph-rest-beta) to represent user which reacted to a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta). No changes have been made to JSON representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta).",
           "Target": "chatMessageReaction"
         }
       ],
@@ -98,7 +98,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkApplicationIdentity",
           "ChangeType": "Addition",
-          "Description": "Added [teamworkApplicationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkApplicationIdentity?view=graph-rest-1.0) to represent applications in Microsoft Teams.  This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) and adds additional information to represent type of application (bot, aadApplication etc).",
+          "Description": "Added the resource [teamworkApplicationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkApplicationIdentity?view=graph-rest-1.0) to represent applications in Microsoft Teams.  This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) and adds additional information to represent type of application (bot, aadApplication etc).",
           "Target": "teamworkApplicationIdentity"
         },
         {
@@ -106,7 +106,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkUserIdentity",
           "ChangeType": "Addition",
-          "Description": "Added [teamworkUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkUserIdentity?view=graph-rest-1.0) to represent users in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) and adds additional information to represent type of user.",
+          "Description": "Added the resource [teamworkUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkUserIdentity?view=graph-rest-1.0) to represent users in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) and adds additional information to represent type of user.",
           "Target": "teamworkUserIdentity"
         },
         {
@@ -114,7 +114,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkConversationIdentity",
           "ChangeType": "Addition",
-          "Description": "Added [teamworkConversationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkConversationIdentity?view=graph-rest-1.0) to represent conversations (team, channel, chat) in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) and adds additional information to represent type of conversation.",
+          "Description": "Added the resource [teamworkConversationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkConversationIdentity?view=graph-rest-1.0) to represent conversations (team, channel, or chat) in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) and adds additional information to represent type of conversation.",
           "Target": "teamworkConversationIdentity"
         },
         {
@@ -122,7 +122,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkTagIdentity",
           "ChangeType": "Addition",
-          "Description": "Added [teamworkTagIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagIdentity?view=graph-rest-1.0) to present tags in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0).",
+          "Description": "Added the resource [teamworkTagIdentity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagIdentity?view=graph-rest-1.0) to represent tags in Microsoft Teams. This new type derives from [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0).",
           "Target": "teamworkTagIdentity"
         },
         {
@@ -130,7 +130,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "teamworkApplicationIdentityType",
           "ChangeType": "Addition",
-          "Description": "Added teamworkApplicationIdentityType to represent types of application in Microsoft Teams (bot, aadApplication etc)",
+          "Description": "Added the enumeration teamworkApplicationIdentityType to represent types of application (bot, aadApplication etc) in Microsoft Teams",
           "Target": "teamworkApplicationIdentityType"
         },
         {
@@ -138,7 +138,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "teamworkConversationIdentityType",
           "ChangeType": "Addition",
-          "Description": "Added teamworkConversationIdentityType to represent types of conversations in Microsoft Teams (chat, channel, team etc)",
+          "Description": "Added the enumeration teamworkConversationIdentityType to represent types of conversations (chat, channel, team etc) in Microsoft Teams",
           "Target": "teamworkConversationIdentityType"
         },
         {
@@ -146,7 +146,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "teamworkUserIdentityType",
           "ChangeType": "Addition",
-          "Description": "Added teamworkUserIdentityType to represent types of users in Microsoft Teams (aadUser, federatedUser etc)",
+          "Description": "Added the enumeration teamworkUserIdentityType to represent types of users (aadUser, anonymousGuest etc) in Microsoft Teams",
           "Target": "teamworkUserIdentityType"
         },
         {
@@ -154,7 +154,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessageFromIdentitySet",
           "ChangeType": "Addition",
-          "Description": "Added [chatMessageFromIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageFromIdentitySet?view=graph-rest-1.0) to represent sender of a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0). No changes have been made to json representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0).",
+          "Description": "Added the resource [chatMessageFromIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageFromIdentitySet?view=graph-rest-1.0) to represent sender of a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0). No changes have been made to JSON representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0).",
           "Target": "chatMessage"
         },
         {
@@ -162,7 +162,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessageMentionedIdentitySet",
           "ChangeType": "Addition",
-          "Description": "Added [chatMessageMentionedIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageMentionedIdentitySet?view=graph-rest-1.0) to represent user or application being atmentioned in a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0). No changes have been made to json representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0).",
+          "Description": "Added the resource [chatMessageMentionedIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageMentionedIdentitySet?view=graph-rest-1.0) to represent user or application that is @mentioned in a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0). No changes have been made to JSON representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0).",
           "Target": "chatMessageMention"
         },
         {
@@ -170,7 +170,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessageReactionIdentitySet",
           "ChangeType": "Addition",
-          "Description": "Added [chatMessageReactionIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageReactionIdentitySet?view=graph-rest-1.0) to represent user which reacted to a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0). No changes have been made to json representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0).",
+          "Description": "Added the resource [chatMessageReactionIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageReactionIdentitySet?view=graph-rest-1.0) to represent user which reacted to a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0). No changes have been made to JSON representation of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-1.0).",
           "Target": "chatMessageReaction"
         }
       ],

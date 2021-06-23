@@ -51,6 +51,9 @@ The following is a JSON representation of the resource.
   },
   "conversation": {
     "@odata.type": "microsoft.graph.teamworkConversationIdentity"
+  },
+  "tag": {
+    "@odata.type": "microsoft.graph.teamworkTagIdentity"
   }
 }
 ```
