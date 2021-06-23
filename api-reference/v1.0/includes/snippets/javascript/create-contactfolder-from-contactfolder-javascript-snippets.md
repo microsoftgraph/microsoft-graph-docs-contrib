@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const contactFolder = {
-  displayName: 'displayName-value'
+  displayName: 'Family'
 };
 
 await client.api('/me/contactFolders/{id}/childFolders')

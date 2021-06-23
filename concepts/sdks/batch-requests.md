@@ -178,7 +178,7 @@ final String calendarViewRequestStepId = batchRequestContent
                                           .buildRequest(calendarViewOptions));
 
 // Send the batch request content to the /$batch endpoint
-final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(graphClient);
+final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(batchRequestContent);
 // Get the user response using the id assigned to the request
 final User user = batchResponseContent.getResponseById(meGetId).getDeserializedBody(User.class);
 System.out.println(String.format("Hello %s!", user.displayName));
@@ -424,7 +424,7 @@ final String calendarViewRequestStepId = batchRequestContent
                                           addEventRequestId);
 
 // Send the batch request content to the /$batch endpoint
-final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(client);
+final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(batchRequestContent);
 // Get the user response using the id assigned to the request
 final Event event = batchResponseContent.getResponseById(addEventRequestId).getDeserializedBody(Event.class);
 System.out.println(String.format("New event created with ID: %s", event.id));

@@ -24,9 +24,6 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [transferTarget setReplacesCallId:@"replacesCallId-value"];
 payloadDictionary[@"transferTarget"] = transferTarget;
 
-NSString *clientContext = @"9e90d1c1-f61e-43e7-9f75-d420159aae08";
-payloadDictionary[@"clientContext"] = clientContext;
-
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];
 

@@ -7,13 +7,13 @@ ms.prod: "identity-and-sign-in"
 author: "namkedia"
 ---
 
-# openIdConnectProvider resource type
-
+# openIdConnectProvider resource type (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant. 
+Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant.
 
 Configuring an OpenID Connect provider in a B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
 
@@ -24,8 +24,8 @@ Inherits from [identityProvider](../resources/identityprovider.md).
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List](../api/identityprovider-list.md)|identityProvider collection|Retrieve all identity providers configured in a tenant.|
-|[Create](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new OpenID Connect identity provider.|
-|[Get](../api/identityprovider-get.md) |identityProvider|Retrieve properties of an OpenID Connect identity provider.|
+|[Create](../api/identityprovider-post-identityproviders.md)|openIdConnectProvider|Create a new OpenID Connect identity provider.|
+|[Get](../api/identityprovider-get.md) |openIdConnectProvider|Retrieve properties of an OpenID Connect identity provider.|
 |[Update](../api/identityprovider-update.md)|None|Update an OpenID Connect identity provider.|
 |[Delete](../api/identityprovider-delete.md)|None|Delete an OpenID Connect identity provider.|
 |[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
@@ -85,5 +85,3 @@ The following is a JSON representation of the resource.
   "scope": "String"
 }
 ```
-
-

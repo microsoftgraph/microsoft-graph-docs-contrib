@@ -11,8 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const contactFolder = {
-  parentFolderId: 'parentFolderId-value',
-  displayName: 'displayName-value'
+  parentFolderId: 'AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA==',
+  displayName: 'Important contacts'
 };
 
 await client.api('/me/contactFolders')

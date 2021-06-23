@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const contentType = {
+const associateWithHubSites = {
    hubSiteUrls: [
       'https://graph.microsoft.com/beta/sites/id'
    ],
@@ -19,6 +19,6 @@ const contentType = {
 
 await client.api('/sites/id/contentTypes/id/associateWithHubSites')
 	.version('beta')
-	.post(contentType);
+	.post(associateWithHubSites);
 
 ```

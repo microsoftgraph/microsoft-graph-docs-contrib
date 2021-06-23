@@ -17,11 +17,11 @@ MSGraphAdminConsentRequestPolicy *adminConsentRequestPolicy = [[MSGraphAdminCons
 [adminConsentRequestPolicy setRemindersEnabled: true];
 [adminConsentRequestPolicy setRequestDurationInDays: 5];
 NSMutableArray *reviewersList = [[NSMutableArray alloc] init];
-MSGraphAccessReviewScope *reviewers = [[MSGraphAccessReviewScope alloc] init];
+MSGraphAccessReviewReviewerScope *reviewers = [[MSGraphAccessReviewReviewerScope alloc] init];
 [reviewers setQuery:@"/users/b6879be8-fb87-4482-a72e-18445d2b5c54"];
 [reviewers setQueryType:@"MicrosoftGraph"];
 [reviewersList addObject: reviewers];
-MSGraphAccessReviewScope *reviewers = [[MSGraphAccessReviewScope alloc] init];
+MSGraphAccessReviewReviewerScope *reviewers = [[MSGraphAccessReviewReviewerScope alloc] init];
 [reviewers setQuery:@"/users/b3427cc5-bf69-4dcd-95f7-ed1eb432f5e9"];
 [reviewers setQueryType:@"MicrosoftGraph"];
 [reviewersList addObject: reviewers];

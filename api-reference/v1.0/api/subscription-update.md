@@ -3,7 +3,7 @@ title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 localization_priority: Normal
 author: "Jumaodhiss"
-ms.prod: ""change-notifications"
+ms.prod: "change-notifications"
 doc_type: apiPageType
 ---
 

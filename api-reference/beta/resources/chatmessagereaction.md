@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a reaction to a [chatMessage](chatmessage.md) entity. 
 
-An entity of type `chatMessageReaction` is returned as part of the [Get channel message](../api/channel-get-message.md) API, as a part of the [chatMessage](chatmessage.md) entity.
+An entity of type `chatMessageReaction` is returned as part of the [Get channel message](../api/chatmessage-get.md) API, as a part of the [chatMessage](chatmessage.md) entity.
 
 ## Properties
 

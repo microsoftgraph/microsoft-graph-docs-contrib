@@ -1,19 +1,19 @@
 ---
-title: "List educationAssignmentResources"
-description: "Get all the resources associated with this assignment."
+title: "List assignment resources"
+description: "Get all the resources associated with an assignment."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List educationAssignmentResources
+# List assignment resources
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the resources associated with this assignment.
+Get all the resources associated with an assignment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+|Application | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/r
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

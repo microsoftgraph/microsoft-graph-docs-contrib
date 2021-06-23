@@ -19,6 +19,7 @@ var plannerAssignedToTaskBoardTaskFormat = new PlannerAssignedToTaskBoardTaskFor
 
 await graphClient.Planner.Tasks["{plannerTask-id}"].AssignedToTaskBoardFormat
 	.Request()
+	.Header("Prefer","return=representation")
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerAssignedToTaskBoardTaskFormat);
 

@@ -11,10 +11,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalGroupMember *externalGroupMember = [[MSGraphExternalGroupMember alloc] init];
+MSGraphExternalConnectorsExternalGroupMember *externalGroupMember = [[MSGraphExternalConnectorsExternalGroupMember alloc] init];
 [externalGroupMember setId:@"1431b9c38ee647f6a"];
-[externalGroupMember setType: [MSGraphExternalGroupMemberType group]];
-[externalGroupMember setIdentitySource: [MSGraphIdentitySourceType external]];
+[externalGroupMember setType: [MSGraphExternalConnectorsExternalGroupMemberType group]];
+[externalGroupMember setIdentitySource: [MSGraphExternalConnectorsIdentitySourceType external]];
 
 NSError *error;
 NSData *externalGroupMemberData = [externalGroupMember getSerializedDataWithError:&error];

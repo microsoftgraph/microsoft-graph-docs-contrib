@@ -119,6 +119,7 @@ Content-type: application/json
   ]
 }
 ```
+
 ### Example 2: List appRoleAssignments granted to a user, filtered by resourceId
 
 #### Request
@@ -176,7 +177,7 @@ Content-type: application/json
   "value": [
     {
       "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
-      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
+      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
       "appRoleId": "00000000-0000-0000-0000-000000000000",
       "principalDisplayName": "MOD Administrator",
       "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",

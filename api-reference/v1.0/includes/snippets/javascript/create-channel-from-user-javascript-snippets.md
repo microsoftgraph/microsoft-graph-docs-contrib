@@ -19,13 +19,13 @@ const channel = {
      [
         {
            '@odata.type':'#microsoft.graph.aadUserConversationMember',
-           'user@odata.bind':'https://graph.microsoft.com/v1.0/users(\'{user_id}\')',
+           'user@odata.bind':'https://graph.microsoft.com/v1.0/users(\'62855810-484b-4823-9e01-60667f8b12ae\')',
            roles: ['owner']
         }
      ]
 };
 
-await client.api('/teams/{group_id}/channels')
+await client.api('/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels')
 	.post(channel);
 
 ```

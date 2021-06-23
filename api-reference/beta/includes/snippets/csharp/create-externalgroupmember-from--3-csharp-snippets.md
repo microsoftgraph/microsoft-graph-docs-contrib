@@ -9,11 +9,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var externalGroupMember = new ExternalGroupMember
 {
 	Id = "1431b9c38ee647f6a",
-	Type = ExternalGroupMemberType.Group,
-	IdentitySource = IdentitySourceType.External
+	Type = Microsoft.Graph.ExternalConnectors.ExternalGroupMemberType.Group,
+	IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.External
 };
 
-await graphClient.External.Connections["{externalConnection-id}"].Groups["{externalGroup-id}"].Members
+await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Groups["{externalConnectors.externalGroup-id}"].Members
 	.Request()
 	.AddAsync(externalGroupMember);
 

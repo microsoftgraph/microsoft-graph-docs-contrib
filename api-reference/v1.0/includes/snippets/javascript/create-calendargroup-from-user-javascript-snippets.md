@@ -11,9 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const calendarGroup = {
-  name: 'name-value',
-  classId: 'classId-value',
-  changeKey: 'changeKey-value'
+  name: 'Personal events'
 };
 
 await client.api('/me/calendarGroups')

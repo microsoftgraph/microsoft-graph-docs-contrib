@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let groups = await client.api('/termStore/groups')
+let group = await client.api('/termStore/groups/{groupId}')
 	.version('beta')
 	.get();
 

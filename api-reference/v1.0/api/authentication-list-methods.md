@@ -3,7 +3,7 @@ title: "List methods"
 description: "Retrieve a list of authentication method objects."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/methods
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
