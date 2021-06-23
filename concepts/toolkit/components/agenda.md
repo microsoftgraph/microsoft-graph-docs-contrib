@@ -126,7 +126,9 @@ The following events are fired from the control.
 
 | Event | Description |
 | --- | --- |
-| eventClick | The user clicks or taps an event.|
+| `eventClick` | The user clicks or taps an event.|
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Microsoft Graph permissions
 

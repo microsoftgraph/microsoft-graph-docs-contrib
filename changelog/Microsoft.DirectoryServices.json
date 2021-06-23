@@ -1,6 +1,58 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
         {
+          "Id": "c0588e7b-d315-4071-86d5-2bec5b810b0f",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "changeNotification",
+          "ChangeType": "Addition",
+          "Description": "Added **changeType** enumeration.",
+          "Target": "changeNotification"
+        },
+        {
+          "Id": "c0588e7b-d315-4071-86d5-2bec5b810b0f",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "changeNotification",
+          "ChangeType": "Addition",
+          "Description": "Added **lifecycleEventType** enumeration.",
+          "Target": "changeNotification"
+        }
+      ],
+      "Id": "c0588e7b-d315-4071-86d5-2bec5b810b0f",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-06-22T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+{
+      "ChangeList": [
+        {
+          "Id": "c67f9534-b014-4ef4-98ce-1c616cc69adc",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "changeNotification",
+          "ChangeType": "Addition",
+          "Description": "Added **changeType** enumeration.",
+          "Target": "changeNotification"
+        },
+        {
+          "Id": "c67f9534-b014-4ef4-98ce-1c616cc69adc",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "changeNotification",
+          "ChangeType": "Addition",
+          "Description": "Added **lifecycleEventType** enumeration.",
+          "Target": "changeNotification"
+        }
+      ],
+      "Id": "c67f9534-b014-4ef4-98ce-1c616cc69adc",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-22T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },    
+    {
           "ChangeList": [
               {
                   "Id": "1542fba3-8dbc-11eb-a57c-31dcdef91872",
