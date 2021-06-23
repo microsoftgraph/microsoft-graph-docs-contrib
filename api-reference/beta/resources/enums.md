@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### filterMode values
+
+|Member|
+|:---|
+|include|
+|exclude|
+
 ### lifecycleEventType values
 
 |Member|
@@ -2314,3 +2321,4 @@ Possible values for user account types (group membership), per Windows definitio
 |Member| Value | Description               |
 |:---|:---- | :------------------------ |
 |standard| 0     |Default type for a tag. Tags of type standard can be managed in the team by members who have permissions.|
+
