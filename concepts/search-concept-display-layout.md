@@ -218,7 +218,7 @@ The following example shows how to use Adaptive Card templating to render search
 
 > [!IMPORTANT] 
 > 
-> This example uses a version of Adaptive Card templating previous to the **May 2020 Release**. For more details, see:
+> This example uses a version of Adaptive Card templating earlier than the **May 2020 release**. For more details, see:
 > - [Adaptive Card templating](/adaptive-cards/templating/)
 > - [Adaptive Card templating SDK](/adaptive-cards/templating/sdk)
 
