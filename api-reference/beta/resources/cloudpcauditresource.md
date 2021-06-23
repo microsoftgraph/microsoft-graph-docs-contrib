@@ -23,7 +23,7 @@ Represents the audit resource. This shows the target edited resource entity, w
 |displayName|String|The resource entity display name.|
 |modifiedProperties|[cloudPcAuditProperty](../resources/cloudpcauditproperty.md) collection|List of modified properties.|
 |type|String|Audit resource's type.|
-|resourceId|String|Audit resource's Id.|
+|resourceId|String|Audit resource's ID.|
 
 ## Relationships
 

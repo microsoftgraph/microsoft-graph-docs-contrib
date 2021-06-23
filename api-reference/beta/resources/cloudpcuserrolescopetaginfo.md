@@ -20,8 +20,8 @@ Represents the scope tag info with display name and identity.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Scope Tag Display name.|
-|roleScopeTagId|String|Scope Tag Id.|
+|displayName|String|Scope tag display name.|
+|roleScopeTagId|String|Scope tag ID.|
 
 ## Relationships
 

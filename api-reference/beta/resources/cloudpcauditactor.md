@@ -23,15 +23,15 @@ The audit actor represented by the Azure AD user and application associated with
 |:---|:---|:---|
 |type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include ItPro, Application, Partner and Unknown.|
 |userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
-|applicationId|String|Azure AD Application Id.|
-|applicationDisplayName|String|Name of the Application.|
+|applicationId|String|Azure AD application ID.|
+|applicationDisplayName|String|Name of the application.|
 |userPrincipalName|String|User Principal Name (UPN).|
 |servicePrincipalName|String|Service Principal Name (SPN).|
-|ipAddress|String|IP Address.|
-|userId|String|Azure AD User id.|
+|ipAddress|String|IP address.|
+|userId|String|Azure AD user ID.|
 |userRoleScopeTags|[cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md) collection|List of role scope tags.|
-|remoteTenantId|String|The delegated partner tenant id.|
-|remoteUserId|String|The delegated partner user id.|
+|remoteTenantId|String|The delegated partner tenant ID.|
+|remoteUserId|String|The delegated partner user ID.|
 
 ### cloudPcAuditActorType values
 
