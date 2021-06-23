@@ -1779,7 +1779,7 @@ Security permissions are valid only on work or school accounts.
 
 ---
 
-## Service Communications permissions
+## Service communications permissions
 
 #### Delegated permissions
 
