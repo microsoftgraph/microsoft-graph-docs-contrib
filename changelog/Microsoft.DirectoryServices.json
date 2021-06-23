@@ -43,24 +43,23 @@
           "SubArea": "Directory management"
       },
       {
-    {
-      "ChangeList": [
-        {
-          "Id": "c0588e7b-d315-4071-86d5-2bec5b810b0f",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "changeNotification",
-          "ChangeType": "Addition",
-          "Description": "Added **changeType** enumeration.",
-          "Target": "changeNotification"
-        },
-        {
-          "Id": "c0588e7b-d315-4071-86d5-2bec5b810b0f",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "changeNotification",
-          "ChangeType": "Addition",
-          "Description": "Added **lifecycleEventType** enumeration.",
-          "Target": "changeNotification"
-        }
+          "ChangeList": [
+          {
+              "Id": "c0588e7b-d315-4071-86d5-2bec5b810b0f",
+              "ApiChange": "Enum type",
+              "ChangedApiName": "changeNotification",
+              "ChangeType": "Addition",
+              "Description": "Added **changeType** enumeration.",
+              "Target": "changeNotification"
+          },
+          {
+              "Id": "c0588e7b-d315-4071-86d5-2bec5b810b0f",
+              "ApiChange": "Enum type",
+              "ChangedApiName": "changeNotification",
+              "ChangeType": "Addition",
+              "Description": "Added **lifecycleEventType** enumeration.",
+              "Target": "changeNotification"
+          }
       ],
       "Id": "c0588e7b-d315-4071-86d5-2bec5b810b0f",
       "Cloud": "prd",
@@ -69,7 +68,7 @@
       "WorkloadArea": "Change notifications",
       "SubArea": ""
     },
-{
+    {
       "ChangeList": [
         {
           "Id": "c67f9534-b014-4ef4-98ce-1c616cc69adc",
