@@ -61,6 +61,8 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following is an example of the request. 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timecard-startBreak"
@@ -78,6 +80,16 @@ Content-type: application/json
     }
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timecard-startbreak-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timecard-startbreak-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

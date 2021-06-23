@@ -133,7 +133,9 @@ To learn more, see [styling components](../customize-components/style.md).
 
 | Event | Description |
 | ----- | ----------- |
-| itemClick | Fired when the user clicks a file. Returns the file details. |
+| `itemClick` | Fired when the user clicks a file. Returns the file details. |
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
