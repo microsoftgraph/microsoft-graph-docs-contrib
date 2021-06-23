@@ -96,7 +96,7 @@ Keep the following in mind when updating item insights settings:
 
 
 ## Behavior changes in UI and APIs
-For a full list of experiences affected when disabling item insights, see [Overview of item insights](item-insights-overview.md#Disabling-item-insights). 
+For a full list of experiences affected when disabling item insights, see [Overview of item insights](item-insights-overview.md#disabling-item-insights). 
 
 ## Transition period
 To accommodate configuring item insights settings, through the end of 2020, Microsoft 365 respects both Delve settings and item insights settings, and enforces the stricter of the two if they differ. This means that a user is considered as opted out of item insights if the user has opted out by either Delve controls or item insights settings.
