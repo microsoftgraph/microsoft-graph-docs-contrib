@@ -1,7 +1,7 @@
 ---
 title: "Create onlineMeeting"
 description: "Create an online meeting on behalf of a user specified in the request body."
-author: "jsandoval-msft"
+author: "mkhribech"
 localization_priority: Priority
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create an online meeting on behalf of a user by using the object ID (OID) in the user token (delegated permission) or request path (application permission).
 
-> [!NOTE]
+> [!TIP]
 > The meeting does not show up on the user's calendar.
 
 ## Permissions
