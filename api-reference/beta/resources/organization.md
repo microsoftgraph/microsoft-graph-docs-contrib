@@ -32,7 +32,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Create organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Create a new organizationalBrandingProperties by posting to the branding collection. |
 |[Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get an organizationalBrandingProperties object collection. |
 |[Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get a organizationalBrandingProperties object collection. |
-| [activateService](../api/organization-activateservice.md) | None |  Activates a service for an organization. |
+|[activateService](../api/organization-activateservice.md) | None |  Activate a service for an organization. |
 
 ## Properties 
 | Property | Type	| Description |
