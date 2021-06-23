@@ -44,11 +44,11 @@ Alice and Robert can both get recommendations based on this collaborative work. 
 By allowing Microsoft to compute item insights from signals in your shared workspaces, you turn activities and content into usable recommendations, and make this knowledge easily discoverable and usable to you and your colleagues in your organization. By doing so, you are helping to boost the productivity of your entire organization.  
 
 Even though Microsoft never discloses your private documents and only uses insights of content that users already have access to, there can be cases where the risk of discovering the content by undesirable users outweighs the possible benefits. In these cases, you should consider turning off item insights. Remember that disabling item insights is not a security measure, and you should always start by reviewing your work patterns and ensure that your security access is configured as intended. 
-If you want to make your content and activities less discoverable, you can disable item insights by using the toggle available in [MyAccount Settings & Privacy](https://myaccount.microsoft.com/settingsandprivacy/privacy).  
+If you want to make your content and activities less discoverable, you can disable item insights by using the [toggle available in MyAccount, under Settings & Privacy](https://myaccount.microsoft.com/settingsandprivacy/privacy).  
 ![item insights toggle in MyAccount](images/item-insights-toggle-in-MyAccount.PNG)
 
 ### Disable or re-enable item insights 
-By default, item insights are allowed. Administrators use specific settings to control item insights. If an administrator disables your item insights, you can re-enable them only by working with the administrator. 
+By default, item insights are enabled. Administrators use specific settings to control item insights. If an administrator disables your item insights, you can re-enable them only by working with the administrator. 
 [Learn more about ways for an administrator to control item insights](insights-customize-item-insights-privacy.md).
 
 Updating settings can take up to 24 hours to apply within the user’s organization across Microsoft 365 experiences.
@@ -58,7 +58,7 @@ After disabling item insights, the following happens:
 ![disabled item insights in recommended in office](images/disabled-item-insights-in-office.PNG)
 * Your colleagues can no longer see insights such as recent files that you have shared with them from OneDrive for Business and SharePoint, in experiences such as Delve, the persona card in Microsoft 365 and the Bing results. The content is still accessible via Microsoft Search or other experience as appropriate, but it is harder to discover and your colleagues would have to spend more time to find it.  
 ![disabled item insights in persona card](images/disabled-item-insights-in-persona-card.PNG)
-* Experiences that show content trending around you is blocked for you and inaccessible for others, in places such as Delve and Outlook mobile’s **Discover** section. The lack of the trending-insights also affects your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
+* Experiences that show content trending around you is blocked for you and inaccessible to others, in places such as Delve and Outlook mobile’s **Discover** section. The lack of the trending-insights also affects your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
 ![disabled item insights in Delve](images/disabled-item-insights-in-delve.PNG)
 * Disabling item insights will stop [suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US) from being calculated and shown to the user on their persona card. 
 * For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API returns `HTTP 403 Forbidden`.
