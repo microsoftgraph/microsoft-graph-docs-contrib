@@ -11,6 +11,21 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### lifecycleEventType values
+
+|Member|
+|:---|
+|missed|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### changeType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
+
 ### consentRequestFilterByCurrentUserOptions values 
 
 |Member|

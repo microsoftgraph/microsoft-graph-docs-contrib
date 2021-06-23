@@ -326,7 +326,7 @@ items:
         displayName: Notifications
         items:
           - name: Overview
-            href: notifications-concept-overview.md
+            href: notifications-concept-overview.md                  
           - name: Get started
             displayName: Notifications
             items:
@@ -343,7 +343,7 @@ items:
               - name: Android app integration
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
-                href: notifications-integrating-with-ios.md
+                href: notifications-integrating-with-ios.md                
       - name: People and workplace intelligence
         items:
           - name: Overview
@@ -428,8 +428,13 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: Send activity feed notifications
+          - name: Activity feed notifications
             href: teams-send-activityfeednotifications.md
+            items:
+              - name: Send activity feed notifications
+                href: teams-send-activityfeednotifications.md
+              - name: Best practices 
+                href: activity-feed-notifications-best-practices.md  
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -485,8 +490,15 @@ items:
             href: traverse-the-graph.md
           - name: Paging
             href: paging.md
-          - name: Use query parameters
-            href: query-parameters.md
+          - name: Query parameters
+            displayName: OData query parameters
+            items:
+              - name: Use query parameters
+                href: query-parameters.md
+              - name: Use the search query parameter
+                href: search-query-parameter.md
+              - name: Advanced query capabilities
+                href: aad-advanced-queries.md
           - name: Batching
             displayName: Batch requests
             href: json-batching.md
@@ -694,6 +706,8 @@ items:
                 href: toolkit/customize-components/style.md
               - name: Templating components
                 href: toolkit/customize-components/templates.md
+              - name: Handling events
+                href: toolkit/customize-components/events.md
               - name: Caching Microsoft Graph calls in components
                 href: toolkit/customize-components/cache.md
               - name: Localizing components
