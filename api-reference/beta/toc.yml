@@ -326,15 +326,16 @@ items:
       - name: Insights
         items:
         - name: Item insights
-          href: resources/iteminsights.md
           items:
+          - name: Item insights (preview)
+            href: resources/iteminsights.md
           - name: List shared
             href: api/insights-list-shared.md
           - name: List trending
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Control access to item insights
+        - name: Organization control (preview)
           items:
           - name: Item insights settings
             href: resources/iteminsightssettings.md
@@ -342,6 +343,14 @@ items:
             href: api/iteminsightssettings-get.md
           - name: Update
             href: api/iteminsightssettings-update.md
+        - name: User control (preview)
+          items:
+          - name: User insights settings
+            href: resources/userinsightssettings.md
+          - name: Get
+            href: api/userinsightssettings-get.md
+          - name: Update
+            href: api/userinsightssettings-update.md
       - name: Mail
         items:
         - name: Message
@@ -1708,7 +1717,7 @@ items:
         - name: Delete
           href: api/bookingstaffmember-delete.md
     - name: Devices and apps
-      expanded: true
+      expanded: false
       items:
       - name: Cloud printing
         items:
@@ -9523,9 +9532,9 @@ items:
         - name: Cloud PC
           href: resources/cloudpc.md
           items:
-          - name: List
+          - name: List cloud PCs
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: Get
+          - name: Get cloud PC
             href: api/cloudpc-get.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
@@ -9574,6 +9583,21 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Cloud PC user setting
+          href: resources/cloudpcusersetting.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-usersettings.md
+          - name: Get
+            href: api/cloudpcusersetting-get.md
+          - name: Create
+            href: api/virtualendpoint-post-usersettings.md
+          - name: Update
+            href: api/cloudpcusersetting-update.md
+          - name: Delete
+            href: api/cloudpcusersetting-delete.md
+          - name: Assign
+            href: api/cloudpcusersetting-assign.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
@@ -9809,7 +9833,7 @@ items:
         - name: List categories
           href: api/educationassignment-list-categories.md
         - name: Add category
-          href: api/educationassignment-add-categories.md
+          href: api/educationassignment-post-categories.md
         - name: Remove category
           href: api/educationassignment-remove-category.md
         - name: Attach rubric to assignment
@@ -11451,6 +11475,8 @@ items:
               href: api/accessreviewscheduledefinition-delete.md 
             - name: Update
               href: api/accessreviewscheduledefinition-update.md
+            - name: Filter by current user
+              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
           - name: Access review instance
             href: resources/accessreviewinstance.md
             items:
@@ -11458,7 +11484,9 @@ items:
               href: api/accessreviewinstance-list.md
             - name: Get
               href: api/accessreviewinstance-get.md
-            - name: List pending approval
+            - name: Filter by current user
+              href: api/accessreviewinstance-filterbycurrentuser.md
+            - name: List pending approval (deprecated)
               href: api/accessreviewinstance-pendingaccessreviewinstances.md
             - name: Send reminder
               href: api/accessreviewinstance-sendreminder.md
@@ -11470,12 +11498,20 @@ items:
               href: api/accessreviewinstance-applydecisions.md
             - name: Batch record decisions
               href: api/accessreviewinstance-batchrecorddecisions.md
+            - name: Reset decisions
+              href: api/accessreviewinstance-resetdecisions.md
+            - name: List decisions
+              href: api/accessreviewinstance-list-decisions.md
           - name: Access review instance decision item
             href: resources/accessreviewinstancedecisionitem.md
             items:
             - name: List
               href: api/accessreviewinstancedecisionitem-list.md
-            - name: List pending approval
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: Filter by current user
+              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+            - name: List pending approval (deprecated)
               href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
@@ -12454,27 +12490,27 @@ items:
         - name: Delete
           href: api/profilecardproperty-delete.md
       - name: Insights
-        href: resources/iteminsights.md
         items:
-          - name: Item insights
+        - name: Item insights
+          items:
+          - name: Item insights (preview)
             href: resources/iteminsights.md
+          - name: Shared
+            href: resources/insights-shared.md
             items:
-            - name: Shared
-              href: resources/insights-shared.md
-              items:
-              - name: List shared
-                href: api/insights-list-shared.md
-            - name: Trending
-              href: resources/insights-trending.md
-              items:
-              - name: List trending
-                href: api/insights-list-trending.md
-            - name: Used
-              href: resources/insights-used.md
-              items:
-              - name: List used
-                href: api/insights-list-used.md
-          - name: Control access to item insights
+            - name: List shared
+              href: api/insights-list-shared.md
+          - name: Trending
+            href: resources/insights-trending.md
+            items:
+            - name: List trending
+              href: api/insights-list-trending.md
+          - name: Used
+            href: resources/insights-used.md
+            items:
+            - name: List used
+              href: api/insights-list-used.md
+          - name: Organization control (preview)
             items:
             - name: Item insights settings
               href: resources/iteminsightssettings.md
@@ -12482,6 +12518,14 @@ items:
               href: api/iteminsightssettings-get.md
             - name: Update
               href: api/iteminsightssettings-update.md
+          - name: User control (preview)
+            items:
+            - name: User insights settings
+              href: resources/userinsightssettings.md
+            - name: Get
+              href: api/userinsightssettings-get.md
+            - name: Update
+              href: api/userinsightssettings-update.md
       - name: Mention (preview)
         href: resources/mention.md
       - name: Analytics (preview)
@@ -13195,6 +13239,8 @@ items:
           href: api/itemanalytics-get.md
         - name: Get activities by interval
           href: api/itemactivity-getbyinterval.md
+        - name: Create sharing link
+          href: api/listitem-createlink.md
       - name: Pages
         items:
         - name: Site page
@@ -13428,6 +13474,8 @@ items:
           href: api/profilephoto-update.md
         - name: Complete migration for team
           href: api/team-completemigration.md
+        - name: List permission grants
+          href: api/team-list-permissiongrants.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -13484,36 +13532,42 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: List members
-          href: api/channel-list-members.md        
         - name: Add member 
           href: api/channel-post-members.md
-        - name: Get member
-          href: api/channel-get-members.md
-        - name: Update member role
-          href: api/channel-update-members.md
-        - name: Remove member
-          href: api/channel-delete-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
-        - name: Get files folder
-          href: api/channel-get-filesfolder.md
-        - name: List channel messages
-          href: api/channel-list-messages.md
-        - name: Get channel messages delta
-          href: api/chatmessage-delta.md
         - name: Get channel message
           href: api/chatmessage-get.md
-        - name: List message replies
-          href: api/chatmessage-list-replies.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get files folder
+          href: api/channel-get-filesfolder.md
+        - name: Get member
+          href: api/channel-get-members.md
         - name: Get message reply
           href: api/chatmessage-get.md
-        - name: Send message
-          href: api/channel-post-messages.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: List members
+          href: api/channel-list-members.md        
+        - name: List message replies
+          href: api/chatmessage-list-replies.md
+        - name: Provision email address
+          href: api/channel-provisionemail.md  
+        - name: Remove email address
+          href: api/channel-removeemail.md  
+        - name: Remove member
+          href: api/channel-delete-members.md
         - name: Reply to message
           href: api/chatmessage-post-replies.md
-        - name: Get messages across all channels
-          href: api/channel-getallmessages.md  
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Update member role
+          href: api/channel-update-members.md
+        - name: Update message
+          href: api/chatmessage-update.md
       - name: Chat
         href: resources/chat.md
         items:
@@ -13543,6 +13597,12 @@ items:
           href: api/chat-post-messages.md
         - name: Get chat between user and app 
           href: api/userscopeteamsappinstallation-get-chat.md
+        - name: List permission grants
+          href: api/chat-list-permissiongrants.md
+        - name: List operations
+          href: api/chat-list-operations.md
+        - name: Get operation
+          href: api/teamsasyncoperation-get.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -13568,6 +13628,25 @@ items:
           href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
+      - name: Tags
+        href: resources/teamworktag.md 
+        items:     
+        - name: List
+          href: api/teamworktag-list.md
+        - name: Create
+          href: api/teamworktag-post.md
+        - name: Get 
+          href: api/teamworktag-get.md
+        - name: Update
+          href: api/teamworktag-update.md
+        - name: Delete
+          href: api/teamworktag-delete.md
+        - name: List members
+          href: api/teamworktagmember-list.md
+        - name: Get member
+          href: api/teamworktagmember-get.md
+        - name: Delete member
+          href: api/teamworktagmember-delete.md
       - name: App
         items:
         - name: App in catalog
@@ -13877,6 +13956,8 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+      - name: Resource-specific permission grants
+        href: resources/resourcespecificpermissiongrant.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:

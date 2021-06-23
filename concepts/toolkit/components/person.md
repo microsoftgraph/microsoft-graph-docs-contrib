@@ -113,9 +113,11 @@ The following events are fired from the component.
 
 | Event | Detail | Description |
 | --- | --- | --- |
-| line1clicked | The detail contains the respective `person` object | Fired when line1 is clicked. |
-| line2clicked | The detail contains the respective `person` object | Fired when line2 is clicked. |
-| line3clicked | The detail contains the respective `person` object | Fired when line3 is clicked. |
+| `line1clicked` | The detail contains the respective `person` object | Fired when line1 is clicked. |
+| `line2clicked` | The detail contains the respective `person` object | Fired when line2 is clicked. |
+| `line3clicked` | The detail contains the respective `person` object | Fired when line3 is clicked. |
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
