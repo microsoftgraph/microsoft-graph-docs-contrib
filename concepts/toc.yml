@@ -706,6 +706,8 @@ items:
                 href: toolkit/customize-components/style.md
               - name: Templating components
                 href: toolkit/customize-components/templates.md
+              - name: Handling events
+                href: toolkit/customize-components/events.md
               - name: Caching Microsoft Graph calls in components
                 href: toolkit/customize-components/cache.md
               - name: Localizing components
