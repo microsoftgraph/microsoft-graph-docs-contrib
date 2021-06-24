@@ -1462,6 +1462,10 @@ items:
           href: api/presence-get.md
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
+        - name: Set presence
+          href: api/presence-setpresence.md
+        - name: Clear presence
+          href: api/presence-clearpresence.md
     - name: Compliance (preview)
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -10499,6 +10503,8 @@ items:
             href: api/organization-get.md
           - name: Update org details
             href: api/organization-update.md
+          - name: Activate service
+            href: api/organization-activateservice.md
         - name: Organization settings
           href: resources/organizationSettings.md
           items:
@@ -13112,6 +13118,47 @@ items:
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md
+    - name: Service health and communications (preview)
+      items:
+      - name: Overview
+        href: resources/service-communications-api-overview.md
+      - name: Service announcement
+        href: resources/serviceannouncement.md
+      - name: Service health
+        href: resources/servicehealth.md
+        items:
+        - name: List health overviews
+          href: api/serviceannouncement-list-healthoverviews.md
+        - name: Get service health
+          href: api/servicehealth-get.md
+      - name: Service health issue
+        href: resources/servicehealthissue.md
+        items:
+        - name: List issues
+          href: api/serviceannouncement-list-issues.md
+        - name: Get issue
+          href: api/servicehealthissue-get.md
+        - name: Get post-incident review report
+          href: api/servicehealthissue-incidentreport.md
+      - name: Service update message
+        href: resources/serviceupdatemessage.md
+        items:
+        - name: List messages
+          href: api/serviceannouncement-list-messages.md
+        - name: Get message
+          href: api/serviceupdatemessage-get.md
+        - name: Mark read status
+          href: api/serviceupdatemessage-markread.md
+        - name: Mark unread status
+          href: api/serviceupdatemessage-markunread.md
+        - name: Archive status
+          href: api/serviceupdatemessage-archive.md
+        - name: Unarchive status
+          href: api/serviceupdatemessage-unarchive.md
+        - name: Mark favorite status
+          href: api/serviceupdatemessage-favorite.md
+        - name: Remove favorite status
+          href: api/serviceupdatemessage-unfavorite.md
     - name: Sites and lists
       displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       items:
