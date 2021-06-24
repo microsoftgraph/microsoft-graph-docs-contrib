@@ -10433,8 +10433,10 @@ items:
             href: api/directoryrole-post-members.md
           - name: Remove member
             href: api/directoryrole-delete-member.md
-          - name: List scoped administrators
-            href: api/directoryrole-list-scopedadministrators.md
+          - name: List scoped members
+            href: api/directoryrole-list-scopedmembers.md
+          - name: Get delta
+            href: api/directoryrole-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md
           items:
