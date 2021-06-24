@@ -56,12 +56,16 @@ The result of a cloud PC on-premises connection health check.
 |azureAdDeviceSyncCheckUnknownError|Hybrid Azure Active Directory connectivity check failed. Please make sure that Azure AD connect is working and syncing frequently so that the cloud PC computer objects are synced to Azure AD. Azure AD device sync must be enabled and synced within the last 60 minutes.|
 |resourceAvailabilityCheckNoSubnetIP|The subnet provided doesn't have IP addresses available. Please make sure that the subnet provided in the on-premises network connection has sufficient IP addresses available. Please expand the current selected subnet, or select a different subnet to be used for provisioning.|
 |resourceAvailabilityCheckSubscriptionDisabled|The Azure subscription provided is disabled. Please make sure that the Azure subscription is enabled and available for provisioning.|
+|resourceAvailabilityCheckAzurePolicyViolation|Creating the required Azure resource failed because your organizations Azure policy blocked the action. Please update your Azure policy to allow this resource creation.|
 |resourceAvailabilityCheckUnsupportedVNetRegion|The selected vNet is located in an unsupported region. Please ensure that the selected vNet is located in a supported region.|
 |resourceAvailabilityCheckUnknownError|An unknown error occurred while checking Azure resources. Please ensure that all Azure resources meet prerequisites.|
 |permissionCheckNoSubscriptionReaderRole|Cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Please make sure that cloud PC service principal has the Reader permissions on the subscription.|
 |permissionCheckNoResourceGroupOwnerRole|Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that cloud PC service principal has the Owner permissions on the resource group. |
 |permissionCheckNoVNetContributorRole|Cloud PC service principal doesn't have sufficient permissions on the Azure vNet. Please make sure that cloud PC service has the Network contributor permissions on the vNet.|
 |permissionCheckUnknownError|Cloud PC service principal doesn't have sufficient permissions. Please make sure that cloud PC service principal is granted sufficient Azure permissions.|
+|internalServerErrorDeploymentCanceled|The deployment was canceled. Try again later. If the problem persists, contact support.|
+|internalServerErrorAllocateResourceFailed|The allocation of resources failed. Try again or contact support for more details.|
+|internalServerErrorVMDeploymentTimeout|The virtual machine deployment timed out. Try again. If the problem persists, contact support.|
 |internalServerErrorUnableToRunDscScript|During provisioning, some PowerShell DSC scripts are executed on the cloud PC. Unable to either download these DSC scripts or execute them during the health check. Please ensure vNet has unrestricted access to the required endpoints, and PowerShell is not blocked in the environment or Group Policy.|
 |internalServerUnknownError|Provisioning has failed due to an internal error. Please contact customer support.|
 

@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| ChatMember.ReadWrite |
+|Delegated (work or school account)| ChatMember.ReadWrite, Chat.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| Not supported. |
+|Application| ChatMember.ReadWrite.All, Chat.ReadWrite.All |
 
 <!-- { "blockType": "ignored"} -->
 ```http
