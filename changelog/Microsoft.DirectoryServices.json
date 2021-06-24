@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+      { 
+        "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+        "ApiChange": "Property",
+        "ChangedApiName": "isBackendCertificateValidationEnabled",
+        "ChangeType": "Addition",
+        "Description": "Added the **isBackendCertificateValidationEnabled** property to the [onPremisesPublishing](https://docs.microsoft.com/en-us/graph/api/resources/onpremisespublishing?view=graph-rest-beta) resource.",
+        "Target": "onPremisesPublishing"
+      }
+    ],
+      "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-6-23T08:55:18.080Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Applications"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "c0588e7b-d315-4071-86d5-2bec5b810b0f",
           "ApiChange": "Enum type",
@@ -204,6 +222,24 @@
     "WorkloadArea": "Identity and access",
     "SubArea": "Identity and sign-in"
   },
+    {
+      "ChangeList": [
+        {
+          "Id": "3437c554-3f70-11eb-8081-2385ed998336",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateService",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateService](https://docs.microsoft.com/en-us/graph/api/organization-activateService?view=graph-rest-beta) method to the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource",
+          "Target": "organization"
+        }
+      ],
+      "Id": "34331d67-3f70-11eb-8081-2385ed998336",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-23T07:27:50.958Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
     {
       "ChangeList": [
         {
@@ -6662,44 +6698,48 @@
       "SubArea": ""
     },
     {
-
-    "ChangeList": [
-      {"Id":"f327cb08-5076-11eb-ae35-ed470c456b69",
-        "ApiChange":"Method",
-        "ChangedApiName":"FilterByCurrentUser",
-        "ChangeType":"Addition",
-        "Description":"Added the [FilterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest-FilterByCurrentUser?view=graph-rest-beta) method to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource",
-        "Target":"accessPackageAssignmentRequest"
-      },
-      {"Id":"f32a33c2-5076-11eb-ae35-ed470c456b69",
-        "ApiChange":"Method",
-        "ChangedApiName":"FilterByCurrentUser",
-        "ChangeType":"Addition",
-        "Description":"Added the [FilterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignment-FilterByCurrentUser?view=graph-rest-beta) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-beta) resource",
-        "Target":"accessPackageAssignment"
-      },
-      {"Id":"f32c8c02-5076-11eb-ae35-ed470c456b69",
-        "ApiChange":"Method",
-        "ChangedApiName":"My",
-        "ChangeType":"Deletion",
-        "Description":"Removed the **My** method from the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource",
-        "Target":"accessPackageAssignmentRequest"
-      },
-      {"Id":"f32ef85c-5076-11eb-ae35-ed470c456b69",
-        "ApiChange":"Method",
-        "ChangedApiName":"My",
-        "ChangeType":"Deletion",
-        "Description":"Removed the **My** method from the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-beta) resource",
-        "Target":"accessPackageAssignment"
-        }],
-      "Id":"f3230454-5076-11eb-ae35-ed470c456b69",
-        "Cloud":"prd",
-        "Version":"beta",
-        "CreatedDateTime":"2021-05-07T23:28:58.045Z",
-        "WorkloadArea":"Identity and access",
-        "SubArea":"Identity governance"
-      }, {
-
+      "ChangeList": [
+        {
+          "Id": "f327cb08-5076-11eb-ae35-ed470c456b69",
+          "ApiChange": "Method",
+          "ChangedApiName": "FilterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [FilterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest-FilterByCurrentUser?view=graph-rest-beta) method to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "f32a33c2-5076-11eb-ae35-ed470c456b69",
+          "ApiChange": "Method",
+          "ChangedApiName": "FilterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [FilterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignment-FilterByCurrentUser?view=graph-rest-beta) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-beta) resource",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "f32c8c02-5076-11eb-ae35-ed470c456b69",
+          "ApiChange": "Method",
+          "ChangedApiName": "My",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **My** method from the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "f32ef85c-5076-11eb-ae35-ed470c456b69",
+          "ApiChange": "Method",
+          "ChangedApiName": "My",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **My** method from the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-beta) resource",
+          "Target": "accessPackageAssignment"
+        }
+      ],
+      "Id": "f3230454-5076-11eb-ae35-ed470c456b69",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-07T23:28:58.045Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
+    },
+    {
       "ChangeList": [
         {
           "Id": "f7c9599a-1e37-4506-a16b-3ba8ffa9e530",
@@ -7453,7 +7493,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": ""
     },
-    {      
+    {
       "ChangeList":[
         {
           "Id": "d8fedf6b-58aa-11eb-9aa5-a83ab134eab0",

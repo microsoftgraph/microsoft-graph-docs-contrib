@@ -2316,6 +2316,73 @@ Possible values for user account types (group membership), per Windows definitio
 |cloudPC|
 |other|
 
+### postType values 
+
+|Member|
+|:---|
+|regular|
+|quick|
+|strategic|
+|unknownFutureValue|
+
+### serviceHealthClassificationType values 
+
+|Member|
+|:---|
+|advisory|
+|incident|
+|unknownFutureValue|
+
+### serviceHealthOrigin values 
+
+|Member|
+|:---|
+|microsoft|
+|thirdParty|
+|customer|
+|unknownFutureValue|
+
+### serviceHealthStatus values 
+
+|Member|
+|:---|
+|serviceOperational|
+|investigating|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|resolved|
+|mitigatedExternal|
+|mitigated|
+|resolvedExternal|
+|confirmed|
+|reported|
+|unknownFutureValue|
+
+### serviceUpdateCategory values 
+
+|Member|
+|:---|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
+|unknownFutureValue|
+
+### serviceUpdateSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|critical|
+|unknownFutureValue|
+
 ### teamworkTagType values
 
 |Member| Value | Description               |
