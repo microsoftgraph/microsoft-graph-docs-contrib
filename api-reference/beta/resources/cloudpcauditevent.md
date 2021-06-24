@@ -21,8 +21,8 @@ Represents the audit event entity.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcAuditEvents](../api/virtualendpoint-list-auditevents.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|List properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects.|
-|[Get cloudPcAuditEvent](../api/cloudpcauditevent-get.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Read the properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.|
+|[List auditEvents](../api/virtualendpoint-list-auditevents.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|List all the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects in a tenant.|
+|[Get cloudPcAuditEvent](../api/cloudpcauditevent-get.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Read the properties and relationships of a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.|
 |[getAuditActivityTypes function](../api/cloudpcauditevent-getauditactivitytypes.md)|String collection|Get audit activity types.|
 
 ## Properties
@@ -65,7 +65,7 @@ Represents the audit event entity.
 
 |Member|Description|
 |:---|:---|
-|cloudPC|CloudPC category.|
+|cloudPC|Cloud PC category.|
 |other |Other category.|
 
 ## Relationships
