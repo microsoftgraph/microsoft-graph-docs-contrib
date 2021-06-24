@@ -2970,6 +2970,14 @@
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
           "ApiChange": "EnumType",
+          "ChangedApiName": "teamworkCallEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamworkCallEventType** enumeration type.",
+          "Target": "teamworkCallEventType"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "EnumType",
           "ChangedApiName": "callRecordingStatus",
           "ChangeType": "Addition",
           "Description": "Added the **callRecordingStatus** enumeration type.",

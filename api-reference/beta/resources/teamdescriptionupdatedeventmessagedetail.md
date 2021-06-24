@@ -1,6 +1,6 @@
 ---
 title: "teamDescriptionUpdatedEventMessageDetail resource type"
-description: "Represents details for team description updated event message"
+description: "Represents details for team description updated event message."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -23,7 +23,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|teamDescription|String|Updated description for the team.|
+|teamDescription|String|The updated description for the team.|
 |teamId|String|Unique identifier of the team.|
 
 ## JSON representation

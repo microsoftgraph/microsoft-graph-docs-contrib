@@ -1,6 +1,6 @@
 ---
 title: "callTranscriptEventMessageDetail resource type"
-description: "Represents details for call transcript event message"
+description: "Represents details for call transcript event message."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

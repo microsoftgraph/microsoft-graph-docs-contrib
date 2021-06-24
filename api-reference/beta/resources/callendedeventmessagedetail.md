@@ -23,6 +23,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |callDuration|Duration|Duration of the call.|
+|callEventType|teamworkCallEventType|Represents the call event type. Possible values are: `call`, `meeting`, `screenShare`, `unknownFutureValue`.|
 |callId|String|Unique identifier of the call.|
 |callParticipants|[callParticipantInfo](../resources/callparticipantinfo.md) collection|List of call participants.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
@@ -46,7 +47,8 @@ The following is a JSON representation of the resource.
   "initiator": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "callDuration": "String (duration)"
+  "callDuration": "String (duration)",
+  "callEventType": "String"
 }
 ```
 
@@ -91,6 +93,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "#microsoft.graph.callEndedEventMessageDetail",
     "callId": "9c848c0e-f906-4dfc-b22e-c68a785a587c",
     "callDuration": "PT59S",
+    "callEventType": "meeting",
     "callParticipants": [{
       "participant": {
         "application": null,

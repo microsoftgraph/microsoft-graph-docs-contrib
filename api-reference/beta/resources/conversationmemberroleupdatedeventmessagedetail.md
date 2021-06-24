@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details for conversation member role updated event.
-This message is generated when role of a member in a channel or a team has been updated.
+This message is generated when the role of a member in a channel or a team has been updated.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -23,7 +23,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |conversationMemberRoles|String collection|Roles for the coversation member user.|
-|conversationMemberUser|[identity](../resources/identity.md)|Identity of the conversation member user.|
+|conversationMemberUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Identity of the conversation member user.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
 ## JSON representation
@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
     "String"
   ],
   "converstaionMemberUser": {
-    "@odata.type": "microsoft.graph.identity"
+    "@odata.type": "microsoft.graph.teamworkUserIdentity"
   },
   "initiator": {
     "@odata.type": "microsoft.graph.identitySet"

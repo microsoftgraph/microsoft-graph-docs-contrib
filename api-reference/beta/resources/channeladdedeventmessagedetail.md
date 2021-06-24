@@ -1,6 +1,6 @@
 ---
 title: "channelAddedEventMessageDetail resource type"
-description: "Represents details for a channel added event"
+description: "Represents details for a channel added event."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details a channel added event message.
+Represents details for a channel added event message.
 This message is generated when a standard channel is added to a team.
 
 

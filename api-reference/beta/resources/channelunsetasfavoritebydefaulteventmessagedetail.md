@@ -1,6 +1,6 @@
 ---
 title: "channelUnsetAsFavoriteByDefaultEventMessageDetail resource type"
-description: "Represents details for channel set as favorite by default event"
+description: "Represents details for channel unset as favorite by default event."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

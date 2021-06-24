@@ -1,6 +1,6 @@
 ---
 title: "teamJoiningEnabledEventMessageDetail resource type"
-description: "Represents details for team joining enabled event message"
+description: "Represents details for team joining enabled event message."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

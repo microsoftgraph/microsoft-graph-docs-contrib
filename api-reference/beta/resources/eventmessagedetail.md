@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type for representing system event message details.
+This abstract type represents system event message details.
 
-System messages are messages generated for events such as members added to a channel, members added to a chat, team description updated.
+System messages are messages generated for events such as members added to a channel, members added to a chat, and team description updated.
 
 List of events supported
 
@@ -50,7 +50,9 @@ List of events supported
 | [teamsAppUpgradedEventMessageDetail](../resources/teamsAppUpgradedEventMessageDetail.md) | Teams app has been upgraded. |
 | [teamUnarchivedEventMessageDetail](../resources/teamUnarchivedEventMessageDetail.md) | A team has been unarchived. |
 
-
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
 
 
 ## JSON representation

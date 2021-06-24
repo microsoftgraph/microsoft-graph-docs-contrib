@@ -1,6 +1,6 @@
 ---
 title: "teamArchivedEventMessageDetail resource type"
-description: "Represents details for team archived event message"
+description: "Represents details for team archived event message."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

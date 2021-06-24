@@ -1,6 +1,6 @@
 ---
 title: "meetingPolicyUpdatedEventMessageDetail resource type"
-description: "Represents details for meeting policy updated event message"
+description: "Represents details for meeting policy updated event message."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

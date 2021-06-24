@@ -1,6 +1,6 @@
 ---
 title: "teamCreatedEventMessageDetail resource type"
-description: "Represents details for team created event message"
+description: "Represents details for team created event message."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

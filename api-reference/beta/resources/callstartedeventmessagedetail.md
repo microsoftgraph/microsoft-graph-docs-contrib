@@ -22,6 +22,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|callEventType|teamworkCallEventType|Represents the call event type. Possible values are: `call`, `meeting`, `screenShare`, `unknownFutureValue`.|
 |callId|String|Unique identifier of the call.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
@@ -38,7 +39,8 @@ The following is a JSON representation of the resource.
   "callId": "String",
   "initiator": {
     "@odata.type": "microsoft.graph.identitySet"
-  }
+  },
+  "callEventType": "String"
 }
 ```
 
@@ -79,6 +81,7 @@ The following is a JSON representation of the resource.
   "eventDetail": {
     "@odata.type": "#microsoft.graph.callStartedEventMessageDetail",
     "callId": "9c848c0e-f906-4dfc-b22e-c68a785a587c",
+    "callEventType": "meeting",
     "initiator": {
       "application": null,
       "device": null,

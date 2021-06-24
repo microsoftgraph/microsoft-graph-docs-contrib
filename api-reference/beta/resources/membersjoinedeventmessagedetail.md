@@ -23,7 +23,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|members|[identity](../resources/identity.md) collection|List of members who joined the chat.|
+|members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of members who joined the chat.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.membersJoinedEventMessageDetail",
   "members": [
     {
-      "@odata.type": "microsoft.graph.identity"
+      "@odata.type": "microsoft.graph.teamworkUserIdentity"
     }
   ],
   "initiator": {

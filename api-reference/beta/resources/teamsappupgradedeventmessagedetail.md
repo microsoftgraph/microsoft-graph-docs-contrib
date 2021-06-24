@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details for teams app upgraded event message.
-This message is generated when a teamsApp is upgraded in a channel, a chat or a team.
+This message is generated when a teamsApp is upgraded in a channel, a chat, or a team.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -23,7 +23,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|teamsAppDisplayName|String|Name of the teamsApp.|
+|teamsAppDisplayName|String|Display name of the teamsApp.|
 |teamsAppId|String|Unique identifier of the teamsApp.|
 
 ## JSON representation

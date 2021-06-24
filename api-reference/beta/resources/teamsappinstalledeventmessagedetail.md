@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details for teams app installed event message.
-This message is generated when a teamsApp is removed from a channel, a chat or a team.
+This message is generated when a teamsApp is installed in a channel, a chat, or a team.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

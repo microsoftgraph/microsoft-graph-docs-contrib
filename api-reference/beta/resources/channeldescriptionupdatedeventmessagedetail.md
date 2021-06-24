@@ -1,6 +1,6 @@
 ---
 title: "channelDescriptionUpdatedEventMessageDetail resource type"
-description: "Represents details for channel description updated event message"
+description: "Represents details for channel description updated event message."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -22,7 +22,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|channelDescription|String|Updated description of the channel.|
+|channelDescription|String|The updated description of the channel.|
 |channelId|String|Unique identifier of the channel.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 

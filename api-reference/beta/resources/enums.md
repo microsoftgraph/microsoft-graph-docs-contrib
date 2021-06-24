@@ -1719,8 +1719,6 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |message|
-|chatEvent|
-|typing|
 |unknownFutureValue|
 |systemEventMessage|
 
@@ -2277,4 +2275,13 @@ Possible values for user account types (group membership), per Windows definitio
 |failure|
 |initial|
 |chunkFinished|
+|unknownFutureValue|
+
+### teamworkCallEventType values 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
 |unknownFutureValue|

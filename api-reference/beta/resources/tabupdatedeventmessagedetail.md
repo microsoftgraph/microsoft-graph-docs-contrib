@@ -1,6 +1,6 @@
 ---
 title: "tabUpdatedEventMessageDetail resource type"
-description: "Represents details for tab updated event message"
+description: "Represents details for tab updated event message."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

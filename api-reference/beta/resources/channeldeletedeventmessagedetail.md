@@ -1,6 +1,6 @@
 ---
 title: "channelDeletedEventMessageDetail resource type"
-description: "Represents details for a channel deleted event"
+description: "Represents details for a channel deleted event."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

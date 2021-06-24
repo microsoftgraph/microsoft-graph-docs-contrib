@@ -1,6 +1,6 @@
 ---
 title: "callRecordingEventMessageDetail resource type"
-description: "Represents details for call recording event message"
+description: "Represents details for call recording event message."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

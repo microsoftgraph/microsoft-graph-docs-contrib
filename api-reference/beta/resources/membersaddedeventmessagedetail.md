@@ -1,6 +1,6 @@
 ---
 title: "membersAddedEventMessageDetail resource type"
-description: "Represents details for members added event message"
+description: "Represents details for members added event message."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details for members added event message.
-This message is generated when members are added to a chat, a channel or a team.
+This message is generated when members are added to a chat, a channel, or a team.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -23,7 +23,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|members|[identity](../resources/identity.md) collection|List of members added.|
+|members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of members added.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.membersAddedEventMessageDetail",
   "members": [
     {
-      "@odata.type": "microsoft.graph.identity"
+      "@odata.type": "microsoft.graph.teamworkUserIdentity"
     }
   ],
   "initiator": {
