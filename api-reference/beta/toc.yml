@@ -11444,6 +11444,8 @@ items:
               href: api/accesspackage-delete.md
             - name: Filter by current user
               href: api/accesspackage-filterbycurrentuser.md
+            - name: Get applicable policy requirements
+              href: api/accesspackage-getapplicablepolicyrequirements.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:

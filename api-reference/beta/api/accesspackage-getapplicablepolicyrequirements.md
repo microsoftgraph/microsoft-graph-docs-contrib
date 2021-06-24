@@ -35,17 +35,15 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicable
 
 ## Function parameters
 
-The following table shows the return value that can be used to request an assignment for an access package.
-
-Parameter|Type|Description|
-| :--- | :--- | :--- |
-| on | Microsoft.IGAELM.EC.FrontEnd.ExternalModel.accessPackage | |
+None
 
 ## Optional query parameters
 None
 
 ## Request headers
-None
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 Do not supply a request body for this method.

@@ -27,8 +27,8 @@ This type has the following properties:
 | isApprovalRequiredForExtension  | Boolean | Whether approval is required when a user tries to extend their access. |
 | isRequestorJustificationRequired | Boolean | Whether a requestor must supply justification when submitting an assignment request. |
 | isCustomAssignmentScheduleAllowed | Boolean | Whether the requestor is allowed to set a custom schedule. |
-| schedule | requestSchedule | Schedule restrictions enforced, if any; null if none. |
-| questions | accessPackageQuestion collection | Questions that are configured on the policy, required or optional; callers can determine if a question is required or optional based on the **isRequired** property on accessPackageQuestion. `null` if no questions are configured. |
+| schedule | requestSchedule | Schedule restrictions enforced, if any. |
+| questions | accessPackageQuestion collection | Questions that are configured on the policy, required or optional; callers can determine if a question is required or optional based on the **isRequired** property on accessPackageQuestion. |
 | existingAnswers | accessPackageQuestion collection | Answers that have already been provided. |
 
 ## JSON representation
