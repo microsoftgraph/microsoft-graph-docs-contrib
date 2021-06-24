@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get audit activity types by tenant id.
+Get audit activity types by tenant ID.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a String collect
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvents/getAuditActivityTypes
 ```
 
-#### Response
+### Response
 
 
 <!-- {
