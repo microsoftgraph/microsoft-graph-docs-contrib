@@ -3,6 +3,42 @@
     {
       "ChangeList": [
       { 
+        "Id": "8c7ce52a-fc83-4b8b-a9c5-d3b91afe87f0",
+        "ApiChange": "Resource",
+        "ChangedApiName": "user",
+        "ChangeType": "Addition",
+        "Description": "Added the [changePassword](https://docs.microsoft.com/en-us/graph/api/user-changepassword?view=graph-rest-1.0) action to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+        "Target": "user"
+      }
+    ],
+      "Id": "0eb35d0a-a7e5-483c-bcd8-552ec1df6f77",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-06-25T08:55:18.080Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+      { 
+        "Id": "8c7ce52a-fc83-4b8b-a9c5-d3b91afe87f0",
+        "ApiChange": "Resource",
+        "ChangedApiName": "user",
+        "ChangeType": "Addition",
+        "Description": "Added the [changePassword](https://docs.microsoft.com/en-us/graph/api/user-changepassword?view=graph-rest-beta) action to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+        "Target": "user"
+      }
+    ],
+      "Id": "8c7ce52a-fc83-4b8b-a9c5-d3b91afe87f0",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-25T08:55:18.080Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+      { 
         "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
         "ApiChange": "Property",
         "ChangedApiName": "isBackendCertificateValidationEnabled",
@@ -14,7 +50,7 @@
       "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-6-23T08:55:18.080Z",
+      "CreatedDateTime": "2021-06-23T08:55:18.080Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Applications"
     },
