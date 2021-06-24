@@ -1,5 +1,5 @@
 ---
-title: "Get calendarPermission"
+title: "List calendarPermissions"
 description: "Get the properties and relationships of calendarpermission object."
 localization_priority: Normal
 author: "sochowdh"
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
-# Get calendarPermission
+# Get List calendarPermissions
 
 Namespace: microsoft.graph
 
