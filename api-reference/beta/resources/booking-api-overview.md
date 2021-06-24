@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Bookings API in Microsoft Graph"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Microsoft Bookings lets enterprise organization and small business owners manage customer bookings and information with minimal setup."
 localization_priority: Priority
 author: "arvindmicrosoft"
 ms.prod: "bookings"
