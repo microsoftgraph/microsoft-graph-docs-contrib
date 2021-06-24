@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details for channel description updated event message.
-This message is generated when channel's description is updated.
+This message is generated when a channel's description is updated.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

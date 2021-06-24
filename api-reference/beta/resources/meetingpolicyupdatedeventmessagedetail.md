@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details for meeting policy updated event message.
-This message is generated when meeting option **Allow meeting chat** is updated.
+This message is generated when the meeting option **Allow meeting chat** is updated.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -23,7 +23,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|meetingChatEnabled|Boolean|Represents if the meeting chat is enabled or not.|
+|meetingChatEnabled|Boolean|Represents whether the meeting chat is enabled or not.|
 |meetingChatId|String|Unique identifier of the meeting chat.|
 
 ## JSON representation
