@@ -21,7 +21,7 @@ The audit actor represented by the Azure AD user and application associated with
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include ItPro, Application, Partner and Unknown.|
+|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `Unknown`.|
 |userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
 |applicationId|String|Azure AD application ID.|
 |applicationDisplayName|String|Name of the application.|
@@ -37,9 +37,9 @@ The audit actor represented by the Azure AD user and application associated with
 
 |Member|Description|
 |:---|:---|
-|itPro|Operation took by ItPro.|
-|application|Operation took by application.|
-|partner|Operation took by partner.|
+|itPro|The operation was performed by an IT pro.|
+|application|The operation was performed by the application.|
+|partner|The operation was performed by a partner.|
 |unknown|Unknown actor.|
 
 ## Relationships
@@ -48,7 +48,7 @@ None.
 
 ## JSON Representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcAuditActor"
