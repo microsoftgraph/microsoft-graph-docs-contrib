@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "ea230936-ad75-4706-81ba-d9c25211400a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "scopedMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [scopedMembers](https://docs.microsoft.com/en-us/graph/api/resources/scopedrolemembership?view=graph-rest-v1.0) navigation property to the [directoryRole](https://docs.microsoft.com/en-us/graph/api/resources/directoryrole?view=graph-rest-v1.0) entity",
+          "Target": "directoryRole"
+        }
+      ],
+      "Id": "ea230936-ad75-4706-81ba-d9c25211400a",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-06-24T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
       { 
         "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
         "ApiChange": "Property",
@@ -17,24 +35,6 @@
       "CreatedDateTime": "2021-6-23T08:55:18.080Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Applications"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "ea230936-ad75-4706-81ba-d9c25211400a",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "scopedMembers",
-          "ChangeType": "Addition",
-          "Description": "Added the [scopedMembers](https://docs.microsoft.com/en-us/graph/api/resources/scopedrolemembership?view=graph-rest-v1.0) navigation property to the [directoryRole](https://docs.microsoft.com/en-us/graph/api/resources/directoryrole?view=graph-rest-v1.0) entity",
-          "Target": "directoryRole"
-        }
-      ],
-      "Id": "ea230936-ad75-4706-81ba-d9c25211400a",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2021-06-22T00:00:00",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -62,7 +62,7 @@
       "WorkloadArea": "Change notifications",
       "SubArea": ""
     },
-    {
+{
       "ChangeList": [
         {
           "Id": "c67f9534-b014-4ef4-98ce-1c616cc69adc",
@@ -309,7 +309,7 @@
       "CreatedDateTime": "2021-06-07T00:00:00",
       "WorkloadArea": "Applications",
       "SubArea": ""
-    },
+    },  
     {
       "ChangeList": [
         {
@@ -335,7 +335,7 @@
       "CreatedDateTime": "2021-06-07T00:00:00",
       "WorkloadArea": "Applications",
       "SubArea": ""
-    },
+    }, 
     {
       "ChangeList": [
         {
@@ -374,14 +374,14 @@
     },
     {
       "ChangeList": [
-        {
-          "Id": "3f30920e-41d4-4a40-b4dc-f95070985bfa",
-          "ApiChange": "Property",
-          "ChangedApiName": "isAssignableToRole",
-          "ChangeType": "Addition",
-          "Description": "Added the **isAssignableToRole** property to the groups resource type.",
-          "Target": "isAssignableToRole"
-        }
+          {
+              "Id": "3f30920e-41d4-4a40-b4dc-f95070985bfa",
+              "ApiChange": "Property",
+              "ChangedApiName": "isAssignableToRole",
+              "ChangeType": "Addition",
+              "Description": "Added the **isAssignableToRole** property to the groups resource type.",
+              "Target": "isAssignableToRole"
+          }
       ],
       "Id": "3f30920e-41d4-4a40-b4dc-f95070985bfa",
       "Cloud": "prd",
@@ -7512,11 +7512,7 @@
       "SubArea": ""
     },
     {
-<<<<<<< HEAD
-      "ChangeList": [
-=======
       "ChangeList":[
->>>>>>> b3421b5871f950c12183b2a1a0658c0aabc216b8
         {
           "Id": "d8fedf6b-58aa-11eb-9aa5-a83ab134eab0",
           "ApiChange": "Resource",
