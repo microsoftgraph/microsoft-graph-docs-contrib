@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List managementIntents
 Namespace: microsoft.graph.managedTenants
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [managementIntent](../resources/managedtenants-managementintent.md) objects and their properties.
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
