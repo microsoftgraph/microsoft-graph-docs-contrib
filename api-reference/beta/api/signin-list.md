@@ -27,6 +27,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 In addition, apps must be properly registered to Azure Active Directory.
 
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Global Reader
++ Reports Reader
++ Security Administrator
++ Security Operator
++ Security Reader
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
