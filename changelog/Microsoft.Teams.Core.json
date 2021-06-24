@@ -8,7 +8,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [chat](https://docs.microsoft.com/graph/api/resources/chat).",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [chat](https://docs.microsoft.com/graph/api/resources/chat) resource.",
           "Target": "chat"
         },
         {
@@ -16,7 +16,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conversationMember",
           "ChangeType": "Addition",
-          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [conversationMember](https://docs.microsoft.com/graph/api/resources/conversationMember).",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [conversationMember](https://docs.microsoft.com/graph/api/resources/conversationMember) resource.",
           "Target": "chat"
         }
       ],

@@ -1,6 +1,6 @@
 ---
-title: "Get change notifications for creation or updation of chats using Microsoft Graph"
-description: "Get change notifications for change in creation or updation of chats using Microsoft Graph"
+title: "Get change notifications for chats using Microsoft Graph"
+description: "Learn how to get notifications for changes (create and update) for chats using Microsoft Graph APIs."
 author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -9,12 +9,13 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for chat using Microsoft Graph
 
+Change notifications enable you to subscribe to changes (create and update) to chats. You can get notified whenever a chat is created or updated. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
-### Subscribe to changes in any chat at tenant level
+## Subscribe to changes in any chat at tenant level
 
 To get change notifications for any change in chat's property across tenant or creation of a chat in tenant, subscribe to `/chats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -22,11 +23,12 @@ To get change notifications for any change in chat's property across tenant or c
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All   | beta|
 
-#### Example
+### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -39,12 +41,12 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to changes in a particular chat
+## Subscribe to changes in a particular chat
 
 
 To get change notifications for any change in chats' property of a specific chat, subscribe to `/chats/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -54,11 +56,12 @@ To get change notifications for any change in chats' property of a specific chat
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
-#### Example
+### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -144,7 +147,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Following payload describes the information sent in the request for notifications without resource data. This particular payload signifies that a new chat has been created.
+The following payload describes the information sent in the request for notifications without resource data. This particular payload signifies that a new chat has been created.
 
 ```json
 {

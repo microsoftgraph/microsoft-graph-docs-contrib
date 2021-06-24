@@ -9,11 +9,13 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for change in chats membership using Microsoft Graph
 
-### Subscribe to changes in membership of any chat at tenant level
+Change notifications enable you to subscribe to changes (create and delete) in chats membership. You can get notified whenever member is added or removed in a chat. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+
+## Subscribe to changes in membership of any chat at tenant level
 
 To get change notifications for membership change in a any chat across tenant, subscribe to `/chats/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -21,11 +23,12 @@ To get change notifications for membership change in a any chat across tenant, s
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta|
 
-#### Example
+### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,deleted",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -38,11 +41,11 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to changes in membership of a particular chat
+## Subscribe to changes in membership of a particular chat
 
-To get change notifications for membership change in a particular chat, subscribe to `/chats/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in a particular chat, subscribe to `/chats/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -52,11 +55,12 @@ To get change notifications for membership change in a particular chat, subscrib
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
-#### Example
+### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,deleted",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -73,7 +77,7 @@ Content-Type: application/json
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following. This payload is for a membership change in a team.
+For notifications with resource data, the payload looks like the following. This payload is for a membership change in a chat.
 
 ```json
 {
@@ -121,7 +125,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Following payload describes the information sent in the request for notifications without resource data. This particular payload signifies that a user has been added to a chat.
+The following payload describes the information sent in the request for notifications without resource data. This particular payload signifies that a user has been added to a chat.
 
 ```json
 {
