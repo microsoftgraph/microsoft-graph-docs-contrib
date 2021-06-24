@@ -597,6 +597,48 @@
     {
       "ChangeList": [
         {
+          "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTag](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTag?view=graph-rest-beta) resource type and associated methods.",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkTagMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagMember?view=graph-rest-beta) resource type and associated methods.",
+          "Target": "teamworkTagMember"
+        },
+        {
+          "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamworkTagType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamworkTagType** enumeration type.",
+          "Target": "teamworkTagType"
+        },
+        {
+          "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [tags](https://docs.microsoft.com/en-us/graph/api/teamworktag-create?view=graph-rest-beta) navigation property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type, enabling tags to be added with increased reliability and lower latency.",
+          "Target": "teamworkTag,team"
+        }
+      ],
+      "Id": "b7bad23d-b41d-4d07-8990-3a02d3ddac4a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-06-21T21:46:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
           "ApiChange": "Property",
           "ChangedApiName": "chatType",

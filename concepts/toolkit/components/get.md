@@ -35,15 +35,18 @@ You can use several attributes to change the behavior of the component. The only
 | N/A |error| Read-only error from Microsoft Graph if request was not successful. |
 
 ## Methods
+
 | Method | Description |
 | --- | --- |
 | refresh(force?:boolean) | Call the method to refresh the data. By default, the UI will only update if the data changes. Pass `true` to force the component to update.  |
 
-
 ## Events
+
 | Event | Detail | Description |
 | --- | --- | --- |
-| dataChange | The detail contains the `response` and `error` objects. | Fired when the response or error change. |
+| `dataChange` | The detail contains the `response` and `error` objects. | Fired when the response or error change. |
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 

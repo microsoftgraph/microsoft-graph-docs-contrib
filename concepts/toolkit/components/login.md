@@ -78,6 +78,8 @@ The following events are fired from the control.
 | `logoutInitiated` | The user started to logout - cancelable. |
 | `logoutCompleted` | The user signed out. |
 
+For more information about handling events, see [events](../customize-components/events.md).
+
 ## Templates
 
 The `mgt-login` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the values listed in the following table. 
