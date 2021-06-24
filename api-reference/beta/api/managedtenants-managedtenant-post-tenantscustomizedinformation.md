@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.
+Create a new tenantCustomizedInformation object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,11 +46,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md)|
-|displayName|String|**TODO: Add Description**|
+|id|String|The unique identifier for the tenant customized information.|
 |tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
-|contacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|**TODO: Add Description**|
-|website|String|**TODO: Add Description**|
+|contacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|The collection of contacts associated with the managed tenant.|
+|website|String|The website for the managed tenant.|
 
 
 
@@ -100,7 +99,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",
   "id": "3ba5a2eb-a2eb-3ba5-eba2-a53beba2a53b",
-  "displayName": "String",
   "tenantId": "String",
   "contacts": [
     {
@@ -110,4 +108,3 @@ Content-Type: application/json
   "website": "String"
 }
 ```
-

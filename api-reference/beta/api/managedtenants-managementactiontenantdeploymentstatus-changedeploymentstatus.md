@@ -1,6 +1,6 @@
 ---
 title: "managementActionTenantDeploymentStatus: changeDeploymentStatus"
-description: "**TODO: Add Description**"
+description: "Changes the tenant level deployment status for the management action."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
@@ -11,8 +11,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-**TODO: Add Description**
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,13 +44,11 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantGroupId|String|**TODO: Add Description**|
+|tenantGroupId|String|The identifier for the tenant group.|
 |tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
-|managementActionId|String|**TODO: Add Description**|
-|managementTemplateId|String|**TODO: Add Description**|
-|status|String|**TODO: Add Description**|
-
-
+|managementActionId|String|The identifier for the management action.|
+|managementTemplateId|String|The identifier for the management template.|
+|status|String|The new status for the management action tenant deployment.|
 
 ## Response
 
@@ -80,7 +76,6 @@ Content-length: 153
 }
 ```
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -99,4 +94,3 @@ Content-Type: application/json
   }
 }
 ```
-

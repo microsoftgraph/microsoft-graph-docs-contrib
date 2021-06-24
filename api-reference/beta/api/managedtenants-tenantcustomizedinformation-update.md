@@ -46,13 +46,10 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md)|
-|displayName|String|**TODO: Add Description**|
+|id|String|The Azure Active Directory tenant identifier for the managed tenant.|
 |tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
-|contacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|**TODO: Add Description**|
-|website|String|**TODO: Add Description**|
-
-
+|contacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|The collection of contacts associated with the managed tenant.|
+|website|String|The website for the managed tenant.|
 
 ## Response
 
@@ -73,7 +70,6 @@ Content-length: 278
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",
-  "displayName": "String",
   "tenantId": "String",
   "contacts": [
     {
@@ -109,4 +105,3 @@ Content-Type: application/json
   "website": "String"
 }
 ```
-

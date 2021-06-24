@@ -46,17 +46,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md)|
-|displayName|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|createdByUserId|String|**TODO: Add Description**|
-|lastActionByUserId|String|**TODO: Add Description**|
-|tenants|[microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md) collection|**TODO: Add Description**|
-|lastActionDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description**|
-
-
+|displayName|String|The display name for the tenant tag.|
+|description|String|The description for the tenant tag.|
+|tenants|[microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md) collection|The collection of managed tenants associated with the tenant tag.|
 
 ## Response
 
@@ -79,18 +71,13 @@ Content-length: 382
   "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
   "displayName": "String",
   "description": "String",
-  "createdByUserId": "String",
-  "lastActionByUserId": "String",
   "tenants": [
     {
       "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
     }
-  ],
-  "lastActionDateTime": "String (timestamp)",
-  "deletedDateTime": "String (timestamp)"
+  ]
 }
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -121,4 +108,3 @@ Content-Type: application/json
   "deletedDateTime": "String (timestamp)"
 }
 ```
-

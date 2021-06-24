@@ -1,18 +1,18 @@
 ---
-title: "tenantTag: assignTag"
-description: "**TODO: Add Description**"
+title: "tenantTag: unassignTag"
+description: "Un-assigns the tenant tag from the specified managed tenants."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# tenantTag: assignTag
+# tenantTag: unassignTag
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Un-assigns the tenant tag from the specified managed tenants.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/assignTag
+POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/unassignTag
 ```
 
 ## Request headers
@@ -46,9 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantIds|String collection|**TODO: Add Description**|
-
-
+|tenantIds|String collection|The collection of Azure Active Directory tenant identifiers for managed tenants.|
 
 ## Response
 
@@ -59,11 +57,11 @@ If successful, this action returns a `200 OK` response code and a [tenantTag](..
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "tenanttag_assigntag"
+  "name": "tenanttag_unassigntag"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}/assignTag
+POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}/unassignTag
 Content-Type: application/json
 Content-length: 41
 
@@ -73,7 +71,6 @@ Content-length: 41
   ]
 }
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

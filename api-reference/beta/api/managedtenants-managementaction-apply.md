@@ -1,25 +1,25 @@
 ---
-title: "tenantGroup: tenantSearch"
-description: "**TODO: Add Description**"
+title: "managementAction: apply"
+description: "Applies the management action against the specified managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# tenantGroup: tenantSearch
+# managementAction: apply
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Applies the management action against the specified managed tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
+|Delegated (work or school account)|ManagedTenants.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /tenantRelationships/managedTenants/tenantGroups/tenantSearch
+POST /tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
 ```
 
 ## Request headers
@@ -47,38 +47,39 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
-
-
+|tenantGroupId|String|The identifier of the tenant group.|
+|managementTemplateId|String|The identifier of the management template.|
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and a [managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md) in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "tenantgroup_tenantsearch"
+  "name": "managementaction_apply"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantGroups/tenantSearch
+POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
 Content-Type: application/json
-Content-length: 28
+Content-length: 95
 
 {
-  "tenantId": "String"
+  "tenantId": "String",
+  "tenantGroupId": "String",
+  "managementTemplateId": "String"
 }
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.managedTenants.tenantGroup)"
+  "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
 }
 -->
 ``` http
@@ -86,27 +87,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.managedTenants.tenantGroup",
-      "id": "String (identifier)",
-      "displayName": "String",
-      "allTenantsIncluded": "Boolean",
-      "tenantIds": [
-        "String"
-      ],
-      "managementIntents": [
-        {
-          "@odata.type": "microsoft.graph.managedTenants.managementIntentInfo"
-        }
-      ],
-      "managementActions": [
-        {
-          "@odata.type": "microsoft.graph.managedTenants.managementActionInfo"
-        }
-      ]
-    }
-  ]
+  "value": {
+    "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
+  }
 }
 ```
-

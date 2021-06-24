@@ -1,25 +1,25 @@
 ---
-title: "managementAction: apply"
-description: "**TODO: Add Description**"
+title: "tenantTag: assignTag"
+description: "Assign the tenant tag to the specified managed tenants."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# managementAction: apply
+# tenantTag: assignTag
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Assign the tenant tag to the specified managed tenants.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ManagedTenants.ReadWrite.All|
+|Delegated (work or school account)|ManagedTenants.WriteRead.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
+POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/assignTag
 ```
 
 ## Request headers
@@ -46,43 +46,38 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
-|tenantGroupId|String|**TODO: Add Description**|
-|managementTemplateId|String|**TODO: Add Description**|
-
-
+|tenantIds|String collection|The collection of Azure Active Directory tenant identifiers where the tenant tag should be assigned.|
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [tenantTag](../resources/managedtenants-tenanttag.md) in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "managementaction_apply"
+  "name": "tenanttag_assigntag"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
+POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}/assignTag
 Content-Type: application/json
-Content-length: 95
+Content-length: 41
 
 {
-  "tenantId": "String",
-  "tenantGroupId": "String",
-  "managementTemplateId": "String"
+  "tenantIds": [
+    "String"
+  ]
 }
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
+  "@odata.type": "microsoft.graph.managedTenants.tenantTag"
 }
 -->
 ``` http
@@ -91,8 +86,20 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
+    "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
+    "id": "String (identifier)",
+    "displayName": "String",
+    "description": "String",
+    "createdByUserId": "String",
+    "lastActionByUserId": "String",
+    "tenants": [
+      {
+        "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
+      }
+    ],
+    "lastActionDateTime": "String (timestamp)",
+    "createdDateTime": "String (timestamp)",
+    "deletedDateTime": "String (timestamp)"
   }
 }
 ```
-

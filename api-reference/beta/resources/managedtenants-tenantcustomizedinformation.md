@@ -19,10 +19,8 @@ Represents customizable information for a managed tenant.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List tenantCustomizedInformations](../api/managedtenants-tenantcustomizedinformation-list.md)|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) collection|Get a list of the [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) objects and their properties.|
-|[Create tenantCustomizedInformation](../api/managedtenants-tenantcustomizedinformation-create.md)|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|Create a new [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.|
 |[Get tenantCustomizedInformation](../api/managedtenants-tenantcustomizedinformation-get.md)|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|Read the properties and relationships of a [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.|
 |[Update tenantCustomizedInformation](../api/managedtenants-tenantcustomizedinformation-update.md)|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|Update the properties of a [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.|
-|[Delete tenantCustomizedInformation](../api/managedtenants-tenantcustomizedinformation-delete.md)|None|Deletes a [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.|
 
 ## Properties
 |Property|Type|Description|

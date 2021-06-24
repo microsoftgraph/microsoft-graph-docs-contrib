@@ -1,18 +1,18 @@
 ---
-title: "tenant: resetTenantOnboardingStatus"
-description: "**TODO: Add Description**"
+title: "tenant: offboardTenant"
+description: "Offboards the specified managed tenant from the multi-tenant management platform."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# tenant: resetTenantOnboardingStatus
+# tenant: offboardTenant
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Offboards the specified managed tenant from the multi-tenant management platform.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /tenantRelationships/managedTenants/tenants/{tenantId}/resetTenantOnboardingStatus
+POST /tenantRelationships/managedTenants/tenants/{tenantId}/offboardTenant
 ```
 
 ## Request headers
@@ -50,13 +50,12 @@ If successful, this action returns a `200 OK` response code and a [tenant](../re
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "tenant_resettenantonboardingstatus"
+  "name": "tenant_offboardtenant"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants/{tenantId}/resetTenantOnboardingStatus
+POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants/{tenantId}/offboardTenant
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -87,4 +86,3 @@ Content-Type: application/json
   }
 }
 ```
-
