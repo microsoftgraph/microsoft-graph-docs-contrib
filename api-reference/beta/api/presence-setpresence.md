@@ -15,19 +15,19 @@ Namespace: microsoft.graph
 
 Set the state of a user's presence session as an application.
 
-### Concept: presence sessions
-A user could have multiple presence sessions as the user could be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
+### Presence sessions
+A user can have multiple presence sessions because the user can be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
 
 Similarly, an application can have its own presence session for a user and be able to update the state.
 
-The precedence for how session states are aggregated is summarized as follows:
+The following is the precedence for how session states are aggregated:
 * User-configured > app-configured (user-configured state overrides others)
 * Among app-configured: DoNotDisturb (currently not supported for set presence) > Busy > Available > Away
 
 ### Timeout, expiration, and keep alive
-A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the desired state for the session; or before the **expiration**, to keep the session alive.
+A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
 
-A presence session can time out if the availability is `Available` and the timeout is 5 minutes. When it times out, the presence state would fade way in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
+A presence session can time out if the availability is `Available` and the timeout is 5 minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
 
 The expiration of a presence session is configurable with the `expirationDuration` parameter. When a session expires it becomes `Offline`.
 
