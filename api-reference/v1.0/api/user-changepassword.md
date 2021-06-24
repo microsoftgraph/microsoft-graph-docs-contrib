@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the password of the currently signed-in user. This API does not allow resetting passwords of other users. To reset the password of other users, update the **passwordProfile** property of the [user](../resources/user.md) resource. See an example to [Update the passwordProfile of a user](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user).
 
 ## Permissions
@@ -58,7 +56,7 @@ The following is an example of the request.
   "name": "user_changepassword"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/changePassword
+POST https://graph.microsoft.com/v1.0/me/changePassword
 Content-type: application/json
 
 {
