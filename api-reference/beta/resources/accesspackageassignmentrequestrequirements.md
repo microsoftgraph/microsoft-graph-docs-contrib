@@ -25,7 +25,7 @@ Namespace: microsoft.graph
 | isCustomAssignmentScheduleAllowed | Boolean | Whether the requestor is allowed to set a custom schedule. |
 | schedule | [requestSchedule](../resources/requestschedule.md) | Schedule restrictions enforced, if any. |
 | questions | accessPackageQuestion collection | Questions that are configured on the policy, required or optional; callers can determine if a question is required or optional based on the **isRequired** property on accessPackageQuestion. 
-| existingAnswers | [Collection](../resources/accesspackageanswerstring.md)  | Answers that have already been provided. |
+| existingAnswers | accessPackageAnswer collection  | Answers that have already been provided. |
 
 ## Relationships
 None.
