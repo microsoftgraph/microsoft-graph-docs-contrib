@@ -23,7 +23,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|teamsAppDisplayName|String|Name of the teamsApp.|
+|teamsAppDisplayName|String|Display name of the teamsApp.|
 |teamsAppId|String|Unique identifier of the teamsApp.|
 
 ## JSON representation
