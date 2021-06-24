@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+      { 
+        "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+        "ApiChange": "Property",
+        "ChangedApiName": "isBackendCertificateValidationEnabled",
+        "ChangeType": "Addition",
+        "Description": "Added the **isBackendCertificateValidationEnabled** property to the [onPremisesPublishing](https://docs.microsoft.com/en-us/graph/api/resources/onpremisespublishing?view=graph-rest-beta) resource.",
+        "Target": "onPremisesPublishing"
+      }
+    ],
+      "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-6-23T08:55:18.080Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Applications"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "c0588e7b-d315-4071-86d5-2bec5b810b0f",
           "ApiChange": "Enum type",
