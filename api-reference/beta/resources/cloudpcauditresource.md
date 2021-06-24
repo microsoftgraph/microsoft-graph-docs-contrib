@@ -21,9 +21,9 @@ Represents the audit resource. This shows the target edited resource entity, w
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The resource entity display name.|
-|modifiedProperties|[cloudPcAuditProperty](../resources/cloudpcauditproperty.md) collection|List of modified properties.|
-|type|String|Audit resource's type.|
-|resourceId|String|Audit resource's ID.|
+|modifiedProperties|[cloudPcAuditProperty](../resources/cloudpcauditproperty.md) collection|A list of modified properties.|
+|type|String|The type of the audit resource.|
+|resourceId|String|The ID of the audit resource.|
 
 ## Relationships
 
@@ -31,7 +31,7 @@ None
 
 ## JSON Representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcAuditResource"
