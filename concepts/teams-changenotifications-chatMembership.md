@@ -1,19 +1,19 @@
 ---
-title: "Get change notifications for any change in Chats membership using Microsoft Graph"
-description: "Get change notifications for any change in Chats membership using Microsoft Graph"
+title: "Get change notifications for chat membership using Microsoft Graph"
+description: "Learn how to get notifications for changes for chat membership using Microsoft Graph APIs"
 author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for change in chats membership using Microsoft Graph
+# Get change notifications for chat membership using Microsoft Graph
 
 Change notifications enable you to subscribe to changes (create and delete) in chats membership. You can get notified whenever member is added or removed in a chat. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
 ## Subscribe to changes in membership of any chat at tenant level
 
-To get change notifications for membership change in a any chat across tenant, subscribe to `/chats/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in any chat across tenant, subscribe to `/chats/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 ### Permissions
 

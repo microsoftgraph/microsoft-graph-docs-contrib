@@ -1,13 +1,13 @@
 ---
 title: "Get change notifications for chats using Microsoft Graph"
-description: "Learn how to get notifications for changes (create and update) for chats using Microsoft Graph APIs."
+description: "Learn how to get notifications for changes (create and update) for chats using Microsoft Graph APIs"
 author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for chat using Microsoft Graph
+# Get change notifications for chats using Microsoft Graph
 
 Change notifications enable you to subscribe to changes (create and update) to chats. You can get notified whenever a chat is created or updated. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
