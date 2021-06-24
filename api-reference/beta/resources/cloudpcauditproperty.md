@@ -1,6 +1,6 @@
 ---
 title: "cloudPcAuditProperty resource type"
-description: "Represents the audit property. This shows the edited property name, the old value and new value."
+description: "Represents the audit property. This shows the edited property name, the old value, and the new value."
 author: "ecmadao"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the audit property. This shows the edited property name, the old value and new value.
+Represents the audit property. This shows the edited property name, the old value, and the new value.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,11 +26,11 @@ Represents the audit property. This shows the edited property name, the old va
 
 ## Relationships
 
-None
+None.
 
 ## JSON Representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcAuditProperty"
