@@ -55,9 +55,9 @@ The result of a cloud PC on-premises connection health check.
 |resourceAvailabilityCheckNoSubnetIP|The resource availability check failed because there were no available IP addresses in the subnet. Please free up some or change to another subnet and retry.|
 |resourceAvailabilityCheckSubscriptionDisabled|The resource availability check failed due to a disabled Azure subscription. Please re-enable the subscription.|
 |resourceAvailabilityCheckAzurePolicyViolation|Creating the required Azure resource failed because your organizations Azure policy blocked the action. Please update your Azure policy to allow this resource creation.|
-|resourceAvailabilityCheckSubscriptionNotFound|The Azure subscription provided cannot be found.|
-|resourceAvailabilityCheckSubscriptionTransferred|The Azure subscription has been transferred to another tenant.|
-|resourceAvailabilityCheckGeneralSubscriptionError|The Azure subscription provided cannot be accessed.|
+|resourceAvailabilityCheckSubscriptionNotFound|The Azure subscription provided cannot be accessed. Please ensure the Azure subscription is available for provisioning.|
+|resourceAvailabilityCheckSubscriptionTransferred|The Azure subscription provided cannot be accessed. Please ensure the Azure subscription is available for provisioning.|
+|resourceAvailabilityCheckGeneralSubscriptionError|An Azure policy is restricting the creation of resources. Please ensure that there is no Azure policy that restricts creating resources in the subscription and/or resource group.|
 |resourceAvailabilityCheckUnsupportedVNetRegion|Selected vNet is not in a supported Azure region.|
 |resourceAvailabilityCheckUnknownError|The resource availability check failed due to an unknown error. Please contact customer support.|
 |permissionCheckNoSubscriptionReaderRole|Cloud PC service principal does not have reader permissions on the specified Azure subscription. Please work with subscription owner to add reader role assignment on the Azure subscription for the Cloud PC service principal.|
