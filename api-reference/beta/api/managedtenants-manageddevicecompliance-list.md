@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [managedDeviceCompliance](../resources/manageddevicecompliance.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [managedDeviceCompliance](../resources/managedtenants-manageddevicecompliance.md) objects in the response body.
 
 ## Examples
 
@@ -96,4 +96,3 @@ Content-Type: application/json
   ]
 }
 ```
-

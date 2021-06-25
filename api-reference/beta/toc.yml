@@ -13980,8 +13980,6 @@ items:
           items:
             - name: Get managed device compliance trend
               href: api/managedtenants-manageddevicecompliancetrend-get.md
-            - name: List managed device compliance trends
-              href: api/managedtenants-manageddevicecompliancetrend-list.md
         - name: Management action
           href: resources/managedtenants-managementaction.md
           items:

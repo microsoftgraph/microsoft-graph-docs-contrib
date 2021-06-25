@@ -68,4 +68,3 @@ DELETE https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenan
 ``` http
 HTTP/1.1 204 No Content
 ```
-

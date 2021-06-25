@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) objects in the response body.
 
 ## Examples
 
@@ -92,4 +92,3 @@ Content-Type: application/json
   ]
 }
 ```
-

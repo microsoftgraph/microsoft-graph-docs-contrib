@@ -1,11 +1,13 @@
 ---
-title: "Enum values"
-description: "Microsoft Graph enumeration values"
+title: "Multi-tenant management enumeration values"
+description: "Microsoft Graph multi-tenant management enumeration values"
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 doc_type: enumTypes
 ---
+
+# Multi-tenant management enumeration values
 
 ### delegatedPrivilegeStatus values
 

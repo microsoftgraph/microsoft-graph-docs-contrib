@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [managementTemplate](../resources/managementtemplate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [managementTemplate](../resources/managedtenants-managementtemplate.md) objects in the response body.
 
 ## Examples
 
@@ -95,4 +95,3 @@ Content-Type: application/json
   ]
 }
 ```
-
