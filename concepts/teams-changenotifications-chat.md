@@ -1,6 +1,6 @@
 ---
 title: "Get change notifications for chats using Microsoft Graph"
-description: "Learn how to get notifications for changes (create and update) for chats using Microsoft Graph APIs"
+description: "Learn how to get notifications for changes (create and update) for chats using Microsoft Graph APIs."
 author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Change notifications enable you to subscribe to changes (create and update) to c
 
 ## Subscribe to changes in any chat at tenant level
 
-To get change notifications for any change in chat's property across tenant or creation of a chat in tenant, subscribe to `/chats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes (create and update) related to any chat in a tenant, subscribe to `/chats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 ### Permissions
 
@@ -44,7 +44,7 @@ Content-Type: application/json
 ## Subscribe to changes in a particular chat
 
 
-To get change notifications for any change in chats' property of a specific chat, subscribe to `/chats/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to a particular chat, subscribe to `/chats/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 ### Permissions
 
