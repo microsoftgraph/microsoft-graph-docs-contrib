@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
-          "ApiChange": "Resource",
+          "ApiChange": "Property",
           "ChangedApiName": "allowAttendeeToEnableMic",
           "ChangeType": "Addition",
           "Description": "Added the **allowAttendeeToEnableMic** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
@@ -12,7 +12,7 @@
         },
         {
           "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
-          "ApiChange": "Method",
+          "ApiChange": "Property",
           "ChangedApiName": "allowAttendeeToEnableCamera",
           "ChangeType": "Addition",
           "Description": "Added the **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
@@ -20,7 +20,7 @@
         },
         {
           "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
-          "ApiChange": "Resource",
+          "ApiChange": "Property",
           "ChangedApiName": "allowMeetingChat",
           "ChangeType": "Addition",
           "Description": "Added the **allowMeetingChat** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
@@ -28,11 +28,19 @@
         },
         {
           "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
-          "ApiChange": "Resource",
+          "ApiChange": "Property",
           "ChangedApiName": "allowTeamworkReactions",
           "ChangeType": "Addition",
           "Description": "Added the **allowTeamworkReactions** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
           "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "meetingChatMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingChatMode** enumeration.",
+          "Target": "meetingChatMode"
         }
       ],
       "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
@@ -72,7 +80,7 @@
       "ChangeList": [
         {
           "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
-          "ApiChange": "Resource",
+          "ApiChange": "Property",
           "ChangedApiName": "allowAttendeeToEnableMic",
           "ChangeType": "Addition",
           "Description": "Added the **allowAttendeeToEnableMic** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
@@ -80,7 +88,7 @@
         },
         {
           "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
-          "ApiChange": "Method",
+          "ApiChange": "Property",
           "ChangedApiName": "allowAttendeeToEnableCamera",
           "ChangeType": "Addition",
           "Description": "Added the **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
