@@ -73,7 +73,7 @@ The table below lists the properties that can be updated. In the request body, i
 | allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. |
 
 > [!NOTE]
-> Refer to [onlineMeeting](../resources/onlinemeeting.md) entity for possible values of the **allowedPresenters** and **allowMeetingChat** properties.
+> For the list of possible values for **allowedPresenters** and **allowMeetingChat**, see [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
