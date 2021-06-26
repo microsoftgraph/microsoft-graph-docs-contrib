@@ -1,18 +1,18 @@
 ---
-title: "Get managementIntent"
-description: "Read the properties and relationships of a managementIntent object."
+title: "List tenants"
+description: "Get the tenant resources from the tenants navigation property."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# Get managementIntent
+# List tenants
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [managementIntent](../resources/managedtenants-managementintent.md) object.
+Get the tenant resources from the tenants navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/managementIntents/{managementIntentId}
+GET /tenantRelationships/managedTenants/tenants
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [managementIntent](../resources/managedtenants-managementintent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [tenant](../resources/tenant.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_managementintent"
+  "name": "list_tenant"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementIntents/{managementIntentId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.managedTenants.managementIntent"
+  "@odata.type": "Collection(microsoft.graph.managedTenants.tenant)"
 }
 -->
 ``` http
@@ -74,14 +74,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.managementIntent",
-  "id": "861bb622-b622-861b-22b6-1b8622b61b86",
-  "displayName": "String",
-  "isGlobal": "Boolean",
-  "managementTemplates": [
+  "value": [
     {
-      "@odata.type": "microsoft.graph.managedTenants.managementTemplateDetailedInfo"
+      "@odata.type": "#microsoft.graph.managedTenants.tenant",
+      "id": "36fab3ad-b3ad-36fa-adb3-fa36adb3fa36",
+      "tenantId": "String",
+      "displayName": "String",
+      "contract": {
+        "@odata.type": "microsoft.graph.managedTenants.tenantContract"
+      },
+      "tenantStatusInformation": {
+        "@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"
+      },
+      "lastUpdatedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)"
     }
   ]
 }
 ```
+

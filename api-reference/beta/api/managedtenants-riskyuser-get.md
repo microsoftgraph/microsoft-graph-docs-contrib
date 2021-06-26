@@ -74,20 +74,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.riskyUser",
-    "id": "491420ec-20ec-4914-ec20-1449ec201449",
-    "userId": "String",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "userDisplayName": "String",
-    "userPrincipalName": "String",
-    "riskState": "String",
-    "riskLevel": "String",
-    "riskDetail": "String",
-    "isDeleted": "Boolean",
-    "riskLastUpdatedDateTime": "String (timestamp)",
-    "lastRefreshedDateTime": "String (timestamp)"
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.riskyUser",
+  "id": "491420ec-20ec-4914-ec20-1449ec201449",
+  "userId": "String",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "userDisplayName": "String",
+  "userPrincipalName": "String",
+  "riskState": "String",
+  "riskLevel": "String",
+  "riskDetail": "String",
+  "isDeleted": "Boolean",
+  "riskLastUpdatedDateTime": "String (timestamp)",
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```

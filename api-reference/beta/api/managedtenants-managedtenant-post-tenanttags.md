@@ -1,25 +1,25 @@
 ---
-title: "Get tenantTag"
-description: "Read the properties and relationships of a tenantTag object."
+title: "Create tenantTag"
+description: "Create a new tenantTag object."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# Get tenantTag
+# Create tenantTag
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [tenantTag](../resources/managedtenants-tenanttag.md) object.
+Create a new tenantTag object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.WriteRead.All|
+|Delegated (work or school account)|ManagedTenants.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -30,36 +30,55 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
+POST /tenantRelationships/managedTenants/tenantTags
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of the [tenantTag](../resources/managedtenants-tenanttag.md) object.
+
+The following table shows the properties that are required when you create the [tenantTag](../resources/managedtenants-tenanttag.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The unique identifier for the tenant tag.|
+|displayName|String|The display name for the tenant tag.|
+|description|String|The description for the tenant tag.|
+|tenants|[microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md) collection|The collection of managed tenants associated with the tenant tag.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [tenantTag](../resources/managedtenants-tenanttag.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [tenantTag](../resources/managedtenants-tenanttag.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_tenanttag"
+  "name": "create_tenanttag_from_"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}
-```
+POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags
+Content-Type: application/json
+Content-length: 382
 
+{
+  "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
+  "displayName": "String",
+  "description": "String",
+  "tenants": [
+    {
+      "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
+    }
+  ]
+}
+```
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -70,7 +89,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTa
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {

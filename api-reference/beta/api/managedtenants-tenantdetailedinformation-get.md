@@ -74,19 +74,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.tenantDetailedInformation",
-    "id": "d12e4bf5-4bf5-d12e-f54b-2ed1f54b2ed1",
-    "tenantId": "String",
-    "displayName": "String",
-    "defaultDomainName": "String",
-    "countryName": "String",
-    "countryCode": "String",
-    "city": "String",
-    "region": "String",
-    "verticalName": "String",
-    "industryName": "String",
-    "segmentName": "String"
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.tenantDetailedInformation",
+  "id": "d12e4bf5-4bf5-d12e-f54b-2ed1f54b2ed1",
+  "tenantId": "String",
+  "displayName": "String",
+  "defaultDomainName": "String",
+  "countryName": "String",
+  "countryCode": "String",
+  "city": "String",
+  "region": "String",
+  "verticalName": "String",
+  "industryName": "String",
+  "segmentName": "String"
 }
 ```

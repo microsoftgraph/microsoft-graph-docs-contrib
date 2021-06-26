@@ -74,7 +74,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.managedTenants.cloudPcDevice",
     "id": "0171daae-daae-0171-aeda-7101aeda7101",
     "displayName": "String",
@@ -87,6 +86,5 @@ Content-Type: application/json
     "cloudPcStatus": "String",
     "provisioningPolicyId": "String",
     "lastRefreshedDateTime": "String (timestamp)"
-  }
 }
 ```

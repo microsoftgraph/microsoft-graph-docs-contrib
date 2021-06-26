@@ -74,19 +74,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.credentialUserRegistrationsSummary",
-    "id": "aef28d78-8d78-aef2-788d-f2ae788df2ae",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "mfaAndSsprCapableUserCount": "Integer",
-    "ssprEnabledUserCount": "Integer",
-    "mfaRegisteredUserCount": "Integer",
-    "ssprRegisteredUserCount": "Integer",
-    "totalUserCount": "Integer",
-    "securityDefaultsEnabled": "Boolean",
-    "mfaConditionalAccessPolicyState": "String",
-    "lastRefreshedDateTime": "String (timestamp)"
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.credentialUserRegistrationsSummary",
+  "id": "aef28d78-8d78-aef2-788d-f2ae788df2ae",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "mfaAndSsprCapableUserCount": "Integer",
+  "ssprEnabledUserCount": "Integer",
+  "mfaRegisteredUserCount": "Integer",
+  "ssprRegisteredUserCount": "Integer",
+  "totalUserCount": "Integer",
+  "securityDefaultsEnabled": "Boolean",
+  "mfaConditionalAccessPolicyState": "String",
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```

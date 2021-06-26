@@ -74,26 +74,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.cloudPcOverview",
-    "id": "6057790f-790f-6057-0f79-57600f795760",
-    "tenantDisplayName": "String",
-    "totalCloudPcStatus": "Integer",
-    "numberOfCloudPcStatusNotProvisioned": "Integer",
-    "numberOfCloudPcStatusProvisioning": "Integer",
-    "numberOfCloudPcStatusProvisioned": "Integer",
-    "numberOfCloudPcStatusUpgrading": "Integer",
-    "numberOfCloudPcStatusInGracePeriod": "Integer",
-    "numberOfCloudPcStatusDeprovisioning": "Integer",
-    "numberOfCloudPcStatusFailed": "Integer",
-    "numberOfCloudPcStatusUnknown": "Integer",
-    "totalCloudPcConnectionStatus": "Integer",
-    "numberOfCloudPcConnectionStatusPending": "Integer",
-    "numberOfCloudPcConnectionStatusRunning": "Integer",
-    "numberOfCloudPcConnectionStatusPassed": "Integer",
-    "numberOfCloudPcConnectionStatusFailed": "Integer",
-    "numberOfCloudPcConnectionStatusUnkownFutureValue": "Integer",
-    "lastRefreshedDateTime": "String (timestamp)"
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.cloudPcOverview",
+  "id": "6057790f-790f-6057-0f79-57600f795760",
+  "tenantDisplayName": "String",
+  "totalCloudPcStatus": "Integer",
+  "numberOfCloudPcStatusNotProvisioned": "Integer",
+  "numberOfCloudPcStatusProvisioning": "Integer",
+  "numberOfCloudPcStatusProvisioned": "Integer",
+  "numberOfCloudPcStatusUpgrading": "Integer",
+  "numberOfCloudPcStatusInGracePeriod": "Integer",
+  "numberOfCloudPcStatusDeprovisioning": "Integer",
+  "numberOfCloudPcStatusFailed": "Integer",
+  "numberOfCloudPcStatusUnknown": "Integer",
+  "totalCloudPcConnectionStatus": "Integer",
+  "numberOfCloudPcConnectionStatusPending": "Integer",
+  "numberOfCloudPcConnectionStatusRunning": "Integer",
+  "numberOfCloudPcConnectionStatusPassed": "Integer",
+  "numberOfCloudPcConnectionStatusFailed": "Integer",
+  "numberOfCloudPcConnectionStatusUnkownFutureValue": "Integer",
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```

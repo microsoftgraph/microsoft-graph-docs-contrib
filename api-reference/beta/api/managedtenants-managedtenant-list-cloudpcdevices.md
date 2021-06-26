@@ -1,25 +1,25 @@
 ---
-title: "Get managementIntent"
-description: "Read the properties and relationships of a managementIntent object."
+title: "List cloudPcDevices"
+description: "Get the cloudPcDevice resources from the cloudPcDevices navigation property."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# Get managementIntent
+# List cloudPcDevices
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [managementIntent](../resources/managedtenants-managementintent.md) object.
+Get the cloudPcDevice resources from the cloudPcDevices navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/managementIntents/{managementIntentId}
+GET /tenantRelationships/managedTenants/cloudPcDevices
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [managementIntent](../resources/managedtenants-managementintent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudPcDevice](../resources/cloudpcdevice.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_managementintent"
+  "name": "list_cloudpcdevice"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementIntents/{managementIntentId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcDevices
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.managedTenants.managementIntent"
+  "@odata.type": "Collection(microsoft.graph.managedTenants.cloudPcDevice)"
 }
 -->
 ``` http
@@ -74,14 +74,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.managementIntent",
-  "id": "861bb622-b622-861b-22b6-1b8622b61b86",
-  "displayName": "String",
-  "isGlobal": "Boolean",
-  "managementTemplates": [
+  "value": [
     {
-      "@odata.type": "microsoft.graph.managedTenants.managementTemplateDetailedInfo"
+      "@odata.type": "#microsoft.graph.managedTenants.cloudPcDevice",
+      "id": "0171daae-daae-0171-aeda-7101aeda7101",
+      "displayName": "String",
+      "tenantId": "String",
+      "tenantDisplayName": "String",
+      "managedDeviceId": "String",
+      "managedDeviceName": "String",
+      "userPrincipalName": "String",
+      "servicePlanName": "String",
+      "cloudPcStatus": "String",
+      "provisioningPolicyId": "String",
+      "lastRefreshedDateTime": "String (timestamp)"
     }
   ]
 }
 ```
+

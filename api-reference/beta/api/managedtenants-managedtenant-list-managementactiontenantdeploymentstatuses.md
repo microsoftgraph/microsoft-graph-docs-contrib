@@ -1,18 +1,18 @@
 ---
-title: "Get managementIntent"
-description: "Read the properties and relationships of a managementIntent object."
+title: "List managementActionTenantDeploymentStatuses"
+description: "Get the managementActionTenantDeploymentStatus resources from the managementActionTenantDeploymentStatuses navigation property."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# Get managementIntent
+# List managementActionTenantDeploymentStatuses
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [managementIntent](../resources/managedtenants-managementintent.md) object.
+Get the managementActionTenantDeploymentStatus resources from the managementActionTenantDeploymentStatuses navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/managementIntents/{managementIntentId}
+GET /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [managementIntent](../resources/managedtenants-managementintent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [managementActionTenantDeploymentStatus](../resources/managementactiontenantdeploymentstatus.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_managementintent"
+  "name": "list_managementactiontenantdeploymentstatus"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementIntents/{managementIntentId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.managedTenants.managementIntent"
+  "@odata.type": "Collection(microsoft.graph.managedTenants.managementActionTenantDeploymentStatus)"
 }
 -->
 ``` http
@@ -74,14 +74,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.managementIntent",
-  "id": "861bb622-b622-861b-22b6-1b8622b61b86",
-  "displayName": "String",
-  "isGlobal": "Boolean",
-  "managementTemplates": [
+  "value": [
     {
-      "@odata.type": "microsoft.graph.managedTenants.managementTemplateDetailedInfo"
+      "@odata.type": "#microsoft.graph.managedTenants.managementActionTenantDeploymentStatus",
+      "id": "d1fd96a1-96a1-d1fd-a196-fdd1a196fdd1",
+      "tenantGroupId": "String",
+      "tenantId": "String",
+      "statuses": [
+        {
+          "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
+        }
+      ]
     }
   ]
 }
 ```
+

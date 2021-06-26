@@ -74,15 +74,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.cloudPcConnection",
-    "id": "105d8613-8613-105d-1386-5d1013865d10",
-    "displayName": "String",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "healthCheckStatus": "String",
-    "lastRefreshedDateTime": "String (timestamp)"
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.cloudPcConnection",
+  "id": "105d8613-8613-105d-1386-5d1013865d10",
+  "displayName": "String",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "healthCheckStatus": "String",
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
-

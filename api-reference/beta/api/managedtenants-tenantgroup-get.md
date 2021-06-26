@@ -74,24 +74,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.tenantGroup",
-    "id": "80ffafcf-afcf-80ff-cfaf-ff80cfafff80",
-    "displayName": "String",
-    "allTenantsIncluded": "Boolean",
-    "tenantIds": [
-      "String"
-    ],
-    "managementIntents": [
-      {
-        "@odata.type": "microsoft.graph.managedTenants.managementIntentInfo"
-      }
-    ],
-    "managementActions": [
-      {
-        "@odata.type": "microsoft.graph.managedTenants.managementActionInfo"
-      }
-    ]
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.tenantGroup",
+  "id": "80ffafcf-afcf-80ff-cfaf-ff80cfafff80",
+  "displayName": "String",
+  "allTenantsIncluded": "Boolean",
+  "tenantIds": [
+    "String"
+  ],
+  "managementIntents": [
+    {
+      "@odata.type": "microsoft.graph.managedTenants.managementIntentInfo"
+    }
+  ],
+  "managementActions": [
+    {
+      "@odata.type": "microsoft.graph.managedTenants.managementActionInfo"
+    }
+  ]
 }
 ```

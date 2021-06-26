@@ -74,13 +74,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.conditionalAccessPolicyCoverage",
-    "id": "877e299c-299c-877e-9c29-7e879c297e87",
-    "tenantDisplayName": "String",
-    "conditionalAccessPolicyState": "String",
-    "requiresDeviceCompliance": "Boolean",
-    "latestPolicyModifiedDateTime": "String (timestamp)"
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.conditionalAccessPolicyCoverage",
+  "id": "877e299c-299c-877e-9c29-7e879c297e87",
+  "tenantDisplayName": "String",
+  "conditionalAccessPolicyState": "String",
+  "requiresDeviceCompliance": "Boolean",
+  "latestPolicyModifiedDateTime": "String (timestamp)"
 }
 ```

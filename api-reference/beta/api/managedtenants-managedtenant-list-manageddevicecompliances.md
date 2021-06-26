@@ -1,18 +1,18 @@
 ---
-title: "Get managedDeviceComplianceTrend"
-description: "Read the properties and relationships of a managedDeviceComplianceTrend object."
+title: "List managedDeviceCompliances"
+description: "Get the managedDeviceCompliance resources from the managedDeviceCompliances navigation property."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# Get managedDeviceComplianceTrend
+# List managedDeviceCompliances
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md) object.
+Get the managedDeviceCompliance resources from the managedDeviceCompliances navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/managedDeviceComplianceTrends/{managedDeviceComplianceTrendId}
+GET /tenantRelationships/managedTenants/managedDeviceCompliances
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [managedDeviceCompliance](../resources/manageddevicecompliance.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_manageddevicecompliancetrend"
+  "name": "list_manageddevicecompliance"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managedDeviceComplianceTrends/{managedDeviceComplianceTrendId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managedDeviceCompliances
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managedD
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.managedTenants.managedDeviceComplianceTrend"
+  "@odata.type": "Collection(microsoft.graph.managedTenants.managedDeviceCompliance)"
 }
 -->
 ``` http
@@ -74,16 +74,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.managedDeviceComplianceTrend",
-  "id": "42fa314b-314b-42fa-4b31-fa424b31fa42",
-  "tenantId": "String",
-  "tenantDisplayName": "String",
-  "unknownDeviceCount": "Integer",
-  "compliantDeviceCount": "Integer",
-  "noncompliantDeviceCount": "Integer",
-  "errorDeviceCount": "Integer",
-  "inGracePeriodDeviceCount": "Integer",
-  "configManagerDeviceCount": "Integer",
-  "countDateTime": "String"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.managedTenants.managedDeviceCompliance",
+      "id": "c157c18d-c18d-c157-8dc1-57c18dc157c1",
+      "tenantId": "String",
+      "tenantDisplayName": "String",
+      "managedDeviceId": "String",
+      "managedDeviceName": "String",
+      "complianceStatus": "String",
+      "osDescription": "String",
+      "osVersion": "String",
+      "lastSyncDateTime": "String (timestamp)",
+      "ownerType": "String",
+      "model": "String",
+      "manufacturer": "String",
+      "inGracePeriodUntilDateTime": "String (timestamp)",
+      "lastRefreshedDateTime": "String (timestamp)",
+      "deviceType": "String"
+    }
+  ]
 }
 ```
+

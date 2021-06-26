@@ -13968,6 +13968,13 @@ items:
               href: api/managedtenants-credentialuserregistrationssummary-get.md
             - name: List credential user registration summaries
               href: api/managedtenants-credentialuserregistrationssummary-list.md
+        - name: Device compliance policy setting state summary
+          href: resources/managedtenants-devicecompliancepolicysettingstatesummary.md
+          items:
+            - name: Get device compliance policy setting state summary 
+              href: api/managedtenants-devicecompliancepolicysettingstatesummary-get.md
+            - name: List device compliance policy setting state summary 
+              href: api/managedtenants-devicecompliancepolicysettingstatesummary-list.md
         - name: Managed device compliance
           href: resources/managedtenants-manageddevicecompliance.md
           items:

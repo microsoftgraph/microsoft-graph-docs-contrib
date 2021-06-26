@@ -74,23 +74,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.managedDeviceCompliance",
-    "id": "c157c18d-c18d-c157-8dc1-57c18dc157c1",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "managedDeviceId": "String",
-    "managedDeviceName": "String",
-    "complianceStatus": "String",
-    "osDescription": "String",
-    "osVersion": "String",
-    "lastSyncDateTime": "String (timestamp)",
-    "ownerType": "String",
-    "model": "String",
-    "manufacturer": "String",
-    "inGracePeriodUntilDateTime": "String (timestamp)",
-    "lastRefreshedDateTime": "String (timestamp)",
-    "deviceType": "String"
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.managedDeviceCompliance",
+  "id": "c157c18d-c18d-c157-8dc1-57c18dc157c1",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "managedDeviceId": "String",
+  "managedDeviceName": "String",
+  "complianceStatus": "String",
+  "osDescription": "String",
+  "osVersion": "String",
+  "lastSyncDateTime": "String (timestamp)",
+  "ownerType": "String",
+  "model": "String",
+  "manufacturer": "String",
+  "inGracePeriodUntilDateTime": "String (timestamp)",
+  "lastRefreshedDateTime": "String (timestamp)",
+  "deviceType": "String"
 }
 ```
