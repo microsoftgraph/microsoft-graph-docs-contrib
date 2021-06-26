@@ -10,6 +10,8 @@ doc_type: apiPageType
 # team: sendActivityNotification
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Send an activity feed notification in the scope of a team. For more details about sending notifications and the requirements for doing so, see
 [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
@@ -59,7 +61,7 @@ The following resources are supported when setting the `source` value of the **t
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **Note:** The entity url must be same or child resource of the team in the url. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the team.
+> **Note:** The entity URL must be same or child resource of the team in the URL. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the team.
 
 ## Response
 
