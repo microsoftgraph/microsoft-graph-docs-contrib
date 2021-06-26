@@ -22,7 +22,7 @@ Provides details about the Azure Private Link associated with a sign-in event.
 |:---|:---|:---|
 |policyId|String|The unique identifier for the Private Link policy ID. |
 |policyName|String|The name of the Private Link policy in Azure AD. |
-|policyTenantId|String|The tenant ID of the Azure AD tenant the Private Link policy belongs to.|
+|policyTenantId|String|The tenant identifier of the Azure AD tenant the Private Link policy belongs to.|
 |resourceId|String|The Azure Resource Manager (ARM) path for the Private Link policy resource.|
 
 ## Relationships
@@ -44,4 +44,3 @@ The following is a JSON representation of the resource.
   "policyTenantId": "String"
 }
 ```
-
