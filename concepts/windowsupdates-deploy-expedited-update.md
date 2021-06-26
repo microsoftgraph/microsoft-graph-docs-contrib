@@ -155,11 +155,11 @@ Content-Type: application/json
 
 ## Step 3: Assign devices to the deployment audience
 
-After a deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). Once the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment settings.
+After a deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). When the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment settings.
 
 Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
 
-Below is an example of adding Azure AD devices as members of the deployment audience.
+The following example shows how add Azure AD devices as members of the deployment audience.
 
 ### Request
 
