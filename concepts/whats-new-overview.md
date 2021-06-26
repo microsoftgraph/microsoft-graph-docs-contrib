@@ -25,8 +25,6 @@ Extended the maximum length of a subscription before expiring for the following 
 ### Change tracking
 Removed limitation for tracking changes in non-root folders in OneDrive for Business and SharePoint.
 
-### Devices and apps | Cloud printing
-
 ### Education
 The APIs for the education [assignments service](/graph/api/resources/educationassignment) are now generally available. 
 
@@ -53,6 +51,10 @@ Allow a [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=tr
 
 ### Identity and access | Governance
 Set users or group members to be notificed of the progress of an [access review](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true), by using the **additionalNotificationRecipients** property of the [schedule definition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
+
+### Identity and access | Identity and sign-in
+- Define a filter to dynamically include or exclude devices, using the **deviceFilter** property of [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta).
+- 
 
 ## May 2021: New and generally available
 
