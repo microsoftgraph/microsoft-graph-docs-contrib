@@ -159,7 +159,7 @@ After a deployment is created, you can assign devices to the [deployment audienc
 
 Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
 
-The following example shows how add Azure AD devices as members of the deployment audience.
+The following example shows how to add Azure AD devices as members of the deployment audience.
 
 ### Request
 
