@@ -24,7 +24,6 @@ Represents a summary of device compliance policy setting states for a given mana
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|prop|type|des|
 |id|String|The unique identifier for this entity.|
 |conflictDeviceCount|Int32|The number of devices in a conflict state.|
 |errorDeviceCount|Int32|The number of devices in an error state.|
