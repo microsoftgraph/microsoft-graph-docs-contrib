@@ -45,6 +45,64 @@
     {
       "ChangeList": [
         {
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleAssignmentSchedule.Read.Directory",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of **RoleAssignment.Read.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleEligibilitySchedule.Read.Directory",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of **RoleEligibility.Read.Directory**  to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleManagementPolicy.Read.Directory",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of **RoleManagementPolicy.Read.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleAssignmentSchedule.ReadWrite.Directory",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of **RoleAssignment.ReadWrite.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleEligibilitySchedule.ReadWrite.Directory",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of **RoleEligibility.ReadWrite.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "RoleManagementPolicy.ReadWrite.Directory",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission of **RoleManagementPolicy.ReadWrite.Directory** to the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta) resource.",
+          "Target": "roleManagement"
+        }
+      ],
+      "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-06-25T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ea230936-ad75-4706-81ba-d9c25211400a",
           "ApiChange": "Relationship",
           "ChangedApiName": "scopedMembers",
