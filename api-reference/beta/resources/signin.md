@@ -46,7 +46,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |homeTenantId|String|The tenant identifier of the user initiating the sign-in. Not applicable in Managed Identity or Service Principal sign-ins.|
 |id|String|The identifier representing the sign-in activity. Supports `$filter` (`eq` operator only).|
 |ipAddress|String|The IP address of the client from where the sign-in occurred. Supports `$filter` (`eq` and `startsWith` operators only).|
-|isInteractive|Boolean|Indicates whether a user sign-in is interactive or not. In interactive sign-ins, the user provides an authentication factor to Azure AD. These factors include passwords, responses to MFA challenges, biometric factors, or QR codes that a user provides to Azure AD or to an associated app. In non-interactive sign-ins, the user does not provide an authentication factor; instead, the client app uses a token or code to authenticate or access a resource on behalf of a user. Non-interactive sign ins are commonly used for a client to sign in on a user's behalf in a process transparent to the user.|
+|isInteractive|Boolean|Indicates whether a user sign-in is interactive. In interactive sign-ins, the user provides an authentication factor to Azure AD. These factors include passwords, responses to MFA challenges, biometric factors, or QR codes that a user provides to Azure AD or to an associated app. In non-interactive sign-ins, the user does not provide an authentication factor; instead, the client app uses a token or code to authenticate or access a resource on behalf of a user. Non-interactive sign ins are commonly used for a client to sign in on a user's behalf in a process transparent to the user.|
 |isTenantRestricted|Boolean|**TODO: Add Description**|
 |location|[signInLocation](signinlocation.md)|The city, state, and 2 letter country code from where the sign-in occurred. Supports `$filter` (`eq` and `startsWith` operators only) on **city**, **state**, and **countryOrRegion** properties.|
 |mfaDetail|[mfaDetail](../resources/mfadetail.md)|**TODO: Add Description**|
@@ -147,4 +147,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
