@@ -46,7 +46,7 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the tag. The value can not be more than 40 characters.|
+|displayName|String|Name of the tag. The value can't be more than 40 characters.|
 
 ## Response
 
