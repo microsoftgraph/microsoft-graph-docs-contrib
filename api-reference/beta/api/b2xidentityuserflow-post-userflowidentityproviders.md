@@ -7,7 +7,7 @@ author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Add identityProvider to a b2xIdentityUserFlow
+# Add identityProvider
 
 Namespace: microsoft.graph
 
