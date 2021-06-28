@@ -65,7 +65,7 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userflowIdentityProviders
+GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Test/userflowIdentityProviders
 ```
 
 ### Response

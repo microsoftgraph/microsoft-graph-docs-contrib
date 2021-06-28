@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /b2xUserFlows/{id}/userflowIdentityProviders/$ref
+PATCH /b2xUserFlows/B2X_1_Test/userflowIdentityProviders/$ref
 ```
 
 ## Request headers
@@ -66,12 +66,12 @@ The following is an example of the request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userflowIdentityProviders/$ref
+PATCH https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Test/userflowIdentityProviders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test"
 }
 ```
 
