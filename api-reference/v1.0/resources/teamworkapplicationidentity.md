@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an application in Microsoft Teams. `teamworkApplicationIdentity` is used to represent bots and outgoing webhooks @mentioned in messages.
+Represents an **application** in Microsoft Teams. `teamworkApplicationIdentity` is used to represent bots and outgoing webhooks @mentioned in messages.
 
 
 Inherits from [identity](../resources/identity.md).
@@ -21,7 +21,7 @@ Inherits from [identity](../resources/identity.md).
 |:---|:---|:---|
 |applicationIdentityType|teamworkApplicationIdentityType| Type of application that is referenced. Possible values are: `aadApplication`, `bot`, `tenantBot`, `office365Connector`, `outgoingWebhook`, and `unknownFutureValue`.|
 |displayName|String|Inherited from [identity](../resources/identity.md). Display name of the application. Optional.|
-|id|String|Inherited from [identity](../resources/identity.md). Id of the application.|
+|id|String|Inherited from [identity](../resources/identity.md). ID of the application.|
 
 ## Relationships
 None.

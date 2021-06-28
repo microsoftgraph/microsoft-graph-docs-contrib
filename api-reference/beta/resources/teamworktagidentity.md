@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a tag in Microsoft Teams. Tags allow users to quickly connect to subset of users in a team. For details about tag management in Microsoft Teams, see [Manage tags in Microsoft Teams](/microsoftteams/manage-tags).
+Represents a **tag** in Microsoft Teams. Tags allow users to quickly connect to subset of users in a team. For details about tag management in Microsoft Teams, see [Manage tags in Microsoft Teams](/microsoftteams/manage-tags).
 
 
 Inherits from [identity](../resources/identity.md).
@@ -22,7 +22,7 @@ Inherits from [identity](../resources/identity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Inherited from [identity](../resources/identity.md). Display name of the tag.|
-|id|String|Inherited from [identity](../resources/identity.md). Id of the tag.|
+|id|String|Inherited from [identity](../resources/identity.md). ID of the tag.|
 
 ## Relationships
 None.

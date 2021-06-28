@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a user in Microsoft Teams.
+Represents a **user** in Microsoft Teams.
 
 
 Inherits from [identity](../resources/identity.md).
@@ -20,7 +20,7 @@ Inherits from [identity](../resources/identity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Inherited from [identity](../resources/identity.md). Display name of the user. Optional.|
-|id|String|Inherited from [identity](../resources/identity.md). Id of the user. |
+|id|String|Inherited from [identity](../resources/identity.md). ID of the user. |
 |userIdentityType|teamworkUserIdentityType| Type of user. Possible values are: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`, and `unknownFutureValue`.|
 
 ## Relationships
