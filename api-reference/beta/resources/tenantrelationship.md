@@ -24,7 +24,7 @@ Represent the various type of tenant relationships.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managedTenants|[managedTenant](../resources/managedtenants-managedtenant.md)|The operations available to interact with the multi-tenant management platform.|
+|managedTenants|[microsoft.graph.managedTenants.managedTenant](../resources/managedtenants-managedtenant.md)|The operations available to interact with the multi-tenant management platform.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
