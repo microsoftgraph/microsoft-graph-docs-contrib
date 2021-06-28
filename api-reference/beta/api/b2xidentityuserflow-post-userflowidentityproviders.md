@@ -1,5 +1,5 @@
 ---
-title: "Add identityProvider to a b2xIdentityUserFlow"
+title: "Add identityProvider"
 description: "Add identityProvider in a b2xIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
