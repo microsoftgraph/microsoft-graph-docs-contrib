@@ -11,6 +11,20 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### lifecycleEventType values
+
+|Member|
+|:---|
+|missed|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### changeType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
 
 ### countryLookupMethodType values
 
@@ -33,6 +47,14 @@ Namespace: microsoft.graph
 |default|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### educationAddedStudentAction values
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
 |unknownFutureValue|
 
 ### authenticatorAppContextType values
