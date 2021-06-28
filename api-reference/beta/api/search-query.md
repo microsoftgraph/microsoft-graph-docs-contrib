@@ -157,7 +157,7 @@ Content-type: application/json
 
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
-- Search [Person](/graph/search-concept-person)
+- Search [person](/graph/search-concept-person)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
