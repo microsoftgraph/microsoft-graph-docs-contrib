@@ -1,5 +1,5 @@
 ---
-title: "Delete identityProvider from b2xIdentityUserFlow"
+title: "Delete identityProvider"
 description: "Delete an identityProvider from a b2xIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
