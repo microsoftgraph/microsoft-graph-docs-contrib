@@ -7,7 +7,7 @@ author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List userflowidentityproviders in a b2xIdentityUserFlow
+# List userflowidentityproviders
 
 Namespace: microsoft.graph
 
