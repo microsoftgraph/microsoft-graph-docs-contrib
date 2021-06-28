@@ -7,7 +7,7 @@ author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete identityProvider from b2xIdentityUserFlow
+# Delete identityProvider
 
 Namespace: microsoft.graph
 
