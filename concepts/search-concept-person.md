@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search people (preview)
+# Use the Microsoft Search API to search person (preview)
 
-Microsoft Graph applications can use the Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization. The People API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the People API in email compose scenarios.
+Microsoft Graph applications can use the Search API to retrieve the person who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. Person can be local contacts or from an organization’s directory, and person from recent communications. Along with generating this insight, search also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
 
-## Example 1: Search messages in a user's mailbox
+## Example 1: Search person by name
 
 The following request gets the people most relevant to the signed-in user, based on communication and collaboration patterns and business relationships.
 
@@ -24,7 +24,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "people"
+        "person"
       ],
       "query": {
         "queryString": "contoso"

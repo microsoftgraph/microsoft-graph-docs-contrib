@@ -52,7 +52,7 @@ The following table describes the types available to query and the supported per
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
 |[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
-|[person](externalitem.md)|People.Read|Exchange Online|Personal contacts and people in your organization.|
+|[person](person.md)|People.Read|Exchange Online|Personal contacts and contacts or addressable objects in your organization.|
 
 ## Page search results
 
