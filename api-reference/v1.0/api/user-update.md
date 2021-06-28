@@ -196,7 +196,9 @@ HTTP/1.1 204 No Content
 ```
 
 
-### Example 3: Update the passwordProfile of a user
+### Example 3: Update the passwordProfile of a user to reset their password
+
+The following is an example pf a request that resets the password of another user.
 
 #### Request
 
