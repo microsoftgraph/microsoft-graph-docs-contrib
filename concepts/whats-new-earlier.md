@@ -846,7 +846,7 @@ of these entities, and use OData cast to trim **directoryObject** results to cer
 
 ### Teamwork
 - Teams apps that [support single sign-on (SSO)](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) can specify the `WebApplicationInfo.id` from the Teams app manifest, in the **azureADAppId** property of the [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true).
-- Use [finer grained permissions](./permissions-reference.md#teams-resource-specific-consent-permissions) to access [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) and [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resources.
+- Use [finer grained permissions](./permissions-reference.md#team-resource-specific-consent-permissions) to access [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) and [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resources.
 
 
 ## April 2020: New and generally available
