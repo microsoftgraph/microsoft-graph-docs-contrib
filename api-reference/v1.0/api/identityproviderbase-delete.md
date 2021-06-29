@@ -10,8 +10,6 @@ ms.prod: "identity-and-sign-in"
 # Delete identityProvider
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
 In Azure AD B2C, delete a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.

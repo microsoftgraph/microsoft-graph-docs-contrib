@@ -10,8 +10,6 @@ ms.prod: "identity-and-sign-in"
 # List identityProviders
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a list of collection of object inherited from  [identityProviderBase](../resources/identityproviderbase.md).
 
 For an Azure AD tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md) and/or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.

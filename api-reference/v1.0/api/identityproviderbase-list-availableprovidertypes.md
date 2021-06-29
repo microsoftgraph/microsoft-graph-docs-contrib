@@ -8,10 +8,7 @@ ms.prod: "identity-and-sign-in"
 ---
 
 # List availableProviderTypes
-
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieves all identity provider types available in a directory.
 

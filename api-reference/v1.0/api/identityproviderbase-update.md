@@ -10,8 +10,6 @@ ms.prod: "identity-and-sign-in"
 # Update identityProvider
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
 For Azure AD B2C, update the properties  of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.

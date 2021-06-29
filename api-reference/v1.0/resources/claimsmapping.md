@@ -8,7 +8,6 @@ doc_type: resourcePageType
 ---
 
 # claimsMapping resource type
-
 Namespace: microsoft.graph
 
 After the custom identity provider sends an ID token back to Azure AD B2C, Azure AD B2C maps the claims from a token to the claims that Azure AD B2C recognizes and uses.
