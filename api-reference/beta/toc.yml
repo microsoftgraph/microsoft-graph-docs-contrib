@@ -28,6 +28,13 @@ items:
       href: /graph/paging?context=graph/api/beta
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/beta
+      items:
+      - name: Use query parameters
+        href: query-parameters.md
+      - name: Use the search query parameter
+        href: search-query-parameter.md
+      - name: Advanced query capabilities
+        href: aad-advanced-queries.md
     - name: Batching
       displayName: Batch requests
       href: /graph/json-batching?context=graph/api/beta
