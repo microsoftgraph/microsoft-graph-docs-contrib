@@ -29,7 +29,8 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.membersLeftEventMessageDetail"
+  "@odata.type": "microsoft.graph.membersLeftEventMessageDetail",
+  "baseType": "microsoft.graph.eventmessagedetail"
 }
 -->
 ``` json
@@ -46,56 +47,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## Example response
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
-} -->
-```json
-{
-  "id": "1620049976741",
-  "replyToId": null,
-  "etag": "1620049976741",
-  "messageType": "systemEventMessage",
-  "createdDateTime": "2021-05-03T13:52:56.741Z",
-  "lastModifiedDateTime": "2021-05-03T13:52:56.741Z",
-  "lastEditedDateTime": null,
-  "deletedDateTime": null,
-  "subject": null,
-  "summary": null,
-  "chatId": "19:meeting_OTFkNDQzMjMtZWQyYi00ZjI4LTk1ZmUtZmI2NjBmNTFmMzg1@thread.v2",
-  "importance": "normal",
-  "locale": "en-us",
-  "webUrl": null,
-  "from": null,
-  "channelIdentity": null,
-  "policyViolation": null,
-  "body": {
-    "contentType": "html",
-    "content": "<systemEventMessage/>"
-  },
-  "attachments": [],
-  "mentions": [],
-  "reactions": [],
-  "eventDetail": {
-    "@odata.type": "#microsoft.graph.membersLeftEventMessageDetail",
-    "members": [{
-      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-      "id": "ee8af8acd3184068a935a1f207865620",
-      "displayName": "Alex (Guest)",
-      "userIdentityType": "anonymousGuest"
-    }],
-    "initiator": {
-      "application": null,
-      "device": null,
-      "user": {
-        "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
-        "displayName": null,
-        "userIdentityType": "aadUser"
-      }
-    }
-  }
-}
-```
+## See also
+- [Example response](/graph/system-messages/#17.-Members-left)
+- For more information about other types of events, see [System Messages](/graph/system-messages)

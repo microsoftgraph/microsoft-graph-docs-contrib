@@ -1,6 +1,6 @@
 ---
 title: "eventMessageDetail resource type"
-description: "Represents base type for event message detail."
+description: "Represents the base type for event message detail."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -51,8 +51,8 @@ List of events supported
 | [teamUnarchivedEventMessageDetail](../resources/teamUnarchivedEventMessageDetail.md) | A team has been unarchived. |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
+
 
 
 ## JSON representation

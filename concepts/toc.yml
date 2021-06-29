@@ -564,6 +564,8 @@ items:
               href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
+          - name: System messages in Microsoft Teams
+            href: system-messages.md
       - name: Migrate
         expanded: false
         items:
