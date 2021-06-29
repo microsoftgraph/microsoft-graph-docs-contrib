@@ -30,7 +30,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | [Delete accessPackage](../api/accesspackage-delete.md) |None | Delete an **accesspackage**. |
 | [List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for this access package. |
 | [List incompatibleAccessPackages](../api/accesspackage-list-incompatibleaccesspackages.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of the incompatible **accesspackage** objects for this access package. |
-| [List incompatibleGroups](../api/accesspackage-list-incompatiblegroupss.md) | [group](group.md) collection | Retrieve a list of the incompatible **group** objects for this access package. |
+| [List incompatibleGroups](../api/accesspackage-list-incompatiblegroups.md) | [group](group.md) collection | Retrieve a list of the incompatible **group** objects for this access package. |
 | [List accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of the  **accesspackage** objects which list this access package as incompatible. |
 | [Create accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |None | Create a new **accessPackageResourceRoleScope** object for this access package. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[accessPackage](../resources/accesspackage.md) collection|Retrieve the list of **accessPackage** objects filtered on the signed-in user.|

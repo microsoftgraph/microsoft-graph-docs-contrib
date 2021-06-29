@@ -11651,6 +11651,12 @@ items:
               href: api/accesspackage-delete.md
             - name: Filter by current user
               href: api/accesspackage-filterbycurrentuser.md
+            - name: List incompatible access packages
+              href: api/accesspackage-list-incompatibleaccesspackages.md
+            - name: List incompatible groups
+              href: api/accesspackage-list-incompatiblegroups.md
+            - name: List access packages incompatible with
+              href: api/accesspackage-list-accesspackagesincompatiblewith.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
