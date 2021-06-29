@@ -12,10 +12,10 @@ ms.custom: scenarios:getting-started
 Microsoft Teams generates system messages for events such as members added to a chat, team name updated, channel description updated which enable the caller to have insights about events that happened in a team, a channel, or a chat.
 
 
-Microsoft Graph exposes system messages as part of [Chat Message](/graph/api/resources/chatMessage?view=graph-rest-beta) GET operations and [Change Notifications for Chat and Channel messages](teams-changenotifications-chatmessage.md).
+Microsoft Graph exposes system messages as part of [Chat Message](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) GET operations and [Change Notifications for Chat and Channel messages](teams-changenotifications-chatmessage.md).
 
 
-System messages are represented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta) resource.
+System messages are represented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) resource.
 The `messageType` will be set to `systemEventMessage` for such messages and `eventDetail` property would provide the details of the event that happened in a chat, a channel, or a team.
 
 
@@ -26,7 +26,7 @@ The `messageType` will be set to `systemEventMessage` for such messages and `eve
 3. GET /chats/{chat-id}/messages
 4. GET /chats/{chat-id}/messages/{message-id}
 
-For details, see [Chat Message](/graph/api/resources/chatMessage?view=graph-rest-beta).
+For details, see [Chat Message](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true).
 
 ### Supported change notification resource types
 
@@ -52,7 +52,7 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 | Channel unset as favorite | [channelUnsetAsFavoriteByDefaultEventMessageDetail](#10-channel-unset-as-favorite-by-default) | Channel |
 | Chat renamed | [chatRenamedEventMessageDetail](#11-chat-renamed) | Chat |
 | Conversation member role updated | [conversationMemberRoleUpdatedEventMessageDetail](#12-conversation-member-role-updated) | Channel, Team |
-| Meeting policy updated | [meetingPolicyUpdatedEventMessageDetail](#13-meeting-policy-updated.) | Chat |
+| Meeting policy updated | [meetingPolicyUpdatedEventMessageDetail](#13-meeting-policy-updated) | Chat |
 | Members added | [membersAddedEventMessageDetail](#14-members-added) | Chat, Channel, Team |
 | Members deleted | [membersDeletedEventMessageDetail](#15-members-deleted) | Chat, Channel, Team |
 | Members joined | [membersJoinedEventMessageDetail](#16-members-joined) | Chat |
@@ -1182,7 +1182,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-### 23. Team joining disabled
+### 23. Team joining enabled
 
 ```json
 {
