@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#6.-Channel-deleted)
+- [Example response](/graph/system-messages/#6-channel-deleted)
 - For more information about other types of events, see [System Messages](/graph/system-messages)

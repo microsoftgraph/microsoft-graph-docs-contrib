@@ -49,5 +49,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#15.-Members-deleted)
+- [Example response](/graph/system-messages/#15-members-deleted)
 - For more information about other types of events, see [System Messages](/graph/system-messages)

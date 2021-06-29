@@ -54,6 +54,6 @@ The following is a JSON representation of the resource.
 ```
 
 ## See also
-- [Example response](/graph/system-messages/#1.-Call-ended)
+- [Example response](/graph/system-messages/#1-call-ended)
 - For more information about other types of events, see [System Messages](/graph/system-messages)
 

@@ -44,5 +44,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#22.-Team-joining-disabled)
+- [Example response](/graph/system-messages/#22-team-joining-disabled)
 - For more information about other types of events, see [System Messages](/graph/system-messages)

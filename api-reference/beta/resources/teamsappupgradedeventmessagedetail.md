@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#27.-Teams-app-upgraded)
+- [Example response](/graph/system-messages/#27-teams-app-upgraded)
 - For more information about other types of events, see [System Messages](/graph/system-messages)

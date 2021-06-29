@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#11.-Chat-renamed)
+- [Example response](/graph/system-messages/#11-chat-renamed)
 - For more information about other types of events, see [System Messages](/graph/system-messages)

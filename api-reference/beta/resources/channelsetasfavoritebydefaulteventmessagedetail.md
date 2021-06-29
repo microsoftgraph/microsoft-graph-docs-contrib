@@ -45,5 +45,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#9.-Channel-set-as-favorite-by-default)
+- [Example response](/graph/system-messages/#9-channel-set-as-favorite-by-default)
 - For more information about other types of events, see [System Messages](/graph/system-messages)

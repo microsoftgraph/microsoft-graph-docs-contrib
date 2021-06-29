@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#24.-Team-renamed)
+- [Example response](/graph/system-messages/#24-team-renamed)
 - For more information about other types of events, see [System Messages](/graph/system-messages)

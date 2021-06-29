@@ -51,5 +51,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#12.-Conversation-member-role-updated)
+- [Example response](/graph/system-messages/#12-conversation-member-role-updated)
 - For more information about other types of events, see [System Messages](/graph/system-messages)

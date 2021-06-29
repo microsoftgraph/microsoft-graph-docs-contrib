@@ -49,5 +49,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#20.-Team-created)
+- [Example response](/graph/system-messages/#20-team-created)
 - For more information about other types of events, see [System Messages](/graph/system-messages)

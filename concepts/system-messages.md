@@ -19,7 +19,7 @@ System messages are represented as [chatMessage](/graph/api/resources/chatMessag
 The `messageType` will be set to `systemEventMessage` for such messages and `eventDetail` property would provide the details of the event that happened in a chat, a channel, or a team.
 
 
-### Supported GET operations for system messages
+### Supported GET operations
 
 1. GET /teams/{team-id}/channel/{channel-id}/messages
 2. GET /teams/{team-td}/channel/{channel-id}/messages/{message-id}
@@ -28,7 +28,7 @@ The `messageType` will be set to `systemEventMessage` for such messages and `eve
 
 For details, see [Chat Message](/graph/api/resources/chatMessage?view=graph-rest-beta).
 
-### Supported change notification resource types for getting system messages
+### Supported change notification resource types
 
 1. Subscribe to messages in a channel - /teams/{team-id}/channels/{channel-id}/messages
 2. Subscribe to messages in a chat - /chats/{chat-id}/messages
@@ -40,34 +40,34 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 
 | Event   |  System Message Type   | Applicable to |
 |:--------|:--------------|:--------------|
-| Call ended | [callEndedEventMessageDetail](#1.-Call-ended) | Chat, Channel |
-| Call recording | [callRecordingEventMessageDetail](#2.-Call-recording) | Chat, Channel |
-| Call started | [callStartedEventMessageDetail](#3.-Call-started) | Chat, Channel |
-| Call transcript | [callTranscriptEventMessageDetail](#4.-Call-transcript) | Chat, Channel |
-| Channel added | [channelAddedEventMessageDetail](#5.-Channel-added) | Team |
-| Channel deleted | [channelDeletedEventMessageDetail](#6.-Channe;-deleted) | Team |
-| Channel description updated | [channelDescriptionUpdatedEventMessageDetail](#7.-Channel-description) | Channel |
-| Channel renamed | [channelRenamedEventMessageDetail](#8.-Channel-renamed) | Channel |
-| Channel set as favorite | [channelSetAsFavoriteByDefaultEventMessageDetail](#9.-Channel-set-as-favorite-by-default) | Channel |
-| Channel unset as favorite | [channelUnsetAsFavoriteByDefaultEventMessageDetail](#10.-Channel-unset-as-favorite-by-default) | Channel |
-| Chat renamed | [chatRenamedEventMessageDetail](#11.-Chat-renamed) | Chat |
-| Conversation member role updated | [conversationMemberRoleUpdatedEventMessageDetail](#12.-Conversation-member-role-updated) | Channel, Team |
-| Meeting policy updated | [meetingPolicyUpdatedEventMessageDetail](#13.-Meeting-policy-updated.) | Chat |
-| Members added | [membersAddedEventMessageDetail](#14.-Members-added) | Chat, Channel, Team |
-| Members deleted | [membersDeletedEventMessageDetail](#15.-Members-deleted) | Chat, Channel, Team |
-| Members joined | [membersJoinedEventMessageDetail](#16.-Members-joined) | Chat |
-| Members left | [membersLeftEventMessageDetail](#17.-Members-left) | Chat |
-| Tab updated | [tabUpdatedEventMessageDetail](#18.-Tab-updated) | Chat, Channel |
-| Team archived | [teamArchivedEventMessageDetail](#19.-Team-archived) | Team |
-| Team created | [teamCreatedEventMessageDetail](#20.-Team-created) | Team |
-| Team description updated | [teamDescriptionUpdatedEventMessageDetail](#21.-Team-description-updated) | Team |
-| Team joining disabled | [teamJoiningDisabledEventMessageDetail](#22.-Team-joining-disabled) | Team |
-| Team joining enabled | [teamJoiningEnabledEventMessageDetail](#23.-Team-joining-enabled) | Team |
-| Team renamed | [teamRenamedEventMessageDetail](#24.-Team-renamed) | Team |
-| Teams app installed | [teamsAppInstalledEventMessageDetail](#25.-Teams-app-installed) | Chat, Channel, Team |
-| Teams app removed | [teamsAppRemovedEventMessageDetail](#26.-Teams-app-removed) | Chat, Channel, Team |
-| Teams app upgraded | [teamsAppUpgradedEventMessageDetail](#27.-Teams-app-upgraded) | Chat, Channel, Team |
-| Team unarchived | [teamUnarchivedEventMessageDetail](#28.-Team-unarchived) | Team |
+| Call ended | [callEndedEventMessageDetail](#1-call-ended) | Chat, Channel |
+| Call recording | [callRecordingEventMessageDetail](#2-call-recording) | Chat, Channel |
+| Call started | [callStartedEventMessageDetail](#3-call-started) | Chat, Channel |
+| Call transcript | [callTranscriptEventMessageDetail](#4-call-transcript) | Chat, Channel |
+| Channel added | [channelAddedEventMessageDetail](#5-channel-added) | Team |
+| Channel deleted | [channelDeletedEventMessageDetail](#6-channel-deleted) | Team |
+| Channel description updated | [channelDescriptionUpdatedEventMessageDetail](#7-channel-description-updated) | Channel |
+| Channel renamed | [channelRenamedEventMessageDetail](#8-channel-renamed) | Channel |
+| Channel set as favorite | [channelSetAsFavoriteByDefaultEventMessageDetail](#9-channel-set-as-favorite-by-default) | Channel |
+| Channel unset as favorite | [channelUnsetAsFavoriteByDefaultEventMessageDetail](#10-channel-unset-as-favorite-by-default) | Channel |
+| Chat renamed | [chatRenamedEventMessageDetail](#11-chat-renamed) | Chat |
+| Conversation member role updated | [conversationMemberRoleUpdatedEventMessageDetail](#12-conversation-member-role-updated) | Channel, Team |
+| Meeting policy updated | [meetingPolicyUpdatedEventMessageDetail](#13-meeting-policy-updated.) | Chat |
+| Members added | [membersAddedEventMessageDetail](#14-members-added) | Chat, Channel, Team |
+| Members deleted | [membersDeletedEventMessageDetail](#15-members-deleted) | Chat, Channel, Team |
+| Members joined | [membersJoinedEventMessageDetail](#16-members-joined) | Chat |
+| Members left | [membersLeftEventMessageDetail](#17-members-left) | Chat |
+| Tab updated | [tabUpdatedEventMessageDetail](#18-tab-updated) | Chat, Channel |
+| Team archived | [teamArchivedEventMessageDetail](#19-team-archived) | Team |
+| Team created | [teamCreatedEventMessageDetail](#20-team-created) | Team |
+| Team description updated | [teamDescriptionUpdatedEventMessageDetail](#21-team-description-updated) | Team |
+| Team joining disabled | [teamJoiningDisabledEventMessageDetail](#22-team-joining-disabled) | Team |
+| Team joining enabled | [teamJoiningEnabledEventMessageDetail](#23-team-joining-enabled) | Team |
+| Team renamed | [teamRenamedEventMessageDetail](#24-team-renamed) | Team |
+| Teams app installed | [teamsAppInstalledEventMessageDetail](#25-teams-app-installed) | Chat, Channel, Team |
+| Teams app removed | [teamsAppRemovedEventMessageDetail](#26-teams-app-removed) | Chat, Channel, Team |
+| Teams app upgraded | [teamsAppUpgradedEventMessageDetail](#27-teams-app-upgraded) | Chat, Channel, Team |
+| Team unarchived | [teamUnarchivedEventMessageDetail](#28-team-unarchived) | Team |
 
 
 > **Note:** System messages applicable to a team are posted in General channel.
@@ -138,7 +138,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 2. Call recording
+### 2. Call recording
 
 ```json
 {
@@ -201,7 +201,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 3. Call started
+### 3. Call started
 
 ```json
 {
@@ -247,7 +247,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 4. Call transcript
+### 4. Call transcript
 
 ```json
 {
@@ -293,7 +293,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 5. Channel added
+### 5. Channel added
 
 ```json
 {
@@ -342,7 +342,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 6. Channel deleted
+### 6. Channel deleted
 
 ```json
 {
@@ -391,7 +391,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 7. Channel description updated
+### 7. Channel description updated
 
 ```json
 {
@@ -440,7 +440,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 8. Channel renamed
+### 8. Channel renamed
 
 ```json
 {
@@ -489,7 +489,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 9. Channel set as favorite by default
+### 9. Channel set as favorite by default
 
 ```json
 {
@@ -537,7 +537,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 10. Channel unset as favorite by default
+### 10. Channel unset as favorite by default
 
 ```json
 {
@@ -585,7 +585,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 11. Chat renamed
+### 11. Chat renamed
 
 ```json
 {
@@ -631,7 +631,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 12. Conversation member role updated
+### 12. Conversation member role updated
 
 ```json
 {
@@ -687,7 +687,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 13. Meeting policy updated
+### 13. Meeting policy updated
 
 ```json
 {
@@ -732,7 +732,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 14. Members added
+### 14. Members added
 
 ```json
 {
@@ -792,7 +792,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 15. Members deleted
+### 15. Members deleted
 
 ```json
 {
@@ -845,7 +845,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 16. Members joined
+### 16. Members joined
 
 ```json
 {
@@ -894,7 +894,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 17. Members left
+### 17. Members left
 
 ```json
 {
@@ -943,7 +943,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 18. Tab updated
+### 18. Tab updated
 
 ```json
 {
@@ -991,7 +991,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 19. Team archived
+### 19. Team archived
 
 ```json
 {
@@ -1038,7 +1038,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 20. Team created
+### 20. Team created
 
 ```json
 {
@@ -1087,7 +1087,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 21. Team description updated
+### 21. Team description updated
 
 ```json
 {
@@ -1182,7 +1182,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 23. Team joining disabled
+### 23. Team joining disabled
 
 ```json
 {
@@ -1229,7 +1229,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 24. Team renamed
+### 24. Team renamed
 
 ```json
 {
@@ -1277,7 +1277,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 25. Teams app installed
+### 25. Teams app installed
 
 ```json
 {
@@ -1325,7 +1325,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 26. Teams app removed
+### 26. Teams app removed
 
 ```json
 {
@@ -1373,7 +1373,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 27. Teams app upgraded
+### 27. Teams app upgraded
 
 ```json
 {
@@ -1421,7 +1421,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-## 28. Team unarchived
+### 28. Team unarchived
 
 ```json
 {
