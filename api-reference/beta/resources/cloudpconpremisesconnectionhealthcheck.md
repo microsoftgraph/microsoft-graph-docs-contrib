@@ -60,6 +60,7 @@ The result of a cloud PC on-premises connection health check.
 |permissionCheckNoSubscriptionReaderRole|Cloud PC service principal does not have reader permissions on the specified Azure subscription. Please work with subscription owner to add reader role assignment on the Azure subscription for the Cloud PC service principal.|
 |permissionCheckNoResourceGroupOwnerRole|Cloud PC service principal does not have owner permissions on the specified resource group. Please work with the subscription owner to add owner role assignment on the resource group for the Cloud PC service principal.|
 |permissionCheckNoVNetContributorRole|Cloud PC service principal does not have network contributor permissions on the specified virtual network. Please work with subscription owner to add the network contributor role assignment for the Cloud PC service principal. |
+|permissionCheckNoResourceGroupNetworkContributorRole|Cloud PC service principal does not have network contributor permissions on the specified resource group. Please work with the subscription owner to add network contributor role assignment on the resource group for the Cloud PC service principal.|
 |permissionCheckUnknownError|The permission check failed due to an unknown error. Please contact customer support.|
 |internalServerErrorDeploymentCanceled|The deployment was canceled. Try again later. If the problem persists, contact support.|
 |internalServerErrorAllocateResourceFailed|The allocation of resources failed. Try again or contact support for more details.|
