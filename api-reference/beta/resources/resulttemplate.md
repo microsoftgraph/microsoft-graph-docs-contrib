@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the list of search results.
+A dictionary of **resultTemplateIds** and associated values, which includes the name and JSON schema of the result templates.
 
 ## Properties
 
