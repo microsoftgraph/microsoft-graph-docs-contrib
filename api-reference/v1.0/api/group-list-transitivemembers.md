@@ -126,7 +126,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignore",
   "name": "get_group_transitivemembers_count"
 }-->
 
