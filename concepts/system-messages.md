@@ -1135,7 +1135,7 @@ Below is the list of supported types with the example JSON response.
 }
 ```
 
-# 22. Team joining disabled
+### 22. Team joining disabled
 
 ```json
 {
