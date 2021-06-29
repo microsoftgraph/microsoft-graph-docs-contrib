@@ -10,7 +10,6 @@ ms.prod: "identity-and-sign-in"
 # List availableProviderTypes (deprecated)
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieves all identity provider types available in a directory.
@@ -45,6 +44,7 @@ GET /identityProviders/availableProviderTypes
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -54,6 +54,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 ## Example
 
 ### Request
+
 The following is an example of the request.
 
 <!-- {
@@ -63,7 +64,7 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
+GET https://graph.microsoft.com/v1.0/identityProviders/availableProviderTypes
 ```
 
 ### Response
@@ -85,17 +86,10 @@ Content-Type: application/json
 
 {
   "value": [
-      "Amazon",
-      "OpenIDConnect",
-      "Facebook",
-      "GitHub",
       "Google",
-      "LinkedIn",
-      "Microsoft",
-      "QQ",
-      "Twitter",
-      "WeChat",
-      "Weibo"
+      "Facebook",
+      "MicrosoftAccount",
+      "EmailOTP"
   ]
 }
 ```

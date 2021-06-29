@@ -1,19 +1,18 @@
 ---
 title: "List identityProviders"
-description: "Retrieve a list of identityProvider objects."
-localization_priority: Normal
-doc_type: apiPageType
+description: "Retrieve all identityProviders"
+localization_priority: Priority
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
+doc_type: apiPageType
 ---
 
 # List identityProviders (deprecated)
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-Retrieve a list of [identityProviders](../resources/identityprovider.md) objects.
+Retrieve all [identityProviders](../resources/identityprovider.md) in the directory.
 
 ## Permissions
 
@@ -23,17 +22,13 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Application|Not supported.|
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* External Identity Provider Administrator
+The work or school account must be a global administrator of the tenant.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /identityProviders
 ```
@@ -50,29 +45,24 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [identityProvider](../resources/identityprovider.md) and [openIdConnectProvider](../resources/openIdConnectProvider.md) (only for Azure AD B2C) objects in the response body.
+If successful, this method returns `200 OK` response code and a collection of [identityProviders](../resources/identityprovider.md) in JSON representation in the response body.
 
 ## Example
 
-### Request
+The following example retrieves all **identityProvider**.
 
-The following is an example of the request.
+##### Request
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider_3"
-}
--->
+  "name": "list-identityproviders"
+}-->
 
-``` http
-GET https://graph.microsoft.com/beta/identityProviders
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityProviders
 ```
 
-### Response
-
-The following is an example of the response.
-
-**Note:** The response object shown here might be shortened for readability.
+##### Response
 
 <!-- {
   "blockType": "response",
@@ -80,42 +70,32 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.identityProvider",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityProviders",
     "value": [
       {
-          "@odata.type": "microsoft.graph.identityProvider",
-          "id": "Amazon-OAUTH",
-          "name": "Login with Amazon",
-          "type": "Amazon",
-          "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-          "clientSecret": "*****"
-      },
-      {
-          "@odata.type": "microsoft.graph.openIdConnectProvider",
-          "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
-          "name": "Login with the Contoso identity provider",
-          "type": "OpenIDConnect",
-          "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-          "clientSecret": "*****",
-          "claimsMapping": {
-              "userId": "myUserId",
-              "givenName": "myGivenName",
-              "surname": "mySurname",
-              "email": "myEmail",
-              "displayName": "myDisplayName"
-          },
-          "domainHint": "contoso",
-          "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
-          "responseMode": "form_post",
-          "responseType": "code",
-          "scope": "openid"
-      },
+        "id": "Amazon-OAUTH",
+        "name": "Login with Amazon",
+        "type": "Amazon",
+        "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+        "clientSecret": "*****"
+      }
     ]
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List identityProviders",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}-->
+
