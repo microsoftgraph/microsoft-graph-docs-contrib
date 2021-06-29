@@ -1,6 +1,6 @@
 ---
 title: "resultTemplate resource type"
-description: "A dictionary that represents the result templates to render the search results."
+description: "A dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result templates."
 localization_priority: Normal
 author: "cristianv-ms"
 ms.prod: "search"
