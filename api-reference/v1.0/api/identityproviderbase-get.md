@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in Azure AD.
 
-For Azure AD B2C, it can retrieve properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an[openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md).
+For Azure AD B2C, it can retrieve properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md).
 
 ## Permissions
 
