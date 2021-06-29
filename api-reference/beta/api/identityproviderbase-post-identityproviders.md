@@ -10,6 +10,8 @@ ms.prod: "identity-and-sign-in"
 # Create identityProvider
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
 In Azure AD B2C create a new [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) object.
