@@ -1,19 +1,19 @@
 ---
-title: "Add incompatibleGroup"
-description: "Add a link to indicate a group is incompatible with a specified access package."
+title: "Remove incompatibleGroup"
+description: "Remove a link that indicates a group is incompatible with a specified access package."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Add incompatibleGroup
+# Remove incompatibleGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a [group](../resources/group.md) to the list of groups that have been marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
+Remove a [group](../resources/group.md) from the list of groups that have been marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
 ## Permissions
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleGroups/$ref
+DELETE /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleGroups/{id}/$ref
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleG
 
 ## Request body
 
-In the request body, supply a JSON representation of a structure with the OData id of the URI of a [group](../resources/group.md) object.
+Do not supply a request body for this method.
 
 ## Response
 
@@ -57,16 +57,13 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "add_incompatiblegroup_to_accesspackage"
+  "name": "remove_incompatiblegroup_from_accesspackage"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleGroups/$ref
+DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleGroups/{id}/$ref
 Content-type: application/json
 
-{
-    "@odata.id": "https://graph.microsoft.com/beta/groups/c0a74b4d-2694-4d5d-a964-1bee4ff0aaf2"
-}
 ```
 
 ---
@@ -83,7 +80,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 Created
+HTTP/1.1 204 No Content
 
 
 ```
@@ -92,7 +89,7 @@ HTTP/1.1 204 Created
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Add incompatibleGroup",
+  "description": "Remove incompatibleGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

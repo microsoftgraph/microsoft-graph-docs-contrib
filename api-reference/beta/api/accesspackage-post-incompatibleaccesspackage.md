@@ -79,9 +79,7 @@ The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.accessPackage"
+  "blockType": "response"
 } -->
 
 ```http
