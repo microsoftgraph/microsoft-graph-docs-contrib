@@ -4274,8 +4274,6 @@ items:
           items:
           - name: Identity provider type
             href: resources/identityprovider.md
-          - name: OpenID Connect identity provider type
-            href: resources/openidconnectprovider.md
           - name: List
             href: api/identityprovider-list.md
           - name: Create
