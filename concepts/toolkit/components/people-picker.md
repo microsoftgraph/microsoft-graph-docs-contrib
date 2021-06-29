@@ -76,6 +76,8 @@ The following events are fired from the component.
 | --- | --- |
 | `selectionChanged` | The user added or removed a person from the list of selected/picked people.|
 
+For more information about handling events, see [events](../customize-components/events.md).
+
 ## CSS custom properties
 
 The `mgt-people-picker` component defines the following CSS custom properties.
