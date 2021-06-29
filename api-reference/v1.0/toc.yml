@@ -29,12 +29,10 @@ items:
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/1.0
       items:
-      - name: Use query parameters
-        href: query-parameters.md
       - name: Use the search query parameter
-        href: search-query-parameter.md
+        href: /graph/search-query-parameter?context=graph/api/1.0
       - name: Advanced query capabilities
-        href: aad-advanced-queries.md
+        href: /graph/aad-advanced-queries?context=graph/api/1.0
     - name: Batching
       displayName: Batch requests
       href: /graph/json-batching?context=graph/api/1.0
