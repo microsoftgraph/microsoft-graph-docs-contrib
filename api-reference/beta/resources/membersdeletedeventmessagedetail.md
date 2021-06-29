@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details for members added event message.
+Represents details for members deleted event message.
 This message is generated when members are removed from a chat, a channel, or a team.
 
 
