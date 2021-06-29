@@ -148,9 +148,9 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: text/plain
 
-```
 
-`893`
+893
+```
 
 ### Example 3: Use the microsoft.graph.group OData cast to get only members that are groups
 
