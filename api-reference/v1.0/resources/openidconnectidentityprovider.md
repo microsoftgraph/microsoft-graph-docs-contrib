@@ -10,8 +10,6 @@ author: "namkedia"
 # openIdConnectIdentityProvider resource type
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant.
 
 Configuring an OpenID Connect provider in a B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
