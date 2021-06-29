@@ -172,15 +172,6 @@ Content-type: application/json
                 "surname": "family_name",
                 "email": "unique_email"
             }
-        },
-        {
-            "@odata.type": "#microsoft.graph.appleManagedIdentityProvider",
-            "id": "Apple-Managed-OIDC",
-            "displayName": "Sign in with Apple",
-            "developerId": "UBF8T346G9",
-            "serviceId": "com.microsoft.aad.b2c.iuyt.client",
-            "keyId": "99P6DD87C4",
-            "certificateData": "******"
         }
     ]
 }
