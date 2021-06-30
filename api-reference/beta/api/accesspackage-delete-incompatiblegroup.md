@@ -59,11 +59,8 @@ The following is an example of the request.
   "blockType": "request",
   "name": "remove_incompatiblegroup_from_accesspackage"
 }-->
-
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleGroups/{id}/$ref
-Content-type: application/json
-
 ```
 
 ---
@@ -81,8 +78,6 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 204 No Content
-
-
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -59,7 +59,6 @@ The following is an example of the request.
   "blockType": "request",
   "name": "add_incompatiblegroup_to_accesspackage"
 }-->
-
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleGroups/$ref
 Content-type: application/json
@@ -81,11 +80,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 204 Created
-
-
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
