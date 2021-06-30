@@ -10,6 +10,8 @@ doc_type: apiPageType
 # chat: sendActivityNotification
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Send an activity feed notification in scope of a chat. For more details about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 ## Permissions
@@ -130,7 +132,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Notify a user about a approval needed in a chat message
+### Example 2: Notify a user about an approval needed in a chat message
 
 Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contains a card with the approval button on it.
 
