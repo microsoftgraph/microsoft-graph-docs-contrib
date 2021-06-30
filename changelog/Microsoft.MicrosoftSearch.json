@@ -185,7 +185,7 @@
         {
           "Id": "5902af1d-c7b6-4f13-ae56-139dedff79e8",
           "ApiChange": "Member",
-          "ChangedApiName": "unknownfuturevalue",
+          "ChangedApiName": "unknownFutureValue",
           "ChangeType": "Change",
           "Description": "Renamed the **unknownfuturevalue** resource type to **unknownFutureValue**",
           "Target": "entityType"
