@@ -12,11 +12,11 @@ const client = Client.init(options);
 
 const identityApiConnector = {
     displayName: 'Test API',
-    targetUrl: 'https://someapi.com/api',
+    targetUrl: 'https://someotherapi.com/api',
     authenticationConfiguration: {
-      '@odata.type':'#microsoft.graph.basicAuthentication',
-      username: '<USERNAME>',
-      password: '<PASSWORD>'
+        '@odata.type':'#microsoft.graph.pkcs12Certificate',
+        pkcs12Value: 'eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA',
+        password: '<password>'
     }
 };
 

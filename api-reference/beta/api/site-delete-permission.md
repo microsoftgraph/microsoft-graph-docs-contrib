@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Delete permission
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete a [permission](../resources/permission.md) object on a site.
 
 ## Permissions
