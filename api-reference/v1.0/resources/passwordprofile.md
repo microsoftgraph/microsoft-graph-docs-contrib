@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object. See an example to [Update the passwordProfile of a user](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-to-reset-their-password).
+Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.
 
 
 ## Properties
@@ -52,3 +52,6 @@ Here is a JSON representation of the resource
   "tocPath": ""
 }-->
 
+## See also
+
+[Update the passwordProfile of a user](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-to-reset-their-password)
