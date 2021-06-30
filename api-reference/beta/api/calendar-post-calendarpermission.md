@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Create the specified permissions object of a user or group calendar that has been shared.
+Create a calendarPermission resource (../resources/calendarpermission.md) to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 
 ## Permissions
 
@@ -68,15 +68,29 @@ The following is an example of the request.
   "name": "create_calendarpermission"
 }-->
 
-```msgraph-interactive
+# [HTTP]
 
 POST https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions
 
 Content-type: application/json
 {
-
   "emailAddress": {
-    "name": "My Organization",
+    "name": "Samantha Booth",
+    "address":"samanthab@adatum.onmicrosoft.com"
+  },
+  "isRemovable": true,
+  "isInsideOrganization": true,
+  "role": "write",
+  "allowedRoles": [
+    "none",
+    "freeBusyRead",
+    "limitedRead",
+    "read",
+    "write"
+  ],
+  "id": "RGVmYXVsdA=="
+}
+    
   },
   "isRemovable": true,
   "isInsideOrganization": true,
@@ -89,7 +103,7 @@ Content-type: application/json
     "write"
   ]
 }
-```
+
 
 ### Response
 
@@ -109,7 +123,7 @@ Content-type: application/json
 
 {
   "emailAddress": {
-    "name": "My Organization",
+    "name": "Samantha Booth",
   },
   "isRemovable": true,
   "isInsideOrganization": true,
