@@ -1,6 +1,6 @@
 ---
 title: "chatMessageInfo resource type"
-description: "Represents preview of a chatMessage resource"
+description: "Represents a preview of a chatMessage resource."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents preview of a [chatMessage](../resources/chatmessage.md) resource. This object can only be fetched as part of list of [chats](../resources/chat.md).
+Represents a preview of a [chatMessage](../resources/chatmessage.md) resource. This object can only be fetched as part of a list of [chats](../resources/chat.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|body|[itemBody](../resources/itembody.md)|Body of the [chatMessage](../resources/chatmessage.md). This will still contain markers for atmentions and attachments even though the object does not return atmentions and attachments|
+|body|[itemBody](../resources/itembody.md)|Body of the [chatMessage](../resources/chatmessage.md). This will still contain markers for @mentions and attachments even though the object does not return @mentions and attachments.|
 |createdDateTime|DateTimeOffset|Date time object representing the time at which message was created.|
 |from|[chatMessageFromIdentitySet](../resources/chatmessagefromidentityset.md)|Information about the sender of the message.|
-|id|String|Id of the [chatMessage](../resources/chatmessage.md).|
-|isDeleted|Boolean|If set to true, the original message has been deleted.|
+|id|String|ID of the [chatMessage](../resources/chatmessage.md).|
+|isDeleted|Boolean|If set to `true`, the original message has been deleted.|
 
 ## Relationships
 None.
