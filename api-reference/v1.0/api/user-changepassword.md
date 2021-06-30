@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the password of the currently signed-in user. This API does not allow resetting passwords of other users. To reset the password of other users, update the **passwordProfile** property of the [user](../resources/user.md) resource. See an example to [Update the passwordProfile of a user](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user).
+Use this API to update your own password. Any user can update their own password without belonging to any administrator role.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,15 +39,15 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| currentPassword | String | The signed-in user's current password.|
-| newPassword | String | The signed-in user's new password.|
+| currentPassword | String | Your current password.|
+| newPassword | String | Your new password.|
 
 ## Response
 
 If successful, this method returns `204 No Content` response code.
 
 ## Example
-The following is an example of the request.
+The following example shows a request to update your own password.
 
 ### Request
 
@@ -74,6 +74,9 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## See also
++ [Update the passwordProfile of a user to reset their password](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-to-reset-their-password)
 
 <!-- uuid: a7c9a0de-8324-4f80-8d88-2e6d5838f3be
 2021-06-24 14:57:30 UTC -->
