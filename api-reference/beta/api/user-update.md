@@ -205,11 +205,9 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Update the passwordProfile of a user to reset their password
 
-The following is an example of a request that resets the password of another user.
+The following example shows a request that resets the password of another user.
 
 #### Request
-
-The following example shows a request.
 
 <!-- {
   "blockType": "request",
