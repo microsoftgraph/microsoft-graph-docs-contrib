@@ -19,6 +19,19 @@ It is available on the source property of [driveItem][item-resource] resources.
 | **application**          | driveItemSourceApplication | Enumeration value that indicates the source application where the file was created.              |
 | **externalId**           | string                     | The external identifier for the drive item from the source.                                      |
 
+### driveItemSourceApplication values
+
+| Value               | Description                                       |
+|:--------------------|:--------------------------------------------------|
+| teams               | The application is Teams.                         |
+| yammer              | The application is Yammer.                        |
+| sharePoint          | The application is SharePoint.                    |
+| oneDrive            | The application is OneDrive.                      |
+| stream              | The application is Stream.                        |
+| powerPoint          | The application is PowerPoint                     |
+| office              | The application is Office                         |
+| unknownFutureValue  | Marker value for future compatibility.            |
+
 ## JSON representation
 
 <!-- {
@@ -36,19 +49,6 @@ It is available on the source property of [driveItem][item-resource] resources.
   "externalId" : "string"
 }
 ```
-
-### driveItemSourceApplication values
-
-| Value               | Description                                       |
-|:--------------------|:--------------------------------------------------|
-| teams               | The application is Teams.                         |
-| yammer              | The application is Yammer.                        |
-| sharePoint          | The application is SharePoint.                    |
-| oneDrive            | The application is OneDrive.                      |
-| stream              | The application is Stream.                        |
-| powerPoint          | The application is PowerPoint                     |
-| office              | The application is Office                         |
-| unknownFutureValue  | Marker value for future compatibility.            |
 
 ## See also
 

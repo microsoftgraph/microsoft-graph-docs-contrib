@@ -18,6 +18,16 @@ It is available on the media property of [driveItem][item-resource] resources.
 | :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
 | **contentCategory**      | mediaSourceContentCategory | Enumeration value that indicates the media content category.                                     |
 
+### mediaSourceContentCategory values
+
+| Value               | Description                                         |
+|:------------------- |:----------------------------------------------------|
+| meeting             | The media is a meeting.                             |
+| liveStream          | The media is a live stream.                         |
+| presentation        | The media is a presentation.                        |
+| screenRecording     | The media is a screen recording.                    |
+| unknownFutureValue  | Marker value for future compatibility.              |
+
 ## JSON representation
 
 <!-- {
@@ -33,16 +43,6 @@ It is available on the media property of [driveItem][item-resource] resources.
   "contentCategory" : "string"
 }
 ```
-
-### mediaSourceContentCategory values
-
-| Value               | Description                                         |
-|:------------------- |:----------------------------------------------------|
-| meeting             | The media is a meeting.                             |
-| liveStream          | The media is a live stream.                         |
-| presentation        | The media is a presentation.                        |
-| screenRecording     | The media is a screen recording.                    |
-| unknownFutureValue  | Marker value for future compatibility.              |
 
 ## See also
 

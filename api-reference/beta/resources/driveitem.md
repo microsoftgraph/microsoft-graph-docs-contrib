@@ -1,11 +1,9 @@
 ---
 author: JeremyKelley
 description: "The driveItem resource represents a file, folder, or other item stored in a drive."
-ms.date: 07/15/2020
-title: DriveItem
+title: driveItem
 localization_priority: Normal
-ms.prod: "sharepoint"
-ms.author: brcrowne
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
 
