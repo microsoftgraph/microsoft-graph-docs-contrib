@@ -1,12 +1,12 @@
 ---
 author: JeremyKelley
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
-title: driveItem: createUploadSession
+title: driveItem createUploadSession
 localization_priority: Normal
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
-# driveItem: createUploadSession
+# driveItem createUploadSession
 
 Namespace: microsoft.graph
 
