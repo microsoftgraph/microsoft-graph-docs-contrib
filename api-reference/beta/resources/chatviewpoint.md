@@ -1,6 +1,6 @@
 ---
 title: "chatViewpoint resource type"
-description: "Represents user specific properties of a chat"
+description: "Represents user-specific properties of a chat."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents user specific properties of a [chat](../resources/chat.md). These properties may change based on who the caller of the API is.
+Represents user-specific properties of a [chat](../resources/chat.md). These properties might change based on who the caller of the API is.
 
-> Note: chatViewpoint is only populated in [list chats API](../api/chat-list.md).
+> **Note:** Currently, only the [list chats](../api/chat-list.md) operation supports **chatViewpoint**.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|lastMessageReadDateTime|DateTimeOffset|Represents the datetime up until which calling user has read [chatMessages](../resources/chatmessage.md) in a specific chat.|
+|lastMessageReadDateTime|DateTimeOffset|Represents the dateTime up until which the calling user has read [chatMessages](../resources/chatmessage.md) in a specific chat.|
 
 ## Relationships
 None.
