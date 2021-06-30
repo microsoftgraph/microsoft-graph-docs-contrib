@@ -334,8 +334,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of a request along with the preview of the last message sent in the chat. Comparing `createdDateTime` on the preview to `lastMessageReadDateTime` in `viewpoint` allows caller to determine if user
-has read all messages in a chat or not.
+The following example shows a request to list chats along with the preview of the last message sent in the chat. Comparing `createdDateTime` on the preview to `lastMessageReadDateTime` in `viewpoint` allows the caller to determine whether the user has read all messages in a chat.
 
 <!-- {
   "blockType": "request",
