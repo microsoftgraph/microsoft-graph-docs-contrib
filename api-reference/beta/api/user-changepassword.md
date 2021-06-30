@@ -1,6 +1,6 @@
 ---
 title: "user: changePassword"
-description: "Update the password of the currently signed-in user."
+description: "Update your own password."
 localization_priority: Normal
 author: "jpettere"
 ms.prod: "users"
