@@ -116,7 +116,8 @@ Content-type: application/json
             "chatType": "meeting",
             "chatViewpoint": {
                 "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
-            }
+            },
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         },
         {
             "id": "19:561082c0f3f847a58069deb8eb300807@thread.v2",
@@ -126,7 +127,8 @@ Content-type: application/json
             "chatType": "group",
             "chatViewpoint": {
                 "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
-            }
+            },
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         },
         {
             "id": "19:d74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
@@ -136,7 +138,8 @@ Content-type: application/json
             "chatType": "oneOnOne",
             "chatViewpoint": {
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
-            }
+            },
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         }
     ]
 }
@@ -210,6 +213,7 @@ Content-type: application/json
             "chatViewpoint": {
                 "lastMessageReadDateTime": "2021-04-02T08:15:02.091Z"
             },
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
                 {
@@ -247,6 +251,7 @@ Content-type: application/json
             "chatViewpoint": {
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
             },
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A561082c0f3f847a58069deb8eb300807%40thread.v2')/members",
             "members": [
                 {
@@ -300,6 +305,7 @@ Content-type: application/json
             "chatViewpoint": {
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [
                 {
@@ -511,6 +517,7 @@ Content-type: application/json
             "chatViewpoint": {
                 "lastMessageReadDateTime": "2021-06-05T00:01:30.233Z"
             },
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
                 {
@@ -548,6 +555,7 @@ Content-type: application/json
             "chatViewpoint": {
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [
                 {

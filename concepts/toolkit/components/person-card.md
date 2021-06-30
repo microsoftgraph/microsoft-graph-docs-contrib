@@ -132,6 +132,8 @@ The following events are fired from the component.
 | --- | --- |
 | `expanded` | The user has opened the expanded details section of the card. |
 
+For more information about handling events, see [events](../customize-components/events.md).
+
 ## CSS custom properties
 
 The `mgt-person-card` component defines the following CSS custom properties. 
