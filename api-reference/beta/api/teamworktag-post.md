@@ -46,8 +46,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the tag. The value cannot be more than 40 characters.|
-|members| [teamworkTagMember](../resources/teamworktagmember.md) collection |Members of the team to add to the tag. Set the user identifier property of each member. Members count should not be more than 25.|
+|displayName|String|Name of the tag. The value can't be more than 40 characters.|
+|members| [teamworkTagMember](../resources/teamworktagmember.md) collection |Members of the team to add to the tag. Set the user identifier property of each member. Members count shouldn't be more than 25.|
 
 
 
