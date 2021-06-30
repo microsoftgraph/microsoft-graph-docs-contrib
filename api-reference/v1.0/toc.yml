@@ -28,6 +28,11 @@ items:
       href: /graph/paging?context=graph/api/1.0
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/1.0
+      items:
+      - name: Use the search query parameter
+        href: /graph/search-query-parameter?context=graph/api/1.0
+      - name: Advanced query capabilities
+        href: /graph/aad-advanced-queries?context=graph/api/1.0
     - name: Batching
       displayName: Batch requests
       href: /graph/json-batching?context=graph/api/1.0
@@ -4441,6 +4446,10 @@ items:
             href: api/directoryrole-post-members.md
           - name: Remove member
             href: api/directoryrole-delete-member.md
+          - name: List scoped members
+            href: api/directoryrole-list-scopedmembers.md
+          - name: Get delta
+            href: api/directoryrole-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md
           items:

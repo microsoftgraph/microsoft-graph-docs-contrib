@@ -28,6 +28,11 @@ items:
       href: /graph/paging?context=graph/api/beta
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/beta
+      items:
+      - name: Use the search query parameter
+        href: /graph/search-query-parameter?context=graph/api/beta
+      - name: Advanced query capabilities
+        href: /graph/aad-advanced-queries?context=graph/api/beta
     - name: Batching
       displayName: Batch requests
       href: /graph/json-batching?context=graph/api/beta
@@ -9589,6 +9594,15 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Cloud PC audit event
+          href: resources/cloudpcauditevent.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-auditevents.md
+          - name: Get
+            href: api/cloudpcauditevent-get.md
+          - name: Get audit activity types
+            href: api/cloudpcauditevent-getauditactivitytypes.md
         - name: Cloud PC user setting
           href: resources/cloudpcusersetting.md
           items:
@@ -10435,8 +10449,10 @@ items:
             href: api/directoryrole-post-members.md
           - name: Remove member
             href: api/directoryrole-delete-member.md
-          - name: List scoped administrators
-            href: api/directoryrole-list-scopedadministrators.md
+          - name: List scoped members
+            href: api/directoryrole-list-scopedmembers.md
+          - name: Get delta
+            href: api/directoryrole-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md
           items:
