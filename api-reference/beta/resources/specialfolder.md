@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: "The specialFolder resource groups special folder-related data items into a single structure."
+description: "Groups special folder-related data items into a single structure."
 title: specialFolder resource type
 localization_priority: Normal
 doc_type: resourcePageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **specialFolder** resource groups special folder-related data items into a single structure.
+Groups special folder-related data items into a single structure.
 
 If a **driveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.
 Special folders can be accessed directly via the [special folders collection](../api/drive-get-specialfolder.md).
@@ -25,7 +25,7 @@ If a user deletes one, it is recreated when written to again.
 
 The following special folder names are available in OneDrive and OneDrive for Business.
 
-| Name        | Folder id    | Description                                                              |
+| Name        | Folder ID    | Description                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
 | Documents   | `documents`  | The Documents folder.                                                    |
 | Photos      | `photos`     | The Photos folder.                                                       |
@@ -34,7 +34,7 @@ The following special folder names are available in OneDrive and OneDrive for Bu
 | Music       | `music`      | The Music folder.                                                        |
 | Recordings  | `recordings` | The Recordings folder. This option is only available in OneDrive for Business and SharePoint Online. |
 
-**Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.
+>**Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.
 
 ## Properties
 
