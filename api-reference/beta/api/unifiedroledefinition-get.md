@@ -519,6 +519,7 @@ Content-type: application/json
                 "microsoft.entitlementManagement/AccessPackageCatalog/Create"
             ]
         }
+    ]
 }
 ```
 
