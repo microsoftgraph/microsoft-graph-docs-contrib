@@ -1,21 +1,22 @@
 ---
 author: JeremyKelley
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
-title: driveItem createUploadSession
+title: driveItem: createUploadSession
 localization_priority: Normal
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
-# driveItem createUploadSession
+# driveItem: createUploadSession
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an upload session to allow your app to upload files up to the maximum file size.
+
 An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
 
-To upload a file using an upload session, there are two steps:
+To upload a file using an upload session:
 
 1. [Create an upload session](#create-an-upload-session)
 2. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
