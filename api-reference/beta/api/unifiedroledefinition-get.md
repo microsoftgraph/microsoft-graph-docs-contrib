@@ -19,7 +19,7 @@ The following RBAC providers are currently supported:
 - cloud PC 
 - device management (Intune)
 - directory (Azure AD directory roles)
-- entitlementManagement (Azure AD entitlement management)
+- entitlement management (Azure AD entitlement management)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -32,6 +32,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 | Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Not supported. | CloudPC.Read.All, CloudPC.ReadWrite.All |
 | Device management | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Directory | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Not supported.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+| Entitlement management | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All | Not supported. | Not supported. |
 
 ## HTTP request
 
@@ -52,6 +53,13 @@ Get a role definition for a directory provider:
 
 ```http
 GET /roleManagement/directory/roleDefinitions/{id}
+```
+
+Get a role definition for the entitlement management provider:
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 ```
 
 ## Optional query parameters
@@ -468,6 +476,51 @@ Content-type: application/json
     ]
 }
 ```
+
+## Example 5: Get the definition of a built-in role for the entitlement management provider
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_built-in_entitlementmanagement_role_unifiedroledefinition"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDefinitions/ba92d953-d8e0-4e39-a797-0cbedb0a89e8
+```
+
+
+#### Response
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleDefinitions/$entity",
+    "id": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+    "displayName": "Catalog creator",
+    "description": "Catalog creator",
+    "isBuiltIn": true,
+    "isEnabled": true,
+    "templateId": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+    "version": "1.0",
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "microsoft.entitlementManagement/AccessPackageCatalog/Create"
+            ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
