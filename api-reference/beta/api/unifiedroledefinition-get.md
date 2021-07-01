@@ -518,6 +518,7 @@ Content-type: application/json
             "allowedResourceActions": [
                 "microsoft.entitlementManagement/AccessPackageCatalog/Create"
             ]
+        }
 }
 ```
 
