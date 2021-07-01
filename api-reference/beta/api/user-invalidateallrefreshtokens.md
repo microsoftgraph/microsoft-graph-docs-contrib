@@ -41,6 +41,10 @@ This operation has no request content.
 
 If successful, this method returns `204 No Content` response code.
 
+>[!NOTE]
+>This API has the same known issue as the [revokeSignInSessions](user-revokesigninsessions.md) action. See [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). It returns a different HTTP response code.
+
+
 ## Example
 Here is an example of how to call this API.
 ##### Request
