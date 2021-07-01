@@ -7,6 +7,9 @@ ms.prod: "w10"
 doc_type: apiPageType
 ---
 
+> [!NOTE]
+> This API has a [known issue](/Graph/known-issues#accessing-and-updating-deployment-audiences) related to deployments created via Intune.
+
 # deploymentAudience: updateAudienceById
 Namespace: microsoft.graph.windowsUpdates
 
