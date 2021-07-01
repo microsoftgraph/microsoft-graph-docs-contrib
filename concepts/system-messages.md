@@ -16,7 +16,7 @@ Microsoft Graph exposes system messages as part of [Chat Message](/graph/api/res
 
 
 System messages are represented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) resource.
-The `messageType` will be set to `systemEventMessage` for such messages and `eventDetail` property would provide the details of the event that happened in a chat, a channel, or a team.
+The `messageType` will be set to `systemEventMessage` for such messages and `eventDetail` property would provide the event details.
 
 
 ### Supported GET operations
@@ -81,7 +81,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -142,7 +141,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -205,7 +203,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1615943825123",
   "replyToId": null,
   "etag": "1615943825123",
@@ -251,7 +248,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1615943825123",
   "replyToId": null,
   "etag": "1615943825123",
@@ -297,7 +293,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -346,7 +341,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -395,7 +389,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -444,7 +437,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -493,7 +485,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -541,7 +532,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -589,7 +579,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1615943825123",
   "replyToId": null,
   "etag": "1615943825123",
@@ -635,7 +624,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -669,7 +657,6 @@ Below is the list of supported types with the example JSON response.
       "Owner"
     ],
     "conversationMemberUser": {
-      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
       "id": "06a5b888-ad96-455e-88ef-c059ec4e4cf0",
       "displayName": null,
       "userIdentityType": "aadUser"
@@ -736,7 +723,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -767,13 +753,11 @@ Below is the list of supported types with the example JSON response.
   "eventDetail": {
     "@odata.type": "#microsoft.graph.membersAddedEventMessageDetail",
     "members": [{
-        "@odata.type": "#microsoft.graph.teamworkUserIdentity",
         "id": "06a5b888-ad96-455e-88ef-c059ec4e4cf0",
         "displayName": null,
         "userIdentityType": "aadUser"
       },
       {
-        "@odata.type": "#microsoft.graph.teamworkUserIdentity",
         "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
         "displayName": null,
         "userIdentityType": "aadUser"
@@ -796,7 +780,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",
@@ -827,7 +810,6 @@ Below is the list of supported types with the example JSON response.
   "eventDetail": {
     "@odata.type": "#microsoft.graph.membersDeletedEventMessageDetail",
     "members": [{
-      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
       "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
       "displayName": null,
       "userIdentityType": "aadUser"
@@ -876,7 +858,6 @@ Below is the list of supported types with the example JSON response.
   "eventDetail": {
     "@odata.type": "#microsoft.graph.membersJoinedEventMessageDetail",
     "members": [{
-      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
       "id": "2c3f5f34-ac9f-42e7-8b35-442ccac166cb",
       "displayName": "Alex (Guest)",
       "userIdentityType": "aadUser"
@@ -925,7 +906,6 @@ Below is the list of supported types with the example JSON response.
   "eventDetail": {
     "@odata.type": "#microsoft.graph.membersLeftEventMessageDetail",
     "members": [{
-      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
       "id": "ee8af8acd3184068a935a1f207865620",
       "displayName": "Alex (Guest)",
       "userIdentityType": "anonymousGuest"
@@ -947,7 +927,6 @@ Below is the list of supported types with the example JSON response.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.chatMessage",
   "id": "1616883610266",
   "replyToId": null,
   "etag": "1616883610266",

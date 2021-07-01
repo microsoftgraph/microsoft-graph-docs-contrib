@@ -208,7 +208,6 @@ Content-type: application/json
             "reactions": []
         },
         {
-            "@odata.type": "#microsoft.graph.chatMessage",
             "id": "1616883610266",
             "replyToId": null,
             "etag": "1616883610266",
