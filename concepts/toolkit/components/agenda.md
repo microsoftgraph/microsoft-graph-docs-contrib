@@ -126,7 +126,7 @@ The following events are fired from the control.
 
 Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`eventClick` | The user clicks or taps an event. | Selected [event](/graph/api/resources/event) | No | No | No
+`eventClick` | The user clicks or taps an event. | Selected [event](/graph/api/resources/event) | No | No | Yes, with custom **event** template
 
 For more information about handling events, see [events](../customize-components/events.md).
 
