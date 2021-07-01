@@ -1,6 +1,6 @@
 The following special folder names are available in OneDrive and OneDrive for Business.
 
-| Name        | Folder id    | Description                                                              |
+| Name        | Folder ID    | Description                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
 | Documents   | `documents`  | The Documents folder.                                                    |
 | Photos      | `photos`     | The Photos folder.                                                       |
