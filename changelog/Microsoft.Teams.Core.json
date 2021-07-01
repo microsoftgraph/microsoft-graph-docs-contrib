@@ -30,6 +30,40 @@
     {
       "ChangeList": [
         {
+          "Id": "0091ef76-fdba-4f60-8bc3-f43a1f76de49",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessageInfo",
+          "ChangeType": "Addition",
+          "Description": "Represents a preview of a [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).",
+          "Target": "chatMessageInfo"
+        },
+        {
+          "Id": "0091ef76-fdba-4f60-8bc3-f43a1f76de49",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatViewpoint",
+          "ChangeType": "Addition",
+          "Description": "Represents caller-specific properties of a [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta). These properties change based on who the caller is.",
+          "Target": "chatViewpoint"
+        },
+        {
+          "Id": "0091ef76-fdba-4f60-8bc3-f43a1f76de49",
+          "ApiChange": "Property",
+          "ChangedApiName": "viewpoint",
+          "ChangeType": "Addition",
+          "Description": "Contains caller-specific information about a [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta). This property's value changes based on who the caller is.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "0091ef76-fdba-4f60-8bc3-f43a1f76de49",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-30T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3d8c29a4-a5b1-4138-890b-c8015bfdf604",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkApplicationIdentity",
