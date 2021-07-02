@@ -67,6 +67,7 @@ This resource supports:
 | [getByIds](../api/directoryobject-getbyids.md) | String collection | Returns the directory objects specified in a list of ids. |
 | [getMemberGroups](../api/user-getmembergroups.md) | String collection | Return all the groups that the user is a member of. The check is transitive. |
 | [getMemberObjects](../api/user-getmemberobjects.md) | String collection | Return all the groups, directory roles, and administrative units that the user is a member of. The check is transitive. |
+| [Get transitiveReports](../api/user-get-transitivereports.md) | Integer | Get the count of transitive reports for a user from the transitiveReports navigation property. |
 | [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects created by the user from the createdObjects navigation property. |
 | [List licenseDetails](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) collection | Get a licenseDetails object collection. |
 | [List ownedDevices](../api/user-list-owneddevices.md) | [directoryObject](directoryobject.md) collection | Get the devices that are owned by the user from the ownedDevices navigation property. |
@@ -167,9 +168,9 @@ This resource supports:
 | companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.<br><br>Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Supports `$filter` (`eq`, `ne`, `NOT`, and `in`).|
 | country | String | The country/region in which the user is located; for example, `US` or `UK`. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
-| createdDateTime | DateTimeOffset | The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, and `in` operators) and `$orderBy`. |
+| createdDateTime | DateTimeOffset | The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, and `in` operators). |
 | creationType | String | Indicates whether the user account was created as a regular school or work account (`null`), an external account (`Invitation`), a local account for an Azure Active Directory B2C tenant (`LocalAccount`) or self-service sign-up using email verification (`EmailVerified`). Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `NOT`, and `in`). |
-| deletedDateTime | DateTimeOffset | The date and time the user was deleted. <br><br>Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, and `in`) and `$orderBy`. |
+| deletedDateTime | DateTimeOffset | The date and time the user was deleted. <br><br>Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, and `in`). |
 | department | String | The name for the department in which the user works. Maximum length is 64 characters.<br><br>Supports `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, and `in` operators). |
 | displayName | String | The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. <br><br>Supports `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`), `$orderBy`, and `$search`.|
 | employeeHireDate | DateTimeOffset | The date and time when the user was hired or will start work in case of a future hire. <br><br>Supports `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`).|
@@ -313,6 +314,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
+|transitiveReports|[directoryObject](directoryobject.md) collection | The transitive reports for a user. Read-only.|
 |usageRight|[usageRight](usageright.md) collection|Represents the usage rights a user has been granted. |
 
 ### User preferences for languages and regional formats
