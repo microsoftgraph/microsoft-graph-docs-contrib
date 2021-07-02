@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides details about the Azure Private Link associated with a sign-in event. 
+Provides details about the Azure Private Link associated with a sign-in event. For more information on Private Link, see https://docs.microsoft.com/en-us/azure/private-link/private-link-overview. 
 
 
 
