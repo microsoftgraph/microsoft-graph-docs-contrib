@@ -1,0 +1,165 @@
+---
+title: "Education upload resource overview"
+description: "Upload a file to a given educationAssignment or educationSubmission resource."
+localization_priority: Normal
+author: "sharad-sharma-msft"
+ms.prod: "education"
+doc_type: apiPageType
+---
+
+# Education upload resource overview
+
+Resources are integral part of [educationAssignment](../resources/educationassignment.md) and [educationSubmission](../resources/educationsubmission.md). 
+
+Teacher determines the resources to upload in the assignment's folder, and a student determines the resources to upload in the submission's folder.
+
+## Pre-condition
+
+Setup a SharePoint folder to upload files for a given assignment or submission. 
+
+| Action  | Beta endpoint    | v1.0  endpoint   |
+|:--------|:----------|:----------|
+| Setup a SharePoint folder for a given [educationAssignment](../resources/educationassignment.md) | [HowTo](../api-reference/beta/api/educationassignment-setupresourcesfolder.md)| [HowTo](../api-reference/v1.0/api/educationassignment-setupresourcesfolder.md)|
+| Setup a SharePoint folder for a given [educationSubmission](../resources/educationsubmission.md) | [HowTo](../api-reference/beta/api/educationsubmission-setupresourcesfolder.md)| [HowTo](../api-reference/v1.0/api/educationsubmission-setupresourcesfolder.md)|
+
+## Upload a resource
+
+At this point, we are assuming that you have setup the relevant resource folder already. 
+This returns a model with the resourcesFolderUrl field.
+```http
+{
+    ...
+
+    "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GFA"
+    ...
+}
+```
+
+Following steps will allow you to upload a resource/file to the relevant resource folder.
+
+### Step 1.
+Build the Url for uploading content in a specific format. The format is 
+`{resourcesFolderUrl}:/{Name of new file}:/content`, 
+e.g. the upload url:
+```http
+https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
+```
+
+### Step 2.
+
+PUT `{upload Url}` to upload the content. Refer to [this](https://docs.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) documentation for more details.
+
+#### Example Request
+```http
+PUT https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
+```
+#### Example Request body
+The contents of the request body should be the binary stream of the file to be uploaded.
+
+#### Example Response
+```http
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#drives('b%216SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F')/items/$entity",
+    "@microsoft.graph.downloadUrl": "...",
+    "createdDateTime": "2021-03-11T18:49:47Z",
+    "eTag": "\"{EDD00CE7-B74C-4C3E-BA3E-484CB41EF31D},1\"",
+    "id": "01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ",
+    "lastModifiedDateTime": "2021-03-11T18:49:47Z",
+    "name": "NewFile.png",
+    "webUrl": "https://contososdorg.sharepoint.com/sites/GraphTest/Class%20Files/Assignments/Test%20File%20Distribution/NewFile.png",
+    "cTag": "\"c:{EDD00CE7-B74C-4C3E-BA3E-484CB41EF31D},2\"",
+    "size": 2302233,
+    "createdBy": {
+        "application": {
+            "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "displayName": "Graph explorer"
+        },
+        "user": {
+            "email": "t-james@contososd.org",
+            "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
+            "displayName": "James"
+        }
+    },
+    "lastModifiedBy": {
+        "application": {
+            "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "displayName": "Graph explorer"
+        },
+        "user": {
+            "email": "t-james@contososd.org",
+            "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
+            "displayName": "James"
+        }
+    },
+    "parentReference": {
+        "driveId": "b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F",
+        "driveType": "documentLibrary",
+        "id": "01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2",
+        "path": "/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/root:/Assignments/Test File Distribution"
+    },
+    "file": {
+        "mimeType": "image/png",
+        "hashes": {
+            "quickXorHash": "CvYQxN7MCGrIsdrA38c6wWhOu5g="
+        }
+    },
+    "fileSystemInfo": {
+        "createdDateTime": "2021-03-11T18:49:47Z",
+        "lastModifiedDateTime": "2021-03-11T18:49:47Z"
+    },
+    "image": {}
+}
+```
+
+### Step 3.
+Build the `fileUrl`- https://graph.microsoft.com/v1.0/drives/{drive-id from request in step 2}/items/{id from the response in step 2}
+e.g.
+https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
+
+### Step 4.
+Use the `fileUrl` in the request body to [POST Assignment Resource]https://docs.microsoft.com/en-us/graph/api/educationassignment-post-resources?view=graph-rest-beta)
+
+#### Example Request 
+
+#### Example Request body
+```http
+{
+    "resource": {
+        "@odata.type": "#microsoft.education.assignments.api.educationWordResource",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ",
+        "displayName": "Parts of a Sonnet"
+    }
+}
+```
+
+#### Example Response
+```http
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('48b80dff-452a-4108-bd85-fa0d84e39d0a')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "ff1aafe4-ae89-49c3-8366-4b509f640d6a",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationWordResource",
+        "displayName": "Parts of a Sonnet",
+        "createdDateTime": "2021-03-11T18:35:40.6642039Z",
+        "lastModifiedDateTime": "2021-03-11T18:35:40.6642039Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
+                "displayName": null
+            }
+        }
+    }
+}
+```
