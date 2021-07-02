@@ -75,8 +75,8 @@ Properties of directory objects behave differently in their support for query pa
 
 The following table summarizes support for `$filter` operators by properties on the [users](/graph/api/resources/user) directory object.
 
-- ![Requires advanced query parameters.](/graph/images/advanced-query-parameters/advanced.png) The property supports `$filter` with the operator by default.
-- ![Works by default. Does not require advanced query parameters.](/graph/images/advanced-query-parameters/default.png) The specific `$filter` operator requires *advanced query parameters*:
+- ![Works by default. Does not require advanced query parameters.](/graph/images/advanced-query-parameters/default.png) The property supports `$filter` with the operator by default.
+- ![Requires advanced query parameters.](/graph/images/advanced-query-parameters/advanced.png) The specific `$filter` operator requires *advanced query parameters*:
   - `ConsistencyLevel=eventual` header
   - `$count=true` query string
 - Blank cells indicate that the property does not support the use of `$filter` with the operator.
