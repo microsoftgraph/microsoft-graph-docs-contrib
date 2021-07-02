@@ -42,7 +42,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |createdDateTime|DateTimeOffset|The date and time the sign-in was initiated. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$orderby` and `$filter` (`eq`, `le`, and `ge` operators only).|
 |crossTenantAccessType|signInAccessType|Describes the type of cross tenant access used by to access the resource in the sign-in event. Possible values are: `none`, `b2bCollaboration`, `b2bDirectConnect`, `microsoftSupport`, `serviceProvider`, `unknownFutureValue`. If the sign-in event did not cross tenant boundaries, the value is `none`.|
 |deviceDetail|[deviceDetail](devicedetail.md)|The device information from where the sign-in occurred. Includes information such as deviceId, OS, and browser. Supports `$filter` (`eq` and `startsWith` operators only) on **browser** and **operatingSytem** properties.|
-|flaggedForReview|Boolean|During a failed sign in, a user may click a button in the Azure AD UX to mark the failed event for tenant admins. If a user clicked the button to flag a sign-in event, this value is true.|
+|flaggedForReview|Boolean|During a failed sign in, a user may click a button in the Azure Portal to mark the failed event for tenant admins. If a user clicked the button to flag a sign-in event, this value is `true`.|
 |homeTenantId|String|The tenant identifier of the user initiating the sign-in. Not applicable in Managed Identity or Service Principal sign-ins.|
 |id|String|The identifier representing the sign-in activity. Supports `$filter` (`eq` operator only).|
 |ipAddress|String|The IP address of the client from where the sign-in occurred. Supports `$filter` (`eq` and `startsWith` operators only).|
@@ -146,5 +146,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
