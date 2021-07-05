@@ -10651,8 +10651,6 @@ items:
               href: api/unifiedroleassignmentschedulerequest-get.md
             - name: Create
               href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
-            - name: Update
-              href: api/unifiedroleassignmentschedulerequest-update.md
             - name: Cancel
               href: api/unifiedroleassignmentschedulerequest-cancel.md
             - name: Filter by current user
@@ -10666,8 +10664,6 @@ items:
               href: api/unifiedroleeligibilityschedulerequest-get.md
             - name: Create
               href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
-            - name: Update
-              href: api/unifiedroleeligibilityschedulerequest-update.md
             - name: Cancel
               href: api/unifiedroleeligibilityschedulerequest-cancel.md
             - name: Filter by current user
