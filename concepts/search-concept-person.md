@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Search API in Microsoft Graph to search people"
 description: "You can use the Microsoft Search API to search for people relevant to you."
-author: "ancsehi"
+author: "acsehi"
 localization_priority: Normal
 ms.prod: "search"
 ---
