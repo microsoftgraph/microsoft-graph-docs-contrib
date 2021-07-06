@@ -212,7 +212,7 @@ Content-Type: application/json
     // Create LargeFileUploadTask object and start the upload() task
     const task = new LargeFileUploadTask(client, fileObject, uploadSession);
     const uploadResponse = await task.upload();
-     
+```
 ---
 
 ## Cancel the upload session
