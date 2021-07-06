@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let authenticationContextClassReference = await client.api('/identity/conditionalAccess/authenticationContextClassReferences/c1')
+let authenticationContextClassReferences = await client.api('/identity/conditionalAccess/authenticationContextClassReferences')
 	.version('beta')
 	.get();
 
