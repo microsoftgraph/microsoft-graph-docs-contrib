@@ -195,6 +195,38 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
+
+### Example 3: Update the passwordProfile of a user to reset their password
+
+The following example shows a request to reset the password of another user.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_user_passwordProfile"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/users/{id}
+Content-type: application/json
+
+{
+  "passwordProfile": {
+    "forceChangePasswordNextSignIn": false,
+    "password": "xWwvJ]6NMw+bWH-d"
+  }
+}
+```
+
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
