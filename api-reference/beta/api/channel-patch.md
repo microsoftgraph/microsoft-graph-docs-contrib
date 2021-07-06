@@ -1,7 +1,7 @@
 ---
 title: "Update channel"
 description: "Update the properties of the specified channel."
-author: "clearab"
+author: "akjo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

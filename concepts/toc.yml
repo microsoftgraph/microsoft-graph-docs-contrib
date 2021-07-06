@@ -326,7 +326,7 @@ items:
         displayName: Notifications
         items:
           - name: Overview
-            href: notifications-concept-overview.md
+            href: notifications-concept-overview.md                  
           - name: Get started
             displayName: Notifications
             items:
@@ -343,7 +343,7 @@ items:
               - name: Android app integration
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
-                href: notifications-integrating-with-ios.md
+                href: notifications-integrating-with-ios.md                
       - name: People and workplace intelligence
         items:
           - name: Overview
@@ -352,7 +352,9 @@ items:
             href: people-example.md
           - name: Customize the profile card (preview)
             href: add-properties-profilecard.md
-          - name: Customize insights privacy (preview)
+          - name: Item insights overview
+            href: item-insights-overview.md
+          - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
@@ -403,6 +405,8 @@ items:
             href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
+      - name: Service health and communications (preview)
+        href: service-communications-concept-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
@@ -428,8 +432,13 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: Send activity feed notifications
+          - name: Activity feed notifications
             href: teams-send-activityfeednotifications.md
+            items:
+              - name: Send activity feed notifications
+                href: teams-send-activityfeednotifications.md
+              - name: Best practices 
+                href: activity-feed-notifications-best-practices.md  
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -701,6 +710,8 @@ items:
                 href: toolkit/customize-components/style.md
               - name: Templating components
                 href: toolkit/customize-components/templates.md
+              - name: Handling events
+                href: toolkit/customize-components/events.md
               - name: Caching Microsoft Graph calls in components
                 href: toolkit/customize-components/cache.md
               - name: Localizing components
