@@ -10,7 +10,7 @@ ms.prod: "search"
 
 Microsoft Graph applications can use the Search API to retrieve the person who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. Person can be local contacts or from an organization’s directory, and person from recent communications. Along with generating this insight, search also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
 
-## Example 1: Search person by name
+## Example: Search person by name
 
 The following request gets the people most relevant to the signed-in user, based on communication and collaboration patterns and business relationships.
 
