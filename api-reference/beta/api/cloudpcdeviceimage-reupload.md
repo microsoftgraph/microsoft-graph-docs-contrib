@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Delete cloudPcDeviceImage
+# Reupload cloudPcDeviceImage
 
 Namespace: microsoft.graph
 
@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_deviceimages_from_virtualendpoint"
+  "name": "reupload_deviceimages_from_virtualendpoint"
 }
 -->
 

@@ -7,7 +7,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "reupload",
                     "ChangeType": "Addition",
-                    "Description": "Added the [reupload](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-beta) method to the [cloudPcDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+                    "Description": "Added the [reupload](https://docs.microsoft.com/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-beta) method to the [cloudPcDeviceImage](https://docs.microsoft.com/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
                     "Target": "cloudPcDeviceImage"
                 }
             ],
