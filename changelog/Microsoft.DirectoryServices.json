@@ -4,7 +4,7 @@
       "ChangeList": [
       { 
         "Id": "e114cd2d-6d20-498d-a61e-623baee7e0f1",
-        "ApiChange": "Resource",
+        "ApiChange": "Method",
         "ChangedApiName": "user",
         "ChangeType": "Addition",
         "Description": "Added the [changePassword](https://docs.microsoft.com/en-us/graph/api/user-changepassword?view=graph-rest-1.0) action to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
@@ -14,7 +14,7 @@
       "Id": "e114cd2d-6d20-498d-a61e-623baee7e0f1",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-06-30T08:55:18.080Z",
+      "CreatedDateTime": "2021-07-07T08:55:18.080Z",
       "WorkloadArea": "User",
       "SubArea": ""
     },
