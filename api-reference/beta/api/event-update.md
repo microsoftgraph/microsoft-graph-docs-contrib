@@ -21,7 +21,7 @@ The default behavior of Update event is to send only to modified attendees if th
 
 **When Distribution List (DL) is part of attendee list**
 
-When a client tries to submit a `PATCH` request to add or remove an attendee from a Distribution List, the service notifies to all attendees.
+When a client tries to submit a `PATCH` request to remove an attendee from a Distribution List, the service notifies to all attendees.
 
 **Online Meetings**
 
