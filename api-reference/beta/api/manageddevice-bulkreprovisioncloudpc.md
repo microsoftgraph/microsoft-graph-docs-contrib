@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Bulk reprovision a set of cloud PC devices with Intune [managed device](../resources/intune-manageddevice.md) IDs.
+Bulk reprovision a set of cloud PC devices with Intune [managed device](../resources/cloudpc.md) IDs.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
