@@ -189,7 +189,7 @@ GET https://graph.microsoft.com/beta/users?$filter=imAddresses/any(s:s eq 'admin
 To negate the result of the expression inside the `any` clause, use the `NOT` operator, not the `ne` operator. For example, the following query retrieves only users who are not assigned the **imAddress** of `admin@contoso.com`.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@m365x435773.onmicrosoft.com')&$count=true
+GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@contoso.com')&$count=true
 ```
 
 The `all` operator applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *all members* of the collection, otherwise it returns `false`. It is not supported by any property.
