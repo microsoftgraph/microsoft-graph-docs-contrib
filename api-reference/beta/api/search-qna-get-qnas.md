@@ -3,7 +3,7 @@ title: "Get qna"
 description: "Read the properties and relationships of a qna object."
 author: "jakeost-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: apiPageType
 ---
 

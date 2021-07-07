@@ -16,15 +16,6 @@ Search answer is a base type for other search answers. Includes properties that 
 
 Inherits from [entity](../resources/entity.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List searchAnswers](../api/searchanswer-list.md)|[microsoft.graph.search.searchAnswer](../resources/searchanswer.md) collection|Get a list of the [searchAnswer](../resources/searchanswer.md) objects and their properties.|
-|[Create searchAnswer](../api/searchanswer-create.md)|[microsoft.graph.search.searchAnswer](../resources/searchanswer.md)|Create a new [searchAnswer](../resources/searchanswer.md) object.|
-|[Get searchAnswer](../api/searchanswer-get.md)|[microsoft.graph.search.searchAnswer](../resources/searchanswer.md)|Read the properties and relationships of a [searchAnswer](../resources/searchanswer.md) object.|
-|[Update searchAnswer](../api/searchanswer-update.md)|[microsoft.graph.search.searchAnswer](../resources/searchanswer.md)|Update the properties of a [searchAnswer](../resources/searchanswer.md) object.|
-|[Delete searchAnswer](../api/searchanswer-delete.md)|None|Deletes a [searchAnswer](../resources/searchanswer.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
