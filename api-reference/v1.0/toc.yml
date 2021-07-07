@@ -28,6 +28,11 @@ items:
       href: /graph/paging?context=graph/api/1.0
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/1.0
+      items:
+      - name: Use the search query parameter
+        href: /graph/search-query-parameter?context=graph/api/1.0
+      - name: Advanced query capabilities
+        href: /graph/aad-advanced-queries?context=graph/api/1.0
     - name: Batching
       displayName: Batch requests
       href: /graph/json-batching?context=graph/api/1.0
@@ -4996,15 +5001,15 @@ items:
               href: api/adminconsentrequestpolicy-get.md
             - name: Update
               href: api/adminconsentrequestpolicy-update.md
-            - name: App consent requests
-              href: resources/appconsentrequest.md
-              items:
-              - name: List
-                href: api/appconsentrequest-list.md
-              - name: Get
-                href: api/appconsentrequest-get.md
-              - name: Filter by current user
-                href: api/appconsentrequest-filterByCurrentUser.md
+          - name: App consent requests
+            href: resources/appconsentrequest.md
+            items:
+            - name: List
+              href: api/appconsentrequest-list.md
+            - name: Get
+              href: api/appconsentrequest-get.md
+            - name: Filter by current user
+              href: api/appconsentrequest-filterByCurrentUser.md
           - name: User consent requests
             href: resources/userconsentrequest.md
             items:
