@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides details about the Azure Private Link associated with a sign-in event. For more information on Private Link, see https://docs.microsoft.com/en-us/azure/private-link/private-link-overview. 
+Provides details about the Azure Private Link associated with a sign-in event. For more information on Azure Private Link, see [What is Azure Private Link?](/azure/private-link/private-link-overview) 
 
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|policyId|String|The unique identifier for the Private Link policy ID. |
+|policyId|String|The unique identifier for the Private Link policy. |
 |policyName|String|The name of the Private Link policy in Azure AD. |
 |policyTenantId|String|The tenant identifier of the Azure AD tenant the Private Link policy belongs to.|
 |resourceId|String|The Azure Resource Manager (ARM) path for the Private Link policy resource.|
