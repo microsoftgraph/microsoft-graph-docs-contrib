@@ -32,7 +32,7 @@ POST /me/changePassword
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-type  | application/json. Required.  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -44,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 The following example shows a request to update your own password.
@@ -66,7 +66,7 @@ Content-type: application/json
 ```
 
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true
