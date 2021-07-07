@@ -11,19 +11,19 @@ ms.prod: "applications"
 Administrators who want to limit app access to specific mailboxes can create an application access policy by using the **New-ApplicationAccessPolicy** PowerShell cmdlet. This article covers the basic steps to configure access control. These steps are specific to Exchange Online resources and do not apply to other Microsoft Graph workloads. 
 
 ## Background
-Some apps call Microsoft Graph using their own identity and not on behalf of a user. These are usually background services or daemon apps that run on a server without the presence of a signed-in user. These apps make use of [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to authenticate and are configured with application permissions, which by default enable such apps to access _all_ mailboxes in a organization on Exchange Online. For example, the Mail.Read application permission allows apps to read mail in all mailboxes without a signed-in user. 
+Some apps call Microsoft Graph using their own identity and not on behalf of a user. These are usually background services or daemon apps that run on a server without the presence of a signed-in user. These apps make use of [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to authenticate and are configured with application permissions, which by default enable such apps to access _all_ mailboxes in a organization on Exchange Online. For example, the `Mail.Read` application permission allows apps to read mail in all mailboxes without a signed-in user. 
 
 There are scenarios where administrators may want to limit an app from accessing _all_ mailboxes in the organization. By creating an application access policy for the organization, administrators can limit third-party app access to only a specific set Exchange Online mailboxes. 
 
 > [!NOTE]
 > Once an application access policy is configured for an organization, it applies to any app that uses Microsoft Graph API or Exchange Web Services to access Exchange Online mailboxes.
 
-As further described in the [Supported permissions and additional resources](#supported-permissions-and-additional-resources) section below, application access policy restricts mailbox access for apps that have been granted any of the listed Microsoft Graph or Exchange Web Services permission scopes.
+As further described in the [Supported permissions and additional resources](#supported-permissions-and-additional-resources) section below, application access policy restricts mailbox access for apps that have been granted any of the Microsoft Graph or Exchange Web Services permission scopes that the policy supports.
 
 ## Configure ApplicationAccessPolicy
 
 To configure an application access policy and limit the scope of application permissions:
-1.	Connect to Exchange Online PowerShell. For details, see [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1.	Connect to Exchange Online PowerShell. For details, see [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
 2.	Identify the app’s client ID and a mail-enabled security group to restrict the app’s access to.
 
@@ -62,7 +62,7 @@ Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access
 
 The same control applies to an app that has been granted the Exchange Web Services permission scope `full_access_as_app`.
 
-For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/exchange/new-applicationaccesspolicy?view=exchange-ps). 
+For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/exchange/new-applicationaccesspolicy?view=exchange-ps&preserve-view=true). 
 
 ## Handling API errors
 You might encounter the following error when an API call is denied access due to a configured application access policy. 
