@@ -88,7 +88,7 @@ When searching the **message** entity, specifying **enableTopResults** as `true`
 
 ## Get selected properties
 
-When searching an entity type, such as **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, **person** you can include in the **fields** property specific entity properties to return in the search results. This is similar to using the [OData system query option, $select](/graph/query-parameters#select-parameter) in REST requests. The search API does not technically support these query options because the behavior is expressed in the POST body.
+When searching an entity type, such as **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, or **person**, you can include in the **fields** property specific entity properties to return in the search results. This is similar to using the [OData system query option, $select](/graph/query-parameters#select-parameter) in REST requests. The search API does not technically support these query options because the behavior is expressed in the POST body.
 
 For all these entity types, specifying the **fields** property reduces the number of properties returned in the response, optimizing the payload over the wire.
 
@@ -174,9 +174,9 @@ Any combinations involving **message**, **event**, **person**, SharePoint and On
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **message**, **event**, **person** or  **externalItem**.
+- The search API does not support custom sort for **message**, **event**, **person**, or **externalItem**.
 
-- The search API does not support aggregations for **message**, **event**, **site**, **person** or **drive**.
+- The search API does not support aggregations for **message**, **event**, **site**, **person**, or **drive**.
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
 
@@ -212,7 +212,7 @@ For backward compatibility, the original properties and types are accessible and
   - [Request spelling correction](/graph/search-concept-speller)
   - [Use search display layout](/graph/search-concept-display-layout)
 
-- Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 ## What's new
 
