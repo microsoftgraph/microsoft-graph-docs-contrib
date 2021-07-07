@@ -49,14 +49,16 @@ Looking for the API reference for this service?
 
 - Learn more about [Microsoft Search](/microsoftsearch/).
 - Learn more about a few key use cases:
-  - [Manage connections to index external content](search-index-manage-connections.md)
-  - [Index external content](search-index-manage-items.md)
+  - [Manage connections to index external content](connecting-external-content-manage-connections.md)
+  - [Index external content](connecting-external-content-manage-items.md)
   - [Search Outlook messages](search-concept-messages.md)
   - [Search calendar events](search-concept-events.md)
   - [Search content in Sharepoint and OneDrive](search-concept-files.md)
   - [Search external content](search-concept-custom-types.md) (preview)
   - [Sort search results](search-concept-sort.md) (preview)
   - [Refine search results](search-concept-aggregation.md) (preview)
+  - [Request spelling correction](search-concept-speller.md) (preview)
+  - [Search display layout](search-concept-display-layout.md) (preview)
   
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
