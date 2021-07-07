@@ -3,7 +3,7 @@ title: "Get transitiveReports for orgContact"
 description: "Get the count of transitive reports for an organizational contact."
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
