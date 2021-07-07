@@ -86,6 +86,7 @@ Content-type: application/json
   "descriptionForAdmins": "New scheduled access review",
   "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
   "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },
@@ -161,6 +162,7 @@ Content-type: application/json
     "userPrincipalName": "admin@contoso.com"
   },
   "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },

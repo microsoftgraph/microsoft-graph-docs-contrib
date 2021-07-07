@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
+          "ApiChange": "Action",
+          "ChangedApiName": "setPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the [setPresence](https://docs.microsoft.com/en-us/graph/api/presence-setpresence?view=graph-rest-beta) action.",
+          "Target": "presence"
+        },
+        {
+          "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
+          "ApiChange": "Action",
+          "ChangedApiName": "clearPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearPresence](https://docs.microsoft.com/en-us/graph/api/presence-clearpresence?view=graph-rest-beta) action.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-23T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
           "ApiChange": "Resource",
           "ChangedApiName": "allowAttendeeToEnableMic",
