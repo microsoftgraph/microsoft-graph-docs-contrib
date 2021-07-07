@@ -1,6 +1,6 @@
 ---
 title: "teamJoiningDisabledEventMessageDetail resource type"
-description: "Represents details for team joining disabled event message."
+description: "Represents the details of an event message about team joining disabled."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details for team joining disabled event message.
+Represents the details of an event message about team joining disabled.
 This message is generated when joining is disabled for a team.
 
 
@@ -29,7 +29,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamJoiningDisabledEventMessageDetail",
-  "baseType": "microsoft.graph.eventmessagedetail"
+  "baseType": "microsoft.graph.eventMessageDetail"
 }
 -->
 ``` json
@@ -45,4 +45,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 - [Example response](/graph/system-messages/#22-team-joining-disabled)
-- For more information about other types of events, see [System Messages](/graph/system-messages)
+- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

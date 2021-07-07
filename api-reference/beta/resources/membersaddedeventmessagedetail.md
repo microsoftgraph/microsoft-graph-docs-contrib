@@ -1,6 +1,6 @@
 ---
 title: "membersAddedEventMessageDetail resource type"
-description: "Represents details for members added event message."
+description: "Represents the details of an event message about members added."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details for members added event message.
+Represents the details of an event message about members added.
 This message is generated when members are added to a chat, a channel, or a team.
 
 
@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.membersAddedEventMessageDetail",
-  "baseType": "microsoft.graph.eventmessagedetail"
+  "baseType": "microsoft.graph.eventMessageDetail"
 }
 -->
 ``` json
@@ -50,4 +50,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 - [Example response](/graph/system-messages/#14-members-added)
-- For more information about other types of events, see [System Messages](/graph/system-messages)
+- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

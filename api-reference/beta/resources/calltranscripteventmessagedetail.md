@@ -1,6 +1,6 @@
 ---
 title: "callTranscriptEventMessageDetail resource type"
-description: "Represents details for call transcript event message."
+description: "Represents the details of an event message about call transcript."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details for call transcript event message.
+Represents the details of an event message about call transcript.
 This message is generated when transcript is available for a call.
 
 
@@ -31,7 +31,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.callTranscriptEventMessageDetail",
-  "baseType": "microsoft.graph.eventmessagedetail"
+  "baseType": "microsoft.graph.eventMessageDetail"
 }
 -->
 ``` json
@@ -48,4 +48,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 - [Example response](/graph/system-messages/#4-call-transcript)
-- For more information about other types of events, see [System Messages](/graph/system-messages)
+- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

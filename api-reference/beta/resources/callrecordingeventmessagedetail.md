@@ -1,6 +1,6 @@
 ---
 title: "callRecordingEventMessageDetail resource type"
-description: "Represents details for call recording event message."
+description: "Represents the details of an event message about call recording."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details for call recording event message.
+Represents the details of an event message about call recording.
 This message is generated when a call recording is started.
 
 
@@ -25,7 +25,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |callId|String|Unique identifier of the call.|
 |callRecordingDisplayName|String|Display name for the call recording.|
 |callRecordingDuration|Duration|Duration of the call recording.|
-|callRecordingStatus|callRecordingStatus|Status of the call recording. Possible values are: `success`, `failure`, `initial`, `chunkFinished`.|
+|callRecordingStatus|callRecordingStatus|Status of the call recording. Possible values are: `success`, `failure`, `initial`, `chunkFinished`, `unknownFutureValue`.|
 |callRecordingUrl|String|Call recording URL.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |meetingOrganizer|[identitySet](../resources/identityset.md)|Organizer of the meeting.|
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.callRecordingEventMessageDetail",
-  "baseType": "microsoft.graph.eventmessagedetail"
+  "baseType": "microsoft.graph.eventMessageDetail"
 }
 -->
 ``` json
@@ -58,5 +58,5 @@ The following is a JSON representation of the resource.
 
 ## See also
 - [Example response](/graph/system-messages/#2-call-recording)
-- For more information about other types of events, see [System Messages](/graph/system-messages)
+- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)
 

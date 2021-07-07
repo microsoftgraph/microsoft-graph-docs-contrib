@@ -1,6 +1,6 @@
 ---
 title: "teamUnarchivedEventMessageDetail resource type"
-description: "Represents details for team unarchived event message."
+description: "Represents the details of an event message about team unarchived."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details for team unarchived event message.
+Represents the details of an event message about team unarchived.
 This message is generated when a team is unarchived.
 
 
@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamUnarchivedEventMessageDetail",
-  "baseType": "microsoft.graph.eventmessagedetail"
+  "baseType": "microsoft.graph.eventMessageDetail"
 }
 -->
 ``` json
@@ -46,4 +46,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 - [Example response](/graph/system-messages/#28-team-unarchived)
-- For more information about other types of events, see [System Messages](/graph/system-messages)
+- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

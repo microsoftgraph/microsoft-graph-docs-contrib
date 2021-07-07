@@ -1,6 +1,6 @@
 ---
 title: "channelSetAsFavoriteByDefaultEventMessageDetail resource type"
-description: "Represents details for channel set as favorite by default event. "
+description: "Represents the details of an event message about channel set as favorite by default."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details of a channel for which 'favorite by default' flag has been set. 
+Represents the details of a channel for which 'favorite by default' flag has been set. 
 When the flag is set for a specific channel, it will be visible to all team members by default in the channel list under a team.
 
 
@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.channelSetAsFavoriteByDefaultEventMessageDetail",
-  "baseType": "microsoft.graph.eventmessagedetail"
+  "baseType": "microsoft.graph.eventMessageDetail"
 }
 -->
 ``` json
@@ -46,4 +46,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 - [Example response](/graph/system-messages/#9-channel-set-as-favorite-by-default)
-- For more information about other types of events, see [System Messages](/graph/system-messages)
+- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

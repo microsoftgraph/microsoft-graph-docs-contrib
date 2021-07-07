@@ -1,6 +1,6 @@
 ---
 title: "teamsAppUpgradedEventMessageDetail resource type"
-description: "Represents details for teams app upgraded event message."
+description: "Represents the details of an event message about teams app upgraded."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details for teams app upgraded event message.
+Represents the details of an event message about teams app upgraded.
 This message is generated when a teamsApp is upgraded in a channel, a chat, or a team.
 
 
@@ -31,7 +31,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppUpgradedEventMessageDetail",
-  "baseType": "microsoft.graph.eventmessagedetail"
+  "baseType": "microsoft.graph.eventMessageDetail"
 }
 -->
 ``` json
@@ -48,4 +48,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 - [Example response](/graph/system-messages/#27-teams-app-upgraded)
-- For more information about other types of events, see [System Messages](/graph/system-messages)
+- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

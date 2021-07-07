@@ -1,6 +1,6 @@
 ---
-title: "System messages using Microsoft Graph"
-description: "System messages in Microsoft Graph APIs"
+title: "System messages in Microsoft Teams using Microsoft Graph"
+description: "System messages in Microsoft Graph APIs."
 author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"

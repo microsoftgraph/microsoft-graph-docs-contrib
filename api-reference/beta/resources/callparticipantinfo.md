@@ -1,6 +1,6 @@
 ---
 title: "callParticipantInfo resource type"
-description: "Represents details for a call participant."
+description: "Represents the details for a call participant."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details for a call participant.
+Represents the details for a call participant.
 
 ## Properties
 |Property|Type|Description|

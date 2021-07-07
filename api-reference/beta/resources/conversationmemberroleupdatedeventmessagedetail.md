@@ -1,6 +1,6 @@
 ---
 title: "conversationMemberRoleUpdatedEventMessageDetail resource type"
-description: "Represents details for conversation member role updated event."
+description: "Represents the details of an event message about conversation member role updated."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details for conversation member role updated event.
+Represents the details of an event message about conversation member role updated.
 This message is generated when the role of a member in a channel or a team has been updated.
 
 
@@ -31,7 +31,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.conversationMemberRoleUpdatedEventMessageDetail",
-  "baseType": "microsoft.graph.eventmessagedetail"
+  "baseType": "microsoft.graph.eventMessageDetail"
 }
 -->
 ``` json
@@ -52,4 +52,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 - [Example response](/graph/system-messages/#12-conversation-member-role-updated)
-- For more information about other types of events, see [System Messages](/graph/system-messages)
+- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)
