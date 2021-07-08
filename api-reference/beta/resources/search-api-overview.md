@@ -36,6 +36,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
 |[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
+|[Search display layout](#search-display-layout) (preview)| **resultTemplateOptions**
 
 ## Scope search based on entity types
 
@@ -147,6 +148,14 @@ In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&
 
 For examples that show how to use spelling corrections, see [Request spelling correction](/graph/search-concept-speller).
 
+## Search display layout
+
+The search API allows you to render search results from [connectors](/microsoftsearch/connectors-overview), by using the display layout or result template configured by the IT admin for each connector. The result templates are [Adaptive Cards](https://adaptivecards.io/), which are a semantically meaningful combination of layout and data.
+
+To get the result template in the [searchresponse](searchresponse.md), you have to set **true** the **enableResultTemplate** property, defined in the [resultTemplateOptions](./resulttemplateoption.md), in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [search hit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is included in the response.
+
+See [Use search display layout](/graph/search-concept-display-layout) for examples. 
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
@@ -187,6 +196,7 @@ For backward compatibility, the original properties and types are accessible and
 | [searchHit](./searchhit.md)        | Remove property | **_sortField** | Not applicable |
 | [searchHit](./searchhit.md)        | Rename property | **_source** | **resource** |
 | [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
+| [entityTypes](./enums.md)          | Rename enum value | **unknownfuturevalue**  | **unknownFutureValue**  |
 
 ## See also
 
@@ -198,6 +208,7 @@ For backward compatibility, the original properties and types are accessible and
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
   - [Request spelling correction](/graph/search-concept-speller)
+  - [Use search display layout](/graph/search-concept-display-layout)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

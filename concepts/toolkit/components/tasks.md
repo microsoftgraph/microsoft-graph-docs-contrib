@@ -114,12 +114,15 @@ mgt-tasks {
 ````
 
 ## Events
+
 | Event | Detail | Description |
 | --- | --- | --- |
-| taskAdded | The detail contains the respective `task` object | Fires when a new task has been created. |
-| taskChanged | The detail contains the respective `task` object | Fires when task metadata has been changed, such as marking completed. |
-| taskClick | The detail contains the respective `task` object | Fires when the user clicks or taps on a task. |
-| taskRemoved | The detail contains the respective `task` object | Fires when an existing task has been deleted. |
+| `taskAdded` | The detail contains the respective `task` object | Fires when a new task has been created. |
+| `taskChanged` | The detail contains the respective `task` object | Fires when task metadata has been changed, such as marking completed. |
+| `taskClick` | The detail contains the respective `task` object | Fires when the user clicks or taps on a task. |
+| `taskRemoved` | The detail contains the respective `task` object | Fires when an existing task has been deleted. |
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
