@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an [emailAuthent
 -->
 
 ```http
-GET /policies/authenticationMethodsPolicy/email
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ### Response

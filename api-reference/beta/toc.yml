@@ -9619,6 +9619,33 @@ items:
         - name: Role management
           href: resources/rolemanagement.md
           items:
+          - name: Role management policy
+            href: resources/unifiedRoleManagementPolicy.md
+            items:
+            - name: List
+              href: api/unifiedrolemanagementpolicy-list.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List effective rules
+              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+          - name: Role management policy assignment
+            href: resources/unifiedRoleManagementPolicyAssignment.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyAssignment-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyAssignment-get.md
+          - name: Role management policy rule
+            href: resources/unifiedRoleManagementPolicyRule.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyRule-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyRule-get.md
+            - name: Update
+              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Role definition
             href: resources/unifiedroledefinition.md
             items:
@@ -10638,8 +10665,6 @@ items:
               href: api/unifiedroleassignmentschedulerequest-get.md
             - name: Create
               href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
-            - name: Update
-              href: api/unifiedroleassignmentschedulerequest-update.md
             - name: Cancel
               href: api/unifiedroleassignmentschedulerequest-cancel.md
             - name: Filter by current user
@@ -10653,8 +10678,6 @@ items:
               href: api/unifiedroleeligibilityschedulerequest-get.md
             - name: Create
               href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
-            - name: Update
-              href: api/unifiedroleeligibilityschedulerequest-update.md
             - name: Cancel
               href: api/unifiedroleeligibilityschedulerequest-cancel.md
             - name: Filter by current user
@@ -11238,33 +11261,6 @@ items:
                   href: api/permissiongrantpolicy-post-excludes.md
                 - name: Delete from excludes
                   href: api/permissiongrantpolicy-delete-excludes.md
-          - name: Role management policy
-            href: resources/unifiedRoleManagementPolicy.md
-            items:
-            - name: List
-              href: api/unifiedrolemanagementpolicy-list.md
-            - name: Get
-              href: api/unifiedrolemanagementpolicy-get.md
-            - name: List effective rules
-              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
-            - name: List rules
-              href: api/unifiedrolemanagementpolicy-list-rules.md
-          - name: Role management policy assignment
-            href: resources/unifiedRoleManagementPolicyAssignment.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyAssignment-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyAssignment-get.md
-          - name: Role management policy rule
-            href: resources/unifiedRoleManagementPolicyRule.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyRule-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyRule-get.md
-            - name: Update
-              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
