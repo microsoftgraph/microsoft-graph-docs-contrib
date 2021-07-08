@@ -1,6 +1,6 @@
 ---
 title: "callEndedEventMessageDetail resource type"
-description: "Represents the details of an event message about call ended ."
+description: "Represents the details of an event message about call ended."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the details of an event message about call ended.
-This message is generated when a call has ended.
+This message is generated when a call ends.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

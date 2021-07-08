@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the details of an event message about call recording.
-This message is generated when a call recording is started.
+This message is generated when a call recording starts.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

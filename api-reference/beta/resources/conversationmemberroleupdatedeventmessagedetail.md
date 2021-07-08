@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the details of an event message about conversation member role updated.
-This message is generated when the role of a member in a channel or a team has been updated.
+This message is generated when the role of a member in a channel or a team is updated.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

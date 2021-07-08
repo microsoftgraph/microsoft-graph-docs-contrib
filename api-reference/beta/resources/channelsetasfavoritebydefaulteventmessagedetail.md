@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of a channel for which 'favorite by default' flag has been set. 
-When the flag is set for a specific channel, it will be visible to all team members by default in the channel list under a team.
+Represents the details of an event message about a channel that the flag 'isFavoriteByDefault' is set.
+A channel is visible to all team members in the list of channels under a team if it has the flag 'isFavoriteByDefault' set to true.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

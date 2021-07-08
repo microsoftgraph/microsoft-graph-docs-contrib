@@ -1,6 +1,6 @@
 ---
 title: "teamsAppUpgradedEventMessageDetail resource type"
-description: "Represents the details of an event message about teams app upgraded."
+description: "Represents the details of an event message about teamsApp upgraded."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about teams app upgraded.
+Represents the details of an event message about teamsApp upgraded.
 This message is generated when a teamsApp is upgraded in a channel, a chat, or a team.
 
 

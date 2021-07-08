@@ -1,6 +1,6 @@
 ---
 title: "teamsAppRemovedEventMessageDetail resource type"
-description: "Represents the details of an event message about teams app removed."
+description: "Represents the details of an event message about teamsApp removed."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about teams app removed.
+Represents the details of an event message about teamsApp removed.
 This message is generated when a teamsApp is removed from a channel, a chat, or a team.
 
 

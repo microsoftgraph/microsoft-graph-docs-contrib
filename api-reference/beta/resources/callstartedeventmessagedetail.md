@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the details of an event message about call started.
-This message is generated when a call has started.
+This message is generated when a call starts.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

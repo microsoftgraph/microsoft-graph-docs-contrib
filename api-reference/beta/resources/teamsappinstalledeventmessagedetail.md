@@ -1,6 +1,6 @@
 ---
 title: "teamsAppInstalledEventMessageDetail resource type"
-description: "Represents the details of an event message about teams app installed."
+description: "Represents the details of an event message about teamsApp installed."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about teams app installed.
+Represents the details of an event message about teamsApp installed.
 This message is generated when a teamsApp is installed in a channel, a chat, or a team.
 
 

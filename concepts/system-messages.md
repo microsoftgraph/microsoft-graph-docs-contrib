@@ -1,6 +1,6 @@
 ---
 title: "System messages in Microsoft Teams using Microsoft Graph"
-description: "System messages in Microsoft Graph APIs."
+description: "Learn how Microsoft Teams generates system messages for events using Microsoft Graph APIs."
 author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -9,14 +9,14 @@ ms.custom: scenarios:getting-started
 
 # System messages in Microsoft Teams using Microsoft Graph
 
-Microsoft Teams generates system messages for events such as members added to a chat, team name updated, channel description updated which enable the caller to have insights about events that happened in a team, a channel, or a chat.
+Microsoft Teams generates system messages for events such as members added to a chat, team name updated, and channel description updated. System messages enable the caller to have insights about events that happened in a team, a channel, or a chat.
 
 
 Microsoft Graph exposes system messages as part of [Chat Message](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) GET operations and [Change Notifications for Chat and Channel messages](teams-changenotifications-chatmessage.md).
 
 
-System messages are represented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) resource.
-The `messageType` will be set to `systemEventMessage` for such messages and `eventDetail` property would provide the event details.
+System messages are presented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) objects.
+In this case, the `messageType` is set to `systemEventMessage` and the `eventDetail` property provides the event details.
 
 
 ### Supported GET operations
@@ -75,7 +75,7 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 
 ## Example JSON response
 
-Below is the list of supported types with the example JSON response.
+The following list shows the supported event types with corresponding examples of JSON responses.
 
 ### 1. Call ended
 

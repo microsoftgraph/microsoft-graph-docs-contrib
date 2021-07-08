@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of a channel for which 'favorite by default' flag has been unset. 
-When the flag is unset for a specific channel, it will no longer be visible to all team members by default in the channel list under a team.
+Represents the details of an event message about a channel that the flag 'isFavoriteByDefault' is unset.
+A channel is no longer visible to all team members in the list of channels under a team if it has the flag 'isFavoriteByDefault' set to false.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
