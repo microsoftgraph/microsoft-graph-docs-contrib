@@ -32,8 +32,8 @@
 | displayName                                          | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
 | employeeHireDate                                     | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |                      |
 | employeeId                                           | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] |                      | ![Default.][default] | ![Advanced.][AQP]    |
-| employeeOrgData/costCentre                           | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | `                    |                      |                      |
-| employeeOrgData/division                             | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | `                    |                      |                      |
+| employeeOrgData/costCentre                           | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |                      |                      |
+| employeeOrgData/division                             | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |                      |                      |
 | employeeType                                         | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |
 | expirationDateTime                                   | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |                      |
 | externalUserState                                    | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      |                      |                      |                      |
@@ -98,6 +98,3 @@
 | usageLocation                                        | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
 | userPrincipalName                                    | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] |                      |
 | userType                                             | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      | ![Advanced.][AQP]    |
-
-[AQP]: /graph/images/advanced-query-parameters/advanced.png
-[default]: /graph/images/advanced-query-parameters/default.png
