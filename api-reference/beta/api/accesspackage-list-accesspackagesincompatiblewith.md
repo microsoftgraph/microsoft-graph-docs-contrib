@@ -1,6 +1,6 @@
 ---
 title: "List accessPackagesIncompatibleWith"
-description: "Retrieve a list of accesspackages which have indicated that their  access rights are incompatible with a specific access package."
+description: "Retrieve a list of accesspackages which have indicated that their access rights are incompatible with a specific access package."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackage/{id}/accessPackagesI
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the OData query parameters for server-side paging through a large response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,7 +57,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackagesincompatiblewith"
@@ -66,7 +65,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackagesIncompatibleWith
 ```
----
 
 
 ### Response

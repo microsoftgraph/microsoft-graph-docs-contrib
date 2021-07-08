@@ -8,7 +8,7 @@
               "ChangedApiName": "incompatibleAccessPackages",
               "ChangeType": "Addition",
               "Description": "Added the **incompatibleAccessPackages** navigation property to the [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta) resource.",
-              "Target": "accesspackage"
+              "Target": "accessPackage"
           },
            {
               "Id": "19abfcc5-26d8-4b09-a8b7-14b3d575bc0d",
@@ -16,7 +16,7 @@
               "ChangedApiName": "accessPackagesIncompatibleWith",
               "ChangeType": "Addition",
               "Description": "Added the **accessPackagesIncompatibleWith** navigation property to the [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta) resource.",
-              "Target": "accesspackage"
+              "Target": "accessPackage"
           }, 
           {
               "Id": "19abfcc5-26d8-4b09-a8b7-14b3d575bc0d",
@@ -24,7 +24,7 @@
               "ChangedApiName": "incompatibleGroups",
               "ChangeType": "Addition",
               "Description": "Added the **incompatibleGroups** navigation property on [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-beta) resource.",
-              "Target": "accesspackage"
+              "Target": "accessPackage"
           }
       ],
       "Id": "19abfcc5-26d8-4b09-a8b7-14b3d575bc0d",

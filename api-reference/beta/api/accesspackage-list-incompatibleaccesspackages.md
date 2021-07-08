@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleAcc
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the OData query parameters for server-side paging through a large response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
