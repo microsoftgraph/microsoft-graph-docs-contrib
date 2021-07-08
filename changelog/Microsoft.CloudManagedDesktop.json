@@ -63,6 +63,24 @@
         {
             "ChangeList":[
                 {
+                    "Id": "51df25fb-7bd4-4f2d-911f-9a3101129a70",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "adJoinCheckComputerObjectAlreadyExists",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `adJoinCheckComputerObjectAlreadyExists` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "51df25fb-7bd4-4f2d-911f-9a3101129a70",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-07T13:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC" 
+        },
+        {
+            "ChangeList": [
+                { 
                     "Id": "3eb4567b-b9c9-4aaa-ab77-8cf0e22408e1",
                     "ApiChange": "Member",
                     "ChangedApiName": "internalServerErrorUnableToRunDscScript",
