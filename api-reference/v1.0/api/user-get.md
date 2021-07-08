@@ -44,7 +44,7 @@ GET /me
 ```
 
 ## Optional query parameters
-This method supports the `$select` [OData Query Parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default.
 
 By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). 
 
