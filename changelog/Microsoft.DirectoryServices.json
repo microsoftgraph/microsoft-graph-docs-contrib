@@ -8063,7 +8063,7 @@
           "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
           "ApiChange": "Resource",
           "ChangedApiName": "b2cIdentityUserFlow",
-          "ChangeType": "change",
+          "ChangeType": "Addition",
           "Description": "Added the [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta) resource relationship to [b2cIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource",
           "Target": "b2cIdentityUserFlow"
         },
