@@ -755,7 +755,6 @@ The following is an example of the request. Refer to [list channels](../api/chan
 
 > Note: `conversationIdentityType` needs to be set to `channel` to @mention a channel.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_atmentionchannel"
@@ -860,7 +859,6 @@ The following is an example of the request.
 
 > Note: `conversationIdentityType` needs to be set to `team` to @mention a team.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_atmentionteam"
@@ -964,7 +962,6 @@ Content-type: application/json
 #### Request
 The following is an example of the request. Refer to [list tag](../api/teamworktag-list.md) for getting list of tags in a team.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_atmentiontag"

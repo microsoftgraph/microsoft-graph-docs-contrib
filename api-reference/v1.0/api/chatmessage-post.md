@@ -753,7 +753,6 @@ The following is an example of the request. Refer to [list channels](../api/chan
 
 > Note: `conversationIdentityType` needs to be set to `channel` to @mention a channel.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_atmentionchannel"
@@ -858,12 +857,14 @@ The following is an example of the request.
 
 > Note: `conversationIdentityType` needs to be set to `team` to @mention a team.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_atmentionteam"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/v1.0/teams/68a3e365-f7d9-4a56-b499-24332a9cc572/channels/19:0b50940236084d258c97b21bd01917b0@thread.skype/messages
+Content-type: application/json
+
 {
     "body": {
         "contentType": "html",
