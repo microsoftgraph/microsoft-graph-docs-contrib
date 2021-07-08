@@ -8077,7 +8077,7 @@
         },
         {
           "Id": "224526a5-09a4-4895-9b8b-40e8984a1111",
-          "ApiChange": "Method",
+          "ApiChange": "Resource",
           "ChangedApiName": "b2cIdentityUserFlow",
           "ChangeType": "change",
           "Description": "Deprecated the [identityprovider](https://docs.microsoft.com/en-us/graph/api/resources/identityprovider?view=graph-rest-beta) resource and it's related methods. This resource is replaced by the [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-beta) resource.",
