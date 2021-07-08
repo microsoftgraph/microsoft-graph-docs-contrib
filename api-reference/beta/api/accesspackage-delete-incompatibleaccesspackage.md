@@ -1,6 +1,6 @@
 ---
 title: "Remove incompatibleAccessPackage"
-description: "Remove a link that indicates a access package is incompatible with a specified access package."
+description: "Remove a link that indicates an access package is incompatible with a specified access package."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -89,5 +89,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
