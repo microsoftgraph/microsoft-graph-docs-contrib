@@ -223,9 +223,6 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-## Code sample
+## See also
 
-|**Sample name**|**Description**|**C#**|
-|---------------|---------------|------|
-|Activity feed notification|Bot framework v4 Activity feed sample using Tab.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)|
-
+[Notify Feed App C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)
