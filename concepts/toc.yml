@@ -391,6 +391,8 @@ items:
                 href: search-concept-aggregation.md
               - name: Request spelling correction (preview)
                 href: search-concept-speller.md
+              - name: Search person (preview)
+                href: search-concept-person.md
       - name: Security
         items:
           - name: Overview
