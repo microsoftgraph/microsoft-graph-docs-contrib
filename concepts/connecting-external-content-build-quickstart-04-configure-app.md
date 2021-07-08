@@ -11,6 +11,6 @@
   
     ```dotnetcli
       dotnet user-secrets set appId "YOUR_APP_ID_HERE"
-      dotnet user-secrets set appSecret "YOUR_APP_SECRET_HERE" (#CertificatesAndsecrets))
-      dotnet user-secrets set tenantId "YOUR_TENANT_ID_HERE" 
+      dotnet user-secrets set appSecret "YOUR_APP_SECRET_HERE"
+      dotnet user-secrets set tenantId "YOUR_TENANT_ID_HERE"
     ```
