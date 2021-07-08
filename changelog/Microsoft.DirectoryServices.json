@@ -9,6 +9,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [Software OATH authentication method](https://docs.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta) resource and associated methods to beta",
           "Target": "softwareOathAuthenticationMethod"
+        },
+        {
+          "Id": "2540d603-c73e-48c3-9c90-32435cc7af54",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "softwareOathMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **softwareOathMethods** navigation property to the [authenticationmethod](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta) resource.",
+          "Target": "authenticationmethod"
         }
       ],
       "Id": "a43059f7-af45-4cb5-a279-bf226c45027b",
@@ -451,7 +459,8 @@
         "CreatedDateTime": "2021-03-18T09:02:13.750Z",
         "WorkloadArea": "Applications",
         "SubArea": ""
-=======
+      },
+      {
       "ChangeList": [
         {
           "Id": "3437c554-3f70-11eb-8081-2385ed998336",
