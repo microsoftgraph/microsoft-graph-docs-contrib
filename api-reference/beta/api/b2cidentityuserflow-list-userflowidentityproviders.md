@@ -1,6 +1,6 @@
 ---
 title: "List userflowidentityproviders"
-description: "List all identityProviders in a b2cIdentityUserFlow."
+description: "List all identity providers in a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
