@@ -98,3 +98,8 @@
 | usageLocation                                        | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
 | userPrincipalName                                    | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] |                      |
 | userType                                             | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      | ![Advanced.][AQP]    |
+
+
+
+[AQP]: /graph/images/advanced-query-parameters/advanced.png
+[default]: /graph/images/advanced-query-parameters/default.png
