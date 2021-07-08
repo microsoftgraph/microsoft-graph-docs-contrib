@@ -54,7 +54,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_incompatiblegroup_to_accesspackage"
@@ -66,10 +65,6 @@ Content-type: application/json
 {
     "@odata.id": "https://graph.microsoft.com/beta/groups/c0a74b4d-2694-4d5d-a964-1bee4ff0aaf2"
 }
-```
-
----
-
 
 ### Response
 
@@ -93,5 +88,4 @@ HTTP/1.1 204 Created
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
