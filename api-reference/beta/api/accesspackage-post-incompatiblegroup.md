@@ -1,5 +1,5 @@
 ---
-title: "Add incompatibleGroup"
+title: "Add group to incompatibleGroups"
 description: "Add a link to indicate a group is incompatible with a specified access package."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Add group to incompatibleGroup
+# Add group to incompatibleGroups
 
 Namespace: microsoft.graph
 

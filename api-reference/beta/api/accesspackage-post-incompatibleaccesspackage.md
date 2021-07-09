@@ -1,5 +1,5 @@
 ---
-title: "Add incompatibleAccessPackage"
+title: "Add accessPackage to incompatibleAccessPackages"
 description: "Add a link to indicate an access package is incompatible with a specified access package."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Add accessPackage to incompatibleAccessPackage
+# Add accessPackage to incompatibleAccessPackages
 
 Namespace: microsoft.graph
 

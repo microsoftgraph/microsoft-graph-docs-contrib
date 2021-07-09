@@ -1,5 +1,5 @@
 ---
-title: "Remove incompatibleGroup"
+title: "Remove group from incompatibleGroups"
 description: "Remove a link that indicates a group is incompatible with a specified access package."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Remove group from incompatibleGroup
+# Remove group from incompatibleGroups
 
 Namespace: microsoft.graph
 

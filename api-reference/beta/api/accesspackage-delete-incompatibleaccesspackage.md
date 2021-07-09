@@ -1,5 +1,5 @@
 ---
-title: "Remove incompatibleAccessPackage"
+title: "Remove accessPackage from incompatibleAccessPackages"
 description: "Remove a link that indicates an access package is incompatible with a specified access package."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Remove accessPackage from incompatibleAccessPackage
+# Remove accessPackage from incompatibleAccessPackages
 
 Namespace: microsoft.graph
 
