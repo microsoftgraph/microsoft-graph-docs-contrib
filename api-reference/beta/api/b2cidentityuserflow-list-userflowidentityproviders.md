@@ -1,5 +1,5 @@
 ---
-title: "List userflowidentityproviders"
+title: "List a userflowidentityproviders"
 description: "List all identity providers in a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List userflowidentityproviders
+# List a userflowidentityproviders
 
 Namespace: microsoft.graph
 
@@ -93,16 +93,16 @@ Content-type: application/json
             "clientId": "fe1b1576-adca-4bef-b321-076fde19950b",
             "clientSecret": "******",
             "scope": "openid",
-            "metadataUrl": "https://login.microsoftonline.com/test.onmicrosoft.com/.well-known/openid-configuration",
+            "metadataUrl": "https://login.microsoftonline.com/contoso.com/.well-known/openid-configuration",
             "domainHint": "",
             "responseType": "code",
             "responseMode": "form_post",
             "claimsMapping": {
                 "userId": "oid",
-                "displayName": "name",
-                "givenName": "given_name",
-                "surname": "family_name",
-                "email": "unique_email"
+                "displayName": "samuel",
+                "givenName": "samuel",
+                "surname": "emmense",
+                "email": "sam.e@contoso.com"
             }
         },
         {
@@ -110,7 +110,7 @@ Content-type: application/json
             "id": "Apple-Managed-OIDC",
             "displayName": "Sign in with Apple",
             "identityProviderType": "AppleManaged",
-            "clientId": "com.microsoft.aad.b2c.test.client",
+            "clientId": "com.contoso.client",
             "clientSecret": "******"
         },
         {

@@ -1,5 +1,5 @@
 ---
-title: "Delete identityProvider"
+title: "Delete a userflowidentityproviders"
 description: "Delete an identityProvider from a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Delete identityProvider
+# Delete a userflowidentityproviders
 
 Namespace: microsoft.graph
 
@@ -69,8 +69,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_si
 ```
 
 ### Response
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "response",

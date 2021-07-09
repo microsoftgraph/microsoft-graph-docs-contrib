@@ -1,19 +1,19 @@
 ---
-title: "Add identityProvider"
-description: "Add identityProvider to a b2cIdentityUserFlow."
+title: "Add a userFlowIdentityProvider"
+description: "Add an identityProvider to a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Add identityProvider to a b2cIdentityUserFlow
+# Add a userFlowIdentityProvider
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
+Add an identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 The work or school account needs to belong to one of the following roles:
 
 * Global administrator
-* External Identity User Flow administrator
+* External ID user flow administrator
 
 ## HTTP request
 
@@ -47,11 +47,11 @@ PATCH /identity/b2cUserFlows/{userflow-id}/userflowIdentityProviders/$ref
 
 ## Request body
 
-In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityproviderbase.md) you want to add. For more information about identity providers available for user flows, see the [identityProviders](../resources/identityproviderbase.md) API reference.
+In the request body, provide a JSON representation with the `id` of the [identityProvider](../resources/identityproviderbase.md) you want to add. For more information about identity providers available for user flows, see the [identityProviders](../resources/identityproviderbase.md) resource.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with the specific error details.
 
 ## Example
 
@@ -68,7 +68,6 @@ The following is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}"
@@ -76,8 +75,6 @@ Content-length: 30
 ```
 
 ### Response
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "response",

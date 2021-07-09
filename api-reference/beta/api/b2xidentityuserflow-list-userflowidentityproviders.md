@@ -1,5 +1,5 @@
 ---
-title: "List userflowidentityproviders"
+title: "List a userflowidentityproviders"
 description: "List all identityProviders in a b2xIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List userflowidentityproviders
+# List a userflowidentityproviders
 
 Namespace: microsoft.graph
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 The work or school account needs to belong to one of the following roles:
 
 * Global administrator
-* External Identity User Flow administrator
+* External ID user flow administrator
 
 ## HTTP request
 
@@ -71,6 +71,8 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Test/userflowId
 ### Response
 
 The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

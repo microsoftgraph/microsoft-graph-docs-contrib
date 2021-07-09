@@ -1,5 +1,5 @@
 ---
-title: "Delete identityProvider"
+title: "Delete a userFlowIdentityProvider"
 description: "Delete an identityProvider from a b2xIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Delete identityProvider
+# Delete a userFlowIdentityProvider
 
 Namespace: microsoft.graph
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 The work or school account needs to belong to one of the following roles:
 
 * Global administrator
-* External Identity User Flow administrator
+* External ID user flow administrator
 
 ## HTTP request
 
@@ -69,8 +69,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{userflow-id}/user
 ```
 
 ### Response
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "response",
