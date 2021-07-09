@@ -50,7 +50,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 
 ## Examples
 
-### Example 1: Adding group membership as a resource role to an access package
+### Example 1: Add group membership as a resource role to an access package
 
 #### Request
 
@@ -123,7 +123,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Adding a SharePoint Online site role to an access package
+### Example 2: Add a SharePoint Online site role to an access package
 
 #### Request
 
@@ -184,4 +184,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

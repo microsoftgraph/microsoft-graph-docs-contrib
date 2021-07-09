@@ -117,7 +117,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Retrieving the roles of a resource for a SharePoint Online site
+### Example 2: Retrieve the roles of a resource for a SharePoint Online site
 
 #### Request
 
@@ -181,4 +181,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
