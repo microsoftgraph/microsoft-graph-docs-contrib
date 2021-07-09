@@ -10,21 +10,6 @@ localization_priority: Priority
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
-
-## June 2021
-
-
-### Cloud communications
-| **Change type** | **Version**   | **Description**                                                                                              |
-| :-------------- | :------------ | :---------------------------------------                                                                     |
-| Addition        | v1.0          | Added the **participantCapacity** option to [answer](https://docs.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-v1.0) operation.|
-| Addition        | v1.0          | Added the [participantJoiningNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-v1.0) resource type.|
-| Addition        | v1.0          | Added the [participantLeftNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-v1.0) resource type.|
-| Addition        | v1.0          | Added the [participantJoiningResponse](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-v1.0) resource type.|
-| Addition        | v1.0          | Added the [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-v1.0) resource type.|
-| Addition        | v1.0          | Added the [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-v1.0) resource type.|
-| Addition        | v1.0          | Added the [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-v1.0) resource type.|
-
 ## March 2021
 
 ### Users
