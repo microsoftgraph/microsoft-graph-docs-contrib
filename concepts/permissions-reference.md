@@ -1499,7 +1499,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:---------- |:-------------- |:----------- |:---------------------- |:----------------- |
 | _PrivilegedAccess.ReadWrite.AzureAD_ |Read and write Privileged Identity Management data for Directory  | Allows the app to have read and write access to Privileged Identity Management APIs for Azure AD. | Yes | No |
-| _PrivilegedAccess.ReadWrite.AzureADGroups_ |Read and write Privileged Identity Management data for privileged access groups | Allows the app to have read and write access to Privileged Identity Management APIs for groups. | Yes | No |
+| _PrivilegedAccess.ReadWrite.AzureADGroup_ |Read and write Privileged Identity Management data for privileged access groups | Allows the app to have read and write access to Privileged Identity Management APIs for groups. | Yes | No |
 | _PrivilegedAccess.ReadWrite.AzureResources_ |Read and write Privileged Identity Management data for Azure Resources | Allows the app to have read and write access to Privileged Identity Management APIs for Azure resources. | Yes | No |
 
 #### Application permissions
@@ -1507,7 +1507,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | Permission | Display String | Description | Admin Consent Required |
 |:---------- |:-------------- |:----------- |:---------------------- |
 | _PrivilegedAccess.Read.AzureAD_ |Read Privileged Identity Management data for Directory  | Allows the app to have read access to Privileged Identity Management APIs for Azure AD. | Yes |
-| _PrivilegedAccess.Read.AzureADGroups_ |Read Privileged Identity Management data for privileged access groups | Allows the app to have read access to Privileged Identity Management APIs for groups. | Yes |
+| _PrivilegedAccess.Read.AzureADGroup_ |Read Privileged Identity Management data for privileged access groups | Allows the app to have read access to Privileged Identity Management APIs for groups. | Yes |
 | _PrivilegedAccess.Read.AzureADResources_ |Read Privileged Identity Management data for Azure resources | Allows the app to have read access to Privileged Identity Management APIs for Azure AD resources. | Yes |
 
 ---
