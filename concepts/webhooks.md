@@ -328,15 +328,15 @@ The following table lists the latency to expect between an event happening in th
 - [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[group]: /graph/api/resources/group?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
-[user]: /graph/api/resources/user?view=graph-rest-1.0
-[alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[contact]: /graph/api/resources/contact
+[conversation]: /graph/api/resources/conversation
+[driveItem]: /graph/api/resources/driveitem
+[event]: /graph/api/resources/event
+[group]: /graph/api/resources/group
+[message]: /graph/api/resources/message
+[user]: /graph/api/resources/user
+[alert]: /graph/api/resources/alert
+[callRecord]: /graph/api/resources/callrecords-callrecord
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
