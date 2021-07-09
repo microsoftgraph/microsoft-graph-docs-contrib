@@ -1,9 +1,9 @@
 ---
 title: "Create externalConnection"
 description: "Create a new externalConnection object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mecampos"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not applicable|
 |Delegated (personal Microsoft account)|Not applicable|
-|Application| ExternalItem.ReadWrite.All|
+|Application| ExternalConnection.ReadWrite.OwnedBy|
 
 ## HTTP request
 
@@ -93,6 +93,7 @@ Content-Type: application/json
   "id": "0a4f4e74-4e74-0a4f-744e-4f0a744e4f0a",
   "name": "String",
   "description": "String",
+  "state": "ready",
   "configuration": {
     "authorizedAppIds": [
       "d310d35d-72ec-47dd-92f2-fb9c40936555"
