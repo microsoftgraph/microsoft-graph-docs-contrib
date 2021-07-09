@@ -4,7 +4,7 @@ description: "Specifies additional application IDs that are allowed to manage th
 localization_priority: Normal
 author: "snlraju-msft"
 ms.author: mecampos
-ms.prod: ""
+ms.service: "mssearch"
 doc_type: "resourcePageType"
 ---
 

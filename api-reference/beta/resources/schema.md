@@ -4,7 +4,7 @@ description: "The connection schema determines how your content added into a con
 localization_priority: Normal
 author: "snlraju-msft"
 ms.author: mecampos
-ms.prod: "search"
+ms.service: "mssearch"
 doc_type: "resourcePageType"
 ---
 

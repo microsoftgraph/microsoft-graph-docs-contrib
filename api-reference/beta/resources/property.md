@@ -4,7 +4,7 @@ description: "A schema property definition for a Microsoft Search connection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.author: mecampos
-ms.prod: ""
+ms.service: "mssearch"
 doc_type: "resourcePageType"
 ---
 

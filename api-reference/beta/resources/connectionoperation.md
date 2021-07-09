@@ -4,7 +4,7 @@ description: "Describes status of an asynchronous request to create a Microsoft 
 localization_priority: Normal
 author: "snlraju-msft"
 ms.author: mecampos
-ms.prod: ""
+ms.service: "mssearch"
 doc_type: "resourcePageType"
 ---
 

@@ -4,7 +4,7 @@ description: "Create a new externalItem."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.author: mecampos
-ms.prod: "search"
+ms.service: "mssearch"
 doc_type: "apiPageType"
 ---
 

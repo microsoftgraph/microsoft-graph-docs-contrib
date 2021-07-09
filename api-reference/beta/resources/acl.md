@@ -4,7 +4,7 @@ description: "An access control entry for an item indexed by a Microsoft Search 
 localization_priority: Normal
 author: "snlraju-msft"
 ms.author: mecampos
-ms.prod: "search"
+ms.service: "mssearch"
 doc_type: "resourcePageType"
 ---
 

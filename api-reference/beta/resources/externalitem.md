@@ -4,7 +4,7 @@ description: "An item added to a Microsoft Graph connection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.author: mecampos
-ms.prod: "search"
+ms.service: "mssearch"
 doc_type: "resourcePageType"
 ---
 
