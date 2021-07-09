@@ -54,7 +54,7 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/connections/{connectionsId}
+DELETE https://graph.microsoft.com/v1.0/connections/contosohr
 ```
 
 
