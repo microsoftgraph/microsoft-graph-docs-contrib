@@ -139,23 +139,12 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 
 | Operator type | Operator |
 | --- | --- |
-| Equality operators | <ul><li> equals `eq` </li><li> not equals `ne`</li></ul><li> Negation `not`</li><li> in `in`</li></ul> |
+| Equality operators | <ul><li> equals `eq` </li><li> not equals `ne`</li><li> Negation `not`</li><li> in `in`</li></ul> |
 | Relational operators | <ul><li> less than `lt` </li><li> greater than `gt`</li><li> less than or equal to `le`</li><li> greater than or equal to `ge`</li></ul> |
+| Lambda operators | <ul><li> any `any` </li><li> all `all`</li></ul>|
 | Conditional operators | <ul><li> and `and` </li><li> or `or`</li> |
 | Functions | <ul><li> Starts with `startsWith` </li><li> Ends with `endsWith`</li><li> Contains `contains`</li></ul>|
 
-
-- equals `eq` / not equals `ne`
-- less than `lt` / greater than `gt`
-- less than or equal to `le` / greater than or equal to `ge`
-- and `and` / or `or`
-- in `in`
-- Negation `not`
-- lambda operator any `any`
-- lambda operator all `all`
-- Starts with `startsWith`
-- Ends with `endsWith` (Only in [advanced queries](/graph/aad-advanced-queries))
-- Contains `contains`
 
 > **Note:** Support for these operators varies by entity and some properties support `$filter` only in [advanced queries](/graph/aad-advanced-queries). See the specific entity documentation for details.
 
