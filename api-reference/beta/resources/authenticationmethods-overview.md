@@ -38,7 +38,7 @@ The authentication method APIs are used to manage a user's authentication method
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|An email address can be user by a user as part of the Self-Service Password Reset (SSPR) process.|See a user's authentication email address. Add, update, or remove an email address to a user.|
 |[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business is a passwordless sign-in method on Windows devices.|See devices where a user has enabled Windows Hello for Business sign-in. Delete a Windows Hello for Business credential.|
 |[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials. | Set a new Temporary Access Pass on a user.|
-|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md)| Allow users to perform multifactor authentication using an application that supporters the OATH specification and provides a one-time code. | Get and delete a software token assigned to a user.|
+|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md)| Allow users to perform multifactor authentication using an application that supports the OATH specification and provides a one-time code. | Get and delete a software token assigned to a user.|
 
 The following authentication methods are not yet supported in Microsoft Graph beta.
 
