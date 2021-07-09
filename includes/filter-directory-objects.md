@@ -23,6 +23,7 @@
 | externalUserStateChangeDateTime | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      |                      |
 | faxNumber                       | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |
 | givenName                       | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
+| groupTypes                      | ![Default.][default] |                   | ![Advanced.][AQP] |                      |                      |                      |                      |                      |
 | id                              | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      |                      |                      |                      |
 | identities                      | ![Default.][default] |                   |                   |                      |                      |                      |                      |                      |
 | imAddresses                     | ![Default.][default] |                   | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] |                      | ![Default.][default] |                      |
