@@ -110,7 +110,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalGroupMember"
+  "@odata.type": "microsoft.graph.externalConnectors.externalGroupMember"
 }
 -->
 
@@ -172,7 +172,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalGroupMember"
+  "@odata.type": "microsoft.graph.externalConnectors.externalGroupMember"
 }
 -->
 
@@ -235,7 +235,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalGroupMember"
+  "@odata.type": "microsoft.graph.externalConnectors.externalGroupMember"
 }
 -->
 

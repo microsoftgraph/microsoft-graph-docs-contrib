@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.property",
+  "@odata.type": "microsoft.graph.externalConnectors.property",
   "baseType": null
 }-->
 

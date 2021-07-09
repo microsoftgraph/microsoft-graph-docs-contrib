@@ -45,14 +45,14 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.connectionOperation",
+  "@odata.type": "microsoft.graph.externalConnectors.connectionOperation",
   "keyProperty": "id"
 }-->
 
 ```json
 {
-  "id": "string (identifier)",
-  "status": "string"
+  "id": "String (identifier)",
+  "status": "String"
 }
 ```
 

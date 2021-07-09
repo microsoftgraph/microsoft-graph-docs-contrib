@@ -58,7 +58,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.externalConnection",
+  "@odata.type": "microsoft.graph.externalConnectors.externalConnection",
   "keyProperty": "id"
 }-->
 

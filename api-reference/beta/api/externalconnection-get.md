@@ -97,7 +97,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalConnection"
+  "@odata.type": "microsoft.graph.externalConnectors.externalConnection"
 } -->
 
 ```http
@@ -109,7 +109,7 @@ Content-type: application/json
   "name": "Contoso HR",
   "description": "Connection to index Contoso HR system",
   "configuration": {
-    "authorizedAppsIds": [
+    "authorizedAppIds": [
       "d310d35d-72ec-47dd-92f2-fb9c40936555"
     ]
   }

@@ -108,7 +108,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalGroup"
+  "@odata.type": "microsoft.graph.externalConnectors.externalGroup"
 }
 -->
 

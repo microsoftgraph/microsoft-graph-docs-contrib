@@ -36,7 +36,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.acl",
+  "@odata.type": "microsoft.graph.externalConnectors.acl",
   "baseType": null
 }-->
 
