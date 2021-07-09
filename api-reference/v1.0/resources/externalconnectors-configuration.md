@@ -1,9 +1,9 @@
 ---
 title: "configuration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a externalConnection."
+author: "mecampos"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.externalConnectors
 
 
 
-**TODO: Add Description**
+Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorizedAppIds|String collection|**TODO: Add Description**|
+|authorizedAppIds|String collection|A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection.|
 
 ## Relationships
 None.
