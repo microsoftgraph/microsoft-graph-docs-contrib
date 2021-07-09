@@ -119,9 +119,11 @@ Content-type: application/json
 
 ### Example 2: Retrieve the roles of a resource for a SharePoint Online site
 
+This is an example of retrieving the roles of a resource, to obtain the **originId** of each role.  This would be used after a SharePoint Online site has been added as a resource to the catalog, as the **originId** of a role is needed to add the role to an access package.
+
 #### Request
 
-The following is an example of the request.
+The following is an example of the request, to retrieve the roles of a particular resource **53c71803-a0a8-4777-aecc-075de8ee3991** which has an **originSystem** of **SharePointOnline** and is located in catalog **beedadfe-01d5-4025-910b-84abb9369997**.
 
 
 <!-- {
@@ -137,7 +139,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 #### Response
 
-The following is an example of the response.
+The following is an example of the response.  The **displayName** is the same as shown in the SharePoint Online view of a site, and the **originId** is the underlying identifier established by SharePoint Online for the role.
 
 > **Note:** The response object shown here might be shortened for readability.
 
