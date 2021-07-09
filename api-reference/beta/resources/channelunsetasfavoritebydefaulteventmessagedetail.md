@@ -1,6 +1,6 @@
 ---
 title: "channelUnsetAsFavoriteByDefaultEventMessageDetail resource type"
-description: "Represents the details of an event message about channel unset as favorite by default."
+description: "Represents the details of an event message about a channel unset as favorite by default."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -45,5 +45,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#10-channel-unset-as-favorite-by-default)
+- [Example response for an event message about a channel unset as favorite by default](/graph/system-messages/#10-channel-unset-as-favorite-by-default)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This abstract type represents system event message details.
+This abstract type represents details of a system event message.
 
 System messages are messages generated for events such as members added to a channel, members added to a chat, and team description updated.
 

@@ -1,6 +1,6 @@
 ---
 title: "meetingPolicyUpdatedEventMessageDetail resource type"
-description: "Represents the details of an event message about meeting policy updated."
+description: "Represents the details of an event message about an updated meeting policy."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about meeting policy updated.
+Represents the details of an event message about an updated meeting policy.
 This message is generated when the meeting option **Allow meeting chat** is updated.
 
 
@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#13-meeting-policy-updated)
+- [Example response for an event message about an updated meeting policy](/graph/system-messages/#13-meeting-policy-updated)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

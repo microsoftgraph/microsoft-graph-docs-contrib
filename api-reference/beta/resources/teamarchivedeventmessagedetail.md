@@ -1,6 +1,6 @@
 ---
 title: "teamArchivedEventMessageDetail resource type"
-description: "Represents the details of an event message about team archived."
+description: "Represents the details of an event message about an archived team."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about team archived.
+Represents the details of an event message about an archived team.
 This message is generated when a team is archived.
 
 
@@ -45,5 +45,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#19-team-archived)
+- [Example response for an event message about an archived team](/graph/system-messages/#19-team-archived)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

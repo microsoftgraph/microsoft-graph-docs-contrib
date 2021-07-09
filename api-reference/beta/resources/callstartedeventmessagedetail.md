@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#3-call-started)
+- [Example response for an event message about call started](/graph/system-messages/#3-call-started)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

@@ -44,5 +44,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#22-team-joining-disabled)
+- [Example response for an event message about team joining disabled](/graph/system-messages/#22-team-joining-disabled)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

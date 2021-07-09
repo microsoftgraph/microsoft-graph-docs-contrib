@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#26-teams-app-removed)
+- [Example response for an event message about teamsApp removed](/graph/system-messages/#26-teams-app-removed)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

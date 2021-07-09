@@ -16,7 +16,7 @@ Microsoft Graph exposes system messages as part of [Chat Message](/graph/api/res
 
 
 System messages are presented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) objects.
-In this case, the `messageType` is set to `systemEventMessage` and the `eventDetail` property provides the event details.
+In this case, the **messageType** property is set to `systemEventMessage` and the **eventDetail** property provides the event details.
 
 
 ### Supported GET operations
@@ -28,7 +28,7 @@ In this case, the `messageType` is set to `systemEventMessage` and the `eventDet
 
 For details, see [Chat Message](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true).
 
-### Supported change notification resource types
+### Supported change notifications
 
 1. Subscribe to messages in a channel - /teams/{team-id}/channels/{channel-id}/messages
 2. Subscribe to messages in a chat - /chats/{chat-id}/messages
@@ -70,7 +70,7 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 | Team unarchived | [teamUnarchivedEventMessageDetail](#28-team-unarchived) | Team |
 
 
-> **Note:** System messages applicable to a team are posted in General channel.
+> **Note:** System messages applicable to a team are posted in the primary channel.
 
 
 ## Example JSON response

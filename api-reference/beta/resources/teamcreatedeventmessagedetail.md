@@ -1,6 +1,6 @@
 ---
 title: "teamCreatedEventMessageDetail resource type"
-description: "Represents the details of an event message about team created."
+description: "Represents the details of an event message about a created team."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about team created.
+Represents the details of an event message about a created team.
 This message is generated when a team is created.
 
 
@@ -49,5 +49,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#20-team-created)
+- [Example response for an event message about a created team](/graph/system-messages/#20-team-created)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

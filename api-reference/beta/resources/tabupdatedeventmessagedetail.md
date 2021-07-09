@@ -1,6 +1,6 @@
 ---
 title: "tabUpdatedEventMessageDetail resource type"
-description: "Represents the details of an event message about tab updated."
+description: "Represents the details of an event message about an updated tab."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about tab updated.
+Represents the details of an event message about an updated tab.
 This message is generated when a tab is updated in a channel or a chat.
 
 
@@ -45,5 +45,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#18-tab-updated)
+- [Example response for an event message about an updated tab](/graph/system-messages/#18-tab-updated)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

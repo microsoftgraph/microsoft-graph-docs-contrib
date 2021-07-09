@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#25-teams-app-installed)
+- [Example response for an event message about teamsApp installed](/graph/system-messages/#25-teams-app-installed)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

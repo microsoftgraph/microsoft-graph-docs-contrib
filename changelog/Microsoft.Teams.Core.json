@@ -3680,7 +3680,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "eventDetail",
           "ChangeType": "Addition",
-          "Description": "Added the **eventDetail** property to [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Description": "Added the **eventDetail** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
           "Target": "chatMessage"
         }
       ],

@@ -1,6 +1,6 @@
 ---
 title: "channelRenamedEventMessageDetail resource type"
-description: "Represents the details of an event message about channel renamed."
+description: "Represents the details of an event message about a renamed channel."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about channel renamed.
+Represents the details of an event message about a renamed channel.
 This message is generated when a channel's name is updated.
 
 
@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#8-channel-renamed)
+- [Example response for an event message about a renamed channel](/graph/system-messages/#8-channel-renamed)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

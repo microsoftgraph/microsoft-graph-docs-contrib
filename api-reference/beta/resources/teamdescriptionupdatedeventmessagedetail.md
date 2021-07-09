@@ -1,6 +1,6 @@
 ---
 title: "teamDescriptionUpdatedEventMessageDetail resource type"
-description: "Represents the details of an event message about team description updated."
+description: "Represents the details of an event message about an updated team description."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about team description updated.
+Represents the details of an event message about an updated team description.
 This message is generated when a team's description is updated.
 
 
@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#21-team-description-updated)
+- [Example response for an event message an updated team description](/graph/system-messages/#21-team-description-updated)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)

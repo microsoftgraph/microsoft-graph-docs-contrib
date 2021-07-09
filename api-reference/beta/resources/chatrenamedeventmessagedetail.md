@@ -1,6 +1,6 @@
 ---
 title: "chatRenamedEventMessageDetail resource type"
-description: "Represents the details of an event message about chat renamed."
+description: "Represents the details of an event message about a renamed chat."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about chat renamed.
+Represents the details of an event message about a renamed chat.
 This message is generated when a group or meeting chat topic is updated.
 
 
@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response](/graph/system-messages/#11-chat-renamed)
+- [Example response for an event message about a renamed chat](/graph/system-messages/#11-chat-renamed)
 - For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)
