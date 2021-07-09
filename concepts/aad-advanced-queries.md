@@ -31,7 +31,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
   "name": "get_users_not_enabled"
 } -->
 ```msgraph-interactive
-https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -195,4 +195,4 @@ Content-type: application/json
 
 - [Use query parameters to customize responses](/graph/query-parameters)
 - [Query parameter limitations](known-issues.md#query-parameter-limitations)
-- [Use the $search query parameter to match a search criterion](/graph/aad-advanced-queries)
+- [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
