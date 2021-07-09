@@ -44,31 +44,21 @@ None.
 
 The following is a JSON representation of the resource.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.externalItem",
-  "keyProperty": "id"
-}-->
-
 ```json
 {
+  "acl": [
+    {
+      "type": "everyone",
+      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
+      "accessType": "grant",
+      "identitySource": "azureActiveDirectory"
+    }
+  ]
   "id": "String (identifier)",
-  "properties": "Object"
+  "properties": "Object",
+  "content": {
+    "value": "String",
+    "type": "text"
+  }
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "externalItem resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: microsoft.graph.externalItem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
-  ]
-}-->
