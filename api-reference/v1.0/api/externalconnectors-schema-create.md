@@ -1,9 +1,9 @@
 ---
 title: "Create schema"
 description: "Create a new schema object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mecampos"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not applicable|
 |Delegated (personal Microsoft account)|Not applicable|
-|Application| ExternalItem.ReadWrite.All|
+|Application| ExternalConnection.ReadWrite.OwnedBy|
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
+POST https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 Content-type: application/json
 Prefer: respond-async
 
@@ -103,5 +103,5 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
+Location: https://graph.microsoft.com/v1.0/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
 ```
