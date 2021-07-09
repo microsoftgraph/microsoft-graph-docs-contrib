@@ -1,9 +1,9 @@
 ---
 title: "Get connectionOperation"
 description: "Read the properties and relationships of a connectionOperation object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mecampos"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [connectionOpe
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/connections/{connectionsId}/operations/{connectionOperationId}
+GET https://graph.microsoft.com/v1.0/connections/contosohr/operations/3ed1595a-4bae-43c2-acda-ef973e581323
 ```
 
 
@@ -74,12 +74,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "4187f93b-f93b-4187-3bf9-87413bf98741",
-    "status": "String",
-    "error": {
-      "@odata.type": "microsoft.graph.publicError"
-    }
+  "id": "3ed1595a-4bae-43c2-acda-ef973e581323",
+  "status": "failed",
+  "error": {
+    "message": "Server error, something went wrong"
   }
 }
 ```
