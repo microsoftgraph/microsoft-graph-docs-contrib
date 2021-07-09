@@ -376,6 +376,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
+<<<<<<< HEAD
     {
       "ChangeList": [
         {
@@ -394,6 +395,8 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
+=======
+>>>>>>> app-auth-method-policies
     {
       "ChangeList": [
         {
