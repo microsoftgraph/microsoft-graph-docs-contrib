@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
+Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Permissions
