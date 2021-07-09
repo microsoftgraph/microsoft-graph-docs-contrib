@@ -170,7 +170,7 @@ This resource supports:
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
-|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a group has been granted for an application. |
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a group has been granted for an application. Supports `$expand`. |
 |calendar|[calendar](calendar.md)|The group's calendar. Read-only.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
@@ -181,12 +181,12 @@ This resource supports:
 |events|[event](event.md) collection|The group's events.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the group. Read-only. Nullable.|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) collection|The collection of lifecycle policies for this group. Read-only. Nullable.|
-|memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
-|members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
+|memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable. Supports `$expand`.|
+|members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable. Supports `$expand`.|
 |membersWithLicenseErrors|[user](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
 |onenote|[onenote](onenote.md)| Read-only.|
-|owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
-|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|The permissions that have been granted for a group to a specific application.|
+|owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable. Supports `$expand`.|
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|The permissions that have been granted for a group to a specific application. Supports `$expand`.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo. |
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
 |planner|[plannerGroup](plannergroup.md)| Selective Planner services available to the group. Read-only. Nullable. |
