@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [externalConn
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/connections/{connectionsId}
+GET https://graph.microsoft.com/v1.0/connections/contosohr
 ```
 
 
