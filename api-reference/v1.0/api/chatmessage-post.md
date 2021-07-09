@@ -749,9 +749,9 @@ Content-type: application/json
 ### Example 7 : @mention a channel in a channel message
 
 #### Request
-The following is an example of the request. Refer to [list channels](../api/channel-list.md) for getting list of channels in a team.
+The following is an example of the request. For information about how to get a list of channels in a team, see [List channels](../api/channel-list.md).
 
-> Note: `conversationIdentityType` needs to be set to `channel` to @mention a channel.
+> Note: **conversationIdentityType** must be set to `channel` to @mention a channel.
 
 <!-- {
   "blockType": "request",
@@ -855,7 +855,7 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-> Note: `conversationIdentityType` needs to be set to `team` to @mention a team.
+> Note: **conversationIdentityType** must be set to `team` to @mention a team.
 
 <!-- {
   "blockType": "request",
