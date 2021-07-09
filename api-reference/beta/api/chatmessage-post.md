@@ -218,6 +218,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -289,7 +293,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Send message containing cards
+### Example 3: Send message that contains cards
 
 #### Request
 The following is an example of the request.

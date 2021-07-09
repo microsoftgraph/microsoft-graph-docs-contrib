@@ -141,48 +141,48 @@
         "CreatedDateTime": "2020-03-01T00:00:00",
         "WorkloadArea": "Search",
         "SubArea": ""
-    },
+    },    
     {
-        "ChangeList": [
-            {
-                "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
-                "ApiChange": "Resource",
-                "ChangedApiName": "Microsoft Search API,querying,indexing",
-                "ChangeType": "Addition",
-                "Description": "Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) and [indexing](https://docs.microsoft.com/en-us/graph/api/resource/indexing-api-overview?view=graph-rest-beta) capabilities.",
-                "Target": "Microsoft Search API,querying,indexing"
-            },
-            {
-                "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
-                "ApiChange": "Resource",
-                "ChangedApiName": "query",
-                "ChangeType": "Addition",
-                "Description": "Added the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) action.",
-                "Target": "query"
-            },
-            {
-                "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
-                "ApiChange": "Resource",
-                "ChangedApiName": "searchRequest,searchQuery,searchQueryString,searchResponse,searchHitsContainer,searchHit",
-                "ChangeType": "Addition",
-                "Description": "Added the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta), [searchQuery](https://docs.microsoft.com/en-us/graph/api/resources/searchquery?view=graph-rest-beta), [searchQueryString](https://docs.microsoft.com/en-us/graph/api/resources/searchquerystring?view=graph-rest-beta),[searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta), [searchHitsContainer](https://docs.microsoft.com/en-us/graph/api/resources/searchhitscontainer?view=graph-rest-beta), and [searchHit](https://docs.microsoft.com/en-us/graph/api/resources/searchhit?view=graph-rest-beta) complex types.",
-                "Target": "searchRequest,searchQuery,searchQueryString,searchResponse,searchHitsContainer,searchHit"
-            },
-            {
-                "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
-                "ApiChange": "Resource",
-                "ChangedApiName": "externalConnection,schema,externalItem,externalFile",
-                "ChangeType": "Addition",
-                "Description": "Added the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnection?view=graph-rest-beta), [schema](https://docs.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-beta), [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-beta), and [externalFile](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) entities, and methods exposed by these entities.",
-                "Target": "externalConnection,schema,externalItem,externalFile"
-            }
-        ],
-        "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2019-11-01T00:00:00",
-        "WorkloadArea": "Search",
-        "SubArea": ""
+      "ChangeList": [
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Microsoft Search API,querying,indexing",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) and [indexing](https://docs.microsoft.com/en-us/graph/api/resource/indexing-api-overview?view=graph-rest-beta) capabilities.",
+          "Target": "Microsoft Search API,querying,indexing"
+        },
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "query",
+          "ChangeType": "Addition",
+          "Description": "Added the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) action.",
+          "Target": "query"
+        },
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchRequest,searchQuery,searchQueryString,searchResponse,searchHitsContainer,searchHit",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta), [searchQuery](https://docs.microsoft.com/en-us/graph/api/resources/searchquery?view=graph-rest-beta), [searchQueryString](https://docs.microsoft.com/en-us/graph/api/resources/searchquerystring?view=graph-rest-beta),[searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta), [searchHitsContainer](https://docs.microsoft.com/en-us/graph/api/resources/searchhitscontainer?view=graph-rest-beta), and [searchHit](https://docs.microsoft.com/en-us/graph/api/resources/searchhit?view=graph-rest-beta) complex types.",
+          "Target": "searchRequest,searchQuery,searchQueryString,searchResponse,searchHitsContainer,searchHit"
+        },
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalConnection,schema,externalItem,externalFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnection?view=graph-rest-beta), [schema](https://docs.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-beta), [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-beta), and [externalFile](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) entities, and methods exposed by these entities.",
+          "Target": "externalConnection,schema,externalItem,externalFile"
+        }
+      ],
+      "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     },
     {
         "ChangeList": [
@@ -195,7 +195,7 @@
                 "Target": "configuration"
             },
             {
-                "Id": "36edbe7c-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "publicError",
                 "ChangeType": "Addition",
@@ -203,7 +203,7 @@
                 "Target": "publicError"
             },
             {
-                "Id": "36f00b32-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "publicInnerError",
                 "ChangeType": "Addition",
@@ -211,7 +211,7 @@
                 "Target": "publicInnerError"
             },
             {
-                "Id": "36f26d60-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "publicErrorDetail",
                 "ChangeType": "Addition",
@@ -219,7 +219,7 @@
                 "Target": "publicErrorDetail"
             },
             {
-                "Id": "36f4d106-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "connectionOperation",
                 "ChangeType": "Addition",
@@ -227,7 +227,7 @@
                 "Target": "connectionOperation"
             },
             {
-                "Id": "36f733b0-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "external",
                 "ChangeType": "Addition",
@@ -235,7 +235,7 @@
                 "Target": "external"
             },
             {
-                "Id": "36f9955d-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "externalConnection",
                 "ChangeType": "Addition",
@@ -243,7 +243,7 @@
                 "Target": "externalConnection"
             },
             {
-                "Id": "36fc0079-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "externalGroup",
                 "ChangeType": "Addition",
@@ -251,7 +251,7 @@
                 "Target": "externalGroup"
             },
             {
-                "Id": "36fe5c27-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "externalGroupMember",
                 "ChangeType": "Addition",
@@ -259,7 +259,7 @@
                 "Target": "externalGroupMember"
             },
             {
-                "Id": "3700bc26-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "externalItem",
                 "ChangeType": "Addition",
@@ -267,7 +267,7 @@
                 "Target": "externalItem"
             },
             {
-                "Id": "37031ea5-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "schema",
                 "ChangeType": "Addition",
@@ -275,7 +275,7 @@
                 "Target": "schema"
             },
             {
-                "Id": "37058292-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "acl",
                 "ChangeType": "Addition",
@@ -283,7 +283,7 @@
                 "Target": "acl"
             },
             {
-                "Id": "3707e3fa-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "configuration",
                 "ChangeType": "Addition",
@@ -291,7 +291,7 @@
                 "Target": "configuration"
             },
             {
-                "Id": "370a4762-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "externalItemContent",
                 "ChangeType": "Addition",
@@ -299,7 +299,7 @@
                 "Target": "externalItemContent"
             },
             {
-                "Id": "370caa15-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "properties",
                 "ChangeType": "Addition",
@@ -307,7 +307,7 @@
                 "Target": "properties"
             },
             {
-                "Id": "370f0a4c-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "property",
                 "ChangeType": "Addition",
@@ -315,7 +315,7 @@
                 "Target": "property"
             },
             {
-                "Id": "37116c54-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "string",
                 "ChangeType": "Addition",
@@ -323,7 +323,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "3713d209-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "int64",
                 "ChangeType": "Addition",
@@ -331,7 +331,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "37163183-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "double",
                 "ChangeType": "Addition",
@@ -339,7 +339,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "3718956f-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "dateTime",
                 "ChangeType": "Addition",
@@ -347,7 +347,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "371af77a-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "boolean",
                 "ChangeType": "Addition",
@@ -355,7 +355,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "371d5847-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "stringCollection",
                 "ChangeType": "Addition",
@@ -363,7 +363,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "371fbccf-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "int64Collection",
                 "ChangeType": "Addition",
@@ -371,7 +371,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "37221f06-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "doubleCollection",
                 "ChangeType": "Addition",
@@ -379,7 +379,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "372480f5-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "dateTimeCollection",
                 "ChangeType": "Addition",
@@ -387,7 +387,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "3726e2ca-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "accessType",
                 "ChangeType": "Addition",
@@ -395,7 +395,7 @@
                 "Target": "accessType"
             },
             {
-                "Id": "372945ec-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "aclType",
                 "ChangeType": "Addition",
@@ -403,7 +403,7 @@
                 "Target": "aclType"
             },
             {
-                "Id": "372ba6bf-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "connectionOperationStatus",
                 "ChangeType": "Addition",
@@ -411,7 +411,7 @@
                 "Target": "connectionOperationStatus"
             },
             {
-                "Id": "372e0878-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "connectionState",
                 "ChangeType": "Addition",
@@ -419,7 +419,7 @@
                 "Target": "connectionState"
             },
             {
-                "Id": "37306b37-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "externalGroupMemberType",
                 "ChangeType": "Addition",
@@ -427,7 +427,7 @@
                 "Target": "externalGroupMemberType"
             },
             {
-                "Id": "3732cf69-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "externalItemContentType",
                 "ChangeType": "Addition",
@@ -435,7 +435,7 @@
                 "Target": "externalItemContentType"
             },
             {
-                "Id": "3735323c-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "identitySourceType",
                 "ChangeType": "Addition",
@@ -443,7 +443,7 @@
                 "Target": "identitySourceType"
             },
             {
-                "Id": "37379412-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "label",
                 "ChangeType": "Addition",
@@ -451,7 +451,7 @@
                 "Target": "label"
             },
             {
-                "Id": "3739f7a0-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "propertyType",
                 "ChangeType": "Addition",
@@ -459,7 +459,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "373c5a76-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Property",
                 "ChangedApiName": "identitySource",
                 "ChangeType": "Change",
@@ -467,7 +467,7 @@
                 "Target": "acl"
             },
             {
-                "Id": "373eb97b-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Property",
                 "ChangedApiName": "isContent",
                 "ChangeType": "Deletion",
@@ -475,7 +475,7 @@
                 "Target": "property"
             },
             {
-                "Id": "37411bf7-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Property",
                 "ChangedApiName": "error",
                 "ChangeType": "Change",
@@ -483,7 +483,7 @@
                 "Target": "connectionOperation"
             },
             {
-                "Id": "37437fe4-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "errorDetail",
                 "ChangeType": "Deletion",
@@ -491,7 +491,7 @@
                 "Target": "errorDetail"
             },
             {
-                "Id": "3745e49a-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Resource",
                 "ChangedApiName": "innerErrorDetail",
                 "ChangeType": "Deletion",
@@ -499,7 +499,7 @@
                 "Target": "innerErrorDetail"
             },
             {
-                "Id": "37484291-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "String",
                 "ChangeType": "Deletion",
@@ -507,7 +507,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "374aa506-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "Int64",
                 "ChangeType": "Deletion",
@@ -515,7 +515,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "374d07b3-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "Double",
                 "ChangeType": "Deletion",
@@ -523,7 +523,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "374f6ace-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "DateTime",
                 "ChangeType": "Deletion",
@@ -531,7 +531,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "3751cd81-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "Boolean",
                 "ChangeType": "Deletion",
@@ -539,7 +539,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "375430dc-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "StringCollection",
                 "ChangeType": "Deletion",
@@ -547,7 +547,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "37569402-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "Int64Collection",
                 "ChangeType": "Deletion",
@@ -555,7 +555,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "3758f579-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "DoubleCollection",
                 "ChangeType": "Deletion",
@@ -563,7 +563,7 @@
                 "Target": "propertyType"
             },
             {
-                "Id": "375b587f-7899-11eb-8d30-85f45032d4a1",
+                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
                 "ApiChange": "Member",
                 "ChangedApiName": "DateTimeCollection",
                 "ChangeType": "Deletion",
@@ -571,12 +571,64 @@
                 "Target": "propertyType"
             }
         ],
-        "Id": "36e8e569-7899-11eb-8d30-85f45032d4a1",
+        "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
         "Cloud": "prd",
         "Version": "beta",
         "CreatedDateTime": "2021-03-01T00:00:00",
         "WorkloadArea": "Search",
         "SubArea": ""
+    },  
+    {
+      "ChangeList": [
+        {
+          "Id": "2bfcc8d6-25a0-4a1f-b135-b71a4462c8d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entityTypes",
+          "ChangeType": "Addition",
+          "Description": "Added a new value `externalItem` to the **entityTypes** property.",
+          "Target": "searchRequest"
+        }
+      ],
+      "Id": "2bfcc8d6-25a0-4a1f-b135-b71a4462c8d4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-06-22T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resultTemplateOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [resultTemplateOptions](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta) resource to enable search display layouts.",
+          "Target": "resultTemplateOptions"
+        },
+        {
+          "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resultTemplates",
+          "ChangeType": "Addition",
+          "Description": "Added the [resultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/searchresultset?view=graph-rest-beta) resource, with the search display layouts schema.",
+          "Target": "resultTemplate"
+        },
+        {
+          "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
+          "ApiChange": "Property",
+          "ChangedApiName": "resultTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **resultTemplateId** property to the [searchHit](https://docs.microsoft.com/en-us/graph/api/resources/searchhit?view=graph-rest-beta) resource.",
+          "Target": "searchHit"
+        }
+      ],
+      "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-29T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
-]
-}                         
+  ]
+}
