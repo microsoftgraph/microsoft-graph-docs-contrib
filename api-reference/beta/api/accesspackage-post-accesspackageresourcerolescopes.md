@@ -123,7 +123,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Adding a SharePoint Online site role to an access package
+### Example 2: Add a SharePoint Online site role to an access package
 
 #### Request
 
