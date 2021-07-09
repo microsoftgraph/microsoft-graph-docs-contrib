@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) for adding a resource role to an access package.  The access package resource, for a group, an app or a SharePoint Online site, must already exist in the access package catalog, and the **originId** for the resource role retrieved from the [list of the resource roles](accesspackagecatalog-list-accesspackageresourceroles.md). Once the resource role scope is added to the access package, any current and subsequent access package assignments to this access package will cause the target user to receive this resource role.
+Create a new [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) for adding a resource role to an access package. The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the **originId** for the resource role retrieved from the [list of the resource roles](accesspackagecatalog-list-accesspackageresourceroles.md). Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
 ## Permissions
 
@@ -184,5 +184,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
