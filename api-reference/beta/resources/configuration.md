@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a [externalConnection](../resources/externalconnection.md).
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## Properties
 
 | Property       | Type              | Description |
