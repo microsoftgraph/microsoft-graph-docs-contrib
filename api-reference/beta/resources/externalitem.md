@@ -59,7 +59,7 @@ The following is a JSON representation of the resource.
       "accessType": "grant",
       "identitySource": "azureActiveDirectory"
     }
-  ]
+  ],
   "id": "String (identifier)",
   "properties": "Object",
   "content": {
@@ -78,6 +78,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: microsoft.graph.externalItem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->

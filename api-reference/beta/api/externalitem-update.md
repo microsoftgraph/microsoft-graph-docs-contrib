@@ -1,5 +1,5 @@
 ---
-title: "Update externalitem"
+title: "Update externalItem"
 description: "Update the properties of an externalitem."
 localization_priority: Normal
 author: "snlraju-msft"
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## HTTP request
 
@@ -136,8 +136,8 @@ Content-type: application/json
   "id": "TSP228082938",
   "acl": [
     {
-      "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
+      "type": "everyone",
+      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
       "identitySource": "azureActiveDirectory"
     }
