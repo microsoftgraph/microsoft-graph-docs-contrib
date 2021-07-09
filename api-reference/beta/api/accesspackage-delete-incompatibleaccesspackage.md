@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Remove incompatibleAccessPackage
+# Remove accessPackage from incompatibleAccessPackage
 
 Namespace: microsoft.graph
 

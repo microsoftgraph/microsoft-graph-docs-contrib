@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Remove incompatibleGroup
+# Remove group from incompatibleGroup
 
 Namespace: microsoft.graph
 

@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Add incompatibleGroup
+# Add group to incompatibleGroup
 
 Namespace: microsoft.graph
 
