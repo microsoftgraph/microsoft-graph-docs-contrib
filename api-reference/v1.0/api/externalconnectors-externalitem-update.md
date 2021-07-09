@@ -1,9 +1,9 @@
 ---
 title: "Update externalItem"
 description: "Update the properties of an externalItem object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mecampos"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not applicable|
 |Delegated (personal Microsoft account)|Not applicable|
-|Application| ExternalItem.ReadWrite.All|
+|Application| ExternalItem.ReadWrite.OwnedBy|
 
 ## HTTP request
 
@@ -70,55 +70,22 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 ## Examples
 
 ### Request
-
-The following is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_externalitem"
-}-->
-
-```http
-PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
-Content-type: application/json  
-
-{
-  "acl": [
-    {
-      "type": "everyone",
-      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-      "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
-    }
-  ]
-}
-``` 
-
-## Examples
-
-### Request
 <!-- {
   "blockType": "request",
   "name": "update_externalitem"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/connections/{connectionsId}/items/{externalItemId}
+PATCH https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938
 Content-Type: application/json
 Content-length: 360
 
 {
-  "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
-  "properties": {
-    "@odata.type": "microsoft.graph.externalConnectors.properties"
-  },
-  "content": {
-    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent"
-  },
   "acl": [
     {
-      "@odata.type": "microsoft.graph.externalConnectors.acl"
+      "type": "everyone",
+      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
+      "accessType": "grant"
     }
   ]
 }
@@ -142,10 +109,9 @@ Content-type: application/json
   "id": "TSP228082938",
   "acl": [
     {
-      "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
-      "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
+      "type": "everyone",
+      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
+      "accessType": "grant"
     }
   ],
   "properties": {
