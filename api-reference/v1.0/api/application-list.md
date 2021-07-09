@@ -40,7 +40,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Name           | Description                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Required.  |
-| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
+| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up to date with recent changes to the object. |
 
 ## Request body
 Do not supply a request body for this method.
