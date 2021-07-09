@@ -1,6 +1,24 @@
 {
     "changelog": [
         {
+            "ChangeList": [
+                {
+                    "Id": "632170da-397c-415a-854d-993e3b1e2349",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "reupload",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [reupload](https://docs.microsoft.com/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-beta) method to the [cloudPcDeviceImage](https://docs.microsoft.com/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDeviceImage"
+                }
+            ],
+            "Id": "632170da-397c-415a-854d-993e3b1e2349",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-098T14:30:43.735Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [{
                 "Id": "3467da3f-b955-11eb-b432-abd44c4c47a3",
                 "ApiChange": "Property",
