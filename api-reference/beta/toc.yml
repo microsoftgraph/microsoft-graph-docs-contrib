@@ -12981,20 +12981,16 @@ items:
             href: resources/externalconnection.md
           - name: List external connections
             href: api/externalconnection-list.md
-          - name: Get external connection
-            href: api/externalconnection-get.md
           - name: Create external connection
             href: api/external-post-connections.md
+          - name: Get external connection
+            href: api/externalconnection-get.md
           - name: Update external connection
             href: api/externalconnection-update.md
           - name: Delete external connection
             href: api/externalconnection-delete.md
-          - name: Create schema
-            href: api/externalconnection-post-schema.md
           - name: Get operation
             href: api/connectionoperation-get.md
-          - name: Create external item
-            href: api/externalconnection-put-items.md
         - name: Schema
           items:
           - name: Schema
