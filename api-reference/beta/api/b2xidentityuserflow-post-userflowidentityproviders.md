@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /b2xUserFlows/B2X_1_Test/userflowIdentityProviders/$ref
+PATCH /identity/b2xUserFlows/{userflow-id}/userflowIdentityProviders/$ref
 ```
 
 ## Request headers

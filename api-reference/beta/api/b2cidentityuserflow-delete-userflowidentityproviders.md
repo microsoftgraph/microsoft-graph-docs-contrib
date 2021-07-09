@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /b2cUserFlows/{userflow-id}/userflowIdentityProviders/{identityProvider-id}/$ref
+DELETE /identity/b2cUserFlows/{userflow-id}/userflowIdentityProviders/{identityProvider-id}/$ref
 ```
 
 ## Request headers
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with the specific error details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 

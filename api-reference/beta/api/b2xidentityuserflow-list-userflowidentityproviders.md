@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /b2xUserFlows/{id}/userflowIdentityProviders
+GET /identity/b2xUserFlows/{userflow-id}/userflowIdentityProviders
 ```
 
 ## Request headers
