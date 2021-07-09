@@ -4,7 +4,7 @@ description: "A connection is a logical container for your external content in M
 localization_priority: Normal
 author: "snlraju-msft"
 ms.author: mecampos
-ms.service: "mssearch"
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 

@@ -4,7 +4,7 @@ description: "Represents a member of an externalGroup used to set permissions on
 author: "snlraju-msft"
 ms.author: mecampos
 localization_priority: Normal
-ms.service: "mssearch"
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 

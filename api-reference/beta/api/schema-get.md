@@ -4,7 +4,7 @@ description: "Retrieve the properties of a schema for an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.author: mecampos
-ms.service: "mssearch"
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 

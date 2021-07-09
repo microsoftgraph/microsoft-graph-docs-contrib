@@ -4,7 +4,7 @@ description: "Update the properties of an externalitem."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.author: mecampos
-ms.service: "mssearch"
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
