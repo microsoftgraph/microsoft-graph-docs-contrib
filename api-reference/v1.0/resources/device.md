@@ -63,7 +63,7 @@ This resource lets you add your own data to custom properties using [extensions]
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable. Supports `$expand`. |
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups that this device is a member of. Read-only. Nullable. Supports `$expand`. |
 |transitiveMemberOf |[directoryObject](directoryobject.md) collection| Groups that the device is a member of. This operation is transitive. Supports `$expand`.  |
 |registeredOwners|[directoryObject](directoryobject.md) collection|The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports `$expand`.  |
