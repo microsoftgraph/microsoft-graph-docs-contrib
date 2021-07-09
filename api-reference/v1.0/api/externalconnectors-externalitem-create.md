@@ -1,9 +1,9 @@
 ---
 title: "Create externalItem"
 description: "Create a new externalItem object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "mecampos"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not applicable|
 |Delegated (personal Microsoft account)|Not applicable|
-|Application| ExternalItem.ReadWrite.All|
+|Application| ExternalItem.ReadWrite.OwnedBy|
 
 ## HTTP request
 
@@ -88,7 +88,7 @@ If successful, this method returns `200 OK` response code.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+PUT https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938
 Content-type: application/json
 
 {
@@ -96,14 +96,12 @@ Content-type: application/json
     {
       "type": "user",
       "value": "e811976d-83df-4cbd-8b9b-5215b18aa874",
-      "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
+      "accessType": "grant"
     },
     {
-      "type": "group",
+      "type": "externalGroup",
       "value": "14m1b9c38qe647f6a",
-      "accessType": "deny",
-      "identitySource": "external"
+      "accessType": "deny"
     }
   ],
   "properties": {
