@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleGro
 
 ## Optional query parameters
 
-This method supports the OData query parameters for server-side paging through a large response.  For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the OData query parameters for server-side paging through a large response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -64,6 +64,7 @@ The following is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleGroups
+```
 
 ### Response
 
