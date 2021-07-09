@@ -16,8 +16,6 @@ Namespace: microsoft.graph.externalConnectors
 
 Update the properties of an [externalitem](../resources/externalitem.md).
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

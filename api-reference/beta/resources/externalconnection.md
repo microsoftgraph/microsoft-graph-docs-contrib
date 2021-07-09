@@ -16,8 +16,6 @@ Namespace: microsoft.graph.externalConnectors
 
 A logical container to add content from an external source into Microsoft Graph.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## Methods
 
 | Method                                                           | Return Type                                   | Description |

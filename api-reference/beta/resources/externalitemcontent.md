@@ -16,8 +16,6 @@ Namespace: microsoft.graph.externalConnectors
 
 The content of an [externalItem](externalitem.md) indexed via a Microsoft Search [connection](externalconnection.md).
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## Properties
 
 | Property | Type   | Description                                                                                 |
