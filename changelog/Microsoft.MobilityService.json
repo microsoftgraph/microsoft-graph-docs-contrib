@@ -47,7 +47,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobilityManagementPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the **isValid** property to the [mobilityManagementPolicy](/graph/api/mobilityManagementPolicy?view=graph-rest-beta) resource",
+                    "Description": "Added the **isValid** property to the [mobilityManagementPolicy](/graph/api/mobilityManagementPolicy?view=graph-rest-beta) resource.",
                     "Target": "mobilityManagementPolicy"
                 },
                 {
@@ -55,7 +55,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "mobilityManagementPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the [delete mobilityDeviceManagementPolicy](/graph/api/mobiledevicemanagementpolicies-delete?view=graph-rest-beta) method",
+                    "Description": "Added the [delete mobilityDeviceManagementPolicy](/graph/api/mobiledevicemanagementpolicies-delete?view=graph-rest-beta) method.",
                     "Target": "mobileDeviceManagementPolicies"
                 },
                 {
@@ -63,23 +63,23 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "mobilityManagementPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the [delete mobilityAppManagementPolicy](/graph/api/mobileappmanagementpolicies-delete?view=graph-rest-beta) method",
+                    "Description": "Added the [delete mobilityAppManagementPolicy](/graph/api/mobileappmanagementpolicies-delete?view=graph-rest-beta) method.",
                     "Target": "mobileAppManagementPolicies"
                 },
                 {
                     "Id": "9ebdf457-11ea-493d-8dfb-ce12f80664bb",
-                    "ApiChange": "Resource",
+                    "ApiChange": "Permission",
                     "ChangedApiName": "mobileDeviceManagementPolicies",
                     "ChangeType": "Update",
-                    "Description": "Updated permission scopes necessary to call API",
+                    "Description": "Updated the delegated permission scope to use Policy.ReadWrite.MobilityManagement instead of Policy.ReadWrite.All.",
                     "Target": "mobileDeviceManagementPolicies"
                 },
                 {
                     "Id": "9ebdf457-11ea-493d-8dfb-ce12f80664bb",
-                    "ApiChange": "Resource",
+                    "ApiChange": "Permission",
                     "ChangedApiName": "mobileAppManagementPolicies",
                     "ChangeType": "Update",
-                    "Description": "Updated permission scopes necessary to call API",
+                    "Description": "Updated the delegated permission scope to use Policy.ReadWrite.MobilityManagement instead of Policy.ReadWrite.All.",
                     "Target": "mobileAppManagementPolicies"
                 }
             ],
