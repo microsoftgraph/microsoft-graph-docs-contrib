@@ -20,8 +20,8 @@ The [connection](externalconnection.md) schema determines how your external cont
 
 | Method                                                    | Return Type                   | Description |
 |:----------------------------------------------------------|:------------------------------|:--|
-| [Create schema](../api/externalconnection-post-schema.md) | None *or* [schema](schema.md) | Register connection schema. |
-| [Get schema](../api/schema-get.md)                        | [schema](schema.md)           | Read properties of a schema object. |
+| [Create schema](../api/externalconnection-post-schema.md) | None *or* [microsoft.graph.externalConnectors.schema](schema.md) | Register connection schema. |
+| [Get schema](../api/schema-get.md)                        | [microsoft.graph.externalConnectors.schema](schema.md)           | Read properties of a schema object. |
 
 ## Properties
 
@@ -32,7 +32,7 @@ The [connection](externalconnection.md) schema determines how your external cont
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
