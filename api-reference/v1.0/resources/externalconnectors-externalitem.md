@@ -1,9 +1,9 @@
 ---
 title: "externalItem resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "An item added to a Microsoft Graph connection."
+author: "mecampos"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 
@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-
-
-**TODO: Add Description**
+An item added to a Microsoft Graph [connection](externalconnector-externalconnection.md). 
 
 ## Methods
 |Method|Return type|Description|
@@ -27,10 +25,10 @@ Namespace: microsoft.graph.externalConnectors
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|acl|[acl](../resources/externalconnectors-acl.md) collection|**TODO: Add Description**|
-|content|[externalItemContent](../resources/externalconnectors-externalitemcontent.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|properties|[properties](../resources/externalconnectors-properties.md)|**TODO: Add Description**|
+|acl|[acl](../resources/externalconnectors-acl.md) collection|An array of access control entries. Each entry specifies the access granted to a user or group. Required.|
+|content|[externalItemContent](../resources/externalconnectors-externalitemcontent.md)|A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional.|
+|id|String|Developer-provided unique ID of the item within the containing [externalConnection](externalconnectors-externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required.|
+|properties|[properties](../resources/externalconnectors-properties.md)|A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required.|
 
 ## Relationships
 None.
