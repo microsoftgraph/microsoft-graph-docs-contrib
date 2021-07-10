@@ -12973,7 +12973,7 @@ items:
           href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
-      - name: Index (preview)
+      - name: Index
         items:
         - name: Overview
           href: resources/indexing-api-overview.md
@@ -13005,31 +13005,31 @@ items:
           items:
           - name: External item
             href: resources/externalitem.md
-          - name: Create
+          - name: Create external item
             href: api/externalconnection-put-items.md
-          - name: Get
+          - name: Get external item
             href: api/externalitem-get.md
-          - name: Update
+          - name: Update external item
             href: api/externalitem-update.md
-          - name: Delete
+          - name: Delete external item
             href: api/externalitem-delete.md
         - name: External group
           items:
           - name: External group
             href: resources/externalgroup.md
-          - name: Create
+          - name: Create external group
             href: api/externalconnection-post-groups.md
-          - name: Delete
+          - name: Delete external group
             href: api/externalgroup-delete.md
-          - name: Create members
+          - name: Create external group members
             href: api/externalgroup-post-members.md
         - name: External group member
           items:
           - name: External group member
             href: resources/externalgroupmember.md
-          - name: Create
+          - name: Create external group member
             href: api/externalgroup-post-members.md
-          - name: Delete
+          - name: Delete external group member
             href: api/externalgroupmember-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API

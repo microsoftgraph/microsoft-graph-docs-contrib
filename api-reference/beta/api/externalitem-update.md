@@ -54,9 +54,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property   | Type                                  | Description               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content    | [externalItemContent](../resources/externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
-| properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md). |
+| acl        | [microsoft.graph.externalConnectors.acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
+| content    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
+| properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [microsoft.graph.externalConnectors.externalConnection](../resources/externalconnection.md). |
 
 ### Updating the acl collection
 
@@ -68,7 +68,7 @@ If the `properties` property is included in an update request, the existing prop
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [externalItem](../resources/externalitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.externalConnectors.externalItem](../resources/externalitem.md) object in the response body.
 
 ## Examples
 

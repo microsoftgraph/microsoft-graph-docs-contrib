@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property      | Type                                           | Description |
 |:--------------|:-----------------------------------------------|:------------|
-| configuration | [configuration](../resources/configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. |
+| configuration | [microsoft.graph.externalConnectors.configuration](../resources/configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. |
 | description   | String                                         | Description of the connection displayed in the Microsoft 365 admin center. |
 | name          | String                                         | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. |
 
@@ -64,7 +64,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_connection"
+  "name": "update_connection",
+  "@odata.type": "microsoft.graph.externalConnectors.externalConnection"
 }-->
 
 ```http
