@@ -8,7 +8,7 @@ ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# Update externalitem
+# Update externalItem
 
 Namespace: microsoft.graph.externalConnectors
 
@@ -79,7 +79,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_externalitem"
+  "name": "update_externalitem",
+  "@odata.type": "microsoft.graph.externalConnectors.acl"
 }-->
 
 ```http
@@ -125,8 +126,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalConnectors.externalItem",
-  "@odata.type": "microsoft.graph.externalConnectors.content"
+  "@odata.type": "microsoft.graph.externalConnectors.externalItem"
 } -->
 
 ```http
@@ -149,6 +149,7 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
+    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent"
     "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
     "type": "html"
   }
