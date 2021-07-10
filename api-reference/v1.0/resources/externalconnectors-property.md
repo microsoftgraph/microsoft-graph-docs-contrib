@@ -1,9 +1,9 @@
 ---
 title: "property resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A schema property definition for a Microsoft Search connection."
+author: "mecampos"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 
@@ -13,19 +13,19 @@ Namespace: microsoft.graph.externalConnectors
 
 
 
-**TODO: Add Description**
+A [schema](externalconnector-schema.md) property definition for a Microsoft Search [connection](externalconnector-externalconnection.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|aliases|String collection|**TODO: Add Description**|
-|isQueryable|Boolean|**TODO: Add Description**|
-|isRefinable|Boolean|**TODO: Add Description**|
-|isRetrievable|Boolean|**TODO: Add Description**|
-|isSearchable|Boolean|**TODO: Add Description**|
-|labels|label collection|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|type|propertyType|**TODO: Add Description**. Possible values are: `string`, `int64`, `double`, `dateTime`, `boolean`, `stringCollection`, `int64Collection`, `doubleCollection`, `dateTimeCollection`, `unknownFutureValue`.|
+|aliases|String collection|A set of aliases or a friendly names for the property. Maximum 32 characters. Each string must not contain control characters, whitespace, or any of the following: `:`, `;`, `,`, `(`, `)`, `[`, `]`, `{`, `}`, `%`, `$`, `+`, `!`, `*`, `=`, `&`, `?`, `@`, `#`, `\`, `~`, `'`, `"`, `<`, `>`, `|`, `` ` ``, `^`. Optional.|
+|isQueryable|Boolean|Specifies if the property is queryable. Queryable properties can be used in [Keyword Query Language (KQL) queries](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). Optional.|
+|isRefinable|Boolean|Specifies if the property is refinable.  Refinable properties can be used to filter search results in the [Search API](search-api-overview.md) and add a refiner control in the Microsoft Search user experience. Optional.|
+|isRetrievable|Boolean|Specifies if the property is retrievable. Retrievable properties are returned in the result set when items are returned by the search API. Retrievable properties are also available to add to the display template used to render search results. Optional.|
+|isSearchable|Boolean|Specifies if the property is searchable. Only properties of type `String` or `StringCollection` can be searchable. Non-searchable properties are not added to the search index. Optional.|
+|labels|label collection|Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). Supported labels: `title`, `url`, `createdBy`, `lastModifiedBy`, `authors`, `createdDateTime`, `lastModifiedDateTime`, `fileName` and `fileExtension`. Optional.|
+|name|String|The name of the property. Maximum 32 characters. Must not contain control characters, whitespace, or any of the following: `:`, `;`, `,`, `(`, `)`, `[`, `]`, `{`, `}`, `%`, `$`, `+`, `!`, `*`, `=`, `&`, `?`, `@`, `#`, `\`, `~`, `'`, `"`, `<`, `>`, `|`, `` ` ``, `^`. Required.|
+|type|propertyType|The data type of the property. Possible values are: `string`, `int64`, `double`, `dateTime`, `boolean`, `stringCollection`, `int64Collection`, `doubleCollection`, `dateTimeCollection`, `unknownFutureValue`.|
 
 ## Relationships
 None.
