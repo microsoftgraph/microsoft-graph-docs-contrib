@@ -20,7 +20,7 @@ Represents a member of an [externalGroup](externalgroup.md) used to set permissi
 
 | Method                                                              | Return type         | Description                              |
 |:--------------------------------------------------------------------|:--------------------|:-----------------------------------------|
-| [Create externalGroupMember](../api/externalgroup-post-members.md) | [microsoft.graph.externalConnectors.externalGroupMember](../resources/externalgroupmember.md) | Create a new **externalGroupMember** object. |
+| [Create externalGroupMember](../api/externalgroup-post-members.md) | [externalGroupMember](../resources/externalgroupmember.md) | Create a new **externalGroupMember** object. |
 | [Delete externalGroupMember](../api/externalgroupmember-delete.md)  | None                | Delete an **externalGroupMember** object.   |
 
 ## Properties

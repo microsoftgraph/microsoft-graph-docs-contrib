@@ -68,7 +68,7 @@ If the `properties` property is included in an update request, the existing prop
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.externalConnectors.externalItem](../resources/externalitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [externalItem](../resources/externalitem.md) object in the response body.
 
 ## Examples
 
