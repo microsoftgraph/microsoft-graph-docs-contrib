@@ -1,9 +1,9 @@
 ---
 title: "externalItemContent resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "The content of an item indexed via a Microsoft Search connection."
+author: "mecampos"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 
@@ -11,15 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-
-
-**TODO: Add Description**
+The content of an [externalItem](externalconnector-externalitem.md) indexed via a Microsoft Search [connection](externalconnector-externalconnection.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|type|externalItemContentType|**TODO: Add Description**. Possible values are: `text`, `html`, `unknownFutureValue`.|
-|value|String|**TODO: Add Description**|
+|type|externalItemContentType|The type of content in the value property. Possible values are: `text`, `html`, `unknownFutureValue`.|
+|value|String|The content for the externalItem. Required.|
 
 ## Relationships
 None.
