@@ -32,7 +32,7 @@ The [connection](externalconnection.md) schema determines how your external cont
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
