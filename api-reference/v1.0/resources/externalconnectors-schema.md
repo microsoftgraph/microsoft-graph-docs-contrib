@@ -1,9 +1,9 @@
 ---
 title: "schema resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "The connection schema determines how your content added into a connection will be used in various Microsoft Graph experiences."
+author: "mecampos"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 
@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-
-
-**TODO: Add Description**
+The [connection](externalconnection.md) schema determines how your external content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,8 +25,8 @@ Namespace: microsoft.graph.externalConnectors
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|baseType|String|**TODO: Add Description**|
-|properties|[property](../resources/externalconnectors-property.md) collection|**TODO: Add Description**|
+|baseType|String|Must be set to `microsoft.graph.externalConnector.externalItem`. Required.|
+|properties|[property](../resources/externalconnectors-property.md) collection|The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.|
 
 ## Relationships
 None.
