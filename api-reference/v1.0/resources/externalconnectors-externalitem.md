@@ -28,7 +28,7 @@ An item added to a Microsoft Graph [connection](externalconnector-externalconnec
 |acl|[acl](../resources/externalconnectors-acl.md) collection|An array of access control entries. Each entry specifies the access granted to a user or group. Required.|
 |content|[externalItemContent](../resources/externalconnectors-externalitemcontent.md)|A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional.|
 |id|String|Developer-provided unique ID of the item within the containing [externalConnection](externalconnectors-externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required.|
-|properties|[properties](../resources/externalconnectors-properties.md)|A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required.|
+|properties|[properties](../resources/externalconnectors-properties.md)|A property bag with the properties of the item. The properties MUST conform to the [schema](externalconnector-schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required.|
 
 ## Relationships
 None.
