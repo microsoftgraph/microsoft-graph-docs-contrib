@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Delete a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.
 
 > [!NOTE]
-> Note that this is only supported when the policy is no longer valid, that is, if the 'isValid' property is false. This indicates that the service principal associated with the application for this policy has been deleted.
+> This operation is only supported when the policy is no longer valid; that is, when the **isValid** property is false, which indicates that the service principal associated with the application for this policy has been deleted.
 
 ## Permissions
 
