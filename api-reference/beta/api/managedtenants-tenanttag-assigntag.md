@@ -85,21 +85,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
-    "id": "String (identifier)",
-    "displayName": "String",
-    "description": "String",
-    "createdByUserId": "String",
-    "lastActionByUserId": "String",
-    "tenants": [
-      {
-        "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
-      }
-    ],
-    "lastActionDateTime": "String (timestamp)",
-    "createdDateTime": "String (timestamp)",
-    "deletedDateTime": "String (timestamp)"
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
+  "createdByUserId": "String",
+  "lastActionByUserId": "String",
+  "tenants": [
+    {
+      "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
+    }
+  ],
+  "lastActionDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)"
 }
 ```

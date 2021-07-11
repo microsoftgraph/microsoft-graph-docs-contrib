@@ -14165,7 +14165,7 @@ items:
           - name: Assign tenant tag
             href: api/managedtenants-tenanttag-assigntag.md
           - name: Create tenant tag
-            href: api/managedtenants-tenanttag-create.md
+            href: api/managedtenants-managedtenant-post-tenanttags.md
           - name: Delete tenant tag
             href: api/managedtenants-tenanttag-delete.md
           - name: Get tenant tag
