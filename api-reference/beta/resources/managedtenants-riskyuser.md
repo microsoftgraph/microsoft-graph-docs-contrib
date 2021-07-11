@@ -18,7 +18,7 @@ Represents an account flagged for risk across each managed tenants.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List riskyUsers](../api/managedtenants-riskyuser-list.md)|[microsoft.graph.managedTenants.riskyUser](../resources/managedtenants-riskyuser.md) collection|Get a list of the [riskyUser](../resources/managedtenants-riskyuser.md) objects and their properties.|
+|[List riskyUsers](../api/managedtenants-managedtenant-list-riskyuser.md)|[microsoft.graph.managedTenants.riskyUser](../resources/managedtenants-riskyuser.md) collection|Get a list of the [riskyUser](../resources/managedtenants-riskyuser.md) objects and their properties.|
 |[Get riskyUser](../api/managedtenants-riskyuser-get.md)|[microsoft.graph.managedTenants.riskyUser](../resources/managedtenants-riskyuser.md)|Read the properties and relationships of a [riskyUser](../resources/managedtenants-riskyuser.md) object.|
 
 ## Properties

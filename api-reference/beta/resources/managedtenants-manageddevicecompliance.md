@@ -18,7 +18,7 @@ Represents the state of device compliance for each managed device belonging to a
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List managedDeviceCompliances](../api/managedtenants-manageddevicecompliance-list.md)|[microsoft.graph.managedTenants.managedDeviceCompliance](../resources/managedtenants-manageddevicecompliance.md) collection|Get a list of the [managedDeviceCompliance](../resources/managedtenants-manageddevicecompliance.md) objects and their properties.|
+|[List managedDeviceCompliances](../api/managedtenants-managedtenant-list-manageddevicecompliance.md)|[microsoft.graph.managedTenants.managedDeviceCompliance](../resources/managedtenants-manageddevicecompliance.md) collection|Get a list of the [managedDeviceCompliance](../resources/managedtenants-manageddevicecompliance.md) objects and their properties.|
 |[Get managedDeviceCompliance](../api/managedtenants-manageddevicecompliance-get.md)|[microsoft.graph.managedTenants.managedDeviceCompliance](../resources/managedtenants-manageddevicecompliance.md)|Read the properties and relationships of a [managedDeviceCompliance](../resources/managedtenants-manageddevicecompliance.md) object.|
 
 ## Properties

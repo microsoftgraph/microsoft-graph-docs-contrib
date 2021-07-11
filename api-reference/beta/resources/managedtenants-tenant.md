@@ -18,7 +18,7 @@ Represents a tenant associated with the managing entity.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tenants](../api/managedtenants-tenant-list.md)|[microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md) collection|Get a list of the [tenant](../resources/managedtenants-tenant.md) objects and their properties.|
+|[List tenants](../api/managedtenants-managedtenant-list-tenants.md)|[microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md) collection|Get a list of the [tenant](../resources/managedtenants-tenant.md) objects and their properties.|
 |[Get tenant](../api/managedtenants-tenant-get.md)|[microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md)|Read the properties and relationships of a [tenant](../resources/managedtenants-tenant.md) object.|
 |[offboardTenant](../api/managedtenants-tenant-offboardtenant.md)|[microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md)|Off boards a tenant from the multi-tenant management platform.|
 |[resetTenantOnboardingStatus](../api/managedtenants-tenant-resettenantonboardingstatus.md)|[microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md)|Resets the tenant onboarding status with the multi-tenant management platform.|

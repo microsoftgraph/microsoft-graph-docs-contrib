@@ -14027,61 +14027,63 @@ items:
           href: resources/managedtenants-aggregatedpolicycompliance.md
           items: 
           - name: List aggregated policy compliances
-            href: api/managedtenants-aggregatedpolicycompliance-list.md
+            href: api/managedtenants-managedtenant-list-aggregatedpolicycompliance.md
         - name: Cloud PC connection
           href: resources/managedtenants-cloudpcconnection.md
           items:
           - name: Get cloud PC connection
             href: api/managedtenants-cloudpcconnection-get.md
           - name: List cloud PC connections
-            href: api/managedtenants-cloudpcconnection-list.md
+            href: api/managedtenants-managedtenant-list-cloudpcconnection.md
         - name: Cloud PC device
           href: resources/managedtenants-cloudpcdevice.md
           items:
           - name: Get cloud PC device
             href: api/managedtenants-cloudpcdevice-get.md
           - name: List cloud PC devices
-            href: api/managedtenants-cloudpcdevice-list.md
+            href: api/managedtenants-managedtenant-list-cloudpcdevice.md
         - name: Cloud PC overview
           href: resources/managedtenants-cloudpcoverview.md
           items:
           - name: Get cloud PC overview
             href: api/managedtenants-cloudpcoverview-get.md
           - name: List cloud PC overviews
-            href: api/managedtenants-cloudpcoverview-list.md
+            href: api/managedtenants-managedtenant-list-cloudpcoverview.md
         - name: Conditional access policy coverage
           href: resources/managedtenants-conditionalaccesspolicycoverage.md
           items:
             - name: Get conditional access policy coverage
               href: api/managedtenants-conditionalaccesspolicycoverage-get.md
             - name: List conditional access coverages
-              href: api/managedtenants-conditionalaccesspolicycoverage-list.md
+              href: api/managedtenants-managedtenant-list-conditionalaccesspolicycoverage.md
         - name: Credential user registrations summary
           href: resources/managedtenants-credentialuserregistrationssummary.md
           items:
             - name: Get credential user registrations summary
               href: api/managedtenants-credentialuserregistrationssummary-get.md
             - name: List credential user registration summaries
-              href: api/managedtenants-credentialuserregistrationssummary-list.md
+              href: api/managedtenants-managedtenant-list-credentialuserregistrationssummary.md
         - name: Device compliance policy setting state summary
           href: resources/managedtenants-devicecompliancepolicysettingstatesummary.md
           items:
             - name: Get device compliance policy setting state summary 
               href: api/managedtenants-devicecompliancepolicysettingstatesummary-get.md
             - name: List device compliance policy setting state summary 
-              href: api/managedtenants-devicecompliancepolicysettingstatesummary-list.md
+              href: api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md
         - name: Managed device compliance
           href: resources/managedtenants-manageddevicecompliance.md
           items:
           - name: Get managed device compliance
             href: api/managedtenants-manageddevicecompliance-get.md
           - name: List managed device compliances
-            href: api/managedtenants-manageddevicecompliance-list.md
+            href: api/managedtenants-managedtenant-list-manageddevicecompliance.md
         - name: Managed device compliance trend
           href: resources/managedtenants-manageddevicecompliancetrend.md
           items:
             - name: Get managed device compliance trend
               href: api/managedtenants-manageddevicecompliancetrend-get.md
+            - name: List managed device compliance trend
+              href: api/managedtenants-managedtenant-list-manageddevicecompliancetrend.md
         - name: Management action
           href: resources/managedtenants-managementaction.md
           items:
@@ -14090,7 +14092,7 @@ items:
           - name: Get management action 
             href: api/managedtenants-managementaction-get.md
           - name: List management action
-            href: api/managedtenants-managementaction-list.md
+            href: api/managedtenants-managedtenant-list-managementaction.md
         - name: Management action tenant deployment status
           href: resources/managedtenants-managementactiontenantdeploymentstatus.md
           items: 
@@ -14099,35 +14101,35 @@ items:
           - name: Get management action deployment status
             href: api/managedtenants-managementactiontenantdeploymentstatus-get.md
           - name: List management action deployment statuses
-            href: api/managedtenants-managementactiontenantdeploymentstatus-list.md
+            href: api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatus.md
         - name: Management intent
           href: resources/managedtenants-managementintent.md
           items: 
           - name: Get management intent
             href: api/managedtenants-managementintent-get.md
           - name: List management intents
-            href: api/managedtenants-managementintent-list.md
+            href: api/managedtenants-managedtenant-list-managementintent.md
         - name: Management template
           href: resources/managedtenants-managementtemplate.md
           items: 
           - name: Get management template
             href: api/managedtenants-managementtemplate-get.md
           - name: List management templates
-            href: api/managedtenants-managementtemplate-list.md
+            href: api/managedtenants-managedtenant-list-managementtemplate.md
         - name: Risky user
           href: resources/managedtenants-riskyuser.md
           items:
             - name: Get risky user
               href: api/managedtenants-riskyuser-get.md
             - name: List risky user
-              href: api/managedtenants-riskyuser-list.md
+              href: api/managedtenants-managedtenant-list-riskyuser.md
         - name: Tenant customized information
           href: resources/managedtenants-tenantcustomizedinformation.md
           items:
           - name: Get tenant customized information
             href: api/managedtenants-tenantcustomizedinformation-get.md
           - name: List tenant customized information
-            href: api/managedtenants-tenantcustomizedinformation-list.md
+            href: api/managedtenants-managedtenant-list-tenantscustomizedinformation.md
           - name: Update tenant customized information
             href: api/managedtenants-tenantcustomizedinformation-update.md
         - name: Tenant detailed information
@@ -14136,14 +14138,14 @@ items:
           - name: Get tenant detailed information
             href: api/managedtenants-tenantdetailedinformation-get.md
           - name: List tenant detailed information
-            href: api/managedtenants-tenantdetailedinformation-list.md
+            href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
         - name: Tenant
           href: resources/managedtenants-tenant.md
           items:
           - name: Get tenant
             href: api/managedtenants-tenant-get.md
           - name: List tenants
-            href: api/managedtenants-tenant-list.md
+            href: api/managedtenants-managedtenant-list-tenants.md
           - name: Offboard tenant
             href: api/managedtenants-tenant-offboardtenant.md
           - name: Reset tenant onboarding status
@@ -14154,7 +14156,7 @@ items:
             - name: Get tenant group
               href: api/managedtenants-tenantgroup-get.md
             - name: List tenant groups
-              href: api/managedtenants-tenantgroup-list.md
+              href: api/managedtenants-managedtenant-list-tenantgroups.md
             - name: Search for tenant
               href: api/managedtenants-tenantgroup-tenantsearch.md
         - name: Tenant tag
@@ -14169,7 +14171,7 @@ items:
           - name: Get tenant tag
             href: api/managedtenants-tenanttag-get.md
           - name: List tenant tags
-            href: api/managedtenants-tenanttag-list.md
+            href: api/managedtenants-managedtenant-list-tenanttags.md
           - name: Unassign tenant tag
             href: api/managedtenants-tenanttag-unassigntag.md 
           - name: Update tenant tag
@@ -14180,14 +14182,14 @@ items:
         - name: Get Windows device malware state
           href: api/managedtenants-windowsdevicemalwarestate-get.md
         - name: List Windows device malware states
-          href: api/managedtenants-windowsdevicemalwarestate-list.md
+          href: api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
       - name: Windows protection state
         href: resources/managedtenants-windowsprotectionstate.md
         items:
           - name: Get Windows protection state
             href: api/managedtenants-windowsprotectionstate-get.md
           - name: List Windows protection state
-            href: api/managedtenants-windowsprotectionstate-list.md
+            href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:

@@ -18,7 +18,7 @@ Represents a logical group of managed tenants.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tenantGroups](../api/managedtenants-tenantgroup-list.md)|[microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md) collection|Get a list of the [tenantGroup](../resources/managedtenants-tenantgroup.md) objects and their properties.|
+|[List tenantGroups](../api/managedtenants-managedtenant-list-tenantgroups.md)|[microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md) collection|Get a list of the [tenantGroup](../resources/managedtenants-tenantgroup.md) objects and their properties.|
 |[Get tenantGroup](../api/managedtenants-tenantgroup-get.md)|[microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md)|Read the properties and relationships of a [tenantGroup](../resources/managedtenants-tenantgroup.md) object.|
 |[tenantSearch](../api/managedtenants-tenantgroup-tenantsearch.md)|[microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md) collection|Searches for the specific managed tenant across tenant groups.|
 

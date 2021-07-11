@@ -18,7 +18,7 @@ Represent the Windows protection state for managed devices running Windows.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List windowsProtectionStates](../api/managedtenants-windowsprotectionstate-list.md)|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) collection|Get a list of the [windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) objects and their properties.|
+|[List windowsProtectionStates](../api/managedtenants-managedtenant-list-windowsprotectionstates.md)|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) collection|Get a list of the [windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) objects and their properties.|
 |[Get windowsProtectionState](../api/managedtenants-windowsprotectionstate-get.md)|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md)|Read the properties and relationships of a [windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) object.|
 
 ## Properties

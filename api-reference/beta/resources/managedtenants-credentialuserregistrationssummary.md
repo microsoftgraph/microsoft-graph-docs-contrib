@@ -18,7 +18,7 @@ Represents a summary of credential user registrations for a given managed tenant
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List credentialUserRegistrationsSummaries](../api/managedtenants-credentialuserregistrationssummary-list.md)|[microsoft.graph.managedTenants.credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) collection|Get a list of the [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) objects and their properties.|
+|[List credentialUserRegistrationsSummaries](../api/managedtenants-managedtenant-list-credentialuserregistrationssummary.md)|[microsoft.graph.managedTenants.credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) collection|Get a list of the [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) objects and their properties.|
 |[Get credentialUserRegistrationsSummary](../api/managedtenants-credentialuserregistrationssummary-get.md)|[microsoft.graph.managedTenants.credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md)|Read the properties and relationships of a [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) object.|
 
 ## Properties

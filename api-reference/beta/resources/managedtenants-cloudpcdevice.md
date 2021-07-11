@@ -18,7 +18,7 @@ Represents a cloud PC device that belongs to a given managed tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcDevices](../api/managedtenants-cloudpcdevice-list.md)|[microsoft.graph.managedTenants.cloudPcDevice](../resources/managedtenants-cloudpcdevice.md) collection|Get a list of the [cloudPcDevice](../resources/managedtenants-cloudpcdevice.md) objects and their properties.|
+|[List cloudPcDevices](../api/managedtenants-managedtenant-list-cloudpcdevice.md)|[microsoft.graph.managedTenants.cloudPcDevice](../resources/managedtenants-cloudpcdevice.md) collection|Get a list of the [cloudPcDevice](../resources/managedtenants-cloudpcdevice.md) objects and their properties.|
 |[Get cloudPcDevice](../api/managedtenants-cloudpcdevice-get.md)|[microsoft.graph.managedTenants.cloudPcDevice](../resources/managedtenants-cloudpcdevice.md)|Read the properties and relationships of a [cloudPcDevice](../resources/managedtenants-cloudpcdevice.md) object.|
 
 ## Properties
