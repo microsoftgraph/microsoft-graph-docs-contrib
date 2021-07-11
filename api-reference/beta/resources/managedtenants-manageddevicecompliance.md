@@ -38,7 +38,7 @@ Represents the state of device compliance for each managed device belonging to a
 |osVersion|String|The version of the operating system for the managed device.|
 |ownerType|String|The type of owner for the managed device.|
 |tenantDisplayName|String|The display name for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 
 ## Relationships
 None.

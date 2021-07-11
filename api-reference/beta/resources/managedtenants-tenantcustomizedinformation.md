@@ -28,7 +28,7 @@ Represents customizable information for a managed tenant.
 |contacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|The collection of contacts for the managed tenant.|
 |displayName|String|The display name for the managed tenant.|
 |id|String|The Azure Active Directory tenant identifier for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 |website|String|The website for the managed tenant.|
 
 ## Relationships

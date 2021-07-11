@@ -31,7 +31,7 @@ Represents a tenant associated with the managing entity.
 |displayName|String|The display name for the tenant.|
 |id|String|The Azure Active Directory tenant identifier for the tenant.|
 |lastUpdatedDateTime|DateTimeOffset|The date and time the tenant was last updated within the multi-tenant management platform.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 |tenantStatusInformation|[microsoft.graph.managedTenants.tenantStatusInformation](../resources/managedtenants-tenantstatusinformation.md)|The onboarding status information for the tenant.|
 
 ## Relationships

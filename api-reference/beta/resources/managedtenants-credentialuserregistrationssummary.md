@@ -33,7 +33,7 @@ Represents a summary of credential user registrations for a given managed tenant
 |ssprEnabledUserCount|Int32|The number of users enabled for self service password reset.|
 |ssprRegisteredUserCount|Int32|The number of users registered for self service password reset.|
 |tenantDisplayName|String|The display name for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 |totalUserCount|Int32|The total number of users in the given managed tenant.|
 
 ## Relationships

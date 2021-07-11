@@ -18,7 +18,7 @@ Represents information for a managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 
 ## Relationships
 None.

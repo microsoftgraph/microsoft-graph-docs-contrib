@@ -33,7 +33,7 @@ Represents a cloud PC device that belongs to a given managed tenant.
 |provisioningPolicyId|String|The provisioning policy identifier for the cloud PC.|
 |servicePlanName|String|The service plan name for the cloud PC.|
 |tenantDisplayName|String|The display name for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the cloud PC.|
 
 ## Relationships

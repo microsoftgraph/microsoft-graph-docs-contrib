@@ -32,7 +32,7 @@ Represents an account flagged for risk across each managed tenants.
 |riskLevel|String|The level of risk that was detected. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|String|The state of risk that was detected. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |tenantDisplayName|String|The display name for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 |userDisplayName|String|The display name for the account where risk was detected.|
 |userId|String|The identifier for the user account where risk was detected.|
 |userPrincipalName|String|The user principal name (UPN) for the account where risk was detected.|

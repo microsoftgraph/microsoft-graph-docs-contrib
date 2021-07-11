@@ -49,7 +49,7 @@ Represent the Windows protection state for managed devices running Windows.
 |signatureUpdateOverdue|Boolean|A flag indicating whether an signature update is overdue.|
 |signatureVersion|String|The signature version for the managed device.|
 |tenantDisplayName|String|The display name for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 
 ## Relationships
 None.

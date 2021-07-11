@@ -33,7 +33,7 @@ Represents detailed information for a managed tenant.
 |industryName|String|The business industry associated with the managed tenant.|
 |region|String|The region where the managed tenant is located.|
 |segmentName|String|The business segment associated with the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 |verticalName|String|The vertical associated with the managed tenant.|
 
 ## Relationships

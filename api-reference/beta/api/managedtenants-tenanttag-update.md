@@ -40,13 +40,12 @@ PATCH /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [tenantTag](../resources/managedtenants-tenanttag.md) object.
+In the request body, supply the values for relevant [tenantTag](../resources/managedtenants-tenanttag.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-The following table shows the properties that are required when you update the [tenantTag](../resources/managedtenants-tenanttag.md).
+Following properties can be updated:
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique identifier for the tenant tag.|
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
 |displayName|String|The display name for the tenant tag.|
 |description|String|The description for the tenant tag.|
 |tenants|[microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md) collection|The collection of managed tenants associated with the tenant tag.|
@@ -69,14 +68,8 @@ Content-Type: application/json
 Content-length: 382
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
-  "displayName": "String",
-  "description": "String",
-  "tenants": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
-    }
-  ]
+  "displayName": "Onboarding",
+  "description": "Tenants that we are currently onboarding"
 }
 ```
 
@@ -93,19 +86,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
-  "id": "479ae6ac-e6ac-479a-ace6-9a47ace69a47",
-  "displayName": "String",
-  "description": "String",
-  "createdByUserId": "String",
-  "lastActionByUserId": "String",
-  "tenants": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantTags/$entity",
+  "id": "913391c0-5466-42b4-900d-0a7501399cb0",
+  "displayName": "Onboarding",
+  "description": "Tenants that we are currently onboarding",
+  "tenantIds": [
     {
-      "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
+      "tenantId": "38227791-a88b-4fcc-81c5-58cf77668320"
     }
   ],
-  "lastActionDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)",
-  "deletedDateTime": "String (timestamp)"
+  "isDeleted": null,
+  "createdDateTime": "2021-06-16T20:36:31.086644Z",
+  "createdByUserId": "9bf6a5ad-aecb-4194-a16b-38e02702a602",
+  "lastActionDateTime": "2021-07-11T18:54:44.5262828Z",
+  "lastActionByUserId": "cad28f13-0158-43c5-9c59-952f2caa62c0"
 }
 ```
