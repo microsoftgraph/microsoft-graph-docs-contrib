@@ -70,19 +70,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.tenant",
-    "id": "String (identifier)",
-    "tenantId": "String",
-    "displayName": "String",
-    "contract": {
-      "@odata.type": "microsoft.graph.managedTenants.tenantContract"
-    },
-    "tenantStatusInformation": {
-      "@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"
-    },
-    "lastUpdatedDateTime": "String (timestamp)",
-    "createdDateTime": "String (timestamp)"
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.tenant",
+  "id": "34298981-4fc8-4974-9486-c8909ed1521b",
+  "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+  "contract": {
+    "displayName": "Fourth Coffee",
+    "defaultDomainName": "fourthcoffe001.onmicrosoft.com",
+    "contractType": "2"
+  },
+  "tenantStatusInformation": {
+    "onboardingStatus": 10,
+    "onboardingDateTime": "2012-02-20T00:00:00Z",
+    "onboardedByUserId": "",
+    "offboardedDateTime": "2012-02-20T00:00:00Z",
+    "offboardedBy": "",
+    "delegatedPrivilegeStatus": 1,
+    "workloadStatuses": []
+  },
+  "createdDateTime": "2012-02-20T00:00:00Z",
+  "lastUpdatedDatetime": "2021-02-20T00:00:00Z"
 }
 ```

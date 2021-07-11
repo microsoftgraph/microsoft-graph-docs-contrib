@@ -48,7 +48,6 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |displayName|String|The display name for the tenant tag.|
 |description|String|The description for the tenant tag.|
-|tenants|[microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md) collection|The collection of managed tenants associated with the tenant tag.|
 
 ## Response
 
@@ -68,14 +67,8 @@ Content-Type: application/json
 Content-length: 382
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
-  "displayName": "String",
-  "description": "String",
-  "tenants": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
-    }
-  ]
+  "displayName": "Support",
+  "description": "Tenants that have purchased extended support"
 }
 ```
 
@@ -92,19 +85,15 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
-  "id": "479ae6ac-e6ac-479a-ace6-9a47ace69a47",
-  "displayName": "String",
-  "description": "String",
-  "createdByUserId": "String",
-  "lastActionByUserId": "String",
-  "tenants": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
-    }
-  ],
-  "lastActionDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)",
-  "deletedDateTime": "String (timestamp)"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantTags/$entity",
+  "id": "11103b2b-0e28-456b-901d-45f98890ab1d",
+  "displayName": "Support",
+  "description": "Tenants that have purchased extended support",
+  "tenantIds": [],
+  "isDeleted": null,
+  "createdDateTime": "2021-07-11T19:31:49.807267Z",
+  "createdByUserId": "cad28f13-0158-43c5-9c59-952f2caa62c0",
+  "lastActionDateTime": "2021-07-11T19:31:49.8072716Z",
+  "lastActionByUserId": "cad28f13-0158-43c5-9c59-952f2caa62c0"
 }
 ```

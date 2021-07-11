@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 |tenantGroupId|String|The identifier of the tenant group.|
-|managementTemplateId|String|The identifier of the management template.|
+|managementTemplateId|String|The identifier of the [management template](../resources/managedtenants-managementtemplate.md).|
 
 ## Response
 
@@ -87,8 +87,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.managedTenants.ManagementActionDeploymentStatus",
+  "managementTemplateId": "e2cadc41-a08f-45e7-8eb1-942d224dfb9a",
+  "managementActionId": "b22a4713-8428-4952-8cac-d48962ecbdc9",
+  "status": "completed",
+  "workloadActionDeploymentStatuses": [
+    {
+      "actionId": "46b80b42-06c7-45b4-b6fb-aa0aecace87b",
+      "status": "completed",
+      "deployedPolicyId": null,
+      "lastDeploymentDateTime": "2021-07-11T19:35:10.4463799Z",
+      "error": null
+    }
+  ]
 }
 ```

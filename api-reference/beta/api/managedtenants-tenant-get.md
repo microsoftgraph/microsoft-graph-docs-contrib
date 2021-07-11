@@ -75,16 +75,36 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenant",
-  "id": "36fab3ad-b3ad-36fa-adb3-fa36adb3fa36",
-  "tenantId": "String",
-  "displayName": "String",
+  "id": "34298981-4fc8-4974-9486-c8909ed1521b",
+  "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
   "contract": {
-    "@odata.type": "microsoft.graph.managedTenants.tenantContract"
+    "displayName": "Fourth Coffee",
+    "defaultDomainName": "fourthcoffe001.onmicrosoft.com",
+    "contractType": "2"
   },
   "tenantStatusInformation": {
-    "@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"
+    "onboardingStatus": 0,
+    "onboardingDateTime": "2012-02-20T00:00:00Z",
+    "onboardedByUserId": "",
+    "offboardedDateTime": "2012-02-20T00:00:00Z",
+    "offboardedBy": "",
+    "delegatedPrivilegeStatus": 1,
+    "workloadStatuses": [
+      {
+        "displayName": "Device Management",
+        "onboardingStatus": 1,
+        "onboardedDateTime": "2012-02-20T00:00:00Z",
+        "offboardedDateTime": null
+      },
+      {
+        "displayName": "Cloud PC",
+        "onboardingStatus": 0,
+        "onboardedDateTime": "2012-02-20T00:00:00Z",
+        "offboardedDateTime": null
+      }
+    ]
   },
-  "lastUpdatedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime": "2012-02-20T00:00:00Z",
+  "lastUpdatedDatetime": "2021-02-20T00:00:00Z"
 }
 ```

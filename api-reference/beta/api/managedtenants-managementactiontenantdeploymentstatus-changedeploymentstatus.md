@@ -89,8 +89,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.managedTenants.ManagementActionDeploymentStatus",
+  "managementTemplateId": "e5834405-43d2-4815-867d-3dd600308d1c",
+  "managementActionId": "e96a8cdb-0435-4808-9956-cf6b8ae77aa6",
+  "status": "planned",
+  "workloadActionDeploymentStatuses": []
 }
 ```

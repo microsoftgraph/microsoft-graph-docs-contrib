@@ -75,16 +75,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantDetailedInformation",
-  "id": "d12e4bf5-4bf5-d12e-f54b-2ed1f54b2ed1",
-  "tenantId": "String",
-  "displayName": "String",
-  "defaultDomainName": "String",
-  "countryName": "String",
-  "countryCode": "String",
-  "city": "String",
-  "region": "String",
-  "verticalName": "String",
-  "industryName": "String",
-  "segmentName": "String"
+  "id": "34298981-4fc8-4974-9486-c8909ed1521b",
+  "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+  "companyName": "Fourth Coffee",
+  "defaultDomainName": "fourthcoffee001.onmicrosoft.com",
+  "countryName": "United States",
+  "countryCode": "US",
+  "city": "Redmond",
+  "region": "NA",
+  "verticalName": "Software",
+  "industryName": "Computer",
+  "segmentName": "Service"
 }
 ```

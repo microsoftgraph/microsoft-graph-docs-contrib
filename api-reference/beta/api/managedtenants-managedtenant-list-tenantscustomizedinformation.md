@@ -74,18 +74,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/managedTenants/$metadata#tenantCustomizedInformation",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",
-      "id": "3ba5a2eb-a2eb-3ba5-eba2-a53beba2a53b",
-      "displayName": "String",
-      "tenantId": "String",
+      "id": "34298981-4fc8-4974-9486-c8909ed1521b",
+      "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+      "website": "https://www.fourthcoffee.com",
       "contacts": [
         {
-          "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
+          "name": "Sally",
+          "email": "sally@fourthcoffee.com",
+          "phone": "5558009731"
+        },
+        {
+          "name": "Hector",
+          "email": "hector@fourthcoffee.com",
+          "phone": "5558009732"
         }
-      ],
-      "website": "String"
+      ]
+    },
+    {
+      "id": "38227791-a88b-4fcc-81c5-58cf77668320",
+      "tenantId": "38227791-a88b-4fcc-81c5-58cf77668320\",",
+      "website": "https://www.consolidatedmessenger.com",
+      "contacts": [
+        {
+          "name": "Cynthia",
+          "email": "cynthia@consolidatedmessenger.com",
+          "phone": "5558001370"
+        },
+        {
+          "name": "Timothy",
+          "email": "timothy@consolidatedmessenger.com",
+          "phone": "5558001379"
+        }
+      ]
     }
   ]
 }

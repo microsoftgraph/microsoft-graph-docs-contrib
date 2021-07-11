@@ -85,21 +85,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
-    "id": "String (identifier)",
-    "displayName": "String",
-    "description": "String",
-    "createdByUserId": "String",
-    "lastActionByUserId": "String",
-    "tenants": [
-      {
-        "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
-      }
-    ],
-    "lastActionDateTime": "String (timestamp)",
-    "createdDateTime": "String (timestamp)",
-    "deletedDateTime": "String (timestamp)"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantTags/$entity",
+  "id": "2a66c69f-87ec-4fb3-a797-dd500cc3454d",
+  "displayName": "Support",
+  "description": "Tenants that has purcahsed support",
+  "tenants": [],
+  "isDeleted": null,
+  "createdDateTime": "2021-06-26T13:51:23.3927236Z",
+  "createdByUserId": "65ca7649-4ccb-4823-9c39-42bd75191bf8",
+  "lastActionDateTime": "2021-07-11T19:57:56.4242898Z",
+  "lastActionByUserId": "50bf7bd8-1b3a-4d1d-94c5-86d27e68857f"
 }
 ```
