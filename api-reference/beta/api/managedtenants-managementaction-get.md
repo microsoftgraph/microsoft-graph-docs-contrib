@@ -74,16 +74,70 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.managementAction",
-  "id": "e96139fd-39fd-e961-fd39-61e9fd3961e9",
-  "referenceTemplateId": "String",
-  "displayName": "String",
-  "description": "String",
-  "category": "String",
-  "workloadActions": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.workloadAction"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/managedTenants/managementActions/$entity",
+    "id": "4274db74-99c4-40be-bbeb-da4351136be2",
+    "referenceTemplateId": "21230aa5-d5a9-4403-b179-baf2de242aca",
+    "displayName": "Baseline - Require MFA for end users",
+    "description": null,
+    "category": "identity",
+    "workloadActions": [
+        {
+            "actionId": "fcb7ace7-3ea6-4474-912a-00ee78554445",
+            "category": "automated",
+            "displayName": "ConditionalAccessPolicy",
+            "description": null,
+            "service": "AAD",
+            "settings": [
+                {
+                    "valueType": "string",
+                    "displayName": "DisplayName",
+                    "overwriteAllowed": false,
+                    "jsonValue": "\"Baseline - Require MFA for end users\""
+                },
+                {
+                    "valueType": "string",
+                    "displayName": "State",
+                    "overwriteAllowed": false,
+                    "jsonValue": "\"enabledForReportingButNotEnforced\""
+                },
+                {
+                    "valueType": "stringCollection",
+                    "displayName": "ClientAppTypes",
+                    "overwriteAllowed": false,
+                    "jsonValue": "[\"All\"]"
+                },
+                {
+                    "valueType": "stringCollection",
+                    "displayName": "IncludeApplications",
+                    "overwriteAllowed": false,
+                    "jsonValue": "[\"All\"]"
+                },
+                {
+                    "valueType": "stringCollection",
+                    "displayName": "IncludeUsers",
+                    "overwriteAllowed": false,
+                    "jsonValue": "[\"None\"]"
+                },
+                {
+                    "valueType": "stringCollection",
+                    "displayName": "IncludeLocations",
+                    "overwriteAllowed": false,
+                    "jsonValue": "[\"All\"]"
+                },
+                {
+                    "valueType": "string",
+                    "displayName": "GrantControls.Operator",
+                    "overwriteAllowed": false,
+                    "jsonValue": "\"OR\""
+                },
+                {
+                    "valueType": "stringCollection",
+                    "displayName": "GrantControls.BuiltInControls",
+                    "overwriteAllowed": false,
+                    "jsonValue": "[\"mfa\"]"
+                }
+            ]
+        }
+    ]
 }
 ```

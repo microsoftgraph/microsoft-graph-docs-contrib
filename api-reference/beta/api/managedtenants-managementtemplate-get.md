@@ -74,20 +74,140 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.managementTemplate",
-  "id": "853689d2-89d2-8536-d289-3685d2893685",
-  "displayName": "String",
-  "description": "String",
-  "category": "String",
-  "parameters": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.templateParameter"
-    }
-  ],
-  "workloadActions": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.workloadAction"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/managedTenants/managementTemplates/$entity",
+    "id": "31d57d29-2d54-4074-84bd-51c008c2e6b2_1",
+    "displayName": "Baseline - Setup Compliance Policy for Windows 10 devices",
+    "description": null,
+    "category": "devices",
+    "parameters": [
+        {
+            "valueType": "string",
+            "displayName": "DisplayName",
+            "description": null,
+            "jsonDefaultValue": "\"Baseline - Setup Compliance Policy for Windows 10 devices\"",
+            "jsonAllowedValues": "null"
+        },
+        {
+            "valueType": "string",
+            "displayName": "OsMinimumVersion",
+            "description": null,
+            "jsonDefaultValue": "\"10.0.18363\"",
+            "jsonAllowedValues": "[]"
+        },
+        {
+            "valueType": "boolean",
+            "displayName": "ActiveFirewallRequired",
+            "description": null,
+            "jsonDefaultValue": "true",
+            "jsonAllowedValues": "[false,true]"
+        },
+        {
+            "valueType": "boolean",
+            "displayName": "AntivirusRequired",
+            "description": null,
+            "jsonDefaultValue": "true",
+            "jsonAllowedValues": "[false,true]"
+        },
+        {
+            "valueType": "boolean",
+            "displayName": "AntiSpywareRequired",
+            "description": null,
+            "jsonDefaultValue": "true",
+            "jsonAllowedValues": "[false,true]"
+        },
+        {
+            "valueType": "boolean",
+            "displayName": "DefenderEnabled",
+            "description": null,
+            "jsonDefaultValue": "true",
+            "jsonAllowedValues": "[false,true]"
+        },
+        {
+            "valueType": "boolean",
+            "displayName": "StorageRequireEncryption",
+            "description": null,
+            "jsonDefaultValue": "true",
+            "jsonAllowedValues": "[false,true]"
+        },
+        {
+            "valueType": "boolean",
+            "displayName": "RtpEnabled",
+            "description": null,
+            "jsonDefaultValue": "true",
+            "jsonAllowedValues": "[false,true]"
+        },
+        {
+            "valueType": "integer",
+            "displayName": "ScheduledActionsForRule.BlockActionGracePeriod",
+            "description": null,
+            "jsonDefaultValue": "72",
+            "jsonAllowedValues": "[]"
+        }
+    ],
+    "workloadActions": [
+        {
+            "actionId": "00a9a585-f51c-4b68-b4f5-f0c3165df8ac",
+            "category": "automated",
+            "displayName": "#microsoft.graph.windows10CompliancePolicy",
+            "description": null,
+            "service": "Intune",
+            "settings": [
+                {
+                    "valueType": "string",
+                    "displayName": "DisplayName",
+                    "overwriteAllowed": false,
+                    "jsonValue": "\"Baseline - Setup Compliance Policy for Windows 10 devices\""
+                },
+                {
+                    "valueType": "string",
+                    "displayName": "OsMinimumVersion",
+                    "overwriteAllowed": false,
+                    "jsonValue": "\"10.0.18363\""
+                },
+                {
+                    "valueType": "boolean",
+                    "displayName": "ActiveFirewallRequired",
+                    "overwriteAllowed": false,
+                    "jsonValue": "true"
+                },
+                {
+                    "valueType": "boolean",
+                    "displayName": "AntivirusRequired",
+                    "overwriteAllowed": false,
+                    "jsonValue": "true"
+                },
+                {
+                    "valueType": "boolean",
+                    "displayName": "AntiSpywareRequired",
+                    "overwriteAllowed": false,
+                    "jsonValue": "true"
+                },
+                {
+                    "valueType": "boolean",
+                    "displayName": "DefenderEnabled",
+                    "overwriteAllowed": false,
+                    "jsonValue": "true"
+                },
+                {
+                    "valueType": "boolean",
+                    "displayName": "StorageRequireEncryption",
+                    "overwriteAllowed": false,
+                    "jsonValue": "true"
+                },
+                {
+                    "valueType": "boolean",
+                    "displayName": "RtpEnabled",
+                    "overwriteAllowed": false,
+                    "jsonValue": "true"
+                },
+                {
+                    "valueType": "integer",
+                    "displayName": "ScheduledActionsForRule.BlockActionGracePeriod",
+                    "overwriteAllowed": false,
+                    "jsonValue": "72"
+                }
+            ]
+        }
+    ]
 }
 ```

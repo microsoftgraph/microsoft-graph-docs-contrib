@@ -1,5 +1,5 @@
 ---
-title: "List tenantCustomizedInformations"
+title: "List tenantCustomizedInformation"
 description: "Get a list of the tenantCustomizedInformation objects and their properties."
 author: "isaiahwilliams"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# List tenantCustomizedInformations
+# List tenantCustomizedInformation
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

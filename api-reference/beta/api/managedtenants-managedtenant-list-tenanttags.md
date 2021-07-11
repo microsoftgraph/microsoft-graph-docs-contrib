@@ -74,23 +74,58 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
-      "id": "479ae6ac-e6ac-479a-ace6-9a47ace69a47",
-      "displayName": "String",
-      "description": "String",
-      "createdByUserId": "String",
-      "lastActionByUserId": "String",
-      "tenants": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/managedTenants/tenantTags",
+    "value": [
         {
-          "@odata.type": "microsoft.graph.managedTenants.tenantInfo"
+            "id": "913391c0-5466-42b4-900d-0a7501399cb0",
+            "displayName": "Onboarding",
+            "description": "Tenants that we are currently onboarding",
+            "properties": null,
+            "tenantIds": [
+                "38227791-a88b-4fcc-81c5-58cf77668320",
+                "34298981-4fc8-4974-9486-c8909ed1521b",
+                "4d262a25-c70a-430b-9e8e-46c31dec116b"
+            ],
+            "isDeleted": null,
+            "createdDateTime": "2021-06-16T20:36:31.086644Z",
+            "createdByUserId": "9bf6a5ad-aecb-4194-a16b-38e02702a602",
+            "lastActionDateTime": "2021-06-28T20:46:09.0071888Z",
+            "lastActionByUserId": "08ea0285-30cb-46cc-abc8-3d8422e21ecb",
+            "tenants": [
+                {
+                    "tenantId": "38227791-a88b-4fcc-81c5-58cf77668320"
+                },
+                {
+                    "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b"
+                },
+                {
+                    "tenantId": "4d262a25-c70a-430b-9e8e-46c31dec116b"
+                }
+            ]
+        },
+        {
+            "id": "bfd883e8-10f3-40ee-994c-111fa1c5d1db",
+            "displayName": "ExtendedSupport",
+            "description": "Tenants that have purchased extended support.",
+            "properties": null,
+            "tenantIds": [
+                "38227791-a88b-4fcc-81c5-58cf77668320",
+                "4d262a25-c70a-430b-9e8e-46c31dec116b"
+            ],
+            "isDeleted": null,
+            "createdDateTime": "2021-06-16T20:43:31.8917383Z",
+            "createdByUserId": "43a2424c-0fa3-446d-bee9-4ab500bb1603",
+            "lastActionDateTime": "2021-06-17T03:23:31.3531635Z",
+            "lastActionByUserId": "248f617e-a6a7-4d31-922d-726c24074bb6",
+            "tenants": [
+                {
+                    "tenantId": "38227791-a88b-4fcc-81c5-58cf77668320"
+                },
+                {
+                    "tenantId": "4d262a25-c70a-430b-9e8e-46c31dec116b"
+                }
+            ]
         }
-      ],
-      "lastActionDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "deletedDateTime": "String (timestamp)"
-    }
-  ]
+    ]
 }
 ```

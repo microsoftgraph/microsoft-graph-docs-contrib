@@ -60,7 +60,6 @@ If successful, this method returns a `200 OK` response code and a [managementInt
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementIntents/{managementIntentId}
 ```
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -74,14 +73,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.managedTenants.managementIntent",
-  "id": "861bb622-b622-861b-22b6-1b8622b61b86",
-  "displayName": "String",
-  "isGlobal": "Boolean",
-  "managementTemplates": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.managementTemplateDetailedInfo"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/managedTenants/managementIntents/$entity",
+    "id": "586895ab-8a59-4b79-be25-b06949a819bb",
+    "displayName": "Default Baseline",
+    "isGlobal": true,
+    "managementTemplates": [
+        {
+            "managementTemplateId": "e5834405-43d2-4815-867d-3dd600308d1c",
+            "displayName": "Baseline - Block Legacy Authentication",
+            "category": "identity"
+        },
+        {
+            "managementTemplateId": "12524106-036f-457f-b7a6-b003509d29c8",
+            "displayName": "Baseline - Require MFA for Admins",
+            "category": "identity"
+        },
+        {
+            "managementTemplateId": "21230aa5-d5a9-4403-b179-baf2de242aca",
+            "displayName": "Baseline - Require MFA for end users",
+            "category": "identity"
+        },
+        {
+            "managementTemplateId": "e2cadc41-a08f-45e7-8eb1-942d224dfb9a",
+            "displayName": "Baseline - Enroll devices in MEM",
+            "category": "devices"
+        },
+        {
+            "managementTemplateId": "31d57d29-2d54-4074-84bd-51c008c2e6b2",
+            "displayName": "Baseline - Setup Compliance Policy for Windows 10 devices",
+            "category": "devices"
+        },
+        {
+            "managementTemplateId": "b2d6d189-ea31-4cf8-b75e-41210c583127",
+            "displayName": "Baseline - Setup Microsoft Defender Antivirus Policy for Windows 10 devices",
+            "category": "devices"
+        }
+    ]
 }
 ```

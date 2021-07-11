@@ -74,19 +74,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/managedTenants/managedDeviceComplianceTrends",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.managedTenants.managedDeviceComplianceTrend",
-      "id": "42fa314b-314b-42fa-4b31-fa424b31fa42",
-      "tenantId": "String",
-      "tenantDisplayName": "String",
-      "unknownDeviceCount": "Integer",
-      "compliantDeviceCount": "Integer",
-      "noncompliantDeviceCount": "Integer",
-      "errorDeviceCount": "Integer",
-      "inGracePeriodDeviceCount": "Integer",
-      "configManagerDeviceCount": "Integer",
-      "countDateTime": "String"
+      "id": "34298981-4fc8-4974-9486-c8909ed1521b_2021-06-12",
+      "unknownDeviceCount": 0,
+      "compliantDeviceCount": 4,
+      "noncompliantDeviceCount": 0,
+      "errorDeviceCount": 0,
+      "inGracePeriodDeviceCount": 0,
+      "configManagerDeviceCount": 0,
+      "countDateTime": "2021-06-12",
+      "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+      "tenantDisplayName": "Fourth Coffee"
+    },
+    {
+      "id": "38227791-a88b-4fcc-81c5-58cf77668320_2021-06-16",
+      "unknownDeviceCount": 0,
+      "compliantDeviceCount": 1,
+      "noncompliantDeviceCount": 4,
+      "errorDeviceCount": 0,
+      "inGracePeriodDeviceCount": 0,
+      "configManagerDeviceCount": 0,
+      "countDateTime": "2021-06-16",
+      "tenantId": "38227791-a88b-4fcc-81c5-58cf77668320",
+      "tenantDisplayName": "Consolidated Messenger"
     }
   ]
 }
