@@ -74,15 +74,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/managedTenants/cloudPcConnections",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.managedTenants.cloudPcConnection",
-      "id": "105d8613-8613-105d-1386-5d1013865d10",
-      "displayName": "String",
-      "tenantId": "String",
-      "tenantDisplayName": "String",
-      "healthCheckStatus": "String",
-      "lastRefreshedDateTime": "String (timestamp)"
+      "id": "021bd3a9-59c6-4503-b408-c326a98f238f",
+      "lastUpdated": "2021-07-11T18:02:16.6450704Z",
+      "displayName": "RunnerPlus-Az-Connection",
+      "organizationId": "0b9701e1-f1ae-4f15-bd67-f4f591595454",
+      "organizationDisplayName": "Terra Firm",
+      "healthCheckStatus": "Passed",
+      "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+      "tenantDisplayName": "Fourth Coffee",
+      "lastRefreshedDateTime": "2021-07-11T18:02:16.6450704Z"
     }
   ]
 }

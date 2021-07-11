@@ -76,18 +76,20 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.managedTenants.cloudPcDevice",
-      "id": "0171daae-daae-0171-aeda-7101aeda7101",
-      "displayName": "String",
-      "tenantId": "String",
-      "tenantDisplayName": "String",
-      "managedDeviceId": "String",
-      "managedDeviceName": "String",
-      "userPrincipalName": "String",
-      "servicePlanName": "String",
-      "cloudPcStatus": "String",
-      "provisioningPolicyId": "String",
-      "lastRefreshedDateTime": "String (timestamp)"
+      "id": "00089754-92d2-483c-a073-420723aac8bc_6b97ad6a-be15-4cbe-afbb-4eb74ecb0243",
+      "lastUpdated": "2021-07-10T23:05:03.2565097Z",
+      "policyId": "2b142388-f36c-40ee-a5cb-7e8871a658a0",
+      "displayName": "ImageProd - ImageRunner4PROD",
+      "managedDeviceId": "f3a8e53b-0a9f-42f1-be73-4fd30d801f62",
+      "managedDeviceName": "A0000060000",
+      "userPrincipalName": "ImageRunner4PROD@fourthcoffee001.onmicrosoft.com",
+      "servicePlanName": "CloudPC_Lite",
+      "status": "Provisioned",
+      "tenantId": "aa060093-1e81-45b4-bebc-652713194ef7",
+      "tenantDisplayName": "Fourth Coffee Publishing",
+      "lastRefreshedDateTime": "2021-07-10T23:05:03.2565097Z",
+      "provisioningPolicyId": "2b142388-f36c-40ee-a5cb-7e8871a658a0",
+      "cloudPcStatus": "Provisioned"
     }
   ]
 }

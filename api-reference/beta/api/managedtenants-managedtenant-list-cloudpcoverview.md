@@ -77,24 +77,24 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.managedTenants.cloudPcOverview",
-      "id": "6057790f-790f-6057-0f79-57600f795760",
-      "tenantDisplayName": "String",
-      "totalCloudPcStatus": "Integer",
-      "numberOfCloudPcStatusNotProvisioned": "Integer",
-      "numberOfCloudPcStatusProvisioning": "Integer",
-      "numberOfCloudPcStatusProvisioned": "Integer",
-      "numberOfCloudPcStatusUpgrading": "Integer",
-      "numberOfCloudPcStatusInGracePeriod": "Integer",
-      "numberOfCloudPcStatusDeprovisioning": "Integer",
-      "numberOfCloudPcStatusFailed": "Integer",
-      "numberOfCloudPcStatusUnknown": "Integer",
-      "totalCloudPcConnectionStatus": "Integer",
-      "numberOfCloudPcConnectionStatusPending": "Integer",
-      "numberOfCloudPcConnectionStatusRunning": "Integer",
-      "numberOfCloudPcConnectionStatusPassed": "Integer",
-      "numberOfCloudPcConnectionStatusFailed": "Integer",
-      "numberOfCloudPcConnectionStatusUnkownFutureValue": "Integer",
-      "lastRefreshedDateTime": "String (timestamp)"
+      "id": "34298981-4fc8-4974-9486-c8909ed1521b",
+      "tenantDisplayName": "Fourth Coffee",
+      "totalCloudPcStatus": 18,
+      "numberOfCloudPcStatusNotProvisioned": 4,
+      "numberOfCloudPcStatusProvisioning": 0,
+      "numberOfCloudPcStatusProvisioned": 14,
+      "numberOfCloudPcStatusUpgrading": 0,
+      "numberOfCloudPcStatusInGracePeriod": 0,
+      "numberOfCloudPcStatusDeprovisioning": 0,
+      "numberOfCloudPcStatusFailed": 0,
+      "numberOfCloudPcStatusUnknown": 0,
+      "totalCloudPcConnectionStatus": 25,
+      "numberOfCloudPcConnectionStatusPending": 0,
+      "numberOfCloudPcConnectionStatusRunning": 0,
+      "numberOfCloudPcConnectionStatusPassed": 17,
+      "numberOfCloudPcConnectionStatusFailed": 6,
+      "numberOfCloudPcConnectionStatusUnkownFutureValue": 0,
+      "lastRefreshedDateTime": "2021-07-11T17:18:46.4830816Z"
     }
   ]
 }
