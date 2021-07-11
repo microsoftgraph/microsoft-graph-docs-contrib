@@ -29,15 +29,15 @@ Represents a tag that can be assigned to managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdByUserId|String|The identifier for the account that created the tenant tag.|
-|createdDateTime|DateTimeOffset|The date and time when the tenant tag was created.|
-|deletedDateTime|DateTimeOffset|The date and time when the tenant tag was deleted.|
-|description|String|The description for the tenant tag.|
-|displayName|String|The display name for the tenant tag.|
-|id|String|The unique identifier for the tenant tag.|
-|lastActionByUserId|String|The identifier for the account that lasted on the tenant tag.|
-|lastActionDateTime|DateTimeOffset|The date and time the last action was performed against the tenant tag.|
-|tenants|[microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md) collection|The collection of managed tenants associated with the tenant tag.|
+|createdByUserId|String|The identifier for the account that created the tenant tag. Required. Read-only.|
+|createdDateTime|DateTimeOffset|The date and time when the tenant tag was created. Required. Read-only.|
+|deletedDateTime|DateTimeOffset|The date and time when the tenant tag was deleted. Required. Read-only.|
+|description|String|The description for the tenant tag. Optional. Read-only.|
+|displayName|String|The display name for the tenant tag. Required. Read-only.|
+|id|String|The unique identifier for the tenant tag. Required. Read-only.|
+|lastActionByUserId|String|The identifier for the account that lasted on the tenant tag. Optional. Read-only.|
+|lastActionDateTime|DateTimeOffset|The date and time the last action was performed against the tenant tag. Optional. Read-only.|
+|tenants|[microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md) collection|The collection of managed tenants associated with the tenant tag. Optional.|
 
 ## Relationships
 None.

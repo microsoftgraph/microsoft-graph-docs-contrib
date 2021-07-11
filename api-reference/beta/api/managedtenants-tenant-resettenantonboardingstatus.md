@@ -1,6 +1,6 @@
 ---
 title: "tenant: resetTenantOnboardingStatus"
-description: "Resets the onboarding status for the specified managed tenant."
+description: "Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multi-tenant management platform using the offboardTenant action. By invoking this action the platform will attempt to onboard the managed tenant for management."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resets the onboarding status for the specified managed tenant.
+Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multi-tenant management platform using the [offboardTenant](../api/managedtenants-tenant-offboardtenant.md) action. By invoking this action the platform will attempt to onboard the managed tenant for management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

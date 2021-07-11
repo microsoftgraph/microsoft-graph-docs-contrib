@@ -24,17 +24,17 @@ Represents a cloud PC device that belongs to a given managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPcStatus|String|The status of the cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
-|displayName|String|The display name for the cloud PC.|
-|id|String|The unique identifier for the cloud PC.|
-|lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform.|
-|managedDeviceId|String|The managed device identifier for the cloud PC.|
-|managedDeviceName|String|The managed device display name for the cloud PC.|
-|provisioningPolicyId|String|The provisioning policy identifier for the cloud PC.|
-|servicePlanName|String|The service plan name for the cloud PC.|
-|tenantDisplayName|String|The display name for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
-|userPrincipalName|String|The user principal name (UPN) of the user assigned to the cloud PC.|
+|cloudPcStatus|String|The status of the cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`. Required. Read-only.|
+|displayName|String|The display name for the cloud PC. Required. Read-only.|
+|id|String|The unique identifier for the cloud PC. Required. Read-only.|
+|lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform. Required. Read-only.|
+|managedDeviceId|String|The managed device identifier for the cloud PC. Optional. Read-only.|
+|managedDeviceName|String|The managed device display name for the cloud PC. Optional. Read-only.|
+|provisioningPolicyId|String|The provisioning policy identifier for the cloud PC. Required. Read-only.|
+|servicePlanName|String|The service plan name for the cloud PC. Required. Read-only.|
+|tenantDisplayName|String|The display name for the managed tenant. Required. Read-only.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
+|userPrincipalName|String|The user principal name (UPN) of the user assigned to the cloud PC. Required. Read-only.|
 
 ## Relationships
 None.

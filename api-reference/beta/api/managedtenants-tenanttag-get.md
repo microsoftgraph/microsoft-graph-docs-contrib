@@ -34,7 +34,7 @@ GET /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
 
 ## Request headers
 |Name|Description|

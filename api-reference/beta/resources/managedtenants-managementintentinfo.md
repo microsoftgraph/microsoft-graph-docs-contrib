@@ -18,9 +18,9 @@ Represents relationship information for a management intent.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|managementIntentDisplayName|String|The display name for the management intent.|
-|managementIntentId|String|The identifier for the management intent.|
-|managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) collection|The collection of management template information associated with the management intent.|
+|managementIntentDisplayName|String|The display name for the management intent. Optional. Read-only.|
+|managementIntentId|String|The identifier for the management intent. Required. Read-only.|
+|managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) collection|The collection of management template information associated with the management intent. Optional. Read-only.|
 
 ## Relationships
 None.

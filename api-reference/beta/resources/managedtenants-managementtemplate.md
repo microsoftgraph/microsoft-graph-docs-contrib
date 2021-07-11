@@ -24,12 +24,12 @@ Represents a group of actions and setting that can be performed against a manage
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|managementCategory|The management category for the management template. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`.|
-|description|String|The description for the management template.|
-|displayName|String|The display name for the management template.|
-|id|String|The unique identifier for the management template.|
-|parameters|[microsoft.graph.managedTenants.templateParameter](../resources/managedtenants-templateparameter.md) collection|The collection of parameters used by the management template.|
-|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|The collection of workload actions associated with the management template.|
+|category|managementCategory|The management category for the management template. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`. Required. Read-only.|
+|description|String|The description for the management template. Optional. Read-only.|
+|displayName|String|The display name for the management template. Required. Read-only.|
+|id|String|The unique identifier for the management template. Required. Read-only.|
+|parameters|[microsoft.graph.managedTenants.templateParameter](../resources/managedtenants-templateparameter.md) collection|The collection of parameters used by the management template. Optional. Read-only.|
+|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|The collection of workload actions associated with the management template. Optional. Read-only.|
 
 ## Relationships
 None.

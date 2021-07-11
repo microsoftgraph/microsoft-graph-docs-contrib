@@ -24,10 +24,10 @@ Represents metadata for a baseline and what management templates are included.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name for the management intent.|
-|id|String|The unique identifier for the management intent.|
-|isGlobal|Boolean|A flag indicating whether the management intent is global.|
-|managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) collection|The collection of management templates associated with the management intent.|
+|displayName|String|The display name for the management intent. Optional. Read-only.|
+|id|String|The unique identifier for the management intent. Required. Read-only.|
+|isGlobal|Boolean|A flag indicating whether the management intent is global. Required. Read-only.|
+|managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) collection|The collection of management templates associated with the management intent. Optional. Read-only.|
 
 ## Relationships
 None.

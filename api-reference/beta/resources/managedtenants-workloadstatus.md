@@ -18,10 +18,10 @@ Represent the status for a workload.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name for the workload.|
-|offboardedDateTime|DateTimeOffset|The date and time the workload was offboarded.|
-|onboardedDateTime|DateTimeOffset|The date and time the workload was onboarded.|
-|onboardingStatus|workloadOnboardingStatus|The onboarding status for the workload. Possible values are: `notOnboarded`, `onboarded`, `unknownFutureValue`.|
+|displayName|String|The display name for the workload. Required. Read-only.|
+|offboardedDateTime|DateTimeOffset|The date and time the workload was offboarded. Optional. Read-only.|
+|onboardedDateTime|DateTimeOffset|The date and time the workload was onboarded. Optional. Read-only.|
+|onboardingStatus|workloadOnboardingStatus|The onboarding status for the workload. Possible values are: `notOnboarded`, `onboarded`, `unknownFutureValue`. Optional. Read-only.|
 
 ## Relationships
 None.
@@ -42,4 +42,3 @@ The following is a JSON representation of the resource.
   "offboardedDateTime": "String (timestamp)"
 }
 ```
-

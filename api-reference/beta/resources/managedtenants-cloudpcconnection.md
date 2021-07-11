@@ -24,12 +24,12 @@ Represents a cloud PC connection for a given managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the cloud PC connection.|
-|healthCheckStatus|String|The health status of the cloud PC connection. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`.|
-|id|String|The unique identifier for the cloud PC connection.|
-|lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform.|
-|tenantDisplayName|String|The display name for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
+|displayName|String|The display name of the cloud PC connection. Required. Read-only.|
+|healthCheckStatus|String|The health status of the cloud PC connection. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`.  Required. Read-only.|
+|id|String|The unique identifier for the cloud PC connection. Required. Read-only.|
+|lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform. Required. Read-only.|
+|tenantDisplayName|String|The display name for the managed tenant. Required. Read-only.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
 
 ## Relationships
 None.

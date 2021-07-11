@@ -24,16 +24,16 @@ Represents a trend of compliant and non-compliant devices for a given managed te
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|compliantDeviceCount|Int32|The number of devices with a compliant status.|
-|configManagerDeviceCount|Int32|The number of devices manged by Configuration Manager.|
-|countDateTime|String|The date and time compliance snapshot was performed.|
-|errorDeviceCount|Int32|The number of devices with an error status.|
-|id|String|The unique identifier for this entity.|
-|inGracePeriodDeviceCount|Int32|The number of devices that are in a grace period status.|
-|noncompliantDeviceCount|Int32|The number of devices that are in a non-compliant status.|
-|tenantDisplayName|String|The display name for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
-|unknownDeviceCount|Int32|The number of devices in an unknown status.|
+|compliantDeviceCount|Int32|The number of devices with a compliant status. Required. Read-only.|
+|configManagerDeviceCount|Int32|The number of devices manged by Configuration Manager. Required. Read-only.|
+|countDateTime|String|The date and time compliance snapshot was performed. Required. Read-only.|
+|errorDeviceCount|Int32|The number of devices with an error status. Required. Read-only.|
+|id|String|The unique identifier for this entity. Required. Read-only.|
+|inGracePeriodDeviceCount|Int32|The number of devices that are in a grace period status. Required. Read-only.|
+|noncompliantDeviceCount|Int32|The number of devices that are in a non-compliant status. Required. Read-only.|
+|tenantDisplayName|String|The display name for the managed tenant. Optional. Read-only.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
+|unknownDeviceCount|Int32|The number of devices in an unknown status. Required. Read-only.|
 
 ## Relationships
 None.

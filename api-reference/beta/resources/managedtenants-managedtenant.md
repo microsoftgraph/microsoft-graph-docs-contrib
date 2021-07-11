@@ -16,8 +16,7 @@ Namespace: microsoft.graph.managedTenants
 Represent the available operations that interact with the multi-tenant management platform.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|

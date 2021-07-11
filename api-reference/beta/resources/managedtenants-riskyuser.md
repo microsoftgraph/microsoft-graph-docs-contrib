@@ -24,18 +24,18 @@ Represents an account flagged for risk across each managed tenants.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for this entity.|
-|isDeleted|Boolean|A flag indicating whether the account has been deleted.|
-|lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform.|
-|riskDetail|String|The risk details for the account flagged for risk.|
-|riskLastUpdatedDateTime|DateTimeOffset|The date and time when the risk information was last updated.|
-|riskLevel|String|The level of risk that was detected. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
-|riskState|String|The state of risk that was detected. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|tenantDisplayName|String|The display name for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
-|userDisplayName|String|The display name for the account where risk was detected.|
-|userId|String|The identifier for the user account where risk was detected.|
-|userPrincipalName|String|The user principal name (UPN) for the account where risk was detected.|
+|id|String|The unique identifier for this entity. Required. Read-only.|
+|isDeleted|Boolean|A flag indicating whether the account has been deleted. Optional. Read-only.|
+|lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform. Optional. Read-only.|
+|riskDetail|String|The risk details for the account flagged for risk. Optional. Read-only.|
+|riskLastUpdatedDateTime|DateTimeOffset|The date and time when the risk information was last updated. Optional. Read-only.|
+|riskLevel|String|The level of risk that was detected. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Optional. Read-only.|
+|riskState|String|The state of risk that was detected. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. Optional. Read-only.|
+|tenantDisplayName|String|The display name for the managed tenant. Optional. Read-only.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
+|userDisplayName|String|The display name for the account where risk was detected. Optional. Read-only.|
+|userId|String|The identifier for the user account where risk was detected. Required. Read-only.|
+|userPrincipalName|String|The user principal name (UPN) for the account where risk was detected. Optional. Read-only.|
 
 ## Relationships
 None.

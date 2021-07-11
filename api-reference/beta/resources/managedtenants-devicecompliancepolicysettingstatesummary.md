@@ -24,20 +24,20 @@ Represents a summary of device compliance policy setting states for a given mana
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for this entity.|
-|conflictDeviceCount|Int32|The number of devices in a conflict state.|
-|errorDeviceCount|Int32|The number of devices in an error state.|
-|failedDeviceCount|Int32|The number of devices in a failed state.|
-|intuneAccountId|String|The identifer for the Microsoft Intune account.|
-|intuneSettingId|String|The identifier for the Intune setting.|
-|lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform.|
-|notApplicableDeviceCount|Int32|The number of devices in a not applicable state.|
-|pendingDeviceCount|Int32|The number of devices in a pending state.|
-|policyType|String|The type for the device compliance policy.|
-|settingName|String|The name for the setting within the device compliance policy.|
-|succeededDeviceCount|Int32|The number of devices in a succeeded state.|
-|tenantDisplayName|String|The display name for the managed tenant.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
+|id|String|The unique identifier for this entity. Required. Read-only.|
+|conflictDeviceCount|Int32|The number of devices in a conflict state. Optional. Read-only.|
+|errorDeviceCount|Int32|The number of devices in an error state. Optional. Read-only.|
+|failedDeviceCount|Int32|The number of devices in a failed state. Optional. Read-only.|
+|intuneAccountId|String|The identifer for the Microsoft Intune account. Required. Read-only.|
+|intuneSettingId|String|The identifier for the Intune setting. Optional. Read-only.|
+|lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform. Optional. Read-only.|
+|notApplicableDeviceCount|Int32|The number of devices in a not applicable state. Optional. Read-only.|
+|pendingDeviceCount|Int32|The number of devices in a pending state. Optional. Read-only.|
+|policyType|String|The type for the device compliance policy. Optional. Read-only.|
+|settingName|String|The name for the setting within the device compliance policy. Optional. Read-only.|
+|succeededDeviceCount|Int32|The number of devices in a succeeded state. Optional. Read-only.|
+|tenantDisplayName|String|The display name for the managed tenant. Required. Read-only.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
 
 ## Relationships
 None.

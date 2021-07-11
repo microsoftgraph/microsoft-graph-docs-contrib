@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessPolicyCoverage resource type"
-description: "Represents conditional access policy coverage for a given managed tenant."
+description: "Represents Azure Active Directory conditional access policy coverage for a given managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents conditional access policy coverage for a given managed tenant.
+Represents Azure Active Directory conditional access policy coverage for a given managed tenant.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,11 +24,11 @@ Represents conditional access policy coverage for a given managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|conditionalAccessPolicyState|String|The state for the conditional access policy. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`.|
-|id|String|The unique identifier for this entity.|
-|latestPolicyModifiedDateTime|DateTimeOffset|The date and time the conditional access policy was last modified.|
-|requiresDeviceCompliance|Boolean|A flag indicating whether the conditional access policy requires device compliance.|
-|tenantDisplayName|String|The display name for the managed tenant.|
+|conditionalAccessPolicyState|String|The state for the conditional access policy. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Required. Read-only.|
+|id|String|The unique identifier for this entity. Required. Read-only.|
+|latestPolicyModifiedDateTime|DateTimeOffset|The date and time the conditional access policy was last modified. Required. Read-only.|
+|requiresDeviceCompliance|Boolean|A flag indicating whether the conditional access policy requires device compliance. Required. Read-only.|
+|tenantDisplayName|String|The display name for the managed tenant. Required. Read-only.|
 
 ## Relationships
 None.

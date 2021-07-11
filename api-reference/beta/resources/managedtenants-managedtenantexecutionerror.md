@@ -20,12 +20,12 @@ Inherits from [managedTenantOperationError](../resources/managedtenants-managedt
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|error|String|The error message for the exception. Inherited from [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md).|
-|errorDetails|String|Additional error information for the exception.|
-|nodeId|Int32|The node identifier where the exception occurred.|
-|rawToken|String|The token for the exception.|
-|statementIndex|Int32|The statement index for the exception.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant. Inherited from [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md).|
+|error|String|The error message for the exception. Inherited from [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Required. Read-only.|
+|errorDetails|String|Additional error information for the exception. Optional. Read-only.|
+|nodeId|Int32|The node identifier where the exception occurred. Required. Read-only.|
+|rawToken|String|The token for the exception. Optional. Read-only.|
+|statementIndex|Int32|The statement index for the exception. Required. Read-only.|
+|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant. Inherited from [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Required. Read-only.|
 
 ## Relationships
 None.

@@ -25,12 +25,12 @@ Represents a logical group of managed tenants.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allTenantsIncluded|Boolean|A flag indicating whether all managed tenant are included in the tenant group.|
-|displayName|String|The display name for the tenant group.|
-|id|String|The unique identifier for the tenant group.|
-|managementActions|[microsoft.graph.managedTenants.managementActionInfo](../resources/managedtenants-managementactioninfo.md) collection|The collection of management action associated with the tenant group.|
-|managementIntents|[microsoft.graph.managedTenants.managementIntentInfo](../resources/managedtenants-managementintentinfo.md) collection|The collection of management intents associated with the tenant group.|
-|tenantIds|String collection|The collection of managed tenant identifiers include in the tenant group.|
+|allTenantsIncluded|Boolean|A flag indicating whether all managed tenant are included in the tenant group. Required. Read-only.|
+|displayName|String|The display name for the tenant group. Optional. Read-only.|
+|id|String|The unique identifier for the tenant group. Required. Read-only.|
+|managementActions|[microsoft.graph.managedTenants.managementActionInfo](../resources/managedtenants-managementactioninfo.md) collection|The collection of management action associated with the tenant group. Optional. Read-only.|
+|managementIntents|[microsoft.graph.managedTenants.managementIntentInfo](../resources/managedtenants-managementintentinfo.md) collection|The collection of management intents associated with the tenant group. Optional. Read-only.|
+|tenantIds|String collection|The collection of managed tenant identifiers include in the tenant group. Optional. Read-only.|
 
 ## Relationships
 None.

@@ -24,17 +24,17 @@ Represents detailed information for a managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|city|String|The city where the managed tenant is located.|
-|countryCode|String|The code for the country where the managed tenant is located.|
-|countryName|String|The name for the country where the managed tenant is located.|
-|defaultDomainName|String|The default domain name for the managed tenant.|
+|city|String|The city where the managed tenant is located. Optional. Read-only.|
+|countryCode|String|The code for the country where the managed tenant is located. Optional. Read-only.|
+|countryName|String|The name for the country where the managed tenant is located. Optional. Read-only.|
+|defaultDomainName|String|The default domain name for the managed tenant. Optional. Read-only.|
 |displayName|String|The display name for the managed tenant.|
-|id|String|The unique identifier for this entity.|
-|industryName|String|The business industry associated with the managed tenant.|
-|region|String|The region where the managed tenant is located.|
-|segmentName|String|The business segment associated with the managed tenant.|
+|id|String|The unique identifier for this entity. Required. Read-only.|
+|industryName|String|The business industry associated with the managed tenant. Optional. Read-only.|
+|region|String|The region where the managed tenant is located. Optional. Read-only.|
+|segmentName|String|The business segment associated with the managed tenant. Optional. Read-only.|
 |tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
-|verticalName|String|The vertical associated with the managed tenant.|
+|verticalName|String|The vertical associated with the managed tenant. Optional. Read-only.|
 
 ## Relationships
 None.

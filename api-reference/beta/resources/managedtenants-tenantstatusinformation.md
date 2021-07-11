@@ -18,14 +18,14 @@ Represents onboarding status information for a managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|delegatedPrivilegeStatus|delegatedPrivilegeStatus|The status of the delegated admin privilege relationship between the managing entity and the managed tenant. Possible values are: `none`, `delegatedAdminPrivileges`, `unknownFutureValue`.|
-|lastDelegatedPrivilegeRefreshDateTime|DateTimeOffset|The date and time the delegated admin privileges status was updated.|
-|offboardedByUserId|String|The identifier for the account that offboarded the managed tenant.|
-|offboardedDateTime|DateTimeOffset|The date and time when the managed tenant was offboarded.|
-|onboardedByUserId|String|The identifier for the account that onboarded the managed tenant.|
-|onboardedDateTime|DateTimeOffset|The date and time when the managed tenant was onboarded.|
-|onboardingStatus|tenantOnboardingStatus|The onboarding status for the managed tenant.. Possible values are: `ineligible`, `inProcess`, `active`, `inactive`, `unknownFutureValue`.|
-|workloadStatuses|[microsoft.graph.managedTenants.workloadStatus](../resources/managedtenants-workloadstatus.md) collection|The collection of workload statues for the managed tenant.|
+|delegatedPrivilegeStatus|delegatedPrivilegeStatus|The status of the delegated admin privilege relationship between the managing entity and the managed tenant. Possible values are: `none`, `delegatedAdminPrivileges`, `unknownFutureValue`. Optional. Read-only.|
+|lastDelegatedPrivilegeRefreshDateTime|DateTimeOffset|The date and time the delegated admin privileges status was updated. Optional. Read-only.|
+|offboardedByUserId|String|The identifier for the account that offboarded the managed tenant. Optional. Read-only.|
+|offboardedDateTime|DateTimeOffset|The date and time when the managed tenant was offboarded. Optional. Read-only.|
+|onboardedByUserId|String|The identifier for the account that onboarded the managed tenant. Optional. Read-only.|
+|onboardedDateTime|DateTimeOffset|The date and time when the managed tenant was onboarded. Optional. Read-only.|
+|onboardingStatus|tenantOnboardingStatus|The onboarding status for the managed tenant.. Possible values are: `ineligible`, `inProcess`, `active`, `inactive`, `unknownFutureValue`. Optional. Read-only.|
+|workloadStatuses|[microsoft.graph.managedTenants.workloadStatus](../resources/managedtenants-workloadstatus.md) collection|The collection of workload statues for the managed tenant. Optional. Read-only.|
 
 ## Relationships
 None.

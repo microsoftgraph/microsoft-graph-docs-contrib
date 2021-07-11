@@ -18,12 +18,12 @@ Represents an action that will be performed for a specific workload.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionId|String|The unique identifier for the workload action.|
-|category|workloadActionCategory|The category for the workload action. Possible values are: `automated`, `manual`, `unknownFutureValue`.|
-|description|String|The description for the workload action.|
-|displayName|String|The display name for the workload action.|
-|service|String|The service associated with workload action.|
-|settings|[microsoft.graph.managedTenants.setting](../resources/managedtenants-setting.md) collection|The collection of settings associated with the workload action.|
+|actionId|String|The unique identifier for the workload action. Required. Read-only.|
+|category|workloadActionCategory|The category for the workload action. Possible values are: `automated`, `manual`, `unknownFutureValue`. Optional. Read-only.|
+|description|String|The description for the workload action. Optional. Read-only.|
+|displayName|String|The display name for the workload action. Optional. Read-only.|
+|service|String|The service associated with workload action. Optional. Read-only.|
+|settings|[microsoft.graph.managedTenants.setting](../resources/managedtenants-setting.md) collection|The collection of settings associated with the workload action. Optional. Read-only.|
 
 ## Relationships
 None.

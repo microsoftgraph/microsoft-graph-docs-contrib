@@ -18,9 +18,9 @@ Represents detailed information for the management template.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|managementCategory|The management category for the management template. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`.|
-|displayName|String|The display name for the management template.|
-|managementTemplateId|String|The unique identifier for the management template.|
+|category|managementCategory|The management category for the management template. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`. Required. Read-only.|
+|displayName|String|The display name for the management template. Required. Read-only.|
+|managementTemplateId|String|The unique identifier for the management template. Required. Read-only.|
 
 ## Relationships
 None.

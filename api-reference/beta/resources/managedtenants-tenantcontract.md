@@ -18,9 +18,9 @@ Represents relationship information between a tenant and the managing entity.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|contractType|Int32|The type of relationship that exists between the managing entity and tenant.|
-|defaultDomainName|String|The default domain name for the tenant.|
-|displayName|String|The display name for the tenant.|
+|contractType|Int32|The type of relationship that exists between the managing entity and tenant. Optional. Read-only.|
+|defaultDomainName|String|The default domain name for the tenant. Required. Read-only.|
+|displayName|String|The display name for the tenant. Optional. Read-only.|
 
 ## Relationships
 None.

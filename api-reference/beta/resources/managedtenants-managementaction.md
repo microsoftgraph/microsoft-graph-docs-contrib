@@ -25,12 +25,12 @@ Represents a baseline management action for a given managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|managementCategory|The category for the management action. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`.|
-|description|String|The description for the management action.|
-|displayName|String|The display name for the management action.|
-|id|String|The unique identifier for the management action.|
-|referenceTemplateId|String|The reference for the management template used to generate the management action.|
-|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|The collection of workload actions associated with the management action.|
+|category|managementCategory|The category for the management action. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`. Optional. Read-only.|
+|description|String|The description for the management action. Optional. Read-only.|
+|displayName|String|The display name for the management action. Optional. Read-only.|
+|id|String|The unique identifier for the management action. Required. Read-only.|
+|referenceTemplateId|String|The reference for the management template used to generate the management action. Required. Read-only.|
+|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|The collection of workload actions associated with the management action. Required. Read-only.|
 
 ## Relationships
 None.

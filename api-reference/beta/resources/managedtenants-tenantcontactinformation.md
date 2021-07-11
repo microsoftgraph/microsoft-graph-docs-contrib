@@ -18,11 +18,11 @@ Represents a contact at a managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|email|String|The email address for the contact.|
-|name|String|The name for the contact.|
-|notes|String|The notes associated with the contact.|
-|phone|String|The phone number for the contact.|
-|title|String|The title for the contact.|
+|email|String|The email address for the contact. Optional|
+|name|String|The name for the contact. Required.|
+|notes|String|The notes associated with the contact. Optional|
+|phone|String|The phone number for the contact. Optional.|
+|title|String|The title for the contact. Required.|
 
 ## Relationships
 None.
