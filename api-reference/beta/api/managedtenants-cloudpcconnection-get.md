@@ -75,11 +75,12 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.cloudPcConnection",
-  "id": "105d8613-8613-105d-1386-5d1013865d10",
-  "displayName": "String",
-  "tenantId": "String",
-  "tenantDisplayName": "String",
-  "healthCheckStatus": "String",
-  "lastRefreshedDateTime": "String (timestamp)"
+  "id": "86789ee0-e31d-4bee-98e6-6f310bd327bb",
+  "lastUpdated": "2021-07-11T15:46:28.1243279Z",
+  "displayName": "Az-Connection-93ac6d62-7d78-4477-bd43-db5e2013864d",
+  "healthCheckStatus": "Failed",
+  "tenantId": "aa060093-1e81-45b4-bebc-652713194ef7",
+  "tenantDisplayName": "Lucerne Publishing",
+  "lastRefreshedDateTime": "2021-07-11T15:46:28.1243279Z"
 }
 ```

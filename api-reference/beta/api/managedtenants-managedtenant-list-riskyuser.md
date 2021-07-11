@@ -74,21 +74,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#riskyUsers",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.managedTenants.riskyUser",
-      "id": "491420ec-20ec-4914-ec20-1449ec201449",
-      "userId": "String",
-      "tenantId": "String",
-      "tenantDisplayName": "String",
-      "userDisplayName": "String",
-      "userPrincipalName": "String",
-      "riskState": "String",
-      "riskLevel": "String",
-      "riskDetail": "String",
-      "isDeleted": "Boolean",
-      "riskLastUpdatedDateTime": "String (timestamp)",
-      "lastRefreshedDateTime": "String (timestamp)"
+      "id": "34298981-4fc8-4974-9486-c8909ed1521b_ae8d3a3f-be95-429c-8063-635ccc16e899",
+      "userId": "ae8d3a3f-be95-429c-8063-635ccc16e899",
+      "userDisplayName": "Cynthia Becker",
+      "userPrincipalName": "cynthia@fourthcoffee002.onmicrosoft.com",
+      "riskState": "atRisk",
+      "riskLevel": "hidden",
+      "riskDetail": "hidden",
+      "isDeleted": false,
+      "riskLastUpdatedDateTime": "2021-06-10T13:58:34.5171907Z",
+      "lastRefreshedDateTime": "2021-07-11T11:32:55.2168558Z",
+      "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+      "tenantDisplayName": "Fourth Coffee"
+    },
+    {
+      "id": "38227791-a88b-4fcc-81c5-58cf77668320_05ec33c0-471d-4b1a-901c-093fc65c6401",
+      "userId": "05ec33c0-471d-4b1a-901c-093fc65c6401",
+      "userDisplayName": "Ina Anthony",
+      "userPrincipalName": "ianthony@consolidatedmessenger001.onmicrosoft.com",
+      "riskState": "atRisk",
+      "riskLevel": "hidden",
+      "riskDetail": "hidden",
+      "isDeleted": false,
+      "riskLastUpdatedDateTime": "2021-06-11T14:35:29.8061797Z",
+      "lastRefreshedDateTime": "2021-07-11T14:42:10.8700665Z",
+      "tenantId": "38227791-a88b-4fcc-81c5-58cf77668320",
+      "tenantDisplayName": "Consolidated Messenger"
     }
   ]
 }

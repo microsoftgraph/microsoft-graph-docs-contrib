@@ -60,7 +60,6 @@ If successful, this method returns a `200 OK` response code and a [credentialUse
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/credentialUserRegistrationsSummaries/{credentialUserRegistrationsSummaryId}
 ```
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -75,16 +74,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.credentialUserRegistrationsSummary",
-  "id": "aef28d78-8d78-aef2-788d-f2ae788df2ae",
-  "tenantId": "String",
-  "tenantDisplayName": "String",
-  "mfaAndSsprCapableUserCount": "Integer",
-  "ssprEnabledUserCount": "Integer",
-  "mfaRegisteredUserCount": "Integer",
-  "ssprRegisteredUserCount": "Integer",
-  "totalUserCount": "Integer",
-  "securityDefaultsEnabled": "Boolean",
-  "mfaConditionalAccessPolicyState": "String",
-  "lastRefreshedDateTime": "String (timestamp)"
+    "id": "34298981-4fc8-4974-9486-c8909ed1521b",
+    "mfaAndSsprCapableUserCount": 0,
+    "ssprEnabledUserCount": 1,
+    "mfaRegisteredUserCount": 0,
+    "ssprRegisteredUserCount": 0,
+    "totalUserCount": 7,
+    "securityDefaultsEnabled": false,
+    "mfaConditionalAccessPolicyState": "enabledForReportingButNotEnforced",
+    "lastRefreshedDateTime": "2021-07-11T11:15:52.9375367Z",
+    "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+    "tenantDisplayName": "Fourth Coffee"
 }
 ```

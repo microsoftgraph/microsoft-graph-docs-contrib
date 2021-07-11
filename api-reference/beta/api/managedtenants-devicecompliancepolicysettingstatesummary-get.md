@@ -75,19 +75,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.deviceCompliancePolicySettingStateSummary",
-  "id": "9f6922d9-5a58-4f4d-b6e3-708f7659e5b2",
-  "tenantId": "String",
-  "tenantDisplayName": "String",
-  "conflictDeviceCount": "Integer",
-  "errorDeviceCount": "Integer",
-  "failedDeviceCount": "Integer",
-  "intuneAccountId": "String",
-  "intuneSettingId": "String",
-  "notApplicableDeviceCount": "Integer",
-  "pendingDeviceCount": "Integer",
-  "policyType": "String",
-  "settingName": "String",
-  "succeededDeviceCount": "Integer",
-  "lastRefreshedDateTime": "String (timestamp)"
+    "id": "34298981-4fc8-4974-9486-c8909ed1521b_277f9230-81f7-ffc3-af78-4662ec3dca09",
+    "intuneAccountId": "6f3e6534-b466-4fac-9a31-4c305cc40833",
+    "intuneSettingId": "277f9230-81f7-ffc3-af78-4662ec3dca09",
+    "policyType": "DefaultDeviceCompliancePolicy",
+    "settingName": "RequireDeviceCompliancePolicyAssigned",
+    "failedDeviceCount": 0,
+    "errorDeviceCount": 4,
+    "conflictDeviceCount": 0,
+    "lastRefreshedDateTime": "2021-07-11T00:00:00Z",
+    "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+    "tenantDisplayName": "Fourth Coffee"
 }
 ```

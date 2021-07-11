@@ -74,24 +74,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#managedDeviceCompliances",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.managedTenants.managedDeviceCompliance",
-      "id": "c157c18d-c18d-c157-8dc1-57c18dc157c1",
-      "tenantId": "String",
-      "tenantDisplayName": "String",
-      "managedDeviceId": "String",
-      "managedDeviceName": "String",
-      "complianceStatus": "String",
-      "osDescription": "String",
-      "osVersion": "String",
-      "lastSyncDateTime": "String (timestamp)",
-      "ownerType": "String",
-      "model": "String",
-      "manufacturer": "String",
-      "inGracePeriodUntilDateTime": "String (timestamp)",
-      "lastRefreshedDateTime": "String (timestamp)",
-      "deviceType": "String"
+      "id": "38227791-a88b-4fcc-81c5-58cf77668320_6dd4fe4b-5ea2-4ab2-8ac4-7dd2995f1649",
+      "managedDeviceId": "6dd4fe4b-5ea2-4ab2-8ac4-7dd2995f1649",
+      "managedDeviceName": "VM2688",
+      "complianceStatus": "Noncompliant",
+      "osDescription": "Windows",
+      "osVersion": "10.0.19042.1083",
+      "lastSyncDateTime": "2021-07-09T14:38:56.379702Z",
+      "ownerType": "Company",
+      "model": "Virtual Machine",
+      "manufacturer": "Microsoft Corporation",
+      "inGracePeriodUntilDateTime": "2021-06-14T14:35:24.8225Z",
+      "lastRefreshedDateTime": "2021-07-11T07:03:54.0326474Z",
+      "deviceType": "WindowsRT",
+      "tenantId": "38227791-a88b-4fcc-81c5-58cf77668320",
+      "tenantDisplayName": "Consolidated Messenger"
+    },
+    {
+      "id": "38227791-a88b-4fcc-81c5-58cf77668320_49ed91f1-32ac-4881-9c1b-b709ba29e31b",
+      "managedDeviceId": "49ed91f1-32ac-4881-9c1b-b709ba29e31b",
+      "managedDeviceName": "VM4511",
+      "complianceStatus": "Noncompliant",
+      "osDescription": "Windows",
+      "osVersion": "10.0.19042.1052",
+      "lastSyncDateTime": "2021-07-09T14:41:57.8785122Z",
+      "ownerType": "Company",
+      "model": "Virtual Machine",
+      "manufacturer": "Microsoft Corporation",
+      "inGracePeriodUntilDateTime": "2021-06-14T14:36:09.1851Z",
+      "lastRefreshedDateTime": "2021-07-11T06:53:35.8484421Z",
+      "deviceType": "WindowsRT",
+      "tenantId": "38227791-a88b-4fcc-81c5-58cf77668320",
+      "tenantDisplayName": "Consolidated Messenger"
     }
   ]
 }

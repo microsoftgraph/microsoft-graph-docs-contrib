@@ -74,20 +74,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#credentialUserRegistrationsSummaries",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.managedTenants.credentialUserRegistrationsSummary",
-      "id": "aef28d78-8d78-aef2-788d-f2ae788df2ae",
-      "tenantId": "String",
-      "tenantDisplayName": "String",
-      "mfaAndSsprCapableUserCount": "Integer",
-      "ssprEnabledUserCount": "Integer",
-      "mfaRegisteredUserCount": "Integer",
-      "ssprRegisteredUserCount": "Integer",
-      "totalUserCount": "Integer",
-      "securityDefaultsEnabled": "Boolean",
-      "mfaConditionalAccessPolicyState": "String",
-      "lastRefreshedDateTime": "String (timestamp)"
+      "id": "38227791-a88b-4fcc-81c5-58cf77668320",
+      "mfaAndSsprCapableUserCount": 2,
+      "ssprEnabledUserCount": 9,
+      "mfaRegisteredUserCount": 3,
+      "ssprRegisteredUserCount": 2,
+      "totalUserCount": 9,
+      "securityDefaultsEnabled": false,
+      "mfaConditionalAccessPolicyState": "enabled",
+      "lastRefreshedDateTime": "2021-07-11T09:58:11.5730661Z",
+      "tenantId": "38227791-a88b-4fcc-81c5-58cf77668320",
+      "tenantDisplayName": "Consolidated Messenger"
+    },
+    {
+      "id": "34298981-4fc8-4974-9486-c8909ed1521b",
+      "mfaAndSsprCapableUserCount": 0,
+      "ssprEnabledUserCount": 1,
+      "mfaRegisteredUserCount": 0,
+      "ssprRegisteredUserCount": 0,
+      "totalUserCount": 7,
+      "securityDefaultsEnabled": false,
+      "mfaConditionalAccessPolicyState": "enabledForReportingButNotEnforced",
+      "lastRefreshedDateTime": "2021-07-11T11:15:52.9375367Z",
+      "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+      "tenantDisplayName": "Fourth Coffee"
     }
   ]
 }

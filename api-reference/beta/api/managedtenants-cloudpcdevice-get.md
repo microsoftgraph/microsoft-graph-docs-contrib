@@ -75,16 +75,19 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.managedTenants.cloudPcDevice",
-    "id": "0171daae-daae-0171-aeda-7101aeda7101",
-    "displayName": "String",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "managedDeviceId": "String",
-    "managedDeviceName": "String",
-    "userPrincipalName": "String",
-    "servicePlanName": "String",
-    "cloudPcStatus": "String",
-    "provisioningPolicyId": "String",
-    "lastRefreshedDateTime": "String (timestamp)"
+    "id": "1307ab1b-63ee-4942-bdef-bcd4f415c635",
+    "lastUpdated": "2021-07-10T23:05:03.2564744Z",
+    "policyId": "",
+    "displayName": "device01",
+    "managedDeviceId": "",
+    "managedDeviceName": "",
+    "userPrincipalName": "sally@lucernepublishing001.onmicrosoft.com",
+    "servicePlanName": "CloudPC_Standard",
+    "status": "NotProvisioned",
+    "tenantId": "aa060093-1e81-45b4-bebc-652713194ef7",
+    "tenantDisplayName": "Lucerne Publishing",
+    "lastRefreshedDateTime": "2021-07-10T23:05:03.2564744Z",
+    "provisioningPolicyId": "",
+    "cloudPcStatus": "NotProvisioned"
 }
 ```

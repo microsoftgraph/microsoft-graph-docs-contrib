@@ -74,21 +74,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#aggregatedPolicyCompliances",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.managedTenants.aggregatedPolicyCompliance",
-      "id": "1c33c14c-c14c-1c33-4cc1-331c4cc1331c",
-      "tenantId": "String",
-      "tenantDisplayName": "String",
-      "compliancePolicyId": "String",
-      "compliancePolicyName": "String",
-      "compliancePolicyType": "String",
-      "compliancePolicyPlatform": "String",
-      "numberOfCompliantDevices": "Integer",
-      "numberOfNonCompliantDevices": "Integer",
-      "numberOfErrorDevices": "Integer",
-      "policyModifiedDateTime": "String (timestamp)",
-      "lastRefreshedDateTime": "String (timestamp)"
+      "id": "34298981-4fc8-4974-9486-c8909ed1521b_19a8d6a6-d87e-4059-85b3-c73bfc5cea15",
+      "compliancePolicyId": "19a8d6a6-d87e-4059-85b3-c73bfc5cea15",
+      "compliancePolicyName": "Baseline - Setup Compliance Policy for Windows devices",
+      "compliancePolicyType": "Unknown",
+      "compliancePolicyPlatform": "Windows10",
+      "numberOfCompliantDevices": 0,
+      "numberOfNonCompliantDevices": 0,
+      "numberOfErrorDevices": 0,
+      "policyModifiedDateTime": "2021-06-22T17:01:46Z",
+      "lastRefreshedDateTime": "2021-07-11T01:02:33.4452876Z",
+      "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+      "tenantDisplayName": "Fourth Coffee"
+    },
+    {
+      "id": "34298981-4fc8-4974-9486-c8909ed1521b_3e4b612f-5ce0-42f6-9e21-a172adc5100d",
+      "compliancePolicyId": "3e4b612f-5ce0-42f6-9e21-a172adc5100d",
+      "compliancePolicyName": "Windows Level 2 Compliance Policy",
+      "compliancePolicyType": "Unknown",
+      "compliancePolicyPlatform": "Windows10",
+      "numberOfCompliantDevices": 4,
+      "numberOfNonCompliantDevices": 0,
+      "numberOfErrorDevices": 0,
+      "policyModifiedDateTime": "2021-04-20T22:27:20Z",
+      "lastRefreshedDateTime": "2021-07-11T01:02:33.4452876Z",
+      "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+      "tenantDisplayName": "Fourth Coffee"
     }
   ]
 }

@@ -75,15 +75,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.managedDeviceComplianceTrend",
-  "id": "42fa314b-314b-42fa-4b31-fa424b31fa42",
-  "tenantId": "String",
-  "tenantDisplayName": "String",
-  "unknownDeviceCount": "Integer",
-  "compliantDeviceCount": "Integer",
-  "noncompliantDeviceCount": "Integer",
-  "errorDeviceCount": "Integer",
-  "inGracePeriodDeviceCount": "Integer",
-  "configManagerDeviceCount": "Integer",
-  "countDateTime": "String"
+  "id": "34298981-4fc8-4974-9486-c8909ed1521b_2021-07-11T00:00:00Z",
+  "tenantDisplayName": "Fourth Coffee",
+  "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
+  "unknownDeviceCount": 2,
+  "compliantDeviceCount": 0,
+  "noncompliantDeviceCount": 41,
+  "errorDeviceCount": 1,
+  "inGracePeriodDeviceCount": 0,
+  "configManagerDeviceCount": 0,
+  "totalDeviceCount": 44,
+  "countDateTime": "2021-07-11T00:00:00Z"
 }
 ```

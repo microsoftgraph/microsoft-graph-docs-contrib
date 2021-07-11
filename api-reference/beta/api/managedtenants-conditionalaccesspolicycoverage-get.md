@@ -75,10 +75,10 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.conditionalAccessPolicyCoverage",
-  "id": "877e299c-299c-877e-9c29-7e879c297e87",
-  "tenantDisplayName": "String",
-  "conditionalAccessPolicyState": "String",
-  "requiresDeviceCompliance": "Boolean",
-  "latestPolicyModifiedDateTime": "String (timestamp)"
+  "id": "38227791-a88b-4fcc-81c5-58cf77668320",
+  "conditionalAccessPolicyState": "enabled",
+  "requiresDeviceCompliance": false,
+  "latestPolicyModifiedDateTime": "2021-07-11T14:56:13.598304Z",
+  "tenantDisplayName": "Consolidated Messenger"
 }
 ```
