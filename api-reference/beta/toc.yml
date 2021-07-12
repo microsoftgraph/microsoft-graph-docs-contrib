@@ -28,6 +28,11 @@ items:
       href: /graph/paging?context=graph/api/beta
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/beta
+      items:
+      - name: Use the search query parameter
+        href: /graph/search-query-parameter?context=graph/api/beta
+      - name: Advanced query capabilities
+        href: /graph/aad-advanced-queries?context=graph/api/beta
     - name: Batching
       displayName: Batch requests
       href: /graph/json-batching?context=graph/api/beta
@@ -214,6 +219,8 @@ items:
           href: api/user-update.md
         - name: Delete user
           href: api/user-delete.md
+        - name: Change password
+          href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
         - name: Invalidate refresh tokens
@@ -9555,6 +9562,8 @@ items:
             href: api/cloudpcdeviceimage-delete.md
           - name: Get source images
             href: api/cloudpcdeviceimage-getsourceimages.md
+          - name: Reupload
+            href: api/cloudpcdeviceimage-reupload.md
         - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:
@@ -9587,6 +9596,15 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Cloud PC audit event
+          href: resources/cloudpcauditevent.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-auditevents.md
+          - name: Get
+            href: api/cloudpcauditevent-get.md
+          - name: Get audit activity types
+            href: api/cloudpcauditevent-getauditactivitytypes.md
         - name: Cloud PC user setting
           href: resources/cloudpcusersetting.md
           items:
@@ -9605,6 +9623,33 @@ items:
         - name: Role management
           href: resources/rolemanagement.md
           items:
+          - name: Role management policy
+            href: resources/unifiedRoleManagementPolicy.md
+            items:
+            - name: List
+              href: api/unifiedrolemanagementpolicy-list.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List effective rules
+              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+          - name: Role management policy assignment
+            href: resources/unifiedRoleManagementPolicyAssignment.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyAssignment-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyAssignment-get.md
+          - name: Role management policy rule
+            href: resources/unifiedRoleManagementPolicyRule.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyRule-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyRule-get.md
+            - name: Update
+              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Role definition
             href: resources/unifiedroledefinition.md
             items:
@@ -10624,8 +10669,6 @@ items:
               href: api/unifiedroleassignmentschedulerequest-get.md
             - name: Create
               href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
-            - name: Update
-              href: api/unifiedroleassignmentschedulerequest-update.md
             - name: Cancel
               href: api/unifiedroleassignmentschedulerequest-cancel.md
             - name: Filter by current user
@@ -10639,8 +10682,6 @@ items:
               href: api/unifiedroleeligibilityschedulerequest-get.md
             - name: Create
               href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
-            - name: Update
-              href: api/unifiedroleeligibilityschedulerequest-update.md
             - name: Cancel
               href: api/unifiedroleeligibilityschedulerequest-cancel.md
             - name: Filter by current user
@@ -11224,33 +11265,6 @@ items:
                   href: api/permissiongrantpolicy-post-excludes.md
                 - name: Delete from excludes
                   href: api/permissiongrantpolicy-delete-excludes.md
-          - name: Role management policy
-            href: resources/unifiedRoleManagementPolicy.md
-            items:
-            - name: List
-              href: api/unifiedrolemanagementpolicy-list.md
-            - name: Get
-              href: api/unifiedrolemanagementpolicy-get.md
-            - name: List effective rules
-              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
-            - name: List rules
-              href: api/unifiedrolemanagementpolicy-list-rules.md
-          - name: Role management policy assignment
-            href: resources/unifiedRoleManagementPolicyAssignment.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyAssignment-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyAssignment-get.md
-          - name: Role management policy rule
-            href: resources/unifiedRoleManagementPolicyRule.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyRule-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyRule-get.md
-            - name: Update
-              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
