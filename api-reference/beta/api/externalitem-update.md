@@ -137,6 +137,7 @@ Content-type: application/json
   "id": "TSP228082938",
   "acl": [
     {
+      "@odata.type": "microsoft.graph.externalConnectors.acl",
       "type": "everyone",
       "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
