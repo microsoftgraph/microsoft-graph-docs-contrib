@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 Represent the various type of tenant relationships.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
+
+None.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+None.
 
 ## Relationships
 |Relationship|Type|Description|
