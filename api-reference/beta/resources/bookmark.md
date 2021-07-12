@@ -44,7 +44,7 @@ Inherits from [searchAnswer](../resources/searchanswer.md).
 |targetedVariations|[microsoft.graph.search.answerVariant](../resources/answervariant.md) collection|Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
 |powerAppIds|String collection|PowerApp ids for this bookmark. By adding existing PowerApps to a Bookmark, users can complete tasks like entering vacation time or reporting expenses on the search results page.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/answerkeyword.md)|Keywords that trigger this bookmark to appear in search results.|
-|state|microsoft.graph.search.answerState|State of the bookmark. Possible values are: `published`, `draft`, `excluded`.|
+|state|String|State of the bookmark. Possible values are: `published`, `draft`, `excluded`.|
 |isSuggested|Boolean|True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft. Read only.|
 |groupIds|String collection|List of security groups able to view this bookmark.|
 

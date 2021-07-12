@@ -30,7 +30,7 @@ Inherits from [searchAnswer](../resources/searchanswer.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Guid id of the qna. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|Guid id of the qna. Inherited from [entity](../resources/entity.md).|
 |displayName|String|Question displayed in search results. Inherited from [searchAnswer](../resources/searchanswer.md).|
 |description|String|Answer displayed in search results. Inherited from [searchAnswer](../resources/searchanswer.md).|
 |webUrl|String|Qna url link. When users click this qna in search results they will go to this url. Inherited from [searchAnswer](../resources/searchanswer.md).|
@@ -42,7 +42,7 @@ Inherits from [searchAnswer](../resources/searchanswer.md).
 |platforms|microsoft.graph.platform collection|List of devices and OS able to view this qna. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |targetedVariations|[microsoft.graph.search.answerVariant](../resources/answerVariant.md) collection|Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/answerkeyword.md)|Keywords that trigger this qna to appear in search results.|
-|state|microsoft.graph.search.answerState|State of the qna. Possible values are: `published`, `draft`, `excluded`.|
+|state|String|State of the qna. Possible values are: `published`, `draft`, `excluded`.|
 |isSuggested|Boolean| True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read only.|
 |groupIds|String collection|List of security groups able to view this qna.|
 

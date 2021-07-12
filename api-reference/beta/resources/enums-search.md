@@ -18,3 +18,10 @@ Namespace: microsoft.graph.search
 |Published|
 |Draft|
 |Excluded|
+
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.search"
+}
+-->

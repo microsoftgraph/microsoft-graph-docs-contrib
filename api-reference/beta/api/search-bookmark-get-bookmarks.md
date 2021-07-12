@@ -76,7 +76,7 @@ Content-Type: application/json
   "displayName": "Italy Holiday",
   "webUrl": "http://www.margiestravel.com/",
   "description": "Book a fancy vacation in Tuscany or browse museums in Florence.",
-  "lastModifiedDateTime": 2016-03-21T20:01:37Z,
+  "lastModifiedDateTime": "2016-03-21T20:01:37Z",
   "lastModifiedBy": {
     "user": {
         "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
@@ -89,8 +89,8 @@ Content-Type: application/json
     "matchSimilarKeywords": true
   },
   "categories": ["HR"],
-  "availabilityStartDateTime": 2020-09-21T20:01:37Z,
-  "availabilityEndDateTime": 2020-11-21T20:01:37Z,
+  "availabilityStartDateTime": "2020-09-21T20:01:37Z",
+  "availabilityEndDateTime": "2020-11-21T20:01:37Z",
   "languageTags": ["en-US"],
   "platforms": ["ios"],
   "groupIds": ["groupId"],

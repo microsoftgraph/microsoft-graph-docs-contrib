@@ -76,7 +76,7 @@ Content-Type: application/json
     "displayName": "Global Country Holidays",
     "webUrl": "http://www.contoso.com/",
     "description": "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a wee​kend.",
-    "lastModifiedDateTime": 2016-03-21T20:01:37Z,
+    "lastModifiedDateTime": "2016-03-21T20:01:37Z",
     "lastModifiedBy": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
@@ -88,8 +88,8 @@ Content-Type: application/json
       "reservedKeywords": ["holidays", "paid days off"],
       "matchSimilarKeywords": true
     },
-    "availabilityStartDateTime": 2020-09-21T20:01:37Z,
-    "availabilityEndDateTime": 2021-12-31T20:01:37Z,
+    "availabilityStartDateTime": "2020-09-21T20:01:37Z",
+    "availabilityEndDateTime": "2021-12-31T20:01:37Z",
     "languageTags": ["en-US"],
     "platforms": ["ios"],
     "groupIds": ["groupId"],
