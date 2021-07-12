@@ -63,6 +63,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "properties": "Object",
   "content": {
+    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
     "value": "String",
     "type": "text"
   }
