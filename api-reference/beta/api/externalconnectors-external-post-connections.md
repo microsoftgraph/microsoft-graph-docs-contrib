@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [externalConnection](../resources/externalconnection.md).
+Create a new [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Permissions
 
@@ -43,11 +43,11 @@ POST /external/connections
 
 ## Request body
 
-In the request body, supply a JSON representation of an [externalConnection](../resources/externalconnection.md) object.
+In the request body, supply a JSON representation of an [externalConnection](../resources/externalconnectors-externalconnection.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a new [externalConnection](../resources/externalconnection.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [externalConnection](../resources/externalconnectors-externalconnection.md) object in the response body.
 
 ## Examples
 

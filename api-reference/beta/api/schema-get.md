@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a [schema](../resources/schema.md) for an [externalConnection](../resources/externalconnection.md).
+Retrieve the properties of a [schema](../resources/schema.md) for an [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Permissions
 

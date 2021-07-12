@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [externalConnection](../resources/externalconnection.md).
+Update the properties of an [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Permissions
 

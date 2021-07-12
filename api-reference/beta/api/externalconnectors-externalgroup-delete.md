@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [externalGroup](../resources/externalgroup.md) object.
+Delete an [externalGroup](../resources/externalconnectors-externalgroup.md) object.
 
 ## Permissions
 

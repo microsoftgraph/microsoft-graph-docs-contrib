@@ -26,7 +26,7 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 | Use cases                                        | REST resources                              | See also |
 |:-------------------------------------------------|:--------------------------------------------|:--|
 | **Configuration actions**                        |                                             |   |
-| Create, update, or delete a connection           | [externalConnection](externalconnection.md) | [externalConnection methods](externalconnection.md#methods) |
+| Create, update, or delete a connection           | [externalConnection](externalconnectors-externalconnection.md) | [externalConnection methods](externalconnectors-externalconnection.md#methods) |
 | Register a schema for the external data          | [schema](schema.md)                         | [schema methods](schema.md#methods) |
 | **Indexing actions**                             |                                             |   |
 | Add, update or delete a custom item in the index | [externalItem](externalitem.md)             | [externalItem methods](externalItem.md#methods) |
@@ -50,7 +50,7 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 ## Next steps
 
 - See the [Microsoft Search API overview](/graph/search-concept-overview).
-- Drill down on the methods, properties, and relationships of the [externalConnection](externalconnection.md), [schema](schema.md), and [externalItem](externalitem.md) resources.
+- Drill down on the methods, properties, and relationships of the [externalConnection](externalconnectors-externalconnection.md), [schema](schema.md), and [externalItem](externalitem.md) resources.
 - Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
 
 

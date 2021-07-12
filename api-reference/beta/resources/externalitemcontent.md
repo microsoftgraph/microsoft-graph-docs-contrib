@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The content of an [externalItem](externalitem.md) indexed via a Microsoft Search [connection](externalconnection.md).
+The content of an [externalItem](externalitem.md) indexed via a Microsoft Search [connection](externalconnectors-externalconnection.md).
 
 ## Properties
 

@@ -38,7 +38,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | String | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
+| connection-id | String | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
 | item-id       | String | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
 
 ## Request headers
@@ -56,7 +56,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-----------|:--------------------------------------|:--------------------------|
 | acl        | [microsoft.graph.externalConnectors.acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
 | content    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
-| properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md). |
+| properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnectors-externalconnection.md). |
 
 ### Updating the acl collection
 

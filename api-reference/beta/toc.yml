@@ -12980,7 +12980,7 @@ items:
         - name: External connection
           items:
           - name: External connection
-            href: resources/externalconnection.md
+            href: resources/externalconnectors-externalconnection.md
           - name: List external connections
             href: api/externalconnectors-externalconnection-list.md
           - name: Create external connection
@@ -12988,7 +12988,7 @@ items:
           - name: Get external connection
             href: api/externalconnectors-externalconnection-get.md
           - name: Update external connection
-            href: api/externalconnection-update.md
+            href: api/externalconnectors-externalconnection-update.md
           - name: Delete external connection
             href: api/externalconnectors-externalconnection-delete.md
           - name: Get operation
@@ -13016,21 +13016,21 @@ items:
         - name: External group
           items:
           - name: External group
-            href: resources/externalgroup.md
+            href: resources/externalconnectors-externalgroup.md
           - name: Create external group
-            href: api/externalconnection-post-groups.md
+            href: api/externalconnectors-externalconnection-post-groups.md
           - name: Delete external group
-            href: api/externalgroup-delete.md
+            href: api/externalconnectors-externalgroup-delete.md
           - name: Create external group members
-            href: api/externalgroup-post-members.md
+            href: api/externalconnectors-externalgroup-post-members.md
         - name: External group member
           items:
           - name: External group member
-            href: resources/externalgroupmember.md
+            href: resources/externalconnectors-externalgroupmember.md
           - name: Create external group member
-            href: api/externalgroup-post-members.md
+            href: api/externalconnectors-externalgroup-post-members.md
           - name: Delete external group member
-            href: api/externalgroupmember-delete.md
+            href: api/externalconnectors-externalgroupmember-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:

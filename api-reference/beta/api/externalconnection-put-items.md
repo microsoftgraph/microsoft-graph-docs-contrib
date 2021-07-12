@@ -16,7 +16,7 @@ Namespace: microsoft.graph.externalConnectors
 
 Create a new [externalItem](../resources/externalitem.md).
 
-This API can be used to create a custom item. The containing [externalConnection](../resources/externalconnection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.
+This API can be used to create a custom item. The containing [externalConnection](../resources/externalconnectors-externalconnection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.
 
 ## Permissions
 
@@ -40,7 +40,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | String | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
+| connection-id | String | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
 | item-id       | String | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it is overwritten by the object sent in the body. |
 
 ## Request headers

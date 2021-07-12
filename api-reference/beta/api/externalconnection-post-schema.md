@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create the schema for a Microsoft Search [connection](../resources/externalconnection.md).
+Create the schema for a Microsoft Search [connection](../resources/externalconnectors-externalconnection.md).
 
 ## Permissions
 

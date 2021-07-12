@@ -38,7 +38,7 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | String | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
+| connection-id | String | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
 | item-id       | String | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
 
 ## Request headers

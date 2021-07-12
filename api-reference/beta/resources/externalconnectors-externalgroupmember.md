@@ -14,14 +14,14 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a member of an [externalGroup](externalgroup.md) used to set permissions on external content added to Microsoft Graph.
+Represents a member of an [externalGroup](externalconnectors-externalgroup.md) used to set permissions on external content added to Microsoft Graph.
 
 ## Methods
 
 | Method                                                              | Return type         | Description                              |
 |:--------------------------------------------------------------------|:--------------------|:-----------------------------------------|
-| [Create externalGroupMember](../api/externalgroup-post-members.md) | [externalGroupMember](../resources/externalgroupmember.md) | Create a new **externalGroupMember** object. |
-| [Delete externalGroupMember](../api/externalgroupmember-delete.md)  | None                | Delete an **externalGroupMember** object.   |
+| [Create externalGroupMember](../api/externalconnectors-externalgroup-post-members.md) | [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) | Create a new **externalGroupMember** object. |
+| [Delete externalGroupMember](../api/externalconnectors-externalgroupmember-delete.md)  | None                | Delete an **externalGroupMember** object.   |
 
 ## Properties
 

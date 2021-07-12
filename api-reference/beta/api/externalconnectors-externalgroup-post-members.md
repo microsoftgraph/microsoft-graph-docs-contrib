@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [externalGroupMember](../resources/externalgroupmember.md) object.
+Create a new [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) object.
 
 ## Permissions
 
@@ -46,9 +46,9 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## Request body
 
-In the request body, supply a JSON representation of the [externalGroupMember](../resources/externalgroupmember.md) object.
+In the request body, supply a JSON representation of the [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) object.
 
-The following table shows the properties that are required when you create the [externalGroupMember](../resources/externalgroupmember.md).
+The following table shows the properties that are required when you create the [externalGroupMember](../resources/externalconnectors-externalgroupmember.md).
 
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
@@ -58,7 +58,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [externalGroupMember](../resources/externalgroupmember.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) object in the response body.
 
 ## Examples
 
