@@ -12992,7 +12992,7 @@ items:
           - name: Delete external connection
             href: api/externalconnection-delete.md
           - name: Get operation
-            href: api/connectionoperation-get.md
+            href: api/externalconnectors-connectionoperation-get.md
         - name: Schema
           items:
           - name: Schema

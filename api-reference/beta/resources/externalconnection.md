@@ -26,7 +26,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | [Update externalConnection](../api/externalconnection-update.md) | externalConnection                            | Update a externalConnection object. |
 | [Delete externalConnection](../api/externalconnection-delete.md) | None                                          | Delete a externalConnection object. |
 | [Create schema](../api/externalconnection-post-schema.md)        | None *or* [schema](schema.md)                 | Register connection schema. |
-| [Get operation](../api/connectionoperation-get.md)               | [connectionOperation](connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
+| [Get operation](../api/externalconnectors-connectionoperation-get.md)               | [connectionOperation](connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
 | [Create externalItem](../api/externalconnection-put-items.md)    | [externalItem](externalitem.md)               | Create a new externalItem by posting to the items collection. |
 
 ## Properties

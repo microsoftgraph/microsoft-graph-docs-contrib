@@ -20,7 +20,7 @@ Describes status of an asynchronous request to create a Microsoft Search connect
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get connectionOperation](../api/connectionoperation-get.md) | [connectionOperation](connectionoperation.md) | Read properties of a connectionOperation object. |
+| [Get connectionOperation](../api/externalconnectors-connectionoperation-get.md) | [connectionOperation](connectionoperation.md) | Read properties of a connectionOperation object. |
 
 ## Properties
 
