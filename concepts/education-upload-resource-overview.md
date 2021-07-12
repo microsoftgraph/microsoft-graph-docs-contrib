@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Education upload resource overview
 
-Resources are integral part of [educationAssignment](../resources/educationassignment.md) and [educationSubmission](../resources/educationsubmission.md). 
+Resources are integral part of [educationAssignment](/graph/api/resources/educationassignment.md) and [educationSubmission](/graph/api/resources/educationsubmission.md). 
 
 Teacher determines the resources to upload in the assignment's folder, and a student determines the resources to upload in the submission's folder.
 
@@ -17,10 +17,10 @@ Teacher determines the resources to upload in the assignment's folder, and a stu
 
 Setup a SharePoint folder to upload files for a given assignment or submission. 
 
-| Action  | Beta endpoint    | v1.0  endpoint   |
-|:--------|:----------|:----------|
-| Setup a SharePoint folder for a given [educationAssignment](../resources/educationassignment.md) | [HowTo](../api-reference/beta/api/educationassignment-setupresourcesfolder.md)| [HowTo](../api-reference/v1.0/api/educationassignment-setupresourcesfolder.md)|
-| Setup a SharePoint folder for a given [educationSubmission](../resources/educationsubmission.md) | [HowTo](../api-reference/beta/api/educationsubmission-setupresourcesfolder.md)| [HowTo](../api-reference/v1.0/api/educationsubmission-setupresourcesfolder.md)|
+| Action  |  endpoint    |
+|:--------|:----------|
+| Setup a SharePoint folder for a given [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) |
+| Setup a SharePoint folder for a given [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true) |
 
 ## Upload a resource
 
@@ -47,7 +47,7 @@ https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4
 
 ### Step 2.
 
-PUT `{upload Url}` to upload the content. Refer to [this](https://docs.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) documentation for more details.
+PUT `{upload Url}` to upload the content. Refer to [this](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) documentation for more details.
 
 #### Example Request
 ```http
@@ -117,7 +117,7 @@ e.g.
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
 
 ### Step 4.
-Use the `fileUrl` in the request body to [POST Assignment Resource]https://docs.microsoft.com/en-us/graph/api/educationassignment-post-resources?view=graph-rest-beta)
+Use the `fileUrl` in the request body to [POST Assignment Resource]/graph/api/educationassignment-post-resources?view=graph-rest-beta)
 
 #### Example Request 
 
