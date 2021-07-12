@@ -21,7 +21,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | Method                                                           | Return Type                                   | Description |
 |:-----------------------------------------------------------------|:----------------------------------------------|:--|
 | [Create externalConnection](../api/externalconnectors-external-post-connections.md) | externalConnection                            | Create a new externalConnection by posting to the connections collection. |
-| [List externalConnections](../api/externalconnection-list.md)    | externalConnection collection                 | Get a externalConnection object collection. |
+| [List externalConnections](../api/externalconnectors-externalconnection-list.md)    | externalConnection collection                 | Get a externalConnection object collection. |
 | [Get externalConnection](../api/externalconnectors-externalconnection-get.md)       | externalConnection                            | Read properties and relationships of a externalConnection object. |
 | [Update externalConnection](../api/externalconnection-update.md) | externalConnection                            | Update a externalConnection object. |
 | [Delete externalConnection](../api/externalconnectors-externalconnection-delete.md) | None                                          | Delete a externalConnection object. |

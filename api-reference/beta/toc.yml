@@ -12982,7 +12982,7 @@ items:
           - name: External connection
             href: resources/externalconnection.md
           - name: List external connections
-            href: api/externalconnection-list.md
+            href: api/externalconnectors-externalconnection-list.md
           - name: Create external connection
             href: api/externalconnectors-external-post-connections.md
           - name: Get external connection
