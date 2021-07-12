@@ -149,6 +149,7 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
+    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
     "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
     "type": "html"
   }
