@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of an [externalitem](../resources/externalitem.md) object.
+Get the properties and relationships of an [externalitem](../resources/externalconnectors-externalitem.md) object.
 
 This API is provided for diagnostic purposes only. It is not intended to be used for any other purpose. Repeated requests to this API might result in `429` HTTP errors.
 
@@ -41,7 +41,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## Optional query parameters
 
@@ -59,7 +59,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [externalItem](../resources/externalitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [externalItem](../resources/externalconnectors-externalitem.md) object in the response body.
 
 ## Example
 

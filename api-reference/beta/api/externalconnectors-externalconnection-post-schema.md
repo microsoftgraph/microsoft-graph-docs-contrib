@@ -44,7 +44,7 @@ POST /external/connections/{id}/schema
 
 ## Request body
 
-In the request body, supply a JSON representation of a [schema](../resources/schema.md) object.
+In the request body, supply a JSON representation of a [schema](../resources/externalconnectors-schema.md) object.
 
 When registering a custom item schema, the `schema` object MUST have the `baseType` property set to `microsoft.graph.externalItem` and MUST contain the `properties` property. The `properties` object must contain at least one property, up to a maximum of 64.
 
@@ -52,7 +52,7 @@ When registering a custom item schema, the `schema` object MUST have the `baseTy
 
 With the `Prefer: respond-async` header included in the request, if successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/externalconnectors-connectionoperation-get.md).
 
-Without the `Prefer: respond-async` header included in the request, if successful, this method returns a `201 Created` response code and a new [schema](../resources/schema.md) object in the response body.
+Without the `Prefer: respond-async` header included in the request, if successful, this method returns a `201 Created` response code and a new [schema](../resources/externalconnectors-schema.md) object in the response body.
 
 > [!NOTE]
 > Creating a schema is a long-running process prone to gateway timeouts. We recommend using the `Prefer: respond-async` header to avoid timeout errors.

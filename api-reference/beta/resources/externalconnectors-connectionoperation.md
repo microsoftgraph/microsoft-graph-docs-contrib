@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes status of an asynchronous request to create a Microsoft Search connection [schema](schema.md).
+Describes status of an asynchronous request to create a Microsoft Search connection [schema](externalconnectors-schema.md).
 
 ## Methods
 

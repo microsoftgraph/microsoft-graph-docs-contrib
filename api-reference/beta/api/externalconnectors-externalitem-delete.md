@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [externalitem](../resources/externalitem.md).
+Delete an [externalitem](../resources/externalconnectors-externalitem.md).
 
 ## Permissions
 
@@ -39,7 +39,7 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | String | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | String | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
+| item-id       | String | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## Request headers
 

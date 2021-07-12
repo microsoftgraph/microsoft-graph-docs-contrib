@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [schema](schema.md) property definition for a Microsoft Search [connection](externalconnectors-externalconnection.md).
+A [schema](externalconnectors-schema.md) property definition for a Microsoft Search [connection](externalconnectors-externalconnection.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 

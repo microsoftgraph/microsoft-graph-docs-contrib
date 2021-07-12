@@ -20,15 +20,15 @@ The [connection](externalconnectors-externalconnection.md) schema determines how
 
 | Method                                                    | Return Type                   | Description |
 |:----------------------------------------------------------|:------------------------------|:--|
-| [Create schema](../api/externalconnection-post-schema.md) | None *or* [schema](schema.md) | Register connection schema. |
-| [Get schema](../api/schema-get.md)                        | [schema](schema.md)           | Read properties of a schema object. |
+| [Create schema](../api/externalconnectors-externalconnection-post-schema.md) | None *or* [schema](externalconnectors-schema.md) | Register connection schema. |
+| [Get schema](../api/externalconnectors-schema-get.md)                        | [schema](externalconnectors-schema.md)           | Read properties of a schema object. |
 
 ## Properties
 
 | Property   | Type                               | Description                |
 |:-----------|:-----------------------------------|:---------------------------|
 | baseType   | String                             | Must be set to `microsoft.graph.externalItem`. Required. |
-| properties | [property](property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128. |
+| properties | [property](externalconnectors-property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128. |
 
 ## Relationships
 
