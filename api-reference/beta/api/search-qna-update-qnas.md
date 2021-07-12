@@ -72,8 +72,7 @@ If successful, this method returns a `204 No Content` response code.
 <!-- {
   "blockType": "request",
   "name": "update_qna"
-}
--->
+}-->
 ``` http
 PATCH https://graph.microsoft.com/beta/qna/{qnaId}
 Content-Type: application/json
@@ -89,8 +88,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true
-}
--->
+}-->
 ``` http
 HTTP/1.1 204 No Content
 ```

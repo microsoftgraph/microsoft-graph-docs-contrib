@@ -71,11 +71,11 @@ If successful, this method returns a `201 Created` response code with the id of 
 ## Examples
 
 ### Request
-<!-- {
+<!--{
   "blockType": "request",
   "name": "create_bookmark_from_bookmarks"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/beta/bookmarks
 
 Authorization: Bearer AAD_PFT_TOKEN
@@ -116,7 +116,7 @@ Content-Type: application/json
   "blockType": "response",
   "truncated": true
 }-->
-``` http
+```http
 HTTP/1.1 201 CREATED
 Location: /733b26d5-af76-4eea-ac69-1a0ce8716897
 Content-Type: application/json

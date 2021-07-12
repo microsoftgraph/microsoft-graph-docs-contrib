@@ -71,9 +71,9 @@ If successful, this method returns a `201 Created` response code with the id of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_qna_from_"
+  "name": "create_qna_from_qnas"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/beta/qnas
 Content-Type: application/json
 
@@ -109,12 +109,11 @@ Content-Type: application/json
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
-<!-- {
+<!--{
   "blockType": "response",
   "truncated": true
-}
--->
-``` http
+}-->
+```http
 HTTP/1.1 201 CREATED
 Location: /733b26d5-af76-4eea-ac69-1a0ce8716897
 Content-Type: application/json
