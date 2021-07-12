@@ -71,7 +71,7 @@ If successful, this method returns a `201 Created` response code with the id of 
 ## Examples
 
 ### Request
-<!--{
+<!-- {
   "blockType": "request",
   "name": "create_bookmark_from_bookmarks"
 }-->
@@ -114,7 +114,8 @@ Content-Type: application/json
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.search.bookmark"
 }-->
 ```http
 HTTP/1.1 201 CREATED
