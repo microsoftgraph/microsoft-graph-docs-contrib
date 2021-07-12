@@ -219,6 +219,8 @@ items:
           href: api/user-update.md
         - name: Delete user
           href: api/user-delete.md
+        - name: Change password
+          href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
         - name: Invalidate refresh tokens
@@ -9560,6 +9562,8 @@ items:
             href: api/cloudpcdeviceimage-delete.md
           - name: Get source images
             href: api/cloudpcdeviceimage-getsourceimages.md
+          - name: Reupload
+            href: api/cloudpcdeviceimage-reupload.md
         - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:

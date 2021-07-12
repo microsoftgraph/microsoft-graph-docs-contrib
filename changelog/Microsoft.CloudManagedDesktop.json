@@ -1,6 +1,24 @@
 {
     "changelog": [
         {
+            "ChangeList": [
+                {
+                    "Id": "632170da-397c-415a-854d-993e3b1e2349",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "reupload",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [reupload](https://docs.microsoft.com/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-beta) method to the [cloudPcDeviceImage](https://docs.microsoft.com/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDeviceImage"
+                }
+            ],
+            "Id": "632170da-397c-415a-854d-993e3b1e2349",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-098T14:30:43.735Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [{
                 "Id": "3467da3f-b955-11eb-b432-abd44c4c47a3",
                 "ApiChange": "Property",
@@ -225,6 +243,40 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-29T07:45:15.1242441Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "aadConnectivityCheckUnknownError",
+                    "ChangeType": "Change",
+                    "Description": "Changed the `aadConnectivityCheckUnknownError` member to `azureAdDeviceSyncCheckUnknownError` in the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckDeviceNotFound",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckDeviceNotFound` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckLongSyncCircle",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckLongSyncCircle` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-07T13:43:07.177Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
@@ -479,6 +531,40 @@
             "SubArea": "Cloud PC"
         },
         {  
+            "ChangeList": [
+                {
+                    "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckSubscriptionNotFound",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckSubscriptionNotFound` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckSubscriptionTransferred",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckSubscriptionTransferred` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckGeneralSubscriptionError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckGeneralSubscriptionError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-09T14:55:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "354f1cbe-9671-4608-8027-eb7dce79a0b7",
