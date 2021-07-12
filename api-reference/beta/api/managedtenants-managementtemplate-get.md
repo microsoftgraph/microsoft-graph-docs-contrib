@@ -81,63 +81,63 @@ Content-Type: application/json
     "category": "devices",
     "parameters": [
         {
-            "valueType": "string",
+            "valueType": 0,
             "displayName": "DisplayName",
             "description": null,
             "jsonDefaultValue": "\"Baseline - Setup Compliance Policy for Windows 10 devices\"",
             "jsonAllowedValues": "null"
         },
         {
-            "valueType": "string",
+            "valueType": 0,
             "displayName": "OsMinimumVersion",
             "description": null,
             "jsonDefaultValue": "\"10.0.18363\"",
             "jsonAllowedValues": "[]"
         },
         {
-            "valueType": "boolean",
+            "valueType": 2,
             "displayName": "ActiveFirewallRequired",
             "description": null,
             "jsonDefaultValue": "true",
             "jsonAllowedValues": "[false,true]"
         },
         {
-            "valueType": "boolean",
+            "valueType": 2,
             "displayName": "AntivirusRequired",
             "description": null,
             "jsonDefaultValue": "true",
             "jsonAllowedValues": "[false,true]"
         },
         {
-            "valueType": "boolean",
+            "valueType": 2,
             "displayName": "AntiSpywareRequired",
             "description": null,
             "jsonDefaultValue": "true",
             "jsonAllowedValues": "[false,true]"
         },
         {
-            "valueType": "boolean",
+            "valueType": 2,
             "displayName": "DefenderEnabled",
             "description": null,
             "jsonDefaultValue": "true",
             "jsonAllowedValues": "[false,true]"
         },
         {
-            "valueType": "boolean",
+            "valueType": 2,
             "displayName": "StorageRequireEncryption",
             "description": null,
             "jsonDefaultValue": "true",
             "jsonAllowedValues": "[false,true]"
         },
         {
-            "valueType": "boolean",
+            "valueType": 2,
             "displayName": "RtpEnabled",
             "description": null,
             "jsonDefaultValue": "true",
             "jsonAllowedValues": "[false,true]"
         },
         {
-            "valueType": "integer",
+            "valueType": 1,
             "displayName": "ScheduledActionsForRule.BlockActionGracePeriod",
             "description": null,
             "jsonDefaultValue": "72",
@@ -153,55 +153,55 @@ Content-Type: application/json
             "service": "Intune",
             "settings": [
                 {
-                    "valueType": "string",
+                    "valueType": 0,
                     "displayName": "DisplayName",
                     "overwriteAllowed": false,
                     "jsonValue": "\"Baseline - Setup Compliance Policy for Windows 10 devices\""
                 },
                 {
-                    "valueType": "string",
+                    "valueType": 0,
                     "displayName": "OsMinimumVersion",
                     "overwriteAllowed": false,
                     "jsonValue": "\"10.0.18363\""
                 },
                 {
-                    "valueType": "boolean",
+                    "valueType": 2,
                     "displayName": "ActiveFirewallRequired",
                     "overwriteAllowed": false,
                     "jsonValue": "true"
                 },
                 {
-                    "valueType": "boolean",
+                    "valueType": 2,
                     "displayName": "AntivirusRequired",
                     "overwriteAllowed": false,
                     "jsonValue": "true"
                 },
                 {
-                    "valueType": "boolean",
+                    "valueType": 2,
                     "displayName": "AntiSpywareRequired",
                     "overwriteAllowed": false,
                     "jsonValue": "true"
                 },
                 {
-                    "valueType": "boolean",
+                    "valueType": 2,
                     "displayName": "DefenderEnabled",
                     "overwriteAllowed": false,
                     "jsonValue": "true"
                 },
                 {
-                    "valueType": "boolean",
+                    "valueType": 2,
                     "displayName": "StorageRequireEncryption",
                     "overwriteAllowed": false,
                     "jsonValue": "true"
                 },
                 {
-                    "valueType": "boolean",
+                    "valueType": 2,
                     "displayName": "RtpEnabled",
                     "overwriteAllowed": false,
                     "jsonValue": "true"
                 },
                 {
-                    "valueType": "integer",
+                    "valueType": 1,
                     "displayName": "ScheduledActionsForRule.BlockActionGracePeriod",
                     "overwriteAllowed": false,
                     "jsonValue": "72"

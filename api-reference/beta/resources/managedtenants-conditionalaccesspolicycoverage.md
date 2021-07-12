@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessPolicyCoverage resource type"
-description: "Represents Azure Active Directory conditional access policy coverage for a given managed tenant."
+description: "Represents information about any Azure Active Directory policy that defines access rules of a resource for a given managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Azure Active Directory conditional access policy coverage for a given managed tenant.
+Represents information about any Azure Active Directory policy that defines access rules of a resource for a given managed tenant.
 
 ## Methods
 |Method|Return type|Description|
