@@ -68,7 +68,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_schema_from_connection_async"
+  "name": "create_schema_from_connection_async",
   "@odata.type": "microsoft.graph.externalConnectors.schema"
 }-->
 
