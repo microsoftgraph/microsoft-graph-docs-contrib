@@ -11,6 +11,29 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### filterMode values
+
+|Member|
+|:---|
+|include|
+|exclude|
+
+### lifecycleEventType values
+
+|Member|
+|:---|
+|missed|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### changeType values
+
+|Member|
+|:---|
+|created|
+|updated|
+|deleted|
+
 ### countryLookupMethodType values
 
 |Member|
@@ -306,14 +329,6 @@ Namespace: microsoft.graph
 |passwordlessCapable|
 |mfaCapable|
 
-### authenticatorAppFeatureSettings values 
-
-
-
-|Member|
-|:---|
-|requireNumberMatching|
-|unknownFutureValue|
 
 ### authMethodsType values 
 
@@ -820,6 +835,7 @@ Namespace: microsoft.graph
 |list|
 |listItem|
 |drive|
+|unknownFutureValue|
 
 ### searchAlterationType values
 
@@ -2263,4 +2279,145 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |principal|
+|unknownFutureValue|
+
+### cloudPcAuditActivityOperationType values 
+
+|Member|
+|:---|
+|create|
+|delete|
+|patch|
+|other|
+
+### cloudPcAuditActivityResult values 
+
+|Member|
+|:---|
+|success|
+|clientError|
+|failure|
+|timeout|
+|other|
+
+### cloudPcAuditActorType values 
+
+|Member|
+|:---|
+|itPro|
+|application|
+|partner|
+|unknown|
+
+### cloudPcAuditCategory values 
+
+|Member|
+|:---|
+|cloudPC|
+|other|
+
+### postType values 
+
+|Member|
+|:---|
+|regular|
+|quick|
+|strategic|
+|unknownFutureValue|
+
+### serviceHealthClassificationType values 
+
+|Member|
+|:---|
+|advisory|
+|incident|
+|unknownFutureValue|
+
+### serviceHealthOrigin values 
+
+|Member|
+|:---|
+|microsoft|
+|thirdParty|
+|customer|
+|unknownFutureValue|
+
+### serviceHealthStatus values 
+
+|Member|
+|:---|
+|serviceOperational|
+|investigating|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|resolved|
+|mitigatedExternal|
+|mitigated|
+|resolvedExternal|
+|confirmed|
+|reported|
+|unknownFutureValue|
+
+### serviceUpdateCategory values 
+
+|Member|
+|:---|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
+|unknownFutureValue|
+
+### serviceUpdateSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|critical|
+|unknownFutureValue|
+
+### teamworkTagType values
+
+|Member| Value | Description               |
+|:---|:---- | :------------------------ |
+|standard| 0     |Default type for a tag. Tags of type standard can be managed in the team by members who have permissions.|
+
+### teamworkApplicationIdentityType values 
+
+|Member|
+|:---|
+|aadApplication|
+|bot|
+|tenantBot|
+|office365Connector|
+|outgoingWebhook|
+|unknownFutureValue|
+
+### teamworkConversationIdentityType values 
+
+|Member|
+|:---|
+|team|
+|channel|
+|chat|
+|unknownFutureValue|
+
+### teamworkUserIdentityType values 
+
+|Member|
+|:---|
+|aadUser|
+|onPremiseAadUser|
+|anonymousGuest|
+|federatedUser|
+|personalMicrosoftAccountUser|
+|skypeUser|
+|phoneUser|
 |unknownFutureValue|
