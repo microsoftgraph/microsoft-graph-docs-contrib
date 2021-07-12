@@ -20,20 +20,20 @@ A logical container to add content from an external source into Microsoft Graph.
 
 | Method                                                           | Return Type                                   | Description |
 |:-----------------------------------------------------------------|:----------------------------------------------|:--|
-| [Create externalConnection](../api/external-post-connections.md) | externalConnection                            | Create a new externalConnection by posting to the connections collection. |
+| [Create externalConnection](../api/externalconnectors-external-post-connections.md) | externalConnection                            | Create a new externalConnection by posting to the connections collection. |
 | [List externalConnections](../api/externalconnection-list.md)    | externalConnection collection                 | Get a externalConnection object collection. |
-| [Get externalConnection](../api/externalconnection-get.md)       | externalConnection                            | Read properties and relationships of a externalConnection object. |
+| [Get externalConnection](../api/externalconnectors-externalconnection-get.md)       | externalConnection                            | Read properties and relationships of a externalConnection object. |
 | [Update externalConnection](../api/externalconnection-update.md) | externalConnection                            | Update a externalConnection object. |
-| [Delete externalConnection](../api/externalconnection-delete.md) | None                                          | Delete a externalConnection object. |
+| [Delete externalConnection](../api/externalconnectors-externalconnection-delete.md) | None                                          | Delete a externalConnection object. |
 | [Create schema](../api/externalconnection-post-schema.md)        | None *or* [schema](schema.md)                 | Register connection schema. |
-| [Get operation](../api/externalconnectors-connectionoperation-get.md)               | [connectionOperation](connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
+| [Get operation](../api/externalconnectors-connectionoperation-get.md)               | [connectionOperation](externalconnectors-connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
 | [Create externalItem](../api/externalconnection-put-items.md)    | [externalItem](externalitem.md)               | Create a new externalItem by posting to the items collection. |
 
 ## Properties
 
 | Property      | Type                              | Description |
 |:--------------|:----------------------------------|:------------|
-| configuration | [microsoft.graph.externalConnectors.configuration](configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. Optional. |
+| configuration | [microsoft.graph.externalConnectors.configuration](externalconnectors-configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. Optional. |
 | description   | String                            | Description of the connection displayed in the Microsoft 365 admin center. Optional. |
 | id            | String                            | Developer-provided unique ID of the connection within the Azure Active Directory tenant. Maximum length of 32 characters. Must only contain alphanumeric characters. Cannot begin with `Microsoft` or be one of the following values: `None`, `Directory`, `Exchange`, `ExchangeArchive`, `LinkedIn`, `Mailbox`, `MicrosoftSearch`, `OneDriveBusiness`, `SharePoint`, `Teams`, `Yammer`, `Connectors`. Required. |
 | name          | String                            | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. Required. |
@@ -44,7 +44,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | Relationship | Type                                                     | Description |
 |:-------------|:---------------------------------------------------------|:---|
 | items        | [microsoft.graph.externalConnectors.externalItem](externalitem.md) collection               | Read-only. Nullable. |
-| operations   | [microsoft.graph.externalConnectors.connectionOperation](connectionoperation.md) collection | Read-only. Nullable. |
+| operations   | [microsoft.graph.externalConnectors.connectionOperation](externalconnectors-connectionoperation.md) collection | Read-only. Nullable. |
 | schema       | [microsoft.graph.externalConnectors.schema](schema.md)                                      | Read-only. Nullable. |
 
 ## JSON representation

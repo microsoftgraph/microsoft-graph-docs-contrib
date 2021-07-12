@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a [connectionOperation](../resources/connectionoperation.md).
+Retrieve the properties of a [connectionOperation](../resources/externalconnectors-connectionoperation.md).
 
 ## Permissions
 
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [connectionOperation](../resources/connectionoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [connectionOperation](../resources/externalconnectors-connectionoperation.md) object in the response body.
 
 ## Examples
 

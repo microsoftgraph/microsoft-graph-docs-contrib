@@ -12984,13 +12984,13 @@ items:
           - name: List external connections
             href: api/externalconnection-list.md
           - name: Create external connection
-            href: api/external-post-connections.md
+            href: api/externalconnectors-external-post-connections.md
           - name: Get external connection
-            href: api/externalconnection-get.md
+            href: api/externalconnectors-externalconnection-get.md
           - name: Update external connection
             href: api/externalconnection-update.md
           - name: Delete external connection
-            href: api/externalconnection-delete.md
+            href: api/externalconnectors-externalconnection-delete.md
           - name: Get operation
             href: api/externalconnectors-connectionoperation-get.md
         - name: Schema

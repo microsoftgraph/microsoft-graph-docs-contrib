@@ -19,7 +19,7 @@ Requests to index data are performed on behalf of an application without the pre
 
 The use cases for the APIs in this section involve building [Microsoft Graph connectors](/microsoftsearch/connectors-overview), which involves the following primary steps:
 
-1. [Create a connection](../api/external-post-connections.md) to an external data source.
+1. [Create a connection](../api/externalconnectors-external-post-connections.md) to an external data source.
 2. [Create and register a schema](../api/externalconnection-post-schema.md) that describes the type and how to index the external data.
 3. [Index the data](../api/externalconnection-put-items.md) as an external item.
 
