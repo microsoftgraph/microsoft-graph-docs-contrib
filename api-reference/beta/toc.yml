@@ -9564,6 +9564,8 @@ items:
             href: api/cloudpcdeviceimage-delete.md
           - name: Get source images
             href: api/cloudpcdeviceimage-getsourceimages.md
+          - name: Reupload
+            href: api/cloudpcdeviceimage-reupload.md
         - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:
