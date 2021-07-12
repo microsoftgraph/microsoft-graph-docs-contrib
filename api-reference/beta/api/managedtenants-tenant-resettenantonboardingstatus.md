@@ -76,15 +76,15 @@ Content-Type: application/json
   "contract": {
     "displayName": "Fourth Coffee",
     "defaultDomainName": "fourthcoffe001.onmicrosoft.com",
-    "contractType": "2"
+    "contractType": 2
   },
   "tenantStatusInformation": {
-    "onboardingStatus": 10,
+    "onboardingStatus": "inactive",
     "onboardingDateTime": "2012-02-20T00:00:00Z",
     "onboardedByUserId": "",
     "offboardedDateTime": "2012-02-20T00:00:00Z",
     "offboardedBy": "",
-    "delegatedPrivilegeStatus": 1,
+    "delegatedPrivilegeStatus": "delegatedAdminPrivileges",
     "workloadStatuses": []
   },
   "createdDateTime": "2012-02-20T00:00:00Z",

@@ -81,25 +81,25 @@ Content-Type: application/json
       "contract": {
         "displayName": "Fourth Coffee",
         "defaultDomainName": "fourthcoffe01.onmicrosoft.com",
-        "contractType": "2"
+        "contractType": 2
       },
       "tenantStatusInformation": {
-        "onboardingStatus": 0,
+        "onboardingStatus": "ineligible",
         "onboardingDateTime": "2012-02-20T00:00:00Z",
         "onboardedByUserId": "",
         "offboardedDateTime": "2012-02-20T00:00:00Z",
         "offboardedBy": "",
-        "delegatedPrivilegeStatus": 1,
+        "delegatedPrivilegeStatus": "delegatedAdminPrivileges",
         "workloadStatuses": [
           {
             "displayName": "Device Management",
-            "onboardingStatus": 1,
+            "onboardingStatus": "onboarded",
             "onboardedDateTime": "2012-02-20T00:00:00Z",
             "offboardedDateTime": null
           },
           {
             "displayName": "Cloud PC",
-            "onboardingStatus": 0,
+            "onboardingStatus": "notOnboarded",
             "onboardedDateTime": "2012-02-20T00:00:00Z",
             "offboardedDateTime": null
           }
