@@ -74,140 +74,126 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/managedTenants/managementTemplates/$entity",
-    "id": "31d57d29-2d54-4074-84bd-51c008c2e6b2_1",
-    "displayName": "Baseline - Setup Compliance Policy for Windows 10 devices",
-    "description": null,
-    "category": "devices",
-    "parameters": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/managedTenants/managementTemplates/$entity",
+  "displayName": "Baseline - Block Legacy Authentication",
+  "description": null,
+  "category": "identity",
+  "parameters": [
+    {
+      "valueType": "string",
+      "displayName": "DisplayName",
+      "description": null,
+      "jsonDefaultValue": "\"Baseline - Block Legacy Authentication\"",
+      "jsonAllowedValues": "null"
+    },
+    {
+      "valueType": "string",
+      "displayName": "State",
+      "description": null,
+      "jsonDefaultValue": "\"enabledForReportingButNotEnforced\"",
+      "jsonAllowedValues": "[\"enabled\",\"disabled\",\"enabledForReportingButNotEnforced\"]"
+    },
+    {
+      "valueType": "stringCollection",
+      "displayName": "ClientAppTypes",
+      "description": null,
+      "jsonDefaultValue": "[\"exchangeActiveSync\",\"other\"]",
+      "jsonAllowedValues": "[\"exchangeActiveSync\",\"other\"]"
+    },
+    {
+      "valueType": "stringCollection",
+      "displayName": "IncludeApplications",
+      "description": null,
+      "jsonDefaultValue": "[\"All\"]",
+      "jsonAllowedValues": "[\"All\"]"
+    },
+    {
+      "valueType": "stringCollection",
+      "displayName": "IncludeUsers",
+      "description": null,
+      "jsonDefaultValue": "[\"None\"]",
+      "jsonAllowedValues": "[\"All\",\"None\"]"
+    },
+    {
+      "valueType": "stringCollection",
+      "displayName": "IncludeLocations",
+      "description": null,
+      "jsonDefaultValue": "[\"All\"]",
+      "jsonAllowedValues": "[\"All\",\"AllTrusted\"]"
+    },
+    {
+      "valueType": "string",
+      "displayName": "GrantControls.Operator",
+      "description": null,
+      "jsonDefaultValue": "\"OR\"",
+      "jsonAllowedValues": "[\"OR\",\"AND\"]"
+    },
+    {
+      "valueType": "stringCollection",
+      "displayName": "GrantControls.BuiltInControls",
+      "description": null,
+      "jsonDefaultValue": "[\"block\"]",
+      "jsonAllowedValues": "[\"block\"]"
+    }
+  ],
+  "workloadActions": [
+    {
+      "actionId": "6a3ad0bc-5d7e-4a49-a105-c559aa4633e1",
+      "category": "automated",
+      "displayName": "ConditionalAccessPolicy",
+      "description": null,
+      "service": "AAD",
+      "settings": [
         {
-            "valueType": 0,
-            "displayName": "DisplayName",
-            "description": null,
-            "jsonDefaultValue": "\"Baseline - Setup Compliance Policy for Windows 10 devices\"",
-            "jsonAllowedValues": "null"
+          "valueType": "string",
+          "displayName": "DisplayName",
+          "overwriteAllowed": false,
+          "jsonValue": "\"Baseline - Block Legacy Authentication\""
         },
         {
-            "valueType": 0,
-            "displayName": "OsMinimumVersion",
-            "description": null,
-            "jsonDefaultValue": "\"10.0.18363\"",
-            "jsonAllowedValues": "[]"
+          "valueType": "string",
+          "displayName": "State",
+          "overwriteAllowed": false,
+          "jsonValue": "\"enabledForReportingButNotEnforced\""
         },
         {
-            "valueType": 2,
-            "displayName": "ActiveFirewallRequired",
-            "description": null,
-            "jsonDefaultValue": "true",
-            "jsonAllowedValues": "[false,true]"
+          "valueType": "stringCollection",
+          "displayName": "ClientAppTypes",
+          "overwriteAllowed": false,
+          "jsonValue": "[\"exchangeActiveSync\",\"other\"]"
         },
         {
-            "valueType": 2,
-            "displayName": "AntivirusRequired",
-            "description": null,
-            "jsonDefaultValue": "true",
-            "jsonAllowedValues": "[false,true]"
+          "valueType": "stringCollection",
+          "displayName": "IncludeApplications",
+          "overwriteAllowed": false,
+          "jsonValue": "[\"All\"]"
         },
         {
-            "valueType": 2,
-            "displayName": "AntiSpywareRequired",
-            "description": null,
-            "jsonDefaultValue": "true",
-            "jsonAllowedValues": "[false,true]"
+          "valueType": "stringCollection",
+          "displayName": "IncludeUsers",
+          "overwriteAllowed": false,
+          "jsonValue": "[\"None\"]"
         },
         {
-            "valueType": 2,
-            "displayName": "DefenderEnabled",
-            "description": null,
-            "jsonDefaultValue": "true",
-            "jsonAllowedValues": "[false,true]"
+          "valueType": "stringCollection",
+          "displayName": "IncludeLocations",
+          "overwriteAllowed": false,
+          "jsonValue": "[\"All\"]"
         },
         {
-            "valueType": 2,
-            "displayName": "StorageRequireEncryption",
-            "description": null,
-            "jsonDefaultValue": "true",
-            "jsonAllowedValues": "[false,true]"
+          "valueType": "string",
+          "displayName": "GrantControls.Operator",
+          "overwriteAllowed": false,
+          "jsonValue": "\"OR\""
         },
         {
-            "valueType": 2,
-            "displayName": "RtpEnabled",
-            "description": null,
-            "jsonDefaultValue": "true",
-            "jsonAllowedValues": "[false,true]"
-        },
-        {
-            "valueType": 1,
-            "displayName": "ScheduledActionsForRule.BlockActionGracePeriod",
-            "description": null,
-            "jsonDefaultValue": "72",
-            "jsonAllowedValues": "[]"
+          "valueType": "stringCollection",
+          "displayName": "GrantControls.BuiltInControls",
+          "overwriteAllowed": false,
+          "jsonValue": "[\"block\"]"
         }
-    ],
-    "workloadActions": [
-        {
-            "actionId": "00a9a585-f51c-4b68-b4f5-f0c3165df8ac",
-            "category": "automated",
-            "displayName": "#microsoft.graph.windows10CompliancePolicy",
-            "description": null,
-            "service": "Intune",
-            "settings": [
-                {
-                    "valueType": 0,
-                    "displayName": "DisplayName",
-                    "overwriteAllowed": false,
-                    "jsonValue": "\"Baseline - Setup Compliance Policy for Windows 10 devices\""
-                },
-                {
-                    "valueType": 0,
-                    "displayName": "OsMinimumVersion",
-                    "overwriteAllowed": false,
-                    "jsonValue": "\"10.0.18363\""
-                },
-                {
-                    "valueType": 2,
-                    "displayName": "ActiveFirewallRequired",
-                    "overwriteAllowed": false,
-                    "jsonValue": "true"
-                },
-                {
-                    "valueType": 2,
-                    "displayName": "AntivirusRequired",
-                    "overwriteAllowed": false,
-                    "jsonValue": "true"
-                },
-                {
-                    "valueType": 2,
-                    "displayName": "AntiSpywareRequired",
-                    "overwriteAllowed": false,
-                    "jsonValue": "true"
-                },
-                {
-                    "valueType": 2,
-                    "displayName": "DefenderEnabled",
-                    "overwriteAllowed": false,
-                    "jsonValue": "true"
-                },
-                {
-                    "valueType": 2,
-                    "displayName": "StorageRequireEncryption",
-                    "overwriteAllowed": false,
-                    "jsonValue": "true"
-                },
-                {
-                    "valueType": 2,
-                    "displayName": "RtpEnabled",
-                    "overwriteAllowed": false,
-                    "jsonValue": "true"
-                },
-                {
-                    "valueType": 1,
-                    "displayName": "ScheduledActionsForRule.BlockActionGracePeriod",
-                    "overwriteAllowed": false,
-                    "jsonValue": "72"
-                }
-            ]
-        }
-    ]
+      ]
+    }
+  ]
 }
 ```
