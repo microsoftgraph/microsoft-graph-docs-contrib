@@ -786,6 +786,8 @@ Content-type: application/json
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -891,6 +893,8 @@ Content-type: application/json
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -991,6 +995,8 @@ Content-type: application/json
 ```
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
