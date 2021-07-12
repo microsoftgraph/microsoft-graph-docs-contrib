@@ -36,6 +36,8 @@ None.
 
 ## JSON representation
 
+The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -43,9 +45,6 @@ None.
   "@odata.type": "microsoft.graph.externalConnectors.schema",
   "keyProperty": "id"
 }-->
-
-
-The following is a JSON representation of the resource.
 
 ```json
 {
