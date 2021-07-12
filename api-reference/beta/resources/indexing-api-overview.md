@@ -27,7 +27,7 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 |:-------------------------------------------------|:--------------------------------------------|:--|
 | **Configuration actions**                        |                                             |   |
 | Create, update, or delete a connection           | [externalConnection](externalconnectors-externalconnection.md) | [externalConnection methods](externalconnectors-externalconnection.md#methods) |
-| Register a schema for the external data          | [schema](externalconnectors-schema.md)                         | [schema methods](schema.md#methods) |
+| Register a schema for the external data          | [schema](externalconnectors-schema.md)                         | [schema methods](externalconnectors-schema.md#methods) |
 | **Indexing actions**                             |                                             |   |
 | Add, update or delete a custom item in the index | [externalItem](externalconnectors-externalitem.md)             | [externalItem methods](externalconnectors-externalitem.md#methods) |
 
