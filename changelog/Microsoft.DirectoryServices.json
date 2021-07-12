@@ -7,7 +7,7 @@
          "ApiChange": "Enum type",
          "ChangedApiName": "synchronizationSecretKeyStringValuePair",
          "ChangeType": "Addition",
-         "Description": "Added the Oauth2TokenExchangeUri, Oauth2AuthorizationUri, AuthenticationType, enumeration type.",
+         "Description": "Added the Oauth2TokenExchangeUri, Oauth2AuthorizationUri, AuthenticationType, enumeration type, ConnectionString.",
          "Target": "synchronizationSecretKeyStringValuePair"
        }
       ],
