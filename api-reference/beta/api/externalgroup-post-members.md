@@ -181,7 +181,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.externalGroupMember",
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
   "type": "group",
   "identitySource": "azureActiveDirectory"
@@ -244,7 +243,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.externalGroupMember",
   "id": "14m1b9c38qe647f6a",
   "type": "group",
   "identitySource": "external"
