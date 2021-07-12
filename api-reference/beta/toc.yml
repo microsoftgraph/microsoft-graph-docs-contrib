@@ -14176,20 +14176,20 @@ items:
             href: api/managedtenants-tenanttag-assigntag.md
           - name: Unassign tenant tag
             href: api/managedtenants-tenanttag-unassigntag.md 
-      - name: Windows device malware state
-        href: resources/managedtenants-windowsdevicemalwarestate.md
-        items:
-        - name: List Windows device malware states
-          href: api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
-        - name: Get Windows device malware state
-          href: api/managedtenants-windowsdevicemalwarestate-get.md
-      - name: Windows protection state
-        href: resources/managedtenants-windowsprotectionstate.md
-        items:
-          - name: List Windows protection state
-            href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
-          - name: Get Windows protection state
-            href: api/managedtenants-windowsprotectionstate-get.md
+        - name: Windows device malware state
+          href: resources/managedtenants-windowsdevicemalwarestate.md
+          items:
+          - name: List Windows device malware states
+            href: api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
+          - name: Get Windows device malware state
+            href: api/managedtenants-windowsdevicemalwarestate-get.md
+        - name: Windows protection state
+          href: resources/managedtenants-windowsprotectionstate.md
+          items:
+            - name: List Windows protection state
+              href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
+            - name: Get Windows protection state
+              href: api/managedtenants-windowsprotectionstate-get.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
