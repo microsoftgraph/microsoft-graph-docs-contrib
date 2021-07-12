@@ -293,7 +293,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Send message containing cards
+### Example 3: Send message that contains cards
 
 #### Request
 The following is an example of the request.
