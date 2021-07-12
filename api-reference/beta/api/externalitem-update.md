@@ -54,8 +54,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property   | Type                                  | Description               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content    | [externalItemContent](../resources/externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
+| acl        | [microsoft.graph.externalConnectors.acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
+| content    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
 | properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md). |
 
 ### Updating the acl collection
@@ -137,7 +137,6 @@ Content-type: application/json
   "id": "TSP228082938",
   "acl": [
     {
-      "@odata.type": "microsoft.graph.externalConnectors.acl",
       "type": "everyone",
       "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
@@ -150,7 +149,6 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
-    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
     "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
     "type": "html"
   }
