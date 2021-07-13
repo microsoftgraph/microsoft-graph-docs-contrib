@@ -5,6 +5,7 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: "search"
 ms.author: "emzho"
+author: "emzho"
 ---
 
 # External connectors enum values
