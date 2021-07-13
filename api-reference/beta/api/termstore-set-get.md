@@ -56,14 +56,13 @@ If successful, this method returns a `200 OK` response code and a [set](../resou
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_set_2"
 }-->
 
 ``` http
-GET https://graph.microsoft.com/beta/termStore/sets/{setId}
+GET https://graph.microsoft.com/beta/termStore/sets/8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-set-2-csharp-snippets.md)]
@@ -113,10 +112,8 @@ Content-Type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
-  "name": "get_set_2"
+  "blockType": "request"
 }-->
 
 ``` http
