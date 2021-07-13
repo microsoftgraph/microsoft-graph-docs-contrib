@@ -18,7 +18,7 @@ Represents an aggregate view of device compliance for a managed tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List aggregatedPolicyCompliances](../api/managedtenants-managedtenant-list-aggregatedpolicycompliance.md)|[microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) collection|Get a list of the [aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) objects and their properties.|
+|[List aggregatedPolicyCompliances](../api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md)|[microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) collection|Get a list of the [aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
