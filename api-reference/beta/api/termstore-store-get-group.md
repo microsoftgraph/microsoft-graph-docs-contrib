@@ -1,5 +1,5 @@
 ---
-title: "Get group"
+title: "Get term group"
 description: "Read the properties and relationships of a group object."
 author: mohitpcad
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
 
-# Get group
+# Get term group
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
