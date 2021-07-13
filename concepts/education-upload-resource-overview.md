@@ -125,12 +125,14 @@ https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4
 Use the `fileUrl` constructed above in the request body to [POST Assignment Resources](/graph/api/educationassignment-post-resources.md)
 
 #### Example Request 
-
+```http
+POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-d599cf21e069/assignments/48b80dff-452a-4108-bd85-fa0d84e39d0a/resources
+```
 #### Example Request body
 ```http
 {
     "resource": {
-        "@odata.type": "#microsoft.education.assignments.api.educationWordResource",
+        "@odata.type": "#microsoft.graph.educationWordResource",
         "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ",
         "displayName": "Parts of a Sonnet"
     }
@@ -140,7 +142,7 @@ Use the `fileUrl` constructed above in the request body to [POST Assignment Reso
 #### Example Response
 ```http
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('48b80dff-452a-4108-bd85-fa0d84e39d0a')/resources/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('48b80dff-452a-4108-bd85-fa0d84e39d0a')/resources/$entity",
     "assignmentResourceUrl": null,
     "id": "ff1aafe4-ae89-49c3-8366-4b509f640d6a",
     "resource": {
