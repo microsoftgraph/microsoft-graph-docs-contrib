@@ -36,13 +36,11 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 The following are current known limitations:
 
 - Organizations are limited to a maximum of 10 connections.
-- Only Azure Active Directory identities are supported.
 - You can create only four `externalItem` resources items per second.
 - An application is limited to four concurrent operations on a connection.
 - Connections have a capacity limit of 700,000 items or ~70 GB of data.
 - Maximum size of an `externalItem` entity is 4 MB.
 - Sorting results is not supported.
-- Result ranking is best effort.
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
