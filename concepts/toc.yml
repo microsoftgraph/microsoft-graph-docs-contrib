@@ -525,7 +525,7 @@ items:
                 href: change-notifications-delivery.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
-              - name: Change notification in Microsoft Teams
+              - name: Change notifications in Microsoft Teams
                 href: teams-change-notification-in-microsoft-teams-overview.md
                 items:
                   - name: Overview
