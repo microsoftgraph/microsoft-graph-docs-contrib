@@ -64,14 +64,14 @@ The contents of the request body should be the binary stream of the file to be u
     "eTag": "\"{EDD00CE7-B74C-4C3E-BA3E-484CB41EF31D},1\"",
     "id": "01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ",
     "lastModifiedDateTime": "2021-03-11T18:49:47Z",
-    "name": "NewFile.png",
-    "webUrl": "https://contososdorg.sharepoint.com/sites/GraphTest/Class%20Files/Assignments/Test%20File%20Distribution/NewFile.png",
+    "name": "MyPictureFile.png",
+    "webUrl": "https://contososdorg.sharepoint.com/sites/GraphTest/Class%20Files/Assignments/Test%20File%20Distribution/MyPictureFile.png",
     "cTag": "\"c:{EDD00CE7-B74C-4C3E-BA3E-484CB41EF31D},2\"",
     "size": 2302233,
     "createdBy": {
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
-            "displayName": "Graph explorer"
+            "displayName": ""
         },
         "user": {
             "email": "t-james@contososd.org",
@@ -82,7 +82,7 @@ The contents of the request body should be the binary stream of the file to be u
     "lastModifiedBy": {
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
-            "displayName": "Graph explorer"
+            "displayName": ""
         },
         "user": {
             "email": "t-james@contososd.org",
@@ -132,7 +132,7 @@ POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-
 ```http
 {
     "resource": {
-        "@odata.type": "#microsoft.graph.educationWordResource",
+        "@odata.type": "#microsoft.graph.educationFileResource",
         "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ",
         "displayName": "Parts of a Sonnet"
     }
@@ -146,7 +146,7 @@ POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-
     "assignmentResourceUrl": null,
     "id": "ff1aafe4-ae89-49c3-8366-4b509f640d6a",
     "resource": {
-        "@odata.type": "#microsoft.graph.educationWordResource",
+        "@odata.type": "#microsoft.graph.educationFileResource",
         "displayName": "Parts of a Sonnet",
         "createdDateTime": "2021-03-11T18:35:40.6642039Z",
         "lastModifiedDateTime": "2021-03-11T18:35:40.6642039Z",
