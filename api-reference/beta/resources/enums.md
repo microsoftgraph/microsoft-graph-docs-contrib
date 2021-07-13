@@ -2102,20 +2102,6 @@ Possible values for user account types (group membership), per Windows definitio
 | proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
 | unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
 
-### identitySourceType values
-
-|Member|
-|:---|
-|azureActiveDirectory|
-|external|
-
-### externalGroupMemberType values
-
-|Member|
-|:---|
-|user|
-|group|
-
 ### identityUserFlowAttributeDataType values
 
 | Member                | Value | Description                         |
@@ -2135,15 +2121,6 @@ Possible values for user account types (group membership), per Windows definitio
 | custom                | 2     | This user flow attribute type denotes it was created by the user   |
 |required|3||
 | unknownFutureValue    | 4     | A sentinel member.                                                 |
-
-### connectionState values
-
-|Member|
-|:---|
-|draft|
-|ready|
-|obsolete|
-|limitExceeded|
 
 ### permissionClassificationType values
 
