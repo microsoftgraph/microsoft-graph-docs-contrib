@@ -11,12 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-An item added to a Microsoft Graph [connection](externalconnector-externalconnection.md). 
+An item added to a Microsoft Graph [connection](externalconnectors-externalconnection.md). 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List externalItems](../api/externalitem-list.md)|[externalItem](../resources/externalconnectors-externalitem.md) collection|Get a list of the [externalItem](../resources/externalitem.md) objects and their properties.|
+|[List externalItems](../api/externalconnectors-externalitem-list.md)|[externalItem](../resources/externalconnectors-externalitem.md) collection|Get a list of the [externalItem](../resources/externalconnectors-externalitem.md) objects and their properties.|
 |[Create externalItem](../api/externalconnectors-externalitem-create.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Create a new [externalItem](../resources/externalconnectors-externalitem.md) object.|
 |[Get externalItem](../api/externalconnectors-externalitem-get.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Read the properties and relationships of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
 |[Update externalItem](../api/externalconnectors-externalitem-update.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Update the properties of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
@@ -28,7 +28,7 @@ An item added to a Microsoft Graph [connection](externalconnector-externalconnec
 |acl|[acl](../resources/externalconnectors-acl.md) collection|An array of access control entries. Each entry specifies the access granted to a user or group. Required.|
 |content|[externalItemContent](../resources/externalconnectors-externalitemcontent.md)|A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional.|
 |id|String|Developer-provided unique ID of the item within the containing [externalConnection](externalconnectors-externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required.|
-|properties|[properties](../resources/externalconnectors-properties.md)|A property bag with the properties of the item. The properties MUST conform to the [schema](externalconnector-schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required.|
+|properties|[properties](../resources/externalconnectors-properties.md)|A property bag with the properties of the item. The properties MUST conform to the [schema](externalconnectors-schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required.|
 
 ## Relationships
 None.
