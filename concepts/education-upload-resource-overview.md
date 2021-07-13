@@ -69,10 +69,7 @@ The contents of the request body should be the binary stream of the file to be u
     "cTag": "\"c:{EDD00CE7-B74C-4C3E-BA3E-484CB41EF31D},2\"",
     "size": 2302233,
     "createdBy": {
-        "application": {
-            "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
-            "displayName": ""
-        },
+        "application": null,
         "user": {
             "email": "t-james@contososd.org",
             "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
@@ -80,10 +77,7 @@ The contents of the request body should be the binary stream of the file to be u
         }
     },
     "lastModifiedBy": {
-        "application": {
-            "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
-            "displayName": ""
-        },
+        "application": null,
         "user": {
             "email": "t-james@contososd.org",
             "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
