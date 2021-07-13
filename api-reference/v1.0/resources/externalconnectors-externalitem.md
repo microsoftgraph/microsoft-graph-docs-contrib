@@ -16,7 +16,6 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List externalItems](../api/externalconnectors-externalitem-list.md)|[externalItem](../resources/externalconnectors-externalitem.md) collection|Get a list of the [externalItem](../resources/externalconnectors-externalitem.md) objects and their properties.|
 |[Create externalItem](../api/externalconnectors-externalitem-create.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Create a new [externalItem](../resources/externalconnectors-externalitem.md) object.|
 |[Get externalItem](../api/externalconnectors-externalitem-get.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Read the properties and relationships of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
 |[Update externalItem](../api/externalconnectors-externalitem-update.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Update the properties of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
