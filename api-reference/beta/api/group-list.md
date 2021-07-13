@@ -41,7 +41,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, 
 To list only Microsoft 365 groups (aka unified groups), apply a filter on **groupTypes**:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
+GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
 The `$search` query parameter supports tokenization only on the **displayName** and **description** fields and requires the **ConsistencyLevel** header. Fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
