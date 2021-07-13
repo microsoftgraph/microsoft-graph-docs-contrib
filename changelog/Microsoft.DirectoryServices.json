@@ -7390,7 +7390,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityProviderBase",
           "ChangeType": "Addition",
-          "Description": "To support configuring an identity provider in an Azure AD and Azure AD B2C tenant, introduced new resource type [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0) entity.",
+          "Description": "Added the [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0) resource to support configuring an identity provider in an Azure AD and Azure AD B2C tenant.",
           "Target": "identityProviderBase"
         },
         {
@@ -7398,7 +7398,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "builtInIdentityProvider",
           "ChangeType": "Addition",
-          "Description": "To support configuring an Built-in identity provider in an Azure AD tenant, introduced new resource type  [builtInIdentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/builtinidentityprovider?view=graph-rest-1.0) entity.",
+          "Description": "Added the [builtInIdentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/builtinidentityprovider?view=graph-rest-1.0) resource to support configuring an built-in identity provider in an Azure AD tenant.",
           "Target": "builtInIdentityProvider"
         },
         {
@@ -7406,7 +7406,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "socialIdentityProvider",
           "ChangeType": "Addition",
-          "Description": "To support configuring a social identity provider in an Azure AD and Azure AD B2C tenant, introduced new resource type [socialIdentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/socialidentityprovider?view=graph-rest-1.0) entity.",
+          "Description": "Added the [socialIdentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/socialidentityprovider?view=graph-rest-1.0) resource to support configuring a social identity provider in an Azure AD and Azure AD B2C tenant.",
           "Target": "socialIdentityProvider"
         },
         {
@@ -7414,7 +7414,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "openIdConnectIdentityProvider",
           "ChangeType": "Addition",
-          "Description": "To support configuring an OpenID Connect identity provider in an Azure AD B2C tenant, introduced new resource type [openIdConnectidentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/openidconnectidentityprovider?view=graph-rest-1.0) entity.",
+          "Description": "Added the [openIdConnectidentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/openidconnectidentityprovider?view=graph-rest-1.0) resource to support configuring an OpenID Connect identity provider in an Azure AD B2C tenant.",
           "Target": "openIdConnectIdentityProvider"
         },
         {
@@ -7422,7 +7422,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "identityProviderBase",
           "ChangeType": "Addition",
-          "Description": "To support creating identity providers in an Azure AD and Azure AD B2C tenant, introduced [post](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-post-identityproviders?view=graph-rest-1.0) operation.",
+          "Description": "Added [post](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-post-identityproviders?view=graph-rest-1.0) method to support creating identity providers in an Azure AD and Azure AD B2C tenant.",
           "Target": "identityProviderBase"
         },
         {
@@ -7430,7 +7430,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "identityProviderBase",
           "ChangeType": "Addition",
-          "Description": "To support listing all identity provider configurations in an Azure AD and Azure AD B2C tenant, introduced [list](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-list?view=graph-rest-1.0) operation.",
+          "Description": "Added [list](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-list?view=graph-rest-1.0) method to support listing all identity provider configurations in an Azure AD and Azure AD B2C tenant.",
           "Target": "identityProviderBase"
         },
         {
@@ -7438,7 +7438,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "identityProviderBase",
           "ChangeType": "Addition",
-          "Description": "To support getting an identity provider configuration in an Azure AD and Azure AD B2C tenant, introduced [get](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-get?view=graph-rest-1.0) operation.",
+          "Description": "Added [get](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-get?view=graph-rest-1.0) method to support getting an identity provider configuration in an Azure AD and Azure AD B2C tenant.",
           "Target": "identityProviderBase"
         },
         {
@@ -7446,7 +7446,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "identityProviderBase",
           "ChangeType": "Addition",
-          "Description": "To support updating an identity provider in an Azure AD and Azure AD B2C tenant, introduced [update](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-update?view=graph-rest-1.0) operation.",
+          "Description": "Added [update](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-update?view=graph-rest-1.0) method to support updating an identity provider in an Azure AD and Azure AD B2C tenant.",
           "Target": "identityProviderBase"
         },
         {
@@ -7454,7 +7454,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "identityProviderBase",
           "ChangeType": "Addition",
-          "Description": "To support deleting an identity provider in an Azure AD and Azure AD B2C tenant, introduced [delete](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-delete?view=graph-rest-1.0) operation.",
+          "Description": "Added [delete](https://docs.microsoft.com/en-us/graph/api/identityproviderbase-delete?view=graph-rest-1.0) method to support deleting an identity provider in an Azure AD and Azure AD B2C tenant.",
           "Target": "identityProviderBase"
         },
         {
@@ -7462,72 +7462,24 @@
           "ApiChange": "Method",
           "ChangedApiName": "identityProviderBase",
           "ChangeType": "Addition",
-          "Description": "To support listing available provider types of identity provider in an Azure AD and Azure AD B2C tenant, introduced [availableProviderType](https://docs.microsoft.com/en-us/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-1.0) operation.",
+          "Description": "Added [availableProviderType](https://docs.microsoft.com/en-us/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-1.0) method to support listing available provider types of identity provider in an Azure AD and Azure AD B2C tenant.",
           "Target": "identityProviderBase"
         },
         {
           "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
           "ApiChange": "Resource",
           "ChangedApiName": "identityProvider",
-          "ChangeType": "Change",
-          "Description": "Deprecated the [identityProvider](https://docs.microsoft.com/en-us/graph/api/resources/identityprovider?view=graph-rest-1.0) entity to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0).",
-          "Target": "identityProvider"
-        },
-        {
-          "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
-          "ApiChange": "Method",
-          "ChangedApiName": "identityProvider",
-          "ChangeType": "Change",
-          "Description": "Deprecated [post](https://docs.microsoft.com/en-us/graph/api/identityprovider-post-identityproviders?view=graph-rest-1.0) operation to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0).",
-          "Target": "identityProvider"
-        },
-        {
-          "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
-          "ApiChange": "Method",
-          "ChangedApiName": "identityProvider",
-          "ChangeType": "Change",
-          "Description": "Deprecated  [list](https://docs.microsoft.com/en-us/graph/api/identityprovider-list?view=graph-rest-1.0) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0).",
-          "Target": "identityProvider"
-        },
-        {
-          "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
-          "ApiChange": "Method",
-          "ChangedApiName": "identityProvider",
-          "ChangeType": "Change",
-          "Description": "Deprecated [get](https://docs.microsoft.com/en-us/graph/api/identityprovider-get?view=graph-rest-1.0) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0).",
-          "Target": "identityProvider"
-        },
-        {
-          "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
-          "ApiChange": "Method",
-          "ChangedApiName": "identityProvider",
-          "ChangeType": "Change",
-          "Description": "Deprecated [availableProviderType](https://docs.microsoft.com/en-us/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-1.0) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0).",
-          "Target": "identityProvider"
-        },
-        {
-          "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
-          "ApiChange": "Method",
-          "ChangedApiName": "identityProvider",
-          "ChangeType": "Change",
-          "Description": "Deprecated [update](https://docs.microsoft.com/en-us/graph/api/identityprovider-update?view=graph-rest-1.0) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0).",
-          "Target": "identityProvider"
-        },
-        {
-          "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
-          "ApiChange": "Method",
-          "ChangedApiName": "identityProvider",
-          "ChangeType": "Change",
-          "Description": "Deprecated [delete](https://docs.microsoft.com/en-us/graph/api/identityprovider-delete?view=graph-rest-1.0) operations to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0).",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [identityProvider](https://docs.microsoft.com/en-us/graph/api/resources/identityprovider?view=graph-rest-1.0) resource and related operations and methods to replace it with new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0).",
           "Target": "identityProvider"
         }
       ],
       "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-03-30T00:00:00",
-      "WorkloadArea": "Identity and sign-in",
-      "SubArea": ""
+      "CreatedDateTime": "2021-03-30T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {      
       "ChangeList":[
