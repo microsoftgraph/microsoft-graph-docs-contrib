@@ -1,5 +1,40 @@
 {
   "changelog": [
+
+    {
+    "ChangeList": [
+                {
+                    "Id": "19abfcc5-26d8-4b09-a8b7-14b3d575bc0d",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "incompatibleAccessPackages",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **incompatibleAccessPackages** navigation property to the [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta) resource.",
+                    "Target": "accessPackage"
+                },
+                 {
+                    "Id": "19abfcc5-26d8-4b09-a8b7-14b3d575bc0d",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "accessPackagesIncompatibleWith",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **accessPackagesIncompatibleWith** navigation property to the [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta) resource.",
+                    "Target": "accessPackage"
+                },
+                {
+                    "Id": "19abfcc5-26d8-4b09-a8b7-14b3d575bc0d",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "incompatibleGroups",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **incompatibleGroups** navigation property on [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-beta) resource.",
+                    "Target": "accessPackage"
+                }
+            ],
+            "Id": "19abfcc5-26d8-4b09-a8b7-14b3d575bc0d",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-29T22:00:01Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Governance"
+    },
     {
       "ChangeList": [
       { 
