@@ -35,8 +35,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
+| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## Request headers
 
@@ -51,9 +51,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property   | Type                                  | Description               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content    | [externalItemContent](../resources/externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
-| properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md). |
+| acl        | [acl](../resources/externalconnectors-acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
+| content    | [externalItemContent](../resources/externalconnectors-externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
+| properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/externalconnectors-schema.md) defined for the [externalConnection](../resources/externalconnectors-externalconnection.md). |
 
 ### Updating the acl collection
 
@@ -65,7 +65,7 @@ If the `properties` property is included in an update request, the existing prop
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [externalItem](../resources/externalitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [externalItem](../resources/externalconnectors-externalitem.md) object in the response body.
 
 ## Examples
 
