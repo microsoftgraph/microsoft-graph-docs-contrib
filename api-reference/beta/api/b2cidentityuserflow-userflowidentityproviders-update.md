@@ -1,20 +1,19 @@
 ---
-title: "Add identityProvider to a b2xIdentityUserFlow (deprecated)"
-description: "Add identityProvider in a b2xIdentityUserFlow (deprecated)."
+title: "Add a userFlowIdentityProvider"
+description: "Add an identityProvider to a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Add identityProvider to a b2xIdentityUserFlow (deprecated)
+# Add a userFlowIdentityProvider
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-Update the identity providers in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
+Add an identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
 ## Permissions
 
@@ -29,14 +28,14 @@ One of the following permissions is required to call this API. To learn more, in
 The work or school account needs to belong to one of the following roles:
 
 * Global administrator
-* External Identity User Flow administrator
+* External ID user flow administrator
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /identity/b2xUserFlows/{id}/identityProviders/$ref
+PATCH /identity/b2cUserFlows/{userflow-id}/userflowIdentityProviders/$ref
 ```
 
 ## Request headers
@@ -48,11 +47,11 @@ POST /identity/b2xUserFlows/{id}/identityProviders/$ref
 
 ## Request body
 
-In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) you want to add. For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
+In the request body, provide a JSON representation with the `id` of the [identityProvider](../resources/identityproviderbase.md) you want to add. For more information about identity providers available for user flows, see the [identityProviders](../resources/identityproviderbase.md) resource.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with the specific error details.
 
 ## Example
 
@@ -62,23 +61,20 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_b2xuserflows_identityprovider"
+  "name": "update_b2cuserflows_userflowIdentityProviders"
 }
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders/$ref
+PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}"
 }
 ```
 
 ### Response
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "response",
