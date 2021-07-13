@@ -35,7 +35,7 @@ This returns a model with one of the property called `resourcesFolderUrl`.
 }
 ```
 
-Following steps will allow you to upload a resource/file to the relevant resource folder.
+Following steps will allow you to upload a resource/file to the relevant resource folder. For simplicity, we are going to upload an SPO resource to the assignment.
 
 ### Step 1 - Construct the upload url
 Build the url for uploading content in a specific format. The format is `{resourcesFolderUrl}:/{Name of new file}:/content`, 
@@ -112,12 +112,17 @@ The contents of the request body should be the binary stream of the file to be u
 
 ### Step 3 - Construct the `fileUrl`
 Format is `https://graph.microsoft.com/v1.0/drives/{drive-id from request url in step 2}/items/{id from the response body in step 2}`
-e.g. for the sample upload the drive-id = b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F, and id = 01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ.
-The `fileUrl` will look like this-
+e.g. for the sample upload case
+
+drive-id = b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F, and 
+
+id = 01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
+
+Following the format, the `fileUrl` will look like this-
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
 
 ### Step 4. POST assignment resource
-Use the `fileUrl` constructed above in the request body to [POST Assignment Resource](/graph/api/educationassignment-post-resources.md)
+Use the `fileUrl` constructed above in the request body to [POST Assignment Resources](/graph/api/educationassignment-post-resources.md)
 
 #### Example Request 
 
@@ -165,3 +170,4 @@ Use the `fileUrl` constructed above in the request body to [POST Assignment Reso
 ```
 
 You have now successfully associated an SPO resource to an assignment. You can follow similar steps to upload student work resource(s).
+Reference: [POST Submission Resources](/graph/api/educationsubmission-post-resources.md)
