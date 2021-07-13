@@ -11,16 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-The [connection](externalconnection.md) schema determines how your external content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
+The [connection](externalconnectors-externalconnection.md) schema determines how your external content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List schemata](../api/schema-list.md)|[schema](../resources/externalconnectors-schema.md) collection|Get a list of the [schema](../resources/schema.md) objects and their properties.|
 |[Create schema](../api/externalconnectors-schema-create.md)|[schema](../resources/externalconnectors-schema.md)|Create a new [schema](../resources/externalconnectors-schema.md) object.|
 |[Get schema](../api/externalconnectors-schema-get.md)|[schema](../resources/externalconnectors-schema.md)|Read the properties and relationships of a [schema](../resources/externalconnectors-schema.md) object.|
-|[Update schema](../api/externalconnectors-schema-update.md)|[schema](../resources/externalconnectors-schema.md)|Update the properties of a [schema](../resources/externalconnectors-schema.md) object.|
-|[Delete schema](../api/externalconnectors-schema-delete.md)|None|Deletes a [schema](../resources/externalconnectors-schema.md) object.|
 
 ## Properties
 |Property|Type|Description|
