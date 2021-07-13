@@ -122,7 +122,7 @@ Following the format, the `fileUrl` will look like this-
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
 
 ### Step 4. POST assignment resource
-Use the `fileUrl` constructed above in the request body to [POST Assignment Resources](/graph/api/educationassignment-post-resources.md)
+Use the `fileUrl` constructed above in the request body to [POST Assignment Resources](/graph/api/educationassignment-post-resources)
 
 #### Example Request 
 ```http
@@ -173,4 +173,4 @@ POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-
 
 You have now successfully associated an SPO resource to an assignment. You can follow similar steps to upload student work resource(s).
 
-Reference: [POST Submission Resources](/graph/api/educationsubmission-post-resources.md)
+Reference: [POST Submission Resources](/graph/api/educationsubmission-post-resources)
