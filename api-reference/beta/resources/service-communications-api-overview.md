@@ -39,7 +39,7 @@ Application permissions are needed to access the service communications API with
 | Update service message status for signed in user | For a list of status operations, see [serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true).| _ServiceMessageViewpoint.Write_ | Delegated |
 
 ## API on Microsoft Graph national clouds
-Service communications API is available on Microsoft Graph national clouds as well. You could get service health and communications data for your national clouds tenants. More information about [Microsoft Graph national clouds](https://docs.microsoft.com/en-us/graph/deployments).
+Service communications API is available on Microsoft Graph national clouds as well. You could get service health and communications data for your national clouds tenants. More information about [Microsoft Graph national clouds](https://docs.microsoft.com/graph/deployments).
 
 |National clouds|API url (partial)|
 |:--------------|:-----------------|
