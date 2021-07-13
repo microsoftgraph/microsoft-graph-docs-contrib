@@ -25,9 +25,8 @@ One of the following permissions is required to call this api. To learn more, in
 
 <!-- {
   "blockType": "ignored"
-}
--->
-``` http
+}-->
+```http
 POST /bookmarks
 ```
 
@@ -121,6 +120,7 @@ Here is an example of the response. Note: The response object shown here is trun
 HTTP/1.1 201 CREATED
 Location: /733b26d5-af76-4eea-ac69-1a0ce8716897
 Content-Type: application/json
+
 {
   "id": "733b26d5-af76-4eea-ac69-1a0ce8716897"
 }
