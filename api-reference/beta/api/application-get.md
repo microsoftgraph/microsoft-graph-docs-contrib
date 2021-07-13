@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /applications/{id}
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
-
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific application properties. 
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|
@@ -76,7 +75,7 @@ GET https://graph.microsoft.com/beta/applications/{id}
 ### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,6 +95,7 @@ Content-length: 1044
     "applicationTemplateId": null,
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
+    "disabledByMicrosoftStatus": null,
     "displayName": "Display name",
     "isDeviceOnlyAuthSupported": null,
     "groupMembershipClaims": null,

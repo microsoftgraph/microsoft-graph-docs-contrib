@@ -1,14 +1,14 @@
 ---
-title: "Overview of access reviews API for groups"
-description: "The access reviews API for groups allows you to programmatically review access to your groups"
+title: "Overview of access reviews API"
+description: "The access reviews API allows you to programmatically review access to your Azure AD resources."
 author: "FaithOmbongi"
 localization_priority: Normal
 ms.prod: "governance"
 ---
 
-# Overview of the access reviews API for groups
+# Overview of the access reviews API
 
-The [access reviews API for groups](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) in Microsoft Graph allows you to programmatically review access to your groups. This includes:
+The [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) in Microsoft Graph allows you to programmatically review access to Azure AD resources. This includes:
 + Creating, reading, updating, and deleting access reviews, access review settings, and schedules.
 + Investigating past access reviews and the decisions taken by reviewers, including the steps Azure AD took automatically.
 
@@ -26,9 +26,9 @@ In an application context, an application calls the access reviews API without a
 ## Building blocks of an access review
 
 Access reviews are structured logically and are comprised of these building blocks:
-+ **Access reviews schedule definitions** -  The logical blueprint that contains the settings of an access review and its instances.
-+ **Access review instance** - Represents a review activity that has a scope, reviewers, and a status. An access review definition may have multiple instances as is the case in recurring reviews. One-off reviews have exactly one instance.
-+ **Decision items recorded for a review** - Represent a decision a reviewer made on an instance, including the time stamp and justification for the decision. Each review instance has as many decisions as the number of users under review. If there are no decisions taken, that is, reviewers haven’t responded to the review, there will be no decision objects for the instance.
++ **Access reviews schedule definitions** -  The logical blueprint that contains the settings of an access review and its instances. The settings include the resources against which access is reviewed, and the reviewers who attest to access to these resources.
++ **Access review instance** - Represents a single review activity against which reviewers make decisions. An access review definition may have multiple instances as is the case in recurring reviews. One-off reviews have exactly one instance.
++ **Decision items recorded for a review** - Represents a decision a reviewer made on an instance, including the time stamp and justification for the decision. Each review instance has as many decisions as the number of users under review. If there are no decisions taken, that is, reviewers haven’t responded to the review, there will be no decision objects for the instance.
 
 ## Next steps
 

@@ -1,19 +1,21 @@
 ---
-title: "List assignments"
-description: "Retrieve a list of assignment objects. A teacher or an application executing with application permissions is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them."
+title: "List class assignments"
+description: "Retrieve a list of assignment objects."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List assignments
+# List class assignments
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of assignment objects. A teacher or an application executing with application permissions is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them.
+Retrieve a list of assignment objects. 
+
+A teacher or an application executing with application permissions can see all assignment objects for the class. Students can only see assignments that are assigned to them.
 
 ## Permissions
 
@@ -68,7 +70,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "ignored",
