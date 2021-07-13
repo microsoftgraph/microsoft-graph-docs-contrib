@@ -46,7 +46,7 @@ POST /identity/identityProviders
 
 ## Request body
 
-In the request body, provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
+In the request body, provide a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
 In Azure AD B2C provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
 
@@ -65,7 +65,7 @@ All the properties listed in the following table are required.
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client ID for the application obtained when registering the application with the identity provider.|
+|clientId|String|The identifier for the client application obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on **responseType**. <ul><li>When **responseType** is `code`, a secret is required for the auth code exchange.</li><li>When **responseType** is `id_token` the secret is not required because there is no code exchange—the id_token is returned directly from the authorization response.</li></ul>|
 |displayName|String|The display name of the identity provider.|
 |domainHint|String|The domain hint can be used to skip directly to the sign in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
@@ -98,9 +98,8 @@ The following is an example of the request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/identityProviders
+POST https://graph.microsoft.com/v1.0/identity/identityProviders
 Content-type: application/json
-Content-length: 154
 
 {
   "@odata.type": "microsoft.graph.socialIdentityProvider",
@@ -115,7 +114,7 @@ Content-length: 154
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -150,7 +149,7 @@ The following is an example of the request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/identityProviders
+POST https://graph.microsoft.com/v1.0/identity/identityProviders
 Content-type: application/json
 
 {
@@ -178,7 +177,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -197,11 +196,11 @@ Content-type: application/json
   "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
   "clientSecret": "12345",
   "claimsMapping": {
-      "userId": "myUserId",
-      "givenName": "myGivenName",
-      "surname": "mySurname",
-      "email": "myEmail",
-      "displayName": "myDisplayName"
+      "userId": "33757",
+      "givenName": "samuel",
+      "surname": "sinclair",
+      "email": "sam@gmail.com",
+      "displayName": "samuel s"
   },
   "domainHint": "mycustomoidc",
   "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",

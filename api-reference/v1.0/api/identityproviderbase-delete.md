@@ -66,7 +66,7 @@ The following is an example of the request.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/identityProviders/{id}
+DELETE https://graph.microsoft.com/v1.0/identity/identityProviders/{id}
 ```
 
 ### Response

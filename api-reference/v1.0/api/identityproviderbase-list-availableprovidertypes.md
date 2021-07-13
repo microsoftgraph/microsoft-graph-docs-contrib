@@ -62,14 +62,14 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProviderTypes
 ```
 
 ### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -83,7 +83,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
     "value": [
         "MicrosoftAccount",
         "EmailOTP",
@@ -105,7 +105,7 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProviderTypes
 ```
 
 
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -127,7 +127,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
- "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
+ "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
   "value": [
         "Microsoft",
         "Google",

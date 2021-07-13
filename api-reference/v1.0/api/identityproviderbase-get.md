@@ -69,12 +69,13 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
 ```
 
 #### Response
 
 The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -108,12 +109,13 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/MSASignup-OAUTH
 ```
 
 #### Response
 
 The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -145,12 +147,13 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000
 ```
 
 #### Response
 
 The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -168,11 +171,11 @@ Content-type: application/json
   "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
   "clientSecret": "12345",
   "claimsMapping": {
-      "userId": "myUserId",
-      "givenName": "myGivenName",
-      "surname": "mySurname",
-      "email": "myEmail",
-      "displayName": "myDisplayName"
+      "userId": "33757",
+      "givenName": "samuel",
+      "surname": "sinclair",
+      "email": "sam@gmail.com",
+      "displayName": "sam s"
   },
   "domainHint": "mycustomoidc",
   "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",

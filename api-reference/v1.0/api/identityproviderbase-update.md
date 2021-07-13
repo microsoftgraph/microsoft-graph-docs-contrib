@@ -54,7 +54,7 @@ In Azure AD B2C, provide a JSON object with one or more properties that need to 
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client identifier for the application obtained when registering the application with the identity provider.|
+|clientId|String|The identifier for the client application obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns "\*\*\*\*".|
 |displayName|String|The display name of the identity provider.|
 
@@ -62,7 +62,7 @@ In Azure AD B2C, provide a JSON object with one or more properties that need to 
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client identifier for the application obtained when registering the application with the identity provider.|
+|clientId|String|The identifier for the client application obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on **responseType**. <ul><li>When **responseType** is `code`, a secret is required for the auth code exchange.</li><li>When **responseType** is `id_token` the secret is not required because there is no code exchange. The id_token is returned directly from the authorization response.</li></ul>|
 |displayName|String|The display name of the identity provider.|
 |domainHint|String|The domain hint can be used to skip directly to the sign in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
@@ -92,9 +92,8 @@ The following is an example of the request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
+PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
 Content-type: application/json
-Content-length: 41
 
 {
   "clientSecret": "1111111111111"
@@ -102,8 +101,6 @@ Content-length: 41
 ```
 
 #### Response
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -127,9 +124,8 @@ The following is an example of the request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7
+PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7
 Content-type: application/json
-Content-length: 41
 
 {
   "responseType": "id_token"
@@ -137,8 +133,6 @@ Content-length: 41
 ```
 
 #### Response
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "response",
