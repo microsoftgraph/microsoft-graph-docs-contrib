@@ -10773,6 +10773,8 @@ items:
             href: api/mobiledevicemanagementpolicies-get.md
           - name: Update
             href: api/mobiledevicemanagementpolicies-update.md
+          - name: Delete
+            href: api/mobiledevicemanagementpolicies-delete.md
           - name: List included groups
             href: api/mobiledevicemanagementpolicies-list-includedgroups.md
           - name: Add included groups
@@ -10785,6 +10787,8 @@ items:
             href: api/mobileappmanagementpolicies-get.md
           - name: Update
             href: api/mobileappmanagementpolicies-update.md
+          - name: Delete
+            href: api/mobileappmanagementpolicies-delete.md
           - name: List included groups
             href: api/mobileappmanagementpolicies-list-includedgroups.md
           - name: Add included groups
@@ -11545,10 +11549,16 @@ items:
              - name: Delete
                href: api/b2cidentityuserflow-delete.md
              - name: List identity providers
-               href: api/b2cidentityuserflow-list-identityproviders.md
+               href: api/b2cidentityuserflow-list-userflowidentityproviders.md
              - name: Add identity provider
-               href: api/b2cidentityuserflow-post-identityproviders.md
+               href: api/b2cidentityuserflow-userflowidentityproviders-update.md
              - name: Remove identity provider
+               href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
+             - name: List identity providers (deprecated)
+               href: api/b2cidentityuserflow-list-identityproviders.md
+             - name: Add identity provider (deprecated)
+               href: api/b2cidentityuserflow-post-identityproviders.md
+             - name: Remove identity provider (deprecated)
                href: api/b2cidentityuserflow-delete-identityproviders.md
              - name: List user attribute assignments
                href: api/b2cidentityuserflow-list-userattributeassignments.md
@@ -11575,10 +11585,16 @@ items:
              - name: Delete
                href: api/b2xidentityuserflow-delete.md
              - name: List identity providers
-               href: api/b2xidentityuserflow-list-identityproviders.md
+               href: api/b2xidentityuserflow-list-userflowidentityproviders.md
              - name: Add identity provider
+               href: api/b2xidentityuserflow-userflowidentityproviders-update.md
+             - name: Delete identity provider
+               href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
+             - name: List identity providers (deprecated)
+               href: api/b2xidentityuserflow-list-identityproviders.md
+             - name: Add identity provider (deprecated)
                href: api/b2xidentityuserflow-post-identityproviders.md
-             - name: Remove identity provider
+             - name: Delete identity provider (deprecated)
                href: api/b2xidentityuserflow-delete-identityproviders.md
              - name: List user attribute assignments
                href: api/b2xidentityuserflow-list-userattributeassignments.md
@@ -11836,6 +11852,20 @@ items:
               href: api/accesspackage-delete.md
             - name: Filter by current user
               href: api/accesspackage-filterbycurrentuser.md
+            - name: List incompatible access packages
+              href: api/accesspackage-list-incompatibleaccesspackages.md
+            - name: Add incompatible access package
+              href: api/accesspackage-post-incompatibleaccesspackage.md
+            - name: Remove incompatible access package
+              href: api/accesspackage-delete-incompatibleaccesspackage.md
+            - name: List incompatible groups
+              href: api/accesspackage-list-incompatiblegroups.md
+            - name: Add incompatible group
+              href: api/accesspackage-post-incompatiblegroup.md
+            - name: Remove incompatible group
+              href: api/accesspackage-delete-incompatiblegroup.md
+            - name: List access packages incompatible with
+              href: api/accesspackage-list-accesspackagesincompatiblewith.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
