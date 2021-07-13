@@ -233,7 +233,7 @@ Content-type: application/json
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_count_only"
   }-->
 ```msgraph-interactive
