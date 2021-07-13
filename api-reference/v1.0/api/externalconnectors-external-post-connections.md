@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Y|The connection ID|
 |name|String|Y|The connection name|
 |description|String|Y|The connection description|
-|configuration|[configuration](../resources/externalconnectors-configuration.md)|N|The connection configurations|
+|configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|N|The connection configurations|
 
 
 
