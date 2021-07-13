@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The root resource that represents the capabilities available to a Managed Service Provider (MSP) to scale the remote management of its customer tenants.
+As the root resource of the Microsoft 365 Lighthouse API, **managedTenant** represents the capabilities available to a Managed Service Provider (MSP) to scale the remote management of its customer tenants to help get them into a healthy and secure state.
 
 The Microsoft 365 Lighthouse API is defined in the OData subnamespace, `microsoft.graph.managedTenants`.
 

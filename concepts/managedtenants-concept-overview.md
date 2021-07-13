@@ -6,18 +6,18 @@ localization_priority: Normal
 ms.prod: "microsoft-365-lighthouse"
 ---
 
-# Microsoft 365 Lighthouse overview
+# Overview for multi-tenant management using the Microsoft 365 Lighthouse API
 
 Microsoft 365 Lighthouse is an admin portal that lets Managed Service Providers (MSPs) remotely manage multiple customer tenants. It helps MSPs secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium.
 
-Microsoft 365 Lighthouse helps MSPs simplify onboarding of Microsoft 365 Business Premium customer tenants. It offers an MSP the convenience of multi-tenant views across all its customer tenant environments. It can recommend security configuration baselines tailored to the MSP's SMB customers. With Microsoft 365 Lighthouse, MSPs can scale the management of their customer tenants, focus on what's most important, quickly find and investigate risks, and take action to get their customer tenants to a healthy and secure state.
+Microsoft 365 Lighthouse helps MSPs simplify onboarding of Microsoft 365 Business Premium customer tenants. It offers an MSP the convenience of multi-tenant views across all its customer tenant environments. It can recommend security configuration baselines tailored to the MSP's SMB customers. With Microsoft 365 Lighthouse, MSPs can scale the management of their customer tenants, focus on what's most important, quickly find and investigate risks, and take action to help get their customer tenants to a healthy and secure state.
 
 > [!NOTE]  
 > This documentation is about the Microsoft 365 Lighthouse API available on _Microsoft Graph_. A similar offering, Azure Lighthouse, helps service providers deliver managed services for Azure services by using comprehensive and robust management tooling built into the _Azure_ platform. To learn more, see [What is Azure Lighthouse](/azure/lighthouse/overview).
 
 ## Why integrate with Microsoft 365 Lighthouse?
 
-As an MSP, you can use the Microsoft 365 Lighthouse API in Microsoft Graph to gain insights into identified risks and take action to get your customers into a healthy and secure state.
+As an MSP, you can use the Microsoft 365 Lighthouse API in Microsoft Graph to gain insights into identified risks and take action to help get your customers into a healthy and secure state.
 
 ### Devices
 
