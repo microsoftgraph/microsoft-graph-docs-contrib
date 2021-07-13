@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-The content of an [externalItem](externalconnector-externalitem.md) indexed via a Microsoft Search [connection](externalconnector-externalconnection.md).
+The content of an [externalItem](externalconnectors-externalitem.md) indexed via a Microsoft Search [connection](externalconnectors-externalconnection.md).
 
 ## Properties
 |Property|Type|Description|
