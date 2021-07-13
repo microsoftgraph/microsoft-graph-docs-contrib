@@ -18,17 +18,13 @@ A logical container to add content from an external source into Microsoft Graph.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List externalConnections](../api/externalconnection-list.md)|[externalConnection](../resources/externalconnectors-externalconnection.md) collection|Get a list of the [externalConnection](../resources/externalconnection.md) objects and their properties.|
-|[Create externalConnection](../api/externalconnectors-externalconnection-post-connections.md)|[externalConnection](../resources/externalconnectors-externalconnection.md)|Create a new [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
+|[Create externalConnection](../api/externalconnectors-external-post-connections.md)|[externalConnection](../resources/externalconnectors-externalconnection.md)|Create a new [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
+|[List externalConnections](../api/externalconnectors-external-list-connections.md)|[externalConnection](../resources/externalconnectors-externalconnection.md) collection|Get a list of the [externalConnection](../resources/externalconnectors-externalconnection.md) objects and their properties.|
 |[Get externalConnection](../api/externalconnectors-externalconnection-get.md)|[externalConnection](../resources/externalconnectors-externalconnection.md)|Read the properties and relationships of an [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
 |[Update externalConnection](../api/externalconnectors-externalconnection-update.md)|[externalConnection](../resources/externalconnectors-externalconnection.md)|Update the properties of an [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
 |[Delete externalConnection](../api/externalconnectors-externalconnection-delete.md)|None|Deletes an [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
-|[List items](../api/externalconnectors-externalconnection-list-items.md)|[externalItem](../resources/externalconnectors-externalitem.md) collection|Get the externalItem resources from the items navigation property.|
-|[Create externalItem](../api/externalconnectors-externalconnection-post-items.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Create a new externalItem object.|
-|[List operations](../api/externalconnectors-externalconnection-list-operations.md)|[connectionOperation](../resources/externalconnectors-connectionoperation.md) collection|Get the connectionOperation resources from the operations navigation property.|
-|[Create connectionOperation](../api/externalconnectors-externalconnection-post-operations.md)|[connectionOperation](../resources/externalconnectors-connectionoperation.md)|Create a new connectionOperation object.|
-|[List schema](../api/externalconnectors-externalconnection-list-schema.md)|[schema](../resources/externalconnectors-schema.md) collection|Get the schema resources from the schema navigation property.|
-|[Create schema](../api/externalconnectors-externalconnection-post-schema.md)|[schema](../resources/externalconnectors-schema.md)|Create a new schema object.|
+|[Create schema](../api/externalconnectors-schema-create.md)|[schema](../resources/externalconnectors-schema.md)|Create a new schema object.|
+|[Create externalItem](../api/externalconnectors-externalitem-create.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Create a new externalItem object.|
 
 ## Properties
 |Property|Type|Description|
