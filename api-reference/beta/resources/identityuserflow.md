@@ -1,5 +1,5 @@
 ---
-title: "UserFlow resource type"
+title: "UserFlow resource type (deprecated)"
 description: "Identity user flows are built-in authentication journeys"
 localization_priority: Normal
 author: "Nickgmicrosoft"
