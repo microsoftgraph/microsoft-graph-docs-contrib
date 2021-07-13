@@ -5671,7 +5671,7 @@ items:
           - name: Schema
             href: resources/externalconnectors-schema.md
           - name: Create schema
-            href: api/externalconnectors-externalconnection-post-schema.md
+            href: api/externalconnectors-schema-create.md
           - name: Get schema
             href: api/externalconnectors-schema-get.md
         - name: External item
@@ -5679,7 +5679,7 @@ items:
           - name: External item
             href: resources/externalconnectors-externalitem.md
           - name: Create external item
-            href: api/externalconnectors-externalconnection-put-items.md
+            href: api/externalconnectors-externalitem-create.md
           - name: Get external item
             href: api/externalconnectors-externalitem-get.md
           - name: Update external item

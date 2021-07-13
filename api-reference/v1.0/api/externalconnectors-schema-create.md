@@ -1,6 +1,6 @@
 ---
 title: "Create schema"
-description: "Create a new schema object."
+description: "Create the schema for a Microsoft Search connection."
 author: "mecampos"
 localization_priority: Normal
 ms.prod: "search"
@@ -56,7 +56,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_schema_from_connection_async"
+  "name": "create_schema_from_connection_async",
+  "@odata.type": "microsoft.graph.externalConnectors.schema"
 }-->
 
 ```http

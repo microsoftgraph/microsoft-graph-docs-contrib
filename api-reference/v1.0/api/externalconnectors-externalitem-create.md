@@ -1,16 +1,16 @@
 ---
 title: "Create externalItem"
-description: "Create a new externalItem object."
-author: "mecampos"
+description: "Create a new externalItem."
+author: "snlraju-msft"
+ms.author: "snlraju"
 localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
 # Create externalItem
+
 Namespace: microsoft.graph.externalConnectors
-
-
 
 Create a new [externalItem](../resources/externalconnectors-externalitem.md) object.
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not applicable|
 |Delegated (personal Microsoft account)|Not applicable|
-|Application| ExternalItem.ReadWrite.OwnedBy|
+|Application| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## HTTP request
 
