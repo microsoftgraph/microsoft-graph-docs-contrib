@@ -17,11 +17,11 @@ Update the properties of an [externalConnection](../resources/externalconnectors
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:----------------|:--------------------------------------------|
-| Delegated (work or school account) | Not applicable |
-| Delegated (personal Microsoft account) | Not applicable |
-| Application | ExternalConnection.ReadWrite.OwnedBy |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## HTTP request
 
@@ -34,6 +34,7 @@ PATCH /connections/{connectionsId}
 ```
 
 ## Request headers
+
 | Name          | Description                 |
 |:--------------|:----------------------------|
 | Authorization | Bearer {token}. Required.   |
@@ -41,12 +42,12 @@ PATCH /connections/{connectionsId}
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. The following properties can be updated.
+
 | Property      | Type                                           | Description |
 |:--------------|:-----------------------------------------------|:------------|
 | configuration | [configuration](../resources/externalconnectors-configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. |
 | description   | String                                         | Description of the connection displayed in the Microsoft 365 admin center. |
 | name          | String                                         | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. |
-
 
 
 ## Response
