@@ -3,7 +3,7 @@ title: "Get term group"
 description: "Read the properties and relationships of a group object."
 author: mohitpcad
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
