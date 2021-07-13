@@ -5,16 +5,16 @@
        {
          "Id": "0a673359-4f88-11nbe-ae53-ed740c456b69",
          "ApiChange": "Enum type",
-         "ChangedApiName": "synchronizationSecretKeyStringValuePair",
+         "ChangedApiName": "synchronizationSecret",
          "ChangeType": "Addition",
-         "Description": "Added the Oauth2TokenExchangeUri, Oauth2AuthorizationUri, AuthenticationType, enumeration type, ConnectionString.",
+         "Description": "Added the `Oauth2TokenExchangeUri`, `Oauth2AuthorizationUri`, `AuthenticationType`, and `ConnectionString` values to the **synchronizationSecret** enumeration.",
          "Target": "synchronizationSecretKeyStringValuePair"
        }
       ],
       "Id": "0a673359-4f88-11nbe-ae53-ed740c456b69",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-04-26T18:58:47.428Z",
+      "CreatedDateTime": "2021-07-12T18:58:47.428Z",
       "WorkloadArea": "Applications",
       "SubArea": "Directory management"
     },
