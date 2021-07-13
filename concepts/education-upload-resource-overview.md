@@ -170,4 +170,5 @@ Use the `fileUrl` constructed above in the request body to [POST Assignment Reso
 ```
 
 You have now successfully associated an SPO resource to an assignment. You can follow similar steps to upload student work resource(s).
+
 Reference: [POST Submission Resources](/graph/api/educationsubmission-post-resources.md)
