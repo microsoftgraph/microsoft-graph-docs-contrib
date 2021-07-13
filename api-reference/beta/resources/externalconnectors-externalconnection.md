@@ -37,7 +37,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | description   | String                            | Description of the connection displayed in the Microsoft 365 admin center. Optional. |
 | id            | String                            | Developer-provided unique ID of the connection within the Azure Active Directory tenant. Maximum length of 32 characters. Must only contain alphanumeric characters. Cannot begin with `Microsoft` or be one of the following values: `None`, `Directory`, `Exchange`, `ExchangeArchive`, `LinkedIn`, `Mailbox`, `MicrosoftSearch`, `OneDriveBusiness`, `SharePoint`, `Teams`, `Yammer`, `Connectors`. Required. |
 | name          | String                            | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. Required. |
-| state         | connectionState                   | Indicates the current state of the connection. Possible values are `draft`, `ready`, `obsolete`, and `limitExceeded`. Required. |
+| state         | microsoft.graph.externalConnectors.connectionState                   | Indicates the current state of the connection. Possible values are `draft`, `ready`, `obsolete`, and `limitExceeded`. Required. |
 
 ## Relationships
 
