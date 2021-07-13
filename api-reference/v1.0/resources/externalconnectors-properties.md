@@ -1,6 +1,6 @@
 ---
 title: "properties resource type"
-description: "A schema property definition for a Microsoft Search connection."
+description: "The properties defined for the items in the connection."
 author: "mecampos"
 localization_priority: Normal
 ms.prod: "search"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-A [schema](externalconnector-schema.md) property definition for a Microsoft Search [connection](externalconnector-externalconnection.md).
+A [schema](externalconnectors-schema.md) property definition for a Microsoft Search [connection](externalconnectors-externalconnection.md).
 
 ## Properties
 |Property|Type|Description|
