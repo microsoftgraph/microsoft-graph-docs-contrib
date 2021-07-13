@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 
 
-A [schema](externalconnector-schema.md) property definition for a Microsoft Search [connection](externalconnector-externalconnection.md).
+A [schema](externalconnectors-schema.md) property definition for a Microsoft Search [connection](externalconnectors-externalconnection.md).
 
 ## Properties
 |Property|Type|Description|
