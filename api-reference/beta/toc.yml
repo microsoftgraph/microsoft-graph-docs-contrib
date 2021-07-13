@@ -1728,7 +1728,7 @@ items:
         - name: Delete
           href: api/bookingstaffmember-delete.md
     - name: Devices and apps
-      expanded: false
+      expanded: true
       items:
       - name: Cloud printing
         items:
@@ -9763,9 +9763,10 @@ items:
               href: api/windowsupdates-updatableassetgroup-removemembers.md
             - name: Remove members by ID
               href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
-      - name: Managed tenants (preview)
-        href: resources/managedtenants-managedtenant.md
+      - name: Multi-tenant management (preview)
         items:
+        - name: Managed tenant
+          href: resources/managedtenants-managedtenant.md
         - name: Aggregated policy compliance
           href: resources/managedtenants-aggregatedpolicycompliance.md
           items: 

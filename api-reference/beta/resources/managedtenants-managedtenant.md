@@ -13,7 +13,9 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the available operations that interact with the multi-tenant management platform.
+The root resource that represents the capabilities available to a Managed Service Provider (MSP) to scale the remote management of its customer tenants.
+
+The Lighthouse API is defined in the OData subnamespace, `microsoft.graph.managedTenants`.
 
 ## Properties
 None.

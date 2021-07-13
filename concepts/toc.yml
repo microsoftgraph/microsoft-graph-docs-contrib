@@ -234,7 +234,7 @@ items:
                 href: windowsupdates-schedule-deployment.md
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
-          - name: Managed tenants (preview)
+          - name: Multi-tenant management (preview)
             displayName: Microsoft 365 Lighthouse
             href: managedtenants-concept-overview.md
       - name: Education
