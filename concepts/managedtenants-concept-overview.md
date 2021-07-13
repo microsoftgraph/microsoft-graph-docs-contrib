@@ -8,9 +8,12 @@ ms.prod: "microsoft-365-lighthouse"
 
 # Microsoft 365 Lighthouse overview
 
-Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) remotely secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium.
+Microsoft 365 Lighthouse is an admin portal that lets Managed Service Providers (MSPs) remotely manage multiple customer tenants. It helps MSPs secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium.
 
-Microsoft 365 Lighthouse lets MSPs simplify onboarding of Microsoft 365 Business Premium customer tenants. It offers an MSP the convenience of multi-tenant views across all its customer tenant environments. It can recommend security configuration baselines tailored to the MSP's SMB customers. With Microsoft 365 Lighthouse, MSPs can scale the management of their customer tenants, focus on what's most important, quickly find and investigate risks, and take action to get their customer tenants to a healthy and secure state.
+Microsoft 365 Lighthouse helps MSPs simplify onboarding of Microsoft 365 Business Premium customer tenants. It offers an MSP the convenience of multi-tenant views across all its customer tenant environments. It can recommend security configuration baselines tailored to the MSP's SMB customers. With Microsoft 365 Lighthouse, MSPs can scale the management of their customer tenants, focus on what's most important, quickly find and investigate risks, and take action to get their customer tenants to a healthy and secure state.
+
+> [!NOTE]  
+> This documentation is about the Microsoft 365 Lighthouse API available on _Microsoft Graph_. A similar offering, Azure Lighthouse, helps service providers deliver managed services for Azure services by using comprehensive and robust management tooling built into the _Azure_ platform. To learn more, see [What is Azure Lighthouse](/azure/lighthouse/overview).
 
 ## Why integrate with Microsoft 365 Lighthouse?
 
@@ -44,10 +47,11 @@ Looking for the API reference for this service?
 See [Microsoft 365 Lighthouse API in Microsoft Graph (preview)](/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta&preserve-view=true).
 
 > [!NOTE]
-> The Lighthouse API is defined in the OData subnamespace, `microsoft.graph.managedTenants`.
+> The Microsoft 365 Lighthouse API is defined in the OData subnamespace, `microsoft.graph.managedTenants`.
 
 
 ## Next steps
 
+- Learn more about the [Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview?view=o365-worldwide&preserve-view=true) portal.
 - Find out about the [latest new features and updates](/graph/whats-new-overview) for the Lighthouse API.
 - Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.
