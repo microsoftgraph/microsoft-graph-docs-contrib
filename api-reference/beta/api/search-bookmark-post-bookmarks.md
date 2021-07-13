@@ -84,7 +84,6 @@ Content-Type: application/json
   "webUrl": "http://www.contoso.com/",
   "description": "Try or buy Contoso for Home or Business and view product information",
   "keywords":  {
-    "@odata.type": "microsoft.graph.search.answerKeyword"
     "keywords": ["Contoso", "install"],
     "reservedKeywords": ["Contoso"],
     "matchSimilarKeywords": true
@@ -94,7 +93,6 @@ Content-Type: application/json
   "platforms": ["windows"],
   "targetedVariations": [
     {
-      "@odata.type": "microsoft.graph.search.answerVariant"
       "languageTag": "es-ES",
       "displayName": "Sitio de instalación Contoso",
       "description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
