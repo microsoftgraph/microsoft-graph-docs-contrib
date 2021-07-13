@@ -11372,7 +11372,7 @@ items:
              - name: List identity providers
                href: api/b2cidentityuserflow-list-userflowidentityproviders.md
              - name: Add identity provider
-               href: api/b2cidentityuserflow-post-userflowidentityproviders.md
+               href: api/b2cidentityuserflow-userflowidentityproviders-update.md
              - name: Remove identity provider
                href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
              - name: List identity providers (deprecated)
@@ -11408,7 +11408,7 @@ items:
              - name: List identity providers
                href: api/b2xidentityuserflow-list-userflowidentityproviders.md
              - name: Add identity provider
-               href: api/b2xidentityuserflow-post-userflowidentityproviders.md
+               href: api/b2xidentityuserflow-userflowidentityproviders-update.md
              - name: Delete identity provider
                href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
              - name: List identity providers (deprecated)

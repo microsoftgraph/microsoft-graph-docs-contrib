@@ -8088,7 +8088,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "b2cIdentityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added the **Add identityProvider** method to [b2cIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
+          "Description": "Added the **Add userFlowIdentityProvider** method to [b2cIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
           "Target": "b2cIdentityUserFlow"
         },
         {
@@ -8096,7 +8096,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "b2cIdentityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added the **List identityProvider** method to [b2cIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
+          "Description": "Added the **List userFlowIdentityProvider** method to [b2cIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
           "Target": "b2cIdentityUserFlow"
         },
         {
@@ -8104,7 +8104,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "b2cIdentityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added the **Delete identityProvider** method to [b2cIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
+          "Description": "Added the **Delete userFlowIdentityProvider** method to [b2cIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) resource.",
           "Target": "b2cIdentityUserFlow"
         },
         {
@@ -8120,7 +8120,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "b2xIdentityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added the **Add identityProvider** method to [b2xIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
+          "Description": "Added the **Add userFlowIdentityProvider** method to [b2xIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
           "Target": "b2xIdentityUserFlow"
         },
         {
@@ -8128,7 +8128,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "b2xIdentityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added the **List identityProvider** method to [b2xIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
+          "Description": "Added the **List userFlowIdentityProvider** method to [b2xIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
           "Target": "b2xIdentityUserFlow"
         },
         {
@@ -8136,7 +8136,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "b2xIdentityUserFlow",
           "ChangeType": "Addition",
-          "Description": "Added the **Delete identityProvider** method to [b2xIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
+          "Description": "Added the **Delete userFlowIdentityProvider** method to [b2xIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) resource.",
           "Target": "b2xIdentityUserFlow"
         }
       ],
