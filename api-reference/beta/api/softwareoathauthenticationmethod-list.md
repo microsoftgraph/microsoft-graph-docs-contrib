@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of a user's [Software OATH token authentication method](../resources/softwareoathauthenticationmethod.md) objects and their properties.
+Retrieve a list of a user's [software OATH token authentication method](../resources/softwareoathauthenticationmethod.md) objects and their properties.
 
 ## Permissions
 
@@ -101,4 +101,3 @@ Content-Type: application/json
   ]
 }
 ```
-
