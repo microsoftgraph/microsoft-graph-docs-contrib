@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List recoveryKeys
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. 
 
 This operation does not return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
@@ -89,7 +87,7 @@ The following is an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys
+GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -160,7 +158,7 @@ The following is an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
