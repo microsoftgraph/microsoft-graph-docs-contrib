@@ -132,7 +132,7 @@ Azure AD resources and their relationships that derive from [directoryObject](/g
 
 > **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order.
 
-The tokenized search support works only on the **displayName** and **description** fields. Any field of string type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior. For example:
+The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior. For example:
 
 `https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo"`
 
