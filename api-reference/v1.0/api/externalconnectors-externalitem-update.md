@@ -51,8 +51,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property   | Type                                  | Description               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [acl](../resources/externalconnectors-acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content    | [externalItemContent](../resources/externalconnectors-externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
+| acl        | [microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
+| content    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
 | properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/externalconnectors-schema.md) defined for the [externalConnection](../resources/externalconnectors-externalconnection.md). |
 
 ### Updating the acl collection
@@ -72,7 +72,8 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_externalitem"
+  "name": "update_externalitem",
+  "@odata.type": "microsoft.graph.externalConnectors.acl"
 }
 -->
 ``` http
@@ -98,7 +99,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalItem"
+  "@odata.type": "microsoft.graph.externalConnectors.externalItem"
 } -->
 
 ```http
@@ -120,6 +121,7 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
+    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
     "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
     "type": "html"
   }

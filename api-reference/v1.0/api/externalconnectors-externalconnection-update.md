@@ -8,9 +8,8 @@ doc_type: apiPageType
 ---
 
 # Update externalConnection
+
 Namespace: microsoft.graph.externalConnectors
-
-
 
 Update the properties of an [externalConnection](../resources/externalconnectors-externalconnection.md) object.
 
@@ -45,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property      | Type                                           | Description |
 |:--------------|:-----------------------------------------------|:------------|
-| configuration | [configuration](../resources/externalconnectors-configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. |
+| configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. |
 | description   | String                                         | Description of the connection displayed in the Microsoft 365 admin center. |
 | name          | String                                         | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. |
 
@@ -72,3 +71,17 @@ Content-type: application/json
 }
 ```
 
+<!-- markdownlint-disable MD024 -->
+### Response
+<!-- markdownlint-enable MD024 -->
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```

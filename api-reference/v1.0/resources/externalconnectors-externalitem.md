@@ -24,10 +24,10 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|acl|[acl](../resources/externalconnectors-acl.md) collection|An array of access control entries. Each entry specifies the access granted to a user or group. Required.|
-|content|[externalItemContent](../resources/externalconnectors-externalitemcontent.md)|A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional.|
+|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) collection|An array of access control entries. Each entry specifies the access granted to a user or group. Required.|
+|content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional.|
 |id|String|Developer-provided unique ID of the item within the containing [externalConnection](externalconnectors-externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required.|
-|properties|[properties](../resources/externalconnectors-properties.md)|A property bag with the properties of the item. The properties MUST conform to the [schema](externalconnectors-schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required.|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|A property bag with the properties of the item. The properties MUST conform to the [schema](externalconnectors-schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required.|
 
 ## Relationships
 None.
@@ -41,21 +41,27 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+```json
 {
-  "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
-  "id": "String (identifier)",
-  "properties": {
-    "@odata.type": "microsoft.graph.externalConnectors.properties"
-  },
-  "content": {
-    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent"
-  },
   "acl": [
     {
-      "@odata.type": "microsoft.graph.externalConnectors.acl"
+      "type": "everyone",
+      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
+      "accessType": "grant",
+      "identitySource": "azureActiveDirectory"
     }
-  ]
+  ],
+  "id": "String (identifier)",
+  "properties": {
+    "title": "String",
+    "priority": 1,
+    "assignee": "john@contoso.com"
+  },
+  "content": {
+    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
+    "value": "String",
+    "type": "text"
+  }
 }
 ```
 

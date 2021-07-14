@@ -19,8 +19,8 @@ Requests to index data are performed on behalf of an application without the pre
 The use cases for the APIs in this section involve building [Microsoft Graph connectors](/microsoftsearch/connectors-overview), which involves the following primary steps:
 
 1. [Create a connection](../api/externalconnectors-external-post-connections.md) to an external data source.
-2. [Create and register a schema](../api/externalconnectors-externalconnection-post-schema.md) that describes the type and how to index the external data.
-3. [Index the data](../api/externalconnectors-externalconnection-put-items.md) as an external item.
+2. [Create and register a schema](../api/externalconnectors-schema-create.md) that describes the type and how to index the external data.
+3. [Index the data](../api/externalconnectors-externalitem-create.md) as an external item.
 
 | Use cases                                        | REST resources                              | See also |
 |:-------------------------------------------------|:--------------------------------------------|:--|
@@ -35,13 +35,11 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 The following are current known limitations:
 
 - Organizations are limited to a maximum of 10 connections.
-- Only Azure Active Directory identities are supported.
 - You can create only four `externalItem` resources items per second.
 - An application is limited to four concurrent operations on a connection.
 - Connections have a capacity limit of 700,000 items or ~70 GB of data.
 - Maximum size of an `externalItem` entity is 4 MB.
 - Sorting results is not supported.
-- Result ranking is best effort.
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
@@ -50,5 +48,7 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 - See the [Microsoft Search API overview](/graph/search-concept-overview).
 - Drill down on the methods, properties, and relationships of the [externalConnection](externalconnectors-externalconnection.md), [schema](externalconnectors-schema.md), and [externalItem](externalconnectors-externalitem.md) resources.
+- Check out the [Microsoft Graph postman collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) ([learn more](https://developer.microsoft.com/en-us/graph/blogs/postman-collections))
 - Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
+
 

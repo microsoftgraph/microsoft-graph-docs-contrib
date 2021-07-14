@@ -2,7 +2,7 @@
 title: "Create externalItem"
 description: "Create a new externalItem."
 author: "snlraju-msft"
-ms.author: "snlraju"
+ms.author: "emzho"
 localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
@@ -47,9 +47,9 @@ The following table shows the properties that are required when you create the [
 |Property|Type| Required (Y/N) | Description|
 |:---|:---|:---|:---|
 |id|String|Y|The item ID|
-|properties|[properties](../resources/externalconnectors-properties.md)|Y|The item properties. The `properties` object must contain at least one property. All `DateTime` type properties must be in ISO 8601 format.|
-|content|[externalItemContent](../resources/externalconnectors-externalitemcontent.md)|N|The external item content|
-|acl|[acl](../resources/externalconnectors-acl.md) collection|Y|The access control list|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Y|The item properties. The `properties` object must contain at least one property. All `DateTime` type properties must be in ISO 8601 format.|
+|content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|N|The external item content|
+|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) collection|Y|The access control list|
 
 Properties on an `externalItem` should use type specifiers in the payload in the following scenarios:
 

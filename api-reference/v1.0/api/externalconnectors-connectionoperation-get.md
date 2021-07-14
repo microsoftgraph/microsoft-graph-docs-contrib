@@ -8,9 +8,8 @@ doc_type: apiPageType
 ---
 
 # Get connectionOperation
+
 Namespace: microsoft.graph.externalConnectors
-
-
 
 Read the properties and relationships of a [connectionOperation](../resources/externalconnectors-connectionoperation.md) object.
 
@@ -21,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not applicable|
 |Delegated (personal Microsoft account)|Not applicable|
-|Application| ExternalItem.ReadWrite.All|
+|Application| ExternalConnection.ReadWrite.OwnedBy |
 
 ## HTTP request
 
