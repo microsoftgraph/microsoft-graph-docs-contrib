@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "softwareOathAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the [Software OATH authentication method](https://docs.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta) resource and associated methods to beta",
+          "Description": "Added the [Software OATH authentication method](https://docs.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta) resource and associated methods",
           "Target": "softwareOathAuthenticationMethod"
         },
         {
