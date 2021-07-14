@@ -46,9 +46,9 @@ PATCH /identity/identityProviders/{id}
 
 ## Request body
 
-In the request body, provide a JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD tenant.
+In the request body, provide the OData type and the JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD tenant.
 
-In Azure AD B2C, provide a JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
+In Azure AD B2C, provide the OData type and the JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
 
 ### socialIdentityProvider object
 
@@ -71,7 +71,6 @@ In Azure AD B2C, provide a JSON object with one or more properties that need to 
 |responseMode|String|The response mode defines the method used to send data back from the custom identity provider to Azure AD B2C. Possible values: `form_post`, `query`.|
 |responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
 |scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
-
 
 ## Response
 
@@ -96,6 +95,7 @@ PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
 Content-type: application/json
 
 {
+  "@odata.type": "microsoft.graph.socialIdentityProvider",
   "clientSecret": "1111111111111"
 }
 ```
@@ -128,6 +128,7 @@ PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/OIDC-V1-Nam_AD
 Content-type: application/json
 
 {
+  "@odata.type": "microsoft.graph.socialIdentityProvider",
   "responseType": "id_token"
 }
 ```
