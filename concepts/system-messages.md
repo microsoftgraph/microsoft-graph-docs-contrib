@@ -12,33 +12,37 @@ ms.custom: scenarios:getting-started
 Microsoft Teams generates system messages for events such as members added to a chat, team name updated, and channel description updated. System messages enable the caller to have insights about events that happened in a team, a channel, or a chat.
 
 
-Microsoft Graph exposes system messages as part of [Chat Message](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) GET operations and [Change Notifications for Chat and Channel messages](teams-changenotifications-chatmessage.md).
+Microsoft Graph exposes system messages as part of [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) GET operations and [Change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
 
 
 System messages are presented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) objects.
 In this case, the **messageType** property is set to `systemEventMessage` and the **eventDetail** property provides the event details.
 
 
-### Supported GET operations
+## Supported GET operations
 
-1. GET /teams/{team-id}/channel/{channel-id}/messages
-2. GET /teams/{team-td}/channel/{channel-id}/messages/{message-id}
-3. GET /chats/{chat-id}/messages
-4. GET /chats/{chat-id}/messages/{message-id}
+The following GET operations support system messages:
 
-For details, see [Chat Message](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true).
+- GET /teams/{team-id}/channel/{channel-id}/messages
+- GET /teams/{team-td}/channel/{channel-id}/messages/{message-id}
+- GET /chats/{chat-id}/messages
+- GET /chats/{chat-id}/messages/{message-id}
 
-### Supported change notifications
+For details, see [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true).
 
-1. Subscribe to messages in a channel - /teams/{team-id}/channels/{channel-id}/messages
-2. Subscribe to messages in a chat - /chats/{chat-id}/messages
+## Supported change notifications
+
+The following change notifications support system messages:
+
+- Subscribe to messages in a channel - /teams/{team-id}/channels/{channel-id}/messages
+- Subscribe to messages in a chat - /chats/{chat-id}/messages
 
 For details, see [Change notifications for messages](teams-changenotifications-chatmessage.md).
 
 
 ## Supported system message events
 
-| Event   |  System Message Type   | Applicable to |
+| Event   |  System message type   | Applicable to |
 |:--------|:--------------|:--------------|
 | Call ended | [callEndedEventMessageDetail](#call-ended) | Chat, Channel |
 | Call recording | [callRecordingEventMessageDetail](#call-recording) | Chat, Channel |
@@ -73,9 +77,9 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 > **Note:** System messages applicable to a team are posted in the primary channel.
 
 
-## Example JSON response
+## JSON response examples
 
-The following list shows the supported event types with corresponding examples of JSON responses.
+The following JSON examples show the responses for each supported event type.
 
 ### Call ended
 
