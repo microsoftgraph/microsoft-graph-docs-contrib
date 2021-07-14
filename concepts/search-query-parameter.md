@@ -34,7 +34,7 @@ Alternatively, you can search messages by specifying message property names in t
 |:-------------------------|:------------|:---------|
 | **attachment**           | The names of files attached to an email message.|[GET][search-att-example] `../me/messages?$search="attachment:api-catalog.md"`
 | **bcc**           | The **bcc** field of an email message, specified as an SMTP address, display name, or alias.|[GET][search-bcc-example] `../me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`
-| **body**           | The body of an email message.|[GET][search-body-example] `../me/messages?$search="body:excitement"`.
+| **body**           | The body of an email message.|[GET][search-body-example] `../me/messages?$search="body:excitement"`
 | **cc**           | The **cc** field of an email message, specified as an SMTP address, display name, or alias.|[GET][search-cc-example] `../me/messages?$search="cc:danas"&$select=subject,ccRecipients`
 | **from**           | The sender of an email message, specified as an SMTP address, display name, or alias.| [GET][search-from-example] `../me/messages?$search="from:randiw"&$select=subject,from`
 | **hasAttachment** | True if an email message contains an attachment that is not an inline attachment, false otherwise. | [GET][search-from-example] `../me/messages?$search="hasAttachments:true"`
