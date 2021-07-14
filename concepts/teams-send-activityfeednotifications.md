@@ -227,7 +227,7 @@ Content-Type: application/json
         "content": "New deployment requires your approval"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -414,4 +414,4 @@ The settings will appear after the first notification is sent by the Teams app. 
 
 ## See also
 
-[Best practices for using Microsoft Teams activity feed notifications](activity-feed-notifications-best-practices.md).
+[Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md).
