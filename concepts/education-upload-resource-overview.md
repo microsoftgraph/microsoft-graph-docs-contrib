@@ -24,8 +24,8 @@ Setup a SharePoint folder to upload files for a given assignment or submission.
 
 ## Upload a resource
 
-At this point, we are assuming that you have setup the relevant resource folder already. 
-The `setUpResourcesFolder` API returns a model with one of the property called `resourcesFolderUrl`.
+At this point, we are assuming that you have setup the relevant resource folder already. The `setUpResourcesFolder` API returns a model with one of the property called `resourcesFolderUrl`.
+
 ```http
 {
     ...
@@ -38,15 +38,17 @@ The `setUpResourcesFolder` API returns a model with one of the property called `
 Following steps will allow you to upload a resource/file to the relevant resource folder. For simplicity, we are going to upload a SPO resource to the assignment. You can follow similar steps to upload a SPO resource to the submission.
 
 ### Step 1 - Construct the upload url
-Build the url for uploading content in a specific format. The format is `{resourcesFolderUrl}:/{Name of new file}:/content`, 
-e.g. based on the sample `resourcesFolderUrl`, the upload url will be:
+Build the url for uploading content in a specific format. The format is `{resourcesFolderUrl}:/{Name of new file}:/content`.
+e.g. based on the sample `resourcesFolderUrl` from above, the upload url will be:
 ```http
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
 ```
 
 ### Step 2 - Upload the resource to SPO
 
-PUT `{upload Url}` to upload the content. Refer to [this](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) documentation for more details.
+PUT `{upload Url}` to upload the content. 
+
+Refer to [this](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) documentation for more details.
 
 #### Example Request
 ```http
@@ -70,6 +72,7 @@ The contents of the request body should be the binary stream of the file to be u
     "size": 2302233,
     "createdBy": {
         "application": null,
+        "device": null,
         "user": {
             "email": "t-james@contososd.org",
             "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
@@ -78,6 +81,7 @@ The contents of the request body should be the binary stream of the file to be u
     },
     "lastModifiedBy": {
         "application": null,
+        "device": null,
         "user": {
             "email": "t-james@contososd.org",
             "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
@@ -165,6 +169,6 @@ POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-
 }
 ```
 
-You have now successfully associated an SPO resource to an assignment. You can follow similar steps to upload student work resource(s).
+You have now successfully associated a SPO resource to an assignment. You can follow similar steps to upload one or more student work resource(s).
 
 Reference: [POST Submission Resources](/graph/api/educationsubmission-post-resources)
