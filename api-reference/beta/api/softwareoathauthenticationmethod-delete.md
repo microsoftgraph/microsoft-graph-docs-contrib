@@ -75,7 +75,6 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/sof
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -84,4 +83,3 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/sof
 ``` http
 HTTP/1.1 204 No Content
 ```
-
