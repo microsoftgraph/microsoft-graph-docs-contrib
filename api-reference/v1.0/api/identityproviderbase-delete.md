@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
-In Azure AD B2C, delete a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
+In Azure AD B2C, delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object.
 
 ## Permissions
 

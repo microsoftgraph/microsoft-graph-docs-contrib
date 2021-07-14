@@ -14,7 +14,7 @@ Retrieve a list of collection of object inherited from  [identityProviderBase](.
 
 For an Azure AD tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md) and/or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
 
-For an Azure AD B2C tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md) and/or [openIdConnectIdentityProviders](../resources/openidconnectidentityprovider.md) objects.
+For an Azure AD B2C tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md) objects.
 
 ## Permissions
 
@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) and/or [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects in the response body for an Azure AD tenant.
 
-For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) and/or [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) objects in the response body.
+For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) objects in the response body.
 
 ## Example
 
@@ -151,25 +151,6 @@ Content-type: application/json
             "identityProviderType": "LinkedIn",
             "clientId": "866xc0qtyy00ih",
             "clientSecret": "******"
-        },
-        {
-            "@odata.type": "#microsoft.graph.openIdConnectIdentityProvider",
-            "id": "OIDC-V1-rtt_AD_Test-3e393390-ed2d-4794-97f6-5c1a1ccc61f7",
-            "displayName": "OIDC AD Test",
-            "clientId": "fe1b3476-rdca-4bef-b321-076fde19750b",
-            "clientSecret": "******",
-            "scope": "openid",
-            "metadataUrl": "https://login.microsoftonline.com/sashawho.onmicrosoft.com/.well-known/openid-configuration",
-            "domainHint": "",
-            "responseType": "code",
-            "responseMode": "form_post",
-            "claimsMapping": {
-                "userId": "oid",
-                "displayName": "samuel s",
-                "givenName": "samuel",
-                "surname": "sinclair",
-                "email": "sam@gmail.com"
-            }
         }
     ]
 }

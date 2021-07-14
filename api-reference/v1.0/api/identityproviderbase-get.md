@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in Azure AD.
 
-For Azure AD B2C, it can retrieve properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md).
+For Azure AD B2C, it can retrieve properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md).
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in the response body for an Azure AD tenant.
 
-For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object in the response body.
+For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in the response body.
 
 ## Examples
 
@@ -131,56 +131,5 @@ Content-type: application/json
     "id": "MSASignup-OAUTH",
     "identityProviderType": "MicrosoftAccount",
     "displayName": "MicrosoftAccount"
-}
-```
-
-### Example 3: Retrieve a specific **OpenID Connect identity provider** (only for Azure AD B2C)
-
-#### Request
-
-The following is an example of the request.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_openidconnectidentityprovider_from_identityproviderbase"
-}
--->
-
-``` http
-GET https://graph.microsoft.com/v1.0/identity/identityProviders/OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000
-```
-
-#### Response
-
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.openIdConnectIdentityProvider"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.type": "microsoft.graph.openIdConnectIdentityProvider",
-  "id": "OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000",
-  "displayName": "Login with the Contoso identity provider",
-  "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-  "clientSecret": "12345",
-  "claimsMapping": {
-      "userId": "33757",
-      "givenName": "samuel",
-      "surname": "sinclair",
-      "email": "sam@gmail.com",
-      "displayName": "sam s"
-  },
-  "domainHint": "mycustomoidc",
-  "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
-  "responseMode": "form_post",
-  "responseType": "code",
-  "scope": "openid"
 }
 ```

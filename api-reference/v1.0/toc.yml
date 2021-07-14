@@ -4691,8 +4691,6 @@ items:
             href: resources/builtinidentityprovider.md
           - name: Social identity provider
             href: resources/socialidentityprovider.md
-          - name: OpenID Connect identity provider
-            href: resources/openidconnectidentityprovider.md
           - name: List
             href: api/identityproviderbase-list.md
           - name: Create

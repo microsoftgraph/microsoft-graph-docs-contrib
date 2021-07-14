@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
-For Azure AD B2C, update the properties  of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
+For Azure AD B2C, update the properties  of a [socialIdentityProvider](../resources/socialidentityprovider.md) object.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ PATCH /identity/identityProviders/{id}
 
 In the request body, provide the OData type and the JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD tenant.
 
-In Azure AD B2C, provide the OData type and the JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.
+In Azure AD B2C, provide the OData type and the JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) object.
 
 ### socialIdentityProvider object
 
@@ -57,20 +57,6 @@ In Azure AD B2C, provide the OData type and the JSON object with one or more pro
 |clientId|String|The identifier for the client application obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns "\*\*\*\*".|
 |displayName|String|The display name of the identity provider.|
-
-### openIdConnectIdentityProvider object
-
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|clientId|String|The identifier for the client application obtained when registering the application with the identity provider.|
-|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on **responseType**. <ul><li>When **responseType** is `code`, a secret is required for the auth code exchange.</li><li>When **responseType** is `id_token` the secret is not required because there is no code exchange. The id_token is returned directly from the authorization response.</li></ul>|
-|displayName|String|The display name of the identity provider.|
-|domainHint|String|The domain hint can be used to skip directly to the sign in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
-|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|After the OIDC provider sends an ID token back to Azure AD, Azure AD needs to be able to map the claims from the received token to the claims that Azure AD recognizes and uses. This complex type captures that mapping.|
-|metadataUrl|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add.|
-|responseMode|String|The response mode defines the method used to send data back from the custom identity provider to Azure AD B2C. Possible values: `form_post`, `query`.|
-|responseType|String|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.|
-|scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
 
 ## Response
 
@@ -97,39 +83,6 @@ Content-type: application/json
 {
   "@odata.type": "microsoft.graph.socialIdentityProvider",
   "clientSecret": "1111111111111"
-}
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 204 No Content
-```
-
-### Example 2: Update a specific **OpenID Connect identity provider** (only for Azure AD B2C)
-
-#### Request
-
-The following is an example of the request.
-
-<!-- {
-  "blockType": "request",
-  "name": "update_openidconnectprovider"
-}
--->
-
-``` http
-PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7
-Content-type: application/json
-
-{
-  "@odata.type": "microsoft.graph.socialIdentityProvider",
-  "responseType": "id_token"
 }
 ```
 
