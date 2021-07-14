@@ -16,8 +16,6 @@ Namespace: microsoft.graph.externalConnectors
 
 A [schema](externalconnectors-schema.md) property definition for a Microsoft Search [connection](externalconnectors-externalconnection.md).
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## Properties
 
 | Property      | Type              | Description                                        |
