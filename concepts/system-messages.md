@@ -182,7 +182,6 @@ The following JSON examples show the responses for each supported event type.
     "meetingOrganizer": {
       "application": null,
       "device": null,
-      "conversation": null,
       "user": {
         "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
         "displayName": null,
@@ -192,7 +191,6 @@ The following JSON examples show the responses for each supported event type.
     "initiator": {
       "application": null,
       "device": null,
-      "conversation": null,
       "user": {
         "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
         "displayName": null,
@@ -234,7 +232,7 @@ The following JSON examples show the responses for each supported event type.
   "eventDetail": {
     "@odata.type": "#microsoft.graph.callStartedEventMessageDetail",
     "callId": "9c848c0e-f906-4dfc-b22e-c68a785a587c",
-    "callEventType": "meeting",
+    "callEventType": "call",
     "initiator": {
       "application": null,
       "device": null,
@@ -423,7 +421,7 @@ The following JSON examples show the responses for each supported event type.
   "eventDetail": {
     "@odata.type": "#microsoft.graph.channelDescriptionUpdatedEventMessageDetail",
     "channelId": "19:cb9c31f1c4c446fa820a64e07cacacc9@thread.tacv2",
-    "channelDescription": "Desc",
+    "channelDescription": "Channel description updated",
     "initiator": {
       "application": null,
       "device": null,
@@ -1104,7 +1102,7 @@ The following JSON examples show the responses for each supported event type.
   "eventDetail": {
     "@odata.type": "#microsoft.graph.teamDescriptionUpdatedEventMessageDetail",
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
-    "teamDescription": "User 4 Team",
+    "teamDescription": "Team description updated",
     "initiator": {
       "application": null,
       "device": null,
@@ -1150,7 +1148,7 @@ The following JSON examples show the responses for each supported event type.
   "mentions": [],
   "reactions": [],
   "eventDetail": {
-    "@odata.type": "#microsoft.graph.teamJoiningEnabledEventMessageDetail",
+    "@odata.type": "#microsoft.graph.teamJoiningDisabledEventMessageDetail",
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "initiator": {
       "application": null,
@@ -1197,7 +1195,7 @@ The following JSON examples show the responses for each supported event type.
   "mentions": [],
   "reactions": [],
   "eventDetail": {
-    "@odata.type": "#microsoft.graph.teamJoiningDisabledEventMessageDetail",
+    "@odata.type": "#microsoft.graph.teamJoiningEnabledEventMessageDetail",
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "initiator": {
       "application": null,
