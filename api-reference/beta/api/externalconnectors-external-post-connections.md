@@ -110,6 +110,7 @@ Content-type: application/json
   "id": "contosohr",
   "name": "Contoso HR",
   "description": "Connection to index Contoso HR system",
+  "state": "draft",
   "configuration": {
     "authorizedAppIds": [
       "d310d35d-72ec-47dd-92f2-fb9c40936555"
