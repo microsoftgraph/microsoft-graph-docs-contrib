@@ -234,6 +234,9 @@ items:
                 href: windowsupdates-schedule-deployment.md
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
+          - name: Multi-tenant management (preview)
+            displayName: Microsoft 365 Lighthouse
+            href: managedtenants-concept-overview.md
       - name: Education
         items:
           - name: Overview
@@ -385,14 +388,16 @@ items:
                 href: search-concept-files.md
               - name: Search connectors
                 href: search-concept-custom-types.md
+              - name: Search person (preview)
+                href: search-concept-person.md
               - name: Sort search results (preview)
                 href: search-concept-sort.md
               - name: Refine search results (preview)
                 href: search-concept-aggregation.md
               - name: Request spelling correction (preview)
                 href: search-concept-speller.md
-              - name: Search person (preview)
-                href: search-concept-person.md
+              - name: Search display layout (preview)
+                href: search-concept-display-layout.md
       - name: Security
         items:
           - name: Overview
@@ -530,12 +535,16 @@ items:
                 items:
                   - name: Overview
                     href: change-notification-in-microsoft-teams-overview.md
-                  - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
                   - name: Team membership
                     href: teams-changenotifications-teamMembership.md
+                  - name: Chat and channel messages
+                    href: teams-changenotifications-chatmessage.md                  
+                  - name: Chat
+                    href: teams-changenotifications-chat.md
+                  - name: Chat membership
+                    href: teams-changenotifications-chatMembership.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:

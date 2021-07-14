@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/unifiedRoleAssignmentScheduleInstances/eb18c026-c026-eb18-26c0-18eb26c018eb
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleInstances/eb18c026-c026-eb18-26c0-18eb26c018eb
 ```
 
 
