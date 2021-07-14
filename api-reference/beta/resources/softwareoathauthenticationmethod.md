@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A representation of a software OATH token registered to a user. A software OATH token is a software-based number generator that uses the OATH TOTP standard. A software OATH token is used for multi-factor authentication. Note that this API will not return Microsoft Authenticator authentication method entities, though it will return an entity if Microsoft Authenticator was set up via the third-party software authenticator flow.
+A representation of a software OATH token registered to a user. A software OATH token is a software-based number generator that uses the OATH Time-Based One Time Password (TOTP) standard for multi-factor authentication. This API will not return Microsoft Authenticator authentication method entities, though it will return an entity if Microsoft Authenticator was set up via the third-party software authenticator flow.
 
 ## Methods
 |Method|Return type|Description|
@@ -49,4 +49,3 @@ The following is a JSON representation of the resource.
   "secretKey": "String"
 }
 ```
-
