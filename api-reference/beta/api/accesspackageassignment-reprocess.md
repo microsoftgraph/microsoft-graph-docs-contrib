@@ -66,7 +66,7 @@ The following is an example of the request.
   "name": "reprocess_accessPackageAssignments"
 }-->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
 ```
 
 ### Response
