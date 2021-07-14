@@ -1,5 +1,5 @@
 ---
-title: "Reprocess on accessPackageAssignments"
+title: "Reprocess accessPackageAssignments"
 description: "Reprocess accesspackageassignment objects."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Reprocess on accessPackageAssignments
+# Reprocess accessPackageAssignments
 
 Namespace: microsoft.graph
 
@@ -61,10 +61,9 @@ If successful, this method returns a `202 Accepted` response code. If the assign
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "reprocess_accesspackageassignments"
+  "name": "reprocess_accessPackageAssignments"
 }-->
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
