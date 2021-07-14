@@ -27,7 +27,7 @@ A representation of a software OATH token registered to a user. A software OATH 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The authentication method identifier.|
-|secretKey|String|The secret key of the method. Always returns null.|
+|secretKey|String|The secret key of the method. Always returns `null`.|
 
 ## Relationships
 None.
