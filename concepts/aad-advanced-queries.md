@@ -31,7 +31,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
   "name": "get_users_not_enabled"
 } -->
 ```msgraph-interactive
-https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -42,7 +42,7 @@ These advanced query capabilities are supported only on Azure AD objects, that i
 - [device](/graph/api/resources/device)
 - [group](/graph/api/resources/group)
 - [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [users](/graph/api/resources/user)
+- [user](/graph/api/resources/user)
 
 The following table lists query scenarios on directory objects that are supported only in advanced queries.
 
@@ -66,7 +66,7 @@ The following table lists query scenarios on directory objects that are supporte
 
 Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
 
-+ Properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in`, `ne`, and `NOT` operators only in advanced queries.
++ Unless otherwise indicated, properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in`, `ne`, and `NOT` operators only in advanced queries.
 + The `endsWith` operator is supported only on **mail** and **userPrincipalName** properties.
 + Queries that are supported by default will also work in advanced queries.
 + The `NOT` and `ne` negation operators are supported only in advanced queries. 
@@ -195,4 +195,4 @@ Content-type: application/json
 
 - [Use query parameters to customize responses](/graph/query-parameters)
 - [Query parameter limitations](known-issues.md#query-parameter-limitations)
-- [Use the $search query parameter to match a search criterion](/graph/aad-advanced-queries)
+- [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
