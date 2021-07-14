@@ -113,7 +113,8 @@ Content-Type: application/json
 #### Request
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "get_siteCollection_termStore_set"
 }-->
 
 ``` http
