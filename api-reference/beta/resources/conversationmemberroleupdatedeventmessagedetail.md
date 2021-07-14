@@ -51,5 +51,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about an updated role of a conversation member in a channel or a team](/graph/system-messages/#12-conversation-member-role-updated)
-- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)
+- [Example response for an event message about an updated role of a conversation member in a channel or a team](/graph/system-messages/#conversation-member-role-updated)
+- For more information about other types of events, see [System messages](/graph/system-messages).

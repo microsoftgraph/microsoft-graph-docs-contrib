@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about an updated meeting policy](/graph/system-messages/#13-meeting-policy-updated)
-- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)
+- [Example response for an event message about an updated meeting policy](/graph/system-messages/#meeting-policy-updated)
+- For more information about other types of events, see [System messages](/graph/system-messages).

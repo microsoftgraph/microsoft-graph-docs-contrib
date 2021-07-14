@@ -45,5 +45,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about an unarchived team](/graph/system-messages/#28-team-unarchived)
-- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)
+- [Example response for an event message about an unarchived team](/graph/system-messages/#team-unarchived)
+- For more information about other types of events, see [System messages](/graph/system-messages).

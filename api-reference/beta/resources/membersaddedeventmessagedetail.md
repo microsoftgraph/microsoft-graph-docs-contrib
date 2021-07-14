@@ -49,5 +49,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about members added](/graph/system-messages/#14-members-added)
-- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)
+- [Example response for an event message about members added](/graph/system-messages/#members-added)
+- For more information about other types of events, see [System messages](/graph/system-messages).

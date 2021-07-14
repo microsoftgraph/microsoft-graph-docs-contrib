@@ -3463,7 +3463,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "callEndedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [callEndedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/callEndedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3471,7 +3471,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "callParticipantInfo",
           "ChangeType": "Addition",
           "Description": "Added the [callParticipantInfo](https://docs.microsoft.com/en-us/graph/api/resources/callParticipantInfo?view=graph-rest-beta) resource type.",
@@ -3479,7 +3479,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "callRecordingEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [callRecordingEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/callRecordingEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3487,7 +3487,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "callStartedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [callStartedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/callStartedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3495,7 +3495,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "callTranscriptEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [callTranscriptEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/callTranscriptEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3503,7 +3503,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "channelAddedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [channelAddedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelAddedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3511,7 +3511,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "channelDeletedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [channelDeletedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelDeletedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3519,7 +3519,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "channelDescriptionUpdatedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [channelDescriptionUpdatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelDescriptionUpdatedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3527,7 +3527,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "channelRenamedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [channelRenamedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelRenamedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3535,7 +3535,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "channelSetAsFavoriteByDefaultEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [channelSetAsFavoriteByDefaultEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelSetAsFavoriteByDefaultEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3543,7 +3543,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "channelUnsetAsFavoriteByDefaultEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [channelUnsetAsFavoriteByDefaultEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelUnsetAsFavoriteByDefaultEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3551,7 +3551,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "chatRenamedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [chatRenamedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/chatRenamedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3559,7 +3559,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "conversationMemberRoleUpdatedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [conversationMemberRoleUpdatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/conversationMemberRoleUpdatedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3567,7 +3567,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "eventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [eventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/eventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3575,7 +3575,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "meetingPolicyUpdatedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [meetingPolicyUpdatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/meetingPolicyUpdatedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3583,7 +3583,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "membersAddedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [membersAddedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/membersAddedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3591,7 +3591,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "membersDeletedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [membersDeletedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/membersDeletedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3599,7 +3599,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "membersJoinedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [membersJoinedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/membersJoinedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3607,7 +3607,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "membersLeftEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [membersLeftEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/membersLeftEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3615,7 +3615,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "tabUpdatedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [tabUpdatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/tabUpdatedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3623,7 +3623,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "teamArchivedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [teamArchivedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamArchivedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3631,7 +3631,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "teamCreatedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [teamCreatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamCreatedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3639,7 +3639,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "teamDescriptionUpdatedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [teamDescriptionUpdatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamDescriptionUpdatedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3647,7 +3647,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "teamJoiningDisabledEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [teamJoiningDisabledEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamJoiningDisabledEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3655,7 +3655,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "teamJoiningEnabledEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [teamJoiningEnabledEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamJoiningEnabledEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3663,7 +3663,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "teamRenamedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [teamRenamedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamRenamedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3671,7 +3671,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "teamsAppInstalledEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [teamsAppInstalledEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppInstalledEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3679,7 +3679,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "teamsAppRemovedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [teamsAppRemovedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppRemovedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3687,7 +3687,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "teamsAppUpgradedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [teamsAppUpgradedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppUpgradedEventMessageDetail?view=graph-rest-beta) resource type.",
@@ -3695,7 +3695,7 @@
         },
         {
           "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "teamUnarchivedEventMessageDetail",
           "ChangeType": "Addition",
           "Description": "Added the [teamUnarchivedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamUnarchivedEventMessageDetail?view=graph-rest-beta) resource type.",

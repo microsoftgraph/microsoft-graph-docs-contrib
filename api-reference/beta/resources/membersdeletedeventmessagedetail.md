@@ -49,5 +49,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about members deleted](/graph/system-messages/#15-members-deleted)
-- For more information about other types of events, see [System messages in Microsoft Teams using Microsoft Graph](/graph/system-messages)
+- [Example response for an event message about members deleted](/graph/system-messages/#members-deleted)
+- For more information about other types of events, see [System messages](/graph/system-messages).

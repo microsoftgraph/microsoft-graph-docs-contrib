@@ -83,7 +83,7 @@ items:
         href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/beta
-    - name: System messages in Microsoft Teams
+    - name: System messages
       href: /graph/system-messages?context=graph/api/beta
   - name: Migrate
     expanded: false
