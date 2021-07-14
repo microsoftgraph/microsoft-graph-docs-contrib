@@ -76,6 +76,12 @@ Get the BitLocker key by specifying the **key id**. This example does not return
 #### Request
 The following is an example of the request.
 
+``` http
+GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+ocp-client-name: "My Friendly Client"
+ocp-client-version: "1.2"
+```
+
 #### Response
 The following is an example of the response.
 
@@ -86,6 +92,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.bitlockerRecoveryKey"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -102,42 +109,19 @@ Content-type: application/json
 ```
 
 ### Example 2
+
 Get the BitLocker key with the **key** property by specifying the **key id**.
 
 #### Request
+
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"],
-  "name": "get_bitlockerrecoverykey_4"
-}
--->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-4-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-4-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-4-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-4-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 #### Response
+
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
@@ -147,6 +131,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.bitlockerRecoveryKey"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
