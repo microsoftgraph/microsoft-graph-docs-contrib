@@ -96,7 +96,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Retrieve a specific **built-in identity provider** (only for Azure AD)
+### Example 2: Retrieve a specific built-in identity provider (only for Azure AD)
 
 #### Request
 
