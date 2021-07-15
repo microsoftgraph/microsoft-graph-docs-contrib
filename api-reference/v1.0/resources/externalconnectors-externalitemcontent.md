@@ -16,7 +16,7 @@ The content of an [externalItem](externalconnectors-externalitem.md) indexed via
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|type|externalItemContentType|The type of content in the value property. Possible values are: `text`, `html`, `unknownFutureValue`.|
+|type|microsoft.graph.externalConnectors.externalItemContentType|The type of content in the value property. Possible values are: `text`, `html`, `unknownFutureValue`.|
 |value|String|The content for the externalItem. Required.|
 
 ## Relationships
