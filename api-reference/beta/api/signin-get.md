@@ -25,7 +25,15 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuditLog.Read.All, Directory.Read.All | 
 
-In addition, apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Global Reader
++ Reports Reader
++ Security Administrator
++ Security Operator
++ Security Reader
 
 ## HTTP request
 
@@ -57,6 +65,8 @@ If successful, this method returns a `200 OK` response code and a [signIn](../re
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_1"
@@ -64,6 +74,24 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-ff5a759b0100
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signin-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

@@ -3,7 +3,7 @@ title: "Get unifiedRoleManagementPolicyAssignment"
 description: "Read the properties and relationships of an unifiedRoleManagementPolicyAssignment object."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|PrivilegedAccess.Read.AzureAD|
+|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -51,6 +51,8 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedrolemanagementpolicyassignment"
@@ -59,6 +61,24 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 ``` http
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/d6e4112f-112f-d6e4-2f11-e4d62f11e4d6
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedrolemanagementpolicyassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedrolemanagementpolicyassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedrolemanagementpolicyassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

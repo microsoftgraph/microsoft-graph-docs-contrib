@@ -3,7 +3,7 @@ title: "List unifiedRoleAssignmentScheduleRequests"
 description: "Get a list of the unifiedRoleAssignmentScheduleRequest objects and their properties."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | PrivilegedAccess.ReadWrite.AzureAD          |
+| Delegated (work or school account)     | RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 | Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | PrivilegedAccess.Read.AzureAD               |
+| Application                            | RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory               |
 
 ## HTTP request
 
@@ -58,15 +58,35 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_unifiedroleassignmentschedulerequest"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedroleassignmentschedulerequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-unifiedroleassignmentschedulerequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-unifiedroleassignmentschedulerequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-unifiedroleassignmentschedulerequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

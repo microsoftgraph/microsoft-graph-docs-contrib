@@ -13,9 +13,6 @@ In this article, you'll learn how to create and configure a SAML-based single si
 
 This article uses an AWS Azure AD application template as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.
 
->[!NOTE]
->The response objects and keys shown in this article might be shortened for readability.
-
 ## Prerequisites
 
 This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
@@ -26,7 +23,7 @@ This tutorial assumes that you are using Microsoft Graph Explorer, but you can u
 
     ![Select the Microsoft Graph permissions](./images/application-saml-sso-configure-api/set-permissions.png)
         
-4. In the list of permissions, scroll to and expand **AppRoleAssignment (1)**, and then select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down and expand **Application (2)**, and then select the **Application.ReadWrite.All** permission. Continue to and expand **Policy (13)**, and then select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to and expand **Users (8)**, and then select **User.ReadWrite.All**. 
+4. In the list of permissions, scroll to and expand **AppRoleAssignment (1)**, and then select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down and expand **Application (2)**, and then select the **Application.ReadWrite.All** permission. Continue to and expand **Policy (13)**, and then select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to and expand **Users (8)**, and then select **User.ReadWrite.All**.
 
     ![Scroll to and select the approleassignment, application, and policy permissions](./images/application-saml-sso-configure-api/select-permissions.png)
 
@@ -695,10 +692,10 @@ No Content - 204
 - For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 - [Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping).
 - You can use the applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
-- [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
-- [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0)
-- [keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0)
-- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta)
+- [applicationTemplate](/graph/api/resources/applicationtemplate)
+- [appRoleAssignment](/graph/api/resources/approleassignment)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [application](/graph/api/resources/application)
+- [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy)
+- [keyCredential](/graph/api/resources/keycredential)
+- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta&preserve-view=true)

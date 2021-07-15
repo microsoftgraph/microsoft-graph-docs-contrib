@@ -3,7 +3,7 @@ title: "List unifiedRoleManagementPolicyRules"
 description: "Get a list of the unifiedRoleManagementPolicyRule objects and their properties."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|PrivilegedAccess.Read.AzureAD|
+|Application|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -50,6 +50,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_unifiedrolemanagementpolicyrule"
@@ -58,6 +60,24 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyrule-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-unifiedrolemanagementpolicyrule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-unifiedrolemanagementpolicyrule-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-unifiedrolemanagementpolicyrule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
