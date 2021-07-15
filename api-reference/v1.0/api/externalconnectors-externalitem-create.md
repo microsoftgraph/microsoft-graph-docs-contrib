@@ -2,7 +2,6 @@
 title: "Create externalItem"
 description: "Create a new externalItem."
 author: "snlraju-msft"
-ms.author: "emzho"
 localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
