@@ -1,6 +1,6 @@
 ---
 title: "Education upload resource overview"
-description: "Upload a file to a given educationAssignment or educationSubmission resource."
+description: "Learn how to upload a file to an assignment or a submission resource using the education APIs in Microsoft Graph."
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -13,7 +13,7 @@ Resources are an integral part of [educationAssignment](/graph/api/resources/edu
 
 Teacher determines the resources to upload in the assignment's folder, and a student determines the resources to upload in the submission's folder.
 
-## Pre-condition
+## Prerequisites
 
 Setup a SharePoint folder to upload files for a given assignment or submission. 
 
@@ -24,7 +24,7 @@ Setup a SharePoint folder to upload files for a given assignment or submission.
 
 ## Upload a resource
 
-At this point, we are assuming that you have setup the relevant resource folder already. The `setUpResourcesFolder` API returns a model with one of the property called `resourcesFolderUrl`.
+This step requires you to have setup the relevant resource folders described in [prerequisites](#Prerequisites). The `setUpResourcesFolder` API returns a model that contains the **resourcesFolderUrl** property.
 
 ```http
 {
@@ -35,7 +35,7 @@ At this point, we are assuming that you have setup the relevant resource folder 
 }
 ```
 
-Following steps will allow you to upload a resource/file to the relevant resource folder. For simplicity, we are going to upload a SPO resource to the assignment. You can follow similar steps to upload a SPO resource to the submission.
+The following example shows you how to upload a resource/file to a relevant resource folder. For simplicity, the next steps only describe how to upload a SharePoint resource to an assignment. However, you can follow similar steps to upload a SharePoint resource to a submission.
 
 ### Step 1 - Construct the upload url
 Build the url for uploading content in a specific format. The format is `{resourcesFolderUrl}:/{Name of new file}:/content`.
@@ -44,21 +44,22 @@ e.g. based on the sample `resourcesFolderUrl` from above, the upload url will be
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
 ```
 
-### Step 2 - Upload the resource to SPO
+### Step 2 - Upload the resource to SharePoint
 
-PUT `{upload Url}` to upload the content. 
+PUT `{upload Url}` to upload the content. The contents of the request body should be the binary stream of the file to be uploaded.
 
 Refer to [this](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) documentation for more details.
 
-#### Example Request
+#### Example request
 ```http
 PUT https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
 ```
-#### Example Request body
-The contents of the request body should be the binary stream of the file to be uploaded.
 
-#### Example Response
+#### Example response
 ```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#drives('b%216SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F')/items/$entity",
     "@microsoft.graph.downloadUrl": "...",
@@ -169,6 +170,4 @@ POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-
 }
 ```
 
-You have now successfully associated a SPO resource to an assignment. You can follow similar steps to upload one or more student work resource(s).
-
-Reference: [POST Submission Resources](/graph/api/educationsubmission-post-resources)
+You have now successfully associated a SharePoint resource to an assignment. You can follow similar steps to upload one or more student work resource(s). For more details, see [Create educationSubmissionResource](graph/api/educationsubmission-post-resources).
