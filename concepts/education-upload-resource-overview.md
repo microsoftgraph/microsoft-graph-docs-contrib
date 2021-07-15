@@ -35,7 +35,7 @@ This step requires you to have setup the relevant resource folders described in 
 }
 ```
 
-The following example shows you how to upload a resource/file to a relevant resource folder. For simplicity, the next steps only describe how to upload a SharePoint resource to an assignment. However, you can follow similar steps to upload a SharePoint resource to a submission.
+The following example shows you how to upload a resource/file to a relevant resource folder.
 
 ### Step 1 - Construct the upload url
 Build the url for uploading content in a specific format. The format is `{resourcesFolderUrl}:/{Name of new file}:/content`.
@@ -121,6 +121,8 @@ Following the format, the `fileUrl` will look like this-
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
 
 ### Step 4. POST assignment resource
+This step describes how to upload a SharePoint resource to an assignment resources folder.
+
 Use the `fileUrl` constructed above in the request body to [POST Assignment Resources](/graph/api/educationassignment-post-resources)
 
 #### Example Request 
@@ -170,4 +172,4 @@ POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-
 }
 ```
 
-You have now successfully associated a SharePoint resource to an assignment. You can follow similar steps to upload one or more student work resource(s). For more details, see [Create educationSubmissionResource](graph/api/educationsubmission-post-resources).
+You have now successfully uploaded a SharePoint resource to an assignment resources folder (and thus attached it to the associated assignment). You can follow similar steps to upload one or more student work resource(s). For more details, see [Create educationSubmissionResource](graph/api/educationsubmission-post-resources).
