@@ -29,7 +29,7 @@ The following permissions are required to call this API. To learn more, includin
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-```http
+``` http
 GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
@@ -37,7 +37,7 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 This operation supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
-```http
+``` http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
 
@@ -53,19 +53,22 @@ If successful, this method returns a `200 OK` response code and a list of [chatM
 ## Example
 
 ### Request
-
-```msgraph-interactive
+<!-- {
+  "blockType": "request",
+  "name": "chat_getallmessages_1"
+}-->
+``` http
 GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/chats/getAllMessages?$top=2
 ```
 
 ### Response
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-```http
+``` http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 347
@@ -150,16 +153,3 @@ Content-length: 347
     ]
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "chats: getallmessages",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
