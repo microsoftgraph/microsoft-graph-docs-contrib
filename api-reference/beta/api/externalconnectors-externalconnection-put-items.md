@@ -3,7 +3,6 @@ title: "Create externalItem"
 description: "Create a new externalItem."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.author: mecampos
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
@@ -40,8 +39,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | String | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | String | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it is overwritten by the object sent in the body. |
+| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it is overwritten by the object sent in the body. |
 
 ## Request headers
 

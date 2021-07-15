@@ -3,7 +3,6 @@ title: "Get schema"
 description: "Retrieve the properties of a schema for an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.author: mecampos
 ms.prod: "search"
 doc_type: "apiPageType"
 ---

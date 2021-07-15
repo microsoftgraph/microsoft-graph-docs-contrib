@@ -3,7 +3,6 @@ title: "externalConnection resource type"
 description: "A connection is a logical container for your external content in Microsoft Graph"
 localization_priority: Normal
 author: "snlraju-msft"
-ms.author: mecampos
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---

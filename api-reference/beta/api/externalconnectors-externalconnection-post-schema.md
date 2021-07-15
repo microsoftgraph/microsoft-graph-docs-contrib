@@ -3,7 +3,6 @@ title: "Create schema"
 description: "Create the schema for a Microsoft Search connection."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.author: mecampos
 ms.prod: "search"
 doc_type: "apiPageType"
 ---

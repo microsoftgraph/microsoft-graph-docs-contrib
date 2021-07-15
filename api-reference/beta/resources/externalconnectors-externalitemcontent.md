@@ -3,7 +3,6 @@ title: "externalItemContent resource type"
 description: "The content of an item indexed via a Microsoft Search connection."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.author: mecampos
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---
