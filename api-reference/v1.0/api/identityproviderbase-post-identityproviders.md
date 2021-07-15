@@ -73,7 +73,7 @@ If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Examples
 
-### Example 1: Create a specific **social identity provider** (Azure AD and Azure AD B2C)
+### Example 1: Create a specific social identity provider (Azure AD and Azure AD B2C)
 
 #### Request
 
