@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Education upload resource overview
+## Education upload resource overview
 
 Resources are an integral part of [educationAssignment](/graph/api/resources/educationassignment.md) and [educationSubmission](/graph/api/resources/educationsubmission.md). 
 
@@ -24,7 +24,7 @@ Setup a SharePoint folder to upload files for a given assignment or submission.
 
 ## Upload a resource
 
-This step requires you to have setup the relevant resource folders described in [prerequisites](##prerequisites). The `setUpResourcesFolder` API returns a model that contains the **resourcesFolderUrl** property.
+This step requires you to have setup the relevant resource folders described in [prerequisites](#prerequisites). The `setUpResourcesFolder` API returns a model that contains the **resourcesFolderUrl** property.
 
 ```http
 {
