@@ -26965,7 +26965,7 @@
         },
         {
             "source_path": "api-reference/beta/resources/externalconnection.md",
-            "redirect_url": "/graph/api/resources/externalconnectors-external-connection?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
