@@ -58,7 +58,7 @@ For an Azure AD B2C tenant this method returns a `200 OK` response code and a co
 
 ## Example
 
-### Example 1: List all **identityProvider** configured in an Azure AD tenant
+### Example 1: List all identity providers configured in an Azure AD tenant
 
 ### Request
 The following is an example of the request.
