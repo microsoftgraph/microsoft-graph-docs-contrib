@@ -75,11 +75,29 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.externalConnectors.schema",
     "baseType": "String",
     "properties": [
       {
-        "@odata.type": "microsoft.graph.externalConnectors.property"
+        "name": "ticketTitle",
+        "type": "string",
+        "isSearchable": true,
+        "isRetrievable": true,
+        "labels": [
+          "title"
+        ]
+      },
+      {
+        "name": "priority",
+        "type": "string",
+        "isQueryable": true,
+        "isRetrievable": true,
+        "isRefinable": true,
+        "isSearchable": false
+      },
+      {
+        "name": "assignee",
+        "type": "string",
+        "isRetrievable": true
       }
     ]
   }

@@ -45,7 +45,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type| Required (Y/N) | Description|
 |:---|:---|:---|:---|
-|id|String|Y|The item ID|
+|id|string|Y|The item ID|
 |properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Y|The item properties. The `properties` object must contain at least one property. All `DateTime` type properties must be in ISO 8601 format.|
 |content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|N|The external item content|
 |acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) collection|Y|The access control list|
