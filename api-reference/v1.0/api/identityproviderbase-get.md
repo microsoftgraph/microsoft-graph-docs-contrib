@@ -56,7 +56,7 @@ For an Azure AD B2C tenant, this method returns a `200 OK` response code and a J
 
 ## Examples
 
-### Example 1: Retrieve a specific **social identity provider** (Azure AD or Azure AD B2C)
+### Example 1: Retrieve a specific social identity provider (Azure AD or Azure AD B2C)
 
 #### Request
 
