@@ -57,7 +57,7 @@ All the properties listed in the following table are required.
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |clientId|String|The client identifier for the application obtained when registering the application with the identity provider.|
-|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns "\*\*\*\*".|
+|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`.|
 |displayName|String|The display name of the identity provider.|
 |identityProviderType|String|For a B2B scenario, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`.|
 
