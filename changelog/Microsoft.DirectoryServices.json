@@ -7390,7 +7390,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityProviderBase",
           "ChangeType": "Addition",
-          "Description": "Added the [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0) resource to support configuring an identity provider in an Azure AD and Azure AD B2C tenant.",
+          "Description": "Added the [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0) resource and associated methods to support configuring an identity provider in an Azure AD and Azure AD B2C tenant.",
           "Target": "identityProviderBase"
         },
         {
