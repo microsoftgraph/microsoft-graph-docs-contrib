@@ -4364,8 +4364,6 @@ items:
         - name: BitLocker recovery key
           href: resources/bitlockerrecoverykey.md
           items:
-          - name: BitLocker recovery key
-            href: resources/bitlockerrecoverykey.md
           - name: List
             href: api/bitlocker-list-recoverykeys.md
           - name: Get
