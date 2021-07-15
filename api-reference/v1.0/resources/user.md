@@ -127,6 +127,9 @@ This resource supports:
 
 ## Properties
 
+> [!IMPORTANT]
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves. Returned only on `$select`.|
