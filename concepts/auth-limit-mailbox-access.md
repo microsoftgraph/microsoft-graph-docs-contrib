@@ -53,6 +53,7 @@ Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access
 - Calendars.ReadWrite
 - Contacts.Read
 - Contacts.ReadWrite
+- Office 365 Exchange Online > full_access_as_app 
 
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/exchange/organization/new-applicationaccesspolicy). 
 
