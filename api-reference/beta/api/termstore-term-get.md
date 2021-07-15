@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [term](../reso
 
 ## Examples
 
-### Example 1: Get a TermStore Term
+### Example 1: Get a termStore term
 
 #### Request
 
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [term](../reso
 } -->
 
 ``` http
-GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
+GET https://graph.microsoft.com/beta/termStore/groups/1FFD3F87-9464-488A-A0EC-8FB90911182C/sets/8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f/terms/81be9856-9856-81be-5698-be815698be81
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-term-1-csharp-snippets.md)]
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets/{setId}/ter
 ---
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,7 +110,7 @@ Content-Type: application/json
   "lastModifiedDateTime": "2019-06-21T20:01:37Z"
 }
 ```
-### Example 2 : Get a Site Collection TermStore Term
+### Example 2 : Get a site collection termStore term
 
 #### Request
 
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

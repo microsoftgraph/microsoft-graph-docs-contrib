@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ## Examples
 
-### Example 1: Get a TermStore Group
+### Example 1: Get a termStore group
 
 #### Request
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
+GET https://graph.microsoft.com/beta/termStore/groups/1FFD3F87-9464-488A-A0EC-8FB90911182C
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-3-csharp-snippets.md)]
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -104,7 +104,7 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
-### Example 2: Get a TermStore Group and its parent site ID
+### Example 2: Get a termStore group and its parent site ID
 
 #### Request
 
@@ -140,7 +140,7 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -162,7 +162,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Get a Site Collection TermStore Group
+### Example 3: Get a site collection termStore group
 #### Request
 
 
@@ -178,7 +178,7 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [set](../resou
 
 ## Examples
 
-### Example 1: Get a TermStore Set
+### Example 1: Get a termStore set
 
 #### Request
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/termStore/sets/8ed8c9ea-7052-4c1d-a4d7-b9c1
 ---
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,7 +108,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a Site Collection TermStore Set
+### Example 2: Get a site collection termStore Set
 
 #### Request
 
@@ -122,7 +122,7 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

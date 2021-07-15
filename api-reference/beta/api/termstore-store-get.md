@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and a [store](../res
 
 ## Examples
 
-### Example 1: Get a TermStore
+### Example 1: Get a termStore
 
 #### Request
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/termStore
 
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -99,7 +99,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a Site Collection TermStore
+### Example 2: Get a site collection termStore
 
 #### Request
 
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 ```
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
