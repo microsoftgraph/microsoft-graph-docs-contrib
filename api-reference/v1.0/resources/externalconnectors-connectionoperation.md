@@ -41,12 +41,8 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.externalConnectors.connectionOperation",
   "id": "String (identifier)",
-  "status": "String",
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  }
+  "status": "String"
 }
 ```
 

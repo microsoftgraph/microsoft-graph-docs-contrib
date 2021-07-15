@@ -17,8 +17,8 @@ An access control entry for an item indexed by a Microsoft Search externalConnec
 |Property|Type|Description|
 |:---|:---|:---|
 |accessType|accessType|The access granted to the identity. Possible values are: `grant`, `deny`, `unknownFutureValue`.|
-|type|aclType|The type of identity. Possible values are: `user`, `group`, `everyone`, `everyoneExceptGuests`, `unknownFutureValue`.|
-|value|String|The unique identifer of the identity. In case of Azure Active Directory identities, `value` is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups `value` is set to the ID of the externalGroup|
+|type|aclType|The type of identity. Possible values are: `user`, `group`, `everyone`, `everyoneExceptGuests`, `externalGroup`, `unknownFutureValue`.|
+|value|String|The unique identifer of the identity. In case of Azure Active Directory identities, `value` is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups `value` is set to the ID of the externalGroup |
 
 ## Relationships
 None.
@@ -32,7 +32,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.externalConnectors.acl",
   "type": "String",
   "value": "String",
   "accessType": "String"

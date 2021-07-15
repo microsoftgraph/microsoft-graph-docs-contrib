@@ -39,11 +39,11 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.externalConnectors.schema",
   "baseType": "String",
   "properties": [
     {
-      "@odata.type": "microsoft.graph.externalConnectors.property"
+      "name": "String",
+      "type": "String",
     }
   ]
 }
