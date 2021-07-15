@@ -110,7 +110,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all **identityProvider** configured in an Azure AD B2C tenant
+### Example 2: List all identityProvider objects configured in an Azure AD B2C tenant
 
 ### Request
 The following is an example of the request.
