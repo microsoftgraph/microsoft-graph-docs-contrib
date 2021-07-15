@@ -4,18 +4,18 @@
             "ChangeList": [
                 {
                     "Id": "3b8493a8-d1b4-4e9f-a6a8-7109fbe17e19",
-                    "ApiChange": "Permission",
-                    "ChangedApiName": "bitlockerRecoveryKey-get",
+                    "ApiChange": "Header",
+                    "ChangedApiName": "ocp-client-name",
                     "ChangeType": "Change",
-                    "Description": "Changed the previously required header to now be optional in [bitlockerRecoveryKey](/graph/api/bitlockerrecoverykey-get.md).",
+                    "Description": "Changed the request header `ocp-client-name` from required to optional for the list and get operations of the [bitlockerRecoveryKey](https://docs.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource.",
                     "Target": "bitlockerRecoveryKey"
                 },
                 {
                     "Id": "3b8493a8-d1b4-4e9f-a6a8-7109fbe17e19",
-                    "ApiChange": "Permission",
-                    "ChangedApiName": "bitlocker-list-recoverykeys",
+                    "ApiChange": "Header",
+                    "ChangedApiName": "ocp-client-version",
                     "ChangeType": "Change",
-                    "Description": "Changed the previously required header to now be optional in [bitlockerRecoveryKey](/graph/api/bitlocker-list-recoverykeys.md).",
+                    "Description": "Changed the request header `ocp-client-version` from required to optional for the list and get operations of the [bitlockerRecoveryKey](https://docs.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource.",
                     "Target": "bitlockerRecoveryKey"
                 }
             ],
