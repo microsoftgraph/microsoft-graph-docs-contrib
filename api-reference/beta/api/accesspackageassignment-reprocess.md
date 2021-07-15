@@ -61,6 +61,7 @@ If successful, this method returns a `202 Accepted` response code. If the assign
 
 The following is an example of the request.
 
+# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "reprocess_accessPackageAssignments"
