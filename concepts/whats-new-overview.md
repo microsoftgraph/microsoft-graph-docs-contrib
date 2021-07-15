@@ -28,6 +28,7 @@ An on-premises connection [health check](/graph/api/cloudpconpremisesconnection-
 - Cloud PC computer account is not found in the organizational unit (`adJoinCheckComputerObjectAlreadyExists`).
 - Cloud PC object is not found in Azure AD (`azureAdDeviceSyncCheckDeviceNotFound`).
 - Timeout from checking if a cloud PC object has been synchronized to Azure AD (`azureAdDeviceSyncCheckLongSyncCircle`). 
+
 See the [reference](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true#cloudpconpremisesconnectionhealthcheckerrortype-values) for details and recommended remedial actions.
 
 ### Devices and apps | Multi-tenant management
