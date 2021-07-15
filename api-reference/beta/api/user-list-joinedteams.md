@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 > **Note:** Currently, this API call returns values only for the properties **id**, **displayName**, and **description** of a [team](../resources/team.md). To get information on all properties, use [Get team](/graph/team-get)].
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 
 ---
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
