@@ -1,5 +1,5 @@
 ---
-title: "Reprocess accessPackageAssignmentRequest"
+title: "accessPackageAssignmentRequest: Reprocess"
 description: "Reprocess accessPackageAssignmentRequest objects."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# Reprocess accessPackageAssignmentRequest
+# accessPackageAssignmentRequest: Reprocess
 
 Namespace: microsoft.graph
 
