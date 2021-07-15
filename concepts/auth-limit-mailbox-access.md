@@ -47,6 +47,7 @@ To configure an application access policy and limit the scope of application per
 >**Note: Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.**
 
 ## Supported permissions and additional resources
+
 Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that has been granted any of the following Microsoft Graph application permissions or Exchange Web Services permissions. 
 
 Microsoft Graph application permissions: 
@@ -65,6 +66,7 @@ Microsoft Graph application permissions:
 Exchange Web Services permission scope: `full_access_as_app`.
 
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/exchange/new-applicationaccesspolicy?view=exchange-ps&preserve-view=true). 
+
 
 ## Handling API errors
 You might encounter the following error when an API call is denied access due to a configured application access policy. 
