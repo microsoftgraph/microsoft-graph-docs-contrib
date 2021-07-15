@@ -31,10 +31,10 @@ One of the following permissions is required to call this API. To learn more, in
 } -->
 
 ``` http
-GET /termStore/groups/{groupId}/sets/{setId}/terms/{termId}
-GET /termStore/sets/{setId}/terms/{termId}
-GET /sites/{site-id}/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
-GET /sites/{site-id}/termStore/sets/{setId}/terms/{termId}
+GET /termStore/groups/{group-id}/sets/{set-id}/terms/{term-id}
+GET /termStore/sets/{set-id}/terms/{term-id}
+GET /sites/{site-id}/termStore/groups/{group-id}/sets/{set-id}/terms/{term-id}
+GET /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 ```
 
 ## Optional query parameters

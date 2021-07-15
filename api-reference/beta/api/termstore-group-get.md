@@ -32,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /termStore/groups/{groupId}
-GET /sites/{site-id}/termStore/groups/{groupId}
+GET /termStore/groups/{group-id}
+GET /sites/{site-id}/termStore/groups/{group-id}
 ```
 
 ## Request headers
