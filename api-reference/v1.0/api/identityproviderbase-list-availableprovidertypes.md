@@ -50,7 +50,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 
 ## Example
 
-### Example 1: List all **identityProvider** available in an Azure AD directory
+### Example 1: List all identity providers available in an Azure AD directory
 
 ### Request
 The following is an example of the request.
