@@ -33,6 +33,14 @@
                     "ChangeType": "Addition",
                     "Description": "Migrating [bitlockerRecoveryKey](/graph/resources/bitlockerrecoverykey.md) resource to v1.",
                     "Target": "bitlockerRecoveryKey"
+                },
+                {
+                    "Id": "47bdb98b-dad9-4bb9-b6d7-cb331370ee40",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "volumeType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **volumeType** enumeration type for migration to v1",
+                    "Target": "volumeType"
                 }
             ],
             "ChangeList": [
