@@ -65,9 +65,7 @@ All the properties listed in the following table are required.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in the response body for an Azure AD tenant.
-
-For an Azure AD B2C tenant, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in the response body for both Azure AD and Azure AD B2C tenants.
 
 If unsuccessful, a `4xx` error will be returned with specific details.
 
