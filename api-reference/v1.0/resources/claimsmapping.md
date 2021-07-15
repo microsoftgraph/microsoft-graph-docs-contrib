@@ -15,8 +15,8 @@ After the custom identity provider sends an ID token back to Azure AD B2C, Azure
 ## Properties
 |Property|Type|Description|
 |:-------|:---|:----------|
-|userId|String|The claim that provides the unique identifier for the signed-in user. It is a required propoerty.|
-|displayName|String|The claim that provides the display name or full name for the user. It is a required propoerty.|
+|userId|String|The claim that provides the unique identifier for the signed-in user. Required.|
+|displayName|String|The claim that provides the display name or full name for the user. Required.|
 |givenName|String|The claim that provides the first name of the user.|
 |surname|String|The claim that provides the last name of the user.|
 |email|String|The claim that provides the email address of the user.|
@@ -41,5 +41,4 @@ The following is a JSON representation of the resource.
   "displayName": "String"
   }
 ```
-
 
