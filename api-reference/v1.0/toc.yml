@@ -217,6 +217,8 @@ items:
           href: api/user-update.md
         - name: Delete user
           href: api/user-delete.md
+        - name: Change password
+          href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
       - name: App role assignments
@@ -1288,7 +1290,7 @@ items:
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
     - name: Devices and apps
-      expanded: false
+      expanded: true
       items:
       - name: Cloud printing
         items:
@@ -5001,15 +5003,15 @@ items:
               href: api/adminconsentrequestpolicy-get.md
             - name: Update
               href: api/adminconsentrequestpolicy-update.md
-            - name: App consent requests
-              href: resources/appconsentrequest.md
-              items:
-              - name: List
-                href: api/appconsentrequest-list.md
-              - name: Get
-                href: api/appconsentrequest-get.md
-              - name: Filter by current user
-                href: api/appconsentrequest-filterByCurrentUser.md
+          - name: App consent requests
+            href: resources/appconsentrequest.md
+            items:
+            - name: List
+              href: api/appconsentrequest-list.md
+            - name: Get
+              href: api/appconsentrequest-get.md
+            - name: Filter by current user
+              href: api/appconsentrequest-filterByCurrentUser.md
           - name: User consent requests
             href: resources/userconsentrequest.md
             items:
