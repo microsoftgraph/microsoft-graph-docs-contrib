@@ -26950,52 +26950,52 @@
         },
         {
             "source_path": "api-reference/beta/resources/acl.md",
-            "redirect_url": "/graph/resources/externalconnectors-acl?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-acl?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/beta/resources/configuration.md",
-            "redirect_url": "/graph/resources/externalconnectors-configuration?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-configuration?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/beta/resources/connectionoperation.md",
-            "redirect_url": "/graph/resources/externalconnectors-connectionoperation?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-connectionoperation?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/beta/resources/externalconnection.md",
-            "redirect_url": "/graph/resources/externalconnectors-external-connection?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-external-connection?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/beta/resources/externalgroup.md",
-            "redirect_url": "/graph/resources/externalconnectors-externalgroup?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/beta/resources/externalgroupmember.md",
-            "redirect_url": "/graph/resources/externalconnectors-externalgroupmember?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-externalgroupmember?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/beta/resources/externalitem.md",
-            "redirect_url": "/graph/resources/externalconnectors-externalitem?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/beta/resources/externalitemcontent.md",
-            "redirect_url": "/graph/resources/externalconnectors-externalitemcontent?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-externalitemcontent?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/beta/resources/property.md",
-            "redirect_url": "/graph/resources/externalconnectors-property?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-property?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/beta/resources/schema.md",
-            "redirect_url": "/graph/resources/externalconnectors-schema?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/externalconnectors-schema?view=graph-rest-beta",
             "redirect_document_id": true
         }
     ]
