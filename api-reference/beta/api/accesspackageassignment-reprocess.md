@@ -61,10 +61,9 @@ If successful, this method returns a `202 Accepted` response code. If the assign
 
 The following is an example of the request.
 
-# [HTTP]
 <!-- {
   "blockType": "request",
-  "name": "reprocess_accessPackageAssignments"
+  "name": "reprocess_accesspackageassignments"
 }-->
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess
