@@ -12,7 +12,7 @@ Microsoft Graph applications can use the Microsoft Search API to retrieve the pe
 
 ## Example: Search person by name
 
-The following request gets the people most relevant to the signed in user, based on communication and collaboration patterns and business relationships.
+The following request gets the people most relevant to the signed-in user, based on communication and collaboration patterns and business relationships.
 
 ### Request
 

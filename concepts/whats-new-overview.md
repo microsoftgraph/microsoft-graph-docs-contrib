@@ -15,19 +15,19 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## July 2021: New and generally available
 
 ### Cloud communications | Calls
-Support for a capacity limit for the number of participants that an application can handle when [answering](/graph/api/call-answer) a [call](/graph/api/resources/call), for organizations that adopt [Teams policy-based recording](/microsoftteams/teams-recording-policy).
+Support for a capacity limit for the number of participants that an application can handle when [answering](/graph/api/call-answer) a [call](/graph/api/resources/call), in organizations that adopt [Teams policy-based recording](/microsoftteams/teams-recording-policy).
 
 ### Users
-Let a user [change their own password](/graph/api/user-changepassword) without belonging to an administrator role.
+Let a user [change their own password](/graph/api/user-changepassword) without requiring an administrator role.
 
 
 ## July 2021: New in preview only
 
 ### Devices and apps | Cloud PC
 An on-premises connection [health check](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) can identify a few more possible health check error types:
-- Cloud PC computer account is not found in the organizational unit (`adJoinCheckComputerObjectAlreadyExists`)
+- Cloud PC computer account is not found in the organizational unit (`adJoinCheckComputerObjectAlreadyExists`).
 - Cloud PC object is not found in Azure AD (`azureAdDeviceSyncCheckDeviceNotFound`).
-- Timeout from checking if a cloud PC object has been synchronized to Azure AD (`azureAdDeviceSyncCheckLongSyncCircle`)
+- Timeout from checking if a cloud PC object has been synchronized to Azure AD (`azureAdDeviceSyncCheckLongSyncCircle`). 
 See the [reference](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true#cloudpconpremisesconnectionhealthcheckerrortype-values) for details and recommended remedial actions.
 
 ### Devices and apps | Multi-tenant management
@@ -38,7 +38,7 @@ Use the [Microsoft Search API to retrieve information about the people](search-c
 
 ### Teamwork
 - [Subscribe to change notifications on the chat resource](teams-changenotifications-chat.md).
-- [Subscribe to change notifications of users in a chat](teams-changenotifications-chatmembership.md), [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), or [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) (i.e., [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resources).
+- [Subscribe to change notifications of users in a chat](teams-changenotifications-chatmembership.md), in a [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), or in a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) (i.e., [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resources).
 
 ## June 2021: New and generally available
 
