@@ -93,7 +93,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all **identityProvider** available in an Azure AD B2C directory
+### Example 2: List all identity providers available in an Azure AD B2C directory
 
 ### Request
 The following is an example of the request.
