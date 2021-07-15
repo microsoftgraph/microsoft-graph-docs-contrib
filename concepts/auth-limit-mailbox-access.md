@@ -13,10 +13,10 @@ Administrators who want to limit app access to specific mailboxes can create an 
 ## Background
 Some apps call Microsoft Graph using their own identity and not on behalf of a user. These are usually background services or daemon apps that run on a server without the presence of a signed-in user. These apps make use of [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to authenticate and are configured with application permissions, which by default enable such apps to access _all_ mailboxes in a organization on Exchange Online. For example, the `Mail.Read` application permission allows apps to read mail in all mailboxes without a signed-in user. 
 
-There are scenarios where administrators may want to limit an app from accessing _all_ mailboxes in the organization. By creating an application access policy for the organization, administrators can limit third-party app access to only a specific set Exchange Online mailboxes. 
+There are scenarios where administrators may want to limit an app to only specific mailboxes and _not all_ Exchange Online mailboxes in the organization. Administrators can identify the set of mailboxes to permit access by putting them in a mail-enabled security group. Administrators can then limit third-party app access to only that set of  mailboxes by creating an application access policy for access to that group.
 
 > [!NOTE]
-> Once an application access policy is configured for an organization, it applies to any app that uses the Microsoft Graph API or Exchange Web Services to access Exchange Online mailboxes.
+> Once an application access policy is configured for an organization, the policy applies to any app that uses the Microsoft Graph API or Exchange Web Services to access Exchange Online mailboxes.
 
 As further described in the [Supported permissions and additional resources](#supported-permissions-and-additional-resources) section below, application access policy restricts mailbox access for apps that have been granted any of the Microsoft Graph or Exchange Web Services permission scopes that the policy supports.
 
@@ -32,13 +32,13 @@ To configure an application access policy and limit the scope of application per
 
 3.	Create an application access policy. 
 
-    Run the following command, replacing the **AppId**, **PolicyScopeGroupId**, and **Description** arguments.
+    Run the following command, replacing the arguments for **AppId**, **PolicyScopeGroupId**, and **Description**.
     ```sh 
     New-ApplicationAccessPolicy -AppId e7e4dbfc-046f-4074-9b3b-2ae8f144f59b -PolicyScopeGroupId EvenUsers@contoso.com -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group EvenUsers."
     ```
 4.	Test the newly created application access policy.
 
-    Run the following command, replacing the **AppId** and **Identity** arguments.
+    Run the following command, replacing the arguments for **Identity** and **AppId**.
     ```sh
     Test-ApplicationAccessPolicy -Identity user1@contoso.com -AppId e7e4dbfc-046-4074-9b3b-2ae8f144f59b 
     ```
@@ -47,7 +47,9 @@ To configure an application access policy and limit the scope of application per
 >**Note: Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.**
 
 ## Supported permissions and additional resources
-Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that has been granted any of the following application permissions for the Microsoft Graph API: 
+Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that has been granted any of the following Microsoft Graph application permissions or Exchange Web Services permissions. 
+
+Microsoft Graph application permissions: 
 - `Mail.Read`
 - `Mail.ReadBasic`
 - `Mail.ReadBasic.All`
@@ -60,7 +62,7 @@ Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access
 - `Contacts.Read`
 - `Contacts.ReadWrite`
 
-The same control applies to an app that has been granted the Exchange Web Services permission scope `full_access_as_app`.
+Exchange Web Services permission scope: `full_access_as_app`.
 
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/exchange/new-applicationaccesspolicy?view=exchange-ps&preserve-view=true). 
 
