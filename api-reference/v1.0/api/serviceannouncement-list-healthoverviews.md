@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews
+GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews
 ```
 
 #### Response
@@ -77,7 +77,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/healthOverviews",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/serviceAnnouncement/healthOverviews",
   "value": [
     {
         "service": "Exchange Online",
