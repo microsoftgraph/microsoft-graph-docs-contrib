@@ -13841,8 +13841,6 @@ items:
           href: api/chat-post.md
         - name: Get chat
           href: api/chat-get.md
-        - name: Get messages across all chats
-          href: api/chats-getallmessages.md
         - name: Update chat
           href: api/chat-patch.md
         - name: List members
@@ -13889,7 +13887,9 @@ items:
         - name: Update message
           href: api/chatmessage-update.md
         - name: Get messages across all chats
-          href: api/chats-getallmessages.md  
+          href: api/chats-getallmessages.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
         - name: List hosted content
           href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content

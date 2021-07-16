@@ -5977,8 +5977,6 @@ items:
           href: api/chat-post.md
         - name: Get chat
           href: api/chat-get.md
-        - name: Get messages across all chats
-          href: api/chats-getallmessages.md
         - name: Update chat
           href: api/chat-patch.md
         - name: List members
@@ -5991,6 +5989,8 @@ items:
           href: api/chat-delete-members.md
         - name: List messages in a chat
           href: api/chat-list-messages.md
+        - name: Get messages across all chats
+          href: api/chats-getallmessages.md
         - name: Get message in chat
           href: api/chatmessage-get.md
         - name: Send message in chat
@@ -6018,6 +6018,10 @@ items:
           href: api/chatmessage-update.md
         - name: List hosted content
           href: api/chatmessage-list-hostedcontents.md
+        - name: Get messages across all chats
+          href: api/chats-getallmessages.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: App
