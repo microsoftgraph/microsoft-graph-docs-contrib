@@ -100,7 +100,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a"
+      "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
       "displayName": "Contoso Team",
       "description": "This is a Contoso team, used to showcase the range of properties supported by this API"
     }
