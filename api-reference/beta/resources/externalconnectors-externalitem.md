@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An item added to a Microsoft Graph [connection](externalconnectors-externalconnection.md). 
+An item added to a Microsoft Graph [connection](externalconnectors-externalconnection.md).
 
 ## Methods
 
@@ -61,11 +61,7 @@ The following is a JSON representation of the resource.
   ],
   "id": "String (identifier)",
   "properties": "Object",
-  "content": {
-    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
-    "value": "String",
-    "type": "text"
-  }
+  "content": { "@odata.type": "microsoft.graph.externalConnectors.externalItemContent" }
 }
 ```
 
@@ -77,7 +73,5 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: microsoft.graph.externalConnectors.externalItem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
-  ]
+  "suppressions": []
 }-->

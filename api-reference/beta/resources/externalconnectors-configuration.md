@@ -21,6 +21,9 @@ Specifies additional application IDs that are allowed to manage the externalConn
 |:---------------|:------------------|:------------|
 | authorizedAppIds | String collection | A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection. |
 
+> [!NOTE]
+> The `authorizedAppIds` property was previously named `authorizedApps`.
+
 ## JSON representation
 
 The following is a JSON representation of the resource.

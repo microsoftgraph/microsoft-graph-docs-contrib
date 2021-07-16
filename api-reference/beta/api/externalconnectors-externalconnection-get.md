@@ -123,6 +123,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-> [!NOTE]
-> authorizedApps will be deprecated in August 2021.
