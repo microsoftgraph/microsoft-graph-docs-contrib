@@ -9,29 +9,29 @@ doc_type: "resourcePageType"
 
 # schema resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [connection](externalconnection.md) schema determines how your external content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
+The [connection](externalconnectors-externalconnection.md) schema determines how your external content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 
 ## Methods
 
 | Method                                                    | Return Type                   | Description |
 |:----------------------------------------------------------|:------------------------------|:--|
-| [Create schema](../api/externalconnection-post-schema.md) | None *or* [schema](schema.md) | Register connection schema. |
-| [Get schema](../api/schema-get.md)                        | [schema](schema.md)           | Read properties of a schema object. |
+| [Create schema](../api/externalconnectors-externalconnection-post-schema.md) | None *or* [schema](externalconnectors-schema.md) | Register connection schema. |
+| [Get schema](../api/externalconnectors-schema-get.md)                        | [schema](externalconnectors-schema.md)           | Read properties of a schema object. |
 
 ## Properties
 
 | Property   | Type                               | Description                |
 |:-----------|:-----------------------------------|:---------------------------|
 | baseType   | String                             | Must be set to `microsoft.graph.externalItem`. Required. |
-| properties | [property](property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128. |
+| properties | [property](externalconnectors-property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128. |
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
@@ -40,9 +40,8 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
   ],
-  "@odata.type": "microsoft.graph.schema",
+  "@odata.type": "microsoft.graph.externalConnectors.schema",
   "keyProperty": "id"
 }-->
 
@@ -50,7 +49,12 @@ The following is a JSON representation of the resource.
 {
   "baseType": "String",
   "id": "String (identifier)",
-  "properties": [{"@odata.type": "microsoft.graph.property"}]
+  "properties": [
+    {
+      "name": "String",
+      "type": "String",
+    }
+  ]
 }
 ```
 
@@ -63,5 +67,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

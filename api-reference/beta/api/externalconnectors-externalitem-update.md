@@ -1,5 +1,5 @@
 ---
-title: "Update externalitem"
+title: "Update externalItem"
 description: "Update the properties of an externalitem."
 localization_priority: Normal
 author: "snlraju-msft"
@@ -7,13 +7,13 @@ ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# Update externalitem
+# Update externalItem
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [externalitem](../resources/externalitem.md).
+Update the properties of an [externalitem](../resources/externalconnectors-externalitem.md).
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## HTTP request
 
@@ -37,8 +37,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
+| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## Request headers
 
@@ -53,9 +53,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property   | Type                                  | Description               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content    | [externalItemContent](../resources/externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
-| properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md). |
+| acl        | [microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
+| content    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
+| properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/externalconnectors-schema.md) defined for the [externalConnection](../resources/externalconnectors-externalconnection.md). |
 
 ### Updating the acl collection
 
@@ -67,7 +67,7 @@ If the `properties` property is included in an update request, the existing prop
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [externalItem](../resources/externalitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [externalItem](../resources/externalconnectors-externalitem.md) object in the response body.
 
 ## Examples
 
@@ -78,7 +78,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_externalitem"
+  "name": "update_externalitem",
+  "@odata.type": "microsoft.graph.externalConnectors.acl"
 }-->
 
 ```http
@@ -124,7 +125,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalItem"
+  "@odata.type": "microsoft.graph.externalConnectors.externalItem"
 } -->
 
 ```http
@@ -135,8 +136,8 @@ Content-type: application/json
   "id": "TSP228082938",
   "acl": [
     {
-      "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
+      "type": "everyone",
+      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
       "identitySource": "azureActiveDirectory"
     }
@@ -147,6 +148,7 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
+    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
     "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
     "type": "html"
   }

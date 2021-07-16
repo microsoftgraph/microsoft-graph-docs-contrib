@@ -1,19 +1,19 @@
 ---
-title: "Get connectionOperation"
-description: "Retrieve the properties of a connectionOperation."
+title: "Delete externalConnection"
+description: "Delete an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# Get connectionOperation
+# Delete externalConnection
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a [connectionOperation](../resources/connectionoperation.md).
+Delete an [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Permissions
 
@@ -23,14 +23,14 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /external/connections/{connection-id}/operations/{operation-id}
+DELETE /external/connections/{id}
 ```
 
 ## Request headers
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [connectionOperation](../resources/connectionoperation.md) object in the response body.
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -56,26 +56,26 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connectionoperation"
+  "name": "delete_connection"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/connections/contosohr/operations/3ed1595a-4bae-43c2-acda-ef973e581323
+```http
+DELETE https://graph.microsoft.com/beta/connections/contosohr
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectionoperation-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-connection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectionoperation-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-connection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connectionoperation-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-connection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-connectionoperation-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-connection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -89,29 +89,18 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "expectError": true,
-  "@odata.type": "microsoft.graph.connectionOperation"
+  "truncated": true
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "3ed1595a-4bae-43c2-acda-ef973e581323",
-  "status": "failed",
-  "error": {
-    "message": "Server error, something went wrong"
-  }
-}
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get connectionOperation",
+  "description": "Delete externalConnection",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

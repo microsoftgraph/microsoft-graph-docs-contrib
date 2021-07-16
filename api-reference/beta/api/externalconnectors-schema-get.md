@@ -1,19 +1,19 @@
 ---
-title: "Delete externalConnection"
-description: "Delete an externalConnection."
+title: "Get schema"
+description: "Retrieve the properties of a schema for an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# Delete externalConnection
+# Get schema
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [externalConnection](../resources/externalconnection.md).
+Retrieve the properties of a [schema](../resources/externalconnectors-schema.md) for an [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Permissions
 
@@ -23,15 +23,19 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /external/connections/{id}
+GET /external/connections/{id}/schema
 ```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -45,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code and the requested [schema](../resources/externalconnectors-schema.md) object in the response body.
 
 ## Examples
 
@@ -56,26 +60,26 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_connection"
+  "name": "get_schema"
 }-->
 
-```http
-DELETE https://graph.microsoft.com/beta/connections/contosohr
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/external/connections/contosohr/schema
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-connection-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schema-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-connection-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schema-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-connection-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schema-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-connection-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-schema-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -89,18 +93,48 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.externalConnectors.schema"
 } -->
 
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "baseType": "microsoft.graph.externalItem",
+  "properties": [
+    {
+      "name": "ticketTitle",
+      "type": "string",
+      "isSearchable": true,
+      "isRetrievable": true,
+      "labels": [
+        "title"
+      ]
+    },
+    {
+      "name": "priority",
+      "type": "string",
+      "isQueryable": true,
+      "isRetrievable": true,
+      "isRefinable": true,
+      "isSearchable": false
+    },
+    {
+      "name": "assignee",
+      "type": "string",
+      "isRetrievable": true
+    }
+  ]
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete externalConnection",
+  "description": "Get schema",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

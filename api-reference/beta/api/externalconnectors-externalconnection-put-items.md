@@ -9,13 +9,13 @@ doc_type: "apiPageType"
 
 # Create externalItem
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [externalItem](../resources/externalitem.md).
+Create a new [externalItem](../resources/externalconnectors-externalitem.md).
 
-This API can be used to create a custom item. Specify the type you are creating by including the `@odata.type` property in the JSON body. The containing [externalConnection](../resources/externalconnection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.
+This API can be used to create a custom item. The containing [externalConnection](../resources/externalconnectors-externalconnection.md) must have a [schema](../resources/externalconnectors-schema.md) registered of the corresponding type.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## HTTP request
 
@@ -39,8 +39,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it is overwritten by the object sent in the body. |
+| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it is overwritten by the object sent in the body. |
 
 ## Request headers
 
@@ -51,11 +51,11 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of an [externalItem](../resources/externalitem.md) object. The payload is limited to 4 MB.
+In the request body, supply a JSON representation of an [externalItem](../resources/externalconnectors-externalitem.md) object. The payload is limited to 4 MB.
 
 ### Creating an externalItem
 
-When creating an `externalItem`, the following fields are required: `@odata.type`, `acl`, and `properties`. The `properties` object must contain at least one property.
+When creating an `externalItem`, the following fields are required: `acl`, and `properties`. The `properties` object must contain at least one property.
 
 All `DateTime` type properties must be in ISO 8601 format.
 
@@ -96,7 +96,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_externalitem_from_connections"
+  "name": "create_externalitem_from_connections",
+  "@odata.type": "microsoft.graph.externalConnectors.externalItem"
 }-->
 
 ```http
@@ -104,7 +105,6 @@ PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.externalItem",
   "acl": [
     {
       "type": "user",

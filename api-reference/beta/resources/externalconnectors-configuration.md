@@ -9,17 +9,20 @@ doc_type: "resourcePageType"
 
 # configuration resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a [externalConnection](../resources/externalconnection.md).
+Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Properties
 
 | Property       | Type              | Description |
 |:---------------|:------------------|:------------|
-| authorizedApps | String collection | A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection. |
+| authorizedAppIds | String collection | A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection. |
+
+> [!NOTE]
+> The `authorizedAppIds` property was previously named `authorizedApps`.
 
 ## JSON representation
 
@@ -30,13 +33,13 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.configuration",
+  "@odata.type": "microsoft.graph.externalConnectors.configuration",
   "baseType": null
 }-->
 
 ```json
 {
-  "authorizedApps": ["String"]
+  "authorizedAppIds": ["String"]
 }
 ```
 
@@ -49,5 +52,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

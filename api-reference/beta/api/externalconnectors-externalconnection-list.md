@@ -9,11 +9,11 @@ doc_type: "apiPageType"
 
 # List connections
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [externalConnections](../resources/externalconnection.md).
+Retrieve a list of [externalConnections](../resources/externalconnectors-externalconnection.md).
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## HTTP request
 
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [externalConnection](../resources/externalconnection.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [externalConnection](../resources/externalconnectors-externalconnection.md) objects in the response body.
 
 ## Examples
 
@@ -94,7 +94,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalConnection",
+  "@odata.type": "microsoft.graph.externalConnectors.externalConnection",
   "isCollection": true
 } -->
 
@@ -108,8 +108,9 @@ Content-type: application/json
       "id": "contosohr",
       "name": "Contoso HR",
       "description": "Connection to index Contoso HR system",
+      "state": "ready",
       "configuration": {
-        "authorizedApps": [
+        "authorizedAppIds": [
           "d310d35d-72ec-47dd-92f2-fb9c40936555"
         ]
       }
@@ -118,8 +119,9 @@ Content-type: application/json
       "id": "contosofinance",
       "name": "Contoso Finance",
       "description": "Connection to index Contoso Finance system",
+      "state": "ready",
       "configuration": {
-        "authorizedApps": [
+        "authorizedAppIds": [
           "fbdc7d4e-07f4-4143-8258-e5a2fcebeadb"
         ]
       }
@@ -137,5 +139,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

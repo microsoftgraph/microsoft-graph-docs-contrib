@@ -9,11 +9,11 @@ doc_type: "apiPageType"
 
 # Create connection
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [externalConnection](../resources/externalconnection.md).
+Create a new [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## HTTP request
 
@@ -42,11 +42,11 @@ POST /external/connections
 
 ## Request body
 
-In the request body, supply a JSON representation of an [externalConnection](../resources/externalconnection.md) object.
+In the request body, supply a JSON representation of an [externalConnection](../resources/externalconnectors-externalconnection.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a new [externalConnection](../resources/externalconnection.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [externalConnection](../resources/externalconnectors-externalconnection.md) object in the response body.
 
 ## Examples
 
@@ -98,7 +98,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalConnection"
+  "@odata.type": "microsoft.graph.externalConnectors.externalConnection"
 } -->
 
 ```http
@@ -109,8 +109,9 @@ Content-type: application/json
   "id": "contosohr",
   "name": "Contoso HR",
   "description": "Connection to index Contoso HR system",
+  "state": "draft",
   "configuration": {
-    "authorizedApps": [
+    "authorizedAppIds": [
       "d310d35d-72ec-47dd-92f2-fb9c40936555"
     ]
   }

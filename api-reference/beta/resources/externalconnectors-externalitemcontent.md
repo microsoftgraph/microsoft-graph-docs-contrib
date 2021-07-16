@@ -9,11 +9,11 @@ doc_type: "resourcePageType"
 
 # externalItemContent resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The content of an [externalItem](externalitem.md) indexed via a Microsoft Search [connection](externalconnection.md).
+The content of an [externalItem](externalconnectors-externalitem.md) indexed via a Microsoft Search [connection](externalconnectors-externalconnection.md).
 
 ## Properties
 
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.externalItemContent"
+  "@odata.type": "microsoft.graph.externalConnectors.externalItemContent"
 }-->
 
 ```json
@@ -55,5 +55,3 @@ The following is a JSON representation of the resource.
   "tocPath": "",
   "suppressions": []
 }-->
-
-

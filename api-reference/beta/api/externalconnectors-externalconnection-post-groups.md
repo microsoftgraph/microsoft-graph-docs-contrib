@@ -9,11 +9,11 @@ doc_type: apiPageType
 
 # Create externalGroup
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [externalGroup](../resources/externalgroup.md) object.
+Create a new [externalGroup](../resources/externalconnectors-externalgroup.md) object.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported                               |
 | Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | ExternalItem.ReadWrite.All                  |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -45,9 +45,9 @@ POST /external/connections/{connectionId}/groups
 
 ## Request body
 
-In the request body, supply a JSON representation of the [externalGroup](../resources/externalgroup.md) object.
+In the request body, supply a JSON representation of the [externalGroup](../resources/externalconnectors-externalgroup.md) object.
 
-The following table shows the properties that are required when you create the [externalGroup](../resources/externalgroup.md).
+The following table shows the properties that are required when you create the [externalGroup](../resources/externalconnectors-externalgroup.md).
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [externalGroup](../resources/externalgroup.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [externalGroup](../resources/externalconnectors-externalgroup.md) object in the response body.
 
 ## Examples
 
@@ -76,7 +76,6 @@ POST https://graph.microsoft.com/beta/external/connections/contosohr/groups
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.externalGroup",
   "id": "31bea3d537902000",
   "displayName": "Contoso Marketing",
   "description": "The product marketing team"
@@ -108,7 +107,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalGroup"
+  "@odata.type": "microsoft.graph.externalConnectors.externalGroup"
 }
 -->
 
@@ -117,7 +116,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.externalGroup",
   "id": "31bea3d537902000",
   "displayName": "Contoso Marketing",
   "description": "The product marketing team"

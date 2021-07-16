@@ -9,11 +9,11 @@ doc_type: "apiPageType"
 
 # Update connection
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [externalConnection](../resources/externalconnection.md).
+Update the properties of an [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## HTTP request
 
@@ -46,7 +46,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property      | Type                                           | Description |
 |:--------------|:-----------------------------------------------|:------------|
-| configuration | [configuration](../resources/configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. |
+| configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. |
 | description   | String                                         | Description of the connection displayed in the Microsoft 365 admin center. |
 | name          | String                                         | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. |
 
@@ -63,7 +63,8 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_connection"
+  "name": "update_connection",
+  "@odata.type": "microsoft.graph.externalConnectors.externalConnection"
 }-->
 
 ```http
@@ -118,5 +119,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

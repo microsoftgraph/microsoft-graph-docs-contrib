@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # externalGroup resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,9 +19,9 @@ Represents an external group. External groups (along with Azure Active Directory
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create externalGroup](../api/externalconnection-post-groups.md)|[externalGroup](../resources/externalgroup.md)|Create a new **externalGroup** object.|
-|[Delete externalGroup](../api/externalgroup-delete.md)|None|Delete an **externalGroup** object.|
-|[Create members](../api/externalgroup-post-members.md)|[externalGroupMember](../resources/externalgroupmember.md)|Create a new **externalGroupMember** object.|
+|[Create externalGroup](../api/externalconnectors-externalconnection-post-groups.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Create a new **externalGroup** object.|
+|[Delete externalGroup](../api/externalconnectors-externalgroup-delete.md)|None|Delete an **externalGroup** object.|
+|[Create members](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.externalGroupMember](../resources/externalconnectors-externalgroupmember.md)|Create a new **externalGroupMember** object.|
 
 ## Properties
 
@@ -35,7 +35,7 @@ Represents an external group. External groups (along with Azure Active Directory
 
 | Relationship | Type                                                                  | Description                                               |
 |:-------------|:----------------------------------------------------------------------|:----------------------------------------------------------|
-| members      | [externalGroupMember](../resources/externalgroupmember.md) collection | A member added to an **externalGroup**. You can add Azure Active Directory users, Azure Active Directory groups, or other **externalGroups** as members. |
+| members      | [microsoft.graph.externalConnectors.externalGroupMember](../resources/externalconnectors-externalgroupmember.md) collection | A member added to an **externalGroup**. You can add Azure Active Directory users, Azure Active Directory groups, or other **externalGroups** as members. |
 
 ## JSON representation
 
@@ -43,14 +43,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.externalGroup",
+  "@odata.type": "microsoft.graph.externalConnectors.externalGroup",
   "openType": false
 }
 -->
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.externalGroup",
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String"

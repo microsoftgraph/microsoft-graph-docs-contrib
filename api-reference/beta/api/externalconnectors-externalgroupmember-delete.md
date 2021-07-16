@@ -9,11 +9,11 @@ doc_type: apiPageType
 
 # Delete externalGroupMember
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [externalGroupMember](../resources/externalgroupmember.md) object.
+Delete an [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) object.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported                               |
 | Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | ExternalItem.ReadWrite.All                  |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                 |
 
 ## HTTP request
 
