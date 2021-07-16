@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account) | EntitlementManagement.ReadWrite.All |
 | Application | EntitlementManagement.ReadWrite.All |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.CurrentUser |
+| Delegated (work or school account) | EntitlementManagement.ReadWrite |
   
 ## HTTP request
 
