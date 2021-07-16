@@ -83,7 +83,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Cloud printing | Universal Print | Universal Print is a Microsoft 365 cloud-based print infrastructure that enables a simple, rich and secure print experience for users and reduces administrative and management effort for IT. | [Cloud printing using Universal Print API](universal-print-concept-overview.md) |
 |Corp management of devices and apps | Intune | Enrolls and configures devices, and manages mobile applications in your organization. | [Intune devices and apps overview](intune-concept-overview.md) |
 | Device updates (preview) | Windows Update for Business deployment service | Provides control over the approval, scheduling, monitoring, and safeguarding of content delivered from Windows Update. | [Windows updates in Microsoft Graph](windowsupdates-concept-overview.md) |
-| Multi-tenant management (preview) | Microsoft 365 Lighthouse | Lets Managed Service Providers (MSPs) remotely manage multiple customer tenants for compliance and threats, and help get tenant devices in a healthy and secure state. | [Multi-tenant management using Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
+| Multi-tenant management (preview) | Microsoft 365 Lighthouse | Lets Managed Service Providers (MSPs) remotely manage multiple customer tenants for compliance and threat detection, and help get tenant devices in a healthy and secure state. | [Multi-tenant management using Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
 
 
 ## Security
