@@ -53,7 +53,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.
 
 > [!Note]
-> Currently, this API call returns values only for the properties **id**, **displayName**, and **description** of a [team](../resources/team.md). To get information on all properties, use [Get team](/graph/team-get).
+> Currently, this API call returns values only for the properties **id**, **displayName**, and **description** of a [team](../resources/team.md). To get information on all properties, use [Get team](/graph/team-get). For details, see [known issues](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
 
 ## Example
 ##### Request
