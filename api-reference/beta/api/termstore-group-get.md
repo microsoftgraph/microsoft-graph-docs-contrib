@@ -1,13 +1,13 @@
 ---
-title: "Get group"
+title: "Get termStore group"
 description: "Read the properties and relationships of a group object."
 author: mohitpcad
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
-# Get group
+# Get termStore group
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -32,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /termStore/groups/{groupId}
+GET /termStore/groups/{group-id}
+GET /sites/{site-id}/termStore/groups/{group-id}
 ```
 
 ## Request headers
@@ -61,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
+GET https://graph.microsoft.com/beta/termStore/groups/1FFD3F87-9464-488A-A0EC-8FB90911182C
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-3-csharp-snippets.md)]
@@ -83,7 +84,7 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -116,7 +117,7 @@ Content-Type: application/json
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/termStore/groups/{groupId}?$select=*,parentSiteId
+GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a85-4b21-858a-7e88dafc8232,d90ca07d-25c0-4ce7-864b-d68b607e697f/termStore/groups/1FFD3F87-9464-488A-A0EC-8FB90911182C?$select=*,parentSiteId
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-csharp-snippets.md)]
@@ -139,7 +140,7 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}?$select=*,parent
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -157,7 +158,44 @@ Content-Type: application/json
   "scope" : "global",
   "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
   "displayName": "myGroup",
-  "parentSiteId": "microsoft.sharepoint.com,05259ba9-25a8-4c93-a9a9-f995ef1fc51f,a785ad58-1d57-4f8a-aa71-77170459bd0d"
+  "parentSiteId": "microsoft.sharepoint.com,c6482504-4a85-4b21-858a-7e88dafc8232,d90ca07d-25c0-4ce7-864b-d68b607e697f"
+}
+```
+
+### Example 3: Get a site collection termStore group
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_group"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a85-4b21-858a-7e88dafc8232,d90ca07d-25c0-4ce7-864b-d68b607e697f/termStore/groups/1FFD3F87-9464-488A-A0EC-8FB90911182C
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.group"
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "createdDateTime": "2019-06-21T20:01:37Z",
+  "description": "My term group",
+  "scope" : "global",
+  "id": "1FFD3F87-9464-488A-A0EC-8FB90911182C",
+  "displayName": "myGroup",
 }
 ```
 
