@@ -22,10 +22,10 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |displayName|String|The display name of the subject.|
 |email|String|The email address of the subject.|
 |id|String| Read-only.|
-|objectId|String|The object ID of the subject. Null if the subject is not yet a user in the tenant.|
+|objectId|String|The object identifier of the subject. `null` if the subject is not yet a user in the tenant.|
 |principalName|String|The principal name, if known, of the subject.|
 |type|String|The resource type of the subject.|
-|connectedOrganizationId|String|The ID of the connected organization of the subject.|
+|connectedOrganizationId|String|The identifier of the connected organization of the subject.|
 
 ## Relationships
 
@@ -67,5 +67,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
