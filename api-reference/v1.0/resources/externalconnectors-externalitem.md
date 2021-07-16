@@ -52,14 +52,10 @@ The following is a JSON representation of the resource.
   ],
   "id": "String (identifier)",
   "properties": {
-    "title": "String",
-    "priority": 1,
-    "assignee": "john@contoso.com"
+    "@odata.type": "microsoft.graph.externalConnectors.properties"
   },
   "content": {
-    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
-    "value": "String",
-    "type": "text"
+    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent"
   }
 }
 ```
