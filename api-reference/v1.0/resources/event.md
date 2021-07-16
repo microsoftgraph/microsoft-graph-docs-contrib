@@ -245,7 +245,57 @@ Here is a JSON representation of the resource
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 ```
+## Examples
 
+## HTTP request
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /users?$filter=startsWith(displayName,'S')
+GET /messages?$select=from,subject
+```
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For example, to filter the access packages with a particular name, include a filter such as `$filter=startsWith(displayName,'S')` in the query. Similarly, use $select to obtain the required property results from a collection of resources..you can specify a subset or a superset of the default properties.
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code.
+
+```json
+        {
+            "businessPhones": [],
+            "displayName": "S",
+            "givenName": null,
+            "jobTitle": null,
+            "mail": "SMO-16087JROG@microsoft.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": null,
+            "userPrincipalName": "SMO-16087JROG@microsoft.onmicrosoft.com",
+            "id": "34eeab17-3d1f-4f52-a487-3f2c0bf8e489"
+        }
+```
+
+```json
+        {
+            "@odata.etag": "W/\"CQAAABYAAADvenXPVP3FQpzwdU3ADBy+AAAgZ7kz\"",
+            "id": "AAMkADBmYTFkMzUyLTgxODQtNDA0YS05YzdlLWRkYjJlY2U4NTljZgBGAAAAAACdCqnIfBTiS7nPzH--j6RvBwDvenXPVP3FQpzwdU3ADBy_AAAAAAEMAADvenXPVP3FQpzwdU3ADBy_AAAgjvNAAAA=",
+            "subject": "Brighten up your summer with Microsoft 365 Developer news!",
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft 365 Developer",
+                    "address": "M365Dev@e-mail.microsoft.com"
+                }
+            }
+        }
+```
 
 ## See also
 
