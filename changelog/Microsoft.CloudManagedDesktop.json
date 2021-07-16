@@ -1,6 +1,24 @@
 {
     "changelog": [
         {
+            "ChangeList":[
+                {
+                    "Id": "3445a5f1-b682-4adc-9485-a9d6e1b996be",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "permissionCheckNoResourceGroupNetworkContributorRole",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `permissionCheckNoResourceGroupNetworkContributorRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id":"3445a5f1-b682-4adc-9485-a9d6e1b996be",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-12T15:14:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "632170da-397c-415a-854d-993e3b1e2349",
@@ -14,7 +32,7 @@
             "Id": "632170da-397c-415a-854d-993e3b1e2349",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2021-07-098T14:30:43.735Z",
+            "CreatedDateTime": "2021-07-09T14:30:43.735Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
