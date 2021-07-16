@@ -5,9 +5,9 @@
                 {
                     "Id": "4D251ED7-CD9A-431E-8FB5-BA2DD49E3B35",
                     "ApiChange": "Property",
-                    "ChangedApiName": "accessReviewError",
+                    "ChangedApiName": "errors",
                     "ChangeType": "Addition",
-                    "Description": "Added the **accessReviewError** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta) resource.",
+                    "Description": "Added the **errors** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta) resource.",
                     "Target": "accessReviewInstance"
                 }
             ],

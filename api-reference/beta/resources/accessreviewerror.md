@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represent errors happen in review instance lifecycle. **code** represent error type. **message** contain error details. This resource is read-only.
+Represents an error that occurred in an access review instance lifecycle. This resource is read-only.
 
 Inherits from [genericError](../resources/genericerror.md).
 
 ## Properties
 | Property                     | Type     | Description                          |
 | :--------------------------- | :------  | :----------                          |
-| code  |String  | Inherit from microsoft.graph.genericError. Error happened in review life cycle.|
-| message |String | Inherit from microsoft.graph.genericError. Error details.|
+| code  |String  | Represents the error type. Inherited from genericError. Read-only. |
+| message |String | Represents the error details. Inherited from genericError. Read-only.|
 
 ## Relationships
 None.
