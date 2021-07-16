@@ -19,6 +19,7 @@ Represents a user in a team to whom a tag is applied.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List teamworkTagMembers](../api/teamworktagmember-list.md)|**teamworkTagMember** collection|Get a list of the members of a standard tag in a team and their properties.|
+|[Create teamworkTagMember](../api/teamworktagmember-post.md)|**teamworkTagMember**|Create a new **teamworkTagMember** object.|
 |[Get teamworkTagMember](../api/teamworktagmember-get.md)|**teamworkTagMember**|Get the properties and relationships of a member of a standard tag in a team.|
 |[Delete teamworkTagMember](../api/teamworktagmember-delete.md)|None|Delete a member from a standard tag in the team.|
 
