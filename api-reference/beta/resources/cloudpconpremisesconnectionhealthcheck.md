@@ -66,6 +66,7 @@ The result of a cloud PC on-premises connection health check.
 |permissionCheckNoSubscriptionReaderRole|The cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Please make sure that the cloud PC service principal has the *Reader* permissions on the subscription.|
 |permissionCheckNoResourceGroupOwnerRole|The cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that the cloud PC service principal has the *Owner* permissions on the resource group. |
 |permissionCheckNoVNetContributorRole|The cloud PC service principal doesn't have sufficient permissions on the Azure vNet. Please make sure that the cloud PC service has the *Network contributor* permissions on the vNet.|
+|permissionCheckNoResourceGroupNetworkContributorRole|Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that the  application has Network contributor permissions on the resource group.|
 |permissionCheckUnknownError|The cloud PC service principal doesn't have sufficient permissions. Please make sure that the cloud PC service principal is granted sufficient Azure permissions.|
 |internalServerErrorDeploymentCanceled|The deployment was canceled. Please try again later. If the problem persists, please contact support.|
 |internalServerErrorAllocateResourceFailed|The allocation of resources failed. Please try again later. If the problem persists, please contact support.|
