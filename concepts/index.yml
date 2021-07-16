@@ -115,7 +115,7 @@ additionalContent:
         # Card
         - title: How-to
           links:
-            - text: Connectors':' Build your first custom connector
+            - text: "Connectors: Build your first custom connector"
               url: https://docs.microsoft.com/en-us/graph/connecting-external-content-build-quickstart  
             - text: Microsoft Search - Search content in OneDrive and Sharepoint
               url: https://docs.microsoft.com/graph/search-concept-files
