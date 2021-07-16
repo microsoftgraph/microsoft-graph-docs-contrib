@@ -1,6 +1,6 @@
 ---
 title: "accessReviewError resource type"
-description: "Represents error happened within access review instance lifecycle."
+description: "Represents an error that occurred within an access review instance lifecycle."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
