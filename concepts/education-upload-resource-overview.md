@@ -38,22 +38,25 @@ This step requires you to have setup the relevant resource folders described in 
 ## Steps
 The following example shows you how to upload a resource/file to a relevant resource folder.
 
-### Step 1 - Construct the upload url
-Build the url for uploading content in a specific format. The format is `{resourcesFolderUrl}:/{Name of new file}:/content`.
-e.g. based on the sample `resourcesFolderUrl` from above, the upload url will be:
+### Step 1 - Construct the upload URL
+Build the URL to upload content following this specific format `{resourcesFolderUrl}:/{Name of new file}:/content`. Here is what an upload URL built based on the previous sample that contains the **resourcesFolderUrl** property looks like:
 ```http
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
 ```
 
 ### Step 2 - Upload the resource to SharePoint
+Execute a PUT request with the upload URL built in the previous step to upload the content.
 
-PUT `{upload Url}` to upload the content. The contents of the request body should be the binary stream of the file to be uploaded.
+The contents of the request body should be the binary stream of the file to be uploaded.
 
-Refer to [this](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) documentation for more details.
+For more details, see [Upload large files with an upload session](/graph/api/driveitem-createuploadsession).
 
 #### Example request
 ```http
 PUT https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
+Content-Type: text/plain
+
+Binary data for the file
 ```
 
 #### Example response
@@ -110,29 +113,24 @@ Content-type: application/json
 }
 ```
 
-### Step 3 - Construct the `fileUrl`
-Format is `https://graph.microsoft.com/v1.0/drives/{drive-id from request url in step 2}/items/{id from the response body in step 2}`
-e.g. for the sample upload case
+### Step 3 - Construct the value for the fileUrl property
+Build the value for the **fileUrl** property following this specific format `https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}`. Replace the `{drive-id}` and `{item-id}` placeholders with the following values:
 
-drive-id = b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F, and 
-
-id = 01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
-
-Following the format, the `fileUrl` will look like this-
+`{drive-id}` - drive ID from the request URL used in step 2 = b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F
+`{item-id}` - item ID from the response body obtained in step 2 = 01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
+Here is what a **fileUrl** built based on the format described looks like:
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
 
-### Step 4. POST assignment resource
+### Step 4. Create educationAssignmentResource
 This step describes how to upload a SharePoint resource to an assignment resources folder.
 
-Use the `fileUrl` constructed above in the request body to [POST Assignment Resources](/graph/api/educationassignment-post-resources)
+Use the `fileUrl` constructed in the previous step in the request body to [POST Assignment Resources](/graph/api/educationassignment-post-resources)
 
-#### Example Request 
+#### Example request 
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-d599cf21e069/assignments/48b80dff-452a-4108-bd85-fa0d84e39d0a/resources
-```
+Content-type: application/json
 
-#### Example Request body
-```http
 {
     "resource": {
         "@odata.type": "#microsoft.graph.educationFileResource",
@@ -142,7 +140,7 @@ POST https://graph.microsoft.com/v1.0/education/classes/b07edbef-7420-4b3d-8f7c-
 }
 ```
 
-#### Example Response
+#### Example response
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('48b80dff-452a-4108-bd85-fa0d84e39d0a')/resources/$entity",
