@@ -115,15 +115,15 @@ additionalContent:
         # Card
         - title: How-to
           links:
-            - text: Connectors':' Build your first custom connector
+            - text: Connectors - Build your first custom connector
               url: https://docs.microsoft.com/en-us/graph/connecting-external-content-build-quickstart  
-            - text: Microsoft Search":" Search content in OneDrive and Sharepoint
+            - text: Microsoft Search - Search content in OneDrive and Sharepoint
               url: https://docs.microsoft.com/graph/search-concept-files
-            - text: Identity':' Manage access to resources
+            - text: Identity - Manage access to resources
               url: https://docs.microsoft.com/en-us/graph/tutorial-access-package-api
-            - text: Outloo':' Attach large files to a message or event
+            - text: Outlook - Attach large files to a message or event
               url: https://docs.microsoft.com/graph/outlook-large-attachments
-            - text: Outlook':' Get MIME content of a message
+            - text: Outlook - Get MIME content of a message
               url: https://docs.microsoft.com/graph/outlook-get-mime-message
         # Card
         - title: Resources and community
