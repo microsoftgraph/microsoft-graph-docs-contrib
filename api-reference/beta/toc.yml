@@ -13535,7 +13535,7 @@ items:
           - name: Create
             href: api/termstore-group-post.md
           - name: Get
-            href: api/termstore-store-get-group.md
+            href: api/termstore-group-get.md
           - name: Delete
             href: api/termstore-group-delete.md
           - name: List

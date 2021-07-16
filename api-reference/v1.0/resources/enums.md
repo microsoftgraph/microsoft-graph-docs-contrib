@@ -26,6 +26,13 @@ Namespace: microsoft.graph
 |clientIpAddress|
 |authenticatorAppGps|
 
+### countryLookupMethodType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
+
 ### consentRequestFilterByCurrentUserOptions values 
 
 |Member|
