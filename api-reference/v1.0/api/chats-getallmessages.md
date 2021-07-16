@@ -66,7 +66,8 @@ GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
+  "@odata.type": "microsoft.graph.chatMessage",
+  "isCollection": true,
 } -->
 ``` http
 HTTP/1.1 200 OK
