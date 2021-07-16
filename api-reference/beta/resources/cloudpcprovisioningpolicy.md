@@ -3,7 +3,7 @@ title: "cloudPcProvisioningPolicy resource type"
 description: "Represents a cloud PC provisioning policy."
 author: "AshleyYangSZ"
 localization_priority: Normal
-ms.prod: ""
+ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a cloud PC provisioning policy.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Methods
 
@@ -40,7 +44,7 @@ Represents a cloud PC provisioning policy.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection|A defined collection of provisioning policy assignments. Returned only on `$expand`. See an [example](../api/cloudpcprovisioningpolicy-get.md) of getting the assignments relationship. |
+|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection|A defined collection of provisioning policy assignments. Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned. Returned only on `$expand`. See an [example](../api/cloudpcprovisioningpolicy-get.md) of getting the assignments relationship. |
 
 ## JSON representation
 

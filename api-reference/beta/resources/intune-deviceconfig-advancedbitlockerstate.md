@@ -22,13 +22,13 @@ Advanced BitLocker State
 |:---|:---|:---|
 |success|0|Advanced BitLocker State Success|
 |noUserConsent|1|User never gave consent for Encryption|
-|osVolumeEncryptionMethodMismatch|2|Encryption method of OS Volume is different than that set by policy|
+|osVolumeUnprotected|2|Un-protected OS Volume was detected|
 |osVolumeTpmRequired|4|TPM not used for protection of OS volume, but is required by policy|
 |osVolumeTpmOnlyRequired|8|TPM only protection not used for OS volume, but is required by policy|
 |osVolumeTpmPinRequired|16|TPM+PIN protection not used for OS volume, but is required by policy|
 |osVolumeTpmStartupKeyRequired|32|TPM+Startup Key protection not used for OS volume, but is required by policy|
 |osVolumeTpmPinStartupKeyRequired|64|TPM+PIN+Startup Key not used for OS volume, but is required by policy|
-|osVolumeUnprotected|128|Un-protected OS Volume was detected|
+|osVolumeEncryptionMethodMismatch|128|Encryption method of OS Volume is different than that set by policy|
 |recoveryKeyBackupFailed|256|Recovery key backup failed|
 |fixedDriveNotEncrypted|512|Fixed Drive not encrypted|
 |fixedDriveEncryptionMethodMismatch|1024|Encryption method of Fixed Drive is different than that set by policy|

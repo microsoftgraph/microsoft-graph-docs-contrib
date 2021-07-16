@@ -57,7 +57,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 Do not supply a request body for this method.
 
->**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call to reference the app you'd like to delete. Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./appcatalogs-list-teamsapps.md) call to reference the app you'd like to delete. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 
@@ -101,9 +101,7 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http

@@ -3,7 +3,7 @@ title: "rbacApplication resource type"
 description: "Role management navigation property"
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers. Currently "directory" is the only RBAC application supported.
+Role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers. Currently directory and entitlement management are the only RBAC applications supported.
 
 ## Methods
 

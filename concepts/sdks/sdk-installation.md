@@ -40,24 +40,31 @@ Add the repository and a compile dependency for microsoft-graph to your project'
 
 ```Gradle
 repository {
-    jcenter()
+    mavenCentral()
 }
 
 dependency {
     // Include the sdk as a dependency
-    implementation 'com.microsoft.graph:microsoft-graph:2.+'
+    implementation 'com.microsoft.graph:microsoft-graph:4.+'
+    // Include Azure identity for authentication
+    implementation 'com.azure:azure-identity:1.+'
 }
 ```
 
 ### Install the Microsoft Graph Java SDK via Maven
 
-Add the dependency in the dependencies element in pom.xml:
+Add the dependency in the `dependencies` element in pom.xml:
 
 ```xml
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>[2.0,)</version>
+    <version>[4.0,)</version>
+</dependency>
+<dependency>
+    <groupId>com.azure</groupId>
+    <artifactId>azure-identity</artifactId>
+    <version>[1.2,)</version>
 </dependency>
 ```
 
@@ -71,7 +78,7 @@ The Microsoft Graph Javascript SDK is included in the following packages:
 You can use [npm](https://www.npmjs.com) to install the Microsoft Graph Javascript SDK:
 
 ```Shell
-npm install @microsoft/microsoft-graph-client
+npm install @microsoft/microsoft-graph-client --save
 npm install @microsoft/microsoft-graph-types --save-dev
 ```
 

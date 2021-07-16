@@ -81,9 +81,9 @@ When searching an entity type, such as **message**, **event**, **drive**, **driv
 
 For all these entity types, specifying the **fields** property reduces the number of properties returned in the response, optimizing the payload over the wire.
 
-The **listItem** and **externalItem** entities are the only supported entities that allow getting extended fields configured in the schema. You cannot retrieve extended properties from all the other entities. For example, if you created a field for **externalItem** in the search schema, or if you have a custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request.
+The **listItem** and **externalItem** entities are the only supported entities that allow getting extended retrievable fields configured in the schema. You cannot retrieve extended properties from all the other entities by using the search API. For example, if you created a retrievable field for **externalItem** in the search schema, or if you have a retrievable custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request.
 
-If the **fields** specified in the request are not present in the schema, they will not be returned in the response. Invalid fields in the request are silently ignored.
+If the **fields** specified in the request are either not present in the schema, or not marked as retrievable, they will not be returned in the response. Invalid fields in the request are silently ignored.
 
 If you do not specify any **fields** in the request,  you will get the default set of properties for all types. For extended properties, **listItem** and **externalItem** behave differently when no **fields** are passed in the request:
 
@@ -120,16 +120,14 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
-## Search samples
+- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
+
+## See also
 
 - Learn more about a few key use cases:
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
-  - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
+  - [Search content in SharePoint and OneDrive](/graph/search-concept-files)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+- Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

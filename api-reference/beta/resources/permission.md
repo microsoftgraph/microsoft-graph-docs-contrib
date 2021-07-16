@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: permission resource type
 description: permission resource representing a sharing permission granted for a driveItem
 localization_priority: Normal
@@ -73,11 +72,11 @@ Here is a JSON representation of the resource.
 
 ### Roles property values
 
-| Role              | Details                                                                        |
+| Value              | Description                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
 | read            | Provides the ability to read the metadata and contents of the item.            |
 | write           | Provides the ability to read and modify the metadata and contents of the item. |
-| sp.full control | For SharePoint and OneDrive for Business this represents the owner role.       |
+| owner           | For SharePoint and OneDrive for Business this represents the owner role.       |
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 

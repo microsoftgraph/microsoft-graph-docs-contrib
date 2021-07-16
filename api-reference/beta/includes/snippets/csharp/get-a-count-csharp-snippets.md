@@ -6,12 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var users = await graphClient.Users
+var user = await graphClient.Groups["{group-id}"].TransitiveMembers
 	.Request()
 	.Header("ConsistencyLevel","eventual")
-	.Filter("startswith(displayName,'a'),")
-	.OrderBy("displayName ")
-	.Top(1)
+	.Filter("startswith(displayName, 'a')")
+	.OrderBy("displayName")
 	.GetAsync();
 
 ```

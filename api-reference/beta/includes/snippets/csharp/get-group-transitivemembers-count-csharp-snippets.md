@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var int32 = await graphClient.Groups["{id}"].TransitiveMembers.$count
+var int32 = await graphClient.Groups["{group-id}"].TransitiveMembers.$count
 	.Request()
 	.Header("ConsistencyLevel","eventual")
 	.GetAsync();

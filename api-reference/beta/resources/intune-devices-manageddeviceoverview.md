@@ -67,7 +67,10 @@ Here is a JSON representation of the resource.
     "androidWorkProfileCount": 1024,
     "androidCorporateWorkProfileCount": 1024,
     "configMgrDeviceCount": 1024,
-    "aospUserlessCount": 1024
+    "aospUserlessCount": 1024,
+    "aospUserAssociatedCount": 1024,
+    "linuxCount": 1024,
+    "chromeOSCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

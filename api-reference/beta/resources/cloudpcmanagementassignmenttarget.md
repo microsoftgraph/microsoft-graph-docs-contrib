@@ -3,7 +3,7 @@ title: "cloudPcManagementAssignmentTarget resource type"
 description: "cloudPcManagement assignment target. Base type."
 author: "AshleyYangSZ"
 localization_priority: Normal
-ms.prod: ""
+ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -11,9 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Base type for assignment targets.
 
-The [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md) resource. which represents an assignment target group, inherits from this base type, **cloudPcManagementAssignmentTarget**.
+The [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md) resource, which represents an assignment target group, inherits from this base type.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Properties
 
