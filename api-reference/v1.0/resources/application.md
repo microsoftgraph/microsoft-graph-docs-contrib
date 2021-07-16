@@ -56,6 +56,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 ## Properties
 
+> [!IMPORTANT]
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 | addIns | [addIn](addin.md) collection| Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on. |
