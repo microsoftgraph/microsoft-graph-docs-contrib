@@ -11,4 +11,4 @@ ms.topic: include
 | Any | 100 requests per 10 seconds |
 
 The preceding limits apply to the following resources:  
-auditLogRoot, directoryAudit, restrictedSignIn, signIn.
+applicationSignInDetailedSummary, applicationSignInSummary, auditLogRoot, authenticationMethodsRoot, azureADFeatureUsage, azureADLicenseUsage, azureADUserFeatureUsage, credentialUsageSummary, credentialUserRegistrationCount, credentialUserRegistrationDetails, directoryAudit, provisioningObjectSummary, recommendation, recommendationResource, relyingPartyDetailedSummary, restrictedSignIn, signIn, userCredentialUsageDetails.
