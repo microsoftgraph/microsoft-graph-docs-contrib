@@ -53,7 +53,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.
 
-> **Note:** Currently, this API call returns values only for the properties **id**, **displayName**, and **description** of a [team](../resources/team.md). To get information on all properties, use [Get team](/graph/team-get)].
+> [!Note]
+> Currently, this API call returns values only for the properties **id**, **displayName**, and **description** of a [team](../resources/team.md). To get information on all properties, use [Get team](/graph/team-get).
 
 ## Example
 ### Request
@@ -100,22 +101,9 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
-      "createdDateTime": null,
+      "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a"
       "displayName": "Contoso Team",
-      "description": "This is a Contoso team, used to showcase the range of properties supported by this API",
-      "internalId": null,
-      "classification": null,
-      "specialization": null,
-      "visibility": null,
-      "webUrl": null,
-      "isArchived": false,
-      "isMembershipLimitedToOwners": null,
-      "memberSettings": null,
-      "guestSettings": null,
-      "messagingSettings": null,
-      "funSettings": null,
-      "discoverySettings": null
+      "description": "This is a Contoso team, used to showcase the range of properties supported by this API"
     }
   ]
 }
@@ -123,7 +111,8 @@ Content-type: application/json
 
 ## See also
 [List all teams](/graph/teams-list-all-teams)
-[Get team](/graph/team-get)]
+
+[Get team](/graph/team-get)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
