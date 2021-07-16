@@ -13174,68 +13174,62 @@ items:
           href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
-      - name: Index (preview)
+      - name: Index
         items:
         - name: Overview
           href: resources/indexing-api-overview.md
         - name: External connection
           items:
           - name: External connection
-            href: resources/externalconnection.md
+            href: resources/externalconnectors-externalconnection.md
           - name: List external connections
-            href: api/externalconnection-list.md
-          - name: Get external connection
-            href: api/externalconnection-get.md
+            href: api/externalconnectors-externalconnection-list.md
           - name: Create external connection
-            href: api/external-post-connections.md
+            href: api/externalconnectors-external-post-connections.md
+          - name: Get external connection
+            href: api/externalconnectors-externalconnection-get.md
           - name: Update external connection
-            href: api/externalconnection-update.md
+            href: api/externalconnectors-externalconnection-update.md
           - name: Delete external connection
-            href: api/externalconnection-delete.md
-          - name: Create schema
-            href: api/externalconnection-post-schema.md
+            href: api/externalconnectors-externalconnection-delete.md
           - name: Get operation
-            href: api/connectionoperation-get.md
-          - name: Create external item
-            href: api/externalconnection-put-items.md
+            href: api/externalconnectors-connectionoperation-get.md
         - name: Schema
           items:
           - name: Schema
-            href: resources/schema.md
-          - name: Get schema
-            href: api/schema-get.md
+            href: resources/externalconnectors-schema.md
           - name: Create schema
-            href: api/externalconnection-post-schema.md
+            href: api/externalconnectors-externalconnection-post-schema.md
+          - name: Get schema
+            href: api/externalconnectors-schema-get.md
         - name: External item
           items:
           - name: External item
-            href: resources/externalitem.md
-          - name: Create
-            href: api/externalconnection-put-items.md
-          - name: Get
-            href: api/externalitem-get.md
-          - name: Update
-            href: api/externalitem-update.md
-          - name: Delete
-            href: api/externalitem-delete.md
+            href: resources/externalconnectors-externalitem.md
+          - name: Create external item
+            href: api/externalconnectors-externalconnection-put-items.md
+          - name: Get external item
+            href: api/externalconnectors-externalitem-get.md
+          - name: Update external item
+            href: api/externalconnectors-externalitem-update.md
+          - name: Delete external item
+            href: api/externalconnectors-externalitem-delete.md
         - name: External group
           items:
           - name: External group
-            href: resources/externalgroup.md
-          - name: Create
-            href: api/externalconnection-post-groups.md
-          - name: Delete
-            href: api/externalgroup-delete.md
-          - name: Create members
-            href: api/externalgroup-post-members.md
+            href: resources/externalconnectors-externalgroup.md
+          - name: Create external group
+            href: api/externalconnectors-externalconnection-post-groups.md
+          - name: Delete external group
+            href: api/externalconnectors-externalgroup-delete.md
         - name: External group member
           items:
           - name: External group member
-            href: resources/externalgroupmember.md
-          - name: Create
-            href: api/externalgroup-post-members.md
-          - name: Delete
-            href: api/externalgroupmember-delete.md
+            href: resources/externalconnectors-externalgroupmember.md
+          - name: Create external group member
+            href: api/externalconnectors-externalgroup-post-members.md
+          - name: Delete external group member
+            href: api/externalconnectors-externalgroupmember-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
