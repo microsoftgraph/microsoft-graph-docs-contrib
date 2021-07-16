@@ -81,7 +81,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "extracting",
           "ChangeType": "Addition",
-          "Description": "Added new enum value 'Extracting' to the [educationsynchronizationprofilestatus](https://docs.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta) resource to provide better feedback on profile synchronization progress.",
+          "Description": "Added new enum value 'Extracting' to the educationSynchronizationStatus enumeration to provide better feedback on profile synchronization progress.",
           "Target": "educationSynchronizationStatus"        
         },
         {
@@ -89,7 +89,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "validating",
           "ChangeType": "Addition",
-          "Description": "Added new enum value 'Validating' to the [educationsynchronizationprofilestatus](https://docs.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta) resource to provide better feedback on profile synchronization progress.",
+          "Description": "Added new enum value 'Validating' to the educationSynchronizationStatus enumeration to provide better feedback on profile synchronization progress.",
           "Target": "educationSynchronizationStatus"        
         }
       ],
