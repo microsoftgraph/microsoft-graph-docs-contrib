@@ -455,48 +455,6 @@ dataPolicyOperation.
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 <!-- { "blockType": "throttlinggenstart" } -->
-### Education service limits
-
-[!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
-
-### Excel service limits
-
-[!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
-
-### Identity and access audit logs service limits
-
-[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
-
-### Identity providers service limits
-
-[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
-
-### Intune service limits
-
-[!INCLUDE [Intune applications throttling documentation](../includes/throttling-intune-applications.md)]
-[!INCLUDE [Intune books throttling documentation](../includes/throttling-intune-books.md)]
-[!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
-[!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
-[!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
-[!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
-[!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
-[!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
-[!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]
-[!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
-[!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
-[!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
-[!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
-[!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
-[!INCLUDE [Intune wip throttling documentation](../includes/throttling-intune-wip.md)]
-
-### Skype service limits
-
-[!INCLUDE [Skype calling throttling documentation](../includes/throttling-skype-calling.md)]
-
-### Subscription service limits
-
-[!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
-
 <!-- { "blockType": "throttlinggenend" } -->
 
 ### Assignment service limits
