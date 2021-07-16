@@ -4,7 +4,7 @@ description: "Learn how to upload a file to an assignment or a submission resour
 localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
-doc_type: apiPageType
+doc_type: conceptualPageType
 ---
 
 # Education upload resource overview
