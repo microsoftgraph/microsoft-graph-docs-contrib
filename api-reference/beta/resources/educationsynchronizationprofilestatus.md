@@ -34,7 +34,7 @@ Represents the synchronization status of a school data [synchronization profile]
 | errorCount | Int                 | Number of errors during synchronization.                                        |
 | statusMessage | String                 | Status message for the current profile's synchronization stage.                                        |
 
-"Extracting" and "Validating" statuses are only returned for applications prepared to handle new enum members. Opt-in is done by setting HTTP prefer request header: `Prefer: include-unknown-enum-members`. See more about: [evolvable enums](/graph/concepts/best-practices-concept.md#evolvable-enums).
+"Extracting" and "Validating" statuses are only returned for applications prepared to handle new enum members. Opt-in is done by setting HTTP prefer request header: `Prefer: include-unknown-enum-members`. See more about: [evolvable enums](/graph/best-practices-concept.md#evolvable-enums).
 
 
 ## JSON representation
