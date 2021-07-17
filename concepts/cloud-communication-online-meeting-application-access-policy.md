@@ -40,7 +40,7 @@ To configure an application access policy and allow applications to access onlin
    ```powershell
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
    ```
-5. (Optional) Grant the policy to the whole tenant. This will apply to users who do not have an application access policy assigned. For more details, refer to the cmdlet documentation in [see also](#see-also) section.
+5. (Optional) Grant the policy to the whole tenant. This will apply to users who do not have an application access policy assigned. For details, see the cmdlet links in the [see also](#see-also) section.
 
    Run the following cmdlet, replacing the **PolicyName** argument.
 
