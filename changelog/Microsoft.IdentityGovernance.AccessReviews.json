@@ -9,7 +9,15 @@
                     "ChangeType": "Addition",
                     "Description": "Added the **errors** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta) resource.",
                     "Target": "accessReviewInstance"
-                }
+                },
+                {
+                    "Id": "4D251ED7-CD9A-431E-8FB5-BA2DD49E3B35",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewError](https://docs.microsoft.com/en-us/graph/api/accessReviewError?view=graph-rest-beta&tabs=http) resource type.",
+                    "Target": "accessReviewError"
+                }                
             ],
             "Id": "4D251ED7-CD9A-431E-8FB5-BA2DD49E3B35",
             "Cloud": "prd",
