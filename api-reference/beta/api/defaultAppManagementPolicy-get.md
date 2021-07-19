@@ -2,7 +2,7 @@
 title: "Get default app management policy"
 description: "Read the default tenant policy that applies to applications and service principals objects."
 localization_priority: Normal
-author: "saumadan"
+author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -53,8 +53,6 @@ If successful, this method returns a `200 OK` response code and the requested [d
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_defaultAppManagementPolicy"
@@ -63,8 +61,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/defaultAppManagementPolicy
 ```
-
----
 
 ### Response
 

@@ -1,7 +1,7 @@
 ---
 title: "appManagementConfiguration resource type"
 description: "App management configuration complex type."
-author: "saumadan"
+author: "madansr7"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

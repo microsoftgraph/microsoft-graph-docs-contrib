@@ -2,12 +2,12 @@
 title: "Update an app management policy"
 description: "Update an application management policy."
 localization_priority: Normal
-author: "saumadan"
+author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Get defaultAppManagementPolicy
+# Update appManagementPolicy
 
 Namespace: microsoft.graph
 
@@ -54,11 +54,9 @@ If successful, this method returns a `204 OK` response code.
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
-  "name": "create_appManagementPolicies"
+  "name": "update_appManagementPolicy"
 }-->
 
 ```msgraph-interactive
@@ -69,8 +67,6 @@ PATCH https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 }
 
 ```
-
----
 
 ### Response
 

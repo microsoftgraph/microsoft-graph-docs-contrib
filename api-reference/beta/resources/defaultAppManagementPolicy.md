@@ -1,7 +1,7 @@
 ---
 title: "Application auth method tenant default policy "
 description: "Application auth method tenant default policy enforces app management operation restrictions."
-author: "saumadan"
+author: "madansr7"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

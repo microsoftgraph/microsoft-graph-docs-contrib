@@ -2,12 +2,12 @@
 title: "Assign an app management policy to an application or service principal."
 description: "Assign a policy to application or service principal object."
 localization_priority: Normal
-author: "saumadan"
+author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Get defaultAppManagementPolicy
+# Assign appManagementPolicy
 
 Namespace: microsoft.graph
 
@@ -53,11 +53,9 @@ If successful, this method returns a `204 OK` response code and a collection of 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
-  "name": "get_appManagementPolicies"
+  "name": "assign_appManagementPolicies"
 }-->
 
 ```msgraph-interactive
@@ -67,8 +65,6 @@ POST https://graph.microsoft.com/beta/applications/{id}/appManagementPolicies/$r
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
 }
 ```
-
----
 
 ### Response
 

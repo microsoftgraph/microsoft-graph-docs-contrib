@@ -1,7 +1,7 @@
 ---
 title: "Application auth method application or service principal object policy "
 description: "Application auth method policy for targeted application or service principal to enforces app management operation restrictions."
-author: "saumadan"
+author: "madansr7"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

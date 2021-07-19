@@ -2,7 +2,7 @@
 title: "Azure AD application authentication methods API overview"
 description: "Application authentication methods is how apps get tokens in Azure AD."
 localization_priority: Normal
-author: "saumadan"
+author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ---

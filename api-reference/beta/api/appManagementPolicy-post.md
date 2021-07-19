@@ -2,12 +2,12 @@
 title: "Create an application management policy."
 description: "Create an application management policy."
 localization_priority: Normal
-author: "saumadan"
+author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Get defaultAppManagementPolicy
+# Create appManagementPolicy
 
 Namespace: microsoft.graph
 
@@ -54,11 +54,9 @@ If successful, this method returns a `201 OK` response code with the new object 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
-  "name": "create_appManagementPolicies"
+  "name": "create_appManagementPolicy"
 }-->
 
 ```msgraph-interactive
@@ -85,8 +83,6 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 }
 
 ```
-
----
 
 ### Response
 

@@ -2,12 +2,12 @@
 title: "Get an app management policy"
 description: "Get an application management policy."
 localization_priority: Normal
-author: "saumadan"
+author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Get defaultAppManagementPolicy
+# Get appManagementPolicy
 
 Namespace: microsoft.graph
 
@@ -53,8 +53,6 @@ If successful, this method returns a `200 OK` response code and a single [appMan
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_appManagementPolicies"
@@ -63,8 +61,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 ```
-
----
 
 ### Response
 

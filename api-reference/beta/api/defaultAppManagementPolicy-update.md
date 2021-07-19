@@ -2,7 +2,7 @@
 title: "Update default app management policy"
 description: "Update the default tenant policy that applies to applications and service principals objects."
 localization_priority: Normal
-author: "saumadan"
+author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -54,8 +54,6 @@ If successful, this method returns a 204 No Content response code. It does not r
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "update_defaultAppManagementPolicy"
@@ -83,8 +81,6 @@ Content-Type: application/json
     }
 }
 ```
-
----
 
 ### Response
 

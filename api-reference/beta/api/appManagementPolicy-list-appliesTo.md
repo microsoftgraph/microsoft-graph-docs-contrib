@@ -2,12 +2,12 @@
 title: "List resources assigned to an app management policy"
 description: "List resources assigned to an application management policy."
 localization_priority: Normal
-author: "saumadan"
+author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Get defaultAppManagementPolicy
+# List appManagementPolicy assignment
 
 Namespace: microsoft.graph
 
@@ -53,18 +53,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
-  "name": "get_appManagementPolicies"
+  "name": "get_appManagementPolicyAssignment"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo?$select=id,appId,displayName,createdDateTime
 ```
-
----
 
 ### Response
 
