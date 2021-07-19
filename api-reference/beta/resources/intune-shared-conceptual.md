@@ -43,7 +43,6 @@ The following Graph resources are shared between Intune workflows:
 - [Device management](intune-shared-devicemanagement.md)
 - [Device management derived credential settings](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Device management script](intune-shared-devicemanagementscript.md)
-- [Device platform type](intune-shared-deviceplatformtype.md)
 - [Enablement](intune-shared-enablement.md)
 - [Enrollment availability options](intune-shared-enrollmentavailabilityoptions.md)
 - [Enrollment state](intune-shared-enrollmentstate.md)
