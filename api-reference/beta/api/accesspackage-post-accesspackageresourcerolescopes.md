@@ -42,7 +42,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## Request body
 
-In the request body, supply a JSON representation of an [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object.  Include in the object the relationships to an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) and [accessPackageResourceScope](../resources/accesspackageresourcescope.md).
+In the request body, supply a JSON representation of an [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object.  Include in the object the relationships to an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object, which can be obtained from a request to [list access package resource roles of a resource in a catalog](accesspackagecatalog-list-accesspackageresourceroles.md), and an [accessPackageResourceScope](../resources/accesspackageresourcescope.md) object, which can be obtained from a request to [list access package resources](accesspackagecatalog-list-accesspackageresources.md) with `$expand=accessPackageResourceScopes`.
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 
 #### Request
 
-The following is an example of the request.  The access package resource for the group must already have been added to the access package catalog containing this access package.
+The following is an example of the request.  Prior to this request, the access package resource `1d08498d-72a1-403f-8511-6b1f875746a0` for the group `b31fe1f1-3651-488f-bd9a-1711887fd4ca` must already have been added to the access package catalog containing this access package.  The resource could have been added to the catalog by [creating an access package resource request](accesspackageresourcerequest-post.md).
 
 # [HTTP](#tab/http)
 <!-- {
