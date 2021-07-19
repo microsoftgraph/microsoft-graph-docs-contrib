@@ -47,8 +47,10 @@ If successful, this method returns a `201 Created` response code and an [educati
 ## Example
 ##### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_educationassignment_from_educationclass"
 }-->
 ```http
