@@ -52,7 +52,7 @@ The following table describes the types available to query and the supported per
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
-|[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
+|[externalItem](externalconnectors-externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
 |[person](person.md)|People.Read|Exchange Online|Personal contacts and contacts or addressable objects in your organization.|
 
 ## Page search results
@@ -137,7 +137,7 @@ The properties on which the aggregation is requested need to be refinable in the
 
 Once the response is returned containing the collection of [searchBucket](searchBucket.md) objects, it is possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the **aggregationFilters** property of the subsequent [searchRequest](./searchrequest.md).
 
-Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Microsoft Graph connectors [externalItem](externalItem.md).
+Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Microsoft Graph connectors [externalItem](externalconnectors-externalitem.md).
 
 See [refine search results](/graph/search-concept-aggregation) for examples that show using aggregation to enhance and narrow down search results.
 
