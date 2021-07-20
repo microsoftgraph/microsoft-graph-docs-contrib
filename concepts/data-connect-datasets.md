@@ -61,5 +61,5 @@ The following characteristics apply to sinks:
 
 ## See also
 
-- [Azure Data Factory connector for Microsoft 365 data](/azure/data-factory/connector-office-365.md)
+- [Azure Data Factory connector for Microsoft 365 data](/azure/data-factory/connector-office-365)
 - [Policies and billing](data-connect-policies.md)
