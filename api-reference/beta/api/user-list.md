@@ -181,7 +181,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get users including their last sign-in time
+### Example 3: Get users including their last interactive sign-in time
 
 #### Request
 
@@ -252,7 +252,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: List the last sign-in time of users with a specific display name
+### Example 4: List the last interactive sign-in time of users with a specific display name
 
 #### Request
 
@@ -314,7 +314,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: List the last sign-in time of users in a specific time range
+### Example 5: List the last interactive sign-in time of users in a specific time range
 
 #### Request
 
