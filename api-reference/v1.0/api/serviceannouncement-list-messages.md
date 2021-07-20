@@ -1,5 +1,5 @@
 ---
-title: "List messages"
+title: "List serviceAnnouncement messages"
 description: "Retrieve the serviceUpdateMessage resources from the messages navigation property."
 author: "payiAzure"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "service-communications"
 doc_type: apiPageType
 ---
 
-# List messages
+# List serviceAnnouncement messages
 Namespace: microsoft.graph
 
 Retrieve the [serviceUpdateMessage](../resources/serviceupdatemessage.md) resources from the **messages** navigation property.
