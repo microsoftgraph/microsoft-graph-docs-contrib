@@ -25,7 +25,7 @@ Represents identity providers with [External Identities](/azure/active-directory
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The ID of the identity provider.|
+|id|String|The identifier of the identity provider.|
 |displayName|String|The display name of the identity provider.|
 
 ## JSON representation
