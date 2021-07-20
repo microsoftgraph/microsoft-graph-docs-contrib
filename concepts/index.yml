@@ -87,7 +87,7 @@ tools:
       imageSrc: ./images/hub/icon01-sdk.svg
       url: https://docs.microsoft.com/graph/sdks/sdk-installation
     # Card
-    - title: Quickstarts
+    - title: Quick starts
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: https://developer.microsoft.com/graph/quick-start
     # Card
