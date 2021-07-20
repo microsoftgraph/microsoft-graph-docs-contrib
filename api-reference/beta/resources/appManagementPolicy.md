@@ -27,18 +27,19 @@ Application auth method tenant app management policy type enforces app managemen
 
 ## Properties
 
-| Property     | Type                                                                     | Description                                                                         |
-| :----------- | :----------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| id           | String                                                                   | The policy identifier.                                                              |
-| displayName  | String                                                                   | The display name of the policy.                                                     |
-| description  | String                                                                   | The description of the policy.                                                      |
-| isEnabled    | Boolean                                                                  | Denotes if the policy is enabled.                                                   |
-| restrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply to applications or service principal object.                |
-| appliesTo    | [directoryObject](../resources/directoryobject.md)                       | Collection of resources to which a policy is applied. This is a read-only property. |
+| Property     | Type                                                        | Description                                                            |
+| :----------- | :---------------------------------------------------------- | :--------------------------------------------------------------------- |
+| id           | String                                                      | The policy identifier.                                                 |
+| displayName  | String                                                      | The display name of the policy.                                        |
+| description  | String                                                      | The description of the policy.                                         |
+| isEnabled    | Boolean                                                     | Denotes if the policy is enabled.                                      |
+| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. |
 
 ## Relationships
 
-None.
+| Relationship | Type                                  | Description                                                                         |
+| :----------- | :------------------------------------ | :---------------------------------------------------------------------------------- |
+| appliesTo    | [directoryObject](directoryobject.md) | Collection of resources to which a policy is applied. This is a read-only property. |
 
 ## JSON representation
 
@@ -54,17 +55,19 @@ The following is a JSON representation of the resource.
 -->
 
 ```json
-[{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/appManagementPolicies",
-  "id": "string (identifier)",
-  "description": "string",
-  "displayName": "string",
-  "isEnabled": boolean,
-  "restrictions": {
-    "@odata.type":"microsoft.graph.appManagementConfiguration"
-  },
-  "servicePrincipalRestrictions": {
-    "@odata.type":"microsoft.graph.appManagementConfiguration"
+[
+  {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/appManagementPolicies",
+    "id": "string (identifier)",
+    "description": "string",
+    "displayName": "string",
+    "isEnabled": boolean,
+    "restrictions": {
+      "@odata.type": "microsoft.graph.appManagementConfiguration"
+    },
+    "servicePrincipalRestrictions": {
+      "@odata.type": "microsoft.graph.appManagementConfiguration"
+    }
   }
-}]
+]
 ```

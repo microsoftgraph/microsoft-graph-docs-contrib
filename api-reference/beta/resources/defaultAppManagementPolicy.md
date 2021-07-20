@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Tenant wide application auth method policy type enforces app management operation restrictions for all applications and service principals.
+Tenant wide application authentication method policy type enforces app management operation restrictions for all applications and service principals.
 
 ## Methods
 

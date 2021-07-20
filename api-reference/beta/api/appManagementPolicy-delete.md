@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 ### Response
 
-The following is an example of the response.
+If successful, this method returns 204 No Content response code. It does not return anything in the response body.
 
 <!-- {
   "blockType": "response",
@@ -74,8 +74,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 OK
-Content-type: application/json
+HTTP/1.1 204 No Content
 
 ```
 
