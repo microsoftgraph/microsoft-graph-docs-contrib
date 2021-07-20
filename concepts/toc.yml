@@ -238,7 +238,7 @@ items:
         items:
           - name: Overview
             href: education-concept-overview.md
-          - name: Resource upload
+          - name: Upload files
             href: education-upload-resource-overview.md
           - name: Rubrics
             href: education-rubric-overview.md
