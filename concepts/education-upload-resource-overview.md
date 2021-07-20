@@ -114,10 +114,11 @@ Content-type: application/json
 
 ### Step 3 - Construct the value for the fileUrl property
 Build the value for the **fileUrl** property following this specific format `https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}`. Replace the `{drive-id}` and `{item-id}` placeholders with the following values:
-|Placeholder|Description|Example|
-|---|---|---|
-|`{drive-id}`|drive ID from the request URL used in step 2|b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F|
-|`{item-id}`|item ID from the response body obtained in step 2|01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ|
+
+| Placeholder | Description | Example |
+|:--|:--|:--|
+| `{drive-id}` | drive ID from the request URL used in step 2 | b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F |
+| `{item-id}` | item ID from the response body obtained in step 2 | 01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ |
 
 Here is what a **fileUrl** built based on the format described looks like:
 ```http
