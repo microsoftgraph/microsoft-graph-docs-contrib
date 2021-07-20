@@ -49,7 +49,7 @@ Data Connect supports extracting data from a variety of different Microsoft 365 
 
 Sinks are the output location Data Factory uses to place data in Azure storage. Data Connect supports the following sink storage types:
 
-- [Azure Data Lake Storage Gen 1](/azure/data-lake-store/data-lake-store-overview.md)
+- [Azure Data Lake Storage Gen 1](/azure-docs/blob/master/articles/data-lake-store/data-lake-store-overview.md)
 - [Azure Data Lake Storage Gen 2](/azure/storage/blobs/data-lake-storage-introduction.md)
 - [Azure Storage Blob](/azure/storage/blobs/storage-blobs-overview.md)
 
@@ -61,5 +61,5 @@ The following characteristics apply to sinks:
 
 ## See also
 
-- [Azure Data Factory connector for Microsoft 365 data](https://docs.microsoft.com/azure/data-factory/connector-office-365)
+- [Azure Data Factory connector for Microsoft 365 data](/azure/data-factory/connector-office-365.md)
 - [Policies and billing](data-connect-policies.md)
