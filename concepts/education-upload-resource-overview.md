@@ -150,7 +150,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('48b80dff-452a-4108-bd85-fa0d84e39d0a')/resources/$entity",
-    "assignmentResourceUrl": null,
+    "distributeForStudentWork": false,
     "id": "ff1aafe4-ae89-49c3-8366-4b509f640d6a",
     "resource": {
         "@odata.type": "#microsoft.graph.educationFileResource",
