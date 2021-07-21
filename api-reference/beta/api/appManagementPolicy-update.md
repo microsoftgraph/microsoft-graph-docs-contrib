@@ -1,5 +1,5 @@
 ---
-title: "Update an app management policy"
+title: "Update appManagementPolicy"
 description: "Update an application management policy."
 localization_priority: Normal
 author: "madansr7"

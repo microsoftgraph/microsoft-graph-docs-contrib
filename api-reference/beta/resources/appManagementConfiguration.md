@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
-# registrationEnforcement resource type
+# appManagementConfiguration resource type
 
 Namespace: microsoft.graph
 

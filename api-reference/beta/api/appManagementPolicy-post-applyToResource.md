@@ -1,5 +1,5 @@
 ---
-title: "Assign an app management policy to an application or service principal."
+title: "Assign appManagementPolicy"
 description: "Assign a policy to application or service principal object."
 localization_priority: Normal
 author: "madansr7"

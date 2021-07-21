@@ -1,5 +1,5 @@
 ---
-title: "Application auth method application or service principal object policy "
+title: "appManagementPolicy resource type"
 description: "Application auth method policy for targeted application or service principal to enforces app management operation restrictions."
 author: "madansr7"
 localization_priority: Normal
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Application auth method tenant app management policy type enforces app management operation restrictions for all applications and service principals.
+Enforce restrictions on app management operations for specific applications and service principals. If this resource is not configured for an application or service principal, the restrictions default to the settings in the [defaultAppManagementPolicy](defaultappmanagementpolicy.md) resource.
 
 ## Methods
 

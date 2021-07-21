@@ -1,5 +1,5 @@
 ---
-title: "Application auth method tenant default policy "
+title: "defaultAppManagementPolicy resource type"
 description: "Application auth method tenant default policy enforces app management operation restrictions."
 author: "madansr7"
 localization_priority: Normal

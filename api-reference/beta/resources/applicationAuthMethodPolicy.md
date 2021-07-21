@@ -1,5 +1,5 @@
 ---
-title: "Azure AD application authentication methods API overview"
+title: "Azure AD application authentication methods API overview | Public preview"
 description: "Application authentication methods is how apps get tokens in Azure AD."
 localization_priority: Normal
 author: "madansr7"

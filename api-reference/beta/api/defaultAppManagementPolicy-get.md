@@ -1,5 +1,5 @@
 ---
-title: "Get default app management policy"
+title: "Get defaultAppManagementPolicy"
 description: "Read the default tenant policy that applies to applications and service principals objects."
 localization_priority: Normal
 author: "madansr7"

@@ -1,5 +1,5 @@
 ---
-title: "Get an app management policy"
+title: "Get appManagementPolicy"
 description: "Get an application management policy."
 localization_priority: Normal
 author: "madansr7"

@@ -1,5 +1,5 @@
 ---
-title: "Get a list of app management policies"
+title: "List appManagementPolicies"
 description: "Get a list of application management policies."
 localization_priority: Normal
 author: "madansr7"

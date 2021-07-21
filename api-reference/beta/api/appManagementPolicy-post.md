@@ -1,5 +1,5 @@
 ---
-title: "Create an application management policy."
+title: "Create appManagementPolicy"
 description: "Create an application management policy."
 localization_priority: Normal
 author: "madansr7"

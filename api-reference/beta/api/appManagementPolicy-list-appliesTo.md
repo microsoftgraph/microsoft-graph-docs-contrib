@@ -1,5 +1,5 @@
 ---
-title: "List resources assigned to an app management policy"
+title: "List appManagementPolicy assignment"
 description: "List resources assigned to an application management policy."
 localization_priority: Normal
 author: "madansr7"

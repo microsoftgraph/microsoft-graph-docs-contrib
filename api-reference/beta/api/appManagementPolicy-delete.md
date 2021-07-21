@@ -1,5 +1,5 @@
 ---
-title: "Delete an app management policy"
+title: "Delete appManagementPolicy"
 description: "Delete an application management policy."
 localization_priority: Normal
 author: "madansr7"
