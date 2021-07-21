@@ -38,10 +38,10 @@ Application permissions are needed to access the service communications API with
 | Get a specific service message for tenant | [Get message](/graph/api/serviceupdatemessage-get?view=graph-rest-beta&preserve-view=true) | _ServiceMessage.Read.All_ | Delegated and application |
 | Update service message status for signed in user | For a list of status operations, see [serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true).| _ServiceMessageViewpoint.Write_ | Delegated |
 
-## API on Microsoft Graph national clouds
-Service communications API is available on Microsoft Graph national clouds as well. You could get service health and communications data for your national clouds tenants. More information about [Microsoft Graph national clouds](/graph/deployments).
+## Availability in national clouds
+That service communications API is available in all Microsoft national cloud deployments. You can get service health and communications data for any tenants in Microsoft national clouds. For details, see [national cloud deployments](/graph/deployments).
 
-|National clouds|API url (partial)|
+|National clouds|API URL (partial)|
 |:--------------|:-----------------|
 |Microsoft Graph global service| https://graph.microsoft.com/beta/admin/serviceAnnouncement/|
 |Microsoft Graph for US Government L4 (GccHigh)|https://graph.microsoft.us/beta/admin/serviceAnnouncement/|
