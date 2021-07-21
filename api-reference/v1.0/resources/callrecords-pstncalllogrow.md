@@ -17,7 +17,7 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|callDurationSource|pstnCallDurationSource|The source of the call duration data. If the call uses a third-party telecommunications operator via the Operator Connect Program, the operator may provide their own call duration data. In this case, the property value is `operator`. Otherwise, the value is `microsoft`.|
+|callDurationSource|microsoft.graph.callRecords.pstnCallDurationSource|The source of the call duration data. If the call uses a third-party telecommunications operator via the Operator Connect Program, the operator may provide their own call duration data. In this case, the property value is `operator`. Otherwise, the value is `microsoft`.|
 |calleeNumber|String|Number dialed in [E.164](https://en.wikipedia.org/wiki/E.164) format.|
 |callerNumber|String|Number that received the call for inbound calls or the number dialed for outbound calls. E.164 format.|
 |callId|String|Call identifier. Not guaranteed to be unique.|
