@@ -9,9 +9,7 @@ doc_type: conceptualPageType
 
 # Upload files for education assignments and submissions using the Microsoft Graph API
 
-Resources are an integral part of education [assignments](/graph/api/resources/educationassignment) and [submisstions](/graph/api/resources/educationsubmission). 
-
-The teacher determines the resources to upload to an assignment folder, and the student determines the resources to upload to the submission folder.
+Resources are an integral part of education [assignments](/graph/api/resources/educationassignment) and [submisstions](/graph/api/resources/educationsubmission). Teachers determine the resources to upload to an assignment folder, and students determine the resources to upload to a submission folder.
 
 This article describes how to use the education API in Microsoft Graph to upload files to an assignment or submission folder.
 
@@ -127,7 +125,7 @@ https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4
 ```
 
 ### Step 4 - Create educationAssignmentResource
-This step describes how to upload a SharePoint resource to an assignment resources folder.
+This step shows how to upload a SharePoint resource to an assignment resources folder.
 
 Use the `fileUrl` from the previous step in the request body to [Create an educationAssignmentResource](/graph/api/educationassignment-post-resources).
 
