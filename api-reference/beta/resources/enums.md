@@ -1107,15 +1107,17 @@ Namespace: microsoft.graph
 
 ### educationSynchronizationStatus values
 
-| Member             | Value |
-| :----------------- | :---- |
-| paused             | 0     |
-| inProgress         | 1     |
-| success            | 2     |
-| error              | 3     |
-| validationError    | 4     |
-| quarantined        | 5     |
-| unknownFutureValue | 6     |
+| Member             |
+| :----------------- |
+| paused             |
+| inProgress         |
+| success            |
+| error              |
+| validationError    |
+| quarantined        |
+| unknownFutureValue |
+| extracting         |
+| validating         |
 
 ### educationExternalSource values
 
@@ -1782,6 +1784,8 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |message|
+|unknownFutureValue|
+|systemEventMessage|
 
 ### chatMessageImportance values
 
@@ -2149,20 +2153,6 @@ Possible values for user account types (group membership), per Windows definitio
 | proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
 | unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
 
-### identitySourceType values
-
-|Member|
-|:---|
-|azureActiveDirectory|
-|external|
-
-### externalGroupMemberType values
-
-|Member|
-|:---|
-|user|
-|group|
-
 ### identityUserFlowAttributeDataType values
 
 | Member                | Value | Description                         |
@@ -2182,15 +2172,6 @@ Possible values for user account types (group membership), per Windows definitio
 | custom                | 2     | This user flow attribute type denotes it was created by the user   |
 |required|3||
 | unknownFutureValue    | 4     | A sentinel member.                                                 |
-
-### connectionState values
-
-|Member|
-|:---|
-|draft|
-|ready|
-|obsolete|
-|limitExceeded|
 
 ### permissionClassificationType values
 
@@ -2469,3 +2450,21 @@ Possible values for user account types (group membership), per Windows definitio
 |phoneUser|
 |unknownFutureValue|
 
+### callRecordingStatus values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### teamworkCallEventType values 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
+|unknownFutureValue|
