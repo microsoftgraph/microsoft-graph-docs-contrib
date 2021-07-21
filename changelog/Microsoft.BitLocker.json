@@ -11,7 +11,7 @@
                     "Target": "bitlockerRecoveryKey"
                 },
                 {
-                    "Id": "8353db5f-83bc-45b5-9bf1-847ae94203ec",
+                    "Id": "94b01c30-2673-43c3-94a2-953c9270ca07",
                     "ApiChange": "Method",
                     "ChangedApiName": "bitlocker-list-recoverykeys",
                     "ChangeType": "Addition",
@@ -19,7 +19,7 @@
                     "Target": "bitlockerRecoveryKey"
                 },
                 {
-                    "Id": "e96ab9f3-448e-43c5-83e9-da072f3b8f3c",
+                    "Id": "94b01c30-2673-43c3-94a2-953c9270ca07",
                     "ApiChange": "Resource",
                     "ChangedApiName": "bitlocker",
                     "ChangeType": "Addition",
@@ -27,7 +27,7 @@
                     "Target": "bitlocker"
                 },
                 {
-                    "Id": "345b69fb-c4d6-492f-9ba6-02f160ec0a24",
+                    "Id": "94b01c30-2673-43c3-94a2-953c9270ca07",
                     "ApiChange": "Resource",
                     "ChangedApiName": "bitlockerrecoverykey",
                     "ChangeType": "Addition",
@@ -35,7 +35,7 @@
                     "Target": "bitlockerRecoveryKey"
                 },
                 {
-                    "Id": "47bdb98b-dad9-4bb9-b6d7-cb331370ee40",
+                    "Id": "94b01c30-2673-43c3-94a2-953c9270ca07",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "volumeType",
                     "ChangeType": "Addition",
@@ -43,6 +43,16 @@
                     "Target": "volumeType"
                 }
             ],
+            "Id": "94b01c30-2673-43c3-94a2-953c9270ca07",
+            "Cloud": "prd",
+            "Version": "v1.0",
+            "CreatedDateTime": "2021-07-20T12:41:45.203Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea" : "Directory management"
+        },
+        {
+            "ChangeList" : [        
+                {
                     "Id": "3b8493a8-d1b4-4e9f-a6a8-7109fbe17e19",
                     "ApiChange": "Header",
                     "ChangedApiName": "ocp-client-name",
