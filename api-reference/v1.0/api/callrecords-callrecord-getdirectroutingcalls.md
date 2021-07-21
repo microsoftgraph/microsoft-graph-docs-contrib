@@ -57,12 +57,12 @@ If successful, this function returns a `200 OK` response code and a collection o
   
 If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
-## Examples
+## Example
 
 ### Request
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "callrecord_getdirectroutingcalls"
 }
 -->
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/getDirectRouting
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
   "isCollection": true
@@ -117,6 +117,6 @@ HTTP/1.1 200 OK
 
 ## See also
 
-* [Microsoft Teams direct routing usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center
-* [Health Dashboard for direct routing](/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center
-* [PSTN call report in Microsoft Graph](callrecords-callrecord-getpstncalls.md)
+* [Microsoft Teams direct routing usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center.
+* [Health Dashboard for direct routing](/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center.
+* [PSTN call report in Microsoft Graph](callrecords-callrecord-getpstncalls.md).

@@ -47,7 +47,7 @@ None.
 
 The following is a JSON representation of the resource.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "resource",
   "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
   "keyProperty": "id"
 }
