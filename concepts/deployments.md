@@ -87,6 +87,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Directory schema extensions | ✔ | ✔ | ➖ |
 | Open type extensions | ✔ | ➖ | ➖ |
 | Search (Microsoft Search) | ➖ | ➖ | ➖ |
+| Service health and communications | ✔ | ✔ | ✔ |
  
 The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
 
