@@ -11,21 +11,10 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) 
-of the user's primary calendar.
+Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events defined by start and end dates) of the user's primary calendar.
 
-A **delta** function call for events is similar to a `GET /calendarview` request for 
-a range of dates in the user's primary calendar, except that by appropriately 
-applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
-you can query for incremental changes in that calender view. This allows you to maintain and synchronize 
-a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
+Typically, synchronizing a **calendarView** in a local store entails a round of multiple **delta** function calls bound by the date range of the **calendarView**. The initial call is a full synchronization for that date range, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates). This allows you to maintain and synchronize a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
 from the server every time.
-
-## Limitations
-
-When client call the delta query on calendar view with specified time range, events outside the time range that has been modified since the last delta sync call will also be returned under "@removed" with reason "deleted". This is because from the sync window perspective, these events are not part of it and are considered as removed/deleted from the window.
-
-The client can filter these removed events when doing the sync according to their scenario.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,8 +51,10 @@ includes the encoded, desired parameters.
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
-When you do a delta query on a calendar view, expect to get all the properties you'd normally get from 
-a `GET /calendarview` request. `$select`, `$orderby`,`$filter`,`$search`,`$expand`is not supported in this case. 
+### OData query parameters
+- Expect a **delta** function call on a **calendarView** to return the same properties you'd normally get from a `GET /calendarview` request. You cannot use `$select` to get only a subset of those properties.
+
+- There are other OData query parameters that the **delta** function for **calendarView** doesn't support: `$expand`, `$filter`,`$orderby`, and `$search`. 
 
 
 ## Request headers
@@ -77,6 +68,12 @@ a `GET /calendarview` request. `$select`, `$orderby`,`$filter`,`$search`,`$expan
 ## Response
 
 If successful, this method returns a `200 OK` response code and [event](../resources/event.md) collection object in the response body.
+
+Within a round of **delta** function calls bound by the date range of a **calendarView**, you may find a **delta** call returning two types of events under `@removed` with the reason `deleted`: 
+- Events that are within the date range and that have been deleted since the previous **delta** call.
+- Events that are _outside_ the date range and that have been added, deleted, or updated since the the previous **delta** call.
+
+Filter the events under `@removed` for the date range that your scenario requires.
 
 ## Example
 ##### Request

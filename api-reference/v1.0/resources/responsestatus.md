@@ -17,12 +17,8 @@ The response status of a meeting request.
 
 | Property | Type           | Description |
 |:---------|:---------------|:------------|
-| response | responseType   | The response type. The possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
+| response | responseType   | The response type. The possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`. <br><br>To differentiate between `None` and `NotResponded`, use an attendee, Alex, as an example. Alex hasn't responded to a meeting request (which programmatically is an [event](event.md)). An operation that returns the properties of the event, such as a [GET event](../api/event-get.md) operation, called on behalf of Alex returns `NotResponded` for Alex in the **attendees** and **responseStatus** properties. For the same event, a GET /event operation called on behalf of any other attendee or the organizer would return `None` in the **attendees** property for Alex.
 | time     | DateTimeOffset | The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`
-
-**None** This value is used when the status of any attendee is reported to the organizer of a meeting in the organizer's meeting invite. 
-
-**NotResponded** This value is used when the status of an attendee is reported to the attendee of a meeting in his/ her meeting invite. Indicates to the attendee that he/ she has not responded to the meeting request.
 
 ## JSON representation
 
