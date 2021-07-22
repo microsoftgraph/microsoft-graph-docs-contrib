@@ -463,10 +463,6 @@ dataPolicyOperation.
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
-### Identity and access audit logs service limits
-
-[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
-
 ### Identity providers service limits
 
 [!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
