@@ -3,24 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "ce1673e9-5cde-4760-8d5e-a57d2854d978",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "educationAddToCalendarOptions",
-          "ChangeType": "Addition",
-          "Description": "Added the **educationAddToCalendarOptions** enumeration type.",
-          "Target": "educationAddToCalendarOptions"
-        }
-      ],
-      "Id": "ce1673e9-5cde-4760-8d5e-a57d2854d978",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2021-07-21T08:09:11.9403436Z",
-      "WorkloadArea": "Education",
-      "SubArea": ""
-    }, 
-    {        
-      "ChangeList": [
-        {
           "Id": "ae957525-cd7b-4311-9a22-3374454f9251",
           "ApiChange": "EnumType",
           "ChangedApiName": "educationAddedStudentAction",
