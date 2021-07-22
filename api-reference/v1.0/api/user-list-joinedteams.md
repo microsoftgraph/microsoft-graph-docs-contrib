@@ -24,9 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-> With user delegated permissions this operation only works for the 'me' user. 
-> With application permissions, it works for all users by specifying  the specific user id. 
-> ('me' alias is not supported with application permissions)
+> **Note:** Currently, with user delegated permissions, this operation only works for the `me` user. With application permissions, it works for all users by specifying the specific user ID (`me` alias is not supported with application permissions). For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +35,7 @@ GET /users/{id | user-principal-name}/joinedTeams
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](/graph/query-parameters) are not currently supported.
+This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 | Header       | Value |
