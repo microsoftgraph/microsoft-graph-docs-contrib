@@ -60,13 +60,13 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns `200 OK` response code and [workbookTableRow](../resources/workbooktablerow.md) object in the response body.
 
-## Example
+## Examples
 
-In this example two rows of data are inserted at the end of the table. 
+### Example 1: Add two rows to a table
 
-### Example 1: add 2 rows to a table
+In this example, two rows of data are inserted at the end of the table. 
 
-##### Request
+#### Request
 
 Here is an example of the request.
 
@@ -98,9 +98,11 @@ Content-length: 51
 
 ---
 
-##### Response
+#### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,20 +120,18 @@ Content-length: 45
 }
 ```
 
----
+### Example 2: Add two rows to a table using async
 
-### Example 2: add 2 rows to a table using async
+Async requests will be useful if the request takes longer time than expected. Note that `Workbook-Session-Id` is required in async requests. The user needs to create a session before using async rich API features.
 
-Async requests will be useful if the request takes longer time than expected. Be careful Workbook-Session-Id is mandatory in async requests, user need to create a session before using async richapi features.
-For async features, user need to issue 2-3 request to achieve the purpose.
+For async features, the user needs to issue 2-3 requests.
 
-#### 1. Initiate addTableRow Request in async
+#### 1. Initiate addTableRow request in async
 
 ##### Request
 
-Here is an example of the request. Be careful that 202 Accepted will only happen when the request really takes a long time to respond. If the request is completed very soon. The request will behave like normal sync request.
+Here is an example of the request. Note that `202 Accepted` will only happen when the request takes a long time to respond. If the request is completed quickly, it will work like a regular sync request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tablerowcollection_add_1"
@@ -152,8 +152,6 @@ Content-length: 51
 }
 ```
 
----
-
 ##### Response
 
 Here is an example of the response.
@@ -172,13 +170,12 @@ Content-length: 45
 }
 ```
 
-#### 2. Poll the url at last response Header called the "Location" property.
+#### 2. Poll the URL at last response header called the location property
 
 ##### Request
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
 }-->
@@ -189,11 +186,9 @@ Content-type: application/json
 Content-length: 51
 ```
 
----
+##### Response running
 
-##### Response Running
-
-Here is an example of the running response. When you get this status, please poll the request again until you get the following responses.
+Here is an example of the running response. When you get this status, poll the request again until you get the following responses.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -211,7 +206,7 @@ Content-length: 45
 }
 ```
 
-##### Response Failed
+##### Response failed
 
 Here is an example of the failed response. The `error` section is the same with the sync errors returned.
 <!-- {
@@ -239,9 +234,9 @@ Content-length: 45
 }
 ```
 
-##### Response Succeeded
+##### Response succeeded
 
-Here is an example of the succeeded response.
+Here is an example of a successful response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -259,13 +254,12 @@ Content-length: 45
 }
 ```
 
-#### 3. (Optional) Get return values through the resourceLocation url
+#### 3. (Optional) Get return values from the resourceLocation URL
 
 ##### Request
 
-ResourceLocation comes in some succeeded response from last step.
+The resource location is returned in a successful response from the previous step.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tablerowcollection_add_1"
@@ -276,8 +270,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tableRowOperat
 Content-type: application/json
 Content-length: 51
 ```
-
----
 
 ##### Response
 
