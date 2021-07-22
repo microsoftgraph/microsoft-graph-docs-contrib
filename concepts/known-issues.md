@@ -351,7 +351,7 @@ The filter query to get members of a team based on their roles `GET /teams/team-
 ### Missing properties for chat members
 In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
 
-### Unable to return all values for properties for a user joined teams
+### Missing properties in the list of teams that a user has joined
 The API call for me/joinedTeams returns values only for the properties **id**, **displayName**, and **description** of a [team](/graph/api/resources/team). To get information on all properties, use [Get team](/graph/api/team-get).
 
 ## Users
