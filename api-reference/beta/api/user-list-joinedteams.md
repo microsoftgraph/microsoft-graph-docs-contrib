@@ -24,10 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-> Currently, with user delegated permissions this operation only works for the 'me' user. 
-> With application permissions, it works for all users by specifying  the specific user  id. 
-> ('me' alias is not supported with application permissions)
-> For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
+> **Note:** Currently, with user delegated permissions, this operation only works for the `me` user. With application permissions, it works for all users by specifying the specific user ID (`me` alias is not supported with application permissions). For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +35,7 @@ GET /users/{id | user-principal-name}/joinedTeams
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](/graph/query-parameters) are not currently supported.
+This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -54,11 +51,11 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.
 
 > [!Note]
-> Currently, this API call returns values only for the properties **id**, **displayName**, and **description** of a [team](../resources/team.md). To get information on all properties, use [Get team](../api/team-get.md). For details, see [known issues](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
+> Currently, this API call returns values only the **id**, **displayName**, and **description** properties of a [team](../resources/team.md). To get all properties, use the [Get team](../api/team-get.md) operation. For details, see [known issues](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,7 +84,9 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,9 +109,8 @@ Content-type: application/json
 ```
 
 ## See also
-[List all teams](/graph/teams-list-all-teams)
-
-[Get team](../api/team-get.md)
+- [List all teams](/graph/teams-list-all-teams)
+- [Get team](../api/team-get.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
