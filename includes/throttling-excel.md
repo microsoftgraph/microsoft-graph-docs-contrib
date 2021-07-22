@@ -8,7 +8,7 @@ ms.topic: include
 <!-- this file is auto-generated don't edit it manually! -->
 
 | Request type | Limit per app for all tenants | Limit per app per tenant |
-| ------------ | ------- | ------- |
+| ------------ | ----------------------------- | ------------------------ |
 | Any | 5000 requests per 10 seconds | 1500 requests per 10 seconds |
 
 The preceding limits apply to the following resources:  
