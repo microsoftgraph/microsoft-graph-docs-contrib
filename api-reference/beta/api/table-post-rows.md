@@ -208,7 +208,7 @@ Content-length: 45
 
 ##### Response failed
 
-Here is an example of the failed response. The `error` section is the same with the sync errors returned.
+Here is an example of the failed response. The `error` section shows the sync errors returned.
 <!-- {
   "blockType": "response",
   "truncated": true,
