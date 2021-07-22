@@ -51,8 +51,5 @@ The following is a JSON representation of the resource.
   "description": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "policyVersion": "String",
-  "registrationEnforcement": {
-    "@odata.type": "microsoft.graph.registrationEnforcement"
-  } 
 }
 ```
