@@ -31,7 +31,7 @@ You can use Azure AD APIs in Microsoft Graph to:
 
 - Look up and manage [user profile](/graph/api/resources/user) information for users in your organization, such as name, photo, email address, job title, office location, and more.
 - Create [groups](/graph/api/resources/groups-overview) for projects and teams in your organization. Add and remove members from the group to control access to resources. (Dynamic groups can automatically change membership based on user property values.)
-- To control access, you can check for [transitive membership](/graph/api/user-checkmembergroups) in a list of groups or get all the resources of a specified type (like user or group) from a list of [generic resource IDs](/graph/api/directoryobject-getbyids).
+- Check for [transitive membership](/graph/api/user-checkmembergroups) in a list of groups or get all the resources of a specified type (like user or group) from a list of [generic resource IDs](/graph/api/directoryobject-getbyids) to control access.
 
 ### Manage directory roles
 
