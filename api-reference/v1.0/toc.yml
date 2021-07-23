@@ -4560,7 +4560,7 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-        - name: Authentication method policy
+        - name: Authentication methods policy
           items:
           - name: Overview
             href: resources/authenticationmethodspolicies-overview.md
