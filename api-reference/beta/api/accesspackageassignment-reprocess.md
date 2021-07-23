@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. If the assignment doesn't exist, this method will return `404` or `400` if the ID is not valid.
+If successful, this method returns a `202 Accepted` response code. If the assignment doesn't exist, that is, the **id** isn't valid, this method will return `400 Bad request` or a `400 Not found` response code.
 
 ## Examples
 
