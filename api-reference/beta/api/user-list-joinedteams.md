@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/joinedTeams
-or
 GET /users/{id | user-principal-name}/joinedTeams
 ```
 
@@ -51,7 +50,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.
 
 > [!Note]
-> Currently, this API call returns values only the **id**, **displayName**, and **description** properties of a [team](../resources/team.md). To get all properties, use the [Get team](../api/team-get.md) operation. For details, see [known issues](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
+> Currently, this API call returns only the **id**, **displayName**, and **description** properties of a [team](../resources/team.md). To get all properties, use the [Get team](../api/team-get.md) operation. For details, see [known issues](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
 
 ## Example
 ### Request
