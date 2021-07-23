@@ -13,8 +13,6 @@ Namespace: microsoft.graph.externalConnectors
 
 Represents an external group. External groups (along with Azure Active Directory users and groups) are used to set permissions on **externalItems** added to a Microsoft Graph connection. Use **externalGroups** to represent non-Azure Active Directory groups or group-like constructs (such as Business units, Teams, and son on) that determine permission over the content in your external data source.
 
-Inherits from [entity](../resources/externalconnectors-entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -26,14 +24,9 @@ Inherits from [entity](../resources/externalconnectors-entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List externalGroups](../api/externalconnectors-externalgroup-list.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md) collection|Get a list of the [externalGroup](../resources/externalconnectors-externalgroup.md) objects and their properties.|
-|[Create externalGroup](../api/externalconnectors-externalgroup-create.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Create a new [externalGroup](../resources/externalconnectors-externalgroup.md) object.|
-|[Get externalGroup](../api/externalconnectors-externalgroup-get.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Read the properties and relationships of an [externalGroup](../resources/externalconnectors-externalgroup.md) object.|
+|[Create externalGroup](../api/externalconnectors-externalconnection-post-groups.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Create a new [externalGroup](../resources/externalconnectors-externalgroup.md) object.|
 |[Update externalGroup](../api/externalconnectors-externalgroup-update.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Update the properties of an [externalGroup](../resources/externalconnectors-externalgroup.md) object.|
 |[Delete externalGroup](../api/externalconnectors-externalgroup-delete.md)|None|Deletes an [externalGroup](../resources/externalconnectors-externalgroup.md) object.|
-|[List members](../api/externalconnectors-externalgroup-list-members.md)|[microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md) collection|Get the identity resources from the members navigation property.|
-|[Create identity](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md)|Create a new identity object.|
-
 ## Properties
 
 | Property    | Type   | Description                                                                                                              |

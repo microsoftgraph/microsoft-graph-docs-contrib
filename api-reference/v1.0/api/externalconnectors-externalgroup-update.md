@@ -15,13 +15,14 @@ Namespace: microsoft.graph.externalConnectors
 Update the properties of an [externalGroup](../resources/externalconnectors-externalgroup.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All             
 
 ## HTTP request
 
@@ -34,27 +35,28 @@ PATCH /connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of the [externalGroup](../resources/externalconnectors-externalgroup.md) object.
 
 The following table shows the properties that are required when you update the [externalGroup](../resources/externalconnectors-externalgroup.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/externalconnectors-entity.md)|
-|displayName|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
+| Property    | Type   | Description                                                                                                              |
+|:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
+| id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. (optional) |
+| displayName | String | The friendly name of the external group. Optional.                                                                      |
+| description | String | The description of the external group. Optional.                                                                         |
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [externalGroup](../resources/externalconnectors-externalgroup.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -70,7 +72,6 @@ Content-Type: application/json
 Content-length: 130
 
 {
-  "@odata.type": "#microsoft.graph.externalConnectors.externalGroup",
   "displayName": "String",
   "description": "String"
 }
@@ -85,14 +86,6 @@ Content-length: 130
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.externalConnectors.externalGroup",
-  "id": "b8aab634-b634-b8aa-34b6-aab834b6aab8",
-  "displayName": "String",
-  "description": "String"
-}
+HTTP/1.1 204 No Content
 ```
 

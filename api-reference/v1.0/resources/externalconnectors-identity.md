@@ -11,19 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
+Represents an [identity](externalconnectors-identity.md) used to set permissions on external content added to Microsoft Graph.
 
-
-Represents a member of an [externalGroup](externalconnectors-externalgroup.md) used to set permissions on external content added to Microsoft Graph.
-
-
-Inherits from [entity](../resources/externalconnectors-entity.md).
 
 ## Properties
 
 | Property       | Type                    | Description                                                          |
 |:---------------|:------------------------|:---------------------------------------------------------------------|
-| id             | String                  | The unique ID of the member. It would be the objectId in case of Azure Active Directory users or groups and the **id** property of the **externalGroup** in case of external groups.                                    |
-| type           | microsoft.graph.externalConnectors.identityType | The type of member added to the external group. Possible values are: `user` or `group`  for azureActiveDirectory identities and 'externalgroup` when the source is external. |
+| id             | String                  | The unique ID of the identity. It would be the objectId in case of Azure Active Directory users or groups and the **id** property of the **externalGroup** in case of external groups.                                    |
+| type           | microsoft.graph.externalConnectors.identityType | The type of identity. Possible values are: `user` or `group`  for azureActiveDirectory identities and `externalgroup` for groups in an external system. |
 
 ## Relationships
 None.
