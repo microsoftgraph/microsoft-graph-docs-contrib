@@ -29,10 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{id}/domainNameReferences
+GET /domains/{domain-id}/domainNameReferences
 ```
-
-> For {id}, specify the domain with its fully qualified domain name.
 
 ## Optional query parameters
 
@@ -62,7 +60,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_domainnamereferences"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/domains/{domain-id}/domainNameReferences
+GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-domainnamereferences-csharp-snippets.md)]
@@ -84,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-id}/domainNameReferences
 
 
 ##### Response
-Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
