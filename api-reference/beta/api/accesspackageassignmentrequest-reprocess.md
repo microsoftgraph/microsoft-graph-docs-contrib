@@ -33,14 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST /identityGovernance/entitlementManagement/accessPackageAssignmentsRequests/{id}/reprocess  
 ```
 
-## Function parameters
-
-None
-
-## Optional query parameters
-
-None
-
 ## Request headers
 
 | Name      |Description|
