@@ -52,7 +52,7 @@ Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "update_conversationthread"
 }-->
 ```http

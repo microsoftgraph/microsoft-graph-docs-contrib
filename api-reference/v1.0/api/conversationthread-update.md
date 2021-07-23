@@ -45,12 +45,12 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `200 OK` response code and an empty object in the response body.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "update_conversationthread"
 }-->
 ```http
@@ -79,7 +79,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 <!-- {
   "blockType": "response",
@@ -88,7 +88,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 419
 
 {}
 ```
