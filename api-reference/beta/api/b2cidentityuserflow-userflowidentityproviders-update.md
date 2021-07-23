@@ -73,6 +73,7 @@ Content-type: application/json
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}"
+  "@odata.type": "#microsoft.graph.identityProvider"
 }
 ```
 # [C#](#tab/csharp)
