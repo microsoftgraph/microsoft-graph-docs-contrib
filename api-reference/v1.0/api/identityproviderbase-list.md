@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) objects in the response body.
 
-## Example
+## Examples
 
 ### Example 1: List all identity providers configured in an Azure AD tenant
 
-### Request
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -73,7 +73,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/identity/identityProviders
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -112,7 +112,7 @@ Content-Type: application/json
 
 ### Example 2: List all identityProvider objects configured in an Azure AD B2C tenant
 
-### Request
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -125,7 +125,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/identity/identityProviders
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.

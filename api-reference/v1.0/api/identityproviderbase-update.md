@@ -55,7 +55,7 @@ In Azure AD B2C, provide the OData type and the JSON object with one or more pro
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |clientId|String|The identifier for the client application obtained when registering the application with the identity provider.|
-|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns "\*\*\*\*".|
+|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`.|
 |displayName|String|The display name of the identity provider.|
 
 ## Response
@@ -81,7 +81,7 @@ PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.socialIdentityProvider",
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "clientSecret": "1111111111111"
 }
 ```
