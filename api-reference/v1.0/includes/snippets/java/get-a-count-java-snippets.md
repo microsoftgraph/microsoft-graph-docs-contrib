@@ -9,10 +9,11 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
 
-UserCollectionPage user = graphClient.groups("{id}").transitiveMembers().microsoft.graph.user()
+GroupCollectionPage groups = graphClient.groups()
 	.buildRequest( requestOptions )
 	.filter("startswith(displayName, 'a')")
 	.orderBy("displayName")
+	.top(1)
 	.get();
 
 ```
