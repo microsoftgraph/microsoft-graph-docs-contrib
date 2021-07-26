@@ -41,7 +41,7 @@ POST /applications/{id}/appManagementPolicies/$ref
 
 ## Request body
 
-In the request body, provide a reference to a policy object from the appManagementPolicies collection.
+In the request body, provide a reference to a single policy object from the [appManagementPolicies](../resources/appmanagementpolicy.md) collection.
 
 ## Response
 
