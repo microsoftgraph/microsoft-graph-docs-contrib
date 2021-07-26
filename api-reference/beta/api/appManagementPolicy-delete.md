@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 OK` response code.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 ### Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

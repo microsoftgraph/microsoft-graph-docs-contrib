@@ -1,5 +1,5 @@
 ---
-title: "List appManagementPolicy assignment"
+title: "List appManagementPolicy appliesTo"
 description: "List resources assigned to an application management policy."
 localization_priority: Normal
 author: "madansr7"
@@ -7,13 +7,13 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# List appManagementPolicy assignment
+# List appManagementPolicy appliesTo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List resources assigned to an [appManagementPolicy](../resources/appManagementPolicy.md) policy object.
+List application and service principal objects assigned an [appManagementPolicy](../resources/appManagementPolicy.md) policy object.
 
 ## Permissions
 
@@ -33,6 +33,16 @@ One of the following permissions is required to call this API. To learn more, in
 GET /policies/appManagementPolicies/{id}/appliesTo
 ```
 
+## Optional query parameters
+This method supports the `$select`, `$filter`, and `$top` OData query parameters to help customize the response. You can apply `$filter` on properties of [application](../resources/application.md) or [servicePrincipal](../resources/serviceprincipal.md) objects that support `$filter`. For example, the following query retrieves appId and displayName of applications or service principals that are assigned to policy.
+
+``` http
+
+https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo?$select=appId,displayName
+```
+
+For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 | Name          | Description               |
@@ -47,7 +57,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [appManagementPolicy](../resources/appManagementPolicy.md) objects in the response body.
 
-## Examples
+## Example 1: Get applications and service principal objects applied to an app management policy
 
 ### Request
 
@@ -55,16 +65,60 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_appManagementPolicyAssignment"
+  "name": "get_appManagementPolicyAppliesTo"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo?$select=id,appId,displayName,createdDateTime
+```http
+GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo
 ```
 
 ### Response
 
 The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appManagementPolicy"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.application",
+      "id": "0d77e011-2fc6-438f-8b93-decb4f926929",
+      "appId": "8f527de6-05c9-4032-bca9-b2b56ab2358a",
+      "displayName": "TestApp1",
+      "createdDateTime": "2018-01-24T05:55:37Z"
+    }
+  ]
+}
+```
+
+## Example 2: Get specific properties of applications and service principal objects applied to an app management policy using $select query option
+
+### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_appManagementPolicyAppliesTo"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo?$select=id,appId,displayName,createdDateTime
+```
+
+### Response
+
+The following is an example of the response that returns `id`, `appId`, `displayName` and `createdDateTime` of applications and service principals where the policy is applied.
 
 <!-- {
   "blockType": "response",
@@ -83,12 +137,20 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.application",
       "id": "0d77e011-2fc6-438f-8b93-decb4f926929",
       "appId": "8f527de6-05c9-4032-bca9-b2b56ab2358a",
-      "displayName": "MyPolicyTestApp",
+      "displayName": "TestApp1",
+      "createdDateTime": "2018-01-24T05:55:37Z"
+    },
+    {
+      "@odata.type": "#microsoft.graph.servicePrincipal",
+      "id": "0e1fa067-dcc1-4d85-9b4c-e69145dd3efb",
+      "appId": "255912cb-e31d-4dee-bee4-3fa5d774d6b9",
+      "displayName": "TestApp2",
       "createdDateTime": "2018-01-24T05:55:37Z"
     }
   ]
 }
 ```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

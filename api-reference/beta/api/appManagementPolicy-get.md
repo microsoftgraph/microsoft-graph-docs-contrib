@@ -51,11 +51,14 @@ If successful, this method returns a `200 OK` response code and a single [appMan
 
 ### Request
 
-The following is an example of the request.
+The following is an example of the request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
+
+- Blocks creating of new passwords after 2019-10-19 at 10:37 AM UTC time.
+- Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
 
 <!-- {
   "blockType": "request",
-  "name": "get_appManagementPolicies"
+  "name": "get_appManagementPolicy"
 }-->
 
 ```msgraph-interactive
@@ -107,7 +110,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "get appManagementPolicies",
+  "description": "get appManagementPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

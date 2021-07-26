@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of an [appManagementPolicy](../resources/appManagementPolicy.md) object.
+Retrieve a list of [appManagementPolicy](../resources/appManagementPolicy.md) objects.
 
 ## Permissions
 
