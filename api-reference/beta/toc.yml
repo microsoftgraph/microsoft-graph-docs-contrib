@@ -10908,11 +10908,11 @@ items:
           - name: Organizational default app management policy
             items:
             - name: Overview
-              href: resources/defaultAppManagementPolicy.md
+              href: resources/tenantAppManagementPolicy.md
             - name: Get
-              href: api/defaultAppManagementPolicy-get.md
+              href: api/tenantAppManagementPolicy-get.md
             - name: Update
-              href: api/defaultAppManagementPolicy-update.md
+              href: api/tenantAppManagementPolicy-update.md
           - name: Application or service principal management policy
             items:
             - name: Overview

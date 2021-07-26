@@ -1,5 +1,5 @@
 ---
-title: "defaultAppManagementPolicy resource type"
+title: "tenantAppManagementPolicy resource type"
 description: "Application auth method tenant default policy enforces app management operation restrictions."
 author: "madansr7"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# defaultAppManagementPolicy resource type
+# tenantAppManagementPolicy resource type
 
 Namespace: microsoft.graph
 
@@ -19,8 +19,8 @@ Tenant wide application authentication method policy type enforces app managemen
 
 | Method                                                | Return type                                                             | Description                                                                         |
 | :---------------------------------------------------- | :---------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| [Get](../api/defaultAppManagementPolicy-get.md)       | [tenantAppManagementPolicy](../resources/defaultAppManagementPolicy.md) | Read the default app management policy set for applications and service principals. |
-| [Update](../api/defaultAppManagementPolicy-update.md) | None                                                                    | Updates the default app management policy for applications and service principals.  |
+| [Get](../api/tenantAppManagementPolicy-get.md)       | [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) | Read the default app management policy set for applications and service principals. |
+| [Update](../api/tenantAppManagementPolicy-update.md) | None                                                                    | Updates the default app management policy for applications and service principals.  |
 
 ## Properties
 
@@ -44,7 +44,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.defaultAppManagementPolicy",
+  "@odata.type": "microsoft.graph.tenantAppManagementPolicy",
   "baseType": "microsoft.graph.policyBase",
   "openType": false
 }

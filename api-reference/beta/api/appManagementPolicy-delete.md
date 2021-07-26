@@ -56,7 +56,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_appManagementPolicies"
+  "name": "delete_appManagementPolicy"
 }-->
 
 ```msgraph-interactive
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 ### Response
 
-If successful, this method returns 204 No Content response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 <!-- {
   "blockType": "response",
@@ -82,7 +82,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "delete appManagementPolicies",
+  "description": "delete appManagementPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

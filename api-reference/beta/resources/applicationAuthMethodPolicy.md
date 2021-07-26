@@ -28,37 +28,38 @@ It contains two properties `applicationRestrictions` and `servicePrincipalRestri
 
 ## Application/Service Principal policy
 
-Applications or Service principals that need to be excluded from a tenant policy or need a fine grained restrictions could be assigned one of the custom policies defined in app management policy collection. These are a collection of policies that might have varying restrictions or different enforcement dates in them.
-Policies created as part of this collection can then be assigned to a specific application or service principal. In a scenario where org default policy and resource policy exist together, policy applied to a resource takes precedence and does not inherit from the tenant policy.
-Every application or service object can have only one policy assigned to it.
+Resource-specific policies are defined in the [appManagementPolicy](appmanagementpolicy.md) resource, which contains a collection of policies with varying restrictions or different enforcement dates from what's defined in tenant default policy. One of these policies can be assigned to an application or service principal, excluding them from the tenant default policy.
+
+When both the tenant default policy and resource-specific policy exist, the resource-specific policy takes precedence and the assigned application or service principal doesn't inherit from the tenant policy. Only one policy can be assigned to an application or service principal.
 
 > [!Note]
-> Neither the tenant default policies nor the app/SP specific policies block token issuance for existing applications. So, an application that does not meet the policy requirements will continue to work until it tries to update the application and add a new secret.
+> Neither the tenant default policies nor the resource-specific policies block token issuance for existing applications. An application that does not meet the policy requirements will continue to work until it tries to update the resource to add a new secret.
 
 ## What restrictions can be managed in Microsoft Graph?
 
-The application authentication methods policy APIs offer the following restrictions:
+The application authentication methods policy APIs offers the following restrictions:
 
-| Restriction      | Description                                           | Examples                                                                                     |
+| Restriction name      | Description                                           | Examples                                                                                     |
 | :--------------- | :---------------------------------------------------- | :------------------------------------------------------------------------------------------- |
 | passwordAddition | Restrict password secrets on applications altogether. | Block new passwords on applications created on or after '01/01/2019'.                        |
-| passwordLifetime | Enforce a max lifetime range for a password secret.   | Restrict all new password secrets to 30 days max on applications created after '01/01/2019'. |
+| passwordLifetime | Enforce a max lifetime range for a password secret.   | Restrict all new password secrets to a maximum of 30 days for on applications created after '01/01/2019'. |
 
 ### Single vs Multi-tenant apps
 
 Single tenant apps should have policy reference applied to the application object.
 To restrict multi-tenant apps homed in customer tenant, a policy is applied to the application object where as multi-tenant apps provisioned from another tenant are managed by applying the policy to servicePrincipal object.
 
-### Summary of key difference between Default policy and Resource policies
+### Summary of key differences between the tenant default policy and resource-specific policies
 
 | Default policy                                                     | Application/Service Principal policy                                                                      |
 | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| Policy always exists.                                              | Policy objects can be created/updated to override default policy.                                         |
-| Restrictions are disabled by default for app/SP.                   | Allows customization for Single tenant, Multi tenant(backing app in home tenant or provisioned apps).     |
-| Allows only single restriction object definition.                  | Allows multiple policy objects to be defined, but only one can be applied to a resource.                  |
-| Allows differentiation between app objects and service principals. | Policy can be applied to either application or service principal object type.                             |
-| Applies all restrictions configured for every app/SP.              | Applies only the restrictions configured in the resource policy and does not inherit from default policy. |
+| Policy always exists.                                              | Policy objects can be created or updated to override default policy.                                         |
+| Restrictions are disabled by default for app/SP.                   | Allows customization for single tenant or multi tenant(backing app in home tenant or provisioned apps).     |
+| Allows only single restriction object definition for all resources.| Allows multiple policy objects to be defined, but only one can be applied to a resource.                  |
+|Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                             |
+| Applies all restrictions configured to all apps or service principals.              |  Applies only the restrictions configured in the resource policy to the specified app or service principal, and doesn't inherit from default policy. |
 
 ## Next steps
 
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- [defaultApManagementPolicy](tenantappmanagementpolicy.md) resource type.
+- [appManagementPolicy](appmanagementpolicy.md) resource type.
