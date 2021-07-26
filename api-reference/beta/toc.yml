@@ -10901,7 +10901,7 @@ items:
               href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
-        - name: Application authentication method policy
+        - name: Application authentication method policy (preview)
           items:
           - name: Overview
             href: resources/applicationAuthMethodPolicy.md

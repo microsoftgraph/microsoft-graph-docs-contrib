@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign an [appManagementPolicy](../resources/appManagementPolicy.md) policy object to an application or service principal object.
+Assign an [appManagementPolicy](../resources/appManagementPolicy.md) policy object to an application or service principal object. The application or service principal adopts this policy over the tenant-wide [defaultAppManagementPolicy](../resources/defaultappmanagementpolicy.md) setting. Only one policy object can be assigned to an application or service principal.
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions                                                |
 | :------------------------------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported.                                             |
-| Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## HTTP request
 
@@ -41,17 +41,17 @@ POST /applications/{id}/appManagementPolicies/$ref
 
 ## Request body
 
-In the request body, provide a reference to a policy object from the appManagementPolicies collection.
+In the request body, provide a reference to a single policy object from the [appManagementPolicies](../resources/appmanagementpolicy.md) collection.
 
 ## Response
 
-If successful, this method returns 204 No Content response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+The following is an example of the request to assign an appManagementPolicy to an application.
 
 <!-- {
   "blockType": "request",

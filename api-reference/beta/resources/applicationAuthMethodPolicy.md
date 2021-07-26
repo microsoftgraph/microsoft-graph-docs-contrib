@@ -26,7 +26,7 @@ There are two types of policy controls:
 A tenant default policy is a single object that always exists and disabled by default. Tenant default policy object has the ability to enforce distinct restrictions on application vs service principal objects.
 It contains two properties `applicationRestrictions` and `servicePrincipalRestrictions` that allow targeting applications owned by the tenant (application objects) or applications provisioned from another tenant (service principal objects) separately. This provides flexibility to either lock down apps originating within a tenant or help raise the quality bar for apps provisioned from outside the tenant boundary.
 
-## Application/Service Principal policy
+## Resource-specific (application and service principal) policy
 
 Resource-specific policies are defined in the [appManagementPolicy](appmanagementpolicy.md) resource, which contains a collection of policies with varying restrictions or different enforcement dates from what's defined in tenant default policy. One of these policies can be assigned to an application or service principal, excluding them from the tenant default policy.
 
@@ -44,10 +44,14 @@ The application authentication methods policy API offers the following restricti
 | passwordAddition | Restrict password secrets on applications altogether. | Block new passwords on applications created on or after '01/01/2019'.                        |
 | passwordLifetime | Enforce a max lifetime range for a password secret.   | Restrict all new password secrets to a maximum of 30 days for on applications created after '01/01/2019'. |
 
-### Single vs Multi-tenant apps
+### Single vs. Multi-tenant apps
 
-Single tenant apps should have policy reference applied to the application object.
-To restrict multi-tenant apps homed in customer tenant, a policy is applied to the application object where as multi-tenant apps provisioned from another tenant are managed by applying the policy to servicePrincipal object.
+Depending on whether your app is a single tenant or multitenant app, you apply the policy on either an application or the service principal object as follows:
+
+- For single tenant apps, apply the policy to the application object.
+- To restrict multi-tenant apps homed in a customer tenant, apply the policy to the application object.
+- To restrict multi-tenant apps provisioned from another tenant, apply the policy to the service principal object.
+
 
 ### Summary of key differences between the tenant default policy and resource-specific policies
 

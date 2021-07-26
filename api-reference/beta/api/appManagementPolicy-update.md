@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions                                                |
 | :------------------------------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported.                                             |
-| Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## HTTP request
 
@@ -46,7 +46,7 @@ In the request body, provide a JSON representation of an [appManagementPolicy](.
 
 ## Response
 
-If successful, this method returns a `204 OK` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -79,8 +79,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 OK
-Content-type: application/json
+HTTP/1.1 204 No Content
 
 ```
 

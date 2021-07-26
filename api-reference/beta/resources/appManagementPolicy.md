@@ -1,6 +1,6 @@
 ---
 title: "appManagementPolicy resource type"
-description: "Application auth method policy for targeted application or service principal to enforces app management operation restrictions."
+description: "An application auth method policy for enforcing app management restrictions on specific application or service principals."
 author: "madansr7"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
@@ -39,7 +39,7 @@ Enforce restrictions on app management operations for specific applications and 
 
 | Relationship | Type                                  | Description                                                                         |
 | :----------- | :------------------------------------ | :---------------------------------------------------------------------------------- |
-| appliesTo    | [directoryObject](directoryobject.md) | Collection of resources to which a policy is applied. This is a read-only property. |
+| appliesTo    | [directoryObject](directoryobject.md) | Collection of application and service principals to which a policy is applied. |
 
 ## JSON representation
 
