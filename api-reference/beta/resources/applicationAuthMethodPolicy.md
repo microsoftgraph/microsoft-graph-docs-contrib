@@ -44,10 +44,14 @@ The application authentication methods policy APIs offers the following restrict
 | passwordAddition | Restrict password secrets on applications altogether. | Block new passwords on applications created on or after '01/01/2019'.                        |
 | passwordLifetime | Enforce a max lifetime range for a password secret.   | Restrict all new password secrets to a maximum of 30 days for on applications created after '01/01/2019'. |
 
-### Single vs Multi-tenant apps
+### Single vs. Multi-tenant apps
 
-Single tenant apps should have policy reference applied to the application object.
-To restrict multi-tenant apps homed in customer tenant, a policy is applied to the application object where as multi-tenant apps provisioned from another tenant are managed by applying the policy to servicePrincipal object.
+Depending on whether your app is a single tenant or multitenant app, you apply the policy on either an application or the service principal object as follows:
+
+- For single tenant apps, apply the policy to the application object.
+- To restrict multi-tenant apps homed in a customer tenant, apply the policy to the application object.
+- To restrict multi-tenant apps provisioned from another tenant, apply the policy to the service principal object.
+
 
 ### Summary of key differences between the tenant default policy and resource-specific policies
 
