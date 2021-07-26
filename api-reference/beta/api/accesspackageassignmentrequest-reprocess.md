@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), callers can automatically retry a user’s request for access to an access package.
 
 ## Permissions
@@ -45,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. If the assignment doesn't exist, this method will return `404` or `400` if the ID is not valid.
+If successful, this method returns a  `202 Accepted` response code. If the assignment doesn't exist, that is, the id isn't valid, this method will return a `400 bad request` or a `400 not found`response code.
 
 ## Examples
 
