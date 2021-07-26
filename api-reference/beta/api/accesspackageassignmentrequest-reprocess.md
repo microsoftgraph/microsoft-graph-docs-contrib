@@ -1,5 +1,5 @@
 ---
-title: "accessPackageAssignmentRequest: Reprocess"
+title: "accessPackageAssignmentRequest: reprocess"
 description: "Reprocess accessPackageAssignmentRequest objects."
 localization_priority: Normal
 author: "markwahl-msft"
