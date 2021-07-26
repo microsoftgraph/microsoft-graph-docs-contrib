@@ -6335,6 +6335,9 @@ items:
           href: api/onenote-post-notebooks.md
       - name: Resource-specific permission grants
         href: resources/resourcespecificpermissiongrant.md
+        items:
+        - name: List group permissions
+          href: api/group-list-permissiongrants.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
