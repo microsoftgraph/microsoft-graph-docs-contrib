@@ -39,7 +39,7 @@ Enforce restrictions on app management operations for specific applications and 
 
 | Relationship | Type                                  | Description                                                                         |
 | :----------- | :------------------------------------ | :---------------------------------------------------------------------------------- |
-| appliesTo    | [directoryObject](directoryobject.md) | Collection of resources to which a policy is applied. This is a read-only property. |
+| appliesTo    | [directoryObject](directoryobject.md) | Collection of application and service principals to which a policy is applied. |
 
 ## JSON representation
 
