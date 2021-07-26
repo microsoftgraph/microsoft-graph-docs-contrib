@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# accessPackageAssignmentRequest: Reprocess
+# accessPackageAssignmentRequest: reprocess
 
 Namespace: microsoft.graph
 
