@@ -19,11 +19,11 @@ Enforce restrictions on app management operations for specific applications and 
 
 | Method                                                         | Return type                                                                | Description                                                                                                            |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| [List](../api/applicationAuthMethodResourcePolicy-get.md)      | [appManagementPolicy](../resources/applicationAuthMethodResourcePolicy.md) | Returns a list of app management policies created for applications and service principals along with their properties. |
-| [Create](../api/applicationAuthMethodResourcePolicy-get.md)    | [appManagementPolicy](../resources/applicationAuthMethodResourcePolicy.md) | Creates an app management policy that can be assigned to an application or service principal object.                   |
-| [Get](../api/applicationAuthMethodResourcePolicy-get.md)       | [appManagementPolicy](../resources/applicationAuthMethodResourcePolicy.md) | Gets a single app management policy object.                                                                            |
-| [Update](../api/applicationAuthMethodResourcePolicy-update.md) | None                                                                       | Updates an app management policy.                                                                                      |
-| [Delete](../api/applicationAuthMethodResourcePolicy-update.md) | None                                                                       | Deletes an app management policy from the collection of policies in appManagementPolicies.                             |
+| [List](../api/appManagementPolicy-list.md)      | [appManagementPolicy](../resources/appManagementPolicy.md) | Returns a list of app management policies created for applications and service principals along with their properties. |
+| [Create](../api/appManagementPolicy-post.md)    | [appManagementPolicy](../resources/appManagementPolicy.md) | Creates an app management policy that can be assigned to an application or service principal object.                   |
+| [Get](../api/appManagementPolicy-get.md)       | [appManagementPolicy](../resources/appManagementPolicy.md) | Gets a single app management policy object.                                                                            |
+| [Update](../api/appManagementPolicy-update.md) | None                                                                       | Updates an app management policy.                                                                                      |
+| [Delete](../api/appManagementPolicy-delete.md) | None                                                                       | Deletes an app management policy from the collection of policies in appManagementPolicies.                             |
 
 ## Properties
 
