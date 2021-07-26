@@ -46,7 +46,7 @@ In the request body, provide a JSON representation of an [appManagementPolicy](.
 
 ## Response
 
-If successful, this method returns a `204 OK` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
