@@ -55,7 +55,7 @@ The following is an example of the request to assign an appManagementPolicy to a
 
 <!-- {
   "blockType": "request",
-  "name": "assign_appManagementPolicies"
+  "name": "assign_appliesTo"
 }-->
 
 ```msgraph-interactive
