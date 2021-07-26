@@ -46,7 +46,7 @@ In the request body, provide a JSON representation of an [appManagementPolicy](.
 
 ## Response
 
-If successful, this method returns a `201 OK` response code with the new object in the response payload.
+If successful, this method returns a `201 Created` response code with the new [appManagementPolicy ](../resources/appmanagementpolicy.md) object in the response payload.
 
 ## Examples
 
