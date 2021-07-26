@@ -37,7 +37,7 @@ When both the tenant default policy and resource-specific policy exist, the reso
 
 ## What restrictions can be managed in Microsoft Graph?
 
-The application authentication methods policy APIs offers the following restrictions:
+The application authentication methods policy API offers the following restrictions:
 
 | Restriction name      | Description                                           | Examples                                                                                     |
 | :--------------- | :---------------------------------------------------- | :------------------------------------------------------------------------------------------- |

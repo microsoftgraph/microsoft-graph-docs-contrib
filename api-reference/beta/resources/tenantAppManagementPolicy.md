@@ -19,7 +19,7 @@ Tenant wide application authentication method policy type enforces app managemen
 
 | Method                                                | Return type                                                             | Description                                                                         |
 | :---------------------------------------------------- | :---------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| [Get](../api/tenantAppManagementPolicy-get.md)       | [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) | Read the default app management policy set for applications and service principals. |
+| [Get](../api/tenantAppManagementPolicy-get.md)       | [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) | Read the properties of the default app management policy set for applications and service principals. |
 | [Update](../api/tenantAppManagementPolicy-update.md) | None                                                                    | Updates the default app management policy for applications and service principals.  |
 
 ## Properties

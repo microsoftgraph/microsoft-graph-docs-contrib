@@ -78,9 +78,10 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/tenantAppManagementPolicy",
-    "id": "db9d4b58-3488-4da4-9994-49773c454e33",
+    "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/defaultAppManagementPolicy/00000000-0000-0000-0000-000000000000"
+    "id": "00000000-0000-0000-0000-000000000000",
     "displayName": "Default app management tenant policy",
-    "description": "Default tenant policy that enforces app management restrictions on applications and service principals.",
+    "description": "Default tenant policy that enforces app management restrictions on applications and service principals. To apply policy to targeted resources, create a new policy under appManagementPolicies collection.",
     "isEnabled": false,
     "applicationRestrictions": {
         "passwordCredentials": []

@@ -44,15 +44,17 @@ PATCH /policies/tenantAppManagementPolicy
 
 In the request body, supply the values for relevant fields from the [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) that should be updated. Existing properties that are not included in the request body will maintain their previous values. For best performance, do not include unchanged values in the request payload.
 
+
 ## Response
 
-If successful, this method returns a 204 No Content response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
 ### Request
 
 The following is an example of the request.
+
 
 <!-- {
   "blockType": "request",
@@ -84,7 +86,7 @@ Content-Type: application/json
 
 ### Response
 
-If successful, this method returns a 204 No Content response code. It does not return anything in the response body.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

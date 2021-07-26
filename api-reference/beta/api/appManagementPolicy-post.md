@@ -59,7 +59,7 @@ The following is an example of the request.
   "name": "create_appManagementPolicy"
 }-->
 
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 {
