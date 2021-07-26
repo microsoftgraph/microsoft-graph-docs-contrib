@@ -6336,7 +6336,7 @@ items:
       - name: Resource-specific permission grants
         href: resources/resourcespecificpermissiongrant.md
         items:
-        - name: List group permissions
+        - name: List permission grants of a group
           href: api/group-list-permissiongrants.md
     - name: To-do tasks
       displayName: Microsoft To Do
