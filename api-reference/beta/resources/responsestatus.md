@@ -3,7 +3,7 @@ title: "responseStatus resource type"
 description: "The response status of a meeting request."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "outlook"
 author: "harini84"
 ---
 
@@ -19,7 +19,7 @@ The response status of a meeting request.
 
 | Property | Type           | Description |
 |:---------|:---------------|:------------|
-| response | String         | The response type. Possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
+| response | String         | The response type. Possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.<br><br>To differentiate between `None` and `NotResponded`, use an attendee, Alex, as an example. Alex hasn't responded to a meeting request (which programmatically is an [event](event.md)). An operation that returns the properties of the event, such as a [GET event](../api/event-get.md) operation, called on behalf of Alex returns `NotResponded` for Alex in the **attendees** and **responseStatus** properties. For the same event, a GET /event operation called on behalf of any other attendee or the organizer would return `None` in the **attendees** property for Alex.
 | time     | DateTimeOffset | The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`
 
 ## JSON representation
