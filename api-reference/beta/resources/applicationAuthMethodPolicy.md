@@ -26,7 +26,7 @@ There are two types of policy controls:
 A tenant default policy is a single object that always exists and disabled by default. Tenant default policy object has the ability to enforce distinct restrictions on application vs service principal objects.
 It contains two properties `applicationRestrictions` and `servicePrincipalRestrictions` that allow targeting applications owned by the tenant (application objects) or applications provisioned from another tenant (service principal objects) separately. This provides flexibility to either lock down apps originating within a tenant or help raise the quality bar for apps provisioned from outside the tenant boundary.
 
-## Application/Service Principal policy
+## Resource-specific (application and service principal) policy
 
 Resource-specific policies are defined in the [appManagementPolicy](appmanagementpolicy.md) resource, which contains a collection of policies with varying restrictions or different enforcement dates from what's defined in tenant default policy. One of these policies can be assigned to an application or service principal, excluding them from the tenant default policy.
 
