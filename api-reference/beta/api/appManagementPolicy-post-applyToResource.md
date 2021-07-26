@@ -51,7 +51,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ### Request
 
-The following is an example of the request.
+The following is an example of the request to assign an appManagementPolicy to an application.
 
 <!-- {
   "blockType": "request",
