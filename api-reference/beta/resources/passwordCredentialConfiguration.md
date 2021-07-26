@@ -1,6 +1,6 @@
 ---
 title: "passwordCredentialConfiguration resource type"
-description: "Password credential configuration complex type to configure password credential restriction, maxLifetime and enforcement date"
+description: "Password credential configuration complex type to configure password credential restriction, maxLifetime, and enforcement date"
 author: "madansr7"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
