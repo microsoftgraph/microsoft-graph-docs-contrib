@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-App management configuration object that contains properties which can be configured to enable various restrictions.
+App management configuration object that contains properties which can be configured to enable various restrictions for applications and service principals.
 
 ## Properties
 
