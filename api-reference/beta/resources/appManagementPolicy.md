@@ -24,7 +24,8 @@ Enforce restrictions on app management operations for specific applications and 
 | [Get](../api/appManagementPolicy-get.md)       | [appManagementPolicy](../resources/appManagementPolicy.md) | Gets a single app management policy object.                                                                            |
 | [Update](../api/appManagementPolicy-update.md) | None                                                                       | Updates an app management policy.                                                                                      |
 | [Delete](../api/appManagementPolicy-delete.md) | None                                                                       | Deletes an app management policy from the collection of policies in appManagementPolicies.                             |
-| [AppliesTo](../api/appManagementPolicy-list-appliesTo.md)| [appManagementPolicy](../resources/appManagementPolicy.md)|Returns a list of applications and service principals to which the policy is applied. |
+| [List appliesTo](../api/appManagementPolicy-list-appliesTo.md)| [appManagementPolicy](../resources/appManagementPolicy.md)|Returns a list of applications and service principals to which the policy is applied. |
+| [Assign appliesTo](../api/appManagementPolicy-post-appliesTo.md)| None |Returns a list of applications and service principals to which the policy is applied. |
 
 ## Properties
 
