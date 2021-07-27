@@ -238,8 +238,7 @@ Content-type: application/json
 
 The following example shows the initial sync request to get events in the specified calendar of the signed-in user, within the range of dates indicated by the **calendarView**. The initial request does not include any state token. 
 
-The request uses the `Prefer: odata.maxpagesize` header to limit the maximum number of events in each response to 2. 
-Continue calling the `delta` function by using the query returned in `@odata.nextLink` until you get all the events in that calendar view, and a `@odata.deltaLink`
+The request uses the `Prefer: odata.maxpagesize` header to limit the maximum number of events in each response to 2. Continue calling the `delta` function by using the query returned in `@odata.nextLink` until you get all the events in that calendar view, and a `@odata.deltaLink`
 in the response.
 
 # [HTTP](#tab/http)
@@ -266,7 +265,6 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
