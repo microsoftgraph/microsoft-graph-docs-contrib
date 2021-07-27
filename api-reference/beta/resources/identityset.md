@@ -4,7 +4,7 @@ description: "The identitySet resource is a keyed collection of identity resourc
 title: IdentitySet
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "users"
 ---
 # identitySet resource type
 

@@ -1,6 +1,6 @@
 ---
 title: "rbacApplication resource type"
-description: "Role management navigation property"
+description: "Role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers."
 localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "directory-management"
@@ -29,8 +29,6 @@ Role management container for unified role definitions and role assignments for 
 ## Properties
 
 None
-
-## Relationships
 
 ## Relationships
 |Relationship|Type|Description|
