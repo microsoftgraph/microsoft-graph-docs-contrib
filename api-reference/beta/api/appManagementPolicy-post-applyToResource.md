@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Assign appManagementPolicy
+# Assign appliesTo
 
 Namespace: microsoft.graph
 
