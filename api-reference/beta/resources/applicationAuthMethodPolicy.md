@@ -24,7 +24,7 @@ There are two types of policy controls:
 
 ## Tenant default app management policy
 
-A tenant default policy is a single object that always exists and is disabled by default. It's defined by the [tenantAppManagementPolicy](tenanttappmanagementpolicy.md) resource and enforces restrictions on application vs service principal objects. It contains the following two properties:
+A tenant default policy is a single object that always exists and is disabled by default. It's defined by the [tenantAppManagementPolicy](tenantappmanagementpolicy.md) resource and enforces restrictions on application vs service principal objects. It contains the following two properties:
 
 - **applicationRestrictions** allows targeting applications owned by the tenant (application objects).
 - **servicePrincipalRestrictions** allows targeting provisioned from another tenant (service principal objects.
