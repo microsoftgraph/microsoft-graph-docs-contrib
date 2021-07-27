@@ -31,10 +31,10 @@ Enforce restrictions on app management operations for specific applications and 
 | Property     | Type                                                        | Description                                                            |
 | :----------- | :---------------------------------------------------------- | :--------------------------------------------------------------------- |
 | id           | String                                                      | The policy identifier.                                                 |
-| displayName  | String                                                      | The display name of the policy.                                        |
-| description  | String                                                      | The description of the policy.                                         |
-| isEnabled    | Boolean                                                     | Denotes if the policy is enabled.                                      |
-| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. This is a required property. |
+| displayName  | String                                                      | The display name of the policy. Inherited from [policyBase](policybase.md).                                        |
+| description  | String                                                      | The description of the policy. Inherited from [policyBase](policybase.md).                                         |
+| isEnabled    | Boolean                                                     | Denotes whether the policy is enabled.                                      |
+| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. |
 
 ## Relationships
 

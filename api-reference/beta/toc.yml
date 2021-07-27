@@ -10905,7 +10905,7 @@ items:
           items:
           - name: Overview
             href: resources/applicationAuthMethodPolicy.md
-          - name: Organizational default app management policy
+          - name: Default app management policy
             items:
             - name: Overview
               href: resources/tenantAppManagementPolicy.md
@@ -10927,9 +10927,9 @@ items:
               href: api/appManagementPolicy-update.md
             - name: Delete
               href: api/appManagementPolicy-delete.md
-            - name: Assign to application or service principal
-              href: api/appManagementPolicy-post-applyToResource.md
-            - name: List applied to applications
+            - name: Create appliesTo
+              href: api/appManagementPolicy-post-appliesTo.md
+            - name: List appliesTo
               href: api/appManagementPolicy-list-appliesTo.md
         - name: Authentication events policy
           items:

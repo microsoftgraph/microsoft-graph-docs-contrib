@@ -1,5 +1,5 @@
 ---
-title: "Assign appManagementPolicy"
+title: "Assign appliesTo"
 description: "Assign a policy to application or service principal object."
 localization_priority: Normal
 author: "madansr7"
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Assign appManagementPolicy
+# Assign appliesTo
 
 Namespace: microsoft.graph
 
@@ -55,7 +55,7 @@ The following is an example of the request to assign an appManagementPolicy to a
 
 <!-- {
   "blockType": "request",
-  "name": "assign_appManagementPolicies"
+  "name": "assign_appliesTo"
 }-->
 
 ```msgraph-interactive
