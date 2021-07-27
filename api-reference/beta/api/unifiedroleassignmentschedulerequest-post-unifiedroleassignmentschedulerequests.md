@@ -87,7 +87,7 @@ Content-Type: application/json
   "scheduleInfo": {
     "startDateTime": "2021-07-01T00:00:00Z",
     "expiration": {
-      "type": "1"
+      "type": "NoExpiration"
     }
   }
 }

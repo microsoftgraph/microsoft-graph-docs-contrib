@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,7 +115,7 @@ Content-Type: application/json
         "application": null,
         "device": null,
         "user": {
-          displayName": null,
+          "displayName": null,
           "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
         }
       },
