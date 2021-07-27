@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/policies/tenantAppManagementPolicy
 
 ### Response
 
-The following is an example of the response.
+The following is an example of the response that shows the default tenant app management policy.
 
 <!-- {
   "blockType": "response",
@@ -78,7 +78,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/tenantAppManagementPolicy",
-    "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/defaultAppManagementPolicy/00000000-0000-0000-0000-000000000000"
+    "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/defaultAppManagementPolicy/00000000-0000-0000-0000-000000000000",
     "id": "00000000-0000-0000-0000-000000000000",
     "displayName": "Default app management tenant policy",
     "description": "Default tenant policy that enforces app management restrictions on applications and service principals. To apply policy to targeted resources, create a new policy under appManagementPolicies collection.",

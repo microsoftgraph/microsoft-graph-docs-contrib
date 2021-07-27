@@ -19,7 +19,7 @@ List application and service principal objects assigned an [appManagementPolicy]
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions                                                |
+| Permission type                        | Permissions (from least to most privileged)                                             |
 | :------------------------------------- | :--------------------------------------------------------- |
 | Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported.                                             |
@@ -34,7 +34,7 @@ GET /policies/appManagementPolicies/{id}/appliesTo
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, and `$top` OData query parameters to help customize the response. You can apply `$filter` on properties of [application](../resources/application.md) or [servicePrincipal](../resources/serviceprincipal.md) objects that support `$filter`. For example, the following query retrieves appId and displayName of applications or service principals that are assigned to policy.
+This method supports the `$select`, `$filter`, and `$top` OData query parameters to help customize the response. You can apply `$filter` on properties of [application](../resources/application.md) or [servicePrincipal](../resources/serviceprincipal.md) objects that support `$filter`. For example, the following query retrieves the **appId** and **displayName** of applications or service principals that are assigned the policy.
 
 ``` http
 
@@ -65,7 +65,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_appManagementPolicyAppliesTo"
+  "name": "list_appManagementPolicyAppliesTo"
 }-->
 
 ```http
@@ -109,7 +109,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_appManagementPolicyAppliesTo"
+  "name": "list_appManagementPolicyAppliesTo_select"
 }-->
 
 ```http
