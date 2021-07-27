@@ -34,13 +34,16 @@ One of the following permissions is required to call this API. To learn more, in
 GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')
 ```
 
-## Query parameters
+## Function parameters
 The following table shows the query parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|Filter to query objects for which the current user is the principal. Allowed value is `principal`. Required.|
 
+
+## Optional query parameters
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

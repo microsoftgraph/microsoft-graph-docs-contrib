@@ -45,6 +45,10 @@ The following table shows the parameters that can be used with this function.
 |on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|Filter to query objects for which the current user is the principal. Allowed value is `principal`. Required. Doesn't retrieve assignments for groups that this user is a member of.|
 
 
+## Optional query parameters
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+
 ## Request headers
 |Name|Description|
 |:---|:---|

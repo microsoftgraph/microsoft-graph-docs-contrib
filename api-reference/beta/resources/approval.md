@@ -17,6 +17,8 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approva
 
 In [userConsentRequests](../resources/userconsentrequest.md), the approval object for decisions associated with a request.
 
+In [Role management](../resources/rolemanagement.md), the decisions to approve or deny role assignments.
+
 ## Methods
 
 | Method       | Return Type | Description |
