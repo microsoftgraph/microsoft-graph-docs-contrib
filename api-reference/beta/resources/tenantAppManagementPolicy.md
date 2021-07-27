@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Tenant wide application authentication method policy type enforces app management operation restrictions for all applications and service principals.
+Tenant-wide application authentication method policy to enforce app management restrictions for all applications and service principals. This policy applies to all apps and service principals unless overridden when an [appManagementPolicy](../resources/appmanagementpolicy.md) is applied to the object.
+
+Inherits from [policyBase](policybase.md).
 
 ## Methods
 
@@ -27,11 +29,11 @@ Tenant wide application authentication method policy type enforces app managemen
 | Property                     | Type                                                                     | Description                                                           |
 | :--------------------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------- |
 | id                           | String                                                                   | The default policy identifier.                                        |
-| displayName                  | String                                                                   | The display name of the default policy.                               |
-| description                  | String                                                                   | The description of the default policy.                                |
-| isEnabled                    | Boolean                                                                  | Denotes if the policy is enabled.                                     |
-| applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to application objects.            |
-| servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that will apply as default to Service Principal objects. |
+| displayName                  | String                                                                   | The display name of the default policy. Inherited from [policyBase](policybase.md).                                |
+| description                  | String                                                                   | The description of the default policy. Inherited from [policyBase](policybase.md).                                |
+| isEnabled                    | Boolean                                                                  | Denotes if the policy is enabled. Default value is false.                                    |
+| applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all application objects in the tenant.               |
+| servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant. |
 
 ## Relationships
 

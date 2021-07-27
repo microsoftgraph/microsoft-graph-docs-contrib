@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### appCredentialRestrictionType
+|Member|
+|:-----|
+|passwordAddition|
+|passwordLifetime|
+|unknownFutureValue|
+
 ### synchronizationSecret values
 
 |Member|

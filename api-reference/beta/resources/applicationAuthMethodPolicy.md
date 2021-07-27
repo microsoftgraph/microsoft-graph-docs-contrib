@@ -1,6 +1,6 @@
 ---
-title: "Azure AD application authentication methods API overview | Public preview"
-description: "Application authentication methods is how apps get tokens in Azure AD."
+title: "Azure AD application authentication methods API overview"
+description: "Application authentication methods allow apps to acquire tokens to access data in Azure AD."
 localization_priority: Normal
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
@@ -11,20 +11,24 @@ doc_type: "conceptualPageType"
 
 Namespace: microsoft.graph
 
-Application authentication methods are ways by which applications can get tokens in Azure Active Directory (AD). Methods such as certificates or passwords secrets can be used to get a token as the application.
-Application authentication method policies provide a way for IT admins to establish app development best practices on these methods for the applications in their organizations. For e.g. an admin can configure a policy to block password secrets altogether or create a rule to ensure no password secret exceeds a lifetime threshold set by the organization. These policies can be configured to block all application or service principal objects by setting the enforcement targeting based on the object creation date.
+Application authentication methods such as certificates and password secrets allow apps to acquire tokens to access data in Azure Active Directory (Azure AD). The policies allow IT admins to enforce best practices for how apps in their organizations use these application authentication methods. For example, an admin might configure a policy to block the use or limit the lifetime of password secrets, and use the creation date of the object to enforce the policy.
 
-These policies allows organizations to take advantage of the new security hardening features in app management and gradually adopt them in their organization. Enforcement of the restrictions based on application or service principal created datetime provides a way for an organization to review their app security posture, inventory apps and enforce controls per their resourcing schedules. The date based approach allows scaling back to cover existing applications once new applications start to follow the guidance.
+These policies allow organizations to take advantage of the new app security hardening features. By enforcing restrictions that are based on the application or service principal created date, an organization can review their current app security posture, inventory apps, and enforce controls per their resourcing schedules and needs. This approach using the created date allows the organization to enforce the policy for new applications and also apply it to existing applications.
 
 There are two types of policy controls:
 
 - Tenant default policies that apply to all applications or service principals.
-- Application/Service Principal specific policies which provide the ability to include or exclude certain applications from the tenant policy.
+- Resource-specific (application or service principal) policies that allow inclusion or exclusion of individual applications from the tenant default policy.
 
-## Organization default app management policy
+## Tenant default app management policy
 
-A tenant default policy is a single object that always exists and disabled by default. Tenant default policy object has the ability to enforce distinct restrictions on application vs service principal objects.
-It contains two properties `applicationRestrictions` and `servicePrincipalRestrictions` that allow targeting applications owned by the tenant (application objects) or applications provisioned from another tenant (service principal objects) separately. This provides flexibility to either lock down apps originating within a tenant or help raise the quality bar for apps provisioned from outside the tenant boundary.
+A tenant default policy is a single object that always exists and is disabled by default. It's defined by the [defaultAppManagementPolicy](defaultappmanagementpolicy.md) resource and enforces restrictions on application vs service principal objects.
+It contains the following two properties:
+
+- **applicationRestrictions** allows targeting applications owned by the tenant (application objects).
+- **servicePrincipalRestrictions** allows targeting provisioned from another tenant (service principal objects.
+
+These properties allow the organization to either lock down apps that originate within a tenant or raise the quality bar for apps that are provisioned from outside the tenant boundary.
 
 ## Resource-specific (application and service principal) policy
 

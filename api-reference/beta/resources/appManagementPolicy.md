@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enforce restrictions on app management operations for specific applications and service principals. If this resource is not configured for an application or service principal, the restrictions default to the settings in the [tenantAppManagementPolicy](tenantappmanagementpolicy.md) resource.
+Enforce restrictions on app management operations for specific applications and service principals. If this resource is not configured for an application or service principal, the restrictions default to the settings in the [tenantAppManagementPolicy](tenantappmanagementpolicy.md) object.
 
 ## Methods
 
@@ -24,6 +24,7 @@ Enforce restrictions on app management operations for specific applications and 
 | [Get](../api/appManagementPolicy-get.md)       | [appManagementPolicy](../resources/appManagementPolicy.md) | Gets a single app management policy object.                                                                            |
 | [Update](../api/appManagementPolicy-update.md) | None                                                                       | Updates an app management policy.                                                                                      |
 | [Delete](../api/appManagementPolicy-delete.md) | None                                                                       | Deletes an app management policy from the collection of policies in appManagementPolicies.                             |
+| [AppliesTo](../api/appManagementPolicy-list-appliesTo.md)| [appManagementPolicy](../resources/appManagementPolicy.md)|Returns a list of applications and service principals to which the policy is applied. |
 
 ## Properties
 
@@ -33,7 +34,7 @@ Enforce restrictions on app management operations for specific applications and 
 | displayName  | String                                                      | The display name of the policy.                                        |
 | description  | String                                                      | The description of the policy.                                         |
 | isEnabled    | Boolean                                                     | Denotes if the policy is enabled.                                      |
-| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. |
+| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. This is a required property. |
 
 ## Relationships
 
@@ -61,11 +62,8 @@ The following is a JSON representation of the resource.
     "id": "string (identifier)",
     "description": "string",
     "displayName": "string",
-    "isEnabled": boolean,
+    "isEnabled": true,
     "restrictions": {
-      "@odata.type": "microsoft.graph.appManagementConfiguration"
-    },
-    "servicePrincipalRestrictions": {
       "@odata.type": "microsoft.graph.appManagementConfiguration"
     }
   }
