@@ -31,7 +31,7 @@ Inherits from [policyBase](policybase.md).
 | id                           | String                                                                   | The default policy identifier.                                        |
 | displayName                  | String                                                                   | The display name of the default policy. Inherited from [policyBase](policybase.md).                                |
 | description                  | String                                                                   | The description of the default policy. Inherited from [policyBase](policybase.md).                                |
-| isEnabled                    | Boolean                                                                  | Denotes if the policy is enabled. Default value is false.                                    |
+| isEnabled                    | Boolean                                                                  | Denotes whether the policy is enabled. Default value is `false`.                                    |
 | applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all application objects in the tenant.               |
 | servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant. |
 
@@ -58,7 +58,7 @@ The following is a JSON representation of the resource.
   "id": "string (identifier)",
   "description": "string",
   "displayName": "string",
-  "isEnabled": boolean,
+  "isEnabled": false,
   "applicationRestrictions": {
     "@odata.type":"microsoft.graph.appManagementConfiguration"
   },
