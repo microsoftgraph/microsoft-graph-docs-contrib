@@ -65,7 +65,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_appManagementPolicyAppliesTo"
+  "name": "list_appManagementPolicyAppliesTo"
 }-->
 
 ```http
@@ -109,7 +109,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_appManagementPolicyAppliesTo_select"
+  "name": "list_appManagementPolicyAppliesTo_select"
 }-->
 
 ```http
