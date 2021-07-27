@@ -42,7 +42,16 @@ PATCH /policies/appManagementPolicies/{id}
 
 ## Request body
 
-In the request body, provide a JSON representation of an [appManagementPolicy](../resources/appManagementPolicy.md).
+In the request body, supply the values for relevant fields from the [appManagementPolicy](../resources/appManagementPolicy.md) that should be updated.
+Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+For best performance, don't include existing values that haven't changed.
+
+| Property                | Type                                                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|:------------------------|:----------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| displayName  | String                                                      | The display name of the policy. Inherited from [policyBase](policybase.md).                                        |
+| description  | String                                                      | The description of the policy. Inherited from [policyBase](policybase.md).                                         |
+| isEnabled    | Boolean                                                     | Denotes whether the policy is enabled.                                      |
+| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. |
 
 ## Response
 

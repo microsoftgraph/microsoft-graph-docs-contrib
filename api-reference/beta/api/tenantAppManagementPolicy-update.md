@@ -44,6 +44,13 @@ PATCH /policies/tenantAppManagementPolicy
 
 In the request body, supply the values for relevant fields from the [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) that should be updated. Existing properties that are not included in the request body will maintain their previous values. For best performance, do not include unchanged values in the request payload.
 
+| Property                | Type                                                                        | Description |
+|:------------------------|:----------------------------------------------------------------------------|:----------------------------------------------------|
+| displayName                  | String                                                                   | The display name of the default policy. Inherited from [policyBase](policybase.md).                                |
+| description                  | String                                                                   | The description of the default policy. Inherited from [policyBase](policybase.md).                                |
+| isEnabled                    | Boolean                                                                  | Denotes if the policy is enabled. Default value is false.                                    |
+| applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all application objects in the tenant.               |
+| servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant. |
 
 ## Response
 
