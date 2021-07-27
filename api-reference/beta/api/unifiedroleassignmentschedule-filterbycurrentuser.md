@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser
+GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='principal')
 ```
 
 ## Query parameters
@@ -38,7 +38,7 @@ The following table shows the query parameters that can be used with this method
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleAssignmentScheduleFilterByCurrentUserOptions|Id of the current user.|
+|on|roleAssignmentScheduleFilterByCurrentUserOptions|Filter to query objects for which the current user is the principal. Allowed value is `principal`. Required.|
 
 
 ## Request headers
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a collection of[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) objects in the response body.
 
 ## Examples
 
@@ -62,12 +62,12 @@ If successful, this method returns a `200 OK` response code and a [unifiedRoleAs
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='dce468b2-68b2-dce4-b268-e4dcb268e4dc')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='principal')
 ```
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,22 +79,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleAssignmentSchedule)",
   "value": [
     {
-      "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "createdUsing": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "createdDateTime": "2020-09-09T21:35:27.91Z",
-      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
+      "@odata.type": "#microsoft.graph.unifiedRoleAssignmentSchedule",
+      "id": "lAPpYvVpN0KRkAEhdxReECssmvzcHW1IohFf6Mp3-h8-1",
+      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "createdUsing": null,
+      "createdDateTime": null,
+      "modifiedDateTime": null,
       "status": "Provisioned",
+      "assignmentType": "Assigned",
+      "memberType": "Direct",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "assignmentType": "Eligible",
-      "memberType": "direct"
+        "startDateTime": "2021-07-27T11:24:19.6471278Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "noExpiration",
+          "endDateTime": null,
+          "duration": null
+        }
+      }
     }
   ]
 }

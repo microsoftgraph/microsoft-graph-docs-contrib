@@ -56,7 +56,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestsId}/cancel
+POST https://graph.microsoft.com/beta/roleManagement/directory/RoleAssignmentScheduleRequests/b5a22921-656a-4429-9c4e-59a5f576614d/cancel
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleassignmentschedulerequest-cancel-csharp-snippets.md)]
@@ -79,7 +79,7 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSch
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

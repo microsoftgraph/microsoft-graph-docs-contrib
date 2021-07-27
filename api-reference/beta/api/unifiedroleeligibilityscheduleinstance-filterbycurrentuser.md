@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser
+GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
 ## Query parameters
@@ -38,7 +38,7 @@ The following table shows the query parameters that can be used with this method
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|Id of the current user.|
+|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|Filter to query objects for which the current user is the principal. Allowed value is `principal`. Required.|
 
 
 ## Request headers
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) objects in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [unifiedRoleEl
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='5cfd7709-7709-5cfd-0977-fd5c0977fd5c')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
 
@@ -79,17 +79,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilityScheduleInstance)",
   "value": [
     {
-      "id": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-      "startDateTime": "2020-09-09T21:35:27.91Z",
-      "endDateTime": "2020-09-09T21:35:27.91Z",
-      "memberType": "direct",
-      "roleEligibilityScheduleId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c"
+      "@odata.type": "#microsoft.graph.unifiedRoleEligibilityScheduleInstance",
+      "id": "UafX_Qu2SkSYTAJlL-j6HCssmvzcHW1IohFf6Mp3-h9xbmLcN0jrQL5KvCnYihF4-2-e",
+      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/administrativeUnits/dc626e71-4837-40eb-be4a-bc29d88a1178",
+      "appScopeId": null,
+      "startDateTime": "2021-07-27T14:03:04.4Z",
+      "endDateTime": null,
+      "memberType": "Direct",
+      "roleEligibilityScheduleId": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f"
     }
   ]
 }

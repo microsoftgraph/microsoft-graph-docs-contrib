@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser
+GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='principal')
 ```
 
 ## Query parameters
@@ -38,7 +38,7 @@ The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleEligibilityScheduleFilterByCurrentUserOptions|Id of the current user.|
+|on|roleEligibilityScheduleFilterByCurrentUserOptions|The currently signed-in user. Allowed value is `principal`.|
 
 
 ## Request headers
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) objects in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [unifiedRoleEl
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='eb18c026-c026-eb18-26c0-18eb26c018eb')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='principal')
 ```
 
 
@@ -79,21 +79,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilitySchedule)",
   "value": [
     {
-      "id": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "principalId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "roleDefinitionId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "directoryScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "appScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "createdUsing": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-      "createdDateTime": "2020-09-09T21:35:27.91Z",
-      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
+      "@odata.type": "#microsoft.graph.unifiedRoleEligibilitySchedule",
+      "id": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f",
+      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/administrativeUnits/dc626e71-4837-40eb-be4a-bc29d88a1178",
+      "appScopeId": null,
+      "createdUsing": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f",
+      "createdDateTime": "2021-07-27T14:03:04.4Z",
+      "modifiedDateTime": "0001-01-01T08:00:00Z",
       "status": "Provisioned",
+      "memberType": "Direct",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "memberType": "direct"
+        "startDateTime": "2021-07-27T14:03:04.4Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "noExpiration",
+          "endDateTime": null,
+          "duration": null
+        }
+      }
     }
   ]
 }

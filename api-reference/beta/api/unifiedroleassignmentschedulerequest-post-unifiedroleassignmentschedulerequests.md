@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 |principalId|String|Objectid of the principal to which the assignment is being granted to.|
 |roleDefinitionId|String|ID of the unifiedRoleDefinition the assignment is for. Read only.|
 |directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.|
-|appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.|
+|appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.|
 |isValidationOnly|Boolean|A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
 |targetScheduleId|String|ID of the schedule object attached to the assignment.|
 |justification|String|A message provided by users and administrators when create the request about why it is needed.|
@@ -66,6 +66,8 @@ If successful, this method returns a `201 Created` response code and an [unified
 
 ### Request
 
+In the following request, the admin creates a request to assign a role identified by `fdd7a751-b60b-444a-984c-02652fe8fa1c` to a principal identified by **id** `07706ff1-46c7-4847-ae33-3003830675a1`. The scope of their role is all directory objects in the tenant and the assignment is permanent, that is, it doesn't expire.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -75,23 +77,18 @@ If successful, this method returns a `201 Created` response code and an [unified
 ``` http
 POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/
 Content-Type: application/json
-Content-length: 510
 
 {
-  "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentScheduleRequest",
-  "action": "String",
-  "principalId": "String",
-  "roleDefinitionId": "String",
-  "directoryScopeId": "String",
-  "appScopeId": "String",
-  "isValidationOnly": "Boolean",
-  "targetScheduleId": "String",
-  "justification": "String",
+  "action": "AdminAssign",
+  "justification": "Assign User Admin to IT Helpdesk (User) group",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "principalId": "07706ff1-46c7-4847-ae33-3003830675a1",
   "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
-  },
-  "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
+    "startDateTime": "2021-07-01T00:00:00Z",
+    "expiration": {
+      "type": "1"
+    }
   }
 }
 ```
@@ -116,7 +113,7 @@ Content-length: 510
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -128,20 +125,41 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "c13ee236-e236-c13e-36e2-3ec136e23ec1",
-  "action": "String",
-  "principalId": "String",
-  "roleDefinitionId": "String",
-  "directoryScopeId": "String",
-  "appScopeId": "String",
-  "isValidationOnly": "Boolean",
-  "targetScheduleId": "String",
-  "justification": "String",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
+  "id": "b5a22921-656a-4429-9c4e-59a5f576614d",
+  "status": "Provisioned",
+  "createdDateTime": "2021-07-27T09:18:40.2029365Z",
+  "completedDateTime": "2021-07-27T09:18:42.7811184Z",
+  "approvalId": null,
+  "customData": null,
+  "action": "AdminAssign",
+  "principalId": "07706ff1-46c7-4847-ae33-3003830675a1",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "isValidationOnly": false,
+  "targetScheduleId": "b5a22921-656a-4429-9c4e-59a5f576614d",
+  "justification": "Assign User Admin to IT Helpdesk (User) group",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": null,
+      "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+    }
+  },
   "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
+    "startDateTime": "2021-07-27T09:18:42.7811184Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "noExpiration",
+      "endDateTime": null,
+      "duration": null
+    }
   },
   "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
+    "ticketNumber": null,
+    "ticketSystem": null
   }
 }
 ```
