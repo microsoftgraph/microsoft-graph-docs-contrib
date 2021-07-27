@@ -571,6 +571,32 @@
             "CreatedDateTime": "2021-06-18T21:06:50.952Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Identity governance"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "ce47bb3f-9aac-4d49-933c-e866d340af48",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "reviewers",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **contactedReviewers** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewInstance"
+                },
+                {
+                    "Id": "ce026801-edcc-4401-8b39-7ca2000b5b82",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "accessReviewReviewer",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewReviewer](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewreviewer?view=graph-rest-beta) resource type.",
+                    "Target": "accessReviewInstance"
+                }
+            ],
+            "Id": "6a795300-c566-4202-9859-47b8a5e92e5b",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-27T21:06:50.952Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Identity governance"
         }
     ]
 }
