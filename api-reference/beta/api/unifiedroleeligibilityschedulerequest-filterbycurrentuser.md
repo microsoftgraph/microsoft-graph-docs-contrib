@@ -87,42 +87,47 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
-    "id": "26bc6813-5457-4302-a482-afafd4e2962a",
-    "status": "Provisioned",
-    "createdDateTime": "2021-07-26T18:15:30.7671793Z",
-    "completedDateTime": "2021-07-26T18:15:33.1266138Z",
-    "approvalId": null,
-    "customData": null,
-    "action": "AdminAssign",
-    "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-    "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
-    "directoryScopeId": "/",
-    "appScopeId": null,
-    "isValidationOnly": false,
-    "targetScheduleId": "26bc6813-5457-4302-a482-afafd4e2962a",
-    "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
-    "createdBy": {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilityScheduleRequest)",
+  "value": [
+    {
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+      "id": "26bc6813-5457-4302-a482-afafd4e2962a",
+      "status": "Provisioned",
+      "createdDateTime": "2021-07-26T18:15:30.7671793Z",
+      "completedDateTime": "2021-07-26T18:15:33.1266138Z",
+      "approvalId": null,
+      "customData": null,
+      "action": "AdminAssign",
+      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "isValidationOnly": false,
+      "targetScheduleId": "26bc6813-5457-4302-a482-afafd4e2962a",
+      "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
+      "createdBy": {
         "application": null,
         "device": null,
         "user": {
-            "displayName": null,
-            "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+          "displayName": null,
+          "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
         }
-    },
-    "scheduleInfo": {
+      },
+      "scheduleInfo": {
         "startDateTime": "2021-07-26T18:15:33.1266138Z",
         "recurrence": null,
         "expiration": {
-            "type": "afterDateTime",
-            "endDateTime": "2022-06-30T00:00:00Z",
-            "duration": null
+          "type": "afterDateTime",
+          "endDateTime": "2022-06-30T00:00:00Z",
+          "duration": null
         }
-    },
-    "ticketInfo": {
+      },
+      "ticketInfo": {
         "ticketNumber": null,
         "ticketSystem": null
+      }
     }
+  ]
 }
 ```
 

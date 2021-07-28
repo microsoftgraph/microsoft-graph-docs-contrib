@@ -25,13 +25,13 @@ Namespace: microsoft.graph
 |createdDateTime|DateTimeOffset|**TODO: Add Description**|
 |customData|String|**TODO: Add Description**|
 |status|String|**TODO: Add Description**. Possible values are: `Provisioned`, `Failed`, and `Revoked`. Not nullable.|
-|id|String|**TODO: Add Description**. Not nullable.|
+|id|String|Identifier of the request. Required.|
 
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|approval|[approval](../resources/approval.md)|**TODO: Add Description**|
+|approval|[approval](../resources/approval.md)|Represents the decisions to approve or deny role assignments.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.request",
-  "baseType": "",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
