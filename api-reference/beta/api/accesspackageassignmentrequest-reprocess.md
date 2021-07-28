@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), callers can automatically retry an [accessPackageAssignment](../resources/accesspackageassignment.md) object of a user’s request for access to an access package.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), callers can automatically retry a user's request for access to an access package. It is performed on the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object. 
 
 ## Permissions
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a  `202 Accepted` response code and retries the request of the [accessPackageAssignment](../resources/accesspackageassignment.md) object. If the assignment doesn't exist, this method will return `404 Not Found` or if the **id** isn't valid, this method returns a `400 Bad request` response code.
+If successful, this method returns a  `202 Accepted` response code and retries the request. If the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object doesn't exist, this method will return `404 Not Found` or if the **id** isn't valid, this method returns a `400 Bad request` response code.
 
 ## Examples
 
