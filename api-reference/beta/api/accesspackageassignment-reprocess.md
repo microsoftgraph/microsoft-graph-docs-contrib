@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. If the assignment doesn't exist, that is, the **id** isn't valid, this method will return `400 Bad request` or a `400 Not found` response code.
+If successful, this method returns a `202 Accepted` response code and reevaluates and enforces the [accessPackageAssignment](../resources/accesspackageassignment.md) object. If the assignment doesn't exist, this method will return `404 Not Found` or if the **id** isn't valid, this method returns a `Bad request` response code.
 
 ## Examples
 
