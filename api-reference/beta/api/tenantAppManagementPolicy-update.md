@@ -19,7 +19,7 @@ Update the properties of a [tenantAppManagementPolicy](../resources/tenantAppMan
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions                                                |
+| Permission type                        | Permissions (from least to most privileged)                                                |
 | :------------------------------------- | :--------------------------------------------------------- |
 | Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported.                                             |
@@ -46,8 +46,8 @@ In the request body, supply the values for relevant fields from the [tenantAppMa
 
 | Property                | Type                                                                        | Description |
 |:------------------------|:----------------------------------------------------------------------------|:----------------------------------------------------|
-| displayName                  | String                                                                   | The display name of the default policy. Inherited from [policyBase](policybase.md).                                |
-| description                  | String                                                                   | The description of the default policy. Inherited from [policyBase](policybase.md).                                |
+| displayName                  | String                                                                   | The display name of the default policy. Inherited from [policyBase](../resources/policybase.md).                                |
+| description                  | String                                                                   | The description of the default policy. Inherited from [policyBase](../resources/policybase.md).                                |
 | isEnabled                    | Boolean                                                                  | Denotes if the policy is enabled. Default value is false.                                    |
 | applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all application objects in the tenant.               |
 | servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply as default to all service principal objects in the tenant. |
