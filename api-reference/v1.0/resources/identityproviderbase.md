@@ -25,8 +25,11 @@ Configuring an identity provider in your Azure AD B2C directory enables users to
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List](../api/identityproviderbase-list.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant.|
+|[Create](../api/identityproviderbase-post-identityproviders.md)|socialidentityprovider |Create a new social identity provider(Azure AD or Azure AD B2C).|
+|[Get](../api/identityproviderbase-get.md) |socialidentityprovider or builtInIdentityProvider|Retrieve properties of a social identity provider(Azure AD or Azure AD B2C) or a built in identity provider(Azure AD).|
+|[Update](../api/identityproviderbase-update.md)|None|Update a social identity provider(Azure AD or Azure AD B2C).|
+|[Delete](../api/identityproviderbase-delete.md)|None|Delete a social identity provider(Azure AD or Azure AD B2C).|
 |[List available provider types](../api/identityproviderbase-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
-|[Get](../api/identityproviderbase-list-availableprovidertypes.md)|String collection|Get the properties and relationships of the specified identity provider in a tenant.|
 
 ## Properties
 

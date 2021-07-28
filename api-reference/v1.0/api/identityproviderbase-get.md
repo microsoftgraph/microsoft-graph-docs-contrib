@@ -10,9 +10,9 @@ ms.prod: "identity-and-sign-in"
 # Get identityProvider
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in Azure AD.
+Retrieve the properties and relationships of an identity provider resource that is of the type specified in the request body.
 
-For Azure AD B2C, it can retrieve properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md).
+Among the types of providers derived from identityProviderBase, you can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md) resource.
 
 ## Permissions
 

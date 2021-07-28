@@ -10,9 +10,9 @@ ms.prod: "identity-and-sign-in"
 # Create identityProvider
 Namespace: microsoft.graph
 
-Create a new [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
+Create an identity provider resource that is of the type specified in the request body.
 
-In Azure AD B2C create a new [socialIdentityProvider](../resources/socialidentityprovider.md) object.
+Among the types of providers derived from identityProviderBase, you can currently create a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently create a [socialIdentityProvider](../resources/socialidentityprovider.md) resource.
 
 ## Permissions
 
