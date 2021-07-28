@@ -51,7 +51,7 @@ For best performance, don't include existing values that haven't changed.
 | displayName  | String                                                      | The display name of the policy. Inherited from [policyBase](../resources/policybase.md).                                        |
 | description  | String                                                      | The description of the policy. Inherited from [policyBase](../resources/policybase.md).                                         |
 | isEnabled    | Boolean                                                     | Denotes whether the policy is enabled.                                      |
-| restrictions | [appManagementConfiguration](appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. |
+| restrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Restrictions that apply to an application or service principal object. |
 
 ## Response
 
