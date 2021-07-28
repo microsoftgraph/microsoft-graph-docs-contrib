@@ -37,7 +37,7 @@ Inherits from [request](request.md).
 |approvalId|String|**TODO: Add Description**. Inherited from [request](request.md).|
 |appScopeId|String|Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units.|
 |completedDateTime|DateTimeOffset|**TODO: Add Description**. Inherited from [request](request.md).|
-|createdBy|[identitySet](identityset.md)]|**TODO: Add Description**. Inherited from [request](request.md).|
+|createdBy|[identitySet](identityset.md)|**TODO: Add Description**. Inherited from [request](request.md).|
 |createdDateTime|DateTimeOffset|**TODO: Add Description**. Inherited from [request](request.md).|
 |customData|String|**TODO: Add Description**. Inherited from [request](request.md).|
 |directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only.|
