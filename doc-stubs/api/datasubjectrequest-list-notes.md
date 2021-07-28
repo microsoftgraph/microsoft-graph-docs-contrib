@@ -1,9 +1,9 @@
 ---
 title: "List notes"
 description: "Get the authoredNote resources from the notes navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "Privacy Management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DataSubject.Read.All, DataSubject.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -74,18 +74,45 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.privacyManagement.authoredNote",
-      "author": {
-        "@odata.type": "microsoft.graph.identity"
-      },
-      "content": {
-        "@odata.type": "microsoft.graph.itemBody"
-      },
-      "createdDateTime": "String (timestamp)"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/dataSubjectRequests('77f885ac-1d7b-4317-bde8-4cb3d24a3ed8')/notes",
+    "value": [
+        {
+            "id": "d5f1cac8-ffcd-48c2-9621-c457bb5324c5",
+            "createdDateTime": "2021-03-09T23:29:01.059507Z",
+            "author": {
+                "id": null,
+                "displayName": "admin@contoso.onmicrosoft.com"
+            },
+            "content": {
+                "content": "Request created by API.",
+                "contentType": "text"
+            }
+        },
+        {
+            "id": "d2fa5c11-a61f-4f70-b627-cba889a0cfdf",
+            "createdDateTime": "2021-03-10T19:03:26.0417217Z",
+            "author": {
+                "id": null,
+                "displayName": "admin@contoso.onmicrosoft.com"
+            },
+            "content": {
+                "content": "final review",
+                "contentType": "text"
+            }
+        },
+        {
+            "id": "8673da75-fed4-4ca6-8eb2-ae9cbb583fa5",
+            "createdDateTime": "2021-04-22T05:51:15.3890269Z",
+            "author": {
+                "id": null,
+                "displayName": "admin@contoso.onmicrosoft.com"
+            },
+            "content": {
+                "content": "Adding note from API.",
+                "contentType": "text"
+            }
+        }
+    ]
 }
 ```
 

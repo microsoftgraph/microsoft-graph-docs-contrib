@@ -1,9 +1,9 @@
 ---
 title: "dataSubjectRequestStageDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents the properties of the stages for the data subject request"
+author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "Privacy Management"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the properties of the stages for the data subject request. 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|error|[publicError](../resources/publicerror.md)|**TODO: Add Description**|
-|stage|dataSubjectRequestStage|**TODO: Add Description**. Possible values are: `contentRetrieval`, `contentReview`, `generateReport`, `contentDeletion`, `caseResolved`, `unknownFutureValue`.|
-|status|dataSubjectRequestStageStatus|**TODO: Add Description**. Possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
+|error|[publicError](../resources/publicerror.md)|Describes the error if any for the current stage|
+|stage|dataSubjectRequestStage|The stage of the data subject request. Possible values are: `contentRetrieval`, `contentReview`, `generateReport`, `contentDeletion`, `caseResolved`, `unknownFutureValue`.|
+|status|dataSubjectRequestStageStatus|Status of the current stage. Possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -38,8 +38,8 @@ The following is a JSON representation of the resource.
   "error": {
     "@odata.type": "microsoft.graph.publicError"
   },
-  "stage": "String",
-  "status": "String"
+  "stage": "contentReview",
+  "status": "completed"
 }
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "dataSubjectRequest: getFinalReport"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Get the final report for the request. The report is a text file that contains information about the files that where included by the privacy administrator."
+author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "Privacy Management"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Get the final report for the request. The report is a text file that contains information about the files that where included by the privacy administrator.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DataSubject.Read.All, DataSubject.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -68,10 +68,9 @@ GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests/{dataSubject
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-Type: application/octet-stream
 
-{
-  "value": "Stream"
-}
+Id, Workload, Size, ImmutableId, FileName, FilePath, ItemUrl
+someId, Exchange, 200, Id, somefile.txt, filePath, Url
 ```
 

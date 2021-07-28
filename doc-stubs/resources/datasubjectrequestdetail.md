@@ -1,9 +1,9 @@
 ---
 title: "dataSubjectRequestDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents properties about the details about the data subject request like number of items found, number of items reviewed etc."
+author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "Privacy Management"
 doc_type: resourcePageType
 ---
 
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents properties about the details about the data subject request like number of items found, number of items reviewed etc.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|excludedItemCount|Int64|**TODO: Add Description**|
-|insightCounts|[keyValuePair](../resources/keyvaluepair.md) collection|**TODO: Add Description**|
-|itemCount|Int64|**TODO: Add Description**|
-|itemNeedReview|Int64|**TODO: Add Description**|
-|productItemCounts|[keyValuePair](../resources/keyvaluepair.md) collection|**TODO: Add Description**|
-|signedOffItemCount|Int64|**TODO: Add Description**|
-|totalItemSize|Int64|**TODO: Add Description**|
+|excludedItemCount|Int64|Count of items that are excluded from the request.|
+|insightCounts|[keyValuePair](../resources/keyvaluepair.md) collection|Count of items per insight|
+|itemCount|Int64|Count of items found|
+|itemNeedReview|Int64|Count of item that need review|
+|productItemCounts|[keyValuePair](../resources/keyvaluepair.md) collection|Count of item per Product like Exchange, SharePoint, OneDrive and Teams|
+|signedOffItemCount|Int64|Count of items signed off by the administrator|
+|totalItemSize|Int64|Total item size in bytes|
 
 ## Relationships
 None.
@@ -39,21 +39,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.dataSubjectRequestDetail",
-  "excludedItemCount": "Integer",
-  "insightCounts": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ],
-  "itemCount": "Integer",
-  "itemNeedReview": "Integer",
-  "productItemCounts": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ],
-  "signedOffItemCount": "Integer",
-  "totalItemSize": "Integer"
+      "itemCount": 1,
+      "totalItemSize": 13670,
+      "itemNeedReview": 1,
+      "signedOffItemCount": 0,
+      "excludedItemCount": 0,
+      "productItemCounts": [],
+      "insightCounts": []
 }
 ```
 

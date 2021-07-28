@@ -1,9 +1,9 @@
 ---
 title: "Create authoredNote"
 description: "Create a new authoredNote object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "Privacy Management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DataSubject.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -46,10 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|author|[microsoft.privacyManagement.identity](../resources/identity.md)|**TODO: Add Description**|
-|content|[microsoft.privacyManagement.itemBody](../resources/itembody.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-
+|content|[microsoft.privacyManagement.itemBody](../resources/itembody.md)|The note content for the request|
 
 
 ## Response
@@ -70,12 +67,10 @@ Content-Type: application/json
 Content-length: 203
 
 {
-  "@odata.type": "#microsoft.privacyManagement.authoredNote",
-  "author": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "content": {
-    "@odata.type": "microsoft.graph.itemBody"
+"content": 
+  {
+    "content": "Adding note from API.",
+    "contentType": "text"
   }
 }
 ```
@@ -94,14 +89,17 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.privacyManagement.authoredNote",
-  "author": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "content": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "createdDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/dataSubjectRequests('77f885ac-1d7b-4317-bde8-4cb3d24a3ed8')/notes/$entity",
+    "id": "17f7fc36-74d8-402a-8ac1-90e4bc688310",
+    "createdDateTime": "2021-07-28T21:38:20.5151187Z",
+    "author": {
+        "id": null,
+        "displayName": "admin@contoso.onmicrosoft.com"
+    },
+    "content": {
+        "content": "Adding note from API.",
+        "contentType": "text"
+    }
 }
 ```
 

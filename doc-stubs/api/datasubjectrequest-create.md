@@ -1,9 +1,9 @@
 ---
 title: "Create dataSubjectRequest"
 description: "Create a new dataSubjectRequest object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "Privacy Management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DataSubject.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -46,24 +46,13 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|[microsoft.privacyManagement.identity](../resources/identity.md)|**TODO: Add Description**|
-|closedDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdBy|[microsoft.privacyManagement.identitySet](../resources/identityset.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|dataSubject|[microsoft.privacyManagement.dataSubject](../resources/datasubject.md)|**TODO: Add Description**|
-|dataSubjectType|dataSubjectType|**TODO: Add Description**. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|history|[microsoft.privacyManagement.dataSubjectRequestHistory](../resources/datasubjectrequesthistory.md) collection|**TODO: Add Description**|
-|insight|[microsoft.privacyManagement.dataSubjectRequestDetail](../resources/datasubjectrequestdetail.md)|**TODO: Add Description**|
-|internalDueDateTime|DateTimeOffset|**TODO: Add Description**|
-|lastModifiedBy|[microsoft.privacyManagement.identitySet](../resources/identityset.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|regulations|String collection|**TODO: Add Description**|
-|stages|[microsoft.privacyManagement.dataSubjectRequestStageDetail](../resources/datasubjectrequeststagedetail.md) collection|**TODO: Add Description**|
-|status|dataSubjectRequestStatus|**TODO: Add Description**. Possible values are: `active`, `closed`, `unknownFutureValue`.|
-|type|dataSubjectRequestType|**TODO: Add Description**. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
-
+|dataSubject|[microsoft.privacyManagement.dataSubject](../resources/datasubject.md)|contains the properties for data subject for the request.|
+|dataSubjectType|dataSubjectType|Data subject type. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
+|description|String|Description for the request.|
+|displayName|String|Name of the request.|
+|internalDueDateTime|DateTimeOffset|Internal due date that is used for tracking the request completion.|
+|regulations|String collection|One or more regulations for the request.|
+|type|dataSubjectRequestType|Type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
 
 
 ## Response
@@ -84,39 +73,20 @@ Content-Type: application/json
 Content-length: 849
 
 {
-  "@odata.type": "#microsoft.privacyManagement.dataSubjectRequest",
-  "assignedTo": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "closedDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "dataSubject": {
-    "@odata.type": "microsoft.graph.dataSubject"
-  },
-  "dataSubjectType": "String",
-  "description": "String",
-  "displayName": "String",
-  "history": [
-    {
-      "@odata.type": "microsoft.graph.dataSubjectRequestHistory"
+    "type": "export",
+    "dataSubjectType": "customer",
+    "regulations": ["CCPA"],
+    "displayName": "Export Case created from Graph API for Aik Chen",
+    "description": "This is a new case created from graph API",
+    "internalDueDateTime": "2021-08-30T00:00:00Z",
+    "dataSubject": {
+        "firstName": "aik",
+        "lastName": "chen",
+        "email": "aik.chen@live.com",
+        "residency": "US",
+        "phoneNumber": "16165550112",
+        "SSN": "123456785"
     }
-  ],
-  "insight": {
-    "@odata.type": "microsoft.graph.dataSubjectRequestDetail"
-  },
-  "internalDueDateTime": "String (timestamp)",
-  "regulations": [
-    "String"
-  ],
-  "stages": [
-    {
-      "@odata.type": "microsoft.graph.dataSubjectRequestStageDetail"
-    }
-  ],
-  "status": "String",
-  "type": "String"
 }
 ```
 
@@ -134,44 +104,80 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.privacyManagement.dataSubjectRequest",
-  "assignedTo": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "closedDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "dataSubject": {
-    "@odata.type": "microsoft.graph.dataSubject"
-  },
-  "dataSubjectType": "String",
-  "description": "String",
-  "displayName": "String",
-  "history": [
-    {
-      "@odata.type": "microsoft.graph.dataSubjectRequestHistory"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/dataSubjectRequests/$entity",
+    "type": "export",
+    "dataSubjectType": "customer",
+    "regulations": [
+        "CCPA"
+    ],
+    "displayName": "Export Case created from Graph API for Aik Chen",
+    "description": "This is a new case created from graph API",
+    "status": "active",
+    "internalDueDateTime": "2021-08-30T00:00:00Z",
+    "closedDateTime": null,
+    "lastModifiedDateTime": "2021-07-28T21:24:10.5588319Z",
+    "id": "14679787-ae79-4218-81f0-3db3ab429fae",
+    "createdDateTime": "2021-07-28T21:24:10.5588319Z",
+    "assignedTo": {
+        "id": "",
+        "displayName": "admin@contoso.onmicrosoft.com"
+    },
+    "history": [],
+    "stages": [
+        {
+            "stage": "contentRetrieval",
+            "status": "notStarted",
+            "error": null
+        },
+        {
+            "stage": "contentReview",
+            "status": "notStarted",
+            "error": null
+        },
+        {
+            "stage": "generateReport",
+            "status": "notStarted",
+            "error": null
+        },
+        {
+            "stage": "caseResolved",
+            "status": "notStarted",
+            "error": null
+        }
+    ],
+    "insight": {
+        "itemCount": 0,
+        "totalItemSize": 0,
+        "itemNeedReview": 0,
+        "signedOffItemCount": 0,
+        "excludedItemCount": 0,
+        "productItemCounts": [],
+        "insightCounts": []
+    },
+    "createdBy": {
+        "user": {
+            "id": "",
+            "displayName": "admin@contoso.onmicrosoft.com"
+        }
+    },
+    "lastModifiedBy": {
+        "user": {
+            "id": "",
+            "displayName": "admin@contoso.onmicrosoft.com"
+        }
+    },
+    "dataSubject": {
+        "firstName": "aik",
+        "lastName": "chen",
+        "email": "aik.chen@live.com",
+        "residency": "US",
+        "phoneNumber": "16165550112",
+        "SSN": "123456785"
+    },
+    "team": {
+        "id": "",
+        "webUrl": null
     }
-  ],
-  "insight": {
-    "@odata.type": "microsoft.graph.dataSubjectRequestDetail"
-  },
-  "internalDueDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "regulations": [
-    "String"
-  ],
-  "stages": [
-    {
-      "@odata.type": "microsoft.graph.dataSubjectRequestStageDetail"
-    }
-  ],
-  "status": "String",
-  "type": "String"
 }
 ```
 

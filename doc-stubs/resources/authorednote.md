@@ -1,9 +1,9 @@
 ---
 title: "authoredNote resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents the properties of the note written by an author"
+author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "Privacy Management"
 doc_type: resourcePageType
 ---
 
@@ -13,26 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the properties of the note written by an author
 
 Inherits from [entity](../resources/entity.md).
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List authoredNotes](../api/authorednote-list.md)|[authoredNote](../resources/authorednote.md) collection|Get a list of the [authoredNote](../resources/authorednote.md) objects and their properties.|
-|[Create authoredNote](../api/authorednote-create.md)|[authoredNote](../resources/authorednote.md)|Create a new [authoredNote](../resources/authorednote.md) object.|
-|[Get authoredNote](../api/authorednote-get.md)|[authoredNote](../resources/authorednote.md)|Read the properties and relationships of an [authoredNote](../resources/authorednote.md) object.|
-|[Update authoredNote](../api/authorednote-update.md)|[authoredNote](../resources/authorednote.md)|Update the properties of an [authoredNote](../resources/authorednote.md) object.|
-|[Delete authoredNote](../api/authorednote-delete.md)|None|Deletes an [authoredNote](../resources/authorednote.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|author|[identity](../resources/identity.md)|**TODO: Add Description**|
-|content|[itemBody](../resources/itembody.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+|author|[identity](../resources/identity.md)|Identity information about the note's author|
+|content|[itemBody](../resources/itembody.md)|The content of the note|
+|createdDateTime|DateTimeOffset|The date and time when the entity was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
 ## Relationships
 None.
@@ -54,7 +44,9 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.identity"
   },
   "content": {
-    "@odata.type": "microsoft.graph.itemBody"
+    "@odata.type": "microsoft.graph.itemBody",
+    "content": "This is a note",
+    "contentType": "text"
   },
   "createdDateTime": "String (timestamp)"
 }

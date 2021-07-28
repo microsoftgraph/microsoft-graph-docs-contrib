@@ -1,9 +1,9 @@
 ---
 title: "dataSubjectRequestHistory resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents the history for the data subject request."
+author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "Privacy Management"
 doc_type: resourcePageType
 ---
 
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the history for the data subject request.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|changedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
-|eventDateTime|DateTimeOffset|**TODO: Add Description**|
-|stage|dataSubjectRequestStage|**TODO: Add Description**. Possible values are: `contentRetrieval`, `contentReview`, `generateReport`, `contentDeletion`, `caseResolved`, `unknownFutureValue`.|
-|stageStatus|dataSubjectRequestStageStatus|**TODO: Add Description**. Possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
-|type|String|**TODO: Add Description**|
+|changedBy|[identitySet](../resources/identityset.md)|Identify of the user that changed the data subject request|
+|eventDateTime|DateTimeOffset|Data and time when the entity was changed.|
+|stage|dataSubjectRequestStage|The stage when the entity was changed. Possible values are: `contentRetrieval`, `contentReview`, `generateReport`, `contentDeletion`, `caseResolved`, `unknownFutureValue`.|
+|stageStatus|dataSubjectRequestStageStatus|The status of the stage when the entity was changed. Possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
+|type|String|Type of history|
 
 ## Relationships
 None.
@@ -37,13 +37,16 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.dataSubjectRequestHistory",
-  "changedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "eventDateTime": "String (timestamp)",
-  "stage": "String",
-  "stageStatus": "String",
-  "type": "String"
+    "type": "CaseCreated",
+    "stage": "contentRetrieval",
+    "stageStatus": "notStarted",
+    "eventDateTime": "2021-06-21T12:03:40.1644015Z",
+    "changedBy": {
+        "user": {
+            "id": "",
+            "displayName": "user@contoso.onmicrosoft.com"
+        }
+    }
 }
 ```
 

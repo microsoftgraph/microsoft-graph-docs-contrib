@@ -1,9 +1,9 @@
 ---
 title: "Get dataSubjectRequest"
 description: "Read the properties and relationships of a dataSubjectRequest object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "Privacy Management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DataSubject.Read.All, DataSubject.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -73,47 +73,76 @@ GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests/{dataSubject
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-  "value": {
-    "@odata.type": "#microsoft.privacyManagement.dataSubjectRequest",
-    "assignedTo": {
-      "@odata.type": "microsoft.graph.identity"
-    },
-    "closedDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "dataSubject": {
-      "@odata.type": "microsoft.graph.dataSubject"
-    },
-    "dataSubjectType": "String",
-    "description": "String",
-    "displayName": "String",
-    "history": [
-      {
-        "@odata.type": "microsoft.graph.dataSubjectRequestHistory"
-      }
-    ],
-    "insight": {
-      "@odata.type": "microsoft.graph.dataSubjectRequestDetail"
-    },
-    "internalDueDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "regulations": [
-      "String"
-    ],
-    "stages": [
-      {
-        "@odata.type": "microsoft.graph.dataSubjectRequestStageDetail"
-      }
-    ],
-    "status": "String",
-    "type": "String"
-  }
-}
+    {
+        "type": "export",
+        "dataSubjectType": "other",
+        "regulations": ["CCPA"],
+        "displayName": "latest case Aik Chen created from API",
+        "description": "Description for the case",
+        "status": "active",
+        "internalDueDateTime": "2021-05-17T00:00:00Z",
+        "lastModifiedDateTime": "2021-03-17T21:55:18.8132884Z",
+        "id": "7bfe36b4-2395-44df-b702-7f22cffc1e0e",
+        "createdDateTime": "2021-03-17T21:33:52.6289558Z",
+        "assignedTo": {
+            "id": "",
+            "displayName": "admin@contoso.onmicrosoft.com"
+        },
+        "history": [],
+        "stages": [
+            {
+                "stage": "contentRetrieval",
+                "status": "completed",
+                "error": null
+            },
+            {
+                "stage": "contentReview",
+                "status": "current",
+                "error": null
+            },
+            {
+                "stage": "generateReport",
+                "status": "notStarted",
+                "error": null
+            },
+            {
+                "stage": "caseResolved",
+                "status": "notStarted",
+                "error": null
+            }
+        ],
+        "insight": {
+            "itemCount": 1202,
+            "totalItemSize": 93815683,
+            "itemNeedReview": 1202,
+            "signedOffItemCount": 0,
+            "excludedItemCount": 0,
+            "productItemCounts": [],
+            "insightCounts": []
+        },
+        "createdBy": {
+            "user": {
+                "id": "",
+                "displayName": "admin@contoso.onmicrosoft.com"
+            }
+        },
+        "lastModifiedBy": {
+            "user": {
+                "id": "",
+                "displayName": "admin@contoso.onmicrosoft.com"
+            }
+        },
+        "dataSubject": {
+            "firstName": "aik",
+            "lastName": "chen",
+            "email": "aik.chen@live.com",
+            "residency": "USA",
+            "phoneNumber": "14257001234"
+        },
+        "team": {
+            "id": "57e55a65-34a2-41e2-88ec-fddf3a8aca17",
+            "webUrl": "https://teams.microsoft.com/l/team/teamsUrl"
+        }
+    }
 ```
 
