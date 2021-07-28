@@ -1,5 +1,5 @@
 ---
-title: "List appManagementPolicy appliesTo"
+title: "List appliesTo"
 description: "List resources assigned to an application management policy."
 localization_priority: Normal
 author: "madansr7"
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# List appManagementPolicy appliesTo
+# List appliesTo
 
 Namespace: microsoft.graph
 

@@ -10913,7 +10913,7 @@ items:
               href: api/tenantAppManagementPolicy-get.md
             - name: Update
               href: api/tenantAppManagementPolicy-update.md
-          - name: Application or service principal management policy
+          - name: App management policy
             items:
             - name: Overview
               href: resources/appManagementPolicy.md
