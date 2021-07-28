@@ -8,6 +8,8 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 AccessPackageAssignmentRequestCollectionPage accessPackageAssignmentRequests = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests()
 	.buildRequest()
+	.filter("(requestState eq 'PendingApproval')")
+	.expand("requestor($expand=connectedOrganization)")
 	.get();
 
 ```
