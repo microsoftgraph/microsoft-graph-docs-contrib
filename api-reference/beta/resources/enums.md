@@ -11,7 +11,8 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### appCredentialRestrictionType
+### appCredentialRestrictionType values
+
 |Member|
 |:-----|
 |passwordAddition|
