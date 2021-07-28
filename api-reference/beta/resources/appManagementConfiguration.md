@@ -38,10 +38,10 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.appManagementConfiguration",
-  "passwordCredentials": {
-    [
-       "@odata.type": "microsoft.graph.passwordCredentialConfiguration"
-    ]
-  }
+  "passwordCredentials": [
+    {
+      "@odata.type": "microsoft.graph.passwordCredentialConfiguration"
+    }
+   ]
 }
 ```
