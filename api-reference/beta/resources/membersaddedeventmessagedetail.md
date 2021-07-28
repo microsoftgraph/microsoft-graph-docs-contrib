@@ -24,6 +24,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of members added.|
+|visibleHistoryStartDateTime|DateTimeOffset|The timestamp denoting how far back a conversation's history is shared with the conversation member.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -43,7 +44,8 @@ The following is a JSON representation of the resource.
   ],
   "initiator": {
     "@odata.type": "microsoft.graph.identitySet"
-  }
+  },
+  "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
 
