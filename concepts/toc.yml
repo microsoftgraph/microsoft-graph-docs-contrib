@@ -243,6 +243,8 @@ items:
             href: education-concept-overview.md
           - name: Rubrics
             href: education-rubric-overview.md
+          - name: Upload files
+            href: education-upload-resource-overview.md
       - name: Files
         href: onedrive-concept-overview.md
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint

@@ -73,10 +73,10 @@ Properties of directory objects behave differently in their support for query pa
   + All properties that support the `eq` operator also support the `ne` or `NOT` operators.
   + The `ne` operator negates where the `eq` operator would otherwise evaluate to `true`. For queries that use the `any` lambda operator, use the `NOT` operator. See [Filter using lambda operators](/graph/query-parameters#filter-using-lambda-operators).
 
-The following table summarizes support for `$filter` operators by properties on the [users](/graph/api/resources/user) directory object.
+The following table summarizes support for `$filter` operators by properties of all directory objects.
 
 - ![Works by default. Does not require advanced query parameters.](/graph/images/advanced-query-parameters/default.png) The property supports `$filter` with the operator by default.
-- ![Requires advanced query parameters.](/graph/images/advanced-query-parameters/advanced.png) The specific `$filter` operator requires *advanced query parameters*:
+- ![Requires advanced query parameters.](/graph/images/advanced-query-parameters/advanced.png) The specific `$filter` operator requires *advanced query parameters*, that is:
   - `ConsistencyLevel=eventual` header
   - `$count=true` query string
 - Blank cells indicate that the property does not support the use of `$filter` with the operator.
