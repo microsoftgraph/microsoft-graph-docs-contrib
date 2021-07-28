@@ -23,7 +23,7 @@ Inherits from [entity](entity.md).
 |:---|:---|:---|
 |approvalId|String|**TODO: Add Description**|
 |completedDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdBy|[identitySet](identityset.md)]|**TODO: Add Description**|
+|createdBy|[identitySet](identityset.md)|**TODO: Add Description**|
 |createdDateTime|DateTimeOffset|**TODO: Add Description**|
 |customData|String|**TODO: Add Description**|
 |status|String|**TODO: Add Description**. Possible values are: `Granted`, `Provisioned`, `Failed`, `Revoked`, and `Canceled` status. Not nullable.|
