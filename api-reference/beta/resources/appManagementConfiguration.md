@@ -19,7 +19,7 @@ App management configuration object that contains properties which can be config
 
 | Property            | Type                                                                  | Description                                                                                       |
 | :------------------ | :-------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
-| passwordCredentials | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) | Collection of password restrictions settings to be applied to an application or service principal |
+| passwordCredentials | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal |
 
 ## Relationships
 
@@ -38,8 +38,10 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.appManagementConfiguration",
-  "passwordCredentials": {
-    "@odata.type": "microsoft.graph.passwordCredentialConfiguration"
-  }
+  "passwordCredentials": [
+    {
+      "@odata.type": "microsoft.graph.passwordCredentialConfiguration"
+    }
+   ]
 }
 ```
