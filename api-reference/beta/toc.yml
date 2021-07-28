@@ -10901,6 +10901,36 @@ items:
               href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
+        - name: Application authentication method policy (preview)
+          items:
+          - name: Overview
+            href: resources/applicationAuthMethodPolicy.md
+          - name: Tenant app management policy
+            items:
+            - name: Overview
+              href: resources/tenantAppManagementPolicy.md
+            - name: Get
+              href: api/tenantAppManagementPolicy-get.md
+            - name: Update
+              href: api/tenantAppManagementPolicy-update.md
+          - name: App management policy
+            items:
+            - name: Overview
+              href: resources/appManagementPolicy.md
+            - name: List
+              href: api/appManagementPolicy-list.md
+            - name: Get
+              href: api/appManagementPolicy-get.md
+            - name: Create
+              href: api/appManagementPolicy-post.md 
+            - name: Update
+              href: api/appManagementPolicy-update.md
+            - name: Delete
+              href: api/appManagementPolicy-delete.md
+            - name: Create appliesTo
+              href: api/appManagementPolicy-post-appliesTo.md
+            - name: List appliesTo
+              href: api/appManagementPolicy-list-appliesTo.md
         - name: Authentication events policy
           items:
           - name: Authentication events policy
