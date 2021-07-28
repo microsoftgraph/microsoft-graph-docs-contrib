@@ -53,9 +53,10 @@ If successful, this method returns a `201 Created` response code with the new [a
 ### Request
 
 The following is an example of the request. This request created an app management policy with the following settings:
+
 - Enables the policy.
 - Blocks creating of new passwords for apps and service principals after 2019-10-19 at 10:37 AM UTC time.
-- Limits password secrets for apps and service principals created after 2019-10-19 at 10:37 AM UTC time to less than XX days. 
+- Limits password secrets for apps and service principals created after 2019-10-19 at 10:37 AM UTC time to less than XX days.
 
 <!-- {
   "blockType": "request",

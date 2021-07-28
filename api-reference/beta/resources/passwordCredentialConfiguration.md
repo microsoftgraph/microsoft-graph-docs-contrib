@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
   "restrictionType": {
     "@odata.type": "microsoft.graph.appCredentialRestrictionType"
   },
-  "maxLifetime": "Duration",
+  "maxLifetime": "String (duration)",
   "restrictForAppsCreatedAfterDateTime": "DateTimeOffset"
 }
 ```
