@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 **TODO: Add Description**
 
+Inherits from [entity](entity.md).
+
 
 ## Properties
 |Property|Type|Description|
@@ -24,9 +26,17 @@ Namespace: microsoft.graph
 |createdBy|[identitySet](identityset.md)]|**TODO: Add Description**|
 |createdDateTime|DateTimeOffset|**TODO: Add Description**|
 |customData|String|**TODO: Add Description**|
-|status|String|**TODO: Add Description**. Possible values are: `Provisioned`, `Failed`, and `Revoked`. Not nullable.|
-|id|String|Identifier of the request. Required.|
+|status|String|**TODO: Add Description**. Possible values are: `Granted`, `Provisioned`, `Failed`, `Revoked`, and `Canceled` status. Not nullable.|
+|id|String|Identifier of the request. Read-only. Not nullable. Inherited from [entity](entity.md).|
 
+### status values
+| Member      | Description |
+|:------------|:------------|
+| Granted     |             |
+| Provisioned |             |
+| Failed      |             |
+| Revoked     |             |
+| Canceled    |             |
 
 ## Relationships
 |Relationship|Type|Description|
