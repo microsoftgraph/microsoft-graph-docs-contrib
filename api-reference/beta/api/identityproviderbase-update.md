@@ -79,9 +79,9 @@ In Azure AD B2C, provide a JSON object with one or more properties that need to 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |displayName|String|The display name of the identity provider.|
-|developerId|String|The Apple Developer identifier.|
-|serviceId|String|The Apple Developer identifier.|
-|keyId|String|The Apple Key identifier.|
+|developerId|String|The Apple developer identifier.|
+|serviceId|String|The Apple service identifier.|
+|keyId|String|The Apple key identifier.|
 |certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
 
 ## Response
