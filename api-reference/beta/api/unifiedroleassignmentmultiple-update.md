@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider. 
 
 The following RBAC providers are currently supported:
-- cloud PC 
+- Cloud PC 
 - device management (Intune)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
@@ -25,16 +25,28 @@ In contrast, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
 
-|Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Cloud PC | CloudPC.ReadWrite.All | Not supported. | CloudPC.ReadWrite.All |
-| Intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
+### For Cloud PC provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  CloudPC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | CloudPC.ReadWrite.All  |
+
+### For Device management (Intune) provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  DeviceManagementRBAC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | DeviceManagementRBAC.ReadWrite.All |
+
 
 ## HTTP request
 
-To update an existing unfiedRoleAssignmentMultiple for a cloud PC provider:
+To update an existing unfiedRoleAssignmentMultiple for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -118,7 +130,7 @@ HTTP/1.1 204 OK
 
 ```
 
-## Example 2: update an existing unfiedRoleAssignmentMultiple in a cloud PC provider
+## Example 2: update an existing unfiedRoleAssignmentMultiple in a Cloud PC provider
 
 ### Request
 

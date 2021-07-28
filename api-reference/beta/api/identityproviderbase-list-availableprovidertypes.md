@@ -55,7 +55,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 
 ### Example 1: List all **identityProvider** available in an Azure AD directory
 
-### Request
+#### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -87,13 +87,11 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 ---
 
 
----
-
-### Response
+#### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -119,7 +117,7 @@ Content-Type: application/json
 
 ### Example 2: List all **identityProvider** available in an Azure AD B2C directory
 
-### Request
+#### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -151,13 +149,11 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 ---
 
 
----
-
-### Response
+#### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
