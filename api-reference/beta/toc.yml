@@ -13933,6 +13933,8 @@ items:
           href: api/teamworktag-delete.md
         - name: List members
           href: api/teamworktagmember-list.md
+        - name: Create member
+          href: api/teamworktagmember-post.md
         - name: Get member
           href: api/teamworktagmember-get.md
         - name: Delete member
