@@ -20,7 +20,7 @@ This type will inherit from [identityProviderBase](../resources/identityprovider
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant including the Apple identity providers.|
+|[List](../api/identityproviderbase-list.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant including the Apple identity providers. There is no way to retrieve only the Apple identity providers in a tenant.|
 |[Create](../api/identityproviderbase-post-identityproviders.md)|appleManagedIdentityProvider |Create a new Apple identity provider configuration.|
 |[Get](../api/identityproviderbase-get.md) |appleManagedIdentityProvider |Retrieve properties of the Apple identity provider configuration.|
 |[Update](../api/identityproviderbase-update.md)|None|Update the Apple identity provider configuration.|
