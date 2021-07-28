@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), callers can automatically retry a user’s request for access to an access package.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), callers can automatically retry an [accessPackageAssignment](../resources/accesspackageassignment.md) object of a user’s request for access to an access package.
 
 ## Permissions
 
