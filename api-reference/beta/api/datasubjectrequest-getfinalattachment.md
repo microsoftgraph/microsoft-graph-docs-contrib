@@ -3,7 +3,7 @@ title: "dataSubjectRequest: getFinalAttachment"
 description: "Get the final attachment for the request. The attachment is a zip file that contains all the files that where included by the privacy administrator."
 author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "Privacy Management"
+ms.prod: "compliance"
 doc_type: apiPageType
 ---
 

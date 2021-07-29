@@ -3,7 +3,7 @@ title: "dataSubjectRequestStageDetail resource type"
 description: "Represents the properties of the stages for the data subject request"
 author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "Privacy Management"
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 

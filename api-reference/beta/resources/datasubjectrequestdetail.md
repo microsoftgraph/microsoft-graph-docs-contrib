@@ -3,7 +3,7 @@ title: "dataSubjectRequestDetail resource type"
 description: "Represents properties about the details about the data subject request like number of items found, number of items reviewed etc."
 author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "Privacy Management"
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "List notes"
 description: "Get the authoredNote resources from the notes navigation property."
 author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "Privacy Management"
+ms.prod: "compliance"
 doc_type: apiPageType
 ---
 

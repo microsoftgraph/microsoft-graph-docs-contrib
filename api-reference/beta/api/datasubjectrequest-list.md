@@ -3,7 +3,7 @@ title: "List dataSubjectRequests"
 description: "Get a list of the dataSubjectRequest objects and their properties."
 author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "Privacy Management"
+ms.prod: "compliance"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "dataSubjectRequest: getFinalReport"
 description: "Get the final report for the request. The report is a text file that contains information about the files that where included by the privacy administrator."
 author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "Privacy Management"
+ms.prod: "compliance"
 doc_type: apiPageType
 ---
 

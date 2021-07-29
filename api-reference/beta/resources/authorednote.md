@@ -3,7 +3,7 @@ title: "authoredNote resource type"
 description: "Represents the properties of the note written by an author"
 author: "skadam-msft"
 localization_priority: Normal
-ms.prod: "Privacy Management"
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 
