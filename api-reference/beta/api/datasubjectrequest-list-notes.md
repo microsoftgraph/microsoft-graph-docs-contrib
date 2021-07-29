@@ -1,5 +1,5 @@
 ---
-title: "List notes"
+title: "List notes associated with the data subject request."
 description: "Get the authoredNote resources from the notes navigation property."
 author: "skadam-msft"
 localization_priority: Normal
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the authoredNote resources from the notes navigation property.
+Get the list of authored notes assoicated with the data subject request. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
