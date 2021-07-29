@@ -6334,8 +6334,9 @@ items:
         - name: Create notebook
           href: api/onenote-post-notebooks.md
       - name: Resource-specific permission grants
-        href: resources/resourcespecificpermissiongrant.md
         items:
+        - name: Overview
+          href: resources/resourcespecificpermissiongrant.md
         - name: List permission grants of a group
           href: api/group-list-permissiongrants.md
     - name: To-do tasks
