@@ -2472,7 +2472,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### dataSubjectRequestStage values 
 
-
 |Member|
 |:---|
 |contentRetrieval| Content retrieval stage |
@@ -2484,8 +2483,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### dataSubjectRequestStageStatus values 
 
-Represents the status for the data subject request stage
-
 |Member|
 |:---|
 |notStarted| The stage has not been started yet |
@@ -2496,8 +2493,6 @@ Represents the status for the data subject request stage
 
 ### dataSubjectRequestStatus values 
 
-Represents the status of the data subject request
-
 |Member|
 |:---|
 |active| The request is active |
@@ -2505,8 +2500,6 @@ Represents the status of the data subject request
 |unknownFutureValue|
 
 ### dataSubjectRequestType values 
-
-Represents the type of the data subject request
 
 |Member|
 |:---|
@@ -2517,8 +2510,6 @@ Represents the type of the data subject request
 |unknownFutureValue|
 
 ### dataSubjectType values 
-
-Represents the type of data subject
 
 |Member|
 |:---|
@@ -2531,5 +2522,3 @@ Represents the type of data subject
 |faculty| The data subject is faculty of the institute. |
 |other|
 |unknownFutureValue|
-
-
