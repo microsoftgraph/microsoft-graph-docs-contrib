@@ -1,28 +1,28 @@
 ---
-title: "wipe action"
-description: "Wipe a device"
+title: "targetApps action"
+description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# wipe action
+# targetApps action
 
 Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Wipe a device
+Not yet documented
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/wipe
-POST /deviceManagement/managedDevices/{managedDeviceId}/wipe
-POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/wipe
+POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetApps
+POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/targetApps
+POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/targetApps
 ```
 
 ## Request headers
@@ -48,10 +48,8 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|keepEnrollmentData|Boolean|Not yet documented|
-|keepUserData|Boolean|Not yet documented|
-|macOsUnlockCode|String|Not yet documented|
-|persistEsimDataPlan|Boolean|Not yet documented|
+|apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) collection|Not yet documented|
+|appGroupType|[targetedManagedAppGroupType](../resources/intune-mam-targetedmanagedappgrouptype.md)|Not yet documented|
 
 
 
@@ -63,16 +61,24 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/wipe
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetApps
 
 Content-type: application/json
-Content-length: 141
+Content-length: 378
 
 {
-  "keepEnrollmentData": true,
-  "keepUserData": true,
-  "macOsUnlockCode": "Mac Os Unlock Code value",
-  "persistEsimDataPlan": true
+  "apps": [
+    {
+      "@odata.type": "#microsoft.graph.managedMobileApp",
+      "mobileAppIdentifier": {
+        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+        "packageId": "Package Id value"
+      },
+      "id": "0a129715-9715-0a12-1597-120a1597120a",
+      "version": "Version value"
+    }
+  ],
+  "appGroupType": "allCoreMicrosoftApps"
 }
 ```
 

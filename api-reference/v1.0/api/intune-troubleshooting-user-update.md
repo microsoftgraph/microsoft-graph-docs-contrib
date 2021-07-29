@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [user](../resources/intune-devices-user.md) object.
+Update the properties of a [user](../resources/intune-troubleshooting-user.md) object.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -40,25 +40,25 @@ PATCH /users/{usersId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [user](../resources/intune-devices-user.md) object.
+In the request body, supply a JSON representation for the [user](../resources/intune-troubleshooting-user.md) object.
 
-The following table shows the properties that are required when you create the [user](../resources/intune-devices-user.md).
+The following table shows the properties that are required when you create the [user](../resources/intune-troubleshooting-user.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier of the user.|
+|id|String|Unique Identifier for the user|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune-devices-user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune-troubleshooting-user.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/v1.0/users/{usersId}
+PATCH https://graph.microsoft.com/v1/users/{usersId}
 Content-type: application/json
 Content-length: 46
 

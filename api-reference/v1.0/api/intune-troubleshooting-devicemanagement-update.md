@@ -1,28 +1,28 @@
 ---
-title: "Update user"
-description: "Update the properties of a user object."
+title: "Update deviceManagement"
+description: "Update the properties of a deviceManagement object."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# Update user
+# Update deviceManagement
 
 Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [user](../resources/intune-devices-user.md) object.
+Update the properties of a [deviceManagement](../resources/intune-troubleshooting-devicemanagement.md) object.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /users/{usersId}
+PATCH /deviceManagement
 ```
 
 ## Request headers
@@ -40,30 +40,30 @@ PATCH /users/{usersId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [user](../resources/intune-devices-user.md) object.
+In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-troubleshooting-devicemanagement.md) object.
 
-The following table shows the properties that are required when you create the [user](../resources/intune-devices-user.md).
+The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-troubleshooting-devicemanagement.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier of the user.|
+|id|String|Not yet documented|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune-devices-user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-troubleshooting-devicemanagement.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/v1.0/users/{usersId}
+PATCH https://graph.microsoft.com/v1/deviceManagement
 Content-type: application/json
-Content-length: 46
+Content-length: 58
 
 {
-  "@odata.type": "#microsoft.graph.user"
+  "@odata.type": "#microsoft.graph.deviceManagement"
 }
 ```
 
@@ -72,11 +72,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 95
+Content-Length: 107
 
 {
-  "@odata.type": "#microsoft.graph.user",
-  "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+  "@odata.type": "#microsoft.graph.deviceManagement",
+  "id": "0b283420-3420-0b28-2034-280b2034280b"
 }
 ```
 
