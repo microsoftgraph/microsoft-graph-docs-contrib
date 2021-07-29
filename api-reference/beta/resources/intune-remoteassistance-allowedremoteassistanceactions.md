@@ -1,6 +1,6 @@
 ---
 title: "allowedRemoteAssistanceActions enum type"
-description: "Flags enumeration indicating whether a helper can establish a "View screen", "Take full control" and "Elevation" remote assistance action with a device or sharer"
+description: "Flags enumeration indicating whether a helper can establish a View screen, Take full control and Elevation remote assistance action with a device or sharer"
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
