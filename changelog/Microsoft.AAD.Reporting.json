@@ -3,6 +3,22 @@
     {
       "ChangeList": [
           {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "signInUserType",
+            "ChangeType": "Addition",
+            "Description": "Added the **signInUserType** enumeration [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "signInIdentifierType",
+            "ChangeType": "Addition",
+            "Description": "Added the **signInIdentifierType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
               "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
               "ApiChange": "Property",
               "ChangedApiName": "autonomousSystemNumber",
