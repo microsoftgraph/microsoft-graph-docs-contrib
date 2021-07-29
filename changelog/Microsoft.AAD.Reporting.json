@@ -2,6 +2,62 @@
   "changelog": [
       {
         "ChangeList": [
+          {
+                "Id": "81cc4a56-b819-42e0-bd49-0b6428c8ac83",
+                "ApiChange": "Property",
+                "ChangedApiName": "lastNonInteractiveSignInDateTime",
+                "ChangeType": "Addition",
+                "Description": "Added the **lastNonInteractiveSignInDateTime** property to [signInActivity]() resource.",
+                "Target": "signInActivity"
+              },
+              {
+                "Id": "81cc4a56-b819-42e0-bd49-0b6428c8ac83",
+                "ApiChange": "Property",
+                "ChangedApiName": "lastNonInteractiveSignInRequestId",
+                "ChangeType": "Addition",
+                "Description": "Added the **lastNonInteractiveSignInRequestId** property to [signInActivity]() resource.",
+                "Target": "signInActivity"
+              },
+              {
+                "Id": "81cc4a56-b819-42e0-bd49-0b6428c8ac83",
+                "ApiChange": "Property",
+                "ChangedApiName": "lastSignInDateTime",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **lastSignInDateTime** resource type",
+                "Target": "signInActivity"
+              },
+              {
+                "Id": "81cc4a56-b819-42e0-bd49-0b6428c8ac83",
+                "ApiChange": "Property",
+                "ChangedApiName": "lastSignInDateTime",
+                "ChangeType": "Addition",
+                "Description": "Added the [lastSignInDateTime]() resource",
+                "Target": "signInActivity"
+              },
+              {
+                "Id": "81cc4a56-b819-42e0-bd49-0b6428c8ac83",
+                "ApiChange": "Property",
+                "ChangedApiName": "lastSignInRequestId",
+                "ChangeType": "Addition",
+                "Description": "Added the [lastSignInRequestId]() resource",
+                "Target": "signInActivity"
+              },
+              {
+                "Id": "81cc4a56-b819-42e0-bd49-0b6428c8ac83",
+                "ApiChange": "Property",
+                "ChangedApiName": "lastSignInRequestId",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **lastSignInRequestId** resource type",
+                "Target": "signInActivity"
+              }
+            ],
+            "Id": "81cc4a56-b819-42e0-bd49-0b6428c8ac83",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-29T19:25:02.3359665Z",
+            "WorkloadArea": "Users",
+            "SubArea": ""
+          },
             {
                 "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
                 "ApiChange": "Relationship",
