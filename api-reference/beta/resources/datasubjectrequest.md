@@ -26,8 +26,8 @@ Inherits from [entity](../resources/entity.md).
 |[Update dataSubjectRequest](../api/datasubjectrequest-update.md)|[dataSubjectRequest](../resources/datasubjectrequest.md)|Update the properties of a [dataSubjectRequest](../resources/datasubjectrequest.md) object.|
 |[getFinalAttachment](../api/datasubjectrequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that where included by the privacy administrator.|
 |[getFinalReport](../api/datasubjectrequest-getfinalreport.md)|Stream|Get the final report for the request. The report is a text file that contains information about the files that where included by the privacy administrator.|
-|[List notes](../api/datasubjectrequest-list-notes.md)|[authoredNote](../resources/authorednote.md) collection|Get the authoredNote resources from the notes navigation property.|
-|[Create authoredNote](../api/datasubjectrequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
+|[List notes for the data subject request](../api/datasubjectrequest-list-notes.md)|[authoredNote](../resources/authorednote.md) collection|Get the authoredNote resources from the notes navigation property.|
+|[Create new note for the data subject request](../api/datasubjectrequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
 
 ## Properties
 |Property|Type|Description|
