@@ -7,7 +7,7 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# List notes
+# List data subject request notes
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
