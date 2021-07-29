@@ -57,7 +57,7 @@ In Azure AD B2C, provide a JSON object with one or more properties that need to 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |clientId|String|The client identifier for the application obtained when registering the application with the identity provider.|
-|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns "\*\*\*\*".|
+|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`.|
 |displayName|String|The display name of the identity provider.|
 
 ### openIdConnectIdentityProvider object
@@ -107,9 +107,9 @@ The following is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 Content-type: application/json
-Content-length: 41
 
 {
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "clientSecret": "1111111111111"
 }
 ```
@@ -131,8 +131,6 @@ Content-length: 41
 
 ---
 
-
----
 
 #### Response
 
@@ -189,8 +187,6 @@ Content-length: 41
 ---
 
 
----
-
 #### Response
 
 The following is an example of the response.
@@ -245,8 +241,6 @@ Content-length: 41
 
 ---
 
-
----
 
 #### Response
 
