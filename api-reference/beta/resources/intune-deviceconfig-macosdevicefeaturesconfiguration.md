@@ -21,6 +21,7 @@ MacOS device features configuration profile.
 Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 
 ## Methods
+
 |Method|Return Type|Description|
 |:---|:---|:---|
 |[List macOSDeviceFeaturesConfigurations](../api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md)|[macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) collection|List properties and relationships of the [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) objects.|
@@ -30,6 +31,7 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |[Update macOSDeviceFeaturesConfiguration](../api/intune-deviceconfig-macosdevicefeaturesconfiguration-update.md)|[macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md)|Update the properties of a [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -87,6 +89,7 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |contentCachingPort|Int32|Sets the port used for content caching. If the value is 0, a random available port will be selected. Valid values 0 to 65535|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
