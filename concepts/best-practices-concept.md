@@ -82,11 +82,11 @@ While your application should handle all error responses (in the 400 and 500 ran
 
 ### Handling future members in evolvable enumerations
 
-Client apps can be broken when a product or service in Microsoft Graph adds members to an existing enumeration that these applications use. Evolvable enumerations is a mechanism that allows adding new members to enumerations without causing a breaking change. 
+Adding members to an existing enumeration in the Microsoft Graph API can break applications already using these enums. Evolvable enums allow adding new members to existing enumerations without causing a breaking change. 
 
-Evolvable enums have a common _sentinel_ member called `unknownFutureValue` that demarcates known members that have been defined initially, and unknown members that are added subsequently or to be defined in the future. Internally, known members are mapped to numeric values that are less than the sentinel member, and unknown members are greater than the sentinel member. You should find the possible _string_ values of an evolvable enum always listed in ascending order: known members, followed by `unknownFutureValue`, followed by unknown members. Like other types of enumerations, you should _always_ reference members of evolvable enums by their _string_ values.
+Evolvable enums have a common _sentinel_ member called `unknownFutureValue` that demarcates known members that have been defined initially, and unknown members that are added subsequently or will be defined in the future. Internally, known members are mapped to numeric values that are less than the sentinel member, and unknown members are greater than the sentinel member. The documentation for an evolvable enum lists the possible _string_ values in ascending order: known members, followed by `unknownFutureValue`, followed by unknown members. Like other types of enumerations, you should _always_ reference members of evolvable enums by their _string_ values.
 
-By default, a GET operation returns only known members for properties of evolvable enum types. If you design your app to handle unknown members, you can opt-in to receive those members by using an HTTP `Prefer` request header:
+By default, a GET operation returns only known members for properties of evolvable enum types and your application needs to handle only the known members. If you design your application to handle unknown members as well, you can opt-in to receive those members by using an HTTP `Prefer` request header:
 ```
 Prefer: include-unknown-enum-members
 ```
