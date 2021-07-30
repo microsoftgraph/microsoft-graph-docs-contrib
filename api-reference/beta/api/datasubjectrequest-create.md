@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|dataSubject|[microsoft.privacyManagement.dataSubject](../resources/datasubject.md)|contains the properties for data subject for the request.|
+|dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|contains the properties for data subject for the request.|
 |dataSubjectType|dataSubjectType|Data subject type. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
 |description|String|Description for the request.|
 |displayName|String|Name of the request.|
@@ -96,7 +96,7 @@ Content-length: 849
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.privacyManagement.dataSubjectRequest"
+  "@odata.type": "microsoft.graph.dataSubjectRequest"
 }
 -->
 ``` http

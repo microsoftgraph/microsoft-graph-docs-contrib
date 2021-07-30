@@ -46,7 +46,7 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|[microsoft.privacyManagement.identity](../resources/identity.md)|The identity information for the user that the request is assigned to.|
+|assignedTo|[microsoft.graph.identity](../resources/identity.md)|The identity information for the user that the request is assigned to.|
 |description|String|Updated description for the request.|
 |displayName|String|Updated name of the request.|
 |internalDueDateTime|DateTimeOffset|Updated internal due date for the request.|

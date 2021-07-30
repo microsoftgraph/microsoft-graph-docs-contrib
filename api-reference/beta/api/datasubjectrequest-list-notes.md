@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests/{dataSubject
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.privacyManagement.authoredNote)"
+  "@odata.type": "Collection(microsoft.graph.authoredNote)"
 }
 -->
 ``` http

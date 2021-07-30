@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|content|[microsoft.privacyManagement.itemBody](../resources/itembody.md)|The note content for the request|
+|content|[microsoft.graph.itemBody](../resources/itembody.md)|The note content for the request|
 
 
 ## Response
@@ -81,7 +81,7 @@ Content-length: 203
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.privacyManagement.authoredNote"
+  "@odata.type": "microsoft.graph.authoredNote"
 }
 -->
 ``` http
