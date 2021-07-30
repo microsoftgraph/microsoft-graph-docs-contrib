@@ -62,8 +62,7 @@ GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests/{dataSubject
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Edm.Stream"
+  "truncated": true
 }
 -->
 ``` http
