@@ -83,8 +83,7 @@ The following is a JSON representation of the resource.
     "id": "43a29ff4-4d70-4c91-ac5c-fe82cf1f9f07",
     "createdDateTime": "2021-06-21T12:03:40.1644015Z",
     "assignedTo": {
-        "id": "",
-        "displayName": "user@contoso.onmicrosoft.com"
+        "@odata.type": "microsoft.graph.identity"
     },
     "history": [],
     "stages": [
@@ -110,37 +109,19 @@ The following is a JSON representation of the resource.
         }
     ],
     "insight": {
-        "itemCount": 1,
-        "totalItemSize": 13670,
-        "itemNeedReview": 1,
-        "signedOffItemCount": 0,
-        "excludedItemCount": 0,
-        "productItemCounts": [],
-        "insightCounts": []
+        "@odata.type": "microsoft.graph.dataSubjectRequestDetail"
     },
     "createdBy": {
-        "user": {
-            "id": "",
-            "displayName": "user@contoso.onmicrosoft.com"
-        }
+        "@odata.type": "microsoft.graph.identitySet"
     },
     "lastModifiedBy": {
-        "user": {
-            "id": "",
-            "displayName": "user@contoso.onmicrosoft.com"
-        }
+        "@odata.type": "microsoft.graph.identitySet"
     },
     "dataSubject": {
-        "firstName": "Aik",
-        "lastName": "Chen",
-        "email": "aikchen@hotmail.com",
-        "residency": "USA",
-        "phoneNumber": "0987654321",
-        "SSN": "8798765454"
+        "@odata.type": "microsoft.graph.dataSubject",
     },
     "team": {
-        "id": "",
-        "webUrl": null
+        "@odata.type": "microsoft.graph.team"
     }
 }
 ```
