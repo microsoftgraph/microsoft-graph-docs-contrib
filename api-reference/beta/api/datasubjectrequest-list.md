@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.privacyManagement.dataSubjectRequest)"
+  "@odata.type": "Collection(microsoft.graph.dataSubjectRequest)"
 }
 -->
 ``` http
