@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### appCredentialRestrictionType values
+
+|Member|
+|:-----|
+|passwordAddition|
+|passwordLifetime|
+|unknownFutureValue|
+
 ### synchronizationSecret values
 
 |Member|
@@ -1784,6 +1792,8 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |message|
+|chatEvent |
+|typing |
 |unknownFutureValue|
 |systemEventMessage|
 
@@ -1797,11 +1807,12 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### channelMembershipType values
 
-| Member             | Value |
-| :----------------- | :---- |
-| standard           | 0     |
-| private            | 1     |
-| unknownFutureValue | 2     |
+| Member             | 
+| :----------------- | 
+| standard           | 
+| private            | 
+| unknownFutureValue | 
+| shared             |
 
 ### stagedFeatureName values
 
@@ -2236,6 +2247,7 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+|roster|
 
 ### plannerPlanContextType values 
 

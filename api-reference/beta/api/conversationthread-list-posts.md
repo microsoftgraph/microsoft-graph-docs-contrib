@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/threads/{id}/posts
-GET /groups/{id}/conversations/{id}/threads/{id}/posts
+GET /groups/{groupId}/threads/{threadId}/posts
+GET /groups/{groupId}/conversations/{conversationId}/threads/{threadId}/posts
 
 ```
 ## Optional query parameters
