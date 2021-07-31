@@ -51,6 +51,24 @@ All derived outcome types have a regular and a "published" property appropriate 
 
 If successful, this method returns a `200 OK` response code and an updated [educationOutcome](../resources/educationoutcome.md) object in the response body.
 
+If using **PointsGradeType** and **Points** are updated to be negative or infinite, a `400` error is returned as below.
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+	"error": {
+		"code": "badRequest",
+		"message": "Bad request.",
+		"innerError": {
+			"code": "invalidGrading",
+			"message": "Points must be less than 9999999 when using PointsGradeType."
+		}
+	}
+}
+```
+
 ## Examples
 
 ### Example 1: Update a Feedback Outcome
