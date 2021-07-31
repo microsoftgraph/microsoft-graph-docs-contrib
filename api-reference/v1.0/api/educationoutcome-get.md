@@ -83,7 +83,8 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationOutcome"
 } -->
 ```http
 HTTP/1.1 404 Not Found
