@@ -15,6 +15,12 @@ Namespace: microsoft.graph.callRecords
 
 Represents a row of data in the Public Switch Telephone Network (PSTN) call log. Each row maps to one call.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow collection](callrecords-pstncalllogrow.md) | Read the properties of a **pstnCallLogRow** objects. |
+
 ## Properties
 
 |Property|Type|Description|

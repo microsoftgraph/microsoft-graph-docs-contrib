@@ -2,35 +2,35 @@
     "changelog": [{
             "ChangeList": [{
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
-                    "ApiChange": "EnumType",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "pstnCallDurationSource",
                     "ChangeType": "Addition",
                     "Description": "Added the **pstnCallDurationSource** enumeration type.",
                     "Target": "pstnCallDurationSource"
                 }, {
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
-                    "ApiChange": "ComplexType",
+                    "ApiChange": "Resource",
                     "ChangedApiName": "directRoutingLogRow",
                     "ChangeType": "Addition",
                     "Description": "Added the [directRoutingLogRow](https://docs.microsoft.com/en-us/graph/api/resources/directRoutingLogRow?view=graph-rest-1.0) resource type.",
                     "Target": "directRoutingLogRow"
                 }, {
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
-                    "ApiChange": "ComplexType",
+                    "ApiChange": "Resource",
                     "ChangedApiName": "pstnCallLogRow",
                     "ChangeType": "Addition",
                     "Description": "Added the [pstnCallLogRow](https://docs.microsoft.com/en-us/graph/api/resources/pstnCallLogRow?view=graph-rest-1.0) resource type.",
                     "Target": "pstnCallLogRow"
                 }, {
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
-                    "ApiChange": "Function",
+                    "ApiChange": "Method",
                     "ChangedApiName": "getDirectRoutingCalls",
                     "ChangeType": "Addition",
                     "Description": "Added the [getDirectRoutingCalls](https://docs.microsoft.com/en-us/graph/api/getDirectRoutingCalls?view=graph-rest-1.0) method to the [getDirectRoutingCalls](https://docs.microsoft.com/en-us/graph/api/getDirectRoutingCalls?view=graph-rest-1.0) resource.",
                     "Target": "getDirectRoutingCalls"
                 }, {
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
-                    "ApiChange": "Function",
+                    "ApiChange": "Method",
                     "ChangedApiName": "getPstnCalls",
                     "ChangeType": "Addition",
                     "Description": "Added the [getPstnCalls](https://docs.microsoft.com/en-us/graph/api/getPstnCalls?view=graph-rest-1.0) method to the [getPstnCalls](https://docs.microsoft.com/en-us/graph/api/getPstnCalls?view=graph-rest-1.0) resource.",
@@ -42,11 +42,11 @@
             "Version": "v1.0",
             "CreatedDateTime": "2021-07-05T13:19:50.7960624Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Online meeting"
+            "SubArea": "Call records"
         }, {
             "ChangeList": [{
                     "Id": "2e62b4f9-f459-4954-91fa-b97f281a18bc",
-                    "ApiChange": "EnumType",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "pstnCallDurationSource",
                     "ChangeType": "Addition",
                     "Description": "Added the **pstnCallDurationSource** enumeration type.",
@@ -72,7 +72,7 @@
             "Version": "beta",
             "CreatedDateTime": "2021-07-05T13:19:50.7960607Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Online meeting"
+            "SubArea": "Call records"
         }
     ]
 }

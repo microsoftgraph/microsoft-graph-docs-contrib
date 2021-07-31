@@ -20,8 +20,8 @@ Represents a single peer-to-peer call or a group call between multiple participa
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read the properties and relationships of a **callRecord** object. |
-| [Get PSTN calls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md)| Read the properties of a **pstnCallLogRow** object. |
-| [Get direct routing calls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md)| Read the properties of a **directRoutingLogRow** object. |
+| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow collection](callrecords-pstncalllogrow.md) | Read the properties of a **pstnCallLogRow** object. |
+| [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow collection](callrecords-directroutinglogrow.md)| Read the properties of a **directRoutingLogRow** object. |
 
 ## Properties
 

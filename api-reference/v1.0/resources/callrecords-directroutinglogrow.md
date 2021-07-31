@@ -13,6 +13,12 @@ Namespace: microsoft.graph.callRecords
 
 Represents a row of data in the direct routing call log. Each row maps to one call.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow collection](callrecords-directroutinglogrow.md)| Read the properties of a **directRoutingLogRow** objects. |
+
 ## Properties
 
 |Property|Type|Description|
@@ -64,6 +70,7 @@ The following is a JSON representation of the resource.
   "startDateTime": "String (timestamp)",
   "inviteDateTime": "String (timestamp)",
   "failureDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
   "duration": "Integer",
   "callType": "String",
   "successfulCall": "Boolean",
