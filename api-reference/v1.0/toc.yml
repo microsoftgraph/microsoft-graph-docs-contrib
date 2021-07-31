@@ -4201,6 +4201,8 @@ items:
         items:
         - name: Outcome
           href: resources/educationoutcome.md
+        - name: Get Outcome
+          href: api/educationoutcome-get.md          
         - name: Feedback outcome type
           href: resources/educationfeedbackoutcome.md
         - name: Points outcome type
