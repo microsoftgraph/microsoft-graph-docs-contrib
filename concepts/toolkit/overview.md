@@ -49,6 +49,7 @@ The components are also available as [React components](./get-started/mgt-react.
 |[Electron](./providers/electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps|
 |[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
 |[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
+|[TeamsSSO](./providers/teamssso.md)|Authenticates using single-sign-on (SSO) or "client side auth" and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
 |[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
 |[Custom](./providers/custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
 

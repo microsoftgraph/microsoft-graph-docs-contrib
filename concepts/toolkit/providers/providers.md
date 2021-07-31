@@ -22,6 +22,7 @@ The Toolkit includes the following providers.
 |[Electron](./electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps.|
 |[SharePoint](./sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
 |[Teams](./teams.md)|Authenticates and provides Microsoft Graph access to components inside  Microsoft Teams tabs.|
+|[TeamsSSO](./providers/teamssso.md)|Authenticates using single-sign-on (SSO) or "client side auth" and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
 |[Proxy](./proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
 |[Custom](./custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
 
