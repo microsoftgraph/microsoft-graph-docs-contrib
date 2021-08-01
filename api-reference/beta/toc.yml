@@ -10025,6 +10025,8 @@ items:
           href: api/educationuser-delta.md
         - name: Create rubric
           href: api/educationuser-post-rubrics.md
+        - name: List assignments
+          href: api/educationuser-list-assignments.md            
       - name: Assignment
         href: resources/educationassignment.md
         items:
