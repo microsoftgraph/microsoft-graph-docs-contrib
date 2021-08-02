@@ -43,7 +43,7 @@ This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-
     Microsoft Graph offers access to many more services than just Azure Active Directory. It's the [API gateway to Microsoft 365 services too](./index.yml).
     Check for new datasets and capabilities regularly.  
 
-    - Take a look at [what you can do with Microsoft Graph](https://developer.microsoft.com/graph/examples)
+    - Take a look at some [partner solutions](https://developer.microsoft.com/graph/partners).
     - Explore the [Microsoft Graph blog](https://developer.microsoft.com/graph/blogs) for the latest news about Microsoft Graph and some great learning series.
     - The [changelog](/graph/changelog) summarizes service and document updates. Following these updates will help you track new APIs introduced to /beta (preview) and those promoted to v1.0 (GA).  These new APIs can provide new ways for you to add more value and new experiences to your apps.  
 
