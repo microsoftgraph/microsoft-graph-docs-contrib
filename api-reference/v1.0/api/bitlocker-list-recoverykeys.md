@@ -121,9 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2
-
-Retrieve a list of BitLocker keys filtered by **device id**.
+### Example 2: Retrieve a list of BitLocker keys filtered by deviceId.
 
 #### Request
 
