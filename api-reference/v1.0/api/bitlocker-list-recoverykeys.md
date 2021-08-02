@@ -46,18 +46,6 @@ To get a list of BitLocker keys within the tenant:
 
 ``` http
 GET /informationProtection/bitlocker/recoveryKeys
-```
-
-To get a list of BitLocker keys within the tenant filtered by the **device id**:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-
-``` http
-GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
-```
 
 ## Optional query parameters
 
