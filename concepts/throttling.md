@@ -520,7 +520,8 @@ The following limits apply to requests on the assignment service API:
 
 | Request Type                 | Limit per app per tenant     | Limit per tenant for all apps |
 |---------------------------|------------------------------|----------------------------|
-| Any         | 5000 requests per 10 seconds   | 15 000 requests per 10 seconds |
+| Any         | 500 requests per 10 seconds   | 1000 requests per 10 seconds
+|Any          | 15000 requests per 3600 seconds|30000 requests per 3600 seconds|
 | GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |  
 
 The preceding limits apply to the following resources: 
