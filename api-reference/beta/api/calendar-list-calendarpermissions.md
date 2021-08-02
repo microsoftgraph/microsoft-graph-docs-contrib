@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
-# Get List calendarPermissions
+# List calendarPermissions
 
 Namespace: microsoft.graph
 

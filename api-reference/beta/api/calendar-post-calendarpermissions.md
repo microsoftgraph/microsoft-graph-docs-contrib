@@ -68,42 +68,9 @@ The following is an example of the request.
   "name": "create_calendarpermission"
 }-->
 
-# [HTTP]
-
+```http
 POST https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions
-
-Content-type: application/json
-{
-  "emailAddress": {
-    "name": "Samantha Booth",
-    "address":"samanthab@adatum.onmicrosoft.com"
-  },
-  "isRemovable": true,
-  "isInsideOrganization": true,
-  "role": "write",
-  "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-  ],
-  "id": "RGVmYXVsdA=="
-}
-    
-  },
-  "isRemovable": true,
-  "isInsideOrganization": true,
-  "role": "write",
-  "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-  ]
-}
-
+```
 
 ### Response
 
@@ -122,20 +89,35 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "emailAddress": {
-    "name": "Samantha Booth",
-  },
+  "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLmFkbWluQE0zNjVCODc3NzE5Lm9ubWljcm9zb2Z0LmNvbQ==",
   "isRemovable": true,
-  "isInsideOrganization": true,
-  "role": "write",
+  "isInsideOrganization": false,
+  "role": "read",
   "allowedRoles": [
+  "freeBusyRead",
+  "limitedRead",
+  "read"
+        ],
+        "emailAddress": {
+        "name": "admin@M365B877719.onmicrosoft.com",
+        "address": "admin@M365B877719.onmicrosoft.com"
+        }
+},
+{
+    "id": "RGVmYXVsdA==",
+    "isRemovable": false,
+    "isInsideOrganization": true,
+    "role": "freeBusyRead",
+    "allowedRoles": [
     "none",
     "freeBusyRead",
     "limitedRead",
     "read",
     "write"
-  ],
-  "id": "RGVmYXVsdA=="
+    ],
+    "emailAddress": {
+    "name": "My Organization"
+    }
 }
 ```
 
@@ -147,3 +129,4 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
+  } -->
