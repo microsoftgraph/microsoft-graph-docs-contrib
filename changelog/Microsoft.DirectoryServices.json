@@ -12,11 +12,11 @@
      },
      {
        "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
-       "ApiChange": "api",
+       "ApiChange": "Method",
        "ChangedApiName": "reprocess",
-       "ChangeType": "Method",
-       "Description": "Added the [accessPackageAssignmentRequest-reprocess](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest-reprocess?view=graph-rest-beta) action to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta resource.",
-       "Target": "accessPackageAssignmentRequest"
+       "ChangeType": "Addition",
+       "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest-reprocess?view=graph-rest-beta) action to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
+       "Target": "reprocess"
       }
     ],
     "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
