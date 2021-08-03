@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### appCredentialRestrictionType values
+
+|Member|
+|:-----|
+|passwordAddition|
+|passwordLifetime|
+|unknownFutureValue|
+
 ### synchronizationSecret values
 
 |Member|
@@ -1107,15 +1115,17 @@ Namespace: microsoft.graph
 
 ### educationSynchronizationStatus values
 
-| Member             | Value |
-| :----------------- | :---- |
-| paused             | 0     |
-| inProgress         | 1     |
-| success            | 2     |
-| error              | 3     |
-| validationError    | 4     |
-| quarantined        | 5     |
-| unknownFutureValue | 6     |
+| Member             |
+| :----------------- |
+| paused             |
+| inProgress         |
+| success            |
+| error              |
+| validationError    |
+| quarantined        |
+| unknownFutureValue |
+| extracting         |
+| validating         |
 
 ### educationExternalSource values
 
@@ -1782,6 +1792,10 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |message|
+|chatEvent |
+|typing |
+|unknownFutureValue|
+|systemEventMessage|
 
 ### chatMessageImportance values
 
@@ -1793,11 +1807,12 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### channelMembershipType values
 
-| Member             | Value |
-| :----------------- | :---- |
-| standard           | 0     |
-| private            | 1     |
-| unknownFutureValue | 2     |
+| Member             | 
+| :----------------- | 
+| standard           | 
+| private            | 
+| unknownFutureValue | 
+| shared             |
 
 ### stagedFeatureName values
 
@@ -2232,6 +2247,7 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+|roster|
 
 ### plannerPlanContextType values 
 
@@ -2446,3 +2462,21 @@ Possible values for user account types (group membership), per Windows definitio
 |phoneUser|
 |unknownFutureValue|
 
+### callRecordingStatus values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### teamworkCallEventType values 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
+|unknownFutureValue|
