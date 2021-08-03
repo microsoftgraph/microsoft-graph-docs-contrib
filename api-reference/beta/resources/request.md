@@ -26,17 +26,23 @@ Inherits from [entity](entity.md).
 |createdBy|[identitySet](identityset.md)|**TODO: Add Description**|
 |createdDateTime|DateTimeOffset|**TODO: Add Description**|
 |customData|String|**TODO: Add Description**|
-|status|String|**TODO: Add Description**. Possible values are: `Granted`, `Provisioned`, `Failed`, `Revoked`, and `Canceled` status. Not nullable.|
+|status|String|**TODO: Add Description**. The possible values are: `Canceled`, `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`, `Revoked`, and `ScheduleCreated`. Not nullable.|
 |id|String|Identifier of the request. Read-only. Not nullable. Inherited from [entity](entity.md).|
 
 ### status values
-| Member      | Description |
-|:------------|:------------|
-| Granted     |             |
-| Provisioned |             |
-| Failed      |             |
-| Revoked     |             |
-| Canceled    |             |
+| Member                  | Description |
+|:------------------------|:------------|
+| Canceled                |             |
+| Denied                  |             |
+| Failed                  |             |
+| Granted                 |             |
+| PendingAdminDecision    |             |
+| PendingApproval         |             |
+| PendingProvisioning     |             |
+| PendingScheduleCreation |             |
+| Provisioned             |             |
+| Revoked                 |             |
+| ScheduleCreated         |             |
 
 ## Relationships
 |Relationship|Type|Description|
