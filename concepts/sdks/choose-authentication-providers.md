@@ -491,13 +491,17 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
-var options = new TokenCredentialOptions
+var options = new InteractiveBrowserCredentialOptions
 {
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
+    TenantId = tenantId,
+    ClientId = clientId,
+    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud,
+    // MUST be http://localhost or http://localhost:PORT
+    // See https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/System-Browser-on-.Net-Core
+    RedirectUri = new Uri("http://localhost"),
 };
 
-var interactiveCredential = new InteractiveBrowserCredential(
-    tenantId, clientId, options);
+var interactiveCredential = new InteractiveBrowserCredential(options);
 
 var graphClient = new GraphServiceClient(interactiveCredential, scopes);
 ```
