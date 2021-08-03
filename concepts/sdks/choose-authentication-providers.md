@@ -32,7 +32,7 @@ Authentication providers implement the code required to acquire a token using th
 |                                                                                                        | Interactive        | Delegated Consumer/Org | [Interactive provider](#interactive-provider) |
 
 > [!NOTE]
-> Java and Android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme?view=azure-java-stable) library to get access to the different credentials types. .NET developers need to add the [Azure.Identity](/dotnet/api/azure.identity?view=azure-dotnet) package to get access to the different credentials types.
+> Java and Android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme) library to get access to the different credentials types. .NET developers need to add the [Azure.Identity](/dotnet/api/azure.identity) package to get access to the different credentials types.
 
 ## Authorization code provider
 
