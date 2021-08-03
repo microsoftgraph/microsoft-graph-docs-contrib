@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the announcements about changes in a service.
 
 Represents announcements such as major updates, new features in a product; for example, the publication of a new Windows feature.
