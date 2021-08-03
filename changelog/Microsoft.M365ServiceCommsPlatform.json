@@ -368,8 +368,8 @@
          "Id": "6a3a801a-e679-11eb-88f7-f923b9ff781d",
          "Cloud": "prd",
          "Version": "v1.0",
-         "CreatedDateTime": "2021-07-16T21:04:31.258Z",
-         "WorkloadArea": "",
+         "CreatedDateTime": "2021-08-02T21:04:31.258Z",
+         "WorkloadArea": "Service health and communications",
          "SubArea": ""
        }
     ]
