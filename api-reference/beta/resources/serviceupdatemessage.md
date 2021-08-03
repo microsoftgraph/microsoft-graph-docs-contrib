@@ -46,7 +46,7 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |startDateTime|DateTimeOffset|The start time of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |tags|Collection(string)|A collection of tags for the service message.|
 |title|String|The title of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Represents user view points data of the service message.|
+|viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Represents user view points data of the service message. This data includes message status such as whether the user has archived, read, or marked the message as favorite. This property is null when accessed with application permissions.|
 
 ## Relationships
 None.
