@@ -63,14 +63,6 @@ If successful, this method returns a `201 Created` response code and an [identit
 
 ### Request
 
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_externalgroupmember_from__1"
-}
--->
-
 ``` http
 POST https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
@@ -106,14 +98,6 @@ Content-Type: application/json
 
 ### Request
 
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_externalgroupmember_from__2"
-}
--->
-
 ``` http
 POST https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
@@ -146,14 +130,6 @@ Content-Type: application/json
 ### Example 3: Add another external group as a member
 
 ### Request
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_externalgroupmember_from__3"
-}
--->
 
 ``` http
 POST https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000/members
