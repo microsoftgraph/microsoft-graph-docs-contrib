@@ -72,7 +72,8 @@ PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_sig
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}",
+  "@odata.type": "#microsoft.graph.identityProvider"
 }
 ```
 # [C#](#tab/csharp)

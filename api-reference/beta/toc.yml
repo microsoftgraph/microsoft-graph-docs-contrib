@@ -9936,6 +9936,47 @@ items:
               href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
             - name: Get Windows protection state
               href: api/managedtenants-windowsprotectionstate-get.md
+      - name: Service health and communications
+        items:
+        - name: Overview
+          href: resources/service-communications-api-overview.md
+        - name: Service announcement
+          href: resources/serviceannouncement.md
+        - name: Service health
+          href: resources/servicehealth.md
+          items:
+          - name: List health overviews
+            href: api/serviceannouncement-list-healthoverviews.md
+          - name: Get service health
+            href: api/servicehealth-get.md
+        - name: Service health issue
+          href: resources/servicehealthissue.md
+          items:
+          - name: List issues
+            href: api/serviceannouncement-list-issues.md
+          - name: Get issue
+            href: api/servicehealthissue-get.md
+          - name: Get post-incident review report
+            href: api/servicehealthissue-incidentreport.md
+        - name: Service update message
+          href: resources/serviceupdatemessage.md
+          items:
+          - name: List messages
+            href: api/serviceannouncement-list-messages.md
+          - name: Get message
+            href: api/serviceupdatemessage-get.md
+          - name: Mark read status
+            href: api/serviceupdatemessage-markread.md
+          - name: Mark unread status
+            href: api/serviceupdatemessage-markunread.md
+          - name: Archive status
+            href: api/serviceupdatemessage-archive.md
+          - name: Unarchive status
+            href: api/serviceupdatemessage-unarchive.md
+          - name: Mark favorite status
+            href: api/serviceupdatemessage-favorite.md
+          - name: Remove favorite status
+            href: api/serviceupdatemessage-unfavorite.md
     - name: Education
       items:
       - name: Overview
@@ -10901,6 +10942,36 @@ items:
               href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
+        - name: Application authentication method policy (preview)
+          items:
+          - name: Overview
+            href: resources/applicationAuthMethodPolicy.md
+          - name: Tenant app management policy
+            items:
+            - name: Overview
+              href: resources/tenantAppManagementPolicy.md
+            - name: Get
+              href: api/tenantAppManagementPolicy-get.md
+            - name: Update
+              href: api/tenantAppManagementPolicy-update.md
+          - name: App management policy
+            items:
+            - name: Overview
+              href: resources/appManagementPolicy.md
+            - name: List
+              href: api/appManagementPolicy-list.md
+            - name: Get
+              href: api/appManagementPolicy-get.md
+            - name: Create
+              href: api/appManagementPolicy-post.md 
+            - name: Update
+              href: api/appManagementPolicy-update.md
+            - name: Delete
+              href: api/appManagementPolicy-delete.md
+            - name: Create appliesTo
+              href: api/appManagementPolicy-post-appliesTo.md
+            - name: List appliesTo
+              href: api/appManagementPolicy-list-appliesTo.md
         - name: Authentication events policy
           items:
           - name: Authentication events policy
@@ -13331,47 +13402,6 @@ items:
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md
-    - name: Service health and communications (preview)
-      items:
-      - name: Overview
-        href: resources/service-communications-api-overview.md
-      - name: Service announcement
-        href: resources/serviceannouncement.md
-      - name: Service health
-        href: resources/servicehealth.md
-        items:
-        - name: List health overviews
-          href: api/serviceannouncement-list-healthoverviews.md
-        - name: Get service health
-          href: api/servicehealth-get.md
-      - name: Service health issue
-        href: resources/servicehealthissue.md
-        items:
-        - name: List issues
-          href: api/serviceannouncement-list-issues.md
-        - name: Get issue
-          href: api/servicehealthissue-get.md
-        - name: Get post-incident review report
-          href: api/servicehealthissue-incidentreport.md
-      - name: Service update message
-        href: resources/serviceupdatemessage.md
-        items:
-        - name: List messages
-          href: api/serviceannouncement-list-messages.md
-        - name: Get message
-          href: api/serviceupdatemessage-get.md
-        - name: Mark read status
-          href: api/serviceupdatemessage-markread.md
-        - name: Mark unread status
-          href: api/serviceupdatemessage-markunread.md
-        - name: Archive status
-          href: api/serviceupdatemessage-archive.md
-        - name: Unarchive status
-          href: api/serviceupdatemessage-unarchive.md
-        - name: Mark favorite status
-          href: api/serviceupdatemessage-favorite.md
-        - name: Remove favorite status
-          href: api/serviceupdatemessage-unfavorite.md
     - name: Sites and lists
       displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       items:
