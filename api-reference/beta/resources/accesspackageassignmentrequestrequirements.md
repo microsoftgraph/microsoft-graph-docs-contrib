@@ -54,12 +54,12 @@ The following is a JSON representation of the type.
   },
   "questions": [
     {
-      "@odata.type": "microsoft.graph.accessPackageMultipleChoiceQuestion"
+      "@odata.type": "microsoft.graph.accessPackageQuestion"
     }
   ],
   "existingAnswers": [
     {
-      "@odata.type": "microsoft.graph.accessPackageAnswerString"
+      "@odata.type": "microsoft.graph.accessPackageAnswer"
     }
   ]
 }
