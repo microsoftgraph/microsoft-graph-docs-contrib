@@ -276,7 +276,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. The calling app must be assigned the *RoleManagement.ReadWrite.Directory* permission to set the **isAssignableToRole** property or update the membership of such groups.
+The following is an example of the request. The calling user or app must be assigned the *RoleManagement.ReadWrite.Directory* permission to set the **isAssignableToRole** property or update the membership of such groups.
 
 
 # [HTTP](#tab/http)
