@@ -25,19 +25,25 @@ Depending on the type of calendar that the event is in and the permission type (
 ## HTTP request
 
 Create the specified permissions of a user's primary calendar:
-<!-- { "blockType": "ignored" } -->
+<!-- { 
+  "blockType": "ignored",
+}-->
 ```http
 POST /users/{id}/calendar/calendarPermissions
 ```
 
 Create the specified permissions of a group calendar:
-<!-- { "blockType": "ignored" } -->
+<!-- { 
+  "blockType": "ignored",
+}-->
 ```http
 POST /groups/{id}/calendar/calendarPermissions
 ```
 
 Create the specified permissions of the user calendar that contains the identified event:
-<!-- { "blockType": "ignored" } -->
+<!-- { 
+  "blockType": "ignored",
+}-->
 ```http
 POST /users/{id}/events/{id}/calendar/calendarPermissions
 ```
@@ -97,13 +103,13 @@ Content-type: application/json
   "freeBusyRead",
   "limitedRead",
   "read"
-        ],
-        "emailAddress": {
-        "name": "admin@M365B877719.onmicrosoft.com",
-        "address": "admin@M365B877719.onmicrosoft.com"
-        }
+  ],
+  "emailAddress": {
+  "name": "admin@M365B877719.onmicrosoft.com",
+  "address": "admin@M365B877719.onmicrosoft.com"
+    }
 },
-{
+  {
     "id": "RGVmYXVsdA==",
     "isRemovable": false,
     "isInsideOrganization": true,
@@ -118,7 +124,7 @@ Content-type: application/json
     "emailAddress": {
     "name": "My Organization"
     }
-}
+ }
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed99
