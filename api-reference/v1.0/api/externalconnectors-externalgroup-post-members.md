@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create the e
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
 | id             | String                  | The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.                                    |
-| type           | identityType | The type of member added to the external group. Possible values are: `user`,`group` or `externalGroup`. |
+| type           | microsoft.graph.externalConnectors.identityType | The type of member added to the external group. Possible values are: `user`,`group` or `externalGroup`. |
 
 
 ## Response
