@@ -93,40 +93,43 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 {
-  "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLmFkbWluQE0zNjVCODc3NzE5Lm9ubWljcm9zb2Z0LmNvbQ==",
-  "isRemovable": true,
-  "isInsideOrganization": false,
-  "role": "read",
-  "allowedRoles": [
-  "freeBusyRead",
-  "limitedRead",
-  "read"
-  ],
-  "emailAddress": {
-  "name": "admin@M365B877719.onmicrosoft.com",
-  "address": "admin@M365B877719.onmicrosoft.com"
-    }
-},
-  {
-    "id": "RGVmYXVsdA==",
-    "isRemovable": false,
-    "isInsideOrganization": true,
-    "role": "freeBusyRead",
-    "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-    ],
-    "emailAddress": {
-    "name": "My Organization"
-    }
- }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/calendarPermissions",
+    "value": [
+        {
+            "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLmFkbWluQE0zNjVCODc3NzE5Lm9ubWljcm9zb2Z0LmNvbQ==",
+            "isRemovable": true,
+            "isInsideOrganization": false,
+            "role": "read",
+            "allowedRoles": [
+                "freeBusyRead",
+                "limitedRead",
+                "read"
+            ],
+            "emailAddress": {
+                "name": "admin@M365B877719.onmicrosoft.com",
+                "address": "admin@M365B877719.onmicrosoft.com"
+            }
+        },
+        {
+            "id": "RGVmYXVsdA==",
+            "isRemovable": false,
+            "isInsideOrganization": true,
+            "role": "freeBusyRead",
+            "allowedRoles": [
+                "none",
+                "freeBusyRead",
+                "limitedRead",
+                "read",
+                "write"
+            ],
+            "emailAddress": {
+                "name": "My Organization"
+            }
+        }
+    ]
+}
 ```
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed99
 2019-02-04 14:57:30 UTC -->
 <!-- {
