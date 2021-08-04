@@ -34,12 +34,12 @@ Inherits from [request](request.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |action|String|Represents the type of the operation on the role assignment. The possible values are: <ul><li>`AdminAssign`: For administrators to assign roles to users or groups.</li><li>`AdminRemove`: For administrators to remove users or groups from roles.</li><li> `AdminUpdate`: For administrators to change existing role assignments.</li><li>`AdminExtend`: For administrators to extend expiring assignments.</li><li>`AdminRenew`: For administrators to renew expired assignments.</li><li>`SelfActivate`: For users to activate their assignments.</li><li>`SelfDeactivate`: For users to deactivate their active assignments.</li><li>`SelfExtend`: For users to request to extend their expiring assignments.</li><li>`SelfRenew`: For users to request to renew their expired assignments.</li></ul>|
-|approvalId|String|**TODO: Add Description**. Inherited from [request](request.md).|
+|approvalId|String|The identifier of the approval of the request. Inherited from [request](request.md).|
 |appScopeId|String|Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description**. Inherited from [request](request.md).|
-|createdBy|[identitySet](identityset.md)|**TODO: Add Description**. Inherited from [request](request.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**. Inherited from [request](request.md).|
-|customData|String|**TODO: Add Description**. Inherited from [request](request.md).|
+|completedDateTime|DateTimeOffset|The request completion date time. Inherited from [request](request.md).|
+|createdBy|[identitySet](identityset.md)|The user who created this request. Inherited from [request](request.md).|
+|createdDateTime|DateTimeOffset|The request creation date time. Inherited from [request](request.md).|
+|customData|String|Free text field to define any custom data for the request. Not used. Inherited from [request](request.md).|
 |directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only.|
 |id|String|The unique identifier for the unifiedRoleAssignmentScheduleRequest. Key, not nullable, Read-only.|
 |isValidationOnly|Boolean|A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
