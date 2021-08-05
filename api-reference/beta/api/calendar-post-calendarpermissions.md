@@ -28,6 +28,7 @@ Create the specified permissions of a user's primary calendar:
 <!-- { 
   "blockType": "ignored",
 }-->
+
 ```http
 POST /users/{id}/calendar/calendarPermissions
 ```
@@ -93,6 +94,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/calendarPermissions",
     "value": [
