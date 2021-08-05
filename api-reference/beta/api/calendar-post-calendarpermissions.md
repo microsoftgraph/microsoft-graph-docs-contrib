@@ -1,17 +1,17 @@
 ---
-title: "Create calendarPermission"
-description: "Create the calendarpermission object."
+title: "Create calendarPermissions"
+description: "Create the calendarpermissions object."
 localization_priority: Normal
 author: "sochowdh"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
-# Create calendarPermission
+# Create calendarPermissions
 
 Namespace: microsoft.graph
 
-Create a calendarPermission resource (../resources/calendarpermission.md) to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
+Create a calendarPermissions resource (../resources/calendarpermissions.md) to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 
 ## Permissions
 
@@ -57,11 +57,11 @@ POST /users/{id}/events/{id}/calendar/calendarPermissions
 
 ## Request body
 
-In the request body, supply a JSON representation of [calendarPermission](../resources/calendarpermission.md) object.
+In the request body, supply a JSON representation of [calendarPermissions](../resources/calendarpermission.md) object.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a calendarPermission object[calendarPermission](../resources/calendarpermission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a calendarPermissions object[calendarPermissions](../resources/calendarpermissions.md) object in the response body.
 
 ## Examples
 
@@ -72,7 +72,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- { 
   "blockType": "request",
-  "name": "create_calendarpermission"
+  "name": "create_calendarpermissions"
 }-->
 
 ```http
@@ -88,7 +88,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendarPermission"
+  "@odata.type": "microsoft.graph.calendarPermissions"
 } -->
 
 ```http
@@ -136,7 +136,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create calendarPermission",
+  "description": "Create calendarPermissions",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
