@@ -47,8 +47,8 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-GET /me/authentication/softwareOathAuthenticationMethods
-GET /users/{id | userPrincipalName}/authentication/softwareOathAuthenticationMethods
+GET /me/authentication/softwareOathMethods
+GET /users/{id | userPrincipalName}/authentication/softwareOathMethods
 ```
 
 ## Optional query parameters

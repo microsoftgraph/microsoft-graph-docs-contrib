@@ -46,7 +46,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-DELETE /users/{id | userPrincipalName}/authentication/softwareOathAuthenticationMethod/{id}
+DELETE /users/{id | userPrincipalName}/authentication/softwareOathMethods/{id}
 ```
 
 ## Request headers
