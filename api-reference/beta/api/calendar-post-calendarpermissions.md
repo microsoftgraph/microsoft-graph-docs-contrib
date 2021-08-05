@@ -61,7 +61,7 @@ In the request body, supply a JSON representation of [calendarPermissions](../re
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a calendarPermissions object[calendarPermissions](../resources/calendarpermissions.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a calendarPermissions object[calendarPermissions](../resources/calendarpermission.md) object in the response body.
 
 ## Examples
 
