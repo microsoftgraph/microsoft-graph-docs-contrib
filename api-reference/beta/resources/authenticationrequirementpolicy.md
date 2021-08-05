@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Azure AD can require users to pass an MFA check before accessing resources. If an MFA check is required, this resource identifies the policy that requires MFA. 
 
-**TODO: Add Description**
 
 ## Properties
 |Property|Type|Description|
@@ -40,4 +39,3 @@ The following is a JSON representation of the resource.
   "detail": "String"
 }
 ```
-
