@@ -7,7 +7,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "lastNonInteractiveSignInDateTime",
             "ChangeType": "Addition",
-            "Description": "Added the **lastNonInteractiveSignInDateTime** property to [signInActivity](https://docs.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
+            "Description": "Added the **lastNonInteractiveSignInDateTime** property to the [signInActivity](https://docs.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
             "Target": "signInActivity"
           },
           {
@@ -15,7 +15,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "lastNonInteractiveSignInRequestId",
             "ChangeType": "Addition",
-            "Description": "Added the **lastNonInteractiveSignInRequestId** property to [signInActivity](https://docs.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
+            "Description": "Added the **lastNonInteractiveSignInRequestId** property to the [signInActivity](https://docs.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
             "Target": "signInActivity"
           }
         ],
