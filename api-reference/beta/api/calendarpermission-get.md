@@ -126,9 +126,9 @@ Content-type: application/json
   "limitedRead",
   "read"
   ],
-    "emailAddress": {
-    "name": "admin@M365B877719.onmicrosoft.com",
-    "address": "admin@M365B877719.onmicrosoft.com"
+  "emailAddress": {
+  "name": "admin@M365B877719.onmicrosoft.com",
+  "address": "admin@M365B877719.onmicrosoft.com"
   }
 }
 ```
