@@ -51,41 +51,50 @@ AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(confident
 
 ```javascript
 // Using @azure/msal-browser for  browser applications
+const {
+    PublicClientApplication,
+    InteractionType,
+    AccountInfo
+} = require("@azure/msal-browser");
 
-const { PublicClientApplication, InteractionType, AccountInfo } = require("@azure/msal-browser");
+const {
+    AuthCodeMSALBrowserAuthenticationProvider,
+    AuthCodeMSALBrowserAuthenticationProviderOptions
+} = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
 
-const { AuthCodeMSALBrowserAuthenticationProvider, AuthCodeMSALBrowserAuthenticationProviderOptions } = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
+const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
+    account: account, // the AccountInfo instance to acquire the token for.
+    interactionType: InteractionType.PopUp, // msal-browser InteractionType
+    scopes: ["user.read", "mail.send"] // example of the scopes to be passed
+}
 
-    const options:AuthCodeMSALBrowserAuthenticationProviderOptions: {
-        account: account, // the AccountInfo instance to acquire the token for.
-        interactionType: InteractionType.PopUp , // msal-browser InteractionType
-        scopes: ["user.read", "mail.send"] // example of the scopes to be passed
-    }
+// Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
+const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
 
-    // Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
-    const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
 or 
 
 //Using @azure/identity for server-side applications
 
-const { Client } = require("@microsoft/microsoft-graph-client");
-const { TokenCredentialAuthenticationProvider } = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const { AuthorizationCodeCredential } = require("@azure/identity");
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    AuthorizationCodeCredential
+} = require("@azure/identity");
 
-const authProvider = new TokenCredentialAuthenticationProvider(credential, { scopes: [scopes] });
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
 
 const credential = new AuthorizationCodeCredential(
     "<YOUR_TENANT_ID>",
     "<YOUR_CLIENT_ID>",
     "<AUTH_CODE_FROM_QUERY_PARAMETERS>",
     "<REDIRECT_URL>"
-  );
-  
-const client = Client.initWithMiddleware({
-		debugLogging: true,
-		authProvider
-		// Use the authProvider object to create the class.
-	});
+);
 ```
 
 # [Java](#tab/Java)
@@ -146,18 +155,26 @@ ClientCredentialProvider authProvider = new ClientCredentialProvider(confidentia
 # [Javascript](#tab/Javascript)
 
 ```javascript
-const { Client } = require("@microsoft/microsoft-graph-client");
-const { TokenCredentialAuthenticationProvider } = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const { ClientSecretCredential } = require("@azure/identity");
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    ClientSecretCredential
+} = require("@azure/identity");
 
 const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, { scopes: [scopes] });
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
 
 const client = Client.initWithMiddleware({
-		debugLogging: true,
-		authProvider
-		// Use the authProvider object to create the class.
-	});
+    debugLogging: true,
+    authProvider
+    // Use the authProvider object to create the class.
+});
 ```
 
 # [Java](#tab/Java)
@@ -263,18 +280,26 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 # [Javascript](#tab/Javascript)
 
 ```javascript
-const { Client } = require("@microsoft/microsoft-graph-client");
-const { TokenCredentialAuthenticationProvider } = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const { DeviceCodeCredential } = require("@azure/identity");
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    DeviceCodeCredential
+} = require("@azure/identity");
 
 const credential = new DeviceCodeCredential(tenantId, clientId, clientSecret);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, { scopes: [scopes] });
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
 
 const client = Client.initWithMiddleware({
-		debugLogging: true,
-		authProvider
-		// Use the authProvider object to create the class.
-	});
+    debugLogging: true,
+    authProvider
+    // Use the authProvider object to create the class.
+});
 ```
 
 # [Java](#tab/Java)
