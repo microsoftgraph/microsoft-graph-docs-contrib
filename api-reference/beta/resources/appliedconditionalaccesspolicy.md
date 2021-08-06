@@ -29,6 +29,7 @@ Indicates the attributes related to applied conditional access policy or policie
 |includeRulesSatisfied|String collection|List of key value pairs containing each matched include condition in the conditional access policy. Example: [{ "application" : "AllApps"}, {"users": "Group"}], meaning Application condition was a match because AllApps are included, Users condition was a match because the user was part of the included Group rule.|
 |excludeRulesSatisfied|String collection|List of key value pairs containing each matched exclude condition in the conditional access policy. Example: [{"devicePlatform" : "DevicePlatform"}] means the policy didn’t apply, because the DevicePlatform condition was a match.|
 
+
 ## JSON representation
 
 Here is a JSON representation of the resource.
