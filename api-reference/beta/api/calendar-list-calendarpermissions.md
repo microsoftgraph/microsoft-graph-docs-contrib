@@ -128,32 +128,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "emailAddress": {
-    "name": "My Organization",
-  },
+  "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLmFkbWluQE0zNjVCODc3NzE5Lm9ubWljcm9zb2Z0LmNvbQ==",
   "isRemovable": true,
-  "isInsideOrganization": true,
-  "role": "write",
+  "isInsideOrganization": false,
+  "role": "read",
   "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
+  "freeBusyRead",
+  "limitedRead",
+  "read"
   ],
   "emailAddress": {
-    "name": "My Group",
-  },
-  "isRemovable": true,
-  "isInsideGroup": true,
-  "role": "write",
-  "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-  ],
+  "name": "admin@M365B877719.onmicrosoft.com",
+  "address": "admin@M365B877719.onmicrosoft.com"
+  }
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
