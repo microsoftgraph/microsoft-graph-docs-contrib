@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|adDomainPassword|String|The password associated with adDomainUsername|
+|adDomainPassword|String|The password associated with **adDomainUsername**.|
 
 
 
