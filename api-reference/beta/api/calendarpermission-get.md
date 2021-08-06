@@ -111,20 +111,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "emailAddress": {
-    "name": "My Organization",
-  },
+  "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLmFkbWluQE0zNjVCODc3NzE5Lm9ubWljcm9zb2Z0LmNvbQ==",
   "isRemovable": true,
-  "isInsideOrganization": true,
-  "role": "write",
+  "isInsideOrganization": false,
+  "role": "read",
   "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
+  "freeBusyRead",
+  "limitedRead",
+  "read"
   ],
-  "id": "RGVmYXVsdA=="
+    "emailAddress": {
+    "name": "admin@M365B877719.onmicrosoft.com",
+    "address": "admin@M365B877719.onmicrosoft.com"
+  }
 }
 ```
 
