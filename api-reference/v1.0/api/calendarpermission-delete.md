@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete calendarPermission
 
+Namespace: microsoft.graph
+
 Delete calendarPermission.
 
 ## Permissions
@@ -60,7 +62,6 @@ If successful, this method returns `204, No Content` response code. It does not 
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -88,7 +89,6 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -111,4 +111,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update calendarPermission
 
+Namespace: microsoft.graph
+
 Update the permissions assigned to an existing sharee or delegate, through the corresponding [calendarPermission](../resources/calendarpermission.md) object for a calendar.
 
 ## Permissions
@@ -64,7 +66,6 @@ If successful, this method returns a `200 OK` response code and an updated [cale
 
 The following example changes the permission level of the sharee, Adele, to `write`.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -97,7 +98,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -143,4 +143,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -1,5 +1,5 @@
 ---
-title: "Get calendarPermission"
+title: "List calendarPermissions"
 description: "Get the properties and relationships of calendarpermission object."
 localization_priority: Normal
 author: "sochowdh"
@@ -7,11 +7,11 @@ ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
-# Get calendarPermission
+# List calendarPermissions
 
 Namespace: microsoft.graph
 
-Get the specified permissions object of a user or group calendar that has been shared.
+Gets a collection of calendarPermission (../resources/calendarpermission.md) objects that describe the identity and roles of users with whom the specified calendar has been shared or delegated. Here, the calendar can be a user calendar or group calendar.
 
 ## Permissions
 
@@ -24,26 +24,22 @@ Depending on the type of calendar that the event is in and the permission type (
 
 ## HTTP request
 
-Get the specified permissions of a user's primary calendar:
-
+List the specified permissions of a user's primary calendar:
+<!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/calendar/calendarPermissions/{id}
+GET /users/{id}/calendar/calendarPermissions
 ```
 
-Get the specified permissions of a group calendar:
-<!-- { 
-  "blockType": "ignored",
-}-->
+List the specified permissions of a group calendar:
+<!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/calendar/calendarPermissions/{id}
+GET /groups/{id}/calendar/calendarPermissions
 ```
 
-Get the specified permissions of the user calendar that contains the identified event:
-<!-- { 
-  "blockType": "ignored",
-}-->
+List the specified permissions of the user calendar that contains the identified event:
+<!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
+GET /users/{id}/events/{id}/calendar/calendarPermissions
 ```
 
 ## Optional query parameters
@@ -73,12 +69,30 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "calendarpermission-get"
+  "name": "get_calendarpermission"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id}
+GET https://graph.microsoft.com/beta/users/{id}/calendar/
 ```
+```
+{
+  "emailAddress": {
+    "name": "My Organization",
+  },
+  "isRemovable": true,
+  "isInsideOrganization": true,
+  "role": "write",
+  "allowedRoles": [
+    "none",
+    "freeBusyRead",
+    "limitedRead",
+    "read",
+    "write"
+  ]
+}
+```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarpermission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -139,4 +153,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
