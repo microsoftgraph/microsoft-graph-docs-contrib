@@ -70,7 +70,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response showing an instance of a roleEligibilitySchedule that is through a group assignment.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,21 +84,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilityScheduleInstance)",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleEligibilityScheduleInstance",
-      "id": "UafX_Qu2SkSYTAJlL-j6HCssmvzcHW1IohFf6Mp3-h9xbmLcN0jrQL5KvCnYihF4-2-e",
-      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
-      "directoryScopeId": "/administrativeUnits/dc626e71-4837-40eb-be4a-bc29d88a1178",
-      "appScopeId": null,
-      "startDateTime": "2021-07-27T14:03:04.4Z",
-      "endDateTime": null,
-      "memberType": "Direct",
-      "roleEligibilityScheduleId": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilityScheduleInstance)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.unifiedRoleEligibilityScheduleInstance",
+            "id": "5wuT_mJe20eRr5jDpJo4sXbfd22VX0BOmpL501774kM-1-e",
+            "principalId": "92f37639-ba1e-471c-b9ba-922371c740cb",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "startDateTime": "2021-08-06T16:18:04.793Z",
+            "endDateTime": "2022-06-30T00:00:00Z",
+            "memberType": "Group",
+            "roleEligibilityScheduleId": "2303e6ff-5939-496f-8057-9203db4c75f3"
+        }
+    ]
 }
 ```
 

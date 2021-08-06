@@ -69,7 +69,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response showing a roleEligibilitySchedule that is through a group assignment.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,31 +83,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilitySchedule)",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleEligibilitySchedule",
-      "id": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f",
-      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
-      "directoryScopeId": "/administrativeUnits/dc626e71-4837-40eb-be4a-bc29d88a1178",
-      "appScopeId": null,
-      "createdUsing": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f",
-      "createdDateTime": "2021-07-27T14:03:04.4Z",
-      "modifiedDateTime": "0001-01-01T08:00:00Z",
-      "status": "Provisioned",
-      "memberType": "Direct",
-      "scheduleInfo": {
-        "startDateTime": "2021-07-27T14:03:04.4Z",
-        "recurrence": null,
-        "expiration": {
-          "type": "noExpiration",
-          "endDateTime": null,
-          "duration": null
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilitySchedule)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.unifiedRoleEligibilitySchedule",
+            "id": "2303e6ff-5939-496f-8057-9203db4c75f3",
+            "principalId": "92f37639-ba1e-471c-b9ba-922371c740cb",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "createdUsing": "2303e6ff-5939-496f-8057-9203db4c75f3",
+            "createdDateTime": "2021-08-06T16:18:04.793Z",
+            "modifiedDateTime": "0001-01-01T08:00:00Z",
+            "status": "Provisioned",
+            "memberType": "Group",
+            "scheduleInfo": {
+                "startDateTime": "2021-08-06T16:18:04.793Z",
+                "recurrence": null,
+                "expiration": {
+                    "type": "afterDateTime",
+                    "endDateTime": "2022-06-30T00:00:00Z",
+                    "duration": null
+                }
+            }
         }
-      }
-    }
-  ]
+    ]
 }
 ```
 
