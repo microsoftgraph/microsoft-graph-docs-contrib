@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Create a calendarPermissions resource (../resources/calendarpermissions.md) to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
+Create a [calendarPermission](../resources/calendarpermission.md) resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 
 ## Permissions
 
@@ -57,7 +57,7 @@ POST /users/{id}/events/{id}/calendar/calendarPermissions
 
 ## Request body
 
-In the request body, supply a JSON representation of [calendarPermissions](../resources/calendarpermission.md) object.
+In the request body, supply a JSON representation of a [calendarPermission](../resources/calendarpermission.md) object.
 
 ## Response
 

@@ -1265,6 +1265,10 @@ items:
       - name: Calendar permission
         href: resources/calendarpermission.md
         items:
+        - name: List
+          href: api/calendar-list-calendarpermissions.md
+        - name: Create
+          href: api/calendar-post-calendarpermissions.md
         - name: Get
           href: api/calendarpermission-get.md
         - name: Update
