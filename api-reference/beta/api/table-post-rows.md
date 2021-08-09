@@ -59,7 +59,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [workbookTableRow](../../beta/resources/workbooktablerow.md) object in the response body.
+If successful, this method returns `201 Created` response code and [workbookTableRow](../resources/workbooktablerow.md) object in the response body.
 
 ## Examples
 
