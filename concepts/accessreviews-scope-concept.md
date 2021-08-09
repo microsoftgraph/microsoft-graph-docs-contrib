@@ -111,7 +111,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-### Example 7: Review of service principals assigned to privileged roles (all active and eligible assignments included)
+### Example 7: Review of all service principals assigned to a privileged role (all active and eligible assignments included)
 
 ```http
 "scope": {
@@ -121,7 +121,17 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
     
-### Example 8: Review of all users with eligible assignment to a privileged role
+### Example 8: Review of all users assigned to a privileged role (all active and eligible assignments included)
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleDefinitions/{role ID}",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### Example 9: Review of all users with eligible assignment to a privileged role
 
 ```http
 "scope": {
@@ -131,7 +141,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
     
-### Example 9: Review of all users with active assignment to a privileged role
+### Example 10: Review of all users with active assignment to a privileged role
 
 ```http
 "scope": {
