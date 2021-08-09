@@ -1,5 +1,5 @@
 ---
-title: "Get group"
+title: "Get termStore group"
 description: "Read the properties and relationships of a group object."
 author: vishriv
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
-# Get group
+# Get termStore group
 Namespace: microsoft.graph.termStore
 
 Read the properties and relationships of a term store [group](../resources/termstore-group.md) object.
@@ -51,7 +51,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group_3"
@@ -88,8 +87,6 @@ Content-Type: application/json
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group"

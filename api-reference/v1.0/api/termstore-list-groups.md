@@ -1,5 +1,5 @@
 ---
-title: "List groups"
+title: "List termStore groups"
 description: "Get the groups from the groups navigation property."
 author: vishriv
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
-# List groups
+# List termStore groups
 Namespace: microsoft.graph.termStore
 
 Get the list of [group](../resources/termstore-group.md) objects of a [store](../resources/termstore-store.md)
