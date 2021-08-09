@@ -32,7 +32,7 @@ Next, import and use the provider.
 ```ts
 import {Providers} from '@microsoft/mgt-element';
 import {TeamsSSOProvider} from '@microsoft/mgt-teams-sso-provider';
-import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as MicrosoftTeams from "@microsoft/teams-js";
 
 TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
 
