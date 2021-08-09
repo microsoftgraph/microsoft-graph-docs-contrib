@@ -44,6 +44,7 @@ POST /me/drive/root:/{item-path}:/workbookworksheets/{id|name}/tables/{id|name}/
 | Name | Description |
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Content-Type | application/json. Required.|
 | Prefer  | respond-async. This header indicate the request is an async request. Optional.  |
 | Workbook-Session-Id  | {Workbook-Session-Id}. Created from createSession request. Optional.|
 
@@ -53,12 +54,12 @@ In the request body, provide a JSON object with the following parameters.
 
 |Parameter|Type|Description|
 |:---------------|:--------|:----------|
-| index| number| Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.|
-| values| (boolean or string or number) collection| A 2-dimensional array of unformatted values of the table rows.|
+| index| Int32| Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.|
+| values| [Json](../resources/json.md)| A 2-dimensional array of unformatted values of the table rows.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [workbookTableRow](../../beta/resources/workbooktablerow.md) object in the response body.
+If successful, this method returns `201 Created` response code and [workbookTableRow](../../beta/resources/workbooktablerow.md) object in the response body.
 
 ## Examples
 
@@ -79,7 +80,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows
 Content-type: application/json
-Content-length: 51
+Content-length: 90
 
 {
   "values": [
@@ -106,11 +107,11 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTableRow"
+  "@odata.type": "Microsoft.ExcelServices.workbookTableRow"
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 45
 
