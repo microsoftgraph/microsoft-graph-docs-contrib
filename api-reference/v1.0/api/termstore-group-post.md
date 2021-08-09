@@ -1,5 +1,5 @@
 ---
-title: "Create group"
+title: "Create termStore group"
 description: "Create a new group object."
 author: vishriv
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
-# Create group
+# Create termStore group
 Namespace: microsoft.graph.termStore
 
 Create a new [group](../resources/termstore-group.md) object.
