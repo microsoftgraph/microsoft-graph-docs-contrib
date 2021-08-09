@@ -18,7 +18,7 @@ Each national cloud environment is unique and different than the Microsoft globa
 
 This article provides information about the different Microsoft Graph national cloud deployments and the capabilities that are available to developers within each.
 
-> **Note:** [Microsoft Graph data connect](./data-connect-concept-overview.md?view=graph-rest-1.0) does not support any of the national cloud deployments.
+> **Note:** [Microsoft Graph Data Connect](./data-connect-concept-overview.md) does not support any of the national cloud deployments.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R\_3E0IVypRM]
 
@@ -87,6 +87,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Directory schema extensions | ✔ | ✔ | ➖ |
 | Open type extensions | ✔ | ➖ | ➖ |
 | Search (Microsoft Search) | ➖ | ➖ | ➖ |
+| Service health and communications | ✔ | ✔ | ✔ |
  
 The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
 
