@@ -58,7 +58,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [workbookTableRow](../resources/workbooktablerow.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookTableRow](../../beta/resources/workbooktablerow.md) object in the response body.
 
 ## Examples
 
@@ -135,6 +135,7 @@ Here is an example of the request. Note that `202 Accepted` will only happen whe
 <!-- {
   "blockType": "request",
   "name": "tablerowcollection_add_1"
+  ""
 }-->
 
 ```http
