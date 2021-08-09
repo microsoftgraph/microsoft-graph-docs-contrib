@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [TableRow](../../beta/resources/tablerow.md) object in the response body.
+If successful, this method returns `201 Created` response code and [TableRow](../resources/tablerow.md) object in the response body.
 
 ## Example
 In this example two rows of data are inserted at the end of the table. 
