@@ -1,7 +1,7 @@
 ---
 title: "accessReviewReviewer resource type"
 description: "Represents a reviewer who was contacted for an access review."
-author: "shubhamguptacal"
+author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
