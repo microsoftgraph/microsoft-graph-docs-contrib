@@ -70,8 +70,10 @@ var graphClient = new GraphServiceClient(authCodeCredential, scopes);
 
 # [Javascript](#tab/Javascript)
 
+### Using @azure/msal-browser for  browser applications
+
 ```javascript
-// Using @azure/msal-browser for  browser applications
+
 const {
     PublicClientApplication,
     InteractionType,
@@ -91,11 +93,11 @@ const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
 
 // Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
 const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
+```
 
-or 
+### Using @azure/identity for server-side applications
 
-//Using @azure/identity for server-side applications
-
+```
 const {
     Client
 } = require("@microsoft/microsoft-graph-client");
