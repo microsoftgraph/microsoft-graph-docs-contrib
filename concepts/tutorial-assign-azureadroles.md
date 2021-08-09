@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Assign Azure AD admin roles using Microsoft Graph PIM API"
+title: "Tutorial: Assign Azure AD admin roles using Microsoft Graph Privileged Identity Management (PIM) API"
 description: "Use the Privileged Identity Management API to assign Azure AD admin roles"
 author: "FaithOmbongi"
 localization_priority: Normal
@@ -8,18 +8,16 @@ ms.prod: "governance"
 
 # Tutorial: Assign Azure AD admin roles using Microsoft Graph Privileged Identity Management (PIM) API
 
-Contoso Limited is a growing service provider with an equally growing number of employees. The company wishes to assign the IT Helpdesk the User Administrator roles to manage the lifecycle of employees’ access including user accounts and password policies.
+Contoso Limited is a growing service provider that wishes to have its IT Helpdesk manage the lifecycle of employees’ access.
 
-In this tutorial, the Global Administrator of Contoso Limited creates a security group for IT Helpdesk and adds an employee as a member of the group. Then, using PIM API, the Global Admin will add the security group as eligible for the User Administrator role assignment.
+In this tutorial, you as the Global Administrator of Contoso Limited create a role-assignable security group for IT Helpdesk. Add an employee as a group member. Using the PIM API, then add the security group as eligible for the User Administrator role.
 
-By using a security group to assign the eligible role, Contoso has a more efficient way to manage administrator access to resources, in this case Azure AD roles. This includes:
+By using a security group to assign the eligible role, Contoso has a more efficient way to manage administrator access to resources such as Azure AD roles. For example:
 
-+ To remove existing or add more members, and therefore administrators.
-+ To add more roles to the group members, for example, roles to manage user-facing applications.
++ Removing existing or adding more group members also removes administrators.
++ Adding more roles to the group members, for example, roles to manage user-facing applications.
 
-By assigning eligibility instead of a persistently active User Administrator privilege, the IT Helpdesk's mandate is only for a limited time. This is referred to as **just-in-time access**. Every time an IT Helpdesk team member needs to use their User Administrator role to manage employee access, they'll have to perform a just-in-time activation of the role.
-
-After the Global Administrator has defined the role eligibility, the eligible IT Helpdesk team member must then perform a just in time activation of their assignment before they can perform the roles assigned to them.
+Assigning eligibility instead of a persistently active User Administrator privilege allows for **just-in-time access** which grants temporary permissions to carry out the privileged tasks. After defining the role eligibility, the eligible group member then activates their assignment for a temporary period.
 
 >[!NOTE]
 >The response objects shown in this tutorial might be shortened for readability.
@@ -29,9 +27,9 @@ After the Global Administrator has defined the role eligibility, the eligible IT
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
-+ A test user whom you'll assign the user administrator role.
 + Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role. 
 + The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `RoleManagement.ReadWrite.Directory`, and `RoleEligibilitySchedule.ReadWrite.Directory`.
++ Authenticator app installed on your phone to register a user for multifactor authentication (MFA)
 
 To consent to the required permissions in Graph Explorer:
 1. Select the horizontal ellipses icon to the right of the user account details, and then choose **Select permissions**.
@@ -43,13 +41,13 @@ To consent to the required permissions in Graph Explorer:
     + RoleEligibilitySchedule (2), expand and then select **RoleEligibilitySchedule.ReadWrite.Directory**.
     + User (8), expand and then select **User.ReadWrite.All**.
    
-   Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
+   Select **Consent**, and then select **Accept** to accept the consent of the permissions. Consent the RoleEligibilitySchedule.ReadWrite.Directory permission on behalf of your organization.
 
   :::image type="content" source="/graph/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
 
 ## Step 1: Create a test user
 
-You will create a user who must rest their password at first sign-in to the tenant. From this step, record the value of the new user's **id** for use in the next step.
+Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step.
 
 
 ### Request
@@ -95,7 +93,7 @@ Content-type: application/json
 
 ## Step 2: Create a security group that can be assigned an Azure AD role
 
-In this step, create a group that’s assignable to an Azure AD role. Assign yourself as the group owner and both you and the user created in Step 1 as members.
+Create a group that’s assignable to an Azure AD role. Assign yourself as the group owner and both you and the user created in Step 1 as members.
 
 ### Request
 
@@ -157,16 +155,14 @@ Content-type: application/json
 
 ## Step 3: Create a unifiedRoleEligibilityScheduleRequest
 
-Now that we have a security group, we can assign it as eligible for the User Administrator role.
+Now that you have a security group, assign it as eligible for the User Administrator role. In this step:
 
-In this step:
-
-+ Create a template, a unifiedRoleEligibilityScheduleRequest, that identifies that the group IT Helpdesk (User) is eligible for User Administrator role for a period of one year. Azure AD extends this eligible assignment the group members, that is, you and the user created in Step 1.
-+ Scope the eligible assignment to your entire tenant. This allows the user admin to perform the roles assigned to their privileges across all users in your tenant, except higher privilege users such as the Global Administrator.
++ Create a unifiedRoleEligibilityScheduleRequest that identifies that the group IT Helpdesk (User) is eligible for User Administrator role for one year. Azure AD extends this eligible assignment the group members, that is, you and the user created in Step 1.
++ Scope the eligible assignment to your entire tenant. This allows the user admin to use their privilege against all users in your tenant, except higher privilege users such as the Global Administrator.
 
 ### Request
 
-Replace `6d77df76-5f95-4e40-9a92-f9d35efbe243` with the value of **id** of the group you created in Step 2. In this request, this is the principal to whom you are assigning eligibility to the role. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Azure AD.
+Replace `6d77df76-5f95-4e40-9a92-f9d35efbe243` with the value of **id** of the group you created in Step 2. In this request, this is the principal you're assigning eligibility to the role to. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Azure AD.
 
 <!-- {
   "blockType": "request",
@@ -282,7 +278,7 @@ Content-type: application/json
 }
 ```
 
-While the group members are now eligible for the User Administrator role, they are still unable to make use of the role. This is because they are yet to activate their eligibility. You can confirm this by checking the user's current role assignments in your tenant.
+While the group members are now eligible for the User Administrator role, they're still unable to use the role. This is because they're yet to activate their eligibility. You can confirm by checking the user's current role assignments.
 
 
 > [!WARNING]
@@ -316,13 +312,15 @@ Content-type: application/json
 }
 ```
 
-The empty response object shows that the user has no existing Azure AD roles in Contoso. They will need to perform a just in time activation of the User Administrator role and privilege before they can perform actions that are only allowed for the role.
+The empty response object shows that the user has no existing Azure AD roles in Contoso. They'll activate their eligible User Administrator role for a limited time.
 
 ## Step 5: User self-activates their eligible assignment
 
-An incident ticket has been raised in Contoso's incident management system and the company requires that all employee's refresh tokens be invalidated. This ticket number CONTOSO:Security-012345 has been assigned to the IT Helpdesk. As a member of IT Helpdesk, the user is responsible for fulfilling the ticket requirements.
+An incident ticket CONTOSO: Security-012345 has been raised in Contoso's incident management system and the company requires that the invalidation of all employee's refresh tokens. As a member of IT Helpdesk, the user is responsible for fulfilling this task.
 
-First, the user confirms and retrieves the eligible assignments they are allowed to activate
+Sign in to Graph Explorer as the user created in Step 1. You'll first change your password because this was specified during account creation.
+
+First, confirm the eligible assignment you (signed-in as the user created in Step 1) are allowed to activate.
 
 
 > [!WARNING]
@@ -355,13 +353,11 @@ Content-type: application/json
 }
 ```
 
-Then, they perform a just-in-time activation of their own eligible assignment, to activate their role for five hours.
+Now, activate your User Administrator role for five hours.
 
 ### Request
 
-For this step, login to Graph Explorer as the user created in Step 1. You will be required to first change your password because this was specified during account creation. Ruh the following request.
-
-In this request, the `UserAdd` action allows the eligible user to activate their own eligible assignment. They will activate it for a period of 5 hours.
+In this request, the `UserAdd` action allows you to activate your own eligible assignment. Activate it for 5 hours.
 
 <!-- {
   "blockType": "request",
@@ -403,7 +399,7 @@ Content-type: application/json
 
 ```
 
-By repeating the second request in Step 4 above, the user can confirm that they have an active assignment for the User Administrator role. Now, they may perform any allowed actions within five hours that their assignment is active for, including invalidating all employees' refresh tokens. After five hours, their active assignment expires but their eligible assignment remains for future activation.
+Repeat the second request in Step 4 to confirm your active assignment for the User Administrator role. With your new privilege, carry out any allowed actions within five hours your assignment is active for. This includes invalidating all employees' refresh tokens. After five hours, the active assignment expires but you still remain eligible for the User Administrator role.
 
 ## Step 6: Clean up resources
 
@@ -459,7 +455,7 @@ HTTP/1.1 204 No Content
 
 ### Cancel the role eligibility schedule request
 
-Replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of the role eligibility schedule. Granted role eligibility schedule requests are canceled than automatically deleted by Azure AD in 30 days.
+Replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of the role eligibility schedule. Granted role eligibility schedule requests are canceled then automatically deleted by Azure AD in 30 days.
 
 <!-- {
   "blockType": "request",
