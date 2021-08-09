@@ -18,7 +18,7 @@ For more information on access tokens, app registration, and delegated and appli
 
 ### Access service communications API on behalf of signed-in user
 
-Delegated permissions are needed to access the service communications API on behalf of a signed-in user. Customer-facing canvas applications, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) (accessible only to admin roles), can call the service communications API to get the service health and service announcements data for the signed-in user's tenant, _on behalf of the signed-in user_. Users can find out whether their subscribed servies are healthy or have issues. They can also learn about any current service issues affecting their tenants. 
+Delegated permissions are needed to access the service communications API on behalf of a signed-in user. Customer-facing canvas applications, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) (accessible only to admin roles), can call the service communications API to get the service health and service announcements data for the signed-in user's tenant, _on behalf of the signed-in user_. Users can find out whether their subscribed services are healthy or have issues. They can also learn about any current service issues affecting their tenants. 
 
 ### Access service communications API without user
 
