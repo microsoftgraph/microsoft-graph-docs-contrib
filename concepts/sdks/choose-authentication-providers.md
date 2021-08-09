@@ -97,7 +97,7 @@ const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientAp
 
 ### Using @azure/identity for server-side applications
 
-```
+```javascript
 const {
     Client
 } = require("@microsoft/microsoft-graph-client");
@@ -108,16 +108,16 @@ const {
     AuthorizationCodeCredential
 } = require("@azure/identity");
 
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
-
 const credential = new AuthorizationCodeCredential(
     "<YOUR_TENANT_ID>",
     "<YOUR_CLIENT_ID>",
     "<AUTH_CODE_FROM_QUERY_PARAMETERS>",
     "<REDIRECT_URL>"
 );
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
 ```
 
 # [Java](#tab/Java)
