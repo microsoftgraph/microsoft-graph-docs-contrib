@@ -190,7 +190,7 @@ Content-type: text/plain
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_pr_count"
 }-->
 ```msgraph-interactive
