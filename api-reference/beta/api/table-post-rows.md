@@ -107,7 +107,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.ExcelServices.workbookTableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 
 ```http
@@ -203,7 +203,7 @@ Content-type: application/json
 Content-length: 45
 
 {
-  "id": {id},
+  "id": "{id}",
   "status": "running"
 }
 ```
@@ -223,7 +223,7 @@ Content-type: application/json
 Content-length: 45
 
 {
-  "id": {id},
+  "id": "{id}",
   "status": "failed",
   "error": {
     "code": "NotFound",
@@ -250,7 +250,7 @@ Content-type: application/json
 Content-length: 45
 
 {
-  "id": {id},
+  "id": "{id}",
   "status": "succeeded",
   "resourcelocation": "https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tableRowOperationResult(key={id})?sessionId={id}"
 }
@@ -279,7 +279,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.ExcelServices.TableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 
 ```http
