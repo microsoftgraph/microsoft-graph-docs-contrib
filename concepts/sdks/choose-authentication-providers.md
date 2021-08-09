@@ -61,6 +61,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
+// https://docs.microsoft.com/dotnet/api/azure.identity.authorizationcodecredential
 var authCodeCredential = new AuthorizationCodeCredential(
     tenantId, clientId, clientSecret, authorizationCode, options);
 
@@ -134,6 +135,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
+// https://docs.microsoft.com/dotnet/api/azure.identity.clientsecretcredential
 var clientSecretCredential = new ClientSecretCredential(
     tenantId, clientId, clientSecret, options);
 
@@ -158,6 +160,7 @@ var options = new TokenCredentialOptions
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
 
+// https://docs.microsoft.com/dotnet/api/azure.identity.clientcertificatecredential
 var clientCertCredential = new ClientCertificateCredential(
     tenantId, clientId, clientCertificate, options);
 
@@ -212,7 +215,7 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 
 # [C#](#tab/CS)
 
-The `Azure.Identity` package does not currently support the on-behalf-of flow. Instead create a custom authentication provider using MSAL.
+The `Azure.Identity` package does not support the on-behalf-of flow as of version 1.4.0. Instead create a custom authentication provider using MSAL.
 
 ```csharp
 var scopes = new[] { "User.Read" };
@@ -362,6 +365,7 @@ Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) =>
     return Task.FromResult(0);
 };
 
+// https://docs.microsoft.com/dotnet/api/azure.identity.devicecodecredential
 var deviceCodeCredential = new DeviceCodeCredential(
     callback, tenantId, clientId, options);
 
@@ -501,6 +505,7 @@ var options = new InteractiveBrowserCredentialOptions
     RedirectUri = new Uri("http://localhost"),
 };
 
+// https://docs.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
 var interactiveCredential = new InteractiveBrowserCredential(options);
 
 var graphClient = new GraphServiceClient(interactiveCredential, scopes);
