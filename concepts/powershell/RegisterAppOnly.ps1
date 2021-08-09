@@ -37,6 +37,7 @@ Write-Host -ForegroundColor Cyan "Certificate loaded"
 
 # Create app registration
 $appRegistration = New-MgApplication -DisplayName $AppName -SignInAudience "AzureADMyOrg" `
+ -Web @{ RedirectUris="http://localhost"; } `
  -RequiredResourceAccess @{ ResourceAppId=$graphResourceId; ResourceAccess=$UserReadAll, $GroupReadAll } `
  -AdditionalProperties @{} -KeyCredentials @(@{ Type="AsymmetricX509Cert"; Usage="Verify"; Key=$cert.RawData })
 Write-Host -ForegroundColor Cyan "App registration created with app ID" $appRegistration.AppId
