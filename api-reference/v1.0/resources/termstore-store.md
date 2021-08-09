@@ -3,7 +3,7 @@ title: "store resource type"
 description:  "Represents a taxonomy term store."
 author: vishriv
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: "resourcePageType"
 ---
 
@@ -18,7 +18,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[List groups](../api/termstore-list-groups.md)|[microsoft.graph.termStore.group](../resources/termstore-group.md) collection| Get the groups from available in the term store object.|
+|[List groups](../api/termstore-list-groups.md)|[microsoft.graph.termStore.group](../resources/termstore-group.md) collection| Get the groups available in the term store object.|
 |[Get store](../api/termstore-store-get.md) | [microsoft.graph.termStore.store](../resources/termstore-store.md) | Read the properties and relationships of a term store object.
 |[Update store](../api/termstore-store-update.md) | [microsoft.graph.termStore.store](../resources/termstore-store.md) | Update the properties of a term store object.|
 

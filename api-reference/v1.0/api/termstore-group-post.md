@@ -3,7 +3,7 @@ title: "Create group"
 description: "Create a new group object."
 author: vishriv
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /termStore/groups
+POST sites/{site-id}/termStore/groups
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ If successful, this method returns a `201 Created` response code and a [group](.
 }-->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/termStore/groups
+POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups
 Content-Type: application/json
 Content-length: 135
 
@@ -73,7 +73,7 @@ Content-length: 135
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

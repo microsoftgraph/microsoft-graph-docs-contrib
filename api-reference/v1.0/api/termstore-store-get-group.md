@@ -3,7 +3,7 @@ title: "Get group"
 description: "Read the properties and relationships of a group object."
 author: vishriv
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /termStore/groups/{groupId}
+GET sites/{site-id}/termStore/groups/{group-id}
 ```
 
 ## Request headers
@@ -59,12 +59,12 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/termStore/groups/1FFD3F87-9464-488A-A0EC-8FB90911182C
+GET https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups/1FFD3F87-9464-488A-A0EC-8FB90911182C
 ```
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -84,7 +84,7 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
-### Example 2: Get a termStore group and its parent site ID
+### Example 2: Get a site collection termStore group and its parent site ID
 
 #### Request
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/sites/mycompany.sharepoint.com,8f03a01c-dcf
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

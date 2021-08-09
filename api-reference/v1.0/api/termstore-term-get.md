@@ -3,7 +3,7 @@ title: "Get term"
 description: "Read the properties and relationships of a term object."
 author: vishriv
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 } -->
 
 ``` http
-GET /termStore/groups/{groupId}/sets/{setId}/terms/{termId}
-GET /termStore/sets/{setId}/terms/{termId}
+GET sites/{site-id}/termStore/groups/{group-id}/sets/{set-id}/terms/{term-id}
+GET sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 ```
 
 ## Optional query parameters
@@ -59,11 +59,11 @@ If successful, this method returns a `200 OK` response code and a [term](../reso
 } -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/termStore/groups/8401c566-a86e-4734-a4db-eeb434cd99f9/sets/{setId}/terms/81be9856-9856-81be-5698-be815698be81
+GET https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups/8401c566-a86e-4734-a4db-eeb434cd99f9/sets/{setId}/terms/81be9856-9856-81be-5698-be815698be81
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

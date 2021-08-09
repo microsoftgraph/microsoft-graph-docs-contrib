@@ -3,7 +3,7 @@ title: "Update set"
 description: "Update the properties of a set object."
 author: vishriv
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /termStore/sets/{setId}
+PATCH sites/{site-id}/termStore/sets/{set-id}
 ```
 
 ## Request headers
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [set]
 } -->
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/termStore/sets/3607e9f9-e9f9-3607-f9e9-0736f9e90736
+PATCH https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets/3607e9f9-e9f9-3607-f9e9-0736f9e90736
 Content-Type: application/json
 Content-length: 288
 
@@ -78,7 +78,7 @@ Content-length: 288
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

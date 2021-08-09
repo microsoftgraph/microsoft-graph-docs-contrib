@@ -3,7 +3,7 @@ title: "Delete set"
 description: "Delete a set object."
 author: vishriv
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /termStore/sets/{setId}
+DELETE sites/{site-id}/termStore/sets/{set-id}
 ```
 
 ## Request headers
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/termStore/sets/8861b57a-c777-49e7-826f-47d6afecf80d
+DELETE https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets/8861b57a-c777-49e7-826f-47d6afecf80d
 ```
 
 ### Response

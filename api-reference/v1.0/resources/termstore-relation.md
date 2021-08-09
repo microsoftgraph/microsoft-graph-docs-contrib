@@ -3,7 +3,7 @@ title: "relation resource type"
 description: "Represents the relationship between terms in a term store."
 author: vishriv
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "List relations"
 description: "Get the relations from the relations navigation property."
 author: vishriv
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /termStore/sets/{setId}/relations
-GET /termStore/sets/{setId}/terms/{termId}/relations
+GET sites/{site-id}/termStore/sets/{set-id}/relations
+GET sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 ```
 
 ## Optional query parameters
@@ -59,11 +59,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }-->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/termStore/sets/874be29c-35c8-4295-b3f8-ca2400c966c3/relations
+GET https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets/874be29c-35c8-4295-b3f8-ca2400c966c3/relations
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,7 +3,7 @@ title: "List sets"
 description: "Get a list of the set objects and their properties."
 author: vishriv
 localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /termStore/groups/{groupId}/sets
+GET sites/{site-id}/termStore/groups/{group-id}/sets
 ```
 
 ## Optional query parameters
@@ -58,12 +58,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }-->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/termStore/groups/03577abb-975e-4fb4-9ee0-4102a9108f94/sets
+GET https://graph.microsoft.com/v1.0/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups/03577abb-975e-4fb4-9ee0-4102a9108f94/sets
 ```
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
