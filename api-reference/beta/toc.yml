@@ -13809,6 +13809,8 @@ items:
           href: api/directory-deleteditems-delete.md
         - name: Restore deleted group
           href: api/directory-deleteditems-restore.md
+        - name: List permission grants
+          href: api/group-list-permissiongrants.md
       - name: Channel
         href: resources/channel.md
         items:
@@ -14251,11 +14253,11 @@ items:
       - name: Resource-specific permission grants
         href: resources/resourcespecificpermissiongrant.md
         items:
-        - name: List permission grants of team
+        - name: List for team
           href: api/team-list-permissiongrants.md
-        - name: List permission grants of group
+        - name: List for group
           href: api/group-list-permissiongrants.md
-        - name: List permission grants of chat
+        - name: List for chat
           href: api/chat-list-permissiongrants.md
     - name: To-do tasks
       displayName: Microsoft To Do
