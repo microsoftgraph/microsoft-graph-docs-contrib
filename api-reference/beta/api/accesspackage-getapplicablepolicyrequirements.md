@@ -37,9 +37,6 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicable
 
 None.
 
-## Optional query parameters
-None.
-
 ## Request headers
 |Name|Description|
 |:---|:---|
