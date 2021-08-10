@@ -1,6 +1,21 @@
 {
     "changelog": [{
         "ChangeList": [{
+            "Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
+            "ApiChange": "Property",
+            "ChangedApiName": "conditionalAccessSessionControls",
+            "ChangeType": "Addition",
+            "Description": "added disableResilienceDefaults property to conditionalaccesssessioncontrols.md",
+            "Target": "conditionalAccessSessionControls"
+        }],
+        "Id": "6e130d4b-3412-4141-9375-81938f04e62c",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-18-10T2:32:52.387Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Identity and sign-in"
+	},{
+        "ChangeList": [{
             "Id": "d4673d1c-2924-11eb-9746-158983535857",
             "ApiChange": "Property",
             "ChangedApiName": "userRiskLevels",
