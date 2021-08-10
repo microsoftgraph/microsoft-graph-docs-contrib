@@ -36,7 +36,6 @@ POST /me/drive/items/{id}/workbook/tables/{id|name}/rows
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows
 POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows
 POST /me/drive/root:/{item-path}:/workbookworksheets/{id|name}/tables/{id|name}/rows
-
 ```
 
 ## Request headers
@@ -83,10 +82,10 @@ Content-type: application/json
 Content-length: 90
 
 {
-  "values": [
+  "values": "[
     [1, 2, 3],
     [4, 5, 6]
-  ]
+  ]"
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -117,15 +116,15 @@ Content-length: 45
 
 {
   "index": 99,
-  "values": [[1, 2, 3]]
+  "values": "[[1, 2, 3]]"
 }
 ```
 
 ### Example 2: Add two rows to a table using async
 
-Async requests will be useful if the request takes longer time than expected. Note that `Workbook-Session-Id` is required in async requests. The user needs to create a session before using async rich API features.
+Async requests will be useful if the request takes longer time than expected. Please note that `Workbook-Session-Id` is required in async requests. The user needs to create a session before using async rich API features.
 
-For async features, the user needs to issue 2-3 requests.
+For async features, the user usually needs to issue 2-3 requests. This request, [Get workbookOperation](./workbookoperation-get.md) request and optionally [Get tableRowOperationResult](./tablerowoperationresult-get.md) request.
 
 #### 1. Initiate addTableRow request in async
 
@@ -136,7 +135,6 @@ Here is an example of the request. Note that `202 Accepted` will only happen whe
 <!-- {
   "blockType": "request",
   "name": "tablerowcollection_add_1"
-  ""
 }-->
 
 ```http
@@ -147,150 +145,29 @@ Workbook-Session-Id: {Workbook-Session-Id}
 Content-length: 51
 
 {
-  "values": [
+  "values": "[
     [1, 2, 3],
     [4, 5, 6]
-  ]
+  ]"
 }
 ```
 
 ##### Response
 
-Here is an example of the response.
+Here is another example of the response that will lead to an async operation, for the following processing, please refer to [Get workbookOperation](./workbookoperation-get.md) and [Get tableRowOperationResult](./tablerowoperationresult-get.md)
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.Json"
 } -->
 
 ```http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/operations/{id}?sessionInfo
+Location: https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/operations/{id}?sessionId={id}
 Content-type: application/json
 Content-length: 45
 
 {
-}
-```
-
-#### 2. Poll the URL at last response header called the location property
-
-##### Request
-
-Here is an example of the request.
-
-<!-- {
-  "blockType": "request",
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/operations/{id}?sessionId={id}
-Content-type: application/json
-Content-length: 51
-```
-
-##### Response running
-
-Here is an example of the running response. When you get this status, poll the request again until you get the following responses.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.workbookOperation"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 45
-
-{
-  "id": "{id}",
-  "status": "running"
-}
-```
-
-##### Response failed
-
-Here is an example of the failed response. The `error` section shows the sync errors returned.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.workbookOperation"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 45
-
-{
-  "id": "{id}",
-  "status": "failed",
-  "error": {
-    "code": "NotFound",
-    "message": "The requested resource doesn't exist.",
-    "innerError": {
-      "code": "itemNotFound",
-      "message": "The requested resource doesn't exist."
-    }
-  }
-}
-```
-
-##### Response succeeded
-
-Here is an example of a successful response.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 45
-
-{
-  "id": "{id}",
-  "status": "succeeded",
-  "resourcelocation": "https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tableRowOperationResult(key={id})?sessionId={id}"
-}
-```
-
-#### 3. (Optional) Get return values from the resourceLocation URL
-
-##### Request
-
-The resource location is returned in a successful response from the previous step.
-
-<!-- {
-  "blockType": "request",
-  "name": "tablerowcollection_add_1"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tableRowOperationResult(key={id})?sessionId={id}
-Content-type: application/json
-Content-length: 51
-```
-
-##### Response
-
-Here is an example of the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTableRow"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
-Content-type: application/json
-Content-length: 133
-
-{
-  "index": 99,
-  "values": [[1, 2, 3]]
 }
 ```
 

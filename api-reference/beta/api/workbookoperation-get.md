@@ -33,7 +33,7 @@ GET /me/drive/items/{id}/workbook/operations/{operation-id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}. Optional. |
 
 ## Request body
 
@@ -56,7 +56,7 @@ The following is an example of a long-running operation request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
+GET https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}?sessionId={id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookoperation-csharp-snippets.md)]
@@ -79,7 +79,9 @@ GET https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/ope
 
 ### Response
 
-The following is the response with the status of "running".
+#### Response "running"
+
+The following is the response with the status of "running". When you get this status, poll the request again until you don't get the same responses.
 
 
 <!-- {
@@ -98,7 +100,15 @@ Content-type: application/json
 }
 ```
 
-The following is the response with the status of "succeeded".
+#### Response "succeeded"
+
+The following is the response with the status of "succeeded". The resourceLocation is a group of urls that represent the return values of the original long-running operation. Please go to link to get the info about how to get result from the resourceLocation.
+
+| Operation      |resourceLocation|
+|:----------|:----------|
+| Create Session | [sessionInfoResource](../resources/workbooksessioninfo.md) |
+| Create TableRow | [tableRowOperationResult](./tablerowoperationresult-get.md) |
+| Delete TableRow| No resourceLocation needed. |
 
 ```http
 HTTP/1.1 200 OK
@@ -107,9 +117,11 @@ Content-type: application/json
 {
   "id": "operation-id",
   "status": "succeeded",
-  "resourceLocation":"https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')"
+  "resourceLocation":"https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/{resourceLocation}(key='{key}')?sessionId={id}"
 }
 ```
+
+#### Response "failed"
 
 The following is the response with the status of "failed".
 
