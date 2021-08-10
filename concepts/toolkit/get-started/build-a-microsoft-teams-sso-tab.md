@@ -7,52 +7,24 @@ author: simonagren
 
 # Build a Microsoft Teams SSO tab with the Microsoft Graph Toolkit
 
-This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams SSO solution. Getting started involves the following steps:
+This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app with single sign-on (SSO) and does require a backend. For implementing a Teams tab with interactive login, see [Build a Microsoft Teams Tab](./build-a-microsoft-teams-tab.md).
 
-1. Create a new Teams application with a custom tab.
-2. Install and run the app locally.
-3. Add the Microsoft Graph Toolkit.
-4. Create the auth popup page.
-5. Configure the Azure AD application registration.
+Getting started involves the following steps: 
+
+1. Add the Microsoft Graph Toolkit.
+1. Create the auth popup page.
+1. Creating an app/client ID
 6. Create the backend
 7. Initialize the Teams SSO Provider.
 8. Add components.
 9. Test your app.
-
-## Create a new Teams application with a custom tab
-
-The easiest way to create a new Teams app is to use the [Microsoft Teams Toolkit extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) for Visual Studio Code. Follow the instructions to [set up a new Teams project](/microsoftteams/platform/toolkit/visual-studio-code-overview#set-up-a-new-teams-project). 
-
-1. On the **Select capabilities** step, the **Tab** capability is already selected. Press **OK**.
-2. On the **Frontend hosting type** step, select **Azure**
-3. On the **Cloud resources** step, leave it with **0 Selected**. Press **OK**.
-4. On the **Programming Language step**, choose **TypeScript**.
-5. Select a **Workspace Folder** > enter the **Application name**. A folder is created within your workspace folder for the project you are creating
-
-Your Teams app is created within a few seconds. 
-
-## Install and run the app locally
-When you run the app for the first time all dependencies are downloaded and the app is built. Teams Toolkit also registers and configures an **Azure AD application** for you.
-
-To build and run your app locally:
-1. From Visual Studio Code, press **F5** to run your application in debug mode. You may be prompted to sign in via the **Teams Toolkit**. If so, sign in with your **M365 account**.
-
-> The toolkit prompts you to install a local certificate if required. This certificate allows Teams to load your application from `https://localhost`. Select **yes** when the dialog appears.
-
-2. Your web browser is started to run the application. Select to use the **web app** instead of the **Microsoft Teams client**.
-
-3. You may be prompted to sign in. If so, sign in with your **M365 account**.
-
-4. When prompted to install the app onto Teams, press Add.
-
-You should now be presented with the **Welcome sample** from the **Teams Toolkit**. Feel free to stop the debugging for now.
 
 ## Add the Microsoft Graph Toolkit
 
 You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
 
 ### Use via mgt-loader
-To use the Toolkit and the Teams SDK via the loaders, add the following references inside the `<head>` of the `public/index.html` file:
+To use the Toolkit and the Teams SDK via the loaders, add the reference in a script to your code:
 
 ```html
 <!-- Microsoft Teams sdk must be referenced before the toolkit -->
@@ -61,70 +33,36 @@ To use the Toolkit and the Teams SDK via the loaders, add the following referenc
 ```
 
 ### Use via npm (ES6 modules)
-Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. The Microsoft Teams SDK has already been added to the project. To use the ES6 modules, make sure you are in the **tabs** folder and add the following npm packages for the Toolkit. 
+Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm packages for both the Toolkit and the Microsoft Teams SDK to your project:
 
 ```cmd
-npm install @microsoft/mgt-element @microsoft/mgt-teams-sso-provider
+npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-sso-provider
 ```
 
 ## Create the auth popup page
 
 In order to allow users to sign in, you need to provide a URL that the Teams app will open in a popup to follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsSSOProvider.handleAuth()` method.
 
-You can do this by adding a new `TeamsAuth.tsx` file in the `src/components` folder and adding the following code: 
+You can do this by adding a new `auth.html` file (which should be at the same level as `index.html`) and adding the following code:
 
-```ts
-import { TeamsSSOProvider } from "@microsoft/mgt-teams-sso-provider";
-import React from "react";
-/**
- * This component is used to handle the Microsoft Teams Auth
- * for the Microsoft Graph Toolkit
- * Teams SSO Provider
- */
-class TeamsAuth extends React.Component {
-  render() {
-    
-    TeamsSSOProvider.handleAuth();
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+  </head>
 
-    return (
-      <div>
-        <h1>Signing you in</h1>
-      </div>
-    );
-  }
-}
-
-export default TeamsAuth;
+  <body>
+    <script>
+      mgt.TeamsSSOProvider.handleAuth();
+    </script>
+  </body>
+</html>
 ```
 
-Then locate the `src/components/App.tsx` file in your project directory. Import the `TeamsAuth` component and add the following snippet before the `return()`:
-
-```ts
-if (window.location.pathname.startsWith('/teamsauth')) {
-  return <TeamsAuth />
-}
-```
-
-## Configure the Azure AD application registration
-As mentioned earlier, an Azure Active Directory application has been registered. Both the **client ID** and **client secret** has been added to `local.env` in the `.fx` folder as **AUTH_CLIENT_ID** and **AUTH_CLIENT_SECRET**.
-
-1. Navigate to the Azure portal and find the application registration (same name as the app).
-
-2. Navigate to redirect-URI: 
-- Under **Redirect URI**, set the first drop-down to `Single Page Application` and set the value to `https://localhost:3000/teamsauth`
-
-3. Under **Supported account types** change to **Accounts in any organization...**
-
-4. Navigate to **API permissions** under **Manage**. Select **Add a permission** > **Microsoft Graph** > **Delegated permissions**, then add the following permissions   
-    - `email`, `offline_access`, `openid`, `profile`, `User.Read`
-    - Select **Add permissions** when done
-
-5. (OPTIONAL) If you want to pre-consent the scopes that the Microsoft Graph Toolkit components used in this sample, add the following permissions: 
-    - `user.read.all, mail.readBasic, people.read.all, sites.read.all, user.readbasic.all, contacts.read, presence.read, presence.read.all, tasks.readwrite, tasks.read`
-    
-    - If you use different components or plan to use other Microsoft Graph APIs, you may require additional permissions. See the [documentation](https://docs.microsoft.com/graph/toolkit/overview) for each component for details on required permissions.
-
-    - To pre-consent as an admin, select **Grant admin consent**, then select **Yes**
+## Creating an app/client ID
+Have a look at the section [Creating the AAD registration](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/main/samples/teams-sso-node/readme.md#creating-the-aad-registration) from the `readme` of the [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node). This involves registering the AAD application and configuring it for SSO.
 
 ## Create the backend
 
@@ -137,9 +75,9 @@ At the app root, create a folder named **server** (the same level as the **tabs*
 
 1. `package.json`
 2. `tsconfig.ts`
-3. `.env` - Get values from `local.env` in the app `.fx` folder
-  - **AUTH_CLIENT_ID** value and copy to **CLIENT_ID**
-  - **AUTH_CLIENT_SECRET** value and copy to **APP_SECRET**
+3. `.env`
+  - Set **CLIENT_ID** to the client ID of your application
+  - Set the **APP_SECRET** you created
 
 ### Src folder
 Create a folder named **src** inside of the **server** folder. Inside of the new folder, create:
@@ -272,12 +210,11 @@ app.listen(PORT, () => {
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams SSO Provider](../providers/teamssso.md) handles all of the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
-
 For SSO-mode, make sure to provide `sso-url` / `ssoUrl` and have it point to you backend API.
 
 ### Initialize in HTML
 
-In `tabs\public/index.html`, add the Teams SSO provider into the `<body>`, as shown.
+Add the `mgt-teams-sso-provider` into the HTML `<body>`
 
 ```html
 <mgt-teams-sso-provider 
@@ -286,14 +223,14 @@ In `tabs\public/index.html`, add the Teams SSO provider into the `<body>`, as sh
   scopes="user.read,user.read.all,mail.readBasic,people.read.all,sites.read.all,user.readbasic.all,contacts.read,presence.read,presence.read.all,tasks.readwrite,tasks.read"
   sso-url="http://localhost:8000/api/token"
   http-method="POST"
-  ></mgt-teams-provider>
+  ></mgt-teams-sso-provider>
 ```
 
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application. 
 
 ### Initialize in JavaScript
 
-To initialize the provider in your JavaScript code, Locate the `src/components/App.tsx` file in your project directory. Import the Teams Provider and initialize the provider.
+To initialize the provider in your JavaScript code, import the Teams Provider and initialize the provider.
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
@@ -314,15 +251,15 @@ Replace `<YOUR_CLIENT_ID>` with the client ID for your application.
 
 ## Add components
 
-Now, you're ready to add any of the Microsoft Graph Toolkit components to your tab. 
+Now, you're ready to add any of the Microsoft Graph Toolkit components. 
 
-You can add components to your HTML as you normally would. For example, to add the `Person` component add the below code to the body of your `index.html`:
+You can add components to your HTML as you normally would. For example, to add the `Person` component add the below code to your HTML:
 
 ```HTML
 <mgt-person person-query="me"></mgt-person>
 ```
 
-Or, you can add the components in JSX to the Tab component. We recommend using the `mgt-react` library if you created your Teams app using the Microsoft Teams Toolkit extension. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
+Or, you can add the components in JSX. We recommend using the `mgt-react` library. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
 
 First, install `mgt-react`:
 
@@ -330,13 +267,13 @@ First, install `mgt-react`:
 npm install @microsoft/mgt-react
 ```
 
-Locate the `src/components/Tab.tsx` file and import the components you want to use from the `mgt-react` library. For example, to add the `Person` component use:
+Import the components you want to use from the `mgt-react` library. For example, to add the `Person` component use:
 
 ```JavaScript
 import { Person } from "@microsoft/mgt-react"
 ```
 
-Then, add the the component to the `return()` statement of the `render()` method of `Tab`:
+Then, add the the component to the `return()` statement of the `render()` method:
 
 ```JavaScript
 render() {
@@ -347,19 +284,12 @@ render() {
 ```
 
 ## Test your application
-
-First, make open a terminal and make sure you are in the **server** folder.
-
-1. Run `npm install` to install the dependencies
-2. Run `npm start` to start the backend service at `localhost:8000` 
-
-Now, fron Visual Studio Code you can once again press **F5** from  to repeat the procedure and run your application in debug mode. 
+Have a look at the section [Creating a Teams App](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/main/samples/teams-sso-node/readme.md#creating-a-teams-app) from the `readme` of the [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node).
 
 If everything has been configured correctly, you will see the `Person` component rendered without the need to log in.
 > IMPORTANT! If you haven't pre-consented, you might have to consent via a dialog prompt. 
 
 ## Next Steps
-- Check out this step-by-step tutorial on [building a Teams tab](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/).
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
