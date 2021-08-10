@@ -87,7 +87,8 @@ Content-Type: application/json
             "isApprovalRequiredForExtension": false, 
             "isRequestorJustificationRequired": false, 
             "questions": [], 
-            "existingAnswers": [] 
+            "existingAnswers": [],
+            "schedule": []
         }
     ]
 }
