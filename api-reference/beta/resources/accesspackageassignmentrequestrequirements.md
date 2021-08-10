@@ -59,7 +59,7 @@ The following is a JSON representation of the type.
   ],
   "existingAnswers": [
     {
-      "@odata.type": "microsoft.graph.accessPackageAnswer"
+      "@odata.type": "microsoft.graph.accessPackageAnswerString"
     }
   ]
 }
