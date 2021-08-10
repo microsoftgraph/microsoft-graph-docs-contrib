@@ -278,8 +278,8 @@ Content-type: application/json
     
     | Operation type | Properties omitted by delta query |
     |---------|----------|
-    | Create/Modify | `ctag`, `lastModifiedBy` |
-    | Delete | `ctag`, `lastModifiedBy`, `name` |
+    | Create/Modify | `ctag` |
+    | Delete | `ctag`, `name` |
 
 
     **OneDrive (consumer)**

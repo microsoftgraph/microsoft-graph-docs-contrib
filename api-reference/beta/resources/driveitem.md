@@ -58,6 +58,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "malware": { "@odata.type": "microsoft.graph.malware" },
   "media": { "@odata.type": "microsoft.graph.media" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
@@ -123,6 +124,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | lastModifiedDateTime | DateTimeOffset     | Date and time the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
 | media                | [media][]          | Information about the media (audio or video) item. Read-write. Only on OneDrive for Business and SharePoint.
+| malware              | [malware][]        | Malware metadata, if the item was detected to contain malware. Read-only.
 | name                 | String             | The name of the item (filename and extension). Read-write.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
@@ -240,6 +242,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [geoCoordinates]: geocoordinates.md
 [List activities]: ../api/activities-list.md
 [listItem]: listitem.md
+[malware]: malware.md
 [media]: media.md
 [package]: package.md
 [permission]: permission.md
