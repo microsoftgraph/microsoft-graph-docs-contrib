@@ -58,7 +58,6 @@ If successful, this method returns a `201 Created` response code and a [term](..
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_term_from_"

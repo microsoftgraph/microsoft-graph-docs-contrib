@@ -57,7 +57,6 @@ If successful, this method returns a `200 OK` response code and an updated [stor
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_store"
