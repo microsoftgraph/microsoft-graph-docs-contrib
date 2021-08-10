@@ -528,11 +528,11 @@
       "ChangeList": [
         {
           "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
-          "ApiChange": "api",
+          "ApiChange": "Method",
           "ChangedApiName": "getApplicablePolicyRequirements",
           "ChangeType": "Addition",
-          "Description": "Added the [getApplicablePolicyRequirements](https://docs.microsoft.com/en-us/graph/api/accesspackage-getapplicablepolicyrequirements.md) action to the [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-beta) resource.",
-          "Target": "accesspackage"
+          "Description": "Added the [getApplicablePolicyRequirements](https://docs.microsoft.com/en-us/graph/api/accesspackage-getapplicablepolicyrequirements.md) method to the [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-beta) resource.",
+          "Target": "accessPackage"
         },
         {
           "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
