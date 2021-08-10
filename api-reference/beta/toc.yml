@@ -9622,56 +9622,6 @@ items:
             href: api/cloudpcusersetting-delete.md
           - name: Assign
             href: api/cloudpcusersetting-assign.md
-        - name: Role management
-          href: resources/rolemanagement.md
-          items:
-          - name: Role management policy
-            href: resources/unifiedRoleManagementPolicy.md
-            items:
-            - name: List
-              href: api/unifiedrolemanagementpolicy-list.md
-            - name: Get
-              href: api/unifiedrolemanagementpolicy-get.md
-            - name: List effective rules
-              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
-            - name: List rules
-              href: api/unifiedrolemanagementpolicy-list-rules.md
-          - name: Role management policy assignment
-            href: resources/unifiedRoleManagementPolicyAssignment.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyAssignment-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyAssignment-get.md
-          - name: Role management policy rule
-            href: resources/unifiedRoleManagementPolicyRule.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyRule-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyRule-get.md
-            - name: Update
-              href: api/unifiedRoleManagementPolicyRule-update.md
-          - name: Role definition
-            href: resources/unifiedroledefinition.md
-            items:
-            - name: List
-              href: api/rbacapplication-list-roledefinitions.md
-            - name: Get
-              href: api/unifiedroledefinition-get.md
-          - name: Role assignment multiple
-            href: resources/unifiedroleassignmentmultiple.md
-            items:
-            - name: List
-              href: api/rbacapplicationmultiple-list-roleassignments.md
-            - name: Create
-              href: api/rbacapplicationmultiple-post-roleassignments.md
-            - name: Get
-              href: api/unifiedroleassignmentmultiple-get.md
-            - name: Update
-              href: api//unifiedroleassignmentmultiple-update.md
-            - name: Delete
-              href: api/unifiedroleassignmentmultiple-delete.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -10940,6 +10890,33 @@ items:
               href: api/unifiedRoleEligibilityScheduleInstance-get.md
             - name: Filter by current user
               href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
+          - name: Role management policy
+            href: resources/unifiedRoleManagementPolicy.md
+            items:
+            - name: List
+              href: api/unifiedrolemanagementpolicy-list.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List effective rules
+              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+          - name: Role management policy assignment
+            href: resources/unifiedRoleManagementPolicyAssignment.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyAssignment-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyAssignment-get.md
+          - name: Role management policy rule
+            href: resources/unifiedRoleManagementPolicyRule.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyRule-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyRule-get.md
+            - name: Update
+              href: api/unifiedRoleManagementPolicyRule-update.md
       - name: Identity and sign-in
         items:
         - name: Application authentication method policy (preview)
@@ -11946,6 +11923,8 @@ items:
               href: api/accesspackageassignment-list.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
+            - name: Reprocess
+              href: api/accesspackageassignment-reprocess.md
           - name: Access package assignment approval
             href: resources/approval.md
             items:
@@ -11985,6 +11964,8 @@ items:
               href: api/accesspackageassignmentrequest-filterbycurrentuser.md
             - name: Cancel
               href: api/accesspackageassignmentrequest-cancel.md
+            - name: Reprocess
+              href: api/accesspackageassignmentrequest-reprocess.md
           - name: Access package assignment resource role
             href: resources/accesspackageassignmentresourcerole.md
             items:
