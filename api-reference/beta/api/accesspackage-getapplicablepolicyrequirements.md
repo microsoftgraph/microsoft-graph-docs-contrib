@@ -1,6 +1,6 @@
 ---
 title: "accessPackage: getApplicablePolicyRequirements"
-description: "Allows callers to find requirements to request an assignment for a specific accessPackage."
+description: "Allow callers to find requirements to request an assignment for a specific accessPackage."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This operation allows callers to find properties that are required to successfully request an assignment for a specific accessPackage. 
+Allow callers to find properties that are required to successfully request an assignment for a specific access package. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,10 +35,10 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicable
 
 ## Function parameters
 
-None
+None.
 
 ## Optional query parameters
-None
+None.
 
 ## Request headers
 |Name|Description|
@@ -49,7 +49,7 @@ None
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an `accessPackageAssignmentRequestRequirements` collection in the response body, one object for each policy that the user is an `allowedRequestor`. If there is a policy with no requirements, the `accessPackageAssignmentRequestRequirements` will have false and null values. If there are no policies where the user is an `allowedRequestor`, an empty collection will be returned instead.
+If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an `allowedRequestor`. If a policy has no requirements, the `accessPackageAssignmentRequestRequirements` will have false and null values. If the user is not an `allowedRequestor` on any policies, an empty collection is returned instead.
 
 ## Examples
 
