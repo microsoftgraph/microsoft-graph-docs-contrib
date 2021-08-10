@@ -1,6 +1,32 @@
 {
   "changelog": [
     {
+    "ChangeList": [
+     {
+       "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+       "ApiChange": "Method",
+       "ChangedApiName": "reprocess",
+       "ChangeType": "Addition",
+       "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/accesspackageassignment-reprocess.md) action to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/acesspackageassignment.md) resource.",
+       "Target": "reprocess"
+     },
+     {
+       "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+       "ApiChange": "Method",
+       "ChangedApiName": "reprocess",
+       "ChangeType": "Addition",
+       "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest-reprocess?view=graph-rest-beta) action to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
+       "Target": "reprocess"
+      }
+    ],
+    "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2021-08-05T14:10:06Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Governance"
+    },
+    {
       "ChangeList": [
         {
           "Id": "2dca7e8b-c8af-45c1-9fa6-f108e93d8562",
