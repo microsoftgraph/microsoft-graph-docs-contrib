@@ -14,7 +14,11 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the details of an event message about members added.
-This message is generated when members are added to a chat, a channel, or a team.
+This message is generated when members are added to a chat, a channel, or a team.\
+**visibleHistoryStartDateTime** for members added event in a channel is always set to '0001-01-01T00:00:00Z' which translates to all history shared.
+
+> **Note**: For a chat, when selected share history time for members is earlier than the initator's visible history time,
+**visibleHistoryStartDateTime** property for [conversationMember](conversationmember.md) and membersAddedEventMessageDetail message may have different values. [conversationMember](conversationmember.md) has the effective visible history time for the member based on initiator's visible history time.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -24,7 +28,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 |members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of members added.|
-|visibleHistoryStartDateTime|DateTimeOffset|The timestamp denoting how far back a conversation's history is shared with the conversation member.|
+|visibleHistoryStartDateTime|DateTimeOffset|The timestamp denoting how far back a conversation's history is shared with the conversation members.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
