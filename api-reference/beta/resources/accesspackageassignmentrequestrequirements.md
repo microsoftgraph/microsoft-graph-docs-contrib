@@ -16,16 +16,16 @@ Represents requirements that a caller must fulfill in order to successfully crea
 ## Properties
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| policyDisplayName | String | The display name of the policy that the user is trying to request access using. |
-| policyDescription | String | The description of the policy that the user is trying to request access using.  |
-| policyId | String | The identifier of the policy that these requirements are associated with. This identifier can be used when creating a new assignment request. |
+| existingAnswers | [accessPackageAnswer](../resources/accesspackageanswer.md) collection  | Answers that have already been provided. |
 | isApprovalRequired | Boolean | Indicates whether a request must be approved by an approver. |
 | isApprovalRequiredForExtension  | Boolean | Indicates whether approval is required when a user tries to extend their access. |
-| isRequestorJustificationRequired | Boolean | Indicates whether a requestor must supply justification when submitting an assignment request. |
 | isCustomAssignmentScheduleAllowed | Boolean | Indicates whether the requestor is allowed to set a custom schedule. |
-| schedule | [requestSchedule](../resources/requestschedule.md) | Schedule restrictions enforced, if any. |
+| isRequestorJustificationRequired | Boolean | Indicates whether a requestor must supply justification when submitting an assignment request. |
+| policyDescription | String | The description of the policy that the user is trying to request access using.  |
+| policyDisplayName | String | The display name of the policy that the user is trying to request access using. |
+| policyId | String | The identifier of the policy that these requirements are associated with. This identifier can be used when creating a new assignment request. |
 | questions | [accessPackageQuestion](../resources/accesspackagequestion.md) collection | Questions that are configured on the policy. The questions can be required or optional; callers can determine whether a question is required or optional based on the **isRequired** property on **accessPackageQuestion**. |
-| existingAnswers | [accessPackageAnswer](../resources/accesspackageanswer.md) collection  | Answers that have already been provided. |
+| schedule | [requestSchedule](../resources/requestschedule.md) | Schedule restrictions enforced, if any. |
 
 ## Relationships
 None.
