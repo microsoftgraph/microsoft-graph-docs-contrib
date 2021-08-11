@@ -1,6 +1,6 @@
 ---
 title: "Azure AD Graph to Microsoft Graph migration FAQ"
-description: "Checklist for migrating your apps from Azure AD Graph to Microsoft Graph"
+description: "Azure AD Graph to Microsoft Graph migration FAQ."
 author: "FaithOmbongi"
 localization_priority: Normal
 ms.prod: "applications"
@@ -24,7 +24,7 @@ Check your network server traffic logs through a filter proxy for any apps calli
 
 ### Method 2: Use the App registrations menu of the Azure portal
 
-1. Sign in to the [Azure portal](portal.azure.com) as an administrator.
+1. Sign in to the [Azure portal](https://portal.azure.com) as an administrator.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
 1. In the App registrations window, select the **All Applications** tab then select the **Add filters** option. Choose the **Requested API** option from the list of available filters and select **Apply**. A filter pops up.
@@ -41,7 +41,7 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 
 ## Microsoft has sent me an email with a list of App IDs for apps using Azure AD Graph. How do I find the details of the app including its owner?
 
-1. Sign in to the [Azure portal](portal.azure.com) as an administrator.
+1. Sign in to the [Azure portal](https://portal.azure.com) as an administrator.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
 1. In the App registrations window, select the **All Applications** tab then select **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
