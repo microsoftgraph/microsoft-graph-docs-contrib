@@ -1,7 +1,7 @@
 ---
 title: "Allow applications to access online meetings on behalf of a user"
 description: "Find out how to configure applications to access online meetings on behalf of a user."
-author: "jsandoval-msft"
+author: "mkhribech"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 ---
@@ -39,6 +39,13 @@ To configure an application access policy and allow applications to access onlin
 
    ```powershell
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
+   ```
+5. (Optional) Grant the policy to the whole tenant. This will apply to users who do not have an application access policy assigned. For details, see the cmdlet links in the [see also](#see-also) section.
+
+   Run the following cmdlet, replacing the **PolicyName** argument.
+
+   ```powershell
+   Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Global
    ```
 
 > [!NOTE]

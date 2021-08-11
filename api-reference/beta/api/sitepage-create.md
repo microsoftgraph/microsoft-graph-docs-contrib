@@ -59,7 +59,9 @@ Content-Type: application/json
     "webParts": [
         {
             "type": "rte",
-            "innerHTML": "<p>Here are the team's upcoming events:</p>"
+            "data": {
+                "innerHTML": "<p>Here are the team's upcoming events:</p>"
+            }
         },
         {
             "type": "d1d91016-032f-456d-98a4-721247c305e8",
