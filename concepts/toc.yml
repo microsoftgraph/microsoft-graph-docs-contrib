@@ -237,6 +237,9 @@ items:
           - name: Multi-tenant management (preview)
             displayName: Microsoft 365 Lighthouse
             href: managedtenants-concept-overview.md
+          - name: Service health and communications
+            display name: service communications API
+            href: service-communications-concept-overview.md
       - name: Education
         items:
           - name: Overview
@@ -412,8 +415,6 @@ items:
             href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
-      - name: Service health and communications (preview)
-        href: service-communications-concept-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal

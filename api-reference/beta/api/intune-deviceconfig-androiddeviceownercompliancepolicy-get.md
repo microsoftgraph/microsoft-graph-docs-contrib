@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1476
+Content-Length: 1524
 
 {
   "value": {
@@ -97,7 +97,8 @@ Content-Length: 1476
     "passwordMinutesOfInactivityBeforeLock": 5,
     "passwordExpirationDays": 6,
     "passwordPreviousPasswordCountToBlock": 4,
-    "storageRequireEncryption": true
+    "storageRequireEncryption": true,
+    "securityRequireIntuneAppIntegrity": true
   }
 }
 ```
