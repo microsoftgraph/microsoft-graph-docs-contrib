@@ -73,7 +73,7 @@ The following table lists query scenarios on directory objects that are supporte
 Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
 
 + Queries that are supported by default will also work in advanced queries, but the response will be eventually consistent.
-+ The `in` operator is supported by default whenever `eq` operator is supported.
++ The `in` operator is supported by default whenever `eq` operator is supported by default.
 + The `endsWith` operator is supported only with advanced queries on `mail` and `userPrincipalName` properties.
 + The `not` and `ne` negation operators are supported only with advanced queries.
   + All properties that support the `eq` operator also support the `ne` or `not` operators.
