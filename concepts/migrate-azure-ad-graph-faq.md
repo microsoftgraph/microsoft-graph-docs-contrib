@@ -14,7 +14,7 @@ Azure AD Graph API offers access to only Azure AD services. Microsoft Graph API 
 
 ## Why should I migrate my apps from Azure AD Graph to Microsoft Graph API?
 
-Microsoft Graph API offers a single unified endpoint to access many Microsoft services, is more secure and resilient than Azure AD Graph. For this reason, Azure AD Graph has been on deprecation path since June 30, 2020, and will be retired on June 30, 2022. After June 30, 2022 your applications will no longer receive responses from the Azure AD Graph endpoint. Migrate to Microsoft Graph to avoid loss of functionality.
+Microsoft Graph API offers a single unified endpoint to access many Microsoft services, is more secure and resilient than Azure AD Graph. For this reason, Azure AD Graph has been on deprecation path since June 30, 2020, and will be retired on June 30, 2022. After June 30, 2022, your apps will no longer receive responses from the Azure AD Graph endpoint. Migrate to Microsoft Graph to avoid loss of functionality.
 
 ## How do I identify apps in my tenant that are using Azure AD Graph?
 
@@ -24,14 +24,14 @@ Check your network server traffic logs through a filter proxy for any apps calli
 
 ### Method 2: Use the App registrations menu of the Azure portal
 
-1. Sign in to the [Azure portal](https://portal.azure.com) as an administrator.
+1. Sign in to the [Azure portal](https://portal.azure.com) as a global administrator.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
 1. In the App registrations window, select the **All Applications** tab then select the **Add filters** option. Choose the **Requested API** option from the list of available filters and select **Apply**. A filter pops up.
 
 :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI.png" alt-text="Filter apps by their requested API." border="true":::
 
-1. Select **Microsoft APIs**. Select the **Please select an API** drop down and choose **Azure Active Directory Graph**. Select **Apply**. This lists all apps with a dependency on Azure AD Graph.
+5. Select **Microsoft APIs**. Select the **Please select an API** drop down and choose **Azure Active Directory Graph**. Select **Apply**. This lists all apps with a dependency on Azure AD Graph.
 
 :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI-AAD.png" alt-text="Filter apps that use Azure AD Graph." border="true":::
 
@@ -49,11 +49,11 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 
 :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Filter by apps by Client ID." border="true":::
 
-1. Select the app. This reveals the app's menu. Use the menu bar to find the app's details, including its Owners.
+6. Select the app. This reveals the app's menu. Use the menu bar to find the app's details, including its Owners.
 
 ## Microsoft has sent me an email with a list of App IDs for apps using Azure AD Graph. Are these all the affected apps?
 
-This is a list that captures only apps used within the last 28 days and that called the Azure AD Graph endpoint. Because some apps may have seasonal use, their App ID might be captured in one month's list but not in another. To retrieve the full list of affected apps, we recommend you follow one of the three methods listed above.
+This list captures only apps used within the last 28 days and that called the Azure AD Graph endpoint. Because some apps may have seasonal use, their App ID might be captured in one month's list but not in another. To retrieve the full list of affected apps, we recommend you follow one of the three methods listed above.
 
 ## I'm a subscription Owner and Microsoft has sent me an email about Azure AD Graph deprecation with list of App IDs. What should I do?
 
@@ -81,7 +81,7 @@ No, you can't. Microsoft won't exempt any app from the Azure AD deprecation.
 
 First, we recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to the Microsoft Graph API. 
 
-If you've identified a gap where Microsoft Graph doesn't support a feature supported by Azure AD Graph, contact Microsoft CSS to report the gap. When we verify that this is indeed a gap that Microsoft Graph API doesn't currently fulfill, we'll help you create the app. However, this doesn't mean an exception to the deprecation. The app using Azure AD Graph will still stop functioning after June 30, 2022.
+If you've identified a gap where Microsoft Graph doesn't support a feature supported by Azure AD Graph, contact [Microsoft Customer Service and Support (CSS)](/answers/products/graph) to report the gap. When we verify that this is indeed a gap that Microsoft Graph API doesn't currently fulfill, we'll help you create the app. However, this doesn't mean an exception to the deprecation. The app using Azure AD Graph will still stop functioning after June 30, 2022.
 
 
 ## See also
