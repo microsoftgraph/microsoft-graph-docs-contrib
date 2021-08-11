@@ -7,9 +7,10 @@ author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List availableProviderTypes
-
+# List availableProviderTypes (deprecated)
 Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieves all identity provider types available in a directory.
 

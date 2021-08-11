@@ -8,8 +8,8 @@ ms.topic: include
 <!-- this file is auto-generated don't edit it manually! -->
 
 | Request type | Limit per app for all tenants |
-| ------------ | ------- |
+| ------------ | ----------------------------- |
 | Any | 5000 requests per 10 seconds |
 
 The preceding limits apply to the following resources:  
-call, cancelMediaProcessingOperation, cloudCommunications, commsOperation, inviteParticipantsOperation, muteParticipantOperation, onlineMeeting, participant, playPromptOperation, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation.
+audioRoutingGroup, call, cancelMediaProcessingOperation, cloudCommunications, commsApplication, commsOperation, inviteParticipantsOperation, meetingAttendanceReport, muteParticipantOperation, muteParticipantsOperation, onlineMeeting, participant, participantJoiningNotification, participantLeftNotification, playPromptOperation, presence, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation.

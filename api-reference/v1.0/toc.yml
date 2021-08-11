@@ -28,6 +28,11 @@ items:
       href: /graph/paging?context=graph/api/1.0
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/1.0
+      items:
+      - name: Use the search query parameter
+        href: /graph/search-query-parameter?context=graph/api/1.0
+      - name: Advanced query capabilities
+        href: /graph/aad-advanced-queries?context=graph/api/1.0
     - name: Batching
       displayName: Batch requests
       href: /graph/json-batching?context=graph/api/1.0
@@ -212,6 +217,8 @@ items:
           href: api/user-update.md
         - name: Delete user
           href: api/user-delete.md
+        - name: Change password
+          href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
       - name: App role assignments
@@ -1283,7 +1290,7 @@ items:
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
     - name: Devices and apps
-      expanded: false
+      expanded: true
       items:
       - name: Cloud printing
         items:
@@ -3999,6 +4006,47 @@ items:
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
               href: api/intune-tem-telecomexpensemanagementpartner-update.md
+      - name: Service health and communications
+        items:
+        - name: Overview
+          href: resources/service-communications-api-overview.md
+        - name: Service announcement
+          href: resources/serviceannouncement.md
+        - name: Service health
+          href: resources/servicehealth.md
+          items:
+          - name: List health overviews
+            href: api/serviceannouncement-list-healthoverviews.md
+          - name: Get service health
+            href: api/servicehealth-get.md
+        - name: Service health issue
+          href: resources/servicehealthissue.md
+          items:
+          - name: List issues
+            href: api/serviceannouncement-list-issues.md
+          - name: Get issue
+            href: api/servicehealthissue-get.md
+          - name: Get post-incident review report
+            href: api/servicehealthissue-incidentreport.md
+        - name: Service update message
+          href: resources/serviceupdatemessage.md
+          items:
+          - name: List messages
+            href: api/serviceannouncement-list-messages.md
+          - name: Get message
+            href: api/serviceupdatemessage-get.md
+          - name: Mark read status
+            href: api/serviceupdatemessage-markread.md
+          - name: Mark unread status
+            href: api/serviceupdatemessage-markunread.md
+          - name: Archive status
+            href: api/serviceupdatemessage-archive.md
+          - name: Unarchive status
+            href: api/serviceupdatemessage-unarchive.md
+          - name: Mark favorite status
+            href: api/serviceupdatemessage-favorite.md
+          - name: Remove favorite status
+            href: api/serviceupdatemessage-unfavorite.md
     - name: Education
       items:
       - name: Overview
@@ -4439,6 +4487,10 @@ items:
             href: api/directoryrole-post-members.md
           - name: Remove member
             href: api/directoryrole-delete-member.md
+          - name: List scoped members
+            href: api/directoryrole-list-scopedmembers.md
+          - name: Get delta
+            href: api/directoryrole-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md
           items:
@@ -4549,10 +4601,17 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-        - name: Authentication method policy
+        - name: Authentication methods policy
           items:
           - name: Overview
             href: resources/authenticationmethodspolicies-overview.md
+          - name: Authentication method policy
+            href: resources/authenticationmethodspolicy.md
+            items:
+            - name: Get
+              href: api/authenticationmethodspolicy-get.md
+            - name: Update
+              href: api/authenticationmethodspolicy-update.md
           - name: FIDO2 policy
             href: resources/fido2authenticationmethodconfiguration.md
             items:
@@ -4693,17 +4752,38 @@ items:
             - name: Dismiss
               href: api/riskyuser-dismiss.md
         - name: Identity provider
-          href: resources/identityprovider.md
           items:
-          - name: List identity providers
+          - name: Identity provider base
+            href: resources/identityproviderbase.md
+          - name: Built-in identity provider
+            href: resources/builtinidentityprovider.md
+          - name: Social identity provider
+            href: resources/socialidentityprovider.md
+          - name: List
+            href: api/identityproviderbase-list.md
+          - name: Create
+            href: api/identityproviderbase-post-identityproviders.md
+          - name: Get
+            href: api/identityproviderbase-get.md
+          - name: Update
+            href: api/identityproviderbase-update.md
+          - name: Delete
+            href: api/identityproviderbase-delete.md
+          - name: List available provider types
+            href: api/identityproviderbase-list-availableprovidertypes.md
+        - name: Identity provider (deprecated)
+          items:
+          - name: Identity provider type
+            href: resources/identityprovider.md
+          - name: List
             href: api/identityprovider-list.md
-          - name: Create identity provider
+          - name: Create
             href: api/identityprovider-post-identityproviders.md
-          - name: Get identity provider
+          - name: Get
             href: api/identityprovider-get.md
-          - name: Update identity provider
+          - name: Update
             href: api/identityprovider-update.md
-          - name: Delete identity provider
+          - name: Delete
             href: api/identityprovider-delete.md
           - name: List available provider types
             href: api/identityprovider-list-availableprovidertypes.md
@@ -4936,8 +5016,6 @@ items:
             items:
             - name: List
               href: api/accessreviewscheduledefinition-list.md
-            - name: List instances
-              href: api/accessreviewscheduledefinition-list-instances.md
             - name: Get
               href: api/accessreviewscheduledefinition-get.md
             - name: Create
@@ -4992,15 +5070,15 @@ items:
               href: api/adminconsentrequestpolicy-get.md
             - name: Update
               href: api/adminconsentrequestpolicy-update.md
-            - name: App consent requests
-              href: resources/appconsentrequest.md
-              items:
-              - name: List
-                href: api/appconsentrequest-list.md
-              - name: Get
-                href: api/appconsentrequest-get.md
-              - name: Filter by current user
-                href: api/appconsentrequest-filterByCurrentUser.md
+          - name: App consent requests
+            href: resources/appconsentrequest.md
+            items:
+            - name: List
+              href: api/appconsentrequest-list.md
+            - name: Get
+              href: api/appconsentrequest-get.md
+            - name: Filter by current user
+              href: api/appconsentrequest-filterByCurrentUser.md
           - name: User consent requests
             href: resources/userconsentrequest.md
             items:
@@ -5635,6 +5713,46 @@ items:
           href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
+      - name: Index
+        items:
+        - name: Overview
+          href: resources/indexing-api-overview.md
+        - name: External connection
+          items:
+          - name: External connection
+            href: resources/externalconnectors-externalconnection.md
+          - name: List external connections
+            href: api/externalconnectors-externalconnection-list.md
+          - name: Create external connection
+            href: api/externalconnectors-external-post-connections.md
+          - name: Get external connection
+            href: api/externalconnectors-externalconnection-get.md
+          - name: Update external connection
+            href: api/externalconnectors-externalconnection-update.md
+          - name: Delete external connection
+            href: api/externalconnectors-externalconnection-delete.md
+          - name: Get operation
+            href: api/externalconnectors-connectionoperation-get.md
+        - name: Schema
+          items:
+          - name: Schema
+            href: resources/externalconnectors-schema.md
+          - name: Create schema
+            href: api/externalconnectors-schema-create.md
+          - name: Get schema
+            href: api/externalconnectors-schema-get.md
+        - name: External item
+          items:
+          - name: External item
+            href: resources/externalconnectors-externalitem.md
+          - name: Create external item
+            href: api/externalconnectors-externalitem-create.md
+          - name: Get external item
+            href: api/externalconnectors-externalitem-get.md
+          - name: Update external item
+            href: api/externalconnectors-externalitem-update.md
+          - name: Delete external item
+            href: api/externalconnectors-externalitem-delete.md
     - name: Security
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
@@ -6282,6 +6400,11 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+      - name: Resource-specific permission grants
+        href: resources/resourcespecificpermissiongrant.md
+        items:
+        - name: List for group
+          href: api/group-list-permissiongrants.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:

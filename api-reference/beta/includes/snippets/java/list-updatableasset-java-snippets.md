@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-UpdatableAssetCollectionPage members = graphClient.admin().windows().updates().deployments("{deploymentId}").audience().members()
+UpdatableAssetCollectionPage members = graphClient.admin().windows().updates().updatableAssets("{updatableAssetGroupId}").microsoft.graph.windowsUpdates.updatableAssetGroup().members()
 	.buildRequest()
 	.get();
 
