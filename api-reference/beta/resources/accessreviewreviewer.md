@@ -22,10 +22,10 @@ Inherits from [entity](entity.md).
 ## Properties
 | Property | Type | Description |
 | :-------------------------| :---------- | :---------- |
-| id | String | Identifier of the reviewer. Inherited from [entity](entity.md). |
-| displayName | String | Name of reviewer. |
-| userPrincipalName | String | User principal name of the user. |
 | createdDateTime | DateTimeOffset | Date when the reviewer was added. |
+| displayName | String | Name of reviewer. |
+| id | String | Identifier of the reviewer. Inherited from [entity](entity.md). |
+| userPrincipalName | String | User principal name of the user. |
 
 
 ## Relationships
