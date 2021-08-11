@@ -29,11 +29,11 @@ Check your network server traffic logs through a filter proxy for any apps calli
 1. Under **Manage**, select **App registrations**.
 1. In the App registrations window, select the **All Applications** tab then select the **Add filters** option. Choose the **Requested API** option from the list of available filters and select **Apply**. A filter pops up.
 
-:::image type="content" source="/graph/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
+:::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI.png" alt-text="Filter apps by their requested API." border="true":::
 
 1. Select **Microsoft APIs**. Select the **Please select an API** drop down and choose **Azure Active Directory Graph**. Select **Apply**. This lists all apps with a dependency on Azure AD Graph.
 
-:::image type="content" source="/graph/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
+:::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI-AAD.png" alt-text="Filter apps that use Azure AD Graph." border="true":::
 
 ### Method 3: Use a PowerShell script
 
@@ -45,12 +45,9 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
 1. In the App registrations window, select the **All Applications** tab then select **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
-
-:::image type="content" source="/graph/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
-
 1. Enter an App ID in the text box and select **Apply**. The list of apps has narrowed down to the specified app.
 
-:::image type="content" source="/graph/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
+:::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Filter by apps by Client ID." border="true":::
 
 1. Select the app. This reveals the app's menu. Use the menu bar to find the app's details, including its Owners.
 
