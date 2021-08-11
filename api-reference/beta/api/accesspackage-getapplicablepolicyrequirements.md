@@ -46,7 +46,7 @@ None.
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an `allowedRequestor`. If a policy has no requirements, the `accessPackageAssignmentRequestRequirements` will have false and null values. If the user is not an `allowedRequestor` on any policies, an empty collection is returned instead.
+If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an **allowedRequestor**. If there is a policy with no requirements, the **accessPackageAssignmentRequestRequirements** will have `false` and `null` values. If there are no policies where the user is an **allowedRequestor**, an empty collection will be returned instead.
 
 ## Examples
 
