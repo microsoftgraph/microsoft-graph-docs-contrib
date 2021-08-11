@@ -39,7 +39,7 @@ Check your network server traffic logs through a filter proxy for any apps calli
 
 Download and run [this PowerShell script](https://github.com/microsoft/AzureADGraphApps).
 
-## Microsoft has sent me an email with a list of App IDs for apps using Azure AD Graph. How do I find the details of the app including its owner?
+## Microsoft has sent me an email with a list of App IDs for apps using Azure AD Graph. How do I find the details of each app including its owner?
 
 1. Sign in to the [Azure portal](https://portal.azure.com) as an administrator.
 1. Search for and select **Azure Active Directory**.
