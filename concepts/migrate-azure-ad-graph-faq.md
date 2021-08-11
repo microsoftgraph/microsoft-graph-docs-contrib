@@ -51,6 +51,8 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 
 6. Select the app. This reveals the app's menu. Use the menu bar to find the app's details, including its Owners.
 
+:::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppMenu.png" alt-text="Find your app's details, including its owners." border="true":::
+
 ## Microsoft has sent me an email with a list of App IDs for apps using Azure AD Graph. Are these all the affected apps?
 
 This list captures only apps used within the last 28 days and that called the Azure AD Graph endpoint. Because some apps may have seasonal use, their App ID might be captured in one month's list but not in another. To retrieve the full list of affected apps, we recommend you follow one of the three methods listed above.
