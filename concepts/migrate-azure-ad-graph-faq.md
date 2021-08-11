@@ -10,7 +10,7 @@ ms.prod: "applications"
 
 ## How is Microsoft Graph different from Azure AD Graph?
 
-Azure AD Graph API offers access to only Azure AD services. Microsoft Graph API offers a single unified endpoint to access Azure AD services and other Microsoft services like Teams, Exchange, and Intune.
+Azure AD Graph API offers access to only Azure AD services. Microsoft Graph API offers a single unified endpoint to access Azure AD services and other Microsoft services including Teams, Microsoft Exchange, and Microsoft Intune.
 
 ## Why should I migrate my apps from Azure AD Graph to Microsoft Graph API?
 
@@ -29,11 +29,11 @@ Check your network server traffic logs through a filter proxy for any apps calli
 1. Under **Manage**, select **App registrations**.
 1. In the App registrations window, select the **All Applications** tab then select the **Add filters** option. Choose the **Requested API** option from the list of available filters and select **Apply**. A filter pops up.
 
-:::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI.png" alt-text="Filter apps by their requested API." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI.png" alt-text="Filter apps by their requested API." border="true":::
 
 5. Select **Microsoft APIs**. Select the **Please select an API** drop down and choose **Azure Active Directory Graph**. Select **Apply**. This lists all apps with a dependency on Azure AD Graph.
 
-:::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI-AAD.png" alt-text="Filter apps that use Azure AD Graph." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI-AAD.png" alt-text="Filter apps that use Azure AD Graph." border="true":::
 
 ### Method 3: Use a PowerShell script
 
@@ -47,11 +47,11 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 1. In the App registrations window, select the **All Applications** tab then select **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
 1. Enter an App ID in the text box and select **Apply**. The list of apps has narrowed down to the specified app.
 
-:::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Filter by apps by Client ID." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Filter by apps by Client ID." border="true":::
 
 6. Select the app. This reveals the app's menu. Use the menu bar to find the app's details, including its Owners.
 
-:::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppMenu.png" alt-text="Find your app's details, including its owners." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppMenu.png" alt-text="Find your app's details, including its owners." border="true":::
 
 ## Microsoft has sent me an email with a list of App IDs for apps using Azure AD Graph. Are these all the affected apps?
 
