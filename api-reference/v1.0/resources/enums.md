@@ -1245,6 +1245,15 @@ Possible values for user account types (group membership), per Windows definitio
 | junk                  | 14    | Blocked due to junk.                |
 | unknownFutureValue    | 15    | A sentinel member.                  |
 
+### chatMessageType values
+
+| Value |
+|:-----------------|
+| message |
+| chatEvent |
+| typing |
+| unknownFutureValue |
+
 ### chatMessagePolicyViolationDlpActionType values
 
 | Value |
@@ -1540,4 +1549,71 @@ Possible values for user account types (group membership), per Windows definitio
 |personalMicrosoftAccountUser|
 |skypeUser|
 |phoneUser|
+|unknownFutureValue|
+
+### postType values 
+
+|Member|
+|:---|
+|regular|
+|quick|
+|strategic|
+|unknownFutureValue|
+
+### serviceHealthClassificationType values 
+
+|Member|
+|:---|
+|advisory|
+|incident|
+|unknownFutureValue|
+
+### serviceHealthOrigin values 
+
+|Member|
+|:---|
+|microsoft|
+|thirdParty|
+|customer|
+|unknownFutureValue|
+
+### serviceHealthStatus values 
+
+|Member|
+|:---|
+|serviceOperational|
+|investigating|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|resolved|
+|mitigatedExternal|
+|mitigated|
+|resolvedExternal|
+|confirmed|
+|reported|
+|unknownFutureValue|
+
+### serviceUpdateCategory values 
+
+|Member|
+|:---|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
+|unknownFutureValue|
+
+### serviceUpdateSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|critical|
 |unknownFutureValue|
