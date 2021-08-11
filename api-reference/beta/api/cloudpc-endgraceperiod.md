@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: endGracePeriod"
-description: "End grace period for a specific Cloud PC."
+description: "End the grace period for a specific Cloud PC."
 author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-End grace period for a specific Cloud PC.
+End the grace period for a specific Cloud PC.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
