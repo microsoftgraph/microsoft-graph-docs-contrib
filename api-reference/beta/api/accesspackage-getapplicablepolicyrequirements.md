@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allow callers to find properties that are required to successfully request an assignment for a specific access package. 
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), callers can find properties of an [accessPackageAssignment](../resources/accesspackageassignment.md) object that are required for a user to successfully request an assignment for a specific access package. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
