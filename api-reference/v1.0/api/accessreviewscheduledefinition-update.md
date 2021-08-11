@@ -74,6 +74,7 @@ In the request body, supply a JSON representation of the new properties of the [
 -->
 ``` http
 PUT https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04444aa6
+Content-type: application/json
 
 {
   "id": "60860cdd-fb4d-4054-91ba-f75e04444aa6",
