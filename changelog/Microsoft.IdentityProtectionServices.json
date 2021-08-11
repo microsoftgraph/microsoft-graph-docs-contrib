@@ -3,15 +3,15 @@
         "ChangeList": [{
             "Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
             "ApiChange": "Property",
-            "ChangedApiName": "conditionalAccessSessionControls",
+            "ChangedApiName": "disableResilienceDefaults",
             "ChangeType": "Addition",
-            "Description": "added disableResilienceDefaults property to conditionalaccesssessioncontrols.md",
+            "Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrols?view=graph-rest-beta) resource.",
             "Target": "conditionalAccessSessionControls"
         }],
-        "Id": "6e130d4b-3412-4141-9375-81938f04e62c",
+        "Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
         "Cloud": "prd",
-        "Version": "v1.0",
-        "CreatedDateTime": "2021-18-10T2:32:52.387Z",
+        "Version": "beta",
+        "CreatedDateTime": "2021-18-11T2:32:52.387Z",
         "WorkloadArea": "Identity and access",
         "SubArea": "Identity and sign-in"
 	},{
