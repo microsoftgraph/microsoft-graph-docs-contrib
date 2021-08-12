@@ -59,7 +59,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.calendarPermission",
+  "@odata.type": "microsoft.graph.calendarPermissions",
   "keyProperty": "id"
 }-->
 
