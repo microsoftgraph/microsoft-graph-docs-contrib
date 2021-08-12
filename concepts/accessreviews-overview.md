@@ -41,5 +41,6 @@ Try out the following tutorials to manage access reviews:
 
 ## See also
 
++ [Azure AD access reviews](../api-reference/v1.0/resources/accessreviewsv2-root.md)
 + [Planning Azure Active Directory Access Reviews deployment](/azure/active-directory/governance/deploy-access-reviews)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
