@@ -1,17 +1,17 @@
 ---
-title: "Get calendarPermission"
-description: "Get the properties and relationships of calendarpermission object."
+title: "Update calendarpermission"
+description: "Update the properties of calendarpermission object."
 localization_priority: Normal
 author: "Harini84"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
-# Get calendarPermission
+# Update calendarPermission
 
 Namespace: microsoft.graph
 
-Get the specified permissions object of a user or group calendar that has been shared.
+Update the permissions assigned to an existing sharee or delegate, through the corresponding [calendarPermission](../resources/calendarpermission.md) object for a calendar.
 
 ## Permissions
 
@@ -19,84 +19,85 @@ Depending on the type of calendar that the event is in and the permission type (
 
 | Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| user calendar | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
-| group calendar | Group.Read.All, Group.ReadWrite.All | Not supported. | Not supported. |
+| user calendar | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| group calendar | Group.ReadWrite.All | Not supported. | Not supported. |
 
 ## HTTP request
 
-Get the specified permissions of a user's primary calendar:
-
+Update the specified permissions of a user's calendar:
+<!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/calendar/calendarPermissions/{id}
+PATCH /users/{id}/calendar/calendarPermissions/{id}
 ```
 
-Get the specified permissions of a group calendar:
-<!-- { 
-  "blockType": "ignored",
-}-->
+Update the specified permissions of a group calendar:
+<!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/calendar/calendarPermissions/{id}
+PATCH /groups/{id}/calendar/calendarPermissions/{id}
 ```
 
-Get the specified permissions of the user calendar that contains the identified event:
-<!-- { 
-  "blockType": "ignored",
-}-->
+Update the specified permissions of the user calendar that contains the identified event:
+<!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
+PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name       | Description|
+|:-----------|:-----------|
 | Authorization | Bearer {token} |
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| The permission level to change to for the calendar sharee or delegate. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [calendarPermission](../resources/calendarpermission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [calendarPermission](../resources/calendarpermission.md) object in the response body.
 
 ## Examples
 
-### Request
+### Request appRoleAssignments
 
-The following is an example of the request.
+The following example changes the permission level of the sharee, Adele, to `write`.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "calendarpermission-get"
+  "sampleKeys": ["RGVmYXVsdA=="],
+  "name": "update_calendarpermission"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/RGVmYXVsdA==
+Content-type: application/json
+
+{
+  "role": "write"
+}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarpermission-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-calendarpermission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarpermission-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-calendarpermission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-calendarpermission-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-calendarpermission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-calendarpermission-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -106,6 +107,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "update_calendarpermission",
   "truncated": true,
   "@odata.type": "microsoft.graph.calendarPermissions"
 } -->
@@ -115,19 +117,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLmFkbWluQE0zNjVCODc3NzE5Lm9ubWljcm9zb2Z0LmNvbQ==",
-  "isRemovable": true,
-  "isInsideOrganization": false,
-  "role": "read",
-  "allowedRoles": [
-  "freeBusyRead",
-  "limitedRead",
-  "read"
-  ],
-  "emailAddress": {
-  "name": "admin@M365B877719.onmicrosoft.com",
-  "address": "admin@M365B877719.onmicrosoft.com"
-  }
+    "id": "L289RXhlbGVW",
+    "isRemovable": true,
+    "isInsideOrganization": true,
+    "role": "write",
+    "allowedRoles": [
+        "freeBusyRead",
+        "limitedRead",
+        "read",
+        "write"
+    ],
+    "emailAddress": {
+        "name": "Adele Vance",
+        "address": "AdeleV@contoso.OnMicrosoft.com"
+    }
 }
 ```
 
@@ -135,10 +138,8 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get calendarPermission",
+  "description": "Update calendarpermission",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
