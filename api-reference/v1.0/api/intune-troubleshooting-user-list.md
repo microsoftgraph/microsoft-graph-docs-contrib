@@ -1,30 +1,28 @@
 ---
-title: "Delete officeClientConfigurationAssignment"
-description: "Deletes a officeClientConfigurationAssignment."
-localization_priority: Normal
+title: "List users"
+description: "List properties and relationships of the user objects."
 author: "dougeby"
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# Delete officeClientConfigurationAssignment
+# List users
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
-
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Deletes a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md).
+List properties and relationships of the [user](../resources/intune-troubleshooting-user.md) objects.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Determine scopes **|
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|**TODO: Determine scopes **|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -32,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
+GET /users
 ```
 
 ## Request headers
@@ -45,20 +43,31 @@ DELETE /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/a
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and a collection of [user](../resources/intune-troubleshooting-user.md) objects in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
+GET https://graph.microsoft.com/v1/users
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 136
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.user",
+      "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+    }
+  ]
+}
 ```
 
 
