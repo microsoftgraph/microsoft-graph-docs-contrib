@@ -13,7 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a resource to the resources list. This action can only be done by the student to whom this submission is assigned. This action will not succeed if the **allowStudentsToAddResources** flag is not set to true. If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission. If the file does not exist or is not in that folder, the POST request will fail. 
+Add a resource to the submission resource list.
+
+Only the student assigned to the submission can perform this operation.
+
+The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`. 
+
+If the caller wants to create a new file-based resource, upload the file to the resources folder associated with the submission. If the file doesn't exist or is not in that folder, the POST request will fail. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +50,7 @@ In the request body, supply a JSON representation of the resource, in this case 
 If successful, this method returns a `201 Created` response code and an [educationWordResource](../resources/educationwordresource.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -64,7 +70,7 @@ Content-length: 1097
 }
 ```
 
-##### Response
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
