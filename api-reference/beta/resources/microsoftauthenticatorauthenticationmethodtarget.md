@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of users or groups enabled to use [Microsoft Authenticator authentication methods policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
+A collection of users or groups enabled to use [Microsoft Authenticator authentication methods policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.  Inherits from [authenticationMethodTarget](authenticationMethodTarget.md).
 
 ## Properties
 |Property|Type|Description|
@@ -21,7 +21,7 @@ A collection of users or groups enabled to use [Microsoft Authenticator authenti
 |featureSettings|authenticatorAppFeatureSettings|Determines what additional settings should be applied to Microsoft Authenticator. The possible values are: `requireNumberMatching` (Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications). Nullable.|
 |id|String|Object identifier of an Azure AD user or group. Inherited from [authenticationMethodTarget](authenticationmethodtarget.md).|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. Inherited from [authenticationMethodTarget](authenticationmethodtarget.md). *Not supported*. |
-|targetType|authenticationMethodTargetType| The possible values are: `user`, `group`, and `unknownFutureValue`. Inherited from [authenticationMethodTarget](authenticationMethodTarget.md)|
+|targetType|authenticationMethodTargetType| The possible values are: `user`, `group`, and `unknownFutureValue`. Inherited from [authenticationMethodTarget](authenticationMethodTarget.md).|
 <!--
 |numberMatchingRequiredState|advancedConfigState|Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications. Possible values are: `enabled`, `disabled`, `default`.|
 |displayLocationInformationRequiredState|advancedConfigState|Determines whether the location of the sign-in should be shown to the user in the body of the notification. Possible values are: `enabled`, `disabled`, `default`.|
