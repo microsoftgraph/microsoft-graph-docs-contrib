@@ -122,7 +122,7 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conversationmember_from_"
+  "name": "create_conversationmember_upn"
 }
 -->
 ``` http

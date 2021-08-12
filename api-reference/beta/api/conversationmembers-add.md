@@ -236,7 +236,7 @@ The following example shows a request to add multiple members to a team using us
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "bulkaddmembers_team"
+  "name": "bulkaddmembers_team_upn"
 }-->
 
 ```http

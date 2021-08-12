@@ -207,7 +207,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chat_sendactivitynotification_2"
+  "name": "chat_sendactivitynotification_upn"
 }
 -->
 ``` http

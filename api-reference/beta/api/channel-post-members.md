@@ -191,7 +191,7 @@ Content-length: 468
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "channel_add_member_1"
+  "name": "channel_add_member_3"
 } -->
 ```http
 POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members

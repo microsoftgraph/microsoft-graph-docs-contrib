@@ -294,7 +294,7 @@ The async operation is initiated, and the response contains a Location header wh
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chat_oneOnOne"
+  "name": "create_chat_oneOnOne_upn"
 }
 -->
 ``` http

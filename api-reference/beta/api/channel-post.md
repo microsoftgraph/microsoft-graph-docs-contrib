@@ -348,7 +348,7 @@ The following example shows a request to create a private channel and add a user
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_private_channel_with_member"
+  "name": "create_private_channel_upn"
 }-->
 
 ```http
@@ -381,7 +381,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "create_private_channel_with_member",
+  "name": "create_private_channel_upn",
   "@odata.type": "microsoft.graph.channel"
 } -->
 

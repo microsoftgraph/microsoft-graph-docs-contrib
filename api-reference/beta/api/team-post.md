@@ -635,7 +635,7 @@ The following is an example of a minimal request using application permissions. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_team_post_minimal"
+  "name": "create_team_post_upn"
 }-->
 
 ```http
@@ -662,7 +662,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_minimal"
+  "name": "create_team_post_upn"
 }-->
 
 ```http
