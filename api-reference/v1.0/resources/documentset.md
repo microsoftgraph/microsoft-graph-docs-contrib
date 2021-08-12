@@ -11,6 +11,8 @@ ms.prod: "sites-and-lists"
 
 Namespace: microsoft.graph
 
+Represents a document set in SharePoint.
+
 ## Properties
 
 | Property name  | Type    | Description

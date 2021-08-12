@@ -1,17 +1,17 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: "Create columnDefinition in a site"
+title: "Create a columnDefinition in a site."
 description: "Create a site column."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create columnDefinition for a site
+# Create a columnDefinition in a site
 Namespace: microsoft.graph
 
-Create a column for a [site][site] by specifying a [columnDefinition][columnDefinition].
+Create a column for a [site][site] with a request that specifies a [columnDefinition][columnDefinition].
 
 ## Permissions
 
@@ -45,7 +45,7 @@ If successful, this method returns a `201 Created` response code and [columnDefi
 ## Example
 
 ### Request
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "request", "name": "site_post_columns" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/columns
 Content-Type: application/json

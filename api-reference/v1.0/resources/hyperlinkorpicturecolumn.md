@@ -10,6 +10,8 @@ ms.prod: "sites-and-lists"
 
 Namespace: microsoft.graph
 
+Represents hyperlink or picture column in SharePoint.
+
 ## Properties
 
 | Property name      | Type               | Description

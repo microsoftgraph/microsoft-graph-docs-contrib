@@ -7,7 +7,7 @@ doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# List columns in a list
+# List columnDefinitions in a list
 Namespace: microsoft.graph
 
 Get the collection of columns, represented as [columnDefinition][columnDefinition] resources, in a [list][list].
@@ -76,7 +76,8 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/columns
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.columnDefinition)"
+  "@odata.type": "microsoft.graph.columnDefinition",
+  "isCollection": true
 }
 -->  
 

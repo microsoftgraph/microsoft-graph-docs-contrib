@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 ```
 
->**Note:** The siteId represents a content type hub site.
+>**Note:** The _siteId_ represents a content type hub site.
 
 ## Request headers
 |Name|Description|

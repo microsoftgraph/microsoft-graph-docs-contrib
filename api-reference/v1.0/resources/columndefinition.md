@@ -1,8 +1,8 @@
 ---
 author: JeremyKelley
-description: "Here is a JSON representation of a columnDefinition resource."
+description: "Represents a column in a site, a list, or a content type."
 ms.date: 09/11/2017
-title: ColumnDefinition
+title: columnDefinition resource type
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
@@ -80,7 +80,7 @@ Here is a JSON representation of a columnDefinition resource.
 
 Columns can hold data of various types.
 The following properties indicate what type of data a column stores, as well as additional settings for that data.
-The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text) are mutually exclusive -- a column can only have one of them specified.
+The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text, and so on) are mutually exclusive -- a column can only have one of them specified.
 
 | Property name           | Type    | Description
 |:------------------------|:--------|:-----------------------------------------
@@ -90,7 +90,7 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **enforceUniqueValues** | Boolean | If true, no two list items may have the same value for this column.
 | **hidden**              | Boolean | Specifies whether the column is displayed in the user interface.
 | **id**                  | string  | The unique identifier for the column.
-| **indexed**             | Boolean | Specifies whether the column values can used for sorting and searching.
+| **indexed**             | Boolean | Specifies whether the column values can be used for sorting and searching.
 | **name**                | string  | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**.
 | **readOnly**            | Boolean    | Specifies whether the column values can be modified.
 | **required**            | Boolean | Specifies whether the column value is not optional.
@@ -106,15 +106,15 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
 | **text**          | [textColumn][]          | This column stores text values.
 | **isDeletable**       | Boolean | Indicates whether this column can be deleted.
-| **propagateChanges**     | Boolean | If 'True' changes to this column will be propagated to lists that implement the column. 
+| **propagateChanges**     | Boolean | If 'true', changes to this column will be propagated to lists that implement the column. 
 | **isReorderable**         | Boolean | Indicates whether values in the column can be reordered. Read-only.
-| **isSealed**              | Boolean | Specifies whether column can be changed.
+| **isSealed**              | Boolean | Specifies whether the column can be changed.
 | **validation**   |  [columnValidation][]    | This column stores validation formula and message for the column. 
 | **hyperlinkOrPicture**  | [hyperlinkOrPictureColumn][] | This column stores hyperlink or picture values. 
 | **term**     | [termColumn][] | This column stores taxonomy terms.
-| **sourceContentType**   |[contentTypeInfo][]  | ContentType from which this column is inherited from. Used only while fetching contentTypes columns.
+| **sourceContentType**   |[contentTypeInfo][]  | ContentType from which this column is inherited from. Present only in contentTypes columns response. Read-only.
 | **thumbnail**           |[thumbnailColumn][]      | This column stores thumbnail values.
-| **type**         | columnTypes  | For site columns, the type of column. Read-only
+| **type**         | columnTypes  | For site columns, the type of column. Read-only.
 | **contentApprovalStatus**| [contentApprovalStatusColumn][]     | This column stores content approval status.
 
 ## Relationships
@@ -123,8 +123,8 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 |:----------------|:--------------------------|:-------------------------------
 | **sourceColumn** | [columnDefinition][] | The source column for content type column.
 
->**Note:** These properties correspond to SharePoint's [SPFieldType][] enumeration.
-While the most common field types are represented in the previous table, this API is still missing some.
+>**Note:** These properties correspond to the SharePoint [SPFieldType][] enumeration.
+Note that the most common field types are represented in the previous table. However, this API is still missing some.
 In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
 
 ## Remarks

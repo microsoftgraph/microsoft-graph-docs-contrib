@@ -7,7 +7,7 @@ doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# List columns in a content type
+# List columnDefinitions in a content type
 Namespace: microsoft.graph
 
 
@@ -77,7 +77,8 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-i
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.columnDefinition)"
+  "@odata.type": "microsoft.graph.columnDefinition",
+  "isCollection": true
 }
 -->  
 

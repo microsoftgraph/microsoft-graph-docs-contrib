@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Get columnDefinition"
-description: " Get a site, list or content type column."
+description: " Get a site, a list or a content type column."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 
-Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
+Retrieve the metadata for a [site][], a [list][] or a [contentType][] [column][columnDefinition].
 
   
 
@@ -68,11 +68,11 @@ Do not supply a request body with this method.
 
   
 
-``http
+```http
 GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 ```
 
-#### Response
+### Response
 
   
 

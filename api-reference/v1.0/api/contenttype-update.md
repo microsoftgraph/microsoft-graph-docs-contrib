@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Update contentType"
-description: "Update a content type"
+description: "Update a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"

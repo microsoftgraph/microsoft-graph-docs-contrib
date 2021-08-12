@@ -10,6 +10,8 @@ ms.prod: "sites-and-lists"
 
 Namespace: microsoft.graph
 
+Represents Managed metadata column in SharePoint.
+
 ## Properties
 
 | Property name | Type   | Description

@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "contentType: associateWithHubSites"
-description: "Associate a content type with list of hubsites."
+description: "Associate a content type with a list of hub sites."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 
-Associate a published [content type][contentType] present in content type hub with a list of hub sites.
+Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
 
 >**Note:** This feature is limited to tenants that have a SharePoint Syntex license.
   
@@ -37,9 +37,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-POST /sites/id/contentTypes/id/associateWithHubSites
+POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 ```
->**Note:** The siteId represents a content type hub site.
+>**Note:** The _siteId_ represents a content type hub site.
 
 ## Request headers
 |Name|Description|

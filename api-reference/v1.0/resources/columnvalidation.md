@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "columnValidation resource type"
-description: "Contains data for validating column values."
+description: "Contains data that validates column values."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
@@ -11,17 +11,17 @@ ms.prod: "sites-and-lists"
 
 Namespace: microsoft.graph
 
-
+This resource contains properties that validates column values.
 ## Properties
 
 | Property name  | Type    | Description
 |:---------------|:--------|:--------------------------------------------------
-| **formula**    | string  | The formula to validate column value. For examples, see [Examples of common formulas in lists](https://support.microsoft.com/office/examples-of-common-formulas-in-sharepoint-lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3) 
+| **formula**    | string  | The formula to validate column value. For examples, see [Examples of common formulas in lists](https://support.microsoft.com/office/examples-of-common-formulas-in-sharepoint-lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3).
 | **descriptions**    | Collection(microsoft.graph.displayNameLocalization)  | Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails. 
 | **defaultLanguage**    | string  | Default BCP 47 language tag for the description.
 
 SharePoint formulas use a syntax similar to Excel formulas.
-See [Examples of common formulas in SharePoint Lists][SPFormulas] for more information.
+For more information, see [Examples of common formulas in SharePoint Lists][SPFormulas].
 
 ## JSON representation
 

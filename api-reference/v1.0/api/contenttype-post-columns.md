@@ -1,14 +1,14 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: "Create columnDefinition in a content type"
-description: "Add column to a content type."
+title: "Create a columnDefinition in a content type"
+description: "Add a column to a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create columnDefinition for a content type
+# Create a columnDefinition in a content type
 Namespace: microsoft.graph
 
 
@@ -53,7 +53,7 @@ POST https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-
 Content-Type: application/json
 
 {
-	"sourceColumn@odata.bind": "https://graph.microsoft.com/v1.0/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103",
+	"sourceColumn@odata.bind": "https://graph.microsoft.com/v1.0/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
 }
 ```
 

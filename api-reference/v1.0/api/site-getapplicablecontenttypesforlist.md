@@ -31,6 +31,15 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /sites/{siteId}/getApplicableContentTypesForList
 ```
+
+## Function Parameters
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that can be used with this function.
+
+|Parameter|Type|Description|
+|-|-|-|
+|listId| String | GUID of the list for which the applicable content types need to be fetched. Required. |
+
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -44,14 +53,6 @@ To list only custom content types, use `$filter=isBuiltin eq false`.
 
 ## Request body
 Do not supply a request body for this method.
-
-## Function Parameters
-In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
-
-|Parameter|Type|Description|
-|-|-|-|
-|listId| String | GUID of the list for which the applicable content types need to be fetched. Required. |
 
 ## Response
 
@@ -75,7 +76,8 @@ GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesFor
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.contentType)"
+  "@odata.type": "microsoft.graph.contentType",
+  "isCollection": true
 }
 -->
 

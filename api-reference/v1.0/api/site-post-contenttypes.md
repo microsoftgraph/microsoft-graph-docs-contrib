@@ -1,16 +1,16 @@
 ---
 author: swapnil1993
-title: "Create contentType"
-description: "Create a Content type for a site."
+title: "Create a content type."
+description: "Create a content type in a site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create contentType
+# Create a content type
 Namespace: microsoft.graph
 
-Create a new [contentType][] for a [site][].
+Create a new [contentType][] in a [site][].
 
 ## Permissions
 
@@ -106,7 +106,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create a Content type in a site",
+  "description": "Create a content type in a site",
   "keywords": "content type",
   "section": "documentation",
   "tocPath": "sites/Create ContentType",

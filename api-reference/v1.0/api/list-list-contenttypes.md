@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
-title: "List contentTypes in a list"
-description: "List content types in a list"
+title: "List contentTypes in a list."
+description: "List content types in a list."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -63,7 +63,8 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/contentType
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.contentType)"
+  "@odata.type": "microsoft.graph.contentType",
+  "isCollection": true
 }
 -->
 
