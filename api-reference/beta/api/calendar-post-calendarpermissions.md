@@ -73,7 +73,7 @@ The following is an example of the request.
 <!-- { 
   "blockType": "request",
   "sampleKeys": ["458d4c95-124e-49da-ba9d-1dd0387e682e"],
-  "name": "create_calendarpermissions"
+  "name": "create_calendarpermission"
 }-->
 
 ```http
@@ -103,7 +103,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendarPermission"
+  "@odata.type": "microsoft.graph.calendarPermissions"
 } -->
 
 ```http
