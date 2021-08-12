@@ -107,7 +107,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendarPermission"
+  "@odata.type": "microsoft.graph.calendarPermissions"
 } -->
 
 ```http

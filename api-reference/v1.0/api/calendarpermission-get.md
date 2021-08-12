@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [cale
 
 ## Examples
 
-### Request
+### Request appRoleAssignments
 
 The following example changes the permission level of the sharee, Adele, to `write`.
 
@@ -109,7 +109,7 @@ The following is an example of the response.
   "blockType": "response",
   "name": "update_calendarpermission",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendarPermission"
+  "@odata.type": "microsoft.graph.calendarPermissions"
 } -->
 
 ```http
