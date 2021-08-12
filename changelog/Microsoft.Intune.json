@@ -662,7 +662,321 @@
       "Id": "070d4d23-ecdb-11eb-b6a8-8203ca0139f1",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-07-24T23:58:22.523Z",
+      "CreatedDateTime": "2021-08-11T23:58:22.523Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1229f0ca-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementReports",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource type.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "122c502d-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementExportJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementExportJob](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementExportJob?view=graph-rest-1.0) resource type.",
+          "Target": "deviceManagementExportJob"
+        },
+        {
+          "Id": "122eb61d-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "deviceManagementReportStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementReportStatus** enumeration type.",
+          "Target": "deviceManagementReportStatus"
+        },
+        {
+          "Id": "12311502-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "deviceManagementReportFileFormat",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementReportFileFormat** enumeration type.",
+          "Target": "deviceManagementReportFileFormat"
+        },
+        {
+          "Id": "123378c5-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "deviceManagementExportJobLocalizationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementExportJobLocalizationType** enumeration type.",
+          "Target": "deviceManagementExportJobLocalizationType"
+        },
+        {
+          "Id": "1235d9d8-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceNonComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceNonComplianceReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getDeviceNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "12383c17-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPolicyNonComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getPolicyNonComplianceReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getPolicyNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "123a9df0-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPolicyNonComplianceMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [getPolicyNonComplianceMetadata](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getPolicyNonComplianceMetadata?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "123d023d-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPolicyNonComplianceSummaryReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getPolicyNonComplianceSummaryReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getPolicyNonComplianceSummaryReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "123f64f8-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getSettingNonComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getSettingNonComplianceReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getSettingNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "1241c570-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getReportFilters",
+          "ChangeType": "Addition",
+          "Description": "Added the [getReportFilters](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getReportFilters?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "12442927-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getHistoricalReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getHistoricalReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getHistoricalReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "12468af0-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getConfigurationPolicyNonComplianceSummaryReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getConfigurationPolicyNonComplianceSummaryReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getConfigurationPolicyNonComplianceSummaryReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "1248ef96-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getConfigurationPolicyNonComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getConfigurationPolicyNonComplianceReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getConfigurationPolicyNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "124b58c5-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getConfigurationSettingNonComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getConfigurationSettingNonComplianceReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getConfigurationSettingNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "124e5a1d-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceManagementIntentSettingsReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceManagementIntentSettingsReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getDeviceManagementIntentSettingsReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "1250be32-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCompliancePolicyNonComplianceSummaryReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getCompliancePolicyNonComplianceSummaryReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getCompliancePolicyNonComplianceSummaryReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "1253233e-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCompliancePolicyNonComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getCompliancePolicyNonComplianceReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getCompliancePolicyNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "12565a79-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getComplianceSettingNonComplianceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getComplianceSettingNonComplianceReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getComplianceSettingNonComplianceReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "1258c183-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCachedReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getCachedReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getCachedReport?view=graph-rest-1.0) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-1.0) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "121478ee-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://docs.microsoft.com/en-us/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Target": "configurationManagerCollectionAssignmentTarget"
+        },
+        {
+          "Id": "1216dddb-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Member",
+          "ChangedApiName": "box",
+          "ChangeType": "Addition",
+          "Description": "Added the `box` member to the **managedAppDataStorageLocation** enumeration.",
+          "Target": "managedAppDataStorageLocation"
+        },
+        {
+          "Id": "12193e09-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "targetedManagedAppGroupType",
+          "ChangeType": "Addition",
+          "Description": "Added the **targetedManagedAppGroupType** enumeration type.",
+          "Target": "targetedManagedAppGroupType"
+        },
+        {
+          "Id": "121ba15d-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "appGroupType",
+          "ChangeType": "Addition",
+          "Description": "Added the **appGroupType** parameter to the [targetApps](https://docs.microsoft.com/en-us/graph/api/intune-targetedManagedAppConfiguration-targetApps?view=graph-rest-1.0) method.",
+          "Target": "targetApps"
+        },
+        {
+          "Id": "121e039b-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "targetApps",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetApps](https://docs.microsoft.com/en-us/graph/api/intune-targetedManagedAppProtection-targetApps?view=graph-rest-1.0) method to the [targetedManagedAppProtection](https://docs.microsoft.com/en-us/graph/api/resources/intune-targetedManagedAppProtection?view=graph-rest-1.0) resource.",
+          "Target": "targetedManagedAppProtection"
+        },
+        {
+          "Id": "120aefaa-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://docs.microsoft.com/en-us/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Target": "configurationManagerCollectionAssignmentTarget"
+        },
+        {
+          "Id": "11ff095b-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Property",
+          "ChangedApiName": "sourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sourceType** property to the [settingSource](https://docs.microsoft.com/en-us/graph/api/resources/intune-settingSource?view=graph-rest-1.0) resource.",
+          "Target": "settingSource"
+        },
+        {
+          "Id": "12016706-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://docs.microsoft.com/en-us/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Target": "configurationManagerCollectionAssignmentTarget"
+        },
+        {
+          "Id": "1203c96d-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "settingSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **settingSourceType** enumeration type.",
+          "Target": "settingSourceType"
+        },
+        {
+          "Id": "12062e75-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Method",
+          "ChangedApiName": "getOmaSettingPlainTextValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [getOmaSettingPlainTextValue](https://docs.microsoft.com/en-us/graph/api/intune-deviceConfiguration-getOmaSettingPlainTextValue?view=graph-rest-1.0) method to the [deviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "deviceConfiguration"
+        },
+        {
+          "Id": "11fa4162-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://docs.microsoft.com/en-us/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Target": "configurationManagerCollectionAssignmentTarget"
+        },
+        {
+          "Id": "11f57a81-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://docs.microsoft.com/en-us/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Target": "configurationManagerCollectionAssignmentTarget"
+        },
+        {
+          "Id": "11e4ca25-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Property",
+          "ChangedApiName": "deliveryOptimizationPriority",
+          "ChangeType": "Addition",
+          "Description": "Added the **deliveryOptimizationPriority** property to the [win32LobAppAssignmentSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-win32LobAppAssignmentSettings?view=graph-rest-1.0) resource.",
+          "Target": "win32LobAppAssignmentSettings"
+        },
+        {
+          "Id": "11e72f9e-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Property",
+          "ChangedApiName": "v10_0",
+          "ChangeType": "Addition",
+          "Description": "Added the **v10_0** property to the [androidMinimumOperatingSystem](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Target": "androidMinimumOperatingSystem"
+        },
+        {
+          "Id": "11e98e7d-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Property",
+          "ChangedApiName": "v11_0",
+          "ChangeType": "Addition",
+          "Description": "Added the **v11_0** property to the [androidMinimumOperatingSystem](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Target": "androidMinimumOperatingSystem"
+        },
+        {
+          "Id": "11ebf093-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Property",
+          "ChangedApiName": "v14_0",
+          "ChangeType": "Addition",
+          "Description": "Added the **v14_0** property to the [iosMinimumOperatingSystem](https://docs.microsoft.com/en-us/graph/api/resources/intune-iosMinimumOperatingSystem?view=graph-rest-1.0) resource.",
+          "Target": "iosMinimumOperatingSystem"
+        },
+        {
+          "Id": "11ee52db-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationManagerCollectionAssignmentTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationManagerCollectionAssignmentTarget](https://docs.microsoft.com/en-us/graph/api/resources/intune-configurationManagerCollectionAssignmentTarget?view=graph-rest-1.0) resource type.",
+          "Target": "configurationManagerCollectionAssignmentTarget"
+        },
+        {
+          "Id": "11f0b5b7-ecaf-11eb-b6a8-8203ca0139f1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "win32LobAppDeliveryOptimizationPriority",
+          "ChangeType": "Addition",
+          "Description": "Added the **win32LobAppDeliveryOptimizationPriority** enumeration type.",
+          "Target": "win32LobAppDeliveryOptimizationPriority"
+        }
+      ],
+      "Id": "11e26538-ecaf-11eb-b6a8-8203ca0139f1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-11T18:43:42.841Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"
     },
@@ -839,7 +1153,7 @@
       ],
       "Id": "5c955302-b3ea-11eb-b1da-ccc38d4482e9",
       "Cloud": "prd",
-      "Version": "beta",
+      "Version": "v1.0",
       "CreatedDateTime": "2021-06-02T12:54:32.194Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Corporate management"

@@ -1,12 +1,12 @@
 ---
-title: "Datasets, regions, and sinks that Microsoft Graph Data Connect supports"
+title: "Datasets, regions, and sinks supported by Microsoft Graph Data Connect"
 description: "Describes the supported datasets and destination storage types that can be used with Microsoft Graph Data Connect."
 author: "fercobo-msft"
 localization_priority: Priority
 ms.prod: "data-connect"
 ---
 
-# Datasets, regions, and sinks that Microsoft Graph Data Connect supports
+# Datasets, regions, and sinks supported by Microsoft Graph Data Connect
 
 Microsoft Graph Data Connect supports a variety of datasets, data regions, and storage locations in Microsoft Azure. This topic describes the supported datasets and how to access the dataset schemas, the Microsoft 365 and Microsoft Azure regions that are supported, and the storage locations that data connect utilizes through Azure Data Factory.
 
