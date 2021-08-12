@@ -2,7 +2,7 @@
 title: "List calendarPermissions"
 description: "Get the properties and relationships of calendarpermission object."
 localization_priority: Normal
-author: "sochowdh"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
@@ -58,59 +58,17 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [calendarPermission](../resources/calendarpermission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of calendarPermission objects in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+Do not supply a request body for this method.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_calendarpermission"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/calendar/
+```http msgraph-interactive
+GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions
 ```
-```
-{
-  "emailAddress": {
-    "name": "My Organization",
-  },
-  "isRemovable": true,
-  "isInsideOrganization": true,
-  "role": "write",
-  "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-  ]
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarpermission-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarpermission-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-calendarpermission-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-calendarpermission-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 The following is an example of the response.
@@ -120,7 +78,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendarPermission"
+  "@odata.type": "microsoft.graph.calendarPermission",
+  "isCollection": true
 } -->
 
 ```http
@@ -128,19 +87,40 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLmFkbWluQE0zNjVCODc3NzE5Lm9ubWljcm9zb2Z0LmNvbQ==",
-  "isRemovable": true,
-  "isInsideOrganization": false,
-  "role": "read",
-  "allowedRoles": [
-  "freeBusyRead",
-  "limitedRead",
-  "read"
-  ],
-  "emailAddress": {
-  "name": "admin@M365B877719.onmicrosoft.com",
-  "address": "admin@M365B877719.onmicrosoft.com"
-  }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/calendarPermissions",
+    "value": [
+        {
+            "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLmFkbWluQE0zNjVCODc3NzE5Lm9ubWljcm9zb2Z0LmNvbQ==",
+            "isRemovable": true,
+            "isInsideOrganization": false,
+            "role": "read",
+            "allowedRoles": [
+                "freeBusyRead",
+                "limitedRead",
+                "read"
+            ],
+            "emailAddress": {
+                "name": "admin@M365B877719.onmicrosoft.com",
+                "address": "admin@M365B877719.onmicrosoft.com"
+            }
+        },
+        {
+            "id": "RGVmYXVsdA==",
+            "isRemovable": false,
+            "isInsideOrganization": true,
+            "role": "freeBusyRead",
+            "allowedRoles": [
+                "none",
+                "freeBusyRead",
+                "limitedRead",
+                "read",
+                "write"
+            ],
+            "emailAddress": {
+                "name": "My Organization"
+            }
+        }
+    ]
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "Get calendarPermission"
 description: "Get the properties and relationships of calendarpermission object."
 localization_priority: Normal
-author: "sochowdh"
+author: "Harini84"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---

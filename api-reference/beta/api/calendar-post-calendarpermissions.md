@@ -1,8 +1,8 @@
 ---
 title: "Create calendarPermissions"
-description: "Create the calendarpermissions object."
+description: "Create the calendarpermission object."
 localization_priority: Normal
-author: "sochowdh"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
@@ -61,7 +61,7 @@ In the request body, supply a JSON representation of a [calendarPermission](../r
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a calendarPermissions object[calendarPermissions](../resources/calendarpermission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of calendarPermission objects in the response body.
 
 ## Examples
 
@@ -72,13 +72,28 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- { 
   "blockType": "request",
+  "sampleKeys": ["458d4c95-124e-49da-ba9d-1dd0387e682e"],
   "name": "create_calendarpermissions"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions
-```
+POST https://graph.microsoft.com/beta/users/458d4c95-124e-49da-ba9d-1dd0387e682e?/calendar/calendarPermissions
 
+{
+    "allowedRoles": [
+        "read"
+    ],
+    "emailAddress": {
+        "name": "Samantha Booth",
+        "address": "samanthab@adatum.onmicrosoft.com"
+    },
+    "id": "AAMkADBmYTFkMzUyLTgxODQtNDA0YS05YzdlLWRkYjJlY2U4NTljZgBGAAAAAACdCqnIfBTiS7nPzH--j6RvBwDvenXPVP3FQpzwdU3ADBy_AAAAAAEGAADvenXPVP3FQpzwdU3ADBy_AAAB7bC1AAA=",
+    "isInsideOrganization": true,
+    "isRemovable": true,
+    "role": "read"
+}
+
+```
 ### Response
 
 The following is an example of the response.
@@ -96,47 +111,27 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/calendarPermissions",
-    "value": [
-        {
-            "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLmFkbWluQE0zNjVCODc3NzE5Lm9ubWljcm9zb2Z0LmNvbQ==",
-            "isRemovable": true,
-            "isInsideOrganization": false,
-            "role": "read",
-            "allowedRoles": [
-                "freeBusyRead",
-                "limitedRead",
-                "read"
-            ],
-            "emailAddress": {
-                "name": "admin@M365B877719.onmicrosoft.com",
-                "address": "admin@M365B877719.onmicrosoft.com"
-            }
-        },
-        {
-            "id": "RGVmYXVsdA==",
-            "isRemovable": false,
-            "isInsideOrganization": true,
-            "role": "freeBusyRead",
-            "allowedRoles": [
-                "none",
-                "freeBusyRead",
-                "limitedRead",
-                "read",
-                "write"
-            ],
-            "emailAddress": {
-                "name": "My Organization"
-            }
-        }
-    ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/calendarPermissions/$entity",
+    "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLnNhbWFudGhhYkBhZGF0dW0ub25taWNyb3NvZnQuY29t",
+    "isRemovable": true,
+    "isInsideOrganization": false,
+    "role": "read",
+    "allowedRoles": [
+        "freeBusyRead",
+        "limitedRead",
+        "read"
+    ],
+    "emailAddress": {
+        "name": "Samantha Booth",
+        "address": "samanthab@adatum.onmicrosoft.com"
+    }
 }
 ```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed99
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create calendarPermissions",
+  "description": "Create calendarPermission",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
