@@ -1,5 +1,5 @@
 ---
-title: "Update tenantAppManagementPolicy"
+title: "Update defaultAppManagementPolicy"
 description: "Update the default tenant policy that applies to applications and service principals objects."
 localization_priority: Normal
 author: "madansr7"
@@ -7,13 +7,13 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Update tenantAppManagementPolicy
+# Update defaultAppManagementPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object.
+Update the properties of a [defaultAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object.
 
 ## Permissions
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /policies/tenantAppManagementPolicy
+PATCH /policies/defaultAppManagementPolicy
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ PATCH /policies/tenantAppManagementPolicy
 
 ## Request body
 
-In the request body, supply the values for relevant fields from the [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) that should be updated. Existing properties that are not included in the request body will maintain their previous values. For best performance, do not include unchanged values in the request payload.
+In the request body, supply the values for relevant fields from the [defaultAppManagementPolicy](../resources/tenantAppManagementPolicy.md) that should be updated. Existing properties that are not included in the request body will maintain their previous values. For best performance, do not include unchanged values in the request payload.
 
 | Property                | Type                                                                        | Description |
 |:------------------------|:----------------------------------------------------------------------------|:----------------------------------------------------|
@@ -65,11 +65,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_tenantAppManagementPolicy"
+  "name": "update_defaultAppManagementPolicy"
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/policies/tenantAppManagementPolicy
+PATCH https://graph.microsoft.com/beta/policies/defaultAppManagementPolicy
 Content-Type: application/json
 
 {
@@ -108,7 +108,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update tenantAppManagementPolicy",
+  "description": "Update defaultAppManagementPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,5 +1,5 @@
 ---
-title: "Get tenantAppManagementPolicy"
+title: "Get defaultAppManagementPolicy"
 description: "Read the default tenant policy that applies to applications and service principals objects."
 localization_priority: Normal
 author: "madansr7"
@@ -7,13 +7,13 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Get tenantAppManagementPolicy
+# Get defaultAppManagementPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of a [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object.
+Read the properties of [defaultAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object.
 
 ## Permissions
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /policies/tenantAppManagementPolicy
+GET /policies/defaultAppManagementPolicy
 ```
 
 ## Request headers
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [defaultAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object in the response body.
 
 ## Examples
 
@@ -55,11 +55,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_tenantAppManagementPolicy"
+  "name": "get_defaultAppManagementPolicy"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/tenantAppManagementPolicy
+GET https://graph.microsoft.com/beta/policies/defaultAppManagementPolicy
 ```
 
 ### Response
@@ -77,7 +77,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/tenantAppManagementPolicy/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/defaultAppManagementPolicy/$entity",
     "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/defaultAppManagementPolicy/00000000-0000-0000-0000-000000000000",
     "id": "00000000-0000-0000-0000-000000000000",
     "displayName": "Default app management tenant policy",
@@ -96,7 +96,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get tenantAppManagementPolicy",
+  "description": "Get defaultAppManagementPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
