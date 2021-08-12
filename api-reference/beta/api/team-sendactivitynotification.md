@@ -211,7 +211,6 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_upn"

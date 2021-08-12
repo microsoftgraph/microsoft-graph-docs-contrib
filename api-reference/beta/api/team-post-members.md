@@ -119,7 +119,6 @@ Content-type: application/json
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversationmember_upn"

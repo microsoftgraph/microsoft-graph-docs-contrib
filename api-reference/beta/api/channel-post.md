@@ -344,8 +344,6 @@ Content-length: 201
 
 The following example shows a request to create a private channel and add a user as an team owner.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_private_channel_upn"

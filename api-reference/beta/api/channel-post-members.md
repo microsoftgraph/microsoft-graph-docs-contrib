@@ -188,7 +188,6 @@ Content-length: 468
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_add_member_3"

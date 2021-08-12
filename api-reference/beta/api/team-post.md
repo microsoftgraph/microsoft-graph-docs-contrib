@@ -630,9 +630,7 @@ The following are common reasons for this response:
 The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
 
 #### Request
-<!-- markdownlint-disable MD025 -->
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_upn"
