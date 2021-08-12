@@ -233,7 +233,6 @@ Content-Type: application/json
 
 The following example shows a request to add multiple members to a team using user principal name of the members.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team_upn"
