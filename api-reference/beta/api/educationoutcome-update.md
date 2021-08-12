@@ -72,7 +72,7 @@ Content-type: application/json
 If an invalid **Outcome id** is specified, a `404 Not Found` error is returned.
 
 ```http
-HTTP/1.1 400 Bad Request
+HTTP/1.1 404 Not Found
 Content-type: application/json
 
 {
