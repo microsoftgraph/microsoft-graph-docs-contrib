@@ -48,9 +48,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "isRegistrationRequired": "Boolean",
   "authenticationMode": "String",
-  "numberMatchingRequiredState": "String",
-  "displayLocationInformationRequiredState": "String",
-  "displayAppInformationRequiredState": "String"
+  "featureSettings": "String"
 }
 
 ```
