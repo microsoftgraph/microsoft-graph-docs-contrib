@@ -1,6 +1,32 @@
 {
     "changelog": [
         {
+              "ChangeList": [
+                  {
+                      "Id": "d981fc6e-c544-4b73-92ce-b41d0c4cd8bf",
+                      "ApiChange": "Property",
+                      "ChangedApiName": "reviewers",
+                      "ChangeType": "Addition",
+                      "Description": "Added the **reviewers** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                      "Target": "accessReviewInstance"
+                  },
+                  {
+                      "Id": "d981fc6e-c544-4b73-92ce-b41d0c4cd8bf",
+                      "ApiChange": "Property",
+                      "ChangedApiName": "fallbackReviewers",
+                      "ChangeType": "Addition",
+                      "Description": "Added the **fallbackReviewers** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                      "Target": "accessReviewInstance"
+                  }
+              ],
+              "Id": "d981fc6e-c544-4b73-92ce-b41d0c4cd8bf",
+              "Cloud": "prd",
+              "Version": "v1.0",
+              "CreatedDateTime": "2021-08-11T21:06:50.952Z",
+              "WorkloadArea": "Identity and access",
+              "SubArea": "Governance"
+          },
+        {
             "ChangeList": [
                 {
                     "Id": "48e9d736-c31d-11eb-995f-5903f88189f5",
