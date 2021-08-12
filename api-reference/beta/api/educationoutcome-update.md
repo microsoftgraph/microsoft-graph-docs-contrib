@@ -51,7 +51,7 @@ All derived outcome types have a regular and a "published" property appropriate 
 
 If successful, this method returns a `200 OK` response code and an updated [educationOutcome](../resources/educationoutcome.md) object in the response body.
 
-If using **PointsGradeType** and **Points** are updated to be negative or infinite, a `400` error is returned as below.
+If **PointsGradeType** and **Points** are updated to a negative or infinite value, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -65,6 +65,20 @@ Content-type: application/json
 			"code": "invalidGrading",
 			"message": "Points must be less than 9999999 when using PointsGradeType."
 		}
+	}
+}
+```
+
+If an invalid **Outcome id** is specified, a `404 Not Found` error is returned.
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+	"error": {
+		"code": "20241",
+		"message": "Entity not found. Outcome id: 05d0f76c-1dfa-4442-926c-1b094828b505"
 	}
 }
 ```
