@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. | 
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 ```
@@ -47,11 +47,11 @@ If successful, this method returns a `201 Created` response code and an [educati
 ##### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_educationsubmissionresource_from_educationsubmission"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions/4af73d2b-6b9c-493f-0688-979087bed39b/resources
+POST https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions/4af73d2b-6b9c-493f-0688-979087bed39b/resources
 Content-type: application/json
 Content-length: 1097
 
@@ -59,7 +59,7 @@ Content-length: 1097
     "resource": {
         "@odata.type": "microsoft.graph.educationWordResource",
         "displayName": "Report.docx",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2"
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2"
     }
 }
 ```
@@ -70,7 +70,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationWordResource"
 } -->
@@ -80,7 +80,7 @@ Content-type: application/json
 Content-length: 1152
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('3c77de7f-539b-49e1-9c96-1274f2f0ee3b')/submissions('4af73d2b-6b9c-493f-0688-979087bed39b')/resources/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('3c77de7f-539b-49e1-9c96-1274f2f0ee3b')/submissions('4af73d2b-6b9c-493f-0688-979087bed39b')/resources/$entity",
     "assignmentResourceUrl": null,
     "id": "d835503f-fd00-4840-b69c-7230d10e18b8",
     "resource": {
@@ -88,7 +88,7 @@ Content-length: 1152
         "displayName": "Report.docx",
         "createdDateTime": "2021-08-04T00:23:08.6269586Z",
         "lastModifiedDateTime": "2021-08-04T00:23:08.6269586Z",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2",
         "createdBy": {
             "application": null,
             "device": null,
