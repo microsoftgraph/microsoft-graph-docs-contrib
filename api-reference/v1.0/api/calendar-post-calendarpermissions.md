@@ -77,7 +77,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/users/458d4c95-124e-49da-ba9d-1dd0387e682e?/calendar/calendarPermissions
+POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 
 {
     "allowedRoles": [
