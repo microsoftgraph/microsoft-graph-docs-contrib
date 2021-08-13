@@ -78,7 +78,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendarPermissions",
+  "@odata.type": "microsoft.graph.calendarPermission",
   "isCollection": true
 } -->
 

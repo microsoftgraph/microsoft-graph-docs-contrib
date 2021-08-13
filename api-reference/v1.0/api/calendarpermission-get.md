@@ -109,7 +109,7 @@ The following is an example of the response.
   "blockType": "response",
   "name": "update_calendarpermission",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendarPermissions"
+  "@odata.type": "microsoft.graph.calendarPermission"
 } -->
 
 ```http
