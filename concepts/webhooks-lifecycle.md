@@ -45,6 +45,7 @@ When creating a subscription, you must specify a separate notification endpoint 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",

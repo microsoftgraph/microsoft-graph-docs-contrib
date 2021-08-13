@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ---
 
-# Azure AD application authentication methods API overview | Public preview
+# Azure AD application authentication methods API overview (preview)
 
 Namespace: microsoft.graph
 
@@ -31,7 +31,7 @@ A tenant default policy is a single object that always exists and is disabled by
 
 These properties allow the organization to either lock down apps that originate within a tenant or raise the quality bar for apps that are provisioned from outside the tenant boundary.
 
-## App (application and service principal) management policy
+## App management policy for applications and service principals
 
 App management policies are defined in the [appManagementPolicy](appmanagementpolicy.md) resource, which contains a collection of policies with varying restrictions or different enforcement dates from what's defined in tenant default policy. One of these policies can be assigned to an application or service principal, excluding them from the tenant default policy.
 
@@ -49,7 +49,7 @@ The application authentication methods policy API offers the following restricti
 | passwordAddition | Restrict password secrets on applications altogether. | Block new passwords on applications created on or after '01/01/2019'.                        |
 | passwordLifetime | Enforce a max lifetime range for a password secret.   | Restrict all new password secrets to a maximum of 30 days for on applications created after '01/01/2019'. |
 
-### Single vs. Multi-tenant apps
+### Single vs multi-tenant apps
 
 Depending on whether your app is a single tenant or multitenant app, you apply the policy on either an application or the service principal object as follows:
 
