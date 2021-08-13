@@ -10,7 +10,7 @@ ms.prod: "applications"
 
 This article describes frequently asked questions for Azure AD Graph to Microsoft Graph migration.
 
-## How is Microsoft Graph different from Azure AD Graph? Why should I migrate my apps from Azure AD Graph to the Microsoft Graph API?
+## How is Microsoft Graph different from Azure AD Graph and why should I migrate my apps?
 
 Azure AD Graph API offers access to only Azure AD services. Microsoft Graph API offers a single unified endpoint to access Azure AD services and other Microsoft services such as Teams, Microsoft Exchange, and Microsoft Intune.
 
@@ -32,7 +32,7 @@ If you own an application's source code, look for the `https://graph.windows.net
 1. In the App registrations window, select the **All Applications** tab and select an application from the list. This reveals the app's menu.
 1. From the left pane of the window, select **API permissions**. This reveals configured API permissions for your app, including Azure AD Graph permissions, if any.
 
-        :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/configuredPermissions.png" alt-text="An app's API permissions list from the Azure portal." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/configuredPermissions.png" alt-text="An app's API permissions list from the Azure portal." border="true":::
 
 
 ## As an IT admin, how do I identify apps in my tenant that use Azure AD Graph?
@@ -48,7 +48,7 @@ Check your network server traffic logs through a filter proxy for any apps calli
 1. Sign in to the [Azure portal](https://portal.azure.com) as a global administrator.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
-1. In the App registrations window, select the **All Applications** tab then select the **Add filters** option. Choose the **Requested API** option from the list of available filters and select **Apply**. A filter pops up.
+1. In the App registrations window, select the **All Applications** tab then select the **Add filters** option. Choose the **Requested API** option from the list of available filters and select **Apply**. The **Requested API** filter pops up.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI.png" alt-text="Filter apps by their requested API." border="true":::
 
@@ -64,7 +64,7 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 
 ## Microsoft has sent me an email with a list of App IDs for apps using Azure AD Graph. How do I find the details of each app including its owner?
 
-1. Sign in to the [Azure portal](https://portal.azure.com) as an administrator.
+1. Sign in to the [Azure portal](https://portal.azure.com) as a global administrator.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
 1. In the App registrations window, select the **All Applications** tab then select **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
@@ -72,15 +72,15 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Filter by apps by Client ID." border="true":::
 
-6. Select the app. This reveals the app's menu. From the left pane of the window, menu options reveal the app's details including its Owners.
+6. Select the app. This reveals the app's menu. From the left pane of the window, menu options are available such as **Owners** allow you to retrieve the app's details.
 
 ## Microsoft has sent me an email with a list of App IDs for apps using Azure AD Graph. Are these all the affected apps?
 
-This list captures only apps used within the last 28 days and that called the Azure AD Graph endpoint. Because some apps may have seasonal use, their App ID might be captured in one month's list but not in another. To retrieve the full list of affected apps, we recommend you follow one of the three methods listed above.
+This list captures only apps used within the last 28 days and that called the Azure AD Graph endpoint. Because some apps may have seasonal use, their App ID might be captured in one month's list but not in another. To retrieve the full list of affected apps, we recommend you follow one of the [three methods](#as-an-it-admin-how-do-i-identify-apps-in-my-tenant-that-use-azure-ad-graph) listed above.
 
 ## I'm a subscription Owner and Microsoft has sent me an email about Azure AD Graph deprecation with list of App IDs. What should I do?
 
-The email you receive includes the tenant IDs linked to the app IDs. Follow the following steps to retrieve the technical contact details for the specific tenants.
+The email you receive includes the tenant IDs linked to the app IDs. Follow these steps to retrieve the technical contact details for the specific tenants.
 1. Sign in to the [Azure portal](https://portal.azure.com) as an administrator.
 1. If you're a subscription owner in multiple Azure Active Directory (Azure AD) tenants, first switch to the relevant tenant or directory.
     1. On the top right of the window, select your profile icon and choose **Switch directory**. This reveals the **Portal settings | Directories + subscriptions** window. 
@@ -88,15 +88,15 @@ The email you receive includes the tenant IDs linked to the app IDs. Follow the 
     1. Close the window.
 1. In the relevant directory, search for and select **Azure Active Directory**. This reveals a menu for your active tenant. 
 1. From the left pane of the window, under **Manage**, select **Properties**.
-1. In the **Tenant properties** window, first verify the value of Tenant ID matches a tenant ID you received in the email. Retrieve the Technical contact details to contact the tenant so they can be aware of the deprecation.
+1. In the **Tenant properties** window, first verify the value of Tenant ID matches a tenant ID you received in the email. Retrieve the **Technical contac**t details to contact the tenant so they can be aware of the deprecation.
 
-        :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/tenantTechnicalContact.png" alt-text="Find technical contact of a tenant." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/tenantTechnicalContact.png" alt-text="Find technical contact of a tenant." border="true":::
 
 ## I know apps that are using Azure AD Graph. How do I migrate them to Microsoft Graph?
 
 To migrate your apps from Azure AD Graph to Microsoft Graph, follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md).
 
-## I don't own some apps but they use Azure AD Graph. How do I migrate them to Microsoft Graph API? Can I find the owner of such apps?
+## I don't own some apps in my tenant but they use Azure AD Graph. How do I migrate them to Microsoft Graph API? Can I find the owner of such apps?
 
 First, confirm the full list of apps owned by your tenant or third-party applications integrated in your tenant.
 

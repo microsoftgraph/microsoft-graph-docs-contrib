@@ -121,6 +121,8 @@ items:
           href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/beta
       - name: "4: Deploy, test, and extend"
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
+      - name: Migration FAQ
+        href: /graph/migrate-azure-ad-graph-faq?context=graph/api/beta
   - name: Use SDKs
     items:
       - name: Overview
