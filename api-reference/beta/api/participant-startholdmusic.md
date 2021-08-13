@@ -14,8 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Allow the application to place a participant on hold while playing music on the background.
-
-> **Note:** Only one participant in the call may be placed on hold at any given time.
+ 
+> **Note:** Only one participant can be placed on hold at any given time.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
