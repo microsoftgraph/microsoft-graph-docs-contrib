@@ -57,20 +57,21 @@ The table below lists the properties that can be updated. In the request body, i
 - Updating the start or end date/time of an online meeting always requires both **startDateTime** and **endDateTime** properties in the request body.
 - **organizer** field of the **participants** property cannot be updated. The organizer of the meeting cannot be modified once the meeting is created.
 - Updating the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
+- The 4th colum indicates if updating this property will take effect for an ongoing meeting.
 
-| Property             | Type                                                         | Description                                                                                                                                    |
-|----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| startDateTime        | DateTime                                                     | The meeting start time in UTC.                                                                                                                 |
-| endDateTime          | DateTime                                                     | The meeting end time in UTC.                                                                                                                   |
-| subject              | String                                                       | The subject of the online meeting.                                                                                                             |
-| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | The participants associated with the online meeting. Only attendees can be updated.                                            |
-| isEntryExitAnnounced | Boolean                                                      | Whether or not to announce when callers join or leave.                                                                                         |
-| lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Specifies which participants can bypass the meeting lobby.                                                                                     |
-| allowedPresenters    | onlineMeetingPresenters                                      | Specifies who can be a presenter in a meeting. Possible values are everyone, organization, roleIsPresenter, organizer, and unknownFutureValue. |
-| allowAttendeeToEnableCamera     | Boolean                       | Indicates whether attendees can turn on their camera.                          |
-| allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone.                          |
-| allowMeetingChat      | meetingChatMode | Specifies the mode of meeting chat. |
-| allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. |
+| Property                    | Type                                                       | Description                                                                         | Apply to ongoing meeting?    |
+|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
+| startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                           |
+| endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                           |
+| subject                     | String                                                     | The subject of the online meeting.                                                  | No                           |
+| participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                           |
+| isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                          |
+| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                          |
+| allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes except `roleIsPresenter` |
+| allowAttendeeToEnableCamera | Boolean                                                    | Indicates whether attendees can turn on their camera.                               | Yes                          |
+| allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                          |
+| allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                          |
+| allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                          |
 
 > [!NOTE]
 > Refer to [onlineMeeting](../resources/onlinemeeting.md) entity for possible values of the **allowedPresenters** and **allowMeetingChat** properties.
