@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Calendars.ReadWrite    |
 |Delegated (personal Microsoft account) | Calendars.ReadWrite    |
 |Application | Calendars.ReadWrite |
+
 ## HTTP request
 
 Delete the specified permissions of a user's primary calendar:
