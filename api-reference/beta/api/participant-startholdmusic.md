@@ -1,6 +1,6 @@
 ---
 title: "participant: startHoldMusic"
-description: "Allows the application to place a participant on hold while playing music for them."
+description: "Allow the application to place a participant on hold while playing music on the background."
 author: "mkhribech"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows the application to place a participant on hold while playing music for them.
-
-In an audio-video call, calling `startHoldMusic` on a participant will cause the target participant to be placed on hold, and optionally hear an audio prompt provided by the API caller instead. This action is bound to a `microsoft.graph.participant` entity.
+Allow the application to place a participant on hold while playing music on the background.
 
 > **Note:** Only one participant in the call may be placed on hold at any given time.
 
