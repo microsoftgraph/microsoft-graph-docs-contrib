@@ -1897,41 +1897,6 @@ items:
               href: api/intune-apps-mobilelobapp-list.md
             - name: Get
               href: api/intune-apps-mobilelobapp-get.md
-          - name: Office client checkin status
-            href: resources/intune-cirrus-officeclientcheckinstatus.md
-          - name: Office client configuration
-            href: resources/intune-cirrus-officeclientconfiguration.md
-            items:
-            - name: List
-              href: api/intune-cirrus-officeclientconfiguration-list.md
-            - name: Get
-              href: api/intune-cirrus-officeclientconfiguration-get.md
-            - name: assign action
-              href: api/intune-cirrus-officeclientconfiguration-assign.md
-            - name: updatePriorities action
-              href: api/intune-cirrus-officeclientconfiguration-updatepriorities.md
-          - name: Office client configuration assignment
-            href: resources/intune-cirrus-officeclientconfigurationassignment.md
-            items:
-            - name: List
-              href: api/intune-cirrus-officeclientconfigurationassignment-list.md
-            - name: Get
-              href: api/intune-cirrus-officeclientconfigurationassignment-get.md
-            - name: Create
-              href: api/intune-cirrus-officeclientconfigurationassignment-create.md
-            - name: Delete
-              href: api/intune-cirrus-officeclientconfigurationassignment-delete.md
-            - name: Update
-              href: api/intune-cirrus-officeclientconfigurationassignment-update.md
-          - name: Office configuration
-            href: resources/intune-cirrus-officeconfiguration.md
-            items:
-          - name: Office configuration assignment target
-            href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
-          - name: Office configuration group assignment target
-            href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
-          - name: Office user checkin summary
-            href: resources/intune-cirrus-officeusercheckinsummary.md
           - name: Run as account type
             href: resources/intune-apps-runasaccounttype.md
           - name: User install state summary
@@ -2034,32 +1999,6 @@ items:
               href: api/intune-apps-windowsmobilemsi-delete.md
             - name: Update
               href: api/intune-apps-windowsmobilemsi-update.md
-          - name: Windows office client configuration
-            href: resources/intune-cirrus-windowsofficeclientconfiguration.md
-            items:
-            - name: List
-              href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
-            - name: Get
-              href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
-            - name: Create
-              href: api/intune-cirrus-windowsofficeclientconfiguration-create.md
-            - name: Delete
-              href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
-            - name: Update
-              href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
-          - name: Windows office client security configuration
-            href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
-            items:
-            - name: List
-              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
-            - name: Get
-              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
-            - name: Create
-              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-create.md
-            - name: Delete
-              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md
-            - name: Update
-              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md
           - name: Windows universal AppX
             href: resources/intune-apps-windowsuniversalappx.md
             items:
@@ -3128,8 +3067,8 @@ items:
               href: api/intune-devices-devicecategory-get.md
             - name: Update
               href: api/intune-devices-devicecategory-update.md
-          - name: Device enrollment type
-            href: resources/intune-devices-deviceenrollmenttype.md
+          - name: Device enrollment failure reason
+            href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
           - name: Device exchange access state summary
             href: resources/intune-devices-deviceexchangeaccessstatesummary.md
           - name: Device geolocation
@@ -3164,16 +3103,49 @@ items:
               href: api/intune-auditing-devicemanagement-get.md
             - name: Update
               href: api/intune-auditing-devicemanagement-update.md
+          - name: Device management
+            href: resources/intune-auditing-devicemanagement.md
+            items:
+            - name: Get
+              href: api/intune-auditing-devicemanagement-get.md
+            - name: Update
+              href: api/intune-auditing-devicemanagement-update.md
           - name: Device management exchange access state
             href: resources/intune-devices-devicemanagementexchangeaccessstate.md
           - name: Device management exchange access state reason
             href: resources/intune-devices-devicemanagementexchangeaccessstatereason.md
           - name: Device management subscription state
             href: resources/intune-devices-devicemanagementsubscriptionstate.md
+          - name: Device management troubleshooting event
+            href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
+            items:
+            - name: List
+              href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
+            - name: Get
+              href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
+            - name: Create
+              href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-create.md
+            - name: Delete
+              href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
+            - name: Update
+              href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md
           - name: Device operating system summary
             href: resources/intune-devices-deviceoperatingsystemsummary.md
           - name: Device registration state
             href: resources/intune-devices-deviceregistrationstate.md
+          - name: Enrollment troubleshooting event
+            href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
+            items:
+            - name: List
+              href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
+            - name: Get
+              href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
+            - name: Create
+              href: api/intune-troubleshooting-enrollmenttroubleshootingevent-create.md
+            - name: Delete
+              href: api/intune-troubleshooting-enrollmenttroubleshootingevent-delete.md
+            - name: Update
+              href: api/intune-troubleshooting-enrollmenttroubleshootingevent-update.md
           - name: Localized notification message
             href: resources/intune-notification-localizednotificationmessage.md
             items:
@@ -3291,12 +3263,36 @@ items:
               href: api/intune-remoteassistance-remoteassistancepartner-disconnect.md
           - name: Remote lock action result
             href: resources/intune-devices-remotelockactionresult.md
+          - name: Report
+            href: resources/intune-troubleshooting-report.md
+          - name: Report root
+            href: resources/intune-troubleshooting-reportroot.md
+            items:
+            - name: Get
+              href: api/intune-troubleshooting-reportroot-get.md
+            - name: Update
+              href: api/intune-troubleshooting-reportroot-update.md
           - name: Reset passcode action result
             href: resources/intune-devices-resetpasscodeactionresult.md
           - name: Tuple_2 of execution type_ i collection_1 of operation
             href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
           - name: Update windows device account action parameter
             href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+          - name: User
+            href: resources/intune-devices-user.md
+            items:
+            - name: List
+              href: api/intune-devices-user-list.md
+            - name: Get
+              href: api/intune-devices-user-get.md
+            - name: Create
+              href: api/intune-devices-user-create.md
+            - name: Delete
+              href: api/intune-devices-user-delete.md
+            - name: Update
+              href: api/intune-devices-user-update.md
+            - name: removeAllDevicesFromManagement action
+              href: api/intune-devices-user-removealldevicesfrommanagement.md
           - name: User
             href: resources/intune-devices-user.md
             items:
@@ -3534,6 +3530,8 @@ items:
               href: api/intune-mam-targetedmanagedappconfiguration-assign.md
             - name: targetApps action
               href: api/intune-mam-targetedmanagedappconfiguration-targetapps.md
+          - name: Targeted managed app group type
+            href: resources/intune-mam-targetedmanagedappgrouptype.md
           - name: Targeted managed app policy assignment
             href: resources/intune-mam-targetedmanagedapppolicyassignment.md
             items:
@@ -3554,6 +3552,8 @@ items:
               href: api/intune-mam-targetedmanagedappprotection-get.md
             - name: assign action
               href: api/intune-mam-targetedmanagedappprotection-assign.md
+            - name: targetApps action
+              href: api/intune-mam-targetedmanagedappprotection-targetapps.md
           - name: User
             href: resources/intune-mam-user.md
             items:
@@ -3969,6 +3969,8 @@ items:
             href: resources/intune-shared-configurationmanagercollectionassignmenttarget.md
           - name: Device and app management assignment target
             href: resources/intune-shared-deviceandappmanagementassignmenttarget.md
+          - name: Device enrollment type
+            href: resources/intune-shared-deviceenrollmenttype.md
           - name: Exclusion group assignment target
             href: resources/intune-shared-exclusiongroupassignmenttarget.md
           - name: Group assignment target
@@ -4006,6 +4008,47 @@ items:
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
               href: api/intune-tem-telecomexpensemanagementpartner-update.md
+      - name: Service health and communications
+        items:
+        - name: Overview
+          href: resources/service-communications-api-overview.md
+        - name: Service announcement
+          href: resources/serviceannouncement.md
+        - name: Service health
+          href: resources/servicehealth.md
+          items:
+          - name: List health overviews
+            href: api/serviceannouncement-list-healthoverviews.md
+          - name: Get service health
+            href: api/servicehealth-get.md
+        - name: Service health issue
+          href: resources/servicehealthissue.md
+          items:
+          - name: List issues
+            href: api/serviceannouncement-list-issues.md
+          - name: Get issue
+            href: api/servicehealthissue-get.md
+          - name: Get post-incident review report
+            href: api/servicehealthissue-incidentreport.md
+        - name: Service update message
+          href: resources/serviceupdatemessage.md
+          items:
+          - name: List messages
+            href: api/serviceannouncement-list-messages.md
+          - name: Get message
+            href: api/serviceupdatemessage-get.md
+          - name: Mark read status
+            href: api/serviceupdatemessage-markread.md
+          - name: Mark unread status
+            href: api/serviceupdatemessage-markunread.md
+          - name: Archive status
+            href: api/serviceupdatemessage-archive.md
+          - name: Unarchive status
+            href: api/serviceupdatemessage-unarchive.md
+          - name: Mark favorite status
+            href: api/serviceupdatemessage-favorite.md
+          - name: Remove favorite status
+            href: api/serviceupdatemessage-unfavorite.md
     - name: Education
       items:
       - name: Overview
@@ -4560,10 +4603,17 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-        - name: Authentication method policy
+        - name: Authentication methods policy
           items:
           - name: Overview
             href: resources/authenticationmethodspolicies-overview.md
+          - name: Authentication method policy
+            href: resources/authenticationmethodspolicy.md
+            items:
+            - name: Get
+              href: api/authenticationmethodspolicy-get.md
+            - name: Update
+              href: api/authenticationmethodspolicy-update.md
           - name: FIDO2 policy
             href: resources/fido2authenticationmethodconfiguration.md
             items:
@@ -4704,17 +4754,38 @@ items:
             - name: Dismiss
               href: api/riskyuser-dismiss.md
         - name: Identity provider
-          href: resources/identityprovider.md
           items:
-          - name: List identity providers
+          - name: Identity provider base
+            href: resources/identityproviderbase.md
+          - name: Built-in identity provider
+            href: resources/builtinidentityprovider.md
+          - name: Social identity provider
+            href: resources/socialidentityprovider.md
+          - name: List
+            href: api/identityproviderbase-list.md
+          - name: Create
+            href: api/identityproviderbase-post-identityproviders.md
+          - name: Get
+            href: api/identityproviderbase-get.md
+          - name: Update
+            href: api/identityproviderbase-update.md
+          - name: Delete
+            href: api/identityproviderbase-delete.md
+          - name: List available provider types
+            href: api/identityproviderbase-list-availableprovidertypes.md
+        - name: Identity provider (deprecated)
+          items:
+          - name: Identity provider type
+            href: resources/identityprovider.md
+          - name: List
             href: api/identityprovider-list.md
-          - name: Create identity provider
+          - name: Create
             href: api/identityprovider-post-identityproviders.md
-          - name: Get identity provider
+          - name: Get
             href: api/identityprovider-get.md
-          - name: Update identity provider
+          - name: Update
             href: api/identityprovider-update.md
-          - name: Delete identity provider
+          - name: Delete
             href: api/identityprovider-delete.md
           - name: List available provider types
             href: api/identityprovider-list-availableprovidertypes.md
@@ -4947,8 +5018,6 @@ items:
             items:
             - name: List
               href: api/accessreviewscheduledefinition-list.md
-            - name: List instances
-              href: api/accessreviewscheduledefinition-list-instances.md
             - name: Get
               href: api/accessreviewscheduledefinition-get.md
             - name: Create
@@ -5646,6 +5715,46 @@ items:
           href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
+      - name: Index
+        items:
+        - name: Overview
+          href: resources/indexing-api-overview.md
+        - name: External connection
+          items:
+          - name: External connection
+            href: resources/externalconnectors-externalconnection.md
+          - name: List external connections
+            href: api/externalconnectors-externalconnection-list.md
+          - name: Create external connection
+            href: api/externalconnectors-external-post-connections.md
+          - name: Get external connection
+            href: api/externalconnectors-externalconnection-get.md
+          - name: Update external connection
+            href: api/externalconnectors-externalconnection-update.md
+          - name: Delete external connection
+            href: api/externalconnectors-externalconnection-delete.md
+          - name: Get operation
+            href: api/externalconnectors-connectionoperation-get.md
+        - name: Schema
+          items:
+          - name: Schema
+            href: resources/externalconnectors-schema.md
+          - name: Create schema
+            href: api/externalconnectors-schema-create.md
+          - name: Get schema
+            href: api/externalconnectors-schema-get.md
+        - name: External item
+          items:
+          - name: External item
+            href: resources/externalconnectors-externalitem.md
+          - name: Create external item
+            href: api/externalconnectors-externalitem-create.md
+          - name: Get external item
+            href: api/externalconnectors-externalitem-get.md
+          - name: Update external item
+            href: api/externalconnectors-externalitem-update.md
+          - name: Delete external item
+            href: api/externalconnectors-externalitem-delete.md
     - name: Security
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
@@ -6293,6 +6402,11 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+      - name: Resource-specific permission grants
+        href: resources/resourcespecificpermissiongrant.md
+        items:
+        - name: List for group
+          href: api/group-list-permissiongrants.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
