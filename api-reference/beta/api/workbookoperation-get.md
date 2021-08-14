@@ -79,9 +79,9 @@ GET https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/ope
 
 ### Response
 
-#### Response "running"
+#### Response running
 
-The following is the response with the status of "running". When you get this status, poll the request again until you don't get the same responses.
+The following is the response with the status of `running`. When you get this status, poll the request again until you don't get the same responses.
 
 
 <!-- {
@@ -100,15 +100,15 @@ Content-type: application/json
 }
 ```
 
-#### Response "succeeded"
+#### Response succeeded
 
-The following is the response with the status of "succeeded". The resourceLocation is a group of urls that represent the return values of the original long-running operation. Please go to link to get the info about how to get result from the resourceLocation.
+The following is the response with the status of `succeeded`. The **resourceLocation** is a group of URLs that represent the return values of the original long-running operation. See the following for details about how to get the result from the **resourceLocation** property.
 
 | Operation      |resourceLocation|
 |:----------|:----------|
-| Create Session | [sessionInfoResource](../resources/workbooksessioninfo.md) |
-| Create TableRow | [tableRowOperationResult](./tablerowoperationresult-get.md) |
-| Delete TableRow| No resourceLocation needed. |
+| Create session | [sessionInfoResource](../resources/workbooksessioninfo.md) |
+| Create tableRow | [tableRowOperationResult](./tablerowoperationresult-get.md) |
+| Delete tableRow| No resourceLocation needed. |
 
 ```http
 HTTP/1.1 200 OK
@@ -121,9 +121,9 @@ Content-type: application/json
 }
 ```
 
-#### Response "failed"
+#### Response failed
 
-The following is the response with the status of "failed".
+The following is the response with the status of `failed`.
 
 ```http
 HTTP/1.1 200 OK
