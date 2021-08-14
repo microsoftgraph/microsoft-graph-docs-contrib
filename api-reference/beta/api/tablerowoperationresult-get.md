@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the async operation result for create TableRow [Get workbookOperation](./workbookoperation-get.md), after you get a `succeeded` **operationStatus** result and it indicates that you can get the result from this request.
+Get the async operation result for create tableRow [Get workbookOperation](./workbookoperation-get.md), after you get a `succeeded` **operationStatus** result and it indicates that you can get the result from this request.
 
 For an example of this async operation, see [Create tableRow](./table-post-rows.md).
 
