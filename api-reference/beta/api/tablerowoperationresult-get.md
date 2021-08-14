@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This api will get async operation result for create TableRow [Get workbookoperation](./workbookoperation-get.md), after you get 'succeeded' operationStatus and it indicate you to get the result from this request.
+Get the async operation result for create TableRow [Get workbookOperation](./workbookoperation-get.md), after you get a `succeeded` **operationStatus** result and it indicates that you can get the result from this request.
 
-For full scenario of this async operation, please refer to [Create TableRow](./table-post-rows.md).
+For an example of this async operation, see [Create tableRow](./table-post-rows.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,12 +36,11 @@ GET /driveItem/workbook/tableRowOperationResult
 ```
 
 ## Function parameters
-In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+In the request URL, provide the following query parameter with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|key|String|The operationid provided in the workbookoperation response|
+|key|String|The **operationId** provided in the **workbookOperation** response.|
 
 
 ## Request headers
@@ -54,7 +53,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [workbookTableRow](../resources/workbooktablerow.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [workbookTableRow](../resources/workbooktablerow.md) object in the response body.
 
 ## Examples
 
@@ -71,7 +70,7 @@ GET https://graph.microsoft.com/beta/driveItem/workbook/tableRowOperationResult(
 
 ### Response
 
-Here is an example of the response
+The following is an example of the response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
