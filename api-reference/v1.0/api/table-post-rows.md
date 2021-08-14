@@ -1,6 +1,6 @@
 ---
 title: "Create TableRow"
-description: "Adds rows to the end of the table. Note that the API can accept multiple rows data using this API. Adding one row at a time could lead to performance degradation. The recommended approach would be to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform single rows add operation. Experiment with the number of rows to determine the ideal number of rows to use in single API call. "
+description: "Adds rows to the end of the table."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 Adds rows to the end of the table. Note that the API can accept multiple rows data using this API. Adding one row at a time could lead to performance degradation. The recommended approach would be to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform single rows add operation. Experiment with the number of rows to determine the ideal number of rows to use in single API call. 
 
-## Error Handling
-
-This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
+This request might occasionally receive a `504 HTTP` error. The appropriate response to this error is to repeat the request.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +37,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session Dd that determines whether changes are persisted. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -51,12 +49,12 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [TableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [tableRow](../resources/tablerow.md) object in the response body.
 
 ## Example
-In this example two rows of data are inserted at the end of the table. 
+In this example, two rows of data are inserted at the end of the table. 
 
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -86,8 +84,10 @@ Content-length: 51
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
