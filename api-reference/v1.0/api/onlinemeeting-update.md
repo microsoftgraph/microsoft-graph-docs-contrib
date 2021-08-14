@@ -56,10 +56,10 @@ The following table lists the properties that can be updated. In the request bod
 - The **organizer** field of the **participants** property cannot be updated. The organizer of the meeting cannot be modified after the meeting is created.
 - Adjusting the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
 
-The last column indicates whether updating this property will take effect for an ongoing meeting.
+The last column indicates whether updating this property will take effect for an in-progress meeting.
 
 
-| Property                    | Type                                                       | Description                                                                         | Apply to ongoing meeting?    |
+| Property                    | Type                                                       | Description                                                                         | Applies to in-progress meetings?    |
 |-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
 | startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                           |
 | endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                           |
@@ -67,7 +67,7 @@ The last column indicates whether updating this property will take effect for an
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                           |
 | isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                          |
-| allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes except `roleIsPresenter` |
+| allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes, except when the value is `roleIsPresenter` |
 | allowAttendeeToEnableCamera | Boolean                                                    | Indicates whether attendees can turn on their camera.                               | Yes                          |
 | allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                          |
 | allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                          |
