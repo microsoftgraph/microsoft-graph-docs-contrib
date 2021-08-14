@@ -58,7 +58,7 @@ The following table lists the properties that can be updated. In the request bod
 - The **organizer** field of the **participants** property cannot be updated. The organizer of the meeting cannot be modified after the meeting is created.
 - Updating the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
 
-The last colum indicates whether updating this property will take effect for an ongoing meeting.
+The last column indicates whether updating this property will take effect for an ongoing meeting.
 
 | Property                    | Type                                                       | Description                                                                         | Apply to ongoing meeting?    |
 |-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
