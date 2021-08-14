@@ -50,12 +50,13 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Required. |
 
 ## Request body
-The table below lists the properties that can be updated. In the request body, include only the properties that need updating, with the following exceptions:
+The following table lists the properties that can be updated. In the request body, include only the properties that need updating, with the following exceptions:
 
 - Adjusting the start or end date/time of an online meeting always requires both **startDateTime** and **endDateTime** properties in the request body.
-- **organizer** field of the **participants** property cannot be updated. The organizer of the meeting cannot be modified once the meeting is created.
+- The **organizer** field of the **participants** property cannot be updated. The organizer of the meeting cannot be modified after the meeting is created.
 - Adjusting the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
-- The 4th colum indicates if updating this property will take effect for an ongoing meeting.
+
+The last column indicates whether updating this property will take effect for an ongoing meeting.
 
 
 | Property                    | Type                                                       | Description                                                                         | Apply to ongoing meeting?    |
@@ -84,7 +85,7 @@ If successful, this method returns a `200 OK` response code and an [onlineMeetin
 
 #### Request
 
-> **Note:** The meeting ID has been truncated for readability.
+> **Note:** The meeting ID has been shortened for readability.
 
 
 # [HTTP](#tab/http)
@@ -174,7 +175,7 @@ Content-Type: application/json
 ```
 
 #### Example 2: Update the lobbyBypassSettings
-> **Note:** The meeting ID has been truncated for readability.
+> **Note:** The meeting ID has been shortened for readability.
 
 
 # [HTTP](#tab/http)
