@@ -44,8 +44,8 @@ POST /me/drive/root:/{item-path}:/workbookworksheets/{id|name}/tables/{id|name}/
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-Type | application/json. Required.|
-| Prefer  | respond-async. This header indicate the request is an async request. Optional.  |
-| Workbook-Session-Id  | {Workbook-Session-Id}. Created from createSession request. Optional.|
+| Prefer  | respond-async. Indicates that the request is an async request. Optional.  |
+| Workbook-Session-Id  | {Workbook-Session-Id}. Created from the **createSession** request. Optional.|
 
 ## Request body
 
@@ -58,7 +58,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [workbookTableRow](../resources/workbooktablerow.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [workbookTableRow](../resources/workbooktablerow.md) object in the response body.
 
 ## Examples
 
@@ -154,7 +154,7 @@ Content-length: 51
 
 ##### Response
 
-Here is another example of the response that will lead to an async operation, for the following processing, please refer to [Get workbookOperation](./workbookoperation-get.md) and [Get tableRowOperationResult](./tablerowoperationresult-get.md)
+Here is another example of the response that will lead to an async operation. For details, see [Get workbookOperation](./workbookoperation-get.md) and [Get tableRowOperationResult](./tablerowoperationresult-get.md).
 <!-- {
   "blockType": "response",
   "truncated": true,
