@@ -5,10 +5,42 @@
         {
           "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
           "ApiChange": "Resource",
-          "ChangedApiName": "termStore.store,termStore.term,termStore.set,termStore.relation",
+          "ChangedApiName": "termStore.store",
           "ChangeType": "Addition",
-          "Description": "Introduced the taxonomy API, including the [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-1.0), [termStore.term](https://docs.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-1.0), [termStore.set](https://docs.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-1.0), and [termStore.relation](https://docs.microsoft.com/en-us/graph/api/resources/termstore-relation?view=graph-rest-1.0) resources and associated methods.",
-          "Target": "termStore.store,termStore.term,termStore.set,termStore.relation"
+          "Description": "Introduced the taxonomy API, including the [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "termStore.store"
+        },
+        {
+          "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.group",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API, including the [termStore.group](https://docs.microsoft.com/en-us/graph/api/resources/termstore-group?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "termStore.group"
+        },
+        {
+          "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.set",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API, including the [termStore.set](https://docs.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "termStore.set"
+        },
+        {
+          "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.term",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API, including the [termStore.term](https://docs.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "termStore.term"
+        },
+        {
+          "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.relation",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API, including the [termStore.relation](https://docs.microsoft.com/en-us/graph/api/resources/termstore-relation?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "termStore.relation"
         }
       ],
       "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
