@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of the resource. Supported typ
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and an [educationWordResource](../resources/educationwordresource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an object according to the resource type in the response body.
 
 ## Example
 ### Request
