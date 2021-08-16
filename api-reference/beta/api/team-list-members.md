@@ -280,9 +280,8 @@ Content-Type: application/json
 
 Fetch the members who all have a particular role attached to them where `ROLE` could be :
 
-- owner  (members with *owner* role attached to them)
-- guest  (members with *guest* role attached to them)
-- member (members with no role attached to them)
+- owner
+- guest
 
 > [!NOTE]
 > There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#unable-to-filter-team-members-by-roles).
