@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows the application to stop a participant from being on hold.
-
-In an audio-video call, after `startHoldMusic` is called on a participant, calling `stopHoldMusic` on the same participant will cause the target participant to stop being on hold. This action is bound to a `microsoft.graph.participant` entity.
+Allows the application to stop a participant from being on hold as a result of calling `startHoldMusic`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
