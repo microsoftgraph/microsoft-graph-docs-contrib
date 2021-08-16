@@ -43,7 +43,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of the resource, in this case [educationWordResource](../resources/educationwordresource.md) object.
+In the request body, supply a JSON representation of the resource. Supported types are [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) and [educationWordResource](../resources/educationwordresource.md).
 
 
 ## Response
