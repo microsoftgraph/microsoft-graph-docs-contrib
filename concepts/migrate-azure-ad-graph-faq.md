@@ -93,7 +93,7 @@ The email you receive includes the tenant IDs linked to the app IDs. Follow thes
     1. Close the window.
 1. In the relevant directory, search for and select **Azure Active Directory**. This reveals a menu for your active tenant. 
 1. From the left pane of the window, under **Manage**, select **Properties**.
-1. In the **Tenant properties** window, first verify the value of Tenant ID matches a tenant ID you received in the email. Retrieve the **Technical contac**t details to contact the tenant so they can be aware of the deprecation.
+1. In the **Tenant properties** window, first verify the value of Tenant ID matches a tenant ID you received in the email. Retrieve the **Technical contact** details to contact the tenant so they can be aware of the deprecation.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/tenantTechnicalContact.png" alt-text="Find technical contact of a tenant." border="true":::
 
@@ -112,7 +112,7 @@ First, confirm the full list of apps owned by your tenant or third-party applica
 1. Select the app. This reveals the app's menu.
 1. From the left pane of the window, menu options reveal the app's details including its Owners.
 
-    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppOwners.png" alt-text="Find technical contact of a tenant." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppOwners.png" alt-text="Find app owners." border="true":::
 
 
 ## Can I request for an exception if I'm unable to meet the June 30, 2022 migration deadline?  
