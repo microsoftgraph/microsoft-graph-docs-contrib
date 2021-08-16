@@ -14,7 +14,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete a specific participant in a call. In some situations, it is appropriate for an application to remove a participant from an active call. This action can be done after the participant answers the call. When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+Delete a specific participant in a call. In some situations, it is appropriate for an application to remove a participant from an active call. This action can be done before or after the participant answers the call. When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification. When an invited participant is removed, any outstanding add participant request would be cancelled.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,9 +49,11 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Cancel Participant for active participant
+
+#### Request
 The following example shows the request.
 
 # [HTTP](#tab/http)
@@ -81,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 ---
 
 
-### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
