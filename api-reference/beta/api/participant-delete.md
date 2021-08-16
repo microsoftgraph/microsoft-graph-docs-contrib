@@ -105,9 +105,9 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
-### Example 2: Cancel invited participant
+### Example 2: Cancel invited non active participant
 
-#### Invite one participant to an existing call
+#### Invite a participant to an existing call
 
 # [HTTP](#tab/http)
 <!-- {
@@ -151,7 +151,6 @@ Content-Length: 464
 
 ---
 
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -192,6 +191,7 @@ Content-Type: application/json
 ```
 
 #### Delete invited participant before participant is added to the roster
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
