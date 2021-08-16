@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "startHoldMusicOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [startHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/startHoldMusicOperation?view=graph-rest-beta) resource",
+          "Target": "startHoldMusicOperation"
+        },
+        {
+          "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "stopHoldMusicOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/stopHoldMusicOperation?view=graph-rest-beta) resource",
+          "Target": "stopHoldMusicOperation"
+        },
+        {
+          "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
+          "ApiChange": "Action",
+          "ChangedApiName": "startHoldMusic",
+          "ChangeType": "Addition",
+          "Description": "Added the [startHoldMusic](https://docs.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-beta) method to the [startHoldMusic](https://docs.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-beta) resource.",
+          "Target": "startHoldMusic"
+        },
+        {
+          "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
+          "ApiChange": "Action",
+          "ChangedApiName": "stopHoldMusic",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopHoldMusic](https://docs.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-beta) method to the [stopHoldMusic](https://docs.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-beta) resource.",
+          "Target": "stopHoldMusic"
+        }
+      ],
+      "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-13T01:42:26.0020901Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d077c3c1-70a4-11eb-8401-e19c685756df",
           "ApiChange": "Resource",
           "ChangedApiName": "participantJoiningNotification",
