@@ -143,6 +143,16 @@ items:
         href: /graph/sdks/large-file-upload?context=graph/api/beta
       - name: Use beta API
         href: /graph/sdks/use-beta?context=graph/api/beta
+      - name: Use PowerShell
+        items:
+          - name: Installation
+            href: /graph/powershell/installation?context=graph/api/beta
+          - name: Get started
+            href: /graph/powershell/get-started?context=graph/api/beta
+          - name: Navigating the SDK
+            href: /graph/powershell/navigating?context=graph/api/beta
+          - name: App-only authentication
+            href: /graph/powershell/app-only?context=graph/api/beta
   - name: Use the toolkit
     items:
       - name: Toolkit overview
