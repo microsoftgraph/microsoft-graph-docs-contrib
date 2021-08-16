@@ -9,6 +9,11 @@ param(
   [String]
   $CertPath,
 
+  [Parameter(Mandatory=$false,
+  HelpMessage="Your Azure Active Directory tenant ID")]
+  [String]
+  $TenantId,
+
   [Parameter(Mandatory=$false)]
   [Switch]
   $StayConnected = $false
@@ -26,7 +31,14 @@ $GroupReadAll = @{
 }
 
 # Requires an admin
-Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read"
+if ($TenantId)
+{
+  Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read"
+}
+else
+{
+  Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read" -TenantId $TenantId
+}
 
 # Get context for access to tenant ID
 $context = Get-MgContext
