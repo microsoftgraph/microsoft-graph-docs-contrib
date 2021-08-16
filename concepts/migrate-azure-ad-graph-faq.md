@@ -22,7 +22,7 @@ Follow these steps to identify apps with a dependency on Azure AD Graph:
 
 ### Step 1: Scan the application source code
 
-If you own an application's source code, look for the `https://graph.windows.net/` URI in the code. This is the Azure AD Graph endpoint and apps that call this endpoint use Azure AD Graph. Record the value of the affected app's app ID.
+If you own an application's source code, search for the `https://graph.windows.net/` URI in the code. This is the Azure AD Graph endpoint and apps that call this endpoint use Azure AD Graph. Record the value of the affected app's app ID.
 
 ### Step 2: Check the app's API permissions on the Azure portal
 
@@ -72,7 +72,7 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 1. Sign in to the [Azure portal](https://portal.azure.com) as a global administrator.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
-1. In the App registrations window, select the **All Applications** tab then select **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
+1. In the App registrations window, select the **All Applications** tab and then select **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
 1. Enter an app ID in the text box and select **Apply**. The list has narrowed down to the specified app.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Filter by apps by app ID." border="true":::
