@@ -26,7 +26,7 @@ The wrapper adds the **distributeForStudentWork** property and indicates that th
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|Indicates whether this resource should be copied to each student submission for modification and submission.|
+|distributeForStudentWork|Boolean|Indicates whether this resource should be copied to each student submission for modification and submission. Required|
 |id|String| ID of this resource. Read-only.|
 |resource|[educationResource](educationresource.md)|Resource object that has been associated with this assignment.|
 
