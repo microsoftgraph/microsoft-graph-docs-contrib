@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties for the data subject request.
+A format request by a data subject to a controller to take an action on their personal data is called a Data Subject Request or DSR. This resource type 
+represents the properties for the data subject request. 
+
 
 Inherits from [entity](../resources/entity.md).
 
@@ -21,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List dataSubjectRequests](../api/datasubjectrequest-list.md)|[dataSubjectRequest](../resources/datasubjectrequest.md) collection|Get a list of the [dataSubjectRequest](../resources/datasubjectrequest.md) objects and their properties.|
-|[Create dataSubjectRequest](../api/datasubjectrequest-create.md)|[dataSubjectRequest](../resources/datasubjectrequest.md)|Create a new [dataSubjectRequest](../resources/datasubjectrequest.md) object.|
+|[Create dataSubjectRequest](../api/datasubjectrequest-post.md)|[dataSubjectRequest](../resources/datasubjectrequest.md)|Create a new [dataSubjectRequest](../resources/datasubjectrequest.md) object.|
 |[Get dataSubjectRequest](../api/datasubjectrequest-get.md)|[dataSubjectRequest](../resources/datasubjectrequest.md)|Read the properties and relationships of a [dataSubjectRequest](../resources/datasubjectrequest.md) object.|
 |[Update dataSubjectRequest](../api/datasubjectrequest-update.md)|[dataSubjectRequest](../resources/datasubjectrequest.md)|Update the properties of a [dataSubjectRequest](../resources/datasubjectrequest.md) object.|
 |[getFinalAttachment](../api/datasubjectrequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that where included by the privacy administrator.|
@@ -32,13 +34,13 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|[identity](../resources/identity.md)|Identity that the request is assigned to|
+|assignedTo|[identity](../resources/identity.md)|Identity that the request is assigned to.|
 |closedDateTime|DateTimeOffset|The date and time when the request was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |createdBy|[identitySet](../resources/identityset.md)|Identity information for the entity that created the request.|
 |createdDateTime|DateTimeOffset|The date and time when the request was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |dataSubject|[dataSubject](../resources/datasubject.md)|Information about the data subject.|
 |dataSubjectType|dataSubjectType|The type of the data subject. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
-|description|String|Description for the request|
+|description|String|Description for the request.|
 |displayName|String|The name of the request.|
 |history|[dataSubjectRequestHistory](../resources/datasubjectrequesthistory.md) collection|Collection of history change events.|
 |insight|[dataSubjectRequestDetail](../resources/datasubjectrequestdetail.md)|Insight about the request.|
@@ -53,7 +55,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|notes|[authoredNote](../resources/authorednote.md) collection|List of notes associcated with the request|
+|notes|[authoredNote](../resources/authorednote.md) collection|List of notes associcated with the request.|
 |team|[team](../resources/team.md)|Information about the Microsoft Teams that was created for the request.|
 
 ## JSON representation
