@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [relation
 
 <!-- {
   "blockType": "request",
-  "name": "create_relation_from_term"
+  "name": "create_relation_from_"
 }
 -->
 
