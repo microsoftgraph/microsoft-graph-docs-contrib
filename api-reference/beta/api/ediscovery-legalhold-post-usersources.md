@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|email|String|SMTP address of the user.|
+|email|String|SMTP address of the user or the SMTP address of the group mailbox.  To get the email address of the group, use [List groups](../api/group-list.md) or [Get group](../api/group-get.md). Using get group, you can query by the name of the group using `$filter`, e.g. `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` |
 |includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. This value must be `mailbox`, `site` is not supported for legalHolds at this time.|
 
 ## Response
@@ -63,7 +63,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_usersource_from__2"
@@ -80,24 +79,8 @@ Content-length: 208
   "includedSources": "mailbox"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-from--2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersource-from--2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-usersource-from--2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
