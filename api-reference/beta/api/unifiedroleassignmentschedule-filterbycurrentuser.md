@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 ### Response
 
-The following is an example of the response.
+The following is an example of the response showing an eligibility schedule that is through direct assignment.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

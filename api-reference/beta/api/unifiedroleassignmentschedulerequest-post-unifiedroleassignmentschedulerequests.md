@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object. This operation allows both admins and users to add, remove, extend, or renew assignments.
+Create a new [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object. This operation allows both admins and users to add, remove, extend, or renew assignments. To run this request, the calling user must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA. See [Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,9 +62,13 @@ The following table shows the properties that are required when you create the [
 
 If successful, this method returns a `201 Created` response code and an [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object in the response body.
 
+When the calling user was not challenged for multi-factor authentication during their sign in session, a request with the SelfActivate action fails and returns a `400 Bad request` response code.
+
 ## Examples
 
-### Request
+### Example 1: Admin assigning a directory role to a principal
+
+#### Request
 
 In the following request, the admin creates a request to assign a role identified by `fdd7a751-b60b-444a-984c-02652fe8fa1c` to a principal identified by **id** `07706ff1-46c7-4847-ae33-3003830675a1`. The scope of their role is all directory objects in the tenant and the assignment is permanent, that is, it doesn't expire.
 
@@ -112,7 +116,7 @@ Content-Type: application/json
 
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -166,3 +170,92 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: User activating their eligible role
+
+#### Request
+
+In the following request, a user identified by **principalId** `c6ad1942-4afa-47f8-8d48-afb5d8d69d2f` activates their own eligible role identified by `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3`. The scope of their role is all directory objects in the tenant and the assignment is for five hours. To run this request, the calling user must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignmentschedulerequest_from_unifiedroleassignmentschedulerequests_SelfActivate"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/
+Content-Type: application/json
+
+{
+    "action": "SelfActivate",
+    "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+    "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+    "directoryScopeId": "/",
+    "justification": "Need to update app roles for selected apps.",
+    "scheduleInfo": {
+        "startDateTime": "2021-08-17T17:40:00.000Z",
+        "expiration": {
+            "type": "AfterDuration",
+            "duration": "PT5H"
+        }
+    },
+    "ticketInfo": {
+        "ticketNumber": "CONTOSO:Normal-67890",
+        "ticketSystem": "MS Project"
+    }
+}
+```
+
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleRequest"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
+    "id": "163daf73-8746-4996-87de-ab71dc624bf9",
+    "status": "Granted",
+    "createdDateTime": "2021-08-17T17:39:36.7040696Z",
+    "completedDateTime": "2021-08-17T17:40:00Z",
+    "approvalId": null,
+    "customData": null,
+    "action": "SelfActivate",
+    "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+    "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+    "directoryScopeId": "/",
+    "appScopeId": null,
+    "isValidationOnly": false,
+    "targetScheduleId": "163daf73-8746-4996-87de-ab71dc624bf9",
+    "justification": "Need to update app roles for selected apps.",
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "displayName": null,
+            "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f"
+        }
+    },
+    "scheduleInfo": {
+        "startDateTime": "2021-08-17T17:40:00Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "afterDuration",
+            "endDateTime": null,
+            "duration": "PT5H"
+        }
+    },
+    "ticketInfo": {
+        "ticketNumber": "CONTOSO:Normal-67890",
+        "ticketSystem": "MS Project"
+    }
+}
+```

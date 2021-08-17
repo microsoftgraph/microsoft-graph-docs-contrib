@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 ### Response
 
-The following is an example of the response showing a roleEligibilitySchedule that is through a group assignment.
+The following is an example of the response showing an eligibility schedule that is through a group assignment.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -87,22 +87,22 @@ Content-Type: application/json
     "value": [
         {
             "@odata.type": "#microsoft.graph.unifiedRoleEligibilitySchedule",
-            "id": "2303e6ff-5939-496f-8057-9203db4c75f3",
-            "principalId": "92f37639-ba1e-471c-b9ba-922371c740cb",
+            "id": "6938d75d-ad66-4c7d-9028-0c9b00296945",
+            "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
             "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
             "directoryScopeId": "/",
             "appScopeId": null,
-            "createdUsing": "2303e6ff-5939-496f-8057-9203db4c75f3",
-            "createdDateTime": "2021-08-06T16:18:04.793Z",
+            "createdUsing": "6938d75d-ad66-4c7d-9028-0c9b00296945",
+            "createdDateTime": "2021-08-09T10:15:05.96Z",
             "modifiedDateTime": "0001-01-01T08:00:00Z",
             "status": "Provisioned",
-            "memberType": "Group",
+            "memberType": "Direct",
             "scheduleInfo": {
-                "startDateTime": "2021-08-06T16:18:04.793Z",
+                "startDateTime": "2021-08-09T10:15:05.96Z",
                 "recurrence": null,
                 "expiration": {
-                    "type": "afterDateTime",
-                    "endDateTime": "2022-06-30T00:00:00Z",
+                    "type": "noExpiration",
+                    "endDateTime": null,
                     "duration": null
                 }
             }
