@@ -59,7 +59,7 @@ All the properties listed in the following table are required.
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |clientId|String|The client identifier for the application obtained when registering the application with the identity provider.|
-|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns "\*\*\*\*".|
+|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`.|
 |displayName|String|The display name of the identity provider.|
 |identityProviderType|String|For a B2B scenario, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`.|
 
@@ -142,8 +142,6 @@ Content-length: 154
 
 ---
 
-
----
 
 #### Response
 
@@ -228,7 +226,6 @@ Content-type: application/json
 ---
 
 
----
 
 #### Response
 
@@ -273,6 +270,8 @@ Content-type: application/json
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_applemanagedidentityprovider_from_identityproviderbase"
@@ -293,6 +292,16 @@ Content-length: 154
   "certificateData": "******"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-applemanagedidentityprovider-from-identityproviderbase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-applemanagedidentityprovider-from-identityproviderbase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response
