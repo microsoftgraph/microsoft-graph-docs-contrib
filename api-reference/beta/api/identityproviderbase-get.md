@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an identity provider resource that is of the type specified in the request body.
 
-Among the types of providers derived from identityProviderBase, you can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/appleidentityprovider.md) resource.
+Among the types of providers derived from identityProviderBase, you can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
 
 ## Permissions
 
