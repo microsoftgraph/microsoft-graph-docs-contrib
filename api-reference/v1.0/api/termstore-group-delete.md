@@ -1,5 +1,5 @@
 ---
-title: "Delete group"
+title: "Delete termStore group"
 description: "Delete a group object."
 author: vishriv
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
-# Delete group
+# Delete termStore group
 Namespace: microsoft.graph.termStore
 
 Delete a [group](../resources/termstore-group.md) object in the term [store].
