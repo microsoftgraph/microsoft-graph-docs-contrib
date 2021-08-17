@@ -36,7 +36,7 @@ To complete this tutorial, you need the following resources and privileges:
 To consent to the required permissions in Graph Explorer:
 1. Select the horizontal ellipses icon to the right of the user account details, and then choose **Select permissions**.
   
-  :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="Select Microsoft Graph permissions." border="true":::
+      :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="Select Microsoft Graph permissions." border="true":::
 
 2. Scroll through the list of permissions to these permissions:
     + Group (2), expand and then select **Group.ReadWrite.All**.
@@ -45,13 +45,13 @@ To consent to the required permissions in Graph Explorer:
     + RoleEligibilitySchedule (2), expand and then select **RoleEligibilitySchedule.ReadWrite.Directory**.
     + User (8), expand and then select **User.ReadWrite.All**.
    
-   Select **Consent**, and then select **Accept** to accept the consent of the permissions. Consent to the `RoleEligibilitySchedule.ReadWrite.Directory` and `RoleAssignmentSchedule.ReadWrite.All` permissions on behalf of your organization.
+   Select **Consent**, and then select **Accept** to accept the consent of the permissions. For the `RoleEligibilitySchedule.ReadWrite.Directory` and `RoleAssignmentSchedule.ReadWrite.All` permissions, consent on behalf of your organization.
 
-  :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
+      :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
 
 ## Step 1: Create a test user
 
-Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Azure Portal and enable multi-factor authentication for the user. For more guidance, visit the [See also](#see-also) section.
+Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Azure Portal and enable multi-factor authentication (MFA) for the user. For more guidance on enabling MFA, refer to the [See also](#see-also) section.
 
 
 ### Request
