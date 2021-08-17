@@ -299,7 +299,7 @@ JSON batch requests must not contain any nested batch requests.
 
 ### All individual requests must be synchronous
 
-All requests contained in a batch request must be executed synchronously. If present, the `respond-async` preference will be ignored.
+All requests contained in a batch request must be run synchronously. If present, the `respond-async` preference will be ignored.
 
 ### No transactions
 
@@ -317,9 +317,9 @@ JSON batch requests are currently limited to 20 individual requests.
 
 Individual requests can depend on other individual requests. Currently, requests can only depend on a single other request, and must follow one of these three patterns:
 
-1. Parallel - no individual request states a dependency in the `dependsOn` property.
+1. Parallel - no individual request states a dependency in the **dependsOn** property.
 2. Serial - all individual requests depend on the previous individual request.
-3. Same - all individual requests that state a dependency in the `dependsOn` property, state the same dependency.
+3. Same - all individual requests that state a dependency in the **dependsOn** property, state the same dependency. **Note**: Requests made using this pattern will run sequentially.
 
 As JSON batching matures, these limitations will be removed.
 
