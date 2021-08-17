@@ -547,6 +547,6 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-+ [Azure AD built-in roles](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference#all-roles)
++ [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#all-roles)
 + [Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates)
-+ [unifiedRoleEligibilityScheduleRequest resource type](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-beta&preserve-view=true)
++ [unifiedRoleEligibilityScheduleRequest resource type](/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-beta&preserve-view=true)
