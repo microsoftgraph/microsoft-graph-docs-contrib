@@ -539,8 +539,8 @@ items:
                     href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
-                  - name: Team membership
-                    href: teams-changenotifications-teamMembership.md
+                  - name: Teams and channels membership
+                    href: teams-changenotifications-teams-and-channels-membership.md
                   - name: Chat and channel messages
                     href: teams-changenotifications-chatmessage.md                  
                   - name: Chat
