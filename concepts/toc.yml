@@ -613,6 +613,8 @@ items:
                     href: migrate-azure-ad-graph-client-libraries.md
               - name: "4: Deploy, test, and extend"
                 href: migrate-azure-ad-graph-deploy-test-extend.md
+              - name: Migration FAQ
+                href: migrate-azure-ad-graph-faq.md
       - name: Use SDKs
         items:
           - name: Overview
