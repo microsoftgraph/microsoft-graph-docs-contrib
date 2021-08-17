@@ -33,7 +33,8 @@ GET /me/drive/items/{id}/workbook/operations/{operation-id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Optional. |
+| Authorization | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 
@@ -56,7 +57,7 @@ The following is an example of a long-running operation request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}?sessionId={id}
+GET https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookoperation-csharp-snippets.md)]
@@ -87,6 +88,7 @@ The following is the response with the status of `running`. When you get this st
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "sampleKeys": ["0195cfac-bd22-4f91-b276-dece0aa2378b"],
   "@odata.type": "microsoft.graph.workbookOperation"
 } -->
 
@@ -95,7 +97,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "operation-id",
+  "id": "0195cfac-bd22-4f91-b276-dece0aa2378b",
   "status": "running"
 }
 ```
@@ -110,14 +112,21 @@ The following is the response with the status of `succeeded`. The **resourceLoca
 | Create tableRow | [tableRowOperationResult](./tablerowoperationresult-get.md) |
 | Delete tableRow| No resourceLocation needed. |
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "sampleKeys": ["01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ", "0195cfac-bd22-4f91-b276-dece0aa2378b", "Y2x1c3Rlcj1QU0c0JnNlc3Npb249MTUuU0cyUEVQRjAwMDI4RjI1MS5BMTE2LjEuVTM2LmM4MGRiNjkwLTQwMTktNGNkNS1hYWJiLTJmYzczM2YxZTQ5ZjE0LjUuZW4tVVM1LmVuLVVTMjQuMTAwM2JmZmRhYzUyMzkzOS1Qcml2YXRlMS5TMjQuJTJmUEI0JTJmWjJqZmt1aXhJZHBjeE8xYmclM2QlM2QxNi4xNi4wLjE0NDEwLjM1MDUwMTQuNS5lbi1VUzUuZW4tVVMxLk0xLk4wLjEuUyZ1c2lkPWExOTMyNTU0LTlhNDAtNzYzNi1mNDU3LWEyNjExMmFkNDg2YQ=="],
+  "@odata.type": "microsoft.graph.workbookOperation"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "operation-id",
+  "id": "0195cfac-bd22-4f91-b276-dece0aa2378b",
   "status": "succeeded",
-  "resourceLocation":"https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/{resourceLocation}(key='{key}')?sessionId={id}"
+  "resourceLocation":"https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/sessionInfoResource(key='0195cfac-bd22-4f91-b276-dece0aa2378b')?sessionId=Y2x1c3Rlcj1QU0c0JnNlc3Npb249MTUuU0cyUEVQRjAwMDI4RjI1MS5BMTE2LjEuVTM2LmM4MGRiNjkwLTQwMTktNGNkNS1hYWJiLTJmYzczM2YxZTQ5ZjE0LjUuZW4tVVM1LmVuLVVTMjQuMTAwM2JmZmRhYzUyMzkzOS1Qcml2YXRlMS5TMjQuJTJmUEI0JTJmWjJqZmt1aXhJZHBjeE8xYmclM2QlM2QxNi4xNi4wLjE0NDEwLjM1MDUwMTQuNS5lbi1VUzUuZW4tVVMxLk0xLk4wLjEuUyZ1c2lkPWExOTMyNTU0LTlhNDAtNzYzNi1mNDU3LWEyNjExMmFkNDg2YQ=="
 }
 ```
 
@@ -125,12 +134,19 @@ Content-type: application/json
 
 The following is the response with the status of `failed`.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "sampleKeys": ["0195cfac-bd22-4f91-b276-dece0aa2378b"],
+  "@odata.type": "microsoft.graph.workbookOperation"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "operation-id",
+  "id": "0195cfac-bd22-4f91-b276-dece0aa2378b",
   "status": "failed",
   "error":
   {
