@@ -10,7 +10,7 @@ ms.prod: "identity-and-sign-in"
 # Update identityProvider
 Namespace: microsoft.graph
 
-Update an identity provider resource that is of the type specified in the request body.
+Update an identity provider resource that is of the type specified by the **id** and the request body.
 
 Among the types of providers derived from identityProviderBase, you can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md) resource.
 
