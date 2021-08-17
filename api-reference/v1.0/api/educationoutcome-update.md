@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# Update educationoutcome
+# Update educationOutcome
 
 Namespace: microsoft.graph
 
@@ -43,15 +43,15 @@ In the request body, supply only the values of the fields you want to update.
 
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-The educationOutcome object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**. Supply the specific properties relevant to the type of outcome being patched.
+The **educationOutcome** object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**. Supply the specific properties relevant to the type of outcome you're updating.
 
-All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**. Don't update the "published" property; it is for internal use. For example, to assign points to an **educationPointsOutcome**, update the **points** property, but Don't update **publishedPoints**.
+All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**. Don't update the "published" property; it is for internal use. For example, to assign points to an **educationPointsOutcome**, update the **points** property, but don't update **publishedPoints**.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [educationOutcome](../resources/educationoutcome.md) object in the response body.
 
-If **PointsGradeType** and **Points** are updated to a negative or infinite value, the method returns a `400` error message.
+If **pointsGradeType** and **points** are updated to a negative or infinite value, the method returns a `400` error message.
 
 ```http
 HTTP/1.1 400 Bad Request
@@ -69,7 +69,7 @@ Content-type: application/json
 }
 ```
 
-If an invalid **Outcome id** is specified, a `404 Not Found` error is returned.
+If an invalid outcome ID is specified, a `404 Not Found` error is returned.
 
 ```http
 HTTP/1.1 404 Not Found
@@ -85,11 +85,11 @@ Content-type: application/json
 
 ## Examples
 
-### Example 1: Update a Feedback Outcome
+### Example 1: Update a feedback outcome
 
 #### Request
 
-The following is an example of the request for updating a feedback outcome.
+The following example shows a request to update a feedback outcome.
 
 
 # [HTTP](#tab/http)
@@ -170,11 +170,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Update a Points Outcome
+### Example 2: Update a points outcome
 
 #### Request
 
-The following is an example of the request for updating a points outcome.
+The following example shows a request to update a points outcome.
 
 
 # [HTTP](#tab/http)
@@ -250,11 +250,11 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Update a Rubric Outcome
+### Example 3: Update a rubric outcome
 
 #### Request
 
-The following is an example of the request for updating a rubric outcome.
+The following example shows a request to update a rubric outcome.
 
 
 # [HTTP](#tab/http)
