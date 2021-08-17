@@ -42,13 +42,13 @@ PATCH sites/{site-id}/termStore/sets/{set-id}
 ## Request body
 In the request body, supply a JSON representation of the [set](../resources/termstore-set.md) object.
 
-The following table shows the properties that can be edited for the [set](../resources/termstore-set.md).
+The following table shows the properties that can be edited for the [set](../resources/termstore-set.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set|
-|description|String|Description of the set|
-|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|properties of a set|
+|localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set.|
+|description|String|Description of the set.|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|Properties of a set.|
 
 
 

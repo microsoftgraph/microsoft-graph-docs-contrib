@@ -41,13 +41,13 @@ PATCH sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 ## Request body
 In the request body, supply a JSON representation of the [term](../resources/termstore-term.md) object.
 
-The following table shows the properties that can be updated for a [term](../resources/termstore-term.md).
+The following table shows the properties that can be updated for a [term](../resources/termstore-term.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|labels of a term|
-|descriptions|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection|description about the term|
-|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|properties associated with the term|
+|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|Labels of a term.|
+|descriptions|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection|Description about the term.|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|Properties associated with the term.|
 
 
 

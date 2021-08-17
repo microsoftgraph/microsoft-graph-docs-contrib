@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create relation
 Namespace: microsoft.graph.termStore
 
-Create a new [relation](../resources/termstore-relation.md) object. These are used to create pinned and reused relations between terms or between a term and set. When creating a pinned/reused term between term and set then fromTerm in the post body must be null.
+Create a new [relation](../resources/termstore-relation.md) object. These are used to create pinned and reused relations between terms or between a term and set. If you create a pinned/reused term between term and set, then **fromTerm**  must be set to *null* in the post body.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,13 +41,13 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 ## Request body
 In the request body, supply a JSON representation of the [relation](../resources/termstore-relation.md) object.
 
-The following table shows the properties that are required when you create the [relation](../resources/termstore-relation.md).
+The following table shows the properties that are required when you create the [relation](../resources/termstore-relation.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |relationship|relationType|Type of relation to be created. Possible values are: `pin`, `reuse`.|
-|set| [microsoft.graph.termstore.set](../resources/termstore-set.md)| The set where the relationship needs to be created.
-|fromTerm| [microsoft.graph.termstore.term](../resources/termstore-term.md) | The term with which the relationship needs to be created.
+|set| [microsoft.graph.termstore.set](../resources/termstore-set.md)| The set where the relationship needs to be created.|
+|fromTerm| [microsoft.graph.termstore.term](../resources/termstore-term.md) | The term with which the relationship needs to be created.|
 
 
 
@@ -58,6 +58,12 @@ If successful, this method returns a `201 Created` response code and a [relation
 ## Examples
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_relation"
+}
+-->
 
 ``` http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/v1.0/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
@@ -88,6 +94,7 @@ Content-length: 89
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.termStore.relation",
   "id": "052c749c-749c-052c-9c74-2c059c742c05",

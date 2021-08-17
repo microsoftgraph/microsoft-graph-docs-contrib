@@ -40,12 +40,12 @@ PATCH sites/{site-id}/termStore
 ## Request body
 In the request body, supply a JSON representation of the [store](../resources/termstore-store.md) object.
 
-The following table shows the properties that can be edited for the [store](../resources/termstore-store.md).
+The following table shows the properties that can be edited for the [store](../resources/termstore-store.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultLanguageTag|String|Default language of the [microsoft.graph.termstore.store](../resources/termstore-store.md)|
-|languageTags|String collection|Available languages in the [microsoft.graph.termstore.store](../resources/termstore-store.md)|
+|defaultLanguageTag|String|Default language of the [microsoft.graph.termstore.store](../resources/termstore-store.md).|
+|languageTags|String collection|Available languages in the [microsoft.graph.termstore.store](../resources/termstore-store.md).|
 
 
 
@@ -73,7 +73,7 @@ Content-length: 133
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

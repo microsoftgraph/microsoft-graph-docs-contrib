@@ -7,7 +7,7 @@ ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
-# Delete groups
+# Delete group
 Namespace: microsoft.graph.termStore
 
 Delete a [group](../resources/termstore-group.md) object in the term [store].
