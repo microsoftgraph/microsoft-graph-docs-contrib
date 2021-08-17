@@ -11275,6 +11275,8 @@ items:
             href: resources/appleidentityprovider.md
           - name: OpenID Connect identity provider
             href: resources/openidconnectidentityprovider.md
+          - name: SAML/Ws-Fed identity provider
+            href: resources/samlwsfedidentityprovider.md
           - name: List
             href: api/identityproviderbase-list.md
           - name: Create
