@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.termStore.set"
+  "@odata.type": "microsoft.graph.termStore.set",
   "isCollection": true
 } -->
 
