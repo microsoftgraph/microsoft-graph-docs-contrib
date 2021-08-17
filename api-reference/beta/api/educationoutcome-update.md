@@ -248,7 +248,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Update a Rubric Outcome
+### Example 3: Update a rubric outcome
 
 #### Request
 
