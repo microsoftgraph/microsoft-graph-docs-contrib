@@ -32,6 +32,7 @@ Represents a participant in a call.
 | isInLobby            | Boolean                                  | `true` if the participant is in lobby.                          |
 | isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
+| metadata             | String                                   | A blob of data provided by the participant in the roster.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Information about whether the participant has recording capability. |
 
 ## Relationships
@@ -54,7 +55,9 @@ The following is a JSON representation of the resource.
   "info": {"@odata.type": "#microsoft.graph.participantInfo"},
   "isInLobby": true,
   "isMuted": true,
-  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ]
+  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
+  "metadata": "String",
+  "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" }
 }
 ```
 

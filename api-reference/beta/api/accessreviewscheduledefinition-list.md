@@ -122,10 +122,12 @@ Content-type: application/json
             "id": "98dcebed-c7f6-46f4-bcf3-4a3fccdb3e2a",
             "displayName": "Access Review",
             "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
                 "queryType": "MicrosoftGraph"
             },
             "instanceEnumerationScope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b",
                 "queryType": "MicrosoftGraph"
             },

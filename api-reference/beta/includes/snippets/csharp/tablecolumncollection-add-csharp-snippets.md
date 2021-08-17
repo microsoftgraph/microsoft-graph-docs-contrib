@@ -10,7 +10,7 @@ var index = new Int32
 {
 };
 
-var values = JToken.Parse("[{}]");
+var values = JsonDocument.Parse("[{}]");
 
 await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns
 	.Add(index,values,null)
