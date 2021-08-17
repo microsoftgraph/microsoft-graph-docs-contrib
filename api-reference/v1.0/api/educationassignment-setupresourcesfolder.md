@@ -26,9 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-
 ```http
-POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/setUpResourcesFolder
+POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ```
 ## Request headers
 | Header       | Value |
@@ -38,7 +37,7 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005f
 ## Request body
 You need to provide an empty json `{}` as request body for this method.
 ## Response
-If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) object in the request body.
+If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) object in the request body.
 
 ## Example
 The following example shows how to call this API.
@@ -93,7 +92,7 @@ Content-type: application/json
 Content-length: 279
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
     "classId": "955e0bd5-52c2-41ad-b7e8-5b33a18c5e78",
     "displayName": "Unit 3 Essay",
     "closeDateTime": "2021-04-06T00:00:00Z",
