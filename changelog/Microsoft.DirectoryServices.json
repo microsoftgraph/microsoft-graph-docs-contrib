@@ -1,6 +1,32 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "e182d0c9-b84f-423e-a9f8-be7736987019",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "device",
+          "ChangeType": "Change",
+          "Description": "Updated the required permissions to reflect that adding and removing registered owners to and from devices, as well as creating a new device, requires the delegated permission **Directory.ReadWrite.AccessAsUser** and that application-only permissions are not supported.",
+          "Target": "device"
+        },
+        {
+          "Id": "e182d0c9-b84f-423e-a9f8-be7736987019",
+          "ApiChange": "Permissions",
+          "ChangedApiName": "device",
+          "ChangeType": "Addition",
+          "Description": "Added Directory.ReadWrite.All to the required app-only permissions to update device properties.",
+          "Target": "device"
+        }
+      ],
+      "Id": "e182d0c9-b84f-423e-a9f8-be7736987019",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-17T00:00:00.000Z",
+      "WorkloadArea": "Device",
+      "SubArea": ""
+    },
+    {
     "ChangeList": [
      {
        "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
