@@ -27,6 +27,14 @@
                     "Target": "qna"
                 },
                 {
+                    "Id": "dd870a0f-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "acronym",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [acronym](https://docs.microsoft.com/en-us/graph/api/resources/acronym?view=graph-rest-beta) resource type.",
+                    "Target": "acronym"
+                },
+                {
                     "Id": "dd896f43-e354-11eb-88f7-f923b9ff781d",
                     "ApiChange": "Resource",
                     "ChangedApiName": "answerVariant",
