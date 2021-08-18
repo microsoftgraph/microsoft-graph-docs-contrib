@@ -88,7 +88,7 @@ The following example limits maximum file size that can be uploaded to 10000 KB.
 <mgt-file-list max-file-size="10000" enable-file-upload></mgt-file-list>
 ```
 
-The following example exclude upload of files with file extensions ".doc,.pdf".
+The following example excludes upload of files with file extensions ".doc,.pdf".
 
 ```html
 <mgt-file-list excluded-file-extensions=".doc,.pdf" enable-file-upload></mgt-file-list>
