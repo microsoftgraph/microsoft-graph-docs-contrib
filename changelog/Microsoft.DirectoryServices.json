@@ -1,6 +1,32 @@
 {
   "changelog": [
     {
+    "ChangeList": [
+     {
+       "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+       "ApiChange": "Method",
+       "ChangedApiName": "reprocess",
+       "ChangeType": "Addition",
+       "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta) action to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/accesspackageassignment?view=graph-rest-beta) resource.",
+       "Target": "reprocess"
+     },
+     {
+       "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+       "ApiChange": "Method",
+       "ChangedApiName": "reprocess",
+       "ChangeType": "Addition",
+       "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest-reprocess?view=graph-rest-beta) action to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
+       "Target": "reprocess"
+      }
+    ],
+    "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2021-08-05T14:10:06Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Governance"
+    },
+    {
       "ChangeList": [
         {
           "Id": "2dca7e8b-c8af-45c1-9fa6-f108e93d8562",
@@ -753,6 +779,32 @@
       "CreatedDateTime": "2021-06-07T00:00:00",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
+          "ApiChange": "Method",
+          "ChangedApiName": "getApplicablePolicyRequirements",
+          "ChangeType": "Addition",
+          "Description": "Added the [getApplicablePolicyRequirements](https://docs.microsoft.com/en-us/graph/api/accesspackage-getapplicablepolicyrequirements.md) method to the [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-beta) resource.",
+          "Target": "accessPackage"
+        },
+        {
+          "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestRequirements",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequestRequirements](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-beta) complex type.",
+          "Target": "accessPackageAssignmentRequestRequirements"
+        }
+      ],
+      "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-10T18:32:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -3852,10 +3904,10 @@
         {
           "Id": "0f9cc542-3f6a-418d-9229-40c338a43e56",
           "ApiChange": "Resource",
-          "ChangedApiName": "Auditlogs.Read.All",
+          "ChangedApiName": "AuditLog.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added the [Auditlogs.Read.All](https://docs.microsoft.com/en-us/graph/permissions-reference#user-permissions) permission for listing the sign-in activity of a user.",
-          "Target": "Auditlogs.Read.All"
+          "Description": "Added the [AuditLog.Read.All](https://docs.microsoft.com/en-us/graph/permissions-reference#user-permissions) permission for listing the sign-in activity of a user.",
+          "Target": "AuditLog.Read.All"
         },
         {
           "Id": "0f9cc542-3f6a-418d-9229-40c338a43e56",
