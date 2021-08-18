@@ -14,7 +14,7 @@ certificateAuthorities.certificate = Base64.getDecoder().decode("Binary");
 certificateAuthoritiesList.add(certificateAuthorities);
 certificateBasedAuthConfiguration.certificateAuthorities = certificateAuthoritiesList;
 
-graphClient.organization("{id}").certificateBasedAuthConfiguration().references()
+graphClient.organization("{id}").certificateBasedAuthConfiguration()
 	.buildRequest()
 	.post(certificateBasedAuthConfiguration);
 
