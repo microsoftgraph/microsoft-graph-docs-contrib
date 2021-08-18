@@ -530,6 +530,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 | Permission                     | Display String                                                | Description  | Admin Consent Required | Microsoft Account supported |
 |:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
+| _Calls.AccessMedia.Chat_         | Access media streams in calls associated with this chat or meeting.                                    | Allows the app to access media streams in calls associated with this chat or meeting, without a signed-in user. |No | No |
+| _Calls.JoinGroupCalls.Chat_         | Join calls associated with this chat or meeting.                                    | Allows the app to join calls associated with this chat or meeting, without a signed-in user. |No | No |
 | _ChatSettings.Read.Chat_         | Read this chat's settings.                                    | Allows the app to read this chat's settings, without a signed-in user. |No | No |
 | _ChatSettings.ReadWrite.Chat_    | Read and write this chat's settings.                          | Allows the app to read and write this chat's settings, without a signed-in user. |No | No |
 | _ChatMessage.Read.Chat_          | Read this chat's messages.                                    | Allows the app to read this chat's messages, without a signed-in user. |No | No |
