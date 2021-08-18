@@ -1,9 +1,14 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/api-reference/beta/beta-overview.md",
+      "redirect_url": "/graph/api/overview?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/api-reference/beta/resources/accessreviews_root.md",
       "redirect_url": "/graph/api/resources/accessreviews-root?view=graph-rest-beta",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path_from_root": "/api-reference/beta/resources/azure_ad_auditlog_overview.md",
