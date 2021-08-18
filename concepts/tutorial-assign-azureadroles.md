@@ -503,7 +503,7 @@ HTTP/1.1 204 No Content
 
 ### Delete the IT Support (Users) group
 
-Replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of IT Support (Users) group. Deleting this group also removes the remaining members' eligibile role assignments.
+Replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of IT Support (Users) group. Deleting this group also removes the role eligibility assignment.
 
 <!-- {
   "blockType": "request",
@@ -511,28 +511,6 @@ Replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of IT Support (Us
 }-->
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": false
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
-### Remove the role eligibility request
-
-Replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of the role eligibility schedule.
-
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-assignaadroles-unifiedroleeligibilityschedulerequest_cancel"
-}-->
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/
 ```
 
 #### Response
