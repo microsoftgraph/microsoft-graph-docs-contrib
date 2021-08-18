@@ -74,7 +74,7 @@ If successful, this method returns a `201 Created` response code with the id of 
   "name": "create_qna_from_qnas"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/qnas
+POST https://graph.microsoft.com/beta/search/qnas
 Content-Type: application/json
 
 {

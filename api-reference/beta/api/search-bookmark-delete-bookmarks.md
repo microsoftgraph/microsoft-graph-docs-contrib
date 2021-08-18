@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/bookmarks/{bookmarkId}
+DELETE https://graph.microsoft.com/beta/search/bookmarks/{bookmarkId}
 ```
 
 

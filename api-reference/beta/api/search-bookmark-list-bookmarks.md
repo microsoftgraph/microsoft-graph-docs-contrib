@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bookmarks
+GET https://graph.microsoft.com/beta/search/bookmarks
 ```
 
 

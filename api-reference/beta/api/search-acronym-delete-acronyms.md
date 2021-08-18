@@ -1,16 +1,16 @@
 ---
-title: "Delete qna"
-description: "Deletes a qna object."
+title: "Delete acronym"
+description: "Deletes an acronym object."
 author: "jakeost-msft"
 localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# Delete qna
+# Delete acronym
 Namespace: microsoft.graph.search
 
-Deletes a [qna](../resources/qna.md) object.
+Deletes an [acronym](../resources/acronym.md) object.
 
 ## Permissions
 One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this api. To learn more, in
 }
 -->
 ``` http
-DELETE /qnas/{qnaId}
+DELETE /acronyms/{acronymsId}
 ```
 
 ## Request headers
@@ -48,11 +48,11 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_qna"
+  "name": "delete_acronym"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/search/qnas/{qnaId}
+DELETE https://graph.microsoft.com/beta/search/acronyms/{acronymsId}
 ```
 
 
