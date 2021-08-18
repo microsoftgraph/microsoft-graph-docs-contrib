@@ -44,7 +44,6 @@ Windows Feature Update Profile
 |Relationship|Type|Description|
 |:---|:---|:---|
 |assignments|[windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) collection|The list of group assignments of the profile.|
-|deviceUpdateStates|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) collection|The list of device states this profile targeted to|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

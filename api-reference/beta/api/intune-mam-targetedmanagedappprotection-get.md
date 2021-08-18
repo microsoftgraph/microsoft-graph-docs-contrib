@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2795
+Content-Length: 2840
 
 {
   "value": {
@@ -128,7 +128,8 @@ Content-Length: 2795
     "appActionIfUnableToAuthenticateUser": "wipe",
     "dialerRestrictionLevel": "managedApps",
     "isAssigned": true,
-    "targetedAppManagementLevels": "unmanaged"
+    "targetedAppManagementLevels": "unmanaged",
+    "appGroupType": "allCoreMicrosoftApps"
   }
 }
 ```

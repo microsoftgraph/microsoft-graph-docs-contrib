@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -67,6 +67,7 @@ The following table shows the properties that are required when you create the [
 |restartCount|Int32|Number of Restarts in the last 14 days. Valid values 0 to 9999999|
 |averageBlueScreens|Double|Average (mean) number of Blue Screens per device in the last 14 days. Valid values 0 to 9999999|
 |averageRestarts|Double|Average (mean) number of Restarts per device in the last 14 days. Valid values 0 to 9999999|
+|startupPerformanceScore|Double|The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 
 
 
@@ -80,7 +81,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
 Content-type: application/json
-Content-length: 635
+Content-length: 684
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -101,7 +102,8 @@ Content-length: 635
   "blueScreenCount": 15,
   "restartCount": 12,
   "averageBlueScreens": 6.0,
-  "averageRestarts": 5.0
+  "averageRestarts": 5.0,
+  "startupPerformanceScore": 7.666666666666667
 }
 ```
 
@@ -110,7 +112,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 684
+Content-Length: 733
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -132,7 +134,8 @@ Content-Length: 684
   "blueScreenCount": 15,
   "restartCount": 12,
   "averageBlueScreens": 6.0,
-  "averageRestarts": 5.0
+  "averageRestarts": 5.0,
+  "startupPerformanceScore": 7.666666666666667
 }
 ```
 
