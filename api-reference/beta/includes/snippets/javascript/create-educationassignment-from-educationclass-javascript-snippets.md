@@ -28,7 +28,8 @@ const educationAssignment = {
       allowStudentsToAddResourcesToSubmission: true
 };
 
-await client.api('/education/classes/8ddcac47-0b45-4cdb-b10a-d36a07a3dd62/assignments')
+await client.api('/education/classes/8b8cec7f-d0d8-4974-982a-e29396ddbe7f/assignments')
+	.version('beta')
 	.post(educationAssignment);
 
 ```

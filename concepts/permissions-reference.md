@@ -1851,6 +1851,7 @@ Security permissions are valid only on work or school accounts.
 ### Remarks
 
 Sites permissions are valid only on work or school accounts.
+The _Sites.Selected_ application permission is available only in the Microsoft Graph API.
 
 ### Example usage
 
