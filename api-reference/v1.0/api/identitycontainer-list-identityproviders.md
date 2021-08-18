@@ -1,6 +1,6 @@
 ---
 title: "List identityProviders"
-description: "Retrieve a list of identityProviderbase objects."
+description: "Get a collection of identity provider resources that are configured for a tenant, and that are derived from identityProviderBase."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
@@ -10,11 +10,11 @@ ms.prod: "identity-and-sign-in"
 # List identityProviders
 Namespace: microsoft.graph
 
-Retrieve a list of collection of object inherited from  [identityProviderBase](../resources/identityproviderbase.md).
+Get a collection of identity provider resources that are configured for a tenant, and that are derived from [identityProviderBase](../resources/identityproviderbase.md).
 
-For an Azure AD tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md) and/or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
+For an Azure AD tenant, the providers can be [socialIdentityProviders](../resources/socialidentityprovider.md) and/or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
 
-For an Azure AD B2C tenant it can be [socialIdentityProviders](../resources/socialidentityprovider.md) objects.
+For an Azure AD B2C, the providers can be [socialIdentityProviders](../resources/socialidentityprovider.md) objects.
 
 ## Permissions
 
@@ -58,40 +58,14 @@ For an Azure AD B2C tenant this method returns a `200 OK` response code and a co
 
 ## Examples
 
-### Example 1: List all identity providers configured in an Azure AD tenant
+### Example 1: List all identity provider resources configured in an Azure AD tenant
 
 #### Request
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_identityproviderbase"
-}
--->
-
 ``` http
 GET https://graph.microsoft.com/v1.0/identity/identityProviders
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviderbase-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviderbase-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviderbase-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-identityproviderbase-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 The following is an example of the response.
@@ -130,7 +104,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all identityProvider objects configured in an Azure AD B2C tenant
+### Example 2: List all identity provider resources configured in an Azure AD B2C tenant
 
 #### Request
 The following is an example of the request.

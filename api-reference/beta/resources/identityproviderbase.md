@@ -18,7 +18,7 @@ For Azure AD B2B scenarios in an Azure AD directory, the identity provider can b
 
 Configuring an identity provider in your Azure AD directory enables new Azure AD B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
-In an Azure AD B2C directory, the identity provider type can be a [socialIdentityProviders](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or [appleIdentityProvider](../resources/appleidentityprovider.md), which will inherit from identityProviderBase resource type.
+In an Azure AD B2C directory, the identity provider type can be a [socialIdentityProviders](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or [appleIdentityProvider](../resources/applemanagedidentityprovider.md), which will inherit from identityProviderBase resource type.
 
 Configuring an identity provider in your Azure AD B2C directory enables users to sign up and sign in using a social account or a custom OpenID Connect supported provider in an application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol.
 
@@ -26,12 +26,12 @@ Configuring an identity provider in your Azure AD B2C directory enables users to
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identityproviderbase-list.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant.|
-|[Create](../api/identityproviderbase-post-identityproviders.md)| [socialidentityprovider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) |Create a new social identity provider (Azure AD or Azure AD B2C), OpenID Connect identity provider (Azure AD B2C), or an Apple identity provider (Azure AD B2C)|
+|[List](../api/identitycontainer-list-identityproviders.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant.|
+|[Create](../api/identitycontainer-post-identityproviders.md)| [socialidentityprovider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) |Create a new social identity provider (Azure AD or Azure AD B2C), OpenID Connect identity provider (Azure AD B2C), or an Apple identity provider (Azure AD B2C)|
 |[Get](../api/identityproviderbase-get.md) |[socialidentityprovider](../resources/socialidentityprovider.md), [builtInIdentityProvider](../resources/builtinidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)| Retrieve properties of a social identity provider (Azure AD or Azure AD B2C), built-in identity provider (Azure AD or Azure AD B2C), OpenID Connect identity provider(Azure AD B2C), or an Apple identity provider (Azure AD B2C)|
 |[Update](../api/identityproviderbase-update.md)|None|Update a social identity provider (Azure AD or Azure AD B2C), OpenID Connect identity provider (Azure AD B2C), or an Apple identity provider (Azure AD B2C).|
 |[Delete](../api/identityproviderbase-delete.md)|None|Delete a social identity provider (Azure AD or Azure AD B2C),OpenID Connect identity provider (Azure AD B2C) or an Apple identity provider (Azure AD B2C).|
-|[List available provider types](../api/identityproviderbase-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
+|[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all supported identity provider types in the tenant.|
 
 ## Properties
 

@@ -4719,9 +4719,9 @@ items:
           - name: Social identity provider
             href: resources/socialidentityprovider.md
           - name: List
-            href: api/identityproviderbase-list.md
+            href: api/identitycontainer-list-identityproviders.md
           - name: Create
-            href: api/identityproviderbase-post-identityproviders.md
+            href: api/identitycontainer-post-identityproviders.md
           - name: Get
             href: api/identityproviderbase-get.md
           - name: Update
@@ -4729,7 +4729,7 @@ items:
           - name: Delete
             href: api/identityproviderbase-delete.md
           - name: List available provider types
-            href: api/identityproviderbase-list-availableprovidertypes.md
+            href: api/identityproviderbase-availableprovidertypes.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
