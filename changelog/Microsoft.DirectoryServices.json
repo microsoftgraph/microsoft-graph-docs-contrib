@@ -3904,10 +3904,10 @@
         {
           "Id": "0f9cc542-3f6a-418d-9229-40c338a43e56",
           "ApiChange": "Resource",
-          "ChangedApiName": "Auditlogs.Read.All",
+          "ChangedApiName": "AuditLog.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added the [Auditlogs.Read.All](https://docs.microsoft.com/en-us/graph/permissions-reference#user-permissions) permission for listing the sign-in activity of a user.",
-          "Target": "Auditlogs.Read.All"
+          "Description": "Added the [AuditLog.Read.All](https://docs.microsoft.com/en-us/graph/permissions-reference#user-permissions) permission for listing the sign-in activity of a user.",
+          "Target": "AuditLog.Read.All"
         },
         {
           "Id": "0f9cc542-3f6a-418d-9229-40c338a43e56",
