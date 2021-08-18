@@ -91,15 +91,15 @@ The following is the JSON response:
 }
 ```
 
-## Retriving Permission IDs
+## Retriving permission IDs
 
-If you need to set permissions using the Azure CLI, PowerShell or infrastructure as code frameworks, you might need the identifier for the permission that you want to use instead of the name. The identifier can be retrieved using the Azure CLI by running `az ad sp list`. However, this generates a very long list, and it can be hard to find the specific permission you want. If you already know the name of the permission you need, you can run the following command using the Azure CLI:
+If you need to set permissions using the Azure CLI, PowerShell, or infrastructure as code frameworks, you might need the identifier for the permission that you want to use instead of the name. You can use the Azure CLI to retrieve the identifier by running `az ad sp list`. However, this generates a very long list, and it can be hard to find the specific permission you want. If you already know the name of the permission you need, you can run the following command using the Azure CLI:
 
 ```bash
 az ad sp list --query "[?appDisplayName=='Microsoft Graph'].{permissions:oauth2Permissions}[0].permissions[?value=='<NAME OF PERMISSION>'].{id: id, value: value, adminConsentDisplayName: adminConsentDisplayName, adminConsentDescription: adminConsentDescription}[0]" --all
 ```
 
-The response of the command should be similar to the following example, which contains the description, identifier, display name, and permission name:
+The response should be similar to the following example, which contains the description, identifier, display name, and permission name:
 
 ```json
 {
@@ -109,8 +109,6 @@ The response of the command should be similar to the following example, which co
   "value": "Group.Read.All"
 }
 ```
-
----
 
 ## Access reviews permissions
 
