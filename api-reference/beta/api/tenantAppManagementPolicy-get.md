@@ -1,5 +1,5 @@
 ---
-title: "Get defaultAppManagementPolicy"
+title: "Get tenantAppManagementPolicy"
 description: "Read the default tenant policy that applies to applications and service principals objects."
 localization_priority: Normal
 author: "madansr7"
@@ -7,13 +7,13 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Get defaultAppManagementPolicy
+# Get tenantAppManagementPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of [defaultAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object.
+Read the properties of [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object.
 
 ## Permissions
 
@@ -55,7 +55,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_defaultAppManagementPolicy"
+  "name": "get_tenantAppManagementPolicy"
 }-->
 
 ```msgraph-interactive
@@ -96,7 +96,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get defaultAppManagementPolicy",
+  "description": "Get tenantAppManagementPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
