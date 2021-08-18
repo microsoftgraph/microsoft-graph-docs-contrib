@@ -525,6 +525,64 @@
 			"CreatedDateTime": "2021-04-28T19:00:00.000Z",
 			"WorkloadArea": "Compliance",
 			"SubArea": "eDiscovery"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "38054b2b-f95e-11eb-b6a8-8203ca0139f1",
+					"ApiChange": "Parameter",
+					"ChangedApiName": "Create custodian siteSource",
+					"ChangeType": "Change",
+					"Description": "Changed the required paramter to **site** from ****, this now supports providing a site URL for the SharePoint or OneDrive for business site [Create custodian siteSource](https://docs.microsoft.com/en-us/graph/api/ediscovery-custodian-post-sitesources?view=graph-rest-beta) method.",
+					"Target": "custodians"
+				},
+				{
+					"Id": "38054b2b-f95e-11eb-b6a8-8203ca0139f1",
+					"ApiChange": "Parameter",
+					"ChangedApiName": "Create unifiedGroupSource",
+					"ChangeType": "Change",
+					"Description": "Added paramter **group**, this now supports providing a group mailbox SMTP address. [Create unifiedGroupSource](https://docs.microsoft.com/en-us/graph/api/ediscovery-custodian-post-unifiedgroupsources?view=graph-rest-beta) method.",
+					"Target": "custodians"
+				},
+				{
+					"Id": "38054b2b-f95e-11eb-b6a8-8203ca0139f1",
+					"ApiChange": "Parameter",
+					"ChangedApiName": "Create noncustodialDataSource",
+					"ChangeType": "Change",
+					"Description": "Updated paramter **datasource**, this now supports providing a **siteSource** and the associated site URL. [Create noncustodialDataSource](https://docs.microsoft.com/en-us/graph/api/ediscovery-noncustodialdatasource-post?view=graph-rest-beta) method.",
+					"Target": "nonCustodialDataSources"
+				},
+				{
+					"Id": "38054b2b-f95e-11eb-b6a8-8203ca0139f1",
+					"ApiChange": "Parameter",
+					"ChangedApiName": "Create legalHold userSource",
+					"ChangeType": "Change",
+					"Description": "Updated paramter **email**, this now supports providing a group mailbox. [Create legalHold userSource](https://docs.microsoft.com/en-us/graph/api/ediscovery-legalhold-post-usersources?view=graph-rest-beta) method.",
+					"Target": "legalHold"
+				},
+				{
+					"Id": "38054b2b-f95e-11eb-b6a8-8203ca0139f1",
+					"ApiChange": "Parameter",
+					"ChangedApiName": "Create legalHold siteSource",
+					"ChangeType": "Change",
+					"Description": "Updated paramter **site**, this now supports providing a **siteSource** and the associated site URL. [Create legalHold siteSource](https://docs.microsoft.com/en-us/graph/api/ediscovery-legalhold-post-sitesources?view=graph-rest-beta) method.",
+					"Target": "legalHold"
+				},
+				{
+					"Id": "38054b2b-f95e-11eb-b6a8-8203ca0139f1",
+					"ApiChange": "Parameter",
+					"ChangedApiName": "Add additional source",
+					"ChangeType": "Change",
+					"Description": "Updated paramters to include **site**, this now supports providing a **siteSource** and the associated site URL. [Add additional source](https://docs.microsoft.com/en-us/graph/api/ediscovery-sourcecollection-post-additionalsources?view=graph-rest-beta) method.",
+					"Target": "sourceCollection"
+				},
+			],
+			"Id": "37f70209-f95e-11eb-b6a8-8203ca0139f1",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-08-09T22:07:42.610Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": ""
 		}
 	]
 }
