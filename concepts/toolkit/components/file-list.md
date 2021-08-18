@@ -70,7 +70,7 @@ The following example changes the behavior of the component to fetch file list b
 <mgt-file-list insight-type="shared"></mgt-file-list>
 ```
 
-The following example enable the file upload feature.
+The following example enables the file upload feature.
 
 ```html
 <mgt-file-list enable-file-upload></mgt-file-list>
