@@ -21,8 +21,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "api-reference/beta/beta-overview.md",
-      "redirect_url": "graph/api/overview?view=graph-rest-beta",
+      "source_path": "concepts/beta-overview.md",
+      "redirect_url": "/graph/api/overview?view=graph-rest-beta",
       "redirect_document_id": true
     },
     {
