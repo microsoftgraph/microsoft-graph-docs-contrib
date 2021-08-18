@@ -525,6 +525,7 @@ HTTP/1.1 204 No Content
 
 ## See also
 
++ [Start using Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started)
 + [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#all-roles)
 + [Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates)
 + [unifiedRoleEligibilityScheduleRequest resource type](/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-beta&preserve-view=true)
