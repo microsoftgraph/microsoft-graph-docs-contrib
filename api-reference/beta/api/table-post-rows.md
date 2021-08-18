@@ -1,6 +1,6 @@
 ---
 title: "Create TableRow"
-description: "Adds rows to the end of the table. Note that the API can accept multiple rows data using this API. Adding one row at a time could lead to performance degradation. The recommended approach would be to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform single rows add operation. Experiment with the number of rows to determine the ideal number of rows to use in single API call. "
+description: "Adds rows to the table. Note that the API can accept multiple rows data using this API. Adding one row at a time could lead to performance degradation. The recommended approach would be to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform single rows add operation. Experiment with the number of rows to determine the ideal number of rows to use in single API call. "
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
@@ -17,7 +17,7 @@ Adds rows to the end of the table. Note that the API can accept multiple rows da
 
 ## Error Handling
 
-This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
+This request might occasionally receive a `504 HTTP` error. The appropriate response to this error is to repeat the request.
 
 ## Permissions
 
@@ -121,18 +121,17 @@ Content-length: 45
 }
 ```
 
-### Example 2: Add two rows to a table using async
+### Example 2: Add two rows to a table asynchronously
 
 Async requests will be useful if the request takes longer time than expected. Please note that `Workbook-Session-Id` header is required in issuing async requests. The user needs to [Create session](./workbook-createsession.md) before using async rich API features. The header `Prefer:respond-async` is also required in the async requests.
 
 For async features, the user usually needs to issue 2-3 requests. This request, [Get workbookOperation](./workbookoperation-get.md) request and optionally [Get tableRowOperationResult](./tablerowoperationresult-get.md) request.
 
-#### Initiate addTableRow request in async
+#### Request
 
-##### Request
+Here is an example of the async request. Note that `202 Accepted` will only happen when the request takes a long time to respond. If the request is completed quickly, it will work like a regular sync request, falling back to [Example 1](#example-1-add-two-rows-to-a-table).
 
-Here is an example of the request. Note that `202 Accepted` will only happen when the request takes a long time to respond. If the request is completed quickly, it will work like a regular sync request.
-
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ", "Table1"],
@@ -154,7 +153,7 @@ Content-length: 51
 }
 ```
 
-##### Response
+#### Response
 
 Here is another example of the response that will lead to an async operation. For details, see [Get workbookOperation](./workbookoperation-get.md) and [Get tableRowOperationResult](./tablerowoperationresult-get.md).
 <!-- {
