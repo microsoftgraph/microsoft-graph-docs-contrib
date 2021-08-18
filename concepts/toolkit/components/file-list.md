@@ -76,7 +76,7 @@ The following example enables the file upload feature.
 <mgt-file-list enable-file-upload></mgt-file-list>
 ```
 
-The following example limit upload to 5 files.
+The following example limits maximum number of files that can be uploaded to 5.
 
 ```html
 <mgt-file-list max-upload-file="5" enable-file-upload></mgt-file-list>
