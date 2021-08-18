@@ -82,7 +82,7 @@ The following example limit upload to 5 files.
 <mgt-file-list max-upload-file="5" enable-file-upload></mgt-file-list>
 ```
 
-The following example limit upload file size to 10000 KB.
+The following example limits maximum file size that can be uploaded to 10000 KB.
 
 ```html
 <mgt-file-list max-file-size="10000" enable-file-upload></mgt-file-list>
