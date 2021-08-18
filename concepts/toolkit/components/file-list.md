@@ -36,9 +36,9 @@ You can use several properties to customize the component.
 | file-extensions | fileExtensions | An array of file extensions used to filter files to show. |
 | hide-more-files-button | hideMoreFilesButton | A boolean to indicate whether to show a button to render more files. |
 | enable-file-upload | enableFileUpload | Boolean to enable or disable file upload extension, default is false.  |
-| excluded-file-extensions | excludedFileExtensions | String array of file extensions to be excluded from file upload. |
-| max-file-size | maxFileSize | Number to restrict upload size (KB).  |
-| max-upload-file | maxUploadFile | Number, default value are 10 files. |
+| excluded-file-extensions | excludedFileExtensions | String array of file extensions to be excluded from file upload. Must also provide `enable-file-upload` attribute. |
+| max-file-size | maxFileSize | Number to restrict upload size (KB). Must also provide `enable-file-upload` attribute. |
+| max-upload-file | maxUploadFile | Number, default value are 10 files. Must also provide `enable-file-upload` attribute. |
 
 The following example changes the behavior of the component to fetch a file list from a specific query.
 
