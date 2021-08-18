@@ -1510,7 +1510,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:---------- |:-------------- |:----------- |:---------------------- |
 | _PrivilegedAccess.Read.AzureAD_ |Read Privileged Identity Management data for Directory  | Allows the app to have read access to Privileged Identity Management APIs for Azure AD. | Yes |
 | _PrivilegedAccess.Read.AzureADGroup_ |Read Privileged Identity Management data for privileged access groups | Allows the app to have read access to Privileged Identity Management APIs for groups. | Yes |
-| _PrivilegedAccess.Read.AzureADResources_ |Read Privileged Identity Management data for Azure resources | Allows the app to have read access to Privileged Identity Management APIs for Azure AD resources. | Yes |
+| _PrivilegedAccess.Read.AzureResources_ |Read Privileged Identity Management data for Azure resources | Allows the app to have read access to Privileged Identity Management APIs for Azure AD resources. | Yes |
 
 ---
 
@@ -1851,6 +1851,7 @@ Security permissions are valid only on work or school accounts.
 ### Remarks
 
 Sites permissions are valid only on work or school accounts.
+The _Sites.Selected_ application permission is available only in the Microsoft Graph API.
 
 ### Example usage
 
