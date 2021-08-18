@@ -575,7 +575,7 @@
 					"ChangeType": "Change",
 					"Description": "Updated paramters to include **site**, this now supports providing a **siteSource** and the associated site URL. [Add additional source](https://docs.microsoft.com/en-us/graph/api/ediscovery-sourcecollection-post-additionalsources?view=graph-rest-beta) method.",
 					"Target": "sourceCollection"
-				},
+				}
 			],
 			"Id": "37f70209-f95e-11eb-b6a8-8203ca0139f1",
 			"Cloud": "prd",
