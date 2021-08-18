@@ -79,7 +79,7 @@ Content-Type: application/json
     "description": "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
     "webUrl": "http://microsoft.com/deep-neural-network",
     "state": "published",
-    "lastModifiedDateTime": 2016-03-21T20:01:37Z,
+    "lastModifiedDateTime": "2016-03-21T20:01:37Z",
     "lastModifiedBy": {
       "user": {
           "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",

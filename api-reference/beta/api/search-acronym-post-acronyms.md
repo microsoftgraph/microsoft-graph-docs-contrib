@@ -64,11 +64,11 @@ If successful, this method returns a `200 Ok` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_acronym_from_"
-}
--->
-``` http
+  "name": "create_acronym_from_acronyms"
+}-->
+```http
 POST https://graph.microsoft.com/beta/search/acronyms
+Authorization: Bearer AAD_PFT_TOKEN
 Content-Type: application/json
 
 {
@@ -82,15 +82,18 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.search.acronym"
-}
--->
-``` http
+}-->
+```http
 HTTP/1.1 200 Ok
 Content-Type: application/json
+
+{
+  "id": "733b26d5-af76-4eea-ac69-1a0ce8716897"
+}
 ```
 
