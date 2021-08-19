@@ -185,6 +185,15 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * Schema extensions (legacy) are not returned with $select statement, but are returned without $select.
 * Clients cannot track changes to open extensions or registered schema extensions.
 
+## Devices and apps | Device updates (Windows updates)
+
+### Accessing and updating deployment audiences
+
+Accessing and updating deployment audiences on **deployment** resources created via Intune is not currently supported.
+
+* [Listing deployment audience members](/graph/api/windowsupdates-deploymentaudience-list-members) and [listing deployment audience exclusions](/graph/api/windowsupdates-deploymentaudience-list-exclusions) returns `404 Not Found`.
+* [Updating deployment audience members and exclusions](/graph/api/windowsupdates-deploymentaudience-updateaudience) or [updating by ID](/graph/api/windowsupdates-deploymentaudience-updateaudiencebyid) returns `202 Accepted` but the audience is not updated.
+
 ## Extensions
 
 ### Change tracking is not supported
@@ -253,6 +262,10 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
+### Removing a group owner also removes the user as a group member
+
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
+
 ## Identity and access | Application and service principal APIs
 
 There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) entities currently in development. The following is a summary of current limitations and in-development API features.
@@ -290,7 +303,7 @@ JSON batch requests must not contain any nested batch requests.
 
 ### All individual requests must be synchronous
 
-All requests contained in a batch request must be executed synchronously. If present, the `respond-async` preference will be ignored.
+All requests contained in a batch request must be run synchronously. If present, the `respond-async` preference will be ignored.
 
 ### No transactions
 
@@ -308,9 +321,9 @@ JSON batch requests are currently limited to 20 individual requests.
 
 Individual requests can depend on other individual requests. Currently, requests can only depend on a single other request, and must follow one of these three patterns:
 
-1. Parallel - no individual request states a dependency in the `dependsOn` property.
+1. Parallel - no individual request states a dependency in the **dependsOn** property.
 2. Serial - all individual requests depend on the previous individual request.
-3. Same - all individual requests that state a dependency in the `dependsOn` property, state the same dependency.
+3. Same - all individual requests that state a dependency in the **dependsOn** property, state the same dependency. **Note**: Requests made using this pattern will run sequentially.
 
 As JSON batching matures, these limitations will be removed.
 
@@ -341,6 +354,9 @@ The filter query to get members of a team based on their roles `GET /teams/team-
 
 ### Missing properties for chat members
 In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
+
+### Missing properties in the list of teams that a user has joined
+The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
 
 ## Users
 

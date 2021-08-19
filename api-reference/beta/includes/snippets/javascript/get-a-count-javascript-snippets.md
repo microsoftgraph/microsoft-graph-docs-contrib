@@ -10,11 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-let user = await client.api('/groups/{id}/transitiveMembers/microsoft.graph.user')
+let contacts = await client.api('/contacts')
 	.version('beta')
 	.header('ConsistencyLevel','eventual')
-	.filter('startswith(displayName, \'a\')')
+	.filter('startswith(displayName,\'A\')')
 	.orderby('displayName')
+	.top(1)
 	.get();
 
 ```

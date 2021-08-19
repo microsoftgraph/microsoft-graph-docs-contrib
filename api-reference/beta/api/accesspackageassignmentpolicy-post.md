@@ -313,7 +313,7 @@ Content-type: application/json
         "approvalStages": [{
                 "approvalStageTimeOutInDays": 14,
                 "isApproverJustificationRequired": true,
-                "isEscalationEnabled": true,
+                "isEscalationEnabled": false,
                 "escalationTimeInMinutes": 11520,
                 "primaryApprovers": [{
                         "@odata.type": "#microsoft.graph.groupMembers",
@@ -328,9 +328,6 @@ Content-type: application/json
                 ]
             }
         ]
-    },
-    "accessReviewSettings": {
-        "isEnabled": false
     },
     "questions": [{
         "isRequired": false,
