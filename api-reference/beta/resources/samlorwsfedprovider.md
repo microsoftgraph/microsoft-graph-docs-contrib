@@ -36,11 +36,11 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 |:---|:---|:---|
 |displayName|String|The display name of the SAML/Ws-Fed based identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
 |id|String|The identifier of the identity provider. Inherited from [entity](../resources/entity.md).|
-|issuerUri|String|**TODO: Add Description**|
-|metadataExchangeUri|String|**TODO: Add Description**|
-|passiveSignInUri|String|**TODO: Add Description**|
-|preferredAuthenticationProtocol|String|**TODO: Add Description**|
-|signingCertificate|String|**TODO: Add Description**|
+|issuerUri|String|Issuer URI of the federation server.|
+|metadataExchangeUri|String|URI of the metadata exchange end point used for authentication from rich client applications.|
+|passiveSignInUri|String|URI that web-based clients are directed to when signing in to AAD services.|
+|preferredAuthenticationProtocol|String|Preferred authentication protocol. Supported values include `saml` or `wsfed`.|
+|signingCertificate|String|Current certificate used to sign tokens passed to the AAD Identity platform. Formatted as Base64 encoded strings of the public portion of the federated IDP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Usually, certificates are updated via an auto-rollover process; AAD attempts to retrieve a new certificate from the federation service metadata 30 days before expiry of the current certificate. If a new certificate is not available at the time, AAD will continue to monitor the metadata daily and will update the federation settings for the domain when a new certificate is available. The signingCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated.|
 
 ## Relationships
 None.
