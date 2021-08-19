@@ -14,8 +14,8 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "redirection_files": [
-        "concepts/redirects/.openpublishing.redirection.0920.json",
-        "concepts/redirects/.openpublishing.redirection.0121.json"
+        "redirects/.openpublishing.redirection.0920.json",
+        "redirects/.openpublishing.redirection.0121.json"
       ]
     },
     {
