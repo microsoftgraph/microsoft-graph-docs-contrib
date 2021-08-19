@@ -90,7 +90,7 @@ Content-length: 283
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.samlOrWsFedExternalDomainFederation"
+  "@odata.type": "microsoft.graph.samlOrWsFedExternalDomainFederation"
 }
 -->
 ``` http
