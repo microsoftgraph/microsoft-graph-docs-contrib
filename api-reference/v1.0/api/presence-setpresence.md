@@ -84,7 +84,6 @@ The following request shows the application with ID `22553876-f5ab-4529-bffb-cfe
 ### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "set-presence"
