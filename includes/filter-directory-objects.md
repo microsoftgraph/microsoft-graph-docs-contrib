@@ -1,4 +1,6 @@
-| Application Property                          | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
+#### Application properties
+
+| Name                          | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
 | --------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
 | appId                                         | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
 | applicationTemplateId                         | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
@@ -14,22 +16,38 @@
 | requiredResourceAccess/any(r:r/resourceAppId) | ![Requires advanced query parameters][AQP] |                                            |                                            |                                            | ![Not Supported][NS]                       |
 | signInAudience                                | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
 
-| Contact Property                                           | eq                                         | startsWith                                 | ge                           | le                           | null value                                 |
-| ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ---------------------------- | ---------------------------- | ------------------------------------------ |
-| companyName                                                | ![Requires advanced query parameters][AQP] | ![Requires advanced query parameters][AQP] |                              |                              | ![Requires advanced query parameters][AQP] |
-| department                                                 | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| displayName                                                | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| givenName                                                  | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| jobTitle                                                   | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| mail                                                       | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| mailNickname                                               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| onPremisesLastSyncDateTime                                 | ![Supported by Default][RDS]               |                                            | ![Supported by Default][RDS] | ![Supported by Default][RDS] | ![Not Supported][NS]                       |
-| onPremisesProvisioningErrors/any(o:o/category)             | ![Supported by Default][RDS]               |                                            |                              |                              | ![Not Supported][NS]                       |
-| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Supported by Default][RDS]               |                                            |                              |                              | ![Not Supported][NS]                       |
-| onPremisesSyncEnabled                                      | ![Supported by Default][RDS]               |                                            |                              |                              | ![Requires advanced query parameters][AQP] |
-| surname                                                    | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
 
-| Device Property                                  | eq                                         | startsWith                   | ge                                         | le                                         | null value                                 |
+
+#### Delegated permission grant properties
+
+| Property | eq                                         | startsWith | ge  | le  | null value           |
+| ------------------------------- | ------------------------------------------ | ---------- | --- | --- | -------------------- |
+| clientId                        | ![Requires advanced query parameters][AQP] |            |     |     | ![Not Supported][NS] |
+| resourceId                      | ![Supported by Default][RDS]               |            |     |     | ![Not Supported][NS] |
+
+
+
+#### Service principal properties
+
+| Property           | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
+| ----------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| accountEnabled                      | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
+| appId                               | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
+| applicationTemplateId               | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
+| appOwnerOrganizationId              | ![Requires advanced query parameters][AQP] |                                            |                                            |                                            | ![Not Supported][NS]                       |
+| appRoleAssignmentRequired           | ![Requires advanced query parameters][AQP] |                                            |                                            |                                            | ![Not Supported][NS]                       |
+| createdObjects/any(c:c/id)          | ![Requires advanced query parameters][AQP] |                                            |                                            |                                            | ![Not Supported][NS]                       |
+| description                         | ![Requires advanced query parameters][AQP] | ![Requires advanced query parameters][AQP] |                                            |                                            | ![Not Supported][NS]                       |
+| displayName                         | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                                            |                                            | ![Requires advanced query parameters][AQP] |
+| info/logoUrl                        | ![Not Supported][NS]                       | ![Not Supported][NS]                       |                                            |                                            | ![Requires advanced query parameters][AQP] |
+| info/termsOfServiceUrl              | ![Requires advanced query parameters][AQP] | ![Not Supported][NS]                       |                                            |                                            | ![Not Supported][NS]                       |
+| keyCredentials/any(k:k/endDateTime) | ![Requires advanced query parameters][AQP] |                                            | ![Requires advanced query parameters][AQP] | ![Requires advanced query parameters][AQP] | ![Not Supported][NS]                       |
+
+
+
+#### Device properties
+
+| Property                                  | eq                                         | startsWith                   | ge                                         | le                                         | null value                                 |
 | ------------------------------------------------ | ------------------------------------------ | ---------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
 | accountEnabled                                   | ![Supported by Default][RDS]               |                              |                                            |                                            | ![Not Supported][NS]                       |
 | alternativeSecurityIds/any(a:a/identityProvider) | ![Requires advanced query parameters][AQP] | ![Not Supported][NS]         |                                            |                                            | ![Not Supported][NS]                       |
@@ -45,7 +63,11 @@
 | operatingSystem                                  | ![Supported by Default][RDS]               | ![Supported by Default][RDS] |                                            |                                            | ![Requires advanced query parameters][AQP] |
 | operatingSystemVersion                           | ![Supported by Default][RDS]               | ![Supported by Default][RDS] |                                            |                                            | ![Requires advanced query parameters][AQP] |
 
-| Group Property                                             | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
+
+
+#### Group properties
+
+| Property                                             | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
 | ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
 | assignedLicenses/any(a:a/skuId)                            | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
 | classification                                             | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                                            |                                            | ![Not Supported][NS]                       |
@@ -68,26 +90,31 @@
 | renewedDateTime                                            | ![Supported by Default][RDS]               |                                            | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Not Supported][NS]                       |
 | securityEnabled                                            | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
 
-| oauth2PermissionGrants Property | eq                                         | startsWith | ge  | le  | null value           |
-| ------------------------------- | ------------------------------------------ | ---------- | --- | --- | -------------------- |
-| clientId                        | ![Requires advanced query parameters][AQP] |            |     |     | ![Not Supported][NS] |
-| resourceId                      | ![Supported by Default][RDS]               |            |     |     | ![Not Supported][NS] |
 
-| servicePrincipal Property           | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
-| ----------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
-| accountEnabled                      | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
-| appId                               | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
-| applicationTemplateId               | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
-| appOwnerOrganizationId              | ![Requires advanced query parameters][AQP] |                                            |                                            |                                            | ![Not Supported][NS]                       |
-| appRoleAssignmentRequired           | ![Requires advanced query parameters][AQP] |                                            |                                            |                                            | ![Not Supported][NS]                       |
-| createdObjects/any(c:c/id)          | ![Requires advanced query parameters][AQP] |                                            |                                            |                                            | ![Not Supported][NS]                       |
-| description                         | ![Requires advanced query parameters][AQP] | ![Requires advanced query parameters][AQP] |                                            |                                            | ![Not Supported][NS]                       |
-| displayName                         | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                                            |                                            | ![Requires advanced query parameters][AQP] |
-| info/logoUrl                        | ![Not Supported][NS]                       | ![Not Supported][NS]                       |                                            |                                            | ![Requires advanced query parameters][AQP] |
-| info/termsOfServiceUrl              | ![Requires advanced query parameters][AQP] | ![Not Supported][NS]                       |                                            |                                            | ![Not Supported][NS]                       |
-| keyCredentials/any(k:k/endDateTime) | ![Requires advanced query parameters][AQP] |                                            | ![Requires advanced query parameters][AQP] | ![Requires advanced query parameters][AQP] | ![Not Supported][NS]                       |
 
-| User Property                                              | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
+#### Organizational contact properties
+
+| Property                                           | eq                                         | startsWith                                 | ge                           | le                           | null value                                 |
+| ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ---------------------------- | ---------------------------- | ------------------------------------------ |
+| companyName                                                | ![Requires advanced query parameters][AQP] | ![Requires advanced query parameters][AQP] |                              |                              | ![Requires advanced query parameters][AQP] |
+| department                                                 | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| displayName                                                | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| givenName                                                  | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| jobTitle                                                   | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| mail                                                       | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| mailNickname                                               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| onPremisesLastSyncDateTime                                 | ![Supported by Default][RDS]               |                                            | ![Supported by Default][RDS] | ![Supported by Default][RDS] | ![Not Supported][NS]                       |
+| onPremisesProvisioningErrors/any(o:o/category)             | ![Supported by Default][RDS]               |                                            |                              |                              | ![Not Supported][NS]                       |
+| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Supported by Default][RDS]               |                                            |                              |                              | ![Not Supported][NS]                       |
+| onPremisesSyncEnabled                                      | ![Supported by Default][RDS]               |                                            |                              |                              | ![Requires advanced query parameters][AQP] |
+| surname                                                    | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+
+
+
+
+#### User properties
+
+| Property                                              | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
 | ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
 | accountEnabled                                             | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
 | ageGroup                                                   | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
