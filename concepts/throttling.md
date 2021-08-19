@@ -114,7 +114,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
 | 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
 
-#### Applicable resources
+#### Outlook service resources
 
 | API                                                      | Resources      |
 |------------------------------------------------------------|-----------------|
