@@ -11276,8 +11276,9 @@ items:
           - name: OpenID Connect identity provider
             href: resources/openidconnectidentityprovider.md
           - name: SAML/Ws-Fed identity provider
-            href: resources/samlwsfedidentityprovider.md
             items: 
+            - name: SAML/Ws-Fed identity provider
+            href: resources/samlwsfedidentityprovider.md
             - name: List
             href: api/samlorwsfedexternaldomainfederation-list.md
             - name: Get
