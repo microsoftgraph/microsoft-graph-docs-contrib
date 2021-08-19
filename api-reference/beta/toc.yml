@@ -10997,7 +10997,7 @@ items:
         - name: Application authentication method policy (preview)
           items:
           - name: Overview
-            href: resources/applicationAuthMethodPolicy.md
+            href: resources/applicationAuthenticationMethodPolicy.md
           - name: Tenant app management policy
             items:
             - name: Overview
