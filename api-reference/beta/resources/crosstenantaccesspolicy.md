@@ -1,9 +1,9 @@
 ---
 title: "crossTenantAccessPolicy resource type"
-description: "**TODO: Add Description**"
+description: "Cross-tenant access settings let you manage both B2B collaboration and B2B direct connect for your organization."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Cross-tenant access settings let you manage both B2B collaboration and B2B direct connect for your organization. You can determine how your users collaborate with other organizations (outbound access) and how other organizations collaborate with you (inbound access). Granular controls let you determine the people, groups, and apps, both in your organization and in external organizations, that can participate in B2B collaboration and B2B direct connect.
+
+- Default cross-tenant access settings let you determine your baseline inbound and outbound settings for both B2B collaboration and B2B direct connect for your organization and all external organizations. B2B collaboration, both inbound and outbound, is enabled by default. This means all your users can be invited to external organizations, and all your users can invite external users for B2B collaboration. B2B direct connect is disabled by default.
+
+- Organization-specific access settings let you configure customized settings for individual organizations, which take precedence over default settings. This means that although B2B collaboration and B2B direct connect might be disabled across your organization by default, you could enable these features for a specific external organization.
 
 Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipaccesspolicybase.md).
 
@@ -21,32 +25,27 @@ Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationsh
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List crossTenantAccessPolicies](../api/crosstenantaccesspolicy-list.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) collection|Get a list of the [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) objects and their properties.|
-|[Create crossTenantAccessPolicy](../api/crosstenantaccesspolicy-create.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md)|Create a new [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object.|
 |[Get crossTenantAccessPolicy](../api/crosstenantaccesspolicy-get.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md)|Read the properties and relationships of a [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object.|
 |[Update crossTenantAccessPolicy](../api/crosstenantaccesspolicy-update.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md)|Update the properties of a [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object.|
-|[Delete crossTenantAccessPolicy](../api/crosstenantaccesspolicy-delete.md)|None|Deletes a [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object.|
-|[List crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicy-list-default.md)|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) collection|Get the crossTenantAccessPolicyConfigurationDefault resources from the default navigation property.|
-|[Create crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicy-post-default.md)|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Create a new crossTenantAccessPolicyConfigurationDefault object.|
-|[List partners](../api/crosstenantaccesspolicy-list-partners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Get the crossTenantAccessPolicyConfigurationPartner resources from the partners navigation property.|
-|[Create crossTenantAccessPolicyConfigurationPartner](../api/crosstenantaccesspolicy-post-partners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Create a new crossTenantAccessPolicyConfigurationPartner object.|
+|[List partners](../api/crosstenantaccesspolicy-list-partners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Get a list of all partner specific configurations.|
+|[Create crossTenantAccessPolicyConfigurationPartner](../api/crosstenantaccesspolicy-post-partners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Create a new partner specific configuration.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|definition|String collection|**TODO: Add Description** Inherited from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipaccesspolicybase.md).|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md).|
-|description|String|**TODO: Add Description** Inherited from [policyBase](../resources/policybase.md).|
-|displayName|String|**TODO: Add Description** Inherited from [policyBase](../resources/policybase.md).|
-|id|String|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md).|
+|id|String|The identifier for the cross tenant access policy. Inherited from [directoryObject](../resources/directoryobject.md).|
+|deletedDateTime|DateTimeOffset|The time that the cross tenant access policy was deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
+|description|String|The description of the cross tenant access policy. Inherited from [policyBase](../resources/policybase.md).|
+|displayName|String|The display name of the cross tenant access policy. Inherited from [policyBase](../resources/policybase.md).|
+|definition|String collection|The definition of the cross tenant access policy. Inherited from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipaccesspolicybase.md).|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|default|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|**TODO: Add Description**|
-|partners|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|**TODO: Add Description**|
+|default|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.|
+|partners|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Defines partner specific configurations for external Azure Active Directory organizations.|
 
 ## JSON representation
 

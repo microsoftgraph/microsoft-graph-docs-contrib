@@ -1,9 +1,9 @@
 ---
 title: "crossTenantAccessPolicyConfigurationBase resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Defines the properties that are common in a cross tenant access policy configuration for the default and partner specific settings."
+author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -13,31 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines the properties that are common in a cross tenant access policy configuration for the default and partner specific settings.
+
 This is an abstract type.
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List crossTenantAccessPolicyConfigurationBases](../api/crosstenantaccesspolicyconfigurationbase-list.md)|[crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md) collection|Get a list of the [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md) objects and their properties.|
-|[Create crossTenantAccessPolicyConfigurationBase](../api/crosstenantaccesspolicyconfigurationbase-create.md)|[crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)|Create a new [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md) object.|
-|[Get crossTenantAccessPolicyConfigurationBase](../api/crosstenantaccesspolicyconfigurationbase-get.md)|[crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)|Read the properties and relationships of a [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md) object.|
-|[Update crossTenantAccessPolicyConfigurationBase](../api/crosstenantaccesspolicyconfigurationbase-update.md)|[crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)|Update the properties of a [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md) object.|
-|[Delete crossTenantAccessPolicyConfigurationBase](../api/crosstenantaccesspolicyconfigurationbase-delete.md)|None|Deletes a [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md) object.|
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|b2bCollaborationInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|**TODO: Add Description**|
-|b2bCollaborationOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|**TODO: Add Description**|
-|b2bDirectConnectInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|**TODO: Add Description**|
-|b2bDirectConnectOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|**TODO: Add Description**|
-|inboundTrust|[crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|**TODO: Add Description**|
+|b2bCollaborationInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users from other organizations accessing your resources via B2B collaboration.|
+|b2bCollaborationOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users in your organization going outbound to access resources in another organization via B2B collaboration.|
+|b2bDirectConnectInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users from other organizations accessing your resources via B2B direct connect.|
+|b2bDirectConnectOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users in your organization going outbound to access resources in another organization via B2B direct connect.|
+|inboundTrust|[crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|Determines the configuration for trusting other conditional access claims from external Azure Active Directory organizations.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -46,6 +41,7 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationBase",
@@ -66,4 +62,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

@@ -1,9 +1,9 @@
 ---
 title: "crossTenantAccessPolicyInboundTrust resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Used to define which conditional access claims you want to accept from other organizations via your cross tenant access policy configuration."
+author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Used to define which conditional access claims you want to accept from other organizations via your cross tenant access policy configuration. These can be configured in your default or partner specific configurations.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |isCompliantDeviceAccepted|Boolean|**TODO: Add Description**|
@@ -23,15 +24,18 @@ Namespace: microsoft.graph
 |isMfaAccepted|Boolean|**TODO: Add Description**|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyInboundTrust",
@@ -40,4 +44,3 @@ The following is a JSON representation of the resource.
   "isHybridAzureADJoinedDeviceAccepted": "Boolean"
 }
 ```
-
