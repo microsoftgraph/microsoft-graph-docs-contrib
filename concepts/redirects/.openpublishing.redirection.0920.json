@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/concepts/migrate-azure-ad-graph-overview.md",
+      "redirect_url": "/graph/migrate-azure-ad-graph-planning-checklist",
+      "redirect_document_id": false
+    }
+  ]
+}

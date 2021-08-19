@@ -12,7 +12,11 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "redirection_files": [
+        "concepts/redirects/.openpublishing.redirection.0920.json",
+        "concepts/redirects/.openpublishing.redirection.0121.json"
+      ]
     },
     {
       "docset_name": "microsoft-graph-ref",
@@ -30,7 +34,13 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "redirection_files": [
+        "api-reference/redirects/.openpublishing.redirection.0820.json",
+        "api-reference/redirects/.openpublishing.redirection.0920.json",
+        "api-reference/redirects/.openpublishing.redirection.1120.json",
+        "api-reference/redirects/.openpublishing.redirection.0721.json"
+      ]
     }
   ],
   "notification_subscribers": [],
