@@ -17,11 +17,16 @@ Get a list of the [samlOrWsFedExternalDomainFederation](../resources/samlorwsfed
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)|Domain.Read.All, Domain.ReadWrite.All|
+|Delegated (personal Microsoft account)| Not supported.|
+|Application|Domain.Read.All, Domain.ReadWrite.All|
+
+The work or school account needs to belong to one of the following roles:
+
+* Global Administrator
+* External Identity Provider Administrator
 
 ## HTTP request
 
@@ -30,11 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.samlOrWsFedExternalDomainFederation not found
+GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.samlOrWsFedExternalDomainFederation not found
+GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation
 ```
 
 
@@ -74,18 +76,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
+    "value": [
     {
-      "@odata.type": "#microsoft.graph.samlOrWsFedExternalDomainFederation",
-      "id": "d5a56845-6845-d5a5-4568-a5d54568a5d5",
-      "displayName": "String",
-      "issuerUri": "String",
-      "metadataExchangeUri": "String",
-      "signingCertificate": "String",
-      "passiveSignInUri": "String",
-      "preferredAuthenticationProtocol": "String"
+        "id": "96db02e2-80c1-5555-bc3a-de92ffb8c5be",
+        "displayName": "Contoso",
+        "issuerUri": "http://contoso.com/adfs/services/trust",
+        "metadataExchangeUri": null,
+        "signingCertificate": "MIIC6DCCAdCgAwIBAgIQQ6vYJIVKQ",
+        "passiveSignInUri": "https://contoso.com/adfs/ls/",
+        "preferredAuthenticationProtocol": "saml",
+        "domains": [
+            {
+                "id": "contoso.com"
+            }
+        ]
+    },
+    {
+        "id": "fa421032-5d40-5555-a428-a304b4bc18b6",
+        "displayName": "Fabrikam",
+        "issuerUri": "https://accounts.google.com/o/saml2?idpid=C018555d",
+        "metadataExchangeUri": null,
+        "signingCertificate": "MIIDdDCCAlygAwIBAgIGAXowJih/",
+        "passiveSignInUri": "https://accounts.google.com/o/saml2/saml2?idpid=C018555d",
+        "preferredAuthenticationProtocol": "wsfed",
+        "domains": [
+            {
+                "id": "fabrikam.com",
+
+            }
+        ]
     }
   ]
 }
 ```
-

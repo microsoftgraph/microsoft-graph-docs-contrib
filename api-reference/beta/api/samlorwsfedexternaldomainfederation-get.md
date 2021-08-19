@@ -17,11 +17,16 @@ Read the properties and relationships of a [samlOrWsFedExternalDomainFederation]
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)|Domain.Read.All, Domain.ReadWrite.All|
+|Delegated (personal Microsoft account)| Not supported.|
+|Application|Domain.Read.All, Domain.ReadWrite.All|
+
+The work or school account needs to belong to one of the following roles:
+
+* Global Administrator
+* External Identity Provider Administrator
 
 ## HTTP request
 
@@ -30,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /samlOrWsFedExternalDomainFederation
+GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation?$filter=domains/any(x: x/id eq 'domainName-value')
 ```
 
 ## Optional query parameters
@@ -57,9 +62,8 @@ If successful, this method returns a `200 OK` response code and a [samlOrWsFedEx
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation
+GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation?$filter=domains/any(x: x/id eq 'contoso.com')
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -74,16 +78,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.samlOrWsFedExternalDomainFederation",
-    "id": "d5a56845-6845-d5a5-4568-a5d54568a5d5",
-    "displayName": "String",
-    "issuerUri": "String",
-    "metadataExchangeUri": "String",
-    "signingCertificate": "String",
-    "passiveSignInUri": "String",
-    "preferredAuthenticationProtocol": "String"
-  }
+  "value": [
+    {
+        "id": "96db02e2-80c1-5555-bc3a-de92ffb8c5be",
+        "displayName": "Contoso",
+        "issuerUri": "http://contoso.com/adfs/services/trust",
+        "metadataExchangeUri": null,
+        "signingCertificate": "MIIC6DCCAdCgAwIBAgIQQ6vYJIVKQ",
+        "passiveSignInUri": "https://contoso.com/adfs/ls/",
+        "preferredAuthenticationProtocol": "saml",
+        "domains": [
+            {
+                "id": "contoso.com"
+            }
+        ]
+    }
+  ]
 }
-```
 
+```
