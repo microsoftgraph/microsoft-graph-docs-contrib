@@ -141,6 +141,16 @@ items:
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
       - name: Use beta API
         href: /graph/sdks/use-beta?context=graph/api/1.0
+      - name: Use PowerShell
+        items:
+          - name: Installation
+            href: /graph/powershell/installation?context=graph/api/1.0
+          - name: Get started
+            href: /graph/powershell/get-started?context=graph/api/1.0
+          - name: Navigating the SDK
+            href: /graph/powershell/navigating?context=graph/api/1.0
+          - name: App-only authentication
+            href: /graph/powershell/app-only?context=graph/api/1.0
   - name: Use the toolkit
     items:
       - name: Toolkit overview
@@ -1265,6 +1275,10 @@ items:
           href: api/presence-get.md
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
+        - name: Set presence
+          href: api/presence-setpresence.md
+        - name: Clear presence
+          href: api/presence-clearpresence.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
