@@ -1,5 +1,5 @@
 ---
-title: "Get an oAuth2PermissionGrant"
+title: "Get oAuth2PermissionGrant"
 description: "Retrieve the properties and relationships of single oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,11 +7,11 @@ ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Get a delegated permission grant (oAuth2PermissionGrant)
+# Get oAuth2PermissionGrant
 
 Namespace: microsoft.graph
 
-Retrieve the properties of a single [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+Retrieve the properties of a single delegated permission grant represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 
 An **oAuth2PermissionGrant** represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
 
