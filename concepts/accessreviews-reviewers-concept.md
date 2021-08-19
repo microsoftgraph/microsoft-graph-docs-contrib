@@ -73,6 +73,17 @@ To assign only the group owners from a specific country as reviewers:
 ```
 Because `./manager` is a relative query, specify the **queryRoot** property with the value `decisions`.
 
+### Example 5: Application owners as reviewers
+
+```http
+"reviewers": [
+    {
+        "query": "/servicePrincipals/{id}/owners",
+        "queryType": "MicrosoftGraph"
+    }
+]
+```
+
 ## See also
 
 + [Configure the scope of your access review definition](/graph/accessreviews-scope-concept)
