@@ -114,54 +114,18 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
 | 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
 
-#### Outlook service resources
+#### Applicable resources
 
-The following resources are provided by the Outlook service.
+| API                                                      | Resources      |
+|------------------------------------------------------------|-----------------|
+| Search API (preview)                  | <li>[External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta) |
+| Profile API                                      | <li>[Photo](/graph/api/resources/profilephoto?view=graph-rest-1.0)   |
+| Calendar API | <li>[event](/graph/api/resources/event) <li> [eventMessage](/graph/api/resources/eventmessage) <li> [calendar](/graph/api/resources/calendar) <li>  [calendarGroup](/graph/api/resources/calendargroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment) <li> [place (preview)](/graph/api/resources/place)   |
+| Mail API                                      | <li>[message](/graph/api/resources/message) <li>  [message](/graph/api/resources/message) <li> [mailFolder](/graph/api/resources/mailfolder) <li> [mailSearchFolder](/graph/api/resources/mailsearchfolder) <li> [messageRule](/graph/api/resources/messagerule) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
+| Personal contacts API | <li>[contact](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
+| Social and workplace intelligence | <li>[person](/graph/api/resources/person) |
+| To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
-##### Search API resources (preview)
-
-- [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
-
-##### Profile API resources
-
-- [Photo](/graph/api/resources/profilephoto?view=graph-rest-1.0)
-
-##### Calendar API resources
-
-- [event](/graph/api/resources/event)
-- [eventMessage](/graph/api/resources/eventmessage)
-- [calendar](/graph/api/resources/calendar)
-- [calendarGroup](/graph/api/resources/calendargroup)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
-- [place (preview)](/graph/api/resources/place)
-
-##### Mail API resources
-
-- [message](/graph/api/resources/message)
-- [mailFolder](/graph/api/resources/mailfolder)
-- [mailSearchFolder](/graph/api/resources/mailsearchfolder)
-- [messageRule](/graph/api/resources/messagerule)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
-
-##### Personal contacts API resources
-
-- [contact](/graph/api/resources/contact)
-- [contactFolder](/graph/api/resources/contactfolder)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-
-##### Social and workplace intelligence resources
-
-- [person](/graph/api/resources/person)
-
-##### To-do tasks API (preview) resources
-
-- [outlookTask](/graph/api/resources/outlooktask)
-- [outlookTaskFolder](/graph/api/resources/outlooktaskfolder)
-- [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
 
 ### Cloud communication service limits
 
@@ -173,17 +137,7 @@ The following resources are provided by the Outlook service.
 
 ### OneNote service limits
 
-| Limit type | Limit per app per user (delegated context) | Limit per app (app-only context) |
-| ------------ | ------- | ------- |
-| Requests rate | 120 requests per 1 minute and 400 per 1 hour | 240 requests per 1 minute and 800 per 1 hour |
-| Concurrent requests | 5 concurrent requests | 20 concurrent requests |
-
-The preceding limits apply to the following resources:  
-onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
-
-You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
-
-> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+[!INCLUDE [Onenote throttling documentation](../includes/throttling-onenote.md)]
 
 ### Project Rome service limits
 
