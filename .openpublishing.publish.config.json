@@ -12,11 +12,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "redirection_files": [
-        "redirects/.openpublishing.redirection.0920.json",
-        "redirects/.openpublishing.redirection.0121.json"
-      ]
+      "template_folder": "_themes"
     },
     {
       "docset_name": "microsoft-graph-ref",
@@ -34,13 +30,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "redirection_files": [
-        "api-reference/redirects/.openpublishing.redirection.0820.json",
-        "api-reference/redirects/.openpublishing.redirection.0920.json",
-        "api-reference/redirects/.openpublishing.redirection.1120.json",
-        "api-reference/redirects/.openpublishing.redirection.0721.json"
-      ]
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
@@ -62,9 +52,16 @@
   "need_generate_pdf_url_template": false,
   "targets": {},
   "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content",
-        "Tutorial": "Content"
-      }
+    "Conceptual": "Content",
+    "ManagedReference": "Content",
+    "RestApi": "Content",
+    "Tutorial": "Content"
+  },
+  "redirection_files": [
+    "redirects/.openpublishing.redirection.0820.json",
+    "redirects/.openpublishing.redirection.0920.json",
+    "redirects/.openpublishing.redirection.1120.json",
+    "redirects/.openpublishing.redirection.0721.json",
+    "redirects/.openpublishing.redirection.0121.json"
+  ]
 }
