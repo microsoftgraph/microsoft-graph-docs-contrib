@@ -129,7 +129,7 @@ Content-Type: application/json
             "startTime": "0001-01-01T00:00:00Z"
         }
     ]
-]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
