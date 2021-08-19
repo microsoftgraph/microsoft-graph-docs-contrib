@@ -1,4 +1,4 @@
-#### Application properties
+### Application properties
 
 | Name                          | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
 | --------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
@@ -15,16 +15,6 @@
 | publisherDomain                               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                                            |                                            | ![Not Supported][NS]                       |
 | requiredResourceAccess/any(r:r/resourceAppId) | ![Requires advanced query parameters][AQP] |                                            |                                            |                                            | ![Not Supported][NS]                       |
 | signInAudience                                | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
-
-
-
-#### Delegated permission grant properties
-
-| Property | eq                                         | startsWith | ge  | le  | null value           |
-| ------------------------------- | ------------------------------------------ | ---------- | --- | --- | -------------------- |
-| clientId                        | ![Requires advanced query parameters][AQP] |            |     |     | ![Not Supported][NS] |
-| resourceId                      | ![Supported by Default][RDS]               |            |     |     | ![Not Supported][NS] |
-
 
 
 #### Service principal properties
