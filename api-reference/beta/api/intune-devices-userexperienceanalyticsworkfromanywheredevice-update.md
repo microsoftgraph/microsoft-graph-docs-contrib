@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -62,6 +62,19 @@ The following table shows the properties that are required when you create the [
 |azureAdJoinType|String|The user experience work from anywhere device's azure Ad joinType.|
 |osDescription|String|The user experience work from anywhere device's OS Description.|
 |osVersion|String|The user experience work from anywhere device's OS Version.|
+|tenantAttached|Boolean|The user experience work from anywhere device's tenantAttached.|
+|compliancePolicySetToIntune|Boolean|The user experience work from anywhere device's compliancePolicySetToIntune.|
+|otherWorkloadsSetToIntune|Boolean|The user experience work from anywhere device's otherWorkloadsSetToIntune.|
+|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|The user experience work from anywhere windows upgrade eligibility status of device. Possible values are: `upgraded`, `unknown`, `notCapable`, `capable`.|
+|ramCheckFailed|Boolean|Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows|
+|storageCheckFailed|Boolean|The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.|
+|processorCoreCountCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware core count check failed for device to upgrade to the latest version of windows.|
+|processorSpeedCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware speed check failed for device to upgrade to the latest version of windows.|
+|tpmCheckFailed|Boolean|The user experience work from anywhere device, Is Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows.|
+|secureBootCheckFailed|Boolean|The user experience work from anywhere device, Is secure boot hardware check failed for device to upgrade to the latest version of windows.|
+|processorFamilyCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.|
+|processor64BitCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.|
+|osCheckFailed|Boolean|The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.|
 
 
 
@@ -75,7 +88,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices/{userExperienceAnalyticsWorkFromAnywhereDeviceId}
 Content-type: application/json
-Content-length: 585
+Content-length: 1028
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -91,7 +104,20 @@ Content-length: 585
   "azureAdDeviceId": "Azure Ad Device Id value",
   "azureAdJoinType": "Azure Ad Join Type value",
   "osDescription": "Os Description value",
-  "osVersion": "Os Version value"
+  "osVersion": "Os Version value",
+  "tenantAttached": true,
+  "compliancePolicySetToIntune": true,
+  "otherWorkloadsSetToIntune": true,
+  "upgradeEligibility": "unknown",
+  "ramCheckFailed": true,
+  "storageCheckFailed": true,
+  "processorCoreCountCheckFailed": true,
+  "processorSpeedCheckFailed": true,
+  "tpmCheckFailed": true,
+  "secureBootCheckFailed": true,
+  "processorFamilyCheckFailed": true,
+  "processor64BitCheckFailed": true,
+  "osCheckFailed": true
 }
 ```
 
@@ -100,7 +126,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 634
+Content-Length: 1077
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -117,7 +143,20 @@ Content-Length: 634
   "azureAdDeviceId": "Azure Ad Device Id value",
   "azureAdJoinType": "Azure Ad Join Type value",
   "osDescription": "Os Description value",
-  "osVersion": "Os Version value"
+  "osVersion": "Os Version value",
+  "tenantAttached": true,
+  "compliancePolicySetToIntune": true,
+  "otherWorkloadsSetToIntune": true,
+  "upgradeEligibility": "unknown",
+  "ramCheckFailed": true,
+  "storageCheckFailed": true,
+  "processorCoreCountCheckFailed": true,
+  "processorSpeedCheckFailed": true,
+  "tpmCheckFailed": true,
+  "secureBootCheckFailed": true,
+  "processorFamilyCheckFailed": true,
+  "processor64BitCheckFailed": true,
+  "osCheckFailed": true
 }
 ```
 

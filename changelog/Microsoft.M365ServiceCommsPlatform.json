@@ -369,8 +369,8 @@
          "Cloud": "prd",
          "Version": "v1.0",
          "CreatedDateTime": "2021-08-02T21:04:31.258Z",
-         "WorkloadArea": "Service health and communications",
-         "SubArea": ""
+         "WorkloadArea": "Devices and apps",
+         "SubArea": "Service health and communications"
        }
     ]
  }
