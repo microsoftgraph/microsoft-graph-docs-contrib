@@ -11411,9 +11411,10 @@ items:
           - name: List available provider types
             href: api/identityproviderbase-list-availableprovidertypes.md
           - name: SAML/Ws-Fed identity provider
-            items: 
-            - name: SAML identity provider
             href: resources/samlwsfedidentityprovider.md
+            items: 
+            - name: List
+              href: api/samlorwsfedexternaldomainfederation-list.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
