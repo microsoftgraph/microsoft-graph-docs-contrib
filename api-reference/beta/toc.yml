@@ -9626,6 +9626,8 @@ items:
             href: api/cloudpc-get.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
+          - name: End grace period
+            href: api/cloudpc-endgraceperiod.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
@@ -10997,7 +10999,7 @@ items:
         - name: Application authentication method policy (preview)
           items:
           - name: Overview
-            href: resources/applicationAuthMethodPolicy.md
+            href: resources/applicationAuthenticationMethodPolicy.md
           - name: Tenant app management policy
             items:
             - name: Overview

@@ -57,7 +57,6 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 - To restrict multi-tenant apps homed in a customer tenant, apply the policy to the application object.
 - To restrict multi-tenant apps provisioned from another tenant, apply the policy to the service principal object.
 
-
 ### Summary of key differences between the tenant default policy and app management policies
 
 | Tenant default policy                                                     | App management policy                                                                      |
