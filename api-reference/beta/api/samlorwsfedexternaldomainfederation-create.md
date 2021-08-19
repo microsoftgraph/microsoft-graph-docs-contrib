@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 }
 -->
 ``` http
-POST ** Collection URI for microsoft.graph.samlOrWsFedExternalDomainFederation not found
+POST /directory/federationConfigurations
 ```
 
 ## Request headers
@@ -60,7 +60,6 @@ The following table shows the properties that are required when you create the [
 |preferredAuthenticationProtocol|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|
 
 
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object in the response body.
@@ -74,18 +73,24 @@ If successful, this method returns a `201 Created` response code and a [samlOrWs
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Collection URI for microsoft.graph.samlOrWsFedExternalDomainFederation not found
+POST https://graph.microsoft.com/beta/directory/federationConfigurations
 Content-Type: application/json
 Content-length: 283
 
 {
-  "@odata.type": "#microsoft.graph.samlOrWsFedExternalDomainFederation",
-  "displayName": "String",
-  "issuerUri": "String",
-  "metadataExchangeUri": "String",
-  "signingCertificate": "String",
-  "passiveSignInUri": "String",
-  "preferredAuthenticationProtocol": "String"
+    "@odata.type": "microsoft.graph.samlOrWsFedExternalDomainFederation",
+    "issuerUri": "https://contoso.com/issuerUri",
+    "displayName": "contoso display name",
+    "metadataExchangeUri": "https://contoso.com/metadataExchangeUri",
+    "passiveSignInUri": "https://contoso-test.com/signin",
+    "preferredAuthenticationProtocol": "wsFed",
+    "domains": [
+        {
+            "@odata.type": "microsoft.graph.externalDomainName",
+            "id": "contoso-test.com"
+        }
+    ],
+    "signingCertificate": "MIIDADCCAeigAwIBAgIQEX41y8r6"
 }
 ```
 
@@ -103,14 +108,9 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.samlOrWsFedExternalDomainFederation",
-  "id": "d5a56845-6845-d5a5-4568-a5d54568a5d5",
-  "displayName": "String",
-  "issuerUri": "String",
-  "metadataExchangeUri": "String",
-  "signingCertificate": "String",
-  "passiveSignInUri": "String",
-  "preferredAuthenticationProtocol": "String"
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetafederationconfiguration2/$metadata#directory/federationConfigurations/$entity",
+    "@odata.id": "https://canary.graph.microsoft.com/v2/e77d917b-4a43-4843-a1b2-475cabe70050/samlOrWsFedExternalDomainFederations/3c41f317-9af3-4266-8ccf-26283ceec888",
+    "id": "3c41f317-9af3-4266-8ccf-26283ceec888",
+    "displayName": "contoso display name"
 }
 ```
-
