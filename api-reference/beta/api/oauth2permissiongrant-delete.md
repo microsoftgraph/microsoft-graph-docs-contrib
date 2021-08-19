@@ -89,7 +89,7 @@ DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
 
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and [oAuth2Permissio
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-oauth2permissiongrant-csharp-snippets.md)]
@@ -86,6 +86,8 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 
 ### Response
 
+The following is an example of the response.
+
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -97,15 +99,16 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 200
 
 {
-  "id": "id-value",
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
+    "clientId": "263a5b01-03e5-408e-8557-bab681df104c",
+    "consentType": "AllPrincipals",
+    "id": "AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
+    "principalId": null,
+    "resourceId": "1804a6f8-e623-4520-8f40-ba1b0c11c42d",
+    "scope": "User.Read Group.ReadWrite.All"
 }
 ```
 

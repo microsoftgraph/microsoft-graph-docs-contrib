@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Get a delegated permission grant (oAuth2PermissionGrant)
+# Get an oAuth2PermissionGrant (a delegated permission grant)
 
 Namespace: microsoft.graph
 
@@ -68,7 +68,7 @@ Here is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
+GET https://graph.microsoft.com/beta/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0
 ```
 
 # [C#](#tab/csharp)
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
 
 ### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -104,17 +104,18 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 200
 
 {
-  "id": "id-value",
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value",
-  "startTime": "2016-10-19T10:37:00Z",
-  "expiryTime": "2016-10-19T10:37:00Z"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#oauth2PermissionGrants/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
+    "clientId": "263a5b01-03e5-408e-8557-bab681df104c",
+    "consentType": "AllPrincipals",
+    "expiryTime": "2022-01-29T10:32:59.5138373Z",
+    "id": "AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
+    "principalId": null,
+    "resourceId": "1804a6f8-e623-4520-8f40-ba1b0c11c42d",
+    "scope": "User.Read Group.ReadWrite.All",
+    "startTime": "0001-01-01T00:00:00Z"
 }
 ```
 
