@@ -11418,7 +11418,7 @@ items:
             - name: Get
               href: api/samlorwsfedexternaldomainfederation-get.md
             - name: Create
-              href: api/federationConfigurations-post-samlorwsfedexternaldomainfederation.md
+              href: api/samlorwsfedexternaldomainfederation-create.md
             - name: Update
               href: api/samlorwsfedexternaldomainfederation-update.md
             - name: Delete
