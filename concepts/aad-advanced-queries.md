@@ -37,7 +37,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count
 ConsistencyLevel: eventual
 ```
 
-These advanced query capabilities are supported only on the following subset Azure AD directory objects and their relationships:
+These advanced query capabilities are supported only on the following subsets of Azure AD directory objects and their relationships:
 
 | API / Object                                                                    | Relationships                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
