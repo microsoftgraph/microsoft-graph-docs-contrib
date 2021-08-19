@@ -11277,6 +11277,17 @@ items:
             href: resources/openidconnectidentityprovider.md
           - name: SAML/Ws-Fed identity provider
             href: resources/samlwsfedidentityprovider.md
+            items: 
+            - name: List
+            href: api/samlorwsfedexternaldomainfederation-list.md
+            - name: Get
+            href: api/samlorwsfedexternaldomainfederation-get.md
+            - name: Create
+            href: api/federationConfigurations-post-samlorwsfedexternaldomainfederation.md
+            - name: Update
+            href: api/samlorwsfedexternaldomainfederation-update.md
+            - name: Delete
+            href: api/samlorwsfedexternaldomainfederation-delete.md
           - name: List
             href: api/identityproviderbase-list.md
           - name: Create
