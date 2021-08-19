@@ -258,7 +258,9 @@ To track messages for all chats a user is part of, you can create a change notif
 
 User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
 
-> **Note.** User-level chat messaging subscriptions are currently in preview.
+> **Note:** User-level chat messaging subscriptions are currently in preview.
+
+> **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
 ### Permissions
 
@@ -285,7 +287,7 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
-### Example 2: Subscribe to messages in all chats a user is part of in delegated mode, using `/me/chats/getAllMessages` resource path
+### Example 2: Subscribe to messages in all chats a user is part of in delegated mode, using the `/me/chats/getAllMessages` resource path
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
