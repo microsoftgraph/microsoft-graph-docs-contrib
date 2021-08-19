@@ -1982,6 +1982,14 @@ Possible values for user account types (group membership), per Windows definitio
 |passwordChange|
 |unknownFutureValue|
 
+### continuousAccessEvaluationMode values 
+
+|Member|
+|:---|
+|strictEnforcement|
+|disabled|
+|unknownFutureValue|
+
 ### signinFrequencyType values
 
 | Member       |
