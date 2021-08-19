@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
+
 Use this API to retrieve the contents of an item in a specific format.
 Not all files can be converted into all formats.
 
