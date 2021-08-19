@@ -1,18 +1,18 @@
 ---
-title: "Update samlOrWsFedExternalDomainFederation"
-description: "Update the properties of a samlOrWsFedExternalDomainFederation object."
+title: "Create samlOrWsFedExternalDomainFederation"
+description: "Create a new samlOrWsFedExternalDomainFederation object."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Update samlOrWsFedExternalDomainFederation
+# Create samlOrWsFedExternalDomainFederation
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
+Create a new [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /samlOrWsFedExternalDomainFederation
+POST ** Collection URI for microsoft.graph.samlOrWsFedExternalDomainFederation not found
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ PATCH /samlOrWsFedExternalDomainFederation
 ## Request body
 In the request body, supply a JSON representation of the [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
 
-The following table shows the properties that are required when you update the [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
+The following table shows the properties that are required when you create the [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -58,18 +58,18 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_samlorwsfedexternaldomainfederation"
+  "name": "create_samlorwsfedexternaldomainfederation_from_"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation
+POST https://graph.microsoft.com/beta** Collection URI for microsoft.graph.samlOrWsFedExternalDomainFederation not found
 Content-Type: application/json
 Content-length: 283
 
@@ -89,11 +89,12 @@ Content-length: 283
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.samlOrWsFedExternalDomainFederation"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {

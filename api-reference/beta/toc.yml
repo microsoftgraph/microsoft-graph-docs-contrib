@@ -11411,10 +11411,22 @@ items:
           - name: List available provider types
             href: api/identityproviderbase-list-availableprovidertypes.md
           - name: SAML/Ws-Fed identity provider
-            href: resources/samlwsfedidentityprovider.md
+            href: resources/samlorwsfedexternaldomainfederation.md
             items: 
             - name: List
               href: api/samlorwsfedexternaldomainfederation-list.md
+            - name: Get
+              href: api/samlorwsfedexternaldomainfederation-get.md
+            - name: Create
+              href: api/federationConfigurations-post-samlorwsfedexternaldomainfederation.md
+            - name: Update
+              href: api/samlorwsfedexternaldomainfederation-update.md
+            - name: Delete
+              href: api/samlorwsfedexternaldomainfederation-delete.md
+            - name: List domains
+              href: api/samlorwsfedexternaldomainfederation-list-domains.md
+            - name: Create domains
+              href: api/samlorwsfedexternaldomainfederation-post-domains.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type

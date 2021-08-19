@@ -1,18 +1,18 @@
 ---
-title: "Get samlOrWsFedExternalDomainFederation"
-description: "Read the properties and relationships of a samlOrWsFedExternalDomainFederation object."
+title: "Create externalDomainName"
+description: "Create a new externalDomainName object."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Get samlOrWsFedExternalDomainFederation
+# Create externalDomainName
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
+Create a new externalDomainName object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,34 +30,46 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /samlOrWsFedExternalDomainFederation
+POST /samlOrWsFedExternalDomainFederation/domains
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of the [externalDomainName](../resources/externaldomainname.md) object.
+
+The following table shows the properties that are required when you create the [externalDomainName](../resources/externaldomainname.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
+
+
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [externalDomainName](../resources/externaldomainname.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_samlorwsfedexternaldomainfederation"
+  "name": "create_externaldomainname_from_"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation
+POST https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation/domains
+Content-Type: application/json
+Content-length: 60
+
+{
+  "@odata.type": "#microsoft.graph.externalDomainName"
+}
 ```
 
 
@@ -66,24 +78,16 @@ GET https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.samlOrWsFedExternalDomainFederation"
+  "@odata.type": "microsoft.graph.externalDomainName"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.samlOrWsFedExternalDomainFederation",
-    "id": "d5a56845-6845-d5a5-4568-a5d54568a5d5",
-    "displayName": "String",
-    "issuerUri": "String",
-    "metadataExchangeUri": "String",
-    "signingCertificate": "String",
-    "passiveSignInUri": "String",
-    "preferredAuthenticationProtocol": "String"
-  }
+  "@odata.type": "#microsoft.graph.externalDomainName",
+  "id": "7869a60f-a60f-7869-0fa6-69780fa66978"
 }
 ```
 

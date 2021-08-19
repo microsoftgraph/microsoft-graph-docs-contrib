@@ -1,18 +1,18 @@
 ---
-title: "Get samlOrWsFedExternalDomainFederation"
-description: "Read the properties and relationships of a samlOrWsFedExternalDomainFederation object."
+title: "List domains"
+description: "Get the externalDomainName resources from the domains navigation property."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Get samlOrWsFedExternalDomainFederation
+# List domains
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
+Get the externalDomainName resources from the domains navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /samlOrWsFedExternalDomainFederation
+GET /samlOrWsFedExternalDomainFederation/domains
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [externalDomainName](../resources/externaldomainname.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_samlorwsfedexternaldomainfederation"
+  "name": "list_externaldomainname"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation
+GET https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation/domains
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.samlOrWsFedExternalDomainFederation"
+  "@odata.type": "Collection(microsoft.graph.externalDomainName)"
 }
 -->
 ``` http
@@ -74,16 +74,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.samlOrWsFedExternalDomainFederation",
-    "id": "d5a56845-6845-d5a5-4568-a5d54568a5d5",
-    "displayName": "String",
-    "issuerUri": "String",
-    "metadataExchangeUri": "String",
-    "signingCertificate": "String",
-    "passiveSignInUri": "String",
-    "preferredAuthenticationProtocol": "String"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.externalDomainName",
+      "id": "7869a60f-a60f-7869-0fa6-69780fa66978"
+    }
+  ]
 }
 ```
 
