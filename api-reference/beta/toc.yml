@@ -9626,6 +9626,8 @@ items:
             href: api/cloudpc-get.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
+          - name: End grace period
+            href: api/cloudpc-endgraceperiod.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
