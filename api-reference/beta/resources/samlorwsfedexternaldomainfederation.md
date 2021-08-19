@@ -32,8 +32,8 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|displayName|String|The display name of the SAML/Ws-Fed based identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
+|id|String|The identifier of the identity provider. Inherited from [entity](../resources/entity.md).|
 |issuerUri|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |metadataExchangeUri|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |passiveSignInUri|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|

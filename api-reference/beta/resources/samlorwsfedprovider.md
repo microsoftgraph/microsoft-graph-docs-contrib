@@ -1,6 +1,6 @@
 ---
 title: "samlOrWsFedProvider resource type"
-description: "**TODO: Add Description**"
+description: "Configuration details for setting up a SAML or Ws-Fed based identity provider."
 author: "namkedia"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
+Configuration details for setting up a SAML or Ws-Fed based identity provider.
 
+This is an abstract type.
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
@@ -34,8 +34,8 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|displayName|String|The display name of the SAML/Ws-Fed based identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
+|id|String|The identifier of the identity provider. Inherited from [entity](../resources/entity.md).|
 |issuerUri|String|**TODO: Add Description**|
 |metadataExchangeUri|String|**TODO: Add Description**|
 |passiveSignInUri|String|**TODO: Add Description**|
@@ -67,4 +67,3 @@ The following is a JSON representation of the resource.
   "preferredAuthenticationProtocol": "String"
 }
 ```
-
