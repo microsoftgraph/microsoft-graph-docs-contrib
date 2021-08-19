@@ -23,9 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Delegated (work or school account)     | Not Supported                                                                           |
 | Delegated (personal Microsoft account) | Not Supported                                                                           |
-| Application                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
-> **Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed.
+> **Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All or the Calls.AccessMedia.Chat* permission in addition to one of the permissions listed.
+
+> **Note:** Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -555,7 +557,7 @@ To join the scheduled meeting we will need to get the thread id, message id, org
 This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).
 
 The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
-> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
+> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission or the `Calls.JoinGroupCalls.Chat` resource-specific permission on the chat associated with the meeting.
 
 ##### Request
 
