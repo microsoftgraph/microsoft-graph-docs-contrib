@@ -121,6 +121,8 @@ items:
           href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/beta
       - name: "4: Deploy, test, and extend"
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
+      - name: Migration FAQ
+        href: /graph/migrate-azure-ad-graph-faq?context=graph/api/beta
   - name: Use SDKs
     items:
       - name: Overview
@@ -143,6 +145,16 @@ items:
         href: /graph/sdks/large-file-upload?context=graph/api/beta
       - name: Use beta API
         href: /graph/sdks/use-beta?context=graph/api/beta
+      - name: Use PowerShell
+        items:
+          - name: Installation
+            href: /graph/powershell/installation?context=graph/api/beta
+          - name: Get started
+            href: /graph/powershell/get-started?context=graph/api/beta
+          - name: Navigating the SDK
+            href: /graph/powershell/navigating?context=graph/api/beta
+          - name: App-only authentication
+            href: /graph/powershell/app-only?context=graph/api/beta
   - name: Use the toolkit
     items:
       - name: Toolkit overview
@@ -10985,7 +10997,7 @@ items:
         - name: Application authentication method policy (preview)
           items:
           - name: Overview
-            href: resources/applicationAuthMethodPolicy.md
+            href: resources/applicationAuthenticationMethodPolicy.md
           - name: Tenant app management policy
             items:
             - name: Overview
@@ -11965,6 +11977,8 @@ items:
               href: api/accesspackage-delete.md
             - name: Filter by current user
               href: api/accesspackage-filterbycurrentuser.md
+            - name: Get applicable policy requirements
+              href: api/accesspackage-getapplicablepolicyrequirements.md
             - name: List incompatible access packages
               href: api/accesspackage-list-incompatibleaccesspackages.md
             - name: Add incompatible access package

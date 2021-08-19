@@ -262,6 +262,10 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
+### Removing a group owner also removes the user as a group member
+
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called, the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
+
 ## Identity and access | Application and service principal APIs
 
 There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) entities currently in development. The following is a summary of current limitations and in-development API features.
