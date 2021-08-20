@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 ## Examples
 
-### Example 1 : Get details of a role assignment
+### Example 1 : Get the details of a role assignment
 
 #### Request
 
