@@ -1,13 +1,13 @@
 ---
-title: "Teams SSO provider"
-description: "Use the Teams SSO provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive login"
+title: "Teams Msal2 provider"
+description: "Use the Teams Msal2 provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive login"
 localization_priority: Normal
 author: simonagren
 ---
 
-# Teams SSO provider
+# Teams Msal2 provider
 
-Use the Teams SSO provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive login
+Use the Teams Msal2 provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive login
 To learn more, see [providers](./providers.md).
 
 >**Tip:** For details about how to get started with creating a Microsoft Teams application with the Teams SSO Provider, see the [Build a Microsoft Teams SSO tab](../get-started/build-a-microsoft-teams-sso-tab.md) getting started guide.
@@ -24,25 +24,25 @@ Initialize the Teams SSO provider in your main code. The provider can be used in
 When initializing the Teams SSO provider in JavaScript, make sure to install both the toolkit and the Microsoft Teams SDK.
 
 ```cmd
-npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-sso-provider
+npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider
 ```
 
 Next, import and use the provider.
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
-import {TeamsSSOProvider} from '@microsoft/mgt-teams-sso-provider';
+import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
 import * as MicrosoftTeams from "@microsoft/teams-js";
 
 TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
 
-Providers.globalProvider = new TeamsSSOProvider(config);
+Providers.globalProvider = new TeamsMsal2Provider(config);
 ```
 
 where `config` is
 
 ```ts
-export interface TeamsSSOConfig {
+export interface TeamsMsal2Config {
   clientId: string;
   authPopupUrl: string; // see below for creating the popup page
   scopes?: string[];
@@ -60,17 +60,17 @@ export interface TeamsSSOConfig {
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 
-<mgt-teams-sso-provider 
+<mgt-teams-msal2-provider 
   client-id="<YOUR_CLIENT_ID>"
   auth-popup-url="/AUTH-PATH"
   scopes="user.read,people.read..." 
   authority=""
   sso-url="/api/token" 
   http-method="POST">
-></mgt-teams-provider>
+></mgt-teams-msal2-provider>
 ```
 
-### mgt-teams-sso-provider attributes
+### mgt-teams-msal2-provider attributes
 | Attribute | Description |
 | --- | --- |
 | client-id   | String client ID (see [Configure your Teams app](#configure-your-teams-app). Required. |
@@ -89,22 +89,22 @@ In order to sign in with your Teams credentials and handle consent, you need pro
 
 ```ts
 import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
-import {TeamsSSOProvider} from '@microsoft/mgt-teams-sso-provider';
+import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
 
-TeamsSSOProvider.microsoftTeamsLib = MicrosoftTeams;
-TeamsSSOProvider.handleAuth();
+TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
+TeamsMsal2Provider.handleAuth();
 ```
 
 # [unpkg](#tab/html)
 
-You could also initialize the Teams SSO provider in HTML. Use the `mgt-teams-sso-provider` component to set the properties. **client-id** and **auth-popup-url** are required.
+You could also initialize the Teams Msal2 provider in HTML. Use the `mgt-teams-msal2-provider` component to set the properties. **client-id** and **auth-popup-url** are required.
 
 ```html
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 
 <script>
-  mgt.TeamsSSOProvider.handleAuth();
+  mgt.TeamsMsal2Provider.handleAuth();
 </script>
 ```
 ---
@@ -118,11 +118,11 @@ If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams
 For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
 
 
-### Difference between Teams Provider and Teams SSO Provider
-Teams Provider makes use of MSAL Provider, while TeamsSSOProvider makes use of the newer MSAL2Provider. Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE. Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, so we recommend usage of TeamsSSOProvider over TeamsProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+### Difference between Teams Provider and Teams Msal2 Provider
+Teams Provider makes use of MSAL Provider, while TeamsMsal2Provider makes use of the newer MSAL2Provider. Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE. Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, so we recommend usage of TeamsSSOProvider over TeamsProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
 
-## Migrating from TeamsProvider to TeamsSSOProvider
-To migrate an application that's using Teams Provider to the Teams SSO Provider:
+## Migrating from TeamsProvider to TeamsMsal2Provider
+To migrate an application that's using Teams Provider to the Teams Msal2 Provider:
 1. Go to the Azure portal at https://portal.azure.com.
 1. From the menu, select **Azure Active Directory**.
 1. From the Azure Active Directory menu, select **App registrations**.
@@ -130,17 +130,17 @@ To migrate an application that's using Teams Provider to the Teams SSO Provider:
 1. Go to **Authentication** on the left menu.
 1. Under **Platform configurations**, click on **Add a platform** and select **Single-page Application**.
 1. Remove all the redirect URIs that you have currently registered under **Web**, and instead add them under **Single-page application**.
-1. In your code, replace TeamsProvider with TeamsSSOProvider.
+1. In your code, replace TeamsProvider with TeamsMsal2Provider.
 
     If you are initializing your provider in the JS/TS code, follow these steps:
     
     Replace the import statement for ```mgt-teams-provider``` with 
     ```ts 
-    import {TeamsSSOProvider} from '@microsoft/mgt-teams-sso-provider';
+    import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
     ```
     Replace the initialization of MsalProvider with
     ```ts
-    Providers.globalProvider = new TeamsSSOProvider(config);
+    Providers.globalProvider = new TeamsMsal2Provider(config);
     ```
     If you are initializing the provider in HTML, replace 
     ```html
@@ -148,7 +148,7 @@ To migrate an application that's using Teams Provider to the Teams SSO Provider:
     ``` 
     with 
     ```html
-    <mgt-teams-sso-provider client-id="<YOUR_CLIENT_ID>" auth-popup-url="/AUTH-PATH" ... ></mgt-teams-sso-provider>
+    <mgt-teams-msal2-provider client-id="<YOUR_CLIENT_ID>" auth-popup-url="/AUTH-PATH" ... ></mgt-teams-msal2-provider>
     ```
     For details, see [Initialize in your HTML page](#initialize-in-your-html-page).
 

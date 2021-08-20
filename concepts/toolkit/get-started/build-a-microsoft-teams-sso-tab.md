@@ -15,7 +15,7 @@ Getting started involves the following steps:
 1. Create the auth popup page.
 1. Creating an app/client ID
 6. Create the backend
-7. Initialize the Teams SSO Provider.
+7. Initialize the Teams Msal2 Provider.
 8. Add components.
 9. Test your app.
 
@@ -36,12 +36,12 @@ To use the Toolkit and the Teams SDK via the loaders, add the reference in a scr
 Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm packages for both the Toolkit and the Microsoft Teams SDK to your project:
 
 ```cmd
-npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-sso-provider
+npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider
 ```
 
 ## Create the auth popup page
 
-If you need a user to consent to a permission, you need to provide a URL that the Teams app will open in a popup to follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsSSOProvider.handleAuth()` method.
+If you need a user to consent to a permission, you need to provide a URL that the Teams app will open in a popup to follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsMsal2Provider.handleAuth()` method.
 
 You can do this by adding a new `auth.html` file (which should be at the same level as `index.html`) and adding the following code:
 
@@ -55,7 +55,7 @@ You can do this by adding a new `auth.html` file (which should be at the same le
 
   <body>
     <script>
-      mgt.TeamsSSOProvider.handleAuth();
+      mgt.TeamsMsal2Provider.handleAuth();
     </script>
   </body>
 </html>
@@ -206,24 +206,24 @@ app.listen(PORT, () => {
 });
 ```
 
-## Initialize the Teams SSO Provider
+## Initialize the Teams Msal2 Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams SSO Provider](../providers/teamssso.md) handles all of the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams Msal2 Provider](../providers/teams-msal2.md) handles all of the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
 For SSO-mode, make sure to provide `sso-url` / `ssoUrl` and have it point to you backend API.
 
 ### Initialize in HTML
 
-Add the `mgt-teams-sso-provider` into the HTML `<body>`
+Add the `mgt-teams-msal2-provider` into the HTML `<body>`
 
 ```html
-<mgt-teams-sso-provider 
+<mgt-teams-msal2-provider 
   client-id="<YOUR_CLIENT_ID>"
   auth-popup-url="/auth.html"
   scopes="user.read,user.read.all,mail.readBasic,people.read.all,sites.read.all,user.readbasic.all,contacts.read,presence.read,presence.read.all,tasks.readwrite,tasks.read"
   sso-url="http://localhost:8000/api/token"
   http-method="POST"
-  ></mgt-teams-sso-provider>
+  ></mgt-teams-msal2-provider>
 ```
 
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application. 
@@ -234,12 +234,12 @@ To initialize the provider in your JavaScript code, import the Teams Provider an
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
-import {TeamsSSOProvider, HttpMethod} from '@microsoft/mgt-teams-sso-provider';
+import {TeamsMsal2Provider, HttpMethod} from '@microsoft/mgt-teams-msal2-provider';
 import * as MicrosoftTeams from "@microsoft/teams-js";
 
-TeamsSSOProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
 
-Providers.globalProvider = new TeamsSSOProvider({
+Providers.globalProvider = new TeamsMsal2Provider({
   clientId: `<YOUR_CLIENT_ID>`,
   authPopupUrl: '/auth.html',
   scopes: ['user.read','user.read.all','mail.readBasic','people.read.all','sites.read.all','user.readbasic.all','contacts.read','presence.read','presence.read.all','tasks.readwrite','tasks.read'],

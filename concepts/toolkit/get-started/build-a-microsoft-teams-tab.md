@@ -7,14 +7,14 @@ author: simonagren
 
 # Build a Microsoft Teams tab with the Microsoft Graph Toolkit
 
-This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. For implementing SSO with a custom backend, see [Build a Microsoft Teams SSO Tab](./build-a-microsoft-teams-sso-tab.md).
+This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. For implementing SSO with a custom backend, see [Build a Microsoft Teams Tab (SSO)](./build-a-microsoft-teams-sso-tab.md).
 
 Getting started involves the following steps:
 
 1. Add the Microsoft Graph Toolkit.
 1. Create the auth popup page.
 1. Creating an app/client ID
-1. Initialize the Teams SSO Provider.
+1. Initialize the Teams Msal2 Provider.
 1. Add components.
 1. Test your app.
 
@@ -35,12 +35,12 @@ To use the Toolkit and the Teams SDK via the loaders, add the reference in a scr
 Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm packages for both the Toolkit and the Microsoft Teams SDK to your project:
 
 ```cmd
-npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-sso-provider
+npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider
 ```
 
 ## Create the auth popup page
 
-In order to allow users to sign in, you need to provide a URL that the Teams app will open in a popup to follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsSSOProvider.handleAuth()` method.
+In order to allow users to sign in, you need to provide a URL that the Teams app will open in a popup to follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsMsal2Provider.handleAuth()` method.
 
 Here is an example of an `auth.html` page that handles the auth flow in the popup:
 
@@ -54,7 +54,7 @@ Here is an example of an `auth.html` page that handles the auth flow in the popu
 
   <body>
     <script>
-      mgt.TeamsSSOProvider.handleAuth();
+      mgt.TeamsMsal2Provider.handleAuth();
     </script>
   </body>
 </html>
@@ -65,24 +65,24 @@ To get a client ID, you need to register an Azure Active Directory application. 
 
 Make sure to set the `redirect URI` in your app registration to point to your auth.html page. For example, if you are running your app on localhost:3000, set the redirect URI to https://localhost:3000/auth.html.
 
-> Note: Make sure to set the `redirect URI` as a `Single Page Application`. Teams SSO Provider makes use of MSAL 2 Provider behind the scenes.
+> Note: Make sure to set the `redirect URI` as a `Single Page Application`. Teams Msal2 Provider makes use of Msal2 Provider behind the scenes.
 
-## Initialize the Teams SSO Provider
+## Initialize the Teams Msal2 Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams SSO Provider](../providers/teamssso.md) handles all of the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams Msal2 Provider](../providers/teams-msal2.md) handles all of the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
 You can choose to initialize the provider in either your HTML or your JavaScript code. 
 
 ### Initialize in HTML
 
-Add the `mgt-teams-sso-provider` component to your HTML page as shown.
+Add the `mgt-teams-msal2-provider` component to your HTML page as shown.
 
 ```html
-<mgt-teams-sso-provider 
+<mgt-teams-msal2-provider 
   client-id="<YOUR_CLIENT_ID>"
   auth-popup-url="/auth.html"
   scopes="user.read,user.read.all,mail.readBasic,people.read.all,sites.read.all,user.readbasic.all,contacts.read,presence.read,presence.read.all,tasks.readwrite,tasks.read"
-  ></mgt-teams-sso-provider>
+  ></mgt-teams-msal2-provider>
 ```
 
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application. 
@@ -93,12 +93,12 @@ To initialize the provider in your JavaScript code, add the following code to yo
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
-import {TeamsSSOProvider} from '@microsoft/mgt-teams-sso-provider';
+import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
 import * as MicrosoftTeams from "@microsoft/teams-js";
 
-TeamsSSOProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
 
-Providers.globalProvider = new TeamsSSOProvider({
+Providers.globalProvider = new TeamsMsal2Provider({
   clientId: `<YOUR_CLIENT_ID>`,
   authPopupUrl: 'auth.html',
   scopes: ['user.read','user.read.all','mail.readBasic','people.read.all','sites.read.all','user.readbasic.all','contacts.read','presence.read','presence.read.all','tasks.readwrite','tasks.read'],
