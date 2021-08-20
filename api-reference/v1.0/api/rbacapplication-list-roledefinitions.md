@@ -32,7 +32,7 @@ GET /roleManagement/directory/roleDefinitions
 ```
 
 ## Optional query parameters
-This method supports `$filter` on `id`, `displayName`, and `isBuiltIn`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq` and `in` operators) OData query parameter on `id`, `displayName`, and `isBuiltIn` properties. It also supports `$expand` on the relationships. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
