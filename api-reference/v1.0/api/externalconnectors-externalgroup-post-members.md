@@ -1,6 +1,6 @@
 ---
 title: "Create externalGroupMember"
-description: "Create a new identity object."
+description: "Create a new member as an identity resource in an externalGroup."
 author: "sacampbe"
 localization_priority: Normal
 ms.prod: "search"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.externalConnectors
 
 
 
-Create a new externalGroup [member](../resources/externalconnectors-identity.md) object.
+Create a new member as an [identity](../resources/externalconnectors-identity.md) resource in an [externalGroup](../resources/externalconnectors-externalgroup.md).
 
 ## Permissions
 
