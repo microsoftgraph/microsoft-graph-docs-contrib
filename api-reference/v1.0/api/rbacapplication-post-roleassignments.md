@@ -99,7 +99,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : Create a role assignment over an administrative unit scope
+### Example 2 : Create a role assignment with an administrative unit scope
 
 #### Request
 
