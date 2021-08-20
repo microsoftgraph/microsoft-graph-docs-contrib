@@ -1,5 +1,5 @@
 ---
-title: "Create externalGroupMember"
+title: "Create identity"
 description: "Create a new member as an identity resource in an externalGroup."
 author: "sacampbe"
 localization_priority: Normal

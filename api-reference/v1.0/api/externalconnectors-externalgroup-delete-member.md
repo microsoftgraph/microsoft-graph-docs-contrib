@@ -1,6 +1,6 @@
 ---
-title: "Delete externalGroupMember"
-description: "Delete member of externalGroup "
+title: "Delete identity"
+description: "Remove an existing member identity resource from an externalGroup"
 author: "sacampbe-msft"
 localization_priority: Normal
 ms.prod: "search"
@@ -11,8 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph.externalConnectors
 
 
-
-Deletes [member](../resources/externalconnectors-identity.md) of an externalGroup[externalGroup](../resources/externalconnectors-externalgroup.md) object.
+Remove an existing member [identity](../resources/externalconnectors-identity.md) resource from an [externalGroup](../resources/externalconnectors-externalgroup.md).
 
 ## Permissions
 
@@ -31,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /connections/{connectionsId}/groups/{externalGroupId}/members/{externalGroupMemberId}
+DELETE /connections/{connectionId}/groups/{externalGroupId}/members/{identityId}
 ```
 
 ## Request headers
@@ -55,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_externalgroupmember"
+  "name": "delete_identity"
 }
 -->
 
