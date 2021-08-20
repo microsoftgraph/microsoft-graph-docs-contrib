@@ -39,7 +39,9 @@ POST /roleManagement/directory/roleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure AD, such as `directoryScopeId`, or an application-specific scope, such as `appScopeId`. Examples of Azure AD scope are tenant ("/"), administrative units, or applications. For more information, see [appScope](../resources/appscope.md).
+In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure Active Directory (Azure AD) specified by **directoryScopeId**, or an application-specific scope specified by the **appScopeId**. Examples of Azure AD scopes are tenant (`/`), administrative units, or applications. For more information on appScope, see [appScope](../resources/appscope.md).
+
+The following table shows the properties that are required when you create the [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 ## Response
 
