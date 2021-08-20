@@ -42,7 +42,7 @@ npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-sso-
 
 In order to allow users to sign in, you need to provide a URL that the Teams app will open in a popup to follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsSSOProvider.handleAuth()` method.
 
-You can do this by adding a new `auth.html` file (which should be at the same level as `index.html`) and adding the following code:
+Here is an example of an `auth.html` page that handles the auth flow in the popup:
 
 ```html
 <!DOCTYPE html>

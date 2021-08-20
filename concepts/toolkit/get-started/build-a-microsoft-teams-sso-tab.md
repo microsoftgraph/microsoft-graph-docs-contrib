@@ -41,7 +41,7 @@ npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-sso-
 
 ## Create the auth popup page
 
-In order to allow users to sign in, you need to provide a URL that the Teams app will open in a popup to follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsSSOProvider.handleAuth()` method.
+If you need a user to consent to a permission, you need to provide a URL that the Teams app will open in a popup to follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsSSOProvider.handleAuth()` method.
 
 You can do this by adding a new `auth.html` file (which should be at the same level as `index.html`) and adding the following code:
 
@@ -219,7 +219,7 @@ Add the `mgt-teams-sso-provider` into the HTML `<body>`
 ```html
 <mgt-teams-sso-provider 
   client-id="<YOUR_CLIENT_ID>"
-  auth-popup-url="/teamsauth"
+  auth-popup-url="/auth.html"
   scopes="user.read,user.read.all,mail.readBasic,people.read.all,sites.read.all,user.readbasic.all,contacts.read,presence.read,presence.read.all,tasks.readwrite,tasks.read"
   sso-url="http://localhost:8000/api/token"
   http-method="POST"
@@ -241,7 +241,7 @@ TeamsSSOProvider.microsoftTeamsLib = MicrosoftTeams;
 
 Providers.globalProvider = new TeamsSSOProvider({
   clientId: `<YOUR_CLIENT_ID>`,
-  authPopupUrl: '/teamsauth',
+  authPopupUrl: '/auth.html',
   scopes: ['user.read','user.read.all','mail.readBasic','people.read.all','sites.read.all','user.readbasic.all','contacts.read','presence.read','presence.read.all','tasks.readwrite','tasks.read'],
   ssoUrl: 'http://localhost:8000/api/token',
   httpMethod: HttpMethod.POST
