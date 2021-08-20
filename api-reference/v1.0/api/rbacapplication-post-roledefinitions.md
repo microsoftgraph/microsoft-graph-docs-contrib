@@ -36,6 +36,7 @@ POST /roleManagement/directory/roleDefinitions
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
+| Content-Type | application/json. Required. |
 
 ## Request body
 
