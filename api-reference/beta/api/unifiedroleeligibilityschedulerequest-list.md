@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleEligibilityScheduleRequests"
 description: "Get a list of the unifiedRoleEligibilityScheduleRequest objects and their properties."
-author: "shauliu"
+author: "shauliu1"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleAssignmentScheduleRequest: cancel"
 description: "Cancel a unifiedRoleAssignmentScheduleRequest."
-author: "shauliu"
+author: "shauliu1"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
