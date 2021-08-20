@@ -1,12 +1,12 @@
 ---
-title: "Resource type differences between Azure AD Graph and Microsoft Graph"
-description: "Describes differences between resources in Azure AD Graph and resources in Microsoft Graph in order to help migrate apps."
+title: "Resource type differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph"
+description: "Describes differences between resources in Azure Active Directory (Azure AD) Graph and resources in Microsoft Graph in order to help migrate apps."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "applications"
 ---
 
-# Resource type differences between Azure AD Graph and Microsoft Graph
+# Resource type differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 

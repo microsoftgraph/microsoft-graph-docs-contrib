@@ -1,6 +1,6 @@
 ---
 title: "Deploy, test, and extend migrated apps"
-description: "Describes how to migrate Azure Active Directory (Azure AD) apps to use the Microsoft Graph API (REST); this discusses step 3: deploy, test, and extend."
+description: "Describes how to migrate Azure Active Directory (Azure AD) Graph apps to use the Microsoft Graph API (REST); this discusses step 3: deploy, test, and extend."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "applications"
@@ -25,7 +25,7 @@ This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-
 3.  **Explore new value**
 
     Now you've made the switch to Microsoft Graph, it's never been easier for you to unlock many more datasets and features that are now at your fingertips. 
-    Microsoft Graph supports many new Azure AD datasets and features that are not available in Azure AD Graph, including: 
+    Microsoft Graph supports many new Azure Active Directory (Azure AD) datasets and features that are not available in Azure Active Directory (Azure AD) Graph, including: 
 
     - [Microsoft 365 group management](./office365-groups-concept-overview.md)
     - [External user invitations](/graph/api/resources/invitation)
