@@ -103,7 +103,7 @@ Content-type: application/json
 
 #### Request
 
-The following example assigns a principal User Admin role over an administrative unit.
+The following example assigns a principal the User Administrator role over an administrative unit.
 
 
 <!-- {
