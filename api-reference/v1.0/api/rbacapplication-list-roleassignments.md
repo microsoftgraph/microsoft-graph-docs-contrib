@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Request using a filter on role definition ID
+### Example 1: Request using a filter on roleDefinitionId and expand the principal object
 
 #### Request
 
