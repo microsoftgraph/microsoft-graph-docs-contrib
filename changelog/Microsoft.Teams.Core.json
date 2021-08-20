@@ -4,6 +4,24 @@
     {
       "ChangeList": [
         {
+          "Id": "efc25f28-5324-4493-bab5-525f84e9b4f2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for listing [chats](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-1.0) for a user in delegated context.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "3b66e2c7-10a4-4965-a602-7be3081d8a28",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-07-09T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3b66e2c7-10a4-4965-a602-7be3081d8a28",
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
