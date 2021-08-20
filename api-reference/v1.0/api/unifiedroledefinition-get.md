@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. Currently "directory" is the only RBAC application supported.
+Read the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. Currently **directory** is the only role-based access control (RBAC) provider supported.
 
 ## Permissions
 
