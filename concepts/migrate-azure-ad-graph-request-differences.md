@@ -95,7 +95,7 @@ The response for this request would include the address properties.  It also inc
 
 To learn more about:
 
-- Default properties on user, see [users](/graph/api/resources/users?view=graph-rest-1.0)
+- Default properties on user, see [users](/graph/api/resources/users)
 - The `$select` parameter and other supported ODATA query parameters, see [Use query parameters to customize responses](./query-parameters.md).
 - This and other recommended optimizations, see [Best practices](./best-practices-concept.md).
 
