@@ -19,7 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|TeamsActivity.Send|
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|TeamsActivity.Send|
+|Application|TeamsActivity.Send.Chat*, TeamsActivity.Send|
+
+**Note:** Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 ## HTTP request
 
