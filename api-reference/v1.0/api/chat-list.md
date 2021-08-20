@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-### Example 1: List all the chats
+### Example 1: List all chats
 
 #### Request
 
@@ -110,7 +110,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: List all the chats along with the members of each chat
+### Example 2: List all chats along with the members of each chat
 #### Request
 
 Here is an example of the request.
@@ -128,9 +128,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 Here is an example of the response. 
 
 > [!NOTE]
-> The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
->
-> The membership results can map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
+> The membership IDs returned by the server must be treated as opaque strings. The client shouldn't try to parse or make any assumptions about these resource IDs.
 
 >**Note:** The response object shown here might be shortened for readability.
 

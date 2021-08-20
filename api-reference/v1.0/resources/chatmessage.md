@@ -58,8 +58,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |subject|string| The subject of the chat message, in plaintext.|
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the chat message. Representation is specified by the contentType inside the body. The content is always in HTML if the chat message contains a [chatMessageMention](chatmessagemention.md). |
 |summary|string| Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat. |
-|attachments|[chatMessageAttachment](chatmessageattachment.md) collection |References to attaches objects like files, tabs, meetings etc.|
-|mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Currently supports user, bot, team, and channel.|
+|attachments|[chatMessageAttachment](chatmessageattachment.md) collection |References to attached objects like files, tabs, meetings etc.|
+|mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.|
 |importance|string | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
 |locale|string|Locale of the chat message set by the client. Always set to `en-us`.|
