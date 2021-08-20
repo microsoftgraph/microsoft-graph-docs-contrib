@@ -1,7 +1,7 @@
 ---
 title: "identity resource type"
 description: "Representation of AAD and external identities"
-author: "sacampbe"
+author: "sacampbe-msft"
 localization_priority: Normal
 ms.prod: "search"
 doc_type: resourcePageType
@@ -18,8 +18,8 @@ Represents an [identity](externalconnectors-identity.md) used to set permissions
 
 | Property       | Type                    | Description                                                          |
 |:---------------|:------------------------|:---------------------------------------------------------------------|
-| id             | String                  | The unique ID of the identity. It would be the objectId in case of Azure Active Directory users or groups and the **id** property of the **externalGroup** in case of external groups.                                    |
-| type           | microsoft.graph.externalConnectors.identityType | The type of identity. Possible values are: `user` or `group`  for azureActiveDirectory identities and `externalgroup` for groups in an external system. |
+| id             | String                  | The unique ID of the identity. It would be the objectId in case of Azure Active Directory (Azure AD) users or groups and the **id** property of the **externalGroup** in the case of external groups.                                    |
+| type           | microsoft.graph.externalConnectors.identityType | The type of identity. Possible values are: `user` or `group`  for Azure Active Directory (Azure AD) identities and `externalgroup` for groups in an external system. |
 
 ## Relationships
 None.
