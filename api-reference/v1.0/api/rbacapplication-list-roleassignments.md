@@ -190,7 +190,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Request using a filter on principal ID
+### Example 2: Request using a filter on principalId
 
 #### Request
 
