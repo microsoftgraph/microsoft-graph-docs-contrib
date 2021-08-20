@@ -111,7 +111,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-### Example 7: Review of service principals assigned to privileged roles 
+### Example 7: Review of all service principals assigned to a privileged role (all active and eligible assignments included)
 
 ```http
 "scope": {
@@ -120,12 +120,42 @@ Because this review is applied on all teams, configure the **instanceEnumeration
     "queryType": "MicrosoftGraph"
 }
 ```
+    
+### Example 8: Review of all users assigned to a privileged role (all active and eligible assignments included)
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleDefinitions/{role ID}",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### Example 9: Review of all users with eligible assignment to a privileged role
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleEligibilityScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### Example 10: Review of all users with active assignment to a privileged role
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(assignmentType eq 'Assigned' and isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
 
 ## Use principalResourceMembershipsScope to configure scope
 
 The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition**. This includes reviewing access for multiple principals or groups of principals to multiple resources.
 
-### Example 1: Review access of all inactive guest users to groups
+### Example 1: Review access of all inactive guest users to all groups
 
 ```http
 "scope": {

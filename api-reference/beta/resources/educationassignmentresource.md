@@ -28,7 +28,7 @@ will receive a copy of this resource in the resource list of their submission. E
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|Indicates whether this resource should be copied to each student submission for modification and submission.|
+|distributeForStudentWork|Boolean|Indicates whether this resource should be copied to each student submission for modification and submission. Required|
 |id|String| ID of this resource. Read-only.|
 |resource|[educationResource](educationresource.md)|Resource object that has been associated with this assignment.|
 

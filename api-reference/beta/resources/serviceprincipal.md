@@ -80,6 +80,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 ## Properties
 
+> [!IMPORTANT]
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
 | Property     | Type |Description|
 |:---------------|:--------|:----------|
 | accountEnabled |Boolean| `true` if the service principal account is enabled; otherwise, `false`. Supports `$filter` (`eq`, `ne`, `NOT`, `in`). |
@@ -125,6 +128,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
+|appManagementPolicies|[appManagementPolicy](../resources/appManagementPolicy.md) collection| The appManagementPolicy applied to this service principal.|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|App role assignments for this app or service, granted to users, groups, and other service principals.Supports `$expand`.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|App role assignment for another app or service, granted to this service principal. Supports `$expand`.|
 |claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) collection|The claimsMappingPolicies assigned to this service principal. Supports `$expand`.|

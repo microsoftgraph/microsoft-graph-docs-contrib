@@ -67,10 +67,9 @@ If successful, this method returns a `200 OK` response code and an updated [unif
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}
 Content-Type: application/json
-Content-length: 170
 
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyRule",
+  "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
   "target": {
     "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
   }
