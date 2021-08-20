@@ -7,7 +7,7 @@ author: beth-panx
 
 # File list component in the Microsoft Graph Toolkit
 
-The File List component displays [a list of multiple folders and files](/graph/api/resources/onedrive) by using the file/folder name, an icon, and other properties that you specify. This component uses the [mgt-file](./file.md) component. You can specify a specific drive or site, display a list of files based on insight type (trending, used, or shared), or provide queries to a custom list of files. It's also possible to enable upload files feature with attribute `enable-file-upload`, this option allow users to upload files on pre defined queries using a upload button or drag and drop file action.
+The File List component displays [a list of multiple folders and files](/graph/api/resources/onedrive) by using the file/folder name, an icon, and other properties that you specify. This component uses the [mgt-file](./file.md) component. You can specify a specific drive or site, display a list of files based on insight type (trending, used, or shared), or provide queries to a custom list of files. The component also provides the option of allowing users to upload files to a specified location in One Drive or SharePoint.
 
 ## Example
 
@@ -35,10 +35,10 @@ You can use several properties to customize the component.
 | page-size | pageSize | A number value to indicate the maximum number of files to render on each page. |
 | file-extensions | fileExtensions | An array of file extensions used to filter files to show. |
 | hide-more-files-button | hideMoreFilesButton | A boolean to indicate whether to show a button to render more files. |
-| enable-file-upload | enableFileUpload | Boolean to enable or disable file upload extension, default is false.  |
-| excluded-file-extensions | excludedFileExtensions | String array of file extensions to be excluded from file upload. Must also provide `enable-file-upload` attribute. |
-| max-file-size | maxFileSize | Number to restrict upload size (KB). Must also provide `enable-file-upload` attribute. |
-| max-upload-file | maxUploadFile | Number, default value are 10 files. Must also provide `enable-file-upload` attribute. |
+| enable-file-upload | enableFileUpload | Boolean to enable or disable file upload functionality. The default value is `false`.  |
+| excluded-file-extensions | excludedFileExtensions | String array of file extensions to be excluded from file upload. Must also set the `enable-file-upload` attribute to `true`. |
+| max-file-size | maxFileSize | A number representing the maximum file upload size (KB). Must also set the `enable-file-upload` attribute to `true`. |
+| max-upload-file | maxUploadFile | A number representing the maximum number of files allowed to be uploaded. The default value is `10` files. Must also set the `enable-file-upload` attribute to `true`. |
 
 The following example changes the behavior of the component to fetch a file list from a specific query.
 
@@ -76,13 +76,13 @@ The following example enables the file upload feature.
 <mgt-file-list enable-file-upload></mgt-file-list>
 ```
 
-The following example limits maximum number of files that can be uploaded to 5.
+The following example limits the maximum number of files that can be uploaded to 5.
 
 ```html
 <mgt-file-list max-upload-file="5" enable-file-upload></mgt-file-list>
 ```
 
-The following example limits maximum file size that can be uploaded to 10000 KB.
+The following example limits the maximum file size that can be uploaded to 10000 KB.
 
 ```html
 <mgt-file-list max-file-size="10000" enable-file-upload></mgt-file-list>
