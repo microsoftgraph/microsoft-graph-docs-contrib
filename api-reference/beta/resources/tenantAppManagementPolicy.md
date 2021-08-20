@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/tenantAppManagementPolicy",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/defaultAppManagementPolicy",
   "id": "string (identifier)",
   "description": "string",
   "displayName": "string",
