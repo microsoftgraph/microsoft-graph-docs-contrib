@@ -2065,6 +2065,8 @@ Taxonomy permissions are valid only on work or school accounts.
 | _Member.Read.Group_ | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
 | _Owner.Read.Group_| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
 | _File.Read.Group_| Read this team's files and folders. | **Limited support** <br/> (Preview) Read this team's files and folders, without a signed-in users. | No | No |
+| _TeamsActivity.Send.Chat_| Send activity feed notification to members in this team. | Send activity feed notification to members in this team, without a signed-in users. | No | No |
+| _TeamsActivity.Send.Group_| Send activity feed notification to members in this chat. | Send activity feed notification to members in this chat, without a signed-in users. | No | No |
 
 ## Teams settings permissions
 
