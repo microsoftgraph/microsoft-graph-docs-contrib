@@ -49,7 +49,7 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 ## Examples
 
-### Example 1: Create a role assignment at tenant scope
+### Example 1: Create a role assignment with a tenant-wide scope
 
 #### Request
 
