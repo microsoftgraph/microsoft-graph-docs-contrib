@@ -557,7 +557,7 @@ To join the scheduled meeting we will need to get the thread id, message id, org
 This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).
 
 The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
-> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission or the `Calls.JoinGroupCalls.Chat` resource-specific permission on the chat associated with the meeting.
+> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission or the `Calls.JoinGroupCalls.Chat` [resource-specific permission](https://aka.ms/teams-rsc).
 
 ##### Request
 
