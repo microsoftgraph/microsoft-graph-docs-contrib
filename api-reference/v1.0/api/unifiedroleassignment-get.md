@@ -93,7 +93,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get details of a role assignment with `$expand`
+### Example 2: Get the details of a role assignment and expand the relationships
 
 #### Request
 
