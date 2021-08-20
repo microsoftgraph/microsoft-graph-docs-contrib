@@ -65,8 +65,7 @@ If successful, this method returns a `201 Created` response code and an [identit
 
 <!-- {
   "blockType": "request",
-  "name": "create_aad_user_identity_from_group",
-  "@odata.type": "microsoft.graph.externalConnectors.identity"
+  "name": "create_aad_user_identity_from_group"
 }
 -->
 
@@ -106,8 +105,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "create_aad_group_identity_from_group",
-  "@odata.type": "microsoft.graph.externalConnectors.identity"
+  "name": "create_aad_group_identity_from_group"
 }
 -->
 
@@ -146,8 +144,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "create_external_group_identity_from_group",
-  "@odata.type": "microsoft.graph.externalConnectors.identity"
+  "name": "create_external_group_identity_from_group"
 }
 -->
 
