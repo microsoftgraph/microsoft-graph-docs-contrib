@@ -28,7 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleAssignments
+GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId {eq roleDefinitionId}
+GET /roleManagement/directory/roleAssignments?$filter=principalId {eq principalId}
 ```
 
 ## Optional query parameters
