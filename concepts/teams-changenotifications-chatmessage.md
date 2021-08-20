@@ -258,8 +258,6 @@ To track messages for all chats a user is part of, you can create a change notif
 
 User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
 
-> **Note:** User-level chat messaging subscriptions are currently in preview.
-
 > **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
 ### Permissions
