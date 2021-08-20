@@ -1,5 +1,5 @@
 ---
-title: "Delete externalGroupMembery"
+title: "Delete externalGroupMember"
 description: "Delete member of externalGroup "
 author: "sacampbe-msft"
 localization_priority: Normal
@@ -48,12 +48,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
-## Examples
+## Example
 
 ### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_externalgroupmember"

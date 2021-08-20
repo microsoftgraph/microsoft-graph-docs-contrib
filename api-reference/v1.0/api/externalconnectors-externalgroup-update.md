@@ -58,7 +58,7 @@ The following table shows the properties that are required when you update the [
 
 If successful, this method returns a `204 No Content` response code.
 
-## Examples
+## Example
 
 ### Request
 <!-- {
@@ -72,14 +72,13 @@ Content-Type: application/json
 Content-length: 130
 
 {
-  "displayName": "String",
-  "description": "String"
+  "displayName": "Contoso Marketing",
+  "description": "The product marketing team"
 }
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -88,4 +87,3 @@ Content-length: 130
 ``` http
 HTTP/1.1 204 No Content
 ```
-

@@ -12,7 +12,7 @@ Namespace: microsoft.graph.externalConnectors
 
 
 
-Create a new externalGroup object.
+Create a new [externalGroup](../resources/externalconnectors-externalgroup.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,9 +41,9 @@ POST /connections/{connectionsId}/groups
 | Content-Type  | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of the [externalGroup](../resources/externalconnectors-externalgroup.md) object.
+In the request body, supply a JSON representation of the **externalGroup** object.
 
-The following table shows the properties that are required when you create the [externalGroup](../resources/externalconnectors-externalgroup.md).
+The following table shows the properties that are required when you create the **externalGroup**).
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
@@ -61,8 +61,6 @@ If successful, this method returns a `201 Created` response code and an [externa
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externalgroup_from_connection"
@@ -83,7 +81,6 @@ Content-Type: application/json
 <!-- markdownlint-disable MD024 -->
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

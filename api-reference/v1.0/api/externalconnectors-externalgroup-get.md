@@ -1,18 +1,17 @@
 ---
-title: "Delete externalGroup"
-description: "Delete an externalGroup object."
+title: "Get externalGroup"
+description: "Get an externalGroup object."
 author: "sacampbe-msft"
 localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# Delete externalGroup
+# Get externalGroup
 Namespace: microsoft.graph.externalConnectors
 
 
-
-Delete an [externalGroup](../resources/externalconnectors-externalgroup.md) object.
+Get an [externalGroup](../resources/externalconnectors-externalgroup.md) object.
 
 ## Permissions
 
@@ -32,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /connections/{connectionsId}/groups/{externalGroupId}
+GET /connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## Request headers
@@ -46,19 +45,19 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code with the externalGroup object.
 
 ## Example
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_externalgroup"
+  "name": "get_externalgroup"
 }
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000
+GET https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000
 ```
 
 <!-- markdownlint-disable MD024 -->
@@ -66,10 +65,18 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.externalConnectors.externalGroup"
 }
 -->
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "31bea3d537902000",
+  "displayName": "Contoso Marketing",
+  "description": "The product marketing team"
+}
 ```

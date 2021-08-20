@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create the e
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
 | id             | String                  | The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.                                    |
-| type           | microsoft.graph.externalConnectors.identityType | The type of member added to the external group. Possible values are: `user`,`group`, `externalGroup`, `unknownFutureValue`. |
+| type           | microsoft.graph.externalConnectors.identityType | The type of member added to the external group. Possible values are: `user`,`group`, `externalGroup`. |
 
 
 ## Response
@@ -61,7 +61,13 @@ If successful, this method returns a `201 Created` response code and an [identit
 
 ### Example 1: Add an Azure Active Directory user as a member
 
-### Request
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_aad_user_identity_from_group"
+}
+-->
 
 ``` http
 POST https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000/members
@@ -74,9 +80,8 @@ Content-Type: application/json
 ```
 
 <!-- markdownlint-disable MD024 -->
-### Response
+#### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,14 +94,19 @@ Content-Type: application/json
 
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
-  "type": "user",
-  "identitySource": "azureActiveDirectory"
+  "type": "user"
 }
 ```
 
 ### Example 2: Add an Azure Active Directory group as a member
 
-### Request
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_aad_group_identity_from_group"
+}
+-->
 
 ``` http
 POST https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000/members
@@ -108,9 +118,8 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,7 +138,13 @@ Content-Type: application/json
 
 ### Example 3: Add another external group as a member
 
-### Request
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_external_group_identity_from_group"
+}
+-->
 
 ``` http
 POST https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000/members
@@ -141,9 +156,8 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

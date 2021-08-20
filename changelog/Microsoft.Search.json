@@ -683,7 +683,7 @@
     {
       "ChangeList": [
           {
-              "Id": "62eaf068-e8b4-11eb-88f7-f923b9ff781d",
+              "Id": "62e88b5a-e8b4-11eb-88f7-f923b9ff781d",
               "ApiChange": "Relationship",
               "ChangedApiName": "groups",
               "ChangeType": "Addition",
@@ -691,7 +691,7 @@
               "Target": "externalConnection"
           },
           {
-              "Id": "62ed51fb-e8b4-11eb-88f7-f923b9ff781d",
+              "Id": "62e88b5a-e8b4-11eb-88f7-f923b9ff781d",
               "ApiChange": "Resource",
               "ChangedApiName": "externalGroup",
               "ChangeType": "Addition",
@@ -699,7 +699,7 @@
               "Target": "externalGroup"
           },
           {
-              "Id": "62efb551-e8b4-11eb-88f7-f923b9ff781d",
+              "Id": "62e88b5a-e8b4-11eb-88f7-f923b9ff781d",
               "ApiChange": "Resource",
               "ChangedApiName": "identity",
               "ChangeType": "Addition",
@@ -707,7 +707,7 @@
               "Target": "identity"
           },
           {
-              "Id": "62f21b20-e8b4-11eb-88f7-f923b9ff781d",
+              "Id": "62e88b5a-e8b4-11eb-88f7-f923b9ff781d",
               "ApiChange": "Enum type",
               "ChangedApiName": "identityType",
               "ChangeType": "Addition",
@@ -719,7 +719,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-07-19T17:11:41.609Z",
-      "WorkloadArea": "",
+      "WorkloadArea": "Search",
       "SubArea": ""
     }
   ]
