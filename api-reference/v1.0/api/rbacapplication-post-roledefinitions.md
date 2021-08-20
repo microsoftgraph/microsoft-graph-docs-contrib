@@ -82,7 +82,7 @@ Content-type: application/json
             ]
         }
     ],
-    "isEnabled" : "true"
+    "isEnabled" : true
 }
 ```
 
