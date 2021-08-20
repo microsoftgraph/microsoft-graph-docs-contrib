@@ -86,6 +86,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.externalConnectors.identity"
 }
 -->
 
@@ -125,6 +126,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.externalConnectors.identity"
 }
 -->
 
@@ -164,6 +166,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.externalConnectors.identity"
 }
 -->
 
