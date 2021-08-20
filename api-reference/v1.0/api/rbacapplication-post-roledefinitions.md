@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.
+Create a new custom [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.
 
 ## Permissions
 
