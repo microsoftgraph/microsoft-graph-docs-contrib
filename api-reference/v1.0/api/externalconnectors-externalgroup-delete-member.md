@@ -1,6 +1,6 @@
 ---
 title: "Delete identity"
-description: "Remove an existing member identity resource from an externalGroup"
+description: "Remove an existing identity resource member from an externalGroup"
 author: "sacampbe-msft"
 localization_priority: Normal
 ms.prod: "search"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph.externalConnectors
 
 
-Remove an existing member [identity](../resources/externalconnectors-identity.md) resource from an [externalGroup](../resources/externalconnectors-externalgroup.md).
+Remove an existing [identity](../resources/externalconnectors-identity.md) resource member from an [externalGroup](../resources/externalconnectors-externalgroup.md).
 
 ## Permissions
 

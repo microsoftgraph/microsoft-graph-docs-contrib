@@ -22,7 +22,7 @@ Examples of external groups are business units and work teams.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Create externalGroup](../api/externalconnectors-externalconnection-post-groups.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Create a new **externalGroup** object.|
-|[Update externalGroup](../api/externalconnectors-externalgroup-update.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Update the properties of an [externalGroup](../resources/externalconnectors-externalgroup.md) object.|
+|[Update externalGroup](../api/externalconnectors-externalgroup-update.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Update the properties of an **externalGroup** object.|
 |[Delete externalGroup](../api/externalconnectors-externalgroup-delete.md)|None|Delete an **externalGroup** object.|
 |[Get externalGroup](../api/externalconnectors-externalgroup-get.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Get an **externalGroup** object.|
 
@@ -39,7 +39,7 @@ Examples of external groups are business units and work teams.
 
 | Relationship | Type                                                                  | Description                                               |
 |:-------------|:----------------------------------------------------------------------|:----------------------------------------------------------|
-| members      | [microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md) collectionn | A member added to an **externalGroup**. You can add Azure Active Directory users, Azure Active Directory groups, or an **externalGroup** as members. |
+| members      | [microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md) collection | A member added to an **externalGroup**. You can add Azure Active Directory users, Azure Active Directory groups, or an **externalGroup** as members. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

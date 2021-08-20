@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the *
 
 If successful, this method returns a `201 Created` response code and an [externalGroup](../resources/externalconnectors-externalgroup.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 
