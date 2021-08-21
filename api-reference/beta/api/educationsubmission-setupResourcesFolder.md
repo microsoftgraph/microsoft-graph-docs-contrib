@@ -1,5 +1,5 @@
 ---
-title: "educationSubmission: setUpResourcesFolder"
+title: "educationSubmission: setUpResourcesFolder action"
 description: "Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission."
 localization_priority: Normal
 author: "sharmas"
