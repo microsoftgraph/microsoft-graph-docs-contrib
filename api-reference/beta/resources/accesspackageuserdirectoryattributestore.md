@@ -1,0 +1,35 @@
+---
+title: "accesspakageuserdirectoryattributestore resource type"
+description: "The type of attribute source for the Azure Active Directory end system."
+author: "markwahl-msft"
+localization_priority: Normal
+ms.prod: "Governance"
+doc_type: resourcePageType
+---
+
+# accessPackageUserDirectoryAttributeStore resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+A child of **accessPackageAttributeDestination** that is the type of attribute source for the Azure Active Directory end system. Inherits from [accessPackageAttributeDestination](../resources/accesspackageattributedestination.md). 
+
+## Properties
+None.
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "accessPackageUserDirectoryAttributeStore"
+}
+-->
+``` json
+{
+  "@odata.type": "#accessPackageUserDirectoryAttributeStore"
+}
+```
