@@ -248,6 +248,8 @@ items:
             href: education-rubric-overview.md
           - name: Upload files
             href: education-upload-resource-overview.md
+          - name: Assignment and Submission states transition
+            href: assignments-submissions-states-transition.md            
       - name: Files
         href: onedrive-concept-overview.md
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
