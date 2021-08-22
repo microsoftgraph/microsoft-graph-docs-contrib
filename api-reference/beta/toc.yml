@@ -13390,6 +13390,13 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Incidents
+        href: resources/incident.md
+        items:
+        - name: List incidents
+          href: api/incident-list.md
+        - name: Get incident
+          href: api/incident-get.md
       - name: Information protection
         items:
         - name: Labels
