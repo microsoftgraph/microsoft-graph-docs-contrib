@@ -905,7 +905,9 @@ Content-Type: application/json
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
 ### Example 6: Join scheduled meeting with app hosted media
-To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.
+To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, in the sample provided above.
+
+**Note:** This example needs the `Calls.AccessMedia.All` permission or the `Calls.AccessMedia.Chat` [resource-specific permission](https://aka.ms/teams-rsc).
 
 <!-- {
   "blockType": "example",
