@@ -558,6 +558,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _TeamsTab.ReadWrite.Chat_        | Manage this chat's tabs.                                      | Allows the app to manage this chat's tabs, without a signed-in user. |No | No |
 | _TeamsAppInstallation.Read.Chat_ | Read which apps are installed in this chat.                   | Allows the app to read the Teams apps that are installed in this chat along with the permissions granted to each app, without a signed-in user.  |No | No |
 | _OnlineMeeting.ReadBasic.Chat_   | Read basic properties of a meeting associated with this chat. | Allows the app to read basic properties—such as name, schedule, organizer, and join link—of a meeting associated with this chat, without a signed-in user. |No | No |
+| _TeamsActivity.Send.Chat_        | Send activity feed notifications to users in this chat.       | Allows the app to create new notifications in the teamwork activity feeds of the users in this chat, without a signed-in user. | No | No |
 
 >[!NOTE]
 > Currently, these permissions are supported only in the beta version of Microsoft Graph.
@@ -2065,8 +2066,7 @@ Taxonomy permissions are valid only on work or school accounts.
 | _Member.Read.Group_ | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
 | _Owner.Read.Group_| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
 | _File.Read.Group_| Read this team's files and folders. | **Limited support** <br/> (Preview) Read this team's files and folders, without a signed-in users. | No | No |
-| _TeamsActivity.Send.Chat_| Send activity feed notification to members in this chat. | Send activity feed notification to members in this chat, without signed-in users. | No | No |
-| _TeamsActivity.Send.Group_| Send activity feed notification to members in this team. | Send activity feed notification to members in this team, without signed-in users. | No | No |
+| _TeamsActivity.Send.Group_| Send activity feed notifications to users in this team. | Allows the app to create new notifications in the teamwork activity feeds of the users in this team, without a signed-in user. | No | No |
 
 ## Teams settings permissions
 
