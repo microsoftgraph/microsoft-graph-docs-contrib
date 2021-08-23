@@ -21,7 +21,7 @@ This type will inherit from [identityProviderBase](../resources/identityprovider
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the Apple identity providers. There is no way to retrieve only the Apple identity providers in a tenant.|
-|[Create](../api/identitycontainer-post-identityproviders.md)|appleManagedIdentityProvider |Create a new Apple identity provider configuration.|
+|[Create](../api/identitycontainer-post-identityproviders.md)|[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) |Create a new Apple identity provider configuration.|
 |[Get](../api/identityproviderbase-get.md) |appleManagedIdentityProvider |Retrieve properties of the Apple identity provider configuration.|
 |[Update](../api/identityproviderbase-update.md)|None|Update the Apple identity provider configuration.|
 |[Delete](../api/identityproviderbase-delete.md)|None|Delete the Apple identity provider configuration.|
