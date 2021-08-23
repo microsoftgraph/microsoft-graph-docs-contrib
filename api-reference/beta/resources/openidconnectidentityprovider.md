@@ -23,7 +23,7 @@ This type will inherit from [identityProviderBase](../resources/identityprovider
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md)  collection|Retrieve all identity providers configured in a tenant including the OpenID Connect identity providers. There is no way to retrieve only the OpenID Connect identity providers in a tenant.|
-|[Create](../api/identitycontainer-post-identityproviders.md)|openIdConnectIdentityProvider|Create a new OpenID Connect identity provider.|
+|[Create](../api/identitycontainer-post-identityproviders.md)|[openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md)|Create a new OpenID Connect identity provider.|
 |[Get](../api/identityproviderbase-get.md) |openIdConnectIdentityProvider|Retrieve properties of an OpenID Connect identity provider.|
 |[Update](../api/identityproviderbase-update.md)|None|Update an OpenID Connect identity provider.|
 |[Delete](../api/identityproviderbase-delete.md)|None|Delete an OpenID Connect identity provider.|
