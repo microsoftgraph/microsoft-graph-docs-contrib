@@ -1,27 +1,29 @@
 ---
 title: "Get crossTenantAccessPolicyConfigurationDefault"
-description: "Read the properties and relationships of a crossTenantAccessPolicyConfigurationDefault object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Read the default configuration of a cross tenant access policy."
+author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get crossTenantAccessPolicyConfigurationDefault
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) object.
+Read the [default configuration](../resources/crosstenantaccesspolicyconfigurationdefault.md) of a cross tenant access policy.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -29,19 +31,19 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
-GET /policyRoot/crossTenantAccessPolicy/default
+GET /policies/crossTenantAccessPolicy/default
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -51,17 +53,19 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_crosstenantaccesspolicyconfigurationdefault"
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/policyRoot/crossTenantAccessPolicy/default
+GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -69,30 +73,126 @@ GET https://graph.microsoft.com/beta/policyRoot/crossTenantAccessPolicy/default
   "@odata.type": "Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationDefault"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationDefault",
-    "inboundTrust": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
+  "isServiceDefault": true,
+  "inboundTrust":
+  {
+    "isMfaAccepted": false,
+    "isCompliantDeviceAccepted": false,
+    "isHybridAzureADJoinedDeviceAccepted": false,
+  },
+  "b2bCollaborationOutbound": 
+  {
+    "usersAndGroups": 
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+          "target" : "AllGroups",
+          "targetType: "group"
+        },
+        {
+          "target" : "AllUsers",
+          "targetType: "user"
+        }
+      ]
     },
-    "b2bCollaborationOutbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+    "applications": [
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+          "target" : "AllApplications",
+          "targetType: "application"
+        }
+      ]
+    ]
+  },
+  "b2bCollaborationInbound": 
+  {
+    "usersAndGroups": 
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+          "target" : "AllGroups",
+          "targetType: "group"
+        },
+        {
+          "target" : "AllUsers",
+          "targetType: "user"
+        }
+      ]
     },
-    "b2bCollaborationInbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+    "applications":
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+          "target" : "AllApplications",
+          "targetType: "application"
+        }
+      ]
+    }
+  },
+  "b2bDirectConnectOutbound": 
+  {
+    "usersAndGroups": 
+    {
+      "accessType": blocked,
+      "targets": [
+        {
+          "target" : "AllGroups",
+          "targetType: "group"
+        },
+        {
+          "target" : "AllUsers",
+          "targetType: "user"
+        }
+      ]
     },
-    "b2bDirectConnectOutbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+    "applications":
+    {
+      "accessType": blocked,
+      "targets": [
+        {
+          "target" : "AllApplications",
+          "targetType: "application"
+        }
+      ]
+    }
+  },
+  "b2bDirectConnectInbound": 
+  {
+    "usersAndGroups": 
+    {
+      "accessType": blocked,
+      "targets": [
+        {
+          "target" : "AllGroups",
+          "targetType: "group"
+        },
+        {
+          "target" : "AllUsers",
+          "targetType: "user"
+        }
+      ]
     },
-    "b2bDirectConnectInbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "isServiceDefault": "Boolean"
+    "applications":
+    {
+      "accessType": blocked,
+      "targets": [
+        {
+          "target" : "AllApplications",
+          "targetType: "application"
+        }
+      ]
+    }
   }
 }
 ```
-

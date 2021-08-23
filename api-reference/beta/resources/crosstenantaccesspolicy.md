@@ -19,8 +19,6 @@ Cross-tenant access settings let you manage both B2B collaboration and B2B direc
 
 - Organization-specific access settings let you configure customized settings for individual organizations, which take precedence over default settings. This means that although B2B collaboration and B2B direct connect might be disabled across your organization by default, you could enable these features for a specific external organization.
 
-Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipaccesspolicybase.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -34,11 +32,8 @@ Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationsh
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier for the cross tenant access policy. Inherited from [directoryObject](../resources/directoryobject.md).|
-|deletedDateTime|DateTimeOffset|The time that the cross tenant access policy was deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
-|description|String|The description of the cross tenant access policy. Inherited from [policyBase](../resources/policybase.md).|
 |displayName|String|The display name of the cross tenant access policy. Inherited from [policyBase](../resources/policybase.md).|
-|definition|String collection|The definition of the cross tenant access policy. Inherited from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipaccesspolicybase.md).|
+|lastModifiedDateTime|DateTimeOffset|The time that the cross tenant access policy was deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
 
 ## Relationships
 
@@ -54,7 +49,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicy",
-  "baseType": "Microsoft.DirectoryServices.tenantRelationshipAccessPolicyBase",
   "openType": false
 }
 -->
@@ -62,12 +56,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
-  "id": "String (identifier)",
-  "deletedDateTime": "String (timestamp)",
-  "description": "String",
   "displayName": "String",
-  "definition": [
-    "String"
-  ]
+  "lastModifiedDateTime": "String (timestamp)",
+  "default": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault",
+  "partners": ["microsoft.graph.crossTenantAccessPolicyConfigurationPartner"]
 }
 ```

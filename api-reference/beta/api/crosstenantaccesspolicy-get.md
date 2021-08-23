@@ -1,13 +1,14 @@
 ---
 title: "Get crossTenantAccessPolicy"
 description: "Read the properties and relationships of a crossTenantAccessPolicy object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get crossTenantAccessPolicy
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -29,19 +31,19 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
-GET /policyRoot/crossTenantAccessPolicy
+GET /policies/crossTenantAccessPolicy
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -51,39 +53,36 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_crosstenantaccesspolicy"
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/policyRoot/crossTenantAccessPolicy
+GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.crossTenantAccessPolicy"
+  "@odata.type": "microsoft.graph.crossTenantAccessPolicy"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.crossTenantAccessPolicy",
-    "id": "f4f0f3c1-f3c1-f4f0-c1f3-f0f4c1f3f0f4",
-    "deletedDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "definition": [
-      "String"
-    ]
+    "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
+    "displayName": "CrossTenantAccessPolicy",
+    "lastModifiedDateTime": "08-23-2021Z00:00:00"
   }
 }
 ```
-

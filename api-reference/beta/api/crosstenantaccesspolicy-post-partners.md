@@ -1,27 +1,29 @@
 ---
 title: "Create crossTenantAccessPolicyConfigurationPartner"
-description: "Create a new crossTenantAccessPolicyConfigurationPartner object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Create a new partner configuration in a cross tenant access policy."
+author: "jkdouglas
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Create crossTenantAccessPolicyConfigurationPartner
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new crossTenantAccessPolicyConfigurationPartner object.
+Create a new partner configuration in a cross tenant access policy.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -29,32 +31,32 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
-POST /policyRoot/crossTenantAccessPolicy/partners
+POST /policies/crossTenantAccessPolicy/partners
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) object.
 
 The following table shows the properties that are required when you create the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|inboundTrust|[Microsoft.DirectoryServices.crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|**TODO: Add Description** Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)|
-|b2bCollaborationOutbound|[Microsoft.DirectoryServices.crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|**TODO: Add Description** Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)|
-|b2bCollaborationInbound|[Microsoft.DirectoryServices.crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|**TODO: Add Description** Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)|
-|b2bDirectConnectOutbound|[Microsoft.DirectoryServices.crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|**TODO: Add Description** Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)|
-|b2bDirectConnectInbound|[Microsoft.DirectoryServices.crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|**TODO: Add Description** Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md)|
-|tenantId|String|**TODO: Add Description**|
-|isServiceProvider|Boolean|**TODO: Add Description**|
-
-
+|tenantId|String|The tenant identifier (GUID) for the partner Azure Active Directory organization.|
+|b2bCollaborationInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner specific configuration for users from other organizations accessing your resources via B2B collaboration. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).|
+|b2bCollaborationOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner specific configuration for users in your organization going outbound to access resources in another organization via B2B collaboration. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).|
+|b2bDirectConnectInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner specific configuration for users from other organizations accessing your resources via B2B direct connect. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).|
+|b2bDirectConnectOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner specific configuration for users in your organization going outbound to access resources in another organization via B2B direct connect. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).|
+|inboundTrust|[crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|Determines the partner specific configuration for trusting other conditional access claims from external Azure Active Directory organizations. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).|
 
 ## Response
 
@@ -63,70 +65,91 @@ If successful, this method returns a `201 Created` response code and a [crossTen
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "create_crosstenantaccesspolicyconfigurationpartner_from_"
 }
 -->
+
 ``` http
-POST https://graph.microsoft.com/beta/policyRoot/crossTenantAccessPolicy/partners
+POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
 Content-Type: application/json
-Content-length: 700
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationPartner",
-  "inboundTrust": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
+  "tenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
+  "b2bDirectConnectOutbound": 
+  {
+    "usersAndGroups": 
+    {
+      "accessType": blocked,
+      "targets": [
+        {
+            "target" : "g2",
+            "targetType: "group"
+        }
+      ]
+    }
   },
-  "b2bCollaborationOutbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bCollaborationInbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bDirectConnectOutbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bDirectConnectInbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "tenantId": "String",
-  "isServiceProvider": "Boolean"
+  "b2bDirectConnectInbound": 
+  {
+    "applications":
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+            "target" : "Office365",
+            "targetType: "application"
+        }
+      ]
+    }
+  }
 }
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationPartner"
+  "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-
 {
-  "@odata.type": "#Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationPartner",
-  "inboundTrust": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
+  "tenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
+  "inboundTrust": null,
+  "b2bCollaborationInbound": null,
+  "b2bCollaborationOutbound": null,
+  "b2bDirectConnectOutbound": 
+  {
+    "usersAndGroups": 
+    {
+      "accessType": blocked,
+      "targets": [
+        {
+            "target" : "g2",
+            "targetType: "group"
+        }
+      ]
+    }
   },
-  "b2bCollaborationOutbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bCollaborationInbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bDirectConnectOutbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "b2bDirectConnectInbound": {
-    "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-  },
-  "tenantId": "String",
-  "isServiceProvider": "Boolean"
+  "b2bDirectConnectInbound": 
+  {
+    "applications":
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+            "target" : "Office365",
+            "targetType: "application"
+        }
+      ]
+    }
+  }
 }
 ```
-

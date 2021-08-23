@@ -19,9 +19,9 @@ Used to define which conditional access claims you want to accept from other org
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isCompliantDeviceAccepted|Boolean|**TODO: Add Description**|
-|isHybridAzureADJoinedDeviceAccepted|Boolean|**TODO: Add Description**|
-|isMfaAccepted|Boolean|**TODO: Add Description**|
+|isCompliantDeviceAccepted|Boolean|Specifies whether compliant devices from external Azure Active Directory organizations are trusted.|
+|isHybridAzureADJoinedDeviceAccepted|Boolean|Specifies whether hybrid Azure AD Joined devices from external Azure Active Directory organizations are trusted.|
+|isMfaAccepted|Boolean|Specifies whether MFA from external Azure Active Directory organizations is trusted.|
 
 ## Relationships
 

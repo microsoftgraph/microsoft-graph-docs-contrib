@@ -1,27 +1,29 @@
 ---
 title: "List partners"
-description: "Get the crossTenantAccessPolicyConfigurationPartner resources from the partners navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Get a list of all partner configurations within a cross tenant access policy."
+author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List partners
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the crossTenantAccessPolicyConfigurationPartner resources from the partners navigation property.
+Get a list of all partner configurations within a cross tenant access policy.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -29,19 +31,19 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
-GET /policyRoot/crossTenantAccessPolicy/partners
+GET /policies/crossTenantAccessPolicy/partners
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -51,15 +53,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "list_crosstenantaccesspolicyconfigurationpartner"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/policyRoot/crossTenantAccessPolicy/partners
-```
 
+``` http
+GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
+```
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -69,33 +72,34 @@ GET https://graph.microsoft.com/beta/policyRoot/crossTenantAccessPolicy/partners
   "@odata.type": "Collection(Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationPartner)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
+  "values": [
     {
-      "@odata.type": "#Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationPartner",
-      "inboundTrust": {
-        "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
-      },
-      "b2bCollaborationOutbound": {
-        "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-      },
-      "b2bCollaborationInbound": {
-        "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-      },
-      "b2bDirectConnectOutbound": {
-        "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-      },
-      "b2bDirectConnectInbound": {
-        "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-      },
-      "tenantId": "String",
-      "isServiceProvider": "Boolean"
+      "tenantId": "123f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "inboundTrust": null,
+      "b2bCollaborationInbound": null,
+      "b2bCollaborationOutbound": null,
+      "b2bDirectConnectOutbound": null,
+      "b2bDirectConnectInbound": 
+      {
+          "usersAndGroups": null,
+          "applications":
+        {
+          "accessType": allowed,
+          "targets": [
+            {
+              "target" : "Office365",
+              "targetType: "application"
+            }
+          ]
+        }
+      }
     }
   ]
 }
 ```
-
