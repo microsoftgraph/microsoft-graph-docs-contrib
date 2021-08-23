@@ -136,6 +136,8 @@ additionalContent:
               url: ./known-issues.md
             - text: Support
               url: https://developer.microsoft.com/graph/support
+            - text: Microsoft Graph on Q&A
+              url: https://docs.microsoft.com/en-us/answers/products/graph
             - text: Microsoft Graph blog
               url: https://developer.microsoft.com/graph/blogs/
             - text: Videos and podcasts
