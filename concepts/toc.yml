@@ -237,12 +237,17 @@ items:
           - name: Multi-tenant management (preview)
             displayName: Microsoft 365 Lighthouse
             href: managedtenants-concept-overview.md
+          - name: Service health and communications
+            display name: service communications API
+            href: service-communications-concept-overview.md
       - name: Education
         items:
           - name: Overview
             href: education-concept-overview.md
           - name: Rubrics
             href: education-rubric-overview.md
+          - name: Upload files
+            href: education-upload-resource-overview.md
       - name: Files
         href: onedrive-concept-overview.md
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
@@ -410,8 +415,6 @@ items:
             href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
-      - name: Service health and communications (preview)
-        href: service-communications-concept-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
@@ -444,6 +447,8 @@ items:
                 href: teams-send-activityfeednotifications.md
               - name: Best practices 
                 href: teams-activity-feed-notifications-best-practices.md  
+          - name: System messages
+            href: system-messages.md
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -608,6 +613,8 @@ items:
                     href: migrate-azure-ad-graph-client-libraries.md
               - name: "4: Deploy, test, and extend"
                 href: migrate-azure-ad-graph-deploy-test-extend.md
+              - name: Migration FAQ
+                href: migrate-azure-ad-graph-faq.md
       - name: Use SDKs
         items:
           - name: Overview

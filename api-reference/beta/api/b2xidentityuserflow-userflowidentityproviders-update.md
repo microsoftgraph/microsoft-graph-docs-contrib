@@ -72,7 +72,8 @@ PATCH https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Test/userflow
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test"
+  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test",
+  "@odata.type": "#microsoft.graph.identityProvider"
 }
 ```
 # [C#](#tab/csharp)
