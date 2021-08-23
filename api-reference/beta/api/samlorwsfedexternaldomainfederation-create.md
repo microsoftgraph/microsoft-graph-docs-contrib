@@ -59,7 +59,6 @@ The following table shows the properties that are required when you create the [
 |passiveSignInUri|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|
 |preferredAuthenticationProtocol|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|
 
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object in the response body.
@@ -94,13 +93,12 @@ Content-length: 283
 }
 ```
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.samlOrWsFedExternalDomainFederation"
+  "@odata.type": "microsoft.graph.identityProviderBase"
 }
 -->
 ``` http
@@ -108,8 +106,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetafederationconfiguration2/$metadata#directory/federationConfigurations/$entity",
-    "@odata.id": "https://canary.graph.microsoft.com/v2/e77d917b-4a43-4843-a1b2-475cabe70050/samlOrWsFedExternalDomainFederations/3c41f317-9af3-4266-8ccf-26283ceec888",
     "id": "3c41f317-9af3-4266-8ccf-26283ceec888",
     "displayName": "contoso display name"
 }

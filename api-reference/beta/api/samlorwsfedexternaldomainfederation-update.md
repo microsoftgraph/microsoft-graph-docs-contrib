@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 }
 -->
 ``` http
-PATCH /samlOrWsFedExternalDomainFederation
+PATCH directory/federationConfigurations/<samlOrWsFedExternalDomainFederation ID>
 ```
 
 ## Request headers
@@ -45,21 +45,19 @@ PATCH /samlOrWsFedExternalDomainFederation
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
 
-The following table shows the properties that are required when you update the [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
+In the request body, provide a JSON object with one or more properties that need to be updated for a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object in Azure AD tenant.
+
+The following table shows the properties that are you can update for [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|displayName|String|**TODO: Add Description** Inherited from [identityProviderBase](../resources/identityproviderbase.md)|
-|issuerUri|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|
-|metadataExchangeUri|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|
-|signingCertificate|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|
-|passiveSignInUri|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|
-|preferredAuthenticationProtocol|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|
-
-
+|displayName|String|The display name of the SAML/Ws-Fed based identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
+|issuerUri|String|Issuer URI of the federation server. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|metadataExchangeUri|String|URI of the metadata exchange end point used for authentication from rich client applications. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|passiveSignInUri|String|URI that web-based clients are directed to when signing in to AAD services. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|preferredAuthenticationProtocol|String|Preferred authentication protocol. Supported values include `saml` or `wsfed`. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|signingCertificate|String|Current certificate used to sign tokens passed to the AAD Identity platform. Formatted as Base64 encoded strings of the public portion of the federated IDP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Usually, certificates are updated via an auto-rollover process; AAD attempts to retrieve a new certificate from the federation service metadata 30 days before expiry of the current certificate. If a new certificate is not available at the time, AAD will continue to monitor the metadata daily and will update the federation settings for the domain when a new certificate is available. The signingCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 
 ## Response
 
@@ -74,18 +72,12 @@ If successful, this method returns a `200 OK` response code and an updated [saml
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation
+PATCH https://graph.microsoft.com/beta/directory/federationConfigurations/d5a56845-6845-d5a5-4568-a5d54568a5d5
 Content-Type: application/json
 Content-length: 283
 
 {
-  "@odata.type": "#microsoft.graph.samlOrWsFedExternalDomainFederation",
-  "displayName": "String",
-  "issuerUri": "String",
-  "metadataExchangeUri": "String",
-  "signingCertificate": "String",
-  "passiveSignInUri": "String",
-  "preferredAuthenticationProtocol": "String"
+  "displayName": "Contoso name change",
 }
 ```
 
@@ -105,7 +97,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.samlOrWsFedExternalDomainFederation",
   "id": "d5a56845-6845-d5a5-4568-a5d54568a5d5",
-  "displayName": "String",
+  "displayName": "Contoso name change",
   "issuerUri": "String",
   "metadataExchangeUri": "String",
   "signingCertificate": "String",
@@ -113,4 +105,3 @@ Content-Type: application/json
   "preferredAuthenticationProtocol": "String"
 }
 ```
-
