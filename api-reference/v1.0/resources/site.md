@@ -86,11 +86,11 @@ The `root` identifier always references the root site for a given target, as fol
 | **contentTypes**  | Collection([contentType][])                      | The collection of content types defined for this site.
 | **drive**         | [drive][]                                        | The default drive (document library) for this site.
 | **drives**        | Collection([drive][])                            | The collection of drives (document libraries) under this site.
-| **items**         | Collection([baseItem][])                         | Used to address any item contained in this site. This collection cannot be enumerated.
+| **items**         | Collection([baseItem][])                         | Used to address any item contained in this site. This collection can't be enumerated.
 | **lists**         | Collection([list][])                             | The collection of lists under this site.
+| **onenote**       | [onenote][]                                      | Calls the OneNote service for notebook related operations.
 | **permissions**   | Collection([permission][])                       | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])                             | The collection of the sub-sites under this site.
-| **onenote**       | [onenote][]                                      | Calls the OneNote service for notebook related operations.
 | **termStore**     | [microsoft.graph.termStore.store]                | The default termStore under this site.
 | **termStores**    | Collection([microsoft.graph.termStore.store])    | The collection of termStores under this site.
 

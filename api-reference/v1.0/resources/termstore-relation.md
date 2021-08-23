@@ -11,19 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.termStore
 
-Represents the relationship between [terms](../resources/termstore-term.md) in a term [store]. Currently two types of relationships are supported: pin and reuse. 
+Represents the relationship between [terms](../resources/termstore-term.md) in a term [store]. Currently, two types of relationships are supported: **pin** and **reuse**. 
 
 In a pin relationship, a term can be pinned under a different term in a different term set. In a pinned relationship, new children to the term can only be added in the term set in which the term was created. Any change in the hierarchy under the term is reflected across the sets in which the term was pinned. 
 
-The reuse relationship is similar to the pinned relationship except that changes to the reused term can be made from any hierarchy in which the term is reused. Also, a change in hierarchy made to the reused term does not get reflected in the other term sets in which the term is reused.
+The reuse relationship is similar to the pinned relationship except that changes to the reused term can be made from any hierarchy in which the term is reused. Also, a change in hierarchy made to the reused term doesn't get reflected in the other term sets in which the term is reused.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List relations](../api/termstore-term-list-relations.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md) collection|Retrieve a list of **relation** objects.|
-|[Create relation](../api/termstore-relation-post.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md)|Create a new **relation** object.|
+|[List relations](../api/termstore-term-list-relations.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection|Retrieve a list of **relation** objects.|
+|[Create relation](../api/termstore-relation-post.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Create a new **relation** object.|
 
 
 ## Properties
@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|fromTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The from [term] of the relation. The term from which the relationship is defined. A null value would indicate the relation is directly with the [set]. |
+|fromTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The from [term] of the relation. The term from which the relationship is defined. A *null* value would indicate the relation is directly with the [set]. |
 |set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|The [set] in which the relation is relevant.|
 |toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The to [term] of the relation. The term to which the relationship is defined.|
 

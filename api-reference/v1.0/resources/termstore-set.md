@@ -18,7 +18,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sets](../api/termstore-group-list-sets.md)|collection [microsoft.graph.termStore.set] | Returns list of sets contained within a [group] of a term [store] |
+|[List sets](../api/termstore-group-list-sets.md)|collection [microsoft.graph.termStore.set] | Returns a list of sets contained within a [group] of a term [store]. |
 |[Create set](../api/termstore-set-post.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)|Create a new set object in a term [store].|
 |[Create term](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Create a new [term] object in a term [store].|
 |[Get set](../api/termstore-set-get.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)| Get a set object in a term [store].|
@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Date and time of set creation. Read-only.|
-|description|String|Description giving details on the term usage.|
+|description|String|Description that gives details on the term usage.|
 |id|String|Unique identifier. Read-only.|
 |localizedNames|[microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set for each languageTag.|
 |properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|Custom properties for the set.|

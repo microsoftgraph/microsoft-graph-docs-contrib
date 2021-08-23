@@ -1,19 +1,19 @@
 ---
-title: "termstore enum values"
-description: "Microsoft Graph termstore enumeration values"
+title: "termStore enumeration values"
+description: "Microsoft Graph termStore enumeration values."
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: "taxonomy"
 author: vishriv
 ---
 
-# Microsoft Graph termstore enumeration values
+# termStore enumeration values
 
 Namespace: microsoft.graph.termstore
 
 ### relationType values
 
-Specifies the value types relations can take in a termstore
+Specifies the value types relations can take in a termStore.
 
 |Member|
 |:---|
@@ -22,7 +22,7 @@ Specifies the value types relations can take in a termstore
 
 ### termGroupScope values
 
-Specifies the values different group types can take within the termstore
+Specifies the values different group types can take within the termStore.
 
 |Member|
 |:---|
@@ -33,7 +33,7 @@ Specifies the values different group types can take within the termstore
 <!--
 {
   "type": "#page.annotation",
-  "namespace": "microsoft.graph.termstore"
+  "namespace": "microsoft.graph.termStore"
 }
 -->
 
