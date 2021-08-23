@@ -50,7 +50,7 @@ POST /identity/identityProviders
 
 In the request body, provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
-In Azure AD B2C provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleIdentityProvider](../resources/applemanagedidentityprovider.md) object.
+In Azure AD B2C provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object.
 
 All the properties listed in the following tables are required.
 
