@@ -11,8 +11,6 @@ ms.prod: "cloud-communications"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Set the state of a user's presence session as an application.
 
 ### Presence sessions
