@@ -26,7 +26,7 @@ Configuring an identity provider in your Azure AD B2C directory enables users to
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|identityProviderBase collection|Retrieve all identity providers configured in a tenant.|
+|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase) collection|Retrieve all identity providers configured in a tenant.|
 |[Create](../api/identitycontainer-post-identityproviders.md)| [socialidentityprovider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) |Create a new social identity provider (Azure AD or Azure AD B2C), OpenID Connect identity provider (Azure AD B2C), or an Apple identity provider (Azure AD B2C)|
 |[Get](../api/identityproviderbase-get.md) |[socialidentityprovider](../resources/socialidentityprovider.md), [builtInIdentityProvider](../resources/builtinidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) or  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)| Retrieve properties of a social identity provider (Azure AD or Azure AD B2C), built-in identity provider (Azure AD or Azure AD B2C), OpenID Connect identity provider(Azure AD B2C), or an Apple identity provider (Azure AD B2C)|
 |[Update](../api/identityproviderbase-update.md)|None|Update a social identity provider (Azure AD or Azure AD B2C), OpenID Connect identity provider (Azure AD B2C), or an Apple identity provider (Azure AD B2C).|
