@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "string"
 }
 -->
 

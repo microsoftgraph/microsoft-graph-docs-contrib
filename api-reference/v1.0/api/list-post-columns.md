@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: "Create a columnDefinition in a list."
+title: "Create a columnDefinition in a list"
 description: "Create a list column."
 localization_priority: Normal
 doc_type: apiPageType

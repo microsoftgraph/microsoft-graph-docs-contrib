@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: "Create a columnDefinition in a site."
+title: "Create a columnDefinition in a site"
 description: "Create a site column."
 localization_priority: Normal
 doc_type: apiPageType

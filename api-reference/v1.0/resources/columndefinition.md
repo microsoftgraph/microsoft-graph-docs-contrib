@@ -80,7 +80,7 @@ Here is a JSON representation of a columnDefinition resource.
 
 Columns can hold data of various types.
 The following properties indicate what type of data a column stores, as well as additional settings for that data.
-The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text, and so on) are mutually exclusive -- a column can only have one of them specified.
+The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text, and so on) are mutually exclusive; a column can only have one of them specified.
 
 | Property name           | Type    | Description
 |:------------------------|:--------|:-----------------------------------------
@@ -93,7 +93,7 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **indexed**             | Boolean | Specifies whether the column values can be used for sorting and searching.
 | **name**                | string  | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**.
 | **readOnly**            | Boolean    | Specifies whether the column values can be modified.
-| **required**            | Boolean | Specifies whether the column value is not optional.
+| **required**            | Boolean | Specifies whether the column value isn't optional.
 | **boolean**       | [booleanColumn][]       | This column stores boolean values.
 | **calculated**    | [calculatedColumn][]    | This column's data is calculated based on other columns.
 | **choice**        | [choiceColumn][]        | This column stores data from a list of choices.
@@ -121,11 +121,12 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 
 | Property name   | Type                      | Description
 |:----------------|:--------------------------|:-------------------------------
-| **sourceColumn** | [columnDefinition][] | The source column for content type column.
+| **sourceColumn** | [columnDefinition][] | The source column for the content type column.
 
 >**Note:** These properties correspond to the SharePoint [SPFieldType][] enumeration.
 Note that the most common field types are represented in the previous table. However, this API is still missing some.
 In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
+Sites and list columns response will not contain **isDeletable**, **propagateChanges**, **isReorderable**, **isSealed**,  **validation**,  **hyperlinkOrPicture**, **term**, **sourceContentType**, **thumbnail**, **type**, **contentApprovalStatus** and **sourceColumn** properties.
 
 ## Remarks
 

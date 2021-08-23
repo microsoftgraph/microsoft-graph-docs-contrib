@@ -1,6 +1,6 @@
 ---
 author: swapnil1993
-title: "Create a content type."
+title: "Create a content type"
 description: "Create a content type in a site."
 localization_priority: Normal
 doc_type: apiPageType

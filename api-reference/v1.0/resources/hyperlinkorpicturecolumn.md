@@ -10,13 +10,13 @@ ms.prod: "sites-and-lists"
 
 Namespace: microsoft.graph
 
-Represents hyperlink or picture column in SharePoint.
+Represents a hyperlink or picture column in SharePoint.
 
 ## Properties
 
-| Property name      | Type               | Description
-|:-------------------|:-------------------|:----------------------------------------------
-| isPicture       | Boolean             | Specifies whether the display format used for URL columns is an image or a hyperlink. 
+| Property name      | Type               | Description|
+|:-------------------|:-------------------|:----------------------------------------------|
+| isPicture       | Boolean             | Specifies whether the display format used for URL columns is an image or a hyperlink. |
 
 
 ## JSON representation

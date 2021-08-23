@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 
 Namespace: microsoft.graph
 
-Represents content approval status column in SharePoint.
+Represents a content approval status column in SharePoint.
 ## Properties
 
 None.

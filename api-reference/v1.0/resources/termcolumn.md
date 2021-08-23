@@ -10,16 +10,16 @@ ms.prod: "sites-and-lists"
 
 Namespace: microsoft.graph
 
-Represents Managed metadata column in SharePoint.
+Represents a managed metadata column in SharePoint.
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| allowMultipleValues | Boolean | Specifies whether the column will allow more than one value   
-| parentTerm     | microsoft.graph.termStore.term | Specifies the term guid whose children can be selected as column's value.  
-| showFullyQualifiedName | Boolean | Specifies whether to display the entire term path or only the term label.  
-| termSet      | microsoft.graph.termStore.set | Termset whose children can be selected as column's value. 
+| Property name | Type   | Description|
+|:--------------|:-------|:----------------------------------------------------|
+| allowMultipleValues | Boolean | Specifies whether the column will allow more than one value.|
+| parentTerm     | microsoft.graph.termStore.term | Specifies the term GUID whose children can be selected as column's value.  |
+| showFullyQualifiedName | Boolean | Specifies whether to display the entire term path or only the term label.  |
+| termSet      | microsoft.graph.termStore.set | Termset whose children can be selected as column's value. |
 
 ## JSON representation
 

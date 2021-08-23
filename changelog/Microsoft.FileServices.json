@@ -1655,7 +1655,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "columnValidation",
           "ChangeType": "Addition",
           "Description": "Added the [columnValidation](https://docs.microsoft.com/en-us/graph/api/resources/columnValidation?view=graph-rest-1.0) resource type.",
@@ -1663,7 +1663,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "contentApprovalStatusColumn",
           "ChangeType": "Addition",
           "Description": "Added the [contentApprovalStatusColumn](https://docs.microsoft.com/en-us/graph/api/resources/contentApprovalStatusColumn?view=graph-rest-1.0) resource type.",
@@ -1671,7 +1671,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "displayNameLocalization",
           "ChangeType": "Addition",
           "Description": "Added the [displayNameLocalization](https://docs.microsoft.com/en-us/graph/api/resources/displayNameLocalization?view=graph-rest-1.0) resource type.",
@@ -1679,7 +1679,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "documentSet",
           "ChangeType": "Addition",
           "Description": "Added the [documentSet](https://docs.microsoft.com/en-us/graph/api/resources/documentSet?view=graph-rest-1.0) resource type.",
@@ -1687,7 +1687,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "documentSetContent",
           "ChangeType": "Addition",
           "Description": "Added the [documentSetContent](https://docs.microsoft.com/en-us/graph/api/resources/documentSetContent?view=graph-rest-1.0) resource type.",
@@ -1695,7 +1695,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "hyperlinkOrPictureColumn",
           "ChangeType": "Addition",
           "Description": "Added the [hyperlinkOrPictureColumn](https://docs.microsoft.com/en-us/graph/api/resources/hyperlinkOrPictureColumn?view=graph-rest-1.0) resource type.",
@@ -1703,7 +1703,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "termColumn",
           "ChangeType": "Addition",
           "Description": "Added the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-1.0) resource type.",
@@ -1711,7 +1711,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "thumbnailColumn",
           "ChangeType": "Addition",
           "Description": "Added the [thumbnailColumn](https://docs.microsoft.com/en-us/graph/api/resources/thumbnailColumn?view=graph-rest-1.0) resource type.",
@@ -1722,7 +1722,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "contentApprovalStatus",
           "ChangeType": "Addition",
-          "Description": "Added the **contentApprovalStatus** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **contentApprovalStatus** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1730,7 +1730,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hyperlinkOrPicture",
           "ChangeType": "Addition",
-          "Description": "Added the **hyperlinkOrPicture** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **hyperlinkOrPicture** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1738,7 +1738,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isDeletable",
           "ChangeType": "Addition",
-          "Description": "Added the **isDeletable** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **isDeletable** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1746,7 +1746,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isReorderable",
           "ChangeType": "Addition",
-          "Description": "Added the **isReorderable** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **isReorderable** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1754,7 +1754,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isSealed",
           "ChangeType": "Addition",
-          "Description": "Added the **isSealed** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **isSealed** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1762,7 +1762,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "propagateChanges",
           "ChangeType": "Addition",
-          "Description": "Added the **propagateChanges** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **propagateChanges** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1770,7 +1770,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "term",
           "ChangeType": "Addition",
-          "Description": "Added the **term** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **term** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1778,7 +1778,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "thumbnail",
           "ChangeType": "Addition",
-          "Description": "Added the **thumbnail** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **thumbnail** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1786,7 +1786,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "type",
           "ChangeType": "Addition",
-          "Description": "Added the **type** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **type** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1794,7 +1794,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "validation",
           "ChangeType": "Addition",
-          "Description": "Added the **validation** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **validation** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1802,7 +1802,7 @@
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "sourceColumn",
           "ChangeType": "Addition",
-          "Description": "Added the **sourceColumn** relationship to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **sourceColumn** relationship to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "columnDefinition"
         },
         {
@@ -1810,7 +1810,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "associatedHubsUrls",
           "ChangeType": "Addition",
-          "Description": "Added the **associatedHubsUrls** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **associatedHubsUrls** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -1818,7 +1818,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "documentSet",
           "ChangeType": "Addition",
-          "Description": "Added the **documentSet** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **documentSet** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -1826,7 +1826,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "documentTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the **documentTemplate** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **documentTemplate** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -1834,7 +1834,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isBuiltIn",
           "ChangeType": "Addition",
-          "Description": "Added the **isBuiltIn** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **isBuiltIn** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -1842,7 +1842,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "propagateChanges",
           "ChangeType": "Addition",
-          "Description": "Added the **propagateChanges** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **propagateChanges** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -1850,7 +1850,7 @@
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "base",
           "ChangeType": "Addition",
-          "Description": "Added the **base** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **base** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -1858,7 +1858,7 @@
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "baseTypes",
           "ChangeType": "Addition",
-          "Description": "Added the **baseTypes** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **baseTypes** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -1866,7 +1866,7 @@
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "columnPositions",
           "ChangeType": "Addition",
-          "Description": "Added the **columnPositions** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **columnPositions** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -1874,7 +1874,7 @@
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "columns",
           "ChangeType": "Addition",
-          "Description": "Added the **columns** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Description": "Added the **columns** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
           "Target": "contentType"
         },
         {
@@ -1882,7 +1882,7 @@
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "externalColumns",
           "ChangeType": "Addition",
-          "Description": "Added the **externalColumns** relationship to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Description": "Added the **externalColumns** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
           "Target": "site"
         },
         {
