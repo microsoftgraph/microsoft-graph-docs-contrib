@@ -5781,10 +5781,10 @@ items:
             href: api/externalconnectors-externalgroup-delete.md
         - name: External group member
           items:
-          - name: Create external group member
+          - name: Create identity for member
             href: api/externalconnectors-externalgroup-post-members.md
-          - name: Delete external group member
-            href: api/externalconnectors-externalgroup-delete-member.md
+          - name: Delete identity of member
+            href: api/externalconnectors-identity-delete.md
     - name: Security
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
