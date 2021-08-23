@@ -39,8 +39,7 @@ The following is a JSON representation of the resource.
 {
     "startDateTime": "2020-08-11T23:06:53.307Z",
     "expiration": {
-        "endDateTime": "2020-09-10T23:06:53.307Z",
-        "type": "afterDateTime"
+      "@odata.type": "microsoft.graph.expirationPattern"
     }
 }
 ```

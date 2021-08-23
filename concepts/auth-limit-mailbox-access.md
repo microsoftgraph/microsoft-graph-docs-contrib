@@ -15,9 +15,6 @@ Some apps call Microsoft Graph using their own identity and not on behalf of a u
 
 There are scenarios where administrators may want to limit an app to only specific mailboxes and _not all_ Exchange Online mailboxes in the organization. Administrators can identify the set of mailboxes to permit access by putting them in a mail-enabled security group. Administrators can then limit third-party app access to only that set of  mailboxes by creating an application access policy for access to that group.
 
-> [!NOTE]
-> Once an application access policy is configured for an organization, the policy applies to any app that uses the Microsoft Graph API or Exchange Web Services to access Exchange Online mailboxes.
-
 As further described in the [Supported permissions and additional resources](#supported-permissions-and-additional-resources) section below, application access policy restricts mailbox access for apps that have been granted any of the Microsoft Graph or Exchange Web Services permission scopes that the policy supports.
 
 ## Configure ApplicationAccessPolicy

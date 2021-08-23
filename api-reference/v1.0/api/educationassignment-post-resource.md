@@ -112,7 +112,7 @@ Content-length: 229
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
-    "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
+    "@odata.type": "#microsoft.graph.educationLinkResource"
   }
 }
 
