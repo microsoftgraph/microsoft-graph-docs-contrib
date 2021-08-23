@@ -1,6 +1,90 @@
 {
     "changelog": [
         {
+              "ChangeList": [
+                  {
+                      "Id": "d981fc6e-c544-4b73-92ce-b41d0c4cd8bf",
+                      "ApiChange": "Property",
+                      "ChangedApiName": "reviewers",
+                      "ChangeType": "Addition",
+                      "Description": "Added the **reviewers** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                      "Target": "accessReviewInstance"
+                  },
+                  {
+                      "Id": "d981fc6e-c544-4b73-92ce-b41d0c4cd8bf",
+                      "ApiChange": "Property",
+                      "ChangedApiName": "fallbackReviewers",
+                      "ChangeType": "Addition",
+                      "Description": "Added the **fallbackReviewers** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                      "Target": "accessReviewInstance"
+                  }
+              ],
+              "Id": "d981fc6e-c544-4b73-92ce-b41d0c4cd8bf",
+              "Cloud": "prd",
+              "Version": "v1.0",
+              "CreatedDateTime": "2021-08-11T21:06:50.952Z",
+              "WorkloadArea": "Identity and access",
+              "SubArea": "Governance"
+          },
+        {
+            "ChangeList": [
+                {
+                    "Id": "48e9d736-c31d-11eb-995f-5903f88189f5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "recommendationLookBackDuration",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **recommendationLookBackDuration** property to the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewScheduleSettings"
+                },
+                {
+                    "Id": "48e9d736-c31d-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewInstanceDecisionItemResource",
+                    "ChangeType": "Change",
+                    "Description": "Changed the [accessReviewInstanceDecisionItemResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemResource?view=graph-rest-beta) resource type to be an open type.",
+                    "Target": "accessReviewInstanceDecisionItemResource"
+                },
+                {
+                    "Id": "48e9d736-c31d-11eb-995f-5903f88189f5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "reviewers",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **reviewers** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewInstance"
+                },
+                {
+                    "Id": "48e9d736-c31d-11eb-995f-5903f88189f5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "fallbackReviewers",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **fallbackReviewers** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewInstance"
+                },
+                {
+                    "Id": "48e9d736-c31d-11eb-995f-5903f88189f5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "reviewers",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **contactedReviewers** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewInstance"
+                },
+                {
+                    "Id": "48e9d736-c31d-11eb-995f-5903f88189f5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "accessReviewReviewer",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewReviewer](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewreviewer?view=graph-rest-beta) resource type.",
+                    "Target": "accessReviewInstance"
+                }
+            ],
+            "Id": "48e9d736-c31d-11eb-995f-5903f88189f5",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-08-11T21:06:50.952Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Governance"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "4D251ED7-CD9A-431E-8FB5-BA2DD49E3B35",

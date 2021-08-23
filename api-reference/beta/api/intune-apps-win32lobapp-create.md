@@ -101,7 +101,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 3428
+Content-length: 3451
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -147,7 +147,8 @@ Content-length: 3428
     "v10_1903": true,
     "v10_1909": true,
     "v10_2004": true,
-    "v10_2H20": true
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "minimumFreeDiskSpaceInMB": 8,
   "minimumMemoryInMB": 1,
@@ -220,7 +221,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3600
+Content-Length: 3623
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -269,7 +270,8 @@ Content-Length: 3600
     "v10_1903": true,
     "v10_1909": true,
     "v10_2004": true,
-    "v10_2H20": true
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "minimumFreeDiskSpaceInMB": 8,
   "minimumMemoryInMB": 1,

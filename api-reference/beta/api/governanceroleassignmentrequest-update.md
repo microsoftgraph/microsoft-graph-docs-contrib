@@ -4,7 +4,7 @@ description: "Enable administrators to update their decisions (`AdminApproved` o
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Update governanceRoleAssignmentRequests

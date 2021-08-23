@@ -66,7 +66,6 @@ For general information on the `$filter` query parameter, see [OData query param
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.

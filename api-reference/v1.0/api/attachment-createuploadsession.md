@@ -49,6 +49,7 @@ To create an upload session for attaching a file to an **event**:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
+POST /users/{id | userPrincipalName}/events/{id}/attachments/createUploadSession
 ```
 
 To create an upload session for attaching a file to a **message**: 
@@ -56,6 +57,7 @@ To create an upload session for attaching a file to a **message**:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/attachments/createUploadSession
+POST /users/{id | userPrincipalName}/messages/{id}/attachments/createUploadSession
 ```
 
 ## Request headers
