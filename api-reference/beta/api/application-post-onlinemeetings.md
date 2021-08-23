@@ -164,7 +164,7 @@ Content-Type: application/json
 ### Example 2: Create an online meeting in a Microsoft Teams channel with a user token
 
 #### Request
->**Note:** The Object ID of the user token passed should be a member of the channel represented by threadid in the payload.
+>**Note:** The Object ID of the user token passed should be a member of the channel represented by **threadId** in the payload.
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
