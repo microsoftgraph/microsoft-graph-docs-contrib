@@ -5777,10 +5777,16 @@ items:
             href: resources/externalconnectors-externalgroup.md
           - name: Create external group
             href: api/externalconnectors-externalconnection-post-groups.md
+          - name: Get external group
+            href: api/externalconnectors-externalgroup-get.md
+          - name: Update external group
+            href: api/externalconnectors-externalgroup-update.md
           - name: Delete external group
             href: api/externalconnectors-externalgroup-delete.md
         - name: External group member
           items:
+          - name: Identity
+            href: resources/externalconnectors-identity.md
           - name: Create identity for member
             href: api/externalconnectors-externalgroup-post-members.md
           - name: Delete identity of member
