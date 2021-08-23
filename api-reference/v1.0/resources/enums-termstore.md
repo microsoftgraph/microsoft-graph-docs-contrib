@@ -9,7 +9,7 @@ author: vishriv
 
 # termStore enumeration values
 
-Namespace: microsoft.graph.termstore
+Namespace: microsoft.graph.termStore
 
 ### relationType values
 
