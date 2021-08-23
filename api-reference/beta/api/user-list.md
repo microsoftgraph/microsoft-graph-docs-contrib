@@ -236,16 +236,20 @@ Content-type: application/json
       "displayName": "Adele Vance",
       "userPrincipalName": "AdeleV@contoso.com",
       "signInActivity": {
-        "lastSignInDateTime": "2017-09-04T15:35:02Z",
-        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+        "lastSignInDateTime": "2021-06-17T16:41:33Z",
+        "lastSignInRequestId": "d4d31c40-4c36-4775-ad59-7d1e6a171f00",
+        "lastNonInteractiveSignInDateTime": "0001-01-01T00:00:00Z",
+        "lastNonInteractiveSignInRequestId": ""
       }
     },
     {
       "displayName": "Alex Wilber",
       "userPrincipalName": "AlexW@contoso.com",
       "signInActivity": {
-        "lastSignInDateTime": "2017-07-29T02:16:18Z",
-        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+        "lastSignInDateTime": "2021-07-29T15:53:27Z",
+        "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
+        "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
+        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200"
       }
     }
   ]
@@ -306,8 +310,10 @@ Content-type: application/json
     {
       "displayName": "Eric Solomon",
       "signInActivity": {
-        "lastSignInDateTime": "2017-09-04T15:35:02Z",
-        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+        "lastSignInDateTime": "2021-07-29T15:53:27Z",
+        "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
+        "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
+        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200"
       }
     }
   ]
@@ -325,7 +331,7 @@ The following is an example of the request. Details for the **signInActivity** p
   "name": "get_signin_last_time_range"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
+GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2021-07-21T00:00:00Z
 ```
 
 #### Response
@@ -344,22 +350,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z",
+  "@odata.context": "https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2021-07-21T00:00:00Z",
   "value": [
     {
       "displayName": "Adele Vance",
       "userPrincipalName": "AdeleV@contoso.com",
       "signInActivity": {
-        "lastSignInDateTime": "2019-05-04T15:35:02Z",
-        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+        "lastSignInDateTime": "2021-06-17T16:41:33Z",
+        "lastSignInRequestId": "d4d31c40-4c36-4775-ad59-7d1e6a171f00",
+        "lastNonInteractiveSignInDateTime": "0001-01-01T00:00:00Z",
+        "lastNonInteractiveSignInRequestId": ""
       }
     },
     {
       "displayName": "Alex Wilber",
       "userPrincipalName": "AlexW@contoso.com",
       "signInActivity": {
-        "lastSignInDateTime": "2019-04-29T02:16:18Z",
-        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+        "lastSignInDateTime": "2021-07-29T15:53:27Z",
+        "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
+        "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
+        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200"
       }
     }
   ]
