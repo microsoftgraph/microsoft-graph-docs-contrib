@@ -48,7 +48,7 @@ This method supports the `$top`, `$skiptoken`, and `$filter` OData Query Paramet
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body. The collection of objects is listed in descending order based on **createdDateTime** and .
+If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body. The collection of objects is listed in descending order based on **createdDateTime**.
 
 ## Examples
 
