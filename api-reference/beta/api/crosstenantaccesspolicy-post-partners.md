@@ -134,7 +134,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "6f546279-4da5-4b53-a095-09ea0cef9971",
-          "targetType: "group"
+          "targetType": "group"
         }
       ]
     }

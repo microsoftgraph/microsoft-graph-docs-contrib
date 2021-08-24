@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "values": [
+  "value": [
     {
       "tenantId": "123f4846-ba00-4fd7-ba43-dac1f8f63013",
       "inboundTrust": null,

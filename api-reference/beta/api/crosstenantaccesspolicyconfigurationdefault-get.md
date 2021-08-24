@@ -102,7 +102,7 @@ Content-Type: application/json
         }
       ]
     },
-    "applications": [
+    "applications":
     {
       "accessType": "allowed",
       "targets": [
@@ -111,7 +111,7 @@ Content-Type: application/json
           "targetType": "application"
         }
       ]
-    ]
+    }
   },
   "b2bCollaborationInbound":
   {

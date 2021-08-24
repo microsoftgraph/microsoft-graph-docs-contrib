@@ -88,15 +88,14 @@ Content-Type: application/json
         }
       ]
     },
-    "applications": [
+    "applications":
     {
       "accessType": "blocked",
       "targets": [
-          {
-            "target": "AllApplications",
-            "targetType": "application"
-          }
-        ]
+        {
+          "target": "AllApplications",
+          "targetType": "application"
+        }
       ]
     }
   }
