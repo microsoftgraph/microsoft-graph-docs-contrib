@@ -24,10 +24,10 @@ Represents a stored BitLocker key that contains the actual recovery key via the 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the key was originally backed up to Azure Active Directory.|
-|deviceId|String|ID of the device the BitLocker key is originally backed up from.|
+|createdDateTime|DateTimeOffset|The date and time when the key was originally backed up to Azure Active Directory. Not nullable.|
+|deviceId|String|Identifier of the device the BitLocker key is originally backed up from. Supports `$filter` (`eq`).|
 |id|String|The unique identifier for the BitLocker key.|
-|key|String|The BitLocker recovery key.|
+|key|String|The BitLocker recovery key. Returned only on `$select`. Not nullable.|
 |volumeType|volumeType|Indicates the type of volume the BitLocker key is associated with. Possible values are: `operatingSystemVolume`, `fixedDataVolume`, `removableDataVolume`, `unknownFutureValue`.|
 
 ## Relationships
