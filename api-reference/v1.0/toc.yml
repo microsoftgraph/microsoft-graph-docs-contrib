@@ -5234,7 +5234,7 @@ items:
           href: api/listitem-list.md
         - name: Create list
           href: api/list-create.md
-      - name: ListItems
+      - name: List items
         href: resources/listitem.md
         items:
         - name: Get item
@@ -5262,14 +5262,14 @@ items:
         - name: Group
           href: resources/termstore-group.md
           items:
+          - name: List
+            href: api/termstore-list-groups.md
           - name: Create
             href: api/termstore-group-post.md
           - name: Get
             href: api/termstore-group-get.md
           - name: Delete
             href: api/termstore-group-delete.md
-          - name: List
-            href: api/termstore-list-groups.md
         - name: Set
           href: resources/termstore-set.md
           items:

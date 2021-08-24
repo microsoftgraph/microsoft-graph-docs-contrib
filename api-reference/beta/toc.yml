@@ -12942,7 +12942,7 @@ items:
           href: api/sitepage-delete.md
         - name: Publish
           href: api/sitepage-publish.md
-      - name: Taxonomy (preview)
+      - name: Taxonomy
         displayname: Taxonomy API
         items:
         - name: Store
