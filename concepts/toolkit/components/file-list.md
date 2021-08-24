@@ -32,7 +32,7 @@ You can use several properties to customize the component.
 | site-id | siteId | ID of the site the folder belongs to. Must also provide either `{item-id}` or `{item-path}`. Provide `{list-id}` if you’re referencing a file from a specific list. |
 | item-id | itemId | ID of the folder. Default query is `/me/drive/items`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
 | item-path | itemPath | Item path of the folder (relative to the root). Default query is `/me/drive/root`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
-| page-size | pageSize | A number value to indicate the maximum number of files to render on each page. |
+| page-size | pageSize | A number value to indicate the maximum number of files to render on each page. **Note:** `page-size` is not supported with `insight-type`. |
 | file-extensions | fileExtensions | An array of file extensions used to filter files to show. |
 | hide-more-files-button | hideMoreFilesButton | A boolean to indicate whether to show a button to render more files. |
 | enable-file-upload | enableFileUpload | Boolean to enable or disable file upload functionality. The default value is `false`.  |
