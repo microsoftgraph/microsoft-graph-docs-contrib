@@ -1,6 +1,6 @@
 ---
 title: "samlOrWsFedExternalDomainFederation resource type"
-description: "Represents SAML/Ws-Fed federation set up with an Azure AD tenant"
+description: "Represents SAML/WS-Fed federation set up with an Azure Active Directory (Azure AD) tenant"
 author: "namkedia"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
