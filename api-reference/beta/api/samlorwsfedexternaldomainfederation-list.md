@@ -97,7 +97,7 @@ Content-Type: application/json
         "issuerUri": "https://fabrikam.com/o/saml2?idpid=C018555d",
         "metadataExchangeUri": null,
         "signingCertificate": "MIIDdDCCAlygAwIBAgIGAXowJih/",
-        "passiveSignInUri": "https://accounts.google.com/o/saml2/saml2?idpid=C018555d",
+        "passiveSignInUri": "https://fabrikam.com/o/saml2/saml2?idpid=C018555d",
         "preferredAuthenticationProtocol": "wsfed",
         "domains": [
             {
