@@ -1,7 +1,7 @@
 ---
 title: "crossTenantAccessPolicyConfigurationDefault: resetToSystemDefault"
-description: "**TODO: Add Description**"
-author: "Reset any changes made to the default configuration in a cross tenant access policy back to the system default."
+description: "Reset any changes made to the default configuration in a cross tenant access policy back to the system default."
+author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
