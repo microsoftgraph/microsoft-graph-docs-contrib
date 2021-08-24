@@ -84,7 +84,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "0be493dc-cb56-4a53-936f-9cf64410b8b0",
-          "targetType: "group"
+          "targetType": "group"
         }
       ]
     },
@@ -94,7 +94,7 @@ Content-Type: application/json
       "targets": [
           {
             "target": "AllApplications",
-            "targetType: "application"
+            "targetType": "application"
           }
         ]
       ]

@@ -94,11 +94,11 @@ Content-Type: application/json
       "targets": [
         {
           "target": "AllGroups",
-          "targetType: "group"
+          "targetType": "group"
         },
         {
           "target": "AllUsers",
-          "targetType: "user"
+          "targetType": "user"
         }
       ]
     },
@@ -108,7 +108,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "AllApplications",
-          "targetType: "application"
+          "targetType": "application"
         }
       ]
     ]
@@ -121,11 +121,11 @@ Content-Type: application/json
       "targets": [
         {
           "target": "AllGroups",
-          "targetType: "group"
+          "targetType": "group"
         },
         {
           "target": "AllUsers",
-          "targetType: "user"
+          "targetType": "user"
         }
       ]
     },
@@ -135,7 +135,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "AllApplications",
-          "targetType: "application"
+          "targetType": "application"
         }
       ]
     }
@@ -148,11 +148,11 @@ Content-Type: application/json
       "targets": [
         {
           "target": "AllGroups",
-          "targetType: "group"
+          "targetType": "group"
         },
         {
           "target": "AllUsers",
-          "targetType: "user"
+          "targetType": "user"
         }
       ]
     },
@@ -162,7 +162,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "AllApplications",
-          "targetType: "application"
+          "targetType": "application"
         }
       ]
     }
@@ -175,11 +175,11 @@ Content-Type: application/json
       "targets": [
         {
           "target": "AllGroups",
-          "targetType: "group"
+          "targetType": "group"
         },
         {
           "target": "AllUsers",
-          "targetType: "user"
+          "targetType": "user"
         }
       ]
     },
@@ -189,7 +189,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "AllApplications",
-          "targetType: "application"
+          "targetType": "application"
         }
       ]
     }

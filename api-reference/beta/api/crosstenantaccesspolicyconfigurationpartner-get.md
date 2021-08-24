@@ -93,7 +93,7 @@ Content-Type: application/json
       "targets": [
         {
           "target": "Office365",
-          "targetType: "application"
+          "targetType": "application"
         }
       ]
     }
