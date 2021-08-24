@@ -84,7 +84,7 @@ Content-Type: application/json
   "b2bCollaborationInbound": null,
   "b2bCollaborationOutbound": null,
   "b2bDirectConnectOutbound": null,
-  "b2bDirectConnectInbound": 
+  "b2bDirectConnectInbound":
   {
       "usersAndGroups": null,
       "applications":

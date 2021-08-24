@@ -76,9 +76,9 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 Content-Type: application/json
 
 {
-  "b2bCollaborationOutbound": 
+  "b2bCollaborationOutbound":
   {
-    "usersAndGroups": 
+    "usersAndGroups":
     {
       "accessType": blocked,
       "targets": [

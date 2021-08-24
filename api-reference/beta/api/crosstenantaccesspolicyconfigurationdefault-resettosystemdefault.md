@@ -86,9 +86,9 @@ Content-Type: application/json
     "isCompliantDeviceAccepted": false,
     "isHybridAzureADJoinedDeviceAccepted": false,
   },
-  "b2bCollaborationOutbound": 
+  "b2bCollaborationOutbound":
   {
-    "usersAndGroups": 
+    "usersAndGroups":
     {
       "accessType": allowed,
       "targets": [
@@ -113,9 +113,9 @@ Content-Type: application/json
       ]
     ]
   },
-  "b2bCollaborationInbound": 
+  "b2bCollaborationInbound":
   {
-    "usersAndGroups": 
+    "usersAndGroups":
     {
       "accessType": allowed,
       "targets": [
@@ -140,9 +140,9 @@ Content-Type: application/json
       ]
     }
   },
-  "b2bDirectConnectOutbound": 
+  "b2bDirectConnectOutbound":
   {
-    "usersAndGroups": 
+    "usersAndGroups":
     {
       "accessType": blocked,
       "targets": [
@@ -167,9 +167,9 @@ Content-Type: application/json
       ]
     }
   },
-  "b2bDirectConnectInbound": 
+  "b2bDirectConnectInbound":
   {
-    "usersAndGroups": 
+    "usersAndGroups":
     {
       "accessType": blocked,
       "targets": [
