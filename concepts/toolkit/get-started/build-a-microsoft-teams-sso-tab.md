@@ -249,7 +249,7 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 
 For SSO-mode, make sure to provide `sso-url` / `ssoUrl` and have it point to your backend API.
 
-# [npm](#tab/html)
+# [html](#tab/html)
 
 Add the `mgt-teams-msal2-provider` in your html
 
@@ -265,7 +265,7 @@ Add the `mgt-teams-msal2-provider` in your html
 
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application, replace the `auth-popup-url` with the full or relative path to your auth page, and replace `sso-url` with the full or relative path to your backend service.
 
-# [npm](#tab/js)
+# [js](#tab/js)
 
 To initialize the provider in your JavaScript code, import TeamsMsal2Provider and set the `globalProvider`.
 

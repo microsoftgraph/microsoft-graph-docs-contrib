@@ -84,7 +84,8 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 
 You can choose to initialize the provider in either your HTML or your JavaScript code. 
 
-### Initialize in HTML
+# [html](#tab/html)
+
 
 Add the `mgt-teams-msal2-provider` component to your HTML page as shown.
 
@@ -98,7 +99,8 @@ Add the `mgt-teams-msal2-provider` component to your HTML page as shown.
 
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application, and replace the `auth-popup-url` with the full or relative path to your auth page. 
 
-### Initialize in JavaScript
+# [js](#tab/js)
+
 
 To initialize the provider in your JavaScript code, add the following code to your application:
 
@@ -117,6 +119,7 @@ Providers.globalProvider = new TeamsMsal2Provider({
 ```
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application, and replace the `authPopupUrl` with the full or relative path to your auth page.
 
+---
 ## Add components
 
 Now, you're ready to add any of the Microsoft Graph Toolkit components. The first component you will likely need to add is the Login component.
