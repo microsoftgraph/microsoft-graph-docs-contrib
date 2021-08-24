@@ -1,18 +1,18 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: "Create columnDefinition in a list"
+title: "Create a columnDefinition in a list"
 description: "Create a list column."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create columnDefinition for a list
+# Create a columnDefinition in a list
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Create a column for a [list][list] by specifying a [columnDefinition][columnDefinition].
+Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
 ## Permissions
 
@@ -91,7 +91,6 @@ Content-type: application/json
     "maxLength": 255
   }
 }
-
 ```
 
   
