@@ -71,9 +71,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1
-
-Retrieve a list of BitLocker keys in the tenant.
+### Example 1: Retrieve a list of BitLocker keys in the tenant.
 
 #### Request
 
