@@ -148,15 +148,11 @@ Content-type: application/json
 ```
 
 In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.
-<<<<<<< HEAD
 
 ### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-=======
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
->>>>>>> ce60695a2474ceef943756e9bb39c2d4280b6373
+Note: The response object shown here may be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
