@@ -1,1 +1,70 @@
-
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "incidentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **incidentStatus** enumeration type.",
+          "Target": "incidentStatus"
+        },
+        {
+          "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "m365AlertClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the **m365AlertClassification** enumeration type.",
+          "Target": "m365AlertClassification"
+        },
+        {
+          "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "m365AlertDetermination",
+          "ChangeType": "Addition",
+          "Description": "Added the **m365AlertDetermination** enumeration type.",
+          "Target": "m365AlertDetermination"
+        },
+        {
+          "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "m365AlertSeverity",
+          "ChangeType": "Addition",
+          "Description": "Added the **m365AlertSeverity** enumeration type.",
+          "Target": "m365AlertSeverity"
+        },
+        {
+          "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "m365AlertComment",
+          "ChangeType": "Addition",
+          "Description": "Added the [m365AlertComment](https://docs.microsoft.com/en-us/graph/api/resources/m365AlertComment?view=graph-rest-beta) resource type.",
+          "Target": "m365AlertComment"
+        },
+        {
+          "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "incident",
+          "ChangeType": "Addition",
+          "Description": "Added the [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource",
+          "Target": "incident"
+        },
+        {
+          "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "security",
+          "ChangeType": "Addition",
+          "Description": "Added the [security](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource",
+          "Target": "security"
+        }
+      ],
+      "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-22T13:03:13.9213719Z",
+      "WorkloadArea": "Microsoft.M365.Defender",
+      "SubArea": ""
+    }
+  ]
+}
