@@ -1,27 +1,29 @@
 ---
 title: "Get crossTenantAccessPolicyConfigurationPartner"
-description: "Read the properties and relationships of a crossTenantAccessPolicyConfigurationPartner object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Read the properties and relationships of a partner specific configuration."
+author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get crossTenantAccessPolicyConfigurationPartner
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) object.
+Read the properties and relationships of a [partner specific](../resources/crosstenantaccesspolicyconfigurationpartner.md) configuration.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -29,19 +31,19 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
-GET /policyRoot/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigurationPartnerId}
+GET /policies/crossTenantAccessPolicy/partners/{id}
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -51,17 +53,19 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_crosstenantaccesspolicyconfigurationpartner"
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/policyRoot/crossTenantAccessPolicy/partners/{crossTenantAccessPolicyConfigurationPartnerId}
+GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9c5d131d-b1c3-4fc4-9e3f-c6557947d551
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -69,31 +73,30 @@ GET https://graph.microsoft.com/beta/policyRoot/crossTenantAccessPolicy/partners
   "@odata.type": "Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationPartner"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationPartner",
-    "inboundTrust": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
-    },
-    "b2bCollaborationOutbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "b2bCollaborationInbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "b2bDirectConnectOutbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "b2bDirectConnectInbound": {
-      "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
-    },
-    "tenantId": "String",
-    "isServiceProvider": "Boolean"
+  "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
+  "inboundTrust": null,
+  "b2bCollaborationInbound": null,
+  "b2bCollaborationOutbound": null,
+  "b2bDirectConnectOutbound": null,
+  "b2bDirectConnectInbound": 
+  {
+      "usersAndGroups": null,
+      "applications":
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+          "target" : "Office365",
+          "targetType: "application"
+        }
+      ]
+    }
   }
 }
 ```
-
