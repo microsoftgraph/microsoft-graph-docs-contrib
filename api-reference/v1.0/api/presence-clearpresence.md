@@ -11,8 +11,6 @@ ms.prod: "cloud-communications"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Clear the application's presence session for a user. If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
 
 For details about presences sessions, see [presence: setPresence](presence-setpresence.md#presence-sessions).
