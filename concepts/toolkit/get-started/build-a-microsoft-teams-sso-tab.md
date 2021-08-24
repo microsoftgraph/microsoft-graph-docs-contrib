@@ -99,7 +99,7 @@ Your tab needs to run as a registered Azure AD application to obtain an access t
     - `email`, `offline_access`, `openid`, `profile`, `User.Read`
     - Select **Add permissions** when done
 
-1. (OPTIONAL) If you want to pre-consent to any other scopes, you can add more permission at this step. If you use different components or plan to use other Microsoft Graph APIs, you may require additional permissions. See the [documentation](https://docs.microsoft.com/graph/toolkit/overview) for each component for details on required permissions.
+1. (OPTIONAL) If you want to pre-consent to any other scopes, you can add more permission at this step. If you use different components or plan to use other Microsoft Graph APIs, you may require additional permissions. See the [documentation](../overview.md) for each component for details on required permissions.
 
     - To pre-consent as an admin, select **Grant admin consent**, then select **Yes**
 
@@ -124,7 +124,7 @@ Your tab needs to run as a registered Azure AD application to obtain an access t
 
 ## Create the backend
 
-The backend could be any backend that enables exchanging the Microsoft Teams authentication token with a token that can be used to call Microsoft Graph via the [on-behalf-of flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow). 
+The backend could be any backend that enables exchanging the Microsoft Teams authentication token with a token that can be used to call Microsoft Graph via the [on-behalf-of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow). 
 
 Have a look at the [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node) for reference.
 

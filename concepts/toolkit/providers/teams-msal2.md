@@ -27,7 +27,7 @@ The provider can be used in interactive "client side auth" mode or Single Sign-O
 In client side authentication (or interactive authentication), the user will be asked to authenticate when they first launch the app. The user will need to use a login button to initiate the authentication flow which. However, this can be done all on the client and this process does not require a backend service. 
 
 ### Single Sign-On (SSO) authentication
-To avoid asking the user to authenticate to the app, [Microsoft Teams tabs can also leverage Single Sign On](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) to automatically authenticate users. However, this process requires a backend service that is used to exchange the Microsoft Teams provided token with an access token that can be used for accessing Microsoft Graph.
+To avoid asking the user to authenticate to the app, [Microsoft Teams tabs can also leverage Single Sign On](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) to automatically authenticate users. However, this process requires a backend service that is used to exchange the Microsoft Teams provided token with an access token that can be used for accessing Microsoft Graph.
 
 TeamsMsal2Provider support SSO mode which is enabled when `ssoUrl` \ `sso-url` are set to a backend service that is capable of exchanging the tokens. The backend service is required to expose an api (such as `api/token`) that will receive an authentication token from Microsoft Teams and use the `on-behalf-of` flow to exchange the token for an access token capable of accessing Microsoft Graph. For a reference implementation of a node backend service, checkout the [Microsoft Teams Node SSO sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab).
 
@@ -162,7 +162,6 @@ To migrate an application that's using Teams Provider to the Teams Msal2 Provide
     ```html
     <mgt-teams-msal2-provider client-id="<YOUR_CLIENT_ID>" auth-popup-url="/AUTH-PATH" ... ></mgt-teams-msal2-provider>
     ```
-    For details, see [Initialize in your HTML page](#initialize-in-your-html-page).
 
 ## See also
 * [Microsoft Teams Node SSO sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
