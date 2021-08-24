@@ -5,7 +5,7 @@ localization_priority: Normal
 author: simonagren
 ---
 
-# Build a Microsoft Teams SSO tab with the Microsoft Graph Toolkit
+# Build a Microsoft Teams Single Sign-On (SSO) tab with the Microsoft Graph Toolkit
 
 This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app with single sign-on (SSO) and does require a backend. For implementing a Teams tab with interactive login, see [Build a Microsoft Teams Tab](./build-a-microsoft-teams-tab.md).
 
@@ -210,7 +210,7 @@ app.listen(PORT, () => {
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams Msal2 Provider](../providers/teams-msal2.md) handles all of the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
-For SSO-mode, make sure to provide `sso-url` / `ssoUrl` and have it point to you backend API.
+For SSO-mode, make sure to provide `sso-url` / `ssoUrl` and have it point to your backend API.
 
 ### Initialize in HTML
 

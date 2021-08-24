@@ -670,7 +670,7 @@ items:
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Build a Microsoft Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
-              - name: Build a Microsoft Teams tab (SSO)
+              - name: Build a Microsoft Teams tab with Single Sign-On (SSO)
                 href: toolkit/get-started/build-a-microsoft-teams-sso-tab.md
               - name: Build an Electron app
                 href: toolkit/get-started/build-an-electron-app.md
