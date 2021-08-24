@@ -8540,7 +8540,7 @@
           "ApiChange":"Resource",
           "ChangedApiName":"samlOrWsFedExternalDomainFederation",
           "ChangeType":"Addition",
-          "Description":"Added the [samlOrWsFedExternalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-beta) resource type.",
+          "Description":"Added the [samlOrWsFedExternalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-beta) resource type, related methods, and operations.",
           "Target":"samlOrWsFedExternalDomainFederation"
         },
         {
