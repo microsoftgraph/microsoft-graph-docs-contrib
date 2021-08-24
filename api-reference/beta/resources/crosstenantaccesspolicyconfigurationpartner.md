@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyConfigurationPartner resource type"
-description: "**TODO: Add Description**"
+description: "The partner specific configuration for B2B collaboration and B2B direct connect inbound and outbound settings."
 author: "jkdouglas"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -21,8 +21,8 @@ Inherits from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenan
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List crossTenantAccessPolicyConfigurationPartners](../api/crosstenantaccesspolicyconfigurationpartner-list.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Get a list of all partner specific configurations.|
-|[Create crossTenantAccessPolicyConfigurationPartner](../api/crosstenantaccesspolicyconfigurationpartner-create.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Create a new partner specific configuration.|
+|[List partners](../api/crosstenantaccesspolicy-get.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Get a list of all partner specific configurations.|
+|[Create crossTenantAccessPolicyConfigurationPartner](../api/crosstenantaccesspolicy-post-partners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Create a new partner specific configuration.|
 |[Get crossTenantAccessPolicyConfigurationPartner](../api/crosstenantaccesspolicyconfigurationpartner-get.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Read the partner specific configuration settings.|
 |[Update crossTenantAccessPolicyConfigurationPartner](../api/crosstenantaccesspolicyconfigurationpartner-update.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Update the properties of a partner specific configuration.|
 |[Delete crossTenantAccessPolicyConfigurationPartner](../api/crosstenantaccesspolicyconfigurationpartner-delete.md)|None|Delete the partner specific configuration.|
