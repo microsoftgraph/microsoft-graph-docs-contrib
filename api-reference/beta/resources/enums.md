@@ -2489,7 +2489,7 @@ Possible values for user account types (group membership), per Windows definitio
 |blocked|
 |unknownFutureValue|
 
-### crossTenantAccessPolicyTargetType
+### crossTenantAccessPolicyTargetType values
 
 |Member|
 |:---|
