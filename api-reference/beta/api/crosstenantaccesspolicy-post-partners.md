@@ -82,10 +82,10 @@ Content-Type: application/json
   {
     "usersAndGroups": 
     {
-      "accessType": blocked,
+      "accessType": "blocked",
       "targets": [
         {
-            "target" : "g2",
+            "target" : "6f546279-4da5-4b53-a095-09ea0cef9971",
             "targetType: "group"
         }
       ]
@@ -95,7 +95,7 @@ Content-Type: application/json
   {
     "applications":
     {
-      "accessType": allowed,
+      "accessType": "allowed",
       "targets": [
         {
             "target" : "Office365",
@@ -128,26 +128,26 @@ Content-Type: application/json
   "b2bCollaborationOutbound": null,
   "b2bDirectConnectOutbound": 
   {
-    "usersAndGroups": 
+    "usersAndGroups":
     {
-      "accessType": blocked,
+      "accessType": "blocked",
       "targets": [
         {
-            "target" : "g2",
-            "targetType: "group"
+          "target" : "6f546279-4da5-4b53-a095-09ea0cef9971",
+          "targetType: "group"
         }
       ]
     }
   },
-  "b2bDirectConnectInbound": 
+  "b2bDirectConnectInbound":
   {
     "applications":
     {
-      "accessType": allowed,
+      "accessType": "allowed",
       "targets": [
         {
-            "target" : "Office365",
-            "targetType: "application"
+          "target" : "Office365",
+          "targetType: "application"
         }
       ]
     }

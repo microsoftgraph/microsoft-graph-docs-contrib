@@ -90,7 +90,7 @@ Content-Type: application/json
   {
     "usersAndGroups":
     {
-      "accessType": allowed,
+      "accessType": "allowed",
       "targets": [
         {
           "target" : "AllGroups",
@@ -104,7 +104,7 @@ Content-Type: application/json
     },
     "applications": [
     {
-      "accessType": allowed,
+      "accessType": "allowed",
       "targets": [
         {
           "target" : "AllApplications",
@@ -117,7 +117,7 @@ Content-Type: application/json
   {
     "usersAndGroups":
     {
-      "accessType": allowed,
+      "accessType": "allowed",
       "targets": [
         {
           "target" : "AllGroups",
@@ -131,7 +131,7 @@ Content-Type: application/json
     },
     "applications":
     {
-      "accessType": allowed,
+      "accessType": "allowed",
       "targets": [
         {
           "target" : "AllApplications",
@@ -144,7 +144,7 @@ Content-Type: application/json
   {
     "usersAndGroups":
     {
-      "accessType": blocked,
+      "accessType": "blocked",
       "targets": [
         {
           "target" : "AllGroups",
@@ -158,7 +158,7 @@ Content-Type: application/json
     },
     "applications":
     {
-      "accessType": blocked,
+      "accessType": "blocked",
       "targets": [
         {
           "target" : "AllApplications",
@@ -171,7 +171,7 @@ Content-Type: application/json
   {
     "usersAndGroups":
     {
-      "accessType": blocked,
+      "accessType": "blocked",
       "targets": [
         {
           "target" : "AllGroups",
@@ -185,7 +185,7 @@ Content-Type: application/json
     },
     "applications":
     {
-      "accessType": blocked,
+      "accessType": "blocked",
       "targets": [
         {
           "target" : "AllApplications",

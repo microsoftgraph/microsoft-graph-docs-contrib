@@ -91,7 +91,7 @@ Content-Type: application/json
           "usersAndGroups": null,
           "applications":
         {
-          "accessType": allowed,
+          "accessType": "allowed",
           "targets": [
             {
               "target" : "Office365",

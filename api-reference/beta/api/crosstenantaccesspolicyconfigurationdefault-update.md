@@ -80,7 +80,7 @@ Content-Type: application/json
   {
     "usersAndGroups":
     {
-      "accessType": blocked,
+      "accessType": "blocked",
       "targets": [
         {
           "target" : "0be493dc-cb56-4a53-936f-9cf64410b8b0",
@@ -90,7 +90,7 @@ Content-Type: application/json
     },
     "applications": [
     {
-      "accessType": blocked,
+      "accessType": "blocked",
       "targets": [
           {
             "target" : "AllApplications",
@@ -104,7 +104,7 @@ Content-Type: application/json
 ```
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
