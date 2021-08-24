@@ -65,7 +65,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are:`group`, `oneOnOne` and `meeting`.|
 | webUrl| String | A hyperlink that will go to the chat in Microsoft Teams. This URL should be treated as an opaque blob, and not parsed. Read-only.|
-| tenantId| String | The tenant identifier. Read-only.|
+| tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
 | viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Details of the online meeting if the chat is associated with an online meeting. Read-only.|
 

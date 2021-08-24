@@ -41,4 +41,4 @@ The following is a JSON representation of the resource.
 ```
 
 ## See also
-- [chat](chat.md)
+- [Chat](chat.md)
