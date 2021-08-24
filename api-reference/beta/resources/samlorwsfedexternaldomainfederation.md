@@ -31,7 +31,7 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the SAML/Ws-Fed based identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
+|displayName|String|The display name of the SAML or WS-Fed based IdP. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
 |id|String|The identifier of the identity provider. Inherited from [entity](../resources/entity.md).|
 |issuerUri|String|Issuer URI of the federation server. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |metadataExchangeUri|String|URI of the metadata exchange endpoint used for authentication from rich client applications. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
