@@ -1,27 +1,29 @@
 ---
 title: "crossTenantAccessPolicyConfigurationDefault: resetToSystemDefault"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "Reset any changes made to the default configuration in a cross tenant access policy back to the system default."
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # crossTenantAccessPolicyConfigurationDefault: resetToSystemDefault
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Reset any changes made to the default configuration in a cross tenant access policy back to the system default.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|
+|Delegated (personal Microsoft account)|Not applicable|
+|Application|Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
 
@@ -29,16 +31,19 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
-POST /policyRoot/crossTenantAccessPolicy/default/resetToSystemDefault
+POST /policies/crossTenantAccessPolicy/default/resetToSystemDefault
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -48,17 +53,19 @@ If successful, this action returns a `200 OK` response code and a Boolean in the
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "crosstenantaccesspolicyconfigurationdefault_resettosystemdefault"
 }
 -->
+
 ``` http
-POST https://graph.microsoft.com/beta/policyRoot/crossTenantAccessPolicy/default/resetToSystemDefault
+POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/resetToSystemDefault
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -66,12 +73,127 @@ POST https://graph.microsoft.com/beta/policyRoot/crossTenantAccessPolicy/default
   "@odata.type": "Edm.Boolean"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": "Boolean"
+  "isServiceDefault": true,
+  "inboundTrust":
+  {
+    "isMfaAccepted": false,
+    "isCompliantDeviceAccepted": false,
+    "isHybridAzureADJoinedDeviceAccepted": false,
+  },
+  "b2bCollaborationOutbound": 
+  {
+    "usersAndGroups": 
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+          "target" : "AllGroups",
+          "targetType: "group"
+        },
+        {
+          "target" : "AllUsers",
+          "targetType: "user"
+        }
+      ]
+    },
+    "applications": [
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+          "target" : "AllApplications",
+          "targetType: "application"
+        }
+      ]
+    ]
+  },
+  "b2bCollaborationInbound": 
+  {
+    "usersAndGroups": 
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+          "target" : "AllGroups",
+          "targetType: "group"
+        },
+        {
+          "target" : "AllUsers",
+          "targetType: "user"
+        }
+      ]
+    },
+    "applications":
+    {
+      "accessType": allowed,
+      "targets": [
+        {
+          "target" : "AllApplications",
+          "targetType: "application"
+        }
+      ]
+    }
+  },
+  "b2bDirectConnectOutbound": 
+  {
+    "usersAndGroups": 
+    {
+      "accessType": blocked,
+      "targets": [
+        {
+          "target" : "AllGroups",
+          "targetType: "group"
+        },
+        {
+          "target" : "AllUsers",
+          "targetType: "user"
+        }
+      ]
+    },
+    "applications":
+    {
+      "accessType": blocked,
+      "targets": [
+        {
+          "target" : "AllApplications",
+          "targetType: "application"
+        }
+      ]
+    }
+  },
+  "b2bDirectConnectInbound": 
+  {
+    "usersAndGroups": 
+    {
+      "accessType": blocked,
+      "targets": [
+        {
+          "target" : "AllGroups",
+          "targetType: "group"
+        },
+        {
+          "target" : "AllUsers",
+          "targetType: "user"
+        }
+      ]
+    },
+    "applications":
+    {
+      "accessType": blocked,
+      "targets": [
+        {
+          "target" : "AllApplications",
+          "targetType: "application"
+        }
+      ]
+    }
+  }
 }
 ```
 
