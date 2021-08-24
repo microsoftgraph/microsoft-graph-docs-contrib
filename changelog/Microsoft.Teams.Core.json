@@ -8,11 +8,11 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Added support for listing [chats](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-1.0) for a user in delegated context.",
+          "Description": "Added the [List chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-1.0) method to the [chats](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-1.0) resource that allows you to list chats for a user in delegated context.",
           "Target": "chat"
         }
       ],
-      "Id": "3b66e2c7-10a4-4965-a602-7be3081d8a28",
+      "Id": "efc25f28-5324-4493-bab5-525f84e9b4f2",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-07-09T16:05:49.407Z",
