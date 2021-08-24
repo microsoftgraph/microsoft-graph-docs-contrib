@@ -99,6 +99,7 @@ Content-Type: application/json
         ]
       ]
     }
+  }
 }
 ```
 

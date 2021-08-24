@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationDefault"
+  "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault"
 }
 -->
 

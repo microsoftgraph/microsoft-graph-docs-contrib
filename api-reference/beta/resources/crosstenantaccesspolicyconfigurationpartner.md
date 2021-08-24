@@ -21,7 +21,7 @@ Inherits from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenan
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List partners](../api/crosstenantaccesspolicy-get.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Get a list of all partner specific configurations.|
+|[List partners](../api/crosstenantaccesspolicy-list-partners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Get a list of all partner specific configurations.|
 |[Create crossTenantAccessPolicyConfigurationPartner](../api/crosstenantaccesspolicy-post-partners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Create a new partner specific configuration.|
 |[Get crossTenantAccessPolicyConfigurationPartner](../api/crosstenantaccesspolicyconfigurationpartner-get.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Read the partner specific configuration settings.|
 |[Update crossTenantAccessPolicyConfigurationPartner](../api/crosstenantaccesspolicyconfigurationpartner-update.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Update the properties of a partner specific configuration.|
@@ -50,7 +50,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
-  "baseType": "Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationBase",
+  "baseType": "microsoft.graph.crossTenantAccessPolicyConfigurationBase",
   "openType": false
 }
 -->

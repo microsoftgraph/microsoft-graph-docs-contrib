@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a Boolean in the response body.
+If successful, this action returns a `200 OK` response code and the [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) settings with `isServiceDefault` set to `true`.
 
 ## Examples
 
@@ -70,7 +70,7 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault"
 }
 -->
 
@@ -196,4 +196,3 @@ Content-Type: application/json
   }
 }
 ```
-

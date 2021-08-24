@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault",
-  "baseType": "Microsoft.DirectoryServices.crossTenantAccessPolicyConfigurationBase",
+  "baseType": "microsoft.graph.crossTenantAccessPolicyConfigurationBase",
   "openType": false
 }
 -->

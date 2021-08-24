@@ -120,6 +120,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "tenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
   "inboundTrust": null,
