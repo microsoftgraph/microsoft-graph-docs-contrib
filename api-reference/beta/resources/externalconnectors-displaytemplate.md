@@ -20,8 +20,8 @@ A display template enables the developer to define the appearance of the content
 |:---|:---|:---|
 |id|String|The text identifier for the display template. Example: contosoTickets|
 |layout|[microsoft.graph.Json](../resources/externalconnectors-intune-json.md)|The definition of the content's appearance, represented by an [Adaptive Card](https://docs.microsoft.com/en-us/adaptive-cards/authoring-cards/getting-started), which is a JSON-serialized card object model.|
-|priority|Int32|An integer that determines the order of evaluation with respect to other templates. The evaluation is sequenced from least to greatest priority e.g. a priority of 4 will be evaluated before a priority of 7. Note: Gaps in priority are supported. For example, if a template has priority 1 and another template has priority 3, they will still be evaluated from least to greatest - regardless of whether a template exists with priority 2.|
-|rules|[microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md) collection|These are a set of matching conditions that dictate when the template should be displayed. Rules are in the format of: "property (from the item schema)" + "operation" + "value(s)", with the option of specifying AND/OR in "valuesJoinedBy". For example, a rule could specify that "itemTitle" "contains" "contoso". Therefore, the template will not be displayed unless the item's "itemTitle" contained the value "contoso".|
+|priority|Int32|The integer priority of this display template. A display template with priority 1 is evaluated before that of a template of priority 4. Gaps in priority values are supported.|
+|rules|[microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md) collection|Specifies additional rules for selecting this display template based on the item schema. Optional.|
 
 ## Relationships
 None.
