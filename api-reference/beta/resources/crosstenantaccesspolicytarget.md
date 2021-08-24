@@ -68,7 +68,6 @@ When setting application targets, you can use the `AllMicrosoftApps` or `Office3
 | 69cad5fa-2338-4390-aa5d-1ca1fb39860a | Connector                                     |
 | 1996141e-2b07-4491-927a-5a024b335c78 | Microsoft Teams UIS                           |
 
-
 ## Properties
 
 |Property|Type|Description|

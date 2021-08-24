@@ -85,8 +85,8 @@ Content-Type: application/json
       "accessType": "blocked",
       "targets": [
         {
-            "target" : "6f546279-4da5-4b53-a095-09ea0cef9971",
-            "targetType: "group"
+            "target": "6f546279-4da5-4b53-a095-09ea0cef9971",
+            "targetType": "group"
         }
       ]
     }
@@ -98,8 +98,8 @@ Content-Type: application/json
       "accessType": "allowed",
       "targets": [
         {
-            "target" : "Office365",
-            "targetType: "application"
+            "target": "Office365",
+            "targetType": "application"
         }
       ]
     }

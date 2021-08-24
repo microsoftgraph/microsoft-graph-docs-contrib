@@ -2472,11 +2472,28 @@ Possible values for user account types (group membership), per Windows definitio
 |chunkFinished|
 |unknownFutureValue|
 
-### teamworkCallEventType values 
+### teamworkCallEventType values
 
 |Member|
 |:---|
 |call|
 |meeting|
 |screenShare|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType
+
+|Member|
+|:---|
+|user|
+|group|
+|application|
 |unknownFutureValue|
