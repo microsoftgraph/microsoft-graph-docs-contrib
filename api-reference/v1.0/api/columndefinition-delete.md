@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Delete columnDefinition"
-description: "Delete a column from a site, a list or a content type."
+description: "Delete a column from a site, a list, or a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 
-Remove a [column][columndefinition] from a [site][], a [list][] or a [content type][contentType].
+Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
 
 ## Permissions

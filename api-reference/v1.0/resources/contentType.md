@@ -26,7 +26,7 @@ Content types allow you to define a set of columns that must be present on every
 |[isPublished](../api/contenttype-ispublished.md)|Boolean| Checks if the [contentType](../resources/contenttype.md) is published.|
 |[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Publish a [contentType](../resources/contenttype.md).|
 |[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Unpublish a [contentType](../resources/contenttype.md).|
-|[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Add copy of a [contentType](../resources/contenttype.md) from a [site](../resources/site.md) to a [list](../resources/list.md)).|
+|[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Add copy of a [contentType](../resources/contenttype.md) from a [site](../resources/site.md) to a [list](../resources/list.md).|
 |[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Associates a [contentType](../resources/contenttype.md) with a list of hubsites.|
 |[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copy a file to default content location in a [contentType](../resources/contenttype.md).|
 |[List columns](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columnDefinition.md) collection|Get a collection of columns, represented as [columnDefinition](../resources/columnDefinition.md) resources, in a **contentType**.|

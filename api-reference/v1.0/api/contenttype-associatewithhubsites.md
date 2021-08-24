@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |-|-|-|
 |hubSiteUrls| Collection(string) |List of cannonical URLs to the hub sites where the content type needs to be enforced. Required.|
-|propagateToExistingLists| Boolean |If `true`, content types will be enforced on existing lists in the hub sites; otherwise, it will be applied only to newly created lists.|
+|propagateToExistingLists| Boolean |If `true`, content types will be enforced on existing lists in the hub sites; otherwise, it'll be applied only to newly created lists.|
 
 ## Response
 

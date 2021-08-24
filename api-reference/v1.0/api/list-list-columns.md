@@ -10,7 +10,7 @@ ms.prod: "sites-and-lists"
 # List columnDefinitions in a list
 Namespace: microsoft.graph
 
-Get the collection of columns, represented as [columnDefinition][columnDefinition] resources, in a [list][list].
+Get the collection of columns represented as [columnDefinition][columnDefinition] resources in a [list][list].
 
   
 

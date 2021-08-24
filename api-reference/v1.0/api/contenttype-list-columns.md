@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 
-Get the collection of columns, represented as [columnDefinition][columnDefinition] resources, in a [content type][contentType].
+Get the collection of columns represented as [columnDefinition][columnDefinition] resources in a [content type][contentType].
 
   
 

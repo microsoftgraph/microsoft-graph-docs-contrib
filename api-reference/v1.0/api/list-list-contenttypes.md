@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "List contentTypes in a list"
-description: "List content types in a list."
+description: "Get the collection of content types in a list."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"

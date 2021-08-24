@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "List columns in a site"
-description: "List columns in a site."
+description: "Get the collection of columns in a site."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 
-Get the collection of columns, represented as [columnDefinition][columnDefinition] resources, in a [site][site].
+Get the collection of columns represented as [columnDefinition][columnDefinition] resources in a [site][site].
 
   
 

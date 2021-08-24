@@ -1799,7 +1799,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "NavigationProperty",
+          "ApiChange": "Relationship",
           "ChangedApiName": "sourceColumn",
           "ChangeType": "Addition",
           "Description": "Added the **sourceColumn** relationship to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
@@ -1847,7 +1847,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "NavigationProperty",
+          "ApiChange": "Relationship",
           "ChangedApiName": "base",
           "ChangeType": "Addition",
           "Description": "Added the **base** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
@@ -1855,7 +1855,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "NavigationProperty",
+          "ApiChange": "Relationship",
           "ChangedApiName": "baseTypes",
           "ChangeType": "Addition",
           "Description": "Added the **baseTypes** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
@@ -1863,7 +1863,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "NavigationProperty",
+          "ApiChange": "Relationship",
           "ChangedApiName": "columnPositions",
           "ChangeType": "Addition",
           "Description": "Added the **columnPositions** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
@@ -1871,7 +1871,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "NavigationProperty",
+          "ApiChange": "Relationship",
           "ChangedApiName": "columns",
           "ChangeType": "Addition",
           "Description": "Added the **columns** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
@@ -1879,7 +1879,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "NavigationProperty",
+          "ApiChange": "Relationship",
           "ChangedApiName": "externalColumns",
           "ChangeType": "Addition",
           "Description": "Added the **externalColumns** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
@@ -1887,7 +1887,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "Action",
+          "ApiChange": "Method",
           "ChangedApiName": "addCopy",
           "ChangeType": "Addition",
           "Description": "Added the [addCopy](https://docs.microsoft.com/en-us/graph/api/addCopy?view=graph-rest-1.0) method to the [addCopy](https://docs.microsoft.com/en-us/graph/api/addCopy?view=graph-rest-1.0) resource.",
@@ -1895,7 +1895,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "Action",
+          "ApiChange": "Method",
           "ChangedApiName": "associateWithHubSites",
           "ChangeType": "Addition",
           "Description": "Added the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/associateWithHubSites?view=graph-rest-1.0) method to the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/associateWithHubSites?view=graph-rest-1.0) resource.",
@@ -1903,7 +1903,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "Action",
+          "ApiChange": "Method",
           "ChangedApiName": "copyToDefaultContentLocation",
           "ChangeType": "Addition",
           "Description": "Added the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/copyToDefaultContentLocation?view=graph-rest-1.0) method to the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/copyToDefaultContentLocation?view=graph-rest-1.0) resource.",
@@ -1911,7 +1911,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "Action",
+          "ApiChange": "Method",
           "ChangedApiName": "publish",
           "ChangeType": "Addition",
           "Description": "Added the [publish](https://docs.microsoft.com/en-us/graph/api/publish?view=graph-rest-1.0) method to the [publish](https://docs.microsoft.com/en-us/graph/api/publish?view=graph-rest-1.0) resource.",
@@ -1919,7 +1919,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "Action",
+          "ApiChange": "Method",
           "ChangedApiName": "unpublish",
           "ChangeType": "Addition",
           "Description": "Added the [unpublish](https://docs.microsoft.com/en-us/graph/api/unpublish?view=graph-rest-1.0) method to the [unpublish](https://docs.microsoft.com/en-us/graph/api/unpublish?view=graph-rest-1.0) resource.",
@@ -1927,7 +1927,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "Function",
+          "ApiChange": "Method",
           "ChangedApiName": "getApplicableContentTypesForList",
           "ChangeType": "Addition",
           "Description": "Added the [getApplicableContentTypesForList](https://docs.microsoft.com/en-us/graph/api/getApplicableContentTypesForList?view=graph-rest-1.0) method to the [getApplicableContentTypesForList](https://docs.microsoft.com/en-us/graph/api/getApplicableContentTypesForList?view=graph-rest-1.0) resource.",
@@ -1935,7 +1935,7 @@
         },
         {
           "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "Function",
+          "ApiChange": "Method",
           "ChangedApiName": "isPublished",
           "ChangeType": "Addition",
           "Description": "Added the [isPublished](https://docs.microsoft.com/en-us/graph/api/isPublished?view=graph-rest-1.0) method to the [isPublished](https://docs.microsoft.com/en-us/graph/api/isPublished?view=graph-rest-1.0) resource.",

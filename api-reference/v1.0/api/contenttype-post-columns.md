@@ -12,7 +12,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 
-Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
+Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 
 ## Permissions
 

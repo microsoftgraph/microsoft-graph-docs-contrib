@@ -1308,25 +1308,25 @@ Possible values for user account types (group membership), per Windows definitio
 
 |Member|Description|
 |:-------|:------
-|note| multiline text. |
-|text | single line text. |
-|choice | choice column |
-|multichoice | multichoice column. |
-|number | number column. |
-|currency | currency column. |
-|dateTime | dateTime column. |
-|lookup | lookup column. |
+|note| Multiline text. |
+|text | Single line text. |
+|choice | Choice column |
+|multichoice | Multichoice column. |
+|number | Number column. |
+|currency | Currency column. |
+|dateTime | DateTime column. |
+|lookup | Lookup column. |
 |boolean | Yes/No column. |
-|user | person or group column. |
-|url | hyperlink or picture column. |
-|calculated | calculated column. |
-|location | location column. |
-|geolocation | geolocation column. |
-|term | managed metadata column. |
-|multiterm | managed metadata column accepting multiple values. |
+|user | Person or group column. |
+|url | Hyperlink or picture column. |
+|calculated | Calculated column. |
+|location | Location column. |
+|geolocation | Geolocation column. |
+|term | Managed metadata column. |
+|multiterm | Managed metadata column accepting multiple values. |
 |thumbnail | Image column. |
 |approvalStatus | Content approval status column. |
-|unknownFutureValue | unknownFuturevalue |
+|unknownFutureValue | UnknownFuturevalue |
 
 ### permissionClassificationType values
 
