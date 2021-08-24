@@ -27,7 +27,7 @@ None.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|conditionalAccess|[conditionalaccessroot](conditionalaccessroot.md)|It is the entry point for the Conditional Access object model|
+|conditionalAccess|conditionalaccessroot|It is the entry point for the Conditional Access object model|
 |apiConnectors|[Collection of apiConnectors](identityApiConnector.md)|Represents entry point for API connectors.|
 |b2xUserFlows|[Collection of b2xIdentityUserFlow](b2xIdentityUserFlow.md)| Represents entry point for B2X/self-service sign-up identity userflows.|
 |identityProvider|[Collection of identityProviderBase](identityProviderBase.md)| Represents entry point for identity provider base.|
