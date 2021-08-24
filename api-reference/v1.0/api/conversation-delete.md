@@ -40,7 +40,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 ### Request
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {

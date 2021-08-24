@@ -48,7 +48,7 @@ If successful, this method returns `201 Created` response code and a [conversati
 
 ## Example
 ### Request
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
