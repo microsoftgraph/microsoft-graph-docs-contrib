@@ -13,23 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuration details for setting up a SAML or Ws-Fed based identity provider.
-
-This is an abstract type.
+An abstract type that provides configuration details for setting up a SAML or WS-Fed external domain based identity provider (IdP).
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
-## Methods
-<!-- 
-|Method|Return type|Description|
-
-|:---|:---|:---|
-|[List samlOrWsFedProviders](../api/samlorwsfedprovider-list.md)|[samlOrWsFedProvider](../resources/samlorwsfedprovider.md) collection|Get a list of the [samlOrWsFedProvider](../resources/samlorwsfedprovider.md) objects and their properties.|
-|[Create samlOrWsFedProvider](../api/samlorwsfedprovider-create.md)|[samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|Create a new [samlOrWsFedProvider](../resources/samlorwsfedprovider.md) object.|
-|[Get samlOrWsFedProvider](../api/samlorwsfedprovider-get.md)|[samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|Read the properties and relationships of a [samlOrWsFedProvider](../resources/samlorwsfedprovider.md) object.|
-|[Update samlOrWsFedProvider](../api/samlorwsfedprovider-update.md)|[samlOrWsFedProvider](../resources/samlorwsfedprovider.md)|Update the properties of a [samlOrWsFedProvider](../resources/samlorwsfedprovider.md) object.|
-|[Delete samlOrWsFedProvider](../api/samlorwsfedprovider-delete.md)|None|Deletes a [samlOrWsFedProvider](../resources/samlorwsfedprovider.md) object.|
--->
 ## Properties
 
 |Property|Type|Description|
@@ -39,8 +26,10 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 |issuerUri|String|Issuer URI of the federation server.|
 |metadataExchangeUri|String|URI of the metadata exchange end point used for authentication from rich client applications.|
 |passiveSignInUri|String|URI that web-based clients are directed to when signing in to AAD services.|
+|metadataExchangeUri|String|URI of the metadata exchange endpoint used for authentication from rich client applications.|
+|passiveSignInUri|String|URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.|
 |preferredAuthenticationProtocol|String|Preferred authentication protocol. Supported values include `saml` or `wsfed`.|
-|signingCertificate|String|Current certificate used to sign tokens passed to the AAD Identity platform. Formatted as Base64 encoded strings of the public portion of the federated IDP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Usually, certificates are updated via an auto-rollover process; AAD attempts to retrieve a new certificate from the federation service metadata 30 days before expiry of the current certificate. If a new certificate is not available at the time, AAD will continue to monitor the metadata daily and will update the federation settings for the domain when a new certificate is available. The signingCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated.|
+|signingCertificate|String|Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.  <br/><br/> This property is used in the following scenarios: <ul><li> if a rollover is required outside of the autorollover update <li>a new federation service is being set up <li> if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated. </ul> <br/><br/> Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.|
 
 ## Relationships
 None.
