@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Search across a SharePoint tenant for [sites][] that match keywords provided.
 
+The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
+
 [sites]: ../resources/site.md
 
 ## Permissions
@@ -30,33 +32,39 @@ One of the following permissions is required to call this API. To learn more, in
 >**Note:** This method does not support the Sites.Selected application permission.
 
 ## HTTP request
-```http
-GET /sites?$search={query}
+
+<!-- { "blockType": "ignored" } -->
+
+``` http
+GET /sites?search={query}
 ```
 
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?$search={query}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+## Request body
+Do not supply a request body for this method.
 
 ## Response
 
+If successful, this method returns a `200 OK` response code and the collection of [site](../resources/site.md) objects in the response body.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "list_permission"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/sites?search={query}
+```
+
+### Response
+**Note:** The response object shown here might be shortened for readability.
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
 ```http
@@ -85,12 +93,7 @@ Content-type: application/json
 }
 ```
 
-## Remarks 
-
-The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
-
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -98,5 +101,4 @@ The only property that works for sorting is **createdDateTime**. The search filt
   "tocPath": "Sites/Search",
   "suppressions": [
   ]
-}
--->
+} -->
