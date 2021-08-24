@@ -11290,6 +11290,40 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Update
               href: api/authenticationcontextclassreference-update.md
+        - name: Cross tenant access settings
+          items:
+          - name: Cross tenant access policy
+            items:
+            - name: Cross tenant access policy
+              href: resources/crosstenantaccesspolicy.md
+            - name: Get cross tenant access policy
+              href: api/crosstenantaccesspolicy-get.md
+            - name: Update cross tenant access policy
+              href: api/crosstenantaccesspolicy-update.md
+          - name: Cross tenant access default settings
+            items:
+            - name: Cross tenant access default settings
+              href: resources/crosstenantaccesspolicyconfigurationdefault.md
+            - name: Get default settings
+              href: api/crosstenantaccesspolicyconfigurationdefault-get.md
+            - name: Update default settings
+              href: api/crosstenantaccesspolicyconfigurationdefault-update.md
+            - name: Reset to system default
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+          - name: Cross tenant access partner settings
+            items:
+            - name: Cross tenant access partner settings
+              href: resources/crosstenantaccesspolicyconfigurationpartner.md
+            - name: List partner settings
+              href: api/crosstenantaccesspolicy-list-partners.md
+            - name: Create partner settings
+              href: api/crosstenantaccesspolicy-post-partners.md
+            - name: Get partner settings
+              href: api/crosstenantaccesspolicyconfigurationpartner-get.md
+            - name: Update partner settings
+              href: api/crosstenantaccesspolicyconfigurationpartner-update.md
+            - name: Delete partner settings
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
