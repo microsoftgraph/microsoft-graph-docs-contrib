@@ -5,14 +5,21 @@ localization_priority: Normal
 author: amrutha95
 ---
 
-# MSAL 2  provider
+# Msal2Provider
 
-The MSAL 2 provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
+The Msal2Provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
+
 To learn more, see [providers](./providers.md).
+
+## Difference between Msal2Provider and MsalProvider
+Although the usage is very similar, MsalProvider and Msal2Provider are built on top of different OAuth flows. MsalProvider is built on top of msal.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
+Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, so we recommend usage of Msal2Provider over MsalProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+
+All new applications should use Msal2Provider whenever possible. 
 
 ## Get started
 
-You can initialize the MSAL 2.0 provider in HTML or JavaScript.
+You can initialize the Msal2Provider in HTML or JavaScript.
 
 ### Initialize in your HTML page
 
@@ -63,11 +70,7 @@ You can provide more options by initializing the provider in JavaScript.
 
 For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
 
-## Difference between Msal2Provider and MsalProvider
-Although the usage is very similar, MsalProvider and Msal2Provider are built on top of different OAuth flows. MsalProvider is built on top of MSAL.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
-Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, so we recommend usage of MSAL2Provider over MSALProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
-
-## Migrating from MSAL Provider to MSAL 2 Provider
+## Migrating from MsalProvider to Msal2Provider
 To migrate an application that's using MSAL provider to the MSAL 2 Provider:
 1. Go to the Azure portal at https://portal.azure.com.
 1. From the menu, select **Azure Active Directory**.

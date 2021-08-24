@@ -21,9 +21,9 @@ Getting started involves the following steps:
 
 ## Add the Microsoft Graph Toolkit
 
-You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
+You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm packages. To use the Toolkit, you will also need the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
 
-### Use via mgt-loader
+# [unpkg](#tab/unpkg)
 To use the Toolkit and the Teams SDK via the loaders, add the reference in a script to your code:
 
 ```html
@@ -32,19 +32,23 @@ To use the Toolkit and the Teams SDK via the loaders, add the reference in a scr
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 ```
 
-### Use via npm (ES6 modules)
+# [npm](#tab/npm)
 Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm packages for both the Toolkit and the Microsoft Teams SDK to your project:
 
 ```cmd
-npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider
+npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider @microsoft/mgt-components
 ```
+
+---
 
 ## Create the auth popup page
 
-If you need a user to consent to a permission, you need to provide a URL that the Teams app will open in a popup to follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsMsal2Provider.handleAuth()` method.
+Unless your application is pre-consented by an admin, your users might need to consent to permissions. To enable this, you will need to provide a page that the Teams app will open in a popup to follow the authentication flow. You can have the path to the page be anything as long as it is in the same domain as your app (for example, https://yourdomain.com/tabauth). The only requirement for this page is to call the `TeamsMsal2Provider.handleAuth()` method, but you can add any content or loading progress you wish.
 
-You can do this by adding a new `auth.html` file (which should be at the same level as `index.html`) and adding the following code:
 
+Here is an example of basic page that handles the auth flow in the popup.
+
+# [unpkg](#tab/unpkg)
 ```html
 <!DOCTYPE html>
 <html>
@@ -60,9 +64,63 @@ You can do this by adding a new `auth.html` file (which should be at the same le
   </body>
 </html>
 ```
+# [npm](#tab/npm)
+```js
+import { TeamsMsal2Provider } from '@microsoft/mgt-teams-msal2-provider';
+
+TeamsMsal2Provider.handleAuth();
+```
+
+---
 
 ## Creating an app/client ID
-Have a look at the section [Creating the AAD registration](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/main/samples/teams-sso-node/readme.md#creating-the-aad-registration) from the `readme` of the [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node). This involves registering the AAD application and configuring it for SSO.
+Your tab needs to run as a registered Azure AD application to obtain an access token from Azure AD. Register the app in your tenant and give Microsoft Teams permission to obtain access tokens on its behalf:
+
+1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com). Log in using a **personal account** (aka: Microsoft Account) or **Work or School Account**.
+
+1. Select **Azure Active Directory** in the left-hand navigation, then select **App registrations** under **Manage**.
+
+1. Select **New registration**. On the **Register an application** page, set the values as follows.
+
+    - Set **Name** to `Node.js Teams SSO` (or a name of your choice).
+    - Set **Supported account types** to **Accounts in any organizational directory and personal Microsoft accounts**.
+    - Under **Redirect URI**, set the first drop-down to `Single Page Application` and set the value to the auth page url you created in the previous step. Ex: `https://myapp.ngrok.io/tabauth`. 
+
+1. From the app overview page, copy the value of the **Application (client) ID** for later. You will need this value when you create a new provider and in your backend.
+
+1. Navigate to **Certificates & secrets** under **Manage**. Select the **New client secret** button. Enter a value in **Description** and select one of the options for **Expires** and select **Add**.
+
+1. Copy the client secret value before you leave this page. You will need this for your backend service.
+
+    > **IMPORTANT**
+    > This client secret is never shown again, so make sure you copy it now.
+
+1. Navigate to **API permissions** under **Manage**. Select **Add a permission** > **Microsoft Graph** > **Delegated permissions**, then add the following permissions   
+    - `email`, `offline_access`, `openid`, `profile`, `User.Read`
+    - Select **Add permissions** when done
+
+1. (OPTIONAL) If you want to pre-consent to any other scopes, you can add more permission at this step. If you use different components or plan to use other Microsoft Graph APIs, you may require additional permissions. See the [documentation](https://docs.microsoft.com/graph/toolkit/overview) for each component for details on required permissions.
+
+    - To pre-consent as an admin, select **Grant admin consent**, then select **Yes**
+
+1. Navigate to **Expose an API** under **Manage**. On the top of the page next to `Application ID URI` select **Set**. This generates an API in the form of: `api://{AppID}`. Update it to add your subdomain, ex: `api://myapp.ngrok.io/{appID}`
+
+1. On the same page, select **Add a scope**. Fill in the fields as follows and select **Add scope**.
+
+    - Scope name: `access_as_user`
+    - Who can consent?: **Admins and users**
+    - Admin consent display name: `Teams can access the user’s profile`
+    - Admin consent description: `Allows Teams to call the app’s web APIs as the current user`
+    - User consent display name: `Teams can access the user profile and make requests on the user's behalf`
+    - User consent description: `Enable Teams to call this app’s APIs with the same rights as the user.`
+    - State: **Enabled**
+    
+    Your API URL should look like this: `api://myapp.ngrok.io/{appID}/access_as_user`. 
+
+1. Next, add two client applications. This is for the Teams desktop/mobile clients and the web client. Under the **Authorized client applications** section, select **Add a client application**. Fill in the Client ID and select the scope we created. Then select **Add application**. Do this for the followings Ids
+    
+    - 5e3ce6c0-2b1f-4285-8d4b-75ee78787346
+    - 1fec8e78-bce4-4aaf-ab1b-5451cc387264
 
 ## Create the backend
 
@@ -70,27 +128,20 @@ The backend could be any backend that enables exchanging the Microsoft Teams aut
 
 Have a look at the [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node) for reference.
 
-### Server folder
-At the app root, create a folder named **server** (the same level as the **tabs** folder). Inside of the folder, create and copy the values from the sample:
-
-1. `package.json`
-2. `tsconfig.ts`
-3. `.env`
-  - Set **CLIENT_ID** to the client ID of your application
-  - Set the **APP_SECRET** you created
-
-### Src folder
-Create a folder named **src** inside of the **server** folder. Inside of the new folder, create:
-
-1. `auth.ts`
-Add the following code to the file:
+Below is a reference implementation of a node express server:
 
 ```ts
+import dotenv from 'dotenv';
+import express from 'express';
+import path from 'path';
 import * as msal from '@azure/msal-node';
 import { NextFunction, Request, Response } from 'express';
 import jwt, { JwtHeader, SigningKeyCallback } from 'jsonwebtoken';
 import jwksClient from 'jwks-rsa';
 import jwt_decode from 'jwt-decode';
+
+// Load .env file
+dotenv.config();
 
 /**
  * Validates a JWT
@@ -98,7 +149,7 @@ import jwt_decode from 'jwt-decode';
  * @param {Response} res - The outgoing response
  * @returns {Promise<string | null>} - Returns the token if valid, returns null if invalid
  */
-export function validateJwt(req: Request, res: Response, next: NextFunction): void {
+function validateJwt(req: Request, res: Response, next: NextFunction): void {
   const authHeader = req.headers.authorization!;
   const ssoToken = authHeader.split(' ')[1];
   if (ssoToken) {
@@ -139,7 +190,7 @@ function getSigningKey(header: JwtHeader, callback: SigningKeyCallback): void {
  * @param authHeader - The Authorization header value containing a JWT bearer token
  * @returns {Promise<string | null>} - Returns the access token if successful, null if not
  */
-export async function getAccessTokenOnBehalfOf(req: Request, res: Response): Promise<void> {
+async function getAccessTokenOnBehalfOf(req: Request, res: Response): Promise<void> {
   // The token has already been validated, just grab it
   const authHeader = req.headers.authorization!;
   const ssoToken = authHeader.split(' ')[1];
@@ -170,21 +221,10 @@ export async function getAccessTokenOnBehalfOf(req: Request, res: Response): Pro
     }
   }
 }
-```
 
-2. `server.ts`
-Add the following code to the file:
-
-```ts
-import dotenv from 'dotenv';
-import express from 'express';
-import path from 'path';
-import { getAccessTokenOnBehalfOf, validateJwt } from './auth';
-
-var cors = require('cors');
-
-// Load .env file
-dotenv.config();
+////////////////////////
+// create and run server
+////////////////////////
 
 const app = express();
 const PORT = process.env.port || process.env.PORT || 8000;
@@ -192,9 +232,6 @@ const PORT = process.env.port || process.env.PORT || 8000;
 // Support JSON payloads
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'client')));
-
-// enable cors for localhost for this sample
-app.use(cors());
 
 // An example for using POST and with token validation using middleware
 app.post('/api/token', validateJwt, async (req, res) => {
@@ -208,29 +245,29 @@ app.listen(PORT, () => {
 
 ## Initialize the Teams Msal2 Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams Msal2 Provider](../providers/teams-msal2.md) handles all of the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph. To learn more, see [Using the providers](../providers/providers.md). The [Teams Msal2 Provider](../providers/teams-msal2.md) handles all of the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
 For SSO-mode, make sure to provide `sso-url` / `ssoUrl` and have it point to your backend API.
 
-### Initialize in HTML
+# [npm](#tab/html)
 
-Add the `mgt-teams-msal2-provider` into the HTML `<body>`
+Add the `mgt-teams-msal2-provider` in your html
 
 ```html
 <mgt-teams-msal2-provider 
   client-id="<YOUR_CLIENT_ID>"
-  auth-popup-url="/auth.html"
-  scopes="user.read,user.read.all,mail.readBasic,people.read.all,sites.read.all,user.readbasic.all,contacts.read,presence.read,presence.read.all,tasks.readwrite,tasks.read"
+  auth-popup-url="/tabauth"
+  scopes="User.Read,Mail.ReadBasic"
   sso-url="http://localhost:8000/api/token"
   http-method="POST"
   ></mgt-teams-msal2-provider>
 ```
 
-Replace `<YOUR_CLIENT_ID>` with the client ID for your application. 
+Replace `<YOUR_CLIENT_ID>` with the client ID for your application, replace the `auth-popup-url` with the full or relative path to your auth page, and replace `sso-url` with the full or relative path to your backend service.
 
-### Initialize in JavaScript
+# [npm](#tab/js)
 
-To initialize the provider in your JavaScript code, import the Teams Provider and initialize the provider.
+To initialize the provider in your JavaScript code, import TeamsMsal2Provider and set the `globalProvider`.
 
 ```ts
 import {Providers} from '@microsoft/mgt-element';
@@ -241,13 +278,15 @@ TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
 
 Providers.globalProvider = new TeamsMsal2Provider({
   clientId: `<YOUR_CLIENT_ID>`,
-  authPopupUrl: '/auth.html',
-  scopes: ['user.read','user.read.all','mail.readBasic','people.read.all','sites.read.all','user.readbasic.all','contacts.read','presence.read','presence.read.all','tasks.readwrite','tasks.read'],
+  authPopupUrl: '/tabauth',
+  scopes: ['User.Read','Mail.ReadBasic'],
   ssoUrl: 'http://localhost:8000/api/token',
   httpMethod: HttpMethod.POST
 });
 ```
-Replace `<YOUR_CLIENT_ID>` with the client ID for your application.
+Replace `<YOUR_CLIENT_ID>` with the client ID for your application, replace the `authPopupUrl` with the full or relative path to your auth page, and replace `ssoUrl` with the full or relative path to your backend service.
+
+---
 
 ## Add components
 
@@ -259,32 +298,10 @@ You can add components to your HTML as you normally would. For example, to add t
 <mgt-person person-query="me"></mgt-person>
 ```
 
-Or, you can add the components in JSX. We recommend using the `mgt-react` library. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
+If you are using React, we recommend using the React components instead from the `mgt-react` library. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
 
-First, install `mgt-react`:
-
-```Command Line
-npm install @microsoft/mgt-react
-```
-
-Import the components you want to use from the `mgt-react` library. For example, to add the `Person` component use:
-
-```JavaScript
-import { Person } from "@microsoft/mgt-react"
-```
-
-Then, add the the component to the `return()` statement of the `render()` method:
-
-```JavaScript
-render() {
-  return(
-    <Person personQuery="me" />
-  );
-}
-```
-
-## Test your application
-Have a look at the section [Creating a Teams App](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/main/samples/teams-sso-node/readme.md#creating-a-teams-app) from the `readme` of the [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node).
+## Test the sample
+Take a look at the [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node) for the full implementation.
 
 If everything has been configured correctly, you will see the `Person` component rendered without the need to log in.
 > IMPORTANT! If you haven't pre-consented, you might have to consent via a dialog prompt. 

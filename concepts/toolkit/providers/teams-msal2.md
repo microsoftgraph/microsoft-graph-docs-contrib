@@ -1,27 +1,43 @@
 ---
-title: "Teams Msal2 provider"
-description: "Use the Teams Msal2 provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive login"
+title: "TeamsMsal2Provider"
+description: "Use the TeamsMsal2Provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive login"
 localization_priority: Normal
 author: simonagren
 ---
 
-# Teams Msal2 provider
+# TeamsMsal2Provider
 
-Use the Teams Msal2 provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive login
+Use the TeamsMsal2Provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive login.
+
 To learn more, see [providers](./providers.md).
 
->**Tip:** For details about how to get started with creating a Microsoft Teams application with the Teams SSO Provider, see the [Build a Microsoft Teams SSO tab](../get-started/build-a-microsoft-teams-sso-tab.md) getting started guide.
+>**Tip:** For details about how to get started with creating a Microsoft Teams application with the Teams Msal2 Provider, see [Build a Microsoft Teams tab](../get-started/build-a-microsoft-teams-tab.md) and [Build a Microsoft Teams tab with SSO](../get-started/build-a-microsoft-teams-sso-tab.md) getting started guides.
 
+
+### Difference between TeamsProvider and TeamsMsal2Provider
+Unlike TeamsProvider, the TeamsMsal2Provider support Single Sign-On (SSO) and is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) for client side authentication. [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE. Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, so we recommend usage of TeamsMsalProvider over TeamsProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+
+All new applications should use TeamsMsal2Provider whenever possible. 
 
 ## Get started
 
-Before using the Teams SSO provider, you will need to make sure you have referenced the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk) in your page.
+The provider can be used in interactive "client side auth" mode or Single Sign-On (SSO) mode. 
+
+### Client side authentication
+In client side authentication (or interactive authentication), the user will be asked to authenticate when they first launch the app. The user will need to use a login button to initiate the authentication flow which. However, this can be done all on the client and this process does not require a backend service. 
+
+### Single Sign-On (SSO) authentication
+To avoid asking the user to authenticate to the app, [Microsoft Teams tabs can also leverage Single Sign On](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) to automatically authenticate users. However, this process requires a backend service that is used to exchange the Microsoft Teams provided token with an access token that can be used for accessing Microsoft Graph.
+
+TeamsMsal2Provider support SSO mode which is enabled when `ssoUrl` \ `sso-url` are set to a backend service that is capable of exchanging the tokens. The backend service is required to expose an api (such as `api/token`) that will receive an authentication token from Microsoft Teams and use the `on-behalf-of` flow to exchange the token for an access token capable of accessing Microsoft Graph. For a reference implementation of a node backend service, checkout the [Microsoft Teams Node SSO sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab).
 
 ### Initialize the provider
-Initialize the Teams SSO provider in your main code. The provider can be used in interactive "client side auth" mode or SSO mode. SSO mode is enabled by setting `ssoUrl` \ `sso-url` and requires a backend service to handle the on-behalf-of flow.
+Before using the TeamsMsal2Provider, you will need to make sure you have referenced the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk) in your page.
+
+Initialize the TeamsMsal2Provider in your main code.
 
 # [npm](#tab/ts)
-When initializing the Teams SSO provider in JavaScript, make sure to install both the toolkit and the Microsoft Teams SDK.
+When initializing the TeamsMsal2Provider in JavaScript, make sure to install both the toolkit and the Microsoft Teams SDK.
 
 ```cmd
 npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider
@@ -70,7 +86,6 @@ export interface TeamsMsal2Config {
 ></mgt-teams-msal2-provider>
 ```
 
-### mgt-teams-msal2-provider attributes
 | Attribute | Description |
 | --- | --- |
 | client-id   | String client ID (see [Configure your Teams app](#configure-your-teams-app). Required. |
@@ -79,11 +94,11 @@ export interface TeamsMsal2Config {
 | authority    | Authority string. The default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | sso-url  | Absolute or relative path to the backend API that handles the OBO token exchange. Optional. |
 | http-method  | Type of HTTP Method to use for calling the backend API. `POST` or `GET`. Default is `GET`. Optional |
----
 
+---
 ### Create the popup page
 
-In order to sign in with your Teams credentials and handle consent, you need provide a URL that the Teams app will open in a popup, which will follow the authentication flow. Create a new page in your application (ex: https://mydomain.com/auth) that will handle the auth redirect and call the `TeamsSSOProvider.handleAuth` method. That's the only thing that this page needs to do. For example:
+In order to sign in with your Teams credentials and handle consent, you need provide a URL that the Teams app will open in a popup, which will follow the authentication flow. Create a new page in your application (ex: https://mydomain.com/auth) that will handle the auth redirect and call the `TeamsMsal2Provider.handleAuth` method. That's the only thing that this page needs to do. For example:
 
 # [npm](#tab/ts)
 
@@ -96,8 +111,6 @@ TeamsMsal2Provider.handleAuth();
 ```
 
 # [unpkg](#tab/html)
-
-You could also initialize the Teams Msal2 provider in HTML. Use the `mgt-teams-msal2-provider` component to set the properties. **client-id** and **auth-popup-url** are required.
 
 ```html
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
@@ -115,11 +128,10 @@ If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams
 
 ### Creating an app/client ID
 
-For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
+For details about how to register an app and get a client ID for interactive authentication, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
 
 
-### Difference between Teams Provider and Teams Msal2 Provider
-Teams Provider makes use of MSAL Provider, while TeamsMsal2Provider makes use of the newer MSAL2Provider. Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE. Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, so we recommend usage of TeamsSSOProvider over TeamsProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+For details about how to register an app and get a client ID and secret for Single Sign-On, see [Build a Microsoft Teams tab with Single Sign-On](../get-started/build-a-microsoft-teams-sso-tab.md)
 
 ## Migrating from TeamsProvider to TeamsMsal2Provider
 To migrate an application that's using Teams Provider to the Teams Msal2 Provider:
@@ -155,3 +167,4 @@ To migrate an application that's using Teams Provider to the Teams Msal2 Provide
 ## See also
 * [Microsoft Teams Node SSO sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
 * [Build a Microsoft Teams tab](../get-started/build-a-microsoft-teams-tab.md)
+* [Build a Microsoft Teams tab with Single Sign-On](../get-started/build-a-microsoft-teams-sso-tab.md)

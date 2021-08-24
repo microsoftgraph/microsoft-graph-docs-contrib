@@ -20,9 +20,9 @@ Getting started involves the following steps:
 
 ## Add the Microsoft Graph Toolkit
 
-You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
+You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm packages. To use the Toolkit, you will also need the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
 
-### Use via mgt-loader
+# [unpkg](#tab/unpkg)
 To use the Toolkit and the Teams SDK via the loaders, add the reference in a script to your code:
 
 ```html
@@ -31,19 +31,22 @@ To use the Toolkit and the Teams SDK via the loaders, add the reference in a scr
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 ```
 
-### Use via npm (ES6 modules)
+# [npm](#tab/npm)
 Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm packages for both the Toolkit and the Microsoft Teams SDK to your project:
 
 ```cmd
-npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider
+npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider @microsoft/mgt-components
 ```
+
+---
 
 ## Create the auth popup page
 
-In order to allow users to sign in, you need to provide a URL that the Teams app will open in a popup to follow the authentication flow. The URL needs to be in your domain, and all this page needs to do is call the `TeamsMsal2Provider.handleAuth()` method.
+In order to allow users to sign in, you will need a page in your app that Teams will open in a popup to follow the authentication flow. You can have the path to the page be anything as long as it is in the same domain as your app (for example, https://yourdomain.com/tabauth). The only requirement for this page is to call the `TeamsMsal2Provider.handleAuth()` method, but you can add any content or loading progress you wish.
 
-Here is an example of an `auth.html` page that handles the auth flow in the popup:
+Here is an example of basic page that handles the auth flow in the popup.
 
+# [unpkg](#tab/unpkg)
 ```html
 <!DOCTYPE html>
 <html>
@@ -59,13 +62,21 @@ Here is an example of an `auth.html` page that handles the auth flow in the popu
   </body>
 </html>
 ```
+# [npm](#tab/npm)
+```js
+import { TeamsMsal2Provider } from '@microsoft/mgt-teams-msal2-provider';
+
+TeamsMsal2Provider.handleAuth();
+```
+
+---
 
 ## Creating an app/client ID
 To get a client ID, you need to register an Azure Active Directory application. Follow the steps in the [Create an Azure Active Directory app](./add-aad-app-registration.md) article.
 
-Make sure to set the `redirect URI` in your app registration to point to your auth.html page. For example, if you are running your app on localhost:3000, set the redirect URI to https://localhost:3000/auth.html.
+Make sure to set the `redirect URI` in your app registration to point to the auth page you created in the previous step. For example, https://localhost:3000/tabauth.
 
-> Note: Make sure to set the `redirect URI` as a `Single Page Application`. Teams Msal2 Provider makes use of Msal2 Provider behind the scenes.
+> Note: Make sure to set the `redirect URI` as a `Single Page Application (SPA)`. Teams Msal2 Provider makes use of Msal2 Provider behind the scenes.
 
 ## Initialize the Teams Msal2 Provider
 
@@ -80,12 +91,12 @@ Add the `mgt-teams-msal2-provider` component to your HTML page as shown.
 ```html
 <mgt-teams-msal2-provider 
   client-id="<YOUR_CLIENT_ID>"
-  auth-popup-url="/auth.html"
-  scopes="user.read,user.read.all,mail.readBasic,people.read.all,sites.read.all,user.readbasic.all,contacts.read,presence.read,presence.read.all,tasks.readwrite,tasks.read"
+  auth-popup-url="/tabauth"
+  scopes="User.Read,Mail.ReadBasic"
   ></mgt-teams-msal2-provider>
 ```
 
-Replace `<YOUR_CLIENT_ID>` with the client ID for your application. 
+Replace `<YOUR_CLIENT_ID>` with the client ID for your application, and replace the `auth-popup-url` with the full or relative path to your auth page. 
 
 ### Initialize in JavaScript
 
@@ -100,49 +111,23 @@ TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
 
 Providers.globalProvider = new TeamsMsal2Provider({
   clientId: `<YOUR_CLIENT_ID>`,
-  authPopupUrl: 'auth.html',
-  scopes: ['user.read','user.read.all','mail.readBasic','people.read.all','sites.read.all','user.readbasic.all','contacts.read','presence.read','presence.read.all','tasks.readwrite','tasks.read'],
+  authPopupUrl: '/tabauth',
+  scopes: ['User.Read','Mail.ReadBasic'],
 });
 ```
-Replace `<YOUR_CLIENT_ID>` with the client ID for your application.
+Replace `<YOUR_CLIENT_ID>` with the client ID for your application, and replace the `authPopupUrl` with the full or relative path to your auth page.
 
 ## Add components
 
-Now, you're ready to add any of the Microsoft Graph Toolkit components. 
-
-You can add components to your HTML as you normally would. For example, to add the Login component add the below code to your HTML:
+Now, you're ready to add any of the Microsoft Graph Toolkit components. The first component you will likely need to add is the Login component.
 
 ```HTML
 <mgt-login></mgt-login>
 ```
 
-Or, you can add the components in JSX. We recommend using the `mgt-react` library. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
+The Login component renders a "Sign In" button that guides the user through the sign in process and integrates with any of the providers to handle the authentication. Once the user has signed in, all other toolkit components will be able to call the Microsoft Graph automatically. The providers also expose an authenticated Microsoft Graph client for making API calls or getting access tokens. See [Using the providers](../providers/providers.md) for more details.
 
-First, install `mgt-react`:
-
-```Command Line
-npm install @microsoft/mgt-react
-```
-
-Import the components you want to use from the `mgt-react` library. For example, to add the `Login` component use:
-
-```JavaScript
-import { Login } from "@microsoft/mgt-react"
-```
-
-Then, add the the component to the `return()` statement of the `render()` method:
-
-```JavaScript
-render() {
-  return(
-    <Login />
-  );
-}
-```
-
-## Test your application
-For a step-by-step tutorial that includes testing the application in Microsoft Teams, see [building a Teams tab](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/).
-
+If you are using React, we recommend using the React components instead from the `mgt-react` library. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
 
 ## Next Steps
 - Try out the components in the [playground](https://mgt.dev).
