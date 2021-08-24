@@ -88,7 +88,7 @@ Content-type: application/json
     "createdDateTime": "2021-04-06T19:49:52.431Z",
     "lastUpdatedDateTime": "2021-04-06T19:54:04.306Z",
     "chatType": "group",
-    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
     "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "onlineMeetingInfo": null,
     "viewpoint": {
@@ -150,7 +150,7 @@ Content-type: application/json
     "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z",
     "chatType": "oneOnOne",
     "webUrl": "https://teams.microsoft.com/l/chat/19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34"
-    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
     "onlineMeetingInfo": null,
     "viewpoint": {
         "isHidden": false,
@@ -321,7 +321,7 @@ Content-type: application/json
     },
     "onlineMeetingInfo": {
         "calendarEventId": "AAMkADAzMjNhY2NiLWVmNDItNDVjYS05MnFjLTExY2U0ZWMyZTNmZQBGAAAAAAARDMODhhR0TZRGWo9nN0NcBwAmvYmLhDvYR6hCFdQLgxR-AAAAAAENAAAmvYmLhDvYR6hCFdQLgxR-AABkrglJAAA=",
-        "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4%40thread.v2/0?context=%7b%22Tid%22%3a%222432b57b-0abd-43db-aa7b-16eadd115d34%22%2c%22Oid%22%3a%22bfb5bb25-3a8d-487d-9828-7875ced51a30%22%7d",
+        "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3Ameeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4%40thread.v2/0?context=%7b%22Tid%22%3a%222432b57b-0abd-43db-aa7b-16eadd115d34%22%2c%22Oid%22%3a%22bfb5bb25-3a8d-487d-9828-7875ced51a30%22%7d",
         "organizer": {
             "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
             "displayName": null,
