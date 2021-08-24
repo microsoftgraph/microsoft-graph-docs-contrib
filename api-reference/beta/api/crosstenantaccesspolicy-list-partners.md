@@ -88,13 +88,13 @@ Content-Type: application/json
       "b2bDirectConnectOutbound": null,
       "b2bDirectConnectInbound":
       {
-          "usersAndGroups": null,
-          "applications":
+        "usersAndGroups": null,
+        "applications":
         {
           "accessType": "allowed",
           "targets": [
             {
-              "target" : "Office365",
+              "target": "Office365",
               "targetType: "application"
             }
           ]

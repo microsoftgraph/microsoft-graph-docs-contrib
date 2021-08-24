@@ -93,11 +93,11 @@ Content-Type: application/json
       "accessType": "allowed",
       "targets": [
         {
-          "target" : "AllGroups",
+          "target": "AllGroups",
           "targetType: "group"
         },
         {
-          "target" : "AllUsers",
+          "target": "AllUsers",
           "targetType: "user"
         }
       ]
@@ -107,7 +107,7 @@ Content-Type: application/json
       "accessType": "allowed",
       "targets": [
         {
-          "target" : "AllApplications",
+          "target": "AllApplications",
           "targetType: "application"
         }
       ]
@@ -120,11 +120,11 @@ Content-Type: application/json
       "accessType": "allowed",
       "targets": [
         {
-          "target" : "AllGroups",
+          "target": "AllGroups",
           "targetType: "group"
         },
         {
-          "target" : "AllUsers",
+          "target": "AllUsers",
           "targetType: "user"
         }
       ]
@@ -134,7 +134,7 @@ Content-Type: application/json
       "accessType": "allowed",
       "targets": [
         {
-          "target" : "AllApplications",
+          "target": "AllApplications",
           "targetType: "application"
         }
       ]
@@ -147,11 +147,11 @@ Content-Type: application/json
       "accessType": "blocked",
       "targets": [
         {
-          "target" : "AllGroups",
+          "target": "AllGroups",
           "targetType: "group"
         },
         {
-          "target" : "AllUsers",
+          "target": "AllUsers",
           "targetType: "user"
         }
       ]
@@ -161,7 +161,7 @@ Content-Type: application/json
       "accessType": "blocked",
       "targets": [
         {
-          "target" : "AllApplications",
+          "target": "AllApplications",
           "targetType: "application"
         }
       ]
@@ -174,11 +174,11 @@ Content-Type: application/json
       "accessType": "blocked",
       "targets": [
         {
-          "target" : "AllGroups",
+          "target": "AllGroups",
           "targetType: "group"
         },
         {
-          "target" : "AllUsers",
+          "target": "AllUsers",
           "targetType: "user"
         }
       ]
@@ -188,7 +188,7 @@ Content-Type: application/json
       "accessType": "blocked",
       "targets": [
         {
-          "target" : "AllApplications",
+          "target": "AllApplications",
           "targetType: "application"
         }
       ]

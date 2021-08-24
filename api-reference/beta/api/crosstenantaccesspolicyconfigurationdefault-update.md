@@ -83,7 +83,7 @@ Content-Type: application/json
       "accessType": "blocked",
       "targets": [
         {
-          "target" : "0be493dc-cb56-4a53-936f-9cf64410b8b0",
+          "target": "0be493dc-cb56-4a53-936f-9cf64410b8b0",
           "targetType: "group"
         }
       ]
@@ -93,7 +93,7 @@ Content-Type: application/json
       "accessType": "blocked",
       "targets": [
           {
-            "target" : "AllApplications",
+            "target": "AllApplications",
             "targetType: "application"
           }
         ]
