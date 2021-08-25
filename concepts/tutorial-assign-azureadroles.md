@@ -28,7 +28,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role. 
-+ The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleAssignmentSchedule.ReadWrite.All`, and `RoleEligibilitySchedule.ReadWrite.Directory`.
++ The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`.
         > [!NOTE]
         > Note for Faith, test out using RoleManagement.ReadWrite.All only. Consent to RoleAssignment/EligibilitySchedule Read perms only for org.
 + Authenticator app installed on your phone to register a user for multi-factor authentication (MFA).
@@ -393,10 +393,10 @@ To activate a role, call the roleEligibilityScheduleRequests endpoint. In this r
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-assignaadroles-roleEligibilityScheduleRequests_post"
+  "name": "tutorial-assignaadroles-roleAssignmentScheduleRequests_selfActivate"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests
 Content-type: application/json
 
 {
