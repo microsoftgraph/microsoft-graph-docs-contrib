@@ -33,7 +33,7 @@ Cross-tenant access settings let you manage both B2B collaboration and B2B direc
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the cross tenant access policy. Inherited from [policyBase](../resources/policybase.md).|
-|lastModifiedDateTime|DateTimeOffset|The time that the cross tenant access policy was deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
+|lastModifiedDateTime|DateTimeOffset|The time that the cross tenant access policy was last modified.|
 
 ## Relationships
 
