@@ -1,6 +1,6 @@
 ---
 title: "educationResource resource type"
-description: "A superclass for all resource objects in the system. A resource is associated with an **Assignment** and/or **Submission**, which represents the learning object that is being"
+description: "A superclass for all resource objects in the system."
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
