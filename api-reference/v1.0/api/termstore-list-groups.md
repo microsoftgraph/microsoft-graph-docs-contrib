@@ -1,6 +1,6 @@
 ---
-title: "List termStore groups"
-description: "Get the groups from the groups navigation property."
+title: "List groups"
+description: "Get a list of group objects in a term store."
 author: vishriv
 localization_priority: Normal
 ms.prod: "taxonomy"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List termStore groups
 Namespace: microsoft.graph.termStore
 
-Get the list of [group](../resources/termstore-group.md) objects of a [store](../resources/termstore-store.md)
+Get a list of [group](../resources/termstore-group.md) objects in a term [store](../resources/termstore-store.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [group](../resources/termstore-group.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.termStore.group](../resources/termstore-group.md) objects in the response body.
 
 ## Examples
 
