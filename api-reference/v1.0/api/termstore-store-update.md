@@ -51,7 +51,7 @@ The following table shows the properties that can be edited for the [store](../r
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [store](../resources/termstore-store.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.termStorestore](../resources/termstore-store.md) object in the response body.
 
 ## Examples
 
