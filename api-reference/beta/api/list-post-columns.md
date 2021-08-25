@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create a columnDefinition in a list
+# Create columnDefinition 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -41,7 +41,7 @@ In the request body, supply a JSON representation of the [columnDefinition][] re
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [columnDefinition][] object in the response body.
+If successful, this method returns a `201 Created` response code and a [columnDefinition][] object in the response body.
 
 ## Example
 
