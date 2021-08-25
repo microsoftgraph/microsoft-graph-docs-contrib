@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1AADRoles-deprecation.md)]
+
 Retrieve the properties and relationships of [privilegedRole](../resources/privilegedrole.md) object. 
 
 ## Permissions

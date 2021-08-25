@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v1ResourceRoles-deprecation](../../includes/pim-v1ResourceRoles-deprecation.md)]
+
 Retrieve the properties and relationships of a [governanceRoleDefinition](../resources/governanceroledefinition.md).
 
 ## Permissions

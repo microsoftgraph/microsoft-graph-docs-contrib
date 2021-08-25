@@ -12124,9 +12124,9 @@ items:
           items:
           - name: Privileged Identity Management
             href: resources/privilegedidentitymanagement-root.md
-          - name: Azure AD
+          - name: Azure AD (deprecated)
             items:
-            - name: Azure AD
+            - name: Azure AD 
               href: resources/privilegedidentitymanagement-directory.md
             - name: Privileged role
               href: resources/privilegedrole.md
@@ -12189,7 +12189,7 @@ items:
               items:
               - name: List audit events
                 href: api/privilegedoperationevent-list.md
-          - name: Azure resources
+          - name: Azure resources (deprecated)
             items:
             - name: Azure resources
               href: resources/privilegedidentitymanagement-resources.md

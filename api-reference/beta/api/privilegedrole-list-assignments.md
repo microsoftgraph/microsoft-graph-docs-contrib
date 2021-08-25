@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1AADRoles-deprecation.md)]
+
 Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects that are associated with the role. Each [privilegedRoleAssignment](../resources/privilegedroleassignment.md) represents a role assignment to a user.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
