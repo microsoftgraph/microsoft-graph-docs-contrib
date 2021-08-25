@@ -50,8 +50,9 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
 
 ## Examples
 
-### Request
+### Example 1: Retrieve a list of access package requirements to create an access package
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,7 +82,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 ---
 
 
-### Response
+#### Response
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -110,3 +111,18 @@ Content-Type: application/json
     ]
 }
 ``` 
+
+#### Example 2: Get policy requirements with given user scope in request body
+
+#### Request
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
+```
+
+{
+    "requestType": "AdminAdd",
+    "subject": {
+        "objectId": "5acd375c-8acb-45de-a958-fa0dd89259ad"
+    }

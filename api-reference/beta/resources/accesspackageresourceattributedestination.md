@@ -1,5 +1,5 @@
 ---
-title: "accessPackageAttributeDestination resource type"
+title: "accessPackageResourceAttributeDestination resource type"
 description: "Child of accessPackageQuestion that is a complex type of the destination of an access package attribute."
 author: "markwahl-msft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "Governance"
 doc_type: resourcePageType
 ---
 
-# accessPackageAttributeDestination resource type
+# accessPackageResourceAttributeDestination resource type
 
 Namespace: microsoft.graph
 

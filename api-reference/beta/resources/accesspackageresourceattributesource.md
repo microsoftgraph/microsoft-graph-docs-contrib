@@ -1,5 +1,5 @@
 ---
-title: "accessPackageAttributeSource resource type"
+title: "accessPackageResourceAttributeSource resource type"
 description: Used for the `accessPackageAttribute` property of an access package resource.
 author: "markwahl-msft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "Governance"
 doc_type: resourcePageType
 ---
 
-# accessPackageAttributeSource resource type
+# accessPackageResourceAttributeSource resource type
 
 Namespace: microsoft.graph
 
