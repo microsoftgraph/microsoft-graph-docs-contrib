@@ -27,7 +27,7 @@ Content types allow you to define a set of columns that must be present on every
 |[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Publish a [contentType](../resources/contenttype.md).|
 |[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Unpublish a [contentType](../resources/contenttype.md).|
 |[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Add copy of a [contentType](../resources/contenttype.md) from a [site](../resources/site.md) to a [list](../resources/list.md).|
-|[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Associates a [contentType](../resources/contenttype.md) with a list of hubsites.|
+|[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Associates a [contentType](../resources/contenttype.md) with a list of hub sites.|
 |[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copy a file to default content location in a [contentType](../resources/contenttype.md).|
 |[List columns](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columnDefinition.md) collection|Get a collection of columns, represented as [columnDefinition](../resources/columnDefinition.md) resources, in a **contentType**.|
 |[Create column](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Add a column to a **content type** in a site or list.|
@@ -45,10 +45,10 @@ Content types allow you to define a set of columns that must be present on every
 | **name**          | string               | The name of the content type.|
 | **order**         | [contentTypeOrder][] | Specifies the order in which the content type appears in the selection UI.|
 | **parentId**      | string               | The unique identifier of the content type.|
-| **readOnly**      | Boolean              | If `true`, the content type cannot be modified unless this value is first set to `false`.|
-| **sealed**        | Boolean              | If `true`, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.|
+| **readOnly**      | Boolean              | If `true`, the content type can't be modified unless this value is first set to `false`.|
+| **sealed**        | Boolean              | If `true`, the content type can't be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.|
 | **isBuiltIn**            | Boolean| Specifies if a content type is a built-in content type. |
-| **documentSet**       | [documentSet][]      | [Document Set](https://docs.microsoft.com/sharepoint/governance/document-set-planning#about-document-sets) metadata.|
+| **documentSet**       | [documentSet][]      | [Document Set](/sharepoint/governance/document-set-planning#about-document-sets) metadata.|
 | **documentTemplate**  | [documentSetContent][] | Document template metadata. To make sure that documents have consistent content across a site and its subsites, you can associate a Word, Excel, or PowerPoint template with a site content type.|
 | **associatedHubsUrls**       | Collection(string) | List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.|
 | **propagateChanges**   | Boolean              | If `true`, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.|
@@ -65,7 +65,7 @@ Content types allow you to define a set of columns that must be present on every
 | **columnPositions**       | Collection([columnDefinition][]) | Column order information in a content type.|
 | **columns**     | Collection([columnDefinition][])  | The collection of column definitions for this contentType.|
 
-See [Introduction to content types and content type publishing][contentTypeIntro] for more information.
+For more information, see [Introduction to content types and content type publishing][contentTypeIntro] .
 
 [columnLink]: columnlink.md
 [contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5

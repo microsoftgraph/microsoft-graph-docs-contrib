@@ -1,7 +1,7 @@
 ---
 author: swapnil1993
 title: "Get columnDefinition"
-description: " Get a site, a list, or a content type column."
+description: "Get a site, a list, or a content type column."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"

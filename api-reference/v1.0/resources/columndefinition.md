@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 Represents a column in a [site][], [list][], or [contentType][].
 
 
-ColumnDefinitions and field values for `hidden` columns are not shown by default.
-To see them when listing **columnDefinitions**, include `hidden` in your `$select` statement.
-To see them when showing **field** values on [listItems][listItem], include the desired columns by name in your `$select` statement.
+ColumnDefinitions and field values for `hidden` columns aren't shown by default.
+To list hidden **columnDefinitions**, include `hidden` in your `$select` statement.
+To list hidden **field** values on [listItems][listItem], include the desired columns by name in your `$select` statement.
 
 ## Methods
 |Method|Return type|Description|
@@ -36,14 +36,14 @@ To see them when showing **field** values on [listItems][listItem], include the 
 
 Columns can hold data of various types.
 The following properties indicate what type of data a column stores, as well as additional settings for that data.
-The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text, and so on) are mutually exclusive; a column can only have one of them specified.
+The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text, term, hyperlinkOrPicture, thumbnail, contentApprovalStatus) are mutually exclusive; a column can only have one of them specified.
 
 | Property name           | Type    | Description|
 |:------------------------|:--------|:-----------------------------------------|
 | **columnGroup**         | string  | For site columns, the name of the group this column belongs to. Helps organize related columns.|
 | **description**         | string  | The user-facing description of the column.|
 | **displayName**         | string  | The user-facing name of the column.|
-| **enforceUniqueValues** | Boolean | If true, no two list items may have the same value for this column.|
+| **enforceUniqueValues** | Boolean | If `true`, no two list items may have the same value for this column.|
 | **hidden**              | Boolean | Specifies whether the column is displayed in the user interface.|
 | **id**                  | string  | The unique identifier for the column.|
 | **indexed**             | Boolean | Specifies whether the column values can be used for sorting and searching.|

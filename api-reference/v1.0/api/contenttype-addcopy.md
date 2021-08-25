@@ -67,11 +67,11 @@ If successful, this call returns a `201 Created` response code and a [contentTyp
 }
 -->
 ```http
-POST https://graph.microsoft.com/v1.0/sites/id/lists/{list-id}/contentTypes/addCopy
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 Content-Type: application/json
 
 {
-  "contentType": "https://graph.microsoft.com/v1.0/sites/id/contentTypes/0x0101"
+  "contentType": "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
 }
 ```
 

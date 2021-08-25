@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-POST /sites/id/contentTypes/id/copyToDefaultContentLocation 
+POST /sites/{siteId}/contentTypes/{contentTypeId}/copyToDefaultContentLocation 
 ```
 
 ## Request headers
@@ -70,7 +70,7 @@ If successful, this call returns a `204 No Content` response.
 }
 -->
 ```http
-POST https://graph.microsoft.com/v1.0/sites/{id}/contentTypes/{contentTypeId}/copyToDefaultContentLocation 
+POST https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId}/copyToDefaultContentLocation 
 Content-Type: application/json
 
 {
