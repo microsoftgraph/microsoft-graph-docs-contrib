@@ -39,7 +39,7 @@ GET sites/{site-id}/termStore
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [store](../resources/termstore-store.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.termStore.store](../resources/termstore-store.md) object in the response body.
 
 ## Examples
 
