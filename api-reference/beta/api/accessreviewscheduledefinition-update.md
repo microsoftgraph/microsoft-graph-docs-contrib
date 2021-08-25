@@ -49,8 +49,8 @@ The following table shows the properties accepted to update an accessReviewSched
 | displayName | String | Name of access review series. |
 | descriptionForAdmins | String | Context of the review provided to admins. |
 | descriptionForReviewers | String | Context of the review provided to reviewers. |
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | The settings for an access review series. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
-| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access). The **reviewers** property is only updatable if individual users are assigned as reviewers. See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | The settings for an access review series. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+| reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access). The **reviewers** property is only updatable if individual users are assigned as reviewers. See [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md). |
 |fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|A collection of reviewer scopes used to define the list of fallback reviewers who are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.|
 | backupReviewers (deprecated)|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This property has been replaced by **fallbackReviewers**. However, specifying either **backupReviewers** or **fallbackReviewers** automatically populates the same values to the other property. |
 
@@ -67,6 +67,7 @@ This is an example of updating the displayName of an existing access review seri
 In the request body, supply a JSON representation of the new properties of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -74,6 +75,7 @@ In the request body, supply a JSON representation of the new properties of the [
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04444aa6
+Content-type: application/json
 
 {
   "id": "60860cdd-fb4d-4054-91ba-f75e04444aa6",
@@ -128,6 +130,7 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 ### Response

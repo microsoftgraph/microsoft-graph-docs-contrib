@@ -68,7 +68,7 @@ If successful, this call returns a `201 Created` response code and a [contentTyp
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/id/lists/{list-id}/contentTypes/addCopy
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 Content-Type: application/json
 
 {

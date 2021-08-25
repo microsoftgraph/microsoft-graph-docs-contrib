@@ -754,6 +754,7 @@ The following JSON examples show the responses for each supported event type.
   "reactions": [],
   "eventDetail": {
     "@odata.type": "#microsoft.graph.membersAddedEventMessageDetail",
+    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
     "members": [{
         "id": "06a5b888-ad96-455e-88ef-c059ec4e4cf0",
         "displayName": null,

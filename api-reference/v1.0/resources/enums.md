@@ -121,7 +121,6 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |requireNumberMatching|
-|unknownFutureValue|
 
 ### allowInvitesFrom values
 
