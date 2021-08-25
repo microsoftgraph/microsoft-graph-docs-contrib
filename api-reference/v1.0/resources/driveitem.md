@@ -52,6 +52,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | lastModifiedDateTime | DateTimeOffset     | Date and time the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
 | name                 | String             | The name of the item (filename and extension). Read-write.
+| malware              | [malware][]        | Malware metadata, if the item was detected to contain malware. Read-only.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
 | pendingOperations    | [pendingOperations][] | If present, indicates that one or more operations that might affect the state of the driveItem are pending completion. Read-only.
@@ -133,6 +134,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "malware": { "@odata.type": "microsoft.graph.malware" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
@@ -229,6 +231,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
+[malware]: malware.md
 [package]: package.md
 [permission]: permission.md
 [pendingOperations]: pendingoperations.md
