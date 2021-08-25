@@ -335,7 +335,7 @@ Use the **id** for the service principal that you recorded earlier.
 #### Request
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/serviceprincipals/a9be408a-6c31-4141-8cea-52fcd4a61be8
+PATCH https://graph.microsoft.com/v1.0/serviceprincipals/a750f6cf-2319-464a-bcc3-456926736a91
 Content-type: serviceprincipals/json
 
 {
