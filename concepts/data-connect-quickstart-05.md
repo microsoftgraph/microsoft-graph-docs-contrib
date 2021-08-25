@@ -124,7 +124,7 @@ With the pipeline created, now it is time to run it.
 
 1. After you are in the **Activity runs** view, go to the _Activity runs_ section, which is located in the bottom side of the page.
 
-1. Hover over the **Activity name** and select the googles option. This will bring up the **Details** tab.
+1. Hover over the **Activity name** and select the goggles option. This will bring up the **Details** tab.
 
     ![A screenshot showing the Azure Portal UI for Data Factory Activity Runs, the user is selecting the googles in the activity name to open the details tab.](images/data-connect-adf-pipeline-details.png)
 
