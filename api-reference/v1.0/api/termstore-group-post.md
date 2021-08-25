@@ -1,6 +1,6 @@
 ---
-title: "Create termStore group"
-description: "Create a new group object."
+title: "Create group"
+description: "Create a new group object in a term store."
 author: vishriv
 localization_priority: Normal
 ms.prod: "taxonomy"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create termStore group
 Namespace: microsoft.graph.termStore
 
-Create a new [group](../resources/termstore-group.md) object.
+Create a new [group](../resources/termstore-group.md) object in a term store.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [group](../resources/termstore-group.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.termStore.group](../resources/termstore-group.md) object in the response body.
 
 ## Examples
 
