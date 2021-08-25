@@ -1,5 +1,5 @@
 ---
-title: "Get tableRowOperationResult"
+title: "workbook: tableRowOperationResult"
 description: "Async operation result for addTableRow operation"
 author: "lumine2008"
 localization_priority: Normal

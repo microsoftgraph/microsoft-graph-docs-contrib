@@ -123,7 +123,7 @@ Content-length: 45
 
 Async requests will be useful if the request takes longer time than expected. Please note that `Workbook-Session-Id` header is required in issuing async requests. The user needs to [Create session](./workbook-createsession.md) before using async rich API features. The header `Prefer:respond-async` is also required in the async requests.
 
-For async features, the user usually needs to issue 2-3 requests. This request, [Get workbookOperation](./workbookoperation-get.md) request and optionally [Get tableRowOperationResult](./tablerowoperationresult-get.md) request.
+For async features, the user usually needs to issue 2-3 requests. This request, [Get workbookOperation](./workbookoperation-get.md) request and optionally [Get tableRowOperationResult](./workbook-tablerowoperationresult.md) request.
 
 #### Request
 
@@ -153,7 +153,7 @@ Content-length: 51
 
 #### Response
 
-Here is another example of the response that will lead to an async operation. For details, see [Get workbookOperation](./workbookoperation-get.md) and [Get tableRowOperationResult](./tablerowoperationresult-get.md).
+Here is another example of the response that will lead to an async operation. For details, see [Get workbookOperation](./workbookoperation-get.md) and [Get tableRowOperationResult](./workbook-tablerowoperationresult.md).
 <!-- {
   "blockType": "response",
   "truncated": true,

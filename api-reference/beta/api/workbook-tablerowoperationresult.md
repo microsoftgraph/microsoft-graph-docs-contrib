@@ -1,10 +1,10 @@
 ---
-title: "Get tableRowOperationResult"
+title: "workbook: tableRowOperationResult"
 description: "Async operation result for addTableRow operation"
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
-doc_type: apiPageType
+doc_type: apiPageTypes
 ---
 
 # Get tableRowOperationResult

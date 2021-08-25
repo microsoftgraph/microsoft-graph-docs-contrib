@@ -117,7 +117,7 @@ The following is the response with the status of `succeeded`. The **resourceLoca
 | Operation      |resourceLocation|
 |:----------|:----------|
 | Create session | [sessionInfoResource](../resources/workbooksessioninfo.md) |
-| Create tableRow | [tableRowOperationResult](./tablerowoperationresult-get.md) |
+| Create tableRow | [tableRowOperationResult](./workbook-tablerowoperationresult.md) |
 | Delete tableRow| No resourceLocation needed. |
 
 <!-- {
