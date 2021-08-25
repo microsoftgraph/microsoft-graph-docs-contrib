@@ -2,7 +2,7 @@
 title: "List users"
 description: "Retrieve a list of user objects."
 author: "jpettere"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/users
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -113,7 +113,7 @@ Content-type: application/json
       "mail":"'contoso1@gmail.com",
       "mailNickname":"contoso1_gmail.com#EXT#",
       "otherMails":["contoso1@gmail.com"],
-      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "proxyAddresses":["SMTP:contoso1@gmail.com"],
       "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
@@ -159,7 +159,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -216,7 +216,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -291,7 +291,7 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric'
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -336,7 +336,7 @@ GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateT
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -584,7 +584,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -612,7 +612,7 @@ Content-type: application/json
       "displayName":"contoso1",
       "mail":"'contoso1@gmail.com",
       "mailNickname":"contoso1_gmail.com#EXT#",
-      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "proxyAddresses":["SMTP:contoso1@gmail.com"],
       "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]

@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph API to work with Microsoft Teams"
 description: "Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: conceptualPageType
@@ -42,7 +42,7 @@ These limits apply whether using Microsoft Teams directly or using Microsoft Gra
 Because every team has a corresponding group, and every group is a directory object,
 limits on the [number of groups](/microsoft-365/admin/create-groups/office-365-groups#group-limits)
 and the [number of directory objects ("resources")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions)
-can also come into play. 
+can also come into play.
 
 Files inside channels are stored in SharePoint; [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) apply.
 
@@ -79,20 +79,20 @@ The following are the differences at the API level between teams and groups:
 
 ## Polling requirements
 
-If your app polls to see whether a resource has changed, you can only do that once per day. 
-([teamsAsyncOperation](teamsasyncoperation.md) is an exception in that it's intended to be polled frequently.) 
-If you need to hear about changes more frequently than that, you should [create a subscription](../api/subscription-post-subscriptions.md) to that resource and receive change notifications (webhooks). 
-If you don't find support for the type of subscription you need, we encourage you to provide feedback via the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
+If your app polls to see whether a resource has changed, you can only do that once per day.
+([teamsAsyncOperation](teamsasyncoperation.md) is an exception in that it's intended to be polled frequently.)
+If you need to hear about changes more frequently than that, you should [create a subscription](../api/subscription-post-subscriptions.md) to that resource and receive change notifications (webhooks).
+If you don't find support for the type of subscription you need, we encourage you to provide feedback via the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 When polling for new messages, you must specify a date range where supported. For details, see [get channel messages delta](../api/chatmessage-delta.md).
 
-Polling is doing a GET operation on a resource over and over again to see if that resource has changed. 
-You're allowed to GET the same resource multiple times a day, as long as it's not polling. 
-For example, it is okay to GET /me/joinedTeams every time the user visits/refreshes your web page, 
+Polling is doing a GET operation on a resource over and over again to see if that resource has changed.
+You're allowed to GET the same resource multiple times a day, as long as it's not polling.
+For example, it is okay to GET /me/joinedTeams every time the user visits/refreshes your web page,
 but it is not okay to GET /me/joinedTeams in a loop every 30 seconds to refresh that web page.
 
 Apps that don't follow these polling requirements will be considered in violation of the
-[Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
+[Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling)
 or the suspension or termination of your use of the Microsoft APIs.
 
 ## What's new
