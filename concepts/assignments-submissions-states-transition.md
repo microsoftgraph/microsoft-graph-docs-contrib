@@ -72,7 +72,6 @@ The status is a read-only property in the submission and changes based on the ac
 | Working |	Initial state after the submission is created. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
 | Submitted	| It happens after the student turned i n the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | Returned | After the teacher returned the assignment back to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
-| Reassigned | After the teacher returned the assignment  to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 
 The following diagram shows the state transition flow.
 
@@ -82,15 +81,10 @@ The following diagram shows the state transition flow.
 | Current submission state | Action | New state |
 |:--|:--|:--|
 | Working |	Turn in	| Submitted |
-| Working |	Return for revision | Reassigned |
 | Working |	Return | Returned |
 | Submitted	| Undo Turn in | Working |
 | Submitted | Return | Returned |
-| Submitted | Return for revision |	Reassigned |
 | Returned | Turn in | Submitted |
-| Returned | Return for revision | Reassigned |
-| Reassigned | Turn in | Submitted |
-| Reassigned | Return |	Returned |
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -104,7 +98,6 @@ In this case, all the calls are asynchronous, which means that the operation sta
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` | Async | Poll |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` | Async | Poll |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` | Async | Poll |
-| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` | Async | Poll |
 
 ### Limits
 The following limits apply to all API calls:
