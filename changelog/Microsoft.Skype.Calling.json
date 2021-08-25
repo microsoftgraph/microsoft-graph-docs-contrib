@@ -1,5 +1,67 @@
 {
-  "changelog": [    
+  "changelog": [ 
+    {
+      "ChangeList": [
+        {
+          "Id": "cb86c949-1f67-485e-8dc7-6ec8314361ab",
+          "ApiChange": "Property",
+          "ChangedApiName": "recordAutomatically",
+          "ChangeType": "Addition",
+          "Description": "Added the **recordAutomatically** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "cb86c949-1f67-485e-8dc7-6ec8314361ab",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-18T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },   
+    {
+      "ChangeList": [
+        {
+          "Id": "28b5e099-e951-467e-9645-2023e87713bc",
+          "ApiChange": "Action",
+          "ChangedApiName": "setPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the [setPresence](https://docs.microsoft.com/en-us/graph/api/presence-setpresence?view=graph-rest-v1.0) action.",
+          "Target": "presence"
+        },
+        {
+          "Id": "28b5e099-e951-467e-9645-2023e87713bc",
+          "ApiChange": "Action",
+          "ChangedApiName": "clearPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearPresence](https://docs.microsoft.com/en-us/graph/api/presence-clearpresence?view=graph-rest-v1.0) action.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "28b5e099-e951-467e-9645-2023e87713bc",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-19T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "499080c4-42f6-45a2-bce0-d215350fec9b",
+          "ApiChange": "Property",
+          "ChangedApiName": "metadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **metadata** property to the [participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "499080c4-42f6-45a2-bce0-d215350fec9b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-16T16:56:16.0636032Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
     {
       "ChangeList": [
         {
@@ -61,6 +123,56 @@
     {
       "ChangeList": [
         {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowAttendeeToEnableMic",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowAttendeeToEnableMic** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowAttendeeToEnableCamera",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowMeetingChat",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowMeetingChat** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowTeamworkReactions",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowTeamworkReactions** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "meetingChatMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingChatMode** enumeration.",
+          "Target": "meetingChatMode"
+        }
+      ],
+      "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-13T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
           "ApiChange": "Action",
           "ChangedApiName": "setPresence",
@@ -88,7 +200,7 @@
       "ChangeList": [
         {
           "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
-          "ApiChange": "Resource",
+          "ApiChange": "Property",
           "ChangedApiName": "allowAttendeeToEnableMic",
           "ChangeType": "Addition",
           "Description": "Added the **allowAttendeeToEnableMic** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
@@ -96,7 +208,7 @@
         },
         {
           "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
-          "ApiChange": "Method",
+          "ApiChange": "Property",
           "ChangedApiName": "allowAttendeeToEnableCamera",
           "ChangeType": "Addition",
           "Description": "Added the **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
