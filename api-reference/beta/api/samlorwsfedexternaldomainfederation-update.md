@@ -34,11 +34,13 @@ The work or school account needs to belong to one of the following [Azure Active
   "blockType": "ignored"
 }
 -->
+
 ``` http
 PATCH directory/federationConfigurations/<samlOrWsFedExternalDomainFederation ID>
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
@@ -71,6 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [saml
   "name": "update_samlorwsfedexternaldomainfederation"
 }
 -->
+
 ``` http
 PATCH https://graph.microsoft.com/beta/directory/federationConfigurations/d5a56845-6845-d5a5-4568-a5d54568a5d5
 Content-Type: application/json
@@ -81,6 +84,7 @@ Content-Type: application/json
 ```
 
 ### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -89,6 +93,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.samlOrWsFedExternalDomainFederation"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

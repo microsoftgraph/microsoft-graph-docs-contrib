@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new externalDomainName object.
+You can now add multiple domains to your SAML/WS-Fed based configuration. Create a new externalDomainName object and add it to an existing [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,26 +34,27 @@ The work or school account needs to belong to one of the following [Azure Active
   "blockType": "ignored"
 }
 -->
+
 ``` http
-POST /samlOrWsFedExternalDomainFederation/domains
+POST /directory/federationConfigurations/<samlOrWsFedExternalDomainFederation ID>/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [externalDomainName](../resources/externaldomainname.md) object.
 
 The following table shows the properties that are required when you create the [externalDomainName](../resources/externaldomainname.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-
-
+|id|String|Domain name of the external organization you want to add to your [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md). Inherited from [entity](../resources/entity.md)|
 
 ## Response
 
@@ -62,23 +63,26 @@ If successful, this method returns a `201 Created` response code and an [externa
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "create_externaldomainname_from_"
 }
 -->
+
 ``` http
-POST https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation/domains
+POST https://graph.microsoft.com/v1.0/directory/federationConfigurations/d5a56845-6845-d5a5-4568-a5d54568a5d5/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
 Content-Type: application/json
 Content-length: 60
 
 {
-  "@odata.type": "#microsoft.graph.externalDomainName"
+    "@odata.type": "microsoft.graph.externalDomainName",
+    "id": "contoso-usa.com"
 }
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -86,13 +90,13 @@ Content-length: 60
   "@odata.type": "microsoft.graph.externalDomainName"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.externalDomainName",
-  "id": "7869a60f-a60f-7869-0fa6-69780fa66978"
+  "id": "contoso-usa.com"
 }
 ```
-
