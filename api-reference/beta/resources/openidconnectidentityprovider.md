@@ -65,7 +65,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.openIdConnectIdentityProvider",
-  "baseType": "Microsoft.Cpim.Api.DataModels.identityProviderBase",
+  "baseType": "microsoft.graph.identityProviderBase",
 } -->
 
 ```json
