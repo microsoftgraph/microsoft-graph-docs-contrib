@@ -53,7 +53,7 @@ The following table shows the properties that can be updated for a [term](../res
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [term](../resources/termstore-term.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.termStore.term](../resources/termstore-term.md) object in the response body.
 
 ## Examples
 
