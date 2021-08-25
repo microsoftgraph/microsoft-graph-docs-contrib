@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [set](../resources/termstore-set.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.termStore.set](../resources/termstore-set.md) object in the response body.
 
 ## Examples
 
