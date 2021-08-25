@@ -1,12 +1,12 @@
 ---
-title: "Tutorial: Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles"
+title: "TUse Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles"
 description: "Use the Privileged Identity Management (PIM) API to assign Azure AD admin roles"
 author: "FaithOmbongi"
 localization_priority: Normal
 ms.prod: "governance"
 ---
 
-# Tutorial: Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles
+# Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles
 
 Contoso Limited is a growing service provider that wishes to have its IT Helpdesk manage the lifecycle of employees’ access.
 
