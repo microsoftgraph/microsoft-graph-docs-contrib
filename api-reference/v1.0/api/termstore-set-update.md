@@ -54,7 +54,7 @@ The following table shows the properties that can be edited for the [set](../res
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [set](../resources/termstore-set.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.termStore.set](../resources/termstore-set.md) object in the response body.
 
 ## Examples
 
