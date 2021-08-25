@@ -58,15 +58,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of calendarPermission objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of <b>calendarPermission</b> objects in the response body.
 
 ## Examples
 
 ### Request
 
-Do not supply a request body for this method.
-
-```http msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions
 ```
 ### Response
