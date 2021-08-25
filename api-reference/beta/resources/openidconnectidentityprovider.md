@@ -12,28 +12,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant.
+Represents OpenID Connect identity providers in an Azure Active Directory (Azure AD) B2C tenant.
 
-Configuring an OpenID Connect provider in a B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
+Configuring an OpenID Connect provider in an Azure AD B2C tenant enables users to sign up and sign in to any application using their custom identity provider.
 
-This type will inherit from [identityProviderBase](../resources/identityproviderbase.md).
+Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md)  collection|Retrieve all identity providers configured in a tenant including the OpenID Connect identity providers. There is no way to retrieve only the OpenID Connect identity providers in a tenant.|
-|[Create](../api/identitycontainer-post-identityproviders.md)|[openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md)|Create a new OpenID Connect identity provider.|
-|[Get](../api/identityproviderbase-get.md) |openIdConnectIdentityProvider|Retrieve properties of an OpenID Connect identity provider.|
-|[Update](../api/identityproviderbase-update.md)|None|Update an OpenID Connect identity provider.|
-|[Delete](../api/identityproviderbase-delete.md)|None|Delete an OpenID Connect identity provider.|
+|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md)  collection|Retrieve all identity providers configured in a tenant including the [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object type. There is no way to retrieve only the OpenID Connect identity providers in a tenant.|
+|[Create](../api/identitycontainer-post-identityproviders.md)|[openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md)|Create a new [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.|
+|[Get](../api/identityproviderbase-get.md) |openIdConnectIdentityProvider|Retrieve properties of an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.|
+|[Update](../api/identityproviderbase-update.md)|None|Update an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.|
+|[Delete](../api/identityproviderbase-delete.md)|None|Delete an [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) object.|
 |[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|clientId|String|The client ID for the application obtained when registering the application with the identity provider. Required.|
+|clientId|String|The client identifier for the application obtained when registering the application with the identity provider. Required.|
 |clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on **responseType**. <ul><li>When **responseType** is `code`, a secret is required for the auth code exchange.</li><li>When **responseType** is `id_token` the secret is not required because there is no code exchange. The id_token is returned directly from the authorization response.</li></ul> This is write-only. A read operation returns `****`.|
 |id|String|The identifier of the identity provider.Required. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
 |displayName|String|The display name of the identity provider. |
@@ -64,28 +64,25 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.openIdConnectIdentityProvider"
+  "@odata.type": "microsoft.graph.openIdConnectIdentityProvider",
+  "baseType": "Microsoft.Cpim.Api.DataModels.identityProviderBase",
 } -->
 
 ```json
 {
-  "id": "String",
+  "@odata.type": "#microsoft.graph.openIdConnectIdentityProvider",
+  "id": "String (identifier)",
   "displayName": "String",
   "clientId": "String",
   "clientSecret": "String",
-  "claimsMapping": {
-      "@odata.type": "#microsoft.graph.claimsMapping",
-      "userId": "String",
-      "givenName": "String",
-      "surname": "String",
-      "email": "String",
-      "displayName": "String"
-  },
-  "domainHint": "String",
+  "scope": "String",
   "metadataUrl": "String",
-  "responseMode": "String",
+  "domainHint": "String",
   "responseType": "String",
-  "scope": "String"
+  "responseMode": "String",
+  "claimsMapping": {
+    "@odata.type": "microsoft.graph.claimsMapping"
+  }
 }
 ```
 
