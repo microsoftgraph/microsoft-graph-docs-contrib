@@ -105,7 +105,7 @@ Content-Type: application/json
         "metadataExchangeUri": null,
         "signingCertificate": "MIIDdDCCAlygAwIBAgIGAXowJih/",
         "passiveSignInUri": "https://accounts.google.com/o/saml2/saml2?idpid=C018555d",
-        "preferredAuthenticationProtocol": "wsfed",
+        "preferredAuthenticationProtocol": "wsFed",
         "domains": [
             {
                 "id": "fabrikam.com",

@@ -36,7 +36,7 @@ The work or school account needs to belong to one of the following [Azure Active
 -->
 
 ``` http
-PATCH directory/federationConfigurations/<samlOrWsFedExternalDomainFederation ID>
+PATCH directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation/<samlOrWsFedExternalDomainFederation ID>
 ```
 
 ## Request headers
@@ -75,12 +75,19 @@ If successful, this method returns a `200 OK` response code and an updated [saml
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/directory/federationConfigurations/d5a56845-6845-d5a5-4568-a5d54568a5d5
+PATCH https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation/d5a56845-6845-d5a5-4568-a5d54568a5d5
 Content-Type: application/json
 
 {
   "displayName": "Contoso name change",
+  "issuerUri": "http://contoso-test.com/adfs/services/trust",
+  "metadataExchangeUri": null,
+  "signingCertificate": "M66C6DCCAdCgAwIBAgIQQ6vYJIVKQ",
+  "passiveSignInUri": "https://contoso-test.com/adfs/ls/",
+  "preferredAuthenticationProtocol": "wsFed"
 }
+
+
 ```
 
 ### Response
@@ -99,13 +106,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.samlOrWsFedExternalDomainFederation",
-  "id": "d5a56845-6845-d5a5-4568-a5d54568a5d5",
+ "id": "d5a56845-6845-d5a5-4568-a5d54568a5d5",
   "displayName": "Contoso name change",
-  "issuerUri": "String",
-  "metadataExchangeUri": "String",
-  "signingCertificate": "String",
-  "passiveSignInUri": "String",
-  "preferredAuthenticationProtocol": "String"
+  "issuerUri": "http://contoso-test.com/adfs/services/trust",
+  "metadataExchangeUri": null,
+  "signingCertificate": "M66C6DCCAdCgAwIBAgIQQ6vYJIVKQ",
+  "passiveSignInUri": "https://contoso-test.com/adfs/ls/",
+  "preferredAuthenticationProtocol": "wsFed",
+  "domains": [
+      {
+          "id": "contoso.com"
+      }
+  ]
 }
 ```
