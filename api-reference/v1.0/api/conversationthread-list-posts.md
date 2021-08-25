@@ -31,7 +31,7 @@ GET /groups/{groupId}/conversations/{conversationId}/threads/{threadId}/posts
 
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response. `$expand` is also supported to expand specific relationships and only one relationship can be expanded in a single request.
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
