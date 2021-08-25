@@ -1,18 +1,18 @@
 ---
-title: "Delete termStore group"
-description: "Delete a group object."
+title: "Delete group"
+description: "Delete a group object in a term store."
 author: mohitpcad
 localization_priority: Normal
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
-# Delete termStore group
+# Delete group
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [group](../resources/termstore-group.md) object in the term [store].
+Delete a [group](../resources/termstore-group.md) object in a term [store].
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
