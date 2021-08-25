@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 Get a list of the [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) objects and their properties.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -34,16 +35,19 @@ The work or school account needs to belong to one of the following roles:
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -53,17 +57,19 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "list_samlorwsfedexternaldomainfederation"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -71,6 +77,7 @@ GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.sa
   "@odata.type": "Collection(microsoft.graph.samlOrWsFedExternalDomainFederation)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

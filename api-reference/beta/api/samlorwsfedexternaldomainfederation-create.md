@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 Create a new [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -34,17 +35,20 @@ The work or school account needs to belong to one of the following roles:
   "blockType": "ignored"
 }
 -->
+
 ``` http
 POST /directory/federationConfigurations
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
 
 The following table shows the properties that are required when you create the [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
@@ -71,6 +75,7 @@ If successful, this method returns a `201 Created` response code and a [samlOrWs
   "name": "create_samlorwsfedexternaldomainfederation_from_"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/directory/federationConfigurations
 Content-Type: application/json
@@ -94,6 +99,7 @@ Content-length: 283
 ```
 
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -101,6 +107,7 @@ Content-length: 283
   "@odata.type": "microsoft.graph.identityProviderBase"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

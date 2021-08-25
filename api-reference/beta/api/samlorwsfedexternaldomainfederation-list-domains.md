@@ -1,6 +1,6 @@
 ---
 title: "List domains"
-description: "Get the externalDomainName resources from the domains navigation property."
+description: "Get the list of all externalDomainName for a samlOrWsFedExternalDomainFederation."
 author: "namkedia"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
@@ -12,9 +12,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the externalDomainName resources from the domains navigation property.
+Get the list of all externalDomainName for a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -34,19 +35,19 @@ The work or school account needs to belong to one of the following [Azure Active
   "blockType": "ignored"
 }
 -->
+
 ``` http
-GET /samlOrWsFedExternalDomainFederation/domains
+GET /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation/<samlOrWsFedExternalDomainFederation ID>/domains
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -56,17 +57,19 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "list_externaldomainname"
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation/domains
+GET https://graph.microsoft.com/beta/directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation/f1e11a04-0244-4592-99df-b01cfaadce15/domains
 ```
 
-
 ### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -75,17 +78,20 @@ The following is an example of the response.
   "@odata.type": "Collection(microsoft.graph.externalDomainName)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.externalDomainName",
-      "id": "7869a60f-a60f-7869-0fa6-69780fa66978"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation('f1e11a04-0244-4592-99df-b01cfaadce15')/domains",
+    "value": [
+        {
+            "id": "contoso-test.com"
+        },
+        {
+            "id": "contoso.com"
+        }
+    ]
 }
 ```
-

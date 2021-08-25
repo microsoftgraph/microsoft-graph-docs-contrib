@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 Deletes a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -34,16 +35,19 @@ The work or school account needs to belong to one of the following [Azure Active
   "blockType": "ignored"
 }
 -->
+
 ``` http
-DELETE /samlOrWsFedExternalDomainFederation
+DELETE directory/federationConfigurations/<samlOrWsFedExternalDomainFederation ID>
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -53,24 +57,26 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "delete_samlorwsfedexternaldomainfederation"
 }
 -->
+
 ``` http
-DELETE https://graph.microsoft.com/beta/samlOrWsFedExternalDomainFederation
+DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db02e2-80c1-5555-bc3a-de92ffb8c5be
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
-
