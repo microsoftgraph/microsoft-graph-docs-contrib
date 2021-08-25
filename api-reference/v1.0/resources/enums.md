@@ -26,6 +26,13 @@ Namespace: microsoft.graph
 |clientIpAddress|
 |authenticatorAppGps|
 
+### countryLookupMethodType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
+
 ### consentRequestFilterByCurrentUserOptions values 
 
 |Member|
@@ -114,7 +121,6 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |requireNumberMatching|
-|unknownFutureValue|
 
 ### allowInvitesFrom values
 
@@ -1238,6 +1244,15 @@ Possible values for user account types (group membership), per Windows definitio
 | junk                  | 14    | Blocked due to junk.                |
 | unknownFutureValue    | 15    | A sentinel member.                  |
 
+### chatMessageType values
+
+| Value |
+|:-----------------|
+| message |
+| chatEvent |
+| typing |
+| unknownFutureValue |
+
 ### chatMessagePolicyViolationDlpActionType values
 
 | Value |
@@ -1500,4 +1515,104 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |application|
 |system|
+|unknownFutureValue|
+
+### teamworkApplicationIdentityType values 
+
+|Member|
+|:---|
+|aadApplication|
+|bot|
+|tenantBot|
+|office365Connector|
+|outgoingWebhook|
+|unknownFutureValue|
+
+### teamworkConversationIdentityType values 
+
+|Member|
+|:---|
+|team|
+|channel|
+|chat|
+|unknownFutureValue|
+
+### teamworkUserIdentityType values 
+
+|Member|
+|:---|
+|aadUser|
+|onPremiseAadUser|
+|anonymousGuest|
+|federatedUser|
+|personalMicrosoftAccountUser|
+|skypeUser|
+|phoneUser|
+|unknownFutureValue|
+
+### postType values 
+
+|Member|
+|:---|
+|regular|
+|quick|
+|strategic|
+|unknownFutureValue|
+
+### serviceHealthClassificationType values 
+
+|Member|
+|:---|
+|advisory|
+|incident|
+|unknownFutureValue|
+
+### serviceHealthOrigin values 
+
+|Member|
+|:---|
+|microsoft|
+|thirdParty|
+|customer|
+|unknownFutureValue|
+
+### serviceHealthStatus values 
+
+|Member|
+|:---|
+|serviceOperational|
+|investigating|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|resolved|
+|mitigatedExternal|
+|mitigated|
+|resolvedExternal|
+|confirmed|
+|reported|
+|unknownFutureValue|
+
+### serviceUpdateCategory values 
+
+|Member|
+|:---|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
+|unknownFutureValue|
+
+### serviceUpdateSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|critical|
 |unknownFutureValue|

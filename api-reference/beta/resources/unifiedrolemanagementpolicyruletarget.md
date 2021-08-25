@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleManagementPolicyRuleTarget resource type"
 description: "A unifiedRoleManagementPolicyRuleTarget specifies the target associated with the role management policy."
-author: "shauliu"
+author: "shauliu1"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -12,15 +12,16 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 A unifiedRoleManagementPolicyRuleTarget specifies the target associated with the role management policy.
-<!--
+
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|caller|String|The caller for the policy rule target. One of None, Admin, EndUser.	|
-|enforcedSettings|String collection|The list of settings which are enforced and cannot be overridden by child scopes. Use All for all settings.|
-|inheritableSettings|String collection|The list of settings which can be inherited by child scopes. Use All for all settings.|
-|level|String|The level for the policy rule target. One of Eligibility, Assignment.	|
-|operations|String collection|The operations for policy rule target. One of All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.|
+|caller|String|The caller for the policy rule target. Allowed values are: `None`, `Admin`, `EndUser`.|
+|enforcedSettings|String collection|The list of settings which are enforced and cannot be overridden by child scopes. Use `All` for all settings.|
+|inheritableSettings|String collection|The list of settings which can be inherited by child scopes. Use `All` for all settings.|
+|level|String|The level for the policy rule target. Allowed values are: `Eligibility`, `Assignment`.	|
+|operations|String collection|The operations for policy rule target. Allowed values are: `All`, `Activate`, `Deactivate`, `Assign`, `Update`, `Remove`, `Extend`, `Renew`.|
 
 ## Relationships
 |Relationship|Type|Description|

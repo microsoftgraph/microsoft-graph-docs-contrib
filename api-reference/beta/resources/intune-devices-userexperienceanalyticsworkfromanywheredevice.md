@@ -43,6 +43,19 @@ The user experience analytics Device for work from anywhere report
 |azureAdJoinType|String|The user experience work from anywhere device's azure Ad joinType.|
 |osDescription|String|The user experience work from anywhere device's OS Description.|
 |osVersion|String|The user experience work from anywhere device's OS Version.|
+|tenantAttached|Boolean|The user experience work from anywhere device's tenantAttached.|
+|compliancePolicySetToIntune|Boolean|The user experience work from anywhere device's compliancePolicySetToIntune.|
+|otherWorkloadsSetToIntune|Boolean|The user experience work from anywhere device's otherWorkloadsSetToIntune.|
+|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|The user experience work from anywhere windows upgrade eligibility status of device. Possible values are: `upgraded`, `unknown`, `notCapable`, `capable`.|
+|ramCheckFailed|Boolean|Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows|
+|storageCheckFailed|Boolean|The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.|
+|processorCoreCountCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware core count check failed for device to upgrade to the latest version of windows.|
+|processorSpeedCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware speed check failed for device to upgrade to the latest version of windows.|
+|tpmCheckFailed|Boolean|The user experience work from anywhere device, Is Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows.|
+|secureBootCheckFailed|Boolean|The user experience work from anywhere device, Is secure boot hardware check failed for device to upgrade to the latest version of windows.|
+|processorFamilyCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.|
+|processor64BitCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.|
+|osCheckFailed|Boolean|The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.|
 
 ## Relationships
 None
@@ -71,7 +84,20 @@ Here is a JSON representation of the resource.
   "azureAdDeviceId": "String",
   "azureAdJoinType": "String",
   "osDescription": "String",
-  "osVersion": "String"
+  "osVersion": "String",
+  "tenantAttached": true,
+  "compliancePolicySetToIntune": true,
+  "otherWorkloadsSetToIntune": true,
+  "upgradeEligibility": "String",
+  "ramCheckFailed": true,
+  "storageCheckFailed": true,
+  "processorCoreCountCheckFailed": true,
+  "processorSpeedCheckFailed": true,
+  "tpmCheckFailed": true,
+  "secureBootCheckFailed": true,
+  "processorFamilyCheckFailed": true,
+  "processor64BitCheckFailed": true,
+  "osCheckFailed": true
 }
 ```
 

@@ -11,6 +11,66 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### authenticatorAppFeatureSettings values
+
+|Member|
+|:---|
+|requireNumberMatching|
+
+### appCredentialRestrictionType values
+
+|Member|
+|:-----|
+|passwordAddition|
+|passwordLifetime|
+|unknownFutureValue|
+
+### synchronizationSecret values
+
+|Member|
+|:----|
+|None|
+|UserName|
+|Password|
+|SecretToken|
+|AppKey|
+|BaseAddress|
+|ClientIdentifier|
+|ClientSecret|
+|SingleSignOnType|
+|Sandbox|
+|Url|
+|Domain|
+|ConsumerKey|
+|ConsumerSecret|
+|TokenKey|
+|TokenExpiration|
+|Oauth2AccessToken|
+|Oauth2AccessTokenCreationTime|
+|Oauth2RefreshToken|
+|SyncAll|
+|InstanceName|
+|Oauth2ClientId|
+|Oauth2ClientSecret|
+|CompanyId|
+|UpdateKeyOnSoftDelete|
+|SynchronizationSchedule|
+|SystemOfRecord|
+|SandboxName|
+|EnforceDomain|
+|SyncNotificationSettings|
+|SkipOutOfScopeDeletions|
+|Oauth2AuthorizationCode|
+|Oauth2RedirectUri|
+|ApplicationTemplateIdentifier|
+|Server|
+|PerformInboundEntitlementGrants|
+|HardDeletesEnabled|
+|SyncAgentCompatibilityKey|
+|SyncAgentADContainer|
+|ValidateDomain|
+|TestReferences|
+
 ### filterMode values
 
 |Member|
@@ -33,6 +93,7 @@ Namespace: microsoft.graph
 |created|
 |updated|
 |deleted|
+
 
 ### countryLookupMethodType values
 
@@ -1060,15 +1121,17 @@ Namespace: microsoft.graph
 
 ### educationSynchronizationStatus values
 
-| Member             | Value |
-| :----------------- | :---- |
-| paused             | 0     |
-| inProgress         | 1     |
-| success            | 2     |
-| error              | 3     |
-| validationError    | 4     |
-| quarantined        | 5     |
-| unknownFutureValue | 6     |
+| Member             |
+| :----------------- |
+| paused             |
+| inProgress         |
+| success            |
+| error              |
+| validationError    |
+| quarantined        |
+| unknownFutureValue |
+| extracting         |
+| validating         |
 
 ### educationExternalSource values
 
@@ -1735,6 +1798,10 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |message|
+|chatEvent |
+|typing |
+|unknownFutureValue|
+|systemEventMessage|
 
 ### chatMessageImportance values
 
@@ -1746,11 +1813,12 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### channelMembershipType values
 
-| Member             | Value |
-| :----------------- | :---- |
-| standard           | 0     |
-| private            | 1     |
-| unknownFutureValue | 2     |
+| Member             | 
+| :----------------- | 
+| standard           | 
+| private            | 
+| unknownFutureValue | 
+| shared             |
 
 ### stagedFeatureName values
 
@@ -2102,20 +2170,6 @@ Possible values for user account types (group membership), per Windows definitio
 | proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
 | unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
 
-### identitySourceType values
-
-|Member|
-|:---|
-|azureActiveDirectory|
-|external|
-
-### externalGroupMemberType values
-
-|Member|
-|:---|
-|user|
-|group|
-
 ### identityUserFlowAttributeDataType values
 
 | Member                | Value | Description                         |
@@ -2135,15 +2189,6 @@ Possible values for user account types (group membership), per Windows definitio
 | custom                | 2     | This user flow attribute type denotes it was created by the user   |
 |required|3||
 | unknownFutureValue    | 4     | A sentinel member.                                                 |
-
-### connectionState values
-
-|Member|
-|:---|
-|draft|
-|ready|
-|obsolete|
-|limitExceeded|
 
 ### permissionClassificationType values
 
@@ -2208,6 +2253,7 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |group|
 |unknownFutureValue|
+|roster|
 
 ### plannerPlanContextType values 
 
@@ -2280,6 +2326,41 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |principal|
 |unknownFutureValue|
+
+### cloudPcAuditActivityOperationType values 
+
+|Member|
+|:---|
+|create|
+|delete|
+|patch|
+|other|
+
+### cloudPcAuditActivityResult values 
+
+|Member|
+|:---|
+|success|
+|clientError|
+|failure|
+|timeout|
+|other|
+
+### cloudPcAuditActorType values 
+
+|Member|
+|:---|
+|itPro|
+|application|
+|partner|
+|unknown|
+
+### cloudPcAuditCategory values 
+
+|Member|
+|:---|
+|cloudPC|
+|other|
 
 ### postType values 
 
@@ -2354,3 +2435,54 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|:---- | :------------------------ |
 |standard| 0     |Default type for a tag. Tags of type standard can be managed in the team by members who have permissions.|
 
+### teamworkApplicationIdentityType values 
+
+|Member|
+|:---|
+|aadApplication|
+|bot|
+|tenantBot|
+|office365Connector|
+|outgoingWebhook|
+|unknownFutureValue|
+
+### teamworkConversationIdentityType values 
+
+|Member|
+|:---|
+|team|
+|channel|
+|chat|
+|unknownFutureValue|
+
+### teamworkUserIdentityType values 
+
+|Member|
+|:---|
+|aadUser|
+|onPremiseAadUser|
+|anonymousGuest|
+|federatedUser|
+|personalMicrosoftAccountUser|
+|skypeUser|
+|phoneUser|
+|unknownFutureValue|
+
+### callRecordingStatus values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### teamworkCallEventType values 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
+|unknownFutureValue|

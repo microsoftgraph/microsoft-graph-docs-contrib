@@ -95,8 +95,6 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 ---
 
 
----
-
 #### Response
 
 The following is an example of the response.
@@ -156,8 +154,6 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 ---
 
 
----
-
 #### Response
 
 The following is an example of the response.
@@ -214,8 +210,6 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-test-icm
 
 ---
 
-
----
 
 #### Response
 
@@ -286,8 +280,6 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OI
 
 ---
 
-
----
 
 #### Response
 
