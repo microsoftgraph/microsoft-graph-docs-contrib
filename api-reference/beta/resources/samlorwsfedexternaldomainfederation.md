@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents [SAML/Ws-Fed federation](/azure/active-directory/external-identities/direct-federation) set up with an Azure AD tenant to allow guest users to access its resources.
+A resource that allows an Azure Active Directory (Azure AD) tenant to set up federation with another organization whose identity provider (IdP) supports either the SAML or WS-Fed protocol. This enables the Azure AD tenant to allow guest users to access its resources. For more information on SAML/WS-Fed IdP federation, see [Federation with SAML/WS-Fed identity providers for guest users](/azure/active-directory/external-identities/direct-federation).
 
 Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 
@@ -42,7 +42,7 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|domains|[externalDomainName](../resources/externaldomainname.md) collection|Collection of domain names of the external organizations the tenant is federating with.|
+|domains|[externalDomainName](../resources/externaldomainname.md) collection|Collection of domain names of the external organizations the tenant is federating with. Supports $filter (eq).|
 
 ## JSON representation
 The following is a JSON representation of the resource.
