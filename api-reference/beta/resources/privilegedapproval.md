@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an approval that is requested in Privileged Identity Management for getting into a role.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1AADRoles-deprecation.md)]
+
+Represents an approval that is requested in Privileged Identity Management (PIM) for getting into a role.
 
 
 ## Methods
