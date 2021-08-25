@@ -12120,11 +12120,11 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
-        - name: Privileged Identity Management
+        - name: Privileged Identity Management (deprecated)
           items:
           - name: Privileged Identity Management
             href: resources/privilegedidentitymanagement-root.md
-          - name: Azure AD (deprecated)
+          - name: Azure AD
             items:
             - name: Azure AD 
               href: resources/privilegedidentitymanagement-directory.md
@@ -12189,7 +12189,7 @@ items:
               items:
               - name: List audit events
                 href: api/privilegedoperationevent-list.md
-          - name: Azure resources (deprecated)
+          - name: Azure resources
             items:
             - name: Azure resources
               href: resources/privilegedidentitymanagement-resources.md
