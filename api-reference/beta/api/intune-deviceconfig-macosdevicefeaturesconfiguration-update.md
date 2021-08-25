@@ -104,6 +104,8 @@ The following table shows the properties that are required when you create the [
 |contentCachingKeepAwake|Boolean|Prevent the device from sleeping if content caching is enabled.|
 |contentCachingPort|Int32|Sets the port used for content caching. If the value is 0, a random available port will be selected. Valid values 0 to 65535|
 
+
+
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) object in the response body.
 
@@ -473,7 +475,6 @@ Content-Length: 5834
   "contentCachingPort": 2
 }
 ```
-
 
 
 

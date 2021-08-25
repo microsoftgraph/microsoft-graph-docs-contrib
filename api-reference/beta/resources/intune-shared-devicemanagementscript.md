@@ -69,6 +69,9 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "binary",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
@@ -81,7 +84,6 @@ Here is a JSON representation of the resource.
   "runAs32Bit": true
 }
 ```
-
 
 
 
