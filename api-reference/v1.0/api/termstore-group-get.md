@@ -1,13 +1,13 @@
 ---
-title: "Get termStore group"
-description: "Read the properties and relationships of a group object."
+title: "Get group"
+description: "Read the properties and relationships of a term store group object."
 author: vishriv
 localization_priority: Normal
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
-# Get termStore group
+# Get group
 Namespace: microsoft.graph.termStore
 
 Read the properties and relationships of a term store [group](../resources/termstore-group.md) object.
