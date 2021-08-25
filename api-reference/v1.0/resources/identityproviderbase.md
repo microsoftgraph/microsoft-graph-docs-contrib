@@ -21,17 +21,17 @@ In an Azure AD B2C directory, the identity provider type is a [socialIdentityPro
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant.|
-|[Create](../api/identitycontainer-post-identityproviders.md)|[socialIdentityProvider](../resources/socialidentityprovider.md)|Create a new social identity provider(Azure AD or Azure AD B2C).|
-|[Get](../api/identityproviderbase-get.md) |[socialIdentityProvider](../resources/socialidentityprovider.md) or [builtinIdentityProvider](../resources/builtinidentityprovider.md)|Retrieve properties of a social identity provider(Azure AD or Azure AD B2C) or a built in identity provider(Azure AD).|
-|[Update](../api/identityproviderbase-update.md)|None|Update a social identity provider(Azure AD or Azure AD B2C).|
-|[Delete](../api/identityproviderbase-delete.md)|None|Delete a social identity provider(Azure AD or Azure AD B2C).|
+|[Create](../api/identitycontainer-post-identityproviders.md)|[socialIdentityProvider](../resources/socialidentityprovider.md)|Create a new [socialIdentityProvider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C).|
+|[Get](../api/identityproviderbase-get.md) |[socialIdentityProvider](../resources/socialidentityprovider.md) or [builtinIdentityProvider](../resources/builtinidentityprovider.md)|Retrieve properties of a [socialIdentityProvider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) (Azure AD).|
+|[Update](../api/identityproviderbase-update.md)|None|Update a [socialIdentityProvider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C).|
+|[Delete](../api/identityproviderbase-delete.md)|None|Delete a [socialIdentityProvider](../resources/socialidentityprovider.md) (Azure AD or Azure AD B2C).|
 |[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all supported identity provider types.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The ID of the identity provider.|
+|id|String|The identifier of the identity provider.|
 |displayName|String|The display name of the identity provider.|
 
 ## JSON representation
