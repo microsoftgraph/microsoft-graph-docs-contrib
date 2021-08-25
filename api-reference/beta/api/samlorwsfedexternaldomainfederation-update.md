@@ -52,7 +52,7 @@ The following table shows the properties that are you can update for [samlOrWsFe
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the SAML/Ws-Fed based identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
+|displayName|String|The display name of the SAML/WS-Fed based identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
 |issuerUri|String|Issuer URI of the federation server. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |metadataExchangeUri|String|URI of the metadata exchange end point used for authentication from rich client applications. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |passiveSignInUri|String|URI that web-based clients are directed to when signing in to AAD services. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
@@ -79,7 +79,6 @@ Content-Type: application/json
   "displayName": "Contoso name change",
 }
 ```
-
 
 ### Response
 The following is an example of the response.
