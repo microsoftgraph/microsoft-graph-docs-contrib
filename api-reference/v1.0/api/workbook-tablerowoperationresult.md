@@ -1,22 +1,23 @@
 ---
 title: "workbook: tableRowOperationResult"
-description: "Async operation result for addTableRow operation"
+description: "Part of an asynchronous create tableRow request."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get tableRowOperationResult
+# workbook: tableRowOperationResult
 Namespace: microsoft.graph
 
-Meaningless if this url is called independently. This request is part of async create tableRow request.
+Part of an asynchronous create tableRow request.
 
-To issue an async create tableRow request, briefly you need the following 2 steps:
-1. Issue an async [Create tableRow](./table-post-rows.md) request, follow the documentation and you may get an url to [workbookOperation](../resources/workbookoperation.md).
-2. Issue the [Get workbookOperation](./workbookoperation-get.md) request, and after you get a `succeeded` **operationStatus** result, focus on the "resourceLocation" part of the response, this is the request url for this request. You cannot get this url other than going through these steps, currently.
-3. Issue the url, the response of this request is [workbookTableRow](../resources/tablerow.md)
+An asynchronous create tableRow request involves the following steps:
+1. Issue an async [Create tableRow](./table-post-rows.md) request and get a [workbookOperation](../resources/workbookoperation.md) URL.
+2. Issue the [Get workbookOperation](./workbookoperation-get.md) request, and after you get a `succeeded` **operationStatus** result, get the request URL from the **resourceLocation** part of the response. This is the URL for this request. This is the only way to get this URL.
+3. Issue the URL. The response to this request contains a [workbookTableRow](../resources/tablerow.md).
 
+This function does not do anything if called independently.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +50,7 @@ In the request URL, provide the following query parameter with values.
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -61,6 +62,8 @@ If successful, this function returns a `200 OK` response code and a [workbookTab
 ## Examples
 
 ### Request
+
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["0195cfac-bd22-4f91-b276-dece0aa2378b"],
@@ -74,7 +77,7 @@ GET https://graph.microsoft.com/beta/driveItem/workbook/tableRowOperationResult(
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
