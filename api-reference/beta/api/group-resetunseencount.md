@@ -1,7 +1,7 @@
 ---
 title: "group: resetUnseenCount"
 description: "Reset the unseenCount of all the posts that the current user has not seen since their last visit."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -65,6 +65,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/resetUnseenCount
 [!INCLUDE [sample-code](../includes/snippets/objc/group-resetunseencount-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-resetunseencount-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -91,3 +95,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

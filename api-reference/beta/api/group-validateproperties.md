@@ -2,7 +2,7 @@
 title: "group: validateProperties"
 description: "Validate if a Microsoft 365 group's display name or mail nickname complies with naming policies."
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -93,6 +93,10 @@ Content-length: 132
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -155,3 +159,5 @@ Content-length: 223
   "suppressions": [
   ]
 }-->
+
+

@@ -3,8 +3,8 @@ title: "governanceRuleSetting resource type"
 description: "Represents the rules that the role settings are composed of."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: "shauliu"
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # governanceRuleSetting resource type
@@ -52,3 +52,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

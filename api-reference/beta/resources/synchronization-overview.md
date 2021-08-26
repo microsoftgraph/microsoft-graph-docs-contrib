@@ -4,7 +4,7 @@ description: "Automate the provisioning of identities from HR systems, Active Di
 localization_priority: Normal
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Azure AD synchronization API overview
@@ -61,7 +61,7 @@ Working with synchronization API primarily involves accessing the [synchronizati
 
 ### Authorization
 
-The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making any requests to the API, you need to get an access token. For more information, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). To access synchronization resources, your application needs Directory.ReadWrite.All permissions. For more information, see [Directory permissions](/graph/permissions-reference#directory-permissions).
+The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making any requests to the API, you need to get an access token. For more information, see [Get access tokens to call Microsoft Graph](/graph/auth/). To access synchronization resources, your application needs Directory.ReadWrite.All permissions. For more information, see [Directory permissions](/graph/permissions-reference#directory-permissions).
 
 ### Find the service principal object by display name
 
@@ -79,19 +79,20 @@ GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayN
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
-    "value": [
-    {
-        "id": "bc0dc311-87df-48ac-91b1-259bd2c3a31c",
-        "appId": "f7808c5e-cb57-4e37-8094-406d302c0f8d",
-        "displayName": "Salesforce"
-    },
-    {
-        "id": "d813d7d7-0f41-4edc-b284-d0dfaf399d15",
-        "appId": "219561ee-1480-4c67-9aa6-63d861fae3ef",
-        "displayName": "salesforce 3"
-    }
-    ]
+   "value":[
+      {
+         "id":"bc0dc311-87df-48ac-91b1-259bd2c3a31c",
+         "appId":"f7808c5e-cb57-4e37-8094-406d302c0f8d",
+         "displayName":"Salesforce"
+      },
+      {
+         "id":"d813d7d7-0f41-4edc-b284-d0dfaf399d15",
+         "appId":"219561ee-1480-4c67-9aa6-63d861fae3ef",
+         "displayName":"salesforce 3"
+      }
+   ]
 }
 ```
 
@@ -109,6 +110,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayN
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "value": [
         {
@@ -135,6 +137,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "value": [
         {
@@ -165,17 +168,18 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 **Response**
 <!-- { "blockType": "ignored" } -->
 ```http
-    HTTP/1.1 200 OK
-    {
-        "id": "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa",
-        "templateId": "SfSandboxOutDelta",
-        "schedule": {
-            "expiration": null,
-            "interval": "PT20M",
-            "state": "Active"
-        },
-        "status": {}
-    }
+HTTP/1.1 200 OK
+
+{
+    "id": "SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa",
+    "templateId": "SfSandboxOutDelta",
+    "schedule": {
+        "expiration": null,
+        "interval": "PT20M",
+        "state": "Active"
+    },
+    "status": {}
+}
 ```
 
 ### Get synchronization schema
@@ -191,6 +195,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "directories": [],
     "synchronizationRules": []
@@ -200,6 +205,3 @@ HTTP/1.1 200 OK
 
 * [Configure synchronization with directory extension attributes](../resources/synchronization-configure-with-directory-extension-attributes.md)
 * [Configure synchronization with custom target attributes](../resources/synchronization-configure-with-custom-target-attributes.md)
-
-
-

@@ -68,6 +68,10 @@ GET /me/drive/items/{item-id}/content
 [!INCLUDE [sample-code](../includes/snippets/objc/download-item-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/download-item-content-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -81,7 +85,7 @@ Many HTTP client libraries will automatically follow the 302 redirection and sta
 
 Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -130,3 +134,5 @@ how errors are returned.
   ]
 }
 -->
+
+

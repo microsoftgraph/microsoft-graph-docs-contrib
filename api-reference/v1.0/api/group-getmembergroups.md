@@ -2,7 +2,7 @@
 title: "group: getMemberGroups"
 description: "Return all the groups that the specified group is a member of."
 localization_priority: Priority
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -56,50 +56,29 @@ If successful, this method returns `200 OK` response code and String collection 
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_getmembergroups"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/getMemberGroups
+POST https://graph.microsoft.com/v1.0/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": false
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-getmembergroups-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-getmembergroups-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-getmembergroups-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-getmembergroups-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
+### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -111,11 +90,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [
-    "string-value"
+    "1132b215-826f-42a9-8cfe-1643d19d17fd"
   ]
 }
 ```
@@ -132,3 +110,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+

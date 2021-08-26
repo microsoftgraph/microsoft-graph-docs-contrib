@@ -1,7 +1,7 @@
 ---
 title: "Create group"
 description: "Create a new Microsoft 365 group or security group."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType
@@ -54,9 +54,9 @@ The following table shows the properties of the [group](../resources/group.md) r
 | description | string | A description for the group. Optional. |
 | isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
-| mailNickname | string | The mail alias for the group. Required. |
+| mailNickname | string | The mail alias for the group. Max. length: 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
-| owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
+| owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Owners aren't automatically added as group members unless specified in the **members** property. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
 |visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
 
@@ -126,6 +126,10 @@ Content-length: 244
 [!INCLUDE [sample-code](../includes/snippets/objc/create-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -133,7 +137,7 @@ Content-length: 244
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -182,15 +186,14 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a Microsoft 365 group with an owner and members
+### Example 2: Create a security group with an owner and members
 
-The following example creates a Microsoft 365 group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API or JSON batching.
+The following example creates a security group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) API or JSON batching.
 
 #### Request
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
@@ -203,11 +206,10 @@ Content-Type: application/json
   "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
-    "Unified"
   ],
-  "mailEnabled": true,
+  "mailEnabled": false,
   "mailNickname": "operations2019",
-  "securityEnabled": false,
+  "securityEnabled": true,
   "owners@odata.bind": [
     "https://graph.microsoft.com/beta/users/26be1845-4119-4801-a799-aea79d09f1a2"
   ],
@@ -217,26 +219,12 @@ Content-Type: application/json
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-prepopulated-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-prepopulated-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response 
 
 The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 
 
->**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -288,7 +276,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request.  The calling user or app must be assigned the *RoleManagement.ReadWrite.Directory* permission to set the **isAssignableToRole** property or update the membership of such groups.
 
 
 # [HTTP](#tab/http)
@@ -323,6 +311,10 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-role-enabled-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-role-enabled-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -400,3 +392,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

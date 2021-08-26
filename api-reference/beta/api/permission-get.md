@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: "Return the effective sharing permission for a particular permission resource."
 ms.date: 09/10/2017
-title: Get permissions
+title: Get permission
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
@@ -19,8 +19,6 @@ Effective permissions of an item can come from two sources: permissions set dire
 
 Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.
 This property is an [ItemReference](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
-
-SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](https://technet.microsoft.com/library/cc721640.aspx#section1).
 
 ## Permissions
 
@@ -75,6 +73,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

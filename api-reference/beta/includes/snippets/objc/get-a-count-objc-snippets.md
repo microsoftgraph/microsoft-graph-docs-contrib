@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/contacts?$filter=startswith(displayName,'A')&$count=true&$top=1&$orderby=displayName"]]];
 [urlRequest setHTTPMethod:@"GET"];
 [urlRequest setValue:@"eventual" forHTTPHeaderField:@"ConsistencyLevel"];
 
@@ -16,7 +16,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
 		NSError *jsonError = nil;
 		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-		MSGraphUser *user = [[MSGraphUser alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+		MSGraphOrgContact *orgContact = [[MSGraphOrgContact alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

@@ -80,15 +80,17 @@ Content-Length: 72797
 [!INCLUDE [sample-code](../includes/snippets/objc/printdocument-uploaddata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printdocument-uploaddata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
 
 One or more segments missing:
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printDocument"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -103,3 +105,5 @@ All segments received:
 ```http
 HTTP/1.1 201 Created
 ```
+
+

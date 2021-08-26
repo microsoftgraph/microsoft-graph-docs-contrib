@@ -50,9 +50,9 @@ If successful, this method returns the `204 No Content` response code if the act
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -76,12 +76,16 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-activity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -105,3 +109,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

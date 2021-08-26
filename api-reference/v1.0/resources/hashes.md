@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 localization_priority: Normal
 title: "Hashes resource type"
@@ -65,3 +64,4 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Hashes"
 } -->
+

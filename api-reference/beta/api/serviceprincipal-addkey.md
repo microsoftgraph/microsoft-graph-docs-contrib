@@ -3,7 +3,7 @@ title: "servicePrincipal: addKey"
 description: "Add a key credential to a servicePrincipal."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -27,19 +27,17 @@ ServicePrincipals that don’t have any existing valid certificates (i.e.: no ce
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | None.  |
+|Delegated (work or school account) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | None.    |
-|Application | None. |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
-> [!NOTE]
-> A servicePrincipal does not need any specific permission to roll its own keys.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /serviceprincipals/{id}/addKey
+POST /servicePrincipals/{id}/addKey
 ```
 
 ## Request headers
@@ -75,11 +73,11 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_addkey"
+  "name": "serviceprincipal_addkey_1"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/serviceprincipals/{id}/addKey
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/addKey
 Content-type: application/json
 
 {
@@ -93,7 +91,7 @@ Content-type: application/json
 }
 ```
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -124,13 +122,15 @@ Content-Type: application/json
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_addkey"
+  "name": "serviceprincipal_addkey_2"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/serviceprincipals/{id}/addKey
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/addKey
 Content-type: application/json
 
 {
@@ -145,6 +145,12 @@ Content-type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -152,7 +158,8 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.keyCredential"
 } -->
 
 ```http
@@ -173,6 +180,8 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: serviceprincipal_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
-    ]
+  ]
 }-->
+
+
+

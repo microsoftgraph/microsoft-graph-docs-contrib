@@ -3,8 +3,8 @@ title: "privilegedRoleAssignment: my"
 description: "Get the requestor's privileged role assignments."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # privilegedRoleAssignment: my
@@ -66,11 +66,15 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments/my
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignment-my-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignment-my-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,3 +113,5 @@ Content-length: 237
   ]
 }
 -->
+
+

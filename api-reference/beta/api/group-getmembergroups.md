@@ -2,7 +2,7 @@
 title: "group: getMemberGroups"
 description: "Return all the groups that the specified group is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the group is a direct member of."
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported.                                                                              |
-| Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
+| Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
 
@@ -57,46 +57,30 @@ If successful, this method returns `200 OK` response code and String collection 
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_getmembergroups"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/getMemberGroups
+POST https://graph.microsoft.com/beta/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": false
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-getmembergroups-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-getmembergroups-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-getmembergroups-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
+### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -108,11 +92,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [
-    "string-value"
+    "1132b215-826f-42a9-8cfe-1643d19d17fd"
   ]
 }
 ```
@@ -131,3 +114,5 @@ Content-length: 39
   ]
 }
 -->
+
+

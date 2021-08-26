@@ -3,8 +3,8 @@ title: "Get governanceRoleAssignmentRequest"
 description: "Get a governanceRoleAssignmentRequest. "
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # Get governanceRoleAssignmentRequest
@@ -16,13 +16,31 @@ Namespace: microsoft.graph
 Get a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.Read.AzureResources |
+### Azure resources
+
+| Permission type | Permissions |
+|:--------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | PrivilegedAccess.Read.AzureResources |
+
+### Azure AD
+
+| Permission type | Permissions |
+|:--------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | PrivilegedAccess.Read.AzureAD |
+
+### Groups
+
+|Permission type | Permissions |
+|:-------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 Besides the permission scope, it requires the requestor 
 *   to have at least one role assignment on the resource; or
@@ -102,3 +120,5 @@ Content-length: 279
   "suppressions": []
 }
 -->
+
+

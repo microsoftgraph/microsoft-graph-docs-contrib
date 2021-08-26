@@ -45,8 +45,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (timestamp)",
-  "displayName": "String (timestamp)",
+  "id": "String (identifier)",
+  "displayName": "String",
 }
 
 ```
@@ -63,3 +63,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

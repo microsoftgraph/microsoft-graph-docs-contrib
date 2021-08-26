@@ -1,10 +1,9 @@
 ---
 author: JeremyKelley
 description: "The driveItem resource represents a file, folder, or other item stored in a drive."
-ms.date: 09/10/2017
-title: DriveItem
+title: driveItem
 localization_priority: Normal
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **driveItem** resource represents a file, folder, or other item stored in a drive.
-All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
+
+All file system objects in OneDrive and SharePoint are returned as **driveItem** resources. Items in SharePoint document libraries can be represented as [listItem][] or **driveItem** resources.
 
 There are two primary ways of addressing a **driveItem** resource:
 
@@ -43,7 +43,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds"],
+       "sharepointIds", "source", "media"],
        "keyProperty": "id", "openType": true } -->
 
 ```json
@@ -58,6 +58,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "media": { "@odata.type": "microsoft.graph.media" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
@@ -68,6 +69,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
+  "source": { "@odata.type": "microsoft.graph.driveItemSource" },
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "video": { "@odata.type": "microsoft.graph.video" },
   "webDavUrl": "string",
@@ -120,6 +122,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application which last modified the item. Read-only.
 | lastModifiedDateTime | DateTimeOffset     | Date and time the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
+| media                | [media][]          | Information about the media (audio or video) item. Read-write. Only on OneDrive for Business and SharePoint.
 | name                 | String             | The name of the item (filename and extension). Read-write.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
@@ -133,6 +136,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | size                 | Int64              | Size of the item in bytes. Read-only.
 | specialFolder        | [specialFolder][]  | If the current item is also available as a special folder, this facet is returned. Read-only.
+| source               | [driveItemSource][]| Information about the drive item source. Read-only. Only on OneDrive for Business and SharePoint.
 | video                | [video][]          | Video metadata, if the item is a video. Read-only.
 | webDavUrl            | String             | WebDAV compatible URL for the item.
 | webUrl               | String             | URL that displays the resource in the browser. Read-only.
@@ -206,6 +210,7 @@ Removing file permissions for a user may not immediately invalidate the URL.
 | [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
 | [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
 | [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+| [Revoke grants](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
 
 [item-preview]: ../api/driveitem-preview.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -219,6 +224,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [baseItem]: baseitem.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
+[driveItemSource]: driveItemSource.md
 [driveItemVersion]: driveitemversion.md
 [file]: file.md
 [fileSystemInfo]: filesysteminfo.md
@@ -234,6 +240,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [geoCoordinates]: geocoordinates.md
 [List activities]: ../api/activities-list.md
 [listItem]: listitem.md
+[media]: media.md
 [package]: package.md
 [permission]: permission.md
 [pendingOperations]: pendingoperations.md
@@ -248,7 +255,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
 [workbook]: workbook.md
-[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[user]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

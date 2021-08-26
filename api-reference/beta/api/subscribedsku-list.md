@@ -3,7 +3,7 @@ title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
 localization_priority: Normal
 author: "SumitParikh"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ GET /subscribedSkus
 ```
 ## Optional query parameters
 
-This method does not support the [OData query parameters](/graph//query-parameters) to help customize the response (`$filter` is not supported).
+This method does not support `$select` the [OData query parameter](/graph//query-parameters) to help customize the response (`$filter` is not supported).
 
 ## Request headers
 
@@ -70,10 +70,14 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscribedskus-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscribedskus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,23 +92,23 @@ Content-length: 547
 {
   "value": [
     {
-      "capabilityStatus": "capabilityStatus-value",
-      "consumedUnits": 99,
+      "capabilityStatus": "Enabled",
+      "consumedUnits": 20,
       "prepaidUnits": {
-        "enabled": 99,
-        "suspended": 99,
-        "warning": 99
+        "enabled": 20,
+        "suspended": 0,
+        "warning": 0
       },
       "servicePlans": [
         {
-          "servicePlanId": "servicePlanId-value",
-          "servicePlanName": "servicePlanName-value",
-          "provisioningStatus": "provisioningStatus-value",
-          "appliesTo": "appliesTo-value"
+          "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+          "servicePlanName": "EXCHANGE_S_FOUNDATION",
+          "provisioningStatus": "Success",
+          "appliesTo": "Company"
         }
       ],
-      "skuId": "skuId-value",
-      "skuPartNumber": "skuPartNumber-value"
+      "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968",
+      "skuPartNumber": "EMSPREMIUM"
     }
   ]
 }
@@ -123,3 +127,5 @@ Content-length: 547
   ]
 }
 -->
+
+

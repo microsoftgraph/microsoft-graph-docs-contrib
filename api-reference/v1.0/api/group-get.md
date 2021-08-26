@@ -1,7 +1,7 @@
 ---
 title: "Get group"
 description: "Get the properties and relationships of a group object."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 >**Note:** Depending on the group features you're trying to access, permissions might be limited. For more information, see the [Groups](/graph/known-issues#groups) section in [Known issues with Microsoft Graph](/graph/known-issues).
 
@@ -112,6 +112,7 @@ Content-type: application/json
     "groupTypes": [
         "Unified"
     ],
+    "isAssignableToRole": null,
     "mail": "library2@contoso.com",
     "mailEnabled": true,
     "mailNickname": "library",
@@ -206,3 +207,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

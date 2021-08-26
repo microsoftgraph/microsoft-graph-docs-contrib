@@ -3,7 +3,7 @@ title: "Update domain"
 description: "Update the properties of domain object."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -85,15 +85,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-domain-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-domain-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.domain"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -112,3 +114,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

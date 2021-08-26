@@ -3,8 +3,8 @@ title: "governanceResource resource type"
 description: "Represents resources that could be managed by Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, a SQL database, etc."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # governanceResource resource type
@@ -90,3 +90,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

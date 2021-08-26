@@ -68,8 +68,6 @@ Effective sharing permissions of a DriveItem can come from two sources:
 Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property.
 This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
 
-SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](https://technet.microsoft.com/library/cc721640.aspx#section1).
-
 ## Example
 
 This example retrieves the collection of permissions on an item in the signed in user's drive.
@@ -91,6 +89,10 @@ GET /me/drive/items/{item-id}/permissions
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-permissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

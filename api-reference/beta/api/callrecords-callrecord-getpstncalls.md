@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getPstnCalls"
 description: "Get log of PSTN calls."
-author: "stephenjust"
+author: "williamlooney"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
@@ -19,11 +19,11 @@ Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecor
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application| CallRecords.Read.PstnCalls|
+| Application                            | CallRecords.Read.All |
 
 ## HTTP request
 
@@ -45,6 +45,9 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time.|
 |toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive.|
+
+> [!IMPORTANT]
+> The **fromDateTime** and **toDateTime** values cannot be more than a date range of 90 days.
 
 ## Request headers
 
@@ -109,7 +112,9 @@ HTTP/1.1 200 OK
             "destinationName": "United States",
             "conferenceId": null,
             "licenseCapability": "MCOPSTNU",
-            "inventoryType": "Subscriber"
+            "inventoryType": "Subscriber",
+			"operator": "Microsoft",
+			"callDurationSource": "microsoft"
         }],
     "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
 }
@@ -117,5 +122,5 @@ HTTP/1.1 200 OK
 
 ## See also
 
-* [Microsoft Teams PSTN usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+* [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 * [Direct routing report in Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)

@@ -1,7 +1,7 @@
 ---
 title: "Update settings"
 description: "Update the properties of the settings object. "
-author: "krbain"
+author: "jpettere"
 localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType
@@ -18,7 +18,7 @@ To get the user current settings, see [current user settings](usersettings-get.m
 ### Batch request
 
 It's also possible to opt-out multiple users from Delve and disable their contribution on content relevancy for the whole organization through a batch request.
-To learn more, see [JSON batching](https://developer.microsoft.com/graph/docs/concepts/json_batching).
+To learn more, see [JSON batching](/graph/json-batching).
 
 >**Important**: Only members of the [organization management](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) role group can update multiple users. 
 
@@ -79,7 +79,7 @@ Content-length: 37
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK
@@ -91,6 +91,3 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": true
 }
 ```
-
-
-

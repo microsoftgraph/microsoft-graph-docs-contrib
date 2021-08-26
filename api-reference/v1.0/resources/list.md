@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: List
 localization_priority: Priority
@@ -22,7 +21,7 @@ The following tasks are available for list resources.
 **Note:** This beta only allows navigating lists, not creating or updating them.
 You can, however, create or update [list items][listItem].
 
-All examples below are relative to a site, eg: `https://graph.microsoft.com/v1.0/sites/{site-id}`.
+All examples below are relative to a site, for example, `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 
 | Common task               | HTTP method
 |:--------------------------|:------------------------------
@@ -149,3 +148,4 @@ The **list** resource has the following relationships to other resources.
     "Lists": "#"
   }
 } -->
+

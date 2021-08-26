@@ -1,7 +1,7 @@
 ---
 title: "Get mailFolder"
 description: "Retrieve the properties and relationships of a message folder object."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -35,7 +35,7 @@ GET /me/mailFolders/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -106,7 +106,8 @@ Content-type: application/json
   "parentFolderId": "AAMkAGVmMDEzI",
   "childFolderCount": 2,
   "unreadItemCount": 59,
-  "totalItemCount": 60
+  "totalItemCount": 60,
+  "isHidden": false
 }
 ```
 
@@ -150,7 +151,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzN
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -170,6 +171,7 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 6,
   "totalItemCount": 6,
+  "isHidden": false,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [

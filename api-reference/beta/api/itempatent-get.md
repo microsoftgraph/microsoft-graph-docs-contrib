@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/me/profile/patents/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-itempatent-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-itempatent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -121,3 +125,5 @@ Content-Type: application/json
   "webUrl": "https://patents.gov/3954432633"
 }
 ```
+
+

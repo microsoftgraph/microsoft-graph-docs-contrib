@@ -3,7 +3,7 @@ title: "androidWorkProfileCompliancePolicy resource type"
 description: "This class contains compliance settings for Android Work Profile."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -62,6 +62,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune-shared-devicecomplian
 |securityRequireGooglePlayServices|Boolean|Require Google Play Services to be installed and enabled on the device.|
 |securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
+|securityRequiredAndroidSafetyNetEvaluationType|[androidSafetyNetEvaluationType](../resources/intune-deviceconfig-androidsafetynetevaluationtype.md)|Require a specific SafetyNet evaluation type for compliance. Possible values are: `basic`, `hardwareBacked`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -116,9 +117,11 @@ Here is a JSON representation of the resource.
   "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "securityRequireGooglePlayServices": true,
   "securityRequireUpToDateSecurityProviders": true,
-  "securityRequireCompanyPortalAppIntegrity": true
+  "securityRequireCompanyPortalAppIntegrity": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "String"
 }
 ```
+
 
 
 

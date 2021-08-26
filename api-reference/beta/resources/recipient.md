@@ -4,7 +4,7 @@ description: "Represents information about a user in the sending or receiving en
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # recipient resource type
@@ -51,3 +51,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

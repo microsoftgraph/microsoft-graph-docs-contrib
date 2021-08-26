@@ -3,7 +3,7 @@ title: "servicePrincipal: removeKey"
 description: "Remove a key credential from a servicePrincipal"
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -23,19 +23,16 @@ As part of the request validation for this method, a proof of possession of an e
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | None.  |
+|Delegated (work or school account) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | None.    |
-|Application | None. |
-
-> [!NOTE]
-> A servicePrincipal does not need any specific permission to roll its own keys.
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /serviceprincipals/{id}/removeKey
+POST /servicePrincipals/{id}/removeKey
 ```
 
 ## Request headers
@@ -74,7 +71,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals/{id}/removeKey
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/removeKey
 Content-Type: application/json
 
 {
@@ -123,3 +120,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

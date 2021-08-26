@@ -26,7 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/protection/protect
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/protect
 
 ```
 ## Request headers
@@ -89,15 +90,17 @@ Content-length: 383
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookworksheetprotection-protect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workbookworksheetprotection-protect-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
 Here is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -116,3 +119,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

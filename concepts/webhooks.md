@@ -21,25 +21,32 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notifications, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
+An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. For details about how to work with these notifications, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
 ## Supported resources
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
-- Outlook [message][]
-- Outlook [event][]
-- Outlook personal [contact][]
-- [list][]
-- [user][]
-- [group][]
-- Microsoft 365 group [conversation][]
+- Cloud printing [printer][]
+- Cloud printing [printTaskDefinition][]
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
+- [group][]
+- Microsoft 365 group [conversation][]
+- Outlook [event][]
+- Outlook [message][]
+- Outlook personal [contact][]
 - Security [alert][]
+- SharePoint [list][]
 - Teams [callRecord][]
-- Teams [chatMessage][] (preview)
+- Teams [channel][]
+- Teams [chat][]
+- Teams [chatMessage][]
+- Teams [conversationMember][]
 - Teams [presence][] (preview)
+- Teams [team][]
+- [todoTask][] (preview)
+- [user][]
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -60,6 +67,9 @@ Or to the root folder of a SharePoint/OneDrive for Business drive:
 Or to a new [Security API](security-concept-overview.md) alert:
 `/security/alerts?$filter=status eq 'newAlert'`,
 `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
+
+Or to the tasks in a user's To Do list:
+`/me/todo/lists/{todoTaskListId}/tasks`
 
 ### Azure AD resource limitations
 
@@ -87,9 +97,11 @@ When subscribing to Outlook resources such as **messages**, **events** or **cont
 
 `/users/sh.o'neal@contoso.com/messages`
 
-Use: 
+Use:
 
 `/users/{guid-user-id}/messages`
+
+A maximum of 1000 active subscriptions per mailbox for all applications is allowed.
 
 ### Teams resource limitations
 
@@ -98,13 +110,13 @@ Each Teams resource has different subscription quotas.
 - For subscriptions to **callRecords**:
   - Per organization: 100 total subscriptions
 
-- For subscriptions to **chatMessages** (channels or chats) (preview):
+- For subscriptions to **chatMessages** (channels or chats):
   - Per app and channel or chat combination: 1 subscription
   - Per organization: 10,000 total subscriptions
 
 ## Subscription lifetime
 
-Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
+Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type).
 
 Apps can also unsubscribe at any time to stop getting change notifications.
 
@@ -143,13 +155,13 @@ Content-Type: application/json
 }
 ```
 
-The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0) for property definitions and values.
+The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](/graph/api/resources/subscription) for property definitions and values.
 
 The `resource` property specifies the resource that will be monitored for changes. For example, you can create a subscription to a specific mail folder: `me/mailFolders('inbox')/messages` or on behalf of a user given by an administrator  consent: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
 Although `clientState` is not required, you must include it to comply with our recommended change notification handling process. Setting this property will allow you to confirm that change notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
-If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.
+If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription) object in the body.
 
 > **Note:** Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered.
 
@@ -164,7 +176,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-1. The client must properly decode the `validationToken` provided in the preceding step, and escape any HTML/JavaScript.
+1. The client must properly URL decode the `validationToken` query parameter provided in the preceding step, and escape any HTML/JavaScript.
 
    Escaping is a good practice because malicious actors can use the notification endpoint for cross-site scripting type of attacks.
 
@@ -174,7 +186,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
     - A status code of `HTTP 200 OK`.
     - A content type of `text/plain`.
-    - A body that includes the _decoded_ validation token.
+    - A body that includes the _URL decoded_ validation token. Simply reflect back the same string that was sent in the `validationToken` query parameter.
 
     The client should discard the validation token after providing it in the response.
 
@@ -199,7 +211,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body. The subscription object includes the new `expirationDateTime` value.
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription) object in the body. The subscription object includes the new `expirationDateTime` value.
 
 ### Deleting a subscription
 
@@ -274,7 +286,7 @@ The following code samples are available on GitHub.
 
 ## Firewall configuration
 
-You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
+You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
@@ -284,40 +296,54 @@ The following table lists the latency to expect between an event happening in th
 
 | Resource | Average latency | Maximum latency |
 |:-----|:-----|:-----|
+|[alert][] | Less than 3 minutes | 5 minutes |
 |[callRecord][] | Less than 15 minutes | 60 minutes |
-|[chatMessage][] (preview) | Less than 10 seconds | 1 minute |
+|[channel][] | Less than 10 seconds | 60 minutes |
+|[chat][] | Less than 10 seconds | 60 minutes |
+|[chatMessage][] | Less than 10 seconds | 1 minute |
 |[contact][] | Unknown | Unknown |
+|[conversation][] | Unknown | Unknown |
+|[conversationMember][] | Less than 10 seconds | 60 minutes |
 |[driveItem][] | Less than 1 minute | 5 minutes |
 |[event][] | Unknown | Unknown |
 |[group][] | Less than 2 minutes | 15 minutes |
-|[conversation][] | Unknown | Unknown |
 |[list][] | Less than 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
-|[alert][] | Less than 3 minutes | 5 minutes |
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[printer][] | Less than 1 minute | 5 minutes |
+|[printTaskDefinition][] | Less than 1 minute | 5 minutes |
+|[team][] | Less than 10 seconds | 60 minutes |
+|[todoTask][] | Less than 2 minutes | 15 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
 
 >**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
 ## See also
 
-- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type
-- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type
+- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true)
+- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true)
+- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true)
+- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) resource type
+- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true) resource type
 - [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
-- [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
+- [Lifecycle notifications](./webhooks-lifecycle.md)
 
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[group]: /graph/api/resources/group?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
-[user]: /graph/api/resources/user?view=graph-rest-1.0
-[alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[contact]: /graph/api/resources/contact
+[conversation]: /graph/api/resources/conversation
+[driveItem]: /graph/api/resources/driveitem
+[event]: /graph/api/resources/event
+[group]: /graph/api/resources/group
+[message]: /graph/api/resources/message
+[user]: /graph/api/resources/user
+[alert]: /graph/api/resources/alert
+[callRecord]: /graph/api/resources/callrecords-callrecord
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[printer]: /graph/api/resources/printer
+[printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[todoTask]: /graph/api/resources/todotask
+[channel]: /graph/api/resources/channel
+[chat]: /graph/api/resources/chat
+[conversationMember]: /graph/api/resources/conversationmember
+[team]: /graph/api/resources/team

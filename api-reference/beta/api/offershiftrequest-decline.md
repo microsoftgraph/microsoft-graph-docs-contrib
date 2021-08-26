@@ -21,11 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.ReadWrite.All |
+| Delegated (work or school account)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Schedule.ReadWrite.All* |
-
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
+| Application                            | Schedule.ReadWrite.All |
 
 ## HTTP request
 
@@ -86,6 +84,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/offershiftrequest-decline-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/offershiftrequest-decline-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -93,9 +95,7 @@ Content-type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http
@@ -111,3 +111,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

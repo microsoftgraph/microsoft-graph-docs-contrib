@@ -27,7 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/application/calculate
+POST /me/drive/items/{id}/workbook/application/calculate
+POST /me/drive/root:/{item-path}:/workbook/application/calculate
 
 ```
 ## Request headers
@@ -78,6 +79,10 @@ Content-length: 48
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookapplication-calculate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workbookapplication-calculate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -85,9 +90,7 @@ Content-length: 48
 The following example shows the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 
 ```http
@@ -107,3 +110,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

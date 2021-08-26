@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Sync the contents of a drive
 localization_priority: Priority
@@ -271,8 +270,6 @@ Content-type: application/json
 * The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.
 * The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
 * The `parentReference` property on items will not include a value for **path**. This occurs because renaming a folder does not result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by id**.
-* In OneDrive for Business and SharePoint, `delta` is only supported on the `root` folder, not on other folders within a drive.
-
 * Delta query will not return some DriveItem properties, depending on the operation and service type, as shown in the following tables.
 
     **OneDrive for Business**
@@ -297,7 +294,7 @@ When the `Prefer: hierarchicalsharing` header is provided, sharing information w
 
 In many scanning scenarios, you might be interested specifically in changes to permissions. To make it clear in the delta query response which changes are the result of permissions being changed, you can provide the `Prefer: deltashowsharingchanges` header. When this header is provided, all items that appear in the delta query response due to permission changes will have the `@microsoft.graph.sharedChanged":"True"` OData annotation. This feature is applicable to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
 
-> **Note:** The use of `Prefer: deltashowsharingchanges` header requires you to use `Prefer: deltashowremovedasdeleted` and `Prefer: deltatraversepermissiongaps`. These header values can be joint together in a single header: `Prefer: deltashowremovedasdeleted; deltatraversepermissiongaps; deltashowsharingchanges;`.
+> **Note:** The use of `Prefer: deltashowsharingchanges` header requires you to use `Prefer: deltashowremovedasdeleted` and `Prefer: deltatraversepermissiongaps`. These header values can be joined together in a single header: `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges`.
 
 ## Error responses
 
@@ -315,3 +312,4 @@ In addition to the resync errors detailed above, see [Error Responses][error-res
   "suppressions": [
   ]
 } -->
+

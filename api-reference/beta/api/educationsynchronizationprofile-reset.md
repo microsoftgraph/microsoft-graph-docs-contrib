@@ -24,12 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
 |Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
+|Application|EduAdministration.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/reset
+POST /education/synchronizationProfiles/{id}/reset
 ```
 
 ## Request headers
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 [!INCLUDE [sample-code](../includes/snippets/objc/post-educationsynchronizationprofile-reset-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-reset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -91,3 +95,5 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
+

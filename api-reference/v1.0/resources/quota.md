@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Quota
 localization_priority: Normal
@@ -69,3 +68,4 @@ Here is a JSON representation of the resource.
   ],
   "tocPath": "Facets/Quota"
 } -->
+

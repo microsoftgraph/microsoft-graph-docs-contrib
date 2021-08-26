@@ -3,7 +3,7 @@ title: "settingValue resource type"
 description: "A setting represented by a name/value pair."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "directory-management"
 author: "dkershaw10"
 ---
 
@@ -54,3 +54,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

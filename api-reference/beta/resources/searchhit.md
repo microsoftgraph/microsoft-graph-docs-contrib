@@ -1,6 +1,6 @@
 ---
 title: "searchHit resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Description of searchHit entity"
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
@@ -13,19 +13,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a single result within the list of search results.
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Represents a single result within the list of search results.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|_id|String|The internal identifier for the item.|
-|_score|Int32|The score or the order of the result.|
-|_sortField|String|The sort order used. It can be DateTime or Relevance.|
-|_summary|String|A summary of the result (if summary is available).|
-|_source|[entity](entity.md)|The underlying Graph representation of the search result.|
+|hitId|String|The internal identifier for the item.|
+|rank|Int32|The rank or the order of the result.|
+|contentSource|String|The name of the content source which the **externalItem** is part of .|
+|summary|String|A summary of the result, if a summary is available.|
+|resultTemplateId|String|ID of the result template for rendering the search result. This ID must map to a display layout in the **resultTemplates** dictionary, included in the [searchresponse](searchresponse.md) as well.|
+|resource|[entity](entity.md)|The underlying Microsoft Graph representation of the search result.|
+|_id (deprecated)|String| Renamed as **hitId**. The internal identifier for the item.|
+|_score (deprecated)|Int32|Renamed as **rank**. The score or the order of the result.|
+|_summary (deprecated)|String|Renamed as **summary**. A summary of the result (if summary is available).|
+|_sortField (deprecated)|String|This property has been removed.|
+|_source (deprecated)|[entity](entity.md)|Renamed as **resource**. The underlying Graph representation of the search result.|
 
 ## JSON representation
 
@@ -42,6 +48,12 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "hitId": "String",
+  "rank": 1,
+  "summary": "String",
+  "resultTemplateId": "String",
+  "contentSource": "String",
+  "resource": { "@odata.type": "microsoft.graph.entity" },
   "_id": "String",
   "_score": 1024,
   "_sortField": "String",
@@ -59,3 +71,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

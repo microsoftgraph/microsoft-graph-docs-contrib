@@ -83,9 +83,7 @@ The following is an example of the response.
 <!-- Add the educationClass resource to the response. -->
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationUser"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -102,3 +100,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

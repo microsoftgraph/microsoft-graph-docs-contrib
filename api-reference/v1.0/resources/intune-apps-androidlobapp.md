@@ -3,7 +3,7 @@ title: "androidLobApp resource type"
 description: "Contains properties and inherited properties for Android Line Of Business apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -101,15 +101,14 @@ Here is a JSON representation of the resource.
     "v4_3": true,
     "v4_4": true,
     "v5_0": true,
-    "v5_1": true
+    "v5_1": true,
+    "v10_0": true,
+    "v11_0": true
   },
   "versionName": "String",
   "versionCode": "String"
 }
 ```
-
-
-
 
 
 

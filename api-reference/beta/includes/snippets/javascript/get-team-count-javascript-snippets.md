@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/servicePrincipals')
+let servicePrincipals = await client.api('/servicePrincipals')
 	.version('beta')
 	.header('ConsistencyLevel','eventual')
 	.search('displayName:Team')

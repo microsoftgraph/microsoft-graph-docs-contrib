@@ -48,7 +48,7 @@ Retry-After: 2.128
       "request-id": "94fb3b52-452a-4535-a601-69e0a90e3aa2",
       "status": "429"
     },
-    "message": "Please retry again laster."
+    "message": "Please retry again later."
   }
 }
 ```
@@ -69,10 +69,10 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 
 All the resources and APIs described in the [Service-specific limits](#service-specific-limits) section provide a `Retry-After` header except when noted.
 
-For a broader discussion of throttling in the Microsoft Cloud, see [Throttling pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
+For a broader discussion of throttling in the Microsoft Cloud, see [Throttling pattern](/azure/architecture/patterns/throttling).
 
 > [!NOTE]
-> If no `Retry-After` header is provided by the response, we recommend implementing an exponential backoff retry policy. You can also implement [more advanced patterns](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) when building large-scale applications.
+> If no `Retry-After` header is provided by the response, we recommend implementing an exponential backoff retry policy. You can also implement [more advanced patterns](/azure/architecture/patterns/category/resiliency) when building large-scale applications.
 >
 > Microsoft Graph SDKs already implement handlers that rely on the `Retry-After` header or default to an exponential backoff retry policy.
 
@@ -81,7 +81,7 @@ For a broader discussion of throttling in the Microsoft Cloud, see [Throttling p
 Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
 
 >[!NOTE]
->[Best practices for discovering files and detecting changes at scale](https://docs.microsoft.com/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) describes best practices in details.
+>[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) describes best practices in details.
 
 ## Throttling and batching
 
@@ -106,7 +106,7 @@ Any request can be evaluated against multiple limits, depending on the scope of 
 
 ### Outlook service limits
 
-Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](/graph/deployments).
+Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
 
 | Limit                                                      | Applies to      |
 |------------------------------------------------------------|-----------------|
@@ -165,11 +165,11 @@ The following resources are provided by the Outlook service.
 
 ### Cloud communication service limits
 
-| Resource      | Limits per app per tenant    |
+| Resource      | Limits per app    |
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
+| [Presence](/graph/api/resources/presence) (preview)   | 1500 requests in a 30 second period, per application per tenant |
 
 ### OneNote service limits
 
@@ -275,7 +275,7 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 | ---------- | ----------- | -------------- |
 | application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
 | application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
-| tenant | Not Applicable | 9000 per 5 minutes |
+| tenant | Not Applicable | 18,000 per 5 minutes |
 
 > **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 
@@ -463,31 +463,46 @@ dataPolicyOperation.
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
-### Identity and access audit logs service limits
-
-[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
-
 ### Identity providers service limits
 
 [!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
 
 ### Intune service limits
 
+[!INCLUDE [Intune  tunnel throttling documentation](../includes/throttling-intune-throttling-tunnel.md)]
+[!INCLUDE [Intune android for work throttling documentation](../includes/throttling-intune-android-for-work.md)]
 [!INCLUDE [Intune applications throttling documentation](../includes/throttling-intune-applications.md)]
+[!INCLUDE [Intune auditing throttling documentation](../includes/throttling-intune-auditing.md)]
 [!INCLUDE [Intune books throttling documentation](../includes/throttling-intune-books.md)]
+[!INCLUDE [Intune bundles throttling documentation](../includes/throttling-intune-bundles.md)]
+[!INCLUDE [Intune chromebook sync throttling documentation](../includes/throttling-intune-chromebook-sync.md)]
 [!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
+[!INCLUDE [Intune device config V2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
 [!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
 [!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
+[!INCLUDE [Intune device intent throttling documentation](../includes/throttling-intune-device-intent.md)]
 [!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
+[!INCLUDE [Intune endpoint protection throttling documentation](../includes/throttling-intune-endpoint-protection.md)]
 [!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
+[!INCLUDE [Intune fencing throttling documentation](../includes/throttling-intune-fencing.md)]
+[!INCLUDE [Intune GPAnalytics throttling documentation](../includes/throttling-intune-gpanalytics.md)]
 [!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
 [!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]
+[!INCLUDE [Intune ODJ throttling documentation](../includes/throttling-intune-odj.md)]
+[!INCLUDE [Intune partner integration throttling documentation](../includes/throttling-intune-partner-integration.md)]
 [!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
 [!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
 [!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
+[!INCLUDE [Intune telephony throttling documentation](../includes/throttling-intune-telephony.md)]
 [!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
 [!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
+[!INCLUDE [Intune unlock throttling documentation](../includes/throttling-intune-unlock.md)]
+[!INCLUDE [Intune updates throttling documentation](../includes/throttling-intune-updates.md)]
 [!INCLUDE [Intune wip throttling documentation](../includes/throttling-intune-wip.md)]
+
+### Multi service limits
+
+[!INCLUDE [Multi tenant platform throttling documentation](../includes/throttling-multi-tenant-platform.md)]
 
 ### Skype service limits
 
@@ -498,3 +513,18 @@ dataPolicyOperation.
 [!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
 
 <!-- { "blockType": "throttlinggenend" } -->
+
+### Assignment service limits
+
+The following limits apply to requests on the assignment service API:
+
+| Request Type                 | Limit per app per tenant     | Limit per tenant for all apps |
+|---------------------------|------------------------------|----------------------------|
+| Any         | 500 requests per 10 seconds   | 1000 requests per 10 seconds
+|Any          | 15000 requests per 3600 seconds|30000 requests per 3600 seconds|
+| GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |  
+
+The preceding limits apply to the following resources: 
+[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)
+[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest)
+[educationResource](/graph/api/resources/educationresource?view=graph-rest)

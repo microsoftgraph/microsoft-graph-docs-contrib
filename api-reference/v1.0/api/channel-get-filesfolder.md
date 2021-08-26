@@ -18,16 +18,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | File.Read.All, Group.Read.All, File.ReadWrite.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | File.Read.All, Group.Read.All, File.ReadWrite.All, Group.ReadWrite.All     |
+|Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/filesFolder
-
 ```
 
 ## Optional query parameters
@@ -81,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/filesFolder
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -125,3 +124,4 @@ Content-length: 401
   "suppressions": [
   ]
 }-->
+

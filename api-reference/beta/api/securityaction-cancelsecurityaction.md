@@ -76,6 +76,10 @@ POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecuri
 [!INCLUDE [sample-code](../includes/snippets/objc/securityaction-cancelsecurityaction-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securityaction-cancelsecurityaction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -83,9 +87,7 @@ POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecuri
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http
@@ -103,3 +105,5 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
+

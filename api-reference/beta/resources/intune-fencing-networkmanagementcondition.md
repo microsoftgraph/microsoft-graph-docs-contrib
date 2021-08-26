@@ -3,7 +3,7 @@ title: "networkManagementCondition resource type"
 description: "Contains the information to define a network management condition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ Inherits from [managementCondition](../resources/intune-fencing-managementcondit
 |createdDateTime|DateTimeOffset|The time the management condition was created. Generated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|The time the management condition was last modified. Updated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag of the management condition. Updated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection|The applicable platforms for this management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|applicablePlatforms|[devicePlatformType](../resources/intune-fencing-deviceplatformtype.md) collection|The applicable platforms for this management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -66,6 +66,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

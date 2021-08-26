@@ -15,7 +15,7 @@ Namespace: microsoft.graph.termstore
 
 Specifies the value types relations can take in a termstore
 
-|Members|
+|Member|
 |:---|
 |pin|
 |reuse|
@@ -24,7 +24,7 @@ Specifies the value types relations can take in a termstore
 
 Specifies the values different group types can take within the termstore
 
-|Members|
+|Member|
 |:---|
 |global|
 |system|
@@ -36,3 +36,5 @@ Specifies the values different group types can take within the termstore
   "namespace": "microsoft.graph.termstore"
 }
 -->
+
+

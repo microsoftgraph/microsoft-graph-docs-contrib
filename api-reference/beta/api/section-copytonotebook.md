@@ -87,15 +87,17 @@ Content-length: 84
 [!INCLUDE [sample-code](../includes/snippets/objc/section-copytonotebook-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/section-copytonotebook-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -114,3 +116,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

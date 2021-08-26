@@ -24,8 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.ReadWrite.All |
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -89,8 +87,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http
@@ -110,3 +107,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

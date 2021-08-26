@@ -2,7 +2,7 @@
 title: "Remove member"
 description: "Use this API to remove a member from a group via the **members** navigation property."
 localization_priority: Priority
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -49,7 +49,7 @@ The following is an example of the request.
   "name": "delete_member_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/groups/{group-id}/members/{directory-object-id}/$ref
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-member-from-group-csharp-snippets.md)]
@@ -69,19 +69,22 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
 
 ---
 
-In the request, specify the `id` of the directory object you want to remove after the $ref segment.
+In the request, specify the identifier of the group and the identifier of the directory object you want to remove.
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## See also
+- [Add member to team](team-post-members.md)
+- [Update member's role in team](team-update-members.md)
+- [Remove member from team](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -94,3 +97,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

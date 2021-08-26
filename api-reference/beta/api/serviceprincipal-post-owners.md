@@ -3,7 +3,7 @@ title: "servicePrincipal: Add owner"
 description: "Add an owner for the service principal."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -73,6 +73,10 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-serviceprincipal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-serviceprincipal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -81,9 +85,7 @@ In the request body, supply a JSON representation of a [directoryObject](../reso
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -101,3 +103,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+
+

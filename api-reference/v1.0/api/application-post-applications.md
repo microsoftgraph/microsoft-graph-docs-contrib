@@ -4,7 +4,7 @@ description: "Create a new application."
 author: "sureshja"
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Create application
@@ -23,8 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
+|Delegated (personal Microsoft account) | Application.ReadWrite.All |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -84,9 +84,9 @@ Content-length: 67
 
 
 ### Response
-Here is an example of the response. 
+The following is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -165,3 +165,4 @@ Content-length: 1145
   ]
 }
 -->
+

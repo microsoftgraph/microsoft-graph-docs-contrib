@@ -3,7 +3,7 @@ title: "Delete an appRoleAssignment granted for a service principal"
 description: "Delete an appRoleAssignment granted for a service principal."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
+DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
 
 > [!NOTE]
@@ -55,6 +55,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 Here is an example of the request to delete an app role assignment from the resource service principal.
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -62,7 +63,7 @@ Here is an example of the request to delete an app role assignment from the reso
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo/{id}
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignedto-csharp-snippets.md)]
@@ -82,6 +83,9 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo
 
 ---
 
+
+
+In this example, `{resource-SP-id}` is the id of the resource service principal, and `{appRoleAssignment-id}` is the id of the appRoleAssignment object that represents an assignment to the user, group, or client service principal.
 
 ### Response
 
@@ -109,3 +113,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

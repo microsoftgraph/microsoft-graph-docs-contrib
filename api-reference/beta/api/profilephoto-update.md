@@ -49,7 +49,7 @@ To update the photo for a team:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /groups/{teamId}/photo/$value`
+PUT /groups/{teamId}/photo/$value
 ```
 
 ## Request headers
@@ -89,6 +89,10 @@ Binary data for the image
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilephoto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-profilephoto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -96,9 +100,7 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.profilePhoto"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -117,3 +119,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

@@ -2,7 +2,7 @@
 title: "groupSettingTemplate resource type"
 description: "Group setting templates represent system-defined settings available to the tenant."
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -67,3 +67,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -2,7 +2,7 @@
 title: "teamClassSettings resource type"
 description: "Represents settings specific to teams of type Class."
 localization_priority: Normal
-author: "clearab"
+author: "akjo"
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -45,3 +45,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

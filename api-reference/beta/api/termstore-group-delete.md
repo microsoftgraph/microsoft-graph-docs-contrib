@@ -17,7 +17,7 @@ Delete a [group](../resources/termstore-group.md) object in the term [store].
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account) |TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
@@ -71,6 +71,10 @@ DELETE https://graph.microsoft.com/beta/termStore/groups/{groupId}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-from-store-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-group-from-store-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -101,3 +105,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -8,11 +8,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var type = "ColumnStacked";
 
-var sourceData = "A1:B1";
+var sourceData = JsonDocument.Parse(@"""A1:B1""");
 
 var seriesBy = "Auto";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts
 	.Add(type,seriesBy,sourceData)
 	.Request()
 	.PostAsync();

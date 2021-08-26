@@ -3,14 +3,15 @@ title: "App migration planning checklist"
 description: "Checklist for migrating your apps from Azure AD Graph to Microsoft Graph"
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "azure-active-directory"
+ms.prod: "applications"
 ---
 
 # App migration planning checklist
 
-> [!Important]
-> Azure AD Graph API is now deprecated. We will continue to provide technical support and security updates but will no longer provide feature updates.
-> Starting June 30th, 2022, we will end support for Azure AD Graph and will no longer provide technical support or security updates. Apps using Azure AD Graph after this time will no longer receive responses from the Azure AD Graph endpoint.
+> [!WARNING]
+> **Azure AD Graph is deprecated**. To avoid loss of functionality, migrate your applications to Microsoft Graph before June 30, 2022 when Azure AD Graph API endpoints will stop responding to requests.
+>
+> Microsoft will continue technical support and apply security fixes for Azure AD Graph until June 30, 2022 when all functionality and support will end. If you fail to migrate your applications to Microsoft Graph before June 30, 2022, you put their functionality and stability at risk.
 
 Use the following checklist to plan your migration.
 
@@ -48,9 +49,9 @@ Use the [Graph Explorer](https://aka.ms/ge) to experiment with new calls and to 
 
 Before updating your app for everyone, ensure you test thoroughly and stage your rollout to your customer audience.
 
-Now you've made the switch to Microsoft Graph, it's never been easier for you to unlock many more datasets and features that are now at your fingertips. You can get a taste of what's possible by looking at some [examples](/graph/examples).
+Now you've made the switch to Microsoft Graph, it's never been easier for you to unlock many more datasets and features that are now at your fingertips. You can get a taste of what's possible by looking at some of the [Major services and features in Microsoft Graph](./overview-major-services.md).
 
-If you're currently using the [AD authentication library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), consider switching to the [Microsoft authentication library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL).
+[Microsoft authentication library](/azure/active-directory/develop/reference-v2-libraries) (MSAL) is now the recommended authentication library for use with the Microsoft identity platform. If you're currently using the [AD authentication library](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), plan to switch to MSAL. See further guidance to [migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
 
 ## Next Steps
 

@@ -3,8 +3,8 @@ title: "privilegedRoleAssignment resource type"
 description: "Represents a privileged role assignment for a particular user. "
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # privilegedRoleAssignment resource type
@@ -81,3 +81,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

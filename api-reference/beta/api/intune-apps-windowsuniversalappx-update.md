@@ -3,7 +3,7 @@ title: "Update windowsUniversalAppX"
 description: "Update the properties of a windowsUniversalAppX object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Update the properties of a [windowsUniversalAppX](../resources/intune-apps-windo
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -68,6 +68,8 @@ The following table shows the properties that are required when you create the [
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -92,7 +94,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1461
+Content-length: 1610
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -117,6 +119,8 @@ Content-length: 1461
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -136,7 +140,11 @@ Content-length: 1461
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true,
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "identityVersion": "Identity Version value"
 }
@@ -147,7 +155,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1633
+Content-Length: 1782
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -175,6 +183,8 @@ Content-Length: 1633
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -194,11 +204,16 @@ Content-Length: 1633
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true,
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

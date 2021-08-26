@@ -1,9 +1,9 @@
 ---
 title: "Get deviceManagementDerivedCredentialSettings"
 description: "Read properties and relationships of the deviceManagementDerivedCredentialSettings object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -69,6 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -81,6 +82,7 @@ Content-Length: 155
   }
 }
 ```
+
 
 
 

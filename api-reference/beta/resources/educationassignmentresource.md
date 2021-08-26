@@ -23,13 +23,12 @@ will receive a copy of this resource in the resource list of their submission. E
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Read properties and relationships of an **educationAssignmentResource** object.|
-|[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md)	|Update an **educationAssignmentResource** object. |
 |[Delete](../api/educationassignmentresource-delete.md) | None |Delete an **educationAssignmentResource** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|Indicates whether this resource should be copied to each student submission for modification and submission.|
+|distributeForStudentWork|Boolean|Indicates whether this resource should be copied to each student submission for modification and submission. Required|
 |id|String| ID of this resource. Read-only.|
 |resource|[educationResource](educationresource.md)|Resource object that has been associated with this assignment.|
 
@@ -70,3 +69,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+
