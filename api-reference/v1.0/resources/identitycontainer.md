@@ -35,14 +35,17 @@ None.
 
 ## JSON representation
 
-None.
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2021-08-24 00:00:00 UTC -->
+The following is a JSON representation of the resource.
 <!-- {
-  "type": "#page.annotation",
-  "description": "identityContainer resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.identityContainer",
+  "openType": false
+}
+-->
+
+``` json
+{
+  "@odata.type": "#microsoft.graph.identityContainer",
+}
+```
