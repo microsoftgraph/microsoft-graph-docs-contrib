@@ -106,7 +106,7 @@ Because a Teams app can be installed for a user, in a team, or in a chat, the no
 
 For details about what topics are supported for each scenario, see the specific APIs. Custom text-based topics are supported for all scenarios.
 
-> **Note:** Activity icon is based on context the request is made in. If the request was made with delegated permissions, user's photo appears as the avatar, while the Teams app icon appears as activity icon. In application-only context, the Teams app icon is used as Avatar and activity icon is ommited.
+> **Note:** The activity icon is based on the context the request is made in. If the request is made with delegated permissions, the user's photo appears as the avatar, while the Teams app icon appears as activity icon. In an application-only context, the Teams app icon is used as the avatar and activity icon is ommited.
 
 ### Example 1: Notify a user about a task created in a chat
 
