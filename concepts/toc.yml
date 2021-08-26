@@ -673,20 +673,24 @@ items:
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Build a Microsoft Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Build a Microsoft Teams tab with Single Sign-On (SSO)
+                href: toolkit/get-started/build-a-microsoft-teams-sso-tab.md
               - name: Build an Electron app
                 href: toolkit/get-started/build-an-electron-app.md
           - name: Providers
             items:
               - name: Using the providers
                 href: toolkit/providers/providers.md
-              - name: MSAL provider
+              - name: Msal provider
                 href: toolkit/providers/msal.md
-              - name: MSAL 2 provider
+              - name: Msal2 provider
                 href: toolkit/providers/msal2.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
                 href: toolkit/providers/teams.md
+              - name: Microsoft Teams Msal2 provider
+                href: toolkit/providers/teams-msal2.md
               - name: Electron provider
                 href: toolkit/providers/electron.md
               - name: Proxy provider

@@ -37,7 +37,7 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 
 The following example shows how to add the [MSAL 2 Provider](../providers/msal2.md), but you can follow the same model with any of the providers.
 >[!NOTE] 
->If you are currently using the MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.
+>If you are currently using the MsalProvider and would like to update to the Msal2Provider, follow the steps in the [Msal2Provider](../providers/msal2.md#migrating-from-msalprovider-to-msal2provider) article.
 
 Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
 
