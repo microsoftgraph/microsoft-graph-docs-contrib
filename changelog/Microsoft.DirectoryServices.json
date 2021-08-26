@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+       {
+         "Id": "aa34ca74-c3b4-4981-ba1c-809256deacb0",
+         "ApiChange": "Method",
+         "ChangedApiName": "Delete",
+         "ChangeType": "Addition",
+         "Description": "Added the [delete](https://docs.microsoft.com/en-us/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta) operation for an [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+         "Target": "reprocess"
+       }
+      ],
+      "Id": "aa34ca74-c3b4-4981-ba1c-809256deacb0",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-25T14:10:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
     "ChangeList": [
      {
        "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
