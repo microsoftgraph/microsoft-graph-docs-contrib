@@ -1,7 +1,7 @@
 ---
 title: "conversationMember: add"
 description: "Add members in bulk to team."
-author: "nkramer"
+author: "abshar"
 doc_type: "apiPageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
