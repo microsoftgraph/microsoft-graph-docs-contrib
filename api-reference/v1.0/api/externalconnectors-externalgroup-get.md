@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code with the externalGroup object.
+If successful, this method returns a `200 OK` response code with the **externalGroup** object.
 
 ## Example
 
