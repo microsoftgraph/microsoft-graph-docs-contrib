@@ -40,7 +40,7 @@ GET /me/drive/items/{id}/workbook/operations/{operation-id}
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 #### Response succeeded
 
-The following is the response with the status of `succeeded`. The **resourceLocation** is a group of URLs that represent the return values of the original long-running operation. See the following for details about how to get the result from the **resourceLocation** property.
+The following is the response with the status of `succeeded`. The **resourceLocation** is a group of URLs that represent the return values of the original long-running operation. See the following table for details about how to get the result from the **resourceLocation** property.
 
 | Operation      |resourceLocation|
 |:----------|:----------|
