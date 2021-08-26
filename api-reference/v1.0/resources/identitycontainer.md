@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
 }
 -->
 
-``` json
+```json
 {
   "@odata.type": "#microsoft.graph.identityContainer"
 }
