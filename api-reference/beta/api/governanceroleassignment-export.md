@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1ResourceRoles-deprecation](../../includes/pim-v1ResourceRoles-deprecation.md)]
+[!INCLUDE [pim-v1ResourceRoles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Retrieve a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) in the format `application/octet-stream`, which can be parsed as a .csv file in the browser.
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1AADRoles-deprecation.md)]
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 The following methods are provided by PIM for Azure AD roles. The service is built on top of OData. To filter the results from a query, use the standard OData `$filter` expressions in the URIs.
 

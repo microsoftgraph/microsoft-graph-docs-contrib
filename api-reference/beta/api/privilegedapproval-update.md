@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1AADRoles-deprecation.md)]
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Update the properties of privilegedapproval object.
 ## Permissions

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1ResourceRoles-deprecation](../../includes/pim-v1ResourceRoles-deprecation.md)]
+[!INCLUDE [pim-v1ResourceRoles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Update the properties of [governanceRoleSetting](../resources/governancerolesetting.md).
 
