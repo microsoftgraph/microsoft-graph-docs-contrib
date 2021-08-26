@@ -18,17 +18,17 @@ Update the properties of the [event](../resources/event.md) object.
 Include only those properties in the request body that require updating. 
 
 ### Notes for updating specific properties
-Note the following behaviors or recommendations when updating these properties:
+Note the following behaviors or recommendations when updating the corresponding properties:
 
-- **attendees** property
+- **attendees** property and meeting updates
   - An event update that includes only the **attendees** property in the request body sends a meeting update to only the attendees that have changed.
   - An event update that removes an attendee specified as a member of a distribution list sends a meeting update to all the attendees.
 
-- **body** property
+- **body** property and online meetings
 
   Before updating the body of an event that has been set up as an online meeting, be sure to first get the **body** property, apply the appropriate changes to the content, and preserve the meeting blob for online meeting. Inadvertently removing the meeting blob from the body would disable meeting online. 
 
-- **end** and **start** properties
+- **end** and **start** properties and their time zones
   
   When updating the time zone of the start or end time of an event, first [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
 
