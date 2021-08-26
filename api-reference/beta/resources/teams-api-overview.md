@@ -28,10 +28,11 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 |[call](../resources/call.md)| [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md), [mute all participants](../api/participant-muteall.md) |
 |[schedule](../resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
-|activityFeedNotification| [Send notification to user in scope of a chat](../api/chat-sendactivitynotification.md), [Send notification to user in scope of a team](../api/team-sendactivitynotification.md), [Send notification to user in personal scope](../api/userteamwork-sendactivitynotification.md)|
 |[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
 |[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
+|[tag](../resources/teamworkTag.md)|[List](../api/teamworkTag-list.md), [Create](../api/teamworkTag-post.md), [Get](../api/teamworkTag-get.md), [Update](../api/teamworkTag-update.md), [Delete](../api/teamworkTag-delete.md)|
+|[tagMember](../resources/teamworkTagMember.md)|[List](../api/teamworkTagMember-list.md), [Create](../api/teamworkTagMember-post.md), [Get](../api/teamworkTagMember-get.md), [Delete](../api/teamworkTagMember-delete.md)|
 
 ## Microsoft Teams limits
 
@@ -69,43 +70,12 @@ The following are the differences at the API level between teams and groups:
 
 ## Membership changes in Microsoft Teams
 
-To add members and owners to a team, change the membership of the [group](../resources/group.md) with the same ID.
-
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Add member](../api/group-post-members.md)	| POST	    | /groups/{id}/members/$ref  |
-| [Remove member](../api/group-delete-members.md)	| DELETE	| /groups/{id}/members/{userId}/$ref |
-| [Add owner](../api/group-post-owners.md)     | POST	    | /groups/{id}/owners/$ref |
-| [Remove owner](../api/group-delete-owners.md)	| DELETE	| /groups/{id}/owners/{userId}/$ref |
-| [Update team](../api/team-update.md)	| PATCH     | /teams/{id} |
-
-We recommend that when you add an owner, you also add that user as a member.
-If a team has an owner who is not also a member, ownership and membership changes might not show up immediately in Microsoft Teams.
-In addition, different apps and APIs will handle that differently.
-For example, Microsoft Teams will show teams that the user is either a member or an owner of, while the Microsoft Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of.
-To avoid confusion, add all owners to the members list as well.
-
-Known issue: when DELETE /groups/{id}/owners is called, the user is also removed from the /groups/{id}/members list. To work around this, we recommend that you remove the user from both owners and members, then wait 10 seconds, then add them back to members.
-
-When adding and removing members and owners, don't put braces { } around the ID.
-
-| Speed | Syntax |
-| ------ | ----- |
-| Fast | https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref |
-| Slow | https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref |
-
-Similarly, if the `userId` in the URL or payload is expressed as a UPN rather than as a GUID, the performance will be slower.
-
-| Speed | Syntax |
-| ------ | ----- |
-| Fast | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
-| Slow | john@example.com |
-
-When the slower path is taken, if a current team member or owner is signed in to the Microsoft Teams application/website, the change will be reflected within an hour.
-If none of those users are signed in to the Microsoft Teams application/website, the change will not be reflected until an hour after one of them signs in.
-
-> [!Note]
-> Tenant guests are always processed via the slow path.
+| [Add member](../api/team-post-members.md)	| POST	    | /teams/{team-id}/members  |
+| [Remove member](../api/team-delete-members.md)	| DELETE	| /teams/{team-id}/members/{membership-id} |
+| [Update member's role](../api/team-update-members.md)	| PATCH	| /teams/{team-id}/members/{membership-id} |
+| [Update team](../api/team-update.md)	| PATCH     | /teams/{team-id} |
 
 ## Polling requirements
 

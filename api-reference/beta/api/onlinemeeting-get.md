@@ -291,7 +291,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 ### Example 3: Retrieve an online meeting by JoinWebUrl
-You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID is not known but the JoinWebUrl is, such as when a user creates a meeting (for example in the Microsoft Teams client), and a seperate application needs to retrieve meeting details as a followup action.
+You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID isn't known but the JoinWebUrl is, such as when a user creates a meeting (for example in the Microsoft Teams client), and a seperate application needs to retrieve meeting details as a follow-up action.
 
 #### Request
 

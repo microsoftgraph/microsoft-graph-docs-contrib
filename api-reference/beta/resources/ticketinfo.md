@@ -1,7 +1,7 @@
 ---
 title: "ticketInfo resource type"
 description: "The object that represents ticket information related to role assignment requests"
-author: "shauliu"
+author: "shauliu1"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType

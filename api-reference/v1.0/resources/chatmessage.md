@@ -48,9 +48,9 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique Id of the message.|
 |replyToId| string | Read-only. Id of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.) |
-|from|[identitySet](identityset.md)| Read only. Details of the sender of the chat message.|
+|from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Read only. Details of the sender of the chat message.|
 |etag| string | Read-only. Version number of the chat message. |
-|messageType|string|The type of chat message. The possible value is: `message`.|
+|messageType|chatMessageType|The type of chat message. The possible values are: `message`, `chatEvent`, `typing`, `unknownFutureValue`.|
 |createdDateTime|dateTimeOffset|Timestamp of when the chat message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed. |
 |lastEditedDateTime|dateTimeOffset|Read only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Teams UI. If no edits are made the value is `null`.|
@@ -102,7 +102,7 @@ The following is a JSON representation of the resource.
 {
   "id": "string (identifier)",
   "replyToId": "string (identifier)",
-  "from": {"@odata.type": "microsoft.graph.identitySet"},
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
   "etag": "string",
   "messageType": "string",
   "createdDateTime": "string (timestamp)",

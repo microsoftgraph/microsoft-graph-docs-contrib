@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All |
+|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 ### Permissions for chat
 
