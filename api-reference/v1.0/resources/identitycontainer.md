@@ -38,7 +38,6 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityContainer",
   "openType": false
 }
@@ -46,6 +45,6 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityContainer",
+  "@odata.type": "#microsoft.graph.identityContainer"
 }
 ```
