@@ -4158,6 +4158,8 @@ items:
           href: api/educationuser-list-taughtclasses.md
         - name: Create rubric
           href: api/educationuser-post-rubrics.md
+        - name: List assignments
+          href: api/educationuser-list-assignments.md          
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -4259,7 +4261,7 @@ items:
       - name: Outcome
         items:
         - name: Outcome
-          href: resources/educationoutcome.md
+          href: resources/educationoutcome.md     
         - name: Feedback outcome type
           href: resources/educationfeedbackoutcome.md
         - name: Points outcome type
