@@ -92,7 +92,8 @@ Your tab needs to run as a registered Azure AD application to obtain an access t
 
 1. Copy the client secret value before you leave this page. You will need this for your backend service.
 
-    > [!IMPORTANT] This client secret is never shown again, so make sure you copy it now.
+    >[!IMPORTANT]
+    >This client secret is never shown again, so make sure you copy it now.
 
 1. Navigate to **API permissions** under **Manage**. Select **Add a permission** > **Microsoft Graph** > **Delegated permissions**, then add the following permissions   
     - `email`, `offline_access`, `openid`, `profile`, `User.Read`
@@ -303,7 +304,8 @@ If you are using React, we recommend using the React components instead from the
 Take a look at the [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node) for the full implementation.
 
 If everything has been configured correctly, you will see the `Person` component rendered without the need to log in.
-> [!IMPORTANT] If you haven't pre-consented, you might have to consent via a dialog prompt.
+>[!IMPORTANT]
+>If you haven't pre-consented, you might have to consent via a dialog prompt.
 
 ## Next Steps
 - Try out the components in the [playground](https://mgt.dev).
