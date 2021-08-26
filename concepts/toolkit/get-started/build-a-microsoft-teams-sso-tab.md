@@ -26,7 +26,7 @@ You can use the Microsoft Graph Toolkit in your application by referencing the l
 # [unpkg](#tab/unpkg)
 To use the Toolkit and the Teams SDK via the loaders, add the reference in a script to your code:
 
-```html
+```HTML
 <!-- Microsoft Teams sdk must be referenced before the toolkit -->
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -49,7 +49,7 @@ Unless your application is pre-consented by an admin, your users might need to c
 Here is an example of basic page that handles the auth flow in the popup.
 
 # [unpkg](#tab/unpkg)
-```html
+```HTML
 <!DOCTYPE html>
 <html>
   <head>
@@ -65,7 +65,7 @@ Here is an example of basic page that handles the auth flow in the popup.
 </html>
 ```
 # [npm](#tab/npm)
-```js
+```JavaScript
 import { TeamsMsal2Provider } from '@microsoft/mgt-teams-msal2-provider';
 
 TeamsMsal2Provider.handleAuth();
@@ -92,8 +92,7 @@ Your tab needs to run as a registered Azure AD application to obtain an access t
 
 1. Copy the client secret value before you leave this page. You will need this for your backend service.
 
-    > **IMPORTANT**
-    > This client secret is never shown again, so make sure you copy it now.
+    > [!IMPORTANT] This client secret is never shown again, so make sure you copy it now.
 
 1. Navigate to **API permissions** under **Manage**. Select **Add a permission** > **Microsoft Graph** > **Delegated permissions**, then add the following permissions   
     - `email`, `offline_access`, `openid`, `profile`, `User.Read`
@@ -130,7 +129,7 @@ Have a look at the [Teams SSO Node Sample](https://github.com/microsoftgraph/mic
 
 Below is a reference implementation of a node express server:
 
-```ts
+```TypeScript
 import dotenv from 'dotenv';
 import express from 'express';
 import path from 'path';
@@ -249,11 +248,11 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 
 For SSO-mode, make sure to provide `sso-url` / `ssoUrl` and have it point to your backend API.
 
-# [html](#tab/html)
+# [HTML](#tab/HTML)
 
 Add the `mgt-teams-msal2-provider` in your html
 
-```html
+```HTML
 <mgt-teams-msal2-provider 
   client-id="<YOUR_CLIENT_ID>"
   auth-popup-url="/tabauth"
@@ -265,11 +264,11 @@ Add the `mgt-teams-msal2-provider` in your html
 
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application, replace the `auth-popup-url` with the full or relative path to your auth page, and replace `sso-url` with the full or relative path to your backend service.
 
-# [js](#tab/js)
+# [JavaScript](#tab/JavaScript)
 
 To initialize the provider in your JavaScript code, import TeamsMsal2Provider and set the `globalProvider`.
 
-```ts
+```TypeScript
 import {Providers} from '@microsoft/mgt-element';
 import {TeamsMsal2Provider, HttpMethod} from '@microsoft/mgt-teams-msal2-provider';
 import * as MicrosoftTeams from "@microsoft/teams-js";
@@ -304,7 +303,7 @@ If you are using React, we recommend using the React components instead from the
 Take a look at the [Teams SSO Node Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/teams-sso-node) for the full implementation.
 
 If everything has been configured correctly, you will see the `Person` component rendered without the need to log in.
-> IMPORTANT! If you haven't pre-consented, you might have to consent via a dialog prompt. 
+> [!IMPORTANT] If you haven't pre-consented, you might have to consent via a dialog prompt.
 
 ## Next Steps
 - Try out the components in the [playground](https://mgt.dev).
