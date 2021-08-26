@@ -248,7 +248,7 @@ items:
             href: education-rubric-overview.md
           - name: Upload files
             href: education-upload-resource-overview.md
-          - name: Assignment and Submission states transition
+          - name: Assignment and submission state transitions
             href: assignments-submissions-states-transition.md            
       - name: Files
         href: onedrive-concept-overview.md
