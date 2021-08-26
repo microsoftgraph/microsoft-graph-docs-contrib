@@ -28,6 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                                                     |
 | Application                            | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
+> **Note:** To list the members of a group with hidden membership, the Member.Read.Hidden permission is required.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

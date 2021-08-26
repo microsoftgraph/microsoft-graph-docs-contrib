@@ -26,9 +26,9 @@ The following permissions are required to call this API. To learn more, includin
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Reports.Read.All<br>AuditLogs.Read.All|
+|Delegated (work or school account)|Reports.Read.All, AuditLog.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Reports.Read.All<br>AuditLogs.Read.All|
+|Application|Reports.Read.All, AuditLog.Read.All|
 
 In order to access the API, [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) is required:
 
