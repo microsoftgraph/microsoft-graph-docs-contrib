@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for membership changes in teams and channels using Microsoft Graph
 
-Change notifications enable you to subscribe to membership changes (create, update, and delete) in teams and private channels. You can get notified whenever member is added, removed or updated in a team. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications enable you to subscribe to membership changes (create, update, and delete) in teams and private channels. You can get notified whenever a member is added, removed or updated in a team or in a private channel. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
 ## Subscribe to changes in membership of a particular team
 
