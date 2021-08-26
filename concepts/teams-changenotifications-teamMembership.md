@@ -15,7 +15,7 @@ Change notifications enable you to subscribe to membership changes (create, upda
 
 To get change notifications for membership changes in a particular team, subscribe to `/teams/{team-id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -43,11 +43,11 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to membership changes in all the private channels of a particular team
+## Subscribe to membership changes in all private channels of a particular team
 
-To get change notifications for membership changes in all the private channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for membership changes in all private channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-#### Permissions
+### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
