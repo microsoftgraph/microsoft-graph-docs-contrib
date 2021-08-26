@@ -10079,20 +10079,22 @@ items:
       - name: Users
         href: resources/educationuser.md
         items:
-        - name: List schools
-          href: api/educationuser-list-schools.md
-        - name: List classes
-          href: api/educationuser-list-classes.md
-        - name: List rubrics
-          href: api/educationuser-list-rubrics.md
         - name: Get user
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
-        - name: Get delta
-          href: api/educationuser-delta.md
+        - name: List classes
+          href: api/educationuser-list-classes.md
+        - name: List rubrics
+          href: api/educationuser-list-rubrics.md
         - name: Create rubric
           href: api/educationuser-post-rubrics.md
+        - name: Get delta
+          href: api/educationuser-delta.md
+        - name: List schools
+          href: api/educationuser-list-schools.md
+        - name: List assignments
+          href: api/educationuser-list-assignments.md            
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -13605,7 +13607,7 @@ items:
           href: api/sitepage-delete.md
         - name: Publish
           href: api/sitepage-publish.md
-      - name: Taxonomy (preview)
+      - name: Taxonomy
         displayname: Taxonomy API
         items:
         - name: Store
