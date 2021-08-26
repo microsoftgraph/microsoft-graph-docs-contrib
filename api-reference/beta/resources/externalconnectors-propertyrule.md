@@ -1,6 +1,6 @@
 ---
 title: "propertyRule resource type"
-description: "Property rules are a set of matching conditions that dictate when the template should be displayed."
+description: "Property rules are a set of conditions that dictate when the template should be displayed."
 author: "emzho"
 localization_priority: Normal
 ms.prod: "search"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Property rules are a set of matching conditions that dictate when the template should be displayed. Rules are in the format of: "property (from the item schema)" + "operation" + "value(s)", with the option of specifying AND/OR in "valuesJoinedBy". For example, a rule could specify that "itemTitle" "contains" "contoso". Therefore, the template will not be displayed unless the item's "itemTitle" contained the value "contoso".
+Property rules are a set of conditions that dictate when the template should be displayed. Rules are in the format of: "property (from the item schema)" + "operation" + "value(s)", with the option of specifying AND/OR in "valuesJoinedBy". For example, a rule could specify that "itemTitle" "contains" "contoso". Therefore, the template will not be displayed unless the item's "itemTitle" contained the value "contoso".
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|operation|ruleOperation|This specifies the operations to be performed during evaluation of the rule, where "property" and "values" are the respective operands. Possible values are: `null`, `equals`, `notEquals`, `contains`, `notContains`, `lessThan`, `greaterThan`, `startsWith`, `unknownFutureValue`.|
-|property|String|This property from the item schema is the first operand of the entire rule expression.|
-|values|String collection|A single value or multiple values that can be designated by the developer to create matching conditions if it fulfils the "property" and "operation".|
-|valuesJoinedBy|binaryOperator|When there are multiple rules for a single template, the rules can be evaluated with logical AND (all statements must be true for the template to be displayed) or logical OR (only 1 statement must be true for the template to be displayed). Possible values are: `or`, `and`.|
+|operation|ruleOperation|This specifies the operations to be performed during evaluation of a single rule, where `property` and a string from the `values` collection are the respective operands. Possible values are: `null`, `equals`, `notEquals`, `contains`, `notContains`, `lessThan`, `greaterThan`, `startsWith`, `unknownFutureValue`. Required.|
+|property|String|The property from the [externalItem](../resources/externalconnectors-externalitem.md) schema. Required.|
+|values|String collection|A collection with one or many strings. The specified string(s) will be matched with the specified property using the specified operation. Required.|
+|valuesJoinedBy|binaryOperator|The join operator for evaluating multiple rules. For example, if `and` is specified, then all rules must be true for the property rule to be true. Possible values are: `or`, `and`. Required.|
 
 ## Relationships
 None.
