@@ -1,13 +1,13 @@
 ---
-title: "Get change notifications for membership changes in Teams and channels using Microsoft Graph"
-description: "Get change notifications for any changes (create, update, and delete) in Teams and channels membership using Microsoft Graph"
+title: "Get change notifications for membership changes in teams and channels using Microsoft Graph"
+description: "Get change notifications for any changes (create, update, and delete) in teams and channels membership using Microsoft Graph."
 author: "anandab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for membership changes in Teams/channels using Microsoft Graph
+# Get change notifications for membership changes in teams and channels using Microsoft Graph
 
 Change notifications enable you to subscribe to membership changes (create, update, and delete) in teams and private channels. You can get notified whenever member is added, removed or updated in a team. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
@@ -25,7 +25,7 @@ To get change notifications for membership changes in a particular team, subscri
 
 >**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-#### Example
+### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -55,9 +55,8 @@ To get change notifications for membership changes in all the private channels i
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | ChannelMember.Read.All, ChanelMember.ReadWrite.All   | beta |
 
->**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-#### Example
+### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -107,7 +106,7 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-The payload for the channel membership events is similar to the above payload except the resource data is pointing to a channel member, unlike the above example where it's pointing to a team member.
+The payload for the channel membership events is similar to the previous payload except that the **resource** property points to a channel member instead of a team member.
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
@@ -147,7 +146,7 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-The payload for the channel membership events is similar to the above payload except the resource data.
+The payload for the channel membership events is similar to the previous payload except that the **resource** property points to a channel member instead of a team member.
 
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message. GET calls will always return the current state of the message. If the message is changed between when the notification is sent and when the message is retrieved, the operation will return the updated message.
 
