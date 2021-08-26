@@ -19,7 +19,7 @@ Represents a row of data in the Public Switch Telephone Network (PSTN) call log.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow collection](callrecords-pstncalllogrow.md) | Read the properties of a **pstnCallLogRow** objects. |
+| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow collection](callrecords-pstncalllogrow.md) | List **pstnCallLogRow** objects in a call record. |
 
 ## Properties
 
