@@ -18,11 +18,11 @@ const educationAssignment = {
       content: 'Read chapters 1 through 3'
     },
       grading: {
-        '@odata.type': 'educationAssignmentPointsGradeType',
+        '@odata.type': '#microsoft.graph.educationAssignmentPointsGradeType',
         maxPoints: 100
       },
       assignTo: {
-        '@odata.type': 'educationAssignmentClassRecipient'
+        '@odata.type': '#microsoft.graph.educationAssignmentClassRecipient'
       },
       status: 'draft',
       allowStudentsToAddResourcesToSubmission: true
