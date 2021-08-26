@@ -1940,38 +1940,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [isPublished](https://docs.microsoft.com/en-us/graph/api/isPublished?view=graph-rest-1.0) method to the [isPublished](https://docs.microsoft.com/en-us/graph/api/isPublished?view=graph-rest-1.0) resource.",
           "Target": "isPublished"
-        },
-        {
-          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "NavigationPropertyBinding",
-          "ChangedApiName": "sites/contentTypes/columns/term/parentTerm",
-          "ChangeType": "Addition",
-          "Description": "Added the [sites/contentTypes/columns/term/parentTerm](https://docs.microsoft.com/en-us/?view=graph-rest-1.0) resource",
-          "Target": "sites"
-        },
-        {
-          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "NavigationPropertyBinding",
-          "ChangedApiName": "sites/contentTypes/columns/term/termSet",
-          "ChangeType": "Addition",
-          "Description": "Added the [sites/contentTypes/columns/term/termSet](https://docs.microsoft.com/en-us/?view=graph-rest-1.0) resource",
-          "Target": "sites"
-        },
-        {
-          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "NavigationPropertyBinding",
-          "ChangedApiName": "sites/contentTypes/documentSet/sharedColumns",
-          "ChangeType": "Addition",
-          "Description": "Added the [sites/contentTypes/documentSet/sharedColumns](https://docs.microsoft.com/en-us/?view=graph-rest-1.0) resource",
-          "Target": "sites"
-        },
-        {
-          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
-          "ApiChange": "NavigationPropertyBinding",
-          "ChangedApiName": "sites/contentTypes/documentSet/welcomePageColumns",
-          "ChangeType": "Addition",
-          "Description": "Added the [sites/contentTypes/documentSet/welcomePageColumns](https://docs.microsoft.com/en-us/?view=graph-rest-1.0) resource",
-          "Target": "sites"
         }
       ],
       "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",

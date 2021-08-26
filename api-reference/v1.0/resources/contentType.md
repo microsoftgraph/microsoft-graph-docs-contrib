@@ -50,7 +50,7 @@ Content types allow you to define a set of columns that must be present on every
 | **isBuiltIn**            | Boolean| Specifies if a content type is a built-in content type. |
 | **documentSet**       | [documentSet][]      | [Document Set](/sharepoint/governance/document-set-planning#about-document-sets) metadata.|
 | **documentTemplate**  | [documentSetContent][] | Document template metadata. To make sure that documents have consistent content across a site and its subsites, you can associate a Word, Excel, or PowerPoint template with a site content type.|
-| **associatedHubsUrls**       | Collection(string) | List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.|
+| **associatedHubsUrls**       | Collection(string) | List of canonical URLs for hub sites with which this content type is associated to. This will contain all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.|
 | **propagateChanges**   | Boolean              | If `true`, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.|
 
 
@@ -65,7 +65,7 @@ Content types allow you to define a set of columns that must be present on every
 | **columnPositions**       | Collection([columnDefinition][]) | Column order information in a content type.|
 | **columns**     | Collection([columnDefinition][])  | The collection of column definitions for this contentType.|
 
-For more information, see [Introduction to content types and content type publishing][contentTypeIntro] .
+For more information, see [Introduction to content types and content type publishing][contentTypeIntro].
 
 [columnLink]: columnlink.md
 [contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5

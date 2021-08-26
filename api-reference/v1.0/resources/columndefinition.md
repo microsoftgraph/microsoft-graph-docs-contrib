@@ -36,7 +36,7 @@ To list hidden **field** values on [listItems][listItem], include the desired co
 
 Columns can hold data of various types.
 The following properties indicate what type of data a column stores, as well as additional settings for that data.
-The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text, term, hyperlinkOrPicture, thumbnail, contentApprovalStatus) are mutually exclusive; a column can only have one of them specified.
+The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text, term, hyperlinkOrPicture, thumbnail, and contentApprovalStatus) are mutually exclusive; a column can only have one of them specified.
 
 | Property name           | Type    | Description|
 |:------------------------|:--------|:-----------------------------------------|
