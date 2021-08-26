@@ -4,7 +4,7 @@ description: "Update the properties of privilegedapproval object."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Update privilegedapproval
