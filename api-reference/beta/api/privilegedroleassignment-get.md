@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of privilegedRoleAssignm
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Get privilegedRoleAssignment

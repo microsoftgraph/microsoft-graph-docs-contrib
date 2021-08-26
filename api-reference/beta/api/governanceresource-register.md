@@ -4,7 +4,7 @@ description: "Register a governanceResource object in PIM."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # governanceResource: register

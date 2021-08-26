@@ -4,7 +4,7 @@ description: "Cancel a privilegedRoleAssignmentRequest."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Cancel privilegedRoleAssignmentRequest

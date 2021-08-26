@@ -4,7 +4,7 @@ description: "Represents the assignment of a user or group to a role."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # governanceRoleAssignment resource type

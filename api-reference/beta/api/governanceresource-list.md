@@ -4,7 +4,7 @@ description: "Retrieve a collection of governanceResource that the requestor has
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # List governanceResources

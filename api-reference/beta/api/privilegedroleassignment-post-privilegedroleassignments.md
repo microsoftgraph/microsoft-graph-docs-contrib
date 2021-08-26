@@ -4,7 +4,7 @@ description: "Use this API to create a new  privilegedRoleAssignment."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Create privilegedRoleAssignment

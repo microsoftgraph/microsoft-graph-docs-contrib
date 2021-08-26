@@ -4,7 +4,7 @@ description: "Make the role assignment eligible."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # privilegedRoleAssignment: makeEligible

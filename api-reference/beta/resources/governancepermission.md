@@ -4,7 +4,7 @@ description: "Represents the access permission that a governanceSubject has to a
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # governancePermission resource type

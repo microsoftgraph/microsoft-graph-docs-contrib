@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a governanceRoleSetti
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Get governanceRoleSetting
