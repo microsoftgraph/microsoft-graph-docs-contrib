@@ -4,6 +4,32 @@
     {
       "ChangeList": [
         {
+          "Id": "a48d4049-1776-4400-9bfd-f1d986e9e47f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added the [Hide chat](https://docs.microsoft.com/en-us/graph/api/chat-hideforuser?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-beta) resource that allows you to hide chat for a user in delegated context.",
+          "Target": "chat"
+        },
+        {
+          "Id": "a48d4049-1776-4400-9bfd-f1d986e9e47f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added the [Unhide chat](https://docs.microsoft.com/en-us/graph/api/chat-hideforuser?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-beta) resource that allows you to unhide chat for a user in delegated context.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "a48d4049-1776-4400-9bfd-f1d986e9e47f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-26T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "efc25f28-5324-4493-bab5-525f84e9b4f2",
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
