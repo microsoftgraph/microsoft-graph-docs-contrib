@@ -36,7 +36,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.chatViewpoint",
-  "isHidden": "Boolean"
+  "isHidden": "Boolean",
   "lastMessageReadDateTime": "String (timestamp)"
 }
 ```
