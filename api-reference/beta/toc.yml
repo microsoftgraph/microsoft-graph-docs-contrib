@@ -13575,7 +13575,7 @@ items:
           href: api/contenttype-update.md
         - name: Delete
           href: api/contenttype-delete.md
-        - name: IsPublished
+        - name: Check publishing status
           href: api/contenttype-ispublished.md
         - name: Publish
           href: api/contenttype-publish.md
