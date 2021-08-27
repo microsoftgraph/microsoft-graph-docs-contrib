@@ -20,6 +20,7 @@ Represents user-specific properties of a [chat](../resources/chat.md). These pro
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|isHidden|Boolean|Represents if the chat is hidden for the user.|
 |lastMessageReadDateTime|DateTimeOffset|Represents the dateTime up until which the calling user has read [chatMessages](../resources/chatmessage.md) in a specific chat.|
 
 ## Relationships
@@ -35,6 +36,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.chatViewpoint",
+  "isHidden": "Boolean"
   "lastMessageReadDateTime": "String (timestamp)"
 }
 ```
