@@ -17,9 +17,10 @@ Contains information associated with meeting attendance report.
 
 ## Properties
 
-| Property            | Type    | Description|
-|:--------------------|:--------|:-----------|
-| attendanceRecords           | [attendanceRecord](attendanceRecord.md) collection  | The list of attendance records. |
+| Property              | Type                                               | Description                     |
+|:----------------------|:---------------------------------------------------|:--------------------------------|
+| totalParticipantCount | Int32                                              | Total number of participants.   |
+| attendanceRecords     | [attendanceRecord](attendanceRecord.md) collection | The list of attendance records. |
 
 ## JSON representation
 
@@ -35,6 +36,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "totalParticipantCount": "Int32",
   "attendanceRecords": [{"@odata.type": "#microsoft.graph.attendanceRecord"}]
 }
 ```

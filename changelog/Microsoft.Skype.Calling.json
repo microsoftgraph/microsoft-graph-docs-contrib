@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "11e3646a-457e-4fbb-bec6-677a72115730",
+          "ApiChange": "Property",
+          "ChangedApiName": "totalParticipantCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **totalParticipantCount** property to [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource.",
+          "Target": "meetingAttendanceReport"
+        }
+      ],
+      "Id": "11e3646a-457e-4fbb-bec6-677a72115730",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-27T21:40:54.5120151Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cb86c949-1f67-485e-8dc7-6ec8314361ab",
           "ApiChange": "Property",
           "ChangedApiName": "recordAutomatically",
