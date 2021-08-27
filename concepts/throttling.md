@@ -118,8 +118,8 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 
 | API                                                      | Resources      |
 |------------------------------------------------------------|-----------------|
-| Search API (preview)                  | <li>[External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta) |
-| Profile API                                      | <li>[Photo](/graph/api/resources/profilephoto?view=graph-rest-1.0)   |
+| Search API (preview)                  | <li>[External item (Microsoft Search)](/graph/api/resources/externalitem) |
+| Profile API                                      | <li>[Photo](/graph/api/resources/profilephoto)   |
 | Calendar API | <li>[event](/graph/api/resources/event) <li> [eventMessage](/graph/api/resources/eventmessage) <li> [calendar](/graph/api/resources/calendar) <li>  [calendarGroup](/graph/api/resources/calendargroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment) <li> [place (preview)](/graph/api/resources/place)   |
 | Mail API                                      | <li>[message](/graph/api/resources/message) <li>  [message](/graph/api/resources/message) <li> [mailFolder](/graph/api/resources/mailfolder) <li> [mailSearchFolder](/graph/api/resources/mailsearchfolder) <li> [messageRule](/graph/api/resources/messagerule) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 | Personal contacts API | <li>[contact](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
@@ -148,7 +148,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 
 The preceding limits apply to the following resources:
 
-|  |
+| <!-- fake header--> |
 |--|
 | <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
 
@@ -335,7 +335,7 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-|  |
+| <!-- fake header--> |
 |--|
 | <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
 
@@ -478,6 +478,6 @@ The following limits apply to requests on the assignment service API:
 | GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |  
 
 The preceding limits apply to the following resources: 
-[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)
-[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest)
-[educationResource](/graph/api/resources/educationresource?view=graph-rest)
+[educationAssignment](/graph/api/resources/educationassignment)
+[educationSubmission](/graph/api/resources/educationsubmission?)
+[educationResource](/graph/api/resources/educationresource)
