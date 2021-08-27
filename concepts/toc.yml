@@ -583,13 +583,13 @@ items:
           - name: Azure AD Graph
             displayName: Migration, Azure AD Graph
             items:
+              - name: Overview
+                href: migrate-azure-ad-graph-overview.md
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
                 expanded: true
                 items:
-                  - name: Overview
-                    href: migrate-azure-ad-graph-overview.md
                   - name: Requests
                     href: migrate-azure-ad-graph-request-differences.md
                   - name: Service features
