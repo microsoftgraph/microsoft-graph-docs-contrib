@@ -2,7 +2,7 @@
 title: "Get samlOrWsFedExternalDomainFederation"
 description: "Read the properties and relationships of a samlOrWsFedExternalDomainFederation object."
 author: "namkedia"
-localization_priority: Normal
+localization_priority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
+Read the properties and relationships of a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object for a specific [externalDomainName](../resources/externaldomainname.md).
 
 ## Permissions
 
