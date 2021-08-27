@@ -42,7 +42,7 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|domains|[externalDomainName](../resources/externaldomainname.md) collection|Collection of domain names of the external organizations the tenant is federating with. Supports $filter (eq).|
+|domains|[externalDomainName](../resources/externaldomainname.md) collection|Collection of domain names of the external organizations that the tenant is federating with. Supports `$filter` (`eq`).|
 
 ## JSON representation
 The following is a JSON representation of the resource.
