@@ -1,6 +1,40 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "04ef5a07-5391-43bc-b0b7-d92da9615a89",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "appRoleAssignments",
+          "ChangeType": "Change",
+          "Description": "Added support for paging for the **appRoleAssignments** navigation property on the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal.md) resource type. The **appRoleAssignments** navigation property returns app roles assigned directly to the service principal. Support for paging will be added to Microsoft Graph v1.0 in September 2021.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "19e145d6-3847-4a42-9a43-bfc7fb520642",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "appRoleAssignments",
+          "ChangeType": "Change",
+          "Description": "Added support for paging for the **appRoleAssignments** navigation property on the [user](https://docs.microsoft.com/en-us/graph/api/resources/user.md) resource type. The **appRoleAssignments** navigation property returns app roles assigned to the user directly, or assigned to the user indirectly through a group that the user is a member of. Support for paging will be added to Microsoft Graph v1.0 in September 2021.",
+          "Target": "user"
+        },        
+        {
+          "Id": "71bd7d3d-5e18-455c-9936-02c5a63b2d14",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "appRoleAssignments",
+          "ChangeType": "Change",
+          "Description": "Added support for paging for the **appRoleAssignments** navigation property on the [group](https://docs.microsoft.com/en-us/graph/api/resources/group.md) resource type. The **appRoleAssignments** navigation property returns app roles assigned directly to the group. Support for paging will be added to Microsoft Graph v1.0 in September 2021.",
+          "Target": "group"
+        }
+      ],
+      "Id": "479558a4-5491-4463-bf2f-4474590767db",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-01T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Applications"
+    },
+    {
     "ChangeList": [
      {
        "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
