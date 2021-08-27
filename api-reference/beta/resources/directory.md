@@ -42,6 +42,7 @@ Currently, deleted items functionality is only supported for the [application](a
 |:---------------|:--------|:----------|
 |deleteditems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
 |featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) collection| Nullable.|
+|federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) collection|Managing federation configurations you create with your Azure AD tenant.|
 
 ## JSON representation
 Here is a JSON representation of the resource.
