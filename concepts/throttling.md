@@ -284,6 +284,10 @@ Other factors that affect a request cost:
   - WriteLimitExceeded - Throttling is because the write limit is exceeded.
   - ResourceUnitLimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
 
+### Identity and access reports service limits
+
+[!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
+
 ### Information protection
 
 The following limits apply to any request on `/informationProtection`.
@@ -332,7 +336,8 @@ The following limits apply to any request on `/reports`.
 
 The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
 
-The preceding limits apply to all [usage reports](/graph/api/resources/report) resources.  
+The preceding limits apply to all [usage reports](/graph/api/resources/report) resources.
+
 
 ### Invitation manager service limits
 
@@ -431,7 +436,6 @@ The preceding limits apply to the following resources:
 [!INCLUDE [Intune partner integration throttling documentation](../includes/throttling-intune-partner-integration.md)]
 [!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
 [!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
-[!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
 [!INCLUDE [Intune telephony throttling documentation](../includes/throttling-intune-telephony.md)]
 [!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
 [!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
