@@ -23,7 +23,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Domain name of the external organization that the Azure AD is federating with. Inherited from [entity](../resources/entity.md).|
+|id|String|Domain name of the external organization that the Azure AD tenant is federating with. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
