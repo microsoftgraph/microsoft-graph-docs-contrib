@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of all externalDomainName for a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
+Get the list of all [externalDomainName](../resources/externaldomainname.md) objects for a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 ## Permissions
 
