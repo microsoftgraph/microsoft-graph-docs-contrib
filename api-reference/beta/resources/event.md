@@ -2,7 +2,7 @@
 title: "event resource type"
 description: "An event in a calendar."
 author: "harini84"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -70,7 +70,7 @@ Here is a JSON representation of the resource
   "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
-  "isReminderOn": true,  
+  "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
@@ -159,7 +159,7 @@ Here is a JSON representation of the resource
 > * For Microsoft accounts:
 > `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> To open the event in a current version of Outlook on the web, convert the URL to one of the following formats, and use that URL to open the event: 
+> To open the event in a current version of Outlook on the web, convert the URL to one of the following formats, and use that URL to open the event:
 >
 > * For work or school accounts:
 > `https://outlook.office365.com/calendar/item/{event-id}`
