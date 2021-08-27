@@ -87,7 +87,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation('f1e11a04-0244-4592-99df-b01cfaadce15')/domains",
     "value": [
         {
-            "id": "contoso-test.com"
+            "id": "fabrikam.com"
         },
         {
             "id": "contoso.com"
