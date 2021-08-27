@@ -37,7 +37,7 @@ The work or school account needs to belong to one of the following [Azure Active
 -->
 
 ``` http
-DELETE directory/federationConfigurations/<samlOrWsFedExternalDomainFederation ID>
+DELETE directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID}
 ```
 
 ## Request headers
