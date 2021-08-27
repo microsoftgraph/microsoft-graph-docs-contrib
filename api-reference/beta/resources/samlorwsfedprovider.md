@@ -1,6 +1,6 @@
 ---
 title: "samlOrWsFedProvider resource type"
-description: "Configuration details for setting up a SAML or Ws-Fed based identity provider."
+description: "Configuration details for setting up a SAML or WS-Fed based identity provider."
 author: "namkedia"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
