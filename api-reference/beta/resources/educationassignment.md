@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment resource type"
-description: "Represents a task or unit of work assigned to a student or team member in a class as part of their study."
+description: "The **educationAssignment** resource represents a task or unit of work assigned to a student or team member in a class as part of their study."
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
