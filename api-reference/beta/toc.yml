@@ -11425,7 +11425,7 @@ items:
             - name: Get federated configuration
               href: api/samlorwsfedexternaldomainfederation-get.md
             - name: Create federated configuration
-              href: api/samlorwsfedexternaldomainfederation-create.md
+              href: api/samlorwsfedexternaldomainfederation-post.md
             - name: Update federated configuration
               href: api/samlorwsfedexternaldomainfederation-update.md
             - name: Delete federated configuration
