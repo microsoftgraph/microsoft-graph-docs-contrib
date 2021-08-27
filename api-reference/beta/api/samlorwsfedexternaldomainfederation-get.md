@@ -42,9 +42,9 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 
 ## Query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method requires the `$filter` OData query parameter. To retrieve a specific [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) filter based on [externalDomainName](../resources/externaldomainname.md), add `?$filter=domains/any(x: x/id eq 'domainName-value')`. 
 
-To retrieve a specific [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) filter based on [externalDomainName](../resources/externaldomainname.md), add `?$filter=domains/any(x: x/id eq 'domainName-value')`.
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
