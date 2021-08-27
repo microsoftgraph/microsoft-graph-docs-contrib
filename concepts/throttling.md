@@ -137,7 +137,18 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 
 ### OneNote service limits
 
+| Limit type | Limit per app per user (delegated context) | Limit per app (app-only context) |
+| ------------ | ------- | ------- |
+| Requests rate | 120 requests per 1 minute and 400 per 1 hour | 240 requests per 1 minute and 800 per 1 hour |
+| Concurrent requests | 5 concurrent requests | 20 concurrent requests |
+
+The preceding limits apply to the following resources:
+
 [!INCLUDE [Onenote throttling documentation](../includes/throttling-onenote.md)]
+
+You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+
+**Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 ### Project Rome service limits
 
@@ -185,37 +196,7 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 
 These service limits apply to the following entities:
 
-- [Contract](/graph/api/resources/contract)
-- [Device](/graph/api/resources/device)
-- [Directory object partner reference](/graph/api/resources/directoryobjectpartnerreference)
-- [Directory object](/graph/api/resources/directoryobject)
-- [Directory role template](/graph/api/resources/directoryroletemplate)
-- [Directory role](/graph/api/resources/directoryrole)
-- [Domain dns cname record](/graph/api/resources/domaindnscnamerecord)
-- [Domain dns mx record](/graph/api/resources/domaindnsmxrecord)
-- [Domain dns record](/graph/api/resources/domaindnsrecord)
-- [Domain dns srv record](/graph/api/resources/domaindnssrvrecord)
-- [Domain dns txt record](/graph/api/resources/domaindnstxtrecord)
-- [Domain dns unavailable record](/graph/api/resources/domaindnsunavailablerecord)
-- [Domain](/graph/api/resources/domain)
-- [Endpoint](/graph/api/resources/endpoint)
-- [Extension property](/graph/api/resources/extensionproperty)
-- [Extension property](/graph/api/resources/extensionproperty)
-- [Group setting template](/graph/api/resources/groupsettingtemplate)
-- [Group setting](/graph/api/resources/groupsetting)
-- [Group](/graph/api/resources/group)
-- [Home realm discovery policy](/graph/api/resources/homerealmdiscoverypolicy)
-- [License details](/graph/api/resources/licensedetails)
-- [OAuth2 permission grant](/graph/api/resources/oauth2permissiongrant)
-- [Organization](/graph/api/resources/organization)
-- [Organizational contact](/graph/api/resources/orgcontact)
-- [Policy base](/graph/api/resources/policybase)
-- [Service principal](/graph/api/resources/serviceprincipal)
-- [Sts policy](/graph/api/resources/stspolicy)
-- [Subscribed sku](/graph/api/resources/subscribedsku)
-- [Token issuance policy](/graph/api/resources/tokenissuancepolicy)
-- [Token lifetime policy](/graph/api/resources/tokenlifetimepolicy)
-- [User](/graph/api/resources/user)
+[!INCLUDE [Identity and access throttling documentation](../includes/throttling-identity-and-access.md)]
 
 #### Pattern
 
@@ -351,7 +332,7 @@ The following limits apply to any request on `/reports`.
 
 The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
 
-The preceding limits apply to the **report** resource.  
+The preceding limits apply to all [usage reports](/graph/api/resources/report) resources.  
 
 ### Invitation manager service limits
 
@@ -378,22 +359,24 @@ The following limits apply to any request on `/security`.
 | ------------ | ------------------------ |
 | Any          | 455 requests per 10 seconds |
 
-The preceding limits apply to the following resources: 
-openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post, and user.
+The preceding limits apply to the following resources:
+[!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
+
 
 ### Files and lists service limits
 
 Service limits for OneDrive, OneDrive for Business, and SharePoint Online are not available. For more information, see [why can't you just tell me the exact throttling limits?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
 
 The preceding information applies to the following resources:  
-baseItem, baseItemVersion, columnDefinition, columnLink, contentType, drive, driveItem, driveItemVersion, fieldValueSet, itemActivity, itemActivityStat, itemAnalytics, list, listItem, listItemVersion, permission, sharedDriveItem, site, and thumbnailSet.
+
+[!INCLUDE [Files and lists throttling documentation](../includes/throttling-files-and-lists.md)]
 
 ### Tasks and plans service limits
 
 Service limits for Planner are not available.
 
 The preceding information applies to the following resources:  
-planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskBoardTaskFormat, plannerGroup, plannerPlan, plannerPlanDetails, plannerProgressTaskBoardTaskFormat, plannerTask, plannerTaskDetails, and plannerUser.
+[!INCLUDE [Tasks and plans throttling documentation](../includes/throttling-tasks-and-plans.md)]
 
 ### Identity and access data policy operation service limits
 
@@ -402,8 +385,11 @@ planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskB
 | POST on `exportPersonalData` | 1000 requests per day for any subject and 100 per subject per day |
 | Any other request | 10000 requests per hour |
 
-The preceding limits apply to the following resources: 
-dataPolicyOperation.
+The preceding limits apply to the following resources:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
@@ -478,6 +464,10 @@ The following limits apply to requests on the assignment service API:
 | GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |  
 
 The preceding limits apply to the following resources: 
-[educationAssignment](/graph/api/resources/educationassignment)
-[educationSubmission](/graph/api/resources/educationsubmission?)
-[educationResource](/graph/api/resources/educationresource)
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+
+
+
