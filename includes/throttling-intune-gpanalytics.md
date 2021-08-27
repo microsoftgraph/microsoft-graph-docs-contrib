@@ -14,4 +14,8 @@ ms.topic: include
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-groupPolicyMigrationReport, groupPolicyObjectFile, groupPolicySettingMapping, unsupportedGroupPolicyExtension.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [groupPolicyMigrationReport](/graph/api/resources/grouppolicymigrationreport) <li> [groupPolicyObjectFile](/graph/api/resources/grouppolicyobjectfile) <li> [groupPolicySettingMapping](/graph/api/resources/grouppolicysettingmapping) <li> [unsupportedGroupPolicyExtension.](/graph/api/resources/unsupportedgrouppolicyextension.)  </ul>
+ |
