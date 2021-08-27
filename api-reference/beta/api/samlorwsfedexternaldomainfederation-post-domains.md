@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Domain name of the external organization you want to add to your [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md). Inherited from [entity](../resources/entity.md)|
+|id|String|Domain name of the external organization you want to add to your [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md). Inherited from [entity](../resources/entity.md).|
 
 ## Response
 
