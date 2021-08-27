@@ -147,6 +147,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
 
 The preceding limits apply to the following resources:
+
 |  |
 |--|
 | <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
@@ -184,44 +185,37 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 
 These service limits apply to the following entities:
 
-[Activity based timeout policy](/graph/api/resources/activitybasedtimeoutpolicy)
-[Administrative unit](/graph/api/resources/administrativeunit)
-[Application role assignment](/graph/api/resources/approleassignment)
-[Application](/graph/api/resources/application)
-[Certificate based auth configuration](/graph/api/resources/certificatebasedauthconfiguration)
-[Claims mapping policy](/graph/api/resources/claimsmappingpolicy)
-[Contract](/graph/api/resources/contract)
-[Device](/graph/api/resources/device)
-[Directory object partner reference](/graph/api/resources/directoryobjectpartnerreference)
-[Directory object](/graph/api/resources/directoryobject)
-[Directory role template](/graph/api/resources/directoryroletemplate)
-[Directory role](/graph/api/resources/directoryrole)
-[Domain dns cname record](/graph/api/resources/domaindnscnamerecord)
-[Domain dns mx record](/graph/api/resources/domaindnsmxrecord)
-[Domain dns record](/graph/api/resources/domaindnsrecord)
-[Domain dns srv record](/graph/api/resources/domaindnssrvrecord)
-[Domain dns txt record](/graph/api/resources/domaindnstxtrecord)
-[Domain dns unavailable record](/graph/api/resources/domaindnsunavailablerecord)
-[Domain](/graph/api/resources/domain)
-[Endpoint](/graph/api/resources/endpoint)
-[Extension property](/graph/api/resources/extensionproperty)
-[Extension property](/graph/api/resources/extensionproperty)
-[Group setting template](/graph/api/resources/groupsettingtemplate)
-[Group setting](/graph/api/resources/groupsetting)
-[Group](/graph/api/resources/group)
-[Home realm discovery policy](/graph/api/resources/homerealmdiscoverypolicy)
-[License details](/graph/api/resources/licensedetails)
-[OAuth2 permission grant](/graph/api/resources/oauth2permissiongrant)
-[Organization](/graph/api/resources/organization)
-[Organizational contact](/graph/api/resources/orgcontact)
-[Policy base](/graph/api/resources/policybase)
-[Service principal](/graph/api/resources/serviceprincipal)
-[Sts policy](/graph/api/resources/stspolicy)
-[Subscribed sku](/graph/api/resources/subscribedsku)
-[Token issuance policy](/graph/api/resources/tokenissuancepolicy)
-[Token lifetime policy](/graph/api/resources/tokenlifetimepolicy)
-[User](/graph/api/resources/user)
-
+- [Contract](/graph/api/resources/contract)
+- [Device](/graph/api/resources/device)
+- [Directory object partner reference](/graph/api/resources/directoryobjectpartnerreference)
+- [Directory object](/graph/api/resources/directoryobject)
+- [Directory role template](/graph/api/resources/directoryroletemplate)
+- [Directory role](/graph/api/resources/directoryrole)
+- [Domain dns cname record](/graph/api/resources/domaindnscnamerecord)
+- [Domain dns mx record](/graph/api/resources/domaindnsmxrecord)
+- [Domain dns record](/graph/api/resources/domaindnsrecord)
+- [Domain dns srv record](/graph/api/resources/domaindnssrvrecord)
+- [Domain dns txt record](/graph/api/resources/domaindnstxtrecord)
+- [Domain dns unavailable record](/graph/api/resources/domaindnsunavailablerecord)
+- [Domain](/graph/api/resources/domain)
+- [Endpoint](/graph/api/resources/endpoint)
+- [Extension property](/graph/api/resources/extensionproperty)
+- [Extension property](/graph/api/resources/extensionproperty)
+- [Group setting template](/graph/api/resources/groupsettingtemplate)
+- [Group setting](/graph/api/resources/groupsetting)
+- [Group](/graph/api/resources/group)
+- [Home realm discovery policy](/graph/api/resources/homerealmdiscoverypolicy)
+- [License details](/graph/api/resources/licensedetails)
+- [OAuth2 permission grant](/graph/api/resources/oauth2permissiongrant)
+- [Organization](/graph/api/resources/organization)
+- [Organizational contact](/graph/api/resources/orgcontact)
+- [Policy base](/graph/api/resources/policybase)
+- [Service principal](/graph/api/resources/serviceprincipal)
+- [Sts policy](/graph/api/resources/stspolicy)
+- [Subscribed sku](/graph/api/resources/subscribedsku)
+- [Token issuance policy](/graph/api/resources/tokenissuancepolicy)
+- [Token lifetime policy](/graph/api/resources/tokenlifetimepolicy)
+- [User](/graph/api/resources/user)
 
 #### Pattern
 
@@ -317,8 +311,7 @@ The following limits apply to any request on `/informationProtection`.
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|
 | POST                      | 150 requests per 15 minutes and 10000 requests per 24 hours | 1 request per 15 minutes and 3 requests per 24 hours |
 
-The preceding limits apply to the following resources:  
-threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
+[!INCLUDE [Information protection throttling documentation](../includes/throttling-information-protection.md)]
 
 ### Identity protection and conditional access service limits
 
@@ -326,8 +319,8 @@ threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFil
 | ------------ | ------- |
 | Any | 1 request per second |
 
-The preceding limits apply to the following resources:  
-riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
+[!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
+
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
@@ -341,7 +334,10 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
 
 The preceding limits apply to the following resources:  
-people, trending, usedinsight, sharedInsight.
+|  |
+|--|
+| <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+
 
 ### Microsoft Graph reports service limits
 
