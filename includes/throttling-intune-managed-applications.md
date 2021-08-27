@@ -15,8 +15,8 @@ ms.topic: include
 
 The preceding limits apply to the following resources:  
 
-|  |  |
-|--|--|
+| <!-- fake header-->                                                                              | <!-- fake header-->                                                                                                        |
+|--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <li> [androidManagedAppProtection](/graph/api/resources/androidManagedAppProtection)             | <li> [managedAppStatusRaw](/graph/api/resources/managedAppStatusRaw)                                                       |
 | <li> [androidManagedAppRegistration](/graph/api/resources/androidManagedAppRegistration)         | <li> [managedMobileApp](/graph/api/resources/managedMobileApp)                                                             |
 | <li> [defaultManagedAppProtection](/graph/api/resources/defaultManagedAppProtection)             | <li> [mdmWindowsInformationProtectionPolicy](/graph/api/resources/mdmWindowsInformationProtectionPolicy)                   |
@@ -28,6 +28,6 @@ The preceding limits apply to the following resources:
 | <li> [managedAppPolicyDeploymentSummary](/graph/api/resources/managedAppPolicyDeploymentSummary) | <li> [windowsInformationProtectionDeviceRegistration](/graph/api/resources/windowsInformationProtectionDeviceRegistration) |
 | <li> [managedAppProtection](/graph/api/resources/managedAppProtection)                           | <li> [windowsInformationProtectionPolicy](/graph/api/resources/windowsInformationProtectionPolicy)                         |
 | <li> [managedAppRegistration](/graph/api/resources/managedAppRegistration)                       | <li> [windowsInformationProtectionWipeAction](/graph/api/resources/windowsInformationProtectionWipeAction)                 |
-| <li> [managedAppStatus](/graph/api/resources/managedAppStatus)                                                                                                                                                             |
+| <li> [managedAppStatus](/graph/api/resources/managedAppStatus)                                   |
 
 
