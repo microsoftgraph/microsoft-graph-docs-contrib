@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that provides configuration details for setting up a SAML or WS-Fed external domain based identity provider (IdP).
+An abstract type that provides configuration details for setting up a SAML or WS-Fed external domain-based identity provider (IdP).
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
