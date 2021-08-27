@@ -101,7 +101,7 @@ Content-Type: application/json
     {
         "id": "fa421032-5d40-5555-a428-a304b4bc18b6",
         "displayName": "Fabrikam",
-        "issuerUri": "https://accounts.google.com/o/saml2?idpid=C018555d",
+        "issuerUri": "https://fabrikam.com/o/saml2?idpid=C018555d",
         "metadataExchangeUri": null,
         "signingCertificate": "MIIDdDCCAlygAwIBAgIGAXowJih/",
         "passiveSignInUri": "https://fabrikam.com/o/saml2/saml2?idpid=C018555d",
