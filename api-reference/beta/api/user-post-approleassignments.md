@@ -1,7 +1,7 @@
 ---
 title: "Grant an appRoleAssignment to a user"
 description: "Grant an app role assignment to a user."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "users"
 author: "psignoret"
@@ -100,7 +100,7 @@ In this example, note that the value used as the user **id** in the request URL 
 
 ### Response
 
-Here is an example of the response. 
+Here is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

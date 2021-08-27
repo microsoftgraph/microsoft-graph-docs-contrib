@@ -6,9 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("Prefer", "respond-async"));
-
 Schema schema = new Schema();
 schema.baseType = "microsoft.graph.externalItem";
 LinkedList<Property> propertiesList = new LinkedList<Property>();
@@ -36,7 +33,7 @@ propertiesList.add(properties2);
 schema.properties = propertiesList;
 
 graphClient.external().connections("contosohr").schema()
-	.buildRequest( requestOptions )
+	.buildRequest()
 	.post(schema);
 
 ```

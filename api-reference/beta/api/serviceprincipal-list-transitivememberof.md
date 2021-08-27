@@ -1,7 +1,7 @@
 ---
 title: "List servicePrincipal transitive memberOf"
 description: "Get the groups and directory roles that this service principal is a member of."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
