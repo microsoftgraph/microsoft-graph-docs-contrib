@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This represents the domain name of the external organization an Azure Active Directory (Azure AD) tenant acting as the resource tenant is trying to set up federation with.
+Represents the domain name of the external organization that an Azure Active Directory (Azure AD) tenant acting as the resource tenant is trying to set up federation with.
 
 Inherits from [entity](../resources/entity.md).
 
