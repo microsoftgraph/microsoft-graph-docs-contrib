@@ -86,12 +86,12 @@ Content-length: 283
     "issuerUri": "https://contoso.com/issuerUri",
     "displayName": "contoso display name",
     "metadataExchangeUri": "https://contoso.com/metadataExchangeUri",
-    "passiveSignInUri": "https://contoso-test.com/signin",
+    "passiveSignInUri": "https://contoso.com/signin",
     "preferredAuthenticationProtocol": "wsFed",
     "domains": [
         {
             "@odata.type": "microsoft.graph.externalDomainName",
-            "id": "contoso-test.com"
+            "id": "contoso.com"
         }
     ],
     "signingCertificate": "MIIDADCCAeigAwIBAgIQEX41y8r6"
