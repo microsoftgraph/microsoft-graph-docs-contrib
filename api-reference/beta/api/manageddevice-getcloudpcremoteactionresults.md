@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: getCloudPcRemoteActionResults"
-description: "Check the cloud PC-specified remote action status for a cloud PC device."
+description: "Check the Cloud PC-specified remote action status for a Cloud PC device."
 author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check the [cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a cloud PC device. Now cloud PC supports reprovision and resize remote actions.
+Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device. Now Cloud PC supports reprovision and resize remote actions.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reprovision a cloud PC with Intune managed device id in [managedDevice](../resources/cloudpc.md).
+Reprovision a Cloud PC with Intune managed device id in [managedDevice](../resources/cloudpc.md).
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 

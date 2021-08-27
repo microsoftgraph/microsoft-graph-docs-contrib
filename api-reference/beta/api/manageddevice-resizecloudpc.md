@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: resizeCloudPc"
-description: "Upgrade or downgrade an existing cloud PC to another configuration with a new virtual CPU (vCPU) and storage size."
+description: "Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size."
 author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrade or downgrade an existing cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
+Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 

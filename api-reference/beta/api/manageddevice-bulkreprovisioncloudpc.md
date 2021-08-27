@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Bulk reprovision a set of cloud PC devices with Intune [managed device](../resources/cloudpc.md) IDs.
+Bulk reprovision a set of Cloud PC devices with Intune [managed device](../resources/cloudpc.md) IDs.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -49,11 +49,11 @@ POST /deviceManagement/managedDevices/bulkReprovisionCloudPc
 
 In the request body, supply a JSON representation of the IDs of the Intune managed devices.
 
-The following table shows the properties that are required when you bulk reprovision a set of cloud pc devices.
+The following table shows the properties that are required when you bulk reprovision a set of Cloud PC devices.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|managedDeviceIds|Collection(String)|The IDs of the cloud PC devices.|
+|managedDeviceIds|Collection(String)|The IDs of the Cloud PC devices.|
 
 ## Response
 

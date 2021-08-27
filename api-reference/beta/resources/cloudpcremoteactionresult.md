@@ -1,6 +1,6 @@
 ---
 title: "cloudPcRemoteActionResult resource type"
-description: "Represents the cloud PC-specified remote action result."
+description: "Represents the Cloud PC-specified remote action result."
 author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the cloud PC-specified remote action result.
+Represents the Cloud PC-specified remote action result.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -21,7 +21,7 @@ Represents the cloud PC-specified remote action result.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getCloudPcRemoteActionResults](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the cloud PC specified remote action results. Now cloud PC supports reprovision and resize remote actions.|
+|[getCloudPcRemoteActionResults](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the Cloud PC specified remote action results. Now Cloud PC supports reprovision and resize remote actions.|
 
 ## Properties
 
@@ -29,11 +29,11 @@ Represents the cloud PC-specified remote action result.
 |:---|:---|:---|
 |actionName|String|The specified action. Supported values: `Reprovision`, `Resize`.|
 |actionState|[actionState](#actionstate-values)|State of the action. Possible values are: `None`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`. Read-only.|
-|cloudPcId|String|The ID of the cloud PC device on which the remote action is performed. Read-only.|
+|cloudPcId|String|The ID of the Cloud PC device on which the remote action is performed. Read-only.|
 |managedDeviceId|String|The ID of the Intune managed device on which the remote action is performed. Read-only.|
 |startDateTime|DateTimeOffset|Time the action was initiated. The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
 |lastUpdatedDateTime|DateTimeOffset|Last update time for action. The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|statusDetails|[cloudPcStatusDetails](../resources/cloudpcStatusDetails.md)|The details of the cloud PC status. |
+|statusDetails|[cloudPcStatusDetails](../resources/cloudpcStatusDetails.md)|The details of the Cloud PC status. |
 
 ### actionState values
 

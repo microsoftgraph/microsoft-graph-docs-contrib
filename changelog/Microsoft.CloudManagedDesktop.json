@@ -286,14 +286,6 @@
             "ChangeList": [
                 {
                     "Id": "b65c9f82-4efa-48c6-b2b0-e84e343351d0",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "cloudPcRemoteActionResult",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcRemoteActionResult](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcRemoteActionResult?view=graph-rest-beta) property to [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
-                    "Target": "managedDevice"
-                },
-                {
-                    "Id": "b65c9f82-4efa-48c6-b2b0-e84e343351d0",
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcRemoteActionResult",
                     "ChangeType": "Addition",
@@ -305,7 +297,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "reprovisionCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [reprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
+                    "Description": "Added the [reprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -313,7 +305,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getCloudPcRemoteActionResults",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getCloudPcRemoteActionResults](https://docs.microsoft.com/en-us/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getCloudPcRemoteActionResults](https://docs.microsoft.com/en-us/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -321,7 +313,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "bulkReprovisionCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bulkReprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-bulkreprovisioncloudpc.md?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
+                    "Description": "Added the [bulkReprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-bulkreprovisioncloudpc.md?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"   
                 },
                 {
@@ -361,7 +353,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "resizeCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [resizeCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/managedDevice?view=graph-rest-beta) resource.",
+                    "Description": "Added the [resizeCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 }
             ],

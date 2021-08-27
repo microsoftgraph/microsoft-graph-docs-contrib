@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud-managed virtual desktop. This cloud PC is also enrolled into Intune and managed through MEM portal, so the managedDevice resource type below also refers to this cloud PC, which means both cloudPC resource and managedDevice resource represent the same cloud PC.
+Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into Intune and managed through MEM portal, so the Cloud PC also has a corresponding Intune managed device id.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -25,6 +25,10 @@ Represents a cloud-managed virtual desktop. This cloud PC is also enrolled into 
 |[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a [cloudPC](../resources/cloudpc.md) object.|
 |[endGracePeriod](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [cloudPC](../resources/cloudpc.md) object.|
+|[reprovisionCloudPc of managedDevice](../api/manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id.|
+|[bulkReprovisionCloudPc of managedDevice](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
+|[resizeCloudPc of managedDevice](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device id.|
+|[getCloudPcRemoteActionResults of managedDevice](../api/manageddevice-getcloudpcremoteactionresults.md)|None|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
 
 ## Properties
 
@@ -93,49 +97,5 @@ The following is a JSON representation of the resource.
   "userPrincipalName": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "gracePeriodEndDateTime": "String (timestamp)"
-}
-```
-
-# managedDevice resource type
-
-Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Cloud PCs are enrolled into Intune allowing IT admin to manage these devices through the MEM portal and APIs. So cloud PC extends managedDevice resource from Intune to allow some remote operations on it. Both cloudPC resource above and managedDevice resource refers to the same cloud-managed virtual desktop. 
-
-## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[reprovisionCloudPc of managedDevice](../api/manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id in [managedDevice](../resources/cloudpc.md).|
-|[bulkReprovisionCloudPc of managedDevice](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs in [managedDevice](../resources/cloudpc.md).|
-|[resizeCloudPc of managedDevice](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device id in [managedDevice](../resources/cloudpc.md).|
-
-## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The ID of the Intune managed device.|
-|cloudPcRemoteActionResults|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The remote action results.|
-
-## Relationships
-None
-
-## JSON Representation
-Here is a JSON representation of the resource.
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.managedDevice"
-}
--->
-``` json
-{
-  "@odata.type": "#microsoft.graph.managedDevice",
-  "id": "String (identifier)",
-  "cloudPcRemoteActionResults": [
-      {
-        "@odata.type": "microsoft.graph.cloudPcRemoteActionResult",
-      }
-  ]
 }
 ```
