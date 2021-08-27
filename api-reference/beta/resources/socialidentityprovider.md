@@ -1,7 +1,7 @@
 ---
 title: "socialIdentityProvider resource type"
 description: "Represents social identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
 author: "namkedia"
