@@ -88,7 +88,7 @@ Content-type: application/json
     "createdDateTime": "2021-04-06T19:49:52.431Z",
     "lastUpdatedDateTime": "2021-04-06T19:54:04.306Z",
     "chatType": "group",
-    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "onlineMeetingInfo": null,
     "viewpoint": {
