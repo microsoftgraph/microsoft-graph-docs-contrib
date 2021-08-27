@@ -2,7 +2,7 @@
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
@@ -146,8 +146,10 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | GET          | 400 requests per 5 minutes and 12000 requests per 1 day |
 | POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
 
-The preceding limits apply to the following resources:  
-activityHistoryItem, userActivity
+The preceding limits apply to the following resources:
+|  |
+|--|
+| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
 
 ### Microsoft Teams service limits
 

@@ -14,12 +14,10 @@ ms.topic: include
 
 The preceding limits apply to the following resources:
 
-|                                                            |                                                               |
-|------------------------------------------------------------|---------------------------------------------------------------|
-| <li> [onenote](/graph/api/resources/onenote)               | <li> [onenotePage](/graph/api/resources/onenotepage)          |
-| <li> [notebook](/graph/api/resources/notebook)             | <li> [onenoteResource](/graph/api/resources/onenoteresource)  |
-| <li> [sectionGroup](/graph/api/resources/sectiongroup)     | <li> [onenoteOperation](/graph/api/resources/onenoteresource) |
-| <li> [onenoteSection](/graph/api/resources/onenotesection) |                                                               |
+|  |
+|--|
+| <li> [notebook](/graph/api/resources/notebook)  <li> [onenote](/graph/api/resources/onenote) <li> [onenoteOperation](/graph/api/resources/onenoteresource) <li> [onenotePage](/graph/api/resources/onenotepage) <li> [onenoteResource](/graph/api/resources/onenoteresource) <li> [onenoteSection](/graph/api/resources/onenotesection) <li> [sectionGroup](/graph/api/resources/sectiongroup) |
+
 
 You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
 
