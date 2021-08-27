@@ -2,7 +2,7 @@
 title: "Request differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph"
 description: "Describes how Microsoft Graph requests differ from Azure Active Directory (Azure AD) Graph requests, which helps migrate apps to the newer service.."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 

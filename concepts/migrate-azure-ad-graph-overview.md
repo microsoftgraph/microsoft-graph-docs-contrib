@@ -2,7 +2,7 @@
 title: "Migrate Azure Active Directory (Azure AD) Graph apps to Microsoft Graph"
 description: "Describes how to migrate Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 

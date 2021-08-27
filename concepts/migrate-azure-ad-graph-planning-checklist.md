@@ -2,7 +2,7 @@
 title: "App migration planning checklist"
 description: "Checklist for migrating your apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph"
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
