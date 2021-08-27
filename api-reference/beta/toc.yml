@@ -11401,15 +11401,15 @@ items:
             - name: Social identity provider type
               href: resources/socialidentityprovider.md
             - name: Apple identity provider type
-              href: resources/appleidentityprovider.md
+              href: resources/applemanagedidentityprovider.md
             - name: OpenID Connect identity provider type
               href: resources/openidconnectidentityprovider.md
             - name: List available identity providers
-              href: api/identityproviderbase-list-availableprovidertypes.md
+              href: api/identityproviderbase-availableprovidertypes.md
             - name: List configured identity providers
-              href: api/identityproviderbase-list.md
+              href: api/identitycontainer-list-identityproviders.md
             - name: Create identity provider
-              href: api/identityproviderbase-post-identityproviders.md
+              href: api/identitycontainer-post-identityproviders.md
             - name: Get identity provider
               href: api/identityproviderbase-get.md
             - name: Update identity provider
