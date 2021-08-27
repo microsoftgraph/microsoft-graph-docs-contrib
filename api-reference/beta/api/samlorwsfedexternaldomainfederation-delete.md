@@ -1,6 +1,6 @@
 ---
 title: "Delete samlOrWsFedExternalDomainFederation"
-description: "Deletes a samlOrWsFedExternalDomainFederation object."
+description: "Delete a samlOrWsFedExternalDomainFederation object."
 author: "namkedia"
 localization_priority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
+Delete a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
 
 ## Permissions
 
@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db0
 
 ### Response
 
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
