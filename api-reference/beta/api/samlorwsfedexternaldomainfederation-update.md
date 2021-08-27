@@ -36,7 +36,7 @@ The work or school account needs to belong to one of the following [Azure Active
 -->
 
 ``` http
-PATCH directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation/<samlOrWsFedExternalDomainFederation ID>
+PATCH directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation/{samlOrWsFedExternalDomainFederation ID}
 ```
 
 ## Request headers
