@@ -5880,12 +5880,12 @@ items:
         items:
         - name: List
           href: resources/list.md
-        - name: Get lists in a site
-          href: api/list-list.md
         - name: Create list
           href: api/list-create.md
         - name: Get list
           href: api/list-get.md
+        - name: Get lists in a site
+          href: api/list-list.md
         - name: Get items
           href: api/listitem-list.md
         - name: List columns
@@ -5916,7 +5916,7 @@ items:
           href: api/contenttype-update.md
         - name: Delete
           href: api/contenttype-delete.md
-        - name: IsPublished
+        - name: Check publishing status
           href: api/contenttype-ispublished.md
         - name: Publish
           href: api/contenttype-publish.md
