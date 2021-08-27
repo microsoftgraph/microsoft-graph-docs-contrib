@@ -36,7 +36,7 @@ The work or school account needs to belong to one of the following [Azure Active
 -->
 
 ``` http
-POST /directory/federationConfigurations/<samlOrWsFedExternalDomainFederation ID>/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
+POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID}/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
 ```
 
 ## Request headers
