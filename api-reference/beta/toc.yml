@@ -496,7 +496,7 @@ items:
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
         - name: Add app for user
-          href: api/userteamwork-post-installedapps.md        
+          href: api/userteamwork-post-installedapps.md
         - name: Get installed app for user
           href: api/userteamwork-get-installedapps.md
         - name: Upgrade installed app for user
@@ -504,7 +504,7 @@ items:
         - name: Remove app for user
           href: api/userteamwork-delete-installedapps.md
         - name: Get chat between user and app
-          href: api/userscopeteamsappinstallation-get-chat.md 
+          href: api/userscopeteamsappinstallation-get-chat.md
         - name: Get chat for user
           href: api/chat-get.md
         - name: List chats for user
@@ -571,7 +571,7 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List endpoints
-          href: api/group-list-endpoints.md        
+          href: api/group-list-endpoints.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
         - name: List lifecycle policies
@@ -605,7 +605,7 @@ items:
         - name: Subscribe by mail
           href: api/group-subscribebymail.md
         - name: Unsubscribe by mail
-          href: api/group-unsubscribebymail.md       
+          href: api/group-unsubscribebymail.md
         - name: Validate properties
           href: api/group-validateproperties.md
       - name: App role assignments
@@ -1771,7 +1771,7 @@ items:
           href: resources/printjob.md
           items:
           - name: Create job for a printer
-            href: api/printer-post-jobs.md            
+            href: api/printer-post-jobs.md
           - name: Create job for a printer share
             href: api/printershare-post-jobs.md
           - name: Get
@@ -9626,6 +9626,8 @@ items:
             href: api/cloudpc-get.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
+          - name: End grace period
+            href: api/cloudpc-endgraceperiod.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
@@ -9796,7 +9798,7 @@ items:
           href: resources/managedtenants-managedtenant.md
         - name: Aggregated policy compliance
           href: resources/managedtenants-aggregatedpolicycompliance.md
-          items: 
+          items:
           - name: List aggregated policy compliances
             href: api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md
         - name: Cloud PC connection
@@ -9837,9 +9839,9 @@ items:
         - name: Device compliance policy setting state summary
           href: resources/managedtenants-devicecompliancepolicysettingstatesummary.md
           items:
-            - name: List device compliance policy setting state summary 
+            - name: List device compliance policy setting state summary
               href: api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md
-            - name: Get device compliance policy setting state summary 
+            - name: Get device compliance policy setting state summary
               href: api/managedtenants-devicecompliancepolicysettingstatesummary-get.md
         - name: Managed device compliance
           href: resources/managedtenants-manageddevicecompliance.md
@@ -9860,13 +9862,13 @@ items:
           items:
           - name: List management action
             href: api/managedtenants-managedtenant-list-managementactions.md
-          - name: Get management action 
+          - name: Get management action
             href: api/managedtenants-managementaction-get.md
           - name: Apply management action
             href: api/managedtenants-managementaction-apply.md
         - name: Management action tenant deployment status
           href: resources/managedtenants-managementactiontenantdeploymentstatus.md
-          items: 
+          items:
           - name: List management action deployment statuses
             href: api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses.md
           - name: Get management action deployment status
@@ -9875,14 +9877,14 @@ items:
             href: api/managedtenants-managementactiontenantdeploymentstatus-changedeploymentstatus.md
         - name: Management intent
           href: resources/managedtenants-managementintent.md
-          items: 
+          items:
           - name: List management intents
             href: api/managedtenants-managedtenant-list-managementintents.md
           - name: Get management intent
             href: api/managedtenants-managementintent-get.md
         - name: Management template
           href: resources/managedtenants-managementtemplate.md
-          items: 
+          items:
           - name: List management templates
             href: api/managedtenants-managedtenant-list-managementtemplates.md
           - name: Get management template
@@ -9932,7 +9934,7 @@ items:
               href: api/managedtenants-tenantgroup-tenantsearch.md
         - name: Tenant tag
           href: resources/managedtenants-tenanttag.md
-          items: 
+          items:
           - name: List tenant tags
             href: api/managedtenants-managedtenant-list-tenanttags.md
           - name: Create tenant tag
@@ -9946,7 +9948,7 @@ items:
           - name: Assign tenant tag
             href: api/managedtenants-tenanttag-assigntag.md
           - name: Unassign tenant tag
-            href: api/managedtenants-tenanttag-unassigntag.md 
+            href: api/managedtenants-tenanttag-unassigntag.md
         - name: Windows device malware state
           href: resources/managedtenants-windowsdevicemalwarestate.md
           items:
@@ -11015,7 +11017,7 @@ items:
             - name: Get
               href: api/appManagementPolicy-get.md
             - name: Create
-              href: api/appManagementPolicy-post.md 
+              href: api/appManagementPolicy-post.md
             - name: Update
               href: api/appManagementPolicy-update.md
             - name: Delete
@@ -11037,7 +11039,7 @@ items:
             - name: List listeners
               href: api/authenticationeventspolicy-list-onsignupstart.md
             - name: Create listener
-              href: api/authenticationeventspolicy-post-onsignupstart.md            
+              href: api/authenticationeventspolicy-post-onsignupstart.md
             - name: Get listener
               href: api/authenticationlistener-get.md
             - name: Update listener
@@ -11070,7 +11072,7 @@ items:
               href: api/fido2authenticationmethod-get.md
             - name: Delete
               href: api/fido2authenticationmethod-delete.md
-          - name: Microsoft Authenticator 
+          - name: Microsoft Authenticator
             href: resources/microsoftauthenticatorauthenticationmethod.md
             items:
             - name: List
@@ -11097,7 +11099,7 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-          - name: Temporary Access Pass 
+          - name: Temporary Access Pass
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List
@@ -11432,26 +11434,26 @@ items:
           href: resources/invitation.md
           items:
           - name: Create invitation
-            href: api/invitation-post.md        
+            href: api/invitation-post.md
         - name: Organizational branding
           href: resources/organizationalbrandingproperties.md
           items:
           - name: Create
             href: api/organizationalbrandingproperties-create.md
-          - name: Get 
+          - name: Get
             href: api/organizationalbrandingproperties-get.md
           - name: Update
             href: api/organizationalbrandingproperties-update.md
           - name: Delete
             href: api/organizationalbrandingproperties-delete.md
-          - name: Create localized 
+          - name: Create localized
             href: api/organizationalbrandingpropertieslocalization-create.md
           - name: Get localized
             href: api/organizationalbrandingpropertieslocalization-get.md
           - name: Update localized
             href: api/organizationalbrandingpropertieslocalization-update.md
           - name: Delete localized
-            href: api/organizationalbrandingpropertieslocalization-delete.md 
+            href: api/organizationalbrandingpropertieslocalization-delete.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
@@ -11466,7 +11468,7 @@ items:
           - name: Get org contact delta
             href: api/orgcontact-delta.md
           - name: Groups
-            href: resources/group.md       
+            href: resources/group.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -11806,7 +11808,7 @@ items:
             - name: Create
               href: api/accessreviewscheduledefinition-post.md
             - name: Delete
-              href: api/accessreviewscheduledefinition-delete.md 
+              href: api/accessreviewscheduledefinition-delete.md
             - name: Update
               href: api/accessreviewscheduledefinition-update.md
             - name: Filter by current user
@@ -12163,7 +12165,7 @@ items:
               - name: Make eligible role assignment
                 href: api/privilegedroleassignment-makeeligible.md
               - name: Make permanent role assignment
-                href: api/privilegedroleassignment_makepermanent.md
+                href: api/privilegedroleassignment-makepermanent.md
             - name: Privileged role assignment request
               href: resources/privilegedroleassignmentrequest.md
               items:
@@ -12368,7 +12370,7 @@ items:
         - name: Create child folder
           href: api/mailfolder-post-childfolders.md
         - name: Create message in folder
-          href: api/mailfolder-post-messages.md          
+          href: api/mailfolder-post-messages.md
         - name: Get folder delta
           href: api/mailfolder-delta.md
         - name: Get message delta
@@ -13070,7 +13072,7 @@ items:
             href: resources/userregistrationmethodsummary.md
             items:
             - name: Get users registered by authentication method
-              href: api/authenticationmethodsroot-usersregisteredbymethod.md             
+              href: api/authenticationmethodsroot-usersregisteredbymethod.md
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
@@ -13502,7 +13504,7 @@ items:
           - name: Permission
             href: resources/permission.md
           - name: List site permissions
-            href: api/site-list-permissions.md 
+            href: api/site-list-permissions.md
           - name: Create site permissions
             href: api/site-post-permissions.md
           - name: Get site permission
@@ -13783,7 +13785,7 @@ items:
         href: resources/teams-api-overview.md
       - name: Team
         href: resources/team.md
-        items:       
+        items:
         - name: Create team
           href: api/team-post.md
         - name: Create team from group
@@ -13882,7 +13884,7 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: Add member 
+        - name: Add member
           href: api/channel-post-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
@@ -13901,13 +13903,13 @@ items:
         - name: List channel messages
           href: api/channel-list-messages.md
         - name: List members
-          href: api/channel-list-members.md        
+          href: api/channel-list-members.md
         - name: List message replies
           href: api/chatmessage-list-replies.md
         - name: Provision email address
-          href: api/channel-provisionemail.md  
+          href: api/channel-provisionemail.md
         - name: Remove email address
-          href: api/channel-removeemail.md  
+          href: api/channel-removeemail.md
         - name: Remove member
           href: api/channel-delete-members.md
         - name: Reply to message
@@ -13942,10 +13944,10 @@ items:
         - name: Get message in chat
           href: api/chatmessage-get.md
         - name: Get messages across all chats
-          href: api/chats-getallmessages.md 
+          href: api/chats-getallmessages.md
         - name: Send message in chat
           href: api/chat-post-messages.md
-        - name: Get chat between user and app 
+        - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
         - name: List permission grants
           href: api/chat-list-permissiongrants.md
@@ -13973,19 +13975,19 @@ items:
         - name: Update message
           href: api/chatmessage-update.md
         - name: Get messages across all chats
-          href: api/chats-getallmessages.md  
+          href: api/chats-getallmessages.md
         - name: List hosted content
           href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: Tags
-        href: resources/teamworktag.md 
-        items:     
+        href: resources/teamworktag.md
+        items:
         - name: List
           href: api/teamworktag-list.md
         - name: Create
           href: api/teamworktag-post.md
-        - name: Get 
+        - name: Get
           href: api/teamworktag-get.md
         - name: Update
           href: api/teamworktag-update.md
@@ -14002,7 +14004,7 @@ items:
       - name: App
         items:
         - name: App in catalog
-          href: resources/teamsapp.md        
+          href: resources/teamsapp.md
         - name: List apps in catalog
           href: api/appcatalogs-list-teamsapps.md
         - name: Publish apps to catalog
@@ -14053,7 +14055,7 @@ items:
           - name: List apps in chat
             href: api/chat-list-installedapps.md
           - name: Add app in chat
-            href: api/chat-post-installedapps.md     
+            href: api/chat-post-installedapps.md
           - name: Get app installed in chat
             href: api/chat-get-installedapps.md
           - name: Upgrade app installed in chat
