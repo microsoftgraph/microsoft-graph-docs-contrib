@@ -93,10 +93,6 @@ Content-Type: application/json
       "accessType": "allowed",
       "targets": [
         {
-          "target": "AllGroups",
-          "targetType": "group"
-        },
-        {
           "target": "AllUsers",
           "targetType": "user"
         }
@@ -119,10 +115,6 @@ Content-Type: application/json
     {
       "accessType": "allowed",
       "targets": [
-        {
-          "target": "AllGroups",
-          "targetType": "group"
-        },
         {
           "target": "AllUsers",
           "targetType": "user"
@@ -147,10 +139,6 @@ Content-Type: application/json
       "accessType": "blocked",
       "targets": [
         {
-          "target": "AllGroups",
-          "targetType": "group"
-        },
-        {
           "target": "AllUsers",
           "targetType": "user"
         }
@@ -173,10 +161,6 @@ Content-Type: application/json
     {
       "accessType": "blocked",
       "targets": [
-        {
-          "target": "AllGroups",
-          "targetType": "group"
-        },
         {
           "target": "AllUsers",
           "targetType": "user"

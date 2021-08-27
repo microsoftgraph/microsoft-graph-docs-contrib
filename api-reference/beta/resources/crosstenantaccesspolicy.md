@@ -57,8 +57,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
   "displayName": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "default": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault",
-  "partners": ["microsoft.graph.crossTenantAccessPolicyConfigurationPartner"]
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```

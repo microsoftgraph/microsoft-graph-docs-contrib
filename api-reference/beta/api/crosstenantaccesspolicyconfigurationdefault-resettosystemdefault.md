@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and the [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) settings with `isServiceDefault` set to `true`.
+If successful, this action returns a `200 OK` response code and an empty response. To confirm the reset system defaults, run [Get crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md) and confirm that `isSystemDefault` is set to **true**.
 
 ## Examples
 
@@ -79,120 +79,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "isServiceDefault": true,
-  "inboundTrust":
-  {
-    "isMfaAccepted": false,
-    "isCompliantDeviceAccepted": false,
-    "isHybridAzureADJoinedDeviceAccepted": false,
-  },
-  "b2bCollaborationOutbound":
-  {
-    "usersAndGroups":
-    {
-      "accessType": "allowed",
-      "targets": [
-        {
-          "target": "AllGroups",
-          "targetType": "group"
-        },
-        {
-          "target": "AllUsers",
-          "targetType": "user"
-        }
-      ]
-    },
-    "applications":
-    {
-      "accessType": "allowed",
-      "targets": [
-        {
-          "target": "AllApplications",
-          "targetType": "application"
-        }
-      ]
-    }
-  },
-  "b2bCollaborationInbound":
-  {
-    "usersAndGroups":
-    {
-      "accessType": "allowed",
-      "targets": [
-        {
-          "target": "AllGroups",
-          "targetType": "group"
-        },
-        {
-          "target": "AllUsers",
-          "targetType": "user"
-        }
-      ]
-    },
-    "applications":
-    {
-      "accessType": "allowed",
-      "targets": [
-        {
-          "target": "AllApplications",
-          "targetType": "application"
-        }
-      ]
-    }
-  },
-  "b2bDirectConnectOutbound":
-  {
-    "usersAndGroups":
-    {
-      "accessType": "blocked",
-      "targets": [
-        {
-          "target": "AllGroups",
-          "targetType": "group"
-        },
-        {
-          "target": "AllUsers",
-          "targetType": "user"
-        }
-      ]
-    },
-    "applications":
-    {
-      "accessType": "blocked",
-      "targets": [
-        {
-          "target": "AllApplications",
-          "targetType": "application"
-        }
-      ]
-    }
-  },
-  "b2bDirectConnectInbound":
-  {
-    "usersAndGroups":
-    {
-      "accessType": "blocked",
-      "targets": [
-        {
-          "target": "AllGroups",
-          "targetType": "group"
-        },
-        {
-          "target": "AllUsers",
-          "targetType": "user"
-        }
-      ]
-    },
-    "applications":
-    {
-      "accessType": "blocked",
-      "targets": [
-        {
-          "target": "AllApplications",
-          "targetType": "application"
-        }
-      ]
-    }
-  }
+
 }
 ```
