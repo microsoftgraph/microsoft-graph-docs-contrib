@@ -1,5 +1,5 @@
 ---
-title: "educationAssignment: setUpResourcesFolder action"
+title: "educationAssignment: setUpResourcesFolder"
 description: "Create a SharePoint folder to upload files for a given educationAssignment."
 localization_priority: Normal
 author: "sharmas"
