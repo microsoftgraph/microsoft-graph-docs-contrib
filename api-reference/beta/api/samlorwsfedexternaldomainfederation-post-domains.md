@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can now add multiple domains to your SAML/WS-Fed based configuration. Create a new externalDomainName object and add it to an existing [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
+Add multiple domains to your SAML or WS-Fed based configuration by creating a new [externalDomainName](../resources/externaldomainname.md) object and add it to an existing [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
