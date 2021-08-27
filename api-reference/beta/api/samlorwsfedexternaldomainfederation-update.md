@@ -50,7 +50,7 @@ PATCH directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederati
 
 In the request body, provide a JSON object with one or more properties that need to be updated for a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object in Azure AD tenant.
 
-The following table shows the properties that are you can update for [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
+The following table shows the properties that you may update for a [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
