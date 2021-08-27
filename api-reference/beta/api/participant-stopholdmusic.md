@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows the application to stop a participant from being on hold as a result of calling `startHoldMusic`.
+Reincorporate a participant previously put on hold to the call.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,17 +22,15 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not Supported.                               |
 | Delegated (personal Microsoft account) | Not Supported.                               |
-| Application                            | For joining meetings: Calls.JoinGroupCallsasGuest.All or Calls.JoinGroupCalls.All<br/>For initiating peer-to-peer calls: Calls.Initiate.All<br/>For initiating group calls: Calls.InitiateGroupCalls.All<br/>Additionally, if any of the previous calls is an app-hosted media call: Calls.AccessMedia. |
+| Application                            | None. |
 
 > **Note:** The permission check happens when the application joins or tries to start the call. No additional permission check is performed when `stopHoldMusic` is called.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /app/calls/{id}/participants/{id}/stopHoldMusic
 POST /communications/calls/{id}/participants/{id}/stopHoldMusic
 ```
-> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -45,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|clientContext|String|Unique client context string. Can have a maximum of 256 characters.|
+|clientContext|String|Optional. Unique client context string. Can have a maximum of 256 characters.|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code and a [stopHoldMusicOperation](../resources/stopHoldmusicoperation.md) object in the response body.
@@ -53,17 +51,16 @@ If successful, this method returns a `202 Accepted` response code and a [stopHol
 ## Example
 The following example shows how to call this API.
 
-##### Request
-The following example shows the request.
+### Request
+The following is an example of a request.
 
 
-# [HTTP](#tab/http)
 <!-- { 
   "blockType": "request", 
   "name": "participant-stopHoldMusic" 
 }-->
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/participants/fa1e9582-7145-4ca3-bcd8-577f561fcb6e/microsoft.graph.stopHoldMusic
+POST https://graph.microsoft.com/beta/communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/participants/fa1e9582-7145-4ca3-bcd8-577f561fcb6e/stopHoldMusic
 Content-type: application/json
 
 {
@@ -74,7 +71,7 @@ Content-type: application/json
 ---
 
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability. 
  
@@ -95,7 +92,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/e141b67c-90fd-45
 }
 ```
 
-##### Notification - operation completed
+### Notification sent to the application once the stopHoldMusicOperation finishes
 
 ```http
 POST https://bot.contoso.com/api/calls

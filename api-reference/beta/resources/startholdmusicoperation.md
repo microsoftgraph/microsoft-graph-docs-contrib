@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the status of a `startHoldMusic` operation, triggered by a call to the `startHoldMusic` API.
+Represents the status of a [startHoldMusic](../api/participant-startholdmusic.md) operation, triggered by a call to the **startHoldMusic** API. Inherits from [commsOperation](commsoperation.md).
 
 ## Properties
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | Unique client context string. Can have a maximum of 256 characters.                                                                               |
-| id                             | String                      | The server operation ID. Read-only.                                                                                            |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                            |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
+| clientContext                  | String                      | Inherited from **commsOperation**. Unique client context string. Can have a maximum of 256 characters.                                                                               |
+| id                             | String                      | Inherited from **commsOperation**. The server operation ID. Read-only.                                                                                            |
+| resultInfo                     | [resultInfo](resultinfo.md) | Inherited from **commsOperation**. The result information.  Read-only.                                                                                            |
+| status                         | String                      | Inherited from **commsOperation**. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
 ## JSON representation
 
