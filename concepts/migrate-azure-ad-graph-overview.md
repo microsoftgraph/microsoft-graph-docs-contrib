@@ -24,12 +24,12 @@ Microsoft Graph is also more secure and resilient than Azure AD Graph.
 In addition, Microsoft Graph supports many new Azure AD datasets and features that aren't available in Azure AD Graph, including in Windows 10 and Enterprise Mobility + Security (EMS). Switch to Microsoft Graph to take advantage of these new APIs, all through one single endpoint, including:
 
 - [Microsoft 365 group management](/graph/office365-groups-concept-overview).
-- [External user invitations](/graph/api/resources/invitation?view=graph-rest-1.0).
-- The ability to [restore users, Microsoft 365 groups, applications, and service principals](/graph/api/resources/directory?view=graph-rest-1.0) after they've been deleted.
-- [Webhook notifications on users and groups](/graph/webhooks?toc=./ref/toc.json&view=graph-rest-1.0).
+- [External user invitations](/graph/api/resources/invitation).
+- The ability to [restore users, Microsoft 365 groups, applications, and service principals](/graph/api/resources/directory) after they've been deleted.
+- [Webhook notifications on users and groups](/graph/webhooks).
 - Advanced license management features including [group-based licensing](/graph/api/group-assignlicense).
 - Identity governance features such as:
-  - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) to elevate users to privileged roles only when needed and for a limited time period.
+  - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) (PIM) to elevate users to privileged roles only when needed and for a limited time period.
   - [Access reviews](/graph/api/resources/accessreviewsv2-root) for one-time or recurring access reviews for attestation of user's access rights.
   - [Terms-of-use](/graph/api/resources/agreement) to enable organizations to present information for legal or compliance requirements, like disclaimer notices.
 - Security features such as:

@@ -92,7 +92,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: migrate-azure-ad-graph-overview.md
+        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
       - name: "1: Review differences"
