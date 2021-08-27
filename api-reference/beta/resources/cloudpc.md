@@ -28,7 +28,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[reprovisionCloudPc of managedDevice](../api/manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id.|
 |[bulkReprovisionCloudPc of managedDevice](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
 |[resizeCloudPc of managedDevice](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device id.|
-|[getCloudPcRemoteActionResults of managedDevice](../api/manageddevice-getcloudpcremoteactionresults.md)|None|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
+|[getCloudPcRemoteActionResults of managedDevice](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
 
 ## Properties
 
