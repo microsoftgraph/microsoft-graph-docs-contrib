@@ -77,7 +77,7 @@ Content-length: 60
 
 {
     "@odata.type": "microsoft.graph.externalDomainName",
-    "id": "contoso-usa.com"
+    "id": "contososuites.com"
 }
 ```
 
