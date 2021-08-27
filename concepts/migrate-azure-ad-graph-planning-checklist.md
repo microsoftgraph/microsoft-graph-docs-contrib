@@ -8,11 +8,6 @@ ms.prod: "applications"
 
 # App migration planning checklist
 
-> [!WARNING]
-> **Azure Active Directory (Azure AD) Graph is deprecated**. To avoid loss of functionality, migrate your applications to Microsoft Graph before June 30, 2022 when Azure AD Graph API endpoints will stop responding to requests.
->
-> Microsoft will continue technical support and apply security fixes for Azure AD Graph until June 30, 2022 when all functionality and support will end. If you fail to migrate your applications to Microsoft Graph before June 30, 2022, you put their functionality and stability at risk.
-
 Use the following checklist to plan your migration.
 
 ## Step 1: Review the differences between the APIs

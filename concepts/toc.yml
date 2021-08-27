@@ -588,6 +588,8 @@ items:
               - name: "1: Review differences"
                 expanded: true
                 items:
+                  - name: Overview
+                    href: migrate-azure-ad-graph-overview.md
                   - name: Requests
                     href: migrate-azure-ad-graph-request-differences.md
                   - name: Service features
