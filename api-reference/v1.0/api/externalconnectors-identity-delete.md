@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete identity
 Namespace: microsoft.graph.externalConnectors
 
-Remove a member from an [externalGroup](../resources/externalconnectors-externalgroup.md) by deleting the corresponding [identity](../resources/externalconnectors-identity.md) resource.
+Delete an [identity](../resources/externalconnectors-identity.md) resource to remove the corresponding member from an [externalGroup](../resources/externalconnectors-externalgroup.md).
 
 ## Permissions
 

@@ -43,7 +43,7 @@ POST /connections/{connectionsId}/groups
 ## Request body
 In the request body, supply a JSON representation of the **externalGroup** object.
 
-The following table shows the properties that are required when you create the **externalGroup**.
+You can specify the following properties when creating an **externalGroup**.
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|

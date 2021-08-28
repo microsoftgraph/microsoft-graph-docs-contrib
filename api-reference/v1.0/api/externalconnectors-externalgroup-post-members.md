@@ -12,7 +12,7 @@ Namespace: microsoft.graph.externalConnectors
 
 
 
-Create a new member as an [identity](../resources/externalconnectors-identity.md) resource in an [externalGroup](../resources/externalconnectors-externalgroup.md).
+Create an [identity](../resources/externalconnectors-identity.md) resource for a new member in an [externalGroup](../resources/externalconnectors-externalgroup.md).
 
 ## Permissions
 
@@ -45,7 +45,7 @@ POST /connections/{connectionsId}/groups/{externalGroupId}/members
 
 In the request body, supply a JSON representation of the **identity** object.
 
-You can specify the following properties when creating an **externalGroup** member **identity**.
+You can specify the following properties when creating an **identity** resource for a member in an **externalGroup**.
 
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|

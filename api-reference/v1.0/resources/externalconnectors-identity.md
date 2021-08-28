@@ -16,8 +16,8 @@ Represents an [identity](externalconnectors-identity.md) used to set permissions
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create identity](../api/externalconnectors-externalgroup-post-members.md)|[identity](externalconnectors-identity.md)|Create a new member as an [identity](../resources/externalconnectors-identity.md) resource in an [externalGroup](../resources/externalconnectors-externalgroup.md).|
-|[Delete identity](../api/externalconnectors-identity-delete.md)|None|Remove a member from an [externalGroup](../resources/externalconnectors-externalgroup.md) by deleting the corresponding [identity](../resources/externalconnectors-identity.md) resource.|
+|[Create identity](../api/externalconnectors-externalgroup-post-members.md)|[identity](externalconnectors-identity.md)|Create an [identity](../resources/externalconnectors-identity.md) resource for a new member in an [externalGroup](../resources/externalconnectors-externalgroup.md).|
+|[Delete identity](../api/externalconnectors-identity-delete.md)|None|Delete an [identity](../resources/externalconnectors-identity.md) resource to remove the corresponding member from an [externalGroup](../resources/externalconnectors-externalgroup.md).|
 
 ## Properties
 
