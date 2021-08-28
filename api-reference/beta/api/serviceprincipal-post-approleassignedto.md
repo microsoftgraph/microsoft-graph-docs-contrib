@@ -1,7 +1,7 @@
 ---
 title: "Grant an appRoleAssignment for a service principal"
 description: "Grant an app role assignment for a service principal."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "psignoret"
@@ -101,7 +101,7 @@ In this example, `{id}` and `{resourceId-value}` would both be the `id` of the r
 
 ### Response
 
-Here is an example of the response. 
+Here is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

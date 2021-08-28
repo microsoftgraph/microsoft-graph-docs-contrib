@@ -2,7 +2,7 @@
 title: "Get group"
 description: "Get the properties and relationships of a group object."
 author: "Jordanndahl"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of a [group](../resources/group.md) object. 
+Get the properties and relationships of a [group](../resources/group.md) object.
 
 This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query. Because the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and [group](../resou
 
 #### Request
 
-The following is an example of a GET request. 
+The following is an example of a GET request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -140,7 +140,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a GET request. 
+The following is an example of a GET request.
 
 
 # [HTTP](#tab/http)
