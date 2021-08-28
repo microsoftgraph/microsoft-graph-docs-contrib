@@ -2,7 +2,7 @@
 title: "Create group"
 description: "Create a new Microsoft 365 group or security group."
 author: "Jordanndahl"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -46,7 +46,7 @@ POST /groups
 
 ## Request body
 
-The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group. 
+The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group.
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
@@ -66,7 +66,7 @@ Because the **group** resource supports [extensions](/graph/extensibility-overvi
 
 >**Note:** Creating a group using the Group.Create application permission without specifying owners will create the group anonymously and the group will not be modifiable. You can use the `POST` operation and add owners to the group while creating it to specify owners who can modify the group.
 
-> Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
+> Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
@@ -220,9 +220,9 @@ Content-Type: application/json
 }
 ```
 
-#### Response 
+#### Response
 
-The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 
+The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members.
 
 >**Note:** The response object shown here might be shortened for readability.
 
