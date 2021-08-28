@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the final attachment for the request. The attachment is a zip file that contains all the files that were included by the privacy administrator.
+Get the final attachment for a data subject request. The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
