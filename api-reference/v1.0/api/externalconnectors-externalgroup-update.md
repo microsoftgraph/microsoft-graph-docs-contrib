@@ -42,9 +42,9 @@ PATCH /connections/{connectionsId}/groups/{externalGroupId}
 | Content-Type  | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of the [externalGroup](../resources/externalconnectors-externalgroup.md) object.
+In the request body, supply a JSON representation of the **externalGroup** object.
 
-The following table shows the properties that are required when you update the [externalGroup](../resources/externalconnectors-externalgroup.md).
+You can specify the following properties when updating an **externalGroup**.
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|

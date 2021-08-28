@@ -47,7 +47,7 @@ The following table shows the properties that are required when you create the *
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. |
+| id          | String | The unique ID of the external group within a connection. It must be alphanumeric and can be up to 128 characters long. Required. |
 | displayName | String | The friendly name of the external group. Optional.                                                                      |
 | description | String | The description of the external group. Optional.                                                                         |
 
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the *
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [externalGroup](../resources/externalconnectors-externalgroup.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an **externalGroup** object in the response body.
 
 ## Example
 

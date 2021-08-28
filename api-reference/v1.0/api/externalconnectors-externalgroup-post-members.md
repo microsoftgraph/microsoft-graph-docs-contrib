@@ -43,19 +43,19 @@ POST /connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## Request body
 
-In the request body, supply a JSON representation of the [identity](../resources/externalconnectors-identity.md) object.
+In the request body, supply a JSON representation of the **identity** object.
 
-The following table shows the properties that are required when you create the **externalGroup** member [identity](../resources/externalconnectors-identity.md).
+You can specify the following properties when creating an **externalGroup** member **identity**.
 
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | The unique `id` of the member. It would be the **objectId** in case of Azure Active Directory users or groups and the **externalGroupId** in case of external groups.                                    |
-| type           | microsoft.graph.externalConnectors.identityType | The type of member added to the external group. Possible values are: `user`,`group`, `externalGroup`. |
+| id             | String                  | The unique `id` of the member. It would be the **objectId** in case of Azure Active Directory users or groups and the **externalGroupId** in case of external groups. Required.                                    |
+| type           | microsoft.graph.externalConnectors.identityType | The type of member added to the external group. Possible values are: `user`,`group`, `externalGroup`. Required. |
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [identity](../resources/externalconnectors-identity.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an **identity** object in the response body.
 
 ## Examples
 
