@@ -1,6 +1,6 @@
 ---
 title: "dataSubjectRequest: getFinalAttachment"
-description: "Get the final attachment for the request. The attachment is a zip file that contains all the files that where included by the privacy administrator."
+description: "Get the final attachment for a data subject request."
 author: "skadam-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the final attachment for the request. The attachment is a zip file that contains all the files that where included by the privacy administrator.
+Get the final attachment for the request. The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function will redirect to the Microsoft Azure blob Storage link with the SAS token and retur  `302` response code.
+If successful, this function will redirect to the Microsoft Azure blob Storage link with the SAS token and return a `302` response code.
 
 ## Examples
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests/{dataSubject
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
