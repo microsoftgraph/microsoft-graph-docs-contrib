@@ -21,9 +21,6 @@ In the Microsoft 365 platform, three main components facilitate the access and f
 
 Together, the Microsoft Graph API, connectors, and Data Connect power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets, you can derive insights and analytics, extend Microsoft 365 experiences, and build unique, intelligent applications.
 
-> [!NOTE]
-> Microsoft Graph connectors is in preview. To use connectors with Microsoft Search or to build connectors, you must sign up for the [connectors preview program](/MicrosoftSearch/connectors-preview). To join in the preview program, submit the [Microsoft Graph connectors preview signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
-
 ## What's in Microsoft Graph?
 
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
