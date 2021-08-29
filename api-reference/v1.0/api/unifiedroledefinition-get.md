@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedRoleDefinition"
-description: "Retrieve the properties and relationships of a unifiedRoleDefinition object."
+description: "Read the properties and relationships of an unifiedRoleDefinition object."
 localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. Currently "directory" is the only RBAC application supported.
+Read the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. Currently **directory** is the only role-based access control (RBAC) provider supported.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ GET /roleManagement/directory/roleDefinitions/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -207,7 +207,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions/fd
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",

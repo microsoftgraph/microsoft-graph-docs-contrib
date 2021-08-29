@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.
+Create a new custom [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.
 
 ## Permissions
 
@@ -36,6 +36,7 @@ POST /roleManagement/directory/roleDefinitions
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
+| Content-Type | application/json. Required. |
 
 ## Request body
 
@@ -81,7 +82,7 @@ Content-type: application/json
             ]
         }
     ],
-    "isEnabled" : "true"
+    "isEnabled" : true
 }
 ```
 
@@ -89,7 +90,7 @@ Content-type: application/json
 ### Response
 
 The following is an example of the response.
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

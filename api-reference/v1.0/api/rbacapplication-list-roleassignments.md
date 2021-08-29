@@ -28,12 +28,13 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleAssignments
+GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId {eq roleDefinitionId}
+GET /roleManagement/directory/roleAssignments?$filter=principalId {eq principalId}
 ```
 
 ## Optional query parameters
 
-This operation requires the `$filter` query parameter. You can filter on the `roleDefinitionId` or `principalId` properties. The `roleDefinitionId` property can be either a role object ID or a role template object ID. For general information, see [OData query parameters](/graph/query-parameters).
+This operation requires the `$filter` query parameter to query specific instances of role assignments. You can filter on the `roleDefinitionId` or `principalId` properties. The `roleDefinitionId` property can be either a role object ID or a **templateId**. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -51,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Request using a filter on role definition ID
+### Example 1: Request using a filter on roleDefinitionId and expand the principal object
 
 #### Request
 
@@ -145,7 +146,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Request using a filter on principal ID
+### Example 2: Request using a filter on principalId
 
 #### Request
 
@@ -166,7 +167,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 #### Response
 
 The following is an example of the response.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

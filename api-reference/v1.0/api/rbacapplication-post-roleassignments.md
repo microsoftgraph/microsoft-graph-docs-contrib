@@ -39,7 +39,9 @@ POST /roleManagement/directory/roleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure AD, such as `directoryScopeId`, or an application-specific scope, such as `appScopeId`. Examples of Azure AD scope are tenant ("/"), administrative units, or applications. For more information, see [appScope](../resources/appscope.md).
+In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure Active Directory (Azure AD) specified by **directoryScopeId**, or an application-specific scope specified by the **appScopeId**. Examples of Azure AD scopes are tenant (`/`), administrative units, or applications. For more information on appScope, see [appScope](../resources/appscope.md).
+
+The following table shows the properties that are required when you create the [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 ## Response
 
@@ -47,7 +49,7 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 ## Examples
 
-### Example 1: Create a role assignment at tenant scope
+### Example 1: Create a role assignment with a tenant-wide scope
 
 #### Request
 
@@ -76,7 +78,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -97,11 +99,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : Create a role assignment over an administrative unit scope
+### Example 2 : Create a role assignment with an administrative unit scope
 
 #### Request
 
-The following example assigns a principal User Admin role over an administrative unit.
+The following example assigns a principal the User Administrator role over an administrative unit.
 
 
 <!-- {
@@ -115,9 +117,9 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1", //template id of User Account Administrator
+    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
+    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 }
 ```
 
@@ -126,7 +128,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

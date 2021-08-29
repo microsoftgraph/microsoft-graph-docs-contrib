@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedRoleAssignment"
-description: "Retrieve the properties and relationships of a unifiedRoleAssignment object."
+description: "Read the properties and relationships of a unifiedRoleAssignment object."
 localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
@@ -33,7 +33,7 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 ## Examples
 
-### Example 1 : Get details of a role assignment
+### Example 1 : Get the details of a role assignment
 
 #### Request
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lA
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -93,7 +93,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get details of a role assignment with `$expand`
+### Example 2: Get the details of a role assignment and expand the relationships
 
 #### Request
 
