@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.
+Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object. You cannot update built-in roles.
 
 ## Permissions
 
@@ -32,27 +32,27 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 ```
 
 ## Request headers
-
+	
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization | Bearer {token} |
-
+| Content-Type | application/json. Required. |
+	
 ## Request body
-
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+	
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For THE best performance, don't include existing values that haven't changed.
+	
+The following table shows the properties that are required when you update the [unifiedRoleDefinition](../resources/unifiedroledefinition.md).
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|description|String| The description for the role definition. Read-only when isBuiltIn is true. |
-|displayName|String| The display name for the role definition. Read-only when isBuiltIn is true. Required.|
-|id|String| The unique identifier for the role definition. Key, not nullable, Read-only. |
-|isBuiltIn|Boolean| Flag indicating if the role definition is part of the default set included with the product or custom. Read-only. |
-|isEnabled|Boolean| Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true. |
-|resourceScopes|String collection| List of scopes permissions granted by the role definition apply to. Currently only "/" is supported. Read-only when isBuiltIn is true. **DO NOT USE. This property will be deprecated soon. Attach scope to role assignment.**|
-|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| List of permissions included in the role. Read-only when isBuiltIn is true. Required. |
-|templateId|String| Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true. |
-|inheritsPermissionsFrom| [unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection| Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute. |
-|version|String| Indicates version of the role definition. Read-only when isBuiltIn is true.|
+|description|String| The description for the role definition. Read-only when **isBuiltIn** is `true`. |
+|displayName|String| The display name for the role definition. Read-only when **isBuiltIn** is `true`. Required.|
+|isEnabled|Boolean| Flag indicating if the role is enabled for assignment. If `false`, the role is not available for assignment. Read-only when **isBuiltIn** is true. |
+|resourceScopes|String collection| List of scopes and permissions the role definition applies to. Currently only `/` is supported. Read-only when **isBuiltIn** is true. **DO NOT USE. This property will be deprecated soon. Attach scope to role assignment.**|
+|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| List of permissions included in the role. Read-only when **isBuiltIn** is `true`. Required. |
+|templateId|String| Custom template identifier that can be set when **isBuiltIn** is `false`. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when **isBuiltIn** is `true`. |
+|version|String| Indicates version of the role definition. Read-only when **isBuiltIn** is `true`.|
 
 ## Response
 
@@ -93,7 +93,7 @@ Content-type: application/json
 ### Response
 
 The following is an example of the response.
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

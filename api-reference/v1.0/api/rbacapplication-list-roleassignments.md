@@ -73,6 +73,8 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 
 The following is an example of the response.
 
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,33 +98,13 @@ Content-type: application/json
             "principal": {
                 "@odata.type": "#microsoft.graph.user",
                 "id": "ace08ec9-aa11-4ada-9145-addf0398233e",
-                "deletedDateTime": null,
                 "accountEnabled": true,
-                "ageGroup": null,
-                "businessPhones": [],
-                "city": "Redmond",
-                "createdDateTime": "2019-02-22T20:29:07Z",
-                "creationType": null,
-                "companyName": null,
-                "consentProvidedForMinor": null,
-                "country": "US",
-                "department": "Office of the CEO",
                 "displayName": "Joey Cruz",
-                "employeeId": null,
-                "faxNumber": null,
-                "givenName": "Joey",
                 "imAddresses": [
-                    "joeyc@woodgrove.ms"
+                    "joeyc@contoso.com"
                 ],
-                "infoCatalogs": [],
-                "isResourceAccount": null,
-                "jobTitle": "Chief Security Officer",
-                "legalAgeGroupClassification": null,
-                "mail": "joeyc@woodgrove.ms",
+                "mail": "joeyc@contoso.com",
                 "mailNickname": "joeyc",
-                "mobilePhone": null,
-                "onPremisesDistinguishedName": null,
-                "officeLocation": null,
                 "userType": "Member",   
 
             }
@@ -136,21 +118,8 @@ Content-type: application/json
             "principal": {
                 "@odata.type": "#microsoft.graph.user",
                 "id": "6f87972e-2e7e-4b49-9980-eb3888bdcfe1",
-                "deletedDateTime": null,
                 "accountEnabled": true,
-                "ageGroup": null,
-                "businessPhones": [],
-                "city": null,
-                "createdDateTime": "2019-07-18T01:38:36Z",
-                "creationType": "Invitation",
-                "companyName": null,
-                "consentProvidedForMinor": null,
-                "country": null,
-                "department": null,
                 "displayName": "Kalyan Krishna",
-                "employeeId": null,
-                "faxNumber": null,
-                "givenName": null,
                 "imAddresses": [],
                 "userType": "Guest",
 	
@@ -165,21 +134,8 @@ Content-type: application/json
             "principal": {
                 "@odata.type": "#microsoft.graph.user",
                 "id": "10fc1cc8-ac36-4186-b99b-0cf814aa2dd5",
-                "deletedDateTime": null,
                 "accountEnabled": true,
-                "ageGroup": null,
-                "businessPhones": [],
-                "city": null,
-                "createdDateTime": "2019-11-13T21:54:27Z",
-                "creationType": "Invitation",
-                "companyName": null,
-                "consentProvidedForMinor": null,
-                "country": null,
-                "department": null,
                 "displayName": "Markie Downing",
-                "employeeId": null,
-                "faxNumber": null,
-                "givenName": null,
                 "imAddresses": [],
                 "userType": "Guest",
 		

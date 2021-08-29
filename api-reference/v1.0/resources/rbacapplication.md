@@ -1,6 +1,6 @@
 ---
 title: "rbacApplication resource type"
-description: "Role management navigation property"
+description: "Container for role definitions and role assignments for Microsoft 365 role-based access control (RBAC) providers"
 localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
@@ -11,16 +11,16 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers that support single principal and single scope in a role assignment. Currently "directory" is the only RBAC application supported.
+Role management container for unified role definitions and role assignments for Microsoft 365 role-based access control (RBAC) providers. The role assignments support only a single principal and a single scope. Currently **directory** is the only RBAC provider supported.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new unifiedRoleAssignment by posting to the roleAssignments collection. |
-| [List roleAssignments](../api/rbacapplication-list-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) collection | Get a unifiedRoleAssignment object collection. Only specific instances can be queried, by filtering on roleDefitionId or principalId. |
-| [Create unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a new unifiedRoleDefinition by posting to the roleDefinitions collection. |
 | [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Get a unifiedRoleDefinition object collection. |
+| [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new unifiedRoleAssignment by posting to the roleAssignments collection. |
+Commit suggestion 
+Add suggestion to batch
 
 ## Properties
 

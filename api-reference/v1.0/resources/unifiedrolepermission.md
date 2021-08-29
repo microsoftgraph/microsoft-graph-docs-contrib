@@ -11,13 +11,14 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a collection of allowed resource actions and the conditions that must be met for the action to be effective. Resource actions are tasks that can be perfomed on a resource. For example, the application resource supports create, update, delete, and reset password resource actions.
+Represents a collection of allowed resource actions and the conditions that must be met for the action to be effective. Resource actions are tasks that can be performed on a resource. For example, the application resource supports create, update, delete, and reset password resource actions.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|allowedResourceActions|String collection| Set of tasks that can be perfomed on a resource. |
+|allowedResourceActions|String collection| Set of tasks that can be performed on a resource. |
+|excludedResourceActions| |  |
 |condition|String| Optional constraints that must be met for the permission to be effective. |
 
 ### allowedResourceActions property
@@ -30,7 +31,7 @@ The following is the schema for resource actions:
 For example: `microsoft.directory/applications/credentials/update`.  
 
 - Namespace - The services that exposes the task. For example, all tasks in Azure Active Directory use the namespace microsoft.directory.  
-- Entity - The logical features or components exposed by the service in Microsoft Graph. For example, applications, service principals, or groups.
+- Entity - The logical features or components exposed by the service in Microsoft Graph. For example, applications, servicePrincipals, or groups.
 - PropertySet - The specific properties or aspects of the entity for which access is being granted. For example, 
 `microsoft.directory/applications/authentication/read` grants the ability to read the reply URL, logout URL, and implicit flow property on the **application** object in Azure AD. The following are reserved names for common property sets:  
   - allProperties - Designates all properties of the entity, including privileged properties. Examples include `microsoft.directory/applications/allProperties/read` and `microsoft.directory/applications/allProperties/update`.
@@ -44,12 +45,12 @@ For example: `microsoft.directory/applications/credentials/update`.
   - AllTasks - Represents all CRUD operations (create, read, update, and delete). 
 
 ### condition property
-Conditions define constraints that must be met. For example, a requirement that the principal be an "owner" of the target. The following are the supported conditions:
+Conditions define constraints that must be met. For example, a requirement that the principal be an owner of the target resource. The following are the supported conditions:
 
-- Self: "@Subject.objectId == @Resource.objectId"
-- Owner: "@Subject.objectId Any_of @Resource.owners"
+- `Self`: "@Subject.objectId == @Resource.objectId"
+- `Owner`: "@Subject.objectId Any_of @Resource.owners"
 
-The following is an example of a role permission with a condition.
+The following is an example of a role permission with a condition that the principal be the owner of the target resource.
 
 ```json
 "rolePermissions": [

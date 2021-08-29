@@ -9,9 +9,13 @@ doc_type: "resourcePageType"
 
 # appScope resource type
 
-The scope of a role assignment determines the set of resources for which the principal has been granted access. An app scope is a scope defined and understood by a specific application. The other type of scope is directory scope. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. 
+The scope of a role assignment determines the set of resources for which the principal has been granted access. An app scope is a scope defined and understood by a specific application, unlike directory scopes which are shared scopes stored in the directory and understood by multiple applications.
 
-This is employed in both the single principal, single scope entity and multiple principal, multiple scope entities.
+This may be in both the following principal and scope scenarios:
++ A single principal and a single scope
++ Multiple principals and multiple scopes.
+	
+Inherits from [entity](entity.md).
 
 ## Methods
 None
@@ -20,9 +24,9 @@ None
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| id | string | Id of an app-specific container or resource representing the scope of the assignment. Usually the immutable id of the resource. The scope of an assignment determines the set of resources for which the principal has been granted access. This property is required. |
-| type | String | Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only. |
-| displayName | string | Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only. |
+| displayName | string | Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only. |
+| id | string | Identifier of an app-specific container or resource representing the scope of the assignment. Usually the immutable id of the resource. The scope of an assignment determines the set of resources for which the principal has been granted access. Required. |
+| type | String | Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only. |
 
 ## Relationships
 

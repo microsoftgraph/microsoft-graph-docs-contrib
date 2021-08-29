@@ -3,7 +3,7 @@ title: "roleManagement resource type"
 description: "RBAC role management resource"
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a Microsoft 365 RBAC role management entity. Provides access to role definitions and role assignments surfaced from RBAC providers. Currently directory (Azure AD) and  deviceManagement (Intune) providers are supported. 
+Represents a Microsoft 365 role-based access control (RBAC) role management entity. This resource provides access to role definitions and role assignments surfaced from RBAC providers. **directory** (Azure Active Directory) and **deviceManagement** (Intune) providers are currently supported.
 
 For more information, see: 
 * [Administrator role permissions in Azure Active Directory](/azure/active-directory/roles/custom-overview).

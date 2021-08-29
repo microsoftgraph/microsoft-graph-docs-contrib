@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object.
+Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. You cannot delete built-in roles.
 
 ## Permissions
 
