@@ -11,69 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const groupSetting = {
-  displayName: 'Group.Unified',
-  templateId: '62375ab9-6b52-47ed-826b-58e47e0e304b',
   values: [
     {
-      name: 'EnableMIPLabels',
-      value: 'false'
-    },
-    {
-      name: 'CustomBlockedWordsList',
-      value: ''
-    },
-    {
-      name: 'EnableMSStandardBlockedWords',
-      value: 'false'
-    },
-    {
-      name: 'ClassificationDescriptions',
-      value: ''
-    },
-    {
-      name: 'DefaultClassification',
-      value: ''
-    },
-    {
-      name: 'PrefixSuffixNamingRequirement',
-      value: ''
-    },
-    {
-      name: 'AllowGuestsToBeGroupOwner',
-      value: 'false'
-    },
-    {
-      name: 'AllowGuestsToAccessGroups',
-      value: 'true'
-    },
-    {
-      name: 'GuestUsageGuidelinesUrl',
-      value: ''
-    },
-    {
-      name: 'GroupCreationAllowedGroupId',
-      value: ''
-    },
-    {
       name: 'AllowToAddGuests',
-      value: 'true'
-    },
-    {
-      name: 'UsageGuidelinesUrl',
-      value: ''
-    },
-    {
-      name: 'ClassificationList',
-      value: ''
-    },
-    {
-      name: 'EnableGroupCreation',
-      value: 'true'
+      value: 'false'
     }
   ]
 };
 
-await client.api('/groupSettings/{id}')
+await client.api('/groupSettings/f0b2d6f5-097d-4177-91af-a24e530b53cc')
 	.update(groupSetting);
 
 ```

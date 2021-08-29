@@ -448,9 +448,11 @@ items:
         - name: Remove app for user
           href: api/userteamwork-delete-installedapps.md
         - name: Get chat between user and app
-          href: api/userscopeteamsappinstallation-get-chat.md 
+          href: api/userscopeteamsappinstallation-get-chat.md
         - name: Get chat for user
           href: api/chat-get.md
+        - name: List chats for user
+          href: api/chat-list.md
       - name: To-do tasks
         items:
         - name: Task
@@ -499,7 +501,7 @@ items:
         - name: Check member groups
           href: api/group-checkmembergroups.md
         - name: Check member objects
-          href: api/group-checkmemberobjects.md 
+          href: api/group-checkmemberobjects.md
         - name: Get delta
           href: api/group-delta.md
         - name: Get member groups
@@ -648,7 +650,7 @@ items:
         - name: Create rejected sender
           href: api/group-post-rejectedsenders.md
         - name: Remove rejected senders
-          href: api/group-delete-rejectedsenders.md  
+          href: api/group-delete-rejectedsenders.md
       - name: Conversation thread
         href: resources/conversationthread.md
         items:
@@ -1275,6 +1277,10 @@ items:
           href: api/presence-get.md
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
+        - name: Set presence
+          href: api/presence-setpresence.md
+        - name: Clear presence
+          href: api/presence-clearpresence.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -1331,7 +1337,7 @@ items:
           href: resources/printjob.md
           items:
           - name: Create job for a printer
-            href: api/printer-post-jobs.md            
+            href: api/printer-post-jobs.md
           - name: Create job for a printer share
             href: api/printershare-post-jobs.md
           - name: List jobs for a printer
@@ -4154,6 +4160,8 @@ items:
           href: api/educationuser-list-taughtclasses.md
         - name: Create rubric
           href: api/educationuser-post-rubrics.md
+        - name: List assignments
+          href: api/educationuser-list-assignments.md          
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -4255,7 +4263,7 @@ items:
       - name: Outcome
         items:
         - name: Outcome
-          href: resources/educationoutcome.md
+          href: resources/educationoutcome.md     
         - name: Feedback outcome type
           href: resources/educationfeedbackoutcome.md
         - name: Points outcome type
@@ -4624,7 +4632,7 @@ items:
               href: api/fido2authenticationmethod-get.md
             - name: Delete
               href: api/fido2authenticationmethod-delete.md
-          - name: Microsoft Authenticator 
+          - name: Microsoft Authenticator
             href: resources/microsoftauthenticatorauthenticationmethod.md
             items:
             - name: List
@@ -4801,9 +4809,9 @@ items:
           - name: Social identity provider
             href: resources/socialidentityprovider.md
           - name: List
-            href: api/identityproviderbase-list.md
+            href: api/identitycontainer-list-identityproviders.md
           - name: Create
-            href: api/identityproviderbase-post-identityproviders.md
+            href: api/identitycontainer-post-identityproviders.md
           - name: Get
             href: api/identityproviderbase-get.md
           - name: Update
@@ -4811,7 +4819,7 @@ items:
           - name: Delete
             href: api/identityproviderbase-delete.md
           - name: List available provider types
-            href: api/identityproviderbase-list-availableprovidertypes.md
+            href: api/identityproviderbase-availableprovidertypes.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
@@ -4838,20 +4846,20 @@ items:
           items:
           - name: Create
             href: api/organizationalbrandingproperties-create.md
-          - name: Get 
+          - name: Get
             href: api/organizationalbrandingproperties-get.md
           - name: Update
             href: api/organizationalbrandingproperties-update.md
           - name: Delete
             href: api/organizationalbrandingproperties-delete.md
-          - name: Create localized 
+          - name: Create localized
             href: api/organizationalbrandingpropertieslocalization-create.md
           - name: Get localized
             href: api/organizationalbrandingpropertieslocalization-get.md
           - name: Update localized
             href: api/organizationalbrandingpropertieslocalization-update.md
           - name: Delete localized
-            href: api/organizationalbrandingpropertieslocalization-delete.md 
+            href: api/organizationalbrandingpropertieslocalization-delete.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -4960,7 +4968,7 @@ items:
             - name: Update
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
         - name: User flows
-          items:  
+          items:
           - name: Self-service sign up user flows
             items:
              - name: Self-service sign up user flow
@@ -5025,11 +5033,11 @@ items:
                href: api/userflowlanguageconfiguration-list-overridespages.md
              - name: User flow language page
                href: resources/userflowlanguagepage.md
-             - name: Get 
+             - name: Get
                href: api/userflowlanguagepage-get.md
-             - name: Update 
+             - name: Update
                href: api/userflowlanguagepage-put.md
-             - name: Delete 
+             - name: Delete
                href: api/userflowlanguagepage-delete.md
           - name: API connectors
             items:
@@ -5046,7 +5054,7 @@ items:
             - name: Upload a client certificate
               href: api/identityapiconnector-uploadclientcertificate.md
             - name: Delete
-              href: api/identityapiconnector-delete.md    
+              href: api/identityapiconnector-delete.md
       - name: Governance
         items:
         - name: Access reviews
@@ -5062,7 +5070,7 @@ items:
             - name: Create
               href: api/accessreviewscheduledefinition-post.md
             - name: Delete
-              href: api/accessreviewscheduledefinition-delete.md 
+              href: api/accessreviewscheduledefinition-delete.md
             - name: Update
               href: api/accessreviewscheduledefinition-update.md
             - name: Filter by current user
@@ -5134,7 +5142,7 @@ items:
           - name: Agreement
             href: resources/agreement.md
           - name: List
-            href: api/agreement-list.md          
+            href: api/agreement-list.md
           - name: Create
             href: api/agreement-post-agreements.md
           - name: Get
@@ -5144,7 +5152,7 @@ items:
           - name: Delete
             href: api/agreement-delete.md
           - name: List acceptance status
-            href: api/user-list-agreementacceptances.md      
+            href: api/user-list-agreementacceptances.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
@@ -5253,7 +5261,7 @@ items:
         - name: Create child folder
           href: api/mailfolder-post-childfolders.md
         - name: Create message in folder
-          href: api/mailfolder-post-messages.md          
+          href: api/mailfolder-post-messages.md
         - name: Get mail folder delta
           href: api/mailfolder-delta.md
         - name: Get message delta
@@ -5794,6 +5802,26 @@ items:
             href: api/externalconnectors-externalitem-update.md
           - name: Delete external item
             href: api/externalconnectors-externalitem-delete.md
+        - name: External group
+          items:
+          - name: External group
+            href: resources/externalconnectors-externalgroup.md
+          - name: Create external group
+            href: api/externalconnectors-externalconnection-post-groups.md
+          - name: Get external group
+            href: api/externalconnectors-externalgroup-get.md
+          - name: Update external group
+            href: api/externalconnectors-externalgroup-update.md
+          - name: Delete external group
+            href: api/externalconnectors-externalgroup-delete.md
+        - name: External group member
+          items:
+          - name: Identity
+            href: resources/externalconnectors-identity.md
+          - name: Create identity for member
+            href: api/externalconnectors-externalgroup-post-members.md
+          - name: Delete identity of member
+            href: api/externalconnectors-identity-delete.md
     - name: Security
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
@@ -5870,13 +5898,29 @@ items:
           href: api/site-unfollow.md
         - name: List followed sites
           href: api/sites-list-followed.md
+        - name: List columns
+          href: api/site-list-columns.md
+        - name: Create column
+          href: api/site-post-columns.md
+        - name: List content types
+          href: api/site-list-contenttypes.md
+        - name: Create content type
+          href: api/site-post-contenttypes.md
+        - name: Get applicable content types for list
+          href: api/site-getapplicablecontenttypesforlist.md
+        - name: Get lists
+          href: api/list-list.md
+        - name: Create list
+          href: api/list-create.md
+        - name: List subsites
+          href: api/site-list-subsites.md
         - name: Permissions
           href: resources/permission.md
           items:
           - name: Get site permission
             href: api/site-get-permission.md
           - name: List site permissions
-            href: api/site-list-permissions.md 
+            href: api/site-list-permissions.md
           - name: Create site permissions
             href: api/site-post-permissions.md
           - name: Update site permission
@@ -5884,15 +5928,62 @@ items:
           - name: Delete site permission
             href: api/site-delete-permission.md
       - name: Lists
-        href: resources/list.md
         items:
-        - name: Get list
-          href: api/list-get.md
-        - name: Get items
-          href: api/listitem-list.md
+        - name: List
+          href: resources/list.md
         - name: Create list
           href: api/list-create.md
-      - name: ListItems
+        - name: Get list
+          href: api/list-get.md
+        - name: Get lists in a site
+          href: api/list-list.md
+        - name: Get items
+          href: api/listitem-list.md
+        - name: List columns
+          href: api/list-list-columns.md
+        - name: Create column
+          href: api/list-post-columns.md
+        - name: List content types
+          href: api/list-list-contenttypes.md
+        - name: Add copy of content type
+          href: api/contenttype-addcopy.md
+      - name: Columns
+        items:
+        - name: Column definition
+          href: resources/columndefinition.md
+        - name: Get
+          href: api/columndefinition-get.md
+        - name: Update
+          href: api/columndefinition-update.md
+        - name: Delete
+          href: api/columndefinition-delete.md
+      - name: Content types
+        items:
+        - name: Content type
+          href: resources/contentType.md
+        - name: Get
+          href: api/contenttype-get.md
+        - name: Update
+          href: api/contenttype-update.md
+        - name: Delete
+          href: api/contenttype-delete.md
+        - name: Check publishing status
+          href: api/contenttype-ispublished.md
+        - name: Publish
+          href: api/contenttype-publish.md
+        - name: Unpublish
+          href: api/contenttype-unpublish.md
+        - name: Add copy to list
+          href: api/contenttype-addcopy.md
+        - name: Associate with hub sites
+          href: api/contenttype-associatewithhubsites.md
+        - name: Copy to default content location
+          href: api/contenttype-copytodefaultcontentlocation.md
+        - name: List columns
+          href: api/contenttype-list-columns.md
+        - name: Create column
+          href: api/contenttype-post-columns.md
+      - name: List items
         href: resources/listitem.md
         items:
         - name: Get item
@@ -5907,6 +5998,62 @@ items:
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+      - name: Taxonomy
+        displayname: Taxonomy API
+        items:
+        - name: Store
+          href: resources/termstore-store.md
+          items:
+          - name: Get
+            href: api/termstore-store-get.md
+          - name: Update
+            href: api/termstore-store-update.md
+        - name: Group
+          href: resources/termstore-group.md
+          items:
+          - name: List
+            href: api/termstore-list-groups.md
+          - name: Create
+            href: api/termstore-group-post.md
+          - name: Get
+            href: api/termstore-group-get.md
+          - name: Delete
+            href: api/termstore-group-delete.md
+        - name: Set
+          href: resources/termstore-set.md
+          items:
+          - name: List
+            href: api/termstore-group-list-sets.md
+          - name: List children
+            href: api/termstore-term-list-children.md
+          - name: Create
+            href: api/termstore-set-post.md
+          - name: Get
+            href: api/termstore-set-get.md
+          - name: Update
+            href: api/termstore-set-update.md
+          - name: Delete
+            href: api/termstore-set-delete.md
+        - name: Term
+          href: resources/termstore-term.md
+          items:
+          - name: List children
+            href: api/termstore-term-list-children.md
+          - name: Create
+            href: api/termstore-term-post.md
+          - name: Get
+            href: api/termstore-term-get.md
+          - name: Update
+            href: api/termstore-term-update.md
+          - name: Delete
+            href: api/termstore-term-delete.md
+        - name: Relation
+          href: resources/termstore-relation.md
+          items:
+          - name: List
+            href: api/termStore-term-list-relations.md
+          - name: Create
+            href: api/termStore-relation-post.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -6086,7 +6233,7 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: Add member 
+        - name: Add member
           href: api/channel-post-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
@@ -6103,7 +6250,7 @@ items:
         - name: List channel messages
           href: api/channel-list-messages.md
         - name: List members
-          href: api/channel-list-members.md        
+          href: api/channel-list-members.md
         - name: List message replies
           href: api/chatmessage-list-replies.md
         - name: Remove member
@@ -6119,6 +6266,8 @@ items:
       - name: Chat
         href: resources/chat.md
         items:
+        - name: List chats
+          href: api/chat-list.md
         - name: Create chat
           href: api/chat-post.md
         - name: Get chat
@@ -6139,7 +6288,7 @@ items:
           href: api/chatmessage-get.md
         - name: Send message in chat
           href: api/chat-post-messages.md
-        - name: Get chat between user and app 
+        - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
       - name: Chat message
         href: resources/chatmessage.md
@@ -6211,7 +6360,7 @@ items:
           - name: List apps in chat
             href: api/chat-list-installedapps.md
           - name: Add app in chat
-            href: api/chat-post-installedapps.md     
+            href: api/chat-post-installedapps.md
           - name: Get app installed in chat
             href: api/chat-get-installedapps.md
           - name: Upgrade app installed in chat
@@ -6232,7 +6381,7 @@ items:
         - name: Tab in channel
           items:
           - name: List tabs in channel
-            href: api/channel-list-tabs.md          
+            href: api/channel-list-tabs.md
           - name: Add tab to channel
             href: api/channel-post-tabs.md
           - name: Get tab in channel

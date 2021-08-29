@@ -8574,6 +8574,48 @@
       "CreatedDateTime": "2021-06-29T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id":"18b0d04c-00a6-11ec-8d53-80a0e90e4ae4",
+          "ApiChange":"Relationship",
+          "ChangedApiName":"federationConfigurations",
+          "ChangeType":"Addition",
+          "Description":"Added the **federationConfigurations** relationship to the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target":"directory"
+        },
+        {
+          "Id":"18b332fc-00a6-11ec-8d53-80a0e90e4ae4",
+          "ApiChange":"Resource",
+          "ChangedApiName":"samlOrWsFedProvider",
+          "ChangeType":"Addition",
+          "Description":"Added the [samlOrWsFedProvider](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedProvider?view=graph-rest-beta) resource type.",
+          "Target":"samlOrWsFedProvider"
+        },
+        {
+          "Id":"18b594c3-00a6-11ec-8d53-80a0e90e4ae4",
+          "ApiChange":"Resource",
+          "ChangedApiName":"samlOrWsFedExternalDomainFederation",
+          "ChangeType":"Addition",
+          "Description":"Added the [samlOrWsFedExternalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-beta) resource type, related methods, and operations.",
+          "Target":"samlOrWsFedExternalDomainFederation"
+        },
+        {
+          "Id":"18b7f884-00a6-11ec-8d53-80a0e90e4ae4",
+          "ApiChange":"Resource",
+          "ChangedApiName":"externalDomainName",
+          "ChangeType":"Addition",
+          "Description":"Added the [externalDomainName](https://docs.microsoft.com/en-us/graph/api/resources/externalDomainName?view=graph-rest-beta) resource type.",
+          "Target":"externalDomainName"
+        }
+      ],
+        "Id":"18ae6f33-00a6-11ec-8d53-80a0e90e4ae4",
+        "Cloud":"prd",
+        "Version":"beta",
+        "CreatedDateTime":"2021-08-27T04:29:52.029Z",
+        "WorkloadArea":"Identity and access",
+        "SubArea":"Identity and sign-in"
     }
   ]
 }

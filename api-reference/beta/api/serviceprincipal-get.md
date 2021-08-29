@@ -2,7 +2,7 @@
 title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of serviceprincipal object."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 doc_type: apiPageType
 ---
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 
 
 ### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
