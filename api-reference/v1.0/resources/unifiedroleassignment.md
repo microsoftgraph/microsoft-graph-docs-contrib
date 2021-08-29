@@ -22,7 +22,6 @@ Either the **directoryScopeId** or an **appScopeId** property is required.
 |[List unifiedRoleAssignments](../api/rbacapplication-list-roleassignments.md)|[unifiedRoleAssignment](../resources/unifiedroleassignment.md) collection| Get a list of the [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects and their properties.|
 |[Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md)|[unifiedRoleAssignment](../resources/unifiedroleassignment.md)|Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.|
 |[Get unifiedRoleAssignment](../api/unifiedroleassignment-get.md)|[unifiedRoleAssignment](../resources/unifiedroleassignment.md)|Read the properties and relationships of an [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.|
-|[Update unifiedRoleAssignment](../api/unifiedroleassignment-update.md)|[unifiedRoleAssignment](../resources/unifiedroleassignment.md)|Update the properties of an [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.|
 |[Delete unifiedRoleAssignment](../api/unifiedroleassignment-delete.md)|None|Deletes an [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.|
 
 ## Properties
@@ -66,6 +65,7 @@ The following is a JSON representation of the resource.
   "principalId": "String",
   "roleDefinitionId": "String"
 }
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

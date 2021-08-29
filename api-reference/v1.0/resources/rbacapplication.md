@@ -19,8 +19,6 @@ Role management container for unified role definitions and role assignments for 
 |:-------------|:------------|:------------|
 | [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Get a unifiedRoleDefinition object collection. |
 | [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new unifiedRoleAssignment by posting to the roleAssignments collection. |
-Commit suggestion 
-Add suggestion to batch
 
 ## Properties
 
