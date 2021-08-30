@@ -4,7 +4,7 @@ description: "Represents the role definitions. For Azure resources, it can repre
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # governanceRoleDefinition resource type

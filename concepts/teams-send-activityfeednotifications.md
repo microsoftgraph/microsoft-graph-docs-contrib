@@ -106,6 +106,8 @@ Because a Teams app can be installed for a user, in a team, or in a chat, the no
 
 For details about what topics are supported for each scenario, see the specific APIs. Custom text-based topics are supported for all scenarios.
 
+> **Note:** The activity icon is based on the context the request is made in. If the request is made with delegated permissions, the user's photo appears as the avatar, while the Teams app icon appears as activity icon. In an application-only context, the Teams app icon is used as the avatar and activity icon is ommited.
+
 ### Example 1: Notify a user about a task created in a chat
 
 This example shows how you can send an activity feed notification for a new task created in a chat. In this case, the Teams app must be installed in a chat with Id `chatId` and user `569363e2-4e49-4661-87f2-16f245c5d66a` must be part of the chat as well.
