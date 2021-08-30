@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipals: List owners"
 description: "Retrieve a list of owners of the servicePrincipal."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/owners
 
 
 ### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 > Note: The response object shown here might be shortened for readability.
 <!-- {

@@ -63,9 +63,9 @@ This resource lets you add your own data to custom properties using [extensions]
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|extensions|[Extension](extension.md) collection|The collection of open extensions defined for the post. Read-only. Nullable.|
-|inReplyTo|[post](post.md)| Read-only.|
+|attachments|[Attachment](attachment.md) collection| Read-only. Nullable. Supports `$expand`.|
+|extensions|[Extension](extension.md) collection|The collection of open extensions defined for the post. Read-only. Nullable. Supports `$expand`.|
+|inReplyTo|[post](post.md)| Read-only. Supports `$expand`.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the post. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the post. Read-only. Nullable.|
 

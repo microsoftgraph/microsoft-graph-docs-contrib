@@ -2,7 +2,7 @@
 title: "Create team"
 description: "Create a new team."
 author: "anandjo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -614,7 +614,7 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 
 #### Error response
 
-If the request is unsuccessful, this method returns a `400 Bad Request` response code. 
+If the request is unsuccessful, this method returns a `400 Bad Request` response code.
 
 ```http
 400 Bad Request
