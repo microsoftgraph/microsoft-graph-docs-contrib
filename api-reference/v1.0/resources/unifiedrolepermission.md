@@ -18,7 +18,7 @@ Represents a collection of allowed resource actions and the conditions that must
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |allowedResourceActions|String collection| Set of tasks that can be performed on a resource. |
-|excludedResourceActions| |  |
+|excludedResourceActions|String collection|  |
 |condition|String| Optional constraints that must be met for the permission to be effective. |
 
 ### allowedResourceActions property
@@ -80,7 +80,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.unifiedRolePermission",
   "allowedResourceActions": ["String"],
+  "excludedResourceActions": ["String"],
   "condition": "String"
 }
 ```
