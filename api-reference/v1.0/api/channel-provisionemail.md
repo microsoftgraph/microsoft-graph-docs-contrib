@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If the channel's email is provisioned successfully, this method returns a `200 OK` response code and a [provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) object in the response body. The provisioned email address is in the **email** property.
+If the channel's email is provisioned successfully, this method returns a `200 OK` response code and a [provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) object in the response body. The provisioned email address is in the `email` property.
 
 ## Example
 ### Request
