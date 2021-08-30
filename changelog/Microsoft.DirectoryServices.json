@@ -9,20 +9,12 @@
           "ChangeType": "Addition",
           "Description": "Added the [softwareOathAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta) resource and related operations and methods.",
           "Target": "softwareOathAuthenticationMethod"
-        },
-        {
-          "Id": "2540d603-c73e-48c3-9c90-32435cc7af54",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "softwareOathMethods",
-          "ChangeType": "Addition",
-          "Description": "Added the **softwareOathMethods** navigation property to the [authenticationmethod](https://docs.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta) resource.",
-          "Target": "authenticationmethod"
         }
       ],
       "Id": "a43059f7-af45-4cb5-a279-bf226c45027b",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-07-09T00:00:00.000Z",
+      "CreatedDateTime": "2021-08-30T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
   },
