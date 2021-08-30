@@ -102,6 +102,9 @@ Content-type: application/json
         "applicationTemplateId": null,
         "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
         "appRoleAssignmentRequired": false,
+        "customSecurityAttributes": {
+          "@odata.type": "microsoft.graph.customSecurityAttributeValue"
+        },
         "disabledByMicrosoftStatus": null,
         "displayName": "foo",
         "errorUrl": null,
