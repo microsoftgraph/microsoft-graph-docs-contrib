@@ -39,6 +39,6 @@ In the diagram above, the numbers denote how many children of each type can be p
 
 ## See also
 
-- [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta)
+- [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true)
 
 
