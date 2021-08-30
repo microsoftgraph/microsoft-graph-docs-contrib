@@ -5891,7 +5891,7 @@ items:
         - name: Get lists in a site
           href: api/list-list.md
         - name: Get items
-          href: api/listitem-list.
+          href: api/listitem-list.md
         - name: List columns
           href: api/list-list-columns.md
         - name: Create column
