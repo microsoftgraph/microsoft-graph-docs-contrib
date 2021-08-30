@@ -94,7 +94,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignmentDefaults/$entity",
-    "dueTime": 23:59:00.0000000,
+    "dueTime": "23:59:00",
     "notificationChannelUrl": null,
     "addedStudentAction": "none"
 }
