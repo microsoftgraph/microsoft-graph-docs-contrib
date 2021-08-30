@@ -6,7 +6,7 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-#### Intune device config V2 service limits
+#### Intune device config v2 service limits
 
 | Request type | Limit per tenant for all apps | Limit per app per tenant |
 | ------------ | ----------------------------- | ------------------------ |

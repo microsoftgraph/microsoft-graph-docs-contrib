@@ -194,7 +194,7 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 
 ### Identity and access service limits
 
-These service limits apply to the following entities:
+The service limits in this section apply to the following entities:
 
 [!INCLUDE [Identity and access throttling documentation](../includes/throttling-identity-and-access.md)]
 
@@ -428,7 +428,7 @@ The preceding limits apply to the following resources:
 [!INCLUDE [Intune bundles throttling documentation](../includes/throttling-intune-bundles.md)]
 [!INCLUDE [Intune chromebook sync throttling documentation](../includes/throttling-intune-chromebook-sync.md)]
 [!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
-[!INCLUDE [Intune device config V2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
+[!INCLUDE [Intune device config v2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
 [!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
 [!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
 [!INCLUDE [Intune device intent throttling documentation](../includes/throttling-intune-device-intent.md)]
