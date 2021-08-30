@@ -4,7 +4,7 @@ description: "The statistics summary for a particular role."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # privilegedRoleSummary resource type
