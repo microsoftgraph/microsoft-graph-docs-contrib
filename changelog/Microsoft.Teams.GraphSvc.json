@@ -3,24 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "6cfeff55-318c-4ff2-8249-3e5d6c7e3615",
-          "ApiChange": "Resource",
-          "ChangedApiName": "subscription",
-          "ChangeType": "Addition",
-          "Description": "Added a new resource type, 'users/{user-id}/chats/getAllMessages', for change notifications.",
-          "Target": "subscription"
-        }
-      ],
-      "Id": "6cfeff55-318c-4ff2-8249-3e5d6c7e3614",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-08-18T20:16:01.454Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "adc688c0-193c-44da-bf01-bebf53fbf02d",
           "ApiChange": "Resource",
           "ChangedApiName": "chatMembersNotificationRecipient",

@@ -254,7 +254,7 @@ Content-Type: application/json
 
 ## Subscribe to changes at the user level
 
-To track messages for all chats a user is part of, you can create a change notification subscription for all chats at the user level. To do this, subscribe to `/users/{user-id}/chats/getAllMessages` or `/me/chats/getAllMessages` if creating the subscription in delegated mode. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only modes*.
+To track messages across all chats a particular user is part of, you can create a change notification subscription at a user level. To do this, subscribe to `/users/{user-id}/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only* modes.
 
 User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
 
@@ -268,7 +268,7 @@ User-level chat messaging subscriptions also support keyword-based search via th
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | Chat.Read.All, Chat.ReadWrite.All | beta |
 
-### Example 1: Subscribe to messages in all chats a user is part of
+### Example: Subscribe to messages across all chats a particular user is part of
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -278,23 +278,6 @@ Content-Type: application/json
   "changeType": "created,updated,deleted",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "/users/{user-id}/chats/getAllMessages",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-### Example 2: Subscribe to messages in all chats a user is part of in delegated mode, using the `/me/chats/getAllMessages` resource path
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created,updated,deleted",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/me/chats/getAllMessages",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
