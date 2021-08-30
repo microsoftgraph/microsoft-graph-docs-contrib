@@ -10643,6 +10643,49 @@ items:
             href: api/contract-get.md
           - name: List contracts
             href: api/contract-list.md
+        - name: Custom security attributes
+          items:
+          - name: allowedValue
+            href: resources/allowedvalue.md
+            items:
+            - name: List
+              href: api/allowedvalue-list.md
+            - name: Create
+              href: api/allowedvalue-create.md
+            - name: Get
+              href: api/allowedvalue-get.md
+            - name: Update
+              href: api/allowedvalue-update.md
+            - name: Delete
+              href: api/allowedvalue-delete.md
+          - name: attributeSet
+            href: resources/attributeset.md
+            items:
+            - name: List
+              href: api/attributeset-list.md
+            - name: Create
+              href: api/attributeset-create.md
+            - name: Get
+              href: api/attributeset-get.md
+            - name: Update
+              href: api/attributeset-update.md
+            - name: Delete
+              href: api/attributeset-delete.md
+          - name: customSecurityAttributeDefinition
+            href: resources/customsecurityattributedefinition.md
+            items:
+            - name: List
+              href: api/customsecurityattributedefinition-list.md
+            - name: Create
+              href: api/customsecurityattributedefinition-create.md
+            - name: Get
+              href: api/customsecurityattributedefinition-get.md
+            - name: Update
+              href: api/customsecurityattributedefinition-update.md
+            - name: Delete
+              href: api/customsecurityattributedefinition-delete.md
+          - name: customSecurityAttributeValue
+            href: resources/customsecurityattributevalue.md
         - name: Deleted items
           href: resources/directory.md
           items:
