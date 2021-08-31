@@ -1,18 +1,18 @@
 ---
-title: "Delete attackSimulationRoot"
-description: "Deletes an attackSimulationRoot object."
+title: "Get Simulation Overview Report"
+description: "Get overview report of a phishing simulation."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Delete attackSimulationRoot
+# Get Simulation Overview Report
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [attackSimulationRoot](../resources/attacksimulationroot.md) object.
+Get overview report of a phishing simulation [simulationReportOverview](../resources/simulationreportoverview.md) object and its properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,8 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/attackSimulation
+GET /security/attackSimulation/simulations/{id}/report/overview
 ```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -43,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and a [simulationReportOverview](../resources/simulationreportoverview.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_attacksimulationroot"
+  "name": "get_simulationreportoverview"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/attackSimulation
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/overview
 ```
 
 
@@ -62,10 +65,27 @@ DELETE https://graph.microsoft.com/beta/security/attackSimulation
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "@odata.type": "microsoft.graph.simulationReportOverview"
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.simulationReportOverview",
+  "resolvedTargetsCount": "Integer",
+  "simulationEventsContent": {
+    "@odata.type": "microsoft.graph.simulationEventsContent"
+  },
+  "trainingEventsContent": {
+    "@odata.type": "microsoft.graph.trainingEventsContent"
+  },
+  "recommendedActions": [
+    {
+      "@odata.type": "microsoft.graph.recommendedAction"
+    }
+  ]
+}
 ```
 

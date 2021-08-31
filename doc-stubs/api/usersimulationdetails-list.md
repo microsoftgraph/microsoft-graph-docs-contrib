@@ -1,18 +1,18 @@
 ---
-title: "Get security"
-description: "Read the properties and relationships of a security object."
+title: "List simulation users report"
+description: "Get a list of users in a simulation with their online actions."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Get security
+# List simulation users report
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [security](../resources/security.md) object.
+Get a list of the [userSimulationDetails](../resources/usersimulationdetails.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security
+GET /security/attackSimulation/simulations/{id}/report/simulationUsers
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [security](../resources/security.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [userSimulationDetails](../resources/usersimulationdetails.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_security"
+  "name": "list_usersimulationdetails"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/simulationUsers
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/security
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security"
+  "@odata.type": "Collection(microsoft.graph.userSimulationDetails)"
 }
 -->
 ``` http
@@ -74,9 +74,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.userSimulationDetails",
+      "isCompromised": "Boolean",
+      "compromisedDateTime": "String (timestamp)",
+      "simulationEvents": [
+        {
+          "@odata.type": "microsoft.graph.userSimulationEventInfo"
+        }
+      ],
+      "trainingEvents": [
+        {
+          "@odata.type": "microsoft.graph.userTrainingEventInfo"
+        }
+      ],
+      "assignedTrainingsCount": "Integer",
+      "completedTrainingsCount": "Integer",
+      "inProgressTrainingsCount": "Integer",
+      "reportedPhishDateTime": "String (timestamp)",
+      "simulationUser": {
+        "@odata.type": "microsoft.graph.attackSimulationUser"
+      }
+    }
+  ]
 }
 ```
 
