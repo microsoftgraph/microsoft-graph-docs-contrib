@@ -1,6 +1,6 @@
 ---
-title: "List data Subject requests"
-description: "Get a list of the data subject requests and their properties."
+title: "List dataSubjectRequests"
+description: "Get a list of data subject requests and their properties."
 author: "skadam-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [dataSubjectRequest](../resources/datasubjectrequest.md) objects and their properties.
+Get a list of [dataSubjectRequest](../resources/datasubjectrequest.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
