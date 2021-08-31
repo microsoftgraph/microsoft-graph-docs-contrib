@@ -11,8 +11,6 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph.callRecords
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a log of direct routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries.
 
 ## Permissions
@@ -60,7 +58,7 @@ If there are more than 1000 entries in the date range, the body also includes an
 
 ## Example
 
-The following example shows how to get a collection of records for direct routing calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.NextLink` to get records beyond the first 1000. For readability, the response shows only a collection of 1 record. Please assume there are more than 1000 calls in that date range.
+The following example shows getting a collection of records for direct routing calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.NextLink` to get records beyond the first 1000. For readability, the response shows only a collection of 1 record. Please assume there are more than 1000 calls in that date range.
 
 ### Request
 
@@ -71,7 +69,7 @@ The following example shows how to get a collection of records for direct routin
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRoutingCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)
+GET https://graph.microsoft.com/v1.0/communications/callRecords/getDirectRoutingCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)
 ```
 
 ### Response
@@ -89,7 +87,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRouting
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.callRecords.directRoutingLogRow)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.callRecords.directRoutingLogRow)",
     "@odata.count": 1000,
     "value": [{
             "id": "9e8bba57-dc14-533a-a7dd-f0da6575eed1",
@@ -114,7 +112,7 @@ HTTP/1.1 200 OK
             "trunkFullyQualifiedDomainName": "tll-audiocodes01.adatum.biz",
             "mediaBypassEnabled": false
         }],
-    "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getDirectRoutingCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)?$skip=1000"
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/communications/callRecords/getDirectRoutingCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)?$skip=1000"
 }
 ```
 

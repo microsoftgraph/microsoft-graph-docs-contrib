@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph.callRecords
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a row of data in the Public Switch Telephone Network (PSTN) call log. Each row maps to one call.
 
 ## Methods
