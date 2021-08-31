@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleManagementPolicyRule resource type"
 description: "A unifiedRoleManagementPolicyRule specifies the rule associated with a role management policy. It is abstract."
-author: "shauliu"
+author: "shauliu1"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType

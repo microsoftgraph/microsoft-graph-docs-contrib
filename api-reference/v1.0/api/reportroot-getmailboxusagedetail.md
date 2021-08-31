@@ -73,6 +73,8 @@ The CSV file has the following headers for columns.
 - Prohibit Send/Receive Quota (Byte)
 - Deleted Item Count
 - Deleted Item Size (Byte)
+- Deleted Item Quota (Byte)
+- Has Archive
 - Report Period
 
 ## Example

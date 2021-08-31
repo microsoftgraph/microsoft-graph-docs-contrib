@@ -52,21 +52,30 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Required. |
 
 ## Request body
-The table below lists the properties that can be updated. In the request body, include only the properties that need updating, with the following exceptions:
+The following table lists the properties that can be updated. In the request body, include only the properties that need updating, with the following exceptions:
 
 - Updating the start or end date/time of an online meeting always requires both **startDateTime** and **endDateTime** properties in the request body.
-- **organizer** field of the **participants** property cannot be updated. The organizer of the meeting cannot be modified once the meeting is created.
+- The **organizer** field of the **participants** property cannot be updated. The organizer of the meeting cannot be modified after the meeting is created.
 - Updating the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
 
-| Property             | Type                                                         | Description                                                                                                                                    |
-|----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| startDateTime        | DateTime                                                     | The meeting start time in UTC.                                                                                                                 |
-| endDateTime          | DateTime                                                     | The meeting end time in UTC.                                                                                                                   |
-| subject              | String                                                       | The subject of the online meeting.                                                                                                             |
-| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | The participants associated with the online meeting. Only attendees can be updated.                                            |
-| isEntryExitAnnounced | Boolean                                                      | Whether or not to announce when callers join or leave.                                                                                         |
-| lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Specifies which participants can bypass the meeting lobby.                                                                                     |
-| allowedPresenters    | onlineMeetingPresenters                                      | Specifies who can be a presenter in a meeting. Possible values are everyone, organization, roleIsPresenter, organizer, and unknownFutureValue. |
+The last column indicates whether updating this property will take effect for an in-progress meeting.
+
+| Property                    | Type                                                       | Description                                                                         | Applies to in-progress meetings?    |
+|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
+| startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                           |
+| endDateTime                 | DateTime                                                   | The meeting end time in UTC.                                                        | No                           |
+| subject                     | String                                                     | The subject of the online meeting.                                                  | No                           |
+| participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                           |
+| isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                          |
+| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                          |
+| allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes, except when the value is `roleIsPresenter` |
+| allowAttendeeToEnableCamera | Boolean                                                    | Indicates whether attendees can turn on their camera.                               | Yes                          |
+| allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                          |
+| allowMeetingChat            | meetingChatMode                                            | Specifies the mode of meeting chat.                                                 | Yes                          |
+| allowTeamworkReactions      | Boolean                                                    | Indicates whether Teams reactions are enabled for the meeting.                      | Yes                          |
+
+> [!NOTE]
+> For the list of possible values for **allowedPresenters** and **allowMeetingChat**, see [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
@@ -77,7 +86,7 @@ If successful, this method returns a `200 OK` response code and an [onlineMeetin
 
 #### Request
 
-> **Note:** The meeting ID has been truncated for readability.
+> **Note:** The meeting ID has been shortened for readability.
 
 
 # [HTTP](#tab/http)
@@ -167,7 +176,7 @@ Content-Type: application/json
 ```
 
 #### Example 2: Update the lobbyBypassSettings
-> **Note:** The meeting ID has been truncated for readability.
+> **Note:** The meeting ID has been shortened for readability.
 
 
 # [HTTP](#tab/http)
