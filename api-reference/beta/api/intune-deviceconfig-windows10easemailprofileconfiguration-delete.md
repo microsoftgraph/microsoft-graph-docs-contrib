@@ -2,7 +2,7 @@
 title: "Delete windows10EasEmailProfileConfiguration"
 description: "Deletes a windows10EasEmailProfileConfiguration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
