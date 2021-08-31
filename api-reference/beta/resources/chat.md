@@ -67,7 +67,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | webUrl| String | A hyperlink that will go to the chat in Microsoft Teams. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 | tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
 | viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
-| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Details of the online meeting if the chat is associated with an online meeting. Read-only.|
+| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
 
 ### chatType values 
 

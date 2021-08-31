@@ -1,6 +1,6 @@
 ---
 title: "teamworkOnlineMeetingInfo resource type"
-description: "Represents details about an online Teams meeting"
+description: "Represents details about an online meeting in Microsoft Teams."
 author: "jecha"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details about an online Teams meeting.
+Represents details about an online meeting in Microsoft Teams.
 
 ## Properties
 |Property|Type|Description|

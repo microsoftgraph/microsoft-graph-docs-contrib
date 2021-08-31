@@ -283,7 +283,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Get the meeting details of a chat associated with a Teams meeting
+### Example 4: Get the meeting details of a chat associated with a Microsoft Teams meeting
 #### Request
 The following is an example of the request.
 
