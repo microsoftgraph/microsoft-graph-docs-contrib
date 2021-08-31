@@ -1,8 +1,8 @@
 ---
 title: "Privileged Identity Management - Azure resources"
 description: "APIs for Azure AD Privileged Identity Management to manage Azure resources."
-localization_priority: Priority
-author: "shauliu"
+ms.localizationpriority: high
+author: "shauliu1"
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---
