@@ -2,7 +2,7 @@
 title: "Create iosExpeditedCheckinConfiguration"
 description: "Create a new iosExpeditedCheckinConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
