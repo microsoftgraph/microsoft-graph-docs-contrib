@@ -2,7 +2,7 @@
 title: "List windows10PkcsCertificateProfiles"
 description: "List properties and relationships of the windows10PkcsCertificateProfile objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

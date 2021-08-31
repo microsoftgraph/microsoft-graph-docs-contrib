@@ -2,7 +2,7 @@
 title: "Update windows10ImportedPFXCertificateProfile"
 description: "Update the properties of a windows10ImportedPFXCertificateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

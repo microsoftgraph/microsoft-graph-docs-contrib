@@ -2,7 +2,7 @@
 title: "Delete iosikEv2VpnConfiguration"
 description: "Deletes a iosikEv2VpnConfiguration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
