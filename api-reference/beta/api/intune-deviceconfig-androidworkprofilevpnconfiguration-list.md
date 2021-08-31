@@ -2,7 +2,7 @@
 title: "List androidWorkProfileVpnConfigurations"
 description: "List properties and relationships of the androidWorkProfileVpnConfiguration objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

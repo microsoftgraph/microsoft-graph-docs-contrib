@@ -2,7 +2,7 @@
 title: "Update androidWorkProfileScepCertificateProfile"
 description: "Update the properties of a androidWorkProfileScepCertificateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

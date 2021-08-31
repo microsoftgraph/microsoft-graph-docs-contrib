@@ -2,7 +2,7 @@
 title: "Delete androidTrustedRootCertificate"
 description: "Deletes a androidTrustedRootCertificate."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
