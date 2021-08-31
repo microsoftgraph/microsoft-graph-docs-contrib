@@ -11,8 +11,6 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph.callRecords
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
 
 ## Permissions
@@ -63,7 +61,7 @@ If there are more than 1000 entries in the date range, the body also includes an
 
 ## Example
 
-The following example shows how to get a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.NextLink` to get records beyond the first 1000. For readability, the response shows only a collection of 1 record. Please assume there are more than 1000 calls in that date range.
+The following example shows getting a collection of records for PSTN calls that occurred in the specified date range. The response includes `"@odata.count": 1000` to enumerate the number of records in this first response, and `@odata.NextLink` to get records beyond the first 1000. For readability, the response shows only a collection of 1 record. Please assume there are more than 1000 calls in that date range.
 
 ### Request
 
@@ -74,7 +72,7 @@ The following example shows how to get a collection of records for PSTN calls th
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)
+GET https://graph.microsoft.com/v1.0/communications/callRecords/getPstnCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)
 ```
 
 ### Response
@@ -91,7 +89,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.callRecords.pstnCallLogRow)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.callRecords.pstnCallLogRow)",
     "@odata.count": 1000,
     "value": [{
             "id": "9c4984c7-6c3c-427d-a30c-bd0b2eacee90",
@@ -118,7 +116,7 @@ HTTP/1.1 200 OK
 			"operator": "Microsoft",
 			"callDurationSource": "microsoft"
         }],
-    "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
 }
 ```
 
