@@ -2,7 +2,7 @@
 title: "callRecord: getPstnCalls"
 description: "Get log of PSTN calls."
 author: "williamlooney"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---

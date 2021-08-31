@@ -2,7 +2,7 @@
 title: "List onSignUpStart listeners"
 description: "Get the collection of authenticationListener resources supported by the onSignupStart event."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

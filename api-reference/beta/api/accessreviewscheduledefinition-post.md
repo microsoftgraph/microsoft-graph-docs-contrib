@@ -1,7 +1,7 @@
 ---
 title: "Create accessReviewScheduleDefinition"
 description: "Create a new accessReviewScheduleDefinition object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType

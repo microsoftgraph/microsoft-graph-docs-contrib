@@ -1,7 +1,7 @@
 ---
 title: "Add group to incompatibleGroups"
 description: "Add a link to indicate a group is incompatible with a specified access package."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
