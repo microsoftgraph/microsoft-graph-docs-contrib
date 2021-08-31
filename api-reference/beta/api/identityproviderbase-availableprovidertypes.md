@@ -1,7 +1,7 @@
 ---
 title: "List availableProviderTypes"
 description: "Retrieve all supported identity providers in the directory."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
