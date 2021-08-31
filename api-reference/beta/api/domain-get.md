@@ -2,7 +2,7 @@
 title: "Get domain"
 description: "Retrieve the properties and relationships of domain object."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
