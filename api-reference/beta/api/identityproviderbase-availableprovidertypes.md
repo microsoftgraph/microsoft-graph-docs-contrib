@@ -1,6 +1,6 @@
 ---
 title: "List availableProviderTypes"
-description: "Retrieve all available identity provider types in the directory."
+description: "Retrieve all supported identity providers in the directory."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
@@ -8,9 +8,12 @@ ms.prod: "identity-and-sign-in"
 ---
 
 # List availableProviderTypes
+
 Namespace: microsoft.graph
 
-Retrieves all identity provider types available in a directory.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get all identity providers supported in a directory.
 
 ## Permissions
 
@@ -46,15 +49,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a String collection in the response body.
+If successful, this function returns a `200 OK` response code and a string collection in the response body. The string collection contains the names of the identity providers supported in the tenant.
 
 ## Example
 
-### Example 1: List all identity providers available in an Azure AD directory
+### Example 1: List all **identityProvider** available in an Azure AD directory
 
-### Request
+#### Request
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -64,8 +66,9 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProviderTypes
+GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,8 +87,7 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProvide
 
 ---
 
-
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -103,7 +105,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
     "value": [
         "MicrosoftAccount",
         "EmailOTP",
@@ -113,11 +115,10 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all identity providers available in an Azure AD B2C directory
+### Example 2: List all **identityProvider** available in an Azure AD B2C directory
 
-### Request
+#### Request
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -127,8 +128,9 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProviderTypes
+GET https://graph.microsoft.com/beta/identity/identityProviders/availableProviderTypes
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-b2c-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -147,9 +149,7 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProvide
 
 ---
 
-
-
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -167,7 +167,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
- "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
+ "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
   "value": [
         "Microsoft",
         "Google",
