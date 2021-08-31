@@ -1,7 +1,7 @@
 ---
 title: "Get user"
 description: "Retrieve the simple directory **user** that corresponds to this **educationUser**."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
