@@ -2,7 +2,7 @@
 title: "Get macOSMicrosoftEdgeApp"
 description: "Read properties and relationships of the macOSMicrosoftEdgeApp object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
