@@ -149,7 +149,7 @@ Content-type: application/json
     "createdDateTime": "2019-04-18T23:51:42.099Z",
     "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z",
     "chatType": "oneOnOne",
-    "webUrl": "https://teams.microsoft.com/l/chat/19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34"
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
     "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
     "onlineMeetingInfo": null,
     "viewpoint": {
