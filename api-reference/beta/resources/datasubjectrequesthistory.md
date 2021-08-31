@@ -1,6 +1,6 @@
 ---
 title: "dataSubjectRequestHistory resource type"
-description: "Represents the history for the data subject request."
+description: "Represents the history for a data subject request."
 author: "skadam-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the history for the data subject request.
+Represents the history for a data subject request.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|changedBy|[identitySet](../resources/identityset.md)|Identify of the user that changed the data subject request|
+|changedBy|[identitySet](../resources/identityset.md)|Identity of the user who changed the data subject request.|
 |eventDateTime|DateTimeOffset|Data and time when the entity was changed.|
 |stage|dataSubjectRequestStage|The stage when the entity was changed. Possible values are: `contentRetrieval`, `contentReview`, `generateReport`, `contentDeletion`, `caseResolved`, `unknownFutureValue`.|
 |stageStatus|dataSubjectRequestStageStatus|The status of the stage when the entity was changed. Possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
-|type|String|Type of history|
+|type|String|Type of history.|
 
 ## Relationships
 None.
