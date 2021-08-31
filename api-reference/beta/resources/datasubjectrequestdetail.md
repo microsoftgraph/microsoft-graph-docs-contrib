@@ -1,6 +1,6 @@
 ---
 title: "dataSubjectRequestDetail resource type"
-description: "Represents properties about the details about the data subject request like number of items found, number of items reviewed etc."
+description: "Represents the details of a data subject request, including number of items found, number of items reviewed, and so on."
 author: "skadam-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents properties about the details about the data subject request like number of items found, number of items reviewed etc.
+Represents the details of a data subject request, including number of items found, number of items reviewed, and so on.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |excludedItemCount|Int64|Count of items that are excluded from the request.|
-|insightCounts|[keyValuePair](../resources/keyvaluepair.md) collection|Count of items per insight|
-|itemCount|Int64|Count of items found|
-|itemNeedReview|Int64|Count of item that need review|
-|productItemCounts|[keyValuePair](../resources/keyvaluepair.md) collection|Count of item per Product like Exchange, SharePoint, OneDrive and Teams|
-|signedOffItemCount|Int64|Count of items signed off by the administrator|
-|totalItemSize|Int64|Total item size in bytes|
+|insightCounts|[keyValuePair](../resources/keyvaluepair.md) collection|Count of items per insight.|
+|itemCount|Int64|Count of items found.|
+|itemNeedReview|Int64|Count of item that need review.|
+|productItemCounts|[keyValuePair](../resources/keyvaluepair.md) collection|Count of items per product, such as Exchange, SharePoint, OneDrive, and Teams.|
+|signedOffItemCount|Int64|Count of items signed off by the administrator.|
+|totalItemSize|Int64|Total item size in bytes.|
 
 ## Relationships
 None.
