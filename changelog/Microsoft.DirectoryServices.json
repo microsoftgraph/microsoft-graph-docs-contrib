@@ -19,7 +19,8 @@
       "SubArea": "Identity and sign-in"
   },
   {
-
+    "ChangeList": [
+      {
           "Id": "479558a4-5491-4463-bf2f-4474590767db",
           "ApiChange": "Relationship",
           "ChangedApiName": "appRoleAssignments",
