@@ -71,3 +71,5 @@ namespace MicrosoftIdentityPlatformProofTokenGenerator
     }
 }
 ```
+
+> **Note:** The proof can be generated using other tools, such as PowerShell or signature using Azure KeyVault. It is important to note that padding character '=' must not be included in the JWT header and payload, or an **Authentication_MissingOrMalformed** error will be returned.

@@ -97,7 +97,7 @@
        "ApiChange": "Method",
        "ChangedApiName": "reprocess",
        "ChangeType": "Addition",
-       "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/accesspackageassignment-reprocess.md) action to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/acesspackageassignment.md) resource.",
+       "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta) action to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/accesspackageassignment?view=graph-rest-beta) resource.",
        "Target": "reprocess"
      },
      {
@@ -105,7 +105,7 @@
        "ApiChange": "Method",
        "ChangedApiName": "reprocess",
        "ChangeType": "Addition",
-       "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest-reprocess?view=graph-rest-beta) action to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
+       "Description": "Added the [reprocess](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest-reprocess?view=graph-rest-beta) action to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
        "Target": "reprocess"
       }
     ],
@@ -3994,10 +3994,10 @@
         {
           "Id": "0f9cc542-3f6a-418d-9229-40c338a43e56",
           "ApiChange": "Resource",
-          "ChangedApiName": "Auditlogs.Read.All",
+          "ChangedApiName": "AuditLog.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added the [Auditlogs.Read.All](https://docs.microsoft.com/en-us/graph/permissions-reference#user-permissions) permission for listing the sign-in activity of a user.",
-          "Target": "Auditlogs.Read.All"
+          "Description": "Added the [AuditLog.Read.All](https://docs.microsoft.com/en-us/graph/permissions-reference#user-permissions) permission for listing the sign-in activity of a user.",
+          "Target": "AuditLog.Read.All"
         },
         {
           "Id": "0f9cc542-3f6a-418d-9229-40c338a43e56",
@@ -8606,6 +8606,48 @@
       "CreatedDateTime": "2021-06-29T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id":"18b0d04c-00a6-11ec-8d53-80a0e90e4ae4",
+          "ApiChange":"Relationship",
+          "ChangedApiName":"federationConfigurations",
+          "ChangeType":"Addition",
+          "Description":"Added the **federationConfigurations** relationship to the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target":"directory"
+        },
+        {
+          "Id":"18b332fc-00a6-11ec-8d53-80a0e90e4ae4",
+          "ApiChange":"Resource",
+          "ChangedApiName":"samlOrWsFedProvider",
+          "ChangeType":"Addition",
+          "Description":"Added the [samlOrWsFedProvider](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedProvider?view=graph-rest-beta) resource type.",
+          "Target":"samlOrWsFedProvider"
+        },
+        {
+          "Id":"18b594c3-00a6-11ec-8d53-80a0e90e4ae4",
+          "ApiChange":"Resource",
+          "ChangedApiName":"samlOrWsFedExternalDomainFederation",
+          "ChangeType":"Addition",
+          "Description":"Added the [samlOrWsFedExternalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-beta) resource type, related methods, and operations.",
+          "Target":"samlOrWsFedExternalDomainFederation"
+        },
+        {
+          "Id":"18b7f884-00a6-11ec-8d53-80a0e90e4ae4",
+          "ApiChange":"Resource",
+          "ChangedApiName":"externalDomainName",
+          "ChangeType":"Addition",
+          "Description":"Added the [externalDomainName](https://docs.microsoft.com/en-us/graph/api/resources/externalDomainName?view=graph-rest-beta) resource type.",
+          "Target":"externalDomainName"
+        }
+      ],
+        "Id":"18ae6f33-00a6-11ec-8d53-80a0e90e4ae4",
+        "Cloud":"prd",
+        "Version":"beta",
+        "CreatedDateTime":"2021-08-27T04:29:52.029Z",
+        "WorkloadArea":"Identity and access",
+        "SubArea":"Identity and sign-in"
     }
   ]
 }
