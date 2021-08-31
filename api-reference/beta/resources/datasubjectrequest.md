@@ -1,6 +1,6 @@
 ---
 title: "dataSubjectRequest resource type"
-description: "Represents the properties for the data subject request"
+description: "Represents the properties of a data subject request."
 author: "skadam-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A format request by a data subject to a controller to take an action on their personal data is called a Data Subject Request or DSR. This resource type 
-represents the properties for the data subject request. 
-
+Represents the properties of a data subject request, which is a format request by a data subject to a controller to take an action on their personal data. 
 
 Inherits from [entity](../resources/entity.md).
 
@@ -28,8 +26,8 @@ Inherits from [entity](../resources/entity.md).
 |[Update dataSubjectRequest](../api/datasubjectrequest-update.md)|[dataSubjectRequest](../resources/datasubjectrequest.md)|Update the properties of a [dataSubjectRequest](../resources/datasubjectrequest.md) object.|
 |[getFinalAttachment](../api/datasubjectrequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that where included by the privacy administrator.|
 |[getFinalReport](../api/datasubjectrequest-getfinalreport.md)|Stream|Get the final report for the request. The report is a text file that contains information about the files that where included by the privacy administrator.|
-|[List notes for the data subject request](../api/datasubjectrequest-list-notes.md)|[authoredNote](../resources/authorednote.md) collection|Get the authoredNote resources from the notes navigation property.|
-|[Create new note for the data subject request](../api/datasubjectrequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
+|[List notes](../api/datasubjectrequest-list-notes.md)|[authoredNote](../resources/authorednote.md) collection|Get the authoredNote resources from the notes navigation property.|
+|[Create authoredNote](../api/datasubjectrequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
 
 ## Properties
 |Property|Type|Description|
@@ -56,7 +54,7 @@ Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |notes|[authoredNote](../resources/authorednote.md) collection|List of notes associcated with the request.|
-|team|[team](../resources/team.md)|Information about the Microsoft Teams that was created for the request.|
+|team|[team](../resources/team.md)|Information about the Microsoft Teams team that was created for the request.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
