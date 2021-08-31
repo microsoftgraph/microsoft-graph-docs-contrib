@@ -59,6 +59,41 @@
       "SubArea": "Directory management"
     },
     {
+      "ChangeList": [
+        {
+
+          "Id": "479558a4-5491-4463-bf2f-4474590767db",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "appRoleAssignments",
+          "ChangeType": "Change",
+          "Description": "Added support for paging for the **appRoleAssignments** navigation property on the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource type. The **appRoleAssignments** navigation property returns app roles assigned directly to the service principal.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "479558a4-5491-4463-bf2f-4474590767db",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "appRoleAssignments",
+          "ChangeType": "Change",
+          "Description": "Added support for paging for the **appRoleAssignments** navigation property on the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource type. The **appRoleAssignments** navigation property returns app roles assigned to the user directly, or assigned to the user indirectly through a group that the user is a member of.",
+          "Target": "user"
+        },        
+        {
+          "Id": "479558a4-5491-4463-bf2f-4474590767db",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "appRoleAssignments",
+          "ChangeType": "Change",
+          "Description": "Added support for paging for the **appRoleAssignments** navigation property on the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource type. The **appRoleAssignments** navigation property returns app roles assigned directly to the group.",
+          "Target": "group"
+        }
+      ],
+      "Id": "479558a4-5491-4463-bf2f-4474590767db",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-27T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
     "ChangeList": [
      {
        "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",

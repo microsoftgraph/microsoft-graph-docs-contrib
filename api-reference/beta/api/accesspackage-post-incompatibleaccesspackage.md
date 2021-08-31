@@ -1,7 +1,7 @@
 ---
 title: "Add accessPackage to incompatibleAccessPackages"
 description: "Add a link to indicate an access package is incompatible with a specified access package."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"

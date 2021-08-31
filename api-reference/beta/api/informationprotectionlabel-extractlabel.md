@@ -1,7 +1,7 @@
 ---
 title: "informationProtectionLabel: extractLabel"
 description: "Retrieve informationProtectionContentLabel using metadata from a labeled object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"

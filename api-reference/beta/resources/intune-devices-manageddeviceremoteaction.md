@@ -34,7 +34,8 @@ Not yet documented
 |disable|11|Name of the disable action.|
 |reenable|12|Name of the reenable action.|
 |moveDeviceToOrganizationalUnit|13|Name of the moveDevicesToOU action.|
-
+|activateDeviceEsim|14|Name of action to Activate eSIM on the device.|
+|collectDiagnostics|15|Name of the collectDiagnostics action.|
 
 
 

@@ -27,4 +27,3 @@ Possible values for the install intent chosen by the admin.
 
 
 
-

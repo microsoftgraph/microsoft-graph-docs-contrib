@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: publish"
 description: "Publish a content type present in content type hub site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

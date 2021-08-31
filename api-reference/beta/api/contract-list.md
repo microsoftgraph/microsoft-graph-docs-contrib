@@ -1,7 +1,7 @@
 ---
 title: "List contracts"
 description: "Retrieve a list of contract objects associated to a partner tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType

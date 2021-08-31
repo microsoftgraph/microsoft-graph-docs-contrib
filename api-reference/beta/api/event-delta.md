@@ -1,7 +1,7 @@
 ---
 title: "event: delta"
 description: "Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events)"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType

@@ -30,7 +30,7 @@ This entity contains the properties used to assign a windows quality update prof
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The Identifier of the entity|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target that the feature update profile is assigned to.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target that the quality update profile is assigned to.|
 
 ## Relationships
 None
@@ -54,7 +54,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 
