@@ -2,7 +2,7 @@
 title: "Delete windowsPhoneXAP"
 description: "Deletes a windowsPhoneXAP."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
