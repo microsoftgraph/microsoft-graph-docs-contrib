@@ -2,7 +2,7 @@
 title: "callRecord: getDirectRoutingCalls"
 description: "Get a log of direct routing calls."
 author: "williamlooney"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
