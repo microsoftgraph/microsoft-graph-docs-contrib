@@ -67,16 +67,16 @@
           "ApiChange": "Action",
           "ChangedApiName": "startHoldMusic",
           "ChangeType": "Addition",
-          "Description": "Added the [startHoldMusic](https://docs.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-beta) method to the [startHoldMusic](https://docs.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-beta) resource.",
-          "Target": "startHoldMusic"
+          "Description": "Added the [startHoldMusic](https://docs.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-beta) method to the [startHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/startHoldMusicOperation?view=graph-rest-beta) resource.",
+          "Target": "startHoldMusicOperation"
         },
         {
           "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
           "ApiChange": "Action",
           "ChangedApiName": "stopHoldMusic",
           "ChangeType": "Addition",
-          "Description": "Added the [stopHoldMusic](https://docs.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-beta) method to the [stopHoldMusic](https://docs.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-beta) resource.",
-          "Target": "stopHoldMusic"
+          "Description": "Added the [stopHoldMusic](https://docs.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-beta) method to the [stopHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/stopHoldMusicOperation?view=graph-rest-beta) resource.",
+          "Target": "stopHoldMusicOperation"
         }
       ],
       "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",

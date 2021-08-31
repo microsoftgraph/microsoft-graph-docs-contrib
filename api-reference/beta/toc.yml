@@ -1413,6 +1413,10 @@ items:
             href: api/participant-muteall.md
           - name: Invite participants
             href: api/participant-invite.md
+          - name: Start hold music
+            href: api/participant-startholdmusic.md
+          - name: Stop hold music
+            href: api/participant-stopholdmusic.md
         - name: Change screen sharing role
           href: api/call-changescreensharingrole.md
         - name: Unmute application
