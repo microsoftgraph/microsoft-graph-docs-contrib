@@ -1,6 +1,6 @@
 ---
 title: "dataSubject resource type"
-description: "dataSubject type is used for passing the properties about the data subject. The properties are used for creating the query that is used for searching  the content. This is an open type which means that additional properties can be added. For example customer Id etc."
+description: "Contains information related to the subject of a content search."
 author: "skadam-msft"
 localization_priority: Normal
 ms.prod: "compliance"
