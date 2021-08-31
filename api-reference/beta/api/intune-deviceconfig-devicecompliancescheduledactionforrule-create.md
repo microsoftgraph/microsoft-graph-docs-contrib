@@ -2,7 +2,7 @@
 title: "Create deviceComplianceScheduledActionForRule"
 description: "Create a new deviceComplianceScheduledActionForRule object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
