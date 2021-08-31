@@ -28,4 +28,3 @@ Contains properties for Windows device type.
 
 
 
-

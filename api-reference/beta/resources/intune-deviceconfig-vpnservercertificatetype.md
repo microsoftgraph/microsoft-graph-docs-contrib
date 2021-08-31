@@ -27,4 +27,3 @@ The type of certificate the VPN server will present to the VPN client for authen
 
 
 
-
