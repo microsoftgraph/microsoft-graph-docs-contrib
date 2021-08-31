@@ -149,6 +149,59 @@ Content-type: application/json
 }
 ```
 
+### Example 3 : Create a role assignment with an application scope
+
+#### Request
+
+The following example assigns a principal the Application Administrator role at application scope. The object ID of the application registration is 661e1310-bd76-4795-89a7-8f3c8f855bfc.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment_over_application"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "principalId": "6b937a9d-c731-465b-a844-2d5b5368c161",
+    "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+    "directoryScopeId": "/661e1310-bd76-4795-89a7-8f3c8f855bfc"
+}
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/22350cac-d84b-466b-8c2c-f9326746709a/roleAssignments/kl2Jm9Msx0SdAqasLV6lw516k2sxx1tGqEQtW1NowWEQEx5mdr2VR4mnjzyPhVv8-1",
+    "id": "kl2Jm9Msx0SdAqasLV6lw516k2sxx1tGqEQtW1NowWEQEx5mdr2VR4mnjzyPhVv8-1",
+    "principalId": "6b937a9d-c731-465b-a844-2d5b5368c161",
+    "principalOrganizationId": "22350cac-d84b-466b-8c2c-f9326746709a",
+    "resourceScope": "/661e1310-bd76-4795-89a7-8f3c8f855bfc",
+    "directoryScopeId": "/661e1310-bd76-4795-89a7-8f3c8f855bfc",
+    "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

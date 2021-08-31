@@ -26,11 +26,21 @@ None
 
 ## Relationships
 
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|roleAssignments|[unifiedRoleAssignment](../resources/unifiedroleassignment.md) collection| Resource to grant access to users or groups. |
+|roleDefinitions|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection| Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles. |
 
 ## JSON representation
 
-None
+Here is a JSON representation of the resource.
+
+```json
+{
+    "roleAssignments": [{"@odata.type": "microsoft.graph.unifiedRoleAssignment"}],
+    "roleDefinitions": [{"@odata.type": "microsoft.graph.unifiedRoleDefinition"}]
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

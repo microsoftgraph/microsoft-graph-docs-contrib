@@ -56,7 +56,7 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
+If successful, this method returns a `204 No response` response code and an updated [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
 
 ## Example
 
@@ -102,7 +102,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No response
 Content-type: application/json
 
 {
