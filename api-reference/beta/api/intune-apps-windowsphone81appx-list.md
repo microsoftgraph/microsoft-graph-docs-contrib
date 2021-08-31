@@ -2,7 +2,7 @@
 title: "List windowsPhone81AppXs"
 description: "List properties and relationships of the windowsPhone81AppX objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

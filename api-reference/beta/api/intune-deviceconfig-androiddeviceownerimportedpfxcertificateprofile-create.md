@@ -2,7 +2,7 @@
 title: "Create androidDeviceOwnerImportedPFXCertificateProfile"
 description: "Create a new androidDeviceOwnerImportedPFXCertificateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
