@@ -26,15 +26,15 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getDirectRoutingCalls",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getDirectRoutingCalls](https://docs.microsoft.com/en-us/graph/api/getDirectRoutingCalls?view=graph-rest-1.0) method to the [getDirectRoutingCalls](https://docs.microsoft.com/en-us/graph/api/getDirectRoutingCalls?view=graph-rest-1.0) resource.",
-                    "Target": "getDirectRoutingCalls"
+                    "Description": "Added the [getDirectRoutingCalls](https://docs.microsoft.com/en-us/graph/api/getDirectRoutingCalls?view=graph-rest-1.0) method to the [callRecord](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) resource.",
+                    "Target": "callRecord"
                 }, {
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
                     "ApiChange": "Method",
                     "ChangedApiName": "getPstnCalls",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getPstnCalls](https://docs.microsoft.com/en-us/graph/api/getPstnCalls?view=graph-rest-1.0) method to the [getPstnCalls](https://docs.microsoft.com/en-us/graph/api/getPstnCalls?view=graph-rest-1.0) resource.",
-                    "Target": "getPstnCalls"
+                    "Description": "Added the [getPstnCalls](https://docs.microsoft.com/en-us/graph/api/getPstnCalls?view=graph-rest-1.0) method to the [callRecord](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) resource.",
+                    "Target": "callRecord"
                 }
             ],
             "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
