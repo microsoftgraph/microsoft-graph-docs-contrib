@@ -1,7 +1,7 @@
 ---
 title: "accessPackage: getApplicablePolicyRequirements"
 description: "Allow callers to find requirements to request an assignment for a specific accessPackage."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"

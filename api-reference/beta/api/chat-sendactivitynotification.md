@@ -2,7 +2,7 @@
 title: "chat: sendActivityNotification"
 description: Send an activity feed notification in scope of a chat.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ---

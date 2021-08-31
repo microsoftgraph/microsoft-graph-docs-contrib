@@ -2,7 +2,7 @@
 title: "Delete iosVppAppAssignedDeviceLicense"
 description: "Deletes a iosVppAppAssignedDeviceLicense."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

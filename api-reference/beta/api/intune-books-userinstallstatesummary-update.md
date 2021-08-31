@@ -2,7 +2,7 @@
 title: "Update userInstallStateSummary"
 description: "Update the properties of a userInstallStateSummary object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

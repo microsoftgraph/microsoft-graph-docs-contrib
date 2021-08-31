@@ -1,7 +1,7 @@
 ---
 title: "List passwordMethods"
 description: "Retrieve a list of passwordauthenticationmethod objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

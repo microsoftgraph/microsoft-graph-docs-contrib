@@ -2,7 +2,7 @@
 title: "Create iosWiFiConfiguration"
 description: "Create a new iosWiFiConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

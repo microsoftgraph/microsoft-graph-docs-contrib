@@ -1,7 +1,7 @@
 ---
 title: "List my accessReview decisions"
 description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object for the calling user as reviewer."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: apiPageType

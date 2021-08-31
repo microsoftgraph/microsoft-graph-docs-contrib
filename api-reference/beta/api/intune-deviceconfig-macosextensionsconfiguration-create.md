@@ -2,7 +2,7 @@
 title: "Create macOSExtensionsConfiguration"
 description: "Create a new macOSExtensionsConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

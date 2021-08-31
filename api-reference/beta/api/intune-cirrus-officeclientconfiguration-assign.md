@@ -1,7 +1,7 @@
 ---
 title: "assign action"
 description: "Replace all targeted groups for a policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
 ms.prod: "intune"
 doc_type: apiPageType
