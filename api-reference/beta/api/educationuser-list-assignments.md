@@ -1,7 +1,7 @@
 ---
 title: "List assignments of a user"
 description: "Returns a list of assignments assigned to a user for all classes."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
