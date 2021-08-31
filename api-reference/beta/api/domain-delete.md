@@ -2,7 +2,7 @@
 title: "Delete domain"
 description: "Deletes a domain from a tenant."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
