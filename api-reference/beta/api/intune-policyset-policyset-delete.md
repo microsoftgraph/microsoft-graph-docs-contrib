@@ -2,7 +2,7 @@
 title: "Delete policySet"
 description: "Deletes a policySet."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
