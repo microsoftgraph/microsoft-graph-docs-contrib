@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRole",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [privilegedRole](https://docs.microsoft.com/en-us/graph/api/resources/privilegedrole?view=graph-rest-beta) resource and related operations and methods to replace it with the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Description": "Deprecated the [privilegedRole](https://docs.microsoft.com/en-us/graph/api/resources/privilegedrole?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
           "Target": "privilegedRole"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRoleAssignment",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [privilegedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/privilegedroleassignment?view=graph-rest-beta) resource and related operations and methods to replace it with the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Description": "Deprecated the [privilegedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/privilegedroleassignment?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
           "Target": "privilegedRoleAssignment"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRoleAssignmentRequest",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [privilegedRoleAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) resource and related operations and methods to replace it with the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Description": "Deprecated the [privilegedRoleAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
           "Target": "privilegedRoleAssignmentRequest"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedApproval",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [privilegedApproval](https://docs.microsoft.com/en-us/graph/api/resources/privilegedapproval?view=graph-rest-beta) resource and related operations and methods to replace it with the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Description": "Deprecated the [privilegedApproval](https://docs.microsoft.com/en-us/graph/api/resources/privilegedapproval?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
           "Target": "privilegedApproval"
         }
       ],
