@@ -2,7 +2,7 @@
 title: "Get tab in channel"
 description: "Retrieve the properties and relationships of the specified tab in a channel within a team. "
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

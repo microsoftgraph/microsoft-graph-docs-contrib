@@ -1,10 +1,10 @@
 ---
 title: "Update governanceRoleSetting"
 description: "Update the properties of governanceRoleSetting."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Update governanceRoleSetting

@@ -2,7 +2,7 @@
 title: "Update androidDeviceOwnerCompliancePolicy"
 description: "Update the properties of a androidDeviceOwnerCompliancePolicy object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -76,6 +76,7 @@ The following table shows the properties that are required when you create the [
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordPreviousPasswordCountToBlock|Int32|Number of previous passwords to block. Valid values 1 to 24|
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
+|securityRequireIntuneAppIntegrity|Boolean|If setting is set to true, checks that the Intune app installed on fully managed, dedicated, or corporate-owned work profile Android Enterprise enrolled devices, is the one provided by Microsoft from the Managed Google Playstore. If the check fails, the device will be reported as non-compliant.|
 
 
 
@@ -89,7 +90,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1223
+Content-length: 1269
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -119,7 +120,8 @@ Content-length: 1223
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordCountToBlock": 4,
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "securityRequireIntuneAppIntegrity": true
 }
 ```
 
@@ -128,7 +130,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1395
+Content-Length: 1441
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -161,10 +163,10 @@ Content-Length: 1395
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordCountToBlock": 4,
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "securityRequireIntuneAppIntegrity": true
 }
 ```
-
 
 
 

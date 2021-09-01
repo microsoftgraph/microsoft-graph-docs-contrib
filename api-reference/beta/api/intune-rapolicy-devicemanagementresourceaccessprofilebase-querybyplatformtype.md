@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Not yet documented|
+|platformType|[policyPlatformType](../resources/intune-rapolicy-policyplatformtype.md)|Not yet documented|
 
 
 
@@ -94,7 +94,6 @@ Content-Length: 487
   ]
 }
 ```
-
 
 
 

@@ -56,7 +56,7 @@ Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy",
     header: 'value',
     header2: 'value2'
   };
-);
+});
 ```
 
 This is useful when you need to pass tokens or other headers to your backend.

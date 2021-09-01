@@ -1,7 +1,7 @@
 ---
 title: "Get applicationSignInSummary"
 description: "Retrieve the properties and relationships of an **applicationSigninSummary** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dhanyahk"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType

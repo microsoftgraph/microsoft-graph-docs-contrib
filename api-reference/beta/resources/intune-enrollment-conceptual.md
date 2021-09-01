@@ -30,6 +30,7 @@ The following Graph resources are available to manage corporate-owned devices in
 - [DEP macOS enrollment profile](intune-enrollment-depmacosenrollmentprofile.md)
 - [DEP on-boarding setting](intune-enrollment-deponboardingsetting.md)
 - [DEP token type](intune-enrollment-deptokentype.md)
+- [Device platform type](intune-enrollment-deviceplatformtype.md)
 - [Discovery source](intune-enrollment-discoverysource.md)
 - [Enrollment profile](intune-enrollment-enrollmentprofile.md)
 - [Imported Apple device identity](intune-enrollment-importedappledeviceidentity.md)

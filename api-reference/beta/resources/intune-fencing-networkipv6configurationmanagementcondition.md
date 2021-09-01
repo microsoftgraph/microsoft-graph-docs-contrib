@@ -40,7 +40,7 @@ Inherits from [networkManagementCondition](../resources/intune-fencing-networkma
 |createdDateTime|DateTimeOffset|The time the management condition was created. Generated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|The time the management condition was last modified. Updated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag of the management condition. Updated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection|The applicable platforms for this management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|applicablePlatforms|[devicePlatformType](../resources/intune-fencing-deviceplatformtype.md) collection|The applicable platforms for this management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |ipV6Prefix|String|The IPv6 subnet to be connected to. e.g. 2001:db8::/32|
 |ipV6Gateway|String|The IPv6 gateway address to. e.g 2001:db8::1|
 |ipV6DNSServerList|String collection|An IPv6 DNS servers configured for the adapter.|
@@ -82,7 +82,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

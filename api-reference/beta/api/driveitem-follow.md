@@ -2,7 +2,7 @@
 author: chackman
 description: "Follow a driveItem."
 title: Follow drive item
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

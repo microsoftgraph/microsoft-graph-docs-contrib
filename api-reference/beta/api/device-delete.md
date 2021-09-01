@@ -2,7 +2,7 @@
 title: "Delete device"
 description: "Delete a registered device."
 author: "spunukol"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

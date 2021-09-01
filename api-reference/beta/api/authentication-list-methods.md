@@ -1,7 +1,7 @@
 ---
 title: "List methods"
 description: "Retrieve a list of authentication method objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

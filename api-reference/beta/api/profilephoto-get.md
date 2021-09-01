@@ -1,7 +1,7 @@
 ---
 title: "Get photo"
 description: "Get the specified profilePhoto or its metadata (**profilePhoto** properties)."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: ""
 author: "kevinbellinger"

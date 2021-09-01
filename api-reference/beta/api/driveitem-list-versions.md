@@ -1,7 +1,7 @@
 ---
 title: "Listing versions of a DriveItem"
 description: "OneDrive and SharePoint can be configured to retain the history for files."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 author: "JeremyKelley"
