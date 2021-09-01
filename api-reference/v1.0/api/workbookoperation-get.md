@@ -1,7 +1,7 @@
 ---
 title: "Get workbookOperation"
 description: "Retrieve the status of a workbookOperation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "apiPageType"

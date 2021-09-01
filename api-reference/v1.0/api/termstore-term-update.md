@@ -2,7 +2,7 @@
 title: "Update term"
 description: "Update the properties of a term object."
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---

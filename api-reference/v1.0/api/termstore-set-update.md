@@ -2,7 +2,7 @@
 title: "Update set"
 description: "Update the properties of a set object."
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
