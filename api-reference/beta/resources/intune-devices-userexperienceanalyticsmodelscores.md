@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsModelScores resource type"
 description: "The user experience analytics model scores entity consolidates the various endpoint analytics scores."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

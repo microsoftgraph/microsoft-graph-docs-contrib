@@ -2,7 +2,7 @@
 title: "windowsDefenderProductStatus enum type"
 description: "Product Status of Windows Defender"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

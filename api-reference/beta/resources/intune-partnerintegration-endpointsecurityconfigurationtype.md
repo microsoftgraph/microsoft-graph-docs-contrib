@@ -2,7 +2,7 @@
 title: "endpointSecurityConfigurationType enum type"
 description: "The endpoint security policy type."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

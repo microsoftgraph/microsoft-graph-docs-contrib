@@ -2,7 +2,7 @@
 title: "assignmentFilterTypeAndEvaluationResult resource type"
 description: "Represents the filter type and evalaution result of the filter."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
