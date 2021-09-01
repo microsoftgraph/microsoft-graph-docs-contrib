@@ -60,9 +60,9 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |inGracePeriod|The Cloud PC is in the one week grace period before it’s deprovisioned.|
 |deprovisioning|The Cloud PC is deprovisioning.|
 |failed|The operation on Cloud PC has failed.|
-|provisionedWithWarnings|The cloud PC is provisioned and can be accessed by end users but with some warnings. User may continue to use this cloud PC.|
-|resizing|The cloud PC is resizing.|
-|unknownFutureValue|Unknown future status (Reserved, not used right now).|
+|provisionedWithWarnings|The Cloud PC is provisioned and can be accessed by end users but with some warnings. The user can continue to use this Cloud PC.|
+|resizing|The Cloud PC is resizing.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
