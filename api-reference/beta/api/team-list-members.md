@@ -276,17 +276,12 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: List members based on their role in the team
+### Example 4: List members by their role in the team
 
-Fetch the members who all have a particular role attached to them where `ROLE` could be :
-
-- owner
-- guest
+The following example demonstrates how to list the members by their role in the team. In this case, listing all the members that have an owner role :
 
 > [!NOTE]
 > There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#unable-to-filter-team-members-by-roles).
-
-The following example shows a request to find all the members who all have *owner* role attached to them.
 
 #### Request
 
