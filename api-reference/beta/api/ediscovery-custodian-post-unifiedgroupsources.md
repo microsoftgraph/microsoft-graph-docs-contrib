@@ -49,11 +49,13 @@ In the request body, supply a JSON representation of the [unifiedGroupSource](..
 
 The following table shows the properties that are required when you create the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md).
 
+>**Note:** Either **group** or **group@odata.bind** is required in order to create a **unifiedGroupSource**.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
-|group|string|Specifies the email address for the group. To get the email address of a group, use [List groups](../api/group-list.md) or [Get group](../api/group-get.md). Using the `group` API, you can query by the name of the group using `$filter`, e.g. `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
-|group@odata.bind|String|ID of the group. The group ID can be acquired in a similar fashion to the group. Note: Either group or specifying group@odata.bind is required when creating a unifiedGroupSource.|
+|group|string|Specifies the email address for the group. To get the email address of a group, use [List groups](../api/group-list.md) or [Get group](../api/group-get.md). You can then query by the name of the group using `$filter`; for example, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
+|group@odata.bind|String|ID of the group. You can get this in the same way that you get the group. |
 
 ## Response
 
@@ -65,7 +67,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedgroupsource_from_email"
@@ -121,7 +122,6 @@ Content-Type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedgroupsource_from_id"
