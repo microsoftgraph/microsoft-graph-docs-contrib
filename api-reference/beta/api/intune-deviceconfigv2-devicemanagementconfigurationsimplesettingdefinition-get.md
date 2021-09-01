@@ -2,7 +2,7 @@
 title: "Get deviceManagementConfigurationSimpleSettingDefinition"
 description: "Read properties and relationships of the deviceManagementConfigurationSimpleSettingDefinition object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
