@@ -4,35 +4,35 @@
       "ChangeList": [
        {
          "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
-         "ApiChange": "Resource",
-         "ChangedApiName": "application",
+         "ApiChange": "Property",
+         "ChangedApiName": "defaultRedirectUri",
          "ChangeType": "Addition",
          "Description": "Added the **defaultRedirectUri** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
          "Target": "application"
        },
        {
-        "Id": "c9eb4bea-5a86-4e2c-b803-222f6fadd1b4",
+        "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
         "ApiChange": "Resource",
-        "ChangedApiName": "redirectUriSetting",
+        "ChangedApiName": "redirectUriSettings",
         "ChangeType": "Addition",
-        "Description": "Added the [redirectUriSetting](https://docs.microsoft.com/en-us/graph/api/resources/redirecturisettings?view=graph-rest-beta) resource.",
-        "Target": "redirecturisetting"
+        "Description": "Added the [redirectUriSettings](https://docs.microsoft.com/en-us/graph/api/resources/redirecturisettings?view=graph-rest-beta) resource.",
+        "Target": "redirectUriSettings"
        },
        {
-        "Id": "a8979b52-74a5-4160-9f43-c008d2ced30e",
-        "ApiChange": "Resource",
-        "ChangedApiName": "webapplication",
+        "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
+        "ApiChange": "Property",
+        "ChangedApiName": "redirectUriSettings",
         "ChangeType": "Addition",
         "Description": "Added the **redirectUriSettings** property to the [webapplication](https://docs.microsoft.com/en-us/graph/api/resources/webapplication?view=graph-rest-beta) resource.",
-        "Target": "webapplication"
+        "Target": "webApplication"
       }
       ],
-      "Id": "40d23a09-4538-47f7-ba32-952abfa3a45b",
+      "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-08-17T05:30:27Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Applications"
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     },
     {
     "ChangeList": [

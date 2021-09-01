@@ -3,8 +3,8 @@ title: "redirectUriSettings resource type"
 description: "Specifies the index for a redirectUri"
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu"
+ms.prod: "applications"
+author: "sureshja"
 ---
 
 # redirectUriSettings resource type
@@ -19,8 +19,8 @@ Specifies the index of the URLs where user tokens are sent for sign-in. This is 
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| `uri` | String | Specifies the URI that tokens are sent to. |
-|`index`|int|Identifies specific URI with in the redirectURIs collection in SAML SSO flows. Defaults to null. The index is unique across all the returnUris for the application.|
+| uri | String | Specifies the URI that tokens are sent to. |
+|index|Int32|Identifies the specific URI within the redirectURIs collection in SAML SSO flows. Defaults to `null`. The index is unique across all the redirectUris for the application.|
 
 
 ## JSON representation
@@ -33,23 +33,10 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.redirectUriSettings"
 }-->
 
-```json
-{                
-    "uri": "string",
-    "index": "int"
-}
-```
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
+``` json
 {
-  "type": "#page.annotation",
-  "description": "redirectUriSettings resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
+  "@odata.type": "#microsoft.graph.redirectUriSettings",
+  "uri": "String",
+  "index": "Integer"
 }
--->
+
