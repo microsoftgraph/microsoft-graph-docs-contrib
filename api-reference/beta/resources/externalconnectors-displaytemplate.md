@@ -2,7 +2,7 @@
 title: "displayTemplate resource type"
 description: "A display template enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed."
 author: "emzho"
-localization_priority: Normal
+ms.localizationpriority: normal
 ms.prod: "search"
 doc_type: resourcePageType
 ---

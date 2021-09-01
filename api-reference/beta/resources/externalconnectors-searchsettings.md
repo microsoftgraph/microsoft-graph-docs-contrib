@@ -2,7 +2,7 @@
 title: "searchSettings resource type"
 description: "Search settings are where all configurable settings relating to search over connector content can be found."
 author: "emzho"
-localization_priority: Normal
+ms.localizationpriority: normal
 ms.prod: "search"
 doc_type: resourcePageType
 ---

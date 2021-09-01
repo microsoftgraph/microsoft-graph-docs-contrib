@@ -2,7 +2,7 @@
 title: "propertyRule resource type"
 description: "Property rules are a set of conditions that dictate when the template should be displayed."
 author: "emzho"
-localization_priority: Normal
+ms.localizationpriority: normal
 ms.prod: "search"
 doc_type: resourcePageType
 ---
