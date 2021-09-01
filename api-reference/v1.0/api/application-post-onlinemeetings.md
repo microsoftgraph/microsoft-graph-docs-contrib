@@ -2,7 +2,7 @@
 title: "Create onlineMeeting"
 description: "Create an online meeting on behalf of a user specified in the request body."
 author: "mkhribech"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
