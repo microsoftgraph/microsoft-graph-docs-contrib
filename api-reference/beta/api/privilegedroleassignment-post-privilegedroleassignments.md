@@ -1,7 +1,7 @@
 ---
 title: "Create privilegedRoleAssignment"
 description: "Use this API to create a new  privilegedRoleAssignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"

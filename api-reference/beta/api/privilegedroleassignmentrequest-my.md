@@ -1,7 +1,7 @@
 ---
 title: "privilegedRoleAssignmentRequest: my"
 description: "Get the requester's privileged role assignment requests."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"

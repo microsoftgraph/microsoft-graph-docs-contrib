@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleDefinitions"
 description: "Get a list of unifiedRoleDefinition objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
