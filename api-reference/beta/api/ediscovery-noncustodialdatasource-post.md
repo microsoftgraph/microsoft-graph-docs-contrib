@@ -64,7 +64,6 @@ If successful, this method returns a `201 Created` response code and a [noncusto
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_noncustodialdatasource_from_email"
@@ -85,11 +84,9 @@ Content-length: 206
 }
 ```
 
----
-
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,7 +114,6 @@ Content-Type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_noncustodialdatasource_from_siteurl"
@@ -140,11 +136,9 @@ Content-length: 206
 }
 ```
 
----
-
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
