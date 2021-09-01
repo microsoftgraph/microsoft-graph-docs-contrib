@@ -2,7 +2,7 @@
 title: "Update certificateConnectorDetails"
 description: "Update the properties of a certificateConnectorDetails object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
