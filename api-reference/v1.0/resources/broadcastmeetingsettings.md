@@ -30,7 +30,7 @@ Settings related to a live event.
 | everyone           | The live event will be open to anyone. This is the default value. |
 | organization       | Everyone in your org can join the live event.                     |
 | roleIsAttendee     | Only the specified people can join the live event.                |
-| unknownFutureValue | Unknown future value.                                             |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                 |
 
 ## JSON representation
 
