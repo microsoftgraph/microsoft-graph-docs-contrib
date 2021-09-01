@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationTrainingUserCoverage resource type"
-description: "**TODO: Add Description**"
+description: "Represents training coverage for users of a tenant in attack simulation and training."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "reports"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents training coverage for users of a tenant in attack simulation and training.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User of a tenant in attack simulation and training campaign|
-|userTrainings|[userTrainingStatusInfo](../resources/usertrainingstatusinfo.md) collection|**TODO: Add Description**|
+|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User of a tenant in attack simulation and training campaign.|
+|userTrainings|[userTrainingStatusInfo](../resources/usertrainingstatusinfo.md) collection|List of assigned trainings' status for the user.|
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "assignedTrainingInfo resource type"
-description: "**TODO: Add Description**"
+description: "Represents assigned training in attack simulation and training campaign."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents assigned training in attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedUserCount|Int32|**TODO: Add Description**|
-|completedUserCount|Int32|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
+|assignedUserCount|Int32|Count of users assigned the training.|
+|completedUserCount|Int32|Count of users completed the training.|
+|displayName|String|Display name of the training.|
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "userTrainingStatusInfo resource type"
-description: "**TODO: Add Description**"
+description: "Represents assigned training and its status for a user in attack simulation and training."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "reports"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents assigned training and its status for a user in attack simulation and training.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedDateTime|DateTimeOffset|**TODO: Add Description**|
-|completionDateTime|DateTimeOffset|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|trainingStatus|trainingStatus|**TODO: Add Description**. Possible values are: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
+|assignedDateTime|DateTimeOffset|Date and time for assignment of the training to a user.|
+|completionDateTime|DateTimeOffset|Date and time for assignment of the training by a user.|
+|displayName|String|Display name of the training.|
+|trainingStatus|trainingStatus|Status of the assigned training to a user. Possible values are: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
 
 ## Relationships
 None.

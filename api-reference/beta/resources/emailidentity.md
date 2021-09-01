@@ -1,6 +1,6 @@
 ---
 title: "emailIdentity resource type"
-description: "**TODO: Add Description**"
+description: "Represent email identity of a user of a tenant."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represent email identity of a user of a tenant.
 
 
 Inherits from [identity](../resources/identity.md).
@@ -21,9 +21,9 @@ Inherits from [identity](../resources/identity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [identity](../resources/identity.md).|
-|email|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [identity](../resources/identity.md).|
+|displayName|String|Display name of a user. Inherited from [identity](../resources/identity.md).|
+|email|String|Email address of a user.|
+|id|String|External directory object id of a user. Inherited from [identity](../resources/identity.md).|
 
 ## Relationships
 None.
