@@ -1,9 +1,9 @@
 ---
 title: "attackSimulationRepeatOffender resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents repeat offender user of a tenant in attack simulation and training."
+author: "gopkr"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "reports"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents repeat offender user of a tenant in attack simulation and training.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|**TODO: Add Description**|
-|repeatOffenceCount|Int32|**TODO: Add Description**|
+|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User of a tenant in an attack simulation and training campaign|
+|repeatOffenceCount|Int32|Count of repeat offences of a user|
 
 ## Relationships
 None.
