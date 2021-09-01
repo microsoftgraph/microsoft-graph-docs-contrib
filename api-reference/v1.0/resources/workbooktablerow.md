@@ -1,5 +1,5 @@
 ---
-title: "TableRow resource type"
+title: "workbookTableRow resource type"
 description: "Represents a row in a table."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# TableRow resource type
+# workbookTableRow resource type
 
 Namespace: microsoft.graph
 
@@ -16,21 +16,17 @@ Represents a row in a table.
 
 ## Methods
 
-### Manage TableRow
+### Manage workbookTableRow
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableRow](../api/tablerow-get.md) | [TableRow](tablerow.md) |Read properties and relationships of tableRow object.|
-|[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)	|Update TableRow object. |
+|[Get workbookTableRow](../api/tablerow-get.md) | [workbookTableRow]( workbooktablerow.md) |Read properties and relationships of tableRow object.|
+|[Update](../api/tablerow-update.md) | [workbookTableRow]( workbooktablerow.md)	|Update workbookTableRow object. |
 |[Delete](../api/tablerow-delete.md)|None|Deletes the row from the table.|
-|[Create TableRow](../api/table-post-rows.md)|[TableRow](tablerow.md)|Adds rows to the table.|
+|[Create workbookTableRow](../api/table-post-rows.md)|[workbookTableRow]( workbooktablerow.md)|Adds rows to the table.|
 |[Range](../api/tablerow-range.md)|[Range](range.md)|Returns the range object associated with the entire row.|
-
-### Manage TableRowCollection
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[List](../api/tablerow-list.md) | [TableRow](tablerow.md) collection |Get tableRow object collection. |
-|[Itemat](../api/tablerowcollection-itemat.md)|[TableRow](tablerow.md)|Gets a row based on its position in the collection.|
-|[Add](../api/tablerowcollection-add.md)|[TableRow](tablerow.md)|Adds a new row to the table.|
+|[List](../api/tablerow-list.md) | [workbookTableRow]( workbooktablerow.md) collection |Get tableRow object collection. |
+|[Itemat](../api/tablerowcollection-itemat.md)|[workbookTableRow]( workbooktablerow.md)|Gets a row based on its position in the collection.|
+|[Add](../api/tablerowcollection-add.md)|[workbookTableRow]( workbooktablerow.md)|Adds a new row to the table.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -66,7 +62,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "TableRow resource",
+  "description": "workbookTableRow resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -15,7 +15,7 @@ Part of an asynchronous create tableRow request.
 An asynchronous create tableRow request involves the following steps:
 1. Issue an async [Create tableRow](./table-post-rows.md) request and get a [workbookOperation](../resources/workbookoperation.md) URL.
 2. Issue the [Get workbookOperation](./workbookoperation-get.md) request, and after you get a `succeeded` **operationStatus** result, get the request URL from the **resourceLocation** part of the response. This is the URL for this request. This is the only way to get this URL.
-3. Issue the URL. The response to this request contains a [workbookTableRow](../resources/tablerow.md).
+3. Issue the URL. The response to this request contains a [workbookTableRow](../resources/workbookTableRow.md).
 
 This function does not do anything if called independently.
 
@@ -57,7 +57,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [workbookTableRow](../resources/tablerow.md) object in the response body.
+If successful, this function returns a `200 OK` response code and a [workbookTableRow](../resources/workbooktablerow.md) object in the response body.
 
 ## Examples
 

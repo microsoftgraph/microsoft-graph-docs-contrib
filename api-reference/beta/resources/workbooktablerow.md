@@ -18,7 +18,7 @@ Represents a row in a table.
 
 ## Methods
 
-### Manage TableRow
+### Manage workbookTableRow
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get TableRow](../api/tablerow-get.md) | [workbookTableRow](workbooktablerow.md) |Read properties and relationships of tableRow object.|
@@ -26,10 +26,6 @@ Represents a row in a table.
 |[Delete](../api/tablerow-delete.md)|None|Deletes the row from the table.|
 |[Create TableRow](../api/table-post-rows.md)|[workbookTableRow](workbooktablerow.md)|Adds rows to the table.|
 |[Range](../api/tablerow-range.md)|[workbookRange](workbookrange.md)|Returns the range object associated with the entire row.|
-
-### Manage TableRowCollection
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
 |[List](../api/tablerow-list.md) | [workbookTableRow](workbooktablerow.md) collection |Get tableRow object collection. |
 |[Itemat](../api/tablerowcollection-itemat.md)|[workbookTableRow](workbooktablerow.md)|Gets a row based on its position in the collection.|
 |[Add](../api/tablerowcollection-add.md)|[workbookTableRow](workbooktablerow.md)|Adds a new row to the table.|
