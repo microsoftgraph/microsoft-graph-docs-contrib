@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [device](../resources/device.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -53,7 +53,7 @@ The following is an example of the request.
   "name": "get_device"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/devices/{id}
+GET https://graph.microsoft.com/v1.0/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc366
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-csharp-snippets.md)]
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/v1.0/devices/{id}
 
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -86,12 +86,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices/$entity",
+  "@odata.id": "https://graph.microsoft.com/v2/72f988bf-86f1-41af-91ab-2d7cd011db47/directoryObjects/000005c3-b7a6-4c61-89fc-80bf5ccfc366/Microsoft.DirectoryServices.Device",
   "accountEnabled":false,
-  "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
-  "displayName":"Test device",
-  "id": "id-value",
-  "operatingSystem":"linux",
-  "operatingSystemVersion":"1"
+  "deviceId":"6fa60d52-01e7-4b18-8055-4759461fc16b",
+  "displayName":"DESKTOP-858MANH",
+  "id": "000005c3-b7a6-4c61-89fc-80bf5ccfc366",
+  "operatingSystem":"Windows",
+  "operatingSystemVersion":"10.0.19043.1165"
 }
 ```
 

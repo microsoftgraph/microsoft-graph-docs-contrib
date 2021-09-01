@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -72,7 +72,7 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

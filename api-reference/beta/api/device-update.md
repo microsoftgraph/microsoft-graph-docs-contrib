@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -96,7 +96,7 @@ Content-length: 31
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response"

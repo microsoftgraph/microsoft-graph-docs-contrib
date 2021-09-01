@@ -55,7 +55,7 @@ The following example shows a request.
   "name": "get_device"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/{id}
+GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc366
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-csharp-snippets.md)]
@@ -90,14 +90,15 @@ The following example shows a response for a device with no **hostNames**.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 322
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices/$entity",
+  "@odata.id": "https://graph.microsoft.com/v2/72f988bf-86f1-41af-91ab-2d7cd011db47/directoryObjects/000005c3-b7a6-4c61-89fc-80bf5ccfc366/Microsoft.DirectoryServices.Device",
   "accountEnabled": true,
-  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99,
+  "approximateLastSignInDateTime": "2021-08-26T21:15:01Z",
+  "deviceId": "000005c3-b7a6-4c61-89fc-80bf5ccfc366",
+  "deviceMetadata": null,
+  "deviceVersion": 2,
   "hostNames": []
 }
 ```
@@ -113,7 +114,6 @@ The following example shows a response for a device with **hostNames**.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 322
 
 {
   "accountEnabled": true,

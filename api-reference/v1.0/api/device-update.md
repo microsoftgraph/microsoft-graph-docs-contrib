@@ -54,7 +54,7 @@ In the request body, supply the values for the [device](../resources/device.md) 
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -89,7 +89,7 @@ Content-length: 31
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response"
