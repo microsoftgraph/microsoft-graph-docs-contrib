@@ -2,7 +2,7 @@
 title: "Delete user"
 description: "Deletes a user."
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

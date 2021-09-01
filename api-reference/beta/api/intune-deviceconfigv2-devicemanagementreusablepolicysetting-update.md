@@ -2,7 +2,7 @@
 title: "Update deviceManagementReusablePolicySetting"
 description: "Update the properties of a deviceManagementReusablePolicySetting object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

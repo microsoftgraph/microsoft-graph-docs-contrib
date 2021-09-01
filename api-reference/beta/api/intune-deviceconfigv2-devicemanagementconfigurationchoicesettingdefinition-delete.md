@@ -2,7 +2,7 @@
 title: "Delete deviceManagementConfigurationChoiceSettingDefinition"
 description: "Deletes a deviceManagementConfigurationChoiceSettingDefinition."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

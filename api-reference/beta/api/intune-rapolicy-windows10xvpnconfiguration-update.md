@@ -2,7 +2,7 @@
 title: "Update windows10XVpnConfiguration"
 description: "Update the properties of a windows10XVpnConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

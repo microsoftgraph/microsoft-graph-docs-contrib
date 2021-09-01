@@ -2,7 +2,7 @@
 title: "Delete deviceManagementConfigurationSettingGroupDefinition"
 description: "Deletes a deviceManagementConfigurationSettingGroupDefinition."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

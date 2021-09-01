@@ -2,7 +2,7 @@
 title: "setAsManagedInstaller action"
 description: "Set the Managed Installer status for the caller tenant"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

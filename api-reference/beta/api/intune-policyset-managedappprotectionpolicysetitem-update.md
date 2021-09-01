@@ -2,7 +2,7 @@
 title: "Update managedAppProtectionPolicySetItem"
 description: "Update the properties of a managedAppProtectionPolicySetItem object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

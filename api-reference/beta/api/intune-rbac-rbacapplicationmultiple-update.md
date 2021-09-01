@@ -2,7 +2,7 @@
 title: "Update rbacApplicationMultiple"
 description: "Update the properties of a rbacApplicationMultiple object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "message: send"
 description: "Send an existing draft message."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "Delete windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Deletes a windowsDefenderAdvancedThreatProtectionConfiguration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

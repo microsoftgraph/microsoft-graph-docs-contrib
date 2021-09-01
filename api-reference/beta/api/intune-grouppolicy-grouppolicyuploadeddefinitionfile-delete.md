@@ -2,7 +2,7 @@
 title: "Delete groupPolicyUploadedDefinitionFile"
 description: "Deletes a groupPolicyUploadedDefinitionFile."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

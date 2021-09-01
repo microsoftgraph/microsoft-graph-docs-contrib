@@ -2,7 +2,7 @@
 title: "Update windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary"
 description: "Update the properties of a windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
