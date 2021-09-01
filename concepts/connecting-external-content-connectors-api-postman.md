@@ -287,7 +287,7 @@ After the connection state changes from **draft** to **ready**, as showed in the
 
 If your external service uses non-Azure AD ACLs, sync those permissions.  
 
-External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details see [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta).
+External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details see [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true).
 
 This is an example of a request.
 
