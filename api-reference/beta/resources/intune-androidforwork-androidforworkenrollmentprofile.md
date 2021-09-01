@@ -2,7 +2,7 @@
 title: "androidForWorkEnrollmentProfile resource type"
 description: "Enrollment Profile used to enroll COSU devices using Google's Cloud Management."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

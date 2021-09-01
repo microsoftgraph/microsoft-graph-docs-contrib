@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerKioskModeFolderItem resource type"
 description: "Represents an item that can be added to Android Device Owner folder (application or weblink)"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

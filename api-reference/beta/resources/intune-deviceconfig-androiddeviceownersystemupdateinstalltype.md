@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerSystemUpdateInstallType enum type"
 description: "System Update Types for Android Device Owner."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

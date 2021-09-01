@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerScepCertificateProfile resource type"
 description: "Android Device Owner SCEP certificate profile"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "win32LobAppRegistryRequirement resource type"
 description: "Contains registry properties to detect a Win32 App"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
