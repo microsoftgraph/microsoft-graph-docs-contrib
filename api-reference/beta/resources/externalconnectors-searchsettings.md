@@ -32,10 +32,38 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.externalConnectors.searchSettings",
   "searchResultTemplates": [
     {
-      "@odata.type": "microsoft.graph.externalConnectors.displayTemplate"
+      "id": "String (identifier)",
+      "rules": [
+        {
+          "property": "itemTitle",
+          "operation": "contains",
+          "valuesJoinedBy": "or",
+          "values": [
+              "contoso",
+              "smart"
+          ]
+        }
+      ],
+      "layout": "{\r\n\"type\": \"AdaptiveCard\",\r\n\"version\": \"1.0\",\r\n\"body\": [\r\n{\r\n\"type\": \"TextBlock\",\r\n\"text\": \"A contoso ticket.\"\r\n}\r\n] \r\n}",
+      "priority": 0
+    },
+        {
+      "id": "String (identifier)",
+      "rules": [
+        {
+          "property": "itemDescription",
+          "operation": "contains",
+          "valuesJoinedBy": "and",
+          "values": [
+              "contoso",
+              "ticket"
+          ]
+        }
+      ],
+      "layout": "{\r\n\"type\": \"AdaptiveCard\",\r\n\"version\": \"1.0\",\r\n\"body\": [\r\n{\r\n\"type\": \"TextBlock\",\r\n\"text\": \"A contoso ticket.\"\r\n}\r\n] \r\n}",
+      "priority": 1
     }
   ]
 }

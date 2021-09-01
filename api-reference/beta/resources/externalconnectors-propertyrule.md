@@ -35,7 +35,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.externalConnectors.propertyRule",
   "property": "String",
   "operation": "String",
   "valuesJoinedBy": "String",

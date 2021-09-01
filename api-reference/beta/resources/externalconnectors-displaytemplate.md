@@ -19,7 +19,7 @@ A display template enables the developer to define the appearance of the content
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The text identifier for the display template. Example: contosoTickets|
-|layout|[microsoft.graph.Json](../resources/externalconnectors-intune-json.md)|The definition of the content's appearance, represented by an [Adaptive Card](https://docs.microsoft.com/en-us/adaptive-cards/authoring-cards/getting-started), which is a JSON-serialized card object model.|
+|layout|[microsoft.graph.Json](../resources/intune-mam-json.md)|The definition of the content's appearance, represented by an [Adaptive Card](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started), which is a JSON-serialized card object model.|
 |priority|Int32|The integer priority of this display template. A display template with priority 1 is evaluated before that of a template of priority 4. Gaps in priority values are supported.|
 |rules|[microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md) collection|Specifies additional rules for selecting this display template based on the item schema. Optional.|
 
@@ -35,16 +35,19 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.externalConnectors.displayTemplate",
   "id": "String (identifier)",
   "rules": [
     {
-      "@odata.type": "microsoft.graph.externalConnectors.propertyRule"
+        "property": "itemTitle",
+        "operation": "contains",
+        "valuesJoinedBy": "or",
+        "values": [
+            "contoso",
+            "smart"
+        ]
     }
   ],
-  "layout": {
-    "@odata.type": "microsoft.graph.Json"
-  },
+  "layout": "{\r\n\"type\": \"AdaptiveCard\",\r\n\"version\": \"1.0\",\r\n\"body\": [\r\n{\r\n\"type\": \"TextBlock\",\r\n\"text\": \"A contoso ticket.\"\r\n}\r\n] \r\n}",
   "priority": "Integer"
 }
 ```
