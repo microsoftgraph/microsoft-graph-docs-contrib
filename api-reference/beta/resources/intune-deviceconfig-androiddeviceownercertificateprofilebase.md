@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerCertificateProfileBase resource type"
 description: "Android Device Owner certificate profile base."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

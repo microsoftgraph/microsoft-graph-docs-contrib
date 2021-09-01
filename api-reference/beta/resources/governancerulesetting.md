@@ -1,7 +1,7 @@
 ---
 title: "governanceRuleSetting resource type"
 description: "Represents the rules that the role settings are composed of."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "shauliu1"

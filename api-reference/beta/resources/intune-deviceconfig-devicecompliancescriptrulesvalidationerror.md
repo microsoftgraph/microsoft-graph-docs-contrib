@@ -2,7 +2,7 @@
 title: "deviceComplianceScriptRulesValidationError enum type"
 description: "Error code for rule validation."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
