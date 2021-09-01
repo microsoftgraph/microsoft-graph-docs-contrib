@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Get permission
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Return the effective sharing permission for a particular permission resource."
 ms.prod: ""
 doc_type: apiPageType
