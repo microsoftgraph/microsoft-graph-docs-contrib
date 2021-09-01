@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: associateWithHubSites"
 description: "Associate a content type with a list of hub sites."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

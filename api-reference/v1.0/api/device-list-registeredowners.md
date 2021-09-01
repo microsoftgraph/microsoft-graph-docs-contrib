@@ -1,7 +1,7 @@
 ---
 title: "List registeredOwners"
 description: "Retrieve a list of users that are registered owners of the device."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "spunukol"
 ms.prod: "directory-management"
 doc_type: apiPageType

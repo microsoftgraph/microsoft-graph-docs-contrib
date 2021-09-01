@@ -2,7 +2,7 @@
 title: "Retrieve the properties of a recently deleted item"
 description: "Retrieve the properties of a recently deleted item in deleted items."
 author: "keylimesoda"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
