@@ -2,7 +2,7 @@
 title: "enablement enum type"
 description: "Possible values of a property"
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

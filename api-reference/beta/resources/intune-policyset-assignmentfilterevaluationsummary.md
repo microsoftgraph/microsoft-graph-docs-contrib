@@ -2,7 +2,7 @@
 title: "assignmentFilterEvaluationSummary resource type"
 description: "Represent result summary for assignment filter evaluation"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

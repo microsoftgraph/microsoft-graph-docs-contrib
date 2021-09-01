@@ -15,7 +15,8 @@
       "description",
       "author",
       "ms.prod",
-      "doc_type"
+      "doc_type",
+      "ms.localizationpriority"
     ],
     "treatErrorsAsWarningsWorkloads": [
       "intune"

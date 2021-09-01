@@ -2,7 +2,7 @@
 title: "Create identity"
 description: "Create a new member as an identity resource in an externalGroup."
 author: "sacampbe"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---

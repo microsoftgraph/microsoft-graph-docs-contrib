@@ -2,7 +2,7 @@
 title: "List servicePrincipals"
 description: "Retrieve a list of servicePrincipal objects."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 doc_type: apiPageType
 ---

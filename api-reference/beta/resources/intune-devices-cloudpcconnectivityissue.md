@@ -2,7 +2,7 @@
 title: "cloudPCConnectivityIssue resource type"
 description: "The user experience analyte connectivity issue entity."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

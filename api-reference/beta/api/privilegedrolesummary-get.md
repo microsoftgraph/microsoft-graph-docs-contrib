@@ -1,7 +1,7 @@
 ---
 title: "Get privilegedRoleSummary"
 description: "Retrieve the properties and relationships of privilegedRoleSummary object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"

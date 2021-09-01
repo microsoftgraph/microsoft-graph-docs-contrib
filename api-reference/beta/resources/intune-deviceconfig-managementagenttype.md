@@ -2,7 +2,7 @@
 title: "managementAgentType enum type"
 description: "Management agent type."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

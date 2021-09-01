@@ -2,7 +2,7 @@
 title: "externalGroup resource type"
 description: "Represents a non-Azure Active Directory group."
 author: "snlraju-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: resourcePageType
 ---

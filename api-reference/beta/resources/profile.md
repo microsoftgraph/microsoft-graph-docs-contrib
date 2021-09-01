@@ -1,7 +1,7 @@
 ---
 title: "profile resource type"
 description: "Represents properties that are descriptive of a user and that are surfaced in shared, people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"

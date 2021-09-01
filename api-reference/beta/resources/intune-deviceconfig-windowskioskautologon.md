@@ -2,7 +2,7 @@
 title: "windowsKioskAutologon resource type"
 description: "The class used to identify an autologon kiosk configuration"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

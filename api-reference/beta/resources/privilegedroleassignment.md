@@ -1,7 +1,7 @@
 ---
 title: "privilegedRoleAssignment resource type"
 description: "Represents a privileged role assignment for a particular user. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "shauliu1"

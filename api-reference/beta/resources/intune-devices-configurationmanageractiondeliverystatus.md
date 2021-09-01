@@ -2,7 +2,7 @@
 title: "configurationManagerActionDeliveryStatus enum type"
 description: "Delivery state of Configuration Manager device action"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

@@ -2,7 +2,7 @@
 title: "domain: verify"
 description: "Validates the ownership of the domain."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: getPasswordSingleSignOnCredentials"
 description: "Get a list of single sign-on credentials using a password for a user or group."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

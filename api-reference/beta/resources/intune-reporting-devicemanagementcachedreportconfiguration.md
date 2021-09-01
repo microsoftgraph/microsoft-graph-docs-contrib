@@ -2,7 +2,7 @@
 title: "deviceManagementCachedReportConfiguration resource type"
 description: "Entity representing the configuration of a cached report"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "teamsUserActivityCounts resource type"
 description: "Represents numers of activities by type."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

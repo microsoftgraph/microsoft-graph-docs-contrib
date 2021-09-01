@@ -1,7 +1,7 @@
 ---
 title: "List relyingPartyDetailedSummary"
 description: "Retrieve a list of relyingPartyDetailedSummary objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"

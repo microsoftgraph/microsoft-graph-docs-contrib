@@ -3,7 +3,7 @@ author: psampath
 description: "The storagePlanInformation resource provides information about the drive's storage quota plans."
 ms.date: 06/20/2018
 title: StoragePlanInformation
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

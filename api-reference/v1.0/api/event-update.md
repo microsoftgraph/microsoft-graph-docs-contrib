@@ -2,7 +2,7 @@
 title: "Update event"
 description: "Update the properties of the event object."
 author: "harini84"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
