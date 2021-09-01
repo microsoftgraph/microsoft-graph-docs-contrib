@@ -2,7 +2,7 @@
 title: "tenantAppManagementPolicy resource type"
 description: "Application auth method tenant default policy enforces app management operation restrictions."
 author: "madansr7"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/tenantAppManagementPolicy",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/defaultAppManagementPolicy",
   "id": "string (identifier)",
   "description": "string",
   "displayName": "string",

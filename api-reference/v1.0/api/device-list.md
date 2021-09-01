@@ -2,7 +2,7 @@
 title: "List devices"
 description: "Retrieve a list of device objects registered in the organization."
 author: "spunukol"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "androidManagedStoreAppConfiguration resource type"
 description: "Contains properties, inherited properties and actions for Android Enterprise mobile app configurations."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -91,7 +91,6 @@ Here is a JSON representation of the resource.
   "profileApplicability": "String"
 }
 ```
-
 
 
 

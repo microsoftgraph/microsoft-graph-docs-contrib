@@ -2,7 +2,7 @@
 title: "List registeredUsers"
 description: "Retrieve a list of users that are registered users of the device."
 author: "spunukol"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

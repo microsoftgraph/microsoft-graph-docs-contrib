@@ -1,7 +1,7 @@
 ---
 title: "List device transitive groups"
 description: "Get groups that the device is a member of."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "spunukol"
 ms.prod: "directory-management"
 doc_type: apiPageType

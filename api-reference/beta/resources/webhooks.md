@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph API to get change notifications"
 description: "Deliver change notifications to clients."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jumaodhiss"
 doc_type: conceptualPageType
 ms.prod: "change-notifications"

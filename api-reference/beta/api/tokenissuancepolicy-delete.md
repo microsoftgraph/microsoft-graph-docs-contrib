@@ -1,7 +1,7 @@
 ---
 title: "Delete tokenIssuancePolicy"
 description: "Delete tokenIssuancePolicy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "luleonpla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

@@ -1,10 +1,10 @@
 ---
 title: "Get privilegedRoleAssignment"
 description: "Retrieve the properties and relationships of privilegedRoleAssignment object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Get privilegedRoleAssignment

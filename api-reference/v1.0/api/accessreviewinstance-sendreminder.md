@@ -2,7 +2,7 @@
 title: "accessReviewInstance: sendReminder"
 description: "Sends a reminder to the reviewers of a currently active accessReviewInstance."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
