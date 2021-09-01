@@ -2,7 +2,7 @@
 title: "cloudPcProvisioningPolicy resource type"
 description: "Represents a Cloud PC provisioning policy."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
