@@ -2,7 +2,7 @@
 title: "Create windowsQualityUpdateProfile"
 description: "Create a new windowsQualityUpdateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

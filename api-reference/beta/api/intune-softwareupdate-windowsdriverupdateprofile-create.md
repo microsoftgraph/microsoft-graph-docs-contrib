@@ -2,7 +2,7 @@
 title: "Create windowsDriverUpdateProfile"
 description: "Create a new windowsDriverUpdateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
