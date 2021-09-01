@@ -1,5 +1,5 @@
 ---
-title: "List softwareOathAuthenticationMethods"
+title: "List softwareOathMethods"
 description: "Retrieve a list of a user's softwareOathAuthenticationMethods objects and their properties."
 author: "mmcla"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List softwareOathAuthenticationMethods
+# List softwareOathMethods
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

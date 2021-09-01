@@ -11083,7 +11083,7 @@ items:
             href: resources/softwareOathAuthenticationMethod.md
             items:
             - name: List
-              href: api/softwareOathAuthenticationMethod-list.md
+              href: api/authentication-list-softwareoathmethods.md
             - name: Get
               href: api/softwareOathAuthenticationMethod-get.md
             - name: Delete
