@@ -1,7 +1,7 @@
 ---
 title: "List projects"
 description: "Retrieve a list of projectParticipation objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

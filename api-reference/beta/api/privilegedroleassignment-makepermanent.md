@@ -1,7 +1,7 @@
 ---
 title: "privilegedRoleAssignment: makePermanent"
 description: "Make the role assignment permanent."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"

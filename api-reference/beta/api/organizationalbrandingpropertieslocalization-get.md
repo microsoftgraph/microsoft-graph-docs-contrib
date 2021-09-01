@@ -1,7 +1,7 @@
 ---
 title: "Get localized organizationalBrandingProperties"
 description: "Retrieve organizationalbrandingproperties object for a specific locale."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "AlexanderMars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
