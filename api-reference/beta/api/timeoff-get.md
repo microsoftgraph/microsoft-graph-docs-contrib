@@ -2,7 +2,7 @@
 title: "Get timeOff"
 description: "Get a timeOff by ID."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

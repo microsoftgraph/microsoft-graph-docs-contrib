@@ -2,7 +2,7 @@
 title: "windows81VpnProxyServer resource type"
 description: "VPN Proxy Server."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

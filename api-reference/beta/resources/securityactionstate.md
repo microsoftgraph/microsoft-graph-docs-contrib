@@ -1,7 +1,7 @@
 ---
 title: "securityActionState resource type"
 description: "Represents the history of securityAction state changes."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: resourcePageType

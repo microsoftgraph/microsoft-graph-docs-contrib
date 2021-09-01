@@ -2,7 +2,7 @@
 title: "dataType enum type"
 description: "Data types for rules."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

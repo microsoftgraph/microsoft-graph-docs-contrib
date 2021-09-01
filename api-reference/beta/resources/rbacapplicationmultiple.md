@@ -1,7 +1,7 @@
 ---
 title: "rbacApplicationMultiple resource type"
 description: "Role management navigation property"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"

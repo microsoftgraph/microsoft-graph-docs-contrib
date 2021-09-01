@@ -1,7 +1,7 @@
 ---
 title: "Create permissionGrantConditionSet in includes collection of permissionGrantPolicy"
 description: "Add conditions under which a permission grant event is included in a permission grant policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"

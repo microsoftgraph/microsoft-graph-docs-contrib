@@ -2,7 +2,7 @@
 title: "appManagementPolicy resource type"
 description: "An application auth method policy for enforcing app management restrictions on specific application or service principals."
 author: "madansr7"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

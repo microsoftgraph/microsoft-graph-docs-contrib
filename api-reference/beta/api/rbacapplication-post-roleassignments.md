@@ -1,7 +1,7 @@
 ---
 title: "Create unifiedRoleAssignment"
 description: "Create a new unifiedRoleAssignment object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"

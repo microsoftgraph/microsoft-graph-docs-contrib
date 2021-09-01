@@ -2,7 +2,7 @@
 title: "Delete windows10VpnConfiguration"
 description: "Deletes a windows10VpnConfiguration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "cleanWindowsDevice action"
 description: "Clean Windows device"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

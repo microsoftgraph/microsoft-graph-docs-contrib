@@ -2,7 +2,7 @@
 title: "List unifiedRoleManagementPolicyRules"
 description: "Get a list of the unifiedRoleManagementPolicyRule objects and their properties."
 author: "shauliu1"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

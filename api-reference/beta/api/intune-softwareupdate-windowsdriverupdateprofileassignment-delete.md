@@ -2,7 +2,7 @@
 title: "Delete windowsDriverUpdateProfileAssignment"
 description: "Deletes a windowsDriverUpdateProfileAssignment."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
