@@ -2,7 +2,7 @@
 title: "Delete deviceHealthScriptDeviceState"
 description: "Deletes a deviceHealthScriptDeviceState."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

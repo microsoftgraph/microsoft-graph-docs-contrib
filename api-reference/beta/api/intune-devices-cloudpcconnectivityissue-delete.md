@@ -2,7 +2,7 @@
 title: "Delete cloudPCConnectivityIssue"
 description: "Deletes a cloudPCConnectivityIssue."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
