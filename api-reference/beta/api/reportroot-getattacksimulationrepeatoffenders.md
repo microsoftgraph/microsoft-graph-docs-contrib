@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getAttackSimulationRepeatOffenders"
-description: "List repeat offender users of a tenant in attack simulation and training campaigns"
+description: "List repeat offender users of a tenant in attack simulation and training campaigns."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List repeat offender users of a tenant in attack simulation and training campaigns
+List repeat offender users of a tenant in attack simulation and training campaigns.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
