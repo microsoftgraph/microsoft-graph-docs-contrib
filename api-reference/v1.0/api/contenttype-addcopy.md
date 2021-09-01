@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: addCopy"
 description: "Add a copy of a site content type to a list."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

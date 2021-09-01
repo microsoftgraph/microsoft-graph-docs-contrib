@@ -2,7 +2,7 @@
 title: "Permanently delete an item from deleted items"
 description: "Permanently deletes an item from deleted items."
 author: "keylimesoda"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

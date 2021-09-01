@@ -2,7 +2,7 @@
 title: "Update externalGroup"
 description: "Update the properties of an externalGroup object."
 author: "sacampbe-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
