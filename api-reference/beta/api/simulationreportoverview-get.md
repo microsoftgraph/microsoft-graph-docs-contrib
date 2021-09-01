@@ -1,9 +1,9 @@
 ---
-title: "Get Simulation Overview Report"
-description: "Get overview report of a phishing simulation."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+title: "Get simulation report overview."
+description: "Get report overview for an attack simulation campaign."
+author: "gopkr"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get overview report of a phishing simulation [simulationReportOverview](../resources/simulationreportoverview.md) object and its properties.
+Get report overview for an attack simulation campaign.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | SecurityEvents.Read.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | SecurityEvents.Read.All                     |
 
 ## HTTP request
 
