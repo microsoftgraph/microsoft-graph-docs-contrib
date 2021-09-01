@@ -1,7 +1,7 @@
 ---
 title: "privilegedApproval: myRequests"
 description: "Get the requestor's approval requests."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"

@@ -1,7 +1,7 @@
 ---
 title: "governanceRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Priviledged Identity Management."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "shauliu1"

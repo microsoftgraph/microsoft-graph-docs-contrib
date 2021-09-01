@@ -1,7 +1,7 @@
 ---
 title: "privilegedRoleAssignment: makeEligible"
 description: "Make the role assignment eligible."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"

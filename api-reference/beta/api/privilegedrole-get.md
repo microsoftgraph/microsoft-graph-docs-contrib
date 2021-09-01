@@ -1,7 +1,7 @@
 ---
 title: "Get privilegedRole"
 description: "Retrieve the properties and relationships of privilegedRole object. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"
