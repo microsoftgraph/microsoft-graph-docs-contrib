@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of a [team](../resources/team.
 
 ## Response
 
-If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
+If successful, this API returns a `202 Accepted` response that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 ## Examples
 
@@ -95,7 +95,7 @@ Content-Type: application/json
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
