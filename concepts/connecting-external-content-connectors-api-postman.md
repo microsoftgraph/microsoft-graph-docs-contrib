@@ -30,7 +30,7 @@ To use the Postman collection, you need to import it into your Postman workspace
 
 ![Screenshot of the My Workspace section in Postman and the Import option](./images/connectors-images/03-postman-import.png)
 
-4. In the dialog that opens, select **Link** tab and enter the following URL - in the textbox:  `https://www.postman.com/collections/61bfc772fe030514b062`.
+4. In the dialog that opens, select **Link** tab and enter the following URL - in the textbox: https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148
 
 ![Screenshot of the Import dialog](./images/connectors-images/04-postman-link.png)
 
