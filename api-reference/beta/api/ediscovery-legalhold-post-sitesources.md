@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|site|String|URL of the site, e.g. `https://contoso.sharepoint.com/sites/HumanResources`|
+|site|String|URL of the site; for example, `https://contoso.sharepoint.com/sites/HumanResources`.|
 
 ## Response
 
