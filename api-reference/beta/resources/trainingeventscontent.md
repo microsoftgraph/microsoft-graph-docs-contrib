@@ -1,6 +1,6 @@
 ---
 title: "trainingEventsContent resource type"
-description: "**TODO: Add Description**"
+description: "Represents training events for a tenant in attack simulation and training campaign."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents training events for a tenant in attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTrainingsInfos|[assignedTrainingInfo](../resources/assignedtraininginfo.md) collection|**TODO: Add Description**|
-|trainingsAssignedUserCount|Int32|**TODO: Add Description**|
+|assignedTrainingsInfos|[assignedTrainingInfo](../resources/assignedtraininginfo.md) collection|List of assigned trainings and their properties in the simulation.|
+|trainingsAssignedUserCount|Int32|Count of users assigned trainings in the simulation.|
 
 ## Relationships
 None.

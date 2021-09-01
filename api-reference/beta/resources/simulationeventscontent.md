@@ -1,6 +1,6 @@
 ---
 title: "simulationEventsContent resource type"
-description: "**TODO: Add Description**"
+description: "Represents list of simulation events in an attack simulation and training campaign."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents list of simulation events in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|compromisedRate|Double|**TODO: Add Description**|
-|events|[simulationEvent](../resources/simulationevent.md) collection|**TODO: Add Description**|
+|compromisedRate|Double|Compromised rate of the simulation.|
+|events|[simulationEvent](../resources/simulationevent.md) collection|List of simulation events.|
 
 ## Relationships
 None.

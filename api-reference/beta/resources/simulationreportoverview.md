@@ -1,6 +1,6 @@
 ---
 title: "simulationReportOverview resource type"
-description: "**TODO: Add Description**"
+description: "Represents overview report of a attack simulation and training campaign."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents overview report of a attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|recommendedActions|[recommendedAction](../resources/recommendedaction.md) collection|**TODO: Add Description**|
-|resolvedTargetsCount|Int32|**TODO: Add Description**|
-|simulationEventsContent|[simulationEventsContent](../resources/simulationeventscontent.md)|**TODO: Add Description**|
-|trainingEventsContent|[trainingEventsContent](../resources/trainingeventscontent.md)|**TODO: Add Description**|
+|recommendedActions|[recommendedAction](../resources/recommendedaction.md) collection|List of recommended actions for a tenant to improve its security posture based on the simulation.|
+|resolvedTargetsCount|Int32|Count of valid users in the simulation.|
+|simulationEventsContent|[simulationEventsContent](../resources/simulationeventscontent.md)|List of simulation events in the simulation.|
+|trainingEventsContent|[trainingEventsContent](../resources/trainingeventscontent.md)|List of training events in the simulation.|
 
 ## Relationships
 None.

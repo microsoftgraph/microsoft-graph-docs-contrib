@@ -1,6 +1,6 @@
 ---
 title: "recommendedAction resource type"
-description: "**TODO: Add Description**"
+description: "Represents recommended actions to be undertaken by tenant based on attack simulation and training campaigns to improve its security posture."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents recommended actions to be undertaken by tenant based on attack simulation and training campaigns to improve its security posture.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionWebUrl|String|**TODO: Add Description**|
-|potentialScoreImpact|Double|**TODO: Add Description**|
-|title|String|**TODO: Add Description**|
+|actionWebUrl|String|Web url to the recommended action.|
+|potentialScoreImpact|Double|Potential improvement in security score of the tenant from the recommended action.|
+|title|String|Title of the recommended action.|
 
 ## Relationships
 None.

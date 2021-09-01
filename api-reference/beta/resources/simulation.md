@@ -1,6 +1,6 @@
 ---
 title: "simulation resource type"
-description: "**TODO: Add Description**"
+description: "Represent attack simulation and training campaign of a tenant."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represent attack simulation and training campaign of a tenant.
 
 ## Methods
 |Method|Return type|Description|
@@ -23,28 +23,28 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attackTechnique|simulationAttackTechnique|**TODO: Add Description**. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`.|
-|attackType|simulationAttackType|**TODO: Add Description**. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
-|cleanupArtifacts|Boolean|**TODO: Add Description**|
-|completionDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|enableRegionTimezoneDelivery|Boolean|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|includeAllAccountTargets|Boolean|**TODO: Add Description**|
-|isAutomated|Boolean|**TODO: Add Description**|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|launchDateTime|DateTimeOffset|**TODO: Add Description**|
-|mode|simulationMode|**TODO: Add Description**. Possible values are: `real`, `preview`, `unknownFutureValue`.|
-|payloadDeliveryPlatform|payloadDeliveryPlatform|**TODO: Add Description**. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
-|payloadSource|payloadSource|**TODO: Add Description**. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|status|simulationStatus|**TODO: Add Description**. Possible values are: `unknown`, `draft`, `inProgress`, `scheduled`, `completed`, `partiallyCompleted`, `failed`, `cancelled`, `excluded`, `deleted`, `included`, `unknownFutureValue`.|
-|trainingAssignmentPreference|trainingAssignmentPreference|**TODO: Add Description**. Possible values are: `unknown`, `auto`, `manual`, `unknownFutureValue`.|
-|trainingContentPreference|trainingContentPreference|**TODO: Add Description**. Possible values are: `unknown`, `microsoft`, `custom`, `noTraining`, `unknownFutureValue`.|
-|trainingDueDateTime|DateTimeOffset|**TODO: Add Description**|
+|attackTechnique|simulationAttackTechnique|Attack technique of the simulation. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`.|
+|attackType|simulationAttackType|Attack type of the simulation. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
+|cleanupArtifacts|Boolean|Flag representing if artifacts were cleaned up in the simulation.|
+|completionDateTime|DateTimeOffset|Date and time of completion of the simulation.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the creator of the simulation.|
+|createdDateTime|DateTimeOffset|Date and time of creation of the simulation.|
+|description|String|Description of the simulation.|
+|displayName|String|Display name of the simulation.|
+|enableRegionTimezoneDelivery|Boolean|Flag representing enable or disable time zone aware delivery of phish payload in the simulation.|
+|id|String|Id of the simulation.|
+|includeAllAccountTargets|Boolean|Flag representing inclusion of all users of a tenant in the simulation.|
+|isAutomated|Boolean|Flag representing if the simulation was created from automation flow.|
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of user who most recently modified the simulation.|
+|lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the simulation.|
+|launchDateTime|DateTimeOffset|Date and time of the launch of the simulation.|
+|mode|simulationMode|Mode of the simulation. Possible values are: `real`, `preview`, `unknownFutureValue`.|
+|payloadDeliveryPlatform|payloadDeliveryPlatform|Delivery platform of the phishing payload in the simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
+|payloadSource|payloadSource|Source of phishing payload in the simulation. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|status|simulationStatus|Status of the simulation. Possible values are: `unknown`, `draft`, `inProgress`, `scheduled`, `completed`, `partiallyCompleted`, `failed`, `cancelled`, `excluded`, `deleted`, `included`, `unknownFutureValue`.|
+|trainingAssignmentPreference|trainingAssignmentPreference|Preference of training assignment to user in the simulation. Possible values are: `unknown`, `auto`, `manual`, `unknownFutureValue`.|
+|trainingContentPreference|trainingContentPreference|Preference of the training content in the simulation. Possible values are: `unknown`, `microsoft`, `custom`, `noTraining`, `unknownFutureValue`.|
+|trainingDueDateTime|DateTimeOffset|Due date and time of the assigned trainings to users of a tenant in the simulation.|
 
 ## Relationships
 None.

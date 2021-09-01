@@ -1,6 +1,6 @@
 ---
 title: "userSimulationEventInfo resource type"
-description: "**TODO: Add Description**"
+description: "Represents simulation event of a user in a tenant in an attack simulation and training campaign."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents simulation event of a user in a tenant in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|browser|String|**TODO: Add Description**|
-|eventDateTime|DateTimeOffset|**TODO: Add Description**|
-|eventName|String|**TODO: Add Description**|
-|ipAddress|String|**TODO: Add Description**|
-|osPlatformDeviceDetails|String|**TODO: Add Description**|
+|browser|String|Browser of the user for the simulation event.|
+|eventDateTime|DateTimeOffset|Date and time of the simulation event.|
+|eventName|String|Name of the simulation event.|
+|ipAddress|String|IP address of the user for the simulation event.|
+|osPlatformDeviceDetails|String|OS, platform and device details of the user for the simulation event.|
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "simulationEvent resource type"
-description: "**TODO: Add Description**"
+description: "Represents simulation event in an attack simulation and training campaign."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents simulation event in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|count|Int32|**TODO: Add Description**|
-|eventName|String|**TODO: Add Description**|
+|count|Int32|Count of the simulation event.|
+|eventName|String|Name of the simulation event.|
 
 ## Relationships
 None.

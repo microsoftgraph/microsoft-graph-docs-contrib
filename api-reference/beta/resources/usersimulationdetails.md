@@ -1,6 +1,6 @@
 ---
 title: "userSimulationDetails resource type"
-description: "**TODO: Add Description**"
+description: "Represents a user of a tenant and its online actions in an attack simulation and training campaign."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,20 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a user of a tenant and its online actions in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTrainingsCount|Int32|**TODO: Add Description**|
-|completedTrainingsCount|Int32|**TODO: Add Description**|
-|compromisedDateTime|DateTimeOffset|**TODO: Add Description**|
-|inProgressTrainingsCount|Int32|**TODO: Add Description**|
-|isCompromised|Boolean|**TODO: Add Description**|
-|reportedPhishDateTime|DateTimeOffset|**TODO: Add Description**|
-|simulationEvents|[userSimulationEventInfo](../resources/usersimulationeventinfo.md) collection|**TODO: Add Description**|
+|assignedTrainingsCount|Int32|Count of assigned trainings to a user in the simulation.|
+|completedTrainingsCount|Int32|Count of completed trainings by a user in the simulation.|
+|compromisedDateTime|DateTimeOffset|Date and time of compromised event from a user in the simulation.|
+|inProgressTrainingsCount|Int32|Count of in-progress trainings by a user in the simulation.|
+|isCompromised|Boolean|Flag representing if user was compromised in the simulation.|
+|reportedPhishDateTime|DateTimeOffset|Date and time of the event when user reported payload as phish in the simulation.|
+|simulationEvents|[userSimulationEventInfo](../resources/usersimulationeventinfo.md) collection|List of simulation events of a user in the simulation.|
 |simulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User of a tenant in attack simulation and training campaign|
-|trainingEvents|[userTrainingEventInfo](../resources/usertrainingeventinfo.md) collection|**TODO: Add Description**|
+|trainingEvents|[userTrainingEventInfo](../resources/usertrainingeventinfo.md) collection|List of training events of a user in the simulation.|
 
 ## Relationships
 None.

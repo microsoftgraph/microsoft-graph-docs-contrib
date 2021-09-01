@@ -1,6 +1,6 @@
 ---
 title: "userTrainingContentEventInfo resource type"
-description: "**TODO: Add Description**"
+description: "Represents training event details of assigned trainings to users in a tenant in attack simulation and training."
 author: "gopkr"
 localization_priority: Normal
 ms.prod: "security"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents training event details of assigned trainings to users in a tenant in attack simulation and training.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|browser|String|**TODO: Add Description**|
-|contentDateTime|DateTimeOffset|**TODO: Add Description**|
-|ipAddress|String|**TODO: Add Description**|
-|osPlatformDeviceDetails|String|**TODO: Add Description**|
-|potentialScoreImpact|Double|**TODO: Add Description**|
+|browser|String|Browser of the user from where the training event was generated.|
+|contentDateTime|DateTimeOffset|Date and time of the training content playback by the user.|
+|ipAddress|String|IP address of the user for the training event.|
+|osPlatformDeviceDetails|String|OS, platform and device details of the user for the training event.|
+|potentialScoreImpact|Double|Potential improvement in security posture of the tenant after completion of the training.|
 
 ## Relationships
 None.
