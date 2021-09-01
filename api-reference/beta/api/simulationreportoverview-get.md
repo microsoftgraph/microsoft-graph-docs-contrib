@@ -83,10 +83,7 @@ Content-Type: application/json
   },
   "recommendedActions": [
     {
-      "@odata.type": "microsoft.graph.recommendedAction",
-      "actionWebUrl": "String",
-      "title": "String",
-      "potentialScoreImpact": "Double"
+      "@odata.type": "microsoft.graph.recommendedAction"
     }
   ]
 }
