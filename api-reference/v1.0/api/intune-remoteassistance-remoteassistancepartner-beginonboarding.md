@@ -2,7 +2,7 @@
 title: "beginOnboarding action"
 description: "A request to start onboarding.  Must be coupled with the appropriate TeamViewer account information"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

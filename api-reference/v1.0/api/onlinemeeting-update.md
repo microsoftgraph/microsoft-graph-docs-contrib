@@ -2,7 +2,7 @@
 title: "Update onlineMeeting"
 description: "Update the properties of an online meeting."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---

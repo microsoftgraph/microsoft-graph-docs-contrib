@@ -3,7 +3,7 @@ author: swapnil1993
 ms.date: 08/30/2020
 title: "Create a columnDefinition in a list"
 description: "Create a list column."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
