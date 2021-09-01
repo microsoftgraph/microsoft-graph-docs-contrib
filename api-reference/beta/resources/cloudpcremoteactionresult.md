@@ -21,7 +21,7 @@ Represents the Cloud PC-specified remote action result.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getCloudPcRemoteActionResults](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the Cloud PC specified remote action results. Now Cloud PC supports reprovision and resize remote actions.|
+|[getCloudPcRemoteActionResults](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the Cloud PC specified remote action results. Cloud PC supports reprovision and resize remote actions.|
 
 ## Properties
 
