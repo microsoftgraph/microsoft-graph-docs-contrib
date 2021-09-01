@@ -1,9 +1,9 @@
 ---
 title: "attackSimulationTrainingUserCoverage resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "gopkr"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "reports"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|**TODO: Add Description**|
+|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User of a tenant in attack simulation and training campaign|
 |userTrainings|[userTrainingStatusInfo](../resources/usertrainingstatusinfo.md) collection|**TODO: Add Description**|
 
 ## Relationships

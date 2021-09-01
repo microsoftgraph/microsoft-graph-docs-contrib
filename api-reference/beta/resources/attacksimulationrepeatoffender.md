@@ -18,7 +18,7 @@ Represents repeat offender user of a tenant in attack simulation and training.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User of a tenant in an attack simulation and training campaign|
+|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User of a tenant in attack simulation and training campaign|
 |repeatOffenceCount|Int32|Count of repeat offences of a user|
 
 ## Relationships

@@ -1,9 +1,9 @@
 ---
 title: "attackSimulationSimulationUserCoverage resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents simulation coverage for a user of a tenant in attack simulation and training."
+author: "gopkr"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "reports"
 doc_type: resourcePageType
 ---
 
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents simulation coverage for a user of a tenant in attack simulation and training.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|**TODO: Add Description**|
-|clickCount|Int32|**TODO: Add Description**|
-|compromisedCount|Int32|**TODO: Add Description**|
-|latestSimulationDateTime|DateTimeOffset|**TODO: Add Description**|
-|simulationCount|Int32|**TODO: Add Description**|
+|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User of a tenant in attack simulation and training campaign|
+|clickCount|Int32|Click count of the user in attack simulation and training campaigns|
+|compromisedCount|Int32|Compromised count of the user in attack simulation and training campaigns|
+|latestSimulationDateTime|DateTimeOffset|Latest simulation date and time for the user|
+|simulationCount|Int32|Count of attack simulation and training campaigns for the user|
 
 ## Relationships
 None.

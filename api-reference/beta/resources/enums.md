@@ -2498,3 +2498,88 @@ Possible values for user account types (group membership), per Windows definitio
 |overdue|
 |notCompleted|
 |unknownFutureValue|
+
+### simulationAttackTechnique values
+
+|Member|
+|:---|
+|unknown|
+|credentialHarvesting|
+|attachmentMalware|
+|driveByUrl|
+|linkInAttachment|
+|linkToMalwareFile|
+|unknownFutureValue|
+
+### simulationAttackType values
+
+|Member|
+|:---|
+|unknown|
+|social|
+|cloud|
+|endpoint|
+|unknownFutureValue|
+
+### simulationMode values
+
+|Member|
+|:---|
+|real|
+|preview|
+|unknownFutureValue|
+
+### payloadDeliveryPlatform values
+
+|Member|
+|:---|
+|unknown|
+|sms|
+|email|
+|teams|
+|unknownFutureValue|
+
+### payloadSource values
+
+|Member|
+|:---|
+|unknown|
+|global|
+|tenant|
+|unknownFutureValue|
+
+### simulationStatus values
+
+|Member|
+|:---|
+|unknown|
+|draft|
+|inProgress|
+|scheduled|
+|completed|
+|partiallyCompleted|
+|failed|
+|cancelled|
+|excluded|
+|deleted|
+|included|
+|unknownFutureValue|
+
+### trainingAssignmentPreference values
+
+|Member|
+|:---|
+|unknown|
+|auto|
+|manual|
+|unknownFutureValue|
+
+### trainingContentPreference values
+
+|Member|
+|:---|
+|unknown|
+|microsoft|
+|custom|
+|noTraining|
+|unknownFutureValue|
