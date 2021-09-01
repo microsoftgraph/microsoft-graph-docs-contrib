@@ -18,7 +18,7 @@ Property rules are a set of conditions that dictate when the template should be 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|operation|ruleOperation|This specifies the operations to be performed during evaluation of a single rule, where `property` and a string from the `values` collection are the respective operands. Possible values are: `null`, `equals`, `notEquals`, `contains`, `notContains`, `lessThan`, `greaterThan`, `startsWith`, `unknownFutureValue`. Required.|
+|operation|String|This specifies the operations to be performed during evaluation of a single rule, where `property` and a string from the `values` collection are the respective operands. Possible values are: `null`, `equals`, `notEquals`, `contains`, `notContains`, `lessThan`, `greaterThan`, `startsWith`, `unknownFutureValue`. Required.|
 |property|String|The property from the [externalItem](../resources/externalconnectors-externalitem.md) schema. Required.|
 |values|String collection|A collection with one or many strings. The specified string(s) will be matched with the specified property using the specified operation. Required.|
 |valuesJoinedBy|binaryOperator|The join operator for evaluating multiple rules. For example, if `and` is specified, then all rules must be true for the property rule to be true. Possible values are: `or`, `and`. Required.|
