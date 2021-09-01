@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getAttackSimulationTrainingUserCoverage"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "List training coverage for users of a tenant in attack simulation and training campaigns"
+author: "gopkr"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "reports"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+List training coverage for users of a tenant in attack simulation and training campaigns
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Reports.Read.All                            |
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /reportRoot/getAttackSimulationTrainingUserCoverage
+GET /reports/getAttackSimulationTrainingUserCoverage
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ If successful, this function returns a `200 OK` response code and a [attackSimul
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reportRoot/getAttackSimulationTrainingUserCoverage
+GET https://graph.microsoft.com/beta/reports/getAttackSimulationTrainingUserCoverage
 ```
 
 

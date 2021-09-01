@@ -108,17 +108,3 @@ doc_type: enumTypes
 |noTraining|
 |unknownFutureValue|
 
-### trainingStatus values 
-
-
-
-|Member|
-|:---|
-|unknown|
-|assigned|
-|inProgress|
-|completed|
-|overdue|
-|notCompleted|
-|unknownFutureValue|
-
