@@ -2,7 +2,7 @@
 title: "wiredNetworkInterface enum type"
 description: "Apple network interface type."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

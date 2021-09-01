@@ -2,7 +2,7 @@
 title: "vpnOnDemandRuleConnectionAction enum type"
 description: "VPN On-Demand Rule Connection Action."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

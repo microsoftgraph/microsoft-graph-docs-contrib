@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationDeviceMode enum type"
 description: "Describes applicability for the mode the device is in"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

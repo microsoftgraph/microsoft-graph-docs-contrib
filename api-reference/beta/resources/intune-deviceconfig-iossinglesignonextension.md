@@ -2,7 +2,7 @@
 title: "iosSingleSignOnExtension resource type"
 description: "An abstract base class for all iOS-specific single sign-on extension types."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

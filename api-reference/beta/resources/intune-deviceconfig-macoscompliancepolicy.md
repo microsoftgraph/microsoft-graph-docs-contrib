@@ -2,7 +2,7 @@
 title: "macOSCompliancePolicy resource type"
 description: "This class contains compliance settings for Mac OS."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
