@@ -1,6 +1,6 @@
 ---
 title: "participant: startHoldMusic"
-description: "Allow the application to place a participant on hold while playing music on the background."
+description: "Put a participant on hold and play music in the background."
 author: "mkhribech"
 localization_priority: Normal
 ms.prod: "cloud-communications"

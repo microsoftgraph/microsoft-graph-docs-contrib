@@ -1,6 +1,6 @@
 ---
 title: "participant: stopHoldMusic"
-description: "Allows the application to stop a participant from being on hold."
+description: "Reincorporate a participant previously put on hold to the call."
 author: "mkhribech"
 localization_priority: Normal
 ms.prod: "cloud-communications"
