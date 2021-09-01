@@ -1,7 +1,7 @@
 ---
 title: "searchBucket resource type"
 description: "Provides for a specific aggregation in the response, the value of a particular bucket."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

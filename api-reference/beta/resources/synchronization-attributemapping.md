@@ -1,7 +1,7 @@
 ---
 title: "attributeMapping resource type"
 description: "Defines how values for the given target attribute should flow during synchronization."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

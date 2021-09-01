@@ -1,7 +1,7 @@
 ---
 title: "roleManagement resource type"
 description: "RBAC role management resource"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
