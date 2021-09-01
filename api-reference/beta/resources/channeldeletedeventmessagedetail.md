@@ -2,7 +2,7 @@
 title: "channelDeletedEventMessageDetail resource type"
 description: "Represents the details of an event message about a channel deleted from a team."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
