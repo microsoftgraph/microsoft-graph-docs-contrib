@@ -2,7 +2,7 @@
 title: "workbook: tableRowOperationResult"
 description: "Part of an asynchronous create tableRow request."
 author: "lumine2008"
-localization_priority: Normal
+ms.localization: medium
 ms.prod: "excel"
 doc_type: apiPageTypes
 ---
