@@ -2,7 +2,7 @@
 title: "adminConsent resource type"
 description: "Admin consent information."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

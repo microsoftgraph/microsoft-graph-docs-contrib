@@ -2,7 +2,7 @@
 title: "azureADWindowsAutopilotDeploymentProfile resource type"
 description: "Windows Autopilot Deployment Profile"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

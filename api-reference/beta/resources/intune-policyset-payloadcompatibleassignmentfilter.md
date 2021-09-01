@@ -2,7 +2,7 @@
 title: "payloadCompatibleAssignmentFilter resource type"
 description: "A class containing the properties used for Payload Compatible Assignment Filter."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

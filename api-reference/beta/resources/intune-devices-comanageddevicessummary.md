@@ -2,7 +2,7 @@
 title: "comanagedDevicesSummary resource type"
 description: "Summary data for co managed devices"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
