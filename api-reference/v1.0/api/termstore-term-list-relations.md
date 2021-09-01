@@ -2,7 +2,7 @@
 title: "List relations"
 description: "Get the relations from the relations navigation property."
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---

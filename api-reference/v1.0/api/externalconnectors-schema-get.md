@@ -2,7 +2,7 @@
 title: "Get schema"
 description: "Read the properties and relationships of a schema object."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---

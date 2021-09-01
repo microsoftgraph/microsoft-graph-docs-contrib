@@ -2,7 +2,7 @@
 title: "message: copy"
 description: "Copy a message to a folder."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
