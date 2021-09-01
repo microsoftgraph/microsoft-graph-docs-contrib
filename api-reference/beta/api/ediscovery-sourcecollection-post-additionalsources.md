@@ -49,10 +49,12 @@ In the request body, supply a JSON representation of the [dataSource](../resourc
 
 The following table shows the properties that are required when you create the [dataSource](../resources/ediscovery-datasource.md).
 
+>**Note:** Either **email** or **site** are required, not both. 
+
 |Property|Type|Description|
 |:---|:---|:---|
-|email|string|SMTP address of the mailbox. NOTE: either email or site are required, not both. To get the email address of a group, use [List groups](../api/group-list.md) or [Get group](../api/group-get.md). Using the `group` API, you can query by the name of the group using `$filter`, e.g. `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
-|site|string|URL of the site, e.g. `https://contoso.sharepoint.com/sites/HumanResources`. NOTE: either email or site are required, not both.|
+|email|string|SMTP address of the mailbox. To get the email address of a group, use [List groups](../api/group-list.md) or [Get group](../api/group-get.md). You can query by the name of the group using `$filter`; for example, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
+|site|string|URL of the site; for example, `https://contoso.sharepoint.com/sites/HumanResources`. |
 
 ## Response
 
