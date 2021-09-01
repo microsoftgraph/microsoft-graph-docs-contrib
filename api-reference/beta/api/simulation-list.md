@@ -43,9 +43,9 @@ This method supports some of the OData query parameters to help customize the re
 
 - `$count`
 - `$orderby`
-- `$skip`
+- `$skiptoken`
 - `$top`
-- `$filter
+- `$filter`
 
 The following table lists the `$filter` and `$orderby` keywords
 

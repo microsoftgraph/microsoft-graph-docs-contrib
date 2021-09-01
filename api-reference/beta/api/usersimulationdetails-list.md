@@ -1,9 +1,9 @@
 ---
 title: "List simulation users report"
-description: "Get a list of users in a simulation with their online actions."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "List users of a tenant in an attack simulation campaign with their online actions."
+author: "gopkr"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [userSimulationDetails](../resources/usersimulationdetails.md) objects and their properties.
+List users of a tenant in an attack simulation campaign with their online actions.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | SecurityEvents.Read.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | SecurityEvents.Read.All                     |
 
 ## HTTP request
 
@@ -31,10 +31,18 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /security/attackSimulation/simulations/{id}/report/simulationUsers
+GET /security/attackSimulation/simulations/{id}/report/simulationUsers?$top=1
+GET /security/attackSimulation/simulations/{id}/report/simulationUsers?$count=true
 ```
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+- `$count`
+- `$skiptoken`
+- `$top`
+
+> **Note:** Use `@odata.nextLink` for pagination.
 
 ## Request headers
 |Name|Description|
