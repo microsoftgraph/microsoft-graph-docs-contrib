@@ -62,7 +62,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ### Request
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_sitesource_from__1"
@@ -81,9 +80,6 @@ Content-length: 179
 }
 
 ```
-
----
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
