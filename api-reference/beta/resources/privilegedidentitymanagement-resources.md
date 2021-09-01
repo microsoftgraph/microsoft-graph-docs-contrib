@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Privileged Identity Management - Azure resources (deprecated)
+# Privileged Identity Management - Azure resources
 
 Namespace: microsoft.graph
 

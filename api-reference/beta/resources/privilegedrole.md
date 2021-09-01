@@ -1,13 +1,13 @@
 ---
 title: "privilegedRole resource type"
-description: "Represents an Azure AD administrator role, such as: **Global Administrator, Billing Administrator, Service Administrator, User Administrator, Password Administrator**, etc."
+description: "Represents an Azure AD administrator role, such as: Global Administrator, Billing Administrator, Service Administrator, User Administrator, and Password Administrator."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "shauliu1"
 ---
 
-# privilegedRole resource type
+# privilegedRole resource type (deprecated)
 
 Namespace: microsoft.graph
 

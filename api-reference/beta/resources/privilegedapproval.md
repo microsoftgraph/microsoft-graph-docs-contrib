@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "shauliu1"
 ---
 
-# privilegedApproval resource type
+# privilegedApproval resource type (deprecated)
 
 Namespace: microsoft.graph
 

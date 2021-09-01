@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "shauliu1"
 ---
 
-# privilegedRoleAssignment resource type
+# privilegedRoleAssignment resource type (deprecated)
 
 Namespace: microsoft.graph
 

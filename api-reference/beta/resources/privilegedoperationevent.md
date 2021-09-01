@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "shauliu1"
 ---
 
-# privilegedOperationEvent resource type
+# privilegedOperationEvent resource type (deprecated)
 
 Namespace: microsoft.graph
 
