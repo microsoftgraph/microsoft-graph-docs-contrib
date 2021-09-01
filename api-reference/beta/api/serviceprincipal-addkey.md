@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: addKey"
 description: "Add a key credential to a servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

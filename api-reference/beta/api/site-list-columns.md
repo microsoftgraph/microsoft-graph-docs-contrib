@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "List columns in a site"
 description: "List columns in a site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
