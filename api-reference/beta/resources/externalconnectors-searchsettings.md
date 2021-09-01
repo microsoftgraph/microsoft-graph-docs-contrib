@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
           ]
         }
       ],
-      "layout": "{\r\n\"type\": \"AdaptiveCard\",\r\n\"version\": \"1.0\",\r\n\"body\": [\r\n{\r\n\"type\": \"TextBlock\",\r\n\"text\": \"A contoso ticket.\"\r\n}\r\n] \r\n}",
+      "layout": {"type": "AdaptiveCard","version": "1.0","body": [{"type": "TextBlock","text": "A contoso ticket."}]},
       "priority": 0
     },
         {
@@ -62,7 +62,7 @@ The following is a JSON representation of the resource.
           ]
         }
       ],
-      "layout": "{\r\n\"type\": \"AdaptiveCard\",\r\n\"version\": \"1.0\",\r\n\"body\": [\r\n{\r\n\"type\": \"TextBlock\",\r\n\"text\": \"A contoso ticket.\"\r\n}\r\n] \r\n}",
+      "layout": {"type": "AdaptiveCard","version": "1.0","body": [{"type": "TextBlock","text": "A contoso ticket."}]},
       "priority": 1
     }
   ]

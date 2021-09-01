@@ -34,21 +34,21 @@ The following is a JSON representation of the resource.
 }
 -->
 ``` json
-{
-  "id": "String (identifier)",
-  "rules": [
     {
-        "property": "itemTitle",
-        "operation": "contains",
-        "valuesJoinedBy": "or",
-        "values": [
-            "contoso",
-            "smart"
-        ]
+      "id": "String (identifier)",
+      "rules": [
+        {
+          "property": "itemTitle",
+          "operation": "contains",
+          "valuesJoinedBy": "or",
+          "values": [
+              "contoso",
+              "smart"
+          ]
+        }
+      ],
+      "layout": {"type": "AdaptiveCard","version": "1.0","body": [{"type": "TextBlock","text": "A contoso ticket."}]},
+      "priority": 0
     }
-  ],
-  "layout": "{\r\n\"type\": \"AdaptiveCard\",\r\n\"version\": \"1.0\",\r\n\"body\": [\r\n{\r\n\"type\": \"TextBlock\",\r\n\"text\": \"A contoso ticket.\"\r\n}\r\n] \r\n}",
-  "priority": "Integer"
-}
 ```
 
