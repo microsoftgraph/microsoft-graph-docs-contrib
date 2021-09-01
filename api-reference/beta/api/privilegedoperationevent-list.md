@@ -1,10 +1,10 @@
 ---
 title: "List privilegedOperationEvents"
 description: "filter`` expression."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # List privilegedOperationEvents

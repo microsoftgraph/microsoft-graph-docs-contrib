@@ -2,7 +2,7 @@
 title: "Update managedMobileApp"
 description: "Update the properties of a managedMobileApp object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -96,7 +96,6 @@ Content-Length: 276
   "version": "Version value"
 }
 ```
-
 
 
 

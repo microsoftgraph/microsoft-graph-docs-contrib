@@ -2,7 +2,7 @@
 title: "Update azureADWindowsAutopilotDeploymentProfile"
 description: "Update the properties of a azureADWindowsAutopilotDeploymentProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -158,7 +158,6 @@ Content-Length: 1395
   "managementServiceAppId": "Management Service App Id value"
 }
 ```
-
 
 
 

@@ -55,6 +55,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body. If a large user collection is returned, you can use [paging in your app](/graph/paging).
 
+Attempting to use `$select` on the `/users` collection to retrieve properties that cannot be returned within a user collection (for example, the request `../users?$select=aboutMe`) returns a `501 Not Implemented` error code.
+
 ## Examples
 
 ### Example 1: Get all users

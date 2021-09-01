@@ -1,10 +1,10 @@
 ---
 title: "Create privilegedApproval"
 description: "Use this API to create a new privilegedApproval."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Create privilegedApproval

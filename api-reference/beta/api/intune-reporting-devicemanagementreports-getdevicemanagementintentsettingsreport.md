@@ -2,7 +2,7 @@
 title: "getDeviceManagementIntentSettingsReport action"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -103,7 +103,6 @@ Content-Length: 111
   "value": "Z2V0RGV2aWNlTWFuYWdlbWVudEludGVudFNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDc2OTIyMjczOA=="
 }
 ```
-
 
 
 

@@ -26,4 +26,3 @@ Supported setting types
 
 
 
-
