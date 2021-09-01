@@ -2,7 +2,7 @@
 title: "Delete windowsQualityUpdateProfileAssignment"
 description: "Deletes a windowsQualityUpdateProfileAssignment."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
