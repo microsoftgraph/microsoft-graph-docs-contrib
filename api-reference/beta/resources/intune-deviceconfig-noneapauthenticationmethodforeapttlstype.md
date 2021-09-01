@@ -2,7 +2,7 @@
 title: "nonEapAuthenticationMethodForEapTtlsType enum type"
 description: "Non-EAP methods for authentication."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
