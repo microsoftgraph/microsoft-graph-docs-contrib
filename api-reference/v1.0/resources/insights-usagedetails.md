@@ -2,7 +2,7 @@
 title: "usageDetails resource type"
 description: "Complex type containing properties of Used items. Information on when the resource was last accessed (viewed) or modified (edited) by the user."
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
