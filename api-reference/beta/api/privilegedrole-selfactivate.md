@@ -1,10 +1,10 @@
 ---
 title: "privilegedRole: selfActivate"
 description: "Activate the role that is assigned to the requester."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # privilegedRole: selfActivate

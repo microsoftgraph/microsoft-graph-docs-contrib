@@ -1,7 +1,7 @@
 ---
 title: "delegatedPermissionClassification resource type"
 description: "Used to specify the classification of a delegated permission."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "psignoret"

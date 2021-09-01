@@ -1,7 +1,7 @@
 ---
 title: "device: checkMemberObjects"
 description: "Check for membership in a list of groups or directory roles for the specified device object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "spunukol"
 ms.prod: "directory-management"
 doc_type: "apiPageType"

@@ -1,7 +1,7 @@
 ---
 title: "onPremisesExtensionAttributes resource type"
 description: "The **onPremisesExtensionAttributes** property of the user entity contains fifteen custom extension attribute properties. For an **onPremisesSyncEnabled** user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is false), these properties can be set over Exchange Online. The attributes are read only in Microsoft Graph."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jpettere"
 ms.prod: "users"
 doc_type: resourcePageType

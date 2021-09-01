@@ -2,7 +2,7 @@
 title: "Remove member from chat"
 description: "Remove a conversationMember from a chat."
 author: "AkJo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)| ChatMember.ReadWrite.All |
+|Delegated (work or school account)| ChatMember.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application| Chat.Manage.Chat*, ChatMember.ReadWrite.All |
 

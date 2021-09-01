@@ -2,7 +2,7 @@
 title: "directoryObject: getByIds"
 description: "Returns the directory objects specified in a list of IDs. "
 author: "keylimesoda"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

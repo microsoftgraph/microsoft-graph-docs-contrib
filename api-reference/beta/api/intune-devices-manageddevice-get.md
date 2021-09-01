@@ -2,7 +2,7 @@
 title: "Get managedDevice"
 description: "Read properties and relationships of the managedDevice object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -69,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9023
+Content-Length: 9086
 
 {
   "value": {
@@ -271,11 +271,11 @@ Content-Length: 9023
         "valueType": "Value Type value",
         "updatable": true
       }
-    ]
+    ],
+    "enrollmentProfileName": "Enrollment Profile Name value"
   }
 }
 ```
-
 
 
 

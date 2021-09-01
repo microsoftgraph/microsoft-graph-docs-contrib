@@ -2,7 +2,7 @@
 title: "List azureADWindowsAutopilotDeploymentProfiles"
 description: "List properties and relationships of the azureADWindowsAutopilotDeploymentProfile objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1496
+Content-Length: 1564
 
 {
   "value": [
@@ -97,12 +97,12 @@ Content-Length: 1496
       "enableWhiteGlove": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "managementServiceAppId": "Management Service App Id value"
     }
   ]
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create tableRow"
 description: "Add rows to the end of a table."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType

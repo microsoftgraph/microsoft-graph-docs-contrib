@@ -2,7 +2,7 @@
 title: "commit action"
 description: "Commits a file of a given app."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

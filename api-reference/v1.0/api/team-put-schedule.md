@@ -2,7 +2,7 @@
 title: "Create or replace schedule"
 description: "Create or replace a **schedule** object."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

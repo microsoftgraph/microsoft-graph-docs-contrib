@@ -67,28 +67,28 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 
 | Microsoft Graph features | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
-| Users | ✔ | ✔ | ✔ |
-| Groups | ✔ | ✔ | ✔ |
-| Excel | ✔ | ✔\* | ✔ |
-| OneDrive | ✔ | ✔\* | ✔ |
-| Outlook Mail | ✔ | ✔ | ✔ |
-| Outlook Calendar | ✔ | ✔ | ✔ |
-| Personal Contacts | ✔ | ✔ | ✔ |
-| Security | ✔ | ✔ | ✔ |
-| SharePoint | ✔ | ✔ | ✔ |
-| Teams | ✔ | ✔ | ✔ |
-| Planner | ✔ | ✔ | ✔ |
-| Reports | ➖ | ✔ | ➖ |
-| Organizational contacts | ✔ | ➖ | ➖ |
 | Applications | ✔ | ➖ | ➖ |
-| Service principals | ✔ | ➖ | ➖ |
 | Change notifications (webhooks) | ✔ | ✔ | ✔\* |
 | Delta query | ✔ | ✔ | ➖ |
 | Directory schema extensions | ✔ | ✔ | ➖ |
+| Excel | ✔ | ✔\* | ✔ |
+| Groups | ✔ | ✔ | ✔ |
+| OneDrive | ✔ | ✔\* | ✔ |
 | Open type extensions | ✔ | ➖ | ➖ |
+| Organizational contacts | ✔ | ➖ | ➖ |
+| Outlook Calendar | ✔ | ✔ | ✔ |
+| Outlook Mail | ✔ | ✔ | ✔ |
+| Personal Contacts | ✔ | ✔ | ✔ |
+| Planner | ✔ | ✔ | ✔ |
+| Reports | ➖ | ✔ | ➖ |
 | Search (Microsoft Search) | ➖ | ➖ | ➖ |
+| Security | ✔ | ✔ | ✔ |
 | Service health and communications | ✔ | ✔ | ✔ |
- 
+| Service principals | ✔ | ➖ | ➖ |
+| SharePoint | ✔ | ✔ | ✔ |
+| Teams | ✔ | ✔ | ✔ |
+| Users | ✔ | ✔ | ✔ |
+
 The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
 
 * Organizational contacts

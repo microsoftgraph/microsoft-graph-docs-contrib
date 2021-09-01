@@ -1,7 +1,7 @@
 ---
 title: "Assign appliesTo"
 description: "Assign a policy to application or service principal object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -53,6 +53,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request to assign an appManagementPolicy to an application.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assign_appliesTo"
@@ -65,6 +67,24 @@ POST https://graph.microsoft.com/beta/applications/{id}/appManagementPolicies/$r
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/assign-appliesto-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assign-appliesto-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/assign-appliesto-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/assign-appliesto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

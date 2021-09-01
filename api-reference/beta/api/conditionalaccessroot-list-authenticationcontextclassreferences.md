@@ -1,7 +1,7 @@
 ---
 title: "List authenticationContextClassReferences"
 description: "Retrieve a list of authenticationContextClassReference objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "calebb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

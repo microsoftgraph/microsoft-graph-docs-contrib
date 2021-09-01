@@ -2,7 +2,7 @@
 title: "Get plannerRoster"
 description: "Read the properties and relationships of a plannerRoster object."
 author: "tarkansevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: apiPageType
 ---

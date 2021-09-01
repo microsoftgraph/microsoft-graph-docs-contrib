@@ -2,7 +2,7 @@
 title: "Update remoteActionAudit"
 description: "Update the properties of a remoteActionAudit object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -108,7 +108,6 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
 
 
 

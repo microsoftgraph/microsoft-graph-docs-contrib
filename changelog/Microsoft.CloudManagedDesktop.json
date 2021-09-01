@@ -1,6 +1,24 @@
 {
     "changelog": [
         {
+            "ChangeList": [
+                {
+                    "Id": "a537896e-fa55-11eb-b6a8-8203ca0139f1",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "endGracePeriod",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [endGracePeriod](https://docs.microsoft.com/en-us/graph/api/cloudPC-endGracePeriod?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "a537896e-fa55-11eb-b6a8-8203ca0139f1",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-08-18T03:38:51.582Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList":[
                 {
                     "Id": "3445a5f1-b682-4adc-9485-a9d6e1b996be",

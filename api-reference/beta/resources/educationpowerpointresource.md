@@ -1,7 +1,7 @@
 ---
 title: "educationPowerPointResource resource type"
 description: "A subclass of educationResource. This is a PowerPoint resource. The PowerPoint file must be uploaded in the **fileResource** directory associated with the "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: resourcePageType

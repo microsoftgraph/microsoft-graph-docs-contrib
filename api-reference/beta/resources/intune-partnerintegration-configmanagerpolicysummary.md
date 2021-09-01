@@ -2,7 +2,7 @@
 title: "configManagerPolicySummary resource type"
 description: "A ConfigManager policy summary."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -48,7 +48,6 @@ Here is a JSON representation of the resource.
   "enforcedDeviceCount": 1024
 }
 ```
-
 
 
 

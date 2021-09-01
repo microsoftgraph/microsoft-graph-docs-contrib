@@ -2,7 +2,7 @@
 title: "Create domain"
 description: "Adds a domain to the tenant."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

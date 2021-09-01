@@ -2,7 +2,7 @@
 title: "Get installed app in chat"
 description: "Get installed app in a chat."
 author: "subray"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { 
-"blockType": "ignored" 
+<!-- {
+"blockType": "ignored"
 } -->
 
 ```http
