@@ -2,7 +2,7 @@
 title: "List groups"
 description: "Get a list of group objects in a term store."
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
