@@ -2,7 +2,7 @@
 title: "certificateStore enum type"
 description: "CertificateStore types"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
