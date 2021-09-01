@@ -27,7 +27,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[endGracePeriod](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [cloudPC](../resources/cloudpc.md) object.|
 |[Reprovision cloudPC remote action](../api/manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id.|
 |[Bulk reprovision cloudPCs remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
-|[Resize cloudPC remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device id.|
+|[Resize cloudPC remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device ID.|
 |[Get cloudPC remote action results](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
 
 ## Properties
