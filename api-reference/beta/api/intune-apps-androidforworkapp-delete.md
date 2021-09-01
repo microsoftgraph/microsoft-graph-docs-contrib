@@ -2,7 +2,7 @@
 title: "Delete androidForWorkApp"
 description: "Deletes a androidForWorkApp."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

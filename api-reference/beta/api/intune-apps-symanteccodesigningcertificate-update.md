@@ -2,7 +2,7 @@
 title: "Update symantecCodeSigningCertificate"
 description: "Update the properties of a symantecCodeSigningCertificate object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

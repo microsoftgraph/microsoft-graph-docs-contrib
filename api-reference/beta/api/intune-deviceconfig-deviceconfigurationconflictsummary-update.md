@@ -2,7 +2,7 @@
 title: "Update deviceConfigurationConflictSummary"
 description: "Update the properties of a deviceConfigurationConflictSummary object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

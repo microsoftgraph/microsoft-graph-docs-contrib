@@ -2,7 +2,7 @@
 title: "Create androidForWorkEnrollmentProfile"
 description: "Create a new androidForWorkEnrollmentProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
