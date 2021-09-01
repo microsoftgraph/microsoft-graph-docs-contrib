@@ -2,7 +2,7 @@
 title: "Create userExperienceAnalyticsRemoteConnection"
 description: "Create a new userExperienceAnalyticsRemoteConnection object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Create networkIPv6ConfigurationManagementCondition"
 description: "Create a new networkIPv6ConfigurationManagementCondition object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "List userExperienceAnalyticsAppHealthAppPerformanceByAppVersions"
 description: "List properties and relationships of the userExperienceAnalyticsAppHealthAppPerformanceByAppVersion objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
