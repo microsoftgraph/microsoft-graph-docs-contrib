@@ -2,7 +2,7 @@
 title: "Update iosikEv2VpnConfiguration"
 description: "Update the properties of a iosikEv2VpnConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -472,7 +472,6 @@ Content-Length: 5734
   "mtuSizeInBytes": 14
 }
 ```
-
 
 
 

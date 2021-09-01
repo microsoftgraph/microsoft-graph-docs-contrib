@@ -1,7 +1,7 @@
 ---
 title: "List governanceResources"
 description: "Retrieve a collection of governanceResource that the requestor has access to."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"

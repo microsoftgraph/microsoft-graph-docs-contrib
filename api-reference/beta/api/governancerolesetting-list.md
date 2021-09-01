@@ -1,7 +1,7 @@
 ---
 title: "List governanceRoleSettings"
 description: "Retrieve a collection of governanceRoleSettings on a resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"

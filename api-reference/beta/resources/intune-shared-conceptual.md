@@ -58,6 +58,7 @@ The following Graph resources are shared between Intune workflows:
 - [IP range](intune-shared-iprange.md)
 - [IPv4 range](intune-shared-ipv4range.md)
 - [IPv6 range](intune-shared-ipv6range.md)
+- [Key long value pair](intune-shared-keylongvaluepair.md)
 - [Key size](intune-shared-keysize.md)
 - [Key storage provider option](intune-shared-keystorageprovideroption.md)
 - [Key usages](intune-shared-keyusages.md)

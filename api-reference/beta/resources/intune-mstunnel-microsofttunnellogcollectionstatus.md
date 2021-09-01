@@ -26,4 +26,3 @@ Enum type that represent the status of log collection.
 
 
 
-

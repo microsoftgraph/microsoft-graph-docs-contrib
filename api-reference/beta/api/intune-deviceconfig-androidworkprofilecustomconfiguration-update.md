@@ -2,7 +2,7 @@
 title: "Update androidWorkProfileCustomConfiguration"
 description: "Update the properties of a androidWorkProfileCustomConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -172,7 +172,6 @@ Content-Length: 1520
   ]
 }
 ```
-
 
 
 

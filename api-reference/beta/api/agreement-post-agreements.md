@@ -1,7 +1,7 @@
 ---
 title: "Create agreement"
 description: "Create a new agreement object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "raprakasMSFT"
