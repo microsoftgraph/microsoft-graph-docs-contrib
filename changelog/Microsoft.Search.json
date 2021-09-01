@@ -785,6 +785,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-09-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }
