@@ -2,7 +2,7 @@
 title: "Create managedDevice"
 description: "Create a new managedDevice object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

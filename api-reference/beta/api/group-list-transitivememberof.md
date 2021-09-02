@@ -1,7 +1,7 @@
 ---
 title: "List group transitive memberOf"
 description: "Get groups and administrative units that the group is a member of."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "presence: setPresence"
 description: "Set the presence information for a user's application presence session."
 author: "jsandoval-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---

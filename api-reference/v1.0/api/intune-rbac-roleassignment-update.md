@@ -2,7 +2,7 @@
 title: "Update roleAssignment"
 description: "Update the properties of a roleAssignment object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

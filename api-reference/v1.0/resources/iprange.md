@@ -1,7 +1,7 @@
 ---
 title: "ipRange resource type"
 description: "IP range base class for representing IPV4 and IPV6 address ranges."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "videor"
 ms.prod: "directory-management"
 doc_type: resourcePageType

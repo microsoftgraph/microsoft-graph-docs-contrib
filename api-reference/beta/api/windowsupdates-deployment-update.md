@@ -2,7 +2,7 @@
 title: "Update deployment"
 description: "Update the properties of a deployment object."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---

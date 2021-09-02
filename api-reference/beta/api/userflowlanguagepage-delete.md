@@ -2,7 +2,7 @@
 title: "Delete userFlowLanguagePage"
 description: "Deletes the values in an userFlowLanguagePage object."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update domain"
 description: "Update the properties of domain object."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
