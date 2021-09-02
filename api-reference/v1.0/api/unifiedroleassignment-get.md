@@ -2,8 +2,9 @@
 title: "Get unifiedRoleAssignment"
 description: "Read the properties and relationships of a unifiedRoleAssignment object."
 localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
