@@ -2,7 +2,7 @@
 title: "managedDevice: reprovisionCloudPc"
 description: "Reprovision Cloud PC with an Intune managed device ID. "
 author: "RuiHou105"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
