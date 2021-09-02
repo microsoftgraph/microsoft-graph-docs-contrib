@@ -33,7 +33,7 @@ GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId {eq roleD
 GET /roleManagement/directory/roleAssignments?$filter=principalId {eq principalId}
 ```
 
-## Optional query parameters
+## Query parameters
 
 This operation requires the `$filter` query parameter to query specific instances of role assignments. You can filter on the `roleDefinitionId` or `principalId` properties. The `roleDefinitionId` property can be either a role object ID or a **templateId**. For general information, see [OData query parameters](/graph/query-parameters).
 

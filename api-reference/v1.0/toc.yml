@@ -4594,6 +4594,8 @@ items:
               href: api/subscribedsku-get.md
         - name: Role management
           href: resources/rolemanagement.md
+        - name: RBAC application
+          href: resources/rbacapplication.md
           items:
           - name: Role definition
             href: resources/unifiedroledefinition.md

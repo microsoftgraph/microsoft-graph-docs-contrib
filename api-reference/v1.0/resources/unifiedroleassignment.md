@@ -12,7 +12,9 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-A unifiedRoleAssignment is used to grant access to resources. It represents a role definition assigned to a principal (typically a user) at a particular scope.
+A role assignment is used to grant access to resources. It represents a role definition assigned to a principal (for example, a user or a role-assignable group) at a particular scope.
+
+Inherits from [entity](entity.md).
 
 Either the **directoryScopeId** or an **appScopeId** property is required.
 

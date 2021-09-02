@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "roleManagement",
           "ChangeType": "Addition",
-          "Description": "Added the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-v1.0) resource type and relationships.",
+          "Description": "Added the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-v1.0) resource type and its relationships.",
           "Target": "roleManagement"
         },
         {

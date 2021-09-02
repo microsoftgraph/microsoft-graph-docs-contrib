@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a rol
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
 |displayName |string |The display name for the role definition.|
-|isEnabled |Boolean |Flag indicating if the role is enabled for assignment. If false the role is not available for assignment.|
+|isEnabled |Boolean |Flag indicating if the role is enabled for assignment. If `false`, the role is not available for assignment.|
 |rolePermissions |[unifiedRolePermission](../resources/unifiedrolepermission.md) collection |List of permissions included in the role.|
 
 ## Response
