@@ -2,7 +2,7 @@
 title: "unifiedRoleEligibilityScheduleInstance: filterByCurrentUser"
 description: "Get a list of the unifiedRoleEligibilityScheduleInstance objects and their properties filtered by a particular user principal"
 author: "shauliu1"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

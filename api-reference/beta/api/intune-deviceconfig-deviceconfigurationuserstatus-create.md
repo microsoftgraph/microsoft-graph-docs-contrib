@@ -2,7 +2,7 @@
 title: "Create deviceConfigurationUserStatus"
 description: "Create a new deviceConfigurationUserStatus object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -105,7 +105,6 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

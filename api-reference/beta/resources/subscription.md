@@ -1,7 +1,7 @@
 ---
 title: "subscription resource type"
 description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jumaodhiss"
 doc_type: resourcePageType
 ms.prod: "change-notifications"
@@ -35,7 +35,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [todoTask][] of a user in Microsoft To Do.*
 - A [user][] in Azure Active Directory.
 
-See [Use the Microsoft Graph API to get change notifications](webhooks.md) for the possible resource path values for each supported resource.
+For the possible resource path values for each supported resource, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
 
 ## Methods
 

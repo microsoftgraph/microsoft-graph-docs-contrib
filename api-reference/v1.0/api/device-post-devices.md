@@ -2,7 +2,7 @@
 title: "Create device"
 description: "Create and register a new device in the organization."
 author: "spunukol"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

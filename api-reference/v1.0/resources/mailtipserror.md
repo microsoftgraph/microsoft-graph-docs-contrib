@@ -1,7 +1,7 @@
 ---
 title: "mailTipsError resource type"
 description: "An error that occurs during an action."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType

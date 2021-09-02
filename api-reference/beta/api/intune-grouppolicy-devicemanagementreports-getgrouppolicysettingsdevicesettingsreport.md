@@ -2,7 +2,7 @@
 title: "getGroupPolicySettingsDeviceSettingsReport action"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -103,7 +103,6 @@ Content-Length: 115
   "value": "Z2V0R3JvdXBQb2xpY3lTZXR0aW5nc0RldmljZVNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDYzMDIzNDI3MQ=="
 }
 ```
-
 
 
 

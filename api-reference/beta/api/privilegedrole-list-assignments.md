@@ -1,7 +1,7 @@
 ---
 title: "List assignments"
 description: "Retrieve a list of privilegedRoleAssignment objects that are associated with the role. Each privilegedRoleAssignment represents a role assignment to a user."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"
@@ -12,6 +12,8 @@ author: "shauliu1"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects that are associated with the role. Each [privilegedRoleAssignment](../resources/privilegedroleassignment.md) represents a role assignment to a user.
 ## Permissions

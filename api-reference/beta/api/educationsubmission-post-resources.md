@@ -2,7 +2,7 @@
 title: "Create educationSubmissionResource"
 description: "Add a resource to the submission resource list."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

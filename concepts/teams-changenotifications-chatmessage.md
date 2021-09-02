@@ -17,7 +17,7 @@ To track all changes related to messages in a tenant, you can use subscriptions 
 
 ### Subscribe to messages across channels
 
-To get to change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 

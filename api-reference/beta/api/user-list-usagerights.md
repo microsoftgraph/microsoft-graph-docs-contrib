@@ -2,7 +2,7 @@
 title: "List user usageRights"
 description: "Retrieve a list of usageRights objects for a user."
 author: "jeeshnair"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---

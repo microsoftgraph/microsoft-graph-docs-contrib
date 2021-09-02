@@ -1,7 +1,7 @@
 ---
 title: "bookingBusiness: publish"
 description: "Make the scheduling page of this business available to external customers."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType

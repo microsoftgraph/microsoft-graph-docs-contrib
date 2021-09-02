@@ -2,7 +2,7 @@
 title: "List class assignments"
 description: "Retrieve a list of assignment objects."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

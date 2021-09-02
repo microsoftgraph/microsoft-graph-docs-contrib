@@ -2,7 +2,7 @@
 title: "appConsentRequest: filterByCurrentUser"
 description: "Retrieve appConsentRequest objects for which the current user is the reviewer."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

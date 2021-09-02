@@ -1,7 +1,7 @@
 ---
 title: "yomiPersonName resource type"
 description: "yomiPersonName resource type"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"
