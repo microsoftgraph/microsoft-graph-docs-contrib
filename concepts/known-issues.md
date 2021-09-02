@@ -15,7 +15,7 @@ For information about the latest updates to the Microsoft Graph API, see the [Mi
 
 ## Azure AD activity reports
 
-When you have a valid Azure AD Premium license and call the [directoryAudit](../api-reference/v1.0/resources/directoryaudit.md), [signIn](../api-reference/v1.0/resources/signin.md), or [provisioning](../api-reference/v1.0/resources/provisioningobjectsummary.md) Azure AD activity reports APIs, you may still encounter an error message similar to the following:
+When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you may still encounter an error message similar to the following:
 
 ```json
 {
@@ -30,7 +30,7 @@ When you have a valid Azure AD Premium license and call the [directoryAudit](../
     }
 }
 ```
-This error may also occur when retrieving the **signInActivity** property of the [user](../api-reference/beta/resources/user.md) resource, for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
+This error may also occur when retrieving the **signInActivity** property of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource, for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
 
 This error is because of intermittent license check failures which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required once the issue is resolved.
 
