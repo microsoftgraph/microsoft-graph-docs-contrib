@@ -2,7 +2,7 @@
 title: "startHoldMusicOperation resource type"
 description: "Represents the status of a startHoldMusic operation, triggered by a call to the startHoldMusic API."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "participant: startHoldMusic"
 description: "Put a participant on hold and play music in the background."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
