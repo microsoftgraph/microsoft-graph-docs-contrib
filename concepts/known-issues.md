@@ -2,7 +2,7 @@
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Known issues with Microsoft Graph

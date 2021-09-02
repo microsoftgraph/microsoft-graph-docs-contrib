@@ -2,7 +2,7 @@
 title: "Overview of item insights in Microsoft Graph"
 description: "The overview of item insights functionality and customization on the user level"
 author: "simonhult"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "insights"
 ms.custom: scenarios:getting-started
 ---

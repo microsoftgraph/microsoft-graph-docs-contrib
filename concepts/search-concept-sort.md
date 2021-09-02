@@ -2,7 +2,7 @@
 title: "Use the Microsoft Search API to sort search results (preview)"
 description: "You sort search results using the Microsoft Search API."
 author: "nmoreau"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
