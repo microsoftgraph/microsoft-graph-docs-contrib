@@ -23,8 +23,8 @@ Namespace: microsoft.graph
 |[Get customSecurityAttributeDefinition](../api/customsecurityattributedefinition-get.md)|[customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md)|Read the properties and relationships of a [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) object.|
 |[Update customSecurityAttributeDefinition](../api/customsecurityattributedefinition-update.md)|[customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md)|Update the properties of a [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) object.|
 |[Delete customSecurityAttributeDefinition](../api/customsecurityattributedefinition-delete.md)|None|Deletes a [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) object.|
-|[List allowedValues](../api/customsecurityattributedefinition-list-allowedvalues.md)|[allowedValue](../resources/allowedvalue.md) collection|Get the allowedValue resources from the allowedValues navigation property.|
-|[Create allowedValue](../api/customsecurityattributedefinition-post-allowedvalues.md)|[allowedValue](../resources/allowedvalue.md)|Create a new allowedValue object.|
+|[List allowedValues](../api/allowedvalue-list.md)|[allowedValue](../resources/allowedvalue.md) collection|Get the allowedValue resources from the allowedValues navigation property.|
+|[Create allowedValue](../api/allowedvalue-create.md)|[allowedValue](../resources/allowedvalue.md)|Create a new allowedValue object.|
 
 ## Properties
 |Property|Type|Description|
