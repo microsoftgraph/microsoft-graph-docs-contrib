@@ -1,7 +1,7 @@
 ---
 title: "application: removePassword"
 description: "Remove a password from an application"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

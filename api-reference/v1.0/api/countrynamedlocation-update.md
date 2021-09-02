@@ -1,7 +1,7 @@
 ---
 title: "Update countryNamedlocation"
 description: "Update the properties of a countryNamedLocation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

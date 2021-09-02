@@ -1,7 +1,7 @@
 ---
 title: "bucketAggregationRange resource type"
 description: "Enables to specify some manual ranges in the aggregation request. This in only applicable to non string refiners : numeric and dates."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

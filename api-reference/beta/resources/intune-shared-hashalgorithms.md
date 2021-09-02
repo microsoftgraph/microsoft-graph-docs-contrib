@@ -2,7 +2,7 @@
 title: "hashAlgorithms enum type"
 description: "Hash Algorithm Options."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

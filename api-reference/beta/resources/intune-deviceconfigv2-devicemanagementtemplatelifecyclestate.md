@@ -2,7 +2,7 @@
 title: "deviceManagementTemplateLifecycleState enum type"
 description: "Describes current lifecycle state of a template"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

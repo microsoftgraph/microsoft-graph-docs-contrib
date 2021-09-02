@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: driveItem resource type
 description: Item is the main data model in the OneDrive API. Everything is an item.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

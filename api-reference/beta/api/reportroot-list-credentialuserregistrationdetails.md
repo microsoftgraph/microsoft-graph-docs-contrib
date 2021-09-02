@@ -1,7 +1,7 @@
 ---
 title: "List credentialUserRegistrationDetails"
 description: "Get a list of credentialUserRegistrationDetails objects for a given tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"

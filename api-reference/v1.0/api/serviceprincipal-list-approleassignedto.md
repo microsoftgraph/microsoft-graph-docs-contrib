@@ -1,7 +1,7 @@
 ---
 title: "List appRoleAssignments granted for a service principal"
 description: "Retrieve a list of app role assignments granted for a service principal."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"

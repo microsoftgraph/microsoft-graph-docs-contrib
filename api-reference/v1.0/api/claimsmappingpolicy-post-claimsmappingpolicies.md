@@ -1,7 +1,7 @@
 ---
 title: "Create claimsMappingPolicy"
 description: "Create a new claimsMappingPolicy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "paulgarn"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

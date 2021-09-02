@@ -2,7 +2,7 @@
 title: "broadcastMeetingSettings resource type"
 description: "Settings related to a live event"
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

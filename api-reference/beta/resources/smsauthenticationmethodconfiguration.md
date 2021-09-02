@@ -2,7 +2,7 @@
 title: "smsAuthenticationMethodConfiguration resource type"
 description: "Represents a Text Message authentication methods policy."
 author: "mmcla"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

@@ -4,7 +4,7 @@ description: "The Microsoft Graph call records API allows you to retrieve usage 
 author: "williamlooney"
 doc_type: conceptualPageType
 ms.prod: cloud-communications
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Working with the call records API in Microsoft Graph

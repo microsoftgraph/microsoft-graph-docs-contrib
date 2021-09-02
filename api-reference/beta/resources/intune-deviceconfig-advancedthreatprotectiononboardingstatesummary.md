@@ -2,7 +2,7 @@
 title: "advancedThreatProtectionOnboardingStateSummary resource type"
 description: "Windows defender advanced threat protection onboarding state summary across the account."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

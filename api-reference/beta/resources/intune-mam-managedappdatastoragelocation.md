@@ -2,7 +2,7 @@
 title: "managedAppDataStorageLocation enum type"
 description: "Storage locations where managed apps can potentially store their data"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

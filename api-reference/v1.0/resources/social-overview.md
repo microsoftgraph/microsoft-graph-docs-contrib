@@ -2,7 +2,7 @@
 title: "Use the Microsoft Graph API to integrate people intelligence in an app"
 description: "Microsoft Graph enables access to useful data about people and documents they interact with."
 author: "simonhult"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "insights"
 doc_type: conceptualPageType
 ---

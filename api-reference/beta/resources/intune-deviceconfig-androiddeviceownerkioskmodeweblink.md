@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerKioskModeWeblink resource type"
 description: "A weblink on the Android Device Owner Managed Home Screen"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

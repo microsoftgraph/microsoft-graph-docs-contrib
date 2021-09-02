@@ -2,7 +2,7 @@
 title: "windowsNetworkIsolationPolicy resource type"
 description: "Windows Network Isolation Policy"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
