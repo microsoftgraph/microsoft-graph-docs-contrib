@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRole",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [privilegedRole](https://docs.microsoft.com/en-us/graph/api/resources/privilegedrole?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Target": "privilegedRole"
+        },
+        {
+          "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleAssignment",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [privilegedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/privilegedroleassignment?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Target": "privilegedRoleAssignment"
+        },
+        {
+          "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleAssignmentRequest",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [privilegedRoleAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Target": "privilegedRoleAssignmentRequest"
+        },
+        {
+          "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedApproval",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [privilegedApproval](https://docs.microsoft.com/en-us/graph/api/resources/privilegedapproval?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Target": "privilegedApproval"
+        }
+      ],
+      "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-01T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7242dfc2-28c7-48f1-adc2-d0f2b00824c2",
           "ApiChange": "Resource",
           "ChangedApiName": "softwareOathAuthenticationMethod",

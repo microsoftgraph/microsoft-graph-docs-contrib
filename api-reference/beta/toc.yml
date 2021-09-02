@@ -12153,9 +12153,9 @@ items:
           items:
           - name: Privileged Identity Management
             href: resources/privilegedidentitymanagement-root.md
-          - name: Azure AD
+          - name: Azure AD (deprecated))
             items:
-            - name: Azure AD
+            - name: Azure AD 
               href: resources/privilegedidentitymanagement-directory.md
             - name: Privileged role
               href: resources/privilegedrole.md
