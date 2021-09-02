@@ -28,8 +28,8 @@ Use the follow scenario guidance to help determine which permission types to use
 |:-|:-|
 | To get group memberships for the signed-in user | Use one of the following sets of permissions: <br/> <li> **User.Read** and **GroupMember.Read.All** <li>**User.Read** and **Group.Read.All** |
 | To get group memberships for any user | Use one of the following sets of permissions: <br/> <li> **User.ReadBasic.All** and **GroupMember.Read.All** <li>**User.Read.All** and **GroupMember.Read.All** <li>**User.ReadBasic.All** and **Group.Read.All** <li>**User.Read.All** and **Group.Read.All** |
-| To get group memberships for a group | Use either the **GroupMember.Read.All** or **Group.Read.All** permissions |
-| To get group memberships for a directory object | Use the **Directory.Read.All** permission |
+| To get group memberships for a group | Use either the **GroupMember.Read.All** or **Group.Read.All** permission. |
+| To get group memberships for a directory object | Use the **Directory.Read.All** permission. |
 
 
 ## HTTP request
