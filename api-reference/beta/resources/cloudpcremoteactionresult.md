@@ -2,7 +2,7 @@
 title: "cloudPcRemoteActionResult resource type"
 description: "Represents the Cloud PC-specified remote action result."
 author: "RuiHou105"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
