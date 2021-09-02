@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Update the properties of the [event](../resources/event.md) object.
 
-Include only those properties in the request body that require updating. 
-
 ### Notes for updating specific properties
 Note the following behaviors or recommendations when updating the corresponding properties:
 
