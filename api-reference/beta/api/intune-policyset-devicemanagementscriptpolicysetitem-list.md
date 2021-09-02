@@ -2,7 +2,7 @@
 title: "List deviceManagementScriptPolicySetItems"
 description: "List properties and relationships of the deviceManagementScriptPolicySetItem objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

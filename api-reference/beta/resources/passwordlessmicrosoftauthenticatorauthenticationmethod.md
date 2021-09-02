@@ -2,7 +2,7 @@
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type"
 description: "A representation of a Microsoft Authenticator Passwordless Phone Sign-in method registered to a user."
 author: "mmcla"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

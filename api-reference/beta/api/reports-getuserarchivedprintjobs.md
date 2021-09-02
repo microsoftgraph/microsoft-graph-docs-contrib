@@ -2,7 +2,7 @@
 title: "reports: getUserArchivedPrintJobs"
 description: Get a list of archived print jobs for a particular user.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

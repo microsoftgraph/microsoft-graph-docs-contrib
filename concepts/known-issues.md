@@ -2,7 +2,7 @@
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Known issues with Microsoft Graph
@@ -131,10 +131,6 @@ In the meantime, to unblock development and testing you can use the following wo
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
 ## Contacts
-
-### Organization contacts available in only beta
-
-Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
 
 ### Default contacts folder
 

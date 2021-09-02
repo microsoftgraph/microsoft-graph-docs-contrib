@@ -2,7 +2,7 @@
 title: "participant resource type"
 description: "Represents the participant type."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

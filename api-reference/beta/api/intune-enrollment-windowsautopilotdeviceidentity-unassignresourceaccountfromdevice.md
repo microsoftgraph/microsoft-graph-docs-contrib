@@ -2,7 +2,7 @@
 title: "unassignResourceAccountFromDevice action"
 description: "Unassigns the resource account from an Autopilot device."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

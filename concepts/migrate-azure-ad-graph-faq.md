@@ -2,7 +2,7 @@
 title: "Azure Active Directory (Azure AD) Graph to Microsoft Graph migration FAQ"
 description: "Azure Active Directory (Azure AD) Graph to Microsoft Graph migration FAQ."
 author: "FaithOmbongi"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 

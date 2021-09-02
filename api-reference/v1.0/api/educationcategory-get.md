@@ -2,7 +2,7 @@
 title: "Get educationCategory"
 description: "Retrieve a category object."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "remoteAssistanceSessionType enum type"
 description: "Type of the remote assist session that was held. Possible values are: `viewOnly`, `fullControl`"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

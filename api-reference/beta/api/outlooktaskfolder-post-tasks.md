@@ -2,7 +2,7 @@
 title: "Create outlookTask"
 description: "Create an Outlook task in the specified task folder."
 author: "mashriv"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

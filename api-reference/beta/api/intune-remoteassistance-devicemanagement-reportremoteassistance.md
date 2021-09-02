@@ -2,7 +2,7 @@
 title: "reportRemoteAssistance action"
 description: "A post call to submit the reporting payload"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

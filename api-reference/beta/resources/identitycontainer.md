@@ -1,7 +1,7 @@
 ---
 title: "identityContainer resource type"
 description: "Represents the entry point to different features in External Identities for both Azure Active Directory (Azure AD) and Azure AD B2C tenants."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
 author: "namkedia"

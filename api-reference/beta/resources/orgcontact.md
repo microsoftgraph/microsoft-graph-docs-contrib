@@ -1,7 +1,7 @@
 ---
 title: "orgContact resource type"
 description: "Here is a JSON representation of the resource"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

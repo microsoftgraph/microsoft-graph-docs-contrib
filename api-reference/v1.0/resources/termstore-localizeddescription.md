@@ -2,7 +2,7 @@
 title: "localizedDescription resource type"
 description: "Represents the localized description used to describe a term in the term store."
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "taxonomy"
 doc_type: resourcePageType
 ---

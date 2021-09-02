@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationAzureAdTrustType enum type"
 description: "Required AAD Trust Type"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

@@ -3,7 +3,7 @@ author: daspek
 description: "The presence of the RenameAction resource on an itemActivity indicates that the activity renamed an item."
 ms.date: 09/14/2017
 title: RenameAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

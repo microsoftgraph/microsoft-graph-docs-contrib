@@ -1,7 +1,7 @@
 ---
 title: "Use app-only authentication with the Microsoft Graph PowerShell SDK"
 description: "Learn how to use app-only authentication to enable non-interactive scenarios with the Microsoft Graph PowerShell SDK."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
 ---
 

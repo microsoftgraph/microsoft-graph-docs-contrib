@@ -2,7 +2,7 @@
 title: "Update windowsFeatureUpdateProfile"
 description: "Update the properties of a windowsFeatureUpdateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

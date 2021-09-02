@@ -2,7 +2,7 @@
 title: "Delete userExperienceAnalyticsBaseline"
 description: "Deletes a userExperienceAnalyticsBaseline."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
