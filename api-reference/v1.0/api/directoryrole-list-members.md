@@ -2,7 +2,7 @@
 title: "List members of a directory role"
 description: "Retrieve the list of principals that are assigned to the directory role."
 author: "abhijeetsinha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

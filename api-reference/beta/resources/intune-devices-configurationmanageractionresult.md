@@ -2,7 +2,7 @@
 title: "configurationManagerActionResult resource type"
 description: "Result of the ConfigurationManager action"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

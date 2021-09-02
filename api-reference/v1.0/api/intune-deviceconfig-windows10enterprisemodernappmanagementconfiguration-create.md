@@ -2,7 +2,7 @@
 title: "Create windows10EnterpriseModernAppManagementConfiguration"
 description: "Create a new windows10EnterpriseModernAppManagementConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "win32LobAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Win32 LOB mobile app to a group."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

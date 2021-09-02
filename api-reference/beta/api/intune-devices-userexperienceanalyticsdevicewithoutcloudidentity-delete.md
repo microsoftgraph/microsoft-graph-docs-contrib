@@ -2,7 +2,7 @@
 title: "Delete userExperienceAnalyticsDeviceWithoutCloudIdentity"
 description: "Deletes a userExperienceAnalyticsDeviceWithoutCloudIdentity."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

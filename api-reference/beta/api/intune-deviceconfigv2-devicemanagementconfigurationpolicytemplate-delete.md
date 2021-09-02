@@ -2,7 +2,7 @@
 title: "Delete deviceManagementConfigurationPolicyTemplate"
 description: "Deletes a deviceManagementConfigurationPolicyTemplate."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

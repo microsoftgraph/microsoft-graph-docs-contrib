@@ -2,7 +2,7 @@
 title: "Delete groupPolicyUploadedCategory"
 description: "Deletes a groupPolicyUploadedCategory."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

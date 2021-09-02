@@ -2,7 +2,7 @@
 title: "appListType enum type"
 description: "Possible values of the compliance app list."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

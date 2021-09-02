@@ -2,7 +2,7 @@
 title: "List deviceAppManagementTasks"
 description: "List properties and relationships of the deviceAppManagementTask objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

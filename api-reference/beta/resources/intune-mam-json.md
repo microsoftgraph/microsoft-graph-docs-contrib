@@ -2,7 +2,7 @@
 title: "Json resource type"
 description: "Represents data returned in JSON format"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

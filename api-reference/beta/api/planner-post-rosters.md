@@ -2,7 +2,7 @@
 title: "Create plannerRoster"
 description: "Create a new plannerRoster object."
 author: "tarkansevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: apiPageType
 ---

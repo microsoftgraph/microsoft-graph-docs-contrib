@@ -2,7 +2,7 @@
 title: "Create mobileThreatDefenseConnector"
 description: "Create a new mobileThreatDefenseConnector object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

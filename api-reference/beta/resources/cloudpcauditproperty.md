@@ -2,7 +2,7 @@
 title: "cloudPcAuditProperty resource type"
 description: "Represents the audit property. This shows the edited property name, the old value, and the new value."
 author: "ecmadao"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---

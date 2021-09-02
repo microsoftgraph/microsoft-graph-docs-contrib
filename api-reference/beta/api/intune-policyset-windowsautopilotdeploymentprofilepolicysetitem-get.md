@@ -2,7 +2,7 @@
 title: "Get windowsAutopilotDeploymentProfilePolicySetItem"
 description: "Read properties and relationships of the windowsAutopilotDeploymentProfilePolicySetItem object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

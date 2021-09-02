@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "site: getApplicableContentTypesForList"
 description: "Get site content types that can be added to a list."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

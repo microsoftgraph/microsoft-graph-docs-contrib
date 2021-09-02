@@ -2,7 +2,7 @@
 title: "windows81TrustedRootCertificate resource type"
 description: "Windows 8.1 Trusted Certificate configuration profile"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

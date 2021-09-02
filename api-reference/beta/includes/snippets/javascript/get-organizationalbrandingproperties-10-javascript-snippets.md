@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let string = await client.api('/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/signInPageText')
+let organizationalBrandingLocalization = await client.api('/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/signInPageText')
 	.version('beta')
 	.get();
 

@@ -1,7 +1,7 @@
 ---
 title: "Enabling human-centric notification experiences using Microsoft Graph notifications "
 description: "The Microsoft Graph notifications platform provides a human-centric approach that gives you the ability to target your users across any and all device endpoints."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "notifications"
 ms.custom: scenarios:getting-started
 author: "merzink"

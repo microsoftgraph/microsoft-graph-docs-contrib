@@ -1,7 +1,7 @@
 ---
 title: "subscribedSku resource type"
 description: "Contains information about a service SKU that a company is subscribed to."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "SumitParikh"
 ms.prod: "directory-management"
 doc_type: resourcePageType

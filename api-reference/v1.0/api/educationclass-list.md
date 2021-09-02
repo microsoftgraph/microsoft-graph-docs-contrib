@@ -2,7 +2,7 @@
 title: "List educationClasses"
 description: "Get a list of the educationClass objects and their properties."
 author: "mlafleur"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

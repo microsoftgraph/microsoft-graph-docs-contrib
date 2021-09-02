@@ -2,7 +2,7 @@
 title: "Update deviceAndAppManagementAssignmentFilter"
 description: "Update the properties of a deviceAndAppManagementAssignmentFilter object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

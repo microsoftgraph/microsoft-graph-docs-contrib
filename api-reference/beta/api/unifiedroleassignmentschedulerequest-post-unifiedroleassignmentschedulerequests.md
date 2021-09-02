@@ -2,7 +2,7 @@
 title: "Create unifiedRoleAssignmentScheduleRequest"
 description: "Create a new unifiedRoleAssignmentScheduleRequest object."
 author: "shauliu1"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Delete userExperienceAnalyticsNotAutopilotReadyDevice"
 description: "Deletes a userExperienceAnalyticsNotAutopilotReadyDevice."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

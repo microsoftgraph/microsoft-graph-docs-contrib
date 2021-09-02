@@ -2,7 +2,7 @@
 title: "Assign reviewers to your access review using the Microsoft Graph API"
 description: "Learn how to use the access reviews API in Microsoft Graph to assign access reviewers."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---

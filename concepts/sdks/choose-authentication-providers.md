@@ -1,7 +1,7 @@
 ---
 title: "Choose a Microsoft Graph authentication provider"
 description: "Learn how to choose scenario-specific authentication providers for your application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: MichaelMainer
 ---
 

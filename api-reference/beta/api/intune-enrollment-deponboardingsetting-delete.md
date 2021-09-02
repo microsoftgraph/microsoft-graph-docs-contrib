@@ -2,7 +2,7 @@
 title: "Delete depOnboardingSetting"
 description: "Deletes a depOnboardingSetting."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
