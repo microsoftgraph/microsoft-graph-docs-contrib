@@ -342,7 +342,7 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 
 ### Azure AD activity reports
 
-When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you may still encounter an error message similar to the following:
+When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you might still encounter an error message similar to the following:
 
 ```json
 {
@@ -357,9 +357,9 @@ When you have a valid Azure AD Premium license and call the [directoryAudit](/gr
     }
 }
 ```
-This error may also occur when retrieving the **signInActivity** property of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource, for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
+This error might also occur when retrieving the **signInActivity** property of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource; for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
 
-This error is because of intermittent license check failures which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required once the issue is resolved.
+This error is due to intermittent license check failures, which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required when the issue is resolved.
 
 
 ## Teamwork (Microsoft Teams)
