@@ -29,46 +29,27 @@ Inherits from [organizationalBrandingProperties](../resources/organizationalbran
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List organizationalBrandings](../api/organizationalbranding-list.md)|[organizationalBranding](../resources/organizationalbranding.md) collection|Get a list of the [organizationalBranding](../resources/organizationalbranding.md) objects and their properties.|
-|[Create organizationalBranding](../api/organizationalbranding-create.md)|[organizationalBranding](../resources/organizationalbranding.md)|Create a new [organizationalBranding](../resources/organizationalbranding.md) object.|
+|[List organizationalBrandings](../api/organizationalbranding-list-localizations.md)|[organizationalBranding](../resources/organizationalbrandinglocalization.md) collection|Get a list of the [organizationalBranding](../resources/organizationalbrandinglocalization.md) objects and their properties.|
+|[Create organizationalBranding](../api/organizationalbranding-post-localizations.md)|[organizationalBranding](../resources/organizationalbrandinglocalization.md)|Create a new [organizationalBranding](../resources/organizationalbrandinglocalization.md) object.|
 |[Get organizationalBranding](../api/organizationalbranding-get.md)|[organizationalBranding](../resources/organizationalbranding.md)|Read the properties and relationships of an [organizationalBranding](../resources/organizationalbranding.md) object.|
 |[Update organizationalBranding](../api/organizationalbranding-update.md)|[organizationalBranding](../resources/organizationalbranding.md)|Update the properties of an [organizationalBranding](../resources/organizationalbranding.md) object.|
-|[Delete organizationalBranding](../api/organizationalbranding-delete.md)|None|Deletes an [organizationalBranding](../resources/organizationalbranding.md) object.|
-|[List localizations](../api/organizationalbranding-list-localizations.md)|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) collection|Get the organizationalBrandingLocalization resources from the localizations navigation property.|
-|[Create organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md)|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md)|Create a new organizationalBrandingLocalization object.|
+|[Delete organizationalBranding](../api/organizationalbranding-delete-localizations.md)|None|Deletes an [organizationalBranding](../resources/organizationalbrandinglocalization.md) object.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|backgroundColor|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|backgroundImage|Stream|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|backgroundImageRelativeUrl|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|bannerLogo|Stream|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|bannerLogoRelativeUrl|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|cdnList|String collection|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|customAccountResetCredentialsUrl|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|customCannotAccessYourAccountText|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|customCannotAccessYourAccountUrl|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|customForgotMyPasswordText|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|customPrivacyAndCookiesText|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|customPrivacyAndCookiesUrl|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|customResetItNowText|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|customTermsOfUseText|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|customTermsOfUseUrl|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|favicon|Stream|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|faviconRelativeUrl|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|headerBackgroundColor|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|id|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|loginPageTextVisibilitySettings|[loginPageTextVisibilitySettings](../resources/loginpagetextvisibilitysettings.md)|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|signInPageText|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|squareLogo|Stream|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|squareLogoRelativeUrl|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
-|usernameHintText|String|**TODO: Add Description** Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|backgroundColor|String| Color that will appear in place of the background image in low-bandwidth connections. The primary color of your banner logo or your organization color is recommended to be used here. Specify this in hexadecimal (for example, white is #FFFFFF). Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
+|backgroundImage|Stream| Image that appears as the background of the sign in page. .png or .jpg not larger than 1920x1080 and smaller than 300kb. A smaller image will reduce bandwidth requirements and make page loads more performant. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
+|bannerLogo|Stream| A banner version of your company logo which appears appears on the sign-in page. .png or .jpg no larger than 36x245px. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
+|id|String| This is an id, inherited from microsoft.graph.entity, is the locale specifying the ISO 639 standard for language, for example English is "en-us" or "en". Going forward if we expose functionality to have multiple brandings for one locale, this can be changed. Note that id for Default /branding is always '0' until we have keyless singletons. Read-only. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
+|signInPageText|String| Text that appears at the bottom of the sign-in box. You can use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1024 characters. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
+|squareLogo|Stream| Square version of your company logo. This appears in Windows 10 out-of-box (OOBE) experiences and when Windows Autopilot is enabled for deployment. .png or .jpg no larger than 240x240px and no more than 10kb in size. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
+|usernameHintText|String| String that shows as the hint in the username textbox on the sign in screen. This text must be Unicode, without links or code, and can't exceed 64 characters. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|localizations|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) collection|**TODO: Add Description**|
+|localizations|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) collection|Add different branding based on locale|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -86,30 +67,9 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "backgroundColor": "String",
   "backgroundImage": "Stream",
-  "backgroundImageRelativeUrl": "String",
   "bannerLogo": "Stream",
-  "bannerLogoRelativeUrl": "String",
-  "cdnList": [
-    "String"
-  ],
   "signInPageText": "String",
   "squareLogo": "Stream",
-  "squareLogoRelativeUrl": "String",
-  "usernameHintText": "String",
-  "customAccountResetCredentialsUrl": "String",
-  "customCannotAccessYourAccountText": "String",
-  "customCannotAccessYourAccountUrl": "String",
-  "customForgotMyPasswordText": "String",
-  "customPrivacyAndCookiesText": "String",
-  "customPrivacyAndCookiesUrl": "String",
-  "customResetItNowText": "String",
-  "customTermsOfUseText": "String",
-  "customTermsOfUseUrl": "String",
-  "favicon": "Stream",
-  "faviconRelativeUrl": "String",
-  "headerBackgroundColor": "String",
-  "loginPageTextVisibilitySettings": {
-    "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
-  }
+  "usernameHintText": "String"
 }
 ```
