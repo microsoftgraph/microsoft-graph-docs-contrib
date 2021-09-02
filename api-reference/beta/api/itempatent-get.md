@@ -1,7 +1,7 @@
 ---
 title: "Get itemPatent"
 description: "Read the properties and relationships of an itemPatent object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType

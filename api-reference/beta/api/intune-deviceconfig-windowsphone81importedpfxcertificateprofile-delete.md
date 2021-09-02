@@ -2,7 +2,7 @@
 title: "Delete windowsPhone81ImportedPFXCertificateProfile"
 description: "Deletes a windowsPhone81ImportedPFXCertificateProfile."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Create userExperienceAnalyticsScoreHistory"
 description: "Create a new userExperienceAnalyticsScoreHistory object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

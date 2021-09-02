@@ -1,7 +1,7 @@
 ---
 title: "assignedLabel resource type"
 description: "Represents a sensitivity label assigned to a Microsoft 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General)."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: resourcePageType

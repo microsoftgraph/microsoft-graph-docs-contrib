@@ -2,7 +2,7 @@
 title: "Delete comanagementEligibleDevice"
 description: "Deletes a comanagementEligibleDevice."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

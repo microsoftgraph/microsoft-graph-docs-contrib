@@ -2,7 +2,7 @@
 title: "Create notes"
 description: "Create a new notes object."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
 ---

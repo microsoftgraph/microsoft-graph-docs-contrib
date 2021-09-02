@@ -2,7 +2,7 @@
 title: "Create userExperienceAnalyticsResourcePerformance"
 description: "Create a new userExperienceAnalyticsResourcePerformance object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

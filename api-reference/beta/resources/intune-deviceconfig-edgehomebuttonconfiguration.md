@@ -2,7 +2,7 @@
 title: "edgeHomeButtonConfiguration resource type"
 description: "The home button configuration base class used to identify the available options"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

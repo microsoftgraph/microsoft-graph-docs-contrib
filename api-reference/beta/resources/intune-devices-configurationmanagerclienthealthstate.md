@@ -2,7 +2,7 @@
 title: "configurationManagerClientHealthState resource type"
 description: "Configuration manager client health state"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Update windowsQualityUpdateProfileAssignment"
 description: "Update the properties of a windowsQualityUpdateProfileAssignment object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

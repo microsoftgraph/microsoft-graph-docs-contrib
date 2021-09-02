@@ -2,7 +2,7 @@
 title: "Update deviceManagementScriptPolicySetItem"
 description: "Update the properties of a deviceManagementScriptPolicySetItem object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update deviceCategory"
 description: "Update the properties of a deviceCategory object."
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

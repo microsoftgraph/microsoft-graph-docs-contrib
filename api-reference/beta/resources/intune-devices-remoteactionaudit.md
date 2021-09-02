@@ -2,7 +2,7 @@
 title: "remoteActionAudit resource type"
 description: "Report of remote actions initiated on the devices belonging to a certain tenant."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

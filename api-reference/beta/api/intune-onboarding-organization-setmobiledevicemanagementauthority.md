@@ -2,7 +2,7 @@
 title: "setMobileDeviceManagementAuthority action"
 description: "Set mobile device management authority"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

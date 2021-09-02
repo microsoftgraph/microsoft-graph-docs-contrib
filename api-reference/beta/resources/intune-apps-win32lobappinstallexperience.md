@@ -2,7 +2,7 @@
 title: "win32LobAppInstallExperience resource type"
 description: "Contains installation experience properties for a Win32 App"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

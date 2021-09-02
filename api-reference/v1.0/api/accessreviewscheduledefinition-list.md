@@ -2,7 +2,7 @@
 title: "List accessReviewScheduleDefinitions"
 description: "Get a list of the accessReviewScheduleDefinition objects and their properties."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

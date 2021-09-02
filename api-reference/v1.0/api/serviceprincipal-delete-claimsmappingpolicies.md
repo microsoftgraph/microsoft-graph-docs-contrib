@@ -1,7 +1,7 @@
 ---
 title: "Remove claimsMappingPolicy"
 description: "Remove a claimsMappingPolicy from a servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "paulgarn"
 ms.prod: "applications"
 doc_type: "apiPageType"

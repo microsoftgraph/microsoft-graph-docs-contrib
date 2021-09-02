@@ -2,7 +2,7 @@
 title: "Delete iosLobAppProvisioningConfigurationPolicySetItem"
 description: "Deletes a iosLobAppProvisioningConfigurationPolicySetItem."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

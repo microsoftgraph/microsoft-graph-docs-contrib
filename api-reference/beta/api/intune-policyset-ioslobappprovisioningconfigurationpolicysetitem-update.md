@@ -2,7 +2,7 @@
 title: "Update iosLobAppProvisioningConfigurationPolicySetItem"
 description: "Update the properties of a iosLobAppProvisioningConfigurationPolicySetItem object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

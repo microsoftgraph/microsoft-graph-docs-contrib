@@ -34,7 +34,7 @@ GET /devices/{objectId}/usageRights
 ```
 
 ## Optional query parameters
-This API supports the $filter [OData query parameter](/graph/query-parameters). The following patterns of $filter are supported:
+This API supports the `$filter` [OData query parameter](/graph/query-parameters). The following patterns of `$filter` are supported:
 
 - $filter = state eq 'value'
 - $filter = serviceIdentifier eq 'value'

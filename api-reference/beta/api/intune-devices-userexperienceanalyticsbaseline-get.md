@@ -2,7 +2,7 @@
 title: "Get userExperienceAnalyticsBaseline"
 description: "Read properties and relationships of the userExperienceAnalyticsBaseline object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

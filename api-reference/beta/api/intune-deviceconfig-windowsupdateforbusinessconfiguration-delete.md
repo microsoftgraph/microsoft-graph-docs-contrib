@@ -2,7 +2,7 @@
 title: "Delete windowsUpdateForBusinessConfiguration"
 description: "Deletes a windowsUpdateForBusinessConfiguration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

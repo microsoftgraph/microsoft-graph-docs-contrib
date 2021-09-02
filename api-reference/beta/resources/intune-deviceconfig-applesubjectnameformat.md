@@ -2,7 +2,7 @@
 title: "appleSubjectNameFormat enum type"
 description: "Subject Name Format Options for Apple devices."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

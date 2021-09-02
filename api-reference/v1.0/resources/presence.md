@@ -2,7 +2,7 @@
 title: "presence resource type"
 description: "Contains information about a user's presence, including their availability and user activity."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
 ---

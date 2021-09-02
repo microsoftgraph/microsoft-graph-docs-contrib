@@ -1,7 +1,7 @@
 ---
 title: "FormatProtection resource type"
 description: "Represents the format protection of a range object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 author: "ruoyingl"

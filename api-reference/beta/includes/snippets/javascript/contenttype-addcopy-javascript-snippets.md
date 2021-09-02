@@ -14,7 +14,7 @@ const contentType = {
   contentType: 'https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101'
 };
 
-await client.api('/sites/id/lists/{list-id}/contentTypes/addCopy')
+await client.api('/sites/{site-id}/lists/{list-id}/contentTypes/addCopy')
 	.version('beta')
 	.post(contentType);
 

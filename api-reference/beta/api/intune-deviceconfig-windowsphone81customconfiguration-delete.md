@@ -2,7 +2,7 @@
 title: "Delete windowsPhone81CustomConfiguration"
 description: "Deletes a windowsPhone81CustomConfiguration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

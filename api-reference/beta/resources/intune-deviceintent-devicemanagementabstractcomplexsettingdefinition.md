@@ -2,7 +2,7 @@
 title: "deviceManagementAbstractComplexSettingDefinition resource type"
 description: "Entity representing the defintion for an abstract complex setting"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Delete managedDeviceMobileAppConfigurationPolicySetItem"
 description: "Deletes a managedDeviceMobileAppConfigurationPolicySetItem."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
