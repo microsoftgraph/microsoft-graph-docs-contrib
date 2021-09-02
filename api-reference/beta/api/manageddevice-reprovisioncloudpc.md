@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: reprovisionCloudPc"
-description: "Reprovision Cloud PC with Intune managed device ID. "
+description: "Reprovision Cloud PC with an Intune managed device ID. "
 author: "RuiHou105"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reprovision a Cloud PC with Intune [managed device](../resources/cloudpc.md) ID.
+Reprovision a Cloud PC with an Intune [managed device](../resources/cloudpc.md) ID.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
