@@ -132,10 +132,6 @@ In the meantime, to unblock development and testing you can use the following wo
     ```
 ## Contacts
 
-### Organization contacts available in only beta
-
-Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
-
 ### Default contacts folder
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
