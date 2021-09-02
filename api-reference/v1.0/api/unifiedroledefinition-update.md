@@ -1,7 +1,6 @@
 ---
 title: "Update unifiedRoleDefinition"
 description: "Update the properties of a unifiedRoleDefinition object."
-localization_priority: Normal
 ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
@@ -57,7 +56,7 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `204 No response` response code and an updated [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
 
 ## Example
 
@@ -103,30 +102,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 No response
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions/$entity",
-    "id": "d5eec5e0-6992-4c6b-b430-0f833f1a815a",
-    "description": "Update basic properties of application registrations",
-    "displayName": "Application Registration Support Administrator",
-    "isBuiltIn": false,
-    "isEnabled": true,
-    "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
-    "version": null,
-    "rolePermissions": [
-        {
-            "allowedResourceActions": [
-                "microsoft.directory/applications/standard/read",
-				"microsoft.directory/applications/basic/update"
-            ],
-            "condition": null
-        }
-    ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom",
-    "inheritsPermissionsFrom": []
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

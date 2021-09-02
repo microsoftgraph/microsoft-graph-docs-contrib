@@ -1,7 +1,6 @@
 ---
 title: "List unifiedRoleAssignments"
 description: "Get a list of unifiedRoleAssignment objects."
-localization_priority: Normal
 ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"

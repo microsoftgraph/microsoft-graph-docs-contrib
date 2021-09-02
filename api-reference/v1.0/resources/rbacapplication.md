@@ -1,7 +1,6 @@
 ---
 title: "rbacApplication resource type"
 description: "Container for role definitions and role assignments for Microsoft 365 role-based access control (RBAC) providers"
-localization_priority: Normal
 ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
@@ -42,4 +41,4 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.rbacApplication"
 }
-
+```

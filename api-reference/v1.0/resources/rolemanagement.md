@@ -1,7 +1,6 @@
 ---
 title: "roleManagement resource type"
 description: "Microsoft 365 role-based access control (RBAC) resource."
-localization_priority: Normal
 ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
@@ -45,3 +44,4 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.roleManagement"
 }
+```

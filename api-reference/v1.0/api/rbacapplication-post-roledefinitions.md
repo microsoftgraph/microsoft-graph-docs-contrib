@@ -1,7 +1,6 @@
 ---
 title: "Create unifiedRoleDefinition"
 description: "Create a new unifiedRoleDefinition object."
-localization_priority: Normal
 ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
