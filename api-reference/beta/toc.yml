@@ -11079,6 +11079,15 @@ items:
               href: api/microsoftauthenticatorauthenticationmethod-get.md
             - name: Delete
               href: api/microsoftauthenticatorauthenticationmethod-delete.md
+          - name: Software OATH token
+            href: resources/softwareOathAuthenticationMethod.md
+            items:
+            - name: List
+              href: api/authentication-list-softwareoathmethods.md
+            - name: Get
+              href: api/softwareOathAuthenticationMethod-get.md
+            - name: Delete
+              href: api/softwareOathAuthenticationMethod-delete.md
           - name: Microsoft Authenticator Passwordless Phone Sign-In (deprecated)
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
             items:
