@@ -1,7 +1,7 @@
 ---
 title: "plannerCategoryDescriptions resource type"
 description: "Represents the descriptive labels for the categories that have been defined for a plan."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType

@@ -2,7 +2,7 @@
 title: "participantMixerLevel resource type"
 description: "Configuration of mixer levels for given audio participant"
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

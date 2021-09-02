@@ -1,7 +1,7 @@
 ---
 title: "Get approval"
 description: "Retrieve the properties of an approval object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sbounouh"
 ms.prod: "governance"
 doc_type: "apiPageType"

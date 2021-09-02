@@ -2,7 +2,7 @@
 title: "List schools"
 description: "Retrieve a list of schools for a user."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

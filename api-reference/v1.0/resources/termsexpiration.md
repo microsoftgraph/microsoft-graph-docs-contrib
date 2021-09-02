@@ -1,7 +1,7 @@
 ---
 title: "termsExpiration resource type"
 description: "Provides additional settings for the scheduled expiration of the agreement."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 author: "raprakasMSFT"
 doc_type: "resourcePageType"

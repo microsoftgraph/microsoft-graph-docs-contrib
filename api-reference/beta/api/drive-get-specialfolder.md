@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: "Use the special collection to access a special folder by name."
 title: Get Special Folders
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---

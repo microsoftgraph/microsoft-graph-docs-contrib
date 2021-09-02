@@ -1,7 +1,7 @@
 ---
 title: "chatMessage: delta"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. By using delta query, you can get new or updated messages in a channel."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"

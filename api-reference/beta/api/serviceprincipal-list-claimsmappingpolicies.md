@@ -1,7 +1,7 @@
 ---
 title: "List assigned claimsMappingPolicies"
 description: "List claimsMappingPolicies that are assigned to a servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

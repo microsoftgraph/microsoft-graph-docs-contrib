@@ -1,7 +1,7 @@
 ---
 title: "Update ipnamedlocation"
 description: "Update the properties of an ipNamedLocation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

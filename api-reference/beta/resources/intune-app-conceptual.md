@@ -2,7 +2,7 @@
 title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 ---
 
@@ -121,10 +121,17 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app supersedence type](intune-apps-mobileappsupersedencetype.md)
 - [Mobile contained app](intune-apps-mobilecontainedapp.md)
 - [Mobile LOB app](intune-apps-mobilelobapp.md)
+- [Office client checkin status](intune-cirrus-officeclientcheckinstatus.md)
+- [Office client configuration](intune-cirrus-officeclientconfiguration.md)
+- [Office client configuration assignment](intune-cirrus-officeclientconfigurationassignment.md)
+- [Office configuration](intune-cirrus-officeconfiguration.md)
+- [Office configuration assignment target](intune-cirrus-officeconfigurationassignmenttarget.md)
+- [Office configuration group assignment target](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [Office product id](intune-apps-officeproductid.md)
 - [Office suite app](intune-apps-officesuiteapp.md)
 - [Office suite install progress display level](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Office update channel](intune-apps-officeupdatechannel.md)
+- [Office user checkin summary](intune-cirrus-officeusercheckinsummary.md)
 - [Resultant app state](intune-apps-resultantappstate.md)
 - [Resultant app state detail](intune-apps-resultantappstatedetail.md)
 - [Symantec code signing certificate](intune-apps-symanteccodesigningcertificate.md)
@@ -168,6 +175,8 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows microsoft edge app](intune-apps-windowsmicrosoftedgeapp.md)
 - [Windows minimum operating system](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows mobile MSI](intune-apps-windowsmobilemsi.md)
+- [Windows office client configuration](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Windows office client security configuration](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Windows package information](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)
 - [Windows Phone 8.1 AppX bundle](intune-apps-windowsphone81appxbundle.md)

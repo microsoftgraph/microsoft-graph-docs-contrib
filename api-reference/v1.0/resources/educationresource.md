@@ -1,7 +1,7 @@
 ---
 title: "educationResource resource type"
 description: "A superclass for all resource objects in the system."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: resourcePageType

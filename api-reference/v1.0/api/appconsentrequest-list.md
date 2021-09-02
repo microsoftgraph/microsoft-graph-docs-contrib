@@ -2,7 +2,7 @@
 title: "List appConsentRequests"
 description: "Retrieve appConsentRequest objects and their properties"
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All.|
+|Application|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 
 ## HTTP request
 

@@ -1,7 +1,7 @@
 ---
 title: "Update bookingcustomer"
 description: "Update the properties of a bookingCustomer object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType

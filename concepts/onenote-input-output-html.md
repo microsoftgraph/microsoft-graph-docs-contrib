@@ -2,7 +2,7 @@
 title: "Input and output HTML in OneNote pages"
 description: "The HTML that defines the page content and structure when you create or update a OneNote page is called *input HTML*. "
 author: "jewan-microsoft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "onenote"
 ---
 

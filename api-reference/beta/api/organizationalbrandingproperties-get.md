@@ -1,7 +1,7 @@
 ---
 title: "Get organizationalBrandingProperties"
 description: "Retrieve the properties and relationships of an organizationalBrandingProperties object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "AlexanderMars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

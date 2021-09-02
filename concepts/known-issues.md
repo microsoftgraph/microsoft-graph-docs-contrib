@@ -2,7 +2,7 @@
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Known issues with Microsoft Graph
@@ -132,10 +132,6 @@ In the meantime, to unblock development and testing you can use the following wo
     ```
 ## Contacts
 
-### Organization contacts available in only beta
-
-Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
-
 ### Default contacts folder
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
@@ -261,6 +257,10 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
+### Removing a group owner also removes the user as a group member
+
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
 ## Identity and access | Application and service principal APIs
 

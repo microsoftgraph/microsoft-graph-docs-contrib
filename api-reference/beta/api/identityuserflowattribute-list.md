@@ -1,7 +1,7 @@
 ---
 title: "List identityUserFlowAttributes"
 description: "Retrieve a list of identityUserFlowAttribute objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
