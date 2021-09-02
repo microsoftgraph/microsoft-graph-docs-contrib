@@ -9624,6 +9624,14 @@ items:
             href: api/cloudpc-reprovision.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Reprovision remote action
+            href: api/manageddevice-reprovisioncloudpc.md
+          - name: Bulk reprovision remote action
+            href: api/manageddevice-bulkreprovisioncloudpc.md
+          - name: Resize remote action
+            href: api/manageddevice-resizecloudpc.md
+          - name: Get remote action results
+            href: api/manageddevice-getcloudpcremoteactionresults.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
