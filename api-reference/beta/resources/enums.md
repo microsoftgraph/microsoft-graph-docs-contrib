@@ -683,6 +683,7 @@ Namespace: microsoft.graph
 |none|
 |studentsAndPublisher|
 |studentsAndTeamOwners|
+|studentsOnly|
 |unknownFutureValue|
 
 ### externalEmailOtpState values

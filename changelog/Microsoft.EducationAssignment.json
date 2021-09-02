@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "ed8faf2a-231c-40e5-b602-75b323cbac39",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "educationAddToCalendarOptions",
+          "ChangeType": "Change",
+          "Description": "Added the **studentsOnly** enumeration value.",
+          "Target": "educationAddToCalendarOptions"
+        },
+        {
+          "Id": "ed8faf2a-231c-40e5-b602-75b323cbac39",
+          "ApiChange": "Property",
+          "ChangedApiName": "addToCalendarAction",
+          "ChangeType": "Change",
+          "Description": "Added the **studentsOnly** value to **addToCalendarAction** property into the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "ed8faf2a-231c-40e5-b602-75b323cbac39",
+          "ApiChange": "Property",
+          "ChangedApiName": "addToCalendarAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **studentsOnly** value to **addToCalendarAction** property into the [educationAssignmentDefaults](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentDefaults"
+        }
+      ],
+      "Id": "ed8faf2a-231c-40e5-b602-75b323cbac39",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-02T15:35:00.000Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },    
+    {      
+      "ChangeList": [
+        {
           "Id": "ae957525-cd7b-4311-9a22-3374454f9251",
           "ApiChange": "EnumType",
           "ChangedApiName": "educationAddedStudentAction",
