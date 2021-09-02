@@ -13,27 +13,6 @@ To report a known issue, see the [Microsoft Graph support](https://developer.mic
 
 For information about the latest updates to the Microsoft Graph API, see the [Microsoft Graph changelog](changelog.md).
 
-## Azure AD activity reports
-
-When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you may still encounter an error message similar to the following:
-
-```json
-{
-    "error": {
-        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
-        "message": "Neither tenant is B2C or tenant doesn't have premium license",
-        "innerError": {
-            "date": "2021-09-02T17:15:30",
-            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
-            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
-        }
-    }
-}
-```
-This error may also occur when retrieving the **signInActivity** property of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource, for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
-
-This error is because of intermittent license check failures which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required once the issue is resolved.
-
 ## Bookings
 
 ### ErrorExceededFindCountLimit when querying bookingBusinesses
@@ -358,6 +337,30 @@ does not become part of the body of the resultant message draft.
 ### GET messages returns chats in Microsoft Teams
 
 In both the v1 and beta endpoints, the response of `GET /users/id/messages` includes the user's Microsoft Teams chats that occurred outside the scope of a team or channel. These chat messages have "IM" as their subject.
+
+## Reports
+
+### Azure AD activity reports
+
+When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you may still encounter an error message similar to the following:
+
+```json
+{
+    "error": {
+        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
+        "message": "Neither tenant is B2C or tenant doesn't have premium license",
+        "innerError": {
+            "date": "2021-09-02T17:15:30",
+            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
+            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
+        }
+    }
+}
+```
+This error may also occur when retrieving the **signInActivity** property of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource, for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
+
+This error is because of intermittent license check failures which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required once the issue is resolved.
+
 
 ## Teamwork (Microsoft Teams)
 
