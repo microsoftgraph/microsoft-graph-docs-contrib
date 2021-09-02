@@ -13,6 +13,27 @@ To report a known issue, see the [Microsoft Graph support](https://developer.mic
 
 For information about the latest updates to the Microsoft Graph API, see the [Microsoft Graph changelog](changelog.md).
 
+## Azure AD activity reports
+
+When you have a valid Azure AD Premium license and call the [directoryAudit](../api-reference/v1.0/resources/directoryaudit.md), [signIn](../api-reference/v1.0/resources/signin.md), or [provisioning](../api-reference/v1.0/resources/provisioningobjectsummary.md) Azure AD activity reports APIs, you may still encounter an error message similar to the following:
+
+```json
+{
+    "error": {
+        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
+        "message": "Neither tenant is B2C or tenant doesn't have premium license",
+        "innerError": {
+            "date": "2021-09-02T17:15:30",
+            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
+            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
+        }
+    }
+}
+```
+This error may also occur when retrieving the **signInActivity** property of the [user](../api-reference/beta/resources/user.md) resource, for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
+
+This error is because of intermittent license check failures which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required once the issue is resolved.
+
 ## Bookings
 
 ### ErrorExceededFindCountLimit when querying bookingBusinesses
