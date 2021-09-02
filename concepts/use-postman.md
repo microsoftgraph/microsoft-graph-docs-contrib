@@ -78,10 +78,10 @@ Because this is the first time you are running a request as a delegated authenti
 
 1. Hover over the **Delegated** folder, click the ellipsis, and select **Edit**
 1. Click the **Authorization** tab.
+1. In the **Configure New Token** section, click the **Configuration Options** tab. The **Grant type** must be set to `Authorization Code`.
 1. Scroll down on the right and click **Get New Access Token**.
 1. Sign in with your developer tenant administrator account.
 1. Click **Proceed**, and then click the **Use Token** button.
-1. On the botton right of the dialog, click **Update**.
 
 You now have a valid access token to use for delegated requests.
 
@@ -100,10 +100,10 @@ You have now successfully made a Microsoft Graph call using delegated authentica
 Because this is the first time you are running a request as a application authentication flow, you need to get an access token.
 
 1. Hover over the **Application** folder, click the ellipsis, and select **Edit**.
-1. Click the **Authorization** tab
+1. Click the **Authorization** tab.
+1. In the **Configure New Token** section, click the **Configuration Options** tab. The **Grant type** must be set to `Client Credentials`.
 1. Scroll down on the right side and click **Get New Access Token**.
 1. Click **Proceed**, and then click the **Use Token** button.
-1. On the bottom right of the dialog, click **Update**.
 
 You now have a valid access token to use for application requests.
 
