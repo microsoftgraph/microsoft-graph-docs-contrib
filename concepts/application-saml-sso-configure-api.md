@@ -488,7 +488,7 @@ Content-type: application/json
 #### Response
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
