@@ -36,7 +36,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |id|string|Unique ID of the user at risk.|
 |isDeleted|boolean|Indicates whether the user is deleted. Possible values are: `true`, `false`.|
 |isProcessing|boolean|Indicates whether a user's risky state is being processed by the backend.|
-|riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
+|riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |riskLevel|riskLevel| Level of the detected risky user. The possible values are `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.  |
 |riskState|riskState| State of the user's risk. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.  |
 |riskDetail|riskDetail| The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.  |

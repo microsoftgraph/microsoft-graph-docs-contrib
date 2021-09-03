@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 The **conditionalAccessRoot** resource is the entry point for the Conditional Access (CA) object model. It doesn't contain any usable properties.
 
 For more information on Conditional Access in Azure Active Directory, see [What is Conditional Access](/azure/active-directory/conditional-access/overview)?
@@ -29,9 +27,8 @@ None.
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|authenticationContextClassReferences|[authenticationContextClassReference](authenticationcontextclassreference.md) collection|Read-only. Nullable. Returns a collection of the specified authentication context class references.|
 |namedLocations|[namedLocation](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
-|policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access policies.|
+|policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access (CA) policies.|
 
 ## JSON representation
 
@@ -47,16 +44,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.conditionalAccessRoot"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "conditional access resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an IPv6 range using the CIDR notation.
+Represents an IPv6 range using the Classless Inter-Domain Routing (CIDR) notation.
 
 Inherits from [ipRange](../resources/iprange.md)
 
@@ -21,7 +21,7 @@ Inherits from [ipRange](../resources/iprange.md)
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|cidrAddress|String|IPv6 address in CIDR notation|
+|cidrAddress|String|IPv6 address in CIDR notation. Not nullable.|
 
 ## JSON representation
 
@@ -38,6 +38,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.iPv6CidrRange", 
   "cidrAddress": "String"
 }
 ```
