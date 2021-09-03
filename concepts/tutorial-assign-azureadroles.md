@@ -424,7 +424,7 @@ Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Us
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-assignaadroles-group_delete"
+  "name": "tutorial-assignaadroles-roleEligibilityScheduleRequests_revoke"
 }-->
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
@@ -443,7 +443,8 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": false
+  "truncated": true,
+  "@odata.type": "microsoft.graph.roleEligibilityScheduleRequests"
 } -->
 ```http
 HTTP/1.1 201 Created
