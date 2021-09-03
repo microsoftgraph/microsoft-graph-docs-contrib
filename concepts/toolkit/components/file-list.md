@@ -34,7 +34,7 @@ You can use several properties to customize the component.
 | item-path | itemPath | Item path of the folder (relative to the root). Default query is `/me/drive/root`. Provide `{drive-id}`, `{group-id}`, `{site-id}`, or `{user-id}` to query a specific location. |
 | page-size | pageSize | A number value to indicate the maximum number of files to render on each page. **Note:** `page-size` is not supported with `insight-type`. |
 | file-extensions | fileExtensions | An array of file extensions used to filter files to show. |
-| hide-more-files-button | hideMoreFilesButton | A boolean to indicate whether to show a button to render more files. |
+| hide-more-files-button | hideMoreFilesButton | Boolean to indicate whether to show a button to render more files. |
 | enable-file-upload | enableFileUpload | Boolean to enable or disable file upload functionality. The default value is `false`.  |
 | excluded-file-extensions | excludedFileExtensions | String array of file extensions to be excluded from file upload. Must also set the `enable-file-upload` attribute to `true`. |
 | max-file-size | maxFileSize | A number representing the maximum file upload size (KB). Must also set the `enable-file-upload` attribute to `true`. |
