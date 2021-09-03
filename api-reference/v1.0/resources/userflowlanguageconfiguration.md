@@ -2,7 +2,7 @@
 title: "userFlowLanguageConfiguration resource type"
 description: "Allows a user flow to support multiple languages."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "teamUnarchivedEventMessageDetail resource type"
 description: "Represents the details of an event message about an unarchived team."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

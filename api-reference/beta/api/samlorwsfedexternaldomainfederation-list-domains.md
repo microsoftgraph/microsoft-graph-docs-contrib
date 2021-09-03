@@ -2,7 +2,7 @@
 title: "List domains"
 description: "Get the list of all externalDomainName objects for a samlOrWsFedExternalDomainFederation."
 author: "namkedia"
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

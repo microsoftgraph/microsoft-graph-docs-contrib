@@ -2,7 +2,7 @@
 title: "cloudPcAuditActor resource type"
 description: "The audit actor represented by the Azure AD user and application associated with the audit event."
 author: "ecmadao"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---

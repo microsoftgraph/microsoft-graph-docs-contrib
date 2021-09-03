@@ -1,6 +1,100 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRole",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [privilegedRole](https://docs.microsoft.com/en-us/graph/api/resources/privilegedrole?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Target": "privilegedRole"
+        },
+        {
+          "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleAssignment",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [privilegedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/privilegedroleassignment?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Target": "privilegedRoleAssignment"
+        },
+        {
+          "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedRoleAssignmentRequest",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [privilegedRoleAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Target": "privilegedRoleAssignmentRequest"
+        },
+        {
+          "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedApproval",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [privilegedApproval](https://docs.microsoft.com/en-us/graph/api/resources/privilegedapproval?view=graph-rest-beta) resource and related operations and methods. Replaced it with resources and methods in the new [role management API](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-beta).",
+          "Target": "privilegedApproval"
+        }
+      ],
+      "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-01T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7242dfc2-28c7-48f1-adc2-d0f2b00824c2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "softwareOathAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [softwareOathAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta) resource and related operations and methods.",
+          "Target": "softwareOathAuthenticationMethod"
+        }
+      ],
+      "Id": "a43059f7-af45-4cb5-a279-bf226c45027b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-01T00:00:00.001Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+  },
+  {
+    "ChangeList": [
+      {
+          "Id": "479558a4-5491-4463-bf2f-4474590767db",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "appRoleAssignments",
+          "ChangeType": "Change",
+          "Description": "Added support for paging for the **appRoleAssignments** navigation property on the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource type. The **appRoleAssignments** navigation property returns app roles assigned directly to the service principal.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "479558a4-5491-4463-bf2f-4474590767db",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "appRoleAssignments",
+          "ChangeType": "Change",
+          "Description": "Added support for paging for the **appRoleAssignments** navigation property on the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource type. The **appRoleAssignments** navigation property returns app roles assigned to the user directly, or assigned to the user indirectly through a group that the user is a member of.",
+          "Target": "user"
+        },        
+        {
+          "Id": "479558a4-5491-4463-bf2f-4474590767db",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "appRoleAssignments",
+          "ChangeType": "Change",
+          "Description": "Added support for paging for the **appRoleAssignments** navigation property on the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource type. The **appRoleAssignments** navigation property returns app roles assigned directly to the group.",
+          "Target": "group"
+        }
+      ],
+      "Id": "479558a4-5491-4463-bf2f-4474590767db",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-27T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
     "ChangeList": [
      {
        "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
@@ -685,6 +779,100 @@
       "SubArea": "Identity and sign-in"
     },
     {
+          "ChangeList": [
+              {
+                  "Id": "1542fba3-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Property",
+                  "ChangedApiName": "registrationEnforcement",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **registrationEnforcement** property to the [authenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource.",
+                  "Target": "authenticationMethodsPolicy"
+              },
+              {
+                  "Id": "15455ff6-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "authenticationMethodsRegistrationCampaign",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [authenticationMethodsRegistrationCampaign](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRegistrationCampaign?view=graph-rest-beta) resource type.",
+                  "Target": "authenticationMethodsRegistrationCampaign"
+              },
+              {
+                  "Id": "1547d0ea-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "authenticationMethodsRegistrationCampaignIncludeTarget",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [authenticationMethodsRegistrationCampaignIncludeTarget](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRegistrationCampaignIncludeTarget?view=graph-rest-beta) resource type.",
+                  "Target": "authenticationMethodsRegistrationCampaignIncludeTarget"
+              },
+              {
+                  "Id": "154a24ee-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "excludeTarget",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [excludeTarget](https://docs.microsoft.com/en-us/graph/api/resources/excludeTarget?view=graph-rest-beta) resource type.",
+                  "Target": "excludeTarget"
+              },
+              {
+                  "Id": "154c88de-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "registrationEnforcement",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [registrationEnforcement](https://docs.microsoft.com/en-us/graph/api/resources/registrationEnforcement?view=graph-rest-beta) resource type.",
+                  "Target": "registrationEnforcement"
+              },
+              {
+                  "Id": "154ee88f-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Enum type",
+                  "ChangedApiName": "advancedConfigState",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **advancedConfigState** enumeration type.",
+                  "Target": "advancedConfigState"
+              }
+          ],
+          "Id": "15409990-8dbc-11eb-a57c-31dcdef91872",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2021-05-25T22:47:31.485Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Identity and sign-in"
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+                "ApiChange": "Resource",
+                "ChangedApiName": "selfSignedCertificate",
+                "ChangeType": "Addition",
+                "Description": "Added the [selfSignedCertificate](https://docs.microsoft.com/en-us/graph/api/resources/selfSignedCertificate?view=graph-rest-beta) resource type.",
+                "Target": "selfSignedCertificate"
+            }
+        ],
+        "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Directory management"
+    },
+    {
+        "ChangeList": [
+            {
+                "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+                "ApiChange": "Method",
+                "ChangedApiName": "addTokenSigningCertificate",
+                "ChangeType": "Addition",
+                "Description": "Added the [addTokenSigningCertificate](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+                "Target": "servicePrincipal"
+            }
+        ],
+        "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+        "WorkloadArea": "Applications",
+        "SubArea": ""
+      },
+      {
       "ChangeList": [
         {
           "Id": "3437c554-3f70-11eb-8081-2385ed998336",

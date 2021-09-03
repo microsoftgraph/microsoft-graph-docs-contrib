@@ -2,7 +2,7 @@
 title: "deviceInstallState resource type"
 description: "Contains properties for the installation state for a device."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

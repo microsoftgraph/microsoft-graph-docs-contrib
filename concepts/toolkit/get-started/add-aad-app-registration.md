@@ -1,7 +1,7 @@
 ---
 title: "Create an Azure Active Directory app"
 description: "Create an Azure Active Directory application registration for communicating with Microsoft 365"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: waldekmastykarz
 ---
 

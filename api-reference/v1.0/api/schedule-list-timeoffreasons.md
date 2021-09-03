@@ -2,7 +2,7 @@
 title: "List timeOffReasons"
 description: "Get the list of timeOffReasons in a schedule."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

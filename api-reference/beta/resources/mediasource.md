@@ -2,7 +2,7 @@
 author: MarcMroz
 description: "The mediaSource resource contains metadata about source of the media (audio or video) drive item."
 title: mediaSource resource type
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: "resourcePageType"
 ---

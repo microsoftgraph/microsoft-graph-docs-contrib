@@ -2,7 +2,7 @@
 title: "Update mobileDeviceManagementPolicy"
 description: "Update the properties of a mobile device management object."
 author: "ravennMSFT"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

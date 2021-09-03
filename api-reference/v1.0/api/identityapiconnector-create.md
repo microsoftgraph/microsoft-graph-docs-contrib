@@ -2,7 +2,7 @@
 title: "Create identityApiConnector"
 description: "Create a new identityApiConnector object."
 author: "nickgmicrosoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

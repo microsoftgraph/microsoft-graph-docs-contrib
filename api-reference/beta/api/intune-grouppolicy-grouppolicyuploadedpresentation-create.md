@@ -2,7 +2,7 @@
 title: "Create groupPolicyUploadedPresentation"
 description: "Create a new groupPolicyUploadedPresentation object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -86,7 +86,6 @@ Content-Length: 213
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

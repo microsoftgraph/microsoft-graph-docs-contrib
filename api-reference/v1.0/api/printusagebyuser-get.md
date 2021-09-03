@@ -2,7 +2,7 @@
 title: Get printUsageByUser
 description: Retrieve a user's usage summary for a particular time period.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

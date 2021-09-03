@@ -3,6 +3,66 @@
     {
       "ChangeList": [
         {
+          "Id": "d54aa4a2-6fdf-44fe-8e79-1cc1eab29939",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "broadcastMeetingAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the **broadcastMeetingAudience** enumeration type.",
+          "Target": "broadcastMeetingAudience"
+        },
+        {
+          "Id": "d54aa4a2-6fdf-44fe-8e79-1cc1eab29939",
+          "ApiChange": "Member",
+          "ChangedApiName": "producer",
+          "ChangeType": "Addition",
+          "Description": "Added the **producer** member to the **onlineMeetingRole** enumeration.",
+          "Target": "onlineMeetingRole"
+        },
+        {
+          "Id": "d54aa4a2-6fdf-44fe-8e79-1cc1eab29939",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "broadcastMeetingSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [broadcastMeetingSettings](https://docs.microsoft.com/en-us/graph/api/resources/broadcastMeetingSettings?view=graph-rest-1.0) resource type.",
+          "Target": "broadcastMeetingSettings"
+        }
+      ],
+      "Id": "d54aa4a2-6fdf-44fe-8e79-1cc1eab29939",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-26T04:44:06.85621Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1a59763c-a086-47e4-b6b7-5883c6e80d9a",
+          "ApiChange": "Property",
+          "ChangedApiName": "broadcastSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **broadcastSettings** property to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "1a59763c-a086-47e4-b6b7-5883c6e80d9a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isBroadcast",
+          "ChangeType": "Addition",
+          "Description": "Added the **isBroadcast** property to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "1a59763c-a086-47e4-b6b7-5883c6e80d9a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-26T04:44:06.8568472Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cb86c949-1f67-485e-8dc7-6ec8314361ab",
           "ApiChange": "Property",
           "ChangedApiName": "recordAutomatically",

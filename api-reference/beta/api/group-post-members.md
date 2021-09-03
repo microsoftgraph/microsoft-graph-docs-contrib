@@ -1,7 +1,7 @@
 ---
 title: "Add member"
 description: "Add a member to a Microsoft 365 group or security group through the **members** navigation property."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType

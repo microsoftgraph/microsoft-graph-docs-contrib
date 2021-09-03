@@ -448,7 +448,7 @@ items:
         - name: Remove app for user
           href: api/userteamwork-delete-installedapps.md
         - name: Get chat between user and app
-          href: api/userscopeteamsappinstallation-get-chat.md 
+          href: api/userscopeteamsappinstallation-get-chat.md
         - name: Get chat for user
           href: api/chat-get.md
         - name: List chats for user
@@ -501,7 +501,7 @@ items:
         - name: Check member groups
           href: api/group-checkmembergroups.md
         - name: Check member objects
-          href: api/group-checkmemberobjects.md 
+          href: api/group-checkmemberobjects.md
         - name: Get delta
           href: api/group-delta.md
         - name: Get member groups
@@ -650,7 +650,7 @@ items:
         - name: Create rejected sender
           href: api/group-post-rejectedsenders.md
         - name: Remove rejected senders
-          href: api/group-delete-rejectedsenders.md  
+          href: api/group-delete-rejectedsenders.md
       - name: Conversation thread
         href: resources/conversationthread.md
         items:
@@ -1256,6 +1256,18 @@ items:
             href: resources/callrecords-session.md
           - name: List sessions
             href: api/callrecords-session-list.md
+        - name: PSTN calls
+          items:
+          - name: PSTN log row
+            href: resources/callrecords-pstncalllogrow.md
+          - name: List PSTN calls
+            href: api/callrecords-callrecord-getpstncalls.md
+        - name: Direct routing calls
+          items:
+          - name: Direct routing log row
+            href: resources/callrecords-directroutinglogrow.md
+          - name: List direct routing calls
+            href: api/callrecords-callrecord-getdirectroutingcalls.md
       - name: Online meetings
         items:
         - name: Online meeting
@@ -1337,7 +1349,7 @@ items:
           href: resources/printjob.md
           items:
           - name: Create job for a printer
-            href: api/printer-post-jobs.md            
+            href: api/printer-post-jobs.md
           - name: Create job for a printer share
             href: api/printershare-post-jobs.md
           - name: List jobs for a printer
@@ -4605,7 +4617,7 @@ items:
               href: api/fido2authenticationmethod-get.md
             - name: Delete
               href: api/fido2authenticationmethod-delete.md
-          - name: Microsoft Authenticator 
+          - name: Microsoft Authenticator
             href: resources/microsoftauthenticatorauthenticationmethod.md
             items:
             - name: List
@@ -4819,20 +4831,20 @@ items:
           items:
           - name: Create
             href: api/organizationalbrandingproperties-create.md
-          - name: Get 
+          - name: Get
             href: api/organizationalbrandingproperties-get.md
           - name: Update
             href: api/organizationalbrandingproperties-update.md
           - name: Delete
             href: api/organizationalbrandingproperties-delete.md
-          - name: Create localized 
+          - name: Create localized
             href: api/organizationalbrandingpropertieslocalization-create.md
           - name: Get localized
             href: api/organizationalbrandingpropertieslocalization-get.md
           - name: Update localized
             href: api/organizationalbrandingpropertieslocalization-update.md
           - name: Delete localized
-            href: api/organizationalbrandingpropertieslocalization-delete.md 
+            href: api/organizationalbrandingpropertieslocalization-delete.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -4941,7 +4953,7 @@ items:
             - name: Update
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
         - name: User flows
-          items:  
+          items:
           - name: Self-service sign up user flows
             items:
              - name: Self-service sign up user flow
@@ -5006,11 +5018,11 @@ items:
                href: api/userflowlanguageconfiguration-list-overridespages.md
              - name: User flow language page
                href: resources/userflowlanguagepage.md
-             - name: Get 
+             - name: Get
                href: api/userflowlanguagepage-get.md
-             - name: Update 
+             - name: Update
                href: api/userflowlanguagepage-put.md
-             - name: Delete 
+             - name: Delete
                href: api/userflowlanguagepage-delete.md
           - name: API connectors
             items:
@@ -5027,7 +5039,7 @@ items:
             - name: Upload a client certificate
               href: api/identityapiconnector-uploadclientcertificate.md
             - name: Delete
-              href: api/identityapiconnector-delete.md    
+              href: api/identityapiconnector-delete.md
       - name: Governance
         items:
         - name: Access reviews
@@ -5043,7 +5055,7 @@ items:
             - name: Create
               href: api/accessreviewscheduledefinition-post.md
             - name: Delete
-              href: api/accessreviewscheduledefinition-delete.md 
+              href: api/accessreviewscheduledefinition-delete.md
             - name: Update
               href: api/accessreviewscheduledefinition-update.md
             - name: Filter by current user
@@ -5115,7 +5127,7 @@ items:
           - name: Agreement
             href: resources/agreement.md
           - name: List
-            href: api/agreement-list.md          
+            href: api/agreement-list.md
           - name: Create
             href: api/agreement-post-agreements.md
           - name: Get
@@ -5125,7 +5137,7 @@ items:
           - name: Delete
             href: api/agreement-delete.md
           - name: List acceptance status
-            href: api/user-list-agreementacceptances.md      
+            href: api/user-list-agreementacceptances.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
@@ -5234,7 +5246,7 @@ items:
         - name: Create child folder
           href: api/mailfolder-post-childfolders.md
         - name: Create message in folder
-          href: api/mailfolder-post-messages.md          
+          href: api/mailfolder-post-messages.md
         - name: Get mail folder delta
           href: api/mailfolder-delta.md
         - name: Get message delta
@@ -5775,6 +5787,26 @@ items:
             href: api/externalconnectors-externalitem-update.md
           - name: Delete external item
             href: api/externalconnectors-externalitem-delete.md
+        - name: External group
+          items:
+          - name: External group
+            href: resources/externalconnectors-externalgroup.md
+          - name: Create external group
+            href: api/externalconnectors-externalconnection-post-groups.md
+          - name: Get external group
+            href: api/externalconnectors-externalgroup-get.md
+          - name: Update external group
+            href: api/externalconnectors-externalgroup-update.md
+          - name: Delete external group
+            href: api/externalconnectors-externalgroup-delete.md
+        - name: External group member
+          items:
+          - name: Identity
+            href: resources/externalconnectors-identity.md
+          - name: Create identity for member
+            href: api/externalconnectors-externalgroup-post-members.md
+          - name: Delete identity of member
+            href: api/externalconnectors-identity-delete.md
     - name: Security
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
@@ -5873,7 +5905,7 @@ items:
           - name: Get site permission
             href: api/site-get-permission.md
           - name: List site permissions
-            href: api/site-list-permissions.md 
+            href: api/site-list-permissions.md
           - name: Create site permissions
             href: api/site-post-permissions.md
           - name: Update site permission
@@ -6186,7 +6218,7 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: Add member 
+        - name: Add member
           href: api/channel-post-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
@@ -6203,7 +6235,7 @@ items:
         - name: List channel messages
           href: api/channel-list-messages.md
         - name: List members
-          href: api/channel-list-members.md        
+          href: api/channel-list-members.md
         - name: List message replies
           href: api/chatmessage-list-replies.md
         - name: Remove member
@@ -6241,7 +6273,7 @@ items:
           href: api/chatmessage-get.md
         - name: Send message in chat
           href: api/chat-post-messages.md
-        - name: Get chat between user and app 
+        - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
       - name: Chat message
         href: resources/chatmessage.md
@@ -6313,7 +6345,7 @@ items:
           - name: List apps in chat
             href: api/chat-list-installedapps.md
           - name: Add app in chat
-            href: api/chat-post-installedapps.md     
+            href: api/chat-post-installedapps.md
           - name: Get app installed in chat
             href: api/chat-get-installedapps.md
           - name: Upgrade app installed in chat
@@ -6334,7 +6366,7 @@ items:
         - name: Tab in channel
           items:
           - name: List tabs in channel
-            href: api/channel-list-tabs.md          
+            href: api/channel-list-tabs.md
           - name: Add tab to channel
             href: api/channel-post-tabs.md
           - name: Get tab in channel
