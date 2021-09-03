@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "Delete columnDefinition"
 description: "Delete a column from a site, list or content type."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

@@ -2,7 +2,7 @@
 title: "Create group"
 description: "Create a new group as specified in the request body. "
 author: "Jordanndahl"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -49,14 +49,9 @@ The following table shows the properties of the [group](../resources/group.md) r
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Maximum length: 256 characters. Required. |
-| description | string | A description for the group. Max. length: 1024 characters. Optional. |
-| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
+| mailEnabled | boolean | Set to `true` for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Max. length: 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
-| owners | string collection | This property represents the owners for the group at creation time.  Owners aren't automatically added as group members unless specified in the **members** property. Optional. |
-| members | string collection | This property represents the members for the group at creation time. Optional. |
-|visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
+| securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. |
 
 > **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 

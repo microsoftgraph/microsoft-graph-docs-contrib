@@ -1,7 +1,7 @@
 ---
 title: "agreementFileLocalization resource type"
 description: "Represents a localized policy file of a terms of use agreement in Azure Active Directory (Azure AD)."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
 author: raprakasMSFT

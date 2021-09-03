@@ -2,7 +2,7 @@
 title: "List assignment resources"
 description: "Get all the resources associated with this assignment."
 author: "sharad-sharma-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

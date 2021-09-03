@@ -2,7 +2,7 @@
 title: printServiceEndpoint resource type
 description: Represents URI and identifying information for a print service instance.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---

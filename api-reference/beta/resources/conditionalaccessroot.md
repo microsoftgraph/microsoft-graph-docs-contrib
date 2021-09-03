@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccess resource type"
 description: "The **conditionalaccess** resource is the entry point for the Conditinal Access object model. It doesn't contain any usable properties."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "calebb"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

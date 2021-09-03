@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsSummarizeWorkFromAnywhereDevices function"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 941
+Content-Length: 998
 
 {
   "value": {
@@ -68,7 +68,8 @@ Content-Length: 941
     "autopilotDevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsAutopilotDevicesSummary",
       "devicesNotAutopilotRegistered": 13,
-      "devicesWithoutAutopilotProfileAssigned": 6
+      "devicesWithoutAutopilotProfileAssigned": 6,
+      "totalWindows10DevicesWithoutTenantAttached": 10
     },
     "cloudManagementDevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudManagementDevicesSummary",
@@ -87,7 +88,6 @@ Content-Length: 941
   }
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "Create externalConnection"
 description: "Create a new externalConnection object."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -42,14 +42,14 @@ POST /external/connections
 ## Request body
 In the request body, supply a JSON representation of the [externalConnection](../resources/externalconnectors-externalconnection.md) object.
 
-The following table shows the properties that are required when you create the [externalConnection](../resources/externalconnectors-externalconnection.md).
+You can specify the following properties when creating an [externalConnection](../resources/externalconnectors-externalconnection.md).
 
-|Property|Type|Required (Y/N) |Description|
-|:---|:---|:---|:---|
-|id|String|Y|The connection ID|
-|name|String|Y|The connection name|
-|description|String|Y|The connection description|
-|configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|N|The connection configurations|
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The connection ID. Required.|
+|name|String|The connection name. Required.|
+|description|String|The connection description. Required.|
+|configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|The connection configurations. Optional.|
 
 
 

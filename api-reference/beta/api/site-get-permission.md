@@ -2,7 +2,7 @@
 title: "Get permission"
 description: "Retrieve the properties and relationships of a permission object on a site."
 author: "BarrySh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

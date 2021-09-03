@@ -2,7 +2,7 @@
 title: "List windowsWifiConfigurations"
 description: "List properties and relationships of the windowsWifiConfiguration objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -115,7 +115,6 @@ Content-Length: 1944
   ]
 }
 ```
-
 
 
 

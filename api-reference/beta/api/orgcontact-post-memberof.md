@@ -1,7 +1,7 @@
 ---
 title: "Create memberOf"
 description: "Use this API to create a new memberOf."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: apiPageType

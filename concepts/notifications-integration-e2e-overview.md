@@ -1,7 +1,7 @@
 ---
 title: "Integrate with Microsoft Graph notifications "
 description: "Notifications are one of the most effective ways to re-engage with users of your application. You can integrate your apps with Microsoft Graph notifications in a few simple steps.  "
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "notifications"
 author: "merzink"
 ---

@@ -2,7 +2,7 @@
 title: "Create windowsPhone81AppX"
 description: "Create a new windowsPhone81AppX object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -211,7 +211,6 @@ Content-Length: 1834
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

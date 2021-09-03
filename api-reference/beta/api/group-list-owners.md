@@ -1,7 +1,7 @@
 ---
 title: "List owners"
 description: "Retrieve a list of the group's owners."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType

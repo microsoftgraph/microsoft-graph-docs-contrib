@@ -1,8 +1,8 @@
 ---
 title: "Get change notifications for any changes in Teams membership using Microsoft Graph"
 description: "Get change notifications for any changes (create, update, and delete) in Teams membership using Microsoft Graph"
-author: "abshar-teams"
-localization_priority: Priority
+author: "anandab"
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
