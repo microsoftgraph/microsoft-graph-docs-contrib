@@ -307,5 +307,5 @@ If everything has been configured correctly, you will see the `Person` component
 
 ## Next Steps
 - Try out the components in the [playground](https://mgt.dev).
-- Ask a question on [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/microsoft-graph-toolkit.html).
+- Ask a question on [Microsoft Q&A](/answers/topics/microsoft-graph-toolkit.html).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
