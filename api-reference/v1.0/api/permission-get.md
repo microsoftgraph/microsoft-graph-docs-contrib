@@ -91,10 +91,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "grantedTo": {
     "user": {
       "displayName": "Ryan Gregg",
       "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Ryan Gregg"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Ryan Gregg",
+      "loginName": "Ryan Gregg"
     }
   },
   "id": "1",
