@@ -4595,8 +4595,6 @@ items:
         - name: Role management
           href: resources/rolemanagement.md
           items:
-          - name: RBAC application
-            href: resources/rbacapplication.md
           - name: Role definition
             href: resources/unifiedroledefinition.md
             items:
