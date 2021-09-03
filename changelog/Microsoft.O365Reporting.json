@@ -291,6 +291,24 @@
       "CreatedDateTime": "2021-02-04T09:55:05.981Z",
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7ebc6c52-fe03-43ed-a73b-8478651f5c23",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reportroot-authorization",
+          "ChangeType": "Change",
+          "Description": "Update the **User delegated authorization** comments to the [reportroot-authorization](https://docs.microsoft.com/en-us/graph/reportroot-authorization) resource.",
+          "Target": "reportroot-authorization"
+        }
+      ],
+      "Id": "7ebc6c52-fe03-43ed-a73b-8478651f5c23",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-01T00:00:00.000Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Microsoft 365 usage reports"
     }
   ]
 }
