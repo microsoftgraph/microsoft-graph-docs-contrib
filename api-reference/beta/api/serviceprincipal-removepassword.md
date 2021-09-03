@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: removePassword"
 description: "Remove a password from a servicePrincipal"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

@@ -1,7 +1,7 @@
 ---
 title: "Get dataPolicyOperation"
 description: "Retrieve the properties of the dataPolicyOperation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: copyToDefaultContentLocation"
 description: "Copy a file to a default content location in a content type."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

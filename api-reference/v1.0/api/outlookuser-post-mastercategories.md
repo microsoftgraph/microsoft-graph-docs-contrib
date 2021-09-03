@@ -1,7 +1,7 @@
 ---
 title: "Create Outlook category"
 description: "Create an outlookCategory object in the user's master list of categories."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType

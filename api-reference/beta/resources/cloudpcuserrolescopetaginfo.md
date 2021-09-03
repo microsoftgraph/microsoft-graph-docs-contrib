@@ -2,7 +2,7 @@
 title: "cloudPcUserRoleScopeTagInfo resource type"
 description: "Represents the scope tag info with display name and identity."
 author: "ecmadao"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---

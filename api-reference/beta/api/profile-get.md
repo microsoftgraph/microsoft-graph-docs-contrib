@@ -1,7 +1,7 @@
 ---
 title: "Get profile"
 description: "Retrieve the properties and relationships of profile object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

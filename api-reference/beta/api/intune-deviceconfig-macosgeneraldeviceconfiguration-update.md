@@ -2,7 +2,7 @@
 title: "Update macOSGeneralDeviceConfiguration"
 description: "Update the properties of a macOSGeneralDeviceConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -98,7 +98,7 @@ The following table shows the properties that are required when you create the [
 |passwordBlockProximityRequests|Boolean|Indicates whether or not to block requesting passwords from nearby devices.|
 |passwordBlockAirDropSharing|Boolean|Indicates whether or not to block sharing passwords with the AirDrop passwords feature.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90|
-|updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Determines whether to delay OS and/or app updates for macOS. Possible values are: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`.|
+|updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Determines whether to delay OS and/or app updates for macOS. Possible values are: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`, `unknownFutureValue`, `delayMajorOsUpdateVisibility`.|
 |contentCachingBlocked|Boolean|Indicates whether or not to allow content caching.|
 |iCloudBlockPhotoLibrary|Boolean|Indicates whether or not to block iCloud Photo Library.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to block the user from taking Screenshots.|
@@ -111,8 +111,12 @@ The following table shows the properties that are required when you create the [
 |privacyAccessControls|[macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md) collection|List of privacy preference policy controls. This collection can contain a maximum of 10000 elements.|
 |addingGameCenterFriendsBlocked|Boolean|Yes prevents users from adding friends to Game Center. Available for devices running macOS versions 10.13 and later.|
 |gameCenterBlocked|Boolean|Yes disables Game Center, and the Game Center icon is removed from the Home screen. Available for devices running macOS versions 10.13 and later.|
-|multiplayerGamingBlocked|Boolean|Yes prevents multiplayer gaming when using Game Center. Available for devices running macOS versions 10.13 and later.|
-|wallpaperModificationBlocked|Boolean|Yes prevents the wallpaper from being changed. Available for devices running macOS versions 10.13 and later.|
+|multiplayerGamingBlocked|Boolean|TRUE prevents multiplayer gaming when using Game Center. FALSE allows multiplayer gaming when using Game Center. Available for devices running macOS versions 10.13 and later.|
+|wallpaperModificationBlocked|Boolean|TRUE prevents the wallpaper from being changed. FALSE allows the wallpaper to be changed. Available for devices running macOS versions 10.13 and later.|
+|eraseContentAndSettingsBlocked|Boolean|TRUE disables the reset option on supervised devices. FALSE enables the reset option on supervised devices. Available for devices running macOS versions 12.0 and later.|
+|softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|Specify the number of days (1-90) to delay visibility of major OS software updates. Available for devices running macOS versions 11.3 and later. Valid values 0 to 90|
+|softwareUpdateMinorOSDeferredInstallDelayInDays|Int32|Specify the number of days (1-90) to delay visibility of minor OS software updates. Available for devices running macOS versions 11.3 and later. Valid values 0 to 90|
+|softwareUpdateNonOSDeferredInstallDelayInDays|Int32|Specify the number of days (1-90) to delay visibility of non-OS software updates. Available for devices running macOS versions 11.3 and later. Valid values 0 to 90|
 
 
 
@@ -126,7 +130,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4685
+Content-length: 4900
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -257,7 +261,11 @@ Content-length: 4685
   "addingGameCenterFriendsBlocked": true,
   "gameCenterBlocked": true,
   "multiplayerGamingBlocked": true,
-  "wallpaperModificationBlocked": true
+  "wallpaperModificationBlocked": true,
+  "eraseContentAndSettingsBlocked": true,
+  "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
+  "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
+  "softwareUpdateNonOSDeferredInstallDelayInDays": 13
 }
 ```
 
@@ -266,7 +274,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4857
+Content-Length: 5072
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -400,10 +408,13 @@ Content-Length: 4857
   "addingGameCenterFriendsBlocked": true,
   "gameCenterBlocked": true,
   "multiplayerGamingBlocked": true,
-  "wallpaperModificationBlocked": true
+  "wallpaperModificationBlocked": true,
+  "eraseContentAndSettingsBlocked": true,
+  "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
+  "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
+  "softwareUpdateNonOSDeferredInstallDelayInDays": 13
 }
 ```
-
 
 
 

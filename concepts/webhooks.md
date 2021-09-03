@@ -3,7 +3,7 @@ title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
 author: "davidmu1"
 ms.prod: "non-product-specific"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 

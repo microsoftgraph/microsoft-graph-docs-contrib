@@ -2,7 +2,7 @@
 title: "Get directoryObject"
 description: "Retrieve the properties and relationships of directoryobject object."
 author: "keylimesoda"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

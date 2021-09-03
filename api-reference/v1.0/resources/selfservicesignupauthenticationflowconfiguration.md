@@ -2,7 +2,7 @@
 title: "selfServiceSignUpAuthenticationFlowConfiguration resource type"
 description: "Represents the configurations related to self-service sign-up."
 author: "linkhp"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: List tasks
 description: Retrieve a list of task associated with a task definition.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

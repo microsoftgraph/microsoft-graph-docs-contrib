@@ -2,7 +2,7 @@
 title: "cloudPC: reprovision"
 description: "Reprovision a specific Cloud PC."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---

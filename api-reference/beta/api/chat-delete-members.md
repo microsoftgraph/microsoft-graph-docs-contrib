@@ -2,7 +2,7 @@
 title: "Remove member from chat"
 description: "Remove a conversationMember from a chat."
 author: "AkJo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

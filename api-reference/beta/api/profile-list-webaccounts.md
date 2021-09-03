@@ -1,7 +1,7 @@
 ---
 title: "List webAccounts"
 description: "Retrieve a list of webAccounts objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

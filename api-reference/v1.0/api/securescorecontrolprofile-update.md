@@ -2,7 +2,7 @@
 title: "Update secureScoreControlProfile"
 description: "Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote."
 author: "preetikr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ""
 doc_type: apiPageType
 ---

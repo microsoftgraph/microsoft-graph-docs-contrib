@@ -1,7 +1,7 @@
 ---
 title: "countryNamedLocation resource type"
 description: "Represents an Azure Active Directory named location defined by countries and regions. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

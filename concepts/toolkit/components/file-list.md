@@ -1,7 +1,7 @@
 ---
 title: "File list component in the Microsoft Graph Toolkit"
 description: "The file list component is used to display a list of files by showing their icon, and name"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: beth-panx
 ---
 

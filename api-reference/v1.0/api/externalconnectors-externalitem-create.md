@@ -2,7 +2,7 @@
 title: "Create externalItem"
 description: "Create a new externalItem."
 author: "snlraju-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -41,14 +41,14 @@ POST /connections/{connectionsId}/items
 ## Request body
 In the request body, supply a JSON representation of the [externalItem](../resources/externalconnectors-externalitem.md) object.
 
-The following table shows the properties that are required when you create the [externalItem](../resources/externalconnectors-externalitem.md).
+You can specify the following properties when creating an [externalItem](../resources/externalconnectors-externalitem.md).
 
-|Property|Type| Required (Y/N) | Description|
-|:---|:---|:---|:---|
-|id|String|Y|The item ID|
-|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Y|The item properties. The `properties` object must contain at least one property. All `DateTime` type properties must be in ISO 8601 format.|
-|content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|N|The external item content|
-|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) collection|Y|The access control list|
+|Property|Type| Description|
+|:---|:---|:---|
+|id|String|The item ID. Required.|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|The item properties. The `properties` object must contain at least one property. All `DateTime` type properties must be in ISO 8601 format. Required.|
+|content|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|The external item content. Optional.|
+|acl|[microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) collection|The access control list. Required.|
 
 Properties on an `externalItem` should use type specifiers in the payload in the following scenarios:
 
