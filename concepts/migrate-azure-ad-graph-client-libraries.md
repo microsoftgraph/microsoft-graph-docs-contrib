@@ -16,7 +16,7 @@ If your app currently uses the Azure Active Directory (Azure AD) Graph client li
 
 Here, we'll look at some general steps to migrate over to the Microsoft Graph .NET client library:
 
-- How to create a Microsoft Graph client, given an access token (that you can acquire using Azure Active Directory authentication library (ADAL) or Microsoft authentication library (MSAL))
+- How to create a Microsoft Graph client, given an access token (that you can acquire using either Azure Active Directory Authentication Library (ADAL) or Microsoft Authentication Library (MSAL))
 - How to formulate requests
 - How to use query builders
 - How to handle collections and paging  

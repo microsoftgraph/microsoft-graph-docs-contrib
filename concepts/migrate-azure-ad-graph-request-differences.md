@@ -12,7 +12,7 @@ This article is part of *step 1: review API differences* of the [process to migr
 
 Microsoft Graph and the Azure AD Graph API are both REST APIs and they each support ODATA conventions for query parameters. However, the syntax varies between these two APIs.
 
-Use the [Graph Explorer](https://aka.ms/ge) to try these request patterns against your own data, as it's a great way to learn about the request and response differences.
+Use [Graph Explorer](https://aka.ms/ge) to try these request patterns against your own data, as it's a great way to learn about the request and response differences.
 
 ## Basic requests
 
