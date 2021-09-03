@@ -2,7 +2,7 @@
 title: "List legalHolds"
 description: "Get the legalHold resources from the legalHolds navigation property."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---

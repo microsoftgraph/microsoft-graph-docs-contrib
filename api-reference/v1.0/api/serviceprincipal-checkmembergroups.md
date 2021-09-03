@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those groups of which the service principal has a direct or transitive membership."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"

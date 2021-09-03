@@ -2,7 +2,7 @@
 title: "Delete externalGroupMember"
 description: "Delete an externalGroupMember object."
 author: "snlraju-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---

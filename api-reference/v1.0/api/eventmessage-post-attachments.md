@@ -2,7 +2,7 @@
 title: "Add attachment"
 description: "Use this API to create a new Attachment."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

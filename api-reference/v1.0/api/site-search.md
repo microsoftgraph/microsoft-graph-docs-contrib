@@ -3,7 +3,7 @@ author: JeremyKelley
 ms.date: 09/10/2017
 title: Search for sites
 description: Search across a SharePoint tenant for sites that match keywords provided.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

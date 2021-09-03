@@ -1,7 +1,7 @@
 ---
 title: "List approvalSteps"
 description: "List approval steps associated with an approval object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sbounouh"
 ms.prod: "governance"
 doc_type: "apiPageType"

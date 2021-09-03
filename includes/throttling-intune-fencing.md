@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---
@@ -14,4 +14,7 @@ ms.topic: include
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-circularGeofenceManagementCondition, locationManagementCondition, managementCondition, managementConditionStatement, networkIPv4ConfigurationManagementCondition, networkIPv6ConfigurationManagementCondition, networkManagementCondition.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [circularGeofenceManagementCondition](/graph/api/resources/circulargeofencemanagementcondition) <li> [locationManagementCondition](/graph/api/resources/locationmanagementcondition) <li> [managementCondition](/graph/api/resources/managementcondition) <li> [managementConditionStatement](/graph/api/resources/managementconditionstatement) <li> [networkIPv4ConfigurationManagementCondition](/graph/api/resources/networkipv4configurationmanagementcondition) <li> [networkIPv6ConfigurationManagementCondition](/graph/api/resources/networkipv6configurationmanagementcondition) <li> [networkManagementCondition](/graph/api/resources/networkmanagementcondition) </ul> |

@@ -1,7 +1,7 @@
 ---
 title: "application: unsetVerifiedPublisher"
 description: "Unset the verified publisher of an application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jesakowi"
 ms.prod: "applications"
 doc_type: "apiPageType"

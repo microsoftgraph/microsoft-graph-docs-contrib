@@ -1,7 +1,7 @@
 ---
 title: "Delete an appRoleAssignment granted to a user"
 description: "Delete an appRoleAssignment that has been granted to a user."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "users"
 author: "psignoret"

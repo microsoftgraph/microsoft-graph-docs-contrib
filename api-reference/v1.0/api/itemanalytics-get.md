@@ -2,7 +2,7 @@
 author: daspek
 title: Get itemAnalytics
 description: Get itemAnalytics about the views that took place under this resource.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

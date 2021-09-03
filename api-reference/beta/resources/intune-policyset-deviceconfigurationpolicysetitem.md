@@ -2,7 +2,7 @@
 title: "deviceConfigurationPolicySetItem resource type"
 description: "A class containing the properties used for device configuration PolicySetItem."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -69,7 +69,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

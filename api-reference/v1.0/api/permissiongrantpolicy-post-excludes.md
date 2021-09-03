@@ -1,7 +1,7 @@
 ---
 title: "Create permissionGrantConditionSet in excludes collection of permissionGrantPolicy"
 description: "Add conditions under which a permission grant event is excluded in a permission grant policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"

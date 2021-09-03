@@ -2753,6 +2753,39 @@ items:
               href: api/intune-apps-mobilelobapp-list.md
             - name: Get
               href: api/intune-apps-mobilelobapp-get.md
+          - name: Office client checkin status
+            href: resources/intune-cirrus-officeclientcheckinstatus.md
+          - name: Office client configuration
+            href: resources/intune-cirrus-officeclientconfiguration.md
+            items:
+            - name: List
+              href: api/intune-cirrus-officeclientconfiguration-list.md
+            - name: Get
+              href: api/intune-cirrus-officeclientconfiguration-get.md
+            - name: assign action
+              href: api/intune-cirrus-officeclientconfiguration-assign.md
+            - name: updatePriorities action
+              href: api/intune-cirrus-officeclientconfiguration-updatepriorities.md
+          - name: Office client configuration assignment
+            href: resources/intune-cirrus-officeclientconfigurationassignment.md
+            items:
+            - name: List
+              href: api/intune-cirrus-officeclientconfigurationassignment-list.md
+            - name: Get
+              href: api/intune-cirrus-officeclientconfigurationassignment-get.md
+            - name: Create
+              href: api/intune-cirrus-officeclientconfigurationassignment-create.md
+            - name: Delete
+              href: api/intune-cirrus-officeclientconfigurationassignment-delete.md
+            - name: Update
+              href: api/intune-cirrus-officeclientconfigurationassignment-update.md
+          - name: Office configuration
+            href: resources/intune-cirrus-officeconfiguration.md
+            items:
+          - name: Office configuration assignment target
+            href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
+          - name: Office configuration group assignment target
+            href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
           - name: Office product id
             href: resources/intune-apps-officeproductid.md
           - name: Office suite app
@@ -2772,6 +2805,8 @@ items:
             href: resources/intune-apps-officesuiteinstallprogressdisplaylevel.md
           - name: Office update channel
             href: resources/intune-apps-officeupdatechannel.md
+          - name: Office user checkin summary
+            href: resources/intune-cirrus-officeusercheckinsummary.md
           - name: Resultant app state
             href: resources/intune-apps-resultantappstate.md
           - name: Resultant app state detail
@@ -2940,6 +2975,32 @@ items:
               href: api/intune-apps-windowsmobilemsi-delete.md
             - name: Update
               href: api/intune-apps-windowsmobilemsi-update.md
+          - name: Windows office client configuration
+            href: resources/intune-cirrus-windowsofficeclientconfiguration.md
+            items:
+            - name: List
+              href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
+            - name: Get
+              href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
+            - name: Create
+              href: api/intune-cirrus-windowsofficeclientconfiguration-create.md
+            - name: Delete
+              href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
+            - name: Update
+              href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
+          - name: Windows office client security configuration
+            href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
+            items:
+            - name: List
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
+            - name: Get
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
+            - name: Create
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-create.md
+            - name: Delete
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md
+            - name: Update
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md
           - name: Windows package information
             href: resources/intune-apps-windowspackageinformation.md
           - name: Windows Phone 8.1 AppX
@@ -4233,6 +4294,25 @@ items:
               href: api/intune-deviceconfig-carttoclassassociation-delete.md
             - name: Update
               href: api/intune-deviceconfig-carttoclassassociation-update.md
+          - name: Certificate connector details
+            href: resources/intune-raimportcerts-certificateconnectordetails.md
+            items:
+            - name: List
+              href: api/intune-raimportcerts-certificateconnectordetails-list.md
+            - name: Get
+              href: api/intune-raimportcerts-certificateconnectordetails-get.md
+            - name: Create
+              href: api/intune-raimportcerts-certificateconnectordetails-create.md
+            - name: Delete
+              href: api/intune-raimportcerts-certificateconnectordetails-delete.md
+            - name: Update
+              href: api/intune-raimportcerts-certificateconnectordetails-update.md
+            - name: getHealthMetrics action
+              href: api/intune-raimportcerts-certificateconnectordetails-gethealthmetrics.md
+            - name: getHealthMetricTimeSeries action
+              href: api/intune-raimportcerts-certificateconnectordetails-gethealthmetrictimeseries.md
+          - name: Certificate connector health metric value
+            href: resources/intune-raimportcerts-certificateconnectorhealthmetricvalue.md
           - name: Certificate issuance states
             href: resources/intune-deviceconfig-certificateissuancestates.md
           - name: Certificate revocation status
@@ -5379,6 +5459,8 @@ items:
             href: resources/intune-deviceconfig-keyvaluepair.md
           - name: Key/value pair
             href: resources/intune-deviceconfig-keyvaluepair.md
+          - name: Kiosk mode managed home screen PIN complexity
+            href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
           - name: LAN manager authentication level
             href: resources/intune-deviceconfig-lanmanagerauthenticationlevel.md
           - name: Local security options administrator elevation prompt behavior type
@@ -5984,6 +6066,8 @@ items:
             href: resources/intune-deviceconfig-statemanagementsetting.md
           - name: Subject name format
             href: resources/intune-deviceconfig-subjectnameformat.md
+          - name: Time series parameter
+            href: resources/intune-raimportcerts-timeseriesparameter.md
           - name: Unsupported device configuration
             href: resources/intune-deviceconfig-unsupporteddeviceconfiguration.md
             items:
@@ -6775,19 +6859,6 @@ items:
               href: api/intune-devices-applepushnotificationcertificate-update.md
             - name: generateApplePushNotificationCertificateSigningRequest action
               href: api/intune-devices-applepushnotificationcertificate-generateapplepushnotificationcertificatesigningrequest.md
-          - name: Apple VPP token troubleshooting event
-            href: resources/intune-troubleshooting-applevpptokentroubleshootingevent.md
-            items:
-            - name: List
-              href: api/intune-troubleshooting-applevpptokentroubleshootingevent-list.md
-            - name: Get
-              href: api/intune-troubleshooting-applevpptokentroubleshootingevent-get.md
-            - name: Create
-              href: api/intune-troubleshooting-applevpptokentroubleshootingevent-create.md
-            - name: Delete
-              href: api/intune-troubleshooting-applevpptokentroubleshootingevent-delete.md
-            - name: Update
-              href: api/intune-troubleshooting-applevpptokentroubleshootingevent-update.md
           - name: Audit actor
             href: resources/intune-auditing-auditactor.md
           - name: Audit event
@@ -6966,10 +7037,6 @@ items:
               href: api/intune-devices-devicecustomattributeshellscript-assign.md
           - name: Device custom attribute value type
             href: resources/intune-devices-devicecustomattributevaluetype.md
-          - name: Device enrollment failure reason
-            href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
-          - name: Device enrollment type
-            href: resources/intune-devices-deviceenrollmenttype.md
           - name: Device enrollment type
             href: resources/intune-devices-deviceenrollmenttype.md
           - name: Device exchange access state summary
@@ -7107,36 +7174,6 @@ items:
               href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-delete.md
             - name: Update
               href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-update.md
-          - name: Device management autopilot event
-            href: resources/intune-troubleshooting-devicemanagementautopilotevent.md
-            items:
-            - name: List
-              href: api/intune-troubleshooting-devicemanagementautopilotevent-list.md
-            - name: Get
-              href: api/intune-troubleshooting-devicemanagementautopilotevent-get.md
-            - name: Create
-              href: api/intune-troubleshooting-devicemanagementautopilotevent-create.md
-            - name: Delete
-              href: api/intune-troubleshooting-devicemanagementautopilotevent-delete.md
-            - name: Update
-              href: api/intune-troubleshooting-devicemanagementautopilotevent-update.md
-          - name: Device management autopilot policy compliance status
-            href: resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md
-          - name: Device management autopilot policy status detail
-            href: resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md
-            items:
-            - name: List
-              href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-list.md
-            - name: Get
-              href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-get.md
-            - name: Create
-              href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-create.md
-            - name: Delete
-              href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-delete.md
-            - name: Update
-              href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-update.md
-          - name: Device management autopilot policy type
-            href: resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md
           - name: Device management boolean setting instance
             href: resources/intune-deviceintent-devicemanagementbooleansettinginstance.md
             items:
@@ -7331,6 +7368,21 @@ items:
               href: api/intune-deviceintent-devicemanagementintentuserstatesummary-get.md
             - name: Update
               href: api/intune-deviceintent-devicemanagementintentuserstatesummary-update.md
+          - name: Device management reports
+            href: resources/intune-remoteassistance-devicemanagementreports.md
+            items:
+            - name: Get
+              href: api/intune-remoteassistance-devicemanagementreports-get.md
+            - name: Update
+              href: api/intune-remoteassistance-devicemanagementreports-update.md
+            - name: getRemoteAssistanceSessionsReport action
+              href: api/intune-remoteassistance-devicemanagementreports-getremoteassistancesessionsreport.md
+            - name: getRemoteAssistanceMonitorActiveSessionsReport action
+              href: api/intune-remoteassistance-devicemanagementreports-getremoteassistancemonitoractivesessionsreport.md
+            - name: getRemoteAssistanceMonitorTotalSessionsReport action
+              href: api/intune-remoteassistance-devicemanagementreports-getremoteassistancemonitortotalsessionsreport.md
+            - name: getRemoteAssistanceMonitorAvgSessionTimeReport action
+              href: api/intune-remoteassistance-devicemanagementreports-getremoteassistancemonitoravgsessiontimereport.md
           - name: Device management script assignment
             href: resources/intune-devices-devicemanagementscriptassignment.md
             items:
@@ -7504,23 +7556,6 @@ items:
             href: resources/intune-deviceintent-devicemanagementtemplatesubtype.md
           - name: Device management template type
             href: resources/intune-deviceintent-devicemanagementtemplatetype.md
-          - name: Device management troubleshooting error details
-            href: resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md
-          - name: Device management troubleshooting error resource
-            href: resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md
-          - name: Device management troubleshooting event
-            href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
-            items:
-            - name: List
-              href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
-            - name: Get
-              href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
-            - name: Create
-              href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-create.md
-            - name: Delete
-              href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
-            - name: Update
-              href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md
           - name: Device manangement intent value type
             href: resources/intune-deviceintent-devicemanangementintentvaluetype.md
           - name: Device operating system summary
@@ -7546,8 +7581,6 @@ items:
               href: api/intune-devices-deviceshellscript-update.md
             - name: assign action
               href: api/intune-devices-deviceshellscript-assign.md
-          - name: Device type
-            href: resources/intune-devices-devicetype.md
           - name: Device type
             href: resources/intune-devices-devicetype.md
           - name: Disk type
@@ -7597,19 +7630,6 @@ items:
               href: api/intune-esim-embeddedsimdevicestate-update.md
           - name: Embedded SIM device state value
             href: resources/intune-esim-embeddedsimdevicestatevalue.md
-          - name: Enrollment troubleshooting event
-            href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
-            items:
-            - name: List
-              href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
-            - name: Get
-              href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
-            - name: Create
-              href: api/intune-troubleshooting-enrollmenttroubleshootingevent-create.md
-            - name: Delete
-              href: api/intune-troubleshooting-enrollmenttroubleshootingevent-delete.md
-            - name: Update
-              href: api/intune-troubleshooting-enrollmenttroubleshootingevent-update.md
           - name: Global device health script state
             href: resources/intune-devices-globaldevicehealthscriptstate.md
           - name: Hardware information
@@ -7622,8 +7642,6 @@ items:
             href: resources/intune-devices-insightvalueint.md
           - name: Join type
             href: resources/intune-devices-jointype.md
-          - name: Key/value pair
-            href: resources/intune-troubleshooting-keyvaluepair.md
           - name: Localized notification message
             href: resources/intune-notification-localizednotificationmessage.md
             items:
@@ -7755,8 +7773,6 @@ items:
             href: resources/intune-devices-manageddevicepartnerreportedhealthstate.md
           - name: Managed device remote action
             href: resources/intune-devices-manageddeviceremoteaction.md
-          - name: Managed device summarized app state
-            href: resources/intune-troubleshooting-manageddevicesummarizedappstate.md
           - name: Managed installer status
             href: resources/intune-devices-managedinstallerstatus.md
           - name: Management agent type
@@ -7793,39 +7809,6 @@ items:
               href: api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md
           - name: Management state
             href: resources/intune-devices-managementstate.md
-          - name: Mobile app action type
-            href: resources/intune-troubleshooting-mobileappactiontype.md
-          - name: Mobile app intent
-            href: resources/intune-troubleshooting-mobileappintent.md
-          - name: Mobile app intent and state
-            href: resources/intune-troubleshooting-mobileappintentandstate.md
-            items:
-            - name: List
-              href: api/intune-troubleshooting-mobileappintentandstate-list.md
-            - name: Get
-              href: api/intune-troubleshooting-mobileappintentandstate-get.md
-            - name: Create
-              href: api/intune-troubleshooting-mobileappintentandstate-create.md
-            - name: Delete
-              href: api/intune-troubleshooting-mobileappintentandstate-delete.md
-            - name: Update
-              href: api/intune-troubleshooting-mobileappintentandstate-update.md
-          - name: Mobile app intent and state detail
-            href: resources/intune-troubleshooting-mobileappintentandstatedetail.md
-          - name: Mobile app supported device type
-            href: resources/intune-troubleshooting-mobileappsupporteddevicetype.md
-          - name: Mobile app troubleshooting app policy creation history
-            href: resources/intune-troubleshooting-mobileapptroubleshootingapppolicycreationhistory.md
-          - name: Mobile app troubleshooting app state history
-            href: resources/intune-troubleshooting-mobileapptroubleshootingappstatehistory.md
-          - name: Mobile app troubleshooting app target history
-            href: resources/intune-troubleshooting-mobileapptroubleshootingapptargethistory.md
-          - name: Mobile app troubleshooting app update history
-            href: resources/intune-troubleshooting-mobileapptroubleshootingappupdatehistory.md
-          - name: Mobile app troubleshooting device checkin history
-            href: resources/intune-troubleshooting-mobileapptroubleshootingdevicecheckinhistory.md
-          - name: Mobile app troubleshooting history item
-            href: resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md
           - name: Network IPv4 configuration management condition
             href: resources/intune-fencing-networkipv4configurationmanagementcondition.md
             items:
@@ -7920,6 +7903,10 @@ items:
               href: api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md
             - name: disconnect action
               href: api/intune-remoteassistance-remoteassistancepartner-disconnect.md
+          - name: Remote assistance reporting
+            href: resources/intune-remoteassistance-remoteassistancereporting.md
+          - name: Remote assistance session type
+            href: resources/intune-remoteassistance-remoteassistancesessiontype.md
           - name: Remote assistance settings
             href: resources/intune-remoteassistance-remoteassistancesettings.md
             items:
@@ -7933,16 +7920,12 @@ items:
             href: resources/intune-devices-remotelockactionresult.md
           - name: Reset passcode action result
             href: resources/intune-devices-resetpasscodeactionresult.md
-          - name: Resultant app state
-            href: resources/intune-troubleshooting-resultantappstate.md
           - name: Revoke apple VPP licenses action result
             href: resources/intune-devices-revokeapplevpplicensesactionresult.md
           - name: Role scope tag info
             href: resources/intune-auditing-rolescopetaginfo.md
           - name: Rotate BitLocker keys device action result
             href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
-          - name: Run state
-            href: resources/intune-devices-runstate.md
           - name: Run state
             href: resources/intune-devices-runstate.md
           - name: Security baseline category state summary
@@ -8277,6 +8260,19 @@ items:
               href: api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsmetrichistory-update.md
+          - name: User experience analytics model scores
+            href: resources/intune-devices-userexperienceanalyticsmodelscores.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsmodelscores-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsmodelscores-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsmodelscores-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsmodelscores-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsmodelscores-update.md
           - name: User experience analytics not autopilot ready device
             href: resources/intune-devices-userexperienceanalyticsnotautopilotreadydevice.md
             items:
@@ -8394,10 +8390,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
           - name: Variable management condition expression
             href: resources/intune-fencing-variablemanagementconditionexpression.md
-          - name: Windows autopilot deployment state
-            href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
-          - name: Windows autopilot enrollment type
-            href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
           - name: Windows defender product status
             href: resources/intune-devices-windowsdefenderproductstatus.md
           - name: Windows defender scan action result
@@ -9338,6 +9330,8 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
+            - name: Create
+              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -9417,6 +9411,8 @@ items:
             href: resources/intune-shared-ipv4range.md
           - name: IPv6 range
             href: resources/intune-shared-ipv6range.md
+          - name: Key long value pair
+            href: resources/intune-shared-keylongvaluepair.md
           - name: Key size
             href: resources/intune-shared-keysize.md
           - name: Key storage provider option
@@ -9628,6 +9624,14 @@ items:
             href: api/cloudpc-reprovision.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Reprovision remote action
+            href: api/manageddevice-reprovisioncloudpc.md
+          - name: Bulk reprovision remote action
+            href: api/manageddevice-bulkreprovisioncloudpc.md
+          - name: Resize remote action
+            href: api/manageddevice-resizecloudpc.md
+          - name: Get remote action results
+            href: api/manageddevice-getcloudpcremoteactionresults.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
@@ -11083,6 +11087,15 @@ items:
               href: api/microsoftauthenticatorauthenticationmethod-get.md
             - name: Delete
               href: api/microsoftauthenticatorauthenticationmethod-delete.md
+          - name: Software OATH token
+            href: resources/softwareOathAuthenticationMethod.md
+            items:
+            - name: List
+              href: api/authentication-list-softwareoathmethods.md
+            - name: Get
+              href: api/softwareOathAuthenticationMethod-get.md
+            - name: Delete
+              href: api/softwareOathAuthenticationMethod-delete.md
           - name: Microsoft Authenticator Passwordless Phone Sign-In (deprecated)
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
             items:
@@ -12148,9 +12161,9 @@ items:
           items:
           - name: Privileged Identity Management
             href: resources/privilegedidentitymanagement-root.md
-          - name: Azure AD
+          - name: Azure AD (deprecated))
             items:
-            - name: Azure AD
+            - name: Azure AD 
               href: resources/privilegedidentitymanagement-directory.md
             - name: Privileged role
               href: resources/privilegedrole.md

@@ -22,8 +22,8 @@ The call records API is defined in the OData sub-namespace, `microsoft.graph.cal
 | [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
 | [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
 | [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
-| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[Get pstnCallLogRow](../api/callrecords-callrecord-getpstncalls.md) |
-| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [Get directRoutingLogRow](../api/callrecords-callrecord-getdirectroutingcalls.md)|
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
+| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 
 ## Call record structure
 
@@ -39,6 +39,6 @@ In the diagram above, the numbers denote how many children of each type can be p
 
 ## See also
 
-- [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta)
+- [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true)
 
 

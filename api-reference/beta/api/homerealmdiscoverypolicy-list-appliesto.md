@@ -1,7 +1,7 @@
 ---
 title: "List appliesTo"
 description: "Get a list of directoryObject objects that a homeRealmDiscoveryPolicy object has been applied to."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "hpsin"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
