@@ -1,5 +1,5 @@
 ---
-title: "TUse Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles"
+title: "Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles"
 description: "Use the Privileged Identity Management (PIM) API to assign Azure AD admin roles"
 author: "FaithOmbongi"
 localization_priority: Normal
