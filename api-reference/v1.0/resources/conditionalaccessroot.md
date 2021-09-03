@@ -27,7 +27,7 @@ None.
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|namedLocations|[namedLocations](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
+|namedLocations|[namedLocation](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
 |policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access (CA) policies.|
 
 ## JSON representation
