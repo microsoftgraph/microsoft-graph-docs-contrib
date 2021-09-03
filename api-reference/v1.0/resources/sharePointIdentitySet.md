@@ -26,9 +26,9 @@ Here is a JSON representation of the resource.
   /** inherited from IdentitySet **/
   "application": {"@odata.type": "microsoft.graph.identity"},
   "device": {"@odata.type": "microsoft.graph.identity"},
-  "group": {"@odata.type": "microsoft.graph.identity"},
   "user": {"@odata.type": "microsoft.graph.identity"},
-
+  
+  "group": {"@odata.type": "microsoft.graph.identity"},
   "siteUser": {"@odata.type": "microsoft.graph.sharePointIdentity"},
   "siteGroup":{"@odata.type": "microsoft.graph.sharePointIdentity"}
 }
