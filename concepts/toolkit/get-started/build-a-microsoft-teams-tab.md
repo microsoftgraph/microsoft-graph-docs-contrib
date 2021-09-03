@@ -9,7 +9,7 @@ author: simonagren
 
 This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. If you're implementing SSO with a custom backend, see [Build a Microsoft Teams tab (SSO)](./build-a-microsoft-teams-sso-tab.md).
 
-Getting started involves the following steps:
+Building a tab involves the following steps:
 
 1. Add the Microsoft Graph Toolkit.
 1. Create the auth popup page.
@@ -42,9 +42,9 @@ npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal
 
 ## Create the auth popup page
 
-In order to allow users to sign in, you will need a page in your app that Teams will open in a popup to follow the authentication flow. You can have the path to the page be anything as long as it is in the same domain as your app (for example, https://yourdomain.com/tabauth). The only requirement for this page is to call the `TeamsMsal2Provider.handleAuth()` method, but you can add any content or loading progress you wish.
+In order to allow users to sign in, you will need a page in your app that Teams will open in a popup to follow the authentication flow. The path to the page can be anything as long as it is in the same domain as your app (for example, https://yourdomain.com/tabauth). The only requirement for this page is to call the `TeamsMsal2Provider.handleAuth()` method, but you can add any content or loading progress you want.
 
-Here is an example of basic page that handles the auth flow in the popup.
+The following is an example of basic page that handles the auth flow in the popup.
 
 # [unpkg](#tab/unpkg)
 ```html
@@ -76,11 +76,11 @@ To get a client ID, you need to register an Azure Active Directory application. 
 
 Make sure to set the `redirect URI` in your app registration to point to the auth page you created in the previous step. For example, https://localhost:3000/tabauth.
 
-> Note: Make sure to set the `redirect URI` as a `Single Page Application (SPA)`. Teams Msal2 Provider makes use of Msal2 Provider behind the scenes.
+> **Note:** Make sure to set the `redirect URI` as a `Single Page Application (SPA)`. Teams Msal2 Provider makes use of Msal2 Provider behind the scenes.
 
 ## Initialize the Teams Msal2 Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams Msal2 Provider](../providers/teams-msal2.md) handles all of the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams Msal2 Provider](../providers/teams-msal2.md) handles all the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
 You can choose to initialize the provider in either your HTML or your JavaScript code. 
 
@@ -128,11 +128,11 @@ Now, you're ready to add any of the Microsoft Graph Toolkit components. The firs
 <mgt-login></mgt-login>
 ```
 
-The Login component renders a "Sign In" button that guides the user through the sign in process and integrates with any of the providers to handle the authentication. Once the user has signed in, all other toolkit components will be able to call the Microsoft Graph automatically. The providers also expose an authenticated Microsoft Graph client for making API calls or getting access tokens. See [Using the providers](../providers/providers.md) for more details.
+The Login component renders a "Sign In" button that guides the user through the sign in process and integrates with any of the providers to handle the authentication. After the user has signed in, all other toolkit components will be able to call Microsoft Graph automatically. The providers also expose an authenticated Microsoft Graph client for making API calls or getting access tokens. For details, see [Using the providers](../providers/providers.md).
 
-If you are using React, we recommend using the React components instead from the `mgt-react` library. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
+If you're using React, we recommend using the React components instead from the `mgt-react` library. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
 
 ## Next Steps
 - Try out the components in the [playground](https://mgt.dev).
-- Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
+- Ask a question on [Microsoft Q&A](/answers/topics/microsoft-graph-toolkit.html).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
