@@ -1,7 +1,7 @@
 ---
 title: "TeamsMsal2Provider"
 description: "Use the TeamsMsal2Provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive sign in."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: simonagren
 ---
 
