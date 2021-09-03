@@ -26,11 +26,27 @@ None.
 None.
 
 ## Relationships
+
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |authenticationContextClassReferences|[authenticationContextClassReferences](authenticationcontextclassreference.md) collection|Read-only. Nullable. Returns a collection of the specified authentication context class references.|
 |namedLocations|[namedLocations](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
 |policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access policies.|
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.conditionalAccessRoot"
+}-->
+
+```json
+{
+  "@odata.type": "#microsoft.graph.conditionalAccessRoot"
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

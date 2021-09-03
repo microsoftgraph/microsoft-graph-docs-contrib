@@ -24,7 +24,23 @@ None.
 None.
 
 ## Relationships
+
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |namedLocations|[namedLocations](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
 |policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access (CA) policies.|
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.conditionalAccessRoot"
+}-->
+
+```json
+{
+  "@odata.type": "#microsoft.graph.conditionalAccessRoot"
+}
+```
