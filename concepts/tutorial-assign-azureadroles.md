@@ -28,7 +28,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
-+ The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`.
++ The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, `RoleManagement.ReadWrite.Directory`, and `Directory.AccessAsUser.All`.
 + Authenticator app installed on your phone to register a user for multi-factor authentication (MFA).
 
 To consent to the required permissions in Graph Explorer:
@@ -38,9 +38,10 @@ To consent to the required permissions in Graph Explorer:
 
 2. Scroll through the list of permissions to these permissions:
     + Group (2), expand and then select **Group.ReadWrite.All**.
-    + Directory (4), expand and then select **Directory.Read.All**.
+    + Directory (4), expand and then select **Directory.Read.All** and **Directory.AccessAsUser.All**.
     + RoleAssignmentSchedule (2), expand and then select **RoleAssignmentSchedule.ReadWrite.Directory**.
     + RoleEligibilitySchedule (2), expand and then select **RoleEligibilitySchedule.ReadWrite.Directory**.
+    + RoleManagement (3), expand and then select **RoleManagement.ReadWrite.Directory**.
     + User (8), expand and then select **User.ReadWrite.All**.
    
    Select **Consent**, and then select **Accept** to accept the consent of the permissions. For the `RoleEligibilitySchedule.ReadWrite.Directory` and `RoleAssignmentSchedule.ReadWrite.All` permissions, consent on behalf of your organization.
@@ -211,9 +212,9 @@ Content-type: application/json
     "directoryScopeId": "/",
     "principalId": "e77cbb23-0ff2-4e18-819c-690f58269752",
     "scheduleInfo": {
-        "startDateTime": "2021-09-03T00:00:00Z",
+        "startDateTime": "2021-07-01T00:00:00Z",
         "expiration": {
-            "endDateTime": "2022-09-30T00:00:00Z",
+            "endDateTime": "2022-06-30T00:00:00Z",
             "type": "AfterDateTime"
         }
     }
@@ -233,33 +234,30 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
-    "id": "2303e6ff-5939-496f-8057-9203db4c75f3",
+    "id": "64a8bd54-4591-4f6a-9c77-3e9cb1fdd29b",
     "status": "Provisioned",
-    "createdDateTime": "2021-08-06T16:04:58.8662763Z",
-    "completedDateTime": "2021-08-06T16:05:02.53826Z",
+    "createdDateTime": "2021-09-03T20:45:28.3848182Z",
+    "completedDateTime": "2021-09-03T20:45:39.1194292Z",
     "action": "AdminAssign",
-    "principalId": "6d77df76-5f95-4e40-9a92-f9d35efbe243",
+    "principalId": "e77cbb23-0ff2-4e18-819c-690f58269752",
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "directoryScopeId": "/",
-    "appScopeId": null,
     "isValidationOnly": false,
-    "targetScheduleId": "2303e6ff-5939-496f-8057-9203db4c75f3",
+    "targetScheduleId": "64a8bd54-4591-4f6a-9c77-3e9cb1fdd29b",
     "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
     "createdBy": {
         "user": {
-            "displayName": null,
-            "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+            "id": "1ed8ac56-4827-4733-8f80-86adc2e67db5"
         }
     },
     "scheduleInfo": {
-        "startDateTime": "2021-08-06T16:05:02.53826Z",
-        "recurrence": null,
+        "startDateTime": "2021-09-03T20:45:39.1194292Z",
         "expiration": {
             "type": "afterDateTime",
-            "endDateTime": "2022-06-30T00:00:00Z",
-            "duration": null
+            "endDateTime": "2022-06-30T00:00:00Z"
         }
-    }
+    },
+    "ticketInfo": {}
 }
 ```
 
@@ -270,15 +268,14 @@ While the group members are now eligible for the User Administrator role, they'r
 
 ### Request
 
-In the following request, replace `92f37639-ba1e-471c-b9ba-922371c740cb` with the **id** of the user created in Step 1.
+In the following request, replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleAssignments_list"
 }-->
-
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq '92f37639-ba1e-471c-b9ba-922371c740cb'
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'
 ```
 
 ### Response
@@ -298,91 +295,23 @@ Content-type: application/json
 }
 ```
 
-The empty response object shows that the user has no existing Azure AD roles in Contoso. They'll now activate their eligible User Administrator role for a limited time.
+The empty response object shows that Aline has no existing Azure AD roles in Contoso. Aline will now activate their eligible User Administrator role for a limited time.
 
 ## Step 5: User self-activates their eligible assignment
 
 An incident ticket CONTOSO: Security-012345 has been raised in Contoso's incident management system and the company requires that all employee's refresh tokens b invalidated. As a member of IT Helpdesk, the user is responsible for fulfilling this task.
 
-Sign in to Graph Explorer as the user created in Step 1. You'll first change your password because this was specified during account creation. Then, because the administrator configured your account for MFA, you'll be prompted to set up your account in the Authenticator app and be challenged for MFA sign-in. This is because PIM requires that all active role assignments require Azure MFA. After signing in, you are now ready to activate your assignment.
+First, start the Authenticator app on your phone and open Aline Dupuy's account.
 
-First, confirm the eligible assignment you (signed-in as the user created in Step 1) are allowed to activate.
+Sign in to Graph Explorer as Aline. You'll first change your password because this was specified during account creation. Then, because the administrator configured your account for MFA, you'll be prompted to set up your account in the Authenticator app and be challenged for MFA sign-in. This is because PIM requires that all active role assignments require Azure MFA.
 
-### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-assignaadroles-roleEligibilityScheduleRequests_filterByCurrentUser_list"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/filterByCurrentUser(on='principal')
-```
-
-### Response
-
-The following response objects shows that you have ben assigned role eligibility identified by the **targetScheduleId** `b43db1e8-9674-4a27-be35-3a15fdec76a3`. This is the identifier of the unifiedRoleEligibilityScheduleRequest object that you created in Step 3.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.roleEligibilityScheduleRequests"
-} -->
-```
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilityScheduleRequest)",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.unifiedRoleEligibilityScheduleRequest",
-            "id": "b43db1e8-9674-4a27-be35-3a15fdec76a3",
-            "status": "Provisioned",
-            "createdDateTime": "2021-08-09T09:39:46.16Z",
-            "completedDateTime": "2021-08-09T09:39:46.263Z",
-            "approvalId": null,
-            "customData": null,
-            "action": "AdminAssign",
-            "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
-            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
-            "directoryScopeId": "/",
-            "appScopeId": null,
-            "isValidationOnly": false,
-            "targetScheduleId": "b43db1e8-9674-4a27-be35-3a15fdec76a3",
-            "justification": "Assign User Admin eligibility to Allan Deyoung",
-            "createdBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "displayName": null,
-                    "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
-                }
-            },
-            "scheduleInfo": {
-                "startDateTime": "2021-08-09T09:39:46.2631879Z",
-                "recurrence": null,
-                "expiration": {
-                    "type": "afterDateTime",
-                    "endDateTime": "2022-06-30T00:00:00Z",
-                    "duration": null
-                }
-            },
-            "ticketInfo": {
-                "ticketNumber": null,
-                "ticketSystem": null
-            }
-        }
-    ]
-}
-```
-
-Now, activate your User Administrator role for five hours.
+After signing in, activate your User Administrator role for five hours.
 
 ### Request
 
-To activate a role, call the roleEligibilityScheduleRequests endpoint. In this request, the `UserActivate` action allows you to activate your eligible assignment, in this case for 5 hours.
+To activate a role, call the roleAssignmentScheduleRequests endpoint. In this request, the `UserActivate` action allows you to activate your eligible assignment, in this case for five hours.
 
-+ For **principalId**, supply the value of your id.
++ For **principalId**, supply the value of your (Aline's) id.
 + The **roleDefinitionId** is the **id** of the role you are eligible for, in this case, the User Administrator role.
 + Enter the details of the ticket system which provides an auditable justification for activating the request.
 
@@ -396,12 +325,12 @@ Content-type: application/json
 
 {
     "action": "SelfActivate",
-    "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+    "principalId": "7146daa8-1b4b-4a66-b2f7-cf593d03c8d2",
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "directoryScopeId": "/",
     "justification": "Need to invalidate all app refresh tokens for Contoso users.",
     "scheduleInfo": {
-        "startDateTime": "2021-08-17T15:13:00.000Z",
+        "startDateTime": "2021-09-04T15:13:00.000Z",
         "expiration": {
             "type": "AfterDuration",
             "duration": "PT5H"
@@ -428,31 +357,24 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
-    "id": "7670bbfa-486d-49b4-9d9c-b2c3b45f848a",
-    "status": "Provisioned",
-    "createdDateTime": "2021-08-17T15:13:43.2752078Z",
-    "completedDateTime": "2021-08-17T15:13:45.8690117Z",
-    "approvalId": null,
-    "customData": null,
+    "id": "295edd40-4646-40ca-89b8-ab0b46b6f60e",
+    "status": "Granted",
+    "createdDateTime": "2021-09-03T21:10:49.6670479Z",
+    "completedDateTime": "2021-09-04T15:13:00Z",
     "action": "SelfActivate",
-    "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+    "principalId": "7146daa8-1b4b-4a66-b2f7-cf593d03c8d2",
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "directoryScopeId": "/",
-    "appScopeId": null,
     "isValidationOnly": false,
-    "targetScheduleId": "7670bbfa-486d-49b4-9d9c-b2c3b45f848a",
+    "targetScheduleId": "295edd40-4646-40ca-89b8-ab0b46b6f60e",
     "justification": "Need to invalidate all app refresh tokens for Contoso users.",
     "createdBy": {
-        "application": null,
-        "device": null,
         "user": {
-            "displayName": null,
-            "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f"
+            "id": "7146daa8-1b4b-4a66-b2f7-cf593d03c8d2"
         }
     },
     "scheduleInfo": {
-        "startDateTime": "2021-08-17T15:13:45.8690117Z",
-        "recurrence": null,
+        "startDateTime": "2021-09-04T15:13:00Z",
         "expiration": {
             "type": "afterDuration",
             "endDateTime": null,
@@ -466,24 +388,24 @@ Content-type: application/json
 }
 ```
 
-Repeat the second request in Step 4 to confirm your active assignment for the User Administrator role. This time, the response object returns your newly activated role assignment. With your new privilege, carry out any allowed actions within five hours your assignment is active for. This includes invalidating all employees' refresh tokens. After five hours, the active assignment expires but through your membership in the **IT Support (Users)** group, you still remain eligible for the User Administrator role.
+You may confirm your assignment by running `GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')`. The response object returns your newly activated role assignment with its status set to `Granted`. With your new privilege, carry out any allowed actions within five hours your assignment is active for. This includes invalidating all employees' refresh tokens. After five hours, the active assignment expires but through your membership in the **IT Support (Users)** group, you still remain eligible for the User Administrator role.
 
 ## Step 6: Clean up resources
 
-Delete the following resources that you created for this tutorial: the test user,  IT Support (Users) group, and the role eligibility request.
+Log in as the Global Administrator and delete the following resources that you created for this tutorial: the test user (Aline Dupuy),  IT Support (Users) group, and the role eligibility request.
 
 ### Delete the test user
 
 #### Request
 
-Replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of test user that you created in Step 1.
+Replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-user_delete"
 }-->
 ```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/users/825f1b5e-6fb2-4d9a-b393-d491101acc0c
+DELETE https://graph.microsoft.com/beta/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2
 ```
 
 #### Response
@@ -496,16 +418,58 @@ DELETE https://graph.microsoft.com/beta/users/825f1b5e-6fb2-4d9a-b393-d491101acc
 HTTP/1.1 204 No Content
 ```
 
-### Delete the IT Support (Users) group
+### Revoke the role eligibility request
 
-Replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of IT Support (Users) group. Deleting this group also removes the role eligibility assignment.
+Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Users) group.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-group_delete"
 }-->
 ```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c
+DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
+Content-type: application/json
+
+{
+    "action": "AdminRemove",
+    "principalId": "e77cbb23-0ff2-4e18-819c-690f58269752",
+    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+    "directoryScopeId": "/"
+}
+
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+    "id": "dcd11a1c-300f-4d17-8c7a-523830400ec8",
+    "status": "Revoked",
+    "action": "AdminRemove",
+    "principalId": "e77cbb23-0ff2-4e18-819c-690f58269752",
+    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+    "directoryScopeId": "/"
+}
+```
+
+### Delete the IT Support (Users) group
+
+Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Users) group.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-assignaadroles-group_delete"
+}-->
+```msgraph-interactive
+DELETE https://graph.microsoft.com/beta/groups/e77cbb23-0ff2-4e18-819c-690f58269752
 ```
 
 #### Response
@@ -517,6 +481,8 @@ DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101ac
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
 
 ## See also
 
