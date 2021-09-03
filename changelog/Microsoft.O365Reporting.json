@@ -307,7 +307,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "reportroot-getemailactivityuserdetail",
           "ChangeType": "Change",
-          "Description": "we are hiding identifiable names for users, groups, and sites by default for [Microsoft 365 usage reports](https://docs.microsoft.com/en-us/graph/api/resources/report) APIs to help companies support their local privacy laws. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports) about the settings that govern identification/de-identification of information in the M365 Usage reports data.",
+          "Description": "we are hiding identifiable names for users, groups, and sites by default for [Microsoft 365 usage reports](https://docs.microsoft.com/en-us/graph/api/resources/report) APIs to help companies support their local privacy laws. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports) about the settings that govern identification/de-identification of information in the M365 usage reports data.",
           "Target": "reportroot-getemailactivityuserdetail"
         }
       ],
@@ -333,7 +333,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "reportroot-getemailactivityuserdetail",
           "ChangeType": "Change",
-          "Description": "we are hiding identifiable names for users, groups, and sites by default for [Microsoft 365 usage reports](https://docs.microsoft.com/en-us/graph/api/resources/report) APIs to help companies support their local privacy laws. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports) about the settings that govern identification/de-identification of information in the M365 Usage reports data.",
+          "Description": "we are hiding identifiable names for users, groups, and sites by default for [Microsoft 365 usage reports](https://docs.microsoft.com/en-us/graph/api/resources/report) APIs to help companies support their local privacy laws. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports) about the settings that govern identification/de-identification of information in the M365 usage reports data.",
           "Target": "reportroot-getemailactivityuserdetail"
         }
       ],

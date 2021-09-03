@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports) about the settings that govern identification/de-identification of information in the M365 Usage reports data.
+With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports) about the settings that govern identification/de-identification of information in the M365 usage reports data.
 
 ## Authorization
 
