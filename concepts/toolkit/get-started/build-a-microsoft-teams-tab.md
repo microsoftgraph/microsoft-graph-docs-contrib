@@ -7,7 +7,7 @@ author: simonagren
 
 # Build a Microsoft Teams tab with the Microsoft Graph Toolkit
 
-This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. For implementing SSO with a custom backend, see [Build a Microsoft Teams Tab (SSO)](./build-a-microsoft-teams-sso-tab.md).
+This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. If you're implementing SSO with a custom backend, see [Build a Microsoft Teams tab (SSO)](./build-a-microsoft-teams-sso-tab.md).
 
 Getting started involves the following steps:
 
