@@ -44,22 +44,22 @@ POST /groups
 | Content-Type  | application/json  |
 
 ## Request body
-The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group. 
+
+In the request body, supply a JSON representation of the [group](../resources/group.md) object.
+
+The following table shows the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Maximum length: 256 characters. Required. |
 | mailEnabled | boolean | Set to `true` for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Max. length: 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. Required. |
-| securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. |
+| securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required.  **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.|
 
-> **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
-
-Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
-
->**Note:** Creating a group using the Group.Create application permission without specifying owners will create the group anonymously and the group will not be modifiable. You can use the `POST` operation and add owners to the group while creating it to specify owners who can modify the group.
-
-> Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
+> [!IMPORTANT]
+> Creating a group using the **Group.Create** application permission without specifying owners will create the group anonymously and the group will not be modifiable. Add owners to the group while creating it to specify owners who can modify the group.
+>
+>Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
 
 
 ### groupTypes options
