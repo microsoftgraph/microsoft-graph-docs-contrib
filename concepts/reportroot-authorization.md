@@ -13,7 +13,7 @@ Report data accessible via the Microsoft Graph reports API is sensitive. In part
 The APIs to read Microsoft 365 usage reports support two types of authorization:
 
 - **Application-level authorization** - Allows an app to read all service usage reports without a signed-in user. The permissions granted to the application determine authorization.
-- **User delegated authorization** - Allows an app to read all service usage reports on behalf of the signed-in user. In addition to the app having been granted the required permissions, the user must be a member of an Azure AD limited administrator role. This can be one of the following roles: company administrator, Exchange administrator, SharePoint administrator, Lync administrator, Teams Service Administrator, Teams Communications Administrator, global reader, Usage Summary Reports Reader or reports reader. From the above roles, global reader and usage summary reports reader will only have access to tenant level data without visibility to detail metrics.
+- **User delegated authorization** - Allows an app to read all service usage reports on behalf of the signed-in user. In addition to the app having been granted the required permissions, the user must be a member of an Azure AD limited administrator role. This can be one of the following roles: company administrator, Exchange administrator, SharePoint administrator, Lync administrator, Teams Service Administrator, Teams Communications Administrator, global reader, Usage Summary Reports Reader, or reports reader. The global reader and Usage Summary Reports Reader roles will only have access to tenant-level data, without visibility into detailed metrics.
 
 If you're calling the APIs from Graph Explorer:
 
