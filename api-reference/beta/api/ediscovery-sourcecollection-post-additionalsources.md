@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Add additional source
+# Create dataSource
 
 Namespace: microsoft.graph.ediscovery
 
