@@ -41,6 +41,15 @@ POST /roleManagement/directory/roleAssignments
 
 In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure Active Directory (Azure AD) specified by **directoryScopeId**, or an application-specific scope specified by the **appScopeId**. Examples of Azure AD scopes are tenant (`/`), administrative units, or applications. For more information on appScope, see [appScope](../resources/appscope.md).
 
+The following table shows the properties that are required when you create a [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.
+
+| Parameter | Type | Description|
+|:---------------|:--------|:----------|
+|roleDefinitionId|String| Identifier of the role definition the assignment is for.|
+|principalId|String| The identifier of the principal to which the assignment is granted. |
+|directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. Either this property or **appScopeId** is required. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only.|
+|appScopeId|String|Identifier of the app-specific scope when the assignment scope is app-specific. Either this property or **appScopeId** is required. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
