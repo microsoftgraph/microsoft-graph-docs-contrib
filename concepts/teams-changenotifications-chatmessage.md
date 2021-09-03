@@ -2,7 +2,7 @@
 title: "Get change notifications for messages in Teams channels and chats using Microsoft Graph"
 description: "Change notifications enables you to listen to changes to messages in channel or chat"
 author: "RamjotSingh"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---

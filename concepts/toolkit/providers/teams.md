@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Teams provider"
 description: "Use the Teams provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 

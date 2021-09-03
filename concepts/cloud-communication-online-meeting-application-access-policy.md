@@ -2,7 +2,7 @@
 title: "Allow applications to access online meetings on behalf of a user"
 description: "Find out how to configure applications to access online meetings on behalf of a user."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
