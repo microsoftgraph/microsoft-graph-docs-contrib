@@ -581,8 +581,8 @@
 			"Cloud": "prd",
 			"Version": "beta",
 			"CreatedDateTime": "2021-08-09T22:07:42.610Z",
-			"WorkloadArea": "eDiscovery",
-			"SubArea": ""
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
 		}
 	]
 }
