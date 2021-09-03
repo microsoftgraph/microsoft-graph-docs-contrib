@@ -1,11 +1,11 @@
 ---
-title: "Build a Microsoft Teams Single Sign-on (SSO) tab with the Microsoft Graph Toolkit"
+title: "Build a Microsoft Teams SSO tab with the Microsoft Graph Toolkit"
 description: "Get started building a Microsoft Teams SSO tab using the Microsoft Graph Toolkit."
 ms.localizationpriority: medium
 author: simonagren
 ---
 
-# Build a Microsoft Teams Single Sign-On (SSO) tab with the Microsoft Graph Toolkit
+# Build a Microsoft Teams SSO tab with the Microsoft Graph Toolkit
 
 This topic describes how to use the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single-page app with single sign-on (SSO) and does require a backend. If you're implementing a Teams tab with interactive sign in, see [Build a Microsoft Teams Tab](./build-a-microsoft-teams-tab.md).
 
