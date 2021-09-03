@@ -59,7 +59,7 @@ You can configure the `Msal2Provider` constructor parameter in two ways, as desc
 
 #### Provide a `clientId` to create a new `PublicClientApplication`
 
-This option makes sense when Graph Toolkit is responsible for all authentication in your application.
+This option makes sense when the Microsoft Graph Toolkit is responsible for all authentication in your application.
 
 ```ts
 interface Msal2Config {
@@ -78,9 +78,9 @@ interface Msal2Config {
 
 #### Pass an existing `PublicClientApplication` in the `publicClientApplication` property.
 
-Use this when your app uses MSAL functionality beyond what's exposed by the `Msal2Provider` and other Microsoft Graph Toolkit features. This is particularly appropriate if a framework automatically instantiates and exposes a `PublicClientApplication` for you; for example, when using [msal-angular](/azure/active-directory/develop/tutorial-v2-angular). See the `angular-app` sample in the Microsoft Graph Toolkit [repo](https://github.com/microsoftgraph/microsoft-graph-toolkit) for further guidance.
+Use this when your app uses MSAL functionality beyond what's exposed by the `Msal2Provider` and other Microsoft Graph Toolkit features. This is particularly appropriate if a framework automatically instantiates and exposes a `PublicClientApplication` for you; for example, when using [msal-angular](/azure/active-directory/develop/tutorial-v2-angular). For further guidance, see the `angular-app` sample in the Microsoft Graph Toolkit [repo](https://github.com/microsoftgraph/microsoft-graph-toolkit).
 
-Be sure to understand opportunities for collisions when using this option. By its very nature, there is a risk that the `Msal2Provider` can change the state of a session, for example by having the user sign in or consent to additional scopes. Make sure that your app and other frameworks respond gracefully to these changes in state, or consider using a [custom provider](./custom.md) instead.
+Be sure to understand opportunities for collisions when using this option. By its very nature, there is a risk that the `Msal2Provider` can change the state of a session; for example, by having the user sign in or consent to additional scopes. Make sure that your app and other frameworks respond gracefully to these changes in state, or consider using a [custom provider](./custom.md) instead.
 
 ```ts
 interface Msal2PublicClientApplicationConfig {
