@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an IPv4 range using the Classless inter-domain routing (CIDR) notation.
+Represents an IPv4 range using the Classless Inter-Domain Routing (CIDR) notation.
 
 Inherits from [ipRange](../resources/iprange.md)
 

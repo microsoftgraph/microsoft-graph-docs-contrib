@@ -1,5 +1,5 @@
 ---
-title: "Delete an appRoleAssignment from a group"
+title: "Delete appRoleAssignment"
 description: "Delete an appRoleAssignment that has been granted to a group."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "groups"
 author: "psignoret"
 ---
 
-# Delete an appRoleAssignment granted to a group
+# Delete appRoleAssignment
 
 Namespace: microsoft.graph
 

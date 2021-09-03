@@ -1,5 +1,5 @@
 ---
-title: "Delete an appRoleAssignment granted for a service principal"
+title: "Delete appRoleAssignedTo"
 description: "Delete an appRoleAssignment granted for a service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "applications"
 author: "sureshja"
 ---
 
-# Delete an appRoleAssignment granted for a service principal
+# Delete appRoleAssignedTo
 
 Namespace: microsoft.graph
 
