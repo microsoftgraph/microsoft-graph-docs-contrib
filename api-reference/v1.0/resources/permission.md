@@ -27,11 +27,15 @@ Here is a JSON representation of the resource
     "link",
     "grantedTo",
     "grantedToIdentities",
+    "grantedToV2",
+    "grantedToIdentitiesV2",
     "invitation",
     "inheritedFrom",
     "shareId",
     "expirationDateTime",
-    "hasPassword"
+    "hasPassword",,
+    "@deprecated.GrantedTo",
+    "@deprecated.GrantedToIdentities"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
@@ -42,13 +46,17 @@ Here is a JSON representation of the resource
   "id": "string (identifier)",
   "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
   "grantedToIdentities": [{"@odata.type": "microsoft.graph.identitySet"}],
+  "grantedToV2": {"@odata.type": "microsoft.graph.sharePointIdentitySet"},
+  "grantedToIdentitiesV2": [{"@odata.type": "microsoft.graph.sharePointIdentitySet"}],
   "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
   "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
   "link": {"@odata.type": "microsoft.graph.sharingLink"},
   "roles": ["string"],
   "shareId": "string",
   "expirationDateTime": "string (timestamp)",
-  "hasPassword": "boolean"
+  "hasPassword": "boolean",
+  "@deprecated.GrantedToIdentities": "string",
+  "@deprecated.GrantedTo": "string"    
 }
 ```
 
@@ -59,6 +67,8 @@ Here is a JSON representation of the resource
 | id            | String                                    | The unique identifier of the permission among all permissions on the item. Read-only.
 | grantedTo     | [IdentitySet](identityset.md)             | For user type permissions, the details of the users & applications for this permission. Read-only.
 | grantedToIdentities | Collection([IdentitySet](identityset.md)) | For link type permissions, the details of the users to whom permission was granted. Read-only.
+| grantedToV2   | [SharePointIdentitySet][]                 | For user type permissions, the details of the users & applications for this permission. Read-only.
+| grantedToIdentitiesV2 | Collection([SharePointIdentitySet][]) | For link type permissions, the details of the users to whom permission was granted. Read-only.
 | invitation    | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only.
 | inheritedFrom | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
 | link          | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only.
@@ -76,6 +86,7 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
+[SharePointIdentitySet]: sharePointIdentitySet.md
 
 ### Roles property values
 
@@ -137,6 +148,7 @@ This link provides read and write access to the specific people in the `grantedT
 ```json
 {
   "id": "3",
+  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
   "grantedToIdentities": [
     {
        "user": {
@@ -148,6 +160,30 @@ This link provides read and write access to the specific people in the `grantedT
        "user": {
         "id": "9397721fh4hgh73",
         "displayName": "Judith Clemons"
+      }
+    }
+  ],
+  "grantedToIdentitiesV2": [
+    {
+       "user": {
+        "id": "35fij1974gb8832",
+        "displayName": "Misty Suarez"
+      },
+      "siteUser": {
+        "id": "1",
+        "displayName": "Misty Suarez",
+        "loginName": "Misty Suarez"
+      }
+    },
+    {
+       "user": {
+        "id": "9397721fh4hgh73",
+        "displayName": "Judith Clemons"
+      },
+      "siteUser": {
+        "id": "2",
+        "displayName": "Misty Suarez",
+        "loginName": "Judith Clemons"
       }
     }
   ],
@@ -212,11 +248,23 @@ property will contain the information about the account that redeemed the permis
 ```json
 {
   "id": "1",
+  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "roles": ["write"],
   "grantedTo": {
     "user": {
       "id": "5D33DD65C6932946",
       "displayName": "John Doe"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "5D33DD65C6932946",
+      "displayName": "John Doe"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "John Doe",
+      "loginName": "John Doe"
     }
   },
   "invitation": {
@@ -243,6 +291,7 @@ property will contain the information about the account that redeemed the permis
 ## Remarks
 
 OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
+GrantedTo and GrantedToIdentities will be deprecated going forward and the response will be migrated to GrantedToV2 and GrantedToIdentitiesV2 respectively under appropriate property names.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -253,4 +302,3 @@ OneDrive for Business and SharePoint document libraries do not return the **inhe
   "section": "documentation",
   "tocPath": "Resources/Permission"
 } -->
-
