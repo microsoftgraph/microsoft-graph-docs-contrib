@@ -49,7 +49,7 @@ The following table lists the properties that are required to create an [ipNamed
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |displayName|String|Human-readable name of the location. Required.|
-|ipRanges|[ipRange](../../beta/resources/iprange.md) collection|List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC596. Required. The **@odata.type** of the ipRange is also required.|
+|ipRanges|[ipRange](../resources/iprange.md) collection|List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC596. Required. The **@odata.type** of the ipRange is also required.|
 
 The following table lists the properties that are required to create an [countryNamedLocation](../resources/countrynamedlocation.md) object.
 
