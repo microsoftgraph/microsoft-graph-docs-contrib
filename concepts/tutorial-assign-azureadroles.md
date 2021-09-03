@@ -8,16 +8,16 @@ ms.prod: "governance"
 
 # Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles
 
-Contoso Limited is a growing service provider that wishes to have its IT Helpdesk manage the lifecycle of employees’ access.
+Contoso Limited is a growing service provider that wishes to have its IT Helpdesk manage the lifecycle of employees’ access. They have identified the Azure Active Directory (Azure AD) User Administrator role as the appropriate privileged role required by IT Helpdesk.
 
-In this tutorial, you as the Global Administrator of Contoso Limited create a role-assignable security group for IT Helpdesk. Add an employee as a group member. Using the PIM API, then add the security group as eligible for the User Administrator role.
+In this tutorial, you as the Global Administrator of Contoso Limited create a role-assignable security group for IT Helpdesk. Add an employee as a group member. Then, using the PIM API, add the security group as eligible for the User Administrator role.
 
 By using a security group to assign the eligible role, Contoso has a more efficient way to manage administrator access to resources such as Azure AD roles. For example:
 
 + Removing existing or adding more group members also removes administrators.
 + Adding more roles to the group members, for example, roles to manage user-facing applications.
 
-Assigning eligibility instead of a persistently active User Administrator privilege allows the company to enforce **just-in-time access** which grants temporary permissions to carry out the privileged tasks. After defining the role eligibility, the eligible group member then activates their assignment for a temporary period.
+Assigning eligibility instead of a persistently active User Administrator privilege allows the company to enforce **just-in-time access** which grants temporary permissions to carry out the privileged tasks. After defining the role eligibility, the eligible group member then activates their assignment for a temporary period. All records of role activations will be auditable by the company.
 
 >[!NOTE]
 >The response objects shown in this tutorial might be shortened for readability.
@@ -27,10 +27,8 @@ Assigning eligibility instead of a persistently active User Administrator privil
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role. 
++ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
 + The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`.
-        > [!NOTE]
-        > Note for Faith, test out using RoleManagement.ReadWrite.All only. Consent to RoleAssignment/EligibilitySchedule Read perms only for org.
 + Authenticator app installed on your phone to register a user for multi-factor authentication (MFA).
 
 To consent to the required permissions in Graph Explorer:
@@ -55,6 +53,7 @@ Create a user who must reset their password at first sign in. From this step, re
 
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-createUser"
@@ -67,7 +66,7 @@ Content-Type: application/json
     "accountEnabled": true,
     "displayName": "Aline Dupuy",
     "mailNickname": "AlineD",
-    "userPrincipalName": "AlineD@m365x435773.onmicrosoft.com",
+    "userPrincipalName": "AlineD@ThePhoneCompanyLtd.onmicrosoft.com",
     "passwordProfile": {
         "forceChangePasswordNextSignIn": true,
         "password": "xWwvJ]6NMw+bWH-d"
@@ -88,20 +87,21 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-    "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/92f37639-ba1e-471c-b9ba-922371c740cb/Microsoft.DirectoryServices.User",
-    "id": "92f37639-ba1e-471c-b9ba-922371c740cb",
+    "@odata.id": "https://graph.microsoft.com/v2/29a4f813-9274-4e1b-858d-0afa98ae66d4/directoryObjects/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2/Microsoft.DirectoryServices.User",
+    "id": "7146daa8-1b4b-4a66-b2f7-cf593d03c8d2",
     "displayName": "Aline Dupuy",
-    "userPrincipalName": "AlineD@m365x435773.onmicrosoft.com"
+    "userPrincipalName": "AlineD@ThePhoneCompanyLtd.onmicrosoft.com"
 }
 ```
 
 ## Step 2: Create a security group that can be assigned an Azure AD role
 
-Create a group that’s assignable to an Azure AD role. Assign yourself as the group owner and both you and the user created in Step 1 as members.
+Create a group that’s assignable to an Azure AD role. Assign yourself as the group owner and both you and Aline as members.
 
-### Request
+### Request : Create a role-assignable group
 
-Replace `fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f` with your **id** and `92f37639-ba1e-471c-b9ba-922371c740cb` with the **id** of the user you created in Step 1.
+Replace `1ed8ac56-4827-4733-8f80-86adc2e67db5` with your **id**.
+
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-createSecurityGroup"
@@ -118,75 +118,69 @@ Content-type: application/json
     "securityEnabled": true,
     "isAssignableToRole": true,
     "owners@odata.bind": [
-        "https://graph.microsoft.com/v1.0/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
-    ],
-    "members@odata.bind": [
-        "https://graph.microsoft.com/v1.0/users/92f37639-ba1e-471c-b9ba-922371c740cb",
-        "https://graph.microsoft.com/v1.0/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+        "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
     ]
 }
 ```
 
 ### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group"
 } -->
-
 ```
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
-    "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/6d77df76-5f95-4e40-9a92-f9d35efbe243/Microsoft.DirectoryServices.Group",
-    "id": "6d77df76-5f95-4e40-9a92-f9d35efbe243",
-    "createdDateTime": "2021-08-06T15:56:44Z",
+    "@odata.id": "https://graph.microsoft.com/v2/29a4f813-9274-4e1b-858d-0afa98ae66d4/directoryObjects/e77cbb23-0ff2-4e18-819c-690f58269752/Microsoft.DirectoryServices.Group",
+    "id": "e77cbb23-0ff2-4e18-819c-690f58269752",
     "description": "IT Helpdesk to support Contoso employees",
     "displayName": "IT Helpdesk (User)",
     "groupTypes": [],
     "isAssignableToRole": true,
-    "mail": null,
     "mailEnabled": false,
     "mailNickname": "userHelpdesk",
-    "renewedDateTime": "2021-08-06T15:56:44Z",
     "securityEnabled": true,
-    "securityIdentifier": "S-1-12-1-1836572534-1312841621-3556348570-1138948958",
-    "visibility": "Private"
+    "securityIdentifier": "S-1-12-1-3883711267-1310199794-258579585-1385637464",
+    "visibility": "Private",
+    "onPremisesProvisioningErrors": []
 }
 ```
 
 ### Request
 
-Assign two members to the security group, including yourself. In the following request, replace:
-+ `6d77df76-5f95-4e40-9a92-f9d35efbe243` with the value of the group's **id**.
-+ `92f37639-ba1e-471c-b9ba-922371c740cb` with the value of the new user's **id**.
-+ `fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f` with the value of your **id**.
+Assign yourself and Aline as the two members to the security group. In the following request, replace:
++ `e77cbb23-0ff2-4e18-819c-690f58269752` in the URL with the value of the group's **id**.
++ `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
++ `1ed8ac56-4827-4733-8f80-86adc2e67db5` with the value of your **id**.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-addGroupMembers"
 }-->
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/groups/6d77df76-5f95-4e40-9a92-f9d35efbe243
+PATCH https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269752
 Content-type: application/json
 
 {
     "members@odata.bind": [
-        "https://graph.microsoft.com/v1.0/users/92f37639-ba1e-471c-b9ba-922371c740cb",
-        "https://graph.microsoft.com/v1.0/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+        "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
+        "https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2"
     ]
 }
 ```
 
 ### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group"
 } -->
-
 ```
 HTTP/1.1 204 No Content
 ```
@@ -195,12 +189,12 @@ HTTP/1.1 204 No Content
 
 Now that you have a security group, assign it as eligible for the User Administrator role. In this step:
 
-+ Create a unifiedRoleEligibilityScheduleRequest that identifies the group **IT Helpdesk (User)** as eligible for the User Administrator role for one year. Azure AD extends this eligible assignment the group members, that is, you and the new user.
-+ Scope the eligible assignment to your entire tenant. This allows the user admin to use their privilege against all users in your tenant, except higher privilege users such as the Global Administrator.
++ Create a unifiedRoleEligibilityScheduleRequest object that identifies the group **IT Helpdesk (User)** as eligible for the User Administrator role for one year. Azure AD extends this eligible assignment to the group members, that is, you and Aline.
++ Scope the eligible assignment to your entire tenant. This allows the user admin to use their privilege against all users in your tenant, except higher privileged users such as the Global Administrator.
 
 ### Request
 
-Replace `6d77df76-5f95-4e40-9a92-f9d35efbe243` with the value of the **id** of the **IT Helpdesk (User)** security group you created in Step 2. This **principalId** identifies the assignee of eligibility to the User Administrator role. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Azure AD.
+Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the value of the **id** of the **IT Helpdesk (User)** security group. This **principalId** identifies the assignee of eligibility to the User Administrator role. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Azure AD.
 
 <!-- {
   "blockType": "request",
@@ -215,11 +209,11 @@ Content-type: application/json
     "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "directoryScopeId": "/",
-    "principalId": "6d77df76-5f95-4e40-9a92-f9d35efbe243",
+    "principalId": "e77cbb23-0ff2-4e18-819c-690f58269752",
     "scheduleInfo": {
-        "startDateTime": "2021-07-01T00:00:00Z",
+        "startDateTime": "2021-09-03T00:00:00Z",
         "expiration": {
-            "endDateTime": "2022-06-30T00:00:00Z",
+            "endDateTime": "2022-09-30T00:00:00Z",
             "type": "AfterDateTime"
         }
     }
@@ -227,6 +221,7 @@ Content-type: application/json
 ```
 
 ### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
