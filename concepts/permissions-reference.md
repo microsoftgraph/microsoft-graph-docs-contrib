@@ -638,6 +638,25 @@ Administrators can configure [application access policy](auth-limit-mailbox-acce
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 
+## Data Subject Request permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+DataSubjectRequest.Read.All | Read data subject requests | Allows the app to read data subject requests on behalf of the signed-in user. | Yes | No |
+DataSubjectRequest.ReadWrite.All | Read and write data subject requests | Allows the app to read and write data subject requests on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+None
+
+Example usage
+Delegated
+DataSubjectRequest.Read.All: Get the list of data subject request available to the user (`GET /compliance/datasubjectrequest`)
+DataSujectRequest.ReadWrite.All: Create a data subject request (`POST /compliance/datasubjectrequest`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
 ## Device permissions
 
 #### Delegated permissions

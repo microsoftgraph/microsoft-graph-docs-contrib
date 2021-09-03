@@ -1,6 +1,6 @@
 ---
 title: "authoredNote resource type"
-description: "Represents the properties of the note written by an author"
+description: "Represents the properties of a note written by an author"
 author: "skadam-msft"
 localization_priority: Normal
 ms.prod: "compliance"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of the note written by an author
+Represents the properties of a note written by an author.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|author|[identity](../resources/identity.md)|Identity information about the note's author|
-|content|[itemBody](../resources/itembody.md)|The content of the note|
-|createdDateTime|DateTimeOffset|The date and time when the entity was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|author|[identity](../resources/identity.md)|Identity information about the note's author.|
+|content|[itemBody](../resources/itembody.md)|The content of the note.|
+|createdDateTime|DateTimeOffset|The date and time when the entity was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
 None.
@@ -45,8 +45,8 @@ The following is a JSON representation of the resource.
   },
   "content": {
     "@odata.type": "microsoft.graph.itemBody",
-    "content": "This is a note",
-    "contentType": "text"
+    "content": "String",
+    "contentType": "String"
   },
   "createdDateTime": "String (timestamp)"
 }

@@ -36,11 +36,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.dataSubject",
-  "email": "aikchen@live.com",
-  "firstName": "Aik",
-  "lastName": "Chen",
-  "residency": "USA",
-  "SSN": "1234567890"
+  "email": "String",
+  "firstName": "String",
+  "lastName": "String",
+  "residency": "String",
+  "SSN": "String"
 }
 ```
 

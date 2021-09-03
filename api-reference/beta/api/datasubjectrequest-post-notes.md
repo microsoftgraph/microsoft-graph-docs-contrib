@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new authoredNote object.
+Create a new [authoredNote](../resources/authorednote.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -69,7 +69,7 @@ Content-length: 203
 {
 "content": 
   {
-    "content": "Adding note from API.",
+    "content": "String",
     "contentType": "text"
   }
 }
@@ -89,17 +89,13 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/dataSubjectRequests('77f885ac-1d7b-4317-bde8-4cb3d24a3ed8')/notes/$entity",
-    "id": "17f7fc36-74d8-402a-8ac1-90e4bc688310",
-    "createdDateTime": "2021-07-28T21:38:20.5151187Z",
-    "author": {
-        "id": null,
-        "displayName": "admin@contoso.onmicrosoft.com"
-    },
+    "id": "String (identifier)",
+    "createdDateTime": "String (timestamp)",
+    "author": { "@odata.type": "microsoft.graph.identitySet"},
     "content": {
-        "content": "Adding note from API.",
-        "contentType": "text"
+          "@odata.type": "microsoft.graph.itemBody"
     }
+
 }
 ```
 

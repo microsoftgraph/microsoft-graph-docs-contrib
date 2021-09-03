@@ -37,14 +37,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.dataSubjectRequestHistory",
-    "type": "CaseCreated",
-    "stage": "contentRetrieval",
-    "stageStatus": "notStarted",
-    "eventDateTime": "2021-06-21T12:03:40.1644015Z",
+    "type": "String",
+    "stage": "String",
+    "stageStatus": "String",
+    "eventDateTime": "String (timeStamp)",
     "changedBy": {
         "user": {
-            "id": "",
-            "displayName": "user@contoso.onmicrosoft.com"
+            "id": "String",
+            "displayName": "String"
         }
     }
 }

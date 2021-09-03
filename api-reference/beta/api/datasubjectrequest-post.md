@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|contains the properties for data subject for the request.|
+|dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|Contains the properties for data subject for the request.|
 |dataSubjectType|dataSubjectType|Data subject type. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
 |description|String|Description for the request.|
 |displayName|String|Name of the request.|
@@ -73,19 +73,19 @@ Content-Type: application/json
 Content-length: 849
 
 {
-    "type": "export",
-    "dataSubjectType": "customer",
-    "regulations": ["CCPA"],
-    "displayName": "Export Case created from Graph API for Aik Chen",
-    "description": "This is a new case created from graph API",
-    "internalDueDateTime": "2021-08-30T00:00:00Z",
+    "type": "microsoft.graph.dataSubjectRequestType",
+    "dataSubjectType": "microsoft.graph.dataSubjectType",
+    "regulations": ["String"],
+    "displayName": "String",
+    "description": "String",
+    "internalDueDateTime": "String (timestamp)",
     "dataSubject": {
-        "firstName": "aik",
-        "lastName": "chen",
-        "email": "aik.chen@live.com",
-        "residency": "US",
-        "phoneNumber": "16165550112",
-        "SSN": "123456785"
+        "firstName": "String",
+        "lastName": "String",
+        "email": "String",
+        "residency": "String",
+        "phoneNumber": "String",
+        "SSN": "String"
     }
 }
 ```
@@ -104,79 +104,69 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/dataSubjectRequests/$entity",
-    "type": "export",
-    "dataSubjectType": "customer",
+    "type": "microsoft.graph.dataSubjectRequestType",
+    "dataSubjectType": "microsoft.graph.dataSubjectType",
     "regulations": [
-        "CCPA"
+        "String"
     ],
-    "displayName": "Export Case created from Graph API for Aik Chen",
-    "description": "This is a new case created from graph API",
+    "displayName": "String",
+    "description": "String",
     "status": "active",
-    "internalDueDateTime": "2021-08-30T00:00:00Z",
-    "closedDateTime": null,
-    "lastModifiedDateTime": "2021-07-28T21:24:10.5588319Z",
-    "id": "14679787-ae79-4218-81f0-3db3ab429fae",
-    "createdDateTime": "2021-07-28T21:24:10.5588319Z",
-    "assignedTo": {
-        "id": "",
-        "displayName": "admin@contoso.onmicrosoft.com"
-    },
-    "history": [],
+    "internalDueDateTime": "String",
+    "lastModifiedDateTime": "String",
+    "id": "String",
+    "createdDateTime": "String",
     "stages": [
         {
             "stage": "contentRetrieval",
             "status": "notStarted",
-            "error": null
+            "error": 
+            {
+                "@odata.type": "microsoft.graph.publicError"
+            }
         },
         {
             "stage": "contentReview",
             "status": "notStarted",
-            "error": null
+            "error": 
+            {
+                "@odata.type": "microsoft.graph.publicError"
+            }
         },
         {
             "stage": "generateReport",
             "status": "notStarted",
-            "error": null
+            "error": 
+            {
+                "@odata.type": "microsoft.graph.publicError"
+            }
         },
         {
             "stage": "caseResolved",
             "status": "notStarted",
-            "error": null
+            "error": 
+            {
+                "@odata.type": "microsoft.graph.publicError"
+            }
         }
     ],
-    "insight": {
-        "itemCount": 0,
-        "totalItemSize": 0,
-        "itemNeedReview": 0,
-        "signedOffItemCount": 0,
-        "excludedItemCount": 0,
-        "productItemCounts": [],
-        "insightCounts": []
-    },
     "createdBy": {
-        "user": {
-            "id": "",
-            "displayName": "admin@contoso.onmicrosoft.com"
-        }
+        "@odata.type": "microsoft.graph.identitySet"
     },
     "lastModifiedBy": {
-        "user": {
-            "id": "",
-            "displayName": "admin@contoso.onmicrosoft.com"
-        }
+        "@odata.type": "microsoft.graph.identitySet"
     },
     "dataSubject": {
-        "firstName": "aik",
-        "lastName": "chen",
-        "email": "aik.chen@live.com",
-        "residency": "US",
-        "phoneNumber": "16165550112",
-        "SSN": "123456785"
+        "firstName": "String",
+        "lastName": "String",
+        "email": "String",
+        "residency": "String",
+        "phoneNumber": "String",
+        "SSN": "String"
     },
     "team": {
-        "id": "",
-        "webUrl": null
+        "id": "String (identifier)",
+        "webUrl": "String"
     }
 }
 ```

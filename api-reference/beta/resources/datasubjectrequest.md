@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a data subject request, which is a format request by a data subject to a controller to take an action on their personal data. 
+Represents the properties of a data subject request, which is a formal request by a data subject to a controller to take an action on their personal data. 
 
 Inherits from [entity](../resources/entity.md).
 
@@ -72,40 +72,48 @@ The following is a JSON representation of the resource.
     "type": "access",
     "dataSubjectType": "customer",
     "regulations": [
-        "CCPA"
+        "String"
     ],
-    "displayName": "Request ID 60d07f919f5069000c0f309e",
-    "description": "This is a new case created from graph API",
+    "displayName": "String",
+    "description": "String",
     "status": "active",
-    "internalDueDateTime": "2021-07-06T12:02:47.235Z",
-    "closedDateTime": null,
-    "lastModifiedDateTime": "2021-06-21T12:38:46.7446808Z",
-    "id": "43a29ff4-4d70-4c91-ac5c-fe82cf1f9f07",
-    "createdDateTime": "2021-06-21T12:03:40.1644015Z",
-    "assignedTo": {
-        "@odata.type": "microsoft.graph.identity"
-    },
-    "history": [],
+    "internalDueDateTime": "String (timestamp)",
+    "closedDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "String (timestamp)",
+    "id": "String (identifier)",
+    "createdDateTime": "String (timestamp)",
     "stages": [
         {
             "stage": "contentRetrieval",
             "status": "completed",
-            "error": null
+            "error": 
+            {
+                "@odata.type": "microsoft.graph.publicError"
+            }
         },
         {
             "stage": "contentReview",
             "status": "current",
-            "error": null
+            "error": 
+            {
+                "@odata.type": "microsoft.graph.publicError"
+            }
         },
         {
             "stage": "generateReport",
             "status": "notStarted",
-            "error": null
+            "error": 
+            {
+                "@odata.type": "microsoft.graph.publicError"
+            }
         },
         {
             "stage": "caseResolved",
             "status": "notStarted",
-            "error": null
+            "error": 
+            {
+                "@odata.type": "microsoft.graph.publicError"
+            }
         }
     ],
     "insight": {

@@ -74,75 +74,58 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
     {
-        "type": "export",
-        "dataSubjectType": "other",
-        "regulations": ["CCPA"],
-        "displayName": "latest case Aik Chen created from API",
-        "description": "Description for the case",
-        "status": "active",
-        "internalDueDateTime": "2021-05-17T00:00:00Z",
-        "lastModifiedDateTime": "2021-03-17T21:55:18.8132884Z",
-        "id": "7bfe36b4-2395-44df-b702-7f22cffc1e0e",
-        "createdDateTime": "2021-03-17T21:33:52.6289558Z",
-        "assignedTo": {
-            "id": "",
-            "displayName": "admin@contoso.onmicrosoft.com"
+    "type": "microsoft.graph.dataSubjectRequestType",
+    "dataSubjectType": "microsoft.graph.dataSubjectType",
+    "regulations": [
+        "String"
+    ],
+    "displayName": "String",
+    "description": "String",
+    "status": "active",
+    "internalDueDateTime": "String",
+    "lastModifiedDateTime": "String",
+    "id": "String",
+    "createdDateTime": "String",
+    "stages": [
+        {
+            "stage": "contentRetrieval",
+            "status": "notStarted",
+            "error": null
         },
-        "history": [],
-        "stages": [
-            {
-                "stage": "contentRetrieval",
-                "status": "completed",
-                "error": null
-            },
-            {
-                "stage": "contentReview",
-                "status": "current",
-                "error": null
-            },
-            {
-                "stage": "generateReport",
-                "status": "notStarted",
-                "error": null
-            },
-            {
-                "stage": "caseResolved",
-                "status": "notStarted",
-                "error": null
-            }
-        ],
-        "insight": {
-            "itemCount": 1202,
-            "totalItemSize": 93815683,
-            "itemNeedReview": 1202,
-            "signedOffItemCount": 0,
-            "excludedItemCount": 0,
-            "productItemCounts": [],
-            "insightCounts": []
+        {
+            "stage": "contentReview",
+            "status": "notStarted",
+            "error": null
         },
-        "createdBy": {
-            "user": {
-                "id": "",
-                "displayName": "admin@contoso.onmicrosoft.com"
-            }
+        {
+            "stage": "generateReport",
+            "status": "notStarted",
+            "error": null
         },
-        "lastModifiedBy": {
-            "user": {
-                "id": "",
-                "displayName": "admin@contoso.onmicrosoft.com"
-            }
-        },
-        "dataSubject": {
-            "firstName": "aik",
-            "lastName": "chen",
-            "email": "aik.chen@live.com",
-            "residency": "USA",
-            "phoneNumber": "14257001234"
-        },
-        "team": {
-            "id": "57e55a65-34a2-41e2-88ec-fddf3a8aca17",
-            "webUrl": "https://teams.microsoft.com/l/team/teamsUrl"
+        {
+            "stage": "caseResolved",
+            "status": "notStarted",
+            "error": null
         }
+    ],
+    "createdBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+    },
+    "lastModifiedBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+    },
+    "dataSubject": {
+        "firstName": "String",
+        "lastName": "String",
+        "email": "String",
+        "residency": "String",
+        "phoneNumber": "String",
+        "SSN": "String"
+    },
+    "team": {
+        "id": "String (identifier)",
+        "webUrl": "String"
     }
+}
 ```
 

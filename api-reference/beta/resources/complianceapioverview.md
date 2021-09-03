@@ -17,7 +17,15 @@ Use the Microsoft Graph compliance API to build applications that:
 
 - Automate common tasks in eDiscovery
 
+- Create and manage data subject request
+
 The Microsoft Graph compliance API includes the following key entities.
+
+## Data Subject Request
+
+Privacy management provides powerful subject rights requests capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams.
+
+Learn more about [Microsoft 365 Data Subject Request APIs](datasubjectrequest-datasubjectrequestapioverview.md).
 
 ## eDiscovery
 

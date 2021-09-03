@@ -39,11 +39,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.dataSubjectRequestDetail",
-      "itemCount": 1,
-      "totalItemSize": 13670,
-      "itemNeedReview": 1,
-      "signedOffItemCount": 0,
-      "excludedItemCount": 0,
+      "itemCount": "Int64",
+      "totalItemSize": "Int64",
+      "itemNeedReview": "Int64",
+      "signedOffItemCount": "Int64",
+      "excludedItemCount": "Int64",
       "productItemCounts": [],
       "insightCounts": []
 }

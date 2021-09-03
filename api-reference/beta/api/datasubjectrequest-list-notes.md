@@ -77,39 +77,12 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/dataSubjectRequests('77f885ac-1d7b-4317-bde8-4cb3d24a3ed8')/notes",
     "value": [
         {
-            "id": "d5f1cac8-ffcd-48c2-9621-c457bb5324c5",
-            "createdDateTime": "2021-03-09T23:29:01.059507Z",
-            "author": {
-                "id": null,
-                "displayName": "admin@contoso.onmicrosoft.com"
+            "id": "String (identifier)",
+            "createdDateTime": "String (timestamp)",
+            "author": { "@odata.type": "microsoft.graph.identitySet"
             },
             "content": {
-                "content": "Request created by API.",
-                "contentType": "text"
-            }
-        },
-        {
-            "id": "d2fa5c11-a61f-4f70-b627-cba889a0cfdf",
-            "createdDateTime": "2021-03-10T19:03:26.0417217Z",
-            "author": {
-                "id": null,
-                "displayName": "admin@contoso.onmicrosoft.com"
-            },
-            "content": {
-                "content": "final review",
-                "contentType": "text"
-            }
-        },
-        {
-            "id": "8673da75-fed4-4ca6-8eb2-ae9cbb583fa5",
-            "createdDateTime": "2021-04-22T05:51:15.3890269Z",
-            "author": {
-                "id": null,
-                "displayName": "admin@contoso.onmicrosoft.com"
-            },
-            "content": {
-                "content": "Adding note from API.",
-                "contentType": "text"
+                 "@odata.type": "microsoft.graph.itemBody"
             }
         }
     ]

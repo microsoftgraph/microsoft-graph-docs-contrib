@@ -38,8 +38,8 @@ The following is a JSON representation of the resource.
   "error": {
     "@odata.type": "microsoft.graph.publicError"
   },
-  "stage": "contentReview",
-  "status": "completed"
+  "stage": "microsoft.graph.dataSubjectRequestStage",
+  "status": "microsoft.graph.dataSubjectRequestStageStatus"
 }
 ```
 

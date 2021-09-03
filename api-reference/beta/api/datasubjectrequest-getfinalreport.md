@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/dataSubjectRequests/{dataSubjectRequestId}/getFinalReport
+GET /compliance/dataSubjectRequests{dataSubjectRequestId}/getFinalReport
 ```
 
 ## Request headers
@@ -70,7 +70,5 @@ GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests/{dataSubject
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Id, Workload, Size, ImmutableId, FileName, FilePath, ItemUrl
-someId, Exchange, 200, Id, somefile.txt, filePath, Url
 ```
 

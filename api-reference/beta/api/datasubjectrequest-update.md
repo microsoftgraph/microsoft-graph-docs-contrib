@@ -87,79 +87,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/dataSubjectRequests/$entity",
-    "type": "export",
-    "dataSubjectType": "customer",
+    "type": "microsoft.graph.dataSubjectRequestType",
+    "dataSubjectType": "microsoft.graph.dataSubjectType",
     "regulations": [
-        "CCPA"
+        "String"
     ],
-    "displayName": "Export Case created from Graph API for Aik Chen",
-    "description": "This is a new case created from graph API",
+    "displayName": "String",
+    "description": "String",
     "status": "active",
-    "internalDueDateTime": "2021-08-30T00:00:00Z",
-    "closedDateTime": null,
-    "lastModifiedDateTime": "2021-07-28T21:24:10.5588319Z",
-    "id": "14679787-ae79-4218-81f0-3db3ab429fae",
-    "createdDateTime": "2021-07-28T21:24:10.5588319Z",
-    "assignedTo": {
-        "id": "",
-        "displayName": "admin@contoso.onmicrosoft.com"
-    },
-    "history": [],
-    "stages": [
-        {
-            "stage": "contentRetrieval",
-            "status": "notStarted",
-            "error": null
-        },
-        {
-            "stage": "contentReview",
-            "status": "notStarted",
-            "error": null
-        },
-        {
-            "stage": "generateReport",
-            "status": "notStarted",
-            "error": null
-        },
-        {
-            "stage": "caseResolved",
-            "status": "notStarted",
-            "error": null
-        }
-    ],
-    "insight": {
-        "itemCount": 0,
-        "totalItemSize": 0,
-        "itemNeedReview": 0,
-        "signedOffItemCount": 0,
-        "excludedItemCount": 0,
-        "productItemCounts": [],
-        "insightCounts": []
-    },
+    "internalDueDateTime": "String",
+    "lastModifiedDateTime": "String",
+    "id": "String",
+    "createdDateTime": "String",
     "createdBy": {
-        "user": {
-            "id": "",
-            "displayName": "admin@contoso.onmicrosoft.com"
-        }
+        "@odata.type": "microsoft.graph.identitySet"
     },
     "lastModifiedBy": {
-        "user": {
-            "id": "",
-            "displayName": "admin@contoso.onmicrosoft.com"
-        }
+        "@odata.type": "microsoft.graph.identitySet"
     },
     "dataSubject": {
-        "firstName": "aik",
-        "lastName": "chen",
-        "email": "aik.chen@live.com",
-        "residency": "US",
-        "phoneNumber": "16165550112",
-        "SSN": "123456785"
+        "firstName": "String",
+        "lastName": "String",
+        "email": "String",
+        "residency": "String",
+        "phoneNumber": "String",
+        "SSN": "String"
     },
     "team": {
-        "id": "",
-        "webUrl": null
+        "id": "String (identifier)",
+        "webUrl": "String"
     }
 }
 ```
