@@ -60,7 +60,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties_2"
+  "name": "get_organizationalbranding_2"
 }-->
 
 ```msgraph-interactive
@@ -94,7 +94,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "@odata.type": "Microsoft.DirectoryServices.organizationalBranding"
 } -->
 
 ```http
@@ -127,7 +127,7 @@ Requests for /branding always return the **mediaContentType**, **mediaReadLink**
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties_3"
+  "name": "get_organizationalbranding_3"
 }-->
 
 ```msgraph-interactive
@@ -154,7 +154,7 @@ The Accept-Langauge header is used to apply a particular localization to the bra
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties_4"
+  "name": "get_organizationalbranding_4"
 }-->
 
 ```msgraph-interactive
@@ -171,7 +171,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "@odata.type": "Microsoft.DirectoryServices.organizationalBranding"
 } -->
 
 ```http
@@ -206,7 +206,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties_5"
+  "name": "get_organizationalbranding_5"
 }-->
 
 ```msgraph-interactive
@@ -239,7 +239,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "@odata.type": "Microsoft.DirectoryServices.organizationalBranding"
 } -->
 
 ```http
@@ -264,7 +264,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties_6"
+  "name": "get_organizationalbranding_6"
 }-->
 
 ```msgraph-interactive
@@ -301,12 +301,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 NO CONTENT
 ```
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get organizationalBrandingProperties",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

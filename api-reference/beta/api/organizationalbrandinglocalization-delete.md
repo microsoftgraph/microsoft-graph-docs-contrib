@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.
+Delete a localization [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object. This deletes a localized branding only. The default branding can not be deleted once it is configured. The default branding is loaded when a localized branding set isn't configured for the user's browser language.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

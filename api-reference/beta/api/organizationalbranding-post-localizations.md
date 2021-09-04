@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new organizationalBrandingLocalization object.
+Create a new [organizationalBrandingLocalization](../resources/organizationalBrandingLocalization.md) object. This creates a localized branding and optionally the default branding at the same time. The default branding is created only once if it is not configured before. The default branding is loaded when a localized branding set isn't configured for the user's browser language.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -105,7 +105,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "@odata.type": "Microsoft.DirectoryServices.organizationalBrandingLocalization"
 } -->
 
 ```http
@@ -127,13 +127,3 @@ Content-Type: application/json
 }
 ```
 The **mediaEditLink** specifies where the localized media is written. The mediaReadLink is null because no media has been set for the localization.
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get organizationalBrandingProperties",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
