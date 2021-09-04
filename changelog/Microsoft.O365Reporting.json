@@ -291,58 +291,6 @@
       "CreatedDateTime": "2021-02-04T09:55:05.981Z",
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "7ebc6c52-fe03-43ed-a73b-8478651f5c23",
-          "ApiChange": "Resource",
-          "ChangedApiName": "reportroot-getemailactivityuserdetail",
-          "ChangeType": "Change",
-          "Description": "Update the **User delegated authorization** comments to the [reportroot-authorization](https://docs.microsoft.com/en-us/graph/reportroot-authorization) resource.",
-          "Target": "reportroot-getemailactivityuserdetail"
-        },
-        {
-          "Id": "7ebc6c52-fe03-43ed-a73b-8478651f5c23",
-          "ApiChange": "Resource",
-          "ChangedApiName": "reportroot-getemailactivityuserdetail",
-          "ChangeType": "Change",
-          "Description": "we are hiding identifiable names for users, groups, and sites by default for [Microsoft 365 usage reports](https://docs.microsoft.com/en-us/graph/api/resources/report) APIs to help companies support their local privacy laws. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports) about the settings that govern identification/de-identification of information in the M365 usage reports data.",
-          "Target": "reportroot-getemailactivityuserdetail"
-        }
-      ],
-      "Id": "7ebc6c52-fe03-43ed-a73b-8478651f5c23",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-09-01T00:00:00.000Z",
-      "WorkloadArea": "Reports",
-      "SubArea": "Microsoft 365 usage reports"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "6df012a4-d694-4b1e-9212-4ead671a9898",
-          "ApiChange": "Resource",
-          "ChangedApiName": "reportroot-getemailactivityuserdetail",
-          "ChangeType": "Change",
-          "Description": "Update the **User delegated authorization** comments to the [reportroot-authorization](https://docs.microsoft.com/en-us/graph/reportroot-authorization) resource.",
-          "Target": "reportroot-getemailactivityuserdetail"
-        },
-        {
-          "Id": "6df012a4-d694-4b1e-9212-4ead671a9898",
-          "ApiChange": "Resource",
-          "ChangedApiName": "reportroot-getemailactivityuserdetail",
-          "ChangeType": "Change",
-          "Description": "we are hiding identifiable names for users, groups, and sites by default for [Microsoft 365 usage reports](https://docs.microsoft.com/en-us/graph/api/resources/report) APIs to help companies support their local privacy laws. [Learn more](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports) about the settings that govern identification/de-identification of information in the M365 usage reports data.",
-          "Target": "reportroot-getemailactivityuserdetail"
-        }
-      ],
-      "Id": "6df012a4-d694-4b1e-9212-4ead671a9898",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2021-09-01T00:00:00.000Z",
-      "WorkloadArea": "Reports",
-      "SubArea": "Microsoft 365 usage reports"
     }
   ]
 }
