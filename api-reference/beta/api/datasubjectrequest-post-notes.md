@@ -2,7 +2,7 @@
 title: "Create authoredNote"
 description: "Create a new authoredNote object."
 author: "skadam-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---

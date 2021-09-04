@@ -2,7 +2,7 @@
 title: "dataSubjectRequestDetail resource type"
 description: "Represents the details of a data subject request, including number of items found, number of items reviewed, and so on."
 author: "skadam-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: resourcePageType
 ---

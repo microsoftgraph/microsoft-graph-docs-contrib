@@ -2,7 +2,7 @@
 title: "List dataSubjectRequests"
 description: "Get a list of data subject requests and their properties."
 author: "skadam-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---

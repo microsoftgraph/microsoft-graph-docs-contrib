@@ -2,7 +2,7 @@
 title: "List notes"
 description: "Get the authoredNote resources from the notes navigation property."
 author: "skadam-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---
@@ -79,8 +79,7 @@ Content-Type: application/json
         {
             "id": "String (identifier)",
             "createdDateTime": "String (timestamp)",
-            "author": { "@odata.type": "microsoft.graph.identitySet"
-            },
+            "author": { "@odata.type": "microsoft.graph.identitySet"},
             "content": {
                  "@odata.type": "microsoft.graph.itemBody"
             }

@@ -2,7 +2,7 @@
 title: "Create dataSubjectRequest"
 description: "Create a new dataSubjectRequest object."
 author: "skadam-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---

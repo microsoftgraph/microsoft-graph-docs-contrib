@@ -2,7 +2,7 @@
 title: "dataSubjectRequestHistory resource type"
 description: "Represents the history for a data subject request."
 author: "skadam-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "dataSubjectRequest resource type"
 description: "Represents the properties of a data subject request."
 author: "skadam-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: resourcePageType
 ---

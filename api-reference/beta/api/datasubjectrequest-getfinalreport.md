@@ -2,7 +2,7 @@
 title: "dataSubjectRequest: getFinalReport"
 description: "Get the final report for a data subject request."
 author: "skadam-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---

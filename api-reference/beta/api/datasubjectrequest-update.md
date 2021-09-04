@@ -2,7 +2,7 @@
 title: "Update dataSubjectRequest"
 description: "Update the properties of a dataSubjectRequest object."
 author: "skadam-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---
