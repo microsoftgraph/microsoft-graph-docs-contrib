@@ -2511,16 +2511,6 @@ Possible values for user account types (group membership), per Windows definitio
 |linkToMalwareFile|
 |unknownFutureValue|
 
-### simulationAttackType values
-
-|Member|
-|:---|
-|unknown|
-|social|
-|cloud|
-|endpoint|
-|unknownFutureValue|
-
 ### simulationMode values
 
 |Member|
