@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph Data subject request API"
 description: "The Microsoft 365 data subject request APIs provide functionality for organizations to automate repetitive tasks and integrate with their existing data subject request tools to build a repeatable workflows that might be required based on industry regulations. You can use the Data subject request APIs to help with your legal needs."
-localization_priority: Priority
+ms.localizationpriority: medium
 author: "skadam-msft"
 ms.prod: "Privacy Management"
 doc_type: conceptualPageType
@@ -26,10 +26,10 @@ The Data subject request API is defined in the OData subnamespace, microsoft.gra
 | Name | Type       | Use case |
 |:-|:-|:-|
 | Data Subject Request | [microsoft.graph.datasubjectrequest](datasubjectrequest.md) | Data subject request is a formal request by a data subject to a controller to take an action on their personal data. |
-| Data Subject | [microsoft.graph.datasubject] (datasubject.md) | Contains information related to the subject of a content search. |
-| Data Subject History | [microsoft.graph.datasubjectrequesthistory] (datasubjectrequesthistory.md) | Represents the history for a data subject request. |
-| Data Subject Request Detail | [microsoft.graph.dataSubjectRequestDetail] (dataSubjectRequestDetail.md) | Represents the details of a data subject request, including number of items found, number of items reviewed, and so on. |
-| Data Subject Request Stage Detail | [microsoft.graph.dataSubjectRequestStageDetail] (dataSubjectRequestStageDetail.md) | Represents the properties of the stages of a data subject request. |
+| Data Subject | [microsoft.graph.datasubject](datasubject.md) | Contains information related to the subject of a content search. |
+| Data Subject History | [microsoft.graph.datasubjectrequesthistory](datasubjectrequesthistory.md) | Represents the history for a data subject request. |
+| Data Subject Request Detail | [microsoft.graph.dataSubjectRequestDetail](dataSubjectRequestDetail.md) | Represents the details of a data subject request, including number of items found, number of items reviewed, and so on. |
+| Data Subject Request Stage Detail | [microsoft.graph.dataSubjectRequestStageDetail](dataSubjectRequestStageDetail.md) | Represents the properties of the stages of a data subject request. |
 
 
 
