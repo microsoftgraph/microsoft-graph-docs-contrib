@@ -60,13 +60,13 @@ If successful, this method returns a `201 Created` response code and a [noncusto
 
 ## Examples
 
-### Request
+### Example 1: Add a non-custodial data source user or group mailbox with an email
 
+#### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_noncustodialdatasource_from_"
+  "name": "create_noncustodialdatasource_from_email"
 }
 -->
 
@@ -83,28 +83,10 @@ Content-length: 206
     }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-noncustodialdatasource-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-noncustodialdatasource-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Response
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-noncustodialdatasource-from--objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### Response
-
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -125,5 +107,57 @@ Content-Type: application/json
     "displayName": null,
     "createdDateTime": "2021-02-19T07:02:45.4863718Z",
     "applyHoldToSource": true
+}
+```
+
+### Example 2: Add a non-custodial data source site with a URL
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_noncustodialdatasource_from_siteurl"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/noncustodialdatasources
+Content-Type: application/json
+Content-length: 206
+
+{
+    "applyHoldToSource": false,
+    "dataSource": {
+        "@odata.type": "microsoft.graph.ediscovery.siteSource",
+        "site": {
+            "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+        }
+    }
+}
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.ediscovery.noncustodialDataSource"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/noncustodialDataSources/$entity",
+    "status": "Active",
+    "lastModifiedDateTime": "2021-08-11T22:43:45.1079425Z",
+    "releasedDateTime": "0001-01-01T00:00:00Z",
+    "id": "35393843394546413031353146334134",
+    "displayName": "Secret Site",
+    "createdDateTime": "2021-08-11T22:43:45.0189955Z",
+    "applyHoldToSource": false
 }
 ```
