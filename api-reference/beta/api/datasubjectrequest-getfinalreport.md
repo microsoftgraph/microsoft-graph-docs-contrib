@@ -69,6 +69,7 @@ GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests/{dataSubject
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
+
 Id, Workload, Size, ImmutableId, FileName, FilePath, ItemUrl
 ```
 
