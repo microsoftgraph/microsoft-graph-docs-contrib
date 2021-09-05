@@ -28,11 +28,11 @@ To use the Postman collection, you need to fork it into your Postman workspace. 
 
 ![Screenshot showing the Microsoft Graph collection in Postman and the option to create a fork](./images/connectors-images/16-postman.png)
 
-4. In the dialog that opens, enter a label to identify your fork. In the **Workspace** dropdown menu select **My workspace**, and click on **Fork Collection**.
+4. In the dialog that opens, enter a label to identify your fork. In the **Workspace** dropdown menu select **My workspace** , and select **Fork Collection**.
 
 ![Screenshot showing the Fork collection dialog in Postman and the options to enter a label, and select My Workspace](./images/connectors-images/17-postman.png)
 
-3. You can now go to **Workspaces** > **My Workspace** and see the fork you created. You'll find the Microsoft Graph connectors folder under **Application**.
+3. You can now go to **Workspaces** > **My Workspace**, and see the fork you created. You'll find the Microsoft Graph connectors folder under **Application**.
 
 ![Screenshot of the My Workspace section in Postman, showing the Microsoft Graph collection forked ](./images/connectors-images/18-postman.png)
 
