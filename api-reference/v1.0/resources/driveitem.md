@@ -51,8 +51,8 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application which last modified the item. Read-only.
 | lastModifiedDateTime | DateTimeOffset     | Date and time the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
-| name                 | String             | The name of the item (filename and extension). Read-write.
 | malware              | [malware][]        | Malware metadata, if the item was detected to contain malware. Read-only.
+| name                 | String             | The name of the item (filename and extension). Read-write.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
 | pendingOperations    | [pendingOperations][] | If present, indicates that one or more operations that might affect the state of the driveItem are pending completion. Read-only.
