@@ -120,6 +120,7 @@ Content-type: application/json
             ],
             "servicePrincipalType": "Application",
             "signInAudience": "AzureADMyOrg"
+        }
     ]
 }
 ```
