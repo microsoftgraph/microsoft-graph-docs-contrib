@@ -2,7 +2,7 @@
 title: "Create deviceManagementCachedReportConfiguration"
 description: "Create a new deviceManagementCachedReportConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

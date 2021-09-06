@@ -2,7 +2,7 @@
 title: "lostModeState enum type"
 description: "State of lost mode, indicating if lost mode is enabled or disabled"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

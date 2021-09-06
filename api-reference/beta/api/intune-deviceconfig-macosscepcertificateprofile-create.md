@@ -2,7 +2,7 @@
 title: "Create macOSScepCertificateProfile"
 description: "Create a new macOSScepCertificateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

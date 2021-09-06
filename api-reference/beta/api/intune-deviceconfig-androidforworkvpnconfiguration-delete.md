@@ -2,7 +2,7 @@
 title: "Delete androidForWorkVpnConfiguration"
 description: "Deletes a androidForWorkVpnConfiguration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

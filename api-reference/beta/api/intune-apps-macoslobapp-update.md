@@ -2,7 +2,7 @@
 title: "Update macOSLobApp"
 description: "Update the properties of a macOSLobApp object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

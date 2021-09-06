@@ -2,7 +2,7 @@
 title: "Create groupPolicyUploadedCategory"
 description: "Create a new groupPolicyUploadedCategory object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

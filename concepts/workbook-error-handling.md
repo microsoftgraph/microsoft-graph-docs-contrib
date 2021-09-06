@@ -2,7 +2,7 @@
 title: "Error handling for Excel APIs in Microsoft Graph"
 description: "Error handling instructions for Excel APIs in Microsoft Graph"
 author: "grangeryy"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 ---
 

@@ -2,7 +2,7 @@
 title: "unassignUserFromDevice action"
 description: "Unassigns the user from an Autopilot device."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

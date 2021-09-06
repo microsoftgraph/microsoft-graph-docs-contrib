@@ -2,7 +2,7 @@
 title: "Create windows10XTrustedRootCertificate"
 description: "Create a new windows10XTrustedRootCertificate object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

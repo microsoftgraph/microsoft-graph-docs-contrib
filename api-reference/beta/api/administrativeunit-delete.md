@@ -2,7 +2,7 @@
 title: "Delete administrativeUnit"
 description: "Delete an administrativeUnit."
 author: "DougKirschner"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

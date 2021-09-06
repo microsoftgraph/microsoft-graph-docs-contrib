@@ -1,7 +1,7 @@
 ---
 title: "signInActivity resource type"
 description: "Provides the last interactive or non-interactive sign-in time for a specific user."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"

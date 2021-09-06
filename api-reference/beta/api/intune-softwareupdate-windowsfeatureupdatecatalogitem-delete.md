@@ -2,7 +2,7 @@
 title: "Delete windowsFeatureUpdateCatalogItem"
 description: "Deletes a windowsFeatureUpdateCatalogItem."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

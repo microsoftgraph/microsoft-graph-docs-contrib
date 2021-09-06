@@ -2,7 +2,7 @@
 title: "omaSettingString resource type"
 description: "OMA Settings String definition."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

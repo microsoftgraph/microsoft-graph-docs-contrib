@@ -2,7 +2,7 @@
 title: "managementConditionExpressionString resource type"
 description: "A management condition expression string is a string representation of a management condition expression."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

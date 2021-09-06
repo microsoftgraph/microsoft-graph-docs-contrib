@@ -2,7 +2,7 @@
 title: "List plans"
 description: "Get the plannerPlan resources from the plans navigation property."
 author: "tarkansevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: apiPageType
 ---

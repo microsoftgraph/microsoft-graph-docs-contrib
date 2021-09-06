@@ -2,7 +2,7 @@
 title: "Delete windows10EndpointProtectionConfiguration"
 description: "Deletes a windows10EndpointProtectionConfiguration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

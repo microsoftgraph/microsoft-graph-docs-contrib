@@ -2,7 +2,7 @@
 title: "Create externalDomainName"
 description: "Create a new externalDomainName object."
 author: "namkedia"
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

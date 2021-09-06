@@ -2,7 +2,7 @@
 title: "List samlOrWsFedExternalDomainFederations"
 description: "Get a list of the samlOrWsFedExternalDomainFederation objects and their properties."
 author: "namkedia"
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

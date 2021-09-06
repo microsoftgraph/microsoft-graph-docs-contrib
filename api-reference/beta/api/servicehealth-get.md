@@ -2,7 +2,7 @@
 title: "Get serviceHealth"
 description: "Retrieve the properties and relationships of a serviceHealth object."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---

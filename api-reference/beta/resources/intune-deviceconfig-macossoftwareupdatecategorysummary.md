@@ -2,7 +2,7 @@
 title: "macOSSoftwareUpdateCategorySummary resource type"
 description: "MacOS software update category summary report for a device and user"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

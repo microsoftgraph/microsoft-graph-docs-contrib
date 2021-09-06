@@ -2,7 +2,7 @@
 title: "bitLockerRemovableDrivePolicy resource type"
 description: "BitLocker Removable Drive Policies."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

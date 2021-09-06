@@ -2,7 +2,7 @@
 title: "authenticationListener resource type"
 description: "Defines the listener to evaluate during an authentication event."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

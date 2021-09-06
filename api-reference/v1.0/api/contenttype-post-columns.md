@@ -3,7 +3,7 @@ author: swapnil1993
 ms.date: 08/30/2020
 title: "Create a columnDefinition in a content type"
 description: "Add a column to a content type."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

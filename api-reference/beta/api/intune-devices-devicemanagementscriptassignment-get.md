@@ -2,7 +2,7 @@
 title: "Get deviceManagementScriptAssignment"
 description: "Read properties and relationships of the deviceManagementScriptAssignment object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

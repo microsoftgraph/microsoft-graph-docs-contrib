@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: Remove item from bundle
 description: Remove item from a bundle of driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

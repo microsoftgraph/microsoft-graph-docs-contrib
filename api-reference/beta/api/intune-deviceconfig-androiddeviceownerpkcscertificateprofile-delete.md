@@ -2,7 +2,7 @@
 title: "Delete androidDeviceOwnerPkcsCertificateProfile"
 description: "Deletes a androidDeviceOwnerPkcsCertificateProfile."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

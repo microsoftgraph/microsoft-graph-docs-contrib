@@ -2,7 +2,7 @@
 title: "message: forward"
 description: "Forward a message using either JSON or MIME format."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

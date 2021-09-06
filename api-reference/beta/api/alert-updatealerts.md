@@ -1,7 +1,7 @@
 ---
 title: "alert: updateAlerts"
 description: "Update multiple alerts in one request instead of multiple requests."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType

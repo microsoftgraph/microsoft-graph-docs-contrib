@@ -2,7 +2,7 @@
 title: "Delete windows10XVpnConfiguration"
 description: "Deletes a windows10XVpnConfiguration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

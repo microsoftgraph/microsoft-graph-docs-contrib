@@ -2,7 +2,7 @@
 title: "Update iosExpeditedCheckinConfiguration"
 description: "Update the properties of a iosExpeditedCheckinConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

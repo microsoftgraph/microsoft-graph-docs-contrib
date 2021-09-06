@@ -2,7 +2,7 @@
 title: "Update userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails"
 description: "Update the properties of a userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

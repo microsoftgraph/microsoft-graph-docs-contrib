@@ -2,7 +2,7 @@
 title: "Get roleManagement"
 description: "Read properties and relationships of the roleManagement object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

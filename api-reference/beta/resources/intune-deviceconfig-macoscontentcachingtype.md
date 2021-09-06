@@ -2,7 +2,7 @@
 title: "macOSContentCachingType enum type"
 description: "Indicates the type of content allowed to be cached by Apple's content caching service."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
