@@ -38,7 +38,7 @@ This method supports the following OData query parameters to help customize the 
 
 The following properties support `$filter` and `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **mode**, and **status**.
 
-Use `@odata.nextLink` and `$skiptoken` for pagination. For general information, see [OData query parameters](/graph/query-parameters).
+Use `@odata.nextLink` for pagination. For general information, see [OData query parameters](/graph/query-parameters).
 
 The following are examples of their use:
 

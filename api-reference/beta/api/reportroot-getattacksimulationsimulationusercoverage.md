@@ -57,6 +57,7 @@ If successful, this function returns a `200 OK` response code and a [attackSimul
 GET https://graph.microsoft.com/beta/reports/getAttackSimulationSimulationUserCoverage
 ```
 
+Use `@odata.nextLink` for pagination.
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -73,7 +74,15 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.attackSimulationSimulationUserCoverage"
+      "simulationCount": 2,
+      "latestSimulationDateTime": "2021-01-01T01:01:01.01Z",
+      "clickCount": 1,
+      "compromisedCount": 1,
+      "attackSimulationUser": {
+        "userId": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Sample User",
+        "email": "sampleuser@contoso.com"
+      }
     }
   ]
 }

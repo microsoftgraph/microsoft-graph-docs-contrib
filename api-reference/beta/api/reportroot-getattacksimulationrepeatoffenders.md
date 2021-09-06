@@ -33,6 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getAttackSimulationRepeatOffenders
 ```
 
+Use `@odata.nextLink` for pagination.
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -73,7 +75,12 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.attackSimulationRepeatOffender"
+      "repeatOffenceCount": 1,
+      "attackSimulationUser": {
+        "userId": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Sample User",
+        "email": "sampleuser@contoso.com"
+      }
     }
   ]
 }
