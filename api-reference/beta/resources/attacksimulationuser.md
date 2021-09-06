@@ -1,8 +1,8 @@
 ---
 title: "attackSimulationUser resource type"
 description: "User of a tenant in an attack simulation and training campaign."
-author: "gopkr"
-localization_priority: Normal
+author: "Gopal-MSFT"
+ms.localizationpriority: Menium
 ms.prod: "reports"
 doc_type: resourcePageType
 ---

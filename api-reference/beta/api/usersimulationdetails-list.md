@@ -1,8 +1,8 @@
 ---
 title: "List simulation users report"
 description: "List users of a tenant in an attack simulation campaign with their online actions."
-author: "gopkr"
-localization_priority: Normal
+author: "Gopal-MSFT"
+ms.localizationpriority: Menium
 ms.prod: "security"
 doc_type: apiPageType
 ---

@@ -1,8 +1,8 @@
 ---
 title: "List simulations"
 description: "List attack simulations of a tenant."
-author: "gopkr"
-localization_priority: Normal
+author: "Gopal-MSFT"
+ms.localizationpriority: Menium
 ms.prod: "security"
 doc_type: apiPageType
 ---

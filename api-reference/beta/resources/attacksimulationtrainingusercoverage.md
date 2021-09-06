@@ -1,8 +1,8 @@
 ---
 title: "attackSimulationTrainingUserCoverage resource type"
 description: "Represents training coverage for users of a tenant in attack simulation and training."
-author: "gopkr"
-localization_priority: Normal
+author: "Gopal-MSFT"
+ms.localizationpriority: Menium
 ms.prod: "reports"
 doc_type: resourcePageType
 ---

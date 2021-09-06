@@ -1,8 +1,8 @@
 ---
 title: "attackSimulationRepeatOffender resource type"
 description: "Represents repeat offender user of a tenant in attack simulation and training."
-author: "gopkr"
-localization_priority: Normal
+author: "Gopal-MSFT"
+ms.localizationpriority: Menium
 ms.prod: "reports"
 doc_type: resourcePageType
 ---

@@ -1,8 +1,8 @@
 ---
 title: "emailIdentity resource type"
 description: "Represent email identity of a user of a tenant."
-author: "gopkr"
-localization_priority: Normal
+author: "Gopal-MSFT"
+ms.localizationpriority: Menium
 ms.prod: "security"
 doc_type: resourcePageType
 ---

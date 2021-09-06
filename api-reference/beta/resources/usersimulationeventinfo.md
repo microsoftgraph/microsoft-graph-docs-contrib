@@ -1,8 +1,8 @@
 ---
 title: "userSimulationEventInfo resource type"
 description: "Represents simulation event of a user in a tenant in an attack simulation and training campaign."
-author: "gopkr"
-localization_priority: Normal
+author: "Gopal-MSFT"
+ms.localizationpriority: Menium
 ms.prod: "security"
 doc_type: resourcePageType
 ---

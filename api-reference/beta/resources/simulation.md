@@ -1,8 +1,8 @@
 ---
 title: "simulation resource type"
 description: "Represent attack simulation and training campaign of a tenant."
-author: "gopkr"
-localization_priority: Normal
+author: "Gopal-MSFT"
+ms.localizationpriority: Menium
 ms.prod: "security"
 doc_type: resourcePageType
 ---

@@ -1,8 +1,8 @@
 ---
 title: "userTrainingContentEventInfo resource type"
 description: "Represents training event details of assigned trainings to users in a tenant in attack simulation and training."
-author: "gopkr"
-localization_priority: Normal
+author: "Gopal-MSFT"
+ms.localizationpriority: Menium
 ms.prod: "security"
 doc_type: resourcePageType
 ---
