@@ -2,7 +2,7 @@
 title: "Get userExperienceAnalyticsAppHealthDevicePerformanceDetails"
 description: "Read properties and relationships of the userExperienceAnalyticsAppHealthDevicePerformanceDetails object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 407
+Content-Length: 491
 
 {
   "value": {
@@ -72,12 +72,13 @@ Content-Length: 407
     "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
     "eventType": "Event Type value",
     "appDisplayName": "App Display Name value",
+    "appPublisher": "App Publisher value",
+    "appVersion": "App Version value",
     "deviceId": "Device Id value",
     "deviceDisplayName": "Device Display Name value"
   }
 }
 ```
-
 
 
 

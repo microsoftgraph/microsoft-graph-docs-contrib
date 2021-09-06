@@ -2,7 +2,7 @@
 title: "virtualEndpoint: getEffectivePermissions"
 description: "**GetEffectivePermissions is a function that retrieves the effective permissions of the currently authenticated user, which helps UX hide or disable content that the current user doesn't have access to.**"
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List profileCardProperties"
 description: "Retrieve a list of profilecardproperty objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

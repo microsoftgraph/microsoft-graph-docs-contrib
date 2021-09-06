@@ -2,7 +2,7 @@
 title: "Deployments in the Windows Update for Business deployment service"
 description: "Deployments are the foundation of the Windows Update for Business deployment service. Through a deployment you can target a set of devices to receive specific content from Windows Update, such as a software update."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
 ---

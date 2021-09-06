@@ -1,7 +1,7 @@
 ---
 title: "orgContact: getMemberGroups"
 description: "Return all the groups that the organizational contact is a member of."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: apiPageType

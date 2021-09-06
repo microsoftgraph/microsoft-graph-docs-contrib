@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---
@@ -13,4 +13,7 @@ ms.topic: include
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-microsoftTunnelConfiguration, microsoftTunnelHealthThreshold, microsoftTunnelServer, microsoftTunnelServerLogCollectionResponse, microsoftTunnelSite.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [microsoftTunnelConfiguration](/graph/api/resources/microsofttunnelconfiguration) <li> [microsoftTunnelHealthThreshold](/graph/api/resources/microsofttunnelhealththreshold) <li> [microsoftTunnelServer](/graph/api/resources/microsofttunnelserver) <li> [microsoftTunnelServerLogCollectionResponse](/graph/api/resources/microsofttunnelserverlogcollectionresponse) <li> [microsoftTunnelSite](/graph/api/resources/microsofttunnelsite) </ul> |

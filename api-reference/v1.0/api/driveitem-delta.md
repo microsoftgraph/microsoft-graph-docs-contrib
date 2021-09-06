@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Sync the contents of a drive
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "This method allows your app to track changes to a drive and its children over time."
 doc_type: apiPageType

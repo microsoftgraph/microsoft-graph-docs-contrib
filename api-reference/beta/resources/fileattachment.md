@@ -1,7 +1,7 @@
 ---
 title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event,"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
 author: "abheek-das"

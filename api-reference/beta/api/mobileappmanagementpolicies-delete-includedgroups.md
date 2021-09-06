@@ -2,7 +2,7 @@
 title: "Delete includedGroup"
 description: "Delete a group from the list of groups included in a mobile app management policy."
 author: "ravennMSFT"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

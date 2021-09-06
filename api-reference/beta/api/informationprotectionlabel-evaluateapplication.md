@@ -1,7 +1,7 @@
 ---
 title: "informationProtectionLabel: evaluateApplication"
 description: "Evaluate which label to apply based on existing content info and desired content state."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "Send activity feed notifications to users in Microsoft Teams"
 description: "Send activity feed notifications to users in Microsoft Teams using Teams app and microsoft graph."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
@@ -105,6 +105,8 @@ Because a Teams app can be installed for a user, in a team, or in a chat, the no
 - [Send notification to user](/graph/api/userteamwork-sendactivitynotification)
 
 For details about what topics are supported for each scenario, see the specific APIs. Custom text-based topics are supported for all scenarios.
+
+> **Note:** The activity icon is based on the context the request is made in. If the request is made with delegated permissions, the user's photo appears as the avatar, while the Teams app icon appears as activity icon. In an application-only context, the Teams app icon is used as the avatar and activity icon is ommited.
 
 ### Example 1: Notify a user about a task created in a chat
 

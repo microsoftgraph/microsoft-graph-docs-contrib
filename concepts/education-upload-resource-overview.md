@@ -1,7 +1,7 @@
 ---
 title: "Upload files for education assignments and submissions using the Microsoft Graph API"
 description: "Learn how to upload a file to an assignment or a submission resource using the education APIs in Microsoft Graph."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: conceptualPageType

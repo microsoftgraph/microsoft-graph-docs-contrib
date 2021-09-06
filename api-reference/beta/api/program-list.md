@@ -1,7 +1,7 @@
 ---
 title: "List programs"
 description: "In the Azure AD access reviews feature, list all the program objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "markwahl-msft"

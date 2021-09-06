@@ -2,7 +2,7 @@
 title: "iosVppEBookAssignment resource type"
 description: "Contains properties used to assign an iOS VPP EBook to a group."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

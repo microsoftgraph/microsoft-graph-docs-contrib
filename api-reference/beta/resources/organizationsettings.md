@@ -1,7 +1,7 @@
 ---
 title: "organizationSettings resource type"
 description: "Contains settings that are applicable to the organization or the user objects within it."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"

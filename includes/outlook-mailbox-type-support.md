@@ -1,6 +1,6 @@
 ---
 author: "angelgolfer-ms"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 ms.topic: include
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create educationAssignmentResource"
 description: "Create an education assignment resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: apiPageType
@@ -59,7 +59,7 @@ Content-length: 212
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
-    "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
+    "@odata.type": "#microsoft.graph.educationLinkResource"
   }
 }
 ```
@@ -86,7 +86,7 @@ Content-length: 229
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
-    "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
+    "@odata.type": "#microsoft.graph.educationLinkResource"
   }
 }
 ```

@@ -2,7 +2,7 @@
 title: "List applications"
 description: "Get the list of applications in this organization."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 doc_type: apiPageType
 ---

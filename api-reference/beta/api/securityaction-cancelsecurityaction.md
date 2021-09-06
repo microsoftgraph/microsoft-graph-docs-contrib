@@ -1,7 +1,7 @@
 ---
 title: "securityAction: cancelSecurityAction"
 description: "Cancel a security operation."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType

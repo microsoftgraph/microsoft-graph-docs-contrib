@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 07/07/2020
 title: Search for files
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Search the hierarchy of items for items matching a query."
 doc_type: apiPageType
