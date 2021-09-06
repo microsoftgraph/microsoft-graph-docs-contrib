@@ -31,11 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /security/attackSimulation/simulations
-GET /security/attackSimulation/simulations?$top=1
-GET /security/attackSimulation/simulations?$count=true
-GET /security/attackSimulation/simulations?$orderby={property}
-GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'
-GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'&$top=5
 ```
 
 ## Optional query parameters
