@@ -2,7 +2,7 @@
 title: "Get macOSCustomConfiguration"
 description: "Read properties and relationships of the macOSCustomConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1407
+Content-Length: 1448
 
 {
   "value": {
@@ -103,11 +103,11 @@ Content-Length: 1407
     "version": 7,
     "payloadName": "Payload Name value",
     "payloadFileName": "Payload File Name value",
-    "payload": "cGF5bG9hZA=="
+    "payload": "cGF5bG9hZA==",
+    "deploymentChannel": "userChannel"
   }
 }
 ```
-
 
 
 

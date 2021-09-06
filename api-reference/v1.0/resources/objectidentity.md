@@ -1,7 +1,7 @@
 ---
 title: "objectIdentity resource type"
 description: "Represents an identity used to sign in to a user account."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "users"
 author: "jpettere"

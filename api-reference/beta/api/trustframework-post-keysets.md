@@ -1,7 +1,7 @@
 ---
 title: "Create trustFrameworkKeySet"
 description: "Create a new **trustFrameworkKeySet** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

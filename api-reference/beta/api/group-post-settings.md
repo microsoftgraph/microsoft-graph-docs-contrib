@@ -2,7 +2,7 @@
 title: "Create a directory setting on groups"
 description: "Use this API to create a new directory setting for the group."
 author: "Jordanndahl"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---

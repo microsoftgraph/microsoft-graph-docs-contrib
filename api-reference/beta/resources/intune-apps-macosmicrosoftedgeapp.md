@@ -2,7 +2,7 @@
 title: "macOSMicrosoftEdgeApp resource type"
 description: "Contains properties and inherited properties for the MacOS Microsoft Edge App."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -104,7 +104,6 @@ Here is a JSON representation of the resource.
   "channel": "String"
 }
 ```
-
 
 
 

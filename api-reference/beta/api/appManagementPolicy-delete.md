@@ -1,7 +1,7 @@
 ---
 title: "Delete appManagementPolicy"
 description: "Delete an application management policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -54,6 +54,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_appManagementPolicy"
@@ -62,6 +64,24 @@ The following is an example of the request.
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-appmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-appmanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-appmanagementpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

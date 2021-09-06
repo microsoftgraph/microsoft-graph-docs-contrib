@@ -2,7 +2,7 @@
 title: "Create userExperienceAnalyticsNotAutopilotReadyDevice"
 description: "Create a new userExperienceAnalyticsNotAutopilotReadyDevice object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -108,7 +108,6 @@ Content-Length: 470
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
-
 
 
 

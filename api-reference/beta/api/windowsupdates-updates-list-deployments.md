@@ -2,7 +2,7 @@
 title: "List deployments"
 description: "Get a list of deployment objects and their properties."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---

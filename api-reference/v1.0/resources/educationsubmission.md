@@ -2,7 +2,7 @@
 title: "educationSubmission resource type"
 description: "A submission represents the resources that an individual (or group) turn in for an assignment and the outcomes (such as grades or feedback) that are associated with the submission."
 author: "sharad-sharma-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---

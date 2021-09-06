@@ -2,7 +2,7 @@
 title: "Overview of Microsoft Graph"
 description: "Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Microsoft Graph provides a unified programmability model that you can use to take advantage of the tremendous amount of data in Microsoft 365, Enterprise Mobility + Security, and Windows 10."
 author: "angelgolfer-ms"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
 
@@ -88,7 +88,7 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 |   GET items trending around me | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=v1.0) |
 |   GET my notes | [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
-## Bring data from an external content source to Microsoft Graph (preview)
+## Bring data from an external content source to Microsoft Graph
 
 Use Microsoft Graph _connectors_ to bring data that is external to the Microsoft cloud into Microsoft Graph. Examples of such data can be an organization's human resources database or product catalog, hosted on-premises or in the public or private clouds.
 

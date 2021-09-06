@@ -1,7 +1,7 @@
 ---
 title: "Get plannerTaskDetails"
 description: "Retrieve the properties and relationships of **plannertaskdetails** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType
@@ -89,7 +89,7 @@ Content-length: 1036
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
   "previewType": "automatic",
   "references": {
-    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer": {
+    "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer": {
       "@odata.type": "#microsoft.graph.plannerExternalReference",
       "alias": "Graph Explorer",
       "type": "Other",

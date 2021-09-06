@@ -1,7 +1,7 @@
 ---
 title: "chatMessageMention resource type"
 description: "Represents a mention in a chatMessage entity. The mention can be to a user, team, bot or channel. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType

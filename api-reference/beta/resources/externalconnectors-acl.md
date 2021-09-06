@@ -1,7 +1,7 @@
 ---
 title: "acl resource type"
 description: "An access control entry for an item indexed by a Microsoft Search externalConnection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "resourcePageType"

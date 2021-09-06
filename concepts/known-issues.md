@@ -2,7 +2,7 @@
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Known issues with Microsoft Graph
@@ -132,10 +132,6 @@ In the meantime, to unblock development and testing you can use the following wo
     ```
 ## Contacts
 
-### Organization contacts available in only beta
-
-Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
-
 ### Default contacts folder
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
@@ -262,6 +258,10 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
+### Removing a group owner also removes the user as a group member
+
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
+
 ## Identity and access | Application and service principal APIs
 
 There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) entities currently in development. The following is a summary of current limitations and in-development API features.
@@ -299,7 +299,7 @@ JSON batch requests must not contain any nested batch requests.
 
 ### All individual requests must be synchronous
 
-All requests contained in a batch request must be executed synchronously. If present, the `respond-async` preference will be ignored.
+All requests contained in a batch request must be run synchronously. If present, the `respond-async` preference will be ignored.
 
 ### No transactions
 
@@ -317,9 +317,9 @@ JSON batch requests are currently limited to 20 individual requests.
 
 Individual requests can depend on other individual requests. Currently, requests can only depend on a single other request, and must follow one of these three patterns:
 
-1. Parallel - no individual request states a dependency in the `dependsOn` property.
+1. Parallel - no individual request states a dependency in the **dependsOn** property.
 2. Serial - all individual requests depend on the previous individual request.
-3. Same - all individual requests that state a dependency in the `dependsOn` property, state the same dependency.
+3. Same - all individual requests that state a dependency in the **dependsOn** property, state the same dependency. **Note**: Requests made using this pattern will run sequentially.
 
 As JSON batching matures, these limitations will be removed.
 
@@ -337,6 +337,30 @@ does not become part of the body of the resultant message draft.
 ### GET messages returns chats in Microsoft Teams
 
 In both the v1 and beta endpoints, the response of `GET /users/id/messages` includes the user's Microsoft Teams chats that occurred outside the scope of a team or channel. These chat messages have "IM" as their subject.
+
+## Reports
+
+### Azure AD activity reports
+
+When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you might still encounter an error message similar to the following:
+
+```json
+{
+    "error": {
+        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
+        "message": "Neither tenant is B2C or tenant doesn't have premium license",
+        "innerError": {
+            "date": "2021-09-02T17:15:30",
+            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
+            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
+        }
+    }
+}
+```
+This error might also occur when retrieving the **signInActivity** property of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource; for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
+
+This error is due to intermittent license check failures, which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required when the issue is resolved.
+
 
 ## Teamwork (Microsoft Teams)
 

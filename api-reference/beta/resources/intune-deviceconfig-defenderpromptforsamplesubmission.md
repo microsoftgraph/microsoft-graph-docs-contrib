@@ -2,7 +2,7 @@
 title: "defenderPromptForSampleSubmission enum type"
 description: "Possible values for prompting user for samples submission."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -25,7 +25,6 @@ Possible values for prompting user for samples submission.
 |promptBeforeSendingPersonalData|2|Send safe samples automatically.|
 |neverSendData|3|Never send data.|
 |sendAllDataWithoutPrompting|4|Send all data without prompting.|
-
 
 
 

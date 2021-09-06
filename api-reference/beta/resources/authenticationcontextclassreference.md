@@ -1,7 +1,7 @@
 ---
 title: "authenticationContextClassReference resource type"
 description: "Represents an Azure Active Directory authentication context class reference."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "calebb"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

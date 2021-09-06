@@ -1,7 +1,7 @@
 ---
 title: "Add a scopedRoleMember"
 description: "Add a new scopedRoleMembership. NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: apiPageType

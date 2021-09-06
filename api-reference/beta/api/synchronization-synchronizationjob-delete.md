@@ -1,7 +1,7 @@
 ---
 title: "Delete synchronizationJob"
 description: "Stop the synchronization job, and permanently delete all the state associated with it."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

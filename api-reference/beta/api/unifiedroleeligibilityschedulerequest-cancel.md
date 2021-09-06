@@ -1,8 +1,8 @@
 ---
 title: "unifiedRoleEligibilityScheduleRequest: cancel"
 description: "Cancel a unifiedRoleEligibilityScheduleRequest."
-author: "shauliu"
-localization_priority: Normal
+author: "shauliu1"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # unifiedRoleEligibilityScheduleRequest: cancel
 Namespace: microsoft.graph
 
-Immediately cancel a [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) and have the system automatically delete the cancelled request after 30 days.
+Immediately cancel a [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) that is in a `Granted` status, and have the system automatically delete the cancelled request after 30 days. After calling this action, the **status** of the cancelled unifiedRoleEligibilityScheduleRequest changes to `Revoked`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +41,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `204 No Content` response code. Attempting to cancel a request that is not in a cancelable state, for example, a unifiedRoleEligibilityScheduleRequest object whose **status** is `Provisioned` or `Failed`, returns a `400 Bad Request` error code.
 
 ## Examples
 
@@ -54,7 +54,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}/cancel
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/532bef1f-c677-4564-aa6f-811444a4f018/cancel
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleeligibilityschedulerequest-cancel-csharp-snippets.md)]
@@ -77,7 +77,6 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySc
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -2,7 +2,7 @@
 title: "Create onlineMeeting"
 description: "Create an online meeting on behalf of a user specified in the request body."
 author: "mkhribech"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -62,9 +62,11 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 
 ## Examples 
 
+### Example 1: Create an online meeting with user token
+
 The following example creates an online meeting with a user token.
 
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,8 +101,7 @@ Content-Type: application/json
 
 ---
 
-
-### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -157,6 +158,108 @@ Content-Type: application/json
     }  
 ```
 
+### Example 2: Create a live event with user token
+
+<!-- {
+  "blockType": "request",
+  "name": "create-live-event-user-token"
+}-->
+#### Request
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "subject":"User Token Live Event",
+  "startDateTime":"2021-08-20T14:00:34.2444915+00:00",
+  "endDateTime":"2021-08-20T15:00:34.2464912+00:00",
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "everyone",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
+}
+```
+
+#### Response
+
+> **Note:** The response object shown here has been shortened for readability. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```json
+{
+  "id": "(redacted)",
+  "creationDateTime": "2020-12-02T14:30:34.2444915Z",
+  "startDateTime": "2021-08-20T14:00:34.2444915Z",
+  "endDateTime": "2021-08-20T15:00:34.2464912Z",
+  "joinWebUrl": "(redacted)",
+  "subject": "User Token Live Event",
+  "autoAdmittedUsers": "EveryoneInCompany",
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "organization",
+  "videoTeleconferenceId": "(redacted)",
+  "participants": {
+    "organizer": {
+      "upn": "(redacted)",
+      "role": "producer",
+      "identity": {
+        "user": {
+          "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+          "displayName": null,
+          "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+          "identityProvider": "AAD"
+        }
+      }
+    },
+    "attendees": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "displayName": null,
+            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "producers": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "displayName": null,
+            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "contributors": []
+  },
+  "lobbyBypassSettings": {
+    "scope": "organization",
+    "isDialInBypassEnabled": false
+  },
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "organization",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -170,4 +273,3 @@ Content-Type: application/json
   ]
 }
 -->
-

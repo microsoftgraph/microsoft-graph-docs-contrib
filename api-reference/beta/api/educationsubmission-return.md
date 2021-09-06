@@ -2,7 +2,7 @@
 title: "educationSubmission: return"
 description: "This action makes the grade and feedback associated with this submission available to the student."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

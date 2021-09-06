@@ -2,7 +2,7 @@
 title: "Configure the scope of your access review using the Microsoft Graph API"
 description: "Learn how to use the access reviews API in Microsoft Graph to review access to Azure AD resources."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---
@@ -68,10 +68,24 @@ To review *only inactive users* assigned to the group:
     "queryType": "MicrosoftGraph"
 }
 ```
-
 Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review.
+    
+### Example 4: Review of all guest users assigned to all Teams
 
-### Example 4: Review access of all inactive guest users to all groups
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph"
+}
+    
+Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.
+
+### Example 5: Review access of all inactive guest users to all groups
 
 ```http
 "scope": {
@@ -84,7 +98,7 @@ Because this review is applied on all Microsoft 365 groups, configure the **inst
 
 Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`.
 
-### Example 5: Review of all inactive guest users assigned to all teams
+### Example 6: Review of all inactive guest users assigned to all teams
 
 ```http
 "instanceEnumerationScope": {
@@ -101,7 +115,7 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 
 Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams.
 
-### Example 6: Review of Entitlement Management access package assignment
+### Example 7: Review of Entitlement Management access package assignment
 
 ```http
 "scope": {
@@ -111,7 +125,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-### Example 7: Review of service principals assigned to privileged roles 
+### Example 8: Review of all service principals assigned to a privileged role (all active and eligible assignments included)
 
 ```http
 "scope": {
@@ -120,12 +134,42 @@ Because this review is applied on all teams, configure the **instanceEnumeration
     "queryType": "MicrosoftGraph"
 }
 ```
+    
+### Example 9: Review of all users assigned to a privileged role (all active and eligible assignments included)
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleDefinitions/{role ID}",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### Example 10: Review of all users with eligible assignment to a privileged role
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleEligibilityScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### Example 11: Review of all users with active assignment to a privileged role
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(assignmentType eq 'Assigned' and isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
 
 ## Use principalResourceMembershipsScope to configure scope
 
 The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition**. This includes reviewing access for multiple principals or groups of principals to multiple resources.
 
-### Example 1: Review access of all inactive guest users to groups
+### Example 1: Review access of all inactive guest users to all groups
 
 ```http
 "scope": {

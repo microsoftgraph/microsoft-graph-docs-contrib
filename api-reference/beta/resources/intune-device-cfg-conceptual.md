@@ -2,7 +2,7 @@
 title: "Device configuration in Microsoft Intune - Microsoft Gaaph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define configure devices for a tenant organization."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 ---
 
@@ -121,6 +121,7 @@ The following Graph resources are available to manage settings and features on d
 - [App list type](intune-deviceconfig-applisttype.md)
 - [App locker application control type](intune-deviceconfig-applockerapplicationcontroltype.md)
 - [Apple app list item](intune-deviceconfig-appleapplistitem.md)
+- [Apple deployment channel](intune-deviceconfig-appledeploymentchannel.md)
 - [Apple device features configuration base](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 - [Apple expedited checkin configuration base](intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
 - [Apple subject name format](intune-deviceconfig-applesubjectnameformat.md)
@@ -142,6 +143,8 @@ The following Graph resources are available to manage settings and features on d
 - [BitLocker system drive policy](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Browser sync setting](intune-deviceconfig-browsersyncsetting.md)
 - [Cart to class association](intune-deviceconfig-carttoclassassociation.md)
+- [Certificate connector details](intune-raimportcerts-certificateconnectordetails.md)
+- [Certificate connector health metric value](intune-raimportcerts-certificateconnectorhealthmetricvalue.md)
 - [Certificate issuance states](intune-deviceconfig-certificateissuancestates.md)
 - [Certificate revocation status](intune-deviceconfig-certificaterevocationstatus.md)
 - [Change uefi settings permission](intune-deviceconfig-changeuefisettingspermission.md)
@@ -218,10 +221,13 @@ The following Graph resources are available to manage settings and features on d
 - [Device management applicability rule os version](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
 - [Device management applicability rule type](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
 - [Device management certification authority](intune-deviceconfig-devicemanagementcertificationauthority.md)
+- [Device management reports](intune-grouppolicy-devicemanagementreports.md)
 - [Device management settings](intune-deviceconfig-devicemanagementsettings.md)
 - [Device management user rights local user or group](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Device management user rights setting](intune-deviceconfig-devicemanagementuserrightssetting.md)
+- [Device platform type](intune-deviceconfig-deviceplatformtype.md)
 - [Device threat protection level](intune-deviceconfig-devicethreatprotectionlevel.md)
+- [Device type](intune-deviceconfig-devicetype.md)
 - [Device types](intune-deviceconfig-devicetypes.md)
 - [Diagnostic data submission mode](intune-deviceconfig-diagnosticdatasubmissionmode.md)
 - [Diffie hellman group](intune-deviceconfig-diffiehellmangroup.md)
@@ -351,6 +357,9 @@ The following Graph resources are available to manage settings and features on d
 - [Key string value pair](intune-deviceconfig-keystringvaluepair.md)
 - [Key typed value pair](intune-deviceconfig-keytypedvaluepair.md)
 - [Key value](intune-deviceconfig-keyvalue.md)
+- [Key/value pair](intune-deviceconfig-keyvaluepair.md)
+- [Key/value pair](intune-deviceconfig-keyvaluepair.md)
+- [Kiosk mode managed home screen PIN complexity](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [LAN manager authentication level](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Local security options administrator elevation prompt behavior type](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [Local security options format and eject of removable media allowed user type](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -410,6 +419,7 @@ The following Graph resources are available to manage settings and features on d
 - [Managed device encryption state](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [Managed device mobile app configuration setting state](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
 - [Managed device reported app](intune-deviceconfig-manageddevicereportedapp.md)
+- [Management agent type](intune-deviceconfig-managementagenttype.md)
 - [Media content rating Australia](intune-deviceconfig-mediacontentratingaustralia.md)
 - [Media content rating Canada](intune-deviceconfig-mediacontentratingcanada.md)
 - [Media content rating France](intune-deviceconfig-mediacontentratingfrance.md)
@@ -443,6 +453,7 @@ The following Graph resources are available to manage settings and features on d
 - [Perfect forward secrecy group](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Pfx recryption request](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Pfx user certificate](intune-raimportcerts-pfxusercertificate.md)
+- [Policy platform type](intune-deviceconfig-policyplatformtype.md)
 - [Power action type](intune-deviceconfig-poweractiontype.md)
 - [Prerelease features](intune-deviceconfig-prereleasefeatures.md)
 - [Rating apps type](intune-deviceconfig-ratingappstype.md)
@@ -487,6 +498,7 @@ The following Graph resources are available to manage settings and features on d
 - [Specified captive network plugins](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [State management setting](intune-deviceconfig-statemanagementsetting.md)
 - [Subject name format](intune-deviceconfig-subjectnameformat.md)
+- [Time series parameter](intune-raimportcerts-timeseriesparameter.md)
 - [Unsupported device configuration](intune-deviceconfig-unsupporteddeviceconfiguration.md)
 - [Unsupported device configuration detail](intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)
 - [Update classification](intune-deviceconfig-updateclassification.md)

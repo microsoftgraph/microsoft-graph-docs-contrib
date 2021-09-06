@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "store",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API [store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "store"
+        },
+        {
+          "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "group",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API [group](https://docs.microsoft.com/en-us/graph/api/resources/termstore-group?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "group"
+        },
+        {
+          "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "set",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API [set](https://docs.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "set"
+        },
+        {
+          "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "term",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API [term](https://docs.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "term"
+        },
+        {
+          "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relation",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API [relation](https://docs.microsoft.com/en-us/graph/api/resources/termstore-relation?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "relation"
+        }
+      ],
+      "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-24T00:00:00",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": "Taxonomy"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4116e288-18ad-4423-8a95-f1ac63edc3bc",
           "ApiChange": "Resource",
           "ChangedApiName": "site",

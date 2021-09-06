@@ -1,7 +1,7 @@
 ---
 title: "Use app-only authentication with the Microsoft Graph PowerShell SDK"
 description: "Learn how to use app-only authentication to enable non-interactive scenarios with the Microsoft Graph PowerShell SDK."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
 ---
 
@@ -10,7 +10,7 @@ author: jasonjoh
 The PowerShell SDK supports two types of authentication: [delegated access](..\auth-v2-user.md), and [app-only access](..\auth-v2-service.md). This guide will focus on the configuration needed to enable app-only access.
 
 > [!IMPORTANT]
-> App-only access grants permissions directly to an application, and requires an administrator to consent to the required permission scopes. For more details on app-only access, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+> App-only access grants permissions directly to an application, and requires an administrator to consent to the required permission scopes. For more information on app-only access, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 Let's walk through configuring app-only access for a simple script to list users and groups in your Microsoft 365 tenant.
 
@@ -18,20 +18,21 @@ Let's walk through configuring app-only access for a simple script to list users
 
 Before you can use app-only access with the SDK, you need the following.
 
-- A certificate to use as a credential for the application. This can be a self-signed certificate or a certificate from an authority.
-- You must [register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Azure AD, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
+- A certificate to use as a credential for the application. This can be a self-signed certificate or a certificate from an authority. Refer to the [See also](#see-also) section for guidance on how to create a self-signed certificate.
+- [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Azure AD, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
 
 ### Certificate
 
-You will need an X.509 certificate installed in your user's trusted store on the machine where you will run the script. You'll also need the certificate's public key exported in .cer, .pem, or .crt format. You'll need the value of the certificate subject.
+You will need an X.509 certificate installed in your user's trusted store on the machine where you will run the script. You'll also need the certificate's public key exported in .cer, .pem, or .crt format. You'll need the value of the certificate subject or its thumbprint.
 
 ### Register the application
 
 You can register the application either in the [Azure Active Directory portal](https://aad.portal.azure.com), or using PowerShell.
 
+<!-- markdownlint-disable MD025 -->
 # [Portal](#tab/azure-portal)
 
-1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and login using an Microsoft 365 tenant organization admin.
+1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and login using a Microsoft 365 tenant organization admin.
 
 1. Select **Azure Active Directory** in the left-hand navigation, then select **App registrations** under **Manage**.
 
@@ -62,6 +63,7 @@ You can register the application either in the [Azure Active Directory portal](h
 1. Select **Certificates & secrets** under **Manage**. Select the **Upload certificate** button. Browse to your certificate's public key file and select **Add**.
 
 # [PowerShell](#tab/powershell)
+<!-- markdownlint-enable MD025 -->
 
 > [!NOTE]
 > You must have the Microsoft Graph PowerShell SDK [installed](installation.md) before following these steps.
@@ -83,9 +85,12 @@ You may be wondering: "I can use the PowerShell SDK to register an app, so that 
 1. Review the output for the prompt `Please go to the following URL in your browser to provide admin consent`. Copy the URL provided and paste it in your browser. Sign in with an administrator account to grant admin consent to your newly registered application.
 
     > [!NOTE]
-    > After granting admin consent, the browser will display an error: `AADSTS500113: No reply address is registered for the application`. This is because the app registration does not include a redirect URL. This error can be ignored.
+    > After granting admin consent, the browser will redirect back to `http://localhost` and display a **Not Found** error. This error can be ignored as long as the URL contains `admin_consent=True`.
 
 1. Review the rest of the PowerShell output for `Connect-MgGraph` command pre-filled with the values for your app registration.
+
+    > [!TIP]
+    > If the script returns an error stating `New-MgServicePrincipal : Unable to find target address`, re-run the script with the additional `-TenantId` parameter. For details, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
 
 ---
 
@@ -93,14 +98,14 @@ You may be wondering: "I can use the PowerShell SDK to register an app, so that 
 
 You should have three pieces of information after completing the configuration steps above.
 
-- Certificate subject of the certificate uploaded to your Azure AD app registration.
+- Certificate subject or thumbprint of the certificate uploaded to your Azure AD app registration.
 - Application ID for your app registration.
 - Your tenant ID.
 
 Let's use those to test authentication. Open PowerShell and run the following command, replacing the placeholders with your information.
 
 ```powershell
-Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT
+Connect-MgGraph -ClientID YOUR_APP_ID -TenantId YOUR_TENANT_ID -CertificateName YOUR_CERT_SUBJECT ## Or -CertificateThumbprint instead of -CertificateName
 ```
 
 If this succeeds, you will see `Welcome To Microsoft Graph!`. Run `Get-MgContext` to verify that you've authenticated with app-only. The output should look like the following.
@@ -169,3 +174,8 @@ All Employees                       1a1cd42d-9801-4e9d-9b77-5215886174ef
 Mark 8 Project Team                 2bf1b0d0-81f6-4e80-b971-d1db69f8d651
 ...
 ```
+
+
+## See also
+
++ [How to: Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate)

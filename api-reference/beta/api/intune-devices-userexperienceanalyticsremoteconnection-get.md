@@ -2,7 +2,7 @@
 title: "Get userExperienceAnalyticsRemoteConnection"
 description: "Read properties and relationships of the userExperienceAnalyticsRemoteConnection object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 573
+Content-Length: 671
 
 {
   "value": {
@@ -73,17 +73,18 @@ Content-Length: 573
     "deviceName": "Device Name value",
     "model": "Model value",
     "virtualNetwork": "Virtual Network value",
+    "manufacturer": "Manufacturer value",
     "deviceCount": 11,
     "cloudPcRoundTripTime": 6.666666666666667,
     "cloudPcSignInTime": 5.666666666666667,
     "remoteSignInTime": 5.333333333333333,
     "coreBootTime": 4.0,
     "coreSignInTime": 4.666666666666667,
-    "cloudPcFailurePercentage": 8.0
+    "cloudPcFailurePercentage": 8.0,
+    "userPrincipalName": "User Principal Name value"
   }
 }
 ```
-
 
 
 
