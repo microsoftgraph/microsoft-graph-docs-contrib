@@ -1,7 +1,7 @@
 ---
 title: "searchBucket resource type"
 description: "Represents a container for one or more search results that share the same value for the entity field that aggregates them"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

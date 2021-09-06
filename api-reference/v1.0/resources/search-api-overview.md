@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
-localization_priority: Priority
+ms.localizationpriority: high
 author: "nmoreau"
 ms.prod: "search"
 doc_type: resourcePageType
