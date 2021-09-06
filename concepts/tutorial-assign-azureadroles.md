@@ -28,7 +28,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a Global Administrator role.
-  + [Optional] Start a new incognito or InPrivate browser session or, start a session in an anonymous browser. You will log in later in this tutorial.
+  + [Optional] Start a new incognito or InPrivate browser session or, start a session in an anonymous browser. You'll sign in later in this tutorial.
 + The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
 + Authenticator app installed on your phone to register a user for multifactor authentication (MFA).
 
@@ -300,19 +300,19 @@ The empty response object shows that Aline has no existing Azure AD roles in Con
 
 ## Step 5: User self-activates their eligible assignment
 
-An incident ticket CONTOSO: Security-012345 has been raised in Contoso's incident management system and the company requires that all employee's refresh tokens be invalidated. As a member of IT Helpdesk, the user is responsible for fulfilling this task.
+An incident ticket CONTOSO: Security-012345 has been raised in Contoso's incident management system and the company requires that all employee's refresh tokens be invalidated. As a member of IT Helpdesk, Aline is responsible for fulfilling this task.
 
 First, start the Authenticator app on your phone and open Aline Dupuy's account.
 
-Sign in to Graph Explorer as Aline. You may use an incognito session or an anonymous browser for this step. By doing so, you will not interrupt your current session as a user in the Global Administrator role. Alternatively, you can interrupt your current session by logging out of Graph Explorer and logging back in as Aline.
+Sign in to Graph Explorer as Aline. You may use an incognito session or an anonymous browser for this step. By doing so, you won't interrupt your current session as a user in the Global Administrator role. Alternatively, you can interrupt your current session by logging out of Graph Explorer and logging back in as Aline.
 
-Logged in as Aline, you'll first change your password because this was specified during account creation. Then, because the administrator configured your account for MFA, you'll be prompted to set up your account in the Authenticator app and be challenged for MFA sign-in. This is because PIM requires that all active role assignments require Azure MFA.
+Logged in as Aline, you'll first change your password because this was specified during account creation. Then, because the administrator configured your account for MFA, you'll be prompted to set up your account in the Authenticator app and be challenged for MFA sign-in. This is because PIM requires that MFA for all active role assignments.
 
 After signing in, activate your User Administrator role for five hours.
 
 ### Request
 
-To activate a role, call the roleAssignmentScheduleRequests endpoint. In this request, the `UserActivate` action allows you to activate your eligible assignment, in this case for five hours.
+To activate a role, call the `roleAssignmentScheduleRequests` endpoint. In this request, the `UserActivate` action allows you to activate your eligible assignment, in this case for five hours.
 
 + For **principalId**, supply the value of your (Aline's) **id**.
 + The **roleDefinitionId** is the **id** of the role you're eligible for, in this case, the User Administrator role.
