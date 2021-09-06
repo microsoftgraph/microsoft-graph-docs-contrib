@@ -11,14 +11,12 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Specifies which aggregations should be returned alongside the search results.
 
 ## Properties
 
 | Property     | Type        | Description |
-|:-------------|:------------|:------------| 
+|:-------------|:------------|:------------|
 |bucketDefinition|[bucketAggregationDefinition](bucketaggregationdefinition.md)|Specifies the criteria to compute an aggregation. Optional.|
 |field|String|Computes aggregation on the field while the field exists in current entity type. Required.|
 |size|Int32|The number of [searchBucket](searchBucket.md) resources to be returned. This is not required when the range is provided manually in the search request. Optional.|

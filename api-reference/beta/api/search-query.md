@@ -1,7 +1,7 @@
 ---
 title: "searchEntity: query"
-description: "Runs the query specified in the request body. Search results are provided in the response."
-ms.localizationpriority: medium
+description: "Runs the query specified in the request body. Search results are provided in the response"
+localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "apiPageType"
