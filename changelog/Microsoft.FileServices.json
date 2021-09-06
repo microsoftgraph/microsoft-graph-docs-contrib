@@ -1717,7 +1717,7 @@
         "Target": "driveItem"
       }, {
         "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
-        "ApiChange": "ComplexType",
+        "ApiChange": "Resource",
         "ChangedApiName": "malware",
         "ChangeType": "Addition",
         "Description": "Added the [malware](https://docs.microsoft.com/en-us/graph/api/resources/malware?view=graph-rest-beta) resource type.",
@@ -1727,7 +1727,7 @@
         "ApiChange": "Resource",
         "ChangedApiName": "driveItem",
         "ChangeType": "change",
-        "Description": "Removed SharePoint and OneDrive for Business driveItem delta limitation regarding properties omitted by delta query for lastModifiedBy.",
+        "Description": "Removed the SharePoint and OneDrive for Business driveItem delta limitation about properties omitted by the delta query for lastModifiedBy.",
         "Target": "driveItem"
       }],
       "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
@@ -1747,7 +1747,7 @@
         "Target": "driveItem"
       }, {
         "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
-        "ApiChange": "ComplexType",
+        "ApiChange": "Resource",
         "ChangedApiName": "malware",
         "ChangeType": "Addition",
         "Description": "Added the [malware](https://docs.microsoft.com/en-us/graph/api/resources/malware?view=graph-rest-beta) resource type.",
@@ -1757,7 +1757,7 @@
         "ApiChange": "Resource",
         "ChangedApiName": "driveItem",
         "ChangeType": "change",
-        "Description": "Removed SharePoint and OneDrive for Business driveItem delta limitation regarding properties omitted by delta query for lastModifiedBy.",
+        "Description": "Removed the SharePoint and OneDrive for Business driveItem delta limitation about properties omitted by the delta query for lastModifiedBy.",
         "Target": "driveItem"
       }],
       "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",

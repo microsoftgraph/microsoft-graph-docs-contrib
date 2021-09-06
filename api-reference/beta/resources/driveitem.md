@@ -121,10 +121,10 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | id                   | String             | The unique identifier of the item within the Drive. Read-only.
 | image                | [image][]          | Image metadata, if the item is an image. Read-only.
 | lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application which last modified the item. Read-only.
-| lastModifiedDateTime | DateTimeOffset     | Date and time the item was last modified. Read-only.
+| lastModifiedDateTime | DateTimeOffset     | Date and time at which the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
-| media                | [media][]          | Information about the media (audio or video) item. Read-write. Only on OneDrive for Business and SharePoint.
 | malware              | [malware][]        | Malware metadata, if the item was detected to contain malware. Read-only.
+| media                | [media][]          | Information about the media (audio or video) item. Read-write. Only on OneDrive for Business and SharePoint.
 | name                 | String             | The name of the item (filename and extension). Read-write.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
