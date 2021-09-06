@@ -2,7 +2,7 @@
 title: "Update mailFolder"
 description: "Update the properties of mailFolder object."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

@@ -3,7 +3,7 @@ title: "Get installed app for user"
 description: "Retrieve the app installed in the personal scope of the specified user."
 author: "AkJo"
 doc_type: "apiPageType"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: delta"
 description: "Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection. See Using Delta Query for details."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"

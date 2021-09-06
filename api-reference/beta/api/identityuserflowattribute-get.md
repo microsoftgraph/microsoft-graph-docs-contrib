@@ -1,7 +1,7 @@
 ---
 title: "Get identityUserFlowAttribute"
 description: "Retrieve the properties and relationships of an identityUserFlowAttribute object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"

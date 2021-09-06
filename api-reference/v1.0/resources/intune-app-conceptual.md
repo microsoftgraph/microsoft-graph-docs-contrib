@@ -2,7 +2,7 @@
 title: "Manage apps using Microsoft Intune"
 description: "The following Graph resources are available to manage mobile apps in Intune:  "
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: conceptualPageType
 ---
@@ -67,13 +67,6 @@ The following Graph resources are available to manage mobile apps in Intune:
 - [Mobile app install time settings](intune-apps-mobileappinstalltimesettings.md)
 - [Mobile app publishing state](intune-apps-mobileapppublishingstate.md)
 - [Mobile LOB app](intune-apps-mobilelobapp.md)
-- [Office client checkin status](intune-cirrus-officeclientcheckinstatus.md)
-- [Office client configuration](intune-cirrus-officeclientconfiguration.md)
-- [Office client configuration assignment](intune-cirrus-officeclientconfigurationassignment.md)
-- [Office configuration](intune-cirrus-officeconfiguration.md)
-- [Office configuration assignment target](intune-cirrus-officeconfigurationassignmenttarget.md)
-- [Office configuration group assignment target](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
-- [Office user checkin summary](intune-cirrus-officeusercheckinsummary.md)
 - [Run as account type](intune-apps-runasaccounttype.md)
 - [User install state summary](intune-books-userinstallstatesummary.md)
 - [VPP licensing type](intune-apps-vpplicensingtype.md)
@@ -103,6 +96,4 @@ The following Graph resources are available to manage mobile apps in Intune:
 - [Windows device type](intune-apps-windowsdevicetype.md)
 - [Windows minimum operating system](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows mobile MSI](intune-apps-windowsmobilemsi.md)
-- [Windows office client configuration](intune-cirrus-windowsofficeclientconfiguration.md)
-- [Windows office client security configuration](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)

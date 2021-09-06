@@ -2,7 +2,7 @@
 title: "cloudPcOnPremisesConnection: updateAdDomainPassword"
 description: "Update AD domain password for a successful onPremisesConnection."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|adDomainPassword|String|The password associated with adDomainUsername|
+|adDomainPassword|String|The password associated with **adDomainUsername**.|
 
 
 

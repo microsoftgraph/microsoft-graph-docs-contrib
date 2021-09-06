@@ -1,7 +1,7 @@
 ---
 title: "Update schemaExtension"
 description: "Update properties in the definition of the specified schemaExtension."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: apiPageType

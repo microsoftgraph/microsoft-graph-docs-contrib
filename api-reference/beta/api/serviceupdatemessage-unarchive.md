@@ -2,7 +2,7 @@
 title: "serviceUpdateMessage: unarchive"
 description: "Unarchive a list of service update messages for the signed in user."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---

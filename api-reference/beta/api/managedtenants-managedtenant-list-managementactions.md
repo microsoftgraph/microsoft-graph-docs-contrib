@@ -2,7 +2,7 @@
 title: "List managementActions"
 description: "Get a list of the managementAction objects and their properties."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---

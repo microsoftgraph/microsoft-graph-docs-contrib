@@ -2,8 +2,9 @@
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.localizationpriority: high
 ---
 
 # Microsoft Graph throttling guidance
@@ -116,52 +117,16 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 
 #### Outlook service resources
 
-The following resources are provided by the Outlook service.
+| API                                                      | Resources      |
+|------------------------------------------------------------|-----------------|
+| Search API (preview)                  | <li>[External item (Microsoft Search)](/graph/api/resources/externalitem) |
+| Profile API                                      | <li>[Photo](/graph/api/resources/profilephoto)   |
+| Calendar API | <li>[event](/graph/api/resources/event) <li> [eventMessage](/graph/api/resources/eventmessage) <li> [calendar](/graph/api/resources/calendar) <li>  [calendarGroup](/graph/api/resources/calendargroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment) <li> [place (preview)](/graph/api/resources/place)   |
+| Mail API                                      | <li>[message](/graph/api/resources/message) <li>  [message](/graph/api/resources/message) <li> [mailFolder](/graph/api/resources/mailfolder) <li> [mailSearchFolder](/graph/api/resources/mailsearchfolder) <li> [messageRule](/graph/api/resources/messagerule) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
+| Personal contacts API | <li>[contact](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
+| Social and workplace intelligence | <li>[person](/graph/api/resources/person) |
+| To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
-##### Search API resources (preview)
-
-- [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
-
-##### Profile API resources
-
-- [Photo](/graph/api/resources/profilephoto?view=graph-rest-1.0)
-
-##### Calendar API resources
-
-- [event](/graph/api/resources/event)
-- [eventMessage](/graph/api/resources/eventmessage)
-- [calendar](/graph/api/resources/calendar)
-- [calendarGroup](/graph/api/resources/calendargroup)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
-- [place (preview)](/graph/api/resources/place)
-
-##### Mail API resources
-
-- [message](/graph/api/resources/message)
-- [mailFolder](/graph/api/resources/mailfolder)
-- [mailSearchFolder](/graph/api/resources/mailsearchfolder)
-- [messageRule](/graph/api/resources/messagerule)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
-
-##### Personal contacts API resources
-
-- [contact](/graph/api/resources/contact)
-- [contactFolder](/graph/api/resources/contactfolder)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-
-##### Social and workplace intelligence resources
-
-- [person](/graph/api/resources/person)
-
-##### To-do tasks API (preview) resources
-
-- [outlookTask](/graph/api/resources/outlooktask)
-- [outlookTaskFolder](/graph/api/resources/outlooktaskfolder)
-- [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
 
 ### Cloud communication service limits
 
@@ -178,12 +143,13 @@ The following resources are provided by the Outlook service.
 | Requests rate | 120 requests per 1 minute and 400 per 1 hour | 240 requests per 1 minute and 800 per 1 hour |
 | Concurrent requests | 5 concurrent requests | 20 concurrent requests |
 
-The preceding limits apply to the following resources:  
-onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
+The preceding limits apply to the following resources:
 
-You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+[!INCLUDE [Onenote throttling documentation](../includes/throttling-onenote.md)]
 
-> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).
+
+**Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 ### Project Rome service limits
 
@@ -192,8 +158,11 @@ You can find additional information about best practices in [OneNote API throttl
 | GET          | 400 requests per 5 minutes and 12000 requests per 1 day |
 | POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
 
-The preceding limits apply to the following resources:  
-activityHistoryItem, userActivity
+The preceding limits apply to the following resources:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
 
 ### Microsoft Teams service limits
 
@@ -219,53 +188,16 @@ Limits are expressed as requests per second (rps).
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 A maximum of 3000 messages per app per day can be sent to a given channel.
 
-See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
+See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
-The preceding limits apply to the following resources:  
-aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessage, chatMessageHostedContent, conversationMember, offerShiftRequest, openShift, openShiftChangeRequest, schedule, scheduleChangeRequest, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamsTemplate, teamwork, timeOff, timeOffReason, timeOffRequest, userSettings, workforceIntegration.
+[!INCLUDE [Teams throttling documentation](../includes/throttling-teams.md)]
 
 ### Identity and access service limits
 
-These service limits apply to the following entities:
+The service limits in this section apply to the following entities:
 
-- [Directory object](/graph/api/resources/directoryobject)
-- [Extension property](/graph/api/resources/extensionproperty)
-- [Administrative unit](/graph/api/resources/administrativeunit)
-- [Application](/graph/api/resources/application)
-- [Application role assignment](/graph/api/resources/approleassignment)
-- [Certificate based auth configuration](/graph/api/resources/certificatebasedauthconfiguration)
-- [Organizational contact](/graph/api/resources/orgcontact)
-- [Device](/graph/api/resources/device)
-- [Directory object partner reference](/graph/api/resources/directoryobjectpartnerreference)
-- [Directory role](/graph/api/resources/directoryrole)
-- [Directory role template](/graph/api/resources/directoryroletemplate)
-- [Domain](/graph/api/resources/domain)
-- [Domain dns record](/graph/api/resources/domaindnsrecord)
-- [Domain dns cname record](/graph/api/resources/domaindnscnamerecord)
-- [Domain dns mx record](/graph/api/resources/domaindnsmxrecord)
-- [Domain dns srv record](/graph/api/resources/domaindnssrvrecord)
-- [Domain dns txt record](/graph/api/resources/domaindnstxtrecord)
-- [Domain dns unavailable record](/graph/api/resources/domaindnsunavailablerecord)
-- [Endpoint](/graph/api/resources/endpoint)
-- [Extension property](/graph/api/resources/extensionproperty)
-- [License details](/graph/api/resources/licensedetails)
-- [Group](/graph/api/resources/group)
-- [Activity based timeout policy](/graph/api/resources/activitybasedtimeoutpolicy)
-- [Claims mapping policy](/graph/api/resources/claimsmappingpolicy)
-- [Home realm discovery policy](/graph/api/resources/homerealmdiscoverypolicy)
-- [Token issuance policy](/graph/api/resources/tokenissuancepolicy)
-- [Token lifetime policy](/graph/api/resources/tokenlifetimepolicy)
-- [Policy base](/graph/api/resources/policybase)
-- [Sts policy](/graph/api/resources/stspolicy)
-- [Contract](/graph/api/resources/contract)
-- [Service principal](/graph/api/resources/serviceprincipal)
-- [Subscribed sku](/graph/api/resources/subscribedsku)
-- [OAuth2 permission grant](/graph/api/resources/oauth2permissiongrant)
-- [Organization](/graph/api/resources/organization)
-- [User](/graph/api/resources/user)
-- [Group setting](/graph/api/resources/groupsetting)
-- [Group setting template](/graph/api/resources/groupsettingtemplate)
+[!INCLUDE [Identity and access throttling documentation](../includes/throttling-identity-and-access.md)]
 
 #### Pattern
 
@@ -353,7 +285,18 @@ Other factors that affect a request cost:
   - WriteLimitExceeded - Throttling is because the write limit is exceeded.
   - ResourceUnitLimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
 
-### Information protection
+### Identity and access reports service limits
+
+| Request type | Limit per tenant for all apps | Limit per app per tenant |
+| ------------ | ----------------------------- | ------------------------ |
+| POST, PUT, DELETE, PATCH | 200 requests per 20 seconds | 100 requests per 20 seconds |
+| Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
+
+The preceding limits apply to the following resources:
+
+[!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
+
+### Information protection service limits
 
 The following limits apply to any request on `/informationProtection`.
 
@@ -361,8 +304,7 @@ The following limits apply to any request on `/informationProtection`.
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|
 | POST                      | 150 requests per 15 minutes and 10000 requests per 24 hours | 1 request per 15 minutes and 3 requests per 24 hours |
 
-The preceding limits apply to the following resources:  
-threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
+[!INCLUDE [Information protection throttling documentation](../includes/throttling-information-protection.md)]
 
 ### Identity protection and conditional access service limits
 
@@ -370,8 +312,8 @@ threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFil
 | ------------ | ------- |
 | Any | 1 request per second |
 
-The preceding limits apply to the following resources:  
-riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
+[!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
+
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
@@ -384,8 +326,12 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
 
-The preceding limits apply to the following resources:  
-people, trending, usedinsight, sharedInsight.
+The preceding limits apply to the following resources:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+
 
 ### Microsoft Graph reports service limits
 
@@ -398,7 +344,8 @@ The following limits apply to any request on `/reports`.
 
 The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
 
-The preceding limits apply to the **report** resource.  
+The preceding limits apply to all [usage reports](/graph/api/resources/report) resources.
+
 
 ### Invitation manager service limits
 
@@ -425,22 +372,24 @@ The following limits apply to any request on `/security`.
 | ------------ | ------------------------ |
 | Any          | 455 requests per 10 seconds |
 
-The preceding limits apply to the following resources: 
-openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post, and user.
+The preceding limits apply to the following resources:
+[!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
+
 
 ### Files and lists service limits
 
 Service limits for OneDrive, OneDrive for Business, and SharePoint Online are not available. For more information, see [why can't you just tell me the exact throttling limits?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
 
-The preceding information applies to the following resources:  
-baseItem, baseItemVersion, columnDefinition, columnLink, contentType, drive, driveItem, driveItemVersion, fieldValueSet, itemActivity, itemActivityStat, itemAnalytics, list, listItem, listItemVersion, permission, sharedDriveItem, site, and thumbnailSet.
+The preceding information applies to the following resources:
+
+[!INCLUDE [Files and lists throttling documentation](../includes/throttling-files-and-lists.md)]
 
 ### Tasks and plans service limits
 
 Service limits for Planner are not available.
 
-The preceding information applies to the following resources:  
-planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskBoardTaskFormat, plannerGroup, plannerPlan, plannerPlanDetails, plannerProgressTaskBoardTaskFormat, plannerTask, plannerTaskDetails, and plannerUser.
+The preceding information applies to the following resources:
+[!INCLUDE [Tasks and plans throttling documentation](../includes/throttling-tasks-and-plans.md)]
 
 ### Identity and access data policy operation service limits
 
@@ -449,8 +398,11 @@ planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskB
 | POST on `exportPersonalData` | 1000 requests per day for any subject and 100 per subject per day |
 | Any other request | 10000 requests per hour |
 
-The preceding limits apply to the following resources: 
-dataPolicyOperation.
+The preceding limits apply to the following resources:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
@@ -477,7 +429,7 @@ dataPolicyOperation.
 [!INCLUDE [Intune bundles throttling documentation](../includes/throttling-intune-bundles.md)]
 [!INCLUDE [Intune chromebook sync throttling documentation](../includes/throttling-intune-chromebook-sync.md)]
 [!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
-[!INCLUDE [Intune device config V2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
+[!INCLUDE [Intune device config v2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
 [!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
 [!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
 [!INCLUDE [Intune device intent throttling documentation](../includes/throttling-intune-device-intent.md)]
@@ -492,7 +444,6 @@ dataPolicyOperation.
 [!INCLUDE [Intune partner integration throttling documentation](../includes/throttling-intune-partner-integration.md)]
 [!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
 [!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
-[!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
 [!INCLUDE [Intune telephony throttling documentation](../includes/throttling-intune-telephony.md)]
 [!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
 [!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
@@ -522,9 +473,10 @@ The following limits apply to requests on the assignment service API:
 |---------------------------|------------------------------|----------------------------|
 | Any         | 500 requests per 10 seconds   | 1000 requests per 10 seconds
 |Any          | 15000 requests per 3600 seconds|30000 requests per 3600 seconds|
-| GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |  
+| GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |
 
-The preceding limits apply to the following resources: 
-[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)
-[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest)
-[educationResource](/graph/api/resources/educationresource?view=graph-rest)
+The preceding limits apply to the following resources:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|

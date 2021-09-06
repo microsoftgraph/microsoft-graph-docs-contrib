@@ -1,7 +1,7 @@
 ---
 title: "device resource type"
 description: "Represents a device registered in the organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "spunukol"
 ms.prod: "directory-management"
 doc_type: resourcePageType

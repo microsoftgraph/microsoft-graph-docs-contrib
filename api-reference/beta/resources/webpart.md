@@ -3,7 +3,7 @@ author: rahmit
 description: "The webPart resource represents type and rendering information for a web part on a sitePage."
 ms.date: 09/01/2018
 title: WebPart
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

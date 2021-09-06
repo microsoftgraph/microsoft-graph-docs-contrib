@@ -2,7 +2,7 @@
 title: "getManagedDevicesWithAppFailures function"
 description: "Retrieves the list of devices with failed apps"
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -68,7 +68,6 @@ Content-Length: 74
   ]
 }
 ```
-
 
 
 

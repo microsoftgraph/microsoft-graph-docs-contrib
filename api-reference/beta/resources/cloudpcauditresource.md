@@ -2,7 +2,7 @@
 title: "cloudPcAuditResource resource type"
 description: "Represents the audit resource. This shows the target edited resource entity, with multiple edited properties."
 author: "ecmadao"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---

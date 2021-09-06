@@ -2,7 +2,7 @@
 title: "Authentication and authorization basics for Microsoft Graph"
 description: "To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform."
 author: "matt-steele"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
 ---

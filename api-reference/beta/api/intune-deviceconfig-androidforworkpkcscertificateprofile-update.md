@@ -2,7 +2,7 @@
 title: "Update androidForWorkPkcsCertificateProfile"
 description: "Update the properties of a androidForWorkPkcsCertificateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -193,7 +193,6 @@ Content-Length: 1910
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
 
 
 

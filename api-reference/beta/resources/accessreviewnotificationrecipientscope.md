@@ -2,7 +2,7 @@
 title: "accessreviewnotificationrecipientscope resource type"
 description: "Represents who will receive access review notifications."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "orgContact: getMemberObjects"
 description: "Return all the groups that this organizational contact is a member of. The check is transitive."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: apiPageType

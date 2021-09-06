@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph SDKs overview"
 description: "Describes the SDKs that are available, the platforms they support, and the value they provide to developers."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
 ---
@@ -29,6 +29,7 @@ SDKs are currently available for the following languages and platforms:
 - [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)
 - [Java](https://developer.microsoft.com/en-us/graph/get-started/java)
 - [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)
+- [PowerShell](/graph/powershell/get-started)
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
 - [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 
