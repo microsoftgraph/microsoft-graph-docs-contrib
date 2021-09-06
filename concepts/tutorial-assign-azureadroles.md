@@ -2,15 +2,15 @@
 title: "Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles"
 description: "Use the Privileged Identity Management (PIM) API to assign Azure AD admin roles"
 author: "FaithOmbongi"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
 # Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles
 
-Contoso Limited is a growing service provider that wishes to have its IT Helpdesk manage the lifecycle of employees’ access. They have identified the Azure Active Directory (Azure AD) User Administrator role as the appropriate privileged role required by IT Helpdesk.
+Contoso Limited is a growing service provider that wishes to have its IT Helpdesk manage the lifecycle of employees’ access. They've identified the Azure Active Directory (Azure AD) User Administrator role as the appropriate privileged role required by IT Helpdesk.
 
-In this tutorial, you as the Global Administrator of Contoso Limited create a role-assignable security group for IT Helpdesk. Add an employee as a group member. Then, using the PIM API, add the security group as eligible for the User Administrator role.
+In this tutorial, you as the Global Administrator of Contoso Limited create a role-assignable security group for IT Helpdesk. Add an employee as a group member. Using the PIM API, you'll then add the security group as eligible for the User Administrator role.
 
 By using a security group to assign the eligible role, Contoso has a more efficient way to manage administrator access to resources such as Azure AD roles. For example:
 
@@ -28,8 +28,8 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a global administrator role.
-+ The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, `RoleManagement.ReadWrite.Directory`, and `Directory.AccessAsUser.All`.
-+ Authenticator app installed on your phone to register a user for multi-factor authentication (MFA).
++ The following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
++ Authenticator app installed on your phone to register a user for multifactor authentication (MFA).
 
 To consent to the required permissions in Graph Explorer:
 1. Select the horizontal ellipses icon to the right of the user account details, and then choose **Select permissions**.
@@ -38,7 +38,7 @@ To consent to the required permissions in Graph Explorer:
 
 2. Scroll through the list of permissions to these permissions:
     + Group (2), expand and then select **Group.ReadWrite.All**.
-    + Directory (4), expand and then select **Directory.Read.All** and **Directory.AccessAsUser.All**.
+    + Directory (4), expand and then select **Directory.Read.All**.
     + RoleAssignmentSchedule (2), expand and then select **RoleAssignmentSchedule.ReadWrite.Directory**.
     + RoleEligibilitySchedule (2), expand and then select **RoleEligibilitySchedule.ReadWrite.Directory**.
     + RoleManagement (3), expand and then select **RoleManagement.ReadWrite.Directory**.
@@ -50,7 +50,7 @@ To consent to the required permissions in Graph Explorer:
 
 ## Step 1: Create a test user
 
-Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Azure Portal and enable multi-factor authentication (MFA) for the user. For more guidance on enabling MFA, refer to the [See also](#see-also) section.
+Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Azure portal and enable multifactor authentication (MFA) for the user. For more information on enabling MFA, see the [See also](#see-also) section.
 
 
 ### Request
@@ -99,7 +99,7 @@ Content-type: application/json
 
 Create a group that’s assignable to an Azure AD role. Assign yourself as the group owner and both you and Aline as members.
 
-### Request : Create a role-assignable group
+### Request: Create a role-assignable group
 
 Replace `1ed8ac56-4827-4733-8f80-86adc2e67db5` with your **id**.
 
@@ -311,9 +311,9 @@ After signing in, activate your User Administrator role for five hours.
 
 To activate a role, call the roleAssignmentScheduleRequests endpoint. In this request, the `UserActivate` action allows you to activate your eligible assignment, in this case for five hours.
 
-+ For **principalId**, supply the value of your (Aline's) id.
-+ The **roleDefinitionId** is the **id** of the role you are eligible for, in this case, the User Administrator role.
-+ Enter the details of the ticket system which provides an auditable justification for activating the request.
++ For **principalId**, supply the value of your (Aline's) **id**.
++ The **roleDefinitionId** is the **id** of the role you're eligible for, in this case, the User Administrator role.
++ Enter the details of the ticket system that provides an auditable justification for activating the request.
 
 <!-- {
   "blockType": "request",
@@ -392,33 +392,11 @@ You may confirm your assignment by running `GET https://graph.microsoft.com/beta
 
 ## Step 6: Clean up resources
 
-Log in as the Global Administrator and delete the following resources that you created for this tutorial: the test user (Aline Dupuy),  IT Support (Users) group, and the role eligibility request.
-
-### Delete the test user
-
-#### Request
-
-Replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
-
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-assignaadroles-user_delete"
-}-->
-```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": false
-} -->
-```http
-HTTP/1.1 204 No Content
-```
+Sign in as the Global Administrator and delete the following resources that you created for this tutorial: the role eligibility request, IT Support (Users) group, and the test user (Aline Dupuy).
 
 ### Revoke the role eligibility request
+
+#### Request
 
 Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Users) group.
 
@@ -427,7 +405,7 @@ Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Us
   "name": "tutorial-assignaadroles-roleEligibilityScheduleRequests_revoke"
 }-->
 ```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
 Content-type: application/json
 
 {
@@ -463,6 +441,8 @@ Content-type: application/json
 
 ### Delete the IT Support (Users) group
 
+#### Request
+
 Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Users) group.
 
 <!-- {
@@ -483,11 +463,33 @@ DELETE https://graph.microsoft.com/beta/groups/e77cbb23-0ff2-4e18-819c-690f58269
 HTTP/1.1 204 No Content
 ```
 
+### Delete the test user
 
+#### Request
+
+Replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-assignaadroles-user_delete"
+}-->
+```msgraph-interactive
+DELETE https://graph.microsoft.com/beta/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 
 ## See also
 
 + [Start using Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started)
 + [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#all-roles)
-+ [Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates)
++ [Enable per-user Azure AD multifactor authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates)
 + [unifiedRoleEligibilityScheduleRequest resource type](/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-beta&preserve-view=true)
