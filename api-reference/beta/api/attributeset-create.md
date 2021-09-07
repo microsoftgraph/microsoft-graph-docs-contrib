@@ -70,7 +70,7 @@ Content-Type: application/json
 Content-length: 131
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.attributeSet",
+  "@odata.type": "#microsoft.graph.attributeSet",
   "description": "String",
   "maxAttributesPerSet": "Integer"
 }
@@ -82,7 +82,7 @@ Content-length: 131
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.attributeSet"
+  "@odata.type": "microsoft.graph.attributeSet"
 }
 -->
 ``` http
@@ -90,7 +90,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.attributeSet",
+  "@odata.type": "#microsoft.graph.attributeSet",
   "description": "String",
   "id": "7faca33b-a33b-7fac-3ba3-ac7f3ba3ac7f",
   "maxAttributesPerSet": "Integer"
