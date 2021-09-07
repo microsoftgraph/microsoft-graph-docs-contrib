@@ -2,7 +2,7 @@
 title: "Update androidForWorkApp"
 description: "Update the properties of a androidForWorkApp object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -165,7 +165,6 @@ Content-Length: 1132
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

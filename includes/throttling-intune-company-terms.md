@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---
@@ -13,5 +13,8 @@ ms.topic: include
 | POST, PUT, DELETE, PATCH | 200 requests per 20 seconds | 100 requests per 20 seconds |
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
-The preceding limits apply to the following resources:  
-termsAndConditions, termsAndConditionsAcceptanceStatus, termsAndConditionsAssignment, termsAndConditionsGroupAssignment.
+The preceding limits apply to the following resources:
+  
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [termsAndConditions](/graph/api/resources/termsandconditions) <li> [termsAndConditionsAcceptanceStatus](/graph/api/resources/termsandconditionsacceptancestatus) <li> [termsAndConditionsAssignment](/graph/api/resources/termsandconditionsassignment) <li> [termsAndConditionsGroupAssignment](/graph/api/resources/termsandconditionsgroupassignment) </ul> |

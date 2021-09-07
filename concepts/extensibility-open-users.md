@@ -2,7 +2,7 @@
 title: "Add custom data to users using open extensions"
 description: "This article walks you through an example to demonstrate how to use *open extensions*. "
 author: "dkershaw10"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 

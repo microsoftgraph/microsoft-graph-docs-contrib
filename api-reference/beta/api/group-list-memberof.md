@@ -2,7 +2,7 @@
 title: "List group memberOf"
 description: "Get groups and administrative units that the group is a direct member of."
 author: "Jordanndahl"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---

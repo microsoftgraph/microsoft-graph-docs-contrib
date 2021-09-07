@@ -1,7 +1,7 @@
 ---
 title: "section: copyToNotebook"
 description: "Copies a section to a specific notebook."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "Update skillProficiency"
 description: "Update the properties of skillProficiency object in a user's profile."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

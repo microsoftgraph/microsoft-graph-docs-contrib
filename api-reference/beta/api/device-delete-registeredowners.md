@@ -1,7 +1,7 @@
 ---
 title: "Delete registeredowners"
 description: "Remove a user as a registered owner of the device."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "michaelrm97"
 ms.prod: "directory-management"
 doc_type: apiPageType

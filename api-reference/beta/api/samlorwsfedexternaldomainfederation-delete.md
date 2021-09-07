@@ -2,7 +2,7 @@
 title: "Delete samlOrWsFedExternalDomainFederation"
 description: "Delete a samlOrWsFedExternalDomainFederation object."
 author: "namkedia"
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

@@ -88,7 +88,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252f1.0
+        href: /graph/migrate-azure-ad-graph-overview
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
       - name: "1: Review differences"
@@ -1256,6 +1256,18 @@ items:
             href: resources/callrecords-session.md
           - name: List sessions
             href: api/callrecords-session-list.md
+        - name: PSTN calls
+          items:
+          - name: PSTN log row
+            href: resources/callrecords-pstncalllogrow.md
+          - name: List PSTN calls
+            href: api/callrecords-callrecord-getpstncalls.md
+        - name: Direct routing calls
+          items:
+          - name: Direct routing log row
+            href: resources/callrecords-directroutinglogrow.md
+          - name: List direct routing calls
+            href: api/callrecords-callrecord-getdirectroutingcalls.md
       - name: Online meetings
         items:
         - name: Online meeting
@@ -4580,6 +4592,33 @@ items:
               href: api/subscribedsku-list.md
             - name: Get subscribedSku
               href: api/subscribedsku-get.md
+        - name: Role management
+          href: resources/rolemanagement.md
+          items:
+          - name: Role definition
+            href: resources/unifiedroledefinition.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roledefinitions.md
+            - name: Create
+              href: api/rbacapplication-post-roledefinitions.md
+            - name: Get
+              href: api/unifiedroledefinition-get.md
+            - name: Update
+              href: api/unifiedroledefinition-update.md
+            - name: Delete
+              href: api/unifiedroledefinition-delete.md
+          - name: Role assignment
+            href: resources/unifiedroleassignment.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignments.md
+            - name: Create
+              href: api/rbacapplication-post-roleassignments.md
+            - name: Get
+              href: api/unifiedroleassignment-get.md
+            - name: Delete
+              href: api/unifiedroleassignment-delete.md            
       - name: Identity and sign-in
         items:
         - name: Authentication flows policy

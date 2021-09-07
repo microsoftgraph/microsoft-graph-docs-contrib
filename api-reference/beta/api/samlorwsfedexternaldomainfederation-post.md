@@ -2,7 +2,7 @@
 title: "Create samlOrWsFedExternalDomainFederation"
 description: "Create a new samlOrWsFedExternalDomainFederation object."
 author: "namkedia"
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

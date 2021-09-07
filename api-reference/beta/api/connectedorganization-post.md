@@ -2,7 +2,7 @@
 title: "Create connectedOrganization"
 description: "Create a new connectedOrganization."
 author: "markwahl-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

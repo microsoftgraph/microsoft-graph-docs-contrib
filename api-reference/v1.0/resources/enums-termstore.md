@@ -2,7 +2,7 @@
 title: "termStore enumeration values"
 description: "Microsoft Graph termStore enumeration values."
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "taxonomy"
 author: vishriv
 ---

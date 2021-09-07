@@ -2,7 +2,7 @@
 title: "remoteAssistanceOnboardingStatus enum type"
 description: "The current TeamViewer connector status"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,7 +23,6 @@ The current TeamViewer connector status
 |notOnboarded|0|The status reported when there is no active TeamViewer connector configured or active|
 |onboarding|1|The status reported when the system has initiated a TeamViewer connection, but the service has not yet completed the confirmation of a connector|
 |onboarded|2|The status reported when the system has successfully exchanged account information with TeamViewer and can now initiate remote assistance sessions with clients|
-
 
 
 

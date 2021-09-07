@@ -1,7 +1,7 @@
 ---
 title: "Create onPremisesAgentGroup"
 description: "Create a new **onPremisesAgentGroup** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"

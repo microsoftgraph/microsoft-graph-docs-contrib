@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the file property can be downloaded."
 ms.date: 09/10/2017
 title: Download a file
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -34,6 +34,7 @@ GET /drives/{drive-id}/items/{item-id}/content
 GET /groups/{group-id}/drive/items/{item-id}/content
 GET /me/drive/root:/{item-path}:/content
 GET /me/drive/items/{item-id}/content
+GET /shares/{shareIdOrEncodedSharingUrl}/driveItem/content
 GET /sites/{siteId}/drive/items/{item-id}/content
 GET /users/{userId}/drive/items/{item-id}/content
 ```

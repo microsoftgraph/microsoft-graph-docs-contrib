@@ -2,7 +2,7 @@
 title: "List updatableAssets"
 description: "Get a list of updatableAsset objects and their properties."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
