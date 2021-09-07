@@ -1,0 +1,238 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "dataSubjectRequestStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubjectRequestStage](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "dataSubjectRequestStage"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "dataSubjectRequestStage"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "dataSubjectRequestStageStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubjectRequestStageStatus](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "dataSubjectRequestStageStatus"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "dataSubjectRequestStageStatus"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "dataSubjectRequestStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubjectRequestStatus](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "dataSubjectRequestStatus"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "dataSubjectRequestStatus"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "dataSubjectRequestType",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubjectRequestType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "dataSubjectRequestType"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "dataSubjectRequestType"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "dataSubjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubjectType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "dataSubjectType"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "dataSubjectType"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "dataSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubject](https://docs.microsoft.com/en-us/graph/api/resources/dataSubject?view=graph-rest-beta) resource",
+          "Target": "dataSubject"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "dataSubject"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "dataSubjectRequestDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubjectRequestDetail](https://docs.microsoft.com/en-us/graph/api/resources/dataSubjectRequestDetail?view=graph-rest-beta) resource",
+          "Target": "dataSubjectRequestDetail"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "dataSubjectRequestDetail"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "dataSubjectRequestHistory",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubjectRequestHistory](https://docs.microsoft.com/en-us/graph/api/resources/dataSubjectRequestHistory?view=graph-rest-beta) resource",
+          "Target": "dataSubjectRequestHistory"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "dataSubjectRequestHistory"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "dataSubjectRequestStageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubjectRequestStageDetail](https://docs.microsoft.com/en-us/graph/api/resources/dataSubjectRequestStageDetail?view=graph-rest-beta) resource",
+          "Target": "dataSubjectRequestStageDetail"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "dataSubjectRequestStageDetail"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "authoredNote",
+          "ChangeType": "Addition",
+          "Description": "Added the [authoredNote](https://docs.microsoft.com/en-us/graph/api/resources/authoredNote?view=graph-rest-beta) resource",
+          "Target": "authoredNote"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "authoredNote"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "dataSubjectRequests",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubjectRequests](https://docs.microsoft.com/en-us/graph/api/resources/compliance?view=graph-rest-beta) resource",
+          "Target": "compliance"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "dataSubjectRequests",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **dataSubjectRequests** resource type",
+          "Target": "compliance"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "dataSubjectRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [dataSubjectRequest](https://docs.microsoft.com/en-us/graph/api/resources/dataSubjectRequest?view=graph-rest-beta) resource",
+          "Target": "dataSubjectRequest"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "dataSubjectRequest"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Function",
+          "ChangedApiName": "getFinalAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [getFinalAttachment](https://docs.microsoft.com/en-us/graph/api/getFinalAttachment?view=graph-rest-beta) resource",
+          "Target": "getFinalAttachment"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "getFinalAttachment"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Function",
+          "ChangedApiName": "getFinalReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getFinalReport](https://docs.microsoft.com/en-us/graph/api/getFinalReport?view=graph-rest-beta) resource",
+          "Target": "getFinalReport"
+        },
+        {
+          "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+          "ApiChange": "Annotation",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource type",
+          "Target": "getFinalReport"
+        }
+      ],
+      "Id": "c591d113-3db3-4dcf-984e-8f59ed865708",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-01T18:24:32.2275051Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": ""
+    }
+  ]
+}

@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph Data subject request API"
 description: "The Microsoft 365 data subject request APIs provide functionality for organizations to automate repetitive tasks and integrate with their existing data subject request tools to build repeatable workflows that can help meet industry regulations. You can use the Data subject request APIs to help with your legal needs."
 ms.localizationpriority: medium
 author: "skadam-msft"
-ms.prod: "Privacy Management"
+ms.prod: "compliance"
 doc_type: conceptualPageType
 ---
 
