@@ -98,7 +98,7 @@ Content-type: application/json
 
 ## Step 2: Create a security group that can be assigned an Azure AD role
 
-Create a group that’s assignable to an Azure AD role. Assign yourself as the group owner and both you and Aline as members.
+Create a group that’s assignable to an Azure AD role. Assign yourself as the group owner and both you and Aline (the user created in Step 1) as members.
 
 ### Request: Create a role-assignable group
 
