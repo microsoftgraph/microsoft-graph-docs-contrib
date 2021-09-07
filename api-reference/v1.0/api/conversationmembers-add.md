@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged) | 
 |:--------------------|:--------------------------|
 | Delegated (work or school account) | TeamMember.ReadWrite.All  |
-| Delegated (personal Microsoft account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported. |
 | Application | TeamMember.ReadWrite.All   |
 
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is the example of the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -157,7 +157,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is the example of the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 <!-- {
