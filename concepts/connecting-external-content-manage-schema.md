@@ -140,6 +140,23 @@ Finally, when assigning labels, ensure the following:
 
 Aliases are friendly names for properties that you assign. These will be used in queries and selections in refinable property filters.
 
+## Planned schema updates
+
+This section includes information about planned updates for the Schema API.
+
+> [!NOTE]
+> It is strongly recommended to re-ingest items after the updates, to bring them to te latest schema. Without re-ingestion the behavior of the items will be inconsistent.
+
+### New semantic labels
+
+### Adding a property
+
+It will be possible to add a property to the schema.  This property can have any search attributes, and it will be available in Substrate with its value after being added.
+
+### Adding search attributes to a property
+
+It will be possible to add specific search attributes to a property.  
+
 ## Next steps
 
 - [Add items to the connection](./connecting-external-content-manage-items.md)
