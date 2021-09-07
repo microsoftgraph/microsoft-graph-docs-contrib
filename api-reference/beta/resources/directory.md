@@ -51,15 +51,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty":"id",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.directory"
 }
 ```
 

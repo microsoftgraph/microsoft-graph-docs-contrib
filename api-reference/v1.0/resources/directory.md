@@ -48,28 +48,14 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
+  "keyProperty":"id",
+  "optionalProperties": [],
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-}
-```
-
-## Example
-
-<!--{"blockType": "request"}-->
-```http
-GET https://graph.microsoft.com/v1.0/directory
-```
-
-<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
+  "@odata.type": "#microsoft.graph.directory"
 }
 ```
 
