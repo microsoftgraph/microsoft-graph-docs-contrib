@@ -1,12 +1,12 @@
 ---
-title: "Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles"
-description: "Use the Privileged Identity Management (PIM) API to assign Azure AD admin roles"
+title: "Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD privileged roles"
+description: "Use the Privileged Identity Management (PIM) API to assign Azure AD privileged roles"
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
-# Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD admin roles
+# Tutorial: Use the Microsoft Graph Privileged Identity Management (PIM) API to assign privileged roles
 
 Contoso Limited is a growing service provider that wishes to have its IT Helpdesk manage the lifecycle of employees’ access. They've identified the Azure Active Directory (Azure AD) User Administrator role as the appropriate privileged role required by IT Helpdesk.
 
@@ -392,6 +392,8 @@ Content-type: application/json
 ```
 
 You may confirm your assignment by running `GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')`. The response object returns your newly activated role assignment with its status set to `Granted`. With your new privilege, carry out any allowed actions within five hours your assignment is active for. This includes invalidating all employees' refresh tokens. After five hours, the active assignment expires but through your membership in the **IT Support (Users)** group, you still remain eligible for the User Administrator role.
+
+Back in the global administrator session, you have received notifications of both the eligible assignment and the role activation. This allows the global administrator to be aware of all elevations to administrator privileges across your organization.
 
 ## Step 6: Clean up resources
 
