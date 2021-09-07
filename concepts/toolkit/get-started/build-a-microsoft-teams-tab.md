@@ -14,7 +14,7 @@ Building a tab involves the following steps:
 1. Add the Microsoft Graph Toolkit.
 1. Create the auth popup page.
 1. Creating an app/client ID
-1. Initialize the Teams Msal2 Provider.
+1. Initialize the Teams MSAL2 Provider.
 1. Add components.
 1. Test your app.
 
@@ -76,11 +76,11 @@ To get a client ID, you need to register an Azure Active Directory application. 
 
 Make sure to set the `redirect URI` in your app registration to point to the auth page you created in the previous step. For example, https://localhost:3000/tabauth.
 
-> **Note:** Make sure to set the `redirect URI` as a `Single Page Application (SPA)`. Teams Msal2 Provider makes use of Msal2 Provider behind the scenes.
+> **Note:** Make sure to set the `redirect URI` as a `Single Page Application (SPA)`. Teams MSAL2 Provider makes use of MSAL2 Provider behind the scenes.
 
-## Initialize the Teams Msal2 Provider
+## Initialize the Teams MSAL2 Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams Msal2 Provider](../providers/teams-msal2.md) handles all the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams MSAL2 Provider](../providers/teams-msal2.md) handles all the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
 You can choose to initialize the provider in either your HTML or your JavaScript code. 
 

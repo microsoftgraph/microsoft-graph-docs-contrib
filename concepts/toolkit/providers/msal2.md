@@ -1,29 +1,29 @@
 ---
-title: "MSAL 2 provider"
+title: "MSAL2 provider"
 description: "The MSAL 2 provider uses msal-browser to sign in users and acquire tokens to use with the Microsoft Graph"
 ms.localizationpriority: medium
 author: amrutha95
 ---
 
-# Msal2Provider
+# MSAL2 Provider
 
-The Msal2Provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
+The MSAL2 Provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
 
 To learn more, see [providers](./providers.md).
 
-## Difference between Msal2Provider and MsalProvider
-Although the usage is similar, MsalProvider and Msal2Provider are built on different OAuth flows. MsalProvider is built on msal.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). Msal2Provider is built on [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
+## Difference between MSAL2 Provider and MSAL Provider
+Although the usage is similar, MSAL Provider and MSAL2 Provider are built on different OAuth flows. MSAL Provider is built on msal.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). MSAL2 Provider is built on [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
 Because Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, we recommend using Msal2Provider over MsalProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
 
-All new applications should use Msal2Provider whenever possible. 
+All new applications should use MSAL2 Provider whenever possible. 
 
 ## Get started
 
-You can initialize the Msal2Provider in HTML or JavaScript.
+You can initialize the MSAL2 Provider in HTML or JavaScript.
 
 ### Initialize in your HTML page
 
-Initializing the MSAL 2 provider in HTML is the simplest way to create a new provider. Use the `mgt-msal2-provider` component to set the **client-id** and other properties. This will create a new `PublicClientApplication` instance that will be used for all authentication and acquiring tokens.
+Initializing the MSAL2 provider in HTML is the simplest way to create a new provider. Use the `mgt-msal2-provider` component to set the **client-id** and other properties. This will create a new `PublicClientApplication` instance that will be used for all authentication and acquiring tokens.
 
 ```html
     <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"
@@ -101,8 +101,8 @@ interface Msal2PublicClientApplicationConfig {
 
 For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
 
-## Migrating from MsalProvider to Msal2Provider
-To migrate an application that's using MSAL provider to the MSAL 2 Provider:
+## Migrating from MSAL Provider to MSAL2 Provider
+To migrate an application that's using MSAL provider to the MSAL2 Provider:
 1. Go to the Azure portal at https://portal.azure.com.
 1. From the menu, select **Azure Active Directory**.
 1. From the Azure Active Directory menu, select **App registrations**.
@@ -110,7 +110,7 @@ To migrate an application that's using MSAL provider to the MSAL 2 Provider:
 1. Go to **Authentication** on the left menu.
 1. Under **Platform configurations**, click on **Add a platform** and select **Single-page Application**.
 1. Remove all the redirect URIs that you have currently registered under **Web**, and instead add them under **Single-page application**.
-1. In your code, replace MSALProvider with MSAL2Provider.
+1. In your code, replace `MSALProvider` with `MSAL2Provider`.
 
     If you are initializing your provider in the JS/TS code, follow these steps:
     
