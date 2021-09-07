@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/directory/attributeSets
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.DirectoryServices.attributeSet)"
+  "@odata.type": "Collection(microsoft.graph.attributeSet)"
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.DirectoryServices.attributeSet",
+      "@odata.type": "#microsoft.graph.attributeSet",
       "description": "String",
       "id": "7faca33b-a33b-7fac-3ba3-ac7f3ba3ac7f",
       "maxAttributesPerSet": "Integer"
