@@ -82,7 +82,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
     "displayName": "CrossTenantAccessPolicy",
-    "lastModifiedDateTime": "08-23-2021Z00:00:00"
+    "lastModifiedDateTime": "08-23-2021Z00:00:00",
+    "definition": "Cross tenant access policy..."
   }
 }
 ```

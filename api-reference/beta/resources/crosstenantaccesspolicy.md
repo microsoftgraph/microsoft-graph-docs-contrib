@@ -34,6 +34,7 @@ Cross-tenant access settings let you manage both B2B collaboration and B2B direc
 |:---|:---|:---|
 |displayName|String|The display name of the cross tenant access policy. Inherited from [policyBase](../resources/policybase.md).|
 |lastModifiedDateTime|DateTimeOffset|The time that the cross tenant access policy was last modified.|
+|definition|String|The raw JSON definition of the cross tenant access policy. Deprecated. Do not use.|
 
 ## Relationships
 
@@ -57,6 +58,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
   "displayName": "String",
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "String (timestamp)",
+  "definition": "String"
 }
 ```
