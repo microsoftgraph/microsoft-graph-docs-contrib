@@ -2493,18 +2493,18 @@ Possible values for user account types (group membership), per Windows definitio
 | :-------------------| :------------------------------------------------------------------------------------------------------------------ |
 | active			  | The incident is in active state.                                                                                    |
 | resolved            | The incident is in resolved state.                                                                                  |
-| redirected          | The incident was merged with another incident. The target incident id appears in the `redirectIncidentId` property. |
+| redirected          | The incident was merged with another incident. The target incident ID appears in the `redirectIncidentId` property. |
 | unknownFutureValue  | unknownFutureValue for evolvable enums pattern.                                                                     |
 
 ### m365AlertClassification values 
 
-| Member              | Description                                                                                                                  |
-| :-------------------| :--------------------------------------------------------------------------------------------------------------------------- |
-| unknown		      | The alert is not classified yet.                                                                                             |
-| falsePositive       | The alert is a false positive and did not detect malicious activity.                                                         |
-| truePositive        | The alert is true positive and detected malicious activity.                                                                  |
-| benignPositive      | The alert is benign positive and detected potentially malicious activity by a trusted/internal user - e.g. security testing. |
-| unknownFutureValue  | unknownFutureValue for evolvable enums pattern.                                                                              |
+| Member              | Description                                                                                                                         |
+| :-------------------| :---------------------------------------------------------------------------------------------------------------------------------- |
+| unknown		      | The alert isn't classified yet.																				                        |
+| falsePositive       | The alert is a false positive and didn't detect malicious activity.                                                                 |
+| truePositive        | The alert is true positive and detected malicious activity.                                                                         |
+| benignPositive      | The alert is benign positive and detected potentially malicious activity by a trusted/internal user, for example, security testing. |
+| unknownFutureValue  | unknownFutureValue for evolvable enums pattern.                                                                                     |
 
 ### m365AlertDetermination values 
 
@@ -2519,7 +2519,7 @@ Possible values for user account types (group membership), per Windows definitio
 | multiStagedAttack          | A true positive alert that detected multiple kill-chain attack stages.                                                       |
 | compromisedUser            | A true positive alert that detected that the intended user's credentials were compromised or stolen.                         |
 | phishing                   | A true positive alert that detected a phishing email.                                                                        |
-| maliciousUserActivity      | A true positive alert that detected the logged on user trying to perform malicious activities.                               |
+| maliciousUserActivity      | A true positive alert that detected the logged on user tries to perform malicious activities.                                |
 | clean                      | A false alert, no suspicious activity.                                                                                       |
 | insufficientData           | A false alert, without enough information to prove otherwise.                                                                |
 | confirmedUserActivity      | The alert caught a true suspicious activity, but it’s OK, it’s a known user activity.                                        |
@@ -2533,7 +2533,7 @@ Possible values for user account types (group membership), per Windows definitio
 | :------------------| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | unknown		     | Unknown severity.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | informational		 | Alerts that may not be actionable or considered harmful to the network but can drive organizational security awareness on potential security issues.                                                                                                                                                                                                                                                                          |
-| low                | Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands, clearing logs, etc., that often do not indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.                                                                                          |
+| low                | Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands and clearing logs, that often don't indicate an advanced threat that targets the organization. It could also come from an isolated security tool that is tested by a user in your organization.                                                                                    |
 | medium             | Alerts generated from detections and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be due to internal security testing, they are valid detections and require investigation as they may be a part of an advanced attack. |
 | high               | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk because of the severity of damage they can inflict on assets. Some examples are: credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary.                                              |
 | unknownFutureValue | unknownFutureValue for evolvable enums pattern.																																																																																											     |

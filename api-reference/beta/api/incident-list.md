@@ -1,9 +1,9 @@
 ---
 title: "List incidents"
 description: "Get a list of the incident objects and their properties."
-author: "bealfasi"
+author: "BenAlfasi"
 localization_priority: Normal
-ms.prod: "bealfasi"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /security/incidents
 GET /security/incidents?$top=10
 GET /security/incidents?$filter={property}+eq+'{property-value}'
-GET /security/alerts?$filter={property}+eq+'{property-value}'&{property2}+eq+'{property-value2}'
 ```
 
 ## Optional query parameters
@@ -77,7 +76,8 @@ GET https://graph.microsoft.com/beta/security/incidents
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.incident)"
+  "@odata.type": "microsoft.graph.incident",
+  "isCollection": true
 }
 -->
 ``` http
