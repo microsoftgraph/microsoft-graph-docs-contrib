@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
-Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md) and [user](user.md) resources.
+Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md), and [user](user.md) resources.
 
 Inherits from [entity](entity.md).
 
