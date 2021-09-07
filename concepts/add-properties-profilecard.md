@@ -2,7 +2,7 @@
 title: "Customize the profile card using the profile API in Microsoft Graph (preview)"
 description: "This article describes how you can customize the profile card by making additional attributes visible, or adding custom attributes."
 author: "PollyNincevic"
-localization\_priority: Priority
+ms.localizationpriority: high
 ms.prod: "users"
 ms.custom: scenarios:getting-started
 ---

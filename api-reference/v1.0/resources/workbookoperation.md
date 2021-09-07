@@ -1,7 +1,7 @@
 ---
 title: "workbookOperation resource type"
 description: "Represents the status of a long-running workbook operations."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "resourcePageType"

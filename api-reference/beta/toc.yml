@@ -92,7 +92,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252fbeta
+        href: /graph/migrate-azure-ad-graph-overview
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
       - name: "1: Review differences"
@@ -1563,6 +1563,21 @@ items:
             href: api/ediscovery-case-post-reviewsets.md
           - name: Get
             href: api/ediscovery-reviewset-get.md
+        - name: Review set query
+          href: resources/ediscovery-reviewsetquery.md
+          items:
+          - name: List
+            href: api/ediscovery-reviewsetquery-list.md
+          - name: Create
+            href: api/ediscovery-reviewsetquery-post.md
+          - name: Get
+            href: api/ediscovery-reviewsetquery-get.md
+          - name: Update
+            href: api/ediscovery-reviewsetquery-update.md
+          - name: Delete
+            href: api/ediscovery-reviewsetquery-delete.md
+          - name: Apply tags
+            href: api/ediscovery-reviewsetquery-applytags.md
         - name: Source collection
           href: resources/ediscovery-sourcecollection.md
           items:
@@ -1607,21 +1622,6 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
-        - name: Review set query
-          href: resources/ediscovery-reviewsetquery.md
-          items:
-          - name: List
-            href: api/ediscovery-reviewsetquery-list.md
-          - name: Create
-            href: api/ediscovery-reviewsetquery-post.md
-          - name: Get
-            href: api/ediscovery-reviewsetquery-get.md
-          - name: Update
-            href: api/ediscovery-reviewsetquery-update.md
-          - name: Delete
-            href: api/ediscovery-reviewsetquery-delete.md
-          - name: Apply tags
-            href: api/ediscovery-reviewsetquery-applytags.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -9624,6 +9624,14 @@ items:
             href: api/cloudpc-reprovision.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Reprovision remote action
+            href: api/manageddevice-reprovisioncloudpc.md
+          - name: Bulk reprovision remote action
+            href: api/manageddevice-bulkreprovisioncloudpc.md
+          - name: Resize remote action
+            href: api/manageddevice-resizecloudpc.md
+          - name: Get remote action results
+            href: api/manageddevice-getcloudpcremoteactionresults.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
@@ -11079,6 +11087,15 @@ items:
               href: api/microsoftauthenticatorauthenticationmethod-get.md
             - name: Delete
               href: api/microsoftauthenticatorauthenticationmethod-delete.md
+          - name: Software OATH token
+            href: resources/softwareOathAuthenticationMethod.md
+            items:
+            - name: List
+              href: api/authentication-list-softwareoathmethods.md
+            - name: Get
+              href: api/softwareOathAuthenticationMethod-get.md
+            - name: Delete
+              href: api/softwareOathAuthenticationMethod-delete.md
           - name: Microsoft Authenticator Passwordless Phone Sign-In (deprecated)
             href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
             items:
@@ -12144,9 +12161,9 @@ items:
           items:
           - name: Privileged Identity Management
             href: resources/privilegedidentitymanagement-root.md
-          - name: Azure AD
+          - name: Azure AD (deprecated))
             items:
-            - name: Azure AD
+            - name: Azure AD 
               href: resources/privilegedidentitymanagement-directory.md
             - name: Privileged role
               href: resources/privilegedrole.md

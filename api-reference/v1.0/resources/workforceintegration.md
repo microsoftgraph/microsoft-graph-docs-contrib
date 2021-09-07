@@ -1,7 +1,7 @@
 ---
 title: "workforceIntegration resource type"
 description: "An instance of a workforce integration with shifts."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"

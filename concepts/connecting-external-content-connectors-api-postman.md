@@ -2,7 +2,7 @@
 title: "Use Postman with the Microsoft Graph connectors API"
 description: "Try connectors APIs using Postman"
 author: mecampos
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
 ---
