@@ -69,7 +69,7 @@ Content-Type: application/json
 Content-length: 92
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.allowedValue",
+  "@odata.type": "#microsoft.graph.allowedValue",
   "isActive": "Boolean"
 }
 ```
@@ -80,7 +80,7 @@ Content-length: 92
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.allowedValue"
+  "@odata.type": "microsoft.graph.allowedValue"
 }
 -->
 ``` http
@@ -88,7 +88,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.allowedValue",
+  "@odata.type": "#microsoft.graph.allowedValue",
   "id": "7a741af5-1af5-7a74-f51a-747af51a747a",
   "isActive": "Boolean"
 }
