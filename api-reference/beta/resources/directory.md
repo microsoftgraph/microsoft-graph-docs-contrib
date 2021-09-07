@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
-# directory resource type (deleted items)
+# directory resource type
 
 Namespace: microsoft.graph
 

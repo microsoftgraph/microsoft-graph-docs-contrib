@@ -159,7 +159,7 @@ Content-type: application/json
   "name": "get_deleteditems_count"
 }-->
 ```msgraph-interactive
-https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?$count=true&$orderBy=deletedDateTime asc&$select=id,DisplayName,deletedDateTime
+GET https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?$count=true&$orderBy=deletedDateTime asc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
