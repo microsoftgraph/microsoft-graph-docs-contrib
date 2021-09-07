@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.allowedValue"
+  "@odata.type": "microsoft.graph.allowedValue"
 }
 -->
 ``` http
@@ -75,7 +75,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.allowedValue",
+    "@odata.type": "#microsoft.graph.allowedValue",
     "id": "7a741af5-1af5-7a74-f51a-747af51a747a",
     "isActive": "Boolean"
   }
