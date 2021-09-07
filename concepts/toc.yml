@@ -683,15 +683,15 @@ items:
             items:
               - name: Using the providers
                 href: toolkit/providers/providers.md
-              - name: Msal provider
+              - name: MSAL provider
                 href: toolkit/providers/msal.md
-              - name: Msal2 provider
+              - name: MSAL2 provider
                 href: toolkit/providers/msal2.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
                 href: toolkit/providers/teams.md
-              - name: Microsoft Teams Msal2 provider
+              - name: Microsoft Teams MSAL2 provider
                 href: toolkit/providers/teams-msal2.md
               - name: Electron provider
                 href: toolkit/providers/electron.md
