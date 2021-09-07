@@ -142,12 +142,21 @@ Aliases are friendly names for properties that you assign. These will be used in
 
 ## Planned schema updates
 
+*Note to reviewer: I can add more information if needed, once we confirm these are the updates that we need to mention here.*
+
 This section includes information about planned updates for the Schema API.
 
 > [!NOTE]
 > It is strongly recommended to re-ingest items after the updates, to bring them to te latest schema. Without re-ingestion the behavior of the items will be inconsistent.
 
-### New semantic labels
+### Semantic labels
+
+Semantic Labels provide a domain independent approach of assigning properties from different content domains to a set of well-known classes.
+
+Semantic Labels find applications in many different content experiences. They provide automated support for many tasks like:
+* Data integration in heterogenous experiences
+* Building common Knowledge Graphs (e.g. Cortex, Suggestions & QF)
+* Default templates for user experiences
 
 ### Adding a property
 
