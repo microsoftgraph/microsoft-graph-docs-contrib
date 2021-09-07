@@ -182,8 +182,6 @@ items:
             href: connecting-external-content-manage-items.md
           - name: External groups
             href: connecting-external-content-external-groups.md
-          - name: Schema API
-            href: connecting-external-content-connectors-schemaapi.md                        
           - name: API limits
             href: connecting-external-content-api-limits.md
       - name: Cross-device experiences

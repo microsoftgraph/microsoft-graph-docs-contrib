@@ -151,7 +151,7 @@ This section includes information about planned updates for the Schema API.
 
 ### Adding a property
 
-It will be possible to add a property to the schema.  This property can have any search attributes, and it will be available in Substrate with its value after being added.
+It will be possible to add a property to the schema. This property can have any search attributes, and it will be available in Substrate with its value after being added.
 
 ### Adding search attributes to a property
 
