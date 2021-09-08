@@ -32,7 +32,7 @@ Authentication providers implement the code required to acquire a token using th
 |                                                                                                        | Interactive        | Delegated Consumer/Org | [Interactive provider](#interactive-provider) |
 
 > [!NOTE]
-> The code snippets below were written with the latest versions of their respective SDKs. If you encounter compiler errors with these snippets, please make sure you have the latest versions. The authentication providers used are provided by the following Azure Identity libraries.
+> The following code snippets were written with the latest versions of their respective SDKs. If you encounter compiler errors with these snippets, make sure you have the latest versions. The authentication providers used are provided by the following Azure Identity libraries:
 >
 > - .NET developers need to add the [Azure.Identity](/dotnet/api/azure.identity) package.
 > - JavaScript developers need to add the [@azure/identity](/javascript/api/@azure/identity) library.
