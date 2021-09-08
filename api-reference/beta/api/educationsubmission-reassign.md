@@ -64,7 +64,8 @@ POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332
 The following is an example of the response when `prefer` is NOT provided in the request header.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
 HTTP/1.1 200 Ok
@@ -122,7 +123,8 @@ HTTP/1.1 200 Ok
 The following is an example of the response when `prefer` is provided in the request header.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
 HTTP/1.1 200 Ok
@@ -178,7 +180,7 @@ HTTP/1.1 200 Ok
 
 ## See also
 
-* [Assignments and Submissions state transition](../../concepts/assignments-submissions-states-transition.md)
+* [Assignments and Submissions state transition](../../../concepts/assignments-submissions-states-transition.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
