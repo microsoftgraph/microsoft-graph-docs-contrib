@@ -92,7 +92,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/e141b67c-90fd-45
 }
 ```
 
-### Notification sent to the application once the stopHoldMusicOperation finishes
+### Notification sent to the application after the stopHoldMusicOperation finishes
 
 ```http
 POST https://bot.contoso.com/api/calls
