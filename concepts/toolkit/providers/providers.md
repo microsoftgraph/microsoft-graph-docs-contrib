@@ -32,7 +32,7 @@ To use a provider in your app, you need to initialize a new provider and then se
 
 **Option 1: Use the provider component**
 
-You can use the component version of the provider directly in your HTML. Behind the scenes, a new provider is initialized and set as the global provider. The following example shows how to use the MSAL2 Provider.
+You can use the component version of the provider directly in your HTML. Behind the scenes, a new provider is initialized and set as the global provider. The following example shows how to use the MSAL2 provider.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -41,7 +41,7 @@ You can use the component version of the provider directly in your HTML. Behind 
 
 **Option 2: Initialize in code**
 
-Initializing your provider in your JavaScript code enables you to provide more options. To do this, create a new provider instance and set the value of the `Providers.globalProvider` property to the provider you'd like to use. The following example shows how to use the MSAL2 Provider.
+Initializing your provider in your JavaScript code enables you to provide more options. To do this, create a new provider instance and set the value of the `Providers.globalProvider` property to the provider you'd like to use. The following example shows how to use the MSAL2 provider.
 
 ```js
 import {Providers, Msal2Provider } from "@microsoft/mgt";
@@ -157,7 +157,7 @@ graphClient
 
 ## Using multiple providers
 
-In some scenarios, your application will run in different environments and require a different provider for each. For example, the app might run as both a web application and a Microsoft Teams tab, which means you might need to use both the MSAL2 Provider and the Teams MSAL2 Provider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
+In some scenarios, your application will run in different environments and require a different provider for each. For example, the app might run as both a web application and a Microsoft Teams tab, which means you might need to use both the MSAL2 provider and the Teams MSAL2 provider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
 
 ```html
 <mgt-teams-msal2-provider
@@ -169,7 +169,7 @@ In some scenarios, your application will run in different environments and requi
   depends-on="mgt-teams-provider" ></mgt-msal2-provider>
 ```
 
-In this scenario, the MSAL2 Provider will only be used if your app is running as a web application and the Teams MSAL2 Provider is not available in the current environment.
+In this scenario, the MSAL2 provider will only be used if your app is running as a web application and the Teams MSAL2 provider is not available in the current environment.
 
 To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.
 
@@ -182,7 +182,7 @@ if (TeamsProvider.isAvailable) {
 ```
 ## User Login/Logout
 
-When you have the right providers initialized for your application, you can add the Toolkit's [Login component](../components/login.md) to easily and quickly implement user login and logout. The component works with the provider to handle all of the authentication logic and login/logout functionality. The following example uses the MSAL2 Provider and the Login component.
+When you have the right providers initialized for your application, you can add the Toolkit's [Login component](../components/login.md) to easily and quickly implement user login and logout. The component works with the provider to handle all of the authentication logic and login/logout functionality. The following example uses the MSAL2 provider and the Login component.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
