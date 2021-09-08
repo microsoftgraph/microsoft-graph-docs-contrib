@@ -108,6 +108,7 @@ This example response includes three permissions, the first is a sharing link wi
 HTTP/1.1 200 OK
 Content-Type: application/json
 
+
 {
   "value": [
     {
@@ -120,11 +121,23 @@ Content-Type: application/json
     },
     {
       "id": "2",
+      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "roles": ["write"],
       "grantedTo": {
         "user": {
           "id": "5D33DD65C6932946",
           "displayName": "John Doe"
+        }
+      },
+      "grantedToV2": {
+        "user": {
+          "id": "5D33DD65C6932946",
+          "displayName": "John Doe"
+        },
+        "siteUser": {
+          "id": "1",
+          "displayName": "John Doe",
+          "loginName": "John Doe"
         }
       },
       "inheritedFrom": {

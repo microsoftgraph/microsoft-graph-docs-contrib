@@ -130,10 +130,22 @@ Content-type: application/json
 {
   "value": [
     {
+      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "grantedTo": {
         "user": {
           "displayName": "Ryan Gregg",
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
+        }
+      },
+      "grantedToV2": {
+        "user": {
+          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20",
+          "displayName": "Ryan Gregg"
+        },
+        "siteUser": {
+          "id": "1",
+          "displayName": "Ryan Gregg",
+          "loginName": "Ryan Gregg"
         }
       },
       "hasPassword": true,
