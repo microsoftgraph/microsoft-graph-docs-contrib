@@ -2,7 +2,7 @@
 title: "List attachments"
 description: "Retrieve a list of attachment objects attached to a post."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---

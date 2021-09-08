@@ -3,7 +3,7 @@ author: rahmit
 description: "This resource represents a page in the SitePages list."
 ms.date: 03/15/2018
 title: SitePage
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

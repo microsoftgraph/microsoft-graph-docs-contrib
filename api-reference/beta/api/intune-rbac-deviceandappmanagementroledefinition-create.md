@@ -2,7 +2,7 @@
 title: "Create deviceAndAppManagementRoleDefinition"
 description: "Create a new deviceAndAppManagementRoleDefinition object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -178,7 +178,6 @@ Content-Length: 1278
   ]
 }
 ```
-
 
 
 

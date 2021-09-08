@@ -2,7 +2,7 @@
 title: "deviceManagementSettingInstance resource type"
 description: "Base type for a setting instance"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -49,7 +49,6 @@ Here is a JSON representation of the resource.
   "valueJson": "String"
 }
 ```
-
 
 
 

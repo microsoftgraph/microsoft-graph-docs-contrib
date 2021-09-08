@@ -2,7 +2,7 @@
 title: "outlookTask resource type"
 description: "An Outlook item that can track a work item. "
 author: "mashriv"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

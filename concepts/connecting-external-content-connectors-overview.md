@@ -2,7 +2,7 @@
 title: "Microsoft Graph connectors overview"
 description: "Microsoft Graph connectors overview"
 author: mecampos
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
 ---
@@ -24,7 +24,7 @@ The following diagram provides a high-level overview of Microsoft Graph connecto
 
 ## Build your own custom connector
 
-The 100+ connectors currently available from Microsoft and partners enable you to connect to popular Microsoft and non-Microsoft services. Examples of existing connectors include Azure services, Box, ServiceNow, SalesForce, Google services, MediaWiki, and more.
+The 100+ connectors currently available from Microsoft and partners enable you to connect to popular Microsoft and non-Microsoft services. Examples of existing connectors include Azure services, Box, ServiceNow, Salesforce, Google services, MediaWiki, and more.
 
 To learn more about the existing Microsoft Graph connectors, visit the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery).
 

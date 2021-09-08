@@ -2,7 +2,7 @@
 title: "Get microsoftTunnelSite"
 description: "Read properties and relationships of the microsoftTunnelSite object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 330
+Content-Length: 620
 
 {
   "value": {
@@ -72,13 +72,18 @@ Content-Length: 330
     "displayName": "Display Name value",
     "description": "Description value",
     "publicAddress": "Public Address value",
+    "upgradeWindowUtcOffsetInMinutes": 15,
+    "upgradeWindowStartTime": "12:01:27.3030000",
+    "upgradeWindowEndTime": "11:57:17.9830000",
+    "upgradeAutomatically": true,
+    "upgradeAvailable": true,
+    "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ]
   }
 }
 ```
-
 
 
 

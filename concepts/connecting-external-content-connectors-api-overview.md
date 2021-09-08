@@ -2,7 +2,7 @@
 title: "Working with the connectors API"
 description: "Microsoft Graph connectors API overview"
 author: mecampos
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
 ---

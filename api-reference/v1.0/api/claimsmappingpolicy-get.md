@@ -1,7 +1,7 @@
 ---
 title: "Get claimsMappingPolicy"
 description: "Retrieve the properties and relationships of a claimsMappingPolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "paulgarn"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -100,12 +100,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/8782712b-4368-4bc2-84d9-d47cd0146621/Microsoft.DirectoryServices.ClaimsMappingPolicy",
+    "id": "8782712b-4368-4bc2-84d9-d47cd0146621",
+    "deletedDateTime": null,
+    "definition": [
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\":[{\"Source\":\"user\",\"ID\":\"extensionattribute1\"},{\"Source\":\"transformation\",\"ID\":\"DataJoin\",\"TransformationId\":\"JoinTheData\",\"JwtClaimType\":\"JoinedData\"}],\"ClaimsTransformations\":[{\"ID\":\"JoinTheData\",\"TransformationMethod\":\"Join\",\"InputClaims\":[{\"ClaimTypeReferenceId\":\"extensionattribute1\",\"TransformationClaimType\":\"string1\"}], \"InputParameters\": [{\"ID\":\"string2\",\"Value\":\"sandbox\"},{\"ID\":\"separator\",\"Value\":\".\"}],\"OutputClaims\":[{\"ClaimTypeReferenceId\":\"DataJoin\",\"TransformationClaimType\":\"outputClaim\"}]}]}}"
+    ],
+    "displayName": "UpdateClaimsPolicy",
+    "isOrganizationDefault": false
 }
 ```
 

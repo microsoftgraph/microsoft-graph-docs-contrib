@@ -2,7 +2,7 @@
 title: "Use the $search query parameter in Microsoft Graph"
 description: "Microsoft Graph supports the $search OData query parameter to restrict the results of a request to match a search criterion."
 author: "mumbi-o"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
 

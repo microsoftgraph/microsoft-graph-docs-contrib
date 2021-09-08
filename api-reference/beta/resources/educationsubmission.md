@@ -2,7 +2,7 @@
 title: "educationSubmission resource type"
 description: "Represents the resources that an individual (or group) submit for an assignment and the outcomes (such as grades or feedback) associated with the submission."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---

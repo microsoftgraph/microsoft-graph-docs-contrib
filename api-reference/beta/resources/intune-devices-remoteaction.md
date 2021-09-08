@@ -2,7 +2,7 @@
 title: "remoteAction enum type"
 description: "Remote actions Intune supports."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -44,7 +44,6 @@ Remote actions Intune supports.
 |getFileVaultKey|21|User initiates an action to Get FileVaultKey on mac.|
 |setDeviceName|22|User initiates an action to Set Device Name on the device.|
 |activateDeviceEsim|23|User initiates an action to Activate eSIM on the device.|
-
 
 
 

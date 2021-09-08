@@ -2,7 +2,7 @@
 title: "List deviceManagementDomainJoinConnectors"
 description: "List properties and relationships of the deviceManagementDomainJoinConnector objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -75,7 +75,6 @@ Content-Length: 341
   ]
 }
 ```
-
 
 
 

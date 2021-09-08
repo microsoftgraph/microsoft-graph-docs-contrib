@@ -1,3 +1,7 @@
+---
+ms.localizationpriority: medium
+---
+
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 1. Open your command line interface (CLI) in the directory where PartsInventoryConnector.csproj is located.

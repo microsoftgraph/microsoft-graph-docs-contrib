@@ -2,7 +2,7 @@
 title: "androidManagedStoreAccountEnterpriseSettings resource type"
 description: "Enterprise settings for an Android managed store account."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -91,7 +91,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

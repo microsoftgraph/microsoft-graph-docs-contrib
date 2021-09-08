@@ -1,7 +1,7 @@
 ---
 title: "educationOutcome resource type"
 description: "The result of grading an assignment"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "resourcePageType"

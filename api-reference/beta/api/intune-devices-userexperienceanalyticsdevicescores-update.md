@@ -2,7 +2,7 @@
 title: "Update userExperienceAnalyticsDeviceScores"
 description: "Update the properties of a userExperienceAnalyticsDeviceScores object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -55,6 +55,7 @@ The following table shows the properties that are required when you create the [
 |endpointAnalyticsScore|Double|The user experience analytics device score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |startupPerformanceScore|Double|The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |appReliabilityScore|Double|The user experience analytics device app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|workFromAnywhereScore|Double|The user experience analytics device work From anywhere score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
@@ -69,7 +70,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceScores/{userExperienceAnalyticsDeviceScoresId}
 Content-type: application/json
-Content-length: 364
+Content-length: 397
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -79,6 +80,7 @@ Content-length: 364
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
+  "workFromAnywhereScore": 7.0,
   "healthStatus": "insufficientData"
 }
 ```
@@ -88,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 413
+Content-Length: 446
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -99,10 +101,10 @@ Content-Length: 413
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
+  "workFromAnywhereScore": 7.0,
   "healthStatus": "insufficientData"
 }
 ```
-
 
 
 

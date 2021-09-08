@@ -2,7 +2,7 @@
 title: "call: playPrompt"
 description: "Play a prompt in the call."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---

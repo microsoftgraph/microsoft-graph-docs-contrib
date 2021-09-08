@@ -2,7 +2,7 @@
 title: "reviewSet: addToReviewSet"
 description: "Start the process of adding a collection from Microsoft 365 services to a review set."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
