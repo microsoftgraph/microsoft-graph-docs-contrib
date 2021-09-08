@@ -2033,13 +2033,13 @@
         "ApiChange": "Resource",
         "ChangedApiName": "driveItem",
         "ChangeType": "change",
-        "Description": "Removed the SharePoint and OneDrive for Business driveItem delta limitation about properties omitted by the delta query for lastModifiedBy.",
+        "Description": "Removed the SharePoint and OneDrive for Business **driveItem** delta limitation about properties omitted by the delta query for **lastModifiedBy**.",
         "Target": "driveItem"
       }],
       "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-08-01T20:00:00.001Z",
+      "CreatedDateTime": "2021-09-07T20:00:00.001Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },
@@ -2063,13 +2063,13 @@
         "ApiChange": "Resource",
         "ChangedApiName": "driveItem",
         "ChangeType": "change",
-        "Description": "Removed the SharePoint and OneDrive for Business driveItem delta limitation about properties omitted by the delta query for lastModifiedBy.",
+        "Description": "Removed the SharePoint and OneDrive for Business **driveItem** delta limitation about properties omitted by the delta query for **lastModifiedBy**.",
         "Target": "driveItem"
       }],
       "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
       "Cloud": "Prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-08-24T09:20:58.5352861Z",
+      "CreatedDateTime": "2021-09-07T09:20:58.5352861Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     }
