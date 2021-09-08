@@ -40,7 +40,7 @@ Next, install the `mgt-react` npm package, which contains the Microsoft Graph To
 npm i @microsoft/mgt-react
 ```
 
-Install the `mgt-msal2-provider` and `mgt-element` npm package as well, which contains the MSAL 2.0 auth provider.
+Install the `mgt-msal2-provider` and `mgt-element` npm package as well, which contains the MSAL2 auth provider.
 
 ```Command Line
 npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
@@ -71,7 +71,7 @@ Now that you have registered your application with Azure Active Directory (Azure
 Next, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, you'll use MSAL, which is a good default for building standalone applications. If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers/providers.md).
 
 >[!NOTE] 
->If you are currently using MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.
+>If you are currently using the MSAL Provider and would like to update to the MSAL2 Provider, follow the steps in the [MSAL2 Provider](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) article.
 
 1. In the code editor, open the **src/index.** file, and to the list of imports, add:
 

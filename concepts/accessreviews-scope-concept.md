@@ -125,7 +125,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-### Example 8: Review of all service principals assigned to a privileged role (all active and eligible assignments included)
+### Example 8: Review of all service principals assigned to a privileged role
 
 ```http
 "scope": {
