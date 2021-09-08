@@ -1,7 +1,7 @@
 ---
 title: "directoryDefinition: discover"
 description: "Discover the latest schema definition for provisioning to an application. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.prod: "applications"
 doc_type: "apiPageType"

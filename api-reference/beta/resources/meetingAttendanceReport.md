@@ -2,7 +2,7 @@
 title: "meetingAttendanceReport resource type"
 description: "Contains information associated with meeting attendance report."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

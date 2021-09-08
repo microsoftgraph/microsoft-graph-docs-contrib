@@ -3,6 +3,7 @@ author: waldekmastykarz
 ms.date: 10/28/2020
 ms.prod: aad
 ms.topic: include
+ms.localizationpriority: medium
 ---
 
 ## Create an Azure Active Directory app

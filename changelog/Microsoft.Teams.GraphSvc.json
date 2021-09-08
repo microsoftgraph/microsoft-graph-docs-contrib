@@ -135,32 +135,70 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [{
+      "ChangeList": [
+        {
           "Id": "42a6d795-a423-11eb-a835-c815efda831b",
           "ApiChange": "Resource",
           "ChangedApiName": "provisionChannelEmailResult",
           "ChangeType": "Addition",
           "Description": "Added the [provisionChannelEmailResult](https://docs.microsoft.com/en-us/graph/api/resources/provisionChannelEmailResult?view=graph-rest-beta) resource type.",
           "Target": "provisionChannelEmailResult"
-      }, {
+        },
+        {
           "Id": "42a6d795-a423-11eb-a835-c815efda831b",
           "ApiChange": "Method",
           "ChangedApiName": "provisionEmail",
           "ChangeType": "Addition",
           "Description": "Added the [provisionEmail](https://docs.microsoft.com/en-us/graph/api/channel-provisionEmail?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
-      }, {
+        },
+        {
           "Id": "42a6d795-a423-11eb-a835-c815efda831b",
           "ApiChange": "Method",
           "ChangedApiName": "removeEmail",
           "ChangeType": "Addition",
           "Description": "Added the [removeEmail](https://docs.microsoft.com/en-us/graph/api/channel-removeEmail?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
-      }],
+        }
+      ],
       "Id": "42a6d795-a423-11eb-a835-c815efda831b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-07T11:01:30.771Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ef72d160-05bc-4f45-9ae9-2bdb84dd8c07",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkOnlineMeetingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkOnlineMeetingInfo](https://docs.microsoft.com/en-us/graph/api/resources/teamworkOnlineMeetingInfo?view=graph-rest-beta) resource type.",
+          "Target": "teamworkOnlineMeetingInfo"
+        },
+        {
+          "Id": "ef72d160-05bc-4f45-9ae9-2bdb84dd8c07",
+          "ApiChange": "Property",
+          "ChangedApiName": "onlineMeetingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **onlineMeetingInfo** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "ef72d160-05bc-4f45-9ae9-2bdb84dd8c07",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "ef72d160-05bc-4f45-9ae9-2bdb84dd8c07",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-31T22:52:32.5315491Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }

@@ -1,7 +1,7 @@
 ---
 title: "Get tenantAppManagementPolicy"
 description: "Read the default tenant policy that applies to applications and service principals objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

@@ -1,7 +1,7 @@
 ---
 title: "Create a directory setting"
 description: "Use this API to create a new setting, based on the templates available in directorySettingTemplates."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -107,7 +107,9 @@ Content-type: application/json
 In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+
+>**Note:** The response object shown here has been shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

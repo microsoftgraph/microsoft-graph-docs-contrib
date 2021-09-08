@@ -2,7 +2,7 @@
 title: "List managementIntents"
 description: "Get a list of the managementIntent objects and their properties."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Publish an education assignment"
 description: "This action publishes an education assignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: apiPageType

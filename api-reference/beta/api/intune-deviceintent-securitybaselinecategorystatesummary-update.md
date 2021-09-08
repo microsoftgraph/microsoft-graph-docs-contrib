@@ -2,7 +2,7 @@
 title: "Update securityBaselineCategoryStateSummary"
 description: "Update the properties of a securityBaselineCategoryStateSummary object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -102,7 +102,6 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

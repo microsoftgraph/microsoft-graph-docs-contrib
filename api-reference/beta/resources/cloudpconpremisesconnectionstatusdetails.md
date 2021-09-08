@@ -2,7 +2,7 @@
 title: "cloudPcOnPremisesConnectionStatusDetails resource type"
 description: "The status details of a cloud PC on-premises connection."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---

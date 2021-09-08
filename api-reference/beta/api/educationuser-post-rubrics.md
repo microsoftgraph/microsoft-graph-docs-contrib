@@ -1,7 +1,7 @@
 ---
 title: "Create educationRubric"
 description: "Create a new educationRubric object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "apiPageType"

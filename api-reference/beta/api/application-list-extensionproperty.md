@@ -1,7 +1,7 @@
 ---
 title: "List extensionProperties"
 description: "Retrieve a list of extensionproperty objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"
