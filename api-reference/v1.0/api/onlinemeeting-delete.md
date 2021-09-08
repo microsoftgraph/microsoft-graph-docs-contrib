@@ -2,7 +2,7 @@
 title: "Delete onlineMeeting"
 description: "Delete an online meeting."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---

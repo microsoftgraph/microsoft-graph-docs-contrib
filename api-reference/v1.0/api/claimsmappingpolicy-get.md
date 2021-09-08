@@ -1,7 +1,7 @@
 ---
 title: "Get claimsMappingPolicy"
 description: "Retrieve the properties and relationships of a claimsMappingPolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "paulgarn"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

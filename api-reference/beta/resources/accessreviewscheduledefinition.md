@@ -2,7 +2,7 @@
 title: "accessReviewScheduleDefinition resource type"
 description: "Represents an access review or access review series."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

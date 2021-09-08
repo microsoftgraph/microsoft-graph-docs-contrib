@@ -2,7 +2,7 @@
 title: "windowsKioskUWPApp resource type"
 description: "The base class for a type of apps"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -53,7 +53,6 @@ Here is a JSON representation of the resource.
   "containedAppId": "String"
 }
 ```
-
 
 
 

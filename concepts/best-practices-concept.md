@@ -1,7 +1,7 @@
 ---
 title: "Best practices for working with Microsoft Graph"
 description: "This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
@@ -87,7 +87,7 @@ Adding members to existing enumerations can break applications already using the
 Evolvable enums have a common _sentinel_ member called `unknownFutureValue` that demarcates known members that have been defined in the enum initially, and unknown members that are added subsequently or will be defined in the future. Internally, known members are mapped to numeric values that are less than the sentinel member, and unknown members are greater than the sentinel member. The documentation for an evolvable enum lists the possible _string_ values in ascending order: known members, followed by `unknownFutureValue`, followed by unknown members. Like other types of enumerations, you should _always_ reference members of evolvable enums by their _string_ values.
 
 By default, a GET operation returns only known members for properties of evolvable enum types and your application needs to handle only the known members. If you design your application to handle unknown members as well, you can opt-in to receive those members by using an HTTP `Prefer` request header:
-```
+```http
 Prefer: include-unknown-enum-members
 ```
 

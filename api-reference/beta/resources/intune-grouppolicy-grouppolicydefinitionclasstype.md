@@ -2,7 +2,7 @@
 title: "groupPolicyDefinitionClassType enum type"
 description: "Group Policy Definition Class Type."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,7 +22,6 @@ Group Policy Definition Class Type.
 |:---|:---|:---|
 |user|0|Identifies placement of the policy setting under the user configuration node.|
 |machine|1|Identifies placement of the policy setting under the computer configuration node.|
-
 
 
 

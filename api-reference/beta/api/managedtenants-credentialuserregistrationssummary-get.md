@@ -2,7 +2,7 @@
 title: "Get credentialUserRegistrationsSummary"
 description: "Read the properties and relationships of a credentialUserRegistrationsSummary object."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---

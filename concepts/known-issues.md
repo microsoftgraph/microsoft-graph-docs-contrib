@@ -2,7 +2,7 @@
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Known issues with Microsoft Graph
@@ -131,10 +131,6 @@ In the meantime, to unblock development and testing you can use the following wo
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
 ## Contacts
-
-### Organization contacts available in only beta
-
-Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
 
 ### Default contacts folder
 
@@ -341,6 +337,30 @@ does not become part of the body of the resultant message draft.
 ### GET messages returns chats in Microsoft Teams
 
 In both the v1 and beta endpoints, the response of `GET /users/id/messages` includes the user's Microsoft Teams chats that occurred outside the scope of a team or channel. These chat messages have "IM" as their subject.
+
+## Reports
+
+### Azure AD activity reports
+
+When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you might still encounter an error message similar to the following:
+
+```json
+{
+    "error": {
+        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
+        "message": "Neither tenant is B2C or tenant doesn't have premium license",
+        "innerError": {
+            "date": "2021-09-02T17:15:30",
+            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
+            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
+        }
+    }
+}
+```
+This error might also occur when retrieving the **signInActivity** property of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource; for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
+
+This error is due to intermittent license check failures, which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required when the issue is resolved.
+
 
 ## Teamwork (Microsoft Teams)
 

@@ -1,7 +1,7 @@
 ---
 title: "policy API overview"
 description: "Azure Active Directory uses policies to control Azure AD feature behaviors in your organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"

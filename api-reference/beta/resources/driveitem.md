@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: "The driveItem resource represents a file, folder, or other item stored in a drive."
 title: driveItem
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
@@ -32,75 +32,41 @@ For example:
 
 Items with the **folder** facet act as containers of items and therefore have a `children` reference pointing to a collection of **driveItems** under the folder.
 
-## JSON representation
+>**Note:** In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
 
-Here is a JSON representation of a **driveItem** resource.
+## Methods
 
-The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
-
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
-       "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
-       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
-       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds", "source", "media"],
-       "keyProperty": "id", "openType": true } -->
-
-```json
-{  
-  "audio": { "@odata.type": "microsoft.graph.audio" },
-  "content": { "@odata.type": "Edm.Stream" },
-  "cTag": "string (etag)",
-  "deleted": { "@odata.type": "microsoft.graph.deleted"},
-  "description": "string",
-  "file": { "@odata.type": "microsoft.graph.file" },
-  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
-  "folder": { "@odata.type": "microsoft.graph.folder" },
-  "image": { "@odata.type": "microsoft.graph.image" },
-  "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
-  "media": { "@odata.type": "microsoft.graph.media" },
-  "package": { "@odata.type": "microsoft.graph.package" },
-  "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
-  "photo": { "@odata.type": "microsoft.graph.photo" },
-  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
-  "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
-  "root": { "@odata.type": "microsoft.graph.root" },
-  "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
-  "shared": { "@odata.type": "microsoft.graph.shared" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "size": 1024,
-  "source": { "@odata.type": "microsoft.graph.driveItemSource" },
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
-  "video": { "@odata.type": "microsoft.graph.video" },
-  "webDavUrl": "string",
-
-  /* relationships */
-  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
-  "createdByUser": { "@odata.type": "microsoft.graph.user" },
-  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
-  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
-
-  /* inherited from baseItem */
-  "id": "string (identifier)",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
-  "eTag": "string",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "string",
-  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "string",
-
-  /* instance annotations */
-  "@microsoft.graph.conflictBehavior": "string",
-  "@microsoft.graph.downloadUrl": "url",
-  "@microsoft.graph.sourceUrl": "url"
-}
-```
+| Method                                                   | REST Path
+|:---------------------------------------------------------|:------------------
+| [Get item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
+| [List activities](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
+| [Get analytics][]                                        | `GET /drive/items/{item-id}/analytics`
+| [Get activities by interval][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
+| [List children](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
+| [List versions](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
+| [Create item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
+| [Update item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
+| [Upload content](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
+| [Download content](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
+| [Download specific file format][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
+| [Delete item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
+| [Restore item](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
+| [Move item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
+| [Copy item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
+| [Search items](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
+| [List changes in a drive](../api/driveitem-delta.md)     | `GET /drive/root/delta`
+| [Follow item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [Unfollow item](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
+| [List thumbnails](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
+| [Create sharing link](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
+| [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
+| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
+| [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+| [Revoke grants](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
 
 ## Properties
 
@@ -178,47 +144,79 @@ Removing file permissions for a user may not immediately invalidate the URL.
 
 >**Note:** The parameter @microsoft.graph.conflictBehavior should be included in the URL instead of the body of the request.
 
-## Methods
+## JSON representation
 
-| Method                                                   | REST Path
-|:---------------------------------------------------------|:------------------
-| [Get item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [List activities](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
-| [Get analytics][]                                        | `GET /drive/items/{item-id}/analytics`
-| [Get activities by interval][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
-| [List children](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [List versions](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [Create item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [Update item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [Upload content](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
-| [Download content](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [Download specific file format][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [Delete item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [Restore item](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
-| [Move item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [Copy item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [Search items](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [List changes in a drive](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [Follow item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
-| [Unfollow item](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
-| [List thumbnails](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [Create sharing link](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
-| [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-| [Revoke grants](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
+Here is a JSON representation of a **driveItem** resource.
+
+The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
+
+<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+       "baseType": "microsoft.graph.baseItem",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
+       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
+       "sharepointIds", "source", "media"],
+       "keyProperty": "id", "openType": true } -->
+
+```json
+{  
+  "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
+  "cTag": "string (etag)",
+  "deleted": { "@odata.type": "microsoft.graph.deleted"},
+  "description": "string",
+  "file": { "@odata.type": "microsoft.graph.file" },
+  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "folder": { "@odata.type": "microsoft.graph.folder" },
+  "image": { "@odata.type": "microsoft.graph.image" },
+  "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "media": { "@odata.type": "microsoft.graph.media" },
+  "package": { "@odata.type": "microsoft.graph.package" },
+  "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
+  "photo": { "@odata.type": "microsoft.graph.photo" },
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
+  "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
+  "root": { "@odata.type": "microsoft.graph.root" },
+  "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
+  "shared": { "@odata.type": "microsoft.graph.shared" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "size": 1024,
+  "source": { "@odata.type": "microsoft.graph.driveItemSource" },
+  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
+  "video": { "@odata.type": "microsoft.graph.video" },
+  "webDavUrl": "string",
+
+  /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
+  "createdByUser": { "@odata.type": "microsoft.graph.user" },
+  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
+  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
+
+  /* inherited from baseItem */
+  "id": "string (identifier)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "eTag": "string",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "string",
+  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
+  "webUrl": "string",
+
+  /* instance annotations */
+  "@microsoft.graph.conflictBehavior": "string",
+  "@microsoft.graph.downloadUrl": "url",
+  "@microsoft.graph.sourceUrl": "url"
+}
+```
 
 [item-preview]: ../api/driveitem-preview.md
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
-
-## Remarks
-
-In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
 
 [audio]: audio.md
 [baseItem]: baseitem.md

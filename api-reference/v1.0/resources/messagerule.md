@@ -2,7 +2,7 @@
 title: "messageRule resource type"
 description: "A rule that applies to messages in the Inbox of a user."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

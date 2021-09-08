@@ -2,7 +2,7 @@
 title: "List attachments"
 description: "Get a list of attachment objects attached to an Outlook task."
 author: "svpsiva"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

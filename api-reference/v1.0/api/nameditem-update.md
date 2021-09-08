@@ -1,7 +1,7 @@
 ---
 title: "Update nameditem"
 description: "Update the properties of nameditem object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType

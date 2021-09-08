@@ -2,7 +2,7 @@
 title: "Get windowsPhone81CompliancePolicy"
 description: "Read properties and relationships of the windowsPhone81CompliancePolicy object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

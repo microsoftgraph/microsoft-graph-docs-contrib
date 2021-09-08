@@ -1,7 +1,7 @@
 ---
 title: "educationAssignment: setUpResourcesFolder"
 description: "Create a SharePoint folder to upload files for a given educationAssignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharmas"
 ms.prod: "education"
 doc_type: apiPageType
@@ -54,7 +54,7 @@ The following is an example of a request.
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/setUpResourcesFolder
+POST https://graph.microsoft.com/beta/education/classes/955e0bd5-52c2-41ad-b7e8-5b33a18c5e78/assignments/18d17255-3278-49fb-8da7-d095b7f610c4/setUpResourcesFolder
 Content-type: application/json
 
 {

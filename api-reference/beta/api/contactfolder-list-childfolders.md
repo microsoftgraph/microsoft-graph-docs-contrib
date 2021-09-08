@@ -2,7 +2,7 @@
 title: "List childFolders"
 description: "Get a collection of child folders under the specified contact folder."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

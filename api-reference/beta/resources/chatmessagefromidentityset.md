@@ -2,7 +2,7 @@
 title: "chatMessageFromIdentitySet resource type"
 description: "Represents the sender of a message in a chat or a channel."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
