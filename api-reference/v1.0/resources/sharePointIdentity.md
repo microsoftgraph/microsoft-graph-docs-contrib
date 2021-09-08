@@ -1,5 +1,5 @@
 ---
-author: tkanaujia
+author: tushar20
 ms.date: 09/04/2021
 title: SharePointIdentity
 ms.localizationpriority: medium
@@ -37,12 +37,8 @@ It extends from the **Identity** resource to provide capability to expose ShareP
 |:------------     |:----------------------------|:---------------------------------
 | loginName        | String                      | LoginName of the SharePoint Identity
 | displayName      | String                      | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem_delta.md).
-| id               | String                      | Unique identifier for the identity.
+| id               | String                      | Unique identifier for the identity. Can be either AAD Id or SharePoint Id
 | thumbnails       | [ThumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
-
-## Remarks
-
-The "id" property can represent either an AAD id or the SharePoint id.
 
 [ThumbnailSet]: thumbnailset.md
 [getting thumbnails]: ../api/driveitem_list_thumbnails.md
