@@ -131,7 +131,7 @@ Content-type: application/json
     }
   },
   "id": "1",
-  "roles": [ "write" ]
+  "roles": [ "read" ]
 }
 ```
 
