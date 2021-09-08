@@ -119,8 +119,6 @@
       "SubArea": "Governance"
     },
     {
-<<<<<<< HEAD
-=======
       "ChangeList": [
         {
           "Id": "7242dfc2-28c7-48f1-adc2-d0f2b00824c2",
@@ -173,7 +171,6 @@
       "SubArea": "Identity and sign-in"
     },
     {
->>>>>>> 0f2d52d6b865fb53111ab114ee8725093678a550
     "ChangeList": [
      {
        "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
