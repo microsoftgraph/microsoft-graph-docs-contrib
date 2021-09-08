@@ -41,7 +41,7 @@ It extends from the **Identity** resource to provide capability to expose ShareP
 | thumbnails       | [ThumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
 
 [ThumbnailSet]: thumbnailset.md
-[getting thumbnails]: ../api/driveitem_list_thumbnails.md
+[getting thumbnails]: ../api/driveitem-list-thumbnails.md
 
 <!-- {
   "type": "#page.annotation",
