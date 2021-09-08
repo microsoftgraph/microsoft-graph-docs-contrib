@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
 ```http
