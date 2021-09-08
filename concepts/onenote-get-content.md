@@ -2,7 +2,7 @@
 title: "Get OneNote content and structure with Microsoft Graph"
 description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "onenote"
 ---
 

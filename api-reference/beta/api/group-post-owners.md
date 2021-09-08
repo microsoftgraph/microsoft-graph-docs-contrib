@@ -1,7 +1,7 @@
 ---
 title: "Add group owner"
 description: "Add a user to the group's owners."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType

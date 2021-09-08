@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The Video resource groups video-related data items into a single structure."
 ms.date: 09/10/2017
 title: Video
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

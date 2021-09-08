@@ -2,7 +2,7 @@
 title: "Create sourceCollection"
 description: "Create a new sourceCollection object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

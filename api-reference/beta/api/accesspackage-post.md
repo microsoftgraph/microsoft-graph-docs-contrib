@@ -1,7 +1,7 @@
 ---
 title: "Create accessPackage"
 description: "Create a new accessPackage."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"

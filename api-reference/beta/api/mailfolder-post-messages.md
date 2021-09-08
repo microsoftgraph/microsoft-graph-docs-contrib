@@ -2,7 +2,7 @@
 title: "Create Message"
 description: "Use this API to create a new Message in a mailfolder."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

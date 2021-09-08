@@ -2,7 +2,7 @@
 title: "assignUserToDevice action"
 description: "Assigns user to Autopilot devices."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

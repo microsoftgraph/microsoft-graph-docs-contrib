@@ -1,7 +1,7 @@
 ---
 title: "Getting started with the Microsoft Graph Toolkit"
 description: "Get started using the Microsoft Graph Toolkit in your application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
 ---
 
@@ -74,11 +74,15 @@ Providers are available via a single package and can be installed as needed. The
 
 - <b>@micosoft/mgt-msal2-provider</b>
 
-    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL provider uses msal-browser for authenticating in web apps and PWAs.
+    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses msal-browser for authenticating in web apps and PWAs.
 
 -  <b>@microsoft/mgt-teams-provider</b>
 
     [`@microsoft/mgt-teams-provider`](../providers/teams.md) contains the `TeamsProvider` and `mgt-teams-provider` component. The Microsoft Teams provider enables authentication in Microsoft Teams tab application.
+
+-  <b>@microsoft/mgt-teams-msal2-provider</b>
+
+    [`@microsoft/mgt-teams-msal2-provider`](../providers/teams.md) contains the `TeamsMsal2Provider` and `mgt-teams-msal2-provider` component. The Microsoft Teams MSAL2 provider enables authentication in Microsoft Teams tab application.
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 

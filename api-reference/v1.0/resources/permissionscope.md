@@ -1,7 +1,7 @@
 ---
 title: "permissionScope resource type"
 description: "Represents the definition of a delegated permission, sometimes referred to as an OAuth 2.0 permission or an OAuth 2.0 scope. Once defined, the delegated permission may then be requested by a client application"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"

@@ -1,19 +1,21 @@
 ---
 title: "privilegedApproval resource type"
 description: "Represents an approval that is requested in Privileged Identity Management for getting into a role."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "shauliu1"
 ---
 
-# privilegedApproval resource type
+# privilegedApproval resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an approval that is requested in Privileged Identity Management for getting into a role.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+Represents an approval that is requested in Privileged Identity Management (PIM) for getting into a role.
 
 
 ## Methods

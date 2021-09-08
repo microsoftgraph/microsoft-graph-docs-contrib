@@ -1,7 +1,7 @@
 ---
 title: "educationAssignmentRecipient resource type"
 description: "Resource type that is used within the **assignments.assignTo** property."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: resourcePageType
