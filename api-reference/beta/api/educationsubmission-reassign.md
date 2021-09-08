@@ -1,6 +1,6 @@
 ---
 title: "educationSubmission: reassign"
-description: "This action makes the grade and feedback associated with this submission available to the student."
+description: "Reassign is designed for teachers to inform students to revisit/redo their work, and in the mean time it has the ability to return feedback and code."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action makes the grade and feedback associated with this submission available to the student. This will change the status of the submission to "reassigned" or "returned" depending if "prefer" property is provided or not and indicates that it was returned for revision. This action can only be done by the teacher.
+Reassign is designed for teachers to inform students to revisit/redo their work, and in the mean time it has the ability to return feedback and code.
+
+This will change the status of the submission to "reassigned" or "returned" depending if `Prefer: include-unknown-enum-members` is provided or not in the request header, and indicates that it was returned for revision. This action can only be done by the teacher.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -59,7 +61,7 @@ POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332
 
 
 ### Response
-The following is an example of the response when `prefer` property is NOT provided.
+The following is an example of the response when `prefer` is NOT provided in the request header.
 
 <!-- {
   "blockType": "response"
@@ -117,7 +119,7 @@ HTTP/1.1 200 Ok
 ```
 
 ### Response
-The following is an example of the response when `prefer` property is provided.
+The following is an example of the response when `prefer` is provided in the request header.
 
 <!-- {
   "blockType": "response"

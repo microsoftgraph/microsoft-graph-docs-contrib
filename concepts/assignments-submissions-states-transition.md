@@ -88,9 +88,11 @@ The following diagram shows the state transition flow.
 | Submitted | Return | Returned |
 | Submitted | Return for revision | Reassigned |
 | Returned | Turn in | Submitted |
+| Returned | Return | Returned |
 | Returned | Return for revision | Reassigned |
 | Reassigned | Turn in | Submitted |
 | Reassigned | Return | Returned |
+| Reassigned | Return for revision | Reassigned |
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
