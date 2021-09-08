@@ -195,9 +195,9 @@ items:
             href: /graph/toolkit/providers/msal2?context=graph/api/beta
           - name: SharePoint provider
             href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
-          - name: Microsoft Teams provider
+          - name: Teams provider
             href: /graph/toolkit/providers/teams?context=graph/api/beta
-          - name: Microsoft Teams MSAL2 provider
+          - name: Teams MSAL2 provider
             href: /graph/toolkit/providers/teams-msal2?context=graph/api/beta
           - name: Electron provider
             href: /graph/toolkit/providers/electron?context=graph/api/beta
