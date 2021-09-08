@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 > [!IMPORTANT]
-> This method has a [known permissions issue](/graph/known-issues) and may require consent to both permissions.
+> This method has a [known permissions issue](/graph/known-issues#claims-mapping-policy) and may require consent to both permissions.
 
 ## HTTP request
 

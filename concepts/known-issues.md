@@ -288,16 +288,16 @@ When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called f
 
 ### Conditional access policy
 
-Currently, the **Policy.Read.All** permission is required to call POST and PATCH methods of the [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) API. In the future, the **Policy.ReadWrite.ConditionalAccess** permission will enable you to read policies from the directory.
+The [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) API currently requires consent to the **Policy.Read.All** permission to call the POST and PATCH methods. In the future, the **Policy.ReadWrite.ConditionalAccess** permission will enable you to read policies from the directory.
 
 ### Claims mapping policy
 
 The [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) API may require consent to both the **Policy.Read.All** and **Policy.ReadWrite.ConditionalAccess** permissions for the `LIST /policies/claimsMappingPolicies` and `GET /policies/claimsMappingPolicies/{id}` methods as follows:
 
 + If no claimsMappingPolicy objects are available to retrieve in a LIST operation, either permission is sufficient to call this method.
-+ If there are claimsMappingPolicy objects to retrieve, your app must consent to both permissions.
++ If there are claimsMappingPolicy objects to retrieve, your app must consent to both permissions. If not, a `403 Forbidden` error is returned.
 
-This temporary workaround will not be required when the issue is resolved.
+In the future, either permission will be sufficient to call both methods.
 
 ## JSON Batching
 
