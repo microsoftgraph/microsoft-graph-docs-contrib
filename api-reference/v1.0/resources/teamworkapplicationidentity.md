@@ -2,7 +2,7 @@
 title: "teamworkApplicationIdentity resource type"
 description: "Represents an application in Microsoft Teams."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get workPosition"
 description: "Retrieve the properties and relationships of a workPosition object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

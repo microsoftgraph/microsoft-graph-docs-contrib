@@ -2,7 +2,7 @@
 title: "Update deviceManagementScript"
 description: "Update the properties of a deviceManagementScript object."
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

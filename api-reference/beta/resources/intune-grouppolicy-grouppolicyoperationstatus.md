@@ -2,7 +2,7 @@
 title: "groupPolicyOperationStatus enum type"
 description: "Type of Group Policy operation status."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

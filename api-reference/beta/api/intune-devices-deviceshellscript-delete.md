@@ -2,7 +2,7 @@
 title: "Delete deviceShellScript"
 description: "Deletes a deviceShellScript."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Create deviceManagementConfigurationSettingTemplate"
 description: "Create a new deviceManagementConfigurationSettingTemplate object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

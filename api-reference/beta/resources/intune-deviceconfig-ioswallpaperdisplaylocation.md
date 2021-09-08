@@ -2,7 +2,7 @@
 title: "iosWallpaperDisplayLocation enum type"
 description: "An enum type for wallpaper display location specifier."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

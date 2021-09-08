@@ -2,7 +2,7 @@
 title: "Use the Microsoft Search API in Microsoft Graph to request spelling corrections"
 description: "You can use the Microsoft Search API to get the spelling suggestion or spelling modification for search query."
 author: "nmoreau"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 ---
 

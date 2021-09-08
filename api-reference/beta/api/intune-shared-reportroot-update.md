@@ -2,7 +2,7 @@
 title: "Update reportRoot"
 description: "Update the properties of a reportRoot object."
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

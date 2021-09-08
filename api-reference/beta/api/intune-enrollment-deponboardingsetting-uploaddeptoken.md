@@ -2,7 +2,7 @@
 title: "uploadDepToken action"
 description: "Uploads a new Device Enrollment Program token"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

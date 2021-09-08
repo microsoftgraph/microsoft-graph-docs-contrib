@@ -2,7 +2,7 @@
 title: "windowsQualityUpdateClassification enum type"
 description: "Windows quality update classification"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

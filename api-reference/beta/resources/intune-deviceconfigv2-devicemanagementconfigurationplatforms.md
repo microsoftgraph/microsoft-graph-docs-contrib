@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationPlatforms enum type"
 description: "Supported platform types."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

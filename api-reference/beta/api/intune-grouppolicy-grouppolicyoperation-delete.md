@@ -2,7 +2,7 @@
 title: "Delete groupPolicyOperation"
 description: "Deletes a groupPolicyOperation."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

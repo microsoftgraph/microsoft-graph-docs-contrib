@@ -2,7 +2,7 @@
 title: "excludedApps resource type"
 description: "Contains properties for Excluded Office365 Apps."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

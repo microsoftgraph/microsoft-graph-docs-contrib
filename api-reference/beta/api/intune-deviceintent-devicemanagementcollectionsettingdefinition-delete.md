@@ -2,7 +2,7 @@
 title: "Delete deviceManagementCollectionSettingDefinition"
 description: "Deletes a deviceManagementCollectionSettingDefinition."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "What's new in Microsoft Graph"
 description: "What's currently new in Microsoft Graph"
 author: "angelgolfer-ms"
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # What's new in Microsoft Graph
@@ -84,7 +84,7 @@ Get a collection of errors in the lifecycle of an [access review instance](/grap
 ### Teamwork
 - [Subscribe to change notifications on the chat resource](teams-changenotifications-chat.md).
 - [Subscribe to change notifications of users in a chat](teams-changenotifications-chatmembership.md), in a [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), or in a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) (i.e., [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resources).
-- Get details of an event that happened in a chat, channgel or team by accessing [eventMessageDetail](/graph/api/resources/EventMessageDetail?view=graph-rest-beta&preserve-view=true) from a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) or [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). For example, members added to a channel or  chat, and team description updated.
+- Get details of an event that happened in a chat, channel or team by accessing [eventMessageDetail](/graph/api/resources/EventMessageDetail?view=graph-rest-beta&preserve-view=true) from a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) or [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). For example, members added to a channel or  chat, and team description updated.
 
 
 ## Want to stay in the loop?

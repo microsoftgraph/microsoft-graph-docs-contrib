@@ -1,7 +1,7 @@
 ---
 title: "locationConstraint resource type"
 description: "The conditions stated by a client for the location of a meeting."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: resourcePageType

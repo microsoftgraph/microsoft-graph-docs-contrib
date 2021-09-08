@@ -2,7 +2,7 @@
 title: "Delete groupPolicyPresentationDropdownList"
 description: "Deletes a groupPolicyPresentationDropdownList."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

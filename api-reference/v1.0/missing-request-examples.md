@@ -1,7 +1,7 @@
 ---
 title: "Define the /me as singleton"
 description: "These are things I had to add in the docs to make sure the Markdown-Scanner"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ""
 ms.prod: ""
 doc_type: conceptualPageType

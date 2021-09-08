@@ -2,7 +2,7 @@
 title: "call resource type"
 description: "The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `communications/calls`."
 author: "ananmishr"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

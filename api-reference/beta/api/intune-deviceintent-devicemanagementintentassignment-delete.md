@@ -2,7 +2,7 @@
 title: "Delete deviceManagementIntentAssignment"
 description: "Deletes a deviceManagementIntentAssignment."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

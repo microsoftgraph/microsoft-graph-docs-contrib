@@ -2,7 +2,7 @@
 title: "Using the Intune Graph API"
 description: " Intune hybrid deployments are not supported. "
 author: "dougeby"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "intune"
 doc_type: conceptualPageType
 ---

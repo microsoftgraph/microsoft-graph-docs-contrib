@@ -2,7 +2,7 @@
 title: "List cloudPCs"
 description: "List properties and relationships of the cloudPC objects."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---

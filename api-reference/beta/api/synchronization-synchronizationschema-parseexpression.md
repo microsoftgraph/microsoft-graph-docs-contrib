@@ -1,7 +1,7 @@
 ---
 title: "synchronizationSchema: parseExpression"
 description: "(../resources/synchronization_attributemappingsource.md) object. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

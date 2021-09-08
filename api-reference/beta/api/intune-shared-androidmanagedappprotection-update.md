@@ -2,7 +2,7 @@
 title: "Update androidManagedAppProtection"
 description: "Update the properties of a androidManagedAppProtection object."
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

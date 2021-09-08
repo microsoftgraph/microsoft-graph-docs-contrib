@@ -2,7 +2,7 @@
 title: "cloudPcAuditEvent resource type"
 description: "Represents the audit event entity."
 author: "ecmadao"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---

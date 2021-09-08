@@ -2,7 +2,7 @@
 title: "managedIOSStoreApp resource type"
 description: "Contains properties and inherited properties for an iOS store app that you can manage with an Intune app protection policy."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

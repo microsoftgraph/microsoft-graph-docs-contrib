@@ -2,7 +2,7 @@
 title: "deviceLogCollectionResponse resource type"
 description: "Windows Log Collection request entity."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

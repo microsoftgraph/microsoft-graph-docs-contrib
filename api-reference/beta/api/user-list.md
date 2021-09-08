@@ -187,7 +187,9 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission.
+The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission. 
+
+>**Note:** There's a [known issue](/graph/known-issues#azure-ad-activity-reports) with retrieving the **signInActivity** property.
 
 
 # [HTTP](#tab/http)
@@ -262,7 +264,9 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission.
+The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission. 
+
+>**Note:** There's a [known issue](/graph/known-issues#azure-ad-activity-reports) with retrieving the **signInActivity** property.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -326,7 +330,9 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission.
+The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission. 
+
+>**Note:** There's a [known issue](/graph/known-issues#azure-ad-activity-reports) with retrieving the **signInActivity** property.
 
 <!-- {
   "blockType": "ignored",

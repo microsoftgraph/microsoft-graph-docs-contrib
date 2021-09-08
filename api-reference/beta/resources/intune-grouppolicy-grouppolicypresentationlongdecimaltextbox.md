@@ -2,7 +2,7 @@
 title: "groupPolicyPresentationLongDecimalTextBox resource type"
 description: "Represents an ADMX longDecimalTextBox element and an ADMX longDecimal element."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

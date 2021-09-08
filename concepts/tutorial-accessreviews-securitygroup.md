@@ -2,7 +2,7 @@
 title: "Tutorial: Use the access reviews API to review access to your security groups"
 description: "Use the access reviews API to review access to your security groups"
 author: "FaithOmbongi"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 

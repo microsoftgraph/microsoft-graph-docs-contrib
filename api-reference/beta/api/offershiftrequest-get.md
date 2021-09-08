@@ -1,7 +1,7 @@
 ---
 title: "Get offerShiftRequest"
 description: "Retrieve the properties and relationships of an offerShiftRequest object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

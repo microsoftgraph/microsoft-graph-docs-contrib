@@ -2,7 +2,7 @@
 title: "accessReviewInstanceDecisionItemResource resource type"
 description: "Represents the resource associated with the decision item."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
