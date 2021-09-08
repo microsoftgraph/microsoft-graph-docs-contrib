@@ -2,7 +2,7 @@
 title: "Delete organizationalBrandingLocalization"
 description: "Deletes an organizationalBrandingLocalization object."
 author: "AlexanderMars"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
