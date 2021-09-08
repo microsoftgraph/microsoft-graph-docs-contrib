@@ -2,7 +2,7 @@
 title: "Delete cloudPcDeviceImage"
 description: "Delete a cloudPcDeviceImage object."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---

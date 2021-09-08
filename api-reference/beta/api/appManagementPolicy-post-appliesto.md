@@ -1,7 +1,7 @@
 ---
 title: "Assign appliesTo"
 description: "Assign a policy to application or service principal object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

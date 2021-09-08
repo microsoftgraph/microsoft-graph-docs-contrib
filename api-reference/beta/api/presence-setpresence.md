@@ -2,7 +2,7 @@
 title: "presence: setPresence"
 description: "Set the presence information for a user's application presence session."
 author: "jsandoval-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---
@@ -60,7 +60,7 @@ In the request body, provide a JSON object with the following parameters.
 | sessionId          | string   | The ID of the application's presence session.                                                          |
 | availability       | string   | The base presence information.                                                                         |
 | activity           | string   | The supplemental information to availability.                                                          |
-| expirationDuration | duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations. |
+| expirationDuration | duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.</p>If not provided, a default expiration of 5 minutes will be applied. |
 
 > [!IMPORTANT]
 >

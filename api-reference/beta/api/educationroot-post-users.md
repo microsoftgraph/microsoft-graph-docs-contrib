@@ -2,7 +2,7 @@
 title: "Create educationUser"
 description: "Create a new user."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

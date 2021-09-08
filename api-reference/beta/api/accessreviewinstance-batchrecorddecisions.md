@@ -2,7 +2,7 @@
 title: "accessReviewInstance: batchRecordDecisions"
 description: "Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

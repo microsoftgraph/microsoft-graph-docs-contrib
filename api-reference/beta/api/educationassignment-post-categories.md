@@ -1,7 +1,7 @@
 ---
 title: "Create educationCategories"
 description: "Add an existing educationCategory to an educationAssignment"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "deviceComplianceScriptRunSummary resource type"
 description: "Contains properties for the run summary of a device management script."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -55,7 +55,6 @@ Here is a JSON representation of the resource.
   "lastScriptRunDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

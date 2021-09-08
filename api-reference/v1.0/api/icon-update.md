@@ -1,7 +1,7 @@
 ---
 title: "Update icon"
 description: "Update the properties of icon object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType

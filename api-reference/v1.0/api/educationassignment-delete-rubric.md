@@ -1,7 +1,7 @@
 ---
 title: "Delete educationRubric from educationAssignment"
 description: "Delete an educationRubric from an educationAssignment"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"

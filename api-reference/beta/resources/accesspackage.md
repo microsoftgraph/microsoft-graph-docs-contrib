@@ -1,7 +1,7 @@
 ---
 title: "accessPackage resource type"
 description: "An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"

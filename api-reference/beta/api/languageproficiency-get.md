@@ -1,7 +1,7 @@
 ---
 title: "Get languageProficiency"
 description: "Retrieve the properties and relationships of a languageProficiency object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

@@ -1,7 +1,7 @@
 ---
 title: "Add group owner"
 description: "Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -88,6 +88,11 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## See also
+- [Add member to team](team-post-members.md)
+- [Update member's role in team](team-update-members.md)
+- [Remove member from team](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
