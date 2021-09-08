@@ -2,7 +2,7 @@
 title: "serviceUpdateMessageViewpoint resource type"
 description: Represents user view points data for a serviceUpdateMessage."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: resourcePageType
 ---

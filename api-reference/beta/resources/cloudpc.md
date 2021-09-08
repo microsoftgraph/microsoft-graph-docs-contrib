@@ -2,7 +2,7 @@
 title: "cloudPC resource type"
 description: "Cloud managed virtual desktops."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud-managed virtual desktop.
+Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into Intune and managed through MEM portal, so the Cloud PC also has a corresponding Intune managed device id.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -25,6 +25,10 @@ Represents a cloud-managed virtual desktop.
 |[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a [cloudPC](../resources/cloudpc.md) object.|
 |[endGracePeriod](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [cloudPC](../resources/cloudpc.md) object.|
+|[Reprovision cloudPC remote action](../api/manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id.|
+|[Bulk reprovision cloudPCs remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
+|[Resize cloudPC remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device ID.|
+|[Get cloudPC remote action results](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
 
 ## Properties
 
@@ -53,10 +57,12 @@ Represents a cloud-managed virtual desktop.
 |notProvisioned|The Cloud PC hasn’t been provisioned.|
 |provisioning|Cloud PC provisioning is in progress.|
 |provisioned|The Cloud PC is provisioned and can be accessed by end users.|
-|upgrading|Cloud PC resize is in progress.|
 |inGracePeriod|The Cloud PC is in the one week grace period before it’s deprovisioned.|
 |deprovisioning|The Cloud PC is deprovisioning.|
 |failed|The operation on Cloud PC has failed.|
+|provisionedWithWarnings|The Cloud PC is provisioned and can be accessed by end users but with some warnings. The user can continue to use this Cloud PC.|
+|resizing|The Cloud PC is resizing.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 

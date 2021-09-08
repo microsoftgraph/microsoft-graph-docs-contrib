@@ -2,7 +2,7 @@
 title: "Delete calendar"
 description: "Delete a calendar other than the default calendar."
 author: "harini84"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

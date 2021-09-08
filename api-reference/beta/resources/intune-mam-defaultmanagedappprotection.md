@@ -2,7 +2,7 @@
 title: "defaultManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -127,6 +127,7 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped|
 |deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
+|connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -265,10 +266,10 @@ Here is a JSON representation of the resource.
   "warnAfterCompanyPortalUpdateDeferralInDays": 1024,
   "wipeAfterCompanyPortalUpdateDeferralInDays": 1024,
   "deviceLockRequired": true,
-  "appActionIfDeviceLockNotSet": "String"
+  "appActionIfDeviceLockNotSet": "String",
+  "connectToVpnOnLaunch": true
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "Upload documents using the Microsoft Graph Universal Print API"
 description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
 author: "nilakhan"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "universal-print"
 ms.custom: scenarios:getting-started
 ---

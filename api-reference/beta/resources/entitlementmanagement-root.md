@@ -1,7 +1,7 @@
 ---
 title: "Working with the Azure AD entitlement management API"
 description: "Govern access to resources including groups, apps and sites through Azure AD entitlement management"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "conceptualPageType"

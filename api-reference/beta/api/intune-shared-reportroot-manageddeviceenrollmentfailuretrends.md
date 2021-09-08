@@ -2,7 +2,7 @@
 title: "managedDeviceEnrollmentFailureTrends function"
 description: "Metadata for the enrollment failure trends report"
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -69,7 +69,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

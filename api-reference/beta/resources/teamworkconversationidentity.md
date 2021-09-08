@@ -2,7 +2,7 @@
 title: "teamworkConversationIdentity resource type"
 description: "Represents a conversation in Microsoft Teams."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

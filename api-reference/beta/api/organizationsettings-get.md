@@ -1,7 +1,7 @@
 ---
 title: "Get organizationSettings"
 description: "Retrieve the properties and relationships of organizationSettings object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

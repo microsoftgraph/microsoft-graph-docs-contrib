@@ -2,7 +2,7 @@
 title: "deviceEnrollmentConfiguration resource type"
 description: "The Base Class of Device Enrollment Configuration"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

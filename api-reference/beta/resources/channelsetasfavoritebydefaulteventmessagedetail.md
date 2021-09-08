@@ -2,7 +2,7 @@
 title: "channelSetAsFavoriteByDefaultEventMessageDetail resource type"
 description: "Represents the details of an event message about a channel set as favorite by default."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

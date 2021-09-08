@@ -3,7 +3,7 @@ ms.author: "yiwenwang"
 title: "Use the Microsoft Search API in Microsoft Graph to render display layout"
 description: "Use the Microsoft Search API in Microsoft Graph to display search results in different ways."
 author: "yiwenwang"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 ---
 

@@ -2,7 +2,7 @@
 title: "Licenses for subscribing to chat messages"
 description: "Licenses for subscribing to chat messages"
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 

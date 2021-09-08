@@ -2,7 +2,7 @@
 title: "term resource type"
 description: "Defines a term entity in a term store."
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "taxonomy"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "defenderSubmitSamplesConsentType enum type"
 description: "Possible values for DefenderSubmitSamplesConsentType"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,7 +24,6 @@ Possible values for DefenderSubmitSamplesConsentType
 |alwaysPrompt|1|Always prompt|
 |neverSend|2|Never send|
 |sendAllSamplesAutomatically|3|Send all samples automatically|
-
 
 
 

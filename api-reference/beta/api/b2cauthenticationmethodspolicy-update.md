@@ -1,7 +1,7 @@
 ---
 title: "Update b2cAuthenticationMethodsPolicy"
 description: "Update properties of a b2cAuthenticationMethodsPolicy object."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "List noncustodialDataSources"
 description: "Get a list of the noncustodialDataSource objects and their properties."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

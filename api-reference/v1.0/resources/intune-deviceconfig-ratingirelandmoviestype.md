@@ -2,7 +2,7 @@
 title: "ratingIrelandMoviesType enum type"
 description: "Movies rating labels in Ireland"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

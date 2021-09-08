@@ -1,3 +1,7 @@
+---
+ms.localizationpriority: medium
+---
+
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 In this step, you'll create a .NET Core console app. After that you will create a new connection, register the schema, and sync the items.
@@ -768,7 +772,7 @@ private static async Task RegisterSchemaAsync()
 1. Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method.
 
 ```c
-#region PushData   
+#region PushData
 
         public async Task AddOrUpdateItem(string connectionId, ExternalItem item)
         {
