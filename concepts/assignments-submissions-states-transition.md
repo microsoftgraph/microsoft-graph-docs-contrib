@@ -1,7 +1,7 @@
 ---
 title: "States, transitions, and limitations for assignments and submissions in Microsoft Graph"
 description: "This article describes the changes in the assignment and submission states during the process flow and which education APIs in Microsoft Graph are involved."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: conceptualPageType

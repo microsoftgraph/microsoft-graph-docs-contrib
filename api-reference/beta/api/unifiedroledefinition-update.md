@@ -81,7 +81,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
@@ -143,7 +143,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 Content-type: application/json
 
 ```
