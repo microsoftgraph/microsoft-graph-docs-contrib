@@ -33,7 +33,7 @@ Inherits from [organizationalBrandingProperties](../resources/organizationalbran
 |[Create organizationalBranding](../api/organizationalbranding-post-localizations.md)|[organizationalBranding](../resources/organizationalbrandinglocalization.md)|Create a new [organizationalBranding](../resources/organizationalbrandinglocalization.md) object.|
 |[Get organizationalBranding](../api/organizationalbranding-get.md)|[organizationalBranding](../resources/organizationalbranding.md)|Read the properties and relationships of an [organizationalBranding](../resources/organizationalbranding.md) object.|
 |[Update organizationalBranding](../api/organizationalbranding-update.md)|[organizationalBranding](../resources/organizationalbranding.md)|Update the properties of an [organizationalBranding](../resources/organizationalbranding.md) object.|
-|[Delete organizationalBranding](../api/organizationalbranding-delete-localizations.md)|None|Deletes an [organizationalBranding](../resources/organizationalbrandinglocalization.md) object.|
+|[Delete organizationalBranding](../api/organizationalbrandinglocalization-delete.md)|None|Deletes an [organizationalBranding](../resources/organizationalbrandinglocalization.md) object.|
 
 ## Properties
 | Property     | Type        | Description |
