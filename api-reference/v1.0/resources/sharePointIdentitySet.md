@@ -1,5 +1,5 @@
 ---
-author: tkanaujia
+author: tushar20
 ms.date: 09/04/2021
 title: SharePointIdentitySet
 ms.localizationpriority: medium
