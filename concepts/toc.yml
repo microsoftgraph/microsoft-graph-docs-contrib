@@ -689,9 +689,9 @@ items:
                 href: toolkit/providers/msal2.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
-              - name: Microsoft Teams provider
+              - name: Teams provider
                 href: toolkit/providers/teams.md
-              - name: Microsoft Teams MSAL2 provider
+              - name: Teams MSAL2 provider
                 href: toolkit/providers/teams-msal2.md
               - name: Electron provider
                 href: toolkit/providers/electron.md
