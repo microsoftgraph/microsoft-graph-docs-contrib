@@ -206,7 +206,7 @@
       "ChangeList": [
         {
           "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "aadUserConversationMemberResult",
           "ChangeType": "Addition",
           "Description": "Added the [aadUserConversationMemberResult](https://docs.microsoft.com/en-us/graph/api/resources/aadUserConversationMemberResult?view=graph-rest-1.0) resource type.",
@@ -214,7 +214,7 @@
         },
         {
           "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "actionResultPart",
           "ChangeType": "Addition",
           "Description": "Added the [actionResultPart](https://docs.microsoft.com/en-us/graph/api/resources/actionResultPart?view=graph-rest-1.0) resource type.",
@@ -222,35 +222,11 @@
         },
         {
           "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "publicError",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
           "ChangeType": "Addition",
-          "Description": "Added the [publicError](https://docs.microsoft.com/en-us/graph/api/resources/publicError?view=graph-rest-1.0) resource type.",
-          "Target": "publicError"
-        },
-        {
-          "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "publicErrorDetail",
-          "ChangeType": "Addition",
-          "Description": "Added the [publicErrorDetail](https://docs.microsoft.com/en-us/graph/api/resources/publicErrorDetail?view=graph-rest-1.0) resource type.",
-          "Target": "publicErrorDetail"
-        },
-        {
-          "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "publicInnerError",
-          "ChangeType": "Addition",
-          "Description": "Added the [publicInnerError](https://docs.microsoft.com/en-us/graph/api/resources/publicInnerError?view=graph-rest-1.0) resource type.",
-          "Target": "publicInnerError"
-        },
-        {
-          "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
-          "ApiChange": "Action",
-          "ChangedApiName": "add",
-          "ChangeType": "Addition",
-          "Description": "Added the [add](https://docs.microsoft.com/en-us/graph/api/add?view=graph-rest-1.0) method to the [add](https://docs.microsoft.com/en-us/graph/api/add?view=graph-rest-1.0) resource.",
-          "Target": "add"
+          "Description": "Added the [conversationMemberAdd](https://docs.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0) method to the [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
         }
       ],
       "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
