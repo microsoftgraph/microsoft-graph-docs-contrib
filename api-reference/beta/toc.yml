@@ -169,7 +169,7 @@ items:
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/beta
       - name: Build your first app
         items:
-          - name: Register an Azure Active Directory app
+          - name: Register an Azure AD app
             href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/beta
           - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
@@ -179,9 +179,9 @@ items:
             href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/beta
           - name: Build a SharePoint web part
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
-          - name: Build a Microsoft Teams tab
+          - name: Build a Teams tab
             href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
-          - name: Build a Microsoft Teams tab with SSO
+          - name: Build a Teams tab with SSO
             href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/beta
           - name: Build an Electron app
             href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/beta
