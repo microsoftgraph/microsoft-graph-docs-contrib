@@ -11,7 +11,7 @@ This topic describes how to get started with the Microsoft Graph Toolkit in a we
 
 Getting started with the Microsoft Graph Toolkit involves the following steps:
 1. Add Microsoft Graph Toolkit to your project.
-2. Initialize the MSAL 2.0 Provider.
+2. Initialize the MSAL2 Provider.
 3. Add components.
 4. Test your application.
 
@@ -33,11 +33,11 @@ npm install @microsoft/mgt
 
 ---
 
-## Initialize the MSAL 2.0 Provider
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL 2.0 Provider](../providers/msal2.md) uses msal-browser to sign in users and acquire tokens. You can initialize this provider in your HTML or JavaScript.
+## Initialize the MSAL2 Provider
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL2 Provider](../providers/msal2.md) uses msal-browser to sign in users and acquire tokens. You can initialize this provider in your HTML or JavaScript.
 
-> **Note**: If you are currently using MSAL Provider and would like to update to MSAL 2.0 Provider, follow the steps listed [here](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider).
-If you would like to use your own backend authentication, use the [Proxy Provider](../providers/proxy.md) in place of the MSAL 2.0 provider.
+> **Note**: If you are currently using the MSAL Provider and would like to update to MSAL2 Provider, follow the steps listed [here](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider).
+If you would like to use your own backend authentication, use the [Proxy Provider](../providers/proxy.md) in place of the MSAL2 Provider.
 
 You can choose to initialize the provider in either your HTML or your JavaScript code. 
 
@@ -60,16 +60,16 @@ Providers.globalProvider = new Msal2Provider({
 
 ---
 
-The client ID is the only property required to initialize the provider, but you can set additional options. For the full list, see [Msal 2.0 Provider](../providers/msal2.md).
+The client ID is the only property required to initialize the provider, but you can set additional options. For the full list, see [MSAL2 Provider](../providers/msal2.md).
 
 ### Creating an app/client ID
 In order to get a client ID, you need to [register your application](./add-aad-app-registration.md) in Azure AD.
 
 ## Add components
-After you initialize the MSAL 2.0 provider, you can start using any of the Toolkit components.
+After you initialize the MSAL2 provider, you can start using any of the Toolkit components.
 
 # [HTML](#tab/HTML)
-The following is a full working example using mgt-loader, the MSAL Provider initialized in HTML, and the Login component:
+The following is a full working example using mgt-loader, the MSAL2 Provider initialized in HTML, and the Login component:
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -77,7 +77,7 @@ The following is a full working example using mgt-loader, the MSAL Provider init
 <mgt-login></mgt-login>
 ```
 
-This is an example using the ES6 modules, the MSAL 2.0 Provider initialized in HTML, and the Login component:
+This is an example using the ES6 modules, the MSAL2 Provider initialized in HTML, and the Login component:
 
 ```html
 <script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
@@ -86,7 +86,7 @@ This is an example using the ES6 modules, the MSAL 2.0 Provider initialized in H
 ```
 
 # [JavaScript](#tab/JavaScript)
-This is an example using the ES6 modules, the MSAL 2.0 Provider initialized in JavaScript, and the Login component:
+This is an example using the ES6 modules, the MSAL2 Provider initialized in JavaScript, and the Login component:
 
 ```javascript
 import { Providers, Msal2Provider } from '@microsoft/mgt';
