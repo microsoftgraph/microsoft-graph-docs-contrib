@@ -15,7 +15,7 @@ Building an SSO tab involves the following steps:
 1. Create the auth popup page.
 1. Creating an app/client ID
 6. Create the backend
-7. Initialize the Teams MSAL2 Provider.
+7. Initialize the Teams MSAL2 provider.
 8. Add components.
 9. Test your app.
 
@@ -241,9 +241,9 @@ app.listen(PORT, () => {
 });
 ```
 
-## Initialize the Teams MSAL2 Provider
+## Initialize the Teams MSAL2 provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph. To learn more, see [Using the providers](../providers/providers.md). The [Teams MSAL2 Provider](../providers/teams-msal2.md) handles all the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph. To learn more, see [Using the providers](../providers/providers.md). The [Teams MSAL2 provider](../providers/teams-msal2.md) handles all the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
 For SSO-mode, make sure to provide `sso-url` / `ssoUrl` and have it point to your backend API.
 
