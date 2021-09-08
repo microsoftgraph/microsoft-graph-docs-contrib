@@ -11,12 +11,6 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### authenticatorAppFeatureSettings values
-
-|Member|
-|:---|
-|requireNumberMatching|
-
 ### appCredentialRestrictionType values
 
 |Member|
@@ -794,13 +788,6 @@ Namespace: microsoft.graph
 |allow|
 |block|
 |unknownFutureValue|
-
-### authenticatorAppContextType values
-
-|Member|
-|:---|
-|location|
-|app|
 
 ### anniversaryType values
 
