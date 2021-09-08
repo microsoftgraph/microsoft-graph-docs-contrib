@@ -2,7 +2,7 @@
 title: "Get organizationalBranding"
 description: "Read the properties and relationships of an organizationalBranding object."
 author: "AlexanderMars"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -94,7 +94,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.organizationalBranding"
+  "@odata.type": "microsoft.graph.organizationalBranding"
 } -->
 
 ```http
@@ -171,7 +171,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.organizationalBranding"
+  "@odata.type": "microsoft.graph.organizationalBranding"
 } -->
 
 ```http
@@ -239,7 +239,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.organizationalBranding"
+  "@odata.type": "microsoft.graph.organizationalBranding"
 } -->
 
 ```http

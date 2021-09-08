@@ -2,7 +2,7 @@
 title: "organizationalBranding resource type"
 description: "Contains details of the organization's branding."
 author: "AlexanderMars"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -38,7 +38,7 @@ Inherits from [organizationalBrandingProperties](../resources/organizationalbran
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| This is an id, inherited from microsoft.graph.entity, is the locale specifying the ISO 639 standard for language, for example English is "en-us" or "en". Going forward if we expose functionality to have multiple brandings for one locale, this can be changed. Note that id for Default /branding is always '0' or 'default' until we have keyless singletons. Read-only. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
+|id|String| This is an id, inherited from microsoft.graph.entity, is the locale specifying the ISO 639 standard for language, for example English is "en-us" or "en". Going forward if we expose functionality to have multiple brandings for one locale, this can be changed. Note that id for Default /branding is always '0' or and 'default' until we have keyless singletons. Read-only. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
 |backgroundColor|String| Color that will appear in place of the background image in low-bandwidth connections. The primary color of your banner logo or your organization color is recommended to be used here. Specify this in hexadecimal (for example, white is #FFFFFF). Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
 |backgroundImage|Stream| Image that appears as the background of the sign in page. .png or .jpg not larger than 1920x1080 and smaller than 300kb. A smaller image will reduce bandwidth requirements and make page loads more performant. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
 |bannerLogo|Stream| A banner version of your company logo which appears appears on the sign-in page. .png or .jpg no larger than 36x245px. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|

@@ -2,7 +2,7 @@
 title: "Get organizationalBrandingLocalization"
 description: "Read the properties and relationships of an organizationalBrandingLocalization object."
 author: "AlexanderMars"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -93,7 +93,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.organizationalBrandingLocalization"
+  "@odata.type": "microsoft.graph.organizationalBrandingLocalization"
 } -->
 
 ```http
@@ -159,7 +159,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.organizationalBrandingLocalization"
+  "@odata.type": "microsoft.graph.organizationalBrandingLocalization"
 } -->
 
 ```http
@@ -245,7 +245,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.organizationalBrandingLocalization"
+  "@odata.type": "microsoft.graph.organizationalBrandingLocalization"
 } -->
 
 ```http

@@ -2,7 +2,7 @@
 title: "Create organizationalBrandingLocalization"
 description: "Create a new organizationalBrandingLocalization object."
 author: "AlexanderMars"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -67,7 +67,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties_7"
+  "name": "create_organizationalbrandinglocalization_1"
 }-->
 
 ```http
@@ -105,7 +105,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.organizationalBrandingLocalization"
+  "@odata.type": "microsoft.graph.organizationalBrandingLocalization"
 } -->
 
 ```http

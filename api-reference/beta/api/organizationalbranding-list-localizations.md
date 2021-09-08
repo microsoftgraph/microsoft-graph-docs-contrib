@@ -2,7 +2,7 @@
 title: "List localizations"
 description: "Get the organizationalBrandingLocalization resources from the localizations navigation property."
 author: "AlexanderMars"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/branding/loca
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.DirectoryServices.organizationalBrandingLocalization)"
+  "@odata.type": "Collection(microsoft.graph.organizationalBrandingLocalization)"
 }
 -->
 ``` http
@@ -75,7 +75,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.DirectoryServices.organizationalBrandingLocalization",
+      "@odata.type": "#microsoft.graph.organizationalBrandingLocalization",
       "id": "e91971b3-71b3-e919-b371-19e9b37119e9",
       "backgroundColor": "String",
       "backgroundImage": "Stream",
