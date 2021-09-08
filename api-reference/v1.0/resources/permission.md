@@ -62,21 +62,20 @@ Here is a JSON representation of the resource
 
 ## Properties
 
-| Property      | Type                                      | Description
-|:--------------|:------------------------------------------|:-----------------
-| id            | String                                    | The unique identifier of the permission among all permissions on the item. Read-only.
-| grantedTo     | [IdentitySet](identityset.md)             | For user type permissions, the details of the users & applications for this permission. Read-only. Deprecated going forward.
-| grantedToIdentities | Collection([IdentitySet](identityset.md)) | For 
-type permissions, the details of the users to whom permission was granted. Read-only. Deprecated going forward
-| grantedToV2   | [SharePointIdentitySet][]                 | For user type permissions, the details of the users & applications for this permission. Read-only.
-| grantedToIdentitiesV2 | Collection([SharePointIdentitySet][]) | For link type permissions, the details of the users to whom permission was granted. Read-only.
-| invitation    | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only.
-| inheritedFrom | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
-| link          | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only.
-| roles         | Collection of String                      | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.
-| shareId       | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only.
-| expirationDateTime  | DateTimeOffset              | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
-| hasPassword         | Boolean                     | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
+| Property                         | Type                                      | Description
+|:---------------------------------|:------------------------------------------|:-----------------
+| id                               | String                                    | The unique identifier of the permission among all permissions on the item. Read-only.
+| grantedToV2                      | [SharePointIdentitySet][]                 | For user type permissions, the details of the users & applications for this permission. Read-only.
+| grantedToIdentitiesV2            | Collection([SharePointIdentitySet][]) | For link type permissions, the details of the users to whom permission was granted. Read-only.
+| invitation                       | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only.
+| inheritedFrom                    | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
+| link                             | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only.
+| roles                            | Collection of String                      | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.
+| shareId                          | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only.
+| expirationDateTime               | DateTimeOffset                            | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
+| hasPassword                      | Boolean                                   | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
+| grantedTo (deprecated)           | [IdentitySet](identityset.md)             | For user type permissions, the details of the users & applications for this permission. Read-only.
+| grantedToIdentities (deprecated) | Collection([IdentitySet](identityset.md)) | For type permissions, the details of the users to whom permission was granted. Read-only.
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
@@ -91,8 +90,8 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 
 ### Roles property values
 
-| Value              | Description                                                                        |
-|:------------------|:-------------------------------------------------------------------------------|
+| Value           | Description                                                                        |
+|:----------------|:-------------------------------------------------------------------------------|
 | read            | Provides the ability to read the metadata and contents of the item.            |
 | write           | Provides the ability to read and modify the metadata and contents of the item. |
 | owner           | For SharePoint and OneDrive for Business this represents the owner role.       |
