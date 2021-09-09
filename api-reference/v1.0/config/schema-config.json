@@ -30,7 +30,8 @@
       "title",
       "description",
       "ms.prod",
-      "doc_type"
+      "doc_type",
+      "ms.localizationpriority"
     ]
   },
   "schemaDiffConfig": {
