@@ -207,14 +207,6 @@
         {
           "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
           "ApiChange": "Resource",
-          "ChangedApiName": "aadUserConversationMemberResult",
-          "ChangeType": "Addition",
-          "Description": "Added the [aadUserConversationMemberResult](https://docs.microsoft.com/en-us/graph/api/resources/aadUserConversationMemberResult?view=graph-rest-1.0) resource type.",
-          "Target": "aadUserConversationMemberResult"
-        },
-        {
-          "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
-          "ApiChange": "Resource",
           "ChangedApiName": "actionResultPart",
           "ChangeType": "Addition",
           "Description": "Added the [actionResultPart](https://docs.microsoft.com/en-us/graph/api/resources/actionResultPart?view=graph-rest-1.0) resource type.",
