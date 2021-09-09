@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsAutopilotDevicesSummary resource type"
 description: "The user experience analytics summary of Devices not windows autopilot ready."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -22,6 +22,7 @@ The user experience analytics summary of Devices not windows autopilot ready.
 |:---|:---|:---|
 |devicesNotAutopilotRegistered|Int32|The count of intune devices that are not autopilot registerd.|
 |devicesWithoutAutopilotProfileAssigned|Int32|The count of intune devices not autopilot profile assigned.|
+|totalWindows10DevicesWithoutTenantAttached|Int32|The count of windows 10 devices that are Intune and Comanaged.|
 
 ## Relationships
 None
@@ -37,10 +38,10 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAutopilotDevicesSummary",
   "devicesNotAutopilotRegistered": 1024,
-  "devicesWithoutAutopilotProfileAssigned": 1024
+  "devicesWithoutAutopilotProfileAssigned": 1024,
+  "totalWindows10DevicesWithoutTenantAttached": 1024
 }
 ```
-
 
 
 

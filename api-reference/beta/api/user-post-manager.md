@@ -1,7 +1,7 @@
 ---
 title: "Assign a manager"
 description: "Use this API to assign a user's manager."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType

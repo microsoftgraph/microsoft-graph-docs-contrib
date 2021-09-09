@@ -2,7 +2,7 @@
 title: "assignmentOrder resource type"
 description: "Used to define the order of the attributes being collected within a user flow."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "oauth2permissiongrant: delta"
 description: "Get newly created, updated, or deleted oauth2permissiongrants without performing a full read of the entire resource collection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "psignoret"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

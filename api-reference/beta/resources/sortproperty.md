@@ -1,7 +1,7 @@
 ---
 title: "sortProperty resource type"
 description: "Provides the option to sort search results."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

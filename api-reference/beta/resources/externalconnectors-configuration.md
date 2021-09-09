@@ -1,7 +1,7 @@
 ---
 title: "configuration resource type"
 description: "Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a externalConnection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "resourcePageType"

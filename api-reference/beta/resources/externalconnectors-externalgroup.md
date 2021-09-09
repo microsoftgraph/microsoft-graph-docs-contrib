@@ -1,8 +1,8 @@
 ---
 title: "externalGroup resource type"
-description: "Represents an external group used to set permissions on externalItems added to a Microsoft Graph connection."
+description: "Represents a non-Azure Active Directory group."
 author: "snlraju-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,13 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an external group. External groups (along with Azure Active Directory users and groups) are used to set permissions on **externalItems** added to a Microsoft Graph connection. Use **externalGroups** to represent non-Azure Active Directory groups or group-like constructs (such as Business units, Teams, and son on) that determine permission over the content in your external data source.
+Namespace: microsoft.graph.externalConnectors
+
+Represents a non-Azure Active Directory group.
+
+External groups determine permissions to the content in your external data source. These external groups can be used in entries on the [acl](../resources/externalconnectors-externalitem.md) of an [externalItem](../resources/externalconnectors-externalitem.md).
+
+Examples of external groups are business units and work teams.
 
 ## Methods
 
@@ -21,7 +27,7 @@ Represents an external group. External groups (along with Azure Active Directory
 |:---|:---|:---|
 |[Create externalGroup](../api/externalconnectors-externalconnection-post-groups.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Create a new **externalGroup** object.|
 |[Delete externalGroup](../api/externalconnectors-externalgroup-delete.md)|None|Delete an **externalGroup** object.|
-|[Create members](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.externalGroupMember](../resources/externalconnectors-externalgroupmember.md)|Create a new **externalGroupMember** object.|
+|[Create member](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.externalGroupMember](../resources/externalconnectors-externalgroupmember.md)|Create a new **externalGroupMember** object.|
 
 ## Properties
 

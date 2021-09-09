@@ -2,7 +2,7 @@
 title: "participantLeftNotification resource type"
 description: "Contains details about the policy-based participant who has left the call."
 author: "yizhenww"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

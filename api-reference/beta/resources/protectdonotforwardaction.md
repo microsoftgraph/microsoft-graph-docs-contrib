@@ -1,7 +1,7 @@
 ---
 title: "protectDoNotForwardAction resource type"
 description: "Informs the application to apply Do Not Forward protection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

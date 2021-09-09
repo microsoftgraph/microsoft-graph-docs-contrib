@@ -1,7 +1,7 @@
 ---
 title: "Remove publishedResource from an onPremisesAgentGroup"
 description: "Remove a [publishedResource](../resources/publishedresource.md) object from an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"

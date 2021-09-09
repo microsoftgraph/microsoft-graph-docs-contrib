@@ -2,7 +2,7 @@
 title: "Update macOSDeviceFeaturesConfiguration"
 description: "Update the properties of a macOSDeviceFeaturesConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -74,7 +74,7 @@ The following table shows the properties that are required when you create the [
 |shutDownDisabled|Boolean|Whether to hide the Shut Down button item on the login window.|
 |restartDisabled|Boolean|Whether to hide the Restart button item on the login window.|
 |sleepDisabled|Boolean|Whether to hide the Sleep menu item on the login window.|
-|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `>console> special user name.|
+|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the console special user name.|
 |shutDownDisabledWhileLoggedIn|Boolean|Whether the Shut Down menu item on the login window will be disabled while the user is logged in.|
 |restartDisabledWhileLoggedIn|Boolean|Whether the Restart menu item on the login window will be disabled while the user is logged in.|
 |powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
@@ -103,6 +103,8 @@ The following table shows the properties that are required when you create the [
 |contentCachingShowAlerts|Boolean|Display content caching alerts as system notifications.|
 |contentCachingKeepAwake|Boolean|Prevent the device from sleeping if content caching is enabled.|
 |contentCachingPort|Int32|Sets the port used for content caching. If the value is 0, a random available port will be selected. Valid values 0 to 65535|
+
+
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) object in the response body.
@@ -473,7 +475,6 @@ Content-Length: 5834
   "contentCachingPort": 2
 }
 ```
-
 
 
 

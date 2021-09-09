@@ -1,7 +1,7 @@
 ---
 title: "Delete page"
 description: "Delete a OneNote page."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType

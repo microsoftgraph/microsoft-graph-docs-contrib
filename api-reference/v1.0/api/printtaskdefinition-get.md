@@ -2,7 +2,7 @@
 title: Get taskDefinition
 description: Get details about a task definition.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
