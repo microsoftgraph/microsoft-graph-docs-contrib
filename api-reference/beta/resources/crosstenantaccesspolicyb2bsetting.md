@@ -2,7 +2,7 @@
 title: "crossTenantAccessPolicyB2BSetting resource type"
 description: "Used to define inbound and outbound rulesets for B2B collaboration."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

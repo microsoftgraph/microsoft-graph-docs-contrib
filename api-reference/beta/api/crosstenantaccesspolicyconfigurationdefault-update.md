@@ -2,7 +2,7 @@
 title: "Update crossTenantAccessPolicyConfigurationDefault"
 description: "Update the default configuration of a cross tenant access policy."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

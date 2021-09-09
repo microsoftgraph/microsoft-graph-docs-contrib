@@ -2,7 +2,7 @@
 title: "Get crossTenantAccessPolicy"
 description: "Read the properties and relationships of a crossTenantAccessPolicy object."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

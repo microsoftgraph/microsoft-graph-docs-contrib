@@ -2,7 +2,7 @@
 title: "crossTenantAccessPolicyTargetConfiguration resource type"
 description: "Defines the target configuration of a cross tenant access policy setting."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Delete crossTenantAccessPolicyConfigurationPartner"
 description: "Deletes a partner configuration in a cross tenant access policy."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

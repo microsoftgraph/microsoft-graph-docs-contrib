@@ -2,7 +2,7 @@
 title: "crossTenantAccessPolicy resource type"
 description: "Cross-tenant access settings let you manage both B2B collaboration and B2B direct connect for your organization."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

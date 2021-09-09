@@ -2,7 +2,7 @@
 title: "crossTenantAccessPolicyConfigurationDefault: resetToSystemDefault"
 description: "Reset any changes made to the default configuration in a cross tenant access policy back to the system default."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
