@@ -7,7 +7,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "case",
 					"ChangeType": "Addition",
-					"Description": "Added the [case](https://docs.microsoft.com/graph/api/resources/case) resource type.",
+					"Description": "Added the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource type.",
 					"Target": "case"
 				},
 				{
@@ -15,7 +15,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "legalHold",
 					"ChangeType": "Addition",
-					"Description": "Added the [legalHold](https://docs.microsoft.com/graph/api/resources/legalHold) resource type.",
+					"Description": "Added the [legalHold](https://docs.microsoft.com/en-us/graph/api/resources/legalHold?view=graph-rest-beta) resource type.",
 					"Target": "legalHold"
 				},
 				{
@@ -23,7 +23,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "caseOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [caseOperation](https://docs.microsoft.com/graph/api/resources/caseOperation) resource type.",
+					"Description": "Added the [caseOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseOperation?view=graph-rest-beta) resource type.",
 					"Target": "caseOperation"
 				},
 				{
@@ -31,7 +31,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "caseExportOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [caseExportOperation](https://docs.microsoft.com/graph/api/resources/caseExportOperation) resource type.",
+					"Description": "Added the [caseExportOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseExportOperation?view=graph-rest-beta) resource type.",
 					"Target": "caseExportOperation"
 				},
 				{
@@ -63,7 +63,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "close",
 					"ChangeType": "Addition",
-					"Description": "Added the [close](https://docs.microsoft.com/graph/api/case-close) method to the [case](https://docs.microsoft.com/graph/api/resources/case) resource.",
+					"Description": "Added the [close](https://docs.microsoft.com/en-us/graph/api/case-close?view=graph-rest-beta) method to the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
 					"Target": "case"
 				},
 				{
@@ -71,7 +71,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "reopen",
 					"ChangeType": "Addition",
-					"Description": "Added the [reopen](https://docs.microsoft.com/graph/api/case-reopen) method to the [case](https://docs.microsoft.com/graph/api/resources/case) resource.",
+					"Description": "Added the [reopen](https://docs.microsoft.com/en-us/graph/api/case-reopen?view=graph-rest-beta) method to the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
 					"Target": "case"
 				},
 				{
@@ -79,7 +79,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "export",
 					"ChangeType": "Addition",
-					"Description": "Added the [export](https://docs.microsoft.com/graph/api/reviewSet-export) method to the [reviewSet](https://docs.microsoft.com/graph/api/resources/reviewSet) resource.",
+					"Description": "Added the [export](https://docs.microsoft.com/en-us/graph/api/reviewSet-export?view=graph-rest-beta) method to the [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewSet?view=graph-rest-beta) resource.",
 					"Target": "reviewSet"
 				},
 				{
@@ -87,7 +87,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "getDownloadUrl",
 					"ChangeType": "Addition",
-					"Description": "Added the [getDownloadUrl](https://docs.microsoft.com/graph/api/caseExportOperation-getDownloadUrl) method to the [caseExportOperation](https://docs.microsoft.com/graph/api/resources/caseExportOperation) resource.",
+					"Description": "Added the [getDownloadUrl](https://docs.microsoft.com/en-us/graph/api/caseExportOperation-getDownloadUrl?view=graph-rest-beta) method to the [caseExportOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseExportOperation?view=graph-rest-beta) resource.",
 					"Target": "caseExportOperation"
 				},
 				{
@@ -95,7 +95,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "cases",
 					"ChangeType": "Deletion",
-					"Description": "Removed the **cases** relationship from [ediscovery](https://docs.microsoft.com/graph/api/resources/ediscovery) resource.",
+					"Description": "Removed the **cases** relationship from [ediscovery](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery?view=graph-rest-beta) resource.",
 					"Target": "ediscovery"
 				},
 				{
@@ -111,7 +111,7 @@
 					"ApiChange": "Parameter",
 					"ChangedApiName": "bindingParameter",
 					"ChangeType": "Change",
-					"Description": "Changed the type of the **bindingParameter** parameter in the [close](https://docs.microsoft.com/graph/api/ediscoveryCase-close) method.",
+					"Description": "Changed the type of the **bindingParameter** parameter in the [close](https://docs.microsoft.com/en-us/graph/api/ediscoveryCase-close?view=graph-rest-beta) method.",
 					"Target": "close"
 				},
 				{
@@ -119,7 +119,7 @@
 					"ApiChange": "Parameter",
 					"ChangedApiName": "bindingParameter",
 					"ChangeType": "Change",
-					"Description": "Changed the type of the **bindingParameter** parameter in the [reopen](https://docs.microsoft.com/graph/api/ediscoveryCase-reopen) method.",
+					"Description": "Changed the type of the **bindingParameter** parameter in the [reopen](https://docs.microsoft.com/en-us/graph/api/ediscoveryCase-reopen?view=graph-rest-beta) method.",
 					"Target": "reopen"
 				},
 				{
@@ -127,7 +127,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "tags",
 					"ChangeType": "Addition",
-					"Description": "Added the **tags** relationship to [case](https://docs.microsoft.com/graph/api/resources/case) resource.",
+					"Description": "Added the **tags** relationship to [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
 					"Target": "case"
 				},
 				{
@@ -135,7 +135,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "sourceCollections",
 					"ChangeType": "Addition",
-					"Description": "Added the **sourceCollections** relationship to [case](https://docs.microsoft.com/graph/api/resources/case) resource.",
+					"Description": "Added the **sourceCollections** relationship to [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
 					"Target": "case"
 				},
 				{
@@ -143,7 +143,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "sourceCollection",
 					"ChangeType": "Addition",
-					"Description": "Added the [sourceCollection](https://docs.microsoft.com/graph/api/resources/sourceCollection) resource type.",
+					"Description": "Added the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource type.",
 					"Target": "sourceCollection"
 				},
 				{
@@ -151,7 +151,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "tag",
 					"ChangeType": "Addition",
-					"Description": "Added the [tag](https://docs.microsoft.com/graph/api/resources/tag) resource type.",
+					"Description": "Added the [tag](https://docs.microsoft.com/en-us/graph/api/resources/tag?view=graph-rest-beta) resource type.",
 					"Target": "tag"
 				},
 				{
@@ -159,7 +159,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "tagOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [tagOperation](https://docs.microsoft.com/graph/api/resources/tagOperation) resource type.",
+					"Description": "Added the [tagOperation](https://docs.microsoft.com/en-us/graph/api/resources/tagOperation?view=graph-rest-beta) resource type.",
 					"Target": "tagOperation"
 				},
 				{
@@ -167,7 +167,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "estimateStatisticsOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [estimateStatisticsOperation](https://docs.microsoft.com/graph/api/resources/estimateStatisticsOperation) resource type.",
+					"Description": "Added the [estimateStatisticsOperation](https://docs.microsoft.com/en-us/graph/api/resources/estimateStatisticsOperation?view=graph-rest-beta) resource type.",
 					"Target": "estimateStatisticsOperation"
 				},
 				{
@@ -175,7 +175,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "addToReviewSetOperation",
 					"ChangeType": "Addition",
-					"Description": "Added the [addToReviewSetOperation](https://docs.microsoft.com/graph/api/resources/addToReviewSetOperation) resource type.",
+					"Description": "Added the [addToReviewSetOperation](https://docs.microsoft.com/en-us/graph/api/resources/addToReviewSetOperation?view=graph-rest-beta) resource type.",
 					"Target": "addToReviewSetOperation"
 				},
 				{
@@ -239,7 +239,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "applyTags",
 					"ChangeType": "Addition",
-					"Description": "Added the [applyTags](https://docs.microsoft.com/graph/api/reviewSetQuery-applyTags) method to the [reviewSetQuery](https://docs.microsoft.com/graph/api/resources/reviewSetQuery) resource.",
+					"Description": "Added the [applyTags](https://docs.microsoft.com/en-us/graph/api/reviewSetQuery-applyTags?view=graph-rest-beta) method to the [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/reviewSetQuery?view=graph-rest-beta) resource.",
 					"Target": "reviewSetQuery"
 				},
 				{
@@ -247,7 +247,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "estimateStatistics",
 					"ChangeType": "Addition",
-					"Description": "Added the [estimateStatistics](https://docs.microsoft.com/graph/api/sourceCollection-estimateStatistics) method to the [sourceCollection](https://docs.microsoft.com/graph/api/resources/sourceCollection) resource.",
+					"Description": "Added the [estimateStatistics](https://docs.microsoft.com/en-us/graph/api/sourceCollection-estimateStatistics?view=graph-rest-beta) method to the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource.",
 					"Target": "sourceCollection"
 				},
 				{
@@ -255,7 +255,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "addToReviewSet",
 					"ChangeType": "Addition",
-					"Description": "Added the [addToReviewSet](https://docs.microsoft.com/graph/api/reviewSet-addToReviewSet) method to the [reviewSet](https://docs.microsoft.com/graph/api/resources/reviewSet) resource.",
+					"Description": "Added the [addToReviewSet](https://docs.microsoft.com/en-us/graph/api/reviewSet-addToReviewSet?view=graph-rest-beta) method to the [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewSet?view=graph-rest-beta) resource.",
 					"Target": "reviewSet"
 				},
 				{
@@ -263,7 +263,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "asHierarchy",
 					"ChangeType": "Addition",
-					"Description": "Added the [asHierarchy](https://docs.microsoft.com/graph/api/tag-asHierarchy) method to the [tag](https://docs.microsoft.com/graph/api/resources/tag) resource.",
+					"Description": "Added the [asHierarchy](https://docs.microsoft.com/en-us/graph/api/tag-asHierarchy?view=graph-rest-beta) method to the [tag](https://docs.microsoft.com/en-us/graph/api/resources/tag?view=graph-rest-beta) resource.",
 					"Target": "tag"
 				},
 				{
@@ -369,7 +369,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "custodians",
 					"ChangeType": "Addition",
-					"Description": "Added the **custodians** relationship to [ediscoveryCase](https://docs.microsoft.com/graph/api/resources/ediscoveryCase) resource.",
+					"Description": "Added the **custodians** relationship to [ediscoveryCase](https://docs.microsoft.com/graph/api/resources/ediscoveryCase?view=graph-rest-beta) resource.",
 					"Target": "ediscoveryCase"
 				},
 				{
@@ -377,7 +377,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "custodian",
 					"ChangeType": "Addition",
-					"Description": "Added the [custodian](https://docs.microsoft.com/graph/api/resources/custodian) resource type.",
+					"Description": "Added the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource type.",
 					"Target": "custodian"
 				},
 				{
@@ -385,7 +385,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "unifiedGroupSource",
 					"ChangeType": "Addition",
-					"Description": "Added the [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedGroupSource) resource type.",
+					"Description": "Added the [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedGroupSource?view=graph-rest-beta) resource type.",
 					"Target": "unifiedGroupSource"
 				},
 				{
@@ -393,7 +393,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "siteSource",
 					"ChangeType": "Addition",
-					"Description": "Added the [siteSource](https://docs.microsoft.com/graph/api/resources/siteSource) resource type.",
+					"Description": "Added the [siteSource](https://docs.microsoft.com/graph/api/resources/siteSource?view=graph-rest-beta) resource type.",
 					"Target": "siteSource"
 				},
 				{
@@ -401,7 +401,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "userSource",
 					"ChangeType": "Addition",
-					"Description": "Added the [userSource](https://docs.microsoft.com/graph/api/resources/userSource) resource type.",
+					"Description": "Added the [userSource](https://docs.microsoft.com/graph/api/resources/userSource?view=graph-rest-beta) resource type.",
 					"Target": "userSource"
 				},
 				{
@@ -409,7 +409,7 @@
 					"ApiChange": "Enum type",
 					"ChangedApiName": "custodianStatus",
 					"ChangeType": "Addition",
-					"Description": "Added the **custodianStatus** enumeration type to [custodian](https://docs.microsoft.com/graph/api/resources/custodian).",
+					"Description": "Added the **custodianStatus** enumeration type to [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta).",
 					"Target": "custodianStatus"
 				},
 				{
@@ -417,7 +417,7 @@
 					"ApiChange": "Enum type",
 					"ChangedApiName": "sourceType",
 					"ChangeType": "Addition",
-					"Description": "Added the **sourceType** enumeration type to [userSource](https://docs.microsoft.com/graph/api/resources/usersource) and [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedgroupsource).",
+					"Description": "Added the **sourceType** enumeration type to [userSource](https://docs.microsoft.com/graph/api/resources/usersource?view=graph-rest-beta) and [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedgroupsource?view=graph-rest-beta).",
 					"Target": "sourceType"
 				},
 				{
@@ -425,7 +425,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "release",
 					"ChangeType": "Addition",
-					"Description": "Added the [release](https://docs.microsoft.com/graph/api/custodian-release) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian) resource.",
+					"Description": "Added the [release](https://docs.microsoft.com/graph/api/custodian-release?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource.",
 					"Target": "custodian"
 				},
 				{
@@ -433,7 +433,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "activate",
 					"ChangeType": "Addition",
-					"Description": "Added the [activate](https://docs.microsoft.com/graph/api/custodian-activate) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian) resource.",
+					"Description": "Added the [activate](https://docs.microsoft.com/graph/api/custodian-activate?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource.",
 					"Target": "custodian"
 				}
 			],
@@ -451,7 +451,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "noncustodialDataSource",
 					"ChangeType": "Addition",
-					"Description": "Added the [noncustodialDataSource](https://docs.microsoft.com/graph/api/resources/ediscovery-noncustodialDataSource) resource type.",
+					"Description": "Added the [noncustodialDataSource](https://docs.microsoft.com/graph/api/resources/ediscovery-noncustodialDataSource?view=graph-rest-beta) resource type.",
 					"Target": "noncustodialDataSource"
 				},
 				{
@@ -475,7 +475,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "resetToDefault",
 					"ChangeType": "Addition",
-					"Description": "Added the [resetToDefault](https://docs.microsoft.com/graph/api/ediscovery-settings-resetToDefault) method to the [settings](https://docs.microsoft.com/graph/api/resources/settings) resource.",
+					"Description": "Added the [resetToDefault](https://docs.microsoft.com/graph/api/ediscovery-settings-resetToDefault?view=graph-rest-beta) method to the [settings](https://docs.microsoft.com/graph/api/resources/settings?view=graph-rest-beta) resource.",
 					"Target": "settings"
 				},
 				{
@@ -483,7 +483,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "settings",
 					"ChangeType": "Addition",
-					"Description": "Added the [settings](https://docs.microsoft.com/graph/api/resources/ediscovery-settings) resource type.",
+					"Description": "Added the [settings](https://docs.microsoft.com/graph/api/resources/ediscovery-settings?view=graph-rest-beta) resource type.",
 					"Target": "settings"
 				},
 				{
@@ -491,7 +491,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "ocrSettings",
 					"ChangeType": "Addition",
-					"Description": "Added the [ocrSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-ocrSettings) resource type.",
+					"Description": "Added the [ocrSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-ocrSettings?view=graph-rest-beta) resource type.",
 					"Target": "ocrSettings"
 				},
 				{
@@ -499,7 +499,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "redundancyDetectionSettings",
 					"ChangeType": "Addition",
-					"Description": "Added the [redundancyDetectionSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-redundancyDetectionSettings) resource type.",
+					"Description": "Added the [redundancyDetectionSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-redundancyDetectionSettings?view=graph-rest-beta) resource type.",
 					"Target": "redundancyDetectionSettings"
 				},
 				{
@@ -507,7 +507,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "topicModelingSettings",
 					"ChangeType": "Addition",
-					"Description": "Added the [topicModelingSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-topicModelingSettings) resource type.",
+					"Description": "Added the [topicModelingSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-topicModelingSettings?view=graph-rest-beta) resource type.",
 					"Target": "topicModelingSettings"
 				},
 				{
@@ -515,7 +515,7 @@
 					"ApiChange": "Relationship",
 					"ChangedApiName": "noncustodialSources",
 					"ChangeType": "Change",
-					"Description": "Changed the **noncustodialSources** relationship data type from the [sourceCollection](https://docs.microsoft.com/graph/api/resources/sourceCollection) resource from **microsoft.graph.ediscovery.dataSource** to **microsoft.graph.ediscovery.noncustodialDataSource**.",
+					"Description": "Changed the **noncustodialSources** relationship data type from the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource from **microsoft.graph.ediscovery.dataSource** to **microsoft.graph.ediscovery.noncustodialDataSource**.",
 					"Target": "sourceCollection"
 				}
 			],
@@ -533,7 +533,7 @@
 					"ApiChange": "Parameter",
 					"ChangedApiName": "custodians",
 					"ChangeType": "Change",
-					"Description": "Changed the required paramter from **site@odata.bind** to **site** on the [Create custodian siteSource](https://docs.microsoft.com/graph/api/ediscovery-custodian-post-sitesources) method.",
+					"Description": "Changed the required paramter from **site@odata.bind** to **site** on the [Create custodian siteSource](https://docs.microsoft.com/en-us/graph/api/ediscovery-custodian-post-sitesources?view=graph-rest-beta) method.",
 					"Target": "custodians"
 				},
 				{
@@ -541,7 +541,7 @@
 					"ApiChange": "Parameter",
 					"ChangedApiName": "custodians",
 					"ChangeType": "Change",
-					"Description": "Added paramter **group** to the [Create unifiedGroupSource](https://docs.microsoft.com/graph/api/ediscovery-custodian-post-unifiedgroupsources) method.",
+					"Description": "Added paramter **group** to the [Create unifiedGroupSource](https://docs.microsoft.com/en-us/graph/api/ediscovery-custodian-post-unifiedgroupsources?view=graph-rest-beta) method.",
 					"Target": "custodians"
 				},
 				{
@@ -549,7 +549,7 @@
 					"ApiChange": "Parameter",
 					"ChangedApiName": "noncustodialDataSource",
 					"ChangeType": "Change",
-					"Description": "Updated paramter **datasource** on the [Create noncustodialDataSource](https://docs.microsoft.com/graph/api/ediscovery-noncustodialdatasource-post) method.",
+					"Description": "Updated paramter **datasource** on the [Create noncustodialDataSource](https://docs.microsoft.com/en-us/graph/api/ediscovery-noncustodialdatasource-post?view=graph-rest-beta) method.",
 					"Target": "nonCustodialDataSource"
 				},
 				{
@@ -557,7 +557,7 @@
 					"ApiChange": "Parameter",
 					"ChangedApiName": "legalHold",
 					"ChangeType": "Change",
-					"Description": "Updated paramter **email** on the [Create legalHold userSource](https://docs.microsoft.com/graph/api/ediscovery-legalhold-post-usersources) method.",
+					"Description": "Updated paramter **email** on the [Create legalHold userSource](https://docs.microsoft.com/en-us/graph/api/ediscovery-legalhold-post-usersources?view=graph-rest-beta) method.",
 					"Target": "legalHold"
 				},
 				{
@@ -565,7 +565,7 @@
 					"ApiChange": "Parameter",
 					"ChangedApiName": "legalHold",
 					"ChangeType": "Change",
-					"Description": "Updated paramter **site** on the [Create legalHold siteSource](https://docs.microsoft.com/graph/api/ediscovery-legalhold-post-sitesources) method.",
+					"Description": "Updated paramter **site** on the [Create legalHold siteSource](https://docs.microsoft.com/en-us/graph/api/ediscovery-legalhold-post-sitesources?view=graph-rest-beta) method.",
 					"Target": "legalHold"
 				},
 				{
@@ -573,7 +573,7 @@
 					"ApiChange": "Parameter",
 					"ChangedApiName": "sourceCollection",
 					"ChangeType": "Change",
-					"Description": "Updated paramters to include **site** on the [Add additional source](https://docs.microsoft.com/graph/api/ediscovery-sourcecollection-post-additionalsources) method.",
+					"Description": "Updated paramters to include **site** on the [Add additional source](https://docs.microsoft.com/en-us/graph/api/ediscovery-sourcecollection-post-additionalsources?view=graph-rest-beta) method.",
 					"Target": "sourceCollection"
 				}
 			],
@@ -593,8 +593,6 @@
 					"ChangeType": "Change",
 					"Description": "Changed the case type created to a [large case](https://docs.microsoft.com/microsoft-365/compliance/advanced-ediscovery-large-cases) on [Create case](https://docs.microsoft.com/graph/api/ediscovery-case-post) method.",
 					"Target": "custodians"
-
-
 				}
 			],
 			"Id": "9956bf20-942b-4153-bffd-f7b3351fb3c0",
