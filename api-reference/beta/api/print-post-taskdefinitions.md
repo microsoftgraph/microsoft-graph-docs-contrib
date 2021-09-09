@@ -2,7 +2,7 @@
 title: Create taskDefinition
 description: Create a new task definition.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---

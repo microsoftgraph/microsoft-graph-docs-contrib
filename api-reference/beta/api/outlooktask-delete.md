@@ -1,7 +1,7 @@
 ---
 title: "Delete outlookTask"
 description: "Delete the specified Outlook task in the user's mailbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType

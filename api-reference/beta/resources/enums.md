@@ -2,7 +2,7 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---

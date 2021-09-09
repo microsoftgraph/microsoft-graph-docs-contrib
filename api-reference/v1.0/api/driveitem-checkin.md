@@ -2,7 +2,7 @@
 author: learafa
 description: "Check in a checked out driveItem resource, which makes the version of the document available to others."
 title: "driveItem: checkin"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

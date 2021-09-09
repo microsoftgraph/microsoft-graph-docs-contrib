@@ -1,7 +1,7 @@
 ---
 title: "Overview of the Microsoft Search API in Microsoft Graph"
 description: "Use the Microsoft Search API to index content and add search across your Office and indexed content to your apps."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "search"
 author: "snlraju-msft"
 scenarios: "getting-started"

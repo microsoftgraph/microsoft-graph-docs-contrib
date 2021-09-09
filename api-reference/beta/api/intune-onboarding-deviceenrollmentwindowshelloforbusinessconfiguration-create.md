@@ -2,7 +2,7 @@
 title: "Create deviceEnrollmentWindowsHelloForBusinessConfiguration"
 description: "Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -143,7 +143,6 @@ Content-Length: 901
   "securityKeyForSignIn": "enabled"
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "windowsDefenderProductStatus enum type"
 description: "Product Status of Windows Defender"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -46,7 +46,6 @@ Product Status of Windows Defender
 |platformAboutToBeOutdated|4194304|Platform is about to be outdated|
 |signatureOrPlatformEndOfLifeIsPastOrIsImpending|8388608|Signature or platform end of life is past or is impending|
 |windowsSModeSignaturesInUseOnNonWin10SInstall|16777216|Windows SMode signatures still in use on non-Win10S install|
-
 
 
 

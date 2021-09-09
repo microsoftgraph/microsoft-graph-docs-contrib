@@ -2,7 +2,7 @@
 title: "Create androidEasEmailProfileConfiguration"
 description: "Create a new androidEasEmailProfileConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -195,7 +195,6 @@ Content-Length: 1738
   "customDomainName": "Custom Domain Name value"
 }
 ```
-
 
 
 

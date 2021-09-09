@@ -2,7 +2,7 @@
 title: "azureADDeviceRegistrationError resource type"
 description: "An error in the registration process of an Azure AD device that prevents the service from enrolling the device in update management or deploying content to the device."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

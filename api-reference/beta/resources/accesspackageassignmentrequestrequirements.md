@@ -1,7 +1,7 @@
 ---
 title: "accessPackageAssignmentRequestRequirements resource type"
 description: "Identifies the requirements necessary to request the specified access package."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"

@@ -2,7 +2,7 @@
 title: "windowsUpdateReference resource type"
 description: "Represents specific Windows 10 update content."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

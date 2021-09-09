@@ -1,7 +1,7 @@
 ---
 title: "Remove appliesTo"
 description: "Remove a directoryObject from feature rollout."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madhavpatel6"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

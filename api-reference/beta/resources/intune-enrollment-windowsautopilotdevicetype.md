@@ -2,7 +2,7 @@
 title: "windowsAutopilotDeviceType enum type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,7 +23,6 @@ Not yet documented
 |windowsPc|0|Windows PC|
 |surfaceHub2|1|Surface Hub 2|
 |holoLens|2|HoloLens|
-
 
 
 

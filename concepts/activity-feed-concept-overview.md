@@ -1,7 +1,7 @@
 ---
 title: "Using the activity feed API in Microsoft Graph to enable cross-device experiences"
 description: "When you use activities, these Microsoft experiences can start driving engagement with your app. You can also display activities in your apps to help users get back to what they were doing on any device, on any platform, including Windows, Android, and iOS."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 ---
 

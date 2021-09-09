@@ -1,7 +1,7 @@
 ---
 title: "tiIndicator: submitTiIndicators"
 description: "Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType

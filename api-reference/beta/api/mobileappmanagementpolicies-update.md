@@ -2,7 +2,7 @@
 title: "Update mobileAppManagementPolicy"
 description: "Update the properties of a mobile app management policy object."
 author: "ravennMSFT"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

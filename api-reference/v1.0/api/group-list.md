@@ -1,7 +1,7 @@
 ---
 title: "List groups"
 description: "List all the groups available in an organization, including but not limited to Microsoft 365 groups."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType

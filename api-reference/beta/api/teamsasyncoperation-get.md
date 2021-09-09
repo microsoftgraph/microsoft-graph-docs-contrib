@@ -2,7 +2,7 @@
 title: "Get teamsAsyncOperation"
 description: "Get the details of a teamsAsyncOperation."
 author: "jecha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
