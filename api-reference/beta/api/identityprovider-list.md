@@ -1,7 +1,7 @@
 ---
 title: "List identityProviders"
 description: "Retrieve a list of identityProvider objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"

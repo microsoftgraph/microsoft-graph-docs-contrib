@@ -2,7 +2,7 @@
 title: "How to protect your company app data with Microsoft Intune"
 description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: conceptualPageType
 ---

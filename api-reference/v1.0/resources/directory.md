@@ -1,7 +1,7 @@
 ---
 title: "directory resource type (deleted items)"
 description: ". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -15,6 +15,8 @@ Represents a deleted item in the directory. When an item is deleted, it is added
 
 Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md) and [user](user.md) resources.
 
+Inherits from [entity](entity.md).
+
 ## Methods
 
 | Method         | Return Type | Description |
@@ -25,13 +27,24 @@ Currently, deleted items functionality is only supported for the [application](a
 |[Permanently delete an item](../api/directory-deleteditems-delete.md) | None | Permanently deletes an item. |
 |[List deleted items owned by a user](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
+
+## Properties
+
+| Property   | Type |Description|
+|:---------------|:--------|:----------|
+|id|String| A unique identifier for the object; for example, `12345678-9abc-def0-1234-56789abcde`. Key. Not nullable. Read-only. Inherited from [entity](entity.md).|
+
+
 ## Relationships
+
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|administrativeUnits|[administrativeUnit](administrativeunit.md) collection| Conceptual container for user and group directory objects.|
 |deletedItems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

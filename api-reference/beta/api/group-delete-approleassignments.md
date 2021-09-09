@@ -1,7 +1,7 @@
 ---
 title: "Delete an appRoleAssignment from a group"
 description: "Delete an appRoleAssignment that has been granted to a group."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "groups"
 author: "psignoret"

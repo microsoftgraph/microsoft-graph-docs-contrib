@@ -2,7 +2,7 @@
 title: "Update cloudPcOnPremisesConnection"
 description: "Update the properties of a cloudPcOnPremisesConnection object."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---

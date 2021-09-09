@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "Get columnDefinition"
 description: " Get a site, list or content type column."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

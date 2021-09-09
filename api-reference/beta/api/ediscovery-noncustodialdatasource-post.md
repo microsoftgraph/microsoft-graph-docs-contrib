@@ -2,7 +2,7 @@
 title: "Create noncustodialDataSource"
 description: "Create a new noncustodialDataSource object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

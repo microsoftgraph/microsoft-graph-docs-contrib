@@ -2,7 +2,7 @@
 title: "Update identityApiConnector"
 description: "Update the properties of an identityApiConnector object."
 author: "nickgmicrosoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

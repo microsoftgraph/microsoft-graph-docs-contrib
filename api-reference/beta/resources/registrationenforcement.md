@@ -2,7 +2,7 @@
 title: "registrationEnforcement resource type"
 description: "Enforce registration at sign-in time."
 author: "mjsantani"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

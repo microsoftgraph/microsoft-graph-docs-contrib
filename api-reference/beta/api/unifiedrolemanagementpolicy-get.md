@@ -1,8 +1,8 @@
 ---
 title: "Get unifiedRoleManagementPolicy"
 description: "Read the properties and relationships of an unifiedRoleManagementPolicy object."
-author: "shauliu"
-localization_priority: Normal
+author: "shauliu1"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

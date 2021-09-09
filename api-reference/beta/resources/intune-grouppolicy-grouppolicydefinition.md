@@ -2,7 +2,7 @@
 title: "groupPolicyDefinition resource type"
 description: "The entity describes all of the information about a single group policy."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -34,6 +34,8 @@ The entity describes all of the information about a single group policy.
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Possible values are: `admxBacked`, `admxIngested`.|
 |hasRelatedDefinitions|Boolean|Signifies whether or not there are related definitions to this definition|
 |groupPolicyCategoryId|Guid|The category id of the parent category|
+|minDeviceCspVersion|String|Minimum required CSP version for device configuration in this definition|
+|minUserCspVersion|String|Minimum required CSP version for user configuration in this definition|
 |version|String|Setting definition version|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
@@ -66,12 +68,13 @@ Here is a JSON representation of the resource.
   "policyType": "String",
   "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "Guid",
+  "minDeviceCspVersion": "String",
+  "minUserCspVersion": "String",
   "version": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

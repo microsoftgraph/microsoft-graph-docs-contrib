@@ -2,7 +2,7 @@
 title: "deviceManagementIntentSettingSecretConstraint resource type"
 description: "Constraint indicating that this value is a secret and will be encrypted."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -39,7 +39,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingSecretConstraint"
 }
 ```
-
 
 
 

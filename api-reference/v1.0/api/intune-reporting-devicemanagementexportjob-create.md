@@ -2,7 +2,7 @@
 title: "Create deviceManagementExportJob"
 description: "Create a new deviceManagementExportJob object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

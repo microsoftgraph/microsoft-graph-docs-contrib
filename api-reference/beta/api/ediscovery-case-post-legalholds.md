@@ -2,7 +2,7 @@
 title: "Create legalHold"
 description: "Create a new legalHold object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---

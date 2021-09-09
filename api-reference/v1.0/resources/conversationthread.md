@@ -2,7 +2,7 @@
 title: "conversationThread resource type"
 description: "A conversationThread is a collection of posts."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -32,8 +32,8 @@ A new thread is created when a recipient is removed from the thread.
 | Property              | Type                                 | Description                                                                                                                                                                                      |
 |:----------------------|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id                    | String                               | Read-only. <br/><br/>Returned by default.                                                                                                                                                                                      |
-| toRecipients          | [recipient](recipient.md) collection | The To: recipients for the thread. <br/><br/>Returned only on $select.                                                                                                                                                              |
-| ccRecipients          | [recipient](recipient.md) collection | The Cc: recipients for the thread. <br/><br/>Returned only on $select.                                                                                                                                                               |
+| toRecipients          | [recipient](recipient.md) collection | The To: recipients for the thread. <br/><br/>Returned only on `$select`.                                                                                                                                                              |
+| ccRecipients          | [recipient](recipient.md) collection | The Cc: recipients for the thread. <br/><br/>Returned only on `$select`.                                                                                                                                                               |
 | topic                 | String                               | The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. <br/><br/>Returned by default.                                                                              |
 | hasAttachments        | Boolean                              | Indicates whether any of the posts within this thread has at least one attachment. <br/><br/>Returned by default.                                                                                                              |
 | lastDeliveredDateTime | DateTimeOffset                       | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br/><br/>Returned by default. |

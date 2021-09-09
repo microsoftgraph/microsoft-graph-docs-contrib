@@ -2,7 +2,7 @@
 title: "teamworkBot resource type"
 description: "A bot in Microsoft Teams ecosystem."
 author: "AkJo"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

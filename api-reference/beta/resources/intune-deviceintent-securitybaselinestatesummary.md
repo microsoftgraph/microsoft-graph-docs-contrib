@@ -2,7 +2,7 @@
 title: "securityBaselineStateSummary resource type"
 description: "The security baseline compliance state summary for the security baseline of the account."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -57,7 +57,6 @@ Here is a JSON representation of the resource.
   "notApplicableCount": 1024
 }
 ```
-
 
 
 

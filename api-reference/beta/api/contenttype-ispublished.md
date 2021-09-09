@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: isPublished"
 description: "Check the publishing status of a content type in a content type hub site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

@@ -2,7 +2,7 @@
 title: "Get educationAssignment"
 description: "Get the properties and relationships of an assignment."
 author: "sharad-sharma-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

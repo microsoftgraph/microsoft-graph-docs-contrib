@@ -2,7 +2,7 @@
 title: "Create legalHold siteSource"
 description: "Create a new legalHold siteSource object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

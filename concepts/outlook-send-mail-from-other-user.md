@@ -2,7 +2,7 @@
 title: "Send Outlook messages from another user"
 description: "Use Send As and Send On Behalf Of permissions to send Outlook messages as another user or shared mailbox in Microsoft Graph."
 author: "jasonjoh"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 ms.date: 01/16/2019
 ---

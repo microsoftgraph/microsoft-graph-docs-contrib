@@ -1,7 +1,7 @@
 ---
 title: "List instances"
 description: "Get the instances (occurrences) of an event for a specified time range."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType

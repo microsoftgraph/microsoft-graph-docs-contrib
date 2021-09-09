@@ -1,7 +1,7 @@
 ---
 title: "educationClass: delta"
 description: "Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mlafleur"
 ms.prod: "education"
 doc_type: apiPageType
