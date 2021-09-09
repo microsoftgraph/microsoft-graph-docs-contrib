@@ -2,7 +2,7 @@
 title: "crossTenantAccessPolicyInboundTrust resource type"
 description: "Used to define which conditional access claims you want to accept from other organizations via your cross tenant access policy configuration."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
