@@ -18,7 +18,6 @@ A collection of users or groups enabled to use [Microsoft Authenticator authenti
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationMode|microsoftAuthenticatorAuthenticationMode|Determines which types of notifications can be used for sign-in. The possible values are: `deviceBasedPush` (passwordless only), `push`, and `any`.|
-|featureSettings|authenticatorAppFeatureSettings|Determines what additional settings should be applied to Microsoft Authenticator. The possible values are: `requireNumberMatching` (Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications). Nullable.|
 |id|String|Object identifier of an Azure AD user or group. Inherited from [authenticationMethodTarget](authenticationmethodtarget.md).|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. Inherited from [authenticationMethodTarget](authenticationmethodtarget.md). *Not supported*. |
 |targetType|authenticationMethodTargetType| The possible values are: `user`, `group`, and `unknownFutureValue`. Inherited from [authenticationMethodTarget](authenticationMethodTarget.md).|

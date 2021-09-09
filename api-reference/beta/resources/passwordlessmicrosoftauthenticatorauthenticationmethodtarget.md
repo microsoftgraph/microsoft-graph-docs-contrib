@@ -23,7 +23,6 @@ A collection of users or groups enabled to use Microsoft Authenticator Passwordl
 |:---|:---|:---|
 |id|String|Object ID of an Azure AD user or group.|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method.|
-|shownContext|authenticatorAppContextType|Possible values are: `location`, `app`.|
 |targetType|authenticationMethodTargetType|Possible values are: `user`, `group`.|
 |useForSignIn|Boolean|Determines whether the authentication method can be used to sign in to Azure AD.|
 
