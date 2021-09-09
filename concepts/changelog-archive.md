@@ -2,7 +2,7 @@
 title: "Changelog for Microsoft Graph (Archive)"
 description: "This topic contains archived changelog entries for Microsoft Graph."
 author: "MSGraphDocsVteam"
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Changelog for Microsoft Graph (Archive)
@@ -944,7 +944,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | beta and v1.0 | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
 | Addition | v1.0 | Added new user permission [User.ManageIdentities.All](./permissions-reference.md#user-permissions).|
 | Addition | beta | Added the PrivilegedAccess.Read.AzureResources application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta). |
-| Addition | beta | Added the [Auditlogs.Read.All](./permissions-reference.md#user-permissions) permission for listing the sign-in activity of a user.|
+| Addition | beta | Added the [AuditLog.Read.All](./permissions-reference.md#user-permissions) permission for listing the sign-in activity of a user.|
 | Addition | beta | Added the [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta), which represents Azure Active Directory security defaults policy.|
 | Addition | beta | Added support for the `$top` and `$skiptoken` filters to support pagination on the [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list) method. |
 

@@ -13,18 +13,23 @@ const client = Client.init(options);
 const group = {
   addLicenses: [
     {
-      disabledPlans: [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      skuId: "skuId-value-1"
+      disabledPlans: [
+        '113feb6c-3fe4-4440-bddc-54d774bf0318',
+        '14ab5db5-e6c4-4b20-b4bc-13e36fd2227f'
+      ],
+      skuId: 'b05e124f-c7cc-45a0-a6aa-8cf78c946968'
     },
     {
-      disabledPlans: [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
-      skuId: "skuId-value-2"
+      disabledPlans: [
+        'a413a9ff-720c-4822-98ef-2f37c2a21f4c'
+      ],
+      skuId: 'c7df2760-2c81-4ef7-b578-5b5392b571df'
     }
   ],
   removeLicenses: []
 };
 
-let res = await client.api('/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense')
+await client.api('/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense')
 	.version('beta')
 	.post(group);
 

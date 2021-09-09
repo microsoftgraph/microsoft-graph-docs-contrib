@@ -2,8 +2,8 @@
 title: "Get directoryObject"
 description: "Retrieve the properties and relationships of directoryObject object."
 author: "keylimesoda"
-localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: high
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ---
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

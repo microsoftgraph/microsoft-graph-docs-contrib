@@ -1,8 +1,8 @@
 ---
 title: "List groupLifecyclePolicies"
 description: "Retrieves a list of groupLifecyclePolicy objects to which a group belongs."
-author: "yyuank"
-localization_priority: Normal
+author: "Jordanndahl"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
 
 ##### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

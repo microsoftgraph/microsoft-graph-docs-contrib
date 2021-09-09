@@ -1,9 +1,9 @@
 ---
 title: "accessPackageAssignmentResourceRole resource type"
 description: "An access package assignment resource role indicates the resource-specific role which a subject has been assigned through an access package assignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 

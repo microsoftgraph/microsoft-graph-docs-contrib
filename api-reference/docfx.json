@@ -226,11 +226,13 @@
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
       "extendBreadcrumb": true,
       "author": "MSGraphDocsVteam",
+      "ms.author": "MSGraphDocsVteam",
       "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "searchScope": ["graph"],
-      "toc_preview": true
+      "toc_preview": true,
+      "recommendations": false
     },
     "fileMetadata": {
       "breadcrumb_path": {

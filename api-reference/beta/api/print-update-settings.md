@@ -2,7 +2,7 @@
 title: Update printSettings
 description: Update tenant-wide settings for the Universal Print service.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -86,9 +86,7 @@ Content-type: application/json
 ##### Response
 The following is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printSettings"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 NoContent

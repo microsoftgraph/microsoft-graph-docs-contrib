@@ -2,7 +2,7 @@
 title: "Resume sync on an educationSynchronizationProfile"
 description: "Resume the sync of a specific school data synchronization profile in the tenant."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -22,12 +22,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
 |Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
+|Application|EduAdministration.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/resume
+POST /education/synchronizationProfiles/{id}/resume
 ```
 
 ## Request headers

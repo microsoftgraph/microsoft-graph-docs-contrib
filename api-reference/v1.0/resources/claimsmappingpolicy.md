@@ -1,9 +1,9 @@
 ---
 title: "claimsMappingPolicy resource type"
 description: "Represents the claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -30,14 +30,18 @@ Inherits from [stsPolicy](stsPolicy.md).
 | [List claimsMappingPolicies](../api/claimsmappingpolicy-list.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Read properties and relationships of claimsMappingPolicies objects. |
 | [Update claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | None | Update a claimsMappingPolicy object. |
 | [Delete claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | None | Delete a claimsMappingPolicy object. |
+| **Directory objects** |  |  |
 | [List appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [Assign claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md) | None | Assign a claimsMappingPolicy to a [servicePrincipal](serviceprincipal.md) object. |
+| [List assigned claimsMappingPolicy](../api/serviceprincipal-list-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) collection | List the claimsMappingPolicy objects that are assigned to a [servicePrincipal](serviceprincipal.md) object. |
+| [Remove claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md) | None | Remove a claimsMappingPolicy from a [servicePrincipal](serviceprincipal.md) object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String| Unique identifier for this policy. Read-only.|
-|definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required.|
+|definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. See [Properties of a claims-mapping policy definition](#properties-of-a-claims-mapping-policy-definition) for more details about the JSON schema for this property. Required.|
 |description|String| Description for this policy.|
 |displayName|String| Display name for this policy. Required.|
 |isOrganizationDefault|Boolean|Ignore this property. The claims-mapping policy can only be applied to service principals and can't be set globally for the organization.|
@@ -52,16 +56,10 @@ The properties below form the JSON object that represents a claims-mapping polic
 }-->
 ``` json
 {
-  "definition": [
-    "{\"ClaimsMappingPolicy\":{
-      \"Version\":1,
-      \"IncludeBasicClaimSet\":\"true\", 
-      \"ClaimsSchema\": [
-        {\"Source\":\"user\",\"ID\":\"employeeid\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\",\"JwtClaimType\":\"name\"},{\"Source\":\"company\",\"ID\":\"tenantcountry\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country\",\"JwtClaimType\":\"country\"}
-        ]
-      }
-    }"
-  ]
+    "definition": [
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\",\"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"employeeid\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\",\"JwtClaimType\":\"name\"},{\"Source\":\"company\",\"ID\":\"tenantcountry\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country\",\"JwtClaimType\":\"country\"}]}}"
+    ],
+    "displayName": "Test1234"
 }
 ```
 
@@ -71,26 +69,17 @@ The properties below form the JSON object that represents a claims-mapping polic
 }-->
 ``` json
 {
-  "definition": [
-    "{\"ClaimsMappingPolicy\":{
-      \"Version\":1,
-      \"IncludeBasicClaimSet\":\"true\", 
-      \"ClaimsSchema\":[
-        {\"Source\":\"user\",\"ID\":\"extensionattribute1\"},{\"Source\":\"transformation\",\"ID\":\"DataJoin\",\"TransformationId\":\"JoinTheData\",\"JwtClaimType\":\"JoinedData\"}
-        ],
-      \"ClaimsTransformation\":[
-        {\"ID\":\"JoinTheData\",\"TransformationMethod\":\"Join\",\"InputClaims\":[{\"ClaimTypeReferenceId\":\"extensionattribute1\",\"TransformationClaimType\":\"string1\"}], \"InputParameters\": [{\"ID\":\"string2\",\"Value\":\"sandbox\"},{\"ID\":\"separator\",\"Value\":\".\"}],\"OutputClaims\":[{\"ClaimTypeReferenceId\":\"DataJoin\",\"TransformationClaimType\":\"outputClaim\"}]}
-        ]
-      }
-    }"
-  ]
+    "definition": [
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\",\"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"},{\"Source\":\"user\",\"ID\":\"givenname\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname\"},{\"Source\":\"user\",\"ID\":\"displayname\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\"},{\"Source\":\"user\",\"ID\":\"surname\",\"SamlClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname\"},{\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\":\"username\"}],\"ClaimsTransformation\":[{\"ID\":\"CreateTermsOfService\",\"TransformationMethod\":\"CreateStringClaim\",\"InputParameters\": [{\"ID\":\"value\",\"DataType\":\"string\", \"Value\":\"sandbox\"}],\"OutputClaims\":[{\"ClaimTypeReferenceId\":\"TOS\",\"TransformationClaimType\":\"createdClaim\"}]}]}}"
+    ],
+    "displayName": "Test1234"
 }
 ```
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |Version|Integer|Set value of 1. Required.|
-|IncludeBasicClaimSet|Boolean|If set to true, all claims in the basic claim set are emitted in tokens affected by the policy. If set to false, claims in the basic claim set are not in the tokens, unless they are individually added in the ClaimsSchema property of the same policy.|
+|IncludeBasicClaimSet|Boolean|If set to `true`, all claims in the basic claim set are emitted in tokens affected by the policy. If set to `false`, claims in the basic claim set are not in the tokens, unless they are individually added in the ClaimsSchema property of the same policy.|
 |ClaimsSchema|JSON object|Defines which claims are present in the tokens affected by the policy, in addition to the basic claim set and the core claim set. For each claim schema entry defined in this property, certain information is required. Specify where the data is coming from (Value or Source/ID pair), and which claim the data is emitted as (Claim Type). For more information, see [ClaimsSchema definition](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
 |ClaimsTransformation|JSON object| Defines common transformations that can be applied to source data, to generate the output data for claims specified in the ClaimsSchema. For more information, see [ClaimsTransformation definition](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|
 

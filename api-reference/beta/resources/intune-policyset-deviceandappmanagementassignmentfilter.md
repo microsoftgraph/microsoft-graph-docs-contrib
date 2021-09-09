@@ -2,7 +2,7 @@
 title: "deviceAndAppManagementAssignmentFilter resource type"
 description: "A class containing the properties used for Assignment Filter."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -26,6 +26,10 @@ A class containing the properties used for Assignment Filter.
 |[Delete deviceAndAppManagementAssignmentFilter](../api/intune-policyset-deviceandappmanagementassignmentfilter-delete.md)|None|Deletes a [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md).|
 |[Update deviceAndAppManagementAssignmentFilter](../api/intune-policyset-deviceandappmanagementassignmentfilter-update.md)|[deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|Update the properties of a [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) object.|
 |[validateFilter action](../api/intune-policyset-deviceandappmanagementassignmentfilter-validatefilter.md)|[assignmentFilterValidationResult](../resources/intune-policyset-assignmentfiltervalidationresult.md)|Not yet documented|
+|[enable action](../api/intune-policyset-deviceandappmanagementassignmentfilter-enable.md)|None|Not yet documented|
+|[getState function](../api/intune-policyset-deviceandappmanagementassignmentfilter-getstate.md)|[assignmentFilterState](../resources/intune-policyset-assignmentfilterstate.md)|Not yet documented|
+|[getPlatformSupportedProperties function](../api/intune-policyset-deviceandappmanagementassignmentfilter-getplatformsupportedproperties.md)|[assignmentFilterSupportedProperty](../resources/intune-policyset-assignmentfiltersupportedproperty.md) collection|Not yet documented|
+|[getSupportedProperties function](../api/intune-policyset-deviceandappmanagementassignmentfilter-getsupportedproperties.md)|[assignmentFilterSupportedProperty](../resources/intune-policyset-assignmentfiltersupportedproperty.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -35,7 +39,7 @@ A class containing the properties used for Assignment Filter.
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the Assignment Filter.|
 |displayName|String|DisplayName of the Assignment Filter.|
 |description|String|Description of the Assignment Filter.|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |rule|String|Rule definition of the Assignment Filter.|
 |roleScopeTags|String collection|RoleScopeTags of the Assignment Filter.|
 
@@ -65,7 +69,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

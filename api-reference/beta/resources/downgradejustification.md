@@ -1,9 +1,9 @@
 ---
 title: "downgradeJustification resource type"
 description: "Represents user input on why downgrade was performed."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 

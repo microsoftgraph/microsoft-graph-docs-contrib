@@ -2,7 +2,7 @@
 title: "workbookPivotTable: refresh"
 description: "Refreshes the PivotTable."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -27,7 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ```
 ## Request headers
 | Name       | Description|

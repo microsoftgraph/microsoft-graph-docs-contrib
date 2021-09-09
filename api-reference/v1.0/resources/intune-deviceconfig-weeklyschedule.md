@@ -2,7 +2,7 @@
 title: "weeklySchedule enum type"
 description: "Possible values for a weekly schedule."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -27,11 +27,6 @@ Possible values for a weekly schedule.
 |thursday|6|Thursday.|
 |friday|7|Friday.|
 |saturday|8|Saturday.|
-
-
-
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: delta"
 description: "Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection. See Using Delta Query for details."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 
 
 ### Response
->Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>Note: The response object shown here might be shortened for readability.
 <!-- { 
   "blockType": "response",
   "truncated": true,

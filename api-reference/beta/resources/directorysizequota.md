@@ -1,10 +1,10 @@
 ---
 title: "directorySizeQuota resource type"
 description: "Represents a company's used and total directory quota."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "davidmu1"
+author: "Jumaodhiss"
 ---
 
 # directorySizeQuota resource type

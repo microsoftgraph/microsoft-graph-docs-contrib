@@ -2,7 +2,7 @@
 title: "accessReviewInstanceDecisionItemServicePrincipalTarget resource type"
 description: "Represents the target of a review as a service principal target."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -10,6 +10,10 @@ doc_type: resourcePageType
 # accessReviewInstanceDecisionItemServicePrincipalTarget resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 Represents a service principal under review in an [accessReviewInstance](accessreviewinstance.md).
 

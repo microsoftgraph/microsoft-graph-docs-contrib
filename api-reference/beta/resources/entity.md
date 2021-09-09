@@ -1,10 +1,10 @@
 ---
 title: "entity resource type"
-description: ""
-localization_priority: Normal
+description: "Represents an entity."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "MSGraphDocsVteam"
+ms.prod: "applications"
+author: "keylimesoda"
 ---
 
 # entity resource type

@@ -1,7 +1,7 @@
 ---
 title: "Login component in the Microsoft Graph Toolkit"
 description: "A Login component is a button and flyout control to facilitate Microsoft identity platform authentication."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
@@ -70,13 +70,15 @@ To learn more, see [styling components](../customize-components/style.md).
 
 The following events are fired from the control.
 
-| Event | Description |
-| --- | --- |
-| `loginInitiated` | The user clicked the sign in button to start the login process - cancelable.|
-| `loginCompleted` | the login process was successful and the user is now signed in. |
-| `loginFailed` | The user canceled the login process or was unable to sign in.|
-| `logoutInitiated` | The user started to logout - cancelable. |
-| `logoutCompleted` | The user signed out. |
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`loginInitiated` | The user clicked the sign in button to start the login process | None | Yes | No | Yes
+`loginCompleted` | The login process was successful and the user is now signed in | None | No | No | Yes
+`loginFailed` | The user canceled the login process or was unable to sign in | None | No | No | Yes
+`logoutInitiated` | The user started to logout | None | Yes | No | Yes
+`logoutCompleted` | The user signed out | None | No | No | Yes
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
@@ -91,11 +93,21 @@ The `mgt-login` component supports several [templates](../customize-components/t
 
 ## Microsoft Graph permissions
 
-This component uses the [Person component](./person.md) to display the user and inherits all permissions. 
+This component uses the following Microsoft Graph APIs and permissions:
+
+| Configuration | Permission | API
+| - | - | - |
+| default | User.Read | [/users/me/](/graph/api/user-get) |
+
+When using the default `signed-in-button-content` and `flyout-person-details` templates, this component uses the [Person component](./person.md) to display the user and inherits all permissions.
 
 ## Authentication
 
 The login control uses the global authentication provider described in the [authentication documentation](../providers/providers.md). 
+
+## Cache
+
+This component uses the [Person component](./person.md) to display the user and inherits all cache configuration from it.
 
 ## Extend for more control
 

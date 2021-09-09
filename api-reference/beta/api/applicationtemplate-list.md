@@ -1,7 +1,7 @@
 ---
 title: "List applicationTemplates"
 description: "Retrieve a list of applicationtemplate objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "luleonpla"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -96,8 +96,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

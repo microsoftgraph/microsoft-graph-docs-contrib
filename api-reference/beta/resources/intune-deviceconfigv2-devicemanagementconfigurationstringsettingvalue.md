@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationStringSettingValue resource type"
 description: "Simple setting value"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -23,6 +23,7 @@ Inherits from [deviceManagementConfigurationSimpleSettingValue](../resources/int
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|Setting value template reference Inherited from [deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
 |value|String|Value of the string setting.|
 
 ## Relationships
@@ -38,10 +39,14 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+  "settingValueTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+    "settingValueTemplateId": "String",
+    "useTemplateDefault": true
+  },
   "value": "String"
 }
 ```
-
 
 
 

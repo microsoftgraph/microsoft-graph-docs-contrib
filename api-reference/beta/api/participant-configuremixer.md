@@ -2,7 +2,7 @@
 title: "participant: configureMixer"
 description: "Configure how audio is mixed for different participants in a multiparty conversation."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -105,7 +105,7 @@ Content-Length: 501
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

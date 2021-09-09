@@ -1,8 +1,8 @@
 ---
 title: "Create user"
 description: "Create a new user object."
-author: "dougeby"
-localization_priority: Normal
+author: "rolyon"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -100,7 +100,6 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
-
 
 
 

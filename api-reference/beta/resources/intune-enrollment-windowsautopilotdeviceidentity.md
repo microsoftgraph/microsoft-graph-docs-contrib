@@ -2,7 +2,7 @@
 title: "windowsAutopilotDeviceIdentity resource type"
 description: "The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -37,7 +37,6 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profile set time of the Windows autopilot device.|
-|orderIdentifier|String|Order Identifier of the Windows autopilot device - Deprecated|
 |groupTag|String|Group Tag of the Windows autopilot device.|
 |purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
@@ -51,7 +50,8 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |resourceName|String|Resource Name.|
 |skuNumber|String|SKU Number|
 |systemFamily|String|System Family|
-|azureActiveDirectoryDeviceId|String|AAD Device ID|
+|azureActiveDirectoryDeviceId|String|AAD Device ID - to be deprecated|
+|azureAdDeviceId|String|AAD Device ID|
 |managedDeviceId|String|Managed Device ID|
 |displayName|String|Display Name|
 
@@ -76,7 +76,6 @@ Here is a JSON representation of the resource.
   "deploymentProfileAssignmentStatus": "String",
   "deploymentProfileAssignmentDetailedStatus": "String",
   "deploymentProfileAssignedDateTime": "String (timestamp)",
-  "orderIdentifier": "String",
   "groupTag": "String",
   "purchaseOrderIdentifier": "String",
   "serialNumber": "String",
@@ -91,11 +90,11 @@ Here is a JSON representation of the resource.
   "skuNumber": "String",
   "systemFamily": "String",
   "azureActiveDirectoryDeviceId": "String",
+  "azureAdDeviceId": "String",
   "managedDeviceId": "String",
   "displayName": "String"
 }
 ```
-
 
 
 

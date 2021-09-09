@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: Create a SharePoint List
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "Create a new list in a site."
 doc_type: apiPageType
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Sites.Manage.All                            |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.ReadWrite.All                         |
+| Application                            | Sites.Manage.All                            |
 
 ## HTTP request
 
@@ -94,7 +94,7 @@ If successful, this method returns a [list][] in the response body for the creat
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

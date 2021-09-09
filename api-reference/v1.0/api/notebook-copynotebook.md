@@ -1,7 +1,7 @@
 ---
 title: "notebook: copyNotebook"
 description: "Copies a notebook to the Notebooks folder in the destination Documents library. The folder is created if it doesn't exist."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
@@ -90,9 +90,7 @@ Content-length: 108
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

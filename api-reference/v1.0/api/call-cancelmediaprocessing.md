@@ -2,7 +2,7 @@
 title: "call: cancelMediaProcessing"
 description: "Cancels media processing for any in-progress playPrompt or recordResponse operations."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -97,7 +97,7 @@ Content-Length: 62
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

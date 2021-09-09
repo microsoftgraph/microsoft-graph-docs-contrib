@@ -1,7 +1,7 @@
 ---
 title: "Get calendarPermission"
 description: "Get the properties and relationships of calendarpermission object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sochowdh"
 ms.prod: "outlook"
 doc_type: "apiPageType"
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

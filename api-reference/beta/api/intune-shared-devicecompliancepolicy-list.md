@@ -1,8 +1,8 @@
 ---
 title: "List deviceCompliancePolicies"
 description: "List properties and relationships of the deviceCompliancePolicy objects."
-author: "dougeby"
-localization_priority: Normal
+author: "rolyon"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -83,7 +83,6 @@ Content-Length: 467
   ]
 }
 ```
-
 
 
 

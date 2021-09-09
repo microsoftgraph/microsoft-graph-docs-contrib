@@ -2,7 +2,7 @@
 title: "windowsAppX resource type"
 description: "Contains properties and inherited properties for Windows AppX Line Of Business apps."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -131,12 +131,13 @@ Here is a JSON representation of the resource.
     "v10_1809": true,
     "v10_1903": true,
     "v10_1909": true,
-    "v10_2004": true
+    "v10_2004": true,
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "identityVersion": "String"
 }
 ```
-
 
 
 

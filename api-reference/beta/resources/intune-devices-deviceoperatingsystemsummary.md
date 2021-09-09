@@ -2,7 +2,7 @@
 title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -34,6 +34,8 @@ Device operating system summary.
 |configMgrDeviceCount|Int32|Number of ConfigMgr managed devices.|
 |aospUserlessCount|Int32|Number of AOSP userless Android devices. Valid values 0 to 2147483647|
 |aospUserAssociatedCount|Int32|Number of AOSP user-associated Android devices. Valid values 0 to 2147483647|
+|linuxCount|Int32|Number of Linux OS devices. Valid values 0 to 2147483647|
+|chromeOSCount|Int32|Number of Chrome OS devices. Valid values 0 to 2147483647|
 
 ## Relationships
 None
@@ -61,10 +63,11 @@ Here is a JSON representation of the resource.
   "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024,
   "aospUserlessCount": 1024,
-  "aospUserAssociatedCount": 1024
+  "aospUserAssociatedCount": 1024,
+  "linuxCount": 1024,
+  "chromeOSCount": 1024
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationSettingInstance resource type"
 description: "Setting instance within policy"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -21,6 +21,7 @@ Setting instance within policy
 |Property|Type|Description|
 |:---|:---|:---|
 |settingDefinitionId|String|Setting Definition Id|
+|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference|
 
 ## Relationships
 None
@@ -35,10 +36,13 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingInstance",
-  "settingDefinitionId": "String"
+  "settingDefinitionId": "String",
+  "settingInstanceTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+    "settingInstanceTemplateId": "String"
+  }
 }
 ```
-
 
 
 

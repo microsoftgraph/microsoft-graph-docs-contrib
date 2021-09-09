@@ -3,7 +3,7 @@ author: daspek
 ms.date: 09/10/2017
 title: File Activities
 description: "List the recent activities that took place on an item or under a hierarchy."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ""
 ---
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

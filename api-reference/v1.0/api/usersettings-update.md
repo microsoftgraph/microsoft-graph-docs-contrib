@@ -1,8 +1,8 @@
 ---
 title: "Update settings"
 description: "Update the properties of the settings object. "
-author: "krbain"
-localization_priority: Normal
+author: "jpettere"
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -79,7 +79,7 @@ Content-length: 37
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

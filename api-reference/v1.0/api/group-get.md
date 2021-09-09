@@ -1,8 +1,8 @@
 ---
 title: "Get group"
 description: "Get the properties and relationships of a group object."
-author: "yyuank"
-localization_priority: Priority
+author: "Jordanndahl"
+ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -112,6 +112,7 @@ Content-type: application/json
     "groupTypes": [
         "Unified"
     ],
+    "isAssignableToRole": null,
     "mail": "library2@contoso.com",
     "mailEnabled": true,
     "mailNickname": "library",

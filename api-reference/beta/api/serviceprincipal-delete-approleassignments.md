@@ -1,13 +1,13 @@
 ---
-title: "Delete an appRoleAssignment from a service principal"
+title: "Delete appRoleAssignment"
 description: "Delete an appRoleAssignment from a service principal."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"
 ---
 
-# Delete an appRoleAssignment granted to a service principal
+# Delete appRoleAssignment
 
 Namespace: microsoft.graph
 
@@ -32,11 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
+DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssignment-id}
 ```
 
 > [!NOTE]
-> As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
+> As a best practice, we recommend you delete app role assignments using the [Delete appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md) method which deletes through the **appRoleAssignedTo** relationship of the _resource_ service principal, instead of this method.
 
 ## Request headers
 
@@ -66,7 +66,7 @@ Here is an example of the request to delete an app role assignment.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments/{id}
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssignment-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignment-csharp-snippets.md)]
@@ -113,4 +113,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-

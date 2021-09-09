@@ -2,7 +2,7 @@
 title: "Create userExperienceAnalyticsResourcePerformance"
 description: "Create a new userExperienceAnalyticsResourcePerformance object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -20,7 +20,7 @@ Create a new [userExperienceAnalyticsResourcePerformance](../resources/intune-de
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -61,6 +61,7 @@ The following table shows the properties that are required when you create the u
 |ramSpikeTimeScore|Int32|The user experience analytics device RAM spike time score. Valid values 0 to 100|
 |ramSpikeTimePercentageThreshold|Double|Threshold of ramSpikeTimeScore. Valid values 0 to 100|
 |deviceResourcePerformanceScore|Int32|Resource performance score of a specific device. Valid values 0 to 100|
+|averageSpikeTimeScore|Int32|AverageSpikeTimeScore of a device or a model type. Valid values 0 to 100|
 
 
 
@@ -74,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsResourcePerformance
 Content-type: application/json
-Content-length: 553
+Content-length: 584
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsResourcePerformance",
@@ -89,7 +90,8 @@ Content-length: 553
   "cpuSpikeTimePercentageThreshold": 10.333333333333334,
   "ramSpikeTimeScore": 1,
   "ramSpikeTimePercentageThreshold": 10.333333333333334,
-  "deviceResourcePerformanceScore": 14
+  "deviceResourcePerformanceScore": 14,
+  "averageSpikeTimeScore": 5
 }
 ```
 
@@ -98,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 602
+Content-Length: 633
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsResourcePerformance",
@@ -114,10 +116,10 @@ Content-Length: 602
   "cpuSpikeTimePercentageThreshold": 10.333333333333334,
   "ramSpikeTimeScore": 1,
   "ramSpikeTimePercentageThreshold": 10.333333333333334,
-  "deviceResourcePerformanceScore": 14
+  "deviceResourcePerformanceScore": 14,
+  "averageSpikeTimeScore": 5
 }
 ```
-
 
 
 

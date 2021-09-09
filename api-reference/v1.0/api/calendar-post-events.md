@@ -2,7 +2,7 @@
 title: "Create event"
 description: "Use this API to create a new event in the default or the specified calendar."
 author: "harini84"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -33,9 +33,6 @@ A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../
 ```http
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
-
-POST /me/calendarGroup/calendars/{id}/events
-POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http

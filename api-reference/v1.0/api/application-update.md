@@ -2,7 +2,7 @@
 title: "Update application"
 description: "Update the properties of an application object."
 author: "sureshja"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
@@ -104,9 +104,7 @@ Content-length: 72
 ##### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

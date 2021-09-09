@@ -1,9 +1,9 @@
 ---
 title: "List directorySettingTemplates"
 description: "This operation retrieves the list of available directorySettingTemplates objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /directorySettingTemplates
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,23 +86,44 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 343
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directorySettingTemplates",
   "value": [
     {
-      "id": "id-value",
-      "displayName": "displayName-value",
-      "description": "description-value",
+      "id": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+      "deletedDateTime": null,
+      "displayName": "Group.Unified.Guest",
+      "description": "Settings for a specific Unified Group",
       "values": [
         {
-          "name": "name-value",
-          "type": "type-value",
-          "defaultValue": "defaultValue-value",
-          "description": "description-value"
+          "name": "AllowToAddGuests",
+          "type": "System.Boolean",
+          "defaultValue": "true",
+          "description": "Flag indicating if guests are allowed in a specific Unified Group."
         }
       ]
-    }
+    },
+    {
+      "id": "80661d51-be2f-4d46-9713-98a2fcaec5bc",
+      "deletedDateTime": null,
+      "displayName": "Prohibited Names Settings",
+      "description": "Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines settings that can be used for managing tenant-wide prohibited names settings.",
+      "values": [
+        {
+          "name": "CustomBlockedSubStringsList",
+          "type": "System.String",
+          "defaultValue": "",
+          "description": "A comma delimited list of substring reserved words to block for application display names."
+        },
+        {
+          "name": "CustomBlockedWholeWordsList",
+          "type": "System.String",
+          "defaultValue": "",
+          "description": "A comma delimited list of reserved words to block for application display names."
+        }
+      ]
+    }  
   ]
 }
 ```

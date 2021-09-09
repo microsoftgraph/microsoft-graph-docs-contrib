@@ -1,10 +1,10 @@
 ---
 title: "workingHours resource type"
 description: "Represents the days of the week and hours in a specific time zone that the user works."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "angelgolfer-ms"
+author: "abheek-das"
 ---
 
 # workingHours resource type

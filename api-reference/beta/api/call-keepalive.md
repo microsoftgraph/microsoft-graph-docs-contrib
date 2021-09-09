@@ -2,7 +2,7 @@
 title: "call: keepAlive"
 description: "Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -10,6 +10,8 @@ doc_type: apiPageType
 # call: keepAlive
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active. A call that does not receive this request within 45 minutes is considered inactive and will subsequently end.
 
@@ -84,9 +86,7 @@ POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-95
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "name": "keep-alive",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "name": "keep-alive"
 } -->
 ```http
 HTTP/1.1 200 OK

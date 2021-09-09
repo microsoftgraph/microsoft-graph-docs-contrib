@@ -2,7 +2,7 @@
 title: "Refresh Session"
 description: "Use this API to refresh an existing workbook session. "
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -25,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/refreshSession
+POST /me/drive/items/{id}/workbook/refreshSession
+POST /me/drive/root:/{item-path}:/workbook/refreshSession
 workbook-session-id: {session-id}
 ```
 ## Request headers
@@ -96,8 +97,6 @@ HTTP/1.1 204 No Content
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: refresh_excel_session//api-reference/v1.0/api/workbook-refreshsession.md:
-      Request includes a non-standard header: workbook-session-id"
   ]
 }-->
 

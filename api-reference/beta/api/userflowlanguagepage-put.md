@@ -2,8 +2,8 @@
 title: "Update userFlowLanguagePage"
 description: "Update the values in an userFlowLanguagePage object."
 author: "jkdouglas"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

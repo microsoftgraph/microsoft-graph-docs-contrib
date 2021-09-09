@@ -2,8 +2,8 @@
 title: "Get authenticationListener"
 description: "Read the properties and relationships of an authenticationListener object."
 author: "jkdouglas"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

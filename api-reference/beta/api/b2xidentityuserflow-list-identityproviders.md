@@ -1,17 +1,18 @@
 ---
-title: "List all identityProviders in a b2xIdentityUserFlow"
-description: "List all identityProviders in a b2xIdentityUserFlow."
-localization_priority: Normal
+title: "List all identityProviders in a b2xIdentityUserFlow (deprecated)"
+description: "List all identityProviders in a b2xIdentityUserFlow (deprecated)."
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+author: "namkedia"
+ms.prod: "identity-and-sign-in"
 ---
 
-# List all identityProviders in a b2xIdentityUserFlow
+# List all identityProviders in a b2xIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Get the identity providers in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
 
@@ -35,7 +36,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /b2xUserFlows/{id}/identityProviders
+GET /identity/b2xUserFlows/{id}/identityProviders
 ```
 
 ## Request headers
@@ -121,5 +122,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

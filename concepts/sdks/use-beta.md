@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph SDKs with the beta API"
 description: "Describes how use the Microsoft Graph SDKs with the beta version of the API."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
 ---
 
@@ -52,7 +52,7 @@ The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgrap
 In order to call the beta API, you must install the [Microsoft Graph Beta Java SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Usage is the same as the non-beta SDK.
 
 ```Java
-IGraphServiceClient graphClient = GraphServiceClient
+GraphServiceClient graphClient = GraphServiceClient
     .builder()
     .authenticationProvider(authProvider)
     .buildClient();

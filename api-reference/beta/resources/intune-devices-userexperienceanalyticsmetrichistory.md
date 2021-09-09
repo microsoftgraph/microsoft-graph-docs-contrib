@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsMetricHistory resource type"
 description: "The user experience analytics metric history."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -30,6 +30,7 @@ The user experience analytics metric history.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics metric history.|
+|deviceId|String|The user experience analytics device id.|
 |metricDateTime|DateTimeOffset|The user experience analytics metric date time.|
 |metricType|String|The user experience analytics metric type.|
 
@@ -50,11 +51,11 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
   "id": "String (identifier)",
+  "deviceId": "String",
   "metricDateTime": "String (timestamp)",
   "metricType": "String"
 }
 ```
-
 
 
 

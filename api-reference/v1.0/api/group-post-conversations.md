@@ -1,8 +1,8 @@
 ---
 title: "Create conversation"
 description: "Create a new conversation by including a thread and a post. "
-author: "yyuank"
-localization_priority: Normal
+author: "Jordanndahl"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -45,11 +45,13 @@ The response includes the IDs for the new conversation and thread, which you can
 [list posts](conversationthread-list-posts.md) operation to get the new post as well.
 
 ## Example
-#### Request
+### Request
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
   "name": "create_conversation_from_group"
 }-->
@@ -58,33 +60,51 @@ POST https://graph.microsoft.com/v1.0/groups/29981b6a-0e57-42dc-94c9-cd24f530619
 Content-type: application/json
 
 {
-  "topic":"New locations for this quarter",
-  "threads":[
-    {
-      "posts":[
+    "topic": "Take your wellness days and rest",
+    "threads": [
         {
-          "body":{
-            "contentType":"html",
-            "content":"What do we know so far?"
-          },
-          "newParticipants":[
-            {
-              "emailAddress":{
-                "name":"Adele Vance",
-                "address":"AdeleV@contoso.onmicrosoft.com"
-              }
-            }
-          ]
+            "posts": [
+                {
+                    "body": {
+                        "contentType": "html",
+                        "content": "Contoso cares about you: Rest and Recharge"
+                    },
+                    "newParticipants": [
+                        {
+                            "emailAddress": {
+                                "name": "Adele Vance",
+                                "address": "AdeleV@contoso.onmicrosoft.com"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversation-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -96,14 +116,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
-  "id":"AAQkADDVKtMlRp4Txc6k=",
-  "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
-  "threads":[
-    {
-      "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations/$entity",
+    "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQADamkjVbzvRKnUq1oBRdwhk=",
+    "threads@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQADamkjVbzvRKnUq1oBRdwhk%3D')/threads",
+    "threads": [
+        {
+            "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAANqaSNVvO9EqdSrWgFF3CGRAANqaSNVvO9EqdSrWgFF3CGQ=="
+        }
+    ]
 }
 ```
 

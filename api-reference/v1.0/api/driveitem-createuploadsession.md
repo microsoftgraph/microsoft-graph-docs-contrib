@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Resumable file upload
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
 doc_type: apiPageType
@@ -246,7 +246,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
 
-```
+```http
 POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 Content-Length: 0
 ```
@@ -324,7 +324,7 @@ Query the status of the upload by sending a GET request to the `uploadUrl`.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
-```
+```http
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
 ```
 
@@ -418,8 +418,6 @@ how errors are returned.
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/driveitem-createuploadsession.md:
-      Found potential enums in resource example that weren't defined in a table:(rename,fail,replace) are in resource, but () are in table"
   ],
   "section": "documentation"
 } -->

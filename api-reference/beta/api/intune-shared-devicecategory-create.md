@@ -1,8 +1,8 @@
 ---
 title: "Create deviceCategory"
 description: "Create a new deviceCategory object."
-author: "dougeby"
-localization_priority: Normal
+author: "rolyon"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -96,7 +96,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

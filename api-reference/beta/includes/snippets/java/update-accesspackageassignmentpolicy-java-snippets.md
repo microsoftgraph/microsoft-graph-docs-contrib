@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessPackageAssignmentPolicy accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy();
 accessPackageAssignmentPolicy.id = "b2eba9a1-b357-42ee-83a8-336522ed6cbf";
@@ -13,7 +13,7 @@ accessPackageAssignmentPolicy.displayName = "All Users";
 accessPackageAssignmentPolicy.description = "All users can request for access to the directory.";
 accessPackageAssignmentPolicy.canExtend = false;
 accessPackageAssignmentPolicy.durationInDays = 365;
-accessPackageAssignmentPolicy.expirationDateTime = CalendarSerializer.deserialize("null");
+accessPackageAssignmentPolicy.expirationDateTime = OffsetDateTimeSerializer.deserialize("null");
 RequestorSettings requestorSettings = new RequestorSettings();
 requestorSettings.scopeType = "AllExistingConnectedOrganizationSubjects";
 requestorSettings.acceptRequests = true;
@@ -29,7 +29,7 @@ LinkedList<ApprovalStage> approvalStagesList = new LinkedList<ApprovalStage>();
 ApprovalStage approvalStages = new ApprovalStage();
 approvalStages.approvalStageTimeOutInDays = 14;
 approvalStages.isApproverJustificationRequired = true;
-approvalStages.isEscalationEnabled = true;
+approvalStages.isEscalationEnabled = false;
 approvalStages.escalationTimeInMinutes = 11520;
 LinkedList<UserSet> primaryApproversList = new LinkedList<UserSet>();
 GroupMembers primaryApprovers = new GroupMembers();
@@ -44,9 +44,6 @@ approvalStages.primaryApprovers = primaryApproversList;
 approvalStagesList.add(approvalStages);
 requestApprovalSettings.approvalStages = approvalStagesList;
 accessPackageAssignmentPolicy.requestApprovalSettings = requestApprovalSettings;
-AssignmentReviewSettings accessReviewSettings = new AssignmentReviewSettings();
-accessReviewSettings.isEnabled = false;
-accessPackageAssignmentPolicy.accessReviewSettings = accessReviewSettings;
 LinkedList<AccessPackageQuestion> questionsList = new LinkedList<AccessPackageQuestion>();
 AccessPackageMultipleChoiceQuestion questions = new AccessPackageMultipleChoiceQuestion();
 questions.isRequired = false;

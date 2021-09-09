@@ -1,7 +1,7 @@
 ---
 title: "Delete teamsApp"
 description: "Remove a Teams app from an organization's app catalog (the tenant app catalog). "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -101,9 +101,7 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http

@@ -2,7 +2,7 @@
 title: "Update macOSMdatpApp"
 description: "Update the properties of a macOSMdatpApp object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -20,7 +20,7 @@ Update the properties of a [macOSMdatpApp](../resources/intune-apps-macosmdatpap
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -150,7 +150,6 @@ Content-Length: 941
   "supersededAppCount": 2
 }
 ```
-
 
 
 

@@ -2,8 +2,8 @@
 title: "Get continuousAccessEvaluationPolicy"
 description: "Read the properties of a continuousAccessEvaluationPolicy object."
 author: "jerrysai"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

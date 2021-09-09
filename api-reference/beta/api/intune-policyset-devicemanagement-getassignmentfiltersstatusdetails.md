@@ -2,7 +2,7 @@
 title: "getAssignmentFiltersStatusDetails action"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -20,11 +20,11 @@ Not yet documented
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -87,7 +87,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 947
+Content-Length: 1216
 
 {
   "value": {
@@ -111,13 +111,19 @@ Content-Length: 947
         "assignmentFilterPlatform": "androidForWork",
         "evaluationResult": "match",
         "evaluationDateTime": "2016-12-31T23:58:01.2047675-08:00",
-        "assignmentFilterType": "include"
+        "assignmentFilterType": "include",
+        "assignmentFilterTypeAndEvaluationResults": [
+          {
+            "@odata.type": "microsoft.graph.assignmentFilterTypeAndEvaluationResult",
+            "assignmentFilterType": "include",
+            "evaluationResult": "match"
+          }
+        ]
       }
     ]
   }
 }
 ```
-
 
 
 

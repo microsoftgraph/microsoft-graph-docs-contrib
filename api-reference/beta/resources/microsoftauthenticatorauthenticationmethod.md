@@ -2,14 +2,16 @@
 title: "microsoftAuthenticatorAuthenticationMethod resource type"
 description: "A representation of the Microsoft Authenticator app registered to a user. Microsoft Authenticator is an authentication method."
 author: "mmcla"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
 # microsoftAuthenticatorAuthenticationMethod resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A representation of the Microsoft Authenticator app registered to a user. Microsoft Authenticator is an authentication method.
 

@@ -1,7 +1,7 @@
 ---
 title: "educationClass resource type"
 description: "Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: resourcePageType
@@ -106,8 +106,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: Resource educationClass has documented navigation properties, but we thought it was a complex type!",
-    "Resource educationClass has documented navigation properties, but we thought it was a complex type!"
   ]
 
 }-->

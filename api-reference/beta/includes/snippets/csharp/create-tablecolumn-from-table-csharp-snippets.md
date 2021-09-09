@@ -11,10 +11,10 @@ var workbookTableColumn = new WorkbookTableColumn
 	Id = "99",
 	Name = "name-value",
 	Index = 99,
-	Values = "values-value"
+	Values = JsonDocument.Parse(@"""values-value""")
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns
 	.Request()
 	.AddAsync(workbookTableColumn);
 

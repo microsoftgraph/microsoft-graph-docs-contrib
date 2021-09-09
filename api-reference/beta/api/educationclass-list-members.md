@@ -1,7 +1,7 @@
 ---
 title: "List members"
 description: "Retrieves the teachers and students for a class. Note that if the delegated token is used, members can only be seen by other members of the class."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/education/classes/11016/members
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -1,8 +1,8 @@
 ---
 title: "outOfOfficeSettings resource type"
 description: "Represents phone access information for an online meeting."
-author: "elvinyang-msft"
-localization_priority: Normal
+author: "mkhribech"
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

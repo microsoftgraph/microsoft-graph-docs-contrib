@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph error responses and resource types"
 description: "This topic describes some of the errors that can be returned in Microsoft Graph responses."
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Microsoft Graph error responses and resource types
@@ -89,7 +89,7 @@ properties:
 }
 ```
 
-| Property name  | Value                  | Description\                                                                                               |
+| Property name  | Value                  | Description                                                                                                |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
 | **code**       | string                 | An error code string for the error that occurred                                                            |
 | **message**    | string                 | A developer ready message about the error that occurred. This should not be displayed to the user directly. |

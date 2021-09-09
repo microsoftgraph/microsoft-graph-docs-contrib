@@ -2,7 +2,7 @@
 author: learafa
 description: "List the sites that have been followed by the signed in user."
 title: List followed sites
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "SharePoint"
 doc_type: apiPageType
 ---
@@ -90,7 +90,7 @@ GET /me/followedSites
 ### Response
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

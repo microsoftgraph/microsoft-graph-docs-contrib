@@ -2,7 +2,7 @@
 title: "Update userExperienceAnalyticsDevicePerformance"
 description: "Update the properties of a userExperienceAnalyticsDevicePerformance object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -20,7 +20,7 @@ Update the properties of a [userExperienceAnalyticsDevicePerformance](../resourc
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -67,6 +67,8 @@ The following table shows the properties that are required when you create the [
 |restartCount|Int32|Number of Restarts in the last 14 days. Valid values 0 to 9999999|
 |averageBlueScreens|Double|Average (mean) number of Blue Screens per device in the last 14 days. Valid values 0 to 9999999|
 |averageRestarts|Double|Average (mean) number of Restarts per device in the last 14 days. Valid values 0 to 9999999|
+|startupPerformanceScore|Double|The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|modelStartupPerformanceScore|Double|The user experience analytics model level startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 
 
 
@@ -80,7 +82,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
 Content-type: application/json
-Content-length: 635
+Content-length: 739
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -101,7 +103,9 @@ Content-length: 635
   "blueScreenCount": 15,
   "restartCount": 12,
   "averageBlueScreens": 6.0,
-  "averageRestarts": 5.0
+  "averageRestarts": 5.0,
+  "startupPerformanceScore": 7.666666666666667,
+  "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
 
@@ -110,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 684
+Content-Length: 788
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -132,10 +136,11 @@ Content-Length: 684
   "blueScreenCount": 15,
   "restartCount": 12,
   "averageBlueScreens": 6.0,
-  "averageRestarts": 5.0
+  "averageRestarts": 5.0,
+  "startupPerformanceScore": 7.666666666666667,
+  "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
-
 
 
 

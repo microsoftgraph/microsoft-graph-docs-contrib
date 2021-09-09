@@ -1,10 +1,10 @@
 ---
 title: "Cancel privilegedRoleAssignmentRequest"
 description: "Cancel a privilegedRoleAssignmentRequest."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # Cancel privilegedRoleAssignmentRequest
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Cancel a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedRoleAssignmentRequests({requestid})/cancel
+POST /privilegedRoleAssignmentRequests/{requestid}/cancel
 ```
 
 ## Request headers

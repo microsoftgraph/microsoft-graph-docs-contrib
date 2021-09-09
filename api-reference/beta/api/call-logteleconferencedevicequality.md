@@ -1,7 +1,7 @@
 ---
 title: "call: logTeleconferenceDeviceQuality"
 description: "Log video teleconferencing device quality data."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dongkyun"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
@@ -182,9 +182,7 @@ Content-type: application/json
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

@@ -1,7 +1,7 @@
 ---
 title: "List directoryAudits"
 description: "Describes the list method of the directoryAudit resource (entity) from the Microsoft Graph API."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "SarahBar"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -21,7 +21,10 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | AuditLog.Read.All and Directory.Read.All    |
 | Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | AuditLog.Read.All                           |
+| Application                            | AuditLog.Read.All and Directory.Read.All    |
+
+> [!IMPORTANT]
+> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
 
 ## HTTP request
 
@@ -81,26 +84,26 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_directoryaudit"
+  "name": "get_directoryaudit_2"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -110,12 +113,14 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 
 Here is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryaudit",
+  "@odata.type": "microsoft.graph.directoryAudit",
   "isCollection": true
 } -->
 
@@ -123,11 +128,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
-```
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-```json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",
   "value": [{

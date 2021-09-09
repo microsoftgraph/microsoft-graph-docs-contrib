@@ -1,7 +1,7 @@
 ---
 title: "planner resource type"
 description: "The **planner** resource is the entry point for the Planner object model. It returns a singleton **planner** resource.  It doesn't contain any usable properties."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/v1.0/planner
   "truncated": true,
   "@odata.type": "microsoft.graph.planner"
 }-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

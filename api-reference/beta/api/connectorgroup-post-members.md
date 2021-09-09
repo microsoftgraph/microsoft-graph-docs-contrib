@@ -1,7 +1,7 @@
 ---
 title: "Add connector to connectorGroup"
 description: "Use this API to add a connector to a connectorGroup."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -82,9 +82,7 @@ Content-length: 104
 The following is an example of the response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.connector"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

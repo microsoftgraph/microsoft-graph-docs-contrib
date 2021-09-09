@@ -2,7 +2,7 @@
 title: "printDocument: uploadData"
 description: Upload a single binary segment of the printDocument.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -90,9 +90,7 @@ Content-Length: 72797
 
 One or more segments missing:
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printDocument"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

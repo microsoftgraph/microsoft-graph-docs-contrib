@@ -1,9 +1,9 @@
 ---
 title: "Delete activityBasedTimeoutPolicy"
 description: "Delete activityBasedTimeoutPolicy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 

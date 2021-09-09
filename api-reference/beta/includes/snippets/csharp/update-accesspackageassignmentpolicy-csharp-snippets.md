@@ -35,7 +35,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 			{
 				ApprovalStageTimeOutInDays = 14,
 				IsApproverJustificationRequired = true,
-				IsEscalationEnabled = true,
+				IsEscalationEnabled = false,
 				EscalationTimeInMinutes = 11520,
 				PrimaryApprovers = new List<UserSet>()
 				{
@@ -52,10 +52,6 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 				}
 			}
 		}
-	},
-	AccessReviewSettings = new AssignmentReviewSettings
-	{
-		IsEnabled = false
 	},
 	Questions = new List<AccessPackageQuestion>()
 	{
@@ -129,7 +125,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 	}
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies["b2eba9a1-b357-42ee-83a8-336522ed6cbf"]
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies["{accessPackageAssignmentPolicy-id}"]
 	.Request()
 	.PutAsync(accessPackageAssignmentPolicy);
 

@@ -2,8 +2,8 @@
 title: "auditLogRoot resource type"
 description: "Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties."
 author: "dhanyahk"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: API documentation for integration with Microsoft Graph
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: conceptualPageType
 ---
@@ -59,7 +59,6 @@ The Dynamics 365 Business Central API can open up new ways for you to engage wit
 |shipmentMethods resource type|[shipmentMethods](../resources/dynamics-shipmentmethods.md)|
 |taxGroups resource type|[taxGroups](../resources/dynamics-taxgroups.md)|
 |taxArea resource type|[taxAreas](..resources/dynamics-taxarea.md)|
-|trial balance resource type|[trialBalance](../resources/dynamics-trialbalance.md)|
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->

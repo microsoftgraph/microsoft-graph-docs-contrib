@@ -2,14 +2,14 @@
 title: "Microsoft Bookings API overview (preview)"
 description: "Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for organization and their users and customers."
 author: "arvindmicrosoft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "bookings"
 ms.custom: scenarios:getting-started
 ---
 
 # Microsoft Bookings API overview (preview)
 
-Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for small businesses and their customers. Any organization that provides service on an appointment basis, such as large scale enterprise companies, auto repair shops, hair salons, and law firms, can benefit from having their bookings managed so as to free up time for the more important task to grow their business. Microsoft Bookings is available to enterprise organziations and businesses that have a Microsoft 365 Business Premium subscription.
+Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for small businesses and their customers. Any organization that provides service on an appointment basis, such as large scale enterprise companies, auto repair shops, hair salons, and law firms, can benefit from having their bookings managed so as to free up time for the more important task to grow their business. Microsoft Bookings is available to enterprise organizations and businesses that have a Microsoft 365 Business Premium subscription.
 
 ## Why integrate with Microsoft Bookings using Microsoft Graph?
 

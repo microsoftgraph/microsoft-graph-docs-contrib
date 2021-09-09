@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Get the collection of lists for a site."
 ms.date: 09/11/2017
 title: List the SharePoint lists in a site
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

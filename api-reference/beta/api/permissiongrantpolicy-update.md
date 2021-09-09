@@ -1,9 +1,9 @@
 ---
 title: "Update permissionGrantPolicy"
 description: "Update a permissionGrantPolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: "apiPageType"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
@@ -95,10 +95,7 @@ Content-Type: application/json
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy",
-  "isCollection": false
+  "blockType": "response"
 } -->
 
 ```http

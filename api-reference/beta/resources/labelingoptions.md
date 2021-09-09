@@ -1,9 +1,9 @@
 ---
 title: "labelingOptions resource type"
 description: "Represents the labeling options that can be provided to the evaluation APIs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 

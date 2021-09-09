@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Returns the metadata for an item in a list."
 ms.date: 09/11/2017
 title: Get an entry from a SharePoint list
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

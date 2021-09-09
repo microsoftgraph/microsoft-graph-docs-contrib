@@ -1,9 +1,9 @@
 ---
 title: "connectedOrganizationMembers complex type"
 description: "The connectedOrganizationMembers type identifies a collection of users in the tenant who will be allowed as requestor, approver or reviewer."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 

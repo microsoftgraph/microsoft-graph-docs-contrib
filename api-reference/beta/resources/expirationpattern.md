@@ -1,9 +1,9 @@
 ---
 title: "expirationPattern resource type"
 description: "The expiration pattern in a request schedule can be included in an access package assignment request and is present in an access package assignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -19,8 +19,8 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|endDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|duration|Duration|The requestor's desired duration of access. If specified in a request, endDateTime should not be present.|
+|endDateTime|DateTimeOffset|Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|duration|Duration|The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, **endDateTime** should not be present and the **type** property should be set to `afterDuration`.|
 |type|expirationPatternType|The requestor's desired expiration pattern type.|
 
 ### expirationPatternType values
@@ -30,7 +30,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |notSpecified|0|No expiration schedule was specified.|
 |noExpiration|1|The requestor did not wish the access to expire.|
 |afterDateTime|2|Access will expire after a specified date and time.|
-|afterDuration|3|Access will expire after a specified duration relative to access being granted.|
+|afterDuration|3|Access will expire after a specified duration relative to access being granted. Required when the **duration** property is specified.|
 
 ## JSON representation
 

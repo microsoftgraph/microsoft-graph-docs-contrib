@@ -2,7 +2,7 @@
 title: "importedDeviceIdentityType enum type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,7 +23,6 @@ Not yet documented
 |unknown|0|Unknown value of importedDeviceIdentityType.|
 |imei|1|Device Identity is of type imei.|
 |serialNumber|2|Device Identity is of type serial number.|
-
 
 
 

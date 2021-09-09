@@ -1,7 +1,7 @@
 ---
 title: "Update place"
 description: "Update the properties of place object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "Outlook"
 doc_type: "apiPageType"
@@ -118,7 +118,7 @@ Content-length: 285
 The following is an example of the response.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -227,7 +227,7 @@ Content-type: application/json
 The following is an example of the response.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

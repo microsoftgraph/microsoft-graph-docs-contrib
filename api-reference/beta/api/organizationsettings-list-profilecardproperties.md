@@ -1,7 +1,7 @@
 ---
 title: "List profileCardProperties"
 description: "Retrieve a list of profilecardproperty objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -2,7 +2,7 @@
 title: "Update audio routing group"
 description: "Modify sources and receivers of an audioRoutingGroup."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

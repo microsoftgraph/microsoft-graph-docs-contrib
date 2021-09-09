@@ -1,7 +1,7 @@
 ---
 title: "Update schemaExtension"
 description: "Update properties in the definition of the specified schemaExtension."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: apiPageType
@@ -114,9 +114,7 @@ Content-length: 201
 ##### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.schemaExtension"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

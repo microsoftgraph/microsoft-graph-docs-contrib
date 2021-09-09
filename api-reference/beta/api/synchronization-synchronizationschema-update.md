@@ -1,7 +1,7 @@
 ---
 title: "Update synchronizationSchema"
 description: "Update the synchronization schema for a given job or template. This method fully replaces the current schema with the one provided in the request. To update the schema of a template, make the call on the application object. You must be the owner of the application."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
@@ -125,9 +125,7 @@ Content-type: application/json
 ##### Response
 The following is an example of a response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.synchronizationSchema"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

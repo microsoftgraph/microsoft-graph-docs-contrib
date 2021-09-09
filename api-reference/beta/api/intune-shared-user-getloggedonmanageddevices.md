@@ -1,8 +1,8 @@
 ---
 title: "getLoggedOnManagedDevices function"
 description: "Not yet documented"
-author: "dougeby"
-localization_priority: Normal
+author: "rolyon"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [managedDevice](../resources/intune-shared-manageddevice.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a [managedDevice](../resources/intune-devices-manageddevice.md) collection in the response body.
 
 ## Example
 
@@ -229,7 +229,6 @@ Content-Length: 7485
   ]
 }
 ```
-
 
 
 

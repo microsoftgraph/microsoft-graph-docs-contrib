@@ -1,8 +1,8 @@
 ---
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
-author: "krbain"
-localization_priority: Priority
+author: "jpettere"
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -28,11 +28,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
 
+## HTTP request
+
 For a specific user:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+>**Note:**
+> + When the **userPrincipalName** begins with a `$` character, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes. For example, `/users('$AdeleVance@contoso.com')`. For details, see the [known issues](/graph/known-issues#users) list.
+> + To query a B2B user using the **userPrincipalName**, encode the hash (#) character. That is, replace the `#` symbol with `%23`. For example, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 For the signed-in user:
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +48,7 @@ GET /me
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default.
 
 ## Request headers
 
@@ -57,7 +63,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties.
 
 This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
 
@@ -95,7 +101,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

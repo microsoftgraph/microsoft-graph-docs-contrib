@@ -1,9 +1,9 @@
 ---
 title: "Update countryNamedlocation"
 description: "Update the properties of a countryNamedLocation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -41,6 +41,8 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+
+You must specify the **@odata.type** as `#microsoft.graph.countryNamedLocation`.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -103,9 +105,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.countryNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http

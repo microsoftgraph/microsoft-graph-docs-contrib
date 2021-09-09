@@ -2,7 +2,7 @@
 title: "message: copy"
 description: "Copy a message to a folder."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Copy a message to a folder.
+Copy a message to a folder within the user's mailbox.
 
 ## Permissions
 
@@ -101,7 +101,7 @@ Content-length: 44
 
 Here is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

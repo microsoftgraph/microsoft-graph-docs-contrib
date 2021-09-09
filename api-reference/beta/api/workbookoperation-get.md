@@ -1,7 +1,7 @@
 ---
 title: "Get workbookOperation"
 description: "Retrieve the properties and relationships of a workbookOperation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "apiPageType"
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET workbook/operations/{operation-id}
+GET /me/drive/items/{id}/workbook/operations/{operation-id}
 ```
 
 ## Request headers

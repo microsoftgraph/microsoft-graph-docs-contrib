@@ -2,8 +2,8 @@
 title: "Update device"
 description: "Update the properties of a registered device."
 author: "spunukol"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | Device.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | Not supported |
+|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ In the request body, supply the values for the [device](../resources/device.md) 
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -89,12 +89,10 @@ Content-length: 31
 
 ---
 
-##### Response
+### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

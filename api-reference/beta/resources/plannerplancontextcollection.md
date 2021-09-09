@@ -1,7 +1,7 @@
 ---
 title: "plannerPlanContextCollection resource type"
 description: "The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked. This resource is an open type and is part of the plannerPlan object. The value in the property-value pair is the plannerPlanContext object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
@@ -19,7 +19,7 @@ The **plannerPlanContextCollection** resource represents the collection of exter
 
 ## Properties
 You can define the properties of this open type. The property values should be distinctive identifier that represents the external context as the property name. 
-The property values must be [plannerPlanContext](plannerplancontext.md) objects. Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`. These characters need to be encoded using URL encoding. To remove an item in the favorites list, set the value of the property to `null`.
+The property values must be [plannerPlanContext](plannerplancontext.md) objects. Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`, `#`. These characters need to be encoded using URL encoding. To remove an item in the favorites list, set the value of the property to `null`.
 
 ## JSON representation
 

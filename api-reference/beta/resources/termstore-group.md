@@ -3,8 +3,8 @@ author: mohitpcad
 title: Group resource type
 doc_type: "resourcePageType"
 description: "Represents a group used in a term store."
-localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.localizationpriority: medium
+ms.prod: "taxonomy"
 ---
 
 # Group resource type
@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 | Method                                                   | Return type       |    Description
 |:---------------------------------------------------------|:------------------|:---------------------
 | [Create group](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in a term [store].
-| [Get group](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Retrieve the data of a group in a term [store].
+| [Get group](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Retrieve the data of a group in a term [store].
 | [Delete group](../api/termstore-group-delete.md)                     | None |  Delete a group in a term [store].
 
 ## Properties
@@ -36,6 +36,7 @@ Inherits from [entity](../resources/entity.md).
 | id                   | string             | Unique identifier of group. Read-Only.
 | displayName          | string             | Name of group.
 | scope                | string              | Returns type of group. Possible values are 'global', 'system' and 'siteCollection'.
+| parentSiteId         | string             | Id of the parent site of this group.
 
 ## Relationships
 | Relationship       | Type                        | Description
@@ -60,7 +61,8 @@ The following is a JSON representation of a **group** resource.
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "scope" : "microsoft.graph.termStore.groupScope",
-  "displayName": "string" 
+  "displayName": "string",
+  "parentSiteId" : "string"
 }
 ```
 

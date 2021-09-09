@@ -4,7 +4,7 @@ description: Gets a general ledger entry object in Dynamics 365 Business Central
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a **generalLedge
 **Request**
 
 Here is an example of the request.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/generalLedgerEntries/{id}
 ```
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/generalLedgerEntr
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {

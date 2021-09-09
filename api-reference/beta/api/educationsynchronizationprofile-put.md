@@ -2,7 +2,7 @@
 title: "Update an educationSynchronizationProfile"
 description: "Update properties for an existing school data synchronization profile in the tenant."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /synchronizationProfiles
+PUT /education/synchronizationProfiles
 ```
 
 ## Request headers
@@ -99,7 +99,7 @@ Content-type: application/json
 ##### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "ignored",

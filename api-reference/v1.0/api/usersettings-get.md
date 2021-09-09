@@ -1,8 +1,8 @@
 ---
 title: "Get settings"
 description: "Read the user and organization settings object."
-author: "krbain"
-localization_priority: Priority
+author: "jpettere"
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -54,7 +54,7 @@ GET https://graph.microsoft.com/v1.0/me/settings
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK
