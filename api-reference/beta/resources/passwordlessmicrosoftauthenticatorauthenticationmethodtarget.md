@@ -45,7 +45,6 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "targetType": "String",
   "isRegistrationRequired": "Boolean",
-  "useForSignIn": "Boolean",
-  "shownContext": "String"
-}
+  "useForSignIn": "Boolean"
+  }
 ```
