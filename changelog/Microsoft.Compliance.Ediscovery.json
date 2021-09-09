@@ -591,7 +591,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "case",
 					"ChangeType": "Change",
-					"Description": "Changed the case type created to a [large case](https://docs.microsoft.com/microsoft-365/compliance/advanced-ediscovery-large-cases) on [Create case](https://docs.microsoft.com/graph/api/ediscovery-case-post) method.",
+					"Description": "Changed the case type created to a [large case](https://docs.microsoft.com/microsoft-365/compliance/advanced-ediscovery-large-cases) on [Create case](https://docs.microsoft.com/en-us/graph/api/ediscovery-case-post?view=graph-rest-beta&tabs=http) method.",
 					"Target": "custodians"
 				}
 			],
