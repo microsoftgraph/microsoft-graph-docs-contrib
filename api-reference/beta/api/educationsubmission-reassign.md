@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reassign is designed for teachers to inform students to revisit/redo their work, and in the mean time it has the ability to return feedback and code.
-
-This will change the status of the submission to "reassigned" or "returned" depending if `Prefer: include-unknown-enum-members` is provided or not in the request header, and indicates that it was returned for revision. This action can only be done by the teacher.
+Reassigned is a new submission status added, so it will be treated as an unknown enum member. If the header Prefer: include-unknown-enum-members is not provided, a reassigned submission will be mapped as a returned submission. This means, `reassigned` status will be mapped to `returned` status, and `reassignedDateTime` and `reassignedBy` properties will be mapped to `returnedDateTime` and `returnedBy`.
+If the header `Prefer: include-unknown-enum-members` is provided, reassigned submission remains in `reassigned` status. You can refer response examples for further details.
+This action can only be done by the teacher.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,7 +61,7 @@ POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332
 
 
 ### Response
-The following is an example of the response when `prefer` is NOT provided in the request header.
+The following is an example of the response when `Prefer: include-unknown-enum-members` is NOT provided in the request header and the submission has never been returned before.
 
 <!-- {
   "blockType": "response",
@@ -120,7 +120,7 @@ HTTP/1.1 200 Ok
 ```
 
 ### Response
-The following is an example of the response when `prefer` is provided in the request header.
+The following is an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header and the submission has never been returned before.
 
 <!-- {
   "blockType": "response",
@@ -187,7 +187,7 @@ HTTP/1.1 200 Ok
 <!--
 {
   "type": "#page.annotation",
-  "description": "educationSubmission: return",
+  "description": "educationSubmission: reassign",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
