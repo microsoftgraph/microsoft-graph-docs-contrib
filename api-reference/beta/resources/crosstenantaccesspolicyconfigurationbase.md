@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyConfigurationBase resource type"
-description: "Defines the properties that are common in a cross tenant access policy configuration for the default and partner specific settings."
+description: "Defines the properties that are common in a cross-tenant access policy configuration for the default and partner-specific settings."
 author: "jkdouglas"
 ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
@@ -13,19 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the properties that are common in a cross tenant access policy configuration for the default and partner specific settings.
-
-This is an abstract type.
+An abstract type that defines the properties that are common in a cross-tenant access policy configuration for the default and partner specific settings that govern the Azure Active Directory (Azure AD) B2B and B2B Direct Connect collaboration.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|b2bCollaborationInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users from other organizations accessing your resources via B2B collaboration.|
-|b2bCollaborationOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users in your organization going outbound to access resources in another organization via B2B collaboration.|
-|b2bDirectConnectInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users from other organizations accessing your resources via B2B direct connect.|
-|b2bDirectConnectOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users in your organization going outbound to access resources in another organization via B2B direct connect.|
-|inboundTrust|[crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|Determines the configuration for trusting other conditional access claims from external Azure Active Directory organizations.|
+|b2bCollaborationInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users from other organizations accessing your resources via Azure AD B2B collaboration.|
+|b2bCollaborationOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B collaboration.|
+|b2bDirectConnectInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users from other organizations accessing your resources via Azure AD B2B Direct Connect.|
+|b2bDirectConnectOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B Direct Connect.|
+|inboundTrust|[crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|Determines the configuration for trusting other conditional access claims from external Azure AD organizations.|
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 ---
 title: "Get crossTenantAccessPolicyConfigurationPartner"
-description: "Read the properties and relationships of a partner specific configuration."
+description: "Read the properties and relationships of a partner-specific configuration."
 author: "jkdouglas"
 ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [partner specific](../resources/crosstenantaccesspolicyconfigurationpartner.md) configuration.
+Read the properties and relationships of a [partner-specific](../resources/crosstenantaccesspolicyconfigurationpartner.md) configuration.
 
 ## Permissions
 

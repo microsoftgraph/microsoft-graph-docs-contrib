@@ -11319,39 +11319,39 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Update
               href: api/authenticationcontextclassreference-update.md
-        - name: Cross tenant access settings
+        - name: Cross-tenant access
           items:
-          - name: Cross tenant access policy
+          - name: Policy
             items:
-            - name: Cross tenant access policy
+            - name: Cross-tenant access policy
               href: resources/crosstenantaccesspolicy.md
-            - name: Get cross tenant access policy
+            - name: Get
               href: api/crosstenantaccesspolicy-get.md
-            - name: Update cross tenant access policy
+            - name: Update
               href: api/crosstenantaccesspolicy-update.md
-          - name: Cross tenant access default settings
+          - name: Default settings
             items:
-            - name: Cross tenant access default settings
+            - name: Cross-tenant access default settings
               href: resources/crosstenantaccesspolicyconfigurationdefault.md
-            - name: Get default settings
+            - name: Get
               href: api/crosstenantaccesspolicyconfigurationdefault-get.md
-            - name: Update default settings
+            - name: Update
               href: api/crosstenantaccesspolicyconfigurationdefault-update.md
             - name: Reset to system default
               href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
-          - name: Cross tenant access partner settings
+          - name: Partner settings
             items:
-            - name: Cross tenant access partner settings
+            - name: Cross-tenant access partner settings
               href: resources/crosstenantaccesspolicyconfigurationpartner.md
-            - name: List partner settings
+            - name: List
               href: api/crosstenantaccesspolicy-list-partners.md
-            - name: Create partner settings
+            - name: Create
               href: api/crosstenantaccesspolicy-post-partners.md
-            - name: Get partner settings
+            - name: Get
               href: api/crosstenantaccesspolicyconfigurationpartner-get.md
-            - name: Update partner settings
+            - name: Update
               href: api/crosstenantaccesspolicyconfigurationpartner-update.md
-            - name: Delete partner settings
+            - name: Delete
               href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md

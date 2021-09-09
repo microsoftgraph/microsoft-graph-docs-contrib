@@ -1,6 +1,6 @@
 ---
 title: "List partners"
-description: "Get a list of all partner configurations within a cross tenant access policy."
+description: "Get a list of all partner configurations within a cross-tenant access policy."
 author: "jkdouglas"
 ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all partner configurations within a cross tenant access policy.
+Get a list of all partner configurations within a cross-tenant access policy.
 
 ## Permissions
 

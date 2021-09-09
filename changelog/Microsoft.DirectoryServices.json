@@ -13,65 +13,65 @@
        {
          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
          "ApiChange": "Resource",
-         "ChangedApiName": "crossTenantAccessPolicy",
+         "ChangedApiName": "crossTenantAccessPolicyConfigurationDefault",
          "ChangeType": "Addition",
          "Description": "Added the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
-         "Target": "crossTenantAccessPolicy"
+         "Target": "crossTenantAccessPolicyConfigurationDefault"
         },
         {
           "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicy",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationPartner",
           "ChangeType": "Addition",
           "Description": "Added the [crossTenantAccessPolicyConfigurationPartner](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
-          "Target": "crossTenantAccessPolicy"
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
           "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicy",
+          "ChangedApiName": "crossTenantAccessPolicyInboundTrust",
           "ChangeType": "Addition",
           "Description": "Added the [crossTenantAccessPolicyInboundTrust](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyinboundtrust?view=graph-rest-beta) resource.",
-          "Target": "crossTenantAccessPolicy"
+          "Target": "crossTenantAccessPolicyInboundTrust"
         },
         {
           "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicy",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationBase",
           "ChangeType": "Addition",
           "Description": "Added the [crossTenantAccessPolicyConfigurationBase](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationbase?view=graph-rest-beta) resource.",
-          "Target": "crossTenantAccessPolicy"
+          "Target": "crossTenantAccessPolicyConfigurationBase"
         },
         {
           "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicy",
+          "ChangedApiName": "crossTenantAccessPolicyB2BSetting",
           "ChangeType": "Addition",
           "Description": "Added the [crossTenantAccessPolicyB2BSetting](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyb2bsetting?view=graph-rest-beta) resource.",
-          "Target": "crossTenantAccessPolicy"
+          "Target": "crossTenantAccessPolicyB2BSetting"
         },
         {
           "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicy",
+          "ChangedApiName": "crossTenantAccessPolicyTarget",
           "ChangeType": "Addition",
           "Description": "Added the [crossTenantAccessPolicyTarget](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytarget?view=graph-rest-beta) resource.",
-          "Target": "crossTenantAccessPolicy"
+          "Target": "crossTenantAccessPolicyTarget"
         },
         {
           "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicy",
+          "ChangedApiName": "crossTenantAccessPolicyTargetConfiguration",
           "ChangeType": "Addition",
           "Description": "Added the [crossTenantAccessPolicyTargetConfiguration](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytargetconfiguration?view=graph-rest-beta) resource.",
-          "Target": "crossTenantAccessPolicy"
+          "Target": "crossTenantAccessPolicyTargetConfiguration"
         },
         {
           "Id": "0a673359-4f88-11nbe-ae53-ed740c456b69",
           "ApiChange": "Enum type",
           "ChangedApiName": "crossTenantAccessPolicyTargetConfigurationAccessType",
           "ChangeType": "Addition",
-          "Description": "Added the `allowed` and `blocked` values to the **crossTenantAccessPolicyTargetConfigurationType** enumeration.",
+          "Description": "Added the **crossTenantAccessPolicyTargetConfigurationType** enumeration.",
           "Target": "crossTenantAccessPolicyTargetConfigurationAccessType"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "crossTenantAccessPolicyTargetType",
           "ChangeType": "Addition",
-          "Description": "Added the `user`, `group`, and `application` values to the **crossTenantAccessPolicyTargetType** enumeration.",
+          "Description": "Added the **crossTenantAccessPolicyTargetType** enumeration.",
           "Target": "crossTenantAccessPolicyTargetType"
         }
       ],

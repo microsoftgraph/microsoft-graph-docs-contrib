@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyTargetConfiguration resource type"
-description: "Defines the target configuration of a cross tenant access policy setting."
+description: "Defines the target of a cross-tenant access policy setting configuration."
 author: "jkdouglas"
 ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the target configuration of a cross tenant access policy setting.
+Defines the target of a cross-tenant access policy setting configuration.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accessType|crossTenantAccessPolicyTargetConfigurationAccessType|Defines whether access is allowed or blocked. Possible values are: `allowed` or `blocked`.|
+| accessType| crossTenantAccessPolicyTargetConfigurationAccessType | Defines whether access is allowed or blocked. The possible values are: `allowed`, `blocked`, `unknownFutureValue`. |
 |targets|[crossTenantAccessPolicyTarget](../resources/crosstenantaccesspolicytarget.md) collection|Specifies whether to target users, groups, or applications with this rule.|
 
 ## Relationships

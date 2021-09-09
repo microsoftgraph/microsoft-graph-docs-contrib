@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyConfigurationDefault: resetToSystemDefault"
-description: "Reset any changes made to the default configuration in a cross tenant access policy back to the system default."
+description: "Reset any changes made to the default configuration in a cross-tenant access policy back to the system default."
 author: "jkdouglas"
 ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reset any changes made to the default configuration in a cross tenant access policy back to the system default.
+Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and an empty response. To confirm the reset system defaults, run [Get crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md) and confirm that `isSystemDefault` is set to **true**.
+If successful, this action returns a `200 OK` response code and an empty response. To confirm the reset system defaults, run [Get crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md) and confirm that `isSystemDefault` is set to `true`.
 
 ## Examples
 

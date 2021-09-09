@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyB2BSetting resource type"
-description: "Used to define inbound and outbound rulesets for B2B collaboration."
+description: "Used to define the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration."
 author: "jkdouglas"
 ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to define inbound and outbound rulesets for B2B collaboration.
+Used to define the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applications|[crossTenantAccessPolicyTargetConfiguration](../resources/crosstenantaccesspolicytargetconfiguration.md)|The list of applications targeted with your cross tenant access policy.|
-|usersAndGroups|[crossTenantAccessPolicyTargetConfiguration](../resources/crosstenantaccesspolicytargetconfiguration.md)|The list of users and groups targeted with your cross tenant access policy.|
+|applications|[crossTenantAccessPolicyTargetConfiguration](../resources/crosstenantaccesspolicytargetconfiguration.md)|The list of applications targeted with your cross-tenant access policy.|
+|usersAndGroups|[crossTenantAccessPolicyTargetConfiguration](../resources/crosstenantaccesspolicytargetconfiguration.md)|The list of users and groups targeted with your cross-tenant access policy.|
 
 ## Relationships
 

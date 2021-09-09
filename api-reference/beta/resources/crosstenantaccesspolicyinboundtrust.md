@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyInboundTrust resource type"
-description: "Used to define which conditional access claims you want to accept from other organizations via your cross tenant access policy configuration."
+description: "Used to define which conditional access claims you want to accept from other organizations via your cross-tenant access policy configuration."
 author: "jkdouglas"
 ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to define which conditional access claims you want to accept from other organizations via your cross tenant access policy configuration. These can be configured in your default or partner specific configurations.
+Used to define which conditional access claims you want to accept from other Azure AD organizations via your cross-tenant access policy configuration. These can be configured in either your default configuration, partner-specific configuration, or in both configurations.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isCompliantDeviceAccepted|Boolean|Specifies whether compliant devices from external Azure Active Directory organizations are trusted.|
-|isHybridAzureADJoinedDeviceAccepted|Boolean|Specifies whether hybrid Azure AD Joined devices from external Azure Active Directory organizations are trusted.|
-|isMfaAccepted|Boolean|Specifies whether MFA from external Azure Active Directory organizations is trusted.|
+| isCompliantDeviceAccepted | Boolean | Specifies whether compliant devices from external Azure AD organizations are trusted. |
+| isHybridAzureADJoinedDeviceAccepted | Boolean | Specifies whether hybrid Azure AD joined devices from external Azure AD organizations are trusted. |
+| isMfaAccepted | Boolean | Specifies whether MFA from external Azure AD organizations is trusted.|
 
 ## Relationships
 

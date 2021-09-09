@@ -1,6 +1,6 @@
 ---
 title: "Get crossTenantAccessPolicyConfigurationDefault"
-description: "Read the default configuration of a cross tenant access policy."
+description: "Read the default configuration of a cross-tenant access policy."
 author: "jkdouglas"
 ms.localizationpriority: Medium
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the [default configuration](../resources/crosstenantaccesspolicyconfigurationdefault.md) of a cross tenant access policy.
+Read the [default configuration](../resources/crosstenantaccesspolicyconfigurationdefault.md) of a cross-tenant access policy.
 
 ## Permissions
 
