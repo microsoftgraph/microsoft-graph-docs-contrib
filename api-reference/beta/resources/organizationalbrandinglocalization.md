@@ -59,7 +59,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.organizationalBrandingLocalization",
-  "baseType": "Microsoft.DirectoryServices.organizationalBrandingProperties",
+  "baseType": "microsoft.graph.organizationalBrandingProperties",
   "openType": false
 }
 -->
