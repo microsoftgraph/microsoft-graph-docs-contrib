@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and an [organiz
 
 ## Examples
 
-The following example creates a branding localization for French (fr).
+The following example creates a branding localization for French (`fr`) localization.
 
 ### Request
 
