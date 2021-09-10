@@ -13,16 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
->Adding custom branding localization requires you to use Azure Active Directory Premium 1, Premium 2, or Basic editions, or to have a Microsoft 365 license. For more information about licensing and editions, see [Sign up for Azure AD Premium](/azure/active-directory/fundamentals/active-directory-get-started-premium).<br><br>Azure AD Premium and Basic editions are available for customers in China using the worldwide instance of Azure Active Directory. Azure AD Premium and Basic editions aren't currently supported in the Azure service operated by 21Vianet in China. For more information, talk to us using the [Azure Active Directory Forum](https://feedback.azure.com/forums/169401-azure-active-directory/).
+Supports creating language-specific branding. While you can't change your original configuration's language from your default language, this resource allows you to create a new configuration for a different language.
 
-Contains details about the organization's branding localization.
-
-Organizations can customize their Azure AD sign-in pages which appear when users sign in to their organization's tenant-specific apps, or when Azure AD identifies the user's tenant from their username. A developer can also read the company's branding information and customize their app experience to tailor it specifically for the signed-in user using their company's branding.
-
-Companies can add different branding based on locale. Locale serves as a key in all requests.
-
->**Note:** Branding is exposed as a property under organization with a collection of locale-specific localizations. **organizationalBrandingProperties** is an abstract class which defines properties for **organizationalBranding**.
+Inherits from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).
 
 ## Methods
 |Method|Return type|Description|
