@@ -3,6 +3,88 @@
     {
       "ChangeList": [
         {
+          "Id": "6f763895-52cc-483d-8797-597b6a8e529e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accesspackageresourceattribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [accesspackageresourceattribute](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresourceattribute?view=beta) resource type and related properties.",
+          "Target": "appScope"
+        },
+        {
+          "Id": "6f763895-52cc-483d-8797-597b6a8e529e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accesspackageresourceattributedestination",
+          "ChangeType": "Addition",
+          "Description": "Added the [accesspackageresourceattributedestination](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresourceattributedestination?view=beta) resource type and related methods.",
+          "Target": "rbacApplication"
+        },
+        {
+          "Id": "6f763895-52cc-483d-8797-597b6a8e529e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accesspackageresourceattributequestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [accesspackageresourceattributequestion](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresourceattributequestion?view=beta) resource type and its relationships.",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "6f763895-52cc-483d-8797-597b6a8e529e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accesspackageresourceattributesource",
+          "ChangeType": "Addition",
+          "Description": "Added the [accesspackageresourceattributesource](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresourceattributesource?view=beta) resource type, related methods, properties, and relationships.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "6f763895-52cc-483d-8797-597b6a8e529e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accesspackageuserdirectoryattributestore",
+          "ChangeType": "Addition",
+          "Description": "Added the [accesspackageuserdirectoryattributestore](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageuserdirectoryattributestore?view=beta) resource type, related methods, properties, and relationships.",
+          "Target": "unifiedRoleDefinition"
+        }, 
+        {
+          "Id": "6f763895-52cc-483d-8797-597b6a8e529e",
+          "ApiChange": "api",
+          "ChangedApiName": "accesspackage-getapplicablepolicyrequirements",
+          "ChangeType": "Change",
+          "Description": "Updated request body for Get policy requirements without given user scope and updated response body for Get policy requirements with given user scope.",
+          "Target": "unifiedRolePermission"
+        },
+	{
+          "Id": "6f763895-52cc-483d-8797-597b6a8e529e",
+          "ApiChange": "api",
+          "ChangedApiName": "accesspackagecatalog-list-accesspackageresources",
+          "ChangeType": "Change",
+          "Description": "Updated the response body for Get a resource with attributes.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "6f763895-52cc-483d-8797-597b6a8e529e",
+          "ApiChange": "api",
+          "ChangedApiName": "accesspackageassignmentpolicy-post",
+          "ChangeType": "Change",
+          "Description": "Updated the response body to include isAnswerEditable.",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "6f763895-52cc-483d-8797-597b6a8e529e",
+          "ApiChange": "api",
+          "ChangedApiName": "accesspackageresourcerequest-post",
+          "ChangeType": "Change",
+          "Description": "Updated the request body for adding a site as a resource and include custom attributes and adding a group as a resource and include custom attributes.",
+          "Target": "unifiedRolePermission"
+	      }
+      ],
+      "Id": "6f763895-52cc-483d-8797-597b6a8e529e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-10T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
           "ApiChange": "Resource",
           "ChangedApiName": "appScope",

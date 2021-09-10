@@ -112,14 +112,79 @@ Content-type: application/json
       "resourceType": "Application",
       "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
       "accessPackageResourceScopes": [
-         {
-            "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
-            "displayName": "Root",
-            "description": "Root Scope",
-            "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
-            "originSystem": "AadApplication",
-            "isRootScope": true
-         }
+          {
+              "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
+              "displayName": "Root",
+              "description": "Root Scope",
+              "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+              "originSystem": "AadApplication",
+              "isRootScope": true
+          }
+      ],
+      "attributes": [
+          {
+              "id": "4f28e638-93de-4152-b631-2135da14c94a",
+              "attributeName": "country",
+              "attributeDefaultValue": null,
+              "isEditable": true,
+              "isPersistedOnAssignmentRemoval": false,
+              "attributeSource": {
+                  "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.resourceAttributeQuestion",
+                  "question": {
+                      "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.multipleChoiceQuestion",
+                      "id": "6c797e12-e608-4ac9-90da-a8f18df37a94",
+                      "isRequired": false,
+                      "isAnswerEditable": null,
+                      "sequence": 0,
+                      "allowsMultipleSelection": false,
+                      "text": {
+                          "defaultText": "Enter your country",
+                          "localizedTexts": []
+                      },
+                      "choices": [
+                          {
+                              "actualValue": "USA",
+                              "displayValue": {
+                                  "defaultText": "USA",
+                                  "localizedTexts": [
+                                      {
+                                          "text": "USA",
+                                          "languageCode": "en-US"
+                                      }
+                                  ]
+                              }
+                          },
+                          {
+                              "actualValue": "Canada",
+                              "displayValue": {
+                                  "defaultText": "Canada",
+                                  "localizedTexts": [
+                                      {
+                                          "text": "Canada",
+                                          "languageCode": "en-US"
+                                      }
+                                  ]
+                              }
+                          },
+                          {
+                              "actualValue": "India",
+                              "displayValue": {
+                                  "defaultText": "India",
+                                  "localizedTexts": [
+                                      {
+                                          "text": "English",
+                                          "languageCode": "en-US"
+                                      }
+                                  ]
+                              }
+                          }
+                      ]
+                  }
+              },
+              "attributeDestination": {
+                  "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.userDirectoryAttributeStore"
+              }
+          }
       ]
     }
   ]

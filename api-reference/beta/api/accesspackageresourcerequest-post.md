@@ -86,8 +86,30 @@ Content-type: application/json
      "resourceType": "SharePoint Online Site",
      "originId": "https://contoso.sharepoint.com/sites/Sales",
      "originSystem": "SharePointOnline"
-  }
-}
+     "attributes": [
+        {
+             "attributeName": "mail",
+             "isEditable": true,
+             "isPersistedOnAssignmentRemoval": false,
+             "attributeSource": {
+                 "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.resourceAttributeQuestion",
+                 "question": {
+                      "isRequired": false,
+                      "text": {
+                          "defaultText": "enter mail",
+                          "localizedTexts": []
+                      },
+                      "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.textInputQuestion",
+                      "isSingleLineQuestion": true
+                  }
+              },
+              "attributeDestination": {
+                  "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.userDirectoryAttributeStore"
+              }
+         }
+     ]
+   }
+}    
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerequest-from-accesspackageresourcerequests-csharp-snippets.md)]
@@ -317,6 +339,28 @@ Content-type: application/json
   "accessPackageResource": {
      "originId": "c6294667-7348-4f5a-be73-9d2c65f574f3",
      "originSystem": "AadGroup"
+     "attributes": [
+        {
+            "attributeName": "city",
+            "isEditable": true,
+            "isPersistedOnAssignmentRemoval": false,
+            "attributeSource": {
+                "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.resourceAttributeQuestion",
+                "question": {
+                    "isRequired": false,
+                    "text": {
+                        "defaultText": "Enter your city",
+                        "localizedTexts": []
+                    },
+                    "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.textInputQuestion",
+                    "isSingleLineQuestion": true
+                }
+            },
+            "attributeDestination": {
+                "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.userDirectoryAttributeStore"
+            }
+        }
+    ]
   }
 }
 ```

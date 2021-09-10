@@ -364,6 +364,7 @@ Content-type: application/json
                 }]
             }
         }],
+        "isAnswerEditable": null,
         "allowsMultipleSelection": false
     }, {
         "isRequired": false,
@@ -375,6 +376,7 @@ Content-type: application/json
             }]
         },
         "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isAnswerEditable": null,
         "isSingleLineQuestion": false
     }]
 }

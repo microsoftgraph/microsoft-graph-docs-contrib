@@ -38,7 +38,6 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-
 ## Example 2: Get accessPackagePolicy
 
 ### Request

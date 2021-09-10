@@ -98,13 +98,26 @@ Content-Type: application/json
 {
     "value": [
         {
-            "policyId": "449feb20-7040-499a-ba91-bdfb93ede34b", 
-            "policyDisplayName": "Initial Policy", 
-            "policyDescription": "Initial Policy", 
-            "isApprovalRequired": false, 
-            "isApprovalRequiredForExtension": false, 
-            "isRequestorJustificationRequired": false, 
-            "questions": [], 
+            "policyId": "d6322c23-04d6-eb11-b22b-c8d9d21f4e9a",
+            "policyDisplayName": "Initial Policy",
+            "policyDescription": "Initial Policy",
+            "isApprovalRequired": false,
+            "isApprovalRequiredForExtension": false,
+            "isRequestorJustificationRequired": false,
+            "questions": [
+                {
+                    "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.textInputQuestion",
+                    "id": "0fd349e2-a3a7-4712-af08-660f29c12b90",
+                    "isRequired": true,
+                    "isAnswerEditable": null,
+                    "sequence": 0,
+                    "isSingleLineQuestion": true,
+                    "text": {
+                        "defaultText": "What is your display name",
+                        "localizedTexts": []
+                    }
+                }
+            ],
             "existingAnswers": [],
             "schedule": []
         }
@@ -126,3 +139,56 @@ POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-e
     "subject": {
         "objectId": "5acd375c-8acb-45de-a958-fa0dd89259ad"
     }
+
+#### Response
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "value": [
+        {
+            "policyId": "d6322c23-04d6-eb11-b22b-c8d9d21f4e9a",
+            "policyDisplayName": "Initial Policy",
+            "policyDescription": "Initial Policy",
+            "isApprovalRequired": false,
+            "isApprovalRequiredForExtension": false,
+            "isRequestorJustificationRequired": false,
+            "questions": [
+                {
+                    "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.textInputQuestion",
+                    "id": "5a7f2a8f-b802-4438-bec6-09599bc43e13",
+                    "isRequired": false,
+                    "isAnswerEditable": true,
+                    "sequence": 0,
+                    "isSingleLineQuestion": true,
+                    "text": {
+                        "defaultText": "Enter your mail",
+                        "localizedTexts": []
+                    }
+                }
+            ],
+            "existingAnswers": [
+                {
+                    "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.answerString",
+                    "displayValue": "test.mail@microsoft.com",
+                    "value": "test.mail@microsoft.com",
+                    "answeredQuestion": {
+                        "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.textInputQuestion",
+                        "id": "5a7f2a8f-b802-4438-bec6-09599bc43e13",
+                        "isRequired": false,
+                        "isAnswerEditable": true,
+                        "sequence": 0,
+                        "isSingleLineQuestion": true,
+                        "text": {
+                            "defaultText": "Enter your mail",
+                            "localizedTexts": []
+                        }
+                    }
+                }
+            ],
+            "schedule": []
+        }
+    ]
+}
