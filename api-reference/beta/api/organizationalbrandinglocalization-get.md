@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.
+Read the properties and relationships of an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object. To retrieve a localization branding object, specify the value of `id` in the URL.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,9 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -51,37 +48,19 @@ If successful, this method returns a `200 OK` response code and an [organization
 ## Examples
 
 ### Example 1: Get the localized branding for a specific locale (fr)
-A GET request to a particular localization returns only the values for that localization. Null values will not be replaced by those from the default branding.
+
 #### Request
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandinglocalization8"
+  "name": "get_organizationalbrandinglocalization_fr"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-8-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-8-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-8-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-8-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -95,145 +74,38 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.organizationalBrandingLocalization"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"backgroundColor":"#00000F",
-"backgroundImage@odata.mediaContentType":"image/*",
-"backgroundImage@odata.mediaReadLink": null,
-"backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/backgroundImage",
-"bannerLogo@odata.mediaContentType":"image/*",
-"bannerLogo@odata.mediaReadLink": null,
-"bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
-"id":"fr",
-"squareLogo@odata.mediaContentType":"image/*",
-"squareLogo@odata.mediaReadLink": null,
-"squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo",
-"signInPageText":null,
-"usernameHintText":null
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/localizations/$entity",
+"@odata.type": "#microsoft.graph.organizationalBrandingProperties",
+"@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')//localizations('fr')/fr",
+"id": "fr",
+"backgroundColor": "",
+"backgroundImageRelativeUrl": null,
+"bannerLogoRelativeUrl": null,
+"cdnList": [],
+"signInPageText": "Welcome",
+"squareLogoRelativeUrl": null,
+"usernameHintText": "hint"
 }
 ```
 
-### Example 2: Get all language-specific localizations that have been configured
+### Example 2: Get the value of signInPageText for a specific locale
+
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. To retrieve any property of a specific locale, specify the property name as a path parameter, for example, + `/organization/{}/branding/localizations/signInPageText` or `/organization/{}/branding/localizations/bannerLogo`.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandinglocalization9"
+  "name": "get_organizationalbrandinglocalization_fr_signInPageText"
 }-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-9-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-9-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-9-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-9-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingLocalization"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
- "values": [
-   {
-    "backgroundColor":"#FFFF33",
-    "backgroundImage@odata.mediaContentType":"image/*",
-    "backgroundImage@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/backgroundImage",
-    "backgroundImage@odata.mediaEditLink":"https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/backgroundImage",
-    "bannerLogo@odata.mediaContentType":"image/*",
-    "bannerLogo@odata.mediaReadLink": null,
-    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/bannerLogo",
-    "id":"en-us",
-    "squareLogo@odata.mediaContentType":"image/*",
-    "squareLogo@odata.mediaReadLink": null,
-    "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/squareLogo",
-    "signInPageText":"Welcome",
-    "usernameHintText":"hint"
-   },
-   {
-    "backgroundColor":"#00000F",
-    "backgroundImage@odata.mediaContentType":"image/*",
-    "backgroundImage@odata.mediaReadLink": null,
-    "backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
-    "bannerLogo@odata.mediaContentType":"image/*",
-    "bannerLogo@odata.mediaReadLink": null,
-    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
-    "id":"fr",
-    "squareLogo@odata.mediaContentType":"image/*",
-    "squareLogo@odata.mediaReadLink": null,
-    "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo",
-    "signInPageText":null,
-    "usernameHintText":null
-   }
- ]
-}
-```
-
-### Example 3: Get the value of signInPageText for a specific locale
-Requesting a property of a localization returns that value, or 204 if the value is null.
-#### Request
-
-The following is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_organizationalbrandinglocalization10"
-}-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/signInPageText
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-10-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-10-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-10-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-10-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -253,6 +125,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"value":"Welcome"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('d69179bf-f4a4-41a9-a9de-249c0f2efb1d')/branding/localizations('fr')/signInPageText",
+    "value": "Welcome"
 }
 ```
