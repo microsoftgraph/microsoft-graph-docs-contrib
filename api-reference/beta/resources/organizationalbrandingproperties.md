@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.organizationalBrandingProperties",
+  "@odata.type": "#microsoft.graph.organizationalBranding",
   "id": "String (identifier)",
   "backgroundColor": "String",
   "backgroundImage": "Stream",
@@ -67,22 +67,7 @@ The following is a JSON representation of the resource.
   "signInPageText": "String",
   "squareLogo": "Stream",
   "squareLogoRelativeUrl": "String",
-  "usernameHintText": "String",
-  "customAccountResetCredentialsUrl": "String",
-  "customCannotAccessYourAccountText": "String",
-  "customCannotAccessYourAccountUrl": "String",
-  "customForgotMyPasswordText": "String",
-  "customPrivacyAndCookiesText": "String",
-  "customPrivacyAndCookiesUrl": "String",
-  "customResetItNowText": "String",
-  "customTermsOfUseText": "String",
-  "customTermsOfUseUrl": "String",
-  "favicon": "Stream",
-  "faviconRelativeUrl": "String",
-  "headerBackgroundColor": "String",
-  "loginPageTextVisibilitySettings": {
-    "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
-  }
+  "usernameHintText": "String"
 }
 ```
 

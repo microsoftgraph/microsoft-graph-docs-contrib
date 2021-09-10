@@ -63,13 +63,19 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.organizationalBrandingLocalization",
+  "@odata.type": "#microsoft.graph.organizationalBranding",
   "id": "String (identifier)",
   "backgroundColor": "String",
   "backgroundImage": "Stream",
+  "backgroundImageRelativeUrl": "String",
   "bannerLogo": "Stream",
+  "bannerLogoRelativeUrl": "String",
+  "cdnList": [
+    "String"
+  ],
   "signInPageText": "String",
   "squareLogo": "Stream",
+  "squareLogoRelativeUrl": "String",
   "usernameHintText": "String"
 }
 ```
