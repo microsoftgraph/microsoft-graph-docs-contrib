@@ -2,7 +2,7 @@
 title: "Create account"
 description: "Create a new account object."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
 ---

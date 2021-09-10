@@ -1,7 +1,7 @@
 ---
 title: "List tasks"
 description: "Retrieve a list of **plannertask** objects assigned to a User."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "Make API calls using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph HTTP requests using the SDKs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
 ---
 

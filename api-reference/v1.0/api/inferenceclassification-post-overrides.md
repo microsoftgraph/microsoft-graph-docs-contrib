@@ -1,7 +1,7 @@
 ---
 title: "Create inferenceClassificationOverride"
 description: "Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: ""
 doc_type: apiPageType

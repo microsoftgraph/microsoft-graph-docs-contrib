@@ -1,7 +1,7 @@
 ---
 title: "Create itemPhone"
 description: "Use this API to create a new itemPhone."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

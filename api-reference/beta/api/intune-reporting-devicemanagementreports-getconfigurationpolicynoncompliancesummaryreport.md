@@ -2,7 +2,7 @@
 title: "getConfigurationPolicyNonComplianceSummaryReport action"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -103,7 +103,6 @@ Content-Length: 123
   "value": "Z2V0Q29uZmlndXJhdGlvblBvbGljeU5vbkNvbXBsaWFuY2VTdW1tYXJ5UmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIC0xNjM2NzI4OTg4"
 }
 ```
-
 
 
 

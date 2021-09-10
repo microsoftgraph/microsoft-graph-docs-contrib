@@ -2,7 +2,7 @@
 title: "Create macOSGeneralDeviceConfiguration"
 description: "Create a new macOSGeneralDeviceConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "teamsDeviceUsageUserCounts resource type"
 description: "Represents number of daily users by device type."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

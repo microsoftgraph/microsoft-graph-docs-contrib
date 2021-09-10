@@ -2,7 +2,7 @@
 title: "Update windows10XWifiConfiguration"
 description: "Update the properties of a windows10XWifiConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -111,7 +111,6 @@ Content-Length: 560
   "customXml": "Y3VzdG9tWG1s"
 }
 ```
-
 
 
 

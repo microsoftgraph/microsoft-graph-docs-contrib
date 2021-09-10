@@ -2,7 +2,7 @@
 title: "relation resource type"
 description: "Represents the relationship between terms in a term store."
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Sharepoint"
 doc_type: resourcePageType
 ---

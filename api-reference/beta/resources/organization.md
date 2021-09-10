@@ -1,7 +1,7 @@
 ---
 title: "organization resource type"
 description: "Represents an Azure Active Directory tenant. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: resourcePageType

@@ -2,7 +2,7 @@
 title: "List shared"
 description: "Calculated insight that returns the list of files shared with a user."
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: apiPageType
 ---

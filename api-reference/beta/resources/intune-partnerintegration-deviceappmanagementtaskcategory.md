@@ -2,7 +2,7 @@
 title: "deviceAppManagementTaskCategory enum type"
 description: "Device app management task category."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,7 +22,6 @@ Device app management task category.
 |:---|:---|:---|
 |unknown|0|Unknown source.|
 |advancedThreatProtection|1|Windows Defender ATP Threat & Vulnerability Management.|
-
 
 
 

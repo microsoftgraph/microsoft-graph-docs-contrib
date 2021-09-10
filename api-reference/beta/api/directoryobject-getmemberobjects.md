@@ -1,7 +1,7 @@
 ---
 title: "Get member objects"
 description: " Returns all the groups, administrative units and directory roles that a user, group, service principals or directory object is a member of. This function is transitive. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
  Returns all the groups, administrative units and directory roles that a user, group, service principals or directory object is a member of. This function is transitive. 
- > Note: Only users can be members of directory roles.
+
+**Note:** Only users can be members of directory roles.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| **true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**. |
+|securityEnabledOnly|Boolean| `true` to specify that only security groups that the entity is a member of should be returned; `false` to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is `true`. |
 
 ## Response
 
@@ -90,7 +91,7 @@ Content-type: application/json
 
 
 ##### Response
-Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

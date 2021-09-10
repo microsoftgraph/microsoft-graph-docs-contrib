@@ -2,7 +2,7 @@
 title: "workbookTableColumn resource type"
 description: "Represents a column in a table."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
