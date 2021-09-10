@@ -1357,13 +1357,15 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_OnlineMeetings.Read_|Read Online Meeting.|Allows an app to read online meeting details on behalf of the signed-in user.|No|No|
 |_OnlineMeetings.ReadWrite_|Read and Create Online Meetings.|Allows an app to create, read online meetings on behalf of the signed-in user. |No|No|
+|_OnlineMeetingArtifact.Read.All_|Read Online Meeting artifacts.|Allows the app to read online meeting artifacts on behalf of the signed-in user. |No|No|
 
 #### Application permissions
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read online meeting details in your organization without a signed-in user.|Yes|
-|_OnlineMeetings.ReadWrite.All_|Read Online Meeting details from the app|Allows an app to create, read online meetings without a signed-in user.|Yes|
+|_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read Online Meeting details in your organization without a signed-in user.|Yes|
+|_OnlineMeetings.ReadWrite.All_|Read Online Meeting details from the app|Allows an app to create, read Online Meetings without a signed-in user.|Yes|
+|_OnlineMeetingArtifact.Read.All_|Read Online Meeting artifacts from the app |Allows the app to read Online Meeting artifacts in your organization, without a signed-in user.|Yes|
 
 > **Important**
 Administrators can configure [application access policy](cloud-communication-online-meeting-application-access-policy.md) to allow apps to access online meetings on behalf of a user.
