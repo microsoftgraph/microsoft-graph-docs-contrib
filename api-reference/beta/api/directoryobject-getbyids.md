@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get directory objects from a list of ids
+# directoryObject: getByIds
 
 Namespace: microsoft.graph
 
