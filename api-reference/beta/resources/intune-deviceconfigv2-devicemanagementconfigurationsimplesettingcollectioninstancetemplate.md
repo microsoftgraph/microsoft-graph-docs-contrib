@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate resource type"
 description: "Simple Setting Collection Instance Template"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

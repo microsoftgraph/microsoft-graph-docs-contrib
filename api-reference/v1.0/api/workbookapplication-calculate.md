@@ -1,7 +1,7 @@
 ---
 title: "workbookApplication: calculate"
 description: "Recalculate all currently opened workbooks in Excel."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "List rangeView rows"
 description: "Retrieve a list of range view objects."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---

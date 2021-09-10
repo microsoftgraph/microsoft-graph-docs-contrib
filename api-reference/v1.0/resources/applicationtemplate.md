@@ -1,7 +1,7 @@
 ---
 title: 'applicationTemplate resource type'
 description: 'Represents an application in the Azure AD application gallery'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: 'luleonpla'
 ms.prod: 'applications'
 doc_type: 'resourcePageType'

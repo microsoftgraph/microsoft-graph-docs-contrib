@@ -1,7 +1,7 @@
 ---
 title: "Create a group setting"
 description: "Create a new setting, based on the templates available in groupSettingTemplates."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType

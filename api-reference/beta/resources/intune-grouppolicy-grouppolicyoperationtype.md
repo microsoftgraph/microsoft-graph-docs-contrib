@@ -2,7 +2,7 @@
 title: "groupPolicyOperationType enum type"
 description: "Type of Group Policy operation."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

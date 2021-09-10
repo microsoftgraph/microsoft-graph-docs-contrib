@@ -2,7 +2,7 @@
 title: "removeAllDevicesFromManagement action"
 description: "Retire all devices from management for this user"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

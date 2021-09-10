@@ -2,7 +2,7 @@
 title: "windowsDomainJoinConfiguration resource type"
 description: "Windows Domain Join device configuration."
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

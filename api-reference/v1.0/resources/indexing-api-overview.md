@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Search API to index data"
 description: "Use Microsoft Graph to index custom items in the Microsoft Search service."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: conceptualPageType

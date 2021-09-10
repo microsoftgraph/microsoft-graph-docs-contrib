@@ -2,7 +2,7 @@
 title: "mobileAppRelationshipState resource type"
 description: "Describes the installation status details of the child app in the context of UPN and device id."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

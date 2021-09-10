@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: checkMemberObjects"
 description: "Check for membership in a list of groups, directory roles, or administrative units for the specified service principle object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

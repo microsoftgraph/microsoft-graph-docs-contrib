@@ -1,19 +1,19 @@
 ---
 title: "directory resource type (deleted items)"
 description: ". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
-# directory resource type (deleted items)
+# directory resource type
 
 Namespace: microsoft.graph
 
 Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
-Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md) and [user](user.md) resources.
+Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md), and [user](user.md) resources.
 
 Inherits from [entity](entity.md).
 
@@ -48,28 +48,14 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
+  "keyProperty":"id",
+  "optionalProperties": [],
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-}
-```
-
-## Example
-
-<!--{"blockType": "request"}-->
-```http
-GET https://graph.microsoft.com/v1.0/directory
-```
-
-<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
+  "@odata.type": "#microsoft.graph.directory"
 }
 ```
 

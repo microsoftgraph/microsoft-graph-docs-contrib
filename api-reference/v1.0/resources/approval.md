@@ -2,7 +2,7 @@
 title: "approval resource type"
 description: "The approval object associated with a userConsentRequest."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

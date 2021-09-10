@@ -2,7 +2,7 @@
 title: "macOSSoftwareUpdateState enum type"
 description: "MacOS Software Update State"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

@@ -1,3 +1,7 @@
+---
+ms.localizationpriority: medium
+---
+
 ### Application properties
 
 | Name                          | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |

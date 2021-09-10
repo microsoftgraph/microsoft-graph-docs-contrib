@@ -2,7 +2,7 @@
 title: "macOSMinimumOperatingSystem resource type"
 description: "The minimum operating system required for a MacOS app."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

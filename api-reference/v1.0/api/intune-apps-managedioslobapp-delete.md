@@ -2,7 +2,7 @@
 title: "Delete managedIOSLobApp"
 description: "Deletes a managedIOSLobApp."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

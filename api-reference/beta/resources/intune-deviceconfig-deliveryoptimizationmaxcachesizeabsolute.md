@@ -2,7 +2,7 @@
 title: "deliveryOptimizationMaxCacheSizeAbsolute resource type"
 description: "Delivery Optimization max cache size absolute type."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

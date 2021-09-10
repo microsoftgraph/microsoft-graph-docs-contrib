@@ -2,7 +2,7 @@
 title: "Update samlOrWsFedExternalDomainFederation"
 description: "Update the properties of a samlOrWsFedExternalDomainFederation object."
 author: "namkedia"
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
