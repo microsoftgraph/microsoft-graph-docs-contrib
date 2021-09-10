@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the properties of a specific resource on an assignment.  
+Get the properties of a specific resource on an [assignment](../resources/educationassignment.md).  
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,6 +49,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4", "9018ae7a-9953-4796-a152-4c54e0910922", "eec7f642-9d9a-406f-bbae-4b3b2c12e273"],
   "name": "get_educationassignmentresource"
 }-->
 ```msgraph-interactive

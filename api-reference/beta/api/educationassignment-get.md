@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of an assignment. 
+Get the properties and relationships of an [assignment](../resources/educationassignment.md). 
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 

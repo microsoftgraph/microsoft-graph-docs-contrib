@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object. 
 
-These are the class-level assignment defaults respected by new assignments created in the class. Callers can continue to specify custom values on each assignment creation if they don't want the default behaviors.
+These are the class-level assignment defaults respected by new [assignments](../resources/educationassignment.md) created in the class. Callers can continue to specify custom values on each **assignment** creation if they don't want the default behaviors.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,13 +48,14 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["acdefc6b-2dc6-4e71-b1e9-6d9810ab1793"],
   "name": "get_educationassignmentdefaults"
 }
 -->

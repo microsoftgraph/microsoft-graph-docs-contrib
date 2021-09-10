@@ -1,6 +1,6 @@
 ---
 title: "List categories"
-description: "List all the categories associated with this assignment."
+description: "List all the categories associated with an assignment."
 author: "sharad-sharma-msft"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List all the categories associated with an assignment.
+List all the categories associated with an [assignment](../resources/educationassignment.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
