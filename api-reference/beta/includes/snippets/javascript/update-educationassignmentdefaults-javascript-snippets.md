@@ -11,11 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const educationAssignmentDefaults = {
-  addedStudentAction: "assignIfOpen",
-  notificationChannelUrl: "https://graph.microsoft.com/beta/teams('id')/channels('id')"
+  addedStudentAction: 'assignIfOpen',
+  addToCalendarAction: 'studentsAndTeamOwners',
+  notificationChannelUrl: 'https://graph.microsoft.com/beta/teams(\'id\')/channels(\'id\')'
 };
 
-let res = await client.api('/education/classes/{id}/assignmentDefaults')
+await client.api('/education/classes/{id}/assignmentDefaults')
 	.version('beta')
 	.update(educationAssignmentDefaults);
 

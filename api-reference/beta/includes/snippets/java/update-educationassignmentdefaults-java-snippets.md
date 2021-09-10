@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 EducationAssignmentDefaults educationAssignmentDefaults = new EducationAssignmentDefaults();
 educationAssignmentDefaults.addedStudentAction = EducationAddedStudentAction.ASSIGN_IF_OPEN;
+educationAssignmentDefaults.addToCalendarAction = EducationAddToCalendarOptions.STUDENTS_AND_TEAM_OWNERS;
 educationAssignmentDefaults.notificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')";
 
 graphClient.education().classes("{id}").assignmentDefaults()

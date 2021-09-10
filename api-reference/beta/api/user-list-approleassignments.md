@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -110,7 +110,7 @@ Content-type: application/json
       "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
       "deletedDateTime": null,
       "appRoleId": "00000000-0000-0000-0000-000000000000",
-      "createdDateTime": "2021-02-02T04:22:45.9480566Z",
+      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
       "principalDisplayName": "Alex Wilber",
       "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
       "principalType": "User",
@@ -127,6 +127,8 @@ Content-type: application/json
 
 Here is an example of the request to retrieve the app roles that have been assigned to a user, filtering by a `resourceId`, which is a GUID type.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_get_approleassignments_filterby_resourceId"
@@ -135,6 +137,24 @@ Here is an example of the request to retrieve the app roles that have been assig
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/appRoleAssignments?$filter=resourceId eq 8e881353-1735-45af-af21-ee1344582a4d
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-get-approleassignments-filterby-resourceid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-get-approleassignments-filterby-resourceid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-get-approleassignments-filterby-resourceid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-get-approleassignments-filterby-resourceid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -183,5 +203,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

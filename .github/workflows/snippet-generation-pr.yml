@@ -31,10 +31,10 @@ jobs:
         MESSAGE_BODY: "Scheduled snippets update"
         REVIEWERS: andrueastman
         ASSIGNEDTO: andrueastman
-        BASE: master
+        BASE: main
       run: |
-        git fetch origin master
-        commitCount=`git rev-list origin/master.. --count`
+        git fetch origin main
+        commitCount=`git rev-list origin/main.. --count`
         if [ $commitCount == 1 ]; then
           curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
           bin/hub pull-request -b "$BASE" -h "$GITHUB_REF" -m "$MESSAGE_TITLE" -m "$MESSAGE_BODY" -r "$REVIEWERS" -a "$ASSIGNEDTO"

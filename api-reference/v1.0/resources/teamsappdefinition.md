@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of one version of a [teamsApp](teamsapp.md).
+Represents the details of a version of a [teamsApp](teamsapp.md).
 
 ## Properties
 

@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const authenticationMethodConfiguration = {
-    @odata.type: "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-    state: "enabled",
-    isAttestationEnforced: "true"
+    '@odata.type': '#microsoft.graph.fido2AuthenticationMethodConfiguration',
+    state: 'enabled',
+    isAttestationEnforced: 'true'
 };
 
-let res = await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2')
+await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2')
 	.version('beta')
 	.update(authenticationMethodConfiguration);
 

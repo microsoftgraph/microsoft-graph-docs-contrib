@@ -28,8 +28,8 @@ var templateParameters = new List<KeyValuePair>()
 	}
 };
 
-await graphClient.Users["{userId}"].Teamwork
-	.SendActivityNotification(topic,activityType,null,previewText,templateParameters,null)
+await graphClient.Users["{user-id}"].Teamwork
+	.SendActivityNotification(topic,activityType,null,previewText,templateParameters)
 	.Request()
 	.PostAsync();
 

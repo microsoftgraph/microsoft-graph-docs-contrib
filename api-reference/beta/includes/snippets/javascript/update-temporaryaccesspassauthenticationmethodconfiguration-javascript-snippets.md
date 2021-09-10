@@ -11,24 +11,24 @@ const options = {
 const client = Client.init(options);
 
 const authenticationMethodConfiguration = {
-  @odata.type:"#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
-  state:"enabled",
-  defaultLifetimeInMinutes:60,
-  defaultLength:8,
-  minimumLifetimeInMinutes:60,
-  maximumLifetimeInMinutes:1440,"
+  '@odata.type':'#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration',
+  state: 'enabled',
+  defaultLifetimeInMinutes: 60,
+  defaultLength: 8,
+  minimumLifetimeInMinutes: 60,
+  maximumLifetimeInMinutes: 1440,"
   isUsableOnce":false,
   includeTargets: [
         {
-            targetType: "group",
-            id: "all_users",
+            targetType: 'group',
+            id: 'all_users',
             isRegistrationRequired: false,
             useForSignIn: true
         }
     ]
 };
 
-let res = await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass')
+await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass')
 	.version('beta')
 	.update(authenticationMethodConfiguration);
 

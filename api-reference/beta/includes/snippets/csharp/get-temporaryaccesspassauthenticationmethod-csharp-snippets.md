@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var temporaryAccessPassAuthenticationMethod = await graphClient.Users["kim@contoso.com"].Authentication.TemporaryAccessPassMethods["30fd0dfc-0dfc-30fd-fc0d-fd30fc0dfd30"]
+var temporaryAccessPassAuthenticationMethod = await graphClient.Users["{user-id}"].Authentication.TemporaryAccessPassMethods["{temporaryAccessPassAuthenticationMethod-id}"]
 	.Request()
 	.GetAsync();
 

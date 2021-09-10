@@ -29,7 +29,7 @@ User Flows enable you to define predefined, configurable policies for sign in, s
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String| The identifier of the user flow. The prefix of **B2C_1_** is added to the value that you provide.|
-|userFlowType|string| Possible values are: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`, `unknownFutureValue`.|
+|userFlowType|userFlowType| Possible values are: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`, `unknownFutureValue`.|
 |userFlowTypeVersion|Single| This is the version of the user flow type. Each user flow type can have different possible versions such as 1, 1.1 or 2.  |
 
 ## Relationships

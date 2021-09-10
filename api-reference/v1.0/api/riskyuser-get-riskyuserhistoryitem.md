@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [riskyUserHist
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuserhistoryitem"
+  "name": "get_riskyuserhistoryitem_1"
 }
 -->
 ``` http

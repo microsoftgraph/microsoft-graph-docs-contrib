@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const authenticationMethodConfiguration = {
-    @odata.type: "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
-    state: "enabled"
+    '@odata.type': '#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration',
+    state: 'enabled'
 };
 
-let res = await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator')
+await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator')
 	.version('beta')
 	.update(authenticationMethodConfiguration);
 

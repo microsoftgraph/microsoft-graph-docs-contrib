@@ -24,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/
+POST /me/drive/items/{id}/workbook/worksheets/
+POST /me/drive/root:/{item-path}:/workbook/worksheets/
 
 ```
 ## Request headers
@@ -42,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [WorkbookWorksheet](../resources/worksheet.md) object in the response body.
+If successful, this method returns `201 Created` response code and [WorkbookWorksheet](../resources/worksheet.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -83,7 +84,7 @@ Content-length: 26
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

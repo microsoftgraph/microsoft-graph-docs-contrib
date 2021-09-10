@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const authenticationMethodConfiguration = {
-    @odata.type: "#microsoft.graph.smsAuthenticationMethodConfiguration",
-    id: "Sms",
-    state: "enabled"
+    '@odata.type': '#microsoft.graph.smsAuthenticationMethodConfiguration',
+    id: 'Sms',
+    state: 'enabled'
 };
 
-let res = await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms')
+await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms')
 	.version('beta')
 	.update(authenticationMethodConfiguration);
 

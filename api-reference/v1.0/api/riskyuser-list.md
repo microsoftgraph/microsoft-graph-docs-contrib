@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser"
+  "name": "get_riskyuser_2"
 }
 -->
 ``` http

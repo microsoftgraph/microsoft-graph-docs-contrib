@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const string = {
-  description: "Member of the Microsoft API Council",
-  displayName: "API Council",
+  description: 'Member of the Microsoft API Council',
+  displayName: 'API Council',
   collaborationTags: [
-    "askMeAbout"
+    'askMeAbout'
   ]
 };
 
-let res = await client.api('/me/responsibilities')
+await client.api('/me/responsibilities')
 	.version('beta')
 	.post(string);
 

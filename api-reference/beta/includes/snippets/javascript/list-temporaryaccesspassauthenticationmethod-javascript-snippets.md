@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/authentication/temporaryAccessPassMethods')
+let temporaryAccessPassMethods = await client.api('/me/authentication/temporaryAccessPassMethods')
 	.version('beta')
 	.get();
 

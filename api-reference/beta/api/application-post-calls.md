@@ -60,7 +60,7 @@ The following example shows the request which makes a peer-to-peer call between 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media",
+  "name": "create-call-service-hosted-media-1",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -92,19 +92,19 @@ Content-Type: application/json
 }
 ```
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -345,7 +345,7 @@ Sample audio media session blob is shown below
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -602,8 +602,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
         "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
-        "displayName": "Bob",
-        "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
+        "displayName": "Bob"
       }
     },
     "allowConversationWithoutHost": true
@@ -1141,9 +1140,11 @@ This call requires an application instance with a PSTN number assigned. For deta
 The following example shows the request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted by the service. The values of authorization token, callback URL, application instance ID, application instance display name, phone ID and tenant ID must be replaced with actual values to make the example work.
 > **Note:** Application instance ID is the object ID of application instance. The application ID that application instance links to should match the one in authorization token. Phone ID is the phone number in E.164 format.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media",
+  "name": "create-call-service-hosted-media-2",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -1189,6 +1190,16 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -1288,9 +1299,11 @@ This call requires an application instance with a PSTN number assigned. For deta
 The following example shows a request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted locally by the application. The values of authorization token, callback URL, application instance ID, application instance display name, phone ID and tenant ID must be replaced with actual values to make the example work.
 > **Note:** Application instance ID is the object ID of application instance. The application ID that application instance links to should match the one in authorization token. Phone ID is the phone number in E.164 format.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media",
+  "name": "create-call-service-hosted-media-3",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -1337,6 +1350,16 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

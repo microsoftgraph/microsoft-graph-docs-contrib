@@ -35,7 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-
 POST /sites/id/contentTypes/id/copyToDefaultContentLocation 
 ```
 
@@ -64,6 +63,8 @@ If successful, this call returns a `204 No Content` response.
 ## Example
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_copytodefaultcontentlocation"
@@ -74,15 +75,33 @@ POST https://graph.microsoft.com/beta/sites/{id}/contentTypes/{contentTypeId}/co
 Content-Type: application/json
 
 {
-	"sourceFile": {
-		"sharepointIds": {
-			"listId": "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0",
-			"listItemId": "2"
-		}
-	},
-	"destinationFileName": "newname.txt"
+   "sourceFile":{
+      "sharepointIds":{
+         "listId":"e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0",
+         "listItemId":"2"
+      }
+   },
+   "destinationFileName":"newname.txt"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-copytodefaultcontentlocation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-copytodefaultcontentlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-copytodefaultcontentlocation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-copytodefaultcontentlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 
@@ -93,7 +112,6 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
   
