@@ -84,4 +84,3 @@ The following is a JSON representation of the resource.
   "squareLogo": "Stream",
   "usernameHintText": "String"
 }
-```
