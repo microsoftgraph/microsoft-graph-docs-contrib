@@ -59,7 +59,7 @@ You can't delete the default branding after it has been created. You can only de
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|localizations|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) collection|Add different branding based on locale|
+| localizations | [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) collection | Add different branding based on a locale. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
