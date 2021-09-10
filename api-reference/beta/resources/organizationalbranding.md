@@ -36,11 +36,10 @@ You can't change your original configuration's language from your default langua
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List organizationalBrandings](../api/organizationalbranding-list-localizations.md)|[organizationalBranding](../resources/organizationalbrandinglocalization.md) collection|Get a list of the [organizationalBranding](../resources/organizationalbrandinglocalization.md) objects and their properties.|
-|[Create organizationalBranding](../api/organizationalbranding-post-localizations.md)|[organizationalBranding](../resources/organizationalbrandinglocalization.md)|Create a new [organizationalBranding](../resources/organizationalbrandinglocalization.md) object.|
-|[Get organizationalBranding](../api/organizationalbranding-get.md)|[organizationalBranding](../resources/organizationalbranding.md)|Read the properties and relationships of an [organizationalBranding](../resources/organizationalbranding.md) object.|
-|[Update organizationalBranding](../api/organizationalbranding-update.md)|[organizationalBranding](../resources/organizationalbranding.md)|Update the properties of an [organizationalBranding](../resources/organizationalbranding.md) object.|
-|[Delete organizationalBranding](../api/organizationalbrandinglocalization-delete.md)|None|Deletes an [organizationalBranding](../resources/organizationalbrandinglocalization.md) object.|
+| [Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](../resources/organizationalbranding.md) | Read the properties and relationships of an [organizationalBranding](../resources/organizationalbranding.md) object. |
+| [Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](../resources/organizationalbranding.md) | Update the properties of an [organizationalBranding](../resources/organizationalbranding.md) object. |
+
+You can't delete the default branding after it has been created. You can only delete the localized branding using the [Delete organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md) method.
 
 ## Properties
 | Property     | Type        | Description |
