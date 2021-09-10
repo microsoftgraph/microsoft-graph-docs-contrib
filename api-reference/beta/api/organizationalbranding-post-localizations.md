@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 ## HTTP request
-POST to branding/localizations to create both, a new localization and a default branding, if one does not already exist. The id specified in the body is the locale for the localization. If no id is specified, then the value of the Content-Language header, if specified, is used as the id. If no id and no Content-Language header is specified, then an error is returned.
+This request creates a new localization branding and a default branding, if one does not already exist. 
 <!-- {
   "blockType": "ignored"
 }
@@ -93,17 +93,14 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "backgroundColor":"#00000F",
-    "backgroundImage@odata.mediaContentType":"image/*",
-    "backgroundImage@odata.mediaReadLink": null,
-    "backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/backgroundImage",
-    "bannerLogo@odata.mediaContentType":"image/*",
-    "bannerLogo@odata.mediaReadLink": null,
-    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('29a4f813-9274-4e1b-858d-0afa98ae66d4')/branding/localizations/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/29a4f813-9274-4e1b-858d-0afa98ae66d4/directoryObjects/$/Microsoft.DirectoryServices.Organization('29a4f813-9274-4e1b-858d-0afa98ae66d4')//localizations/fr",
     "id": "fr",
-    "squareLogo@odata.mediaContentType":"image/*",
-    "squareLogo@odata.mediaReadLink": null,
-    "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo"
+    "backgroundColor": "",
+    "backgroundImageRelativeUrl": null,
+    "bannerLogoRelativeUrl": null,
+    "cdnList": [],
+    "signInPageText": "",
+    "squareLogoRelativeUrl": null,
+    "usernameHintText": ""
 }
-```
-The **mediaEditLink** specifies where the localized media is written. The mediaReadLink is null because no media has been set for the localization.
