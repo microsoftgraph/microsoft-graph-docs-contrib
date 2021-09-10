@@ -600,7 +600,10 @@
 			"Version": "beta",
 			"CreatedDateTime": "2021-09-09T20:01:11.459Z",
 			"WorkloadArea": "eDiscovery",
-			"SubArea": ""
+			"SubArea": "",
+			"CreatedDateTime": "2021-09-03T22:07:42.610Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
 		}
 	]
 }
