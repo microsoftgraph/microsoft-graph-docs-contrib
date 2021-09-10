@@ -23,7 +23,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToV2",
       "ChangeType": "Addition",
-      "Description": "The property is of type SharePointIdentity and will replace grantedToV2 which is being deprecated. More details can be found here(https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0)",
+      "Description": "The property is of type SharePointIdentity and will replace grantedToV2 which is being deprecated. More details can be found here(https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0), (https://docs.microsoft.com/en-us/graph/api/resources/sharepointidentityset?view=graph-rest-beta)",
       "Target": "permissions"
     },
     {
@@ -31,7 +31,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentitiesV2",
       "ChangeType": "Addition",
-      "Description": "The property will replace grantedToIdentitiesV2 which is being deprecated. More details can be found here(https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0)",
+      "Description": "The property is of type SharePointIdentity and will replace grantedToIdentitiesV2 which is being deprecated. More details can be found here(https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0), (https://docs.microsoft.com/en-us/graph/api/resources/sharepointidentityset?view=graph-rest-beta)",
       "Target": "permissions"
     },
     {
