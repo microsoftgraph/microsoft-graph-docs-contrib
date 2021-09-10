@@ -51,17 +51,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "list_organizationalbrandinglocalization"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/organization/{organizationId}/branding/localizations
-```
-
-### Response
->**Note:** The response object shown here might be shortened for readability.
+GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/localizations/
 <!-- {
   "blockType": "response",
   "truncated": true,
