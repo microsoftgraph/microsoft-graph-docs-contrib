@@ -13,9 +13,11 @@ To report a known issue, see the [Microsoft Graph support](https://developer.mic
 
 For information about the latest updates to the Microsoft Graph API, see the [Microsoft Graph changelog](changelog.md).
 
-## Application and service principal APIs
+## Applications
 
-There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) entities currently in development. The following is a summary of current limitations and in-development API features.
+### Limitations of the application and servicePrincipal resources
+
+Changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) resources are currently in development. The following is a summary of current limitations and in-development API features.
 
 Current limitations:
 
@@ -37,7 +39,7 @@ In development:
 
 ## Bookings
 
-### ErrorExceededFindCountLimit when querying bookingBusinesses
+### Error when querying bookingBusinesses
 
 Getting the list of `bookingBusinesses` fails with the following error code when an organization has several Bookings businesses and the account making the request is not an administrator:
 
@@ -56,9 +58,9 @@ As a workaround, you can limit the set of businesses returned by the request by 
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 ```
-## Calendars
+## Calendar
 
-### Accessing a shared calendar
+### Error accessing a shared calendar
 
 When attempting to access events in a calendar that has been shared by another user using the following operation:
 
@@ -91,55 +93,57 @@ events in the shared calendar, as if it's your own calendar. As an example:
 GET /me/calendars/{id}/events
 ```
 
-### Adding and accessing ICS-based calendars in user's mailbox
+### Partial support for adding and accessing ICS-based calendars in user's mailbox
 
-Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
+Currently, calendars based on an Internet Calendar Subscription (ICS) are only partially supported:
 
-* You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
+* You can add an ICS-based calendar to a user mailbox through the UI, but not through the Microsoft Graph API.
 * [Listing the user's calendars](/graph/api/user-list-calendars) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
 * You can also [list the events](/graph/api/calendar-list-events) of an ICS-based calendar.
 
-### Attaching large files to events
+### Error attaching large files to events
 An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession) succeeds only if the message or event is in the signed-in user's mailbox.
 
-### onlineMeetingUrl property support for Microsoft Teams
+### onlineMeetingUrl property not supported for Microsoft Teams
 
 Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
-The beta version offers a workaround, where you can use the **onlineMeetingProvider** property of an [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to verify if the provider is Microsoft Teams. Through the **onlineMeeting** property of the **event**, you can access the **joinUrl**.
+The beta version offers a workaround, where you can use the **onlineMeetingProvider** property of an [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to verify that the provider is Microsoft Teams. Through the **onlineMeeting** property of the **event**, you can access the **joinUrl**.
 
 ## Change notifications
 
-### Additional notifications for users
+### Update notifications occur on creation and soft deletion of users
 
 [Subscriptions](/graph/api/resources/subscription) to changes for **user** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on user creation and user soft deletion.
 
-### Additional notifications for groups
+### Update notifications occur on creation and soft deletion of groups
 
 [Subscriptions](/graph/api/resources/subscription) to changes for **group** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on group creation and group soft deletion.
 
 ## Cloud communications 
 
+### View meeting details menu not available on Microsoft Teams client
+
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
 ## Cloud Solution Provider apps
 
-### CSP apps must use Azure AD endpoint
+### Azure AD v2.0 endpoint not supported
 
 Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
 
 ### Pre-consent for CSP apps doesn't work in some customer tenants
 
-Under certain circumstances, pre-consent for CSP apps may not work for some of your customer tenants.
+Under certain circumstances, pre-consent for CSP apps might not work for some of your customer tenants.
 
-- For apps using delegated permissions, when using the app for the first time with a new customer tenant you might receive this error after sign-in: `AADSTS50000: There was an error issuing a token`.
+- For apps using delegated permissions, when using the app for the first time with a new customer tenant, you might receive this error after sign-in: `AADSTS50000: There was an error issuing a token`.
 - For apps using application permissions, your app can acquire a token, but unexpectedly gets an access denied message when calling Microsoft Graph.
 
 We are working to fix this issue as soon as possible, so that pre-consent will work for all your customer tenants.
 
-In the meantime, to unblock development and testing you can use the following workaround.
+In the meantime, to unblock development and testing, you can use the following workaround.
 
->**NOTE:** This is not a permanent solution and is only intended to unblock development.  This workaround will not be required once the aforementioned issue is fixed.  This workaround does not need to be undone once the fix is in place.
+>**Note:** This is not a permanent solution and is only intended to unblock development.  This workaround will not be required after the issue is fixed. This workaround does not need to be undone after the fix is in place.
 
 1. Open an Azure AD v2 PowerShell session and connect to your `customer` tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
 
@@ -154,7 +158,7 @@ In the meantime, to unblock development and testing you can use the following wo
     ```
 ## Contacts
 
-### Default contacts folder
+### GET operation does not return default contacts folder
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
 
@@ -165,7 +169,7 @@ as a workaround to get the folder ID of the default contacts folder:
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 ```
 
-In the above query:
+In this request:
 
 1. `/me/contacts?$top=1` gets the properties of a [contact](/graph/api/resources/contact) in the default contacts folder.
 2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
@@ -174,7 +178,7 @@ In the above query:
 ### Accessing contacts via a contact folder in beta
 
 In the `/beta` version, there is currently an issue that prevents accessing a [contact](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true)
-by specifying its parent folder in the REST request URL, as shown in the 2 scenarios below.
+by specifying its parent folder in the REST request URL, as shown in the following two scenarios.
 
 * Accessing a contact from a top level [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta&preserve-view=true) of the user's.
 
