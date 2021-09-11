@@ -16,7 +16,8 @@ Namespace: microsoft.graph.ediscovery
 In the context of eDiscovery, contains custodians, holds, collections, review sets, and exports. For details, see [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
 
 >[!NOTE]
->In September 2021, the case type created when using the eDiscovery case APIs supports large cases, to learn more about large cases, see [Use large cases in Advanced eDiscovery](/microsoft-365/compliance/advanced-ediscovery-large-cases). This change was announced in the Microsoft Graph Developer blog [Changes to the Microsoft 365 Advanced eDiscovery Create Case API](https://go.microsoft.com/fwlink/?linkid=2172604).
+>>[!NOTE]
+>Starting in September 2021, POST operations will create large cases. To learn more about large cases, see [Use large cases in Advanced eDiscovery](/microsoft-365/compliance/advanced-ediscovery-large-cases). For details, see the [Changes to the Microsoft 365 advanced eDiscovery create case API](https://go.microsoft.com/fwlink/?linkid=2172604) blog post.
 
 ## Methods
 
