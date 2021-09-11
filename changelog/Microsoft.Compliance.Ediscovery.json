@@ -591,17 +591,14 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "case",
 					"ChangeType": "Change",
-					"Description": "Changed the case type created to a [large case](https://docs.microsoft.com/microsoft-365/compliance/advanced-ediscovery-large-cases) on [Create case](https://docs.microsoft.com/en-us/graph/api/ediscovery-case-post?view=graph-rest-beta&tabs=http) method.",
+					"Description": "Updated the [Create case](https://docs.microsoft.com/en-us/graph/api/ediscovery-case-post?view=graph-rest-beta&tabs=http) method to create a [large case](https://docs.microsoft.com/en-us/microsoft-365/compliance/advanced-ediscovery-large-cases).",
 					"Target": "custodians"
 				}
 			],
 			"Id": "9956bf20-942b-4153-bffd-f7b3351fb3c0",
 			"Cloud": "prd",
 			"Version": "beta",
-			"CreatedDateTime": "2021-09-09T20:01:11.459Z",
-			"WorkloadArea": "eDiscovery",
-			"SubArea": "",
-			"CreatedDateTime": "2021-09-03T22:07:42.610Z",
+			"CreatedDateTime": "2021-09-10T22:07:42.610Z",
 			"WorkloadArea": "Compliance",
 			"SubArea": "eDiscovery"
 		}
