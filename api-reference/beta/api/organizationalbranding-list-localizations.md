@@ -51,17 +51,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "list_organizationalbrandinglocalization"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/organization/{organizationId}/branding/localizations
-```
-
-### Response
->**Note:** The response object shown here might be shortened for readability.
+GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/localizations/
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,18 +71,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.organizationalBrandingLocalization",
-      "id": "e91971b3-71b3-e919-b371-19e9b37119e9",
-      "backgroundColor": "String",
-      "backgroundImage": "Stream",
-      "bannerLogo": "Stream",
-      "signInPageText": "String",
-      "squareLogo": "Stream",
-      "usernameHintText": "String",
-     }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/localizations",
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')//localizations/0",
+            "id": "0",
+            "backgroundColor": "",
+            "backgroundImageRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/illustration?ts=637635061764954395",
+            "bannerLogoRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/bannerlogo?ts=637635061773126717",
+            "cdnList": [
+                "secure.aadcdn.microsoftonline-p.com",
+                "aadcdn.msftauthimages.net",
+                "aadcdn.msauthimages.net"
+            ],
+            "signInPageText": "Contoso",
+            "squareLogoRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/tilelogo?ts=637635061781098977",
+            "usernameHintText": ""
+        },
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')//localizations/fr",
+            "id": "fr",
+            "backgroundColor": "#FFFF33",
+            "backgroundImageRelativeUrl": null,
+            "bannerLogoRelativeUrl": null,
+            "cdnList": [],
+            "signInPageText": "Welcome",
+            "squareLogoRelativeUrl": null,
+            "usernameHintText": "hint"
+        }
+    ]
 }
 ```
 
