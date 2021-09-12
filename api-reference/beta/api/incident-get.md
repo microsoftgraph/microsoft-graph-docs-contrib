@@ -1,6 +1,7 @@
 ---
 title: "Get incident"
 description: "Retrieve the properties and relationships of an incident object."
+ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"

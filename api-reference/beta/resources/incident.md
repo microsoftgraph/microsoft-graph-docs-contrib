@@ -1,6 +1,7 @@
 ---
 title: "incident resource type"
 description: "An incident in Microsoft 365 Defender is a collection of correlated alerts and associated metadata that reflects the story of an attack."
+ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"
