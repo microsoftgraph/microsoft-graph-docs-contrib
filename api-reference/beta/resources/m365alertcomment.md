@@ -1,6 +1,6 @@
 ---
 title: "m365AlertComment resource type"
-description: "An analyst generated comment that is associated with an alert or incident. "
+description: "An analyst generated comment that is associated with an alert or incident."
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.prod: "security"

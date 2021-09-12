@@ -2489,12 +2489,12 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### incidentStatus values 
 
-| Member              | Description                                                                                                         |
-| :-------------------| :------------------------------------------------------------------------------------------------------------------ |
-| active			  | The incident is in active state.                                                                                    |
-| resolved            | The incident is in resolved state.                                                                                  |
-| redirected          | The incident was merged with another incident. The target incident ID appears in the `redirectIncidentId` property. |
-| unknownFutureValue  | unknownFutureValue for evolvable enums pattern.                                                                     |
+| Member              | Description                                                                                                           |
+| :-------------------| :-------------------------------------------------------------------------------------------------------------------- |
+| active			  | The incident is in active state.                                                                                      |
+| resolved            | The incident is in resolved state.                                                                                    |
+| redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property. |
+| unknownFutureValue  | unknownFutureValue for evolvable enums pattern.                                                                       |
 
 ### m365AlertClassification values 
 
@@ -2514,16 +2514,16 @@ Possible values for user account types (group membership), per Windows definitio
 | apt			             | A true positive alert that detected an advanced persistent threat.                                                           |
 | malware                    | A true positive alert that detected malicious software.                                                                      |
 | securityPersonnel          | A true positive alert that detected valid suspicious activity that was performed by someone on the customer's security team. |
-| securityTesting            | The alert detected valid suspicious activity that was performed as part of known security testing.                           |
+| securityTesting            | The alert detected valid suspicious activity that was performed as part of a known security testing.                         |
 | unwantedSoftware           | The alert detected unwanted software.                                                                                        |
 | multiStagedAttack          | A true positive alert that detected multiple kill-chain attack stages.                                                       |
 | compromisedUser            | A true positive alert that detected that the intended user's credentials were compromised or stolen.                         |
 | phishing                   | A true positive alert that detected a phishing email.                                                                        |
-| maliciousUserActivity      | A true positive alert that detected the logged on user tries to perform malicious activities.                                |
+| maliciousUserActivity      | A true positive alert that detected that the logged-on user performs malicious activities.                                   |
 | clean                      | A false alert, no suspicious activity.                                                                                       |
 | insufficientData           | A false alert, without enough information to prove otherwise.                                                                |
-| confirmedUserActivity      | The alert caught a true suspicious activity, but it’s OK, it’s a known user activity.                                        |
-| lineOfBusinessApplication  | The alert caught a true suspicious activity, but it’s OK, it’s a known and confirmed internal application.                   |
+| confirmedUserActivity      | The alert caught a true suspicious activity that is considered OK because it is a known user activity.                       |
+| lineOfBusinessApplication  | The alert caught a true suspicious activity that is considered OK because it is a known and confirmed internal application.  |
 | other                      | Other determination.                                                                                                         |
 | unknownFutureValue         | unknownFutureValue for evolvable enums pattern.                                                                              |
 
@@ -2533,7 +2533,7 @@ Possible values for user account types (group membership), per Windows definitio
 | :------------------| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | unknown		     | Unknown severity.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | informational		 | Alerts that may not be actionable or considered harmful to the network but can drive organizational security awareness on potential security issues.                                                                                                                                                                                                                                                                          |
-| low                | Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands and clearing logs, that often don't indicate an advanced threat that targets the organization. It could also come from an isolated security tool that is tested by a user in your organization.                                                                                    |
+| low                | Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands and clearing logs, that often don't indicate an advanced threat that targets the organization. It can also come from an isolated security tool that is tested by a user in your organization.                                                                                    |
 | medium             | Alerts generated from detections and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be due to internal security testing, they are valid detections and require investigation as they may be a part of an advanced attack. |
 | high               | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk because of the severity of damage they can inflict on assets. Some examples are: credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary.                                              |
 | unknownFutureValue | unknownFutureValue for evolvable enums pattern.																																																																																											     |

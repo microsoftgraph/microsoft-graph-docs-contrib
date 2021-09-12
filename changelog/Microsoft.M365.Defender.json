@@ -36,7 +36,7 @@
         },
         {
           "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
-          "ApiChange": "ComplexType",
+          "ApiChange": "Resource",
           "ChangedApiName": "m365AlertComment",
           "ChangeType": "Addition",
           "Description": "Added the [m365AlertComment](https://docs.microsoft.com/en-us/graph/api/resources/m365AlertComment?view=graph-rest-beta) resource type.",
@@ -44,19 +44,27 @@
         },
         {
           "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
-          "ApiChange": "EntityType",
+          "ApiChange": "Resource",
           "ChangedApiName": "incident",
           "ChangeType": "Addition",
-          "Description": "Added the [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource",
+          "Description": "Added the [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
           "Target": "incident"
         },
         {
           "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
-          "ApiChange": "EntityType",
-          "ChangedApiName": "security",
+          "ApiChange": "Method",
+          "ChangedApiName": "incident-get",
           "ChangeType": "Addition",
-          "Description": "Added the [security](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource",
-          "Target": "security"
+          "Description": "Added the [incident-get](https://docs.microsoft.com/en-us/graph/api/incident-get?view=graph-rest-beta) method on a [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
+          "Target": "incident"
+        },
+        {
+          "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
+          "ApiChange": "Method",
+          "ChangedApiName": "incident-list",
+          "ChangeType": "Addition",
+          "Description": "Added the [incident-list](https://docs.microsoft.com/en-us/graph/api/incident-list?view=graph-rest-beta) method on a [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
+          "Target": "incident"
         }
       ],
       "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
