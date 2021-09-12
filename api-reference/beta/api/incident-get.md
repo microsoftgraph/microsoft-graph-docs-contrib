@@ -2,7 +2,7 @@
 title: "Get incident"
 description: "Retrieve the properties and relationships of an incident object."
 author: "BenAlfasi"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
