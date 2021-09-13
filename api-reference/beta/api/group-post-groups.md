@@ -129,7 +129,7 @@ Content-length: 244
 
 #### Response
 
-The following is an example of the response.
+The following is an example of the response. The value of the preferredDataLocation property is inherited from the group creator's preferred data location.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -216,7 +216,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members.
+The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. The value of the preferredDataLocation property is inherited from the group creator's preferred data location.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -317,7 +317,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following is an example of the response. The value of the preferredDataLocation property is inherited from the group creator's preferred data location.
 
 <!-- {
   "blockType": "response",
