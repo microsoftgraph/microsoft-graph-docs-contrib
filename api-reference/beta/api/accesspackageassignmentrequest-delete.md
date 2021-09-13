@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-This request can be made to remove a denied or completed request.  You cannot delete an access package assignment request if it has any **accessPackageAssignment**.
+This request can be made to remove a denied or completed request.  You cannot delete an access package assignment request if it has any **accessPackageAssignment** objects.
 
 ## Permissions
 
@@ -59,7 +59,9 @@ The following is an example of the request.
   "blockType": "request",
   "name": "delete_accesspackageassignmentrequest"
 }-->
-
+```http
+DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}
+```
 
 ### Response
 

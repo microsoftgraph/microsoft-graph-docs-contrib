@@ -7,7 +7,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "Delete",
         "ChangeType": "Addition",
-        "Description": "Added the [delete](https://docs.microsoft.com/en-us/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta) operation for an [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Description": "Added the [delete](https://docs.microsoft.com/en-us/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta) operation to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
         "Target": "Delete"
       }
      ],
