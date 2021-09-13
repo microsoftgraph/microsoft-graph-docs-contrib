@@ -41,7 +41,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |inviteRedirectUrl|String|The URL user should be redirected to once the invitation is redeemed. Required.|
 |inviteRedeemUrl|String|The URL the user can use to redeem their invitation. Read-only.|
 |invitedUserType|String|The userType of the user being invited. By default, this is `Guest`. You can invite as `Member` if you're are company administrator. The default is `false`. |
-|resetRedemption|Boolean|Reset the user's redemption status and reinvite a user while retaining their user identifier, group memberships, and app assignments. This property allows you to enable a user to sign-in using a different email address from the one in the previous invitation. For more information about using this property, see [Reset redemption status for a guest user (Preview)](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/reset-redemption-status#use-microsoft-graph-api-to-reset-redemption-status).|
+|resetRedemption|Boolean|Reset the user's redemption status and reinvite a user while retaining their user identifier, group memberships, and app assignments. This property allows you to enable a user to sign-in using a different email address from the one in the previous invitation. For more information about using this property, see [Reset redemption status for a guest user (Preview)](/azure/active-directory/external-identities/reset-redemption-status#use-microsoft-graph-api-to-reset-redemption-status).|
 |sendInvitationMessage|Boolean|Indicates whether an email should be sent to the user being invited. The default is `false`.|
 |status|String|The status of the invitation. Possible values: `PendingAcceptance`, `Completed`, `InProgress`, and `Error`|
 
