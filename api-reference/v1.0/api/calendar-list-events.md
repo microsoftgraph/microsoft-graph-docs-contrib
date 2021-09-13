@@ -68,6 +68,7 @@ Here is an example of the request.
   "name": "calendar_get_events"
 }-->
 ```msgraph-interactive
+
 GET https://graph.microsoft.com/v1.0/me/calendar/events
 GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subject,'All')&messages?$filter=from/emailAddress/address eq 'admin@contoso.com'
 ```
