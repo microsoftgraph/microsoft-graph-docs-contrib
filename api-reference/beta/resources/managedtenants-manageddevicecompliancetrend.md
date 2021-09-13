@@ -2,7 +2,7 @@
 title: "managedDeviceComplianceTrend resource type"
 description: "Represents a trend of compliant and non-compliant devices for a given managed tenant."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType
 ---

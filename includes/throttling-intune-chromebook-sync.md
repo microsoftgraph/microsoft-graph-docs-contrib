@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---
@@ -14,4 +14,7 @@ ms.topic: include
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-chromeOSOnboardingSettings.
+
+| <!-- fake header-->                                                                            |
+|------------------------------------------------------------------------------------------------|
+| <ul> <li> [chromeOSOnboardingSettings](/graph/api/resources/chromeosonboardingsettings)  </ul> |

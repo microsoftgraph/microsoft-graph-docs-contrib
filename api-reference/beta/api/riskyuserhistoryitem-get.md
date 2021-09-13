@@ -1,7 +1,7 @@
 ---
 title: "Get history item of riskyUser"
 description: "Get a history item of a riskyUser object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "cloudhandler"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
+|Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
+|Application | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

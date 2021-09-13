@@ -2,7 +2,7 @@
 title: "Identity Protection APIs"
 description: "identityProtectionRoot resource type"
 author: "cloudhandler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

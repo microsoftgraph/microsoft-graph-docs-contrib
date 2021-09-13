@@ -2,7 +2,7 @@
 title: "teamMembersNotificationRecipient resource type"
 description:  Represents the recipient of a notification sent in a Microsoft Teams activity feed. The recipient consists of the team members.
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---

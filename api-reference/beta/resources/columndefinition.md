@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Represents a column in a site, a list, or a contentType."
 ms.date: 09/11/2017
 title: ColumnDefinition
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

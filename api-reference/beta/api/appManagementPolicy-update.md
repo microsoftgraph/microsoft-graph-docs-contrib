@@ -1,7 +1,7 @@
 ---
 title: "Update appManagementPolicy"
 description: "Update an application management policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

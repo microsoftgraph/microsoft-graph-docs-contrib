@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph API to work with Microsoft Teams"
 description: "Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: conceptualPageType

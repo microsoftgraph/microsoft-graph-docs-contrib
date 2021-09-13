@@ -2,7 +2,7 @@
 title: "Update b2cIdentityUserFlow"
 description: "Update the properties of a b2cIdentityUserFlow object."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

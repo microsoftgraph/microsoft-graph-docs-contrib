@@ -2,7 +2,7 @@
 title: "timeCard: clockOut"
 description: "Clock Out to end an open timecard."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Add owner"
 description: "Add an owner to an application."
 author: "sureshja"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---

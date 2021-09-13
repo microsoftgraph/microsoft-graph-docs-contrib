@@ -2,7 +2,7 @@
 title: "Get started with the Microsoft Graph authentication methods API"
 description: "The authentication methods API in Microsoft Graph gives organizations the ability to programmatically manage their users' authentication methods, getting users registered to do multi-factor authentication (MFA) and self-service password reset (SSPR)."
 author: "mmcla"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "identity-and-sign-in"
 ---
 

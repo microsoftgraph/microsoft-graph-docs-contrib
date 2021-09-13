@@ -1,7 +1,7 @@
 ---
 title: "secureScore resource type"
 description: "top=n, where n = the number of days of data that you want to retrieve. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 author: "preetikr"

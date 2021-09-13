@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: List
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "The list resource represents a list in a site."
 doc_type: resourcePageType

@@ -1,6 +1,6 @@
 ---
 author: "jackson-woods"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.topic: include
 ---
 

@@ -2,7 +2,7 @@
 title: "authenticationSourceFilter resource type"
 description: "Filter based on the source of the authentication which is used to determine whether the listener is executed or not."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
