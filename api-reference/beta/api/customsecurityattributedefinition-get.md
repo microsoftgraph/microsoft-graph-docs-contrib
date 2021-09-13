@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.customSecurityAttributeDefinition"
+  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
 }
 -->
 ``` http
@@ -75,7 +75,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.customSecurityAttributeDefinition",
+    "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
     "attributeSet": "String",
     "description": "String",
     "id": "7d3ae811-e811-7d3a-11e8-3a7d11e83a7d",
