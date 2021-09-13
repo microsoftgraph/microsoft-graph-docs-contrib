@@ -2487,18 +2487,6 @@ Possible values for user account types (group membership), per Windows definitio
 |screenShare|
 |unknownFutureValue|
 
-### trainingStatus values
-
-|Member|
-|:---|
-|unknown|
-|assigned|
-|inProgress|
-|completed|
-|overdue|
-|notCompleted|
-|unknownFutureValue|
-
 ### simulationAttackTechnique values
 
 |Member|

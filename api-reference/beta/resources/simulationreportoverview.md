@@ -1,6 +1,6 @@
 ---
 title: "simulationReportOverview resource type"
-description: "Represents overview report of a attack simulation and training campaign."
+description: "Represents overview report of an attack simulation and training campaign."
 author: "Gopal-MSFT"
 ms.localizationpriority: Menium
 ms.prod: "security"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents overview report of a attack simulation and training campaign.
+Represents overview report of an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|recommendedActions|[recommendedAction](../resources/recommendedaction.md) collection|List of recommended actions for a tenant to improve its security posture based on the simulation.|
-|resolvedTargetsCount|Int32|Count of valid users in the simulation.|
-|simulationEventsContent|[simulationEventsContent](../resources/simulationeventscontent.md)|List of simulation events in the simulation.|
-|trainingEventsContent|[trainingEventsContent](../resources/trainingeventscontent.md)|List of training events in the simulation.|
+|recommendedActions|[recommendedAction](../resources/recommendedaction.md) collection|List of recommended actions for a tenant to improve its security posture based on the attack simulation and training campaign attack type.|
+|resolvedTargetsCount|Int32|Number of valid users in the attack simulation and training campaign.|
+|simulationEventsContent|[simulationEventsContent](../resources/simulationeventscontent.md)|Summary of simulation events in the attack simulation and training campaign.|
+|trainingEventsContent|[trainingEventsContent](../resources/trainingeventscontent.md)|Summary of assigned trainings in the attack simulation and training campaign.|
 
 ## Relationships
 None.

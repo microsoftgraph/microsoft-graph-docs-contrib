@@ -18,11 +18,11 @@ Represents simulation event of a user in a tenant in an attack simulation and tr
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|browser|String|Browser of the user for the simulation event.|
-|eventDateTime|DateTimeOffset|Date and time of the simulation event.|
-|eventName|String|Name of the simulation event.|
-|ipAddress|String|IP address of the user for the simulation event.|
-|osPlatformDeviceDetails|String|OS, platform and device details of the user for the simulation event.|
+|browser|String|Browser information from where the simulation event was initiated by a user in an attack simulation and training campaign.|
+|eventDateTime|DateTimeOffset|Date and time of the simulation event by a user in an attack simulation and training campaign.|
+|eventName|String|Name of the simulation event by a user in an attack simulation and training campaign.|
+|ipAddress|String|IP address from where the simulation event was initiated by a user in an attack simulation and training campaign.|
+|osPlatformDeviceDetails|String|OS, platform and device details from where the simulation event was initiated by a user in an attack simulation and training campaign.|
 
 ## Relationships
 None.

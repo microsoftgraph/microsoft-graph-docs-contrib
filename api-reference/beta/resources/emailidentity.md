@@ -1,6 +1,6 @@
 ---
 title: "emailIdentity resource type"
-description: "Represent email identity of a user of a tenant."
+description: "Represent email identity of a user."
 author: "Gopal-MSFT"
 ms.localizationpriority: Menium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent email identity of a user of a tenant.
+Represent email identity of a user.
 
 
 Inherits from [identity](../resources/identity.md).

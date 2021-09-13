@@ -1,6 +1,6 @@
 ---
 title: "trainingEventsContent resource type"
-description: "Represents training events for a tenant in attack simulation and training campaign."
+description: "Represents training events in an attack simulation and training campaign."
 author: "Gopal-MSFT"
 ms.localizationpriority: Menium
 ms.prod: "security"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents training events for a tenant in attack simulation and training campaign.
+Represents training events in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTrainingsInfos|[assignedTrainingInfo](../resources/assignedtraininginfo.md) collection|List of assigned trainings and their properties in the simulation.|
-|trainingsAssignedUserCount|Int32|Count of users assigned trainings in the simulation.|
+|assignedTrainingsInfos|[assignedTrainingInfo](../resources/assignedtraininginfo.md) collection|List of assigned trainings and their information in an attack simulation and training campaign.|
+|trainingsAssignedUserCount|Int32|Number of users who were assigned trainings in an attack simulation and training campaign.|
 
 ## Relationships
 None.

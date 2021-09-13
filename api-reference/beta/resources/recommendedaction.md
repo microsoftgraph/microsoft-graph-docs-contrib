@@ -1,6 +1,6 @@
 ---
 title: "recommendedAction resource type"
-description: "Represents recommended actions to be undertaken by tenant based on attack simulation and training campaigns to improve its security posture."
+description: "Represents recommended actions for a tenant based on the attack simulation and training campaign to improve its security posture."
 author: "Gopal-MSFT"
 ms.localizationpriority: Menium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents recommended actions to be undertaken by tenant based on attack simulation and training campaigns to improve its security posture.
+Represents recommended actions for a tenant based on the attack simulation and training campaign to improve its security posture.
 
 ## Properties
 |Property|Type|Description|

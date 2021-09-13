@@ -1,6 +1,6 @@
 ---
 title: "assignedTrainingInfo resource type"
-description: "Represents assigned training in attack simulation and training campaign."
+description: "Represents assigned training's information in an attack simulation and training campaign."
 author: "Gopal-MSFT"
 ms.localizationpriority: Menium
 ms.prod: "security"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents assigned training in attack simulation and training campaign.
+Represents assigned training's information in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedUserCount|Int32|Count of users assigned the training.|
-|completedUserCount|Int32|Count of users completed the training.|
-|displayName|String|Display name of the training.|
+|assignedUserCount|Int32|Number of users who were assigned the training in an attack simulation and training campaign.|
+|completedUserCount|Int32|Number of users who completed the training in an attack simulation and training campaign.|
+|displayName|String|Display name of the training in an attack simulation and training campaign.|
 
 ## Relationships
 None.

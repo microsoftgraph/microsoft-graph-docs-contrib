@@ -1,6 +1,6 @@
 ---
 title: "simulationEventsContent resource type"
-description: "Represents list of simulation events in an attack simulation and training campaign."
+description: "Represents simulation events in an attack simulation and training campaign."
 author: "Gopal-MSFT"
 ms.localizationpriority: Menium
 ms.prod: "security"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents list of simulation events in an attack simulation and training campaign.
+Represents simulation events in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |compromisedRate|Double|Actual percentage of users that fell for the simulated attack.|
-|events|[simulationEvent](../resources/simulationevent.md) collection|List of simulation events.|
+|events|[simulationEvent](../resources/simulationevent.md) collection|List of simulation events in an attack simulation and training campaign.|
 
 ## Relationships
 None.

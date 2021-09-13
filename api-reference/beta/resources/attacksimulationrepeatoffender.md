@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationRepeatOffender resource type"
-description: "Represents repeat offender user of a tenant in attack simulation and training."
+description: "Represents repeat offender user in attack simulation and training."
 author: "Gopal-MSFT"
 ms.localizationpriority: Menium
 ms.prod: "reports"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents repeat offender user of a tenant in attack simulation and training.
+Represents repeat offender user in attack simulation and training.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User of a tenant in attack simulation and training campaign|
-|repeatOffenceCount|Int32|Count of repeat offences of a user|
+|attackSimulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User in an attack simulation and training campaign.|
+|repeatOffenceCount|Int32|Number of repeat offences of the user in attack simulation and training campaigns.|
 
 ## Relationships
 None.

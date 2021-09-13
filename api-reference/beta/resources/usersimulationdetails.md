@@ -20,12 +20,12 @@ Represents a user of a tenant and its online actions in an attack simulation and
 |:---|:---|:---|
 |assignedTrainingsCount|Int32|Count of assigned trainings to a user in the simulation.|
 |completedTrainingsCount|Int32|Count of completed trainings by a user in the simulation.|
-|compromisedDateTime|DateTimeOffset|Date and time of compromised event from a user in the simulation.|
+|compromisedDateTime|DateTimeOffset|Date and time of the compromised event by a user in the attack simulation and training campaign.|
 |inProgressTrainingsCount|Int32|Count of in-progress trainings by a user in the simulation.|
 |isCompromised|Boolean|Flag representing if user was compromised in the simulation.|
-|reportedPhishDateTime|DateTimeOffset|Date and time of the event when user reported payload as phish in the simulation.|
+|reportedPhishDateTime|DateTimeOffset|Date and time when user reported delivered payload as phish in the attack simulation and training campaign.|
 |simulationEvents|[userSimulationEventInfo](../resources/usersimulationeventinfo.md) collection|List of simulation events of a user in the simulation.|
-|simulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User of a tenant in attack simulation and training campaign|
+|simulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|User in an attack simulation and training campaign.|
 |trainingEvents|[userTrainingEventInfo](../resources/usertrainingeventinfo.md) collection|List of training events of a user in the simulation.|
 
 ## Relationships

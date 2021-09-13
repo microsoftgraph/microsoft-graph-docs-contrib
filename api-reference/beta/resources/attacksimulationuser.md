@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationUser resource type"
-description: "User of a tenant in an attack simulation and training campaign."
+description: "User in an attack simulation and training campaign."
 author: "Gopal-MSFT"
 ms.localizationpriority: Menium
 ms.prod: "reports"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-User of a tenant in an attack simulation and training campaign.
+User in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name of the user|
-|email|String|Email address of the user|
-|userId|String|AAD object id of the user|
+|displayName|String|Display name of a user.|
+|email|String|Email address of a user.|
+|userId|String|External directory object id of a user.|
 
 ## Relationships
 None.

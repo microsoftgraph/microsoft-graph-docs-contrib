@@ -96,33 +96,36 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.simulation",
       "id": "f1b13829-3829-f1b1-2938-b1f12938b1f1",
-      "displayName": "String",
-      "description": "String",
-      "attackType": "String",
-      "attackTechnique": "String",
-      "status": "String",
-      "createdDateTime": "String (timestamp)",
+      "displayName": "Sample Simulation",
+      "description": "Sample Simulation Description",
+      "attackType": "social",
+      "attackTechnique": "credentialHarvesting",
+      "status": "scheduled",
+      "createdDateTime": "2021-01-01T01:01:01.01Z",
       "createdBy": {
-        "@odata.type": "microsoft.graph.emailIdentity"
+        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Sample User",
+        "email": "sampleuser@contoso.com"
       },
-      "lastModifiedDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "2021-01-01T01:01:01.01Z",
       "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.emailIdentity"
+        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Sample User",
+        "email": "sampleuser@contoso.com"
       },
-      "launchDateTime": "String (timestamp)",
-      "completionDateTime": "String (timestamp)",
-      "includeAllAccountTargets": "Boolean",
-      "enableRegionTimezoneDelivery": "Boolean",
-      "mode": "String",
-      "isAutomated": "Boolean",
-      "cleanupArtifacts": "Boolean",
-      "payloadSource": "String",
-      "payloadDeliveryPlatform": "String",
-      "trainingAssignmentPreference": "String",
-      "trainingContentPreference": "String",
-      "trainingDueDateTime": "String (timestamp)"
+      "launchDateTime": "2021-01-01T02:01:01.01Z",
+      "completionDateTime": "2021-01-07T01:01:01.01Z",
+      "includeAllAccountTargets": false,
+      "enableRegionTimezoneDelivery": false,
+      "mode": "real",
+      "isAutomated": false,
+      "cleanupArtifacts": false,
+      "payloadSource": "global",
+      "payloadDeliveryPlatform": "email",
+      "trainingAssignmentPreference": "manual",
+      "trainingContentPreference": "microsoft",
+      "trainingDueDateTime": "2021-01-31T01:01:01.01Z"
     }
   ]
 }

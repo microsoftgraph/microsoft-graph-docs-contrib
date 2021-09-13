@@ -91,25 +91,59 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.userSimulationDetails",
-      "isCompromised": "Boolean",
-      "compromisedDateTime": "String (timestamp)",
+      "isCompromised": true,
+      "compromisedDateTime": "2021-01-01T01:02:01.01Z",
       "simulationEvents": [
         {
-          "@odata.type": "microsoft.graph.userSimulationEventInfo"
+          "eventName": "SuccessfullyDeliveredEmail",
+          "eventDateTime": "2021-01-01T01:01:01.01Z",
+          "ipAddress": "100.200.100.200",
+          "osPlatformDeviceDetails": "Sample OS",
+          "browser": "Sample Browser"
+        },
+        {
+          "eventName": "EmailLinkClicked",
+          "eventDateTime": "2021-01-01T01:02:01.01Z",
+          "ipAddress": "100.200.100.200",
+          "osPlatformDeviceDetails": "Sample OS",
+          "browser": "Sample Browser"
         }
       ],
       "trainingEvents": [
         {
-          "@odata.type": "microsoft.graph.userTrainingEventInfo"
+          "displayName": "Sample Training",
+          "latestTrainingStatus": "assigned",
+          "trainingAssignedProperties": {
+            "contentDateTime": "2021-01-01T01:03:01.01Z",
+            "ipAddress": "100.200.100.200",
+            "osPlatformDeviceDetails": "Sample OS",
+            "browser": "Sample Browser",
+            "potentialScoreImpact": 5
+          },
+          "trainingUpdatedProperties": {
+            "contentDateTime": "2021-01-01T01:04:01.01Z",
+            "ipAddress": "100.200.100.201",
+            "osPlatformDeviceDetails": "Sample OS-2",
+            "browser": "Sample Browser",
+            "potentialScoreImpact": 5
+          },
+          "trainingCompletedProperties": {
+            "contentDateTime": "2021-01-01T01:05:01.01Z",
+            "ipAddress": "100.200.100.202",
+            "osPlatformDeviceDetails": "Sample OS",
+            "browser": "Sample Browser-2",
+            "potentialScoreImpact": 5
+          }
         }
       ],
-      "assignedTrainingsCount": "Integer",
-      "completedTrainingsCount": "Integer",
-      "inProgressTrainingsCount": "Integer",
-      "reportedPhishDateTime": "String (timestamp)",
+      "assignedTrainingsCount": 1,
+      "completedTrainingsCount": 0,
+      "inProgressTrainingsCount": 0,
+      "reportedPhishDateTime": "2021-01-01T01:01:01.01Z",
       "simulationUser": {
-        "@odata.type": "microsoft.graph.attackSimulationUser"
+        "userId": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Sample User",
+        "email": "sampleuser@contoso.com"
       }
     }
   ]
