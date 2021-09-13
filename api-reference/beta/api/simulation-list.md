@@ -34,11 +34,11 @@ GET /security/attackSimulation/simulations
 ```
 
 ## Optional query parameters
-This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$orderby`, `$skiptoken`, and `$top`. 
+This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$orderby`, `$skiptoken`, `$top`.
 
-The following properties support `$filter` and `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **mode**, and **status**.
+The following properties support `$filter` and `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **mode**, **status**.
 
-Use `@odata.nextLink` for pagination. For general information, see [OData query parameters](/graph/query-parameters).
+Use `@odata.nextLink` for pagination.
 
 The following are examples of their use:
 
@@ -53,6 +53,8 @@ GET /security/attackSimulation/simulations?$filter={property} eq '{property-valu
 GET /security/attackSimulation/simulations?$orderby={property}
 GET /security/attackSimulation/simulations?$top=1
 ```
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

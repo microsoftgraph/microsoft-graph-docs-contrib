@@ -31,18 +31,25 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /security/attackSimulation/simulations/{id}/report/simulationUsers
+```
+
+## Optional query parameters
+This method supports the following OData query parameters to help customize the response: `$count`, `$skiptoken`, `$top`.
+
+Use `@odata.nextLink` for pagination.
+
+The following are examples of their use:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 GET /security/attackSimulation/simulations/{id}/report/simulationUsers?$top=1
 GET /security/attackSimulation/simulations/{id}/report/simulationUsers?$count=true
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-- `$count`
-- `$skiptoken`
-- `$top`
-
-> **Note:** Use `@odata.nextLink` for pagination.
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
