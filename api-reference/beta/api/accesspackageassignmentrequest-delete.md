@@ -1,7 +1,7 @@
 ---
 title: "Delete accessPackageAssignmentRequest"
 description: "Delete accessPackageAssignmentRequest."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-This request can be made to remove a denied or completed request.  You cannot delete an access package assignment requset if it has any **accessPackageAssignment**.
+This request can be made to remove a denied or completed request.  You cannot delete an access package assignment request if it has any **accessPackageAssignment**.
 
 ## Permissions
 
