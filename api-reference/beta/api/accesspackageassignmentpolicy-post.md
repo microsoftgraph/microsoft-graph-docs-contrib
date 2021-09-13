@@ -376,7 +376,7 @@ Content-type: application/json
             }]
         },
         "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-        "isAnswerEditable": null,
+        "isAnswerEditable": null,upd
         "isSingleLineQuestion": false
     }]
 }

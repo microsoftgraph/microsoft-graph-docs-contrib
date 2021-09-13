@@ -3,7 +3,7 @@ title: "accesspakageuserdirectoryattributestore resource type"
 description: "The type of attribute source for the Azure Active Directory end system."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "Governance"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A child of **accessPackageAttributeDestination** that is the type of attribute source for the Azure Active Directory end system. Inherits from [accessPackageAttributeDestination](../resources/accesspackageattributedestination.md). 
+A child of **accessPackageAttributeDestination** that is the type of attribute source for the Azure Active Directory end system. Inherits from [accessPackageResourceAttributeDestination](../resources/accesspackageresourceattributedestination.md). 
 
 ## Properties
 None.

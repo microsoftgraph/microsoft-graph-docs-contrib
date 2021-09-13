@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A question provided to an end user, for the purpose of obtaining an attribute value to be passed to the end system and/or request approver. 
 
-Inherits from [accessPackageAttributeSource](../resources/accesspackageattributesource.md).
+Inherits from [accessPackageResourceAttributeSource](../resources/accesspackageattributesource.md).
 
 ## Properties
 None.

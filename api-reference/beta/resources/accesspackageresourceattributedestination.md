@@ -3,7 +3,7 @@ title: "accessPackageResourceAttributeDestination resource type"
 description: "Child of accessPackageQuestion that is a complex type of the destination of an access package attribute."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "Governance"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A child of **accessPackageQuestion** that is a complex type of the destination of an access package attribute. The actual destination will be a subtype of this complex type. Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 
-Currently,the only supported subtype is [accessPackageUserDirectoryAttributeStore](accesspackageuserdirectoryattributestore.md).  
+Currently,the only supported subtype is [accessPackageUserDirectoryAttributeStore](../resources/accesspackageuserdirectoryattributestore.md).  
 
 ## Properties
 None.

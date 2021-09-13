@@ -3,7 +3,7 @@ title: "accessPackageResourceAttributeSource resource type"
 description: Used for the `accessPackageAttribute` property of an access package resource.
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "Governance"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is the complex type of the source of an [accessPackageAttribute](accesspackageattribute.md). The actual source will be a subtype of this complex type. Currently, the only supported subtype is [accessPackageAttributeQuestion](accesspackageattributequestion.md). 
+This is the complex type of the source of an [accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md). The actual source will be a subtype of this complex type. Currently, the only supported subtype is [accessPackageResourceAttributeQuestion](../resources/accesspackageresourceattributequestion.md). 
 
 ## Properties
 None.
