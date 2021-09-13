@@ -81,6 +81,7 @@ Content-length: 119
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
+  "@odata.type": "microsoft.graph.attributeSet",
   "truncated": true
 }
 -->
