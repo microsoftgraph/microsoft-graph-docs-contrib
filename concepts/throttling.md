@@ -248,7 +248,7 @@ Other factors that affect a request cost:
 - Using `$select` decreases cost by 1
 - Using `$expand` increases cost by 1
 - Using `$top` with a value of less than 20 decreases cost by 1
-- Creating a user in a mega tenant increases cost by 4
+- Creating a user in an Azure AD B2C tenant increases cost by 4
 
 > **Note:** A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
 
