@@ -118,21 +118,21 @@ Content-Type: application/json
             "ipAddress": "100.200.100.200",
             "osPlatformDeviceDetails": "Sample OS",
             "browser": "Sample Browser",
-            "potentialScoreImpact": 5
+            "potentialScoreImpact": 5.0
           },
           "trainingUpdatedProperties": {
             "contentDateTime": "2021-01-01T01:04:01.01Z",
             "ipAddress": "100.200.100.201",
             "osPlatformDeviceDetails": "Sample OS-2",
             "browser": "Sample Browser",
-            "potentialScoreImpact": 5
+            "potentialScoreImpact": 5.0
           },
           "trainingCompletedProperties": {
             "contentDateTime": "2021-01-01T01:05:01.01Z",
             "ipAddress": "100.200.100.202",
             "osPlatformDeviceDetails": "Sample OS",
             "browser": "Sample Browser-2",
-            "potentialScoreImpact": 5
+            "potentialScoreImpact": 5.0
           }
         }
       ],

@@ -70,19 +70,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.type": "microsoft.graph.simulationReportOverview",
   "resolvedTargetsCount": 1,
   "simulationEventsContent": {
-    "compromisedRate": 100,
+    "compromisedRate": 100.0,
     "events": [
       {
+        "@odata.type": "microsoft.graph.simulationEvent",
         "eventName": "SuccessfullyDeliveredMail",
         "count": 1
       },
       {
+        "@odata.type": "microsoft.graph.simulationEvent",
         "eventName": "ReportedEmail",
         "count": 0
       },
       {
+        "@odata.type": "microsoft.graph.simulationEvent",
         "eventName": "EmailLinkClicked",
         "count": 1
       }
@@ -92,6 +96,7 @@ Content-Type: application/json
     "trainingsAssignedUserCount": 1,
     "assignedTrainingsInfos": [
       {
+        "@odata.type": "microsoft.graph.assignedTrainingsInfo",
         "assignedUserCount": 1,
         "completedUserCount": 0,
         "displayName": "Sample Training"
@@ -100,9 +105,10 @@ Content-Type: application/json
   },
   "recommendedActions": [
     {
+      "@odata.type": "microsoft.graph.recommendedAction",
       "actionWebUrl": "https://recommendedSecurityAction.com",
       "title": "Sample Recommended Security Feature",
-      "potentialScoreImpact": 5
+      "potentialScoreImpact": 5.0
     }
   ]
 }
