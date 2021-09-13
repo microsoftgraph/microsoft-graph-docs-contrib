@@ -10701,9 +10701,9 @@ items:
             href: resources/allowedvalue.md
             items:
             - name: List
-              href: api/allowedvalue-list.md
+              href: api/customsecurityattributedefinition-list-allowedvalues.md
             - name: Create
-              href: api/allowedvalue-create.md
+              href: api/customsecurityattributedefinition-post-allowedvalues.md
             - name: Get
               href: api/allowedvalue-get.md
             - name: Update
@@ -10714,9 +10714,9 @@ items:
             href: resources/attributeset.md
             items:
             - name: List
-              href: api/attributeset-list.md
+              href: api/directory-list-attributesets.md
             - name: Create
-              href: api/attributeset-create.md
+              href: api/directory-post-attributesets.md
             - name: Get
               href: api/attributeset-get.md
             - name: Update
@@ -10727,9 +10727,9 @@ items:
             href: resources/customsecurityattributedefinition.md
             items:
             - name: List
-              href: api/customsecurityattributedefinition-list.md
+              href: api/directory-list-customsecurityattributedefinitions.md
             - name: Create
-              href: api/customsecurityattributedefinition-create.md
+              href: api/directory-post-customsecurityattributedefinitions.md
             - name: Get
               href: api/customsecurityattributedefinition-get.md
             - name: Update
