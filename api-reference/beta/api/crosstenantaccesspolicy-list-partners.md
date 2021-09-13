@@ -2,8 +2,8 @@
 title: "List partners"
 description: "Get a list of all partner configurations within a cross-tenant access policy."
 author: "jkdouglas"
-ms.localizationpriority: Medium
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

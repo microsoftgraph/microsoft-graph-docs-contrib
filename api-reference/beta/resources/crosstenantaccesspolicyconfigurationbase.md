@@ -2,8 +2,8 @@
 title: "crossTenantAccessPolicyConfigurationBase resource type"
 description: "Defines the properties that are common in a cross-tenant access policy configuration for the default and partner-specific settings."
 author: "jkdouglas"
-ms.localizationpriority: Medium
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -2,8 +2,8 @@
 title: "crossTenantAccessPolicyConfigurationPartner resource type"
 description: "The partner-specific configuration that is defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration."
 author: "jkdouglas"
-ms.localizationpriority: Medium
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

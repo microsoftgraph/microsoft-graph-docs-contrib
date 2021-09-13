@@ -2,8 +2,8 @@
 title: "Update crossTenantAccessPolicyConfigurationPartner"
 description: "Update the properties of a partner-specific configuration."
 author: "jkdouglas"
-ms.localizationpriority: Medium
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

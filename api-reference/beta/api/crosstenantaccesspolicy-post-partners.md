@@ -2,8 +2,8 @@
 title: "Create crossTenantAccessPolicyConfigurationPartner"
 description: "Create a new partner configuration in a cross-tenant access policy."
 author: "jkdouglas"
-ms.localizationpriority: Medium
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
