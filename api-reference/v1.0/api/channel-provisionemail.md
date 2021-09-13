@@ -2,7 +2,7 @@
 title: "channel: provisionEmail"
 description: "Provision an email address for a channel."
 author: "anandab-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
