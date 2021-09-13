@@ -20,7 +20,7 @@ Create a new [group](../resources/group.md) as specified in the request body. Yo
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
 
->**Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
+**Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,29 +46,23 @@ POST /groups
 
 ## Request body
 
-The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group.
+In the request body, supply a JSON representation of the [group](../resources/group.md) object.
+
+The following table shows the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
-| description | string | A description for the group. Optional. |
-| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
+| mailEnabled | boolean | Set to `true` for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Max. length: 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
-| owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Owners aren't automatically added as group members unless specified in the **members** property. Optional. |
-| members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
-|visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
+| securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.|
 
-> **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
+> [!IMPORTANT]
+> Creating a group using the **Group.Create** application permission without specifying owners will create the group anonymously and the group will not be modifiable. Add owners to the group while creating it to specify owners who can modify the group.
+>
+>Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
 
-Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
-
->**Note:** Creating a group using the Group.Create application permission without specifying owners will create the group anonymously and the group will not be modifiable. You can use the `POST` operation and add owners to the group while creating it to specify owners who can modify the group.
-
-> Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
-
-Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
+Because the **group** resource supports [extensions](/graph/extensibility-overview), you can add custom properties with your own data to the group while creating it.
 
 ### groupTypes options
 
@@ -276,7 +270,9 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.  The calling user or app must be assigned the *RoleManagement.ReadWrite.Directory* permission to set the **isAssignableToRole** property or update the membership of such groups.
+The following is an example of the request.  The calling user or app must be assigned the *RoleManagement.ReadWrite.Directory* permission to set the **isAssignableToRole** property or update the membership of such groups. 
+
+**NOTE:** A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
 
 
 # [HTTP](#tab/http)
@@ -319,12 +315,9 @@ Content-Type: application/json
 
 ---
 
-
-> **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values. A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
-
 #### Response
 
-The following is an example of the response. It includes only default properties.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

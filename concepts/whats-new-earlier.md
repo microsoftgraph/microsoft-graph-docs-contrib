@@ -1,5 +1,5 @@
 ---
-title: "Hightlights of earlier releases in Microsoft Graph"
+title: "Highlights of earlier releases in Microsoft Graph"
 description: "What was new earlier in Microsoft Graph"
 author: "angelgolfer-ms"
 ms.localizationpriority: high
