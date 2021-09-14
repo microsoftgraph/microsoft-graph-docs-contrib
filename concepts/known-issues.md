@@ -37,7 +37,7 @@ In development:
 * Support for appRoles, pre-authorized clients, optional claims, group membership claims, and branding
 * Microsoft account (MSA) users can register apps.
 
-### Azure AD v2.0 endpoint not supported for CSP apps
+### Azure AD v2.0 endpoint is not supported for CSP apps
 
 Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
 
@@ -52,7 +52,7 @@ We are working to fix this issue as soon as possible, so that pre-consent will w
 
 In the meantime, to unblock development and testing, you can use the following workaround.
 
->**Note:** This is not a permanent solution and is only intended to unblock development.  This workaround will not be required after the issue is fixed. This workaround does not need to be undone after the fix is in place.
+>**Note:** This is not a permanent solution and is only intended to unblock development. This workaround will not be required after the issue is fixed. This workaround does not need to be undone after the fix is in place.
 
 1. Open an Azure AD v2 PowerShell session and connect to your `customer` tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
 
@@ -132,7 +132,7 @@ Currently, calendars based on an Internet Calendar Subscription (ICS) are only p
 ### Error attaching large files to events
 An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession) succeeds only if the message or event is in the signed-in user's mailbox.
 
-### onlineMeetingUrl property not supported for Microsoft Teams
+### onlineMeetingUrl property is not supported for Microsoft Teams
 
 Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
@@ -150,7 +150,7 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 ## Cloud communications 
 
-### View meeting details menu not available on Microsoft Teams client
+### View meeting details menu is not available on Microsoft Teams client
 
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
@@ -247,7 +247,7 @@ Directory resources, such as **device**, **group**, and **user**, currently limi
 
 When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appid` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which is not the same as the **owner**.
 
-### Filtering on schema extension properties not supported on all entity types
+### Filtering on schema extension properties is not supported on all entity types
 
 Filtering on schema extension properties (using the `$filter` expression) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
 
@@ -288,7 +288,7 @@ Examples of group features that support only delegated permissions:
 
 Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Microsoft 365 group policies that are configured through Outlook on the web.
 
-### The allowExternalSenders property cannot be set in a POST or PATCH operation
+### allowExternalSenders property cannot be set in a POST or PATCH operation
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
