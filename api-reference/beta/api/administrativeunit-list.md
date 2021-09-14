@@ -1,8 +1,8 @@
 ---
 title: "List administrativeUnits"
 description: "Retrieve a list of administrativeUnit objects."
-author: "anandyadavMSFT"
-localization_priority: Normal
+author: "DougKirschner"
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

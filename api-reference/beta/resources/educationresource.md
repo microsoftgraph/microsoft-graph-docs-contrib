@@ -1,7 +1,7 @@
 ---
 title: "educationResource resource type"
 description: "A superclass for all resource objects in the system. A resource is associated with an **Assignment** and/or **Submission**, which represents the learning object that is being"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: resourcePageType
@@ -48,7 +48,6 @@ The following is a JSON representation of the resource.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

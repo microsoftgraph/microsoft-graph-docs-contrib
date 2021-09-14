@@ -1,7 +1,7 @@
 ---
 title: "Use the Outlook mail REST API"
 description: "Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: conceptualPageType
@@ -24,7 +24,7 @@ or the `me` shortcut alias for the signed-in user.
 Email messages are represented by the [message](../resources/message.md) resource and organized in a [mailFolder](../resources/mailfolder.md).
 Messages and mail folders are identified by their **id** property, obtainable from `GET` operations.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > In general, do not assume that **message** and **mailfolder** IDs are unique and always remain the same within a mailbox. They might change after certain
 actions such as copy or move. You can choose to use [immutable IDs](/graph/outlook-immutable-id) to retain the same ID as long as the message remains in the same mailbox, _with the exception of sending a draft message, and a few other scenarios_. See [lifetime of immutable IDs](/graph/outlook-immutable-id#lifetime-of-immutable-ids) for details.
 
@@ -85,6 +85,6 @@ The mail API can open up new ways for you to engage with users:
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).
 
 

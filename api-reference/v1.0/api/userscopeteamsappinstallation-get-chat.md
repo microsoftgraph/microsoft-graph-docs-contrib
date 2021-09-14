@@ -3,7 +3,7 @@ title: "Get 1:1 chat between the specified user and Teams app"
 description: "Retrieve one-on-one chat between the specified user and the Teams app."
 author: "AkJo"
 doc_type: "apiPageType"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 

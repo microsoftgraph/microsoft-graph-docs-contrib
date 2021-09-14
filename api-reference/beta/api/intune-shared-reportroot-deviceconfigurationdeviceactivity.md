@@ -2,7 +2,7 @@
 title: "deviceConfigurationDeviceActivity function"
 description: "Metadata for the device configuration device activity report"
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -69,7 +69,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: "Get a member"
 description: "Use this API to get a specific member (user or group) in an administrative unit."
-author: "anandyadavMSFT"
-localization_priority: Normal
+author: "DougKirschner"
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

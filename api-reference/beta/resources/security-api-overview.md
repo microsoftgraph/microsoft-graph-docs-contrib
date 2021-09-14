@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph Security API"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "preetikr"
 ms.prod: "security"
 doc_type: resourcePageType
@@ -116,7 +116,7 @@ The Microsoft Graph Security API can open up new ways for you to engage with dif
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
 - Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).
 
 ## See also
 

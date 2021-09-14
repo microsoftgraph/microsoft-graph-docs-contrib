@@ -1,7 +1,7 @@
 ---
 title: "Working with Azure Active Directory resources in Microsoft Graph"
 description: "With Microsoft Graph, you can access Azure Active Directory (Azure AD) resources to enable scenarios like managing administrator (directory) roles, inviting external users to an organization, and, if you are a Cloud Solution Provider (CSP), managing your customer's data. Microsoft Graph also provides methods that apps can use to, for example, discover information about users' transitive group and role memberships. "
-localization_priority: Priority
+ms.localizationpriority: high
 author: "dkershaw10"
 ms.prod: "identity-and-access"
 doc_type: conceptualPageType
@@ -55,4 +55,4 @@ Directory resources and APIs can open up new ways for you to engage with users a
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).

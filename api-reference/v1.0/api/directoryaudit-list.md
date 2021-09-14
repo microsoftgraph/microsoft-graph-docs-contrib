@@ -1,7 +1,7 @@
 ---
 title: "List directoryAudits"
 description: "Describes the list method of the directoryAudit resource (entity) from the Microsoft Graph API."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "SarahBar"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -21,7 +21,10 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | AuditLog.Read.All and Directory.Read.All    |
 | Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | AuditLog.Read.All                           |
+| Application                            | AuditLog.Read.All and Directory.Read.All    |
+
+> [!IMPORTANT]
+> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
 
 ## HTTP request
 

@@ -2,7 +2,7 @@
 title: "Create androidDeviceOwnerEnrollmentProfile"
 description: "Create a new androidDeviceOwnerEnrollmentProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -133,7 +133,6 @@ Content-Length: 930
   ]
 }
 ```
-
 
 
 

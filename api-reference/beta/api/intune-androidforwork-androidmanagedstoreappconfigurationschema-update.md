@@ -2,7 +2,7 @@
 title: "Update androidManagedStoreAppConfigurationSchema"
 description: "Update the properties of a androidManagedStoreAppConfigurationSchema object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -182,7 +182,6 @@ Content-Length: 1634
   ]
 }
 ```
-
 
 
 

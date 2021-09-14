@@ -2,7 +2,7 @@
 title: "iosHomeScreenItem resource type"
 description: "Represents an item on the iOS Home Screen"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -38,7 +38,6 @@ Here is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-
 
 
 

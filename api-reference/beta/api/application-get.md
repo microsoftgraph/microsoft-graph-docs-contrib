@@ -2,7 +2,7 @@
 title: "Get application"
 description: "Get the properties and relationships of an application object."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 doc_type: apiPageType
 ---
@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /applications/{id}
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
-
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific application properties.
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|
@@ -74,7 +73,7 @@ GET https://graph.microsoft.com/beta/applications/{id}
 ---
 
 ### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
