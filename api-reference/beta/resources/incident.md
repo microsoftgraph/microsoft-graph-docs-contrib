@@ -30,7 +30,7 @@ An incident in Microsoft 365 Defender is a collection of correlated alerts and a
 |:---|:---|:---|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned. Free editable text.|
 |classification|m365AlertClassification|The specification for the incident. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
-|comments|[m365AlertComment](../resources/m365alertcomment.md) collection|Array of comments created by SecOps when the incident is managed.|
+|comments|[m365AlertComment](../resources/m365alertcomment.md) collection|Array of comments created by the Security Operations (SecOps) team when the incident is managed.|
 |createdDateTime|DateTimeOffset|Time when the incident was first created.|
 |determination|m365AlertDetermination|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |displayName|String|The incident name.|
