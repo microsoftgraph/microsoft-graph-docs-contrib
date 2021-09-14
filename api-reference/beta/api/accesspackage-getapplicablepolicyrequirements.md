@@ -81,7 +81,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 
 ---
 
-
 #### Response
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -125,7 +124,7 @@ Content-Type: application/json
 }
 ``` 
 
-#### Example 2: Get policy requirements with given user scope in request body
+### Example 2: Get policy requirements with given user scope in request body
 
 #### Request
 
