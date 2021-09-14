@@ -69,7 +69,7 @@ Here is an example of the request.
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendar/events
-GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subject,'All')&messages?$filter=from/emailAddress/address eq 'Michael.Fanning@microsoft.com'
+GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subject,'All')&messages?$filter=from/emailAddress/address eq 'admin@contoso.com'
 ```
 ## Optional query parameters
 
