@@ -51,6 +51,8 @@ For best results, stagger calls with a 2 second buffer.
 
 ## Examples
 
+### Example 1: Add a member to a team
+
 ### Request
 
 # [HTTP](#tab/http)
@@ -114,6 +116,51 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+
+### Example 2: Add a member to a team using user principal name
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conversationmember_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
+Content-type: application/json
+Content-length: 100
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('john.doe@microsoft.com')"
+}
+```
+
+
+### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+    "roles": [
+        "owner"
+    ],
+    "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
+    "displayName": "John Doe",
+    "email": "john.doe@microsoft.com"
+}
+```
+
 ## See also
 
 - [Create member in channel](channel-post-members.md)
