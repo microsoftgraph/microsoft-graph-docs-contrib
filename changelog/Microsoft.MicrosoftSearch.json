@@ -228,9 +228,9 @@
       "Id": "33000df9-0ed3-4beb-9dab-abfc603fc1a2",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2021-08-12T08:21:04.628237Z",
-      "WorkloadArea": "People and workplace intelligence",
-      "SubArea": "Analytics"
+      "CreatedDateTime": "2021-09-13T08:21:04.628237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -326,9 +326,9 @@
       "Id": "b09706d4-7465-4d34-bc1a-533e2be0a566",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-08-12T08:21:04.628851Z",
-      "WorkloadArea": "People and workplace intelligence",
-      "SubArea": "Analytics"
+      "CreatedDateTime": "2021-09-13T08:21:04.628851Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }
