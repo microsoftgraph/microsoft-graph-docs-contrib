@@ -2,7 +2,7 @@
 title: "accessPackageResourceAttributeDestination resource type"
 description: "A complex type used for the `attributeDestination` property an access package."
 author: "markwahl-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
