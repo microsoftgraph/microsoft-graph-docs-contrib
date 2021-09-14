@@ -39,6 +39,8 @@ You need to provide an empty json `{}` as request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) object in the request body.
 
+If the specified assignment already has a folder, this method returns a `400 Bad request` and an error response.
+
 ## Example
 The following example shows how to call this API.
 
@@ -142,7 +144,7 @@ Content-length: 279
 }
 ```
 
-If this method was called before, then it returns a `400 Bad request` and an error response.
+If the specified assignment already has a folder, this method returns a `400 Bad request` and an error response.
 
 <!-- {
   "blockType": "response",
