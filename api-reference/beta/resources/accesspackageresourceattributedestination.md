@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A child of **accessPackageQuestion** that is a complex type of the destination of an access package attribute. The actual destination will be a subtype of this complex type. Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
+accessPackageResourceAttributeDestination is a complex type of the destination of an access package attribute. The actual destination will be a subtype of this complex type.
 
 Currently,the only supported subtype is [accessPackageUserDirectoryAttributeStore](../resources/accesspackageuserdirectoryattributestore.md).  
 
