@@ -4,7 +4,7 @@ description: "Use this API to create a new accessPackageAssignmentPolicy."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # Create accessPackageAssignmentPolicy

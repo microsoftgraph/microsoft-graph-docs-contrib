@@ -4,7 +4,7 @@ description: "Allow callers to find requirements to request an assignment for a 
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # accessPackage: getApplicablePolicyRequirements
