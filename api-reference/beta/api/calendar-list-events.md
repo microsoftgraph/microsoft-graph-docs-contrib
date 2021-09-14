@@ -66,7 +66,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "calendar_get_events"
+  "name": "calendar_list_events"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar/events
