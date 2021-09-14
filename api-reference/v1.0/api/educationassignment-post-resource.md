@@ -53,12 +53,14 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"],  
-  "name": "create_educationassignmentresource_from_educationassignment"
+  "name": "create_educationlinkresource_from_educationassignment"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
+
 Content-type: application/json
 Content-length: 212
+
 {
 	"distributeForStudentWork": false,
 	"resource": {
@@ -122,7 +124,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],  
-  "name": "create_educationassignmentresource_from_educationassignment"
+  "name": "create_educationwordresource_from_educationassignment"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions/4af73d2b-6b9c-493f-0688-979087bed39b/resources
@@ -195,10 +197,11 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"],  
-  "name": "create_educationassignmentresource_from_educationassignment"
+  "name": "create_educationfileresource_from_educationassignment"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
+
 Content-type: application/json
 Content-length: 212
 
@@ -267,7 +270,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
-  "name": "create_educationassignmentresource_from_educationassignment"
+  "name": "create_educationexcelresource_from_educationassignment"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
@@ -336,7 +339,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
-  "name": "create_educationassignmentresource_from_educationassignment"
+  "name": "create_educationpowerpointresource_from_educationassignment"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
@@ -405,7 +408,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
-  "name": "create_educationassignmentresource_from_educationassignment"
+  "name": "create_educationmediaresource_from_educationassignment"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
