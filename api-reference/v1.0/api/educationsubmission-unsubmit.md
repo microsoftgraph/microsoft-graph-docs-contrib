@@ -51,6 +51,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "educationsubmission_unsubmit"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/unsubmit
 ```
@@ -84,6 +85,7 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 Ok
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",

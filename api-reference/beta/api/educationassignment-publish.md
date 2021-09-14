@@ -55,6 +55,7 @@ The following is an example of a request.
   "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1b6df208-ea5a-475c-8dd2-b92f693c928a"],
   "name": "educationassignment_publish_2"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1b6df208-ea5a-475c-8dd2-b92f693c928a/publish
 ```
@@ -88,6 +89,7 @@ The following is an example of a response.
 
 ```http
 HTTP/1.1 200 Ok
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationAssignment",
     "@odata.type": "#microsoft.graph.educationAssignment",

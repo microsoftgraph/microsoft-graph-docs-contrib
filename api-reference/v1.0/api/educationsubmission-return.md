@@ -86,6 +86,7 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 Ok
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",
