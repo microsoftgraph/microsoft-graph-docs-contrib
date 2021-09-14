@@ -202,6 +202,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 ``` http
 POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
+
 {
     "topic": {
         "source": "entityUrl",

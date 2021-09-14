@@ -237,6 +237,7 @@ Here is an example of the request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "user@odata.bind": "https://graph.microsoft.com/beta/users/john.doe@microsoft.com",

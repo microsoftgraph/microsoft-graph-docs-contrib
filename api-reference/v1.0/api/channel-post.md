@@ -288,6 +288,7 @@ The following example shows a request to create a private channel and add a user
 ```http
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
+
 {
   "@odata.type": "#Microsoft.Graph.channel",
   "membershipType": "private",
@@ -322,6 +323,7 @@ The following example shows the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 201
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
     "id": "19:33b76eea88574bd1969dca37e2b7a819@thread.skype",

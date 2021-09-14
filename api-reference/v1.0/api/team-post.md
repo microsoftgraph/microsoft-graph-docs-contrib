@@ -641,6 +641,7 @@ The following is an example of a minimal request using application permissions. 
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
    "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
    "displayName":"My Sample Team",

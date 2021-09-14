@@ -130,6 +130,7 @@ Content-type: application/json
 POST https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 Content-type: application/json
 Content-length: 100
+
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": ["owner"],
@@ -149,6 +150,7 @@ Content-length: 100
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",

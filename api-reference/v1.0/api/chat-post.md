@@ -218,6 +218,7 @@ Content-Type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
+
 {
   "chatType": "oneOnOne",
   "members": [
@@ -247,6 +248,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
     "id": "19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
