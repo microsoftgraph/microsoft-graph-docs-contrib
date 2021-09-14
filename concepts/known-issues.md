@@ -253,7 +253,7 @@ Filtering on schema extension properties (using the `$filter` expression) is not
 
 ## Files (OneDrive)
 
-## Accessing a user's drive before user accesses it leads to error
+### Accessing a user's drive before user accesses it leads to error
 
 First-time access to a user's personal drive through Microsoft Graph before the user accesses their personal site through a browser leads to a `401` response.
 
