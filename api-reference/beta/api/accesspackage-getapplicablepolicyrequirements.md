@@ -134,6 +134,12 @@ Content-Type: application/json
 POST /identityGovernance/entitlementManagement/accessPackages(‘b15419bb-5ffc-ea11-b207-c8d9d21f4e9a’)/getApplicablePolicyRequirements
 ```
 
+{
+        "subject": {
+            "objectId": "5acd375c-8acb-45de-a958-fa0dd89259ad"
+        }
+    }
+
 #### Response
 
 ```http
