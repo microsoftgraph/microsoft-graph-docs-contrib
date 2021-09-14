@@ -1,6 +1,6 @@
 ---
 title: "userTrainingContentEventInfo resource type"
-description: "Represents training event details of assigned trainings to users in a tenant in attack simulation and training."
+description: "Represents training event details of assigned trainings to users in an attack simulation and training campaign."
 author: "Gopal-MSFT"
 ms.localizationpriority: Menium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents training event details of assigned trainings to users in a tenant in attack simulation and training.
+Represents training event details of assigned trainings to users in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
@@ -22,7 +22,7 @@ Represents training event details of assigned trainings to users in a tenant in 
 |contentDateTime|DateTimeOffset|Date and time of the training content playback by the user.|
 |ipAddress|String|IP address of the user for the training event.|
 |osPlatformDeviceDetails|String|OS, platform and device details of the user for the training event.|
-|potentialScoreImpact|Double|Potential improvement in security posture of the tenant after completion of the training.|
+|potentialScoreImpact|Double|Potential improvement in security posture of the tenant after completion of the training by the user.|
 
 ## Relationships
 None.

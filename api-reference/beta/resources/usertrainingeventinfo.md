@@ -1,6 +1,6 @@
 ---
 title: "userTrainingEventInfo resource type"
-description: "Represents training events of a user in a tenant in an attack simulation and training campaign."
+description: "Represents events of a training assigned to a user in an attack simulation and training campaign."
 author: "Gopal-MSFT"
 ms.localizationpriority: Menium
 ms.prod: "security"
@@ -13,16 +13,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents training events of a user in a tenant in an attack simulation and training campaign.
+Represents events of a training assigned to a user in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name of the training|
-|latestTrainingStatus|trainingStatus|Latest training status of the user. Possible values are: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
-|trainingAssignedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of assigned trainings of the user.|
-|trainingCompletedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of completed trainings of the user.|
-|trainingUpdatedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of updated trainings of the user.|
+|displayName|String|Display name of the training.|
+|latestTrainingStatus|[trainingStatus](#trainingstatus-values)|Latest status of the training assigned to the user. Possible values are: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
+|trainingAssignedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of training when it was assigned to the user.|
+|trainingCompletedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of training when it was completed by the user.|
+|trainingUpdatedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of training when it was updated/in-progress by the user.|
+
+### trainingStatus values
+
+|Member|
+|:---|
+|unknown|
+|assigned|
+|inProgress|
+|completed|
+|overdue|
+|notCompleted|
+|unknownFutureValue|
 
 ## Relationships
 None.

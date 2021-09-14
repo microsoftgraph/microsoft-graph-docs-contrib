@@ -18,8 +18,8 @@ Represents simulation event in an attack simulation and training campaign.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|count|Int32|Count of the simulation event.|
-|eventName|String|Name of the simulation event.|
+|count|Int32|Count of occurence of the simulation event in an attack simulation and training campaign.|
+|eventName|String|Name of the simulation event in an attack simulation and training campaign.|
 
 ## Relationships
 None.

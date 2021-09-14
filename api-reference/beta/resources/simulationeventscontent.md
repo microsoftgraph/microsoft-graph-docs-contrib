@@ -18,7 +18,7 @@ Represents simulation events in an attack simulation and training campaign.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|compromisedRate|Double|Actual percentage of users that fell for the simulated attack.|
+|compromisedRate|Double|Actual percentage of users that fell for the simulated attack in an attack simulation and training campaign.|
 |events|[simulationEvent](../resources/simulationevent.md) collection|List of simulation events in an attack simulation and training campaign.|
 
 ## Relationships
