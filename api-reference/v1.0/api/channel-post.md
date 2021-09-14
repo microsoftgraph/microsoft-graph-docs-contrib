@@ -286,7 +286,7 @@ The following example shows a request to create a private channel and add a user
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -298,7 +298,7 @@ Content-type: application/json
      [
         {
            "@odata.type":"#microsoft.graph.aadUserConversationMember",
-           "user@odata.bind":"https://graph.microsoft.com/beta/users('alex@microsoft.com')",
+           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('alex@microsoft.com')",
            "roles":["owner"]
         }
      ]
@@ -325,7 +325,7 @@ Content-type: application/json
 Content-length: 201
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
     "id": "19:33b76eea88574bd1969dca37e2b7a819@thread.skype",
     "displayName": "My First Private Channel",
     "description": "This is my first private channels",

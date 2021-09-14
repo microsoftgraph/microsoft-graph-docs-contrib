@@ -176,14 +176,14 @@ Content-length: 468
   "name": "channel_add_member_3"
 } -->
 ```http
-POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
+POST https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
 Content-type: application/json
 Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": ["owner"],
-    "user@odata.bind": "https://graph.microsoft.com/beta/users('john.doe@microsoft.com')"
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('john.doe@microsoft.com')"
 }
 ```
 
@@ -203,7 +203,7 @@ Content-type: application/json
 Content-length: 468
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
   "roles": [],

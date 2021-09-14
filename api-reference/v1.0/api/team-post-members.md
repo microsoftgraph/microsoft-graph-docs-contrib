@@ -127,7 +127,7 @@ Content-type: application/json
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
+POST https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 Content-type: application/json
 Content-length: 100
 

@@ -639,11 +639,11 @@ The following is an example of a minimal request using application permissions. 
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-   "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
+   "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
    "members":[
@@ -652,7 +652,7 @@ Content-Type: application/json
          "roles":[
             "owner"
          ],
-         "user@odata.bind":"https://graph.microsoft.com/beta/users('john.doe@microsoft.com')"
+         "user@odata.bind":"https://graph.microsoft.com/v1.0/users('john.doe@microsoft.com')"
       }
    ]
 }

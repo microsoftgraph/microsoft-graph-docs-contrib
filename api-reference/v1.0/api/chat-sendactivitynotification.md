@@ -189,13 +189,13 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
+POST https://graph.microsoft.com/v1.0/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
 {
     "topic": {
         "source": "entityUrl",
-        "value": "https://graph.microsoft.com/beta/chats/{chatId}/messages/{messageId}"
+        "value": "https://graph.microsoft.com/v1.0/chats/{chatId}/messages/{messageId}"
     },
     "activityType": "approvalRequired",
     "previewText": {

@@ -235,12 +235,12 @@ Here is an example of the request.
   "name": "create_conversation_member_upn"
 } -->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+POST https://graph.microsoft.com/v1.0/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
 content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "user@odata.bind": "https://graph.microsoft.com/beta/users/john.doe@microsoft.com",
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/john.doe@microsoft.com",
     "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z",
     "roles": ["owner"]
 }
