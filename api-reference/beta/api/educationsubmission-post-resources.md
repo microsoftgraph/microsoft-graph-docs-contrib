@@ -45,18 +45,19 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 ## Request body
 In the request body, supply a JSON representation of the resource. Supported types are [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) and [educationWordResource](../resources/educationwordresource.md).
 
+>**Note:** The educationExternalResource is only an out resource, you can't POST an assignment with it.
 
 ## Response
 If successful, this method returns a `201 Created` response code and an object according to the resource type in the response body.
 
-## Example
-### Request
+### Example 1: educationWordResource
+#### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationsubmissionresource_from_educationsubmission"
+  "name": "create_educationwordresource_from_educationsubmission"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions/4af73d2b-6b9c-493f-0688-979087bed39b/resources
@@ -90,7 +91,7 @@ Content-length: 1097
 ---
 
 
-### Response
+#### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -134,6 +135,278 @@ Content-length: 1152
     }
 }
 ```
+
+### Example 2: educationLinkResource
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_educationlinkresource_from_educationsubmission"
+}-->
+```http
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources
+Content-type: application/json
+Content-length: 1097
+
+{
+	"resource": {
+		"displayName": "Wikipedia",
+		"link": "https://en.wikipedia.org/wiki/Main_Page",
+		"@odata.type": "#microsoft.graph.educationLinkResource"
+	}
+}
+```
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationLinkResource"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 1152
+
+{
+	"@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+	"assignmentResourceUrl": null,
+	"id": "88b441b0-cb05-45ab-a0f0-139f978e0993",
+	"resource": {
+		"@odata.type": "#microsoft.graph.educationLinkResource",
+		"displayName": "Wikipedia",
+		"createdDateTime": "2021-09-13T19:20:46.0648354Z",
+		"lastModifiedDateTime": "2021-09-13T19:20:46.0648354Z",
+		"link": "https://en.wikipedia.org/wiki/Main_Page",
+		"createdBy": {
+			"application": null,
+			"device": null,
+			"user": {
+				"id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+				"displayName": null
+			}
+		},
+		"lastModifiedBy": {
+			"application": null,
+			"device": null,
+			"user": {
+				"id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+				"displayName": null
+			}
+		}
+	}
+}
+```
+
+### Example 3: educationFileResource
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_educationfileresource_from_educationsubmission"
+}-->
+```http
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources
+Content-type: application/json
+Content-length: 1097
+
+{
+	"resource": {
+		"displayName": "_FTP_EDC-61424749-250820211136.pdf",
+		"fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RL45XVPGDBRW5FLDR62Z5TCMGG3",
+		"@odata.type": "#microsoft.graph.educationFileResource"
+	}
+}
+```
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationFileResource"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 1152
+
+{
+	"@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+	"assignmentResourceUrl": null,
+	"id": "33cf3eb2-8a35-4f76-8f16-b2abc112d44f",
+	"resource": {
+		"@odata.type": "#microsoft.graph.educationFileResource",
+		"displayName": "_FTP_EDC-61424749-250820211136.pdf",
+		"createdDateTime": "2021-09-13T19:23:04.5049139Z",
+		"lastModifiedDateTime": "2021-09-13T19:23:04.5049139Z",
+		"fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RL45XVPGDBRW5FLDR62Z5TCMGG3",
+		"createdBy": {
+			"application": null,
+			"device": null,
+			"user": {
+				"id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+				"displayName": null
+			}
+		},
+		"lastModifiedBy": {
+			"application": null,
+			"device": null,
+			"user": {
+				"id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+				"displayName": null
+			}
+		}
+	}
+}
+```
+
+### Example 4: educationExcelResource
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_educationexcelresource_from_educationsubmission"
+}-->
+```http
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources
+Content-type: application/json
+Content-length: 1097
+
+{
+	"resource": {
+		"@odata.type": "#microsoft.graph.educationExcelResource",
+		"displayName": "userAgeGroup QueryParameter Test.xlsx",
+		"fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RONPUDM2CZKNRF3TGHYUM7Z64WE"
+	}
+}
+```
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationExcelResource"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 1152
+
+{
+	"@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+	"assignmentResourceUrl": null,
+	"id": "c36626ba-9864-4f3a-8d6f-7104f62df605",
+	"resource": {
+		"@odata.type": "#microsoft.graph.educationExcelResource",
+		"displayName": "userAgeGroup QueryParameter Test.xlsx",
+		"createdDateTime": "2021-09-13T19:23:58.3925618Z",
+		"lastModifiedDateTime": "2021-09-13T19:23:58.3925618Z",
+		"fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RONPUDM2CZKNRF3TGHYUM7Z64WE",
+		"createdBy": {
+			"application": null,
+			"device": null,
+			"user": {
+				"id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+				"displayName": null
+			}
+		},
+		"lastModifiedBy": {
+			"application": null,
+			"device": null,
+			"user": {
+				"id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+				"displayName": null
+			}
+		}
+	}
+}
+```
+
+### Example 5: educationPowerPointResource
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_educationpowerpointresource_from_educationsubmission"
+}-->
+```http
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources
+Content-type: application/json
+Content-length: 1097
+
+{
+	"resource": {
+		"@odata.type": "#microsoft.graph.educationPowerPointResource",
+		"displayName": "state diagram.pptx",
+		"fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RN3MHWWM7BNXJD2UD5OMRFEDKN2"
+	}
+}
+```
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationPowerPointResource"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 1152
+
+{
+	"@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+	"assignmentResourceUrl": null,
+	"id": "e19bd829-17ee-4483-88d0-f62b406f367c",
+	"resource": {
+		"@odata.type": "#microsoft.graph.educationPowerPointResource",
+		"displayName": "state diagram.pptx",
+		"createdDateTime": "2021-09-13T19:24:38.4706263Z",
+		"lastModifiedDateTime": "2021-09-13T19:24:38.4706263Z",
+		"fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RN3MHWWM7BNXJD2UD5OMRFEDKN2",
+		"createdBy": {
+			"application": null,
+			"device": null,
+			"user": {
+				"id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+				"displayName": null
+			}
+		},
+		"lastModifiedBy": {
+			"application": null,
+			"device": null,
+			"user": {
+				"id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+				"displayName": null
+			}
+		}
+	}
+}
+```
+
+## See also
+
+* [Assignments and Submissions state transition](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

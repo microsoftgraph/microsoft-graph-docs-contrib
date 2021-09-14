@@ -39,7 +39,7 @@ POST /education/classes/{id}/assignments/{id}/resources
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of the resource object. It can be [educationFileResource](../resources/educationfileresource.md), [educationExcelResource](../resources/educationexcelresource.md), [educationWordResource](../resources/educationwordresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) and educationMediaResource.
+In the request body, supply a JSON representation of the resource object. It can be an [educationFileResource](../resources/educationfileresource.md), [educationExcelResource](../resources/educationexcelresource.md), [educationWordResource](../resources/educationwordresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) and educationMediaResource.
 
 >**Note:** The educationExternalResource is only an out resource, you can't POST an assignment with it.
 
@@ -237,7 +237,7 @@ Content-length: 229
     "id": "eec7f642-9d9a-406f-bbae-4b3b2c12e273",
     "resource": {
         "@odata.type": "#microsoft.graph.educationFileResource",
-        "displayName": "invoice.pdf",
+        "displayName": "article.pdf",
         "createdDateTime": "2021-07-16T23:41:53.9378423Z",
         "lastModifiedDateTime": "2021-07-16T23:41:53.9378423Z",
         "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeU6BLWBcGc_R6UgCKyYyTin/items/016XPCQEA5VVDIMU4BSFG3VBI37MPHZ3OE",
@@ -345,7 +345,7 @@ Content-length: 212
 {
     "resource": {
         "@odata.type": "microsoft.graph.educationPowerPointResource",
-        "displayName":"Graph Doc pages.xlsx",
+        "displayName":"state diagram.pptx",
         "fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RN327OXRN6EVFE2Q5FRJZTN5EOJ"
     }
 }
@@ -399,7 +399,7 @@ Content-length: 229
 
 ## See also
 
-* [Assignments and Submissions state transition](/graph/assignments-submissions-states-transition.md)
+* [Assignments and Submissions state transition](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
