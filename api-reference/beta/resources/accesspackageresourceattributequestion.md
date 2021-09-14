@@ -2,7 +2,7 @@
 title: "accessPackageResourceAttributeQuestion resource type"
 description: "A question provided to an end user, for the purpose of obtaining an attribute value to be passed to the end system and/or request approver"
 author: "markwahl-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
