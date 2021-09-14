@@ -92,7 +92,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252fbeta
+        href: /graph/migrate-azure-ad-graph-overview
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
       - name: "1: Review differences"
@@ -163,44 +163,88 @@ items:
         items:
           - name: Overview
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
-          - name: Build a web application (JavaScript)
+          - name: /graph/toolkit for React
+            href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
+          - name: /graph/toolkit for SPFx
+            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/beta
+      - name: Build your first app
+        items:
+          - name: Register an Azure AD app
+            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/beta
+          - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
+          - name: Build a web app (React)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/beta
+          - name: Build a web app (Angular)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/beta
           - name: Build a SharePoint web part
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
-          - name: Build a Microsoft Teams tab
+          - name: Build a Teams tab
             href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
-          - name: Use the Toolkit with React
-            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
-          - name: Use the Toolkit with Angular
-            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
+          - name: Build a Teams tab with SSO
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/beta
+          - name: Build an Electron app
+            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/beta
+      - name: Providers
+        items:
+          - name: Using the providers
+            href: /graph/toolkit/providers/providers?context=graph/api/beta
+          - name: MSAL provider
+            href: /graph/toolkit/providers/msal?context=graph/api/beta
+          - name: MSAL2 provider
+            href: /graph/toolkit/providers/msal2?context=graph/api/beta
+          - name: SharePoint provider
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
+          - name: Teams provider
+            href: /graph/toolkit/providers/teams?context=graph/api/beta
+          - name: Teams MSAL2 provider
+            href: /graph/toolkit/providers/teams-msal2?context=graph/api/beta
+          - name: Electron provider
+            href: /graph/toolkit/providers/electron?context=graph/api/beta
+          - name: Proxy provider
+            href: /graph/toolkit/providers/proxy?context=graph/api/beta
+          - name: Custom provider
+            href: /graph/toolkit/providers/custom?context=graph/api/beta
       - name: Components
         items:
           - name: Login
             href: /graph/toolkit/components/login?context=graph/api/beta
+          - name: Get
+            href: /graph/toolkit/components/get?context=graph/api/beta
           - name: Person
             href: /graph/toolkit/components/person?context=graph/api/beta
           - name: People
             href: /graph/toolkit/components/people?context=graph/api/beta
+          - name: Person card
+            href: /graph/toolkit/components/person-card?context=graph/api/beta
+          - name: People picker
+            href: /graph/toolkit/components/people-picker?context=graph/api/beta
+          - name: Teams channel picker
+            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/beta
           - name: Agenda
             href: /graph/toolkit/components/agenda?context=graph/api/beta
-          - name: Tasks
+          - name: Planner tasks
             href: /graph/toolkit/components/tasks?context=graph/api/beta
-      - name: Providers
+          - name: To-do tasks
+            href: /graph/toolkit/components/todo?context=graph/api/beta
+          - name: File
+            href: /graph/toolkit/components/file?context=graph/api/beta
+          - name: File list
+            href: /graph/toolkit/components/file-list?context=graph/api/beta
+      - name: Customize components
         items:
-          - name: Using the providers
-            href: /graph/toolkit/providers?context=graph/api/beta
-          - name: Msal provider
-            href: /graph/toolkit/providers/msal?context=graph/api/beta
-          - name: SharePoint provider
-            href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
-          - name: Microsoft Teams provider
-            href: /graph/toolkit/providers/teams?context=graph/api/beta
-          - name: Custom provider
-            href: /graph/toolkit/providers/custom?context=graph/api/beta
-      - name: Styling components
-        href: /graph/toolkit/style?context=graph/api/beta
-      - name: Templating components
-        href: /graph/toolkit/templates?context=graph/api/beta
+          - name: Styling components
+            href: /graph/toolkit/customize-components/style?context=graph/api/beta
+          - name: Templating components
+            href: /graph/toolkit/customize-components/templates?context=graph/api/beta
+          - name: Handling events
+            href: /graph/toolkit/customize-components/events?context=graph/api/beta
+          - name: Caching Microsoft Graph calls in components
+            href: /graph/toolkit/customize-components/cache?context=graph/api/beta
+          - name: Localizing components
+            href: /graph/toolkit/customize-components/localization?context=graph/api/beta
+          - name: Right-to-left support
+            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/beta
   - name: Resources
     items:
     - name: Best practices
@@ -1413,6 +1457,10 @@ items:
             href: api/participant-muteall.md
           - name: Invite participants
             href: api/participant-invite.md
+          - name: Start hold music
+            href: api/participant-startholdmusic.md
+          - name: Stop hold music
+            href: api/participant-stopholdmusic.md
         - name: Change screen sharing role
           href: api/call-changescreensharingrole.md
         - name: Unmute application
@@ -1563,6 +1611,21 @@ items:
             href: api/ediscovery-case-post-reviewsets.md
           - name: Get
             href: api/ediscovery-reviewset-get.md
+        - name: Review set query
+          href: resources/ediscovery-reviewsetquery.md
+          items:
+          - name: List
+            href: api/ediscovery-reviewsetquery-list.md
+          - name: Create
+            href: api/ediscovery-reviewsetquery-post.md
+          - name: Get
+            href: api/ediscovery-reviewsetquery-get.md
+          - name: Update
+            href: api/ediscovery-reviewsetquery-update.md
+          - name: Delete
+            href: api/ediscovery-reviewsetquery-delete.md
+          - name: Apply tags
+            href: api/ediscovery-reviewsetquery-applytags.md
         - name: Source collection
           href: resources/ediscovery-sourcecollection.md
           items:
@@ -1607,21 +1670,6 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
-        - name: Review set query
-          href: resources/ediscovery-reviewsetquery.md
-          items:
-          - name: List
-            href: api/ediscovery-reviewsetquery-list.md
-          - name: Create
-            href: api/ediscovery-reviewsetquery-post.md
-          - name: Get
-            href: api/ediscovery-reviewsetquery-get.md
-          - name: Update
-            href: api/ediscovery-reviewsetquery-update.md
-          - name: Delete
-            href: api/ediscovery-reviewsetquery-delete.md
-          - name: Apply tags
-            href: api/ediscovery-reviewsetquery-applytags.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
