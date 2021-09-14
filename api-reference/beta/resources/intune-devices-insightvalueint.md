@@ -2,7 +2,7 @@
 title: "insightValueInt resource type"
 description: "The value in an user experience analytics insight."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -41,7 +41,6 @@ Here is a JSON representation of the resource.
   "value": 1024
 }
 ```
-
 
 
 

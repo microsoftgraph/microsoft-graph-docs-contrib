@@ -1,7 +1,7 @@
 ---
 title: "UserFlow resource type"
 description: "Represents an identity user flow that is included in a built-in authentication journey."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

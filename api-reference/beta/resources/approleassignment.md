@@ -1,7 +1,7 @@
 ---
 title: "appRoleAssignment resource type"
 description: "Used to record when a user, group, or service principal is assigned to an app role on an application's service principal. You can create, read and delete app role assignments."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "psignoret"

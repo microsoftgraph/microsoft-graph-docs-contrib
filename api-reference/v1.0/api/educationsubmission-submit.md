@@ -2,7 +2,7 @@
 title: "educationSubmission: submit"
 description: "An action that indicates that a student is done with the work and is ready to hand in the assignment. This action can only be taken by the student."
 author: "sharad-sharma-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

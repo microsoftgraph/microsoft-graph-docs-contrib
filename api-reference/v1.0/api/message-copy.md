@@ -2,7 +2,7 @@
 title: "message: copy"
 description: "Copy a message to a folder."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Copy a message to a folder.
+Copy a message to a folder within the user's mailbox.
 
 ## Permissions
 

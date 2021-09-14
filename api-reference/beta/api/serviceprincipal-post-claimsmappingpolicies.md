@@ -1,7 +1,7 @@
 ---
 title: "Assign claimsMappingPolicy"
 description: "Assign a claimsMappingPolicy to a service principal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPolicies/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipal-id}/claimsMappingPolicies/$ref
 Content-Type: application/json
 
 {

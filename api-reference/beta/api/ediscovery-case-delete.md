@@ -1,7 +1,7 @@
 ---
 title: "Delete case"
 description: "Delete a case object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"

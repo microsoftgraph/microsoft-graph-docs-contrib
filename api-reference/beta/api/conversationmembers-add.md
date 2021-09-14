@@ -3,7 +3,7 @@ title: "conversationMember: add"
 description: "Add members in bulk to team."
 author: "nkramer"
 doc_type: "apiPageType"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
@@ -19,7 +19,7 @@ Add multiple members in a single request to a [team](../resources/team.md). The 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged) | 
+|Permission type      | Permissions (from least to most privileged) |
 |:--------------------|:--------------------------|
 | Delegated (work or school account) | TeamMember.ReadWrite.All  |
 | Delegated (personal Microsoft account) | Not supported |
@@ -113,7 +113,7 @@ Content-Type: application/json
 
 The following is the response.
 
-> **Note:** The response object shown here might be shortened for readability. 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -196,7 +196,7 @@ Content-Type: application/json
 
 The following is the response.
 
-> **Note:** The response object shown here might be shortened for readability. 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

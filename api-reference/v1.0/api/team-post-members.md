@@ -2,7 +2,7 @@
 title: "Add member to team"
 description: "Add a new member to a team."
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

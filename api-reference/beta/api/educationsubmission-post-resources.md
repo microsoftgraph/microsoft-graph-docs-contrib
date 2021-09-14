@@ -1,8 +1,8 @@
 ---
 title: "Create educationSubmissionResource"
-description: "Adds a resource to the resources list. This action can only be done by the student to whom this submission is assigned. This action will not succeed if the **allowStudentsToAddResources** flag is not set to true. If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission. If the file does not exist or is not in that folder, the POST request will fail. "
+description: "Add a resource to the submission resource list."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -13,7 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a resource to the resources list. This action can only be done by the student to whom this submission is assigned. This action will not succeed if the **allowStudentsToAddResources** flag is not set to true. If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission. If the file does not exist or is not in that folder, the POST request will fail. 
+Add a resource to the submission resource list.
+
+Only the student assigned to the submission can perform this operation.
+
+The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`. 
+
+If the caller wants to create a new file-based resource, upload the file to the resources folder associated with the submission. If the file doesn't exist or is not in that folder, the POST request will fail. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,62 +43,62 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of the [educationSubmissionResource](../resources/educationsubmissionresource.md) object.
+In the request body, supply a JSON representation of the resource. Supported types are [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) and [educationWordResource](../resources/educationwordresource.md).
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an object according to the resource type in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_educationsubmissionresource_from_educationsubmission"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources
+POST https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions/4af73d2b-6b9c-493f-0688-979087bed39b/resources
 Content-type: application/json
 Content-length: 1097
 
 {
-  "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-  "resource": {
-      "@odata.type": "#microsoft.graph.educationWordResource",
-      "displayName": "Report.docx",
-      "createdDateTime": "2017-10-21T07:52:53.9863696Z",
-      "createdBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "lastModifiedDateTime": "2017-10-21T07:52:53.9863696Z",
-      "lastModifiedBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6"
-  },
-  "@odata.type": "microsoft.graph.educationResource"
+    "resource": {
+        "@odata.type": "microsoft.graph.educationWordResource",
+        "displayName": "Report.docx",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2"
+    }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationsubmissionresource-from-educationsubmission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationsubmissionresource-from-educationsubmission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationsubmissionresource-from-educationsubmission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationsubmissionresource-from-educationsubmission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmissionResource"
+  "@odata.type": "microsoft.graph.educationWordResource"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -100,31 +106,32 @@ Content-type: application/json
 Content-length: 1152
 
 {
-  "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-  "id": "f2387c3b-ec39-4bf2-a399-d7242677f024",
-  "resource": {
-      "@odata.type": "#microsoft.graph.educationWordResource",
-      "displayName": "Report.docx",
-      "createdDateTime": "2017-10-21T07:52:53.9863696Z",
-      "createdBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "lastModifiedDateTime": "2017-10-21T07:52:53.9863696Z",
-      "lastModifiedBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6",
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('3c77de7f-539b-49e1-9c96-1274f2f0ee3b')/submissions('4af73d2b-6b9c-493f-0688-979087bed39b')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "d835503f-fd00-4840-b69c-7230d10e18b8",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationWordResource",
+        "displayName": "Report.docx",
+        "createdDateTime": "2021-08-04T00:23:08.6269586Z",
+        "lastModifiedDateTime": "2021-08-04T00:23:08.6269586Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
 }
 ```
 
