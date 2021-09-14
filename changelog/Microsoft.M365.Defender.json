@@ -55,7 +55,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "incident-get",
           "ChangeType": "Addition",
-          "Description": "Added the [incident-get](https://docs.microsoft.com/en-us/graph/api/incident-get?view=graph-rest-beta) method on a [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
+          "Description": "Added the [incident-get](https://docs.microsoft.com/en-us/graph/api/incident-get?view=graph-rest-beta) method on the [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
           "Target": "incident"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "incident-list",
           "ChangeType": "Addition",
-          "Description": "Added the [incident-list](https://docs.microsoft.com/en-us/graph/api/incident-list?view=graph-rest-beta) method on a [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
+          "Description": "Added the [incident-list](https://docs.microsoft.com/en-us/graph/api/incident-list?view=graph-rest-beta) method on the [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
           "Target": "incident"
         }
       ],
