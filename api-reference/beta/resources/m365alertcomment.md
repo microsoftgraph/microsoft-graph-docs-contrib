@@ -21,7 +21,7 @@ An analyst generated comment that is associated with an alert or incident.
 |:---|:---|:---|
 |comment|String|The comment text.|
 |createdByDisplayName|String|The person or app name that submitted the comment.|
-|createdDateTime|DateTimeOffset|The time the comment was submitted.|
+|createdDateTime|DateTimeOffset|The time when the comment was submitted.|
 
 ## Relationships
 None.
