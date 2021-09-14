@@ -142,6 +142,33 @@ Content-length: 279
 }
 ```
 
+If this method was called before, then it returns a `400 Bad request` and an error response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "odata.error"
+} -->
+```http
+HTTP/1.1 400 Bad request
+Content-type: application/json
+Content-length: 158
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "folderAlreadyExists",
+            "message": "Resource folder already exists and has previously been set up.",
+            "date": "2021-09-14T19:05:24",
+            "request-id": "f88be238-1339-49c8-b03d-37f45d54761f",
+            "client-request-id": "30d8081a-f3e8-73e0-2da4-3480fb56ccdb"
+        }
+    }
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
