@@ -57,7 +57,6 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
-
 Content-type: application/json
 Content-length: 212
 
@@ -128,7 +127,6 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions/4af73d2b-6b9c-493f-0688-979087bed39b/resources
-
 Content-type: application/json
 Content-length: 212
 
@@ -201,7 +199,6 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
-
 Content-type: application/json
 Content-length: 212
 
@@ -274,7 +271,6 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
-
 Content-type: application/json
 Content-length: 212
 
@@ -343,7 +339,6 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
-
 Content-type: application/json
 Content-length: 212
 
@@ -412,7 +407,6 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
-
 Content-type: application/json
 Content-length: 212
 
