@@ -15,7 +15,7 @@ For information about the latest updates to the Microsoft Graph API, see the [Mi
 
 ## Applications
 
-### Limitations of the application and servicePrincipal resources
+### Some limitations apply to the application and servicePrincipal resources
 
 Changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) resources are currently in development. The following is a summary of current limitations and in-development API features.
 
