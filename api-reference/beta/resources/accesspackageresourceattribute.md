@@ -2,7 +2,7 @@
 title: "accessPackageResourceAttribute resource type"
 description: "Used for the `accessPackageAttribute` property of an access package resource."
 author: "markwahl-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
