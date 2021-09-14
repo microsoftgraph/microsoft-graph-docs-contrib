@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Specifies the lower and upper limit to a range for aggregating search results. Applies only to refiners of the date or numeric type.
 
 ## Properties
