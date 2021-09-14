@@ -1,6 +1,6 @@
 ---
 title: "accessPackageResourceAttributeDestination resource type"
-description: "Child of accessPackageQuestion that is a complex type of the destination of an access package attribute."
+description: "A complex type used for the `attributeDestination` property an access package."
 author: "markwahl-msft"
 localization_priority: Normal
 ms.prod: "governance"
