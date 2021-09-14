@@ -4,7 +4,7 @@ description: "The type of attribute source for the Azure Active Directory end sy
 author: "markwahl-msft"
 localization_priority: Normal
 ms.prod: "governance"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # accessPackageUserDirectoryAttributeStore resource type

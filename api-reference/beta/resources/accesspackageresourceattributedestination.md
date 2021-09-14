@@ -4,7 +4,7 @@ description: "A complex type used for the `attributeDestination` property an acc
 author: "markwahl-msft"
 localization_priority: Normal
 ms.prod: "governance"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # accessPackageResourceAttributeDestination resource type

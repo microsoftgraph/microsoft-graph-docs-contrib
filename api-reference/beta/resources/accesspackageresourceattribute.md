@@ -4,7 +4,7 @@ description: "Used for the `accessPackageAttribute` property of an access packag
 author: "markwahl-msft"
 localization_priority: Normal
 ms.prod: "governance"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # accessPackageResourceAttribute resource type

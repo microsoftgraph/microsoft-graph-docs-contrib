@@ -4,7 +4,7 @@ description: "The complex type for questions configured on an access package ass
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # accessPackageQuestion resource type
