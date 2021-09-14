@@ -36,14 +36,14 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 Ok` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "educationsubmission_submit"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submit
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/submit
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-submit-csharp-snippets.md)]
@@ -73,15 +73,59 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 ---
 
 
-##### Response
+### Response
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 Ok
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
+    "@odata.type": "#microsoft.graph.educationSubmission",
+    "status": "submitted",
+    "submittedDateTime": "2021-09-07T14:54:46.1606962Z",
+    "unsubmittedDateTime": "2021-09-07T14:41:18.9512645Z",
+    "returnedDateTime": null,
+    "resourcesFolderUrl": null,
+    "id": "02bb5de1-7205-2a25-fe33-f99cf53de1c4",
+    "recipient": {
+        "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+    },
+    "submittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "displayName": null
+        }
+    },
+    "unsubmittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "displayName": null
+        }
+    },
+    "returnedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": null,
+            "displayName": null
+        }
+    }
+}
 ```
+
+## See also
+
+* [Assignments and Submissions state transition](../../concepts/assignments-submissions-states-transition.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
