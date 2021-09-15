@@ -21,10 +21,10 @@ This type has the following properties:
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| accessReviewTimeoutBehavior | microsoft.graph.accessReviewTimeoutBehavior | Default decision result if request is not reviewed within the time period specified in `durationInDays`. |
-| durationInDays | Int32 | The number of days to allow input from reviewers.|
-| isAccessRecommendationEnabled | boolean | Display recommendation to reviewer or not. The default value is true |
-| isApprovalJustificationRequired | boolean | Require justification for reviewer or not. The default value is true. |
+| accessReviewTimeoutBehavior | accessReviewTimeoutBehavior | The default decision to apply if the request is not reviewed within the period specified in **durationInDays**. |
+| durationInDays | Int32 | The number of days within which reviewers should provide input.|
+| isAccessRecommendationEnabled | Boolean | Specifies whether to display recommendations to the reviewer. The default value is `true` |
+| isApprovalJustificationRequired | Boolean | Specifies whether the reviewer must provide justification for the approval. The default value is `true`. |
 | isEnabled| Boolean | If true, access reviews are required for assignments from this policy. |
 | recurrenceType | String | The interval for recurrence, such as `monthly` or `quarterly`. |
 | reviewerType | String | Who should be asked to do the review, either `Self` or `Reviewers`. |
