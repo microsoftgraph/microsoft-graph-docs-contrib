@@ -38,22 +38,34 @@ In order to use application permission for this API, tenant administrators must 
 
 ## HTTP request
 
-To get the attendance report of an online meeting with delegated(`/me` path) and app permission(`/users/{userId}` path):
-<!-- { "blockType": "ignored" } -->
+To get the attendance report of an online meeting with delegated(`/me` path) and app(`/users/{userId}` path) permission:
+<!-- {
+  "blockType": "request",
+  "name": "get-meetingAttendanceReport"
+}-->
+
 ```http
 GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
-To get the attendee report of a live event with delegated(`/me` path) and app permission(`/users/{userId}` path):
-<!-- { "blockType": "ignored" } -->
+To get the attendee report of a live event with delegated(`/me` path) and app(`/users/{userId}` path) permission:
+<!-- {
+  "blockType": "request",
+  "name": "get-live-event-attendee-report"
+}-->
+
 ```http
 GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-To get the recordings of a live event with delegated(`/me` path) and app permission(`/users/{userId}` path):
-<!-- { "blockType": "ignored" } -->
+To get the recordings of a live event with delegated(`/me` path) and app(`/users/{userId}` path) permission:
+<!-- {
+  "blockType": "request",
+  "name": "get-live-event-recordings"
+}-->
+
 ```http
 GET /me/onlineMeetings/{meetingId}/recording
 GET /me/onlineMeetings/{meetingId}/alternativeRecording
@@ -236,7 +248,7 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### Example 3: Retrieve recording of a live event
+### Example 3: Get recording of a live event
 
 The following example shows a request to download a recording.
 
