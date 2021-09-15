@@ -31,8 +31,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "reassign",
           "ChangeType": "Addition",
-          "Description": "Added the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-beta) method to the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-beta) resource.",
-          "Target": "reassign"
+          "Description": "Added the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-beta) method to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+          "Target": "educationSubmission"
         }
       ],
       "Id": "98316b4e-3680-4035-a19f-13651216c8c9",

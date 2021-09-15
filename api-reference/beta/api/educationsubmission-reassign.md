@@ -1,6 +1,6 @@
 ---
 title: "educationSubmission: reassign"
-description: "Reassign is designed for teachers to inform students to revisit/redo their work, and in the mean time it has the ability to return feedback and code."
+description: "Reassigns the submission to the student to revisit/redo its work, and in the mean time it has the ability to return feedback and code."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Reassigns the submission to the student to revisit/redo its work, and in the mean time it has the ability to return feedback and code.
+Only teachers can perform this action. 
 Reassigned is a new submission status added, so it will be treated as an unknown enum member. If the header Prefer: include-unknown-enum-members is not provided, a reassigned submission will be mapped as a returned submission. This means, `reassigned` status will be mapped to `returned` status, and `reassignedDateTime` and `reassignedBy` properties will be mapped to `returnedDateTime` and `returnedBy`.
 If the header `Prefer: include-unknown-enum-members` is provided, reassigned submission remains in `reassigned` status. You can refer response examples for further details.
-This action can only be done by the teacher.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,13 +44,12 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns `200 Ok` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 
-## Example
+### Example 1: Without request header
 The following example shows how to call this API.
 
-### Request
+#### Request
 The following is an example of the request.
 
-## [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_reassign"
@@ -59,8 +59,7 @@ The following is an example of the request.
 POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/reassign
 ```
 
-
-### Response
+#### Response
 The following is an example of the response when `Prefer: include-unknown-enum-members` is NOT provided in the request header and the submission has never been returned before.
 
 <!-- {
@@ -119,7 +118,23 @@ HTTP/1.1 200 Ok
 }
 ```
 
-### Response
+### Example 2: With request header
+The following example shows how to call this API.
+
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "educationsubmission_reassign"
+}-->
+
+```http
+POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/reassign
+Prefer: include-unknown-enum-members
+```
+
+#### Response
 The following is an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header and the submission has never been returned before.
 
 <!-- {
