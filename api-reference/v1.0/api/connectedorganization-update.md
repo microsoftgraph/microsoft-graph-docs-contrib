@@ -6,14 +6,12 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # Update connectedOrganization
 
 Namespace: microsoft.graph
 
 
 Update a [connectedOrganization](../resources/connectedorganization.md) object to change one or more of its properties.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | EntitlementManagement.ReadWrite.All |
-
 
 ## HTTP request
 
@@ -35,13 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
-
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-
 
 ## Request body
 In the request body, supply a JSON representation of the [connectedOrganization](../resources/connectedorganization.md) object.
@@ -52,16 +47,14 @@ The following table shows the properties that are required when you update the [
 |:---|:---|:---|
 |displayName|String|The connected organization name.  |
 |description|String|The connected organization description. |
-|identitySources|[identitySource](../resources/identitysource.md) collection|The identity sources in this connected organization, one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md). Nullable.
+|identitySources|[identitySource](../resources/identitysource.md) collection|The identity sources in this connected organization, one of [azureActiveDirectoryTenant](../resources/azureactivedirectorytenant.md), [domainIdentitySource](../resources/domainidentitysource.md) or [externalDomainFederation](../resources/externaldomainfederation.md). Nullable.(
 |state|connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
-
 
 
 
 ## Response
 
 If successful, this method returns a `204 Accepted` response code and a [connectedOrganization](../resources/connectedorganization.md) object in the response body.
-
 
 ## Examples
 
@@ -114,6 +107,5 @@ Content-Type: application/json
   "state": "String"
 }
 ```
-
 
 

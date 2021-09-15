@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
-
 # connectionInfo resource type
 
 Namespace: microsoft.graph
@@ -14,16 +13,13 @@ Namespace: microsoft.graph
 
 The connectionInfo object defines the resource locator that is used to communicate with a resource in Azure AD Entitlement Management.
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |url|String|The endpoint that is used by Entitlement Management to communicate with the access package resource.|
 
-
 ## Relationships
 None.
-
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
@@ -37,6 +33,5 @@ The following is a JSON representation of the resource.
   "url": "String"
 }
 ```
-
 
 

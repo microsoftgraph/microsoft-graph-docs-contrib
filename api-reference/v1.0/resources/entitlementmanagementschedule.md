@@ -6,13 +6,11 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
-
 # entitlementManagementSchedule complex type
 
 Namespace: microsoft.graph
 
 In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment request is created by a user who wants to obtain an access package assignment. This request can include a schedule for when the user would like to have an assignment.  An access package assignment that results from such a request also has a schedule.
-
 
 ## Properties
 |Property|Type|Description|
@@ -21,10 +19,8 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|For recurring access. Not used at present.|
 |startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
-
 ## Relationships
 None.
-
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
@@ -44,6 +40,5 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-
 
 

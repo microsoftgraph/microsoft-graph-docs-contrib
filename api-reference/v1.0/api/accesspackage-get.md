@@ -6,14 +6,12 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # Get accessPackage
 
 Namespace: microsoft.graph
 
 
 Retrieve the properties and relationships of an [accessPackage](../resources/accesspackage.md) object.
-
 
 ## Permissions
 
@@ -25,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -34,11 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/accessPackages/{id}
 ```
 
-
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For example, to retrieve the access package policies, add `$expand=accessPackageAssignmentPolicies`. For general information, see [OData query parameters](/graph/query-parameters).
-
 
 ## Request headers
 
@@ -46,15 +41,12 @@ This method supports some of the OData query parameters to help customize the re
 |:----------|:----------|
 | Authorization | Bearer \{token\}. Required. |
 
-
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and the requested [accessPackage](../resources/accesspackage.md) object in the response body.
-
 
 ## Examples
 
@@ -90,6 +82,5 @@ Content-Type: application/json
   "modifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 

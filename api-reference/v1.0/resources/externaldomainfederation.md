@@ -6,14 +6,12 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
-
 # externalDomainFederation resource type
 
 Namespace: microsoft.graph
 
 
 Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.externalDomainFederation` indicates that this type identifies a domain with a configured identity provider as an identity source for a connected organization.
-
 
 ## Properties
 |Property|Type|Description|
@@ -22,10 +20,8 @@ Used in the identity sources of an [connectedOrganization](connectedOrganization
 |domainName|String|The domain name. Read only. |
 |issuerUri|String|The issuerURI of the incoming federation. Read only. |
 
-
 ## Relationships
 None.
-
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
@@ -41,6 +37,5 @@ The following is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-
 
 

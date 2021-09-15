@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # Create accessPackage
 
 Namespace: microsoft.graph
@@ -15,7 +14,6 @@ Namespace: microsoft.graph
 Create a new [accessPackage](../resources/accesspackage.md) object.
 
 The access package will be added to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md). After the access package is created, you can then create [accessPackageAssignmentPolicies](../resources/accesspackageassignmentpolicy.md) which specify how users are assigned to the access package.
-
 
 
 ## Permissions
@@ -28,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | EntitlementManagement.ReadWrite.All |
 
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -37,14 +34,12 @@ One of the following permissions is required to call this API. To learn more, in
 POST /identityGovernance/entitlementManagement/accessPackages
 ```
 
-
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer \{token\}. Required. |
 | Content-type  | application/json. Required.  |
-
 
 ## Request body
 In the request body, supply a JSON representation of the [accessPackage](../resources/accesspackage.md) object.
@@ -59,11 +54,9 @@ The following table shows the properties that are required when you create the [
 
 
 
-
 ## Response
 
 If successful, this method returns a 201 Created response code and a new [accessPackage](../resources/accesspackage.md) object in the response body.
-
 
 ## Examples
 
@@ -107,6 +100,5 @@ Content-Type: application/json
   "modifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 

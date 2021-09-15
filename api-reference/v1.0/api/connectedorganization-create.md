@@ -6,14 +6,12 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # Create connectedOrganization
 
 Namespace: microsoft.graph
 
 
 Create a new [connectedOrganization](../resources/connectedorganization.md) object.
-
 
 ## Permissions
 
@@ -25,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | EntitlementManagement.ReadWrite.All |
 
-
 ## HTTP request
 
 <!-- {
@@ -36,14 +33,12 @@ One of the following permissions is required to call this API. To learn more, in
 POST /identityGovernance/entitlementManagement/connectedOrganizations
 ```
 
-
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-
 
 ## Request body
 In the request body, supply a JSON representation of the [connectedOrganization](../resources/connectedorganization.md) object.
@@ -59,11 +54,9 @@ The following table shows the properties that are required when you create the [
 
 
 
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and a new [connectedOrganization](../resources/connectedorganization.md) object in the response body.
-
 
 ## Examples
 
@@ -117,6 +110,5 @@ Content-Type: application/json
   "state": "String"
 }
 ```
-
 
 

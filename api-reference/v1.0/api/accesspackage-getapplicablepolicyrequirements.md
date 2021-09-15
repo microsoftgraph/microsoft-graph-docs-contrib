@@ -6,13 +6,11 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # accessPackage: getApplicablePolicyRequirements
 Namespace: microsoft.graph
 
 
 In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), this action retrieves a list of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) objects that the currently signed-in user can use to create an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
-
 
 ## HTTP request
 
@@ -34,20 +31,16 @@ One of the following permissions is required to call this API. To learn more, in
 POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicablePolicyRequirements
 ```
 
-
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
-
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
 If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an **allowedRequestor**. If there is a policy with no requirements, the **accessPackageAssignmentRequestRequirements** will have `false` and `null` values. If there are no policies where the user is an **allowedRequestor**, an empty collection will be returned instead.
-
 
 ## Examples
 
@@ -81,6 +74,5 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 

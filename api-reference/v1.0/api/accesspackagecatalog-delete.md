@@ -6,14 +6,12 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # Delete accessPackageCatalog
 
 Namespace: microsoft.graph
 
 
 Delete an [accessPackageCatalog](../resources/accesspackagecatalog.md).
-
 
 ## Permissions
 
@@ -25,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | EntitlementManagement.ReadWrite.All |
 
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -34,22 +31,18 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 ```
 
-
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer \{token\}. Required. |
 
-
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 
 If successful, this method returns a 200-series response code. It does not return anything in the response body.
-
 
 ## Examples
 
@@ -74,6 +67,5 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 

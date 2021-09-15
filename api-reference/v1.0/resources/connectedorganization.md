@@ -6,14 +6,12 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
-
 # connectedOrganization resource type
 
 Namespace: microsoft.graph
 
 
 In [Azure AD entitlement management](entitlementmanagement-root.md), a connected organization is a reference to a directory or domain of another organization whose users can request access.
-
 
 ## Methods
 |Method|Return type|Description|
@@ -28,7 +26,6 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), a connected
 |[List internalSponsors](../api/connectedorganization-list-internalsponsors.md)|[directoryObject](directoryobject.md) collection|Retrieve a list of a connectedOrganization's internal sponsors. |
 |[Add internalSponsors](../api/connectedorganization-post-internalsponsors.md)|None|Add a user or group to a connectedOrganization's internal sponsors. |
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -40,13 +37,11 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), a connected
 |modifiedDateTime|DateTimeOffset|*The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |state|connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not.  The possible values are: `configured`, `proposed`, `unknownFutureValue`.|
 
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |externalSponsors|[directoryObject](directoryobject.md) collection|Nullable.|
 |internalSponsors|[directoryObject](directoryobject.md) collection|Nullable.|
-
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -73,6 +68,5 @@ The following is a JSON representation of the resource.
   "state": "String"
 }
 ```
-
 
 

@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
-
 # accessPackageAssignment resource type
 
 Namespace: microsoft.graph
@@ -15,13 +14,11 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 
 >**Note:** You can't use a method to create or remove an access package assignment. Instead, a client that wants to request an access package assignment for a user, or remove an access package assignment from a user, can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-create.md).
 
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List accessPackageAssignments](../api/accesspackageassignment-list.md)|[accessPackageAssignment](accesspackageassignment.md) collection|Retrieve a list of **accessPackageAssignment** objects. |
 |[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects filtered on the signed-in user.|
-
 
 ## Properties
 |Property|Type|Description|
@@ -32,13 +29,11 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 |state|accessPackageAssignmentState|The state of the access package assignment. The possible values are: `delivering`, `partiallyDelivered`, `delivered`, `expired`, `deliveryFailed`, `unknownFutureValue`. Read-only.|
 |status|String|More information about the assignment lifecycle.  Possible values include `Delivering`, `Delivered`, `NearExpiry1DayNotificationTriggered`, or `ExpiredNotificationTriggered`.  Read-only.|
 
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |accessPackage|[accessPackage](accesspackage.md)|Read-only. Nullable.|
 |target|[accessPackageSubject](accesspackagesubject.md)|The subject of the access package assignment. Read-only. Nullable.|
-
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -61,6 +56,5 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-
 
 

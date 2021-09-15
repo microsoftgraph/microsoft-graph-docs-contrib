@@ -6,13 +6,11 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # accessPackageAssignmentRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
 
 In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects filtered on the signed-in user.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
-
 ## HTTP request
 
 <!-- {
@@ -33,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/filterByCurrentUser
 ```
-
 
 ## Function parameters
 The following table shows the parameters that can be used with this function.
@@ -48,21 +44,17 @@ The following table shows the parameters that can be used with this function.
 
 - `approver` is used to get the `accessPackageAssignmentRequest` objects where the signed-in user is an allowed approver in any contained `accessPackageAssignment/accessPackageAssignmentPolicy/requestApprovalSettings/approvalStages` (`primaryApprovers` or `escalationApprovers`). The resulting list includes the assignment requests in *pending* state, across all catalogs and access packages and that need a decision from the caller. The resulting list includes the assignment requests in a `pending` state, across all catalogs and access packages and that need a decision from the caller.
 
-
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
-
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection in the response body.
-
 
 ## Examples
 
@@ -105,6 +97,5 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 

@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
-
 # accessPackageSubject resource type
 
 Namespace: microsoft.graph
@@ -14,11 +13,9 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](entitlementmanagement-root.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.  It may represent a requestor from a connected organization who is not yet in the tenant.
 
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-
 
 ## Properties
 |Property|Type|Description|
@@ -30,12 +27,10 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |principalName|String|The principal name, if known, of the subject.|
 |subjectType|accessPackageSubjectType|The resource type of the subject. The possible values are: `notSpecified`, `user`, `servicePrincipal`, `unknownFutureValue`.|
 
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |connectedOrganization|[connectedOrganization](connectedorganization.md)|The connected organization of the subject. Read-only. Nullable.|
-
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -57,5 +52,4 @@ The following is a JSON representation of the resource.
   "subjectType": "String"
 }
 ```
-
 

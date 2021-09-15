@@ -6,13 +6,11 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
-
 # accessPackageAssignmentRequestRequirements resource type
 
 Namespace: microsoft.graph
 
 Represents requirements that a caller must fulfill in order to successfully create an **accessPackageAssignmentRequest** for the **accessPackage** specified as part of the URL. Requirements are determined by evaluating policies associated with the **accessPackage**. 
-
 
 ## Properties
 |Property|Type|Description|
@@ -25,10 +23,8 @@ Represents requirements that a caller must fulfill in order to successfully crea
 |policyId|String|The identifier of the policy that these requirements are associated with. This identifier can be used when creating a new assignment request.|
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|Schedule restrictions enforced, if any.|
 
-
 ## Relationships
 None.
-
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
@@ -50,6 +46,5 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-
 
 

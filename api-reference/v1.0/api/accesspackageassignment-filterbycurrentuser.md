@@ -6,13 +6,11 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # accessPackageAssignment: filterByCurrentUser
 Namespace: microsoft.graph
 
 
 In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignment](../resources/accesspackageassignment.md) objects filtered on the signed-in user.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
-
 ## HTTP request
 
 <!-- {
@@ -33,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByCurrentUser
 ```
-
 
 ## Function parameters
 The following table shows the parameters that can be used with this function.
@@ -46,23 +42,19 @@ The following table shows the parameters that can be used with this function.
 
 - `createdBy` is used to get the `accessPackageAssignment` objects created by the signed-in user. The resulting list includes all of the assignments that the caller created for themselves or on behalf of others, such as in case of admin direct assignment, across all catalogs and access packages.
 
-
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
-
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [accessPackageAssignment](../resources/accesspackageassignment.md) collection in the response body.
 
 When a result set spans multiple pages, Microsoft Graph returns that page with an `@odata.nextLink` property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the `@odata.nextLink` URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging.md).
-
 
 ## Examples
 
@@ -103,6 +95,5 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 

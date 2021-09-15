@@ -6,13 +6,11 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # accessPackage: filterByCurrentUser
 Namespace: microsoft.graph
 
 
 In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackage](../resources/accesspackage.md) objects filtered on the signed-in user.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
-
 
 ## HTTP request
 
@@ -34,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
 ```
 
-
 ## Function parameters
 The following table shows the parameters that can be used with this function.
 
@@ -44,21 +40,17 @@ The following table shows the parameters that can be used with this function.
 
 - `allowedRequestor` is used to get the `accessPackage` objects for which the signed-in user is allowed to submit access requests. The resulting list includes all access packages that can be requested by the caller across all catalogs.
 
-
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
-
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [accessPackage](../resources/accesspackage.md) collection in the response body.
-
 
 ## Examples
 
@@ -98,6 +90,5 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 

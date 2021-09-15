@@ -6,14 +6,12 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # List externalSponsors
 
 Namespace: microsoft.graph
 
 
 Retrieve a list of a [connectedOrganization](../resources/connectedorganization.md)'s external sponsors.  The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-
 
 ## Permissions
 
@@ -25,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
-
 ## HTTP request
 
 <!-- {
@@ -36,25 +33,20 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors
 ```
 
-
 ## Optional query parameters
 
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
-
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
-
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
-
 
 ## Examples
 
@@ -90,6 +82,5 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 

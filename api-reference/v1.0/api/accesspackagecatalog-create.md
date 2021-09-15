@@ -6,14 +6,12 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # Create accessPackageCatalog
 
 Namespace: microsoft.graph
 
 
 Create a new [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
-
 
 ## Permissions
 
@@ -25,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | EntitlementManagement.ReadWrite.All |
 
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -34,14 +31,12 @@ One of the following permissions is required to call this API. To learn more, in
 POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 ```
 
-
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer \{token\}. Required. |
 | Content-Type  | application/json  |
-
 
 ## Request body
 In the request body, supply a JSON representation of the [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
@@ -58,11 +53,9 @@ The following table shows the properties that are required when you create the [
 
 
 
-
 ## Response
 
 If successful, this method returns a 200-series response code and a new [accessPackageCatalog](../resources/accesspackagecatalog.md) object in the response body.
-
 
 ## Examples
 
@@ -110,6 +103,5 @@ Content-Type: application/json
   "modifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 

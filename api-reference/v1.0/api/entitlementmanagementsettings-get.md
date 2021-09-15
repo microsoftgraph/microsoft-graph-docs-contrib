@@ -6,14 +6,12 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-
 # Get entitlementManagementSettings
 
 Namespace: microsoft.graph
 
 
 Retrieve the properties of an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
-
 
 ## Permissions
 
@@ -25,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -34,11 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/settings
 ```
 
-
 ## Optional query parameters
 
 This method does not support the OData query parameters to customize the response.
-
 
 ## Request headers
 
@@ -46,15 +41,12 @@ This method does not support the OData query parameters to customize the respons
 |:----------|:----------|
 | Authorization | Bearer \{token\}. Required. |
 
-
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and the requested [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object in the response body.
-
 ## Examples
 
 ### Request
@@ -85,6 +77,5 @@ Content-Type: application/json
   "durationUntilExternalUserDeletedAfterBlocked": "String (duration)"
 }
 ```
-
 
 
