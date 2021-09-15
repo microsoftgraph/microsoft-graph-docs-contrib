@@ -105,7 +105,7 @@ Content-Type: application/json
             "isRequestorJustificationRequired": false,
             "questions": [
                 {
-                    "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.textInputQuestion",
+                    "@odata.type": "#microsoft.graph.textInputQuestion",
                     "id": "0fd349e2-a3a7-4712-af08-660f29c12b90",
                     "isRequired": true,
                     "isAnswerEditable": null,
@@ -156,7 +156,7 @@ Content-Type: application/json
             "isRequestorJustificationRequired": false,
             "questions": [
                 {
-                    "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.textInputQuestion",
+                    "@odata.type": "#microsoft.graph.textInputQuestion",
                     "id": "5a7f2a8f-b802-4438-bec6-09599bc43e13",
                     "isRequired": false,
                     "isAnswerEditable": true,
@@ -170,11 +170,11 @@ Content-Type: application/json
             ],
             "existingAnswers": [
                 {
-                    "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.answerString",
+                    "@odata.type": "#microsoft.graph.answerString",
                     "displayValue": "test.mail@microsoft.com",
                     "value": "test.mail@microsoft.com",
                     "answeredQuestion": {
-                        "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.textInputQuestion",
+                        "@odata.type": "#microsoft.graph.textInputQuestion",
                         "id": "5a7f2a8f-b802-4438-bec6-09599bc43e13",
                         "isRequired": false,
                         "isAnswerEditable": true,
