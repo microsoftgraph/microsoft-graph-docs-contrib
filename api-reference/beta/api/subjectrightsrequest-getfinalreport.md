@@ -1,5 +1,5 @@
 ---
-title: "dataSubjectRequest: getFinalReport"
+title: "subjectRightsRequest: getFinalReport"
 description: "Get the final report for a data subject request."
 author: "skadam-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# dataSubjectRequest: getFinalReport
+# subjectRightsRequest: getFinalReport
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DataSubject.Read.All, DataSubject.ReadWrite.All|
+|Delegated (work or school account)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported|
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/dataSubjectRequests{dataSubjectRequestId}/getFinalReport
+GET /compliance/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 ```
 
 ## Request headers
@@ -50,11 +50,11 @@ If successful, this function returns a `200 OK` response code and a Stream in th
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "datasubjectrequest_getfinalreport"
+  "name": "subjectRightsRequest_getfinalreport"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests/{dataSubjectRequestId}/getFinalReport
+GET https://graph.microsoft.com/beta/compliance/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
 ```
 
 

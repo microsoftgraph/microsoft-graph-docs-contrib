@@ -1,5 +1,5 @@
 ---
-title: "List dataSubjectRequests"
+title: "List subjectRightsRequests"
 description: "Get a list of data subject requests and their properties."
 author: "skadam-msft"
 ms.localizationpriority: medium
@@ -7,19 +7,19 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# List dataSubjectRequests
+# List subjectRightsRequests
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [dataSubjectRequest](../resources/datasubjectrequest.md) objects and their properties.
+Get a list of [subjectRightsRequest](../resources/subjectRightsRequest.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DataSubject.Read.All, DataSubject.ReadWrite.All|
+|Delegated (work or school account)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported|
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/dataSubjectRequests
+GET /compliance/subjectRightsRequests
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [dataSubjectRequest](../resources/datasubjectrequest.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [subjectRightsRequest](../resources/subjectRightsRequest.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_datasubjectrequest"
+  "name": "list_subjectRightsRequest"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests
+GET https://graph.microsoft.com/beta/compliance/subjectRightsRequests
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.dataSubjectRequest)"
+  "@odata.type": "Collection(microsoft.graph.subjectRightsRequest)"
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ Content-Type: application/json
 {
   "value": [
         {
-    "type": "microsoft.graph.dataSubjectRequestType",
+    "type": "microsoft.graph.subjectRightsRequestType",
     "dataSubjectType": "microsoft.graph.dataSubjectType",
     "regulations": [
         "String"

@@ -1,25 +1,25 @@
 ---
-title: "Create dataSubjectRequest"
-description: "Create a new dataSubjectRequest object."
+title: "Create subjectRightsRequest"
+description: "Create a new subjectRightsRequest object."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# Create dataSubjectRequest
+# Create subjectRightsRequest
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [dataSubjectRequest](../resources/datasubjectrequest.md) object.
+Create a new [subjectRightsRequest](../resources/subjectRightsRequest.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DataSubject.ReadWrite.All|
+|Delegated (work or school account)|SubjectRightsRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported|
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /compliance/dataSubjectRequests
+POST /compliance/subjectRightsRequests
 ```
 
 ## Request headers
@@ -40,9 +40,9 @@ POST /compliance/dataSubjectRequests
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [dataSubjectRequest](../resources/datasubjectrequest.md) object.
+In the request body, supply a JSON representation of the [subjectRightsRequest](../resources/subjectRightsRequest.md) object.
 
-The following table shows the properties that are required when you create the [dataSubjectRequest](../resources/datasubjectrequest.md).
+The following table shows the properties that are required when you create the [subjectRightsRequest](../resources/subjectRightsRequest.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -52,28 +52,28 @@ The following table shows the properties that are required when you create the [
 |displayName|String|Name of the request.|
 |internalDueDateTime|DateTimeOffset|Internal due date that is used for tracking the request completion.|
 |regulations|String collection|One or more regulations for the request.|
-|type|dataSubjectRequestType|Type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
+|type|subjectRightsRequestType|Type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [dataSubjectRequest](../resources/datasubjectrequest.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [subjectRightsRequest](../resources/subjectRightsRequest.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_datasubjectrequest_from_"
+  "name": "create_subjectRightsRequest_from_"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/compliance/dataSubjectRequests
+POST https://graph.microsoft.com/beta/compliance/subjectRightsRequests
 Content-Type: application/json
 Content-length: 849
 
 {
-    "type": "microsoft.graph.dataSubjectRequestType",
+    "type": "microsoft.graph.subjectRightsRequestType",
     "dataSubjectType": "microsoft.graph.dataSubjectType",
     "regulations": ["String"],
     "displayName": "String",
@@ -96,7 +96,7 @@ Content-length: 849
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.dataSubjectRequest"
+  "@odata.type": "microsoft.graph.subjectRightsRequest"
 }
 -->
 ``` http
@@ -104,7 +104,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "type": "microsoft.graph.dataSubjectRequestType",
+    "type": "microsoft.graph.subjectRightsRequestType",
     "dataSubjectType": "microsoft.graph.dataSubjectType",
     "regulations": [
         "String"

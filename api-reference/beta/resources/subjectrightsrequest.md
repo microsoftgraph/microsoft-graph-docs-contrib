@@ -1,33 +1,33 @@
 ---
-title: "dataSubjectRequest resource type"
-description: "Represents the properties of a data subject request."
+title: "subjectRightsRequest resource type"
+description: "Represents the properties of a subject rights request."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 
-# dataSubjectRequest resource type
+# subjectRightsRequest resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a data subject request, which is a formal request by a data subject to a controller to take an action on their personal data. 
+Represents the properties of a subject rights request, which is a formal request by a data subject to a controller to take an action on their personal data. 
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dataSubjectRequests](../api/datasubjectrequest-list.md)|[dataSubjectRequest](../resources/datasubjectrequest.md) collection|Get a list of the [dataSubjectRequest](../resources/datasubjectrequest.md) objects and their properties.|
-|[Create dataSubjectRequest](../api/datasubjectrequest-post.md)|[dataSubjectRequest](../resources/datasubjectrequest.md)|Create a new [dataSubjectRequest](../resources/datasubjectrequest.md) object.|
-|[Get dataSubjectRequest](../api/datasubjectrequest-get.md)|[dataSubjectRequest](../resources/datasubjectrequest.md)|Read the properties and relationships of a [dataSubjectRequest](../resources/datasubjectrequest.md) object.|
-|[Update dataSubjectRequest](../api/datasubjectrequest-update.md)|[dataSubjectRequest](../resources/datasubjectrequest.md)|Update the properties of a [dataSubjectRequest](../resources/datasubjectrequest.md) object.|
-|[getFinalAttachment](../api/datasubjectrequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that where included by the privacy administrator.|
-|[getFinalReport](../api/datasubjectrequest-getfinalreport.md)|Stream|Get the final report for the request. The report is a text file that contains information about the files that where included by the privacy administrator.|
-|[List notes](../api/datasubjectrequest-list-notes.md)|[authoredNote](../resources/authorednote.md) collection|Get the authoredNote resources from the notes navigation property.|
-|[Create authoredNote](../api/datasubjectrequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
+|[List subjectRightsRequests](../api/subjectRightsRequest-list.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md) collection|Get a list of the [subjectRightsRequest](../resources/subjectRightsRequest.md) objects and their properties.|
+|[Create subjectRightsRequest](../api/subjectRightsRequest-post.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Create a new [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
+|[Get subjectRightsRequest](../api/subjectRightsRequest-get.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Read the properties and relationships of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
+|[Update subjectRightsRequest](../api/subjectRightsRequest-update.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Update the properties of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
+|[getFinalAttachment](../api/subjectRightsRequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that where included by the privacy administrator.|
+|[getFinalReport](../api/subjectRightsRequest-getfinalreport.md)|Stream|Get the final report for the request. The report is a text file that contains information about the files that where included by the privacy administrator.|
+|[List notes](../api/subjectRightsRequest-list-notes.md)|[authoredNote](../resources/authorednote.md) collection|Get the authoredNote resources from the notes navigation property.|
+|[Create authoredNote](../api/subjectRightsRequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
 
 ## Properties
 |Property|Type|Description|
@@ -40,15 +40,15 @@ Inherits from [entity](../resources/entity.md).
 |dataSubjectType|dataSubjectType|The type of the data subject. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
 |description|String|Description for the request.|
 |displayName|String|The name of the request.|
-|history|[dataSubjectRequestHistory](../resources/datasubjectrequesthistory.md) collection|Collection of history change events.|
-|insight|[dataSubjectRequestDetail](../resources/datasubjectrequestdetail.md)|Insight about the request.|
+|history|[subjectRightsRequestHistory](../resources/subjectRightsRequesthistory.md) collection|Collection of history change events.|
+|insight|[subjectRightsRequestDetail](../resources/subjectRightsRequestdetail.md)|Insight about the request.|
 |internalDueDateTime|DateTimeOffset|The date and time when the request is internally due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity information for the entity that last modified the request.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the request was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |regulations|String collection|List of regulations that this request will fulfill.|
-|stages|[dataSubjectRequestStageDetail](../resources/datasubjectrequeststagedetail.md) collection|Information about the different stages for the request.|
-|status|dataSubjectRequestStatus|The status of the request.. Possible values are: `active`, `closed`, `unknownFutureValue`.|
-|type|dataSubjectRequestType|The type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
+|stages|[subjectRightsRequestStageDetail](../resources/subjectRightsRequeststagedetail.md) collection|Information about the different stages for the request.|
+|status|subjectRightsRequestStatus|The status of the request.. Possible values are: `active`, `closed`, `unknownFutureValue`.|
+|type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -61,14 +61,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.dataSubjectRequest",
+  "@odata.type": "microsoft.graph.subjectRightsRequest",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.dataSubjectRequest",
+  "@odata.type": "#microsoft.graph.subjectRightsRequest",
     "type": "access",
     "dataSubjectType": "customer",
     "regulations": [
@@ -117,7 +117,7 @@ The following is a JSON representation of the resource.
         }
     ],
     "insight": {
-        "@odata.type": "microsoft.graph.dataSubjectRequestDetail"
+        "@odata.type": "microsoft.graph.subjectRightsRequestDetail"
     },
     "createdBy": {
         "@odata.type": "microsoft.graph.identitySet"

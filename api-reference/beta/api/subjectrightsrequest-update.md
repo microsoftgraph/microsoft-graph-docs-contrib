@@ -1,25 +1,25 @@
 ---
-title: "Get dataSubjectRequest"
-description: "Read the properties and relationships of a dataSubjectRequest object."
+title: "Update subjectRightsRequest"
+description: "Update the properties of a subjectRightsRequest object."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# Get dataSubjectRequest
+# Update subjectRightsRequest
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [dataSubjectRequest](../resources/datasubjectrequest.md) object.
+Update the properties of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DataSubject.Read.All, DataSubject.ReadWrite.All|
+|Delegated (work or school account)|SubjectRightsRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported|
 
@@ -30,51 +30,64 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/dataSubjectRequests/{dataSubjectRequestId}
+PATCH /compliance/subjectRightsRequests/{subjectRightsRequestId}
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of the [subjectRightsRequest](../resources/subjectRightsRequest.md) object.
+
+The following table shows the properties that are required when you update the [subjectRightsRequest](../resources/subjectRightsRequest.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|assignedTo|[microsoft.graph.identity](../resources/identity.md)|The identity information for the user that the request is assigned to.|
+|description|String|Updated description for the request.|
+|displayName|String|Updated name of the request.|
+|internalDueDateTime|DateTimeOffset|Updated internal due date for the request.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [dataSubjectRequest](../resources/datasubjectrequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [subjectRightsRequest](../resources/subjectRightsRequest.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_datasubjectrequest"
+  "name": "update_subjectRightsRequest"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests/{dataSubjectRequestId}
-```
+PATCH https://graph.microsoft.com/beta/compliance/subjectRightsRequests/{subjectRightsRequestId}
+Content-Type: application/json
+Content-length: 837
 
+{
+  "@odata.type": "#microsoft.graph.subjectRightsRequest",
+  "internalDueDateTime": "2021-08-30T00:00:00Z"
+}
+```
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.dataSubjectRequest"
+  "@odata.type": "microsoft.graph.subjectRightsRequest"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-    {
-    "type": "microsoft.graph.dataSubjectRequestType",
+{
+    "type": "microsoft.graph.subjectRightsRequestType",
     "dataSubjectType": "microsoft.graph.dataSubjectType",
     "regulations": [
         "String"
@@ -86,28 +99,6 @@ Content-Type: application/json
     "lastModifiedDateTime": "String",
     "id": "String",
     "createdDateTime": "String",
-    "stages": [
-        {
-            "stage": "contentRetrieval",
-            "status": "notStarted",
-            "error": null
-        },
-        {
-            "stage": "contentReview",
-            "status": "notStarted",
-            "error": null
-        },
-        {
-            "stage": "generateReport",
-            "status": "notStarted",
-            "error": null
-        },
-        {
-            "stage": "caseResolved",
-            "status": "notStarted",
-            "error": null
-        }
-    ],
     "createdBy": {
         "@odata.type": "microsoft.graph.identitySet"
     },

@@ -1,5 +1,5 @@
 ---
-title: "dataSubjectRequest: getFinalAttachment"
+title: "subjectRightsRequest: getFinalAttachment"
 description: "Get the final attachment for a data subject request."
 author: "skadam-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# dataSubjectRequest: getFinalAttachment
+# subjectRightsRequest: getFinalAttachment
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DataSubject.Read.All, DataSubject.ReadWrite.All|
+|Delegated (work or school account)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported|
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/dataSubjectRequests/{dataSubjectRequestId}/getFinalAttachment
+GET /compliance/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 ```
 
 ## Request headers
@@ -50,11 +50,11 @@ If successful, this function will redirect to the Microsoft Azure blob Storage l
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "datasubjectrequest_getfinalattachment"
+  "name": "subjectRightsRequest_getfinalattachment"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/dataSubjectRequests/{dataSubjectRequestId}/getFinalAttachment
+GET https://graph.microsoft.com/beta/compliance/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 ```
 
 

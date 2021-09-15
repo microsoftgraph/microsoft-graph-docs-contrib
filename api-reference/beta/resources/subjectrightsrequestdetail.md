@@ -1,19 +1,19 @@
 ---
-title: "dataSubjectRequestDetail resource type"
-description: "Represents the details of a data subject request, including number of items found, number of items reviewed, and so on."
+title: "subjectRightsRequestDetail resource type"
+description: "Represents the details of a subject rights request, including number of items found, number of items reviewed, and so on."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 
-# dataSubjectRequestDetail resource type
+# subjectRightsRequestDetail resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of a data subject request, including number of items found, number of items reviewed, and so on.
+Represents the details of a subject rights request, including number of items found, number of items reviewed, and so on.
 
 ## Properties
 |Property|Type|Description|
@@ -33,12 +33,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.dataSubjectRequestDetail"
+  "@odata.type": "microsoft.graph.subjectRightsRequestDetail"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.dataSubjectRequestDetail",
+  "@odata.type": "#microsoft.graph.subjectRightsRequestDetail",
       "itemCount": "Int64",
       "totalItemSize": "Int64",
       "itemNeedReview": "Int64",

@@ -2482,7 +2482,7 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 
-### dataSubjectRequestStage values 
+### subjectRightsRequestStage values 
 
 |Member|
 |:---|
@@ -2493,7 +2493,7 @@ Possible values for user account types (group membership), per Windows definitio
 |caseResolved| Resolve case stage |
 |unknownFutureValue|
 
-### dataSubjectRequestStageStatus values 
+### subjectRightsRequestStageStatus values 
 
 |Member|
 |:---|
@@ -2503,7 +2503,7 @@ Possible values for user account types (group membership), per Windows definitio
 |failed|The stage has failed |
 |unknownFutureValue|
 
-### dataSubjectRequestStatus values 
+### subjectRightsRequestStatus values 
 
 |Member|
 |:---|
@@ -2511,7 +2511,7 @@ Possible values for user account types (group membership), per Windows definitio
 |closed| The request has been marked closed |
 |unknownFutureValue|
 
-### dataSubjectRequestType values 
+### subjectRightsRequestType values 
 
 |Member|
 |:---|

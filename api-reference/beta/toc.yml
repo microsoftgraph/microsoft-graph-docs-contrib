@@ -1483,29 +1483,29 @@ items:
       - name: Data Subject Request
         items:
         - name: Overview
-          href: resources/dataSubjectRequest-dataSubjectRequestapioverview.md
-        - name: Data subject request
-          href: resources/datasubjectrequest.md
+          href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
+        - name: Subject Rights Request
+          href: resources/subjectrightsrequest.md
           items:
           - name: List
-            href: api/datasubjectrequest-list.md
+            href: api/subjectrightsrequest-list.md
           - name: Create
-            href: api/datasubjectrequest-post.md
+            href: api/subjectrightsrequest-post.md
           - name: Get
-            href: api/datasubjectrequest-get.md
+            href: api/subjectrightsrequest-get.md
           - name: Update
-            href: api/datasubjectrequest-update.md
+            href: api/subjectrightsrequest-update.md
           - name: Get final report
-            href: api/datasubjectrequest-getfinalreport.md
+            href: api/subjectrightsrequest-getfinalreport.md
           - name: Get final attachment
-            href: api/datasubjectrequest-getfinalattachment.md
+            href: api/subjectrightsrequest-getfinalattachment.md
         - name: Note
           href: resources\authorednote.md
           items:
           - name: List
-            href: api/datasubjectrequest-list-notes.md
+            href: api/subjectrightsrequest-list-notes.md
           - name: Create
-            href: api/datasubjectrequest-post-notes.md
+            href: api/subjectrightsrequest-post-notes.md
       - name: eDiscovery
         items:
         - name: Overview
