@@ -31,6 +31,15 @@ This type has the following properties:
 | reviewers | [userSet](userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by ID or as members of a group, using a collection of [singleUser](singleuser.md) and [groupMembers](groupmembers.md). |
 | startDateTime | DateTimeOffset | When the first review should start. |
 
+### Enum Type
+
+| Member | Description |
+|:---------------|:--------|:----------|
+| acceptAccessRecommendation | Review decision to take recommendations from access review to accept/remove access to access package. The general rule for AR recommendations is if last user sign in more than 30 days, it is recommended to remove access to that user. |
+| keepAccess | Review decision is to keep current access. |
+| removeAccess | Review decision is to remove access to access package. |
+| unknownFutureValue | Sentinel member for evolvable enum |
+
 ## JSON representation
 
 
