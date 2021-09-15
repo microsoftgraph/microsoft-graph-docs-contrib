@@ -5195,6 +5195,7 @@ items:
               href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
           href: resources/entitlementmanagement-root.md
+          items:
           - name: Access package
             href: resources/accesspackage.md
             items:
