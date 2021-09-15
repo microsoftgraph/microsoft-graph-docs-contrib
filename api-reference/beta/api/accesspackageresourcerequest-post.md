@@ -92,19 +92,19 @@ Content-type: application/json
              "isEditable": true,
              "isPersistedOnAssignmentRemoval": false,
              "attributeSource": {
-                 "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.resourceAttributeQuestion",
+                 "@odata.type": "#microsoft.graph.resourceAttributeQuestion",
                  "question": {
                       "isRequired": false,
                       "text": {
                           "defaultText": "enter mail",
                           "localizedTexts": []
                       },
-                      "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.textInputQuestion",
+                      "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
                       "isSingleLineQuestion": true
                   }
               },
               "attributeDestination": {
-                  "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.userDirectoryAttributeStore"
+                  "@odata.type": "#microsoft.graph.userDirectoryAttributeStore"
               }
          }
      ]
@@ -345,19 +345,19 @@ Content-type: application/json
             "isEditable": true,
             "isPersistedOnAssignmentRemoval": false,
             "attributeSource": {
-                "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.resourceAttributeQuestion",
+                "@odata.type": "#microsoft.graph.resourceAttributeQuestion",
                 "question": {
                     "isRequired": false,
                     "text": {
                         "defaultText": "Enter your city",
                         "localizedTexts": []
                     },
-                    "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.textInputQuestion",
+                    "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
                     "isSingleLineQuestion": true
                 }
             },
             "attributeDestination": {
-                "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.userDirectoryAttributeStore"
+                "@odata.type": "#microsoft.graph.userDirectoryAttributeStore"
             }
         }
     ]
