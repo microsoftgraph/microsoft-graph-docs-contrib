@@ -91,7 +91,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code. The response also includes one of the following:
 
-- If you're getting attendance report of an online meeting, this method returns a [meetingAttendanceReport](/meetingAttendanceReport.md) object in the response body.
+- If you're getting attendance report of an online meeting, this method returns a [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object in the response body.
 - If you're getting attendee report or recording of a live event, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
 
 ## Examples
@@ -102,6 +102,7 @@ The following example shows a request to get a meeting attendance report with de
 
 #### Request
 
+The following request uses a delegated token.
 <!-- {
   "blockType": "request",
   "name": "get_attendance_report"
@@ -109,6 +110,12 @@ The following example shows a request to get a meeting attendance report with de
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+The following request uses an app token.
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
 ```
 
 #### Response
@@ -195,10 +202,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 The following request uses an app token.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_attendee_report"
-}-->
+<!-- { "blockType": "ignored" }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
 ```
@@ -231,10 +235,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 ```
 
 The following request uses an app token.
-<!-- {
-  "blockType": "request",
-  "name": "get_live_event_recording"
-}-->
+<!-- { "blockType": "ignored" }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
 ```
