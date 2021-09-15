@@ -9,6 +9,14 @@
           "ChangeType": "Change",
           "Description": "Updated properties table in [assignmentReviewSettings](/resources/assignmentReviewSettings?view=graph-rest-beta) resource type and related properties.",
           "Target": "assignmentReviewSettings"
+        },
+        {
+          "Id": "0a65081b-9698-4f25-a7b3-81f214b8a306",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accessREviewTimeoutBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added **accessReviewTimeoutBehavior** enumeration.",
+          "Target": "acessReviewTimeoutBehavior"
         }
       ],
         "Id": "0a65081b-9698-4f25-a7b3-81f214b8a306",
