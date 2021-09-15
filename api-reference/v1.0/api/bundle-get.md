@@ -51,7 +51,7 @@ Do not supply a request body with this method.
 
 If successful, this method returns a [driveItem][driveItem] resource with the [bundle][bundle] in the response body.
 
-Read the [Error Responses][error-response] topic for more info about how errors are returned.
+For information about error responses, see [Error responses][error-response].
 
 ## Examples
 

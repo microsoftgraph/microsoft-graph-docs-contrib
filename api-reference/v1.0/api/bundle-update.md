@@ -55,7 +55,7 @@ property values. For best performance, don't include existing values that haven'
 
 If successful, this method returns a [driveItem][] resource that represents the updated bundle in the response body.
 
-Read the [Error Responses][error-response] topic for more info about how errors are returned.
+For information about error responses, see [Error responses][error-response].
 
 ## Example
 

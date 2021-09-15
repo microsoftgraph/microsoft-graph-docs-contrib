@@ -51,7 +51,7 @@ Do not supply a request body with this method.
 
 If successful, this request returns the list of bundle items defined for the drive.
 
-Read the [Error Responses][error-response] topic for more info about how errors are returned.
+For information about error responses, see [Error responses][error-response].
 
 ## Examples
 

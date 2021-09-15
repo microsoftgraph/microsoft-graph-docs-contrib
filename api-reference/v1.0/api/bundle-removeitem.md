@@ -43,7 +43,7 @@ Do not supply a request body with this method.
 
 If successful, the response is `204 No Content`.
 
-Read the [Error Responses][error-response] topic for more info about how errors are returned.
+For information about error responses, see [Error responses][error-response].
 
 ## Example
 

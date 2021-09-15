@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of the bundle to be created.
 
 If the request is successful, the [driveItem](../resources/driveitem.md) representing the newly created bundle will be returned.
 
-Read the [Error Responses][error-response] topic for more info about how errors are returned.
+For information about error responses, see [Error responses][error-response].
 
 ## Examples
 
