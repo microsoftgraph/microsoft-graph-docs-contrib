@@ -34,7 +34,14 @@ Meeting artifacts are content produced for the duration of an online meeting or 
 In order to use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to get online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 > [!CAUTION]
-> To keep API consistency, you may still get meeting artifacts in beta with _OnlineMeeting.Read_/_OnlineMeeting.ReadWrite_ delegated permission and _OnlineMeeting.Read.All_/_OnlineMeeting.ReadWrite.All_ application permission until **January 15th 2022**. After that, the _OnlineMeetingArtifact.Read.All_ permission will be required to get meeting artifacts and requests without it will be forbidden.
+> To keep API consistency, you may still get meeting artifacts in beta with
+>
+>- _OnlineMeeting.Read_
+>- _OnlineMeeting.ReadWrite_
+>- _OnlineMeeting.Read.All_
+>- _OnlineMeeting.ReadWrite.All_
+>
+> until **January 15th 2022**. After that, the _OnlineMeetingArtifact.Read.All_ permission will be required to get meeting artifacts and requests without it will be forbidden.
 
 ## HTTP request
 
@@ -89,7 +96,10 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. If you're getting the attendee report or recording of a live online meeting, this method also returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
+If successful, this method returns a `200 OK` response code. The response also includes one of the following:
+
+- If you're getting attendance report of an online meeting, this method returns a [meetingAttendanceReport](/meetingAttendanceReport.md) object in the response body.
+- If you're getting attendee report or recording of a live event, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
 
 ## Examples
 
