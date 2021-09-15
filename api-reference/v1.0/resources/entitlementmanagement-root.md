@@ -15,5 +15,20 @@ Azure Active Directory (Azure AD) entitlement management can help you manage acc
 
 By creating access packages with the roles users need to have across those resources, and defining policies for who can request an access package and how long they can have an assignment to an access package, you can govern the lifecycle of access for both internal and external users.
 
+The entitlement management resource types include:
+
+- [accessPackage](accesspackage.md): Defines the collections of resource roles and the policies for how one or more users may obtain access to those resources.
+- [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md): Specifies the policy by which subjects may request or be assigned an access package via an access package assignment.
+- [accessPackageAssignmentRequest](accesspackageassignmentrequest.md): Created by a user who wishes to obtain an access package assignment.
+- [accessPackageAssignment](accesspackageassignment.md): An assignment of an access package to a particular subject, for a period of time.
+- [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md): Indicates the resource-specific role which a subject has been assigned through an access package assignment.
+- [accessPackageCatalog](accesspackagecatalog.md): A container for access packages.
+- [accessPackageResourceRequest](accesspackageresourcerequest.md): A request to add a resource to an access package catalog.
+- [accessPackageResourceEnvironment](accesspackageresourceenvironment.md): A reference to the geolocation of the resource. Applicable to Multi-Geo SharePoint Online sites.
+- [connectedOrganization](connectedorganization.md): A connected organization for external users who can request access.
+- [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Azure AD entitlement management.
+- [approval](approval.md): represents the decisions associated with an access package request.
+
+Note that the entitlement management feature, including the API, is included in Azure AD Premium P2. The tenant where entitlement management is being used must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription.
 
 

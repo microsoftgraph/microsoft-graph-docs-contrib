@@ -5193,6 +5193,90 @@ items:
               href: api/userconsentrequest-get.md
             - name: Filter by current user
               href: api/userconsentrequest-filterByCurrentUser.md
+        - name: Entitlement management
+          href: resources/entitlementmanagement-root.md
+          - name: Access package
+            href: resources/accesspackage.md
+            items:
+            - name: List
+              href: api/accesspackage-list.md
+            - name: Create
+              href: api/accesspackage-create.md
+            - name: Get
+              href: api/accesspackage-get.md
+            - name: Update
+              href: api/accesspackage-update.md
+            - name: Delete
+              href: api/accesspackage-delete.md
+            - name: Filter by current user
+              href: api/accesspackage-filterbycurrentuser.md
+            - name: Get applicable policy requirements
+              href: api/accesspackage-getapplicablepolicyrequirements.md
+          - name: Access package assignment
+            href: resources/accesspackageassignment.md
+            items:
+            - name: List
+              href: api/accesspackageassignment-list.md
+            - name: Filter by current user
+              href: api/accesspackageassignment-filterbycurrentuser.md
+          - name: Access package assignment policy
+            href: resources/accesspackageassignmentpolicy.md
+          - name: Access package assignment request
+            href: resources/accesspackageassignmentrequest.md
+            items:
+            - name: List
+              href: api/accesspackageassignmentrequest-list.md
+            - name: Create
+              href: api/accesspackageassignmentrequest-create.md
+            - name: Get
+              href: api/accesspackageassignmentrequest-get.md
+            - name: Delete
+              href: api/accesspackageassignmentrequest-delete.md
+            - name: Filter by current user
+              href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+            - name: Cancel
+              href: api/accesspackageassignmentrequest-cancel.md
+          - name: Access package catalog
+            href: resources/accesspackagecatalog.md
+            items:
+            - name: List
+              href: api/accesspackagecatalog-list.md
+            - name: Create
+              href: api/accesspackagecatalog-create.md
+            - name: Get
+              href: api/accesspackagecatalog-get.md
+            - name: Update
+              href: api/accesspackagecatalog-update.md
+            - name: Delete
+              href: api/accesspackagecatalog-delete.md
+          - name: Connected organization
+            href: resources/connectedorganization.md
+            items:
+            - name: List
+              href: api/connectedorganization-list.md
+            - name: Create
+              href: api/connectedorganization-create.md
+            - name: Get
+              href: api/connectedorganization-get.md
+            - name: Update
+              href: api/connectedorganization-update.md
+            - name: Delete
+              href: api/connectedorganization-delete.md
+            - name: List external sponsors
+              href: api/connectedorganization-list-externalsponsors.md
+            - name: List internal sponsors
+              href: api/connectedorganization-list-internalsponsors.md
+            - name: Add external sponsors
+              href: api/connectedorganization-post-externalsponsors.md
+            - name: Add internal sponsors
+              href: api/connectedorganization-post-internalsponsors.md
+          - name: Entitlement management settings
+            href: resources/entitlementmanagementsettings.md
+            items:
+            - name: Get
+              href: api/entitlementmanagementsettings-get.md
+            - name: Update
+              href: api/entitlementmanagementsettings-update.md
         - name: Terms of use
           items:
           - name: Agreement
