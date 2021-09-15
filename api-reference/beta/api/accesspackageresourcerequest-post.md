@@ -99,7 +99,7 @@ Content-type: application/json
                           "defaultText": "enter mail",
                           "localizedTexts": []
                       },
-                      "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                      "@odata.type": "#microsoft.graph.textInputQuestion",
                       "isSingleLineQuestion": true
                   }
               },
@@ -352,7 +352,7 @@ Content-type: application/json
                         "defaultText": "Enter your city",
                         "localizedTexts": []
                     },
-                    "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                    "@odata.type": "#microsoft.graph.textInputQuestion",
                     "isSingleLineQuestion": true
                 }
             },
