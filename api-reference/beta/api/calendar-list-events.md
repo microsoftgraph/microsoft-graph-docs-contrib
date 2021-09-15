@@ -261,7 +261,7 @@ The following example shows the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subject,'All')&messages?$filter=from/emailAddress/address eq 'admin@contoso.com'
+GET https://graph.microsoft.com/beta/me/calendar/events?$filter=startsWith(subject,'All')&messages?$filter=from/emailAddress/address eq 'admin@contoso.com'
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
@@ -276,7 +276,7 @@ Here is an example of the response. Note: The response object shown here might b
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/events",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/events",
     "value": [
         {
             "@odata.etag": "W/\"73p1z1T9xUKc8HVNwAwcvgAAR5rxTA==\"",
