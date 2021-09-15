@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicablePolicyRequirements
+POST /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}/getApplicablePolicyRequirements
 ```
 
 ## Request headers

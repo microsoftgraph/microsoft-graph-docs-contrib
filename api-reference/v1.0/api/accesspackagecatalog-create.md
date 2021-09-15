@@ -25,10 +25,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-POST /identityGovernance/entitlementManagement/accessPackageCatalogs
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /identityGovernance/entitlementManagement/catalogs
 ```
 
 ## Request headers

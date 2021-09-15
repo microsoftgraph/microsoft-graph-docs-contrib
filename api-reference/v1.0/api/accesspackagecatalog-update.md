@@ -23,13 +23,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}
+``` http
+PATCH /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId}
 ```
+
 ## Request headers
 |Name|Description|
 |:---|:---|

@@ -25,10 +25,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-DELETE /identityGovernance/entitlementManagement/accessPackages/{id}
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 ```
 
 ## Request headers

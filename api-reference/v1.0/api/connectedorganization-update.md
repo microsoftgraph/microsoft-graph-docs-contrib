@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
+PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
 ```
 
 ## Request headers
