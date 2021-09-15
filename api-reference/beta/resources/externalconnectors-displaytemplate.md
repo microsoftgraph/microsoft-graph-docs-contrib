@@ -20,7 +20,7 @@ A display template enables the developer to define the appearance of the content
 |:---|:---|:---|
 |id|String|The text identifier for the display template. Example: contosoTickets|
 |layout|[microsoft.graph.Json](../resources/intune-mam-json.md)|The definition of the content's appearance, represented by an [Adaptive Card](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started), which is a JSON-serialized card object model.|
-|priority|Int32|The integer priority of this display template. A display template with priority 1 is evaluated before that of a template of priority 4. Gaps in priority values are supported.|
+|priority|Int32|Defines the priority of a display template. A display template with priority 1 is evaluated before a template with priority 4. Gaps in priority values are supported.|
 |rules|[microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md) collection|Specifies additional rules for selecting this display template based on the item schema. Optional.|
 
 ## Relationships
