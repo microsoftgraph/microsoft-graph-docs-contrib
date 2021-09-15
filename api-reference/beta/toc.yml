@@ -10245,6 +10245,8 @@ items:
           href: api/educationsubmittedsubmissionresource-get.md
         - name: Return submission
           href: api/educationsubmission-return.md
+        - name: Reassign submission
+          href: api/educationsubmission-reassign.md          
       - name: Outcome
         items:
         - name: Outcome
