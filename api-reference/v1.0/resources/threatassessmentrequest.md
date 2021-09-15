@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # threatAssessmentRequest resource type
 
-An abstract resouce type used to represent a threat assessment request item.
+An abstract resource type used to represent a threat assessment request item.
 
 A threat assessment request can be one of the following types:
 

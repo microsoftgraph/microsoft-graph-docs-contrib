@@ -559,7 +559,8 @@ Content-Length: 1876
                 }
             ]
         }
-    ]
+    ],
+    "totalParticipantCount": 2
 }
 
 ```
