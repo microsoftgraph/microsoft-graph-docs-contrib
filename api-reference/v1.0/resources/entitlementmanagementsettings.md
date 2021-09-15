@@ -47,5 +47,6 @@ The following is a JSON representation of the resource.
   "externalUserLifecycleAction": "String",
   "durationUntilExternalUserDeletedAfterBlocked": "String (duration)"
 }
+```
 
 
