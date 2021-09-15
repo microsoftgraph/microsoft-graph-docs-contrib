@@ -53,6 +53,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|displayName|String|The display name of the access package.
+|description|String|The description of the access package.
+|isHidden|Boolean|Whether the access package is hidden from the requestor.
 
 
 

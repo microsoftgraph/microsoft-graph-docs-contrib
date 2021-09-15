@@ -50,6 +50,7 @@ The following table shows the properties that are required when you update the [
 |:---|:---|:---|
 |displayName|String|The access package name.|
 |description|String|The description of the access package.|
+|isHidden|Boolean|Whether the access package is hidden from the requestor.
 
 
 
