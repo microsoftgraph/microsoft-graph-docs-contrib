@@ -59,6 +59,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [Event](../resources/event.md) objects in the response body.
 
 ## Example
+
+### Example 1: Fetch calendar events
+
 ##### Request
 Here is an example of the request.
 
@@ -67,13 +70,10 @@ Here is an example of the request.
   "blockType": "request",
   "name": "calendar_list_events"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendar/events
-GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subject,'All')&messages?$filter=from/emailAddress/address eq 'admin@contoso.com'
 ```
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For example, to filter the access packages with subject, include a filter such as `$filter=startsWith(subject,'All')` in the query. Simultaneously, filter to get all emails from a specific address received by the signed-in user `messages?$filter=from/emailAddress/address eq 'someuser@example.com`.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-get-events-csharp-snippets.md)]
@@ -122,6 +122,32 @@ Content-length: 354
   ]
 }
 ```
+This method supports some of the OData query parameters to help customize the response. For example, to filter the access packages with subject, include a filter such as `$filter=startsWith(subject,'All')` in the query. Simultaneously, filter to get all emails from a specific address received by the signed-in user `messages?$filter=from/emailAddress/address eq 'admin@contoso.com`.
+
+### Example 2: Filter with subject
+
+## Optional query parameters
+
+##### Request
+The following example shows the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "calendar_list_events"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subject,'All')&messages?$filter=from/emailAddress/address eq 'admin@contoso.com'
+```
+##### Response
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event",
+  "isCollection": true
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
