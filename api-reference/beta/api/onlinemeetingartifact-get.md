@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Meeting artifacts are content produced for the duration of an online meeting or live event. Below is a list of meeting artifacts that can be retrieved via Graph API:
 
 1. Attendance report of an online meeting, in the form of json response, as shown in [example 1](#example-1-get-attendance-report-of-an-online-meeting).
@@ -47,8 +49,7 @@ In order to use application permission for this API, tenant administrators must 
 
 To get the attendance report of an online meeting with delegated(`/me` path) and app(`/users/{userId}` path) permission:
 <!-- {
-  "blockType": "request",
-  "name": "get-meetingAttendanceReport"
+  "blockType": "request"
 }-->
 
 ```http
@@ -58,8 +59,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 
 To get the attendee report of a live event with delegated(`/me` path) and app(`/users/{userId}` path) permission:
 <!-- {
-  "blockType": "request",
-  "name": "get-live-event-attendee-report"
+  "blockType": "request"
 }-->
 
 ```http
@@ -69,8 +69,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 
 To get the recordings of a live event with delegated(`/me` path) and app(`/users/{userId}` path) permission:
 <!-- {
-  "blockType": "request",
-  "name": "get-live-event-recordings"
+  "blockType": "request"
 }-->
 
 ```http
@@ -110,9 +109,7 @@ The following example shows a request to get a meeting attendance report with de
 #### Request
 
 <!-- {
-  "blockType": "request",
-  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
-  "name": "get-meetingAttendanceReport"
+  "blockType": "request"
 }-->
 
 ```msgraph-interactive
@@ -192,9 +189,7 @@ The following example shows a request to download an attendee report.
 
 The following request uses a user token.
 <!-- {
-  "blockType": "request",
-  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
-  "name": "get-attendeeReport-user-token"
+  "blockType": "request"
 }-->
 
 ```http
@@ -204,9 +199,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 The following request uses an app token.
 
 <!-- {
-  "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
-  "name": "get-attendeeReport-app-token"
+  "blockType": "request"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
@@ -223,6 +216,40 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
+### Example 2: Get recording of a live event
+
+The following example shows a request to download a recording.
+
+#### Request
+
+The following request uses a user token.
+<!-- {
+  "blockType": "request"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+The following request uses an app token.
+<!-- {
+  "blockType": "request"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
+```
+
+
 ### Example 3: Get recording of a live event
 
 The following example shows a request to download a recording.
@@ -231,9 +258,7 @@ The following example shows a request to download a recording.
 
 The following request uses a user token.
 <!-- {
-  "blockType": "request",
-  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
-  "name": "get-recording-user-token"
+  "blockType": "request"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
@@ -241,9 +266,39 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 The following request uses an app token.
 <!-- {
-  "blockType": "request",
-  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
-  "name": "get-recording-app-token"
+  "blockType": "request"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
+```
+### Example 4: Get recording of a live event
+
+The following example shows a request to download a recording.
+
+#### Request
+
+The following request uses a user token.
+<!-- {
+  "blockType": "request"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+The following request uses an app token.
+<!-- {
+  "blockType": "request"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
