@@ -13,20 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.
-
-For example, you can:
-- Get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Use the `/attendeeReport` path to get an attendee report of a live event, as shown in [example 4](#example-4-retrieve-the-attendee-report-of-a-live-event).
-- Use the `/recording` and `/alternativeRecording` paths to get the recordings of a live event, as shown in [example 5](#example-5-retrieve-the-recording-of-a-live-event).
-- Use the `/meetingAttendanceReport` path to get the attendance report for a scheduled meeting, as shown in [example 6](#example-6-retrieve-the-attendance-report-of-a-meeting).
-
-> [!NOTE]
->- Meeting attendance reports are available for meetings other than live events, and are only available when the meeting has concluded.
->- Only the meeting organizer can access meeting attendance reports.
->- Recordings and attendee reports are only available for live events, and are only available when the live event has concluded.
->- Only the live event organizer can access attendee reports and recordings.
->- The download links for the live event attendee report and recordings expire in 60 seconds.
+Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object. You may get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 
 ## Permissions
 
@@ -43,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To get an onlineMeeting using meeting ID with delegated and app permission:
+To get an onlineMeeting using meeting ID with delegated(`/me` path) and app permission(`/users/{userId}` path):
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
@@ -57,33 +44,11 @@ GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconfere
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-To get an onlineMeeting using **joinWebUrl** with delegated and app permission:
+To get an onlineMeeting using **joinWebUrl** with delegated(`/me` path) and app permission(`/users/{userId}` path):
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
-```
-
-To get the attendee report of a live event with delegated and app permission:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onlineMeetings/{meetingId}/attendeeReport
-GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
-```
-
-To get the recordings of a live event with delegated and app permission:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onlineMeetings/{meetingId}/recording
-GET /me/onlineMeetings/{meetingId}/alternativeRecording
-GET /users/{userId}/onlineMeetings/{meetingId}/recording
-GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
-```
-
-To get the attendance report of a meeting with delegated permission:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
 > [!NOTE]
@@ -349,218 +314,4 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
         }
     ]
 }
-```
-
-### Example 4: Retrieve the attendee report of a live event
-The following example shows a request to download an attendee report.
-
-#### Request
-The following request uses a user token.
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
-```
-
-The following request uses an app token.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
-  "name": "get-attendeeReport-app-token"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendeereport-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendeereport-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-attendeereport-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-attendeereport-app-token-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 302 Found
-Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
-```
-
-### Example 5: Retrieve the recording of a live event
-The following example shows a request to download a recording.
-
-#### Request
-The following request uses a user token.
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
-```
-
-The following request uses an app token.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
-  "name": "get-recording-app-token"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-recording-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-recording-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-recording-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-recording-app-token-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 302 Found
-Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
-```
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Get onlineMeeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
-### Example 6: Retrieve the attendance report of a meeting
-The following example shows a request to get a meeting attendance report.
-
-#### Request
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
-  "name": "get-meetingAttendanceReport"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-meetingattendancereport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-meetingattendancereport-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-meetingattendancereport-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-meetingattendancereport-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.meetingAttendanceReport"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 1876
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
-    "attendanceRecords": [
-        {
-            "emailAddress": "email address",
-            "totalAttendanceInSeconds": 1558,
-            "role": "Organizer",
-            "identity": {
-                "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
-                "displayName": "(redacted)",
-                "tenantId": null
-            },
-            "attendanceIntervals": [
-                {
-                    "joinDateTime": "2021-03-16T18:59:46.598956Z",
-                    "leaveDateTime": "2021-03-16T19:25:45.4473057Z",
-                    "durationInSeconds": 1558
-                }
-            ]
-        },
-        {
-            "emailAddress": "email address",
-            "totalAttendanceInSeconds": 1152,
-            "role": "Presenter",
-            "identity": {
-                "id": "(redacted)",
-                "displayName": "(redacted)",
-                "tenantId": null
-            },
-            "attendanceIntervals": [
-                {
-                    "joinDateTime": "2021-03-16T18:59:52.2782182Z",
-                    "leaveDateTime": "2021-03-16T19:06:47.7218491Z",
-                    "durationInSeconds": 415
-                },
-                {
-                    "joinDateTime": "2021-03-16T19:09:23.9834702Z",
-                    "leaveDateTime": "2021-03-16T19:16:31.1381195Z",
-                    "durationInSeconds": 427
-                },
-                {
-                    "joinDateTime": "2021-03-16T19:20:27.7094382Z",
-                    "leaveDateTime": "2021-03-16T19:25:37.7121956Z",
-                    "durationInSeconds": 310
-                }
-            ]
-        }
-    ],
-    "totalParticipantCount": 2
-}
-
 ```
