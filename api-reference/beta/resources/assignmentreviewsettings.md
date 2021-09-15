@@ -21,12 +21,15 @@ This type has the following properties:
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
+| accessReviewTimeoutBehavior | microsoft.graph.accessReviewTimeoutBehavior | Default decision result if request is not reviewed within the time period specified in `durationInDays`. |
+| durationInDays | Int32 | The number of days to allow input from reviewers.|
+| isAccessRecommendationEnabled | boolean | Display recommendation to reviewer or not. The default value is true |
+| isApprovalJustificationRequired | boolean | Require justification for reviewer or not. The default value is true. |
 | isEnabled| Boolean | If true, access reviews are required for assignments from this policy. |
 | recurrenceType | String | The interval for recurrence, such as `monthly` or `quarterly`. |
 | reviewerType | String | Who should be asked to do the review, either `Self` or `Reviewers`. |
-| startDateTime | DateTimeOffset | When the first review should start. |
-| durationInDays | Int32 | The number of days to allow input from reviewers.|
 | reviewers | [userSet](userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by ID or as members of a group, using a collection of [singleUser](singleuser.md) and [groupMembers](groupmembers.md). |
+| startDateTime | DateTimeOffset | When the first review should start. |
 
 ## JSON representation
 
