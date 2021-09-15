@@ -129,9 +129,9 @@ Content-type: application/json
               "isEditable": true,
               "isPersistedOnAssignmentRemoval": false,
               "attributeSource": {
-                  "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.resourceAttributeQuestion",
+                  "@odata.type": "#microsoft.graph.resourceAttributeQuestion",
                   "question": {
-                      "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.multipleChoiceQuestion",
+                      "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
                       "id": "6c797e12-e608-4ac9-90da-a8f18df37a94",
                       "isRequired": false,
                       "isAnswerEditable": null,
@@ -182,7 +182,7 @@ Content-type: application/json
                   }
               },
               "attributeDestination": {
-                  "@odata.type": "#Microsoft.IGAELM.EC.FrontEnd.ExternalModel.userDirectoryAttributeStore"
+                  "@odata.type": "#microsoft.graph.userDirectoryAttributeStore"
               }
           }
       ]
