@@ -55,7 +55,7 @@ The following table lists the methods that you can use to interact with access r
 
 ## Role and application permission authorization checks
 
-The following directory roles are required for a calling user to manage access reviews. 
+The following [Azure AD directory roles](/azure/active-directory/roles/permissions-reference) are required for a calling user to manage access reviews. 
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
