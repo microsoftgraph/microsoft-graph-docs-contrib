@@ -98,7 +98,7 @@ If successful, this method returns a `200 OK` response code. The response also i
 
 ### Example 1: Get attendance report of an online meeting
 
-The following example shows a request to get a meeting attendance report with delegated permission.
+The following example shows a request to get a meeting attendance report.
 
 #### Request
 
