@@ -91,7 +91,7 @@ The following is the JSON response:
 }
 ```
 
-## Retriving permission IDs
+## Retrieving permission IDs
 
 If you need to set permissions using the Azure CLI, PowerShell, or infrastructure as code frameworks, you might need the identifier for the permission that you want to use instead of the name. You can use the Azure CLI to retrieve the identifier by running `az ad sp list`. However, this generates a very long list, and it can be hard to find the specific permission you want. If you already know the name of the permission you need, you can run the following command using the Azure CLI:
 

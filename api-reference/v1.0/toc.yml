@@ -159,44 +159,88 @@ items:
         items:
           - name: Overview
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
-          - name: Build a web application (JavaScript)
+          - name: /graph/toolkit for React
+            href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
+          - name: /graph/toolkit for SPFx
+            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
+      - name: Build your first app
+        items:
+          - name: Register an Azure AD app
+            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
+          - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: Build a web app (React)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/1.0
+          - name: Build a web app (Angular)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/1.0
           - name: Build a SharePoint web part
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
-          - name: Build a Microsoft Teams tab
+          - name: Build a Teams tab
             href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
-          - name: Use the Toolkit with React
-            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
-          - name: Use the Toolkit with Angular
-            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
+          - name: Build a Teams tab with SSO
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
+          - name: Build an Electron app
+            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
+      - name: Providers
+        items:
+          - name: Using the providers
+            href: /graph/toolkit/providers/providers?context=graph/api/1.0
+          - name: MSAL provider
+            href: /graph/toolkit/providers/msal?context=graph/api/1.0
+          - name: MSAL2 provider
+            href: /graph/toolkit/providers/msal2?context=graph/api/1.0
+          - name: SharePoint provider
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
+          - name: Teams provider
+            href: /graph/toolkit/providers/teams?context=graph/api/1.0
+          - name: Teams MSAL2 provider
+            href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
+          - name: Electron provider
+            href: /graph/toolkit/providers/electron?context=graph/api/1.0
+          - name: Proxy provider
+            href: /graph/toolkit/providers/proxy?context=graph/api/1.0
+          - name: Custom provider
+            href: /graph/toolkit/providers/custom?context=graph/api/1.0
       - name: Components
         items:
           - name: Login
             href: /graph/toolkit/components/login?context=graph/api/1.0
+          - name: Get
+            href: /graph/toolkit/components/get?context=graph/api/1.0
           - name: Person
             href: /graph/toolkit/components/person?context=graph/api/1.0
           - name: People
             href: /graph/toolkit/components/people?context=graph/api/1.0
+          - name: Person card
+            href: /graph/toolkit/components/person-card?context=graph/api/1.0
+          - name: People picker
+            href: /graph/toolkit/components/people-picker?context=graph/api/1.0
+          - name: Teams channel picker
+            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/1.0
           - name: Agenda
             href: /graph/toolkit/components/agenda?context=graph/api/1.0
-          - name: Tasks
+          - name: Planner tasks
             href: /graph/toolkit/components/tasks?context=graph/api/1.0
-      - name: Providers
+          - name: To-do tasks
+            href: /graph/toolkit/components/todo?context=graph/api/1.0
+          - name: File
+            href: /graph/toolkit/components/file?context=graph/api/1.0
+          - name: File list
+            href: /graph/toolkit/components/file-list?context=graph/api/1.0
+      - name: Customize components
         items:
-          - name: Using the providers
-            href: /graph/toolkit/providers?context=graph/api/1.0
-          - name: Msal provider
-            href: /graph/toolkit/providers/msal?context=graph/api/1.0
-          - name: SharePoint provider
-            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
-          - name: Microsoft Teams provider
-            href: /graph/toolkit/providers/teams?context=graph/api/1.0
-          - name: Custom provider
-            href: /graph/toolkit/providers/custom?context=graph/api/1.0
-      - name: Styling components
-        href: /graph/toolkit/style?context=graph/api/1.0
-      - name: Templating components
-        href: /graph/toolkit/templates?context=graph/api/1.0
+          - name: Styling components
+            href: /graph/toolkit/customize-components/style?context=graph/api/1.0
+          - name: Templating components
+            href: /graph/toolkit/customize-components/templates?context=graph/api/1.0
+          - name: Handling events
+            href: /graph/toolkit/customize-components/events?context=graph/api/1.0
+          - name: Caching Microsoft Graph calls in components
+            href: /graph/toolkit/customize-components/cache?context=graph/api/1.0
+          - name: Localizing components
+            href: /graph/toolkit/customize-components/localization?context=graph/api/1.0
+          - name: Right-to-left support
+            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
@@ -6265,6 +6309,10 @@ items:
           href: api/channel-list-members.md
         - name: List message replies
           href: api/chatmessage-list-replies.md
+        - name: Provision email address
+          href: api/channel-provisionemail.md  
+        - name: Remove email address
+          href: api/channel-removeemail.md  
         - name: Remove member
           href: api/channel-delete-members.md
         - name: Reply to message
