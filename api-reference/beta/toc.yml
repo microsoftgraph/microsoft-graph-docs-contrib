@@ -12122,6 +12122,8 @@ items:
               href: api/accesspackageassignmentrequest-post.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
+            - name: Delete
+              href: api/accesspackageassignmentrequest-delete.md
             - name: Filter by current user
               href: api/accesspackageassignmentrequest-filterbycurrentuser.md
             - name: Cancel

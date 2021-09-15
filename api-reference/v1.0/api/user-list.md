@@ -333,7 +333,7 @@ Content-type: application/json
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_wa_count"
 } -->
 ```msgraph-interactive
@@ -379,7 +379,7 @@ Content-type: application/json
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_to_count"
 } -->
 ```msgraph-interactive
