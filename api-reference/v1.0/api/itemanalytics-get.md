@@ -39,7 +39,7 @@ GET /sites/{site-id}/analytics
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
