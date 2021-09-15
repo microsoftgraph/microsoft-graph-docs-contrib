@@ -12,7 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Retrieve the properties of an [entitlementManagementSettings](../resources/entitlementManagementSettings.md) object.
+Retrieve the properties of an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
 
 
 ## Permissions
@@ -53,8 +53,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [entitlementManagementSettings](../resources/entitlementManagementSettings.md) object in the response body.
-
+If successful, this method returns a `200 OK` response code and the requested [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object in the response body.
 
 ## Examples
 
