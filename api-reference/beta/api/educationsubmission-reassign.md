@@ -126,7 +126,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "educationsubmission_reassign"
+  "name": "educationsubmission_prefer_reassign"
 }-->
 
 ```http
