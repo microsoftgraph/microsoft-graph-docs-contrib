@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object. This deletes a localized branding only. The default branding can not be deleted once it is configured.
+Delete a localized branding object. To delete the [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object, all images (Stream types) must first be removed from the object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following is an example of a request to delete the `fr-FR` localization object.
 
 <!-- {
   "blockType": "request",
@@ -57,7 +57,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr
+DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
 
 
