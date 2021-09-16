@@ -1,6 +1,6 @@
 ---
 title: "educationSubmission resource type"
-description: "Submissions are owned by an assignment. A submission represents the resources that an individual (or group) turn in for an assignment and the grade/feedback that is returned."
+description: "Represents the resources that an individual (or group) submit for an assignment and the outcomes (such as grades or feedback) associated with the submission."
 author: "dipakboyed"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A submission represents the resources that an individual (or group) turn in for an assignment and the outcomes (such as grades or feedback) that are associated with the submission.
+Represents the resources that an individual (or group) turn in for an [assignment](educationassignment.md) and the outcomes (such as grades or feedback) that are associated with the **submission**.
 
-Submissions are owned by an assignment. Submissions are automatically created when an assignment is published. The submission owns two lists of resources. Resources represent the user/groups working area while the submitted resources represent the resources that have actively been turned in by students.  
+Submissions are owned by an **assignment**. Submissions are automatically created when an **assignment** is published. The **submission** owns two lists of resources. Resources represent the user/groups working area while the submitted resources represent the resources that have actively been turned in by students.  
 
 The **status** property is read-only and the object is moved through the workflow via actions. 
 
@@ -32,7 +32,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |[return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|A teacher uses return to indicate that the grades/feedback can be shown to the student.|
 |[reassign](../api/educationsubmission-reassign.md)|[educationSubmission](educationsubmission.md)|Reassigns the submission to the student to revisit/redo its work, and in the mean time it has the ability to return feedback and code.|
 |[Set up submission specific resources folder](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Create a SharePoint folder (under pre-defined location) to upload files as submission resources. |
-|[submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the assignment. This will copy the resources into the **submittedResources** folder for grading and updates the status.|
+|[submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the **assignment**. This will copy the resources into the **submittedResources** folder for grading and updates the status.|
 |[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This will copy the resources into the **workingResources** folder for grading and updates the status.|
 
 ## Properties

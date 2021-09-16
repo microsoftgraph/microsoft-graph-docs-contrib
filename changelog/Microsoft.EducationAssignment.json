@@ -3,12 +3,72 @@
     {
       "ChangeList": [
         {
-          "Id": "98316b4e-3680-4035-a19f-13651216c8c9",
+          "Id": "531f5b67-2821-4b39-bd6e-a5515471e24b",
           "ApiChange": "Member",
           "ChangedApiName": "reassigned",
           "ChangeType": "Addition",
           "Description": "Added the **reassigned** member to the **educationSubmissionStatus** enumeration.",
           "Target": "educationSubmissionStatus"
+        },
+        {
+          "Id": "531f5b67-2821-4b39-bd6e-a5515471e24b",
+          "ApiChange": "Property",
+          "ChangedApiName": "reassignedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **reassignedBy** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "531f5b67-2821-4b39-bd6e-a5515471e24b",
+          "ApiChange": "Property",
+          "ChangedApiName": "reassignedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **reassignedDateTime** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "531f5b67-2821-4b39-bd6e-a5515471e24b",
+          "ApiChange": "Method",
+          "ChangedApiName": "reassign",
+          "ChangeType": "Addition",
+          "Description": "Added the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-beta) method to the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-beta) resource.",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Id": "531f5b67-2821-4b39-bd6e-a5515471e24b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-08T01:11:35.5314928Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "ed8faf2a-231c-40e5-b602-75b323cbac39",
+          "ApiChange": "Member",
+          "ChangedApiName": "studentsOnly",
+          "ChangeType": "Addition",
+          "Description": "Added the **studentsOnly** member to the **educationAddToCalendarOptions** enumeration.",
+          "Target": "educationAddToCalendarOptions"
+        }
+      ],
+      "Id": "ed8faf2a-231c-40e5-b602-75b323cbac39",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-14T15:35:00.000Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },    
+    {
+      "ChangeList": [
+        {      
+          "Id": "98316b4e-3680-4035-a19f-13651216c8c9",
+          "ApiChange": "Action",
+          "ChangedApiName": "setUpResourcesFolder",
+          "ChangeType": "Change",
+          "Description": "Changed the [educationAssignment: setUpResourcesFolder](https://docs.microsoft.com/en-us/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-beta) method from a function to an action.",
+          "Target": "educationAddToCalendarOptions"
         },
         {
           "Id": "98316b4e-3680-4035-a19f-13651216c8c9",

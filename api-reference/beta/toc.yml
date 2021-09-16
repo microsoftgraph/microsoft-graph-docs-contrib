@@ -12124,6 +12124,8 @@ items:
               href: api/accesspackageassignmentrequest-post.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
+            - name: Delete
+              href: api/accesspackageassignmentrequest-delete.md
             - name: Filter by current user
               href: api/accesspackageassignmentrequest-filterbycurrentuser.md
             - name: Cancel
@@ -14584,6 +14586,8 @@ items:
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+        - name: Get operation result (async)
+          href: api/workbook-tablerowoperationresult.md
       - name: Workbook application
         href: resources/workbookapplication.md
         items:
