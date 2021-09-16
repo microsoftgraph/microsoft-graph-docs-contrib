@@ -181,7 +181,7 @@ Content-Type: application/json
 
 ### Example 4: Get bannerLogo for the default locale
 
-The following example returns the **bannerLogo** object for the default locale. If the object is not set, the request returns an empty response.
+The following example returns the **bannerLogo** object for the default locale. You may specify the **id** as `default` or `0` in the request URL. If the object is not set, the request returns an empty response.
 
 #### Request
 
