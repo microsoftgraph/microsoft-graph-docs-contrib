@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Supports creating language-specific branding. While you can't change your original configuration's language from your default language, this resource allows you to create a new configuration for a different language.
+Resource that supports managing language-specific branding. While you can't change your original configuration's language, this resource allows you to create a new configuration for a different language.
 
 Inherits from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).
 
@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.organizationalBranding",
+  "@odata.type": "#microsoft.graph.organizationalBrandingLocalization",
   "id": "String (identifier)",
   "backgroundColor": "String",
   "backgroundImage": "Stream",
