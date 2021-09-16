@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of the default branding object specified by an [organizationalBranding](../resources/organizationalbranding.md) object.
+Update the properties of the default branding object specified by the [organizationalBranding](../resources/organizationalbranding.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,10 +38,12 @@ PATCH /organization/{organizationId}/branding
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-|Accept-Language|A valid ISO-639 locale. Required.|
+|Accept-Language|A valid ISO 639-1 locale. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. 
+
+The following table specifies the properties that can be updated. 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -52,21 +54,19 @@ In the request body, supply the values for relevant fields that should be update
 | squareLogo | Stream | A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment. Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
 | usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 
-The **id** property is ignored when passed in.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [organizationalBranding](../resources/organizationalbranding.md) object in the response body.
+If successful, this method returns a `200 No Content` response code.
 
 ## Examples
 
-### Example 1: Update default branding
-If the branding already exists, `PATCH` will replace only the specified properties, leaving unspecified properties unchanged. 
+### Example 1: Update the default branding
+
 #### Request
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandinglocaliation_1"
@@ -81,23 +81,6 @@ Content-Type: application/json
     "usernameHintText":"DefaultHint"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -108,13 +91,13 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 ```
 
-In this case, the values of the default branding are updated but no values are changed on any localization.
-
 ### Example 2: Update bannerLogo for default branding
+
 The following request updates the banner logo for the default branding.
+
 #### Request
 
 The following is an example of the request.
@@ -132,6 +115,7 @@ Content-Type: image/jpeg
 ```
 
 #### Response
+
 The following is an example of the response.
 
 <!-- {
@@ -141,89 +125,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-### Example 3: Update localized branding
-If **Content-Language** header is specified, the localization associated with **Content-Language** is first created if it doesn't already exist, and then updated using the specified values. The default branding is not changed.
-#### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "update_organizationalbrandinglocaliation_3"
-}-->
-
-```http
-PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
-Content-Type: application/json
-Content-Language: fr
-
-{
-    "backgroundColor":"#FFFF33"
-}
-```
-
-#### Response
-The following is an example of the response.
-
-<!-- {
-  "blockType": "response"
-} -->
-
-```http
-HTTP/1.1 204 No Content
-```
-
-Following this request, the `fr` localization is updated with the new value of **backgroundColor**, but no change is made to the default branding.
-
-### Example 4: Replace default branding and all localizations
-If the branding already exists, `PUT` will replace the default branding and any localizations.
-#### Request
-
-The following is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_organizationalbrandinglocaliation_4"
-}-->
-
-```http
-PUT https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr
-Content-Type: application/json
-Content-Language: fr
-
-{
-    "backgroundColor":"#FFFF33"
-}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandingproperties-4-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandingproperties-4-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-organizationalbrandingproperties-4-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandingproperties-4-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-The following is an example of the response.
-
-<!-- {
-  "blockType": "response"
-} -->
-
-```http
-HTTP/1.1 204 No Content
-```
-
-Following this request, the default branding has only the **backgroundColor** specified and has exactly one localization with the **id** `fr`, also with the **backgroundColor** set.
