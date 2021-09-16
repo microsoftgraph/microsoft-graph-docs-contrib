@@ -68,6 +68,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations
 Content-Type: application/json
+
 {
     "backgroundColor":"#00000F",
     "id": "fr-FR",

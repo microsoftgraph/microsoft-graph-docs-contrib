@@ -142,7 +142,7 @@ The following example returns the **bannerLogo** object for the default locale. 
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_organizationalbranding_defaultlocale_bannerLogo"
 }-->
 
