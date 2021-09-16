@@ -206,7 +206,7 @@ Content-type: application/json
                     },
                     {
                         "@odata.type": "#microsoft.graph.internalSponsors",
-                        "isBackup": false
+                        "isBackup": false,
                     }
                 ],
                 "escalationApprovers": [
@@ -281,8 +281,6 @@ Questions configured in an assignment policy will be asked to requestors in scop
 #### Request
 
 The following example shows a request to create an access package assignment policy. 
-
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -376,7 +374,7 @@ Content-type: application/json
             }]
         },
         "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-        "isAnswerEditable": null,upd
+        "isAnswerEditable": null,
         "isSingleLineQuestion": false
     }]
 }

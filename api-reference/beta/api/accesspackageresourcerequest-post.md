@@ -75,41 +75,41 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
 Content-type: application/json
 
-{
-  "catalogId":"26ac0c0a-08bc-4a7b-a313-839f58044ba5",
-  "requestType": "AdminAdd",
-  "justification": "",
-  "accessPackageResource": {
-     "displayName": "Sales",
-     "description": "https://contoso.sharepoint.com/sites/Sales",
-     "url": "https://contoso.sharepoint.com/sites/Sales",
-     "resourceType": "SharePoint Online Site",
-     "originId": "https://contoso.sharepoint.com/sites/Sales",
-     "originSystem": "SharePointOnline"
-     "attributes": [
-        {
-             "attributeName": "mail",
-             "isEditable": true,
-             "isPersistedOnAssignmentRemoval": false,
-             "attributeSource": {
-                 "@odata.type": "#microsoft.graph.resourceAttributeQuestion",
-                 "question": {
-                      "isRequired": false,
-                      "text": {
-                          "defaultText": "enter mail",
-                          "localizedTexts": []
-                      },
-                      "@odata.type": "#microsoft.graph.textInputQuestion",
-                      "isSingleLineQuestion": true
-                  }
-              },
-              "attributeDestination": {
-                  "@odata.type": "#microsoft.graph.userDirectoryAttributeStore"
-              }
-         }
-     ]
-   }
-}    
+  {
+    "catalogId": "b6dd4c98-0bfa-ea11-b206-c8d9d21f4e9a",
+    "requestType": "AdminAdd",
+    "justification": "",
+    "accessPackageResource": {
+        "displayName": "Sales",
+        "description": "https://contoso.sharepoint.com/sites/Sales",
+        "url": "https://contoso.sharepoint.com/sites/Sales",
+        "resourceType": "SharePoint Online Site",
+        "originId": "https://contoso.sharepoint.com/sites/Sales",
+        "originSystem": "SharePointOnline",
+        "attributes": [
+            {
+                "attributeName": "mail",
+                "isEditable": true,
+                "isPersistedOnAssignmentRemoval": false,
+                "attributeSource": {
+                    "@odata.type": "#microsoft.graph.resourceAttributeQuestion",
+                    "question": {
+                        "isRequired": false,
+                        "text": {
+                            "defaultText": "enter mail",
+                            "localizedTexts": []
+                        },
+                        "@odata.type": "#microsoft.graph.textInputQuestion",
+                        "isSingleLineQuestion": true
+                    }
+                },
+                "attributeDestination": {
+                    "@odata.type": "#microsoft.graph.userDirectoryAttributeStore"
+                }
+            }
+        ]
+    }
+}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerequest-from-accesspackageresourcerequests-csharp-snippets.md)]
@@ -338,7 +338,7 @@ Content-type: application/json
   "requestType": "AdminAdd",
   "accessPackageResource": {
      "originId": "c6294667-7348-4f5a-be73-9d2c65f574f3",
-     "originSystem": "AadGroup"
+     "originSystem": "AadGroup",
      "attributes": [
         {
             "attributeName": "city",
