@@ -1,5 +1,47 @@
 {
-  "changelog": [ 
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "startHoldMusicOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [startHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/startHoldMusicOperation?view=graph-rest-1.0) resource",
+          "Target": "startHoldMusicOperation"
+        },
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stopHoldMusicOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/stopHoldMusicOperation?view=graph-rest-1.0) resource",
+          "Target": "stopHoldMusicOperation"
+        },
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Method",
+          "ChangedApiName": "startHoldMusic",
+          "ChangeType": "Addition",
+          "Description": "Added the [startHoldMusic](https://docs.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-1.0) method to the [participant](https://docs.microsoft.com/en-us/graph/api/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        },
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Method",
+          "ChangedApiName": "stopHoldMusic",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopHoldMusic](https://docs.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-1.0) method to the [participant](https://docs.microsoft.com/en-us/graph/api/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-16T18:05:28.5021936Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
     {
       "ChangeList": [
         {
@@ -121,7 +163,7 @@
       "CreatedDateTime": "2021-08-18T00:00:00",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
-    },   
+    },
     {
       "ChangeList": [
         {
