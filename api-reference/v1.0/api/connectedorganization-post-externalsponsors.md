@@ -45,4 +45,35 @@ The following table shows the properties that are required when you create the [
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
+## Examples
+
+### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_externalsponsor_from_connectedorganization"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors/$ref
+Content-type: application/json
+Content-length: 30
+
+{
+  "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
+}
+```
+
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 

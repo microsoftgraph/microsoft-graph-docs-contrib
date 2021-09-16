@@ -54,4 +54,41 @@ The following table shows the properties that are required when you update the [
 ## Response
 If successful, this method returns a `204 No Content` response code.
 
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "update_entitlementmanagementsettings"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/settings
+Content-Type: application/json
+Content-length: 187
+
+{
+  "externalUserLifecycleAction": "String",
+  "durationUntilExternalUserDeletedAfterBlocked": "String (duration)"
+}
+```
+
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "externalUserLifecycleAction": "String",
+  "durationUntilExternalUserDeletedAfterBlocked": "String (duration)"
+}
+```
+
 
