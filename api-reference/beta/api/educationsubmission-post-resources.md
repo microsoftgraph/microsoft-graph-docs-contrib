@@ -404,6 +404,123 @@ Content-length: 1152
 }
 ```
 
+### Example 6: educationMediaResource
+#### Request
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80","da443246-384d-673b-32db-bdba9d7f2b51"], 
+  "name": "create_educationmediaresource_from_educationsubmission"
+}-->
+```http
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources
+Content-type: application/json
+Content-length: 283
+
+{
+	"resource": {
+		"displayName": "category.jpg",
+		"fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RK2WLKUUBAA4ZBKXNBL6QFC2TKG",
+		"@odata.type": "#microsoft.graph.educationMediaResource"
+	}
+}
+```
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationMediaResource"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 229
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "31f2c67a-6df1-4a7f-b4c5-311fe15c873a",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationMediaResource",
+        "displayName": "category.jpg",
+        "createdDateTime": "2021-09-16T19:07:59.4982929Z",
+        "lastModifiedDateTime": "2021-09-16T19:07:59.4982929Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RK2WLKUUBAA4ZBKXNBL6QFC2TKG",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
+}
+```
+
+### Example 7: educationExternalResource
+#### Request
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80","da443246-384d-673b-32db-bdba9d7f2b51"], 
+  "name": "create_educationexternalresource_from_educationsubmission"
+}-->
+```http
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources
+Content-type: application/json
+Content-length: 283
+
+{
+	"resource": {
+		"displayName": "external",
+		"webUrl": "https://microsoft-my.sharepoint-df.com/:w:/p/EXxrtSxCldNCtP43_2sSUssB0yUHomFf_arYCvE7-IIA_g",
+		"@odata.type": "#microsoft.graph.educationExternalResource"
+	}
+}
+```
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The educationExternalResource is only an out resource, you can't POST a submission with it.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationExternalResource"
+} -->
+```http
+HTTP/1.1 400 Bad request
+Content-type: application/json
+Content-length: 511
+
+{
+    "error": {
+        "code": "20132",
+        "message": "The content of the request is invalid. Common causes are an invalid Content-Type header or no content in the body.",
+        "innerError": {
+            "date": "2021-09-16T19:29:00",
+            "request-id": "926cdc33-d0ac-4e66-b875-37df7aca902c",
+            "client-request-id": "660e30f8-e066-2403-cfb2-6c2f18a1855f"
+        }
+    }
+}
+```
+
 ## See also
 
 * [Assignments and Submissions state transition](/graph/assignments-submissions-states-transition)

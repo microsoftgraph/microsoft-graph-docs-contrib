@@ -39,7 +39,7 @@ POST /education/classes/{id}/assignments/{id}/resources
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of the resource object. It can be an [educationFileResource](../resources/educationfileresource.md), [educationExcelResource](../resources/educationexcelresource.md), [educationWordResource](../resources/educationwordresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) and educationMediaResource.
+In the request body, supply a JSON representation of the resource object. It can be an [educationFileResource](../resources/educationfileresource.md), [educationExcelResource](../resources/educationexcelresource.md), [educationWordResource](../resources/educationwordresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) and [educationMediaResource](../resources/educationmediaresource.md).
 
 >**Note:** The educationExternalResource is only an out resource, you can't POST an assignment with it.
 
@@ -185,9 +185,6 @@ Content-length: 229
     }
 }
 ```
-				   
-																																												
-																					   
 
 ### Example 3: educationFileResource
 #### Request
@@ -394,6 +391,123 @@ Content-length: 229
 			}
 		}
 	}
+}
+```
+
+### Example 6: educationMediaResource
+#### Request
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
+  "name": "create_educationmediaresource_from_educationassignment"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
+Content-type: application/json
+Content-length: 212
+
+{
+    "resource": {
+        "@odata.type": "microsoft.graph.educationMediaResource",
+        "displayName":"homework example.PNG",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF"
+    }
+}
+```
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationMediaResource"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 229
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/resources/$entity",
+    "distributeForStudentWork": false,
+    "id": "30495bfd-c912-49d5-b3e1-92b60db3142a",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationMediaResource",
+        "displayName": "homework example.PNG",
+        "createdDateTime": "2021-09-16T00:09:32.2133895Z",
+        "lastModifiedDateTime": "2021-09-16T00:09:32.2133895Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                "displayName": null
+            }
+        }
+    }
+}
+```
+
+### Example 7: educationExternalResource
+#### Request
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
+  "name": "create_educationexternalresource_from_educationassignment"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
+Content-type: application/json
+Content-length: 283
+
+{
+	"resource": {
+		"displayName": "external",
+		"webUrl": "https://microsoft-my.sharepoint-df.com/:w:/p/EXxrtSxCldNCtP43_2sSUssB0yUHomFf_arYCvE7-IIA_g",
+		"@odata.type": "#microsoft.graph.educationExternalResource"
+	}
+}
+```
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The educationExternalResource is only an out resource, you can't POST a submission with it.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationExternalResource"
+} -->
+```http
+HTTP/1.1 400 Bad request
+Content-type: application/json
+Content-length: 511
+
+{
+    "error": {
+        "code": "20132",
+        "message": "The content of the request is invalid. Common causes are an invalid Content-Type header or no content in the body.",
+        "innerError": {
+            "date": "2021-09-16T19:29:00",
+            "request-id": "926cdc33-d0ac-4e66-b875-37df7aca902c",
+            "client-request-id": "660e30f8-e066-2403-cfb2-6c2f18a1855f"
+        }
+    }
 }
 ```
 
