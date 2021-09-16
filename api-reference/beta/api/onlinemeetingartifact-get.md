@@ -1,5 +1,5 @@
 ---
-title: "Get meeting artifacts"
+title: "Get meeting artifact"
 description: "Get online meeting artifacts."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -28,7 +28,7 @@ Meeting artifacts are content produced for the duration of an online meeting or 
 
 ## Permissions
 
-| Permission type                        | Permissions                                 |
+| Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetingArtifact.Read.All              |
 | Delegated (personal Microsoft account) | Not supported.                              |
@@ -37,7 +37,7 @@ Meeting artifacts are content produced for the duration of an online meeting or 
 To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to get online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 > [!CAUTION]
-> To keep API consistency, you can still use the following permissions until **January 15th 2022** to get meeting artifacts:
+> To keep API consistency, you can still use the following permissions until **January 15, 2022** to get meeting artifacts:
 >
 >- _OnlineMeeting.Read_
 >- _OnlineMeeting.ReadWrite_
