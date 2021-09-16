@@ -106,7 +106,7 @@ Content-Type: application/json
 ```
 
 
-### Example 2: Get organizational branding but no brandingis configured
+### Example 2: Get organizational branding when no branding is configured
 
 #### Request
 
@@ -179,7 +179,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Get bannerLogo for the default locale
+### Example 4: Get the bannerLogo for the default locale
 
 The following example returns the **bannerLogo** object for the default locale. You may specify the **id** as `default` or `0` in the request URL. If the object is not set, the request returns an empty response.
 
@@ -213,7 +213,7 @@ Content-Type: image/*
 <Image>
 ```
 
-### Example 5: Get bannerLogo for the fr-FR locale
+### Example 5: Get the bannerLogo for the fr-FR locale
 
 The following example returns the **bannerLogo** object for the `fr-FR` locale whose bannerLogo is not set.
 
