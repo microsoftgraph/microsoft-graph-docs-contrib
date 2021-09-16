@@ -4,7 +4,7 @@ description: "Get online meeting artifacts."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
-ms.date: "09-20-2021"
+ms.date: "09/20/2021"
 doc_type: apiPageType
 ---
 
