@@ -43,7 +43,7 @@ POST /organization/{organizationId}/branding/localizations
 
 ## Request body
 
-The following table shows the properties that are required when you create the [organizationalBrandingLocalization](organizationbrandinglocalization.md) object.
+The following table shows the properties that are required when you create the [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -102,3 +102,4 @@ Content-Type: application/json
     "squareLogoRelativeUrl": null,
     "usernameHintText": ""
 }
+```
