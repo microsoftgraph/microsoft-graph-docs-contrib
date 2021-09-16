@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and an [organization
 
 ## Examples
 
-### Example 1: Get the localized branding for a specific locale (fr)
+### Example 1: Get the localized branding for a specific locale (fr-FR)
 
 #### Request
 
@@ -55,11 +55,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandinglocalization_fr"
+  "name": "get_organizationalbrandinglocalization"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr
+GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
 
 
@@ -79,17 +79,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/localizations/$entity",
-"@odata.type": "#microsoft.graph.organizationalBrandingProperties",
-"@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')//localizations('fr')/fr",
-"id": "fr",
-"backgroundColor": "",
-"backgroundImageRelativeUrl": null,
-"bannerLogoRelativeUrl": null,
-"cdnList": [],
-"signInPageText": "Welcome",
-"squareLogoRelativeUrl": null,
-"usernameHintText": "hint"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('99b24e1b-abec-4598-9d63-a2baf0a3cea1')/branding/localizations/$entity",
+    "@odata.type": "#microsoft.graph.organizationalBrandingProperties",
+    "@odata.id": "https://graph.microsoft.com/v2/99b24e1b-abec-4598-9d63-a2baf0a3cea1/directoryObjects/$/Microsoft.DirectoryServices.Organization('99b24e1b-abec-4598-9d63-a2baf0a3cea1')//localizations('fr-FR')/fr-FR",
+    "id": "fr-FR",
+    "backgroundColor": "",
+    "backgroundImageRelativeUrl": null,
+    "bannerLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/1036/bannerlogo?ts=637673868626068858",
+    "cdnList": [
+        "secure.aadcdn.microsoftonline-p.com",
+        "aadcdn.msftauthimages.net",
+        "aadcdn.msauthimages.net"
+    ],
+    "signInPageText": "Welcome to Contoso France",
+    "usernameHintText": "Welcome to Contoso France"
 }
 ```
 
@@ -97,14 +100,14 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request. To retrieve any property of a specific locale, specify the property name as a path parameter, for example, + `/organization/{}/branding/localizations/signInPageText` or `/organization/{}/branding/localizations/bannerLogo`.
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandinglocalization_fr_signInPageText"
+  "name": "get_organizationalbrandinglocalization_locale_signInPageText"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/signInPageText
+GET https://graph.microsoft.com/beta/organization/99b24e1b-abec-4598-9d63-a2baf0a3cea1/branding/localizations/fr-FR/signInPageText
 ```
 
 
@@ -125,7 +128,74 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('d69179bf-f4a4-41a9-a9de-249c0f2efb1d')/branding/localizations('fr')/signInPageText",
-    "value": "Welcome"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('99b24e1b-abec-4598-9d63-a2baf0a3cea1')/branding/localizations('fr-FR')/usernameHintText",
+    "value": "Welcome to Contoso France"
 }
+```
+
+### Example 3: Get the bannerLogo for the default locale
+
+The following example returns the **bannerLogo** object for the default locale. You may specify the **id** as `default` or `0` in the request URL. If the object is not set, the request returns an empty response.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_organizationalbranding_defaultlocale_bannerLogo"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/default/bannerLogo
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBranding"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: image/*
+
+<Image>
+```
+
+### Example 4: Get the bannerLogo for the fr-FR locale
+
+The following example returns the **bannerLogo** object for the `fr-FR` locale whose bannerLogo is not set.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_organizationalbranding_frlocale_bannerLogo"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/default/bannerLogo
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBranding"
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+{}
 ```
