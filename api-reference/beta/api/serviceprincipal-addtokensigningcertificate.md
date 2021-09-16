@@ -13,9 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md), which is the public part of the generated certificate. The self-signed signing certificate is composed of these resources: the private key ([keyCredential](../resources/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredential](../resources/passwordcredential.md). All the created resources have the same **customKeyIdentifier**.
+Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md) object, which is the public part of the generated certificate. The self-signed signing certificate is composed of the following objects which are added to the [servicePrincipal](../resources/serviceprincipal.md): 
++ The [keyCredentials](../resources/keycredential.md) object with the following objects:
+    + A private key object with **usage** set to `Sign`.
+    + A public key object with **usage** set to `Verify`.
++ The [passwordCredentials](../resources/passwordcredential.md) object.
 
-The **passwordCredential** is used to open the pfx/private key. Also, it's associated with the privateKey having the same **keyId**. The subject of the certificate is a constant value. It won't be affected by the optional **displayName** provided in the POST call. The **startDateTime** is set to the same time the certificate is created using the action. The **endDateTime** can be up to three years after the certificate is created.
+All the objects have the same value of **customKeyIdentifier**.
+
+The **passwordCredential** is used to open the PFX file (private key). It and the associated private key object have the same value of **keyId**. Once set during creation through the **displayName** property, the subject of the certificate cannot be updated. The **startDateTime** is set to the same time the certificate is created using the action. The **endDateTime** can be up to three years after the certificate is created.
 
 ## Permissions
 
@@ -41,7 +47,7 @@ In the request body, provide the following required properties.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | displayName | string | Friendly name for the key.  It must start with `CN=`.|
-| endDateTime | DateTimeOffset |The date and time when the credential expires. It can be up to 3 years from the date the certificate is created. If not supplied, the default is three years from the time of creation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' .|
+| endDateTime | DateTimeOffset |The date and time when the credential expires. It can be up to 3 years from the date the certificate is created. If not supplied, the default is three years from the time of creation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Response
 

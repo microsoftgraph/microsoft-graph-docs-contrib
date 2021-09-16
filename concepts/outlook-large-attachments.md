@@ -2,7 +2,7 @@
 title: "Attach large files to Outlook messages or events"
 description: "Depending on the size of the file, you can choose one of two ways to attach a file to a message or event."
 author: "abheek-das"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 

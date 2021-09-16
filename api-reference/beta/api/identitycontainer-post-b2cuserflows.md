@@ -51,7 +51,7 @@ In the request body, provide a JSON representation of a [b2cIdentityUserFlow](..
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|Required. The name of the user flow. The name will be pre-pended with `B2C_1` after creation.|
+|id|String|Required. The name of the user flow. The name will be pre-pended with `B2C_1_` after creation if the prefix was not added to the name during your request. |
 |userFlowType|String|Required. The type of user flow you are creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Float|Required. The version of the user flow.|
 |isLanguageCustomizationEnabled|Boolean|Optional. Determines whether language customization is enabled within the Azure AD B2C user flow. Language customization is not enabled by default for Azure AD B2C user flows.|
@@ -60,7 +60,7 @@ In the request body, provide a JSON representation of a [b2cIdentityUserFlow](..
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object created for this request, with the `B2C_1` prefix added to the name. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object created for this request, with the `B2C_1_` prefix added to the name. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Examples
 
@@ -80,7 +80,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Customer",
@@ -121,15 +120,21 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer
+Location: https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows/$entity",
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 3,
     "isLanguageCustomizationEnabled": false,
-    "defaultLanguageTag": "en"
+    "defaultLanguageTag": "en",
+    "authenticationMethods": "emailWithPassword",
+    "tokenClaimsConfiguration": {
+        "isIssuerEntityUserFlow": false
+    },
+    "apiConnectorConfiguration": {}
 }
 ```
 
@@ -148,8 +153,8 @@ The following is an example of the request.
 
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
+Location: https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Customer",
@@ -157,9 +162,7 @@ Content-length: 154
     "userFlowTypeVersion": 3,
     "identityProviders": [
         {
-            "id": "Facebook-OAuth",
-            "type": "Facebook",
-            "Name": "Facebook"
+            "id": "Facebook-OAuth"
         }
     ]
 }
@@ -197,15 +200,20 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows/$entity",
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 3,
     "isLanguageCustomizationEnabled": false,
-    "defaultLanguageTag": "en"
+    "defaultLanguageTag": "en",
+    "authenticationMethods": "0",
+    "tokenClaimsConfiguration": {
+        "isIssuerEntityUserFlow": false
+    },
+    "apiConnectorConfiguration": {}
 }
 ```
 
