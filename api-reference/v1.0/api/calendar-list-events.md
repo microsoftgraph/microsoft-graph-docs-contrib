@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-### Example 1: Fetch calendar events
+### Example 1: List calendar events
 
 ##### Request
 Here is an example of the request.
@@ -122,11 +122,12 @@ Content-length: 354
   ]
 }
 ```
-This method supports some of the OData query parameters to help customize the response. For example, to filter the access packages with subject, include a filter such as `$filter=startsWith(subject,'All')` in the query. Simultaneously, filter to get all emails from a specific address received by the signed-in user `messages?$filter=from/emailAddress/address eq 'admin@contoso.com`.
 
 ### Example 2: Filter with subject
 
-## Optional query parameters
+#### Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For example, to filter the access packages with subject, include a filter such as `$filter=startsWith(subject,'All')` in the query. Simultaneously, filter to get all emails from a specific address received by the signed-in user `messages?$filter=from/emailAddress/address eq 'admin@contoso.com`.
 
 ##### Request
 The following example shows the request.
@@ -151,6 +152,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/events",
     "value": [

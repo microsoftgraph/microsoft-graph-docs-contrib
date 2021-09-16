@@ -61,6 +61,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 
 ## Example
+
+### Example 1: List calendar events
+
 ##### Request
 Here is an example of the request.
 
@@ -94,12 +97,14 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
-<!-- {
+<!-- 
+{
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
-} -->
+} 
+-->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -121,110 +126,17 @@ Content-length: 354
   ]
 }
 ```
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/events",
-    "value": [
-        {
-            "@odata.etag": "W/\"73p1z1T9xUKc8HVNwAwcvgAAR5rxTA==\"",
-            "id": "AAMkADBmYTFkMzUyLTgxODQtNDA0YS05YzdlLWRkYjJlY2U4NTljZgBGAAAAAACdCqnIfBTiS7nPzH--j6RvBwDvenXPVP3FQpzwdU3ADBy_AAAAAAENAADvenXPVP3FQpzwdU3ADBy_AABH5Vj3AAA=",
-            "createdDateTime": "2021-09-13T13:08:27.8871578Z",
-            "lastModifiedDateTime": "2021-09-13T13:10:32.5265937Z",
-            "changeKey": "73p1z1T9xUKc8HVNwAwcvgAAR5rxTA==",
-            "categories": [],
-            "transactionId": "f9a93e83-2e8f-a9aa-29af-17b4fe87e221",
-            "originalStartTimeZone": "India Standard Time",
-            "originalEndTimeZone": "India Standard Time",
-            "iCalUId": "040000008200E00074C5B7101A82E008000000001EC43E71A0A8D7010000000000000000100000003FE75E1BE3F09B43BCF2C0EF408DD567",
-            "reminderMinutesBeforeStart": 15,
-            "isReminderOn": true,
-            "hasAttachments": false,
-            "subject": "All APIs Testing",
-            "bodyPreview": "________________________________________________________________________________Microsoft Teams meetingJoin on your computer or mobile appClick here to join the meetingLearn More | Meeting options_______________________________________________",
-            "importance": "normal",
-            "sensitivity": "normal",
-            "isAllDay": false,
-            "isCancelled": false,
-            "isOrganizer": true,
-            "responseRequested": true,
-            "seriesMasterId": null,
-            "showAs": "busy",
-            "type": "singleInstance",
-            "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADBmYTFkMzUyLTgxODQtNDA0YS05YzdlLWRkYjJlY2U4NTljZgBGAAAAAACdCqnIfBTiS7nPzH%2F%2Fj6RvBwDvenXPVP3FQpzwdU3ADBy%2BAAAAAAENAADvenXPVP3FQpzwdU3ADBy%2BAABH5Vj3AAA%3D&exvsurl=1&path=/calendar/item",
-            "onlineMeetingUrl": null,
-            "isOnlineMeeting": true,
-            "onlineMeetingProvider": "teamsForBusiness",
-            "allowNewTimeProposals": true,
-            "isDraft": false,
-            "hideAttendees": false,
-            "recurrence": null,
-            "responseStatus": {
-                "response": "organizer",
-                "time": "0001-01-01T00:00:00Z"
-            },
-            "body": {
-                "contentType": "html",
-                "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><meta content=\"text/html; charset=us-ascii\"></head><body><br><div style=\"width:100%; height:20px\"><span style=\"white-space:nowrap; color:#5F5F5F; opacity:.36\">________________________________________________________________________________</span></div><div class=\"me-email-text\" lang=\"en-US\" style=\"color:#252424; font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif\"><div style=\"margin-top:24px; margin-bottom:20px\"><span style=\"font-size:24px; color:#252424\">Microsoft Teams meeting</span></div><div style=\"margin-bottom:20px\"><div style=\"margin-top:0px; margin-bottom:0px; font-weight:bold\"><span style=\"font-size:14px; color:#252424\">Join on your computer or mobile app</span></div><a class=\"me-email-headline\" href=\"https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTU5OGEwOTctMjE5NC00ZDQ3LTk5MGMtNWFjNjRmODNhNmVk%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22458d4c95-124e-49da-ba9d-1dd0387e682e%22%7d\" target=\"_blank\" rel=\"noreferrer noopener\" style=\"font-size:14px; font-family:'Segoe UI Semibold','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; text-decoration:underline; color:#6264a7\">Click here to join the meeting</a> </div><div style=\"margin-bottom:24px; margin-top:20px\"><a class=\"me-email-link\" target=\"_blank\" href=\"https://aka.ms/JoinTeamsMeeting\" rel=\"noreferrer noopener\" style=\"font-size:14px; text-decoration:underline; color:#6264a7; font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif\">Learn More</a> | <a class=\"me-email-link\" target=\"_blank\" href=\"https://teams.microsoft.com/meetingOptions/?organizerId=458d4c95-124e-49da-ba9d-1dd0387e682e&amp;tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47&amp;threadId=19_meeting_YTU5OGEwOTctMjE5NC00ZDQ3LTk5MGMtNWFjNjRmODNhNmVk@thread.v2&amp;messageId=0&amp;language=en-US\" rel=\"noreferrer noopener\" style=\"font-size:14px; text-decoration:underline; color:#6264a7; font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif\">Meeting options</a> </div></div><div style=\"font-size:14px; margin-bottom:4px; font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif\"></div><div style=\"font-size:12px\"></div><div></div><div style=\"width:100%; height:20px\"><span style=\"white-space:nowrap; color:#5F5F5F; opacity:.36\">________________________________________________________________________________</span></div></body></html>"
-            },
-            "start": {
-                "dateTime": "2021-09-14T08:00:00.0000000",
-                "timeZone": "UTC"
-            },
-            "end": {
-                "dateTime": "2021-09-14T08:30:00.0000000",
-                "timeZone": "UTC"
-            },
-            "location": {
-                "displayName": "Singapore",
-                "locationType": "default",
-                "uniqueId": "Singapore",
-                "uniqueIdType": "private"
-            },
-            "locations": [
-                {
-                    "displayName": "Singapore",
-                    "locationType": "default",
-                    "uniqueId": "Singapore",
-                    "uniqueIdType": "private"
-                }
-            ],
-            "attendees": [
-                {
-                    "type": "required",
-                    "status": {
-                        "response": "none",
-                        "time": "0001-01-01T00:00:00Z"
-                    },
-                    "emailAddress": {
-                        "name": "admin@M365B877719.onmicrosoft.com",
-                        "address": "admin@M365B877719.onmicrosoft.com"
-                    }
-                }
-            ],
-            "organizer": {
-                "emailAddress": {
-                    "name": "admin@contoso.com",
-                    "address": "admin@contoso.com"
-                }
-            },
-            "onlineMeeting": {
-                "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTU5OGEwOTctMjE5NC00ZDQ3LTk5MGMtNWFjNjRmODNhNmVk%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22458d4c95-124e-49da-ba9d-1dd0387e682e%22%7d"
-            }
-        }
-    ]
-}
-```---
-
 ##### Response
+
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
-<!-- {
+<!-- 
+{
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
-} -->
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -250,7 +162,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ### Example 2: Filter with subject
 
-## Optional query parameters
+#### Optional query parameters
 
 ##### Request
 The following example shows the request.
@@ -265,16 +177,19 @@ GET https://graph.microsoft.com/beta/me/calendar/events?$filter=startsWith(subje
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
-<!-- {
+<!--
+{
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
-} -->
+}
+-->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/events",
     "value": [
