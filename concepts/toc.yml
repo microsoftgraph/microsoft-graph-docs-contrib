@@ -443,7 +443,6 @@ items:
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Activity feed notifications
-            href: teams-send-activityfeednotifications.md
             items:
               - name: Send activity feed notifications
                 href: teams-send-activityfeednotifications.md
