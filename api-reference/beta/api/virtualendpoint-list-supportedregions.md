@@ -56,7 +56,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) objects in the response body.
 
-## Examples
+## Example
 
 ### Request
 

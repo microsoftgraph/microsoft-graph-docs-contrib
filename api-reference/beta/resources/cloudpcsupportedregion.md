@@ -1,6 +1,6 @@
 ---
 title: "cloudPcSupportedRegion resource type"
-description: "Represent a supported region in which on-premises network connection can be established for Cloud PCs."
+description: "Represents a region supported to establish on-premises network connection for Cloud PCs."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a supported region in which on-premises network connection can be established for Cloud PCs.
+Represents a region supported to establish on-premises network connection for Cloud PCs.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
