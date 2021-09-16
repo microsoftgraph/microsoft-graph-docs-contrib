@@ -69,10 +69,10 @@
       "CreatedDateTime": "2021-09-14T15:35:00.000Z",
       "WorkloadArea": "Education",
       "SubArea": ""
-    },   
+    },    
     {
       "ChangeList": [
-        {
+        {      
           "Id": "3fad4d1e-437c-4171-bbed-12a853133314",
           "ApiChange": "Action",
           "ChangedApiName": "setUpResourcesFolder",
