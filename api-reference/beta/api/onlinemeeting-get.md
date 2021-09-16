@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object. You may get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object. For example, you can get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 
 ## Permissions
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To get an onlineMeeting using meeting ID with delegated(`/me` path) and app permission(`/users/{userId}` path):
+To get an onlineMeeting using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
@@ -44,7 +44,7 @@ GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconfere
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-To get an onlineMeeting using **joinWebUrl** with delegated(`/me` path) and app permission(`/users/{userId}` path):
+To get an onlineMeeting using **joinWebUrl** with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'

@@ -1,9 +1,10 @@
 ---
-title: "Get online meeting artifacts"
+title: "Get meeting artifacts"
 description: "Get online meeting artifacts."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
+ms.date: "09-20-2021"
 doc_type: apiPageType
 ---
 
@@ -13,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Meeting artifacts are content produced for the duration of an online meeting or live event. Below is a list of meeting artifacts that can be retrieved via Graph API:
+Meeting artifacts are content produced for the duration of an online meeting or live event. The following meeting artifacts that can be fetched with this API:
 
-1. Attendance report of an online meeting, in the form of json response, as shown in [example 1](#example-1-get-attendance-report-of-an-online-meeting).
-2. Recordings of a live event, in the form of download link, as shown in [example 2](#example-2-get-attendee-report-of-a-live-event).
-3. Attendee report of a live event, in the form of download link, as shown in [example 3](#example-3-get-recording-of-a-live-event).
+1. Attendance report of an online meeting, in the form of a JSON response, as shown in [example 1](#example-1-get-attendance-report-of-an-online-meeting).
+2. Recordings of a live event, in the form of a download link, as shown in [example 2](#example-2-get-attendee-report-of-a-live-event).
+3. Attendee report of a live event, in the form of a download link, as shown in [example 3](#example-3-get-recording-of-a-live-event).
 
 > [!NOTE]
 >
@@ -30,24 +31,24 @@ Meeting artifacts are content produced for the duration of an online meeting or 
 | Permission type                        | Permissions                                 |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetingArtifact.Read.All              |
-| Delegated (personal Microsoft account) | Not Supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | OnlineMeetingArtifact.Read.All              |
 
-In order to use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to get online meeting artifacts on behalf of that user (with user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to get online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 > [!CAUTION]
-> To keep API consistency, you may still get meeting artifacts in beta with
+> To keep API consistency, you can still use the following permissions until **January 15th 2022** to get meeting artifacts:
 >
 >- _OnlineMeeting.Read_
 >- _OnlineMeeting.ReadWrite_
 >- _OnlineMeeting.Read.All_
 >- _OnlineMeeting.ReadWrite.All_
 >
-> until **January 15th 2022**. After that, the _OnlineMeetingArtifact.Read.All_ permission will be required to get meeting artifacts and requests without it will be forbidden.
+> After that, the _OnlineMeetingArtifact.Read.All_ permission will be required to get meeting artifacts and requests without it will be forbidden.
 
 ## HTTP request
 
-To get the attendance report of an online meeting with delegated(`/me` path) and app(`/users/{userId}` path) permission:
+To get the attendance report of an online meeting with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -55,7 +56,7 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
-To get the attendee report of a live event with delegated(`/me` path) and app(`/users/{userId}` path) permission:
+To get the attendee report of a live event with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -63,7 +64,7 @@ GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-To get the recordings of a live event with delegated(`/me` path) and app(`/users/{userId}` path) permission:
+To get the recordings of a live event with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -91,8 +92,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code. The response also includes one of the following:
 
-- If you're getting attendance report of an online meeting, this method returns a [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object in the response body.
-- If you're getting attendee report or recording of a live event, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
+- If you fetch an attendance report of an online meeting, this method returns a [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object in the response body.
+- If you fetch an attendee report or recording of a live event, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
 
 ## Examples
 
@@ -102,7 +103,7 @@ The following example shows a request to get a meeting attendance report.
 
 #### Request
 
-The following request uses a delegated token.
+The following request uses delegated permission.
 <!-- {
   "blockType": "request",
   "name": "get_attendance_report"
@@ -112,7 +113,7 @@ The following request uses a delegated token.
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
 ```
 
-The following request uses an app token.
+The following request uses application permission.
 <!-- { "blockType": "ignored" }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
@@ -190,7 +191,7 @@ The following example shows a request to download an attendee report.
 
 #### Request
 
-The following request uses a user token.
+The following request uses delegated permission.
 <!-- {
   "blockType": "request",
   "name": "get_attendee_report"
@@ -200,7 +201,7 @@ The following request uses a user token.
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
 ```
 
-The following request uses an app token.
+The following request uses application permission.
 
 <!-- { "blockType": "ignored" }-->
 ```msgraph-interactive
@@ -225,7 +226,7 @@ The following example shows a request to download a recording.
 
 #### Request
 
-The following request uses a user token.
+The following request uses delegated permission.
 <!-- {
   "blockType": "request",
   "name": "get_live_event_recording"
@@ -234,7 +235,7 @@ The following request uses a user token.
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
 ```
 
-The following request uses an app token.
+The following request uses application permission.
 <!-- { "blockType": "ignored" }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
