@@ -1,12 +1,12 @@
 ---
-title: "Use Microsoft Graph Privileged Identity Management (PIM) API to assign Azure AD privileged roles"
-description: "Use the Privileged Identity Management (PIM) API to assign Azure AD privileged roles"
+title: "Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles"
+description: "Use the Privileged Identity Management (PIM) API to assign Azure AD roles"
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
-# Tutorial: Use the Microsoft Graph Privileged Identity Management (PIM) API to assign privileged roles
+# Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles
 
 Contoso Limited is a growing service provider that wishes to have its IT Helpdesk manage the lifecycle of employees’ access. They've identified the Azure Active Directory (Azure AD) User Administrator role as the appropriate privileged role required by IT Helpdesk.
 
