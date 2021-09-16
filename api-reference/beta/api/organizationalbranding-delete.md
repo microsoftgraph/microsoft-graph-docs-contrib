@@ -40,7 +40,7 @@ DELETE /organization/{organizationId}/branding
 
 ## Request body
 
-In the request body, supply a JSON representation of the default [organizationalBranding](../resources/organizationalbranding.md) object.
+In the request body, supply a JSON representation of the default [organizationalBranding](../resources/organizationalbranding.md) object. only the **id** property is required.
 
 ## Response
 
