@@ -29,13 +29,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
 |[Add schema extension values](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Create a schema extension definition and then use it to add custom typed data to a resource.|
-|[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) collection | Get an organizationalBranding object. |
-|[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Update an organizationalBranding object. |
-|[List organizationalBrandinglocalization](../api/organizationalbranding-list-localizations.md)|[organizationalBrandinglocalization](../resources/organizationalbrandinglocalization.md) collection|Get the organizationalBrandinglocalization resources from the branding navigation property.|
-|[Create organizationalBrandinglocalization](../api/organizationalbranding-post-localizations.md)|[organizationalBrandinglocalization](../resources/organizationalbrandinglocalization.md)| Create a new organizationalBrandinglocalization object. |
-|[Get organizationalBrandinglocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandinglocalization](organizationalbrandinglocalization.md) collection | Get a collection of organizationalBrandingLocalization objects. |
-|[Update organizationalBrandinglocalization](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandinglocalization](organizationalbrandinglocalization.md) | Update an  organizationalBrandingLocalization object. |
-|[Delete organizationalBrandinglocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandinglocalization](organizationalbrandinglocalization.md) | Delete a  organizationalBrandinglocalization object. |
+|**Organization licenses**| | |
 |[activateService](../api/organization-activateservice.md) | None |  Activate a service for an organization. |
 
 ## Properties
@@ -72,9 +66,9 @@ This resource lets you add your own data to custom properties using [extensions]
 
 | Relationship  | Type	|Description|
 |:---------------|:--------|:----------|
-|certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage  certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
+|certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization resource. Nullable.| 
-|organizationalBranding|[organizationalBranding](organizationalbranding.md) collection| Branding for the organization. Nullable.|
+|organizationalBranding|[organizationalBranding](organizationalbranding.md) collection| Resource to manage the default branding for the organization. Nullable.|
 |settings|[organizationSettings](organizationsettings.md) | Retrieve the properties and relationships of organizationSettings object. Nullable.|
 
 ## JSON representation
@@ -93,29 +87,29 @@ Here is a JSON representation of the resource
 ```json
 {
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
-  "businessPhones": ["string"],
-  "city": "string",
-  "country": "string",
-  "countryLetterCode": "string",
+  "businessPhones": ["String"],
+  "city": "String",
+  "country": "String",
+  "countryLetterCode": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
-  "displayName": "string",
-  "id": "string (identifier)",
-  "isMultipleDataLocationsForServicesEnabled": "boolean",
-  "marketingNotificationEmails": ["string"],
-  "objectType": "string",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isMultipleDataLocationsForServicesEnabled": "Boolean",
+  "marketingNotificationEmails": ["String"],
+  "objectType": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
-  "postalCode": "string",
-  "preferredLanguage": "string",
+  "postalCode": "String",
+  "preferredLanguage": "String",
   "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "securityComplianceNotificationMails": ["string"],
-  "securityComplianceNotificationPhones": ["string"],
-  "state": "string",
-  "street": "string",
-  "technicalNotificationMails": ["string"],
+  "securityComplianceNotificationMails": ["String"],
+  "securityComplianceNotificationPhones": ["String"],
+  "state": "String",
+  "street": "String",
+  "technicalNotificationMails": ["String"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
   "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
   "dirSyncEnabled": true
