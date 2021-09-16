@@ -160,7 +160,7 @@ Content-length: 354
 ```
 This method supports some of the OData query parameters to help customize the response. For example, to filter the access packages with subject, include a filter such as `$filter=startsWith(subject,'All')` in the query. Simultaneously, filter to get all emails from a specific address received by the signed-in user `messages?$filter=from/emailAddress/address eq 'admin@contoso.com`.
 
-### Example 2: Filter with subject
+### Example 2: Filter with subject and emails from a specific address
 
 #### Optional query parameters
 

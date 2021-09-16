@@ -123,7 +123,7 @@ Content-length: 354
 }
 ```
 
-### Example 2: Filter with subject
+### Example 2: Filter with subject and emails from a specific address
 
 #### Optional query parameters
 
