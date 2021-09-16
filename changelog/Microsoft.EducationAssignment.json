@@ -55,6 +55,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ed8faf2a-231c-40e5-b602-75b323cbac39",
+          "ApiChange": "Member",
+          "ChangedApiName": "studentsOnly",
+          "ChangeType": "Addition",
+          "Description": "Added the **studentsOnly** member to the **educationAddToCalendarOptions** enumeration.",
+          "Target": "educationAddToCalendarOptions"
+        }
+      ],
+      "Id": "ed8faf2a-231c-40e5-b602-75b323cbac39",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-14T15:35:00.000Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },   
+    {
+      "ChangeList": [
+        {
           "Id": "3fad4d1e-437c-4171-bbed-12a853133314",
           "ApiChange": "Action",
           "ChangedApiName": "setUpResourcesFolder",
