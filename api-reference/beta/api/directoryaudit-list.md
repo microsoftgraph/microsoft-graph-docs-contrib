@@ -39,7 +39,7 @@ GET /auditLogs/directoryAudits
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response. For details about how to use this parameters, see [OData query parameters](/graph/query_parameters).
+This method supports the following OData query parameters to help customize the response. For details about how to use this parameters, see [OData query parameters](/graph/query-parameters).
 
 |Parameter     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
