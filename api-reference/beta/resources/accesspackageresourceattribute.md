@@ -39,11 +39,11 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.accessPackageAttribute",
   "attributeDestination": {
-    "@odata.type": "microsoft.graph.accessPackageAttributeDestination"
+    "@odata.type": "microsoft.graph.accessPackageResourceAttributeDestination"
   },
   "attributeName": "String",
   "attributeSource": {
-    "@odata.type": "microsoft.graph.accessPackageAttributeSource"
+    "@odata.type": "microsoft.graph.accessPackageResourceAttributeSource"
   },
   "id": "String (identifier)",
   "isEditable": "String",
