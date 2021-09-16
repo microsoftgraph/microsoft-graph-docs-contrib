@@ -14584,6 +14584,8 @@ items:
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+        - name: Get operation result (async)
+          href: api/workbook-tablerowoperationresult.md
       - name: Workbook application
         href: resources/workbookapplication.md
         items:
