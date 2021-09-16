@@ -25,11 +25,11 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.accessPackageAttributeSource"
+  "@odata.type": "microsoft.graph.accessPackageResourceAttributeSource"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.accessPackageAttributeSource"
+  "@odata.type": "#microsoft.graph.accessPackageResourceAttributeSource"
 }
 ```
