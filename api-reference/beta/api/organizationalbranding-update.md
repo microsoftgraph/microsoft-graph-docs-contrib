@@ -57,7 +57,7 @@ The following table specifies the properties that can be updated.
 
 ## Response
 
-If successful, this method returns a `200 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
