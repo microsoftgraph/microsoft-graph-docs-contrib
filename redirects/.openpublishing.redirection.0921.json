@@ -16,8 +16,8 @@
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/api-reference/beta/api/organizationalbrandingproperties-delete.md",
-        "redirect_url": "/graph/api/organizationalbrandinglocalization-delete?view=graph-rest-beta",
+        "source_path_from_root": "api-reference/beta/api/organizationalbrandingproperties-delete.md",
+        "redirect_url": "/graph/api/organizationalbranding-delete?view=graph-rest-beta",
         "redirect_document_id": true
       },
       {
