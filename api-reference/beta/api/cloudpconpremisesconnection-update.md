@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 Once the on-premises connection passes health check, which is indicated by the `healthCheckStatus` property, you cannot update it.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
