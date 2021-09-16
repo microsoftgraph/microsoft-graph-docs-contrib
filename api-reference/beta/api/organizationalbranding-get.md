@@ -189,7 +189,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbranding_defaultlocate_bannerLogo"
+  "name": "get_organizationalbranding_defaultlocale_bannerLogo"
 }-->
 
 ```msgraph-interactive
@@ -223,7 +223,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbranding_5"
+  "name": "get_organizationalbranding_frlocale_bannerLogo"
 }-->
 
 ```msgraph-interactive
