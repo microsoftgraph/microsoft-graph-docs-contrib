@@ -31,10 +31,10 @@ GET /applications/{id}
 ## Optional query parameters
 
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific application properties.
-By default the api does not return the keyCredential thumbprint value when listing all applications. The thumbprint value (`key` property) for application keyCredentials object is returned only if keyCredentials are explicitly requested using a $select when listing all applications or when a single application is queried.
-For example, to get public key thumbprint information for all applications, use the following query `$select=id,appId,keyCredentials`.
 
-The use of $select to get keyCredentials when listing all applications has a throttling limit of 150 requests per minute for every tenant.
+By default, this API doesn't return the value of the **key** thumbprint in the **keyCredential** property unless **keyCredentials** is specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
+
+The use of `$select` to get **keyCredentials** for applications has a throttling limit of 150 requests per minute for every tenant.
 
 ## Request headers
 
