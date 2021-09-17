@@ -34,6 +34,13 @@ GET /servicePrincipals/{id}
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
+This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+By default the api does not return the keyCredential thumbprint value when listing all service principals. The thumbprint value (`key` property) for service principal keyCredentials object is returned only if keyCredentials are explicitly requested using a $select when listing all service principals or when a single service principal is queried.
+For example, to get public key thumbprint information for all service principals, use the following query `$select=id,appId,keyCredentials`.
+
+The use of $select to get keyCredentials when listing all service principals has a throttling limit of 150 requests per minute for every tenant.
+
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|
