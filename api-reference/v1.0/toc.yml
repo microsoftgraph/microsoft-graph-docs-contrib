@@ -4939,21 +4939,6 @@ items:
               href: api/authorizationpolicy-get.md
             - name: Update
               href: api/authorizationpolicy-update.md
-          - name: Home realm discovery policy
-            href: resources/homerealmdiscoverypolicy.md
-            items:
-            - name: List
-              href: api/homerealmdiscoverypolicy-list.md
-            - name: Create
-              href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-            - name: Get
-              href: api/homerealmdiscoverypolicy-get.md
-            - name: Update
-              href: api/homerealmdiscoverypolicy-update.md
-            - name: Delete
-              href: api/homerealmdiscoverypolicy-delete.md
-            - name: List applied to applications
-              href: api/homerealmdiscoverypolicy-list-appliesto.md
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
@@ -4986,6 +4971,21 @@ items:
               href: api/featurerolloutpolicy-post-appliesto.md
             - name: Delete appliesTo
               href: api/featurerolloutpolicy-delete-appliesto.md
+          - name: Home realm discovery policy
+            href: resources/homerealmdiscoverypolicy.md
+            items:
+            - name: List
+              href: api/homerealmdiscoverypolicy-list.md
+            - name: Create
+              href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+            - name: Get
+              href: api/homerealmdiscoverypolicy-get.md
+            - name: Update
+              href: api/homerealmdiscoverypolicy-update.md
+            - name: Delete
+              href: api/homerealmdiscoverypolicy-delete.md
+            - name: List applied to applications
+              href: api/homerealmdiscoverypolicy-list-appliesto.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
