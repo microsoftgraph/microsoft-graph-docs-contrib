@@ -2,7 +2,7 @@
 title: "Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod"
 description: "Deletes a passwordlessMicrosoftAuthenticatorAuthenticationMethod object."
 author: "mmcla"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

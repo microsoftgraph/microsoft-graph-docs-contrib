@@ -2,7 +2,7 @@
 title: "Archive team"
 description: "Archive the specified team. "
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

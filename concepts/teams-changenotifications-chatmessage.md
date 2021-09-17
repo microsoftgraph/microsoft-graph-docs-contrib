@@ -2,7 +2,7 @@
 title: "Get change notifications for messages in Teams channels and chats using Microsoft Graph"
 description: "Change notifications enables you to listen to changes to messages in channel or chat"
 author: "RamjotSingh"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
@@ -17,7 +17,7 @@ To track all changes related to messages in a tenant, you can use subscriptions 
 
 ### Subscribe to messages across channels
 
-To get to change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -252,6 +252,39 @@ Content-Type: application/json
 }
 ```
 
+## Subscribe to changes at the user level
+
+To track messages across all chats a particular user is part of, you can create a change notification subscription at a user level. To do this, subscribe to `/users/{user-id}/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only* modes.
+
+User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
+
+> **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+
+### Permissions
+
+|Permission type      | Permissions (from least to most privileged)              | Supported in version |
+|:--------------------|:---------------------------------------------------------|:---------------------|
+|Delegated (work or school account) | Chat.Read, Chat.ReadWrite | beta |
+|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
+|Application | Chat.Read.All, Chat.ReadWrite.All | beta |
+
+### Example: Subscribe to messages across all chats a particular user is part of
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated,deleted",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/users/{user-id}/chats/getAllMessages",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
 ## Notification payloads
 
 Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the message payload along with the notification, removing the need to call back and get the content.
@@ -331,7 +364,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data do not require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data do not require an encryption certificate (because actual resource data isn't sent over).
 
 The payload looks like the following. This payload is for a message sent in a channel.
 

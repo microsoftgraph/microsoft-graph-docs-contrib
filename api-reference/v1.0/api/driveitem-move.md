@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Move a file or folder
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move."
 doc_type: apiPageType

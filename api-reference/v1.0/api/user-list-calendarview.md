@@ -1,7 +1,7 @@
 ---
 title: "List calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's default calendar, "
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 author: "harini84"
 ms.prod: "outlook"

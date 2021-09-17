@@ -2,7 +2,7 @@
 title: "accessReviewHistoryDefinition: generateDownloadUri"
 description: "Generate a URI that can be used to retrieve review history data."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

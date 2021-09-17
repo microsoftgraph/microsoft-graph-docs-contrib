@@ -2,7 +2,7 @@
 title: "Get member of channel"
 description: "Get member of channel."
 author: "akjo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

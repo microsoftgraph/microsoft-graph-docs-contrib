@@ -2,7 +2,7 @@
 title: "Create roleScopeTagAutoAssignment"
 description: "Create a new roleScopeTagAutoAssignment object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the r
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The auto-assignment target for the specific Role Scope Tag.|
 
 
@@ -94,7 +94,6 @@ Content-Length: 434
   }
 }
 ```
-
 
 
 

@@ -1,8 +1,8 @@
 ---
 title: "Use Postman with the Microsoft Graph API"
 description: "Use the Microsoft Graph Postman collection to get started with Microsoft Graph APIs in minutes."
-author: "jthake-msft"
-localization_priority: Priority
+author: "jasonjoh"
+ms.localizationpriority: high
 ---
 
 # Use Postman with the Microsoft Graph API
@@ -76,12 +76,12 @@ In this step, you set up the environment variables used to retrieve an access to
 
 Because this is the first time you are running a request as a delegated authentication flow, you need to get an access token.
 
-1. Hover over the **Delegated** folder, click the ellipsis, and select **Edit**
+1. Select the **Delegated** folder.
 1. Click the **Authorization** tab.
+1. In the **Configure New Token** section, click the **Configuration Options** tab. Leave all the fields as pre-configured, including the **Grant type** which is set to `Authorization Code`.
 1. Scroll down on the right and click **Get New Access Token**.
 1. Sign in with your developer tenant administrator account.
 1. Click **Proceed**, and then click the **Use Token** button.
-1. On the botton right of the dialog, click **Update**.
 
 You now have a valid access token to use for delegated requests.
 
@@ -99,11 +99,11 @@ You have now successfully made a Microsoft Graph call using delegated authentica
 
 Because this is the first time you are running a request as a application authentication flow, you need to get an access token.
 
-1. Hover over the **Application** folder, click the ellipsis, and select **Edit**.
-1. Click the **Authorization** tab
+1. Select the **Application** folder.
+1. Click the **Authorization** tab.
+1. In the **Configure New Token** section, click the **Configuration Options** tab. Leave all the fields as pre-configured, including the **Grant type** which is set to `Client Credentials`.
 1. Scroll down on the right side and click **Get New Access Token**.
 1. Click **Proceed**, and then click the **Use Token** button.
-1. On the bottom right of the dialog, click **Update**.
 
 You now have a valid access token to use for application requests.
 

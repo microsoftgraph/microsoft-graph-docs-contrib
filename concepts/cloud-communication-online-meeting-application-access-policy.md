@@ -2,7 +2,7 @@
 title: "Allow applications to access online meetings on behalf of a user"
 description: "Find out how to configure applications to access online meetings on behalf of a user."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
@@ -54,10 +54,11 @@ To configure an application access policy and allow applications to access onlin
 
 ## Supported permissions and additional resources
 
-Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access for an app that has been granted any of the following application permissions:
+Administrators can use ApplicationAccessPolicy cmdlets to control online meeting access for an app that has been granted any of the following application permissions:
 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
+- OnlineMeetingArtifact.Read.All
 
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).
 

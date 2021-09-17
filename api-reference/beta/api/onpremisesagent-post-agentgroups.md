@@ -1,7 +1,7 @@
 ---
 title: "Assign onPremisesAgent to onPremisesAgentGroup"
 description: "Assign onPremisesAgent to onPremisesAgentGroup."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"

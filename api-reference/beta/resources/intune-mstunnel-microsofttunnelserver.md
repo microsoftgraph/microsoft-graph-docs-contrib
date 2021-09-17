@@ -2,7 +2,7 @@
 title: "microsoftTunnelServer resource type"
 description: "Entity that represents a single Microsoft Tunnel server"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -25,6 +25,9 @@ Entity that represents a single Microsoft Tunnel server
 |[Create microsoftTunnelServer](../api/intune-mstunnel-microsofttunnelserver-create.md)|[microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md)|Create a new [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) object.|
 |[Delete microsoftTunnelServer](../api/intune-mstunnel-microsofttunnelserver-delete.md)|None|Deletes a [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md).|
 |[Update microsoftTunnelServer](../api/intune-mstunnel-microsofttunnelserver-update.md)|[microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md)|Update the properties of a [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md) object.|
+|[getHealthMetrics action](../api/intune-mstunnel-microsofttunnelserver-gethealthmetrics.md)|[keyLongValuePair](../resources/intune-shared-keylongvaluepair.md) collection|Not yet documented|
+|[getHealthMetricTimeSeries action](../api/intune-mstunnel-microsofttunnelserver-gethealthmetrictimeseries.md)|[metricTimeSeriesDataPoint](../resources/intune-mstunnel-metrictimeseriesdatapoint.md) collection|Not yet documented|
+|[createServerLogCollectionRequest action](../api/intune-mstunnel-microsofttunnelserver-createserverlogcollectionrequest.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -33,6 +36,8 @@ Entity that represents a single Microsoft Tunnel server
 |displayName|String|The MicrosoftTunnelServer's display name|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|The MicrosoftTunnelServer's health status. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|When the MicrosoftTunnelServer last checked in|
+|agentImageDigest|String|The digest of the current agent image running on this server |
+|serverImageDigest|String|The digest of the current server image running on this server |
 
 ## Relationships
 None
@@ -51,10 +56,11 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "tunnelServerHealthStatus": "String",
-  "lastCheckinDateTime": "String (timestamp)"
+  "lastCheckinDateTime": "String (timestamp)",
+  "agentImageDigest": "String",
+  "serverImageDigest": "String"
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "notebook: getRecentNotebooks"
 description: "Get a list of recentNotebook instances that have been accessed by the signed-in user."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
@@ -60,7 +60,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
+GET https://graph.microsoft.com/beta/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/recent-notebooks-csharp-snippets.md)]

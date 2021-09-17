@@ -1,7 +1,7 @@
 ---
 title: "Azure AD authentication methods policy API overview"
 description: "Authentication methods policies define which authentication methods can be used by users in Azure AD."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"

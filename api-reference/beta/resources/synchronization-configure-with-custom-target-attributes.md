@@ -1,7 +1,7 @@
 ---
 title: "Configure synchronization with custom target attributes"
 description: "Customize your synchronization schema to include custom attributes that are defined in the target directory."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

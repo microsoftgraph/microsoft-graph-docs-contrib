@@ -1,7 +1,7 @@
 ---
 title: "optionalClaim resource type"
 description: "Contains an optional claim associated with an application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "resourcePageType"

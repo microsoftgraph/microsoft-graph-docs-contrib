@@ -2,7 +2,7 @@
 title: "windowsUpdateType enum type"
 description: "Which branch devices will receive their updates from"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

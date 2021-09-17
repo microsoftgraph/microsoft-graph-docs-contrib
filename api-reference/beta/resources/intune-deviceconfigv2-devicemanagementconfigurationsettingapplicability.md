@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationSettingApplicability resource type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -23,7 +23,7 @@ Not yet documented
 |description|String|description of the setting|
 |platform|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platform setting can be applied on. Possible values are: `none`, `macOS`, `windows10X`, `windows10`.|
 |deviceMode|[deviceManagementConfigurationDeviceMode](../resources/intune-deviceconfigv2-devicemanagementconfigurationdevicemode.md)|Device Mode that setting can be applied on. Possible values are: `none`, `kiosk`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Which technology channels this setting can be deployed through. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Which technology channels this setting can be deployed through. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
 
 ## Relationships
 None
@@ -44,7 +44,6 @@ Here is a JSON representation of the resource.
   "technologies": "String"
 }
 ```
-
 
 
 
