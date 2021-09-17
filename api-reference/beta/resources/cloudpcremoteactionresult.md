@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents the Cloud PC-specified remote action result.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Methods
 
 |Method|Return type|Description|
