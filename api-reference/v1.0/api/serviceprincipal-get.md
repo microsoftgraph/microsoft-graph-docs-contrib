@@ -31,7 +31,8 @@ GET /servicePrincipals/{id}
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-By default, this API doesn't return the value of the **key** thumbprint in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
+By default, this API doesn't return the public key value of the **key** in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query.
+For example, `$select=id,appId,keyCredentials`.
 
 The use of `$select` to get **keyCredentials** for service principals has a throttling limit of 150 requests per minute for every tenant.
 
