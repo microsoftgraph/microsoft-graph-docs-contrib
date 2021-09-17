@@ -4665,14 +4665,6 @@ items:
               href: api/unifiedroleassignment-delete.md            
       - name: Identity and sign-in
         items:
-        - name: Authentication flows policy
-          items:
-          - name: Authentication flows policy
-            href: resources/authenticationflowspolicy.md
-          - name: Get
-            href: api/authenticationflowspolicy-get.md
-          - name: Update
-            href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
           items:
           - name: Overview
@@ -4706,44 +4698,6 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-        - name: Authentication methods policy
-          items:
-          - name: Overview
-            href: resources/authenticationmethodspolicies-overview.md
-          - name: Authentication method policy
-            href: resources/authenticationmethodspolicy.md
-            items:
-            - name: Get
-              href: api/authenticationmethodspolicy-get.md
-            - name: Update
-              href: api/authenticationmethodspolicy-update.md
-          - name: FIDO2 policy
-            href: resources/fido2authenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/fido2authenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/fido2authenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator policy
-            href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-          - name: Email policy
-            href: resources/emailauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/emailauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/emailauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/emailauthenticationmethodconfiguration-delete.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -4932,6 +4886,52 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
+          - name: Authentication flows policy
+            items:
+            - name: Authentication flows policy
+              href: resources/authenticationflowspolicy.md
+            - name: Get
+              href: api/authenticationflowspolicy-get.md
+            - name: Update
+              href: api/authenticationflowspolicy-update.md
+          - name: Authentication methods policy
+            items:
+            - name: Overview
+              href: resources/authenticationmethodspolicies-overview.md
+            - name: Authentication method policy
+              href: resources/authenticationmethodspolicy.md
+              items:
+              - name: Get
+                href: api/authenticationmethodspolicy-get.md
+              - name: Update
+                href: api/authenticationmethodspolicy-update.md
+            - name: FIDO2 policy
+              href: resources/fido2authenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/fido2authenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/fido2authenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/fido2authenticationmethodconfiguration-delete.md
+            - name: Microsoft Authenticator policy
+              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Email policy
+              href: resources/emailauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/emailauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/emailauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/emailauthenticationmethodconfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:

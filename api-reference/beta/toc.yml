@@ -11153,13 +11153,6 @@ items:
               href: api/passwordauthenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
-        - name: B2C authentication methods policy
-          href: resources/b2cauthenticationmethodspolicy.md
-          items:
-          - name: Get
-            href: api/b2cauthenticationmethodspolicy-get.md
-          - name: Update
-            href: api/b2cauthenticationmethodspolicy-update.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -11498,16 +11491,15 @@ items:
             items:
             - name: Authentication flows policy
               href: resources/authenticationflowspolicy.md
-              items:
-              - name: Get
-                href: api/authenticationflowspolicy-get.md
-              - name: Update
-                href: api/authenticationflowspolicy-update.md          
-          - name: Authentication method policy
+            - name: Get
+              href: api/authenticationflowspolicy-get.md
+            - name: Update
+              href: api/authenticationflowspolicy-update.md          
+          - name: Authentication methods policy
             items:
             - name: Overview
               href: resources/authenticationmethodspolicies-overview.md
-            - name: Authentication method policy
+            - name: Authentication methods policy
               href: resources/authenticationmethodspolicy.md
               items:
               - name: Get
@@ -11575,6 +11567,13 @@ items:
               href: api/authorizationpolicy-get.md
             - name: Update
               href: api/authorizationpolicy-update.md
+          - name: B2C authentication methods policy
+            href: resources/b2cauthenticationmethodspolicy.md
+            items:
+            - name: Get
+              href: api/b2cauthenticationmethodspolicy-get.md
+            - name: Update
+              href: api/b2cauthenticationmethodspolicy-update.md
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
