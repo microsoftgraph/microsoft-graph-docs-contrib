@@ -158,6 +158,28 @@ Semantic Labels find applications in many different content experiences. They pr
 * Building common Knowledge Graphs (e.g. Cortex, Suggestions & QF)
 * Default templates for user experiences
 
+You can assign semantic labels to your source properties on the "Assign property labels" page. Labels are well-known tags provided by Microsoft that provide semantic meaning. They allow Microsoft to integrate your connector data into Microsoft 365 experiences such as enhanced search, people cards, intelligent discovery, and more.  
+
+The following table lists the currently supported labels and their descriptions.  
+
+Label | Description
+--- | ---  
+**title** | The title for the item that you want shown in search and other experiences
+**url** | The target url of the item in the source system
+**Created By** | Name of the person who created the item
+**Last modified by** | Name of the person who most recently edited the item
+**Authors** | Name of the people who participated/collaborated on the item
+**Created date time** | When was the item created
+**Last modified date time** | When was the item most recently edited
+**File name** | Name of the file item
+**File extension** | Type of file item such as .pdf or .word
+
+The properties on this page are pre-selected based on your data source, but you can change this selection if there's a different property that is better suited for a particular label.  
+
+The label **title** is the most important label. It's **strongly recommended** you have a property assigned to this label in order for your connection to participate in the [result cluster experience](result-cluster.md).
+
+Incorrectly mapping labels will cause a deteriorated search experience. It's okay for some labels to not have a property assigned to it.  
+
 ### Adding a property
 
 It will be possible to add a property to the schema. This property can have any search attributes, and it will be available in Substrate with its value after being added.
@@ -165,6 +187,70 @@ It will be possible to add a property to the schema. This property can have any 
 ### Adding search attributes to a property
 
 It will be possible to add specific search attributes to a property.  
+
+## Schema Updates
+The following updates are for version v0.1.
+
+### Updates that will require reingestion of items: 
+
+### Deletion of a property 
+
+Schema owner intent:  The items no longer have the property on the ingested items.  
+
+If a property is deleted from the schema and the users were to search on these properties they would not get results from the backward looking items as the property no longer exists in the schema.  The query path would have no way to look up the property.  Another reason to disallow deletion of a property is that if the search admin later re-added a property with the same name with different search attributes, the backward and forward looking items will be inconsistent and the results will be inconsistent as well. 
+
+The question of data spill was brought up as to a reason why the deletion of a property would be needed on a UDT connector.  In this case, the entire connection should be deleted and recreated (and therefore the shard with the search data in it) to ensure that the spilled data did not live anywhere in the substrate. 
+
+Deletion of search attributes from a property 
+
+Deletion of a search attribute from a property would lead to inconsistent behavior as the backward and forward looking items differ in the returned result set. 
+
+### Addition or removal of a Refiner
+
+Due to how refiners function in substrate, these cannot be created on the fly.  A specific set of pre-created refiner managed properties exist in the substrate (395 per namespace). These are the only refiners that can be used for customizations.  All the pre-created refiner managed properties are refinable, sortable, queryable and retrievable.  They cannot be searchable.  
+
+When a connector admin chooses to make a property refinable, a pointer from the source property to one of the refiner managed properties will be created and an alias will be assigned to this property within that namespace.  These actions will be seamless to the search admin.   
+
+The pre-created refiner managed property will be the only managed property associated with this source property.  As mentioned above, no search attributes can be removed from a property, and this includes refinable.  The alias assigned at creation of the refiner property will be the source name of this property.  This will not be modifiable as specified above.  
+
+A refiner cannot be added as a schema change to an existing property.  This will break backward compatibility as the backward and forward looking items will have inconsistent behavior.
+
+## Updates that will not require reingestion of items, but it is still recommended 
+
+**Note:** There will be a difference in the behavior of the items.  
+
+### Adding a property
+The search admin will be allowed to add a property to their schema.  This property can have any search attributes the search admin wishes.  While this property will not exist on the backward looking items, the result set will be consistent, but will only contain forward looking items.
+
+### Adding search attributes to a property 
+The search admin will be allowed to add specific search attributes to a property.  As already discussed in the Refiners section above, adding the refiner search attribute as a schema change will not be allowed.  The only other restriction to adding search attributes is searchable to an already refinable property.  All other additions will be allowed.
+
+## Updates that do not require a reingestion of the items 
+
+### Adding or removing an alias on a property  
+
+The removal or addition of an alias on a property do not require a reingestion as it is a query only concept.  The connection admins and 1st party schema owners will be allowed to add or remove aliases and not have to trigger either a refeed from source or the substrate recrawler.  The behavior on backward and forward looking items for a search using this alias will be the same. 
+
+The one caveat to this is that the schema owner will be unable to remove the original alias of a refinable property that was auto-created by the system.
+
+## Considerations 
+
+### Reingesting of Items 
+
+Depending on the schema update a reingestion of the items to bring them all to the new schema is required for the behavior of the items to be the same.  Without reingestion the behavior of the items will be different.   
+
+### Options 
+There are a few options as to how to reingest the items after a schema change.
+
+### Refeed from Source – Version 1 
+
+This requires the items to be sent again from the source into substrate.  This is costly in terms of network bandwidth and COGs on the substrate side. Full reingestion is need and you should trigger a refeed from the source. 
+
+### Recrawler – North Star 
+
+A recrawler could be created in substrate that can touch the backward looking items such that it triggers a reingestion.  This way the data does not have to be refed from the source. 
+
+You should trigger a recrawl of data when a schema update is committed. 
 
 ## Next steps
 
