@@ -435,7 +435,7 @@ System.out.println(String.format("You have %d events on your calendar today", ev
 ```
 ## Implementing batching using BatchRequestContent, BatchRequestStep and HttpRequestMessage
 
-This example shows how to use `BatchRequestContent`,`BatchRequestStep` and `HttpRequestMessage` to send multiple requests in a batch and also explain how to handle the limit of 20 with graph api requests. This example create meeting links using `onlineMeetings/createOrGet` endpoint for the specified userID. Similarly we can use this example for other graph api endpoints.
+The following example shows how to use `BatchRequestContent`,`BatchRequestStep`, and `HttpRequestMessage` to send multiple requests in a batch and how to handle the limit of 20 with Microsoft Graph API requests. This example creates meeting links using the `onlineMeetings/createOrGet` endpoint for the specified user ID. You can use this example with other Microsoft Graph endpoints as well.
 
 ```csharp
 using System;
