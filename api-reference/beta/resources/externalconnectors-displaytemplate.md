@@ -1,6 +1,6 @@
 ---
 title: "displayTemplate resource type"
-description: "A display template enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed."
+description: "Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed."
 author: "emzho"
 ms.localizationpriority: normal
 ms.prod: "search"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A display template enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed.
+Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed.
 
 ## Properties
 |Property|Type|Description|
