@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDeviceImage: getSourceImages"
-description: "View a list of all managed image resources from you Azure subscriptions. These source images can be uploaded and used on cloud PCs."
+description: "View a list of all managed image resources from you Azure subscriptions. These source images can be uploaded and used on Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
