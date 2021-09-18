@@ -21,7 +21,7 @@ Represents a region supported to establish on-premises network connection for Cl
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcSupportedRegions](../api/virtualendpoint-list-cloudpcs.md)|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) collection|List [cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) objects and their properties.|
+|[List cloudPcSupportedRegions](../api/virtualendpoint-list-supportedregions.md)|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) collection|List the supported regions available to create Cloud PC connections.|
 
 ## Properties
 

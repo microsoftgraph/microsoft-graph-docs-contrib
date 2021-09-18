@@ -1,6 +1,6 @@
 ---
 title: "List supportedRegions"
-description: "List properties and relationships of the cloudPcSupportedRegion objects."
+description: "List the supported regions available to create Cloud PC connections."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List properties and relationships of the [cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) objects.
+List the supported regions available to create Cloud PC connections.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
