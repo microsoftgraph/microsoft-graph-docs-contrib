@@ -1,6 +1,7 @@
 ---
 title: "Working with Windows 365 in Microsoft Graph"
-author: "Colby Hanley"
+description: "With Microsoft Graph, you can provision and manage Cloud PCs in your tenant and, if used in conjunction with the Intune API, you can manage Cloud PCs alongside physical endpoints as well."
+author: "cohanley"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
@@ -30,10 +31,10 @@ Microsoft Graph controls access to resources via permissions. As a developer, yo
 
 |Use cases|REST resources|See also|
 |:---|:---|:---|
-|List, get, create, update, delete, or assign provisioning policies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|[Provisioning overview](https://docs.microsoft.com/windows-365/provisioning)|
+|List, get, create, update, delete, or assign provisioning policies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|[Provisioning overview](/windows-365/provisioning)|
 |Manage Cloud PCs including reprovision, end Cloud PC grace period, bulk reprovision, and resize Cloud PCs|[cloudPC](../resources/cloudpc.md)|[Cloud PCs lifecycle](../resources/cloudpc.md)|
-|List, get, create, delete, get source images, and reupload Cloud PC OS images|[cloudPCDeviceImage](../resources/cloudpcdeviceimage.md)|[Device images overview](https://docs.microsoft.com/windows-365/device-images)|
-|List, get, create, update delete, update AD domain password, and run health checks for on-premises network connections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|[On-premises network connection overview](https://docs.microsoft.com/windows-365/on-premises-network-connections)|
+|List, get, create, delete, get source images, and reupload Cloud PC OS images|[cloudPCDeviceImage](../resources/cloudpcdeviceimage.md)|[Device images overview](/windows-365/device-images)|
+|List, get, create, update delete, update AD domain password, and run health checks for on-premises network connections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|[On-premises network connection overview](/windows-365/on-premises-network-connections)|
 |List audit events for Cloud PCs, get a specific audit event, and get audit activity types|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|[Get Cloud PC audit logs](https://docs.microsoft.com/windows-365/get-cloud-pc-audit-logs-using-powershell)|
 |List, get, create, update, delete or assign user settings|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|[User settings overview](../resources/cloudpcusersetting.md)|
 
