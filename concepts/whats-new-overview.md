@@ -34,7 +34,7 @@ Create table rows asynchronously. For better performance, a good practice to cre
 Support for adding assignments to only students' calendars if you use the `Prefer: include-unknown-enum-members` request header for operations on the [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) or [educationAssignmentDefaults](/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Identity and access | Governance
-- [Delete](/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta) an [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) to remove a denied or completed request.
+- [Delete](/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta&preserve-view=true) an [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) to remove a denied or completed request.
 
 ## August 2021: New and generally available
 
