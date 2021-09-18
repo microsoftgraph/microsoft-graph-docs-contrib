@@ -14,7 +14,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ## September 2021: New and generally available
 
-### Cloud communication | Online meetings
+### Cloud communications | Online meetings
 Use `OnlineMeetingArtifact.Read.All` as delegated or application permission to read artifacts of online meetings. See [online meetings permissions](permissions-reference.md#online-meetings-permissions) for more information.
 
 ### Search | Query
@@ -29,6 +29,13 @@ Create table rows asynchronously. For better performance, a good practice to cre
 
 
 ## September 2021: New in preview only
+
+### Cloud communications | Online meetings
+See the total participant count in a [meeting attendance report](/graph/api/resources/meetingattendancereport?view=graph-rest-beta) of an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta).
+
+
+### Compliance | eDiscovery
+The [create case](/graph/api/ediscovery-case-post?view=graph-rest-beta) operation always creates cases in large format. This expands the case size limit to accommodate a higher total data volume and total number of items. For details, see [benefits of large cases](/microsoft-365/compliance/advanced-ediscovery-large-cases?view=o365-worldwide#benefits-of-large-cases).
 
 ### Education
 Support for adding assignments to only students' calendars if you use the `Prefer: include-unknown-enum-members` request header for operations on the [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) or [educationAssignmentDefaults](/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta&preserve-view=true) resource.
