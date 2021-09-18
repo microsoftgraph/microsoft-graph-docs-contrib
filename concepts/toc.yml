@@ -395,9 +395,9 @@ items:
             href: search-concept-custom-types.md
           - name: Search persons (preview)
             href: search-concept-person.md
-          - name: Sort search results (preview)
+          - name: Sort search results
             href: search-concept-sort.md
-          - name: Refine search results (preview)
+          - name: Refine search results
             href: search-concept-aggregation.md
           - name: Request spelling correction (preview)
             href: search-concept-speller.md

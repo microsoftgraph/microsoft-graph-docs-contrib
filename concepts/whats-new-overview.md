@@ -17,6 +17,12 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ### Cloud communication | Online meetings
 Use `OnlineMeetingArtifact.Read.All` as delegated or application permission to read artifacts of online meetings. See [online meetings permissions](permissions-reference.md#online-meetings-permissions) for more information.
 
+### Search | Query
+- Aggregate numeric or string type search results that are imported by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) and that are set to be refinable in the [schema](/graph/api/resources/schema). See more information about [refining search results using aggregations](search-concept-aggregation.md).
+- [Sort](/graph/api/resources/search-api-overview#sort-search-results) search results for OneDrive and SharePoint on any sortable property. For more information, see [Use the Microsoft Search API to sort search results](search-concept-sort.md).
+
+### Teamwork
+- Use a single action [provisionEmail](/graph/api/channel-provisionemail) to get the email address of a [channel](/graph/api/resources/channel) if one exists, or create one otherwise. Use the [removeEmail](/graph/api/channel-removeemail) action to remove the email address.
 
 ### Workbooks and charts
 Create table rows asynchronously. For better performance, a good practice to create multiple table rows is to batch them in one [create tableRow](/graph/api/table-post-rows) operation and carry out the operation asynchronously. Follow with the [GET workbookOperation](/graph/api/workbookoperation-get) operation and [tableRowOperationResult](/graph/api/workbook-tableRowOperationResult) function to get the new [workbookTableRow](/graph/api/resources/workbooktablerow) resource.
@@ -27,7 +33,8 @@ Create table rows asynchronously. For better performance, a good practice to cre
 ### Education
 Support for adding assignments to only students' calendars if you use the `Prefer: include-unknown-enum-members` request header for operations on the [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) or [educationAssignmentDefaults](/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta&preserve-view=true) resource.
 
-
+### Identity and access | Governance
+- [Delete](/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta) an [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) to remove a denied or completed request.
 
 ## August 2021: New and generally available
 
