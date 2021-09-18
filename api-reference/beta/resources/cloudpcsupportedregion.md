@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents a region supported to establish on-premises network connection for Cloud PCs.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Methods
 
 |Method|Return type|Description|
