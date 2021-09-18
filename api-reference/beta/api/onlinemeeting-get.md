@@ -13,20 +13,32 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object. For example, you can get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.
+
+For example, you can:
+
+- Get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Use the `/attendeeReport` path to get the attendee report of a live event in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-live-event).
+- Use the `/recording` and `/alternativeRecording` paths to get the recordings of a live event in the form of a download link, as shown in [example 5](#example-5-fetch-recording-of-a-live-event).
+- Use the `/meetingAttendanceReport` path to get the attendance report of a scheduled meeting, as shown in [example 6](#example-6-fetch-attendance-report-of-an-online-meeting).
+
+> [!IMPORTANT]
+> Meeting attendance report, live event attendee report and live event recordings are online meeting artifacts. [Read more about meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)           |
-| :------------------------------------- | :---------------------------------------------------- |
-| Delegated (work or school account)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
-| Delegated (personal Microsoft account) | Not Supported.                                        |
-| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
+| Permission type                        | Permissions (from least to most privileged)                                            |
+|:---------------------------------------|:---------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
+| Delegated (personal Microsoft account) | Not Supported.                                                                         |
+| Application                            | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
 
-> [!IMPORTANT]
-> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to get online meeting artifacts on behalf of that user (with user ID specified in the request path).
+
+> [!CAUTION]
+> Only the _OnlineMeetingArtifact.Read.All_ permissions are required if you fetch online meeting artifacts. You can still fetch meeting artifacts without them until **January 15, 2022**. [Read more about meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## HTTP request
 
@@ -51,6 +63,32 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
+To get the attendance report of an online meeting with delegated (`/me`) and app (`/users/{userId}`) permission:
+<!-- { "blockType": "ignored" }-->
+
+```http
+GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
+GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
+```
+
+To get the attendee report of a live event with delegated (`/me`) and app (`/users/{userId}`) permission:
+<!-- { "blockType": "ignored" }-->
+
+```http
+GET /me/onlineMeetings/{meetingId}/attendeeReport
+GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
+```
+
+To get the recordings of a live event with delegated (`/me`) and app (`/users/{userId}`) permission:
+<!-- { "blockType": "ignored" }-->
+
+```http
+GET /me/onlineMeetings/{meetingId}/recording
+GET /me/onlineMeetings/{meetingId}/alternativeRecording
+GET /users/{userId}/onlineMeetings/{meetingId}/recording
+GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
+```
+
 > [!NOTE]
 >- The `/app` path is deprecated. Going forward, use the `/communications` path.
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
@@ -73,10 +111,12 @@ If the request contains an `Accept-Language` HTTP header, the `content` of `join
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code. The method also includes one of the following:
 
-- If you're getting an online meeting based on meeting ID, **videoTeleconferenceId** or **joinWebUrl**, this method also returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
-- If you're getting the attendee report or recording of a live online meeting, this method also returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
+If successful, this method returns a `200 OK` response code. The response also includes one of the following:
+
+- If you fetch an online meeting by meeting ID, **videoTeleconferenceId** or **joinWebUrl**, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+- If you fetch the attendance report of an online meeting, this method returns a [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object in the response body.
+- If you fetch the attendee report or recording of a live event, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
 
 ## Examples
 
@@ -313,5 +353,160 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             }
         }
     ]
+}
+```
+
+### Example 4: Fetch attendee report of a live event
+
+The following example shows a request to download an attendee report.
+
+#### Request
+
+The following request uses delegated permission.
+<!-- {
+  "blockType": "request",
+  "name": "get_attendee_report"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
+
+The following request uses application permission.
+
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_attendee_report"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
+```
+
+### Example 5: Fetch recording of a live event
+
+The following example shows a request to download a recording.
+
+#### Request
+
+The following request uses delegated permission.
+<!-- {
+  "blockType": "request",
+  "name": "get_live_event_recording"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+The following request uses application permission.
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_live_event_recording"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
+```
+
+### Example 6: Fetch attendance report of an online meeting
+
+The following example shows a request to get a meeting attendance report.
+
+#### Request
+
+The following request uses delegated permission.
+<!-- {
+  "blockType": "request",
+  "name": "get_attendance_report"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+The following request uses application permission.
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport",
+  "name": "get_attendance_report"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1876
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
+    "attendanceRecords": [
+        {
+            "emailAddress": "email address",
+            "totalAttendanceInSeconds": 1558,
+            "role": "Organizer",
+            "identity": {
+                "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+                "displayName": "(redacted)",
+                "tenantId": null
+            },
+            "attendanceIntervals": [
+                {
+                    "joinDateTime": "2021-03-16T18:59:46.598956Z",
+                    "leaveDateTime": "2021-03-16T19:25:45.4473057Z",
+                    "durationInSeconds": 1558
+                }
+            ]
+        },
+        {
+            "emailAddress": "email address",
+            "totalAttendanceInSeconds": 1152,
+            "role": "Presenter",
+            "identity": {
+                "id": "(redacted)",
+                "displayName": "(redacted)",
+                "tenantId": null
+            },
+            "attendanceIntervals": [
+                {
+                    "joinDateTime": "2021-03-16T18:59:52.2782182Z",
+                    "leaveDateTime": "2021-03-16T19:06:47.7218491Z",
+                    "durationInSeconds": 415
+                },
+                {
+                    "joinDateTime": "2021-03-16T19:09:23.9834702Z",
+                    "leaveDateTime": "2021-03-16T19:16:31.1381195Z",
+                    "durationInSeconds": 427
+                },
+                {
+                    "joinDateTime": "2021-03-16T19:20:27.7094382Z",
+                    "leaveDateTime": "2021-03-16T19:25:37.7121956Z",
+                    "durationInSeconds": 310
+                }
+            ]
+        }
+    ],
+    "totalParticipantCount": 2
 }
 ```
