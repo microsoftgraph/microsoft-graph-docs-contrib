@@ -9657,7 +9657,7 @@ items:
       - name: Cloud PC (preview)
         items:
         - name: Windows 365 Overview
-          href: windows365overview.md
+          href: resources/windows365overview.md
         - name: Virtual endpoint
           href: resources/virtualendpoint.md
           items:
