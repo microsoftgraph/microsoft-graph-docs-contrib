@@ -23,7 +23,7 @@ For example, you can:
 - Use the `/meetingAttendanceReport` path to get the attendance report of a scheduled meeting, as shown in [example 6](#example-6-fetch-attendance-report-of-an-online-meeting).
 
 > [!IMPORTANT]
-> Meeting attendance report, live event attendee report and live event recordings are online meeting artifacts. [Read more about meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+> Meeting attendance report, live event attendee report, and live event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## Permissions
 
@@ -38,25 +38,25 @@ One of the following permissions is required to call this API. To learn more, in
 To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to get online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 > [!CAUTION]
-> Only the _OnlineMeetingArtifact.Read.All_ permissions are required if you fetch online meeting artifacts. You can still fetch meeting artifacts without them until **January 15, 2022**. [Read more about meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+> Only the _OnlineMeetingArtifact.Read.All_ permissions are required if you fetch online meeting artifacts. You can still fetch meeting artifacts without them until **January 15, 2022**. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## HTTP request
 
-To get an onlineMeeting using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get an **onlineMeeting** using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-To get an onlineMeeting using **videoTeleconferenceId** with app permission:
+To get an **onlineMeeting** using **videoTeleconferenceId** with app permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-To get an onlineMeeting using **joinWebUrl** with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get an **onlineMeeting** using **joinWebUrl** with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
@@ -93,7 +93,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 >- The `/app` path is deprecated. Going forward, use the `/communications` path.
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
-> - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. Refer to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up) for more details.
+> - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. For details, see [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 >- `joinWebUrl` must be URL encoded.
 
 ## Optional query parameters
@@ -119,9 +119,6 @@ If successful, this method returns a `200 OK` response code. The response also i
 - If you fetch the attendee report or recording of a live event, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
 
 ## Examples
-
-> [!NOTE]
-> The response objects of the following examples have been shortened for readability. All the properties will be returned from an actual call.
 
 ### Example 1: Retrieve an online meeting by VideoTeleconferenceId
 
@@ -155,6 +152,8 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 ---
 
 #### Response
+
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -257,6 +256,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### Response
 
+> **Note:** The response object shown here might be shortened for readability. 
+
 ```json
 {
     "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
@@ -313,6 +314,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 #### Response
+
+> **Note:** The response object shown here might be shortened for readability. 
 
 ```json
 {
@@ -380,6 +383,7 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```
 
 #### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -447,6 +451,8 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```
 
 #### Response
+
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
