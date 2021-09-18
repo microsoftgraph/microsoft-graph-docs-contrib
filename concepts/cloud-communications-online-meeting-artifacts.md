@@ -11,7 +11,7 @@ ms.date: "09/20/2021"
 
 ## Online meeting artifacts
 
-Online meeting artifacts are content produced for the duration of an online meeting or live event. The following meeting artifacts that can be fetched with [Get onlineMeeting](/graph/api/onlinemeeting-get) API:
+Online meeting artifacts are content produced for the duration of an online meeting or live event. The following meeting artifacts that can be fetched with [Get onlineMeeting](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) API:
 
 - Attendance report of an online meeting,
   - in the form of a JSON response
