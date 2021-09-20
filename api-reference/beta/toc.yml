@@ -12890,7 +12890,8 @@ items:
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
-    - name: Privacy
+    - name: Privacy (Preview)
+      displayName: Privacy API, Microsoft Graph Privacy API
       items:
         - name: Overview
         href: resources/privacyeapioverview.md
@@ -12920,7 +12921,6 @@ items:
             href: api/subjectrightsrequest-list-notes.md
           - name: Create
             href: api/subjectrightsrequest-post-notes.md
-
     - name: Reports
       items:
       - name: Azure AD activity reports
