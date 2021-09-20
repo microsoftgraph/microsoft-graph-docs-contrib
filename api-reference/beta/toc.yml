@@ -10142,7 +10142,7 @@ items:
         - name: List schools
           href: api/educationuser-list-schools.md
         - name: List assignments
-          href: api/educationuser-list-assignments.md            
+          href: api/educationuser-list-assignments.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -12207,7 +12207,7 @@ items:
             href: resources/privilegedidentitymanagement-root.md
           - name: Azure AD (deprecated))
             items:
-            - name: Azure AD 
+            - name: Azure AD
               href: resources/privilegedidentitymanagement-directory.md
             - name: Privileged role
               href: resources/privilegedrole.md
@@ -13156,6 +13156,23 @@ items:
         items:
         - name: Overview
           href: resources/report.md
+        - name: Attack Simulation and Training coverage
+          items:
+          - name: Repeat offenders
+            href: resources/attacksimulationrepeatoffender.md
+            items:
+            - name: Get repeat offenders
+              href: api/reportroot-getattacksimulationrepeatoffenders.md
+          - name: Simulation user coverage
+            href: resources/attacksimulationsimulationusercoverage.md
+            items:
+            - name: Get simulation user coverage
+              href: api/reportroot-getattacksimulationsimulationusercoverage.md
+          - name: Training user coverage
+            href: resources/attacksimulationtrainingusercoverage.md
+            items:
+            - name: Get training user coverage
+              href: api/reportroot-getattacksimulationtrainingusercoverage.md
         - name: Microsoft Teams device usage
           href: resources/microsoft-teams-device-usage-reports.md
           items:
@@ -13469,6 +13486,17 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Attack Simulation and Training
+        items:
+        - name: Simulations
+          href: resources/simulation.md
+          items:
+          - name: List simulations
+            href: api/attacksimulationroot-list-simulations.md
+          - name: Get simulation report overview
+            href: api/simulationreportoverview-get.md
+          - name: Get simulation users report
+            href: api/usersimulationdetails-list.md
       - name: Information protection
         items:
         - name: Labels
