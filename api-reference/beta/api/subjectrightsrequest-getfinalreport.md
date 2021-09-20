@@ -1,6 +1,6 @@
 ---
 title: "subjectRightsRequest: getFinalReport"
-description: "Get the final report for a data subject request."
+description: "Get the final report for a subject rights request."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the final report for a data subject request. The report is a text file that contains information about the files that were included by the privacy administrator.
+Get the final report for a subject rights request. The report is a text file that contains information about the files that were included by the privacy administrator.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

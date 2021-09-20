@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of authored notes assoicated with a data subject request. 
+Get the list of authored notes assoicated with a subject rights request. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /compliance/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|

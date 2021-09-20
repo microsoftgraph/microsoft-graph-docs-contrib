@@ -1,6 +1,6 @@
 ---
 title: "List subjectRightsRequests"
-description: "Get a list of data subject requests and their properties."
+description: "Get a list of subject rights requests and their properties."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -34,7 +34,9 @@ GET /compliance/subjectRightsRequests
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method does not support the [OData query parameters](/graph/query-parameters) to help customize the response.
+
 
 ## Request headers
 |Name|Description|
