@@ -92,6 +92,7 @@ Content-type: application/json
             "availabilityIsAffectedByPersonalCalendar":false,
             "colorIndex":1,
             "role":"externalGuest",
+            "timeZone":"America/Chicago",
             "useBusinessHours":true,
             "workingHours":[
                 {
@@ -148,6 +149,7 @@ Content-type: application/json
             "availabilityIsAffectedByPersonalCalendar":true,
             "colorIndex":0,
             "role":"administrator",
+            "timeZone":"America/Chicago",
             "useBusinessHours":true,
             "workingHours":[
                 {

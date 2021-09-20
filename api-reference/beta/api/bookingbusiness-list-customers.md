@@ -88,22 +88,58 @@ Content-type: application/json
         {
             "id": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
             "displayName": "Adele Vance",
-            "emailAddress": "adelev@proseware.com"
+            "emailAddress": "adelev@proseware.com",
+            "addresses": [],
+            "phones": []
         },
         {
             "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
             "displayName": "Adele Vance",
-            "emailAddress": "adelev@proseware.com"
+            "emailAddress": "adelev@proseware.com",
+            "addresses": [
+                {
+                    "postOfficeBox":"",
+                    "street":"4567 Main Street",
+                    "city":"Buffalo",
+                    "state":"NY",
+                    "countryOrRegion":"USA",
+                    "postalCode":"98052",
+                    "type":"home"
+                },
+                {
+                    "postOfficeBox":"",
+                    "street":"4570 Main Street",
+                    "city":"Buffalo",
+                    "state":"NY",
+                    "countryOrRegion":"USA",
+                    "postalCode":"98054",
+                    "type":"business"
+                }
+            ],
+            "phones": [
+                {
+                    "number": "206-555-0100",
+                    "type": "home"
+                },
+                {
+                    "number": "206-555-0200",
+                    "type": "business"
+                }
+            ]
         },
         {
             "id": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
             "displayName": "Bob Kelly",
-            "emailAddress": "bobk@tailspintoys.com"
+            "emailAddress": "bobk@tailspintoys.com",
+            "addresses": [],
+            "phones": []
         },
         {
             "id": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "displayName": "Jordan Miller",
-            "emailAddress": "jordanm@contoso.com"
+            "emailAddress": "jordanm@contoso.com",
+            "addresses": [],
+            "phones": []
         }
     ]
 }

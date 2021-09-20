@@ -97,6 +97,8 @@ Content-type: application/json
             "preBuffer": "PT0S",
             "postBuffer": "PT0S",
             "staffMemberIds": [],
+            "smsNotificationsEnabled": true,
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
             "schedulingPolicy": null,
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
@@ -136,6 +138,8 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "staffMemberIds": [],
+            "smsNotificationsEnabled": false,
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
                 "locationEmailAddress": null,
@@ -181,6 +185,8 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "staffMemberIds": [],
+            "smsNotificationsEnabled": true,
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
                 "locationEmailAddress": null,

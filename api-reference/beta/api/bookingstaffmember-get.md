@@ -89,6 +89,7 @@ Content-type: application/json
     "availabilityIsAffectedByPersonalCalendar": true,
     "colorIndex": 0,
     "role": "administrator",
+    "timeZone": "America/Chicago",
     "useBusinessHours": true,
     "workingHours": [
         {

@@ -36,6 +36,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |customerName|String|The customer's name.|
 |customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. <br> You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by **customerId**.|
 |customerPhone|String|The customer's phone number.|
+|customerTimeZone|String|The customer's timezone. The format/value of time zone would be the standard followed in graph as mentioned: [dateTimeTimeZone](datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
 |id|String| The ID of the **bookingAppointment**. Read-only.|
@@ -44,6 +45,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |invoiceId|String|The ID of the invoice.|
 |invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
+|joinWebUrl|String|Url of meeting.|
 |optOutOfCustomerEmail|Boolean|True indicates that the [bookingCustomer](bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
@@ -55,6 +57,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |serviceLocation|[location](location.md)|The location where the service is delivered.|
 |serviceName|String|The name of the **bookingService** associated with this appointment.<br>This property is optional when creating a new appointment. If not specified, it is computed from the service associated with the appointment by the **serviceId** property.|
 |serviceNotes|String|Notes from a [bookingStaffMember](bookingstaffmember.md). The value of this property is available only when reading this **bookingAppointment** by its ID.|
+|smsNotificationsEnabled|Boolean|True means sms will be sent to customer.|
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](bookingstaffmember.md) who is scheduled in this appointment.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 
@@ -76,12 +79,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "joinWebUrl": "String",
+  "smsNotificationsEnabled": "Boolean",
   "customerEmailAddress": "String",
   "customerId": "String",
   "customerLocation": {"@odata.type": "microsoft.graph.location"},
   "customerName": "String",
   "customerNotes": "String",
   "customerPhone": "String",
+  "customerTimeZone": "String",
   "duration": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",

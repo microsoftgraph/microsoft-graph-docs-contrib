@@ -44,6 +44,8 @@ In the request body, supply the values for relevant fields that should be update
 |customerName|String|The customer's name.|
 |customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. <br> You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by **customerId**.|
 |customerPhone|String|The customer's phone number.|
+|customerTimeZone|String|The customer's timezone. The format/value of time zone would be the standard followed in graph as mentioned: [dateTimeTimeZone](datetimetimezone.md).|
+|smsNotificationsEnabled|Boolean|True means sms will be sent to customer.|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
 |invoiceAmount|Double|The billed amount on the invoice.|

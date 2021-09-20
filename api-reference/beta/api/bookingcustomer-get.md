@@ -85,7 +85,37 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers/$entity",
     "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
     "displayName": "Adele Vance",
-    "emailAddress": "adelev@proseware.com"
+    "emailAddress": "adelev@proseware.com",
+    "addresses": [
+        {
+            "postOfficeBox":"",
+            "street":"4567 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "type":"home"
+        },
+        {
+            "postOfficeBox":"",
+            "street":"4570 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98054",
+            "type":"business"
+        }
+    ],
+    "phones": [
+        {
+            "number": "206-555-0100",
+            "type": "home"
+        },
+        {
+            "number": "206-555-0200",
+            "type": "business"
+        }
+     ]
 }
 ```
 

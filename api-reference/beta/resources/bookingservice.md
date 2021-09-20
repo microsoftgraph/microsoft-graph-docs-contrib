@@ -43,6 +43,8 @@ Represents information about a particular service provided by a [bookingBusiness
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
 |staffMemberIds|String collection|Represents those [staff members](bookingstaffmember.md) who provide this service. |
+|smsNotificationsEnabled|Boolean|True means customer will get SMS notifications for appointments booked for this service.|
+|webUrl|String|The URL of the booking service.|
 
 ## Relationships
 None
@@ -76,7 +78,9 @@ The following is a JSON representation of the resource.
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
-  "staffMemberIds": ["String"]
+  "staffMemberIds": ["String"],
+  "smsNotificationsEnabled": "Boolean",
+  "webUrl": "String"
 }
 
 ```

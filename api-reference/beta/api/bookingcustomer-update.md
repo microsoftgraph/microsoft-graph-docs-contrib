@@ -40,6 +40,8 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Home, Business and Other addresses of the customer.|
+|phones|[phone](../resources/phone.md) collection|Home, Business and Mobile phone numbers of the customer.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and updated [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
