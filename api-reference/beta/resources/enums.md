@@ -2478,6 +2478,45 @@ Possible values for user account types (group membership), per Windows definitio
 |chunkFinished|
 |unknownFutureValue|
 
+### simulationStatus values
+
+|Member|
+|:---|
+|unknown|
+|draft|
+|inProgress|
+|scheduled|
+|completed|
+|partiallyCompleted|
+|failed|
+|cancelled|
+|excluded|
+|deleted|
+|included|
+|unknownFutureValue|
+
+### payloadDeliveryPlatform values
+
+|Member|
+|:---|
+|unknown|
+|sms|
+|email|
+|teams|
+|unknownFutureValue|
+
+### trainingStatus values
+
+|Member|
+|:---|
+|unknown|
+|assigned|
+|inProgress|
+|completed|
+|overdue|
+|notCompleted|
+|unknownFutureValue|
+
 ### teamworkCallEventType values
 
 |Member|

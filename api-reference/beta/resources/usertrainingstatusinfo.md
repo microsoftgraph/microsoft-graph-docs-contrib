@@ -21,19 +21,7 @@ Represents assigned training and its status for a user in attack simulation and 
 |assignedDateTime|DateTimeOffset|Date and time of assignment of the training to a user.|
 |completionDateTime|DateTimeOffset|Date and time of completion of the training by a user.|
 |displayName|String|Display name of the assigned training.|
-|trainingStatus|[trainingStatus](#trainingstatus-values)|Status of the assigned training to a user. Possible values are: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
-
-### trainingStatus values
-
-|Member|
-|:---|
-|unknown|
-|assigned|
-|inProgress|
-|completed|
-|overdue|
-|notCompleted|
-|unknownFutureValue|
+|trainingStatus|trainingStatus|Status of the assigned training to a user. Possible values are: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
 
 ## Relationships
 None.

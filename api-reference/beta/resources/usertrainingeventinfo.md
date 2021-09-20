@@ -19,22 +19,10 @@ Represents events of a training assigned to a user in an attack simulation and t
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the training.|
-|latestTrainingStatus|[trainingStatus](#trainingstatus-values)|Latest status of the training assigned to the user. Possible values are: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
+|latestTrainingStatus|trainingStatus|Latest status of the training assigned to the user. Possible values are: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
 |trainingAssignedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of training when it was assigned to the user.|
 |trainingCompletedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of training when it was completed by the user.|
 |trainingUpdatedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Event details of training when it was updated/in-progress by the user.|
-
-### trainingStatus values
-
-|Member|
-|:---|
-|unknown|
-|assigned|
-|inProgress|
-|completed|
-|overdue|
-|notCompleted|
-|unknownFutureValue|
 
 ## Relationships
 None.
