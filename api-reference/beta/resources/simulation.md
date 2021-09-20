@@ -18,7 +18,7 @@ Represent attack simulation and training campaign of a tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List simulations](../api/simulation-list.md)|[simulation](../resources/simulation.md) collection|Get a list of the [simulation](../resources/simulation.md) objects and their properties.|
+|[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of the [simulation](../resources/simulation.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
