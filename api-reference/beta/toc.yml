@@ -12894,8 +12894,8 @@ items:
       displayName: Privacy API, Microsoft Graph Privacy API
       items:
         - name: Overview
-        href: resources/privacyeapioverview.md
-        - name:  Subject Rights Request
+          href: resources/privacyeapioverview.md
+        - name: Subject Rights Request
         items:
         - name: Overview
           href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
