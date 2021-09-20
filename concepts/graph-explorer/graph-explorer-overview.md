@@ -43,7 +43,7 @@ Graph Explorer includes the following elements:
 
 To run a GET request in Graph Explorer, you don’t have to be signed in. Just click a sample query and sample data will show in the response preview. 
 
-![Screenshot of a sample request in Graph Explorer](./images/making-a-get-request.png)
+:::image type="content" source="./images/making-a-get-request.png" alt-text="Screenshot of a sample request in Graph Explorer." border="true":::
 
 To make a request:
 
@@ -62,7 +62,7 @@ To try POST, PUT, PATCH, and DELETE requests, sign in to Graph Explorer using a 
 
 For example, to run a POST request, select POST in the drop-down list for the HTTP verb, and add a request body and request headers as appropriate.
 
-![Screenshot of a POST request in Graph Explorer](./images/making-a-post-request.png)
+:::image type="content" source="./images/making-a-post-request.png" alt-text="Screenshot of a POST request in Graph Explorer." border="true":::
 
 1. Select a POST sample query.
 2. Update **Request body**; for example, give the application a name.
@@ -71,7 +71,7 @@ For example, to run a POST request, select POST in the drop-down list for the HT
 
 To view the response in a format other than the default JSON, choose the **Request headers** tab in the request pane, define the key/value pair, and click **Add**.
 
-![Screenshot that shows the Request headers tab in Graph Explorer](./images/adding-key-value-pairs.png)
+:::image type="content" source="./images/adding-key-value-pairs.png" alt-text="Screenshot that shows the Request headers tab in Graph Explorer." border="true":::
 
 ## Next steps
 
