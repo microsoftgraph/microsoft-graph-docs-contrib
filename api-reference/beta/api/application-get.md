@@ -30,7 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 GET /applications/{id}
 ```
 ## Optional query parameters
+
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific application properties.
+
+By default, this API doesn't return the value of the **key** thumbprint in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
+
+The use of `$select` to get **keyCredentials** for applications has a throttling limit of 150 requests per minute for every tenant.
+
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|

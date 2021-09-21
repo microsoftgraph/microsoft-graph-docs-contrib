@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/organization/settings
+GET https://graph.microsoft.com/beta/organization/{organizationId}/settings
 ```
 
 ## Optional query parameters
@@ -65,11 +65,12 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["a9f3c90b-04fd-4504-a302-47672bbca6c8"],
   "name": "get_organizationsettings"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/settings
+GET https://graph.microsoft.com/beta/organization/a9f3c90b-04fd-4504-a302-47672bbca6c8/settings
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationsettings-csharp-snippets.md)]
@@ -107,23 +108,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "345233-676277-644334-445677-334556",
-  "profileCardProperties": [
-    {
-      "directoryPropertyName": "CustomAttribute1",
-      "annotations": [
-        {
-          "displayName": "Cost Center",
-          "localizations": [
-            {
-              "languageTag": "ru-RU",
-              "displayName": "центр затрат"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/$entity",
+    "id": "",
+    "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/profileCardProperties",
+    "profileCardProperties": [
+      {
+        "directoryPropertyName": "CustomAttribute1",
+        "annotations": [
+          {
+            "displayName": "Cost Center",
+            "localizations": [
+              {
+                "languageTag": "ru-RU",
+                "displayName": "центр затрат"
+              }
+            ]
+          }
+        ]
+      }
+    ]
 }
 ```
 
