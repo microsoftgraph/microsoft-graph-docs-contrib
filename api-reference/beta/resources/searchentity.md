@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A top level object representing the Microsoft Search API endpoint. It does not behave as any other resource in Graph, but serves as an anchor to the [query](../api/search-query.md) action. 
+A top level object representing the Microsoft Search API endpoint. 
+
+It serves as an anchor to the [query](../api/search-query.md) action and search answer relationships such as **acronyms**, **bookmarks**, and **qnas**. 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -26,7 +28,12 @@ A top level object representing the Microsoft Search API endpoint. It does not b
 None.
 
 ## Relationships
-None.
+| Relationship | Type |Description|
+|:---------------|:--------|:----------|
+| acronyms | microsoft.graph.search.acronym collection |  |
+| bookmarks | microsoft.graph.search.bookmark collection |  |
+| qnas | microsoft.graph.search.qna collection |  |
+
 
 ## JSON representation
 The following is a JSON representation of the resource.
