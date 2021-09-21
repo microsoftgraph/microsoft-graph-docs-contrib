@@ -41,7 +41,7 @@ POST /education/classes/{id}/assignments/{id}/resources
 ## Request body
 In the request body, supply a JSON representation of the resource object. It can be an [educationFileResource](../resources/educationfileresource.md), [educationExcelResource](../resources/educationexcelresource.md), [educationWordResource](../resources/educationwordresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) and [educationMediaResource](../resources/educationmediaresource.md).
 
->**Note:** The educationExternalResource is only an out resource, you can't POST an assignment with it.
+>**Note:** The [educationExternalResource](../resources/educationexternalresource.md) is only an out resource, you can't POST an assignment with it.
 
 
 ## Response

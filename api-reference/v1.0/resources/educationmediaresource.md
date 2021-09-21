@@ -19,7 +19,6 @@ The file must be uploaded in the **fileResource** directory associated with the 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|String|Name of the file with extension. Optional|
 |fileUrl|String|Location of the file on shared point folder. Required|
 
 ## JSON representation
@@ -29,14 +28,12 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-      "displayName"
   ],
   "@odata.type": "microsoft.graph.educationMediaResource"
 }-->
 
 ```json
 {
-  "displayName": "String",
   "fileUrl": "String"
 }
 

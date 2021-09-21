@@ -43,9 +43,9 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of the resource. Supported types are [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) and [educationWordResource](../resources/educationwordresource.md).
+In the request body, supply a JSON representation of the resource. Supported types are [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md), [educationWordResource](../resources/educationwordresource.md) and [educationMediaResource](../resources/educationmediaresource.md).
 
->**Note:** The educationExternalResource is only an out resource, you can't POST a submission with it.
+>**Note:** The [educationExternalResource](../resources/educationexternalresource.md) is only an out resource, you can't POST a submission with it.
 
 ## Response
 If successful, this method returns a `201 Created` response code and an object according to the resource type in the response body.
