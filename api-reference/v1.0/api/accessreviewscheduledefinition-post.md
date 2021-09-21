@@ -44,8 +44,8 @@ The following table shows the properties accepted to create an accessReview.
 | Property | Type | Description |
 |:-------------|:------------|:------------|
 | displayName | String | Name of access review series. Required.|
-| descriptionForAdmins | string | Context of the review provided to admins. Required. |
-  descriptionForReviewers | string | Context of the review provided to reviewers. Required. |
+| descriptionForAdmins | String | Context of the review provided to admins. Required. |
+  descriptionForReviewers | String | Context of the review provided to reviewers in email notifications. Email notifications support up to 256 characters. Required. |
 | scope | [accessReviewScope](../resources/accessreviewscope.md) |  Defines the entities whose access is reviewed. See  [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept). Required.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
@@ -396,8 +396,6 @@ This is an example of creating an access review with the following settings:
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -469,12 +467,6 @@ Content-type: application/json
   }
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
