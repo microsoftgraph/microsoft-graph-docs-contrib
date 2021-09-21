@@ -55,7 +55,6 @@ Here is a JSON representation of the currencies.
   "amountRoundingPrecision": "decimal",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
 
 
