@@ -301,7 +301,7 @@ The preceding limits apply to the following resources:
 
 The following limits apply to any request on `/informationProtection`.
   
-For email, the 'resource' is considered a unique network message ID/recipient pair. As an example, submitting an email with the same message ID sent to the same person multiple times in a 15 minute period will trigger the limit per resource limits below. However, you can submit up to 150 unique emails every 15 minutes (tenant limit).
+For email, the resource is a unique network message ID/recipient pair. For example, submitting an email with the same message ID sent to the same person multiple times in a 15 minute period will trigger the limit per resource limits lited in the following table. However, you can submit up to 150 unique emails every 15 minutes (tenant limit).
 
 | Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|
