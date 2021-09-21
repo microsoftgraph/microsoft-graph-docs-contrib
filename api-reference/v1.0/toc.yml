@@ -6309,6 +6309,10 @@ items:
           href: api/channel-list-members.md
         - name: List message replies
           href: api/chatmessage-list-replies.md
+        - name: Provision email address
+          href: api/channel-provisionemail.md  
+        - name: Remove email address
+          href: api/channel-removeemail.md  
         - name: Remove member
           href: api/channel-delete-members.md
         - name: Reply to message
@@ -6727,6 +6731,8 @@ items:
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+        - name: Get operation result (async)
+          href: api/workbook-tablerowoperationresult.md
       - name: Workbook application
         href: resources/workbookapplication.md
         items:
