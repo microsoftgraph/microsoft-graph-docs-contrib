@@ -232,36 +232,45 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
-    "id": "502df398-d59c-469d-944f-34a50e60db3f",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/1226170d-83d5-49b8-99ab-d1ab3d91333e/Microsoft.DirectoryServices.Group",
+    "id": "1226170d-83d5-49b8-99ab-d1ab3d91333e",
     "deletedDateTime": null,
     "classification": null,
-    "createdDateTime": "2018-12-27T22:17:07Z",
+    "createdDateTime": "2021-09-21T07:14:44Z",
+    "createdByAppId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+    "organizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
     "description": "Group with designated owner and members",
     "displayName": "Operations group",
     "expirationDateTime": null,
-    "groupTypes": [
-        "Unified"
-    ],
+    "groupTypes": [],
+    "infoCatalogs": [],
     "isAssignableToRole": null,
-    "mail": "operations2019@contoso.com",
-    "mailEnabled": true,
+    "isManagementRestricted": null,
+    "mail": null,
+    "mailEnabled": false,
     "mailNickname": "operations2019",
     "membershipRule": null,
     "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
     "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
-    "preferredDataLocation": "CAN",
-    "proxyAddresses": [
-        "SMTP:operations2019@contoso.com"
-    ],
-    "renewedDateTime": "2018-12-27T22:17:07Z",
+    "preferredDataLocation": null,
+    "preferredLanguage": null,
+    "proxyAddresses": [],
+    "renewedDateTime": "2021-09-21T07:14:44Z",
     "resourceBehaviorOptions": [],
     "resourceProvisioningOptions": [],
-    "securityEnabled": false,
-    "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
+    "securityEnabled": true,
+    "securityIdentifier": "S-1-12-1-304486157-1236829141-2882644889-1043566909",
     "theme": null,
-    "visibility": "Public",
+    "visibility": null,
+    "writebackConfiguration": {
+        "isEnabled": null,
+        "onPremisesGroupType": null
+    },
     "onPremisesProvisioningErrors": []
 }
 ```
