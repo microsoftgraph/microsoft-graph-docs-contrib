@@ -261,10 +261,14 @@ items:
         items:
           - name: Overview
             href: azuread-identity-access-management-concept-overview.md
-          - name: Authentication methods
-            href: authenticationmethods-get-started.md
+          - name: Directory management
+            items:
+              - name: Use PIM to assign privileged roles
+                href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
+              - name: Authentication methods
+                href: authenticationmethods-get-started.md
               - name: Identify and remediate risk
                 href: tutorial-riskdetection-api.md
           - name: Governance
