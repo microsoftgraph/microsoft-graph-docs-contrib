@@ -2,13 +2,16 @@
 title: "Get qna"
 description: "Read the properties and relationships of a qna object."
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
 # Get qna
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [qna](../resources/qna.md) object.
 

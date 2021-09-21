@@ -2,7 +2,8 @@
 title: "answerKeyword resource type"
 description: "answerKeyword"
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---
@@ -10,6 +11,8 @@ doc_type: resourcePageType
 # answerKeyword resource type
 
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Answer Keyword is used to configure triggers for a search answer to appear on search.
 

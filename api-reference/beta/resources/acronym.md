@@ -2,7 +2,8 @@
 title: "acronym resource type"
 description: "acronym"
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---
@@ -10,6 +11,8 @@ doc_type: resourcePageType
 # acronym resource type
 
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An acronym is a tenant wide administrative answer in Microsoft search results to define common acronyms in a tenant. An acronym has a few properties which define an acronym for an organization.\
 \

@@ -2,7 +2,8 @@
 title: "answerVariant resource type"
 description: "answerVariant"
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---
@@ -10,6 +11,8 @@ doc_type: resourcePageType
 # answerVariant resource type
 
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An answer variant can be used to to change certain fields of a search answer based on country or platform.
 

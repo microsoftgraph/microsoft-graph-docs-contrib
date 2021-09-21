@@ -2,13 +2,16 @@
 title: "Delete qna"
 description: "Deletes a qna object."
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
 # Delete qna
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a [qna](../resources/qna.md) object.
 

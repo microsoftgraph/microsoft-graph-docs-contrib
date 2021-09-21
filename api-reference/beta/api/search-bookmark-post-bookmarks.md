@@ -2,13 +2,16 @@
 title: "Create bookmark"
 description: "Create a new bookmark object."
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
 # Create bookmark
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [bookmark](../resources/bookmark.md) object.
 

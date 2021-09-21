@@ -2,13 +2,16 @@
 title: "Delete bookmark"
 description: "Deletes a bookmark object."
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
 # Delete bookmark
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a [bookmark](../resources/bookmark.md) object.
 

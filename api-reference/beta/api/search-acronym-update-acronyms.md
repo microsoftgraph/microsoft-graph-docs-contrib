@@ -2,13 +2,16 @@
 title: "Update acronym"
 description: "Update the properties of an acronym object."
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
 # Update acronym
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [acronym](../resources/acronym.md) object.
 

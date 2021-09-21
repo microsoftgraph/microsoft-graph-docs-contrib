@@ -2,7 +2,8 @@
 title: "qna resource type"
 description: "Question and Answer search resource"
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---
@@ -10,6 +11,8 @@ doc_type: resourcePageType
 # qna resource type
 
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Q&As are administrative answer results in the search results page which provide answers for specific search keywords. Q&As allow administrators to answer the user's questions directly in search instead of providing a link to a webpage. A Q&A has many properties which allow administrators to make common resources more accessible in their organization.\
 \

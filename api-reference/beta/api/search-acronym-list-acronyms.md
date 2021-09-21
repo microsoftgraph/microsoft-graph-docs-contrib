@@ -2,13 +2,16 @@
 title: "List acronyms"
 description: "Get a list of the acronym objects and their properties."
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
 # List acronyms
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [acronym](../resources/acronym.md) objects and their properties.
 

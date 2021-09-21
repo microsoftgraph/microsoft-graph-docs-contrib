@@ -2,13 +2,16 @@
 title: "List bookmarks"
 description: "Get a list of the bookmark objects and their properties."
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
 # List bookmarks
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [bookmark](../resources/bookmark.md) objects and their properties.
 

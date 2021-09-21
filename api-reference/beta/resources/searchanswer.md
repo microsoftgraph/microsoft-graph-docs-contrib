@@ -2,7 +2,8 @@
 title: "searchAnswer resource type"
 description: "searchAnswer"
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---
@@ -10,6 +11,8 @@ doc_type: resourcePageType
 # searchAnswer resource type
 
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Search answer is a base type for other search answers. Includes properties that apply to other search answer entities.
 

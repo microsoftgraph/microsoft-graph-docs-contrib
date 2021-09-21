@@ -2,7 +2,8 @@
 title: "bookmark resource type"
 description: "bookmark"
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---
@@ -10,6 +11,8 @@ doc_type: resourcePageType
 # bookmark resource type
 
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A bookmark is a tenant wide administrative answer in Microsoft search results for common tenant search queries. A bookmark has many properties which allow Admins to make common resources more accessible in their organization.
 \

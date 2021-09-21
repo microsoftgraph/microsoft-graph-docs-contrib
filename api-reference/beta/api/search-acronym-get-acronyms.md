@@ -2,13 +2,16 @@
 title: "Get acronym"
 description: "Read the properties and relationships of an acronym object."
 author: "jakeost-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
+ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
 # Get acronym
 Namespace: microsoft.graph.search
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of an [acronym](../resources/acronym.md) object.
 
