@@ -1,6 +1,6 @@
 ---
-title: "Use the Microsoft Graph privacy API"
-description: "The Microsoft Graph privacy API provides a unified interface and schema to integrate with privacy solutions from Microsoft and ecosystem partners. This can help customers streamline their privacy operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards."
+title: "Use the Microsoft Graph Privacy API"
+description: "The Microsoft Graph Privacy API provides a unified interface and schema to integrate with privacy solutions from Microsoft and ecosystem partners. This can help customers streamline their privacy operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards."
 localization_priority: Priority
 author: "mahage-msft"
 ms.prod: "compliance"
@@ -11,13 +11,13 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Graph privacy API provides a unified interface and schema to integrate with privacy solutions from Microsoft and ecosystem partners. This can help customers streamline their privacy operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards. For more information, see [Microsoft 365 privacy documentation](/microsoft-365/privacy).
+The Microsoft Graph Privacy API provides a unified interface and schema to integrate with privacy solutions from Microsoft and ecosystem partners. This can help customers streamline their privacy operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards. For more information, see [Microsoft 365 privacy documentation](/microsoft-365/privacy).
 
-Use the Microsoft Graph privacy API to build applications that:
+Use the Microsoft Graph Privacy API to build applications that:
 
 - Create and manage subject rights requests
 
-The Microsoft Graph privacy API includes the following key entities.
+The Microsoft Graph Privacy API includes the following key entities.
 
 ## Subject Rights Request
 
