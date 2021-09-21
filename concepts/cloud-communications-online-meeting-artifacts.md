@@ -28,10 +28,8 @@ Online meeting artifacts are content produced for the duration of an online meet
 
 The following permissions are available to manage meeting artifacts.
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetingArtifact.Read.All              |
-| Application                            | OnlineMeetingArtifact.Read.All              |
+- Delegated (work or school account) - OnlineMeetingArtifact.Read.All
+- Application - OnlineMeetingArtifact.Read.All
 
 Only the _OnlineMeetingArtifact.Read.All_ permissions are required to fetch online meeting artifacts. Until **January 15, 2022**, you can use the following permissions to get meeting artifacts in beta:
 
