@@ -22,8 +22,7 @@ For example, you can:
 - Use the `/recording` and `/alternativeRecording` paths to get the recordings of a live event in the form of a download link, as shown in [example 5](#example-5-fetch-recording-of-a-live-event).
 - Use the `/meetingAttendanceReport` path to get the attendance report of a scheduled meeting, as shown in [example 6](#example-6-fetch-attendance-report-of-an-online-meeting).
 
-> [!IMPORTANT]
-> Meeting attendance report, live event attendee report, and live event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+Meeting attendance report, live event attendee report, and live event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## Permissions
 
