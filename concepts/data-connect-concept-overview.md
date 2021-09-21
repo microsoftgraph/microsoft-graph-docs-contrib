@@ -2,7 +2,7 @@
 title: "Overview of Microsoft Graph Data Connect"
 description: "Microsoft Graph Data Connect brings Microsoft 365 data to Microsoft Azure, which gives you access to the best development and hosting tools to work with this data."
 author: "fercobo-msft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "data-connect"
 ms.custom: scenarios:getting-started
 ---

@@ -2,7 +2,7 @@
 title: "Assign reviewers to your access review using the Microsoft Graph API"
 description: "Learn how to use the access reviews API in Microsoft Graph to assign access reviewers."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---
@@ -72,6 +72,17 @@ To assign only the group owners from a specific country as reviewers:
 ]
 ```
 Because `./manager` is a relative query, specify the **queryRoot** property with the value `decisions`.
+
+### Example 5: Application owners as reviewers
+
+```http
+"reviewers": [
+    {
+        "query": "/servicePrincipals/{id}/owners",
+        "queryType": "MicrosoftGraph"
+    }
+]
+```
 
 ## See also
 

@@ -3,7 +3,7 @@ author: swapnil1993
 ms.date: 08/30/2020
 title: "Create columnDefinition in a content type"
 description: "Add column to a content type."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -53,7 +53,7 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-
 Content-Type: application/json
 
 {
-	"sourceColumn@odata.bind": "https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103",
+   "sourceColumn@odata.bind":"https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
 }
 ```
 
@@ -84,7 +84,6 @@ Content-type: application/json
     "maxLength": 255
   }
 }
-
 ```
 
   

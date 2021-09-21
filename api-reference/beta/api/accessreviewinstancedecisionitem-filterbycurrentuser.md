@@ -2,7 +2,7 @@
 title: "accessReviewInstanceDecisionItem: filterByCurrentUser"
 description: "Retrieves all accessReviewInstanceDecisionItem objects on an accessReviewInstance for which the calling user is the reviewer."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

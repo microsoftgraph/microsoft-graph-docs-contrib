@@ -2,7 +2,7 @@
 title: "Get signIn"
 doc_type: apiPageType
 description: "Get a signIn object that contains all sign-ins for an Azure Active Directory tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 ---
@@ -21,9 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All |
+| Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All | 
+| Application | AuditLog.Read.All and Directory.Read.All | 
+
+> [!IMPORTANT]
+> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
 
 Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
 
@@ -44,7 +47,7 @@ GET /auditLogs/signIns/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
+This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

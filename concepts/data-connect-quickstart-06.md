@@ -1,3 +1,7 @@
+---
+ms.localizationpriority: medium
+---
+
 <!-- markdownlint-disable MD002 MD041 -->
 
 A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 Admin Center or programmatically via PowerShell.

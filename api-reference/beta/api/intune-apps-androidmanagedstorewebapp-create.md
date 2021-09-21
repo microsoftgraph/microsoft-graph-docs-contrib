@@ -2,7 +2,7 @@
 title: "Create androidManagedStoreWebApp"
 description: "Create a new androidManagedStoreWebApp object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -187,7 +187,6 @@ Content-Length: 1400
   "supportsOemConfig": true
 }
 ```
-
 
 
 

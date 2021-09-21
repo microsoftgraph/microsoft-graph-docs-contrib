@@ -2,7 +2,7 @@
 title: "Create call"
 description: "Create a new call."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You will need to [register the calling bot](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.
+Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You will need to [register the calling bot](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed.
 
 ## Permissions
 
@@ -23,9 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Delegated (work or school account)     | Not Supported                                                                           |
 | Delegated (personal Microsoft account) | Not Supported                                                                           |
-| Application                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
-> **Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed.
+> **Notes:** For a call with app-hosted media, you need the Calls.AccessMedia.All or the Calls.AccessMedia.Chat* permission in addition to one of the permissions listed.
+>
+> Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [call](..
 > **Note:** This call needs the Calls.Initiate.All permission.
 
 ##### Request
-The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
+The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 
 # [HTTP](#tab/http)
@@ -265,7 +267,7 @@ Content-Type: application/json
 > **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
 ##### Request
-The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
+The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted locally by the application. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 
 # [HTTP](#tab/http)
@@ -336,7 +338,7 @@ Content-Type: application/json
 
 `<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack. Specific information about audio, video, VBSS ssession information should be passed here.
 
-Sample audio media session blob is shown below
+The following is an example of an audio media session blob.
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
@@ -555,7 +557,7 @@ To join the scheduled meeting we will need to get the thread id, message id, org
 This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).
 
 The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
-> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
+> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission or the `Calls.JoinGroupCalls.Chat` [resource-specific permission](https://aka.ms/teams-rsc).
 
 ##### Request
 
@@ -903,7 +905,9 @@ Content-Type: application/json
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
 ### Example 6: Join scheduled meeting with app hosted media
-To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.
+To join the meeting with application hosted media, update the media config with the [appHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown in the following example.
+
+>**Note:** This example needs the `Calls.AccessMedia.All` permission or the `Calls.AccessMedia.Chat` [resource-specific permission](https://aka.ms/teams-rsc).
 
 <!-- {
   "blockType": "example",

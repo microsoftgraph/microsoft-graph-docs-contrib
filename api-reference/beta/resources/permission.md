@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: permission resource type
 description: permission resource representing a sharing permission granted for a driveItem
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

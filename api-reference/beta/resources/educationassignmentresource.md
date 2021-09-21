@@ -1,7 +1,7 @@
 ---
 title: "educationAssignmentResource resource type"
 description: "A wrapper object that stores the resources associated with an assignment. The wrapper adds the **distributeForStudentWork** property and indicates that this resource will"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: resourcePageType
@@ -28,7 +28,7 @@ will receive a copy of this resource in the resource list of their submission. E
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|Indicates whether this resource should be copied to each student submission for modification and submission.|
+|distributeForStudentWork|Boolean|Indicates whether this resource should be copied to each student submission for modification and submission. Required|
 |id|String| ID of this resource. Read-only.|
 |resource|[educationResource](educationresource.md)|Resource object that has been associated with this assignment.|
 

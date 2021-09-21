@@ -1,7 +1,7 @@
 ---
 title: "Add connected organization internal sponsor"
 description: "Add a user or group to the connected organization's internal sponsors."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: apiPageType

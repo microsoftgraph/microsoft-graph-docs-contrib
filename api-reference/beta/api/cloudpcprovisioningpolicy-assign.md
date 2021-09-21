@@ -1,8 +1,8 @@
 ---
 title: "cloudPcProvisioningPolicy: assign"
-description: "Assign the cloud PC provisioning policy to your group."
+description: "Assign the Cloud PC provisioning policy to your group."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Assign [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -51,7 +50,7 @@ In the request body, supply a JSON representation of the [cloudPcProvisioningPol
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection | The collection of cloud PC provisioning policy resources each to be assigned to the corresponding target group. Only Microsoft 365 groups and security groups in Azure AD are currently supported. |
+|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection | The collection of Cloud PC provisioning policy resources each to be assigned to the corresponding target group. Only Microsoft 365 groups and security groups in Azure AD are currently supported. |
 
 ## Response
 

@@ -3,7 +3,7 @@ title: "Update member in channel"
 description: "Update the role of member in a channel."
 author: "akjo"
 doc_type: "apiPageType"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|ChannelMember.ReadWrite.All. |
+|Delegated (work or school account)|ChannelMember.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported|
-|Application|ChannelMember.ReadWrite.All. |
+|Application|ChannelMember.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
