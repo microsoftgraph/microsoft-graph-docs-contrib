@@ -7,7 +7,7 @@ ms.prod: "compliance"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Graph privacy API
+# Use the Microsoft Graph Privacy API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
