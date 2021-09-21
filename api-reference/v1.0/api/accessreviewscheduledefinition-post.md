@@ -396,7 +396,6 @@ This is an example of creating an access review with the following settings:
 
 #### Request
 
-
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -468,7 +467,6 @@ Content-type: application/json
   }
 }
 ```
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
