@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph Privacy API"
 description: "The Microsoft Graph Privacy API provides a unified interface and schema to integrate with privacy solutions from Microsoft and ecosystem partners. This can help customers streamline their privacy operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards."
-localization_priority: Priority
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "compliance"
 doc_type: conceptualPageType
