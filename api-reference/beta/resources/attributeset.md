@@ -27,9 +27,9 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|maxAttributesPerSet|Int32|**TODO: Add Description**|
+|description|String|Description of the attribute set.|
+|id|String|Identifier for the attribute set that is unique within a tenant.|
+|maxAttributesPerSet|Int32|Maximum number of attributes that can be defined in this attribute set. Value is null by default. When an attribute set is created, if the value is not specified, the administrator can assign as many attributes to a attribute set in that case. The maximum number of attributes per attribute set is controlled by the maximum number of attributes that can be created on the tenant, which is 500 attributes.|
 
 ## Relationships
 None.

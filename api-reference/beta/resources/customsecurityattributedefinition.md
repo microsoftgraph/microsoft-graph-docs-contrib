@@ -29,15 +29,15 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attributeSet|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|isCollection|Boolean|**TODO: Add Description**|
-|isSearchable|Boolean|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|status|String|**TODO: Add Description**|
-|type|String|**TODO: Add Description**|
-|usePreDefinedValuesOnly|Boolean|**TODO: Add Description**|
+|attributeSet|String|Attribute set of the custom security attribute to be used for access control on the attributes.|
+|description|String|Description of the custom security attribute.|
+|id|String|Identifier for the custom security attribute that is unique within a tenant.|
+|isCollection|Boolean|Indicates whether the custom security attribute is a collection.|
+|isSearchable|Boolean|Indicates whether custom security attribute values will be indexed for searching on objects that have the attribute.|
+|name|String|Name that is unique within an attribute set.|
+|status|String|Specifies whether custom security attribute is currently active or has been deprecated. Acceptable values are `Available` and `Deprecated`.|
+|type|String|Data type of the attribute. Supported types are String, Integer, and Boolean.|
+|usePreDefinedValuesOnly|Boolean|Indicates whether the custom security attribute is restricted to an allowed list of values only. If set to false, free-form values are allowed.|
 
 ## Relationships
 |Relationship|Type|Description|

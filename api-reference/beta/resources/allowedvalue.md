@@ -28,7 +28,7 @@ Namespace: microsoft.graph
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|**TODO: Add Description**|
-|isActive|Boolean|Specifies whether the allowed value is active. If set to false, this value cannot be added to any other objects.|
+|isActive|Boolean|Indicates whether the allowed value is active. If set to false, this value cannot be added to any other objects.|
 
 ## Relationships
 None.
