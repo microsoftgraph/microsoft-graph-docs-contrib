@@ -1,6 +1,6 @@
 ---
 title: "allowedValue resource type"
-description: "**TODO: Add Description**"
+description: "A value that is allowed for a custom security attribute definition."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A value that is allowed for a custom security attribute definition.
 
 ## Methods
 |Method|Return type|Description|

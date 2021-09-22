@@ -1,6 +1,6 @@
 ---
 title: "customSecurityAttributeValue resource type"
-description: "**TODO: Add Description**"
+description: "Value for a custom security attribute."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Value for a custom security attribute.
 
 ## Properties
 |Property|Type|Description|

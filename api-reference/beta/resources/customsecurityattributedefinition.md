@@ -1,6 +1,6 @@
 ---
 title: "customSecurityAttributeDefinition resource type"
-description: "**TODO: Add Description**"
+description: "The schema of a custom security attribute (key-value pair)."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The schema of a custom security attribute (key-value pair). For example, the custom security attribute name, description, data type, and allowed values.
 
 ## Methods
 |Method|Return type|Description|
@@ -42,7 +42,7 @@ Namespace: microsoft.graph
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|allowedValues|[allowedValue](../resources/allowedvalue.md) collection|**TODO: Add Description**|
+|allowedValues|[allowedValue](../resources/allowedvalue.md) collection|Values that are allowed for this custom security attribute.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

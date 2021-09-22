@@ -1,6 +1,6 @@
 ---
 title: "attributeSet resource type"
-description: "**TODO: Add Description**"
+description: "A group of related custom security attributes."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A group of related custom security attributes.
 
 ## Methods
 |Method|Return type|Description|
