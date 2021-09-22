@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 The audit actor represented by the Azure AD user and application associated with the audit event.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Properties
 
 |Property|Type|Description|
