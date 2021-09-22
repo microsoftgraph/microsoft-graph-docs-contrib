@@ -22,6 +22,7 @@ Base type of [windowsDeploymentSettings](../resources/windowsupdates-windowsdepl
 |:---|:---|:---|
 |monitoring|[microsoft.graph.windowsUpdates.monitoringSettings](../resources/windowsupdates-monitoringsettings.md)|Settings governing conditions to monitor and automated actions to take.|
 |rollout|[microsoft.graph.windowsUpdates.rolloutSettings](../resources/windowsupdates-rolloutsettings.md)|Settings governing how the content is rolled out.|
+|safeguard|[microsoft.graph.windowsUpdates.safeguardSettings](../resources/windowsupdates-safeguardsettings.md)|Settings governing safeguard holds on offering content.|
 
 ## Relationships
 None.
@@ -41,6 +42,9 @@ The following is a JSON representation of the resource.
   },
   "monitoring": {
     "@odata.type": "microsoft.graph.windowsUpdates.monitoringSettings"
+  },
+  "safeguard": {
+    "@odata.type": "microsoft.graph.windowsUpdates.safeguardSettings"
   }
 }
 ```

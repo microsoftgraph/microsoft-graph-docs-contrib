@@ -28,6 +28,7 @@ Namespace: microsoft.graph.windowsUpdates
 |offeringByRequest|
 |pausedByRequest|
 |pausedByMonitoring|
+|faultedByContentOutdated|
 
 ### deploymentStateValue values 
 
@@ -74,6 +75,12 @@ Namespace: microsoft.graph.windowsUpdates
 |none|
 |paused|
 |archived|
+
+### safeguardCategory values 
+
+|Member|
+|:---|
+|likelyIssues|
 
 ### updateCategory values 
 
