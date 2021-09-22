@@ -48,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|The participant which is the target of the transfer.|
-|transferee|[participant](../resources/participant.md)|The participant which is the transferee of the transfer. It is only needed when transfer from a group call.|
+|transferee|[participantInfo](../resources/participantInfo.md)|The participant which is the transferee of the transfer. It is only needed when transfer from a group call.|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code.
