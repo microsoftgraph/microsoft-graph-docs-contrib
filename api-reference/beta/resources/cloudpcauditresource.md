@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents the audit resource. This shows the target edited resource entity, with multiple edited properties.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
