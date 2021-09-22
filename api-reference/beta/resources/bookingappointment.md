@@ -45,7 +45,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |invoiceId|String|The ID of the invoice.|
 |invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
-|joinWebUrl|String|Url of meeting.|
+|joinWebUrl|String|URL of the meeting. The online meeting of the appointment is hosted here.|
 |optOutOfCustomerEmail|Boolean|True indicates that the [bookingCustomer](bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
@@ -57,7 +57,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |serviceLocation|[location](location.md)|The location where the service is delivered.|
 |serviceName|String|The name of the **bookingService** associated with this appointment.<br>This property is optional when creating a new appointment. If not specified, it is computed from the service associated with the appointment by the **serviceId** property.|
 |serviceNotes|String|Notes from a [bookingStaffMember](bookingstaffmember.md). The value of this property is available only when reading this **bookingAppointment** by its ID.|
-|smsNotificationsEnabled|Boolean|True means sms will be sent to customer.|
+|smsNotificationsEnabled|Boolean|This field captures if SMS has to be sent to the customer. True means SMS will be sent to the customer.|
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](bookingstaffmember.md) who is scheduled in this appointment.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 

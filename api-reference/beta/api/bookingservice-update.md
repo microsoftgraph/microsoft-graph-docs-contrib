@@ -61,7 +61,7 @@ In the request body, supply the values for relevant fields that should be update
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
 |staffMemberIds|String collection|Represents those [staff members](../resources/bookingstaffmember.md) who provide this service. |
-|smsNotificationsEnabled|Boolean|True means customer will get SMS notifications for appointments booked for this service.|
+|smsNotificationsEnabled|Boolean|This indicates if SMS notifications can be sent for the service. The customer will not receive SMS, if the flag of same name is false at appointment level.|
 
 ## Response
 If successful, this method returns a `204 No content` response code. It does not return anything in the response body.

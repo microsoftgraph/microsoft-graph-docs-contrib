@@ -43,8 +43,8 @@ Represents information about a particular service provided by a [bookingBusiness
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
 |staffMemberIds|String collection|Represents those [staff members](bookingstaffmember.md) who provide this service. |
-|smsNotificationsEnabled|Boolean|True means customer will get SMS notifications for appointments booked for this service.|
-|webUrl|String|The URL of the booking service.|
+|smsNotificationsEnabled|Boolean|This indicates if SMS notifications can be sent for the service. The customer will not receive SMS, if the flag of same name is false at appointment level.|
+|webUrl|String|This URL allows one to access service as a separate entity. The main URL of the business resource takes one to Bookings page where all services are listed.|
 
 ## Relationships
 None
