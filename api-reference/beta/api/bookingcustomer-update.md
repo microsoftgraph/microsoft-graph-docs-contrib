@@ -40,7 +40,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
-|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Home, Business and Other addresses of the customer.|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Home, Business and Other addresses of the customer. Please note that when an address is added or updated by the customer in the Bookings page, the "other address" is updated. The same is visible in the customer section in the webapp.|
 |phones|[phone](../resources/phone.md) collection|Home, Business and Mobile phone numbers of the customer.|
 
 ## Response
