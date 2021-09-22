@@ -47,6 +47,8 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |submittedDateTime|DateTimeOffset|Moment in time when the submission was moved into the submitted state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |unsubmittedBy|[identitySet](identityset.md)|User who moved the resource from submitted into the working state.|
 |unsubmittedDateTime|DateTimeOffset|Moment in time when the submission was moved from submitted into the working state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|reassignedBy|[identitySet](identityset.md)|User who moved the status of this submission to reassigned.|
+|reassignedDateTime|DateTimeOffset|Moment in time when the submission was reassigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -79,7 +81,9 @@ The following is a JSON representation of the resource.
     "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
     "submittedDateTime":"String (timestamp)",
     "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "unsubmittedDateTime":"String (timestamp)"
+    "unsubmittedDateTime":"String (timestamp)",
+    "reassignedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "reassignedDateTime":"String (timestamp)"
 }
 ```
 
