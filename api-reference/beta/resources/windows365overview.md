@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Note: The Microsoft Graph API for Windows 365 requires an active [Windows 365 license](https://www.microsoft.com/en-us/windows-365) for the tenant.
 
 The Microsoft Graph API for Windows 365 enables programmatic access to Windows 365 Cloud PCs information and management actions on your tenant; the API performs the same operations as those available through Microsoft Endpoint Manager. 
