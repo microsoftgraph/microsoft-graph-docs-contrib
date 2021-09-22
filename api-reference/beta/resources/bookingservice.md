@@ -38,12 +38,13 @@ Represents information about a particular service provided by a [bookingBusiness
 |emailAddress|String|An email address|
 |id|String|The ID of that service, in a GUID format. Read-only.|
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
+|isLocationOnline|Boolean|This indicates if the appointment will be held online.|
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
-|staffMemberIds|String collection|Represents those [staff members](bookingstaffmember.md) who provide this service. |
 |smsNotificationsEnabled|Boolean|This indicates if SMS notifications can be sent for the service. The customer will not receive SMS, if the flag of same name is false at appointment level.|
+|staffMemberIds|String collection|Represents those [staff members](bookingstaffmember.md) who provide this service. |
 |webUrl|String|This URL allows one to access service as a separate entity. The main URL of the business resource takes one to Bookings page where all services are listed.|
 
 ## Relationships
@@ -74,12 +75,13 @@ The following is a JSON representation of the resource.
   "emailAddress": "String",
   "id": "String (identifier)",
   "isHiddenFromCustomers": true,
+  "isLocationOnline": "Boolean",
   "notes": "String",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
-  "staffMemberIds": ["String"],
   "smsNotificationsEnabled": "Boolean",
+  "staffMemberIds": ["String"],
   "webUrl": "String"
 }
 

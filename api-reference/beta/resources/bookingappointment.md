@@ -45,6 +45,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |invoiceId|String|The ID of the invoice.|
 |invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
+|isLocationOnline|Boolean|This indicates if the appointment will be held online.|
 |joinWebUrl|String|URL of the meeting. The online meeting of the appointment is hosted here.|
 |optOutOfCustomerEmail|Boolean|True indicates that the [bookingCustomer](bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
@@ -79,8 +80,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "joinWebUrl": "String",
-  "smsNotificationsEnabled": "Boolean",
   "customerEmailAddress": "String",
   "customerId": "String",
   "customerLocation": {"@odata.type": "microsoft.graph.location"},
@@ -96,6 +95,8 @@ The following is a JSON representation of the resource.
   "invoiceId": "String",
   "invoiceStatus": "string",
   "invoiceUrl": "String",
+  "isLocationOnline": "Boolean",
+  "joinWebUrl": "String",
   "optOutOfCustomerEmail": true,
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
@@ -107,6 +108,7 @@ The following is a JSON representation of the resource.
   "serviceLocation": {"@odata.type": "microsoft.graph.location"},
   "serviceName": "String",
   "serviceNotes": "String",
+  "smsNotificationsEnabled": "Boolean",
   "staffMemberIds": ["String"],
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"}
 }
