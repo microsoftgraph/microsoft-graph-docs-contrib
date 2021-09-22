@@ -17,7 +17,7 @@ Reassign the [submission](../resources/educationsubmission.md) to the student wi
 
 Only teachers can perform this action. 
 
-Reassigned is a new submission status added, so it will be treated as an unknown enum member. If the header Prefer: include-unknown-enum-members is not provided, a reassigned submission will be mapped as a returned submission. This means, `reassigned` status will be mapped to `returned` status, and `reassignedDateTime` and `reassignedBy` properties will be mapped to `returnedDateTime` and `returnedBy`.
+Reassigned is a new submission status added, so it will be treated as an unknown enum member. If the header Prefer: include-unknown-enum-members is not provided, a reassigned submission will be mapped as a returned submission. This means, `reassigned` status will be mapped to `returned` status, and `reassignedDateTime` and `reassignedBy` properties will be mapped to `returnedDateTime` and `returnedBy` respectively.
 
 If the header `Prefer: include-unknown-enum-members` is provided, reassigned submission remains in `reassigned` status. You can refer response examples for further details.
 
@@ -49,7 +49,7 @@ If successful, this method returns `200 Ok` response code and an [educationSubmi
 
 ## Examples
 ### Example 1: Without request header
-The following example shows how to call this API.
+The following example shows how to call this API action.
 
 #### Request
 The following is an example of the request.
@@ -123,7 +123,7 @@ HTTP/1.1 200 Ok
 ```
 
 ### Example 2: With request header
-The following example shows how to call this API.
+The following example shows how to call this API action.
 
 #### Request
 The following is an example of the request.
