@@ -28,7 +28,7 @@ The following diagram shows the state transitions that can occur for assignments
 ![Assignment states transitions diagram](images/states-transitions/diagram-assignments.PNG)
 
 ### How to verify that an assignment is published
-The caller must use the [GET assignment](../api-reference/beta/api/educationassignment-get.md) operation to check the current assignment status and verify that the publishing process succeeded.
+The caller must use the [GET assignment](/graph/api/educationassignment-get.md) operation to check the current assignment status and verify that the publishing process succeeded.
 
 ### Assignments states transitions based on the allowed actions
 | Current assignment state | Action | New state |

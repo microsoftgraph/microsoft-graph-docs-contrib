@@ -123,7 +123,7 @@ HTTP/1.1 200 Ok
 ```
 
 ### Example 2: With request header
-The following example shows how to call this API action.
+The following example shows how to call this method.
 
 #### Request
 The following is an example of the request.
