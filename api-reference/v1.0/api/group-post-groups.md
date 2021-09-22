@@ -57,9 +57,11 @@ The following table shows the properties that are required when you create the [
 | securityEnabled | Boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required.  **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.|
 
 > [!IMPORTANT]
-> Creating a group using the **Group.Create** application permission without specifying owners will create the group anonymously and the group will not be modifiable. Add owners to the group while creating it to specify owners who can modify the group.
+> + Creating a group using the **Group.Create** application permission without specifying owners will create the group anonymously and the group will not be modifiable. Add owners to the group while creating it to specify owners who can modify the group.
 >
->Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
+>+ Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
+>
+>+ To following properties can't be set in the initial POST request and must be set in a subsequent PATCH request: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 
 
 ### groupTypes options
