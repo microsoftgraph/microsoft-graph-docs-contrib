@@ -34,6 +34,7 @@ To configure the scope by using the **accessReviewQueryScope** type, set the val
     "queryType": "MicrosoftGraph"
 }
 ```
+
 To review *only inactive users* assigned to the group:
 
 ```http
@@ -43,7 +44,7 @@ To review *only inactive users* assigned to the group:
     "query": "/groups/{group id}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
-````
+```
 
 ### Example 2: Review guest users assigned to a group
 
@@ -68,6 +69,7 @@ To review *only inactive users* assigned to the group:
     "queryType": "MicrosoftGraph"
 }
 ```
+
 Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review.
     
 ### Example 4: Review of all guest users assigned to all Teams
@@ -82,6 +84,7 @@ Because this review is applied on all Microsoft 365 groups, configure the **inst
     "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
     "queryType": "MicrosoftGraph"
 }
+```
     
 Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.
 
