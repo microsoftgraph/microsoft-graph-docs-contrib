@@ -10708,8 +10708,6 @@ items:
               href: api/allowedvalue-get.md
             - name: Update
               href: api/allowedvalue-update.md
-            - name: Delete
-              href: api/allowedvalue-delete.md
           - name: attributeSet
             href: resources/attributeset.md
             items:
@@ -10721,8 +10719,6 @@ items:
               href: api/attributeset-get.md
             - name: Update
               href: api/attributeset-update.md
-            - name: Delete
-              href: api/attributeset-delete.md
           - name: customSecurityAttributeDefinition
             href: resources/customsecurityattributedefinition.md
             items:
@@ -10734,8 +10730,6 @@ items:
               href: api/customsecurityattributedefinition-get.md
             - name: Update
               href: api/customsecurityattributedefinition-update.md
-            - name: Delete
-              href: api/customsecurityattributedefinition-delete.md
           - name: customSecurityAttributeValue
             href: resources/customsecurityattributevalue.md
         - name: Deleted items

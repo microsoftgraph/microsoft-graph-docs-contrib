@@ -22,7 +22,6 @@ A group of related custom security attributes.
 |[Create attributeSet](../api/directory-post-attributesets.md)|[attributeSet](../resources/attributeset.md)|Create a new [attributeSet](../resources/attributeset.md) object.|
 |[Get attributeSet](../api/attributeset-get.md)|[attributeSet](../resources/attributeset.md)|Read the properties and relationships of an [attributeSet](../resources/attributeset.md) object.|
 |[Update attributeSet](../api/attributeset-update.md)|[attributeSet](../resources/attributeset.md)|Update the properties of an [attributeSet](../resources/attributeset.md) object.|
-|[Delete attributeSet](../api/attributeset-delete.md)|None|Deletes an [attributeSet](../resources/attributeset.md) object.|
 
 ## Properties
 |Property|Type|Description|
