@@ -1,17 +1,17 @@
 ---
 author: tushar20
 ms.date: 09/04/2021
-title: SharePointIdentity
+title: sharePointIdentity
 ms.localizationpriority: medium
-description: "The SharePointIdentity resource represents a SharePoint Identity of an actor."
+description: "The sharePointIdentity resource represents a SharePoint Identity of an actor."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
-# SharePointIdentity resource type
+# sharePointIdentity resource type
 
-The **SharePointIdentity** resource represents the SharePointIdentity of an _actor_.
-It extends from the **Identity** resource to provide capability to expose SharePoint specific information, for example loginName or SharePoint ids.
+The **sharePointIdentity** resource represents the SharePointIdentity of an _actor_.
+It extends from the **identity** resource to provide capability to expose SharePoint specific information, for example loginName or SharePoint ids.
 
 ## JSON representation
 
@@ -33,12 +33,12 @@ It extends from the **Identity** resource to provide capability to expose ShareP
 
 ## Properties
 
-| Property         | Type                        | Description
-|:------------     |:----------------------------|:---------------------------------
-| loginName        | String                      | LoginName of the SharePoint Identity
-| displayName      | String                      | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).
-| id               | String                      | Unique identifier for the identity. Can be either AAD Id or SharePoint Id
-| thumbnails       | [ThumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
+| Property         | Type                        | Description                                                                |
+|:------------     |:----------------------------|:---------------------------------------------------------------------------|
+| id               | String                      | Unique identifier for the identity. Can be either AAD Id or SharePoint Id  |
+| displayName      | String                      | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).  |
+| loginName        | String                      | LoginName of the SharePoint Identity                                       |
+| thumbnails       | [ThumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.  |
 
 [ThumbnailSet]: thumbnailset.md
 [getting thumbnails]: ../api/driveitem-list-thumbnails.md
