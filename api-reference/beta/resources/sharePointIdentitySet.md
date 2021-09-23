@@ -2,13 +2,14 @@
 author: tushar20
 ms.date: 09/09/2021
 title: sharePointIdentitySet
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 ms.localizationpriority: medium
 description: "The sharePointIdentitySet resource is a keyed collection of sharePointIdentity and identity resources."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 # sharePointIdentitySet resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **sharePointIdentitySet** resource is a keyed collection of [sharePointIdentity](sharePointIdentity.md) resources. It extends from the **identitySet** resource to provide capability to expose SharePoint specific information to the user.
 
