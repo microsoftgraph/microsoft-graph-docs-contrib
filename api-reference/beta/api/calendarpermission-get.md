@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get the specified permissions object of a user or group calendar that has been shared.
 
 ## Permissions

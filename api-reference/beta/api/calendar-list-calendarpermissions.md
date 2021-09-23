@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Gets a collection of [calendarPermission](../resources/calendarpermission.md) objects that describe the identity and roles of users with whom the specified calendar has been shared or delegated. Here, the calendar can be a user calendar or group calendar.
 
 ## Permissions

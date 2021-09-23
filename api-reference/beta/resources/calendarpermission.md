@@ -11,6 +11,8 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 The permissions of a user with whom the calendar has been shared or delegated in an Outlook client.
 
 List, create, get, update, and delete of calendar permissions is supported on behalf of only the calendar owner.
