@@ -13,9 +13,6 @@ For deployments initiated by the deployment service, you can use a monitoring ru
 
 Monitoring rules are compatible with deployments of Windows 10 feature updates.
 
-> [!NOTE]
-> If you do not specify a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) when creating a [deployment](/graph/api/resources/windowsupdates-deployment), a default monitoring rule is created. This default monitoring rule has a **signal** of `rollback​`, a **threshold** of `20​`, and an **action** of `alertError​`. In a future update of the API, this behavior will change and a default monitoring rule will not be created.
-
 ## Step 1: Create a monitoring rule
 
 You can create a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) for a deployment by configuring the [monitoring settings](/graph/api/resources/windowsupdates-monitoringsettings). Each [deployment](/graph/api/resources/windowsupdates-deployments) can have one active monitoring rule at a time.
