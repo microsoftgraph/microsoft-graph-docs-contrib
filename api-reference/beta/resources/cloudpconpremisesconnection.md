@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Methods
 
 |Method|Return type|Description|

@@ -261,10 +261,14 @@ items:
         items:
           - name: Overview
             href: azuread-identity-access-management-concept-overview.md
-          - name: Authentication methods
-            href: authenticationmethods-get-started.md
+          - name: Directory management
+            items:
+              - name: Use PIM to assign privileged roles
+                href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
+              - name: Authentication methods
+                href: authenticationmethods-get-started.md
               - name: Identify and remediate risk
                 href: tutorial-riskdetection-api.md
           - name: Governance
@@ -395,9 +399,9 @@ items:
             href: search-concept-custom-types.md
           - name: Search persons (preview)
             href: search-concept-person.md
-          - name: Sort search results (preview)
+          - name: Sort search results
             href: search-concept-sort.md
-          - name: Refine search results (preview)
+          - name: Refine search results
             href: search-concept-aggregation.md
           - name: Request spelling correction (preview)
             href: search-concept-speller.md
@@ -443,7 +447,6 @@ items:
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Activity feed notifications
-            href: teams-send-activityfeednotifications.md
             items:
               - name: Send activity feed notifications
                 href: teams-send-activityfeednotifications.md
@@ -541,7 +544,7 @@ items:
                     href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
-                  - name: Team membership
+                  - name: Team and channel membership
                     href: teams-changenotifications-teamMembership.md
                   - name: Chat and channel messages
                     href: teams-changenotifications-chatmessage.md                  

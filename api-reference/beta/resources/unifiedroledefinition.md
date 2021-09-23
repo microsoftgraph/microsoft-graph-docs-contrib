@@ -24,8 +24,6 @@ The following RBAC providers are currently supported:
 > [!NOTE]
 > The Cloud PC and entitlement management RBAC providers currently support only the [list](../api/rbacapplication-list-roledefinitions.md) and [get](../api/unifiedroledefinition-get.md) operations.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Methods
 
 | Method       | Return Type | Description |
