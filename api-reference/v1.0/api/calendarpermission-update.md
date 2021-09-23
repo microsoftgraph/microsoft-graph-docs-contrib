@@ -46,7 +46,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -60,78 +61,6 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `200 OK` response code and an updated [calendarPermission](../resources/calendarpermission.md) object in the response body.
 
-## JSON representation
-
-Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-   "keyProperty": "id",
-  "optionalProperties": [
-    "attachments",
-    "calendar",
-    "extensions",
-    "instances",
-    "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
-  ],
-  "@odata.type": "microsoft.graph.event"
-}-->
-
-```json
-{
-  "allowNewTimeProposals": "Boolean",
-  "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
-  "body": {"@odata.type": "microsoft.graph.itemBody"},
-  "bodyPreview": "string",
-  "cancelledOccurrences":["string"],
-  "categories": ["string"],
-  "changeKey": "string",
-  "createdDateTime": "String (timestamp)",
-  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "exceptionOccurrences":["string"],
-  "hasAttachments": true,
-  "hideAttendees": false,
-  "uid": "string",
-  "id": "string (identifier)",
-  "importance": "String",
-  "isAllDay": true,
-  "isCancelled": true,
-  "isDraft": false,
-  "isOnlineMeeting": true,
-  "isOrganizer": true,
-  "isReminderOn": true,  
-  "lastModifiedDateTime": "String (timestamp)",
-  "location": {"@odata.type": "microsoft.graph.location"},
-  "locations": [{"@odata.type": "microsoft.graph.location"}],
-  "occurrenceId":"string",
-  "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
-  "onlineMeetingProvider": "string",
-  "onlineMeetingUrl": "string",
-  "organizer": {"@odata.type": "microsoft.graph.recipient"},
-  "originalEndTimeZone": "string",
-  "originalStart": "String (timestamp)",
-  "originalStartTimeZone": "string",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
-  "reminderMinutesBeforeStart": 1024,
-  "responseRequested": true,
-  "responseStatus": {"@odata.type": "microsoft.graph.responseStatus"},
-  "sensitivity": "String",
-  "seriesMasterId": "string",
-  "showAs": "String",
-  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "subject": "string",
-  "type": "String",
-  "webLink": "string",
-
-  "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
-  "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
-}
-```
 ## Examples
 
 ### Request
@@ -188,7 +117,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",

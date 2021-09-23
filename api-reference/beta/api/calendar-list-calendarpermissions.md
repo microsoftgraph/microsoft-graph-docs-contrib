@@ -1,6 +1,6 @@
 ---
 title: "List calendarPermissions"
-description: "Get the properties and relationships of calendarpermission object."
+description: "Get a collection of calendarPermission resources that describe the identity and roles of users with whom the specified calendar has been shared or delegated. "
 ms.localizationpriority: medium
 author: "harini84"
 ms.prod: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets a collection of [calendarPermission](../resources/calendarpermission.md) objects that describe the identity and roles of users with whom the specified calendar has been shared or delegated. Here, the calendar can be a user calendar or group calendar.
+Get a collection of [calendarPermission](../resources/calendarpermission.md) resources that describe the identity and roles of users with whom the specified calendar has been shared or delegated. Here, the calendar can be a user calendar or group calendar.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required.  |
 
 ## Request body
 
@@ -60,7 +60,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of <b>calendarPermission</b> objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of **calendarPermission** objects in the response body.
 
 ## Examples
 

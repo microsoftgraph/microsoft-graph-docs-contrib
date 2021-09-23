@@ -48,7 +48,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -118,7 +119,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",

@@ -1,5 +1,5 @@
 ---
-title: "Create calendarPermissions"
+title: "Create calendarPermission"
 description: "Create the calendarpermission object."
 ms.localizationpriority: medium
 author: "harini84"
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
-# Create calendarPermissions
+# Create calendarPermission
 
 Namespace: microsoft.graph
 
@@ -55,7 +55,8 @@ POST /users/{id}/events/{id}/calendar/calendarPermissions
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -71,7 +72,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- { 
   "blockType": "request",
   "sampleKeys": ["458d4c95-124e-49da-ba9d-1dd0387e682e"],
@@ -82,14 +82,10 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/users/458d4c95-124e-49da-ba9d-1dd0387e682e/calendar/calendarPermissions
 
 {
-    "allowedRoles": [
-        "read"
-    ],
     "emailAddress": {
         "name": "Samantha Booth",
         "address": "samanthab@adatum.onmicrosoft.com"
     },
-    "id": "AAMkADBmYTFkMzUyLTgxODQtNDA0YS05YzdlLWRkYjJlY2U4NTljZgBGAAAAAACdCqnIfBTiS7nPzH--j6RvBwDvenXPVP3FQpzwdU3ADBy_AAAAAAEGAADvenXPVP3FQpzwdU3ADBy_AAAB7bC1AAA=",
     "isInsideOrganization": true,
     "isRemovable": true,
     "role": "read"
@@ -115,7 +111,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/calendarPermissions/$entity",
     "id": "RXhjaGFuZ2VQdWJsaXNoZWRVc2VyLnNhbWFudGhhYkBhZGF0dW0ub25taWNyb3NvZnQuY29t",
     "isRemovable": true,
-    "isInsideOrganization": false,
+    "isInsideOrganization": true,
     "role": "read",
     "allowedRoles": [
         "freeBusyRead",

@@ -49,7 +49,7 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
