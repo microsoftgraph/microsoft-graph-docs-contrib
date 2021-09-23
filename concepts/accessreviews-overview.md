@@ -4,6 +4,7 @@ description: "The access reviews API allows you to programmatically review acces
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
+doc_type: conceptualPageType
 ---
 
 # Overview of the access reviews API
