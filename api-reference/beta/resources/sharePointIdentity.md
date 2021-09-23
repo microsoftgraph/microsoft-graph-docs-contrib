@@ -2,7 +2,6 @@
 author: tushar20
 ms.date: 09/09/2021
 title: sharePointIdentity
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 ms.localizationpriority: medium
 description: "The SharePointIdentity resource represents a SharePoint Identity of an actor."
 ms.prod: ""
@@ -10,6 +9,8 @@ doc_type: resourcePageType
 ---
 
 # sharePointIdentity resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **sharePointIdentity** resource represents the SharePointIdentity of an _actor_.
 It extends from the **identity** resource to provide capability to expose SharePoint specific information, for example loginName or SharePoint ids.
