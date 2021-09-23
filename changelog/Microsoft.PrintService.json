@@ -19017,7 +19017,7 @@
     {
       "ChangeList": [
         {
-          "Id": "2531d4d1-1572-4ce3-0654-61cf63abow90",
+          "Id": "fc2bd70f-b365-4e57-a42b-ce6f48aead65",
           "ApiChange": "Enum type",
           "ChangedApiName": "printerStatus",
           "ChangeType": "Addition",
@@ -19025,10 +19025,10 @@
           "Target": "printerStatus"
         }
       ],
-      "Id": "2531d4d1-1572-4ce3-0654-61cf63abow90",
+      "Id": "fc2bd70f-b365-4e57-a42b-ce6f48aead65",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-06-17T00:00:00",
+      "CreatedDateTime": "2021-09-23T00:00:00",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
@@ -19046,7 +19046,7 @@
       "Id": "76c0dd3f-efec-4351-9c93-521bbcfcc522",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-06-17T00:00:00",
+      "CreatedDateTime": "2021-09-23T00:00:00",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
