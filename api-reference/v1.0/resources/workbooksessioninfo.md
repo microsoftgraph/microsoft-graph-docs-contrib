@@ -2,7 +2,7 @@
 title: "workbookSessionInfo resource type"
 description: "Provides information about workbook session."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Update teamsApp"
 description: "Update an app previously published to a Teams app catalog. "
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

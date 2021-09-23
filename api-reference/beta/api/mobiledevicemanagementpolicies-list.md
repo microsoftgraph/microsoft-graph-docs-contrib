@@ -2,7 +2,7 @@
 title: "List mobileDeviceManagementPolicies"
 description: "Get a list of the mobile device management objects and their properties."
 author: "ravennMSFT"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

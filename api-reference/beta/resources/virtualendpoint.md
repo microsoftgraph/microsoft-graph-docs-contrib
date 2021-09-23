@@ -2,7 +2,7 @@
 title: "virtualEndpoint resource type"
 description: "The virtualEndpoint resource represents a container for Cloud PC management functionality."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -17,7 +17,6 @@ Represents a container for APIs to manage Cloud PC.
 
 Use the Cloud PC API to provision and manage virtual desktops for employees in an organization. Use it in conjunction with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Methods
 
 |Method|Return type|Description|

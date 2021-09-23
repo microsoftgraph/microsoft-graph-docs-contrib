@@ -1,7 +1,7 @@
 ---
 title: "metadataEntry resource type"
 description: "Metadata for the given object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

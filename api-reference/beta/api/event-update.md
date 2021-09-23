@@ -2,7 +2,7 @@
 title: "Update event"
 description: "Update the properties of the event object."
 author: "harini84"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -15,7 +15,20 @@ Namespace: microsoft.graph
 
 Update the properties of the [event](../resources/event.md) object.
 
-When updating the time zone of the start or end time of an event, first [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
+### Notes for updating specific properties
+Note the following behaviors or recommendations when updating the corresponding properties:
+
+- **attendees** property and meeting updates
+  - An event update that includes only the **attendees** property in the request body sends a meeting update to only the attendees that have changed.
+  - An event update that removes an attendee specified as a member of a distribution list sends a meeting update to all the attendees.
+
+- **body** property and online meetings
+
+  Before updating the body of an event that has been set up as an online meeting, be sure to first get the **body** property, apply the appropriate changes to the content, and preserve the meeting blob for online meeting. Inadvertently removing the meeting blob from the body would disable meeting online. 
+
+- **end** and **start** properties and their time zones
+  
+  When updating the time zone of the start or end time of an event, first [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,10 +66,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	     | Type	   | Description |
 |:---------------|:--------|:------------|
-| attendees|Attendee|The collection of attendees for the event.|
-| body|ItemBody|The body of the message associated with the event.|
+| attendees|Attendee|The collection of attendees for the event. See additional [notes for updating specific properties](#notes-for-updating-specific-properties).|
+| body|ItemBody|The body of the message associated with the event. See additional [notes for updating specific properties](#notes-for-updating-specific-properties).|
 | categories|String collection|The categories associated with the event.|
-| end|DateTimeTimeZone|The date, time, and time zone that the event ends. |
+| end|DateTimeTimeZone|The date, time, and time zone that the event ends. See additional [notes for updating specific properties](#notes-for-updating-specific-properties). |
 |hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
 | importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
@@ -70,7 +83,7 @@ In the request body, supply the values for relevant fields that should be update
 | responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 | sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|The status to show. Possible values are: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-| start|DateTimeTimeZone|The start date, time, and time zone of the event. |
+| start|DateTimeTimeZone|The start date, time, and time zone of the event. See additional [notes for updating specific properties](#notes-for-updating-specific-properties). |
 | subject|String|The text of the event's subject line.|
 
 Because the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to
@@ -189,5 +202,3 @@ Content-length: 285
   ]
 }
 -->
-
-

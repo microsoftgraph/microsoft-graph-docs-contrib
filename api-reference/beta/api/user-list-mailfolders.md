@@ -1,7 +1,7 @@
 ---
 title: "List mailFolders"
 description: "Get all the mail folders in the signed-in user's mailbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "abheek-das"
 ms.prod: "outlook"

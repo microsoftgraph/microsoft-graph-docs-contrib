@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "Create contentType"
 description: "Create a Content type for a site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

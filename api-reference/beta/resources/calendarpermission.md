@@ -1,8 +1,8 @@
 ---
 title: "calendarPermission resource type"
 description: "The permissions of a user with whom the calendar is shared."
-localization_priority: Normal
 author: "Harini84"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: "resourcePageType"
 ---

@@ -2,7 +2,7 @@
 title: "qualityUpdateCatalogEntry resource type"
 description: "Metadata for a Windows 10 quality update that you can be approve for deployment."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

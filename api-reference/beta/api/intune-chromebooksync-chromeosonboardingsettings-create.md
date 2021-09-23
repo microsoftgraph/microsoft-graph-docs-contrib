@@ -2,7 +2,7 @@
 title: "Create chromeOSOnboardingSettings"
 description: "Create a new chromeOSOnboardingSettings object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -92,7 +92,6 @@ Content-Length: 351
   "lastDirectorySyncDateTime": "2016-12-31T23:57:56.1183185-08:00"
 }
 ```
-
 
 
 

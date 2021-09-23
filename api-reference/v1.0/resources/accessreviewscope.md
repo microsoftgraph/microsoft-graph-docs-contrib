@@ -2,7 +2,7 @@
 title: "accessReviewScope resource type"
 description: "Represents the entities that need to be reviewed in an access review."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

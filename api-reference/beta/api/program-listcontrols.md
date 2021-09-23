@@ -1,7 +1,7 @@
 ---
 title: "List programControls of a program"
 description: "In the Azure AD access reviews feature, list all the programControl objects, linked to a particular program."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "markwahl-msft"

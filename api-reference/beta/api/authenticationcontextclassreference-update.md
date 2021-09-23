@@ -1,7 +1,7 @@
 ---
 title: "Update authenticationContextClassReference"
 description: "Update the properties of a authenticationContextClassReference object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "calebb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
