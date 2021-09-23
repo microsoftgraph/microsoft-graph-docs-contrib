@@ -2,7 +2,7 @@
 title: "Major services and features in Microsoft Graph"
 description: "Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365, using REST APIs and client libraries. Additionally, it offers security and social intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. "
 author: "angelgolfer-ms"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
 
@@ -76,7 +76,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Analytics (preview) | MyAnalytics | Uses advanced analytics and machine-learning techniques to provide insights into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.  | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
 
 
-## Device management
+## Device and app management
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
@@ -84,6 +84,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |Corp management of devices and apps | Intune | Enrolls and configures devices, and manages mobile applications in your organization. | [Intune devices and apps overview](intune-concept-overview.md) |
 | Device updates (preview) | Windows Update for Business deployment service | Provides control over the approval, scheduling, monitoring, and safeguarding of content delivered from Windows Update. | [Windows updates in Microsoft Graph](windowsupdates-concept-overview.md) |
 | Multi-tenant management (preview) | Microsoft 365 Lighthouse | Lets Managed Service Providers (MSPs) remotely manage multiple customer tenants for compliance and threat detection, and help get tenant devices in a healthy and secure state. | [Multi-tenant management using Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
+| Service health and communications | Microsoft 365 and Dynamics 365 services | Provides access to the health status and message center posts about Microsoft cloud services. A notable example that uses the service communications API is the Microsoft 365 admin center. | [Accessing service health and communications in Microsoft Graph](service-communications-concept-overview.md) |
 
 
 ## Security

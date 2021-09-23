@@ -2,7 +2,7 @@
 title: "Update educationSchool properties"
 description: "Update the properties of a school object."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

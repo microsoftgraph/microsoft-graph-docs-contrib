@@ -2,7 +2,7 @@
 title: "userAppInstallStatus resource type"
 description: "Contains properties for the installation status for a user."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -61,7 +61,6 @@ Here is a JSON representation of the resource.
   "notInstalledDeviceCount": 1024
 }
 ```
-
 
 
 

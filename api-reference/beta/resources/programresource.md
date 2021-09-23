@@ -1,7 +1,7 @@
 ---
 title: "programResource resource type"
 description: "Represents a reference to an object which is the target of the access review."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: resourcePageType

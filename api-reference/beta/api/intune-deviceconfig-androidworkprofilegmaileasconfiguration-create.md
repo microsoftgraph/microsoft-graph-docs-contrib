@@ -2,7 +2,7 @@
 title: "Create androidWorkProfileGmailEasConfiguration"
 description: "Create a new androidWorkProfileGmailEasConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -168,7 +168,6 @@ Content-Length: 1440
   "usernameSource": "userPrincipalName"
 }
 ```
-
 
 
 

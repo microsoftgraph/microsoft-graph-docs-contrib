@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---
@@ -14,4 +14,7 @@ ms.topic: include
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-deviceAndAppManagementRoleAssignment, deviceAndAppManagementRoleDefinition, resourceOperation, roleAssignment, roleDefinition, roleScopeTag, roleScopeTagAutoAssignment.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [deviceAndAppManagementRoleAssignment](/graph/api/resources/deviceandappmanagementroleassignment) <li> [deviceAndAppManagementRoleDefinition](/graph/api/resources/deviceandappmanagementroledefinition) <li> [resourceOperation](/graph/api/resources/resourceoperation) <li> [roleAssignment](/graph/api/resources/roleassignment) <li> [roleDefinition](/graph/api/resources/roledefinition) <li> [roleScopeTag](/graph/api/resources/rolescopetag) <li> [roleScopeTagAutoAssignment](/graph/api/resources/rolescopetagautoassignment) </ul> |

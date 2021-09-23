@@ -2,7 +2,7 @@
 title: "Branding guidelines for OneNote API developers "
 description: " "
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 ---
 

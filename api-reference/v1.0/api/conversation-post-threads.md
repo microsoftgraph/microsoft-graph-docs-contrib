@@ -2,7 +2,7 @@
 title: "Create thread"
 description: "Create a new thread in the specified conversation. "
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -38,15 +38,15 @@ POST /groups/{id}/conversations/{id}/threads
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
+In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
+If successful, this method returns `201 Created` response code and [conversationThread](../resources/conversationthread.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -58,13 +58,15 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 Content-type: application/json
 
 {
-  "topic": "topic-value",
-  "posts": [{
-      "body": {
-        "contentType": "html",
-        "content": "this is body content"
-      }
-  }]
+    "topic": "Take your wellness days and rest",
+    "posts": [
+        {
+            "body": {
+                "contentType": "html",
+                "content": "Waiting for the summer holidays."
+            }
+        }
+    ]
 }
 ```
 # [C#](#tab/csharp)
@@ -86,10 +88,10 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
-##### Response
+### Response
 
 If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body.
-Here is an example of the response. 
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,10 +100,10 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 346
 
 {
-  "id": "thread-id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY%3D')/threads/$entity",
+    "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAArnv4XDMi_kemtqM1d730TxAArnv4XDMi_kemtqM1d730Tw=="
 }
 ```
 

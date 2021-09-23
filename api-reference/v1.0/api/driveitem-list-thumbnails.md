@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Retrieve thumbnails for a file or folder
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "Retrieve a collection of ThumbnailSet resources for a DriveItem resource."
 doc_type: apiPageType

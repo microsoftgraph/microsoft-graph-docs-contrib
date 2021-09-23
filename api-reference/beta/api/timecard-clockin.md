@@ -2,7 +2,7 @@
 title: "timeCard: clockIn"
 description: "Clock in to start a timecard."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

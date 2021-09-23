@@ -2,7 +2,7 @@
 title: "Update androidForWorkTrustedRootCertificate"
 description: "Update the properties of a androidForWorkTrustedRootCertificate object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -156,7 +156,6 @@ Content-Length: 1319
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 
