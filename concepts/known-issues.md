@@ -13,6 +13,28 @@ To report a known issue, see the [Microsoft Graph support](https://developer.mic
 
 For information about the latest updates to the Microsoft Graph API, see the [Microsoft Graph changelog](changelog.md).
 
+## Application and service principal APIs
+
+There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) entities currently in development. The following is a summary of current limitations and in-development API features.
+
+Current limitations:
+
+* Some application properties (such as appRoles and addIns) will not be available until all changes are completed.
+* Only multi-tenant apps can be registered.
+* Updating apps is restricted to apps registered after the initial beta update.
+* Azure Active Directory users can register apps and add additional owners.
+* Support for OpenID Connect and OAuth protocols.
+* Policy assignments to an application fail.
+* Operations on ownedObjects that require appId fail (For example, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+
+In development:
+
+* Ability to register single tenant apps.
+* Updates to servicePrincipal.
+* Migration of existing Azure AD apps to updated model.
+* Support for appRoles, pre-authorized clients, optional claims, group membership claims, and branding
+* Microsoft account (MSA) users can register apps.
+
 ## Bookings
 
 ### ErrorExceededFindCountLimit when querying bookingBusinesses
@@ -262,34 +284,20 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
-## Identity and access | Application and service principal APIs
+## Identity and access
 
-There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) entities currently in development. The following is a summary of current limitations and in-development API features.
+### Conditional access policy
 
-Current limitations:
+The [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) API currently requires consent to the **Policy.Read.All** permission to call the POST and PATCH methods. In the future, the **Policy.ReadWrite.ConditionalAccess** permission will enable you to read policies from the directory.
 
-* Some application properties (such as appRoles and addIns) will not be available until all changes are completed.
-* Only multi-tenant apps can be registered.
-* Updating apps is restricted to apps registered after the initial beta update.
-* Azure Active Directory users can register apps and add additional owners.
-* Support for OpenID Connect and OAuth protocols.
-* Policy assignments to an application fail.
-* Operations on ownedObjects that require appId fail (For example, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+### Claims mapping policy
 
-In development:
+The [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) API may require consent to both the **Policy.Read.All** and **Policy.ReadWrite.ConditionalAccess** permissions for the `LIST /policies/claimsMappingPolicies` and `GET /policies/claimsMappingPolicies/{id}` methods as follows:
 
-* Ability to register single tenant apps.
-* Updates to servicePrincipal.
-* Migration of existing Azure AD apps to updated model.
-* Support for appRoles, pre-authorized clients, optional claims, group membership claims, and branding
-* Microsoft account (MSA) users can register apps.
-* Support for SAML and WsFed protocols.
++ If no claimsMappingPolicy objects are available to retrieve in a LIST operation, either permission is sufficient to call this method.
++ If there are claimsMappingPolicy objects to retrieve, your app must consent to both permissions. If not, a `403 Forbidden` error is returned.
 
-## Identity and access | Conditional access
-
-### Permissions
-
-Currently, the Policy.Read.All permission is required to call POST and PATCH APIs. In the future, the Policy.ReadWrite.ConditionalAccess permission will enable you to read policies from the directory.
+In the future, either permission will be sufficient to call both methods.
 
 ## JSON Batching
 
@@ -337,6 +345,30 @@ does not become part of the body of the resultant message draft.
 ### GET messages returns chats in Microsoft Teams
 
 In both the v1 and beta endpoints, the response of `GET /users/id/messages` includes the user's Microsoft Teams chats that occurred outside the scope of a team or channel. These chat messages have "IM" as their subject.
+
+## Reports
+
+### Azure AD activity reports
+
+When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you might still encounter an error message similar to the following:
+
+```json
+{
+    "error": {
+        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
+        "message": "Neither tenant is B2C or tenant doesn't have premium license",
+        "innerError": {
+            "date": "2021-09-02T17:15:30",
+            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
+            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
+        }
+    }
+}
+```
+This error might also occur when retrieving the **signInActivity** property of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource; for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
+
+This error is due to intermittent license check failures, which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required when the issue is resolved.
+
 
 ## Teamwork (Microsoft Teams)
 

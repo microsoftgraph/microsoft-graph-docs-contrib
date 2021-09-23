@@ -7,19 +7,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/schemaExtensions/{id}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/schemaExtensions/exto6x7sfft_courses"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphSchemaExtension *schemaExtension = [[MSGraphSchemaExtension alloc] init];
+[schemaExtension setOwner:@"ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa"];
 NSMutableArray *propertiesList = [[NSMutableArray alloc] init];
 MSGraphExtensionSchemaProperty *properties = [[MSGraphExtensionSchemaProperty alloc] init];
-[properties setName:@"new-name-value"];
-[properties setType:@"new-type-value"];
+[properties setName:@"courseId"];
+[properties setType:@"Integer"];
 [propertiesList addObject: properties];
 MSGraphExtensionSchemaProperty *properties = [[MSGraphExtensionSchemaProperty alloc] init];
-[properties setName:@"additional-name-value"];
-[properties setType:@"additional-type-value"];
+[properties setName:@"courseName"];
+[properties setType:@"String"];
+[propertiesList addObject: properties];
+MSGraphExtensionSchemaProperty *properties = [[MSGraphExtensionSchemaProperty alloc] init];
+[properties setName:@"courseType"];
+[properties setType:@"String"];
+[propertiesList addObject: properties];
+MSGraphExtensionSchemaProperty *properties = [[MSGraphExtensionSchemaProperty alloc] init];
+[properties setName:@"courseSupervisors"];
+[properties setType:@"String"];
 [propertiesList addObject: properties];
 [schemaExtension setProperties:propertiesList];
 
