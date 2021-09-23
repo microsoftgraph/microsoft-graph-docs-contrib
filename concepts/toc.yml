@@ -267,6 +267,8 @@ items:
             items:
               - name: Use PIM to assign privileged roles
                 href: tutorial-assign-azureadroles.md
+              - name: Custom security attributes API (Preview)
+                href: custom-security-attributes-overview.md
           - name: Identity and sign-in
             items:
               - name: Authentication methods
