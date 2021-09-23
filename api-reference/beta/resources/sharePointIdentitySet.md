@@ -2,7 +2,7 @@
 author: tushar20
 ms.date: 09/09/2021
 title: sharePointIdentitySet
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+disclaimer: [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 ms.localizationpriority: medium
 description: "The sharePointIdentitySet resource is a keyed collection of sharePointIdentity and identity resources."
 ms.prod: ""
