@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.Read.All (Available soon), CustomSecAttributeDefinition.ReadWrite.All, CustomSecAttributeAssignment.ReadWrite.All|
 
+The signed-in user must also be assigned the Attribute Definition Reader, Attribute Definition Administrator, or Attribute Assignment Administrator directory roles that permits them to list allowed values. By default, Global Administrator, Global Reader, Privileged Role Administrator, and User Administrator do not have permissions to read, filter, define, manage, or assign custom security attributes.
+
 ## HTTP request
 
 <!-- {
