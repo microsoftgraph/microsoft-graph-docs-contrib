@@ -2,7 +2,7 @@
 author: tushar20
 ms.date: 09/09/2021
 title: sharePointIdentity
-disclaimer: [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 ms.localizationpriority: medium
 description: "The SharePointIdentity resource represents a SharePoint Identity of an actor."
 ms.prod: ""
