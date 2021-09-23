@@ -2,11 +2,11 @@
 title: "Use the Microsoft Search API in Microsoft Graph refine queries with aggregations"
 description: "You can use the Microsoft Search API to retrieve aggreations"
 author: "nmoreau"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Refine search results using aggregations (preview)
+# Refine search results using aggregations
 
 Refine search results and show their distribution in the index.
 

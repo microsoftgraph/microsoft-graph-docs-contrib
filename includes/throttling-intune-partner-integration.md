@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---
@@ -14,4 +14,7 @@ ms.topic: include
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-appVulnerabilityManagedDevice, appVulnerabilityMobileApp, appVulnerabilityTask, configManagerCollection, deviceAppManagementTask, securityConfigurationTask, unmanagedDeviceDiscoveryTask, vulnerableManagedDevice.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [appVulnerabilityManagedDevice](/graph/api/resources/appvulnerabilitymanageddevice) <li> [appVulnerabilityMobileApp](/graph/api/resources/appvulnerabilitymobileapp) <li> [appVulnerabilityTask](/graph/api/resources/appvulnerabilitytask) <li> [configManagerCollection](/graph/api/resources/configmanagercollection) <li> [deviceAppManagementTask](/graph/api/resources/deviceappmanagementtask) <li> [securityConfigurationTask](/graph/api/resources/securityconfigurationtask) <li> [unmanagedDeviceDiscoveryTask](/graph/api/resources/unmanageddevicediscoverytask) <li> [vulnerableManagedDevice](/graph/api/resources/vulnerablemanageddevice)  </ul> |

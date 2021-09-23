@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The list resource represents a list in a site."
 ms.date: 09/11/2017
 title: List
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

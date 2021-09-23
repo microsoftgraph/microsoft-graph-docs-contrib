@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "This method allows your app to track changes to a drive and its children over time."
 ms.date: 09/10/2017
 title: Sync the contents of a drive
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -278,8 +278,8 @@ Content-type: application/json
     
     | Operation type | Properties omitted by delta query |
     |---------|----------|
-    | Create/Modify | `ctag`, `lastModifiedBy` |
-    | Delete | `ctag`, `lastModifiedBy`, `name` |
+    | Create/Modify | `ctag` |
+    | Delete | `ctag`, `name` |
 
 
     **OneDrive (consumer)**

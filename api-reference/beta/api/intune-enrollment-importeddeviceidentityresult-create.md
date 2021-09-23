@@ -2,7 +2,7 @@
 title: "Create importedDeviceIdentityResult"
 description: "Create a new importedDeviceIdentityResult object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -106,7 +106,6 @@ Content-Length: 529
   "status": true
 }
 ```
-
 
 
 

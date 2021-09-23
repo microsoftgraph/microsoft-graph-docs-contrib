@@ -1,7 +1,7 @@
 ---
 title: "Get plannerTaskDetails"
 description: "Retrieve the properties and relationships of **plannertaskdetails** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "Get suspiciousIpRiskEvent"
 description: "Retrieve the properties and relationships of a suspiciousipriskevent object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "cloudhandler"

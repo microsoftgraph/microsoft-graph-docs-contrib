@@ -1,8 +1,8 @@
 ---
 title: "event resource type"
 description: "An event in a calendar."
-author: "Harini84"
-localization_priority: Priority
+author: "harini84"
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -62,6 +62,7 @@ This resource supports:
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
 |[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
 
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -119,7 +120,7 @@ This resource supports:
 > * For Microsoft accounts:
 > `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> To open the event in a current version of Outlook on the web, convert the URL to one of the following formats, and use that URL to open the event: 
+> To open the event in a current version of Outlook on the web, convert the URL to one of the following formats, and use that URL to open the event:
 >
 > * For work or school accounts:
 > `https://outlook.office365.com/calendar/item/{event-id}`

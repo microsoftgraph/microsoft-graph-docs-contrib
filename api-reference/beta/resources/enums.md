@@ -2,7 +2,7 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
@@ -684,6 +684,7 @@ Namespace: microsoft.graph
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
+|studentsOnly|
 
 ### externalEmailOtpState values
 

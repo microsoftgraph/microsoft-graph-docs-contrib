@@ -2,7 +2,7 @@
 title: "List iosikEv2VpnConfigurations"
 description: "List properties and relationships of the iosikEv2VpnConfiguration objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -237,7 +237,6 @@ Content-Length: 6435
   ]
 }
 ```
-
 
 
 

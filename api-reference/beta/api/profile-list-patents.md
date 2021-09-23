@@ -1,7 +1,7 @@
 ---
 title: "List patents"
 description: "Get the itempatents from the patents navigation property."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "permission: revokeGrants"
 description: "Update an item's sharing permissions"
 author: "learafa"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

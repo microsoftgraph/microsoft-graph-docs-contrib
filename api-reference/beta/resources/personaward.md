@@ -1,7 +1,7 @@
 ---
 title: "personAward resource type"
 description: "personAward resource type"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: resourcePageType
