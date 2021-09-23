@@ -1,6 +1,6 @@
 ---
 title: "customSecurityAttributeValue resource type"
-description: "Value for a custom security attribute."
+description: "Value of a custom security attribute."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,11 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Value for a custom security attribute.
+An OData type for the value of a custom security attribute.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
