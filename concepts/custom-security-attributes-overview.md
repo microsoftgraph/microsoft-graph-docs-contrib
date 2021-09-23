@@ -1,6 +1,6 @@
 ---
 title: "Overview of the custom security attributes API (Preview)"
-description: "Use the custom security attributes API to programmatically define and assign your own custom security attributes (key-value pairs) for Azure AD objects."
+description: "Learn about the custom security attributes API to programmatically define and assign your own custom security attributes (key-value pairs) for Azure AD objects."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
