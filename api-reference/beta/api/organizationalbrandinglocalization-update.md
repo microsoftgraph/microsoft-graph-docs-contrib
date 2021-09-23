@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Only Stream data types, including backgroundLogo and backgroundImage, are updated using the PUT method. To update String data types, including **signInPageText** and **usernameHintText**, use the PATCH method. You cannot update Stream types with other data types in the same request.
+Only Stream data types, including **backgroundLogo** and **backgroundImage**, are updated using the PUT method. To update String data types, including **signInPageText** and **usernameHintText**, use the PATCH method. You cannot update Stream types with other data types in the same request.
 
 <!-- {
   "blockType": "ignored"
