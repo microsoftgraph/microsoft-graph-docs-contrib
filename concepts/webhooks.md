@@ -273,7 +273,7 @@ Your process should process every change notification it receives. The following
 
 Repeat for other change notifications in the request.
 
-## Throttling 
+## Throttling
 
 Send a `202 - Accepted` status code as soon as you receive the change notification, even before validating its authenticity. You are simply acknowledging the receipt of the change notification and preventing unnecessary retries. For most subscription, notifications are not subjected to any additional delay during publishing and all notifications are delivered within the SLA unless the service is experiencing an incident. However, if a subscriptions notification Url is slow or fails to response, notifications may be throttled for the host associated with the subscription. The following process is used to determine when to throttle and how to handle throttled endpoints.
 
