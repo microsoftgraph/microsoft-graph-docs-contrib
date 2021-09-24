@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 The result of a cloud PC on-premises connection health check.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Methods
 
 |Method|Return type|Description|

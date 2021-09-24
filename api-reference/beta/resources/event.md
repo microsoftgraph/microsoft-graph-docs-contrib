@@ -30,78 +30,39 @@ This resource supports:
 - Outlook automatically accepts all meeting requests on behalf of groups. You can [accept](../api/event-accept.md), [tentatively accept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md)  meeting requests for _user_ calendars only.
 - Outlook doesn't support reminders for group events. You can [snooze](../api/event-snoozereminder.md) or [dismiss](../api/event-dismissreminder.md) a [reminder](reminder.md) for _user_ calendars only.
 
-## JSON representation
+## Methods
 
-Here is a JSON representation of the resource
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[List events](../api/user-list-events.md)|[Event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
+|[Create event](../api/user-post-events.md) |[event](event.md)| Create a new event by posting to the instances collection.|
+|[Get event](../api/event-get.md) | [event](event.md) |Read properties and relationships of event object.|
+|[Update](../api/event-update.md) | [event](event.md)	|Update event object. |
+|[Delete](../api/event-delete.md) | None |Delete event object. |
+|[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
+|[forward](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
+|[cancel](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
+|[accept](../api/event-accept.md)|None|Accept the specified event in a user calendar.|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|None|Tentatively accept the specified event in a user calendar.|
+|[decline](../api/event-decline.md)|None|Decline invitation to the specified event in a user calendar.|
+|[dismissReminder](../api/event-dismissreminder.md)|None|Dismiss the reminder for the specified event in a user calendar.|
+|[snoozeReminder](../api/event-snoozereminder.md)|None|Postpone a reminder for the specified event in a user calendar until a new time.|
+|[List instances](../api/event-list-instances.md) |[Event](event.md) collection| Get a Event object collection.|
+|**Attachments**| | |
+|[List attachments](../api/event-list-attachments.md) |[Attachment](attachment.md) collection| Get all attachments on an event.|
+|[Add attachment](../api/event-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to an event by posting to the attachments collection.|
+|**Open extensions**| | |
+|[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
+|[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
+|**Schema extensions**| | |
+|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+|**Extended properties**| | |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
+|[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
+|[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
 
-<!-- {
-  "blockType": "resource",
-   "keyProperty": "id",
-  "optionalProperties": [
-    "attachments",
-    "calendar",
-    "extensions",
-    "instances",
-    "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
-  ],
-  "@odata.type": "microsoft.graph.event"
-}-->
 
-```json
-{
-  "allowNewTimeProposals": "Boolean",
-  "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
-  "body": {"@odata.type": "microsoft.graph.itemBody"},
-  "bodyPreview": "string",
-  "cancelledOccurrences":["string"],
-  "categories": ["string"],
-  "changeKey": "string",
-  "createdDateTime": "String (timestamp)",
-  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "exceptionOccurrences":["string"],
-  "hasAttachments": true,
-  "hideAttendees": false,
-  "uid": "string",
-  "id": "string (identifier)",
-  "importance": "String",
-  "isAllDay": true,
-  "isCancelled": true,
-  "isDraft": false,
-  "isOnlineMeeting": true,
-  "isOrganizer": true,
-  "isReminderOn": true,
-  "lastModifiedDateTime": "String (timestamp)",
-  "location": {"@odata.type": "microsoft.graph.location"},
-  "locations": [{"@odata.type": "microsoft.graph.location"}],
-  "occurrenceId":"string",
-  "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
-  "onlineMeetingProvider": "string",
-  "onlineMeetingUrl": "string",
-  "organizer": {"@odata.type": "microsoft.graph.recipient"},
-  "originalEndTimeZone": "string",
-  "originalStart": "String (timestamp)",
-  "originalStartTimeZone": "string",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
-  "reminderMinutesBeforeStart": 1024,
-  "responseRequested": true,
-  "responseStatus": {"@odata.type": "microsoft.graph.responseStatus"},
-  "sensitivity": "String",
-  "seriesMasterId": "string",
-  "showAs": "String",
-  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "subject": "string",
-  "type": "String",
-  "webLink": "string",
-
-  "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
-  "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
-}
-```
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -134,7 +95,7 @@ Here is a JSON representation of the resource
 |onlineMeetingUrl|String|A URL for an online meeting. The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype. Read-only.<br>To access the URL to join an online meeting, use **joinUrl** which is exposed via the **onlineMeeting** property of the **event**. The **onlineMeetingUrl** property will be deprecated in the future. |
 |organizer|[Recipient](recipient.md)|The organizer of the event.|
 |originalEndTimeZone|String|The end time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook.|
-|originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|originalStart|DateTimeOffset|Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series. This property is not returned for events that are single instances. Its date and time information is expressed in ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |originalStartTimeZone|String|The start time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
@@ -178,37 +139,78 @@ Here is a JSON representation of the resource
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
 
-## Methods
+## JSON representation
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[List events](../api/user-list-events.md)|[Event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
-|[Create event](../api/user-post-events.md) |[event](event.md)| Create a new event by posting to the instances collection.|
-|[Get event](../api/event-get.md) | [event](event.md) |Read properties and relationships of event object.|
-|[Update](../api/event-update.md) | [event](event.md)	|Update event object. |
-|[Delete](../api/event-delete.md) | None |Delete event object. |
-|[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
-|[forward](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
-|[cancel](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
-|[accept](../api/event-accept.md)|None|Accept the specified event in a user calendar.|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|None|Tentatively accept the specified event in a user calendar.|
-|[decline](../api/event-decline.md)|None|Decline invitation to the specified event in a user calendar.|
-|[dismissReminder](../api/event-dismissreminder.md)|None|Dismiss the reminder for the specified event in a user calendar.|
-|[snoozeReminder](../api/event-snoozereminder.md)|None|Postpone a reminder for the specified event in a user calendar until a new time.|
-|[List instances](../api/event-list-instances.md) |[Event](event.md) collection| Get a Event object collection.|
-|**Attachments**| | |
-|[List attachments](../api/event-list-attachments.md) |[Attachment](attachment.md) collection| Get all attachments on an event.|
-|[Add attachment](../api/event-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to an event by posting to the attachments collection.|
-|**Open extensions**| | |
-|[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
-|[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
-|**Schema extensions**| | |
-|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
-|**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
-|[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
-|[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+   "keyProperty": "id",
+  "optionalProperties": [
+    "attachments",
+    "calendar",
+    "extensions",
+    "instances",
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties"
+  ],
+  "@odata.type": "microsoft.graph.event"
+}-->
+
+```json
+{
+  "allowNewTimeProposals": "Boolean",
+  "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
+  "bodyPreview": "string",
+  "cancelledOccurrences":["string"],
+  "categories": ["string"],
+  "changeKey": "string",
+  "createdDateTime": "String (timestamp)",
+  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "exceptionOccurrences":["string"],
+  "hasAttachments": true,
+  "hideAttendees": false,
+  "uid": "string",
+  "id": "string (identifier)",
+  "importance": "String",
+  "isAllDay": true,
+  "isCancelled": true,
+  "isDraft": false,
+  "isOnlineMeeting": true,
+  "isOrganizer": true,
+  "isReminderOn": true,  
+  "lastModifiedDateTime": "String (timestamp)",
+  "location": {"@odata.type": "microsoft.graph.location"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "occurrenceId":"string",
+  "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
+  "onlineMeetingProvider": "string",
+  "onlineMeetingUrl": "string",
+  "organizer": {"@odata.type": "microsoft.graph.recipient"},
+  "originalEndTimeZone": "string",
+  "originalStart": "String (timestamp)",
+  "originalStartTimeZone": "string",
+  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
+  "reminderMinutesBeforeStart": 1024,
+  "responseRequested": true,
+  "responseStatus": {"@odata.type": "microsoft.graph.responseStatus"},
+  "sensitivity": "String",
+  "seriesMasterId": "string",
+  "showAs": "String",
+  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "subject": "string",
+  "type": "String",
+  "webLink": "string",
+
+  "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
+  "calendar": { "@odata.type": "microsoft.graph.calendar" },
+  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
+  "instances": [ { "@odata.type": "microsoft.graph.event" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
+}
+```
 
 ## See also
 
