@@ -1,18 +1,20 @@
 ---
-title: "Update organizationalBrandingProperties"
-description: "Update the properties of an organizationalBrandingProperties object."
-ms.localizationpriority: medium
+title: "Update organizationalBranding"
+description: "Update the properties of an organizationalBranding object."
 author: "AlexanderMars"
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
-# Update organizationalBrandingProperties
+# Update organizationalBranding
+Namespace: microsoft.graph
 
-Update the properties of an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of the default branding object specified by an [organizationalBranding](../resources/organizationalbranding.md) object.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -23,56 +25,55 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-PATCH /organization/{tenant id}/branding/{property name}
-PUT /organization/{tenant id}/branding/{property name}
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /organization/{organizationId}/branding
 ```
 
 ## Request headers
-
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json. Required.  |
-| Content-Language  | Locale. Optional.  |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+|Accept-Language|A valid ISO-639 locale. Required.|
 
 ## Request body
-
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|backgroundColor|String|Color that will appear in place of the background image in low-bandwidth connections. The primary color of your banner logo or your organization color is recommended to be used here. Specify this in hexadecimal (for example, white is #FFFFFF).|
-|backgroundImage|Stream|Image that appears as the background of the sign in page. .png or .jpg not larger than 1920x1080 and smaller than 300kb. A smaller image will reduce bandwidth requirements and make page loads more performant.|
-|bannerLogo|Stream|A banner version of your company logo which appears appears on the sign-in page. .png or .jpg no larger than 36x245px. We recommend using a transparent image with no padding around the logo.|
-|signInPageText|String|Text that appears at the bottom of the sign-in box. You can use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1024 characters.|
-|squareLogo|Stream|Square version of your company logo. This appears in Windows 10 out-of-box (OOBE) experiences and when Windows Autopilot is enabled for deployment. .png or .jpg no larger than 240x240px and no more than 10kb in size. We recommend using a transparent image with no padding around the logo.|
-|usernameHintText|String|String that shows as the hint in the username textbox on the sign in screen. This text must be Unicode, without links or code, and can't exceed 64 characters.|
+| backgroundColor | String | Color that will appear in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
+| backgroundImage | Stream | Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
+| bannerLogo | Stream | A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG no larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
+| signInPageText | String | Text that appears at the bottom of the sign-in box. You can use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1024 characters. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
+| squareLogo | Stream | A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment. Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
+| usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 
 The **id** property is ignored when passed in.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and an updated [organizationalBranding](../resources/organizationalbranding.md) object in the response body.
 
 ## Examples
+
 ### Example 1: Update default branding
 If the branding already exists, `PATCH` will replace only the specified properties, leaving unspecified properties unchanged. 
 #### Request
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties_1"
+  "name": "update_organizationalbrandinglocaliation_1"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 Content-Type: application/json
 
 {
@@ -98,12 +99,12 @@ Content-Type: application/json
 
 ---
 
+
 #### Response
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http
@@ -118,14 +119,13 @@ The following request updates the banner logo for the default branding.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties_2"
+  "name": "update_organizationalbrandinglocaliation_2"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
+PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
 Content-Type: image/jpeg
 
 <Image>
@@ -135,8 +135,7 @@ Content-Type: image/jpeg
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http
@@ -150,11 +149,11 @@ If **Content-Language** header is specified, the localization associated with **
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties_3"
+  "name": "update_organizationalbrandinglocaliation_3"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 Content-Type: application/json
 Content-Language: fr
 
@@ -167,8 +166,7 @@ Content-Language: fr
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http
@@ -183,15 +181,14 @@ If the branding already exists, `PUT` will replace the default branding and any 
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties_4"
+  "name": "update_organizationalbrandinglocaliation_4"
 }-->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+PUT https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr
 Content-Type: application/json
 Content-Language: fr
 
@@ -222,8 +219,7 @@ Content-Language: fr
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http
@@ -231,12 +227,3 @@ HTTP/1.1 204 No Content
 ```
 
 Following this request, the default branding has only the **backgroundColor** specified and has exactly one localization with the **id** `fr`, also with the **backgroundColor** set.
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update organizationalbrandingproperties",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
