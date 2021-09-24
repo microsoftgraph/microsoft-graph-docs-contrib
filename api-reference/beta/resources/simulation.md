@@ -41,6 +41,7 @@ Represent an attack simulation and training campaign of a tenant.
 |mode|[simulationMode](#simulationmode-values)|Mode of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `real`, `preview`, `unknownFutureValue`.|
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |payloadSource|[payloadSource](#payloadsource-values)|Source of phishing payload in the attack simulation and training campaign. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|simulationStatus|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `inProgress`, `scheduled`, `completed`, `partiallyCompleted`, `failed`, `cancelled`, `excluded`, `deleted`, `included`, `unknownFutureValue`.|
 |trainingAssignmentPreference|[trainingAssignmentPreference](#trainingassignmentpreference-values)|Preference of the tenant admin to assign training to users in the attack simulation and training campaign. Possible values are: `unknown`, `auto`, `manual`, `unknownFutureValue`.|
 |trainingContentPreference|[trainingContentPreference](#trainingcontentpreference-values)|Preference of the tenant admin for the source of training content to assign to users in the attack simulation and training campaign. Possible values are: `unknown`, `microsoft`, `custom`, `noTraining`, `unknownFutureValue`.|
@@ -144,7 +145,10 @@ The following is a JSON representation of the resource.
   "payloadDeliveryPlatform": "String",
   "trainingAssignmentPreference": "String",
   "trainingContentPreference": "String",
-  "trainingDueDateTime": "String (timestamp)"
+  "trainingDueDateTime": "String (timestamp)",
+  "report": {
+    "@odata.type": "microsoft.graph.simulationReport"
+  }
 }
 ```
 
