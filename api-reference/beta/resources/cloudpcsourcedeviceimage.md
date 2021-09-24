@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 The source image associated with your Azure subscription.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Properties
 
 |Property|Type|Description|

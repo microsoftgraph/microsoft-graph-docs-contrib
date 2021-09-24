@@ -1153,6 +1153,10 @@ items:
       - name: Calendar permission
         href: resources/calendarpermission.md
         items:
+        - name: List
+          href: api/calendar-list-calendarpermissions.md
+        - name: Create
+          href: api/calendar-post-calendarpermissions.md
         - name: Get
           href: api/calendarpermission-get.md
         - name: Update
@@ -4665,14 +4669,6 @@ items:
               href: api/unifiedroleassignment-delete.md            
       - name: Identity and sign-in
         items:
-        - name: Authentication flows policy
-          items:
-          - name: Authentication flows policy
-            href: resources/authenticationflowspolicy.md
-          - name: Get
-            href: api/authenticationflowspolicy-get.md
-          - name: Update
-            href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
           items:
           - name: Overview
@@ -4706,44 +4702,6 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-        - name: Authentication methods policy
-          items:
-          - name: Overview
-            href: resources/authenticationmethodspolicies-overview.md
-          - name: Authentication method policy
-            href: resources/authenticationmethodspolicy.md
-            items:
-            - name: Get
-              href: api/authenticationmethodspolicy-get.md
-            - name: Update
-              href: api/authenticationmethodspolicy-update.md
-          - name: FIDO2 policy
-            href: resources/fido2authenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/fido2authenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/fido2authenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator policy
-            href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-          - name: Email policy
-            href: resources/emailauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/emailauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/emailauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/emailauthenticationmethodconfiguration-delete.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -4932,6 +4890,52 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
+          - name: Authentication flows policy
+            items:
+            - name: Authentication flows policy
+              href: resources/authenticationflowspolicy.md
+            - name: Get
+              href: api/authenticationflowspolicy-get.md
+            - name: Update
+              href: api/authenticationflowspolicy-update.md
+          - name: Authentication methods policy
+            items:
+            - name: Overview
+              href: resources/authenticationmethodspolicies-overview.md
+            - name: Authentication method policy
+              href: resources/authenticationmethodspolicy.md
+              items:
+              - name: Get
+                href: api/authenticationmethodspolicy-get.md
+              - name: Update
+                href: api/authenticationmethodspolicy-update.md
+            - name: FIDO2 policy
+              href: resources/fido2authenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/fido2authenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/fido2authenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/fido2authenticationmethodconfiguration-delete.md
+            - name: Microsoft Authenticator policy
+              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Email policy
+              href: resources/emailauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/emailauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/emailauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/emailauthenticationmethodconfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:
@@ -4939,21 +4943,6 @@ items:
               href: api/authorizationpolicy-get.md
             - name: Update
               href: api/authorizationpolicy-update.md
-          - name: Home realm discovery policy
-            href: resources/homerealmdiscoverypolicy.md
-            items:
-            - name: List
-              href: api/homerealmdiscoverypolicy-list.md
-            - name: Create
-              href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-            - name: Get
-              href: api/homerealmdiscoverypolicy-get.md
-            - name: Update
-              href: api/homerealmdiscoverypolicy-update.md
-            - name: Delete
-              href: api/homerealmdiscoverypolicy-delete.md
-            - name: List applied to applications
-              href: api/homerealmdiscoverypolicy-list-appliesto.md
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
@@ -4986,6 +4975,21 @@ items:
               href: api/featurerolloutpolicy-post-appliesto.md
             - name: Delete appliesTo
               href: api/featurerolloutpolicy-delete-appliesto.md
+          - name: Home realm discovery policy
+            href: resources/homerealmdiscoverypolicy.md
+            items:
+            - name: List
+              href: api/homerealmdiscoverypolicy-list.md
+            - name: Create
+              href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+            - name: Get
+              href: api/homerealmdiscoverypolicy-get.md
+            - name: Update
+              href: api/homerealmdiscoverypolicy-update.md
+            - name: Delete
+              href: api/homerealmdiscoverypolicy-delete.md
+            - name: List applied to applications
+              href: api/homerealmdiscoverypolicy-list-appliesto.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -6309,6 +6313,10 @@ items:
           href: api/channel-list-members.md
         - name: List message replies
           href: api/chatmessage-list-replies.md
+        - name: Provision email address
+          href: api/channel-provisionemail.md  
+        - name: Remove email address
+          href: api/channel-removeemail.md  
         - name: Remove member
           href: api/channel-delete-members.md
         - name: Reply to message
@@ -6727,6 +6735,8 @@ items:
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+        - name: Get operation result (async)
+          href: api/workbook-tablerowoperationresult.md
       - name: Workbook application
         href: resources/workbookapplication.md
         items:
