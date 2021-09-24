@@ -684,6 +684,25 @@ Namespace: microsoft.graph
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
+|studentsOnly|
+
+### educationAssignmentStatus values
+|Member|
+|:---|
+|draft|
+|published|
+|assigned|
+|unknownFutureValue|
+
+### educationSubmissionStatus values
+|Member|
+|:---|
+|working|
+|submitted|
+|released|
+|returned|
+|unknownFutureValue|
+|reassigned|
 
 ### externalEmailOtpState values
 
