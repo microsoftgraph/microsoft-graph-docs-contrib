@@ -54,7 +54,6 @@ Include the `Prefer: include-unknown-enum-members` header to explicitly request 
 |developerLow|33|The device is low on developer.|
 |developerEmpty|34|The device is out of developer.|
 |interpreterResourceUnavailable|35|An interpreter resource is unavailable (e.g. font, form).|
-|unknownFutureValue|36|Evolvable enumeration sentinel value. Do not use.|
 |alertRemovalOfBinaryChangeEntry|37|This is a standard IPP Printer Attribute value described in PWG5100.9.|
 |banderAdded|38|This is a standard IPP Printer Attribute value described in PWG5100.9.|
 |banderAlmostEmpty|39|This is a standard IPP Printer Attribute value described in PWG5100.9.|
@@ -846,3 +845,4 @@ Include the `Prefer: include-unknown-enum-members` header to explicitly request 
 |wrapperUnrecoverableFailure|825|This is a standard IPP Printer Attribute value described in PWG5100.9.|
 |wrapperUnrecoverableStorageError|826|This is a standard IPP Printer Attribute value described in PWG5100.9.|
 |wrapperWarmingUp|827|This is a standard IPP Printer Attribute value described in PWG5100.9.|
+|unknownFutureValue|36|Evolvable enumeration sentinel value. Do not use.|
