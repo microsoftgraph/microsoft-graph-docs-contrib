@@ -164,6 +164,7 @@ Content-length: 354
 This example gets events in the user's primary calendar by filtering on their subject starting with "All".
 
 #### Request
+
 The following example shows the request.
 
 <!-- {

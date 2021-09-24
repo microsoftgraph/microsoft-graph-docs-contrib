@@ -139,7 +139,9 @@ The following example shows the request.
 GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subject,'All')
 ```
 #### Response
+
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
