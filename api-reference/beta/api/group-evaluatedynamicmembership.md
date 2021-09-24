@@ -2,7 +2,7 @@
 title: "group: evaluateDynamicMembership"
 description: "Evaluate if a user or device is or would be a member of a dynamic group."
 author: "Jordanndahl"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---

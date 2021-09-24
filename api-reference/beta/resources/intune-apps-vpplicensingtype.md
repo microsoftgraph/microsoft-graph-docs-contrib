@@ -2,7 +2,7 @@
 title: "vppLicensingType resource type"
 description: "Contains properties for iOS Volume-Purchased Program (Vpp) Licensing Type."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -44,7 +44,6 @@ Here is a JSON representation of the resource.
   "supportsDeviceLicensing": true
 }
 ```
-
 
 
 

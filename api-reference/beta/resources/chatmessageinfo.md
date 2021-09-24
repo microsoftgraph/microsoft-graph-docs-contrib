@@ -2,7 +2,7 @@
 title: "chatMessageInfo resource type"
 description: "Represents a preview of a chatMessage resource."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -23,6 +23,8 @@ Represents a preview of a [chatMessage](../resources/chatmessage.md) resource. T
 |from|[chatMessageFromIdentitySet](../resources/chatmessagefromidentityset.md)|Information about the sender of the message.|
 |id|String|ID of the [chatMessage](../resources/chatmessage.md).|
 |isDeleted|Boolean|If set to `true`, the original message has been deleted.|
+|messageType|chatMessageType|The type of chat message. The possible values are: `message`, `unknownFutureValue`, `systemEventMessage`.|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only.  If present, represents details of an event that happened in a chat, a channel, or a team, for example, members were added, and so on. For event messages, the **messageType** property will be set to `systemEventMessage`.|
 
 ## Relationships
 None.
@@ -48,7 +50,11 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.chatMessageFromIdentitySet"
   },
   "createdDateTime": "String (timestamp)",
-  "isDeleted": "Boolean"
+  "isDeleted": "Boolean",
+  "messageType": "String",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
+  }
 }
 ```
 

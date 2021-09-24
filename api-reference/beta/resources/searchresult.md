@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The SearchResult resource indicates than an item is the response to a search query."
 ms.date: 09/10/2017
 title: SearchResult
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

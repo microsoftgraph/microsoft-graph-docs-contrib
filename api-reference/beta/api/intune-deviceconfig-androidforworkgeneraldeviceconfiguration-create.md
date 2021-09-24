@@ -2,7 +2,7 @@
 title: "Create androidForWorkGeneralDeviceConfiguration"
 description: "Create a new androidForWorkGeneralDeviceConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -276,7 +276,6 @@ Content-Length: 3251
   "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
-
 
 
 

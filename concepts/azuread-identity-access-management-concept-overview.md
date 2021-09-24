@@ -2,7 +2,7 @@
 title: "Azure AD identity and access management API overview"
 description: "Azure Active Directory (Azure AD) helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure. Organizations can use Azure AD to manage identities and control access in on-premises, hybrid, and cloud environments.  "
 author: "jackson-woods"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "identity-and-access"
 ms.custom: scenarios:getting-started
 ---
@@ -25,13 +25,13 @@ You can use Microsoft Graph and Azure AD as a way to quickly and easily reach mo
 
 You can use the Azure AD APIs in Microsoft Graph to query the user's profile, find other users, manage organizational relationships, track assignments, or create original solutions that incorporate existing organizational data. These APIs provide a solid foundation to seamlessly integrate custom business applications into an organization's existing digital services.
 
-### Access users and groups
+### Manage users and groups
 
 You can use Azure AD APIs in Microsoft Graph to:
 
 - Look up and manage [user profile](/graph/api/resources/user) information for users in your organization, such as name, photo, email address, job title, office location, and more.
 - Create [groups](/graph/api/resources/groups-overview) for projects and teams in your organization. Add and remove members from the group to control access to resources. (Dynamic groups can automatically change membership based on user property values.)
-- To control access, you can check for [transitive membership](/graph/api/user-checkmembergroups) in a list of groups or get all the resources of a specified type (like user or group) from a list of [generic resource IDs](/graph/api/directoryobject-getbyids).
+- Check for [transitive membership](/graph/api/user-checkmembergroups) in a list of groups or get all the resources of a specified type (like user or group) from a list of [generic resource IDs](/graph/api/directoryobject-getbyids) to control access.
 
 ### Manage directory roles
 
@@ -55,21 +55,21 @@ Azure AD APIs for tenant management allow you to:
 - Get information about the [service SKUs](/graph/api/resources/subscribedsku) that a company is subscribed to.
 - [Invite external](/graph/api/resources/invitation) (guest) users to an organization.
 
-### Monitor identity risks (preview)
+### Monitor identity risks
 
 Most security breaches are the result of attackers stealing a user’s identity, and attackers have become terrifyingly effective in taking advantage of third-party breaches, password spray attacks, and sophisticated phishing attacks. This means you need to protect all your user accounts from these attacks and proactively prevent compromised identities from being abused.
 
 Azure AD uses adaptive machine learning algorithms and heuristics to detect anomalies that indicate potentially compromised accounts. Using this data, Azure AD Identity Protection protects your users with risk-based conditional access policies and generates reports and alerts on its detections.
 
-Today, Microsoft Graph gives easy access to customers of Azure AD Premium P2 to [query risk events detected by Identity Protection](/graph/api/resources/identityprotection-root), including the risk event’s type, severity, date, time, location, impacted user, and more. Customers can then use those events in SIEM systems and security applications.
+Today, Microsoft Graph gives easy access to customers of Azure AD Premium P2 to [query risk events detected by Identity Protection](/graph/api/resources/identityprotectionroot), including the risk event’s type, severity, date, time, location, impacted user, and more. Customers can then use those events in SIEM systems and security applications.
+
+### Review access to organizational resources
+
+Review access to groups, applications, and even privileged roles in your organization. [Access reviews](/graph/api/resources/accessreviews-root) is featured in Azure AD Premium P2.
 
 ### Activate users into privileged roles (preview)
 
-You can get secure access to resources by activating administrative privileges on-demand. [Privileged Identity Management](/graph/api/resources/privilegedidentitymanagement-root) is featured in Azure AD Premium P2.
-
-### Manage user access reviews (preview)
-
-You can configure access reviews of group memberships and application access. [Access reviews](/graph/api/resources/accessreviews-root) is featured in Azure AD Premium P2.
+Use the [Privileged Identity Management (PIM) API](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) to activate administrator privilege on demand. Enforce mandatory justification of role activation, and multifactor authentication for actors in privileged roles.
 
 ## API reference
 
@@ -84,4 +84,4 @@ Looking for the API reference for this service?
 - Use Azure AD to [authenticate](./auth/index.yml) to Microsoft Graph.
 - Integrate [Azure AD sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.
 - See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.
-- Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.
+- Explore [samples](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples) for more ideas about how to use Microsoft Graph.

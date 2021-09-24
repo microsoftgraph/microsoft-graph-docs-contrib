@@ -2,7 +2,7 @@
 title: "Replace timeCard"
 description: "Update an existing timeCard entry."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

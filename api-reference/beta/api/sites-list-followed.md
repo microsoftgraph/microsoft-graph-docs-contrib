@@ -2,7 +2,7 @@
 author: learafa
 description: "List the sites that have been followed by the signed in user."
 title: List followed sites
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "SharePoint"
 doc_type: apiPageType
 ---
@@ -41,7 +41,7 @@ GET /users/{user-id}/followedSites
 **Note:** To access another targeted user's list of followed sites, you need application permissions.
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

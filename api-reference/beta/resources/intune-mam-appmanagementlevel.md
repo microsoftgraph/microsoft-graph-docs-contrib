@@ -2,7 +2,7 @@
 title: "appManagementLevel enum type"
 description: "Management levels for apps"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,7 +24,6 @@ Management levels for apps
 |unmanaged|1|Unmanaged|
 |mdm|2|MDM|
 |androidEnterprise|4|Android Enterprise|
-
 
 
 

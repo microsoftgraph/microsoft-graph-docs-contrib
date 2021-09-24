@@ -1,7 +1,7 @@
 ---
 title: "keyValue resource type"
 description: "Provides additional relevant information about the sign-in request"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"

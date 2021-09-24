@@ -2,7 +2,7 @@
 title: "checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those groups of which"
 author: "Jordanndahl"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -27,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported.                                                                                                     |
 | Application                            | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+
+> **Note:** To list the members of a group with hidden membership, the Member.Read.Hidden permission is required.
 
 ## HTTP request
 
