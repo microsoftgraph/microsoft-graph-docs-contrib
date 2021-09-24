@@ -1,13 +1,15 @@
 ---
 title: "Get a group setting"
 description: "Retrieve the properties of a specific of group setting object."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "Jordanndahl"
+ms.localizationpriority: medium
+ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Get a group setting
+
+Namespace: microsoft.graph
 
 Retrieve the properties of a specific of group setting object.
 
@@ -32,7 +34,7 @@ GET /groupSettings/{id}
 GET /groups/{id}/settings/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 > Note: $filter is not supported.
 
@@ -58,14 +60,14 @@ If successful, this method returns a `200 OK` response code and [groupSetting](.
   "name": "get_groupsetting"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -81,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 
 ##### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

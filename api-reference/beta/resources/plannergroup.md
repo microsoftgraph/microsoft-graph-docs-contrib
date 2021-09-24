@@ -1,13 +1,15 @@
 ---
 title: "plannerGroup resource type"
 description: "The **plannerGroup** resource provides access to Planner resources for a group. It doesn't contain any usable properties."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
 # plannerGroup resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,3 +63,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

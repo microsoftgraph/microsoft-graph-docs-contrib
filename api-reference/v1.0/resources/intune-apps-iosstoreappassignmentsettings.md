@@ -1,13 +1,15 @@
 ---
 title: "iosStoreAppAssignmentSettings resource type"
 description: "Contains properties used to assign an iOS Store mobile app to a group."
-author: "tfitzmac"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # iosStoreAppAssignmentSettings resource type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -37,6 +39,7 @@ Here is a JSON representation of the resource.
   "vpnConfigurationId": "String"
 }
 ```
+
 
 
 

@@ -2,19 +2,18 @@
 title: "Microsoft Graph Security API overview"
 description: "You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities. The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple Microsoft Graph Security providers (also called security providers or providers). Requests to the Microsoft Graph Security API are federated to all applicable security providers. The results are aggregated and returned to the requesting application in a common schema, as shown in the following diagram. For details, see Microsoft Graph Security API data flow."
 author: "preetikr"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "security"
+ms.custom: scenarios:getting-started
 ---
 
 # Microsoft Graph Security API overview
 
 You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities. The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple [Microsoft Graph Security providers](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0) (also called security providers or providers). Requests to the Microsoft Graph Security API are federated to all applicable security providers. The results are aggregated and returned to the requesting application in a common schema, as shown in the following diagram. For details, see [Microsoft Graph Security API data flow](security-dataflow.md).
 
-
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
 For information about authorization, see [Authorization and the Microsoft Graph Security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions-reference.md#security-permissions).
-
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 
@@ -24,13 +23,13 @@ The [Microsoft Graph Security API](/graph/api/resources/security-api-overview?vi
 
 - [Write code](https://aka.ms/graphsecuritysdk) – Find [code samples](https://aka.ms/graphsecurityapicode) in C#, Java, NodeJS, and more.
 - [Connect using scripts](https://aka.ms/graphsecuritypowershellsampleblog) – Find [PowerShell samples](https://aka.ms/graphsecuritypowershellsample).
-- [Drag and drop into workflows and playbooks](https://aka.ms/graphsecurityconnectorsblogpost) – Use [Microsoft Graph Security connectors](https://aka.ms/graphsecurityconnectors) for [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/), and [PowerApps](https://powerapps.microsoft.com/).
-- [Get data into reports and dashboards](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – Use the [Microsoft Graph Security connector for Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc).
+- [Drag and drop into workflows and playbooks](https://aka.ms/graphsecurityconnectorsblogpost) – Use [Microsoft Graph Security connectors](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) for [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/), and [PowerApps](https://powerapps.microsoft.com/).
+- [Get data into reports and dashboards](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – Use the [Microsoft Graph Security connector for Power BI](/power-bi/connect-data/desktop-connect-graph-security).
 - [Connect using Jupyter notebooks](https://jupyter.org/) – Find [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks).  
 
 ### Unify and standardize alert tracking
 
-Connect once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk and IBM QRadar, via [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). For details about SIEM integration with the security API entities, see [Integrate with a SIEM](security-siemintegration.md).
+Connect once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk using Microsoft Graph Security API connectors. For more info about solution integrations with the security API entities, see [Security solution integrations using the Microsoft Graph Security API](security-integration.md).
 
 ### Correlate security alerts to improve threat protection and response
 
@@ -42,7 +41,7 @@ Tag alerts with additional context or threat intelligence to inform response and
 
 ### Unlock security context to drive investigation
 
-Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Office 365) to bring business and security contexts together and improve threat response.
+Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Microsoft 365) to bring business and security contexts together and improve threat response.
 
 ### Automate security workflows and reporting
 
@@ -83,4 +82,5 @@ Looking for the API reference for this service?
 ## Next steps
 
 - [Use the Microsoft Graph Security API](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+- Explore [Microsoft Graph Security API samples](https://aka.ms/graphsecurityapicode)
 - Interested in becoming a security provider? Reach out to [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).

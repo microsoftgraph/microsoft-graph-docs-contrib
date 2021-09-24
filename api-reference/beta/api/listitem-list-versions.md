@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "SharePoint can be configured to retain the history for list items."
 ms.date: 09/10/2017
 title: Get a previous version of a SharePoint list record
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Listing versions of a ListItem (preview)
+# List versions of a listItem
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -110,3 +112,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

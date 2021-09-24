@@ -1,13 +1,16 @@
 ---
 title: "Delete identityProvider"
 description: "Delete an existing identityProvider"
-localization_priority: Priority
-author: "valnav"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: high
+author: "namkedia"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete identityProvider
+# Delete identityProvider (deprecated)
+Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Delete an existing [identityProvider](../resources/identityprovider.md).
 
@@ -56,6 +59,7 @@ The following example deletes an **identityProvider**.
   "blockType": "request",
   "name": "delete-identityprovider"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
@@ -63,7 +67,7 @@ DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,3 +103,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

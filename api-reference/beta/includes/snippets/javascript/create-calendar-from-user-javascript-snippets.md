@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const calendar = {
-  name: "Volunteer"
+  name: 'Volunteer'
 };
 
-let res = await client.api('/me/calendars')
+await client.api('/me/calendars')
 	.version('beta')
-	.post({calendar : calendar});
+	.post(calendar);
 
 ```

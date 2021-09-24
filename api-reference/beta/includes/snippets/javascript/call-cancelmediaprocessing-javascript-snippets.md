@@ -11,11 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const cancelMediaProcessingOperation = {
-  all: true,
-  clientContext: "clientContext-value"
+  clientContext: 'clientContext-value'
 };
 
-let res = await client.api('/app/calls/{id}/cancelMediaProcessing')
+await client.api('/communications/calls/{id}/cancelMediaProcessing')
 	.version('beta')
 	.post(cancelMediaProcessingOperation);
 

@@ -20,15 +20,15 @@ const team = {
   },
   funSettings: {
     allowGiphy: true,
-    giphyContentRating: "strict"
+    giphyContentRating: 'strict'
   },
   discoverySettings: {
     showInTeamsSearchAndSuggestions: true
   }
 };
 
-let res = await client.api('/groups/{id}/team')
+await client.api('/groups/{id}/team')
 	.version('beta')
-	.put({team : team});
+	.put(team);
 
 ```

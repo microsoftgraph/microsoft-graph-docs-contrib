@@ -1,13 +1,15 @@
 ---
 title: "certificationControl resource type"
 description: "This resource contains compliance certification data associated with secure score control."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 #  certificationControl resource type
+
+Namespace: microsoft.graph
 
 Contains compliance certification data associated with secure score control.
 
@@ -46,3 +48,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

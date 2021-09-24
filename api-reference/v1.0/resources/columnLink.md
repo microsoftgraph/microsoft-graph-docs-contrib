@@ -1,14 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 # ColumnLink resource type
+
+Namespace: microsoft.graph
 
 A **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
 
@@ -43,3 +44,4 @@ Here is a JSON representation of a **columnLink** resource.
   "section": "documentation",
   "tocPath": "Resources/ColumnLink"
 } -->
+

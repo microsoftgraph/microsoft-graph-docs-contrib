@@ -1,7 +1,7 @@
 ---
 author: jasonjoh
 ms.topic: include
-ms.author: jasonjoh
+ms.localizationpriority: medium
 ---
 
 <!-- markdownlint-disable MD041 -->

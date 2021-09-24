@@ -1,13 +1,15 @@
 ---
 title: "Create educationAssignmentResource"
-description: "odata.type to indicate which type of resource is being created. Note that file-based resources must first be uploaded to the assignments **resourceFolder**."
-localization_priority: Normal
+description: "Create an education assignment resource."
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
 # Create educationAssignmentResource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ In the request body, supply a JSON representation of the [educationAssignmentRes
 If successful, this method returns a `201 Created` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
@@ -57,16 +59,15 @@ Content-length: 212
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
-    "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
+    "@odata.type": "#microsoft.graph.educationLinkResource"
   }
 }
-
 ```
 In the request body, supply a JSON representation of the [educationAssignmentResource](../resources/educationassignmentresource.md) object.
-##### Response
+### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 
 <!-- {
@@ -85,10 +86,9 @@ Content-length: 229
   "resource": {
     "displayName": "Bing",
     "link": "https://www.bing.com",
-    "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
+    "@odata.type": "#microsoft.graph.educationLinkResource"
   }
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -102,3 +102,5 @@ Content-length: 229
   "suppressions": []
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
-author: "VinodRavichandran"
+author: "ananmishr"
 description: "The Audio resource groups audio-related properties on an item into a single structure."
 ms.date: 09/10/2017
 title: Audio
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 # Audio facet
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -77,3 +79,5 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
+
+

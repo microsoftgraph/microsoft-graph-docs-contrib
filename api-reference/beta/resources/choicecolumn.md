@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The choiceColumn on a columnDefinition resource indicates that the column's values can be selected from a list of choices."
 ms.date: 09/11/2017
 title: ChoiceColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # ChoiceColumn resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,3 +47,5 @@ Here is a JSON representation of a **choiceColumn** resource.
   "suppressions": []
 }
 -->
+
+

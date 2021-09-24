@@ -1,13 +1,15 @@
 ---
 title: "Delete accessReview"
 description: "In the Azure AD access reviews feature, delete an accessReview object."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "markwahl-msft"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
 # Delete accessReview
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ The caller should also have ProgramControl.ReadWrite.All permission, so that it 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /accessReviews('<id>')
+DELETE /accessReviews/{reviewId}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -55,7 +57,7 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-accessreview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-accessreview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -70,7 +72,7 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30
 ---
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -92,3 +94,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

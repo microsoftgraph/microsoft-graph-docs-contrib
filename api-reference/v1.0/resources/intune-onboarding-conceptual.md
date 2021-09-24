@@ -1,13 +1,15 @@
 ---
 title: "Enroll devices for management in Intune"
 description: " (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like remote wipe, shared devices, or user affinity for a device."
-localization_priority: Normal
-author: "tfitzmac"
+ms.localizationpriority: medium
+author: "dougeby"
 ms.prod: "intune"
 doc_type: conceptualPageType
 ---
 
 # Enroll devices for management in Intune
+
+Namespace: microsoft.graph
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
@@ -15,11 +17,16 @@ You can enroll devices, including Windows PCs, to enable mobile device managemen
 
 The following Graph resources are available to manage enrollment in Intune:  
 
+- [Compliance management partner](intune-onboarding-compliancemanagementpartner.md)
+- [Compliance management partner assignment](intune-onboarding-compliancemanagementpartnerassignment.md)
+- [Device app management](intune-onboarding-deviceappmanagement.md)
+- [Device category](intune-onboarding-devicecategory.md)
 - [Device enrollment configuration](intune-onboarding-deviceenrollmentconfiguration.md)
 - [Device enrollment limit configuration](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Device enrollment platform restriction](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Device enrollment platform restrictions configuration](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [Device enrollment Windows Hello for business configuration](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
+- [Device management](intune-onboarding-devicemanagement.md)
 - [Device management exchange connector](intune-onboarding-devicemanagementexchangeconnector.md)
 - [Device management exchange connector status](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
 - [Device management exchange connector sync type](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
@@ -36,6 +43,7 @@ The following Graph resources are available to manage enrollment in Intune:
 - [On-premises conditional access settings](intune-onboarding-onpremisesconditionalaccesssettings.md)
 - [Organization](intune-onboarding-organization.md)
 - [RGB color](intune-onboarding-rgbcolor.md)
+- [User](intune-onboarding-user.md)
 - [VPP token](intune-onboarding-vpptoken.md)
 - [VPP token state](intune-onboarding-vpptokenstate.md)
 - [VPP token sync status](intune-onboarding-vpptokensyncstatus.md)

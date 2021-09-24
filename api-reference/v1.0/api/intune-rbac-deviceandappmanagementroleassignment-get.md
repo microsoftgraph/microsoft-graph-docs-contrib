@@ -1,13 +1,15 @@
 ---
 title: "Get deviceAndAppManagementRoleAssignment"
 description: "Read properties and relationships of the deviceAndAppManagementRoleAssignment object."
-author: "tfitzmac"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get deviceAndAppManagementRoleAssignment
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -16,11 +18,11 @@ Read properties and relationships of the [deviceAndAppManagementRoleAssignment](
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Delegated (work or school account)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -32,7 +34,7 @@ GET /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -76,6 +78,7 @@ Content-Length: 346
   }
 }
 ```
+
 
 
 

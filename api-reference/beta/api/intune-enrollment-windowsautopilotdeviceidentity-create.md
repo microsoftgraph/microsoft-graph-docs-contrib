@@ -1,13 +1,15 @@
 ---
 title: "Create windowsAutopilotDeviceIdentity"
 description: "Create a new windowsAutopilotDeviceIdentity object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create windowsAutopilotDeviceIdentity
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Create a new [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-win
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -49,24 +51,25 @@ The following table shows the properties that are required when you create the w
 |:---|:---|:---|
 |id|String|The GUID for the object|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profile set time of the Windows autopilot device.|
-|orderIdentifier|String|Order Identifier of the Windows autopilot device - Deprecated|
 |groupTag|String|Group Tag of the Windows autopilot device.|
 |purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
 |productKey|String|Product Key of the Windows autopilot device.|
 |manufacturer|String|Oem manufacturer of the Windows autopilot device.|
 |model|String|Model name of the Windows autopilot device.|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
 |addressableUserName|String|Addressable user name.|
 |userPrincipalName|String|User Principal Name.|
 |resourceName|String|Resource Name.|
 |skuNumber|String|SKU Number|
 |systemFamily|String|System Family|
-|azureActiveDirectoryDeviceId|String|AAD Device ID|
+|azureActiveDirectoryDeviceId|String|AAD Device ID - to be deprecated|
+|azureAdDeviceId|String|AAD Device ID|
 |managedDeviceId|String|Managed Device ID|
+|displayName|String|Display Name|
 
 
 
@@ -80,14 +83,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 1035
+Content-length: 1077
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
   "deploymentProfileAssignmentStatus": "assignedInSync",
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
-  "orderIdentifier": "Order Identifier value",
   "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
@@ -102,7 +104,9 @@ Content-length: 1035
   "skuNumber": "Sku Number value",
   "systemFamily": "System Family value",
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-  "managedDeviceId": "Managed Device Id value"
+  "azureAdDeviceId": "Azure Ad Device Id value",
+  "managedDeviceId": "Managed Device Id value",
+  "displayName": "Display Name value"
 }
 ```
 
@@ -111,7 +115,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1084
+Content-Length: 1126
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -119,7 +123,6 @@ Content-Length: 1084
   "deploymentProfileAssignmentStatus": "assignedInSync",
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
-  "orderIdentifier": "Order Identifier value",
   "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
@@ -134,11 +137,11 @@ Content-Length: 1084
   "skuNumber": "Sku Number value",
   "systemFamily": "System Family value",
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-  "managedDeviceId": "Managed Device Id value"
+  "azureAdDeviceId": "Azure Ad Device Id value",
+  "managedDeviceId": "Managed Device Id value",
+  "displayName": "Display Name value"
 }
 ```
-
-
 
 
 

@@ -1,15 +1,20 @@
 ---
 title: "Create outlookTask"
 description: "Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox."
-localization_priority: Normal
-author: "angelgolfer-ms"
+ms.localizationpriority: medium
+author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create outlookTask
+# Create outlookTask (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.
 
@@ -77,7 +82,7 @@ Content-length: 276
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlooktask-from-outlookuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktask-from-outlookuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,7 +104,7 @@ midnight in the specified time zone (EST).
 Since the `Prefer` header specifies PST, the POST method expresses all the date-related properties in the response in PST. 
 In particular, for the **startDateTime** and **dueDateTime** properties, the POST method converts midnight in EST to PST and returns them in PST in the response.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -156,3 +161,5 @@ Content-length: 576
   ]
 }
 -->
+
+

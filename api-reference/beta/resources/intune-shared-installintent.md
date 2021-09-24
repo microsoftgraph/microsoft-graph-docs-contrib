@@ -1,13 +1,15 @@
 ---
 title: "installIntent enum type"
 description: "Possible values for the install intent chosen by the admin."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # installIntent enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Possible values for the install intent chosen by the admin.
 |required|1|Required install intent.|
 |uninstall|2|Uninstall install intent.|
 |availableWithoutEnrollment|3|Available without enrollment install intent.|
-
-
 
 
 

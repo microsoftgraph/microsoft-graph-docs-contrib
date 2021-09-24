@@ -1,13 +1,15 @@
 ---
 title: "notebook: copyNotebook"
 description: "Copies a notebook to the Notebooks folder in the destination Documents library. The folder is created if it doesn't exist."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
 
 # notebook: copyNotebook
+
+Namespace: microsoft.graph
 Copies a notebook to the Notebooks folder in the destination Documents library. The folder is created if it doesn't exist.
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
@@ -39,7 +41,7 @@ In the request body, provide a JSON object that contains the parameters that you
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
+|groupId|String|The id of the group to copy to. Use only when copying to a Microsoft 365 group.|
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
 
 ## Response
@@ -70,7 +72,7 @@ Content-length: 108
 [!INCLUDE [sample-code](../includes/snippets/csharp/notebook-copynotebook-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/notebook-copynotebook-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -88,9 +90,7 @@ Content-length: 108
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -107,3 +107,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const messageRule = {
-    displayName: "Important from partner",
+    displayName: 'Important from partner',
     actions: {
-        markImportance: "high"
+        markImportance: 'high'
      }
 };
 
-let res = await client.api('/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')')
+await client.api('/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')')
 	.version('beta')
-	.update({messageRule : messageRule});
+	.update(messageRule);
 
 ```

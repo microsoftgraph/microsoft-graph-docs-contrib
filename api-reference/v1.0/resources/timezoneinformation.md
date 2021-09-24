@@ -1,13 +1,15 @@
 ---
 title: "timeZoneInformation resource type"
 description: "Represents a time zone. The supported format is Windows, and Internet Assigned Numbers Authority (IANA) time zone (also known as Olson time zone)"
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # timeZoneInformation resource type
+
+Namespace: microsoft.graph
 
 
 Represents a time zone. The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone)
@@ -48,3 +50,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

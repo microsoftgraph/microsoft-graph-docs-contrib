@@ -1,12 +1,15 @@
 ---
 title: "List deviceManagementSettingCategories"
 description: "List properties and relationships of the deviceManagementSettingCategory objects."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # List deviceManagementSettingCategories
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -17,11 +20,11 @@ List properties and relationships of the [deviceManagementSettingCategory](../re
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -57,20 +60,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 207
+Content-Length: 242
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
       "id": "4f56472c-472c-4f56-2c47-564f2c47564f",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "hasRequiredSetting": true
     }
   ]
 }
 ```
-
-
 
 
 

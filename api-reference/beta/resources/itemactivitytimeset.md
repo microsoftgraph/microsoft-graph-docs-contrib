@@ -3,11 +3,13 @@ author: daspek
 description: "The ItemActivityTimeSet resource provides information about when an activity on an item took place."
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # ItemActivityTimeSet resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,3 +60,5 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
+
+

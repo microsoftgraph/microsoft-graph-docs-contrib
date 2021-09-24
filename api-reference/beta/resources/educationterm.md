@@ -2,12 +2,14 @@
 title: "educationTerm resource type"
 description: "A term. This represents a designated portion of the academic year. It is used within educationClass."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
 
 # educationTerm resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,3 +56,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

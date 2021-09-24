@@ -1,13 +1,15 @@
 ---
 title: "educationAssignmentIndividualRecipient resource type"
 description: "Used inside the assignment.assignTo property. When set to individual recipient list, selected students in the class will "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: resourcePageType
 ---
 
 # educationAssignmentIndividualRecipient resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,3 +54,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,12 +1,15 @@
 ---
 title: "deviceManagementApplicabilityRuleType enum type"
 description: "Supported Applicability rule types for Device Configuration"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementApplicabilityRuleType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -19,8 +22,6 @@ Supported Applicability rule types for Device Configuration
 |:---|:---|:---|
 |include|0|Include|
 |exclude|1|Exclude|
-
-
 
 
 

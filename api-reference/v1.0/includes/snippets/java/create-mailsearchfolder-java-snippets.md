@@ -4,10 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-MailFolder mailFolder = new MailFolder();
-mailFolder.additionalDataManager().put("@odata.type", new JsonPrimitive("microsoft.graph.mailSearchFolder"));
+MailSearchFolder mailFolder = new MailSearchFolder();
 mailFolder.displayName = "Weekly digests";
 mailFolder.includeNestedFolders = true;
 LinkedList<String> sourceFolderIdsList = new LinkedList<String>();

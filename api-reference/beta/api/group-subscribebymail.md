@@ -1,17 +1,19 @@
 ---
 title: "group: subscribeByMail"
-description: "Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for Office 365 Groups only."
-localization_priority: Normal
-author: "dkershaw10"
+description: "Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group."
+ms.localizationpriority: medium
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # group: subscribeByMail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for Office 365 Groups only.
+Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for Microsoft 365 groups only.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +56,7 @@ POST https://graph.microsoft.com/beta/groups/{id}/subscribeByMail
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-subscribebymail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-subscribebymail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,3 +94,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

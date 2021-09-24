@@ -1,18 +1,20 @@
 ---
 title: "singleValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a single value. "
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # singleValueLegacyExtendedProperty resource type
 
-An extended property that contains a single value. 
+Namespace: microsoft.graph
 
-See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
-open extensions or extended properties, and how to specify extended properties. 
+An extended property that contains a single value.
+
+See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
+open extensions or extended properties, and how to specify extended properties.
 
 
 ## Methods
@@ -48,7 +50,6 @@ Here is a JSON representation of the resource.
   "id": "string (identifier)",
   "value": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -60,3 +61,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

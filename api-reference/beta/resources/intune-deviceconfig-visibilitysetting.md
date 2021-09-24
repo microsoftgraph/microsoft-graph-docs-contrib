@@ -1,13 +1,15 @@
 ---
 title: "visibilitySetting enum type"
 description: "Generic visibility state."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # visibilitySetting enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Generic visibility state.
 |notConfigured|0|Not configured.|
 |hide|1|Hide.|
 |show|2|Show.|
-
-
 
 
 

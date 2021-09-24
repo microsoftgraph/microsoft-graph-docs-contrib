@@ -1,13 +1,15 @@
 ---
 title: "Get defaultManagedAppProtection"
 description: "Read properties and relationships of the defaultManagedAppProtection object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get defaultManagedAppProtection
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Read properties and relationships of the [defaultManagedAppProtection](../resour
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,7 +36,7 @@ GET /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtecti
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4119
+Content-Length: 5778
 
 {
   "value": {
@@ -99,6 +101,9 @@ Content-Length: 4119
     "printBlocked": true,
     "fingerprintBlocked": true,
     "disableAppPinIfDevicePinIsSet": true,
+    "maximumRequiredOsVersion": "Maximum Required Os Version value",
+    "maximumWarningOsVersion": "Maximum Warning Os Version value",
+    "maximumWipeOsVersion": "Maximum Wipe Os Version value",
     "minimumRequiredOsVersion": "Minimum Required Os Version value",
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
@@ -110,6 +115,16 @@ Content-Length: 4119
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
     "notificationRestriction": "blockOrganizationalData",
+    "previousPinBlockCount": 5,
+    "managedBrowser": "microsoftEdge",
+    "maximumAllowedDeviceThreatLevel": "secured",
+    "mobileThreatDefenseRemediationAction": "wipe",
+    "blockDataIngestionIntoOrganizationDocuments": true,
+    "allowedDataIngestionLocations": [
+      "sharePoint"
+    ],
+    "appActionIfUnableToAuthenticateUser": "wipe",
+    "dialerRestrictionLevel": "managedApps",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -146,6 +161,7 @@ Content-Length: 4119
     "appActionIfIosDeviceModelNotAllowed": "wipe",
     "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
     "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
+    "thirdPartyKeyboardsBlocked": true,
     "filterOpenInToOnlyManagedApps": true,
     "disableProtectionOfManagedOutboundOpenInData": true,
     "protectInboundDataFromUnknownSources": true,
@@ -155,12 +171,28 @@ Content-Length: 4119
     "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
     "customBrowserProtocol": "Custom Browser Protocol value",
     "customBrowserPackageId": "Custom Browser Package Id value",
-    "customBrowserDisplayName": "Custom Browser Display Name value"
+    "customBrowserDisplayName": "Custom Browser Display Name value",
+    "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
+    "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
+    "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value",
+    "allowedAndroidDeviceModels": [
+      "Allowed Android Device Models value"
+    ],
+    "appActionIfAndroidDeviceModelNotAllowed": "wipe",
+    "customDialerAppProtocol": "Custom Dialer App Protocol value",
+    "customDialerAppPackageId": "Custom Dialer App Package Id value",
+    "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+    "biometricAuthenticationBlocked": true,
+    "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
+    "blockAfterCompanyPortalUpdateDeferralInDays": 11,
+    "warnAfterCompanyPortalUpdateDeferralInDays": 10,
+    "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+    "deviceLockRequired": true,
+    "appActionIfDeviceLockNotSet": "wipe",
+    "connectToVpnOnLaunch": true
   }
 }
 ```
-
-
 
 
 

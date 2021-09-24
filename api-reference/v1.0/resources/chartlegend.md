@@ -2,12 +2,14 @@
 title: "ChartLegend resource type"
 description: "Represents the legend in a chart."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # ChartLegend resource type
+
+Namespace: microsoft.graph
 
 Represents the legend in a chart.
 
@@ -63,3 +65,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

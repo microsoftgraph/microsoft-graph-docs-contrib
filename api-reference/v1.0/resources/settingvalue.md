@@ -1,13 +1,15 @@
 ---
 title: "settingValue resource type"
 description: "A setting represented by a name/value pair."
-localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.localizationpriority: medium
+author: "dkershaw10"
+ms.prod: "groups"
 doc_type: resourcePageType
 ---
 
 # settingValue resource type
+
+Namespace: microsoft.graph
 
 A setting represented by a name/value pair.
 
@@ -48,3 +50,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

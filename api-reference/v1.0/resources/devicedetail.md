@@ -1,13 +1,15 @@
 ---
 title: "deviceDetail resource type"
 description: "Indicates device details associated with a device used for signing in. This includes information like device browser and  operating system, and whether the device is Azure AD managed."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
 # deviceDetail resource type
+
+Namespace: microsoft.graph
 
 Indicates device details associated with a device used for signing in. This includes information like device browser and  operating system, and whether the device is Azure AD managed.
 
@@ -56,3 +58,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

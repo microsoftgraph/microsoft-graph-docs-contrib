@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Team team = new Team();
+team.isMembershipLimitedToOwners = true;
 TeamMemberSettings memberSettings = new TeamMemberSettings();
 memberSettings.allowCreateUpdateChannels = true;
 team.memberSettings = memberSettings;

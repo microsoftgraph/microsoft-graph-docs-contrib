@@ -2,12 +2,14 @@
 title: "TableSort: apply"
 description: "Perform a sort operation."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # TableSort: apply
+
+Namespace: microsoft.graph
 
 Perform a sort operation.
 ## Permissions
@@ -22,8 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/sort/apply
-POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/apply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 ```
 ## Request headers
@@ -82,7 +86,7 @@ Content-length: 298
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablesort-apply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablesort-apply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -118,3 +122,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

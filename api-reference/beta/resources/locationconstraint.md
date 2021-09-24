@@ -1,13 +1,15 @@
 ---
 title: "locationConstraint resource type"
 description: "The conditions stated by a client for the location of a meeting."
-localization_priority: Normal
-author: "angelgolfer-ms"
+ms.localizationpriority: medium
+author: "vrod9429"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # locationConstraint resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,3 +54,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

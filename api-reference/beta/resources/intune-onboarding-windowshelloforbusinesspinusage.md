@@ -1,13 +1,15 @@
 ---
 title: "windowsHelloForBusinessPinUsage enum type"
 description: "Windows Hello for Business pin usage options"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windowsHelloForBusinessPinUsage enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Windows Hello for Business pin usage options
 |allowed|0|Allowed the usage of certain pin rule|
 |required|1|Enforce the usage of certain pin rule|
 |disallowed|2|Forbit the usage of certain pin rule|
-
-
 
 
 

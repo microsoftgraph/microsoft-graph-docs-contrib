@@ -1,13 +1,15 @@
 ---
 title: "Create page"
 description: "Create a new page in the specified section."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
 
 # Create page
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -124,3 +126,5 @@ Content-length: 312
   "suppressions": []
 }
 -->
+
+

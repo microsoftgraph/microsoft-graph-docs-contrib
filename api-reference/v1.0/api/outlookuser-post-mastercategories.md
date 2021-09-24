@@ -1,13 +1,15 @@
 ---
 title: "Create Outlook category"
 description: "Create an outlookCategory object in the user's master list of categories."
-localization_priority: Normal
-author: "angelgolfer-ms"
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create Outlook category
+
+Namespace: microsoft.graph
 
 
 Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.
@@ -63,7 +65,7 @@ Content-Length: 70
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlookcategory-from-outlookuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-outlookcategory-from-outlookuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -79,7 +81,7 @@ Content-Length: 70
 
 In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,3 +111,4 @@ Content-length: 250
   "suppressions": [
   ]
 }-->
+

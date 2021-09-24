@@ -3,11 +3,13 @@ author: kevinlam
 description: "The ItemPreviewInfo resource contains information on how to embed a preview of a DriveItem."
 ms.date: 3/16/2018
 title: ItemPreviewInfo - OneDrive API
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # ItemPreviewInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,3 +44,5 @@ param1=value&param2=another%20value
 ```
 
 The formats of URLs and parameters should be considered opaque.
+
+

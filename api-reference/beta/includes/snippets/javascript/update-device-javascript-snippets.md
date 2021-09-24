@@ -14,8 +14,8 @@ const device = {
   accountEnabled: false
 };
 
-let res = await client.api('/devices/{id}')
+await client.api('/devices/{id}')
 	.version('beta')
-	.update({device : device});
+	.update(device);
 
 ```

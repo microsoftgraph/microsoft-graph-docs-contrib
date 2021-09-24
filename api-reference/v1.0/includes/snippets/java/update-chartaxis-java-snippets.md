@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookChartAxis workbookChartAxis = new WorkbookChartAxis();
-Json majorUnit = new Json();
+JsonElement majorUnit = new JsonObject();
 workbookChartAxis.majorUnit = majorUnit;
-Json maximum = new Json();
+JsonElement maximum = new JsonObject();
 workbookChartAxis.maximum = maximum;
-Json minimum = new Json();
+JsonElement minimum = new JsonObject();
 workbookChartAxis.minimum = minimum;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}").axes().valueAxis()

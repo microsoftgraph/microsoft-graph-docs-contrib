@@ -1,13 +1,15 @@
 ---
 title: "synchronizationSchema: filterOperators"
 description: "List all operators supported in the scoping filters."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "ArvindHarinder1"
+ms.prod: "applications"
 ---
 
 # synchronizationSchema: filterOperators
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
+|Delegated (work or school account)     |Directory.Read.All  |
 |Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported. | 
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
@@ -54,14 +56,14 @@ The following is an example of a request.
   "blockType": "request",
   "name": "synchronizationschema_filteroperators"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/filterOperators
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-filteroperators-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-filteroperators-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -202,3 +204,5 @@ non-string type names like "Integer" or "Boolean"
   ]
 }
 -->
+
+

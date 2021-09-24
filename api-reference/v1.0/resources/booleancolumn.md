@@ -1,14 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: BooleanColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The booleanColumn on a columnDefinition resource indicates that the column holds a boolean value."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 # BooleanColumn resource type
+
+Namespace: microsoft.graph
 
 The **booleanColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a boolean value.
 
@@ -33,3 +34,4 @@ The **booleanColumn** resource contains no properties.
   "section": "documentation",
   "tocPath": "Resources/BooleanColumn"
 } -->
+

@@ -1,13 +1,15 @@
 ---
 title: "networkSingleSignOnType enum type"
 description: "Wi-Fi Network Single Sign On Type Settings."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # networkSingleSignOnType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Wi-Fi Network Single Sign On Type Settings.
 |disabled|0|Disabled|
 |prelogon|1|Pre-Logon|
 |postlogon|2|Post-Logon|
-
-
 
 
 

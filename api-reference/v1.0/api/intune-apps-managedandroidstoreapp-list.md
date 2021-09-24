@@ -1,13 +1,15 @@
 ---
 title: "List managedAndroidStoreApps"
 description: "List properties and relationships of the managedAndroidStoreApp objects."
-author: "tfitzmac"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # List managedAndroidStoreApps
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -16,11 +18,11 @@ List properties and relationships of the [managedAndroidStoreApp](../resources/i
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -56,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1357
+Content-Length: 1405
 
 {
   "value": [
@@ -93,12 +95,15 @@ Content-Length: 1357
         "v4_3": true,
         "v4_4": true,
         "v5_0": true,
-        "v5_1": true
+        "v5_1": true,
+        "v10_0": true,
+        "v11_0": true
       }
     }
   ]
 }
 ```
+
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "room resource type"
 description: "Specifies the properties of a room in a tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: "resourcePageType"
 ---
 
 # room resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,16 +30,17 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, `managed`, and `reserved`. |
+| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, and `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
-| capacity               | String                                            | Specifies the capacity of the room. |
+| capacity               | Int32                                             | Specifies the capacity of the room. |
 | displayName            | String                                            | The name associated with the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
 | emailAddress           | String                                            | Email address of the room. |
+| floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and optionally, altitude coordinates. |
 | id                     | String                                            | Unique identifier for the room. Read-only. |
-| isWheelchairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
+| isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
 | phone                  | String                                            | The phone number of the room. |
@@ -49,7 +52,6 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
 | standard | The room can be reserved based on the other settings in this cmdlet. This is the default value. |
-| managed  | The room is managed by a delegate                         |
 | reserved | The room is available only on a first come, first served basis. It cannot be reserved.|
 
 ## Relationships
@@ -65,8 +67,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.room",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.room"
 }-->
 
 ```json
@@ -75,14 +76,15 @@ The following is a JSON representation of the resource.
   "audioDeviceName": "String",
   "bookingType": "String",
   "building": "String",
-  "capacity": "String",
+  "capacity": 1024,
   "displayName": "String",
   "displayDeviceName": "String",
   "emailAddress": "String",
+  "floorLabel": "String",
   "floorNumber": 1024,
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "id": "String (identifier)",
-  "isWheelchairAccessible": true,
+  "isWheelChairAccessible": true,
   "label": "String",
   "nickname": "String",
   "phone": "String",
@@ -100,3 +102,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

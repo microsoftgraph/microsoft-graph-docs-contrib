@@ -1,17 +1,22 @@
 ---
 title: "Delete event"
 description: "Delete event."
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "harini84"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Delete event
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete event.
+Removes the specified [event](../resources/event.md) from the containing calendar. 
+
+If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,9 +39,6 @@ DELETE /groups/{id}/calendar/events/{id}/
 
 DELETE /me/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
@@ -69,7 +71,7 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -106,3 +108,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -1,12 +1,15 @@
 ---
 title: "vpnDeadPeerDetectionRate enum type"
 description: "Determines how often to check if a peer connection is still alive"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # vpnDeadPeerDetectionRate enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +24,6 @@ Determines how often to check if a peer connection is still alive
 |none|1|None|
 |low|2|Low|
 |high|3|High|
-
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "Update program"
 description: "In the Azure AD access reviews feature, update an existing program object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "markwahl-msft"
 ---
 
 # Update program
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ The signed in user must also be in a directory role that permits them to update 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /programs('{programId}')
+PATCH /programs/{programId}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -69,7 +71,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-program-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-program-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -85,7 +87,7 @@ Content-type: application/json
 
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -120,3 +122,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

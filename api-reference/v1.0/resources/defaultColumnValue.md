@@ -1,15 +1,16 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: DefaultColumnValue
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The defaultColumnValue on a columnDefinition resource specifies the default value for this column."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # DefaultColumnValue resource type
+
+Namespace: microsoft.graph
 
 The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.
 The default value can either be specified directly or as a formula.
@@ -48,3 +49,4 @@ See [Examples of common formulas in SharePoint Lists][SPFormulas] for more infor
   "section": "documentation",
   "tocPath": "Resources/DefaultColumnValue"
 } -->
+

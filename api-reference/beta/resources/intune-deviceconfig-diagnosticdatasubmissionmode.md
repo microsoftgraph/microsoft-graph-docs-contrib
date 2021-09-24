@@ -1,13 +1,15 @@
 ---
 title: "diagnosticDataSubmissionMode enum type"
 description: "Allow the device to send diagnostic and usage telemetry data, such as Watson."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # diagnosticDataSubmissionMode enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,8 +25,6 @@ Allow the device to send diagnostic and usage telemetry data, such as Watson.
 |basic|2|Sends basic telemetry data.|
 |enhanced|3|Sends enhanced telemetry data including usage and insights data.|
 |full|4|Sends full telemetry data including diagnostic data, such as system state.|
-
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "Get dataPolicyOperation"
 description: "Retrieve the properties of the dataPolicyOperation object."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "dkershaw10"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
 # Get dataPolicyOperation
+
+Namespace: microsoft.graph
 
 Retrieve the properties of a **dataPolicyOperation** object.
 
@@ -43,14 +45,14 @@ If successful, this method returns a `200 OK` response code and a [dataPolicyOpe
   "blockType": "request",
   "name": "get_datapolicyoperation"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-datapolicyoperation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-datapolicyoperation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -65,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 ---
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,3 +100,4 @@ Content-length: 212
   "suppressions": [
   ]
 }-->
+

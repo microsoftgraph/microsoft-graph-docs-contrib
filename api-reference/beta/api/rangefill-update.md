@@ -2,12 +2,14 @@
 title: "Update rangefill"
 description: "Update the properties of rangefill object."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # Update rangefill
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format/fill
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
+PATCH /me/drive/items/{id}/workbook/names/{name}/range/format/fill
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/fill
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/fill
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/fill
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/fill
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## Optional request headers
 | Name       | Description|
@@ -66,7 +71,7 @@ Content-length: 28
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-rangefill-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-rangefill-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -81,11 +86,9 @@ Content-length: 28
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -107,3 +110,5 @@ Content-length: 28
   ]
 }
 -->
+
+

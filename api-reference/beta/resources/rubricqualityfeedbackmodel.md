@@ -1,13 +1,15 @@
 ---
 title: "rubricQualityFeedbackModel resource type"
 description: "Feedback related to a specific quality of an educationRubric"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
 # rubricQualityFeedbackModel resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

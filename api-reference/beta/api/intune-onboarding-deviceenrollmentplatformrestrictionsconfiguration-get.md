@@ -1,13 +1,15 @@
 ---
 title: "Get deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get deviceEnrollmentPlatformRestrictionsConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Read properties and relationships of the [deviceEnrollmentPlatformRestrictionsCo
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -34,7 +36,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2536
+Content-Length: 4528
 
 {
   "value": {
@@ -73,60 +75,129 @@ Content-Length: 2536
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "version": 7,
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
     "iosRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,
       "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
     },
     "windowsRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,
       "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
+    },
+    "windowsHomeSkuRestriction": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "Os Minimum Version value",
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
     },
     "windowsMobileRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,
       "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
     },
     "androidRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,
       "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
     },
     "androidForWorkRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,
       "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
+    },
+    "aospRestriction": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "Os Minimum Version value",
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
     },
     "macRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,
       "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
     },
     "macOSRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,
       "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value"
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
     }
   }
 }
 ```
-
-
 
 
 

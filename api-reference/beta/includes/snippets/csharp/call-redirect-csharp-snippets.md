@@ -10,31 +10,20 @@ var targets = new List<InvitationParticipantInfo>()
 {
 	new InvitationParticipantInfo
 	{
-		EndpointType = EndpointType.Default,
 		Identity = new IdentitySet
 		{
-			User = new Identity
+			AdditionalData = new Dictionary<string, object>()
 			{
-				Id = "550fae72-d251-43ec-868c-373732c2704f",
-				TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47",
-				DisplayName = "Heidi Steen"
+				{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
 			}
-		},
-		LanguageId = "en-US",
-		Region = "westus"
+		}
 	}
 };
 
-var targetDisposition = CallDisposition.Default;
+var callbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039";
 
-var timeout = 99;
-
-var maskCallee = false;
-
-var maskCaller = false;
-
-await graphClient.App.Calls["{id}"]
-	.Redirect(targets,targetDisposition,timeout,maskCallee,maskCaller,callbackUri)
+await graphClient.Communications.Calls["{call-id}"]
+	.Redirect(targets,null,null,null,null,callbackUri)
 	.Request()
 	.PostAsync();
 

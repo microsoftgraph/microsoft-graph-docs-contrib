@@ -1,12 +1,14 @@
 ---
 title: "List trustFrameworkPolicies"
 description: "This operation lists all trustFrameworkPolicy objects in an Azure AD B2C tenant."
-localization_priority: Normal
-author: "valnav"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "Nickgmicrosoft"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 # List trustFrameworkPolicies
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -18,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Policy.Read.TrustFramework, Policy.Read.All|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|Not supported.|
+|Application|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 
 The work or school account must be a global administrator of the tenant.
 
@@ -60,14 +62,14 @@ The following example retrieves all **trustFrameworkPolicies**.
   "blockType": "request",
   "name": "get_trustFrameworks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/policies
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-trustframeworks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-trustframeworks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,3 +122,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

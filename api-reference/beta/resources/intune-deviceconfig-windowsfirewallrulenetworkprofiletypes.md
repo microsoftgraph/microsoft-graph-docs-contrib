@@ -1,13 +1,15 @@
 ---
 title: "windowsFirewallRuleNetworkProfileTypes enum type"
 description: "Flags representing which network profile types apply to a firewall rule."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windowsFirewallRuleNetworkProfileTypes enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Flags representing which network profile types apply to a firewall rule.
 |domain|1|The profile for networks that are connected to domains.|
 |private|2|The profile for private networks.|
 |public|4|The profile for public networks.|
-
-
 
 
 

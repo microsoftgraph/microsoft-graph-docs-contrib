@@ -1,13 +1,15 @@
 ---
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "Sammak"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
 # Create invitation
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,8 +56,8 @@ The following table shows the properties that are required when you create a inv
 If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,18 +67,17 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/invitations
 Content-type: application/json
-Content-length: 551
 
 {
-  "invitedUserEmailAddress": "yyy@test.com",
-  "inviteRedirectUrl": "https://myapp.com"
+  "invitedUserEmailAddress": "admin@fabrikam.com",
+  "inviteRedirectUrl": "https://myapp.contoso.com"
 }
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-invitation-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -91,8 +92,9 @@ Content-length: 551
 ---
 
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,13 +103,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 551
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#invitations/$entity",
   "id": "7b92124c-9fa9-406f-8b8e-225df8376ba9",
   "inviteRedeemUrl": "https://invitations.microsoft.com/redeem/?tenant=04dcc6ab-388a-4559-b527-fbec656300ea&user=7b92124c-9fa9-406f-8b8e-225df8376ba9&ticket=VV9dmiExBsfRIVNFjb9ITj9VXAd07Ypv4gTg%2f8PiuJs%3d&lc=1033&ver=2.0",
-  "invitedUserDisplayName": "yyy",
-  "invitedUserEmailAddress": "yyy@test.com",
+  "invitedUserDisplayName": "Fabrikam Admin",
+  "invitedUserEmailAddress": "admin@fabrikam.com",
+  "resetRedemption": false,
   "sendInvitationMessage": false,
   "invitedUserMessageInfo": {
      "messageLanguage": null,
@@ -121,7 +124,7 @@ Content-length: 551
      ],
      "customizedMessageBody": null
   },
-  "inviteRedirectUrl": "https://myapp.com/",
+  "inviteRedirectUrl": "https://myapp.contoso.com/",
   "status": "Completed",
   "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
@@ -138,3 +141,5 @@ Content-length: 551
   "suppressions": [
   ]
 }-->
+
+

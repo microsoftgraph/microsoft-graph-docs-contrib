@@ -1,13 +1,16 @@
 ---
 title: "Update identityProvider"
 description: "Update properties in an existing identityProvider"
-localization_priority: Priority
-author: "valnav"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: high
+author: "namkedia"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Update identityProvider
+# Update identityProvider (deprecated)
+Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Update properties in an existing [identityProvider](../resources/identityprovider.md).
 
@@ -63,6 +66,7 @@ The following example updates the definition of the token lifetime **identityPro
   "blockType": "request",
   "name": "update-identityprovider"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 Content-type: application/json
@@ -76,7 +80,7 @@ Content-length: 41
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

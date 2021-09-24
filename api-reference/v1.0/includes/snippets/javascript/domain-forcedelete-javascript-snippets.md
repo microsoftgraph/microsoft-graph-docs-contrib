@@ -14,8 +14,7 @@ const forceDelete = {
   disableUserAccounts: true
 };
 
-let res = await client.api('/domains/{id}/forceDelete')
-	.version('beta')
+await client.api('/domains/{id}/forceDelete')
 	.post(forceDelete);
 
 ```

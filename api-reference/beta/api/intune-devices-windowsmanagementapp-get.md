@@ -1,13 +1,15 @@
 ---
 title: "Get windowsManagementApp"
 description: "Read properties and relationships of the windowsManagementApp object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get windowsManagementApp
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Read properties and relationships of the [windowsManagementApp](../resources/int
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,7 +36,7 @@ GET /deviceAppManagement/windowsManagementApp
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,18 +63,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 186
+Content-Length: 313
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsManagementApp",
     "id": "5facc79c-c79c-5fac-9cc7-ac5f9cc7ac5f",
-    "availableVersion": "Available Version value"
+    "availableVersion": "Available Version value",
+    "managedInstaller": "enabled",
+    "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
   }
 }
 ```
-
-
 
 
 

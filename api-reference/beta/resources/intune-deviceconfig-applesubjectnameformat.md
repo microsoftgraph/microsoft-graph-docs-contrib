@@ -1,13 +1,15 @@
 ---
 title: "appleSubjectNameFormat enum type"
 description: "Subject Name Format Options for Apple devices."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # appleSubjectNameFormat enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,8 +26,6 @@ Subject Name Format Options for Apple devices.
 |commonNameIncludingEmail|3|Common Name Including Email.|
 |commonNameAsIMEI|5|Common Name As IMEI.|
 |commonNameAsSerialNumber|6|Common Name As Serial Number.|
-
-
 
 
 

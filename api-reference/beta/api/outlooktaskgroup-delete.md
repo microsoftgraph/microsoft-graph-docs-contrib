@@ -1,15 +1,20 @@
 ---
 title: "Delete outlookTaskGroup"
 description: "Delete the specified outlookTaskGroup."
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "mashriv"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Delete outlookTaskGroup
+# Delete outlookTaskGroup (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Delete the specified [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## Permissions
@@ -55,7 +60,7 @@ DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AA
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-outlooktaskgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-outlooktaskgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,3 +97,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

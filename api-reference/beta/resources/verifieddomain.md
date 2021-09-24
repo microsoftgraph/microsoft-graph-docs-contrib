@@ -1,13 +1,15 @@
 ---
 title: "verifiedDomain resource type"
 description: "Specifies a domain for a tenant. The **verifiedDomains** property of the organization entity is a collection of **VerifiedDomain**."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "directory-management"
+author: "Jumaodhiss"
 ---
 
 # verifiedDomain resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,3 +60,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "teamFunSettings resource type"
 description: "Settings to configure use of Giphy, memes, and stickers in the team."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
 # teamFunSettings resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,3 +53,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -2,12 +2,14 @@
 title: "TableColumnCollection: ItemAt"
 description: "Gets a column based on its position in the collection."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # TableColumnCollection: ItemAt
+
+Namespace: microsoft.graph
 
 Gets a column based on its position in the collection.
 ## Permissions
@@ -21,11 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/itemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/itemAt
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/itemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
 
 ```
 ## Request headers
@@ -43,12 +46,14 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [WorkbookTableColumn](../resources/tablecolumn.md) object in the response body.
+If successful, this method returns `200 OK` response code and [WorkbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -65,7 +70,7 @@ Content-length: 20
   "index": 3
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablecolumncollection-itemat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -77,7 +82,7 @@ Content-length: 20
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,7 +94,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
@@ -107,3 +112,4 @@ Content-length: 81
   "suppressions": [
   ]
 }-->
+

@@ -1,13 +1,15 @@
 ---
 title: "defenderCloudBlockLevelType enum type"
 description: "Possible values of Cloud Block Level"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # defenderCloudBlockLevelType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Possible values of Cloud Block Level
 |high|1|High applies a strong level of detection.|
 |highPlus|2|High + uses the High level and applies addition protection measures|
 |zeroTolerance|3|Zero tolerance blocks all unknown executables|
-
-
 
 
 

@@ -1,59 +1,76 @@
 ---
-title: "List assignments"
-description: "Returns a list of assignments assigned to a user for all classes. This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace."
-localization_priority: Normal
+title: "List assignments of a user"
+description: "Returns a list of assignments assigned to a user for all classes."
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List assignments
+# List assignments of a user
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a list of assignments assigned to a user for all classes. This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
+Returns a list of assignments assigned to a user for all classes. 
+
+This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported. | 
+| Permission type                        | Permissions (from least to most privileged)                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported.                                                                                         |
+| Application                            | Not supported.                                                                                         |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/me/assignments/
-GET /education/users/{id}/assignments
+GET /education/me/assignments
 ```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.
+
 ## Example
+
 ##### Request
 The following is an example of the request.
+
 <!-- {
   "blockType": "ignored",
-  "name": "get_assignments"
+  "name": "get_me_assignments"
 }-->
+
 ```http 
 GET https://graph.microsoft.com/beta/education/me/assignments
 ```
+
 ##### Response
+
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
+
 
 <!-- {
   "blockType": "ignored",
@@ -76,6 +93,7 @@ Content-length: 344
       "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
       "assignedDateTime": "2014-01-01T00:00:00Z",
       "classId": "11010",
+      "closeDateTime": "2014-01-11T00:00:00Z",
       "createdBy": {
         "user": {
             "displayName": "Susana Rocha",

@@ -1,13 +1,15 @@
 ---
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
-localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "jpettere"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # List agreementAcceptances
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AgreementAcceptance.Read |
+|Delegated (work or school account)     | AgreementAcceptance.Read, AgreementAcceptance.Read.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
@@ -28,7 +30,7 @@ GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
 <!--
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 -->
 
 ## Request headers
@@ -48,14 +50,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "blockType": "request",
   "name": "get_agreementacceptances"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/agreementAcceptances
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreementacceptances-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-agreementacceptances-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -70,7 +72,7 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 ---
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

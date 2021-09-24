@@ -1,13 +1,15 @@
 ---
 title: "fileHash resource type"
 description: "Contains stateful information about file hashes (cryptographic and location-sensitive)."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "preetikr"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # fileHash resource type
+
+Namespace: microsoft.graph
 
 Contains stateful information about file hashes (cryptographic and location-sensitive).
 
@@ -47,3 +49,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

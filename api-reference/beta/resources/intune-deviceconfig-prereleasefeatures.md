@@ -1,13 +1,15 @@
 ---
 title: "prereleaseFeatures enum type"
 description: "Possible values for pre-release features."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # prereleaseFeatures enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Possible values for pre-release features.
 |settingsOnly|1|Settings only pre-release features.|
 |settingsAndExperimentations|2|Settings and experimentations pre-release features.|
 |notAllowed|3|Pre-release features not allowed.|
-
-
 
 
 

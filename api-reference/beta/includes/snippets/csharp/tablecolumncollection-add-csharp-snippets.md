@@ -10,15 +10,10 @@ var index = new Int32
 {
 };
 
-var values = new List<Json>()
-{
-	new Json
-	{
-	}
-};
+var values = JsonDocument.Parse("[{}]");
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
-	.Add(index,values,name)
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns
+	.Add(index,values,null)
 	.Request()
 	.PostAsync();
 

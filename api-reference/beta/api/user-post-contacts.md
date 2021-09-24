@@ -1,13 +1,15 @@
 ---
 title: "Create Contact"
 description: "Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "kevinbellinger"
+ms.localizationpriority: medium
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create Contact
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -83,7 +85,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-contact-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-contact-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -100,7 +102,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -203,3 +205,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

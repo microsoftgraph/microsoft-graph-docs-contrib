@@ -1,12 +1,15 @@
 ---
 title: "appInstallControlType enum type"
 description: "App Install control Setting"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # appInstallControlType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +25,6 @@ App Install control Setting
 |storeOnly|2|Allow apps from Store only|
 |recommendations|3|Show me app recommendations|
 |preferStore|4|Warn me before installing apps from outside the Store|
-
-
 
 
 

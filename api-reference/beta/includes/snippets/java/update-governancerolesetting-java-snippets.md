@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GovernanceRoleSetting governanceRoleSetting = new GovernanceRoleSetting();
 LinkedList<GovernanceRuleSetting> adminEligibleSettingsList = new LinkedList<GovernanceRuleSetting>();
@@ -14,7 +14,7 @@ adminEligibleSettings.setting = "{\"permanentAssignment\":false,\"maximumGrantPe
 adminEligibleSettingsList.add(adminEligibleSettings);
 governanceRoleSetting.adminEligibleSettings = adminEligibleSettingsList;
 
-graphClient.privilegedAccess("pimforazurerbac").roleSettings("5fb5aef8-1081-4b8e-bb16-9d5d0385bab5")
+graphClient.privilegedAccess("azureResources").roleSettings("5fb5aef8-1081-4b8e-bb16-9d5d0385bab5")
 	.buildRequest()
 	.patch(governanceRoleSetting);
 

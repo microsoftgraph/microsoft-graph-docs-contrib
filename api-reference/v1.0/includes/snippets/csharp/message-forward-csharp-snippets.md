@@ -20,8 +20,8 @@ var toRecipients = new List<Recipient>()
 	}
 };
 
-await graphClient.Me.Messages["{id}"]
-	.Forward(comment,toRecipients)
+await graphClient.Me.Messages["{message-id}"]
+	.Forward(toRecipients,null,comment)
 	.Request()
 	.PostAsync();
 

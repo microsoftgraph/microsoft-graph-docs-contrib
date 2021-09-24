@@ -1,13 +1,15 @@
 ---
 title: "Update educationassignment"
 description: "Update the assignment object. Only teachers in the class can do this. Note that you can't use a PATCH request to change the status of an assignment. Use the publish action to change the assignment status."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
 # Update educationassignment
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,19 +40,22 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|addedStudentAction|String| Controls the behavior for students who are added after the assignment is published.|
 |allowLateSubmissions|Boolean| Whether submissions can be submitted after the due date.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission. Indicated whether the only items on the submission came from the assignment resource list. |
 |assignDateTime|DateTimeOffset| Date the assignment should be published to students. |
 |assignTo|educationAssignmentRecipient| Students who get the assignment.|
+|closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
 |displayName|String| Name of assignment. |
 |dueDateTime|DateTimeOffset| Date assignment is due. |
 |grading|educationAssignmentGradeType| How the assignment will be graded.|
 |instructions|itemBody| Instructions to be given to the students along with the assignment. |
+|notificationChannelUrl|String| Channel to post assignment publish notification. Updating the channel URL is not allowed after the assignment has been published and is only allowed when the **assignTo** value is [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [educationAssignment](../resources/educationassignment.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -69,14 +74,16 @@ Content-length: 279
     "contentType": "Text",
     "content": "Read chapters 1 through 3"
   },
-  "dueDateTime": "2014-02-01T00:00:00Z"
+  "dueDateTime": "2014-02-01T00:00:00Z",
+  "addedStudentAction": "none",
+  "addToCalendarAction": "studentsAndPublisher",
 }
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -90,10 +97,10 @@ Content-length: 279
 
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -112,9 +119,12 @@ Content-length: 279
     "contentType": "Text",
     "content": "Read chapters 1 through 3"
   },
+  "closeDateTime": "2014-02-11T00:00:00Z",
+  "addToCalendarAction": "studentsAndPublisher",
   "dueDateTime": "2014-02-01T00:00:00Z",
   "assignDateTime": "2014-01-01T00:00:00Z",
-  "assignedDateTime": "2014-01-01T00:00:00Z"
+  "assignedDateTime": "2014-01-01T00:00:00Z",
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
 }
 ```
 
@@ -131,3 +141,5 @@ Content-length: 279
   ]
 }
 -->
+
+

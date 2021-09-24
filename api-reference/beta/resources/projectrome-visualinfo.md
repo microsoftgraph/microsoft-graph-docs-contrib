@@ -1,13 +1,15 @@
 ---
 title: "visualInfo resource type"
 description: "A complex type for representing the **visualElements** property in the activity object."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 doc_type: resourcePageType
-author: ""
+author: "ailae"
 ---
 
 # visualInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -74,3 +76,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

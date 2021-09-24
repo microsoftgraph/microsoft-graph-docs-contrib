@@ -1,15 +1,15 @@
 ---
 title: "deviceManagementTroubleshootingErrorDetails resource type"
 description: "Object containing detailed information about the error and its remediation."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementTroubleshootingErrorDetails resource type
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -50,7 +50,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

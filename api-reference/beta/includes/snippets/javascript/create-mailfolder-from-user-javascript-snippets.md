@@ -11,11 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const mailFolder = {
-  displayName: "displayName-value"
+  displayName: 'Clutter',
+  isHidden: true
 };
 
-let res = await client.api('/me/mailFolders')
+await client.api('/me/mailFolders')
 	.version('beta')
-	.post({mailFolder : mailFolder});
+	.post(mailFolder);
 
 ```

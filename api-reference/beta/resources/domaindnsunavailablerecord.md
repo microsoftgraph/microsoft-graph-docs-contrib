@@ -1,13 +1,15 @@
 ---
 title: "domainDnsUnavailableRecord resource type"
-description: "When you query for the navigation property **serviceConfigurationRecords** for a Domain entity, you may get back one or more DomainDnsCnameRecord, DomainDnsMxRecord, DomainDnsSrvRecord, and/or DomainDnsTxtRecord entities. These entities indicate what DNS records you must add to the zone file of the domain, before the domain can be used by Microsoft Online Services. When it is not possible to generate such entities, a DomainDnsUnavailableRecord Entity is returned instead. Inherited from DomainDnsRecord entity."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+description: "Indicates that serviceConfigurationRecords cannot be generated."
+ms.localizationpriority: medium
+author: "adimitui"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
 # domainDnsUnavailableRecord resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,3 +64,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

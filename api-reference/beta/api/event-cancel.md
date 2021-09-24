@@ -1,13 +1,15 @@
 ---
 title: "event: cancel"
 description: "This action allows the organizer of a meeting to send a cancellation message and cancel the event. "
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "harini84"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # event: cancel
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,9 +46,6 @@ POST /groups/{id}/calendar/events/{id}/cancel
 
 POST /me/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/cancel
-
-POST /me/calendargroup/calendars/{id}/events/{id}/cancel
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/cancel
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
@@ -90,7 +89,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-cancel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-cancel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -128,3 +127,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

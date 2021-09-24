@@ -1,13 +1,15 @@
 ---
 title: "plannerFavoritePlanReference resource type"
 description: "The **plannerFavoritePlanReference** resource type repesents a reference to a plannerPlan that has been marked as a favorite by the user. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
 # plannerFavoritePlanReference resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +58,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

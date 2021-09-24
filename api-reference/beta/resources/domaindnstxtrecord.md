@@ -1,13 +1,15 @@
 ---
 title: "domainDnsTxtRecord resource type"
-description: "Represents a TXT record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity."
-author: "davidmu1"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+description: "Represents a TXT record added to the DNS zone file of a particular domain in the tenant."
+author: "adimitui"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
 # domainDnsTxtRecord resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -68,3 +70,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

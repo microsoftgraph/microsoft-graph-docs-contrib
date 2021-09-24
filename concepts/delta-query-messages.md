@@ -1,8 +1,9 @@
 ---
 title: "Get incremental changes to messages in a folder"
 description: "Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of"
-author: "piotrci"
-localization_priority: Priority
+author: "davidmu1"
+ms.localizationpriority: high
+ms.custom: graphiamtop20
 ---
 
 # Get incremental changes to messages in a folder
@@ -50,8 +51,8 @@ See the [example](#example-to-synchronize-messages-in-a-folder) below to learn h
 - There is limited support for `$filter` and `$orderby`:
   - The only supported `$filter` expressions are `$filter=receivedDateTime+ge+{value}`
   or `$filter=receivedDateTime+gt+{value}`.
-  - The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
-  an `$orderby` expression, the return order is not guaranteed.
+  - Applying `$filter` in a delta query returns only up to 5,000 messages.
+  - The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include an `$orderby` expression, the return order is not guaranteed.
 - There is no support for `$search`.
 
 ### Optional request header
@@ -143,7 +144,7 @@ The `nextLink` URL indicates there are more messages in the folder to get.
       "@odata.type": "#microsoft.graph.message",
       "@odata.etag": "W/\"CQAAABYAAAARn2vdzPFjSbaPPxzjlzOTAAASsKZz\"",
       "subject": "Holiday hours update",
-      "isRead": "false",
+      "isRead": false,
       "sender": {
         "emailAddress": {
           "name": "Dana Swope",
@@ -156,7 +157,7 @@ The `nextLink` URL indicates there are more messages in the folder to get.
       "@odata.type": "#microsoft.graph.message",
       "@odata.etag": "W/\"CQAAABYAAAARn2vdzPFjSbaPPxzjlzOTAAAEfYB/\"",
       "subject": "Holiday promotion sale",
-      "isRead": "true",
+      "isRead": true,
       "sender": {
         "emailAddress": {
           "name": "Samantha Booth",

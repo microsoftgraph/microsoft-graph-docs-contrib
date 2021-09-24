@@ -4,12 +4,17 @@ description: An item object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
 
 # items resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents an item in Dynamics 365 Business Central.
 
 ## Methods
@@ -71,5 +76,7 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+
 
 

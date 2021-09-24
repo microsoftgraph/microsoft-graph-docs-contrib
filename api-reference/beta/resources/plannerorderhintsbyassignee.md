@@ -1,13 +1,15 @@
 ---
 title: "plannerOrderHintsByAssignee resource type"
 description: "The **plannerOrderHintsByAssignee** is a resource that contains ordering hints for assignees in a plannerTask resource, to indicate the order of the task in Assigned To view of the Task Board."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
 # plannerOrderHintsByAssignee resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,3 +50,5 @@ Example:
   "suppressions": []
 }
 -->
+
+

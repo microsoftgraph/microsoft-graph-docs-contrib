@@ -1,13 +1,15 @@
 ---
 title: "deviceAndAppManagementAssignedRoleDetails resource type"
 description: "The set of Role Definitions and Role Assignments assigned to a user."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceAndAppManagementAssignedRoleDetails resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,8 +20,8 @@ The set of Role Definitions and Role Assignments assigned to a user.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|roleDefinitionIds|String collection|Role Definition IDs for the specifc Role Definitions assigned to a user.|
-|roleAssignmentIds|String collection|Role Assignment IDs for the specifc Role Assignments assigned to a user.|
+|roleDefinitionIds|String collection|Role Definition IDs for the specifc Role Definitions assigned to a user. This property is read-only.|
+|roleAssignmentIds|String collection|Role Assignment IDs for the specifc Role Assignments assigned to a user. This property is read-only.|
 
 ## Relationships
 None
@@ -42,8 +44,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

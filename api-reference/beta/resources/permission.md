@@ -1,13 +1,14 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: permission resource type
 description: permission resource representing a sharing permission granted for a driveItem
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # permission resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -69,14 +70,13 @@ Here is a JSON representation of the resource.
 | expirationDateTime  | DateTimeOffset              | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
 | hasPassword         | Boolean                     | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
 
-### Roles enumeration values
+### Roles property values
 
-| Value        | Details                                                                        |
-|:------------|:-------------------------------------------------------------------------------|
-| `read`      | Provides the ability to read the metadata and contents of the item.            |
-| `write`     | Provides the ability to read and modify the metadata and contents of the item. |
-| `sp.owner`  | For SharePoint and OneDrive for Business this represents the owner role.       |
-| `sp.member` | For SharePoint and OneDrive for Business this represents the member role.      |
+| Value              | Description                                                                        |
+|:------------------|:-------------------------------------------------------------------------------|
+| read            | Provides the ability to read the metadata and contents of the item.            |
+| write           | Provides the ability to read and modify the metadata and contents of the item. |
+| owner           | For SharePoint and OneDrive for Business this represents the owner role.       |
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
@@ -241,8 +241,8 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 | [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`
 | [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-
-
+| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
+| [Revoke grants](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
 
 [createLink]: ../api/driveitem-createlink.md
 [grant]: ../api/permission-grant.md

@@ -1,13 +1,15 @@
 ---
 title: "prompt resource type"
 description: "Prompt action base type."
-author: "VinodRavichandran"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "ananmishr"
+ms.localizationpriority: medium
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # prompt resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,3 +48,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

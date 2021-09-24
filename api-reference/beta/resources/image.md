@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The Image resource groups image-related properties into a single structure."
 ms.date: 09/10/2017
 title: Image
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # Image resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,3 +52,5 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
+
+

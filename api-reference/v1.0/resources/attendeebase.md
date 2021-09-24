@@ -1,13 +1,15 @@
 ---
 title: "attendeeBase resource type"
 description: "The type of attendee."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "harini84"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # attendeeBase resource type
+
+Namespace: microsoft.graph
 
 The type of attendee.
 
@@ -48,3 +50,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

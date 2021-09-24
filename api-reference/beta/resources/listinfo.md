@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The listInfo complex type provides additional information about a list."
 ms.date: 09/11/2017
 title: ListInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # ListInfo resource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,3 +62,5 @@ For developers familiar with SharePoint's CSOM APIs, the `template` value corres
   "suppressions": []
 }
 -->
+
+

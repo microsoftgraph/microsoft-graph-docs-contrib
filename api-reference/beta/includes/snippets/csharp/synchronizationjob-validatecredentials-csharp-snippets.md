@@ -20,8 +20,8 @@ var credentials = new List<SynchronizationSecretKeyStringValuePair>()
 	}
 };
 
-await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{id}"]
-	.ValidateCredentials(applicationIdentifier,templateId,useSavedCredentials,credentials)
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"]
+	.ValidateCredentials(null,null,null,credentials)
 	.Request()
 	.PostAsync();
 

@@ -1,15 +1,20 @@
 ---
 title: "Delete outlookTaskFolder"
 description: "Delete the specified Outlook task folder."
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "mashriv"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Delete outlookTaskFolder
+# Delete outlookTaskFolder (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Delete the specified Outlook task folder.
 ## Permissions
@@ -57,7 +62,7 @@ DELETE https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPXA
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-outlooktaskfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-outlooktaskfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -94,3 +99,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

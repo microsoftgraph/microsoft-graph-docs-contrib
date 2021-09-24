@@ -1,13 +1,15 @@
 ---
 title: "networkInterface resource type"
 description: "Represents a Network Interface Card (NIC) associated with this host."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # networkInterface resource type
+
+Namespace: microsoft.graph
 
 Represents a Network Interface Card (NIC) associated with this host.
 
@@ -53,3 +55,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "requiredResourceAccess resource type"
-description: "Specifies the set of OAuth 2.0 permission scopes and app roles under the specified resource that an application requires access to. The specified OAuth 2.0 permission scopes may be requested by client applications (through the **requiredResourceAccess** collection) when calling a resource application. The **requiredResourceAccess** property of the application entity is a collection of **ReqiredResourceAccess**."
-localization_priority: Normal
+description: "Specifies the set of OAuth 2.0 permission scopes and app roles."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "applications"
+author: "psignoret"
 ---
 
 # requiredResourceAccess resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,3 +53,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

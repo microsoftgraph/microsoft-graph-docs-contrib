@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const inferenceClassificationOverride = {
-  classifyAs: "focused"
+  classifyAs: 'focused'
 };
 
-let res = await client.api('/me/inferenceClassification/overrides/{id}')
+await client.api('/me/inferenceClassification/overrides/{id}')
 	.version('beta')
-	.update({inferenceClassificationOverride : inferenceClassificationOverride});
+	.update(inferenceClassificationOverride);
 
 ```

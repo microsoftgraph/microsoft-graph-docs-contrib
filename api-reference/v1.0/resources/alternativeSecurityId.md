@@ -1,13 +1,15 @@
 ---
 title: "alternativeSecurityId resource type"
 description: "For internal use only."
-localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.localizationpriority: medium
+author: "spunukol"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
 # alternativeSecurityId resource type
+
+Namespace: microsoft.graph
 
 For internal use only. This complex type will be deprecated in the future.
 
@@ -32,3 +34,4 @@ For internal use only. This complex type will be deprecated in the future.
 | type             | Int32      | For internal use only
 | identityProvider | string     | For internal use only
 | key              | Edm.Binary | For internal use only
+

@@ -1,13 +1,15 @@
 ---
 title: "siteSecurityLevel enum type"
 description: "Possible values for site security level."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # siteSecurityLevel enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,8 +26,6 @@ Possible values for site security level.
 |medium|3|Medium.|
 |mediumHigh|4|Medium-high.|
 |high|5|High.|
-
-
 
 
 

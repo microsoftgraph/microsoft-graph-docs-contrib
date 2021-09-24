@@ -1,13 +1,15 @@
 ---
 title: "skypeForBusinessPeerToPeerActivityMinuteCounts resource type"
 description: "The following is a JSON representation of the resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "kszb"
 ---
 
 # skypeForBusinessPeerToPeerActivityMinuteCounts resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 
@@ -30,10 +32,12 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "audio": 1024, 
-  "video": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "audio": 1024,
+  "video": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```
+
+

@@ -4,13 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String address = "address-value";
-
-graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}")
+WorkbookRange workbookRange = graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}")
 	.range()
 	.buildRequest()
-	.post();
+	.get();
 
 ```

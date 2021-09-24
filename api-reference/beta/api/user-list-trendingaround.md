@@ -1,13 +1,15 @@
 ---
 title: "List trendingAround"
 description: "Calculated insight that returns the list of items trending around a user."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "jpettere"
+ms.localizationpriority: medium
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # List trendingAround
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ GET /drive/root/createdByUser/trendingAround
 GET /drive/root/lastModifiedByUser/trendingAround
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header         | Value                      |
@@ -53,7 +55,7 @@ If successful, this method returns a 200 OK response code and collection of [dri
 GET https://graph.microsoft.com/beta/me/trendingAround
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -13,25 +13,20 @@ const client = Client.init(options);
 const redirect = {
   targets: [
     {
-      endpointType: "default",
+      '@odata.type': '#microsoft.graph.invitationParticipantInfo',
       identity: {
-        user: {
-          id: "550fae72-d251-43ec-868c-373732c2704f",
-          tenantId: "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          displayName: "Heidi Steen"
+        '@odata.type': '#microsoft.graph.identitySet',
+        phone: {
+          '@odata.type': '#microsoft.graph.identity',
+          id: '+12345678901'
         }
-      },
-      languageId: "en-US",
-      region: "westus"
+      }
     }
   ],
-  targetDisposition: "default",
-  timeout: 99,
-  maskCallee: false,
-  maskCaller: false
+  callbackUri: 'https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039'
 };
 
-let res = await client.api('/app/calls/{id}/redirect')
+await client.api('/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect')
 	.version('beta')
 	.post(redirect);
 

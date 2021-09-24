@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "The listInfo complex type provides additional information about a list."
 doc_type: resourcePageType
 ---
 
 # ListInfo resource
+
+Namespace: microsoft.graph
 
 The **listInfo** complex type provides additional information about a [list][].
 
@@ -61,3 +62,4 @@ For developers familiar with SharePoint's CSOM APIs, the `template` value corres
   ],
   "tocPath": ""
 }-->
+

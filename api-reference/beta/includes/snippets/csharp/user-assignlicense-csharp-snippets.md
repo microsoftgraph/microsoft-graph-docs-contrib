@@ -10,23 +10,23 @@ var addLicenses = new List<AssignedLicense>()
 {
 	new AssignedLicense
 	{
-		DisabledPlans = new List<String>()
+		DisabledPlans = new List<Guid>()
 		{
-			"11b0131d-43c8-4bbb-b2c8-e80f9a50834a"
+			Guid.Parse("11b0131d-43c8-4bbb-b2c8-e80f9a50834a")
 		},
-		SkuId = "skuId-value-1"
+		SkuId = Guid.Parse("skuId-value-1")
 	},
 	new AssignedLicense
 	{
-		DisabledPlans = new List<String>()
+		DisabledPlans = new List<Guid>()
 		{
-			"a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235"
+			Guid.Parse("a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235")
 		},
-		SkuId = "skuId-value-2"
+		SkuId = Guid.Parse("skuId-value-2")
 	}
 };
 
-var removeLicenses = new List<String>()
+var removeLicenses = new List<Guid>()
 {
 };
 

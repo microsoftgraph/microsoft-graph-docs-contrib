@@ -1,13 +1,15 @@
 ---
 title: "resourceAction resource type"
 description: "Set of allowed and not allowed actions for a resource."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # resourceAction resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -42,8 +44,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

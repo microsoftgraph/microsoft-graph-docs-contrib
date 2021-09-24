@@ -1,13 +1,15 @@
 ---
 title: "audioDuckingConfiguration resource type"
 description: "Parameters for ducking of other sources (phasing in and out of other sources.)"
-author: "VinodRavichandran"
-localization_priority: Normal
+author: "ananmishr"
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
 # audioDuckingConfiguration resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,3 +57,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

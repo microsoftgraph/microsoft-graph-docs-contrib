@@ -1,13 +1,15 @@
 ---
 title: "Get macOSGeneralDeviceConfiguration"
 description: "Read properties and relationships of the macOSGeneralDeviceConfiguration object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get macOSGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Read properties and relationships of the [macOSGeneralDeviceConfiguration](../re
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3471
+Content-Length: 5363
 
 {
   "value": {
@@ -121,10 +123,9 @@ Content-Length: 3471
     "passwordPreviousPasswordBlockCount": 2,
     "passwordRequiredType": "alphanumeric",
     "passwordRequired": true,
+    "passwordMaximumAttemptCount": 11,
+    "passwordMinutesUntilFailedLoginReset": 4,
     "keychainBlockCloudSync": true,
-    "airPrintBlocked": true,
-    "airPrintForceTrustedTLS": true,
-    "airPrintBlockiBeaconDiscovery": true,
     "safariBlockAutofill": true,
     "cameraBlocked": true,
     "iTunesBlockMusicService": true,
@@ -147,7 +148,7 @@ Content-Length: 3471
     "passwordBlockProximityRequests": true,
     "passwordBlockAirDropSharing": true,
     "softwareUpdatesEnforcedDelayInDays": 2,
-    "softwareUpdatesForceDelayed": true,
+    "updateDelayPolicy": "delayOSUpdateVisibility",
     "contentCachingBlocked": true,
     "iCloudBlockPhotoLibrary": true,
     "screenCaptureBlocked": true,
@@ -155,12 +156,58 @@ Content-Length: 3471
     "classroomAppForceUnpromptedScreenObservation": true,
     "classroomForceAutomaticallyJoinClasses": true,
     "classroomForceRequestPermissionToLeaveClasses": true,
-    "classroomForceUnpromptedAppAndDeviceLock": true
+    "classroomForceUnpromptedAppAndDeviceLock": true,
+    "iCloudBlockActivityContinuation": true,
+    "privacyAccessControls": [
+      {
+        "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+        "displayName": "Display Name value",
+        "identifier": "Identifier value",
+        "identifierType": "path",
+        "codeRequirement": "Code Requirement value",
+        "staticCodeValidation": true,
+        "blockCamera": true,
+        "blockMicrophone": true,
+        "blockScreenCapture": true,
+        "blockListenEvent": true,
+        "speechRecognition": "enabled",
+        "accessibility": "enabled",
+        "addressBook": "enabled",
+        "calendar": "enabled",
+        "reminders": "enabled",
+        "photos": "enabled",
+        "mediaLibrary": "enabled",
+        "fileProviderPresence": "enabled",
+        "systemPolicyAllFiles": "enabled",
+        "systemPolicySystemAdminFiles": "enabled",
+        "systemPolicyDesktopFolder": "enabled",
+        "systemPolicyDocumentsFolder": "enabled",
+        "systemPolicyDownloadsFolder": "enabled",
+        "systemPolicyNetworkVolumes": "enabled",
+        "systemPolicyRemovableVolumes": "enabled",
+        "postEvent": "enabled",
+        "appleEventsAllowedReceivers": [
+          {
+            "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+            "codeRequirement": "Code Requirement value",
+            "identifier": "Identifier value",
+            "identifierType": "path",
+            "allowed": true
+          }
+        ]
+      }
+    ],
+    "addingGameCenterFriendsBlocked": true,
+    "gameCenterBlocked": true,
+    "multiplayerGamingBlocked": true,
+    "wallpaperModificationBlocked": true,
+    "eraseContentAndSettingsBlocked": true,
+    "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
+    "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
+    "softwareUpdateNonOSDeferredInstallDelayInDays": 13
   }
 }
 ```
-
-
 
 
 

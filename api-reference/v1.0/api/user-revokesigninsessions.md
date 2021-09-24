@@ -1,13 +1,15 @@
 ---
 title: "user: revokeSignInSessions"
 description: "Invalidates all the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time."
-localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "jpettere"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # user: revokeSignInSessions
+
+Namespace: microsoft.graph
 
 Invalidates all the refresh tokens issued to applications for a user (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device. This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they have previously consented to, independent of device.
 
@@ -22,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account)     | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Application                            | User.ReadWrite.All, Directory.ReadWrite.All,|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,6 +39,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
 
 ## Request body
 This operation has no request content.
@@ -44,6 +47,9 @@ This operation has no request content.
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
+
+>[!NOTE]
+>This API has a [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). It returns a different HTTP response code.
 
 ## Example
 The following example shows how to call this API.
@@ -62,7 +68,7 @@ POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,3 +105,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

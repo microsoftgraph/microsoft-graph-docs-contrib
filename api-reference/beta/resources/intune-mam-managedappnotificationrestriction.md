@@ -1,12 +1,15 @@
 ---
 title: "managedAppNotificationRestriction enum type"
 description: "Restrict managed app notification"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # managedAppNotificationRestriction enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,8 +23,6 @@ Restrict managed app notification
 |allow|0|Share all notifications.|
 |blockOrganizationalData|1|Do not share Orgnizational data in notifications.|
 |block|2|Do not share notifications.|
-
-
 
 
 

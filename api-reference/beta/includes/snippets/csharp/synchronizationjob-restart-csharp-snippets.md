@@ -8,10 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var criteria = new SynchronizationJobRestartCriteria
 {
-	ResetScope = SynchronizationJobRestartScope.QuarantineState | SynchronizationJobRestartScope.Watermark | SynchronizationJobRestartScope.Escrows
+	ResetScope = SynchronizationJobRestartScope.Escrows | SynchronizationJobRestartScope.Watermark | SynchronizationJobRestartScope.QuarantineState
 };
 
-await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{jobId}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"]
 	.Restart(criteria)
 	.Request()
 	.Header("Authorization","Bearer <token>")

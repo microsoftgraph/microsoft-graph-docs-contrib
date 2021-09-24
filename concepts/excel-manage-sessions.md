@@ -1,7 +1,7 @@
 ---
 title: "Manage sessions and persistence in Excel with Microsoft Graph"
 description: "If your application needs to make more than one or two calls to the Excel API, you should create a session and pass the session Id with each request. The presence of a session Id in the requests ensures that you are using the Excel API in the most efficient way possible."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 ---
@@ -20,7 +20,14 @@ To represent the session in the API, use the `workbook-session-id: {session-id}`
 
 >**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
 
-## Next step
+## Request types
+Suggested [error handling](workbook-error-handling.md) for Excel APIs is based on request type, error code, and status code. The following are the request types:
+
+- **CreateSession request** - Used to create either a persistent or a non-persistent session. In a successful response, the session ID will be returned in the **id** property in the response body. For details, see [Create session](/graph/api/workbook-createsession?view=graph-rest-1.0).
+- **Sessionful request** - Subsequent requests that follow a CreateSession request. They usually include a `workbook-session-id: {session-id}` header. The exception is a poll status request, which uses the long-running operation pattern. For details, see [working with APIs that take a long time to complete](./workbook-best-practice.md#working-with-apis-that-take-a-long-time-to-complete).
+- **Sessionless request** - Used in Sessionless mode. These requests don't have a `workbook-session-id: {session-id}` header.  
+
+## Next steps
 To learn how to create and use sessions, see the [Create session reference topic](/graph/api/workbook-createsession?view=graph-rest-1.0).
 
 ## See also

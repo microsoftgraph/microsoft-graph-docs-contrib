@@ -1,17 +1,19 @@
 ---
 title: "Get a directory setting template"
-description: "A directory setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+description: "Allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults."
+ms.localizationpriority: medium
+author: "adimitui"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
 # Get a directory setting template
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A directory setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.
+A directory setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the **directorySettingTemplate** object, including the available settings and their defaults.
 
 > **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *Get groupSettingTemplate*.
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /directorySettingTemplates/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -44,22 +46,23 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [directorySettingTemplate](../resources/directorysettingtemplate.md) object in the response body.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directorysettingtemplate"
 }-->
-```http
-GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/directorySettingTemplates/08d542b9-071f-4e16-94b0-74abb372e3d9
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysettingtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directorysettingtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -73,8 +76,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 
 ---
 
+
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,20 +88,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 270
 
 {
-  "id": "id-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directorySettingTemplates/$entity",
+  "id": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "deletedDateTime": null,
+  "displayName": "Group.Unified.Guest",
+  "description": "Settings for a specific Unified Group",
   "values": [
     {
-      "name": "name-value",
-      "type": "type-value",
-      "defaultValue": "defaultValue-value",
-      "description": "description-value"
+      "name": "AllowToAddGuests",
+      "type": "System.Boolean",
+      "defaultValue": "true",
+      "description": "Flag indicating if guests are allowed in a specific Unified Group."
     }
-  ],
+  ]
 }
 ```
 
@@ -113,3 +119,5 @@ Content-length: 270
   ]
 }
 -->
+
+

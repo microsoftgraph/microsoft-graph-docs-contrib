@@ -1,13 +1,15 @@
 ---
 title: "emailAddress resource type"
 description: "The name and email address of a contact or message recipient."
-localization_priority: Normal
-author: "angelgolfer-ms"
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # emailAddress resource type
+
+Namespace: microsoft.graph
 
 The name and email address of a contact or message recipient.
 
@@ -46,3 +48,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

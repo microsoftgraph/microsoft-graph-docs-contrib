@@ -2,12 +2,14 @@
 title: "ChartFill resource type"
 description: "Represents the fill formatting for a chart element."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # ChartFill resource type
+
+Namespace: microsoft.graph
 
 Represents the fill formatting for a chart element.
 
@@ -50,3 +52,4 @@ None
   "section": "documentation",
   "tocPath": ""
 }-->
+

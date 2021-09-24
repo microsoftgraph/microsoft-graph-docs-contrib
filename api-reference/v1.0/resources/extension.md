@@ -1,13 +1,15 @@
 ---
 title: "extension resource type"
 description: "An abstract type to support the OData v4 open type openTypeExtension."
-localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.localizationpriority: medium
+author: "keylimesoda"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
 # extension resource type
+
+Namespace: microsoft.graph
 
 An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).
 
@@ -55,3 +57,4 @@ See the methods of the derived type [openTypeExtension](opentypeextension.md) fo
   "section": "documentation",
   "tocPath": ""
 }-->
+

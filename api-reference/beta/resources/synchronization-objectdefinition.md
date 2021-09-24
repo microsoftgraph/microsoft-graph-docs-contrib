@@ -1,13 +1,15 @@
 ---
 title: "objectDefinition resource type"
-description: "Describes an object and its attributes. Object definitions are part of directoryDefinition, which is updated as part of synchronizationSchema."
-localization_priority: Normal
+description: "Describes an object and its attributes."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "ArvindHarinder1"
+ms.prod: "applications"
 ---
 
 # objectDefinition resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -446,3 +448,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

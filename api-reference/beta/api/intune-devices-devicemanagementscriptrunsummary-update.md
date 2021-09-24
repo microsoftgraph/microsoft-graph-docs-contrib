@@ -1,13 +1,15 @@
 ---
 title: "Update deviceManagementScriptRunSummary"
 description: "Update the properties of a deviceManagementScriptRunSummary object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update deviceManagementScriptRunSummary
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Update the properties of a [deviceManagementScriptRunSummary](../resources/intun
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -30,7 +32,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
+PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/runSummary
 ```
 
 ## Request headers
@@ -46,7 +50,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script run summary entity.|
+|id|String|Key of the device management script run summary entity. This property is read-only.|
 |successDeviceCount|Int32|Success device count.|
 |errorDeviceCount|Int32|Error device count.|
 |successUserCount|Int32|Success user count.|
@@ -62,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 Content-type: application/json
 Content-length: 179
 
@@ -91,8 +95,6 @@ Content-Length: 228
   "errorUserCount": 14
 }
 ```
-
-
 
 
 

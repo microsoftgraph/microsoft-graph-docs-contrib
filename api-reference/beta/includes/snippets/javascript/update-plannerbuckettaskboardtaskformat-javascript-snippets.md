@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const plannerBucketTaskBoardTaskFormat = {
-  orderHint: "A6673H Ejkl!"
+  orderHint: 'A6673H Ejkl!'
 };
 
-let res = await client.api('/planner/tasks/hsOf2dhOJkqyYYZEtdzDe2QAIUCR/bucketTaskBoardFormat')
+await client.api('/planner/tasks/hsOf2dhOJkqyYYZEtdzDe2QAIUCR/bucketTaskBoardFormat')
 	.version('beta')
-	.update({plannerBucketTaskBoardTaskFormat : plannerBucketTaskBoardTaskFormat});
+	.update(plannerBucketTaskBoardTaskFormat);
 
 ```

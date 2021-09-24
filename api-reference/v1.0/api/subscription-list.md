@@ -1,13 +1,15 @@
 ---
 title: "List subscriptions"
 description: "Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant."
-localization_priority: Priority
-author: "piotrci"
-ms.prod: ""
+ms.localizationpriority: high
+author: "Jumaodhiss"
+ms.prod: "change-notifications"
 doc_type: apiPageType
 ---
 
 # List subscriptions
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant.
 
@@ -52,7 +54,7 @@ GET /subscriptions
 
 ## Optional query parameters
 
-This method does not support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method does not support the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -79,14 +81,14 @@ If successful, this method returns a `200 OK` response code and a list of [subsc
   "name": "get_subscriptions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/subscriptions
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -107,7 +109,7 @@ Here's an example of the response.  Note that it may be truncated for brevity.  
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription",
   "isCollection": true
 } -->
@@ -127,8 +129,14 @@ Content-length: 586
       "changeType": "updated,deleted",
       "clientState": null,
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
+      "lifecycleNotificationUrl":"https://webhook.azurewebsites.net/api/send/lifecycleNotifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
-      "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+      "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+      "latestSupportedTlsVersion": "v1_2",
+      "encryptionCertificate": "",
+      "encryptionCertificateId": "",
+      "includeResourceData": false,
+      "notificationContentType": "application/json"
     }
   ]
 }
@@ -145,5 +153,7 @@ Content-length: 586
   "suppressions": [
   ]
 }-->
+
+> **Note:** the `clientState` property value is not returned for security purposes.  
 
 When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](/graph/paging).

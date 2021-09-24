@@ -3,11 +3,13 @@ author: daspek
 description: "The itemActionStat resource provides aggregate details about an action over a period of time."
 ms.date: 09/14/2017
 title: ItemActionStat
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # itemActionStat resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,3 +47,5 @@ The **itemActionStat** resource provides aggregate details about an action over 
   "suppressions": []
 }
 -->
+
+

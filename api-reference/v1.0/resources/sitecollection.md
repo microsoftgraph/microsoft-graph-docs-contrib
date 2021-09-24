@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SiteCollection
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "The siteCollection resource provides more information about a site collection."
 doc_type: resourcePageType
 ---
 
 # SiteCollection resource
+
+Namespace: microsoft.graph
 
 The **siteCollection** resource provides more information about a site collection.
 
@@ -29,6 +30,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "hostname": "contoso.sharepoint.com",
+  "dataLocationCode": "EUR",
   "root": { "@odata.type": "microsoft.graph.root" }
 }
 ```
@@ -38,6 +40,7 @@ Here is a JSON representation of the resource.
 | Property name        | Type     | Description
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | string   | The hostname for the site collection. Read-only.
+| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Read-only.
 | **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only.
 
 [root]: root.md
@@ -51,3 +54,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "Facets/SiteCollection"
 }-->
+

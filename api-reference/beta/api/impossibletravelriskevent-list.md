@@ -1,15 +1,20 @@
 ---
 title: "List impossibleTravelRiskEvents"
 description: "Retrieve a list of impossibletravelriskevent objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "cloudhandler"
+ms.prod: "identity-and-sign-in"
 ---
 
-# List impossibleTravelRiskEvents
+# List impossibleTravelRiskEvents (deprecated)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!CAUTION]
+>The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Retrieve a list of impossibletravelriskevent objects.
 ## Permissions
@@ -49,7 +54,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/impossibleTravelRiskEvents
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,3 +104,5 @@ Content-length: 313
   "suppressions": []
 }
 -->
+
+

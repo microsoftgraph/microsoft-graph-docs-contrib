@@ -1,13 +1,15 @@
 ---
 title: "importedDeviceIdentityType enum type"
 description: "Not yet documented"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # importedDeviceIdentityType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Not yet documented
 |unknown|0|Unknown value of importedDeviceIdentityType.|
 |imei|1|Device Identity is of type imei.|
 |serialNumber|2|Device Identity is of type serial number.|
-
-
 
 
 

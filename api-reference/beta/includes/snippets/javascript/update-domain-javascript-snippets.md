@@ -13,13 +13,13 @@ const client = Client.init(options);
 const domain = {
   isDefault: true,
   supportedServices: [
-    "Email",
-    "OfficeCommunicationsOnline"
+    'Email',
+    'OfficeCommunicationsOnline'
   ]
 };
 
-let res = await client.api('/domains/contoso.com')
+await client.api('/domains/contoso.com')
 	.version('beta')
-	.update({domain : domain});
+	.update(domain);
 
 ```

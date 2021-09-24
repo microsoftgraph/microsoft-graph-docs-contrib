@@ -1,13 +1,15 @@
 ---
 title: "Update conversation thread"
 description: "Update a thread object."
-author: "dkershaw10"
-localization_priority: Normal
+author: "Jordanndahl"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Update conversation thread
+
+Namespace: microsoft.graph
 Update a [thread](../resources/conversationthread.md) object.
 
 ## Permissions
@@ -64,7 +66,7 @@ Content-length: 655
   "isReminderOn": true
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,3 +95,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

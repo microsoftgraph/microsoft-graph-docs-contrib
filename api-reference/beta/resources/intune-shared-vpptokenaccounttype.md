@@ -1,13 +1,15 @@
 ---
 title: "vppTokenAccountType enum type"
 description: "Possible types of an Apple Volume Purchase Program token."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # vppTokenAccountType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,8 +22,6 @@ Possible types of an Apple Volume Purchase Program token.
 |:---|:---|:---|
 |business|0|Apple Volume Purchase Program token associated with an business program.|
 |education|1|Apple Volume Purchase Program token associated with an education program.|
-
-
 
 
 

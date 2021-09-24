@@ -1,13 +1,15 @@
 ---
 title: "autoRestartNotificationDismissalMethod enum type"
 description: "Auto restart required notification dismissal method"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # autoRestartNotificationDismissalMethod enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Auto restart required notification dismissal method
 |notConfigured|0|Not configured|
 |automatic|1|Auto dismissal|
 |user|2|User dismissal|
-
-
 
 
 

@@ -3,11 +3,13 @@ author: daspek
 description: "The presence of the EditAction resource on an itemActivity indicates that the activity edited an item."
 ms.date: 09/14/2017
 title: EditAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # EditAction resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,3 +50,5 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
+
+

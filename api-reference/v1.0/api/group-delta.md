@@ -1,13 +1,16 @@
 ---
 title: "group: delta"
-description: "Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection. See Using Delta Query for details."
-localization_priority: Normal
-author: "dkershaw10"
+description: "Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection."
+ms.localizationpriority: medium
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # group: delta
+
+Namespace: microsoft.graph
+
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection. See [Using Delta Query](/graph/delta-query-overview) for details.
 
 ## Permissions
@@ -16,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -48,7 +51,7 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 This method supports optional OData query parameters to help customize the response.
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The *id* property is always returned.
-- You can use `$expand=members` to get membership changes.
+- You can use `$select=members` to get membership changes. You can additionally track other changes like ownership and more by selecting any [group relationship](../resources/group.md#relationships) of type **directoryObject collection**.
 - There is limited support for `$filter`:
   - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
 
@@ -108,14 +111,14 @@ The following is an example of the request. There is no `$select` parameter, so 
   "name": "group_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -134,7 +137,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 >
 > Note the presence of the *members@delta* property which includes the ids of member objects in the group.
 
@@ -153,23 +156,22 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
   "value":[
     {
-      "classification": "classification-value",
-      "createdDateTime":"datetime-value",
-      "description":"Test group 1",
-      "displayName":"TestGroup1",
+      "createdDateTime":"2021-03-12T10:36:14Z",
+      "description":"This is the default group for everyone in the network",
+      "displayName":"All Company",
       "groupTypes": [
-        "groupTypes-value"
+        "Unified"
       ],
-      "mail": "mail-value",
+      "mail": "allcompany@contoso.com",
       "members@delta": [
-               {
-                   "@odata.type": "#microsoft.graph.user",
-                   "id": "693acd06-2877-4339-8ade-b704261fe7a0"
-               },
-               {
-                   "@odata.type": "#microsoft.graph.user",
-                   "id": "49320844-be99-4164-8167-87ff5d047ace"
-               }
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "693acd06-2877-4339-8ade-b704261fe7a0"
+        },
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "49320844-be99-4164-8167-87ff5d047ace"
+        }
       ]
     }
   ]
@@ -186,14 +188,14 @@ The next example shows the initial request selecting 3 properties for change tra
   "name": "group_delta_with_select"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,mailNickname
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-with-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-with-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -228,9 +230,9 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
+      "displayName": "All Company",
       "description": null,
-      "mailNickname": "mailNickname-value"
+      "mailNickname": "allcompany@contoso.com"
     }
   ]
 }
@@ -246,7 +248,7 @@ The next example shows the initial request selecting 3 properties for change tra
   "name": "group_delta_minimal"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,mailNickname
 Prefer: return=minimal
 ```
@@ -254,7 +256,7 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -289,7 +291,7 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
+      "displayName": "Everyone",
       "description": null
     }
   ]
@@ -312,3 +314,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

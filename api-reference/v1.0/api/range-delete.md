@@ -2,12 +2,14 @@
 title: "Range: delete"
 description: "Deletes the cells associated with the range."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # Range: delete
+
+Namespace: microsoft.graph
 
 Deletes the cells associated with the range.
 ## Permissions
@@ -22,9 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/delete
-POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
-POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
+POST /me/drive/items/{id}/workbook/names/{name}/range/delete
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/delete
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/delete
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/delete
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/delete
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
 ## Request headers
@@ -67,7 +72,7 @@ Content-length: 28
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-delete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-delete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -103,3 +108,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

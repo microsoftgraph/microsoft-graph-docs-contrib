@@ -1,13 +1,15 @@
 ---
 title: "Delete a user - Microsoft Graph API"
 description: "Describes the delete method of the user resource (entity) of the Microsoft Graph API (REST)."
-author: "dkershaw10"
-localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+author: "jpettere"
+ms.localizationpriority: high
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # Delete a user
+
+Namespace: microsoft.graph
 
 Delete user.  
 
@@ -19,9 +21,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All |
+
+The work or school account must be in one of the following roles:
++ Global Administrator
++ User Administrator
+
+Only a Global Administrator can delete a user in a Global Administrator role  or _any_ user in the tenant. A User Administrator can only delete users who are non-administrators or in specific limited roles. For more details, see [Administrator role permissions in Azure AD](/azure/active-directory/roles/permissions-reference#available-roles).
 
 ## HTTP request
 
@@ -46,7 +54,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 
-## Request
+### Request
 
 Here is an example of the request.
 
@@ -62,7 +70,7 @@ DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,3 +106,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

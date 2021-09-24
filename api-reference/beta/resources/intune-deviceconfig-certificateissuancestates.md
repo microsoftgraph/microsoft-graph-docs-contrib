@@ -1,13 +1,15 @@
 ---
 title: "certificateIssuanceStates enum type"
 description: "Certificate Issuance State Options."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # certificateIssuanceStates enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -41,8 +43,6 @@ Certificate Issuance State Options.
 |deleted|20|Not yet documented|
 |renewalRequested|21|Not yet documented|
 |requested|22|Not yet documented|
-
-
 
 
 

@@ -2,12 +2,14 @@
 title: "teamsTabConfiguration resource type (Open Type)"
 description: "The settings that determine the content of a tab."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
 # teamsTabConfiguration resource type (Open Type)
+
+Namespace: microsoft.graph
 
 
 
@@ -39,7 +41,6 @@ The following is a JSON representation of the resource.
    "websiteUrl": "string (HTTPS Url)",
    "removeUrl": "string (HTTPS Url)"  
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -50,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

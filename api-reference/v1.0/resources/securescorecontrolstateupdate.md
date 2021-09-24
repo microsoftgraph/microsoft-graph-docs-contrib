@@ -1,12 +1,14 @@
 ---
 title: "secureScoreControlStateUpdate resource type"
 description: "This resource contains the history of the control states updated by user (control states include Default, Ignored, ThirdParty, Reviewed)."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ""
 doc_type: resourcePageType
 ---
 #  secureScoreControlStateUpdate resource type
+
+Namespace: microsoft.graph
 
 Contains the history of the control states updated by the user (control states include Default, Ignored, ThirdParty, Reviewed).
 
@@ -45,3 +47,4 @@ Contains the history of the control states updated by the user (control states i
   "section": "documentation",
   "tocPath": ""
 }-->
+

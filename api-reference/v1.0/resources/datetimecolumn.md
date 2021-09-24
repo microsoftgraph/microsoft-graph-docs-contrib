@@ -1,14 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: DateTimeColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The dateTimeColumn on a columnDefinition resource indicates that the column's values are dates or times."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 # DateTimeColumn resource type
+
+Namespace: microsoft.graph
 
 The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are dates or times.
 
@@ -55,3 +56,4 @@ Here is a JSON representation of a **dateTimeColumn** resource.
   ],
   "tocPath": "Resources/DateTimeColumn"
 } -->
+

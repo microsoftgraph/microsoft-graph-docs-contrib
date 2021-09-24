@@ -1,13 +1,15 @@
 ---
 title: "outlookUser resource type"
 description: "Represents the Outlook services available to a user."
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "abheek-das"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # outlookUser resource type
+
+Namespace: microsoft.graph
 
 
 Represents the Outlook services available to a user.
@@ -60,3 +62,4 @@ None
   "section": "documentation",
   "tocPath": ""
 }-->
+

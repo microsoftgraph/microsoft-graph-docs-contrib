@@ -1,13 +1,15 @@
 ---
 title: "Location resource type"
 description: "Represents location information of an event."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 ---
 
 # Location resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -79,3 +81,5 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
   "suppressions": []
 }
 -->
+
+

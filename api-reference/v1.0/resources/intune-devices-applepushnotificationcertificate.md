@@ -1,13 +1,15 @@
 ---
 title: "applePushNotificationCertificate resource type"
 description: "Apple push notification certificate."
-author: "tfitzmac"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # applePushNotificationCertificate resource type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -28,6 +30,7 @@ Apple push notification certificate.
 |topicIdentifier|String|Topic Id.|
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time for Apple push notification certificate.|
 |expirationDateTime|DateTimeOffset|The expiration date and time for Apple push notification certificate.|
+|certificateSerialNumber|String|Certificate serial number. This property is read-only.|
 |certificate|String|Not yet documented|
 
 ## Relationships
@@ -49,9 +52,11 @@ Here is a JSON representation of the resource.
   "topicIdentifier": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)",
+  "certificateSerialNumber": "String",
   "certificate": "String"
 }
 ```
+
 
 
 

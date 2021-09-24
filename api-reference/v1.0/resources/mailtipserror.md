@@ -1,13 +1,15 @@
 ---
 title: "mailTipsError resource type"
 description: "An error that occurs during an action."
-localization_priority: Normal
-author: "angelgolfer-ms"
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # mailTipsError resource type
+
+Namespace: microsoft.graph
 
 An error that occurs during an action.
 
@@ -46,3 +48,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

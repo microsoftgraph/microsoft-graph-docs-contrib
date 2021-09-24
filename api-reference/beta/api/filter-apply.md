@@ -1,13 +1,15 @@
 ---
 title: "Filter: apply"
 description: "Apply the given filter criteria on the given column."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 ---
 
 # Filter: apply
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +26,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/filter/apply
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/apply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/filter/apply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
 
 ```
 ## Request headers
@@ -81,7 +85,7 @@ Content-length: 321
 [!INCLUDE [sample-code](../includes/snippets/csharp/filter-apply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/filter-apply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -97,11 +101,9 @@ Content-length: 321
 
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -120,3 +122,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

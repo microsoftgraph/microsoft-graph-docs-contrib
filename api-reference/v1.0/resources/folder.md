@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Folder
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The Folder resource groups folder-related data on an item into a single structure. "
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # Folder resource type
+
+Namespace: microsoft.graph
 
 The **Folder** resource groups folder-related data on an item into a single structure. 
 [**DriveItems**](driveitem.md) with a non-null **folder** facet are containers for other DriveItems.
@@ -54,3 +55,4 @@ For more information about the facets on a DriveItem, see [DriveItem][].
   "section": "documentation",
   "tocPath": "Facets/Folder"
 } -->
+

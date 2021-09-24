@@ -3,11 +3,13 @@ author: rahmit
 description: "Get the collection of sitePage objects from the site pages [list] in a site. All pages in the site are returned (with pagination)."
 ms.date: 03/15/2018
 title: List the pages in a site
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # List the pages in the site pages list of a site
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,14 +31,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages
-
 ```
 
 ## Example
 
-#### Request
+### Request
 
 <!-- 
 { 
@@ -47,11 +48,11 @@ GET /sites/{site-id}/pages
 }
 -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages
 ```
 
-#### Response
+### Response
 
 <!-- 
 { 
@@ -62,7 +63,7 @@ GET /sites/{site-id}/pages
 } 
 -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -237,3 +238,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

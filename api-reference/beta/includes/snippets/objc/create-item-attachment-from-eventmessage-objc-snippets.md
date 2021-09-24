@@ -6,14 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/events/{id}/attachments"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAttachment *attachment = [[MSGraphAttachment alloc] init];
 [attachment setName:@"name-value"];
-[attachment setItem:@"message or event entity"];
+MSGraphOutlookItem *item = [[MSGraphOutlookItem alloc] init];
+[attachment setItem:item];
 
 NSError *error;
 NSData *attachmentData = [attachment getSerializedDataWithError:&error];

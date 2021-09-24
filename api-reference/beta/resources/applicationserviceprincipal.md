@@ -1,13 +1,15 @@
 ---
 title: "applicationServicePrincipal resource type"
 description: "A combination of an application and a servicePrincipal."
-localization_priority: Normal
-author: "luleonpla"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "sureshja"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
 # applicationServicePrincipal resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +40,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.applicationServicePrincipal",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -58,3 +59,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

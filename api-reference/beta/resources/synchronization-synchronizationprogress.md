@@ -1,13 +1,15 @@
 ---
 title: "synchronizationProgress resource type"
 description: "Represents the progress of a synchronizationJob toward completion."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "ArvindHarinder1"
+ms.prod: "applications"
 ---
 
 # synchronizationProgress resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,3 +60,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

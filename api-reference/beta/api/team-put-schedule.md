@@ -2,12 +2,14 @@
 title: "Create or replace schedule"
 description: "Create or replace a **schedule** object."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
 # Create or replace schedule
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,11 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
-
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+|Application | Schedule.ReadWrite.All |
 
 ## HTTP request
 
@@ -46,7 +46,7 @@ PUT /teams/{teamId}/schedule
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -56,7 +56,9 @@ In the request body, supply a JSON representation of a [schedule](../resources/s
 
 If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
 
-## Example
+## Examples
+
+### Example 1: Update a schedule
 
 #### Request
 
@@ -80,7 +82,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-put-schedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/team-put-schedule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -94,12 +96,11 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -116,7 +117,101 @@ Content-length: 401
   "enabled": true,
   "timeZone": "America/Chicago",
   "provisionStatus": "Completed",
-  "provisionStatusCode": null
+  "provisionStatusCode": null,
+  "timeClockEnabled": true,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true
+}
+```
+
+### Example 2: Enable location detection for time clock
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "team-put-schedule-2"
+}-->
+```http
+PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
+
+{
+   "enabled":true,
+   "timeZone":"America/Chicago",
+   "provisionStatus":"Completed",
+   "provisionStatusCode":null,
+   "openShiftsEnabled":true,
+   "swapShiftsRequestsEnabled":true,
+   "offerShiftRequestsEnabled":true,
+   "timeOffRequestsEnabled":true,
+   "timeClockEnabled":true,
+   "timeClockSettings":{
+      "approvedLocation":{
+         "altitude":1024.13,
+         "latitude":26.13246,
+         "longitude":24.34616
+      }
+   }
+} 
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-put-schedule-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-put-schedule-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-put-schedule-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schedule"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 401
+
+{
+   "enabled":true,
+   "timeZone":"America/Chicago",
+   "provisionStatus":"Completed",
+   "provisionStatusCode":null,
+   "openShiftsEnabled":true,
+   "swapShiftsRequestsEnabled":true,
+   "offerShiftRequestsEnabled":true,
+   "timeOffRequestsEnabled":true,
+   "timeClockEnabled":true,
+   "timeClockSettings":{
+      "approvedLocation":{
+         "altitude":1024.13,
+         "latitude":26.13246,
+         "longitude":24.34616
+      }
+   }
 }
 ```
 
@@ -133,3 +228,5 @@ Content-length: 401
   ]
 }
 -->
+
+

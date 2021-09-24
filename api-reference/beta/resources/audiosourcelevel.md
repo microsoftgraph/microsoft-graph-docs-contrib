@@ -1,13 +1,15 @@
 ---
 title: "audioSourceLevel resource type"
 description: "Level configuration for other sources."
-author: "VinodRavichandran"
-localization_priority: Normal
+author: "ananmishr"
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
 # audioSourceLevel resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,3 +54,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

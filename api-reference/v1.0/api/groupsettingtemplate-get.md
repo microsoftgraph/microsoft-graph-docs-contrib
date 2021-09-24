@@ -1,13 +1,15 @@
 ---
 title: "Get a group setting template"
-description: "A group setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults."
-localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+description: "Get a group setting template that represents a template of settings from which settings may be created within a tenant."
+ms.localizationpriority: medium
+author: "Jordanndahl"
+ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Get a group setting template
+
+Namespace: microsoft.graph
 
 A group setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the [groupSettingTemplate](../resources/groupsettingtemplate.md) object, including the available settings and their defaults.
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /groupSettingTemplates/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name | Description |
@@ -43,21 +45,22 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [groupSettingTemplate](../resources/groupsettingtemplate.md) object in the response body.
 
 ## Example
-##### Request
+### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_groupsettingtemplate"
 }-->
-```http
-GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groupSettingTemplates/08d542b9-071f-4e16-94b0-74abb372e3d9
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettingtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettingtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -71,9 +74,10 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 
 ---
 
-##### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,34 +86,21 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1341
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettingTemplates/$entity",
-    "id": "62375ab9-6b52-47ed-826b-58e47e0e304b",
-    "deletedDateTime": null,
-    "displayName": "Group.Unified",
-    "description": "Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines settings that can be used for Unified Groups.",
-    "values": [
-        {
-            "name": "CustomBlockedWordsList",
-            "type": "System.String",
-            "defaultValue": "",
-            "description": "A comma-delimited list of blocked words for Unified Group displayName and mailNickName."
-        },
-        {
-            "name": "EnableMSStandardBlockedWords",
-            "type": "System.Boolean",
-            "defaultValue": "false",
-            "description": "A flag indicating whether or not to enable the Microsoft Standard list of blocked words for Unified Group displayName and mailNickName."
-        },
-        {
-            "name": "ClassificationDescriptions",
-            "type": "System.String",
-            "defaultValue": "",
-            "description": "A comma-delimited list of structured strings describing the classification values in the ClassificationList. The structure of the string is: Value: Description"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettingTemplates/$entity",
+  "id": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "deletedDateTime": null,
+  "displayName": "Group.Unified.Guest",
+  "description": "Settings for a specific Unified Group",
+  "values": [
+    {
+      "name": "AllowToAddGuests",
+      "type": "System.Boolean",
+      "defaultValue": "true",
+      "description": "Flag indicating if guests are allowed in a specific Unified Group."
+    }
+  ]
 }
 ```
 

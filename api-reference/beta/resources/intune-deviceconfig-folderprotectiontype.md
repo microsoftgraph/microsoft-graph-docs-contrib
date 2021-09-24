@@ -1,13 +1,15 @@
 ---
 title: "folderProtectionType enum type"
 description: "Possible values of Folder Protection"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # folderProtectionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,8 +25,6 @@ Possible values of Folder Protection
 |auditMode|2|Allow functionality but generate logs.|
 |blockDiskModification|3|Block untrusted apps from writing to disk sectors.|
 |auditDiskModification|4|Generate logs when untrusted apps write to disk sectors.|
-
-
 
 
 

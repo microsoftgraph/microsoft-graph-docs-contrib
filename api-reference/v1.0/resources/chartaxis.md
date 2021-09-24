@@ -2,12 +2,14 @@
 title: "ChartAxis resource type"
 description: "Represents a single axis in a chart."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # ChartAxis resource type
+
+Namespace: microsoft.graph
 
 Represents a single axis in a chart.
 
@@ -72,3 +74,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

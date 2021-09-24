@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementExchangeAccessStateReason enum type"
 description: "Device Exchange Access State Reason."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # deviceManagementExchangeAccessStateReason enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -34,8 +36,6 @@ Device Exchange Access State Reason.
 |azureADBlockDueToAccessPolicy|14|Access State revoked by AAD Access Policy|
 |compromisedPassword|15|Access State revoked by compromised password|
 |deviceNotKnownWithManagedApp|16|Access state revoked by managed application challenge|
-
-
 
 
 

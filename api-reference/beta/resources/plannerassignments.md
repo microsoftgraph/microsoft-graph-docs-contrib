@@ -1,13 +1,15 @@
 ---
 title: "plannerAssignments resource type"
 description: "The **plannerAssignments** resource represents assignments of a plannerTask resource. This type is an open type. Each property name in this type "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
 # plannerAssignments resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,3 +55,5 @@ If the task isn't already assigned to user with ID 4e98f8f1-bb03-4015-b8e0-19bb3
   "suppressions": []
 }
 -->
+
+

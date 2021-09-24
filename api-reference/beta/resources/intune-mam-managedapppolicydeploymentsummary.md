@@ -1,13 +1,15 @@
 ---
 title: "managedAppPolicyDeploymentSummary resource type"
 description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # managedAppPolicyDeploymentSummary resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -52,8 +54,8 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
       "mobileAppIdentifier": {
-        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-        "packageId": "String"
+        "@odata.type": "microsoft.graph.windowsAppIdentifier",
+        "windowsAppId": "String"
       },
       "configurationAppliedUserCount": 1024
     }
@@ -62,8 +64,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-
 
 
 

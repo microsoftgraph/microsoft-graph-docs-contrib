@@ -1,13 +1,15 @@
 ---
 title: "List contacts"
 description: "Get a contact collection from the default contacts folder of the signed-in user."
-author: "angelgolfer-ms"
-localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+author: "kevinbellinger"
+ms.localizationpriority: high
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List contacts
+
+Namespace: microsoft.graph
 
 Get a contact collection from the default contacts folder of the signed-in user.
 
@@ -43,7 +45,7 @@ To get contacts in a specific folder in the user's mailbox:
 GET /me/contactfolders/{Id}/contacts
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts
 
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## Optional query parameters
@@ -64,7 +66,6 @@ For general information on the `$filter` query parameter, see [OData query param
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -81,14 +82,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "user_get_contacts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contacts
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-contacts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-contacts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -105,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -142,3 +143,4 @@ Content-length: 263
   "suppressions": [
   ]
 }-->
+

@@ -1,17 +1,21 @@
 ---
 title: "privilegedRoleAssignment: makePermanent"
-description: "Make the role assignment as permanent."
-localization_priority: Normal
+description: "Make the role assignment permanent."
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # privilegedRoleAssignment: makePermanent
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Make the role assignment as permanent.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+Make the role assignment permanent.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -74,7 +78,7 @@ Content-length: 110
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedroleassignment-makepermanent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedroleassignment-makepermanent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -90,7 +94,7 @@ Content-length: 110
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -124,3 +128,5 @@ Content-length: 184
   ]
 }
 -->
+
+

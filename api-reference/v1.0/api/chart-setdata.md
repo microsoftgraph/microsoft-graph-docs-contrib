@@ -2,12 +2,14 @@
 title: "Chart: setData"
 description: "Resets the source data for the chart."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # Chart: setData
+
+Namespace: microsoft.graph
 
 Resets the source data for the chart.
 ## Permissions
@@ -22,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/{name}/setData
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setData
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/setData
 
 ```
 ## Request headers
@@ -67,7 +70,7 @@ Content-length: 70
 [!INCLUDE [sample-code](../includes/snippets/csharp/chart-setdata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chart-setdata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -102,3 +105,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

@@ -1,13 +1,15 @@
 ---
 title: "privacyProfile resource type"
 description: "Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "directory-management"
+author: "Jumaodhiss"
 ---
 
 # privacyProfile resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,3 +39,5 @@ Here is a JSON representation of the resource
   "statementUrl": "string"
 }
 ```
+
+

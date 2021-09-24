@@ -1,13 +1,15 @@
 ---
 title: "security resource type"
 description: "The security resource is the entry point for the Security object model. It returns a singleton security resource. It doesn't contain any usable properties."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: resourcePageType
 ---
 
 # security resource type
+
+Namespace: microsoft.graph
 
 The security resource is the entry point for the Security object model. It returns a singleton security resource. It doesn't contain any usable properties.
 
@@ -58,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/security
   "truncated": true,
   "@odata.type": "microsoft.graph.security"
 }-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -75,3 +77,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

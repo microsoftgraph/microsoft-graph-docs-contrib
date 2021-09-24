@@ -1,13 +1,15 @@
 ---
 title: "Update resourceOperation"
 description: "Update the properties of a resourceOperation object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Update resourceOperation
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Update the properties of a [resourceOperation](../resources/intune-rbac-resource
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementRBAC.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -47,11 +49,11 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the Resource Operation. Read-only, automatically generated.|
-|resource|String|Resource category to which this Operation belongs.|
+|resource|String|Resource category to which this Operation belongs. This property is read-only.|
 |resourceName|String|Name of the Resource this operation is performed on.|
 |actionName|String|Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.|
 |description|String|Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.|
-|enabledForScopeValidation|Boolean|Determines whether the Permission is validated for Scopes defined per Role Assignment.|
+|enabledForScopeValidation|Boolean|Determines whether the Permission is validated for Scopes defined per Role Assignment. This property is read-only.|
 
 
 
@@ -94,8 +96,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
-
 
 
 

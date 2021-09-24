@@ -1,13 +1,15 @@
 ---
 title: "fileSecurityState resource type"
 description: "Contains information about the file (not process) related to the alert."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "preetikr"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # fileSecurityState resource type
+
+Namespace: microsoft.graph
 
 Contains information about the file (not process) related to the alert.
 
@@ -51,3 +53,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

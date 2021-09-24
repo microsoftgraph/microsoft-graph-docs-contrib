@@ -1,13 +1,15 @@
 ---
 title: "Create Calendar"
 description: "Use this API to create a new calendar for a user."
-author: "dkershaw10"
-localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+author: "harini84"
+ms.localizationpriority: high
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create Calendar
+
+Namespace: microsoft.graph
 
 Use this API to create a new calendar for a [user](../resources/user.md).
 ## Permissions
@@ -39,7 +41,7 @@ In the request body, supply a JSON representation of [calendar](../resources/cal
 If successful, this method returns `201 Created` response code and [calendar](../resources/calendar.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -59,7 +61,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-calendar-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-calendar-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -74,8 +76,8 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +96,14 @@ Content-type: application/json
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
     "canEdit":true,
+    "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+    "defaultOnlineMeetingProvider": "teamsForBusiness",
+    "isTallyingResponses": true,
+    "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"
@@ -113,3 +122,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

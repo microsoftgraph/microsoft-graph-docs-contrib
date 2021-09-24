@@ -1,15 +1,19 @@
 ---
 title: "privilegedApproval: myRequests"
 description: "Get the requestor's approval requests."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # privilegedApproval: myRequests
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Get the requestor's approval requests.
 
@@ -52,14 +56,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "privilegedapproval_myrequests"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedApproval/myRequests
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedapproval-myrequests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedapproval-myrequests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -75,7 +79,7 @@ GET https://graph.microsoft.com/beta/privilegedApproval/myRequests
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,3 +113,5 @@ Content-length: 193
   ]
 }
 -->
+
+

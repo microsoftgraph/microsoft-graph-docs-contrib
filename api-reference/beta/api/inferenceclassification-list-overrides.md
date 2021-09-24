@@ -1,13 +1,15 @@
 ---
 title: "List overrides"
 description: "Get the Focused Inbox overrides that a user has set up to always classify messages from certain senders in specific ways."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: ""
+author: "abheek-das"
 ms.prod: ""
 ---
 
 # List overrides
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,14 +52,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_overrides"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-overrides-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-overrides-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -72,7 +74,7 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,3 +120,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

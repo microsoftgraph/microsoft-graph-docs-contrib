@@ -1,12 +1,15 @@
 ---
 title: "deviceAppManagementTaskCategory enum type"
 description: "Device app management task category."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # deviceAppManagementTaskCategory enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -19,8 +22,6 @@ Device app management task category.
 |:---|:---|:---|
 |unknown|0|Unknown source.|
 |advancedThreatProtection|1|Windows Defender ATP Threat & Vulnerability Management.|
-
-
 
 
 

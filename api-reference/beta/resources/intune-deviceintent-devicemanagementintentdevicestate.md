@@ -1,12 +1,15 @@
 ---
 title: "deviceManagementIntentDeviceState resource type"
 description: "Entity that represents device state for an intent"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementIntentDeviceState resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -57,8 +60,6 @@ Here is a JSON representation of the resource.
   "deviceId": "String"
 }
 ```
-
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "emailSyncDuration enum type"
 description: "Possible values for email sync duration."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # emailSyncDuration enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,8 +27,6 @@ Possible values for email sync duration.
 |twoWeeks|4|Sync two weeks of email.|
 |oneMonth|5|Sync one month of email.|
 |unlimited|6|Sync an unlimited duration of email.|
-
-
 
 
 

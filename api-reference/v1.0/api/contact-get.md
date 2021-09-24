@@ -1,13 +1,15 @@
 ---
 title: "Get contact"
 description: "Retrieve the properties and relationships of a contact object."
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "kevinbellinger"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get contact
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a contact object.
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).
+A [contact](../resources/contact.md) in the user's mailbox.
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
@@ -41,7 +43,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The 
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## Optional query parameters
@@ -70,14 +72,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_contact"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-contact-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-contact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -171,3 +173,4 @@ Content-length: 1977
   "suppressions": [
   ]
 }-->
+

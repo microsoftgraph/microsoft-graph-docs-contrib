@@ -1,13 +1,15 @@
 ---
 title: "operationError resource type"
 description: "Describes errors in teamsAsyncOperation."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "billbliss"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # operationError resource type
+
+Namespace: microsoft.graph
 
 
 
@@ -44,3 +46,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

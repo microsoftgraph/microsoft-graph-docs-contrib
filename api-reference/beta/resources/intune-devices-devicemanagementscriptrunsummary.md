@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementScriptRunSummary resource type"
 description: "Contains properties for the run summary of a device management script."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementScriptRunSummary resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,7 +26,7 @@ Contains properties for the run summary of a device management script.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script run summary entity.|
+|id|String|Key of the device management script run summary entity. This property is read-only.|
 |successDeviceCount|Int32|Success device count.|
 |errorDeviceCount|Int32|Error device count.|
 |successUserCount|Int32|Success user count.|
@@ -51,8 +53,6 @@ Here is a JSON representation of the resource.
   "errorUserCount": 1024
 }
 ```
-
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "RangeFormat: autofitRows"
 description: "Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # RangeFormat: autofitRows
+
+Namespace: microsoft.graph
 
 Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.
 ## Permissions
@@ -22,9 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/autofitRows
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitRows
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/autofitRows
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/autofitRows
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/autofitRows
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/autofitRows
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 
 ```
 ## Request headers
@@ -56,7 +61,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 [!INCLUDE [sample-code](../includes/snippets/csharp/rangeformat-autofitrows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/rangeformat-autofitrows-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,3 +97,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

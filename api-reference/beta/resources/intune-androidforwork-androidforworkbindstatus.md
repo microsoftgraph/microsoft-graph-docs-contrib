@@ -1,13 +1,15 @@
 ---
 title: "androidForWorkBindStatus enum type"
 description: "Bind status of the tenant with the Google EMM API"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidForWorkBindStatus enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Bind status of the tenant with the Google EMM API
 |bound|1|Not yet documented|
 |boundAndValidated|2|Not yet documented|
 |unbinding|3|Not yet documented|
-
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "discoverySource enum type"
 description: "Not yet documented"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # discoverySource enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Not yet documented
 |unknown|0|DiscoverySource is Unknown.|
 |adminImport|2|Device is imported by admin.|
 |deviceEnrollmentProgram|4|Device is added by Apple device enrollment program (Dep).|
-
-
 
 
 

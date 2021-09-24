@@ -9,8 +9,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var accessReview = new AccessReview
 {
 	DisplayName = "TestReview",
-	StartDateTime = "2017-02-10T00:35:53.214Z",
-	EndDateTime = "2017-03-12T00:35:53.214Z",
+	StartDateTime = DateTimeOffset.Parse("2017-02-10T00:35:53.214Z"),
+	EndDateTime = DateTimeOffset.Parse("2017-03-12T00:35:53.214Z"),
 	ReviewedEntity = new Identity
 	{
 		Id = "99025615-a0b1-47ec-9117-35377b10998b"
@@ -18,7 +18,7 @@ var accessReview = new AccessReview
 	ReviewerType = "delegated",
 	BusinessFlowTemplateId = "6e4f3d20-c5c3-407f-9695-8460952bcc68",
 	Description = "Sample description",
-	Reviewers = new List<AccessReviewReviewer>()
+	Reviewers = new AccessReviewReviewersCollectionPage()
 	{
 		new AccessReviewReviewer
 		{

@@ -12,12 +12,12 @@ const client = Client.init(options);
 
 const groupLifecyclePolicy = {
   groupLifetimeInDays: 100,
-  managedGroupTypes: "Selected",
-  alternateNotificationEmails: "admin@contoso.com"
+  managedGroupTypes: 'Selected',
+  alternateNotificationEmails: 'admin@contoso.com'
 };
 
-let res = await client.api('/groupLifecyclePolicies')
+await client.api('/groupLifecyclePolicies')
 	.version('beta')
-	.post({groupLifecyclePolicy : groupLifecyclePolicy});
+	.post(groupLifecyclePolicy);
 
 ```

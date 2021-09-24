@@ -1,17 +1,22 @@
 ---
 title: "Create MailFolder"
 description: "Use this API to create a new mail folder in the root folder of the user's mailbox."
-localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "abheek-das"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create MailFolder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new mail folder in the root folder of the user's mailbox.
+
+If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,19 +39,20 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a 
-[MailFolder](../resources/mailfolder.md) object.
+In the request body, provide a JSON object with the following parameters. **displayName** and **isHidden** are the only writable property for a 
+[mailFolder](../resources/mailfolder.md) object.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|String|The display name of the new folder.|
+|isHidden|Boolean|Indicates whether the new folder is hidden. The default value is `false`. Setting the property is optional. Once set, you cannot update this property. See more information in [Hidden mail folders](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [mailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -60,14 +66,15 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value"
+  "displayName": "Clutter",
+  "isHidden": true
 }
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-mailfolder-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailfolder-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -82,8 +89,10 @@ Content-length: 159
 ---
 
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,12 +104,14 @@ Content-type: application/json
 Content-length: 179
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
+  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1",
+  "displayName": "Clutter",
+  "parentFolderId": "AQMkADlmOGQwZmU3LWVjOWMtNDhiYgAtODcxNy1",
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "id-value"
+  "wellKnownName": null,
+  "isHidden": true
 }
 ```
 
@@ -117,3 +128,5 @@ Content-length: 179
   ]
 }
 -->
+
+

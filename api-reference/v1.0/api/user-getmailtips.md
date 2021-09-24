@@ -1,13 +1,15 @@
 ---
 title: "user: getMailTips"
 description: "Get the MailTips of one or more recipients as available to the signed-in user."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "abheek-das"
+ms.localizationpriority: medium
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # user: getMailTips
+
+Namespace: microsoft.graph
 
 Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).
 
@@ -30,7 +32,7 @@ POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Header       | Value|
 |:-----------  |:------|
@@ -74,7 +76,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmailtips-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmailtips-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -90,7 +92,7 @@ Content-Type: application/json
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

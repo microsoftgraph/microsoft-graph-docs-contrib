@@ -9,11 +9,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var synchronizationTemplate = new SynchronizationTemplate
 {
 	Id = "Slack",
-	ApplicationId = "{id}",
+	ApplicationId = Guid.Parse("{id}"),
 	FactoryTag = "CustomSCIM"
 };
 
-await graphClient.Applications["{id}"].Synchronization.Templates["{templateId}"]
+await graphClient.Applications["{application-id}"].Synchronization.Templates["{synchronizationTemplate-id}"]
 	.Request()
 	.Header("Authorization","Bearer <token>")
 	.PutAsync(synchronizationTemplate);

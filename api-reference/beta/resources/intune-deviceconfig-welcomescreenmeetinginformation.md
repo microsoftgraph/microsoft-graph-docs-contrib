@@ -1,13 +1,15 @@
 ---
 title: "welcomeScreenMeetingInformation enum type"
 description: "Possible values for welcome screen meeting information."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # welcomeScreenMeetingInformation enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Possible values for welcome screen meeting information.
 |userDefined|0|User Defined, default value, no intent.|
 |showOrganizerAndTimeOnly|1|Show organizer and time only.|
 |showOrganizerAndTimeAndSubject|2|Show organizer, time and subject (subject is hidden for private meetings).|
-
-
 
 
 

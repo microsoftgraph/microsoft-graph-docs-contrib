@@ -1,13 +1,15 @@
 ---
 title: "officeProductId enum type"
 description: "The Enum to specify the Office365 ProductIds that represent the Office365 Suite SKUs."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # officeProductId enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ The Enum to specify the Office365 ProductIds that represent the Office365 Suite 
 |o365BusinessRetail|1|Not yet documented|
 |visioProRetail|2|Not yet documented|
 |projectProRetail|3|Not yet documented|
-
-
 
 
 

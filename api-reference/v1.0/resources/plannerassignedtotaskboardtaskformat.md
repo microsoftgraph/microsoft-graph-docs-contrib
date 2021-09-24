@@ -1,13 +1,15 @@
 ---
 title: "plannerAssignedToTaskBoardTaskFormat resource type"
 description: "The **plannerAssignedToTaskBoardTaskFormat** resource represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned to). Each task will have one **plannerAssignedToTaskBoardTaskFormat** object associated with it."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
 # plannerAssignedToTaskBoardTaskFormat resource type
+
+Namespace: microsoft.graph
 
 The **plannerAssignedToTaskBoardTaskFormat** resource represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned to). Each [task](plannertask.md) will have one **plannerAssignedToTaskBoardTaskFormat** object associated with it.
 
@@ -58,3 +60,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

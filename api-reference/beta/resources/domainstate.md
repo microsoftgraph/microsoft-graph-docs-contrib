@@ -1,13 +1,15 @@
 ---
 title: "domainState resource type"
 description: "Represents the status of asynchronous operations scheduled on a domain."
-author: "davidmu1"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "adimitui"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
 # domainState resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,3 +55,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

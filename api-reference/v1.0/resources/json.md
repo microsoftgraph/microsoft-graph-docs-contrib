@@ -1,13 +1,15 @@
 ---
 title: "Json resource type"
 description: "Represents data returned in JSON format"
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # Json resource type
+
+Namespace: microsoft.graph
 
 Represents data returned in JSON format
 ## Properties
@@ -27,6 +29,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.Json"
 }
 ```
+
 
 
 

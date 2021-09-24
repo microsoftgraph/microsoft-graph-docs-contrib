@@ -2,12 +2,14 @@
 title: "educationRoot resource type"
 description: "The `/education` namespace exposes functionality that is specific to the education sector. "
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
 
 # educationRoot resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,3 +50,5 @@ None.
   "suppressions": []
 }
 -->
+
+

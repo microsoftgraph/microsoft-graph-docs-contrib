@@ -4,12 +4,17 @@ description: Creates a vendor object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
 
 # Create vendors
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a vendor object in Dynamics 365 Business Central.
 
 ## Permissions
@@ -22,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Financials.ReadWrite.All|
 
 ## HTTP request
-```
-POST /financials/companies('{id}')/vendors
+```http
+POST /financials/companies/{id}/vendors
 ```
 
 ## Optional query parameters
@@ -47,8 +52,8 @@ If successful, this method returns ```201 Created``` response code and a **vendo
 
 Here is an example of a request.
 
-```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/vendors
+```http
+POST https://graph.microsoft.com/beta/financials/companies/{id}/vendors
 Content-type: application/json
 
 {
@@ -76,9 +81,9 @@ Content-type: application/json
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -88,6 +93,7 @@ Content-type: application/json
   "displayName": "Wide World Importers",
   "lastModifiedDateTime": "2015-11-09T02:14:32Z"
 }
-
 ```
+
+
 

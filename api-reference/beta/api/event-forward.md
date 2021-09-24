@@ -1,20 +1,22 @@
 ---
 title: "event: forward"
 description: "This action allows the organizer or attendee of a meeting event to forward the "
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "harini84"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # event: forward
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the 
 meeting request to a new recipient. 
 
-If the meeting event is forwarded from an attendee's Office 365 mailbox to another recipient, this action 
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action 
 also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's 
 copy of the meeting event. This convenience is not available when forwarding from an Outlook.com account.
 
@@ -41,9 +43,6 @@ POST /groups/{id}/calendar/events/{id}/forward
 
 POST /me/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/forward
-
-POST /me/calendargroup/calendars/{id}/events/{id}/forward
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/forward
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward
@@ -98,7 +97,7 @@ Content-length: 56
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-forward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-forward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -136,3 +135,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

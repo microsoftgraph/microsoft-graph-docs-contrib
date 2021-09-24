@@ -1,14 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The baseItem resource is an abstract resource that contains a common set of properties shared among several other resources types."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 # BaseItem resource type
+
+Namespace: microsoft.graph
 
 The **baseItem** resource is an abstract resource that contains a common set of properties shared among several other resources types.
 Resources that derive from **baseItem** include:
@@ -85,3 +86,4 @@ The `baseItem` type is not expected to be used directly.
   "section": "documentation",
   "tocPath": "Resources/BaseItem"
 } -->
+

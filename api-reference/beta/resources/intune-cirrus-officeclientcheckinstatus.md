@@ -1,13 +1,15 @@
 ---
 title: "officeClientCheckinStatus resource type"
 description: "Entity that describes  tenant check-in stats."
-localization_priority: Normal
-author: "rolyon"
-ms.prod: "Intune"
+ms.localizationpriority: medium
+author: "dougeby"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # officeClientCheckinStatus resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

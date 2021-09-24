@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The siteCollection resource provides more information about a site collection."
 ms.date: 09/10/2017
 title: SiteCollection
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # SiteCollection resource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,3 +59,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

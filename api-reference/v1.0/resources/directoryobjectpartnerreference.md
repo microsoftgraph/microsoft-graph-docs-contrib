@@ -1,13 +1,15 @@
 ---
 title: "directoryObjectPartnerReference resource type"
 description: "Represents a reference to a directory object in a partner tenant. Inherits from directoryObject."
-author: "davidmu1"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "keylimesoda"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
 # directoryObjectPartnerReference resource type
+
+Namespace: microsoft.graph
 
 Represents a reference to a directory object in a partner organization. Inherits from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0).
 
@@ -43,7 +45,7 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-- [Get directory objects from a list of ids](/graph/api/directoryobject-getbyids?view=graph-rest-v1.0)
+- [Get directory objects from a list of ids](../api/directoryobject-getbyids.md)
 
 <!-- uuid: fbec8cd7-cfe4-431d-87fc-d102cd2841a4
 2018-12-06 02:01:30 UTC -->

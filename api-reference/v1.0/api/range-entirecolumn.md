@@ -2,12 +2,14 @@
 title: "Range: EntireColumn"
 description: "Gets an object that represents the entire column of the range."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # Range: EntireColumn
+
+Namespace: microsoft.graph
 
 Gets an object that represents the entire column of the range.
 ## Permissions
@@ -21,12 +23,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/entireColumn
-GET /workbook/worksheets/{id|name}/range(address='<address>')/entireColumn
-GET /workbook/tables/{id|name}/columns/{id|name}/range/entireColumn
+GET /me/drive/items/{id}/workbook/names/{name}/range/entireColumn
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/entireColumn
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/entireColumn
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/entireColumn
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/entireColumn
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/entireColumn
 
 ```
 ## Request headers
@@ -45,19 +49,21 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
   "name": "range_entirecolumn"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/entireColumn
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-entirecolumn-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-entirecolumn-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -73,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,3 +111,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

@@ -1,13 +1,15 @@
 ---
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "adimitui"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
 # Update organization
+
+Namespace: microsoft.graph
 
 Update the properties of the currently authenticated organization. In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.  The **ID** is also known as the **tenantId** of the organization.
 
@@ -84,7 +86,7 @@ Content-length: 411
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-organization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -102,9 +104,7 @@ Content-length: 411
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organization"
+  "blockType": "response"
 } -->
 
 ```http
@@ -122,3 +122,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

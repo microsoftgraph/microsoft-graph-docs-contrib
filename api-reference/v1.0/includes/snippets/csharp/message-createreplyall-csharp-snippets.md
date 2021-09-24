@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Messages["{id}"]
-	.CreateReplyAll()
+await graphClient.Me.Messages["{message-id}"]
+	.CreateReplyAll(null,null)
 	.Request()
 	.PostAsync();
 

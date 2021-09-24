@@ -1,13 +1,15 @@
 ---
 title: "Create managedIOSStoreApp"
 description: "Create a new managedIOSStoreApp object."
-author: "tfitzmac"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create managedIOSStoreApp
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -16,11 +18,11 @@ Create a new [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -77,7 +79,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1084
+Content-length: 1124
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -111,7 +113,9 @@ Content-length: 1084
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```
@@ -121,7 +125,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1256
+Content-Length: 1296
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -158,10 +162,13 @@ Content-Length: 1256
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```
+
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "NamedItem resource type"
 description: "Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, reference to a range. This object can be used to obtain range object associated with names."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # NamedItem resource type
+
+Namespace: microsoft.graph
 
 Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, reference to a range. This object can be used to obtain range object associated with names.
 
@@ -59,7 +61,7 @@ Here is a JSON representation of the resource.
   "type": "string",
   "value": {"@odata.type": "microsoft.graph.Json"},
   "visible": true
-  
+
 }
 
 ```
@@ -73,3 +75,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

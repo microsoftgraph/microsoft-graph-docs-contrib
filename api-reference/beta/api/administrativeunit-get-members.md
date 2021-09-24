@@ -1,13 +1,15 @@
 ---
 title: "Get a member"
 description: "Use this API to get a specific member (user or group) in an administrative unit."
-author: "davidmu1"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "DougKirschner"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
 # Get a member
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +51,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
 ##### Response
-Here is an example of the respone. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the respone. Note: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK
@@ -65,3 +67,5 @@ Content-length: 100
   "displayName":"Demo User"
 }
 ```
+
+

@@ -2,12 +2,14 @@
 title: "Create an educationSynchronizationProfile"
 description: "Create a request for a new school data synchronization profile in the tenant. Query the status to get the status of the profile. "
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
 # Create an educationSynchronizationProfile
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles
+POST /education/synchronizationProfiles
 ```
 
 ## Request headers
@@ -54,7 +56,7 @@ Content-type: application/json
 {
     "displayName": "Test Profile",
     "dataProvider": {
-        "@odata.type": "microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "#Microsoft.Education.DataSync.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -65,7 +67,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration",
+        "@odata.type": "#Microsoft.Education.DataSync.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -97,10 +99,10 @@ Content-type: application/json
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->
@@ -113,7 +115,7 @@ Content-type: application/json
     "state": "provisioning",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "dataProvider": {
-        "@odata.type": "microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -153,7 +155,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
+        "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -167,14 +169,12 @@ Content-type: application/json
     },
     "licensesToAssign": [
         {
-            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
             "appliesTo": "teacher",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"
             ]
         },
         {
-            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
             "appliesTo": "student",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"
@@ -183,3 +183,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

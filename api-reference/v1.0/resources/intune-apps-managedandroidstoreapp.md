@@ -1,13 +1,15 @@
 ---
 title: "managedAndroidStoreApp resource type"
 description: "Contains properties and inherited properties for Android store apps that you can manage with an Intune app protection policy."
-author: "tfitzmac"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # managedAndroidStoreApp resource type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -96,10 +98,13 @@ Here is a JSON representation of the resource.
     "v4_3": true,
     "v4_4": true,
     "v5_0": true,
-    "v5_1": true
+    "v5_1": true,
+    "v10_0": true,
+    "v11_0": true
   }
 }
 ```
+
 
 
 

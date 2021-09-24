@@ -2,12 +2,14 @@
 title: "workbookChartCollection: ItemAt"
 description: "Gets a workbookchart based on its position in the collection."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # ChartCollection: ItemAt
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts/ItemAt
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/ItemAt
 
 ```
 ## Request headers
@@ -63,7 +66,7 @@ Content-length: 20
   "index": 8
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chartcollection-itemat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -75,7 +78,7 @@ Content-length: 20
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,3 +109,5 @@ Content-length: 52
   ]
 }
 -->
+
+

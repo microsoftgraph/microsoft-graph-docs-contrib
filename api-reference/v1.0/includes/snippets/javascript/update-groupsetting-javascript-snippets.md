@@ -11,65 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const groupSetting = {
-  displayName: "displayName-value",
-  templateId: "templateId-value",
   values: [
     {
-      name: "CustomBlockedWordsList",
-      value: ""
-    },
-    {
-      name: "EnableMSStandardBlockedWords",
-      value: "False"
-    },
-    {
-      name: "ClassificationDescriptions",
-      value: ""
-    },
-    {
-      name: "DefaultClassification",
-      value: ""
-    },
-    {
-      name: "PrefixSuffixNamingRequirement",
-      value: ""
-    },
-    {
-      name: "AllowGuestsToBeGroupOwner",
-      value: "False"
-    },
-    {
-      name: "AllowGuestsToAccessGroups",
-      value: "True"
-    },
-    {
-      name: "GuestUsageGuidelinesUrl",
-      value: ""
-    },
-    {
-      name: "GroupCreationAllowedGroupId",
-      value: "62e90394-69f5-4237-9190-012177145e10"
-    },
-    {
-      name: "AllowToAddGuests",
-      value: "True"
-    },
-    {
-      name: "UsageGuidelinesUrl",
-      value: ""
-    },
-    {
-      name: "ClassificationList",
-      value: ""
-    },
-    {
-      name: "EnableGroupCreation",
-      value: "True"
+      name: 'AllowToAddGuests',
+      value: 'true'
     }
   ]
 };
 
-let res = await client.api('/groupSettings/{id}')
-	.update({groupSetting : groupSetting});
+await client.api('/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b')
+	.update(groupSetting);
 
 ```

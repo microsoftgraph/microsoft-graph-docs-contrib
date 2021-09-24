@@ -1,13 +1,15 @@
 ---
 title: "defenderSecurityCenterITContactDisplayType enum type"
 description: "Possible values for defenderSecurityCenterITContactDisplay"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # defenderSecurityCenterITContactDisplayType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Possible values for defenderSecurityCenterITContactDisplay
 |displayInAppAndInNotifications|1|Display in app and in notifications|
 |displayOnlyInApp|2|Display only in app|
 |displayOnlyInNotifications|3|Display only in notifications|
-
-
 
 
 

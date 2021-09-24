@@ -1,13 +1,15 @@
 ---
 title: "mailFolder: copy"
 description: "Copy a mailfolder and its contents to another mailfolder."
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "abheek-das"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # mailFolder: copy
+
+Namespace: microsoft.graph
 
 Copy a mailfolder and its contents to another mailfolder.
 
@@ -74,7 +76,7 @@ Content-length: 44
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-copy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-copy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,7 +95,7 @@ Content-length: 44
 
 Here is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,3 +128,4 @@ Content-length: 179
   "suppressions": [
   ]
 }-->
+

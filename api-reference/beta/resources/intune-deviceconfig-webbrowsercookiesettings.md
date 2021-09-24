@@ -1,13 +1,15 @@
 ---
 title: "webBrowserCookieSettings enum type"
 description: "Web Browser Cookie Settings."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # webBrowserCookieSettings enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,8 +25,6 @@ Web Browser Cookie Settings.
 |allowCurrentWebSite|2|Allow cookies from current Web site.|
 |allowFromWebsitesVisited|3|Allow Cookies from websites visited.|
 |allowAlways|4|Always allow cookies.|
-
-
 
 
 

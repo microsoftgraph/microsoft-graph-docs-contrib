@@ -3,11 +3,13 @@ author: daspek
 description: "The contentTypeInfo resource indicates the SharePoint content type of an item."
 ms.date: 09/12/2017
 title: ContentTypeInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # ContentTypeInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,3 +44,5 @@ Here is a JSON representation of a **contentTypeInfo** resource.
   "suppressions": []
 }
 -->
+
+

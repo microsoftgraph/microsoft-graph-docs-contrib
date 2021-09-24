@@ -3,11 +3,13 @@ author: daspek
 description: <descripton>
 ms.date: 09/12/2017
 title: SystemFacet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # System facet
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,3 +39,5 @@ None. This facet is a null or not-null value and contains no properties.
   "suppressions": []
 }
 -->
+
+

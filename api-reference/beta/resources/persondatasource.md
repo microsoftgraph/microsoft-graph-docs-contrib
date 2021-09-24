@@ -1,13 +1,15 @@
 ---
 title: "personDataSource resource type"
 description: "Represents the sources the user data comes from, such as Directory and Outlook Contacts."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "simonhult"
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
 
 # personDataSource resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +31,6 @@ Here is a JSON representation of the resource
 {
   "type": "string"
 }
-
 ```
 ## Properties
 | Property	   | Type	|Description|
@@ -48,3 +49,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

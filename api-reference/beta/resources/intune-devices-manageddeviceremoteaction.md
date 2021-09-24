@@ -1,13 +1,15 @@
 ---
 title: "managedDeviceRemoteAction enum type"
 description: "Not yet documented"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # managedDeviceRemoteAction enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,8 +26,16 @@ Not yet documented
 |quickScan|3|Not yet documented|
 |signatureUpdate|4|Not yet documented|
 |wipe|5|Not yet documented|
-
-
+|customTextNotification|6|Not yet documented|
+|rebootNow|7|Not yet documented|
+|setDeviceName|8|Not yet documented|
+|syncDevice|9|Not yet documented|
+|deprovision|10|Name of the deprovision action.|
+|disable|11|Name of the disable action.|
+|reenable|12|Name of the reenable action.|
+|moveDeviceToOrganizationalUnit|13|Name of the moveDevicesToOU action.|
+|activateDeviceEsim|14|Name of action to Activate eSIM on the device.|
+|collectDiagnostics|15|Name of the collectDiagnostics action.|
 
 
 

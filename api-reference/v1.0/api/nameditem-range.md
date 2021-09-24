@@ -1,13 +1,15 @@
 ---
 title: "NamedItem: Range"
 description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # NamedItem: Range
+
+Namespace: microsoft.graph
 
 Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.
 ## Permissions
@@ -22,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range
+GET /me/drive/items/{id}/workbook/names/{name}/range
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range
 
 ```
 ## Request headers
@@ -48,14 +51,14 @@ Here is an example of the request.
   "idempotent": true,
   "name": "nameditem_range"
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditem-range-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/nameditem-range-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -71,7 +74,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,3 +106,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

@@ -1,42 +1,48 @@
 ---
 title: "participant resource type"
 description: "The participant type."
-author: "VinodRavichandran"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "ananmishr"
+ms.localizationpriority: medium
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # participant resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The participant type.
+Represents a participant in a call.
 
 ## Methods
 
-| Method                                                          | Return Type                              | Description                                       |
-|:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
-| [Get participant](../api/participant-get.md)                    | [participant](participant.md)            | Read properties of the **participant** object.    |
-| [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Configure the participant audio mixer.            |
-| [Invite](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Invite a participant to the call.                 |
-| [Mute participant](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Mute a participant in a call.                     |
-| [Mute all participants](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Mute all the participants in the meeting.         |
+| Method                                                 | Return Type                                                 | Description                                    |
+|:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
+| [List participant](../api/participant-get.md)         | [participant](participant.md)                               | Retrieve a list of **participant** objects in the call. |
+| [Get participant](../api/participant-get.md)           | [participant](participant.md)                               | Read properties of the **participant** object. |
+| [Delete participant](../api/participant-delete.md)     | None   | Delete a participant in a call.                  |
+| [ConfigureMixer](../api/participant-configuremixer.md) | [commsOperation](commsoperation.md)                         | Configure the participant audio mixer.         |
+| [Invite](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                         | Invite a participant to the call.              |
+| [Mute participant](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in a call.                  |
+| [Mute all participants](../api/participant-muteall.md) | [commsOperation](commsoperation.md) | Mute all the participants in the meeting.      |
+| [Start hold music](../api/participant-startholdmusic.md) | [startHoldMusicOperation](startholdmusicoperation.md) | Place a participant on hold while playing music on the background. |
+| [Stop hold music](../api/participant-stopholdmusic.md) | [stopHoldMusicOperation](stopholdmusicoperation.md) | Reincorporate a participant previously put on hold to the call. |
 
 ## Properties
 
 | Property             | Type                                     | Description                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | The participant id.                                          |
-| info                 | [participantInfo](participantinfo.md)    | The participant of the participant.                          |
-| isInLobby            | boolean                                  | true if the participant is in lobby                          |
-| isMuted              | boolean                                  | true if the participant is muted (client or server muted)    |
+| id                   | String                                   | The participant ID.                                          |
+| info                 | [participantInfo](participantinfo.md)    | Information about the participant.                          |
+| isInLobby            | Boolean                                  | `true` if the participant is in lobby.                          |
+| isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
-| metadata             | String                                   | A blob of data provided by the participant in the roster     |
+| metadata             | String                                   | A blob of data provided by the participant in the roster.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Information on whether the participant has recording capability. |
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
@@ -61,44 +67,6 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.participant"
-}-->
-```json
-{
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "info": {
-    "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "languageId": "en-US",
-    "region": "westus"
-  },
-  "isInLobby": false,
-  "isMuted": false,
-  "mediaStreams": [
-    {
-      "sourceId": "1",
-      "direction": "sendReceive",
-      "label": "main-audio",
-      "mediaType": "audio",
-      "serverMuted": false
-    }
-  ],
-  "metadata": "metadata-value",
-  "recordingInfo": {
-    "status": "recordingCapable"
-  }
-}
-```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -111,3 +79,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

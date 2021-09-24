@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
@@ -57,14 +57,15 @@ address2.countryOrRegion = "US";
 address2.postalCode = "32008";
 locations1.address = address2;
 OutlookGeoCoordinates coordinates = new OutlookGeoCoordinates();
-coordinates.latitude = 47.672;
-coordinates.longitude = -102.103;
+coordinates.latitude = 47.672d;
+coordinates.longitude = -102.103d;
 locations1.coordinates = coordinates;
 locationsList.add(locations1);
 Location locations2 = new Location();
 locations2.displayName = "Home Office";
 locationsList.add(locations2);
 event.locations = locationsList;
+event.allowNewTimeProposals = true;
 
 graphClient.me().events()
 	.buildRequest( requestOptions )

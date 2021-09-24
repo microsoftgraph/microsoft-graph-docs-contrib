@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "Restore a previous version of a ListItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the item."
 ms.date: 09/10/2017
 title: Restore a previous version of a SharePoint list item
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Restore a previous version of a ListItem
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,3 +68,5 @@ HTTP/1.1 204 No content
   "suppressions": []
 }
 -->
+
+

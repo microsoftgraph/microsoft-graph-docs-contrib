@@ -1,14 +1,15 @@
 ---
 title: "androidManagedAppRegistration resource type"
-description: "Represents the synchronization details of an android app, with management capabilities, for a specific user.
-The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+description: "Represents the synchronization details of an android app, with management capabilities, for a specific user. The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # androidManagedAppRegistration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -92,8 +93,6 @@ Here is a JSON representation of the resource.
   "patchVersion": "String"
 }
 ```
-
-
 
 
 

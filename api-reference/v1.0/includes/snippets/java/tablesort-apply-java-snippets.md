@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<WorkbookSortField> fieldsList = new LinkedList<WorkbookSortField>();
 WorkbookSortField fields = new WorkbookSortField();
@@ -20,12 +20,17 @@ fields.icon = icon;
 
 fieldsList.add(fields);
 
-boolean matchCase = True;
+Boolean matchCase = true;
 
 String method = "method-value";
 
 graphClient.me().drive().items("{id}").workbook().tables("{id|name}").sort()
-	.apply(fieldsList,matchCase,method)
+	.apply(WorkbookTableSortApplyParameterSet
+		.newBuilder()
+		.withFields(fieldsList)
+		.withMatchCase(matchCase)
+		.withMethod(method)
+		.build())
 	.buildRequest()
 	.post();
 

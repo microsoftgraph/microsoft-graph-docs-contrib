@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "Retrieve properties and relationships for a site resource."
 ms.date: 09/10/2017
 title: Get SharePoint site by path
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Get a site resource by path
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -81,3 +83,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

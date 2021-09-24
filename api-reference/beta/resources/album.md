@@ -1,13 +1,14 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: album resource type
 description: Facet describing a bundle which is a photo album.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # album resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,3 +38,5 @@ To remove a custom-set cover, you can set the **coverImageItemId** property to n
 [bundle]: bundle.md
 [driveItem]: driveItem.md
 [photo]: photo.md
+
+

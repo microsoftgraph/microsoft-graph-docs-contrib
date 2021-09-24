@@ -4,12 +4,17 @@ description: Deletes a unit of measure object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
 
 # Delete unitsOfMeasure
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Deletes a units of measure object from Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-DELETE /financials/companies('{id}')/unitsOfMeasure('{id}')
+DELETE /financials/companies/{id}/unitsOfMeasure/{id}
 ```
 
 ## Optional query parameters
@@ -47,14 +52,16 @@ If successful, this method returns ```204 No Content``` response code. It does n
 
 Here is an example of the request.
 
-```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/unitsOfMeasure('{id}')
+```http
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure/{id}
 ```
 
 **Response** 
 
 Here is an example of the response. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
+
+

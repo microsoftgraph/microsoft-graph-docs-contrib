@@ -2,12 +2,14 @@
 title: "workbookRangeSort resource type"
 description: "Manages sorting operations on Range objects."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # workbookRangeSort resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,3 +54,5 @@ None
   "suppressions": []
 }
 -->
+
+

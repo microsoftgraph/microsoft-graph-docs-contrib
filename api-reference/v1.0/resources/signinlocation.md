@@ -1,13 +1,15 @@
 ---
 title: "signInLocation resource type"
 description: "Provides the city, state and country/region from where the sign-in happened."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
 # signInLocation resource type
+
+Namespace: microsoft.graph
 
 Provides the city, state and country/region from where the sign-in happened.
 
@@ -51,3 +53,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

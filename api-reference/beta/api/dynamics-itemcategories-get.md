@@ -4,12 +4,17 @@ description: Gets an item category in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
 
 # Get itemCategories
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of an item category object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -24,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-GET /financials/companies('{id}')/itemCategories('{id}')
+GET /financials/companies/{id}/itemCategories/{id}
 ```
 
 ## Optional query parameters
@@ -46,15 +51,15 @@ If successful, this method returns a `200 OK` response code and an **itemCategor
 **Request**
 
 Here is an example of the request.
-```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/itemCategories('{id}')
+```http
+GET https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories/{id}
 ```
 
 **Response**
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {
@@ -64,4 +69,6 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-15T02:21:24.047Z"
 }
 ```
+
+
 

@@ -1,15 +1,19 @@
 ---
 title: "Create privilegedRoleAssignmentRequest"
 description: "Create a privilegedroleassignmentrequest object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # Create privilegedRoleAssignmentRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Create a [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) object.
 
@@ -89,7 +93,6 @@ Content-type: application/json
     "schedule": {
         "startDateTime": "2018-02-08T02:35:17.903Z"
     },
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
@@ -99,7 +102,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-privilegedroleassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-privilegedroleassignmentrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -114,7 +117,7 @@ Content-type: application/json
 ---
 
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -135,7 +138,6 @@ Content-length: 304
         "duration" : null
     },
     "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "2018-02-08T02:35:42.9137335Z",
@@ -162,3 +164,5 @@ Content-length: 304
   ]
 }
 -->
+
+

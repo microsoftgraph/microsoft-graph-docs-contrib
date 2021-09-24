@@ -1,13 +1,15 @@
 ---
 title: "page: copyToSection"
 description: "Copies a page to a specific section."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
 
 # page: copyToSection
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,9 +45,9 @@ In the request body, provide a JSON object that contains the parameters that you
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|The id of the SharePoint site to copy to. Use only when copying to an Office 365 team site.|
-|siteId|String|The id of the SharePoint web to copy to. Use only when copying to an Office 365 team site.|
-|groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
+|siteCollectionId|String|The id of the SharePoint site to copy to. Use only when copying to a SharePoint site.|
+|siteId|String|The id of the SharePoint web to copy to. Use only when copying to a SharePoint site.|
+|groupId|String|The id of the group to copy to. Use only when copying to a Microsoft 365 group.|
 |id|String|Required. The id of the destination section.|
 
 ## Response
@@ -76,7 +78,7 @@ Content-length: 52
 [!INCLUDE [sample-code](../includes/snippets/csharp/page-copytosection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/page-copytosection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -94,9 +96,7 @@ Content-length: 52
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -115,3 +115,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

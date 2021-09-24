@@ -1,13 +1,14 @@
 ---
 author: daspek
-ms.author: dspektor
 title: moveAction resource type
 description: The MoveAction object provides information about an activity that moved an item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # moveAction resource type
+
+Namespace: microsoft.graph
 
 The presence of the **moveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.
 
@@ -47,3 +48,4 @@ The presence of the **moveAction** resource on an [**itemActivity**][activity] i
   "suppressions": []
 }
 -->
+

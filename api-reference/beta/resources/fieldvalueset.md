@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "Represents the column values in a listItem resource."
 ms.date: 09/11/2017
 title: FieldValueSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # FieldValueSet resource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,3 +60,5 @@ You may request up to 12 lookup fields in a single query, plus any number of reg
   "suppressions": []
 }
 -->
+
+

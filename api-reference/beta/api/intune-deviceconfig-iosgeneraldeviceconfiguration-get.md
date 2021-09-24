@@ -1,13 +1,15 @@
 ---
 title: "Get iosGeneralDeviceConfiguration"
 description: "Read properties and relationships of the iosGeneralDeviceConfiguration object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get iosGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Read properties and relationships of the [iosGeneralDeviceConfiguration](../reso
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10910
+Content-Length: 11696
 
 {
   "value": {
@@ -207,6 +209,8 @@ Content-Length: 10910
     "kioskModeBlockSleepButton": true,
     "kioskModeAllowTouchscreen": true,
     "kioskModeBlockTouchscreen": true,
+    "kioskModeEnableVoiceControl": true,
+    "kioskModeAllowVoiceControlModification": true,
     "kioskModeAllowVoiceOverSettings": true,
     "kioskModeAllowVolumeButtons": true,
     "kioskModeBlockVolumeButtons": true,
@@ -335,6 +339,9 @@ Content-Length: 10910
     "airPrintBlockCredentialsStorage": true,
     "airPrintForceTrustedTLS": true,
     "airPrintBlockiBeaconDiscovery": true,
+    "filesNetworkDriveAccessBlocked": true,
+    "filesUsbDriveAccessBlocked": true,
+    "wifiPowerOnForced": true,
     "blockSystemAppRemoval": true,
     "vpnBlockCreation": true,
     "appRemovalBlocked": true,
@@ -346,12 +353,24 @@ Content-Length: 10910
     "contactsAllowManagedToUnmanagedWrite": true,
     "contactsAllowUnmanagedToManagedRead": true,
     "cellularBlockPersonalHotspotModification": true,
-    "siriDisableServerLogging": true
+    "continuousPathKeyboardBlocked": true,
+    "findMyDeviceInFindMyAppBlocked": true,
+    "findMyFriendsInFindMyAppBlocked": true,
+    "iTunesBlocked": true,
+    "sharedDeviceBlockTemporarySessions": true,
+    "appClipsBlocked": true,
+    "applePersonalizedAdsBlocked": true,
+    "nfcBlocked": true,
+    "autoUnlockBlocked": true,
+    "unpairedExternalBootToRecoveryAllowed": true,
+    "onDeviceOnlyDictationForced": true,
+    "wiFiConnectToAllowedNetworksOnlyForced": true,
+    "onDeviceOnlyTranslationForced": true,
+    "managedPasteboardRequired": true,
+    "kioskModeAppType": "appStoreApp"
   }
 }
 ```
-
-
 
 
 

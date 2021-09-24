@@ -1,13 +1,15 @@
 ---
 title: "Update mailSearchFolder"
 description: "Update the writable properties of a mailSearchFolder object."
-localization_priority: Normal
-author: "angelgolfer-ms"
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Update mailSearchFolder
+
+Namespace: microsoft.graph
 
 Update the writable properties of a [mailSearchFolder](../resources/mailsearchfolder.md) object.
 
@@ -69,7 +71,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,7 +88,7 @@ Content-type: application/json
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +106,6 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 0,
   "totalItemCount": 0,
-  "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [
@@ -124,7 +125,8 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    
+
   ]
 }
 -->
+

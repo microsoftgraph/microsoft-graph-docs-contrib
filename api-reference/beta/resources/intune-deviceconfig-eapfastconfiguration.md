@@ -1,13 +1,15 @@
 ---
 title: "eapFastConfiguration enum type"
 description: "Available settings for EAP-FAST Configuration."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # eapFastConfiguration enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Available settings for EAP-FAST Configuration.
 |useProtectedAccessCredential|1|Use Protected Access Credential (PAC).|
 |useProtectedAccessCredentialAndProvision|2|Use Protected Access Credential (PAC) and Provision PAC.|
 |useProtectedAccessCredentialAndProvisionAnonymously|3|Use Protected Access Credential (PAC), Provision PAC, and do so anonymously.|
-
-
 
 
 

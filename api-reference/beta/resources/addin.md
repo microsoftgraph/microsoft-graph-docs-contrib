@@ -1,16 +1,19 @@
 ---
 title: "addIn resource type"
 description: "Here is a JSON representation of the resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "applications"
+author: "sureshja"
 ---
 
 # addIn resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [might configure add-ins](/onedrive/developer/file-handlers/?view=odsp-graph-online) for File Handler functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
 
 ## Properties
 | Property	   | Type	|Description|

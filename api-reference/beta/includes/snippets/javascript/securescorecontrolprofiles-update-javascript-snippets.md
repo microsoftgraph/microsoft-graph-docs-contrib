@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const secureScoreControlProfile = {
-  controlStateUpdates: "controlStateUpdates-value"
+  controlStateUpdates: 'controlStateUpdates-value'
 };
 
-let res = await client.api('/security/secureScoreControlProfiles/AdminMFA')
+await client.api('/security/secureScoreControlProfiles/AdminMFA')
 	.version('beta')
-	.update({secureScoreControlProfile : secureScoreControlProfile});
+	.update(secureScoreControlProfile);
 
 ```

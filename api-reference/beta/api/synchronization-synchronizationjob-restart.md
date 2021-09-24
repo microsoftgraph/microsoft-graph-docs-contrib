@@ -1,13 +1,15 @@
 ---
 title: "Restart synchronizationJob"
 description: "Restart the synchronization job, forcing it to reprocess all the objects in the directory. Optionally clears existing synchronization state and previous errors."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "ArvindHarinder1"
+ms.prod: "applications"
 ---
 
 # Restart synchronizationJob
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     |Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account) |Not supported. |
-|Application                            |Not supported.  | 
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
@@ -71,7 +73,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-restart-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-restart-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -90,9 +92,7 @@ Content-type: application/json
 The following is an example of a response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -111,3 +111,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

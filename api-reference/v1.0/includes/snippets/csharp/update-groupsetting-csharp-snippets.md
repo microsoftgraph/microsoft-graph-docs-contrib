@@ -8,79 +8,17 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var groupSetting = new GroupSetting
 {
-	DisplayName = "displayName-value",
-	TemplateId = "templateId-value",
 	Values = new List<SettingValue>()
 	{
 		new SettingValue
 		{
-			Name = "CustomBlockedWordsList",
-			Value = ""
-		},
-		new SettingValue
-		{
-			Name = "EnableMSStandardBlockedWords",
-			Value = "False"
-		},
-		new SettingValue
-		{
-			Name = "ClassificationDescriptions",
-			Value = ""
-		},
-		new SettingValue
-		{
-			Name = "DefaultClassification",
-			Value = ""
-		},
-		new SettingValue
-		{
-			Name = "PrefixSuffixNamingRequirement",
-			Value = ""
-		},
-		new SettingValue
-		{
-			Name = "AllowGuestsToBeGroupOwner",
-			Value = "False"
-		},
-		new SettingValue
-		{
-			Name = "AllowGuestsToAccessGroups",
-			Value = "True"
-		},
-		new SettingValue
-		{
-			Name = "GuestUsageGuidelinesUrl",
-			Value = ""
-		},
-		new SettingValue
-		{
-			Name = "GroupCreationAllowedGroupId",
-			Value = "62e90394-69f5-4237-9190-012177145e10"
-		},
-		new SettingValue
-		{
 			Name = "AllowToAddGuests",
-			Value = "True"
-		},
-		new SettingValue
-		{
-			Name = "UsageGuidelinesUrl",
-			Value = ""
-		},
-		new SettingValue
-		{
-			Name = "ClassificationList",
-			Value = ""
-		},
-		new SettingValue
-		{
-			Name = "EnableGroupCreation",
-			Value = "True"
+			Value = "true"
 		}
 	}
 };
 
-await graphClient.GroupSettings["{id}"]
+await graphClient.Groups["{group-id}"].Settings["{groupSetting-id}"]
 	.Request()
 	.UpdateAsync(groupSetting);
 

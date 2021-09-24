@@ -1,13 +1,15 @@
 ---
 title: "timeSlot resource type"
 description: "A time period."
-localization_priority: Normal
-author: "angelgolfer-ms"
+ms.localizationpriority: medium
+author: "vrod9429"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # timeSlot resource type
+
+Namespace: microsoft.graph
 
 Represents a time slot for a meeting.
 
@@ -45,3 +47,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

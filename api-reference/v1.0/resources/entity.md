@@ -1,13 +1,15 @@
 ---
 title: "entity resource type"
-description: ""
-localization_priority: Normal
-author: ""
-ms.prod: ""
+description: "Represents an entity."
+ms.localizationpriority: medium
+author: "keylimesoda"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
 # entity resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 | Property	   | Type	|Description|
@@ -35,7 +37,6 @@ Here is a JSON representation of the resource
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -47,3 +48,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

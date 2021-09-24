@@ -1,13 +1,15 @@
 ---
 title: "itemBody resource type"
 description: "Represents properties of the body of an item, such as a message, event or group post."
-localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.localizationpriority: medium
+author: "grangeryy"
+ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # itemBody resource type
+
+Namespace: microsoft.graph
 
 Represents properties of the body of an item, such as a message, event or group post.
 
@@ -15,7 +17,7 @@ Represents properties of the body of an item, such as a message, event or group 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |content|String|The content of the item.|
-|contentType|bodyType|The type of the content. Possible values are `text` and `HTML`.|
+|contentType|bodyType|The type of the content. Possible values are `text` and `html`.|
 
 ## JSON representation
 
@@ -34,7 +36,6 @@ Here is a JSON representation of the resource
   "content": "string",
   "contentType": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -46,3 +47,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The currencyColumn on a columnDefinition resource indicates that the column's values represent currency."
 ms.date: 09/11/2017
 title: CurrencyColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # CurrencyColumn resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,3 +42,5 @@ Here is a JSON representation of a **currencyColumn** resource.
   "suppressions": []
 }
 -->
+
+

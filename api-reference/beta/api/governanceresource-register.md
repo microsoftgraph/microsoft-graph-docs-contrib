@@ -1,27 +1,49 @@
 ---
 title: "governanceResource: register"
 description: "Register a governanceResource object in PIM."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # governanceResource: register
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Register a [governanceResource](../resources/governanceresource.md) object in Privileged Identity Management.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
 
 >**Note:** This API also requires that the requester have at least one active role assignment on the resource.
+
+### Azure resources
 
 | Permission type | Permissions |
 |:--------------- |:----------- |
 | Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
+
+### Azure AD
+
+| Permission type | Permissions |
+|:--------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
+
+### Groups
+
+|Permission type | Permissions |
+|:-------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | Not supported. |
 
@@ -91,3 +113,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

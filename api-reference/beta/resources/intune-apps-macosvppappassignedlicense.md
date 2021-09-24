@@ -1,13 +1,15 @@
 ---
 title: "macOsVppAppAssignedLicense resource type"
 description: "MacOS Volume Purchase Program license assignment. This class does not support Create, Delete, or Update."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # macOsVppAppAssignedLicense resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -54,8 +56,6 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-
-
 
 
 

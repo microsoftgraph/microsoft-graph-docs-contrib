@@ -1,13 +1,15 @@
 ---
 title: "List macOSOfficeSuiteApps"
 description: "List properties and relationships of the macOSOfficeSuiteApp objects."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # List macOSOfficeSuiteApps
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ List properties and relationships of the [macOSOfficeSuiteApp](../resources/intu
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1023
+Content-Length: 1088
 
 {
   "value": [
@@ -87,13 +89,13 @@ Content-Length: 1023
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
-      "dependentAppCount": 1
+      "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2
     }
   ]
 }
 ```
-
-
 
 
 

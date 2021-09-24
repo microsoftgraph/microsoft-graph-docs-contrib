@@ -1,13 +1,15 @@
 ---
 title: "androidDeviceOwnerDefaultAppPermissionPolicyType enum type"
 description: "Android Device Owner default app permission policy type."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidDeviceOwnerDefaultAppPermissionPolicyType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Android Device Owner default app permission policy type.
 |prompt|1|Prompt.|
 |autoGrant|2|Auto grant.|
 |autoDeny|3|Auto deny.|
-
-
 
 
 

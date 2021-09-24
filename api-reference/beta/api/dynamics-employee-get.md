@@ -4,12 +4,17 @@ description: Gets an employee object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
 
 # Get employees
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of an employee object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-GET /financials/companies('{id}')/employees('{id}')
+GET /financials/companies/{id}/employees/{id}
 ```
 
 ## Optional query parameters
@@ -44,15 +49,15 @@ If successful, this method returns a `200 OK` response code and an **employees**
 
 Here is an example of the request.
 
-```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/employees('{id}')
+```http
+GET https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 ```
 
 **Response**
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {
@@ -78,9 +83,11 @@ Here is an example of the response.
   "terminationDate": "0001-01-01",
   "status": "Active",
   "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/employees('{id}')/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies/{id}/employees/{id}/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"  
 }
 ```
+
+
 
 

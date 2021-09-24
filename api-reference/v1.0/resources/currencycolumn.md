@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CurrencyColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The currencyColumn on a columnDefinition resource indicates that the column's values represent currency."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # CurrencyColumn resource type
+
+Namespace: microsoft.graph
 
 The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.
 
@@ -37,3 +38,4 @@ Here is a JSON representation of a **currencyColumn** resource.
   "section": "documentation",
   "tocPath": "Resources/CurrencyColumn"
 } -->
+

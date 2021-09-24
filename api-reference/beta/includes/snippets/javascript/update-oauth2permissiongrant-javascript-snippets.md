@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const oAuth2PermissionGrant = {
-  scope: "scope-value"
+  scope: 'scope-value'
 };
 
-let res = await client.api('/oAuth2Permissiongrants/{id}')
+await client.api('/oauth2PermissionGrants/{id}')
 	.version('beta')
-	.update({oAuth2PermissionGrant : oAuth2PermissionGrant});
+	.update(oAuth2PermissionGrant);
 
 ```

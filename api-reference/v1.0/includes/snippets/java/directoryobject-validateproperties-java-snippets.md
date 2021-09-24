@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String entityType = "Group";
 
@@ -12,10 +12,16 @@ String displayName = "Myprefix_test_mysuffix";
 
 String mailNickname = "Myprefix_test_mysuffix";
 
-String onBehalfOfUserId = "onBehalfOfUserId-value";
+UUID onBehalfOfUserId = UUID.fromString("onBehalfOfUserId-value");
 
 graphClient.directoryObjects()
-	.validateProperties(entityType,displayName,mailNickname,onBehalfOfUserId)
+	.validateProperties(DirectoryObjectValidatePropertiesParameterSet
+		.newBuilder()
+		.withEntityType(entityType)
+		.withDisplayName(displayName)
+		.withMailNickname(mailNickname)
+		.withOnBehalfOfUserId(onBehalfOfUserId)
+		.build())
 	.buildRequest()
 	.post();
 

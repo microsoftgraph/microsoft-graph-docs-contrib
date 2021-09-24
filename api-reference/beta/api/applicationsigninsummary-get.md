@@ -1,13 +1,15 @@
 ---
 title: "Get applicationSignInSummary"
 description: "Retrieve the properties and relationships of an **applicationSigninSummary** object."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "dhanyahk"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
 # Get applicationSignInSummary
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Report.Read.All |
+|Delegated (work or school account) | Reports.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |
-|Application | Report.Read.All | 
+|Application | Reports.Read.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -55,14 +57,14 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_applicationsigninsummary"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(period='D7')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationsigninsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationsigninsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -110,3 +112,5 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+
+

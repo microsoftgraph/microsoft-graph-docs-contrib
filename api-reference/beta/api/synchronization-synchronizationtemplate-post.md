@@ -1,13 +1,15 @@
 ---
 title: "Create synchronizationTemplate"
 description: "Create a new synchronization template for a given application."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "ArvindHarinder1"
+ms.prod: "applications"
 ---
 
 # Create synchronizationTemplate
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     |Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported.| 
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
@@ -66,7 +68,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-synchronizationtemplate-from-synchronization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-synchronizationtemplate-from-synchronization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -116,3 +118,5 @@ HTTP/1.1 201 Created
   ]
 }
 -->
+
+

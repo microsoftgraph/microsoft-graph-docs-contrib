@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The dateTimeColumn on a columnDefinition resource indicates that the column's values are dates or times."
 ms.date: 09/11/2017
 title: DateTimeColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # DateTimeColumn resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,3 +53,5 @@ Here is a JSON representation of a **dateTimeColumn** resource.
   "suppressions": []
 }
 -->
+
+

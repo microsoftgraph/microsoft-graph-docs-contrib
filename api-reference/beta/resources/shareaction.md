@@ -3,12 +3,14 @@ author: daspek
 description: "The ShareAction resource provides information about an activity that shared an item."
 ms.date: 09/14/2017
 title: ShareAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 
 # ShareAction resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,3 +54,5 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
+
+

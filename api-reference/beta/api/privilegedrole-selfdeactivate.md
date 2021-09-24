@@ -1,15 +1,19 @@
 ---
 title: "privilegedRole: selfDeactivate"
 description: "Deactivate the role that is assigned to the requestor."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # privilegedRole: selfDeactivate
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Deactivate the role that is assigned to the requestor.
 ## Permissions
@@ -29,7 +33,7 @@ The requestor can only call ```selfDeactivate``` for the role that is assigned t
 POST /privilegedRoles/{id}/selfDeactivate
 ```
 
-Note that ``<id>`` is the target role id.
+Note that ``{id}`` is the target role id.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -60,7 +64,7 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedrole-selfdeactivate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedrole-selfdeactivate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -76,7 +80,7 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,3 +114,5 @@ Content-length: 184
   ]
 }
 -->
+
+

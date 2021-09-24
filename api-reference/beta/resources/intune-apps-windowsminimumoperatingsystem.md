@@ -1,13 +1,15 @@
 ---
 title: "windowsMinimumOperatingSystem resource type"
 description: "The minimum operating system required for a Windows mobile app."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # windowsMinimumOperatingSystem resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -27,6 +29,10 @@ The minimum operating system required for a Windows mobile app.
 |v10_1803|Boolean|Windows 10 1803 or later.|
 |v10_1809|Boolean|Windows 10 1809 or later.|
 |v10_1903|Boolean|Windows 10 1903 or later.|
+|v10_1909|Boolean|Windows 10 1909 or later.|
+|v10_2004|Boolean|Windows 10 2004 or later.|
+|v10_2H20|Boolean|Windows 10 2H20 or later.|
+|v10_21H1|Boolean|Windows 10 21H1 or later.|
 
 ## Relationships
 None
@@ -49,11 +55,13 @@ Here is a JSON representation of the resource.
   "v10_1709": true,
   "v10_1803": true,
   "v10_1809": true,
-  "v10_1903": true
+  "v10_1903": true,
+  "v10_1909": true,
+  "v10_2004": true,
+  "v10_2H20": true,
+  "v10_21H1": true
 }
 ```
-
-
 
 
 

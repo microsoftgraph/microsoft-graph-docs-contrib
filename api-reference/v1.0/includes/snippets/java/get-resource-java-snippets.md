@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Stream Stream = graphClient.customRequest("/me/onenote/resources/{id}/content", Stream.class)
+InputStream stream = graphClient.customRequest("/me/onenote/resources/{id}/content", InputStream.class)
 	.buildRequest()
 	.get();
 

@@ -1,12 +1,15 @@
 ---
 title: "deviceManagementSettingCategory resource type"
 description: "Entity representing a setting category"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementSettingCategory resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -28,6 +31,7 @@ Entity representing a setting category
 |:---|:---|:---|
 |id|String|The category ID|
 |displayName|String|The category name|
+|hasRequiredSetting|Boolean|The category contains top level required setting|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -46,11 +50,10 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "hasRequiredSetting": true
 }
 ```
-
-
 
 
 

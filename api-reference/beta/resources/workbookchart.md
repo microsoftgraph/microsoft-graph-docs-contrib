@@ -2,12 +2,14 @@
 title: "workbookChart resource type"
 description: "Represents a chart object in a workbook."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # workbookChart resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -87,3 +89,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

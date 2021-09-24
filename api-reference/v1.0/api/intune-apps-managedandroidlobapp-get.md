@@ -1,13 +1,15 @@
 ---
 title: "Get managedAndroidLobApp"
 description: "Read properties and relationships of the managedAndroidLobApp object."
-author: "tfitzmac"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get managedAndroidLobApp
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -16,11 +18,11 @@ Read properties and relationships of the [managedAndroidLobApp](../resources/int
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -32,7 +34,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1420
+Content-Length: 1464
 
 {
   "value": {
@@ -97,13 +99,16 @@ Content-Length: 1420
       "v4_3": true,
       "v4_4": true,
       "v5_0": true,
-      "v5_1": true
+      "v5_1": true,
+      "v10_0": true,
+      "v11_0": true
     },
     "versionName": "Version Name value",
     "versionCode": "Version Code value"
   }
 }
 ```
+
 
 
 

@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.app().calls("{id}").audioRoutingGroups("{id}")
+graphClient.communications().calls("{id}").audioRoutingGroups("{id}")
 	.buildRequest()
 	.delete();
 

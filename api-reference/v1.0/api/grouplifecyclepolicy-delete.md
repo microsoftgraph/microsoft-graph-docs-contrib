@@ -1,13 +1,15 @@
 ---
 title: "Delete groupLifecyclePolicy"
 description: "Deletes a groupLifecyclePolicy."
-author: "dkershaw10"
-localization_priority: Normal
+author: "Jordanndahl"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Delete groupLifecyclePolicy
+
+Namespace: microsoft.graph
 
 Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
@@ -60,7 +62,7 @@ DELETE https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-grouplifecyclepolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-grouplifecyclepolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -95,3 +97,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

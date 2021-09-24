@@ -1,18 +1,20 @@
 ---
 title: "group: getMemberGroups"
-description: "Return all the groups that the specified group is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the group is a direct member of."
-localization_priority: Priority
-author: "dkershaw10"
+description: "Return all the groups that the specified group is a member of."
+ms.localizationpriority: high
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # group: getMemberGroups
 
+Namespace: microsoft.graph
+
 Return all the groups that the specified group is a member of. The check is transitive, unlike reading the [memberOf](../api/group-list-memberof.md) navigation property, which returns only the groups that the group is a direct member of.
 
-This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each
-request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is
+This function supports Microsoft 365 and other types of groups provisioned in Azure AD. The maximum number of groups each
+request can return is 2046. Note that Microsoft 365 groups cannot contain groups. So membership in a Microsoft 365 group is
 always direct.
 
 ## Permissions
@@ -21,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Delegated (work or school account)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported.                                                                              |
-| Application                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
+| Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 
 ## HTTP request
@@ -54,7 +56,7 @@ If successful, this method returns `200 OK` response code and String collection 
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -66,9 +68,8 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/getMemberGroups
+POST https://graph.microsoft.com/v1.0/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": false
@@ -78,7 +79,7 @@ Content-length: 33
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-getmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-getmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,11 +94,11 @@ Content-length: 33
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -109,11 +110,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [
-    "string-value"
+    "1132b215-826f-42a9-8cfe-1643d19d17fd"
   ]
 }
 ```
@@ -130,3 +130,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+
