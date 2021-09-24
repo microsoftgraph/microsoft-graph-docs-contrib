@@ -232,8 +232,8 @@ Content-type: application/json
             ],
             "organizer": {
                 "emailAddress": {
-                    "name": "Swathi Birlangi (MINDTREE LIMITED)",
-                    "address": "v-sbirlangi@microsoft.com"
+                    "name": "Samantha Booth",
+                    "address": "samanthab@adatum.onmicrosoft.com"
                 }
             },
             "onlineMeeting": {
