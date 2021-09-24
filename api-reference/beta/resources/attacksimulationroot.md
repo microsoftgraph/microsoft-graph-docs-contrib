@@ -2,7 +2,7 @@
 title: "attackSimulationRoot resource type"
 description: "Provides tenants capability to launch a realistic phishing attacks and learn from it."
 author: "Gopal-MSFT"
-ms.localizationpriority: Menium
+ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
 ---

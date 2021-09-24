@@ -2,7 +2,7 @@
 title: "security resource type"
 description: "To connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities."
 author: "angelgolfer-ms"
-ms.localizationpriority: Menium
+ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
 ---
