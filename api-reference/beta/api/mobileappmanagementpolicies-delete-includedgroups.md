@@ -2,7 +2,7 @@
 title: "Delete includedGroup"
 description: "Delete a group from the list of groups included in a mobile app management policy."
 author: "ravennMSFT"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.All|
+|Delegated (work or school account)|Policy.ReadWrite.MobilityManagement|
 |Delegated (personal Microsoft account) | Not supported.|
 |Application | Not supported.|
 

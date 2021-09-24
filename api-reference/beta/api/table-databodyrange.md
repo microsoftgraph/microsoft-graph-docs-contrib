@@ -2,7 +2,7 @@
 title: "Table: DataBodyRange"
 description: "Gets the range object associated with the data body of the table."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---

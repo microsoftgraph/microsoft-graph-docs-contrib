@@ -2,7 +2,7 @@
 title: "enrollmentAvailabilityOptions enum type"
 description: "Options available for enrollment flow customization"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,7 +23,6 @@ Options available for enrollment flow customization
 |availableWithPrompts|0|Device enrollment flow is shown to the end user with guided enrollment prompts|
 |availableWithoutPrompts|1|Device enrollment flow is available to the end user without guided enrollment prompts|
 |unavailable|2|Device enrollment flow is unavailable to the enduser|
-
 
 
 

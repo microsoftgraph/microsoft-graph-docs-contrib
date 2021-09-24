@@ -2,7 +2,7 @@
 title: "List securityBaselineCategoryStateSummaries"
 description: "List properties and relationships of the securityBaselineCategoryStateSummary objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -78,7 +78,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

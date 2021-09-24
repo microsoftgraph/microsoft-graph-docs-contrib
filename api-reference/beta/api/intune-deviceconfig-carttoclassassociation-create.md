@@ -2,7 +2,7 @@
 title: "Create cartToClassAssociation"
 description: "Create a new cartToClassAssociation object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -108,7 +108,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

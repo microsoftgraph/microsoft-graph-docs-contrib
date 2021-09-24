@@ -1,7 +1,7 @@
 ---
 title: "Get informationProtectionLabel"
 description: "Retrieve the properties and relationships of the specified informationProtectionLabel object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"

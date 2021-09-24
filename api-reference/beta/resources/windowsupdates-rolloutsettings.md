@@ -2,7 +2,7 @@
 title: "rolloutSettings resource type"
 description: "Settings controlling how the service deploys an update over time."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

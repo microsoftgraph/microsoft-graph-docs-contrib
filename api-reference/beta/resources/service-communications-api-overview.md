@@ -2,7 +2,7 @@
 title: "Working with service communications APIs in Microsoft Graph"
 description: You can use the service communications API in Microsoft Graph to access the health status and message center posts about Microsoft services."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: resourcePageType
 ---
@@ -18,7 +18,7 @@ For more information on access tokens, app registration, and delegated and appli
 
 ### Access service communications API on behalf of signed-in user
 
-Delegated permissions are needed to access the service communications API on behalf of a signed-in user. Customer-facing canvas applications, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) (accessible only to admin roles), can call the service communications API to get the service health and service announcements data for the signed-in user's tenant, _on behalf of the signed-in user_. Users can find out whether their subscribed servies are healthy or have issues. They can also learn about any current service issues affecting their tenants. 
+Delegated permissions are needed to access the service communications API on behalf of a signed-in user. Customer-facing canvas applications, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) (accessible only to admin roles), can call the service communications API to get the service health and service announcements data for the signed-in user's tenant, _on behalf of the signed-in user_. Users can find out whether their subscribed services are healthy or have issues. They can also learn about any current service issues affecting their tenants. 
 
 ### Access service communications API without user
 
@@ -37,6 +37,17 @@ Application permissions are needed to access the service communications API with
 | List all service messages for tenant | [List messages](/graph/api/serviceannouncement-list-messages?view=graph-rest-beta&preserve-view=true) | _ServiceMessage.Read.All_ | Delegated and application |
 | Get a specific service message for tenant | [Get message](/graph/api/serviceupdatemessage-get?view=graph-rest-beta&preserve-view=true) | _ServiceMessage.Read.All_ | Delegated and application |
 | Update service message status for signed in user | For a list of status operations, see [serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true).| _ServiceMessageViewpoint.Write_ | Delegated |
+
+## Availability in national clouds
+That service communications API is available in all Microsoft national cloud deployments. You can get service health and communications data for any tenants in Microsoft national clouds. For details, see [national cloud deployments](/graph/deployments).
+
+|National clouds|API URL (partial)|
+|:--------------|:-----------------|
+|Microsoft Graph global service| https://graph.microsoft.com/beta/admin/serviceAnnouncement/|
+|Microsoft Graph for US Government L4 (GccHigh)|https://graph.microsoft.us/beta/admin/serviceAnnouncement/|
+|Microsoft Graph for US Government L5 (DoD)|https://dod-graph.microsoft.us/beta/admin/serviceAnnouncement/|
+|Microsoft Graph Germany|https://graph.microsoft.de/beta/admin/serviceAnnouncement/|
+|Microsoft Graph China operated by 21Vianet|https://microsoftgraph.chinacloudapi.cn/beta/admin/serviceAnnouncement/|
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

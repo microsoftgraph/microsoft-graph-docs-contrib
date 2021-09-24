@@ -1,7 +1,7 @@
 ---
 title: "Get namedLocation"
 description: "Retrieve the properties and relationships of a namedlocation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

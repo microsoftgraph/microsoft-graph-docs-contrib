@@ -1,7 +1,7 @@
 ---
 title: "updatePriorities action"
 description: "Update policy priorities."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
 ms.prod: "intune"
 doc_type: apiPageType
@@ -81,7 +81,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 ```
-
 
 
 

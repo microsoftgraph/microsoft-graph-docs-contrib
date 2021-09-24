@@ -2,7 +2,7 @@
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Known issues with Microsoft Graph
@@ -12,6 +12,28 @@ This article describes known issues with Microsoft Graph.
 To report a known issue, see the [Microsoft Graph support](https://developer.microsoft.com/graph/support) page.
 
 For information about the latest updates to the Microsoft Graph API, see the [Microsoft Graph changelog](changelog.md).
+
+## Application and service principal APIs
+
+There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) entities currently in development. The following is a summary of current limitations and in-development API features.
+
+Current limitations:
+
+* Some application properties (such as appRoles and addIns) will not be available until all changes are completed.
+* Only multi-tenant apps can be registered.
+* Updating apps is restricted to apps registered after the initial beta update.
+* Azure Active Directory users can register apps and add additional owners.
+* Support for OpenID Connect and OAuth protocols.
+* Policy assignments to an application fail.
+* Operations on ownedObjects that require appId fail (For example, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+
+In development:
+
+* Ability to register single tenant apps.
+* Updates to servicePrincipal.
+* Migration of existing Azure AD apps to updated model.
+* Support for appRoles, pre-authorized clients, optional claims, group membership claims, and branding
+* Microsoft account (MSA) users can register apps.
 
 ## Bookings
 
@@ -132,10 +154,6 @@ In the meantime, to unblock development and testing you can use the following wo
     ```
 ## Contacts
 
-### Organization contacts available in only beta
-
-Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
-
 ### Default contacts folder
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
@@ -184,6 +202,15 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * OData context is sometimes returned incorrectly when tracking changes to relationships.
 * Schema extensions (legacy) are not returned with $select statement, but are returned without $select.
 * Clients cannot track changes to open extensions or registered schema extensions.
+
+## Devices and apps | Device updates (Windows updates)
+
+### Accessing and updating deployment audiences
+
+Accessing and updating deployment audiences on **deployment** resources created via Intune is not currently supported.
+
+* [Listing deployment audience members](/graph/api/windowsupdates-deploymentaudience-list-members) and [listing deployment audience exclusions](/graph/api/windowsupdates-deploymentaudience-list-exclusions) returns `404 Not Found`.
+* [Updating deployment audience members and exclusions](/graph/api/windowsupdates-deploymentaudience-updateaudience) or [updating by ID](/graph/api/windowsupdates-deploymentaudience-updateaudiencebyid) returns `202 Accepted` but the audience is not updated.
 
 ## Extensions
 
@@ -253,34 +280,24 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
-## Identity and access | Application and service principal APIs
+### Removing a group owner also removes the user as a group member
 
-There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) entities currently in development. The following is a summary of current limitations and in-development API features.
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
-Current limitations:
+## Identity and access
 
-* Some application properties (such as appRoles and addIns) will not be available until all changes are completed.
-* Only multi-tenant apps can be registered.
-* Updating apps is restricted to apps registered after the initial beta update.
-* Azure Active Directory users can register apps and add additional owners.
-* Support for OpenID Connect and OAuth protocols.
-* Policy assignments to an application fail.
-* Operations on ownedObjects that require appId fail (For example, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+### Conditional access policy
 
-In development:
+The [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) API currently requires consent to the **Policy.Read.All** permission to call the POST and PATCH methods. In the future, the **Policy.ReadWrite.ConditionalAccess** permission will enable you to read policies from the directory.
 
-* Ability to register single tenant apps.
-* Updates to servicePrincipal.
-* Migration of existing Azure AD apps to updated model.
-* Support for appRoles, pre-authorized clients, optional claims, group membership claims, and branding
-* Microsoft account (MSA) users can register apps.
-* Support for SAML and WsFed protocols.
+### Claims mapping policy
 
-## Identity and access | Conditional access
+The [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) API may require consent to both the **Policy.Read.All** and **Policy.ReadWrite.ConditionalAccess** permissions for the `LIST /policies/claimsMappingPolicies` and `GET /policies/claimsMappingPolicies/{id}` methods as follows:
 
-### Permissions
++ If no claimsMappingPolicy objects are available to retrieve in a LIST operation, either permission is sufficient to call this method.
++ If there are claimsMappingPolicy objects to retrieve, your app must consent to both permissions. If not, a `403 Forbidden` error is returned.
 
-Currently, the Policy.Read.All permission is required to call POST and PATCH APIs. In the future, the Policy.ReadWrite.ConditionalAccess permission will enable you to read policies from the directory.
+In the future, either permission will be sufficient to call both methods.
 
 ## JSON Batching
 
@@ -290,7 +307,7 @@ JSON batch requests must not contain any nested batch requests.
 
 ### All individual requests must be synchronous
 
-All requests contained in a batch request must be executed synchronously. If present, the `respond-async` preference will be ignored.
+All requests contained in a batch request must be run synchronously. If present, the `respond-async` preference will be ignored.
 
 ### No transactions
 
@@ -308,9 +325,9 @@ JSON batch requests are currently limited to 20 individual requests.
 
 Individual requests can depend on other individual requests. Currently, requests can only depend on a single other request, and must follow one of these three patterns:
 
-1. Parallel - no individual request states a dependency in the `dependsOn` property.
+1. Parallel - no individual request states a dependency in the **dependsOn** property.
 2. Serial - all individual requests depend on the previous individual request.
-3. Same - all individual requests that state a dependency in the `dependsOn` property, state the same dependency.
+3. Same - all individual requests that state a dependency in the **dependsOn** property, state the same dependency. **Note**: Requests made using this pattern will run sequentially.
 
 As JSON batching matures, these limitations will be removed.
 
@@ -329,6 +346,30 @@ does not become part of the body of the resultant message draft.
 
 In both the v1 and beta endpoints, the response of `GET /users/id/messages` includes the user's Microsoft Teams chats that occurred outside the scope of a team or channel. These chat messages have "IM" as their subject.
 
+## Reports
+
+### Azure AD activity reports
+
+When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you might still encounter an error message similar to the following:
+
+```json
+{
+    "error": {
+        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
+        "message": "Neither tenant is B2C or tenant doesn't have premium license",
+        "innerError": {
+            "date": "2021-09-02T17:15:30",
+            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
+            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
+        }
+    }
+}
+```
+This error might also occur when retrieving the **signInActivity** property of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource; for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
+
+This error is due to intermittent license check failures, which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required when the issue is resolved.
+
+
 ## Teamwork (Microsoft Teams)
 
 ### GET /teams is not supported
@@ -341,6 +382,9 @@ The filter query to get members of a team based on their roles `GET /teams/team-
 
 ### Missing properties for chat members
 In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
+
+### Missing properties in the list of teams that a user has joined
+The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
 
 ## Users
 

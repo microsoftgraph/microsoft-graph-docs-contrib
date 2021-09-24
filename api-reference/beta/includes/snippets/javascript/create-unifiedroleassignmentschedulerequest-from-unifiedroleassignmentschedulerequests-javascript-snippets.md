@@ -11,20 +11,16 @@ const options = {
 const client = Client.init(options);
 
 const unifiedRoleAssignmentScheduleRequest = {
-  '@odata.type': '#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentScheduleRequest',
-  action: 'String',
-  principalId: 'String',
-  roleDefinitionId: 'String',
-  directoryScopeId: 'String',
-  appScopeId: 'String',
-  isValidationOnly: 'Boolean',
-  targetScheduleId: 'String',
-  justification: 'String',
+  action: 'AdminAssign',
+  justification: 'Assign User Admin to IT Helpdesk (User) group',
+  roleDefinitionId: 'fdd7a751-b60b-444a-984c-02652fe8fa1c',
+  directoryScopeId: '/',
+  principalId: '07706ff1-46c7-4847-ae33-3003830675a1',
   scheduleInfo: {
-    '@odata.type': 'microsoft.graph.requestSchedule'
-  },
-  ticketInfo: {
-    '@odata.type': 'microsoft.graph.ticketInfo'
+    startDateTime: '2021-07-01T00:00:00Z',
+    expiration: {
+      type: 'NoExpiration'
+    }
   }
 };
 
