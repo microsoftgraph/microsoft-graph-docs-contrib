@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "b857b08a-a22e-4516-8b72-141793418142",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printDocument",
+          "ChangeType": "Removed",
+          "Description": "Removed the **uploadData** action from **PrintDocument** resource",
+          "Target": "printDocument"
+        }
+      ],
+      "Id": "b857b08a-a22e-4516-8b72-141793418142",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-30T00:00:00",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
                 {
           "Id": "2531d4d1-1572-4ce3-0654-61cf63abow90",
           "ApiChange": "Enum type",
