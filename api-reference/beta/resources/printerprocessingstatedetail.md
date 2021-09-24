@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Represents the processing status detail of the printer.
 
-Please include the `Prefer: include-unknown-enum-members` header to explicitly request for enum values beyond 'unknownFutureValue'.
-https://docs.microsoft.com/en-us/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations
+Include the `Prefer: include-unknown-enum-members` header to explicitly request for enum values beyond `unknownFutureValue`. For details, see
+[Handling future members in evolvable enumerations](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
 
 ## Members
 
