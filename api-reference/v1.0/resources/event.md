@@ -73,7 +73,7 @@ by providing a [delta](../api/event-delta.md) function.
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
 |iCalUId|String|A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.|
-|id|String| Case-sensitive and read-only.|
+|id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Case-sensitive and read-only.|
 |importance|importance|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
