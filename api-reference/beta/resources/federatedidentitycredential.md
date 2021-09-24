@@ -3,7 +3,7 @@ title: "federatedIdentityCredential resource type"
 description: "Represents a federated identity credential on an application."
 author: "kjyam98"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get federatedIdentityCredential"
 description: "Read the properties and relationships of a federatedIdentityCredential object."
 author: "kjyam98"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
