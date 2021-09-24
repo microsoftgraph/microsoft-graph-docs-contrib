@@ -172,7 +172,7 @@ The following example shows the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/calendar/events?$filter=startsWith(subject,'All')&messages?$filter=from/emailAddress/address eq 'admin@contoso.com'
+GET https://graph.microsoft.com/beta/me/calendar/events?$filter=startsWith(subject,'All')
 ```
 #### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
