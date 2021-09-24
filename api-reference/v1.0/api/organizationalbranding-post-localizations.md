@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 ## HTTP request
-This request creates a new localization branding and a default branding, if one does not already exist. 
+This request creates a new localization branding and a default branding if one does not already exist. 
 <!-- {
   "blockType": "ignored"
 }
@@ -40,15 +40,12 @@ POST /organization/{organizationId}/branding/localizations
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 The following table shows the properties that are required when you create the [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| id | String | An identifier that represents the locale specified in the ISO 639-1 standard, for example English is `en-us` or `en`. The **id** for the default /branding is always the String types `0` or `default`.  <br/><br/>**NOTE:** Multiple branding for a single locale are currently not supported. |
-
-If no **id** is specified, then the value of the **Content-Language** header, if specified, is used as the **id**. If neither a valid **id** nor a **Content-Language** header is specified, then an error is returned.
+| id | String | An identifier that represents the locale specified in the ISO 639-1 standard, for example English is `en-US`. You can't create the default branding by setting the value of **id** to the String types `0` or `default`.  <br/><br/>**NOTE:** Multiple branding for a single locale are currently not supported. |
 
 ## Response
 
@@ -56,7 +53,7 @@ If successful, this method returns a `201 Created` response code and an [organiz
 
 ## Examples
 
-The following example creates a branding localization for French (`fr`) localization.
+The following example creates a branding localization for French (`fr-FR`) localization. Any unspecified properties of the String type inherit from the value in the default branding object. For example, if the signInPageText in the default branding object is `null`, the signInPageText for the `fr-FR` branding created in this request will also be `null`. To override a `null` value without any text, use a string containing only whitespace.
 
 ### Request
 
@@ -67,13 +64,15 @@ The following is an example of the request.
   "name": "create_organizationalbrandinglocalization"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations
+POST https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations
 Content-Type: application/json
+
 {
     "backgroundColor":"#00000F",
-    "id": "fr"
+    "id": "fr-FR",
+    "signInPageText": " "
 }
----
+```
 
 
 ### Response
@@ -91,14 +90,15 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('29a4f813-9274-4e1b-858d-0afa98ae66d4')/branding/localizations/$entity",
-    "@odata.id": "https://graph.microsoft.com/v2/29a4f813-9274-4e1b-858d-0afa98ae66d4/directoryObjects/$/Microsoft.DirectoryServices.Organization('29a4f813-9274-4e1b-858d-0afa98ae66d4')//localizations/fr",
-    "id": "fr",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization('d69179bf-f4a4-41a9-a9de-249c0f2efb1d')/branding/localizations/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/directoryObjects/$/Microsoft.DirectoryServices.Organization('d69179bf-f4a4-41a9-a9de-249c0f2efb1d')//localizations/fr-FR",
+    "id": "fr-FR",
     "backgroundColor": "",
     "backgroundImageRelativeUrl": null,
     "bannerLogoRelativeUrl": null,
     "cdnList": [],
-    "signInPageText": "",
+    "signInPageText": " ",
     "squareLogoRelativeUrl": null,
     "usernameHintText": ""
 }
+```

@@ -10,9 +10,11 @@ doc_type: apiPageType
 # Get organizationalBranding
 Namespace: microsoft.graph
 
-Retrieve the default organizational branding object, if the **Accept-Language** header is not specified. If no organizational branding object has been created, this method returns a `404 Not Found` error. A default branding object is automatically created only once when you (Create organizationalBrandingLocalization](organizationalbranding-post-localizations.md).
+Retrieve the default organizational branding object, if the **Accept-Language** header is not specified. If no organizational branding object has been created, this method returns a `404 Not Found` error.
 
 If the **Accept-Language** header is specified, this method retrieves the branding for the specified locale.
+
+This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**. To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the [GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) method. The **id** for the default localization can be `0` or `default`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,13 +36,14 @@ GET /organization/{organizationId}/branding
 ```
 
 ## Optional query parameters
+
 This method supports only the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Accept-Language|A valid ISO 639-1 locale. Required.|
+|Accept-Language|A valid ISO 639-1 locale. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -63,7 +66,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding
+GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding
 ```
 
 #### Response
@@ -83,21 +86,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#branding",
-    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/en-US",
-    "id": "en-US",
-    "backgroundColor": "#FFFF33",
-    "backgroundImageRelativeUrl": null,
-    "bannerLogoRelativeUrl": null,
-    "cdnList": [],
-    "signInPageText": "Welcome",
-    "squareLogoRelativeUrl": null,
-    "usernameHintText": "hint"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#branding",
+    "@odata.id": "https://graph.microsoft.com/v2/99b24e1b-abec-4598-9d63-a2baf0a3cea1/directoryObjects/$/Microsoft.DirectoryServices.Organization('99b24e1b-abec-4598-9d63-a2baf0a3cea1')/branding/0",
+    "id": "0",
+    "backgroundColor": "",
+    "backgroundImageRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/illustration?ts=637535563816027796",
+    "bannerLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/bannerlogo?ts=637535563824629275",
+    "cdnList": [
+        "secure.aadcdn.microsoftonline-p.com",
+        "aadcdn.msftauthimages.net",
+        "aadcdn.msauthimages.net"
+    ],
+    "signInPageText": "Contoso",
+    "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+    "usernameHintText": ""
 }
 ```
 
 
-### Example 2: Get organizational branding but no branding configured
+### Example 2: Get organizational branding when no branding is configured
 
 #### Request
 
@@ -108,7 +115,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
 
 #### Response
@@ -125,7 +132,7 @@ HTTP/1.1 404 Not Found
 
 ### Example 3: Get organizational branding for the French locale
 
-The **Accept-Language** header is used to apply a particular localization to the branding. If the Accept-Language header is specified in the request, the response will include the Content-Language header, unless it is `und`.
+In the following example, the **Accept-Language** header is used specify the localization branding to retrieve.
 
 #### Request
 
@@ -136,8 +143,8 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
-Accept-Language: fr
+GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+Accept-Language: fr-FR
 ```
 
 #### Response
@@ -155,10 +162,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Language: fr
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#branding",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#branding",
     "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/fr",
     "id": "fr",
     "backgroundColor": "#FFFF33",
@@ -171,21 +177,21 @@ Content-Language: fr
 }
 ```
 
-### Example 4: Get bannerLogo for the French locale
-Returns **bannerLogo** for the fr locale if it exists. If the localization does not exist, returns the default **bannerLogo**.
+### Example 4: Get the bannerLogo for the default locale
+
+The following example returns the **bannerLogo** object for the default locale. You may specify the **id** as `default` or `0` in the request URL. If the object is not set, the request returns an empty response.
 
 #### Request
 
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
-  "name": "get_organizationalbranding_5"
+  "blockType": "ignored",
+  "name": "get_organizationalbranding_defaultlocale_bannerLogo"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
-Accept-Language: fr
+GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/default/bannerLogo
 ```
 
 #### Response
@@ -200,18 +206,14 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-Type: image/*
 
-{
-    "bannerLogo@odata.mediaContentType":"image/*",
-    "bannerLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo",
-    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
-}
+<Image>
 ```
 
-### Example 5: Get bannerLogo when no bannerLogo is configured
+### Example 5: Get the bannerLogo for the fr-FR locale
 
-This example shows a request for a property that does not exist on the default branding or the language specified in the Accept-Language header.
+The following example returns the **bannerLogo** object for the `fr-FR` locale whose bannerLogo is not set.
 
 #### Request
 
@@ -219,12 +221,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbranding_6"
+  "name": "get_organizationalbranding_frlocale_bannerLogo"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
-Accept-Language: de
+GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/default/bannerLogo
 ```
 
 #### Response
@@ -232,9 +233,13 @@ Accept-Language: de
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBranding"
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+
+{}
 ```

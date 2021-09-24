@@ -26,14 +26,17 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| 
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
-|[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) collection | Get an organizationalBranding object. |
-|[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Update an organizationalBranding object. |
-|[List organizationalBrandinglocalization](../api/organizationalbranding-list-localizations.md)|[organizationalBrandinglocalization](../resources/organizationalbrandinglocalization.md) collection|Get the organizationalBrandinglocalization resources from the branding navigation property.|
-|[Create organizationalBrandinglocalization](../api/organizationalbranding-post-localizations.md)|[organizationalBrandinglocalization](../resources/organizationalbrandinglocalization.md)| Create a new organizationalBrandinglocalization object. |
-|[Get organizationalBrandinglocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandinglocalization](organizationalbrandinglocalization.md) collection | Get a collection of organizationalBrandingLocalization objects. |
-|[Update organizationalBrandinglocalization](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandinglocalization](organizationalbrandinglocalization.md) | Update an  organizationalBrandingLocalization object. |
-|[Delete organizationalBrandinglocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandinglocalization](organizationalbrandinglocalization.md) | Delete a  organizationalBrandinglocalization object. |
-
+|**Organization licenses**| | |
+|[activateService](../api/organization-activateservice.md) | None |  Activate a service for an organization. |
+|**Organizational branding**| | |
+|[Create organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Create a new localization (language-specific) branding and a default branding object, if it doesn't exist. |
+|[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Get the default organizational branding object. |
+|[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Update the default organizational branding object. |
+|[Delete organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Delete the default organizational branding object. |
+|[List organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) collection | Retrieve all localization branding objects in the tenant. |
+|[Get organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Read the properties of a localization branding object. |
+|[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Update a localization branding object. |
+|[Delete organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Delete a localization branding object. |
 ## Properties
 
 | Property | Type | Description |

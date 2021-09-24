@@ -4862,19 +4862,21 @@ items:
             href: api/organizationalbranding-get.md
           - name: Update
             href: api/organizationalbranding-update.md
-        - name: Branding localization
-          href: resources/organizationalbrandinglocalization.md
-          items:
-          - name: List
-            href: api/organizationalbranding-list-localizations.md
-          - name: Create
-            href: api/organizationalbranding-post-localizations.md
-          - name: Get
-            href: api/organizationalbrandinglocalization-get.md
-          - name: Update
-            href: api/organizationalbrandinglocalization-update.md
           - name: Delete
-            href: api/organizationalbrandinglocalization-delete.md
+            href: api/organizationalbranding-delete.md
+          - name: Branding localization
+            href: resources/organizationalbrandinglocalization.md
+            items:
+            - name: List
+              href: api/organizationalbranding-list-localizations.md
+            - name: Create
+              href: api/organizationalbranding-post-localizations.md
+            - name: Get
+              href: api/organizationalbrandinglocalization-get.md
+            - name: Update
+              href: api/organizationalbrandinglocalization-update.md
+            - name: Delete
+              href: api/organizationalbrandinglocalization-delete.md
         - name: Policy
           href: resources/policy-overview.md
           items:

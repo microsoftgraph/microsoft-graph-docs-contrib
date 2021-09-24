@@ -57,7 +57,10 @@ The following is an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/localizations/
+GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/localizations/
+```
+
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,7 +72,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/localizations",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/localizations",
     "value": [
         {
             "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')//localizations/0",
