@@ -33,7 +33,7 @@
       {
         "source_path_from_root": "/api-reference/beta/api/organizationalbrandingpropertieslocalization-create.md",
         "redirect_url": "/graph/api/organizationalbranding-post-localizations?view=graph-rest-beta",
-        "redirect_document_id": true
+        "redirect_document_id": false
       },
       {
         "source_path_from_root": "/api-reference/beta/api/organizationalbrandingpropertieslocalization-update.md",
