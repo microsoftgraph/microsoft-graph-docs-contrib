@@ -158,13 +158,12 @@ Content-length: 354
   ]
 }
 ```
-This method supports some of the OData query parameters to help customize the response. For example, to filter the access packages with subject, include a filter such as `$filter=startsWith(subject,'All')` in the query. Simultaneously, filter to get all emails from a specific address received by the signed-in user `messages?$filter=from/emailAddress/address eq 'admin@contoso.com`.
 
-### Example 2: Filter with subject and emails from a specific address
+### Example 2: Get events by filtering on the subject property
 
-#### Optional query parameters
+This example gets events in the user's primary calendar by filtering on their subject starting with "All".
 
-##### Request
+#### Request
 The following example shows the request.
 
 <!-- {
@@ -175,7 +174,7 @@ The following example shows the request.
 ```http
 GET https://graph.microsoft.com/beta/me/calendar/events?$filter=startsWith(subject,'All')&messages?$filter=from/emailAddress/address eq 'admin@contoso.com'
 ```
-##### Response
+#### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!--
 {
@@ -194,16 +193,16 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('458d4c95-124e-49da-ba9d-1dd0387e682e')/calendar/events",
     "value": [
         {
-            "@odata.etag": "W/\"73p1z1T9xUKc8HVNwAwcvgAAR5rxTA==\"",
+            "@odata.etag": "W/\"73p1z1T9xUKc8HVNwAwcvgAAR5r+mw==\"",
             "id": "AAMkADBmYTFkMzUyLTgxODQtNDA0YS05YzdlLWRkYjJlY2U4NTljZgBGAAAAAACdCqnIfBTiS7nPzH--j6RvBwDvenXPVP3FQpzwdU3ADBy_AAAAAAENAADvenXPVP3FQpzwdU3ADBy_AABH5Vj3AAA=",
             "createdDateTime": "2021-09-13T13:08:27.8871578Z",
-            "lastModifiedDateTime": "2021-09-13T13:10:32.5265937Z",
-            "changeKey": "73p1z1T9xUKc8HVNwAwcvgAAR5rxTA==",
+            "lastModifiedDateTime": "2021-09-14T15:14:24.624932Z",
+            "changeKey": "73p1z1T9xUKc8HVNwAwcvgAAR5r+mw==",
             "categories": [],
             "transactionId": "f9a93e83-2e8f-a9aa-29af-17b4fe87e221",
             "originalStartTimeZone": "India Standard Time",
             "originalEndTimeZone": "India Standard Time",
-            "iCalUId": "040000008200E00074C5B7101A82E008000000001EC43E71A0A8D7010000000000000000100000003FE75E1BE3F09B43BCF2C0EF408DD567",
+            "uid": "040000008200E00074C5B7101A82E008000000001EC43E71A0A8D7010000000000000000100000003FE75E1BE3F09B43BCF2C0EF408DD567",
             "reminderMinutesBeforeStart": 15,
             "isReminderOn": true,
             "hasAttachments": false,
@@ -223,6 +222,7 @@ Content-type: application/json
             "isOnlineMeeting": true,
             "onlineMeetingProvider": "teamsForBusiness",
             "allowNewTimeProposals": true,
+            "occurrenceId": null,
             "isDraft": false,
             "hideAttendees": false,
             "recurrence": null,
@@ -245,15 +245,15 @@ Content-type: application/json
             "location": {
                 "displayName": "Singapore",
                 "locationType": "default",
-                "uniqueId": "Singapore",
-                "uniqueIdType": "private"
+                "uniqueId": "79e60b5c-bf7e-4811-b314-6eb7f270ec21",
+                "uniqueIdType": "locationStore"
             },
             "locations": [
                 {
                     "displayName": "Singapore",
                     "locationType": "default",
-                    "uniqueId": "Singapore",
-                    "uniqueIdType": "private"
+                    "uniqueId": "79e60b5c-bf7e-4811-b314-6eb7f270ec21",
+                    "uniqueIdType": "locationStore"
                 }
             ],
             "attendees": [
@@ -271,8 +271,8 @@ Content-type: application/json
             ],
             "organizer": {
                 "emailAddress": {
-                    "name": "admin@contoso.com",
-                    "address": "admin@contoso.com"
+                    "name": "Swathi Birlangi (MINDTREE LIMITED)",
+                    "address": "v-sbirlangi@microsoft.com"
                 }
             },
             "onlineMeeting": {
