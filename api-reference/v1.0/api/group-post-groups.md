@@ -127,7 +127,7 @@ Content-length: 244
 
 #### Response
 
-The following is an example of the response.
+The following is an example of the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -224,7 +224,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 
+The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -330,11 +330,11 @@ Content-Type: application/json
 ---
 
 
-> **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values. A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
+> **Note:** A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type and cannot have an owner. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
 
 #### Response
 
-The following is an example of the response. It includes only default properties.
+The following is an example of the response. It includes only default properties. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 <!-- {
   "blockType": "response",
