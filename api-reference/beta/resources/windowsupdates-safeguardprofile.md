@@ -18,7 +18,7 @@ Profile describing the issue(s) against which the service safeguards devices.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|safeguardCategory|Specifies the category of safeguards. The possible values are: `likelyIssues`.|
+|category|microsoft.graph.windowsUpdates.safeguardCategory|Specifies the category of safeguards. The possible values are: `likelyIssues`.|
 
 ## Relationships
 None.
