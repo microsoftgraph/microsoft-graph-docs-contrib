@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "reassignedBy",
           "ChangeType": "Addition",
-          "Description": "Added the **reassignedBy** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the **reassignedBy** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta) resource.",
           "Target": "educationSubmission"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "reassignedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **reassignedDateTime** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the **reassignedDateTime** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta) resource.",
           "Target": "educationSubmission"
         },
         {
@@ -31,14 +31,14 @@
           "ApiChange": "Method",
           "ChangedApiName": "reassign",
           "ChangeType": "Addition",
-          "Description": "Added the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-beta) method to the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-beta) resource.",
+          "Description": "Added the [reassign](https://docs.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-beta) method to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/educationsubmission?view=graph-rest-beta) resource.",
           "Target": "educationSubmission"
         }
       ],
       "Id": "531f5b67-2821-4b39-bd6e-a5515471e24b",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2021-09-08T01:11:35.5314928Z",
+      "CreatedDateTime": "2021-09-23T01:11:35.5314928Z",
       "WorkloadArea": "Education",
       "SubArea": ""
     }, 
