@@ -17,9 +17,9 @@ Reassign the [submission](../resources/educationsubmission.md) to the student wi
 
 Only teachers can perform this action. 
 
-Provide the header `Prefer: include-unknown-enum-members` to call this method, otherwise, a reassigned submission will be mapped as a returned submission. This means, `reassigned` status will be mapped to `returned` status, and `reassignedDateTime` and `reassignedBy` properties will be mapped to `returnedDateTime` and `returnedBy` respectively.
+Include the `Prefer: include-unknown-enum-members` header when you call this method; otherwise, a reassigned submission will be treated as a returned submission. This means that the `reassigned` status will be mapped to the `returned` status, and **reassignedDateTime** and **reassignedBy** properties will be mapped to **returnedDateTime** and **returnedBy** respectively.
 
-If the header `Prefer: include-unknown-enum-members` is provided, reassigned submission remains in `reassigned` status. Refer to the examples for further details.
+If the header `Prefer: include-unknown-enum-members` is provided, a reassigned submission retains the `reassigned` status. For details, see the examples section.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,11 +45,10 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `200 Ok` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
+If successful, this method returns `200 OK` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 
 ## Examples
-### Example 1: Without request header
-The following example shows how to call this method.
+### Example 1: Request without optional Prefer header
 
 #### Request
 The following is an example of the request.
@@ -64,14 +63,14 @@ POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332
 ```
 
 #### Response
-The following is an example of the response when `Prefer: include-unknown-enum-members` is NOT provided in the request header and the submission has never been returned before.
+The following is an example of the response when `Prefer: include-unknown-enum-members` is NOT provided in the request header and the submission hasn't been returned before.
 
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 200 OK
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
@@ -122,7 +121,7 @@ HTTP/1.1 200 Ok
 }
 ```
 
-### Example 2: With request header
+### Example 2: Request with Prefer header
 The following example shows how to call this method.
 
 #### Request
@@ -139,14 +138,14 @@ Prefer: include-unknown-enum-members
 ```
 
 #### Response
-The following is an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header and the submission has never been returned before.
+The following is an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header and the submission hasn't been returned before.
 
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 200 OK
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
@@ -199,7 +198,7 @@ HTTP/1.1 200 Ok
 
 ## See also
 
-* [Assignments and Submissions state transition](/graph/assignments-submissions-states-transition)
+* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
