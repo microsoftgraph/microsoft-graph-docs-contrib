@@ -17,11 +17,11 @@ Update the properties of a [federatedIdentityCredential](../resources/federatedi
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permissions                                  | Type                                             | Entities/APIs Covered                                               |
-| -------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------- |
-| Application.Read.All | Delegated and app-only| Allows reading of the  `federatedIdentity` linked to apps and service principals |
-| Application.Readwrite.Ownedby | Delegated and app-only | Allows reading and writing (creating, updating, deleting) of the `federatedIdentity` entity linked to owned apps and service principals |
-| Application.Readwrite.All | Delegated and app-only | Allows reading and writing (creating, updating, deleting) of the `federatedIdentity` entity linked to apps and service principals |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All    |
+|Delegated (personal Microsoft account) | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All    |
+|Application | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All |
 
 
 ## HTTP request
@@ -32,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
-PATCH /servicePrincipals/{servicePrincipalsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 ```
 
 ## Request headers
@@ -69,19 +68,18 @@ If successful, this method returns a `200 OK` response code and an updated [fede
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+PATCH https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/15be77d1-1940-43fe-8aae-94a78e078da0
 Content-Type: application/json
 Content-length: 203
 
 {
-  "@odata.type": "#microsoft.graph.federatedIdentityCredential",
-  "name": "String",
-  "issuer": "String",
-  "subject": "String",
-  "description": "String",
-  "audiences": [
-    "String"
-  ]
+    "name": "testing02",
+    "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
+    "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
+    "description": "Updated description",
+    "audiences": [
+        "api://AzureADTokenExchange"
+    ]
 }
 ```
 
@@ -94,18 +92,7 @@ Content-length: 203
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+HTTP/1.1 204 No Content
 
-{
-  "@odata.type": "#microsoft.graph.federatedIdentityCredential",
-  "name": "String",
-  "issuer": "String",
-  "subject": "String",
-  "description": "String",
-  "audiences": [
-    "String"
-  ]
-}
 ```
 

@@ -69,6 +69,7 @@ This resource supports:
 |calls           |[call](call.md) collection                  |Read-only. Nullable.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the application is using with Azure AD Application Proxy. Nullable.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
+|federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) collection |Federated identities for applications.|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) collection|Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Read-only. Nullable.|
 |policy|[policy](policy.md) collection|The policies assigned to this application.|

@@ -17,11 +17,11 @@ Create a new [federatedIdentityCredential](../resources/federatedidentitycredent
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All    |
+|Delegated (personal Microsoft account) | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All    |
+|Application | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All |
 
 ## HTTP request
 
@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /applications/{applicationsId}/federatedIdentityCredentials
-POST /servicePrincipals/{servicePrincipalsId}/federatedIdentityCredentials
 ```
 
 ## Request headers
@@ -68,19 +67,18 @@ If successful, this method returns a `201 Created` response code and a [federate
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/applications/{applicationsId}/federatedIdentityCredentials
+POST https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/
 Content-Type: application/json
 Content-length: 215
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.federatedIdentityCredential",
-  "name": "String",
-  "issuer": "String",
-  "subject": "String",
-  "description": "String",
-  "audiences": [
-    "String"
-  ]
+    "name": "testing02",
+    "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
+    "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
+    "description": "This is a test federated credential",
+    "audiences": [
+        "api://AzureADTokenExchange"
+    ]
 }
 ```
 
@@ -98,14 +96,16 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.federatedIdentityCredential",
-  "name": "String",
-  "issuer": "String",
-  "subject": "String",
-  "description": "String",
-  "audiences": [
-    "String"
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bcd7c908-1c4d-4d48-93ee-ff38349a75c8')/federatedIdentityCredentials/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/directoryObjects/$/Microsoft.DirectoryServices.Application('bcd7c908-1c4d-4d48-93ee-ff38349a75c8')/federatedIdentityCredentials/d9b7bf1e-429e-4678-8132-9b00c9846cc4",
+    "id": "d9b7bf1e-429e-4678-8132-9b00c9846cc4",
+    "name": "testing02",
+    "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
+    "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
+    "description": "This is a test federated credential",
+    "audiences": [
+        "api://AzureADTokenExchange"
+    ]
 }
 ```
 

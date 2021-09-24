@@ -17,11 +17,11 @@ Deletes a [federatedIdentityCredential](../resources/federatedidentitycredential
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permissions                                  | Type                                             | Entities/APIs Covered                                               |
-| -------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------- |
-| Application.Read.All | Delegated and app-only| Allows reading of the  `federatedIdentity` linked to apps and service principals |
-| Application.Readwrite.Ownedby | Delegated and app-only | Allows reading and writing (creating, updating, deleting) of the `federatedIdentity` entity linked to owned apps and service principals |
-| Application.Readwrite.All | Delegated and app-only | Allows reading and writing (creating, updating, deleting) of the `federatedIdentity` entity linked to apps and service principals |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All    |
+|Delegated (personal Microsoft account) | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All    |
+|Application | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All |
 
 
 ## HTTP request
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
-DELETE /servicePrincipals/{servicePrincipalsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/d9b7bf1e-429e-4678-8132-9b00c9846cc4
 ```
 
 

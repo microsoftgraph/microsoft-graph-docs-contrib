@@ -17,11 +17,11 @@ Read the properties and relationships of a [federatedIdentityCredential](../reso
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permissions                                  | Type                                             | Entities/APIs Covered                                               |
-| -------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------- |
-| Application.Read.All | Delegated and app-only| Allows reading of the  `federatedIdentity` linked to apps and service principals |
-| Application.Readwrite.Ownedby | Delegated and app-only | Allows reading and writing (creating, updating, deleting) of the `federatedIdentity` entity linked to owned apps and service principals |
-| Application.Readwrite.All | Delegated and app-only | Allows reading and writing (creating, updating, deleting) of the `federatedIdentity` entity linked to apps and service principals |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All    |
+|Delegated (personal Microsoft account) | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All    |
+|Application | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All |
 
 
 ## HTTP request
@@ -32,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
-GET /servicePrincipals/{servicePrincipalsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 ```
 
 ## Optional query parameters
@@ -59,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [federatedIden
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+https://graph.microsoft.com/beta/applications/acd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/bdad0963-4a7a-43ae-b569-e67e1da3f2c0
 ```
 
 
@@ -77,13 +76,15 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.federatedIdentityCredential",
-    "name": "String",
-    "issuer": "String",
-    "subject": "String",
-    "description": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('cd7c908-1c4d-4d48-93ee-ff38349a75c8')/federatedIdentityCredentials/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/directoryObjects/$/Microsoft.DirectoryServices.Application('bcd7c908-1c4d-4d48-93ee-ff38349a75c8')/federatedIdentityCredentials('bdad0963-4a7a-43ae-b569-e67e1da3f2c0')/bdad0963-4a7a-43ae-b569-e67e1da3f2c0",
+    "id": "bdad0963-4a7a-43ae-b569-e67e1da3f2c0",
+    "name": "testing",
+    "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
+    "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
+    "description": "This is my test  federated identity credential",
     "audiences": [
-      "String"
+        "api://AzureADTokenExchange"
     ]
   }
 }
