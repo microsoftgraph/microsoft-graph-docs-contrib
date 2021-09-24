@@ -13,7 +13,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [acronym](../resources/acronym.md) object.
+Deletes an [acronym](../resources/search-acronym.md) object.
 
 ## Permissions
 One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

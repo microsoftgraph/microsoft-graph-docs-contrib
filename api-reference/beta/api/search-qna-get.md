@@ -1,6 +1,6 @@
 ---
-title: "List acronyms"
-description: "Get a list of the acronym objects and their properties."
+title: "Get qna"
+description: "Read the properties and relationships of a qna object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -8,12 +8,12 @@ ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# List acronyms
+# Get qna
 Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [acronym](../resources/acronym.md) objects and their properties.
+Read the properties and relationships of a [qna](../resources/search-qna.md) object.
 
 ## Permissions
 One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,7 +31,7 @@ One of the following permissions is required to call this api. To learn more, in
 }
 -->
 ``` http
-GET /acronyms
+GET /qnas/{qnaId}
 ```
 
 ## Optional query parameters
@@ -47,18 +47,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [acronym](../resources/acronym.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [qna](../resources/search-qna.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_acronym"
+  "name": "get_qna"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/search/acronyms
+GET https://graph.microsoft.com/beta/search/qnas/{qnaId}
 ```
 
 
@@ -67,29 +67,37 @@ GET https://graph.microsoft.com/beta/search/acronyms
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.search.acronym)"
+  "@odata.type": "microsoft.graph.search.qna"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-[
-  {
+{
     "id": "733b26d5-af76-4eea-ac69-1a0ce8716897",
-    "displayName": "DNN",
-    "standsFor": ["Deep Neural Network"],
-    "description": "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
-    "webUrl": "http://microsoft.com/deep-neural-network",
-    "state": "published",
+    "displayName": "Global Country Holidays",
+    "webUrl": "http://www.contoso.com/",
+    "description": "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a wee​kend.",
     "lastModifiedDateTime": "2016-03-21T20:01:37Z",
     "lastModifiedBy": {
-      "user": {
-          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Amalie Larsen"
-      }
-    }
-  }
-]
+        "user": {
+            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+            "displayName": "Amalie Larsen"
+        }
+    },
+    "keywords":  {
+      "keywords": ["new years day", "martin luther king day", "presidents day", "memorial day", "independence day", "labor day", "thanksgiving", "christmas"],
+      "reservedKeywords": ["holidays", "paid days off"],
+      "matchSimilarKeywords": true
+    },
+    "availabilityStartDateTime": "2020-09-21T20:01:37Z",
+    "availabilityEndDateTime": "2021-12-31T20:01:37Z",
+    "languageTags": ["en-US"],
+    "platforms": ["ios"],
+    "groupIds": ["groupId"],
+    "targetedVariations": null,
+    "state": "published"
+}
 ```
 

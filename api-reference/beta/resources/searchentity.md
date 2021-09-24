@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A top level object representing the Microsoft Search API endpoint. 
 
-It serves as an anchor to the [query](../api/search-query.md) action and search answer relationships such as **acronyms**, **bookmarks**, and **qnas**. 
+It serves as an anchor to the [query](../api/search-query.md) action and search answer relationships such as [acronyms](../resources/search-acronym.md), [bookmarks](../resources/search-bookmark.md), and [qnas](../resources/search-qna.md). 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -30,9 +30,9 @@ None.
 ## Relationships
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-| acronyms | microsoft.graph.search.acronym collection |  |
-| bookmarks | microsoft.graph.search.bookmark collection |  |
-| qnas | microsoft.graph.search.qna collection |  |
+| acronyms | [microsoft.graph.search.acronym](../resources/search-acronym.md) collection | Tenant-wide administrative answer in Microsoft search results to define common acronyms in a tenant.  |
+| bookmarks | [microsoft.graph.search.bookmark](../resources/search-bookmark.md) collection | Tenant-wide administrative answer in Microsoft search results for common tenant search queries. |
+| qnas | [microsoft.graph.search.qna](../resources/search-qna.md) collection | Tenant-wide administrative answer in Microsoft search results which provide answers for specific search keywords. |
 
 
 ## JSON representation

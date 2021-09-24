@@ -13,7 +13,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [acronym](../resources/acronym.md) object.
+Create a new [acronym](../resources/search-acronym.md) object.
 
 ## Permissions
 One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,20 +41,20 @@ POST /acronyms
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [acronym](../resources/acronym.md) object.
+In the request body, supply a JSON representation of the [acronym](../resources/search-acronym.md) object.
 
-The following table shows the properties that are required when you create the [acronym](../resources/acronym.md).
+The following table shows the properties that are required when you create the [acronym](../resources/search-acronym.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|A brief description of the acronym that gives users more info about the acronym and what it stands for. Inherited from [searchAnswer](../resources/searchanswer.md).|
-|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/searchanswer.md).|
+|description|String|A brief description of the acronym that gives users more info about the acronym and what it stands for. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |id|String|Guid id of the acronym. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Details of the user that created or last modified the acronym. Inherited from [searchAnswer](../resources/searchanswer.md). Read only.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of when the acronym is created or edited. Inherited from [searchAnswer](../resources/searchanswer.md). Read only.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Details of the user that created or last modified the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read only.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of when the acronym is created or edited. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read only.|
 |standsFor|String collection|What the acronym stands for.|
 |state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, or `excluded`.|
-|webUrl|String|The url of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/searchanswer.md).|
+|webUrl|String|The url of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 
 
 

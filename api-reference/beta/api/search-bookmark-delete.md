@@ -1,6 +1,6 @@
 ---
-title: "Delete qna"
-description: "Deletes a qna object."
+title: "Delete bookmark"
+description: "Deletes a bookmark object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -8,12 +8,12 @@ ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# Delete qna
+# Delete bookmark
 Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [qna](../resources/qna.md) object.
+Deletes a [bookmark](../resources/search-bookmark.md) object.
 
 ## Permissions
 One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,7 +31,7 @@ One of the following permissions is required to call this api. To learn more, in
 }
 -->
 ``` http
-DELETE /qnas/{qnaId}
+DELETE /bookmarks/{bookmarksId}
 ```
 
 ## Request headers
@@ -51,11 +51,11 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_qna"
+  "name": "delete_bookmark"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/search/qnas/{qnaId}
+DELETE https://graph.microsoft.com/beta/search/bookmarks/{bookmarkId}
 ```
 
 

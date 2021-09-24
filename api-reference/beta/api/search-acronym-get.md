@@ -1,6 +1,6 @@
 ---
-title: "Get bookmark"
-description: "Read the properties and relationships of a bookmark object."
+title: "Get acronym"
+description: "Read the properties and relationships of an acronym object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -8,12 +8,12 @@ ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# Get bookmark
+# Get acronym
 Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [bookmark](../resources/bookmark.md) object.
+Read the properties and relationships of an [acronym](../resources/search-acronym.md) object.
 
 ## Permissions
 One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,7 +31,7 @@ One of the following permissions is required to call this api. To learn more, in
 }
 -->
 ``` http
-GET /bookmarks/{bookmarksId}
+GET /acronyms/{acronymsId}
 ```
 
 ## Optional query parameters
@@ -47,18 +47,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [bookmark](../resources/bookmark.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [acronym](../resources/search-acronym.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_bookmark"
+  "name": "get_acronym"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/search/bookmarks/{bookmarksId}
+GET https://graph.microsoft.com/beta/search/acronyms/{acronymsId}
 ```
 
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/search/bookmarks/{bookmarksId}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.search.bookmark"
+  "@odata.type": "microsoft.graph.search.acronym"
 }
 -->
 ``` http
@@ -76,31 +76,18 @@ Content-Type: application/json
 
 {
   "id": "733b26d5-af76-4eea-ac69-1a0ce8716897",
-  "displayName": "Italy Holiday",
-  "webUrl": "http://www.margiestravel.com/",
-  "description": "Book a fancy vacation in Tuscany or browse museums in Florence.",
+  "displayName": "DNN",
+  "standsFor": ["Deep Neural Network"],
+  "description": "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
+  "webUrl": "http://microsoft.com/deep-neural-network",
+  "state": "published",
   "lastModifiedDateTime": "2016-03-21T20:01:37Z",
   "lastModifiedBy": {
     "user": {
         "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
         "displayName": "Amalie Larsen"
     }
-  },
-  "keywords":  {
-    "keywords": ["Vacation in Europe", "Holiday in Europe"],
-    "reservedKeywords": ["Vacation in Italy"],
-    "matchSimilarKeywords": true
-  },
-  "categories": ["HR"],
-  "availabilityStartDateTime": "2020-09-21T20:01:37Z",
-  "availabilityEndDateTime": "2020-11-21T20:01:37Z",
-  "languageTags": ["en-US"],
-  "platforms": ["ios"],
-  "groupIds": ["groupId"],
-  "targetedVariations": null,
-  "powerAppIds": ["powerAppId"],
-  "state": "published",
-  "isSuggested": false
+  }
 }
 ```
 
