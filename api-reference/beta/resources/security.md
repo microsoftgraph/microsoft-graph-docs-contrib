@@ -28,7 +28,6 @@ To connect Microsoft security products, services, and partners to streamline sec
 |:---|:---|:---|
 |alert|[alert](../resources/alert.md)|Notifications for suspicious or potential security issues in a customer’s tenant.|
 |attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Provides tenants capability to launch a realistic phishing attacks and learn from it.|
-|securescores|[secureScores](../resources/securescores.md)|Measurements of tenants’ security posture to help protect them from threats.|
 |securityaction|[securityAction](../resources/securityaction.md)|Actions that respond to alerts to block malicious activities.|
 |tiindicator|[tiIndicator](../resources/tiindicator.md)|Threat indicators sent to Microsoft that identify malicious activities.|
 
