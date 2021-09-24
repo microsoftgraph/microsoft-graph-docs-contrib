@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get organizationalBrandingLocalization
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object. To retrieve a localization branding object, specify the value of `id` in the URL.
 
 ## Permissions

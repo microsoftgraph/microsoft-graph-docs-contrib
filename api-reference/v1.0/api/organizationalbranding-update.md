@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update organizationalBranding
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of the default branding object specified by an [organizationalBranding](../resources/organizationalbranding.md) object.
 
 ## Permissions

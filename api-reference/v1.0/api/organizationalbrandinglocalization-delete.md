@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Delete organizationalBrandingLocalization
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object. This deletes a localized branding only. The default branding can not be deleted once it is configured.
 
 ## Permissions

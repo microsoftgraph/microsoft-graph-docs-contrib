@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Supports creating language-specific branding. While you can't change your original configuration's language from your default language, this resource allows you to create a new configuration for a different language.
 
 Inherits from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).

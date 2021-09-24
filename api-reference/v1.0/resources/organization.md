@@ -26,7 +26,13 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| 
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
-| [Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get an organizationalBrandingProperties object collection. |
+|[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) collection | Get an organizationalBranding object. |
+|[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Update an organizationalBranding object. |
+|[List organizationalBrandinglocalization](../api/organizationalbranding-list-localizations.md)|[organizationalBrandinglocalization](../resources/organizationalbrandinglocalization.md) collection|Get the organizationalBrandinglocalization resources from the branding navigation property.|
+|[Create organizationalBrandinglocalization](../api/organizationalbranding-post-localizations.md)|[organizationalBrandinglocalization](../resources/organizationalbrandinglocalization.md)| Create a new organizationalBrandinglocalization object. |
+|[Get organizationalBrandinglocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandinglocalization](organizationalbrandinglocalization.md) collection | Get a collection of organizationalBrandingLocalization objects. |
+|[Update organizationalBrandinglocalization](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandinglocalization](organizationalbrandinglocalization.md) | Update an  organizationalBrandingLocalization object. |
+|[Delete organizationalBrandinglocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandinglocalization](organizationalbrandinglocalization.md) | Delete a  organizationalBrandinglocalization object. |
 
 ## Properties
 
@@ -61,7 +67,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization. Read-only. Nullable.|
-|organizationalBranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) collection| Branding for the organization. Nullable.|
+|organizationalBranding|[organizationalBranding](organizationalbranding.md) collection| Branding for the organization. Nullable.|
 
 ## JSON representation
 

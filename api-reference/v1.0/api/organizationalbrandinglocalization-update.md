@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update organizationalBrandingLocalization
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object for a specific localization.
 
 ## Permissions
