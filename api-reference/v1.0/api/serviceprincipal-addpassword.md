@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: addPassword"
 description: "Add a strong password to a servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

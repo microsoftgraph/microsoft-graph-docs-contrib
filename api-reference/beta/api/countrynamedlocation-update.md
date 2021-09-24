@@ -44,6 +44,8 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
+You must specify the **@odata.type** as `#microsoft.graph.countryNamedLocation`.
+
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2.|

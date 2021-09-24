@@ -12,6 +12,8 @@ author: "shauliu1"
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+
 Represents the assignment of a user or group to a role.
 
 Privileged Identity Management (PIM) supports two types of assignments:

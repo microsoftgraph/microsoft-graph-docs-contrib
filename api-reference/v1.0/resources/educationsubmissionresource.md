@@ -2,7 +2,7 @@
 title: "educationSubmissionResource resource type"
 description: "A wrapper around a resource for use on a submission."
 author: "sharad-sharma-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---

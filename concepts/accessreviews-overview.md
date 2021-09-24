@@ -2,8 +2,9 @@
 title: "Overview of access reviews API"
 description: "The access reviews API allows you to programmatically review access to your Azure AD resources."
 author: "FaithOmbongi"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
+doc_type: conceptualPageType
 ---
 
 # Overview of the access reviews API
@@ -36,11 +37,5 @@ Access reviews are structured logically and are comprised of these building bloc
 
 Try out the following tutorials to manage access reviews:
 
-+ [Use access reviews API for groups to review access to your security groups](tutorial-accessreviews-securitygroup.md)
-+ [Use access reviews API for groups to review access to all your Microsoft 365 groups with guest users](tutorial-accessreviews-M365group.md)
-
-## See also
-
-+ [Azure AD access reviews](/graph/api/resources/accessreviewsv2-root)
-+ [Planning Azure Active Directory Access Reviews deployment](/azure/active-directory/governance/deploy-access-reviews)
-+ [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
++ [Tutorial: Use the access reviews API to review access to your security groups](tutorial-accessreviews-securitygroup.md)
++ [Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups](tutorial-accessreviews-M365group.md)
