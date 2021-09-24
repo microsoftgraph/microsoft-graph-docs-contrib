@@ -2,7 +2,7 @@
 title: "userTrainingEventInfo resource type"
 description: "Represents events of a training assigned to a user in an attack simulation and training campaign."
 author: "Gopal-MSFT"
-ms.localizationpriority: Menium
+ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
 ---

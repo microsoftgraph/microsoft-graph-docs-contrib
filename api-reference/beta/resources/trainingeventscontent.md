@@ -2,7 +2,7 @@
 title: "trainingEventsContent resource type"
 description: "Represents training events in an attack simulation and training campaign."
 author: "Gopal-MSFT"
-ms.localizationpriority: Menium
+ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
 ---

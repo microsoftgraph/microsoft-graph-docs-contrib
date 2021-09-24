@@ -2,7 +2,7 @@
 title: "Get simulation report overview."
 description: "Get report overview for an attack simulation campaign."
 author: "Gopal-MSFT"
-ms.localizationpriority: Menium
+ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---

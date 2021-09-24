@@ -2,7 +2,7 @@
 title: "simulationReportOverview resource type"
 description: "Represents overview report of an attack simulation and training campaign."
 author: "Gopal-MSFT"
-ms.localizationpriority: Menium
+ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
 ---

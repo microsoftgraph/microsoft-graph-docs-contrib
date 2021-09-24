@@ -2,7 +2,7 @@
 title: "simulation resource type"
 description: "Represent attack simulation and training campaign of a tenant."
 author: "Gopal-MSFT"
-ms.localizationpriority: Menium
+ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent attack simulation and training campaign of a tenant.
+Represent an attack simulation and training campaign of a tenant.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,35 +27,35 @@ Represent attack simulation and training campaign of a tenant.
 |attackType|[simulationAttackType](#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
 |cleanupArtifacts|Boolean|Flag representing if artifacts were cleaned up in the attack simulation and training campaign.|
 |completionDateTime|DateTimeOffset|Date and time of completion of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of user who created the attack simulation and training campaign.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign.|
 |createdDateTime|DateTimeOffset|Date and time of creation of the attack simulation and training campaign.|
 |description|String|Description of the attack simulation and training campaign.|
 |displayName|String|Display name of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |enableRegionTimezoneDelivery|Boolean|Flag representing whether to enable or disable timezone-aware delivery of phishing payload in the attack simulation and training campaign.|
-|id|String|Id of the attack simulation and training campaign.|
-|includeAllAccountTargets|Boolean|Flag representing inclusion of all users of a tenant in the attack simulation and training campaign.|
-|isAutomated|Boolean|Flag representing if the attack simulation and training campaign was created from simulation automation flow. Supports `$filter` and `$orderby`. |
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of user who most recently modified the attack simulation and training campaign.|
+|id|String|ID of the attack simulation and training campaign.|
+|includeAllAccountTargets|Boolean|Flag representing inclusion of all the users of a tenant in the attack simulation and training campaign.|
+|isAutomated|Boolean|Flag representing if the attack simulation and training campaign was created from a simulation automation flow. Supports `$filter` and `$orderby`. |
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign.|
 |launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |mode|[simulationMode](#simulationmode-values)|Mode of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `real`, `preview`, `unknownFutureValue`.|
-|payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery platform of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
+|payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |payloadSource|[payloadSource](#payloadsource-values)|Source of phishing payload in the attack simulation and training campaign. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |status|simulationStatus|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `inProgress`, `scheduled`, `completed`, `partiallyCompleted`, `failed`, `cancelled`, `excluded`, `deleted`, `included`, `unknownFutureValue`.|
-|trainingAssignmentPreference|[trainingAssignmentPreference](#trainingassignmentpreference-values)|Preference of tenant admin for training assignment to users in the attack simulation and training campaign. Possible values are: `unknown`, `auto`, `manual`, `unknownFutureValue`.|
-|trainingContentPreference|[trainingContentPreference](#trainingcontentpreference-values)|Preference of tenant admin to choose the source of training content to be assigned to users in the attack simulation and training campaign. Possible values are: `unknown`, `microsoft`, `custom`, `noTraining`, `unknownFutureValue`.|
-|trainingDueDateTime|DateTimeOffset|Date and time before which the trainings need to completed by users in the attack simulation and training campaign.|
+|trainingAssignmentPreference|[trainingAssignmentPreference](#trainingassignmentpreference-values)|Preference of the tenant admin to assign training to users in the attack simulation and training campaign. Possible values are: `unknown`, `auto`, `manual`, `unknownFutureValue`.|
+|trainingContentPreference|[trainingContentPreference](#trainingcontentpreference-values)|Preference of the tenant admin for the source of training content to assign to users in the attack simulation and training campaign. Possible values are: `unknown`, `microsoft`, `custom`, `noTraining`, `unknownFutureValue`.|
+|trainingDueDateTime|DateTimeOffset|Date and time before which the trainings need to be completed by users in the attack simulation and training campaign.|
 
 ### simulationAttackTechnique values
 
 |Member|Description |
 |:---|:---|
 |unknown| Attack technique not defined. |
-|credentialHarvesting| Attack technique that involves end user supplying credentials. |
-|attachmentMalware| Attack technique that involves end user clicking an attachment. |
-|driveByUrl| Attack technique that involves end user clicking a url link in the phishing payload. |
-|linkInAttachment| Attack technique that involves end user clicking a url link in an attachment. |
-|linkToMalwareFile| Attack technique that involves end user clicking a url link to a malware file. |
+|credentialHarvesting| Attack technique that involves an end user supplying credentials. |
+|attachmentMalware| Attack technique that involves an end user clicking an attachment. |
+|driveByUrl| Attack technique that involves an end user clicking a URL link in the phishing payload. |
+|linkInAttachment| Attack technique that involves an end user clicking a URL link in an attachment. |
+|linkToMalwareFile| Attack technique that involves an end user clicking a URL link to a malware file. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### simulationAttackType values
@@ -73,7 +73,7 @@ Represent attack simulation and training campaign of a tenant.
 |Member|Description |
 |:---|:---|
 |real| Campaign launched to all required end users. |
-|preview| Campaign launched to only admin user to preview received phishing payload. |
+|preview| Campaign launched to only the admin user to preview received phishing payload. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### payloadSource values
@@ -81,8 +81,8 @@ Represent attack simulation and training campaign of a tenant.
 |Member|Description |
 |:---|:---|
 |unknown| Payload source not identified. |
-|global| Payload from collection of payloads supplied by Microsoft. |
-|tenant| Payload from collection of payloads supplied by tenant. |
+|global| Payload from a collection of payloads supplied by Microsoft. |
+|tenant| Payload from a collection of payloads supplied by tenant. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### trainingAssignmentPreference values
@@ -91,7 +91,7 @@ Represent attack simulation and training campaign of a tenant.
 |:---|:---|
 |unknown| Training assignment preference not identified. |
 |auto| Assign trainings to end users based on pre-defined criteria. |
-|manual| Assign trainings to end users based on admin defined criteria. |
+|manual| Assign trainings to end users based on admin-defined criteria. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### trainingContentPreference values
@@ -99,8 +99,8 @@ Represent attack simulation and training campaign of a tenant.
 |Member|Description |
 |:---|:---|
 |unknown| Training content preference not identified. |
-|microsoft| Training content from collection of trainings supplied by Microsoft. |
-|custom| Training content as supplied by tenant. |
+|microsoft| Training content from a collection of trainings supplied by Microsoft. |
+|custom| Training content supplied by tenant. |
 |noTraining| No training assignment to end users as part of the campaign. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
@@ -150,4 +150,4 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-[Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations)
+[Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).

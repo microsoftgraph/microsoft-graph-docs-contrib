@@ -2,7 +2,7 @@
 title: "List simulations"
 description: "List attack simulations of a tenant."
 author: "Gopal-MSFT"
-ms.localizationpriority: Menium
+ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
