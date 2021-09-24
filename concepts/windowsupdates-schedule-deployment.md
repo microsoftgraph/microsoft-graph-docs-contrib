@@ -72,7 +72,8 @@ Content-Type: application/json
             "devicesPerOffer": null
         },
         "monitoring": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -86,7 +87,6 @@ You can also schedule a deployment so that assigned devices are offered the upda
 ### Example: Stage a deployment at regular intervals between start and end dates
 
 One way to stage a deployment over time is to set the **endDateTime** of the deployment. All devices assigned to the deployment will be offered the update within the window between the **startDateTime** and **endDateTime**. If the **startDateTime** is not specified, then the deployment will begin as soon as devices are assigned.
-
 
 In this example, you configure a new deployment so that a new set of devices is offered the update every week (**durationBetweenOffers** set to seven days), starting on July 1, 2021. All devices are offered the update before August 1, 2021.
 
@@ -147,7 +147,8 @@ Content-Type: application/json
             "devicesPerOffer": null
         },
         "monitoring": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -218,7 +219,8 @@ Content-Type: application/json
             "endDateTime": null
         },
         "monitoring": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

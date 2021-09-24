@@ -143,7 +143,8 @@ Content-Type: application/json
             "daysUntilForcedReboot": 2
         },
         "monitoring": null,
-        "rollout": null
+        "rollout": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
