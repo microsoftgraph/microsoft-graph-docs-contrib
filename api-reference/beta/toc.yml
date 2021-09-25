@@ -13461,7 +13461,7 @@ items:
       items:
       - name: Overview
         href: resources/security-api-overview.md
-      - name: Actions
+      - name: Actions (preview)
         href: resources/securityaction.md
         items:
         - name: List security actions
@@ -13483,7 +13483,7 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
-      - name: Attack simulation and training
+      - name: Attack simulation and training (preview)
         items:
         - name: Simulations
           items:
@@ -13564,7 +13564,7 @@ items:
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
-      - name: Threat intelligence indicators
+      - name: Threat intelligence indicators (preview)
         href: resources/tiindicator.md
         items:
         - name: List

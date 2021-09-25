@@ -16,20 +16,18 @@ Namespace: microsoft.graph
 To connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
+None.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|alert|[alert](../resources/alert.md)|Notifications for suspicious or potential security issues in a customer’s tenant.|
-|attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Provides tenants capability to launch a realistic phishing attacks and learn from it.|
-|securityaction|[securityAction](../resources/securityaction.md)|Actions that respond to alerts to block malicious activities.|
-|tiindicator|[tiIndicator](../resources/tiindicator.md)|Threat indicators sent to Microsoft that identify malicious activities.|
+|alerts|[alert](../resources/alert.md) collection|Notifications for suspicious or potential security issues in a customer’s tenant.|
+|attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.|
+|securityactions|[securityAction](../resources/securityaction.md)|Actions that respond to alerts to block malicious activities.|
+|tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

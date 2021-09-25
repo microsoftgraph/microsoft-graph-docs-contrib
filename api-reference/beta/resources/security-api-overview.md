@@ -22,6 +22,12 @@ The Microsoft Graph Security API provides a unified interface and schema to inte
 
 The Microsoft Graph Security API includes the following key entities.
 
+## Actions (preview)
+
+Take immediate action to defend against threats using the Microsoft Graph Security [securityAction](securityaction.md) entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with [Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations.
+
+  > **Note:** Currently security actions only support application permissions.
+
 ## Alerts
 
 Alerts are potential security issues within a customer's tenant that Microsoft or partner security solutions have identified and flagged for action or notification. With the Microsoft Graph Security [alerts](alert.md) entity, you can unify and streamline management of security issues across all integrated solutions. This also enables applications to correlate alerts and context to improve threat protection and response. With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph Security API by updating your [alerts](alert.md) entity.
@@ -46,13 +52,21 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 \*\*\* Azure Advanced Threat Protection (Azure ATP) alerts are available via the Microsoft Cloud App Security integration. This means you will get Azure ATP alerts only if you have joined Unified SecOps and connected Azure ATP into Microsoft Cloud App Security. Learn more about [how to integrate Azure ATP and Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-mcas-integration).
 
+## Attack simulation and training (preview)
+
+[Attack simulation and training](/microsoft-365/security/office-365-security/attack-simulator) is a Microsoft 365 service that lets customers experience a realistic attack and learn from it. Social engineering simulation and training experiences for end users help reduce the risk of users being breached via those attack techniques. The attack simulation and training API enables tenant admins to simulate, assign trainings, and read derived insights into online behaviors of its users as part of phishing simulations.
+
 ## Information protection
 
 **Labels** - Information protection labels provide details about how to properly apply a sensitivity label to information. The information protection label API describes the configuration of sensitivity labels that apply to a user or tenant.
 
 **Threat assessment** - The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam emails, phishing URLs, or malware attachments they receive to Microsoft. The policy check result and rescan result can help tenant administrators understand the threat scanning verdict and adjust their organizational policy.
 
-## Threat indicators (preview)
+## Secure Score
+
+[Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The Microsoft Graph Security [secureScore](securescores.md) and [secureScoreControlProfile](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.
+
+## Threat intelligence indicators (preview)
 
 Threat indicators, also referred to as indicators of compromise (IoCs), represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers can generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. These indicators are then used in various security tools to defend against related threats.
 
@@ -70,20 +84,6 @@ Threat indicators sent via the Microsoft Graph Security API are available today 
 
 Support in other Microsoft security services will be available soon.
 
-
-## Security Actions (preview)
-
-Take immediate action to defend against threats using the Microsoft Graph Security [securityAction](securityaction.md) entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with [Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations.
-
-  > **Note:** Currently security actions only support application permissions.
-
-## Secure Score
-
-[Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The Microsoft Graph Security [secureScore](securescores.md) and [secureScoreControlProfile](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.
-
-## Attack Simulation and Training
-
-[Attack Simulation and Training](/microsoft-365/security/office-365-security/attack-simulator) is a M365 service which helps customers experience a realistic attack and learn from it. Social engineering simulation and training experiences for end users help reduce the risk of your users being breached via those attack techniques. The Attack Simulation and Training api will enable tenant admins to simulate, assign trainings and read derived insights into online behaviors of its users as part of phishing simulations.
 
 ## Common use cases
 
