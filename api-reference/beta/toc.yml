@@ -13170,23 +13170,6 @@ items:
         items:
         - name: Overview
           href: resources/report.md
-        - name: Attack Simulation and Training coverage
-          items:
-          - name: Repeat offenders
-            href: resources/attacksimulationrepeatoffender.md
-            items:
-            - name: Get repeat offenders
-              href: api/reportroot-getattacksimulationrepeatoffenders.md
-          - name: Simulation user coverage
-            href: resources/attacksimulationsimulationusercoverage.md
-            items:
-            - name: Get simulation user coverage
-              href: api/reportroot-getattacksimulationsimulationusercoverage.md
-          - name: Training user coverage
-            href: resources/attacksimulationtrainingusercoverage.md
-            items:
-            - name: Get training user coverage
-              href: api/reportroot-getattacksimulationtrainingusercoverage.md
         - name: Microsoft Teams device usage
           href: resources/microsoft-teams-device-usage-reports.md
           items:
@@ -13500,17 +13483,37 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
-      - name: Attack Simulation and Training
+      - name: Attack simulation and training
         items:
         - name: Simulations
           href: resources/simulation.md
           items:
           - name: List simulations
             href: api/attacksimulationroot-list-simulations.md
-          - name: Get simulation report overview
+          - name: Get simulation overview
             href: api/simulationreportoverview-get.md
-          - name: Get simulation users report
+          - name: List simulation users
             href: api/usersimulationdetails-list.md
+        - name: Reports
+          items:
+          - name: Repeat offenders
+            items:
+            - name: Repeat offender
+              href: resources/attacksimulationrepeatoffender.md
+            - name: Get repeat offenders
+              href: api/reportroot-getattacksimulationrepeatoffenders.md
+          - name: Simulation data
+            items:
+            - name: Simulation user coverage
+              href: resources/attacksimulationsimulationusercoverage.md
+            - name: Get simulation coverage for users
+              href: api/reportroot-getattacksimulationsimulationusercoverage.md
+          - name: Training data
+            items:
+            - name: Training user coverage
+              href: resources/attacksimulationtrainingusercoverage.md
+            - name: Get training coverage for users
+              href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: Information protection
         items:
         - name: Labels

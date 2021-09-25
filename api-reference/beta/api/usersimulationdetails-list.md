@@ -1,5 +1,5 @@
 ---
-title: "List simulation users report"
+title: "List simulation users"
 description: "List users of a tenant in an attack simulation campaign with their online actions."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List simulation users report
+# List simulationUsers
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

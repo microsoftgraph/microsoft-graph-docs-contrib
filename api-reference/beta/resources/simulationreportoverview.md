@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents overview report of an attack simulation and training campaign.
+Represents an overview of an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|

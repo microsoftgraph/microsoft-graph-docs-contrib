@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List simulation coverage for users of a tenant in attack simulation and training campaigns.
+List [simulation coverage](../resources/attacksimulationsimulationusercoverage.md) for users of a tenant in attack simulation and training campaigns.
+
+This function supports `@odata.nextLink` for pagination.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,8 +58,6 @@ If successful, this function returns a `200 OK` response code and a [attackSimul
 ``` http
 GET https://graph.microsoft.com/beta/reports/getAttackSimulationSimulationUserCoverage
 ```
-
-Use `@odata.nextLink` for pagination.
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

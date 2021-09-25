@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 List repeat offender users of a tenant in attack simulation and training campaigns.
 
+This function supports `@odata.nextLink` for pagination.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,8 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /reports/getAttackSimulationRepeatOffenders
 ```
-
-Use `@odata.nextLink` for pagination.
 
 ## Request headers
 |Name|Description|

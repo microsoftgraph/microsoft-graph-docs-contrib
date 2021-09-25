@@ -7,12 +7,12 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get Simulation Overview Report
+# Get simulationReportOverview
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get report overview for an attack simulation campaign.
+Get an overview for an attack simulation and training campaign.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

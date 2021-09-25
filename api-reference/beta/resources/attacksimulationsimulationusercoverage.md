@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents simulation coverage for a user in attack simulation and training.
+Represents cumulative simulation data and results for a user in attack simulation and training.
 
 ## Properties
 |Property|Type|Description|
