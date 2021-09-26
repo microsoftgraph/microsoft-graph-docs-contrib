@@ -6220,6 +6220,8 @@ items:
           href: api/team-list-members.md
         - name: Add member
           href: api/team-post-members.md
+        - name: Add members in bulk
+          href: api/conversationmembers-add.md
         - name: Get member
           href: api/team-get-members.md
         - name: Remove member
