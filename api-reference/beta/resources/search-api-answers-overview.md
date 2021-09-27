@@ -20,9 +20,9 @@ Requests to manage administrative search answers are performed by global adminis
 The use cases for the APIs in this section involve managing administrative answers such as acronyms, bookmarks, and QnAs for an organization.
 
 | Use cases                                        | REST resources                              |
-|:-------------------------------------------------|:--------------------------------------------|:--|
-| **Search answer actions**                        |                                             |   |
-| Create, update, or delete a search answer           | [acronym](search-acronym.md), [bookmark](search-bookmark.md), [QnA](search-qna.md) |
+|:-------------------------------------------------|:--------------------------------------------|
+| **Search answer actions**                        |                                             |
+| Create, update, or delete a search answer        | [acronym](search-acronym.md), [bookmark](search-bookmark.md), [QnA](search-qna.md) |
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

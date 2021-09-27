@@ -13392,6 +13392,7 @@ items:
         - name: Query data
           href: api/search-query.md
       - name: Answer
+        items:
         - name: Overview
           href: resources/search-api-answers-overview.md
         - name: Acronym
