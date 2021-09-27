@@ -15,7 +15,7 @@ This section describes reporting capabilities of Microsoft Defender for Office 3
 
 ## What is Microsoft Defender for Office 365?
 
-[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide) safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. 
+[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true) safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. 
 
 Microsoft Defender for Office 365 is a service available as part of [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true). The Microsoft 365 Defender suite includes the following services:
 
@@ -24,7 +24,7 @@ Microsoft Defender for Office 365 is a service available as part of [Microsoft 3
 - [Microsoft Defender for Identity](/defender-for-identity/)
 - [Microsoft Cloud App Security](/cloud-app-security/)
 
-Microsoft 365 Defender is a unified enterprise defense suite that helps detect security risks, investigate attacks to an organization, and prevent harmful activities automatically. It provides a central administrators portal ((https://security.microsoft.com)[https://security.microsoft.com/]) that combines protection, detection, investigation, and response to _email_, _collaboration_, _identity_, and _device_ threats.
+Microsoft 365 Defender is a unified enterprise defense suite that helps detect security risks, investigate attacks to an organization, and prevent harmful activities automatically. It provides a central administrators portal ((https://security.microsoft.com)[https://security.microsoft.com/](https://security.microsoft.com)) that combines protection, detection, investigation, and response to _email_, _collaboration_, _identity_, and _device_ threats.
 
 To access attack simulation training, open the Microsoft 365 Defender portal, go to **Email & collaboration** > **Attack simulation training**.
 
