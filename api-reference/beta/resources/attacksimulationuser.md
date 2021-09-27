@@ -20,7 +20,7 @@ User in an attack simulation and training campaign.
 |:---|:---|:---|
 |displayName|String|Display name of a user.|
 |email|String|Email address of a user.|
-|userId|String|External directory object id of a user.|
+|userId|String|Id of a [user](../resources/user.md).|
 
 ## Relationships
 None.
