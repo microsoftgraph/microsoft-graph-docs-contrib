@@ -54,7 +54,7 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 ## Attack simulation and training (preview)
 
-[Attack simulation and training](/microsoft-365/security/office-365-security/attack-simulator) is a Microsoft 365 service that lets customers experience a realistic attack and learn from it. Social engineering simulation and training experiences for end users help reduce the risk of users being breached via those attack techniques. The attack simulation and training API enables tenant admins to simulate, assign trainings, and read derived insights into online behaviors of its users as part of phishing simulations.
+[Attack simulation and training](/microsoft-365/security/office-365-security/attack-simulation-training) is a Microsoft 365 service that lets customers experience a  realistic benign phishing attack and learn from it. Social engineering simulation and training experiences for end users help reduce the risk of users being breached via those attack techniques. The attack simulation and training API enables tenant admins to simulate, assign trainings, and read derived insights into online behaviors of users in the phishing simulations.
 
 ## Information protection
 

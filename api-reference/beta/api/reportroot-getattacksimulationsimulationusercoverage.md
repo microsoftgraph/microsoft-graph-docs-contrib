@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List [simulation coverage](../resources/attacksimulationsimulationusercoverage.md) for users of a tenant in attack simulation and training campaigns.
+Get [simulation coverage](../resources/attacksimulationsimulationusercoverage.md) for users of a tenant in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
 
