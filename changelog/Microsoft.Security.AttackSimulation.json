@@ -228,18 +228,10 @@
         },
         {
           "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
-          "ApiChange": "EntityType",
-          "ChangedApiName": "reportRoot",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "attackSimulation",
           "ChangeType": "Addition",
-          "Description": "Added the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
-          "Target": "reportRoot"
-        },
-        {
-          "Id": "86bb6c22-23cb-4ed1-9903-7d5fb8d7ca76",
-          "ApiChange": "EntityType",
-          "ChangedApiName": "security",
-          "ChangeType": "Addition",
-          "Description": "Added the [security](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource",
+          "Description": "Added the [attackSimulation](https://docs.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-beta) navigation property to the [security](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource",
           "Target": "security"
         },
         {
@@ -255,7 +247,7 @@
           "ApiChange": "Function",
           "ChangedApiName": "getAttackSimulationRepeatOffenders",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationRepeatOffenders](https://docs.microsoft.com/en-us/graph/api/getAttackSimulationRepeatOffenders?view=graph-rest-beta) method to the [getAttackSimulationRepeatOffenders](https://docs.microsoft.com/en-us/graph/api/getAttackSimulationRepeatOffenders?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationRepeatOffenders](https://docs.microsoft.com/en-us/graph/api/getAttackSimulationRepeatOffenders?view=graph-rest-beta) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
           "Target": "getAttackSimulationRepeatOffenders"
         },
         {
@@ -263,7 +255,7 @@
           "ApiChange": "Function",
           "ChangedApiName": "getAttackSimulationSimulationUserCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://docs.microsoft.com/en-us/graph/api/getAttackSimulationSimulationUserCoverage?view=graph-rest-beta) method to the [getAttackSimulationSimulationUserCoverage](https://docs.microsoft.com/en-us/graph/api/getAttackSimulationSimulationUserCoverage?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationSimulationUserCoverage](https://docs.microsoft.com/en-us/graph/api/getAttackSimulationSimulationUserCoverage?view=graph-rest-beta) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
           "Target": "getAttackSimulationSimulationUserCoverage"
         },
         {
@@ -271,7 +263,7 @@
           "ApiChange": "Function",
           "ChangedApiName": "getAttackSimulationTrainingUserCoverage",
           "ChangeType": "Addition",
-          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://docs.microsoft.com/en-us/graph/api/getAttackSimulationTrainingUserCoverage?view=graph-rest-beta) method to the [getAttackSimulationTrainingUserCoverage](https://docs.microsoft.com/en-us/graph/api/getAttackSimulationTrainingUserCoverage?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAttackSimulationTrainingUserCoverage](https://docs.microsoft.com/en-us/graph/api/getAttackSimulationTrainingUserCoverage?view=graph-rest-beta) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
           "Target": "getAttackSimulationTrainingUserCoverage"
         }
       ],
