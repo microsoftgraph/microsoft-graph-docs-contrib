@@ -2,7 +2,7 @@
 title: "channel: getAllMessages"
 description: "Retrieve all messages across channels in a team."
 author: "RamjotSingh"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
