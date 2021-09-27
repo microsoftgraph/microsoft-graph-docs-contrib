@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents assigned training's information in an attack simulation and training campaign.
+Represents assignment information of a training in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|

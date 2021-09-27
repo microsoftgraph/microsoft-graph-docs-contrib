@@ -22,7 +22,7 @@ Represents simulation event of a user in a tenant in an attack simulation and tr
 |eventDateTime|DateTimeOffset|Date and time of the simulation event by a user in an attack simulation and training campaign.|
 |eventName|String|Name of the simulation event by a user in an attack simulation and training campaign.|
 |ipAddress|String|IP address from where the simulation event was initiated by a user in an attack simulation and training campaign.|
-|osPlatformDeviceDetails|String|OS, platform and device details from where the simulation event was initiated by a user in an attack simulation and training campaign.|
+|osPlatformDeviceDetails|String|The operating system, platform, and device details from where the simulation event was initiated by a user in an attack simulation and training campaign.|
 
 ## Relationships
 None.
