@@ -11,20 +11,20 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This section describes reporting capabilities of Microsoft Defender for Office 365, specifically APIs that access reports on a tenant's participation in attack simulation traning. These tranings set up benign cyberattack simulations to train users to increase their awareness, and help identify vulnerable users.
+This section describes reporting capabilities of Microsoft Defender for Office 365, specifically APIs that access reports on a tenant's participation in attack simulation traning. Attack simulation tranings set up benign cyberattack simulations to train users to increase their awareness, and help identify vulnerable users.
 
-## What is Microsoft Defender for Office 365?
+## What role do the attack simulation reports play in enterprise defense?
 
-[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true) safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. 
+Attack simulation reports help tenants identify security knowledge gaps, so that they can further train their users to decrease their susceptibility to attacks. The attack simulation training service is part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true) which safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
 
-Microsoft Defender for Office 365 is a service available as part of [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true). The Microsoft 365 Defender suite includes the following services:
+Microsoft Defender for Office 365 belongs to the [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true) suite which includes the following services:
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview)
 - [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
 - [Microsoft Cloud App Security](/cloud-app-security/)
 
-Microsoft 365 Defender is a unified enterprise defense suite that helps detect security risks, investigate attacks to an organization, and prevent harmful activities automatically. It provides a central administrators portal ((https://security.microsoft.com)[https://security.microsoft.com/](https://security.microsoft.com)) that combines protection, detection, investigation, and response to _email_, _collaboration_, _identity_, and _device_ threats.
+Microsoft 365 Defender is a unified enterprise defense suite that helps detect security risks, investigate attacks to an organization, and prevent harmful activities automatically. It provides a central administrators portal ([https://security.microsoft.com/](https://security.microsoft.com)) that combines protection, detection, investigation, and response to _email_, _collaboration_, _identity_, and _device_ threats.
 
 To access attack simulation training, open the Microsoft 365 Defender portal, go to **Email & collaboration** > **Attack simulation training**.
 
