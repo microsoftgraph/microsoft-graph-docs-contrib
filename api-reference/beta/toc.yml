@@ -13520,6 +13520,9 @@ items:
             href: api/simulationreportoverview-get.md
         - name: Reports
           items:
+          - name: Attack simulation reports
+            displayname: Attack simulation and training
+            href: resources/report-m365defender-reports-overview.md
           - name: Repeat offenders
             items:
             - name: Repeat offender
