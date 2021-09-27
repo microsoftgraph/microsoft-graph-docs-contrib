@@ -52,9 +52,6 @@ The following example shows how to call this API.
 ### Request
 The following is an example of a request.
 
-
-
-# [HTTP](#tab/http)
 <!-- { 
   "blockType": "request", 
   "name": "participant-stopHoldMusic" 
