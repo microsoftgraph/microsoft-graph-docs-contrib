@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md), including text, audio, and video conversations.
+Retrieve [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [team](../resources/team.md), that includes text, audio, and video conversations.
 
-To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
+To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
 ## Permissions
 
@@ -21,12 +21,12 @@ The following permissions are required to call this API. To learn more, includin
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported |
-|Delegated (personal Microsoft account) | Not supported |
+|Delegated (work or school account) | Not supported. |
+|Delegated (personal Microsoft account) | Not supported. |
 |Application | ChannelMessage.Read.All |
 
 > [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> Before you call this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ GET /teams/{team-id}/channels/getAllMessages
 ## Optional query parameters
 
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.
-Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) are not currently supported.
+Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
 ## Request body
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and also returns all
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
+# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "channel_getallchannelmessages_1"
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/teams/01fe12e0-e720-44fd-8854-28c66d1bee40/
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage",
-  "isCollection": true,
+  "isCollection": true
 } -->
 ``` http
 HTTP/1.1 200 OK

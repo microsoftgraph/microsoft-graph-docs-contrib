@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get all messages(../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+Get all messages(../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, that includes one-on-one chats, group chats, and meeting chats.
 
 ## Permissions
 
@@ -19,12 +19,12 @@ The following permissions are required to call this API. To learn more, includin
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)| Not supported |
-|Delegated (personal Microsoft account) | Not supported |
+|Delegated (work or school account)| Not supported. |
+|Delegated (personal Microsoft account) | Not supported. |
 |Application | Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> Before you call this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage",
-  "isCollection": true,
+  "isCollection": true
 } -->
 ``` http
 HTTP/1.1 200 OK

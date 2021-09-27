@@ -6384,10 +6384,10 @@ items:
           href: api/chatmessage-update.md
         - name: List hosted content
           href: api/chatmessage-list-hostedcontents.md
-        - name: Get messages across all chats
-          href: api/chats-getallmessages.md
         - name: Get messages across all channels
           href: api/channel-getallmessages.md
+        - name: Get messages across all chats
+          href: api/chats-getallmessages.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: App
