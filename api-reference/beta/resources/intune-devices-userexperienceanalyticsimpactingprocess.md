@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsImpactingProcess resource type"
 description: "The user experience analytics top impacting process entity."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -60,7 +60,6 @@ Here is a JSON representation of the resource.
   "impactValue": "4.2"
 }
 ```
-
 
 
 

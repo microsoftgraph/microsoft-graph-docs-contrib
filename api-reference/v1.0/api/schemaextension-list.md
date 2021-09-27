@@ -1,7 +1,7 @@
 ---
 title: "List schemaExtensions"
 description: "Get a list of schemaExtension objects created by any apps you own in the current tenant (that can be "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: apiPageType
@@ -31,8 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /schemaExtensions
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -47,7 +45,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [schemaExtension](../resources/schemaextension.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following example shows how to look among all the accessible extensions for a specific one by filtering on its unique **id**. 
 
 # [HTTP](#tab/http)
@@ -76,8 +74,8 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphle
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,7 +85,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 274
 
 {
   "value": [

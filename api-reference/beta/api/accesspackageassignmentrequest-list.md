@@ -1,7 +1,7 @@
 ---
 title: "List accessPackageAssignmentRequests"
 description: "Retrieve a list of accessPackageAssignmentRequest objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following is an example of the request. The request URI includes `$filter` to only return requests in a particular state, and `$expand` to return details of the requestor and their connected organization as well.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests?$expand=requestor($expand=connectedOrganization)&$filter=(requestState eq 'PendingApproval')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentrequests-csharp-snippets.md)]
@@ -107,11 +107,22 @@ Content-type: application/json
   "value": [
     {
       "id": "433dafca-5047-4614-95f7-a03510b1ded3",
-      "requestType": "AdminAdd",
-      "requestState": "Delivered",
-      "requestStatus": "Fulfilled",
-      "isValidationOnly": false,
-      "createdDateTime": "2019-10-25T22:55:11.623Z"
+      "requestType": "UserAdd",
+      "requestState": "PendingApproval",
+      "createdDateTime": "2019-10-25T22:55:11.623Z",
+      "justification": "Need access",
+      "answers": [],
+      "requestor": {
+        "connectedOrganizationId": "c3c2adbc-a863-437f-9383-ee578665317d",
+        "id": "ba7ef0fb-e16f-474b-87aa-02815d061e67",
+        "displayName": "displayname",
+        "email": "displayname@example.com",
+        "type": "User",
+        "connectedOrganization": {
+          "id": "c3c2adbc-a863-437f-9383-ee578665317d",
+          "displayName": "example"
+        }
+      }
     }
   ]
 }

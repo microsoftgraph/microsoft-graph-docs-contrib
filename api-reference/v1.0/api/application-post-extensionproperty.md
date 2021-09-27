@@ -1,7 +1,7 @@
 ---
 title: "Create extensionProperty"
 description: "Create a new extensionProperty."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

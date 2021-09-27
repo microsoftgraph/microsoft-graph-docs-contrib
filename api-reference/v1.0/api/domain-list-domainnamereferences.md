@@ -2,7 +2,7 @@
 title: "List domainNameReferences"
 description: "Retrieve a list of directoryObject with a reference to the domain."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported. |
+|Delegated (work or school account) | Domain.Read.All, Domain.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Domain.ReadWrite.All |
+|Application | Domain.Read.All, Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -31,8 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /domains/{id}/domainNameReferences
 ```
-
-> For {id}, specify the domain with its fully qualified domain name.
 
 ## Optional query parameters
 
@@ -62,7 +60,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_domainnamereferences"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
+GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-domainnamereferences-csharp-snippets.md)]
@@ -84,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
 
 
 ##### Response
-Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,17 +94,45 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
   "value": [
     {
-        "odata.type": "Microsoft.DirectoryServices.User",
-        "objectType": "User",
-        "objectId": "567a0db6-289c-43f7-a650-2645c03cbbbb",
-        "accountEnabled": true,
-        "displayName": "TestUser1",
-        "facsimileTelephoneNumber": null,
-        "mailNickname": "testuser1",
-        "mobile": null,
-        "userPrincipalName": "testuser1@contoso.com"
+      "@odata.type": "#microsoft.graph.user",
+      "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f/Microsoft.DirectoryServices.User",
+      "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "accountEnabled": true,
+      "city": "Nairobi",
+      "createdDateTime": "2021-04-14T05:26:16Z",
+      "country": "Kenya",
+      "displayName": "Adele Vance",
+      "givenName": "Adele",
+      "mail": "AdeleV@Contoso.com",
+      "mailNickname": "AdeleV"
+    },
+    {
+      "@odata.type": "#microsoft.graph.group",
+      "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/eac82bd3-931c-4d47-9e68-735595a8eb8a/Microsoft.DirectoryServices.Group",
+      "id": "eac82bd3-931c-4d47-9e68-735595a8eb8a",
+      "createdDateTime": "2021-04-14T06:59:47Z",
+      "createdByAppId": "00000005-0000-0ff1-ce00-000000000000",
+      "organizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+      "description": "Contribute your ideas and ask your questions to our leadership team. And tune in for regular Employee Q & A live events. You can learn more about what",
+      "displayName": "CEO Connection",
+      "expirationDateTime": "2021-10-11T06:59:47Z",
+      "groupTypes": [
+        "Unified"
+      ],
+      "mail": "ceoconnection@Contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "ceoconnection",
+      "resourceBehaviorOptions": [
+        "CalendarMemberReadOnly"
+      ],
+      "visibility": "Public",
+      "writebackConfiguration": {
+        "isEnabled": null,
+        "onPremisesGroupType": null
+      }
     }
   ]
 }

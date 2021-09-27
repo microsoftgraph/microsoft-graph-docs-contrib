@@ -2,7 +2,7 @@
 title: "Update macOSImportedPFXCertificateProfile"
 description: "Update the properties of a macOSImportedPFXCertificateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -169,7 +169,6 @@ Content-Length: 1469
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
 
 
 

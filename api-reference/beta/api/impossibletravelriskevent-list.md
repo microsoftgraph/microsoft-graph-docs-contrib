@@ -1,7 +1,7 @@
 ---
 title: "List impossibleTravelRiskEvents"
 description: "Retrieve a list of impossibletravelriskevent objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "cloudhandler"
 ms.prod: "identity-and-sign-in"

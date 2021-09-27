@@ -1,17 +1,22 @@
 ---
 title: "Microsoft Teams provider"
 description: "Use the Teams provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
 # Microsoft Teams provider
 
-Use the Teams provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components.
+Use the TeamsProvider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components.
 
 To learn more about authentication providers, see [providers](./providers.md).
 
 >**Tip:** For details about how to get started with creating a Microsoft Teams application with the Teams Provider, see the [Build a Microsoft Teams tab](../get-started/build-a-microsoft-teams-tab.md) getting started guide.
+
+### Difference between Teams Provider and Teams MSAL2 Provider
+Unlike TeamsProvider, the Teams MSAL2 Provider support Single Sign-On (SSO) and is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) for client side authentication. [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE. Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, so we recommend usage of Teams MSAL2 Provider over the Teams Provider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+
+All new applications should use the Teams MSAL2 Provider whenever possible. See [Teams MSAL2 Provider](./teams-msal2.md) for migration documentation.
 
 ## Get started
 

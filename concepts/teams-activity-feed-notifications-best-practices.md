@@ -2,7 +2,7 @@
 title: "Best practices for using Microsoft Teams activity feed notifications"
 description: "This article provides best practices and examples for working with activity feed notifications in Microsoft Graph."
 author: "KirtiPereira"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "teamwork"
 ---
 
@@ -33,14 +33,14 @@ Microsoft Teams displays notifications in both activity feed and toast formats. 
 * Avoid sending notifications that are promotional in nature, such as *Try the new feature in the Cycling app*.
 * Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [activity feed notifications or bot framework messages](#activity-feed-notifications-or-bot-framework-messages).
 * Use the **text preview** section in notifications. Provide information to help the user determine the importance of the notification and take action, if necessary.
-* Don't add a period at the end of the notification title, to be consistent with with all other notification settings in Teams.
+* Don't add a period at the end of the notification title, to be consistent with all other notification settings in Teams.
 * Make the relationship between the notification and its content clear to the user. For example, when a user receives a notification for approving a leave, the notification should redirect them to the corresponding section of the app. If the notification pertains to removal or deletion of entities, such as users and tasks, direct the recipient to the content and indicate the required action.
 * Make sure that the feed experience is self-contained. For example, any pop-ups and modals must remain in the app.
 * Verify that your app does not send more than 10 notifications per minute, per user. Notifications will be automatically throttled if the count exceeds 10.
 * Ensure that the load time of your app does not negatively affect the experience for users when they switch between notifications in the feed.
 * Inform the user about the notifications storage period in the activity feed. In Microsoft Teams, the storage period is 30 days.
     > [!NOTE]
-    > The 30 day storage limit applies to all notifications. It's not specific to notifications sent through the activity feed notifications API.
+    > The 30-day storage limit applies to all notifications. It's not specific to notifications sent through the activity feed notifications API.
 
 ## Activity feed notifications or bot framework messages
 
