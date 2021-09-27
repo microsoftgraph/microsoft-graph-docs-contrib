@@ -56,6 +56,7 @@ The following is an example of a request.
   "blockType": "request", 
   "name": "participant-stopHoldMusic" 
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/participants/fa1e9582-7145-4ca3-bcd8-577f561fcb6e/stopHoldMusic
 Content-type: application/json
