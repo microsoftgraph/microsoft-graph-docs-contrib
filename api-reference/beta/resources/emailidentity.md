@@ -23,7 +23,7 @@ Inherits from [identity](../resources/identity.md).
 |:---|:---|:---|
 |displayName|String|Display name of a user. Inherited from [identity](../resources/identity.md).|
 |email|String|Email address of a user.|
-|id|String|External directory object id of a user. Inherited from [identity](../resources/identity.md).|
+|id|String|Id of a user. Inherited from [identity](../resources/identity.md).|
 
 ## Relationships
 None.
