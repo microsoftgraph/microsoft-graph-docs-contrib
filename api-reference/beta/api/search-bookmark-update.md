@@ -41,28 +41,25 @@ PATCH /bookmarks/{bookmarksId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [bookmark](../resources/search-bookmark.md) object.
+In the request body, supply a JSON representation of the [bookmark](../resources/search-bookmark.md) object. Supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
+**Note:** Updates to collection properties will update the entire collection. Any updates to a collection, such as keywords or categories, will replace the collection entirely.
 
-The following table shows the properties that are required when you update the [bookmark](../resources/search-bookmark.md).
+The following table shows the properties that are required when you update a [bookmark](../resources/search-bookmark.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Guid id of the bookmark. Inherited from [entity](../resources/entity.md).|
 |displayName|String|Bookmark name displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |description|String|Bookmark description shown on search results page. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|webUrl|String|Bookmark url link. When users click this bookmark in search results they will go to this url. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the bookmark. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read only.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of when the bookmark is created or edited. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read only.|
-|categories|String collection|Categories commonly used to describe this bookmark. eg. IT, HR, etc.|
-|availabilityStartDateTime|DateTimeOffset|Date bookmark will start to appear as a search result. Set as null for always available.|
-|availabilityEndDateTime|DateTimeOffset|Date bookmark will stop appearing as a search result. Set as null for always available.|
+|webUrl|String|Bookmark URL link. When users click this bookmark in search results they will go to this URL. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|categories|String collection|Categories commonly used to describe this bookmark. For example. IT and HR.|
+|availabilityStartDateTime|DateTimeOffset|Date bookmark will start to appear as a search result. Set as `null` for always available.|
+|availabilityEndDateTime|DateTimeOffset|Date bookmark will stop to appear as a search result. Set as `null` for always available.|
 |languageTags|String collection|List of countries or regions able to view this bookmark.|
-|platforms|microsoft.graph.platform collection|List of devices and OS able to view this qna. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|platforms|microsoft.graph.platform collection|List of devices and operating systems able to view this bookmark. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) collection|Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
-|powerAppIds|String collection|PowerApp ids for this bookmark. By adding existing PowerApps to a Bookmark, users can complete tasks like entering vacation time or reporting expenses on the search results page.|
+|powerAppIds|String collection|List of PowerApps associated with this bookmark. If users add existing PowerApps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Keywords that trigger this bookmark to appear in search results.|
 |state|String|State of the bookmark. Possible values are: `Published`, `Draft`, `Excluded`.|
-|isSuggested|Boolean|True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft. Read only.|
 |groupIds|String collection|List of security groups able to view this bookmark.|
 
 

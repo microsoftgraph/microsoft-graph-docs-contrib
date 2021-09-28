@@ -1,6 +1,6 @@
 ---
 title: "answerKeyword resource type"
-description: "answerKeyword"
+description: "Answer keywords allow users to define words and phrases that will trigger an administrative search answer to appear in search results."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -14,13 +14,13 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Answer Keyword is used to configure triggers for a search answer to appear on search.
+An answer keyword is used to configure words and phrases that will trigger an administrative search answer to appear in search results.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |keywords|String collection|A collection of keywords used to trigger the search answer.|
-|matchSimilarKeywords|Boolean|If similar words in the search term to the keywords should trigger the search answer.|
+|matchSimilarKeywords|Boolean|If `true`, indicates that the search term contains similar words to the keywords that should trigger the search answer.|
 |reservedKeywords|String collection|Unique keywords that will guarantee the search answer is triggered.|
 
 ## Relationships

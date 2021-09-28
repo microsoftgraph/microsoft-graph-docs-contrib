@@ -1,6 +1,6 @@
 ---
 title: "searchAnswer resource type"
-description: "searchAnswer"
+description: "The search answer is a base type for other search answers."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Search answer is a base type for other search answers. Includes properties that apply to other search answer entities.
+The search answer is a base type for other search answers, such as [acronym](../resources/search-acronym.md), [bookmark](../resources/search-bookmark.md), and [QnA](../resources/search-qna.md) resources. Includes properties that apply to other search answer entities.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -22,12 +22,12 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Guid id of the search answer. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier (GUID) for the search answer. Inherited from [entity](../resources/entity.md).|
 |displayName|String|Search answer name displayed in search results.|
 |description|String|Search answer description shown on search results page.|
-|webUrl|String|Search answer url link. When users click this search answer in search results they will go to this url.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the search answer. Read only.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of when the search answer is created or edited. Read only.|
+|webUrl|String|Search answer URL link. When users click this search answer in search results they will go to this URL.|
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the search answer. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of when the search answer is created or edited. Read-only.|
 
 ## Relationships
 None.

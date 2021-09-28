@@ -1,6 +1,6 @@
 ---
 title: "acronym resource type"
-description: "acronym"
+description: "An acronym is a tenant wide administrative answer in search results in Microsoft Search to define common acronyms in a tenant."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -14,10 +14,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An acronym is a tenant-wide administrative answer in Microsoft search results to define common acronyms in a tenant. An acronym has a few properties which define an acronym for an organization.\
-\
-
-
+An acronym is a tenant wide administrative answer in search results in Microsoft Search to define common acronyms in a tenant.
 
 Inherits from [searchAnswer](../resources/search-searchAnswer.md).
 
@@ -35,12 +32,12 @@ Inherits from [searchAnswer](../resources/search-searchAnswer.md).
 |:---|:---|:---|
 |description|String|A brief description of the acronym that gives users more info about the acronym and what it stands for. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|id|String|Guid id of the acronym. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read only.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of when the acronym is created or edited. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read only.|
+|id|String|The unique identifier (GUID) for the acronym. Inherited from [entity](../resources/entity.md).|
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read-only.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of when the acronym is created or edited. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read-only.|
 |standsFor|String collection|What the acronym stands for.|
 |state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, or `excluded`.|
-|webUrl|String|The url of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|webUrl|String|The URL of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 
 ## Relationships
 None.

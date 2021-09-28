@@ -67,7 +67,8 @@ GET https://graph.microsoft.com/beta/search/bookmarks
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.search.bookmark)"
+  "@odata.type": "microsoft.graph.search.bookmark",
+  "isCollection": true
 }
 -->
 ``` http

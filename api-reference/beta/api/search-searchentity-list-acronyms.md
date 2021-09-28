@@ -67,7 +67,9 @@ GET https://graph.microsoft.com/beta/search/acronyms
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.search.acronym)"
+  "@odata.type": "microsoft.graph.search.acronym",
+  "isCollection": true
+
 }
 -->
 ``` http

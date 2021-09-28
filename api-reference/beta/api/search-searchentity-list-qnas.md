@@ -67,7 +67,8 @@ GET https://graph.microsoft.com/beta/search/qnas
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.search.qna)"
+  "@odata.type": "microsoft.graph.search.qna",
+  "isCollection": true
 }
 -->
 ``` http

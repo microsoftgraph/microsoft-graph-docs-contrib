@@ -1,6 +1,6 @@
 ---
 title: "qna resource type"
-description: "Question and Answer search resource"
+description: "Represents a question and answer (Q&A) in Microsoft Search."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -14,10 +14,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Q&As are administrative answer results in the search results page which provide answers for specific search keywords. Q&As allow administrators to answer the user's questions directly in search instead of providing a link to a webpage. A Q&A has many properties which allow administrators to make common resources more accessible in their organization.\
-\
-\
-
+Q&As are administrative answer results in the search results page which provide answers for specific search keywords. Q&As allow administrators to answer the user's questions directly in search instead of providing a link to a webpage. A Q&A has many properties which allow administrators to make common resources more accessible in their organization.
 
 Inherits from [searchAnswer](../resources/search-searchAnswer.md).
 
@@ -33,20 +30,20 @@ Inherits from [searchAnswer](../resources/search-searchAnswer.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Guid id of the qna. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier (GUID) for the qna. Inherited from [entity](../resources/entity.md).|
 |displayName|String|Question displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |description|String|Answer displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|webUrl|String|Qna url link. When users click this qna in search results they will go to this url. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the qna. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read only. |
-|lastModifiedDateTime|DateTimeOffset| Timestamp of when the qna is created or edited. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read only.|
-|availabilityStartDateTime|DateTimeOffset|Date qna will start to appear as a search result. Set as null for always available.|
-|availabilityEndDateTime|DateTimeOffset|Date qna will stop appearing as a search result. Set as null for always available.|
+|webUrl|String|Qna URL link. When users click this qna in search results they will go to this URL. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the qna. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read-only. |
+|lastModifiedDateTime|DateTimeOffset| Timestamp of when the qna is created or edited. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read-only.|
+|availabilityStartDateTime|DateTimeOffset|Date qna will start to appear as a search result. Set as `null` for always available.|
+|availabilityEndDateTime|DateTimeOffset|Date qna will stop to appear as a search result. Set as `null` for always available.|
 |languageTags|String collection|List of countries or regions able to view this qna.|
-|platforms|microsoft.graph.platform collection|List of devices and OS able to view this qna. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|platforms|microsoft.graph.platform collection|List of devices and operating systems able to view this qna. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) collection|Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Keywords that trigger this qna to appear in search results.|
 |state|String|State of the qna. Possible values are: `published`, `draft`, `excluded`.|
-|isSuggested|Boolean| True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read only.|
+|isSuggested|Boolean| True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.|
 |groupIds|String collection|List of security groups able to view this qna.|
 
 
