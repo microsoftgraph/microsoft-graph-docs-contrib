@@ -18,7 +18,7 @@ Represents recommended actions for a tenant based on the attack simulation and t
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionWebUrl|String|Web url to the recommended action.|
+|actionWebUrl|String|Web URL to the recommended action.|
 |potentialScoreImpact|Double|Potential improvement in security score of the tenant from the recommended action.|
 |title|String|Title of the recommended action.|
 

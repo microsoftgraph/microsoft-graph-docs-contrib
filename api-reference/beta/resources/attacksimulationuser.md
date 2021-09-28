@@ -18,9 +18,9 @@ User in an attack simulation and training campaign.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name of a user.|
-|email|String|Email address of a user.|
-|userId|String|Id of a [user](../resources/user.md).|
+|displayName|String|Display name of the user.|
+|email|String|Email address of the user.|
+|userId|String|This is the **id** property value of the [user](../resources/user.md) resource that represents the user in the Azure AD tenant.|
 
 ## Relationships
 None.

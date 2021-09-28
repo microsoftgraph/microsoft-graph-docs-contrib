@@ -21,9 +21,9 @@ Inherits from [identity](../resources/identity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name of a user. Inherited from [identity](../resources/identity.md).|
-|email|String|Email address of a user.|
-|id|String|Id of a user. Inherited from [identity](../resources/identity.md).|
+|displayName|String|Display name of the user. Inherited from [identity](../resources/identity.md).|
+|email|String|Email address of the user.|
+|id|String|ID of the user. Inherited from [identity](../resources/identity.md).|
 
 ## Relationships
 None.

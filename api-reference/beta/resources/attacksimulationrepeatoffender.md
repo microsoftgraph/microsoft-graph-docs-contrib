@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents repeat offender user, i.e. a user who gets compromised online more than once across various attack simulation and training campaigns.
+Represents a user in a tenant who has given way to attacks more than once across various attack simulation and training campaigns.
 
 ## Properties
 |Property|Type|Description|

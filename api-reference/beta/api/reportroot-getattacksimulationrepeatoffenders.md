@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List repeat offender users of a tenant in attack simulation and training campaigns.
+List the users of a tenant who have yielded to attacks more than once in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.
 
