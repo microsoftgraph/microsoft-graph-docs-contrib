@@ -15,7 +15,7 @@ others only support one model or do not support a licensing and payment model.
 The following licensing models are available:
 
 - [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms), 
-and requires a [supported license](#SupportedlicensesformodelA).
+and requires a [supported license](#required-licenses-for-modela).
 In the future, apps will also be required to pay for the messages they consume beyond the [seeded capacity](#seeded-capacity).
 
 - [`model=B`](#modelb-requirements) is free to use today; 
@@ -70,7 +70,7 @@ and subscriptions with licensing and payment requirements will not send change n
 ## Required licenses for `model=A` 
 
 The user will need one of the 
-[supported licenses](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-11). 
+[supported licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-11). 
 Which user needs the license varies by API; 
 for details, see [`model=A` requirements](#modela-requirements).
 
