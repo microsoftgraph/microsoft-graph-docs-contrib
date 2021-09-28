@@ -2,7 +2,7 @@
 title: "List Todo tasks"
 description: "Get the todoTask resources from the tasks navigation property of a specified todoTaskList."
 author: "avijityadav"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

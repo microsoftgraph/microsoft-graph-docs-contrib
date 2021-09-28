@@ -2,7 +2,7 @@
 title: "Update user"
 description: "Update the properties of a user object."
 author: "jpettere"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -48,25 +48,25 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
-|accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created.    |
+|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. This property is required when a user is created.    |
 | ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Sets the age group of the user. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|businessPhones| String collection | The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|
+|businessPhones| String collection | The telephone numbers for the user. **NOTE:** Although this is a string collection, only one number can be set for this property.|
 |city|String|The city in which the user is located.|
 | companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters. |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](../resources/user.md#legal-age-group-property-definitions) for further information. |
-|country|String|The country/region in which the user is located; for example, “US” or “UK”.|
+|country|String|The country/region in which the user is located; for example, `US` or `UK`.|
 |department|String|The name for the department in which the user works.|
-|displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports `$filter` and `$orderby`.|
+|displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates.|
 |employeeId|String|The employee identifier assigned to the user by the organization.|
-| employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Returned only on `$select`. Supports `$filter` with the `eq` operator.|
+| employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`.|
 |givenName|String|The given name (first name) of the user.|
-|hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** will replace the entire collection and you must supply the userPrincipalName **signInType** identity in the collection.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|
-|mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. <br><br>Returned by default. Supports `$filter`.|
+|mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|
@@ -86,7 +86,7 @@ In the request body, supply the values for relevant fields that should be update
 |streetAddress|String|The street address of the user's place of business.|
 |surname|String|The user's surname (family name or last name).|
 |usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: `US`, `JP`, and `GB`. Not nullable.|
-|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). Supports $filter and $orderby.
+|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md).
 |userType|String|A string value that can be used to classify user types in your directory, such as `Member` and `Guest`.          |
 
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 

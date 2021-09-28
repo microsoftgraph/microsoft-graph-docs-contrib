@@ -1,7 +1,7 @@
 ---
 title: "Create accessPackageCatalog"
 description: "Create a new accessPackageCatalog."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"

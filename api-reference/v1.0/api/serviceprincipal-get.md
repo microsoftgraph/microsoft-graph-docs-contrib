@@ -2,7 +2,7 @@
 title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of serviceprincipal object."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 doc_type: apiPageType
 ---
@@ -30,6 +30,11 @@ GET /servicePrincipals/{id}
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+By default, this API doesn't return the public key value of the **key** in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query.
+For example, `$select=id,appId,keyCredentials`.
+
+The use of `$select` to get **keyCredentials** for service principals has a throttling limit of 150 requests per minute for every tenant.
 
 ## Request headers
 | Name           | Description                |

@@ -2,7 +2,7 @@
 title: "Delete termsAndConditionsAcceptanceStatus"
 description: "Deletes a termsAndConditionsAcceptanceStatus."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

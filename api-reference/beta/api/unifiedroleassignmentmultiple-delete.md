@@ -1,7 +1,7 @@
 ---
 title: "Delete unifiedRoleAssignmentMultiple"
 description: "Delete a unifiedRoleAssignmentMultiple object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -18,8 +18,6 @@ Delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmulti
 This is applicable for a RBAC application that supports multiple principals and scopes. The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 

@@ -2,7 +2,7 @@
 title: "deviceManagementReportStatus enum type"
 description: "Possible statuses associated with a generated report"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

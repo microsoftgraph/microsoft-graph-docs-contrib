@@ -1,17 +1,19 @@
 ---
-title: "Remove owner"
+title: "Remove group owner"
 description: "Use this API to remove an owner from a Microsoft 365 group, a security group, or a mail-enabled security group through the owners navigation property."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Remove owner
+# Remove group owner
 
 Namespace: microsoft.graph
 
 Use this API to remove an owner from a Microsoft 365 group, a security group, or a mail-enabled security group through the owners navigation property. Once owners are assigned to a group, the last owner of the group cannot be removed. 
+
+> **Note:** For issues encountered when removing owner of a group associated with a [team](/graph/api/resources/team.md), see [Known Issues](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -80,6 +82,11 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## See also
+- [Add member to team](team-post-members.md)
+- [Update member's role in team](team-update-members.md)
+- [Remove member from team](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

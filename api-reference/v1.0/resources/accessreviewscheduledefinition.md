@@ -2,7 +2,7 @@
 title: "accessReviewScheduleDefinition resource type"
 description: "Represents the scheduling of an Azure AD access review."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -35,10 +35,10 @@ Inherits from [entity](../resources/entity.md).
 | createdDateTime  |DateTimeOffset  | Timestamp when the access review series was created. Supports `$select` and `$orderBy`. Read-only. |
 | lastModifiedDateTime | DateTimeOffset   | Timestamp when the access review series was last modified. Supports `$select`. Read-only.|
 | status  |String   | This read-only field specifies the status of an access review. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`.  <br>Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only. |
-| descriptionForAdmins  |string  |  Description provided by review creators to provide more context of the review to admins. Supports `$select`. |
-| descriptionForReviewers |string | Description provided  by review creators to provide more context of the review to reviewers. Reviewers will see this description in the email sent to them requesting their review. Supports `$select`. |
+| descriptionForAdmins  | String  |  Description provided by review creators to provide more context of the review to admins. Supports `$select`. |
+| descriptionForReviewers | String | Description provided  by review creators to provide more context of the review to reviewers. Reviewers will see this description in the email sent to them requesting their review. Email notifications support up to 256 characters. Supports `$select`. |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | User who created this review. Read-only. |
-| scope  |[accessReviewScope](../resources/accessreviewscope.md)  | Defines scope of resources to review. For supported scopes, see [accessReviewScope](accessreviewscope.md). Required on create. Supports `$select` and `$filter` (`contains` only). For examples of options for configuring scope, see [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept). |
+| scope  |[accessReviewScope](../resources/accessreviewscope.md)  |  Defines the entities whose access is reviewed.  For supported scopes, see [accessReviewScope](accessreviewscope.md). Required on create. Supports `$select` and `$filter` (`contains` only). For examples of options for configuring scope, see [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept). |
 | instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | This property is required when scoping a review to guest users' access across all Microsoft 365 groups and determines which Microsoft 365 groups are reviewed. Each group will become a unique **accessReviewInstance** of the access review series.  For supported scopes, see [accessReviewScope](accessreviewscope.md). Supports `$select`. For examples of options for configuring instanceEnumerationScope, see [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept). | 
 | settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series, see type definition below. Supports `$select`. Required on create. |
 | reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of access review scopes is used to define who are the reviewers. The reviewers property is only updatable if individual users are assigned as reviewers. Required on create. Supports `$select`. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept). |

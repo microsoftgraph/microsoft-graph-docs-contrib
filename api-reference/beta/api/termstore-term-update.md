@@ -2,7 +2,7 @@
 title: "Update term"
 description: "Update the properties of a term object."
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
@@ -47,9 +47,9 @@ The following table shows the properties that can be updated for a [term](../res
 
 |Property|Type|Description|
 |:---|:---|:---|
-|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|labels of a term|
-|descriptions|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection|description about the term|
-|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|properties associated with the term|
+|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|Labels of a term.|
+|descriptions|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection|Description about the term.|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|Properties associated with the term.|
 
 
 

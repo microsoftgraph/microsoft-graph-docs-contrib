@@ -2,7 +2,7 @@
 title: "Create team"
 description: "Create a new team."
 author: "anandjo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of a [team](../resources/team.
 
 ## Response
 
-If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
+If successful, this API returns a `202 Accepted` response that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 ## Examples
 
@@ -95,7 +95,7 @@ Content-Type: application/json
 ---
 
 
-##### Response
+#### Response
 <!-- {
   "blockType": "response",
   "name": "create_team_post"

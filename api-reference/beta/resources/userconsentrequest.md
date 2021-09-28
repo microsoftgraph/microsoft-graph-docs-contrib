@@ -2,7 +2,7 @@
 title: "userConsentRequest resource type"
 description: "A request created by a user to use an app that requires access to organizational data the user is unauthorized to grant consent to themselves."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

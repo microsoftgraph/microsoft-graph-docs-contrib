@@ -2,7 +2,7 @@
 title: "List userExperienceAnalyticsDeviceScoreses"
 description: "List properties and relationships of the userExperienceAnalyticsDeviceScores objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 439
+Content-Length: 519
 
 {
   "value": [
@@ -72,12 +72,13 @@ Content-Length: 439
       "manufacturer": "Manufacturer value",
       "endpointAnalyticsScore": 7.333333333333333,
       "startupPerformanceScore": 7.666666666666667,
-      "appReliabilityScore": 6.333333333333333
+      "appReliabilityScore": 6.333333333333333,
+      "workFromAnywhereScore": 7.0,
+      "healthStatus": "insufficientData"
     }
   ]
 }
 ```
-
 
 
 

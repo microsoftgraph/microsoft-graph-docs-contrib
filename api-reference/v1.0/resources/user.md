@@ -2,7 +2,7 @@
 title: "user resource type"
 description: "Represents an Azure AD user account. Inherits from directoryObject."
 author: "jpettere"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: resourcePageType
 ---
@@ -144,7 +144,7 @@ This resource supports:
 |consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, and `in`).|
 |country|String|The country/region in which the user is located; for example, `US` or `UK`. Maximum length is 128 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |createdDateTime | DateTimeOffset |The created date of the user object. Read-only. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, and `in` operators).|
-|creationType|String|Indicates whether the user account was created as a regular school or work account (`null`), an external account (`Invitation`), a local account for an Azure Active Directory B2C tenant (`LocalAccount`) or self-service sign-up using email verification (`EmailVerified`). Read-only. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, and `in`).|
+| creationType | String | Indicates whether the user account was created through one of the following methods: <br/> <ul><li>As a regular school or work account (`null`). <li>As an external account (`Invitation`). <li>As a local account for an Azure Active Directory B2C tenant (`LocalAccount`). <li>Through self-service sign-up by an internal user using email verification (`EmailVerified`). <li>Through self-service sign-up by an external user signing up through a link that is part of a user flow (`SelfServiceSignUp`).</ul> <br>Read-only.<br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, and `in`). |
 |deletedDateTime| DateTimeOffset | The date and time the user was deleted. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, and `in`). |
 |department|String|The name for the department in which the user works. Maximum length is 64 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, and `in` operators).|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `NOT` , `ge`, `le`, `in`, `startsWith`), `$orderBy`, and `$search`.|
@@ -166,7 +166,7 @@ This resource supports:
 |lastPasswordChangeDateTime| DateTimeOffset | The time when this Azure AD user last changed their password. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned only on `$select`.|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on `$select`.|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Read-only. <br><br>Returned only on `$select`.|
-|mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`.<br>Changes to this property will also update the user's **proxyAddresses** collection to include the value as an SMTP address. This property cannot contain accent characters.<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `endsWith`).|
+|mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`.<br>Changes to this property will also update the user's **proxyAddresses** collection to include the value as an SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. This property cannot contain accent characters.<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `endsWith`).|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale and time zone.<br><br>Returned only on `$select`.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |mobilePhone|String|The primary cellular telephone number for the user. Read-only for users synced from on-premises directory. Maximum length is 64 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
@@ -187,10 +187,11 @@ This resource supports:
 |passwordProfile|[passwordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. **NOTE:** For Azure B2C tenants, the **forceChangePasswordNextSignIn** property should be set to `false` and instead use custom policies and user flows to force password reset at first logon. See [Force password reset at first logon](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon).<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, `in`).|
 |pastProjects|String collection|A list for the user to enumerate their past projects. <br><br>Returned only on `$select`.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
+| preferredDataLocation | String | The preferred data location for the user. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example `en-US`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`)|
 |preferredName|String|The preferred name for the user. <br><br>Returned only on `$select`.|
 |provisionedPlans|[provisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `NOT`, `ge`, `le`).|
-|proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Read-only, Not nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).|
+|proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. For Azure AD B2C accounts, this property has a limit of ten unique addresses. Read-only, Not nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).|
 |refreshTokensValidFromDateTime|DateTimeOffset|Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. <br><br>Returned only on `$select`. Read-only. |
 |responsibilities|String collection|A list for the user to enumerate their responsibilities. <br><br>Returned only on `$select`.|
 |schools|String collection|A list for the user to enumerate the schools they have attended. <br><br>Returned only on `$select`.|
@@ -445,73 +446,74 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "aboutMe": "string",
+  "aboutMe": "String",
   "accountEnabled": true,
-  "ageGroup": "string",
+  "ageGroup": "String",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "birthday": "String (timestamp)",
-  "businessPhones": ["string"],
-  "city": "string",
-  "companyName": "string",
-  "consentProvidedForMinor": "string",
-  "country": "string",
+  "businessPhones": ["String"],
+  "city": "String",
+  "companyName": "String",
+  "consentProvidedForMinor": "String",
+  "country": "String",
   "createdDateTime": "String (timestamp)",
-  "creationType": "string",
-  "department": "string",
-  "displayName": "string",
+  "creationType": "String",
+  "department": "String",
+  "displayName": "String",
   "employeeHireDate": "2020-01-01T00:00:00Z",
-  "employeeId": "string",
+  "employeeId": "String",
   "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
-  "employeeType": "string",
-  "faxNumber" : "string",
-  "givenName": "string",
+  "employeeType": "String",
+  "faxNumber" : "String",
+  "givenName": "String",
   "hireDate": "String (timestamp)",
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
-  "imAddresses": ["string"],
-  "interests": ["string"],
+  "imAddresses": ["String"],
+  "interests": ["String"],
   "isResourceAccount": false,
-  "jobTitle": "string",
-  "legalAgeGroupClassification": "string",
+  "jobTitle": "String",
+  "legalAgeGroupClassification": "String",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
   "lastPasswordChangeDateTime": "String (timestamp)",
-  "mail": "string",
+  "mail": "String",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
-  "mailNickname": "string",
-  "mobilePhone": "string",
-  "mySite": "string",
-  "officeLocation": "string",
-  "onPremisesDistinguishedName": "string",
-  "onPremisesDomainName": "string",
+  "mailNickname": "String",
+  "mobilePhone": "String",
+  "mySite": "String",
+  "officeLocation": "String",
+  "onPremisesDistinguishedName": "String",
+  "onPremisesDomainName": "String",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-  "onPremisesImmutableId": "string",
+  "onPremisesImmutableId": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSamAccountName": "string",
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSamAccountName": "String",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "onPremisesUserPrincipalName": "string",
-  "otherMails": ["string"],
-  "passwordPolicies": "string",
+  "onPremisesUserPrincipalName": "String",
+  "otherMails": ["String"],
+  "passwordPolicies": "String",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
-  "pastProjects": ["string"],
-  "postalCode": "string",
-  "preferredLanguage": "string",
-  "preferredName": "string",
+  "pastProjects": ["String"],
+  "postalCode": "String",
+  "preferredDataLocation": "String",
+  "preferredLanguage": "String",
+  "preferredName": "String",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "proxyAddresses": ["string"],
-  "responsibilities": ["string"],
-  "schools": ["string"],
+  "proxyAddresses": ["String"],
+  "responsibilities": ["String"],
+  "schools": ["String"],
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "String (timestamp)",
-  "skills": ["string"],
-  "state": "string",
-  "streetAddress": "string",
-  "surname": "string",
-  "usageLocation": "string",
-  "userPrincipalName": "string",
-  "userType": "string",
+  "skills": ["String"],
+  "state": "String",
+  "streetAddress": "String",
+  "surname": "String",
+  "usageLocation": "String",
+  "userPrincipalName": "String",
+  "userType": "String",
 
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],

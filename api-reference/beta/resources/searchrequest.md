@@ -1,7 +1,7 @@
 ---
 title: "searchRequest resource type"
 description: "The search request to be sent to the query endpoint. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the fields request and the actual search query."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
@@ -76,7 +76,7 @@ The following is a JSON representation of the resource.
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types imported using connectors](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
-- Use [aggregations](/graph/search-concept-aggregations) to refine search results
+- Use [aggregations](/graph/search-concept-aggregation) to refine search results
 - Use [display layout](/graph/search-concept-display-layout.md)
 
 

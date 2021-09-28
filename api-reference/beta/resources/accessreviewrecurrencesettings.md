@@ -1,7 +1,7 @@
 ---
 title: "accessReviewRecurrenceSettings resource type"
 description: "Specifies that the access review recurs at regular intervals."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: resourcePageType

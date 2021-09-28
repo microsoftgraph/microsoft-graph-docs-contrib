@@ -2,7 +2,7 @@
 title: "Manage monitoring rules for a deployment using the Windows Update for Business deployment service"
 description: "For deployments initiated by the deployment service, you can use monitoring rules configure alerts and automated actions based on deployment signals."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
 ---
