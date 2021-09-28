@@ -55,7 +55,6 @@ If successful, this method returns a `200 OK` response code and also returns all
 The following is an example of the request.
 
 
-# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "channel_getallchannelmessages_1"

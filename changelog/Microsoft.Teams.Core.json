@@ -4,6 +4,40 @@
     {
       "ChangeList": [
         {
+          "Id": "1665cfa5-4613-4eb8-b402-76f28b1faec5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Added [Get all channel messages](https://docs.microsoft.com/en-us/graph/api/channel-getallmessages?view=graph-rest-1.0&preserve-view=true) to [channel](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel-getallmessages"
+        },
+        {
+          "Id": "1665cfa5-4613-4eb8-b402-76f28b1faec5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added [Get messages across all chats for user](https://docs.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-1.0&preserve-view=true) to [chats](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chats-getallmessages"
+        },
+        {
+          "Id": "1665cfa5-4613-4eb8-b402-76f28b1faec5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatmessage",
+          "ChangeType": "Addition",
+          "Description": "Added [Get messages across all chats for user](https://docs.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-1.0&preserve-view=true) to [chats](https://docs.microsoft.com/graph/api/resources/chatmessage?view=graph-rest-1.0) resource.",
+          "Target": "chats-getallmessages"
+        }
+      ],
+      "Id": "1665cfa5-4613-4eb8-b402-76f28b1faec5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-27T19:45:07.457Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "efc25f28-5324-4493-bab5-525f84e9b4f2",
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
