@@ -24,7 +24,7 @@ Contains information associated with attendance interval in attendanceRecord.
 | durationInSeconds | Int32 | Duration of the meeting interval in seconds; that is, the difference between **joinDateTime** and **leaveDateTime**. |
 
 [!TIP]
-> When data of is lacking, the value of **joinDateTime** or **leaveDateTime** will be set to `null`, and the value of **durationInSeconds** will be set to `0` in the response body of [Get Meeting Attendance Report](/graph/api/onlinemeeting-get#example-6-fetch-attendance-report-of-an-online-meeting)?view=graph-rest-beta&preserve-view=true) API.
+> When data is lacking, the value of **joinDateTime** or **leaveDateTime** will be set to `null`, and the value of **durationInSeconds** will be set to `0` in the response body of [Get Meeting Attendance Report](/graph/api/onlinemeeting-get#example-6-fetch-attendance-report-of-an-online-meeting)?view=graph-rest-beta&preserve-view=true) API.
 
 ## JSON representation
 
