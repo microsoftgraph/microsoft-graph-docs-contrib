@@ -18,11 +18,11 @@ Read the properties and relationships of a [qna](../resources/search-qna.md) obj
 ## Permissions
 One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)| Global administrator, global reader, search administrator, search editor. |
+|Delegated (work or school account)| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 |Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+|Application| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 
 ## HTTP request
 
@@ -35,7 +35,7 @@ GET /qnas/{qnaId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `select`, `expand`, `filter`, `orderBy`, `maxTop`, and `count` [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
