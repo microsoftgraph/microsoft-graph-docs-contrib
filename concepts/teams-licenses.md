@@ -6,26 +6,24 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-
 # Licensing and payment requirements for Microsoft Teams APIs in Microsoft Graph
 
 This article describes the licensing and payment requirements for Microsoft Teams APIs.
-
 
 Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; 
 others only support one model or do not support a licensing and payment model.
 The following licensing models are available:
 
-- [`model=A`](#modelARequirements) is restricted to applications performing a [security or compliance function](____termsofuse_____), 
+- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms), 
 and requires a [supported license](#SupportedlicensesformodelA).
-In the future, apps will also be required to pay for the messages they consume beyond the [seeded capacity](#seeded_capacity).
+In the future, apps will also be required to pay for the messages they consume beyond the [seeded capacity](#seeded-capacity).
 
-- [`model=B`](#modelBRequirements) is free to use today; 
+- [`model=B`](#modelb-requirements) is free to use today; 
 however, in the future, apps will pay based on the number of messages they consume. 
 There are no licensing requirements for `model=B`,
 and it is not restricted to applications performing a security or compliance function.
 
-- [Evaluation Mode (default)](#evaluationModeRequirements)
+- [Evaluation Mode (default)](#evaluation-mode-default-requirements)
 enables access to APIs with limited usage per requesting application for evaluation purposes. 
 Change notifications will not be sent if the limit is exceeded.
 
@@ -35,7 +33,7 @@ Change notifications will not be sent if the limit is exceeded.
 see the API Terms for Security & Compliance Applications section 
 of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms).
 
-|API                   | Who needs a [license](#SupportedlicensesformodelA)  | Seeded capacity | Price for additional use | Notes |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|:---------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
@@ -45,7 +43,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 ## `model=B` requirements
 
-|API                   | Who needs a [license](#SupportedlicensesformodelA)  | Seeded capacity | Price for additional use | Notes |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|:---------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per 1000 messages | Seeded capacity is shared with conversationMember change notifications. |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications. |
@@ -54,7 +52,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 ## Evaluation Mode (default) requirements
 
-|API                   | Who needs a [license](#SupportedlicensesformodelA)  | Seeded capacity | Price for additional use | Notes |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|:---------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A | 
@@ -63,24 +61,18 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |   N/A |  500 messages per month per app | N/A |
 
 In evaluation mode, seeded capacity is shared across all APIs. 
-When seeded capacity is exceeded, API calls with [licensing and payment requirements](https://aka.ms/teams-changenotification-licenses) will fail with a 402 error code, 
-and subscriptions with [licensing and payment requirements](https://aka.ms/teams-changenotification-licenses) will not send change notifications.
+When seeded capacity is exceeded, API calls with licensing and payment requirements will fail with a 402 error code, 
+and subscriptions with licensing and payment requirements will not send change notifications.
 
 > *Note*: A successful API call does not mean that the proper licensing is in place. 
 > Not all license violations can be detected, and grace periods might be granted in some cases.
 
-## `model=A` terms of use
-
-
-[security or compliance function](____termsofuse_____), 
-and requires a [supported license](#SupportedlicensesformodelA).
-
 ## Required licenses for `model=A` 
 
 The user will need one of the 
-[supported licenses](https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-11). 
+[supported licenses](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-11). 
 Which user needs the license varies by API; 
-for details, see [`model=A` requirements](#modelArequirements).
+for details, see [`model=A` requirements](#modela-requirements).
 
 Guest users are exempt from these licensing requirements.
 Similarly, messages sent from outside the tenant (federated chat) are exempt.
@@ -92,11 +84,11 @@ Admins can use the Information protection license report in
 to see which users don't have a supported license.
 
 Many supported licenses offer free trials. 
-[Office 365 E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/office-365-e5?activetab=pivot%3aoverviewtab) 
+[Office 365 E5](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot%3aoverviewtab) 
 for instance has a `Free trial` link underneath the `Buy` button.
 
 You can get a free Microsoft 365 E5 developer sandbox subscription with 25 user licenses 
-through the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
+through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## Improper licensing and evaluation mode seeded capacity exceeded
 
@@ -119,8 +111,8 @@ Seeded capacity is per app per tenant --
 apps won't run out of seeded capacity if another app runs out.
 
 The seeded capacity differs by API, see 
-[`model=A` requirements](#modelArequirements)
-and [`model=B` requirements](#modelArequirements)
+[`model=A` requirements](#modela-requirements)
+and [`model=B` requirements](#modelb-requirements)
 
 ## Price for additional use
 
