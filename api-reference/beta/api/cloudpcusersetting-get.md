@@ -163,7 +163,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPcUserSetting",
     "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
     "displayName": "Display Name value",
@@ -182,6 +181,5 @@ Content-Type: application/json
           }
       }
     ]
-  }
 }
 ```
