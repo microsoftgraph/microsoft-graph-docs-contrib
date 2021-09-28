@@ -100,38 +100,52 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
-  "deletedDateTime": null,
-  "classification": null,
-  "createdDateTime": "2018-12-22T02:21:05Z",
-  "description": "Self help community for golf",
-  "displayName": "Golf Assist",
-  "expirationDateTime": null,
-  "groupTypes": [
-      "Unified"
-  ],
-  "isAssignableToRole": null,
-  "mail": "golfassist@contoso.com",
-  "mailEnabled": true,
-  "mailNickname": "golfassist",
-  "membershipRule": null,
-  "membershipRuleProcessingState": null,
-  "onPremisesLastSyncDateTime": null,
-  "onPremisesSecurityIdentifier": null,
-  "onPremisesSyncEnabled": null,
-  "preferredDataLocation": "CAN",
-  "preferredLanguage": null,
-  "proxyAddresses": [
-      "smtp:golfassist@contoso.onmicrosoft.com",
-      "SMTP:golfassist@contoso.com"
-  ],
-  "renewedDateTime": "2018-12-22T02:21:05Z",
-  "resourceBehaviorOptions": [],
-  "resourceProvisioningOptions": [],
-  "securityEnabled": false,
-  "theme": null,
-  "visibility": "Public",
-  "onPremisesProvisioningErrors": []
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/directoryObjects/4de51a22-3289-4ea5-bbdb-8503ea644f1b/Microsoft.DirectoryServices.Group",
+    "id": "4de51a22-3289-4ea5-bbdb-8503ea644f1b",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2021-09-13T10:07:01Z",
+    "createdByAppId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+    "organizationId": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "expirationDateTime": "2022-01-11T10:07:01Z",
+    "groupTypes": [
+        "Unified"
+    ],
+    "infoCatalogs": [],
+    "isAssignableToRole": null,
+    "isManagementRestricted": null,
+    "mail": "library@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "EU",
+    "preferredLanguage": null,
+    "proxyAddresses": [
+        "SPO:SPO_0dbffe23-f6fb-4478-adcd-880daf88bb12@SPO_45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+        "SMTP:library@contoso.com"
+    ],
+    "renewedDateTime": "2021-09-13T10:07:01Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "securityIdentifier": "S-1-12-1-1306860066-1319449225-59104187-458188010",
+    "theme": null,
+    "visibility": "Public",
+    "writebackConfiguration": {
+        "isEnabled": null,
+        "onPremisesGroupType": null
+    },
+    "onPremisesProvisioningErrors": []
 }
 ```
 

@@ -12,6 +12,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphEdiscoverySiteSource *siteSource = [[MSGraphEdiscoverySiteSource alloc] init];
+MSGraphSite *site = [[MSGraphSite alloc] init];
+[site setWebUrl:@"https://contoso.sharepoint.com/sites/SecretSite"];
+[siteSource setSite:site];
 
 NSError *error;
 NSData *siteSourceData = [siteSource getSerializedDataWithError:&error];
