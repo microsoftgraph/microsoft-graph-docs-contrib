@@ -1,6 +1,6 @@
 ---
 title: "searchSettings resource type"
-description: "Search settings are where all configurable settings relating to search over connector content can be found."
+description: "Collects all configurable settings related to search over connector content."
 author: "emzho"
 ms.localizationpriority: normal
 ms.prod: "search"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Search settings are where all configurable settings relating to search over connector content can be found, such as definition of display templates for search results i.e. searchResultTemplates.
+Collects all configurable settings related to search over connector content.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|searchResultTemplates|[microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md) collection|A search result template enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed on enabled search engine results pages.|
+|searchResultTemplates|[microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md) collection|Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed.|
 
 ## Relationships
 None.

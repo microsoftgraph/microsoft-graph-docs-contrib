@@ -779,6 +779,14 @@
             "ChangeType": "Addition",
             "Description": "Added the **ruleOperation** enumeration type.",
             "Target": "ruleOperation"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "groups",
+            "ChangeType": "Addition",
+            "Description": "Added the **groups** relationship to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-1.0) resource.",
+            "Target": "externalConnection"
           }
       ],
       "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",

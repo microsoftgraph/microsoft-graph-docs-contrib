@@ -47,6 +47,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | items        | [microsoft.graph.externalConnectors.externalItem](externalconnectors-externalitem.md) collection               | Read-only. Nullable. |
 | operations   | [microsoft.graph.externalConnectors.connectionOperation](externalconnectors-connectionoperation.md) collection | Read-only. Nullable. |
 | schema       | [microsoft.graph.externalConnectors.schema](externalconnectors-schema.md)                                      | Read-only. Nullable. |
+| groups       | [microsoft.graph.externalConnectors.externalGroup](externalconnectors-externalgroup.md) collection             | Read-only. Nullable. |
 
 ## JSON representation
 
