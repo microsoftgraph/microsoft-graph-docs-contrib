@@ -1,9 +1,9 @@
 ---
 title: "Add member to channel"
 description: "Add member to channel."
-author: "laujan" 
+author: "akjo" 
 doc_type: apiPageType
-localization_priority: Normal 
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
@@ -118,6 +118,7 @@ Content-length: 468
 ### Example 2: Add a member with the owner role to a channel
 
 #### Request
+
 
 # [HTTP](#tab/http)
 <!-- {

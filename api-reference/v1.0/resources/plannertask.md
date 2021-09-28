@@ -1,7 +1,7 @@
 ---
 title: "plannerTask resource type"
 description: "The **plannerTask** resource represents a Planner task in Microsoft 365. A Planner task is contained in a plan and can be assigned to a bucket in a plan. Each task object has a details object which can contain more information about the task. See overview for more information regarding relationships between group, plan and task."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType

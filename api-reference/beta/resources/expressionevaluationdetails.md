@@ -1,7 +1,7 @@
 ---
 title: "expressionEvaluationDetails resource type"
 description: "Represents the expression details, result, and property details."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: "resourcePageType"

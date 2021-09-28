@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationSettingAccessTypes enum type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -27,7 +27,6 @@ Not yet documented
 |get|8|Not yet documented|
 |replace|16|Not yet documented|
 |execute|32|Not yet documented|
-
 
 
 

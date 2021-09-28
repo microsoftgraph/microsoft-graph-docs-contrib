@@ -1,7 +1,7 @@
 ---
 title: "Get homeRealmDiscoveryPolicy"
 description: "Retrieve the properties and relationships of homeRealmDiscoveryPolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "hpsin"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

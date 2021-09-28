@@ -1,7 +1,7 @@
 ---
 title: "Person-Card component in the Microsoft Graph Toolkit"
 description: "A Person-Card component is a component to display more information relating to a person."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vogtn
 ---
 
@@ -128,9 +128,11 @@ For example, you can use a template to customize the component attached to the `
 
 The following events are fired from the component.
 
-| Event | Description |
-| --- | --- |
-| `expanded` | The user has opened the expanded details section of the card. |
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`expanded` | The user has opened the expanded details section of the card | None | No | Yes | Yes, unless you override the default template
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## CSS custom properties
 

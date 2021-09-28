@@ -2,7 +2,7 @@
 title: "userFlowLanguagePage resource type"
 description: "User flow language pages are used determine the strings users will be shown during the user journey you have configured using user flows."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

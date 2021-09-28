@@ -2,7 +2,7 @@
 title: "Replace shift"
 description: "Replace an existing shift."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

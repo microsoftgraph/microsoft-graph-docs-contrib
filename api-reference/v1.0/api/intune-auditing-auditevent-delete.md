@@ -2,7 +2,7 @@
 title: "Delete auditEvent"
 description: "Deletes a auditEvent."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

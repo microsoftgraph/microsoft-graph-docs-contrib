@@ -1,7 +1,7 @@
 ---
 title: "Get connectorGroup"
 description: "Retrieve the properties of a connectorGroup object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"

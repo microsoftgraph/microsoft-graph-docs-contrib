@@ -2,7 +2,7 @@
 title: "Delete schedulingGroup"
 description: "Mark a schedulingGroup as inactive by setting its isActive property"
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "List iosDeviceFeaturesConfigurations"
 description: "List properties and relationships of the iosDeviceFeaturesConfiguration objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7863
+Content-Length: 7930
 
 {
   "value": [
@@ -174,6 +174,8 @@ Content-Length: 7863
           ]
         }
       ],
+      "homeScreenGridWidth": 3,
+      "homeScreenGridHeight": 4,
       "notificationSettings": [
         {
           "@odata.type": "microsoft.graph.iosNotificationSettings",
@@ -277,7 +279,6 @@ Content-Length: 7863
   ]
 }
 ```
-
 
 
 

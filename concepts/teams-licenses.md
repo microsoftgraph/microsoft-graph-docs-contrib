@@ -2,7 +2,7 @@
 title: "Licensing and payment requirements"
 description: "Learn about the licensing and payment models that apply to Microsoft Teams APIs in Microsoft Graph."
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 

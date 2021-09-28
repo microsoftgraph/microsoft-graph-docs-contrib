@@ -2,7 +2,7 @@
 title: "Update userExperienceAnalyticsImpactingProcess"
 description: "Update the properties of a userExperienceAnalyticsImpactingProcess object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -99,7 +99,6 @@ Content-Length: 349
   "impactValue": 3.6666666666666665
 }
 ```
-
 
 
 
