@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents simulation event of a user in a tenant in an attack simulation and training campaign.
+Represents a simulation event of a user in a tenant in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|

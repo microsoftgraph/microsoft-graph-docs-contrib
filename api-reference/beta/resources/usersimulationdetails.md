@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user of a tenant and its online actions in an attack simulation and training campaign.
+Represents a user of a tenant and the user's online actions in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|

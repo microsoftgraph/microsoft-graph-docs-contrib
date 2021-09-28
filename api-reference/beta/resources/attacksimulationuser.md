@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-User in an attack simulation and training campaign.
+A user in an attack simulation and training campaign.
 
 ## Properties
 |Property|Type|Description|
