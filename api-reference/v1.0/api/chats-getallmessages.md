@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get all messages(../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, that includes one-on-one chats, group chats, and meeting chats.
 
+[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
+
 ## Permissions
 
 The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
