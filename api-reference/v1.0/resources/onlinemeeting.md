@@ -58,8 +58,10 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Unknow future value.                                          |
 
-> [!NOTE]
-> If the value of **allowedPresenters** is set to `roleIsPresenter`, specify each meeting participant's meeting role using the [meetingParticipantInfo](../resources/meetingparticipantinfo.md) **role** property.
+> [!TIP]
+>
+>- When creating or updating an online meeting with the value of **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with specified attendees' **role** set to `presenter` in the request body.
+>- When creating or updating an online meeting with the value of **allowedPresenters** set to other values than `roleIsPresenter`, attendees' **role** will show as `null` in the response body.
 
 ### meetingChatMode values
 
