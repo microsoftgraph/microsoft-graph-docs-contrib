@@ -55,11 +55,11 @@ The following table shows the properties that are required when you update a [bo
 |availabilityStartDateTime|DateTimeOffset|Date bookmark will start to appear as a search result. Set as `null` for always available.|
 |availabilityEndDateTime|DateTimeOffset|Date bookmark will stop to appear as a search result. Set as `null` for always available.|
 |languageTags|String collection|List of countries or regions able to view this bookmark.|
-|platforms|microsoft.graph.platform collection|List of devices and operating systems able to view this bookmark. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems able to view this bookmark. Possible values are: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`,`windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
 |targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) collection|Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
 |powerAppIds|String collection|List of PowerApps associated with this bookmark. If users add existing PowerApps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Keywords that trigger this bookmark to appear in search results.|
-|state|String|State of the bookmark. Possible values are: `Published`, `Draft`, `Excluded`.|
+|state|microsoft.graph.search.answerState|State of the bookmark. Possible values are: `Published`, `Draft`, `Excluded`.|
 |groupIds|String collection|List of security groups able to view this bookmark.|
 
 

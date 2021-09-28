@@ -7,7 +7,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "searchAnswer",
                     "ChangeType": "Addition",
-                    "Description": "Added the [searchAnswer](https://docs.microsoft.com/en-us/graph/api/resources/searchAnswer?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [searchAnswer](https://docs.microsoft.com/en-us/graph/api/resources/searchAnswer?view=graph-rest-beta) resource type",
                     "Target": "searchAnswer"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "bookmark",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bookmark](https://docs.microsoft.com/en-us/graph/api/resources/bookmark?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [bookmark](https://docs.microsoft.com/en-us/graph/api/resources/bookmark?view=graph-rest-beta) resource type and supported methods.",
                     "Target": "bookmark"
                 },
                 {
@@ -23,7 +23,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "qna",
                     "ChangeType": "Addition",
-                    "Description": "Added the [qna](https://docs.microsoft.com/en-us/graph/api/resources/qna?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [qna](https://docs.microsoft.com/en-us/graph/api/resources/qna?view=graph-rest-beta) resource type and supported methods.",
                     "Target": "qna"
                 },
                 {
@@ -31,7 +31,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "acronym",
                     "ChangeType": "Addition",
-                    "Description": "Added the [acronym](https://docs.microsoft.com/en-us/graph/api/resources/acronym?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [acronym](https://docs.microsoft.com/en-us/graph/api/resources/acronym?view=graph-rest-beta) resource type and supported methods.",
                     "Target": "acronym"
                 },
                 {
@@ -51,36 +51,12 @@
                     "Target": "answerKeyword"
                 },
                 {
-                    "Id": "dd8e30ca-e354-11eb-88f7-f923b9ff781d",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "identity",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource type.",
-                    "Target": "identity"
-                },
-                {
-                    "Id": "dd9093b2-e354-11eb-88f7-f923b9ff781d",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "identitySet",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [identitySet](https://docs.microsoft.com/en-us/graph/api/resources/identitySet?view=graph-rest-beta) resource type.",
-                    "Target": "identitySet"
-                },
-                {
                     "Id": "dd92f4de-e354-11eb-88f7-f923b9ff781d",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "answerState",
                     "ChangeType": "Addition",
                     "Description": "Added the **answerState** enumeration type.",
                     "Target": "answerState"
-                },
-                {
-                    "Id": "dd9558e5-e354-11eb-88f7-f923b9ff781d",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "devicePlatformType",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **devicePlatformType** enumeration type.",
-                    "Target": "devicePlatformType"
                 }
             ],
             "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",

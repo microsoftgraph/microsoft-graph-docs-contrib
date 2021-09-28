@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A top level object representing the Microsoft Search API endpoint. 
+A top level object that represents the Microsoft Search API endpoint.
 
 It serves as an anchor to the [query](../api/search-query.md) action and search answer relationships such as [acronyms](../resources/search-acronym.md), [bookmarks](../resources/search-bookmark.md), and [qnas](../resources/search-qna.md). 
 
