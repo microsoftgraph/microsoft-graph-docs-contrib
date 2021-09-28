@@ -92,6 +92,7 @@ Content-type: application/json
 Content-length: 244
 
 {
+  "@odata.type": "#Microsoft.Graph.Group"
   "description": "Self help community for golf",
   "displayName": "Golf Assist",
   "groupTypes": [
