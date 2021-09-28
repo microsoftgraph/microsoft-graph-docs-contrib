@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Create an online meeting on behalf of a user.
 
 > [!TIP]
-> This API creates a standalone meeting that is not associated with an event in the user's calendar, therefore, meetings created via this API will not show up on the user's calendar.
+> This API creates a standalone meeting that is not associated with an event in the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
 
 ## Permissions
 
