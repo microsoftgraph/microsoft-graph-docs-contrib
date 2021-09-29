@@ -1,7 +1,7 @@
 ---
 author: k-tsoi
-description: "This resource represents the settings on a site."
-ms.date: 06/08/2020
+description: "This resource represents the settings of a site."
+ms.date: 09/29/2021
 title: SiteSettings
 localization_priority: Normal
 ms.prod: "sharepoint"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource represents the setting of the [site].
+This resource represents the settings of a [site].
 
 ## JSON representation
 
@@ -41,7 +41,6 @@ The **siteSettings** resource has the following properties.
 |:-----------------|:--------------|:---------------------------
 | languageTag      | string        | The language tag of language used on this site.
 | timeZone         | string        | Indicates the time zone of the site using UTC Offset format.
-
 
 ## Relationships
 
